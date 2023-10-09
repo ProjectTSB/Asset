@@ -1,0 +1,24 @@
+name: lint-datapack
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Test
+        uses: ChenCMD/datapack-linter@v2
+        with:
+          muteSuccessResult: true
+          ignoreLintPathPattern: |
+            animated_java:**
