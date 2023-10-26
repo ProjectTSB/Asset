@@ -44,10 +44,8 @@
         "asset:artifact/0615.censored/trigger/1.trigger",
         "asset:artifact/0605.ambition/trigger/1.trigger",
         "asset:artifact/0735.collision_plate/trigger/1.trigger",
-        "asset:artifact/0643.raimei_chestplate/trigger/1.1.attacktrigger",
         "asset:artifact/0733.percentage_sword/trigger/1.trigger",
         "asset:artifact/0672.aurora_blade/trigger/1.trigger",
-        "asset:artifact/0745.blade_of_whirlwind/trigger/1.trigger",
-        "asset:artifact/0664.soul_fire_armor/trigger/fullset/melee_trigger"
+        "asset:artifact/0745.blade_of_whirlwind/trigger/1.trigger"
     ]
 }
