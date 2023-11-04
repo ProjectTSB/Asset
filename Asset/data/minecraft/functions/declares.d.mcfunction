@@ -5,9 +5,9 @@
 # @within
 #   asset_manager:artifact/**
 #   asset:artifact/*/register
-#   asset:artifact/*/give/2\.give
-#   asset:artifact/*/trigger/2\.check_condition
-#   asset:artifact/*/trigger/3\.main
+#   asset:artifact/*/give/2.give
+#   asset:artifact/*/trigger/2.check_condition
+#   asset:artifact/*/trigger/3.main
 #   asset:artifact/common/**
 #declare storage asset:artifact from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
 
@@ -663,7 +663,7 @@
 #   function asset_manager:**
 #   function asset:*/*/**
 #   function asset:*/extends
-#   function asset:*/super\.*
+#   function asset:*/super.*
 #   function api:**
 #declare storage asset:context from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L11
 
@@ -673,9 +673,9 @@
 #   asset:mob/*/register
 #   asset:mob/*/*/
 #   asset:mob/extends
-#   asset:mob/super\.*
+#   asset:mob/super.*
 #   asset_manager:mob/**
-#   asset:mob/*/summon/2\.summon
+#   asset:mob/*/summon/2.summon
 #   asset:mob/common/**
 #declare storage asset:mob from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
 
@@ -710,11 +710,11 @@
 #> declare
 # @within
 #   function api:mob/core/summon
-#   function asset:mob/*/summon/2\.summon
+#   function asset:mob/*/summon/2.summon
 #declare function asset:mob/common/summon from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
 
 #> declare
-# @within function asset:artifact/*/*/3\.main
+# @within function asset:artifact/*/*/3.main
     #declare function asset:artifact/common/use/auto     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/auto.mcfunction#L1
     #declare function asset:artifact/common/use/chest    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/chest.mcfunction#L1
     #declare function asset:artifact/common/use/feet     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/feet.mcfunction#L1
@@ -729,7 +729,7 @@
 #declare function asset:spawner/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
 
 #> declare
-# @within function asset:artifact/*/*/2\.check_condition
+# @within function asset:artifact/*/*/2.check_condition
     #declare function asset:artifact/common/check_condition/auto     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/auto.mcfunction#L1
     #declare function asset:artifact/common/check_condition/chest    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/chest.mcfunction#L1
     #declare function asset:artifact/common/check_condition/feet     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/feet.mcfunction#L1
@@ -744,7 +744,7 @@
 #declare function asset:mob/extends from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
 
 #> declare
-# @within function asset:artifact/*/give/2\.give
+# @within function asset:artifact/*/give/2.give
 #declare function asset:artifact/common/give from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
 
 #> declare
@@ -806,8 +806,8 @@
 
 #> declare
 # @within
-#   function asset:artifact/*/*/2\.check_condition
-#   function asset:artifact/*/*/2\.check_condition/**
+#   function asset:artifact/*/*/2.check_condition
+#   function asset:artifact/*/*/2.check_condition/**
 #   function asset_manager:artifact/check/
 #   function asset:artifact/common/use/*
 #declare tag CanUsed from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/_index.d.mcfunction#L10
@@ -816,7 +816,7 @@
 # @within
 #   function api:mob/core/summon
 #   function asset:mob/*/summon/
-#   function asset:mob/*/summon/2\.summon
+#   function asset:mob/*/summon/2.summon
 #   function asset:mob/common/summon
 #declare tag MobInit from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L22
 
@@ -857,7 +857,7 @@
 #> declare
 # @within
 #   asset_manager:mob/triggers/death/*
-#   api:damage/core/health_subtract/non\-player
+#   api:damage/core/health_subtract/non-player
 #   asset:mob/*/death/**
 #declare tag Killer from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L50
 
