@@ -537,6 +537,8 @@
     #declare storage api:                                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/_index.d.mcfunction#L6
     #declare storage lib:                                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L57
+    #declare tag AttackedEntity                                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L10
+    #declare tag AttackingEntity                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacking_entity/_index.d.mcfunction#L10
     #declare tag BetaEndingPortal                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/_index.d.mcfunction#L7
     #declare tag Death                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L18
     #declare tag DevPrivilege                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L56
@@ -612,9 +614,21 @@
     #declare tag/function asset:island/register                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/island/register.json#L1
     #declare tag/function asset:mob/attack                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/attack.json#L1
     #declare tag/function asset:mob/death                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/death.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/hurt.json#L1
+    #declare tag/function asset:mob/hurt
     #declare tag/function asset:mob/initialize                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/initialize.json#L1
     #declare tag/function asset:mob/load                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/load.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/register.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/register.json#L1
+    #declare tag/function asset:mob/register
     #declare tag/function asset:mob/remove                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/remove.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/summon.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
+    #declare tag/function asset:mob/summon
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/tick.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/tick.json#L1
+    #declare tag/function asset:mob/tick
     #declare tag/function asset:rejoin                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/rejoin.json#L1
     #declare tag/function asset:spawner/register/a                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/a.json#L1
     #declare tag/function asset:spawner/register/b                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/b.json#L1
@@ -624,6 +638,10 @@
     #declare tag/function asset:spawner/register/f                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/f.json#L1
     #declare tag/function asset:teleporter/register                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/teleporter/register.json#L1
     #declare tag/function asset:trader/register                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/trader/register.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/data/minecraft/tags/functions/load.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
+    #declare tag/function minecraft:load
     #declare tag/function minecraft:tick                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     #declare tag/item lib:all                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/all.json#L1
     #declare tag/item lib:consumable                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/consumable.json#L1
@@ -774,35 +792,6 @@
 #> declare
 # @within function asset:mob/*/tick/
 #declare function asset:mob/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
-
-#> declare
-# @within
-#   **
-#   **
-#   **
-    #declare tag AttackedEntity          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L10
-    #declare tag AttackingEntity         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacking_entity/_index.d.mcfunction#L10
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/data/minecraft/tags/functions/load.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
-    #declare tag/function minecraft:load
-
-#> declare
-# @within
-#   **
-#   **
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/hurt.json#L1
-    #declare tag/function asset:mob/hurt
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/register.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/register.json#L1
-    #declare tag/function asset:mob/register
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/summon.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
-    #declare tag/function asset:mob/summon
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/tick.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/tick.json#L1
-    #declare tag/function asset:mob/tick
 
 #> declare
 # @within
