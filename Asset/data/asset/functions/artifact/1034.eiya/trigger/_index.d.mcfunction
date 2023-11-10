@@ -1,0 +1,6 @@
+#> asset:artifact/1034.eiya/trigger/_index.d
+# @private
+
+#> tag
+# @within function asset:artifact/1034.eiya/trigger/**
+    #declare score_holder $MP
