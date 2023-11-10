@@ -5,6 +5,7 @@
 # @within function
 #   asset:artifact/1034.eiya/trigger/3.main
 #   asset:artifact/1034.eiya/trigger/schedule
+#   asset:artifact/1034.eiya/trigger/rejoin_process
 
 # ループ
     execute if entity @p[scores={SQ.Count=1..}] run schedule function asset:artifact/1034.eiya/trigger/schedule 1t replace
