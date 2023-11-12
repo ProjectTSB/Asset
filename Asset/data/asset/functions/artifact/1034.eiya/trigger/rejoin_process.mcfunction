@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # スケジュールループ再開
-    schedule function asset:artifact/1034.eiya/trigger/schedule 1t replace
+    execute if entity @p[scores={SQ.WaitingTime=0..}] run schedule function asset:artifact/1034.eiya/trigger/schedule 1t replace
