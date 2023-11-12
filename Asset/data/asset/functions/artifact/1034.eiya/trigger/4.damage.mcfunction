@@ -8,9 +8,6 @@
 # 弱すぎたら加算MP倍率を上げてほしい
 # 基礎火力 + 現在MP×1.2
 
-#> Private
-# @private
-
 # 基礎火力設定(本来の10倍の値を設定すること)
     scoreboard players set $BaseDamage Temporary 2500
 
