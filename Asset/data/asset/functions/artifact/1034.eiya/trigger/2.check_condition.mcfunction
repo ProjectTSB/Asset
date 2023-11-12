@@ -8,8 +8,5 @@
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
-# 斬撃のクールダウン中は発動できない
-    execute if entity @s[scores={SQ.SkillCooldown=1..}] run tag @s remove CanUsed
-
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1034.eiya/trigger/3.main

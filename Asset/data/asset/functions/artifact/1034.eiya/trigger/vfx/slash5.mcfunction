@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:artifact/1034.eiya/trigger/4.skill_active
+#   asset:artifact/1034.eiya/trigger/3.main
 #   asset:artifact/1034.eiya/trigger/vfx/slash7
 
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAnAIYDMARmQMZkCMAtDQGwAM7LALOwCYAZizIB2RizjUKgip15l2ZMLgwUAtgmSAt3wAETVWBgUATpoDOScPQD2eDBCQCquIadsbrYAG4UUeNrgAB5IrmBQSJwAvtG4ELbefgFBYKGILOGRiDFxYLZCQhZwTjm4NHAAXmhwps4AdAAcuGgWAEJVNaYAogCOeP4oUADKJvRwJIhC-sWxALpAA_3

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1034.eiya/trigger/4.skill_active
+# @within function asset:artifact/1034.eiya/trigger/3.main
 
 # playsound
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1.5

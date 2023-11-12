@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1034.eiya/trigger/4.skill_active
+# @within function asset:artifact/1034.eiya/trigger/3.main
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAnGQGwCGZ1lADALQCMALAMYBmTnb1TMhxpMARgwDMbOBzYSuEimFwZqAWwTJAW74ACAEzKwMagCd1AZyTgOAezwYISPQHZcXEzbVWwAN2oo8TXAADyQAVlwoJAYAXxjcCBtvPwCgsFDEJgiwKMRY+LAbLi5zOEc83FE4AC80OBMkFgA6Slw0cwAhGrqTAFEARzx-FCgAZWMOOBJELn9SuIBdIA_3
 # 線 2
 particle dust 1 100000000 1 1.2 ^4.09576022144496 ^2.86788218175523 ^0 0.1 0.1 0.1 0 2
