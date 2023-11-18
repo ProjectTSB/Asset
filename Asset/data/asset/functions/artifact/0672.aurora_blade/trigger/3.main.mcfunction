@@ -41,7 +41,7 @@
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 150
 
-# Argument.Damageに代入 $MPPer > 70 なら1.5倍
+# Argument.Damageに代入 $MPPer >= 70 なら1.5倍
     execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     execute if score $MPPer Temporary matches 70.. store result storage lib: Argument.Damage float 1.5 run scoreboard players get $RandomDamage Temporary
 
