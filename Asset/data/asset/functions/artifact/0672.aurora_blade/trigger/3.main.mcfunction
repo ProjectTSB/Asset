@@ -51,7 +51,7 @@
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
 
 # リセット
     function lib:damage/reset
