@@ -5,7 +5,7 @@
 # @within function asset:artifact/0672.aurora_blade/trigger/2.check_condition
 
 #> Private
-# @private function asset:artifact/0672.aurora_blade/trigger/**
+# @private
     #declare score_holder $RandomDamage
     #declare score_holder $CalcRandom
 
