@@ -8,3 +8,4 @@
 # @within function asset:mob/0331.aurora_sorcerer/**
     scoreboard objectives add 97.Skill dummy
     scoreboard objectives add 97.MotionCT dummy
+    scoreboard objectives add 97.MotionCount dummy

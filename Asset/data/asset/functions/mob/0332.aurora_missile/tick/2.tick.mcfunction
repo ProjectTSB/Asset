@@ -21,10 +21,10 @@
     scoreboard players add @s 98.Tick 1
 
 # 最初の20tickは誘導弾になる
-    execute if entity @s[scores={98.Tick=..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.7 ~ ~
+    execute if entity @s[scores={98.Tick=..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.35 ~ ~
 
 # それ以降は前進する
-    execute if entity @s[scores={98.Tick=21..}] run tp @s ^ ^ ^1
+    execute if entity @s[scores={98.Tick=21..}] run tp @s ^ ^ ^0.5
 
 # ブロックかプレイヤーにヒットで爆発する
     execute unless block ^ ^ ^0.5 #lib:no_collision run function asset:mob/0332.aurora_missile/tick/3.hit

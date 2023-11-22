@@ -10,8 +10,15 @@
 # プレイヤーが近くにいる場合、自身に鈍足を付与
    execute if entity @p[gamemode=!spectator,distance=..12] run effect give @s slowness 1 3 true
 
-# スコア
+# プレイヤーと非常に近い場合、MotionCountスコアを増加
+    execute unless entity @s[scores={97.MotionCT=1..}] if entity @p[gamemode=!spectator,distance=..7] run scoreboard players add @s 97.MotionCount 1
+
+# MotionCountが一定以上でバックステップ
+    execute if entity @s[scores={97.MotionCount=60..}] run function asset:mob/0331.aurora_sorcerer/tick/backstep
+
+# スコア制御
     scoreboard players add @s 97.Skill 1
+    execute if entity @s[scores={97.MotionCT=1..}] run scoreboard players remove @s 97.MotionCT 1
 
 # Skillスコアが0の時、スキル1かスキル2に分岐
   #  execute if entity @s[scores={97.Skill=0}] if predicate lib:random_pass_per/40 run tag @s add 97.Skill2

@@ -5,7 +5,7 @@
 # @within function asset:mob/0332.aurora_missile/tick/2.tick
 
 # 演出
-    execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:mob/0332.aurora_missile/tick/vfx
+    execute rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0332.aurora_missile/tick/vfx
     particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~1.5 ~ 1.3 1.2 1.3 0 60
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.5 0
 
