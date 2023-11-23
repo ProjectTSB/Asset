@@ -10,9 +10,9 @@
 
 # motionする
     data modify storage lib: Argument.VectorMagnitude set value 1.5
-    execute if score $Random Temporary matches 0 facing entity @p[tag=Attacker] eyes rotated ~ -13 run function lib:motion/
-    execute if score $Random Temporary matches 1 facing entity @p[tag=Attacker] eyes rotated ~20 -13 run function lib:motion/
-    execute if score $Random Temporary matches 2 facing entity @p[tag=Attacker] eyes rotated ~-20 -13 run function lib:motion/
+    execute if score $Random Temporary matches 0 facing entity @p[tag=Attacker] eyes rotated ~ ~-13 run function lib:motion/
+    execute if score $Random Temporary matches 1 facing entity @p[tag=Attacker] eyes rotated ~20 ~-13 run function lib:motion/
+    execute if score $Random Temporary matches 2 facing entity @p[tag=Attacker] eyes rotated ~-20 ~-13 run function lib:motion/
 
 # リセット
     scoreboard players reset $Random Temporary
