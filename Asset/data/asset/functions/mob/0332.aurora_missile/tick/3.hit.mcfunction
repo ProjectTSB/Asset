@@ -16,11 +16,11 @@
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってオーロラの魔法の中に消えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって空の塵になった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function lib:damage/modifier
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
     function lib:damage/reset
 
 # 各プレイヤーのMPを減らす
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:mob/0332.aurora_missile/tick/4.mp_reduction
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0332.aurora_missile/tick/4.mp_reduction
 
 # 消滅
     kill @s

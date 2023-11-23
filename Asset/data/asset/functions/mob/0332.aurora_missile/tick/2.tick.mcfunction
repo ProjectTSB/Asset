@@ -8,8 +8,12 @@
 # @private
     #declare score_holder $Temp
 
+# スコア
+    scoreboard players add @s 98.Tick 1
+
 # 演出
-    particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~ ~ 0.2 0.2 0.2 0 3 normal @a
+    execute if entity @s[scores={98.Tick=..19}] run particle dust_color_transition 0 0.408 0.361 1 0 0.114 0.478 ~ ~ ~ 0 0 0 0 3 normal @a
+    execute if entity @s[scores={98.Tick=20..}] run particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~ ~ 0.2 0.2 0.2 0 3 normal @a
 
 # 一定間隔でplaysound
     scoreboard players operation $Temp Temporary = @s 98.Tick
@@ -17,18 +21,18 @@
     execute if score $Temp Temporary matches 0 run playsound block.beacon.power_select hostile @a ~ ~ ~ 0.4 2 0
     scoreboard players reset $Temp Temporary
 
-# スコア
-    scoreboard players add @s 98.Tick 1
-
 # 最初の20tickは誘導弾になる
     execute if entity @s[scores={98.Tick=..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.35 ~ ~
 
 # それ以降は前進する
     execute if entity @s[scores={98.Tick=21..}] run tp @s ^ ^ ^0.5
 
-# ブロックかプレイヤーにヒットで爆発する
-    execute unless block ^ ^ ^0.5 #lib:no_collision run function asset:mob/0332.aurora_missile/tick/3.hit
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run function asset:mob/0332.aurora_missile/tick/3.hit
+# 誘導状態でヒットした場合消滅
+    execute if entity @s[scores={98.Tick=..19}] positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run kill @s
+
+# 直進状態でブロックかプレイヤーにヒットで爆発する
+    execute if entity @s[scores={98.Tick=20..}] unless block ^ ^ ^0.5 #lib:no_collision run function asset:mob/0332.aurora_missile/tick/3.hit
+    execute if entity @s[scores={98.Tick=20..}] positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run function asset:mob/0332.aurora_missile/tick/3.hit
 
 # 消滅
     execute if entity @s[scores={98.Tick=50..}] run kill @s
