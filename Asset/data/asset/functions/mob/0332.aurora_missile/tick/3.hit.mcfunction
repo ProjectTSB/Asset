@@ -5,7 +5,8 @@
 # @within function asset:mob/0332.aurora_missile/tick/2.tick
 
 # 演出
-    execute rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0332.aurora_missile/tick/vfx
+    execute if predicate api:global_vars/difficulty/max/normal rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0332.aurora_missile/tick/vfx
+    execute if predicate api:global_vars/difficulty/min/hard rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0332.aurora_missile/tick/vfx2
     particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~1.5 ~ 1.3 1.2 1.3 0 60
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.5 0
 
@@ -16,7 +17,8 @@
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってオーロラの魔法の中に消えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって空の塵になった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function lib:damage/modifier
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
+    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
+    execute if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
     function lib:damage/reset
 
 # 各プレイヤーのMPを減らす
