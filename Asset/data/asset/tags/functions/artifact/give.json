@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1041.flame_devil_feet/give/1.trigger",
+        "asset:artifact/1040.flame_devil_legs/give/1.trigger",
+        "asset:artifact/1039.flame_devil_chest/give/1.trigger",
+        "asset:artifact/1038.flame_devil_head/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",
         "asset:artifact/0736.sailor_hat/give/1.trigger",
