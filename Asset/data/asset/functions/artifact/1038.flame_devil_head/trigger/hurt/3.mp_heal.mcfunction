@@ -8,7 +8,7 @@
     execute store result score @s SU.CoolDown run time query gametime
 
 # MP回復
-    scoreboard players set $Fluctuation Lib 10
+    scoreboard players set $Fluctuation Lib 20
     function lib:mp/fluctuation
 
 # 演出
