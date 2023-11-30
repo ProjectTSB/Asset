@@ -16,7 +16,8 @@
 
 # スケジュール設定
     execute if score @s SZ.CastTick matches ..120 run schedule function asset:artifact/1043.gamma_ray/trigger/4.schedule 1t
-    execute if score @s SZ.CastTick matches 121 run function asset:artifact/1043.gamma_ray/trigger/6.cast
+    execute if score @s SZ.CastTick matches 121 run scoreboard players remove @s SZ.CastTick 1
+    execute if score @s SZ.CastTick matches 120 run function asset:artifact/1043.gamma_ray/trigger/6.cast
 
 # リセット
     data remove storage asset:temp SZ
