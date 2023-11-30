@@ -1,3 +1,9 @@
+#> asset:artifact/1043.gamma_ray/trigger/vfx/fc_8
+#
+# 詠唱演出
+#
+# @within function asset:artifact/1043.gamma_ray/trigger/5.1.m
+
 # frame 8 / 120
 # 円.001
 particle dust 100000000 100000000 1 0.75 ^-0.0 ^0.947 ^-0.0 0.0 0.0 0.0 0.0 1 normal
