@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/1043.gamma_ray/trigger/**
-#    scoreboard objectives add 
+    scoreboard objectives add SZ.CastTick dummy

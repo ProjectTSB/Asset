@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:artifact/1043.gamma_ray/trigger/**
-    #declare
+    #declare tag SZ.Cast
+    #declare tag SZ.Landing

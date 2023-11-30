@@ -8,4 +8,10 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1043.gamma_ray
+
+# 発動時のタグとスコア
+    tag @s add SZ.Cast
+    scoreboard players set @s SZ.CastTick 0
+
+# スケジュール設定
+    schedule function asset:artifact/1043.gamma_ray/trigger/4.schedule 1t
