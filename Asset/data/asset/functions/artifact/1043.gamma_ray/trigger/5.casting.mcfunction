@@ -9,7 +9,7 @@
     execute store result storage asset:temp SZ.Num int 1 run scoreboard players get @s SZ.CastTick
 
 # 演出マクロを呼び出す
-    execute anchored eyes positioned ^ ^ ^0.5 run function asset:artifact/1043.gamma_ray/trigger/5.1.macro with storage asset:temp SZ
+    execute anchored eyes positioned ^ ^ ^0.5 run function asset:artifact/1043.gamma_ray/trigger/5.1.m with storage asset:temp SZ
 
 # スコアを増やす
     scoreboard players add @s SZ.CastTick 1
