@@ -13,4 +13,4 @@
     execute as @e[type=marker,tag=ST.Marker] unless predicate lib:is_vehicle at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.landing
 
 # Markerがいる場合、次Tickの実行予約
-    execute if entity @e[type=marker,tag=ST.Marker,predicate=lib:is_vehicle] run schedule function asset:artifact/1037.grand_flame/trigger/schedule/1.tick 1t replace
+    execute if entity @e[type=marker,tag=ST.Marker,predicate=lib:is_vehicle,limit=1] run schedule function asset:artifact/1037.grand_flame/trigger/schedule/1.tick 1t replace

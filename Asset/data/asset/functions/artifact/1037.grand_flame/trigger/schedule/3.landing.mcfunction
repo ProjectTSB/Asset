@@ -15,7 +15,7 @@
     execute as @a if score @s UserID = $ST.OwnerId Temporary run tag @s add ST.Owner
 
 # ダメージ計算
-# 計算式 ： 360 + (現在HP%) * 2
+# 計算式 ： 660 + (現在HP%) * 2
     scoreboard players set $ST.Damage Temporary 660
     scoreboard players operation $ST.PercentHP Temporary = @s ST.PercentHP
     scoreboard players operation $ST.PercentHP Temporary *= $2 Const
