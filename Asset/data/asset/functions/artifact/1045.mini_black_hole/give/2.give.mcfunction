@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"T","color":"#32004F","bold":true,"obfuscated":true},{"text":"S","color":"#59008C","bold":true,"obfuscated":true},{"text":"B","color":"#7E00C7","bold":true,"obfuscated":true},{"text":"ブラックホール・ミニ","color":"#A100FF","bold":true,"obfuscated":false},{"text":"B","color":"#7E00C7","bold":true,"obfuscated":true},{"text":"S","color":"#59008C","bold":true,"obfuscated":true},{"text":"T","color":"#32004F","bold":true,"obfuscated":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"小さな紫の弾を前方に発射する","color":"white","italic":false}','{"text":"弾は着弾した瞬間にブラックホールを生み出し、","color":"white","italic":false}','{"text":"周囲の敵を無慈悲に吸い込む","color":"white","italic":false}','{"text":"宇宙の破壊力に叶うものはいないだろうに","color":"#B973FF","italic":false}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value 
 # 使用回数 (int) (オプション)
