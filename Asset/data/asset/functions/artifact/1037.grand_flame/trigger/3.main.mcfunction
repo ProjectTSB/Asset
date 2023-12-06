@@ -54,4 +54,5 @@
     tag @e[type=snowball,tag=ST.SnowBallInit,distance=..3] remove ST.SnowBallInit
     data remove storage lib: Argument
     scoreboard players reset $ST.MaxHP Temporary
+    scoreboard players reset $ST.OwnerId Temporary
     scoreboard players reset $ST.CurrentHP Temporary
