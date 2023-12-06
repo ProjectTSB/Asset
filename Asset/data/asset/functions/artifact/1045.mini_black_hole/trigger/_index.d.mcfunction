@@ -6,3 +6,4 @@
     #declare tag T1.SnowBall
     #declare tag T1.SnowBallInit
     #declare tag T1.Marker
+    #declare tag T1.Owner
