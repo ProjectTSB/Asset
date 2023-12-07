@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..18 run function animated_java:louvert/zzzzzzzz/animations/09_1_triple_slash_start/tree/branch_0_18

@@ -1,0 +1,3 @@
+execute if score @s aj.louvert.animation.03_4_fire_slash_slash_2.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:louvert/zzzzzzzz/animations/03_4_fire_slash_slash_2/end_loop
+execute if score @s aj.louvert.animation.03_4_fire_slash_slash_2.loop_mode = $aj.loop_mode.once aj.i run function animated_java:louvert/animations/03_4_fire_slash_slash_2/stop
+execute if score @s aj.louvert.animation.03_4_fire_slash_slash_2.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:louvert/animations/03_4_fire_slash_slash_2/pause

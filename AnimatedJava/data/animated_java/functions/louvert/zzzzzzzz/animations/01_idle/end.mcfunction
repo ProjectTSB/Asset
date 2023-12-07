@@ -1,0 +1,3 @@
+execute if score @s aj.louvert.animation.01_idle.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:louvert/zzzzzzzz/animations/01_idle/end_loop
+execute if score @s aj.louvert.animation.01_idle.loop_mode = $aj.loop_mode.once aj.i run function animated_java:louvert/animations/01_idle/stop
+execute if score @s aj.louvert.animation.01_idle.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:louvert/animations/01_idle/pause

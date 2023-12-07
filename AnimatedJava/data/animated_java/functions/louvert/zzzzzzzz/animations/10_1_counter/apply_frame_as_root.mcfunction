@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..25 run function animated_java:louvert/zzzzzzzz/animations/10_1_counter/tree/branch_0_25

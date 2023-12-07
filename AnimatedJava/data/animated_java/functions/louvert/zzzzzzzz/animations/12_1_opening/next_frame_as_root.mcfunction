@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/12_1_opening/tick_animation

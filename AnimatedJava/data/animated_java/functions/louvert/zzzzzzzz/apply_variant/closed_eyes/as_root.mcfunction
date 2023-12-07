@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:louvert/zzzzzzzz/apply_variant/closed_eyes/as_bone

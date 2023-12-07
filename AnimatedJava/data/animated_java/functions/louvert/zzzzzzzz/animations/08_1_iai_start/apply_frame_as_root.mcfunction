@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..36 run function animated_java:louvert/zzzzzzzz/animations/08_1_iai_start/tree/branch_0_36

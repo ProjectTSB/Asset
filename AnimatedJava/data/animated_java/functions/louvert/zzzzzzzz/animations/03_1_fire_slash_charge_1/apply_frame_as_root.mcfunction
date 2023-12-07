@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:louvert/zzzzzzzz/animations/03_1_fire_slash_charge_1/tree/branch_0_80

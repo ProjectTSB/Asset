@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.louvert.root] run function animated_java:louvert/zzzzzzzz/tick_as_root

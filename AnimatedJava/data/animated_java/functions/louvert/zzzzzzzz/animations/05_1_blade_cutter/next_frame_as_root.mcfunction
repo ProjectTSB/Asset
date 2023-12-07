@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/05_1_blade_cutter/tick_animation
