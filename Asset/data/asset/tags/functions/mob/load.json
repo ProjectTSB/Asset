@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0342.louvert_common_fire_magic/0.load",
         "asset:mob/0341.louvert/0.load",
         "asset:mob/0176.killer_bee/0.load",
         "asset:mob/0186.ferocious_bee/0.load",
