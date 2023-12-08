@@ -89,6 +89,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.louvert.export_version aj.i 582761364
+scoreboard players set aj.louvert.export_version aj.i 1845464007
 scoreboard players reset * aj.louvert.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.louvert.root] run function animated_java:louvert/zzzzzzzz/on_load
