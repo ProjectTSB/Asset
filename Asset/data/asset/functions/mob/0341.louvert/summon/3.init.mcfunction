@@ -17,5 +17,8 @@
     scoreboard players set @s 9H.AnimationNum 121
     scoreboard players set @s 9H.SkillSelect 0
 
+# 防御タグ付与
+    tag @s add 9H.Guard.Normal
+
 # animated javaモデル召喚
     execute positioned ~ ~500 ~ rotated ~ 0 run function animated_java:louvert/summon

@@ -5,7 +5,7 @@
 # @within function asset:mob/0341.louvert/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0341.louvert",NoAI:1b,Silent:1b}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0341.louvert",NoAI:1b,Silent:1b}
 # ID (int)
     data modify storage asset:mob ID set value 341
 # Type (string) Wikiを参照
