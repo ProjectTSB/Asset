@@ -12,6 +12,6 @@
 # Posを保存
     data modify storage asset:context this.MovePointPos set from entity 0-0-0-0-0 Pos
 # 0-0-0-0-0の方を向く
-    execute facing entity 0-0-0-0-0 feet rotated ~ 0 run tp @s ^ ^ ^ ~ ~
+    execute facing entity 0-0-0-0-0 feet run tp @s ^ ^ ^ ~ ~
 # Makerを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

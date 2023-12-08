@@ -5,7 +5,7 @@
 # @within function asset:mob/0341.louvert/tick/animation/
 
 # アニメーション再生
-    execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This] run function animated_java:louvert/animations/12_1_opening/play
+    execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/12_1_opening/play
 
 # 演出
     execute if score @s 9H.AnimationTick matches 45 run function asset:mob/0341.louvert/tick/animation/12_1_opening/sound

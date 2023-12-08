@@ -7,3 +7,5 @@
 ## デバッグ処理
     # AnimatedJavaモデルの削除
         function animated_java:louvert/remove/all
+    # Marker削除
+        kill @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100]

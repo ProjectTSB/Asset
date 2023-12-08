@@ -31,7 +31,7 @@
         playsound block.end_portal.spawn hostile @a[distance=..32] ~ ~ ~ 0.25 2
     
 # 引数の設定
-    # 与えるダメージ = 7.5
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 42.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Magic"

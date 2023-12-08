@@ -21,4 +21,7 @@
     tag @s add 9H.Guard.Normal
 
 # animated javaモデル召喚
-    execute positioned ~ ~500 ~ rotated ~ 0 run function animated_java:louvert/summon
+    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:louvert/summon
+
+# teleport_durationを設定
+    execute positioned ~ ~99 ~ as @e[type=item_display,distance=..1] run data modify entity @s teleport_duration set value 1
