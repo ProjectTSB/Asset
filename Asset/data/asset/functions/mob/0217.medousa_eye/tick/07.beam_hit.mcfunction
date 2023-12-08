@@ -17,8 +17,9 @@
 # attribute
     attribute @s generic.knockback_resistance modifier add 00000001-0000-0002-0000-00d900000000 "217.KnockbackResist" 30 add
 
-# ダメージ
-    data modify storage lib: Argument.Damage set value 20f
+# ダメージ ハード以下:16 ハード以上:20
+    execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 16f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 20f
 # 属性
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
