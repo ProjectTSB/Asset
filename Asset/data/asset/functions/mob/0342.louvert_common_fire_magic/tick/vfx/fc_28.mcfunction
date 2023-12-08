@@ -1,732 +1,556 @@
 # frame 28 / 40
-# 円.002
-particle dust 100000000 1 0 0.25 ~-0.891 ~0.0 ~-1.656 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.602 ~0.0 ~-1.603 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.313 ~0.0 ~-1.55 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.024 ~0.0 ~-1.497 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.265 ~0.0 ~-1.445 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.554 ~0.0 ~-1.392 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.843 ~0.0 ~-1.339 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.131 ~0.0 ~-1.286 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.42 ~0.0 ~-1.233 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.656 ~0.0 ~0.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.603 ~0.0 ~0.602 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.55 ~0.0 ~0.313 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.497 ~0.0 ~0.024 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.445 ~0.0 ~-0.265 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.392 ~0.0 ~-0.554 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.339 ~0.0 ~-0.843 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.286 ~0.0 ~-1.131 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.233 ~0.0 ~-1.42 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.891 ~0.0 ~1.656 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.602 ~0.0 ~1.603 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.313 ~0.0 ~1.55 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.024 ~0.0 ~1.497 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.265 ~0.0 ~1.445 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.554 ~0.0 ~1.392 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.843 ~0.0 ~1.339 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.131 ~0.0 ~1.286 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.42 ~0.0 ~1.233 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.656 ~0.0 ~-0.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.603 ~0.0 ~-0.602 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.55 ~0.0 ~-0.313 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.497 ~0.0 ~-0.024 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.445 ~0.0 ~0.265 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.392 ~0.0 ~0.554 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.339 ~0.0 ~0.843 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.286 ~0.0 ~1.131 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.233 ~0.0 ~1.42 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.517 ~0.0 ~-1.215 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.613 ~0.0 ~-1.197 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.215 ~0.0 ~-1.517 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.197 ~0.0 ~-1.613 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.517 ~0.0 ~1.215 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.613 ~0.0 ~1.197 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.215 ~0.0 ~1.517 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.197 ~0.0 ~1.613 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.084 ~0.0 ~-1.692 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.987 ~0.0 ~-1.674 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.795 ~0.0 ~-1.639 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.698 ~0.0 ~-1.621 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.506 ~0.0 ~-1.586 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.409 ~0.0 ~-1.568 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.217 ~0.0 ~-1.533 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.12 ~0.0 ~-1.515 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.072 ~0.0 ~-1.48 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.168 ~0.0 ~-1.462 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.361 ~0.0 ~-1.427 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.457 ~0.0 ~-1.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.65 ~0.0 ~-1.374 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.746 ~0.0 ~-1.356 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.939 ~0.0 ~-1.321 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.035 ~0.0 ~-1.303 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.228 ~0.0 ~-1.268 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.324 ~0.0 ~-1.25 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.692 ~0.0 ~1.084 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.674 ~0.0 ~0.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.639 ~0.0 ~0.795 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.621 ~0.0 ~0.698 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.586 ~0.0 ~0.506 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.568 ~0.0 ~0.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.533 ~0.0 ~0.217 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.515 ~0.0 ~0.12 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.48 ~0.0 ~-0.072 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.462 ~0.0 ~-0.168 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.427 ~0.0 ~-0.361 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.409 ~0.0 ~-0.457 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.374 ~0.0 ~-0.65 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.356 ~0.0 ~-0.746 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.321 ~0.0 ~-0.939 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.303 ~0.0 ~-1.035 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.268 ~0.0 ~-1.228 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.25 ~0.0 ~-1.324 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.084 ~0.0 ~1.692 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.987 ~0.0 ~1.674 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.795 ~0.0 ~1.639 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.698 ~0.0 ~1.621 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.506 ~0.0 ~1.586 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.409 ~0.0 ~1.568 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.217 ~0.0 ~1.533 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.12 ~0.0 ~1.515 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.072 ~0.0 ~1.48 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.168 ~0.0 ~1.462 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.361 ~0.0 ~1.427 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.457 ~0.0 ~1.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.65 ~0.0 ~1.374 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.746 ~0.0 ~1.356 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.939 ~0.0 ~1.321 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.035 ~0.0 ~1.303 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.228 ~0.0 ~1.268 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.324 ~0.0 ~1.25 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.692 ~0.0 ~-1.084 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.674 ~0.0 ~-0.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.639 ~0.0 ~-0.795 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.621 ~0.0 ~-0.698 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.586 ~0.0 ~-0.506 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.568 ~0.0 ~-0.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.533 ~0.0 ~-0.217 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.515 ~0.0 ~-0.12 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.48 ~0.0 ~0.072 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.462 ~0.0 ~0.168 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.427 ~0.0 ~0.361 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.409 ~0.0 ~0.457 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.374 ~0.0 ~0.65 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.356 ~0.0 ~0.746 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.321 ~0.0 ~0.939 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.303 ~0.0 ~1.035 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.268 ~0.0 ~1.228 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.25 ~0.0 ~1.324 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.661 ~0.0 ~-1.189 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.189 ~0.0 ~-1.661 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.661 ~0.0 ~1.189 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.189 ~0.0 ~1.661 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.939 ~0.0 ~-1.665 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.65 ~0.0 ~-1.612 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.361 ~0.0 ~-1.559 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.072 ~0.0 ~-1.506 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.217 ~0.0 ~-1.453 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.505 ~0.0 ~-1.4 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.794 ~0.0 ~-1.347 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.083 ~0.0 ~-1.295 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.372 ~0.0 ~-1.242 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.665 ~0.0 ~0.939 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.612 ~0.0 ~0.65 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.559 ~0.0 ~0.361 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.506 ~0.0 ~0.072 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.453 ~0.0 ~-0.217 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.4 ~0.0 ~-0.505 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.347 ~0.0 ~-0.794 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.295 ~0.0 ~-1.083 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.242 ~0.0 ~-1.372 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.939 ~0.0 ~1.665 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.65 ~0.0 ~1.612 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.361 ~0.0 ~1.559 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.072 ~0.0 ~1.506 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.217 ~0.0 ~1.453 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.505 ~0.0 ~1.4 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.794 ~0.0 ~1.347 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.083 ~0.0 ~1.295 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.372 ~0.0 ~1.242 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.665 ~0.0 ~-0.939 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.612 ~0.0 ~-0.65 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.559 ~0.0 ~-0.361 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.506 ~0.0 ~-0.072 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.453 ~0.0 ~0.217 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.4 ~0.0 ~0.505 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.347 ~0.0 ~0.794 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.295 ~0.0 ~1.083 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.242 ~0.0 ~1.372 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.469 ~0.0 ~-1.224 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.565 ~0.0 ~-1.206 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.224 ~0.0 ~-1.469 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.206 ~0.0 ~-1.565 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.469 ~0.0 ~1.224 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.565 ~0.0 ~1.206 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.224 ~0.0 ~1.469 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.206 ~0.0 ~1.565 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.132 ~0.0 ~-1.7 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.035 ~0.0 ~-1.683 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.843 ~0.0 ~-1.648 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.746 ~0.0 ~-1.63 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.554 ~0.0 ~-1.595 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.458 ~0.0 ~-1.577 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.265 ~0.0 ~-1.542 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.169 ~0.0 ~-1.524 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.024 ~0.0 ~-1.489 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.12 ~0.0 ~-1.471 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.313 ~0.0 ~-1.436 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.409 ~0.0 ~-1.418 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.602 ~0.0 ~-1.383 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.698 ~0.0 ~-1.365 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.891 ~0.0 ~-1.33 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.987 ~0.0 ~-1.312 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.18 ~0.0 ~-1.277 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.276 ~0.0 ~-1.259 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.7 ~0.0 ~1.132 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.683 ~0.0 ~1.035 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.648 ~0.0 ~0.843 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.63 ~0.0 ~0.746 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.595 ~0.0 ~0.554 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.577 ~0.0 ~0.458 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.542 ~0.0 ~0.265 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.524 ~0.0 ~0.169 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.489 ~0.0 ~-0.024 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.471 ~0.0 ~-0.12 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.436 ~0.0 ~-0.313 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.418 ~0.0 ~-0.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.383 ~0.0 ~-0.602 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.365 ~0.0 ~-0.698 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.33 ~0.0 ~-0.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.312 ~0.0 ~-0.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.277 ~0.0 ~-1.18 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.259 ~0.0 ~-1.276 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.132 ~0.0 ~1.7 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.035 ~0.0 ~1.683 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.843 ~0.0 ~1.648 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.746 ~0.0 ~1.63 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.554 ~0.0 ~1.595 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.458 ~0.0 ~1.577 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.265 ~0.0 ~1.542 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.169 ~0.0 ~1.524 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.024 ~0.0 ~1.489 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.12 ~0.0 ~1.471 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.313 ~0.0 ~1.436 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.409 ~0.0 ~1.418 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.602 ~0.0 ~1.383 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.698 ~0.0 ~1.365 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.891 ~0.0 ~1.33 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.987 ~0.0 ~1.312 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.18 ~0.0 ~1.277 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.276 ~0.0 ~1.259 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.7 ~0.0 ~-1.132 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.683 ~0.0 ~-1.035 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.648 ~0.0 ~-0.843 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.63 ~0.0 ~-0.746 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.595 ~0.0 ~-0.554 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.577 ~0.0 ~-0.458 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.542 ~0.0 ~-0.265 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.524 ~0.0 ~-0.169 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.489 ~0.0 ~0.024 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.471 ~0.0 ~0.12 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.436 ~0.0 ~0.313 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.418 ~0.0 ~0.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.383 ~0.0 ~0.602 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.365 ~0.0 ~0.698 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.33 ~0.0 ~0.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.312 ~0.0 ~0.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.277 ~0.0 ~1.18 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.259 ~0.0 ~1.276 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.709 ~0.0 ~-1.18 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.68 ~0.0 ~-1.221 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.649 ~0.0 ~-1.262 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.618 ~0.0 ~-1.302 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.585 ~0.0 ~-1.342 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.552 ~0.0 ~-1.38 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.518 ~0.0 ~-1.418 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.482 ~0.0 ~-1.455 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.446 ~0.0 ~-1.491 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.409 ~0.0 ~-1.526 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.371 ~0.0 ~-1.56 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.333 ~0.0 ~-1.593 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.293 ~0.0 ~-1.625 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.253 ~0.0 ~-1.656 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.212 ~0.0 ~-1.687 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.17 ~0.0 ~-1.716 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.128 ~0.0 ~-1.744 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.085 ~0.0 ~-1.771 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.041 ~0.0 ~-1.797 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.996 ~0.0 ~-1.822 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.951 ~0.0 ~-1.846 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.906 ~0.0 ~-1.869 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.86 ~0.0 ~-1.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.813 ~0.0 ~-1.911 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.766 ~0.0 ~-1.931 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.718 ~0.0 ~-1.949 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.67 ~0.0 ~-1.966 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.622 ~0.0 ~-1.982 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.573 ~0.0 ~-1.996 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.524 ~0.0 ~-2.01 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.474 ~0.0 ~-2.022 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.424 ~0.0 ~-2.033 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.374 ~0.0 ~-2.043 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.324 ~0.0 ~-2.051 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.274 ~0.0 ~-2.059 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.223 ~0.0 ~-2.065 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.172 ~0.0 ~-2.07 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.121 ~0.0 ~-2.073 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.071 ~0.0 ~-2.076 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.02 ~0.0 ~-2.077 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.031 ~0.0 ~-2.077 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.082 ~0.0 ~-2.075 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.133 ~0.0 ~-2.073 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.184 ~0.0 ~-2.069 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.235 ~0.0 ~-2.064 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.285 ~0.0 ~-2.057 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.336 ~0.0 ~-2.05 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.386 ~0.0 ~-2.041 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.436 ~0.0 ~-2.031 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.486 ~0.0 ~-2.019 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.535 ~0.0 ~-2.007 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.584 ~0.0 ~-1.993 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.633 ~0.0 ~-1.978 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.681 ~0.0 ~-1.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.729 ~0.0 ~-1.945 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.777 ~0.0 ~-1.926 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.824 ~0.0 ~-1.907 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.87 ~0.0 ~-1.886 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.916 ~0.0 ~-1.864 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.962 ~0.0 ~-1.841 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.007 ~0.0 ~-1.817 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.051 ~0.0 ~-1.791 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.095 ~0.0 ~-1.765 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.138 ~0.0 ~-1.738 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.18 ~0.0 ~-1.709 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.221 ~0.0 ~-1.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.262 ~0.0 ~-1.649 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.302 ~0.0 ~-1.618 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.342 ~0.0 ~-1.585 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.38 ~0.0 ~-1.552 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.418 ~0.0 ~-1.518 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.455 ~0.0 ~-1.482 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.491 ~0.0 ~-1.446 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.526 ~0.0 ~-1.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.56 ~0.0 ~-1.371 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.593 ~0.0 ~-1.333 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.625 ~0.0 ~-1.293 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.656 ~0.0 ~-1.253 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.687 ~0.0 ~-1.212 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.716 ~0.0 ~-1.17 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.744 ~0.0 ~-1.128 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.771 ~0.0 ~-1.085 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.797 ~0.0 ~-1.041 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.822 ~0.0 ~-0.996 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.846 ~0.0 ~-0.951 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.869 ~0.0 ~-0.906 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.891 ~0.0 ~-0.86 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.911 ~0.0 ~-0.813 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.931 ~0.0 ~-0.766 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.949 ~0.0 ~-0.718 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.966 ~0.0 ~-0.67 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.982 ~0.0 ~-0.622 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.996 ~0.0 ~-0.573 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.01 ~0.0 ~-0.524 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.022 ~0.0 ~-0.474 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.033 ~0.0 ~-0.424 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.043 ~0.0 ~-0.374 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.051 ~0.0 ~-0.324 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.059 ~0.0 ~-0.274 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.065 ~0.0 ~-0.223 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.07 ~0.0 ~-0.172 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.073 ~0.0 ~-0.121 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.076 ~0.0 ~-0.071 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.077 ~0.0 ~-0.02 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.077 ~0.0 ~0.031 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.075 ~0.0 ~0.082 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.073 ~0.0 ~0.133 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.069 ~0.0 ~0.184 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.064 ~0.0 ~0.235 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.057 ~0.0 ~0.285 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.05 ~0.0 ~0.336 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.041 ~0.0 ~0.386 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.031 ~0.0 ~0.436 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.019 ~0.0 ~0.486 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.007 ~0.0 ~0.535 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.993 ~0.0 ~0.584 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.978 ~0.0 ~0.633 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.962 ~0.0 ~0.681 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.945 ~0.0 ~0.729 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.926 ~0.0 ~0.777 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.907 ~0.0 ~0.824 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.886 ~0.0 ~0.87 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.864 ~0.0 ~0.916 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.841 ~0.0 ~0.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.817 ~0.0 ~1.007 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.791 ~0.0 ~1.051 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.765 ~0.0 ~1.095 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.738 ~0.0 ~1.138 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.709 ~0.0 ~1.18 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.68 ~0.0 ~1.221 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.649 ~0.0 ~1.262 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.618 ~0.0 ~1.302 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.585 ~0.0 ~1.342 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.552 ~0.0 ~1.38 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.518 ~0.0 ~1.418 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.482 ~0.0 ~1.455 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.446 ~0.0 ~1.491 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.409 ~0.0 ~1.526 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.371 ~0.0 ~1.56 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.333 ~0.0 ~1.593 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.293 ~0.0 ~1.625 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.253 ~0.0 ~1.656 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.212 ~0.0 ~1.687 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.17 ~0.0 ~1.716 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.128 ~0.0 ~1.744 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.085 ~0.0 ~1.771 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.041 ~0.0 ~1.797 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.996 ~0.0 ~1.822 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.951 ~0.0 ~1.846 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.906 ~0.0 ~1.869 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.86 ~0.0 ~1.891 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.813 ~0.0 ~1.911 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.766 ~0.0 ~1.931 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.718 ~0.0 ~1.949 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.67 ~0.0 ~1.966 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.622 ~0.0 ~1.982 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.573 ~0.0 ~1.996 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.524 ~0.0 ~2.01 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.474 ~0.0 ~2.022 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.424 ~0.0 ~2.033 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.374 ~0.0 ~2.043 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.324 ~0.0 ~2.051 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.274 ~0.0 ~2.059 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.223 ~0.0 ~2.065 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.172 ~0.0 ~2.07 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.121 ~0.0 ~2.073 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.071 ~0.0 ~2.076 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.02 ~0.0 ~2.077 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.031 ~0.0 ~2.077 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.082 ~0.0 ~2.075 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.133 ~0.0 ~2.073 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.184 ~0.0 ~2.069 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.235 ~0.0 ~2.064 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.285 ~0.0 ~2.057 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.336 ~0.0 ~2.05 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.386 ~0.0 ~2.041 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.436 ~0.0 ~2.031 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.486 ~0.0 ~2.019 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.535 ~0.0 ~2.007 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.584 ~0.0 ~1.993 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.633 ~0.0 ~1.978 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.681 ~0.0 ~1.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.729 ~0.0 ~1.945 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.777 ~0.0 ~1.926 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.824 ~0.0 ~1.907 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.87 ~0.0 ~1.886 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.916 ~0.0 ~1.864 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.962 ~0.0 ~1.841 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.007 ~0.0 ~1.817 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.051 ~0.0 ~1.791 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.095 ~0.0 ~1.765 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.138 ~0.0 ~1.738 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.18 ~0.0 ~1.709 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.221 ~0.0 ~1.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.262 ~0.0 ~1.649 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.302 ~0.0 ~1.618 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.342 ~0.0 ~1.585 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.38 ~0.0 ~1.552 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.418 ~0.0 ~1.518 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.455 ~0.0 ~1.482 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.491 ~0.0 ~1.446 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.526 ~0.0 ~1.409 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.56 ~0.0 ~1.371 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.593 ~0.0 ~1.333 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.625 ~0.0 ~1.293 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.656 ~0.0 ~1.253 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.687 ~0.0 ~1.212 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.716 ~0.0 ~1.17 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.744 ~0.0 ~1.128 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.771 ~0.0 ~1.085 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.797 ~0.0 ~1.041 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.822 ~0.0 ~0.996 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.846 ~0.0 ~0.951 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.869 ~0.0 ~0.906 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.891 ~0.0 ~0.86 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.911 ~0.0 ~0.813 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.931 ~0.0 ~0.766 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.949 ~0.0 ~0.718 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.966 ~0.0 ~0.67 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.982 ~0.0 ~0.622 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.996 ~0.0 ~0.573 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.01 ~0.0 ~0.524 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.022 ~0.0 ~0.474 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.033 ~0.0 ~0.424 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.043 ~0.0 ~0.374 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.051 ~0.0 ~0.324 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.059 ~0.0 ~0.274 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.065 ~0.0 ~0.223 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.07 ~0.0 ~0.172 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.073 ~0.0 ~0.121 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.076 ~0.0 ~0.071 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.077 ~0.0 ~0.02 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.077 ~0.0 ~-0.031 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.075 ~0.0 ~-0.082 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.073 ~0.0 ~-0.133 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.069 ~0.0 ~-0.184 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.064 ~0.0 ~-0.235 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.057 ~0.0 ~-0.285 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.05 ~0.0 ~-0.336 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.041 ~0.0 ~-0.386 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.031 ~0.0 ~-0.436 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.019 ~0.0 ~-0.486 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.007 ~0.0 ~-0.535 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.993 ~0.0 ~-0.584 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.978 ~0.0 ~-0.633 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.962 ~0.0 ~-0.681 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.945 ~0.0 ~-0.729 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.926 ~0.0 ~-0.777 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.907 ~0.0 ~-0.824 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.886 ~0.0 ~-0.87 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.864 ~0.0 ~-0.916 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.841 ~0.0 ~-0.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.817 ~0.0 ~-1.007 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.791 ~0.0 ~-1.051 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.765 ~0.0 ~-1.095 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.738 ~0.0 ~-1.138 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.801 ~0.0 ~-0.541 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.559 ~0.0 ~-0.708 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.318 ~0.0 ~-0.875 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.076 ~0.0 ~-1.042 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.834 ~0.0 ~-1.209 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.593 ~0.0 ~-1.375 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.351 ~0.0 ~-1.542 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.109 ~0.0 ~-1.709 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.133 ~0.0 ~-1.876 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.541 ~0.0 ~1.801 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.708 ~0.0 ~1.559 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.875 ~0.0 ~1.318 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.042 ~0.0 ~1.076 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.209 ~0.0 ~0.834 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.375 ~0.0 ~0.593 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.542 ~0.0 ~0.351 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.709 ~0.0 ~0.109 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.876 ~0.0 ~-0.133 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.801 ~0.0 ~0.541 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.559 ~0.0 ~0.708 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.318 ~0.0 ~0.875 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.076 ~0.0 ~1.042 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.834 ~0.0 ~1.209 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.593 ~0.0 ~1.375 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.351 ~0.0 ~1.542 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.109 ~0.0 ~1.709 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.133 ~0.0 ~1.876 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.541 ~0.0 ~-1.801 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.708 ~0.0 ~-1.559 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.875 ~0.0 ~-1.318 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.042 ~0.0 ~-1.076 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.209 ~0.0 ~-0.834 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.375 ~0.0 ~-0.593 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.542 ~0.0 ~-0.351 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.709 ~0.0 ~-0.109 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.876 ~0.0 ~0.133 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.213 ~0.0 ~-1.932 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.294 ~0.0 ~-1.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.932 ~0.0 ~-0.213 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.987 ~0.0 ~-0.294 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.213 ~0.0 ~1.932 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.294 ~0.0 ~1.987 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.932 ~0.0 ~0.213 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.987 ~0.0 ~0.294 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.962 ~0.0 ~-0.43 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.882 ~0.0 ~-0.486 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.721 ~0.0 ~-0.597 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.64 ~0.0 ~-0.652 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.479 ~0.0 ~-0.764 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.398 ~0.0 ~-0.819 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.237 ~0.0 ~-0.931 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.157 ~0.0 ~-0.986 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.995 ~0.0 ~-1.097 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.915 ~0.0 ~-1.153 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.754 ~0.0 ~-1.264 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.673 ~0.0 ~-1.32 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.512 ~0.0 ~-1.431 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.431 ~0.0 ~-1.487 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.27 ~0.0 ~-1.598 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.19 ~0.0 ~-1.654 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.029 ~0.0 ~-1.765 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.052 ~0.0 ~-1.82 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.43 ~0.0 ~1.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.486 ~0.0 ~1.882 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.597 ~0.0 ~1.721 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.652 ~0.0 ~1.64 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.764 ~0.0 ~1.479 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.819 ~0.0 ~1.398 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.931 ~0.0 ~1.237 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.986 ~0.0 ~1.157 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.097 ~0.0 ~0.995 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.153 ~0.0 ~0.915 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.264 ~0.0 ~0.754 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.32 ~0.0 ~0.673 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.431 ~0.0 ~0.512 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.487 ~0.0 ~0.431 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.598 ~0.0 ~0.27 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.654 ~0.0 ~0.19 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.765 ~0.0 ~0.029 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.82 ~0.0 ~-0.052 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.962 ~0.0 ~0.43 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.882 ~0.0 ~0.486 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.721 ~0.0 ~0.597 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.64 ~0.0 ~0.652 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.479 ~0.0 ~0.764 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.398 ~0.0 ~0.819 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.237 ~0.0 ~0.931 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.157 ~0.0 ~0.986 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.995 ~0.0 ~1.097 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.915 ~0.0 ~1.153 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.754 ~0.0 ~1.264 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.673 ~0.0 ~1.32 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.512 ~0.0 ~1.431 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.431 ~0.0 ~1.487 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.27 ~0.0 ~1.598 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.19 ~0.0 ~1.654 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.029 ~0.0 ~1.765 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.052 ~0.0 ~1.82 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.43 ~0.0 ~-1.962 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.486 ~0.0 ~-1.882 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.597 ~0.0 ~-1.721 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.652 ~0.0 ~-1.64 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.764 ~0.0 ~-1.479 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.819 ~0.0 ~-1.398 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.931 ~0.0 ~-1.237 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.986 ~0.0 ~-1.157 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.097 ~0.0 ~-0.995 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.153 ~0.0 ~-0.915 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.264 ~0.0 ~-0.754 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.32 ~0.0 ~-0.673 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.431 ~0.0 ~-0.512 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.487 ~0.0 ~-0.431 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.598 ~0.0 ~-0.27 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.654 ~0.0 ~-0.19 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.765 ~0.0 ~-0.029 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.82 ~0.0 ~0.052 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.334 ~0.0 ~-2.015 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.015 ~0.0 ~-0.334 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.334 ~0.0 ~2.015 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.015 ~0.0 ~0.334 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.841 ~0.0 ~-0.513 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.6 ~0.0 ~-0.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.358 ~0.0 ~-0.847 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.116 ~0.0 ~-1.014 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.875 ~0.0 ~-1.181 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.633 ~0.0 ~-1.348 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.391 ~0.0 ~-1.515 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.149 ~0.0 ~-1.681 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.092 ~0.0 ~-1.848 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.513 ~0.0 ~1.841 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.68 ~0.0 ~1.6 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.847 ~0.0 ~1.358 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.014 ~0.0 ~1.116 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.181 ~0.0 ~0.875 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.348 ~0.0 ~0.633 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.515 ~0.0 ~0.391 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.681 ~0.0 ~0.149 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.848 ~0.0 ~-0.092 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.841 ~0.0 ~0.513 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.6 ~0.0 ~0.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.358 ~0.0 ~0.847 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.116 ~0.0 ~1.014 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.875 ~0.0 ~1.181 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.633 ~0.0 ~1.348 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.391 ~0.0 ~1.515 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.149 ~0.0 ~1.681 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.092 ~0.0 ~1.848 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.513 ~0.0 ~-1.841 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.68 ~0.0 ~-1.6 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.847 ~0.0 ~-1.358 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.014 ~0.0 ~-1.116 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.181 ~0.0 ~-0.875 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.348 ~0.0 ~-0.633 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.515 ~0.0 ~-0.391 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.681 ~0.0 ~-0.149 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.848 ~0.0 ~0.092 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.173 ~0.0 ~-1.904 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.254 ~0.0 ~-1.959 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.904 ~0.0 ~-0.173 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.959 ~0.0 ~-0.254 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.173 ~0.0 ~1.904 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.254 ~0.0 ~1.959 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.904 ~0.0 ~0.173 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.959 ~0.0 ~0.254 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-2.003 ~0.0 ~-0.402 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.922 ~0.0 ~-0.458 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.761 ~0.0 ~-0.569 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.68 ~0.0 ~-0.625 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.519 ~0.0 ~-0.736 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.439 ~0.0 ~-0.792 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.277 ~0.0 ~-0.903 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.197 ~0.0 ~-0.958 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.036 ~0.0 ~-1.07 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.955 ~0.0 ~-1.125 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.794 ~0.0 ~-1.236 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.713 ~0.0 ~-1.292 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.552 ~0.0 ~-1.403 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.472 ~0.0 ~-1.459 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.311 ~0.0 ~-1.57 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.23 ~0.0 ~-1.626 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.069 ~0.0 ~-1.737 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.012 ~0.0 ~-1.793 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.402 ~0.0 ~2.003 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.458 ~0.0 ~1.922 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.569 ~0.0 ~1.761 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.625 ~0.0 ~1.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.736 ~0.0 ~1.519 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.792 ~0.0 ~1.439 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.903 ~0.0 ~1.277 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.958 ~0.0 ~1.197 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.07 ~0.0 ~1.036 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.125 ~0.0 ~0.955 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.236 ~0.0 ~0.794 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.292 ~0.0 ~0.713 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.403 ~0.0 ~0.552 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.459 ~0.0 ~0.472 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.57 ~0.0 ~0.311 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.626 ~0.0 ~0.23 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.737 ~0.0 ~0.069 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-1.793 ~0.0 ~-0.012 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~2.003 ~0.0 ~0.402 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.922 ~0.0 ~0.458 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.761 ~0.0 ~0.569 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.68 ~0.0 ~0.625 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.519 ~0.0 ~0.736 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.439 ~0.0 ~0.792 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.277 ~0.0 ~0.903 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.197 ~0.0 ~0.958 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.036 ~0.0 ~1.07 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.955 ~0.0 ~1.125 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.794 ~0.0 ~1.236 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.713 ~0.0 ~1.292 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.552 ~0.0 ~1.403 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.472 ~0.0 ~1.459 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.311 ~0.0 ~1.57 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.23 ~0.0 ~1.626 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.069 ~0.0 ~1.737 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~-0.012 ~0.0 ~1.793 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.402 ~0.0 ~-2.003 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.458 ~0.0 ~-1.922 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.569 ~0.0 ~-1.761 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.625 ~0.0 ~-1.68 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.736 ~0.0 ~-1.519 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.792 ~0.0 ~-1.439 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.903 ~0.0 ~-1.277 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~0.958 ~0.0 ~-1.197 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.07 ~0.0 ~-1.036 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.125 ~0.0 ~-0.955 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.236 ~0.0 ~-0.794 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.292 ~0.0 ~-0.713 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.403 ~0.0 ~-0.552 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.459 ~0.0 ~-0.472 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.57 ~0.0 ~-0.311 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.626 ~0.0 ~-0.23 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.737 ~0.0 ~-0.069 0 0 0 0 1 force @a[distance=..32]
-particle dust 100000000 1 0 0.25 ~1.793 ~0.0 ~0.012 0 0 0 0 1 force @a[distance=..32]
-# 平面
-playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..32] ~ ~ ~ 1 1.32 0
+# コレクション 1--円.008
+particle dust 100000000 1 0 0.3 ^1.709 ^0.0 ^-1.18 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.649 ^0.0 ^-1.262 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.585 ^0.0 ^-1.342 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.518 ^0.0 ^-1.418 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.446 ^0.0 ^-1.491 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.371 ^0.0 ^-1.56 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.293 ^0.0 ^-1.625 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.212 ^0.0 ^-1.687 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.128 ^0.0 ^-1.744 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.041 ^0.0 ^-1.797 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.951 ^0.0 ^-1.846 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.86 ^0.0 ^-1.891 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.766 ^0.0 ^-1.931 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.67 ^0.0 ^-1.966 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.573 ^0.0 ^-1.996 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.474 ^0.0 ^-2.022 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.374 ^0.0 ^-2.043 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.274 ^0.0 ^-2.059 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.172 ^0.0 ^-2.07 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.071 ^0.0 ^-2.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.031 ^0.0 ^-2.077 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.133 ^0.0 ^-2.073 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.235 ^0.0 ^-2.064 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.336 ^0.0 ^-2.05 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.436 ^0.0 ^-2.031 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.535 ^0.0 ^-2.007 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.633 ^0.0 ^-1.978 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.729 ^0.0 ^-1.945 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.824 ^0.0 ^-1.907 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.916 ^0.0 ^-1.864 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.007 ^0.0 ^-1.817 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.095 ^0.0 ^-1.765 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.18 ^0.0 ^-1.709 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.262 ^0.0 ^-1.649 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.342 ^0.0 ^-1.585 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.418 ^0.0 ^-1.518 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.491 ^0.0 ^-1.446 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.56 ^0.0 ^-1.371 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.625 ^0.0 ^-1.293 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.687 ^0.0 ^-1.212 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.744 ^0.0 ^-1.128 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.797 ^0.0 ^-1.041 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.846 ^0.0 ^-0.951 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.891 ^0.0 ^-0.86 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.931 ^0.0 ^-0.766 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.966 ^0.0 ^-0.67 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.996 ^0.0 ^-0.573 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.022 ^0.0 ^-0.474 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.043 ^0.0 ^-0.374 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.059 ^0.0 ^-0.274 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.07 ^0.0 ^-0.172 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.076 ^0.0 ^-0.071 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.077 ^0.0 ^0.031 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.073 ^0.0 ^0.133 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.064 ^0.0 ^0.235 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.05 ^0.0 ^0.336 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.031 ^0.0 ^0.436 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.007 ^0.0 ^0.535 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.978 ^0.0 ^0.633 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.945 ^0.0 ^0.729 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.907 ^0.0 ^0.824 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.864 ^0.0 ^0.916 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.817 ^0.0 ^1.007 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.765 ^0.0 ^1.095 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.709 ^0.0 ^1.18 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.649 ^0.0 ^1.262 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.585 ^0.0 ^1.342 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.518 ^0.0 ^1.418 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.446 ^0.0 ^1.491 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.371 ^0.0 ^1.56 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.293 ^0.0 ^1.625 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.212 ^0.0 ^1.687 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.128 ^0.0 ^1.744 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.041 ^0.0 ^1.797 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.951 ^0.0 ^1.846 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.86 ^0.0 ^1.891 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.766 ^0.0 ^1.931 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.67 ^0.0 ^1.966 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.573 ^0.0 ^1.996 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.474 ^0.0 ^2.022 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.374 ^0.0 ^2.043 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.274 ^0.0 ^2.059 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.172 ^0.0 ^2.07 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.071 ^0.0 ^2.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.031 ^0.0 ^2.077 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.133 ^0.0 ^2.073 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.235 ^0.0 ^2.064 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.336 ^0.0 ^2.05 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.436 ^0.0 ^2.031 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.535 ^0.0 ^2.007 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.633 ^0.0 ^1.978 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.729 ^0.0 ^1.945 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.824 ^0.0 ^1.907 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.916 ^0.0 ^1.864 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.007 ^0.0 ^1.817 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.095 ^0.0 ^1.765 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.18 ^0.0 ^1.709 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.262 ^0.0 ^1.649 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.342 ^0.0 ^1.585 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.418 ^0.0 ^1.518 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.491 ^0.0 ^1.446 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.56 ^0.0 ^1.371 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.625 ^0.0 ^1.293 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.687 ^0.0 ^1.212 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.744 ^0.0 ^1.128 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.797 ^0.0 ^1.041 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.846 ^0.0 ^0.951 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.891 ^0.0 ^0.86 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.931 ^0.0 ^0.766 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.966 ^0.0 ^0.67 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.996 ^0.0 ^0.573 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.022 ^0.0 ^0.474 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.043 ^0.0 ^0.374 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.059 ^0.0 ^0.274 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.07 ^0.0 ^0.172 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.076 ^0.0 ^0.071 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.077 ^0.0 ^-0.031 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.073 ^0.0 ^-0.133 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.064 ^0.0 ^-0.235 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.05 ^0.0 ^-0.336 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.031 ^0.0 ^-0.436 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.007 ^0.0 ^-0.535 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.978 ^0.0 ^-0.633 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.945 ^0.0 ^-0.729 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.907 ^0.0 ^-0.824 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.864 ^0.0 ^-0.916 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.817 ^0.0 ^-1.007 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.765 ^0.0 ^-1.095 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.891 ^0.0 ^-1.656 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.602 ^0.0 ^-1.603 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.313 ^0.0 ^-1.55 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.024 ^0.0 ^-1.497 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.265 ^0.0 ^-1.445 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.554 ^0.0 ^-1.392 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.843 ^0.0 ^-1.339 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.131 ^0.0 ^-1.286 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.42 ^0.0 ^-1.233 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.656 ^0.0 ^0.891 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.603 ^0.0 ^0.602 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.55 ^0.0 ^0.313 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.497 ^0.0 ^0.024 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.445 ^0.0 ^-0.265 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.392 ^0.0 ^-0.554 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.339 ^0.0 ^-0.843 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.286 ^0.0 ^-1.131 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.233 ^0.0 ^-1.42 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.891 ^0.0 ^1.656 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.602 ^0.0 ^1.603 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.313 ^0.0 ^1.55 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.024 ^0.0 ^1.497 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.265 ^0.0 ^1.445 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.554 ^0.0 ^1.392 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.843 ^0.0 ^1.339 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.131 ^0.0 ^1.286 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.42 ^0.0 ^1.233 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.656 ^0.0 ^-0.891 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.603 ^0.0 ^-0.602 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.55 ^0.0 ^-0.313 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.497 ^0.0 ^-0.024 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.445 ^0.0 ^0.265 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.392 ^0.0 ^0.554 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.339 ^0.0 ^0.843 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.286 ^0.0 ^1.131 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.233 ^0.0 ^1.42 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.565 ^0.0 ^-1.206 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.206 ^0.0 ^-1.565 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.565 ^0.0 ^1.206 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.206 ^0.0 ^1.565 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.035 ^0.0 ^-1.683 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.746 ^0.0 ^-1.63 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.458 ^0.0 ^-1.577 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.169 ^0.0 ^-1.524 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.12 ^0.0 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.409 ^0.0 ^-1.418 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.698 ^0.0 ^-1.365 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.987 ^0.0 ^-1.312 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.276 ^0.0 ^-1.259 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.683 ^0.0 ^1.035 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.63 ^0.0 ^0.746 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.577 ^0.0 ^0.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.524 ^0.0 ^0.169 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.471 ^0.0 ^-0.12 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.418 ^0.0 ^-0.409 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.365 ^0.0 ^-0.698 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.312 ^0.0 ^-0.987 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.259 ^0.0 ^-1.276 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.035 ^0.0 ^1.683 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.746 ^0.0 ^1.63 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.458 ^0.0 ^1.577 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.169 ^0.0 ^1.524 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.12 ^0.0 ^1.471 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.409 ^0.0 ^1.418 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.698 ^0.0 ^1.365 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.987 ^0.0 ^1.312 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.276 ^0.0 ^1.259 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.683 ^0.0 ^-1.035 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.63 ^0.0 ^-0.746 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.577 ^0.0 ^-0.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.524 ^0.0 ^-0.169 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.471 ^0.0 ^0.12 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.418 ^0.0 ^0.409 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.365 ^0.0 ^0.698 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.312 ^0.0 ^0.987 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.259 ^0.0 ^1.276 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.801 ^0.0 ^-0.541 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.559 ^0.0 ^-0.708 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.318 ^0.0 ^-0.875 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.076 ^0.0 ^-1.042 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.834 ^0.0 ^-1.209 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.593 ^0.0 ^-1.375 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.351 ^0.0 ^-1.542 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.109 ^0.0 ^-1.709 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.133 ^0.0 ^-1.876 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.541 ^0.0 ^1.801 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.708 ^0.0 ^1.559 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.875 ^0.0 ^1.318 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.042 ^0.0 ^1.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.209 ^0.0 ^0.834 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.375 ^0.0 ^0.593 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.542 ^0.0 ^0.351 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.709 ^0.0 ^0.109 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.876 ^0.0 ^-0.133 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.801 ^0.0 ^0.541 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.559 ^0.0 ^0.708 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.318 ^0.0 ^0.875 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.076 ^0.0 ^1.042 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.834 ^0.0 ^1.209 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.593 ^0.0 ^1.375 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.351 ^0.0 ^1.542 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.109 ^0.0 ^1.709 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.133 ^0.0 ^1.876 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.541 ^0.0 ^-1.801 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.708 ^0.0 ^-1.559 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.875 ^0.0 ^-1.318 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.042 ^0.0 ^-1.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.209 ^0.0 ^-0.834 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.375 ^0.0 ^-0.593 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.542 ^0.0 ^-0.351 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.709 ^0.0 ^-0.109 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.876 ^0.0 ^0.133 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.254 ^0.0 ^-1.959 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.959 ^0.0 ^-0.254 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.254 ^0.0 ^1.959 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.959 ^0.0 ^0.254 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.922 ^0.0 ^-0.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.68 ^0.0 ^-0.625 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.439 ^0.0 ^-0.792 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.197 ^0.0 ^-0.958 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.955 ^0.0 ^-1.125 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.713 ^0.0 ^-1.292 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.472 ^0.0 ^-1.459 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.23 ^0.0 ^-1.626 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.012 ^0.0 ^-1.793 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.458 ^0.0 ^1.922 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.625 ^0.0 ^1.68 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.792 ^0.0 ^1.439 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.958 ^0.0 ^1.197 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.125 ^0.0 ^0.955 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.292 ^0.0 ^0.713 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.459 ^0.0 ^0.472 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.626 ^0.0 ^0.23 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.793 ^0.0 ^-0.012 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.922 ^0.0 ^0.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.68 ^0.0 ^0.625 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.439 ^0.0 ^0.792 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.197 ^0.0 ^0.958 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.955 ^0.0 ^1.125 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.713 ^0.0 ^1.292 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.472 ^0.0 ^1.459 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.23 ^0.0 ^1.626 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.012 ^0.0 ^1.793 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.458 ^0.0 ^-1.922 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.625 ^0.0 ^-1.68 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.792 ^0.0 ^-1.439 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.958 ^0.0 ^-1.197 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.125 ^0.0 ^-0.955 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.292 ^0.0 ^-0.713 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.459 ^0.0 ^-0.472 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.626 ^0.0 ^-0.23 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.793 ^0.0 ^0.012 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.679 ^0.0 ^-1.221 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.617 ^0.0 ^-1.302 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.552 ^0.0 ^-1.38 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.482 ^0.0 ^-1.454 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.409 ^0.0 ^-1.525 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.332 ^0.0 ^-1.592 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.253 ^0.0 ^-1.656 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.17 ^0.0 ^-1.715 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.084 ^0.0 ^-1.771 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.996 ^0.0 ^-1.822 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.905 ^0.0 ^-1.868 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.813 ^0.0 ^-1.911 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.718 ^0.0 ^-1.948 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.621 ^0.0 ^-1.981 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.523 ^0.0 ^-2.009 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.424 ^0.0 ^-2.032 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.324 ^0.0 ^-2.051 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.223 ^0.0 ^-2.064 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.121 ^0.0 ^-2.073 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.02 ^0.0 ^-2.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.082 ^0.0 ^-2.075 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.184 ^0.0 ^-2.068 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.285 ^0.0 ^-2.057 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.386 ^0.0 ^-2.04 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.485 ^0.0 ^-2.019 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.584 ^0.0 ^-1.992 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.681 ^0.0 ^-1.961 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.776 ^0.0 ^-1.926 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.87 ^0.0 ^-1.885 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.961 ^0.0 ^-1.84 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.051 ^0.0 ^-1.791 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.137 ^0.0 ^-1.737 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.221 ^0.0 ^-1.679 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.302 ^0.0 ^-1.617 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.38 ^0.0 ^-1.552 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.454 ^0.0 ^-1.482 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.525 ^0.0 ^-1.409 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.592 ^0.0 ^-1.332 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.656 ^0.0 ^-1.253 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.715 ^0.0 ^-1.17 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.771 ^0.0 ^-1.084 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.822 ^0.0 ^-0.996 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.868 ^0.0 ^-0.905 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.911 ^0.0 ^-0.813 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.948 ^0.0 ^-0.718 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.981 ^0.0 ^-0.621 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.009 ^0.0 ^-0.523 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.032 ^0.0 ^-0.424 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.051 ^0.0 ^-0.324 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.064 ^0.0 ^-0.223 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.073 ^0.0 ^-0.121 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.076 ^0.0 ^-0.02 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.075 ^0.0 ^0.082 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.068 ^0.0 ^0.184 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.057 ^0.0 ^0.285 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.04 ^0.0 ^0.386 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-2.019 ^0.0 ^0.485 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.992 ^0.0 ^0.584 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.961 ^0.0 ^0.681 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.926 ^0.0 ^0.776 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.885 ^0.0 ^0.87 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.84 ^0.0 ^0.961 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.791 ^0.0 ^1.051 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.737 ^0.0 ^1.137 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.679 ^0.0 ^1.221 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.617 ^0.0 ^1.302 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.552 ^0.0 ^1.38 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.482 ^0.0 ^1.454 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.409 ^0.0 ^1.525 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.332 ^0.0 ^1.592 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.253 ^0.0 ^1.656 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.17 ^0.0 ^1.715 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.084 ^0.0 ^1.771 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.996 ^0.0 ^1.822 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.905 ^0.0 ^1.868 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.813 ^0.0 ^1.911 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.718 ^0.0 ^1.948 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.621 ^0.0 ^1.981 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.523 ^0.0 ^2.009 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.424 ^0.0 ^2.032 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.324 ^0.0 ^2.051 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.223 ^0.0 ^2.064 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.121 ^0.0 ^2.073 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.02 ^0.0 ^2.076 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.082 ^0.0 ^2.075 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.184 ^0.0 ^2.068 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.285 ^0.0 ^2.057 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.386 ^0.0 ^2.04 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.485 ^0.0 ^2.019 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.584 ^0.0 ^1.992 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.681 ^0.0 ^1.961 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.776 ^0.0 ^1.926 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.87 ^0.0 ^1.885 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.961 ^0.0 ^1.84 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.051 ^0.0 ^1.791 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.137 ^0.0 ^1.737 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.221 ^0.0 ^1.679 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.302 ^0.0 ^1.617 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.38 ^0.0 ^1.552 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.454 ^0.0 ^1.482 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.525 ^0.0 ^1.409 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.592 ^0.0 ^1.332 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.656 ^0.0 ^1.253 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.715 ^0.0 ^1.17 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.771 ^0.0 ^1.084 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.822 ^0.0 ^0.996 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.868 ^0.0 ^0.905 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.911 ^0.0 ^0.813 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.948 ^0.0 ^0.718 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.981 ^0.0 ^0.621 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.009 ^0.0 ^0.523 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.032 ^0.0 ^0.424 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.051 ^0.0 ^0.324 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.064 ^0.0 ^0.223 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.073 ^0.0 ^0.121 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.076 ^0.0 ^0.02 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.075 ^0.0 ^-0.082 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.068 ^0.0 ^-0.184 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.057 ^0.0 ^-0.285 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.04 ^0.0 ^-0.386 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^2.019 ^0.0 ^-0.485 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.992 ^0.0 ^-0.584 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.961 ^0.0 ^-0.681 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.926 ^0.0 ^-0.776 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.885 ^0.0 ^-0.87 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.84 ^0.0 ^-0.961 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.791 ^0.0 ^-1.051 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.737 ^0.0 ^-1.137 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.963 ^0.0 ^-1.67 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.674 ^0.0 ^-1.617 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.385 ^0.0 ^-1.564 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.096 ^0.0 ^-1.511 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.192 ^0.0 ^-1.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.481 ^0.0 ^-1.405 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.77 ^0.0 ^-1.352 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.059 ^0.0 ^-1.299 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.348 ^0.0 ^-1.246 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.67 ^0.0 ^0.963 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.617 ^0.0 ^0.674 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.564 ^0.0 ^0.385 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.511 ^0.0 ^0.096 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.458 ^0.0 ^-0.192 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.405 ^0.0 ^-0.481 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.352 ^0.0 ^-0.77 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.299 ^0.0 ^-1.059 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.246 ^0.0 ^-1.348 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.963 ^0.0 ^1.67 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.674 ^0.0 ^1.617 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.385 ^0.0 ^1.564 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.096 ^0.0 ^1.511 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.192 ^0.0 ^1.458 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.481 ^0.0 ^1.405 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.77 ^0.0 ^1.352 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.059 ^0.0 ^1.299 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.348 ^0.0 ^1.246 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.67 ^0.0 ^-0.963 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.617 ^0.0 ^-0.674 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.564 ^0.0 ^-0.385 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.511 ^0.0 ^-0.096 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.458 ^0.0 ^0.192 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.405 ^0.0 ^0.481 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.352 ^0.0 ^0.77 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.299 ^0.0 ^1.059 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.246 ^0.0 ^1.348 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.493 ^0.0 ^-1.22 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.22 ^0.0 ^-1.493 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.493 ^0.0 ^1.22 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.22 ^0.0 ^1.493 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.819 ^0.0 ^-1.643 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.53 ^0.0 ^-1.59 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.241 ^0.0 ^-1.537 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.048 ^0.0 ^-1.484 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.337 ^0.0 ^-1.431 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.626 ^0.0 ^-1.378 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.915 ^0.0 ^-1.325 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.204 ^0.0 ^-1.272 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.643 ^0.0 ^0.819 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.59 ^0.0 ^0.53 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.537 ^0.0 ^0.241 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.484 ^0.0 ^-0.048 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.431 ^0.0 ^-0.337 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.378 ^0.0 ^-0.626 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.325 ^0.0 ^-0.915 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.272 ^0.0 ^-1.204 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.819 ^0.0 ^1.643 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.53 ^0.0 ^1.59 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.241 ^0.0 ^1.537 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.048 ^0.0 ^1.484 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.337 ^0.0 ^1.431 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.626 ^0.0 ^1.378 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.915 ^0.0 ^1.325 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.204 ^0.0 ^1.272 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.643 ^0.0 ^-0.819 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.59 ^0.0 ^-0.53 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.537 ^0.0 ^-0.241 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.484 ^0.0 ^0.048 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.431 ^0.0 ^0.337 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.378 ^0.0 ^0.626 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.325 ^0.0 ^0.915 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.272 ^0.0 ^1.204 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.862 ^0.0 ^-0.5 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.62 ^0.0 ^-0.666 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.378 ^0.0 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.136 ^0.0 ^-1.0 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.895 ^0.0 ^-1.167 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.653 ^0.0 ^-1.334 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.411 ^0.0 ^-1.501 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.17 ^0.0 ^-1.667 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.072 ^0.0 ^-1.834 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.5 ^0.0 ^1.862 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.666 ^0.0 ^1.62 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.833 ^0.0 ^1.378 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.0 ^0.0 ^1.136 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.167 ^0.0 ^0.895 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.334 ^0.0 ^0.653 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.501 ^0.0 ^0.411 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.667 ^0.0 ^0.17 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.834 ^0.0 ^-0.072 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.862 ^0.0 ^0.5 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.62 ^0.0 ^0.666 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.378 ^0.0 ^0.833 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.136 ^0.0 ^1.0 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.895 ^0.0 ^1.167 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.653 ^0.0 ^1.334 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.411 ^0.0 ^1.501 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.17 ^0.0 ^1.667 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.072 ^0.0 ^1.834 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.5 ^0.0 ^-1.862 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.666 ^0.0 ^-1.62 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.833 ^0.0 ^-1.378 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.0 ^0.0 ^-1.136 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.167 ^0.0 ^-0.895 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.334 ^0.0 ^-0.653 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.501 ^0.0 ^-0.411 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.667 ^0.0 ^-0.17 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.834 ^0.0 ^0.072 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.193 ^0.0 ^-1.918 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.918 ^0.0 ^-0.193 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.193 ^0.0 ^1.918 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.918 ^0.0 ^0.193 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.741 ^0.0 ^-0.583 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.499 ^0.0 ^-0.75 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.257 ^0.0 ^-0.917 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.016 ^0.0 ^-1.083 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.774 ^0.0 ^-1.25 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.532 ^0.0 ^-1.417 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.29 ^0.0 ^-1.584 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.049 ^0.0 ^-1.751 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.583 ^0.0 ^1.741 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.75 ^0.0 ^1.499 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-0.917 ^0.0 ^1.257 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.083 ^0.0 ^1.016 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.25 ^0.0 ^0.774 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.417 ^0.0 ^0.532 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.584 ^0.0 ^0.29 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^-1.751 ^0.0 ^0.049 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.741 ^0.0 ^0.583 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.499 ^0.0 ^0.75 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.257 ^0.0 ^0.917 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.016 ^0.0 ^1.083 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.774 ^0.0 ^1.25 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.532 ^0.0 ^1.417 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.29 ^0.0 ^1.584 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.049 ^0.0 ^1.751 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.583 ^0.0 ^-1.741 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.75 ^0.0 ^-1.499 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^0.917 ^0.0 ^-1.257 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.083 ^0.0 ^-1.016 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.25 ^0.0 ^-0.774 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.417 ^0.0 ^-0.532 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.584 ^0.0 ^-0.29 0.0 0.0 0.0 0.0 1 normal
+particle dust 100000000 1 0 0.3 ^1.751 ^0.0 ^-0.049 0.0 0.0 0.0 0.0 1 normal
+# コレクション 1--平面
+playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..16] ~ ~ ~ 1 1.32 0
