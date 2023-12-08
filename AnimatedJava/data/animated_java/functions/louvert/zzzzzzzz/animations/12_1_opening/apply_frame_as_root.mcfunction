@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..85 run function animated_java:louvert/zzzzzzzz/animations/12_1_opening/tree/branch_0_85
+execute if score @s aj.anim_time matches 0..100 run function animated_java:louvert/zzzzzzzz/animations/12_1_opening/tree/branch_0_100
