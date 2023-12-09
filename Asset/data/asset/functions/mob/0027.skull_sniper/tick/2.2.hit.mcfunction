@@ -13,7 +13,7 @@
     execute at @p[tag=LandingTarget] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.4 0.4 0.4 0 99
 
 # ダメージ設定
-    # 与えるダメージ = 10
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 15.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
