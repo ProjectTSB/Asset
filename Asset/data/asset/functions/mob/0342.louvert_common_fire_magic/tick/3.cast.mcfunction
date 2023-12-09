@@ -25,10 +25,11 @@
         particle dust 100000000 2 0 1.5 ~ ~3 ~ 1 2 1 0 200 force @a[distance=..32]
         particle dust 100000000 2 0 1 ~ ~6 ~ 0.5 4 0.5 0 200 force @a[distance=..32]
     # 音
-        playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.8 1.5
-        playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.8 0.8
-        playsound entity.blaze.shoot hostile @a[distance=..32] ~ ~ ~ 1.5 1.3
-        playsound block.end_portal.spawn hostile @a[distance=..32] ~ ~ ~ 0.25 2
+        playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.4 1.5
+        playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.4 0.6
+        playsound entity.blaze.shoot hostile @a[distance=..32] ~ ~ ~ 1 1.3
+        playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 0.35 2
+        playsound entity.wither.shoot hostile @a[distance=..32] ~ ~ ~ 0.45 1.5
     
 # 引数の設定
     # 与えるダメージ
