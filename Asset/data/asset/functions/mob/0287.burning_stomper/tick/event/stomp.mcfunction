@@ -25,7 +25,7 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
 
 # 吹き飛ばし
-    execute at @a[gamemode=!spectator,distance=..3] run summon area_effect_cloud ~ ~ ~ {Radius:0.1f,Duration:6,Age:4,Effects:[{Id:25,Amplifier:20b,Duration:7,ShowParticles:0b}]}
+    execute at @a[gamemode=!spectator,distance=..3] run summon area_effect_cloud ~ ~ ~ {Radius:0.1f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:7,show_particles:0b}]}
 
 # リセット
     function lib:damage/reset
