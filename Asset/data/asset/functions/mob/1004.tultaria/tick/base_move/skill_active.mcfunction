@@ -58,3 +58,6 @@
         execute if entity @s[tag=RW.Skill.Mini.Slash] run function asset:mob/1004.tultaria/tick/skill/mini/slash/
     # 引き撃ち
         execute if entity @s[tag=RW.Skill.Mini.BackShot] run function asset:mob/1004.tultaria/tick/skill/mini/back_shot/
+    # ワープ攻撃
+        execute if entity @s[tag=RW.Skill.Mini.TeleportBeam] run function asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/
+

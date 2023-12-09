@@ -26,4 +26,5 @@
     tag @s remove RW.Skill.Mini.MoveShotRight
     tag @s remove RW.Skill.Mini.SpreadShot
     tag @s remove RW.Skill.Mini.Slash
+    tag @s remove RW.Skill.Mini.TeleportBeam
     tag @s remove RW.Skill.Mini.BackShot

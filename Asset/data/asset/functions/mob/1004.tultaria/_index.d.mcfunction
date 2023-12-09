@@ -5,9 +5,11 @@
 # @within function asset:mob/1004.tultaria/**
     #declare tag RW.This
     #
+
     ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss
     #declare tag RW.ModelRoot
+    #declare tag RW.ModelRoot.Target
     #declare tag RW.Marker.SpawnPoint
     #declare tag RW.Opening
     #declare tag RW.Start
@@ -26,9 +28,11 @@
     #declare tag RW.ChaseMarker3
     #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
+
     ## ボスのHPのタグ
     #declare tag RW.HPless75per
     #declare tag RW.HPless50per
+
     ## ボスの使う技のタグ
     #declare tag RW.Skill.Melee
     #declare tag RW.Skill.Meteor
@@ -41,6 +45,7 @@
     #declare tag RW.Skill.SpreadShot
     #declare tag RW.Skill.BlazingSlash
     #declare tag RW.Skill.LightningStab
+
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot
     #declare tag RW.Skill.Mini.MoveShotLeft
@@ -48,15 +53,19 @@
     #declare tag RW.Skill.Mini.SpreadShot
     #declare tag RW.Skill.Mini.Slash
     #declare tag RW.Skill.Mini.BackShot
+    #declare tag RW.Skill.Mini.TeleportBeam
+
     ## ボスの使う大技のタグ
     #declare tag RW.Skill.Deadly1
     #declare tag RW.Skill.Deadly2
+
     ## ボスの使う違う技のタグ
     #declare tag RW.MiniSkillChase
     #declare tag RW.MiniSkillShot
     #declare tag RW.MiniSkillBulletHell
     #declare tag RW.MiniSkillLaser
     #declare tag RW.MiniSkillUsed
+
     ## ボスの飛び道具のタグ
     #declare tag RW.MeteorMaker
     #declare tag RW.BigMeteorMaker
@@ -76,6 +85,7 @@
     #declare tag RW.ChainLightning5
     #declare tag RW.ChainLightning.Last
     #declare tag S2.Wait
+
     ## ボスの死亡時に使うタグ
     #declare tag RW.DeathAnimation
     #declare tag RW.DeathInit
