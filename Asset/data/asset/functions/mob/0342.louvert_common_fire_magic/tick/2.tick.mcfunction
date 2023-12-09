@@ -11,7 +11,7 @@
     execute store result storage asset:temp 9I.Num int 1 run scoreboard players get @s 9I.Tick
     function asset:mob/0342.louvert_common_fire_magic/tick/vfx/m with storage asset:temp 9I
 
-# キル
+# 処理
     execute if score @s 9I.Tick matches 41 run function asset:mob/0342.louvert_common_fire_magic/tick/3.cast
 
 # リセット

@@ -11,7 +11,7 @@
     execute store result storage asset:temp 9J.Num int 1 run scoreboard players get @s 9J.Tick
     function asset:mob/0343.louvert_meteor/tick/vfx/m with storage asset:temp 9J
 
-# キル
+# 処理
     execute if score @s 9J.Tick matches 61 run function asset:mob/0343.louvert_meteor/tick/3.cast
 
 # リセット

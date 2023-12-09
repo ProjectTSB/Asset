@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0344.louvert_soul_blast/tick/1.trigger",
         "asset:mob/0343.louvert_meteor/tick/1.trigger",
         "asset:mob/0342.louvert_common_fire_magic/tick/1.trigger",
         "asset:mob/0341.louvert/tick/1.trigger",

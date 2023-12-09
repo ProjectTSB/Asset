@@ -2,7 +2,7 @@
 #
 # 爆発処理
 #
-# @within function asset:mob/0343.louvert_meteor/summon/init
+# @within function asset:mob/0343.louvert_meteor/tick/2.tick
 
 # 演出
     function asset:mob/0343.louvert_meteor/tick/3.1.cast_vfx
