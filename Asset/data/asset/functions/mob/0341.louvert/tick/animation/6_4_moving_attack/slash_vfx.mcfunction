@@ -2,7 +2,7 @@
 #
 # VFX
 #
-# @within function asset:mob/0341.louvert/tick/animation/6_4_moving_attack/
+# @within function asset:mob/0341.louvert/tick/animation/6_4_moving_attack/slash
 
 # 円
     particle end_rod ^-0.0 ^0.0 ^1.0 ^-12.107 ^0.0 ^1000000000.0 0.00000000060 0 normal

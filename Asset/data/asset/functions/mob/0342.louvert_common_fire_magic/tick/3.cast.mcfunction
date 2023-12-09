@@ -38,6 +38,8 @@
         data modify storage lib: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage lib: Argument.ElementType set value "Fire"
+    # デスログ
+        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの詠唱した火炎魔法に飲み込まれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージを与える
