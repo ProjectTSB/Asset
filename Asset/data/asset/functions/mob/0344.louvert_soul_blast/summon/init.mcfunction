@@ -9,7 +9,6 @@
 
 # ランダムな方向を向かせる
     tp @s ~ ~ ~ ~ 0
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
 
 # リセット
     tag @s remove 9K.Init
