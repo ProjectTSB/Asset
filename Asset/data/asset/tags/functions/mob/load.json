@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0345.louvert_soul_bomb/0.load",
         "asset:mob/0344.louvert_soul_blast/0.load",
         "asset:mob/0343.louvert_meteor/0.load",
         "asset:mob/0342.louvert_common_fire_magic/0.load",

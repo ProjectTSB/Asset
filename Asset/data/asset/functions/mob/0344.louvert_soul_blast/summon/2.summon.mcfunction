@@ -5,7 +5,7 @@
 # @within function asset:mob/0344.louvert_soul_blast/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon marker ~ ~ ~ {Tags:["MobInit","9K.Init"]}
+    summon marker ~ ~ ~ {Tags:["MobInit","9K.Init","9K.SoulBlast"]}
 # ID (int)
     data modify storage asset:mob ID set value 344
 # Type (string) Wikiを参照

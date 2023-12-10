@@ -7,6 +7,12 @@
 # 火炎陣
     execute if score @s 9H.SkillSelect matches 1 run scoreboard players set @s 9H.AnimationNum 111
 
+# メテオ
+    execute if score @s 9H.SkillSelect matches 2 run scoreboard players set @s 9H.AnimationNum 41
+
+# ソウルブラスト
+    execute if score @s 9H.SkillSelect matches 3 run scoreboard players set @s 9H.AnimationNum 71
+
 
 
 

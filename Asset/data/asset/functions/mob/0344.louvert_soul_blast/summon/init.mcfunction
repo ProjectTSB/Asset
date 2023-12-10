@@ -7,7 +7,7 @@
 # スコア初期化
     scoreboard players set @s 9K.Tick 0
 
-# ランダムな方向を向かせる
+# 向きリセット
     tp @s ~ ~ ~ ~ 0
 
 # リセット
