@@ -1,0 +1,1 @@
+tag @s remove aj.tultaria.animation.blade_destruction_start

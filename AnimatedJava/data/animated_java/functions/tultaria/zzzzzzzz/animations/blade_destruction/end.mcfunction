@@ -1,0 +1,3 @@
+execute if score @s aj.tultaria.animation.blade_destruction.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:tultaria/zzzzzzzz/animations/blade_destruction/end_loop
+execute if score @s aj.tultaria.animation.blade_destruction.loop_mode = $aj.loop_mode.once aj.i run function animated_java:tultaria/animations/blade_destruction/stop
+execute if score @s aj.tultaria.animation.blade_destruction.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:tultaria/animations/blade_destruction/pause

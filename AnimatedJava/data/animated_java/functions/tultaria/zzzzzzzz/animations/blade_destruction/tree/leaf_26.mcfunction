@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:tultaria/zzzzzzzz/animations/blade_destruction/tree/leaf_26_as_bone

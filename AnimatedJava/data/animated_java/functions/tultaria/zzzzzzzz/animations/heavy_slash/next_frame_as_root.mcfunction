@@ -1,0 +1,1 @@
+function animated_java:tultaria/zzzzzzzz/animations/heavy_slash/tick_animation
