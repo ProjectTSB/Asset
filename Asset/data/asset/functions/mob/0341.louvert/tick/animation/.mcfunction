@@ -28,5 +28,8 @@
 # 火炎陣 発動
     execute if score @s 9H.AnimationNum matches 111 run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/
 
+# ボム 発動
+    execute if score @s 9H.AnimationNum matches 112 run function asset:mob/0341.louvert/tick/animation/11_2_set_bomb/
+
 # オープニング
     execute if score @s 9H.AnimationNum matches 121 run function asset:mob/0341.louvert/tick/animation/12_1_opening/

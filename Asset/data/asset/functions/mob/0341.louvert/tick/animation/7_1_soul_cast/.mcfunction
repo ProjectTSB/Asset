@@ -17,7 +17,7 @@
 # 音
     execute if score @s 9H.AnimationTick matches 50 run playsound item.trident.throw hostile @a[distance=..32] ~ ~ ~ 0.75 0.5 0
 
-# ソウルバースト発射
+# ソウルブラスト発射
     execute if score @s 9H.AnimationTick matches 50 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=1] positioned ~ ~0.5 ~ run function asset:mob/0341.louvert/tick/animation/7_1_soul_cast/soul_summon
 
 # 移動と終了

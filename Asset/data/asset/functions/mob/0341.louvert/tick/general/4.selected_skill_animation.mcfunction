@@ -13,6 +13,9 @@
 # ソウルブラスト
     execute if score @s 9H.SkillSelect matches 3 run scoreboard players set @s 9H.AnimationNum 71
 
+# ボム
+    execute if score @s 9H.SkillSelect matches 4 run scoreboard players set @s 9H.AnimationNum 112
+
 
 
 

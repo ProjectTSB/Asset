@@ -29,7 +29,7 @@
 # 音
     execute if score @s 9H.AnimationTick matches 70 run playsound item.trident.riptide_3 hostile @a[distance=..32] ~ ~ ~ 0.75 0.8 0
 
-# ソウルバースト発射
+# ソウルブラスト発射
     execute if predicate api:global_vars/difficulty/min/hard if score @s 9H.AnimationTick matches 70 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~0.5 ~ run function asset:mob/0341.louvert/tick/animation/4_1_meteor/soul_blast
 
 # 移動と終了

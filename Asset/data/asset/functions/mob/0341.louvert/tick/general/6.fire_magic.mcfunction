@@ -2,7 +2,7 @@
 #
 # 火炎陣
 #
-# @within function asset:mob/0341.louvert/tick/general/5.soul_burst
+# @within function asset:mob/0341.louvert/**
 
 data modify storage api: Argument.ID set value 342
 function api:mob/summon
