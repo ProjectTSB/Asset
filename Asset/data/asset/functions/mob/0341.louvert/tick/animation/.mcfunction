@@ -42,3 +42,6 @@
 
 # オープニング
     execute if score @s 9H.AnimationNum matches 121 run function asset:mob/0341.louvert/tick/animation/12_1_opening/
+
+# 刺突落下
+    execute if score @s 9H.AnimationNum matches 141 run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/

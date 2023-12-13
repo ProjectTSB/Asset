@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0350.louvert_soul_quake_hard/summon/1.trigger",
         "asset:mob/0349.louvert_soul_quake/summon/1.trigger",
         "asset:mob/0345.louvert_soul_bomb/summon/1.trigger",
         "asset:mob/0344.louvert_soul_blast/summon/1.trigger",
