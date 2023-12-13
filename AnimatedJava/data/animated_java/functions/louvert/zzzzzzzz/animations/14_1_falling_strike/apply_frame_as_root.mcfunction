@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..45 run function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/tree/branch_0_45

@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/tick_animation

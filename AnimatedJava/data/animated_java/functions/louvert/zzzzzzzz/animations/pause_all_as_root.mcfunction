@@ -24,3 +24,4 @@ function animated_java:louvert/zzzzzzzz/animations/10_2_counter/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/11_1_cast_magic/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/12_1_opening/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/13_1_ending/pause_as_root
+function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/pause_as_root

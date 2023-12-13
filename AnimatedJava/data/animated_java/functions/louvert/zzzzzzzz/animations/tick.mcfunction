@@ -24,3 +24,4 @@ execute if entity @s[tag=aj.louvert.animation.10_2_counter] run function animate
 execute if entity @s[tag=aj.louvert.animation.11_1_cast_magic] run function animated_java:louvert/zzzzzzzz/animations/11_1_cast_magic/tick
 execute if entity @s[tag=aj.louvert.animation.12_1_opening] run function animated_java:louvert/zzzzzzzz/animations/12_1_opening/tick
 execute if entity @s[tag=aj.louvert.animation.13_1_ending] run function animated_java:louvert/zzzzzzzz/animations/13_1_ending/tick
+execute if entity @s[tag=aj.louvert.animation.14_1_falling_strike] run function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/tick

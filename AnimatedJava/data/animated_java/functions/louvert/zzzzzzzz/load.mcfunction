@@ -31,6 +31,7 @@ scoreboard objectives add aj.louvert.animation.10_2_counter.local_anim_time dumm
 scoreboard objectives add aj.louvert.animation.11_1_cast_magic.local_anim_time dummy
 scoreboard objectives add aj.louvert.animation.12_1_opening.local_anim_time dummy
 scoreboard objectives add aj.louvert.animation.13_1_ending.local_anim_time dummy
+scoreboard objectives add aj.louvert.animation.14_1_falling_strike.local_anim_time dummy
 scoreboard objectives add aj.louvert.animation.01_idle.loop_mode dummy
 scoreboard objectives add aj.louvert.animation.02_1_damage.loop_mode dummy
 scoreboard objectives add aj.louvert.animation.02_2_damage.loop_mode dummy
@@ -57,6 +58,7 @@ scoreboard objectives add aj.louvert.animation.10_2_counter.loop_mode dummy
 scoreboard objectives add aj.louvert.animation.11_1_cast_magic.loop_mode dummy
 scoreboard objectives add aj.louvert.animation.12_1_opening.loop_mode dummy
 scoreboard objectives add aj.louvert.animation.13_1_ending.loop_mode dummy
+scoreboard objectives add aj.louvert.animation.14_1_falling_strike.loop_mode dummy
 scoreboard players set $aj.louvert.animation.01_idle aj.id 0
 scoreboard players set $aj.louvert.animation.02_1_damage aj.id 1
 scoreboard players set $aj.louvert.animation.02_2_damage aj.id 2
@@ -83,12 +85,13 @@ scoreboard players set $aj.louvert.animation.10_2_counter aj.id 22
 scoreboard players set $aj.louvert.animation.11_1_cast_magic aj.id 23
 scoreboard players set $aj.louvert.animation.12_1_opening aj.id 24
 scoreboard players set $aj.louvert.animation.13_1_ending aj.id 25
+scoreboard players set $aj.louvert.animation.14_1_falling_strike aj.id 26
 scoreboard players set $aj.louvert.variant.default aj.id 0
 scoreboard players set $aj.louvert.variant.closed_eyes aj.id 1
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.louvert.export_version aj.i -121155882
+scoreboard players set aj.louvert.export_version aj.i 691995538
 scoreboard players reset * aj.louvert.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.louvert.root] run function animated_java:louvert/zzzzzzzz/on_load

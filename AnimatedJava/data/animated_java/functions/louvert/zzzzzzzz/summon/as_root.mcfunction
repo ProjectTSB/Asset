@@ -62,6 +62,8 @@ execute if score #animation aj.i = $aj.louvert.animation.12_1_opening aj.id run 
 execute if score #animation aj.i = $aj.louvert.animation.12_1_opening aj.id run scoreboard players operation @s aj.louvert.animation.12_1_opening.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.13_1_ending aj.id run function animated_java:louvert/zzzzzzzz/animations/13_1_ending/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.13_1_ending aj.id run scoreboard players operation @s aj.louvert.animation.13_1_ending.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.louvert.animation.14_1_falling_strike aj.id run function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/apply_frame_as_root
+execute if score #animation aj.i = $aj.louvert.animation.14_1_falling_strike aj.id run scoreboard players operation @s aj.louvert.animation.14_1_falling_strike.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:louvert/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
