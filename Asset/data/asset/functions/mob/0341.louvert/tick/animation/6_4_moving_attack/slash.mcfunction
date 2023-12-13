@@ -18,7 +18,10 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 36.0f
+        # ノーマルなら 24f
+            execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 24.0f
+        # ハードなら 36f
+            execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 36.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性

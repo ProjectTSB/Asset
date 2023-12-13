@@ -2,7 +2,9 @@
 #
 # 溜めサウンド
 #
-# @within function asset:mob/0341.louvert/tick/animation/4_1_meteor/
+# @within function
+#   asset:mob/0341.louvert/tick/animation/4_1_meteor/
+#   asset:mob/0341.louvert/tick/animation/5_1_blade_cutter/
 
 # スコア調整
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick
@@ -11,3 +13,7 @@
 
 # マクロ起動
     function asset:mob/0341.louvert/tick/animation/4_1_meteor/m with storage asset:temp 9H
+
+# リセット
+    scoreboard players reset $9H.Temp 9H.AnimationTick
+    data remove storage asset:temp 9H

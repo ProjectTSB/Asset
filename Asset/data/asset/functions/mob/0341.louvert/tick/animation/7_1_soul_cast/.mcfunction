@@ -21,7 +21,7 @@
     execute if score @s 9H.AnimationTick matches 50 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=1] positioned ~ ~0.5 ~ run function asset:mob/0341.louvert/tick/animation/7_1_soul_cast/soul_summon
 
 # 移動と終了
-    execute if score @s 9H.AnimationTick matches 71 run function asset:mob/0341.louvert/tick/animation/4_1_meteor/end
+    execute if score @s 9H.AnimationTick matches 71 run function asset:mob/0341.louvert/tick/general/9.animation_end
 
 # リセット
     data remove storage asset:temp 9H

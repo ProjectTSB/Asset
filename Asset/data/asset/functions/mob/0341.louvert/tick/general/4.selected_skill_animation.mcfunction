@@ -16,6 +16,12 @@
 # ボム
     execute if score @s 9H.SkillSelect matches 4 run scoreboard players set @s 9H.AnimationNum 112
 
+# 広範囲斬撃
+    execute if score @s 9H.SkillSelect matches 5 run scoreboard players set @s 9H.AnimationNum 31
+
+# ブレードカッター
+    execute if score @s 9H.SkillSelect matches 6 run scoreboard players set @s 9H.AnimationNum 51
+
 
 
 

@@ -22,5 +22,4 @@
     execute if score @s 9H.AnimationTick matches 51 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~0.5 ~ run function asset:mob/0341.louvert/tick/animation/11_2_set_bomb/summon_hard
 
 # アニメーション終了処理
-    execute if score @s 9H.AnimationTick matches 56 run scoreboard players set @s 9H.AnimationNum 11
-    execute if score @s 9H.AnimationTick matches 56 run scoreboard players set @s 9H.AnimationTick 0
+    execute if score @s 9H.AnimationTick matches 56 run function asset:mob/0341.louvert/tick/general/9.animation_end

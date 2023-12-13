@@ -11,7 +11,7 @@
 # 近くのプレイヤーのところに飛ばす
     execute as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100,sort=nearest,limit=1] at @s anchored eyes run tp 0-0-0-0-0 ^ ^ ^ ~ ~
 # 拡散値
-    data modify storage lib: Argument.Bounds set value [[4d,4d],[0.5d,0.5d],[4d,4d]]
+    data modify storage lib: Argument.Bounds set value [[4d,4d],[1d,0d],[4d,4d]]
 # 拡散する
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 # 空気ならOK

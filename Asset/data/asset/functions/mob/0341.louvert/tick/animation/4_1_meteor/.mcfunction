@@ -33,7 +33,4 @@
     execute if predicate api:global_vars/difficulty/min/hard if score @s 9H.AnimationTick matches 70 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~0.5 ~ run function asset:mob/0341.louvert/tick/animation/4_1_meteor/soul_blast
 
 # 移動と終了
-    execute if score @s 9H.AnimationTick matches 86 run function asset:mob/0341.louvert/tick/animation/4_1_meteor/end
-
-# リセット
-    data remove storage asset:temp 9H
+    execute if score @s 9H.AnimationTick matches 86 run function asset:mob/0341.louvert/tick/general/9.animation_end

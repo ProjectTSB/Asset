@@ -1,11 +1,9 @@
 # frame 4 / 60
 # コレクション 3--フラッシュ
 particle flash ^-0.0 ^15.186 ^0.0 0.0 0.0 0.0 0.0 1 normal
-# コレクション 3--フラッシュ.001
-playsound block.amethyst_block.chime hostile @a[distance=..32] ~ ~ ~ 2 1.9 1
-# コレクション 3--フラッシュ.002
-playsound block.amethyst_block.chime hostile @a[distance=..32] ~ ~ ~ 2 1.9 1
 # コレクション 3--フラッシュ.003
+playsound block.amethyst_block.chime hostile @a[distance=..32] ~ ~ ~ 2 1.9 1
+# コレクション 3--フラッシュ.005
 playsound block.amethyst_block.chime hostile @a[distance=..32] ~ ~ ~ 2 1.9 1
 # コレクション 3--魔法円
 particle dust 100000000 1 0 0.5 ^0.318 ^0.1 ^1.975 0.0 0.0 0.0 0.0 1 normal
