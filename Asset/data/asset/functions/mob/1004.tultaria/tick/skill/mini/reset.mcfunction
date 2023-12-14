@@ -16,6 +16,10 @@
 # ミニ行動カウント増やす
     scoreboard players add @s RW.MiniSkillCount 1
 
-# 行動カウントを満たしてなかったらスキルセレクト
-    execute if score @s RW.MiniSkillCount matches ..4 run function asset:mob/1004.tultaria/tick/base_move/skill_select/mini
-    execute if score @s RW.MiniSkillCount matches 5.. run function asset:mob/1004.tultaria/tick/base_move/skill_select/main
+# 行動カウントを満たしてなかったらミニのスキル選択
+    execute if score @s RW.MiniSkillCount matches ..2 run function asset:mob/1004.tultaria/tick/base_move/skill_select/mini
+
+# 行動カウント満たしてたらメインのスキル選択
+    execute if score @s RW.MiniSkillCount matches 3.. run data modify storage lib: Argument.Bounds set value [[10d,10d],[0.0d,0.0d],[10d,10d]]
+    execute if score @s RW.MiniSkillCount matches 3.. run function asset:mob/1004.tultaria/tick/base_move/teleport/
+    execute if score @s RW.MiniSkillCount matches 3.. run function asset:mob/1004.tultaria/tick/base_move/skill_select/main
