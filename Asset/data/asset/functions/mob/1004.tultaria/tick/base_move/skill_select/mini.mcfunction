@@ -26,16 +26,16 @@
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
     # フェイズ1
-        execute if entity @s[scores={RW.Phase=1}] run scoreboard players operation $Random Temporary %= $4 Const
+        execute if entity @s[scores={RW.Phase=1}] run scoreboard players operation $Random Temporary %= $3 Const
     # デバッグ用、実行する技を確定させる
-        scoreboard players set $Random Temporary 3
+        #scoreboard players set $Random Temporary 3
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Mini.MoveShotLeft
     execute if score $Random Temporary matches 1 run tag @s add RW.Skill.Mini.MoveShotRight
     execute if score $Random Temporary matches 0..1 run tag @s add RW.Skill.Mini.MoveShot
-    execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Mini.SpreadShot
-    execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Mini.TeleportBeam
+    execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Mini.TeleportBeam
+    execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Mini.SpreadShot
     #execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Mini.Slash
 
 # 斬撃出し過ぎたら他の技にする
