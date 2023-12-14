@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/skill/2.meteor_attack/1.tick
 
 # 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/staff_swing_1/play
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/staff_swing_1/play
 
 # 演出
     particle minecraft:soul_fire_flame ~ ~1.2 ~ 0.3 0.7 0.3 0.01 50
