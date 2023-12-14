@@ -8,7 +8,7 @@
     execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/windup
 
 # 追尾移動
-    execute if score @s RW.Tick matches 0..40 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/follow
+    execute if score @s RW.Tick matches 10..60 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/follow
 
 # 剣を構える
     execute if score @s RW.Tick matches 45 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/slash_windup
@@ -24,6 +24,9 @@
     execute if score @s[scores={RW.Phase=2..}] RW.Tick matches 70 anchored eyes positioned ^ ^-0.5 ^12 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/explosion
     execute if score @s[scores={RW.Phase=2..}] RW.Tick matches 75 anchored eyes positioned ^ ^-0.5 ^14 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/explosion
     execute if score @s[scores={RW.Phase=2..}] RW.Tick matches 80 anchored eyes positioned ^ ^-0.5 ^16 run function asset:mob/1004.tultaria/tick/skill/blazing_slash/explosion
+
+# デバッグ用、この行動をループする
+    execute if score @s RW.Tick matches 90 run scoreboard players set @s RW.Tick -10
 
 # リセット
     execute if score @s RW.Tick matches 100.. run function asset:mob/1004.tultaria/tick/base_move/reset
