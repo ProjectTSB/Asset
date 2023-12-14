@@ -8,6 +8,9 @@
 # @private
 #declare tag FacingMarker
 
+# 弾速設定
+    data modify storage rw_shotspeed: Speed set value 4
+
 # 拡散させるEntityを召喚する
     summon marker ^ ^ ^2 {Tags:["FacingMarker"]}
 
@@ -17,6 +20,7 @@
 
 # リセット
     kill @e[type=marker,tag=FacingMarker]
+    data remove storage rw_shotspeed: Speed
 
 # 演出
     #playsound tsb_sounds:blaster2 hostile @a ~ ~ ~ 2 2
