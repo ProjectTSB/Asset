@@ -47,6 +47,9 @@
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/apply_variant/no_wing
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral/play
 
+# モデルにTeleport_durationを設定
+    execute as @e[type=#animated_java:root,tag=aj.tultaria.bone] run data modify entity @s teleport_duration set value 1
+
 # 出現座標を記憶する
     summon marker ~ ~ ~ {Tags:["RW.Marker.SpawnPoint"]}
 
