@@ -4,16 +4,18 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/mini/spread_shot/shoot/
 
-#> ショットの行き先指定用マーカー
+#> 行き先マーカーと弾速ストレージ
 # @private
 #declare tag FacingMarker
+#declare storage rw_shotspeed:
 
-# 拡散させるEntityを召喚する
-    summon marker ^ ^ ^1 {Tags:["FacingMarker"]}
+# 弾速設定
+    data modify storage rw_shotspeed: Speed set value 2
 
 # 召喚
     data modify storage api: Argument.ID set value 1013
-    execute at @s positioned ~ ~1.5 ~ run function api:mob/summon
+    function api:mob/summon
 
 # リセット
     kill @e[type=marker,tag=FacingMarker]
+    data remove storage rw_shotspeed: Speed
