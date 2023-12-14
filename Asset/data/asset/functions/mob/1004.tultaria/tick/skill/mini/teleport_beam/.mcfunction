@@ -4,8 +4,8 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
-# モデルをプレイヤーに向ける
-    execute if score @s RW.Tick matches 0.. as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+# モデルを自分の向きに
+    execute if score @s RW.Tick matches 0.. at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] @s
 
 # 移動
     execute if score @s RW.Tick matches 0 run data modify storage lib: Argument.Bounds set value [[10d,10d],[0.0d,0.0d],[10d,10d]]
@@ -24,8 +24,12 @@
     execute if score @s RW.Tick matches 26 positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/beam/shoot
     execute if score @s RW.Tick matches 28 positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/beam/shoot
 
+# 移動
+    execute if score @s RW.Tick matches 40 run data modify storage lib: Argument.Bounds set value [[10d,10d],[0.0d,0.0d],[10d,10d]]
+    execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/base_move/teleport/
+
 # デバッグ用、この行動をループする
     #execute if score @s RW.Tick matches 40.. run scoreboard players set @s RW.Tick -10
 
 # リセット
-    execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/mini/reset
+    execute if score @s RW.Tick matches 50 run function asset:mob/1004.tultaria/tick/skill/mini/reset
