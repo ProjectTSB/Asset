@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:trader/0011.redstone_merchant/
+# @within function asset:trader/0011.redstone_merchant/register/
 
 # 重複防止レジストリに登録
     data modify storage asset:trader DPR append value {D:overworld,X:-16,Y:21,Z:-57}
