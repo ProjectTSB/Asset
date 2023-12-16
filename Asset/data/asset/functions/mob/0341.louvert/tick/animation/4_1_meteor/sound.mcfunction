@@ -5,6 +5,8 @@
 # @within function
 #   asset:mob/0341.louvert/tick/animation/4_1_meteor/
 #   asset:mob/0341.louvert/tick/animation/5_1_blade_cutter/
+#   asset:mob/0341.louvert/tick/animation/7_1_soul_cast/
+#   asset:mob/0341.louvert/tick/animation/9_1_triple_slash_start/
 
 # スコア調整
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick

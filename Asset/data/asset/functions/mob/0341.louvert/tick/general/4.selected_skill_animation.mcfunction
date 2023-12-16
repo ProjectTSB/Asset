@@ -25,6 +25,9 @@
 # 刺突落下
     execute if score @s 9H.SkillSelect matches 7 run scoreboard players set @s 9H.AnimationNum 141
 
+# 三連撃
+    execute if score @s 9H.SkillSelect matches 8 run scoreboard players set @s 9H.AnimationNum 91
+
 
 
 

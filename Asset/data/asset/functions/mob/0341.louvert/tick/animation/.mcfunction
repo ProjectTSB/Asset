@@ -34,6 +34,12 @@
 # ソウルブラスト
     execute if score @s 9H.AnimationNum matches 71 run function asset:mob/0341.louvert/tick/animation/7_1_soul_cast/
 
+# 三連撃 開始
+    execute if score @s 9H.AnimationNum matches 91 run function asset:mob/0341.louvert/tick/animation/9_1_triple_slash_start/
+
+# 三連撃 終了
+    execute if score @s 9H.AnimationNum matches 92 run function asset:mob/0341.louvert/tick/animation/9_2_triple_slash_slash/
+ 
 # 火炎陣 発動
     execute if score @s 9H.AnimationNum matches 111 run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/
 

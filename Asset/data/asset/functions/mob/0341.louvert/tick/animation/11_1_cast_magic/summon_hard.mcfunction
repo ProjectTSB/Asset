@@ -2,7 +2,7 @@
 #
 # 火炎陣をばらまく（ハード）
 #
-# @within function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon
+# @within function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/
 
 # Markerを呼び出す
     tp 0-0-0-0-0 ^ ^ ^ ~ ~

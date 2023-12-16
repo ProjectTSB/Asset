@@ -19,6 +19,8 @@
             #declare tag 9H.Guard.NoGuard
             #declare tag 9H.Guard.FullGuard
             #declare tag 9H.Guard.Counter
+        # 他のMob
+            #declare tag 9K.SoulBlast
 
 #> val
 # @within function asset:mob/0341.louvert/**
