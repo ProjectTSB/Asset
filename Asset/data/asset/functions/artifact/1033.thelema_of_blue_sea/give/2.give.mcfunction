@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"蒼海のテレーム","color":"#3DFFF9"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":""}','{"text":"自身の現在体力の200%を斬撃のダメージに加算する。"}','[{"text":"また、3段目の攻撃後、"},{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"による追撃を行う。"}]','[{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"は自身の最大体力の120%分のダメージを与え、","color":"white"}]','[{"text":"最大体力1列ごとに本数が1本増加する。(最大10本)","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"神の意志宿せし蒼海の剣。","color":"gray"}','{"text":"海の息吹に導かれ、祝福の光を灯す。","color":"gray"}','{"text":"自身の現在体力の200%を斬撃のダメージに加算する。"}','[{"text":"また、3段目の攻撃後、"},{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"による追撃を行う。"}]','[{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"は自身の最大体力の120%分のダメージを与え、","color":"white"}]','[{"text":"最大体力1列ごとに本数が1本増加する。(最大10本)","color":"white"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
