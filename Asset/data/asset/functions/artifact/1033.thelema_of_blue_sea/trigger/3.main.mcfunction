@@ -19,13 +19,13 @@
     scoreboard players set @s SP.WaitingTime 30
 
 # 演出用markerを召喚
-    execute anchored eyes positioned ^ ^-0.3 ^2 run summon marker ~ ~ ~ {Tags:["SP.Marker","SP.MarkerInit","Object"]}
+    execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.Init","Object"]}
 
-# markerのinit処理
-    execute as @e[type=marker,tag=SP.MarkerInit,distance=..5,limit=1] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/marker/init
+# 演出用entityのinit処理
+    execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..5,limit=1] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
 
 # スケジュールループを起動
-    schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/marker/loop 1t replace
+    schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace
     schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/loop 1t replace
 
 # 攻撃回数が3ならスコアをリセット

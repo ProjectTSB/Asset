@@ -3,5 +3,5 @@
 
 #> tag
 # @within function asset:artifact/1033.thelema_of_blue_sea/trigger/**
-    #declare tag SP.Marker
-    #declare tag SP.MarkerInit
+    #declare tag SP.Entity
+    #declare tag SP.Init

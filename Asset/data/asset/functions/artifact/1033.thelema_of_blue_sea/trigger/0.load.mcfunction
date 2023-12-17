@@ -9,3 +9,5 @@
     scoreboard objectives add SP.AttackCount dummy
     scoreboard objectives add SP.Tick dummy
     scoreboard objectives add SP.WaitingTime dummy
+    scoreboard objectives add SP.UserID dummy
+    scoreboard objectives add SP.MaxHealth dummy
