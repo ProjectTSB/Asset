@@ -20,7 +20,7 @@
     #scoreboard players set @s SP.AttackCount 1
 
 # 次の段階までの待機時間のスコア
-    scoreboard players set @s SP.WaitingTime 30
+    scoreboard players set @s SP.WaitingTime 40
 
 # 演出用AECを召喚
     execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.VFXEntity","SP.Init","Object"],Particle:"block air",Duration:10}
