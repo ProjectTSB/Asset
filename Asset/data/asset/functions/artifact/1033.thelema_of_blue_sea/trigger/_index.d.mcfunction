@@ -7,3 +7,4 @@
     #declare tag SP.VFXEntity
     #declare tag SP.PersuitEntity
     #declare tag SP.Init
+    #declare tag SP.Sword
