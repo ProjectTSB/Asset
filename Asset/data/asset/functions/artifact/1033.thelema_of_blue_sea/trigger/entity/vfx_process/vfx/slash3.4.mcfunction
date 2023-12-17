@@ -1,8 +1,8 @@
-#> asset:artifact/1033.thelema_of_blue_sea/trigger/entity/vfx/slash3.4
+#> asset:artifact/1033.thelema_of_blue_sea/trigger/entity/vfx_process/vfx/slash3.4
 #
 #
 #
-# @within function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/main
+# @within function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/vfx_process/main
 
 particle dust 1 1 100000000 1.5 ^1.46646 ^ ^0.36982 0 0 0 0 1
 particle dust 1 1 100000000 1.5 ^1.37675 ^ ^0.45622 0 0 0 0 1

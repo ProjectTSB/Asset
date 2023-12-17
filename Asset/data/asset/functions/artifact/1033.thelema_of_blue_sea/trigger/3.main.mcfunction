@@ -15,14 +15,17 @@
 # デバッグ用
     #scoreboard players set @s SP.AttackCount 1
 
-# 次の段階までのスコア
+# 次の段階までの待機時間のスコア
     scoreboard players set @s SP.WaitingTime 30
 
-# 演出用markerを召喚
-    execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.Init","Object"]}
+# 演出用AECを召喚
+    execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.VFXEntity","SP.Init","Object"],Particle:"block air",Duration:10}
+
+# 3回目の攻撃の時、追撃用のAECを設置
+    execute if entity @s[scores={SP.AttackCount=3}] at @e[type=#lib:living,tag=Victim,distance=..6] run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.PersuitEntity","SP.Init","Object"],Particle:"block air",Duration:20}
 
 # 演出用entityのinit処理
-    execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..5,limit=1] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
+    execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..6,limit=1] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
 
 # スケジュールループを起動
     schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace
