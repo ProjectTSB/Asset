@@ -33,6 +33,3 @@
     execute if entity @s[scores={SP.AttackCount=1..2,SP.Tick=1..4}] run playsound block.amethyst_cluster.step player @a ~ ~ ~ 0.7 1.3
     execute if entity @s[scores={SP.AttackCount=3,SP.Tick=1..4}] run playsound block.amethyst_cluster.step player @a ~ ~ ~ 0.7 0.8
     execute if entity @s[scores={SP.AttackCount=1..3,SP.Tick=1..4}] run playsound entity.dolphin.jump player @a ~ ~ ~ 0.2 0.9
-
-# ループ
-    schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace
