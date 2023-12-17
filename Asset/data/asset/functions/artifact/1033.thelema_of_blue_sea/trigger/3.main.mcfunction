@@ -9,6 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
+#> Private
+# @private
+    #declare score_holder $Health
+
 # 攻撃回数スコアを増やす
     scoreboard players add @s SP.AttackCount 1
 
@@ -17,6 +21,17 @@
 
 # 次の段階までの待機時間のスコア
     scoreboard players set @s SP.WaitingTime 30
+
+# ダメージ 200+現在体力の160%
+    function api:data_get/health
+    execute store result score $Health Temporary run data get storage api: Health 1.6
+    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $200 Const
+
+    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage lib: Argument.ElementType set value "Water"
+    function lib:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
+    function lib:damage/reset
 
 # 演出用AECを召喚
     execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.VFXEntity","SP.Init","Object"],Particle:"block air",Duration:10}
@@ -34,3 +49,6 @@
 # 攻撃回数が3ならスコアをリセット
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.WaitingTime
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.AttackCount
+
+# リセット
+    scoreboard players reset $Health Temporary
