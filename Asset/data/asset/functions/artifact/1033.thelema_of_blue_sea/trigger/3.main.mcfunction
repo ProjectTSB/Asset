@@ -21,7 +21,7 @@
 
 # 次の段階までの待機時間のスコア
     scoreboard players set @s SP.WaitingTime 30
-    
+
 # 演出用AECを召喚
     execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.VFXEntity","SP.Init","Object"],Particle:"block air",Duration:10}
 
@@ -31,9 +31,9 @@
 # entityのinit処理
     execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..6,limit=2] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
 
-# ダメージ 200+現在体力の160%
+# ダメージ 200+現在体力の200%
     function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health 1.6
+    execute store result score $Health Temporary run data get storage api: Health 2.0
     execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $200 Const
 
     data modify storage lib: Argument.AttackType set value "Physical"
