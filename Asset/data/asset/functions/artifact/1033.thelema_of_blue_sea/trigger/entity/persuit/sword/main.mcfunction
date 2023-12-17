@@ -19,4 +19,4 @@
     scoreboard players reset $Count Temporary
 
 # 消滅
-    execute if entity @s[scores={SP.Tick=25..}] run kill @s
+    execute if entity @s[scores={SP.Tick=25..}] run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/recursive
