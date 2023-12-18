@@ -34,7 +34,7 @@
 # ダメージ 200+現在体力の200%
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health 2.0
-    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $200 Const
+    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $250 Const
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
