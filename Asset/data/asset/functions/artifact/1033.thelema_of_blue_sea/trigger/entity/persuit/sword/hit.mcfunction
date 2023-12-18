@@ -3,8 +3,8 @@
 #
 #
 # @within function
-#   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/recursive
-#   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop
+#   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
+#   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/main
 
 # 演出
     execute positioned ~ ~0.3 ~ run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/vfx
