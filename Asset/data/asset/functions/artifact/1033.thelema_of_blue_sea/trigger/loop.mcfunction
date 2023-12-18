@@ -5,6 +5,8 @@
 # @within function
 #   asset:artifact/1033.thelema_of_blue_sea/trigger/3.main
 #   asset:artifact/1033.thelema_of_blue_sea/trigger/loop
+#   asset:artifact/1033.thelema_of_blue_sea/trigger/rejoin_process
+
 
 # WaitingTimeを減らす
     scoreboard players remove @a[scores={SP.WaitingTime=0..}] SP.WaitingTime 1

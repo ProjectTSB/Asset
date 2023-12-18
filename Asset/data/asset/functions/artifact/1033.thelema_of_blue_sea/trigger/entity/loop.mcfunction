@@ -5,6 +5,7 @@
 # @within function
 #   asset:artifact/1033.thelema_of_blue_sea/trigger/3.main
 #   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop
+#   asset:artifact/1033.thelema_of_blue_sea/trigger/rejoin_process
 
 # main処理の実行
     execute as @e[type=area_effect_cloud,tag=SP.VFXEntity] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/vfx_process/main
