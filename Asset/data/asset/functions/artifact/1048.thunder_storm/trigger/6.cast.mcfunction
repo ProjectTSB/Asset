@@ -7,9 +7,14 @@
 # 演出
     function asset:artifact/1048.thunder_storm/trigger/6.1.cast_vfx
 
+# 引き継がれたMP消費を取り出す
+    scoreboard players operation $T4.Temp Temporary = @s T4.MPPer
+    scoreboard players operation $T4.Temp Temporary *= $4 Const
+    scoreboard players operation $T4.Temp Temporary -= $300 Const
+
 # ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 220.0f
+        execute store result storage lib: Argument.Damage float -1 run scoreboard players get $T4.Temp Temporary
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 無属性

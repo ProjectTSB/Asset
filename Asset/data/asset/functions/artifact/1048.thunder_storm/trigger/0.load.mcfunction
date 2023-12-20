@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:artifact/1048.thunder_storm/trigger/**
     scoreboard objectives add T4.Tick dummy
+    scoreboard objectives add T4.MPPer dummy
