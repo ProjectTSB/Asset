@@ -2,9 +2,9 @@
 #
 # スケジュール起動
 #
-# @within
-#   function asset:artifact/1047.life_steal_emblem/trigger/3.main
-#   function asset:artifact/1047.life_steal_emblem/trigger/schedule
+# @within function
+#   asset:artifact/1047.life_steal_emblem/trigger/3.main
+#   asset:artifact/1047.life_steal_emblem/trigger/schedule
 
 # スコアを下げる
     scoreboard players remove @a[scores={T3.BuffTick=1..}] T3.BuffTick 1
