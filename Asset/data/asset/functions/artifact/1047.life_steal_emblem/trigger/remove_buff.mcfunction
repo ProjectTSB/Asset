@@ -2,8 +2,9 @@
 #
 # バフを取り外す処理
 #
-# @within function asset:artifact/1047.life_steal_emblem/trigger/schedule
-#   function asset:artifact/1047.life_steal_emblem/trigger/3.main
+# @within function
+#   asset:artifact/1047.life_steal_emblem/trigger/schedule
+#   asset:artifact/1047.life_steal_emblem/trigger/3.main
 
 # 物理攻撃 バフ取り外し
     data modify storage api: Argument.UUID set value [I;1,1,1047,7]
