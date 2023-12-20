@@ -12,7 +12,7 @@
     #declare tag Target
 
 # 基礎火力設定(本来の10倍の値)
-    scoreboard players set $BaseDamage Temporary 5000
+    scoreboard players set $BaseDamage Temporary 7000
 
 # ターゲット設定
     tag @e[type=#lib:living,tag=Victim,distance=..6] add Target
