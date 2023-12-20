@@ -16,9 +16,9 @@
 
 # ターゲット設定
     tag @e[type=#lib:living,tag=Victim,distance=..6] add Target
-    execute positioned ^2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,distance=..2.5] add Target
-    execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,distance=..3.5] add Target
-    execute positioned ^-2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,distance=..2.5] add Target
+    execute positioned ^2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2.5] add Target
+    execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..3.5] add Target
+    execute positioned ^-2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2.5] add Target
 
 # ダメージ設定
     execute store result storage lib: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary
