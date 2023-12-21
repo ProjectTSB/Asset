@@ -17,9 +17,10 @@
 # こっちを向く
     execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
 
+# モデルを自分の向きに
+    execute at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 構える
-
 
 # 演出
     playsound ogg:block.respawn_anchor.charge1 hostile @a ~ ~ ~ 2 2
