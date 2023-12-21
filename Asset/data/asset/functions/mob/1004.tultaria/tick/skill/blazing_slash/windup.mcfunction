@@ -14,6 +14,10 @@
 #    # リセット
 #        scoreboard players reset $Random Temporary
 
+# こっちを向く
+    execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
+
+
 # 構える
 
 

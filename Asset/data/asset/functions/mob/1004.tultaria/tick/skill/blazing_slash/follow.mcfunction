@@ -8,7 +8,7 @@
     execute at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # ホーミング移動
-    execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ^ ^ ^0.4 run function asset:mob/1004.tultaria/tick/move/tereport
+    execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ^ ^ ^0.4 rotated ~ 0 run function asset:mob/1004.tultaria/tick/move/tereport
 
 # パーティクル
     execute positioned ~ ~-0.2 ~ if predicate lib:random_pass_per/30 rotated ~ 0 run particle minecraft:flame ^ ^ ^-0.2 0.02 0.02 0.02 0 1
