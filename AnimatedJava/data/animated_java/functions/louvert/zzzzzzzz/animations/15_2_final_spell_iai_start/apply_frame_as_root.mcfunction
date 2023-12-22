@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..10 run function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/tree/branch_0_10
+execute if score @s aj.anim_time matches 0..20 run function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/tree/branch_0_20

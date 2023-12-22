@@ -51,3 +51,9 @@
 
 # 刺突落下
     execute if score @s 9H.AnimationNum matches 141 run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/
+
+# ラストスペル開始
+    execute if score @s 9H.AnimationNum matches 151 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/
+
+# ラストスペル 居合
+    execute if score @s 9H.AnimationNum matches 152 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/

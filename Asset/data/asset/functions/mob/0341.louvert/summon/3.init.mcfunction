@@ -6,11 +6,11 @@
 
 # 耐性付与
     # ノーマルなら lv5
-        execute if predicate api:global_vars/difficulty/max/normal run effect give @s resistance infinite 4 true
+    #    execute if predicate api:global_vars/difficulty/max/normal run effect give @s resistance infinite 4 true
     # ハードなら lv6
-        execute if predicate api:global_vars/difficulty/min/hard run effect give @s resistance infinite 5 true
+    #    execute if predicate api:global_vars/difficulty/min/hard run effect give @s resistance infinite 5 true
     ## デバッグコマンド
-        execute if data storage global {IsProduction:0b} run effect give @s resistance infinite 9 true
+    #    execute if data storage global {IsProduction:0b} run effect give @s resistance infinite 9 true
 
 # スコア初期化
     scoreboard players set @s 9H.AnimationTick 0

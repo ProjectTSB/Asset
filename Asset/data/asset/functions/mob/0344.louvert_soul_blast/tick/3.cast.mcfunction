@@ -53,4 +53,5 @@
 
 # リセット
     tag @a[tag=9K.Landing,distance=..32] remove 9K.Landing
+    scoreboard players reset $9K.Temp Temporary
     kill @s

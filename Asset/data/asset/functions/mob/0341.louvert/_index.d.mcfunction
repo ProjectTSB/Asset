@@ -5,6 +5,7 @@
 # @within function asset:mob/0341.louvert/**
     # マーカー関連
         #declare tag 9H.Marker.SummonPoint
+        #declare tag 9H.Final.Display
     # AnimatedJavaモデル関連
         #declare tag 9H.ModelRoot
         #declare tag 9H.FireBladeLocater
@@ -14,6 +15,7 @@
             #declare tag 9H.Root.This
             #declare tag 9H.Temp.This
             #declare tag 9H.Temp.Target
+            #declare tag 9H.Landing
         # 防御系
             #declare tag 9H.Guard.Normal
             #declare tag 9H.Guard.NoGuard

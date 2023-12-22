@@ -28,7 +28,8 @@
 # 三連撃
     execute if score @s 9H.SkillSelect matches 8 run scoreboard players set @s 9H.AnimationNum 91
 
-
+# ラストスペル
+    execute if score @s 9H.SkillSelect matches 9 run scoreboard players set @s 9H.AnimationNum 151
 
 
 

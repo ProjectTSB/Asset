@@ -8,4 +8,5 @@
     # AnimatedJavaモデルの削除
         function animated_java:louvert/remove/all
     # Marker削除
-        kill @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100]
+        kill @e[type=marker,tag=9H.Marker.SummonPoint]
+        kill @e[type=item_display,tag=9H.Final.Display]
