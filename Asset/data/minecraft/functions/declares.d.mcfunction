@@ -750,6 +750,20 @@
 
 #> declare
 # @within
+#   function oh_*:**
+#   function lib:**
+#   function api:**
+#   function debug:**
+#   function core:**
+#   function asset:**
+#   function asset_manager:**
+#   function player_manager:**
+#   function world_manager:**
+    #declare objective OhMyDatID from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L30
+    #declare storage oh_my_dat:  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/data/oh_my_dat/functions/sys/init.mcfunction#L29
+
+#> declare
+# @within
 #   asset:spawner/*/*
 #   asset_manager:spawner/**
 #declare storage asset:spawner from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
