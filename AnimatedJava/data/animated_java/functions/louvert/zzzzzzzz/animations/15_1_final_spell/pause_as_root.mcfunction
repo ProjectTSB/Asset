@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.15_1_final_spell

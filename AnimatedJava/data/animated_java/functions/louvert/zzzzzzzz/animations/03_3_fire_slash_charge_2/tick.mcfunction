@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:louvert/zzzzzzzz/animations/03_3_fire_slash_charge_2/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:louvert/zzzzzzzz/animations/03_3_fire_slash_charge_2/tick_animation

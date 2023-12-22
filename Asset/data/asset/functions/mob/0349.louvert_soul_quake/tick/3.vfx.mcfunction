@@ -1,0 +1,105 @@
+#> asset:mob/0349.louvert_soul_quake/tick/3.vfx
+#
+# VFX
+#
+# @within function asset:mob/0349.louvert_soul_quake/tick/2.tick
+
+# コレクション 5--円.011
+    particle soul_fire_flame ^-0.0 ^0.2 ^1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^0.2 ^1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^0.2 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^0.2 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^0.2 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^0.2 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^0.2 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^0.2 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.5 ^0.2 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^0.2 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^0.2 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^0.2 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^0.2 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^0.2 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^0.2 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^0.2 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.0 ^0.2 ^-1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^0.2 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^0.2 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^0.2 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^0.2 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^0.2 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^0.2 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^0.2 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.5 ^0.2 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^0.2 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^0.2 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^0.2 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^0.2 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^0.2 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^0.2 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^0.2 ^1.471 0.0 0.0 0.0 0.0 1 normal
+# コレクション 5--円.012
+    particle soul_fire_flame ^-0.0 ^0.6 ^1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^0.6 ^1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^0.6 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^0.6 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^0.6 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^0.6 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^0.6 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^0.6 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.5 ^0.6 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^0.6 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^0.6 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^0.6 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^0.6 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^0.6 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^0.6 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^0.6 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.0 ^0.6 ^-1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^0.6 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^0.6 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^0.6 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^0.6 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^0.6 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^0.6 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^0.6 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.5 ^0.6 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^0.6 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^0.6 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^0.6 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^0.6 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^0.6 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^0.6 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^0.6 ^1.471 0.0 0.0 0.0 0.0 1 normal
+# コレクション 5--円.013
+    particle soul_fire_flame ^-0.0 ^1.0 ^1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^1.0 ^1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^1.0 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^1.0 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^1.0 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^1.0 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^1.0 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^1.0 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.5 ^1.0 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.471 ^1.0 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.386 ^1.0 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.247 ^1.0 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^1.061 ^1.0 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.833 ^1.0 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.574 ^1.0 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^0.293 ^1.0 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.0 ^1.0 ^-1.5 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^1.0 ^-1.471 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^1.0 ^-1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^1.0 ^-1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^1.0 ^-1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^1.0 ^-0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^1.0 ^-0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^1.0 ^-0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.5 ^1.0 ^0.0 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.471 ^1.0 ^0.293 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.386 ^1.0 ^0.574 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.247 ^1.0 ^0.833 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-1.061 ^1.0 ^1.061 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.833 ^1.0 ^1.247 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.574 ^1.0 ^1.386 0.0 0.0 0.0 0.0 1 normal
+    particle soul_fire_flame ^-0.293 ^1.0 ^1.471 0.0 0.0 0.0 0.0 1 normal

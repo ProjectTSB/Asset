@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/tick_animation

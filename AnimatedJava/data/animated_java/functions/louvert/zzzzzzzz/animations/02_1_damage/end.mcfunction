@@ -1,0 +1,3 @@
+execute if score @s aj.louvert.animation.02_1_damage.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:louvert/zzzzzzzz/animations/02_1_damage/end_loop
+execute if score @s aj.louvert.animation.02_1_damage.loop_mode = $aj.loop_mode.once aj.i run function animated_java:louvert/animations/02_1_damage/stop
+execute if score @s aj.louvert.animation.02_1_damage.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:louvert/animations/02_1_damage/pause

@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/06_5_move_slash/tick_animation

@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/02_1_damage/tick_animation

@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.14_1_falling_strike

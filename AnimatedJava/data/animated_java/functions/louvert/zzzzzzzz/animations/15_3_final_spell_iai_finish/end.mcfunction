@@ -1,0 +1,3 @@
+execute if score @s aj.louvert.animation.15_3_final_spell_iai_finish.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:louvert/zzzzzzzz/animations/15_3_final_spell_iai_finish/end_loop
+execute if score @s aj.louvert.animation.15_3_final_spell_iai_finish.loop_mode = $aj.loop_mode.once aj.i run function animated_java:louvert/animations/15_3_final_spell_iai_finish/stop
+execute if score @s aj.louvert.animation.15_3_final_spell_iai_finish.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:louvert/animations/15_3_final_spell_iai_finish/pause

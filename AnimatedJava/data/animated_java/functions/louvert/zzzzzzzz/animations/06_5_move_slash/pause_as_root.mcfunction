@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.06_5_move_slash
