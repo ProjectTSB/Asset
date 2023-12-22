@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:artifact/0908.staff_of_homa/trigger/**
-    scoreboard objectives add 
+    scoreboard objectives add P8.AttackCount dummy
+    scoreboard objectives add P8.WaitingTime dummy
