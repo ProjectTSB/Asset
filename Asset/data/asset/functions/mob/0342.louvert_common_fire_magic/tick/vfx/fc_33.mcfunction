@@ -128,5 +128,3 @@ particle dust 100000000 1 0 0.5 ^2.589 ^0.25 ^1.342 0.0 0.0 0.0 0.0 1 normal
 particle dust 100000000 1 0 0.5 ^2.652 ^0.25 ^1.214 0.0 0.0 0.0 0.0 1 normal
 particle dust 100000000 1 0 0.5 ^2.708 ^0.25 ^1.082 0.0 0.0 0.0 0.0 1 normal
 particle dust 100000000 1 0 0.5 ^2.758 ^0.25 ^0.948 0.0 0.0 0.0 0.0 1 normal
-# コレクション 1--平面
-playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..16] ~ ~ ~ 0.5 1.395 0

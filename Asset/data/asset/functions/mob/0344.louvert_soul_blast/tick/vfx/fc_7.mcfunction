@@ -1,6 +1,4 @@
 # frame 7 / 40
-# コレクション 1--平面
-playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..16] ~ ~ ~ 0.5 1.0050000000000001 0
 # コレクション 1--平面.001
 particle dust 0.05 1.0 1.0 0.4 ^-0.0 ^0.0 ^0.0 0.0 0.0 0.0 0.0 1 normal
 particle dust 0.05 1.0 1.0 0.4 ^-24.0 ^0.0 ^0.0 0.0 0.0 0.0 0.0 1 normal
