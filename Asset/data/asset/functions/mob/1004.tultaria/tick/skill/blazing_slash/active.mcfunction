@@ -38,6 +38,6 @@
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
         function lib:damage/modifier
-        execute if entity @p[distance=..6] positioned ^ ^ ^100 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function function lib:damage/
+        execute if entity @p[distance=..6] positioned ^ ^ ^100 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function lib:damage/
 # リセット
     function lib:damage/reset

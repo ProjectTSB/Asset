@@ -23,6 +23,7 @@
 # 構える
 
 # 演出
-    playsound ogg:block.respawn_anchor.charge1 hostile @a ~ ~ ~ 2 2
+    playsound minecraft:block.grindstone.use hostile @a ~ ~ ~ 2 1.5
+    playsound minecraft:item.axe.scrape hostile @a ~ ~ ~ 2 2
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
-    playsound minecraft:entity.blaze.ambient hostile @a ~ ~ ~ 2 1.2
+    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 2
