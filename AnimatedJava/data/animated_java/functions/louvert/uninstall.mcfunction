@@ -22,8 +22,6 @@ scoreboard objectives remove aj.louvert.animation.06_3_move_stop.local_anim_time
 scoreboard objectives remove aj.louvert.animation.06_4_move_attack.local_anim_time
 scoreboard objectives remove aj.louvert.animation.06_5_move_slash.local_anim_time
 scoreboard objectives remove aj.louvert.animation.07_1_soul_magic_cast.local_anim_time
-scoreboard objectives remove aj.louvert.animation.08_1_iai_start.local_anim_time
-scoreboard objectives remove aj.louvert.animation.08_2_iai_slash.local_anim_time
 scoreboard objectives remove aj.louvert.animation.09_1_triple_slash_start.local_anim_time
 scoreboard objectives remove aj.louvert.animation.09_2_triple_slash_slash.local_anim_time
 scoreboard objectives remove aj.louvert.animation.10_1_counter.local_anim_time
@@ -32,6 +30,9 @@ scoreboard objectives remove aj.louvert.animation.11_1_cast_magic.local_anim_tim
 scoreboard objectives remove aj.louvert.animation.12_1_opening.local_anim_time
 scoreboard objectives remove aj.louvert.animation.13_1_ending.local_anim_time
 scoreboard objectives remove aj.louvert.animation.14_1_falling_strike.local_anim_time
+scoreboard objectives remove aj.louvert.animation.15_1_final_spell.local_anim_time
+scoreboard objectives remove aj.louvert.animation.15_2_final_spell_iai_start.local_anim_time
+scoreboard objectives remove aj.louvert.animation.15_3_final_spell_iai_finish.local_anim_time
 scoreboard objectives remove aj.louvert.animation.01_idle.loop_mode
 scoreboard objectives remove aj.louvert.animation.02_1_damage.loop_mode
 scoreboard objectives remove aj.louvert.animation.02_2_damage.loop_mode
@@ -49,8 +50,6 @@ scoreboard objectives remove aj.louvert.animation.06_3_move_stop.loop_mode
 scoreboard objectives remove aj.louvert.animation.06_4_move_attack.loop_mode
 scoreboard objectives remove aj.louvert.animation.06_5_move_slash.loop_mode
 scoreboard objectives remove aj.louvert.animation.07_1_soul_magic_cast.loop_mode
-scoreboard objectives remove aj.louvert.animation.08_1_iai_start.loop_mode
-scoreboard objectives remove aj.louvert.animation.08_2_iai_slash.loop_mode
 scoreboard objectives remove aj.louvert.animation.09_1_triple_slash_start.loop_mode
 scoreboard objectives remove aj.louvert.animation.09_2_triple_slash_slash.loop_mode
 scoreboard objectives remove aj.louvert.animation.10_1_counter.loop_mode
@@ -59,4 +58,7 @@ scoreboard objectives remove aj.louvert.animation.11_1_cast_magic.loop_mode
 scoreboard objectives remove aj.louvert.animation.12_1_opening.loop_mode
 scoreboard objectives remove aj.louvert.animation.13_1_ending.loop_mode
 scoreboard objectives remove aj.louvert.animation.14_1_falling_strike.loop_mode
+scoreboard objectives remove aj.louvert.animation.15_1_final_spell.loop_mode
+scoreboard objectives remove aj.louvert.animation.15_2_final_spell_iai_start.loop_mode
+scoreboard objectives remove aj.louvert.animation.15_3_final_spell_iai_finish.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The louvert Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

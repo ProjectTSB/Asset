@@ -1,1 +1,0 @@
-tag @s remove aj.louvert.animation.08_2_iai_slash

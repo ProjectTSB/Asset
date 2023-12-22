@@ -15,8 +15,6 @@ function animated_java:louvert/zzzzzzzz/animations/06_3_move_stop/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/06_4_move_attack/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/06_5_move_slash/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/07_1_soul_magic_cast/pause_as_root
-function animated_java:louvert/zzzzzzzz/animations/08_1_iai_start/pause_as_root
-function animated_java:louvert/zzzzzzzz/animations/08_2_iai_slash/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/09_1_triple_slash_start/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/09_2_triple_slash_slash/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/10_1_counter/pause_as_root
@@ -25,3 +23,6 @@ function animated_java:louvert/zzzzzzzz/animations/11_1_cast_magic/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/12_1_opening/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/13_1_ending/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/pause_as_root
+function animated_java:louvert/zzzzzzzz/animations/15_1_final_spell/pause_as_root
+function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/pause_as_root
+function animated_java:louvert/zzzzzzzz/animations/15_3_final_spell_iai_finish/pause_as_root
