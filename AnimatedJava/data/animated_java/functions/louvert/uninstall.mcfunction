@@ -33,6 +33,7 @@ scoreboard objectives remove aj.louvert.animation.14_1_falling_strike.local_anim
 scoreboard objectives remove aj.louvert.animation.15_1_final_spell.local_anim_time
 scoreboard objectives remove aj.louvert.animation.15_2_final_spell_iai_start.local_anim_time
 scoreboard objectives remove aj.louvert.animation.15_3_final_spell_iai_finish.local_anim_time
+scoreboard objectives remove aj.louvert.animation.15_4_final_spell_fire.local_anim_time
 scoreboard objectives remove aj.louvert.animation.01_idle.loop_mode
 scoreboard objectives remove aj.louvert.animation.02_1_damage.loop_mode
 scoreboard objectives remove aj.louvert.animation.02_2_damage.loop_mode
@@ -61,4 +62,5 @@ scoreboard objectives remove aj.louvert.animation.14_1_falling_strike.loop_mode
 scoreboard objectives remove aj.louvert.animation.15_1_final_spell.loop_mode
 scoreboard objectives remove aj.louvert.animation.15_2_final_spell_iai_start.loop_mode
 scoreboard objectives remove aj.louvert.animation.15_3_final_spell_iai_finish.loop_mode
+scoreboard objectives remove aj.louvert.animation.15_4_final_spell_fire.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The louvert Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

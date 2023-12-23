@@ -26,3 +26,4 @@ execute if entity @s[tag=aj.louvert.animation.14_1_falling_strike] run function 
 execute if entity @s[tag=aj.louvert.animation.15_1_final_spell] run function animated_java:louvert/zzzzzzzz/animations/15_1_final_spell/tick
 execute if entity @s[tag=aj.louvert.animation.15_2_final_spell_iai_start] run function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/tick
 execute if entity @s[tag=aj.louvert.animation.15_3_final_spell_iai_finish] run function animated_java:louvert/zzzzzzzz/animations/15_3_final_spell_iai_finish/tick
+execute if entity @s[tag=aj.louvert.animation.15_4_final_spell_fire] run function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/tick

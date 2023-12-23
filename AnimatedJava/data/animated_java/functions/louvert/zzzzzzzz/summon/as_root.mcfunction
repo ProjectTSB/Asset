@@ -66,6 +66,8 @@ execute if score #animation aj.i = $aj.louvert.animation.15_2_final_spell_iai_st
 execute if score #animation aj.i = $aj.louvert.animation.15_2_final_spell_iai_start aj.id run scoreboard players operation @s aj.louvert.animation.15_2_final_spell_iai_start.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.15_3_final_spell_iai_finish aj.id run function animated_java:louvert/zzzzzzzz/animations/15_3_final_spell_iai_finish/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.15_3_final_spell_iai_finish aj.id run scoreboard players operation @s aj.louvert.animation.15_3_final_spell_iai_finish.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.louvert.animation.15_4_final_spell_fire aj.id run function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/apply_frame_as_root
+execute if score #animation aj.i = $aj.louvert.animation.15_4_final_spell_fire aj.id run scoreboard players operation @s aj.louvert.animation.15_4_final_spell_fire.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:louvert/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

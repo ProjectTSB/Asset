@@ -26,3 +26,4 @@ function animated_java:louvert/zzzzzzzz/animations/14_1_falling_strike/pause_as_
 function animated_java:louvert/zzzzzzzz/animations/15_1_final_spell/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/15_2_final_spell_iai_start/pause_as_root
 function animated_java:louvert/zzzzzzzz/animations/15_3_final_spell_iai_finish/pause_as_root
+function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/pause_as_root
