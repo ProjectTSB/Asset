@@ -57,3 +57,6 @@
 
 # ラストスペル 居合
     execute if score @s 9H.AnimationNum matches 152 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/
+
+# ラストスペル 弾幕ゲー
+    execute if score @s 9H.AnimationNum matches 153 run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/

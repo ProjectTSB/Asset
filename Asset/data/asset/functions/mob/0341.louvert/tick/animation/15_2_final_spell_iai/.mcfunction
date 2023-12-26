@@ -17,7 +17,6 @@
     execute if score @s 9H.AnimationTick matches 169 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/4.rotate_3
     execute if score @s 9H.AnimationTick matches 199 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/5.rotate_4
     execute if score @s 9H.AnimationTick matches 229 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/6.rotate_5
-    execute if score @s 9H.AnimationTick matches 259 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/7.rotate_6
 
 # アニメーション開始（待機）
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/01_idle/play
@@ -107,4 +106,4 @@
     execute if score @s 9H.AnimationTick matches 201 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/iai_tp
 
 # アニメーション終了処理
-    execute if score @s 9H.AnimationTick matches 240 run function asset:mob/0341.louvert/tick/general/9.animation_end
+    execute if score @s 9H.AnimationTick matches 240 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/end

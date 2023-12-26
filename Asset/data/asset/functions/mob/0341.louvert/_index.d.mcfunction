@@ -6,6 +6,7 @@
     # マーカー関連
         #declare tag 9H.Marker.SummonPoint
         #declare tag 9H.Final.Display
+        #declare tag 9H.Final.Display.Bullet
     # AnimatedJavaモデル関連
         #declare tag 9H.ModelRoot
         #declare tag 9H.FireBladeLocater

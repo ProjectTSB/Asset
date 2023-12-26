@@ -2,7 +2,9 @@
 #
 # 中央にTPする
 #
-# @within function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/
+# @within function
+#   asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/
+#   asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/
 
 # TPする場所の確保
     execute at @e[type=marker,tag=9H.Marker.SummonPoint] run fill ~-1 ~1 ~-1 ~1 ~3 ~1 air destroy

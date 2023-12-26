@@ -10,3 +10,4 @@
     # Marker削除
         kill @e[type=marker,tag=9H.Marker.SummonPoint]
         kill @e[type=item_display,tag=9H.Final.Display]
+        kill @e[type=item_display,tag=9H.Final.Display.Bullet]
