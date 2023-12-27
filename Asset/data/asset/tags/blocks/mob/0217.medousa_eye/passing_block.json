@@ -4,7 +4,7 @@
 
       "#lib:no_collision",
       "#lib:glasses",
-      "#lib:glass_panes"
-
+      "#lib:glass_panes",
+      "minecraft:barrier"
     ]
   }
