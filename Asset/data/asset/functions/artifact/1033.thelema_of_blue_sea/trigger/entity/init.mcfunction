@@ -1,6 +1,6 @@
 #> asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
 #
-# markerのInit処理
+# Init処理
 #
 # @within function asset:artifact/1033.thelema_of_blue_sea/trigger/3.main
 
