@@ -1,6 +1,6 @@
 #> asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
 #
-#
+# 追撃の剣のヒット処理
 #
 # @within function
 #   asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/recursive
