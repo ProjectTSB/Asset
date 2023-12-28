@@ -16,9 +16,7 @@
 # tp
     tp @s ~ ~-0.2 ~
 
-# 敵または地面に当たった場合ダメージ処理と強制終了
-    #execute if entity @e[type=#lib:living,tag=Enemy,distance=..1.5] run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
-    #execute if entity @e[type=#lib:living,tag=Enemy,distance=..1.5] run return 0
+# 地面に当たった場合ダメージ処理と強制終了
     execute unless block ~ ~ ~ #lib:no_collision run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
     execute unless block ~ ~ ~ #lib:no_collision run return 0
 
