@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"極光刀 永夜","color":"#91f9ab"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"現在MPの120%をダメージに加算する。","color":"white"}','{"text":"オーロラの天使の持っていた刀。","color":"gray"}','{"text":"その刃は常闇を照らす蒼翠の軌跡を描く。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"現在MPの120%分ダメージがアップする。","color":"white"}','{"text":"オーロラの天使の持っていた刀。","color":"gray"}','{"text":"その刃は常闇を照らす蒼翠の軌跡を描く。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
