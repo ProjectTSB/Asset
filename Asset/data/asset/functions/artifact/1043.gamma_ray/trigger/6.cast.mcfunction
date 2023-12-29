@@ -15,7 +15,7 @@
 
 # ダメージ計算
 # 溜め時間：N Tick 溜め時間が長いほど二次関数的にダメージが上がる
-# N ^ 2 / 8 + 200
+# N ^ 2 / 5 + 200
     scoreboard players operation $SZ.Damage Temporary = @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary *= @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary /= $5 Const
@@ -47,5 +47,5 @@
 # リセット
     function lib:damage/reset
     tag @s remove SZ.Cast
-    tag @e[distance=..28] remove SZ.Landing
+    tag @e[tag=SZ.Landing,distance=..28] remove SZ.Landing
     scoreboard players reset @s SZ.CastTick
