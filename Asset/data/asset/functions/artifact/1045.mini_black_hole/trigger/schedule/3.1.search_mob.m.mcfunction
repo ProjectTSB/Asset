@@ -1,4 +1,4 @@
-#> asset:artifact/1045.mini_black_hole/trigger/schedule/3.1.search_mob_m
+#> asset:artifact/1045.mini_black_hole/trigger/schedule/3.1.search_mob.m
 #
 # ダメージ処理
 #

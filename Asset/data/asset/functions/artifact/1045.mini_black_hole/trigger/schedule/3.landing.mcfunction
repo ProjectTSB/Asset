@@ -21,7 +21,7 @@
     scoreboard players operation $T1.LandingTick Temporary = @s T1.LandingTick
     scoreboard players operation $T1.LandingTick Temporary %= $4 Const
     execute store result storage asset:temp T1.Num float 0.1 run scoreboard players get @s T1.LandingTick
-    execute if score $T1.LandingTick Temporary matches 0 run function asset:artifact/1045.mini_black_hole/trigger/schedule/3.1.search_mob_m with storage asset:temp T1
+    execute if score $T1.LandingTick Temporary matches 0 run function asset:artifact/1045.mini_black_hole/trigger/schedule/3.1.search_mob.m with storage asset:temp T1
     data remove storage asset:temp T1.Num
 
 # ダメージ付与

@@ -7,7 +7,6 @@
 #> Val
 # @private
     #declare score_holder $T1.Distance
-    #declare score_holder $T1.LandingTick
     #declare tag T1.Landing
 
 # スコア初期化
@@ -51,3 +50,4 @@
 
 # リセット処理
     data remove storage lib: Argument
+    scoreboard players reset $T1.Distance Temporary
