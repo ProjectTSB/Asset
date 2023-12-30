@@ -16,7 +16,9 @@
     data modify storage asset:mob Name set value '{"text":"スカルレイブン","color":"dark_gray"}'
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1}]}}
+    # ノーマル以上でパンチ弓になる
+        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b}
+        execute if predicate api:global_vars/difficulty/min/normal run data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1}]}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
@@ -39,7 +41,7 @@
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value 0
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
-    # data modify storage asset:mob SpecialDefense set value
+    # data modify storage asset:mob SpecialDefense set valueｎお
 # 移動速度 (double) (オプション)
     data modify storage asset:mob Speed set value 0.3
 # 索敵範囲 (double) (オプション)
