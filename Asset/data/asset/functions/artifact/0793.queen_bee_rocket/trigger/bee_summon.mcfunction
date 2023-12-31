@@ -16,7 +16,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
 
 # 弾を召喚
-    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,IsBaby:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:20054}}],Tags:["M1.First","M1.Bee","Projectile"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:2147483647,ShowParticles:0b}]}
+    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,IsBaby:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:20054}}],Tags:["M1.First","M1.Bee","Projectile"],active_effects:[{id:"invisibility",amplifier:1b,duration:2147483647,show_particles:0b}]}
 # 弾を前方拡散に向ける
     tp @e[type=zombie,tag=M1.First,distance=..1,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=SpreadMarker,limit=1]
 # ユーザーID適応
