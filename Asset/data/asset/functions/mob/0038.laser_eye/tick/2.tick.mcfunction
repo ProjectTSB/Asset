@@ -15,3 +15,7 @@
 
 # タグ付与されてる場合
     execute if entity @s[tag=C.Charge] run function asset:mob/0038.laser_eye/tick/2.1.attack
+
+# 存在時間のスコア 40秒で消滅
+    scoreboard players add @s C.LifeTime 1
+    execute if entity @s[scores={C.LifeTime=800..}] run function asset:mob/0038.laser_eye/tick/suicide
