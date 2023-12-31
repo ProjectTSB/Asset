@@ -5,9 +5,21 @@
 # @within function asset:artifact/0672.aurora_blade/trigger/2.check_condition
 
 #> Private
-# @private function asset:artifact/0672.aurora_blade/trigger/**
+# @private
     #declare score_holder $RandomDamage
     #declare score_holder $CalcRandom
+    #declare score_holder $MP
+    #declare score_holder $MPMax
+    #declare score_holder $MPPer
+
+# 現在MPの100倍と最大MPを取得
+    function api:mp/get_current
+    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 100
+    function api:mp/get_max
+    execute store result score $MPMax Temporary run data get storage api: Return.MaxMP
+
+# 現在のMP割合を算出
+    execute store result score $MPPer Temporary run scoreboard players operation $MP Temporary /= $MPMax Temporary
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
@@ -28,20 +40,23 @@
             scoreboard players operation $RandomDamage Temporary %= $CalcRandom Temporary
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 150
-    #ダメージセット 天使なら1.5倍
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
-        execute if entity @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage lib: Argument.Damage float 1.5 run scoreboard players get $RandomDamage Temporary
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+
+# Argument.Damageに代入 $MPPer >= 70 なら1.5倍
+    execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+    execute if score $MPPer Temporary matches 70.. store result storage lib: Argument.Damage float 1.5 run scoreboard players get $RandomDamage Temporary
+
+    data modify storage lib: Argument.AttackType set value "Magic"
+    data modify storage lib: Argument.ElementType set value "Thunder"
 
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
 
 # リセット
     function lib:damage/reset
     scoreboard players reset $CalcRandom Temporary
     scoreboard players reset $RandomDamage Temporary
+    scoreboard players reset $MP Temporary
+    scoreboard players reset $MPMax Temporary
+    scoreboard players reset $MPPer Temporary
