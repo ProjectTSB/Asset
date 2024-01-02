@@ -24,7 +24,7 @@
     function lib:damage/reset
 
 # 各プレイヤーのMPを減らす
-    execute if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0332.aurora_missile/tick/6.mp_reduction
+    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0332.aurora_missile/tick/6.mp_reduction
     execute if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:mob/0332.aurora_missile/tick/6.mp_reduction
 
 # 消滅
