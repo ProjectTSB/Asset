@@ -1,8 +1,8 @@
-#> asset:mob/0332.aurora_missile/tick/4.mp_reduction
+#> asset:mob/0332.aurora_missile/tick/6.mp_reduction
 #
 # 各プレイヤーのMPを減らす処理
 #
-# @within function asset:mob/0332.aurora_missile/tick/3.hit
+# @within function asset:mob/0332.aurora_missile/tick/5.hit
 
 # 最大MPを取得
     function api:mp/get_max
