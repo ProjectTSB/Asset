@@ -16,7 +16,7 @@
     data modify storage asset:mob Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f2e5"},{"text":"ロ","color":"#00e5e8"},{"text":"ラ","color":"#00d8eb"},{"text":"ソ","color":"#00cbee"},{"text":"ー","color":"#00bef2"},{"text":"サ","color":"#00b1f5"},{"text":"ラ","color":"#00a4f8"},{"text":"ー","color":"#00a2f9"}]'
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:383}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20159}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
