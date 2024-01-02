@@ -9,3 +9,6 @@
 
 # motionCTの処理
     execute if entity @s[scores={96.MotionCT=0..}] run scoreboard players remove @s 96.MotionCT 1
+
+# ハード以上で鈍足の無効化
+    execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
