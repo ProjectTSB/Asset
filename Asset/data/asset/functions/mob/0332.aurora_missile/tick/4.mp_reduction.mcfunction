@@ -8,6 +8,6 @@
     function api:mp/get_max
 
 # 最大MPの5%/10%を減少させる
-    execute store result score $Fluctuation Lib run data get storage api: Return.MaxMP -0.06
+    execute store result score $Fluctuation Lib run data get storage api: Return.MaxMP -0.05
     execute if predicate api:global_vars/difficulty/min/hard store result score $Fluctuation Lib run data get storage api: Return.MaxMP -0.10
     function lib:mp/fluctuation
