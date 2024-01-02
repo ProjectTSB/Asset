@@ -26,36 +26,51 @@
 
     # Damage
         # PhysicalDamage
-            data merge storage lib: {Argument:{Damage:210f,AttackType:Physical,ElementType:None}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Physical"
+            data modify storage lib: Argument.ElementTypeNone set value "None"
             function lib:damage/modifier
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Fire}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Physical"
+            data modify storage lib: Argument.ElementTypeNone set value "Fire"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Water}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Physical"
+            data modify storage lib: Argument.ElementTypeNone set value "Water"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Thunder}}
-            function lib:damage/modifier_continuation
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Physical"
+            data modify storage lib: Argument.ElementTypeNone set value "Thunder"
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
         # MagicDamage
-            data merge storage lib: {Argument:{Damage:210f,AttackType:Magic,ElementType:None}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Magic"
+            data modify storage lib: Argument.ElementTypeNone set value "None"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Fire}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Magic"
+            data modify storage lib: Argument.ElementTypeNone set value "Fire"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Water}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Magic"
+            data modify storage lib: Argument.ElementTypeNone set value "Water"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
-            data merge storage lib: {Argument:{Damage:210f,ElementType:Thunder}}
+            data modify storage lib: Argument.Damage set value 210f
+            data modify storage lib: Argument.AttackType set value "Magic"
+            data modify storage lib: Argument.ElementTypeNone set value "Thunder"
             function lib:damage/modifier_continuation
             execute as @e[type=#lib:living,tag=Target,distance=..30] run function lib:damage/
 
