@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.10_0_0_idle_scythe_angry

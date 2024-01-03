@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/6_2_katana_sheathe_iai/tree/leaf_3_as_bone

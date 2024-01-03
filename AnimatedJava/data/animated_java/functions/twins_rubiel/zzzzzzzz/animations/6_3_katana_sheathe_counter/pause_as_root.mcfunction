@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.6_3_katana_sheathe_counter

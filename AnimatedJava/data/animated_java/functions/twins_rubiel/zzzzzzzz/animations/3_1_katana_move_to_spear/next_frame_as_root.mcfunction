@@ -1,0 +1,1 @@
+function animated_java:twins_rubiel/zzzzzzzz/animations/3_1_katana_move_to_spear/tick_animation

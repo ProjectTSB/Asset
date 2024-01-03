@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.3_2_katana_spear_damage

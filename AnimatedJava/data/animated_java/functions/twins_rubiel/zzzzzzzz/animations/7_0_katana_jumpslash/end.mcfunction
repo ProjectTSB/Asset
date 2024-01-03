@@ -1,0 +1,3 @@
+execute if score @s aj.twins_rubiel.animation.7_0_katana_jumpslash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_rubiel/zzzzzzzz/animations/7_0_katana_jumpslash/end_loop
+execute if score @s aj.twins_rubiel.animation.7_0_katana_jumpslash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_rubiel/animations/7_0_katana_jumpslash/stop
+execute if score @s aj.twins_rubiel.animation.7_0_katana_jumpslash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_rubiel/animations/7_0_katana_jumpslash/pause

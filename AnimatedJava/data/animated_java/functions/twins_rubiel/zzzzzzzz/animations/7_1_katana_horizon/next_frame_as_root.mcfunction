@@ -1,0 +1,1 @@
+function animated_java:twins_rubiel/zzzzzzzz/animations/7_1_katana_horizon/tick_animation

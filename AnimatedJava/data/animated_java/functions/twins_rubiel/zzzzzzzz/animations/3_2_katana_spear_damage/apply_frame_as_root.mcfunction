@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..45 run function animated_java:twins_rubiel/zzzzzzzz/animations/3_2_katana_spear_damage/tree/branch_0_45

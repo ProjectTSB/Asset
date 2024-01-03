@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.8_2_katana_throw

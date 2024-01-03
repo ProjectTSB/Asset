@@ -1,0 +1,1 @@
+function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_1_idle_scythe_fun/tick_animation

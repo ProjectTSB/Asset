@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.6_2_katana_sheathe_cross

@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.2_0_1_idle_katana_fun
