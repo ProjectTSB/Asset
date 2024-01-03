@@ -1,0 +1,1 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/4_0_hg_backstep_shot/tick_animation

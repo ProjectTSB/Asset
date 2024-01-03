@@ -1,0 +1,1 @@
+tag @s remove aj.twins_sapphiel.animation.launcher

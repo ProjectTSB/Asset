@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0 run function animated_java:twins_sapphiel/zzzzzzzz/animations/launcher/tree/leaf_0

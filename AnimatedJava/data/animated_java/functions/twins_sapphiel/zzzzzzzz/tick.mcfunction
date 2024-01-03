@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.twins_sapphiel.root] run function animated_java:twins_sapphiel/zzzzzzzz/tick_as_root

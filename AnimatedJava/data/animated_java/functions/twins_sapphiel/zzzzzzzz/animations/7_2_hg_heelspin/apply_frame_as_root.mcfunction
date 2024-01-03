@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..110 run function animated_java:twins_sapphiel/zzzzzzzz/animations/7_2_hg_heelspin/tree/branch_0_110

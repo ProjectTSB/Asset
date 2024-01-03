@@ -1,0 +1,1 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/8_2_hg_fullburst_end/tick_animation

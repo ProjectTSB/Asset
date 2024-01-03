@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..44 run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_0_hg_riderkick/tree/branch_0_44

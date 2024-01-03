@@ -1,0 +1,3 @@
+execute if score @s aj.twins_sapphiel.animation.7_0_hg_warpshot.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_sapphiel/zzzzzzzz/animations/7_0_hg_warpshot/end_loop
+execute if score @s aj.twins_sapphiel.animation.7_0_hg_warpshot.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_sapphiel/animations/7_0_hg_warpshot/stop
+execute if score @s aj.twins_sapphiel.animation.7_0_hg_warpshot.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_sapphiel/animations/7_0_hg_warpshot/pause
