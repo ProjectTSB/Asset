@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:mob/0340.twins_rubiel/tick/1.trigger",
+        "asset:mob/0339.twins_sapphiel/tick/1.trigger",
+        "asset:mob/0338.corundum_twins/tick/1.trigger",
+        "asset:mob/0338.corundum_twins/tick/1.trigger",
         "asset:mob/0176.killer_bee/tick/1.trigger",
         "asset:mob/0186.ferocious_bee/tick/1.trigger",
         "asset:mob/0266.small_dark_ball/tick/1.trigger",

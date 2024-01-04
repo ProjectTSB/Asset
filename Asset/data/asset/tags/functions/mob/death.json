@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:mob/0340.twins_rubiel/death/1.trigger",
+        "asset:mob/0339.twins_sapphiel/death/1.trigger",
+        "asset:mob/0338.corundum_twins/death/1.trigger",
+        "asset:mob/0338.corundum_twins/death/1.trigger",
         "asset:mob/0265.dark_familiar/death/1.trigger",
         "asset:mob/0264.dark_summoner/death/1.trigger",
         "asset:mob/0273.hell_blade/death/1.trigger",

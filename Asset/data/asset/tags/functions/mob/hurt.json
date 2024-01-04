@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:mob/0340.twins_rubiel/hurt/1.trigger",
+        "asset:mob/0339.twins_sapphiel/hurt/1.trigger",
+        "asset:mob/0338.corundum_twins/hurt/1.trigger",
         "asset:mob/0265.dark_familiar/hurt/1.trigger",
         "asset:mob/0264.dark_summoner/hurt/1.trigger",
         "asset:mob/0273.hell_blade/hurt/1.trigger",
