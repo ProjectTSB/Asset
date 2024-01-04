@@ -9,7 +9,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
+    execute at @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
 
 # 実行 対象が天使の場合、本来の値の20%にする
     data modify storage lib: Argument.VectorMagnitude set value 2
