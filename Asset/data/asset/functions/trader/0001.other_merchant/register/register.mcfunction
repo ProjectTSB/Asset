@@ -45,6 +45,11 @@
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:item_frame",Count:1b}
 
+# 取引 腕付きアマスタ
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:armor_stand",Count:1b,tag:{EntityTag:{ShowArms:1b}}}
+
 # 取引 シュルカーボックス
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:16b}
