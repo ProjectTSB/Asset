@@ -52,7 +52,7 @@
 
 # 取引 シュルカーボックス
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:8b}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:shulker_box",Count:1b}
 
 # 登録
