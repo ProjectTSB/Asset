@@ -24,6 +24,15 @@
             #declare tag 9H.Guard.Counter
         # 他のMob
             #declare tag 9K.SoulBlast
+            #declare tag 9H.FireMagic
+            #declare tag 9H.Meteor
+            #declare tag 9H.Meteor.Display
+            #declare tag 9H.Bullet
+            #declare tag 9H.SoulQuake
+            #declare tag 9H.SoulQuakeHard
+        # ラストスペル
+            #declare tag 9H.LastSpell
+
 
 #> val
 # @within function asset:mob/0341.louvert/**

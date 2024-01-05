@@ -14,3 +14,5 @@
             # 1の位  : Animation番号
     scoreboard objectives add 9H.SkillSelect dummy
         # どのスキルが実行されているかを記録するスコア
+    scoreboard objectives add 9H.ProjectileTick dummy
+        # 弾幕用Tick

@@ -4,5 +4,4 @@
 #
 # @within function asset:mob/0341.louvert/**
 
-data modify storage api: Argument.ID set value 350
-function api:mob/summon
+function asset:mob/0341.louvert/tick/projectile/soul_quake_hard/0.summon

@@ -2,7 +2,9 @@
 #
 # TPで落下する
 #
-# @within function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/
+# @within function
+#   asset:mob/0341.louvert/tick/animation/14_1_falling_strike/
+#   asset:mob/0341.louvert/tick/animation/15_4_final_spell_fall_strike/
 
 # ループ処理
     scoreboard players set $9H.Temp Temporary 32

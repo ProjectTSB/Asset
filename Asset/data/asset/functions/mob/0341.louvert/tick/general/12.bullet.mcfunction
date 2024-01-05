@@ -4,5 +4,4 @@
 #
 # @within function asset:mob/0341.louvert/**
 
-data modify storage api: Argument.ID set value 351
-function api:mob/summon
+function asset:mob/0341.louvert/tick/projectile/bullet/0.summon

@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0341.louvert/tick/animation/
 
+# ラストスペルタグ
+    execute if score @s 9H.AnimationTick matches 1 run tag @s add 9H.LastSpell
+
 # アニメーション開始
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/15_1_final_spell/play
 

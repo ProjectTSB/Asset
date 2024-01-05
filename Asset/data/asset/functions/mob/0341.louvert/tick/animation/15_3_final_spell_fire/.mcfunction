@@ -30,32 +30,36 @@
 
 # 弾幕召喚
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick
-    scoreboard players operation $9H.Temp 9H.AnimationTick %= $8 Const
+    scoreboard players operation $9H.Temp 9H.AnimationTick %= $6 Const
     execute if score @s 9H.AnimationTick matches 71..191 if score $9H.Temp 9H.AnimationTick matches 0 as @e[type=item_display,tag=9H.Final.Display.Bullet,distance=..64] at @s run function asset:mob/0341.louvert/tick/general/12.bullet
 
 # 音
     execute if score @s 9H.AnimationTick matches 90 run playsound item.trident.throw hostile @a[distance=..32] ~ ~ ~ 0.75 0.5 0
 
 # メテオ発射
-    execute if score @s 9H.AnimationTick matches 110 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon_hard
+    execute if score @s 9H.AnimationTick matches 108 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
+    execute if score @s 9H.AnimationTick matches 112 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
 
 # 音
     execute if score @s 9H.AnimationTick matches 110 run playsound item.trident.riptide_3 hostile @a[distance=..32] ~ ~ ~ 0.75 0.8 0
 
 # メテオ発射
-    execute if score @s 9H.AnimationTick matches 141 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon_hard
+    execute if score @s 9H.AnimationTick matches 139 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
+    execute if score @s 9H.AnimationTick matches 143 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
 
 # 音
     execute if score @s 9H.AnimationTick matches 141 run playsound item.trident.riptide_3 hostile @a[distance=..32] ~ ~ ~ 0.75 0.8 0
 
 # メテオ発射
-    execute if score @s 9H.AnimationTick matches 171 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon_hard
+    execute if score @s 9H.AnimationTick matches 169 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
+    execute if score @s 9H.AnimationTick matches 173 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
 
 # 音
     execute if score @s 9H.AnimationTick matches 171 run playsound item.trident.riptide_3 hostile @a[distance=..32] ~ ~ ~ 0.75 0.8 0
 
 # メテオ発射
-    execute if score @s 9H.AnimationTick matches 201 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon_hard
+    execute if score @s 9H.AnimationTick matches 199 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
+    execute if score @s 9H.AnimationTick matches 203 at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/15_3_final_spell_fire/meteor
 
 # 音
     execute if score @s 9H.AnimationTick matches 201 run playsound item.trident.riptide_3 hostile @a[distance=..32] ~ ~ ~ 0.75 0.8 0
