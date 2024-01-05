@@ -10,7 +10,7 @@ say ルビィ召喚開始
 # ID (int)
     data modify storage asset:mob ID set value 340
 # Type (string) Wikiを参照
-    data modify storage asset:mob Type set value "Enemy"
+    data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)

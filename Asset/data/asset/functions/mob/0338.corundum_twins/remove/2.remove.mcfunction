@@ -4,4 +4,5 @@
 #
 # @within function asset:mob/0338.corundum_twins/remove/1.trigger
 
-# TODO:双子のモデル消去
+# 独自remove処理に移譲
+    function asset:mob/0338.corundum_twins/remove/app/1.remove

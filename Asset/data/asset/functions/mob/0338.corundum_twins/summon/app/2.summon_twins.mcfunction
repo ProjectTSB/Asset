@@ -1,6 +1,6 @@
 #> asset:mob/0338.corundum_twins/summon/app/2.summon_twins
 #
-# Mobの召喚時の処理・wither_skeletonの初期化（独自実装）
+# Mobの召喚時の処理・双子本体を召喚し、初期化する
 #
 # @within function asset:mob/0338.corundum_twins/summon/2.summon
 

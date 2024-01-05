@@ -9,4 +9,6 @@
 # 紐づけ対象を取得
     tag @s add 9E.TargetEnabled
     $tag @e[type=wither_skeleton,tag=9F.Root,tag=9E.Link.$(Uid)] add 9F.Target
+    $tag @e[type=item_display,tag=9F.ModelRoot,tag=9E.Link.$(Uid)] add 9F.Target
     $tag @e[type=wither_skeleton,tag=9G.Root,tag=9E.Link.$(Uid)] add 9G.Target
+    $tag @e[type=item_display,tag=9G.ModelRoot,tag=9E.Link.$(Uid)] add 9G.Target

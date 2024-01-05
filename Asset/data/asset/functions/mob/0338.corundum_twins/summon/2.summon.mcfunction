@@ -61,7 +61,7 @@
         # data modify storage asset:mob Resist.Thunder set value 
 
 # 中心点召喚
-    # summon marker ~ ~2 ~ {Tags:["8T.Marker.SpawnPoint"]}
+    # summon marker ~ ~ ~ {Tags:["8T.Marker.SpawnPoint"]}
 
 # Mob独自のInit処理実行
     execute as @e[type=slime,tag=MobInit,distance=..0.01] run function asset:mob/0338.corundum_twins/summon/app/1.init

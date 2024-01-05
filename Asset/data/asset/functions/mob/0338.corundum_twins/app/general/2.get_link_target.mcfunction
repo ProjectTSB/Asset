@@ -6,5 +6,5 @@
 
 # 紐づけ対象を取得
     execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
-    execute if entity @s[tag=!9E.TargetEnabled] run function asset:mob/0338.corundum_twins/app/general/3.get_link_target_macro.m with storage asset:temp 9E
+    function asset:mob/0338.corundum_twins/app/general/3.get_link_target_macro.m with storage asset:temp 9E
     data remove storage asset:temp 9E.Uid
