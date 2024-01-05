@@ -4,4 +4,3 @@
 #
 # @within function asset:mob/0340.twins_rubiel/tick/1.trigger
 
-say rubie tick

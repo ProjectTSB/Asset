@@ -14,9 +14,14 @@
     scoreboard players set @s 9E.Timer 0
     scoreboard players set @s 9E.ActionCount 0
 
+# 中心点召喚
+    summon marker ~ ~ ~ {Tags:["9E.Marker.SpawnPoint","9E.Init"]}
+
 # Uid設定
     function asset:mob/0338.corundum_twins/summon/app/3.get_uid
     scoreboard players operation @s 9E.Uid = $Random Temporary
+    scoreboard players operation @e[type=marker,tag=9E.Marker.SpawnPoint,tag=9E.Init,sort=nearest,limit=1] 9E.Uid = $Random Temporary
 
 # リセット
     scoreboard players reset $Random Temporary
+    tag @e[type=marker,tag=9E.Marker.SpawnPoint,tag=9E.Init] remove 9E.Init

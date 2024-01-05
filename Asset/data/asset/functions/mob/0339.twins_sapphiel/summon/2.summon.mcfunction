@@ -4,7 +4,9 @@
 #
 # @within function asset:mob/0339.twins_sapphiel/summon/1.trigger
 
-say サフィ召喚開始
+# rootからの召喚以外は無効にする
+
+
 # 元となるMobを召喚する
     summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","9F.Root"],DeathLootTable:"asset:mob/death/0339.twins_sapphiel",PersistenceRequired:1b,Silent:1b,NoAI:1b,NoGravity:1b}
 # ID (int)
@@ -66,4 +68,3 @@ say サフィ召喚開始
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
     execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
-say サフィ召喚完了

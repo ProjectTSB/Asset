@@ -6,10 +6,11 @@
 
 # Root用
     # 共通
-        #declare tag 9E.Root 処理用中心点
+        #declare tag 9E.Root 処理用entity
         #declare tag 9E.Init init待ち
         #declare tag 9E.Remove 死亡処理を行わずに消去する
         #declare tag 9E.TargetEnabled 紐づけ有効中
+        #declare tag 9E.Marker.SpawnPoint 中心点
 
 # サフィ用
     # 共通
