@@ -1,0 +1,19 @@
+#> asset:mob/0338.corundum_twins/summon/app/2.summon_twins
+#
+# Mobの召喚時の処理・wither_skeletonの初期化（独自実装）
+#
+# @within function asset:mob/0338.corundum_twins/summon/2.summon
+
+# 双子を召喚
+    data modify storage api: Argument.ID set value 339
+    execute positioned ~-1 ~ ~ rotated ~-10 ~ run function api:mob/summon
+    data modify storage api: Argument.ID set value 340
+    execute positioned ~1 ~ ~ rotated ~10 ~ run function api:mob/summon
+
+# 双子とRootの紐づけを行う
+    execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
+    function asset:mob/0338.corundum_twins/app/general/1.start_link.m with storage asset:temp 9E
+    data remove storage asset:temp 9E.Uid
+
+# 完了
+    tag @s remove 9E.Init

@@ -5,7 +5,7 @@
 # @within function asset:mob/0338.corundum_twins/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon slime ~ ~ ~ {Tags:["MobInit","9E.Root"],DeathLootTable:"asset:mob/death/0338.corundum_twins",PersistenceRequired:1b,Silent:1b,NoAI:1b,Invulnerable:1b}
+    summon slime ~ ~ ~ {Tags:["MobInit","9E.Root"],DeathLootTable:"asset:mob/death/0338.corundum_twins",PersistenceRequired:1b,Silent:1b,NoAI:1b,NoGravity:1b,Invulnerable:1b}
 # ID (int)
     data modify storage asset:mob ID set value 338
 # Type (string) Wikiを参照
@@ -60,7 +60,15 @@
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value 
 
-# 専用Init
+# 中心点召喚
+    # summon marker ~ ~2 ~ {Tags:["8T.Marker.SpawnPoint"]}
+
+# Mob独自のInit処理実行
+    execute as @e[type=slime,tag=MobInit,distance=..0.01] run function asset:mob/0338.corundum_twins/summon/app/1.init
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
     execute as @e[type=slime,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+
+# 双子の召喚処理実行
+# 自身のInit前に実行するとエラーが起こるのでこの位置で行う
+    execute as @e[type=slime,tag=9E.Init,distance=..0.01] run function asset:mob/0338.corundum_twins/summon/app/2.summon_twins

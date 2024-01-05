@@ -6,4 +6,9 @@
 
 #> 定義類はここに
 # @within function asset:mob/0340.twins_rubiel/**
-    scoreboard objectives add 
+
+# タイマー
+    scoreboard objectives add 9G.AnimationTimer dummy
+
+# カウンター
+    scoreboard objectives add 9G.ActionCount dummy

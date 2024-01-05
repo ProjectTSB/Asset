@@ -6,4 +6,13 @@
 
 #> 定義類はここに
 # @within function asset:mob/0338.corundum_twins/**
-    scoreboard objectives add 
+
+# 処理用
+    scoreboard objectives add 9E.Uid dummy
+
+# タイマー
+    scoreboard objectives add 9E.Timer dummy
+
+# カウンター
+    scoreboard objectives add 9E.ActionCount dummy
+    scoreboard objectives add 9E.PlayerCount dummy

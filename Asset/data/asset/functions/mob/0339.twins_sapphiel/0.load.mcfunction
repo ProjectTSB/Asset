@@ -6,4 +6,9 @@
 
 #> 定義類はここに
 # @within function asset:mob/0339.twins_sapphiel/**
-    scoreboard objectives add 
+
+# タイマー
+    scoreboard objectives add 9F.AnimationTimer dummy
+
+# カウンター
+    scoreboard objectives add 9F.ActionCount dummy
