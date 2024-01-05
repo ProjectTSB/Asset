@@ -8,14 +8,23 @@
     function asset:artifact/common/use/offhand
 # ここから先は神器側の効果の処理を書く
 
-# 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
+#> Private
+# @private
+    #declare tag Target
 
-# 実行 対象が天使の場合、本来の値の20%にする
+# 演出
+    execute at @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
+
+# モーション 対象が天使の場合無効
     data modify storage lib: Argument.VectorMagnitude set value 2
-    execute if entity @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,distance=..6] store result storage lib: Argument.VectorMagnitude float 0.2 run data get storage lib: Argument.VectorMagnitude
     data modify storage lib: Argument.KnockbackResist set value 1b
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s rotated as @p[tag=this,distance=..6] rotated ~ -18 run function lib:motion/
+
+# ターゲット指定 Victimと前方を対象にする
+    tag @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,distance=..10] add Target
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,distance=..5] at @p[tag=this] positioned ^ ^ ^-3 unless entity @s[distance=..3] run tag @s add Target
+
+# 前方を対象に、プレイヤーの方向と逆方向に飛ぶ
+    execute as @e[type=#lib:living,tag=Target,distance=..10] at @s facing entity @p[tag=this] eyes rotated ~180 -18 run function lib:motion/
 
 # リセット
     data remove storage lib: Argument
