@@ -19,7 +19,7 @@
     data modify storage lib: Argument.VectorMagnitude set value 2
     data modify storage lib: Argument.KnockbackResist set value 1b
 
-# ターゲット指定
+# ターゲット指定 Victimと前方を対象にする
     tag @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,distance=..10] add Target
     execute as @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,distance=..5] at @p[tag=this] positioned ^ ^ ^-3 unless entity @s[distance=..3] run tag @s add Target
 
