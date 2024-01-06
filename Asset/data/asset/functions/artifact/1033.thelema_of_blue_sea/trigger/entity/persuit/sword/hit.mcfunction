@@ -18,7 +18,7 @@
 
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
-    execute at @a if score @s SP.UserID = @p UserID run function lib:damage/modifier
+    execute at @a if score @s SP.UserID = @p UserID as @p run function lib:damage/modifier
     execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Enemy,distance=..2] run function lib:damage/
     function lib:damage/reset
 
