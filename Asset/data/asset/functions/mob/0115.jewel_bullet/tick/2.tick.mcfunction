@@ -8,7 +8,7 @@
     scoreboard players add @s 36.Tick 1
 
 # 演出
-    particle minecraft:dust 8 1 8 1.5 ~ ~1.2 ~ 0.4 0.4 0.4 1 3 normal @a
+    particle minecraft:dust 8 1 8 1.5 ~ ~1.2 ~ 0.25 0.25 0.25 1 3 normal @a
     playsound minecraft:block.amethyst_cluster.step hostile @a ~ ~ ~ 0.4 1 0
 
 # プレイヤーへのダメージ
