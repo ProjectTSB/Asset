@@ -31,7 +31,7 @@
     # デスログ
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの詠唱した火炎魔法に飲み込まれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    execute as @e[tag=9H.Temp.This,distance=..100] run function lib:damage/modifier
+    execute as @e[tag=this,distance=..100] run function lib:damage/modifier
 # ダメージを与える
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 9H.Landing
     execute positioned ~ ~1 ~ run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 9H.Landing

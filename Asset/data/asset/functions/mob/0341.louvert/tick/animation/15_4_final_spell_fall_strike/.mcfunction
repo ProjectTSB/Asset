@@ -112,10 +112,14 @@
     execute if score @s 9H.AnimationTick matches 190 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/2.rotate_1
     execute if score @s 9H.AnimationTick matches 220 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/8.end
 
-# アニメーション終了処理
-    execute if score @s 9H.AnimationTick matches 250 run function asset:mob/0341.louvert/tick/general/9.animation_end
-    execute if score @s 9H.AnimationTick matches 250 run kill @e[type=item_display,tag=9H.Final.Display,distance=..100,limit=1]
+# 無敵解除
+    execute if score @s 9H.AnimationTick matches 250 run effect clear @s resistance
 
 # タグ外し
     tag @s remove 9H.Temp.This
     execute if score @s 9H.AnimationTick matches 250 run tag @s remove 9H.LastSpell
+
+# アニメーション終了処理
+    execute if score @s 9H.AnimationTick matches 250 run kill @e[type=item_display,tag=9H.Final.Display,distance=..100,limit=1]
+    execute if score @s 9H.AnimationTick matches 250 run function asset:mob/0341.louvert/tick/general/9.animation_end
+

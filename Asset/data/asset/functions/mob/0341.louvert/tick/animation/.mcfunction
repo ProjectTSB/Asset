@@ -7,6 +7,12 @@
 # 待機
     execute if score @s 9H.AnimationNum matches 11 run function asset:mob/0341.louvert/tick/animation/1_1_idle/
 
+# 怯み1
+    execute if score @s 9H.AnimationNum matches 21 run function asset:mob/0341.louvert/tick/animation/2_1_damaged/
+
+# 怯み2
+    execute if score @s 9H.AnimationNum matches 22 run function asset:mob/0341.louvert/tick/animation/2_2_damaged/
+
 # 広範囲斬撃開始
     execute if score @s 9H.AnimationNum matches 31 run function asset:mob/0341.louvert/tick/animation/3_1_slash_start/
 
@@ -39,6 +45,9 @@
 
 # 三連撃 終了
     execute if score @s 9H.AnimationNum matches 92 run function asset:mob/0341.louvert/tick/animation/9_2_triple_slash_slash/
+
+# カウンター
+    execute if score @s 9H.AnimationNum matches 101 run function asset:mob/0341.louvert/tick/animation/10_1_counter/
  
 # 火炎陣 発動
     execute if score @s 9H.AnimationNum matches 111 run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/

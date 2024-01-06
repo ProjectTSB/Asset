@@ -13,39 +13,20 @@
 # ソウルブラスト
     execute if score @s 9H.SkillSelect matches 3 run scoreboard players set @s 9H.AnimationNum 71
 
-# ボム
-    execute if score @s 9H.SkillSelect matches 4 run scoreboard players set @s 9H.AnimationNum 112
-
 # 広範囲斬撃
-    execute if score @s 9H.SkillSelect matches 5 run scoreboard players set @s 9H.AnimationNum 31
+    execute if score @s 9H.SkillSelect matches 4 run scoreboard players set @s 9H.AnimationNum 31
+
+# ボム
+    execute if score @s 9H.SkillSelect matches 5 run scoreboard players set @s 9H.AnimationNum 112
 
 # ブレードカッター
     execute if score @s 9H.SkillSelect matches 6 run scoreboard players set @s 9H.AnimationNum 51
 
-# 刺突落下
-    execute if score @s 9H.SkillSelect matches 7 run scoreboard players set @s 9H.AnimationNum 141
-
 # 三連撃
-    execute if score @s 9H.SkillSelect matches 8 run scoreboard players set @s 9H.AnimationNum 91
+    execute if score @s 9H.SkillSelect matches 7 run scoreboard players set @s 9H.AnimationNum 91
 
-# ラストスペル
-    execute if score @s 9H.SkillSelect matches 9 run scoreboard players set @s 9H.AnimationNum 151
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 刺突落下
+    execute if score @s 9H.SkillSelect matches 8 run scoreboard players set @s 9H.AnimationNum 141
 
 # アニメーションリセット
     scoreboard players set @s 9H.AnimationTick 0

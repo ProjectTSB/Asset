@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:louvert/zzzzzzzz/animations/15_1_final_spell/tree/leaf_0_as_bone
+function animated_java:louvert/zzzzzzzz/apply_variant/default/as_root

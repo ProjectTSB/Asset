@@ -18,9 +18,6 @@
             #declare tag 9H.Temp.Target
             #declare tag 9H.Landing
         # 防御系
-            #declare tag 9H.Guard.Normal
-            #declare tag 9H.Guard.NoGuard
-            #declare tag 9H.Guard.FullGuard
             #declare tag 9H.Guard.Counter
         # 他のMob
             #declare tag 9K.SoulBlast
@@ -32,7 +29,6 @@
             #declare tag 9H.SoulQuakeHard
         # ラストスペル
             #declare tag 9H.LastSpell
-
 
 #> val
 # @within function asset:mob/0341.louvert/**

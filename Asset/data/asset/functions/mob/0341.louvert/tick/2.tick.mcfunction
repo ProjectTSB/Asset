@@ -22,8 +22,8 @@
 # 紐づけ終了
     tag @e[type=item_display,tag=9H.Root.This,distance=..100] remove 9H.Root.This
 
-# タグ付け
-    tag @s add 9H.Temp.This
+# ハード専用ソウルボム設置
+    execute unless entity @s[tag=9H.LastSpell] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0341.louvert/tick/projectile/soul_bomb_hard/
 
 # 火炎陣Tick処理
     execute as @e[type=item_display,tag=9H.FireMagic,distance=..100] at @s run function asset:mob/0341.louvert/tick/projectile/fire_magic/1.tick
@@ -39,9 +39,6 @@
 
 # ソウルクエイクTick処理
     execute as @e[type=marker,tag=9H.SoulQuakeHard,distance=..100] at @s run function asset:mob/0341.louvert/tick/projectile/soul_quake_hard/1.tick
-
-# タグ外し
-    tag @s remove 9H.Temp.This
 
 # ラストスペル中プレイヤーを引き寄せる
     execute if entity @s[tag=9H.LastSpell] at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] as @a[distance=12..15] at @s facing entity @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100,limit=1] eyes run tp @s ^ ^ ^0.4

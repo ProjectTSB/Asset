@@ -4,16 +4,15 @@
 #
 # @within function asset:mob/0341.louvert/death/1.trigger
 
-## デバッグ処理
-    # AnimatedJavaモデルの削除
-        function animated_java:louvert/remove/all
-    # Marker削除
-        kill @e[type=marker,tag=9H.Marker.SummonPoint]
-        kill @e[type=item_display,tag=9H.Final.Display]
-        kill @e[type=item_display,tag=9H.Final.Display.Bullet]
-        kill @e[type=item_display,tag=9H.FireMagic]
-        kill @e[type=marker,tag=9H.Meteor]
-        kill @e[type=item_display,tag=9H.Meteor.Display]
-        kill @e[type=item_display,tag=9H.Bullet]
-        kill @e[type=marker,tag=9H.SoulQuake]
-        kill @e[type=marker,tag=9H.SoulQuakeHard]
+# キル処理
+    kill @e[type=item_display,tag=9H.Final.Display]
+    kill @e[type=item_display,tag=9H.Final.Display.Bullet]
+    kill @e[type=item_display,tag=9H.FireMagic]
+    kill @e[type=marker,tag=9H.Meteor]
+    kill @e[type=item_display,tag=9H.Meteor.Display]
+    kill @e[type=item_display,tag=9H.Bullet]
+    kill @e[type=marker,tag=9H.SoulQuake]
+    kill @e[type=marker,tag=9H.SoulQuakeHard]
+
+# スケジュール起動
+    schedule function asset:mob/0341.louvert/death/2.1.schedule 1t

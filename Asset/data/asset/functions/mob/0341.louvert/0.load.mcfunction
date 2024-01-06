@@ -16,3 +16,9 @@
         # どのスキルが実行されているかを記録するスコア
     scoreboard objectives add 9H.ProjectileTick dummy
         # 弾幕用Tick
+    scoreboard objectives add 9H.HPPer dummy
+        # HPの割合を取得するためのもの
+    scoreboard objectives add 9H.FalterCount dummy
+        # 怯みカウント
+    scoreboard objectives add 9H.SoulBombHard dummy
+        # ハード専用ソウルボム設置

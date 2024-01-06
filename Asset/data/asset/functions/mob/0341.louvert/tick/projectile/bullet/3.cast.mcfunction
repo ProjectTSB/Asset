@@ -17,7 +17,7 @@
     # デスログ
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの弾幕をその身に受けて意識を失ってしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    execute as @e[tag=9H.Temp.This,distance=..100] run function lib:damage/modifier
+    execute as @e[tag=this,distance=..100] run function lib:damage/modifier
 
 # タグ付け
     tag @s add 9H.Landing

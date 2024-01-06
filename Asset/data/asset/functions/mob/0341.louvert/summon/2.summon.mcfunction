@@ -15,8 +15,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ルヴェルト"}'
 # 体力 (double) (オプション) 
-# ルヴェルトにはほぼ常に耐性が付与されるため少なめに設定
-    data modify storage asset:mob Health set value 40000
+# 強耐性のため体力は低め
+    data modify storage asset:mob Health set value 55000
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value 0
 # ノックバック耐性 (double) (オプション)
