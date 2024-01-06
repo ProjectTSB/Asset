@@ -8,4 +8,4 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
-    execute if predicate world_manager:area/02.islands unless block ~ ~ ~ lava if predicate lib:random_pass_per/40 run summon potion ~ ~1 ~ {Silent:1b,Item:{id:"minecraft:stick",Count:1b,tag:{Potion:"minecraft:water",CustomModelData:1037}}}
+    execute if predicate world_manager:area/02.islands unless block ~ ~ ~ lava unless block ~ ~1 ~ lava if predicate lib:random_pass_per/40 run summon potion ~ ~1 ~ {Silent:1b,Item:{id:"minecraft:stick",Count:1b,tag:{Potion:"minecraft:water",CustomModelData:1037}}}
