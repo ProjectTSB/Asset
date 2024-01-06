@@ -19,13 +19,13 @@
     scoreboard players operation $P2.Count Temporary *= $5 Const
     scoreboard players add $P2.Count Temporary 10
 
-# 最大体力 × {(個数 - 1) × 0.5 + 1 } × 1.5
+# 与えるダメージ = 最大体力 × {(個数 - 1) × 0.5 + 1 } × 2
     execute store result score $P2.MaxHP Temporary run attribute @s minecraft:generic.max_health get 2
     scoreboard players operation $P2.MaxHP Temporary *= $P2.Count Temporary
     scoreboard players operation $P2.MaxHP Temporary /= $10 Const
 
 # ダメージ
-    # 与えるダメージ (最大体力×1.5)
+    # 与えるダメージ
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $P2.MaxHP Temporary
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
@@ -37,7 +37,7 @@
 
 # VFX
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle flame ~ ~1.2 ~ 0.3 0.3 0.3 0.05 30 normal @a[distance=..16]
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle dust 100000000 1 100000000 1 ~ ~1.5 ~ 0.5 0.5 0.5 0 50
+    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle dust 100000000 1 100000000 1 ~ ~1.5 ~ 0.5 0.5 0.5 0 50 normal @a[distance=..16]
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound entity.blaze.shoot player @a[distance=..16] ~ ~ ~ 1 1.2 0
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound block.beacon.activate player @a[distance=..16] ~ ~ ~ 0.8 2 0
 
