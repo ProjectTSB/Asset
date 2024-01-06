@@ -5,7 +5,8 @@
 # @within function asset:mob/0339.twins_sapphiel/summon/1.trigger
 
 # rootからの召喚以外は無効にする
-
+    execute unless entity @s[type=slime,tag=9E.Root] run tellraw @a [{"text":"【0339.twins_sapphielは0338.corundum_twinsの処理でのみ召喚できます】","color":"white"}]
+    execute unless entity @s[type=slime,tag=9E.Root] run return -1
 
 # 元となるMobを召喚する
     summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","9F.Root"],DeathLootTable:"asset:mob/death/0339.twins_sapphiel",PersistenceRequired:1b,Silent:1b,NoAI:1b,NoGravity:1b}
