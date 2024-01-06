@@ -16,3 +16,6 @@
 
 # 登場演出再生
     tag @s add 9G.Skill.Start
+
+# 移動
+    execute at @s run tp @s ~ ~-100 ~

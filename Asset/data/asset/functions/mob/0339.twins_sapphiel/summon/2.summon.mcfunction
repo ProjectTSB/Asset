@@ -63,9 +63,9 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 
 # animated javaモデル召喚
-    execute positioned ~ ~100 ~ rotated ~ 0 run function animated_java:twins_sapphiel/summon
+    execute positioned ~ ~0 ~ rotated ~ 0 run function animated_java:twins_sapphiel/summon
 # Mob独自のInit処理実行
     execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/0339.twins_sapphiel/summon/app/1.init
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+    execute positioned ~ ~-100 ~ as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
