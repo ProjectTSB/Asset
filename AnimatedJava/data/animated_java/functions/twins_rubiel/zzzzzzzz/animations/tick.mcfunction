@@ -1,3 +1,4 @@
+execute if entity @s[tag=aj.twins_rubiel.animation.0_0_start] run function animated_java:twins_rubiel/zzzzzzzz/animations/0_0_start/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.2_0_0_idle_katana_normal] run function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_0_idle_katana_normal/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.2_0_1_idle_katana_fun] run function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_1_idle_katana_fun/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.2_0_2_idle_katana_angry] run function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_2_idle_katana_angry/tick

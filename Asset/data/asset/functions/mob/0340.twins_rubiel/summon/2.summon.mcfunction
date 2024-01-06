@@ -63,7 +63,7 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 
 # animated javaモデル召喚
-    execute rotated ~ 0 run function animated_java:twins_rubiel/summon
+    execute positioned ~ ~100 ~ rotated ~ 0 run function animated_java:twins_rubiel/summon
 # Mob独自のInit処理実行
     execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/0340.twins_rubiel/summon/app/1.init
     

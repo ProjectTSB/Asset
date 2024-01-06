@@ -21,4 +21,5 @@
     #declare tag 9F.State.Weapon.Hg ハンドガン所持
 
 # スキル
+    #declare tag 9F.Skill.Start 登場
     #declare tag 9F.Skill.Hg.Idle ハンドガン待機

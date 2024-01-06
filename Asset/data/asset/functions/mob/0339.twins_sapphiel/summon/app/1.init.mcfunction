@@ -14,8 +14,5 @@
 # 初期化開始
     tag @s add 9F.Init
 
-# TODO:登場演出再生
-    tag @s add 9F.Skill.Hg.Idle
-
-# 待機開始 - 登場演出が完成したら、ここではなく登場演出のendに移行させる
-    tag @s add 9F.State.Await
+# 登場演出再生
+    tag @s add 9F.Skill.Start

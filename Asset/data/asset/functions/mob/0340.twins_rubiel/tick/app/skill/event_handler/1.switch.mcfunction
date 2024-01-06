@@ -8,7 +8,7 @@
 ## 汎用
 
 ## 登場演出
-    # execute if entity @s[tag=8T.Skill.Rod.Start] run function
+    execute if entity @s[tag=9G.Skill.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/000_start/1.main
 
 ## 武器持ち替え
     ## 刀

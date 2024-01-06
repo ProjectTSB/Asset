@@ -1,3 +1,4 @@
+function animated_java:twins_rubiel/zzzzzzzz/animations/0_0_start/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_0_idle_katana_normal/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_1_idle_katana_fun/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_2_idle_katana_angry/pause_as_root

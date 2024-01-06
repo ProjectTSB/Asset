@@ -15,6 +15,8 @@ execute if score #variant aj.i = $aj.twins_rubiel.variant.stun aj.id run functio
 execute if score #variant aj.i = $aj.twins_rubiel.variant.surprise aj.id run function animated_java:twins_rubiel/zzzzzzzz/apply_variant/surprise/as_root
 execute if score #variant aj.i = $aj.twins_rubiel.variant.wink aj.id run function animated_java:twins_rubiel/zzzzzzzz/apply_variant/wink/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.0_0_start aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/0_0_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.0_0_start aj.id run scoreboard players operation @s aj.twins_rubiel.animation.0_0_start.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.2_0_0_idle_katana_normal aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_0_idle_katana_normal/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.2_0_0_idle_katana_normal aj.id run scoreboard players operation @s aj.twins_rubiel.animation.2_0_0_idle_katana_normal.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.2_0_1_idle_katana_fun aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_1_idle_katana_fun/apply_frame_as_root

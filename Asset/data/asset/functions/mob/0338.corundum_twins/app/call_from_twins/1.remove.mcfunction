@@ -9,13 +9,7 @@
 #    function asset:mob/0340.twins_rubiel/remove/2.remove
 
 # 自身を消去
-    # Deathトリガー防止
-        data modify entity @s DeathLootTable set value "empty"
-    # さよなら～
-        tp @s ~ -300 ~
-        kill @s
+    kill @s
 
 # 独自remove処理に移譲
     function asset:mob/0338.corundum_twins/remove/app/1.remove
-
-say remove

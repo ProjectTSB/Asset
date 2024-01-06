@@ -1,3 +1,4 @@
+execute if entity @s[tag=aj.twins_sapphiel.animation.0_0_start] run function animated_java:twins_sapphiel/zzzzzzzz/animations/0_0_start/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.2_0_hg_idle] run function animated_java:twins_sapphiel/zzzzzzzz/animations/2_0_hg_idle/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.3_0_hg_shot_0] run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_0_hg_shot_0/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.3_1_hg_shot_move_right] run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_right/tick

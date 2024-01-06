@@ -1,3 +1,4 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/0_0_start/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/2_0_hg_idle/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/3_0_hg_shot_0/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_right/pause_as_root

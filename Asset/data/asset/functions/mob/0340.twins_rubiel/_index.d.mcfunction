@@ -20,4 +20,5 @@
     #declare tag 9G.State.Weapon.Kt 刀所持
 
 # スキル
+    #declare tag 9G.Skill.Start 登場
     #declare tag 9G.Skill.Kt.Idle 刀待機

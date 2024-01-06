@@ -11,6 +11,8 @@ execute if score #variant aj.i = $aj.twins_sapphiel.variant.default aj.id run fu
 execute if score #variant aj.i = $aj.twins_sapphiel.variant.blink aj.id run function animated_java:twins_sapphiel/zzzzzzzz/apply_variant/blink/as_root
 execute if score #variant aj.i = $aj.twins_sapphiel.variant.stun aj.id run function animated_java:twins_sapphiel/zzzzzzzz/apply_variant/stun/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.0_0_start aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/0_0_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.0_0_start aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.0_0_start.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.2_0_hg_idle aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/2_0_hg_idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.2_0_hg_idle aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.2_0_hg_idle.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.3_0_hg_shot_0 aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_0_hg_shot_0/apply_frame_as_root
