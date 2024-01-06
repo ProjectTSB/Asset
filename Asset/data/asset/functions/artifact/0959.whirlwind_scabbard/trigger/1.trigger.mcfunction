@@ -5,4 +5,4 @@
 # @within tag/function asset:artifact/**
 
 # storage asset:idの%slot%に装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
-    execute if data storage asset:context id{hotbar:[959]} run function asset:artifact/0959.whirlwind_scabbard/trigger/2.check_condition
+    execute if data storage asset:context id{offhand:959} run function asset:artifact/0959.whirlwind_scabbard/trigger/2.check_condition

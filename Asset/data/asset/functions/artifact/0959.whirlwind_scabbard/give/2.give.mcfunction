@@ -15,13 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"旋風の鞘","color":"#7DFF9B"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"刀ではなく旋風を収めている鞘","color":"#B0FFC5"}','{"text":"その旋風を抜いた時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}','{"text":"多く携えるほど旋風は勢いを増す。","color":"#B0FFC5"}']
+    data modify storage asset:artifact Lore set value ['{"text":"刀を抜くと旋風を纏わせる鞘","color":"#B0FFC5"}','{"text":"攻撃時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "hotbar"
+    data modify storage asset:artifact Slot set value "offhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
