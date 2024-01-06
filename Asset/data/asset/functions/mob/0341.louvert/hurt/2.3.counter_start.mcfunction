@@ -15,4 +15,3 @@
 
 # カウンターをしたという印
     tag @s add 9H.Guard.Counter
-    tag @s add 9H.Guard.Countered
