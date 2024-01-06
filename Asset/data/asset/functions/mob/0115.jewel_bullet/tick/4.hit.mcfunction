@@ -1,8 +1,8 @@
-#> asset:mob/0115.jewel_bullet/tick/3.damage
+#> asset:mob/0115.jewel_bullet/tick/4.hit
 #
 #
 #
-# @within function asset:mob/0115.jewel_bullet/tick/2.tick
+# @within function asset:mob/0115.jewel_bullet/tick/3.recursive
 
 # ダメージ
     data modify storage lib: Argument.Damage set value 3.0f

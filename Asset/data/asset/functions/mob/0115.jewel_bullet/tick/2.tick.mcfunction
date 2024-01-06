@@ -11,12 +11,11 @@
     particle minecraft:dust 8 1 8 1.5 ~ ~1.2 ~ 0.25 0.25 0.25 1 3 normal @a
     playsound minecraft:block.amethyst_cluster.step hostile @a ~ ~ ~ 0.4 1 0
 
-# プレイヤーへのダメージ
-    execute positioned ~-0.5 ~ ~-0.5 if entity @p[gamemode=!spectator,dx=0] run function asset:mob/0115.jewel_bullet/tick/3.damage
+# 移動とヒット処理
+    function asset:mob/0115.jewel_bullet/tick/3.recursive
 
-# 移動
-    execute if predicate api:global_vars/difficulty/max/normal run tp @s ^ ^ ^0.8
-    execute if predicate api:global_vars/difficulty/min/hard run tp @s ^ ^ ^1.5
+# 再帰用スコアのリセット
+    scoreboard players reset $RecursiveCount Temporary
 
 # 消滅
     execute if score @s 36.Tick matches 32.. run kill @s
