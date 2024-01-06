@@ -17,5 +17,5 @@
 # 移動
     tp @s ^ ^ ^0.8
 
-# スコアが32以上でkill
+# 消滅
     execute if score @s 36.Tick matches 32.. run kill @s
