@@ -18,4 +18,4 @@
     scoreboard players reset $RecursiveCount Temporary
 
 # 消滅
-    execute if score @s 36.Tick matches 32.. run kill @s
+    execute if entity @s[scores={36.Tick=32..}] run kill @s
