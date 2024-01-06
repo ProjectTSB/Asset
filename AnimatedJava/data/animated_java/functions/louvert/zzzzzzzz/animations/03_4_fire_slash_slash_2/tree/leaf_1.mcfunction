@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:louvert/zzzzzzzz/animations/03_4_fire_slash_slash_2/tree/leaf_1_as_bone

@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..30 run function animated_java:louvert/zzzzzzzz/animations/10_2_counter/tree/branch_0_30

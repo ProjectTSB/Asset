@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..13 run function animated_java:louvert/zzzzzzzz/animations/03_6_fire_slash_slash_3/tree/branch_0_13

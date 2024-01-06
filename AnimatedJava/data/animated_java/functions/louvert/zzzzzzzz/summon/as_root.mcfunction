@@ -20,14 +20,6 @@ execute if score #animation aj.i = $aj.louvert.animation.03_1_fire_slash_charge_
 execute if score #animation aj.i = $aj.louvert.animation.03_1_fire_slash_charge_1 aj.id run scoreboard players operation @s aj.louvert.animation.03_1_fire_slash_charge_1.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.03_2_fire_slash_slash_1 aj.id run function animated_java:louvert/zzzzzzzz/animations/03_2_fire_slash_slash_1/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.03_2_fire_slash_slash_1 aj.id run scoreboard players operation @s aj.louvert.animation.03_2_fire_slash_slash_1.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.03_3_fire_slash_charge_2 aj.id run function animated_java:louvert/zzzzzzzz/animations/03_3_fire_slash_charge_2/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.03_3_fire_slash_charge_2 aj.id run scoreboard players operation @s aj.louvert.animation.03_3_fire_slash_charge_2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.03_4_fire_slash_slash_2 aj.id run function animated_java:louvert/zzzzzzzz/animations/03_4_fire_slash_slash_2/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.03_4_fire_slash_slash_2 aj.id run scoreboard players operation @s aj.louvert.animation.03_4_fire_slash_slash_2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.03_5_fire_slash_charge_3 aj.id run function animated_java:louvert/zzzzzzzz/animations/03_5_fire_slash_charge_3/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.03_5_fire_slash_charge_3 aj.id run scoreboard players operation @s aj.louvert.animation.03_5_fire_slash_charge_3.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.03_6_fire_slash_slash_3 aj.id run function animated_java:louvert/zzzzzzzz/animations/03_6_fire_slash_slash_3/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.03_6_fire_slash_slash_3 aj.id run scoreboard players operation @s aj.louvert.animation.03_6_fire_slash_slash_3.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.04_1_flame_magic_cast aj.id run function animated_java:louvert/zzzzzzzz/animations/04_1_flame_magic_cast/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.04_1_flame_magic_cast aj.id run scoreboard players operation @s aj.louvert.animation.04_1_flame_magic_cast.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.05_1_blade_cutter aj.id run function animated_java:louvert/zzzzzzzz/animations/05_1_blade_cutter/apply_frame_as_root
@@ -40,8 +32,6 @@ execute if score #animation aj.i = $aj.louvert.animation.06_3_move_stop aj.id ru
 execute if score #animation aj.i = $aj.louvert.animation.06_3_move_stop aj.id run scoreboard players operation @s aj.louvert.animation.06_3_move_stop.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.06_4_move_attack aj.id run function animated_java:louvert/zzzzzzzz/animations/06_4_move_attack/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.06_4_move_attack aj.id run scoreboard players operation @s aj.louvert.animation.06_4_move_attack.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.06_5_move_slash aj.id run function animated_java:louvert/zzzzzzzz/animations/06_5_move_slash/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.06_5_move_slash aj.id run scoreboard players operation @s aj.louvert.animation.06_5_move_slash.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.07_1_soul_magic_cast aj.id run function animated_java:louvert/zzzzzzzz/animations/07_1_soul_magic_cast/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.07_1_soul_magic_cast aj.id run scoreboard players operation @s aj.louvert.animation.07_1_soul_magic_cast.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.09_1_triple_slash_start aj.id run function animated_java:louvert/zzzzzzzz/animations/09_1_triple_slash_start/apply_frame_as_root
@@ -50,8 +40,6 @@ execute if score #animation aj.i = $aj.louvert.animation.09_2_triple_slash_slash
 execute if score #animation aj.i = $aj.louvert.animation.09_2_triple_slash_slash aj.id run scoreboard players operation @s aj.louvert.animation.09_2_triple_slash_slash.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.10_1_counter aj.id run function animated_java:louvert/zzzzzzzz/animations/10_1_counter/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.10_1_counter aj.id run scoreboard players operation @s aj.louvert.animation.10_1_counter.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.louvert.animation.10_2_counter aj.id run function animated_java:louvert/zzzzzzzz/animations/10_2_counter/apply_frame_as_root
-execute if score #animation aj.i = $aj.louvert.animation.10_2_counter aj.id run scoreboard players operation @s aj.louvert.animation.10_2_counter.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.11_1_cast_magic aj.id run function animated_java:louvert/zzzzzzzz/animations/11_1_cast_magic/apply_frame_as_root
 execute if score #animation aj.i = $aj.louvert.animation.11_1_cast_magic aj.id run scoreboard players operation @s aj.louvert.animation.11_1_cast_magic.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.louvert.animation.12_1_opening aj.id run function animated_java:louvert/zzzzzzzz/animations/12_1_opening/apply_frame_as_root
