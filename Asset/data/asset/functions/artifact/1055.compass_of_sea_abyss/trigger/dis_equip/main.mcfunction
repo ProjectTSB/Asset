@@ -4,19 +4,15 @@
 #
 # @within function asset:artifact/1055.compass_of_sea_abyss/trigger/dis_equip/
 
-# 重複防止Tagを削除
-    tag @s remove TB.Modifier
+#> prv
+# @private
+    #declare score_holder $TB.ItemCount
 
-# 物理攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    function api:modifier/attack/physical/remove
+# まだ持ってるか確認する
+    execute store result score $TB.ItemCount Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1055}}}]
 
-# 水攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    function api:modifier/attack/water/remove
+# なければ削除
+    execute if score $TB.ItemCount Temporary matches ..0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/dis_equip/remove_modifier
 
-# 最大体力
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-041f00000001
-
-# ノクバ耐性
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-041f00000001
+# リセット
+    scoreboard players reset $TB.ItemCount Temporary
