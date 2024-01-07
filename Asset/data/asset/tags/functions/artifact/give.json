@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1060.great_demon_boots/give/1.trigger",
+        "asset:artifact/1059.great_demon_leg/give/1.trigger",
+        "asset:artifact/1058.great_demon_chest/give/1.trigger",
+        "asset:artifact/1057.great_demon_head/give/1.trigger",
         "asset:artifact/0900.pure_water_bracelet/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",
