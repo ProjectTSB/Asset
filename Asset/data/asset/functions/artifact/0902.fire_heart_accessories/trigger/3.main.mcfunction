@@ -29,7 +29,7 @@
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $P2.MaxHP Temporary
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
-    # 炎属性
+    # 火属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
         function lib:damage/modifier

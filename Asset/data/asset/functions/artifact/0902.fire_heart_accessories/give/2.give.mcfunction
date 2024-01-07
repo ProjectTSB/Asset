@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"心炎のアクセサリー","color":"#FF87BB"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"近接攻撃をした対象に追加で炎魔法ダメージを与える"}','{"text":"最大体力が多ければ多いほど"}','{"text":"与えるダメージが増える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"近接攻撃をした対象に追加で火魔法ダメージを与える"}','{"text":"最大体力が多ければ多いほど"}','{"text":"与えるダメージが増える"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value 
 # 使用回数 (int) (オプション)
