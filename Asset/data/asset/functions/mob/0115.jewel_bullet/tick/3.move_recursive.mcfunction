@@ -20,4 +20,4 @@
     scoreboard players add $RecursiveCount Temporary 1
 
 # 4回まで再帰
-    execute if score $RecursiveCount Temporary matches ..4 at @s run function asset:mob/0115.jewel_bullet/tick/3.recursive
+    execute if score $RecursiveCount Temporary matches ..4 at @s run function asset:mob/0115.jewel_bullet/tick/3.move_recursive

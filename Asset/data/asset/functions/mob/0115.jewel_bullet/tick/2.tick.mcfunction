@@ -12,7 +12,7 @@
     playsound minecraft:block.amethyst_cluster.step hostile @a ~ ~ ~ 0.4 1 0
 
 # 移動とヒット処理
-    function asset:mob/0115.jewel_bullet/tick/3.recursive
+    function asset:mob/0115.jewel_bullet/tick/3.move_recursive
 
 # 再帰用スコアのリセット
     scoreboard players reset $RecursiveCount Temporary
