@@ -12,3 +12,4 @@
 
 # カウンター
     scoreboard objectives add 9F.ActionCount dummy
+    scoreboard objectives add 9F.BulletCount.Hg dummy

@@ -1,8 +1,8 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/000_start/2.end
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/2.end
 #
 # アニメーションのイベントハンドラ Hg待機
 #
-# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/000_start/1.main
+# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/1.main
 
 # スキル判別用タグ消去
     tag @s remove 9F.Skill.Start

@@ -16,6 +16,12 @@
     #declare tag 9F.ModelRoot 見た目用animated_javaモデル
     #declare tag 9F.ModelRoot.Target 紐づけ対象の見た目用animated_javaモデル
 
+# 一時
+    #declare tag 9F.Temp.This 自身に付与する
+    #declare tag 9F.Temp.Target.Attack 攻撃対象
+    #declare tag 9F.Temp.Target.Aec.0 攻撃地点決定に使用する
+    #declare tag 9F.Temp.Target.Aec.1 攻撃地点決定に使用する
+
 # 状態
     #declare tag 9F.State.Await Rootからの指示待ち
     #declare tag 9F.State.Weapon.Hg ハンドガン所持
@@ -23,3 +29,4 @@
 # スキル
     #declare tag 9F.Skill.Start 登場
     #declare tag 9F.Skill.Hg.Idle ハンドガン待機
+    #declare tag 9F.Skill.Hg.Shot ハンドガン射撃
