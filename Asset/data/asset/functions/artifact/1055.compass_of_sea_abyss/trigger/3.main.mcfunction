@@ -33,4 +33,4 @@
     attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.25 multiply_base
 
 # ノクバ耐性+3
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 multiply_base
+    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 add
