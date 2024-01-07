@@ -18,13 +18,13 @@
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.8 0.5
 
 # 物理攻撃+15％
-    data modify storage api: Argument.UUID set value [I;1,1,915,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
 # 水攻撃+15％
-    data modify storage api: Argument.UUID set value [I;1,1,915,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add

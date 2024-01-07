@@ -8,11 +8,11 @@
     tag @s remove TB.Modifier
 
 # 物理攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,915,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
     function api:modifier/attack/physical/remove
 
 # 水攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,915,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
     function api:modifier/attack/water/remove
 
 # 最大体力
