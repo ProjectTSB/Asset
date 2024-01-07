@@ -1,6 +1,6 @@
-#> asset:mob/0339.twins_sapphiel/app/attack/1.shot
+#> asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
 #
-# 射撃の処理
+# 射撃の処理、連続射撃用のやや威力が弱いバージョン
 #
 # @within
 #    function asset:mob/0339.twins_sapphiel/**
@@ -21,7 +21,7 @@
 
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 42f
+        data modify storage lib: Argument.Damage set value 32f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性

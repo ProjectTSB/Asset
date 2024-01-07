@@ -1,23 +1,12 @@
-#> asset:mob/0339.twins_sapphiel/app/attack/1.shot
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/5.damage
 #
-# 射撃の処理
+# アニメーションのイベントハンドラ Hgライダーキック ダメージ判定
 #
 # @within
 #    function asset:mob/0339.twins_sapphiel/**
 
-# 演出
-    playsound entity.firework_rocket.blast hostile @a ~ ~ ~ 2 0.5
-    playsound entity.firework_rocket.blast hostile @a ~ ~ ~ 2 0.7
-    particle block gold_block ^ ^ ^-0.8 0 0 0 1 1
-    particle electric_spark ~ ~ ~ 0 0 0 0.2 5
-
-# 射撃
-    scoreboard players set @s Temporary 40
-    function asset:mob/0339.twins_sapphiel/app/attack/2.shot_attack
-    scoreboard players reset @s Temporary
-
-# 弾数消費
-    scoreboard players add @s 9F.BulletCount.Hg 1
+# ヒット判定
+    tag @a[distance=..2] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20
@@ -32,6 +21,9 @@
     execute as @a[tag=9F.Temp.Target.Attack] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
+
+# 与ダメージクールダウン設定
+    execute if entity @a[tag=9F.Temp.Target.Attack] run scoreboard players set @s 9F.DamageCooldown 5
 
 # 終了
     tag @a[tag=9F.Temp.Target.Attack] remove 9F.Temp.Target.Attack

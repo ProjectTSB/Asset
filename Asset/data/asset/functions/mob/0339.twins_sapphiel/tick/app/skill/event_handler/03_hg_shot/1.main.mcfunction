@@ -21,5 +21,8 @@
     execute if score @s 9F.AnimationTimer matches 21 positioned ^-0.5 ^1 ^0.3 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
     execute if score @s 9F.AnimationTimer matches 26 positioned ^ ^1 ^0.8 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
 
+# 遷移
+    execute if score @s 9F.AnimationTimer matches 40 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/4.change_to_moveshot
+
 # 終了
     execute if score @s 9F.AnimationTimer matches 61.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/2.end

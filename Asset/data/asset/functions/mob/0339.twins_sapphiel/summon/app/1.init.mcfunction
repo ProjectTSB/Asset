@@ -13,6 +13,7 @@
 # スコア初期化
     scoreboard players set @s 9F.AnimationTimer 0
     scoreboard players set @s 9F.ActionCount 0
+    scoreboard players set @s 9F.DamageCooldown 0
 
 # 初期化開始
     tag @s add 9F.Init

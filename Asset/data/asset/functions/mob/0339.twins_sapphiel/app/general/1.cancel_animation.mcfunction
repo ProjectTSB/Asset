@@ -18,5 +18,8 @@
     tag @s remove 9F.Skill.Start
     tag @s remove 9F.Skill.Hg.Idle
     tag @s remove 9F.Skill.Hg.Shot
+    tag @s remove 9F.Skill.Hg.Shot.MoveRight
+    tag @s remove 9F.Skill.Hg.Shot.MoveLeft
 
+# 終了
     tag @e[type=item_display,tag=9F.ModelRoot.Target] remove 9F.ModelRoot.Target

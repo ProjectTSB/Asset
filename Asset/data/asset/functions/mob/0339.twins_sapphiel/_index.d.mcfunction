@@ -28,5 +28,9 @@
 
 # スキル
     #declare tag 9F.Skill.Start 登場
-    #declare tag 9F.Skill.Hg.Idle ハンドガン待機
-    #declare tag 9F.Skill.Hg.Shot ハンドガン射撃
+    #declare tag 9F.Skill.Hg.Idle 待機
+    #declare tag 9F.Skill.Hg.Shot 射撃
+    #declare tag 9F.Skill.Hg.Shot.MoveRight 側転射撃・右
+    #declare tag 9F.Skill.Hg.Shot.MoveLeft 側転射撃・左
+    #declare tag 9F.Skill.Hg.BackShot 引き撃ち
+    #declare tag 9F.Skill.Hg.Riderkick ライダーキック

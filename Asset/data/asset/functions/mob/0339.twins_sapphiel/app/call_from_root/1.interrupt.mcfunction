@@ -9,4 +9,5 @@
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation
 
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
-    tag @s add 9F.Skill.Hg.Shot
+    tag @s add 9F.Skill.Hg.Riderkick
+    # tp @s 179.8 211 18.5
