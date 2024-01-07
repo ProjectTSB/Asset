@@ -1,11 +1,12 @@
-#> asset:mob/0115.jewel_bullet/tick/3.damage
+#> asset:mob/0115.jewel_bullet/tick/4.hit
 #
 #
 #
-# @within function asset:mob/0115.jewel_bullet/tick/2.tick
+# @within function asset:mob/0115.jewel_bullet/tick/3.move_recursive
 
 # ダメージ
     data modify storage lib: Argument.Damage set value 3.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 10.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
     data modify storage lib: Argument.FixedDamage set value 1b
