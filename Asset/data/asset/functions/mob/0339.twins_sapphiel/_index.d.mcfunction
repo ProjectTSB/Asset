@@ -34,3 +34,4 @@
     #declare tag 9F.Skill.Hg.Shot.MoveLeft 側転射撃・左
     #declare tag 9F.Skill.Hg.BackShot 引き撃ち
     #declare tag 9F.Skill.Hg.Riderkick ライダーキック
+    #declare tag 9F.Skill.Hg.Spinkick 回し蹴り

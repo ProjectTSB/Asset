@@ -31,3 +31,5 @@
 
 ## ライダーキック
     execute if entity @s[tag=9F.Skill.Hg.Riderkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/1.main
+    ## 回し蹴り
+        execute if entity @s[tag=9F.Skill.Hg.Spinkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_1_hg_spinkick/1.main

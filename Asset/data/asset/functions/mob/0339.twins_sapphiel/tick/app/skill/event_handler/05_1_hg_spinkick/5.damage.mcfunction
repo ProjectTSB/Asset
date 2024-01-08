@@ -1,16 +1,16 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/5.damage
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_1_hg_spinkick/5.damage
 #
-# アニメーションのイベントハンドラ Hgライダーキック ダメージ判定
+# アニメーションのイベントハンドラ Hg回し蹴り ダメージ判定
 #
 # @within
 #    function asset:mob/0339.twins_sapphiel/**
 
 # ヒット判定
-    tag @a[distance=..2] add 9F.Temp.Target.Attack
+    tag @a[distance=..2.8] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 42f
+        data modify storage lib: Argument.Damage set value 45f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
@@ -22,10 +22,8 @@
 # リセット
     function lib:damage/reset
 
-# 与ダメージクールダウン設定
-    execute if entity @a[tag=9F.Temp.Target.Attack] run scoreboard players set @s 9F.DamageCooldown 5
-
 # 演出
+    execute at @a[tag=9F.Temp.Target.Attack] positioned ~ ~1 ~ run particle explosion ~ ~ ~ 0.1 0.2 0.1 0 1
     execute if entity @a[tag=9F.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback2 hostile @a ~ ~ ~ 2 0.8
 
 # 終了

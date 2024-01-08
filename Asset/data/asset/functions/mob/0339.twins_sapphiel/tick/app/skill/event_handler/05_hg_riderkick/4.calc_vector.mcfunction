@@ -6,6 +6,7 @@
 
 
 # 着地点
+    execute as @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=nearest,limit=1] at @s align y run function asset:mob/0339.twins_sapphiel/app/general/6.teleport_to_land
     data modify storage asset:temp 9F.Pos set from entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=nearest,limit=1] Pos
     execute store result score @s 9F.MoveVector.X run data get storage asset:temp 9F.Pos[0] 1000
     execute store result score @s 9F.MoveVector.Y run data get storage asset:temp 9F.Pos[1] 1000
