@@ -17,20 +17,20 @@
     playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.8 0.8 0
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.8 0.5
 
-# 物理攻撃+15％
+# 物理攻撃+10％
     data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
-# 水攻撃+15％
+# 水攻撃+10％
     data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 最大体力-25％
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.25 multiply_base
+# 最大体力-20％
+    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.2 multiply_base
 
 # ノクバ耐性+3
     attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 add

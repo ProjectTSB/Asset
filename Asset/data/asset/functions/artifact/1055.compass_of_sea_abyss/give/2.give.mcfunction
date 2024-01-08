@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"海淵の羅針盤","color":"#1050B0"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+15% ","color":"dark_green"},{"text":"水攻撃+15% ","color":"aqua"}]','[{"text":"ノックバック耐性+3 ","color":"white"},{"text":"最大体力-25%","color":"dark_red"}]','{"text":"遥か海底の彼方を指す羅針盤。","color":"gray"}','{"text":"その針は光無き深淵を指し示す。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+10% ","color":"dark_green"},{"text":"水攻撃+10% ","color":"aqua"}]','[{"text":"ノックバック耐性+3 ","color":"white"},{"text":"最大体力-20%","color":"dark_red"}]','{"text":"遥か海底の彼方を指す羅針盤。","color":"gray"}','{"text":"その針は光無き深淵を指し示す。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
