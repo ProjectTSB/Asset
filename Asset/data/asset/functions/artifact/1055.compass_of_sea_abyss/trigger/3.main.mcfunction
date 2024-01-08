@@ -29,8 +29,8 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 最大体力-15％
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.15 multiply_base
+# 最大体力-20％
+    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.2 multiply_base
 
 # ノクバ耐性+3
     attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 add
