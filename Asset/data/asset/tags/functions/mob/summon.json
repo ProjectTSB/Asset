@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0352.down_dummy/summon/1.trigger",
         "asset:mob/0340.twins_rubiel/summon/1.trigger",
         "asset:mob/0339.twins_sapphiel/summon/1.trigger",
         "asset:mob/0338.corundum_twins/summon/1.trigger",

@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0352.down_dummy/tick/1.trigger",
         "asset:mob/0340.twins_rubiel/tick/1.trigger",
         "asset:mob/0339.twins_sapphiel/tick/1.trigger",
         "asset:mob/0338.corundum_twins/tick/1.trigger",
