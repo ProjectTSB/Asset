@@ -17,7 +17,7 @@
 
 # スコアセット
     scoreboard players operation $GU.OwnerId Temporary = @s UserID 
-    execute as @e[type=snowball,tag=GU.Sign.Init,distance=..0.01,limit=1] on passengers run scoreboard players operation @s GU.OwnerID = $GU.OwnerId Temporary
+    execute as @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] run scoreboard players operation @s GU.OwnerID = $GU.OwnerId Temporary
     execute as @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] run scoreboard players set @s GU.Count 0
 
 # スケジュール起動

@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0606.traffic_sign/trigger/4.1.schedule_tick
 
-# 使用者取得
-    scoreboard players operation $GU.OwnerId Temporary = @s GU.OwnerID
-    execute as @a if score @s UserID = $GU.OwnerId Temporary run tag @s add GU.Owner
-
 # 速度を取得
     execute store result score $GU.Temp Temporary run attribute @s generic.movement_speed get 100
     scoreboard players operation $GU.Temp Temporary -= $100 Const

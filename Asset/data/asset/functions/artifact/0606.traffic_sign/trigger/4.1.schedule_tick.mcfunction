@@ -48,6 +48,10 @@
     particle electric_spark ^-1.531 ^0.10 ^3.696 0.0 0.0 0.0 0 1 normal
     particle electric_spark ^-0.78 ^0.10 ^3.923 0.0 0.0 0.0 0 1 normal
 
+# 使用者取得
+    scoreboard players operation $GU.OwnerId Temporary = @s GU.OwnerID
+    execute as @a if score @s UserID = $GU.OwnerId Temporary run tag @s add GU.Owner
+
 # 10Tick毎に速度に応じてダメージ
     scoreboard players operation $GU.Temp Temporary = @s GU.Count
     scoreboard players operation $GU.Temp Temporary %= $10 Const
@@ -59,3 +63,4 @@
 # リセット
     scoreboard players reset $GU.Temp Temporary
     scoreboard players reset $GU.OwnerId Temporary
+    tag @p[tag=GU.Owner] remove GU.Owner
