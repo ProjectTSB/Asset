@@ -25,7 +25,6 @@
     scoreboard players operation $T4.Temp Temporary = @s UserID 
     execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run scoreboard players operation @s T4.OwnerID = $T4.Temp Temporary
     execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run scoreboard players operation @s T4.MPPer = $MPValue Temporary
-    execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run scoreboard players operation @s T4.MPPer = $MPValue Temporary
     execute as @e[type=marker,tag=T4.MarkerInit,distance=..24] run tag @s remove T4.MarkerInit
 
 # スケジュール設定
