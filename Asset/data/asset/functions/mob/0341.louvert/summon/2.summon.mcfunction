@@ -23,7 +23,7 @@
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 0.5f
+        data modify storage asset:mob Resist.Physical set value 0.3f
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.0f
     # 火倍率 (float) (オプション)
@@ -31,7 +31,7 @@
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 1.0f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.7f 
+        data modify storage asset:mob Resist.Thunder set value 0.75f 
 
 # 召喚位置を記録
     summon marker ~ ~1 ~ {Tags:["9H.Marker.SummonPoint"]}
