@@ -31,5 +31,8 @@
     execute at @a[tag=9F.Temp.Target.Attack] positioned ~ ~1 ~ run particle explosion ~ ~ ~ 0.1 0.2 0.1 0 1
     execute if entity @a[tag=9F.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback2 hostile @a ~ ~ ~ 2 0.8
 
+# 鈍足付与
+    effect give @a[tag=9F.Temp.Target.Attack] slowness 5 3
+
 # 終了
     tag @a[tag=9F.Temp.Target.Attack] remove 9F.Temp.Target.Attack

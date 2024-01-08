@@ -37,3 +37,4 @@
     #declare tag 9F.Skill.Hg.Spinkick 回し蹴り
     #declare tag 9F.Skill.Hg.Punch 正拳突き
     #declare tag 9F.Skill.Hg.Lowkick 足払い
+    #declare tag 9F.Skill.Hg.Stepshot 踏みつけ射撃

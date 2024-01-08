@@ -39,3 +39,5 @@
     execute if entity @s[tag=9F.Skill.Hg.Punch] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/1.main
     ## 足払い
         execute if entity @s[tag=9F.Skill.Hg.Lowkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_1_hg_lowkick/1.main
+        ## 踏みつけ射撃
+            execute if entity @s[tag=9F.Skill.Hg.Stepshot] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_2_hg_stepshot/1.main

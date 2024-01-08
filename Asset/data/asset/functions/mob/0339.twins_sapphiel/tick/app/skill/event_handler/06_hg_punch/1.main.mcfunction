@@ -9,15 +9,15 @@
     execute if score @s 9F.AnimationTimer matches 1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/3.play_animation
 
 # 移動
-    execute if score @s 9F.AnimationTimer matches 1..46 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
+    execute if score @s 9F.AnimationTimer matches 1..48 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 1..8 at @s positioned ^ ^ ^-0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 66..76 at @s positioned ^ ^ ^-0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動
         execute if score @s 9F.AnimationTimer matches 40 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9F.Temp.Target.Aec.0"]}
-        execute if score @s 9F.AnimationTimer matches 40 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.calc_vector_0
+        execute if score @s 9F.AnimationTimer matches 40 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] at @s run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.calc_vector_0
         execute if score @s 9F.AnimationTimer matches 47 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9F.Temp.Target.Aec.0"]}
-        execute if score @s 9F.AnimationTimer matches 47 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.calc_vector_1
-        execute if score @s 9F.AnimationTimer matches 41..49 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector
+        execute if score @s 9F.AnimationTimer matches 47 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] at @s run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.calc_vector_1
+        execute if score @s 9F.AnimationTimer matches 41..49 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector
 
 # 演出
     execute if score @s 9F.AnimationTimer matches 1 run playsound block.grass.step hostile @a ~ ~ ~ 2 0.7
