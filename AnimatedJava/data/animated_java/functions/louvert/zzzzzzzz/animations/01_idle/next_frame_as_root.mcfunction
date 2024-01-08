@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/01_idle/tick_animation

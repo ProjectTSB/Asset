@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..90 run function animated_java:louvert/zzzzzzzz/animations/05_1_blade_cutter/tree/branch_0_90

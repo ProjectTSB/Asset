@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..177 run function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/tree/branch_0_177

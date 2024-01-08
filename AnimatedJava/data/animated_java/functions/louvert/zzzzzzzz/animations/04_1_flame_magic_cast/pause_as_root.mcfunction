@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.04_1_flame_magic_cast

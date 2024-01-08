@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.15_4_final_spell_fire

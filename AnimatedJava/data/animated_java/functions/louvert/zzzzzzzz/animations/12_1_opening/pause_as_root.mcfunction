@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.12_1_opening

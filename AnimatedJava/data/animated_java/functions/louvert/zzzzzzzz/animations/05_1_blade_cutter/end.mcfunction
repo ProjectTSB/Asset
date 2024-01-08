@@ -1,0 +1,3 @@
+execute if score @s aj.louvert.animation.05_1_blade_cutter.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:louvert/zzzzzzzz/animations/05_1_blade_cutter/end_loop
+execute if score @s aj.louvert.animation.05_1_blade_cutter.loop_mode = $aj.loop_mode.once aj.i run function animated_java:louvert/animations/05_1_blade_cutter/stop
+execute if score @s aj.louvert.animation.05_1_blade_cutter.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:louvert/animations/05_1_blade_cutter/pause
