@@ -22,6 +22,8 @@
     tag @s remove 9F.Skill.Hg.Shot.MoveLeft
     tag @s remove 9F.Skill.Hg.Riderkick
     tag @s remove 9F.Skill.Hg.Spinkick
+    tag @s remove 9F.Skill.Hg.Punch
+    tag @s remove 9F.Skill.Hg.Lowkick
 
 # 終了
     tag @e[type=item_display,tag=9F.ModelRoot.Target] remove 9F.ModelRoot.Target

@@ -33,3 +33,9 @@
     execute if entity @s[tag=9F.Skill.Hg.Riderkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/1.main
     ## 回し蹴り
         execute if entity @s[tag=9F.Skill.Hg.Spinkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_1_hg_spinkick/1.main
+        ## -未定-
+
+## 正拳突き
+    execute if entity @s[tag=9F.Skill.Hg.Punch] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/1.main
+    ## 足払い
+        execute if entity @s[tag=9F.Skill.Hg.Lowkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_1_hg_lowkick/1.main
