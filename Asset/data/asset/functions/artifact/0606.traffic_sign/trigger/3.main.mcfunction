@@ -37,7 +37,7 @@
     scoreboard players add @s GU.Count 1
 
 # カウントが4以上なら道路標識を召喚する
-    execute if score @s GU.Count matches 4.. run function asset:artifact/0606.traffic_sign/trigger/3.2.sign_summon
+    execute if score @s GU.Count matches 4.. at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/3.2.sign_summon
 
 # スコアとかストレージとかリセット
     function lib:damage/reset
