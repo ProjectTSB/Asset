@@ -34,3 +34,6 @@
 
 # ノクバ耐性+3
     attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 add
+
+# 最大体力の変化を反映するダメージ
+    damage @s 0.01
