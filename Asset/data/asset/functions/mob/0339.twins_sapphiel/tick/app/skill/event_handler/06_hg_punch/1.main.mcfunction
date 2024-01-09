@@ -9,7 +9,7 @@
     execute if score @s 9F.AnimationTimer matches 1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/3.play_animation
 
 # 移動
-    execute if score @s 9F.AnimationTimer matches 1..48 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
+    execute if score @s 9F.AnimationTimer matches 1..46 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 1..8 at @s positioned ^ ^ ^-0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 66..76 at @s positioned ^ ^ ^-0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動

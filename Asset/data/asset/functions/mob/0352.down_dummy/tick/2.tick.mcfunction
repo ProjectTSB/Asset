@@ -8,7 +8,7 @@
     scoreboard players add @s 9S.Timer 1
 
 # 近くのプレイヤーを自分の位置に移動
-    execute if entity @a[distance=0.8..1] as @p run tp @s ~ ~ ~
+    execute unless entity @a[distance=..0.6] if entity @a[distance=0.8..1] as @p run tp @s ~ ~ ~
 
 # 3秒後に消去
     execute if score @s 9S.Timer matches 60.. run fill ~ ~1 ~ ~ ~1 ~ air replace barrier

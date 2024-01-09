@@ -24,6 +24,13 @@
     tag @s remove 9F.Skill.Hg.Spinkick
     tag @s remove 9F.Skill.Hg.Punch
     tag @s remove 9F.Skill.Hg.Lowkick
+    tag @s remove 9F.Skill.Hg.Stepshot
+    tag @s remove 9F.Skill.Hg.Warp.Shot
+    tag @s remove 9F.Skill.Hg.Warp.Heelspin
+    tag @s remove 9F.Skill.Hg.Warp.Heeloff
+    tag @s remove 9F.Skill.Hg.Fullburst.Start
+    tag @s remove 9F.Skill.Hg.Fullburst.Main
+    tag @s remove 9F.Skill.Hg.Fullburst.End
 
 # 終了
     tag @e[type=item_display,tag=9F.ModelRoot.Target] remove 9F.ModelRoot.Target

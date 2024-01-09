@@ -41,3 +41,17 @@
         execute if entity @s[tag=9F.Skill.Hg.Lowkick] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_1_hg_lowkick/1.main
         ## 踏みつけ射撃
             execute if entity @s[tag=9F.Skill.Hg.Stepshot] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_2_hg_stepshot/1.main
+
+## ワープポイント設置
+    execute if entity @s[tag=9F.Skill.Hg.Warp.Shot] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_1_hg_warpshot/1.main
+    ## かかと落とし
+        execute if entity @s[tag=9F.Skill.Hg.Warp.Heeloff] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/1.main
+        ## 2連回し蹴り
+            execute if entity @s[tag=9F.Skill.Hg.Warp.Heelspin] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_3_hg_heelspin/1.main
+
+## フルバースト
+    execute if entity @s[tag=9F.Skill.Hg.Fullburst.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/08_1_hg_fullburst_start/1.main
+    ## フルバースト・射撃
+        execute if entity @s[tag=9F.Skill.Hg.Fullburst.Main] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/08_2_hg_fullburst_main/1.main
+        ## フルバースト・終了
+            execute if entity @s[tag=9F.Skill.Hg.Fullburst.End] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/08_3_hg_fullburst_end/1.main

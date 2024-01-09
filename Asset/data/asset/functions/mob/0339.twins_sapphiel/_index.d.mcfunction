@@ -21,6 +21,10 @@
     #declare tag 9F.Temp.Target.Attack 攻撃対象
     #declare tag 9F.Temp.Target.Aec.0 攻撃地点決定に使用する
     #declare tag 9F.Temp.Target.Aec.1 攻撃地点決定に使用する
+    #declare tag 9F.Temp.Target.Warp ワープポイントエンティティ
+    #declare tag 9F.Temp.Target.Warp.0 ワープポイント取得に使用する
+    #declare tag 9F.Temp.Target.Warp.1 ワープポイント取得に使用する
+    #declare tag 9F.Temp.Target.Warp.2 ワープポイント取得に使用する
 
 # 状態
     #declare tag 9F.State.Await Rootからの指示待ち
@@ -38,3 +42,9 @@
     #declare tag 9F.Skill.Hg.Punch 正拳突き
     #declare tag 9F.Skill.Hg.Lowkick 足払い
     #declare tag 9F.Skill.Hg.Stepshot 踏みつけ射撃
+    #declare tag 9F.Skill.Hg.Warp.Shot ワープポイント射撃
+    #declare tag 9F.Skill.Hg.Warp.Heeloff かかと落とし
+    #declare tag 9F.Skill.Hg.Warp.Heelspin 2連回し蹴り
+    #declare tag 9F.Skill.Hg.Fullburst.Start フルバースト
+    #declare tag 9F.Skill.Hg.Fullburst.Main フルバースト
+    #declare tag 9F.Skill.Hg.Fullburst.End フルバースト
