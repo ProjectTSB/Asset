@@ -10,7 +10,7 @@
     scoreboard players operation $GU.Temp Temporary *= $-1 Const
 
 # 計算結果をArgument.Damageに代入
-# Damage = (1 - 速度) * 0.5
+# Damage = (1 - 速度) * 50
     execute store result storage lib: Argument.Damage float 0.5 run scoreboard players operation $GU.Temp Temporary > $1 Const
 
 # ダメージ

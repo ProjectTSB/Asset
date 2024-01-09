@@ -28,7 +28,7 @@
     scoreboard players operation $GU.Temp Temporary %= $200 Const
 
 # 計算結果をArgument.Damageに代入
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players add $GU.Temp Temporary 200
+    execute store result storage lib: Argument.Damage float 1 run scoreboard players add $GU.Temp Temporary 201
 
 # ダメージ
     data modify storage lib: Argument.AttackType set value "Physical"
