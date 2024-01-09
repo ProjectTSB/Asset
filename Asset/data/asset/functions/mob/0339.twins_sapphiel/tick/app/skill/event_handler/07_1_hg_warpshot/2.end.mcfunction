@@ -9,8 +9,8 @@
 
 #  かかと落としまたは引き撃ちに遷移
     tag @s remove 9F.Skill.Hg.Warp.Shot
-    # tag @s add 9F.Skill.Hg.BackShot
-    tag @s add 9F.Skill.Hg.Warp.Heeloff
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..8] run tag @s add 9F.Skill.Hg.BackShot
+    execute if entity @s[tag=!9F.Skill.Hg.BackShot] run tag @s add 9F.Skill.Hg.Warp.Heeloff
 
 # タイマーリセット
     scoreboard players set @s 9F.AnimationTimer 0

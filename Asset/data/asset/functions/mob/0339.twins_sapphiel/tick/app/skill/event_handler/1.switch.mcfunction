@@ -55,3 +55,6 @@
         execute if entity @s[tag=9F.Skill.Hg.Fullburst.Main] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/08_2_hg_fullburst_main/1.main
         ## フルバースト・終了
             execute if entity @s[tag=9F.Skill.Hg.Fullburst.End] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/08_3_hg_fullburst_end/1.main
+
+## リロード
+    execute if entity @s[tag=9F.Skill.Hg.Reload] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/09_hg_reload/1.main

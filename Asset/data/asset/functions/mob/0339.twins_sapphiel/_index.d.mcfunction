@@ -48,3 +48,4 @@
     #declare tag 9F.Skill.Hg.Fullburst.Start フルバースト
     #declare tag 9F.Skill.Hg.Fullburst.Main フルバースト
     #declare tag 9F.Skill.Hg.Fullburst.End フルバースト
+    #declare tag 9F.Skill.Hg.Reload リロード
