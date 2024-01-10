@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
 # モデルを自分の向きに
-    execute if score @s RW.Tick matches 0.. at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] @s
+    execute if score @s RW.Tick matches 0.. at @s run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
 # 移動
     execute if score @s RW.Tick matches 0 run data modify storage lib: Argument.Bounds set value [[10d,10d],[0.0d,0.0d],[10d,10d]]
