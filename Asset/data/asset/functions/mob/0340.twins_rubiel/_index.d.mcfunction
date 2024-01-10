@@ -15,6 +15,16 @@
     #declare tag 9G.ModelRoot 見た目用animated_javaモデル
     #declare tag 9G.ModelRoot.Target 紐づけ対象の見た目用animated_javaモデル
 
+# 一時
+    #declare tag 9G.Temp.This 自身に付与する
+    #declare tag 9G.Temp.Target.Attack 攻撃対象
+    #declare tag 9G.Temp.Target.Aec.0 攻撃地点決定に使用する
+    #declare tag 9G.Temp.Target.Aec.1 攻撃地点決定に使用する
+    #declare tag 9G.Temp.Target.Warp ワープポイントエンティティ
+    #declare tag 9G.Temp.Target.Warp.0 ワープポイント取得に使用する
+    #declare tag 9G.Temp.Target.Warp.1 ワープポイント取得に使用する
+    #declare tag 9G.Temp.Target.Warp.2 ワープポイント取得に使用する
+    
 # 状態
     #declare tag 9G.State.Await Rootからの指示待ち
     #declare tag 9G.State.Weapon.Kt 刀所持
@@ -22,3 +32,4 @@
 # スキル
     #declare tag 9G.Skill.Start 登場
     #declare tag 9G.Skill.Kt.Idle 刀待機
+    #declare tag 9G.Skill.Kt.Doubleslash 斬り下がり

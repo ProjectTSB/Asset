@@ -1,8 +1,8 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/000_start/2.end
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/00_start/2.end
 #
 # アニメーションのイベントハンドラ 登場
 #
-# @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/000_start/1.main
+# @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/00_start/1.main
 
 # スキル判別用タグ消去
     tag @s remove 9G.Skill.Start

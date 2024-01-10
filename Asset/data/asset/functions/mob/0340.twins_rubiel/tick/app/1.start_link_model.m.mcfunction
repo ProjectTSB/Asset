@@ -2,7 +2,7 @@
 #
 # Animated Javaモデルの紐づけ開始
 #
-# @within function asset:mob/0340.twins_rubiel/tick/2.tick
+# @within function asset:mob/0340.twins_rubiel/**
 
 # 紐づけ
     $tag @e[type=item_display,tag=9G.ModelRoot,tag=9E.Link.$(Uid)] add 9G.ModelRoot.Target

@@ -9,6 +9,12 @@
 
 # タイマー
     scoreboard objectives add 9G.AnimationTimer dummy
+    scoreboard objectives add 9G.DamageCooldown dummy
 
 # カウンター
     scoreboard objectives add 9G.ActionCount dummy
+
+# 処理用
+    scoreboard objectives add 9G.MoveVector.X dummy
+    scoreboard objectives add 9G.MoveVector.Y dummy
+    scoreboard objectives add 9G.MoveVector.Z dummy
