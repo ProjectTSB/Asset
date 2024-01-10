@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..20 run function animated_java:tultaria/zzzzzzzz/animations/blade_destruction_start/tree/branch_0_20
+execute if score @s aj.anim_time matches 0 run function animated_java:tultaria/zzzzzzzz/animations/blade_destruction_start/tree/leaf_0

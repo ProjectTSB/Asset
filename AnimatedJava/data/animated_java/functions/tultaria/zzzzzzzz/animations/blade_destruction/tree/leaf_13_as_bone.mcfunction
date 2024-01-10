@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.tultaria.bone.blade_destruction] run data modify entity @s {} merge value {transformation:[5.220912290427466f,0f,2.3244999151781967f,0f,0f,5.715000000000001f,0f,1f,-2.3244999151781967f,0f,5.220912290427466f,0f,0f,0f,0f,1f],start_interpolation:0}

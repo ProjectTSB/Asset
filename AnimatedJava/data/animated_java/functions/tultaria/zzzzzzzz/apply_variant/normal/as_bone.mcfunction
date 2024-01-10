@@ -15,4 +15,3 @@ execute if entity @s[tag=aj.tultaria.bone.left_leg] run data modify entity @s it
 execute if entity @s[tag=aj.tultaria.bone.right_foot] run data modify entity @s item.tag.CustomModelData set value 23
 execute if entity @s[tag=aj.tultaria.bone.right_leg] run data modify entity @s item.tag.CustomModelData set value 24
 execute if entity @s[tag=aj.tultaria.bone.lower] run data modify entity @s item.tag.CustomModelData set value 25
-execute if entity @s[tag=aj.tultaria.bone.blade_destruction] run data modify entity @s item.tag.CustomModelData set value 26
