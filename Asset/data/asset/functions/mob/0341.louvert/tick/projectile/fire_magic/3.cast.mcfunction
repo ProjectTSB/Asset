@@ -38,7 +38,7 @@
 # 補正functionを実行
     execute as @e[tag=this,distance=..100] run function lib:damage/modifier
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function lib:damage/
+    execute as @a[gamemode=!creative,distance=..3] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
 
