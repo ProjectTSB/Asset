@@ -37,4 +37,5 @@
     #declare tag 9G.Skill.Kt.Moveslash 移動斬り
     #declare tag 9G.Skill.Kt.MoveToSpear 移動突き
     #declare tag 9G.Skill.Kt.Damage.Spear 移動突き・怯み
+    #declare tag 9G.Skill.Kt.VacuSlash 真空斬り
     #declare tag 9G.Skill.Kt.Doubleslash 斬り下がり

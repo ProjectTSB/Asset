@@ -20,6 +20,7 @@
     tag @s remove 9G.Skill.Kt.Moveslash
     tag @s remove 9G.Skill.Kt.MoveToSpear
     tag @s remove 9G.Skill.Kt.Damage.Spear
+    tag @s remove 9G.Skill.Kt.VacuSlash
     tag @s remove 9G.Skill.Kt.Doubleslash
 
 # 終了

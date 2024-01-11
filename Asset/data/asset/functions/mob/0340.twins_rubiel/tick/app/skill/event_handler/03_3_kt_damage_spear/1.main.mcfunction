@@ -14,7 +14,9 @@
     execute if score @s 9G.AnimationTimer matches 20 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 0.7
     execute if score @s 9G.AnimationTimer matches 25 run playsound item.axe.wax_off hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 25 run playsound item.axe.wax_off hostile @a ~ ~ ~ 2 1.4
-    execute if score @s 9G.AnimationTimer matches 25..33 at @s positioned ^ ^ ^-0.3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 1..3 at @s positioned ^ ^-0.1 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 1..3 at @s positioned ^ ^ ^0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 25..33 at @s positioned ^ ^0.04 ^-0.3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 34..40 at @s positioned ^ ^ ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 
 # 怯み受け付け

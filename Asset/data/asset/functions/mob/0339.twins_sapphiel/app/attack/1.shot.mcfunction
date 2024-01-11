@@ -8,6 +8,7 @@
 # 演出
     playsound entity.firework_rocket.blast hostile @a ~ ~ ~ 2 0.5
     playsound entity.firework_rocket.blast hostile @a ~ ~ ~ 2 0.7
+    # playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 0.8
     particle block gold_block ^ ^ ^-0.8 0 0 0 1 1
     particle electric_spark ~ ~ ~ 0 0 0 0.2 5
 
