@@ -30,7 +30,7 @@
 
 # 追尾ソウルクエイク発動
     tag @s add 9H.Temp.This
-    execute if score @s 9H.AnimationTick matches 39 if predicate api:global_vars/difficulty/min/hard as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100,limit=4] as @e[tag=9H.Temp.This,distance=..100] run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/hard
+    execute if score @s 9H.AnimationTick matches 39 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,limit=4] as @e[tag=9H.Temp.This,distance=..100] run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/hard
     tag @s remove 9H.Temp.This
 
 # アニメーション終了処理

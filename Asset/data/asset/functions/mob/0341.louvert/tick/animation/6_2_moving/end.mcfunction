@@ -8,7 +8,7 @@
     scoreboard players set @s 9H.AnimationNum 63
 
 # プレイヤーが近くにいる時
-    execute if entity @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..8,sort=nearest,limit=1] run scoreboard players set @s 9H.AnimationNum 64
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..8,sort=nearest,limit=1] run scoreboard players set @s 9H.AnimationNum 64
 
 # スコア初期化
     scoreboard players set @s 9H.AnimationTick 0

@@ -6,7 +6,7 @@
 
 # 回転
     tag @s add 9H.Temp.This
-    execute as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
 
 # 音
     function asset:mob/0341.louvert/tick/animation/4_1_meteor/sound

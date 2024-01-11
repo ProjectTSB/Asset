@@ -6,7 +6,7 @@
 
 # 回転
     tag @s add 9H.Temp.This
-    execute as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
 
 # アニメーション開始
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/11_1_cast_magic/play
@@ -18,7 +18,7 @@
     execute if score @s 9H.AnimationTick matches 41 positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/vfx
 
 # 火炎陣 発動 （ハードだと2倍）
-    execute if score @s 9H.AnimationTick matches 41 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=3] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon
+    execute if score @s 9H.AnimationTick matches 41 at @a[tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=3] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon
     execute if score @s 9H.AnimationTick matches 41 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..100] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/11_1_cast_magic/summon_hard
 
 # アニメーション終了処理

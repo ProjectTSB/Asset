@@ -6,7 +6,7 @@
 
 # Markerを呼び出す
     tp 0-0-0-0-0 ^ ^ ^ ~ 0
-    execute at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..64,sort=nearest,limit=1] run tp 0-0-0-0-0 ^ ^ ^ ~ 0
+    execute at @a[tag=!PlayerShouldInvulnerable,distance=..64,sort=nearest,limit=1] run tp 0-0-0-0-0 ^ ^ ^ ~ 0
 # ランダムな方向を向かせる
     execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
     execute at 0-0-0-0-0 positioned ^ ^ ^8 facing ^ ^ ^-1 run tp 0-0-0-0-0 ^ ^ ^ ~ 0

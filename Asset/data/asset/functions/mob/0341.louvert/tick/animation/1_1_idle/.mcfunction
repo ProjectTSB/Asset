@@ -8,7 +8,7 @@
 # ハードは40Tick
 # 近くのプレイヤーの方を向く
     tag @s add 9H.Temp.This
-    execute as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
 
 # アニメーション再生
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/01_idle/play

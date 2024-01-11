@@ -6,7 +6,7 @@
 
 # まず移動をしておく
     # マーカーを呼ぶ
-        execute at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100] rotated ~ 0 positioned ^ ^ ^2 facing ^ ^ ^-1 run tp 0-0-0-0-0 ^ ^ ^ ~ ~
+        execute at @a[tag=!PlayerShouldInvulnerable,distance=..100] rotated ~ 0 positioned ^ ^ ^2 facing ^ ^ ^-1 run tp 0-0-0-0-0 ^ ^ ^ ~ ~
     # 0-0-0-0-0の位置に移動
         execute at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/1.teleport
     # 演出もしておく

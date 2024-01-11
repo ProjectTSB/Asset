@@ -99,7 +99,7 @@
     execute if score @s 9H.AnimationTick matches 216 run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/third
 
 # 追尾ソウルクエイク発動
-    execute if score @s 9H.AnimationTick matches 219 as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100,limit=4] as @e[tag=9H.Temp.This,distance=..100] run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/hard
+    execute if score @s 9H.AnimationTick matches 219 as @a[tag=!PlayerShouldInvulnerable,distance=..100,limit=4] as @e[tag=9H.Temp.This,distance=..100] run function asset:mob/0341.louvert/tick/animation/14_1_falling_strike/hard
 
 
 # ディスプレイ回転

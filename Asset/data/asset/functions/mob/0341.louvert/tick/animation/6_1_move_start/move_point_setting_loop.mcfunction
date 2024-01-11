@@ -9,7 +9,7 @@
 # スコア減少
     scoreboard players remove $9H.Temp Temporary 1
 # 近くのプレイヤーのところに飛ばす
-    execute as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100,sort=nearest,limit=1] at @s anchored eyes run tp 0-0-0-0-0 ^ ^ ^ ~ ~
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=nearest,limit=1] at @s anchored eyes run tp 0-0-0-0-0 ^ ^ ^ ~ ~
 # 拡散値
     data modify storage lib: Argument.Bounds set value [[4d,4d],[1d,0d],[4d,4d]]
 # 拡散する

@@ -6,7 +6,7 @@
 
 # 近くのプレイヤーの方を向く
     execute if score @s 9H.AnimationTick matches 1..40 run tag @s add 9H.Temp.This
-    execute if score @s 9H.AnimationTick matches 1..40 as @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
+    execute if score @s 9H.AnimationTick matches 1..40 as @a[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
 
 # ディスプレイ回転
     execute if score @s 9H.AnimationTick matches 19 run function asset:mob/0341.louvert/tick/animation/15_1_final_spell_op/display/5.rotate_4
@@ -78,7 +78,7 @@
     execute if score @s 9H.AnimationTick matches 181 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/iai_cast
 
 # ソウルバースト追加
-    execute if score @s 9H.AnimationTick matches 181 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
+    execute if score @s 9H.AnimationTick matches 181 at @a[tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
 
 # アニメーション開始（居合斬り開始）
     execute if score @s 9H.AnimationTick matches 201 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/15_2_final_spell_iai_start/play
@@ -95,8 +95,8 @@
     execute if score @s 9H.AnimationTick matches 221 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/iai_cast
 
 # ソウルバースト追加
-    execute if score @s 9H.AnimationTick matches 221 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
-    execute if score @s 9H.AnimationTick matches 221 at @a[gamemode=survival,tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
+    execute if score @s 9H.AnimationTick matches 221 at @a[tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
+    execute if score @s 9H.AnimationTick matches 221 at @a[tag=!PlayerShouldInvulnerable,distance=..64,sort=random,limit=1] run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/soul_blast
 
 # TPする
     execute if score @s 9H.AnimationTick matches 41 run function asset:mob/0341.louvert/tick/animation/15_2_final_spell_iai/iai_tp
