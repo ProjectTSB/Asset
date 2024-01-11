@@ -33,3 +33,4 @@
 #> val
 # @within function asset:mob/0341.louvert/**
     #declare score_holder $9H.Temp
+    #declare objective 89.TickCount
