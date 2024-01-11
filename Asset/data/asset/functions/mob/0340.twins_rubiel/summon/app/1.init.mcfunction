@@ -5,6 +5,7 @@
 # @within function asset:mob/0340.twins_rubiel/summon/2.summon
 
 # モデルにTeleport_durationを設定
+    execute as @e[type=#animated_java:root,tag=9G.ModelRoot,tag=9G.Init] run data modify entity @s teleport_duration set value 1
     execute as @e[type=#animated_java:root,tag=9G.ModelRoot,tag=9G.Init] on passengers if entity @s[type=item_display] run data modify entity @s teleport_duration set value 1
 
 # 透明化

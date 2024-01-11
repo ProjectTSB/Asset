@@ -22,14 +22,8 @@
     execute if score @s 9G.AnimationTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
 
 # 斬撃演出
-    execute if score @s 9G.AnimationTimer matches 21 at @s positioned ^ ^1.5 ^1.2 rotated ~90 ~20 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    execute if score @s 9G.AnimationTimer matches 27 at @s positioned ^ ^1.4 ^1.2 rotated ~90 ~-10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 21 at @s positioned ^ ^1.4 ^0.7 rotated ~-40 ~ positioned ^1 ^ ^2 rotated ~90 ~10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 22 at @s positioned ~ ~1.2 ~ rotated ~ ~ positioned ^ ^ ^2 rotated ~90 ~10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 23 at @s positioned ^ ^1 ^-0.7 rotated ~40 ~ positioned ^-1 ^ ^2 rotated ~90 ~10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 28 at @s positioned ~ ~1.4 ~ rotated ~40 ~ positioned ^-1 ^ ^2 rotated ~90 ~-15 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 29 at @s positioned ~ ~1 ~ rotated ~ ~ positioned ^ ^ ^2 rotated ~90 ~-15 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
-    # execute if score @s 9G.AnimationTimer matches 30 at @s positioned ^ ^0.4 ^1 rotated ~-40 ~ positioned ^1 ^ ^2 rotated ~110 ~-15 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
+    execute if score @s 9G.AnimationTimer matches 21 at @s positioned ^ ^1.0 ^1.2 rotated ~90 ~20 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
+    execute if score @s 9G.AnimationTimer matches 27 at @s positioned ^ ^1.4 ^0.8 rotated ~90 ~-10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
 
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 22 at @s positioned ^ ^ ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/5.damage

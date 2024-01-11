@@ -17,6 +17,10 @@
 # タグ消去
     tag @s remove 9G.Skill.Start
     tag @s remove 9G.Skill.Kt.Idle
+    tag @s remove 9G.Skill.Kt.Moveslash
+    tag @s remove 9G.Skill.Kt.MoveToSpear
+    tag @s remove 9G.Skill.Kt.Damage.Spear
+    tag @s remove 9G.Skill.Kt.Doubleslash
 
 # 終了
     tag @e[type=item_display,tag=9G.ModelRoot.Target] remove 9F.ModelRoot.Target

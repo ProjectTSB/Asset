@@ -10,7 +10,10 @@
     data remove storage asset:temp 9E.Uid
 
 # タイマー増加
-    scoreboard players add @s 9G.AnimationTimer 1
+    # アニメーション用タイマー増加
+        scoreboard players add @s 9G.AnimationTimer 1
+    # 与ダメージクールダウン減少
+        execute if score @s 9G.DamageCooldown matches 1.. run scoreboard players remove @s 9G.DamageCooldown 1
 
 # スキル選択
     execute if score @s 9G.AnimationTimer matches 0 run function asset:mob/0340.twins_rubiel/tick/app/skill/select/1.main

@@ -1,16 +1,17 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/5.damage
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_1_kt_moveslash/5.damage
 #
-# アニメーションのイベントハンドラ Kt斬り下がり ダメージ判定
+# アニメーションのイベントハンドラ Kt移動斬り ダメージ判定
 #
 # @within
-#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/1.main
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_1_kt_moveslash/1.main
 
 # ヒット判定
-    tag @a[distance=..2.3] add 9G.Temp.Target.Attack
-    
+    execute positioned ^ ^ ^ run tag @a[distance=..2] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^1.5 run tag @a[distance=..2] add 9G.Temp.Target.Attack
+
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 36f
+        data modify storage lib: Argument.Damage set value 42f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
@@ -23,10 +24,11 @@
     function lib:damage/reset
 
 # 演出
-    playsound ogg:item.trident.throw1 hostile @a ~ ~ ~ 1 1.1
-    playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 1 1.4
     execute at @a[tag=9G.Temp.Target.Attack] positioned ~ ~1 ~ run particle block red_wool ~ ~1 ~ 0.1 0.2 0.1 0 5
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
+
+# ダメージクールダウン設定
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players set @s 9G.DamageCooldown 5
 
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack
