@@ -10,6 +10,8 @@
     execute positioned ^ ^ ^2 run tag @a[distance=..3] add 9G.Temp.Target.Attack
     execute positioned ^ ^ ^4 run tag @a[distance=..3] add 9G.Temp.Target.Attack
     execute positioned ^ ^ ^6 run tag @a[distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^8 run tag @a[distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^10 run tag @a[distance=..3] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20
@@ -26,6 +28,13 @@
     function lib:damage/reset
 
 # 演出
+    particle explosion ^ ^ ^ 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^2 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^4 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^6 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^8 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^10 0.3 0.1 0.3 0 1
+    particle explosion ^ ^ ^12 0.3 0.1 0.3 0 1
     execute at @a[tag=9G.Temp.Target.Attack] positioned ~ ~1 ~ run particle block red_wool ~ ~1 ~ 0.1 0.2 0.1 0 5
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
 

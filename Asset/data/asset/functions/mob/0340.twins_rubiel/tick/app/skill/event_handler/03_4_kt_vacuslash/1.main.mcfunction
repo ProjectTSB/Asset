@@ -11,11 +11,13 @@
 # 移動
     execute if score @s 9G.AnimationTimer matches 1..36 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 1..20 positioned ~ ~-0.1 ~ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 85..95 positioned ~ ~0.05 ~ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 
 # 演出
     execute if score @s 9G.AnimationTimer matches 1 run playsound item.axe.wax_off hostile @a ~ ~ ~ 2 1.4
     execute if score @s 9G.AnimationTimer matches 1 run playsound item.axe.wax_off hostile @a ~ ~ ~ 2 1.4
-    execute if score @s 9G.AnimationTimer matches 5..30 positioned ~ ~1 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.5.particle_charge
+    execute if score @s 9G.AnimationTimer matches 5..20 positioned ~ ~1 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.5.particle_charge
+    execute if score @s 9G.AnimationTimer matches 15..30 positioned ~ ~1 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.6.particle_charge_fast
     execute if score @s 9G.AnimationTimer matches 13 run particle flash ^-0.8 ^1.2 ^0.2 0 0 0 0 1
     execute if score @s 9G.AnimationTimer matches 13 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
     execute if score @s 9G.AnimationTimer matches 13 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
@@ -36,7 +38,7 @@
     execute if score @s 9G.AnimationTimer matches 37 run particle flash ^ ^1.4 ^ 0 0 0 0 1
 
 # 斬撃演出
-    execute if score @s 9G.AnimationTimer matches 44 at @s positioned ^ ^1 ^0.5 rotated ~180 0 positioned ^ ^ ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.1.particle_slash_0
+    # execute if score @s 9G.AnimationTimer matches 44 at @s positioned ^ ^1 ^0.5 rotated ~180 0 positioned ^ ^ ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.1.particle_slash_0
     execute if score @s 9G.AnimationTimer matches 44 at @s positioned ^ ^1 ^0.5 rotated ~180 -30 positioned ^ ^ ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.1.particle_slash_0
     execute if score @s 9G.AnimationTimer matches 45 at @s positioned ^ ^1 ^0.5 rotated ~-5 0 positioned ^0.5 ^3 ^-2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.2.particle_slash_1
     execute if score @s 9G.AnimationTimer matches 45 at @s positioned ^ ^1 ^0.5 rotated ~-5 0 positioned ^ ^3 ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.2.particle_slash_1
