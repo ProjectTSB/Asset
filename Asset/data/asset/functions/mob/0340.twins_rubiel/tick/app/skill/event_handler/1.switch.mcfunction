@@ -40,3 +40,5 @@
             execute if entity @s[tag=9G.Skill.Kt.Horizon.Double] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_3_kt_horizon_double/1.main
             ## 二刀流縦回転斬り
                 execute if entity @s[tag=9G.Skill.Kt.DashAttack] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_4_kt_dashattack/1.main
+        ## ナイフ投げ
+            execute if entity @s[tag=9G.Skill.Kt.BackJump] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/1.main

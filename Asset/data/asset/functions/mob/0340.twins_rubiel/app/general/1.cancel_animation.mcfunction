@@ -26,6 +26,7 @@
     tag @s remove 9G.Skill.Kt.Horizon
     tag @s remove 9G.Skill.Kt.Horizon.Double
     tag @s remove 9G.Skill.Kt.DashAttack
+    tag @s remove 9G.Skill.Kt.BackJump
 
 # 終了
     tag @e[type=item_display,tag=9G.ModelRoot.Target] remove 9F.ModelRoot.Target
