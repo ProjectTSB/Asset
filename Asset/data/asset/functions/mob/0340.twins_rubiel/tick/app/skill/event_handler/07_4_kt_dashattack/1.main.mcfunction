@@ -33,7 +33,7 @@
     execute if score @s 9G.AnimationTimer matches 24 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.3
     execute if score @s 9G.AnimationTimer matches 41 run playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 2 1.1
     execute if score @s 9G.AnimationTimer matches 41 run playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 2 1.4
-    execute if score @s 9G.AnimationTimer matches 43 run playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 2 1.5
+    execute if score @s 9G.AnimationTimer matches 41 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 43 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.3
 
 # 回転演出

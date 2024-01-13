@@ -6,8 +6,8 @@
 
 # 移動突き・真空斬りに移行
     tag @s remove 9G.Skill.Kt.Moveslash
-    tag @s add 9G.Skill.Kt.MoveToSpear
-    # tag @s add 9G.Skill.Kt.VacuSlash
+    # tag @s add 9G.Skill.Kt.MoveToSpear
+    tag @s add 9G.Skill.Kt.VacuSlash
 
 # タイマーリセット
     scoreboard players set @s 9G.AnimationTimer 0

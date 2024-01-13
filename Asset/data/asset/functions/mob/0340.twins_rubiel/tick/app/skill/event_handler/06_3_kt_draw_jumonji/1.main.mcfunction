@@ -9,13 +9,14 @@
     execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/3.play_animation
 
 # 移動
+    execute if score @s 9G.AnimationTimer matches 1..5 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 1..10 at @s run function asset:mob/0340.twins_rubiel/app/general/7.update_altitude_to_player
     execute if score @s 9G.AnimationTimer matches 1..7 at @s positioned ^ ^ ^0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # execute if score @s 9G.AnimationTimer matches 8..13 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s positioned ^ ^ ^3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 14..18 at @s positioned ^ ^ ^0.2 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 43..52 at @s positioned ^ ^0.05 ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9G.AnimationTimer matches 4 run summon area_effect_cloud ^ ^0.1 ^15 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
+        execute if score @s 9G.AnimationTimer matches 4 run summon area_effect_cloud ^ ^0.5 ^15 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 4 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/4.calc_vector
         execute if score @s 9G.AnimationTimer matches 8..12 at @s run function asset:mob/0340.twins_rubiel/app/general/4.teleport_using_vector
 
@@ -30,6 +31,8 @@
     execute if score @s 9G.AnimationTimer matches 17 run playsound ogg:item.trident.throw1 hostile @a ~ ~ ~ 2 1.1
     execute if score @s 9G.AnimationTimer matches 17 run playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 2 0.8
     execute if score @s 9G.AnimationTimer matches 19 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.3
+    execute if score @s 9G.AnimationTimer matches 13 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 1.3
+    execute if score @s 9G.AnimationTimer matches 17 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 1.3
 
 # 斬撃演出
     execute if score @s 9G.AnimationTimer matches 12 at @s rotated ~-30 ~ positioned ^1 ^1.5 ^1.2 rotated ~90 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/6.1.particle_slash

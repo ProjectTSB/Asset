@@ -44,7 +44,7 @@
         ## 瑠火伊流・十文字
             execute if entity @s[tag=9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/1.main
         ## カウンター居合斬り
-        ## 怯み
+        ## 居合斬り・怯み
 
 ## 飛び込み斬り
     execute if entity @s[tag=9G.Skill.Kt.JumpSlash] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/1.main
@@ -56,3 +56,5 @@
                 execute if entity @s[tag=9G.Skill.Kt.DashAttack] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_4_kt_dashattack/1.main
         ## ナイフ投げ
             execute if entity @s[tag=9G.Skill.Kt.BackJump] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/1.main
+
+## 掴み
