@@ -38,8 +38,11 @@
             ## ワープ連撃・3
 
 ## 納刀
-    ## 納刀待機
+    execute if entity @s[tag=9G.Skill.Kt.Sheathe] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_1_kt_sheathe/1.main
+    ## 納刀待機・十文字
+        execute if entity @s[tag=9G.Skill.Kt.Sheathe.Wait.Jumonji] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_2_kt_sheathe_wait_jumonji/1.main
         ## 瑠火伊流・十文字
+            execute if entity @s[tag=9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/1.main
         ## カウンター居合斬り
         ## 怯み
 
