@@ -39,6 +39,7 @@
     #declare tag 9G.Skill.Kt.Damage.Spear 移動突き・怯み
     #declare tag 9G.Skill.Kt.VacuSlash 真空斬り
     #declare tag 9G.Skill.Kt.Doubleslash 斬り下がり
+    #declare tag 9G.Skill.Kt.Warp ワープ連撃
     #declare tag 9G.Skill.Kt.Sheathe 納刀
     #declare tag 9G.Skill.Kt.Sheathe.Wait.Jumonji 納刀待機・十文字
     #declare tag 9G.Skill.Kt.Draw.Jumonji 抜刀・十文字斬り

@@ -1,9 +1,9 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.6.particle_spear
 #
-# アニメーションのイベントハンドラ Kt移動突き 演出
+# アニメーションのイベントハンドラ Ktワープ連撃 演出
 #
 # @within
-#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/1.main
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/1.main
 
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAnAIwBMALAEYDGArAOwC0VFAHAIZs0BmHlTZcqLJmwBmLHjwAMrFgK5kSuDDwC2CZIC3fAARUwuGDwBO2gM5JwDAPZ4MEJBXm4p5+1ttgAbjwoeLrgAB5I7mBQEQC+MbgQ9r4BQSFg4YiR0YhUAHRMcbj2UlJWcC6ZuHRwAF5ocOYRuGhWAEK19eYAogCOeIEoUADKZgxwJIhSgWVxALpAA_3
 # 線 2

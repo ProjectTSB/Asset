@@ -32,10 +32,8 @@
 ## 斬り下がり
     execute if entity @s[tag=9G.Skill.Kt.Doubleslash] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/1.main
 
-## ワープポイント設置
-    ## ワープ連撃・1
-        ## ワープ連撃・2
-            ## ワープ連撃・3
+## ワープ連撃
+    execute if entity @s[tag=9G.Skill.Kt.Warp] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/1.main
 
 ## 納刀
     execute if entity @s[tag=9G.Skill.Kt.Sheathe] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_1_kt_sheathe/1.main

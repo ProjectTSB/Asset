@@ -1,9 +1,9 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/6.2.particle_hit
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.5.particle_spear_hit
 #
-# アニメーションのイベントハンドラ Kt移動突き 演出
+# アニメーションのイベントハンドラ Ktワープ連撃 演出
 #
 # @within
-#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/1.main
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/1.main
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGaUCcAjAEx3MC0ArAMwAMA7CwCwAOOoJYBDOBwYsaQ-lw6U2NAEbUwBAHZiAtgmSAwxQAEdDWBhiMugM5JwKAPaFNEJHX4EUcF3Ax2wAG5i2IT64AAeSFwEUFEAvnEEVqRohLaIdFxZ2QTWEJauiNFgcNjYaDDW+pnFGA75EPrFaNYAomUVVa0AjoTB2FAAyhZe5IiUwVUJALpAA_3
 # 円 1

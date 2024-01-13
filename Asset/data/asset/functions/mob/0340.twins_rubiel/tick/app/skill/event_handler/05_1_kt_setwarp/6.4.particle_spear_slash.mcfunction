@@ -1,9 +1,9 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.4.particle_spear_slash
 #
-# アニメーションのイベントハンドラ Kt移動突き 演出
+# アニメーションのイベントハンドラ Ktワープ連撃 演出
 #
 # @within
-#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/1.main
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/1.main
 
 # 演出
     particle dust 100000000 0.6 0.6 0.7 ^ ^ ^0.0 0.3 0.3 0.3 0 5
