@@ -9,7 +9,7 @@
     execute if score @s 9G.AnimationTimer matches 5 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/3.play_animation
 
 # 移動
-    execute if score @s 9G.AnimationTimer matches 1..5 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
+    execute if score @s 9G.AnimationTimer matches 1..20 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 6..13 at @s positioned ^ ^0.4 ^-0.6 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 14..20 at @s positioned ^ ^0.3 ^-0.5 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 21..27 at @s positioned ^ ^-0.2 ^-0.5 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
@@ -23,7 +23,9 @@
     execute if score @s 9G.AnimationTimer matches 35 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 0.8
 
 # 攻撃
-    # execute if score @s 9G.AnimationTimer matches 20 at @s positioned ^ ^1 ^2 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/5.damage
+    execute if score @s 9G.AnimationTimer matches 5 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^ ^ {CustomNameVisible:0b,Particle:"block air",Duration:16,Tags:["Object","9G.Temp.Target.Aec.0"]}
+    execute if score @s 9G.AnimationTimer matches 20 as @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] at @s positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~1 ~
+    execute if score @s 9G.AnimationTimer matches 20 at @s positioned ^ ^1.2 ^1 facing entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] feet run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/5.throw_knife
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 56.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/2.end

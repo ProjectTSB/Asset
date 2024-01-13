@@ -32,6 +32,17 @@
 ## 斬り下がり
     execute if entity @s[tag=9G.Skill.Kt.Doubleslash] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/1.main
 
+## ワープポイント設置
+    ## ワープ連撃・1
+        ## ワープ連撃・2
+            ## ワープ連撃・3
+
+## 納刀
+    ## 納刀待機
+        ## 瑠火伊流・十文字
+        ## カウンター居合斬り
+        ## 怯み
+
 ## 飛び込み斬り
     execute if entity @s[tag=9G.Skill.Kt.JumpSlash] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/1.main
     ## 水平斬り
