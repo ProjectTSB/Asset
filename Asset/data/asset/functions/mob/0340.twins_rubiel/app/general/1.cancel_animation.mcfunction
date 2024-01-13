@@ -25,6 +25,8 @@
     tag @s remove 9G.Skill.Kt.Sheathe
     tag @s remove 9G.Skill.Kt.Sheathe.Wait.Jumonji
     tag @s remove 9G.Skill.Kt.Draw.Jumonji
+    tag @s remove 9G.Skill.Kt.Damage.Draw
+    tag @s remove 9G.Skill.Kt.Sheathe.Counter
     tag @s remove 9G.Skill.Kt.JumpSlash
     tag @s remove 9G.Skill.Kt.Horizon
     tag @s remove 9G.Skill.Kt.Horizon.Double

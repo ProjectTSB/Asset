@@ -42,6 +42,8 @@
     #declare tag 9G.Skill.Kt.Sheathe 納刀
     #declare tag 9G.Skill.Kt.Sheathe.Wait.Jumonji 納刀待機・十文字
     #declare tag 9G.Skill.Kt.Draw.Jumonji 抜刀・十文字斬り
+    #declare tag 9G.Skill.Kt.Damage.Draw 居合斬り・怯み
+    #declare tag 9G.Skill.Kt.Sheathe.Counter カウンター居合斬り
     #declare tag 9G.Skill.Kt.JumpSlash 飛び込み斬り
     #declare tag 9G.Skill.Kt.Horizon 水平斬り
     #declare tag 9G.Skill.Kt.Horizon.Double 二刀流水平斬り
