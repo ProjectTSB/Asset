@@ -73,6 +73,7 @@
 # 移動
     execute if score @s 9G.AnimationTimer matches 84..100 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 84..88 at @s positioned ^ ^0.5 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 125..135 at @s positioned ^ ^0.05 ^-0.05 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
         execute if score @s 9G.AnimationTimer matches 84 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^6 ^-6 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 84 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/4.calc_vector_0
@@ -83,6 +84,7 @@
 # 演出
     execute if score @s 9G.AnimationTimer matches 84 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.5
     execute if score @s 9G.AnimationTimer matches 84 run particle flash ~ ~1 ~ 0 0 0 0 1
+    execute if score @s 9G.AnimationTimer matches 125 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
 # 斬撃演出
     execute if score @s 9G.AnimationTimer matches 95..100 at @s positioned ~ ~1 ~ run particle firework ~ ~ ~ 0.2 0.2 0.2 0.05 3
     execute if score @s 9G.AnimationTimer matches 95..100 at @s positioned ^-0.5 ^1 ^ rotated ~ 30 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.4.particle_spear_slash

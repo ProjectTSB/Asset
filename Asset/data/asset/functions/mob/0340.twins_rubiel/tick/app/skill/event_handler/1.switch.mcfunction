@@ -12,7 +12,7 @@
 
 ## 武器持ち替え
     ## 刀
-        # execute if entity @s[tag=8T.Skill.Rod.ToSword] run function
+        # execute if entity @s[tag=] run function
 
 ###########################################################################
 ## 刀
@@ -58,3 +58,6 @@
             execute if entity @s[tag=9G.Skill.Kt.BackJump] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_5_kt_backjump/1.main
 
 ## 掴み
+    execute if entity @s[tag=9G.Skill.Kt.Throw.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_1_kt_throw_start/1.main
+    ## 大外刈り
+        execute if entity @s[tag=9G.Skill.Kt.Throw] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/1.main

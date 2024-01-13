@@ -50,3 +50,5 @@
     #declare tag 9G.Skill.Kt.Horizon.Double 二刀流水平斬り
     #declare tag 9G.Skill.Kt.DashAttack 二刀流縦回転斬り
     #declare tag 9G.Skill.Kt.BackJump ナイフ投げ
+    #declare tag 9G.Skill.Kt.Throw.Start 掴み
+    #declare tag 9G.Skill.Kt.Throw 大外刈り
