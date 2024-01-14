@@ -6,7 +6,7 @@ function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_left/
 function animated_java:twins_sapphiel/zzzzzzzz/animations/4_0_hg_backstep_shot/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/5_0_hg_riderkick/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/5_1_hg_spinkick/pause_as_root
-function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_sault/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_kickcombo/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/6_0_hg_punch/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/6_1_hg_lowkick/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/6_2_hg_stepshot/pause_as_root
@@ -19,4 +19,5 @@ function animated_java:twins_sapphiel/zzzzzzzz/animations/8_2_hg_fullburst_end/p
 function animated_java:twins_sapphiel/zzzzzzzz/animations/9_0_hg_reload/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/9_1_hg_check/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/10_0_sg_idle/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_sault/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/launcher/pause_as_root

@@ -24,7 +24,6 @@
 
 # 演出
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback2 hostile @a ~ ~ ~ 2 0.8
-    execute at @a[tag=9G.Temp.Target.Attack] run particle explosion ~ ~0.5 ~ 0 0 0 0 1
     execute as @a[tag=9G.Temp.Target.Attack] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/5.3.damage_down
 
 # 終了

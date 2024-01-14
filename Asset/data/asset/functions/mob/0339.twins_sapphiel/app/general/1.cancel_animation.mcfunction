@@ -22,6 +22,7 @@
     tag @s remove 9F.Skill.Hg.Shot.MoveLeft
     tag @s remove 9F.Skill.Hg.Riderkick
     tag @s remove 9F.Skill.Hg.Spinkick
+    tag @s remove 9F.Skill.Hg.KickCombo
     tag @s remove 9F.Skill.Hg.Punch
     tag @s remove 9F.Skill.Hg.Lowkick
     tag @s remove 9F.Skill.Hg.Stepshot

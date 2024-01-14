@@ -27,9 +27,10 @@
     execute if score @s 9G.AnimationTimer matches 25..48 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 25..37 at @s run function asset:mob/0340.twins_rubiel/app/general/7.update_altitude_to_player
     execute if score @s 9G.AnimationTimer matches 25..37 at @s positioned ^ ^ ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 70..80 at @s positioned ^ ^0.02 ^-0.05 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 
 # 演出
-    execute if score @s 9G.AnimationTimer matches 25..37 run playsound block.grass.step hostile @a ~ ~ ~ 1 1.2
+    execute if score @s 9G.AnimationTimer matches 25..37 run playsound block.grass.step hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 25 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
     execute if score @s 9G.AnimationTimer matches 43 run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 2 2
     execute if score @s 9G.AnimationTimer matches 43 run particle crit ^ ^2.2 ^-1 0 0 0 1 10
@@ -38,6 +39,7 @@
     execute if score @s 9G.AnimationTimer matches 51 run playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 2 0.8
     execute if score @s 9G.AnimationTimer matches 53 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.3
     execute if score @s 9G.AnimationTimer matches 51 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 1.3
+    execute if score @s 9G.AnimationTimer matches 70 run playsound block.grass.step hostile @a ~ ~ ~ 2 1.2
 
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 51 positioned ^ ^1.5 ^2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/5.4.damage_pursuit

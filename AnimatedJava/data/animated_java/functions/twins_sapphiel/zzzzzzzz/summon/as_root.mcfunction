@@ -27,8 +27,8 @@ execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_0_hg_riderkick
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_0_hg_riderkick aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.5_0_hg_riderkick.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_1_hg_spinkick aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_1_hg_spinkick/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_1_hg_spinkick aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.5_1_hg_spinkick.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_sault aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_sault/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_sault aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.5_2_hg_sault.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_kickcombo aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_kickcombo/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_kickcombo aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.5_2_hg_kickcombo.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.6_0_hg_punch aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/6_0_hg_punch/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.6_0_hg_punch aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.6_0_hg_punch.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.6_1_hg_lowkick aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/6_1_hg_lowkick/apply_frame_as_root
@@ -53,6 +53,8 @@ execute if score #animation aj.i = $aj.twins_sapphiel.animation.9_1_hg_check aj.
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.9_1_hg_check aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.9_1_hg_check.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.10_0_sg_idle aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/10_0_sg_idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.10_0_sg_idle aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.10_0_sg_idle.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_sault aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_sault/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.5_2_hg_sault aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.5_2_hg_sault.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.launcher aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/launcher/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.launcher aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.launcher.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_sapphiel/on_summon/as_root

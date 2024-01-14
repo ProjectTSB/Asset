@@ -41,5 +41,9 @@
     execute if score @s 9G.AnimationTimer matches 69 run particle block quartz_block ~ ~0.1 ~ 0.5 0 0.5 0 10
     execute if score @s 9G.AnimationTimer matches 85 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
 
+# 怯み受け付け
+    execute if score @s 9G.AnimationTimer matches 60 run tag @s add 9G.State.Damage.Accept
+    execute if score @s 9G.AnimationTimer matches 100 run tag @s remove 9G.State.Damage.Accept
+
 # 終了
     execute if score @s 9G.AnimationTimer matches 103.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_1_kt_throw_start/2.end

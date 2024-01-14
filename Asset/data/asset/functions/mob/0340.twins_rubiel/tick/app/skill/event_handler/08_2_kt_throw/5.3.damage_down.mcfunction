@@ -15,6 +15,10 @@
 # 移動速度低下
     effect give @s slowness 3 10 true
 
+# 演出
+    execute at @s anchored eyes run particle explosion ~ ~0.5 ~ 0 0 0 0 1
+    execute at @s anchored eyes run particle cloud ~ ~0.5 ~ 0 0 0 0.2 20
+
 # ブロック設置
     execute at @s if block ~ ~1 ~ air run setblock ~ ~1 ~ barrier
     data modify storage api: Argument.ID set value 352

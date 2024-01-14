@@ -39,6 +39,7 @@
     #declare tag 9F.Skill.Hg.BackShot 引き撃ち
     #declare tag 9F.Skill.Hg.Riderkick ライダーキック
     #declare tag 9F.Skill.Hg.Spinkick 回し蹴り
+    #declare tag 9F.Skill.Hg.KickCombo 3段蹴り
     #declare tag 9F.Skill.Hg.Punch 正拳突き
     #declare tag 9F.Skill.Hg.Lowkick 足払い
     #declare tag 9F.Skill.Hg.Stepshot 踏みつけ射撃
