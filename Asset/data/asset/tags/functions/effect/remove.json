@@ -1,5 +1,32 @@
 {
     "values": [
-
+        "asset:effect/0001.attack_base_buff/_/remove",
+        "asset:effect/0002.attack_physical_buff/_/remove",
+        "asset:effect/0003.attack_magic_buff/_/remove",
+        "asset:effect/0004.attack_fire_buff/_/remove",
+        "asset:effect/0005.attack_water_buff/_/remove",
+        "asset:effect/0006.attack_thunder_buff/_/remove",
+        "asset:effect/0007.defense_base_buff/_/remove",
+        "asset:effect/0008.defense_physical_buff/_/remove",
+        "asset:effect/0009.defense_magic_buff/_/remove",
+        "asset:effect/0010.defense_fire_buff/_/remove",
+        "asset:effect/0011.defense_water_buff/_/remove",
+        "asset:effect/0012.defense_thunder_buff/_/remove",
+        "asset:effect/0013.heal_buff/_/remove",
+        "asset:effect/0014.receive_heal_buff/_/remove",
+        "asset:effect/0100.attack_base_debuff/_/remove",
+        "asset:effect/0101.attack_physical_debuff/_/remove",
+        "asset:effect/0102.attack_magic_debuff/_/remove",
+        "asset:effect/0103.attack_fire_debuff/_/remove",
+        "asset:effect/0104.attack_water_debuff/_/remove",
+        "asset:effect/0105.attack_thunder_debuff/_/remove",
+        "asset:effect/0106.defense_base_debuff/_/remove",
+        "asset:effect/0107.defense_physical_debuff/_/remove",
+        "asset:effect/0108.defense_magic_debuff/_/remove",
+        "asset:effect/0109.defense_fire_debuff/_/remove",
+        "asset:effect/0110.defense_water_debuff/_/remove",
+        "asset:effect/0111.defense_thunder_debuff/_/remove",
+        "asset:effect/0112.heal_debuff/_/remove",
+        "asset:effect/0113.receive_heal_debuff/_/remove"
     ]
 }
