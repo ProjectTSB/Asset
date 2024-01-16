@@ -4,7 +4,6 @@
 #> Private
 # @private
     #declare score_holder $3O.Tick
-    #declare storage asset:effect
 
 # 残り時間を取得
     execute store result score $3O.Tick Temporary run data get storage asset:context Duration
