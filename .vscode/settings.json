@@ -2019,7 +2019,7 @@
                         "    data modify storage asset:effect Name set value ",
                         "# 説明文 (TextComponentString[])",
                         "    data modify storage asset:effect Description set value ",
-                        "# 効果時間 (int) (default = API || 0)",
+                        "# 効果時間 (int) (default = API || error)",
                         "    # data modify storage asset:effect Duration set value ",
                         "# スタック (int) (default = API || 1)",
                         "    # data modify storage asset:effect Stack set value ",
