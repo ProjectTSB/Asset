@@ -7,7 +7,7 @@
     #declare storage asset:effect
 
 # 残り時間を取得
-    execute store result score $3O.Tick Temporary run data get storage asset:effect TargetEffect.Duration
+    execute store result score $3O.Tick Temporary run data get storage asset:context Duration
 # カウントダウン表示
     execute if score $3O.Tick Temporary matches 60 run title @s title {"text":"3","color":"dark_red","bold":true}
     execute if score $3O.Tick Temporary matches 60 run playsound block.ender_chest.open player @s ~ ~ ~ 1.0 0.5
