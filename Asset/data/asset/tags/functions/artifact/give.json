@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0790.aurora_boots/give/1.trigger",
+        "asset:artifact/0789.aurora_leggings/give/1.trigger",
+        "asset:artifact/0788.aurora_armor/give/1.trigger",
+        "asset:artifact/0787.aurora_helm/give/1.trigger",
         "asset:artifact/0900.pure_water_bracelet/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",

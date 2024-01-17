@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0790.aurora_boots/trigger/dis_equip/",
+        "asset:artifact/0789.aurora_leggings/trigger/dis_equip/",
+        "asset:artifact/0788.aurora_armor/trigger/dis_equip/",
+        "asset:artifact/0787.aurora_helm/trigger/dis_equip/",
         "asset:artifact/0736.sailor_hat/trigger/dis_equip/",
         "asset:artifact/0986.order_of_healing/trigger/dis_equip/",
         "asset:artifact/0980.thunder_charm/trigger/dis_equip/",
