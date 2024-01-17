@@ -37,7 +37,7 @@
     execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function lib:damage/
 
 # 鈍足
-    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run effect give @s slowness 10 3 true
+    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run effect give @s slowness 10 0 true
 
 # スコアとかストレージとかリセット
     function lib:damage/reset
