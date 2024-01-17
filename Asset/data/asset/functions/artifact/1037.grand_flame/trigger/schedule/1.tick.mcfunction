@@ -5,6 +5,7 @@
 # @within function
 #   asset:artifact/1037.grand_flame/trigger/3.main
 #   asset:artifact/1037.grand_flame/trigger/schedule/1.tick
+#   asset:artifact/1037.grand_flame/trigger/rejoin_process
 
 # Markerが雪玉に乗っている場合の処理(継続処理)
     execute as @e[type=marker,tag=ST.Marker] if predicate lib:is_vehicle at @s run function asset:artifact/1037.grand_flame/trigger/schedule/2.flying
