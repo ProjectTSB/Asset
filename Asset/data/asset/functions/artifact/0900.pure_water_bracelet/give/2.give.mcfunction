@@ -1,31 +1,31 @@
-#> asset:artifact/0959.whirlwind_scabbard/give/2.give
+#> asset:artifact/0900.pure_water_bracelet/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0959.whirlwind_scabbard/give/1.trigger
+# @within function asset:artifact/0900.pure_water_bracelet/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 959
+    data modify storage asset:artifact ID set value 900
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"旋風の鞘","color":"#7DFF9B"}'
+    data modify storage asset:artifact Name set value '{"text":"清水のブレスレット","color":"#B8F8FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"刀を抜くと旋風を纏わせる鞘","color":"#B0FFC5"}','{"text":"攻撃時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}']
+    data modify storage asset:artifact Lore set value ['{"text":"水の力を蓄えたブレスレット"}','{"text":"炎上すると稀に炎を消してくれる"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    # data modify storage asset:artifact CostText set value 
 # 使用回数 (int) (オプション)
-    # data modify storage asset:artifact RemainingCount set value
+    # data modify storage asset:artifact RemainingCount set value 
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "offhand"
+    data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+    data modify storage asset:artifact Trigger set value "onDamageFromBurn"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -33,25 +33,25 @@
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.ElementType set value [Fire,Water,Thunder,None]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.BypassResist set value
+    # data modify storage asset:artifact AttackInfo.BypassResist set value 
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
+    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value 
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
-# MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    # data modify storage asset:artifact AttackInfo.AttackRange set value 
+# MP消費量 (int) 
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
-    # data modify storage asset:artifact MPRequire set value
+    # data modify storage asset:artifact MPRequire set value 
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 5
+    # data modify storage asset:artifact LocalCooldown set value 
 # グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value
+    # data modify storage asset:artifact SpecialCooldown set value 
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisableCooldownMessage set value true
+    # data modify storage asset:artifact DisableCooldownMessage set value 
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    # data modify storage asset:artifact DisableMPMessage set value 
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
