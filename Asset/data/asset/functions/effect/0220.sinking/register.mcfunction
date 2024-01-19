@@ -30,5 +30,5 @@
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
     data modify storage asset:effect RequireClearLv set value 2
-# フィールド (本当はこういうのはスタックでやったほうがいい)
+# フィールド
     # data modify storage asset:effect Field
