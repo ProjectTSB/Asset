@@ -5,7 +5,7 @@
 # @within function asset:effect/0224.reflecting_sky/_/register
 
 # ExtendsSafe (boolean) (オプション)
-    data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value false
 # ID
     data modify storage asset:effect ID set value 224
 # 名前
