@@ -1,13 +1,13 @@
-#> asset:effect/0224.reflecting_sky/register
+#> asset:effect/0213.reflecting_sky/register
 #
 #
 #
-# @within function asset:effect/0224.reflecting_sky/_/register
+# @within function asset:effect/0213.reflecting_sky/_/register
 
 # ExtendsSafe (boolean) (オプション)
     data modify storage asset:effect ExtendsSafe set value false
 # ID
-    data modify storage asset:effect ID set value 224
+    data modify storage asset:effect ID set value 213
 # 名前
     data modify storage asset:effect Name set value '{"text":"映天","color":"#3643FF"}'
 # 説明文
