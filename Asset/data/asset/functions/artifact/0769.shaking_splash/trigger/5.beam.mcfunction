@@ -9,7 +9,7 @@
     playsound block.bubble_column.upwards_ambient player @a ~ ~ ~ 0.4 1.3 0
     playsound block.bubble_column.upwards_ambient player @a ~ ~ ~ 0.4 1.0 0
     playsound block.bubble_column.bubble_pop player @a ~ ~ ~ 1 0 0
-    playsound entity.wither.shoot player @a ~ ~ ~ 0.6 1.8 0
+    playsound entity.wither.shoot player @a ~ ~ ~ 0.3 1.8 0
     particle firework ~ ~0.6 ~ 0.3 0.3 0.3 0.25 20
 
 # 発射
