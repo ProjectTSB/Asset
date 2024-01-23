@@ -9,6 +9,7 @@
 
 # 演出
     particle dust 1 1 1000000000 0.5 ~ ~1.4 ~ 1 0.5 1 0 3 normal @a
+    particle dolphin ~ ~1.4 ~ 1.2 0.5 1.2 0 1 normal @a
 
 # スケジュールループ
     schedule function asset:artifact/0711.deep_sea_coral_crown/trigger/fullset/loop 1t replace
