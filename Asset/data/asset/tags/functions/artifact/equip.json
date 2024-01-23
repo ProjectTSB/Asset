@@ -1,7 +1,5 @@
 {
     "values": [
-        "asset:artifact/0778.jade_armor/trigger/1.trigger",
-        "asset:artifact/0775.jade_armor/trigger/1.trigger",
         "asset:artifact/0736.sailor_hat/trigger/1.trigger",
         "asset:artifact/0986.order_of_healing/trigger/1.trigger",
         "asset:artifact/0980.thunder_charm/trigger/1.trigger",
@@ -22,8 +20,10 @@
         "asset:artifact/0960.heavy_charm/trigger/1.trigger",
         "asset:artifact/0954.inverted_parachute/trigger/1.trigger",
         "asset:artifact/0930.z_flag/trigger/1.trigger",
+        "asset:artifact/0778.jade_armor/trigger/1.trigger",
         "asset:artifact/0777.jade_armor/trigger/1.trigger",
         "asset:artifact/0776.jade_armor/trigger/1.trigger",
+        "asset:artifact/0775.jade_armor/trigger/1.trigger",
         "asset:artifact/0646.thorn_helm/trigger/1.trigger",
         "asset:artifact/0647.thorn_armor/trigger/1.trigger",
         "asset:artifact/0648.thorn_leggings/trigger/1.trigger",

@@ -1,7 +1,5 @@
 {
     "values": [
-        "asset:artifact/0778.jade_armor/register",
-        "asset:artifact/0775.jade_armor/register",
         "asset:artifact/0900.pure_water_bracelet/register",
         "asset:artifact/0772.dolphin_amulet/register",
         "asset:artifact/0702.bright_lamp/register",
@@ -13,8 +11,10 @@
         "asset:artifact/0976.brave_sword/register",
         "asset:artifact/0959.whirlwind_scabbard/register",
         "asset:artifact/0233.reversal/register",
+        "asset:artifact/0775.jade_armor/register",
         "asset:artifact/0776.jade_armor/register",
         "asset:artifact/0777.jade_armor/register",
+        "asset:artifact/0778.jade_armor/register",
         "asset:artifact/0973.call_rod_spirit/register",
         "asset:artifact/0967.enhanced_protection/register",
         "asset:artifact/0953.meteor_rain/register",
