@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.10_0_sg_idle

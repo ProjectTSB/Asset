@@ -11,5 +11,8 @@
     # execute at @e[type=item_display,tag=9F.Target] run particle flame ~ ~1 ~ 0 2 0 0 5
     # execute at @e[type=item_display,tag=9G.Target] run particle flame ~ ~1 ~ 0 2 0 0 5
 
+# スキル
+    function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/1.switch
+
 # 紐づけ終了
     execute if entity @s[tag=9E.TargetEnabled] run function asset:mob/0338.corundum_twins/app/general/4.end_link_target

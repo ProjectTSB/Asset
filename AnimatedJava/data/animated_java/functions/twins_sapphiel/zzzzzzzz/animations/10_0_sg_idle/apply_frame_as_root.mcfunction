@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..60 run function animated_java:twins_sapphiel/zzzzzzzz/animations/10_0_sg_idle/tree/branch_0_60

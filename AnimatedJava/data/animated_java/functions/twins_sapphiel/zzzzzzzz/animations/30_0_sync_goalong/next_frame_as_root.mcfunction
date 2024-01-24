@@ -1,0 +1,1 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/30_0_sync_goalong/tick_animation

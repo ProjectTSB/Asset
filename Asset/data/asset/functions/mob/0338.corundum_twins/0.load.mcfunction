@@ -12,6 +12,7 @@
 
 # タイマー
     scoreboard objectives add 9E.Timer dummy
+    scoreboard objectives add 9E.SkillTimer dummy
 
 # カウンター
     scoreboard objectives add 9E.ActionCount dummy

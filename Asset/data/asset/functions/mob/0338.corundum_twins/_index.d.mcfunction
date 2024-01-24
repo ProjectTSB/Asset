@@ -11,6 +11,12 @@
         #declare tag 9E.Remove 死亡処理を行わずに消去する
         #declare tag 9E.TargetEnabled 紐づけ有効中
         #declare tag 9E.Marker.SpawnPoint 中心点
+    # 状態
+        #declare tag 9E.State.Await 待機中
+    # スキル
+        #declare tag 9E.Skill.GoAlong 集合
+        #declare tag 9E.Skill.Crossfire 交差攻撃
+            #declare tag 9E.Skill.Crossfire.Ruby.Hit 交差攻撃・ルビィ攻撃ヒット通知
 
 # サフィ用
     # 共通
