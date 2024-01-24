@@ -79,6 +79,10 @@ execute if score #animation aj.i = $aj.twins_rubiel.animation.new aj.id run func
 execute if score #animation aj.i = $aj.twins_rubiel.animation.new aj.id run scoreboard players operation @s aj.twins_rubiel.animation.new.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.6_2_katana_sheathe_iai aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/6_2_katana_sheathe_iai/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.6_2_katana_sheathe_iai aj.id run scoreboard players operation @s aj.twins_rubiel.animation.6_2_katana_sheathe_iai.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.30_0_sync_crossfire_0 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/30_0_sync_crossfire_0/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.30_0_sync_crossfire_0 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.30_0_sync_crossfire_0.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.30_1_sync_crossfire_1 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/30_1_sync_crossfire_1/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.30_1_sync_crossfire_1 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.30_1_sync_crossfire_1.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_rubiel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

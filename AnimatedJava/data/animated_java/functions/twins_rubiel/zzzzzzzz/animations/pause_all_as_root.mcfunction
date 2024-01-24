@@ -30,3 +30,5 @@ function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_1_idle_scythe_fun/p
 function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_0_idle_scythe_angry/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/new/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/6_2_katana_sheathe_iai/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/30_0_sync_crossfire_0/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/30_1_sync_crossfire_1/pause_as_root

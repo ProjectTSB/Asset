@@ -30,3 +30,5 @@ execute if entity @s[tag=aj.twins_rubiel.animation.10_0_1_idle_scythe_fun] run f
 execute if entity @s[tag=aj.twins_rubiel.animation.10_0_0_idle_scythe_angry] run function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_0_idle_scythe_angry/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.new] run function animated_java:twins_rubiel/zzzzzzzz/animations/new/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.6_2_katana_sheathe_iai] run function animated_java:twins_rubiel/zzzzzzzz/animations/6_2_katana_sheathe_iai/tick
+execute if entity @s[tag=aj.twins_rubiel.animation.30_0_sync_crossfire_0] run function animated_java:twins_rubiel/zzzzzzzz/animations/30_0_sync_crossfire_0/tick
+execute if entity @s[tag=aj.twins_rubiel.animation.30_1_sync_crossfire_1] run function animated_java:twins_rubiel/zzzzzzzz/animations/30_1_sync_crossfire_1/tick
