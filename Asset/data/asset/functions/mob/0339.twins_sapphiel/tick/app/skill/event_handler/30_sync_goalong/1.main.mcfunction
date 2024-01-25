@@ -9,7 +9,7 @@
     execute if score @s 9F.AnimationTimer matches 1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/30_sync_goalong/3.play_animation
 
 # 移動
-    execute if score @s 9F.AnimationTimer matches 15 at @e[type=area_effect_cloud,tag=9E.Temp.Target.Aec.0] positioned ^-1.5 ^ ^ run tp @s ~ ~ ~ ~ ~
+    execute if score @s 9F.AnimationTimer matches 15 at @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] positioned ^ ^ ^ run tp @s ~ ~ ~ ~ ~
 
 # 演出
     execute if score @s 9F.AnimationTimer matches 13 run playsound entity.phantom.flap hostile @a ~ ~ ~ 3 1.2

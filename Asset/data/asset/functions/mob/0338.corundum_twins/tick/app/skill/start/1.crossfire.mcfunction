@@ -7,7 +7,7 @@
 
 # 初期化
     scoreboard players set @s 9E.SkillTimer 0
-    tag @s add 9E.Skill.GoAlong
+    # tag @s add 9E.Skill.GoAlong
     tag @s add 9E.Skill.Crossfire
     tag @s remove 9E.State.Await
     tag @s remove 9E.State.GetAwait.Sappihel
