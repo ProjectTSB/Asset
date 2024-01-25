@@ -34,6 +34,7 @@
 
 # スキル
     #declare tag 9G.Skill.Start 登場
+    #declare tag 9G.Skill.Kt.Start 刀持ち替え
     #declare tag 9G.Skill.Kt.Idle 刀待機
     #declare tag 9G.Skill.Kt.Moveslash 移動斬り
     #declare tag 9G.Skill.Kt.MoveToSpear 移動突き

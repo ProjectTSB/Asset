@@ -33,6 +33,7 @@
 
 # スキル
     #declare tag 9F.Skill.Start 登場
+    #declare tag 9F.Skill.Hg.Start ハンドガン持ち替え
     #declare tag 9F.Skill.Hg.Idle 待機
     #declare tag 9F.Skill.Hg.Shot 射撃
     #declare tag 9F.Skill.Hg.Shot.MoveRight 側転射撃・右

@@ -16,6 +16,7 @@
 
 # タグ消去
     tag @s remove 9G.Skill.Start
+    tag @s remove 9G.Skill.Kt.Start
     tag @s remove 9G.Skill.Kt.Idle
     tag @s remove 9G.Skill.Kt.Moveslash
     tag @s remove 9G.Skill.Kt.MoveToSpear

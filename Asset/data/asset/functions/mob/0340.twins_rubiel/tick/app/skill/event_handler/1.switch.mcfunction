@@ -11,8 +11,8 @@
     execute if entity @s[tag=9G.Skill.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/00_start/1.main
 
 ## 武器持ち替え
-    ## 刀
-        # execute if entity @s[tag=] run function
+    # 刀
+        execute if entity @s[tag=9G.Skill.Kt.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/01_kt_start/1.main
 
 ###########################################################################
 ## 刀

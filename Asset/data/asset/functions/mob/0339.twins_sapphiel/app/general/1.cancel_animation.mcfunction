@@ -16,6 +16,7 @@
 
 # タグ消去
     tag @s remove 9F.Skill.Start
+    tag @s remove 9F.Skill.Hg.Start
     tag @s remove 9F.Skill.Hg.Idle
     tag @s remove 9F.Skill.Hg.Shot
     tag @s remove 9F.Skill.Hg.Shot.MoveRight
