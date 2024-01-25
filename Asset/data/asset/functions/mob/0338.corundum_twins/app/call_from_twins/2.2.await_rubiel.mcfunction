@@ -1,0 +1,9 @@
+#> asset:mob/0338.corundum_twins/app/call_from_twins/2.2.await_rubiel
+#
+# 双子側から呼び出される処理 ルビィ待機開始
+#
+# @within
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/2.end
+
+# 状態更新
+    tag @s add 9E.State.GetAwait.Rubiel

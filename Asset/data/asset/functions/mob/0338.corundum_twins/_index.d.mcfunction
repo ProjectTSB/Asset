@@ -11,8 +11,12 @@
         #declare tag 9E.Remove 死亡処理を行わずに消去する
         #declare tag 9E.TargetEnabled 紐づけ有効中
         #declare tag 9E.Marker.SpawnPoint 中心点
+    # 一時タグ
+        #declare tag 9E.Temp.Target.Aec.0 位置取得用AEC
     # 状態
         #declare tag 9E.State.Await 待機中
+        #declare tag 9E.State.GetAwait.Sappihel サフィ待機中
+        #declare tag 9E.State.GetAwait.Rubiel ルビィ待機中
     # スキル
         #declare tag 9E.Skill.GoAlong 集合
         #declare tag 9E.Skill.Crossfire 交差攻撃

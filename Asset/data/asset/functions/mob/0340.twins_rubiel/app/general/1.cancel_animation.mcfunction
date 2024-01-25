@@ -36,5 +36,9 @@
     tag @s remove 9G.Skill.Kt.Throw.Start
     tag @s remove 9G.Skill.Kt.Throw
 
+    tag @s remove 9G.Skill.Sync.Goalong
+    tag @s remove 9G.Skill.Sync.Crossfire
+    tag @s remove 9G.Skill.Sync.Crossfire.Upper
+
 # 終了
     tag @e[type=item_display,tag=9G.ModelRoot.Target] remove 9F.ModelRoot.Target

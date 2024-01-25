@@ -61,3 +61,9 @@
     execute if entity @s[tag=9G.Skill.Kt.Throw.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_1_kt_throw_start/1.main
     ## 大外刈り
         execute if entity @s[tag=9G.Skill.Kt.Throw] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/1.main
+
+###########################################################################
+## シンクロスキル
+
+## 集合
+    execute if entity @s[tag=9G.Skill.Sync.Goalong] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/1.main

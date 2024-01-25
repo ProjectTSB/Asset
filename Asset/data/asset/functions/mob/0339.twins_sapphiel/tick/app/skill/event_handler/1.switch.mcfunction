@@ -59,3 +59,10 @@
 
 ## リロード
     execute if entity @s[tag=9F.Skill.Hg.Reload] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/09_hg_reload/1.main
+
+
+###########################################################################
+## シンクロスキル
+
+## 集合
+    execute if entity @s[tag=9F.Skill.Sync.Goalong] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/30_sync_goalong/1.main

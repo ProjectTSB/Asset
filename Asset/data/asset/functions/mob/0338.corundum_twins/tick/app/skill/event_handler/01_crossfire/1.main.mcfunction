@@ -22,3 +22,5 @@
 # ルビィから通知が来た場合、サフィに指示
 
 # 終了
+
+execute if score @s 9E.SkillTimer matches 1 run say crossfire

@@ -33,5 +33,9 @@
     tag @s remove 9F.Skill.Hg.Fullburst.Main
     tag @s remove 9F.Skill.Hg.Fullburst.End
 
+    tag @s remove 9F.Skill.Sync.Goalong
+    tag @s remove 9F.Skill.Sync.Crossfire
+    tag @s remove 9F.Skill.Sync.Crossfire.Pursuit
+
 # 終了
     tag @e[type=item_display,tag=9F.ModelRoot.Target] remove 9F.ModelRoot.Target

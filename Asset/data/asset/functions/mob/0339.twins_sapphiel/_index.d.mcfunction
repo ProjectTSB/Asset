@@ -9,6 +9,7 @@
     # 共通
         #declare tag 9E.Root 処理用中心点
         #declare tag 9E.Remove 死亡処理を行わずに消去する
+        #declare tag 9E.Temp.Target.Aec.0 中心点が召喚する位置取得用AEC
 
 # 共通
     #declare tag 9F.Root 処理用wither_skeleton
@@ -50,3 +51,8 @@
     #declare tag 9F.Skill.Hg.Fullburst.Main フルバースト
     #declare tag 9F.Skill.Hg.Fullburst.End フルバースト
     #declare tag 9F.Skill.Hg.Reload リロード
+
+# シンクロスキル
+    #declare tag 9F.Skill.Sync.Goalong 集合
+    #declare tag 9F.Skill.Sync.Crossfire 交差攻撃
+    #declare tag 9F.Skill.Sync.Crossfire.Pursuit 交差攻撃・追撃

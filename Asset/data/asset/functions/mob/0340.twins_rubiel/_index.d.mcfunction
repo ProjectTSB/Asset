@@ -8,6 +8,7 @@
     # 共通
         #declare tag 9E.Root 処理用中心点
         #declare tag 9E.Remove 死亡処理を行わずに消去する
+        #declare tag 9E.Temp.Target.Aec.0 中心点が召喚する位置取得用AEC
 
 # 共通
     #declare tag 9G.Root 処理用wither_skeleton
@@ -52,3 +53,8 @@
     #declare tag 9G.Skill.Kt.BackJump ナイフ投げ
     #declare tag 9G.Skill.Kt.Throw.Start 掴み
     #declare tag 9G.Skill.Kt.Throw 大外刈り
+
+# シンクロスキル
+    #declare tag 9G.Skill.Sync.Goalong 集合
+    #declare tag 9G.Skill.Sync.Crossfire 交差攻撃
+    #declare tag 9G.Skill.Sync.Crossfire.Upper 交差攻撃・斬り上げ
