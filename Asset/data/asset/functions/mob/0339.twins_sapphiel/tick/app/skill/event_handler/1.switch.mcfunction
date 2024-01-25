@@ -70,3 +70,4 @@
 ## 交差攻撃
     execute if entity @s[tag=9F.Skill.Sync.Crossfire] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/31_1_sync_crossfire/1.main
     ## 交差攻撃・追撃
+        execute if entity @s[tag=9F.Skill.Sync.Crossfire.Pursuit] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/31_2_sync_crossfire_pursuit/1.main

@@ -24,6 +24,8 @@
 
 ## 追撃
 # ルビィから通知が来た場合、サフィに指示
-    execute if entity @s[tag=9E.Skill.Crossfire.Ruby.Hit] if score @s 9E.SkillTimer matches 2
+    execute if entity @s[tag=9E.Skill.Crossfire.Ruby.Hit] if score @s 9E.SkillTimer matches 2 as @e[type=wither_skeleton,tag=9F.Root,tag=9F.Target] at @s run function asset:mob/0339.twins_sapphiel/app/call_from_root/skill/01_crossfire/2.start_pursuit
+    execute if entity @s[tag=9E.Skill.Crossfire.Ruby.Hit] if score @s 9E.SkillTimer matches 2 run tag @s remove 9E.Skill.Crossfire.Ruby.Hit
 
 # 終了
+    execute if score @s 9E.SkillTimer matches 3.. run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/01_crossfire/2.end

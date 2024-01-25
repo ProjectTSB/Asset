@@ -1,13 +1,13 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/2.end
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/01_crossfire/2.end
 #
-# アニメーションのイベントハンドラ Hg待機
+# スキルイベントハンドラ 交差攻撃
 #
-# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/1.main
+# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/01_crossfire/1.main
 
 # スキル判別用タグ消去
-    tag @s remove 9F.Skill.Start
-# 待機開始
-    tag @s add 9F.State.Await
+    tag @s remove 9E.Skill.Crossfire
 
 # タイマーリセット
-    scoreboard players set @s 9F.AnimationTimer -1
+    scoreboard players set @s 9E.SkillTimer 0
+
+say crossfire end
