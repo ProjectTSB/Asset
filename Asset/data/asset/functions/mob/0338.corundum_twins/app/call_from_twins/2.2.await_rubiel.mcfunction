@@ -4,6 +4,7 @@
 #
 # @within
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/2.end
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/2.end
 
 # 状態更新
     tag @s add 9E.State.GetAwait.Rubiel

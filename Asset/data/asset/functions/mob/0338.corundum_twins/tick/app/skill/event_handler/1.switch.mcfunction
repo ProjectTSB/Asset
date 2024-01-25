@@ -13,7 +13,6 @@
 # 集合
     execute if entity @s[tag=9E.Skill.GoAlong] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/00_goalong/1.main
 
-
 ###########################################################################
 ## シンクロ攻撃
 

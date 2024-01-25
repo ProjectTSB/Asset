@@ -11,7 +11,9 @@
 # 終了まで待機
 
 ## 移動射撃
-# 双子に攻撃指示
+# 双子に指示
+    execute if score @s 9E.SkillTimer matches 1 as @e[type=wither_skeleton,tag=9F.Root,tag=9F.Target] at @s run function asset:mob/0339.twins_sapphiel/app/call_from_root/skill/01_crossfire/1.start
+    execute if score @s 9E.SkillTimer matches 1 as @e[type=wither_skeleton,tag=9G.Root,tag=9G.Target] at @s run function asset:mob/0340.twins_rubiel/app/call_from_root/skill/01_crossfire/1.start
 
 # 終了まで待機
 
@@ -22,5 +24,3 @@
 # ルビィから通知が来た場合、サフィに指示
 
 # 終了
-
-execute if score @s 9E.SkillTimer matches 1 run say crossfire

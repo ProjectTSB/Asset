@@ -67,3 +67,8 @@
 
 ## 集合
     execute if entity @s[tag=9G.Skill.Sync.Goalong] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/1.main
+
+## 交差攻撃
+    execute if entity @s[tag=9G.Skill.Sync.Crossfire] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_1_sync_crossfire/1.main
+    ## 交差攻撃・斬り上げ
+        execute if entity @s[tag=9G.Skill.Sync.Crossfire.Upper] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/1.main
