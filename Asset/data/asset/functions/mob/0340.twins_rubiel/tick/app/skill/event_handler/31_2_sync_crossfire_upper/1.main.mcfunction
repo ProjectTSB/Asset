@@ -9,10 +9,11 @@
     execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/3.play_animation
 
 # 移動
+    execute if score @s 9G.AnimationTimer matches 1..4 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 1..15 at @s run function asset:mob/0340.twins_rubiel/app/general/7.update_altitude_to_player
-    execute if score @s 9G.AnimationTimer matches 1..8 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s positioned ^ ^ ^0.8 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 1..8 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s positioned ^ ^ ^1.5 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 1..15 at @s positioned ^ ^ ^0.2 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
-    execute if score @s 9G.AnimationTimer matches 34..46 at @s positioned ^ ^0.1 ^-0.08 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 34..46 at @s positioned ^ ^0.05 ^-0.08 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 47..66 at @s positioned ^ ^-0.03 ^-0.02 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 
 # 演出
