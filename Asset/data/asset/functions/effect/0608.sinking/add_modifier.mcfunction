@@ -1,6 +1,6 @@
 #> asset:effect/0608.sinking/add_modifier
 #
-#
+# 補正を追加
 #
 # @within function
 #   asset:effect/0608.sinking/given/

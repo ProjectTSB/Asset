@@ -1,6 +1,6 @@
 #> asset:effect/0608.sinking/remove_modifier
 #
-#
+# 補正を削除
 #
 # @within function
 #   asset:effect/0608.sinking/end/
