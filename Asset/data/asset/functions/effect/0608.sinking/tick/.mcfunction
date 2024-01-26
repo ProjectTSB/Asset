@@ -15,4 +15,4 @@
 
 # リセット
     scoreboard players reset $Lv Temporary
-    data remove storage asset:temp GW.Lv
+    data remove storage asset:temp GW
