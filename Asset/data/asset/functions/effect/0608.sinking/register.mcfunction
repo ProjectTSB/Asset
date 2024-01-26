@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"沈潜","color":"blue"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"与えるダメージが25%減少する。"}'
+    data modify storage asset:effect Description set value '{"Lv x 25%ダメージが減少し、Lvの値だけ鈍足と採掘速度低下を得る"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (int) (default = API || 1)
@@ -23,7 +23,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     data modify storage asset:effect MaxDuration set value 100
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 3
+    data modify storage asset:effect MaxStack set value 4
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
