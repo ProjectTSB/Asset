@@ -6,10 +6,6 @@
 #   asset:effect/0608.sinking/given/
 #   asset:effect/0608.sinking/re-given/
 
-#> Private
-# @private
-    #declare score_holder $Lv
-
 # Lvを取得
     execute store result score $Lv Temporary run data get storage asset:context Stack
 
