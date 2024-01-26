@@ -11,10 +11,6 @@
 # 第一に攻撃対象の全effectをclear
     effect clear @s
 
-# 次にデバフ
-    effect give @s slowness 5 1 true
-    effect give @s mining_fatigue 5 1 true
-
 # ダメージ
     data modify storage lib: Argument.Damage set value 37f
     data modify storage lib: Argument.AttackType set value "Physical"
