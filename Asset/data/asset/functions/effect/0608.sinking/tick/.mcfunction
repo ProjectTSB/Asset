@@ -5,4 +5,7 @@
 # @within function asset:effect/0608.sinking/_/tick
 
 # 演出
-    particle end_rod ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @a
+    particle dust 0.149 0.682 0.741 1 ~ ~1.2 ~ 0.6 0.3 0.6 0 3 normal @a
+
+# Lvを取得
+    function asset:effect/0608.sinking/tick/debuff.m with storage asset:context
