@@ -25,6 +25,10 @@
 # リセット
     function lib:damage/reset
 
-# 沈潜エフェクトを付与
-    data modify storage api: Argument.ID set value 220
+# 難易度の値を取得
+    function api:global_vars/get_difficulty
+
+# (難易度の値)Lvの沈潜エフェクトを付与
+    data modify storage api: Argument.ID set value 608
+    data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     function api:entity/mob/effect/give
