@@ -9,9 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 昇天判定
-    execute if predicate lib:random_pass_per/5 run kill @s
-
 # 回復効果
     # 回復する量 = 8
         data modify storage lib: Argument.Heal set value 18f
@@ -24,3 +21,6 @@
 # 演出
     particle minecraft:happy_villager ~ ~ ~ 1 1 1 1 100 normal @s
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 0.1
+
+# 昇天する
+    execute if predicate lib:random_pass_per/5 run function asset:artifact/0247.heavenly_herb/trigger/4.ascension
