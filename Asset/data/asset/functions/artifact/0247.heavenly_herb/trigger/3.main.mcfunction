@@ -9,9 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 昇天する
+# 5%の確率で昇天する
     execute if predicate lib:random_pass_per/5 run function asset:artifact/0247.heavenly_herb/trigger/4.ascension
-    
+
 # 回復効果
     data modify storage lib: Argument.Heal set value 18f
     function lib:heal/modifier
