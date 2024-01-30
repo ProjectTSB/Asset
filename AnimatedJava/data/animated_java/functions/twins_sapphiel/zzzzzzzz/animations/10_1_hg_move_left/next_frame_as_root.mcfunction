@@ -1,0 +1,1 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/10_1_hg_move_left/tick_animation

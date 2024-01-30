@@ -60,6 +60,17 @@
 ## リロード
     execute if entity @s[tag=9F.Skill.Hg.Reload] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/09_hg_reload/1.main
 
+## ステップ
+    # 右
+    execute if entity @s[tag=9F.Skill.Hg.Step.Right] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_1_hg_move_right/1.main
+    # 左
+    execute if entity @s[tag=9F.Skill.Hg.Step.Left] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_2_hg_move_left/1.main
+    # 右左
+    execute if entity @s[tag=9F.Skill.Hg.Step.Right2Left] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_3_hg_move_right2left/1.main
+    # 左右
+    execute if entity @s[tag=9F.Skill.Hg.Step.Left2Right] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_4_hg_move_left2right/1.main
+    # 後
+    execute if entity @s[tag=9F.Skill.Hg.Step.Back] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_5_hg_move_back/1.main
 
 ###########################################################################
 ## シンクロスキル

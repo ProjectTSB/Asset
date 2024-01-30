@@ -34,6 +34,11 @@
     tag @s remove 9F.Skill.Hg.Fullburst.Main
     tag @s remove 9F.Skill.Hg.Fullburst.End
     tag @s remove 9F.Skill.Hg.Reload
+    tag @s remove 9F.Skill.Hg.Step.Right
+    tag @s remove 9F.Skill.Hg.Step.Left
+    tag @s remove 9F.Skill.Hg.Step.Right2Left
+    tag @s remove 9F.Skill.Hg.Step.Left2Right
+    tag @s remove 9F.Skill.Hg.Step.Back
 
     tag @s remove 9F.Skill.Sync.Goalong
     tag @s remove 9F.Skill.Sync.Crossfire

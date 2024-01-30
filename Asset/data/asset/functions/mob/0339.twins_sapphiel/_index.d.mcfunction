@@ -52,6 +52,11 @@
     #declare tag 9F.Skill.Hg.Fullburst.Main フルバースト
     #declare tag 9F.Skill.Hg.Fullburst.End フルバースト
     #declare tag 9F.Skill.Hg.Reload リロード
+    #declare tag 9F.Skill.Hg.Step.Right ステップ・右
+    #declare tag 9F.Skill.Hg.Step.Left ステップ・左
+    #declare tag 9F.Skill.Hg.Step.Right2Left ステップ・右左
+    #declare tag 9F.Skill.Hg.Step.Left2Right ステップ・左右
+    #declare tag 9F.Skill.Hg.Step.Back ステップ・後
 
 # シンクロスキル
     #declare tag 9F.Skill.Sync.Goalong 集合

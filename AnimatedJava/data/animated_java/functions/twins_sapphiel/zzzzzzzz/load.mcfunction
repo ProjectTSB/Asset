@@ -25,6 +25,9 @@ scoreboard objectives add aj.twins_sapphiel.animation.8_0_hg_fullburst_start.loc
 scoreboard objectives add aj.twins_sapphiel.animation.8_1_hg_fullburst_shot.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.8_2_hg_fullburst_end.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.9_0_hg_reload.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_0_hg_move_right.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_1_hg_move_left.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_2_hg_move_back.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.12_0_sg_idle.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.launcher.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.30_0_sync_goalong.local_anim_time dummy
@@ -50,6 +53,9 @@ scoreboard objectives add aj.twins_sapphiel.animation.8_0_hg_fullburst_start.loo
 scoreboard objectives add aj.twins_sapphiel.animation.8_1_hg_fullburst_shot.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.8_2_hg_fullburst_end.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.9_0_hg_reload.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_0_hg_move_right.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_1_hg_move_left.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.10_2_hg_move_back.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.12_0_sg_idle.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.launcher.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.30_0_sync_goalong.loop_mode dummy
@@ -75,11 +81,14 @@ scoreboard players set $aj.twins_sapphiel.animation.8_0_hg_fullburst_start aj.id
 scoreboard players set $aj.twins_sapphiel.animation.8_1_hg_fullburst_shot aj.id 17
 scoreboard players set $aj.twins_sapphiel.animation.8_2_hg_fullburst_end aj.id 18
 scoreboard players set $aj.twins_sapphiel.animation.9_0_hg_reload aj.id 19
-scoreboard players set $aj.twins_sapphiel.animation.12_0_sg_idle aj.id 20
-scoreboard players set $aj.twins_sapphiel.animation.launcher aj.id 21
-scoreboard players set $aj.twins_sapphiel.animation.30_0_sync_goalong aj.id 22
-scoreboard players set $aj.twins_sapphiel.animation.31_0_sync_crossfire_0 aj.id 23
-scoreboard players set $aj.twins_sapphiel.animation.31_1_sync_crossfire_1 aj.id 24
+scoreboard players set $aj.twins_sapphiel.animation.10_0_hg_move_right aj.id 20
+scoreboard players set $aj.twins_sapphiel.animation.10_1_hg_move_left aj.id 21
+scoreboard players set $aj.twins_sapphiel.animation.10_2_hg_move_back aj.id 22
+scoreboard players set $aj.twins_sapphiel.animation.12_0_sg_idle aj.id 23
+scoreboard players set $aj.twins_sapphiel.animation.launcher aj.id 24
+scoreboard players set $aj.twins_sapphiel.animation.30_0_sync_goalong aj.id 25
+scoreboard players set $aj.twins_sapphiel.animation.31_0_sync_crossfire_0 aj.id 26
+scoreboard players set $aj.twins_sapphiel.animation.31_1_sync_crossfire_1 aj.id 27
 scoreboard players set $aj.twins_sapphiel.variant.default aj.id 0
 scoreboard players set $aj.twins_sapphiel.variant.blink aj.id 1
 scoreboard players set $aj.twins_sapphiel.variant.stun aj.id 2
@@ -87,6 +96,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.twins_sapphiel.export_version aj.i 452720038
+scoreboard players set aj.twins_sapphiel.export_version aj.i 280159857
 scoreboard players reset * aj.twins_sapphiel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.twins_sapphiel.root] run function animated_java:twins_sapphiel/zzzzzzzz/on_load
