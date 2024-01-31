@@ -10,7 +10,6 @@
 
 # 周囲のプレイヤーをスタンさせる
     execute positioned ~ ~0.3 ~ run function asset:mob/0156.infringement/tick/vfx
-    effect give @a[distance=..5] slowness 3 10
 
 # 演出
     particle explosion_emitter ~ ~ ~ 0 0 0 1 2
@@ -24,8 +23,8 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
     function lib:damage/reset
 
-# 侵害エフェクトを付与
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
+# ノーマル以上で侵害エフェクトを付与
+    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
 
 # キル
     kill @s
