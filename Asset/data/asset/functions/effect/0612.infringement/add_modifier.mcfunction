@@ -6,7 +6,8 @@
 #   asset:effect/0612.infringement/given/
 #   asset:effect/0612.infringement/re-given/
 
-# ノクバ耐性最大を付与
+# 移動速度-100%とノクバ耐性最大を付与
+    attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-026400000000 "612,KBResistance" -1 multiply
     attribute @s generic.knockback_resistance modifier add 00000001-0000-0003-0000-026400000000 "612,KBResistance" 10 add
 
 # Lvを取得
