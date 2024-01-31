@@ -27,6 +27,6 @@
 # 補正functionを実行
     function lib:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[tag=Victim,distance=..6] run function lib:damage/
 # リセット
     function lib:damage/reset
