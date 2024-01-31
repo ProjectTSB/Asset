@@ -15,7 +15,6 @@
     playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 2 2
     playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 2 2
 
-
 # 与えるダメージ
     execute if predicate api:global_vars/difficulty/max/normal unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 40f
     execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 60f
