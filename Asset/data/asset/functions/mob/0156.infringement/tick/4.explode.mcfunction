@@ -24,5 +24,8 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
     function lib:damage/reset
 
+# 侵害エフェクトを付与
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
+
 # キル
     kill @s
