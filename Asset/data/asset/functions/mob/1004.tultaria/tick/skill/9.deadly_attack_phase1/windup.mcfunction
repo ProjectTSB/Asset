@@ -7,5 +7,8 @@
 # 待機モーション停止
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral/stop
 
+# モデルをプレイヤーに向ける
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+
 # 必殺技の予備動作をスタート
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/deadly_windup/play

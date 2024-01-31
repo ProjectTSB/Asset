@@ -51,7 +51,7 @@
     execute if score @s RW.Tick matches 145 run function asset:mob/1004.tultaria/tick/skill/9.deadly_attack_phase1/stop_windup
 
 # 弾を発射
-    execute if score @s RW.Tick matches 120..240 at @e[type=marker,tag=RW.BodyMarker,distance=..5,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/9.deadly_attack_phase1/shoot_tick
+    execute if score @s RW.Tick matches 120..240 positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/9.deadly_attack_phase1/shoot_tick
 
 # 構えを戻す
     execute if score @s RW.Tick matches 260 run function asset:mob/1004.tultaria/tick/skill/9.deadly_attack_phase1/end_attack
