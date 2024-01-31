@@ -15,7 +15,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 28f
+    data modify storage lib: Argument.Damage set value 30f
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 40f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
