@@ -16,5 +16,5 @@
 # ハード以上で鈍足を無効化
     execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
 
-# 発狂して死ぬ
-    execute if score @s 4A.MadnessTime matches 370.. run kill @s
+# 発狂して奈落行き
+    execute if score @s 4A.MadnessTime matches 370.. run tp @s ~ -1000 ~
