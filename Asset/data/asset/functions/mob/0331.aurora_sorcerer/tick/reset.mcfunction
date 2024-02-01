@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0331.aurora_sorcerer/tick/3.skill1_shoot
+# @within function asset:mob/0331.aurora_sorcerer/tick/3.shoot
 
 # リセット
     scoreboard players set @s 97.Skill -60

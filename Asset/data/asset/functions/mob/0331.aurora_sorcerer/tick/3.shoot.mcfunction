@@ -1,4 +1,4 @@
-#> asset:mob/0331.aurora_sorcerer/tick/3.skill1_shoot
+#> asset:mob/0331.aurora_sorcerer/tick/3.shoot
 #
 # スキル1の処理
 #

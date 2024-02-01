@@ -20,11 +20,8 @@
     scoreboard players add @s 97.Skill 1
     execute if entity @s[scores={97.MotionCT=1..}] run scoreboard players remove @s 97.MotionCT 1
 
-# Skillスコアが0の時、スキル1かスキル2に分岐
-    #execute if entity @s[scores={97.Skill=0}] if predicate lib:random_pass_per/40 run tag @s add 97.Skill2
 # ノクバ耐性を最大にする
     execute if entity @s[scores={97.Skill=0}] run attribute @s generic.knockback_resistance base set 10
 
 # スキル実行
-    execute if entity @s[tag=!97.Skill2,scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/3.skill1_shoot
-    execute if entity @s[tag=97.Skill2] run function asset:mob/0331.aurora_sorcerer/tick/4.skill2_beam
+    execute if entity @s[scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/3.shoot
