@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0713.deep_sea_coral_leggings/give/1.trigger",
+        "asset:artifact/0712.deep_sea_coral_raiment/give/1.trigger",
+        "asset:artifact/0714.deep_sea_coral_boots/give/1.trigger",
+        "asset:artifact/0711.deep_sea_coral_crown/give/1.trigger",
         "asset:artifact/0900.pure_water_bracelet/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",
