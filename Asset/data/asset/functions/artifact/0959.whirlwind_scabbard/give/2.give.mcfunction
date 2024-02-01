@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"旋風の鞘","color":"#7DFF9B"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"刀を抜くと旋風を纏わせる鞘","color":"#B0FFC5"}','{"text":"攻撃時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}']
+    data modify storage asset:artifact Lore set value ['{"text":"抜いた刀に旋風を纏わせる鞘。","color":"#B0FFC5"}','{"text":"攻撃時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 2
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
