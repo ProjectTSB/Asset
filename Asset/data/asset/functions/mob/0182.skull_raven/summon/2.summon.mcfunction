@@ -16,7 +16,9 @@
     data modify storage asset:mob Name set value '{"text":"スカルレイブン","color":"dark_gray"}'
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1}]}}
+    # ノーマル以上でパンチ弓になる
+        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b}
+        execute if predicate api:global_vars/difficulty/min/normal run data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1}]}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
