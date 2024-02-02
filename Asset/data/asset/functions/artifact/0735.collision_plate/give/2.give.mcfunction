@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"コリジョンプレート","color":"gray"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"防御力で攻撃する剣","color":"gray"}','[{"text":"防御は最大の","color":"gray"},{"text":"攻撃","color":"red","bold":true},{"text":"である！","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"防御力で攻撃する剣。","color":"gray"}','[{"text":"防御は最大の","color":"gray"},{"text":"攻撃","color":"red","bold":true},{"text":"である！","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
