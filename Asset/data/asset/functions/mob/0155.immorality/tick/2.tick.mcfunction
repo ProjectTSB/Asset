@@ -13,5 +13,7 @@
 # 発砲
     execute if entity @p[distance=..20] if entity @s[scores={4B.ShotTime=10..38}] anchored eyes positioned ^-0.3 ^ ^0.5 run function asset:mob/0155.immorality/tick/4.shot_interval
 
-# 終了
+# リセット
+# ノーマル以下なら早めに終わる
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={4B.ShotTime=26..}] run function asset:mob/0155.immorality/tick/8.reset
     execute if entity @s[scores={4B.ShotTime=38..}] run function asset:mob/0155.immorality/tick/8.reset
