@@ -1,6 +1,6 @@
 #> asset:mob/0154.ruin/tick/3.ready
 #
-#
+# 形態変化する
 #
 # @within function asset:mob/0154.ruin/tick/2.tick
 

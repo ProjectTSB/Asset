@@ -1,6 +1,6 @@
 #> asset:mob/0154.ruin/tick/4.madness
 #
-#
+# 形態変化後のtick処理
 #
 # @within function asset:mob/0154.ruin/tick/2.tick
 
@@ -16,5 +16,7 @@
 # ハード以上で鈍足を無効化
     execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
 
-# 発狂して奈落行き
-    execute if score @s 4A.MadnessTime matches 370.. run tp @s ~ -1000 ~
+# 発狂して自滅
+# ノーマル以下でkill、ハードで奈落
+    execute if score @s 4A.MadnessTime matches 370.. if predicate api:global_vars/difficulty/max/normal run kill @s
+    execute if score @s 4A.MadnessTime matches 370.. if predicate api:global_vars/difficulty/min/hard run tp @s ~ -1000 ~
