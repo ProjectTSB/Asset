@@ -16,10 +16,12 @@
     playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 2 2
 
 # 与えるダメージ
-    execute if predicate api:global_vars/difficulty/max/normal unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 40f
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 60f
-    execute if predicate api:global_vars/difficulty/min/hard unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 48f
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 76f
+    # 形態変化前
+        execute if predicate api:global_vars/difficulty/max/normal unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 40f
+        execute if predicate api:global_vars/difficulty/min/hard unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 48f
+    # 形態変化後
+        execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 60f
+        execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 76f
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
