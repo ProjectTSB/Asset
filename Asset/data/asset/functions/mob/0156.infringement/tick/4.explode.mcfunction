@@ -28,5 +28,7 @@
 # ノーマル以上で侵害エフェクトを付与
     execute if predicate api:global_vars/difficulty/min/normal as @a[gamemode=!spectator,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
 
-# 奈落行き
-    tp @s ~ -1000 ~
+# 自滅する
+# ノーマル以下でkill @s ハードで奈落
+    execute if predicate api:global_vars/difficulty/max/normal run kill @s
+    execute if predicate api:global_vars/difficulty/min/hard run tp @s ~ -1000 ~
