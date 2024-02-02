@@ -5,7 +5,7 @@
 # @within function asset:mob/0155.immorality/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathTime:19s,DeathLootTable:"asset:mob/death/0155.immorality"}
+    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathTime:19s,DeathLootTable:"asset:mob/death/0155.immorality"}
 # ID (int)
     data modify storage asset:mob ID set value 155
 # Type (string) Wikiを参照
@@ -59,4 +59,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.6
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+    execute as @e[type=zombie,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
