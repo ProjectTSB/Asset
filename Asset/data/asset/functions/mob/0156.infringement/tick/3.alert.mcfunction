@@ -1,6 +1,6 @@
 #> asset:mob/0156.infringement/tick/3.alert
 #
-#
+# 形態変化する
 #
 # @within function asset:mob/0156.infringement/tick/2.tick
 

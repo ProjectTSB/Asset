@@ -1,6 +1,6 @@
 #> asset:mob/0156.infringement/tick/5.debuff
 #
-#
+# 自爆時のデバフを付与
 #
 # @within function asset:mob/0156.infringement/tick/4.explode
 

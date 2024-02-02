@@ -1,6 +1,6 @@
 #> asset:mob/0156.infringement/tick/4.explode
 #
-#
+# 自爆する
 #
 # @within function asset:mob/0156.infringement/tick/2.tick
 
