@@ -1,4 +1,4 @@
-#> asset:mob/0155.immorality/tick/7.reset
+#> asset:mob/0155.immorality/tick/8.reset
 #
 # リセット処理
 #
