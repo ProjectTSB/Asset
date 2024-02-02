@@ -18,6 +18,7 @@
     scoreboard players operation $RandomDamage Temporary %= $11 Const
 # スコアセット
     scoreboard players operation @s 4B.ShotTime = $RandomDamage Temporary
+    scoreboard players remove @s 4B.ShotTime 80
 
 # リセット処理
     scoreboard players reset $RandomDamage Temporary
