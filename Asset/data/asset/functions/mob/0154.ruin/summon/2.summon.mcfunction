@@ -5,7 +5,7 @@
 # @within function asset:mob/0154.ruin/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0154.ruin"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0154.ruin"}
 # ID (int)
     data modify storage asset:mob ID set value 154
 # Type (string) Wikiを参照
