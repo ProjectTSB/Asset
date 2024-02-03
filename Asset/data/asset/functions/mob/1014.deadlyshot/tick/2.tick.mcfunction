@@ -12,7 +12,7 @@
     scoreboard players add @s S6.Tick 1
 
 # 範囲内ならホーミングじみた移動
-    execute facing entity @p[distance=..30] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-3000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
+    execute facing entity @p[distance=..30] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-3000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
 
 # パーティクル
     particle dust 0.816 0 1 0.5 ~ ~ ~ 0 0 0 0 1
