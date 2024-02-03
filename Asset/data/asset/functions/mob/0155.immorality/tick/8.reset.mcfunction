@@ -6,19 +6,19 @@
 
 #> Private
 # @private
-    #declare score_holder $RandomDamage
+    #declare score_holder $Random
 
 # 自身のNoAIを解除
     data modify entity @s NoAI set value 0b
 
 # 次に攻撃するタイミングをランダムにする
 # 疑似乱数取得
-    execute store result score $RandomDamage Temporary run function lib:random/
+    execute store result score $Random Temporary run function lib:random/
 # 剰余算する
-    scoreboard players operation $RandomDamage Temporary %= $11 Const
+    scoreboard players operation $Random Temporary %= $11 Const
 # スコアセット
-    scoreboard players operation @s 4B.ShotTime = $RandomDamage Temporary
+    scoreboard players operation @s 4B.ShotTime = $Random Temporary
     scoreboard players remove @s 4B.ShotTime 80
 
 # リセット処理
-    scoreboard players reset $RandomDamage Temporary
+    scoreboard players reset $Random Temporary
