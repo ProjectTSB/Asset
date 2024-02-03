@@ -17,6 +17,4 @@
     execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
 
 # 発狂して自滅
-# ノーマル以下でkill、ハードで奈落
-    execute if score @s 4A.MadnessTime matches 370.. if predicate api:global_vars/difficulty/max/normal run kill @s
-    execute if score @s 4A.MadnessTime matches 370.. if predicate api:global_vars/difficulty/min/hard run function asset:mob/0154.ruin/tick/5.to_void
+    execute if score @s 4A.MadnessTime matches 370.. run function asset:mob/0154.ruin/tick/5.death
