@@ -17,4 +17,4 @@
     execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
 
 # 発狂して自滅
-    execute if entity @s[scores={4A.Madness=370..}] run function asset:mob/0154.ruin/tick/5.death
+    execute if entity @s[scores={4A.MadnessTime=370..}] run function asset:mob/0154.ruin/tick/5.death
