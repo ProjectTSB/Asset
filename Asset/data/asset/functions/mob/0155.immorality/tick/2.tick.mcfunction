@@ -11,9 +11,9 @@
     execute if entity @s[scores={4B.ShotTime=0}] run function asset:mob/0155.immorality/tick/3.ready
 
 # 発砲
-    execute if entity @p[distance=..20] if entity @s[scores={4B.ShotTime=10..}] anchored eyes positioned ^-0.3 ^ ^0.5 run function asset:mob/0155.immorality/tick/4.shot_interval
+    execute if entity @p[distance=..20] if entity @s[scores={4B.ShotTime=20..}] anchored eyes positioned ^-0.3 ^ ^0.5 run function asset:mob/0155.immorality/tick/4.shot_interval
 
 # リセット
 # ノーマル以下なら早めに終わる
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={4B.ShotTime=26..}] run function asset:mob/0155.immorality/tick/8.reset
-    execute if entity @s[scores={4B.ShotTime=38..}] run function asset:mob/0155.immorality/tick/8.reset
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={4B.ShotTime=36..}] run function asset:mob/0155.immorality/tick/8.reset
+    execute if entity @s[scores={4B.ShotTime=48..}] run function asset:mob/0155.immorality/tick/8.reset
