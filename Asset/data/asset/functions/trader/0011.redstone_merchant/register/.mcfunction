@@ -1,4 +1,4 @@
-#> asset:trader/0011.redstone_merchant/
+#> asset:trader/0011.redstone_merchant/register/
 #
 #
 #
