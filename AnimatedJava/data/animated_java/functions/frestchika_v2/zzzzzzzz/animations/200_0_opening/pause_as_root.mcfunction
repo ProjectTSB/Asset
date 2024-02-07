@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.200_0_opening

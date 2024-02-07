@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.107_2_later_bolt_rush_finish

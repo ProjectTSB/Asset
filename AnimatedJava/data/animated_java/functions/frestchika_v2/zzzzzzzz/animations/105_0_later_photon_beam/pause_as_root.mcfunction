@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.105_0_later_photon_beam

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/apply_variant/close_eye/as_bone

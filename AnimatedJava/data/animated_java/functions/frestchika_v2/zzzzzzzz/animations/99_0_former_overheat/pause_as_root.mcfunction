@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.99_0_former_overheat

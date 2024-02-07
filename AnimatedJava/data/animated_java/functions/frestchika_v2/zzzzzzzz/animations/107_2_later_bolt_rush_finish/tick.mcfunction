@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:frestchika_v2/zzzzzzzz/animations/107_2_later_bolt_rush_finish/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:frestchika_v2/zzzzzzzz/animations/107_2_later_bolt_rush_finish/tick_animation

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..34 run function animated_java:frestchika_v2/zzzzzzzz/animations/1_2_former_tackle_slash/tree/branch_0_34

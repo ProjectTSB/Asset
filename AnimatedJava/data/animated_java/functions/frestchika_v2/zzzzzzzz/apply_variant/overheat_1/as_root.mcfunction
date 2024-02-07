@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/apply_variant/overheat_1/as_bone

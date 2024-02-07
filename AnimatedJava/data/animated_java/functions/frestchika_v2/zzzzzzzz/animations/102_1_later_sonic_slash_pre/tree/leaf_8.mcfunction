@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/animations/102_1_later_sonic_slash_pre/tree/leaf_8_as_bone
+function animated_java:frestchika_v2/zzzzzzzz/apply_variant/wink/as_root

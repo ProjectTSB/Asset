@@ -1,0 +1,3 @@
+execute if score @s aj.frestchika_v2.animation.101_1_later_plasuma_disastar_fall.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:frestchika_v2/zzzzzzzz/animations/101_1_later_plasuma_disastar_fall/end_loop
+execute if score @s aj.frestchika_v2.animation.101_1_later_plasuma_disastar_fall.loop_mode = $aj.loop_mode.once aj.i run function animated_java:frestchika_v2/animations/101_1_later_plasuma_disastar_fall/stop
+execute if score @s aj.frestchika_v2.animation.101_1_later_plasuma_disastar_fall.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:frestchika_v2/animations/101_1_later_plasuma_disastar_fall/pause

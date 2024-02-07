@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.6_0_former_thunder_bomb

@@ -1,0 +1,3 @@
+execute if score @s aj.frestchika_v2.animation.200_0_opening.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:frestchika_v2/zzzzzzzz/animations/200_0_opening/end_loop
+execute if score @s aj.frestchika_v2.animation.200_0_opening.loop_mode = $aj.loop_mode.once aj.i run function animated_java:frestchika_v2/animations/200_0_opening/stop
+execute if score @s aj.frestchika_v2.animation.200_0_opening.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:frestchika_v2/animations/200_0_opening/pause

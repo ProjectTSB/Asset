@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/animations/3_0_former_sonic_slash_pre/tree/leaf_1_as_bone

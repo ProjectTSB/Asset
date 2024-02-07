@@ -1,0 +1,1 @@
+function animated_java:frestchika_v2/zzzzzzzz/animations/2_0_former_plasma_shock/tick_animation

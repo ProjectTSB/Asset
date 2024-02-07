@@ -1,0 +1,1 @@
+function animated_java:frestchika_v2/zzzzzzzz/animations/4_0_former_gun/tick_animation

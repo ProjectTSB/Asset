@@ -1,0 +1,1 @@
+function animated_java:frestchika_v2/zzzzzzzz/animations/100_1_later_idle_rare/tick_animation

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..35 run function animated_java:frestchika_v2/zzzzzzzz/animations/101_0_later_plasuma_disaster_shock/tree/branch_0_35

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/animations/101_2_later_plasuma_disastar_normal/tree/leaf_1_as_bone

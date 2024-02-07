@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..7 run function animated_java:frestchika_v2/zzzzzzzz/animations/101_2_later_plasuma_disastar_normal/tree/branch_0_7
+execute if score @s aj.anim_time matches 8 run function animated_java:frestchika_v2/zzzzzzzz/animations/101_2_later_plasuma_disastar_normal/tree/leaf_8

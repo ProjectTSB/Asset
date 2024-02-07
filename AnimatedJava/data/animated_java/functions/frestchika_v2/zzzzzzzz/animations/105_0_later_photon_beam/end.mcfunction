@@ -1,0 +1,3 @@
+execute if score @s aj.frestchika_v2.animation.105_0_later_photon_beam.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:frestchika_v2/zzzzzzzz/animations/105_0_later_photon_beam/end_loop
+execute if score @s aj.frestchika_v2.animation.105_0_later_photon_beam.loop_mode = $aj.loop_mode.once aj.i run function animated_java:frestchika_v2/animations/105_0_later_photon_beam/stop
+execute if score @s aj.frestchika_v2.animation.105_0_later_photon_beam.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:frestchika_v2/animations/105_0_later_photon_beam/pause

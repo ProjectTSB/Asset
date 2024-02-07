@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:frestchika_v2/zzzzzzzz/animations/199_0_later_overheat/tree/leaf_0_as_bone
+function animated_java:frestchika_v2/zzzzzzzz/apply_variant/overheat_1/as_root

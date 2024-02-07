@@ -1,0 +1,3 @@
+execute if score @s aj.frestchika_v2.animation.6_0_former_thunder_bomb.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:frestchika_v2/zzzzzzzz/animations/6_0_former_thunder_bomb/end_loop
+execute if score @s aj.frestchika_v2.animation.6_0_former_thunder_bomb.loop_mode = $aj.loop_mode.once aj.i run function animated_java:frestchika_v2/animations/6_0_former_thunder_bomb/stop
+execute if score @s aj.frestchika_v2.animation.6_0_former_thunder_bomb.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:frestchika_v2/animations/6_0_former_thunder_bomb/pause

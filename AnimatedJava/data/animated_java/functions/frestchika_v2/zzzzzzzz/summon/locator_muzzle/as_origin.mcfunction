@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["A5.GunMuzzle","aj.frestchika_v2.locator","aj.frestchika_v2.locator.muzzle","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"frestchika_v2\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"muzzle\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.frestchika_v2.locator.muzzle,tag=aj.new,limit=1,distance=..1] run function animated_java:frestchika_v2/zzzzzzzz/summon/locator_muzzle/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

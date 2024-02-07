@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.frestchika_v2.root] run function animated_java:frestchika_v2/zzzzzzzz/tick_as_root

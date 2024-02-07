@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..4 run function animated_java:frestchika_v2/zzzzzzzz/animations/3_1_former_sonic_slash_tackle/tree/branch_0_4

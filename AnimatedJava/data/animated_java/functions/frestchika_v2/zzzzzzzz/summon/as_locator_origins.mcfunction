@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.frestchika_v2.locator_origin.muzzle] run function animated_java:frestchika_v2/zzzzzzzz/summon/locator_muzzle/as_origin
+function #animated_java:frestchika_v2/on_summon/as_locator_origins

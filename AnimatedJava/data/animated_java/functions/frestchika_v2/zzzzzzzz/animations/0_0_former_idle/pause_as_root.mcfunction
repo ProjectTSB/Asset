@@ -1,0 +1,1 @@
+tag @s remove aj.frestchika_v2.animation.0_0_former_idle

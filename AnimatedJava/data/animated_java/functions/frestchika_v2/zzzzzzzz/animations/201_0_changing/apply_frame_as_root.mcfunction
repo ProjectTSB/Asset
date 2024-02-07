@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..70 run function animated_java:frestchika_v2/zzzzzzzz/animations/201_0_changing/tree/branch_0_70

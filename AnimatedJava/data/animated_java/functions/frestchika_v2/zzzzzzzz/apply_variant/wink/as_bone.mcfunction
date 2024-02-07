@@ -1,0 +1,26 @@
+execute if entity @s[tag=aj.frestchika_v2.bone.hair] run data modify entity @s item.tag.CustomModelData set value 756
+execute if entity @s[tag=aj.frestchika_v2.bone.side_hair_2] run data modify entity @s item.tag.CustomModelData set value 757
+execute if entity @s[tag=aj.frestchika_v2.bone.side_hair_1] run data modify entity @s item.tag.CustomModelData set value 758
+execute if entity @s[tag=aj.frestchika_v2.bone.head] run data modify entity @s item.tag.CustomModelData set value 759
+execute if entity @s[tag=aj.frestchika_v2.bone.group] run data modify entity @s item.tag.CustomModelData set value 760
+execute if entity @s[tag=aj.frestchika_v2.bone.group2] run data modify entity @s item.tag.CustomModelData set value 761
+execute if entity @s[tag=aj.frestchika_v2.bone.group3] run data modify entity @s item.tag.CustomModelData set value 762
+
+execute if entity @s[tag=aj.frestchika_v2.bone.gun] run data modify entity @s item.tag.CustomModelData set value 763
+execute if entity @s[tag=aj.frestchika_v2.bone.sword] run data modify entity @s item.tag.CustomModelData set value 764
+execute if entity @s[tag=aj.frestchika_v2.bone.arm_right_1] run data modify entity @s item.tag.CustomModelData set value 765
+execute if entity @s[tag=aj.frestchika_v2.bone.arm_right_0] run data modify entity @s item.tag.CustomModelData set value 766
+execute if entity @s[tag=aj.frestchika_v2.bone.arm_left_1] run data modify entity @s item.tag.CustomModelData set value 767
+execute if entity @s[tag=aj.frestchika_v2.bone.arm_left_0] run data modify entity @s item.tag.CustomModelData set value 768
+execute if entity @s[tag=aj.frestchika_v2.bone.right_wing_0] run data modify entity @s item.tag.CustomModelData set value 769
+execute if entity @s[tag=aj.frestchika_v2.bone.right_wing_1] run data modify entity @s item.tag.CustomModelData set value 770
+execute if entity @s[tag=aj.frestchika_v2.bone.right_wing_2] run data modify entity @s item.tag.CustomModelData set value 771
+execute if entity @s[tag=aj.frestchika_v2.bone.left_wing_0] run data modify entity @s item.tag.CustomModelData set value 772
+execute if entity @s[tag=aj.frestchika_v2.bone.left_wing_1] run data modify entity @s item.tag.CustomModelData set value 773
+execute if entity @s[tag=aj.frestchika_v2.bone.left_wing_2] run data modify entity @s item.tag.CustomModelData set value 774
+execute if entity @s[tag=aj.frestchika_v2.bone.leg_right_1] run data modify entity @s item.tag.CustomModelData set value 775
+execute if entity @s[tag=aj.frestchika_v2.bone.leg_right_0] run data modify entity @s item.tag.CustomModelData set value 776
+execute if entity @s[tag=aj.frestchika_v2.bone.leg_left_1] run data modify entity @s item.tag.CustomModelData set value 777
+execute if entity @s[tag=aj.frestchika_v2.bone.leg_left_0] run data modify entity @s item.tag.CustomModelData set value 778
+execute if entity @s[tag=aj.frestchika_v2.bone.body_0] run data modify entity @s item.tag.CustomModelData set value 779
+execute if entity @s[tag=aj.frestchika_v2.bone.body_1] run data modify entity @s item.tag.CustomModelData set value 780

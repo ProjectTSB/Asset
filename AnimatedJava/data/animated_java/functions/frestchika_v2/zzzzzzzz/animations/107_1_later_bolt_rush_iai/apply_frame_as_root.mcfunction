@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..20 run function animated_java:frestchika_v2/zzzzzzzz/animations/107_1_later_bolt_rush_iai/tree/branch_0_20

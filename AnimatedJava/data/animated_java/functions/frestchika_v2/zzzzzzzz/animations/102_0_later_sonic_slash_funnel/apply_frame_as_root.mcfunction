@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..25 run function animated_java:frestchika_v2/zzzzzzzz/animations/102_0_later_sonic_slash_funnel/tree/branch_0_25

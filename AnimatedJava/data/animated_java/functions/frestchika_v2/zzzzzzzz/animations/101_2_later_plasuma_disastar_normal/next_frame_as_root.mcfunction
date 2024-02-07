@@ -1,0 +1,1 @@
+function animated_java:frestchika_v2/zzzzzzzz/animations/101_2_later_plasuma_disastar_normal/tick_animation

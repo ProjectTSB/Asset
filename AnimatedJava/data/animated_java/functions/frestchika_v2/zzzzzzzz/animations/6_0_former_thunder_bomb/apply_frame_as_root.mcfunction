@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..35 run function animated_java:frestchika_v2/zzzzzzzz/animations/6_0_former_thunder_bomb/tree/branch_0_35

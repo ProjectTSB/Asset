@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..48 run function animated_java:frestchika_v2/zzzzzzzz/animations/5_0_former_beam_saber/tree/branch_0_48

@@ -1,0 +1,1 @@
+function animated_java:frestchika_v2/zzzzzzzz/animations/105_0_later_photon_beam/tick_animation
