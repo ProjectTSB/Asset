@@ -10,7 +10,7 @@
 
 # スコア初期化
     scoreboard players set @s A5.AnimationTick 0
-    scoreboard players set @s A5.AnimationNum 121
+    scoreboard players set @s A5.AnimationNum 2000
     scoreboard players set @s A5.SkillSelect 0
     scoreboard players set @s A5.HPPer 100
     scoreboard players set @s A5.OverHeat 0
