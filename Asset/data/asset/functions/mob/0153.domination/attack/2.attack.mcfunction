@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/0153.domination/attack/1.trigger
 
+#> Private
+# @private
+    #declare score_holder $Lv
+
 # 演出
     execute at @a[tag=Victim] run playsound block.anvil.land hostile @a ~ ~ ~ 1 1.3
 
@@ -19,9 +23,16 @@
 # リセット
     function lib:damage/reset
 
-# プレイヤーをパニック状態にする
-# プレイヤーにタグ、スコアを付与する
-    tag @p[tag=Victim] add 49.Panic
-    scoreboard players set @p[tag=Victim] 49.PanicTime 50
-# Scheduleループをする
-    schedule function asset:mob/0153.domination/attack/3.scheduleloop 1t
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+    execute store result score $Lv Temporary run data get storage api: Return.Difficulty
+
+# プレイヤーを支配デバフを付与
+# 効果時間 (20 × 難易度値)tick
+    data modify storage api: Argument.ID set value 603
+    execute store result storage api: Argument.Duration int 20 run scoreboard players get $Lv Temporary
+    tellraw @a [{"storage":"api:","nbt":"Argument.Duration"}]
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
+
+# リセット
+    scoreboard players reset $Lv Temporary
