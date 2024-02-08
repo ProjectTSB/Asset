@@ -15,6 +15,9 @@
     execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
     execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
     execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
+    execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
+    execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
+    execute unless entity @s[tag=9T.Hit] at @s run function asset:mob/0353.rubiel_knife/tick/app/1.move
 
 # 消去
     execute if entity @s[tag=9T.Death] run kill @s

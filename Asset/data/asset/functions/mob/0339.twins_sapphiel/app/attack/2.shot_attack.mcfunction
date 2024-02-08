@@ -5,6 +5,7 @@
 # @within
 #    function asset:mob/0339.twins_sapphiel/app/attack/1.shot
 #    function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
+#    function asset:mob/0339.twins_sapphiel/app/attack/1.shot_fake
 #    function asset:mob/0339.twins_sapphiel/app/attack/1.shot_from_warp
 #    function asset:mob/0339.twins_sapphiel/app/attack/2.shot_attack
 
