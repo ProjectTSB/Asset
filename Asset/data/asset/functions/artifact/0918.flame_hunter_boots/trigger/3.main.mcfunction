@@ -38,4 +38,4 @@
     attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-039600000003 "918.Speed" 0.05 multiply_base
 
 # フルセット処理
-    execute if data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} run function asset:artifact/0915.flame_hunter_hat/trigger/fullset/equip
+    execute if data storage asset:context id.all{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0915.flame_hunter_hat/trigger/fullset/equip
