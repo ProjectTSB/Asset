@@ -18,3 +18,6 @@
 
 # 移動速度
     attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-039400000005
+
+# フルセット解除
+    execute if entity @s[tag=PF.Fullset] run function asset:artifact/0915.flame_hunter_hat/trigger/fullset/dis_equip
