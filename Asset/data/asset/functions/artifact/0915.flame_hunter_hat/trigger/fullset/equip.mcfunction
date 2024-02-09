@@ -9,7 +9,7 @@
 #   asset:artifact/0918.flame_hunter_boots/trigger/3.main
 
 # 演出
-    particle lava ~ ~1.2 ~ 0.3 0.4 0.3 0 30 normal @a
+    particle lava ~ ~1.2 ~ 0.8 0.4 0.8 0 30 normal @a
     particle block azalea ~ ~1.7 ~ 0.3 0.2 0.3 0 60 normal @a
     playsound block.grass.break player @a ~ ~ ~ 0.4 1.2 0
     playsound block.grass.break player @a ~ ~ ~ 0.4 1.4 0
