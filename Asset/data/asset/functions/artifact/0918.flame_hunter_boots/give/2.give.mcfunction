@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_boots"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の靴","color":"red"}'
+    data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の靴","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+5%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','[{"text":"「狩人は炎の原因を狩った。","color":"gray","italic":true}]','[{"text":"そして彼は怨嗟の炎の一部となった。」","color":"gray","italic":true}]']
 # MP以外の消費物 (TextComponentString) (オプション)
