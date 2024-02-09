@@ -8,6 +8,11 @@
 #   asset:artifact/0917.flame_hunter_clothes/trigger/dis_equip/main
 #   asset:artifact/0918.flame_hunter_boots/trigger/dis_equip/main
 
+# 演出
+    particle smoke ~ ~1.2 ~ 0.4 0.4 0.4 0.05 80 normal @a
+    particle ash ~ ~1.2 ~ 0.4 0.4 0.4 0.2 200 normal @a
+    playsound block.fire.extinguish player @a ~ ~ ~ 0.4 0.7
+
 # フルセットTagを削除
     tag @s remove PF.Fullset
 
