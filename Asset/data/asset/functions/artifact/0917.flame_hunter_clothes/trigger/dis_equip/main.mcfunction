@@ -4,6 +4,11 @@
 #
 # @within function asset:artifact/0917.flame_hunter_clothes/trigger/dis_equip/
 
+# 演出
+    particle smoke ~ ~0.5 ~ 0.3 0.2 0.3 0.05 20 normal @a
+    particle ash ~ ~0.5 ~ 0.3 0.2 0.3 0.2 30 normal @a
+    playsound block.fire.extinguish player @a ~ ~ ~ 0.4 0.7
+
 # 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,917,4]
     function api:modifier/defense/fire/remove
