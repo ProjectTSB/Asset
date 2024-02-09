@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0790.aurora_boots/register",
+        "asset:artifact/0789.aurora_leggings/register",
+        "asset:artifact/0788.aurora_armor/register",
+        "asset:artifact/0787.aurora_helm/register",
         "asset:artifact/0900.pure_water_bracelet/register",
         "asset:artifact/0772.dolphin_amulet/register",
         "asset:artifact/0702.bright_lamp/register",
