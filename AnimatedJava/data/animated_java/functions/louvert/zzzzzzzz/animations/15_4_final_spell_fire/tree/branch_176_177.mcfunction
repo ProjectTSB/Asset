@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 176 run function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/tree/leaf_176
+execute if score @s aj.anim_time matches 177 run function animated_java:louvert/zzzzzzzz/animations/15_4_final_spell_fire/tree/leaf_177

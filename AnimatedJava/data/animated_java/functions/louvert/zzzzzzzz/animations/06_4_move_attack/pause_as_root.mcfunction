@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.06_4_move_attack

@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/07_1_soul_magic_cast/tick_animation

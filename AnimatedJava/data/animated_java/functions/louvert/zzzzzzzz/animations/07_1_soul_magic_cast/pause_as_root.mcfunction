@@ -1,0 +1,1 @@
+tag @s remove aj.louvert.animation.07_1_soul_magic_cast

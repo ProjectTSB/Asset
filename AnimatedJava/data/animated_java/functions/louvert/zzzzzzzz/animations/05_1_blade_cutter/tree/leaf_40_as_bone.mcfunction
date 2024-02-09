@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.louvert.locator_origin.locator] at @s on origin run tp @s ^-5.06326 ^1.34137 ^1.93216 ~88.43911 ~1.90167
+execute if entity @s[tag=aj.louvert.locator_origin.locator2] at @s on origin run tp @s ^5.11326 ^1.34681 ^1.79183 ~-89.74302 ~0.05609

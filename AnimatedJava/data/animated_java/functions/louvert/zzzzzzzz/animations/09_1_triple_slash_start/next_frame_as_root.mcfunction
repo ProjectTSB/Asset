@@ -1,0 +1,1 @@
+function animated_java:louvert/zzzzzzzz/animations/09_1_triple_slash_start/tick_animation
