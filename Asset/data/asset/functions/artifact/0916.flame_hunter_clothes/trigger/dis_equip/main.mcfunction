@@ -5,9 +5,9 @@
 # @within function asset:artifact/0916.flame_hunter_clothes/trigger/dis_equip/
 
 # 演出
-    particle smoke ~ ~1.3 ~ 0.3 0.2 0.3 0.05 20 normal @a
-    particle ash ~ ~1.3 ~ 0.3 0.2 0.3 0.2 30 normal @a
-    playsound block.fire.extinguish player @a ~ ~ ~ 0.4 0.7
+    execute unless entity @s[tag=PF.Fullset] run particle smoke ~ ~1.3 ~ 0.3 0.2 0.3 0.05 20 normal @a
+    execute unless entity @s[tag=PF.Fullset] run particle ash ~ ~1.3 ~ 0.3 0.2 0.3 0.2 30 normal @a
+    execute unless entity @s[tag=PF.Fullset] run execute unless entity @s[tag=PF.Fullset] run playsound block.fire.extinguish player @a ~ ~ ~ 0.4 0.7
 
 # 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,916,5]
