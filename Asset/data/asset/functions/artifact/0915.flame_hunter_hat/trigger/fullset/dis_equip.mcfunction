@@ -8,6 +8,9 @@
 #   asset:artifact/0917.flame_hunter_clothes/trigger/dis_equip/main
 #   asset:artifact/0918.flame_hunter_boots/trigger/dis_equip/main
 
+# フルセットTagを削除
+    tag @s remove PF.Fullset
+
 # 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,915,0]
     function api:modifier/defense/fire/remove
