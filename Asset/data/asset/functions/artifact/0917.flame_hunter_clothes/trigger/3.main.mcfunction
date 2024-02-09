@@ -10,11 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    particle flame ~ ~0.5 ~ 0.3 0.2 0.3 0 30 normal @a
-    particle block azalea ~ ~0.5 ~ 0.3 0.2 0.3 0 60 normal @a
-    playsound block.grass.break player @a ~ ~ ~ 0.4 1.2 0
-    playsound block.grass.break player @a ~ ~ ~ 0.4 1.4 0
-    playsound block.fire.ambient player @a ~ ~ ~ 0.8 1 0
+    execute unless data storage asset:context id.all{head:915,chest:916,legs:917,feet:918} run function asset:artifact/0917.flame_hunter_clothes/trigger/vfx
 
 # 火耐性+5%
     data modify storage api: Argument.UUID set value [I;1,1,917,4]
