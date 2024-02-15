@@ -21,17 +21,15 @@
     execute if score @s 9G.AnimationTimer matches 117..122 at @s positioned ^ ^0.05 ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 138..156 at @s positioned ^ ^ ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 # 演出
-    # execute if score @s 9G.AnimationTimer matches 60 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1.4
     execute if score @s 9G.AnimationTimer matches 73..82 run particle firework ~ ~1 ~ 0 0 0 0.1 2
-    
+
 ## 攻撃
 # アニメーション再生 (長さ：75tick)
     execute if score @s 9G.AnimationTimer matches 81 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/3.2.play_attack_animation
 # 演出
-    execute if score @s 9G.AnimationTimer matches 84 at @s positioned ^ ^1 ^0.5 rotated ~5 -30 positioned ^ ^ ^-2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.1.particle_slash
-    execute if score @s 9G.AnimationTimer matches 85 at @s positioned ^ ^1 ^0.5 rotated ~5 0 positioned ^ ^ ^-2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.1.particle_slash
-    execute if score @s 9G.AnimationTimer matches 85..90 at @s run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.4.particle_line_main
-
+    # execute if score @s 9G.AnimationTimer matches 84 at @s positioned ^ ^1 ^0.5 rotated ~5 -30 positioned ^ ^ ^-2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.1.particle_slash
+    # execute if score @s 9G.AnimationTimer matches 85 at @s positioned ^ ^1 ^0.5 rotated ~5 0 positioned ^ ^ ^-2 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.1.particle_slash
+    execute if score @s 9G.AnimationTimer matches 87..90 at @s run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.4.particle_line_main
 # ダメージ
     execute if score @s 9G.AnimationTimer matches 85 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/5.1.damage_slash
     execute if score @s 9G.AnimationTimer matches 100 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/5.2.damage_burst

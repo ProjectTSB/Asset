@@ -34,4 +34,4 @@
     execute if score @s 9E.SkillTimer matches 54 run function asset:mob/0338.corundum_twins/tick/app/general/1.check_await
 
 # 終了
-    execute if score @s 9E.SkillTimer matches 61.. run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/02_throw/2.end
+    execute if score @s 9E.SkillTimer matches 55.. run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/02_throw/2.end
