@@ -1,0 +1,1 @@
+function animated_java:twins_sapphiel/zzzzzzzz/animations/21_0_lc_shot_jump/tick_animation

@@ -59,14 +59,22 @@ execute if score #animation aj.i = $aj.twins_sapphiel.animation.10_2_hg_move_bac
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.10_2_hg_move_back aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.10_2_hg_move_back.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.12_0_sg_idle aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/12_0_sg_idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.12_0_sg_idle aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.12_0_sg_idle.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_sapphiel.animation.launcher aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/launcher/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_sapphiel.animation.launcher aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.launcher.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.20_0_lc_start aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/20_0_lc_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.20_0_lc_start aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.20_0_lc_start.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.21_0_lc_shot_jump aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_0_lc_shot_jump/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.21_0_lc_shot_jump aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.21_0_lc_shot_jump.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.21_1_lc_shot_aim aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.21_1_lc_shot_aim aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.21_1_lc_shot_aim.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.30_0_sync_goalong aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/30_0_sync_goalong/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.30_0_sync_goalong aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.30_0_sync_goalong.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.31_0_sync_crossfire_0 aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/31_0_sync_crossfire_0/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.31_0_sync_crossfire_0 aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.31_0_sync_crossfire_0.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.31_1_sync_crossfire_1 aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/31_1_sync_crossfire_1/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.31_1_sync_crossfire_1 aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.31_1_sync_crossfire_1.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.32_0_sync_throwattack_0 aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_0/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.32_0_sync_throwattack_0 aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.32_0_sync_throwattack_0.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.32_0_sync_throwattack_2 aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_2/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.32_0_sync_throwattack_2 aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.32_0_sync_throwattack_2.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_sapphiel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

@@ -71,12 +71,24 @@ execute if score #animation aj.i = $aj.twins_rubiel.animation.8_2_katana_throw a
 execute if score #animation aj.i = $aj.twins_rubiel.animation.8_2_katana_throw aj.id run scoreboard players operation @s aj.twins_rubiel.animation.8_2_katana_throw.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.8_3_katana_throw_pursuit aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/8_3_katana_throw_pursuit/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.8_3_katana_throw_pursuit aj.id run scoreboard players operation @s aj.twins_rubiel.animation.8_3_katana_throw_pursuit.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_0_idle_scythe_normal aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_0_idle_scythe_normal/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_0_idle_scythe_normal aj.id run scoreboard players operation @s aj.twins_rubiel.animation.10_0_0_idle_scythe_normal.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_1_idle_scythe_fun aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_1_idle_scythe_fun/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_1_idle_scythe_fun aj.id run scoreboard players operation @s aj.twins_rubiel.animation.10_0_1_idle_scythe_fun.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_0_idle_scythe_angry aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/10_0_0_idle_scythe_angry/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_rubiel.animation.10_0_0_idle_scythe_angry aj.id run scoreboard players operation @s aj.twins_rubiel.animation.10_0_0_idle_scythe_angry.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.11_0_scythe_start aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/11_0_scythe_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.11_0_scythe_start aj.id run scoreboard players operation @s aj.twins_rubiel.animation.11_0_scythe_start.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_0_idle_scythe_normal aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/12_0_0_idle_scythe_normal/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_0_idle_scythe_normal aj.id run scoreboard players operation @s aj.twins_rubiel.animation.12_0_0_idle_scythe_normal.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_1_idle_scythe_fun aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/12_0_1_idle_scythe_fun/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_1_idle_scythe_fun aj.id run scoreboard players operation @s aj.twins_rubiel.animation.12_0_1_idle_scythe_fun.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_0_idle_scythe_angry aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/12_0_0_idle_scythe_angry/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.12_0_0_idle_scythe_angry aj.id run scoreboard players operation @s aj.twins_rubiel.animation.12_0_0_idle_scythe_angry.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_0_scythe_warp_0 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/13_0_scythe_warp_0/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_0_scythe_warp_0 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.13_0_scythe_warp_0.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_1_scythe_warp_1_slash aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/13_1_scythe_warp_1_slash/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_1_scythe_warp_1_slash aj.id run scoreboard players operation @s aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_2_scythe_warp_2_upper aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/13_2_scythe_warp_2_upper/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_2_scythe_warp_2_upper aj.id run scoreboard players operation @s aj.twins_rubiel.animation.13_2_scythe_warp_2_upper.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_3_scythe_warp_3_throw aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/13_3_scythe_warp_3_throw/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_3_scythe_warp_3_throw aj.id run scoreboard players operation @s aj.twins_rubiel.animation.13_3_scythe_warp_3_throw.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_4_scythe_warp_4_end aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.13_4_scythe_warp_4_end aj.id run scoreboard players operation @s aj.twins_rubiel.animation.13_4_scythe_warp_4_end.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.new aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/new/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.new aj.id run scoreboard players operation @s aj.twins_rubiel.animation.new.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.6_2_katana_sheathe_iai aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/6_2_katana_sheathe_iai/apply_frame_as_root
@@ -87,6 +99,12 @@ execute if score #animation aj.i = $aj.twins_rubiel.animation.31_0_sync_crossfir
 execute if score #animation aj.i = $aj.twins_rubiel.animation.31_0_sync_crossfire_0 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.31_0_sync_crossfire_0.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/31_1_sync_crossfire_1/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.31_1_sync_crossfire_1.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_0.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_1/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_1.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_9/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_9.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_rubiel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

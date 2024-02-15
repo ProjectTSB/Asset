@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/13_1_scythe_warp_1_slash/tree/leaf_3_as_bone
+function animated_java:twins_rubiel/zzzzzzzz/apply_variant/default/as_root

@@ -33,14 +33,23 @@ scoreboard objectives add aj.twins_rubiel.animation.8_0_katana_throw_start_norma
 scoreboard objectives add aj.twins_rubiel.animation.8_1_katana_throw_failed.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.8_2_katana_throw.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.8_3_katana_throw_pursuit.local_anim_time dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_0_idle_scythe_normal.local_anim_time dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_1_idle_scythe_fun.local_anim_time dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_0_idle_scythe_angry.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.11_0_scythe_start.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_0_idle_scythe_normal.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_1_idle_scythe_fun.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_0_idle_scythe_angry.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_0_scythe_warp_0.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_2_scythe_warp_2_upper.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_3_scythe_warp_3_throw.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_4_scythe_warp_4_end.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.new.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.6_2_katana_sheathe_iai.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.30_0_sync_goalong.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_0_sync_crossfire_0.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_1_sync_crossfire_1.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_0.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_1.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_9.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.0_0_start.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.1_0_katana_start.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.2_0_0_idle_katana_normal.loop_mode dummy
@@ -69,14 +78,23 @@ scoreboard objectives add aj.twins_rubiel.animation.8_0_katana_throw_start_norma
 scoreboard objectives add aj.twins_rubiel.animation.8_1_katana_throw_failed.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.8_2_katana_throw.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.8_3_katana_throw_pursuit.loop_mode dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_0_idle_scythe_normal.loop_mode dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_1_idle_scythe_fun.loop_mode dummy
-scoreboard objectives add aj.twins_rubiel.animation.10_0_0_idle_scythe_angry.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.11_0_scythe_start.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_0_idle_scythe_normal.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_1_idle_scythe_fun.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.12_0_0_idle_scythe_angry.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_0_scythe_warp_0.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_2_scythe_warp_2_upper.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_3_scythe_warp_3_throw.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.13_4_scythe_warp_4_end.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.new.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.6_2_katana_sheathe_iai.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.30_0_sync_goalong.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_0_sync_crossfire_0.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_1_sync_crossfire_1.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_0.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_1.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_9.loop_mode dummy
 scoreboard players set $aj.twins_rubiel.animation.0_0_start aj.id 0
 scoreboard players set $aj.twins_rubiel.animation.1_0_katana_start aj.id 1
 scoreboard players set $aj.twins_rubiel.animation.2_0_0_idle_katana_normal aj.id 2
@@ -105,14 +123,23 @@ scoreboard players set $aj.twins_rubiel.animation.8_0_katana_throw_start_normal 
 scoreboard players set $aj.twins_rubiel.animation.8_1_katana_throw_failed aj.id 25
 scoreboard players set $aj.twins_rubiel.animation.8_2_katana_throw aj.id 26
 scoreboard players set $aj.twins_rubiel.animation.8_3_katana_throw_pursuit aj.id 27
-scoreboard players set $aj.twins_rubiel.animation.10_0_0_idle_scythe_normal aj.id 28
-scoreboard players set $aj.twins_rubiel.animation.10_0_1_idle_scythe_fun aj.id 29
-scoreboard players set $aj.twins_rubiel.animation.10_0_0_idle_scythe_angry aj.id 30
-scoreboard players set $aj.twins_rubiel.animation.new aj.id 31
-scoreboard players set $aj.twins_rubiel.animation.6_2_katana_sheathe_iai aj.id 32
-scoreboard players set $aj.twins_rubiel.animation.30_0_sync_goalong aj.id 33
-scoreboard players set $aj.twins_rubiel.animation.31_0_sync_crossfire_0 aj.id 34
-scoreboard players set $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id 35
+scoreboard players set $aj.twins_rubiel.animation.11_0_scythe_start aj.id 28
+scoreboard players set $aj.twins_rubiel.animation.12_0_0_idle_scythe_normal aj.id 29
+scoreboard players set $aj.twins_rubiel.animation.12_0_1_idle_scythe_fun aj.id 30
+scoreboard players set $aj.twins_rubiel.animation.12_0_0_idle_scythe_angry aj.id 31
+scoreboard players set $aj.twins_rubiel.animation.13_0_scythe_warp_0 aj.id 32
+scoreboard players set $aj.twins_rubiel.animation.13_1_scythe_warp_1_slash aj.id 33
+scoreboard players set $aj.twins_rubiel.animation.13_2_scythe_warp_2_upper aj.id 34
+scoreboard players set $aj.twins_rubiel.animation.13_3_scythe_warp_3_throw aj.id 35
+scoreboard players set $aj.twins_rubiel.animation.13_4_scythe_warp_4_end aj.id 36
+scoreboard players set $aj.twins_rubiel.animation.new aj.id 37
+scoreboard players set $aj.twins_rubiel.animation.6_2_katana_sheathe_iai aj.id 38
+scoreboard players set $aj.twins_rubiel.animation.30_0_sync_goalong aj.id 39
+scoreboard players set $aj.twins_rubiel.animation.31_0_sync_crossfire_0 aj.id 40
+scoreboard players set $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id 41
+scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id 42
+scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id 43
+scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id 44
 scoreboard players set $aj.twins_rubiel.variant.default aj.id 0
 scoreboard players set $aj.twins_rubiel.variant.blink aj.id 1
 scoreboard players set $aj.twins_rubiel.variant.damage aj.id 2
@@ -124,6 +151,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.twins_rubiel.export_version aj.i -441202658
+scoreboard players set aj.twins_rubiel.export_version aj.i 35985965
 scoreboard players reset * aj.twins_rubiel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.twins_rubiel.root] run function animated_java:twins_rubiel/zzzzzzzz/on_load

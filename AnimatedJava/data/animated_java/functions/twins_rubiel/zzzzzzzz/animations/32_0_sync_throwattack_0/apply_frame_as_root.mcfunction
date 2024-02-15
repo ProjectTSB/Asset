@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/tree/branch_0_80

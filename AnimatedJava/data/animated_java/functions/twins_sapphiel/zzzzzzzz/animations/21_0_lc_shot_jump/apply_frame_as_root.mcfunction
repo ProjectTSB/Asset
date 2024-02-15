@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..13 run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_0_lc_shot_jump/tree/branch_0_13

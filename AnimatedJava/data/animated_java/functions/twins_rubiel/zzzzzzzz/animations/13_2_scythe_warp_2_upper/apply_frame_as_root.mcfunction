@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..18 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_2_scythe_warp_2_upper/tree/branch_0_18

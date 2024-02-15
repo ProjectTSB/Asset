@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/tree/branch_0_50
