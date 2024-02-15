@@ -62,3 +62,4 @@
     #declare tag 9F.Skill.Sync.Goalong 集合
     #declare tag 9F.Skill.Sync.Crossfire 交差攻撃
     #declare tag 9F.Skill.Sync.Crossfire.Pursuit 交差攻撃・追撃
+    #declare tag 9F.Skill.Sync.Throw ぶん投げ

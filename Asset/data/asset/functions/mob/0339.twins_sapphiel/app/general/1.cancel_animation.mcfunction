@@ -43,6 +43,7 @@
     tag @s remove 9F.Skill.Sync.Goalong
     tag @s remove 9F.Skill.Sync.Crossfire
     tag @s remove 9F.Skill.Sync.Crossfire.Pursuit
+    tag @s remove 9F.Skill.Sync.Throw
 
 # 終了
     tag @e[type=item_display,tag=9F.ModelRoot.Target] remove 9F.ModelRoot.Target

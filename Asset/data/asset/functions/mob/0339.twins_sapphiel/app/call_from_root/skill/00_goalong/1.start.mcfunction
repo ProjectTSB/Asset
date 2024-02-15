@@ -5,6 +5,8 @@
 # @within
 #    function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/00_goalong/1.main
 #    function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/01_crossfire/1.main
+#    function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/1.switch
+#    function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/02_throw/1.main
 
 # アニメーション再生停止
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation

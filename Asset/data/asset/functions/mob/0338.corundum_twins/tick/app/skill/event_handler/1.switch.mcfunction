@@ -17,4 +17,7 @@
 ## シンクロ攻撃
 
 # 交差攻撃
-    execute if entity @s[tag=9E.Skill.Crossfire,tag=!9E.Skill.GoAlong] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/01_crossfire/1.main
+    execute if entity @s[tag=9E.Skill.Crossfire] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/01_crossfire/1.main
+
+# ぶん投げ
+    execute if entity @s[tag=9E.Skill.Throw] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/02_throw/1.main

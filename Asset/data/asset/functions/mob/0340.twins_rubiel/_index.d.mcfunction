@@ -59,3 +59,4 @@
     #declare tag 9G.Skill.Sync.Goalong 集合
     #declare tag 9G.Skill.Sync.Crossfire 交差攻撃
     #declare tag 9G.Skill.Sync.Crossfire.Upper 交差攻撃・斬り上げ
+    #declare tag 9G.Skill.Sync.Throw ぶん投げ

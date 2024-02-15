@@ -21,6 +21,7 @@
         #declare tag 9E.Skill.GoAlong 集合
         #declare tag 9E.Skill.Crossfire 交差攻撃
             #declare tag 9E.Skill.Crossfire.Ruby.Hit 交差攻撃・ルビィ攻撃ヒット通知
+        #declare tag 9E.Skill.Throw ぶん投げ
 
 # サフィ用
     # 共通
