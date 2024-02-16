@@ -5,7 +5,7 @@
 # @within function asset:mob/0152.desire/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0152.desire"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0152.desire"}
 # ID (int)
     data modify storage asset:mob ID set value 152
 # Type (string) Wikiを参照
