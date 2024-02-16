@@ -6,7 +6,12 @@
 #> private
 # @private
     #declare score_holder $MPCheck
+    #declare score_holder $MPReduce
     #declare tag EmptyMP
+
+# 難易度値を取得し40倍で取得
+    function api:global_vars/get_difficulty
+    execute store result score $MPReduce Temporary run data get storage api: Return.Difficulty 40
 
 # プレイヤーのマナを検知する
     execute as @p[tag=Victim] store result score $MPCheck Temporary run function lib:mp/get
@@ -32,8 +37,8 @@
         execute as @p[tag=Victim,tag=!EmptyMP] run function lib:damage/
         function lib:damage/reset
 
-# マナを吸い取る
-    scoreboard players set $Fluctuation Lib -80
+# マナを吸い取る 吸収量 = (40 × 難易度値)
+    execute store result score $Fluctuation Lib run data get storage api: Return.Difficulty -40
     execute as @p[tag=Victim] run function lib:mp/fluctuation
 
 # 演出
