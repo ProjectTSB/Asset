@@ -4,6 +4,11 @@
 #
 # @within function asset:mob/0152.desire/attack/2.attack
 
+# 演出
+    execute at @p[tag=Victim,distance=..10] run particle minecraft:dragon_breath ~ ~1 ~ 0.5 0.5 0.5 0.03 200
+    playsound minecraft:entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 2
+    playsound minecraft:entity.wither.hurt hostile @a ~ ~ ~ 1 1
+
 # ダメージ
     data modify storage lib: Argument.Damage set value 55f
     data modify storage lib: Argument.AttackType set value "Magic"
@@ -13,11 +18,6 @@
     function lib:damage/modifier
     execute as @p[tag=Victim,distance=..32] run function lib:damage/
     function lib:damage/reset
-
-# 演出
-    playsound minecraft:entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 2
-    playsound minecraft:entity.wither.hurt hostile @a ~ ~ ~ 1 1
-    execute as @p[tag=Victim,distance=..10] at @s run particle minecraft:dragon_breath ~ ~1 ~ 0.5 0.5 0.5 0.03 200
 
 # タグリセット
     tag @s remove RunOnce
