@@ -4,17 +4,14 @@
 #
 # @within function asset:mob/0152.desire/attack/2.attack
 
-
-# 与えるダメージ
+# ダメージ
     data modify storage lib: Argument.Damage set value 55f
-# 属性
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
-# 補正functionを実行
+    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにあらゆる欲を押し付けられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに命までも吸い取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function lib:damage/modifier
-# 対象
     execute as @p[tag=Victim,distance=..32] run function lib:damage/
-# リセット
     function lib:damage/reset
 
 # 演出
