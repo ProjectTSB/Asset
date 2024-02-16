@@ -9,6 +9,10 @@
     #declare score_holder $MPReduce
     #declare tag EmptyMP
 
+# 演出
+    particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.2 100
+    playsound minecraft:entity.glow_squid.death hostile @a
+
 # 難易度値を取得し40倍で取得
     function api:global_vars/get_difficulty
     execute store result score $MPReduce Temporary run data get storage api: Return.Difficulty 40
@@ -30,10 +34,6 @@
 # マナを吸い取る 吸収量 = (40 × 難易度値)
     execute store result score $Fluctuation Lib run data get storage api: Return.Difficulty -40
     execute as @p[tag=Victim] run function lib:mp/fluctuation
-
-# 演出
-    particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.2 100
-    playsound minecraft:entity.glow_squid.death hostile @a
 
 # 自分にタグを付与する
     execute if entity @p[tag=Victim,tag=!EmptyMP] run tag @s add 48.HasMP
