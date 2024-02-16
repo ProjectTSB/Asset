@@ -51,4 +51,5 @@
 # タグリセット
     tag @p[tag=EmptyMP] remove EmptyMP
     tag @s remove RunOnce
-    scoreboard players reset $MPCheck
+    scoreboard players reset $MPCheck Temporary
+    scoreboard players reset $MPReduce Temporary
