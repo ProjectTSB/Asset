@@ -10,8 +10,8 @@
     #declare tag EmptyMP
 
 # 演出
-    particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.2 100
-    playsound minecraft:entity.glow_squid.death hostile @a
+    execute at @p[tag=Victim] run particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.2 100
+    execute at @p[tag=Victim] run playsound minecraft:entity.glow_squid.death hostile @a
 
 # 難易度値を取得し40倍で取得
     function api:global_vars/get_difficulty
