@@ -27,6 +27,8 @@
     execute if entity @p[tag=Victim,tag=EmptyMP] run data modify storage lib: Argument.Damage set value 50f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
+    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにあらゆる欲を押し付けられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに命までも吸い取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function lib:damage/modifier
     execute as @p[tag=Victim] run function lib:damage/
     function lib:damage/reset
