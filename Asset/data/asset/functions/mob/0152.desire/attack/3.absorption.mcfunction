@@ -13,7 +13,7 @@
     function api:global_vars/get_difficulty
     execute store result score $MPReduce Temporary run data get storage api: Return.Difficulty 40
 
-# プレイヤーのマナを検知する
+# プレイヤーのMP現在値と減少量を比較し、減少量の方が多ければTagを付与
     execute as @p[tag=Victim] store result score $MPCheck Temporary run function lib:mp/get
     execute if score $MPCheck Temporary <= $MPReduce Temporary run tag @p[tag=Victim] add EmptyMP
 
