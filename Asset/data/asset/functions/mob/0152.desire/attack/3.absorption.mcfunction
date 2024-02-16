@@ -17,25 +17,15 @@
     execute as @p[tag=Victim] store result score $MPCheck Temporary run function lib:mp/get
     execute if score $MPCheck Temporary <= $MPReduce Temporary run tag @p[tag=Victim] add EmptyMP
 
-# マナが無いプレイヤーを殴った時
-    # ダメージ設定
-        data modify storage lib: Argument.Damage set value 50f
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "None"
-    # ダメージを与える
-        function lib:damage/modifier
-        execute as @p[tag=Victim,tag=EmptyMP] run function lib:damage/
-        function lib:damage/reset
-
-# マナが十分にあるプレイヤーを殴ったとき
-    # ダメージ設定
-        data modify storage lib: Argument.Damage set value 35f
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "None"
-    # ダメージを与える
-        function lib:damage/modifier
-        execute as @p[tag=Victim,tag=!EmptyMP] run function lib:damage/
-        function lib:damage/reset
+# ダメージ
+# 対象のMPが空な場合、与えるダメージが上昇
+    data modify storage lib: Argument.Damage set value 35f
+    execute if entity @p[tag=Victim,tag=EmptyMP] run data modify storage lib: Argument.Damage set value 50f
+    data modify storage lib: Argument.AttackType set value "Magic"
+    data modify storage lib: Argument.ElementType set value "None"
+    function lib:damage/modifier
+    execute as @p[tag=Victim] run function lib:damage/
+    function lib:damage/reset
 
 # マナを吸い取る 吸収量 = (40 × 難易度値)
     execute store result score $Fluctuation Lib run data get storage api: Return.Difficulty -40
