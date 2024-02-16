@@ -8,7 +8,7 @@
 # 与えるダメージ
     data modify storage lib: Argument.Damage set value 55f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
     function lib:damage/modifier
