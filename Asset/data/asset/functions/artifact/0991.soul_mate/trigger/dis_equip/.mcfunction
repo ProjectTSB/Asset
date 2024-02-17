@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:artifact/dis_equip
 
-execute if data storage asset:context id{auto:901} run function asset:artifact/0991.soul_mate/trigger/dis_equip/main
+execute if data storage asset:context id{hotbar:[991]} run function asset:artifact/0991.soul_mate/trigger/dis_equip/main

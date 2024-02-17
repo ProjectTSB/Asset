@@ -8,4 +8,10 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
-    say test: 0991.soul_mate
+# 演出
+    playsound ogg:block.smithing_table.smithing_table2 player @a ~ ~ ~ 1 1.6
+    playsound minecraft:item.armor.equip_iron player @a ~ ~ ~ 1 1
+    particle crit ~ ~1 ~ 0 0 0 0.5 10
+
+# タグ付与
+    tag @s add RJ.SoulMate

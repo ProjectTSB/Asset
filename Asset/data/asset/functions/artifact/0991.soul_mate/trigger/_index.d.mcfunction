@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/0991.soul_mate/trigger/**
-    #declare
+    #declare tag RJ.SoulMate

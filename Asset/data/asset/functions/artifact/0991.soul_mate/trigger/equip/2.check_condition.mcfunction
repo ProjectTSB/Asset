@@ -5,7 +5,7 @@
 # @within function asset:artifact/0991.soul_mate/trigger/equip/1.trigger
 
 # ID指定する
-    data modify storage asset:artifact TargetID set value 901
+    data modify storage asset:artifact TargetID set value 991
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
