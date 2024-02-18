@@ -21,9 +21,10 @@
 # 演出
     playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.7
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 0.7
-    particle explosion_emitter ~ ~ ~ 0 0 0 0 1
-    particle campfire_cosy_smoke ~ ~1 ~ 0 0 0 0.05 50
-    particle lava ~ ~ ~ 1 1 1 0 10
+    particle explosion_emitter ~ ~ ~ 0.1 0.1 0.1 0 4
+    particle lava ~ ~ ~ 1 1 1 0 20
+    particle cloud ~ ~1 ~ 0 0 0 0.25 100
+    particle large_smoke ~ ~1 ~ 0 0 0 0.1 100
 
 # 終了
     kill @s

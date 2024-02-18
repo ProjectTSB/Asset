@@ -19,6 +19,7 @@
 # 一時
     #declare tag 9G.Temp.This 自身に付与する
     #declare tag 9G.Temp.Target.Attack 攻撃対象
+    #declare tag 9G.Temp.Target.Attack.Sub 攻撃対象サブ
     #declare tag 9G.Temp.Target.Aec.0 攻撃地点決定に使用する
     #declare tag 9G.Temp.Target.Aec.1 攻撃地点決定に使用する
     #declare tag 9G.Temp.Target.Warp ワープポイントエンティティ
