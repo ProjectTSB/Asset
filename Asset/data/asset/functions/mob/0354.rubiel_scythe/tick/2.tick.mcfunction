@@ -19,14 +19,6 @@
     function asset:mob/0354.rubiel_scythe/tick/app/3.apply_angle.m with storage asset:temp 9U
     data remove storage asset:temp 9U
 
-# スコアをstorageに保持
-    execute store result storage asset:temp 9G.Pos.X float 0.001 run scoreboard players get @s 9G.MoveVector.X
-    execute store result storage asset:temp 9G.Pos.Y float 0.001 run scoreboard players get @s 9G.MoveVector.Y
-    execute store result storage asset:temp 9G.Pos.Z float 0.001 run scoreboard players get @s 9G.MoveVector.Z
-
-# 移動実行
-    function asset:mob/0354.rubiel_scythe/tick/app/3.apply_angle.m with storage asset:temp 9G.Pos
-
 # 移動
     execute at @s run function asset:mob/0354.rubiel_scythe/tick/app/1.move
     execute at @s run function asset:mob/0354.rubiel_scythe/tick/app/1.move

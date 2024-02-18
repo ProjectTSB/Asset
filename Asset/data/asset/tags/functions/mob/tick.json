@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0355.sapphiel_missile/tick/1.trigger",
         "asset:mob/0354.rubiel_scythe/tick/1.trigger",
         "asset:mob/0353.rubiel_knife/tick/1.trigger",
         "asset:mob/0352.down_dummy/tick/1.trigger",

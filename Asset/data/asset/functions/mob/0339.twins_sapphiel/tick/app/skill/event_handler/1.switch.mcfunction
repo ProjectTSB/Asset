@@ -78,10 +78,12 @@
 ###########################################################################
 ## ランチャー
 
-## 射撃・ジャンプ
+## ジャンプ
         execute if entity @s[tag=9F.Skill.Lc.Jump] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_1_lc_shot_jump/1.main
     ## エイム
         execute if entity @s[tag=9F.Skill.Lc.Aim] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_2_lc_shot_aim/1.main
+        ## 射撃
+            execute if entity @s[tag=9F.Skill.Lc.Shot] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/1.main
 
 ###########################################################################
 ## シンクロスキル

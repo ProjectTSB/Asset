@@ -9,6 +9,7 @@
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/31_2_sync_crossfire_pursuit/2.end
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/32_1_sync_throw/2.end
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_1_lc_shot_jump/2.end
+#    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/2.end
 
 # 状態更新
     tag @s add 9E.State.GetAwait.Sappihel

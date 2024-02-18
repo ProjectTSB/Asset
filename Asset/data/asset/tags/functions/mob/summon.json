@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0355.sapphiel_missile/summon/1.trigger",
         "asset:mob/0354.rubiel_scythe/summon/1.trigger",
         "asset:mob/0353.rubiel_knife/summon/1.trigger",
         "asset:mob/0352.down_dummy/summon/1.trigger",
