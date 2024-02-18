@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/0154.ruin/attack/1.trigger
 
+#> Private
+# @private
+    #declare score_holder $DamageValue
+
 # 腕振るやつ(タグなし)
     execute unless entity @s[tag=4A.Madness] run item replace entity @s weapon.mainhand with stick{CustomModelData:20064}
 
@@ -15,13 +19,18 @@
     playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 2 2
     playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 2 2
 
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# 形態変化の前か後かで異なる式で計算する
+# 前 = 5N + 33, 後 = 10N + 40
+    execute unless entity @s[tag=4A.Madness] store result score $DamageValue Temporary run data get storage api: Return.Difficulty 5
+    execute unless entity @s[tag=4A.Madness] run scoreboard players add $DamageValue Temporary 33
+    execute if entity @s[tag=4A.Madness] store result score $DamageValue Temporary run data get storage api: Return.Difficulty 10
+    execute if entity @s[tag=4A.Madness] run scoreboard players add $DamageValue Temporary 40
+
 # 与えるダメージ
-    # 形態変化前
-        execute if predicate api:global_vars/difficulty/max/normal unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 40f
-        execute if predicate api:global_vars/difficulty/min/hard unless entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 48f
-    # 形態変化後
-        execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 60f
-        execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4A.Madness] run data modify storage lib: Argument.Damage set value 76f
+    execute store result storage lib: Argument.Damage int 1 run scoreboard players get $DamageValue Temporary
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
@@ -34,3 +43,6 @@
     execute as @p[tag=Victim,distance=..6] run function lib:damage/
 # リセット
     function lib:damage/reset
+
+# スコアリセット
+    scoreboard players reset $DamageValue Temporary
