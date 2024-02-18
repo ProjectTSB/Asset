@@ -5,7 +5,7 @@
 # @within function asset:effect/0612.infringement/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value false
 # ID (int)
     data modify storage asset:effect ID set value 612
 # 名前 (TextComponentString)
