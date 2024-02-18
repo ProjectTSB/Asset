@@ -1,9 +1,9 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/5.1.particle_warppoint
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/5.1.particle_warppoint
 #
 # アニメーションのイベントハンドラ Ktワープ連撃 ワープポイント演出
 #
 # @within
-#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/1.main
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/1.main
 
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYATAGwBGAzEQIZlEC0ADAMYCcFzALAIy8azTgFZ27ZvTgV6neewAcy1mFwZ6AWwTJAW74ACfmrAx6AJy0BnJOHYB7PBghJ+rXADMzdzTbAA3ehQ8HXAADyQ2ADoAdlwoCNYYgF8k3Ag7XwCgkLBwxETYsHj85NSwO3d3SzhnfNwqOAAvNDgzJDcwNEsAISaWswBRAEc8QJQoAGVTdjgSRHdA6pTscGh4UnQsYwJiUkUiaP5RMiE2GhpJXlZFMhEid2FRekU4Vgbozl44HDANbVIDGRjKYLJprIhbA4nC4Op5vJlAsFfHkCnEEqU0hkIf5ETk8lFCsUCstypVqrUOg1mq12rgur1qYMRmNJtNZkgFiglqlVrAdCY7OMAOZ2DDbQhzMBEXjuDjsUTRZg3diKmX8YSKXgUODMe5kCTRMj0djSKjGP78wBYmoAlyMARvqGYHmKy+eyOWq8XAzJw07FZJHYlFo-IkixENB4cGJTi4SwQcwU3BwFDoGDVGEdLxxiA6Dr2MxYNqID1gABWeE0MBc9T6Po6XQGybQqbgw1GydZxvZ80WcDpPRrTLb4ymnbmnO5AF0gA_3
 # 多角形 1
