@@ -4,8 +4,21 @@
 #
 # @within function asset:mob/0156.infringement/tick/4.explode
 
+#> Private
+# @private
+    #declare score_holder $EffectLv
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# スコアに代入し、値から1を引く
+    execute store result score $EffectLv Temporary run data get storage api: Return.Difficulty
+    scoreboard players remove $EffectLv Temporary 1
+
 # 侵害エフェクトを付与
-# ハード以上でLv2を付与する
     data modify storage api: Argument.ID set value 612
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Stack set value 2
+    execute store result storage api: Argument.Stack int 1 run scoreboard players get $EffectLv Temporary
     function api:entity/mob/effect/give
+
+# リセット
+    scoreboard players reset $EffectLv Temporary
