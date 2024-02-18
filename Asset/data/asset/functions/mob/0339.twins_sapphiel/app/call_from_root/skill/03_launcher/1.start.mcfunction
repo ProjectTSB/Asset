@@ -9,7 +9,4 @@
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation
 
 # 再生
-    tag @s add 9F.Skill.Sync.Crossfire
-
-# 弾数リセット
-    scoreboard players set @s 9F.BulletCount.Hg 0
+    tag @s add 9F.Skill.Lc.Jump

@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..17 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_3_scythe_warp_3_throw/tree/branch_0_17
+execute if score @s aj.anim_time matches 0..18 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_3_scythe_warp_3_throw/tree/branch_0_18

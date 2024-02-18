@@ -55,6 +55,10 @@
     #declare tag 9G.Skill.Kt.Throw.Start 掴み
     #declare tag 9G.Skill.Kt.Throw 大外刈り
 
+    #declare tag 9G.Skill.Sc.Start 鎌持ち替え
+    #declare tag 9G.Skill.Sc.Idle 鎌待機
+    #declare tag 9G.Skill.Sc.Warp ワープ連撃
+
 # シンクロスキル
     #declare tag 9G.Skill.Sync.Goalong 集合
     #declare tag 9G.Skill.Sync.Crossfire 交差攻撃

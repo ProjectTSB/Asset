@@ -13,6 +13,8 @@
 ## 武器持ち替え
     # 刀
         execute if entity @s[tag=9G.Skill.Kt.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/01_kt_start/1.main
+    # 鎌
+        execute if entity @s[tag=9G.Skill.Sc.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/11_sc_start/1.main
 
 ###########################################################################
 ## 刀
@@ -61,6 +63,15 @@
     execute if entity @s[tag=9G.Skill.Kt.Throw.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_1_kt_throw_start/1.main
     ## 大外刈り
         execute if entity @s[tag=9G.Skill.Kt.Throw] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/1.main
+
+###########################################################################
+## 鎌
+
+## 待機
+    execute if entity @s[tag=9G.Skill.Sc.Idle] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/12_sc_idle/1.main
+
+## ワープ斬り
+    execute if entity @s[tag=9G.Skill.Sc.Warp] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/1.main
 
 ###########################################################################
 ## シンクロスキル

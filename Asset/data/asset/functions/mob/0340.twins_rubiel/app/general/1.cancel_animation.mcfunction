@@ -37,6 +37,9 @@
     tag @s remove 9G.Skill.Kt.Throw.Start
     tag @s remove 9G.Skill.Kt.Throw
 
+    tag @s remove 9G.Skill.Sc.Start
+    tag @s remove 9G.Skill.Sc.Idle
+
     tag @s remove 9G.Skill.Sync.Goalong
     tag @s remove 9G.Skill.Sync.Crossfire
     tag @s remove 9G.Skill.Sync.Crossfire.Upper

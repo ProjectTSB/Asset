@@ -7,6 +7,8 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/2.end
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/2.end
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/2.end
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/11_sc_start/2.end
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/2.end
 
 # 状態更新
     tag @s add 9E.State.GetAwait.Rubiel

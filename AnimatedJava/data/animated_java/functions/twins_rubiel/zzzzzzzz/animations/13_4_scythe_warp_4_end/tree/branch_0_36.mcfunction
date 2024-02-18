@@ -2,5 +2,4 @@ execute if score @s aj.anim_time matches 0..7 run function animated_java:twins_r
 execute if score @s aj.anim_time matches 8..15 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_8_15
 execute if score @s aj.anim_time matches 16..23 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_16_23
 execute if score @s aj.anim_time matches 24..31 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_24_31
-execute if score @s aj.anim_time matches 32..39 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_32_39
-execute if score @s aj.anim_time matches 40..44 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_40_44
+execute if score @s aj.anim_time matches 32..36 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_4_scythe_warp_4_end/tree/branch_32_36
