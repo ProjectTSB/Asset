@@ -22,8 +22,10 @@
 # 難易度値を取得
     function api:global_vars/get_difficulty
 
-# 形態変化の前か後かで異なる式で計算する
+# 形態変化の前か後かで異なる式で計算する Nは難易度値を示す
 # 前 = 5N + 33, 後 = 10N + 40
+# 5N + 33の意味は、イージーの時に5+33で38になって大体のMobと同じ火力になるから
+# 10N + 40の意味は、イージーで50、ハードで70程度の火力が欲しいから
     execute unless entity @s[tag=4A.Madness] store result score $DamageValue Temporary run data get storage api: Return.Difficulty 5
     execute unless entity @s[tag=4A.Madness] run scoreboard players add $DamageValue Temporary 33
     execute if entity @s[tag=4A.Madness] store result score $DamageValue Temporary run data get storage api: Return.Difficulty 10
