@@ -25,6 +25,7 @@ execute if entity @s[tag=aj.twins_sapphiel.animation.12_0_sg_idle] run function 
 execute if entity @s[tag=aj.twins_sapphiel.animation.20_0_lc_start] run function animated_java:twins_sapphiel/zzzzzzzz/animations/20_0_lc_start/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.21_0_lc_shot_jump] run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_0_lc_shot_jump/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.21_1_lc_shot_aim] run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.21_2_lc_shot_shot] run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_2_lc_shot_shot/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.30_0_sync_goalong] run function animated_java:twins_sapphiel/zzzzzzzz/animations/30_0_sync_goalong/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.31_0_sync_crossfire_0] run function animated_java:twins_sapphiel/zzzzzzzz/animations/31_0_sync_crossfire_0/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.31_1_sync_crossfire_1] run function animated_java:twins_sapphiel/zzzzzzzz/animations/31_1_sync_crossfire_1/tick

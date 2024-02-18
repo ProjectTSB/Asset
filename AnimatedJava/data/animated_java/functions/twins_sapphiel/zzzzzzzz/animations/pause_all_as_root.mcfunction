@@ -25,6 +25,7 @@ function animated_java:twins_sapphiel/zzzzzzzz/animations/12_0_sg_idle/pause_as_
 function animated_java:twins_sapphiel/zzzzzzzz/animations/20_0_lc_start/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/21_0_lc_shot_jump/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/21_2_lc_shot_shot/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/30_0_sync_goalong/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/31_0_sync_crossfire_0/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/31_1_sync_crossfire_1/pause_as_root

@@ -40,6 +40,11 @@
     tag @s remove 9F.Skill.Hg.Step.Left2Right
     tag @s remove 9F.Skill.Hg.Step.Back
 
+    tag @s remove 9F.Skill.Lc.Start
+    tag @s remove 9F.Skill.Lc.Jump
+    tag @s remove 9F.Skill.Lc.Aim
+    tag @s remove 9F.Skill.Lc.Shot
+
     tag @s remove 9F.Skill.Sync.Goalong
     tag @s remove 9F.Skill.Sync.Crossfire
     tag @s remove 9F.Skill.Sync.Crossfire.Pursuit

@@ -58,6 +58,11 @@
     #declare tag 9F.Skill.Hg.Step.Left2Right ステップ・左右
     #declare tag 9F.Skill.Hg.Step.Back ステップ・後
 
+    #declare tag 9F.Skill.Lc.Start ランチャー持ち替え
+    #declare tag 9F.Skill.Lc.Jump 構え
+    #declare tag 9F.Skill.Lc.Aim 狙いをつける
+    #declare tag 9F.Skill.Lc.Shot 発射
+
 # シンクロスキル
     #declare tag 9F.Skill.Sync.Goalong 集合
     #declare tag 9F.Skill.Sync.Crossfire 交差攻撃

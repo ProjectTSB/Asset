@@ -11,8 +11,10 @@
     execute if entity @s[tag=9F.Skill.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/1.main
 
 ## 武器持ち替え
-    ## ハンドガン
+    # ハンドガン
         execute if entity @s[tag=9F.Skill.Hg.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/01_hg_start/1.main
+    # ランチャー
+        execute if entity @s[tag=9F.Skill.Lc.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/21_lc_start/1.main
 
 ###########################################################################
 ## ハンドガン
@@ -71,6 +73,15 @@
     execute if entity @s[tag=9F.Skill.Hg.Step.Left2Right] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_4_hg_move_left2right/1.main
     # 後
     execute if entity @s[tag=9F.Skill.Hg.Step.Back] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_5_hg_move_back/1.main
+
+
+###########################################################################
+## ランチャー
+
+## 射撃・ジャンプ
+        execute if entity @s[tag=9F.Skill.Lc.Jump] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_1_lc_shot_jump/1.main
+    ## エイム
+        execute if entity @s[tag=9F.Skill.Lc.Aim] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_2_lc_shot_aim/1.main
 
 ###########################################################################
 ## シンクロスキル

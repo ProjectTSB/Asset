@@ -21,3 +21,6 @@
 
 # ぶん投げ
     execute if entity @s[tag=9E.Skill.Throw] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/02_throw/1.main
+
+# ランチャー
+    execute if entity @s[tag=9E.Skill.Launcher] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/03_launcher/1.main
