@@ -19,7 +19,7 @@
     playsound block.fire.ambient player @a ~ ~ ~ 0.8 1.4
     playsound block.fire.extinguish player @a ~ ~ ~ 0.3 1.4
 
-# 失った体力10につき、火攻撃+5%(最大100%)
+# 失った体力10につき、火攻撃+5%(最大25%)
 # 補正はEffectAsset側で実装する
 
 # 最大体力と現在体力を取得する
