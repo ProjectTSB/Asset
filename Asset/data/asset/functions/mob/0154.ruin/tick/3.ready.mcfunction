@@ -1,6 +1,6 @@
 #> asset:mob/0154.ruin/tick/3.ready
 #
-#
+# 形態変化する
 #
 # @within function asset:mob/0154.ruin/tick/2.tick
 
@@ -9,6 +9,9 @@
 
 # タグを付与
     tag @s add 4A.Madness
+
+# ハード以上で、自身にノクバ耐性を付与
+    execute if predicate api:global_vars/difficulty/min/hard run attribute @s generic.knockback_resistance base set 10
 
 # 演出
     particle dragon_breath ~ ~1 ~ 0.4 0.4 0.4 0.1 100
