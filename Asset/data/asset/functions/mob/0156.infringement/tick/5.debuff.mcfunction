@@ -12,6 +12,7 @@
     function api:global_vars/get_difficulty
 
 # スコアに代入し、値から1を引く
+# このmcfの実行条件がノーマル以上のため、Lv0にはならない
     execute store result score $EffectLv Temporary run data get storage api: Return.Difficulty
     scoreboard players remove $EffectLv Temporary 1
 
