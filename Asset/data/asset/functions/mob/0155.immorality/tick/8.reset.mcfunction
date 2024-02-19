@@ -15,7 +15,7 @@
 # 次に攻撃するタイミングをランダムにする
 # 難易度で剰余の範囲が変動する
     function api:global_vars/get_difficulty
-    execute store result score $DivisionValue Temporary run data get storage api: Difficulty 15
+    execute store result score $DivisionValue Temporary run data get storage api: Return.Difficulty 15
     scoreboard players add $DivisionValue Temporary 1
 
 # 疑似乱数取得

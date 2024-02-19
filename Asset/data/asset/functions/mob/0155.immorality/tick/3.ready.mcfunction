@@ -12,4 +12,4 @@
 
 # 射撃数(難易度値×5)を計算する
     function api:global_vars/get_difficulty
-    execute store result score @s 4B.ShotMax run data get storage api: Difficulty 5
+    execute store result score @s 4B.ShotMax run data get storage api: Return.Difficulty 5
