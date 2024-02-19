@@ -14,4 +14,5 @@
     execute if entity @p[distance=..20] if entity @s[scores={4B.Tick=20..}] anchored eyes positioned ^-0.3 ^ ^1 run function asset:mob/0155.immorality/tick/4.shot_interval
 
 # 計算した回数射撃したならリセット
+# ShotCountは5.shot、ShotMaxは3.readyで計算している
     execute if score @s 4B.ShotCount >= @s 4B.ShotMax run function asset:mob/0155.immorality/tick/8.reset
