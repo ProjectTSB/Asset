@@ -13,6 +13,9 @@
     playsound minecraft:block.honey_block.hit hostile @a[distance=..30] ~ ~ ~ 1 0 0.7
     playsound minecraft:entity.generic.explode hostile @a[distance=..30] ~ ~ ~ 0.8 2 0.7
 
+# 射撃回数を数えるスコア
+    scoreboard players add @s 4B.ShotCount 1
+
 # 前方拡散設定
     summon marker ~ ~0 ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 5

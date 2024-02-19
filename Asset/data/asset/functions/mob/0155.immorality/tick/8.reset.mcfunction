@@ -29,3 +29,5 @@
 # リセット処理
     scoreboard players reset $Random Temporary
     scoreboard players reset $DivisionValue Temporary
+    scoreboard players reset @s 4B.ShotCount
+    scoreboard players reset @s 4B.ShotMax

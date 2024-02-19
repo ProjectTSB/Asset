@@ -7,3 +7,5 @@
 #> 定義類はここに
 # @within function asset:mob/0155.immorality/**
     scoreboard objectives add 4B.ShotTime dummy
+    scoreboard objectives add 4B.ShotMax dummy
+    scoreboard objectives add 4B.ShotCount dummy
