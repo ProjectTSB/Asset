@@ -23,8 +23,8 @@
 # 剰余算する
     scoreboard players operation $Random Temporary %= $DivisionValue Temporary
 # スコアセット
-    scoreboard players operation @s 4B.ShotTime = $Random Temporary
-    scoreboard players remove @s 4B.ShotTime 80
+    scoreboard players operation @s 4B.Tick = $Random Temporary
+    scoreboard players remove @s 4B.Tick 80
 
 # リセット処理
     scoreboard players reset $Random Temporary
