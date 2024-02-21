@@ -9,6 +9,9 @@
 # タグがついたら強制的に増え続ける
     execute if entity @s[tag=4C.Alert] run scoreboard players add @s 4C.Tick 1
 
+# ハード以上でAlertTagがついてるなら鈍足を無効化
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4C.Alert] run effect clear @s slowness
+
 # 一定時間で発動
     execute if score @s 4C.Tick matches 70 run function asset:mob/0156.infringement/tick/3.alert
 
