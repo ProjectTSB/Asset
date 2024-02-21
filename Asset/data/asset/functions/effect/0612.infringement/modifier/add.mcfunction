@@ -1,4 +1,4 @@
-#> asset:effect/0612.infringement/add_modifier
+#> asset:effect/0612.infringement/modifier/add
 #
 # 補正を追加する
 #

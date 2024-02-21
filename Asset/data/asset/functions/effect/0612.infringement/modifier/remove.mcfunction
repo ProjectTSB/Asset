@@ -1,4 +1,4 @@
-#> asset:effect/0612.infringement/remove_modifier
+#> asset:effect/0612.infringement/modifier/remove
 #
 # 補正を削除する
 #

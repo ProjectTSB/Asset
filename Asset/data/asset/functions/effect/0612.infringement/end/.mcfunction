@@ -5,4 +5,4 @@
 # @within function asset:effect/0612.infringement/_/end
 
 # 補正を削除する
-    function asset:effect/0612.infringement/remove_modifier
+    function asset:effect/0612.infringement/modifier/remove
