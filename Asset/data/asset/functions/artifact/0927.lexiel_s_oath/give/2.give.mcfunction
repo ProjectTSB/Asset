@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"レクシエルの忠誠","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"忠誠を感じさせる剣"}','{"text":"持ち主を亡くしてなお、その忠誠が薄れることはない"}','{"text":"確率で相手に致命的なダメージを与える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"確率で相手に致命的なダメージを与える。"}','{"text":"忠誠を感じさせる剣。","color":"gray"}','{"text":"持ち主を亡くしてなお、その忠誠が薄れることはない。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

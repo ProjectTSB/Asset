@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"水兵の帽子","color":"#3DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"どこからか潮の香りと紅茶の香りがする。","color":"#A3F9FF","italic":"true"}]','[{"text":"物理攻撃+7.5% ","color":"dark_green"},{"text":"水攻撃+7.5%","color":"aqua"}]','[{"text":"移動速度+7.5% ","color":"white"},{"text":"魔法攻撃-15%","color":"dark_red"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+7.5% ","color":"dark_green"},{"text":"水攻撃+7.5%","color":"aqua"}]','[{"text":"移動速度+7.5% ","color":"white"},{"text":"魔法攻撃-15%","color":"dark_red"}]','[{"text":"どこからか潮の香りと紅茶の香りがする。","color":"#A3F9FF"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
