@@ -1,4 +1,4 @@
-#> asset:effect/0213.reflecting_sky/remove_modifier
+#> asset:effect/0213.reflecting_sky/modifier/remove
 #
 # 補正を削除する
 #
