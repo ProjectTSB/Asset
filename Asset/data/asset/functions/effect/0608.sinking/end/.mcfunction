@@ -5,4 +5,4 @@
 # @within function asset:effect/0608.sinking/_/end
 
 # 補正を削除
-    function asset:effect/0608.sinking/remove_modifier
+    function asset:effect/0608.sinking/modifier/remove

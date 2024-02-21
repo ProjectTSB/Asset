@@ -1,4 +1,4 @@
-#> asset:effect/0608.sinking/remove_modifier
+#> asset:effect/0608.sinking/modifier/remove
 #
 # 補正を削除
 #

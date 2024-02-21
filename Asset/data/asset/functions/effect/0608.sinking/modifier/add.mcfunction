@@ -1,4 +1,4 @@
-#> asset:effect/0608.sinking/add_modifier
+#> asset:effect/0608.sinking/modifier/add
 #
 # 補正を追加
 #
