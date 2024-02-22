@@ -3,6 +3,7 @@ function animated_java:twins_rubiel/zzzzzzzz/animations/1_0_katana_start/pause_a
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_0_idle_katana_normal/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_1_idle_katana_fun/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/2_0_2_idle_katana_angry/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/2_1_katana_guard/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/3_0_katana_moveslash/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/3_1_katana_move_to_spear/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/3_2_katana_spear_damage/pause_as_root
@@ -43,3 +44,6 @@ function animated_java:twins_rubiel/zzzzzzzz/animations/31_1_sync_crossfire_1/pa
 function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_1/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_9/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/40_0_damage/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/40_2_damage_end/pause_as_root

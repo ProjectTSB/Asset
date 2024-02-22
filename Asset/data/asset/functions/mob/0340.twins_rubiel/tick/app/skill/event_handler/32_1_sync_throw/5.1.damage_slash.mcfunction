@@ -37,6 +37,9 @@
 # リセット
     function lib:damage/reset
 
+# かちあげ
+    execute at @a[tag=9G.Temp.Target.Attack,distance=..3] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:50b,duration:3,show_particles:0b}]}
+
 # 演出
     playsound entity.wither.break_block hostile @a ~ ~ ~ 2 0.7
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 0.5

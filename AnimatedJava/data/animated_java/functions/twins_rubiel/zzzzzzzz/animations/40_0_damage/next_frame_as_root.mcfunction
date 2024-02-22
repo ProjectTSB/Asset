@@ -1,0 +1,1 @@
+function animated_java:twins_rubiel/zzzzzzzz/animations/40_0_damage/tick_animation

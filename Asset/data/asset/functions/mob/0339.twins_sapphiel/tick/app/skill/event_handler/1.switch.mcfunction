@@ -16,6 +16,10 @@
     # ランチャー
         execute if entity @s[tag=9F.Skill.Lc.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/21_lc_start/1.main
 
+## ガード
+    # ハンドガン
+        execute if entity @s[tag=9F.Skill.Hg.Guard] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/02_1_hg_guard/1.main
+
 ###########################################################################
 ## ハンドガン
 
@@ -73,7 +77,6 @@
     execute if entity @s[tag=9F.Skill.Hg.Step.Left2Right] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_4_hg_move_left2right/1.main
     # 後
     execute if entity @s[tag=9F.Skill.Hg.Step.Back] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_5_hg_move_back/1.main
-
 
 ###########################################################################
 ## ランチャー

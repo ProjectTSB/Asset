@@ -1,0 +1,1 @@
+tag @s remove aj.twins_sapphiel.animation.40_1_damage_down

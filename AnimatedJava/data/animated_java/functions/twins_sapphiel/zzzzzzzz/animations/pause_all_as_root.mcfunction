@@ -1,6 +1,7 @@
 function animated_java:twins_sapphiel/zzzzzzzz/animations/0_0_start/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/1_0_hg_start/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/2_0_hg_idle/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/2_1_hg_guard/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/3_0_hg_shot_0/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_right/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_left/pause_as_root
@@ -31,3 +32,6 @@ function animated_java:twins_sapphiel/zzzzzzzz/animations/31_0_sync_crossfire_0/
 function animated_java:twins_sapphiel/zzzzzzzz/animations/31_1_sync_crossfire_1/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_0/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_2/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/40_0_damage/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/40_1_damage_down/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/40_2_damage_end/pause_as_root

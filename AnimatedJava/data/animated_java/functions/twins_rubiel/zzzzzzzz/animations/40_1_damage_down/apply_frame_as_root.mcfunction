@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..30 run function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/tree/branch_0_30

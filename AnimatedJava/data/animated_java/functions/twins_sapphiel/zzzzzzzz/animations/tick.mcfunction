@@ -1,6 +1,7 @@
 execute if entity @s[tag=aj.twins_sapphiel.animation.0_0_start] run function animated_java:twins_sapphiel/zzzzzzzz/animations/0_0_start/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.1_0_hg_start] run function animated_java:twins_sapphiel/zzzzzzzz/animations/1_0_hg_start/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.2_0_hg_idle] run function animated_java:twins_sapphiel/zzzzzzzz/animations/2_0_hg_idle/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.2_1_hg_guard] run function animated_java:twins_sapphiel/zzzzzzzz/animations/2_1_hg_guard/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.3_0_hg_shot_0] run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_0_hg_shot_0/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.3_1_hg_shot_move_right] run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_right/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.3_1_hg_shot_move_left] run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_left/tick
@@ -31,3 +32,6 @@ execute if entity @s[tag=aj.twins_sapphiel.animation.31_0_sync_crossfire_0] run 
 execute if entity @s[tag=aj.twins_sapphiel.animation.31_1_sync_crossfire_1] run function animated_java:twins_sapphiel/zzzzzzzz/animations/31_1_sync_crossfire_1/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.32_0_sync_throwattack_0] run function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_0/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.32_0_sync_throwattack_2] run function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_2/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.40_0_damage] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_0_damage/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.40_1_damage_down] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_1_damage_down/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.40_2_damage_end] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_2_damage_end/tick

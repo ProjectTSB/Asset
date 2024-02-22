@@ -7,3 +7,8 @@
 # TODO:被ダメージ量の計算
 
 # TODO:紐づけられたRootにhurt処理を移譲
+    scoreboard players operation $Uid Temporary = @s 9E.Uid
+    execute as @e[type=slime,tag=9E.Root] if score @s 9E.Uid = $Uid Temporary at @s run function asset:mob/0338.corundum_twins/app/call_from_twins/3.2.hurt_rubiel
+    scoreboard players reset $Uid Temporary
+
+# ダメージリアクション

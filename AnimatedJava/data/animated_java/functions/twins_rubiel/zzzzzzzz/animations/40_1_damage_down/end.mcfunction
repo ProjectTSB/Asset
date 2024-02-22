@@ -1,0 +1,3 @@
+execute if score @s aj.twins_rubiel.animation.40_1_damage_down.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/end_loop
+execute if score @s aj.twins_rubiel.animation.40_1_damage_down.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_rubiel/animations/40_1_damage_down/stop
+execute if score @s aj.twins_rubiel.animation.40_1_damage_down.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_rubiel/animations/40_1_damage_down/pause

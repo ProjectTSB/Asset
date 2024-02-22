@@ -29,12 +29,15 @@
 
 # 状態
     #declare tag 9F.State.Await Rootからの指示待ち
+    #declare tag 9F.State.IsGuard ガード受け付け
+    #declare tag 9F.State.IsDamage 怯み受け付け
     #declare tag 9F.State.Weapon.Hg ハンドガン所持
 
 # スキル
     #declare tag 9F.Skill.Start 登場
     #declare tag 9F.Skill.Hg.Start ハンドガン持ち替え
     #declare tag 9F.Skill.Hg.Idle 待機
+    #declare tag 9F.Skill.Hg.Guard ガード
     #declare tag 9F.Skill.Hg.Shot 射撃
     #declare tag 9F.Skill.Hg.Shot.MoveRight 側転射撃・右
     #declare tag 9F.Skill.Hg.Shot.MoveLeft 側転射撃・左

@@ -23,5 +23,9 @@
     execute if score @s 9F.AnimationTimer matches 36 run playsound item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
     execute if score @s 9F.AnimationTimer matches 42 run playsound ogg:item.armor.equip_netherite3 hostile @a ~ ~ ~ 1 1.2
 
+# 怯み受け付け
+    execute if score @s 9F.AnimationTimer matches 1 run tag @s add 9F.State.IsDamage
+    execute if score @s 9F.AnimationTimer matches 56 run tag @s remove 9F.State.IsDamage
+
 # 終了
     execute if score @s 9F.AnimationTimer matches 56.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/09_hg_reload/2.end

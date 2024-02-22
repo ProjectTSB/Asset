@@ -1,0 +1,1 @@
+tag @s remove aj.twins_rubiel.animation.40_1_damage_down
