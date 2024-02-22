@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"狩人のアミュレット"}'
+    data modify storage asset:artifact Name set value '{"text":"狩人のアミュレット","color":"#FF833B","underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"走るぞ！"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ダッシュすると高速ステップを行えるようになる。"}','{"text":"\\"魔物を狩る者たちの技\\"","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -43,13 +43,13 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 20
+    data modify storage asset:artifact LocalCooldown set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -12,4 +12,7 @@
 #連続で発動しないようにタグで制御する
     tag @s add QR.Run
 
-    effect give @s speed 1 30 true
+# 効果
+    data modify storage api: Argument.ID set value 221
+    execute store result storage api: Argument.Stack int 1 if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:963}}}]
+    function api:entity/mob/effect/give
