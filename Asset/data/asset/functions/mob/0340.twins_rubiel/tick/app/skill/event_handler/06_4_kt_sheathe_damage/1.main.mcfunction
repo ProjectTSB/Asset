@@ -20,8 +20,8 @@
     execute if score @s 9G.AnimationTimer matches 47 run playsound block.grass.step hostile @a ~ ~ ~ 1 1.2
 
 # 怯み受け付け
-    execute if score @s 9G.AnimationTimer matches 1 run tag @s add 9F.State.IsDamage
-    execute if score @s 9G.AnimationTimer matches 47 run tag @s remove 9F.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 1 run tag @s add 9G.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 47 run tag @s remove 9G.State.IsDamage
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 57.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_4_kt_sheathe_damage/2.end

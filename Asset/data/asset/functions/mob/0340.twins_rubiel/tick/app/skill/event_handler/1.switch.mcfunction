@@ -20,6 +20,13 @@
     # 刀
         execute if entity @s[tag=9G.Skill.Kt.Guard] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/02_1_kt_guard/1.main
 
+## 怯み・開始
+    execute if entity @s[tag=9G.Skill.Damage.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_1_damage_start/1.main
+    ## 怯み・ダウン中
+        execute if entity @s[tag=9G.Skill.Damage.Down] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_2_damage_down/1.main
+        ## 怯み・終了
+            execute if entity @s[tag=9G.Skill.Damage.End] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_3_damage_end/1.main
+
 ###########################################################################
 ## 刀
 

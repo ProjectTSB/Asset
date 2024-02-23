@@ -15,6 +15,7 @@
     scoreboard objectives add 9G.ActionCount dummy
     scoreboard objectives add 9G.GuardCount dummy
     scoreboard objectives add 9G.CounterCount dummy
+    scoreboard objectives add 9G.DownCount dummy
 
 # 処理用
     scoreboard objectives add 9G.MoveVector.X dummy
