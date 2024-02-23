@@ -20,6 +20,13 @@
     # ハンドガン
         execute if entity @s[tag=9F.Skill.Hg.Guard] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/02_1_hg_guard/1.main
 
+## 怯み・開始
+    execute if entity @s[tag=9F.Skill.Damage.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_1_damage_start/1.main
+    ## 怯み・ダウン中
+        execute if entity @s[tag=9F.Skill.Damage.Down] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_2_damage_down/1.main
+        ## 怯み・終了
+            execute if entity @s[tag=9F.Skill.Damage.End] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_3_damage_end/1.main
+
 ###########################################################################
 ## ハンドガン
 

@@ -16,6 +16,10 @@
 
 # タグ消去
     tag @s remove 9F.Skill.Start
+    tag @s remove 9F.Skill.Damage.Start
+    tag @s remove 9F.Skill.Damage.Down
+    tag @s remove 9F.Skill.Damage.End
+
     tag @s remove 9F.Skill.Hg.Start
     tag @s remove 9F.Skill.Hg.Guard
     tag @s remove 9F.Skill.Hg.Idle

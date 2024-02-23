@@ -15,6 +15,7 @@
     scoreboard objectives add 9F.ActionCount dummy
     scoreboard objectives add 9F.GuardCount dummy
     scoreboard objectives add 9F.CounterCount dummy
+    scoreboard objectives add 9F.DownCount dummy
     scoreboard objectives add 9F.BulletCount.Hg dummy
 
 # 処理用
