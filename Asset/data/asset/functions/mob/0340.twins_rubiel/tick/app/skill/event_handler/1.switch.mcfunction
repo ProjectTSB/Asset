@@ -16,6 +16,10 @@
     # 鎌
         execute if entity @s[tag=9G.Skill.Sc.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/11_sc_start/1.main
 
+## ガード
+    # 刀
+        execute if entity @s[tag=9G.Skill.Kt.Guard] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/02_1_kt_guard/1.main
+
 ###########################################################################
 ## 刀
 

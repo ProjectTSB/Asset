@@ -12,3 +12,11 @@
     scoreboard players reset $Uid Temporary
 
 # ダメージリアクション
+    execute if entity @s[tag=9G.State.IsGuard] run function asset:mob/0340.twins_rubiel/hurt/app/1.guard
+    execute if entity @s[tag=9G.State.IsDamage] run say 怯み
+
+# 効果音
+    execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 0.8
+    execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 1
+    execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound block.anvil.place hostile @a ~ ~ ~ 1 1.9
+    # execute if entity @s[tag=9G.Skill.Hg.Guard] run playsound item.shield.block hostile @a ~ ~ ~ 1 2

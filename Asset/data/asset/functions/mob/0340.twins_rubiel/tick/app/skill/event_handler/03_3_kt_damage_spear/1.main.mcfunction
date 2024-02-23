@@ -20,8 +20,8 @@
     execute if score @s 9G.AnimationTimer matches 34..40 at @s positioned ^ ^ ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 
 # 怯み受け付け
-    execute if score @s 9G.AnimationTimer matches 5 run tag @s add 9G.State.Damage.Accept
-    execute if score @s 9G.AnimationTimer matches 35 run tag @s remove 9G.State.Damage.Accept
+    execute if score @s 9G.AnimationTimer matches 5 run tag @s add 9F.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 35 run tag @s remove 9F.State.IsDamage
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 46.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_3_kt_damage_spear/2.end

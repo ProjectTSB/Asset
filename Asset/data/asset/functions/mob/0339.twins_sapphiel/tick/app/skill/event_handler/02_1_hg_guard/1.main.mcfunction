@@ -12,7 +12,7 @@
     execute if score @s 9F.AnimationTimer matches 1 at @s positioned ^ ^ ^-0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
 
 # ガード受け付け
-    execute if score @s 9F.AnimationTimer matches 3 run tag @s add 9F.State.IsGuard
+    execute if score @s 9F.AnimationTimer matches 1 run tag @s add 9F.State.IsGuard
     execute if score @s 9F.AnimationTimer matches 16 run tag @s remove 9F.State.IsGuard
 
 # 終了
