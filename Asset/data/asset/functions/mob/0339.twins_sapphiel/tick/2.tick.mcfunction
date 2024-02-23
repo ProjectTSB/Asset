@@ -9,6 +9,9 @@
     function asset:mob/0339.twins_sapphiel/tick/app/1.start_link_model.m with storage asset:temp 9E
     data remove storage asset:temp 9E.Uid
 
+# 耐性付与
+    execute if entity @s[tag=9F.State.IsGuard] run effect give @s resistance 1 5 true
+
 # タイマー処理
     # アニメーション用タイマー増加
         scoreboard players add @s 9F.AnimationTimer 1

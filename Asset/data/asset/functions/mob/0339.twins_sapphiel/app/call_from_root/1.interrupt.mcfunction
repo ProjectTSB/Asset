@@ -3,17 +3,18 @@
 # root側から呼び出される処理
 #
 # @within
-#    function 
+#    function
 
 # アニメーション再生停止
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation
 
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
-    tag @s add 9F.Skill.Hg.Reload
-    # tag @s add 9F.Skill.Hg.Fullburst.Start
+    # tag @s add 9F.Skill.Hg.Reload
+    tag @s add 9F.Skill.Hg.Fullburst.Start
     # tp @s 179.8 211 18.5
 
 # 状態リセット
+    tag @s remove 9F.State.Await
     tag @s remove 9F.State.IsGuard
     tag @s remove 9F.State.IsDamage
 
@@ -21,4 +22,4 @@
     scoreboard players set @s 9F.GuardCount 0
 
 # デバッグ
-    scoreboard players set @s 9F.BulletCount.Hg 0
+    # scoreboard players set @s 9F.BulletCount.Hg 0

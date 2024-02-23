@@ -5,8 +5,8 @@
 # @within function asset:mob/0340.twins_rubiel/tick/2.tick
 
 # デバッグ用強制再生
-    # tag @s add 9G.Skill.Kt.Idle
-    tag @s add 9G.Skill.Sc.Idle
+    tag @s add 9G.Skill.Kt.Idle
+    # tag @s add 9G.Skill.Sc.Idle
 # デバッグ用初期位置移動
     # tp @s -190 104.5 116
 

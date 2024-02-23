@@ -26,12 +26,14 @@
     #declare tag 9F.Temp.Target.Warp.0 ワープポイント取得に使用する
     #declare tag 9F.Temp.Target.Warp.1 ワープポイント取得に使用する
     #declare tag 9F.Temp.Target.Warp.2 ワープポイント取得に使用する
+    #declare tag 9F.Temp.Animated このtickすでにアニメーションを決定した
 
 # 状態
     #declare tag 9F.State.Await Rootからの指示待ち
     #declare tag 9F.State.IsGuard ガード受け付け
     #declare tag 9F.State.IsDamage 怯み受け付け
     #declare tag 9F.State.Weapon.Hg ハンドガン所持
+    #declare tag 9F.State.Weapon.Sg ショットガン所持
 
 # スキル
     #declare tag 9F.Skill.Start 登場

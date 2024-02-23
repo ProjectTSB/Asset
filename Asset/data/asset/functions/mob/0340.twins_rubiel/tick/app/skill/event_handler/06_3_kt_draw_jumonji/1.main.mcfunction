@@ -48,5 +48,5 @@
     execute if score @s 9G.AnimationTimer matches 13 at @s positioned ^ ^1 ^2.5 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/5.damage
     execute if score @s 9G.AnimationTimer matches 17 at @s positioned ^ ^1 ^2.5 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/5.damage
 
-# 終了  
+# 終了
     execute if score @s 9G.AnimationTimer matches 56.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/2.end

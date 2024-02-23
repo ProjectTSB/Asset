@@ -7,5 +7,9 @@
 # スキル判別用タグ消去
     tag @s remove 9F.Skill.Hg.Step.Back
 
+# 弾数が一定以下の場合、リロード
+    execute if score @s 9F.BulletCount.Hg matches 16.. run tag @s add 9F.Skill.Hg.Reload
+
 # タイマーリセット
-    scoreboard players set @s 9F.AnimationTimer -1
+    execute if entity @s[tag=9F.Skill.Hg.Reload] run scoreboard players set @s 9F.AnimationTimer 0
+    execute if entity @s[tag=!9F.Skill.Hg.Reload] run scoreboard players set @s 9F.AnimationTimer -1

@@ -15,10 +15,9 @@
     scoreboard players add @s 9G.GuardCount 1
 
 # カウンター一定以上の場合、強制反撃
-    execute if score @s 9F.GuardCount matches 3.. run say 強制反撃
+    execute if score @s 9G.GuardCount matches 3.. run say 強制反撃
 
 # 演出
-    effect give @s resistance 1 5 true
     particle crit ^ ^1.2 ^1 0 0 0 0.5 10
 
 # 終了

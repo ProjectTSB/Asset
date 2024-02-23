@@ -17,8 +17,10 @@
 # カウンター一定以上の場合、強制反撃
     execute if score @s 9F.GuardCount matches 3.. run say 強制反撃
 
-# 終了
+# 演出
     particle crit ^ ^1.2 ^1 0 0 0 0.5 10
+
+# 終了
     tag @s remove 9F.State.IsGuard
 
 say ガード
