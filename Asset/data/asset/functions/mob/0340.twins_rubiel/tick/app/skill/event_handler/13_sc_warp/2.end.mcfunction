@@ -6,11 +6,10 @@
 
 # 鎌装備に移行
     tag @s remove 9G.Skill.Sc.Warp
-    tag @s add 9G.Skill.Sc.Start
 
 # タイマーリセット
-    scoreboard players set @s 9G.AnimationTimer 0
- 
+    scoreboard players set @s 9G.AnimationTimer -1
+
 # Rootに待機通知
     scoreboard players operation $Uid Temporary = @s 9E.Uid
     execute as @e[type=slime,tag=9E.Root] if score @s 9E.Uid = $Uid Temporary at @s run function asset:mob/0338.corundum_twins/app/call_from_twins/2.2.await_rubiel

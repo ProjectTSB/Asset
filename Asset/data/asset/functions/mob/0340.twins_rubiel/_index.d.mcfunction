@@ -27,12 +27,14 @@
     #declare tag 9G.Temp.Target.Warp.1 ワープポイント取得に使用する
     #declare tag 9G.Temp.Target.Warp.2 ワープポイント取得に使用する
     #declare tag 9G.Temp.Target.JumpAvoid ジャンプして攻撃を回避したプレイヤーを取得する
+    #declare tag 9G.Temp.Animated このtickすでにアニメーションを決定した
 
 # 状態
     #declare tag 9G.State.Await Rootからの指示待ち
     #declare tag 9G.State.IsGuard ガード受け付け
     #declare tag 9G.State.IsDamage 怯み受け付け
     #declare tag 9G.State.Weapon.Kt 刀所持
+    #declare tag 9G.State.Weapon.Sc 鎌所持
     #declare tag 9G.State.Damage.Accept 怯み受け付け中
 
 # スキル

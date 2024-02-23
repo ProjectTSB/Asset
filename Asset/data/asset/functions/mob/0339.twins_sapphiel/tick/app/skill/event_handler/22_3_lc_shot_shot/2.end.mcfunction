@@ -6,10 +6,9 @@
 
 # スキル判別用タグ消去
     tag @s remove 9F.Skill.Lc.Shot
-    tag @s add 9F.Skill.Hg.Start
 
 # タイマーリセット
-    scoreboard players set @s 9F.AnimationTimer 0
+    scoreboard players set @s 9F.AnimationTimer -1
 
 # Rootに待機通知
     scoreboard players operation $Uid Temporary = @s 9E.Uid

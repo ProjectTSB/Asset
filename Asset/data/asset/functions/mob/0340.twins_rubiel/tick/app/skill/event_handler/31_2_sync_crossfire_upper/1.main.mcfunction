@@ -31,5 +31,8 @@
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 10 at @s positioned ^ ^1 ^2 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/5.damage
 
+# 状態更新
+    execute if score @s 9G.AnimationTimer matches 1 run tag @s add 9G.State.Weapon.Kt
+
 # 終了
     execute if score @s 9G.AnimationTimer matches 66.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/2.end

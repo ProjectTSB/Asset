@@ -39,7 +39,7 @@
     execute if score @s 9F.AnimationTimer matches 43 positioned ^ ^ ^5 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.1"]}
     execute if score @s 9F.AnimationTimer matches 45 positioned ^ ^ ^5 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
     execute if score @s 9F.AnimationTimer matches 47 positioned ^ ^ ^5 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.1"]}
-    
+
     execute if score @s 9F.AnimationTimer matches 30 positioned ^-0.2 ^1.2 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
     execute if score @s 9F.AnimationTimer matches 32 positioned ^-0.2 ^0.7 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_fake
     execute if score @s 9F.AnimationTimer matches 34 positioned ^-0.2 ^1.2 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
@@ -52,6 +52,9 @@
     execute if score @s 9F.AnimationTimer matches 48 positioned ^-0.2 ^0.7 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_fake
     execute if score @s 9F.AnimationTimer matches 50 positioned ^-0.2 ^1.2 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
     execute if score @s 9F.AnimationTimer matches 52 positioned ^-0.2 ^0.7 ^0.4 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=arbitrary,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_fake
+
+# 状態更新
+    execute if score @s 9F.AnimationTimer matches 1 run tag @s add 9F.State.Weapon.Hg
 
 # 終了
     execute if score @s 9F.AnimationTimer matches 86.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/31_1_sync_crossfire/2.end

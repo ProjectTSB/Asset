@@ -11,5 +11,8 @@
 # 再生
     tag @s add 9F.Skill.Sync.Crossfire
 
+# 状態リセット
+    function asset:mob/0339.twins_sapphiel/app/general/7.reset_state
+
 # 弾数リセット
     scoreboard players set @s 9F.BulletCount.Hg 0

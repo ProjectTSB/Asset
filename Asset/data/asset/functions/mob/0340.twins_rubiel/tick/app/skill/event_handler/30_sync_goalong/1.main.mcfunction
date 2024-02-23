@@ -19,5 +19,9 @@
     execute if score @s 9G.AnimationTimer matches 20 run particle flash ~ ~1 ~ 0 0 0 0 1
     execute if score @s 9G.AnimationTimer matches 20 run particle firework ~ ~1 ~ 0.2 0.2 0.2 0.1 10
 
+# 状態更新
+    execute if score @s 9G.AnimationTimer matches 1 run tag @s remove 9G.State.Weapon.Kt
+    execute if score @s 9G.AnimationTimer matches 1 run tag @s remove 9G.State.Weapon.Sc
+
 # 終了
     execute if score @s 9G.AnimationTimer matches 41.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/2.end

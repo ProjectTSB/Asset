@@ -123,5 +123,8 @@
 # ワープポイント演出
     execute as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp] at @s facing entity @p feet rotated ~ 0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/6.3.particle_warppoint
 
+# 状態更新
+    execute if score @s 9G.AnimationTimer matches 182 run tag @s remove 9G.State.Weapon.Sc
+
 # 終了
     execute if score @s 9G.AnimationTimer matches 182.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/2.end

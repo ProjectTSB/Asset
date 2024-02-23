@@ -12,5 +12,8 @@
 # アニメーション再生停止
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation
 
+# 状態リセット
+    function asset:mob/0339.twins_sapphiel/app/general/7.reset_state
+
 # タグ付与
     tag @s add 9F.Skill.Sync.Goalong

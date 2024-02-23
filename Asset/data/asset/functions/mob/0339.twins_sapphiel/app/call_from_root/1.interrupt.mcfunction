@@ -14,9 +14,7 @@
     # tp @s 179.8 211 18.5
 
 # 状態リセット
-    tag @s remove 9F.State.Await
-    tag @s remove 9F.State.IsGuard
-    tag @s remove 9F.State.IsDamage
+    function asset:mob/0339.twins_sapphiel/app/general/7.reset_state
 
 # ガード回数リセット
     scoreboard players set @s 9F.GuardCount 0
