@@ -19,6 +19,7 @@
     tag @s remove 9G.Skill.Damage.Start
     tag @s remove 9G.Skill.Damage.Down
     tag @s remove 9G.Skill.Damage.End
+    tag @s remove 9G.Skill.Cover
 
     tag @s remove 9G.Skill.Kt.Start
     tag @s remove 9G.Skill.Kt.Idle
