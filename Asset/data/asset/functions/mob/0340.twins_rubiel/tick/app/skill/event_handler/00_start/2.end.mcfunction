@@ -6,8 +6,6 @@
 
 # スキル判別用タグ消去
     tag @s remove 9G.Skill.Start
-# 待機開始
-    tag @s add 9G.State.Await
 
 # タイマーリセット
     scoreboard players set @s 9G.AnimationTimer -1

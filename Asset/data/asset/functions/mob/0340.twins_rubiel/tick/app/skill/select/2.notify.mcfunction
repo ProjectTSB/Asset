@@ -2,7 +2,9 @@
 #
 # Rootに待機状態を通知する
 #
-# @within function asset:mob/0340.twins_rubiel/tick/app/skill/select/1.main
+# @within
+#     function asset:mob/0340.twins_rubiel/tick/app/skill/select/1.main
+#     function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_1_kt_sheathe/2.end
 
 # Rootに待機通知
     scoreboard players operation $Uid Temporary = @s 9E.Uid

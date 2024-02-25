@@ -6,6 +6,7 @@
 
 # スキル判別用タグ消去
     tag @s remove 9E.Skill.Rubiel.Cover
+    tag @s remove 9E.State.Phase.Sync
 
 # タイマーリセット
     scoreboard players set @s 9E.SkillTimer 0

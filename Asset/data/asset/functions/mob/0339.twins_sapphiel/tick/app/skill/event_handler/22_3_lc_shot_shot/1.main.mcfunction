@@ -22,5 +22,5 @@
     execute if score @s 9F.AnimationTimer matches 30 run particle flash ~ ~1 ~ 0 0 0 0 1
     execute if score @s 9F.AnimationTimer matches 30 run particle firework ~ ~1 ~ 0.2 0.2 0.2 0.1 10
 
-# 終了  
+# 終了
     execute if score @s 9F.AnimationTimer matches 30.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/2.end

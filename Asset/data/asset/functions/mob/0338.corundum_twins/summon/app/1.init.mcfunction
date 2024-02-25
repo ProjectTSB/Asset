@@ -12,7 +12,6 @@
 
 # スコア初期化
     scoreboard players set @s 9E.Timer 0
-    scoreboard players set @s 9E.ActionCount 0
 
 # 中心点召喚
     summon marker ~ ~ ~ {Tags:["9E.Marker.SpawnPoint","9E.Init"]}
@@ -25,6 +24,10 @@
 # 最初のフェーズ決定
     execute if predicate lib:random_pass_per/50 run tag @s add 9E.State.Phase.Sapphiel
     execute unless entity @s[tag=9E.State.Phase.Sapphiel] run tag @s add 9E.State.Phase.Rubiel
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $3 Const
+    scoreboard players operation @s 9E.ActionCount = $Random Temporary
+    scoreboard players reset $Random Temporary
 
 # リセット
     scoreboard players reset $Random Temporary

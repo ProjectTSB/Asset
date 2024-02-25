@@ -19,6 +19,7 @@
         #declare tag 9E.State.GetAwait.Rubiel ルビィ待機中
         #declare tag 9E.State.Phase.Sapphiel サフィに指示を出す
         #declare tag 9E.State.Phase.Rubiel ルビィに指示を出す
+        #declare tag 9E.State.Phase.Sync.Reserve シンクロ攻撃予約
         #declare tag 9E.State.Phase.Sync シンクロ攻撃中
     # スキル
         #declare tag 9E.Skill.GoAlong 集合

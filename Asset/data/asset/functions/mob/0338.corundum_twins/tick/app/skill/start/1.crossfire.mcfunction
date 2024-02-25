@@ -3,7 +3,7 @@
 # シンクロスキル開始 交差攻撃
 #
 # @within
-#    function 
+#    function asset:mob/0338.corundum_twins/tick/app/ai/3.sync
 
 # 初期化
     scoreboard players set @s 9E.SkillTimer 0

@@ -39,10 +39,10 @@
 ## ランチャー射撃
 # サフィに指示
     execute if score @s 9E.SkillTimer matches 7 as @e[type=wither_skeleton,tag=9F.Root,tag=9F.Target] at @s run function asset:mob/0339.twins_sapphiel/app/call_from_root/skill/03_launcher/2.start_shot
-    execute if score @s 9E.SkillTimer matches 7 run tag @s add 9E.State.GetAwait.Rubiel
+    # execute if score @s 9E.SkillTimer matches 7 run tag @s add 9E.State.GetAwait.Rubiel
 # 待機
     execute if score @s 9E.SkillTimer matches 8 run tag @s add 9E.State.Await
     execute if score @s 9E.SkillTimer matches 8 run function asset:mob/0338.corundum_twins/tick/app/general/1.check_await
 
 # 終了
-    execute if score @s 9E.SkillTimer matches 7.. run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/03_launcher/2.end
+    execute if score @s 9E.SkillTimer matches 17.. run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/03_launcher/2.end

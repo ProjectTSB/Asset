@@ -12,10 +12,14 @@
     # execute at @e[type=item_display,tag=9G.Target] run particle flame ~ ~1 ~ 0 2 0 0 5
 
 # タイマー増加
-    scoreboard players add @s 9E.Timer 1
+    execute unless entity @s[tag=9E.State.Phase.Sync] run scoreboard players add @s 9E.SyncTimer 1
+
+# シンクロ攻撃発動
+    execute if score @s 9E.SyncTimer matches 900.. run tag @s add 9E.State.Phase.Sync.Reserve
+    execute if entity @s[tag=9E.State.Phase.Sync.Reserve] if entity @e[type=wither_skeleton,tag=9F.Root,tag=9F.Target,tag=9F.State.Await] if entity @e[type=wither_skeleton,tag=9G.Root,tag=9G.Target,tag=9G.State.Await] run function asset:mob/0338.corundum_twins/tick/app/ai/3.sync
 
 # AI
-    function asset:mob/0338.corundum_twins/tick/app/ai/1.main
+    execute if entity @s[tag=!9E.State.Phase.Sync.Reserve,tag=!9E.State.Phase.Sync] run function asset:mob/0338.corundum_twins/tick/app/ai/1.main
 
 # スキル
     function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/1.switch
