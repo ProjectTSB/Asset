@@ -11,11 +11,17 @@
 # 状態リセット
     function asset:mob/0339.twins_sapphiel/app/general/7.reset_state
 
+# なにも武器を持っていない場合、装備する
+    execute if entity @s[tag=!9F.State.Weapon.Hg,tag=!9F.State.Weapon.Sg] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/3.equip
+
 # ガード回数リセット
     scoreboard players set @s 9F.GuardCount 0
 
 # ランダムで行動させる
-    function asset:mob/0339.twins_sapphiel/tick/app/skill/select/5.1.interrupt_hg
+    execute unless entity @s[tag=9F.Temp.Animated] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/5.1.interrupt_hg
+
+# 終了
+    tag @s remove 9F.Temp.Animated
 
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
     # tag @s add 9F.Skill.Hg.Reload

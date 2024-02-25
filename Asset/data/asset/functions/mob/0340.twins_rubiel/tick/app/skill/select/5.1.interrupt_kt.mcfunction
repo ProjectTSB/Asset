@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0340.twins_rubiel/app/call_from_root/1.interrupt
 
-
 # カウンター増加
     scoreboard players add @s 9G.ActionCount 1
 

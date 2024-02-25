@@ -2,7 +2,9 @@
 #
 # 武器を装備する
 #
-# @within function asset:mob/0340.twins_rubiel/tick/app/skill/select/1.main
+# @within
+#    function asset:mob/0340.twins_rubiel/tick/app/skill/select/1.main
+#    function asset:mob/0340.twins_rubiel/app/call_from_root/1.interrupt
 
 # ハードの場合、ランダムで武器を装備
     # execute if predicate api:global_vars/difficulty/min/hard

@@ -14,6 +14,9 @@
 # 状態リセット
     function asset:mob/0340.twins_rubiel/app/general/8.reset_state
 
+# なにも武器を持っていない場合、装備する
+    execute if entity @s[tag=!9G.State.Weapon.Kt,tag=!9G.State.Weapon.Sc] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/3.equip
+
 # ガード回数リセット
     scoreboard players set @s 9G.GuardCount 0
 
