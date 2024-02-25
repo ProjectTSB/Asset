@@ -14,6 +14,10 @@
     execute if entity @s[tag=9E.Skill.Rubiel.Cover] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_1_rubiel_cover/1.main
 # サフィ怯みかばい攻撃
     execute if entity @s[tag=9E.Skill.Sapphiel.Cover] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_2_sapphiel_cover/1.main
+# 同時怯み
+    execute if entity @s[tag=9E.Skill.Damage] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_3_damage/1.main
+# スタン
+    execute if entity @s[tag=9E.Skill.Stun] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_4_stun/1.main
 
 ###########################################################################
 ## シンクロ攻撃

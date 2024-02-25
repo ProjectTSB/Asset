@@ -36,6 +36,7 @@
         #declare tag 9F.Target 紐づけ対象
     # 状態
         #declare tag 9F.State.Await 待機中
+        #declare tag 9F.Skill.Damage 怯み中
 
 # ルビィ用
     # 共通
@@ -45,3 +46,4 @@
         #declare tag 9G.Target 紐づけ対象
     # 状態
         #declare tag 9G.State.Await 待機中
+        #declare tag 9G.Skill.Damage 怯み中

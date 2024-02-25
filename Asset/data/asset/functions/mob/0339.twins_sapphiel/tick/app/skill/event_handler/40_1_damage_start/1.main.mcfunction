@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ 怯み・開始
 # 後ろに吹っ飛ぶ
+# ルビィに激突した場合、お互い気絶する
 #
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/1.switch
 

@@ -16,4 +16,4 @@
     # tp @s 179.8 211 18.5
     # tag @s add 9G.Skill.Damage.Stun.Start
     # tag @s add 9G.Skill.Cover
-    tag @s remove 9G.State.Weapon.Kt
+    # tag @s remove 9G.State.Weapon.Kt
