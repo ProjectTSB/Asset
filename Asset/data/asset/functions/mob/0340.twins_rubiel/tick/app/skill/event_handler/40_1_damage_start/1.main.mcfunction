@@ -8,6 +8,9 @@
 # アニメーション再生 (長さ：20tick)
     execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_1_damage_start/3.play_animation
 
+# Rootに通知
+    execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_1_damage_start/4.notify
+
 # 移動
     execute if score @s 9G.AnimationTimer matches 1..12 positioned ^ ^ ^-0.5 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 13..18 positioned ^ ^ ^-0.3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport

@@ -10,13 +10,14 @@
 
 # ライダーキック
 # 移動
+    execute if score @s 9F.AnimationTimer matches 1 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9F.AnimationTimer matches 13..33 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 13..23 at @s positioned ^ ^0.25 ^-0.5 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 13..23 if entity @a[tag=!PlayerShouldInvulnerable,distance=..18] at @s positioned ^ ^0.1 ^-0.3 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 43..51 at @s positioned ^ ^ ^0.3 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 52..58 at @s positioned ^ ^ ^0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9F.AnimationTimer matches 32 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
+        execute if score @s 9F.AnimationTimer matches 32 at @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
         execute if score @s 9F.AnimationTimer matches 33 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/4.calc_vector
         execute if score @s 9F.AnimationTimer matches 34..42 run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector
 # 演出

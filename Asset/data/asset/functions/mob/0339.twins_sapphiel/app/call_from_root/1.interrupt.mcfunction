@@ -9,9 +9,10 @@
     function asset:mob/0339.twins_sapphiel/app/general/1.cancel_animation
 
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
-    # tag @s add 9F.Skill.Hg.Reload
+    tag @s add 9F.Skill.Hg.Reload
     # tag @s add 9F.Skill.Hg.Fullburst.Start
-    tag @s add 9F.Skill.Cover
+    # tag @s add 9F.Skill.Cover
+    # tag @s add 9F.Skill.Damage.Stun.Start
     # tp @s 179.8 211 18.5
 
 # 状態リセット
@@ -22,4 +23,4 @@
 
 # デバッグ
     # scoreboard players set @s 9F.BulletCount.Hg 0
-    tag @s remove 9F.State.Weapon.Hg
+    # tag @s remove 9F.State.Weapon.Hg

@@ -35,6 +35,7 @@
     #declare tag 9G.State.IsDamage 怯み受け付け
     #declare tag 9G.State.Weapon.Kt 刀所持
     #declare tag 9G.State.Weapon.Sc 鎌所持
+    #declare tag 9G.State.Weapon.Gs 大剣所持
     #declare tag 9G.State.Damage.Accept 怯み受け付け中
 
 # スキル
@@ -42,6 +43,8 @@
     #declare tag 9G.Skill.Damage.Start 怯み・開始
     #declare tag 9G.Skill.Damage.Down 怯み・ダウン中
     #declare tag 9G.Skill.Damage.End 怯み・終了
+    #declare tag 9G.Skill.Damage.Stun.Start 怯み・スタン開始
+    #declare tag 9G.Skill.Damage.Stun 怯み・スタン中
     #declare tag 9G.Skill.Cover 怯みかばい攻撃
 
     #declare tag 9G.Skill.Kt.Start 刀持ち替え

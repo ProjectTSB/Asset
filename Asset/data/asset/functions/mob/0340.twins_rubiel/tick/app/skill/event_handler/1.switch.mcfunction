@@ -26,6 +26,10 @@
         execute if entity @s[tag=9G.Skill.Damage.Down] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_2_damage_down/1.main
         ## 怯み・終了
             execute if entity @s[tag=9G.Skill.Damage.End] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_3_damage_end/1.main
+    ## 怯み・スタン開始
+        execute if entity @s[tag=9G.Skill.Damage.Stun.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_4_damage_stun_start/1.main
+        ## 怯み・スタン中
+            execute if entity @s[tag=9G.Skill.Damage.Stun] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/40_5_damage_stun/1.main
 
 ## 怯みかばい攻撃
     execute if entity @s[tag=9G.Skill.Cover] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/41_cover/1.main

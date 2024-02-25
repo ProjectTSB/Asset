@@ -23,6 +23,10 @@
             #declare tag 9E.Skill.Crossfire.Ruby.Hit 交差攻撃・ルビィ攻撃ヒット通知
         #declare tag 9E.Skill.Throw ぶん投げ
         #declare tag 9E.Skill.Launcher ランチャー
+        #declare tag 9E.Skill.Rubiel.Cover ルビィ怯みかばい攻撃
+        #declare tag 9E.Skill.Sapphiel.Cover サフィ怯みかばい攻撃
+        #declare tag 9E.Skill.Damage 同時ひるみ
+        #declare tag 9E.Skill.Stun スタン開始
 
 # サフィ用
     # 共通

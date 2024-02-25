@@ -19,6 +19,8 @@
     tag @s remove 9F.Skill.Damage.Start
     tag @s remove 9F.Skill.Damage.Down
     tag @s remove 9F.Skill.Damage.End
+    tag @s remove 9F.Skill.Damage.Stun.Start
+    tag @s remove 9F.Skill.Damage.Stun
     tag @s remove 9F.Skill.Cover
 
     tag @s remove 9F.Skill.Hg.Start

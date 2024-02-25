@@ -10,8 +10,10 @@
 ###########################################################################
 ## 汎用
 
-# 集合
-    # execute if entity @s[tag=9E.Skill.GoAlong] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/00_goalong/1.main
+# ルビィ怯みかばい攻撃
+    execute if entity @s[tag=9E.Skill.Rubiel.Cover] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_1_rubiel_cover/1.main
+# サフィ怯みかばい攻撃
+    execute if entity @s[tag=9E.Skill.Sapphiel.Cover] run function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/04_2_sapphiel_cover/1.main
 
 ###########################################################################
 ## シンクロ攻撃

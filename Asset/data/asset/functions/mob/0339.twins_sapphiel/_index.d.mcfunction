@@ -40,6 +40,8 @@
     #declare tag 9F.Skill.Damage.Start 怯み・開始
     #declare tag 9F.Skill.Damage.Down 怯み・ダウン中
     #declare tag 9F.Skill.Damage.End 怯み・終了
+    #declare tag 9F.Skill.Damage.Stun.Start 怯み・スタン開始
+    #declare tag 9F.Skill.Damage.Stun 怯み・スタン
     #declare tag 9F.Skill.Cover 怯みかばい攻撃
 
     #declare tag 9F.Skill.Hg.Start ハンドガン持ち替え
