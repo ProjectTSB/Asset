@@ -8,6 +8,9 @@
 # アニメーション再生 (長さ：40tick)
     execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_2_kt_sheathe_wait_jumonji/3.play_animation
 
+# 無敵化
+    effect give @s resistance 1 9 true
+
 # 移動
     function asset:mob/0340.twins_rubiel/app/general/2.rotate
 

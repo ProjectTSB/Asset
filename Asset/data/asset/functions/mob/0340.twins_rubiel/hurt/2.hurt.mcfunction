@@ -12,6 +12,7 @@
     scoreboard players reset $Uid Temporary
 
 # ダメージリアクション
+    execute if entity @s[tag=9G.Skill.Kt.Sheathe.Wait.Jumonji] run function asset:mob/0340.twins_rubiel/hurt/app/3.sheathe_counter
     execute if entity @s[tag=9G.State.IsGuard] run function asset:mob/0340.twins_rubiel/hurt/app/1.guard
     execute if entity @s[tag=9G.State.IsDamage] run function asset:mob/0340.twins_rubiel/hurt/app/2.damage
 

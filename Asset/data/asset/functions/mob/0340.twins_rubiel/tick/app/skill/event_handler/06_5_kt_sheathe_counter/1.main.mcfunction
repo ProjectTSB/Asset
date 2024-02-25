@@ -26,5 +26,5 @@
     execute if score @s 9G.AnimationTimer matches 7 positioned ^ ^ ^2 rotated ~90 -40 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_5_kt_sheathe_counter/6.1.particle_slash
     execute if score @s 9G.AnimationTimer matches 7 positioned ^ ^ ^2.5 rotated ~90 -40 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_5_kt_sheathe_counter/5.damage
 
-# 終了  
+# 終了
     execute if score @s 9G.AnimationTimer matches 32.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_5_kt_sheathe_counter/2.end
