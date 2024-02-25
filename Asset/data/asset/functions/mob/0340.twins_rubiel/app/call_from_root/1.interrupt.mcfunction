@@ -11,6 +11,9 @@
 # 状態リセット
     function asset:mob/0340.twins_rubiel/app/general/8.reset_state
 
+# ガード回数リセット
+    scoreboard players set @s 9G.GuardCount 0
+
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
     tag @s add 9G.Skill.Kt.Sheathe
     # tp @s 179.8 211 18.5

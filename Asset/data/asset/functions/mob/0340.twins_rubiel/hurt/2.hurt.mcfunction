@@ -14,7 +14,8 @@
 # ダメージリアクション
     execute if entity @s[tag=9G.Skill.Kt.Sheathe.Wait.Jumonji] run function asset:mob/0340.twins_rubiel/hurt/app/3.sheathe_counter
     execute if entity @s[tag=9G.State.IsGuard] run function asset:mob/0340.twins_rubiel/hurt/app/1.guard
-    execute if entity @s[tag=9G.State.IsDamage] run function asset:mob/0340.twins_rubiel/hurt/app/2.damage
+    execute if entity @s[tag=9G.State.IsDamage,tag=!9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/hurt/app/2.damage
+    execute if entity @s[tag=9G.State.IsDamage,tag=9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/hurt/app/4_sheathe_damage
 
 # 効果音
     execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 0.8

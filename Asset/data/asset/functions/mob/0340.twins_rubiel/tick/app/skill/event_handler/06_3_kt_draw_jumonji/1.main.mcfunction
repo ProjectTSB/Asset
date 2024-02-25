@@ -12,7 +12,6 @@
     execute if score @s 9G.AnimationTimer matches 1..5 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
     execute if score @s 9G.AnimationTimer matches 1..10 at @s run function asset:mob/0340.twins_rubiel/app/general/7.update_altitude_to_player
     execute if score @s 9G.AnimationTimer matches 1..7 at @s positioned ^ ^ ^0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
-    # execute if score @s 9G.AnimationTimer matches 8..13 unless entity @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s positioned ^ ^ ^3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 14..18 at @s positioned ^ ^ ^0.2 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 43..52 at @s positioned ^ ^0.05 ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
@@ -47,6 +46,10 @@
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 13 at @s positioned ^ ^1 ^2.5 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/5.damage
     execute if score @s 9G.AnimationTimer matches 17 at @s positioned ^ ^1 ^2.5 if score @s 9G.DamageCooldown matches ..0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/5.damage
+
+# 怯み受け付け
+    execute if score @s 9G.AnimationTimer matches 8 run tag @s add 9G.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 12 run tag @s remove 9G.State.IsDamage
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 56.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_3_kt_draw_jumonji/2.end
