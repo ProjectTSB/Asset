@@ -2,6 +2,8 @@
 #
 # アニメーションのイベントハンドラ Kt移動突き
 # 側面に回り込み、突き攻撃を行う
+# 突きはジャンプで回避可能
+# ジャンプで回避したうえで刀の上に着地された場合、体制を崩す
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/1.switch
 

@@ -5,7 +5,7 @@
 # @within function asset:mob/0340.twins_rubiel/tick/2.tick
 
 ###########################################################################
-## 汎用
+# 汎用
 
 ## 登場演出
     execute if entity @s[tag=9G.Skill.Start] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/00_start/1.main
@@ -35,7 +35,7 @@
     execute if entity @s[tag=9G.Skill.Cover] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/41_cover/1.main
 
 ###########################################################################
-## 刀
+# 刀
 
 ## 待機
     execute if entity @s[tag=9G.Skill.Kt.Idle] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/02_kt_idle/1.main
@@ -83,7 +83,7 @@
         execute if entity @s[tag=9G.Skill.Kt.Throw] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/08_2_kt_throw/1.main
 
 ###########################################################################
-## 鎌
+# 鎌
 
 ## 待機
     execute if entity @s[tag=9G.Skill.Sc.Idle] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/12_sc_idle/1.main
@@ -92,7 +92,7 @@
     execute if entity @s[tag=9G.Skill.Sc.Warp] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/1.main
 
 ###########################################################################
-## シンクロスキル
+# シンクロスキル
 
 ## 集合
     execute if entity @s[tag=9G.Skill.Sync.Goalong] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/30_sync_goalong/1.main

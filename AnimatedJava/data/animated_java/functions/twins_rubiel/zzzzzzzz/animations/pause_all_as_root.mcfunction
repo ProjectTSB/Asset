@@ -42,6 +42,7 @@ function animated_java:twins_rubiel/zzzzzzzz/animations/30_0_sync_goalong/pause_
 function animated_java:twins_rubiel/zzzzzzzz/animations/31_0_sync_crossfire_0/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/31_1_sync_crossfire_1/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/pause_as_root
+function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_1/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/40_0_damage/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/pause_as_root
 function animated_java:twins_rubiel/zzzzzzzz/animations/40_2_damage_end/pause_as_root

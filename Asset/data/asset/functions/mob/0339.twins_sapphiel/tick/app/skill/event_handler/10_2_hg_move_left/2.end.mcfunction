@@ -8,4 +8,9 @@
     tag @s remove 9F.Skill.Hg.Step.Left
 
 # タイマーリセット
-    scoreboard players set @s 9F.AnimationTimer -1
+    scoreboard players set @s 9F.AnimationTimer 0
+
+# 敵が近くにいる場合、引き撃ち
+    execute if entity @a[distance=..4] run tag @s add 9F.Skill.Hg.BackShot
+# それ以外の場合、射撃
+    execute unless entity @s[tag=9F.Skill.Hg.BackShot] run tag @s add 9F.Skill.Hg.Shot

@@ -9,7 +9,8 @@
 
 # 弾数が一定以下の場合、リロード
     execute if score @s 9F.BulletCount.Hg matches 16.. run tag @s add 9F.Skill.Hg.Reload
+# それ以外の場合、ワープ射撃
+    execute unless entity @s[tag=9F.Skill.Hg.Reload] run tag @s add 9F.Skill.Hg.Warp.Shot
 
 # タイマーリセット
-    execute if entity @s[tag=9F.Skill.Hg.Reload] run scoreboard players set @s 9F.AnimationTimer 0
-    execute if entity @s[tag=!9F.Skill.Hg.Reload] run scoreboard players set @s 9F.AnimationTimer -1
+    scoreboard players set @s 9F.AnimationTimer 0

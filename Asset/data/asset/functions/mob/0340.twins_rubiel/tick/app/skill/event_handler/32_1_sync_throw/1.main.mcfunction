@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Syncぶん投げ
 # サフィに投げられた勢いのまま大剣で攻撃する
+# 着地時の攻撃に加え、衝撃波で六方向に追撃
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/1.switch
 
@@ -31,6 +32,10 @@
 # ダメージ
     execute if score @s 9G.AnimationTimer matches 85 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/5.1.damage_slash
     execute if score @s 9G.AnimationTimer matches 100 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/5.2.damage_burst
+
+# 怯み受け付け
+    execute if score @s 9G.AnimationTimer matches 120 run tag @s add 9G.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 140 run tag @s remove 9G.State.IsDamage
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 157.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/2.end

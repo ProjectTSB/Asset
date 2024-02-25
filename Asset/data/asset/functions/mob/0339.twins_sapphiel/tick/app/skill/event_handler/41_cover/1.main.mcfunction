@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ 怯みかばい攻撃
 # 相方の怯みをかばいつつ攻撃する
+# 最後の下段回し蹴りはジャンプで回避可能
 #
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/1.switch
 

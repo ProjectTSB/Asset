@@ -34,5 +34,9 @@
 # 状態更新
     execute if score @s 9G.AnimationTimer matches 1 run tag @s add 9G.State.Weapon.Kt
 
+# 怯み受け付け
+    execute if score @s 9G.AnimationTimer matches 10 run tag @s add 9G.State.IsDamage
+    execute if score @s 9G.AnimationTimer matches 40 run tag @s remove 9G.State.IsDamage
+
 # 終了
     execute if score @s 9G.AnimationTimer matches 66.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/2.end

@@ -2,6 +2,8 @@
 #
 # アニメーションのイベントハンドラ Kt納刀待機・十文字
 # 納刀中の待機モーション・十文字斬り
+# サフィエルの行動が終了した場合に攻撃に移る
+# 納刀中にプレイヤーから攻撃を受けた場合、納刀をキャンセルして反撃する
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/1.switch
 

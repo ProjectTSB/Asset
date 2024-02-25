@@ -17,6 +17,9 @@
         #declare tag 9E.State.Await 待機中
         #declare tag 9E.State.GetAwait.Sappihel サフィ待機中
         #declare tag 9E.State.GetAwait.Rubiel ルビィ待機中
+        #declare tag 9E.State.Phase.Sapphiel サフィに指示を出す
+        #declare tag 9E.State.Phase.Rubiel ルビィに指示を出す
+        #declare tag 9E.State.Phase.Sync シンクロ攻撃中
     # スキル
         #declare tag 9E.Skill.GoAlong 集合
         #declare tag 9E.Skill.Crossfire 交差攻撃

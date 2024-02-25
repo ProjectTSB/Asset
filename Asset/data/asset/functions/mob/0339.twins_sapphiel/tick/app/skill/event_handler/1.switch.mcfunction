@@ -5,7 +5,7 @@
 # @within function asset:mob/0339.twins_sapphiel/tick/2.tick
 
 ###########################################################################
-## 汎用
+# 汎用
 
 ## 登場演出
     execute if entity @s[tag=9F.Skill.Start] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/00_start/1.main
@@ -35,7 +35,7 @@
     execute if entity @s[tag=9F.Skill.Cover] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/1.main
 
 ###########################################################################
-## ハンドガン
+# ハンドガン
 
 ## 待機
     execute if entity @s[tag=9F.Skill.Hg.Idle] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/02_hg_idle/1.main
@@ -93,7 +93,7 @@
     execute if entity @s[tag=9F.Skill.Hg.Step.Back] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/10_5_hg_move_back/1.main
 
 ###########################################################################
-## ランチャー
+# ランチャー
 
 ## ジャンプ
         execute if entity @s[tag=9F.Skill.Lc.Jump] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_1_lc_shot_jump/1.main
@@ -103,7 +103,7 @@
             execute if entity @s[tag=9F.Skill.Lc.Shot] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/1.main
 
 ###########################################################################
-## シンクロスキル
+# シンクロスキル
 
 ## 集合
     execute if entity @s[tag=9F.Skill.Sync.Goalong] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/30_sync_goalong/1.main

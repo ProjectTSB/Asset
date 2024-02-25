@@ -22,6 +22,10 @@
     scoreboard players operation @s 9E.Uid = $Random Temporary
     scoreboard players operation @e[type=marker,tag=9E.Marker.SpawnPoint,tag=9E.Init,sort=nearest,limit=1] 9E.Uid = $Random Temporary
 
+# 最初のフェーズ決定
+    execute if predicate lib:random_pass_per/50 run tag @s add 9E.State.Phase.Sapphiel
+    execute unless entity @s[tag=9E.State.Phase.Sapphiel] run tag @s add 9E.State.Phase.Rubiel
+
 # リセット
     scoreboard players reset $Random Temporary
     tag @e[type=marker,tag=9E.Marker.SpawnPoint,tag=9E.Init] remove 9E.Init

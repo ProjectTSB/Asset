@@ -42,6 +42,7 @@ execute if entity @s[tag=aj.twins_rubiel.animation.30_0_sync_goalong] run functi
 execute if entity @s[tag=aj.twins_rubiel.animation.31_0_sync_crossfire_0] run function animated_java:twins_rubiel/zzzzzzzz/animations/31_0_sync_crossfire_0/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.31_1_sync_crossfire_1] run function animated_java:twins_rubiel/zzzzzzzz/animations/31_1_sync_crossfire_1/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.32_0_sync_throwattack_0] run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/tick
+execute if entity @s[tag=aj.twins_rubiel.animation.32_0_sync_throwattack_1] run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_1/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.40_0_damage] run function animated_java:twins_rubiel/zzzzzzzz/animations/40_0_damage/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.40_1_damage_down] run function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/tick
 execute if entity @s[tag=aj.twins_rubiel.animation.40_2_damage_end] run function animated_java:twins_rubiel/zzzzzzzz/animations/40_2_damage_end/tick

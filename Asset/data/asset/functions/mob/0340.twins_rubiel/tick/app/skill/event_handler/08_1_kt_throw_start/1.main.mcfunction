@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Kt掴み
 # 刀をしまい、両手で敵を掴む
+# 掴みに失敗した場合は体制を崩し、ダメージを受けると怯む
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/1.switch
 

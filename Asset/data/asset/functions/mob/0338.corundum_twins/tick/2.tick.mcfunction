@@ -11,6 +11,12 @@
     # execute at @e[type=item_display,tag=9F.Target] run particle flame ~ ~1 ~ 0 2 0 0 5
     # execute at @e[type=item_display,tag=9G.Target] run particle flame ~ ~1 ~ 0 2 0 0 5
 
+# タイマー増加
+    scoreboard players add @s 9E.Timer 1
+
+# AI
+    function asset:mob/0338.corundum_twins/tick/app/ai/1.main
+
 # スキル
     function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/1.switch
 

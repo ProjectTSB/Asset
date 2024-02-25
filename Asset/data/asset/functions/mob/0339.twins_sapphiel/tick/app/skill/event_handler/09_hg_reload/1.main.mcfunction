@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Hgリロード
 # ハンドガンのリロードモーション
+# リロード中に攻撃を受けると怯む
 #
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/1.switch
 

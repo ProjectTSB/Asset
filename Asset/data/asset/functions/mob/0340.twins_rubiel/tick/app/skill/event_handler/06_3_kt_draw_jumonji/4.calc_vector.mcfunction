@@ -6,7 +6,7 @@
 
 
 # 着地点
-    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..25] positioned as @a[tag=!PlayerShouldInvulnerable,distance=..25,sort=nearest,limit=1] as @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] run tp @s ^ ^0.8 ^-3
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..20] positioned as @a[tag=!PlayerShouldInvulnerable,distance=..20,sort=nearest,limit=1] as @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] run tp @s ^ ^0.8 ^-3
     data modify storage asset:temp 9G.Pos set from entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] Pos
     execute store result score @s 9G.MoveVector.X run data get storage asset:temp 9G.Pos[0] 1000
     execute store result score @s 9G.MoveVector.Y run data get storage asset:temp 9G.Pos[1] 1000

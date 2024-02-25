@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Kt瑠火伊流・十文字
 # 自己流奥義、大きく踏み込みつつ居合斬りを行う
+# 抜刀直前（キラッの効果音）から攻撃までの間にダメージを受けた場合、体制を崩す
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/1.switch
 

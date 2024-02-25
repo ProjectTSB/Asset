@@ -14,9 +14,10 @@
     tag @s remove 9E.State.GetAwait.Rubiel
 
 # 演出
-    execute at @e[type=wither_skeleton,tag=9F.Target] run playsound entity.item.break hostile @a ~ ~ ~ 2 0.5
-    execute at @e[type=wither_skeleton,tag=9F.Target] run playsound entity.item.break hostile @a ~ ~ ~ 2 0.6
-    execute at @e[type=wither_skeleton,tag=9F.Target] run playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.6
-    execute at @e[type=wither_skeleton,tag=9F.Target] run playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.8
-    execute at @e[type=wither_skeleton,tag=9F.Target] run particle explosion ~ ~1 ~ 0.3 0.3 0.3 0 5
-    execute at @e[type=wither_skeleton,tag=9G.Target] run particle explosion ~ ~1 ~ 0.3 0.3 0.3 0 5
+    playsound entity.item.break hostile @a ~ ~ ~ 2 0.5
+    playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.6
+    playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.8
+    playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.6
+    playsound entity.player.attack.knockback hostile @a ~ ~ ~ 2 0.8
+    particle explosion ~ ~1 ~ 0.3 0.3 0.3 0 2
+    execute at @e[type=wither_skeleton,tag=9G.Target] run particle explosion ~ ~1 ~ 0.3 0.3 0.3 0 2

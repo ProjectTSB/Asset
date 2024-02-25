@@ -13,6 +13,7 @@
 
 # カウンター
     scoreboard objectives add 9G.ActionCount dummy
+    scoreboard objectives add 9G.ActionCount.Feeling dummy
     scoreboard objectives add 9G.GuardCount dummy
     scoreboard objectives add 9G.CounterCount dummy
     scoreboard objectives add 9G.DownCount dummy

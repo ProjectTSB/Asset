@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Hg足払い
 # 下段蹴りで周囲のプレイヤーを転ばせる
+# ジャンプで回避可能
 #
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/1.switch
 

@@ -2,6 +2,7 @@
 #
 # アニメーションのイベントハンドラ Hg射撃
 # やや前進しながら2発射撃する
+# 弾が4発以上残っている場合は、側転射撃に移行
 #
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/1.switch
 
@@ -22,7 +23,7 @@
     execute if score @s 9F.AnimationTimer matches 26 positioned ^ ^1 ^0.8 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
 
 # 遷移
-    execute if score @s 9F.AnimationTimer matches 40 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/4.change_to_moveshot
+    execute if score @s 9F.AnimationTimer matches 40 if score @s 9F.BulletCount.Hg matches ..12 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/4.change_to_moveshot
 
 # 終了
     execute if score @s 9F.AnimationTimer matches 61.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/2.end
