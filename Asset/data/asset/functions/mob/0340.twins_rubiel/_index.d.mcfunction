@@ -42,6 +42,7 @@
     #declare tag 9G.Skill.Damage.Start 怯み・開始
     #declare tag 9G.Skill.Damage.Down 怯み・ダウン中
     #declare tag 9G.Skill.Damage.End 怯み・終了
+    #declare tag 9G.Skill.Cover 怯みかばい攻撃
 
     #declare tag 9G.Skill.Kt.Start 刀持ち替え
     #declare tag 9G.Skill.Kt.Idle 刀待機

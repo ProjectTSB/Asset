@@ -42,6 +42,9 @@ scoreboard objectives add aj.twins_sapphiel.animation.32_0_sync_throwattack_2.lo
 scoreboard objectives add aj.twins_sapphiel.animation.40_0_damage.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.40_1_damage_down.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.40_2_damage_end.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.40_3_damage_stun_start.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.40_4_damage_stun.local_anim_time dummy
+scoreboard objectives add aj.twins_sapphiel.animation.41_0_cover.local_anim_time dummy
 scoreboard objectives add aj.twins_sapphiel.animation.0_0_start.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.1_0_hg_start.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.2_0_hg_idle.loop_mode dummy
@@ -79,6 +82,9 @@ scoreboard objectives add aj.twins_sapphiel.animation.32_0_sync_throwattack_2.lo
 scoreboard objectives add aj.twins_sapphiel.animation.40_0_damage.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.40_1_damage_down.loop_mode dummy
 scoreboard objectives add aj.twins_sapphiel.animation.40_2_damage_end.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.40_3_damage_stun_start.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.40_4_damage_stun.loop_mode dummy
+scoreboard objectives add aj.twins_sapphiel.animation.41_0_cover.loop_mode dummy
 scoreboard players set $aj.twins_sapphiel.animation.0_0_start aj.id 0
 scoreboard players set $aj.twins_sapphiel.animation.1_0_hg_start aj.id 1
 scoreboard players set $aj.twins_sapphiel.animation.2_0_hg_idle aj.id 2
@@ -116,6 +122,9 @@ scoreboard players set $aj.twins_sapphiel.animation.32_0_sync_throwattack_2 aj.i
 scoreboard players set $aj.twins_sapphiel.animation.40_0_damage aj.id 34
 scoreboard players set $aj.twins_sapphiel.animation.40_1_damage_down aj.id 35
 scoreboard players set $aj.twins_sapphiel.animation.40_2_damage_end aj.id 36
+scoreboard players set $aj.twins_sapphiel.animation.40_3_damage_stun_start aj.id 37
+scoreboard players set $aj.twins_sapphiel.animation.40_4_damage_stun aj.id 38
+scoreboard players set $aj.twins_sapphiel.animation.41_0_cover aj.id 39
 scoreboard players set $aj.twins_sapphiel.variant.default aj.id 0
 scoreboard players set $aj.twins_sapphiel.variant.blink aj.id 1
 scoreboard players set $aj.twins_sapphiel.variant.stun aj.id 2
@@ -123,6 +132,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.twins_sapphiel.export_version aj.i -508417523
+scoreboard players set aj.twins_sapphiel.export_version aj.i 493070666
 scoreboard players reset * aj.twins_sapphiel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.twins_sapphiel.root] run function animated_java:twins_sapphiel/zzzzzzzz/on_load

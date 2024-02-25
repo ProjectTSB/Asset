@@ -103,16 +103,18 @@ execute if score #animation aj.i = $aj.twins_rubiel.animation.31_1_sync_crossfir
 execute if score #animation aj.i = $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.31_1_sync_crossfire_1.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_0.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_1/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_1.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_9/apply_frame_as_root
-execute if score #animation aj.i = $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id run scoreboard players operation @s aj.twins_rubiel.animation.32_0_sync_throwattack_9.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_0_damage aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/40_0_damage/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_0_damage aj.id run scoreboard players operation @s aj.twins_rubiel.animation.40_0_damage.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_1_damage_down aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/40_1_damage_down/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_1_damage_down aj.id run scoreboard players operation @s aj.twins_rubiel.animation.40_1_damage_down.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_2_damage_end aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/40_2_damage_end/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_rubiel.animation.40_2_damage_end aj.id run scoreboard players operation @s aj.twins_rubiel.animation.40_2_damage_end.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.40_3_damage_stun_start aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/40_3_damage_stun_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.40_3_damage_stun_start aj.id run scoreboard players operation @s aj.twins_rubiel.animation.40_3_damage_stun_start.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.40_4_damage_stun aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/40_4_damage_stun/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.40_4_damage_stun aj.id run scoreboard players operation @s aj.twins_rubiel.animation.40_4_damage_stun.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_rubiel.animation.41_0_cover aj.id run function animated_java:twins_rubiel/zzzzzzzz/animations/41_0_cover/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_rubiel.animation.41_0_cover aj.id run scoreboard players operation @s aj.twins_rubiel.animation.41_0_cover.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_rubiel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

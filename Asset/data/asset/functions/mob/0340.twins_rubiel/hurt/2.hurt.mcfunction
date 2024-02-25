@@ -19,4 +19,4 @@
     execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 0.8
     execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 1
     execute if entity @s[tag=9G.Skill.Kt.Guard] run playsound block.anvil.place hostile @a ~ ~ ~ 0.7 1.9
-    # execute if entity @s[tag=9G.Skill.Hg.Guard] run playsound item.shield.block hostile @a ~ ~ ~ 1 2
+    execute unless entity @s[tag=9G.Skill.Kt.Guard] run playsound entity.generic.hurt hostile @a ~ ~ ~ 1 1

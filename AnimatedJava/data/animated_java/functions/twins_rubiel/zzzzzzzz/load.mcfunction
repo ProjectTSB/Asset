@@ -49,11 +49,12 @@ scoreboard objectives add aj.twins_rubiel.animation.30_0_sync_goalong.local_anim
 scoreboard objectives add aj.twins_rubiel.animation.31_0_sync_crossfire_0.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_1_sync_crossfire_1.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_0.local_anim_time dummy
-scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_1.local_anim_time dummy
-scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_9.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_0_damage.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_1_damage_down.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_2_damage_end.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.40_3_damage_stun_start.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.40_4_damage_stun.local_anim_time dummy
+scoreboard objectives add aj.twins_rubiel.animation.41_0_cover.local_anim_time dummy
 scoreboard objectives add aj.twins_rubiel.animation.0_0_start.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.1_0_katana_start.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.2_0_0_idle_katana_normal.loop_mode dummy
@@ -98,11 +99,12 @@ scoreboard objectives add aj.twins_rubiel.animation.30_0_sync_goalong.loop_mode 
 scoreboard objectives add aj.twins_rubiel.animation.31_0_sync_crossfire_0.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.31_1_sync_crossfire_1.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_0.loop_mode dummy
-scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_1.loop_mode dummy
-scoreboard objectives add aj.twins_rubiel.animation.32_0_sync_throwattack_9.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_0_damage.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_1_damage_down.loop_mode dummy
 scoreboard objectives add aj.twins_rubiel.animation.40_2_damage_end.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.40_3_damage_stun_start.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.40_4_damage_stun.loop_mode dummy
+scoreboard objectives add aj.twins_rubiel.animation.41_0_cover.loop_mode dummy
 scoreboard players set $aj.twins_rubiel.animation.0_0_start aj.id 0
 scoreboard players set $aj.twins_rubiel.animation.1_0_katana_start aj.id 1
 scoreboard players set $aj.twins_rubiel.animation.2_0_0_idle_katana_normal aj.id 2
@@ -147,11 +149,12 @@ scoreboard players set $aj.twins_rubiel.animation.30_0_sync_goalong aj.id 40
 scoreboard players set $aj.twins_rubiel.animation.31_0_sync_crossfire_0 aj.id 41
 scoreboard players set $aj.twins_rubiel.animation.31_1_sync_crossfire_1 aj.id 42
 scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_0 aj.id 43
-scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_1 aj.id 44
-scoreboard players set $aj.twins_rubiel.animation.32_0_sync_throwattack_9 aj.id 45
-scoreboard players set $aj.twins_rubiel.animation.40_0_damage aj.id 46
-scoreboard players set $aj.twins_rubiel.animation.40_1_damage_down aj.id 47
-scoreboard players set $aj.twins_rubiel.animation.40_2_damage_end aj.id 48
+scoreboard players set $aj.twins_rubiel.animation.40_0_damage aj.id 44
+scoreboard players set $aj.twins_rubiel.animation.40_1_damage_down aj.id 45
+scoreboard players set $aj.twins_rubiel.animation.40_2_damage_end aj.id 46
+scoreboard players set $aj.twins_rubiel.animation.40_3_damage_stun_start aj.id 47
+scoreboard players set $aj.twins_rubiel.animation.40_4_damage_stun aj.id 48
+scoreboard players set $aj.twins_rubiel.animation.41_0_cover aj.id 49
 scoreboard players set $aj.twins_rubiel.variant.default aj.id 0
 scoreboard players set $aj.twins_rubiel.variant.blink aj.id 1
 scoreboard players set $aj.twins_rubiel.variant.damage aj.id 2
@@ -163,6 +166,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.twins_rubiel.export_version aj.i 287731950
+scoreboard players set aj.twins_rubiel.export_version aj.i -183470873
 scoreboard players reset * aj.twins_rubiel.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.twins_rubiel.root] run function animated_java:twins_rubiel/zzzzzzzz/on_load

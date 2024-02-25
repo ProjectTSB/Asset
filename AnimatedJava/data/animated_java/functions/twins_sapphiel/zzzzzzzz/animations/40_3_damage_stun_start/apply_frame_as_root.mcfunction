@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..16 run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_3_damage_stun_start/tree/branch_0_16

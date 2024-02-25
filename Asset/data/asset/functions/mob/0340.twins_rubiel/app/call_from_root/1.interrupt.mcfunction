@@ -12,5 +12,7 @@
     function asset:mob/0340.twins_rubiel/app/general/8.reset_state
 
 # TODO:デバッグ用アニメーション強制再生、いずれ消去
-    tag @s add 9G.Skill.Kt.Moveslash
+    # tag @s add 9G.Skill.Kt.Throw.Start
     # tp @s 179.8 211 18.5
+    tag @s add 9G.Skill.Cover
+    tag @s remove 9G.State.Weapon.Kt

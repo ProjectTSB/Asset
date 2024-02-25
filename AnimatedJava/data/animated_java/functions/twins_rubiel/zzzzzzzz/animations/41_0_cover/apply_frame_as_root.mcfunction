@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..135 run function animated_java:twins_rubiel/zzzzzzzz/animations/41_0_cover/tree/branch_0_135

@@ -35,3 +35,6 @@ function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_
 function animated_java:twins_sapphiel/zzzzzzzz/animations/40_0_damage/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/40_1_damage_down/pause_as_root
 function animated_java:twins_sapphiel/zzzzzzzz/animations/40_2_damage_end/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/40_3_damage_stun_start/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/40_4_damage_stun/pause_as_root
+function animated_java:twins_sapphiel/zzzzzzzz/animations/41_0_cover/pause_as_root

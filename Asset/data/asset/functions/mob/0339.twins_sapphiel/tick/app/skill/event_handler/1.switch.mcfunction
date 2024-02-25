@@ -27,6 +27,9 @@
         ## 怯み・終了
             execute if entity @s[tag=9F.Skill.Damage.End] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_3_damage_end/1.main
 
+## 怯みかばい攻撃
+    execute if entity @s[tag=9F.Skill.Cover] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/1.main
+
 ###########################################################################
 ## ハンドガン
 

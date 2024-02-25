@@ -85,6 +85,12 @@ execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_1_damage_down
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_1_damage_down aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.40_1_damage_down.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_2_damage_end aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_2_damage_end/apply_frame_as_root
 execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_2_damage_end aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.40_2_damage_end.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_3_damage_stun_start aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_3_damage_stun_start/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_3_damage_stun_start aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.40_3_damage_stun_start.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_4_damage_stun aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_4_damage_stun/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.40_4_damage_stun aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.40_4_damage_stun.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.41_0_cover aj.id run function animated_java:twins_sapphiel/zzzzzzzz/animations/41_0_cover/apply_frame_as_root
+execute if score #animation aj.i = $aj.twins_sapphiel.animation.41_0_cover aj.id run scoreboard players operation @s aj.twins_sapphiel.animation.41_0_cover.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:twins_sapphiel/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

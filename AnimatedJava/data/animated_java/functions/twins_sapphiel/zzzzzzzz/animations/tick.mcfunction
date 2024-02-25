@@ -35,3 +35,6 @@ execute if entity @s[tag=aj.twins_sapphiel.animation.32_0_sync_throwattack_2] ru
 execute if entity @s[tag=aj.twins_sapphiel.animation.40_0_damage] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_0_damage/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.40_1_damage_down] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_1_damage_down/tick
 execute if entity @s[tag=aj.twins_sapphiel.animation.40_2_damage_end] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_2_damage_end/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.40_3_damage_stun_start] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_3_damage_stun_start/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.40_4_damage_stun] run function animated_java:twins_sapphiel/zzzzzzzz/animations/40_4_damage_stun/tick
+execute if entity @s[tag=aj.twins_sapphiel.animation.41_0_cover] run function animated_java:twins_sapphiel/zzzzzzzz/animations/41_0_cover/tick
