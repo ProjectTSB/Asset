@@ -6,6 +6,3 @@
 
 # 繰り返す
     scoreboard players set @s 9G.AnimationTimer 0
-
-# tag @s remove 9G.Skill.Kt.Sheathe.Wait.Jumonji
-# tag @s add 9G.Skill.Kt.Draw.Jumonji

@@ -28,6 +28,7 @@
     #declare tag 9G.Temp.Target.Warp.2 ワープポイント取得に使用する
     #declare tag 9G.Temp.Target.JumpAvoid ジャンプして攻撃を回避したプレイヤーを取得する
     #declare tag 9G.Temp.Animated このtickすでにアニメーションを決定した
+    #declare tag 9G.Temp.Animated.Draw このtickすでにアニメーションを決定した・居合斬り
 
 # 状態
     #declare tag 9G.State.Await Rootからの指示待ち
