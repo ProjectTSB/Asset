@@ -18,3 +18,4 @@
 # カウンター
     scoreboard objectives add 9E.ActionCount dummy
     scoreboard objectives add 9E.PlayerCount dummy
+    scoreboard objectives add 9E.ForceCounterCount dummy

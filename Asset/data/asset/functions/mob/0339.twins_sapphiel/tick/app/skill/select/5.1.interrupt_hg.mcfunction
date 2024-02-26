@@ -2,8 +2,9 @@
 #
 # ハンドガン装備時の行動決定
 #
-# @within function asset:mob/0339.twins_sapphiel/app/call_from_root/1.interrupt
-
+# @within
+#    function asset:mob/0339.twins_sapphiel/app/call_from_root/1.interrupt
+#    function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
 
 # カウンター増加
     scoreboard players add @s 9F.ActionCount 1

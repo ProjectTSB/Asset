@@ -2,7 +2,9 @@
 #
 # 刀装備時の行動決定
 #
-# @within function asset:mob/0340.twins_rubiel/app/call_from_root/1.interrupt
+# @within
+#    function asset:mob/0340.twins_rubiel/app/call_from_root/1.interrupt
+#    function asset:mob/0340.twins_rubiel/hurt/app/5.counter
 
 # カウンター増加
     scoreboard players add @s 9G.ActionCount 1
