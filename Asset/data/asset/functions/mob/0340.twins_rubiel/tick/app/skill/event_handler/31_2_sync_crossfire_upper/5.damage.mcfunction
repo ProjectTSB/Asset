@@ -38,5 +38,9 @@
     execute as @e[type=slime,tag=9E.Root] if score @s 9E.Uid = $Uid Temporary at @a[tag=9G.Temp.Target.Attack,sort=random,limit=1] run function asset:mob/0338.corundum_twins/app/call_from_twins/skill/01_crossfire/1.rubiel_hit
     scoreboard players reset $Uid Temporary
 
+# 気分を上昇
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players add @s 9G.MoodPoint 10
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack

@@ -10,6 +10,13 @@
 
 # 演出
     execute if score @s 9G.AnimationTimer matches 15 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 1.2
+    execute if score @s 9G.AnimationTimer matches 15 if score @s 9G.MoodPoint matches 50.. run particle note ~ ~2.2 ~ 0.3 0.3 0.3 0.7 1
+    execute if score @s 9G.AnimationTimer matches 30 if score @s 9G.MoodPoint matches 50.. run particle note ~ ~2.2 ~ 0.3 0.3 0.3 0.7 1
+    execute if score @s 9G.AnimationTimer matches 45 if score @s 9G.MoodPoint matches 50.. run particle note ~ ~2.2 ~ 0.3 0.3 0.3 0.7 1
+    execute if score @s 9G.AnimationTimer matches 15 if score @s 9G.MoodPoint matches ..-50 run particle angry_villager ~ ~2.2 ~ 0.3 0.3 0.3 0 1
+    execute if score @s 9G.AnimationTimer matches 30 if score @s 9G.MoodPoint matches ..-50 run particle angry_villager ~ ~2.2 ~ 0.3 0.3 0.3 0 1
+    execute if score @s 9G.AnimationTimer matches 45 if score @s 9G.MoodPoint matches ..-50 run particle angry_villager ~ ~2.2 ~ 0.3 0.3 0.3 0 1
+
 
 # ガード受け付け
     execute if score @s 9G.AnimationTimer matches 1 run tag @s add 9G.State.IsGuard

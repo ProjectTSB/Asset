@@ -27,5 +27,9 @@
     effect give @a[tag=9G.Temp.Target.Attack] slowness 2 20 true
     execute as @a[tag=9G.Temp.Target.Attack] at @s run tp @s @s
 
+# 気分を上昇
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players add @s 9G.MoodPoint 12
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack

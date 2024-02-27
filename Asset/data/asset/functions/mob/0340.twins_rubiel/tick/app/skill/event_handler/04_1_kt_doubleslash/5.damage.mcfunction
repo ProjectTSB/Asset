@@ -7,7 +7,7 @@
 
 # ヒット判定
     tag @a[distance=..2.3] add 9G.Temp.Target.Attack
-    
+
 # TODO:ダメージ
     # 与えるダメージ = 20
         data modify storage lib: Argument.Damage set value 36f
@@ -27,6 +27,10 @@
     playsound ogg:item.trident.throw2 hostile @a ~ ~ ~ 1 1.4
     execute at @a[tag=9G.Temp.Target.Attack] positioned ~ ~1 ~ run particle block red_wool ~ ~1 ~ 0.1 0.2 0.1 0 5
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
+
+# 気分を上昇
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players add @s 9G.MoodPoint 3
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
 
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack

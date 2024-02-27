@@ -21,6 +21,11 @@
     tag @s remove 9G.State.Weapon.Sc
     function asset:mob/0340.twins_rubiel/app/general/8.reset_state
 
+
+# 気分を下降
+    scoreboard players remove @s 9G.MoodPoint 10
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @s remove 9G.State.IsDamage
 

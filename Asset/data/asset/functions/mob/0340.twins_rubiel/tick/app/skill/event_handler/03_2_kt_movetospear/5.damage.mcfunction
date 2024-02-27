@@ -35,5 +35,9 @@
 # ジャンプで回避したプレイヤーを追跡
     execute if entity @a[tag=9G.Temp.Target.JumpAvoid] run schedule function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/7.1.schedule_movetospear 1t replace
 
+# 気分を上昇
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players add @s 9G.MoodPoint 3
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack

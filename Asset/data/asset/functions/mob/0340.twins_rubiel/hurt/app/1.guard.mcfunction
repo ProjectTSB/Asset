@@ -21,6 +21,10 @@
 # 演出
     particle crit ^ ^1.2 ^1 0 0 0 0.5 10
 
+# 気分を下降
+    scoreboard players remove @s 9G.MoodPoint 2
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @s remove 9G.State.IsGuard
 

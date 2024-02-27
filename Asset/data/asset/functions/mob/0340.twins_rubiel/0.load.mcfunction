@@ -22,3 +22,4 @@
     scoreboard objectives add 9G.MoveVector.X dummy
     scoreboard objectives add 9G.MoveVector.Y dummy
     scoreboard objectives add 9G.MoveVector.Z dummy
+    scoreboard objectives add 9G.MoodPoint dummy

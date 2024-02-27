@@ -50,6 +50,10 @@
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
     execute positioned ^ ^1 ^ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.2.particle_circle
 
+# 気分を上昇
+    execute if entity @a[tag=9G.Temp.Target.Attack] run scoreboard players add @s 9G.MoodPoint 25
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood
+
 # 終了
     tag @a[tag=9G.Temp.Target.Attack] remove 9G.Temp.Target.Attack
     tag @a[tag=9G.Temp.Target.Attack.Sub] remove 9G.Temp.Target.Attack.Sub

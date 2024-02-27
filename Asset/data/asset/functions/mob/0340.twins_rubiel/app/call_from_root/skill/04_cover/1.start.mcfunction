@@ -18,3 +18,7 @@
 
 # タグ付与
     tag @s add 9G.Skill.Cover
+
+# 気分を下降
+    scoreboard players remove @s 9G.MoodPoint 15
+    function asset:mob/0340.twins_rubiel/app/general/9.change_mood

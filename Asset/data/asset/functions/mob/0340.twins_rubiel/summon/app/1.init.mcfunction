@@ -15,6 +15,7 @@
     scoreboard players set @s 9G.AnimationTimer 0
     scoreboard players set @s 9G.ActionCount 0
     scoreboard players set @s 9G.DamageCooldown 0
+    scoreboard players set @s 9G.MoodPoint 0
 
 # 初期化開始
     tag @s add 9G.Init
