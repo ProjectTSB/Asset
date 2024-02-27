@@ -11,5 +11,6 @@
     scoreboard players set @s 9F.AnimationTimer 0
 
 # 側転射撃に移行
-    execute if predicate lib:random_pass_per/50 run tag @s add 9F.Skill.Hg.Shot.MoveLeft
+# 左右確認
+    execute facing entity @a[sort=nearest,limit=1] feet positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add 9F.Skill.Hg.Shot.MoveLeft
     execute unless entity @s[tag=9F.Skill.Hg.Shot.MoveLeft] run tag @s add 9F.Skill.Hg.Shot.MoveRight
