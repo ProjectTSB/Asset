@@ -17,8 +17,8 @@
     execute if score @s 9F.AnimationTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
 
 # 攻撃
-    execute if score @s 9F.AnimationTimer matches 17 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:0b,Particle:"block air",Duration:5,Tags:["Object","9F.Temp.Target.Aec.0"]}
-    execute if score @s 9F.AnimationTimer matches 22 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:0b,Particle:"block air",Duration:5,Tags:["Object","9F.Temp.Target.Aec.1"]}
+    execute if score @s 9F.AnimationTimer matches 15 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:0b,Particle:"block air",Duration:7,Tags:["Object","9F.Temp.Target.Aec.0"]}
+    execute if score @s 9F.AnimationTimer matches 20 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:0b,Particle:"block air",Duration:7,Tags:["Object","9F.Temp.Target.Aec.1"]}
     execute if score @s 9F.AnimationTimer matches 21 positioned ^-0.5 ^1 ^0.3 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
     execute if score @s 9F.AnimationTimer matches 26 positioned ^ ^1 ^0.8 facing entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.1,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
 

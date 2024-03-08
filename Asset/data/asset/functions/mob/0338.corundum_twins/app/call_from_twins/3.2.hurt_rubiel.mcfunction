@@ -6,4 +6,4 @@
 #    function asset:mob/0340.twins_rubiel/hurt/2.hurt
 
 # テスト
-    say rubiel hurt
+    # say rubiel hurt

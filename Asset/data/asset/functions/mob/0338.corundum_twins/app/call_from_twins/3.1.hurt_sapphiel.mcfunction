@@ -6,4 +6,4 @@
 #    function asset:mob/0339.twins_sapphiel/hurt/2.hurt
 
 # テスト
-    say sapphiel hurt
+    # say sapphiel hurt

@@ -22,7 +22,7 @@
 
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 42f
+        data modify storage lib: Argument.Damage set value 35f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性

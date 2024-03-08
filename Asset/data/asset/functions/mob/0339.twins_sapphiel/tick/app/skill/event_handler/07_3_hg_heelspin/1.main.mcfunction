@@ -16,7 +16,7 @@
     execute if score @s 9F.AnimationTimer matches 13..18 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^0.1 ^0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 19..22 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.3 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 23..28 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
-    execute if score @s 9F.AnimationTimer matches 29..51 at @s run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
+    execute if score @s 9F.AnimationTimer matches 29..45 at @s run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 29..42 at @s positioned ^ ^-0.05 ^ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 29..42 at @s positioned ^ ^ ^-0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 96..115 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate

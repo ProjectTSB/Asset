@@ -22,7 +22,7 @@
     function lib:damage/reset
 
 # ヒット判定
-    execute positioned ^ ^ ^ run tag @a[distance=..10] add 9G.Temp.Target.Attack.Sub
+    execute positioned ^ ^ ^ run tag @a[distance=..8.5] add 9G.Temp.Target.Attack.Sub
 # TODO:ダメージ
     # 与えるダメージ = 20
         data modify storage lib: Argument.Damage set value 50f
