@@ -8,4 +8,10 @@
     function asset:artifact/common/use/feet
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1074.farothdal
+
+# 効果
+    data modify storage api: Argument.ID set value 230
+    function api:entity/mob/effect/give
+
+# うるさいから音消す
+    stopsound @a[distance=..5] * item.armor.equip_leather
