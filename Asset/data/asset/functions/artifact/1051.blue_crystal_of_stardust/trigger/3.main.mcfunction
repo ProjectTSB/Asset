@@ -9,14 +9,14 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 自身と範囲内の最も現在体力の低いプレイヤー2名が回復の対象
+# 自身と12m以内の現在体力割合の最も低いプレイヤー2名が回復の対象
 
 # 自身に回復対象用のTagを付与
     tag @s add HealTarget
 
-# 周囲の最も現在体力の低いプレイヤー2名を特定し、Tagを付与
-    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
-    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
+# 周囲の最も現在体力割合の低いプレイヤー2名を特定し、Tagを付与
+    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_per_player
+    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_per_player
 
 # HealTargetのプレイヤーの位置で演出
     execute at @a[tag=HealTarget,distance=..12] run function asset:artifact/1051.blue_crystal_of_stardust/trigger/vfx
