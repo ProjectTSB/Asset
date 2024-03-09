@@ -10,12 +10,12 @@
 # ここから先は神器側の効果の処理を書く
 
 # 回復対象にTagを付与
-# 回復対象：使用者と20m以内の現在体力割合の低いプレイヤー2名
+# 回復対象：使用者と20m以内の現在体力の低いプレイヤー2名
     tag @s add HealTarget
 
 # 現在体力の低いプレイヤー2名を特定してTagを付与
-    function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_percent_player
-    function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_percent_player
+    function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_player
+    function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_player
 
 # 回復対象の位置で演出
 # playsoundは回復対象にのみ聞こえる 妖精っぽくて良くない？
