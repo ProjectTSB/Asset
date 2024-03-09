@@ -2,7 +2,7 @@
 #
 # 実行者の現在体力をスコアへ代入する
 #
-# @within function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_low_health_player
+# @within function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
 
 # 現在体力を取得
     function api:data_get/health

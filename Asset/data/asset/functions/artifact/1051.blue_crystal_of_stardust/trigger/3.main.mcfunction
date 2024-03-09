@@ -15,8 +15,8 @@
     tag @s add HealTarget
 
 # 周囲の最も現在体力の低いプレイヤー2名を特定し、Tagを付与
-    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_low_health_player
-    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_low_health_player
+    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
+    function asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
 
 # HealTargetのプレイヤーの位置で演出
     execute at @a[tag=HealTarget,distance=..12] run function asset:artifact/1051.blue_crystal_of_stardust/trigger/vfx

@@ -1,4 +1,4 @@
-#> asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_low_health_player
+#> asset:artifact/1051.blue_crystal_of_stardust/trigger/4.find_lowest_health_player
 #
 # 最も現在HPの低いプレイヤーを特定し、Tagを付与する
 #
