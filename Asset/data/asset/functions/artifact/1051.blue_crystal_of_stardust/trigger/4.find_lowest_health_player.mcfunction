@@ -22,3 +22,4 @@
 
 # リセット
     scoreboard players reset @a[distance=..12] Temporary
+    scoreboard players reset $LowestHealth
