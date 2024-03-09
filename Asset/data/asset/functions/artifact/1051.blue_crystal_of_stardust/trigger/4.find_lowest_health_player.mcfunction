@@ -19,3 +19,6 @@
 
 # 特定したプレイヤーにTagを付与
     execute as @a[tag=!HealTarget,distance=..12] if score @s Temporary = $LowestHealth Temporary run tag @s add HealTarget
+
+# リセット
+    scoreboard players reset @a[distance=..12] Temporary

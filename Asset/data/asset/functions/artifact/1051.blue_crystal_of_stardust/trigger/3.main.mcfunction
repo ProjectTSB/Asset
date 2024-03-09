@@ -29,4 +29,3 @@
 
 # リセット
     tag @a[tag=HealTarget] remove HealTarget
-    scoreboard players reset @a[distance=..12] Temporary
