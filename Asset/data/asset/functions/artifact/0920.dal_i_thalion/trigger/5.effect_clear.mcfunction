@@ -1,6 +1,6 @@
 #> asset:artifact/0920.dal_i_thalion/trigger/5.effect_clear
 #
-#
+# デバフを解除する
 #
 # @within function asset:artifact/0920.dal_i_thalion/trigger/4.schedule
 
