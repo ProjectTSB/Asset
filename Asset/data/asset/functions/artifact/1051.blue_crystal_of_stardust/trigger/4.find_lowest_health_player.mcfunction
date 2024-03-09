@@ -9,7 +9,7 @@
     #declare score_holder $LowestHealth
 
 # 一定範囲内のプレイヤーの体力をスコアへ代入
-    execute as @a[tag=!HealTarget,distance=..12] run function asset:artifact/1051.blue_crystal_of_stardust/trigger/5.get_health
+    execute as @a[tag=!HealTarget,distance=..12] store result score @s Temporary run function asset:artifact/1051.blue_crystal_of_stardust/trigger/5.get_health
 
 # $LowestHealthの初期値として対象プレイヤー1名の体力を代入
     execute unless score $LowestHealth Temporary matches 1.. as @a[tag=!HealTarget,distance=..12,limit=1] store result score $LowestHealth Temporary run scoreboard players get @s Temporary
