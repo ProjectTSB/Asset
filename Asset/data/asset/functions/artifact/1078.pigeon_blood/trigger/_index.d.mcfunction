@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/1078.pigeon_blood/trigger/**
-    #declare
+    #declare tag Resonance

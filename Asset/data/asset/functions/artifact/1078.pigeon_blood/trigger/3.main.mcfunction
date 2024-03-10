@@ -22,3 +22,9 @@
 
 # 使用回数リセット
     execute if entity @s[scores={TY.Count=2..}] run scoreboard players reset @s TY.Count
+
+# 周囲に共鳴・蒼バフを持っているプレイヤーがいないか探す
+    execute as @a[distance=..20] run function asset:artifact/1078.pigeon_blood/trigger/4.search_resonance
+
+# リセット処理部
+    tag @s[tag=Resonance] remove Resonance
