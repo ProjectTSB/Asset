@@ -14,7 +14,7 @@
     function api:data_get/health
     execute store result score $CurrentHealth Temporary run data get storage api: health 100
 
-# 現在体力割合を算出
+# 現在体力割合を返す
     return run scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
 # リセット
