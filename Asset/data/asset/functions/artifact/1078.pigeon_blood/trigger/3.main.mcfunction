@@ -31,5 +31,19 @@
 # 周囲に共鳴・蒼バフを持っているプレイヤーがいないか探す
     execute as @a[distance=..20] run function asset:artifact/1078.pigeon_blood/trigger/4.search_resonance
 
+# デバッグ用共鳴Tag
+    #tag @s add Resonance
+
+# ダメージ 共鳴時にダメージ上昇
+    data modify storage api: Argument.Damage set value 600
+    execute if entity @s[tag=Resonance] run data modify storage api: Argument.Damage set value 800
+    data modify storage api: Argument.AttackType set value "Physical"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
+    function api:damage/reset
+
+# 共鳴時、共鳴攻撃してない場合は追撃が発動する
+    execute if entity @s[tag=Resonance] unless entity @e[type=marker,tag=TY.AttackEntity,distance=..20,limit=1] run function asset:artifact/1078.pigeon_blood/trigger/resonance_attack/1.summon_entity
+
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
