@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ピジョンブラッド","color":"#ffbfd4"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"使用時、共鳴・","color":"white"},{"text":"紅","color":"#ffbfd4"},{"text":"効果を得る。","color":"white"}]','{"text":"自身または周囲のプレイヤーが","color":"white"}','[{"text":"共鳴・","color":"white"},{"text":"蒼","color":"#a1faf5"},{"text":"効果を持つなら攻撃が強化される。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"攻撃時、斬撃を放ち、共鳴・","color":"white"},{"text":"紅","color":"#ffbfd4"},{"text":"効果を得る。","color":"white"}]','{"text":"自身または周囲のプレイヤーが","color":"white"}','[{"text":"共鳴・","color":"white"},{"text":"蒼","color":"#a1faf5"},{"text":"効果を持つなら攻撃が強化される。","color":"white"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -35,7 +35,7 @@
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "condition"
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
