@@ -11,7 +11,7 @@
 
 # 自身に共鳴・蒼バフを付与
     data modify storage api: Argument.ID set value 229
-    #function api:entity/mob/effect/give
+    function api:entity/mob/effect/give
 
 # 周囲に共鳴・紅バフを持っているプレイヤーがいないか探す
     execute as @a[distance=..20] run function asset:artifact/1079.allochromatic/trigger/4.search_resonance
