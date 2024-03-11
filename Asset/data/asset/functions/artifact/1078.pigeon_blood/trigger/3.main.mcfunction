@@ -34,9 +34,22 @@
 # デバッグ用共鳴Tag
     #tag @s add Resonance
 
+#> Private
+# @private
+    #declare score_holder $RandomDamage
+    #declare score_holder $101
+
+# 101を定義
+    scoreboard players set $101 Temporary 101
+
+# ダメージのブレ(450~550)
+    execute store result score $RandomDamage Temporary run function lib:random/
+    scoreboard players operation $RandomDamage Temporary %= $101 Temporary
+    scoreboard players add $RandomDamage Temporary 450
+
 # ダメージ 共鳴時にダメージ上昇
-    data modify storage api: Argument.Damage set value 600
-    execute if entity @s[tag=Resonance] run data modify storage api: Argument.Damage set value 800
+    execute if entity @s[tag=!Resonance] store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
+    execute if entity @s[tag=Resonance] store result storage api: Argument.Damage int 1.5 run data modify storage api: Argument.Damage set value 1
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
@@ -47,3 +60,5 @@
 
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
+    scoreboard players reset $101 Temporary
+    scoreboard players reset $RandomDamage Temporary
