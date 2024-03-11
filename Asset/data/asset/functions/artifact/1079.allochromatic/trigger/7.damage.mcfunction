@@ -16,8 +16,7 @@
     execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/1079.allochromatic/trigger/8.damage_attenuation
 
 # ダメージ設定
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players get $Damage Temporary
-    data modify storage api: Argument.Damage set value 400
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Target,distance=..40,limit=1] run function api:damage/
