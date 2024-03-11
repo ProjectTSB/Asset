@@ -19,3 +19,7 @@
 # メインハンドかオフハンドかで発射位置を変える
     execute if data storage asset:context id{mainhand:1079} anchored eyes positioned ^-0.35 ^-0.15 ^0.5 run function asset:artifact/1079.allochromatic/trigger/5.shot
     execute if data storage asset:context id{offhand:1079} anchored eyes positioned ^0.35 ^-0.15 ^0.5 run function asset:artifact/1079.allochromatic/trigger/5.shot
+
+# 残り回数が1回の時発動した場合
+    execute unless data storage asset:context Items.mainhand.id unless data storage asset:context Items.offhand.id run data modify storage api: Argument.ID set value 1080
+    execute unless data storage asset:context Items.mainhand.id unless data storage asset:context Items.offhand.id run function api:artifact/give/from_id
