@@ -5,8 +5,8 @@
 # @within function asset:artifact/1079.allochromatic/trigger/3.main
 
 # 演出
-    playsound entity.firework_rocket.blast player @a ~ ~ ~ 1 0.5
-    playsound entity.firework_rocket.blast player @a ~ ~ ~ 1 0.7
+    playsound entity.firework_rocket.blast player @a ~ ~ ~ 0.5 0.5
+    playsound entity.firework_rocket.blast player @a ~ ~ ~ 0.5 0.7
     particle block gold_block ^ ^ ^-0.8 0 0 0 1 1
     particle electric_spark ~ ~ ~ 0 0 0 0.2 5
 
