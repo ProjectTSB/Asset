@@ -15,5 +15,11 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,tag=Enemy,dx=0,limit=1] run tag @s add Landing
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,tag=Enemy,dx=0,limit=1] run tag @e[type=#lib:living,tag=Enemy,dx=0,limit=1] add Target
 
+# ダメージを与える
+    execute if entity @s[tag=Landing] run function asset:artifact/1079.allochromatic/trigger/7.damage
+
+# 距離減衰のためのスコア
+    scoreboard players add $Distance_Damping Temporary 1
+
 # 再帰
-    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..16] if block ^ ^ ^ #lib:no_collision run function asset:artifact/1079.allochromatic/trigger/6.shot_recursive
+    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..30] if block ^ ^ ^ #lib:no_collision run function asset:artifact/1079.allochromatic/trigger/6.shot_recursive
