@@ -35,3 +35,7 @@
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
     tag @s[tag=Landing] remove Landing
     tag @e[type=#lib:living,tag=Target,distance=..40,limit=1] remove Target
+    scoreboard players reset $Distance_Damping Temporary
+    scoreboard players reset $Appropriate_Distance Temporary
+    scoreboard players reset $MinDamage Temporary
+    scoreboard players reset $Damage Temporary
