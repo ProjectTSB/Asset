@@ -8,7 +8,7 @@
     execute at @e[type=#lib:living,tag=Target,distance=..40,limit=1] run particle firework ~ ~1.2 ~ 0 0 0 0.3 10
 
 # 一定の距離から距離減衰するための距離
-# 再帰1回につき0.6m進み、5回で3mのため、適正距離は5の倍数で指定した方が良い
+# 再帰1回につき0.6m進み、5回で3m
 # 共鳴時に適正距離が延長される
     scoreboard players set $Appropriate_Distance Temporary 20
     execute if entity @s[tag=Resonance] run scoreboard players set $Appropriate_Distance Temporary 30
