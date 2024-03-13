@@ -49,7 +49,7 @@
 
 # ダメージ 共鳴時にダメージ上昇
     execute if entity @s[tag=!Resonance] store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
-    execute if entity @s[tag=Resonance] store result storage api: Argument.Damage int 1.5 run data modify storage api: Argument.Damage set value 1
+    execute if entity @s[tag=Resonance] store result storage api: Argument.Damage int 1.2 run data modify storage api: Argument.Damage set value 1
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
