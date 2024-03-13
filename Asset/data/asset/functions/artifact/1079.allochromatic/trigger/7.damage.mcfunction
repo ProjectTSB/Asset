@@ -21,7 +21,8 @@
 # 適正距離じゃないければダメージ減衰の計算を行う
     execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/1079.allochromatic/trigger/8.damage_attenuation
 
-tellraw @a [{"score":{"name":"$Damage","objective":"Temporary"}}]
+# デバッグ用減衰確認コマンド
+    tellraw @a [{"score":{"name":"$Damage","objective":"Temporary"}}]
 
 # ダメージ設定 共鳴時にダメージが強化される
     execute if entity @s[tag=!Resonance] store result storage api: Argument.Damage double 1 run scoreboard players get $Damage Temporary
