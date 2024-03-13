@@ -10,8 +10,8 @@
 # 一定の距離から距離減衰するための距離
 # 再帰1回につき0.6m進み、5回で3m
 # 共鳴時に適正距離が延長される
-    scoreboard players set $Appropriate_Distance Temporary 20
-    execute if entity @s[tag=Resonance] run scoreboard players set $Appropriate_Distance Temporary 30
+    scoreboard players set $Appropriate_Distance Temporary 15
+    execute if entity @s[tag=Resonance] run scoreboard players set $Appropriate_Distance Temporary 25
 # 最低ダメージ保証
     scoreboard players set $MinDamage Temporary 160
 
