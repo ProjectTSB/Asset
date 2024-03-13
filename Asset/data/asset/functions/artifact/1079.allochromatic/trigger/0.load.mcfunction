@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/1079.allochromatic/trigger/**
-    scoreboard objectives add 
+    scoreboard objectives add TZ.Tick dummy
