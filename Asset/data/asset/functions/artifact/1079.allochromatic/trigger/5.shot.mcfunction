@@ -18,10 +18,14 @@
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 0.8
     data modify storage lib: Argument.Spread set value 0.4
-# スニーク時、射撃精度が上がる
-    execute if predicate lib:is_sneaking run data modify storage lib: Argument.Spread set value 0.1
+
+# 非共鳴スニーク時、射撃精度が上がる
+    execute if entity @s[tag=!Resonance] if predicate lib:is_sneaking run data modify storage lib: Argument.Spread set value 0.1
 # 共鳴時に集射撃精度が上がる
     execute if entity @s[tag=Resonance] run data modify storage lib: Argument.Spread set value 0.1
+# 共鳴スニーク時、射撃精度が上がる
+    execute if entity @s[tag=Resonance] if predicate lib:is_sneaking run data modify storage lib: Argument.Spread set value 0.05
+
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 # 発砲
