@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    playsound ogg:item.trident.throw1 player @a ~ ~ ~ 2 1.1
-    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 2 0.8
+    playsound ogg:item.trident.throw1 player @a ~ ~ ~ 0.8 1.1
+    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.8 0.8
 
 # 使用回数をカウントする
     scoreboard players add @s TY.Count 1
