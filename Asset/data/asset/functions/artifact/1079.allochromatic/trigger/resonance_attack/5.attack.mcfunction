@@ -15,9 +15,14 @@
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 0.5 1.1
     playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.5 0.8
 
+# 前方の敵のみをターゲットにする
+# ちょっとくらい後ろなら当たる
+    tag @e[type=#lib:living,tag=Enemy,distance=..2.8] add Target
+    execute positioned ^ ^ ^-1.4 run tag @e[type=#lib:living,tag=Target,distance=..1.2] remove Target
+
 # ダメージ
     data modify storage api: Argument.Damage set value 200
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
-    execute positioned ^ ^ ^0.5 as @e[type=#lib:living,tag=Enemy,distance=..2,limit=3] run function api:damage/
+    execute as @e[type=#lib:living,tag=Target,distance=..2.8] run function api:damage/
     function api:damage/reset
