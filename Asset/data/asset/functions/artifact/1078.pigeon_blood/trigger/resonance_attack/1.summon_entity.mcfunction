@@ -2,7 +2,7 @@
 #
 # 共鳴攻撃用entityを召喚する
 #
-# @within function asset:artifact/1078.pigeon_blood/trigger/3.main
+# @within function asset:artifact/1078.pigeon_blood/trigger/5.resonance_cooldown
 
 # 共鳴攻撃用entityを召喚する
     summon marker ~ ~ ~ {Tags:["TY.AttackEntity","Init","Uninterferable"]}

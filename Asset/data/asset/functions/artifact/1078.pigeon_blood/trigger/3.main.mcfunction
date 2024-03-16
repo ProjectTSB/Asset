@@ -55,8 +55,8 @@
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
 
-# 共鳴時、共鳴攻撃してない場合は追撃が発動する
-    execute if entity @s[tag=Resonance] unless entity @e[type=marker,tag=TY.AttackEntity,distance=..20,limit=1] run function asset:artifact/1078.pigeon_blood/trigger/resonance_attack/1.summon_entity
+# 共鳴攻撃
+    execute if entity @s[tag=Resonance] unless entity @e[type=marker,tag=TY.AttackEntity,distance=..20,limit=1] run function asset:artifact/1078.pigeon_blood/trigger/5.resonance_cooldown
 
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
