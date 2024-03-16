@@ -26,3 +26,6 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Target,distance=..2.8] run function api:damage/
     function api:damage/reset
+
+# リセット
+    tag @e[tag=Target] remove Target
