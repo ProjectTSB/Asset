@@ -36,3 +36,5 @@
     execute as @e[type=#lib:living,tag=Target,distance=..40,limit=1] run function api:damage/
     function api:damage/reset
 
+# 共鳴攻撃
+    execute if entity @s[tag=Resonance] unless entity @e[type=marker,tag=TZ.AttackEntity,distance=..20,limit=1] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/1.summon_entity

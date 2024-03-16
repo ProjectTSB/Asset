@@ -7,3 +7,5 @@
 #> 定義類はここに
 # @within function asset:artifact/1079.allochromatic/trigger/**
     scoreboard objectives add TZ.Tick dummy
+    scoreboard objectives add TZ.OwnerID dummy
+    scoreboard objectives add TZ.Count dummy
