@@ -19,11 +19,11 @@
     scoreboard players set $Damage Temporary 400
 
 # デバッグ用減衰確認コマンド1
-    tellraw @a {"text":"-----"}
-    tellraw @a [{"text":"再帰回数: "},{"score":{"name":"$Distance_Damping","objective":"Temporary"},"color":"blue"}]
+    #tellraw @a {"text":"-----"}
+    #tellraw @a [{"text":"再帰回数: "},{"score":{"name":"$Distance_Damping","objective":"Temporary"},"color":"blue"}]
 
 # 適正距離じゃないければダメージ減衰の計算を行う
-    execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/1079.allochromatic/trigger/8.damage_attenuation
+    #execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/1079.allochromatic/trigger/8.damage_attenuation
 
 # デバッグ用減衰確認コマンド2
     tellraw @a [{"text":"ダメージ: "},{"score":{"name":"$Damage","objective":"Temporary"},"color":"red"}]
