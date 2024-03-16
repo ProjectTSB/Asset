@@ -10,9 +10,8 @@
 
 # 演出
     execute positioned ^ ^ ^-0.3 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/square
-    execute if entity @s[scores={TZ.Count=1}] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/slash1
-    execute if entity @s[scores={TZ.Count=2}] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/slash2
-    execute if entity @s[scores={TZ.Count=3}] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/slash3
+    execute if entity @s[scores={TZ.Count=1}] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/slash3
+    execute if entity @s[scores={TZ.Count=2}] run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/slash4
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 0.5 1.1
     playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.5 0.8
 

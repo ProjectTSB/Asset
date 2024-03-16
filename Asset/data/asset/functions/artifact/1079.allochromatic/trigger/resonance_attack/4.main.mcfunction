@@ -19,11 +19,11 @@
 #
     execute if entity @s[scores={TZ.Tick=3}] positioned ^ ^ ^-0.5 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/5.attack
     execute if entity @s[scores={TZ.Tick=6}] positioned ^ ^ ^-0.5 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/5.attack
-    execute if entity @s[scores={TZ.Tick=9}] positioned ^ ^ ^-0.5 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/5.attack
+    #execute if entity @s[scores={TZ.Tick=9}] positioned ^ ^ ^-0.5 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/5.attack
 
 
 # 消滅
-    execute if entity @s[scores={TZ.Tick=20..}] run kill @s
+    execute if entity @s[scores={TZ.Tick=6..}] run kill @s
 
 # ループ
     schedule function asset:artifact/1079.allochromatic/trigger/resonance_attack/3.loop 1t replace
