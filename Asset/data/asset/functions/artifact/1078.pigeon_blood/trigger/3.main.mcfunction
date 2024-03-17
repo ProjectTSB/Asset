@@ -9,6 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
+#> Private
+# @private
+    #declare score_holder $Random
+
 # 演出
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 0.8 1.1
     playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.8 0.8
@@ -16,10 +20,18 @@
 # 使用回数をカウントする
     scoreboard players add @s TY.Count 1
 
-# 使用回数で斬撃演出を変える
+# 0~2の乱数を求める
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $3 Const
+
+# 使用回数とランダムで斬撃演出を変える
 # 斬撃パターンは2種類で交互に変わる
-    execute if entity @s[scores={TY.Count=1}] positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/1
-    execute if entity @s[scores={TY.Count=2}] positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/2
+    execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 0 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/1
+    execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 1 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/4
+    execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 2 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/3
+    execute if entity @s[scores={TY.Count=2}] if score $Random Temporary matches 0 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/4
+    execute if entity @s[scores={TY.Count=2}] if score $Random Temporary matches 1 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/5
+    execute if entity @s[scores={TY.Count=2}] if score $Random Temporary matches 2 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/6
 
 # 使用回数リセット
     execute if entity @s[scores={TY.Count=2..}] run scoreboard players reset @s TY.Count
@@ -60,5 +72,6 @@
 
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
+    scoreboard players reset $Random Temporary
     scoreboard players reset $101 Temporary
     scoreboard players reset $RandomDamage Temporary
