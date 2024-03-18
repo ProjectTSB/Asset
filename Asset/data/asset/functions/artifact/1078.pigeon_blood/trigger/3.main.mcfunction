@@ -49,15 +49,15 @@
 #> Private
 # @private
     #declare score_holder $RandomDamage
-    #declare score_holder $101
+    #declare score_holder $301
 
-# 101を定義
-    scoreboard players set $101 Temporary 101
+# 301を定義
+    scoreboard players set $301 Temporary 301
 
-# ダメージのブレ(0~100)
+# ダメージのブレ(0~200)
     execute store result score $RandomDamage Temporary run function lib:random/
-    scoreboard players operation $RandomDamage Temporary %= $101 Temporary
-    scoreboard players add $RandomDamage Temporary 550
+    scoreboard players operation $RandomDamage Temporary %= $301 Temporary
+    scoreboard players add $RandomDamage Temporary 450
 
 # ダメージ 共鳴時にダメージ上昇
     execute if entity @s[tag=!Resonance] store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
@@ -73,5 +73,5 @@
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
     scoreboard players reset $Random Temporary
-    scoreboard players reset $101 Temporary
+    scoreboard players reset $301 Temporary
     scoreboard players reset $RandomDamage Temporary
