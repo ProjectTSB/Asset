@@ -62,8 +62,8 @@
 # ダメージ
 # 確率でダメージ上昇、共鳴時にダメージ上昇
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
-    execute if predicate lib:random_pass_per/20 store result storage api: Argument.Damage float 1.5 run data modify storage api: Argument.Damage set value 1
-    execute if entity @s[tag=Resonance] store result storage api: Argument.Damage float 1.2 run data modify storage api: Argument.Damage set value 1
+    execute if predicate lib:random_pass_per/20 store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
+    execute if entity @s[tag=Resonance] store result storage api: Argument.Damage float 1.2 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
