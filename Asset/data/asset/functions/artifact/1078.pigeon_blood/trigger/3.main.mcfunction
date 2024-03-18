@@ -54,7 +54,7 @@
 # 301を定義
     scoreboard players set $301 Temporary 301
 
-# ダメージのブレ(0~200)
+# ダメージのブレ(0~300)
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $301 Temporary
     scoreboard players add $RandomDamage Temporary 450
