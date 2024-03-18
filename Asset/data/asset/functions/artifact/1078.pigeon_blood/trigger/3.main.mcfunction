@@ -54,10 +54,10 @@
 # 101を定義
     scoreboard players set $101 Temporary 101
 
-# ダメージのブレ(450~550)
+# ダメージのブレ(0~100)
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $101 Temporary
-    scoreboard players add $RandomDamage Temporary 450
+    scoreboard players add $RandomDamage Temporary 550
 
 # ダメージ 共鳴時にダメージ上昇
     execute if entity @s[tag=!Resonance] store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
