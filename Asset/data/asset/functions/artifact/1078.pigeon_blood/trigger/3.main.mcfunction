@@ -64,7 +64,7 @@
     execute if predicate lib:random_pass_per/20 run tag @s add Critical
 
 # クリティカル時、ご機嫌な感じで頭の上に音符の演出
-    execute if entity @s[tag=Critical] anchored eyes positioned ^ ^ ^ run particle note ~ ~0.4 ~ 0.1 0.1 0.1 1 1 normal @a
+    execute if entity @s[tag=Critical] anchored eyes positioned ^ ^ ^ run particle note ~ ~0.4 ~ 0 0 0 1 1 normal @a
 
 # ダメージ
 # クリティカルでダメージ上昇、共鳴時にダメージ上昇
