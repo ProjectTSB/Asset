@@ -13,7 +13,7 @@
 # 演出
     particle flash ~ ~ ~ 0 0 0 4 0 force
     particle flame ~ ~ ~ 0 0 0 0.3 20 force
-    particle campfire_signal_smoke ~ ~ ~ 0 0 0 0.05 30 force
+    particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0.05 30 force
     particle explosion ~ ~ ~ 0 0 0 0 1 force
     playsound entity.generic.explode player @a[distance=..50] ~ ~ ~ 1 1 0.3
     playsound entity.generic.explode player @a[distance=..50] ~ ~ ~ 1 0 0.3
