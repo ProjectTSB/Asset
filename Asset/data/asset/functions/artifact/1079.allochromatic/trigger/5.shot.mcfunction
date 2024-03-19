@@ -21,7 +21,7 @@
 
 # 非共鳴スニーク時、射撃精度が上がる
     execute if entity @s[tag=!Resonance] if predicate lib:is_sneaking run data modify storage lib: Argument.Spread set value 0.1
-# 共鳴時に集射撃精度が上がる
+# 共鳴時、射撃精度が上がる
     execute if entity @s[tag=Resonance] run data modify storage lib: Argument.Spread set value 0.1
 # 共鳴スニーク時、射撃精度が上がる
     execute if entity @s[tag=Resonance] if predicate lib:is_sneaking run data modify storage lib: Argument.Spread set value 0.05
