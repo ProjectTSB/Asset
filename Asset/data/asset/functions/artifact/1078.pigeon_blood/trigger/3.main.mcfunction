@@ -48,6 +48,7 @@
 
 #> Private
 # @private
+    #declare tag Critical
     #declare score_holder $RandomDamage
     #declare score_holder $301
 
@@ -59,10 +60,16 @@
     scoreboard players operation $RandomDamage Temporary %= $301 Temporary
     scoreboard players add $RandomDamage Temporary 450
 
+# クリティカル判定
+    execute if predicate lib:random_pass_per/20 run tag @s add Critical
+
+# クリティカル時、ご機嫌な感じで頭の上に音符の演出
+    execute if entity @s[tag=Critical] anchored eyes positioned ^ ^ ^ run particle note ~ ~0.4 ~ 0.1 0.1 0.1 1 1 normal @a
+
 # ダメージ
-# 確率でダメージ上昇、共鳴時にダメージ上昇
+# クリティカルでダメージ上昇、共鳴時にダメージ上昇
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
-    execute if predicate lib:random_pass_per/20 store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
+    execute if entity @s[tag=Critical] store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
     execute if entity @s[tag=Resonance] store result storage api: Argument.Damage float 1.2 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
@@ -74,6 +81,7 @@
 
 # リセット処理部
     tag @s[tag=Resonance] remove Resonance
+    tag @s[tag=Critical] remove Critical
     scoreboard players reset $Random Temporary
     scoreboard players reset $301 Temporary
     scoreboard players reset $RandomDamage Temporary
