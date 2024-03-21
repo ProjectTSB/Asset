@@ -16,9 +16,9 @@
 
 # 現在体力の低いプレイヤーを検索してTagを付与
 # 再帰でやるか迷ったけどこっちでやることにした
-    execute if entity @p[tag=!U1.EffectTarget,distance=..10] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
-    execute if entity @p[tag=!U1.EffectTarget,distance=..10] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
-    execute if entity @p[tag=!U1.EffectTarget,distance=..10] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
+    execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
+    execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
+    execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
 
 # Tagが付与されたプレイヤーにEffectを付与
     execute as @a[tag=U1.EffectTarget] run function asset:artifact/1081.wandering_piece_of_dream/trigger/6.give_effect

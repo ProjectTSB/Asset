@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"彷徨う夢の欠片","color":"#F9A3FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、周囲の自身含む4名に","color":"white"}','{"text":"魔法耐性+12%と被回復量+12%を付与する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"誰かの見ていた、不思議な夢の一部。","color":"gray"}','{"text":"触れるとその夢が脳裏に見えてくる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、周囲の自身含む4名に","color":"white"}','{"text":"魔法耐性+12%と被回復量+12%を8秒間付与する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"誰かの見ていた、不思議な夢の一部。","color":"gray"}','{"text":"触れるとその夢が脳裏に見えてくる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -39,11 +39,11 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 18
+    data modify storage asset:artifact MPCost set value 12
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 160
+    data modify storage asset:artifact LocalCooldown set value 240
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
