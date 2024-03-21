@@ -14,7 +14,7 @@
 # 検索対象にTagを付与
     tag @a[tag=!HealTarget,distance=..20] add SearchTarget
 
-# 各プレイヤーの現在体力割合をスコアへ代入
+# 各プレイヤーの現在体力をスコアへ代入
     execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1075.fairy_vial/trigger/5.get_health
 
 # $LowestHealthの初期値として対象プレイヤーの内1名の体力を代入
