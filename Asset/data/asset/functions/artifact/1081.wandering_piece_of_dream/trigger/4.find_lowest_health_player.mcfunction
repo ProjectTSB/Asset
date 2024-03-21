@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/1081.wandering_piece_of_dream/trigger/3.main
 
-# 検索対象：回復対象ではなく最も現在体力割合の低いプレイヤー3名
+# 検索対象：Effect付与対象ではなく最も現在体力割合の低いプレイヤー3名
 
 # 検索対象にTagを付与
     tag @a[tag=!U1.EffectTarget,distance=..20] add SearchTarget
