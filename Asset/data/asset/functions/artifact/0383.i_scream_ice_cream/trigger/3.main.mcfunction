@@ -16,7 +16,7 @@
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
     # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $21 Const
+        scoreboard players operation $Random Temporary %= $22 Const
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイスで冷やす？ああ、いいっすね！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 1 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイススケートする？ああ、いいっすけど！","color":"aqua","bold":true}]
@@ -39,7 +39,7 @@
         execute if score $Random Temporary matches 18 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 紅茶が凍っちゃった！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 19 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" サム言い寄る、寒い夜！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 20 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷集めて、あ～冷てぇ！","color":"aqua","bold":true}]
-        execute if score $Random Temporary matches 20 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 場が凍り付く？氷作ってるからね！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 21 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 場が凍り付く？氷作ってるからね！","color":"aqua","bold":true}]
 
     # リセット
         scoreboard players reset $Random Temporary
