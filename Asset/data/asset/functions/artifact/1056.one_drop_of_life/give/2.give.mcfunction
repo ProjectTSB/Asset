@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"生命の一雫","color":""}'
+    data modify storage asset:artifact Name set value '[{"text":"生","color":"#99dcff"},{"text":"命","color":"#a4d8ff"},{"text":"の","color":"#c3ccff"},{"text":"一","color":"#d5c5ff"},{"text":"雫","color":"#fcb6ff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を最大体力の80%分回復する。","color":"white"}','{"text":"生命を形作り、その源となった不思議な水。","color":"gray"}','{"text":"どんな液体にも希釈されない性質を持つ。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 150
+    data modify storage asset:artifact MPCost set value 120
 # MP必要量 (int) (オプション)
     data modify storage asset:artifact MPRequire set value 0
 # 神器のクールダウン (int) (オプション)
@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)",
+    data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
