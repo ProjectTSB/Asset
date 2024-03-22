@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"生","color":"#99dcff"},{"text":"命","color":"#a4d8ff"},{"text":"の","color":"#c3ccff"},{"text":"一","color":"#d5c5ff"},{"text":"雫","color":"#fcb6ff"}]'
+    data modify storage asset:artifact Name set value '[{"text":"生","color":"#9dcfff"},{"text":"命","color":"#9dbbff"},{"text":"の","color":"#9da6ff"},{"text":"一","color":"#bab2ff"},{"text":"雫","color":"#d8beff"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を最大体力の80%分回復する。","color":"white"}','{"text":"生命を形作り、その源となった不思議な水。","color":"gray"}','{"text":"どんな液体にも希釈されない性質を持つ。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
