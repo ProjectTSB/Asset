@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"燃える蝶の夢","color":"dark_red"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"火属性ダメージが上昇する。"}'
+    data modify storage asset:effect Description set value '{"与える火属性ダメージが上昇する"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
@@ -29,7 +29,7 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    # data modify storage asset:effect RequireClearLv set value
+    data modify storage asset:effect RequireClearLv set value 3
 
 # フィールド
     # data modify storage asset:effect Field.myValue set value
