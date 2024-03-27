@@ -32,7 +32,4 @@
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $LostHealth Temporary
     function api:entity/mob/effect/give
 
-# リセット
-    scoreboard players reset $MaxHealth Temporary
-    scoreboard players reset $Health Temporary
-    scoreboard players reset $LostHealth Temporary
+# リセットはcheck_conditionで行っているので不要
