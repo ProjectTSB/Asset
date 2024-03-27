@@ -22,7 +22,8 @@
     execute as @a[tag=SearchTarget] run scoreboard players operation $LowestHealthPer Temporary < @s Temporary
 
 # 特定したプレイヤーにTagを付与
-    execute as @a[tag=SearchTarget] if score @s Temporary = $LowestHealthPer Temporary run tag @s add HealTarget
+# SearchTargetとHealTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
+    execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=HealTarget] if score @s Temporary = $LowestHealthPer Temporary run tag @s add HealTarget
 
 # リセット
     scoreboard players reset @a[tag=SearchTarget] Temporary
