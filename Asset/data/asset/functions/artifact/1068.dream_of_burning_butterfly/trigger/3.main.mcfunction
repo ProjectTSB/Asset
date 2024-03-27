@@ -22,15 +22,9 @@
 # 失った体力10につき、火攻撃+5%(最大100%)
 # 補正はEffectAsset側で実装する
 
-# 最大体力と現在体力を取得する
-    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
-    function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health
+# $LostHealthは2.check_conditionで計算済み
 
-# 失った体力を計算する
-    execute store result score $LostHealth Temporary run scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-
-# 失った体力を10で割る
+# $LostHealthを10で割る
     scoreboard players operation $LostHealth Temporary /= $10 Const
 
 # $LostHealthの数値をStackとして燃える蝶の夢エフェクトを付与
