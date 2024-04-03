@@ -1,17 +1,15 @@
-#> asset:mob/0153.domination/attack/4.panic
+#> asset:effect/0603.domination/tick/
 #
+# Effectのtick処理
 #
-#
-# @within function asset:mob/0153.domination/attack/3.scheduleloop
+# @within function asset:effect/0603.domination/_/tick
+
 #> Private
 # @private
     #declare score_holder $Random
 
 # 演出
     particle minecraft:electric_spark ~ ~1 ~ 0.4 0.4 0.4 0 2
-
-# スコアをへらす
-    scoreboard players remove @a 49.PanicTime 1
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
@@ -26,9 +24,5 @@
     execute if score $Random Temporary matches 5 run tp @s ~ ~ ~ ~ ~-4
     execute if score $Random Temporary matches 6 run tp @s ~ ~ ~ ~-4 ~
     execute if score $Random Temporary matches 7 run tp @s ~ ~ ~ ~4 ~
+# リセット
     scoreboard players reset $Random Temporary
-
-# タグを消す
-    execute if score @s 49.PanicTime matches ..0 run tag @s remove 49.Panic
-    execute if entity @s[tag=Death] run tag @s remove 49.Panic
-    execute if entity @s[tag=Death] run scoreboard players reset @s 49.PanicTime
