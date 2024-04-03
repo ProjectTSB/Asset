@@ -5,4 +5,4 @@
 # @within asset:mob/0083.thunder_trifler/_/summon
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0083.thunder_trifler"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0083.thunder_trifler"}
