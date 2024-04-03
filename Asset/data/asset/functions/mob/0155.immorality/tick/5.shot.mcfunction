@@ -9,9 +9,12 @@
     #declare tag SpreadMarker
 
 # 演出
-    playsound minecraft:entity.zombie.attack_wooden_door hostile @a[distance=..30] ~ ~ ~ 1 0 0.7
-    playsound minecraft:block.honey_block.hit hostile @a[distance=..30] ~ ~ ~ 1 0 0.7
-    playsound minecraft:entity.generic.explode hostile @a[distance=..30] ~ ~ ~ 0.8 2 0.7
+    playsound minecraft:entity.zombie.attack_wooden_door hostile @a[distance=..30] ~ ~ ~ 0.8 0 0.7
+    playsound minecraft:block.honey_block.hit hostile @a[distance=..30] ~ ~ ~ 0.8 0 0.7
+    playsound minecraft:entity.generic.explode hostile @a[distance=..30] ~ ~ ~ 0.6 2 0.7
+
+# 射撃回数を数えるスコア
+    scoreboard players add @s 4B.ShotCount 1
 
 # 前方拡散設定
     summon marker ~ ~0 ~ {Tags:["SpreadMarker"]}

@@ -14,17 +14,22 @@
 
 # 次に攻撃するタイミングをランダムにする
 # 難易度で剰余の範囲が変動する
-    execute if predicate api:global_vars/difficulty/max/normal run scoreboard players set $DivisionValue Temporary 11
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set $DivisionValue Temporary 26
+    function api:global_vars/get_difficulty
+    execute store result score $DivisionValue Temporary run data get storage api: Return.Difficulty 15
+    scoreboard players add $DivisionValue Temporary 1
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
 # 剰余算する
     scoreboard players operation $Random Temporary %= $DivisionValue Temporary
 # スコアセット
-    scoreboard players operation @s 4B.ShotTime = $Random Temporary
-    scoreboard players remove @s 4B.ShotTime 80
+    scoreboard players operation @s 4B.Tick = $Random Temporary
+    scoreboard players remove @s 4B.Tick 80
+# この段階で4B.Tickが0より大きかったら0にする
+    execute if entity @s[scores={4B.Tick=1..}] run scoreboard players set @s 4B.Tick 0
 
 # リセット処理
     scoreboard players reset $Random Temporary
     scoreboard players reset $DivisionValue Temporary
+    scoreboard players reset @s 4B.ShotCount
+    scoreboard players reset @s 4B.ShotMax
