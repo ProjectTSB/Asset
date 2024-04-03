@@ -1586,7 +1586,8 @@
                         "#",
                         "# モブの動作チェック用の召喚処理 使い終わったら消してもいいかも",
                         "#",
-                        "# @within asset:mob/%namespace%/summon/debug",
+                        "# @user",
+                        "# @private",
                         "",
                         "# モブを召喚",
                         "   data modify storage api: Argument.ID set value %id%",
@@ -1604,7 +1605,10 @@
                         "# @within function asset:mob/%namespace%/_/register",
                         "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
-                        "    # data modify storage asset:mob ExtendsSafe set value ",
+                        "    # data modify storage asset:mob ExtendsSafe set value true",
+                        "# 継承 (int)",
+                        "    # data modify storage asset:mob ExtendsSafe append value",
+                        "    # function asset:mob/extends",
                         "# ID (int)",
                         "    data modify storage asset:mob ID set value %id%",
                         "# Type (string) Wikiを参照",
@@ -1660,7 +1664,7 @@
                         "        # data modify storage asset:mob Resist.Thunder set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:mob Field.myValue set value "
+                        "    # data modify storage asset:mob Field set value "
                     ]
                 },
                 {
