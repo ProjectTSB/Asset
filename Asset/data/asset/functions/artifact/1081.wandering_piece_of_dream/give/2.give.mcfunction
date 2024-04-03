@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"彷徨う夢の欠片","color":"#FA63FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、周囲の自身含む4名に","color":"white"}','{"text":"魔法耐性+12%と被回復量+12%を8秒間付与する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"誰かの見ていた、不思議な夢の一部。","color":"gray"}','{"text":"触れるとその夢が脳裏に見えてくる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲の3名に","color":"white"}','{"text":"魔法耐性+12%と被回復量+12%を8秒間付与する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"誰かの見ていた、不思議な夢の一部。","color":"gray"}','{"text":"触れるとその夢が脳裏に見えてくる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
