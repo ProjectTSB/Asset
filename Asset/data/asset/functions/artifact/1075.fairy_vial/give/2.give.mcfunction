@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"妖精の小瓶","color":"#FFC9F3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、周囲の自身含む3名の体力を","color":"white"}','{"text":"自身の最大体力の5%分回復する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"小さな妖精が入っている小瓶。","color":"gray"}','{"text":"淡いピンク色の光に揺らめいている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲の2名の体力を","color":"white"}','{"text":"自身の最大体力の5%分回復する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"小さな妖精が入っている小瓶。","color":"gray"}','{"text":"淡いピンク色の光に揺らめいている。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
