@@ -9,7 +9,7 @@
     #declare score_holder $Difficulty
     #declare score_holder $Base
 
-# Fiedld[1]の値を取得
+# Field[1]の値を取得
     execute store result score $Base Temporary run data get storage asset:context this[1]
 
 # 難易度値を取得し、1減らす
