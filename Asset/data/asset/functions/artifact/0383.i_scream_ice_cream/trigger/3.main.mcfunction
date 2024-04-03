@@ -16,7 +16,7 @@
     # 引数
         data modify storage lib: Args.key set value "383.Message"
         data modify storage lib: Args.max set value 40
-        data modify storage lib: Args.scarcity_history_size set value 10
+        data modify storage lib: Args.scarcity_history_size set value 20
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # メッセージ出力
