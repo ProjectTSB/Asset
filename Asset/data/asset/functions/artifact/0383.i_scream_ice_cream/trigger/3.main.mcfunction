@@ -18,7 +18,7 @@
         data modify storage lib: Args.max set value 40
         data modify storage lib: Args.scarcity_history_size set value 10
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/with_biased/manual.m
+        execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイスで冷やす？ああ、いいっすね！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 1 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイススケートする？ああ、いいっすけど！","color":"aqua","bold":true}]
@@ -60,7 +60,6 @@
         execute if score $Random Temporary matches 37 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 深雪見ゆ君！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 38 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" かまくらのふかふかまくら！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 39 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷菓を評価！","color":"aqua","bold":true}]
-
 
     # リセット
         scoreboard players reset $Random Temporary
