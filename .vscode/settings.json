@@ -1605,7 +1605,7 @@
                         "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:mob ExtendsSafe set value true",
-                        "# 継承",
+                        "# 継承 (int)",
                         "    # data modify storage asset:mob ExtendsSafe append value",
                         "    # function asset:mob/extends",
                         "# ID (int)",
