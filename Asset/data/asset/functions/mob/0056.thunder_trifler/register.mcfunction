@@ -5,7 +5,7 @@
 # @within function asset:mob/0056.thunder_trifler/_/register
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 56
 # Type (string) Wikiを参照
