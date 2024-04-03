@@ -1606,8 +1606,8 @@
                         "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:mob ExtendsSafe set value true",
-                        "# 継承 (int)",
-                        "    # data modify storage asset:mob ExtendsSafe append value",
+                        "# 継承 (int) (オプション)",
+                        "    # data modify storage asset:mob Extends append value",
                         "    # function asset:mob/extends",
                         "# ID (int)",
                         "    data modify storage asset:mob ID set value %id%",
@@ -1664,7 +1664,7 @@
                         "        # data modify storage asset:mob Resist.Thunder set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:mob Field set value "
+                        "    # data modify storage asset:mob Field set value {}"
                     ]
                 },
                 {
