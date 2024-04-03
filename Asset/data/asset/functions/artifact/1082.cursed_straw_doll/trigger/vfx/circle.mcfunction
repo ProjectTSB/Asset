@@ -1,4 +1,4 @@
-#> asset:artifact/1082.cursed_straw_doll/trigger/nail_vfx/circle
+#> asset:artifact/1082.cursed_straw_doll/trigger/vfx/circle
 #
 #
 #
