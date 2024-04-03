@@ -13,10 +13,12 @@
 # ここから先は神器側の効果の処理を書く
 
 # ランダムで変なこと言うやつ
+    # 引数
+        data modify storage lib: Args.key set value "383.Message"
+        data modify storage lib: Args.max set value 40
+        data modify storage lib: Args.scarcity_history_size set value 10
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $40 Const
+        execute store result score $Random Temporary run function lib:random/with_biased/manual.m
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイスで冷やす？ああ、いいっすね！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 1 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイススケートする？ああ、いいっすけど！","color":"aqua","bold":true}]
