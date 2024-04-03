@@ -28,3 +28,4 @@
 
 # リセット
     data remove storage lib: Argument
+    tag @e[type=#lib:living,tag=Target,distance=..10] remove Target
