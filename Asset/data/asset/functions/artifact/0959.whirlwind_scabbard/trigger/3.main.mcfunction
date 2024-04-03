@@ -23,8 +23,8 @@
     tag @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,distance=..10] add Target
     execute as @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,distance=..5] at @p[tag=this] positioned ^ ^ ^-3 unless entity @s[distance=..3] run tag @s add Target
 
-# 前方を対象に、プレイヤーの方向と逆方向に飛ぶ
-    execute as @e[type=#lib:living,tag=Target,distance=..10] at @s facing entity @p[tag=this] eyes rotated ~180 -18 run function lib:motion/
+# 前方の5体を対象に、プレイヤーの方向と逆方向に飛ぶ
+    execute as @e[type=#lib:living,tag=Target,distance=..10,sort=nearest,limit=5] at @s facing entity @p[tag=this] eyes rotated ~180 -18 run function lib:motion/
 
 # リセット
     data remove storage lib: Argument
