@@ -16,7 +16,7 @@
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
     # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $22 Const
+        scoreboard players operation $Random Temporary %= $40 Const
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイスで冷やす？ああ、いいっすね！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 1 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" アイススケートする？ああ、いいっすけど！","color":"aqua","bold":true}]
@@ -40,6 +40,25 @@
         execute if score $Random Temporary matches 19 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" サム言い寄る、寒い夜！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 20 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷集めて、あ～冷てぇ！","color":"aqua","bold":true}]
         execute if score $Random Temporary matches 21 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 場が凍り付く？氷作ってるからね！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 22 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 冬の鯛は冷たい！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 23 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" ブリのブリザード！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 24 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 南極で何曲か聞く！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 25 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷の小売店！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 26 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 冷たい理由を問い詰めたい！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 27 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 北風の時期に来た課税！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 28 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷河期のガキ！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 29 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 雪をもっておゆき！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 30 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 冬眠する島民！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 31 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" コートを着とこーっと！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 32 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 冷てぇアイスを詰めてくれ！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 33 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷の降臨！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 34 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 雪の日にゆきたくない！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 35 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" スノー降る！Snow full！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 36 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷点下には雹添加！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 37 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 深雪見ゆ君！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 38 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" かまくらのふかふかまくら！","color":"aqua","bold":true}]
+        execute if score $Random Temporary matches 39 run tellraw @a [{"text":"<","color":"aqua","bold":true},{"selector":"@s","bold":true},{"text":">","bold":true},{"text":" 氷菓を評価！","color":"aqua","bold":true}]
+
 
     # リセット
         scoreboard players reset $Random Temporary
