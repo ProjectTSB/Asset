@@ -24,7 +24,7 @@
     data modify storage lib: Argument.Damage set value 360f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
-    execute as @a if score @s UserID = @e[type=zombie,tag=M1.This,distance=..0.01,limit=1] M1.UserID run function lib:damage/modifier
+    execute as @a if score @s UserID = @e[type=item_display,tag=M1.This,distance=..0.01,limit=1] M1.UserID run function lib:damage/modifier
     execute as @e[type=#lib:living,tag=M1.Target,distance=..2] run function lib:damage/
     function lib:damage/reset
 
