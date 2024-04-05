@@ -19,7 +19,7 @@
 
 # Effectを付与
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $Difficulty Temporary
-    data modify storage api: Argument.Duration set value 120
+    data modify storage api: Argument.Duration set value 80
     function api:entity/mob/effect/give
 
 # リセット
