@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 605
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"極","color":"#00ffe2"},{"text":"光","color":"#00ffe2"},{"text":"侵","color":"#00ffe2"},{"text":"蝕","color":"#00ffe2"}]'
+    data modify storage asset:effect Name set value '[{"text":"極","color":"#00ffe2"},{"text":"光","color":"#00e2e9"},{"text":"侵","color":"#00c5f0"},{"text":"蝕","color":"#008bff"}]'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"継続的にMPが減少する"}']
 # 効果時間 (int) (default = API || error)
