@@ -17,13 +17,13 @@
 
 # 最大MPの2.5%の100倍を取得
     function api:mp/get_max
-    execute store result score $MPReduce Temporary run data get storage api: Return.MaxMP 250
+    execute store result score $MPReduce Temporary run data get storage api: Return.MaxMP 2.5
 
 # スタック数を取得
     execute store result score $Stack Temporary run data get storage asset:context Stack
 
 # 計算して0.01倍して代入する
-    execute store result storage api: Argument.Flucuation float -0.01 run scoreboard players operation $MPReduce Temporary *= $Stack Temporary
+    execute store result storage api: Argument.Fluctuation int -0.01 run scoreboard players operation $MPReduce Temporary *= $Stack Temporary
 
 # MP減らす
     function api:mp/fluctuation

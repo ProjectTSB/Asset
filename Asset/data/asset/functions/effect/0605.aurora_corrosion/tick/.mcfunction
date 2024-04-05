@@ -18,4 +18,4 @@
     scoreboard players reset $Temp Temporary
 
 # 効果時間の処理
-    scoreboard players remove @s GT.Tick 1
+    scoreboard players add @s GT.Tick 1
