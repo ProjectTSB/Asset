@@ -2143,10 +2143,6 @@
                         "#",
                         "# @within function asset:effect/%namespace%/_/register",
                         "",
-                        "# 継承 (int)",
-                        "    # data modify storage asset:effect Extends append value ",
-                        "    # function asset:effect/extends",
-                        "",
                         "# ExtendsSafe (boolean) (default = false)",
                         "    # data modify storage asset:effect ExtendsSafe set value true",
                         "# ID (int)",
@@ -2176,6 +2172,62 @@
                         "",
                         "# フィールド",
                         "    # data modify storage asset:effect Field set value {}"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/register.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/register",
+                        "#",
+                        "#",
+                        "#",
+                        "# @within tag/function asset:effect/register",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/register"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/register.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/register"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/register"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/テンプレート (継承)",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/register.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/register",
+                        "#",
+                        "# Effectのデータを指定",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/register",
+                        "",
+                        "# 継承 (int)",
+                        "    # data modify storage asset:effect Extends append value ",
+                        "    # function asset:effect/extends",
+                        "# ID (int)",
+                        "    data modify storage asset:effect ID set value %id%"
                     ]
                 },
                 {
