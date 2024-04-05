@@ -19,7 +19,7 @@
     function lib:damage/reset
 
 # デバフを付与
-    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0211.aurora_bullet/tick/4.debuff
+    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] at @s if predicate api:global_vars/difficulty/min/normal run function asset:mob/0211.aurora_bullet/tick/4.debuff
 
 # 自害
     kill @s
