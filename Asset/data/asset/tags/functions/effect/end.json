@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0248.oracle_physical_attack/_/end",
-        "asset:effect/0249.oracle_physical_defense/_/end"
+        "asset:effect/0249.oracle_physical_defense/_/end",
+        "asset:effect/0250.oracle_magic_attack/_/end",
+        "asset:effect/0251.oracle_magic_defense/_/end"
     ]
 }

@@ -4,6 +4,8 @@
         "asset:effect/0228.rubeus_resonance/_/register",
         "asset:effect/0229.sapphirus_resonance/_/register",
         "asset:effect/0248.oracle_physical_attack/_/register",
-        "asset:effect/0249.oracle_physical_defense/_/register"
+        "asset:effect/0249.oracle_physical_defense/_/register",
+        "asset:effect/0250.oracle_magic_attack/_/register",
+        "asset:effect/0251.oracle_magic_defense/_/register"
     ]
 }
