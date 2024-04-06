@@ -39,8 +39,8 @@
         data modify storage api: Argument.Operation set value "multiply"
         execute as @p[tag=P8.Owner] run function api:modifier/heal/add
 
-    # 範囲内のプレイヤーを回復
-        data modify storage lib: Argument.Heal set value 12.0f
+    # 範囲内のプレイヤーを使用者の最大体力の10%分回復
+        execute store result storage lib: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
         execute as @p[tag=P8.Owner] run function lib:heal/modifier
         execute as @a[tag=P8.TargetEntity,distance=..10] run function lib:heal/
 
