@@ -43,6 +43,7 @@
         execute store result storage lib: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
         execute as @p[tag=P8.Owner] run function lib:heal/modifier
         execute as @a[tag=P8.TargetEntity,distance=..10] run function lib:heal/
+        function lib:heal/reset
 
     # 体力回復補正から水攻撃補正を取り除く
         data modify storage api: Argument.UUID set value [I;1,1,907,0]
@@ -52,5 +53,4 @@
     tag @e[type=#lib:living,tag=P8.TargetEntity,distance=..10] remove P8.TargetEntity
     tag @s remove P8.This
     tag @p[tag=P8.Owner] remove P8.Owner
-    function lib:heal/reset
     scoreboard players reset $AttackWater Temporary
