@@ -23,7 +23,7 @@
         playsound ui.button.click player @a ~ ~ ~ 1000000 1 1
 
     # Particle
-        execute rotated ~ 0 positioned ^ ^ ^10 positioned ~ ~10 ~ positioned ^ ^ ^-10 run function asset:artifact/0431.weather_lock_cane/trigger/vfx/key
+        execute rotated ~ 0 positioned ^ ^10 ^-10 run function asset:artifact/0431.weather_lock_cane/trigger/vfx/key
         execute if data storage asset:temp BZ{Weather:Sunny} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/sunny
         execute if data storage asset:temp BZ{Weather:Rain} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/rain
         execute if data storage asset:temp BZ{Weather:Thunder} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/thunder
