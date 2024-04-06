@@ -20,12 +20,12 @@
     execute as @a if score @s UserID = @e[type=marker,tag=P8.This,limit=1] P8.UserID run tag @s add P8.Owner
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 1200.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    execute as @p[tag=P8.Owner] run function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=P8.TargetEntity,distance=..10] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 1200.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    execute as @p[tag=P8.Owner] run function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Enemy,tag=P8.TargetEntity,distance=..10] run function api:damage/
+    function api:damage/reset
 
 # 回復
     # 水攻撃補正をstorageに入れる (補正1.2の場合、0.2になるように計算)
@@ -40,10 +40,10 @@
         execute as @p[tag=P8.Owner] run function api:modifier/heal/add
 
     # 範囲内のプレイヤーを使用者の最大体力の10%分回復
-        execute store result storage lib: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
-        execute as @p[tag=P8.Owner] run function lib:heal/modifier
-        execute as @a[tag=P8.TargetEntity,distance=..10] run function lib:heal/
-        function lib:heal/reset
+        execute store result storage api: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
+        execute as @p[tag=P8.Owner] run function api:heal/modifier
+        execute as @a[tag=P8.TargetEntity,distance=..10] run function api:heal/
+        function api:heal/reset
 
     # 体力回復補正から水攻撃補正を取り除く
         data modify storage api: Argument.UUID set value [I;1,1,907,0]
