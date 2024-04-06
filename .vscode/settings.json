@@ -2224,8 +2224,8 @@
                         "# @within function asset:effect/%namespace%/_/register",
                         "",
                         "# 継承 (int)",
-                        "    # data modify storage asset:effect Extends append value ",
-                        "    # function asset:effect/extends",
+                        "    data modify storage asset:effect Extends append value ",
+                        "    function asset:effect/extends",
                         "# ID (int)",
                         "    data modify storage asset:effect ID set value %id%"
                     ]
