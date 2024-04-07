@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"イグナイト","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"その火はあらゆる物を切り裂き"}','{"text":"その輝きは闇夜を払うだろう。"}','{"text":"攻撃時、前方に斬撃を放つ"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃時、前方に斬撃を放つ。"}','{"text":"その火はあらゆる物を切り裂き","color":"gray"}','{"text":"その輝きは闇夜を払うだろう。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
