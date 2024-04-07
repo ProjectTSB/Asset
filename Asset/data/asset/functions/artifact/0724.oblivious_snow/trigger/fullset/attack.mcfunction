@@ -13,7 +13,7 @@
     scoreboard players set @s K4.AttackCD 20
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 70.0f
+    data modify storage lib: Argument.Damage set value 200.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
     function lib:damage/modifier
