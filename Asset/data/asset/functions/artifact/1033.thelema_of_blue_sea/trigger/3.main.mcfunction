@@ -34,13 +34,12 @@
 # ダメージ 基礎火力+現在体力の200%
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health 2.0
-    execute store result storage lib: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $300 Const
-
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
-    function lib:damage/reset
+    execute store result storage api: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $300 Const
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset
 
 # スケジュールループを起動
     schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace
