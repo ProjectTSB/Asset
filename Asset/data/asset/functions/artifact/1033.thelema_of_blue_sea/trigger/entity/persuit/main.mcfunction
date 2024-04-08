@@ -7,8 +7,11 @@
 # Tickスコア増加
     scoreboard players add @s SP.Tick 1
 
+# OwnerにTagを付与
+    execute at @a[distance=..100] if score @s SP.UserID = @p UserID run tag @p add SP.Owner
+
 # Ownerの最大体力の0.05倍をスコアで取得
-    execute at @a[distance=..100] if score @s SP.UserID = @p UserID store result score @s SP.MaxHealth run attribute @p generic.max_health get 0.05
+    execute store result score @s SP.MaxHealth run attribute @p[tag=SP.Owner] generic.max_health get 0.05
 
 # 最大HP20につき1本増加 最大10本まで
 # 左右対称になるように、偶数本目は2パターン配置箇所が存在する
@@ -46,3 +49,6 @@
 
 # 10本目
     execute if entity @s[scores={SP.Tick=21,SP.MaxHealth=10..}] positioned ^ ^5 ^2 run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/summon_sword
+
+# OwnerのTagを削除
+    tag @p[tag=SP.Owner] remove SP.Owner
