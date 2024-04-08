@@ -5,7 +5,7 @@
 # @within function asset:mob/0232.honey_leader/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],active_effects:[{id:"glowing",amplifier:0b,duration:2147483647,show_particles:0b}],DeathLootTable:"asset:mob/death/0232.honey_leader"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0232.honey_leader"}
 # ID (int)
     data modify storage asset:mob ID set value 232
 # Type (string) Wikiを参照
