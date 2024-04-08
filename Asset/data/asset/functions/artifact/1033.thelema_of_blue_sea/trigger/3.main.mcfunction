@@ -31,10 +31,10 @@
 # entityのinit処理
     execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..6,limit=2] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
 
-# ダメージ 基礎火力+現在体力の200%
+# ダメージ 基礎火力+現在体力の100%
     function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health 2.0
-    execute store result storage api: Argument.Damage double 1.0 run scoreboard players operation $Health Temporary += $300 Const
+    execute store result score $Health Temporary run data get storage api: Health 1.0
+    execute store result storage api: Argument.Damage int 1.0 run scoreboard players operation $Health Temporary += $300 Const
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
