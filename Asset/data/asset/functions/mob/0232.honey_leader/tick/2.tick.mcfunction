@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0232.honey_leader/tick/1.trigger
 
+# 発光を自身に付与
+    effect give @s glowing infinite 0 true
+
 # スキルスコア
     scoreboard players add @s 6G.Tick 1
 
