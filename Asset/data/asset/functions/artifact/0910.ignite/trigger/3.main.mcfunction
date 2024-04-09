@@ -45,7 +45,7 @@
     execute positioned ^ ^ ^1.5 run tag @e[type=#lib:living,type=!player,tag=!PA.MeleeHit,tag=!Uninterferable,distance=..3] add PA.SlashHit
     execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,tag=!PA.MeleeHit,tag=!Uninterferable,distance=..3] add PA.SlashHit
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 200.0f
+    data modify storage lib: Argument.Damage set value 600.0f
 # 補正functionを実行
     function lib:damage/modifier_continuation
 # ダメージを与える
