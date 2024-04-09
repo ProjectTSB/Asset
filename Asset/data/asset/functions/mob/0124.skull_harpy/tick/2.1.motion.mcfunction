@@ -15,7 +15,7 @@
     # デフォルト
         data modify storage lib: Argument.VectorMagnitude set value 0.8
     # かなり離れてる時に実行
-        execute if entity @p[tag=Target,distance=9..32] run data modify storage lib: Argument.VectorMagnitude set value 1.5
+        execute if entity @p[tag=Target,distance=20..32] run data modify storage lib: Argument.VectorMagnitude set value 1.5
     # 近い時に実行する
         execute if entity @p[tag=Target,distance=..9] run data modify storage lib: Argument.VectorMagnitude set value 0.6
 # 実行
