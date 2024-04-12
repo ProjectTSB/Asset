@@ -18,23 +18,23 @@
     playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 3 1.7
 
 # 補正を追加する
-    # 基礎攻撃力 +30%
+    # 基礎攻撃力 +20%
         data modify storage api: Argument.UUID set value [I;1,1,1053,2]
-        data modify storage api: Argument.Amount set value 0.30
+        data modify storage api: Argument.Amount set value 0.20
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/base/add
-    # 火属性攻撃力 -45%
+    # 火属性攻撃力 -30%
         data modify storage api: Argument.UUID set value [I;1,1,1053,2]
-        data modify storage api: Argument.Amount set value -0.45
+        data modify storage api: Argument.Amount set value -0.30
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/fire/add
-    # 水属性攻撃力 -45%
+    # 水属性攻撃力 -30%
         data modify storage api: Argument.UUID set value [I;1,1,1053,2]
-        data modify storage api: Argument.Amount set value -0.45
+        data modify storage api: Argument.Amount set value -0.30
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/water/add
-    # 雷属性攻撃力 -45%
+    # 雷属性攻撃力 -30%
         data modify storage api: Argument.UUID set value [I;1,1,1053,2]
-        data modify storage api: Argument.Amount set value -0.45
+        data modify storage api: Argument.Amount set value -0.30
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/thunder/add
