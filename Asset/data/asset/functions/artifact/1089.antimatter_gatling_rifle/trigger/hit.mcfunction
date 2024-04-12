@@ -4,12 +4,6 @@
 # @within function
 #    asset:artifact/1089.antimatter_gatling_rifle/trigger/bullet
 
-
-# ここから先は神器側の効果の処理を書く
-
-# 撃っている間うごけない
-    effect give @s slowness 1 2 true
-
 # 一定の距離から距離減衰するための距離(適正距離をメートル*2で指定)
     scoreboard players set $Appropriate_Distance Temporary 14
 # 最低ダメージ保証

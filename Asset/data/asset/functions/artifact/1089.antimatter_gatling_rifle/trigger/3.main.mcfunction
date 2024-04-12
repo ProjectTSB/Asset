@@ -4,14 +4,14 @@
 #
 # @within function asset:artifact/1089.antimatter_gatling_rifle/trigger/2.check_condition
 
-#> Private
-# @private
-
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
+
+# 撃っている間うごけない
+    effect give @s slowness 1 2 true
 
 # 演出
     playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.4 1

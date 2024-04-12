@@ -6,8 +6,6 @@
 #    asset:artifact/1089.antimatter_gatling_rifle/trigger/bullet
 #    asset:artifact/1089.antimatter_gatling_rifle/trigger/shot
 
-# ここから先は神器側の効果の処理を書く
-
 # 着弾検知
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] run tag @s add Landing
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing
