@@ -15,7 +15,7 @@
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 # 発砲
-    execute anchored eyes positioned ^-0.35 ^-0.15 ^ facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:artifact/1089.antimatter_gatling_rifle/trigger/bullet
+    execute anchored eyes positioned ^-0.35 ^-0.15 ^ facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet positioned ~ ~ ~ run function asset:artifact/1089.antimatter_gatling_rifle/trigger/bullet
 # リセット
     tag @s remove Landing
     kill @e[type=marker,tag=SpreadMarker]
