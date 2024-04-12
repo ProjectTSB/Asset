@@ -25,7 +25,7 @@
 # 自身のデバフの数をチェック
     function api:entity/mob/effect/get/size/bad
 
-# デバフの数が0なら自身にバフを付与
+# デバフの数が0ならバフを付与
 # デバフが解除されるのは1tick後のためスコアで(デバフ数-1)して判定する
     execute store result score $DebuffCount Temporary run data get storage api: Return.EffectSize.Bad
     scoreboard players remove $DebuffCount Temporary 1
