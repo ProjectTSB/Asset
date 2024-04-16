@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:mob/0330.aurora_reaper/summon/1.trigger",
+        "asset:mob/0083.thunder_trifler/_/summon",
+        "asset:mob/0056.thunder_trifler/_/summon",
         "asset:mob/0266.small_dark_ball/summon/1.trigger",
         "asset:mob/0265.dark_familiar/summon/1.trigger",
         "asset:mob/0264.dark_summoner/summon/1.trigger",
@@ -88,7 +90,6 @@
         "asset:mob/0049.ice_obstructor/summon/1.trigger",
         "asset:mob/0026.vein/summon/1.trigger",
         "asset:mob/0058.divide_haze/summon/1.trigger",
-        "asset:mob/0056.thunder_trifler/summon/1.trigger",
         "asset:mob/0037.fire_spreader/summon/1.trigger",
         "asset:mob/0047.the_heretic/summon/1.trigger",
         "asset:mob/0104.mad_scientist/summon/1.trigger",
