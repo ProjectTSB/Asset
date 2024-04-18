@@ -13,6 +13,7 @@
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.5 0
 
 # ダメージ
+# ハード以上で範囲拡大
     data modify storage lib: Argument.Damage set value 32f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Thunder"
@@ -24,8 +25,9 @@
     function lib:damage/reset
 
 # 各プレイヤーのMPを減らす
-    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0332.aurora_missile/tick/6.mp_reduction
-    execute if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:mob/0332.aurora_missile/tick/6.mp_reduction
+# ハード以上で範囲拡大
+    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0332.aurora_missile/tick/6.mp_reduce
+    execute if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:mob/0332.aurora_missile/tick/6.mp_reduce
 
 # 消滅
     kill @s
