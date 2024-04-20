@@ -4,6 +4,11 @@
 #
 # @within function asset:mob/0330.aurora_reaper/attack/1.trigger
 
+#> Private
+# @private
+    #declare score_holder $MPReduce
+    #declare score_holder $Difficulty
+
 # 演出
     execute positioned ^ ^1.2 ^0.6 rotated ~ ~-4 run function asset:mob/0330.aurora_reaper/attack/vfx
     playsound entity.player.attack.sweep hostile @a ~ ~ ~ 0.7 1.4 0
@@ -22,10 +27,18 @@
     execute as @p[tag=Victim] run function lib:damage/
     function lib:damage/reset
 
-# MPを割合で減少させる ハードで割合増加
+# 対象の最大MPの2.5%の100倍を取得
     execute as @p[tag=Victim] run function api:mp/get_max
+    execute store result score $MPReduce Temporary run data get storage api: Return.MaxMP 2.5
 
-# 最大MPの8%/12%を減少させる
-    execute store result score $Fluctuation Lib run data get storage api: Return.MaxMP -0.08
-    execute if predicate api:global_vars/difficulty/min/hard store result score $Fluctuation Lib run data get storage api: Return.MaxMP -0.12
-    execute as @p[tag=Victim] run function lib:mp/fluctuation
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
+
+# 最大MPの(2.5 x 難易度値)%分MPを減少させる
+    execute store result storage api: Argument.Fluctuation float -0.01 run scoreboard players operation $MPReduce Temporary *= $Difficulty Temporary
+    execute as @p[tag=Victim] run function api:mp/fluctuation
+
+# リセット
+    scoreboard players reset $MPReduce Temporary
+    scoreboard players reset $Difficulty Temporary
