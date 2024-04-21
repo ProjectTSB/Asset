@@ -26,7 +26,7 @@
 # 所持数を取得
     execute store result score $ItemCount Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1069}}}]
 
-# MPを最大値の(2.5 + 2.5N)%回復する
+# MPを最大値の2.5(N + 1)%回復する
 # N = 所持数
 
 # MPの2.5%の100倍を取得
