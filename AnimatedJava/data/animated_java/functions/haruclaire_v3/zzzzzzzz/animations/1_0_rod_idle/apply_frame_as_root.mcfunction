@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:haruclaire_v3/zzzzzzzz/animations/1_0_rod_idle/tree/branch_0_50

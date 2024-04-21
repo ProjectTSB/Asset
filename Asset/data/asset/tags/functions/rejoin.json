@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0380.haruclaire_v3/rejoin_process",
         "asset:artifact/1034.eiya/trigger/rejoin_process",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/rejoin_process",
         "asset:artifact/0647.thorn_armor/trigger/rejoin_process",

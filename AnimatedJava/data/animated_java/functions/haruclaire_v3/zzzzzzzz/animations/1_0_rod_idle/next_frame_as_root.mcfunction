@@ -1,0 +1,1 @@
+function animated_java:haruclaire_v3/zzzzzzzz/animations/1_0_rod_idle/tick_animation

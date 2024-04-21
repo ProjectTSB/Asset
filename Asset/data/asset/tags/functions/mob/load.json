@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0380.haruclaire_v3/load",
         "asset:mob/0330.aurora_reaper/0.load",
         "asset:mob/0176.killer_bee/0.load",
         "asset:mob/0186.ferocious_bee/0.load",

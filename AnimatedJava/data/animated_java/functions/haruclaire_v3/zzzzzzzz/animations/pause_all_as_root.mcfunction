@@ -1,0 +1,10 @@
+function animated_java:haruclaire_v3/zzzzzzzz/animations/1_0_rod_idle/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/2_0_rod_icewall/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/3_0_rod_icebullet/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/4_0_rod_icefang/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear3/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear2/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/2_0_rod_icewall2/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/99_testpose/pause_as_root
+function animated_java:haruclaire_v3/zzzzzzzz/animations/99_testpose2/pause_as_root

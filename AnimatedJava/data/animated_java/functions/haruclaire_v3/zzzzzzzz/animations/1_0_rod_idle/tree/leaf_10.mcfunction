@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:haruclaire_v3/zzzzzzzz/animations/1_0_rod_idle/tree/leaf_10_as_bone

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.haruclaire_v3.root] run function animated_java:haruclaire_v3/zzzzzzzz/tick_as_root
