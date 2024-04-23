@@ -14,13 +14,13 @@
     particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 80
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 450.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    execute at @a if score @s LD.UserID = @p UserID as @p run function lib:damage/modifier
-    execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,dx=2.5,dy=2.5,dz=2.5] run function lib:damage/
+    data modify storage api: Argument.Damage set value 450.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
+    execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # ついでに火を消す
     execute if predicate world_manager:area/02.islands run fill ~2.5 ~2.5 ~2.5 ~-2.5 ~-2.5 ~-2.5 air replace fire
