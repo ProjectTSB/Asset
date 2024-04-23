@@ -18,7 +18,7 @@
     execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/6.get_water_attack_modifier
 
 # 全員の水攻撃補正と比較する
-    execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary < @s Temporary
+    execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
 
 # 特定したプレイヤーにTagを付与
 # SearchTargetとBuffTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
