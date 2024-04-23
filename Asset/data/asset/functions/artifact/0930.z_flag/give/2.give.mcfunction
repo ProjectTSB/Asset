@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Z旗","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃力が25%上がり、防御力が35%下がる。"}','{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":"true"}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":"true"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃力が25%上がり、防御力が35%下がる。"}','{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":true}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
