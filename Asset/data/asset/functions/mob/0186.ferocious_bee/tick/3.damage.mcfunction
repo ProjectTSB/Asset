@@ -9,8 +9,8 @@
 
 # 攻撃のCT設定
     scoreboard players set @s 56.AttackCT 20
-    
-# ダメージを与える
+
+# ダメージ
     data modify storage lib: Argument.Damage set value 7.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
