@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"呪いの藁人形","color":"#8826B3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。(最大1300)"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。(最大4444)"}','{"text":"自身の体力が最大体力の50%以下の場合"}','{"text":"与えるダメージ量が2.5倍になる。"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [0,1300]
+    data modify storage asset:artifact AttackInfo.Damage set value [0,4444]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
