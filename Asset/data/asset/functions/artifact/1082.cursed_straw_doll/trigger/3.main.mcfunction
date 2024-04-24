@@ -38,6 +38,9 @@
     execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary *= $3 Const
     execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary /= $2 Const
 
+# 50%以下なら追加演出
+    execute if score $CurrentHealth Temporary matches ..50 at @e[type=#lib:living,tag=Victim,distance=..50] run particle witch ~ ~1.2 ~ 0.4 0.4 0.4 0 60 normal @a
+
 # ダメージ上限(4444)
     execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 4444
 
