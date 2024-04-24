@@ -34,10 +34,9 @@
 # 現在体力割合を求める
     scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
-# 50%以下ならダメージを2.5倍にする
-# Damage * (5 / 2)
-    execute if score $CurrentHealth Temporary matches 50.. run scoreboard players operation $DamageValue Temporary *= $5 Const
-    execute if score $CurrentHealth Temporary matches 50.. run scoreboard players operation $DamageValue Temporary /= $2 Const
+# 50%以下ならダメージを1.5倍にする
+    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary *= $3 Const
+    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary /= $2 Const
 
 # ダメージ上限(4444)
     execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 4444
