@@ -8,9 +8,14 @@
     scoreboard players add @s 56.MoveTime 1
     scoreboard players remove @s[scores={56.HurtTime=0..}] 56.HurtTime 1
 
-# スコアによって速度が変わる、突進のときはダメージを受けても止まらない。
+# スコアによって速度が変わる
+# スコアが180の時にプレイヤーが近くにいなければスコアをリセット
+# 180..189の時に、近くのプレイヤーに軸合わせする
+# 190以上で突進する
     execute if entity @s[scores={56.MoveTime=..179}] unless score @s 56.HurtTime matches 0.. facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
-    execute if entity @s[scores={56.MoveTime=180..}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^1 ~ ~
+    execute if entity @s[scores={56.MoveTime=180}] unless entity @p[gamemode=!spectator,distance=..20] run scoreboard players reset @s 56.MoveTime
+    execute if entity @s[scores={56.MoveTime=180..189}] anchored eyes run tp @s ~ ~ ~ facing entity @p eyes
+    execute if entity @s[scores={56.MoveTime=190..}] run tp @s ^ ^ ^1 ~ ~
 
 # スコアリセット
     scoreboard players reset @s[scores={56.MoveTime=200..}] 56.MoveTime
