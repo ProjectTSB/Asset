@@ -4,22 +4,28 @@
 #
 # @within function asset:artifact/1083.tablet_of_oracle/trigger/3.main
 
-#> Private
-# @private
-    #declare score_holder $Random
+# 4種のうちランダムなバフ2つを付与する
 
-# 4種のうちランダムなバフ1つを付与する
+# セッション開ける
+    function lib:array/session/open
 
-# ランダム処理
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $4 Const
+# ID候補リスト
+    data modify storage lib: Array set value [248,249,250,251]
 
-# 付与する
-    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set value 248
-    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set value 249
-    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set value 250
-    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set value 251
+# シャッフルする
+    function lib:array/shuffle
+
+# 配列を移しておく
+    data modify storage asset:temp U3.Array set from storage lib: Array
+
+# セッションを閉じる
+    function lib:array/session/close
+
+# 配列の前二つのIDのEffectを付与する
+    execute store result storage api: Argument.ID int 1 run data get storage asset:temp U3.Array[0]
+    function api:entity/mob/effect/give
+    execute store result storage api: Argument.ID int 1 run data get storage asset:temp U3.Array[1]
     function api:entity/mob/effect/give
 
 # リセット
-    scoreboard players reset $Random Temporary
+    data remove storage asset:temp U3.temp
