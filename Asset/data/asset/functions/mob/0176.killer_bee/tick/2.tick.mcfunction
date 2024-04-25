@@ -24,7 +24,7 @@
     data modify entity @s[scores={4W.HurtTime=..0}] NoAI set value 1b
 
 # 演出
-    execute if entity @s[scores={4W.MoveTime=50}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
+    execute if entity @s[scores={4W.MoveTime=70}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
     execute if entity @s[scores={4W.MoveTime=70..}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
 
 # クールタイムを減らす 0以下にはならない
