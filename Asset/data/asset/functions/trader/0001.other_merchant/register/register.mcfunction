@@ -42,8 +42,18 @@
 
 # 取引 額縁
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:4b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:item_frame",Count:1b}
+
+# 取引 普通のアマスタ
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:armor_stand",Count:1b}
+
+# 取引 腕付きアマスタ 普通のアマスタと取引
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:armor_stand",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:armor_stand",Count:1b,tag:{EntityTag:{ShowArms:1b},display:{Name:'{"text":"腕付き防具立て","color":"gold","italic":false}'}}}
 
 # 取引 シュルカーボックス
     data modify storage asset:trader Trades append value {}

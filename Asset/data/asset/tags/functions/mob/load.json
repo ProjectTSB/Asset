@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0337.shower_of_cherry_blossoms/0.load",
+        "asset:mob/0330.aurora_reaper/0.load",
         "asset:mob/0176.killer_bee/0.load",
         "asset:mob/0186.ferocious_bee/0.load",
         "asset:mob/0266.small_dark_ball/0.load",
@@ -60,7 +61,6 @@
         "asset:mob/0092.red_rose/0.load",
         "asset:mob/0073.clutch_spider/0.load",
         "asset:mob/0155.immorality/0.load",
-        "asset:mob/0153.domination/0.load",
         "asset:mob/0151.recombined/0.load",
         "asset:mob/0131.haruclaire/0.load",
         "asset:mob/0154.ruin/0.load",
