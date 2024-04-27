@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:artifact/1043.gamma_ray/trigger/rejoin_process",
+        "asset:artifact/1037.grand_flame/trigger/rejoin_process",
+        "asset:artifact/1034.eiya/trigger/rejoin_process",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/rejoin_process",
         "asset:artifact/0647.thorn_armor/trigger/rejoin_process",
         "asset:artifact/0976.brave_sword/trigger/rejoin_process",
@@ -14,7 +16,6 @@
         "asset:artifact/0793.queen_bee_rocket/trigger/rejoin_process",
         "asset:artifact/0870.samurai_blade/trigger/rejoin_process",
         "asset:artifact/0920.dal_i_thalion/trigger/rejoin_process",
-        "asset:mob/0210.aurora_eye/rejoin_process",
         "asset:artifact/0822.sound_of_a_star/trigger/rejoin_process",
         "asset:artifact/0431.weather_lock_cane/trigger/rejoin_process",
         "asset:mob/0262.frestchika/rejoin_process",
@@ -38,7 +39,6 @@
         "asset:artifact/0456.potion_of_stalling_power/trigger/rejoin_process",
         "asset:mob/0129.lexiel/rejoin_process",
         "asset:artifact/0373.ice_sorcery/trigger/rejoin_process",
-        "asset:mob/0153.domination/rejoin_process",
         "asset:artifact/0261.holy_symbol_lv.1/trigger/rejoin_process",
         "asset:artifact/0265.holy_symbol_lv.5/trigger/rejoin_process",
         "asset:artifact/0269.holy_symbol_lv.10/trigger/rejoin_process",
