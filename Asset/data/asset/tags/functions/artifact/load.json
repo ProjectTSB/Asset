@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:artifact/1037.grand_flame/trigger/0.load",
+        "asset:artifact/1034.eiya/trigger/0.load",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/0.load",
         "asset:artifact/0192.falcios_wand/trigger/0.load",
         "asset:artifact/0191.horus_wand/trigger/0.load",
@@ -14,7 +15,6 @@
         "asset:artifact/0952.lunatic_rod/trigger/0.load",
         "asset:artifact/0793.queen_bee_rocket/trigger/0.load",
         "asset:artifact/0870.samurai_blade/trigger/0.load",
-        "asset:artifact/0915.flame_hunter_hat/trigger/0.load",
         "asset:artifact/0822.sound_of_a_star/trigger/0.load",
         "asset:artifact/0966.protection/trigger/0.load",
         "asset:artifact/0967.enhanced_protection/trigger/0.load",
