@@ -9,31 +9,56 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 重複防止Tagを付与
-    tag @s add TB.Modifier
+#> Private
+# @private
+    #declare score_holder $SelfDamage
 
 # 演出
-    execute rotated ~ 0 positioned ~ ~0.3 ~ run function asset:artifact/1055.compass_of_sea_abyss/trigger/vfx_compass
+    execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/vfx_compass
+    execute at @e[type=#lib:living,tag=Enemy,distance=..8,sort=nearest,limit=5] run particle dust 0 0 -1 1.2 ~ ~1.2 ~ 0.4 0.5 0.4 0 40 normal @a
     playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.8 0.8 0
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.8 0.5
 
-# 物理攻撃+10％
-    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    data modify storage api: Argument.Amount set value 0.1
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/attack/physical/add
+# 仕様
+# 発動時、現在体力の10%分ダメージを受け、
+# 効果で受けたダメージ2につき、MPを2回復&周囲の敵に120ダメージ
+# 被ダメは最低2、最大20
 
-# 水攻撃+10％
-    data modify storage api: Argument.UUID set value [I;1,1,1055,0]
-    data modify storage api: Argument.Amount set value 0.1
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/attack/water/add
+# 自身の現在体力を取得する
+    function api:data_get/health
 
-# 最大体力-20％
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.MaxHealth" -0.2 multiply_base
+# 現在体力の100%分をスコア化する
+# ダメージの少数部分も考慮して本来与えるダメージの10倍で取得している
+    execute store result score $SelfDamage Temporary run data get storage api: Health
 
-# ノクバ耐性+3
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-041f00000001 "1055.KBResist" 0.3 add
+# 値が19以下なら20にする
+    execute if score $SelfDamage Temporary matches ..19 run scoreboard players set $SelfDamage Temporary 20
 
-# 最大体力の変化を反映するダメージ
-    damage @s 0.01
+# 現在体力の10%分の固定ダメージを受ける
+# 固定ダメージのため属性は意味ないけど雰囲気で
+    execute store result storage api: Argument.Damage float 0.1 run data get storage api: Health
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.FixedDamage set value true
+    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは海淵へ消えた。","with":[{"selector":"@s"}]}]'
+    function api:damage/modifier
+    function api:damage/
+    function api:damage/reset
+
+# 自傷ダメ2につき、という効果なので20で割る
+    scoreboard players operation $SelfDamage Temporary /= $20 Const
+
+# $SelfDamage * 2だけMPを回復
+    execute store result storage api: Argument.Fluctuation int 2 run scoreboard players get $SelfDamage Temporary
+    function api:mp/fluctuation
+
+# $SelfDamage * 120だけ周囲の敵5体にダメージ
+    execute store result storage api: Argument.Damage int 120 run scoreboard players get $SelfDamage Temporary
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Enemy,distance=..8,sort=nearest,limit=5] run function api:damage/
+    function api:damage/reset
+
+# リセット
+    scoreboard players reset $SelfDamage Temporary

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"海淵の羅針盤","color":"#1050B0"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+10% ","color":"dark_green"},{"text":"水攻撃+10% ","color":"aqua"}]','[{"text":"ノックバック耐性+3 ","color":"white"},{"text":"最大体力-20%","color":"dark_red"}]','{"text":"遥か海底の彼方を指す羅針盤。","color":"gray"}','{"text":"その針は光無き深淵を指し示す。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、現在体力の10%分のダメージを受ける。","color":"white"}','{"text":"この効果での被ダメージ2につきMPを2回復し","color":"white"}','{"text":"周囲の敵5体へ120ダメージを与える。","color":"white"}','{"text":"(効果による被ダメージは最低2、最大20)","color":"white"}','{"text":"遥か海底の彼方を指す羅針盤。","color":"gray"}','{"text":"その針は光無き深淵を指し示す。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -23,33 +23,33 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equipping"
+    data modify storage asset:artifact Trigger set value "onDamageFromEntity"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
+    data modify storage asset:artifact AttackInfo.Damage set value [120,1200]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackType set value [Physical,Magic]
+    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.ElementType set value [Fire,Water,Thunder,None]
+    data modify storage asset:artifact AttackInfo.ElementType set value [Water]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
+    data modify storage asset:artifact AttackInfo.AttackRange set value 8
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 150
+    data modify storage asset:artifact MPCost set value 15
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 0
+    # data modify storage asset:artifact MPRequire set value 0
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 240
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
