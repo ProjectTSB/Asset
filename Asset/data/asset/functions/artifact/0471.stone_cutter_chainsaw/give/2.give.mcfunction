@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"イシキリチェンソー","color":"dark_red","bold":"true"}]'
+    data modify storage asset:artifact Name set value '[{"text":"イシキリチェンソー","color":"dark_red","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方の敵全体を切り刻む"},{"text":"石切台","strikethrough":"true","italic":"true"},{"text":"チェンソー"}]','""','[{"text":"魔力を注ぎ込みエンジンをふかせ","color":"dark_purple","italic":"true"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"前方の敵全体を切り刻む"},{"text":"石切台","strikethrough":true,"italic":true},{"text":"チェンソー"}]','""','[{"text":"魔力を注ぎ込みエンジンをふかせ","color":"dark_purple","italic":true}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
