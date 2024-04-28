@@ -3,8 +3,8 @@
 # ヒット時の処理
 #
 # @within function
-#   asset:mob/0332.aurora_missile/tick/2.tick_normal
-#   asset:mob/0332.aurora_missile/tick/3.tick_hard
+#   asset:mob/0332.aurora_missile/tick/2.normal
+#   asset:mob/0332.aurora_missile/tick/3.hard
 
 # 演出
     execute if predicate api:global_vars/difficulty/max/normal rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0332.aurora_missile/tick/vfx/1

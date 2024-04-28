@@ -1,4 +1,4 @@
-#> asset:mob/0332.aurora_missile/tick/3.tick_hard
+#> asset:mob/0332.aurora_missile/tick/3.hard
 #
 # ハード以上でのtick処理
 #

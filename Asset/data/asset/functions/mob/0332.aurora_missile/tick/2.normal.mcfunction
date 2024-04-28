@@ -1,4 +1,4 @@
-#> asset:mob/0332.aurora_missile/tick/2.tick_normal
+#> asset:mob/0332.aurora_missile/tick/2.normal
 #
 # ノーマル以下のtick処理
 #
