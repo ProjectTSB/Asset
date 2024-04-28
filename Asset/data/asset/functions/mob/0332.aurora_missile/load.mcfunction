@@ -1,4 +1,4 @@
-#> asset:mob/0332.aurora_missile/0.load
+#> asset:mob/0332.aurora_missile/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #

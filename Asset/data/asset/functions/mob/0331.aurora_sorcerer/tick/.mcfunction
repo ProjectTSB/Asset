@@ -1,8 +1,8 @@
-#> asset:mob/0331.aurora_sorcerer/tick/2.tick
+#> asset:mob/0331.aurora_sorcerer/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0331.aurora_sorcerer/tick/1.trigger
+# @within function asset:mob/0331.aurora_sorcerer/_/tick
 
 # 演出
     particle dust_color_transition 0.000 1.000 0.886 1.3 0 0.235 1 ~ ~1.7 ~ 0.1 0.1 0.1 0 2 normal @a
@@ -24,4 +24,4 @@
     execute if entity @s[scores={97.Skill=0}] run attribute @s generic.knockback_resistance base set 10
 
 # スキル実行
-    execute if entity @s[scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/3.shoot
+    execute if entity @s[scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/2.shoot

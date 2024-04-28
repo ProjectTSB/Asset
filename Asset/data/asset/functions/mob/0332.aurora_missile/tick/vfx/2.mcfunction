@@ -1,8 +1,8 @@
-#> asset:mob/0332.aurora_missile/tick/vfx2
+#> asset:mob/0332.aurora_missile/tick/vfx/2
 #
 #
 #
-# @within function asset:mob/0332.aurora_missile/tick/5.hit
+# @within function asset:mob/0332.aurora_missile/tick/4.hit
 
 # 円 1
 particle dust 0.000 1.000 0.949 3 ^0 ^ ^-3 0 0 0 0 1

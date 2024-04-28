@@ -1,8 +1,8 @@
-#> asset:mob/0332.aurora_missile/tick/6.mp_reduce
+#> asset:mob/0332.aurora_missile/tick/5.mp_reduce
 #
-# 実行者のプレイヤーのMPを減らす処理
+# 実行プレイヤーのMPを減らす
 #
-# @within function asset:mob/0332.aurora_missile/tick/5.hit
+# @within function asset:mob/0332.aurora_missile/tick/4.hit
 
 #> Private
 # @private

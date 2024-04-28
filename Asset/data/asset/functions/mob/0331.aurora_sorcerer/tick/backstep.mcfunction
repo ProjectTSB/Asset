@@ -1,8 +1,8 @@
 #> asset:mob/0331.aurora_sorcerer/tick/backstep
 #
-# バックステップ周りの処理
+# バックステップする
 #
-# @within function asset:mob/0331.aurora_sorcerer/tick/2.tick
+# @within function asset:mob/0331.aurora_sorcerer/tick/
 
 # バックステップ
     data modify storage lib: Argument.VectorMagnitude set value 1.6

@@ -1,11 +1,13 @@
-#> asset:mob/0331.aurora_sorcerer/summon/2.summon
+#> asset:mob/0331.aurora_sorcerer/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0331.aurora_sorcerer/summon/1.trigger
+# @within function asset:mob/0331.aurora_sorcerer/_/register
 
-# 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0331.aurora_sorcerer"}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
 # ID (int)
     data modify storage asset:mob ID set value 331
 # Type (string) Wikiを参照
@@ -57,9 +59,5 @@
         # data modify storage asset:mob Resist.Water set value
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
-
-# 予めSkillスコアを設定しておく
-    scoreboard players set @e[type=skeleton,tag=MobInit,distance=..0.01] 97.Skill -60
-
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+    # data modify storage asset:mob Field set value {}
