@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:artifact/1055.compass_of_sea_abyss/trigger/1.trigger",
+        "asset:artifact/1038.flame_devil_head/trigger/hurt/1.trigger",
+        "asset:artifact/0801.red_secret_stone/trigger/1.trigger",
         "asset:artifact/0914.reactive_armor_feet/trigger/1.trigger",
         "asset:artifact/0913.reactive_armor_legs/trigger/1.trigger",
         "asset:artifact/0912.reactive_armor_chest/trigger/1.trigger",

@@ -23,4 +23,3 @@
 
 # スコアリセット
     scoreboard players reset $Health Temporary
-
