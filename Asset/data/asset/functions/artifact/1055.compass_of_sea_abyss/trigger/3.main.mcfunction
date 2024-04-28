@@ -31,8 +31,9 @@
 # ダメージの少数部分も考慮して本来与えるダメージの10倍で取得している
     execute store result score $SelfDamage Temporary run data get storage api: Health
 
-# 値が19以下なら20にする
-    execute if score $SelfDamage Temporary matches ..19 run scoreboard players set $SelfDamage Temporary 20
+# 値の範囲を超えないように
+    scoreboard players operation $SelfDamage Temporary > $20 Const
+    scoreboard players operation $SelfDamage Temporary < $200 Const
 
 # 現在体力の10%分の固定ダメージを受ける
 # 固定ダメージのため属性は意味ないけど雰囲気で
