@@ -2,7 +2,7 @@
 #
 # ハード以上でのtick処理
 #
-# @within function asset:mob/0332.aurora_missile/tick/
+# @within function asset:mob/0332.aurora_missile/tick/1
 
 # 演出
     particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~ ~ 0.2 0.2 0.2 0 3 normal @a
