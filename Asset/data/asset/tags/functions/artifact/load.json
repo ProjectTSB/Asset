@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/0606.traffic_sign/trigger/0.load",
         "asset:artifact/1033.thelema_of_blue_sea/trigger/0.load",
         "asset:artifact/1043.gamma_ray/trigger/0.load",
         "asset:artifact/1038.flame_devil_head/trigger/0.load",
