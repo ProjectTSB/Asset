@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"狂月","color":"white"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"与える魔法ダメージが10%増加する。"}']
+    data modify storage asset:effect Description set value ['{"text":"与える魔法ダメージが増加する。"}']
 # 効果時間 (int) (default = API || 0)
     data modify storage asset:effect Duration set value 300
 # スタック (int) (default = API || 1)
