@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ハニービーステッキ","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖","color":"yellow"}','{"text":"周囲のプレイヤーを回復し","color":"#FFBD24"}','{"text":"周囲のMobにダメージと鈍足を付与する","color":"yellow"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖。","color":"yellow"}','{"text":"周囲のプレイヤーを回復し、","color":"#FFBD24"}','{"text":"周囲のMobにダメージと鈍足を付与する。","color":"yellow"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
