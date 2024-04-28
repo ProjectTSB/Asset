@@ -1,9 +1,10 @@
 {
     "values": [
+        "asset:effect/0202.sheep_blessing/_/register",
         "asset:effect/0214.quick_charge/_/register",
-        "asset:effect/0603.domination/_/register",
         "asset:effect/0228.rubeus_resonance/_/register",
         "asset:effect/0229.sapphirus_resonance/_/register",
+        "asset:effect/0603.domination/_/register",
         "asset:effect/0605.aurora_corrosion/_/register"
     ]
 }
