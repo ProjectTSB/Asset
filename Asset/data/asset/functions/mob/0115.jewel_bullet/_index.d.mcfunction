@@ -1,4 +1,4 @@
-#> asset:mob/0115.jewel_bullet
+#> asset:mob/0115.jewel_bullet/_index.d
 # @private
 
 #> tag
