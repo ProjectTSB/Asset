@@ -5,4 +5,4 @@
 # @within asset:mob/0380.haruclaire_v3/_/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0380.haruclaire_v3"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0380.haruclaire_v3",NoAI:1b,Silent:1b}

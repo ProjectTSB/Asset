@@ -10,8 +10,13 @@ scoreboard objectives remove aj.haruclaire_v3.animation.2_0_rod_icewall.local_an
 scoreboard objectives remove aj.haruclaire_v3.animation.3_0_rod_icebullet.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.4_0_rod_icefang.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear.local_anim_time
+scoreboard objectives remove aj.haruclaire_v3.animation.6_0_rod_iceray.local_anim_time
+scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear5.local_anim_time
+scoreboard objectives remove aj.haruclaire_v3.animation.3_0_rod_icebullet2.local_anim_time
+scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear4.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear3.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear2.local_anim_time
+scoreboard objectives remove aj.haruclaire_v3.animation.6_0_rod_iceray2.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.2_0_rod_icewall2.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.99_testpose.local_anim_time
 scoreboard objectives remove aj.haruclaire_v3.animation.99_testpose2.local_anim_time
@@ -20,8 +25,13 @@ scoreboard objectives remove aj.haruclaire_v3.animation.2_0_rod_icewall.loop_mod
 scoreboard objectives remove aj.haruclaire_v3.animation.3_0_rod_icebullet.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.4_0_rod_icefang.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear.loop_mode
+scoreboard objectives remove aj.haruclaire_v3.animation.6_0_rod_iceray.loop_mode
+scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear5.loop_mode
+scoreboard objectives remove aj.haruclaire_v3.animation.3_0_rod_icebullet2.loop_mode
+scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear4.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear3.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.5_0_rod_icespear2.loop_mode
+scoreboard objectives remove aj.haruclaire_v3.animation.6_0_rod_iceray2.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.2_0_rod_icewall2.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.99_testpose.loop_mode
 scoreboard objectives remove aj.haruclaire_v3.animation.99_testpose2.loop_mode
