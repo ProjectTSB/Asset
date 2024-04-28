@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0332.aurora_missile/load",
+        "asset:mob/0331.aurora_sorcerer/load",
         "asset:mob/0330.aurora_reaper/0.load",
         "asset:mob/0176.killer_bee/0.load",
         "asset:mob/0186.ferocious_bee/0.load",
