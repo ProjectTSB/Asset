@@ -25,7 +25,7 @@
 
 # 演出
     execute if entity @s[scores={56.MoveTime=200}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
-    execute if entity @s[scores={56.MoveTime=180..200}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
+    execute if entity @s[scores={56.MoveTime=180..}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
 
 # クールタイムを減らす 0以下にはならない
     scoreboard players remove @s[scores={56.AttackCT=1..}] 56.AttackCT 1
