@@ -1,5 +1,10 @@
 {
     "values": [
+        "asset:artifact/0904.shield_thunder_accessories/trigger/1.trigger",
+        "asset:artifact/0903.magic_water_accessories/trigger/1.trigger",
+        "asset:artifact/0902.fire_heart_accessories/trigger/1.trigger",
+        "asset:artifact/1033.thelema_of_blue_sea/trigger/1.trigger",
+        "asset:artifact/1034.eiya/trigger/1.trigger",
         "asset:artifact/1016.sharpened_netherite_sword/trigger/1.trigger",
         "asset:artifact/1015.sharpened_diamond_sword/trigger/1.trigger",
         "asset:artifact/1014.sharpened_golden_sword/trigger/1.trigger",
