@@ -15,7 +15,7 @@
 
 # 演出
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/vfx_compass
-    execute at @e[type=#lib:living,tag=Enemy,distance=..8,sort=nearest,limit=5] run particle dust 0 0 -1 1.2 ~ ~1.2 ~ 0.4 0.5 0.4 0 40 normal @a
+    execute at @e[type=#lib:living,tag=Enemy,distance=..8,sort=nearest,limit=5] run particle dust 0 0 -1 1.4 ~ ~1.2 ~ 0.4 0.5 0.4 0 50 normal @a
     playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.8 0.8 0
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.8 0.5
 
