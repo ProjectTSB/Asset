@@ -36,11 +36,11 @@
 
 # 現在体力の10%分の固定ダメージを受ける
 # 固定ダメージのため属性は意味ないけど雰囲気で
-    execute store result storage api: Argument.Damage float 0.1 run data get storage api: Health
+    execute store result storage api: Argument.Damage float 0.1 run scoreboard players get $SelfDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.FixedDamage set value true
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは海淵へ消えた。","with":[{"selector":"@s"}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは海淵へ消えた","with":[{"selector":"@s"}]}]'
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
