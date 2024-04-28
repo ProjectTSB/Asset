@@ -21,6 +21,7 @@
     execute if entity @s[scores={98.Tick=21..}] run tp @s ^ ^ ^0.5
 
 # 誘導状態でヒットした場合消滅
+    execute if entity @s[scores={98.Tick=..19}] unless block ^ ^ ^0.5 #lib:no_collision run kill @s
     execute if entity @s[scores={98.Tick=..19}] positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run kill @s
 
 # 直進状態でブロックかプレイヤーにヒットで爆発する
