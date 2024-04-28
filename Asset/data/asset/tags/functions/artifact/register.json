@@ -1,6 +1,17 @@
 {
     "values": [
         "asset:artifact/0606.traffic_sign/register",
+        "asset:artifact/0904.shield_thunder_accessories/register",
+        "asset:artifact/0903.magic_water_accessories/register",
+        "asset:artifact/0902.fire_heart_accessories/register",
+        "asset:artifact/1054.quick_charging_battery/register",
+        "asset:artifact/1033.thelema_of_blue_sea/register",
+        "asset:artifact/1043.gamma_ray/register",
+        "asset:artifact/1041.flame_devil_feet/register",
+        "asset:artifact/1040.flame_devil_legs/register",
+        "asset:artifact/1039.flame_devil_chest/register",
+        "asset:artifact/1038.flame_devil_head/register",
+        "asset:artifact/1037.grand_flame/register",
         "asset:artifact/0900.pure_water_bracelet/register",
         "asset:artifact/0772.dolphin_amulet/register",
         "asset:artifact/0702.bright_lamp/register",

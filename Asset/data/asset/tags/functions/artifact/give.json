@@ -1,6 +1,18 @@
 {
     "values": [
         "asset:artifact/0606.traffic_sign/give/1.trigger",
+        "asset:artifact/0904.shield_thunder_accessories/give/1.trigger",
+        "asset:artifact/0903.magic_water_accessories/give/1.trigger",
+        "asset:artifact/0902.fire_heart_accessories/give/1.trigger",
+        "asset:artifact/1054.quick_charging_battery/give/1.trigger",
+        "asset:artifact/1033.thelema_of_blue_sea/give/1.trigger",
+        "asset:artifact/1043.gamma_ray/give/1.trigger",
+        "asset:artifact/1041.flame_devil_feet/give/1.trigger",
+        "asset:artifact/1040.flame_devil_legs/give/1.trigger",
+        "asset:artifact/1039.flame_devil_chest/give/1.trigger",
+        "asset:artifact/1038.flame_devil_head/give/1.trigger",
+        "asset:artifact/1037.grand_flame/give/1.trigger",
+        "asset:artifact/1034.eiya/give/1.trigger",
         "asset:artifact/0900.pure_water_bracelet/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",
