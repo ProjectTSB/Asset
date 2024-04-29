@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"沈潜","color":"blue"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"与えるダメージが大きく減少し、鈍足と採掘速度低下を得る。"}'
+    data modify storage asset:effect Description set value ['{"text":"与えるダメージが大きく減少し、鈍足と採掘速度低下を得る。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (int) (default = API || 1)
