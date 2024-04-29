@@ -495,6 +495,8 @@
                         "    # data modify storage asset:artifact DisableCooldownMessage set value ",
                         "# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
                         "    # data modify storage asset:artifact DisableMPMessage set value ",
+                        "# 破壊時の音を鳴らさないかどうか (boolean) (オプション)",
+                        "    # data modify storage asset:artifact DisableBreakSound set value",
                         "# 扱える神 (string[]) Wikiを参照",
                         "    data modify storage asset:artifact CanUsedGod set value []",
                         "# カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)",
@@ -630,6 +632,8 @@
                         "    data modify storage asset:artifact Slot set value \"hotbar\"",
                         "# 神器のトリガー (string) Wikiを参照",
                         "    data modify storage asset:artifact Trigger set value ",
+                        "# 効果が重複可能か否か (boolean) (オプション)",
+                        "    # data modify storage asset:artifact EnableDuplication set value ",
                         "# 神器の発動条件 (TextComponentString) (オプション)",
                         "    # data modify storage asset:artifact Condition set value ",
                         "# 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)",
@@ -656,6 +660,8 @@
                         "    # data modify storage asset:artifact DisableCooldownMessage set value ",
                         "# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
                         "    # data modify storage asset:artifact DisableMPMessage set value ",
+                        "# 破壊時の音を鳴らさないかどうか (boolean) (オプション)",
+                        "    # data modify storage asset:artifact DisableBreakSound set value",
                         "# 扱える神 (string[]) Wikiを参照",
                         "    data modify storage asset:artifact CanUsedGod set value []",
                         "# カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)",
@@ -1604,11 +1610,12 @@
                         "#",
                         "# @within function asset:mob/%namespace%/_/register",
                         "",
+                        "# 継承 (int) (オプション)",
+                        "    # data modify storage asset:mob Extends append value",
+                        "    # function asset:mob/extends",
+                        "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:mob ExtendsSafe set value true",
-                        "# 継承 (int)",
-                        "    # data modify storage asset:mob ExtendsSafe append value",
-                        "    # function asset:mob/extends",
                         "# ID (int)",
                         "    data modify storage asset:mob ID set value %id%",
                         "# Type (string) Wikiを参照",
@@ -1664,7 +1671,7 @@
                         "        # data modify storage asset:mob Resist.Thunder set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:mob Field set value "
+                        "    # data modify storage asset:mob Field set value {}"
                     ]
                 },
                 {
@@ -2171,7 +2178,63 @@
                         "    # data modify storage asset:effect RequireClearLv set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:effect Field.myValue set value "
+                        "    # data modify storage asset:effect Field set value {}"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/register.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/register",
+                        "#",
+                        "#",
+                        "#",
+                        "# @within tag/function asset:effect/register",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/register"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/register.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/register"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/register"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/テンプレート (継承)",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/register.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/register",
+                        "#",
+                        "# Effectのデータを指定",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/register",
+                        "",
+                        "# 継承 (int)",
+                        "    data modify storage asset:effect Extends append value ",
+                        "    function asset:effect/extends",
+                        "# ID (int)",
+                        "    data modify storage asset:effect ID set value %id%"
                     ]
                 },
                 {
