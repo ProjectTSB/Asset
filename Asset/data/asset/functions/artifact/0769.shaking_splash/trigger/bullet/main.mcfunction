@@ -18,7 +18,7 @@
     execute unless predicate lib:is_vehicle run function asset:artifact/0769.shaking_splash/trigger/bullet/hit
 
 # 一定時間経過で雪玉ごと消滅
-    execute if entity @s[scores={LD.Tick=80..}] run kill @e[type=snowball,tag=LD.Bullet,distance=..0.01,sort=nearest,limit=1]
+    execute if entity @s[scores={LD.Tick=80..}] positioned ~ ~-0.25 ~ run kill @e[type=snowball,tag=LD.Bullet,distance=..0.01,sort=nearest,limit=1]
     execute if entity @s[scores={LD.Tick=80..}] run kill @s
 
 # ループ
