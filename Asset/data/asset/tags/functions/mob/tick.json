@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0332.aurora_missile/_/tick",
+        "asset:mob/0331.aurora_sorcerer/_/tick",
         "asset:mob/0330.aurora_reaper/tick/1.trigger",
         "asset:mob/0176.killer_bee/tick/1.trigger",
         "asset:mob/0186.ferocious_bee/tick/1.trigger",
