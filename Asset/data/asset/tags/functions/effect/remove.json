@@ -1,5 +1,9 @@
 {
     "values": [
-        "asset:effect/220.dream_of_burning_butterfly/_/remove"
+        "asset:effect/220.dream_of_burning_butterfly/_/remove",
+        "asset:effect/0213.reflecting_sky/_/remove"
+        "asset:effect/0212.lunatic_moon/_/remove",
+        "asset:effect/0214.quick_charge/_/remove",
+        "asset:effect/0605.aurora_corrosion/_/remove"
     ]
 }
