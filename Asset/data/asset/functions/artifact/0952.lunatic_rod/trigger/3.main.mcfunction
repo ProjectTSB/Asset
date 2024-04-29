@@ -28,7 +28,8 @@
     function lib:damage/reset
 
 # ヒットしたら魔法攻撃バフ
-    execute if entity @s[tag=Landing] run function asset:artifact/0952.lunatic_rod/trigger/5.buff
+    execute if entity @s[tag=Landing] run data modify storage api: Argument.ID set value 212
+    execute if entity @s[tag=Landing] run function api:entity/mob/effect/give
 
 # 再帰処理のリセット
     tag @e[type=#lib:living,tag=Hit,distance=..40] remove Hit
