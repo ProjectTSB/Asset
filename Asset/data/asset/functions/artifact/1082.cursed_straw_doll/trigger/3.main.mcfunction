@@ -34,9 +34,9 @@
 # 現在体力割合を求める
     scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
-# 50%以下ならダメージを1.5倍にする
-    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary *= $3 Const
-    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary /= $2 Const
+# 50%以下ならダメージを1.3倍にする
+    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary *= $13 Const
+    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary /= $10 Const
 
 # 50%以下なら追加演出
     execute if score $CurrentHealth Temporary matches ..50 at @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] run particle witch ~ ~1.2 ~ 0.3 0.4 0.3 0 20 normal @a
