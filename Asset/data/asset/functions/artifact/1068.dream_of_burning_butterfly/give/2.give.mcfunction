@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"燃える蝶の夢","color":"dark_red"}'
+    data modify storage asset:artifact Name set value '{"text":"燃える蝶の夢","color":"#FF3705"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、失っている体力10につき","color":"white"}','[{"text":"火攻撃+5%","color":"red"},{"text":"を10秒間得る。(最大25%)","color":"white"}]','{"text":"灼炎の如く燃えている蝶。","color":"gray"}','{"text":"命を燃やすかのように紅く輝いている。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
