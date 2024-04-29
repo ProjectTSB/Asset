@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:mob/0331.aurora_sorcerer/_/hurt",
+        "asset:mob/0330.aurora_reaper/hurt/1.trigger",
+        "asset:mob/0056.thunder_trifler/_/hurt",
         "asset:mob/0265.dark_familiar/hurt/1.trigger",
         "asset:mob/0264.dark_summoner/hurt/1.trigger",
         "asset:mob/0273.hell_blade/hurt/1.trigger",
@@ -28,7 +31,6 @@
         "asset:mob/0057.none_fighter/hurt/1.trigger",
         "asset:mob/0049.ice_obstructor/hurt/1.trigger",
         "asset:mob/0058.divide_haze/hurt/1.trigger",
-        "asset:mob/0056.thunder_trifler/hurt/1.trigger",
         "asset:mob/0037.fire_spreader/hurt/1.trigger",
         "asset:mob/0089.decapitation/hurt/1.trigger",
         "asset:mob/0022.red_knight/hurt/1.trigger",
