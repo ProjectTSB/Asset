@@ -34,15 +34,15 @@
 # 現在体力割合を求める
     scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
-# 50%以下ならダメージを1.3倍にする
-    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary *= $13 Const
-    execute if score $CurrentHealth Temporary matches ..50 run scoreboard players operation $DamageValue Temporary /= $10 Const
+# 44%以下ならダメージを1.3倍にする
+    execute if score $CurrentHealth Temporary matches ..44 run scoreboard players operation $DamageValue Temporary *= $13 Const
+    execute if score $CurrentHealth Temporary matches ..44 run scoreboard players operation $DamageValue Temporary /= $10 Const
 
-# 50%以下なら追加演出
-    execute if score $CurrentHealth Temporary matches ..50 at @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] run particle witch ~ ~1.2 ~ 0.3 0.4 0.3 0 20 normal @a
+# 44%以下なら追加演出
+    execute if score $CurrentHealth Temporary matches ..44 at @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] run particle witch ~ ~1.2 ~ 0.3 0.4 0.3 0 20 normal @a
 
-# ダメージ上限(4444)
-    execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 4444
+# ダメージ上限(666)
+    execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 666
 
 # ダメージへ代入
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageValue Temporary
