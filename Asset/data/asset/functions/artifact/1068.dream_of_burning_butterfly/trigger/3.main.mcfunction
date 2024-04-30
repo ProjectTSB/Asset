@@ -24,12 +24,9 @@
 
 # $LostHealthは2.check_conditionで計算済み
 
-# $LostHealthを10で割る
-    scoreboard players operation $LostHealth Temporary /= $10 Const
-
-# $LostHealthの数値をStackとして燃える蝶の夢エフェクトを付与
+# $LostHealthの0.1倍の数値をStackとして燃える蝶の夢エフェクトを付与
     data modify storage api: Argument.ID set value 220
-    execute store result storage api: Argument.Stack int 1 run scoreboard players get $LostHealth Temporary
+    execute store result storage api: Argument.Stack int 0.1 run scoreboard players get $LostHealth Temporary
     function api:entity/mob/effect/give
 
 # リセットはcheck_conditionで行っているので不要
