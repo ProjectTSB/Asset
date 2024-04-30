@@ -1,3 +1,0 @@
-execute if score @s aj.haruclaire_v3.animation.3_0_rod_icebullet.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:haruclaire_v3/zzzzzzzz/animations/3_0_rod_icebullet/end_loop
-execute if score @s aj.haruclaire_v3.animation.3_0_rod_icebullet.loop_mode = $aj.loop_mode.once aj.i run function animated_java:haruclaire_v3/animations/3_0_rod_icebullet/stop
-execute if score @s aj.haruclaire_v3.animation.3_0_rod_icebullet.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:haruclaire_v3/animations/3_0_rod_icebullet/pause

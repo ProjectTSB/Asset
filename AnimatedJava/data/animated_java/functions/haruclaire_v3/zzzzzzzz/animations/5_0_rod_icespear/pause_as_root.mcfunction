@@ -1,1 +1,0 @@
-tag @s remove aj.haruclaire_v3.animation.5_0_rod_icespear
