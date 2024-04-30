@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"狩人の走り"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"移動速度が上昇する"}'
+    data modify storage asset:effect Description set value ['{"移動速度が上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 3
 # スタック (int) (default = API || 1)
