@@ -27,7 +27,7 @@
 # 使用回数とランダムで斬撃演出を変える
 # 斬撃パターンは2種類で交互に変わる
     execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 0 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/1
-    execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 1 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/4
+    execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 1 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/2
     execute if entity @s[scores={TY.Count=1}] if score $Random Temporary matches 2 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/3
     execute if entity @s[scores={TY.Count=2}] if score $Random Temporary matches 0 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/4
     execute if entity @s[scores={TY.Count=2}] if score $Random Temporary matches 1 positioned ^ ^1.2 ^1.2 run function asset:artifact/1078.pigeon_blood/trigger/slash_vfx/5
