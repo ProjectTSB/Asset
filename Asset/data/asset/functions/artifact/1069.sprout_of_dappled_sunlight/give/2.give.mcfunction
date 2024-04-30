@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"木洩れ日の新芽","color":"#A2FF94"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、MPを最大MPに比例して回復する。","color":"white"}','{"text":"暖かな日差しの下で萌え出る新芽。","color":"gray"}','{"text":"その芽吹きには確かな生命力を感じられる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、MP回復量+12%を10秒間得る。","color":"white"}','{"text":"暖かな日差しの下で萌え出る新芽。","color":"gray"}','{"text":"その芽吹きには確かな生命力を感じられる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -25,9 +25,9 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onHeal"
 # 効果が重複可能か否か (boolean) (オプション)
-    data modify storage asset:artifact EnableDuplication set value true
+    # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"3回回復する毎","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 0
+    data modify storage asset:artifact MPCost set value 10
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
@@ -51,7 +51,7 @@
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    data modify storage asset:artifact DisableMPMessage set value true
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
