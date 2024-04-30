@@ -1,8 +1,8 @@
-#> asset:effect/230.farothdal/modify/add
+#> asset:effect/0230.farothdal/modify/add
 #
 #
 #
-# @within function asset:effect/230.farothdal/given/
+# @within function asset:effect/0230.farothdal/given/
 
 # 移動速度を上げる
     attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00e600000000 "230" 0.3 multiply

@@ -1,8 +1,8 @@
-#> asset:effect/230.farothdal/register
+#> asset:effect/0230.farothdal/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/230.farothdal/_/register
+# @within function asset:effect/0230.farothdal/_/register
 
 # ExtendsSafe (boolean) (default = false)
     data modify storage asset:effect ExtendsSafe set value true

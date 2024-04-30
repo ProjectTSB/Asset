@@ -1,10 +1,10 @@
-#> asset:effect/230.farothdal/modify/remove
+#> asset:effect/0230.farothdal/modify/remove
 #
 #
 #
 # @within function
-#   asset:effect/230.farothdal/end/
-#   asset:effect/230.farothdal/remove/
+#   asset:effect/0230.farothdal/end/
+#   asset:effect/0230.farothdal/remove/
 # 移動速度戻す
     attribute @s minecraft:generic.movement_speed modifier remove 00000001-0000-0003-0000-00e600000000
 # 補正を削除
