@@ -1,8 +1,8 @@
-#> asset:effect/221.hunters_run/register
+#> asset:effect/0221.hunters_run/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/221.hunters_run/_/register
+# @within function asset:effect/0221.hunters_run/_/register
 
 # ExtendsSafe (boolean) (default = false)
     data modify storage asset:effect ExtendsSafe set value true
