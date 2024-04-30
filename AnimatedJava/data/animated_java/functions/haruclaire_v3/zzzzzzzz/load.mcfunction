@@ -30,6 +30,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.haruclaire_v3.export_version aj.i -598760439
+scoreboard players set aj.haruclaire_v3.export_version aj.i 78854850
 scoreboard players reset * aj.haruclaire_v3.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.haruclaire_v3.root] run function animated_java:haruclaire_v3/zzzzzzzz/on_load

@@ -19,5 +19,8 @@
 # アニメーションのイベントハンドラ
     execute if score @s AK.AnimationTimer matches 1.. run function asset:mob/0380.haruclaire_v3/tick/app/events/
 
+# モデルを自身の位置まで持ってくる
+    execute at @s as @e[type=item_display,tag=AK.ModelRoot,tag=AK.Model.Target] run tp @s ~ ~ ~ ~ ~
+
 # ターゲットリセット
-    tag @e[type=item_display,tag=AK.Model.Target] remove AK.Model.Target
+    tag @e[type=item_display,tag=AK.ModelRoot,tag=AK.Model.Target] remove AK.Model.Target
