@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:artifact/0690.steam_core/give/1.trigger",
+        "asset:artifact/0770.shaking_splash_empty/give/1.trigger",
+        "asset:artifact/0769.shaking_splash/give/1.trigger",
         "asset:artifact/0759.sina_tk_empty/give/1.trigger",
         "asset:artifact/0758.sina_tk/give/1.trigger",
         "asset:artifact/0641.spirit_garment/give/1.trigger",
