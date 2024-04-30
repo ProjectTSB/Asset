@@ -23,3 +23,6 @@
 
 # スケジュールループ
     schedule function asset:artifact/1078.pigeon_blood/trigger/resonance_attack/3.loop 1t replace
+
+# Ownerを削除
+    tag @p[tag=Owner] remove Owner

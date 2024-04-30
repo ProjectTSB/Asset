@@ -29,5 +29,4 @@
 # リセット
     tag @s remove TY.This
     tag @s remove Landing
-    tag @p[tag=Owner] remove Owner
     tag @e[tag=Target,distance=..20,limit=1] remove Target
