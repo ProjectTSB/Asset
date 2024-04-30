@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:artifact/1068.dream_of_burning_butterfly/register",
+        "asset:artifact/0690.steam_core/register",
+        "asset:artifact/0769.shaking_splash/register",
+        "asset:artifact/0758.sina_tk/register",
         "asset:artifact/0641.spirit_garment/register",
         "asset:artifact/0640.spirit_garment/register",
         "asset:artifact/0639.spirit_garment/register",
@@ -47,8 +50,10 @@
         "asset:artifact/0976.brave_sword/register",
         "asset:artifact/0959.whirlwind_scabbard/register",
         "asset:artifact/0233.reversal/register",
+        "asset:artifact/0775.jade_armor/register",
         "asset:artifact/0776.jade_armor/register",
         "asset:artifact/0777.jade_armor/register",
+        "asset:artifact/0778.jade_armor/register",
         "asset:artifact/0973.call_rod_spirit/register",
         "asset:artifact/0967.enhanced_protection/register",
         "asset:artifact/0953.meteor_rain/register",

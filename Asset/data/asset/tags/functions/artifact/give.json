@@ -1,6 +1,11 @@
 {
     "values": [
         "asset:artifact/1068.dream_of_burning_butterfly/give/1.trigger",
+        "asset:artifact/0690.steam_core/give/1.trigger",
+        "asset:artifact/0770.shaking_splash_empty/give/1.trigger",
+        "asset:artifact/0769.shaking_splash/give/1.trigger",
+        "asset:artifact/0759.sina_tk_empty/give/1.trigger",
+        "asset:artifact/0758.sina_tk/give/1.trigger",
         "asset:artifact/0641.spirit_garment/give/1.trigger",
         "asset:artifact/0640.spirit_garment/give/1.trigger",
         "asset:artifact/0639.spirit_garment/give/1.trigger",
@@ -110,8 +115,10 @@
         "asset:artifact/0005.musket_matchlock/give/1.trigger",
         "asset:artifact/0933.auto_torch/give/1.trigger",
         "asset:artifact/0928.ankh/give/1.trigger",
+        "asset:artifact/0775.jade_armor/give/1.trigger",
         "asset:artifact/0776.jade_armor/give/1.trigger",
         "asset:artifact/0777.jade_armor/give/1.trigger",
+        "asset:artifact/0778.jade_armor/give/1.trigger",
         "asset:artifact/0905.book_of_metastasis/give/1.trigger",
         "asset:artifact/0007.nitrogen_fixater/give/1.trigger",
         "asset:artifact/0756.sakura_hubuki/give/1.trigger",
