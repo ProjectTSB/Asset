@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"百分一剣","color":"blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"生ける者全てを平等に斬ることが出来る剣","color":"blue"}','{"text":"攻撃時、対象に","color":"blue"}','{"text":"最大体力の40%の割合ダメージを与える","color":"blue","bold":true}','{"text":"天使には1%分のダメージを与える","color":"blue"}']
+    data modify storage asset:artifact Lore set value ['{"text":"生ける者全てを平等に斬ることが出来る剣。","color":"blue"}','{"text":"攻撃時、対象に、","color":"blue"}','{"text":"最大体力の40%の割合ダメージを与える。","color":"blue","bold":true}','{"text":"天使には1%分のダメージを与える。","color":"blue"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["§9相手の最大体力の40%"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["§9???"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

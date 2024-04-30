@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"hea ","color":"white","obfuscated":true},{"text":"天国草","color":"yellow","obfuscated":false},{"text":" ven","color":"white","obfuscated":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"傷を即座に癒す効能があるが、"}','{"text":"5％の確率で昇天してしまう。"}','{"text":"＊オフハンドで効果が発動する","color":"green"}']
+    data modify storage asset:artifact Lore set value ['{"text":"傷を即座に癒す効能があるが、"}','{"text":"5%の確率で昇天してしまう。"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

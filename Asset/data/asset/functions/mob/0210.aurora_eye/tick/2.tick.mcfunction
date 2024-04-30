@@ -26,4 +26,4 @@
 
 # 遠距離攻撃
     execute unless entity @a[gamemode=!spectator,distance=..8] run scoreboard players add @s 5U.Shoot 1
-    execute if entity @s[scores={5U.Shoot=80..}] run function asset:mob/0210.aurora_eye/tick/4.summon_bullet
+    execute if entity @s[scores={5U.Shoot=80..}] run function asset:mob/0210.aurora_eye/tick/5.summon_bullet

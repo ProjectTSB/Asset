@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"たる","color":"aqua","bold":"true"}]'
+    data modify storage asset:artifact Name set value '[{"text":"たる","color":"aqua","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"周囲の敵にたるを落下させる"}]','[]','[{"text":"た〜る！","color":"dark_purple","italic":true}]']
 # MP以外の消費物 (TextComponentString) (オプション)

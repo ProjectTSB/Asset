@@ -11,10 +11,6 @@
 # 第一に攻撃対象の全effectをclear
     effect clear @s
 
-# 次にデバフ
-    effect give @s slowness 5 1 true
-    effect give @s mining_fatigue 5 1 true
-
 # ダメージ
     data modify storage lib: Argument.Damage set value 37f
     data modify storage lib: Argument.AttackType set value "Physical"
@@ -25,22 +21,10 @@
 # リセット
     function lib:damage/reset
 
-# 最後に属性攻撃力半減
-    # 引数の設定
-    # UUID
-        data modify storage api: Argument.UUID set value [I;1,2,220,0]
-    # 補正値
-        data modify storage api: Argument.Amount set value -0.5
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply"
-# 補正の追加
-    function api:modifier/attack/base/add
+# 難易度の値を取得
+    function api:global_vars/get_difficulty
 
-# タグを付与
-    tag @s[tag=!64.ElementReduct] add 64.ElementReduct
-
-# 効果時間を設定
-    scoreboard players set @s 64.DebuffTime 100
-
-# スケジュールループ開始
-    schedule function asset:mob/0220.vena_cana/attack/03.schedule_loop 1t replace
+# (難易度の値)Lvの沈潜エフェクトを付与
+    data modify storage api: Argument.ID set value 608
+    data modify storage api: Argument.Stack set from storage api: Return.Difficulty
+    function api:entity/mob/effect/give
