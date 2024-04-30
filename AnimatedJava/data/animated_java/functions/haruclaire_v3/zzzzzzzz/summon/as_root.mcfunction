@@ -23,24 +23,6 @@ execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear 
 execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.5_0_rod_icespear.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.haruclaire_v3.animation.6_0_rod_iceray aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/6_0_rod_iceray/apply_frame_as_root
 execute if score #animation aj.i = $aj.haruclaire_v3.animation.6_0_rod_iceray aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.6_0_rod_iceray.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear5 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear5/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear5 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.5_0_rod_icespear5.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.3_0_rod_icebullet2 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/3_0_rod_icebullet2/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.3_0_rod_icebullet2 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.3_0_rod_icebullet2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear4 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear4/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear4 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.5_0_rod_icespear4.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear3 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear3/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear3 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.5_0_rod_icespear3.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear2 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/5_0_rod_icespear2/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.5_0_rod_icespear2 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.5_0_rod_icespear2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.6_0_rod_iceray2 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/6_0_rod_iceray2/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.6_0_rod_iceray2 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.6_0_rod_iceray2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.2_0_rod_icewall2 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/2_0_rod_icewall2/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.2_0_rod_icewall2 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.2_0_rod_icewall2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.99_testpose aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/99_testpose/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.99_testpose aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.99_testpose.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.99_testpose2 aj.id run function animated_java:haruclaire_v3/zzzzzzzz/animations/99_testpose2/apply_frame_as_root
-execute if score #animation aj.i = $aj.haruclaire_v3.animation.99_testpose2 aj.id run scoreboard players operation @s aj.haruclaire_v3.animation.99_testpose2.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:haruclaire_v3/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

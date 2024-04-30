@@ -1,1 +1,0 @@
-function animated_java:haruclaire_v3/zzzzzzzz/animations/99_testpose/tick_animation

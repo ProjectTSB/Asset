@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:haruclaire_v3/zzzzzzzz/animations/2_0_rod_icewall2/tree/leaf_45_as_bone
-function animated_java:haruclaire_v3/zzzzzzzz/apply_variant/default/as_root

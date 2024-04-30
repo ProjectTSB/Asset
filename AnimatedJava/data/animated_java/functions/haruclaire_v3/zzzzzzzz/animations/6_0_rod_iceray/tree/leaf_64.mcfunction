@@ -1,2 +1,2 @@
 execute on passengers run function animated_java:haruclaire_v3/zzzzzzzz/animations/6_0_rod_iceray/tree/leaf_64_as_bone
-function animated_java:haruclaire_v3/zzzzzzzz/apply_variant/blink/as_root
+function animated_java:haruclaire_v3/zzzzzzzz/apply_variant/damage/as_root
