@@ -16,11 +16,11 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
 
 # 弾を召喚
-    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,IsBaby:1b,ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b,tag:{CustomModelData:20054}}],Tags:["M1.First","M1.Bee","Projectile"],active_effects:[{id:"invisibility",amplifier:1b,duration:2147483647,show_particles:0b}]}
+    summon item_display ~ ~ ~ {Tags:["M1.First","M1.Bee","Projectile"],teleport_duration:1,item:{id:"stone",Count:1b,tag:{CustomModelData:20054}}}
 # 弾を前方拡散に向ける
-    tp @e[type=zombie,tag=M1.First,distance=..1,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=SpreadMarker,limit=1]
+    tp @e[type=item_display,tag=M1.First,distance=..1,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=SpreadMarker,limit=1]
 # ユーザーID適応
-    scoreboard players operation @e[type=zombie,tag=M1.First] M1.UserID = @s UserID
+    scoreboard players operation @e[type=item_display,tag=M1.First] M1.UserID = @s UserID
 # タグを消す
     tag @e[tag=M1.First] remove M1.First
 
