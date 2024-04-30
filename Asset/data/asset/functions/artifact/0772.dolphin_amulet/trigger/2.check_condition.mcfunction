@@ -10,5 +10,8 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
+# 水中にいない場合CanUsedを削除
+    execute unless predicate lib:is_in_water/include_flowing run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0772.dolphin_amulet/trigger/3.main
