@@ -1,13 +1,14 @@
 {
     "values": [
-        "asset:effect/0213.reflecting_sky/_/tick",
-        "asset:effect/0603.domination/_/tick",
         "asset:effect/0202.sheep_blessing/_/tick",
         "asset:effect/0212.lunatic_moon/_/tick",
+        "asset:effect/0213.reflecting_sky/_/tick",
         "asset:effect/0214.quick_charge/_/tick",
         "asset:effect/0228.rubeus_resonance/_/tick",
         "asset:effect/0229.sapphirus_resonance/_/tick",
         "asset:effect/0603.domination/_/tick",
-        "asset:effect/0605.aurora_corrosion/_/tick"
+        "asset:effect/0605.aurora_corrosion/_/tick",
+        "asset:effect/0608.sinking/_/tick",
+        "asset:effect/0612.infringement/_/tick"
     ]
 }

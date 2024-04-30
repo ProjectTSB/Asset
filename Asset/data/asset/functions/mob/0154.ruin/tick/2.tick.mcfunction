@@ -11,7 +11,7 @@
     execute if entity @s[tag=4A.Madness] run scoreboard players add @s 4A.MadnessTime 1
 
 # 一定のスコアに達したら1度発動
-    execute if score @s 4A.MadnessTime matches 170 run function asset:mob/0154.ruin/tick/3.ready
+    execute if entity @s[scores={4A.MadnessTime=170}] run function asset:mob/0154.ruin/tick/3.ready
 
 # その後発動し続けるやつ
-    execute if score @s 4A.MadnessTime matches 170.. run function asset:mob/0154.ruin/tick/4.madness
+    execute if entity @s[scores={4A.MadnessTime=170..}] run function asset:mob/0154.ruin/tick/4.madness
