@@ -24,8 +24,8 @@
     data modify entity @s[scores={56.HurtTime=..0}] NoAI set value 1b
 
 # 演出
-    execute if entity @s[scores={56.MoveTime=180}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
-    execute if entity @s[scores={56.MoveTime=180..}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
+    execute if entity @s[scores={56.MoveTime=190}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
+    execute if entity @s[scores={56.MoveTime=190..}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
 
 # クールタイムを減らす 0以下にはならない
     scoreboard players remove @s[scores={56.AttackCT=1..}] 56.AttackCT 1
