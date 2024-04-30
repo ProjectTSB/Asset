@@ -13,5 +13,6 @@
     playsound minecraft:block.bell.resonate player @a ~ ~ ~ 1 1
     particle minecraft:enchant ~ ~2 ~ 0 0 0 1 100
 
-# ランダムな3名のプレイヤーにバフを付与
-    execute as @a[distance=..20,sort=random,limit=3] at @s run function asset:artifact/1083.tablet_of_oracle/trigger/4.buff
+# 自身と周囲のランダムな2名のプレイヤーにバフを付与
+    function asset:artifact/1083.tablet_of_oracle/trigger/4.buff
+    execute as @a[tag=!this,distance=..20,sort=random,limit=2] at @s run function asset:artifact/1083.tablet_of_oracle/trigger/4.buff
