@@ -19,3 +19,6 @@
 
 # ループ
     schedule function asset:artifact/1079.allochromatic/trigger/resonance_attack/3.loop 1t replace
+
+# OwnerTagを削除
+    tag @p[tag=Owner] remove Owner
