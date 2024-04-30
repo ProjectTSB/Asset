@@ -14,3 +14,7 @@
     particle happy_villager ~ ~1.2 ~ 0.5 0.4 0.5 0 10 normal @a
     playsound ogg:random.levelup player @a ~ ~ ~ 0.4 1.7
     playsound ogg:random.levelup player @a ~ ~ ~ 0.4 1.8
+
+# 芽吹きバフ(ID 257)を得る
+    data modify storage api: Argument.ID set value 257
+    function api:entity/mob/effect/give
