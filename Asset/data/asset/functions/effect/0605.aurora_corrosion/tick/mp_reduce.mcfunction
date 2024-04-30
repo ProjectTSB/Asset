@@ -23,7 +23,7 @@
     execute store result score $Stack Temporary run data get storage asset:context Stack
 
 # 計算して0.01倍して代入する
-    execute store result storage api: Argument.Fluctuation int -0.01 run scoreboard players operation $MPReduce Temporary *= $Stack Temporary
+    execute store result storage api: Argument.Fluctuation float -0.01 run scoreboard players operation $MPReduce Temporary *= $Stack Temporary
 
 # MP減らす
     function api:mp/fluctuation
