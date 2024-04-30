@@ -8,10 +8,6 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-
-# 弾を飛ばす
-
-
 # 演出
     playsound entity.blaze.shoot player @a ~ ~ ~ 1 1
     playsound ogg:entity.squid.squirt2 player @a ~ ~ ~ 1 2
