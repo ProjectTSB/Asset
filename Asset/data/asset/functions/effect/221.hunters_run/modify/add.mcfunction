@@ -14,13 +14,13 @@
 # 移動速度上げる
     execute if score $Stack Temporary matches 1 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 0.50 add
     execute if score $Stack Temporary matches 2 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 0.75 add
-    execute if score $Stack Temporary matches 3 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 0.95 add
-    execute if score $Stack Temporary matches 4 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.15 add
-    execute if score $Stack Temporary matches 5 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.35 add
-    execute if score $Stack Temporary matches 6 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.55 add
-    execute if score $Stack Temporary matches 7 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.75 add
-    execute if score $Stack Temporary matches 8 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.95 add
-    execute if score $Stack Temporary matches 9 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 2.15 add
+    execute if score $Stack Temporary matches 3 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1 add
+    execute if score $Stack Temporary matches 4 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.25 add
+    execute if score $Stack Temporary matches 5 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.5 add
+    execute if score $Stack Temporary matches 6 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 1.75 add
+    execute if score $Stack Temporary matches 7 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 2 add
+    execute if score $Stack Temporary matches 8 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 2.25 add
+    execute if score $Stack Temporary matches 9 run attribute @s minecraft:generic.movement_speed modifier add 00000001-0000-0003-0000-00dd00000000 "221" 2.5 add
 
 
 # リセット
