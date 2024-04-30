@@ -7,5 +7,6 @@
 # Animated Javaモデル召喚
     function animated_java:haruclaire_v3/summon
 
-# モデルにidleアニメーションを再生させる
-    execute as @e[tag=AK.ModelRoot] run function animated_java:haruclaire_v3/animations/1_0_rod_idle/play
+# TODO：以下の処理はいずれ登場アニメーションに置換
+# デバッグ：待機開始
+    tag @s add AK.Skill.Rod.Idle

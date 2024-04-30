@@ -6,4 +6,9 @@
 
 #> 定義類はここに
 # @within function asset:mob/0380.haruclaire_v3/**
-    scoreboard objectives add AK.XXXX dummy
+
+# タイマー
+    # 全般的な処理に使用するタイマー
+        scoreboard objectives add AK.GlobalTimer dummy
+    # アニメーションの制御に使用するタイマー
+        scoreboard objectives add AK.AnimationTimer dummy
