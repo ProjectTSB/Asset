@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"急速充電バッテリー","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、MPを最大値の50%分回復し、","color":"white"}','{"text":"10秒間雷攻撃とMP回復量が15%上昇する。","color":"white"}','{"text":"我が社の誇るこのバッテリーなら、","color":"gray"}','{"text":"充電切れ間近でもすぐに回復して差し上げます！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、MPを最大値の50%分回復し、","color":"white"}','{"text":"雷攻撃+15%とMP回復量+15%を10秒間得る。","color":"white"}','{"text":"我が社の誇るこのバッテリーなら、","color":"gray"}','{"text":"充電切れ間近でもすぐに回復して差し上げます！","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
