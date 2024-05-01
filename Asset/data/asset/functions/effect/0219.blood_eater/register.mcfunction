@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"血を喰らう恐怖","color":"dark_red"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"攻撃力が上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"攻撃力が上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (int) (default = API || 1)
