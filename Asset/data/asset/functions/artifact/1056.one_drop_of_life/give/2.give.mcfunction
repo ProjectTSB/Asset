@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"生","color":"#9dcfff"},{"text":"命","color":"#9dbbff"},{"text":"の","color":"#9da6ff"},{"text":"一","color":"#bab2ff"},{"text":"雫","color":"#d8beff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を最大体力の80%分回復する。","color":"white"}','{"text":"生命を形作り、その源となった不思議な水。","color":"gray"}','{"text":"どんな液体にも希釈されない性質を持つ。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を最大値の80%分回復する。","color":"white"}','{"text":"生命を形作り、その源となった不思議な水。","color":"gray"}','{"text":"どんな液体にも希釈されない性質を持つ。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -25,7 +25,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onDamage"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"現在体力が25%以下","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"現在体力が最大値の25%以下","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
