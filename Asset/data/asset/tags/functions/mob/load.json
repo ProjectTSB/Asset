@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:mob/0332.aurora_missile/load",
+        "asset:mob/0331.aurora_sorcerer/load",
+        "asset:mob/0330.aurora_reaper/0.load",
         "asset:mob/0176.killer_bee/0.load",
         "asset:mob/0186.ferocious_bee/0.load",
         "asset:mob/0266.small_dark_ball/0.load",
@@ -36,7 +39,6 @@
         "asset:mob/0258.enemy_teleporter/0.load",
         "asset:mob/0257.distortion_spellbook/0.load",
         "asset:mob/0245.fire_creeper/0.load",
-        "asset:mob/0220.vena_cana/0.load",
         "asset:mob/0214.water_magic/0.load",
         "asset:mob/1008.yellow_star/0.load",
         "asset:mob/1005.blue_star/0.load",
