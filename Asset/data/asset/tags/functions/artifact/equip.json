@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0718.world_tree_root/trigger/1.trigger",
+        "asset:artifact/0717.world_tree_stem/trigger/1.trigger",
+        "asset:artifact/0716.world_tree_branch/trigger/1.trigger",
+        "asset:artifact/0715.world_tree_crown/trigger/1.trigger",
         "asset:artifact/0690.steam_core/trigger/1.trigger",
         "asset:artifact/0641.spirit_garment/trigger/1.trigger",
         "asset:artifact/0640.spirit_garment/trigger/1.trigger",
