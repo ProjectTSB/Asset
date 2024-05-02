@@ -6,4 +6,7 @@
 
 # 演出
     particle minecraft:cloud ~ ~1.3 ~ 0 0 0 0.3 100
-    playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1 2
+    particle dragon_breath ~ ~1.3 ~ 0 0 0 0.3 150
+    playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 0.7 2
+    playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 0.7 1.75
+    playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 0.7 1.5
