@@ -1,10 +1,21 @@
 {
     "values": [
-        "asset:effect/0257.sprout/_/remove",
-        "asset:effect/0608.sinking/_/remove",
-        "asset:effect/0213.reflecting_sky/_/remove",
         "asset:effect/0212.lunatic_moon/_/remove",
+        "asset:effect/0213.reflecting_sky/_/remove",
         "asset:effect/0214.quick_charge/_/remove",
-        "asset:effect/0605.aurora_corrosion/_/remove"
+        "asset:effect/0219.blood_eater/_/remove",
+        "asset:effect/0220.dream_of_burning_butterfly/_/remove",
+        "asset:effect/0221.hunters_run/_/remove",
+        "asset:effect/0230.farothdal/_/remove",
+        "asset:effect/0231.wandering_dream/_/remove",
+        "asset:effect/0248.oracle_physical_attack/_/remove",
+        "asset:effect/0249.oracle_physical_defense/_/remove",
+        "asset:effect/0250.oracle_magic_attack/_/remove",
+        "asset:effect/0251.oracle_magic_defense/_/remove",
+        "asset:effect/0253.purifying_indigo/_/remove",
+        "asset:effect/0257.sprout/_/remove",
+        "asset:effect/0605.aurora_corrosion/_/remove",
+        "asset:effect/0608.sinking/_/remove",
+        "asset:effect/0612.infringement/_/remove"
     ]
 }
