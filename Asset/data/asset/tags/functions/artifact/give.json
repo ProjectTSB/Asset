@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:artifact/1083.tablet_of_oracle/give/1.trigger",
+        "asset:artifact/1056.one_drop_of_life/give/1.trigger",
+        "asset:artifact/0963.hunters_amulet/give/1.trigger",
         "asset:artifact/1070.blood_eater/give/1.trigger",
         "asset:artifact/1081.wandering_piece_of_dream/give/1.trigger",
         "asset:artifact/1080.allochromatic_empty/give/1.trigger",
