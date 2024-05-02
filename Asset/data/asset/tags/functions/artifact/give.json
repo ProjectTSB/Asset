@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:artifact/1082.cursed_straw_doll/give/1.trigger",
+        "asset:artifact/1089.antimatter_gatling_rifle/give/1.trigger",
+        "asset:artifact/1074.farothdal/give/1.trigger",
+        "asset:artifact/1083.tablet_of_oracle/give/1.trigger",
         "asset:artifact/1056.one_drop_of_life/give/1.trigger",
         "asset:artifact/0963.hunters_amulet/give/1.trigger",
         "asset:artifact/1070.blood_eater/give/1.trigger",
