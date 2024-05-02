@@ -1,5 +1,16 @@
 {
     "values": [
+        "asset:artifact/1088.purifying_hydrangea/give/1.trigger",
+        "asset:artifact/1082.cursed_straw_doll/give/1.trigger",
+        "asset:artifact/1089.antimatter_gatling_rifle/give/1.trigger",
+        "asset:artifact/1074.farothdal/give/1.trigger",
+        "asset:artifact/1083.tablet_of_oracle/give/1.trigger",
+        "asset:artifact/1056.one_drop_of_life/give/1.trigger",
+        "asset:artifact/0963.hunters_amulet/give/1.trigger",
+        "asset:artifact/1070.blood_eater/give/1.trigger",
+        "asset:artifact/1081.wandering_piece_of_dream/give/1.trigger",
+        "asset:artifact/1080.allochromatic_empty/give/1.trigger",
+        "asset:artifact/1079.allochromatic/give/1.trigger",
         "asset:artifact/1078.pigeon_blood/give/1.trigger",
         "asset:artifact/1075.fairy_vial/give/1.trigger",
         "asset:artifact/1051.blue_crystal_of_stardust/give/1.trigger",
