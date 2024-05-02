@@ -28,4 +28,4 @@
     function api:entity/mob/effect/give
 
 # リセット
-    data remove storage asset:temp U3.temp
+    data remove storage asset:temp U3.Array
