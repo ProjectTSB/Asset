@@ -6,3 +6,5 @@
     #declare score_holder $MaxHealth
     #declare score_holder $CurrentHealth
     #declare score_holder $LostHealth
+    #declare score_holder $DamageValue
+    #declare score_holder $1666

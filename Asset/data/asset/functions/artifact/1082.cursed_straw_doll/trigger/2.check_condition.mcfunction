@@ -19,7 +19,7 @@
     scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
 # 66.6%以下でないならCanUsedを削除
-    execute unless score $CurrentHealth Temporary matches 667.. run say test
+    execute if score $CurrentHealth Temporary matches 667.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1082.cursed_straw_doll/trigger/3.main

@@ -2,14 +2,13 @@
 #
 # 演出処理
 #
-# @within function asset:artifact/1082.cursed_straw_doll/trigger/3.main
+# @within function
+#   asset:artifact/1082.cursed_straw_doll/trigger/3.main
+#   asset:artifact/1082.cursed_straw_doll/trigger/4.damage_up
 
 # 釘の演出
-    execute anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes rotated ~ -55 positioned ^ ^ ^-1.9 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/line
-    execute anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes rotated ~ -55 positioned ^ ^ ^0.6 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/circle
+    execute positioned ^ ^ ^-1.9 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/line
+    execute positioned ^ ^ ^0.6 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/circle
 
 # playsound
-    playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 0.4 0.7
-    playsound minecraft:ui.stonecutter.take_result player @a ~ ~ ~ 1 1.1
-    playsound minecraft:ui.stonecutter.take_result player @a ~ ~ ~ 1 0.9
-    playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.75
+    #execute at @s run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/sound

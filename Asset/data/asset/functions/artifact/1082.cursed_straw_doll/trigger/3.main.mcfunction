@@ -9,14 +9,8 @@
 
 # ここから先は神器側の効果の処理を書く
 
-#> Private
-# @private
-    #declare score_holder $MaxHealth
-    #declare score_holder $CurrentHealth
-    #declare score_holder $DamageValue
-
 # 演出
-    execute as @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] at @s run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/
+    execute as @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes rotated ~ -55 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/
 
 # 最大体力の13倍、現在体力の13倍を取得
     execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 13
@@ -34,15 +28,11 @@
 # 現在体力割合を求める
     scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
 
-# 44%以下ならダメージを1.3倍にする
-    execute if score $CurrentHealth Temporary matches ..44 run scoreboard players operation $DamageValue Temporary *= $13 Const
-    execute if score $CurrentHealth Temporary matches ..44 run scoreboard players operation $DamageValue Temporary /= $10 Const
+# 44%以下ならダメージ量+66.6%
+    execute if score $CurrentHealth Temporary matches ..44 run function asset:artifact/1082.cursed_straw_doll/trigger/4.damage_up
 
-# 44%以下なら追加演出
-    execute if score $CurrentHealth Temporary matches ..44 at @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] run particle witch ~ ~1.2 ~ 0.3 0.4 0.3 0 20 normal @a
-
-# ダメージ上限(666)
-    execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 666
+# ダメージ上限(4444)
+    execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 4444
 
 # ダメージへ代入
     execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageValue Temporary

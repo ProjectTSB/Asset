@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"呪いの藁人形","color":"#8826B3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。(最大4444)"}','{"text":"自身の体力が最大値の44%以下の場合"}','{"text":"与えるダメージ量が1.3倍になる。"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。"}','{"text":"自身の体力が最大値の44%以下の場合"}','{"text":"与えるダメージが66.6%増加する。(最大4444)"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -39,11 +39,11 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 44
+    data modify storage asset:artifact MPCost set value 17
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 260
+    data modify storage asset:artifact LocalCooldown set value 198
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
