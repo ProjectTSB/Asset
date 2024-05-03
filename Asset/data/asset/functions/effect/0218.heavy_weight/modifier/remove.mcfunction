@@ -1,4 +1,4 @@
-#> asset:effect/0218.heavy_weight/remove_modifier
+#> asset:effect/0218.heavy_weight/modifier/remove
 # @within function asset:effect/0218.heavy_weight/*/*
 
 # 補正を削除

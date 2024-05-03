@@ -5,7 +5,7 @@
 # @within function asset:effect/0218.heavy_weight/_/re-given
 
 # 補正を削除
-    function asset:effect/0218.heavy_weight/remove_modifier
+    function asset:effect/0218.heavy_weight/modifier/remove
 
 # 補正を付与
-    function asset:effect/0218.heavy_weight/add_modifier
+    function asset:effect/0218.heavy_weight/modifier/add

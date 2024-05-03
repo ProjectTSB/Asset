@@ -1,5 +1,8 @@
-#> asset:effect/0218.heavy_weight/add_modifier.m
-# @within function asset:effect/0218.heavy_weight/add_modifier
+#> asset:effect/0218.heavy_weight/modifier/add.m
+# @input args
+#   KBVal : float
+#   MoveVal : float
+# @within function asset:effect/0218.heavy_weight/modifier/add
 
 # ノックバック耐性 +1*N
     $attribute @s generic.knockback_resistance modifier add 1-0-3-0-da00000000 "62.HeavyWeight" $(KBVal) add

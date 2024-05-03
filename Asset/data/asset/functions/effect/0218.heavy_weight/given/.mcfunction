@@ -5,4 +5,4 @@
 # @within function asset:effect/0218.heavy_weight/_/given
 
 # 補正を付与
-    function asset:effect/0218.heavy_weight/add_modifier
+    function asset:effect/0218.heavy_weight/modifier/add

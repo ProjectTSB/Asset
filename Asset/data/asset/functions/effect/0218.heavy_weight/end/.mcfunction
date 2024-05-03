@@ -5,4 +5,4 @@
 # @within function asset:effect/0218.heavy_weight/_/end
 
 # 補正を削除
-    function asset:effect/0218.heavy_weight/remove_modifier
+    function asset:effect/0218.heavy_weight/modifier/remove
