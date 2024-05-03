@@ -9,7 +9,7 @@
     playsound entity.dolphin.swim hostile @a ~ ~ ~ 2 1 0
     playsound entity.generic.explode hostile @a ~ ~ ~ 1.3 1 0
     particle dust 1 0.141 0.141 3 ~ ~1.6 ~ 2 2 2 0 30 normal @a
-    particle explosion ~ ~1.6 ~ 1 1 1 0 20 normal @a
+    particle explosion ~ ~1.6 ~ 1 1 1 0 5 normal @a
 
 # スイカスライスを召喚
     summon item ~ ~ ~ {Age:5900s,PickupDelay:5s,Item:{id:"minecraft:melon_slice",Count:5b}}
