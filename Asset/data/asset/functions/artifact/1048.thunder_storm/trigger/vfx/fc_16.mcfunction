@@ -1,3 +1,6 @@
+#> asset:artifact/1048.thunder_storm/trigger/vfx/fc_16
+# @within function asset:artifact/1048.thunder_storm/trigger/vfx/m
+
 # frame 16 / 20
 # 円
 particle end_rod ^3.103 ^0.0 ^-3.987 ^-807718336.0 ^0.0 ^-589568448.0 0.00000000050 0 normal @a[distance=..32]
