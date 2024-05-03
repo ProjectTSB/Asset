@@ -14,4 +14,4 @@
     execute positioned ~ ~6 ~ run scoreboard players operation @e[type=marker,tag=P8.RainCloud,distance=..0.01] P8.UserID = @s UserID
 
 # スケジュールループスタート
-    schedule function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/01.schedule_loop 1t replace
+    schedule function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/1.loop 1t replace
