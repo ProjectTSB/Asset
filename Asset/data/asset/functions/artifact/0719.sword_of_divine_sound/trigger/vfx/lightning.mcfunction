@@ -25,4 +25,4 @@
     scoreboard players add $RecursiveLimit Temporary 1
 
 # 向きを変える
-    execute if score $RecursiveLimit Temporary matches ..6 positioned ^ ^ ^1.95 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/random_rotation
+    execute if score $RecursiveLimit Temporary matches ..6 positioned ^ ^ ^1.95 rotated ~ -90 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/random_rotation
