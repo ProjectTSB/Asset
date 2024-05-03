@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"神鳴りの御剣","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"とある英雄が振るっていた、白き雷を纏う大太刀。","color":"gray"}','{"text":"振るえば悪しき者に裁きの雷を下す。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"とある神より授けられた、白き雷を纏う大太刀。","color":"gray"}','{"text":"振るえば悪しき者に裁きの雷を下す。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
