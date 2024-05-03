@@ -5,4 +5,4 @@
 # @within function asset:effect/0107.defense_physical_debuff/_/remove
 
 # 補正をリセット
-    function asset:effect/0107.defense_physical_debuff/remove_modifier
+    function asset:effect/0107.defense_physical_debuff/modifier/remove
