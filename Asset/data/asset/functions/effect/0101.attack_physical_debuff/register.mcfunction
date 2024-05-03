@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"物理攻撃力低下"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"敵に与える物理ダメージが5%減少する"}'
+    data modify storage asset:effect Description set value ['{"text":"敵に与える物理ダメージが減少する"}']
 # 残り時間 (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (default = API || 1)

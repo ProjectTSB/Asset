@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"水属性耐性低下"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"敵から受ける水属性ダメージが5%減少する"}'
+    data modify storage asset:effect Description set value ['{"text":"敵から受ける水属性ダメージが減少する"}']
 # 残り時間 (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (default = API || 1)

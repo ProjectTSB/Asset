@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"回復量上昇"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"自分と味方に与える回復量が5%増加する"}'
+    data modify storage asset:effect Description set value ['{"text":"自分と味方に与える回復量が増加する"}']
 # 残り時間 (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (default = API || 1)
