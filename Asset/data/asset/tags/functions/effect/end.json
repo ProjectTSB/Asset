@@ -14,6 +14,7 @@
         "asset:effect/0012.defense_thunder_buff/_/end",
         "asset:effect/0013.heal_buff/_/end",
         "asset:effect/0014.receive_heal_buff/_/end",
+        "asset:effect/0015.max_health_buff/_/end",
         "asset:effect/0101.attack_base_debuff/_/end",
         "asset:effect/0102.attack_physical_debuff/_/end",
         "asset:effect/0103.attack_magic_debuff/_/end",
