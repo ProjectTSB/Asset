@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0336.cherry_blossom_fairy/attack/1.trigger
 
-#> tag
-# @private
-    #declare tag 9D.Cherry
-
 # 演出
    execute at @p[tag=Victim,distance=..60] run particle cherry_leaves ~ ~1 ~ 0.5 1 0.5 0 20 normal @p
    execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @s ~ ~ ~ 2 2 0
@@ -25,9 +21,9 @@
 # 確率で桜吹雪を生み出す
 # ハードなら確定
     data modify storage api: Argument.ID set value 337
-    execute at @p[tag=Victim,distance=..60] unless entity @e[type=marker,tag=9D.Cherry,distance=..6] if predicate api:global_vars/difficulty/max/normal if predicate lib:random_pass_per/50 run function api:mob/summon
-    execute at @p[tag=Victim,distance=..60] unless entity @e[type=marker,tag=9D.Cherry,distance=..6] if predicate api:global_vars/difficulty/min/hard run function api:mob/summon
+    execute at @p[tag=Victim,distance=..60] unless entity @e[type=marker,scores={MobID=337},distance=..6] if predicate api:global_vars/difficulty/max/normal if predicate lib:random_pass_per/50 run function api:mob/summon
+    execute at @p[tag=Victim,distance=..60] unless entity @e[type=marker,scores={MobID=337},distance=..6] if predicate api:global_vars/difficulty/min/hard run function api:mob/summon
 
 # 周りにワープさせてから近づかせる
     data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
-    execute as @e[type=marker,tag=9D.Cherry,distance=..60,limit=1] at @s run function lib:spread_entity/
+    execute as @e[type=marker,scores={MobID=337},distance=..60,limit=1] at @s run function lib:spread_entity/
