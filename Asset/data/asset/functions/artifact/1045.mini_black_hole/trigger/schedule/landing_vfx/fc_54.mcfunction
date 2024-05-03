@@ -1,3 +1,6 @@
+#> asset:artifact/1045.mini_black_hole/trigger/schedule/landing_vfx/fc_54
+# @within function asset:artifact/1045.mini_black_hole/trigger/schedule/landing_vfx/m
+
 # frame 54 / 80
 # 中央円
 particle dust -1 0 -1 1.5 ^0.843 ^-0.229 ^1.125 0.0 0.0 0.0 0.0 1 normal
