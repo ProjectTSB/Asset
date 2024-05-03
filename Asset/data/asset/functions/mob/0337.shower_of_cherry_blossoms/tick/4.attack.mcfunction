@@ -18,6 +18,7 @@
     execute as @e[tag=9D.This,distance=..16] run function lib:damage/modifier
 # ダメージ対象
     function lib:damage/
-
+# リセット
+    function lib:damage/reset
 # タグ外し
     tag @s remove 9D.Landing

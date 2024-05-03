@@ -35,4 +35,3 @@
 
 # リセット
     scoreboard players reset $9D.LifeTime Temporary
-    function lib:damage/reset
