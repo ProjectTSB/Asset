@@ -37,6 +37,4 @@
     data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
     execute as @e[type=marker,tag=9D.Cherry,distance=..60,limit=1] at @s run function lib:spread_entity/
 
-# リセット
-    data remove storage lib: Argument
     function lib:damage/reset
