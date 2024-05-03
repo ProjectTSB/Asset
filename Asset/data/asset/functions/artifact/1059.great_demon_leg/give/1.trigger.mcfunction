@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:artifact/give
 
-execute if data storage asset:context {id:1058} run function asset:artifact/1059.great_demon_leg/give/2.give
+execute if data storage asset:context {id:1059} run function asset:artifact/1059.great_demon_leg/give/2.give
