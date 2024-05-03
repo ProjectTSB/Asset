@@ -26,9 +26,7 @@
     execute if score $9D.LifeTime Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..1] run tag @s add 9D.Landing
     execute if score $9D.LifeTime Temporary matches 0 positioned ~ ~1.5 ~ as @a[tag=!PlayerShouldInvulnerable,distance=..2] run tag @s add 9D.Landing
     execute if score $9D.LifeTime Temporary matches 0 positioned ~ ~5 ~ as @a[tag=!PlayerShouldInvulnerable,distance=..3] run tag @s add 9D.Landing
-    tag @s add 9D.This
     execute as @a[tag=9D.Landing,distance=..16] run function asset:mob/0337.shower_of_cherry_blossoms/tick/4.attack
-    tag @s remove 9D.This
 
 # 100TickでKill
     kill @s[scores={9D.LifeTime=81..}]
