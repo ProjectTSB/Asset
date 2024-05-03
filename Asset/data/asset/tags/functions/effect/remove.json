@@ -29,6 +29,7 @@
         "asset:effect/0112.defense_thunder_debuff/_/remove",
         "asset:effect/0113.heal_debuff/_/remove",
         "asset:effect/0114.receive_heal_debuff/_/remove",
+        "asset:effect/0115.max_health_debuff/_/remove",
         "asset:effect/0212.lunatic_moon/_/remove",
         "asset:effect/0213.reflecting_sky/_/remove",
         "asset:effect/0214.quick_charge/_/remove",
