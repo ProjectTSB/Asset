@@ -1,4 +1,4 @@
-#> asset:effect/0206.spirit_state/record/
+#> asset:effect/0206.spirit_state/record
 # @within function
 #   asset:effect/0206.spirit_state/given/
 #   asset:effect/0206.spirit_state/re-given/
