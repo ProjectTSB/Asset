@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1060.great_demon_boots/give/1.trigger",
+        "asset:artifact/1059.great_demon_leg/give/1.trigger",
+        "asset:artifact/1058.great_demon_chest/give/1.trigger",
+        "asset:artifact/1057.great_demon_head/give/1.trigger",
         "asset:artifact/1045.mini_black_hole/give/1.trigger",
         "asset:artifact/1066.weight_stone/give/1.trigger",
         "asset:artifact/1053.grimoire_of_purity/give/1.trigger",
