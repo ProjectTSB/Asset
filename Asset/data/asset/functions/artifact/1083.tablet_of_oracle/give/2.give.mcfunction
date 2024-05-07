@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"神託の刻まれた石板","color":"#F0E265"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲のランダムな2名に","color":"white"}','{"text":"物理攻撃、物理耐性、魔法攻撃、魔法耐性の","color":"white"}','{"text":"各効果+8%をランダムに2つ付与する。","color":"white"}','{"text":"神の御言葉の刻まれている石板。","color":"gray"}','{"text":"神託には来たるべき未来が書かれている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲のランダムな2名に","color":"white"}','{"text":"物理攻撃、物理耐性、魔法攻撃、魔法耐性の","color":"white"}','{"text":"各効果+8%のうちランダムな2つを16秒間付与する。","color":"white"}','{"text":"神の御言葉の刻まれている石板。","color":"gray"}','{"text":"神託には来たるべき未来が書かれている。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

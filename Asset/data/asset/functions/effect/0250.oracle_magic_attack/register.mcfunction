@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"与える魔法ダメージが上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 160
+    data modify storage asset:effect Duration set value 320
 # スタック (int) (default = API || 1)
     data modify storage asset:effect Stack set value 1
 # 効果時間の操作方法 (default = API || "replace")
@@ -21,7 +21,7 @@
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
-    data modify storage asset:effect MaxDuration set value 160
+    data modify storage asset:effect MaxDuration set value 320
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
