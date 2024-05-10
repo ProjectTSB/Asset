@@ -20,7 +20,3 @@
 
 # 暗い場所かどうかを確認
     execute if predicate lib:light_level/min/7 run tag @s add ExtraCheckFailed
-
-# 設置可能かどうかを確認
-    execute unless block ~ ~ ~ #lib:air run tag @s add ExtraCheckFailed
-    execute if block ~ ~-1 ~ #lib:air run tag @s add ExtraCheckFailed
