@@ -20,3 +20,6 @@
 
 # 暗い場所かどうかを確認
     execute if predicate lib:light_level/min/7 run tag @s add ExtraCheckFailed
+
+# プレイヤーが下をむいている場合、無効化、ただし、スニークしてない時だけ
+    execute if entity @s[x_rotation=75..90] unless predicate lib:is_sneaking run tag @s add ExtraCheckFailed

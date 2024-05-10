@@ -12,7 +12,7 @@
 # 松明一個消す
     clear @s torch 1
 # 前方におけるなら置く、おけなかったら足元に置く
-    execute rotated ~ 0 positioned ^ ^ ^3 unless block ~ ~-1 ~ #lib:air if block ~ ~ ~ #lib:air run tag @s add CanSetFront
-    execute if entity @s[tag=CanSetFront] rotated ~ 0 positioned ^ ^ ^3 run setblock ~ ~ ~ torch
+    execute anchored eyes positioned ^ ^ ^4 unless block ~ ~-1 ~ #lib:air if block ~ ~ ~ #lib:air run tag @s add CanSetFront
+    execute if entity @s[tag=CanSetFront] anchored eyes positioned ^ ^ ^4 run setblock ~ ~ ~ torch
     execute if entity @s[tag=!CanSetFront] run setblock ~ ~ ~ torch
     tag @s remove CanSetFront
