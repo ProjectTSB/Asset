@@ -19,6 +19,5 @@
     execute if entity @s[tag=CanUsed,tag=ExtraCheckFailed] run tag @s remove CanUsed
     execute if entity @s[tag=ExtraCheckFailed] run tag @s remove ExtraCheckFailed
     execute if entity @s[tag=CanTorchSet] run tag @s remove CanTorchSet
-    execute anchored eyes positioned ^ ^ ^4 run particle crit ~ ~ ~ 0 0 0 0 0
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0933.auto_torch/trigger/3.main
