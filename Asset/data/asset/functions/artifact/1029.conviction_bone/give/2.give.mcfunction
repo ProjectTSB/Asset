@@ -1,25 +1,25 @@
-#> asset:artifact/0183.answer_to_the_ultimate_question_of_life_the_universe_and_everything/give/2.give
+#> asset:artifact/1029.conviction_bone/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0183.answer_to_the_ultimate_question_of_life_the_universe_and_everything/give/1.trigger
+# @within function asset:artifact/1029.conviction_bone/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 183
+    data modify storage asset:artifact ID set value 1029
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"4","color":"light_purple","obfuscated":true},{"text":"生命、宇宙、そして万物についての究極の疑問の答え","color":"dark_purple","obfuscated":false},{"text":"2","color":"light_purple","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '{"text":"罪を裁く黒骨","color":"gray"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"750万年かけて計算した生命、宇宙、そして万物についての","color":"white","italic":false}]','[{"text":"究極の疑問の答えを自身のMPに代入する","color":"white","italic":false}]']
+    data modify storage asset:artifact Lore set value ['{"text":"視界内の敵を断罪する"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 1
+    # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -39,19 +39,21 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 0
+    data modify storage asset:artifact MPCost set value 80
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 0
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
