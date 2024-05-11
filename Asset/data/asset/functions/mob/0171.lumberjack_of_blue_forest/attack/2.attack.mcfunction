@@ -10,9 +10,6 @@
     execute at @p[tag=Victim,distance=..6] run particle block warped_stem ~ ~1.2 ~ 0.5 0.3 0.5 0 30 normal @a
     execute at @p[tag=Victim,distance=..6] run playsound entity.ghast.hurt hostile @a ~ ~ ~ 0.5 0.8 0
 
-# 最大体力-30%
-    attribute @p[tag=Victim,distance=..6] generic.max_health modifier add 00000001-0000-0002-0000-00ab00000000 "4R.max_health_down" -0.3 multiply
-
 # 与えるダメージ
     data modify storage lib: Argument.Damage set value 14f
 # 属性
@@ -28,9 +25,3 @@
 # リセット
     function lib:damage/reset
 
-# スコア
-    scoreboard players set @p[tag=Victim,distance=..6] 4R.Attribute 0
-
-# attribute消しのTagとスケジュールループ
-    schedule function asset:mob/0171.lumberjack_of_blue_forest/attack/3.schedule_loop 1t replace
-    tag @p[tag=Victim,distance=..6] add 4R.HealthDown
