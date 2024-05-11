@@ -19,3 +19,11 @@
     function lib:damage/modifier
     execute as @p[tag=Victim,distance=..6] run function lib:damage/
     function lib:damage/reset
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# 難易度値をStackに代入し、デバフを付与
+    data modify storage api: Argument.ID set value 604
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..6] run function api:entity/mob/effect/give
