@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"4","color":"light_purple","obfuscated":true},{"text":"生命、宇宙、そして万物についての究極の疑問の答え","color":"purple","obfuscated":false},{"text":"2","color":"light_purple","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"4","color":"light_purple","obfuscated":true},{"text":"生命、宇宙、そして万物についての究極の疑問の答え","color":"dark_purple","obfuscated":false},{"text":"2","color":"light_purple","obfuscated":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"750万年かけて計算した生命、宇宙、そして万物についての","color":"white","italic":false}]','[{"text":"究極の疑問の答えを自身のMPに一定時間代入し続ける。","color":"white","italic":false}]']
 # MP以外の消費物 (TextComponentString) (オプション)
