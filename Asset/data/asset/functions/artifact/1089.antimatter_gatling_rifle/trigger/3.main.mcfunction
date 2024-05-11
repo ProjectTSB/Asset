@@ -14,8 +14,8 @@
     effect give @s slowness 1 2 true
 
 # 演出
-    playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.4 1
-    playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.4 2
+    playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.05 1
+    playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.05 2
     execute anchored eyes positioned ^-0.35 ^-0.15 ^0.2 run particle minecraft:white_smoke ~ ~ ~ ^-100000000 ^100000000 ^ 0.000000001 0
     execute anchored eyes positioned ^-0.35 ^-0.15 ^1 if predicate lib:random_pass_per/10 run particle minecraft:flash ~ ~ ~ 0 0 0 0 0
     execute anchored eyes positioned ^-0.35 ^-0.15 ^1 if predicate lib:random_pass_per/10 run particle minecraft:lava ~ ~ ~ 0 0 0 0 0
