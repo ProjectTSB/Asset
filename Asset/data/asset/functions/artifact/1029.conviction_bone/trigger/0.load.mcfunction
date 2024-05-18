@@ -7,5 +7,6 @@
 #> 定義類はここに
 # @within function asset:artifact/1029.conviction_bone/trigger/**
     scoreboard objectives add SL.FishTime dummy
-    scoreboard objectives add SL.FishCool dummy
+    scoreboard objectives add SL.CoolTime dummy
+    scoreboard objectives add SL.ShotTime dummy
     scoreboard objectives add SL.UserID dummy

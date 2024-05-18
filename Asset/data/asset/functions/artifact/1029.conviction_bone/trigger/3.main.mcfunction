@@ -17,7 +17,7 @@
     summon item_display ~ ~ ~ {teleport_duration:1,Tags:["SL.Fish","SL.First","Object"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,4f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20349}}}
 
 # 魚の寿命を設定する
-    scoreboard players set @e[type=item_display,tag=SL.First] SL.FishTime 600
+    scoreboard players set @e[type=item_display,tag=SL.First] SL.FishTime 60
 
 # ユーザーID適応
     scoreboard players operation @e[type=item_display,tag=SL.First] SL.UserID = @s UserID
@@ -26,4 +26,4 @@
     tag @e[type=item_display,tag=SL.First] remove SL.First
 
 # 再帰先へ飛ばす
-    execute as @e[type=item_display,tag=SL.Fish,limit=1] run function asset:artifact/1029.conviction_bone/trigger/3.1.tick
+    execute as @e[type=item_display,tag=SL.Fish,limit=1] run function asset:artifact/1029.conviction_bone/trigger/sword/schedule
