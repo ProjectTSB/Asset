@@ -4,3 +4,5 @@
 #> tag
 # @within function asset:artifact/0933.auto_torch/trigger/**
     #declare tag ExtraCheckFailed
+    #declare tag CanTorchSet
+    #declare tag CanSetFront
