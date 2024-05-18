@@ -42,5 +42,5 @@
     function api:damage/reset
 
 # リセット
-    tag @e[tag=Target] remove Target
+    tag @e[type=#lib:living,tag=Target,distance=..2.8] remove Target
     scoreboard players reset $Random Temporary
