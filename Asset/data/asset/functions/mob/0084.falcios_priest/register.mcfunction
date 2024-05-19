@@ -29,13 +29,13 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"golden_helmet",Count:1b,tag:{Unbreakable:1b,Trim:{material:"minecraft:lapis",pattern:"minecraft:rib"}}}
+        data modify storage asset:mob Armor.Head set value {id:"golden_helmet",Count:1b,tag:{Unbreakable:1b,Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 胴 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Chest set value {id:"golden_chestplate",Count:1b,tag:{Trim:{material:"minecraft:lapis",pattern:"minecraft:rib"}}}
+        data modify storage asset:mob Armor.Chest set value {id:"golden_chestplate",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 脚 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Legs set value {id:"golden_leggings",Count:1b,tag:{Trim:{material:"minecraft:lapis",pattern:"minecraft:rib"}}}
+        data modify storage asset:mob Armor.Legs set value {id:"golden_leggings",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 足 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Feet set value {id:"golden_boots",Count:1b,tag:{Trim:{material:"minecraft:lapis",pattern:"minecraft:rib"}}}
+        data modify storage asset:mob Armor.Feet set value {id:"golden_boots",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
