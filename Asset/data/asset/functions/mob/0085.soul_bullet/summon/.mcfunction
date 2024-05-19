@@ -5,4 +5,4 @@
 # @within asset:mob/0085.soul_bullet/_/summon
 
 # 元となるMobを召喚する
-    summon marker ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0085.soul_bullet"}
+    summon marker ~ ~ ~ {Tags:["MobInit"]}
