@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0085.soul_bullet/_/register",
         "asset:mob/0084.falcios_priest/_/register",
         "asset:mob/0332.aurora_missile/_/register",
         "asset:mob/0331.aurora_sorcerer/_/register",

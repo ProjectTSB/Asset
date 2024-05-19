@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0085.soul_bullet/_/tick",
         "asset:mob/0084.falcios_priest/_/tick",
         "asset:mob/0337.shower_of_cherry_blossoms/tick/1.trigger",
         "asset:mob/0332.aurora_missile/_/tick",
@@ -32,7 +33,6 @@
         "asset:mob/0287.burning_stomper/tick/1.trigger",
         "asset:mob/0228.frost_eye/tick/1.trigger",
         "asset:mob/0262.frestchika/tick/1.trigger",
-        "asset:mob/0085.soul_bullet/tick/1.trigger",
         "asset:mob/0232.honey_leader/tick/1.trigger",
         "asset:mob/0263.orange/tick/1.trigger",
         "asset:mob/0235.orange_thrower/tick/1.trigger",
