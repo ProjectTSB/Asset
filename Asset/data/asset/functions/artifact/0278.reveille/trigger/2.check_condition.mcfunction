@@ -12,5 +12,9 @@
     execute if entity @s[tag=CanUsed] if predicate lib:is_day run tellraw @s {"text":"発動条件を満たしていません。","color":"red"}
     execute if predicate lib:is_day run tag @s remove CanUsed
 
+# オーバーワールドでなければCanUsedを削除
+    execute if entity @s[tag=CanUsed] unless predicate lib:dimension/is_overworld run function lib:message/artifact/can_not_use_here
+    execute unless predicate lib:dimension/is_overworld run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0278.reveille/trigger/3.main
