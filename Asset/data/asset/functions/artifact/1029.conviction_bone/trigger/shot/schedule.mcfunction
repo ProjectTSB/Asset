@@ -5,6 +5,7 @@
 # @within function
 #    asset:artifact/1029.conviction_bone/trigger/shot/summon
 #    asset:artifact/1029.conviction_bone/trigger/shot/schedule
+#    asset:artifact/1029.conviction_bone/trigger/2.check_condition
 
 # 実行
     execute as @e[type=marker,tag=SL.Shot] at @s run function asset:artifact/1029.conviction_bone/trigger/shot/shot

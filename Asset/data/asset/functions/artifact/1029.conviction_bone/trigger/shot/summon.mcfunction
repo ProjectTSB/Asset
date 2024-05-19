@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/1029.conviction_bone/trigger/sword/sword_kill
 
+#　演出
+    particle minecraft:soul ~ ~ ~ 0 0 0 0.05 20 normal
+
 # 魚召喚
     summon marker ~ ~ ~ {Tags:["SL.Shot","SL.First","Object"]}
 # 魚の寿命を設定する
@@ -21,8 +24,6 @@
 # タグを消す
     tag @s remove SL.This
     tag @e[type=marker,tag=SL.First,distance=..10,sort=nearest] remove SL.First
-
-
 
 # 再帰先へ飛ばす
     execute as @e[type=marker,tag=SL.Shot,limit=1] run function asset:artifact/1029.conviction_bone/trigger/shot/schedule

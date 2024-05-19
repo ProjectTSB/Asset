@@ -14,7 +14,8 @@
 
 # ぱーちくる
     #particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.005 5 force
-    particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0.005 2 force
+    #particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0.005 2 force
+    particle dust 0.455 0.027 0.027 4 ~ ~ ~ 0.1 0.1 0.1 5 2 force
 
 # 寿命を減らす
     scoreboard players remove @s SL.ShotTime 1

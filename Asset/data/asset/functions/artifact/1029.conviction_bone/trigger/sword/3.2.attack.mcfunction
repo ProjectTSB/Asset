@@ -7,24 +7,21 @@
 # 自分にタグ付与
     tag @s add SL.This
 
-# 敵の元へテレポート
-    tp @s @e[tag=Enemy,sort=nearest,limit=1]
-
 #演出
-    execute at @e[tag=Enemy,sort=nearest,limit=1] run particle minecraft:block water ~ ~ ~ 0.3 0.3 0.3 10 100
-    playsound entity.squid.death neutral @a ~ ~ ~ 1 2
-
+    playsound minecraft:item.trident.return player @a ~ ~ ~ 1 2
+    playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0
+    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.6
 # ダメージを与える
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 50.0f
+        data modify storage lib: Argument.Damage set value 42.0f
     # 属性
         data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage lib: Argument.ElementType set value "None"
     # 補正function
-        execute as @a if score @s UserID = @e[type=cod,tag=SL.This,limit=1] SL.UserID run function lib:damage/modifier
+        execute as @a if score @s UserID = @e[type=item_display,tag=SL.This,distance=..10,sort=nearest,limit=1] SL.UserID run function lib:damage/modifier
     # 対象に
-        execute as @e[tag=Enemy,sort=nearest,limit=1] run function lib:damage/
+        execute as @e[type=#lib:living,tag=Enemy,distance=..6] run function lib:damage/
 
 # リセット
     function lib:damage/reset
-    tag @s remove SL.This
+    scoreboard players set @s SL.CoolTime 0
