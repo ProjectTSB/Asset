@@ -11,7 +11,7 @@
     execute if entity @s[scores={2C.Tick=1..3}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.2 run function asset:mob/0084.falcios_priest/tick/vfx/1
     execute if entity @s[scores={2C.Tick=4..6}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.3 run function asset:mob/0084.falcios_priest/tick/vfx/2
     execute if entity @s[scores={2C.Tick=7..9}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function asset:mob/0084.falcios_priest/tick/vfx/3
-    execute if entity @s[scores={2C.Tick=1..9}] run playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.1 0.5 0
+    execute if entity @s[scores={2C.Tick=1..9}] run playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.25 0.5 0
 
 # 召喚
     execute if entity @s[scores={2C.Tick=10}] run data modify storage api: Argument.ID set value 85
