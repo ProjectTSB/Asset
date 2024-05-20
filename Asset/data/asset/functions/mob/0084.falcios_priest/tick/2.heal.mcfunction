@@ -34,4 +34,4 @@
 
 # 処理のリセット
 # ハード以上では魔法発射側でリセットするためこちらではリセットしない
-    execute if entity @s[scores={2C.Tick=0..}] unless predicate api:global_vars/difficulty/min/hard run function asset:mob/0084.falcios_priest/tick/4.reset
+    execute unless predicate api:global_vars/difficulty/min/hard if entity @s[scores={2C.Tick=0..}] run function asset:mob/0084.falcios_priest/tick/4.reset
