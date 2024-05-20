@@ -7,4 +7,3 @@
 #> 定義類はここに
 # @within function asset:mob/0084.falcios_priest/**
     scoreboard objectives add 2C.Tick dummy
-    scoreboard objectives add 2C.Skill dummy

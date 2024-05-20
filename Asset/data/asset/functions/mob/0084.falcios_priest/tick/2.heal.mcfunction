@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/tick/3.heal
+#> asset:mob/0084.falcios_priest/tick/2.heal
 #
 # 周囲の敵を回復する
 #
@@ -34,4 +34,4 @@
 
 # 処理のリセット
 # ハード以上では魔法発射側でリセットするためこちらではリセットしない
-    execute if entity @s[scores={2C.Tick=0..}] unless predicate api:global_vars/difficulty/min/hard run function asset:mob/0084.falcios_priest/tick/5.reset
+    execute if entity @s[scores={2C.Tick=0..}] unless predicate api:global_vars/difficulty/min/hard run function asset:mob/0084.falcios_priest/tick/4.reset

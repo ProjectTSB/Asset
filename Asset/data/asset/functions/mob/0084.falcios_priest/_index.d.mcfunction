@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:mob/0084.falcios_priest/**
-    #declare
+    #declare tag 2C.AttackSkill

@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/tick/4.shoot
+#> asset:mob/0084.falcios_priest/tick/3.shoot
 #
 # 魔法を発射する
 #
@@ -18,4 +18,4 @@
     execute if entity @s[scores={2C.Tick=10}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function api:mob/summon
 
 # リセット
-    execute if entity @s[scores={2C.Tick=25..}] run function asset:mob/0084.falcios_priest/tick/5.reset
+    execute if entity @s[scores={2C.Tick=25..}] run function asset:mob/0084.falcios_priest/tick/4.reset
