@@ -1,8 +1,8 @@
-#> asset:mob/0085.soul_bullet/tick/2.tick
+#> asset:mob/0085.soul_bullet/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0085.soul_bullet/tick/1.trigger
+# @within function asset:mob/0085.soul_bullet/_/tick
 
 #> Private
 # @private
@@ -30,7 +30,7 @@
     scoreboard players add @s 2D.Tick 1
 
 # ヒット
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[gamemode=!spectator,dx=0] run function asset:mob/0085.soul_bullet/tick/3.hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[gamemode=!spectator,dx=0] run function asset:mob/0085.soul_bullet/tick/hit
 
 # 消滅
     execute if entity @s[scores={2D.Tick=40..}] run kill @s

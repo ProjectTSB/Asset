@@ -1,11 +1,15 @@
-#> asset:mob/0084.falcios_priest/summon/2.summon
+#> asset:mob/0084.falcios_priest/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0084.falcios_priest/summon/1.trigger
+# @within function asset:mob/0084.falcios_priest/_/register
 
-# 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0084.falcios_priest"}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 84
 # Type (string) Wikiを参照
@@ -14,6 +18,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ファルシオスの神官","color":"gold"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"carrot_on_a_stick",Count:1b,tag:{CustomModelData:192}}
@@ -23,13 +29,13 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"golden_helmet",Count:1b,tag:{Unbreakable:1b}}
+        data modify storage asset:mob Armor.Head set value {id:"golden_helmet",Count:1b,tag:{Unbreakable:1b,Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 胴 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Chest set value {id:"golden_chestplate",Count:1b}
+        data modify storage asset:mob Armor.Chest set value {id:"golden_chestplate",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 脚 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Legs set value {id:"golden_leggings",Count:1b}
+        data modify storage asset:mob Armor.Legs set value {id:"golden_leggings",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
     # 足 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Feet set value {id:"golden_boots",Count:1b}
+        data modify storage asset:mob Armor.Feet set value {id:"golden_boots",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:rib"}}}
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
@@ -58,5 +64,5 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.25
 
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+    # data modify storage asset:mob Field set value {}

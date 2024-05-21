@@ -1,4 +1,4 @@
-#> asset:mob/0085.soul_bullet/0.load
+#> asset:mob/0085.soul_bullet/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
