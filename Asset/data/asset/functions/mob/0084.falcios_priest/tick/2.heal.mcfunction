@@ -7,7 +7,6 @@
 #> Private
 # @private
     #declare tag NotTarget
-    #declare score_holder $Difficulty
 
 # 周囲のファルシオスの神官にTagを付与
     tag @e[type=wither_skeleton,scores={MobID=84},distance=..10] add NotTarget
@@ -20,17 +19,15 @@
     execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
 
 # 回復
-# 難易度値によって回復量が変動 100(N + 1)
+# 難易度値によって回復量が変動 150N
     function api:global_vars/get_difficulty
-    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
-    execute store result storage api: Argument.Heal int 100 run scoreboard players add $Difficulty Temporary 1
+    execute store result storage api: Argument.Heal int 150 run data get storage api: Return.Difficulty
     function api:heal/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run function lib:heal/
     function api:heal/reset
 
 # リセット
     tag @e[type=wither_skeleton,tag=NotTarget,scores={MobID=84},distance=..10] add NotTarget
-    scoreboard players reset $Difficulty Temporary
 
 # 処理のリセット
 # ハード以上では魔法発射側でリセットするためこちらではリセットしない
