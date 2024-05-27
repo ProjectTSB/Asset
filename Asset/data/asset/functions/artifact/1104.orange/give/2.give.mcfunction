@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"みかん","color":"#FFAA00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の5%分回復する。","color":"white"}','{"text":"みかんを投げる者の落としたみかん。","color":"gray"}','{"text":"極稀に形が残り、美味しく食べられる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の10%分回復する。","color":"white"}','{"text":"みかんを投げる者の落としたみかん。","color":"gray"}','{"text":"極稀に形が残り、美味しく食べられる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
