@@ -13,7 +13,7 @@
     particle dust 100000000 0.7 0.25 1 ~ ~1.2 ~ 0.4 0.4 0.4 0 40 normal @a
     playsound ogg:random.levelup player @a ~ ~ ~ 0.3 2
 
-# 最大体力の5%分回復する
+# 最大体力の10%分回復する
     execute store result storage api: Argument.Heal float 0.1 run attribute @s generic.max_health get 1
     function api:heal/modifier
     function api:heal/
