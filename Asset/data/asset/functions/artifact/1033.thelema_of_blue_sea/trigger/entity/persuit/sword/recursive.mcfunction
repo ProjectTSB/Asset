@@ -17,8 +17,9 @@
     tp @s ~ ~-0.2 ~
 
 # 地面に当たった場合ダメージ処理と強制終了
-    execute unless block ~ ~ ~ #lib:no_collision run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
-    execute unless block ~ ~ ~ #lib:no_collision run return 0
+# スコア一定値までは地面にヒットした判定にならない
+    execute if entity @s[scores={SP.Tick=18..}] unless block ~ ~ ~ #lib:no_collision run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/hit
+    execute if entity @s[scores={SP.Tick=18..}] unless block ~ ~ ~ #lib:no_collision run return fail
 
 # 6回まで再帰
     execute if score $Count Temporary matches ..6 at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/persuit/sword/recursive
