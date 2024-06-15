@@ -11,6 +11,5 @@
 # CanUsedなら体力割合をチェックする
     execute if entity @s[tag=CanUsed] run function asset:artifact/1047.life_steal_emblem/trigger/2.check_condition/check_health_per
 
-
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1047.life_steal_emblem/trigger/3.main
