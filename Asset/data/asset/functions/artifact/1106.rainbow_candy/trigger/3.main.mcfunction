@@ -17,19 +17,19 @@
     particle minecraft:ambient_entity_effect ~ ~1.2 ~ 0.4 0.4 0.4 1 20
     playsound ogg:random.levelup player @a ~ ~ ~ 0.3 2
 
-# HPとMPを1~10回復する。HPとMPのランダム判定は独立している
+# HPとMPを1~7回復する。HPとMPのランダム判定は独立している
 
-# HPを1~10回復する
+# HPを1~7回復する
     execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $10 Const
+    scoreboard players operation $Random Temporary %= $7 Const
     execute store result storage api: Argument.Heal int 1 run scoreboard players add $Random Temporary 1
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
 
-# MPを1~10回復する
+# MPを1~7回復する
     execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $10 Const
+    scoreboard players operation $Random Temporary %= $7 Const
     execute store result storage api: Argument.Fluctuation int 1 run scoreboard players add $Random Temporary 1
     function api:mp/fluctuation
 
