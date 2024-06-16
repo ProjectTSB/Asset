@@ -13,6 +13,10 @@
 # @private
     #declare score_holder $Random
 
+# 演出
+    particle minecraft:ambient_entity_effect ~ ~1.2 ~ 0.4 0.4 0.4 1 20
+    playsound ogg:random.levelup player @a ~ ~ ~ 0.3 2
+
 # HPとMPを1~10回復する。HPとMPのランダム判定は独立している
 
 # HPを1~10回復する
