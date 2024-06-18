@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:dried_kelp"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"虹","color":"#FF6B6B"},{"text":"色","color":"#FFB66E"},{"text":"キ","color":"#FFF56B"},{"text":"ャ","color":"#A5FF70"},{"text":"ン","color":"#70FFCF"},{"text":"デ","color":"#6E8BFF"},{"text":"ィ","color":"#C06EFF"}]'
+    data modify storage asset:artifact Name set value '[{"text":"虹","color":"#FF6B6B"},{"text":"色","color":"#FFB66E"},{"text":"キ","color":"#FFF56B"},{"text":"ャ","color":"#A5FF70"},{"text":"ン","color":"#73F6FF"},{"text":"デ","color":"#6E8BFF"},{"text":"ィ","color":"#C06EFF"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"HPとMPを1~7回復する。","color":"white"}','{"text":"7つの味があるキャンディ。","color":"gray"}','{"text":"舐める度に味が変わる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
