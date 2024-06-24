@@ -15,6 +15,3 @@
 
 # プレイヤーにタグを付与
     tag @s add X.MagicShield
-
-# 再帰先へ飛ばす
-    function asset:artifact/0033.magic_shield/trigger/3.1.loop
