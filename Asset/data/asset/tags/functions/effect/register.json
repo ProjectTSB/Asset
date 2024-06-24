@@ -24,6 +24,7 @@
         "asset:effect/0608.sinking/_/register",
         "asset:effect/0612.infringement/_/register",
         "asset:effect/0217.the_answer/_/register",
-        "asset:effect/0215.purification/_/register"
+        "asset:effect/0215.purification/_/register",
+        "asset:effect/0216.purification_backlash/_/register"
     ]
 }
