@@ -8,4 +8,4 @@
 # @within function asset:effect/0215.purification/modifier/add
 
 # 攻撃速度
-    $attribute @s generic.attack_speed modifier add 00000001-0000-0003-0000-00d700000000 "215.Purification" $(MoveVal) multiply
+    $attribute @s generic.attack_speed modifier add 00000001-0000-0003-0000-00d700000000 "215.Purification" $(EffectValue) multiply
