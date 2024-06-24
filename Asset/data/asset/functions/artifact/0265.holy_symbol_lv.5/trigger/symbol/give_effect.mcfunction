@@ -11,5 +11,5 @@
     function api:entity/mob/effect/give
 
 # 浄化の反動(ID:216)を付与
-    data modify storage api: Argument.ID set value 215
+    data modify storage api: Argument.ID set value 216
     function api:entity/mob/effect/give
