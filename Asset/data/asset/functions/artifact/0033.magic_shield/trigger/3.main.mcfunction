@@ -14,7 +14,9 @@
     particle enchanted_hit ~ ~1 ~ 0.2 0.2 0.2 1 30
 
 # プレイヤーにタグを付与
+# check_conditionや4.damage_triggerで、apiを叩くかTagでやるか迷っているのでレビューで教えてほしい
     tag @s add X.MagicShield
 
-# 再帰先へ飛ばす
-    function asset:artifact/0033.magic_shield/trigger/3.1.loop
+# プレイヤーにバフを付与
+    data modify storage api: Argument.ID set value 201
+    function api:entity/mob/effect/give
