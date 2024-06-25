@@ -10,18 +10,9 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{TSB:{ID:228}}"
+                            "tag": "{TSB:{ID:227}}"
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "entities/zombie"
                 }
             ]
         }

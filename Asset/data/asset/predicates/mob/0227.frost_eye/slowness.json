@@ -3,10 +3,7 @@
     "entity": "this",
     "predicate": {
       "effects": {
-        "minecraft:slowness": {
-          "ambient": false,
-          "visible": false
-        }
+        "minecraft:slowness": {}
       }
     }
   }
