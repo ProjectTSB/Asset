@@ -15,18 +15,18 @@
 
 # 物理攻撃
     data modify storage api: Argument.UUID set value [I;1,3,215,0]
-    execute store result storage api: Argument.Amount float 0.01 run scoreboard players get $EffectValue Temporary
+    execute store result storage api: Argument.Amount double 0.01 run scoreboard players get $EffectValue Temporary
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/physical/add
 
 # 魔法攻撃
     data modify storage api: Argument.UUID set value [I;1,3,215,0]
-    execute store result storage api: Argument.Amount float 0.01 run scoreboard players get $EffectValue Temporary
+    execute store result storage api: Argument.Amount double 0.01 run scoreboard players get $EffectValue Temporary
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/magic/add
 
 # 攻撃速度
-    execute store result storage asset:temp EffectValue float 0.01 run scoreboard players get $EffectValue Temporary
+    execute store result storage asset:temp EffectValue double 0.01 run scoreboard players get $EffectValue Temporary
     function asset:effect/0215.purification/modifier/add.m with storage asset:temp
 
 # リセット

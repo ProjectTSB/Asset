@@ -3,7 +3,7 @@
 # マクロで攻撃速度attributeを付与
 #
 # @input args
-#   EffectValue : float
+#   EffectValue : double
 #
 # @within function asset:effect/0215.purification/modifier/add
 
