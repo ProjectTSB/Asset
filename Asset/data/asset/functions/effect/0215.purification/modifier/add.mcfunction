@@ -26,9 +26,9 @@
     function api:modifier/attack/magic/add
 
 # 攻撃速度
-    execute store result storage asset:temp EffectValue double 0.01 run scoreboard players get $EffectValue Temporary
-    function asset:effect/0215.purification/modifier/add.m with storage asset:temp
+    execute store result storage asset:temp Effect.Value double 0.01 run scoreboard players get $EffectValue Temporary
+    function asset:effect/0215.purification/modifier/add.m with storage asset:temp Effect
 
 # リセット
     scoreboard players reset $EffectValue Temporary
-    data remove storage asset:temp EffectValue
+    data remove storage asset:temp Effect
