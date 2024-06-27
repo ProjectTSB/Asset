@@ -21,7 +21,7 @@
     playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.4 1.8
     playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.4 1.5
 
-# 自分デバフ数が最も多いプレイヤー2名を検索する
+# 使用者を除くデバフ数が最も多いプレイヤー2名を検索する
     execute if entity @p[tag=!ClearTarget,tag=!this,distance=..20] run function asset:artifact/1108.white_lily_of_priestess/trigger/4.find_highest_debuff_player
     execute if entity @p[tag=!ClearTarget,tag=!this,distance=..20] run function asset:artifact/1108.white_lily_of_priestess/trigger/4.find_highest_debuff_player
 
