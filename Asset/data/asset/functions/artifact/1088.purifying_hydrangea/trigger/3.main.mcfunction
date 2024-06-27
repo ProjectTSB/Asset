@@ -33,7 +33,7 @@
     tag @s add BuffTarget
 
 # 周囲の水攻撃補正が最も高いプレイヤーにTagを付与する
-    execute unless entity @p[tag=!BuffTarget,distance=..20] run function asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
+    execute if entity @p[tag=!BuffTarget,distance=..20] run function asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
 
 # バフを付与する
     execute as @a[tag=BuffTarget] at @s run function asset:artifact/1088.purifying_hydrangea/trigger/6.give_effect

@@ -14,7 +14,7 @@
 # 検索対象にTagを付与
     tag @a[tag=!BuffTarget,distance=..20] add SearchTarget
 
-# 各プレイヤーの現在体力をスコアへ代入
+# 各プレイヤーの水攻撃補正をスコアへ代入
     execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/5.get_water_attack_modifier
 
 # 全員の水攻撃補正と比較する
