@@ -9,10 +9,10 @@
     #declare tag SearchTarget
     #declare score_holder $HighestDebuffCount
 
-# 検索対象：デバフ解除対象ではなく、最もデバフ数が多いプレイヤー
+# 検索対象：使用者を除く、デバフ解除対象ではなく、最もデバフ数が多いプレイヤー
 
-# デバフ数が1以上のプレイヤーに検索対象Tagを付与
-    tag @a[tag=!ClearTarget,scores={Temporary=1..}] add SearchTarget
+# 使用者を除く、デバフ数が1以上のプレイヤーに検索対象Tagを付与
+    tag @a[tag=!ClearTarget,tag=!this,scores={Temporary=1..}] add SearchTarget
 
 # 全員のデバフ数と比較する
     execute as @a[tag=SearchTarget] run scoreboard players operation $HighestDebuffCount Temporary > @s Temporary

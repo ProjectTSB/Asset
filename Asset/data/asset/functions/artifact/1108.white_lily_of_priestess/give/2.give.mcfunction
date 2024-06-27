@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"巫女の白百合","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲の2名の解除可能なデバフを2つ解除する。","color":"white"}','{"text":"(保有するデバフが最も多いプレイヤーを優先)","color":"white"}','{"text":"純白の巫女にも喩えられる白き花。","color":"gray"}','{"text":"穢れた世界でも仄かに白い光を放つ。 ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲の2名の解除可能なデバフを2つ解除する。","color":"white"}','{"text":"(自身を除くデバフが最も多いプレイヤーを優先)","color":"white"}','{"text":"純白の巫女にも喩えられる白き花。","color":"gray"}','{"text":"穢れた世界でも仄かに白い光を放つ。 ","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

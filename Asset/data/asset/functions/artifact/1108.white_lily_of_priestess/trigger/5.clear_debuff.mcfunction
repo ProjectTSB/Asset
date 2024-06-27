@@ -9,7 +9,6 @@
     execute if entity @s[tag=!this] run playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.2 1.7
     execute if entity @s[tag=!this] run playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.2 1.5
 
-
 # TODO : APIで任意の個数消せるようになったら処理を変える
 
 # デバフを1つ解除
