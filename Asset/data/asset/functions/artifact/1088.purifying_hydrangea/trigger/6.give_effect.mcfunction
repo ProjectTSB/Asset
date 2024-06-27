@@ -1,8 +1,8 @@
-#> asset:artifact/1088.purifying_hydrangea/trigger/7.give_effect
+#> asset:artifact/1088.purifying_hydrangea/trigger/6.give_effect
 #
 # バフを付与する
 #
-# @within function asset:artifact/1088.purifying_hydrangea/trigger/4.set_effect_target
+# @within function asset:artifact/1088.purifying_hydrangea/trigger/3.main
 
 # 使用者ではないなら演出
     execute if entity @s[tag=!this] run function asset:artifact/1088.purifying_hydrangea/trigger/vfx

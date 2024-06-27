@@ -25,11 +25,21 @@
 # 自身のデバフの数をチェック
     function api:entity/mob/effect/get/size/bad
 
-# デバフの数が0ならバフを付与
-# デバフが解除されるのは1tick後のためスコアで(デバフ数-1)して判定する
-    execute store result score $DebuffCount Temporary run data get storage api: Return.EffectSize.Bad
-    scoreboard players remove $DebuffCount Temporary 1
-    execute if score $DebuffCount Temporary matches ..0 run function asset:artifact/1088.purifying_hydrangea/trigger/4.set_effect_target
+#> Private
+# @private
+    #declare tag BuffTarget
+
+# 自身にバフ対象のTagを付与する
+    tag @s add BuffTarget
+
+# 周囲の水攻撃補正が最も高いプレイヤーにTagを付与する
+    execute unless entity @p[tag=!BuffTarget,distance=..20] run function asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
+
+# バフを付与する
+    execute as @a[tag=BuffTarget] at @s run function asset:artifact/1088.purifying_hydrangea/trigger/6.give_effect
+
+# Tag削除
+    tag @a[tag=BuffTarget] remove BuffTarget
 
 # リセット
     scoreboard players reset $DebuffCount Temporary
