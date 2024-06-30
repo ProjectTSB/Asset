@@ -7,4 +7,4 @@
 # NoAI
     data modify entity @s NoAI set value 1b
 # プレイヤーを見る
-    execute positioned ^ ^ ^10 as @p[gamemode=!spectator,tag=!61.Stone,distance=..10] positioned ^ ^ ^-10 run tp @e[type=zombie,tag=this,distance=..0.1] ~ ~ ~ facing entity @s feet
+    execute positioned ^ ^ ^10 as @p[gamemode=!spectator,distance=..10] positioned ^ ^ ^-10 run tp @e[type=zombie,tag=this,distance=..0.1] ~ ~ ~ facing entity @s feet

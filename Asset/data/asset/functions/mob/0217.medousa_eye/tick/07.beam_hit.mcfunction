@@ -4,18 +4,9 @@
 #
 # @within function asset:mob/0217.medousa_eye/tick/05.beam_shoot
 
-# 石tag付与
-    tag @s add 61.Stone
-
-# 石化時間スコア
-    scoreboard players set @s 61.StoneTime 100
-
 # 演出
     particle block stone ~ ~1.2 ~ 0.3 0.4 0.3 0 100 normal @a
     playsound entity.mooshroom.convert hostile @a ~ ~ ~ 0.5 0 0
-
-# attribute
-    attribute @s generic.knockback_resistance modifier add 00000001-0000-0002-0000-00d900000000 "217.KnockbackResist" 30 add
 
 # ダメージ ハード以下:16 ハード以上:20
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 16f
@@ -37,9 +28,6 @@
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set $Fluctuation Lib -30
     execute if predicate api:global_vars/difficulty/hard run scoreboard players set $Fluctuation Lib -60
     execute if predicate api:global_vars/difficulty/min/normal run function lib:mp/fluctuation
-
-# スケジュールループスタート
-    schedule function asset:mob/0217.medousa_eye/player_process/01.schedule_loop 1t replace
 
 # ヒットTag削除
     tag @s remove LandingTarget
