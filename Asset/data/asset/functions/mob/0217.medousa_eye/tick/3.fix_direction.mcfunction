@@ -1,4 +1,4 @@
-#> asset:mob/0217.medousa_eye/tick/03.fix_direction
+#> asset:mob/0217.medousa_eye/tick/3.fix_direction
 #
 # ビームの向きを決定します
 #
