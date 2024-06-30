@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0364.white_magic/_/tick",
+        "asset:mob/0363.white_spellbook/_/tick",
         "asset:mob/0337.shower_of_cherry_blossoms/tick/1.trigger",
         "asset:mob/0332.aurora_missile/_/tick",
         "asset:mob/0331.aurora_sorcerer/_/tick",
