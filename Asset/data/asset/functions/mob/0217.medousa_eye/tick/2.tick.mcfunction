@@ -17,8 +17,5 @@
 # スコアが61のとき、予備動作
     execute if entity @s[scores={61.Tick=61}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
 
-# 60以上の場合スコア増加
-    execute if entity @s[scores={61.Tick=60..}] run scoreboard players add @s 61.Tick 1
-
 # スコアが70以上で石化ビーム発射
     execute if entity @s[scores={61.Tick=70..}] run function asset:mob/0217.medousa_eye/tick/5.beam_shoot

@@ -9,4 +9,4 @@
     function api:entity/mob/effect/get/from_id
 
 # 既にTagが付与されているプレイヤーがいない、かつデバフを持っていないプレイヤーにTagを付与
-    execute unless entity @p[tag=Target] unless data storage api: Return.Effect run tag @p[tag=this] add Target
+    execute unless entity @p[tag=Target] unless data storage api: Return.Effect run tag @s add Target

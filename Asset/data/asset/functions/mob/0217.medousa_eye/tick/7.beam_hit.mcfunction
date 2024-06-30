@@ -26,9 +26,9 @@
     function api:global_vars/get_difficulty
 
 # 石化(ID:606)を付与
-# Duration = (20 * 難易度値)tick
+# Duration = (40 * 難易度値)tick
     data modify storage api: Argument.ID set value 606
-    execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Duration int 40 run data get storage api: Return.Difficulty
     function api:entity/mob/effect/give
 
 # MP吸収

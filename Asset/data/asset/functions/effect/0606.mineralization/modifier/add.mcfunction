@@ -9,7 +9,3 @@
 
 # ノクバ耐性+10
     attribute @s generic.knockback_resistance modifier add 00000001-0000-0003-0000-025e00000000 "606.KBResist" 10 add
-
-# ジャンプ不可
-# TODO : 1.20.5になったらattributeに変える
-    effect give @s jump_boost 1 128 true

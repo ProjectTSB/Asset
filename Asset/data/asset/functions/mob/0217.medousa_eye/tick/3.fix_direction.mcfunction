@@ -10,7 +10,7 @@
 # NoAI
     execute if entity @p[tag=Target] run data modify entity @s NoAI set value 1b
 # プレイヤーを見る
-    execute if entity @p[tag=Target] facing entity @p[tag=Target] eyes run tp @s ~ ~ ~ ~ ~
+    execute if entity @p[tag=Target] anchored eyes facing entity @p[tag=Target] eyes anchored feet positioned ^ ^ ^ run tp @s ~ ~ ~ ~ ~
 
 # Targetがいない場合、リセット
     execute unless entity @p[tag=Target] run function asset:mob/0217.medousa_eye/tick/8.reset
