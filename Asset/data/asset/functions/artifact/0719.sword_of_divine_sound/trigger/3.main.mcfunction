@@ -11,20 +11,20 @@
 
 #> Private
 # @private
-    #declare score_holder $201
+    #declare score_holder $401
 
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] positioned ~ ~0.3 ~ run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/
 
-# 201を定義
-    scoreboard players set $201 Temporary 201
+# 401を定義
+    scoreboard players set $401 Temporary 401
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
 # ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $201 Temporary
+    scoreboard players operation $Random Temporary %= $401 Temporary
 # 最低値を加算
-    scoreboard players add $Random Temporary 650
+    scoreboard players add $Random Temporary 1600
 
 # 設定
     execute store result storage lib: Argument.Damage float 1.0 run scoreboard players get $Random Temporary
@@ -36,4 +36,4 @@
 # リセット
     function lib:damage/reset
     scoreboard players reset $Random Temporary
-    scoreboard players reset $201 Temporary
+    scoreboard players reset $401 Temporary
