@@ -9,6 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 幽霊状態になる
+# 霊界状態になる
     data modify storage api: Argument.ID set value 206
     function api:entity/mob/effect/give
