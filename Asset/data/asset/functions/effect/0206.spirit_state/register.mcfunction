@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '[{"text":"霊界","color":"dark_purple"},{"text":"状態","color":"yellow"}]'
 # 説明文
-    data modify storage asset:effect Description set value ['{"text":"スペクテイターモードになるが、元の位置から離れすぎると戻れなくなる"}']
+    data modify storage asset:effect Description set value ['{"text":"干渉されなくなるが、干渉できなくなる"}']
 # 残り時間 (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (default = API || 1)
