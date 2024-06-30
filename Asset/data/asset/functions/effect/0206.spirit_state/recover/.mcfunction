@@ -8,12 +8,5 @@
     execute if data storage asset:context this{PrevMode:1} run gamemode creative @s
     execute if data storage asset:context this{PrevMode:2} run gamemode adventure @s
 
-# 帰りは怖い
-    function asset:effect/0206.spirit_state/recover/check
-# 帰れそうなら帰る
-    execute if score $5Q.Failed Temporary matches 0 run function asset:effect/0206.spirit_state/recover/teleport
-# 帰れなさそうなら死ぬ
-    execute if score $5Q.Failed Temporary matches 1 run function asset:effect/0206.spirit_state/recover/damage
-
-# リセット
-    scoreboard players reset $5Q.Failed Temporary
+# 帰りは怖…くなくなった
+    function asset:effect/0206.spirit_state/recover/teleport.m with storage asset:context this
