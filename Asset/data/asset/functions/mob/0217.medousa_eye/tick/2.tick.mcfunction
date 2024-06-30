@@ -7,14 +7,15 @@
 # 演出
     particle dust 0.294 0.353 0.043 1.5 ^ ^1.7 ^-0.3 0.2 0.2 0.2 0 1 normal @a
 
-# プレイヤーが前方(視界内)にいるときのみスコア増加
-    execute unless entity @s[scores={61.Tick=60..}] positioned ^ ^ ^10 if entity @p[gamemode=!spectator,distance=..10] at @s run scoreboard players add @s 61.Tick 1
+# スコア管理
+    execute if entity @s[scores={61.Tick=60..}] run scoreboard players add @s 61.Tick 1
+    execute unless entity @s[scores={61.Tick=60..}] positioned ^ ^ ^10 if entity @p[distance=..10] at @s run scoreboard players add @s 61.Tick 1
 
 # スコアが60の時、向きを固定する
     execute if entity @s[scores={61.Tick=60}] run function asset:mob/0217.medousa_eye/tick/3.fix_direction
 
 # スコアが61のとき、予備動作
-    execute if entity @s[scores={61.Tick=61}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/4.vfx
+    execute if entity @s[scores={61.Tick=61}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
 
 # 60以上の場合スコア増加
     execute if entity @s[scores={61.Tick=60..}] run scoreboard players add @s 61.Tick 1

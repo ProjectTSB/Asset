@@ -1,4 +1,4 @@
-#> asset:mob/0217.medousa_eye/tick/4.vfx
+#> asset:mob/0217.medousa_eye/tick/vfx
 #
 #
 #

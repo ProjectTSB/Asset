@@ -14,5 +14,4 @@
     playsound minecraft:entity.elder_guardian.death hostile @a[distance=..25] ~ ~ ~ 0.6 2 0.1
 
 # リセット
-    data modify entity @s NoAI set value 0b
-    scoreboard players reset @s 61.Tick
+    function asset:mob/0217.medousa_eye/tick/8.reset
