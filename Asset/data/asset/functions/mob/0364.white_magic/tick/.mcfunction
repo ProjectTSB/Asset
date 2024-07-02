@@ -12,8 +12,8 @@
     scoreboard players operation $Interval Temporary = @s A4.Tick
     scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run function asset:mob/0364.white_magic/tick/vfx
-    execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.3 2
-    execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.3 1.8
+    execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 2
+    execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.2 1.8
     scoreboard players reset $Interval Temporary
 
 # スコア
@@ -25,8 +25,8 @@
 # 攻撃の演出
 # 攻撃は1tickだが演出は数tick持続させる
     execute if entity @s[scores={A4.Tick=40..}] run particle end_rod ~ ~1.5 ~ 0 0 0 0.25 10 normal @a
-    execute if entity @s[scores={A4.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.3 1.65
-    execute if entity @s[scores={A4.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.3 1.5
+    execute if entity @s[scores={A4.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.15 1.65
+    execute if entity @s[scores={A4.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.15 1.5
 
 # 消滅
     execute if entity @s[scores={A4.Tick=45..}] run kill @s
