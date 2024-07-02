@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0364.white_magic/tick/
 
-# 演出
-
-
-
 # ダメージ
     data modify storage api: Argument.Damage set value 30.0d
     data modify storage api: Argument.AttackType set value "Magic"

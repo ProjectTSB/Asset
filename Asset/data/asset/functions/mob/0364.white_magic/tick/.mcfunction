@@ -8,7 +8,7 @@
 # @private
     #declare score_holder $Interval
 
-# 一定間隔でVFX
+# 一定間隔で演出
     scoreboard players operation $Interval Temporary = @s A4.Tick
     scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 unless entity @s[scores={A4.Tick=40..}] positioned ~ ~0.2 ~ run function asset:mob/0364.white_magic/tick/vfx
