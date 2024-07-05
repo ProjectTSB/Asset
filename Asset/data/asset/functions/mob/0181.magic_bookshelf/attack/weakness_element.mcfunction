@@ -22,7 +22,7 @@
     execute store result score $WaterDefense Temporary run data get storage api: Return.Defense.Water 100
     execute store result score $ThunderDefense Temporary run data get storage api: Return.Defense.Thunder 100
 
-# TempにIntMaxを入れてそれぞれTempと比較する
+# MinDefenseにIntMaxを入れてそれぞれTempと比較する
     scoreboard players set $MinDefense Temporary 2147483647
     scoreboard players operation $MinDefense Temporary < $FireDefense Temporary
     scoreboard players operation $MinDefense Temporary < $WaterDefense Temporary
@@ -31,7 +31,7 @@
 # セッション開ける
     function lib:array/session/open
 
-# Tempと同じ値の属性耐性をstorageに突っ込む
+# MinDefenseと同じ値の属性耐性をstorageに突っ込む
     execute if score $MinDefense Temporary = $FireDefense Temporary run data modify storage lib: Array append value "Fire"
     execute if score $MinDefense Temporary = $WaterDefense Temporary run data modify storage lib: Arrary append value "Water"
     execute if score $MinDefense Temporary = $ThunderDefense Temporary run data modify storage lib: Array append value "Thunder"
