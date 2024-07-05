@@ -40,19 +40,19 @@
     execute if data storage lib: Array[1] run function lib:array/shuffle
 
 # 0番目の要素を移しておく
-    data modify storage asset:temp Elements set from storage lib: Array[0]
+    data modify storage asset:temp Element set from storage lib: Array[0]
 
 # セッション閉じる
     function lib:array/session/close
 
 # 配列の0番目の要素に応じて攻撃属性を分岐
-    execute if data storage asset:temp {Elements:Fire} run function asset:mob/0181.magic_bookshelf/attack/elements/fire
-    execute if data storage asset:temp {Elements:Water} run function asset:mob/0181.magic_bookshelf/attack/elements/water
-    execute if data storage asset:temp {Elements:Thunder} run function asset:mob/0181.magic_bookshelf/attack/elements/thunder
+    execute if data storage asset:temp {Element:Fire} run function asset:mob/0181.magic_bookshelf/attack/elements/fire
+    execute if data storage asset:temp {Element:Water} run function asset:mob/0181.magic_bookshelf/attack/elements/water
+    execute if data storage asset:temp {Element:Thunder} run function asset:mob/0181.magic_bookshelf/attack/elements/thunder
 
 # リセット
     scoreboard players reset $MinDefense Temporary
     scoreboard players reset $FireDefense
     scoreboard players reset $WaterDefense
     scoreboard players reset $ThunderDefense
-    data remove storage asset:temp Elements
+    data remove storage asset:temp Element
