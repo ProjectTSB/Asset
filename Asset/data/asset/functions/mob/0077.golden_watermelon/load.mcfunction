@@ -1,4 +1,4 @@
-#> asset:mob/0077.golden_watermelon/0.load
+#> asset:mob/0077.golden_watermelon/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
