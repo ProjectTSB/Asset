@@ -5,4 +5,4 @@
 # @within asset:mob/0075.watermelon/_/summon
 
 # 元となるMobを召喚する
-    summon block_display ~ ~ ~ {teleport_duration:1,Tags:["MobInit"],block_state:{Name:"minecraft:melon"}}
+    summon block_display ~ ~ ~ {teleport_duration:1,Tags:["MobInit"],block_state:{Name:"minecraft:melon"},transformation:{scale:[0.5f,0.5f,0.5f]}}
