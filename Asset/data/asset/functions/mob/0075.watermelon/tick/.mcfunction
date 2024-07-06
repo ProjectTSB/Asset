@@ -14,5 +14,5 @@
     execute at @s run particle dust 0.173 1 0.243 1 ~ ~ ~ 0.4 0.4 0.4 0 2 normal @a
 # 炸裂
     execute if entity @s[scores={23.Tick=30..}] run function asset:mob/0075.watermelon/tick/explosion
-    execute unless entity @s[scores={23.Tick=30..}] if block ~ ~ ~ #lib:air positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[dx=0] at @s run function asset:mob/0075.watermelon/tick/explosion
-    execute unless entity @s[scores={23.Tick=30..}] unless block ^ ^ ^1 #lib:no_collision run function asset:mob/0075.watermelon/tick/explosion
+    execute if entity @s if block ~ ~ ~ #lib:air positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[dx=0] at @s run function asset:mob/0075.watermelon/tick/explosion
+    execute if entity @s unless block ^ ^ ^1 #lib:no_collision run function asset:mob/0075.watermelon/tick/explosion
