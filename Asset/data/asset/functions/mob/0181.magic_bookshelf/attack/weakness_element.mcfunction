@@ -55,7 +55,9 @@
 
 # リセット
     scoreboard players reset $MinDefense Temporary
-    scoreboard players reset $FireDefense
-    scoreboard players reset $WaterDefense
-    scoreboard players reset $ThunderDefense
+    scoreboard players reset $FireDefense Temporary
+    scoreboard players reset $WaterDefense Temporary
+    scoreboard players reset $ThunderDefense Temporary
+    scoreboard players reset $Length Temporary
+    scoreboard players reset $Random Temporary
     data remove storage asset:temp Element
