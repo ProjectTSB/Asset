@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0075.watermelon/load",
         "asset:mob/0337.shower_of_cherry_blossoms/0.load",
         "asset:mob/0332.aurora_missile/load",
         "asset:mob/0331.aurora_sorcerer/load",
@@ -77,7 +78,6 @@
         "asset:mob/0081.snow_cloud/0.load",
         "asset:mob/0059.jack_o_lantern/0.load",
         "asset:mob/0074.watermelon_bomber/0.load",
-        "asset:mob/0075.watermelon/0.load",
         "asset:mob/0076.golden_watermelon_bomber/0.load",
         "asset:mob/0077.golden_watermelon/0.load",
         "asset:mob/0139.blast_eye/0.load",

@@ -8,4 +8,4 @@
     scoreboard players add @s 22.Tick 1
 
 # スイカ投げ
-    execute if score @s 22.Tick matches 60.. run function asset:mob/0074.watermelon_bomber/tick/3.throw_watermelon
+    execute if score @s 22.Tick matches 60.. positioned ~ ~1.2 ~ run function asset:mob/0074.watermelon_bomber/tick/3.throw_watermelon
