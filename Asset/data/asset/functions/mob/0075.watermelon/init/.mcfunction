@@ -4,5 +4,5 @@
 #
 # @within function asset:mob/0075.watermelon/_/init
 
-# 最寄りのプレイヤーの方を見る
+# 1000ブロック下にtpして、最寄りのプレイヤーの方を見る
     tp @s ~ ~-1000 ~ facing entity @p eyes
