@@ -8,5 +8,5 @@
 #> tag
 # @within function
 #   asset:mob/0188.fireball/**
-#   asset:mob/0187.flame_mage/event/shoot_magic
+#   asset:mob/0187.flame_mage/tick/**
     #declare tag 58.Init
