@@ -8,7 +8,7 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1.6 1.7 0
     playsound entity.generic.explode hostile @a ~ ~ ~ 1.3 1 0
     particle dust 1 0.941 0.141 2 ~ ~5 ~ 0.1 3 0.1 0 60 normal @a
-    particle smoke ~ ~1.5 ~ 2 0.5 2 0 100 normal @a
+    particle smoke ~ ~ ~ 2 0.5 2 0 100 normal @a
 
 # スイカスライスを召喚
     summon item ~ ~ ~ {Age:5940s,PickupDelay:5s,Item:{id:"minecraft:glistering_melon_slice",Count:4b}}
