@@ -11,10 +11,10 @@
 # ノーマル以下ならプレイヤーの方向
 # ハード以上で確率で偏差撃ちする
     execute if predicate lib:random_pass_per/50 run tag @s add Random
-tag @s add Random
+
 # 撃つ
-    execute if entity @s[tag=!Random] run function asset:mob/0187.flame_mage/tick/4.straight_shoot
-    execute if entity @s[tag=Random] run function asset:mob/0187.flame_mage/tick/5.predict
+    execute if entity @s[tag=!Random] run function asset:mob/0187.flame_mage/tick/4.facing_shoot
+    execute if entity @s[tag=Random] run function asset:mob/0187.flame_mage/tick/5.predict_shoot
 
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5

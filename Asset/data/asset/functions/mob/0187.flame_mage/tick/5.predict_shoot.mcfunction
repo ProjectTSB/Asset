@@ -1,4 +1,4 @@
-#> asset:mob/0187.flame_mage/tick/5.predict
+#> asset:mob/0187.flame_mage/tick/5.predict_shoot
 #
 # 偏差撃ち
 #

@@ -1,4 +1,4 @@
-#> asset:mob/0187.flame_mage/tick/4.straight_shoot
+#> asset:mob/0187.flame_mage/tick/4.facing_shoot
 #
 #
 #

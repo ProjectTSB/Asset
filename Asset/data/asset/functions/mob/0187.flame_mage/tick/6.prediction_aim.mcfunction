@@ -8,7 +8,7 @@
 #       ReachableRange: int
 #
 # @within function
-#   asset:mob/0187.flame_mage/tick/5.predict
+#   asset:mob/0187.flame_mage/tick/5.predict_shoot
 #   asset:mob/0187.flame_mage/tick/6.prediction_aim
 
 # 移動先が魔法の到達範囲内なら目印用Markerを召喚
