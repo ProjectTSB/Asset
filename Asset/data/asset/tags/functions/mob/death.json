@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0237.lunatic_mage/death/1.trigger",
         "asset:mob/0078.messenger_of_thunder/death/1.trigger",
         "asset:mob/0060.self_destructor/death/1.trigger",
         "asset:mob/0055.hetukedah/death/1.trigger",
