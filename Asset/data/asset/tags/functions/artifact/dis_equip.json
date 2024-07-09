@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0667.soul_fire_armor/trigger/dis_equip/",
+        "asset:artifact/0666.soul_fire_armor/trigger/dis_equip/",
+        "asset:artifact/0665.soul_fire_armor/trigger/dis_equip/",
+        "asset:artifact/0664.soul_fire_armor/trigger/dis_equip/",
         "asset:artifact/0624.flame_helm/trigger/dis_equip/",
         "asset:artifact/0625.flame_armor/trigger/dis_equip/",
         "asset:artifact/0626.flame_leggings/trigger/dis_equip/",
