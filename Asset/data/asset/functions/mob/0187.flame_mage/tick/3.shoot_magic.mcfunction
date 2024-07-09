@@ -10,7 +10,7 @@
 
 # ノーマル以下ならプレイヤーの方向
 # ハード以上で確率で偏差撃ちする
-    execute if predicate lib:random_pass_per/50 run tag @s add Random
+    execute if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/50 run tag @s add Random
 
 # 撃つ
     execute if entity @s[tag=!Random] run function asset:mob/0187.flame_mage/tick/4.facing_shoot
@@ -24,3 +24,4 @@
 
 # リセット
     scoreboard players reset @s 57.Attack
+    tag @s[tag=Random] remove Random
