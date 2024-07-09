@@ -30,12 +30,12 @@
     execute store result score $MaxHP5Per Temporary run attribute @s generic.max_health get 5
 
 # MaxHP5Perを個数と掛け、Argument.Healへ代入
-    execute store result storage lib: Argument.Heal float 0.01 run scoreboard players operation $MaxHP5Per Temporary *= $Count Temporary
+    execute store result storage api: Argument.Heal float 0.01 run scoreboard players operation $MaxHP5Per Temporary *= $Count Temporary
 
 # 回復処理
-    function lib:heal/modifier
-    function lib:heal/
-    function lib:heal/reset
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
 
 # リセット
     scoreboard players reset $Count Temporary
