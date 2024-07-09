@@ -31,4 +31,5 @@
     scoreboard players reset $Temp Temporary
 
 # kill
-    execute if entity @s[scores={5Y.Tick=55..}] run kill @s
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={5Y.Tick=55..}] run kill @s
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={5Y.Tick=65..}] run kill @s
