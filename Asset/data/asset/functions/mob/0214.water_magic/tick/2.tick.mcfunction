@@ -15,7 +15,7 @@
     execute if entity @s[scores={5Y.Tick=..30}] run scoreboard players operation $Temp Temporary %= $2 Const
 
 # 最初の数tickだけ当たり判定の円を表示
-    execute if entity @s[scores={5Y.Tick=..5}] run function asset:mob/0214.water_magic/tick/vfx
+    execute if entity @s[scores={5Y.Tick=..5}] positioned ~ ~0.2 ~ run function asset:mob/0214.water_magic/tick/vfx
 
 # 発動前にパーティクル
     execute if entity @s[scores={5Y.Tick=..30}] if score $Temp Temporary matches 0 run function asset:mob/0214.water_magic/tick/3.ready_vfx
