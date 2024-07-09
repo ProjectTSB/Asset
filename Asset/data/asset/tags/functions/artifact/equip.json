@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0628.ice_helm/trigger/1.trigger",
+        "asset:artifact/0629.ice_armor/trigger/1.trigger",
+        "asset:artifact/0630.ice_leggings/trigger/1.trigger",
+        "asset:artifact/0631.ice_boots/trigger/1.trigger",
         "asset:artifact/0624.flame_helm/trigger/1.trigger",
         "asset:artifact/0625.flame_armor/trigger/1.trigger",
         "asset:artifact/0626.flame_leggings/trigger/1.trigger",
