@@ -1,12 +1,13 @@
-#> asset:mob/0074.watermelon_bomber/attack/2.attack
+#> asset:mob/0074.watermelon_bomber/attack/
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0074.watermelon_bomber/attack/1.trigger
+# @within function asset:mob/0074.watermelon_bomber/_/attack
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.player.splash hostile @a ~ ~ ~ 0.8 0.8 0
     execute at @p[tag=Victim,distance=..6] run particle dust 1 0.141 0.141 1 ~ ~1.2 ~ 1 1 1 0 10 normal @a
+    execute at @p[tag=Victim,distance=..6] run particle dust 0.173 1 0.243 1 ~ ~1.2 ~ 1 1 1 0 10 normal @a
     execute at @p[tag=Victim,distance=..6] run particle dust 0.173 1 0.243 1 ~ ~1.2 ~ 1 1 1 0 10 normal @a
 
 # ダメージ

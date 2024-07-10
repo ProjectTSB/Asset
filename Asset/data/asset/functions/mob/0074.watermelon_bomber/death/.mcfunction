@@ -1,8 +1,8 @@
-#> asset:mob/0074.watermelon_bomber/death/2.death
+#> asset:mob/0074.watermelon_bomber/death/
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0074.watermelon_bomber/death/1.trigger
+# @within function asset:mob/0074.watermelon_bomber/_/death
 
 # 演出
     particle block melon ~ ~1.3 ~ 0.3 0.5 0.3 0 40 normal @a

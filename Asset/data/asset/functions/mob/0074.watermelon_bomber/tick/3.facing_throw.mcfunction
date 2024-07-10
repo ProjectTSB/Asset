@@ -1,8 +1,8 @@
-#> asset:mob/0074.watermelon_bomber/tick/4.facing_throw
+#> asset:mob/0074.watermelon_bomber/tick/3.facing_throw
 #
-# プレイヤーの方に投げる
+# プレイヤーの方向へ投げる
 #
-# @within function asset:mob/0074.watermelon_bomber/tick/3.throw_watermelon
+# @within function asset:mob/0074.watermelon_bomber/tick/2.throw
 
 # スイカ召喚を1000ブロック上で実行
     data modify storage api: Argument.ID set value 75
