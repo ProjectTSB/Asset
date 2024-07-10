@@ -7,13 +7,13 @@
 #> Private
 # @private
     #declare tag 22.Already
+    #declare tag Predict
 
-# スイカ投げを1000ブロック上で実行
-# そもそもプレイヤーが周囲にいなければ召喚しない
-# 向き合わせをして、1000ブロック下にtpさせる
-    data modify storage api: Argument.ID set value 75
-    execute if entity @p[distance=..20] anchored eyes positioned ^-0.4 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
-    execute positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @p eyes run tp @s ~ ~ ~ ~ ~-2
+# スイカを投げる
+# ハード以上の場合、プレイヤーが一定以上離れていれば偏差を確率で行う
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @p[distance=..10] if predicate lib:random_pass_per/60 run tag @s add Predict
+    execute if entity @s[tag=!Predict] run function asset:mob/0074.watermelon_bomber/tick/4.facing_throw
+    execute if entity @s[tag=Predict] run function asset:mob/0074.watermelon_bomber/tick/5.prediction_throw
 
-# スコアリセット
-    scoreboard players reset @s 22.Tick
+# リセット
+    tag @s[tag=Predict] remove Predict

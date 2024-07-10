@@ -8,4 +8,7 @@
     scoreboard players add @s 22.Tick 1
 
 # スイカ投げ
-    execute if entity @s[scores={22.Tick=60..}] run function asset:mob/0074.watermelon_bomber/tick/3.throw_watermelon
+    execute if entity @s[scores={22.Tick=60..}] if entity @p[distance=..25] run function asset:mob/0074.watermelon_bomber/tick/3.throw_watermelon
+
+# リセット
+    execute if entity @s[scores={22.Tick=60..}] run scoreboard players reset @s 22.Tick
