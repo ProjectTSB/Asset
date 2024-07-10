@@ -1,8 +1,8 @@
-#> asset:mob/0076.golden_watermelon_bomber/hurt/2.hurt
+#> asset:mob/0076.golden_watermelon_bomber/hurt/
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/hurt/1.trigger
+# @within function asset:mob/0076.golden_watermelon_bomber/_/hurt
 
 # 演出
     playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.8 0

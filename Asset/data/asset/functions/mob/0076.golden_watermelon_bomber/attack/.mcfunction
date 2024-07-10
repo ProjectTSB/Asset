@@ -1,8 +1,8 @@
-#> asset:mob/0076.golden_watermelon_bomber/attack/2.attack
+#> asset:mob/0076.golden_watermelon_bomber/attack/
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/attack/1.trigger
+# @within function asset:mob/0076.golden_watermelon_bomber/_/attack
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.8 0
