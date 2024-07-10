@@ -16,4 +16,3 @@
 
 # リセット
     tag @s[tag=Predict] remove Predict
-    item replace entity @s weapon.mainhand with melon{CustomModelData:20023}

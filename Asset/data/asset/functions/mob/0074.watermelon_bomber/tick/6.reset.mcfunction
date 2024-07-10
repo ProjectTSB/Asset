@@ -6,3 +6,4 @@
 
 # リセット
     scoreboard players set @s 22.Tick -60
+    item replace entity @s weapon.mainhand with melon{CustomModelData:20023}
