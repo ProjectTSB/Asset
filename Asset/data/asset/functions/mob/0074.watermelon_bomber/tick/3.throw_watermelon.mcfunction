@@ -4,10 +4,15 @@
 #
 # @within function asset:mob/0074.watermelon_bomber/tick/2.tick
 
+#> Private
+# @private
+    #declare tag 22.Already
+
 # スイカ投げを1000ブロック上で実行
-# スイカProjectile側で1000ブロック下にtpさせる
+# 向き合わせで1000ブロック下にtpさせる
     data modify storage api: Argument.ID set value 75
     execute anchored eyes positioned ^0.5 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
+    execute positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s run tp @s ~ ~-1000 ~ facing entity @p eyes
 
 # スコアリセット
     scoreboard players reset @s 22.Tick
