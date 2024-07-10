@@ -4,9 +4,16 @@
 #
 # @within function asset:mob/0076.golden_watermelon_bomber/tick/2.tick
 
-# スイカ投げ
-    data modify storage api: Argument.ID set value 77
-    execute anchored eyes positioned ^0.5 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
+#> Private
+# @private
+    #declare tag Predict
 
-# スコアリセット
-    scoreboard players reset @s 24.Tick
+# スイカを投げる
+# ハード以上の場合、偏差を確率で行う
+    execute if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/60 run tag @s add Predict
+    execute if entity @s[tag=!Predict] run function asset:mob/0076.golden_watermelon_bomber/tick/4.facing_throw
+    execute if entity @s[tag=Predict] run function asset:mob/0076.golden_watermelon_bomber/tick/5.prediction_throw
+
+# リセット
+    tag @s[tag=Predict] remove Predict
+    item replace entity @s weapon.mainhand with melon{CustomModelData:20023,Enchantments:[{}]}
