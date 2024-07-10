@@ -6,7 +6,6 @@
 
 #> Private
 # @private
-    #declare tag 22.Already
     #declare tag Predict
 
 # スイカを投げる
