@@ -24,11 +24,11 @@
 # 予測位置マーカーが存在しない場合、直接プレイヤーを狙う
     data modify storage api: Argument.ID set value 188
     execute anchored eyes positioned ^-0.25 ^ ^ run function api:mob/summon
-    execute if entity @e[type=marker,tag=PredictMarker,distance=..40,limit=1] anchored eyes positioned ^-0.25 ^ ^ run tp @e[type=marker,tag=58.Init,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=PredictMarker,distance=..40,limit=1] eyes
-    execute unless entity @e[type=marker,tag=PredictMarker,distance=..40,limit=1] anchored eyes positioned ^-0.25 ^ ^ run tp @e[type=marker,tag=58.Init,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ facing entity @p[distance=..20] eyes
+    execute if entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] anchored eyes positioned ^-0.25 ^ ^ run tp @e[type=marker,tag=58.Init,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] eyes
+    execute unless entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] anchored eyes positioned ^-0.25 ^ ^ run tp @e[type=marker,tag=58.Init,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ facing entity @p[distance=..20] eyes
 
 # リセット
     scoreboard players reset $Recursive Temporary
     scoreboard players reset $Speed Temporary
     data remove storage asset:temp Predict
-    kill @e[type=marker,tag=PredictMarker,distance=..40]
+    kill @e[type=marker,tag=PredictionMarker,distance=..40]
