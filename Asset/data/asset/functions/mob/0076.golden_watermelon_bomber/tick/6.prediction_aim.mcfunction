@@ -1,6 +1,6 @@
 #> asset:mob/0076.golden_watermelon_bomber/tick/6.prediction_aim
 #
-#
+# 偏差の処理
 #
 # @within function
 #   asset:mob/0076.golden_watermelon_bomber/tick/5.prediction_throw

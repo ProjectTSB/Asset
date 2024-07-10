@@ -1,6 +1,6 @@
 #> asset:mob/0076.golden_watermelon_bomber/tick/3.throw_watermelon
 #
-#
+# スイカを投げる
 #
 # @within function asset:mob/0076.golden_watermelon_bomber/tick/2.tick
 

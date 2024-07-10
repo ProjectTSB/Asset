@@ -1,6 +1,6 @@
 #> asset:mob/0074.watermelon_bomber/tick/6.prediction_aim
 #
-#
+# 偏差の処理
 #
 # @within function
 #   asset:mob/0074.watermelon_bomber/tick/5.prediction_throw
@@ -15,4 +15,3 @@
 # 再帰処理
     scoreboard players add $Recursive Temporary 1
     $execute if score $Recursive Temporary matches ..20 positioned ~$(X) ~ ~$(Z) unless entity @s[distance=..$(ReachableRange)] run function asset:mob/0074.watermelon_bomber/tick/6.prediction_aim with storage asset:temp Predict
-

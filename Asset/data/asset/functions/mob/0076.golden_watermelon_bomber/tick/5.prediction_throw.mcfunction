@@ -1,6 +1,6 @@
 #> asset:mob/0076.golden_watermelon_bomber/tick/5.prediction_throw
 #
-#
+# 偏差投げを行う
 #
 # @within function asset:mob/0076.golden_watermelon_bomber/tick/3.throw_watermelon
 
