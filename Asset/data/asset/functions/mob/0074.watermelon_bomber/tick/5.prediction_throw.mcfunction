@@ -22,7 +22,7 @@
 
 # スイカを召喚する
     data modify storage api: Argument.ID set value 75
-    execute anchored eyes positioned ^-0.4 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
+    execute anchored eyes positioned ^-0.6 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
 
 # スイカを予測位置マーカーの方向に投げる
 # 予測位置マーカーが存在しない場合、直接プレイヤーに投げる
