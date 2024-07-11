@@ -10,8 +10,8 @@
     particle dust 0.173 1 0.243 2 ~ ~ ~ 0.8 0.8 0.8 0 30 normal @a
     particle explosion ~ ~ ~ 1 1 1 0 5 normal @a
 
-# 鈍化を付与
-    effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
+# ノーマル以上で鈍化を付与
+    execute if predicate api:global_vars/difficulty/min/normal run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
 
 # 水属性ダメージ
     data modify storage api: Argument.Damage set value 20
