@@ -10,7 +10,7 @@
 
 # 体力を取得
 # TODO : 体力がスコア化されたらAPIで取得するようにする
-    execute store result score $Health Temporary run scoreboard players get @s MobHealth
+    execute store result score $Health Temporary run data get entity @s AbsorptionAmount 100
 # 体力が一定以下の場合、高確率で破裂する
 # ノーマルとハード以上で確率を変える
     execute if predicate api:global_vars/difficulty/normal if score $Health Temporary matches ..40000 if predicate lib:random_pass_per/40 run function asset:mob/0219.aorta/hurt/rupture
