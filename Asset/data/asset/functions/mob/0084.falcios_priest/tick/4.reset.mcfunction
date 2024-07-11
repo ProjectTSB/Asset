@@ -8,4 +8,4 @@
 
 # リセット
     scoreboard players set @s 2C.Tick -80
-    tag @s[tag=2C.Heal] remove 2C.Heal
+    tag @s[tag=2C.Attack] remove 2C.Attack
