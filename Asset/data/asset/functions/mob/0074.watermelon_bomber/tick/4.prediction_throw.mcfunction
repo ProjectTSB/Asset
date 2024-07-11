@@ -26,11 +26,11 @@
 
 # スイカを予測位置マーカーの方向に投げる
 # 予測位置マーカーが存在しない場合、直接プレイヤーに投げる
-    execute if entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] eyes run tp @s ~ ~ ~ ~ ~-2
-    execute unless entity @e[type=marker,tag=PredictionMarker,distance=..40,limit=1] positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @p eyes run tp @s ~ ~ ~ ~ ~-2
+    execute if entity @e[type=marker,tag=PredictionMarker,distance=..30,limit=1] positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @e[type=marker,tag=PredictionMarker,distance=..30,limit=1] eyes run tp @s ~ ~ ~ ~ ~-2
+    execute unless entity @e[type=marker,tag=PredictionMarker,distance=..30,limit=1] positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @p eyes run tp @s ~ ~ ~ ~ ~-2
 
 # リセット
     scoreboard players reset $Recursive Temporary
     scoreboard players reset $Speed Temporary
     data remove storage asset:temp Predict
-    kill @e[type=marker,tag=PredictionMarker,distance=..40]
+    kill @e[type=marker,tag=PredictionMarker,distance=..30]
