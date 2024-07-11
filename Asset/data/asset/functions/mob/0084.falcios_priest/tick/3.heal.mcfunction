@@ -1,8 +1,10 @@
-#> asset:mob/0084.falcios_priest/tick/2.heal
+#> asset:mob/0084.falcios_priest/tick/3.heal
 #
 # 周囲の敵を回復する
 #
-# @within function asset:mob/0084.falcios_priest/tick/1
+# @within function
+#   asset:mob/0084.falcios_priest/tick/1
+#   asset:mob/0084.falcios_priest/tick/2.shoot
 
 #> Private
 # @private

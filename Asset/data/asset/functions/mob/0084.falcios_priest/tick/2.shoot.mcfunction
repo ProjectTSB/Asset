@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/tick/3.shoot
+#> asset:mob/0084.falcios_priest/tick/2.shoot
 #
 # 魔法を発射する
 #
@@ -6,6 +6,9 @@
 
 # 自身に鈍足を付与
     effect give @s slowness 1 2 true
+
+# ハード以上なら回復も実行
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={2C.Tick=0}] run function asset:mob/0084.falcios_priest/tick/3.heal
 
 # 予備動作
     execute if entity @s[scores={2C.Tick=1..3}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.2 run function asset:mob/0084.falcios_priest/tick/vfx/1

@@ -3,9 +3,9 @@
 # リセット
 #
 # @within function
-#   asset:mob/0084.falcios_priest/tick/2.heal
-#   asset:mob/0084.falcios_priest/tick/3.shoot
+#   asset:mob/0084.falcios_priest/tick/2.shoot
+#   asset:mob/0084.falcios_priest/tick/3.heal
 
 # リセット
     scoreboard players set @s 2C.Tick -80
-    tag @s[tag=2C.AttackSkill] remove 2C.AttackSkill
+    tag @s[tag=2C.Heal] remove 2C.Heal
