@@ -4,45 +4,33 @@
 #
 # @within function asset:mob/0077.golden_watermelon/tick/2nd_explosion
 
-# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIYBmALAEz0DsAbAEYC0KAzAJye1uAVkodKKOLQ4tKARlmkW1ekJYt6YAgDtKAWwTJAYYoACWZrAxKGPQGck4FAHtCWiEloAGAhNdwM9sAA3SmxCA3AADyQvMChogF94gmtSNEI7RG4AOiECGwgrN0QYuGxsNBgbA1kPGIxHAogDGLQbAFEyiqq2gEdCEOwoAGVLCXJEahCqxIBdIA_3
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmACwBGAjKdQAxyMC0lKKAzOwIbWVWvAKwperOACZeAdhZiUjLozAEAdrwC2CZIDDFAAS1VYGLwxaAzknAoA9oTUQkkgBwEUcR3AzWwAN15sQh1wAA8kRgIoCIBfGIJzUjRCK0QuADphAgsIMydESLA4bGw0GAsdWkZCjFtciB1CtAsAURKyipaAR0JA7CgAZVMPckQAM0CKuIBdIA_3
 # 円 1
-particle smoke ^0 ^ ^-3.5 0 0 0 0 1
-particle smoke ^0.54752 ^ ^-3.45691 0 0 0 0 1
-particle smoke ^1.08156 ^ ^-3.3287 0 0 0 0 1
-particle smoke ^1.58897 ^ ^-3.11852 0 0 0 0 1
-particle smoke ^2.05725 ^ ^-2.83156 0 0 0 0 1
-particle smoke ^2.47487 ^ ^-2.47487 0 0 0 0 1
-particle smoke ^2.83156 ^ ^-2.05725 0 0 0 0 1
-particle smoke ^3.11852 ^ ^-1.58897 0 0 0 0 1
-particle smoke ^3.3287 ^ ^-1.08156 0 0 0 0 1
-particle smoke ^3.45691 ^ ^-0.54752 0 0 0 0 1
-particle smoke ^3.5 ^ ^0 0 0 0 0 1
-particle smoke ^3.45691 ^ ^0.54752 0 0 0 0 1
-particle smoke ^3.3287 ^ ^1.08156 0 0 0 0 1
-particle smoke ^3.11852 ^ ^1.58897 0 0 0 0 1
-particle smoke ^2.83156 ^ ^2.05725 0 0 0 0 1
-particle smoke ^2.47487 ^ ^2.47487 0 0 0 0 1
-particle smoke ^2.05725 ^ ^2.83156 0 0 0 0 1
-particle smoke ^1.58897 ^ ^3.11852 0 0 0 0 1
-particle smoke ^1.08156 ^ ^3.3287 0 0 0 0 1
-particle smoke ^0.54752 ^ ^3.45691 0 0 0 0 1
-particle smoke ^0 ^ ^3.5 0 0 0 0 1
-particle smoke ^-0.54752 ^ ^3.45691 0 0 0 0 1
-particle smoke ^-1.08156 ^ ^3.3287 0 0 0 0 1
-particle smoke ^-1.58897 ^ ^3.11852 0 0 0 0 1
-particle smoke ^-2.05725 ^ ^2.83156 0 0 0 0 1
-particle smoke ^-2.47487 ^ ^2.47487 0 0 0 0 1
-particle smoke ^-2.83156 ^ ^2.05725 0 0 0 0 1
-particle smoke ^-3.11852 ^ ^1.58897 0 0 0 0 1
-particle smoke ^-3.3287 ^ ^1.08156 0 0 0 0 1
-particle smoke ^-3.45691 ^ ^0.54752 0 0 0 0 1
-particle smoke ^-3.5 ^ ^0 0 0 0 0 1
-particle smoke ^-3.45691 ^ ^-0.54752 0 0 0 0 1
-particle smoke ^-3.3287 ^ ^-1.08156 0 0 0 0 1
-particle smoke ^-3.11852 ^ ^-1.58897 0 0 0 0 1
-particle smoke ^-2.83156 ^ ^-2.05725 0 0 0 0 1
-particle smoke ^-2.47487 ^ ^-2.47487 0 0 0 0 1
-particle smoke ^-2.05725 ^ ^-2.83156 0 0 0 0 1
-particle smoke ^-1.58897 ^ ^-3.11852 0 0 0 0 1
-particle smoke ^-1.08156 ^ ^-3.3287 0 0 0 0 1
-particle smoke ^-0.54752 ^ ^-3.45691 0 0 0 0 1
+particle large_smoke ^0 ^ ^-3.5 0 0 0 0 1
+particle large_smoke ^0.77882 ^ ^-3.41225 0 0 0 0 1
+particle large_smoke ^1.51859 ^ ^-3.15339 0 0 0 0 1
+particle large_smoke ^2.18221 ^ ^-2.73641 0 0 0 0 1
+particle large_smoke ^2.73641 ^ ^-2.18221 0 0 0 0 1
+particle large_smoke ^3.15339 ^ ^-1.51859 0 0 0 0 1
+particle large_smoke ^3.41225 ^ ^-0.77882 0 0 0 0 1
+particle large_smoke ^3.5 ^ ^0 0 0 0 0 1
+particle large_smoke ^3.41225 ^ ^0.77882 0 0 0 0 1
+particle large_smoke ^3.15339 ^ ^1.51859 0 0 0 0 1
+particle large_smoke ^2.73641 ^ ^2.18221 0 0 0 0 1
+particle large_smoke ^2.18221 ^ ^2.73641 0 0 0 0 1
+particle large_smoke ^1.51859 ^ ^3.15339 0 0 0 0 1
+particle large_smoke ^0.77882 ^ ^3.41225 0 0 0 0 1
+particle large_smoke ^0 ^ ^3.5 0 0 0 0 1
+particle large_smoke ^-0.77882 ^ ^3.41225 0 0 0 0 1
+particle large_smoke ^-1.51859 ^ ^3.15339 0 0 0 0 1
+particle large_smoke ^-2.18221 ^ ^2.73641 0 0 0 0 1
+particle large_smoke ^-2.73641 ^ ^2.18221 0 0 0 0 1
+particle large_smoke ^-3.15339 ^ ^1.51859 0 0 0 0 1
+particle large_smoke ^-3.41225 ^ ^0.77882 0 0 0 0 1
+particle large_smoke ^-3.5 ^ ^0 0 0 0 0 1
+particle large_smoke ^-3.41225 ^ ^-0.77882 0 0 0 0 1
+particle large_smoke ^-3.15339 ^ ^-1.51859 0 0 0 0 1
+particle large_smoke ^-2.73641 ^ ^-2.18221 0 0 0 0 1
+particle large_smoke ^-2.18221 ^ ^-2.73641 0 0 0 0 1
+particle large_smoke ^-1.51859 ^ ^-3.15339 0 0 0 0 1
+particle large_smoke ^-0.77882 ^ ^-3.41225 0 0 0 0 1
