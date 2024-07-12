@@ -1,11 +1,15 @@
-#> asset:mob/0264.dark_summoner/summon/2.summon
+#> asset:mob/0264.dark_summoner/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0264.dark_summoner/summon/1.trigger
+# @within function asset:mob/0264.dark_summoner/_/register
 
-# 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"asset:mob/death/0264.dark_summoner",Silent:1b}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 264
 # Type (string) Wikiを参照
@@ -14,18 +18,26 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ダークサモナー","color":"#B638FF","italic":false}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        #data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20179}}
+        # data modify storage asset:mob Weapon.Mainhand set value
+    # オフハンド (Compound(Item)) (オプション)
+        # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
-    data modify storage asset:mob WeaponDropChances set value [0.0f,0.0f]
+    # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20214}}
     # 胴 (Compound(Item)) (オプション)
-        #data modify storage asset:mob Armor.Chest set value {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:4404559}}}
+        # data modify storage asset:mob Armor.Chest set value
+    # 脚 (Compound(Item)) (オプション)
+        # data modify storage asset:mob Armor.Legs set value
+    # 足 (Compound(Item)) (オプション)
+        # data modify storage asset:mob Armor.Feet set value
 # 防具ドロップ率 ([float, float]) (オプション)
-    #data modify storage asset:mob ArmorDropChances set value [0.0f,0.0f,0.0f,0.0f]
+    # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 2500
 # 攻撃力 (double) (オプション)
@@ -44,7 +56,7 @@
     # 物理倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Physical set value
     # 魔法倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Magic set value
+        data modify storage asset:mob Resist.Magic set value 0.5
     # 火倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Fire set value
     # 水倍率 (float) (オプション)
@@ -52,5 +64,5 @@
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
 
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=zombie,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+    # data modify storage asset:mob Field set value {}

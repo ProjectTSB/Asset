@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0264.dark_summoner/load",
         "asset:mob/0337.shower_of_cherry_blossoms/0.load",
         "asset:mob/0332.aurora_missile/load",
         "asset:mob/0331.aurora_sorcerer/load",
@@ -8,7 +9,6 @@
         "asset:mob/0186.ferocious_bee/0.load",
         "asset:mob/0266.small_dark_ball/0.load",
         "asset:mob/0265.dark_familiar/0.load",
-        "asset:mob/0264.dark_summoner/0.load",
         "asset:mob/0275.destroyed_block/0.load",
         "asset:mob/0273.hell_blade/0.load",
         "asset:mob/0174.burning_blaze/0.load",

@@ -1,8 +1,8 @@
-#> asset:mob/0264.dark_summoner/tick/event/cast_start
+#> asset:mob/0264.dark_summoner/tick/cast_start
 #
+# 詠唱開始
 #
-#
-# @within function asset:mob/0264.dark_summoner/tick/2.tick
+# @within function asset:mob/0264.dark_summoner/tick/
 
 # SFX
     playsound minecraft:entity.enderman.ambient hostile @a ~ ~ ~ 1.5 0.7

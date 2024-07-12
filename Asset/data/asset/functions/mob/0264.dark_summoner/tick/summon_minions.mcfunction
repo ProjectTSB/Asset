@@ -1,13 +1,11 @@
-#> asset:mob/0264.dark_summoner/tick/event/summon_minions
+#> asset:mob/0264.dark_summoner/tick/summon_minions
 #
+# ファミリアを召喚する
 #
-#
-# @within function asset:mob/0264.dark_summoner/tick/event/casting
-
-#
+# @within function asset:mob/0264.dark_summoner/tick/casting
 
 # パーティクル
-    execute positioned ^ ^0.1 ^ run function asset:mob/0264.dark_summoner/tick/event/particle
+    execute positioned ^ ^0.1 ^ run function asset:mob/0264.dark_summoner/tick/particle
 
 # 召喚
     data modify storage api: Argument.ID set value 265

@@ -1,10 +1,10 @@
-#> asset:mob/0264.dark_summoner/tick/event/cast_finish
+#> asset:mob/0264.dark_summoner/tick/cast_finish
 #
-#
+# 詠唱終了
 #
 # @within function
-#   asset:mob/0264.dark_summoner/tick/event/casting
-#   asset:mob/0264.dark_summoner/tick/2.tick
+#   asset:mob/0264.dark_summoner/tick/
+#   asset:mob/0264.dark_summoner/tick/casting
 
 # リセット
     scoreboard players reset @s 7C.Attack
