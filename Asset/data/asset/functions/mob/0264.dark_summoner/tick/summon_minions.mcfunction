@@ -9,7 +9,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 265
-    function api:mob/summon
+    execute positioned ~ ~1000 ~ run function api:mob/summon
 
 # 音とパーティクル
     playsound minecraft:item.bottle.fill_dragonbreath hostile @a ~ ~ ~ 2 2

@@ -1,15 +1,12 @@
-#> asset:mob/0265.dark_familiar/tick/event/shoot
+#> asset:mob/0265.dark_familiar/tick/shoot
 #
+# 召喚する
 #
-#
-# @within function asset:mob/0265.dark_familiar/tick/2.tick
+# @within function asset:mob/0265.dark_familiar/tick/
 
 # 召喚
     data modify storage api: Argument.ID set value 266
     execute anchored eyes positioned ^ ^ ^ run function api:mob/summon
-
-# スコアのリセット
-    scoreboard players reset @s 7D.ShotCool
 
 # サウンド
     playsound minecraft:entity.shulker_bullet.hurt hostile @a ~ ~ ~ 1.5 2

@@ -1,11 +1,15 @@
-#> asset:mob/0265.dark_familiar/summon/2.summon
+#> asset:mob/0265.dark_familiar/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0265.dark_familiar/summon/1.trigger
+# @within function asset:mob/0265.dark_familiar/_/register
 
-# 元となるMobを召喚する
-    summon husk ~ ~-100 ~ {NoAI:1b,Team:"NoCollision",Tags:["MobInit","AlwaysInvisible","AlwaysSlowFall"],DeathTime:19s,DeathLootTable:"asset:mob/death/0265.dark_familiar",IsBaby:1b,Silent:1b}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 265
 # Type (string) Wikiを参照
@@ -13,16 +17,31 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"ダークファミリア","color":"#B638FF","italic":false}'
-
+    data modify storage asset:mob Name set from entity @s CustomName
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
+# 武器
+    # メインハンド (Compound(Item)) (オプション)
+        # data modify storage asset:mob Weapon.Mainhand set value
+    # オフハンド (Compound(Item)) (オプション)
+        # data modify storage asset:mob Weapon.Offhand set value
+# 武器ドロップ率 ([float, float]) (オプション)
+    # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20177}}
-
+    # 胴 (Compound(Item)) (オプション)
+        # data modify storage asset:mob Armor.Chest set value
+    # 脚 (Compound(Item)) (オプション)
+        # data modify storage asset:mob Armor.Legs set value
+    # 足 (Compound(Item)) (オプション)
+        # data modify storage asset:mob Armor.Feet set value
+# 防具ドロップ率 ([float, float]) (オプション)
+    # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 500
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 0
+    # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
@@ -45,8 +64,5 @@
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
 
-# 上から降ろす
-    execute positioned ~ ~-100 ~ as @e[type=husk,tag=MobInit,distance=..0.01] run function asset:mob/0265.dark_familiar/summon/init
-
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=husk,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+    # data modify storage asset:mob Field set value {}

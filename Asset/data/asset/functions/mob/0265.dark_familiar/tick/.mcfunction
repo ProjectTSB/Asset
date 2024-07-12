@@ -1,8 +1,12 @@
-#> asset:mob/0265.dark_familiar/tick/2.tick
+#> asset:mob/0265.dark_familiar/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0265.dark_familiar/tick/1.trigger
+# @within function asset:mob/0265.dark_familiar/_/tick
+
+#> Private
+# @private
+    #declare score_holder $Interval
 
 # パーティクル
     execute anchored eyes positioned ^ ^ ^-0.3 run particle dust 0.5 0 0.6 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
@@ -22,10 +26,14 @@
     execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
     execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
-# 世界に存在しすぎた場合、消滅する
-    scoreboard players remove @s 7D.LifeTime 1
-    execute if score @s 7D.LifeTime matches ..0 run function asset:mob/0265.dark_familiar/tick/event/suicide
+# スコア
+    scoreboard players add @s 7D.Tick 1
 
-# 攻撃
-    scoreboard players add @s 7D.ShotCool 1
-    execute if score @s 7D.ShotCool matches 40.. run function asset:mob/0265.dark_familiar/tick/event/shoot
+# 消える
+    execute if entity @s[scores={7D.Tick=200..}] run function asset:mob/0265.dark_familiar/tick/kill
+
+# 一定間隔で攻撃 召喚してすぐは攻撃しないようにしている
+    scoreboard players operation $Interval Temporary = @s 7D.Tick
+    scoreboard players operation $Interval Temporary %= $40 Const
+    execute if score $Interval Temporary matches 0 run function asset:mob/0265.dark_familiar/tick/shoot
+    scoreboard players reset $Interval Temporary

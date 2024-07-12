@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0266.small_dark_ball/_/tick",
+        "asset:mob/0265.dark_familiar/_/tick",
         "asset:mob/0264.dark_summoner/_/tick",
         "asset:mob/0337.shower_of_cherry_blossoms/tick/1.trigger",
         "asset:mob/0332.aurora_missile/_/tick",
@@ -8,7 +9,6 @@
         "asset:mob/0330.aurora_reaper/tick/1.trigger",
         "asset:mob/0176.killer_bee/tick/1.trigger",
         "asset:mob/0186.ferocious_bee/tick/1.trigger",
-        "asset:mob/0265.dark_familiar/tick/1.trigger",
         "asset:mob/0275.destroyed_block/tick/1.trigger",
         "asset:mob/0273.hell_blade/tick/1.trigger",
         "asset:mob/0229.burning_blaze.shot/tick/1.trigger",
