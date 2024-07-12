@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0266.small_dark_ball/_/register",
         "asset:mob/0264.dark_summoner/_/register",
         "asset:mob/0332.aurora_missile/_/register",
         "asset:mob/0331.aurora_sorcerer/_/register",
