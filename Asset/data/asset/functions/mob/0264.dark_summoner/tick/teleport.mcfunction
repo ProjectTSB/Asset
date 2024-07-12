@@ -16,7 +16,7 @@
 
 # 実行座標を中心としてマーカーを拡散する
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
-    data modify storage lib: Argument.Bounds set value [[5d,5d],[0.0d,0.0d],[5d,5d]]
+    data modify storage lib: Argument.Bounds set value [[7d,7d],[0.0d,0.0d],[7d,7d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,sort=nearest,limit=1] at @s run function lib:spread_entity/
 
 # マーカーの位置が安全ならワープする
