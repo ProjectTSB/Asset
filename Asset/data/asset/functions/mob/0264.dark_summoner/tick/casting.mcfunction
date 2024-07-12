@@ -19,6 +19,11 @@
     execute if score @s 7C.Attack matches 90 rotated ~ 0 positioned ^-2 ^ ^ if block ~ ~ ~ #lib:no_collision run function asset:mob/0264.dark_summoner/tick/summon_minions
     execute if score @s 7C.Attack matches 85 rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ #lib:no_collision run function asset:mob/0264.dark_summoner/tick/summon_minions
 
+# ノーマルで確率テレポート
+# ハード以上なら確定でテレポート
+    execute if entity @s[scores={7C.Attack=115}] if predicate api:global_vars/difficulty/normal if predicate lib:random_pass_per/50 run function asset:mob/0264.dark_summoner/tick/teleport
+    execute if entity @s[scores={7C.Attack=115}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0264.dark_summoner/tick/teleport
+
 # ポーズ変更
     item replace entity @s[scores={7C.Attack=120}] armor.head with stick{CustomModelData:20214}
 

@@ -1,4 +1,4 @@
-#> asset:mob/0264.dark_summoner/tick/particle
+#> asset:mob/0264.dark_summoner/tick/vfx/circle
 #
 # 召喚スタートのパーティクル
 #

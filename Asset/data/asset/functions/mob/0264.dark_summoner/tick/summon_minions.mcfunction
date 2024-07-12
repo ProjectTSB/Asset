@@ -5,7 +5,7 @@
 # @within function asset:mob/0264.dark_summoner/tick/casting
 
 # パーティクル
-    execute positioned ^ ^0.1 ^ run function asset:mob/0264.dark_summoner/tick/particle
+    execute positioned ^ ^0.1 ^ run function asset:mob/0264.dark_summoner/tick/vfx/circle
 
 # 召喚
     data modify storage api: Argument.ID set value 265
