@@ -8,6 +8,9 @@
 # @private
     #declare tag SpreadMarker
 
+# 自身にTagを付与
+    tag @s add 7C.Teleported
+
 # ワープ中はモデル外して透明化
     item replace entity @s armor.head with minecraft:stone{CustomModelData:20019}
 
