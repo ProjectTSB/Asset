@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0371.ice_spellbook/_/register",
         "asset:mob/0332.aurora_missile/_/register",
         "asset:mob/0331.aurora_sorcerer/_/register",
         "asset:mob/0083.thunder_trifler/_/register",
