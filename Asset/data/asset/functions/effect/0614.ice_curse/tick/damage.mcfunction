@@ -8,12 +8,13 @@
 # @private
     #declare score_holder $Damage
 
+# 演出
+    particle snowflake ~ ~0.5 ~ 0.2 0.4 0.2 0.1 20 normal @a
+    playsound block.glass.break player @a ~ ~ ~ 0.4 1.8 0
+
 # 2(N+1)ダメージ
     execute store result score $Damage Temporary run data get storage asset:context Stack
     scoreboard players add $Damage Temporary 1
-
-# 演出
-    particle snowflake ~ ~0.5 ~ 0 0.4 0 0.1 20 normal @a
 
 # 魔法水属性ダメージ
 # プレイヤーの補正がかからないように、でも属性耐性は考慮するように
