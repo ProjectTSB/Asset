@@ -5,4 +5,4 @@
 # @within asset:mob/0371.ice_spellbook/_/summon
 
 # 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Silent:1b,NoAI:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0371.ice_spellbook"}
+    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0371.ice_spellbook"}
