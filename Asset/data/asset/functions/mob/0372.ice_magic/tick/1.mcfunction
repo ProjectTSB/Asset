@@ -17,5 +17,5 @@
 
 # 消滅
     execute if entity @s[scores={AC.Tick=80..99}] run kill @s
-    execute if entity @s[scores={AC.Tick=112..}] run kill @s
+    execute if entity @s[scores={AC.Tick=118..}] run kill @s
     execute at @s unless block ~ ~ ~ #lib:no_collision run kill @s
