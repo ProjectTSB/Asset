@@ -5,4 +5,4 @@
 # @within asset:mob/0372.ice_magic/_/summon
 
 # 元となるMobを召喚する
-    summon marker ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0372.ice_magic"}
+    summon marker ~ ~ ~ {Tags:["MobInit"]}
