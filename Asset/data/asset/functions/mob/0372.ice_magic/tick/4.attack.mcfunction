@@ -24,4 +24,4 @@
     tp @s ^ ^ ^1.5
 
 # 当たったなら消滅
-    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..1] run kill @s
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..1.5] run kill @s
