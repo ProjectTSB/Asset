@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"氷雪の呪い","color":"aqua"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度が下がり、継続的に魔法水属性ダメージを受ける","color":"aqua"}']
+    data modify storage asset:effect Description set value ['{"text":"継続的に魔法水属性ダメージを受ける","color":"aqua"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
