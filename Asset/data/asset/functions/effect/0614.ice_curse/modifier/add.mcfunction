@@ -15,4 +15,3 @@
 # リセット
     data remove storage asset:temp Effect
 
-say b
