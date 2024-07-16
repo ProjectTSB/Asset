@@ -1,8 +1,8 @@
-#> asset:mob/0079.return_thunder/tick/3.thunder
+#> asset:mob/0079.return_thunder/tick/thunder
 #
+# 雷
 #
-#
-# @within function asset:mob/0079.return_thunder/tick/2.tick
+# @within function asset:mob/0079.return_thunder/tick/
 
 # 演出
     particle dust 1 1 0 1 ~ ~4 ~ 0.2 3 0.2 0 120

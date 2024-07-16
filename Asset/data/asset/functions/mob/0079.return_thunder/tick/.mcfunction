@@ -1,8 +1,8 @@
-#> asset:mob/0079.return_thunder/tick/2.tick
+#> asset:mob/0079.return_thunder/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0079.return_thunder/tick/1.trigger
+# @within function asset:mob/0079.return_thunder/_/tick
 
 #> Private
 # @private
@@ -14,7 +14,7 @@
 # 演出とダメージ
     scoreboard players operation $Temp Temporary = @s 27.Tick
     scoreboard players operation $Temp Temporary %= $2 Const
-    execute if score $Temp Temporary matches 0 rotated ~ 0 run function asset:mob/0079.return_thunder/tick/3.thunder
+    execute if score $Temp Temporary matches 0 rotated ~ 0 run function asset:mob/0079.return_thunder/tick/thunder
     scoreboard players reset $Temp Temporary
 
 # スコア

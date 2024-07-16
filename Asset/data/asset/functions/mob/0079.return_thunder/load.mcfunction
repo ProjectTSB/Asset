@@ -1,4 +1,4 @@
-#> asset:mob/0079.return_thunder/0.load
+#> asset:mob/0079.return_thunder/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
