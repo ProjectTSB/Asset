@@ -11,7 +11,7 @@
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:mob ID set value 78
+    data modify storage asset:mob ID set value 82
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Projectile"
 # 干渉可能か否か (boolean)
