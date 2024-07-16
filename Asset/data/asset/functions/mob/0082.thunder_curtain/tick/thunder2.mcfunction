@@ -1,8 +1,8 @@
-#> asset:mob/0082.thunder_curtain/tick/4.thunder2
+#> asset:mob/0082.thunder_curtain/tick/thunder2
 #
-# 演出とダメージ対象の決定
+# 雷の処理2
 #
-# @within function asset:mob/0082.thunder_curtain/tick/3.thunder1
+# @within function asset:mob/0082.thunder_curtain/tick/thunder1
 
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.2 2.5 0.2 0 50

@@ -1,4 +1,4 @@
-#> asset:mob/0082.thunder_curtain/0.load
+#> asset:mob/0082.thunder_curtain/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
