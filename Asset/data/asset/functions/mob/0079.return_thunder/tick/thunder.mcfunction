@@ -10,19 +10,15 @@
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2 0
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.5 0 0
 
-# ダメージ設定
-    data modify storage lib: Argument.Damage set value 18.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Thunder"
-# デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-# 補正
-    function lib:damage/modifier
 # ダメージ
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 18.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    function api:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+    function api:damage/reset
 
 # 円
     particle electric_spark ^0 ^ ^-1 0 0 0 0 1
