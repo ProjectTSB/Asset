@@ -5,4 +5,4 @@
 # @within asset:mob/0079.return_thunder/_/summon
 
 # 元となるMobを召喚する
-    summon marker ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0079.return_thunder"}
+    summon marker ~ ~ ~ {Tags:["MobInit"]}
