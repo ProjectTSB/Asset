@@ -11,6 +11,10 @@
 # ランダムにスキル選択
     execute store result score $Random Temporary run function lib:random/
     scoreboard players operation $Random Temporary %= $4 Const
+
+# debug
+    scoreboard players set $Random Temporary 2
+
     execute if score $Random Temporary matches 0 run tag @s add 26.Thunder
     execute if score $Random Temporary matches 1 run tag @s add 26.ThunderCurtain
     execute if score $Random Temporary matches 2 run tag @s add 26.ReturnThunder

@@ -6,7 +6,7 @@
 
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.2 2.5 0.2 0 50
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 1
+    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.2 1
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.3 2 0
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.3 0 0
 

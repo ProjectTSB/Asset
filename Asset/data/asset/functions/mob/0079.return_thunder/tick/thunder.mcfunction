@@ -6,7 +6,8 @@
 
 # 演出
     particle dust 1 1 0 1 ~ ~4 ~ 0.2 3 0.2 0 120
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 5
+    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.2 5
+    execute positioned ~ ~0.2 ~ run function asset:mob/0079.return_thunder/tick/vfx
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2 0
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.5 0 0
 
@@ -19,25 +20,3 @@
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
-
-# 円
-    particle electric_spark ^0 ^ ^-1 0 0 0 0 1
-    particle electric_spark ^0.30902 ^ ^-0.95106 0 0 0 0 1
-    particle electric_spark ^0.58779 ^ ^-0.80902 0 0 0 0 1
-    particle electric_spark ^0.80902 ^ ^-0.58779 0 0 0 0 1
-    particle electric_spark ^0.95106 ^ ^-0.30902 0 0 0 0 1
-    particle electric_spark ^1 ^ ^0 0 0 0 0 1
-    particle electric_spark ^0.95106 ^ ^0.30902 0 0 0 0 1
-    particle electric_spark ^0.80902 ^ ^0.58779 0 0 0 0 1
-    particle electric_spark ^0.58779 ^ ^0.80902 0 0 0 0 1
-    particle electric_spark ^0.30902 ^ ^0.95106 0 0 0 0 1
-    particle electric_spark ^0 ^ ^1 0 0 0 0 1
-    particle electric_spark ^-0.30902 ^ ^0.95106 0 0 0 0 1
-    particle electric_spark ^-0.58779 ^ ^0.80902 0 0 0 0 1
-    particle electric_spark ^-0.80902 ^ ^0.58779 0 0 0 0 1
-    particle electric_spark ^-0.95106 ^ ^0.30902 0 0 0 0 1
-    particle electric_spark ^-1 ^ ^0 0 0 0 0 1
-    particle electric_spark ^-0.95106 ^ ^-0.30902 0 0 0 0 1
-    particle electric_spark ^-0.80902 ^ ^-0.58779 0 0 0 0 1
-    particle electric_spark ^-0.58779 ^ ^-0.80902 0 0 0 0 1
-    particle electric_spark ^-0.30902 ^ ^-0.95106 0 0 0 0 1
