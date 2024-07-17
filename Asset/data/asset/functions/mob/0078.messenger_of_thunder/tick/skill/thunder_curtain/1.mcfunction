@@ -8,7 +8,7 @@
     execute if entity @s[scores={26.Tick=0}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.5 0
 
 # 発動
-    execute if entity @s[scores={26.Tick=10}] run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/2.active
+    execute if entity @s[scores={26.Tick=20}] run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/3.active
 
 # リセット
-    execute if entity @s[scores={26.Tick=50..}] run function asset:mob/0078.messenger_of_thunder/tick/reset
+    execute if entity @s[scores={26.Tick=60..}] run function asset:mob/0078.messenger_of_thunder/tick/reset

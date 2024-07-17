@@ -1,4 +1,4 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/2.active
+#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/3.active
 #
 # スキル発動
 #
