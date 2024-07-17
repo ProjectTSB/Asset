@@ -1,4 +1,4 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/3.addition_thunder
+#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/4.addition_thunder
 #
 # 追加で2本召喚する処理
 #
