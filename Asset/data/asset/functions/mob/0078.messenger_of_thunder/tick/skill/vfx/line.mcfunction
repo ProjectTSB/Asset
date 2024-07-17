@@ -1,6 +1,6 @@
 #> asset:mob/0078.messenger_of_thunder/tick/skill/vfx/line
 #
-#
+# 線の演出
 #
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/2.ready
 
