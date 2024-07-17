@@ -19,6 +19,6 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function lib:damage/modifier
-    execute as @p[tag=Victim,distance=..50] run function lib:damage/
-    function lib:damage/reset
+    function api:damage/modifier
+    execute as @p[tag=Victim,distance=..50] run function api:damage/
+    function api:damage/reset

@@ -14,7 +14,7 @@
     execute if predicate api:global_vars/difficulty/min/hard run scoreboard players operation $Random Temporary %= $4 Const
 
 # debug
-    scoreboard players set $Random Temporary 4
+    scoreboard players set $Random Temporary 1
 
     execute if score $Random Temporary matches 0 run tag @s add 26.Thunder
     execute if score $Random Temporary matches 1 run tag @s add 26.ThunderCurtain
