@@ -9,7 +9,8 @@
     #declare score_holder $Temp
 
 # 移動
-    execute unless entity @s[scores={27.Tick=40..60}] run tp @s ^ ^ ^0.5
+    execute if predicate api:global_vars/difficulty/max/normal unless entity @s[scores={27.Tick=40..60}] run tp @s ^ ^ ^0.5
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @s[scores={27.Tick=40..60}] run tp @s ^ ^ ^0.75
 
 # 演出とダメージ
     scoreboard players operation $Temp Temporary = @s 27.Tick

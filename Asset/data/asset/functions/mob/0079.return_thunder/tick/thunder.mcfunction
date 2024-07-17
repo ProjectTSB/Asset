@@ -12,7 +12,10 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.5 0 0
 
 # ダメージ
+# ハードでダメージ上昇
+# ハードでは弾速が上がり、連続ヒットしにくくなっているため
     data modify storage api: Argument.Damage set value 18.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 25.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
