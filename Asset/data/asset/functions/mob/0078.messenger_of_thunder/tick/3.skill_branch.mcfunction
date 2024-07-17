@@ -15,3 +15,6 @@
 
 # tpして翻弄する奴
     execute if entity @s[tag=26.TeleportSpread] run function asset:mob/0078.messenger_of_thunder/tick/skill/teleport_spread/1
+
+# 偏差雷落とし
+    execute if entity @s[tag=26.PredictThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/1

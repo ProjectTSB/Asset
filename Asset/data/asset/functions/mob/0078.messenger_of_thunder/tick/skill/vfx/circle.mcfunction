@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder/4.vfx
+#> asset:mob/0078.messenger_of_thunder/tick/skill/vfx/circle
 #
-# 当たり判定表示
+# 円の演出
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/**
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAAxwBGATDQKwDMAHALQqUDsc7ALADYaAQ3Yjm-RuwCM3GaS6tuzeeQIA7EQFsEyQGGKAAhlgCMERh0BnJOBQB7QhohJmdAijjO4GW2ABuItiEeuAAHkiUBFCRAL6xBJakaIQ2iO5gVhAWLohRYHDY2GgwVnoylPkY9tkQevloVgCiRSVlTQCOhEHYUADK5p7kiABmQWXxALpAA_3
 # 円 1
