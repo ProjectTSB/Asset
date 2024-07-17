@@ -11,4 +11,5 @@
 
 # 体力半分以下で強化の処理
 # ノーマルでのみ判定を行う
+# イージーでは強化状態に移行せず、ハードでは最初から強化状態であるため
     execute if predicate api:global_vars/difficulty/normal if entity @s[tag=!26.Phase2] run function asset:mob/0078.messenger_of_thunder/hurt/check_health
