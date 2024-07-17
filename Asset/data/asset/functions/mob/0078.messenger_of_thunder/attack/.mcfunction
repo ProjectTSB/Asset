@@ -14,7 +14,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set value 20d
-    execute if entity @s[tag=26.HPLess50Per] run data modify storage api: Argument.Damage set value 27.5d
+    execute if entity @s[tag=26.Phase2] run data modify storage api: Argument.Damage set value 27.5d
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
