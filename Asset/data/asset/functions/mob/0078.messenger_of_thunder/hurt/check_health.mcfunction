@@ -15,5 +15,5 @@
 
 # 体力半分以下を検知
     execute if score $HealthPer Temporary matches ..50 run item replace entity @s weapon.mainhand with bow{CustomModelData:20188,Enchantments:[{id:"punch",lvl:3s}]}
-    execute if score $HealthPer Temporary matches ..50 run tag @s add 26.HPLess50Per
+    execute if score $HealthPer Temporary matches ..50 run tag @s add 26.Phase2
     scoreboard players reset $HealthPer Temporary
