@@ -6,7 +6,7 @@
 
 # 予備動作
     execute if entity @s[scores={26.Tick=0}] run playsound entity.zombie_villager.converted hostile @a[distance=..30] ~ ~ ~ 2 1.5 1
-    execute if entity @s[scores={26.Tick=0..29}] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/2.ready
+    execute if entity @s[scores={26.Tick=0..29}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/2.ready
 
 # 技を使う
     execute if entity @s[scores={26.Tick=20}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/4.active

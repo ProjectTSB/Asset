@@ -15,7 +15,7 @@
     execute if entity @s[scores={26.Consecutive=1..4}] if predicate lib:random_pass_per/50 run scoreboard players set $Random Temporary 4
 
 # スコアが3以上で確率、5で確実にスコアの値を10にする
-    execute if entity @s[scores={26.Consecutive=3..5}] if predicate lib:random_pass_per/30 run scoreboard players set @s 26.Consecutive 10
+    execute if entity @s[scores={26.Consecutive=3..4}] if predicate lib:random_pass_per/30 run scoreboard players set @s 26.Consecutive 10
     execute if entity @s[scores={26.Consecutive=5}] run scoreboard players set @s 26.Consecutive 10
 
 # スコアが10ならリターンに派生
