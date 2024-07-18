@@ -23,3 +23,6 @@
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
+
+# イージーならヒット時点で消滅
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..2] if predicate api:global_vars/difficulty/easy run kill @s
