@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0078.messenger_of_thunder/tick/1
 
-#> Private
-# @private
-    #declare score_holder $Random
-
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "78.MessengerOfThunder"
     data modify storage lib: Args.max set value 4
@@ -16,7 +12,14 @@
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
-# debug
+# debug1
+    tag @s add 26.ConsecutiveThunder
+
+# ハード以上 & 体力が半分以下なら乱数とは別口で低確率で連続攻撃へ移行
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per,tag=!26.ConsecutiveThunder] if predicate lib:random_pass_per/10 run tag @s add 26.ConsecutiveThunder
+    execute if entity @s[tag=26.ConsecutiveThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/1.skill_select
+
+# debug2
     #scoreboard players set $Random Temporary 5
 
 # スコアに応じたスキルTagを付与

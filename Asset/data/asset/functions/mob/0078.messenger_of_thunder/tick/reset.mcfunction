@@ -2,7 +2,8 @@
 #
 # リセット
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/**/1
+# @within function
+#   asset:mob/0078.messenger_of_thunder/tick/skill/**/1
 
 # リセット
     scoreboard players set @s 26.Tick -60

@@ -16,8 +16,10 @@
     #declare tag 26.TeleportSpread
     #declare tag 26.PredictThunder
     #declare tag 26.CrossThunder
+    #declare tag 26.ConsecutiveThunder
     #declare tag 26.SkillThunderMarker
     #declare tag 26.Already
     #declare tag 26.TargetPlayer
     #declare tag 26.NotFirst
     #declare score_holder $Interval
+    #declare score_holder $Random
