@@ -17,7 +17,7 @@
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # debug
-    #scoreboard players set $Random Temporary 2
+    scoreboard players set $Random Temporary 5
 
 # スコアに応じたスキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 26.Thunder
@@ -25,8 +25,7 @@
     execute if score $Random Temporary matches 2 run tag @s add 26.ReturnThunder
     execute if score $Random Temporary matches 3 run tag @s add 26.TeleportSpread
     execute if score $Random Temporary matches 4 run tag @s add 26.PredictThunder
-    execute if score $Random Temporary matches 5 run say Hi!
-    execute if score $Random Temporary matches 5 run scoreboard players set @s 26.Tick -1
+    execute if score $Random Temporary matches 5 run tag @s add 26.CrossThunder
 
 # リセット
     scoreboard players reset $Random Temporary

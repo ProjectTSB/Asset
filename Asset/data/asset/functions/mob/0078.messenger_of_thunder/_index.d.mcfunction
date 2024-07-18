@@ -3,7 +3,7 @@
 
 #> Tag
 # @within function asset:mob/0078.messenger_of_thunder/**
-    #declare tag 26.HealthLess50Per
+    #declare tag 26.HPLess50Per
     #declare tag 26.Teleport
 
 #> スキル用
@@ -15,6 +15,7 @@
     #declare tag 26.ReturnThunder
     #declare tag 26.TeleportSpread
     #declare tag 26.PredictThunder
+    #declare tag 26.CrossThunder
     #declare tag 26.SkillThunderMarker
     #declare tag 26.Already
     #declare tag 26.TargetPlayer

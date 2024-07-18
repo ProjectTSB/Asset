@@ -11,12 +11,10 @@
 # スコア
     scoreboard players add @s 2E.Tick 1
 
-# 発動まで一定間隔でvfx
-    execute if entity @s[scores={2E.Tick=1..25}] run function asset:mob/0086.cross_thunder/tick/vfx
 # 演出
     scoreboard players operation $Interval Temporary = @s 2E.Tick
-    scoreboard players operation $Interval Temporary %= $3 Const
-    execute if score $Interval Temporary matches 0 positioned ~ ~0.3 ~ run function asset:mob/0086.cross_thunder/tick/vfx
+    scoreboard players operation $Interval Temporary %= $2 Const
+    execute if entity @s[scores={2E.Tick=1..25}] if score $Interval Temporary matches 0 positioned ~ ~0.3 ~ run function asset:mob/0086.cross_thunder/tick/vfx
     scoreboard players reset $Interval Temporary
 
 # 最初の雷

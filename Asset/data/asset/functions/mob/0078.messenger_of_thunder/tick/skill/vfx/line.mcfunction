@@ -2,7 +2,7 @@
 #
 # 線の演出
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/2.ready
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/3.display_vfx
 
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAxgIwCcARgIYAcArAGYC0cATEQOxsAsANjhE2dOEyZsigwQxYAGQQs50qCsLgx0AtgmSAt3wAEFTWBh0ATroDOScGQD2eDBCQUmuFpcc77YADc6FDx9cAAPJAVcKCiAXzjcCEd-IJCwsEjEaLBYxE4E3EcWFhs4N2zcGjgALzQ4SyjcNBsAIVr6ywBRAEc8YJQoAGULMhEkFmCyhIBdIA_3
 # 線 1

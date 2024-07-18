@@ -11,4 +11,5 @@
     tag @s remove 26.ReturnThunder
     tag @s remove 26.TeleportSpread
     tag @s remove 26.PredictThunder
+    tag @s remove 26.CrossThunder
     tag @s remove 26.NotFirst
