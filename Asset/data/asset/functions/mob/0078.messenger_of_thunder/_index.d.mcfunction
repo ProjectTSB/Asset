@@ -3,7 +3,7 @@
 
 #> Tag
 # @within function asset:mob/0078.messenger_of_thunder/**
-    #declare tag 26.Phase2
+    #declare tag 26.HealthLess50Per
     #declare tag 26.Teleport
 
 #> スキル用

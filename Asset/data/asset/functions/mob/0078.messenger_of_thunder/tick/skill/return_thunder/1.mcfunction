@@ -12,7 +12,7 @@
     execute if entity @s[scores={26.Tick=20}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/3.active
 
 # HP半分以下で少し遅れて追加で2本召喚
-    execute if entity @s[tag=26.Phase2,scores={26.Tick=30}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/4.addition_thunder
+    execute if entity @s[tag=26.HealthLess50Per,scores={26.Tick=30}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/4.addition_thunder
 
 # リセット
     execute if entity @s[scores={26.Tick=50..}] run function asset:mob/0078.messenger_of_thunder/tick/reset

@@ -8,5 +8,5 @@
     scoreboard players set @s 26.Tick -80
 
 # スポーン時、ハード以上なら即フェーズ2へ
-    execute if predicate api:global_vars/difficulty/min/hard run tag @s add 26.Phase2
+    execute if predicate api:global_vars/difficulty/min/hard run tag @s add 26.HealthLess50Per
     execute if predicate api:global_vars/difficulty/min/hard run item replace entity @s weapon.mainhand with bow{CustomModelData:20188,Enchantments:[{id:"punch",lvl:3s}]}
