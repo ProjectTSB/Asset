@@ -26,8 +26,8 @@
 
 # 範囲内にいたプレイヤーにダメージを与える
 # ハード以上で火力を上げる 難易度上がるとダメージが上がるのはわかった上での実装
-    data modify storage api: Argument.Damage set value 22.5f
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 25.0f
+    data modify storage api: Argument.Damage set value 15f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 18.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
