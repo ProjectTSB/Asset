@@ -14,3 +14,7 @@
     $execute positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2
     $execute positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2
     $execute positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2
+
+# ハードかつ体力半分以下で追加で2本召喚する
+    $execute if entity @s[tag=26.HPLess50Per] positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2
+    $execute if entity @s[tag=26.HPLess50Per] positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2

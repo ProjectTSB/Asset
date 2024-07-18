@@ -2,7 +2,7 @@
 #
 # 偏差の処理2
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/3.predict_point.m
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/3.predict_point1.m
 
 # 演出
     playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.5 0
