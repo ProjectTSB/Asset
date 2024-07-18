@@ -6,7 +6,7 @@
 
 # 設置位置となるMarkerを召喚
     summon marker ~ ~ ~ {Tags:["26.SkillThunderMarker"]}
-    data modify storage lib: Argument.Bounds set value [[12d,12d],[0d,0d],[12d,12d]]
+    data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,0d],[3d,3d]]
     execute as @e[type=marker,tag=26.SkillThunderMarker,distance=..0.01,limit=1] run function lib:spread_entity/
 
 # 召喚
