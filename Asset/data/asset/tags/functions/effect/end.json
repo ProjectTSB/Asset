@@ -1,11 +1,13 @@
 {
     "values": [
-        "asset:effect/0218.heavy_weight/_/end",
         "asset:effect/0202.sheep_blessing/_/end",
         "asset:effect/0204.void_transaction/_/end",
+        "asset:effect/0206.spirit_state/_/end",
         "asset:effect/0212.lunatic_moon/_/end",
         "asset:effect/0213.reflecting_sky/_/end",
         "asset:effect/0214.quick_charge/_/end",
+        "asset:effect/0217.the_answer/_/end",
+        "asset:effect/0218.heavy_weight/_/end",
         "asset:effect/0219.blood_eater/_/end",
         "asset:effect/0220.dream_of_burning_butterfly/_/end",
         "asset:effect/0221.hunters_run/_/end",
@@ -17,10 +19,10 @@
         "asset:effect/0251.oracle_magic_defense/_/end",
         "asset:effect/0253.purifying_indigo/_/end",
         "asset:effect/0257.sprout/_/end",
+        "asset:effect/0259.virtual_image/_/end",
+        "asset:effect/0260.life_steal/_/end",
         "asset:effect/0605.aurora_corrosion/_/end",
         "asset:effect/0608.sinking/_/end",
-        "asset:effect/0612.infringement/_/end",
-        "asset:effect/0217.the_answer/_/end",
-        "asset:effect/0259.virtual_image/_/end"
+        "asset:effect/0612.infringement/_/end"
     ]
 }
