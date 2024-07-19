@@ -23,15 +23,15 @@
     function lib:array/math/scalar_multiply
 
 # 別のstorageに移す
-    data modify storage asset:temp Vector.X set from storage lib: MulResult[0]
-    data modify storage asset:temp Vector.Z set from storage lib: MulResult[2]
+    data modify storage asset:temp Predict.X set from storage lib: MulResult[0]
+    data modify storage asset:temp Predict.Z set from storage lib: MulResult[2]
 
 # セッション閉じる
     function lib:array/session/close
 
 # マクロで偏差撃ちする
-    execute at @p[tag=Target] run function asset:mob/0190.thunder_mage/tick/5.predict.m with storage asset:temp Vector
+    execute at @p[tag=Target] run function asset:mob/0190.thunder_mage/tick/5.predict.m with storage asset:temp Predict
 
 # リセット
     tag @p[tag=Target] remove Target
-    data remove storage asset:temp Vector
+    data remove storage asset:temp Predict
