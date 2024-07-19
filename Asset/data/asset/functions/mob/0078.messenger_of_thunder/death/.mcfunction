@@ -6,6 +6,6 @@
 
 # 演出
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 150
+    particle minecraft:large_smoke ~ ~0.2 ~ 0 0 0 0.4 250
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2 0
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.5 0 0
