@@ -25,7 +25,7 @@
     function api:global_vars/get_difficulty
     execute store result storage api: Argument.Heal int 150 run data get storage api: Return.Difficulty
     function api:heal/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run function lib:heal/
+    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run function api:heal/
     function api:heal/reset
 
 # リセット
