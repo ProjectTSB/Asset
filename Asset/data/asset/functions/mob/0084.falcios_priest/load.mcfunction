@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/0.load
+#> asset:mob/0084.falcios_priest/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
@@ -7,4 +7,3 @@
 #> 定義類はここに
 # @within function asset:mob/0084.falcios_priest/**
     scoreboard objectives add 2C.Tick dummy
-    scoreboard objectives add 2C.Skill dummy
