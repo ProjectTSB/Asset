@@ -1,4 +1,4 @@
-#> asset:mob/0369.prominence_spellbook/tick/
+#> asset:mob/0369.prominence_spellbook/tick/1
 #
 # Mobのtick時の処理
 #
@@ -21,3 +21,6 @@
 
 # スコア
     scoreboard players add @s A9.Tick 1
+
+# 攻撃
+    execute if entity @s[scores={A9.Tick=0..}] run function asset:mob/0369.prominence_spellbook/tick/2.ready
