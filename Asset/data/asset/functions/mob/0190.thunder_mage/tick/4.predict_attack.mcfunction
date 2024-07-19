@@ -7,8 +7,6 @@
 #> Private
 # @private
     #declare tag Target
-    #declare score_holder $VectorX
-    #declare score_holder $VectorZ
 
 # 攻撃対象にTagを付与
     tag @r[distance=..15] add Target
