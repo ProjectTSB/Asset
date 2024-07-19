@@ -29,7 +29,7 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:10355973}}}
+        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:7209731}}}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value
     # 脚 (Compound(Item)) (オプション)
@@ -39,11 +39,11 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    # data modify storage asset:mob Health set value
+    data modify storage asset:mob Health set value 2000
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
-    # data modify storage asset:mob Defense set value
+    data modify storage asset:mob Defense set value 0
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
@@ -56,9 +56,9 @@
     # 物理倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Physical set value
     # 魔法倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Magic set value
+        data modify storage asset:mob Resist.Magic set value 0.8
     # 火倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Fire set value
+        data modify storage asset:mob Resist.Fire set value 0.5
     # 水倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Water set value
     # 雷倍率 (float) (オプション)
