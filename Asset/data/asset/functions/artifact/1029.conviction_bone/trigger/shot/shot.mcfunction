@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/1029.conviction_bone/trigger/shot/schedule
 
-
 # 自分にタグ付与
     tag @s add SL.This
 

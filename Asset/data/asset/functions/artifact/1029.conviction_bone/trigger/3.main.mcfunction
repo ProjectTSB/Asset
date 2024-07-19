@@ -14,10 +14,10 @@
     particle squid_ink ~ ~ ~ 2 2 2 0 300 normal
     playsound minecraft:block.end_portal.spawn player @a ~ ~ ~ 1 0.8
 
-# 魚召喚
+# 剣召喚
     summon item_display ~ ~ ~ {teleport_duration:1,Tags:["SL.Sword","SL.First","Object"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,4f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20349}}}
 
-# 魚の寿命を設定する
+# 剣の寿命を設定する
     scoreboard players set @e[type=item_display,tag=SL.First] SL.SwordTime 60
 
 # ユーザーID適応

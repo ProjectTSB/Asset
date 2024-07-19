@@ -16,7 +16,6 @@
     execute rotated ~315 0 positioned ^ ^ ^2 positioned ~ ~1.3 ~ run function asset:artifact/1029.conviction_bone/trigger/shot/summon
 
 # 演出
-
     playsound minecraft:item.trident.thunder player @a ~ ~ ~ 4 1
     playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 4 0.7
 
