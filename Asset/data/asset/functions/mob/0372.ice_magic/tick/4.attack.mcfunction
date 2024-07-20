@@ -25,6 +25,3 @@
 
 # 当たったなら消滅
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..1.5] run kill @s
-
-# tpする
-# 段差にはある程度対応する
