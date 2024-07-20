@@ -23,8 +23,8 @@
 # ノーマル以上ならデバフを付与
     execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function asset:mob/0372.ice_magic/tick/5.debuff
 
-# tpする
-    tp @s ^ ^ ^1.5
-
 # 当たったなら消滅
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..1.5] run kill @s
+
+# tpする
+# 段差にはある程度対応する

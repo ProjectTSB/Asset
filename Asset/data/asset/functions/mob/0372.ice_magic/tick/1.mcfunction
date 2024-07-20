@@ -19,4 +19,3 @@
     execute if entity @s[scores={AC.Tick=80..99}] run kill @s
     execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={AC.Tick=118..}] run kill @s
     execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={AC.Tick=127..}] run kill @s
-    execute at @s unless block ~ ~ ~ #lib:no_collision run kill @s
