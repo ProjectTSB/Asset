@@ -1,8 +1,8 @@
-#> asset:effect/0614.ice_curse/tick/
+#> asset:effect/0615.ice_curse/tick/
 #
 # Effectのtick処理
 #
-# @within function asset:effect/0614.ice_curse/_/tick
+# @within function asset:effect/0615.ice_curse/_/tick
 
 #> Private
 # @private
@@ -16,5 +16,5 @@
 
 # 20tick間隔で演出
     scoreboard players operation $Interval Temporary %= $20 Const
-    execute if score $Interval Temporary matches 0 positioned ~ ~1.2 ~ run function asset:effect/0614.ice_curse/tick/damage
+    execute if score $Interval Temporary matches 0 positioned ~ ~1.2 ~ run function asset:effect/0615.ice_curse/tick/damage
     scoreboard players reset $Interval Temporary

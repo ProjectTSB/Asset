@@ -1,13 +1,13 @@
-#> asset:effect/0614.ice_curse/register
+#> asset:effect/0615.ice_curse/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0614.ice_curse/_/register
+# @within function asset:effect/0615.ice_curse/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 614
+    data modify storage asset:effect ID set value 615
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"氷雪の呪い","color":"aqua"}'
 # 説明文 (TextComponentString[])

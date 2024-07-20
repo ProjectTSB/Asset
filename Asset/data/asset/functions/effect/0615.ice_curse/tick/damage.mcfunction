@@ -1,8 +1,8 @@
-#> asset:effect/0614.ice_curse/tick/damage
+#> asset:effect/0615.ice_curse/tick/damage
 #
 # スリップダメージ
 #
-# @within function asset:effect/0614.ice_curse/tick/
+# @within function asset:effect/0615.ice_curse/tick/
 
 #> Private
 # @private
