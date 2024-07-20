@@ -12,8 +12,8 @@
     scoreboard players operation $Interval Temporary = @s AA.Tick
     scoreboard players operation $Interval Temporary %= $3 Const
     execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=100..109}] run function asset:mob/0370.prominence_magic/tick/vfx/ready1
-    execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=111..119}] run function asset:mob/0370.prominence_magic/tick/vfx/ready2
-    execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=121..129}] run function asset:mob/0370.prominence_magic/tick/vfx/ready3
+    execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=111..129}] run function asset:mob/0370.prominence_magic/tick/vfx/ready2
+    execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=131..149}] run function asset:mob/0370.prominence_magic/tick/vfx/ready3
     scoreboard players reset $Interval Temporary
 
 # 1回目の爆発
