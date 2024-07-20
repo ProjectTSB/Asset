@@ -9,7 +9,7 @@
     # function asset:mob/extends
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value true
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 227
 # Type (string) Wikiを参照
