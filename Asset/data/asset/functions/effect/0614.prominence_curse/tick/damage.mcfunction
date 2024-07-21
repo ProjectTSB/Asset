@@ -10,7 +10,7 @@
 
 # 演出
     particle flame ~ ~0.5 ~ 0.2 0.4 0.2 0.1 20 normal @a
-    playsound entity.blaze.shoot player @a ~ ~ ~ 0.4 1.7 0
+    playsound entity.blaze.shoot player @a ~ ~ ~ 0.4 1.2 0
 
 # 2(N+1)ダメージ
     execute store result score $Damage Temporary run data get storage asset:context Stack
