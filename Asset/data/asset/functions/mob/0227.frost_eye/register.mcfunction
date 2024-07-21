@@ -65,5 +65,5 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
-# [与えるダメージ]
-    data modify storage asset:mob Field set value [16]
+# 与えるダメージ
+    data modify storage asset:mob Field set value 16
