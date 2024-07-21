@@ -4,7 +4,10 @@
 #
 # @within function asset:mob/0370.prominence_magic/tick/3.on_ground
 
-# 演出
-    playsound entity.generic.explode hostile @a ~ ~ ~ 0.8 0.65 0
-    execute positioned ~ ~0.4 ~ run function asset:mob/0370.prominence_magic/tick/vfx/2nd
-#
+# 2箇所で爆発
+    execute rotated ~0 ~ positioned ^ ^ ^2.4 run function asset:mob/0370.prominence_magic/tick/damage
+    execute rotated ~180 ~ positioned ^ ^ ^2.4 run function asset:mob/0370.prominence_magic/tick/damage
+
+# ハード以上で追加で2箇所
+    execute if predicate api:global_vars/difficulty/min/hard rotated ~90 ~ positioned ^ ^ ^2.4 run function asset:mob/0370.prominence_magic/tick/damage
+    execute if predicate api:global_vars/difficulty/min/hard rotated ~270 ~ positioned ^ ^ ^2.4 run function asset:mob/0370.prominence_magic/tick/damage

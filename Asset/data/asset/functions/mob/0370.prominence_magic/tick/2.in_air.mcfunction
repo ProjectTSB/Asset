@@ -5,8 +5,11 @@
 # @within function asset:mob/0370.prominence_magic/tick/1
 
 # 演出
-    particle dust 0.541 0.055 0.055 1 ~ ~ ~ 0.1 0.1 0.1 0 2 normal @a
-    execute if predicate lib:random_pass_per/70 run particle flame ~ ~ ~ 0.05 0.05 0.05 0 1
+    particle dust_color_transition 0.922 0.318 0.133 1.2 0.757 0.275 0.129 ~ ~ ~ 0.1 0.1 0.1 0 1 normal @a
+    particle flame ~ ~ ~ 0.05 0.05 0.05 0 1
+    execute rotated ~ ~2 run particle dust_color_transition 0.922 0.318 0.133 1.2 0.757 0.275 0.129 ^ ^ ^0.5 0.1 0.1 0.1 0 1 normal @a
+    execute rotated ~ ~2 run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1
+    playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.1 1.5 0
 
 # 地面に着弾するまで直進
     tp @s ^ ^ ^0.5 ~ ~2
