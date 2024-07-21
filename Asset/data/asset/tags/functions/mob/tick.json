@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0227.frost_eye/_/tick",
         "asset:mob/0085.soul_bullet/_/tick",
         "asset:mob/0084.falcios_priest/_/tick",
         "asset:mob/0302.call_gun/tick/1.trigger",
@@ -39,7 +40,6 @@
         "asset:mob/0211.aurora_bullet/tick/1.trigger",
         "asset:mob/0210.aurora_eye/tick/1.trigger",
         "asset:mob/0287.burning_stomper/tick/1.trigger",
-        "asset:mob/0228.frost_eye/tick/1.trigger",
         "asset:mob/0262.frestchika/tick/1.trigger",
         "asset:mob/0232.honey_leader/tick/1.trigger",
         "asset:mob/0263.orange/tick/1.trigger",

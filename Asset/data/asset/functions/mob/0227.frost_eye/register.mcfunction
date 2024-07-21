@@ -1,19 +1,25 @@
-#> asset:mob/0228.frost_eye/summon/2.summon
+#> asset:mob/0227.frost_eye/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0228.frost_eye/summon/1.trigger
+# @within function asset:mob/0227.frost_eye/_/register
 
-# 元となるMobを召喚する
-    summon stray ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"asset:mob/death/0228.frost_eye"}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:mob ID set value 228
+    data modify storage asset:mob ID set value 227
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"フロストアイ","color":"#C9FFF8"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -33,19 +39,19 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 320
+    data modify storage asset:mob Health set value 1000
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 1
+    # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
-    data modify storage asset:mob Defense set value 0
+    # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    data modify storage asset:mob Speed set value 0.25
+    # data modify storage asset:mob Speed set value
 # 索敵範囲 (double) (オプション)
-    data modify storage asset:mob FollowRange set value 32
+    # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
-    data modify storage asset:mob KnockBackResist set value 0.6
+    # data modify storage asset:mob KnockBackResist set value
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 0.75
@@ -58,5 +64,6 @@
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
 
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=stray,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+# 与えるダメージ
+    data modify storage asset:mob Field set value 16
