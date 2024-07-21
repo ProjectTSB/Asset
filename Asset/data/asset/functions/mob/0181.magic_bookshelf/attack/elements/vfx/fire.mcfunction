@@ -1,10 +1,9 @@
-#> asset:mob/0181.magic_bookshelf/attack/4.fire_particle
+#> asset:mob/0181.magic_bookshelf/attack/elements/vfx/fire
 #
+# 火属性攻撃のvfx
 #
-#
-# @within function asset:mob/0181.magic_bookshelf/attack/3.fire
+# @within function asset:mob/0181.magic_bookshelf/attack/elements/fire
 
-# パーティクル
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmABwAMcAZqQOzUBsAtAIwAsLArG12oAmAJxsR1AMxcBvSXUmjqHUnUpgCAOwCGAWwTJAYYoACDhrAxtGPQGck4FAHtCmiEl7UCKOK7gZ7YABu2tiEBuAAHkieYFDRAL7xBNakaIR2iEIENhBWbogxcNjYaDA2BhzUMRiOuRAGMWg2AKLFpeXNAI6EIdhQAMqW3uSIdCHliXjg0PAUMI59AOaOmubEZBTUEnBCAEaM-FWkKAJj2mzaXIyMFxyS2pKkQlwi2kLU5jr6FIBYmoBLkYAjfVM5ks1l0GQczlcSA4LC8Pnq-kQ4GCoXCYCiBQIcQKkzAKTSGSyYByeWiBCKJTKFSqyVq2nq5NQjgwmj87gIACtCLoYEhibs4AAvNDsrFgJqtKkdbq9AZDOAjMbYcoEJoAIWFoowXR6xXl2mGSAgGDCiQAukA_3
 # 多角形 1

@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0181.magic_bookshelf/_/register",
         "asset:mob/0364.white_magic/_/register",
         "asset:mob/0363.white_spellbook/_/register",
         "asset:mob/0228.frost_eye/_/register",

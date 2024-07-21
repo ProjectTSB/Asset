@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0181.magic_bookshelf/_/summon",
         "asset:mob/0364.white_magic/_/summon",
         "asset:mob/0363.white_spellbook/_/summon",
         "asset:mob/0228.frost_eye/_/summon",
@@ -152,7 +153,6 @@
         "asset:mob/0076.golden_watermelon_bomber/summon/1.trigger",
         "asset:mob/0077.golden_watermelon/summon/1.trigger",
         "asset:mob/0171.lumberjack_of_blue_forest/summon/1.trigger",
-        "asset:mob/0181.magic_bookshelf/summon/1.trigger",
         "asset:mob/0185.tutankhamen/summon/1.trigger",
         "asset:mob/0154.ruin/summon/1.trigger",
         "asset:mob/0080.fukotsu/summon/1.trigger",

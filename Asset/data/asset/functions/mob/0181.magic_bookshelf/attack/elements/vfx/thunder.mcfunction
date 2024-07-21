@@ -1,10 +1,8 @@
-#> asset:mob/0181.magic_bookshelf/attack/8.thunder_particle
+#> asset:mob/0181.magic_bookshelf/attack/elements/vfx/thunder
 #
+# 雷属性攻撃のvfx
 #
-#
-# @within function asset:mob/0181.magic_bookshelf/attack/7.thunder
-
-# パーティクル
+# @within function asset:mob/0181.magic_bookshelf/attack/elements/thunder
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmABwAMcAZqQOzUBsAtAIwAsLArG12oAmAJxsR1AMxcBvSXUmjqHUnUpgCAOwCGAWwTJAYYoACDhrAxtGPQGck4FAHtCmiEl7UCKOK7gZ7YABu2tiEBuAAHkieYFDRAL7xBNakaIR2iEIENhBWbogxcNjYaDA2BhzUMRiOuRAGMWg2AKLFpeXNAI6EIdhQAMqW3uSIdCHliXjg0PAUMI59AOaOmubEZBTUEnBCAEaM-FWkKAJj2mzaXIyMFxyS2pKkQlwi2kLU5jr6FIBYmoBLkYAjfVM5ks1l0GQczlcSA4LC8Pnq-kQ4GCoXCYCiBQIcQKkzAKTSGSyYByeWiBCKJTKFSqyVq2nq5NQjgwmj87gIACtCLoYEhibs4AAvNDsrFgJqtKkdbq9AZDOAjMbYcoEJoAIWFoowXR6xXl2mGSAgGDCiQAukA_3
 # 多角形 1

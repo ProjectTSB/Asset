@@ -1,11 +1,15 @@
-#> asset:mob/0181.magic_bookshelf/summon/2.summon
+#> asset:mob/0181.magic_bookshelf/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0181.magic_bookshelf/summon/1.trigger
+# @within function asset:mob/0181.magic_bookshelf/_/register
 
-# 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0181.magic_bookshelf"}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 181
 # Type (string) Wikiを参照
@@ -14,6 +18,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"魔法の本棚","color":"dark_purple"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"enchanted_book",Count:1b}
@@ -35,11 +41,11 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 2900
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 5
+    data modify storage asset:mob AttackDamage set value 1
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value -6
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
-    # data modify storage asset:mob SpecialDefense set value 0
+    # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
     # data modify storage asset:mob Speed set value
 # 索敵範囲 (double) (オプション)
@@ -48,14 +54,15 @@
     data modify storage asset:mob KnockBackResist set value 0.5
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 1
+        # data modify storage asset:mob Resist.Physical set value
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 0.4
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 1
+        # data modify storage asset:mob Resist.Fire set value
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 1
+        # data modify storage asset:mob Resist.Water set value
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 1
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+        # data modify storage asset:mob Resist.Thunder set value
+
+# フィールド
+    # data modify storage asset:mob Field set value {}

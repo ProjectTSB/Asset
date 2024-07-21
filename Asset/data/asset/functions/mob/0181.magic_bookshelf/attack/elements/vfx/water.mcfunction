@@ -1,10 +1,8 @@
-#> asset:mob/0181.magic_bookshelf/attack/6.water_particle
+#> asset:mob/0181.magic_bookshelf/attack/elements/vfx/water
 #
+# 水属性攻撃のvfx
 #
-#
-# @within function asset:mob/0181.magic_bookshelf/attack/5.water
-
-# パーティクル
+# @within function asset:mob/0181.magic_bookshelf/attack/elements/water
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmABwAMcAZqQOzUBsAtAIwAsLArG12oAmAJxsR1AMxcBvSXUmjqHUnUpgCAOwCGAWwTJAYYoACDhrAxtGPQGck4FAHtCmiEg7VqBFHFdwM9mAAbtrYhAbgAB5IXmBQMQC+CQTWpGiEdohCBDYQVm6IsXDY2GgwNgYesRiOeRAGsWg2AKIlZRXNAI6EodhQAMqWPuSIdKEVSXjg0PAUMI59AOaOmubEZBTUEnBCAEaM-J6kKAJj2mzaXIyMFxyS2pKkQlwi2kLU5jr6FIBYmoBLkYAjfVM5ks1l0mQczlcSEU3l89QCiHAITCETA0UKBHihUmYFS6Uy2TAuXyMQIxVK5UqnhStW09TJqEcGE0-iQvAIACtCLoYEgibs4AAvNBszFgJqtSkdbq9AZDOAjMbYCoEJoAIWFoowXR6JXl2mGSAgGHCSQAukA_3
 # 多角形 1
