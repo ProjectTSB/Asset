@@ -10,7 +10,7 @@
 
 # 予備動作
     scoreboard players operation $Interval Temporary = @s AA.Tick
-    scoreboard players operation $Interval Temporary %= $3 Const
+    scoreboard players operation $Interval Temporary %= $5 Const
     execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=100..109}] run function asset:mob/0370.prominence_magic/tick/vfx/ready1
     execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=111..129}] run function asset:mob/0370.prominence_magic/tick/vfx/ready2
     execute if score $Interval Temporary matches 0 if entity @s[scores={AA.Tick=131..149}] run function asset:mob/0370.prominence_magic/tick/vfx/ready3
