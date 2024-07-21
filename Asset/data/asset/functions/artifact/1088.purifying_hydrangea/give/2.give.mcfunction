@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"浄藍の紫陽花","color":"#83aaf7"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、解除可能なデバフを1つ解除する。","color":"white"}','{"text":"この効果後にデバフが付与されていない場合","color":"white"}','[{"text":"自身と周囲の1名に","color":"white"},{"text":"水攻撃+10%","color":"aqua"},{"text":"を10秒間付与する。","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花。","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、解除可能なデバフを1つ解除し","color":"white"}','[{"text":"自身と周囲の1名に","color":"white"},{"text":"水攻撃+10%","color":"aqua"},{"text":"を10秒間付与する。","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花。","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
