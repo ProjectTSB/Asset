@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0363.white_spellbook/_/death",
         "asset:mob/0227.frost_eye/_/death",
         "asset:mob/0084.falcios_priest/_/death",
         "asset:mob/0237.lunatic_mage/death/1.trigger",

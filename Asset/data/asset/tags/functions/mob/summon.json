@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0364.white_magic/_/summon",
+        "asset:mob/0363.white_spellbook/_/summon",
         "asset:mob/0228.frost_eye/_/summon",
         "asset:mob/0227.frost_eye/_/summon",
         "asset:mob/0085.soul_bullet/_/summon",

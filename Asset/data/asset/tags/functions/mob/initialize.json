@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0363.white_spellbook/_/init",
         "asset:mob/0085.soul_bullet/_/init",
         "asset:mob/0084.falcios_priest/_/init",
         "asset:mob/0332.aurora_missile/_/init",
