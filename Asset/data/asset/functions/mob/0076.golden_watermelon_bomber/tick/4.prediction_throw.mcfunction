@@ -1,8 +1,8 @@
-#> asset:mob/0074.watermelon_bomber/tick/4.prediction_throw
+#> asset:mob/0076.golden_watermelon_bomber/tick/4.prediction_throw
 #
 # 偏差で投げる
 #
-# @within function asset:mob/0074.watermelon_bomber/tick/2.throw
+# @within function asset:mob/0076.golden_watermelon_bomber/tick/2.throw
 
 # ターゲット @p
 
