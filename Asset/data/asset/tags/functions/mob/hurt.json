@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:mob/0227.frost_eye/_/hurt",
+        "asset:mob/0237.lunatic_mage/hurt/1.trigger",
+        "asset:mob/0078.messenger_of_thunder/hurt/1.trigger",
+        "asset:mob/0060.self_destructor/hurt/1.trigger",
+        "asset:mob/0055.hetukedah/hurt/1.trigger",
+        "asset:mob/0046.clock_of_despair/hurt/1.trigger",
         "asset:mob/0336.cherry_blossom_fairy/hurt/1.trigger",
         "asset:mob/0152.desire/hurt/1.trigger",
         "asset:mob/0154.ruin/hurt/1.trigger",
@@ -17,7 +23,6 @@
         "asset:mob/0216.gray_guardian/hurt/1.trigger",
         "asset:mob/0292.trample_bot/hurt/1.trigger",
         "asset:mob/0210.aurora_eye/hurt/1.trigger",
-        "asset:mob/0228.frost_eye/hurt/1.trigger",
         "asset:mob/0262.frestchika/hurt/1.trigger",
         "asset:mob/0232.honey_leader/hurt/1.trigger",
         "asset:mob/0217.medousa_eye/hurt/1.trigger",

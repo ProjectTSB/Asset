@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:mob/0228.frost_eye/_/register",
+        "asset:mob/0227.frost_eye/_/register",
+        "asset:mob/0085.soul_bullet/_/register",
+        "asset:mob/0084.falcios_priest/_/register",
         "asset:mob/0332.aurora_missile/_/register",
         "asset:mob/0331.aurora_sorcerer/_/register",
         "asset:mob/0083.thunder_trifler/_/register",
