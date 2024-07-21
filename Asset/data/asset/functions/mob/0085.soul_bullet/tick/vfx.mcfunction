@@ -1,8 +1,8 @@
 #> asset:mob/0085.soul_bullet/tick/vfx
 #
-# 円1
+# vfx
 #
-# @within function asset:mob/0085.soul_bullet/tick/2.tick
+# @within function asset:mob/0085.soul_bullet/tick/
 
 # 演出
     particle soul_fire_flame ~ ~ ~ ^ ^30000000 ^ 0.000000004 0 normal @a

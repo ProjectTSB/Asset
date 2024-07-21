@@ -4,6 +4,7 @@
         "asset:effect/0212.lunatic_moon/_/remove",
         "asset:effect/0213.reflecting_sky/_/remove",
         "asset:effect/0214.quick_charge/_/remove",
+        "asset:effect/0215.purification/_/remove",
         "asset:effect/0217.the_answer/_/remove",
         "asset:effect/0218.heavy_weight/_/remove",
         "asset:effect/0219.blood_eater/_/remove",
@@ -17,10 +18,13 @@
         "asset:effect/0251.oracle_magic_defense/_/remove",
         "asset:effect/0253.purifying_indigo/_/remove",
         "asset:effect/0257.sprout/_/remove",
+        "asset:effect/0259.virtual_image/_/remove",
         "asset:effect/0260.life_steal/_/remove",
         "asset:effect/0605.aurora_corrosion/_/remove",
+        "asset:effect/0607.sedation/_/remove",
         "asset:effect/0608.sinking/_/remove",
         "asset:effect/0612.infringement/_/remove",
-        "asset:effect/0217.the_answer/_/remove"
+        "asset:effect/0217.the_answer/_/remove",
+        "asset:effect/0613.white_curse/_/remove"
     ]
 }
