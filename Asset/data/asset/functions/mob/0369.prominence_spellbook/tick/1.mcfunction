@@ -13,7 +13,7 @@
 
 # 移動
 # 移動CDがあるときは速度が下がる
-    execute unless entity @s[scores={A9.StepBack=0..}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
+    execute unless entity @s[scores={A9.StepBack=0..}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
     execute if entity @s[scores={A9.StepBack=0..}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^-0.1 ~ ~
 
 # プレイヤーが近くにいてかつ移動CDがない時にCDスコアを設定
