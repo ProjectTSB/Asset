@@ -18,7 +18,7 @@
     data modify storage asset:temp Predict.ReachableRange set value 1.5
 
 # 偏差位置を割り出す
-    execute at @p run function asset:mob/0076.golden_watermelon_bomber/tick/5.prediction_aim with storage asset:temp Predict
+    execute at @p run function asset:mob/0076.golden_watermelon_bomber/tick/5.prediction_aim.m with storage asset:temp Predict
 
 # スイカを召喚する
     data modify storage api: Argument.ID set value 77
