@@ -35,6 +35,5 @@
     execute as @a[tag=ClearTarget] at @s run function asset:artifact/1108.white_lily_of_priestess/trigger/5.clear_debuff
 
 # リセット
-    scoreboard players reset @a Temporary
     scoreboard players reset $TargetCount Temporary
     tag @a[tag=ClearTarget] remove ClearTarget

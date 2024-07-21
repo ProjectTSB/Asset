@@ -20,3 +20,4 @@
 
 # リセット
     scoreboard players reset $DebuffTotal Temporary
+    scoreboard players reset @a[distance=..20] Temporary
