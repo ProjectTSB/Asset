@@ -1,10 +1,15 @@
-#> asset:mob/0074.watermelon_bomber/tick/5.prediction_aim
+#> asset:mob/0074.watermelon_bomber/tick/5.prediction_aim.m
 #
 # 偏差を求める
 #
+# @input args:
+#   X: double
+#   Z: double
+#   Reachable: int
+#
 # @within function
 #   asset:mob/0074.watermelon_bomber/tick/4.prediction_throw
-#   asset:mob/0074.watermelon_bomber/tick/5.prediction_aim
+#   asset:mob/0074.watermelon_bomber/tick/5.prediction_aim.m
 
 # 移動先が魔法の到達範囲内なら目印用Markerを召喚
     $execute positioned ~$(X) ~ ~$(Z) if entity @s[distance=..$(ReachableRange)] as @p anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["PredictionMarker"]}
