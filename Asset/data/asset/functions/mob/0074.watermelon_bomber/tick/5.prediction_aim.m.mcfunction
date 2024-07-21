@@ -19,4 +19,4 @@
 
 # 再帰処理
     scoreboard players add $Recursive Temporary 1
-    $execute if score $Recursive Temporary matches ..20 positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] unless entity @s[distance=..$(ReachableRange)] run function asset:mob/0074.watermelon_bomber/tick/5.prediction_aim with storage asset:temp Predict
+    $execute if score $Recursive Temporary matches ..20 positioned ~$(X) ~ ~$(Z) if entity @s[distance=..30] unless entity @s[distance=..$(ReachableRange)] run function asset:mob/0074.watermelon_bomber/tick/5.prediction_aim.m with storage asset:temp Predict
