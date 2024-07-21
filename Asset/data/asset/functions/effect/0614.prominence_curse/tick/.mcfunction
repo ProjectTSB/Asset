@@ -9,7 +9,7 @@
     #declare score_holder $Interval
 
 # 演出
-    execute if predicate lib:random_pass_per/60 run particle dust_color_transition 0.922 0.318 0.133 1 0.757 0.275 0.129 ~ ~1.2 ~ 0.4 0.2 0.4 0 1 normal @a
+    execute if predicate lib:random_pass_per/60 run particle dust_color_transition 0.922 0.318 0.133 1 0.51 0.067 0.051 ~ ~1.2 ~ 0.4 0.2 0.4 0 1 normal @a
 
 # スコアへDurationを代入する
     execute store result score $Interval Temporary run data get storage asset:context Duration
