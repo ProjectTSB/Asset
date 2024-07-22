@@ -17,4 +17,4 @@
 # プレイヤーの方向へ誘導する
 # ハード以上で弾速強化
     execute if predicate api:global_vars/difficulty/max/normal facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.15 ~ ~
-    execute if predicate api:global_vars/difficulty/min/hard facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
+    execute if predicate api:global_vars/difficulty/min/hard facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.25 ~ ~
