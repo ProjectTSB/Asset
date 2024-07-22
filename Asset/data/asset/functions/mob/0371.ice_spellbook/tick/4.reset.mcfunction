@@ -14,7 +14,7 @@
     execute store result score $Random Temporary run function lib:random/
     scoreboard players operation $Random Temporary %= $31 Const
     scoreboard players operation @s AB.Tick = $Random Temporary
-    scoreboard players remove @s AB.Tick 100
+    scoreboard players remove @s AB.Tick 120
 
 # リセット
     scoreboard players reset $Random Temporary
