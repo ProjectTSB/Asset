@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0370.prominence_magic/_/summon",
+        "asset:mob/0369.prominence_spellbook/_/summon",
         "asset:mob/0076.golden_watermelon_bomber/_/summon",
         "asset:mob/0074.watermelon_bomber/_/summon",
         "asset:mob/0077.golden_watermelon/_/summon",
