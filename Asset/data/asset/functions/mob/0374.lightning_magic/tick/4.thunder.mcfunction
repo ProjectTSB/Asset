@@ -21,5 +21,5 @@
 # ノーマル以上でデバフを付与する
     execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function asset:mob/0374.lightning_magic/tick/5.debuff
 
-# ノーマル以下ならヒット時に消滅
-    execute if predicate api:global_vars/difficulty/max/normal if entity @p[tag=!PlayerShouldInvulnerable,distance=..1.2] run kill @s
+# ヒット時に消滅
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..1.2] run kill @s
