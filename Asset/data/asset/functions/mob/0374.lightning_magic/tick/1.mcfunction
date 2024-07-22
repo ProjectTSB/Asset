@@ -15,4 +15,5 @@
 
 # 消滅
     execute if entity @s[scores={AE.Tick=80..99}] run kill @s
-    execute if entity @s[scores={AE.Tick=140..}] run kill @s
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={AE.Tick=140..}] run kill @s
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={AE.Tick=160..}] run kill @s
