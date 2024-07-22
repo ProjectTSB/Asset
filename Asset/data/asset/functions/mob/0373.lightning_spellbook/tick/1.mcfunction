@@ -19,7 +19,7 @@
     execute positioned ~-1 ~-3 ~-1 if entity @p[dx=1,dy=2,dz=1] at @s if entity @s[tag=!2D.LeftRotate] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~10 0
 
 # プレイヤーが近くにいたら上に移動
-    execute at @s if entity @p[distance=..4] run tp @s ~ ~0.2 ~
+    execute at @s if entity @p[distance=..4] if block ~ ~2.2 ~ #lib:no_collision run tp @s ~ ~0.2 ~
 
 # 不定期に急加速
     execute if predicate lib:random_pass_per/1 at @s run tp @s ^ ^ ^0.5
