@@ -13,7 +13,7 @@
 
 # 移動
 # プレイヤーが近くにいれば直進、いなければ誘導
-    execute if entity @p[distance=..6] run tp @s ^ ^ ^0.3
+    execute if entity @p[distance=..6] run tp @s ^ ^ ^0.2
     execute unless entity @p[distance=..6] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
 
 # カベにぶつかった際の処理
