@@ -11,6 +11,10 @@
 
 # 演出
     execute rotated ~ 0 positioned ~ ~0.3 ~ run function asset:artifact/1111.rod_o_redeem/trigger/vfx
+    execute rotated ~90 30 positioned ~ ~0.8 ~ run function asset:artifact/1111.rod_o_redeem/trigger/vfx2
+    execute rotated ~90 -30 positioned ~ ~0.8 ~ run function asset:artifact/1111.rod_o_redeem/trigger/vfx2
+    particle wax_off ~ ~1.2 ~ 0 0 0 12 60 normal @a
+
     playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.95
     playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.9
     playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.85
@@ -21,4 +25,4 @@
     playsound block.beacon.power_select player @a ~ ~ ~ 0.3 1.55 0
 
 # 周囲のプレイヤーのデバフを全解除
-    function asset:artifact/1111.rod_o_redeem/trigger/4.clear_debuff
+    execute as @a[distance=..2.5] run function asset:artifact/1111.rod_o_redeem/trigger/4.clear_debuff
