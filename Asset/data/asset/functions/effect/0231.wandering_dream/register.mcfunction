@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"彷徨える夢","color":"#FA63FF"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"魔法耐性と被回復量が上昇する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"被回復量が上昇し、魔法属性被ダメージが減少する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 160
 # スタック (int) (default = API || 1)
