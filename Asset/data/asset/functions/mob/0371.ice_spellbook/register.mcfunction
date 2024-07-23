@@ -17,7 +17,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"氷雪の魔導書","color":"aqua"}'
+    data modify storage asset:mob Name set value '{"text":"荒波の魔導書","color":"blue"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
@@ -29,7 +29,7 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:11927549}}}
+        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:3571711}}}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value
     # 脚 (Compound(Item)) (オプション)

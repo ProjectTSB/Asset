@@ -11,7 +11,7 @@
     execute if entity @s[scores={AB.Tick=1..2}] facing entity @p eyes anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0371.ice_spellbook/tick/vfx/1
     execute if entity @s[scores={AB.Tick=4..5}] facing entity @p eyes anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0371.ice_spellbook/tick/vfx/2
     execute if entity @s[scores={AB.Tick=7..8}] facing entity @p eyes anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0371.ice_spellbook/tick/vfx/3
-    execute if entity @s[scores={AB.Tick=1..8}] run playsound block.glass.break hostile @a ~ ~ ~ 0.2 1.95 0
+    execute if entity @s[scores={AB.Tick=1..8}] run playsound entity.dolphin.jump hostile @a ~ ~ ~ 0.2 0.9 0
 
 # 攻撃
     execute if entity @s[scores={AB.Tick=10..}] anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0371.ice_spellbook/tick/3.summon

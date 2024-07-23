@@ -9,8 +9,8 @@
     #declare score_holder $Damage
 
 # 演出
-    particle snowflake ~ ~0.5 ~ 0.2 0.4 0.2 0.1 20 normal @a
-    playsound block.glass.break player @a ~ ~ ~ 0.4 1.8 0
+    particle rain ~ ~ ~ 0.2 0.4 0.2 0.1 80 normal @a
+    playsound entity.dolphin.splash player @a ~ ~1.2 ~ 0.4 1 0
 
 # 2(N+1)ダメージ
     execute store result score $Damage Temporary run data get storage asset:context Stack
