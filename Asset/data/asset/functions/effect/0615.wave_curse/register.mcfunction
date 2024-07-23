@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 615
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"氷雪の呪い","color":"aqua"}'
+    data modify storage asset:effect Name set value '{"text":"荒波の呪い","color":"blue"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"継続的に魔法水属性ダメージを受ける","color":"white"}']
 # 効果時間 (int) (default = API || error)
