@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"神託・魔法耐性","color":"#F0E265"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"受ける魔法ダメージが減少する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"魔法属性被ダメージが低下する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 320
 # スタック (int) (default = API || 1)

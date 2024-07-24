@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"浄化"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"与える物理ダメージと魔法ダメージ、攻撃速度が上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"物理属性与ダメージと魔法属性与ダメージ、攻撃速度が上昇する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
