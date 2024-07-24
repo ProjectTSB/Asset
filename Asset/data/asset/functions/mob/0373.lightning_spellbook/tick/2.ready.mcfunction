@@ -14,4 +14,4 @@
     execute if entity @s[scores={AD.Tick=1..8}] run playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.1 1.7 0
 
 # 魔法を召喚
-    execute if entity @s[scores={AD.Tick=10..}] anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0373.lightning_spellbook/tick/3.summon
+    execute if entity @s[scores={AD.Tick=10..}] facing entity @p eyes anchored eyes positioned ^ ^ ^0.2 run function asset:mob/0373.lightning_spellbook/tick/3.summon

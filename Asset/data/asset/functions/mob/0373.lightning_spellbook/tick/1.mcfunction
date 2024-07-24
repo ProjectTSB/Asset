@@ -32,4 +32,4 @@
     scoreboard players add @s AD.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={AD.Tick=0..}] run function asset:mob/0373.lightning_spellbook/tick/2.ready
+    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0373.lightning_spellbook/tick/2.ready
