@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"神託・物理攻撃","color":"#F0E265"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"物理与ダメージが上昇する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"物理属性与ダメージが上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 320
 # スタック (int) (default = API || 1)
