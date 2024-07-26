@@ -10,10 +10,10 @@
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:block.honey_block.place hostile @a ~ ~ ~ 0.7 1 0
 
 # デバフ
-    effect give @a[tag=Victim,distance=..32] slowness 3 1 true
-    effect give @a[tag=Victim,distance=..32] mining_fatigue 3 1 true
-    execute if predicate api:global_vars/difficulty/max/normal run effect give @a[tag=Victim,distance=..32] poison 3 1 true
-    execute if predicate api:global_vars/difficulty/min/hard run effect give @a[tag=Victim,distance=..32] wither 3 1 true
+    effect give @p[tag=Victim,distance=..32] slowness 3 1 true
+    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
+    execute if predicate api:global_vars/difficulty/max/normal run effect give @p[tag=Victim,distance=..32] poison 3 1 true
+    execute if predicate api:global_vars/difficulty/min/hard run effect give @p[tag=Victim,distance=..32] wither 3 1 true
 
 # 与えるダメージ
     data modify storage lib: Argument.Damage set value 25f
