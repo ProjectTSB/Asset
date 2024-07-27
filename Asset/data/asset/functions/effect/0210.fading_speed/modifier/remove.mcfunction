@@ -3,7 +3,7 @@
 # 補正を削除する
 #
 # @within function
-#   asset:effect/0210.fading_speed/end/
+#   asset:effect/0210.fading_speed/re-given/
 #   asset:effect/0210.fading_speed/remove/
 
 # 移動速度バフを削除
