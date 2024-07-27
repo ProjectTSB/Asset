@@ -4,6 +4,10 @@
 #
 # @within function asset:effect/0211.fading_speed/_/re-given
 
+# 演出
+    particle minecraft:dragon_breath ~ ~1 ~ 0.1 0.1 0.1 0.03 100
+    playsound minecraft:entity.evoker.prepare_summon player @a
+
 # 最大体力の50%分の固定ダメージを受ける
     execute store result storage api: Argument.Damage double 0.5 run attribute @s generic.max_health get
     data modify storage api: Argument.AttackType set value "Physical"
