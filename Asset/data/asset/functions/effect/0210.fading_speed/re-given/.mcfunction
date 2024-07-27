@@ -9,7 +9,7 @@
     playsound minecraft:entity.evoker.prepare_summon player @a
 
 # 最大体力の20%分の固定ダメージを受ける
-# $DurationTimerが800以上なら50%の割合ダメージに変化
+# 5U.Tickが800以上なら50%の割合ダメージに変化
     execute store result storage api: Argument.Damage double 0.2 run attribute @s generic.max_health get
     execute if entity @s[scores={5U.Tick=800..}] store result storage api: Argument.Damage double 0.5 run attribute @s generic.max_health get
     data modify storage api: Argument.AttackType set value "Physical"
