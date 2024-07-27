@@ -6,3 +6,4 @@
 
 # 補正を付与する
     function asset:effect/0211.fading_speed/modifier/add
+
