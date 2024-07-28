@@ -9,7 +9,9 @@
 
 # 最大体力の40%分のダメージを受ける
     execute store result storage api: Argument.Damage double 0.4 run attribute @s generic.max_health get
+    data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは発狂し、内蔵をぶちまけた","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
