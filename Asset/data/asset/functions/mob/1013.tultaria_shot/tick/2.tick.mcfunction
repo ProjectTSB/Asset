@@ -14,4 +14,4 @@
     scoreboard players add @s S5.Tick 1
 
 # しばらくたつと消える
-    execute if score @s S5.Tick matches 100.. run kill @s
+    execute if score @s S5.Tick matches 60.. run kill @s
