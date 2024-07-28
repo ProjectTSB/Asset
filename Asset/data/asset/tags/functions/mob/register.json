@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0187.flame_mage/_/register",
         "asset:mob/0188.fireball/_/register",
         "asset:mob/0332.aurora_missile/_/register",
         "asset:mob/0331.aurora_sorcerer/_/register",

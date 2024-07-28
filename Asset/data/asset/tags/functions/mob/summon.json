@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0188.fireball/_/summon",
+        "asset:mob/0187.flame_mage/_/summon",
         "asset:mob/0337.shower_of_cherry_blossoms/summon/1.trigger",
         "asset:mob/0336.cherry_blossom_fairy/summon/1.trigger",
         "asset:mob/0332.aurora_missile/_/summon",

@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0188.fireball/load",
+        "asset:mob/0187.flame_mage/load",
         "asset:mob/0337.shower_of_cherry_blossoms/0.load",
         "asset:mob/0332.aurora_missile/load",
         "asset:mob/0331.aurora_sorcerer/load",
