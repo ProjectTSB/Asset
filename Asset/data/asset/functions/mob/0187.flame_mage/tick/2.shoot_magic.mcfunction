@@ -7,6 +7,7 @@
 #> Private
 # @private
     #declare tag Random
+    #declare score_holder $Random
 
 # ノーマル以下ならプレイヤーの方向
 # ハード以上で確率で偏差撃ちする
@@ -22,6 +23,12 @@
     playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 2
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 2 0.7
 
+# 次に攻撃するタイミングをランダムにする
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $31 Const
+    scoreboard players operation @s 57.Tick = $Random Temporary
+    scoreboard players remove @s 57.Tick 100
+
 # リセット
-    scoreboard players reset @s 57.Attack
+    scoreboard players reset $Random Temporary
     tag @s[tag=Random] remove Random
