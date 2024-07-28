@@ -19,7 +19,7 @@
 
 # ハード以上で足元に召喚できる範囲を強化
     execute if predicate api:global_vars/difficulty/min/hard if entity @p[gamemode=!spectator,distance=..6] at @p[gamemode=!spectator,distance=..6] run function api:mob/summon
-    execute if predicate api:global_vars/difficulty/min/hard if data storage api: Argument.ID if entity @p[gamemode=!spectator,distance=6..30] facing entity @p[gamemode=!spectator,distance=4..30] feet positioned ^ ^ ^7 run function api:mob/summon
+    execute if predicate api:global_vars/difficulty/min/hard if data storage api: Argument.ID if entity @p[gamemode=!spectator,distance=6..30] facing entity @p[gamemode=!spectator,distance=6..30] feet positioned ^ ^ ^7 run function api:mob/summon
 
 # 次に攻撃するタイミングをランダムにする
     execute store result score $Random Temporary run function lib:random/
