@@ -1596,8 +1596,8 @@
                         "# @private",
                         "",
                         "# モブを召喚",
-                        "   data modify storage api: Argument.ID set value %id%",
-                        "   function api:mob/summon"
+                        "    data modify storage api: Argument.ID set value %id%",
+                        "    function api:mob/summon"
                     ]
                 },
                 {
