@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/base_move/teleport/
+# @within
+#   function asset:mob/1004.tultaria/tick/base_move/teleport/
+#   function 
 
 # パーティクル
     particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @a[distance=..30]
