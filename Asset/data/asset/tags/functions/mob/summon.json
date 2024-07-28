@@ -2,6 +2,7 @@
     "values": [
         "asset:mob/0188.fireball/_/summon",
         "asset:mob/0187.flame_mage/_/summon",
+        "asset:mob/0219.aorta/_/summon",
         "asset:mob/0076.golden_watermelon_bomber/_/summon",
         "asset:mob/0074.watermelon_bomber/_/summon",
         "asset:mob/0077.golden_watermelon/_/summon",
@@ -75,7 +76,6 @@
         "asset:mob/0245.fire_creeper/summon/1.trigger",
         "asset:mob/0242.poltergeist_subspecies_bow/summon/1.trigger",
         "asset:mob/0241.poltergeist_subspecies/summon/1.trigger",
-        "asset:mob/0219.aorta/summon/1.trigger",
         "asset:mob/0220.vena_cana/summon/1.trigger",
         "asset:mob/0239.poltergeist_bow/summon/1.trigger",
         "asset:mob/0244.ignition_spider/summon/1.trigger",

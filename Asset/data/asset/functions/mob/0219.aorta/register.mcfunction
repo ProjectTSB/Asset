@@ -1,11 +1,15 @@
-#> asset:mob/0219.aorta/summon/2.summon
+#> asset:mob/0219.aorta/register
 #
-# Mobの召喚時の処理
+# Mobのデータを指定
 #
-# @within function asset:mob/0219.aorta/summon/1.trigger
+# @within function asset:mob/0219.aorta/_/register
 
-# 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/0219.aorta"}
+# 継承 (int) (オプション)
+    # data modify storage asset:mob Extends append value
+    # function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 219
 # Type (string) Wikiを参照
@@ -14,6 +18,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"大動脈","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -58,5 +64,5 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.4
 
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=zombie,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
+# フィールド
+    # data modify storage asset:mob Field set value {}
