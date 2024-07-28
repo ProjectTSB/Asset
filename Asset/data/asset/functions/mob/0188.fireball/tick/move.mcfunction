@@ -20,5 +20,7 @@
     execute unless block ~ ~ ~ #lib:no_collision run function asset:mob/0188.fireball/tick/hit
 
 # 再帰
+# 難易度に応じて再帰回数を弄る
     scoreboard players add $Recursive Temporary 1
-    execute if entity @s[tag=!58.Hit] if score $Recursive Temporary matches ..3 at @s run function asset:mob/0188.fireball/tick/move
+    execute if entity @s[tag=!58.Hit] if predicate api:global_vars/difficulty/max/normal if score $Recursive Temporary matches ..2 at @s run function asset:mob/0188.fireball/tick/move
+    execute if entity @s[tag=!58.Hit] if predicate api:global_vars/difficulty/min/hard if score $Recursive Temporary matches ..3 at @s run function asset:mob/0188.fireball/tick/move
