@@ -1,4 +1,4 @@
-#> asset:mob/0187.flame_mage/0.load
+#> asset:mob/0187.flame_mage/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0187.flame_mage/**
-    scoreboard objectives add 57.Attack dummy
+    scoreboard objectives add 57.Tick dummy
