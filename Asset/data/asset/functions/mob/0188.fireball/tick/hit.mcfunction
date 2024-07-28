@@ -12,5 +12,8 @@
     execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
     function api:damage/reset
 
+# 自身にヒットTagを付与
+    tag @s add 58.Hit
+
 # 消失
     kill @s

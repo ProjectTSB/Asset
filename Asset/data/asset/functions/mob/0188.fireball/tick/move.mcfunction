@@ -22,4 +22,4 @@
 
 # 再帰
     scoreboard players add $Recursive Temporary 1
-    execute if score $Recursive Temporary matches ..4 at @s run function asset:mob/0188.fireball/tick/move
+    execute if entity @s[tag=!58.Hit] if score $Recursive Temporary matches ..4 at @s run function asset:mob/0188.fireball/tick/move
