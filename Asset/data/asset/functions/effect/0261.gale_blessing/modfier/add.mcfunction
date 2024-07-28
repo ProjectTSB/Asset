@@ -9,7 +9,7 @@
 
 # 移動速度を(20*Stack)%付与
     execute store result storage asset:temp Effect.Value double 0.2 run data get storage asset:context Stack 1
-    function asset:effect/0261.gale_blessing/modfier/add.m with storage asset:temp Effect.Value
+    function asset:effect/0261.gale_blessing/modfier/add.m with storage asset:temp Effect
 
 # リセット
     data remove storage asset:temp Effect
