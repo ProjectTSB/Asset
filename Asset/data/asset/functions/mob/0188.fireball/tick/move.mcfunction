@@ -6,7 +6,6 @@
 #   asset:mob/0188.fireball/tick/
 #   asset:mob/0188.fireball/tick/move
 
-
 # パーティクル
     particle flame ~ ~ ~ 0.1 0.1 0.1 0.005 1
     particle dust 1 0.5 0 1 ~ ~ ~ 0 0 0 0 1 force @a[distance=..30]
@@ -22,4 +21,4 @@
 
 # 再帰
     scoreboard players add $Recursive Temporary 1
-    execute if entity @s[tag=!58.Hit] if score $Recursive Temporary matches ..4 at @s run function asset:mob/0188.fireball/tick/move
+    execute if entity @s[tag=!58.Hit] if score $Recursive Temporary matches ..3 at @s run function asset:mob/0188.fireball/tick/move
