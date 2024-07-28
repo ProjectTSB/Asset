@@ -233,6 +233,7 @@
     #declare function lib:heal/reset                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/heal/reset.mcfunction#L1
     #declare function lib:integer_to_bit_array/                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/integer_to_bit_array/.mcfunction#L1
     #declare function lib:message/artifact/can_not_use_here                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/artifact/can_not_use_here.mcfunction#L1
+    #declare function lib:message/artifact/condition_not_met                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/artifact/condition_not_met.mcfunction#L1
     #declare function lib:message/artifact/dont_have_require_items                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/artifact/dont_have_require_items.mcfunction#L1
     #declare function lib:message/invalid_operation                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/invalid_operation.mcfunction#L1
     #declare function lib:motion/                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/motion/.mcfunction#L1
