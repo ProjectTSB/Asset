@@ -6,6 +6,8 @@
     #declare tag RW.This
     #
 
+    #declare storage rw_storage:
+
     ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss
     #declare tag RW.ModelRoot
@@ -28,6 +30,7 @@
     #declare tag RW.ChaseMarker3
     #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
+    #declare tagRW.RotateMarker
 
     ## ボスのHPのタグ
     #declare tag RW.HPless75per
@@ -45,6 +48,7 @@
     #declare tag RW.Skill.SpreadShot
     #declare tag RW.Skill.BlazingSlash
     #declare tag RW.Skill.LightningStab
+    #declare tag RW.Skill.MoveShot
 
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot
@@ -54,6 +58,10 @@
     #declare tag RW.Skill.Mini.Slash
     #declare tag RW.Skill.Mini.BackShot
     #declare tag RW.Skill.Mini.TeleportBeam
+
+    ## ボスの移動方向に関するタグ
+    #declare tag RW.Direction.Left
+    #declare tag RW.Direction.Right
 
     ## ボスの使う大技のタグ
     #declare tag RW.Skill.Deadly1
