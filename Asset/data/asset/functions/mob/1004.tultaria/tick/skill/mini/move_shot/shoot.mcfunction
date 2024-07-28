@@ -6,7 +6,7 @@
 
 #> ショットの行き先指定用マーカー
 # @private
-#declare tag FacingMarker
+#declare tag SpreadMarker
 
 # 弾速設定
     data modify storage rw_shotspeed: Speed set value 4
@@ -21,11 +21,6 @@
 # リセット
     kill @e[type=marker,tag=FacingMarker]
     data remove storage rw_shotspeed: Speed
-
-# 演出
-    #playsound tsb_sounds:blaster2 hostile @a ~ ~ ~ 2 2
-    #playsound minecraft:block.amethyst_block.chime hostile @a ~ ~ ~ 2 2
-    #playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 2 2
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2
