@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @s
-    playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
+    particle minecraft:totem_of_undying ~ ~1.2 ~ 1.5 0.2 1.5 0 40 force @s
+    execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/0928.ankh/vfx
 
 # 範囲内のプレイヤーの最大体力の5%を回復
     execute as @a[distance=..10] at @s run function asset:artifact/0928.ankh/trigger/4.heal
