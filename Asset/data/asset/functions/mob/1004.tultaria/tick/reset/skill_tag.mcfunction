@@ -16,6 +16,7 @@
     tag @s remove RW.Skill.BlazingSlash
     tag @s remove RW.Skill.LightningStab
     tag @s remove RW.Skill.MoveShot
+    tag @s remove RW.Skill.AimingLaser
 
 #
     tag @s remove RW.MiniSkillChase

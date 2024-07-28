@@ -25,6 +25,8 @@
         execute if entity @s[tag=RW.Skill.SpreadShot] run function asset:mob/1004.tultaria/tick/skill/spread_shot/tick
     # 無属性: こちらに並びつつ射撃
         execute if entity @s[tag=RW.Skill.MoveShot] run function asset:mob/1004.tultaria/tick/skill/move_shot/tick
+    # 無属性: 最悪偏差撃ちレーザー
+        execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
 
 ## 物理技
     # 火属性: 追跡→巨大な斬撃を放つ

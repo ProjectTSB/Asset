@@ -12,16 +12,13 @@
     #declare tag RW.Boss
     #declare tag RW.ModelRoot
     #declare tag RW.ModelRoot.Target
-    #declare tag RW.Marker.SpawnPoint
     #declare tag RW.Opening
     #declare tag RW.Start
     #declare tag RW.PlayerFacing
     #declare tag RW.TeleportMarker
-    #declare tag RW.MarkerInit
     #declare tag RW.Move
     #declare tag RW.TickLock
     #declare tag RW.InAction
-    #declare tag RW.BodyMarker
     #declare tag RW.LoopCount
     #declare tag RW.ChaseShot
     #declare tag RW.ChaseMarker
@@ -30,7 +27,15 @@
     #declare tag RW.ChaseMarker3
     #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
-    #declare tagRW.RotateMarker
+
+    ## ボスのマーカーに関するタグ
+    #declare tag RW.RotateMarker
+    #declare tag RW.Marker.SpawnPoint
+    #declare tag RW.MarkerInit
+    #declare tag RW.TeleportMarker
+    #declare tag RW.BodyMarker
+    #declare tag RW.MarkerInit
+    #declare tag RW.AimMarker
 
     ## ボスのHPのタグ
     #declare tag RW.HPless75per
@@ -49,6 +54,7 @@
     #declare tag RW.Skill.BlazingSlash
     #declare tag RW.Skill.LightningStab
     #declare tag RW.Skill.MoveShot
+    #declare tag RW.Skill.AimingLaser
 
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot
