@@ -6,22 +6,20 @@
 
 #> Private
 # @private
-    #declare tag Random
     #declare score_holder $Random
-
-# ノーマル以下ならプレイヤーの方向
-# ハード以上で確率で偏差撃ちする
-    execute if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/50 run tag @s add Random
-
-# 撃つ
-    execute if entity @s[tag=!Random] run function asset:mob/0187.flame_mage/tick/3.facing_shoot
-    execute if entity @s[tag=Random] run function asset:mob/0187.flame_mage/tick/4.predict_shoot
+    #declare tag 57.Already
 
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 2
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 2 0.7
+
+# プレイヤーの方向に撃つ
+    data modify storage api: Argument.ID set value 188
+    execute anchored eyes positioned ^-0.25 ^ ^ run function api:mob/summon
+    execute anchored eyes positioned ^-0.25 ^ ^ run tp @e[type=marker,tag=!57.Already,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ facing entity @p[distance=..20] eyes
+    execute anchored eyes positioned ^-0.25 ^ ^ run tag @e[type=marker,tag=!57.Already,distance=..0.01,sort=nearest,limit=1] add 57.Already
 
 # 次に攻撃するタイミングをランダムにする
     execute store result score $Random Temporary run function lib:random/
@@ -31,4 +29,3 @@
 
 # リセット
     scoreboard players reset $Random Temporary
-    tag @s[tag=Random] remove Random
