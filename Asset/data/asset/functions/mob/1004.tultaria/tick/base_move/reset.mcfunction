@@ -18,6 +18,10 @@
 # 行動中タグを解除
     tag @s remove RW.InAction
 
+# 方向タグ削除
+    tag @s remove RW.Direction.Left
+    tag @s remove RW.Direction.Right
+
 # 慣性ONに
     tag @s remove RW.DisableInertia
 
@@ -43,6 +47,9 @@
 # ソード設置カウントをリセット
     scoreboard players set @s[scores={RW.Phase=2,RW.SwordCount=2..}] RW.SwordCount 0
     scoreboard players set @s[scores={RW.Phase=3,RW.SwordCount=1..}] RW.SwordCount 0
+
+# 移動完了するまでTickロックしちゃお
+    tag @s add RW.TickLock
 
 # 剣を消す
     tag @e[type=armor_stand,scores={MobID=1016}] add S8.Death

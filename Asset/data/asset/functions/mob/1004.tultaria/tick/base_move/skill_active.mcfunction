@@ -21,6 +21,10 @@
         execute if entity @s[tag=RW.Skill.AncientLight] run function asset:mob/1004.tultaria/tick/skill/5.ball_attack/1.tick
     # 雷属性: 位置を覚えづらい雷がたくさん降ってくる
         execute if entity @s[tag=RW.Skill.Thunder] run function asset:mob/1004.tultaria/tick/skill/3.coordinate_attack/1.tick
+    # 無属性: 移動
+        execute if entity @s[tag=RW.Skill.SpreadShot] run function asset:mob/1004.tultaria/tick/skill/spread_shot/tick
+    # 無属性: こちらに並びつつ射撃
+        execute if entity @s[tag=RW.Skill.MoveShot] run function asset:mob/1004.tultaria/tick/skill/move_shot/tick
 
 ## 物理技
     # 火属性: 追跡→巨大な斬撃を放つ
@@ -36,8 +40,8 @@
     # 流星
         execute if entity @s[tag=RW.Skill.Starfury] run function asset:mob/1004.tultaria/tick/skill/6.starfury_attack/1.tick
     # ショット
-        execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=1..2}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick
-        execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=3..}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick_phase3
+        #execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=1..2}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick
+        #execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=3..}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick_phase3
 
 ## 行動選択前スキル
     # 追従射撃
