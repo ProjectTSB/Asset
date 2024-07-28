@@ -1,4 +1,4 @@
-#> asset:mob/0187.flame_mage/tick/6.prediction_aim
+#> asset:mob/0187.flame_mage/tick/6.prediction_aim.m
 #
 # 再帰でプレイヤーの予測位置を求める
 #
@@ -19,4 +19,4 @@
 
 # 再帰処理
     scoreboard players add $Recursive Temporary 1
-    $execute if score $Recursive Temporary matches ..20 positioned ~$(X) ~ ~$(Z) unless entity @s[distance=..$(ReachableRange)] run function asset:mob/0187.flame_mage/tick/6.prediction_aim with storage asset:temp Predict
+    $execute if score $Recursive Temporary matches ..20 positioned ~$(X) ~ ~$(Z) unless entity @s[distance=..$(ReachableRange)] run function asset:mob/0187.flame_mage/tick/6.prediction_aim.m with storage asset:temp Predict

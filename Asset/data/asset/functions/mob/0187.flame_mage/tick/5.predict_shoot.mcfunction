@@ -18,7 +18,7 @@
     data modify storage asset:temp Predict.ReachableRange set value 1
 
 # 偏差位置を割り出す
-    execute at @p run function asset:mob/0187.flame_mage/tick/6.prediction_aim with storage asset:temp Predict
+    execute at @p run function asset:mob/0187.flame_mage/tick/6.prediction_aim.m with storage asset:temp Predict
 
 # 予測位置マーカーの方向に撃つ
 # 予測位置マーカーが存在しない場合、直接プレイヤーを狙う
