@@ -8,6 +8,7 @@
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
+
     # 演出
         execute at @e[type=#lib:living,tag=Attacker,limit=1] run particle soul_fire_flame ~ ~0.5 ~ 0.4 0.6 0.4 0 100 force @a
 
