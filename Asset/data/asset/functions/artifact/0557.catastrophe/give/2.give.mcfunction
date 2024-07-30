@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"崩壊の騎士のための装備"}]','[{"text":"傷付く度に、快楽を求めた"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"破滅の騎士のための装備"}]','[{"text":"傷付く度に、快楽を求めた"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
