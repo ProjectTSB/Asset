@@ -10,3 +10,7 @@
 
 # フルセットTagを削除
     tag @s remove FE.Fullset
+
+# フルセットバフを削除
+    data modify storage api: Argument.ID set value 262
+    function api:entity/mob/effect/remove/from_id

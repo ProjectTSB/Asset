@@ -5,7 +5,7 @@
 # @within function asset:effect/0262.catastrophe/tick/
 
 # 崩壊
-    data modify storage api: Argument.ID set value 263
+    data modify storage api: Argument.ID set value 257
     function api:entity/mob/effect/give
 
 # スコアをリセット
