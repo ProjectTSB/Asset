@@ -8,4 +8,14 @@
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    say test: 0555.catastrophe
+
+
+
+
+
+
+
+
+
+# フルセット処理
+    execute if data storage asset:context id.all{head:554,chest:555,legs:556,feet:557} run function asset:artifact/0554.catastrophe/trigger/fullset/equip
