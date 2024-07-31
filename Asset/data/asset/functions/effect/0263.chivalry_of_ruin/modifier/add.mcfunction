@@ -18,4 +18,4 @@
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/defense/base/add
 
- # tellraw @a [{"storage":"asset:context","nbt":"Stack"},{"text":"stack"}]
+ tellraw @a [{"storage":"asset:context","nbt":"Stack"},{"text":"stack"}]

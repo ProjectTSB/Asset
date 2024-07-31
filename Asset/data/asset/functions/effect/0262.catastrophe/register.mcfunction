@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"戦闘時、継続的に与ダメージと被ダメージが上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"攻撃または被ダメージ時、対象に追撃が発生し"}','{"text":"与ダメージと被ダメージが上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

@@ -10,15 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    particle dust 0 0 -1 1 ~ ~1.7 ~ 0.4 0.2 0.4 0 30 normal @a
-    particle soul_fire_flame ~ ~1.7 ~ 0.4 0.2 0.4 0 10 normal @a
-    playsound minecraft:item.armor.equip_netherite player @a ~ ~ ~ 1 0.65
-    playsound minecraft:entity.phantom.death player @a ~ ~ ~ 0.7 0.6
-
-
-
-
-
+    execute unless data storage asset:context id.all{head:554,chest:555,legs:556,feet:557} run function asset:artifact/0554.catastrophe/trigger/vfx
 
 # フルセット処理
     execute if data storage asset:context id.all{head:554,chest:555,legs:556,feet:557} run function asset:artifact/0554.catastrophe/trigger/fullset/equip
