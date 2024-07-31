@@ -1,0 +1,1 @@
+function animated_java:axia/zzzzzzzz/animations/5_0_spining_cut/tick_animation

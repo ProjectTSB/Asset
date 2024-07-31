@@ -1,0 +1,3 @@
+execute if score @s aj.axia.animation.15_0_former_ending.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/15_0_former_ending/end_loop
+execute if score @s aj.axia.animation.15_0_former_ending.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/15_0_former_ending/stop
+execute if score @s aj.axia.animation.15_0_former_ending.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/15_0_former_ending/pause

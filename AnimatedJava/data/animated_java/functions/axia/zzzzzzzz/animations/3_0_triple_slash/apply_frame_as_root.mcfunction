@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:axia/zzzzzzzz/animations/3_0_triple_slash/tree/branch_0_80

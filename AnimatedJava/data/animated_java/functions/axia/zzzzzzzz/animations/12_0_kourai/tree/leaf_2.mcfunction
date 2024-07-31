@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:axia/zzzzzzzz/animations/12_0_kourai/tree/leaf_2_as_bone

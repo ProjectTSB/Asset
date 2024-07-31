@@ -1,0 +1,1 @@
+function animated_java:axia/zzzzzzzz/animations/13_0_damage_1/tick_animation

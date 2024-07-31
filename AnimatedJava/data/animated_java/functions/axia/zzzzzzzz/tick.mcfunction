@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.axia.root] run function animated_java:axia/zzzzzzzz/tick_as_root
