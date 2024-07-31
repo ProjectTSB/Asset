@@ -27,7 +27,7 @@
     attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00cb00000000 "203.Speed" 0.3 multiply
 
 # ジャンプ力
-    effect give @s jump_boost 30 2 true
+    effect give @s jump_boost 30 1 true
 
 # 採掘速度
     effect give @s haste 30 2 true
