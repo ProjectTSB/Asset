@@ -13,9 +13,9 @@
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/0554.catastrophe/trigger/fullset/vfx/1
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/0554.catastrophe/trigger/fullset/vfx/2
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/0554.catastrophe/trigger/fullset/vfx/3
-    playsound entity.phantom.death player @a ~ ~ ~ 1 0.5
-    playsound entity.phantom.death player @a ~ ~ ~ 1 0.55
-    playsound entity.phantom.death player @a ~ ~ ~ 1 0.6
+    playsound entity.phantom.death player @a ~ ~ ~ 0.85 0.5
+    playsound entity.phantom.death player @a ~ ~ ~ 0.85 0.55
+    playsound entity.phantom.death player @a ~ ~ ~ 0.85 0.6
 
 # フルセットTagを付与
     tag @s add FE.Fullset
