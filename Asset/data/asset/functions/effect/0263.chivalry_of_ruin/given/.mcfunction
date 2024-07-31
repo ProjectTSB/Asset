@@ -6,6 +6,3 @@
 
 # 補正を付与する
     function asset:effect/0263.chivalry_of_ruin/modifier/add
-
-
-say a
