@@ -9,3 +9,9 @@
 #   asset:artifact/0556.catastrophe/trigger/dis_equip/main
 #   asset:artifact/0557.catastrophe/trigger/dis_equip/main
     #declare tag FE.Fullset
+
+#> tag
+# @within function
+#   asset:artifact/0554.catastrophe/trigger/fullset/attack/**
+#   asset:artifact/0554.catastrophe/trigger/fullset/hurt/**
+    #declare score_holder $FE.Cooldown

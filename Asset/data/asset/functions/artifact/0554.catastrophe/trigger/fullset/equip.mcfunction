@@ -15,4 +15,3 @@
     data modify storage api: Argument.ID set value 262
     function api:entity/mob/effect/give
 
-say t

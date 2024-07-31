@@ -13,4 +13,4 @@
 
 # 属性耐性
     data modify storage api: Argument.UUID set value [1,3,263,0]
-    function api:modifier/attack/base/remove
+    function api:modifier/defense/base/remove
