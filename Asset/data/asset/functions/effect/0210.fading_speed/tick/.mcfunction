@@ -16,4 +16,4 @@
     execute if entity @s[scores={5U.Tick=600}] run attribute @s generic.movement_speed modifier remove 00000001-0000-0003-0000-00d200000000
     execute if entity @s[scores={5U.Tick=600}] run attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00d200000000 "210.FadingSpeed" 0.2 multiply
     execute if entity @s[scores={5U.Tick=800}] run attribute @s generic.movement_speed modifier remove 00000001-0000-0003-0000-00d200000000
-    execute if entity @s[scores={5U.Tick=800}] run attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00d200000000 "210.FadingSpeed" -0.2 multiply
+    execute if entity @s[scores={5U.Tick=1000}] run attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00d200000000 "210.FadingSpeed" -0.2 multiply
