@@ -5,7 +5,7 @@
     "datapack.env.dependsOnVanilla": true,
     "datapack.env.detectionDepth": 1,
     "datapack.env.exclude": [
-        "AnimatedJava/*"
+        "data/animated_java/**/*.mcfunction"
     ],
     "datapack.env.include": [],
     "datapack.env.permissionLevel": 2,
