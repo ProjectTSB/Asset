@@ -15,3 +15,5 @@
 #   asset:artifact/0554.catastrophe/trigger/fullset/attack/**
 #   asset:artifact/0554.catastrophe/trigger/fullset/hurt/**
     #declare score_holder $FE.Cooldown
+    #declare score_holder $Physical
+    #declare score_holder $Magic
