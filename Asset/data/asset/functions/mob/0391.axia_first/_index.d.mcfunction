@@ -3,4 +3,20 @@
 
 #> tag
 # @within function asset:mob/0391.axia_first/**
-    #declare
+    # マーカー関連
+        #declare tag AV.Marker.SummonPoint
+    # AnimatedJavaモデル関連
+        #declare tag AV.ModelRoot
+    # Mob制御関連
+        # 一時
+            #declare tag AV.Root.This
+            #declare tag AV.Temp.This
+            #declare tag AV.Temp.Target
+            #declare tag AV.Landing
+        # Projectile
+            #declare tag AV.SlashEffect
+            #declare tag AV.SlashEffectInit
+
+#> val
+# @within function asset:mob/0391.axia_first/**
+    #declare score_holder $AV.Temp

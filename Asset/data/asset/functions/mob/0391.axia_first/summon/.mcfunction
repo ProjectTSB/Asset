@@ -5,4 +5,4 @@
 # @within asset:mob/0391.axia_first/_/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0391.axia_first"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0391.axia_first",NoAI:1b,Silent:1b}
