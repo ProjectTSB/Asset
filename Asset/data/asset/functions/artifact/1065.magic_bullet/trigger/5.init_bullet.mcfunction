@@ -8,6 +8,9 @@
     tag @s add TL.Bullet
     tag @s add TL.LoopTarget
 
+# dataの型の初期化
+    data modify entity @s data set value {}
+
 # 視点を使用者に合わせる
     data modify entity @s Rotation set from entity @p[tag=this] Rotation
 
