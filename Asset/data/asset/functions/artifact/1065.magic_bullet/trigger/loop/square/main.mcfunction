@@ -16,15 +16,16 @@
 
 # 2つ目
     execute if entity @s[scores={TL.SquareCount=2,TL.Tick=4}] run data modify entity @s start_interpolation set value 0
+    execute if entity @s[scores={TL.SquareCount=2,TL.Tick=4}] run data modify entity @s interpolation_duration set value 4
     execute if entity @s[scores={TL.SquareCount=2,TL.Tick=4}] run data modify entity @s transformation.scale set value [1.8d,1.8d,0.01d]
 
 # 3つ目
-    execute if entity @s[scores={TL.SquareCount=3,TL.Tick=6}] run data modify entity @s start_interpolation set value 0
-    execute if entity @s[scores={TL.SquareCount=3,TL.Tick=6}] run data modify entity @s transformation.scale set value [1.2d,1.2d,0.01d]
+    execute if entity @s[scores={TL.SquareCount=3,TL.Tick=8}] run data modify entity @s start_interpolation set value 0
+    execute if entity @s[scores={TL.SquareCount=3,TL.Tick=8}] run data modify entity @s transformation.scale set value [1.2d,1.2d,0.01d]
 
 # 4つ目
-   # execute if entity @s[scores={TL.SquareCount=4,TL.Tick=8}] run data modify entity @s start_interpolation set value 0
-    #execute if entity @s[scores={TL.SquareCount=4,TL.Tick=8}] run data modify entity @s transformation.scale set value [0.8d,0.8d,0.4d]
+    execute if entity @s[scores={TL.SquareCount=4,TL.Tick=10}] run data modify entity @s start_interpolation set value 0
+    execute if entity @s[scores={TL.SquareCount=4,TL.Tick=10}] run data modify entity @s transformation.scale set value [0.7d,0.7d,0.01d]
 
 # 消える
     execute if entity @s[scores={TL.Tick=37}] run data modify entity @s start_interpolation set value 0

@@ -9,3 +9,4 @@
     scoreboard objectives add TL.Tick dummy
     scoreboard objectives add TL.UseCount dummy
     scoreboard objectives add TL.SquareCount dummy
+    scoreboard objectives add TL.OwnerID dummy

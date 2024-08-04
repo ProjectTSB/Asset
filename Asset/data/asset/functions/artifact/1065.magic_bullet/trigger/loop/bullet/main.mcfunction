@@ -9,15 +9,22 @@
 
 # 演出
     execute if entity @s[scores={TL.Tick=..20}] run particle dust 0 0.8 1 0.8 ~ ~ ~ 0 0 0 0 1
-    execute if entity @s[scores={TL.Tick=..9}] run playsound entity.illusioner.prepare_mirror neutral @a ~ ~ ~ 0.5 2
+    execute if entity @s[scores={TL.Tick=..3}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 1.8
+    execute if entity @s[scores={TL.Tick=4..6}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 1.9
+    execute if entity @s[scores={TL.Tick=7..9}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 2
+
     execute if entity @s[scores={TL.Tick=20}] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/vfx
 
 # 移動処理
     execute if entity @s[scores={TL.Tick=20..}] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/move
     execute if entity @s[scores={TL.Tick=20..}] run scoreboard players reset $Recursive Temporary
 
+# プレイヤーを狙う状態ならワープする
+    execute if entity @s[tag=TL.AimToPlayer,scores={TL.Tick=20}] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/teleport
+
 # 消滅
     execute if entity @s[scores={TL.Tick=60..}] run kill @s
+    execute unless block ^ ^ ^0.25 #lib:no_collision run kill @s
 
 # ループ処理
     schedule function asset:artifact/1065.magic_bullet/trigger/loop/ 1t replace

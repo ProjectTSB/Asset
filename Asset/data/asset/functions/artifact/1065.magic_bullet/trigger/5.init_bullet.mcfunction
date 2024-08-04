@@ -1,13 +1,8 @@
-#> asset:artifact/1065.magic_bullet/trigger/4.init_bullet
+#> asset:artifact/1065.magic_bullet/trigger/5.init_bullet
 #
 #
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/3.main
-
-#> Private
-# @private
-    #declare score_holder $RemainCount
-    #declare score_holder $7
 
 # Tagを付与
     tag @s add TL.Bullet
@@ -18,3 +13,9 @@
 
 # 使用回数をスコアへ
     scoreboard players operation @s TL.UseCount = $UseCount Temporary
+
+# OwnerIDを設定
+    scoreboard players operation @s TL.OwnerID = @p[tag=this] UserID
+
+# プレイヤーを狙う処理
+    execute if entity @p[tag=this,tag=TL.AimToPlayer] run tag @s add TL.AimToPlayer

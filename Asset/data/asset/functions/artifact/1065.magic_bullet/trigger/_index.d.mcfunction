@@ -7,6 +7,9 @@
     #declare tag TL.Square
     #declare tag TL.LoopTarget
     #declare tag TL.Init
+    #declare tag TL.AimToPlayer
+    #declare tag TL.TargetPlayer
+    #declare tag TL.TeleportPosition
     #declare score_holder $Recursive
     #declare score_holder $UseCount
     #declare score_holder $RemainCount
