@@ -17,7 +17,7 @@
 
 # 7回目なら確率でプレイヤーを狙うTagを付与
     execute if score $UseCount Temporary matches 7 if predicate lib:random_pass_per/50 run tag @s add TL.AimToPlayer
-    execute if score $UseCount Temporary matches 7 run tag @s add TL.AimToPlayer
+    #execute if score $UseCount Temporary matches 7 run tag @s add TL.AimToPlayer
 
 # 魔弾を召喚
     execute anchored eyes positioned ^-0.4 ^-0.1 ^0.6 summon marker run function asset:artifact/1065.magic_bullet/trigger/5.init_bullet
