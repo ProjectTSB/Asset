@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:mob/0266.small_dark_ball/_/register",
+        "asset:mob/0265.dark_familiar/_/register",
+        "asset:mob/0264.dark_summoner/_/register",
         "asset:mob/0187.flame_mage/_/register",
         "asset:mob/0188.fireball/_/register",
         "asset:mob/0219.aorta/_/register",
