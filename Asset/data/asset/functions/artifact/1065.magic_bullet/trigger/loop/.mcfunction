@@ -6,6 +6,8 @@
 #   asset:artifact/1065.magic_bullet/trigger/3.main
 #   asset:artifact/1065.magic_bullet/trigger/loop/bullet/main
 #   asset:artifact/1065.magic_bullet/trigger/loop/square/main
+#   asset:artifact/1065.magic_bullet/trigger/rejoin_process
+
 
 # ループ処理
     execute as @e[type=marker,tag=TL.Bullet] at @s run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/main
