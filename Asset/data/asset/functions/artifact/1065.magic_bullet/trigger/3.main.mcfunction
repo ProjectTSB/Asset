@@ -16,13 +16,16 @@
     execute store result score $UseCount Temporary run scoreboard players operation $7 Temporary -= $RemainCount Temporary
 
 # 魔弾を召喚
-    execute anchored eyes positioned ^ ^-0.35 ^-0.15 summon marker run function asset:artifact/1065.magic_bullet/trigger/4.init_bullet
+    execute anchored eyes positioned ^ ^-0.1 ^0.8 summon marker run function asset:artifact/1065.magic_bullet/trigger/4.init_bullet
 
 # プレイヤーのRotationをstorageに入れる
     data modify storage asset:temp TL.Rotation set from entity @s Rotation
 
 # マクロを使って魔法陣を召喚
-    function asset:artifact/1065.magic_bullet/trigger/5.summon_square.m with storage asset:temp TL
+# 使用回数に応じて魔法陣の召喚数を増やす
+    execute anchored eyes positioned ^ ^-0.1 ^0.9 run function asset:artifact/1065.magic_bullet/trigger/5.summon_square.m with storage asset:temp TL
+    execute if score $UseCount Temporary matches 3.. anchored eyes positioned ^ ^-0.1 ^1.05 run function asset:artifact/1065.magic_bullet/trigger/5.summon_square.m with storage asset:temp TL
+    execute if score $UseCount Temporary matches 7 anchored eyes positioned ^ ^-0.1 ^1.2 run function asset:artifact/1065.magic_bullet/trigger/5.summon_square.m with storage asset:temp TL
 
 # スケジュールループ
     schedule function asset:artifact/1065.magic_bullet/trigger/loop/ 1t replace
@@ -38,4 +41,5 @@
     scoreboard players reset $7 Temporary
     scoreboard players reset $UseCount Temporary
     scoreboard players reset $RemainCount Temporary
+    scoreboard players reset $SquareCount Temporary
     data remove storage asset:temp TL

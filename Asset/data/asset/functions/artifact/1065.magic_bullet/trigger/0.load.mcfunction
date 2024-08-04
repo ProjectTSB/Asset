@@ -8,3 +8,4 @@
 # @within function asset:artifact/1065.magic_bullet/trigger/**
     scoreboard objectives add TL.Tick dummy
     scoreboard objectives add TL.UseCount dummy
+    scoreboard objectives add TL.SquareCount dummy

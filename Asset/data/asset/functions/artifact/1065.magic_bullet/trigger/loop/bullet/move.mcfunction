@@ -10,7 +10,11 @@
     tp @s ^ ^ ^0.25
 
 # 演出
-    execute at @s run particle dust 0.2 0.2 1 1 ~ ~ ~ 0 0 0 0 1
+    execute at @s run particle dust 0.2 0.2 1 1.3 ~ ~ ~ 0 0 0 0 1
+    execute at @s run particle dust 0.2 0.2 1 1.3 ^ ^ ^0.125 0 0 0 0 1
+
+# 消滅
+    execute at @s unless block ^ ^ ^0.25 #lib:no_collision run kill @s
 
 # 再帰移動
     scoreboard players add $Recursive Temporary 1

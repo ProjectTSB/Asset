@@ -6,7 +6,9 @@
     #declare tag TL.Bullet
     #declare tag TL.Square
     #declare tag TL.LoopTarget
+    #declare tag TL.Init
     #declare score_holder $Recursive
     #declare score_holder $UseCount
     #declare score_holder $RemainCount
+    #declare score_holder $SquareCount
     #declare score_holder $7
