@@ -16,6 +16,7 @@
         # Projectile
             #declare tag AV.SlashEffect
             #declare tag AV.SlashEffectInit
+            #declare tag AV.SlashEffectInbisible
 
 #> val
 # @within function asset:mob/0391.axia_first/**

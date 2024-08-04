@@ -4,17 +4,21 @@
 #
 # @within function asset:mob/0391.axia_first/tick/
 
-# スコア上昇
-    scoreboard players add @s AV.ProjectileTick 1
+# スコアが正かつ透明状態なら可視化
+    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.SlashEffectInbisible] run data modify entity @s item set value {id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16711731},CustomModelData:20353}}
+    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.SlashEffectInbisible] run tag @s remove AV.SlashEffectInbisible
 
-# スコアが2以上なら切り替え
-    execute if score @s AV.ProjectileTick matches 2 run data modify entity @s item set value {id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16711731},CustomModelData:20353}}
+# スコア反転
+    execute if score @s AV.ProjectileTick matches ..-1 run scoreboard players operation @s AV.ProjectileTick *= $-1 Const
 
-# スコアが4以上なら切り替え
-    execute if score @s AV.ProjectileTick matches 4 run data modify entity @s item.tag.CustomModelData set value 20354
+# スコアが3以下なら切り替え
+    execute if score @s AV.ProjectileTick matches 3 run data modify entity @s item.tag.CustomModelData set value 20354
 
-# スコアが5以上なら切り替え
-    execute if score @s AV.ProjectileTick matches 5 run data modify entity @s item.tag.CustomModelData set value 20355
+# スコアが2以下なら切り替え
+    execute if score @s AV.ProjectileTick matches 2 run data modify entity @s item.tag.CustomModelData set value 20355
 
-# スコアが6以上ならキル
-    execute if score @s AV.ProjectileTick matches 6 run kill @s
+# スコアが1以下ならキル
+    execute if score @s AV.ProjectileTick matches 1 run kill @s
+
+# スコア減少
+    scoreboard players remove @s AV.ProjectileTick 1

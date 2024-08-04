@@ -9,3 +9,6 @@
 
 # 待機　レア
     execute if score @s AV.AnimationNum matches 11 run function asset:mob/0391.axia_first/ai/animation/1_1_idle_rare/
+
+# 通常斬撃
+    execute if score @s AV.AnimationNum matches 20 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/

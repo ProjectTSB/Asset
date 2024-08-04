@@ -9,4 +9,4 @@ execute anchored eyes run summon item_display ^ ^ ^2 {interpolation_duration:0,T
 
 execute anchored eyes positioned ^ ^ ^2 as @e[tag=AV.SlashEffectInit,distance=..0.1] run tp @s ^ ^ ^ ~ ~
 
-execute anchored eyes positioned ^ ^ ^2 as @e[tag=AV.SlashEffectInit,distance=..0.1] run function asset:mob/0391.axia_first/ai/projectile/slash_effect/1.init
+execute anchored eyes positioned ^ ^ ^2 as @e[tag=AV.SlashEffectInit,distance=..0.1] run function asset:mob/0391.axia_first/ai/projectile/slash_effect/1.init.m

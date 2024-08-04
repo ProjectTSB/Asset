@@ -7,5 +7,7 @@
 # デバッグ用
     # AnimatedJavaモデルの削除
         function animated_java:axia/remove/all
-    # Marker削除
+    # マーカー削除
         kill @e[tag=AV.Marker.SummonPoint]
+    # ディスプレイ削除
+        kill @e[tag=AV.SlashEffect,distance=..100]
