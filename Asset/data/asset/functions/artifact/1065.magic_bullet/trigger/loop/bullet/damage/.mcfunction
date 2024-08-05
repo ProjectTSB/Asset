@@ -9,9 +9,9 @@
     #declare tag Owner
 
 # マーカーのデータを取り出し、既にヒット済みかをチェック
-    data modify storage asset:temp TL.Temp set from entity @s data
+    data modify storage asset:temp TL.HitList set from entity @s data
     execute as @e[type=#lib:living,tag=TL.TargetEntity,distance=..4] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/check_target
-    data modify entity @s data set from storage asset:temp TL.Temp
+    data modify entity @s data set from storage asset:temp TL.HitList
     data remove storage asset:temp TL
 
 # 使用者を特定
