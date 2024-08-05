@@ -32,3 +32,7 @@
     # 斬撃フレイム
         execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/vfx_start
         execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/vfx_start
+
+# ダメージ
+    execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
+    execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
