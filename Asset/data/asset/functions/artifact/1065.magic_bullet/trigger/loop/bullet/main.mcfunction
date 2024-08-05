@@ -25,7 +25,7 @@
     execute if entity @s[tag=TL.AimToPlayer,scores={TL.Tick=20}] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/teleport
 
 # 消滅
-    execute if entity @s[scores={TL.Tick=45..}] run kill @s
+    execute if entity @s[scores={TL.Tick=40..}] run kill @s
     execute unless block ^ ^ ^0.25 #lib:no_collision run kill @s
 
 # ループ処理
