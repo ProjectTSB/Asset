@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魔弾","color":"#4F5BFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵味方を無差別に貫く魔弾を放つ。","color":"white"}','{"text":"残り弾数が減るほど与えるダメージが上昇する。","color":"white"}','{"text":"7つ目の弾丸は確率でランダムなプレイヤーを狙う。","color":"white"}','{"text":"弾が切れても自動でリロードされる。","color":"white"}','{"text":"「最後の弾丸は愛する人の頭を貫くだろう。」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵味方を無差別に貫く弾丸を放つ。","color":"white"}','{"text":"残り弾数が減るほど与えるダメージが上昇する。","color":"white"}','{"text":"7つ目の弾丸は確率でランダムなプレイヤーを狙う。","color":"white"}','{"text":"弾が切れても自動でリロードされる。","color":"white"}','{"text":"「最後の弾丸は愛する人の頭を貫くだろう。」","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -37,7 +37,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
+    data modify storage asset:artifact AttackInfo.AttackRange set value "???"
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 28
 # MP必要量 (int) (オプション)
