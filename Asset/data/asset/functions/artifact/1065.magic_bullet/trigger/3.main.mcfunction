@@ -40,6 +40,9 @@
     schedule function asset:artifact/1065.magic_bullet/trigger/loop/ 1t replace
 
 # 使用回数が0になったら再度give
+# 演出をつけようと思ったけど、発射演出を邪魔するから無くしている
+    #execute unless data storage asset:context Items.mainhand.id run playsound block.iron_trapdoor.close player @a ~ ~ ~ 1 0.6
+    #execute unless data storage asset:context Items.mainhand.id run playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.6
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 1065
     execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
 
