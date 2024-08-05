@@ -10,8 +10,8 @@
     tp @s ^ ^ ^0.25
 
 # 演出
-    execute at @s run particle dust 0.2 0.2 1 1.3 ~ ~ ~ 0 0 0 0 1
-    execute at @s run particle dust 0.2 0.2 1 1.3 ^ ^ ^0.125 0 0 0 0 1
+    execute at @s run particle dust 0.2 0.2 1 1.3 ~ ~ ~ 0 0 0 0 1 force @a
+    execute at @s run particle dust 0.2 0.2 1 1.3 ^ ^ ^0.125 0 0 0 0 1 force @a
 
 # ヒットしたEntityにターゲットTagを付与
     execute if entity @s[scores={TL.Tick=21..}] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living,tag=!PlayerShouldInvulnerable,tag=!Object,tag=!Uninterferable,dx=0] add TL.TargetEntity
