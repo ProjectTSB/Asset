@@ -11,3 +11,5 @@
         kill @e[tag=AV.Marker.SummonPoint]
     # ディスプレイ削除
         kill @e[tag=AV.SlashEffect,distance=..100]
+        kill @e[tag=AV.SlashEffectMini,distance=..100]
+        kill @e[tag=AV.SlashSonic,distance=..100]

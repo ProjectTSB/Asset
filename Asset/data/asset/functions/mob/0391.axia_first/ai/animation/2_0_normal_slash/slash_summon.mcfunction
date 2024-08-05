@@ -1,4 +1,4 @@
-#> asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash
+#> asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_summon
 #
 # 斬撃エフェクト1
 #

@@ -2,7 +2,9 @@
 #
 # 斬撃フレイム 角度設定
 #
-# @within function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/
+# @within function
+#   asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/
+#   asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
 
 # 演出
     # マーカーを呼ぶ

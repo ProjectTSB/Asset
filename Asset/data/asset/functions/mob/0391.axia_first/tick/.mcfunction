@@ -26,3 +26,5 @@
     # 斬撃エフェクト Tick処理
         execute as @e[type=item_display,tag=AV.SlashEffect,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_effect/2.tick
         execute as @e[type=item_display,tag=AV.SlashEffectMini,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_effect_mini/2.tick
+    # 斬撃飛ばし Tick処理
+        execute as @e[type=item_display,tag=AV.SlashSonic,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_sonic/2.tick

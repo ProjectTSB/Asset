@@ -4,9 +4,11 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/
 
+# Tempタグ付与
+    tag @s add AV.Temp.This
+
 # 近くのプレイヤーの方を向く
 # 最初の方だけ向く処理を入れる
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 1..12 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
 
 # アニメーション再生
@@ -15,18 +17,18 @@
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 39 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/end
 
+# 斬撃エフェクト
+    execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_summon
+
 # 斬撃エフェクト回転
     execute if score @s AV.AnimationTick matches 15..26 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_rotate
-
-# 斬撃エフェクト
-    execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash
 
 # サウンド
     # 斬撃溜め
         execute if score @s AV.AnimationTick matches 10 run playsound minecraft:entity.arrow.hit_player hostile @a[distance=..16] ~ ~ ~ 1 1.6
     # 斬撃音
-        execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_sound
-        execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_sound
+        execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
+        execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
 
 # VFX
     # 斬撃フレイム
@@ -36,3 +38,6 @@
 # ダメージ
     execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
     execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
+
+# Tempタグ消去
+    tag @s remove AV.Temp.This

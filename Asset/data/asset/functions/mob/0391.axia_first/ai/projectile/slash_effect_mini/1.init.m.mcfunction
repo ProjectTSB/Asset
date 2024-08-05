@@ -2,6 +2,8 @@
 #
 # 斬撃エフェクトの初期化処理
 #
+# @input args
+#   Num : int
 # @within function asset:mob/0391.axia_first/**
 
 # tag AV.SlashEffectInitを持つDisplayに対して使用すること
