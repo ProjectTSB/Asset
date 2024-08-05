@@ -28,9 +28,9 @@
     execute if entity @s[scores={TL.SquareCount=4,TL.Tick=10}] run data modify entity @s transformation.scale set value [0.7d,0.7d,0.01d]
 
 # 消える
-    execute if entity @s[scores={TL.Tick=37}] run data modify entity @s start_interpolation set value 0
-    execute if entity @s[scores={TL.Tick=37}] run data modify entity @s interpolation_duration set value 3
-    execute if entity @s[scores={TL.Tick=37}] run data modify entity @s transformation.scale set value [0d,0d,0.01d]
+    execute if entity @s[scores={TL.Tick=35}] run data modify entity @s start_interpolation set value 0
+    execute if entity @s[scores={TL.Tick=35}] run data modify entity @s interpolation_duration set value 5
+    execute if entity @s[scores={TL.Tick=35}] run data modify entity @s transformation.scale set value [0d,0d,0.01d]
 
 # 消滅
     execute if entity @s[scores={TL.Tick=40..}] run kill @s
