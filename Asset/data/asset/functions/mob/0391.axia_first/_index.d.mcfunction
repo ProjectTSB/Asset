@@ -15,6 +15,7 @@
             #declare tag AV.Landing
         # Projectile
             #declare tag AV.SlashEffect
+            #declare tag AV.SlashEffectMini
             #declare tag AV.SlashEffectInit
             #declare tag AV.SlashEffectInbisible
 
