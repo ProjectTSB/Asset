@@ -9,9 +9,9 @@
 
 # 演出
     execute if entity @s[scores={TL.Tick=..20}] run particle dust 0 0.8 1 0.8 ~ ~ ~ 0 0 0 0 1
-    execute if entity @s[scores={TL.Tick=..3}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 1.8
-    execute if entity @s[scores={TL.Tick=4..6}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 1.9
-    execute if entity @s[scores={TL.Tick=7..9}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.3 2
+    execute if entity @s[scores={TL.Tick=..3}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.5 1.8
+    execute if entity @s[scores={TL.Tick=4..6}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.5 1.9
+    execute if entity @s[scores={TL.Tick=7..9}] run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.5 2
     execute if entity @s[scores={TL.Tick=20}] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/vfx
 
 # 移動処理
