@@ -1,4 +1,4 @@
-#> asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/myself
+#> asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/hit_myself
 #
 # 自分に弾が当たったときの処理
 #

@@ -1,6 +1,6 @@
 #> asset:artifact/1065.magic_bullet/trigger/loop/
 #
-#
+# スケジュールループ
 #
 # @within function
 #   asset:artifact/1065.magic_bullet/trigger/3.main

@@ -1,6 +1,6 @@
 #> asset:artifact/1065.magic_bullet/trigger/loop/square/main
 #
-#
+# 魔法陣のメイン処理
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/loop/
 

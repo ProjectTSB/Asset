@@ -1,6 +1,6 @@
 #> asset:artifact/1065.magic_bullet/trigger/4.aim_to_player
 #
-# プレイヤーを狙う処理
+# プレイヤーを狙う際の処理
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/3.main
 

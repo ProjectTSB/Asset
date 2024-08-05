@@ -1,6 +1,6 @@
 #> asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/check_target
 #
-#
+# IDからヒット済みかをチェック
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/
 

@@ -1,5 +1,7 @@
 #> asset:artifact/1065.magic_bullet/trigger/6.summon_square.m
 #
+# 魔法陣の召喚処理
+#
 # @input args:
 #    Rotation: double @ 2
 #

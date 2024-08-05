@@ -1,15 +1,12 @@
 #> asset:artifact/1065.magic_bullet/trigger/5.init_bullet
 #
-#
+# 弾の初期化処理
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/3.main
 
 # Tagを付与
     tag @s add TL.Bullet
     tag @s add TL.LoopTarget
-
-# dataの型の初期化
-    data modify entity @s data set value {}
 
 # 視点を使用者に合わせる
     data modify entity @s Rotation set from entity @p[tag=this] Rotation

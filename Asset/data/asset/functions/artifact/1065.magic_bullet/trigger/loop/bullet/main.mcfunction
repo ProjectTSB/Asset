@@ -1,6 +1,6 @@
 #> asset:artifact/1065.magic_bullet/trigger/loop/bullet/main
 #
-#
+# 弾のメイン処理
 #
 # @within function asset:artifact/1065.magic_bullet/trigger/loop/
 

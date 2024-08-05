@@ -8,15 +8,10 @@
 # @private
     #declare tag Owner
 
+# マーカーのデータを取り出し、既にヒット済みかをチェック
     data modify storage asset:temp TL.Temp set from entity @s data
-
-# 既に当たっているかをチェック
     execute as @e[type=#lib:living,tag=TL.TargetEntity,distance=..4] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/check_target
-
-# データを適用
     data modify entity @s data set from storage asset:temp TL.Temp
-
-# リセット
     data remove storage asset:temp TL
 
 # 使用者を特定
@@ -60,7 +55,7 @@
     function api:damage/reset
 
 # 7つ目の弾丸かつプレイヤーを狙っててかつ使用者に当たってるなら実行
-    execute if entity @s[tag=TL.AimToPlayer,scores={TL.UseCount=7}] if entity @p[tag=Owner,tag=TL.TargetEntity] as @p[tag=Owner] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/myself
+    execute if entity @s[tag=TL.AimToPlayer,scores={TL.UseCount=7}] if entity @p[tag=Owner,tag=TL.TargetEntity] as @p[tag=Owner] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/hit_myself
 
 # リセット
     scoreboard players reset $Damage Temporary
