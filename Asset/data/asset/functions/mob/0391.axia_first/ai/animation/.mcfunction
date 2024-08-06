@@ -15,3 +15,6 @@
 
 # 三連斬撃
     execute if score @s AV.AnimationNum matches 30 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
+
+# なぎなぎ教授
+    execute if score @s AV.AnimationNum matches 40 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/

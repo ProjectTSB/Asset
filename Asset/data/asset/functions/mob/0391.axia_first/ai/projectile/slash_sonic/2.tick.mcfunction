@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/0391.axia_first/tick/
 
-# スコアが1以上なら可視化
+# スコアが2以上なら可視化
     execute if score @s AV.ProjectileTick matches 2.. run data modify entity @s item set value {id:"minecraft:potion",Count:1b,tag:{CustomPotionColor:16711731,CustomModelData:20241}}
 
 # 前方にTP
@@ -13,7 +13,7 @@
 # パーティクル
     particle flame ^ ^ ^-1 0 0 0 0.15 4
 
-# スコアが20以上ならキル
+# スコアが25以上ならキル
     execute if score @s AV.ProjectileTick matches 25 on passengers run kill @s
     execute if score @s AV.ProjectileTick matches 25 run kill @s
 
