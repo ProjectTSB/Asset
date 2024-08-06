@@ -15,13 +15,10 @@
 # ターゲットの後ろにRotationのデータを用意するためのマーカーを召喚
 # 2個目のコマンドの最初にat @p[]があるのはdistanceの範囲を狭めるため
     execute at @p[tag=TL.TargetPlayer] rotated ~ 0 anchored eyes positioned ^ ^ ^-1 run summon marker ~ ~ ~ {Tags:["RotationMarker"]}
-    execute at @p[tag=TL.TargetPlayer] as @e[type=marker,tag=RotationMarker,distance=..5,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ facing entity @p[tag=TL.TargetPlayer] eyes
+    execute at @p[tag=TL.TargetPlayer] as @e[type=marker,tag=RotationMarker,distance=..5,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=TL.TargetPlayer,limit=1] eyes
 
 # マーカーのRotationをストレージへ
-    execute at @p[tag=TL.TargetPlayer] run data modify storage asset:temp TL.Rotation set from entity @e[type=marker,tag=RotationMarker,distance=..1,limit=1] Rotation
-
-# ストレージのYRotationを0にする
-    data modify storage asset:temp TL.Rotation[1] set value 0f
+    execute at @p[tag=TL.TargetPlayer] as @e[type=marker,tag=RotationMarker,distance=..5] at @s run data modify storage asset:temp TL.Rotation set from entity @s Rotation
 
 # ターゲットの真後ろに魔方陣を4つ召喚
     execute at @p[tag=TL.TargetPlayer] rotated ~ 0 anchored eyes positioned ^ ^-0.1 ^ positioned ^ ^ ^-5.45 run function asset:artifact/1065.magic_bullet/trigger/6.summon_square.m with storage asset:temp TL
@@ -30,5 +27,5 @@
     execute at @p[tag=TL.TargetPlayer] rotated ~ 0 anchored eyes positioned ^ ^-0.1 ^ positioned ^ ^ ^-5.00 run function asset:artifact/1065.magic_bullet/trigger/6.summon_square.m with storage asset:temp TL
 
 # リセット
-    tag @p[tag=TL.TargetPlayer] remove TL.TargetPlayer
+    tag @e[tag=TL.TargetPlayer] remove TL.TargetPlayer
     kill @e[type=marker,tag=RotationMarker]
