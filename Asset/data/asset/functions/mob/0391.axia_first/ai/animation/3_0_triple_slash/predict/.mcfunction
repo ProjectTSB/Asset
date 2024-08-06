@@ -15,7 +15,7 @@
 
 # ベクトルを10倍する
     data modify storage lib: Array set from storage api: Return.Vector
-    data modify storage lib: Mul set value 5
+    data modify storage lib: Mul set value 10
     function lib:array/math/scalar_multiply
 
 # 別のstorageに移す
