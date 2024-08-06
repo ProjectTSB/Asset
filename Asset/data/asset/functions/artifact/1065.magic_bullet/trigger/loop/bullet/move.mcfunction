@@ -17,8 +17,8 @@
     execute if entity @s[scores={TL.Tick=21..}] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living,tag=!PlayerShouldInvulnerable,tag=!Object,tag=!Uninterferable,dx=0] add TL.TargetEntity
 
 # 再帰移動
-# プレイヤーを狙う状態かつ移動し始めてから1tick目(20)かつ、$Recursiveが1の時に強制的に$Recursiveを100にする
-# 自然に魔法陣から魔法陣へワープさせるため
+# 自然に魔法陣から魔法陣へワープさせるため、
+# プレイヤーを狙う状態かつ移動し始めてから1tick目(20)かつ、$Recursiveが1の時に強制的に中団
     scoreboard players add $Recursive Temporary 1
-    execute if entity @s[tag=TL.AimToPlayer,scores={TL.Tick=20}] if score $Recursive Temporary matches 1.. run scoreboard players set $Recursive Temporary 100
+    execute if entity @s[tag=TL.AimToPlayer,scores={TL.Tick=20}] if score $Recursive Temporary matches 1.. run return fail
     execute if score $Recursive Temporary matches ..9 at @s if block ^ ^ ^0.25 #lib:no_collision run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/move
