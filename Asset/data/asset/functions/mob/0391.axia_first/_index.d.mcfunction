@@ -22,6 +22,7 @@
             #declare tag AV.SlashEffectInbisible
             #declare tag AV.SlashSonicInit
             #declare tag AV.SlashSonic
+            #declare tag AV.Predict
 
 #> val
 # @within function asset:mob/0391.axia_first/**
