@@ -5,6 +5,7 @@
 # @within function asset:mob/0391.axia_first/**
     # マーカー関連
         #declare tag AV.Marker.SummonPoint
+        #declare tag AV.Marker.Movement
     # AnimatedJavaモデル関連
         #declare tag AV.ModelRoot
     # Mob制御関連
@@ -13,8 +14,6 @@
             #declare tag AV.Temp.This
             #declare tag AV.Temp.Target
             #declare tag AV.Landing
-            #declare storage AV.Temp
-            #declare storage AV.ID
         # Projectile
             #declare tag AV.SlashEffect
             #declare tag AV.SlashEffectMini

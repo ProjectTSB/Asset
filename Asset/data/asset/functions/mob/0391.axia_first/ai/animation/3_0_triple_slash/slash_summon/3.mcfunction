@@ -2,7 +2,9 @@
 #
 # 斬撃エフェクト召喚3
 #
-# @within function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
+# @within function
+#   asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
+#   asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/
 
 # Tempタグ付与
     tag @s add AV.Temp.This

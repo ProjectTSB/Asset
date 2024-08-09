@@ -9,6 +9,7 @@
         function animated_java:axia/remove/all
     # マーカー削除
         kill @e[tag=AV.Marker.SummonPoint]
+        kill @e[tag=AV.Marker.Movement]
     # ディスプレイ削除
         kill @e[tag=AV.SlashEffect,distance=..100]
         kill @e[tag=AV.SlashEffectMini,distance=..100]

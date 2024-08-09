@@ -16,3 +16,5 @@
         # どのスキルが実行されているかを記録するスコア
     scoreboard objectives add AV.ProjectileTick dummy
         # 弾幕用Tick
+    scoreboard objectives add AV.UUID dummy
+        # UUIDやUserID保存用のスコア
