@@ -28,8 +28,11 @@
 
 # 移動
     # TP
-        execute if score @s AV.AnimationTick matches 31..41 at @s positioned ^ ^ ^1 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 42 at @s positioned ^ ^ ^0.75 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 43 at @s positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 44 at @s positioned ^ ^ ^0.25 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 45 at @s positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 31..41 at @s unless entity @a[distance=..2] positioned ^ ^ ^2 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 42 at @s unless entity @a[distance=..2] positioned ^ ^ ^1 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 43 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 44 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.25 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 45 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
+
+# ダメージ
+    execute if score @s AV.AnimationTick matches 48 run function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/damage
