@@ -2,7 +2,9 @@
 #
 # 斬撃飛ばしの偏差撃ち
 #
-# @within function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
+# @within function
+#   asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
+#   asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
 
 # 攻撃対象にTagを付与
     tag @p[tag=!PlayerShouldInvulnerable,distance=..100] add AV.Temp.Target
