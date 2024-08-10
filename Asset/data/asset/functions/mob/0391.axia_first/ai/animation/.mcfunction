@@ -27,3 +27,9 @@
 
 # 居合い切り移動
     execute if score @s AV.AnimationNum matches 62 run function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/
+
+# スピン移動
+    execute if score @s AV.AnimationNum matches 63 run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/
+
+# 斬撃砲
+    execute if score @s AV.AnimationNum matches 70 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
