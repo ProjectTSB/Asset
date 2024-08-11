@@ -81,6 +81,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.axia.export_version aj.i -555479102
+scoreboard players set aj.axia.export_version aj.i -1011407578
 scoreboard players reset * aj.axia.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.axia.root] run function animated_java:axia/zzzzzzzz/on_load
