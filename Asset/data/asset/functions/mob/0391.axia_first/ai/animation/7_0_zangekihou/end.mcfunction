@@ -7,3 +7,6 @@
 # デバッグ用　アニメーションループ
     scoreboard players set @s AV.AnimationNum 70
     scoreboard players set @s AV.AnimationTick 0
+
+# デバッグ用
+    scoreboard players reset @s AV.UUID

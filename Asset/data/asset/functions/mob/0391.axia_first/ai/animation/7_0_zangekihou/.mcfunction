@@ -4,13 +4,17 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/
 
+# 対象プレイヤー保存
+    execute if score @s AV.AnimationTick matches 1 run scoreboard players operation @s AV.UUID = @p[tag=!PlayerShouldInvulnerable,distance=..100] UserID
+
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    #ToDo ハードのみ41~50間は偏差処理を入れつつ向く
     tag @s add AV.Temp.This
-    execute if score @s AV.AnimationTick matches 1..16 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 1..16 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
-    execute if score @s AV.AnimationTick matches 31..33 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
+    scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
+    execute if score @s AV.AnimationTick matches 1..16 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 1..18 if predicate api:global_vars/difficulty/min/hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
+    execute if score @s AV.AnimationTick matches 31..33 as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    scoreboard players reset $AV.Temp AV.UUID
     tag @s remove AV.Temp.This
 
 # アニメーション再生
@@ -22,3 +26,6 @@
 # 斬撃砲
     execute positioned ^ ^1.25 ^ if score @s AV.AnimationTick matches 26 run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
     execute positioned ^ ^1.25 ^ if score @s AV.AnimationTick matches 37 run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
+
+# 予告線
+    execute if score @s AV.AnimationTick matches 1 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/announce_line

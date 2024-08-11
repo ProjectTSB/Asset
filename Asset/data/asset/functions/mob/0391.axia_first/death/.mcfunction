@@ -14,3 +14,5 @@
         kill @e[tag=AV.SlashEffect,distance=..100]
         kill @e[tag=AV.SlashEffectMini,distance=..100]
         kill @e[tag=AV.SlashSonic,distance=..100]
+        kill @e[tag=AV.SonicBoomEffect,distance=..100]
+        kill @e[tag=AV.AnnounceLine,distance=..100]

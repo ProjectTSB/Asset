@@ -30,3 +30,5 @@
         execute as @e[type=item_display,tag=AV.SlashSonic,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_sonic/2.tick
     # ソニックブーム Tick処理
         execute as @e[type=item_display,tag=AV.SonicBoomEffect,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/sonic_boom/2.tick
+    # 予告線 Tick処理
+        execute at @s as @e[type=item_display,tag=AV.AnnounceLine,distance=..100] run function asset:mob/0391.axia_first/ai/projectile/announce_line/2.tick

@@ -33,3 +33,6 @@
 
 # 斬撃砲
     execute if score @s AV.AnimationNum matches 70 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
+
+# ワープ斬撃（隙ありアリー！）
+    execute if score @s AV.AnimationNum matches 80 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/

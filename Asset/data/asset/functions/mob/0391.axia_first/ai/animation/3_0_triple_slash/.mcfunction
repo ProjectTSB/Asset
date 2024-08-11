@@ -52,3 +52,6 @@
 
 # 斬撃飛ばし
     execute if score @s AV.AnimationTick matches 51 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/slash_sonic_start
+
+# 予告線
+    execute if score @s AV.AnimationTick matches 41 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/announce_line
