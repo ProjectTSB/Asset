@@ -12,7 +12,7 @@
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     execute if score @s AV.AnimationTick matches 125..152 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 125..152 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
+    execute if score @s AV.AnimationTick matches 125..162 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     tag @s remove AV.Temp.This
 
 # アニメーション再生
@@ -21,33 +21,33 @@
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 191 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/end
 
-## ディメンションソード 召喚
-## 偏差撃ち
-#    tag @s add AV.Temp.This
-#    execute if score @s AV.AnimationTick matches 31 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#    execute if score @s AV.AnimationTick matches 41 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#    execute if score @s AV.AnimationTick matches 51 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#    execute if score @s AV.AnimationTick matches 61 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#    execute if score @s AV.AnimationTick matches 71 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#    execute if score @s AV.AnimationTick matches 81 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
-#
-## ランダム撃ち
-#    execute if score @s AV.AnimationTick matches 36 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#    execute if score @s AV.AnimationTick matches 46 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#    execute if score @s AV.AnimationTick matches 56 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#    execute if score @s AV.AnimationTick matches 66 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#    execute if score @s AV.AnimationTick matches 76 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#    execute if score @s AV.AnimationTick matches 86 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-#
-## ハード限定拡散
-#    execute if score @s AV.AnimationTick matches 33 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    execute if score @s AV.AnimationTick matches 43 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    execute if score @s AV.AnimationTick matches 53 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    execute if score @s AV.AnimationTick matches 63 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    execute if score @s AV.AnimationTick matches 73 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    execute if score @s AV.AnimationTick matches 83 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-#    tag @s remove AV.Temp.This
-#
+# ディメンションソード 召喚
+# 偏差撃ち
+    tag @s add AV.Temp.This
+    execute if score @s AV.AnimationTick matches 31 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+    execute if score @s AV.AnimationTick matches 41 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+    execute if score @s AV.AnimationTick matches 51 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+    execute if score @s AV.AnimationTick matches 61 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+    execute if score @s AV.AnimationTick matches 71 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+    execute if score @s AV.AnimationTick matches 81 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
+
+# ランダム撃ち
+    execute if score @s AV.AnimationTick matches 36 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 46 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 56 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 66 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 76 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 86 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+
+# ハード限定拡散
+    execute if score @s AV.AnimationTick matches 33 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 43 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 53 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 63 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 73 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 83 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    tag @s remove AV.Temp.This
+
 
 # 斬撃飛ばし
     execute if score @s AV.AnimationTick matches 124 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/slash_summon
@@ -75,3 +75,9 @@
 
 # 中央ダメージエリア
     execute if score @s AV.AnimationTick matches 141 at @s run function asset:mob/0391.axia_first/ai/projectile/critical/0.summon
+
+# 衝撃波召喚
+    execute if score @s AV.AnimationTick matches 162 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/1
+    execute if score @s AV.AnimationTick matches 165 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/2
+    execute if score @s AV.AnimationTick matches 168 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/3
+    execute if score @s AV.AnimationTick matches 171 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/4
