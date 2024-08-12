@@ -1,8 +1,8 @@
-#> asset:mob/0391.axia_first/ai/projectile/shock_wave/1.init
+#> asset:mob/0391.axia_first/ai/projectile/critical/1.init
 #
 # 初期化処理
 #
-# @within function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
+# @within function asset:mob/0391.axia_first/ai/projectile/critical/0.summon
 
 # マーカーを呼ぶ
     tp 0-0-0-0-0 ^ ^ ^ ~ ~
@@ -17,7 +17,7 @@
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # タグ付け
-    tag @s add AV.ShockWave
+    tag @s add AV.CriticalHit
 
 # スコア初期化
     scoreboard players set @s AV.ProjectileTick 0

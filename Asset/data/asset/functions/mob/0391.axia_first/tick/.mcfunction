@@ -36,3 +36,5 @@
         execute as @e[type=marker,tag=AV.DimSword,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/2.tick
     # 衝撃波 Tick処理
         execute as @e[type=marker,tag=AV.ShockWave,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/shock_wave/2.tick
+    # クリティカルヒット Tick処理
+        execute as @e[type=marker,tag=AV.CriticalHit,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/critical/2.tick

@@ -6,6 +6,7 @@
 #   asset:mob/0391.axia_first/ai/projectile/sword/1.init
 #   asset:mob/0391.axia_first/ai/projectile/sword/1.1.loop
 #   asset:mob/0391.axia_first/ai/projectile/shock_wave/1.init
+#   asset:mob/0391.axia_first/ai/projectile/critical/1.init
 
 # 少し下げて判定
     scoreboard players remove $AV.Temp Temporary 1

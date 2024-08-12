@@ -28,6 +28,7 @@
             #declare tag AV.DimSword
             #declare tag AV.DimSwordDisplay
             #declare tag AV.ShockWave
+            #declare tag AV.CriticalHit
 
 #> val
 # @within function asset:mob/0391.axia_first/**

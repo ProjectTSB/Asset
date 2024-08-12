@@ -5,7 +5,7 @@
 # @within function asset:mob/0391.axia_first/ai/projectile/shock_wave/3.cast
 
 # 追加パーティクル
-    particle dust 0.75 0.0 0.0 3 ~ ~1 ~ 2.5 2.5 0.5 0 75 force @a[distance=..32]
+    particle dust 0.75 0.0 0.0 3 ~ ~1 ~ 2.5 0.5 2.5 0 75 force @a[distance=..32]
     particle dust 0.75 0.0 0.0 2 ~ ~4 ~ 1.5 2 1.5 0 75 force @a[distance=..32]
     particle dust 0.75 0.0 0.0 1.5 ~ ~8 ~ 1 4 1 0 75 force @a[distance=..32]
 # 音
