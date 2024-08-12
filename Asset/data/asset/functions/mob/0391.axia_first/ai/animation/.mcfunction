@@ -36,3 +36,6 @@
 
 # ワープ斬撃（隙ありアリー！）
     execute if score @s AV.AnimationNum matches 80 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/
+
+# ディメンションソード
+    execute if score @s AV.AnimationNum matches 90 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/

@@ -25,6 +25,9 @@
             #declare tag AV.SonicBoomEffect
             #declare tag AV.AnnounceInit
             #declare tag AV.AnnounceLine
+            #declare tag AV.DimSword
+            #declare tag AV.DimSwordDisplay
+            #declare tag AV.ShockWave
 
 #> val
 # @within function asset:mob/0391.axia_first/**

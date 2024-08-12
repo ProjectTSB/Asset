@@ -16,3 +16,6 @@
         kill @e[tag=AV.SlashSonic,distance=..100]
         kill @e[tag=AV.SonicBoomEffect,distance=..100]
         kill @e[tag=AV.AnnounceLine,distance=..100]
+        kill @e[tag=AV.DimSword,distance=..100]
+        kill @e[tag=AV.DimSwordDisplay,distance=..100]
+        kill @e[tag=AV.ShockWave,distance=..100]
