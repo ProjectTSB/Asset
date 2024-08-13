@@ -6,7 +6,6 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    #ToDo ハードのみ41~50間は偏差処理を入れつつ向く
     tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 1..98 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
