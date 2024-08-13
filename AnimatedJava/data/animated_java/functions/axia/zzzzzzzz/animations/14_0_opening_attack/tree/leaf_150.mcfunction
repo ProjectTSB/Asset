@@ -1,1 +1,2 @@
 execute on passengers run function animated_java:axia/zzzzzzzz/animations/14_0_opening_attack/tree/leaf_150_as_bone
+function animated_java:axia/zzzzzzzz/apply_variant/mazime/as_root
