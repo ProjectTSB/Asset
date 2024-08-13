@@ -39,3 +39,6 @@
 
 # ディメンションソード
     execute if score @s AV.AnimationNum matches 90 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/
+
+# 紅雷
+    execute if score @s AV.AnimationNum matches 100 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/
