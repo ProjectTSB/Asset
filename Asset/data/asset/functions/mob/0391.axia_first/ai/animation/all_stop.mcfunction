@@ -1,8 +1,8 @@
 #> asset:mob/0391.axia_first/ai/animation/all_stop
 #
-# 
+# 全アニメーション 停止
 #
-# @within function asset:mob/0391.axia_first/ai/general/4.select_skill
+# @within function asset:mob/0391.axia_first/**
 
 # タイマーリセット
     scoreboard players set @s AV.AnimationTick -1

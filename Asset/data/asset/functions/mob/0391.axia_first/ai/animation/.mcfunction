@@ -42,3 +42,9 @@
 
 # 紅雷
     execute if score @s AV.AnimationNum matches 100 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/
+
+# 被弾アニメーション1
+    execute if score @s AV.AnimationNum matches 990 run function asset:mob/0391.axia_first/ai/animation/99_0_damaged_1/
+
+# 被弾アニメーション2
+    execute if score @s AV.AnimationNum matches 991 run function asset:mob/0391.axia_first/ai/animation/99_1_damaged_2/

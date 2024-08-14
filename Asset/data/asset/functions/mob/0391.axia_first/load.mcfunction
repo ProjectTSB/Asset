@@ -18,3 +18,5 @@
         # 弾幕用Tick
     scoreboard objectives add AV.UUID dummy
         # UUIDやUserID保存用のスコア
+    scoreboard objectives add AV.FalterCount dummy
+        # 怯みカウント
