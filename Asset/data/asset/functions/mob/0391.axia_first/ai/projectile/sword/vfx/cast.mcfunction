@@ -71,9 +71,9 @@
     particle end_rod ^-0.842 ^0.0 ^2.033 ^-154121456.0 ^915314944.0 ^372082176.0 0.00000000011 0 force @a[distance=..32]
     particle end_rod ^-0.429 ^0.0 ^2.158 ^-169622608.0 ^494009440.0 ^852750208.0 0.00000000020 0 force @a[distance=..32]
 # 追加パーティクル
-    particle dust 1 0 100000000 2 ~ ~1.5 ~ 1 1 1 0 50 force @a[distance=..32]
-    particle dust 2 0 100000000 1.5 ~ ~3 ~ 0.75 2 0.75 0 50 force @a[distance=..32]
-    particle dust 2 0 100000000 1 ~ ~6 ~ 0.4 4 0.4 0 50 force @a[distance=..32]
+    particle dust 1 0 100000000 2 ~ ~1.5 ~ 1 1 1 0 20 force @a[distance=..32]
+    particle dust 2 0 100000000 1.5 ~ ~3 ~ 0.75 2 0.75 0 20 force @a[distance=..32]
+    particle dust 2 0 100000000 1 ~ ~6 ~ 0.4 4 0.4 0 20 force @a[distance=..32]
     particle gust ~ ~1 ~ 1 1 1 0 10 force @a[distance=..32]
 # 音
     playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.6 1.5

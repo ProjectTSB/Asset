@@ -1,16 +1,14 @@
 #> asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
 #
-# ランダム拡散
+# ディメンションソード 周囲に召喚
 #
 # @within function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/
 
-# Markerを呼び出す
-    tp 0-0-0-0-0 ^ ^ ^ ~ ~
-# 拡散値
-    data modify storage lib: Argument.Bounds set value [[6d,6d],[0d,0d],[6d,6d]]
-# 拡散する
-    execute as 0-0-0-0-0 at @s run function lib:spread_entity/
-# ソード召喚
-    execute at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
-# Makerを戻してあげる
-    execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
+# スコア設定
+    scoreboard players set $AV.Loop Temporary 0
+
+# 拡散
+    function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_loop
+
+# リセット
+    scoreboard players reset $AV.Loop Temporary

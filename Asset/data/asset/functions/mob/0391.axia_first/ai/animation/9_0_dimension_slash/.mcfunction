@@ -37,14 +37,26 @@
     execute if score @s AV.AnimationTick matches 66 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
     execute if score @s AV.AnimationTick matches 76 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
     execute if score @s AV.AnimationTick matches 86 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 31 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 41 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 51 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 61 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 71 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 81 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
 
 # ハード限定拡散
-    execute if score @s AV.AnimationTick matches 33 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-    execute if score @s AV.AnimationTick matches 43 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-    execute if score @s AV.AnimationTick matches 53 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-    execute if score @s AV.AnimationTick matches 63 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-    execute if score @s AV.AnimationTick matches 73 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
-    execute if score @s AV.AnimationTick matches 83 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal_hard
+    execute if score @s AV.AnimationTick matches 33 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 38 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 43 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 48 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 53 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 58 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 63 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 68 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 73 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 78 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 83 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 88 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
     tag @s remove AV.Temp.This
 
 
