@@ -19,3 +19,4 @@
         kill @e[tag=AV.DimSword,distance=..100]
         kill @e[tag=AV.DimSwordDisplay,distance=..100]
         kill @e[tag=AV.ShockWave,distance=..100]
+        kill @e[tag=AV.CriticalHit,distance=..100]

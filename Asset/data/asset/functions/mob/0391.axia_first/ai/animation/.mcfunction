@@ -48,3 +48,6 @@
 
 # 被弾アニメーション2
     execute if score @s AV.AnimationNum matches 991 run function asset:mob/0391.axia_first/ai/animation/99_1_damaged_2/
+
+# オープニングアタック
+    execute if score @s AV.AnimationNum matches 1000 run function asset:mob/0391.axia_first/ai/animation/100_0_opening/

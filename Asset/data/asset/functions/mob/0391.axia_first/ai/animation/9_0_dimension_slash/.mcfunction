@@ -11,7 +11,7 @@
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     execute if score @s AV.AnimationTick matches 125..152 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 125..162 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
+    execute if score @s AV.AnimationTick matches 153..162 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     tag @s remove AV.Temp.This
 
 # アニメーション再生

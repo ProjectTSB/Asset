@@ -2,7 +2,8 @@
 #
 # ディメンションソード 偏差撃ち
 #
-# @within function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/
+# @within function
+#   asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/
 
 # 攻撃対象のベクトルを取得
     function api:player_vector/get

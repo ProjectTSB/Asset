@@ -29,7 +29,9 @@
             #declare tag AV.DimSwordDisplay
             #declare tag AV.ShockWave
             #declare tag AV.CriticalHit
+            #declare tag AV.CriticalOpening
 
 #> val
 # @within function asset:mob/0391.axia_first/**
     #declare score_holder $AV.Temp
+    #declare score_holder $AV.Loop

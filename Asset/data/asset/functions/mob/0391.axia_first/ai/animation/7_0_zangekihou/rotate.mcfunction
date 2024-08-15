@@ -2,7 +2,9 @@
 #
 # ハード用回転
 #
-# @within function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
+# @within function
+#   asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
+#   asset:mob/0391.axia_first/ai/animation/100_0_opening/
 
 # タグ付与
     tag @s add AV.Temp.Target
