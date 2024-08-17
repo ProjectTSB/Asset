@@ -24,10 +24,6 @@ execute if score #animation aj.i = $aj.axia.animation.3_0_triple_slash aj.id run
 execute if score #animation aj.i = $aj.axia.animation.3_0_triple_slash aj.id run scoreboard players operation @s aj.axia.animation.3_0_triple_slash.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.axia.animation.4_0_naginagi aj.id run function animated_java:axia/zzzzzzzz/animations/4_0_naginagi/apply_frame_as_root
 execute if score #animation aj.i = $aj.axia.animation.4_0_naginagi aj.id run scoreboard players operation @s aj.axia.animation.4_0_naginagi.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.axia.animation.5_0_spining_cut aj.id run function animated_java:axia/zzzzzzzz/animations/5_0_spining_cut/apply_frame_as_root
-execute if score #animation aj.i = $aj.axia.animation.5_0_spining_cut aj.id run scoreboard players operation @s aj.axia.animation.5_0_spining_cut.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.axia.animation.5_1_spining_cut aj.id run function animated_java:axia/zzzzzzzz/animations/5_1_spining_cut/apply_frame_as_root
-execute if score #animation aj.i = $aj.axia.animation.5_1_spining_cut aj.id run scoreboard players operation @s aj.axia.animation.5_1_spining_cut.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.axia.animation.6_0_moving_forward aj.id run function animated_java:axia/zzzzzzzz/animations/6_0_moving_forward/apply_frame_as_root
 execute if score #animation aj.i = $aj.axia.animation.6_0_moving_forward aj.id run scoreboard players operation @s aj.axia.animation.6_0_moving_forward.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.axia.animation.6_1_moving_back aj.id run function animated_java:axia/zzzzzzzz/animations/6_1_moving_back/apply_frame_as_root

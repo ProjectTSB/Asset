@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:axia/zzzzzzzz/animations/5_0_spining_cut/tree/leaf_3_as_bone

@@ -3,8 +3,6 @@ function animated_java:axia/zzzzzzzz/animations/1_1_idle_rare/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/2_0_normal_slash/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/3_0_triple_slash/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/4_0_naginagi/pause_as_root
-function animated_java:axia/zzzzzzzz/animations/5_0_spining_cut/pause_as_root
-function animated_java:axia/zzzzzzzz/animations/5_1_spining_cut/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/6_0_moving_forward/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/6_1_moving_back/pause_as_root
 function animated_java:axia/zzzzzzzz/animations/7_0_moving_iai/pause_as_root
