@@ -26,7 +26,7 @@
     execute if score @s AV.AnimationTick matches 187 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/end
 
 # 斬撃エフェクト
-    execute if score @s AV.AnimationTick matches 44 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/1
+    execute if score @s AV.AnimationTick matches 45 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/1
     execute if score @s AV.AnimationTick matches 59 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/2
     execute if score @s AV.AnimationTick matches 84 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/3
     execute if score @s AV.AnimationTick matches 110 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/4
@@ -37,7 +37,7 @@
     execute if score @s AV.AnimationTick matches 144..151 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_rotate2
 
 # ダメージ判定
-    execute if score @s AV.AnimationTick matches 44 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/damage/1
+    execute if score @s AV.AnimationTick matches 45 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/damage/1
     execute if score @s AV.AnimationTick matches 59 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/damage/1
     execute if score @s AV.AnimationTick matches 84 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/damage/1
     execute if score @s AV.AnimationTick matches 110 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/damage/1
@@ -46,7 +46,7 @@
 
 # サウンド
     execute if score @s AV.AnimationTick matches 1..29 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp_sound
-    execute if score @s AV.AnimationTick matches 42 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
+    execute if score @s AV.AnimationTick matches 43 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
     execute if score @s AV.AnimationTick matches 57 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
     execute if score @s AV.AnimationTick matches 82 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
     execute if score @s AV.AnimationTick matches 108 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
