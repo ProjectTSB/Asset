@@ -14,7 +14,7 @@
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_0_warp_start/play
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 35 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_1_warp_slash_0/play
+    execute if score @s AV.AnimationTick matches 30 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_1_warp_slash_0/play
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 71 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_2_warp_slash_1/play
