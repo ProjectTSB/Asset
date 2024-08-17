@@ -1,19 +1,8 @@
-#> asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/end
+#> asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/end2
 #
-# 終了処理
+# 終了処理 分岐
 #
-# @within function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/
-
-# デバッグ用　アニメーションループ
-#    scoreboard players set @s AV.AnimationNum 20
-#    scoreboard players set @s AV.AnimationTick 0
-
-# 上位スキルタグを付ける
-    tag @s add AV.SuperiorSkill
-
-# スコアをリセットする
-    scoreboard players reset @s AV.AnimationNum
-    scoreboard players set @s AV.AnimationTick 0
+# @within function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/end
 
 # ストレージを用意する
     data modify storage asset:temp AV.SKill set value []
@@ -23,7 +12,7 @@
 
 # 近すぎず遠すぎない場合、移動する -> 60,62,63 moving
     data modify storage asset:temp AV.Temp set value [60,62,63]
-    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=5..25] run data modify storage asset:temp AV.SKill append from storage asset:temp AV.Temp[]
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=5..20] run data modify storage asset:temp AV.SKill append from storage asset:temp AV.Temp[]
 
 # データが入ってない場合 -> 80 warp_slash
     execute unless data storage asset:temp AV.SKill[0] run data modify storage asset:temp AV.SKill append value 80

@@ -5,8 +5,11 @@
 # @within function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/
 
 # デバッグ用　アニメーションループ
-    scoreboard players set @s AV.AnimationNum 70
-    scoreboard players set @s AV.AnimationTick 0
+#    scoreboard players set @s AV.AnimationNum 70
+#    scoreboard players set @s AV.AnimationTick 0
 
-# デバッグ用
+# リセット
     scoreboard players reset @s AV.UUID
+
+# 待機モーション移行
+    function asset:mob/0391.axia_first/ai/general/7.idle_motion_change

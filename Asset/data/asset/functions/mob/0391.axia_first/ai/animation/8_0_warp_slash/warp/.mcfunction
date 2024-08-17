@@ -2,7 +2,7 @@
 #
 # 偏差ワープ
 #
-# @within function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/
+# @within function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
 
 # 自身にタグ付け
     tag @s add AV.Temp.This

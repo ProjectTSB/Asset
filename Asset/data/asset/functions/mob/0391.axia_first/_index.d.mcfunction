@@ -30,6 +30,8 @@
             #declare tag AV.ShockWave
             #declare tag AV.CriticalHit
             #declare tag AV.CriticalOpening
+        # Skill
+            #declare tag AV.SuperiorSkill
 
 #> val
 # @within function asset:mob/0391.axia_first/**

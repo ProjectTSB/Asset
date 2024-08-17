@@ -54,12 +54,6 @@
     execute if score @s AV.AnimationTick matches 145 run function asset:mob/0391.axia_first/ai/general/5.slash_sound
 
 # ワープする
-    execute if score @s AV.AnimationTick matches 29 if predicate api:global_vars/difficulty/max/normal at @r[tag=!PlayerShouldInvulnerable,distance=..100] rotated ~ 0 positioned ^ ^ ^4 rotated ~180 ~ run tp @s ^ ^ ^ ~ 0
-    execute if score @s AV.AnimationTick matches 69 if predicate api:global_vars/difficulty/max/normal at @r[tag=!PlayerShouldInvulnerable,distance=..100] rotated ~ 0 positioned ^ ^ ^4 rotated ~180 ~ run tp @s ^ ^ ^ ~ 0
-    execute if score @s AV.AnimationTick matches 120 if predicate api:global_vars/difficulty/max/normal at @r[tag=!PlayerShouldInvulnerable,distance=..100] rotated ~ 0 positioned ^ ^ ^4 rotated ~180 ~ run tp @s ^ ^ ^ ~ 0
-    execute if score @s AV.AnimationTick matches 29 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/
-    execute if score @s AV.AnimationTick matches 69 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/
-    execute if score @s AV.AnimationTick matches 120 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/
-    execute if score @s AV.AnimationTick matches 29 run function asset:mob/0391.axia_first/ai/general/3.teleport_effect/
-    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/general/3.teleport_effect/
-    execute if score @s AV.AnimationTick matches 120 run function asset:mob/0391.axia_first/ai/general/3.teleport_effect/
+    execute if score @s AV.AnimationTick matches 29 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
+    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
+    execute if score @s AV.AnimationTick matches 120 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
