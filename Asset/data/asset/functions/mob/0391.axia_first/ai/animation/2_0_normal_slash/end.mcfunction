@@ -25,6 +25,10 @@
     data modify storage asset:temp AV.Temp set value [60,62,63]
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=5..25] run data modify storage asset:temp AV.SKill append from storage asset:temp AV.Temp[]
 
+# 上位スキル
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..25] run data modify storage asset:temp AV.SKill append value 90
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..25] run data modify storage asset:temp AV.SKill append value 100
+
 # データが入ってない場合 -> 80 warp_slash
     execute unless data storage asset:temp AV.SKill[0] run data modify storage asset:temp AV.SKill append value 80
 
