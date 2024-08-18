@@ -11,7 +11,7 @@
     execute if entity @s[tag=!2X.AlreadyBroken] if block ~ ~2.0 ~ #lib:no_collision run tp @s ^ ^ ^0.8 ~ ~1
 
 # プレイヤーとの接触判定
-    execute if entity @s[tag=!2X.AlreadyBroken] if entity @a[distance=..1] run function asset:mob/0105.potion_projectile/tick/3.break_potion
+    execute if entity @s[tag=!2X.AlreadyBroken] positioned ~ ~2 ~ if entity @a[distance=..1] run function asset:mob/0105.potion_projectile/tick/3.break_potion
 
 # 頭のポーションの位置が当たり判定のあるブロックなら実行
     execute if entity @s[tag=!2X.AlreadyBroken] positioned ~ ~2 ~ unless block ~ ~ ~ #lib:no_collision run function asset:mob/0105.potion_projectile/tick/3.break_potion

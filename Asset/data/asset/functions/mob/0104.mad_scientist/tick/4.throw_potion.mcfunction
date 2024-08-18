@@ -19,9 +19,9 @@
 # 音
     playsound entity.splash_potion.throw hostile @a ~ ~ ~ 1 0.5 0
 
-# 体力が半分以下であることを検知して3way弾にする
-    execute if entity @s[tag=2W.HPless50Per] facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~20 ~ run function asset:mob/0104.mad_scientist/tick/5.addition_throw
-    execute if entity @s[tag=2W.HPless50Per] facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~-20 ~ run function asset:mob/0104.mad_scientist/tick/5.addition_throw
+# ハード以上なら3way弾にする
+    execute if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~20 ~ run function asset:mob/0104.mad_scientist/tick/5.addition_throw
+    execute if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~-20 ~ run function asset:mob/0104.mad_scientist/tick/5.addition_throw
 
 # スコアリセット
     scoreboard players reset @s 2W.Tick
