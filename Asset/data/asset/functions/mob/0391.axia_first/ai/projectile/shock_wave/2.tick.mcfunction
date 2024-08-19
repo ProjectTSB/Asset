@@ -12,5 +12,5 @@
     execute at @s run function asset:mob/0391.axia_first/ai/projectile/shock_wave/vfx/tick
     execute if score @s AV.ProjectileTick matches 1 run playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 1.5 0
 
-# 処理
-    execute if score @s AV.ProjectileTick matches 31 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/3.cast
+# 発動処理
+    execute if score @s AV.ProjectileTick matches 31.. run function asset:mob/0391.axia_first/ai/projectile/shock_wave/3.cast

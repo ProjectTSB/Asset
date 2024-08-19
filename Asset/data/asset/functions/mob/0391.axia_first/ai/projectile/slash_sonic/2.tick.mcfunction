@@ -14,8 +14,8 @@
     particle flame ^ ^ ^-1 0 0 0 0.15 4
 
 # スコアが25以上ならキル
-    execute if score @s AV.ProjectileTick matches 25 on passengers run kill @s
-    execute if score @s AV.ProjectileTick matches 25 run kill @s
+    execute if score @s AV.ProjectileTick matches 25.. on passengers run kill @s
+    execute if score @s AV.ProjectileTick matches 25.. run kill @s
 
 # ヒット判定
     # ダメージ

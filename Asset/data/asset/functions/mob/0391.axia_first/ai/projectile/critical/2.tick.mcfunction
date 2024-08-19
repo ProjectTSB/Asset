@@ -12,8 +12,8 @@
     execute at @s run function asset:mob/0391.axia_first/ai/projectile/critical/vfx/tick
     execute if score @s AV.ProjectileTick matches 1 run playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 1.5 0
 
-# 処理
+# 発動処理
     execute if score @s AV.ProjectileTick matches 21 if entity @s[tag=!AV.CriticalOpening] run function asset:mob/0391.axia_first/ai/projectile/critical/3.cast
 
-#
-    execute if score @s AV.ProjectileTick matches 81 run function asset:mob/0391.axia_first/ai/projectile/critical/3.cast
+# 発動処理（特殊）
+    execute if score @s AV.ProjectileTick matches 81.. run function asset:mob/0391.axia_first/ai/projectile/critical/3.cast
