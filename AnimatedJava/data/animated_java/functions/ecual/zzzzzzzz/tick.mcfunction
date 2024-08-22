@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ecual.root] run function animated_java:ecual/zzzzzzzz/tick_as_root

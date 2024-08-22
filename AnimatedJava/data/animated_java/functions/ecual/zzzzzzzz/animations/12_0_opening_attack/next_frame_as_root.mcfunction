@@ -1,0 +1,1 @@
+function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tick_animation

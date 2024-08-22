@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ecual.root] run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/stop_as_root
+execute if entity @s[tag=!aj.ecual.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:ecual/animations/12_0_opening_attack/stop ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

@@ -1,0 +1,3 @@
+execute if score @s aj.ecual.animation.2_0_chill_rain.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/2_0_chill_rain/end_loop
+execute if score @s aj.ecual.animation.2_0_chill_rain.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/2_0_chill_rain/stop
+execute if score @s aj.ecual.animation.2_0_chill_rain.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/2_0_chill_rain/pause

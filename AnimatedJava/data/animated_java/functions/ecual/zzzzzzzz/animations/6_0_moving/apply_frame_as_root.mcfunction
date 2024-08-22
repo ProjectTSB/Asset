@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..55 run function animated_java:ecual/zzzzzzzz/animations/6_0_moving/tree/branch_0_55

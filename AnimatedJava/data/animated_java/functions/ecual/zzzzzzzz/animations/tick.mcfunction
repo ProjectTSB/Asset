@@ -1,0 +1,16 @@
+execute if entity @s[tag=aj.ecual.animation.1_0_idle] run function animated_java:ecual/zzzzzzzz/animations/1_0_idle/tick
+execute if entity @s[tag=aj.ecual.animation.1_1_idle_rare] run function animated_java:ecual/zzzzzzzz/animations/1_1_idle_rare/tick
+execute if entity @s[tag=aj.ecual.animation.2_0_chill_rain] run function animated_java:ecual/zzzzzzzz/animations/2_0_chill_rain/tick
+execute if entity @s[tag=aj.ecual.animation.3_0_crystal_turret] run function animated_java:ecual/zzzzzzzz/animations/3_0_crystal_turret/tick
+execute if entity @s[tag=aj.ecual.animation.4_0_summon_book] run function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/tick
+execute if entity @s[tag=aj.ecual.animation.5_0_shining_ray] run function animated_java:ecual/zzzzzzzz/animations/5_0_shining_ray/tick
+execute if entity @s[tag=aj.ecual.animation.5_1_water_bullet] run function animated_java:ecual/zzzzzzzz/animations/5_1_water_bullet/tick
+execute if entity @s[tag=aj.ecual.animation.6_0_moving] run function animated_java:ecual/zzzzzzzz/animations/6_0_moving/tick
+execute if entity @s[tag=aj.ecual.animation.7_0_holy_ray] run function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/tick
+execute if entity @s[tag=aj.ecual.animation.8_0_quietus_rain] run function animated_java:ecual/zzzzzzzz/animations/8_0_quietus_rain/tick
+execute if entity @s[tag=aj.ecual.animation.9_0_water_wall] run function animated_java:ecual/zzzzzzzz/animations/9_0_water_wall/tick
+execute if entity @s[tag=aj.ecual.animation.10_0_hydro_storm] run function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/tick
+execute if entity @s[tag=aj.ecual.animation.11_0_damage_1] run function animated_java:ecual/zzzzzzzz/animations/11_0_damage_1/tick
+execute if entity @s[tag=aj.ecual.animation.11_1_damage_2] run function animated_java:ecual/zzzzzzzz/animations/11_1_damage_2/tick
+execute if entity @s[tag=aj.ecual.animation.12_0_opening_attack] run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tick
+execute if entity @s[tag=aj.ecual.animation.13_0_former_ending] run function animated_java:ecual/zzzzzzzz/animations/13_0_former_ending/tick

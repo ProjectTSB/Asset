@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/tree/leaf_50_as_bone
+function animated_java:ecual/zzzzzzzz/apply_variant/mabaraki/as_root

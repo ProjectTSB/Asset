@@ -1,0 +1,3 @@
+execute if score @s aj.ecual.animation.9_0_water_wall.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/9_0_water_wall/end_loop
+execute if score @s aj.ecual.animation.9_0_water_wall.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/9_0_water_wall/stop
+execute if score @s aj.ecual.animation.9_0_water_wall.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/9_0_water_wall/pause

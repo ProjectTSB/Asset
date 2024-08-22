@@ -1,0 +1,1 @@
+function animated_java:ecual/zzzzzzzz/animations/1_1_idle_rare/tick_animation

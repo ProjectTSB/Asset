@@ -1,0 +1,16 @@
+function animated_java:ecual/zzzzzzzz/animations/1_0_idle/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/1_1_idle_rare/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/2_0_chill_rain/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/3_0_crystal_turret/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/5_0_shining_ray/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/5_1_water_bullet/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/6_0_moving/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/8_0_quietus_rain/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/9_0_water_wall/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/11_0_damage_1/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/11_1_damage_2/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/pause_as_root
+function animated_java:ecual/zzzzzzzz/animations/13_0_former_ending/pause_as_root

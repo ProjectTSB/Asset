@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tree/leaf_239_as_bone

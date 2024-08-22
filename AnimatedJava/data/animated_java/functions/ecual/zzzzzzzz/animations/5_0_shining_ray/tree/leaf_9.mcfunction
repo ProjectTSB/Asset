@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/5_0_shining_ray/tree/leaf_9_as_bone

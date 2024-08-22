@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tree/leaf_175_as_bone
+function animated_java:ecual/zzzzzzzz/apply_variant/majime/as_root

@@ -1,0 +1,1 @@
+tag @s remove aj.ecual.animation.5_0_shining_ray

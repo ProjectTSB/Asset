@@ -1,0 +1,1 @@
+tag @s remove aj.ecual.animation.4_0_summon_book
