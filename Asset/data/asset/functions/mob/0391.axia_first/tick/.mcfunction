@@ -13,9 +13,6 @@
 # タイマー計算
     scoreboard players add @s AV.AnimationTick 1
 
-# スキル選択
-    execute if score @s AV.AnimationTick matches 0 run function asset:mob/0391.axia_first/ai/general/4.select_skill
-
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1.. at @e[type=item_display,tag=AV.Root.This,distance=..100] run function asset:mob/0391.axia_first/ai/animation/
 

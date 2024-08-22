@@ -4,12 +4,6 @@
 #
 # @within function asset:mob/0391.axia_first/_/register
 
-# 継承 (int) (オプション)
-    # data modify storage asset:mob Extends append value
-    # function asset:mob/extends
-
-# 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 391
 # Type (string) Wikiを参照
@@ -37,6 +31,3 @@
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
-
-# フィールド
-    # data modify storage asset:mob Field set value {}
