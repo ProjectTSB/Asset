@@ -11,7 +11,6 @@
 # スコア初期化
     scoreboard players set @s AV.AnimationTick 0
     scoreboard players set @s AV.AnimationNum 1000
-    scoreboard players set @s AV.SkillSelect 0
     scoreboard players set @s AV.FalterCount 0
 
 # animated javaモデル召喚
