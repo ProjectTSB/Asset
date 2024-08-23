@@ -3,20 +3,13 @@
 
 #> tag
 # @within function asset:mob/0392.ecual_first/**
-    # マーカー関連
-        #declare tag AW.Marker.SummonPoint
-    # AnimatedJavaモデル関連
-        #declare tag AW.ModelRoot
-    # Mob制御関連
-        # 一時
-            #declare tag AW.Root.This
-            #declare tag AW.Temp.This
-            #declare tag AW.Temp.Target
-            #declare tag AW.Landing
-        # Projectile
-            
-        # Skill
-            #declare tag AW.SuperiorSkill
+    #declare tag AW.Marker.SummonPoint
+    #declare tag AW.ModelRoot
+    #declare tag AW.Root.This
+    #declare tag AW.Temp.This
+    #declare tag AW.Temp.Target
+    #declare tag AW.Landing
+    #declare tag AW.SuperiorSkill
 
 #> val
 # @within function asset:mob/0392.ecual_first/**
