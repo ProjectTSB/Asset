@@ -29,7 +29,7 @@
     # デスログ
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが飛ばした斬撃によって真っ二つに切り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行
-        function lib:damage/modifier
+        execute as @e[type=wither_skeleton,tag=this,distance=..100] run function lib:damage/modifier
     # Markerからデータを持ってくる
         execute on passengers run data modify storage asset:temp AV.ID set from entity @s data
     # ダメージを与える

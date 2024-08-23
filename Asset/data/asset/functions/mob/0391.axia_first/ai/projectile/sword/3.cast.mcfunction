@@ -17,7 +17,7 @@
     # デスログ
         data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが召喚した剣に身体を貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
-    execute as @e[tag=this,distance=..100] run function lib:damage/modifier
+    execute as @e[type=wither_skeleton,tag=this,distance=..100] run function lib:damage/modifier
 # ダメージを与える
     execute as @a[gamemode=!creative,distance=..2.5] at @s run function lib:damage/
 # リセット

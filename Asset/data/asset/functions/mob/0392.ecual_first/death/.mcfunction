@@ -3,3 +3,10 @@
 # Mobの死亡時の処理
 #
 # @within function asset:mob/0392.ecual_first/_/death
+
+# デバッグ用
+# マーカー削除
+    kill @e[tag=AW.Marker.SummonPoint]
+# AnimatedJavaモデルの削除
+    function animated_java:ecual/remove/all
+# ディスプレイ削除

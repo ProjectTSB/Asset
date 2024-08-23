@@ -10,6 +10,9 @@
     #declare tag AW.Temp.Target
     #declare tag AW.Landing
     #declare tag AW.SuperiorSkill
+    #declare tag AW.ProjectileInit
+    #declare tag AW.WaterMagic
+    #declare tag AW.WaterMagicDisplay
 
 #> val
 # @within function asset:mob/0392.ecual_first/**

@@ -14,10 +14,10 @@
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/1_1_idle_rare/play
 
 # アニメーション再生
-    execute if predicate api:global_vars/difficulty/max/normal if score @s AV.AnimationTick matches 41 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/1_0_idle/play
+    execute if predicate api:global_vars/difficulty/max/normal if score @s AV.AnimationTick matches 40 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/1_0_idle/play
 
 # アニメーション終了処理
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AV.AnimationTick matches 41 run function asset:mob/0391.axia_first/ai/animation/1_0_idle/end
+    execute if predicate api:global_vars/difficulty/min/hard if score @s AV.AnimationTick matches 40 run function asset:mob/0391.axia_first/ai/animation/1_0_idle/end
 
 # アニメーション終了処理
-    execute if predicate api:global_vars/difficulty/max/normal if score @s AV.AnimationTick matches 81 run function asset:mob/0391.axia_first/ai/animation/1_0_idle/end
+    execute if predicate api:global_vars/difficulty/max/normal if score @s AV.AnimationTick matches 80 run function asset:mob/0391.axia_first/ai/animation/1_0_idle/end
