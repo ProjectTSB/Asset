@@ -35,6 +35,7 @@
 #> AJ
 # @within function asset:mob/0391.axia_first/**
     #declare function animated_java:axia/summon
+    #declare function animated_java:axia/remove/all
     #declare function animated_java:axia/animations/pause_all
     #declare function animated_java:axia/animations/1_0_idle/play
     #declare function animated_java:axia/animations/1_1_idle_rare/play
