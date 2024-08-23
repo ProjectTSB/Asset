@@ -6,12 +6,12 @@
 
 #> 定義類はここに
 # @within function asset:mob/0392.ecual_first/**
-    scoreboard objectives add AW.AnimationTick dummy    
-    scoreboard objectives add AW.AnimationNum dummy 
+    scoreboard objectives add AW.AnimationTick dummy
+    scoreboard objectives add AW.AnimationNum dummy
     scoreboard objectives add AW.ProjectileTick dummy
-    scoreboard objectives add AW.UUID dummy 
+    scoreboard objectives add AW.UUID dummy
     scoreboard objectives add AW.FalterCount dummy
-        
+
 # AnimationTick
     # Animationがどれくらいの時間経過したかを記録するスコア
 
