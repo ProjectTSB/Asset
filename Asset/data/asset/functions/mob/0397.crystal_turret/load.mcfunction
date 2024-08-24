@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/0397.crystal_turret/**
     scoreboard objectives add B1.Tick dummy
+    scoreboard objectives add B1.UUID dummy
