@@ -7,6 +7,9 @@
 # スコアをカウントアップ
     scoreboard players add @s B2.Tick 1
 
+# ハードは待機猶予12秒
+    execute if score @s B2.Tick matches 1 if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s B2.Tick 61
+
 # 演出
     # 30Tick 毎にクリスタルを回転させる
         scoreboard players operation $B2.Temp B2.Tick = @s B2.Tick
