@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0397.crystal_turret/load",
         "asset:mob/0392.ecual_first/load",
         "asset:mob/0391.axia_first/load",
         "asset:mob/0188.fireball/load",
