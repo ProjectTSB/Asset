@@ -13,7 +13,8 @@
 
     # 召喚
         execute if entity @s[tag=RW.Skill.Summon] run function asset:mob/1004.tultaria/tick/skill/7.star_summon/1.star_summon
-
+    # 火属性: 追跡→巨大な斬撃を放つ
+        execute if entity @s[tag=RW.Skill.BlazingSlash] run function asset:mob/1004.tultaria/tick/skill/blazing_slash/tick
 ## 魔法技
     # 火属性: 空からメテオがいっぱい降ってくる
         execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/2.meteor_attack/1.tick
@@ -29,12 +30,10 @@
         execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
 
 ## 物理技
-    # 火属性: 追跡→巨大な斬撃を放つ
-        execute if entity @s[tag=RW.Skill.BlazingSlash] run function asset:mob/1004.tultaria/tick/skill/blazing_slash/tick
-
+    # 火属性: 追いかけてきながらコンボ攻撃
+        execute if entity @s[tag=RW.Skill.BlazingCombo] run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
     # 水属性: 突進→移動跡をこまぎれにする
         execute if entity @s[tag=RW.Skill.FreezingShred] run function asset:mob/1004.tultaria/tick/skill/dash_slash/1.tick
-
     # 雷属性: 突進を複数回したあと、移動後に判定が発生
         execute if entity @s[tag=RW.Skill.LightningStab] run function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
 

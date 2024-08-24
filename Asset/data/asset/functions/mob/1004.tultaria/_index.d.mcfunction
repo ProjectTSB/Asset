@@ -42,19 +42,22 @@
     #declare tag RW.HPless50per
 
     ## ボスの使う技のタグ
-    #declare tag RW.Skill.Melee
-    #declare tag RW.Skill.Meteor
-    #declare tag RW.Skill.Thunder
-    #declare tag RW.Skill.OffCoordinate
-    #declare tag RW.Skill.AncientLight
-    #declare tag RW.Skill.Starfury
-    #declare tag RW.Skill.FreezingShred
-    #declare tag RW.Skill.Summon
-    #declare tag RW.Skill.SpreadShot
-    #declare tag RW.Skill.BlazingSlash
-    #declare tag RW.Skill.LightningStab
-    #declare tag RW.Skill.MoveShot
-    #declare tag RW.Skill.AimingLaser
+    # 火属性
+        #declare tag RW.Skill.Meteor
+        #declare tag RW.Skill.BlazingCombo
+    # 水属性
+        #declare tag RW.Skill.FreezingShred
+        #declare tag RW.Skill.AncientLight
+    # 雷属性
+        #declare tag RW.Skill.Thunder
+        #declare tag RW.Skill.LightningStab
+    # 無属性
+        #declare tag RW.Skill.MoveShot
+        #declare tag RW.Skill.AimingLaser
+        #declare tag RW.Skill.SpreadShot
+        #declare tag RW.Skill.Starfury
+        #declare tag RW.Skill.Melee
+
 
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot

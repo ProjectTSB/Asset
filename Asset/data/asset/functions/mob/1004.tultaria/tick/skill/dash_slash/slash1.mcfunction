@@ -7,6 +7,7 @@
 # 鈍足を付与する
     execute rotated ~ 0 positioned ^ ^ ^2 run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2] slowness 2 3 true
 
+
 # ダメージ判定
     # 与えるダメージ
         data modify storage lib: Argument.Damage set value 10f
