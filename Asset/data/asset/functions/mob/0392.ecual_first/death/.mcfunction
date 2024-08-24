@@ -10,3 +10,5 @@
 # AnimatedJavaモデルの削除
     function animated_java:ecual/remove/all
 # ディスプレイ削除
+    kill @e[tag=AW.WaterMagic]
+    kill @e[tag=AW.WaterMagicDisplay]

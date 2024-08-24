@@ -12,3 +12,6 @@
 
 # チルレイン
     execute if score @s AW.AnimationNum matches 20 run function asset:mob/0392.ecual_first/ai/animation/2_0_chill_rain/
+
+# クリスタル召喚
+    execute if score @s AW.AnimationNum matches 30 run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/

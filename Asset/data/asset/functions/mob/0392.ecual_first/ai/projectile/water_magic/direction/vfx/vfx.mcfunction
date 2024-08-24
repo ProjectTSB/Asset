@@ -26,6 +26,3 @@
 
 # パーティクル
     particle dust 0.5 1 100000000 2 ~ ~0.5 ~ 1.4 0.25 1.4 0 4 force @a[distance=..32]
-
-# 音
-    playsound entity.player.swim hostile @a[distance=..16] ~ ~ ~ 0.5 1 0

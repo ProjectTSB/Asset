@@ -11,7 +11,7 @@
     execute if score @s AW.ProjectileTick matches 1 run playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 1.5 0
 
 # 回転 ／ 縮小
-    execute if score @s AW.ProjectileTick matches 1 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/direction/rotate/3
+    execute if score @s AW.ProjectileTick matches 2 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/direction/rotate/3
     execute if score @s AW.ProjectileTick matches 31 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/direction/rotate/1
     execute if score @s AW.ProjectileTick matches 61 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/direction/rotate/2
     execute if score @s AW.ProjectileTick matches 91 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/direction/rotate/3

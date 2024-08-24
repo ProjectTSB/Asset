@@ -16,6 +16,6 @@
 # 補正functionを実行
     execute as @e[type=wither_skeleton,tag=this,distance=..100] run function lib:damage/modifier
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..3.75] at @s run function lib:damage/
+    execute as @a[gamemode=!creative,distance=..3.65] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
