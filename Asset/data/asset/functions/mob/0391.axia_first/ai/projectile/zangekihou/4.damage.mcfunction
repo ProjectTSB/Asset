@@ -25,9 +25,9 @@
     # 補正functionを実行
         function lib:damage/modifier
     # ダメージを与える
-        execute as @a[tag=AV.Temp.Target] at @s run function lib:damage/
+        execute as @a[tag=AV.Temp.Target,distance=..100] at @s run function lib:damage/
     # リセット
         function lib:damage/reset
 
 # タグ外し
-    tag @a[tag=AV.Temp.Target] remove AV.Temp.Target
+    tag @a[tag=AV.Temp.Target,distance=..100] remove AV.Temp.Target

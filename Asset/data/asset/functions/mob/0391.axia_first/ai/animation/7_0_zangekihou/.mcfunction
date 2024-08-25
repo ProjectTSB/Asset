@@ -24,8 +24,8 @@
     execute if score @s AV.AnimationTick matches 56 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/end
 
 # 斬撃砲
-    execute positioned ^ ^1.25 ^ if score @s AV.AnimationTick matches 26 run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
-    execute positioned ^ ^1.25 ^ if score @s AV.AnimationTick matches 37 run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
+    execute if score @s AV.AnimationTick matches 26 positioned ^ ^1.25 ^ run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
+    execute if score @s AV.AnimationTick matches 37 positioned ^ ^1.25 ^ run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
 
 # 予告線
     execute if score @s AV.AnimationTick matches 1 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/announce_line

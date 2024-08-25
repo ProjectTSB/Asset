@@ -13,6 +13,9 @@
     #declare tag AW.ProjectileInit
     #declare tag AW.WaterMagic
     #declare tag AW.WaterMagicDisplay
+    #declare tag AW.AnnounceLine
+    #declare tag AW.Inbisible
+    #declare tag AW.AnnounceInit
 
 #> val
 # @within function asset:mob/0392.ecual_first/**

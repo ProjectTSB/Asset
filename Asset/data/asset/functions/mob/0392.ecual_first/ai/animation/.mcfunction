@@ -18,3 +18,6 @@
 
 # 魔導書召喚
     execute if score @s AW.AnimationNum matches 40 run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/
+
+# シャイニングレイ
+    execute if score @s AW.AnimationNum matches 50 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/
