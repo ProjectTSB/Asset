@@ -54,11 +54,11 @@
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.75
+        data modify storage asset:mob Resist.Fire set value 1
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.75
+        data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.25
+        data modify storage asset:mob Resist.Thunder set value 0.5
 
 # フィールド
 # [ダメージ量、MP減少量の計算に必要な値]

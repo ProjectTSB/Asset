@@ -16,4 +16,4 @@
 
 # フィールド
 # [ダメージ量、MP減少量の計算に必要な値]
-    data modify storage asset:mob Field set value [34,6]
+    data modify storage asset:mob Field set value [25,6]
