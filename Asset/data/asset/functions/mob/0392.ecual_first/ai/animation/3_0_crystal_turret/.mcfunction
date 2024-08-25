@@ -14,3 +14,7 @@
 
 # アニメーション終了処理
     execute if score @s AW.AnimationTick matches 81 run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/end
+
+# クリスタルタレット召喚
+    execute if score @s AW.AnimationTick matches 49 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/summon/normal
+    execute if score @s AW.AnimationTick matches 49 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/summon/hard
