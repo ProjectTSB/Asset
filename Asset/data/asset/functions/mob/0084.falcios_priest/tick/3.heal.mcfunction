@@ -18,7 +18,7 @@
     playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.8 0 0
     playsound block.fire.ambient hostile @a ~ ~ ~ 1.5 0.8 0
     playsound ogg:mob.vex.idle1 hostile @a ~ ~ ~ 0.8 0 0
-    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=nearest,limit=5] run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
+    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=nearest,limit=5] at @s run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
 
 # 回復
 # 難易度値によって回復量が変動 150N
