@@ -8,7 +8,7 @@
     execute if entity @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=15..25,limit=1] as @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=15..25,sort=random,limit=3] run tp ~ ~ ~
 
 # もしも周囲に敵がいないならどこの誰でもいいから引き寄せ
-    execute unless entity @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=15..25,limit=1] as @e[type=#lib:hostile,tag=!Enemy.Boss,tag=!Uninterferable,distance=..25,sort=nearest,limit=3] run tp ~ ~ ~
+    execute unless entity @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=15..25,limit=1] as @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..25,sort=nearest,limit=3] run tp ~ ~ ~
 
 # 演出
     playsound ogg:block.respawn_anchor.set_spawn1 hostile @a ~ ~ ~ 1 1.4
