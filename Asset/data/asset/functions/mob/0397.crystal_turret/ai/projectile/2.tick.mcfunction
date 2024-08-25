@@ -22,6 +22,9 @@
     function lib:damage/reset
     tag @a[tag=B1.Landing,distance=..3] remove B1.Landing
 
+# Age弄り
+    execute on passengers run data modify entity @s Age set value 0
+
 # キル
     execute if score @s B1.Tick matches 61 run kill @s
     execute at @s unless block ^ ^ ^ #lib:no_collision run kill @s

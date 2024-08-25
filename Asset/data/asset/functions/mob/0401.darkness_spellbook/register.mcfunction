@@ -1,8 +1,8 @@
-#> asset:mob/0400.explosion_spellbook/register
+#> asset:mob/0401.darkness_spellbook/register
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0400.explosion_spellbook/_/register
+# @within function asset:mob/0401.darkness_spellbook/_/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -11,13 +11,13 @@
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:mob ID set value 400
+    data modify storage asset:mob ID set value 401
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"爆発の魔導書","color":"#00FFBB"}'
+    data modify storage asset:mob Name set value '{"text":"爆発の魔導書","color":"#000350"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value 
 # 武器
@@ -29,7 +29,7 @@
     # data modify storage asset:mob WeaponDropChances set value 
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:65467}}}
+        data modify storage asset:mob Armor.Head set value {id:"leather_horse_armor",Count:1b,tag:{CustomModelData:20138,display:{color:848}}}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value 
     # 脚 (Compound(Item)) (オプション)

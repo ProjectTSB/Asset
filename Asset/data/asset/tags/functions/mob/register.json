@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0401.darkness_spellbook/_/register",
         "asset:mob/0400.explosion_spellbook/_/register",
         "asset:mob/0398.crystal_healer/_/register",
         "asset:mob/0397.crystal_turret/_/register",
