@@ -18,14 +18,14 @@
     playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.8 0 0
     playsound block.fire.ambient hostile @a ~ ~ ~ 1.5 0.8 0
     playsound ogg:mob.vex.idle1 hostile @a ~ ~ ~ 0.8 0 0
-    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
+    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=nearest,limit=5] at @s run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
 
 # 回復
 # 難易度値によって回復量が変動 150N
     function api:global_vars/get_difficulty
     execute store result storage api: Argument.Heal int 150 run data get storage api: Return.Difficulty
     function api:heal/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=random,limit=5] run function api:heal/
+    execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,distance=..10,sort=nearest,limit=5] run function api:heal/
     function api:heal/reset
 
 # リセット

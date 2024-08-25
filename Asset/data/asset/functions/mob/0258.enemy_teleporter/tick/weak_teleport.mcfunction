@@ -5,7 +5,7 @@
 # @within function asset:mob/0258.enemy_teleporter/tick/branch
 
 # 近くにいるモブだけをテレポート
-    execute as @e[type=#lib:hostile,tag=Enemy,tag=!Uninterferable,distance=..15,sort=random,limit=3] run tp ~ ~ ~
+    execute as @e[type=#lib:hostile,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..15,sort=random,limit=3] run tp ~ ~ ~
 
 # 演出
     playsound ogg:block.respawn_anchor.set_spawn1 hostile @a ~ ~ ~ 1 1.4
