@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0400.explosion_spellbook/_/init",
         "asset:mob/0398.crystal_healer/_/init",
         "asset:mob/0397.crystal_turret/_/init",
         "asset:mob/0392.ecual_first/_/init",
