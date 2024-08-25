@@ -15,3 +15,6 @@
 
 # クリスタル召喚
     execute if score @s AW.AnimationNum matches 30 run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/
+
+# 魔導書召喚
+    execute if score @s AW.AnimationNum matches 40 run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/

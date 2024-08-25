@@ -12,7 +12,7 @@
     execute at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run tp 0-0-0-0-0 ^ ^ ^ ~ 0
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
+    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
 
 # クリスタル召喚上限
     scoreboard players set $AW.Crystal Temporary 0
