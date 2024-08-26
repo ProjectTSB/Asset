@@ -8,7 +8,7 @@
     scoreboard players add @s B5.Tick 1
 
 # TP
-    tp @s ^ ^ ^0.3 ~ ~
+    tp @s ^ ^ ^0.4 ~ ~
 
 # パーティクル
     particle fishing ~ ~ ~ 0.2 0.2 0.2 0.05 1 force @a[distance=..32]

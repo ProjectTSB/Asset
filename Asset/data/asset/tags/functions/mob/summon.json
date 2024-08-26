@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0402.drown_spellbook/_/summon",
         "asset:mob/0401.darkness_spellbook/_/summon",
         "asset:mob/0400.explosion_spellbook/_/summon",
         "asset:mob/0398.crystal_healer/_/summon",
