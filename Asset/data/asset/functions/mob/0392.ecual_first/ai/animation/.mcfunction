@@ -21,3 +21,6 @@
 
 # シャイニングレイ
     execute if score @s AW.AnimationNum matches 50 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/
+
+# ウォーターバレット
+    execute if score @s AW.AnimationNum matches 51 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/

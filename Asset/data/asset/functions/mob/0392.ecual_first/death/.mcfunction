@@ -12,3 +12,6 @@
 # ディスプレイ削除
     kill @e[tag=AW.WaterMagic]
     kill @e[tag=AW.WaterMagicDisplay]
+    kill @e[tag=AW.AnnounceLine]
+    kill @e[tag=AW.AnnounceLineEven]
+    kill @e[tag=AW.WaterBullet]

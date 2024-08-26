@@ -12,8 +12,10 @@
     #declare tag AW.SuperiorSkill
     #declare tag AW.ProjectileInit
     #declare tag AW.WaterMagic
+    #declare tag AW.WaterBullet
     #declare tag AW.WaterMagicDisplay
     #declare tag AW.AnnounceLine
+    #declare tag AW.AnnounceLineEven
     #declare tag AW.Inbisible
     #declare tag AW.AnnounceInit
 

@@ -24,3 +24,6 @@
         execute as @e[type=item_display,tag=AW.WaterMagic,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_magic/2.tick
     # 予告線 Tick処理
         execute at @s as @e[type=item_display,tag=AW.AnnounceLine,distance=..100] run function asset:mob/0392.ecual_first/ai/projectile/announce_line/2.tick
+        execute at @s as @e[type=item_display,tag=AW.AnnounceLineEven,distance=..100] run function asset:mob/0392.ecual_first/ai/projectile/announce_line_even/2.tick
+    # 水の弾丸 Tick処理
+        execute as @e[type=item_display,tag=AW.WaterBullet,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_bullet/2.tick
