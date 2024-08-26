@@ -24,3 +24,6 @@
 
 # ウォーターバレット
     execute if score @s AW.AnimationNum matches 51 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/
+
+# 移動
+    execute if score @s AW.AnimationNum matches 60 run function asset:mob/0392.ecual_first/ai/animation/6_0_moving/
