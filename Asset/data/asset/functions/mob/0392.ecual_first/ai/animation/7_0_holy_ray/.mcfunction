@@ -4,10 +4,15 @@
 #
 # @within function asset:mob/0392.ecual_first/ai/animation/
 
-# 近くのプレイヤーの方を向く
+# 対象プレイヤー保存
+    execute if score @s AW.AnimationTick matches 1 run scoreboard players operation @s AW.UUID = @r[tag=!PlayerShouldInvulnerable,distance=..100] UserID
+
+# プレイヤーの方を向く
+# 移動中は対象プレイヤーの方を向く
     tag @s add AW.Temp.This
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/general/2.rotate
-    tag @s remove AW.Temp.This
+    scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
+    execute as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
+    scoreboard players reset $AW.Temp AW.UUID
 
 # アニメーション再生
     execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/animations/7_0_holy_ray/play
@@ -16,7 +21,7 @@
     execute if score @s AW.AnimationTick matches 176 run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/end
 
 # ビーム発射
-    execute if score @s AW.AnimationTick matches 66..146 positioned ^ ^1 ^1.25 run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/beam/
+    execute if score @s AW.AnimationTick matches 66..146 positioned ^ ^0.65 ^1.75 run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/beam/
 
 # TP
     execute if score @s AW.AnimationTick matches 16 at @s run tp @s ^ ^0.3 ^ ~ ~
