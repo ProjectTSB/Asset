@@ -20,7 +20,7 @@
 
 # Timeを取る
     execute store result score $B3.Temp Temporary run time query gametime
-    scoreboard players operation $B3.Temp Temporary %= $2 Const
+    scoreboard players operation $B3.Temp Temporary %= $3 Const
 
 # 地面に足を付けていないプレイヤを見つけろ！
     execute if score $B3.Temp Temporary matches 0 if entity @p[tag=!PlayerShouldInvulnerable,nbt={OnGround:0b},distance=..100] at @s run function asset:mob/0399.void_spellbook/ai/bullet/4.fire
