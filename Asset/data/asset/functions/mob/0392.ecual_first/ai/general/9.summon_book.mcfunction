@@ -21,12 +21,11 @@ particle end_rod ^-1.0 ^0.0 ^0.0 ^-1.0 ^1000000000.0 ^0.0 0.00000000030 0 force 
 particle end_rod ^-0.5 ^0.0 ^0.866 ^-0.5 ^1000000000.0 ^0.866 0.00000000030 0 force @a[distance=..32]
 
 # 魔導書分岐
-    execute store result score $AW.Temp Temporary run random value 1..5
-    execute if score $AW.Temp Temporary matches 1..5 run data modify storage api: Argument.ID set value 257
-#   execute if score $AW.Temp Temporary matches 2 run data modify storage api: Argument.ID set value 363
-#   execute if score $AW.Temp Temporary matches 3 run data modify storage api: Argument.ID set value 369
-#   execute if score $AW.Temp Temporary matches 4 run data modify storage api: Argument.ID set value 371
-#   execute if score $AW.Temp Temporary matches 5 run data modify storage api: Argument.ID set value 373
+    execute store result score $AW.Temp Temporary run random value 1..4
+    execute if score $AW.Temp Temporary matches 1 run data modify storage api: Argument.ID set value 399
+    execute if score $AW.Temp Temporary matches 2 run data modify storage api: Argument.ID set value 400
+    execute if score $AW.Temp Temporary matches 3 run data modify storage api: Argument.ID set value 401
+    execute if score $AW.Temp Temporary matches 4 run data modify storage api: Argument.ID set value 402
     function api:mob/summon
 
 # リセット
