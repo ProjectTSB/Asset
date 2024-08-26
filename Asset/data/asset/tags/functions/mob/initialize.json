@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0399.void_spellbook/_/init",
         "asset:mob/0402.drown_spellbook/_/init",
         "asset:mob/0401.darkness_spellbook/_/init",
         "asset:mob/0400.explosion_spellbook/_/init",

@@ -6,7 +6,6 @@
     #declare tag B5.Temp
     #declare tag B5.Bullet
     #declare tag B5.Landing
-    #declare tag B5.Marker
 
 #> score
 # @within function asset:mob/0401.darkness_spellbook/**

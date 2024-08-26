@@ -6,7 +6,6 @@
     #declare tag B6.Temp
     #declare tag B6.Bullet
     #declare tag B6.Landing
-    #declare tag B6.Marker
 
 #> score
 # @within function asset:mob/0402.drown_spellbook/**
