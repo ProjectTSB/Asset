@@ -5,7 +5,6 @@
 # @within function
 #   asset:mob/0104.mad_scientist/hurt/**
 #   asset:mob/0104.mad_scientist/tick/**
-    #declare tag 2W.HPless50Per
     #declare score_holder $Random
 
 #> ポーション側と共通の定義

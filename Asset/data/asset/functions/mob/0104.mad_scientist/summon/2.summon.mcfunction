@@ -5,11 +5,11 @@
 # @within function asset:mob/0104.mad_scientist/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AntiVoid"],DeathLootTable:"asset:mob/death/0104.mad_scientist"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/0104.mad_scientist"}
 # ID (int)
     data modify storage asset:mob ID set value 104
 # Type (string) Wikiを参照
-    data modify storage asset:mob Type set value "Enemy.Boss"
+    data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
@@ -33,9 +33,9 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 25000
+    data modify storage asset:mob Health set value 1000
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 16
+    data modify storage asset:mob AttackDamage set value 0
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value -7
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
