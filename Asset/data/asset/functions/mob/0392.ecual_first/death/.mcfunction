@@ -15,3 +15,5 @@
     kill @e[tag=AW.AnnounceLine]
     kill @e[tag=AW.AnnounceLineEven]
     kill @e[tag=AW.WaterBullet]
+    kill @e[tag=AW.QuietusRain]
+    kill @e[tag=AW.WaterWall]

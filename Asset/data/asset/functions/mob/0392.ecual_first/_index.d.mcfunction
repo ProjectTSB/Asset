@@ -9,6 +9,7 @@
     #declare tag AW.Temp.This
     #declare tag AW.Temp.Target
     #declare tag AW.Landing
+    #declare tag AW.Predict
     #declare tag AW.SuperiorSkill
     #declare tag AW.ProjectileInit
     #declare tag AW.WaterMagic
@@ -18,6 +19,9 @@
     #declare tag AW.AnnounceLineEven
     #declare tag AW.Inbisible
     #declare tag AW.AnnounceInit
+    #declare tag AW.QuietusRain
+    #declare tag AW.QuietusRainMagic
+    #declare tag AW.WaterWall
 
 #> val
 # @within function asset:mob/0392.ecual_first/**

@@ -30,3 +30,9 @@
 
 # ホーリーレイ
     execute if score @s AW.AnimationNum matches 70 run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/
+
+# クワイタスレイン
+    execute if score @s AW.AnimationNum matches 80 run function asset:mob/0392.ecual_first/ai/animation/8_0_quietus_rain/
+
+# ウォーターウォール
+    execute if score @s AW.AnimationNum matches 90 run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/

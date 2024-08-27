@@ -5,6 +5,7 @@
 # @within function
 #   asset:mob/0392.ecual_first/ai/projectile/water_magic/1.1.loop
 #   asset:mob/0392.ecual_first/ai/projectile/water_magic/1.init
+#   asset:mob/0392.ecual_first/ai/projectile/water_wall/1.init
 
 # 少し下げて判定
     scoreboard players remove $AW.Temp Temporary 1

@@ -11,4 +11,4 @@
     scoreboard players set @s AW.AnimationNum 0
 
 # 停止処理
-    execute as @e[type=item_display,tag=AV.Root.This,distance=..100,sort=nearest,limit=1] run function animated_java:ecual/animations/pause_all
+    execute as @e[type=item_display,tag=AW.Root.This,distance=..100,sort=nearest,limit=1] run function animated_java:ecual/animations/pause_all
