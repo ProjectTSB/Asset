@@ -24,6 +24,7 @@
     #declare tag AW.WaterWall
     #declare tag AW.HydroStorm
     #declare tag AW.HydroStormFirst
+    #declare tag AW.HydroAnnounce
 
 #> val
 # @within function asset:mob/0392.ecual_first/**

@@ -26,6 +26,10 @@
 # VFX
     execute if score @s AW.ProjectileTick matches 1..110 run function asset:mob/0392.ecual_first/ai/projectile/hydro/direction/vfx/tick
 
+# 予告線
+    execute as @e[type=item_display,tag=AW.HydroAnnounce,distance=..2] run data merge entity @s {teleport_duration:0,transformation:{scale:[3f,0.1f,60f]}}
+    execute if entity @s[tag=!AW.HydroStormFirst] if entity @e[type=marker,tag=AW.Marker.SummonPoint,distance=24.25..25.75] run function asset:mob/0392.ecual_first/ai/projectile/hydro/direction/announce_line
+
 # サウンド
     scoreboard players operation $AW.Temp Temporary = @s AW.ProjectileTick
     scoreboard players operation $AW.Temp Temporary %= $2 Const
@@ -42,7 +46,8 @@
     execute on passengers on passengers run data modify entity @s Age set value 0
 
 # TP
-    execute at @s run tp @s ^ ^ ^1.25
+    execute at @s run tp @s ^ ^ ^1
+    execute if predicate api:global_vars/difficulty/min/hard at @s run tp @s ^ ^ ^0.25
 
 # キル
     execute if score @s AW.ProjectileTick matches 111.. run function asset:mob/0392.ecual_first/ai/projectile/hydro/4.kill
