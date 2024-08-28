@@ -1,3 +1,0 @@
-execute if score @s aj.anim_time matches 256..263 run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tree/branch_256_263
-execute if score @s aj.anim_time matches 264 run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tree/leaf_264
-execute if score @s aj.anim_time matches 265 run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/tree/leaf_265
