@@ -2,7 +2,7 @@
 #
 # 怯みアニメーション 開始
 #
-# @within function asset:mob/0391.axia_first/**
+# @within function asset:mob/0392.ecual_first/**
 
 # アニメーションストップ
     function asset:mob/0392.ecual_first/ai/animation/all_stop
@@ -15,4 +15,4 @@
     scoreboard players set @s AW.AnimationTick 0
 
 # 怯み回数を増やす
-    scoreboard players add @s AW.FalterCount 1
+#    scoreboard players add @s AW.FalterCount 1

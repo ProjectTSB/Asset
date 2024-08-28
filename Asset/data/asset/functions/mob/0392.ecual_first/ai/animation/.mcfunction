@@ -10,6 +10,9 @@
 # 待機 レア
     execute if score @s AW.AnimationNum matches 11 run function asset:mob/0392.ecual_first/ai/animation/1_1_idle_rare/
 
+# 待機 ロング
+    execute if score @s AW.AnimationNum matches 12 run function asset:mob/0392.ecual_first/ai/animation/1_2_idle_long/
+
 # チルレイン
     execute if score @s AW.AnimationNum matches 20 run function asset:mob/0392.ecual_first/ai/animation/2_0_chill_rain/
 
@@ -39,3 +42,9 @@
 
 # ハイドロストーム
     execute if score @s AW.AnimationNum matches 100 run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/
+
+# 被弾1
+    execute if score @s AW.AnimationNum matches 990 run function asset:mob/0392.ecual_first/ai/animation/99_0_damaged_1/
+
+# 被弾2
+    execute if score @s AW.AnimationNum matches 991 run function asset:mob/0392.ecual_first/ai/animation/99_1_damaged_2/
