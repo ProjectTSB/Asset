@@ -17,3 +17,4 @@
     kill @e[tag=AW.WaterBullet]
     kill @e[tag=AW.QuietusRain]
     kill @e[tag=AW.WaterWall]
+    kill @e[tag=AW.Critical]

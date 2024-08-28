@@ -2,7 +2,9 @@
 #
 # プレイヤー 追従型
 #
-# @within function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/
+# @within function
+#   asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/
+#   asset:mob/0392.ecual_first/ai/animation/100_0_opening/
 
 # マーカーを呼ぶ
     tp 0-0-0-0-0 ^ ^ ^ ~ 0

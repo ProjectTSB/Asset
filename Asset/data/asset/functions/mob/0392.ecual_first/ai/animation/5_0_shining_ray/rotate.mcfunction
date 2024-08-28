@@ -5,6 +5,7 @@
 # @within function
 #   asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/
 #   asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/
+#   asset:mob/0392.ecual_first/ai/animation/100_0_opening/
 
 # タグ付与
     tag @s add AW.Temp.Target
