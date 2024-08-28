@@ -22,6 +22,8 @@
     #declare tag AW.QuietusRain
     #declare tag AW.QuietusRainMagic
     #declare tag AW.WaterWall
+    #declare tag AW.HydroStorm
+    #declare tag AW.HydroStormFirst
 
 #> val
 # @within function asset:mob/0392.ecual_first/**

@@ -31,3 +31,5 @@
         execute as @e[type=marker,tag=AW.QuietusRain,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/quietus_rain/2.tick
     # 水の壁 Tick処理
         execute as @e[type=marker,tag=AW.WaterWall,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_wall/2.tick
+    # ハイドロストーム Tick処理
+        execute as @e[type=item_display,tag=AW.HydroStorm,distance=..200] at @s run function asset:mob/0392.ecual_first/ai/projectile/hydro/2.tick

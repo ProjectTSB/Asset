@@ -36,3 +36,6 @@
 
 # ウォーターウォール
     execute if score @s AW.AnimationNum matches 90 run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/
+
+# ハイドロストーム
+    execute if score @s AW.AnimationNum matches 100 run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/
