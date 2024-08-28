@@ -3,6 +3,7 @@
 # 初期化ループ処理
 #
 # @within function
+#   asset:mob/0392.ecual_first/ai/projectile/critical/1.init
 #   asset:mob/0392.ecual_first/ai/projectile/water_magic/1.1.loop
 #   asset:mob/0392.ecual_first/ai/projectile/water_magic/1.init
 #   asset:mob/0392.ecual_first/ai/projectile/water_wall/1.init

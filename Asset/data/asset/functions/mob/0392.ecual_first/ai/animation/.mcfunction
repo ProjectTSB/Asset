@@ -48,3 +48,6 @@
 
 # 被弾2
     execute if score @s AW.AnimationNum matches 991 run function asset:mob/0392.ecual_first/ai/animation/99_1_damaged_2/
+
+# オープニング
+    execute if score @s AW.AnimationNum matches 1000 run function asset:mob/0392.ecual_first/ai/animation/100_0_opening/

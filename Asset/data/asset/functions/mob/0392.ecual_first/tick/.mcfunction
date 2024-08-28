@@ -33,3 +33,5 @@
         execute as @e[type=marker,tag=AW.WaterWall,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_wall/2.tick
     # ハイドロストーム Tick処理
         execute as @e[type=item_display,tag=AW.HydroStorm,distance=..200] at @s run function asset:mob/0392.ecual_first/ai/projectile/hydro/2.tick
+    # クリティカル Tick処理
+        execute as @e[type=marker,tag=AW.Critical,distance=..200] at @s run function asset:mob/0392.ecual_first/ai/projectile/critical/2.tick

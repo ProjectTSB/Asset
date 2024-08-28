@@ -1,0 +1,84 @@
+#> asset:mob/0392.ecual_first/ai/projectile/critical/vfx/cast
+#
+# クリティカル演出
+#
+# @within function asset:mob/0392.ecual_first/ai/projectile/critical/3.cast
+
+# 円
+    particle end_rod ^-0.0 ^0.0 ^8.0 ^-0.0 ^1000000000.0 ^8.0 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^0.784 ^0.0 ^7.961 ^0.784 ^1000000000.0 ^7.961 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^1.561 ^0.0 ^7.846 ^1.561 ^1000000000.0 ^7.846 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^2.322 ^0.0 ^7.656 ^2.322 ^1000000000.0 ^7.656 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^3.061 ^0.0 ^7.391 ^3.061 ^1000000000.0 ^7.391 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^3.771 ^0.0 ^7.055 ^3.771 ^1000000000.0 ^7.055 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^4.445 ^0.0 ^6.652 ^4.445 ^1000000000.0 ^6.652 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^5.075 ^0.0 ^6.184 ^5.075 ^1000000000.0 ^6.184 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^5.657 ^0.0 ^5.657 ^5.657 ^1000000000.0 ^5.657 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^6.184 ^0.0 ^5.075 ^6.184 ^1000000000.0 ^5.075 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^6.652 ^0.0 ^4.445 ^6.652 ^1000000000.0 ^4.445 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^7.055 ^0.0 ^3.771 ^7.055 ^1000000000.0 ^3.771 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^7.391 ^0.0 ^3.061 ^7.391 ^1000000000.0 ^3.061 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^7.656 ^0.0 ^2.322 ^7.656 ^1000000000.0 ^2.322 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^7.846 ^0.0 ^1.561 ^7.846 ^1000000000.0 ^1.561 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^7.961 ^0.0 ^0.784 ^7.961 ^1000000000.0 ^0.784 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^8.0 ^0.0 ^0.0 ^8.0 ^1000000000.0 ^0.0 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^7.961 ^0.0 ^-0.784 ^7.961 ^1000000000.0 ^-0.784 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^7.846 ^0.0 ^-1.561 ^7.846 ^1000000000.0 ^-1.561 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^7.656 ^0.0 ^-2.322 ^7.656 ^1000000000.0 ^-2.322 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^7.391 ^0.0 ^-3.061 ^7.391 ^1000000000.0 ^-3.061 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^7.055 ^0.0 ^-3.771 ^7.055 ^1000000000.0 ^-3.771 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^6.652 ^0.0 ^-4.445 ^6.652 ^1000000000.0 ^-4.445 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^6.184 ^0.0 ^-5.075 ^6.184 ^1000000000.0 ^-5.075 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^5.657 ^0.0 ^-5.657 ^5.657 ^1000000000.0 ^-5.657 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^5.075 ^0.0 ^-6.184 ^5.075 ^1000000000.0 ^-6.184 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^4.445 ^0.0 ^-6.652 ^4.445 ^1000000000.0 ^-6.652 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^3.771 ^0.0 ^-7.055 ^3.771 ^1000000000.0 ^-7.055 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^3.061 ^0.0 ^-7.391 ^3.061 ^1000000000.0 ^-7.391 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^2.322 ^0.0 ^-7.656 ^2.322 ^1000000000.0 ^-7.656 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^1.561 ^0.0 ^-7.846 ^1.561 ^1000000000.0 ^-7.846 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^0.784 ^0.0 ^-7.961 ^0.784 ^1000000000.0 ^-7.961 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-0.0 ^0.0 ^-8.0 ^-0.0 ^1000000000.0 ^-8.0 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^-0.784 ^0.0 ^-7.961 ^-0.784 ^1000000000.0 ^-7.961 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-1.561 ^0.0 ^-7.846 ^-1.561 ^1000000000.0 ^-7.846 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-2.322 ^0.0 ^-7.656 ^-2.322 ^1000000000.0 ^-7.656 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-3.061 ^0.0 ^-7.391 ^-3.061 ^1000000000.0 ^-7.391 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^-3.771 ^0.0 ^-7.055 ^-3.771 ^1000000000.0 ^-7.055 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-4.445 ^0.0 ^-6.652 ^-4.445 ^1000000000.0 ^-6.652 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-5.075 ^0.0 ^-6.184 ^-5.075 ^1000000000.0 ^-6.184 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-5.657 ^0.0 ^-5.657 ^-5.657 ^1000000000.0 ^-5.657 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^-6.184 ^0.0 ^-5.075 ^-6.184 ^1000000000.0 ^-5.075 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-6.652 ^0.0 ^-4.445 ^-6.652 ^1000000000.0 ^-4.445 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-7.055 ^0.0 ^-3.771 ^-7.055 ^1000000000.0 ^-3.771 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-7.391 ^0.0 ^-3.061 ^-7.391 ^1000000000.0 ^-3.061 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^-7.656 ^0.0 ^-2.322 ^-7.656 ^1000000000.0 ^-2.322 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-7.846 ^0.0 ^-1.561 ^-7.846 ^1000000000.0 ^-1.561 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-7.961 ^0.0 ^-0.784 ^-7.961 ^1000000000.0 ^-0.784 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-8.0 ^0.0 ^0.0 ^-8.0 ^1000000000.0 ^0.0 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^-7.961 ^0.0 ^0.784 ^-7.961 ^1000000000.0 ^0.784 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-7.846 ^0.0 ^1.561 ^-7.846 ^1000000000.0 ^1.561 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-7.656 ^0.0 ^2.322 ^-7.656 ^1000000000.0 ^2.322 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-7.391 ^0.0 ^3.061 ^-7.391 ^1000000000.0 ^3.061 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^-7.055 ^0.0 ^3.771 ^-7.055 ^1000000000.0 ^3.771 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-6.652 ^0.0 ^4.445 ^-6.652 ^1000000000.0 ^4.445 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-6.184 ^0.0 ^5.075 ^-6.184 ^1000000000.0 ^5.075 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-5.657 ^0.0 ^5.657 ^-5.657 ^1000000000.0 ^5.657 0.00000000050 0 force @a[distance=..32]
+    particle end_rod ^-5.075 ^0.0 ^6.184 ^-5.075 ^1000000000.0 ^6.184 0.00000000037 0 force @a[distance=..32]
+    particle end_rod ^-4.445 ^0.0 ^6.652 ^-4.445 ^1000000000.0 ^6.652 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-3.771 ^0.0 ^7.055 ^-3.771 ^1000000000.0 ^7.055 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-3.061 ^0.0 ^7.391 ^-3.061 ^1000000000.0 ^7.391 0.00000000022 0 force @a[distance=..32]
+    particle end_rod ^-2.322 ^0.0 ^7.656 ^-2.322 ^1000000000.0 ^7.656 0.00000000025 0 force @a[distance=..32]
+    particle end_rod ^-1.561 ^0.0 ^7.846 ^-1.561 ^1000000000.0 ^7.846 0.00000000030 0 force @a[distance=..32]
+    particle end_rod ^-0.784 ^0.0 ^7.961 ^-0.784 ^1000000000.0 ^7.961 0.00000000037 0 force @a[distance=..32]
+
+# 追加パーティクル
+    particle dust 1 1 100000000 4 ~ ~1 ~ 3.75 0.5 3.75 0 200 force @a[distance=..32]
+    particle gust_emitter ~ ~0.25 ~ 1.25 0.5 1.25 0 5 force @a[distance=..32]
+
+# 音
+    playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 1.5
+    playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 0.9
+    playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 0.6
+    playsound entity.player.swim hostile @a[distance=..32] ~ ~ ~ 1 1
+    playsound entity.player.swim hostile @a[distance=..32] ~ ~ ~ 1 1.01
+    playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 0.7 2
+    playsound entity.wither.shoot hostile @a[distance=..32] ~ ~ ~ 0.9 1.5
