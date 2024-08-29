@@ -17,7 +17,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"爆発の魔導書","color":"#000350"}'
+    data modify storage asset:mob Name set value '{"text":"暗闇の魔導書","color":"#000350"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value 
 # 武器

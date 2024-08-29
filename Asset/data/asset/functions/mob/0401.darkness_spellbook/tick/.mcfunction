@@ -28,5 +28,10 @@
     scoreboard players operation $B5.Temp B5.UUID = @s MobUUID
     execute as @e[type=item_display,tag=B5.Bullet,distance=..100] if score @s B5.UUID = $B5.Temp B5.UUID at @s run function asset:mob/0401.darkness_spellbook/ai/bullet/2.tick
 
+# ランダムテレポート
+    execute store result score $B5.Temp B5.Tick run random value 1..150
+    execute if score $B5.Temp B5.Tick matches 1 run function asset:mob/0401.darkness_spellbook/tick/teleport
+
 # リセット
     scoreboard players reset $B5.Temp B5.UUID
+    scoreboard players reset $B5.Temp B5.Tick

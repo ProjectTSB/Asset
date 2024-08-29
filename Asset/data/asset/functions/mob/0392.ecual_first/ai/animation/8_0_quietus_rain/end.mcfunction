@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0392.ecual_first/ai/animation/8_0_quietus_rain/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AW.AnimationNum 80
-    scoreboard players set @s AW.AnimationTick -250
+# 上位スキル発動トリガー 外し
+    tag @s remove AW.SuperiorSkill
+
+# 待機（長）モーション移行
+    scoreboard players set @s AW.AnimationNum 12
+    scoreboard players set @s AW.AnimationTick 0

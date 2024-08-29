@@ -15,4 +15,4 @@
     scoreboard players set @s AW.AnimationTick 0
 
 # 怯み回数を増やす
-#    scoreboard players add @s AW.FalterCount 1
+    scoreboard players add @s AW.FalterCount 1

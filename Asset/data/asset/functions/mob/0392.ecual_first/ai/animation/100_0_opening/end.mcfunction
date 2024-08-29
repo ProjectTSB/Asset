@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/0392.ecual_first/ai/animation/100_0_opening/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AW.AnimationNum 1000
-    scoreboard players set @s AW.AnimationTick 0
+function asset:mob/0392.ecual_first/ai/general/7.idle_motion_change
+
+# 干渉可能となる
+    data modify entity @s Invulnerable set value 0b
+    tag @s remove Uninterferable

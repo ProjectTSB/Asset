@@ -4,6 +4,6 @@
 #
 # @within function asset:mob/0392.ecual_first/ai/animation/1_2_idle_long/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AW.AnimationNum 12
+# 移動アニメーション移行
+    scoreboard players set @s AW.AnimationNum 60
     scoreboard players set @s AW.AnimationTick 0

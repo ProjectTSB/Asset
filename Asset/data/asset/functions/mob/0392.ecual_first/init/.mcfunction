@@ -21,5 +21,5 @@
 
 # 登場演出時は干渉付加
 # デバッグ時は無効化
-#    data modify entity @s Invulnerable set value 1b
-#    tag @s add Uninterferable
+    data modify entity @s Invulnerable set value 1b
+    tag @s add Uninterferable
