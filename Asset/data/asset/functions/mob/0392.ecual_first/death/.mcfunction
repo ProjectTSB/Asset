@@ -4,11 +4,6 @@
 #
 # @within function asset:mob/0392.ecual_first/_/death
 
-# デバッグ用
-# マーカー削除
-    kill @e[tag=AW.Marker.SummonPoint]
-# AnimatedJavaモデルの削除
-    function animated_java:ecual/remove/all
 # ディスプレイ削除
     kill @e[tag=AW.WaterMagic]
     kill @e[tag=AW.WaterMagicDisplay]
@@ -18,3 +13,6 @@
     kill @e[tag=AW.QuietusRain]
     kill @e[tag=AW.WaterWall]
     kill @e[tag=AW.Critical]
+
+# スケジュール起動
+    schedule function asset:mob/0392.ecual_first/ai/general/8.death/schedule 1t
