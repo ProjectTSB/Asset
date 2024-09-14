@@ -13,9 +13,9 @@
 # 回復対象：使用者と20m以内の現在体力の低いプレイヤー2名
     tag @s add HealTarget
 
-# 現在体力の低いプレイヤー2名を特定してTagを付与
-    execute if entity @p[tag=!HealTarget,distance=..20] run function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_player
-    execute if entity @p[tag=!HealTarget,distance=..20] run function asset:artifact/1075.fairy_vial/trigger/4.find_lowest_health_player
+# 体力の最も失ったプレイヤー2名を特定してTagを付与
+    execute if entity @p[tag=!HealTarget,distance=..20] run function asset:artifact/1075.fairy_vial/trigger/4.find_target_player
+    execute if entity @p[tag=!HealTarget,distance=..20] run function asset:artifact/1075.fairy_vial/trigger/4.find_target_player
 
 # 回復対象の位置で演出
 # playsoundは回復対象にのみ聞こえる 妖精っぽくて良くない？
