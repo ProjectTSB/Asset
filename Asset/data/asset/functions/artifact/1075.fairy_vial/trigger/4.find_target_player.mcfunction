@@ -18,10 +18,10 @@
     execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1075.fairy_vial/trigger/5.get_lost_health
 
 # $MostLostHealthの初期値として対象プレイヤーの内1名の体力を代入
-    execute unless score $MostLostHealth Temporary matches 1.. as @a[tag=SearchTarget,limit=1] store result score $MostLostHealth Temporary run scoreboard players get @s Temporary
+    execute unless score $MostLostHealth Temporary matches 1.. as @p[tag=SearchTarget] store result score $MostLostHealth Temporary run scoreboard players get @s Temporary
 
-# 全員の体力と比較する
-    execute as @a[tag=SearchTarget] run scoreboard players operation $MostLostHealth Temporary < @s Temporary
+# 近い順に全員の体力と比較する
+    execute as @a[tag=SearchTarget,sort=nearest] run scoreboard players operation $MostLostHealth Temporary < @s Temporary
 
 # 特定したプレイヤーにTagを付与
 # SearchTargetとHealTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
