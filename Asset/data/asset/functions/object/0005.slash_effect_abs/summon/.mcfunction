@@ -9,6 +9,7 @@
 
 # 独自のInit処理を行う
     function asset:object/0005.slash_effect_abs/summon/init
+    tellraw @a {"storage":"asset:object","nbt":"Field.myValue"}
 
 # 実装フラグを立てる
 data modify storage asset:object Implement set value true
