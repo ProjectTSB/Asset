@@ -11,4 +11,4 @@
 # ID (int)
     data modify storage asset:object ID set value 5
 # フィールド
-    data modify storage asset:object Field.myValue set value 5
+    data modify storage asset:object Field set value {item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:0},CustomModelData:20353}}}

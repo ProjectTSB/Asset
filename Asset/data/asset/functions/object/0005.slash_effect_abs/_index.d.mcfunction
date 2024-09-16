@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:object/0005.slash_effect_abs/**
-    #declare 5.SlashEffectInit
+    #declare tag 5.SlashEffectInit
+    #declare tag 5.Invisible
