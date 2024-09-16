@@ -495,6 +495,8 @@
                         "    # data modify storage asset:artifact DisableCooldownMessage set value ",
                         "# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
                         "    # data modify storage asset:artifact DisableMPMessage set value ",
+                        "# 破壊時の音を鳴らさないかどうか (boolean) (オプション)",
+                        "    # data modify storage asset:artifact DisableBreakSound set value",
                         "# 扱える神 (string[]) Wikiを参照",
                         "    data modify storage asset:artifact CanUsedGod set value []",
                         "# カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)",
@@ -630,6 +632,8 @@
                         "    data modify storage asset:artifact Slot set value \"hotbar\"",
                         "# 神器のトリガー (string) Wikiを参照",
                         "    data modify storage asset:artifact Trigger set value ",
+                        "# 効果が重複可能か否か (boolean) (オプション)",
+                        "    # data modify storage asset:artifact EnableDuplication set value ",
                         "# 神器の発動条件 (TextComponentString) (オプション)",
                         "    # data modify storage asset:artifact Condition set value ",
                         "# 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)",
@@ -656,6 +660,8 @@
                         "    # data modify storage asset:artifact DisableCooldownMessage set value ",
                         "# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
                         "    # data modify storage asset:artifact DisableMPMessage set value ",
+                        "# 破壊時の音を鳴らさないかどうか (boolean) (オプション)",
+                        "    # data modify storage asset:artifact DisableBreakSound set value",
                         "# 扱える神 (string[]) Wikiを参照",
                         "    data modify storage asset:artifact CanUsedGod set value []",
                         "# カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)",
@@ -1586,11 +1592,12 @@
                         "#",
                         "# モブの動作チェック用の召喚処理 使い終わったら消してもいいかも",
                         "#",
-                        "# @within asset:mob/%namespace%/summon/debug",
+                        "# @user",
+                        "# @private",
                         "",
                         "# モブを召喚",
-                        "   data modify storage api: Argument.ID set value %id%",
-                        "   function api:mob/summon"
+                        "    data modify storage api: Argument.ID set value %id%",
+                        "    function api:mob/summon"
                     ]
                 },
                 {
@@ -1603,8 +1610,12 @@
                         "#",
                         "# @within function asset:mob/%namespace%/_/register",
                         "",
+                        "# 継承 (int) (オプション)",
+                        "    # data modify storage asset:mob Extends append value",
+                        "    # function asset:mob/extends",
+                        "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
-                        "    # data modify storage asset:mob ExtendsSafe set value ",
+                        "    # data modify storage asset:mob ExtendsSafe set value true",
                         "# ID (int)",
                         "    data modify storage asset:mob ID set value %id%",
                         "# Type (string) Wikiを参照",
@@ -1660,7 +1671,7 @@
                         "        # data modify storage asset:mob Resist.Thunder set value ",
                         "",
                         "# フィールド",
-                        "    # data modify storage asset:mob Field.myValue set value "
+                        "    # data modify storage asset:mob Field set value {}"
                     ]
                 },
                 {
@@ -2127,257 +2138,437 @@
             ]
         },
         {
-            "label": "Object/登録処理",
+            "label": "Effect/テンプレート",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/register.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/register.mcfunction",
                     "content": [
-                        "#> asset:object/%namespace%/register",
+                        "#> asset:effect/%namespace%/register",
                         "#",
-                        "# Objectのデータを指定",
+                        "# Effectのデータを指定",
                         "#",
-                        "# @within function asset:object/alias/%namespace%/register",
+                        "# @within function asset:effect/%namespace%/_/register",
                         "",
-                        "# 他のモブに継承されることを許可するか (boolean) (オプション)",
-                        "    # data modify storage asset:object ExtendsSafe set value ",
-                        "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
-                        "   data modify storage asset:object IsAbstract set value false",
+                        "# ExtendsSafe (boolean) (default = false)",
+                        "    # data modify storage asset:effect ExtendsSafe set value true",
                         "# ID (int)",
-                        "    data modify storage asset:object ID set value %id%",
+                        "    data modify storage asset:effect ID set value %id%",
+                        "# 名前 (TextComponentString)",
+                        "    data modify storage asset:effect Name set value ",
+                        "# 説明文 (TextComponentString[])",
+                        "    data modify storage asset:effect Description set value ",
+                        "# 効果時間 (int) (default = API || error)",
+                        "    data modify storage asset:effect Duration set value ",
+                        "# スタック (int) (default = API || 1)",
+                        "    # data modify storage asset:effect Stack set value ",
+                        "# 効果時間の操作方法 (default = API || \"replace\")",
+                        "    # data modify storage asset:effect DurationOperation set value ",
+                        "# スタックの操作方法 (default = API || \"replace\")",
+                        "    # data modify storage asset:effect StackOperation set value ",
+                        "# 最大効果時間 (int) (default = 2147483647)",
+                        "    # data modify storage asset:effect MaxDuration set value ",
+                        "# 最大スタック (int) (default = 2147483647)",
+                        "    # data modify storage asset:effect MaxStack set value ",
+                        "# 悪い効果か否か (boolean)",
+                        "    data modify storage asset:effect IsBadEffect set value ",
+                        "# 死亡時のエフェクトの処理 (default = \"remove\")",
+                        "    # data modify storage asset:effect ProcessOnDied set value ",
+                        "# 消すのに必要なレベル (int) (default = 1)",
+                        "    # data modify storage asset:effect RequireClearLv set value ",
+                        "",
                         "# フィールド",
-                        "    # data modify storage asset:object Field.myValue set value "
+                        "    # data modify storage asset:effect Field set value {}"
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/alias/%id%/register.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/_/register.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/register",
+                        "#> asset:effect/%namespace%/_/register",
                         "#",
-                        "# Objectのデータ指定処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/summon/summon.m",
+                        "#",
+                        "# @within tag/function asset:effect/register",
                         "",
-                        "# 元の登録処理を呼び出す",
-                        "   function asset:object/%namespace%/register"
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/register"
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/summon/debug.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/summon/debug",
-                        "#",
-                        "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
-                        "#",
-                        "# @within asset:object/%namespace%/summon/debug",
-                        "",
-                        "# 召喚",
-                        "   data modify storage api: Argument.ID set value %id%",
-                        "   function api:object/summon"
-                    ]
+                    "rel": "data/asset/tags/functions/effect/register.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/register"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/register"
+                    }
                 }
             ],
             "customQuestion": [
                 {
                     "name": "id",
-                    "question": "ObjectのID",
+                    "question": "EffectのID",
                     "pattern": "[1-9][0-9]*",
                     "patternErrorMessage": "数値のみが許されるよ"
                 }
             ]
         },
         {
-            "label": "Object/ 召喚処理",
+            "label": "Effect/テンプレート (継承)",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/summon/.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/register.mcfunction",
                     "content": [
-                        "#> asset:object/%namespace%/summon/",
+                        "#> asset:effect/%namespace%/register",
                         "#",
-                        "# Object召喚処理の呼び出し時に実行されるfunction",
+                        "# Effectのデータを指定",
                         "#",
-                        "# @within asset:object/alias/%id%/summon",
+                        "# @within function asset:effect/%namespace%/_/register",
                         "",
-                        "# 元となるEntityを召喚する",
-                        "    summon %entity% ~ ~ ~ {Tags:[\"ObjectInit\"]}",
-                        "",
-                        "# 実装フラグを立てる",
-                        "data modify storage asset:object Implement set value true"
+                        "# 継承 (int)",
+                        "    data modify storage asset:effect Extends append value ",
+                        "    function asset:effect/extends",
+                        "# ID (int)",
+                        "    data modify storage asset:effect ID set value %id%"
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/_/register.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/summon",
+                        "#> asset:effect/%namespace%/_/register",
                         "#",
-                        "# Object召喚処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/summon/summon.m",
+                        "#",
+                        "# @within tag/function asset:effect/register",
                         "",
-                        "# 元の召喚処理を呼び出す",
-                        "   function asset:object/%namespace%/summon/"
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/register"
                     ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/register.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/register"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/register"
+                    }
                 }
             ],
             "customQuestion": [
                 {
                     "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
-                },
-                {
-                    "name": "entity",
-                    "question": "元となるentity",
-                    "pattern": "area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|boat|cat|cave_spider|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fox|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|iron_golem|item|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
-                    "patternErrorMessage": "Entityの名前のみが許されるよ"
-                }
-            ]
-        },
-        {
-            "label": "Object/トリガー: tick",
-            "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/tick/.mcfunction",
-                    "content": [
-                        "#> asset:object/%namespace%/tick/",
-                        "#",
-                        "# Objectのtick時の処理",
-                        "#",
-                        "# @within asset:object/alias/%id%/tick",
-                        "",
-                        "# Tick加算",
-                        "   scoreboard players add @s General.Object.Tick 1",
-                        "",
-                        "# 消滅処理",
-                        "   kill @s[scores={General.Object.Tick=1000..}]",
-                        "",
-                        "# 実装フラグを立てる",
-                        "data modify storage asset:object Implement set value true"
-                    ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/object/alias/%id%/tick.mcfunction",
-                    "content": [
-                        "#> asset:object/alias/%id%/tick",
-                        "#",
-                        "# Tick時処理のエイリアス",
-                        "#",
-                        "# @within asset_manager:object/tick/tick.m",
-                        "",
-                        "# 元のTick処理を呼び出す",
-                        "   function asset:object/%namespace%/tick/"
-                    ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
+                    "question": "EffectのID",
                     "pattern": "[1-9][0-9]*",
                     "patternErrorMessage": "数値のみが許されるよ"
                 }
             ]
         },
         {
-            "label": "Object/テンプレート: 初期化処理",
+            "label": "Effect/トリガー: 初期化処理",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/load.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/load.mcfunction",
                     "content": [
-                        "#> asset:object/%namespace%/load",
+                        "#> asset:effect/%namespace%/load",
                         "#",
-                        "# Objectに利用するスコアボード等の初期化処理",
+                        "# Effectに利用するスコアボード等の初期化処理",
+                        "# ※ExtendsSafeを有効化した状態での使用は非推奨です",
                         "#",
-                        "# @within tag/function asset:object/load",
+                        "# @within tag/function asset:effect/load",
                         "",
                         "#> 定義類はここに",
-                        "# @within function asset:object/%namespace%/**",
+                        "# @within function asset:effect/%namespace%/**",
                         "    scoreboard objectives add "
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/object/load.json",
+                    "rel": "data/asset/tags/functions/effect/load.json",
                     "content": {
                         "values": [
-                            "asset:object/%namespace%/load"
+                            "asset:effect/%namespace%/load"
                         ]
                     },
                     "append": {
-                        "addFirst": true,
                         "key": "values",
-                        "elem": "asset:object/%namespace%/load"
+                        "elem": "asset:effect/%namespace%/load"
                     }
                 }
             ]
         },
         {
-            "label": "Object/テンプレート: _index.d ",
+            "label": "Effect/テンプレート: _index.d ",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/_index.d.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/_index.d.mcfunction",
                     "content": [
-                        "#> asset:object/%namespace%/_index.d",
+                        "#> asset:effect/%namespace%/_index.d",
                         "# @private",
                         "",
-                        "#> tag",
-                        "# @within function asset:object/%namespace%/**",
+                        "#> %namespace%",
+                        "# @within function asset:effect/%namespace%/**",
                         "    #declare"
                     ]
                 }
             ]
         },
         {
-            "label": "Object/メソッド",
+            "label": "Effect/トリガー: 付与",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/%namespace%/%method_name%/.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/_/given.mcfunction",
                     "content": [
-                        "#> asset:object/%namespace%/%method_name%/",
+                        "#> asset:effect/%namespace%/_/given",
                         "#",
-                        "# 継承先などから実行される処理",
+                        "# Effectが付与された時に実行されるfunction",
                         "#",
-                        "# @within asset:object/alias/%id%/%method_name%",
+                        "# @within tag/function asset:effect/given",
                         "",
-                        "# 実装フラグを立てる",
-                        "   data modify storage asset:object Implement set value true"
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/given/"
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/object/alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/functions/effect/%namespace%/given/.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/%method_name%",
+                        "#> asset:effect/%namespace%/given/",
                         "#",
-                        "# メソッド処理のエイリアス",
+                        "# Effectが付与された時の処理",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
-                        "",
-                        "# 元のメソッド処理を呼び出す",
-                        "   function asset:object/%namespace%/%method_name%/"
+                        "# @within function asset:effect/%namespace%/_/given"
                     ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/given.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/given"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/given"
+                    }
                 }
             ],
             "customQuestion": [
                 {
-                    "name": "method_name",
-                    "question": "メソッドの名前",
-                    "pattern": "[a-z0-9./_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
+                    "name": "id",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/トリガー: 上書き",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/re-given.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/re-given",
+                        "#",
+                        "# Effectが上書きされた時に実行されるfunction",
+                        "#",
+                        "# @within tag/function asset:effect/re-given",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/re-given/"
+                    ]
                 },
                 {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/re-given/.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/re-given/",
+                        "#",
+                        "# Effectが上書きされた時の処理",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/re-given"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/re-given.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/re-given"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/re-given"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
                     "name": "id",
-                    "question": "ObjectのID",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/トリガー: 終了",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/end.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/end",
+                        "#",
+                        "# Effectの効果の終了時に実行されるfunction",
+                        "#",
+                        "# @within tag/function asset:effect/end",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/end/"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/end/.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/end/",
+                        "#",
+                        "# Effectの効果が切れた時の処理",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/end"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/end.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/end"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/end"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/トリガー: 削除",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/remove.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/remove",
+                        "#",
+                        "# Effectが神器や牛乳によって削除された時に実行されるfunction",
+                        "#",
+                        "# @within tag/function asset:effect/remove",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/remove/"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/remove/.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/remove/",
+                        "#",
+                        "# Effectが削除された時の処理",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/remove"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/remove.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/remove"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/remove"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "EffectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Effect/トリガー: tick",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/_/tick.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/_/tick",
+                        "#",
+                        "# Effectが発動している間毎tick実行されるfunction",
+                        "#",
+                        "# @within tag/function asset:effect/tick",
+                        "",
+                        "execute if data storage asset:context {id:%id%} run function asset:effect/%namespace%/tick/"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/effect/%namespace%/tick/.mcfunction",
+                    "content": [
+                        "#> asset:effect/%namespace%/tick/",
+                        "#",
+                        "# Effectのtick処理",
+                        "#",
+                        "# @within function asset:effect/%namespace%/_/tick"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/effect/tick.json",
+                    "content": {
+                        "values": [
+                            "asset:effect/%namespace%/_/tick"
+                        ]
+                    },
+                    "append": {
+                        "key": "values",
+                        "elem": "asset:effect/%namespace%/_/tick"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "EffectのID",
                     "pattern": "[1-9][0-9]*",
                     "patternErrorMessage": "数値のみが許されるよ"
                 }
