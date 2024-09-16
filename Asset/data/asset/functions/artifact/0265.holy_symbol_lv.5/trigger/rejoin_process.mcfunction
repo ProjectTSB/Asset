@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:rejoin
 
-execute if entity @a[scores={7D.HolySymbol=0..}] run schedule function asset:artifact/0265.holy_symbol_lv.5/trigger/recursive 1t
+execute if entity @e[type=area_effect_cloud,tag=7D.HolySymbol,scores={7D.HolySymbol=0..}] run schedule function asset:artifact/0265.holy_symbol_lv.5/trigger/recursive 1t

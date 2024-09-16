@@ -13,7 +13,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"侵害"}'
+    data modify storage asset:mob Name set value '[{"text":"侵","color":"#1D2ECC"},{"text":"害","color":"#10256B"}]'
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20066,Enchantments:[{id:"minecraft:knockback",lvl:3s}]}}
@@ -41,22 +41,22 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.32
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
-    # data modify storage asset:mob KnockBackResist set value
+    data modify storage asset:mob KnockBackResist set value 0.5
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.4
+        data modify storage asset:mob Resist.Fire set value 0.3
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.7
+        data modify storage asset:mob Resist.Water set value 0.4
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.8
+        data modify storage asset:mob Resist.Thunder set value 0.5
 
 # MobInitタグ持ちを対象にして召喚関数呼び出し
     execute as @e[type=zombie,tag=MobInit,distance=..0.01] run function asset:mob/common/summon

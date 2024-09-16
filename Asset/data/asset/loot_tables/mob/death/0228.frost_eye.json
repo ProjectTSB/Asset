@@ -15,6 +15,15 @@
                     ]
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "entities/zombie"
+                }
+            ]
         }
     ]
 }

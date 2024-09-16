@@ -8,12 +8,6 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-# サウンドとパーティクル
-    execute at @a[distance=..15] run particle minecraft:end_rod ~ ~1 ~ 0.3 0.5 0.3 0 3 force @a[distance=..30]
-    execute at @a[distance=..15] run particle minecraft:firework ~ ~1 ~ 0.3 0.5 0.3 0 3 force @a[distance=..30]
-    playsound minecraft:entity.arrow.hit_player player @a[distance=..15] ~ ~ ~ 2 1
-    playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 2 1.5
-    playsound minecraft:block.end_portal_frame.fill player @a ~ ~ ~ 2 2
 
-# 効果
-    effect clear @a[distance=..15]
+# デバフを削除
+    execute as @a[distance=..15] at @s run function asset:artifact/0189.crystal_rod/trigger/4.debuff_clear

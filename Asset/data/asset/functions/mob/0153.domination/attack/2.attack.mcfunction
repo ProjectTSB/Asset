@@ -19,9 +19,11 @@
 # リセット
     function lib:damage/reset
 
-# プレイヤーをパニック状態にする
-# プレイヤーにタグ、スコアを付与する
-    tag @p[tag=Victim] add 49.Panic
-    scoreboard players set @p[tag=Victim] 49.PanicTime 50
-# Scheduleループをする
-    schedule function asset:mob/0153.domination/attack/3.scheduleloop 1t
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# プレイヤーを支配デバフを付与
+# 効果時間 (20 × 難易度値)tick
+    data modify storage api: Argument.ID set value 603
+    execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give

@@ -18,11 +18,8 @@
 # リセット
     function lib:damage/reset
 
-# スコアを付与
-    scoreboard players set @a[gamemode=!spectator,dx=0] 5U.DebuffTime 80
+# デバフを付与
+    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] at @s if predicate api:global_vars/difficulty/min/normal run function asset:mob/0211.aurora_bullet/tick/4.debuff
 
 # 自害
     kill @s
-
-# スケジュールループを開始
-    schedule function asset:mob/0210.aurora_eye/player_process/01.schedule_loop 1t replace

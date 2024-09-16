@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"狂月の杖","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"ルナティックメイジの持っていた杖","color":"gray","italic":"true"}]','[{"text":"この杖の持つ強大な魔力をもってしても、","color":"gray","italic":"true"}]','[{"text":"彼の者にとっては枷でしかなかった。","color":"gray","italic":"true"}]','[{"text":"使用時、強力な魔法を放つと同時に、","color":"white"}]','[{"text":"ヒット時自身に","color":"white"},{"text":"魔法攻撃+10%","color":"dark_purple"},{"text":"を15秒間付与する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"使用時、強力な魔法を放つと同時に、","color":"white"}]','[{"text":"ヒット時自身に","color":"white"},{"text":"魔法攻撃+10%","color":"dark_purple"},{"text":"を15秒間付与する。","color":"white"}]','[{"text":"狂気の魔法使いの持っていた杖。","color":"gray"}]','[{"text":"この杖の持つ強大な魔力をもってしても、","color":"gray"}]','[{"text":"彼の者にとっては枷でしかなかった。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

@@ -23,11 +23,8 @@
 # リセット
     function lib:damage/reset
 
-# スコアを付与
-    scoreboard players set @s 5U.DebuffTime 120
-
-# スケジュールループを開始
-    schedule function asset:mob/0210.aurora_eye/player_process/01.schedule_loop 1t replace
+# 難易度がノーマル以上ならデバフを付与
+    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0210.aurora_eye/tick/4.debuff
 
 # クールタイム設定
     scoreboard players set @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] 5U.AttackCT 20

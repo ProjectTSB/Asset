@@ -5,7 +5,7 @@
 # @within function asset:mob/0152.desire/summon/1.trigger
 
 # 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0152.desire"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0152.desire"}
 # ID (int)
     data modify storage asset:mob ID set value 152
 # Type (string) Wikiを参照
@@ -35,22 +35,22 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 2900
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 8
+    data modify storage asset:mob AttackDamage set value 1
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value -6
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.28
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
-    # data modify storage asset:mob KnockBackResist set value
+    data modify storage asset:mob KnockBackResist set value 0.5
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 0.7
+        data modify storage asset:mob Resist.Physical set value 1.0
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 1
+        data modify storage asset:mob Resist.Magic set value 0.3
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 0.4
     # 水倍率 (float) (オプション)

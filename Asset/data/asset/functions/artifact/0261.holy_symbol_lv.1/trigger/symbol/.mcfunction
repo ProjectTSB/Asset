@@ -15,7 +15,7 @@
     execute if score $Temp Temporary matches 0 run function asset:artifact/0261.holy_symbol_lv.1/trigger/symbol/vfx
     execute if score $Temp Temporary matches 0 as @a[distance=..4.5,limit=10] run function asset:artifact/0261.holy_symbol_lv.1/trigger/symbol/add_mp
 # プレイヤーにエフェクトの付与
-    execute as @a[distance=..4.5] unless score @s 79.HolySymbol matches -2147483648..2147483647 run function asset:artifact/0261.holy_symbol_lv.1/trigger/effect/start
+    execute as @a[distance=..4.5] run function asset:artifact/0261.holy_symbol_lv.1/trigger/symbol/check_effect
 # 実行時間のインクリメント
     scoreboard players add @s 79.HolySymbol 1
 # 10秒を超えてたらリセット

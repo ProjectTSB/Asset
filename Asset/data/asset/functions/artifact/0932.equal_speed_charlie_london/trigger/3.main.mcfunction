@@ -8,4 +8,4 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
-    effect give @s speed 1000000 1 true
+    effect give @s speed 1000000 0 true

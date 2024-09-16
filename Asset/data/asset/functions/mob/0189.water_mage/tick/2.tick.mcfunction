@@ -11,4 +11,4 @@
     execute positioned ^ ^ ^10 if entity @p[gamemode=!spectator,distance=..10] run scoreboard players add @s 59.Tick 1
 
 # 120tickごとに水魔法を召喚
-    execute if score @s 59.Tick matches 120.. run function asset:mob/0189.water_mage/tick/03.summon_water_magic
+    execute if score @s 59.Tick matches 120.. run function asset:mob/0189.water_mage/tick/3.summon_water_magic

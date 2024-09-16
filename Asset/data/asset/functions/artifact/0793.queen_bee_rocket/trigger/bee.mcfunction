@@ -22,7 +22,7 @@
     execute if entity @s[tag=M1.Landing] run function asset:artifact/0793.queen_bee_rocket/trigger/attack
 
 # 演出
-    particle minecraft:campfire_cosy_smoke ~ ~0.3 ~ 0.1 0.1 0.1 0 1 force
+    particle minecraft:campfire_cosy_smoke ~ ~-0.2 ~ 0.1 0.1 0.1 0 1 force
 
 # 前方にいる敵をターゲットする
     execute positioned ^ ^ ^10 if entity @e[type=#lib:living,tag=Enemy,tag=!M1.Bee,distance=..10] run tag @e[type=#lib:living,tag=Enemy,tag=!M1.Bee,distance=..10,limit=1] add M1.Target
