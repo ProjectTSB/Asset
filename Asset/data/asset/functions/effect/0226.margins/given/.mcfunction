@@ -6,7 +6,3 @@
 
 # 補正を付与する
     function asset:effect/0226.margins/modifier/add
-
-# デバッグ用
-    say 余白
-    tellraw @p {"storage":"asset:context","nbt":"Stack"}

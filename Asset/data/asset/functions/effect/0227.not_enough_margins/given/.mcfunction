@@ -7,5 +7,5 @@
 # 補正を付与する
     function asset:effect/0227.not_enough_margins/modifier/add
 
-    say 余白
+    say 足りない余白
     tellraw @p {"storage":"asset:context","nbt":"Stack"}
