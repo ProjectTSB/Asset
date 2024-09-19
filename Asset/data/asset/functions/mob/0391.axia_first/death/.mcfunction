@@ -19,4 +19,5 @@
     kill @e[tag=AV.CriticalHit,distance=..100]
 
 # スケジュール起動
+    tag @e[type=marker,tag=AV.Marker.SummonPoint,distance=..200] add AV.Death
     schedule function asset:mob/0391.axia_first/ai/general/8.death/schedule 1t

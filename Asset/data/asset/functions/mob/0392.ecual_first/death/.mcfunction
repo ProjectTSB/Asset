@@ -15,4 +15,5 @@
     kill @e[tag=AW.Critical]
 
 # スケジュール起動
+    tag @e[type=marker,tag=AW.Marker.SummonPoint,distance=..200] add AW.Death
     schedule function asset:mob/0392.ecual_first/ai/general/8.death/schedule 1t

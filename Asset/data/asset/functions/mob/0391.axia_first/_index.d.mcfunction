@@ -26,6 +26,7 @@
     #declare tag AV.CriticalHit
     #declare tag AV.CriticalOpening
     #declare tag AV.SuperiorSkill
+    #declare tag AV.Death
 
 #> val
 # @within function asset:mob/0391.axia_first/**

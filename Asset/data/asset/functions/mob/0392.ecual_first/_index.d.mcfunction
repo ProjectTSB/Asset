@@ -26,6 +26,7 @@
     #declare tag AW.HydroStormFirst
     #declare tag AW.HydroAnnounce
     #declare tag AW.Critical
+    #declare tag AW.Death
 
 #> val
 # @within function asset:mob/0392.ecual_first/**
@@ -55,4 +56,3 @@
     #declare function animated_java:ecual/animations/12_0_opening_attack/pause
     #declare function animated_java:ecual/animations/12_0_opening_attack/resume
     #declare function animated_java:ecual/animations/13_0_former_ending/play
-    #declare function animated_java:ecual/animations/1_0_idle/play
