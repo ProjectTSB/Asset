@@ -3,3 +3,9 @@
 # Mobの死亡時の処理
 #
 # @within function asset:mob/0393.labyria_first/_/death
+
+# デバッグ用
+    kill @e[type=marker,tag=AZ.Marker.SummonPoint]
+
+# モデル削除
+    function animated_java:labyria/remove/all
