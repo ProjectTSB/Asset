@@ -1,4 +1,4 @@
-#> asset:mob/0392.ecual_first/ai/general/1.teleport
+#> asset:mob/0393.labyria_first/ai/general/1.teleport
 #
 # 汎用・テレポートコマンド
 #

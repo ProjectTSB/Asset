@@ -3,3 +3,23 @@
 # Mob召喚時のInit処理
 #
 # @within function asset:mob/0393.labyria_first/_/init
+
+# 召喚位置を記録
+# （島の位置が変更されるごとにメンテ）
+    summon marker ~ ~ ~ {Tags:["AZ.Marker.SummonPoint"]}
+
+# スコア初期化
+    scoreboard players set @s AZ.AnimationTick 0
+    scoreboard players set @s AZ.AnimationNum 0
+    scoreboard players set @s AZ.FalterCount 0
+
+# animated javaモデル召喚
+    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:labyria/summon
+
+# teleport_durationを設定
+    execute positioned ~ ~99 ~ as @e[type=item_display,distance=..0.1] run data modify entity @s teleport_duration set value 1
+
+# 登場演出時は干渉付加
+# デバッグ時は無効化
+#    data modify entity @s Invulnerable set value 1b
+#    tag @s add Uninterferable

@@ -19,7 +19,7 @@
     #declare score_holder $AZ.Loop
 
 #> AJ
-# @within function asset:mob/0392.ecual_first/**
+# @within function asset:mob/0393.labyria_first/**
     #declare function animated_java:labyria/summon
     #declare function animated_java:labyria/remove/all
     #declare function animated_java:labyria/animations/pause_all
