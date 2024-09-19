@@ -1,0 +1,1 @@
+tag @s remove aj.labyria.animation.1_0_idle_sword_rare

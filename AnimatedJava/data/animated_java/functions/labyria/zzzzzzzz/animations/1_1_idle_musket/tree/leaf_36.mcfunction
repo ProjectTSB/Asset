@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:labyria/zzzzzzzz/animations/1_1_idle_musket/tree/leaf_36_as_bone

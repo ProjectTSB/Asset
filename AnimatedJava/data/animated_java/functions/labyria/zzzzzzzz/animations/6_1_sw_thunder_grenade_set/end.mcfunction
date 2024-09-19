@@ -1,0 +1,3 @@
+execute if score @s aj.labyria.animation.6_1_sw_thunder_grenade_set.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/6_1_sw_thunder_grenade_set/end_loop
+execute if score @s aj.labyria.animation.6_1_sw_thunder_grenade_set.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/6_1_sw_thunder_grenade_set/stop
+execute if score @s aj.labyria.animation.6_1_sw_thunder_grenade_set.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/6_1_sw_thunder_grenade_set/pause

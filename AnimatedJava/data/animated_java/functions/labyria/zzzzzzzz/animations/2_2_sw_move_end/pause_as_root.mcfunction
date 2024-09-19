@@ -1,0 +1,1 @@
+tag @s remove aj.labyria.animation.2_2_sw_move_end

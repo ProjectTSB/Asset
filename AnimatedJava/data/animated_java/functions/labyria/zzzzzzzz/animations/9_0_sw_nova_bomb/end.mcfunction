@@ -1,0 +1,3 @@
+execute if score @s aj.labyria.animation.9_0_sw_nova_bomb.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/9_0_sw_nova_bomb/end_loop
+execute if score @s aj.labyria.animation.9_0_sw_nova_bomb.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/9_0_sw_nova_bomb/stop
+execute if score @s aj.labyria.animation.9_0_sw_nova_bomb.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/9_0_sw_nova_bomb/pause

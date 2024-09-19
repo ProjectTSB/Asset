@@ -1,0 +1,1 @@
+tag @s remove aj.labyria.animation.7_0_sw_lightning_fast_start

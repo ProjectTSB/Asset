@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.labyria.root] run function animated_java:labyria/zzzzzzzz/apply_variant/yarare/as_root
+execute if entity @s[tag=!aj.labyria.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:labyria/apply_variant/yarare ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

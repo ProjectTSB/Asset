@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..75 run function animated_java:labyria/zzzzzzzz/animations/13_0_ms_hexa_laser/tree/branch_0_75

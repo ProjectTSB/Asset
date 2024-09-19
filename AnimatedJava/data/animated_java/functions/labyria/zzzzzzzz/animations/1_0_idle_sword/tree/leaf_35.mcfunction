@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:labyria/zzzzzzzz/animations/1_0_idle_sword/tree/leaf_35_as_bone

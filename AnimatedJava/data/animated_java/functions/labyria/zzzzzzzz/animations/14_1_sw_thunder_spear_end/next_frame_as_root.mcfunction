@@ -1,0 +1,1 @@
+function animated_java:labyria/zzzzzzzz/animations/14_1_sw_thunder_spear_end/tick_animation

@@ -1,0 +1,1 @@
+function animated_java:labyria/zzzzzzzz/animations/2_3_ms_move_end/tick_animation

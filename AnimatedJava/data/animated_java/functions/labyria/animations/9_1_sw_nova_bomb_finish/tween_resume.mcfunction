@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.labyria.root] run function animated_java:labyria/zzzzzzzz/animations/9_1_sw_nova_bomb_finish/tween_resume_as_root
+execute if entity @s[tag=!aj.labyria.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:labyria/animations/9_1_sw_nova_bomb_finish/tween_resume ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

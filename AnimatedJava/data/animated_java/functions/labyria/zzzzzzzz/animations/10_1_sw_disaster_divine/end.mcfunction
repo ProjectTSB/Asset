@@ -1,0 +1,3 @@
+execute if score @s aj.labyria.animation.10_1_sw_disaster_divine.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/10_1_sw_disaster_divine/end_loop
+execute if score @s aj.labyria.animation.10_1_sw_disaster_divine.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/10_1_sw_disaster_divine/stop
+execute if score @s aj.labyria.animation.10_1_sw_disaster_divine.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/10_1_sw_disaster_divine/pause

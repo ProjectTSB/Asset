@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..58 run function animated_java:labyria/zzzzzzzz/animations/7_0_sw_lightning_fast_start/tree/branch_0_58

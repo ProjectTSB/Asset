@@ -1,0 +1,1 @@
+function animated_java:labyria/zzzzzzzz/animations/10_1_sw_disaster_divine/tick_animation
