@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0393.labyria_first/rejoin_process",
         "asset:mob/0392.ecual_first/rejoin_process",
         "asset:mob/0391.axia_first/rejoin_process",
         "asset:artifact/1024.brave_rod/trigger/rejoin_process",
