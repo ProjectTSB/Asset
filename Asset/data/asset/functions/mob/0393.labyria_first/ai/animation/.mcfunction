@@ -1,0 +1,14 @@
+#> asset:mob/0393.labyria_first/ai/animation/
+#
+# アニメーション分岐
+#
+# @within function asset:mob/0393.labyria_first/tick/
+
+# 待機 ソード通常
+    execute if score @s AZ.AnimationNum matches 10 run function asset:mob/0393.labyria_first/ai/animation/1_0_sw_idle/
+
+# 待機 ソードレア
+    execute if score @s AZ.AnimationNum matches 11 run function asset:mob/0393.labyria_first/ai/animation/1_1_sw_idle_rare/
+
+# 待機 銃通常
+    execute if score @s AZ.AnimationNum matches 12 run function asset:mob/0393.labyria_first/ai/animation/1_2_ms_idle/
