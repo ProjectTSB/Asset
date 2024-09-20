@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/
 
-# ノーマルは80Tick
-# ハードは40Tick
 # 近くのプレイヤーの方を向く
     tag @s add AZ.Temp.This
     execute if score @s AZ.AnimationTick matches 1..45 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate

@@ -15,3 +15,6 @@
 
 # 銃三連射
     execute if score @s AZ.AnimationNum matches 30 run function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/
+
+# ワープ斬り
+    execute if score @s AZ.AnimationNum matches 40 run function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/
