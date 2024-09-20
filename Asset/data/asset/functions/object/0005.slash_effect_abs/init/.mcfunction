@@ -16,5 +16,5 @@
     execute store result score @s General.Object.Tick run data get storage asset:context this.Second -1
 
 # タグ付け
-    tag @s add 5.SlashEffectInit
+    tag @s add 5.SlashEffect
     tag @s add 5.Invisible
