@@ -9,7 +9,7 @@
         tp 0-0-0-0-0 0.0 0.0 0.0
     # ランダムな方向を向かせる
         execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
-        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -9000..-3000
+        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -7500..-2000
     # マーカーを前進させる
         execute at 0-0-0-0-0 run tp 0-0-0-0-0 ^ ^ ^0.5
     # マーカーPosをFieldに保存する

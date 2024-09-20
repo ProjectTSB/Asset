@@ -21,3 +21,6 @@
 
 # 居合射撃
     execute if score @s AZ.AnimationNum matches 50 run function asset:mob/0393.labyria_first/ai/animation/5_0_sw_ms_warp/
+
+# スモークボム
+    execute if score @s AZ.AnimationNum matches 60 run function asset:mob/0393.labyria_first/ai/animation/6_0_sw_smoke_bomb/
