@@ -12,6 +12,7 @@
     #declare tag AZ.Predict
     #declare tag AZ.SuperiorSkill
     #declare tag AZ.Death
+    #declare tag 5.SlashEffect
 
 #> val
 # @within function asset:mob/0393.labyria_first/**

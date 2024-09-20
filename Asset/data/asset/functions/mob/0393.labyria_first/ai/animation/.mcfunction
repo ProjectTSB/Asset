@@ -18,3 +18,6 @@
 
 # ワープ斬り
     execute if score @s AZ.AnimationNum matches 40 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/
+
+# 居合射撃
+    execute if score @s AZ.AnimationNum matches 50 run function asset:mob/0393.labyria_first/ai/animation/5_0_sw_ms_warp/
