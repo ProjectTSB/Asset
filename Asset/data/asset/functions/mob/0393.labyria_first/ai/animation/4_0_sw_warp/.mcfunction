@@ -15,5 +15,8 @@
 # アニメーション再生
     execute if score @s AZ.AnimationTick matches 35 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/4_1_sw_warp_2/play
 
+# 斬撃エフェクト表示
+    execute if score @s AZ.AnimationTick matches 47 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/slash_effect/1
+
 # 終了処理
     execute if score @s AZ.AnimationTick matches 85 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/end
