@@ -12,3 +12,6 @@
 
 # 待機 銃通常
     execute if score @s AZ.AnimationNum matches 12 run function asset:mob/0393.labyria_first/ai/animation/1_2_ms_idle/
+
+# 銃三連射
+    execute if score @s AZ.AnimationNum matches 30 run function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/

@@ -14,7 +14,7 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add AW.Landing
 
 # ターゲットにタグ付与
-    tag @a[tag=!PlayerShouldInvulnerable,dx=0] add AW.Temp.Target
+    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=0] add AW.Temp.Target
 
 # 演出
     particle dust 0.72 1 1 1 ~ ~ ~ 0.1 0.1 0.1 0 1
