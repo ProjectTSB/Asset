@@ -6,7 +6,7 @@
 
 # 近くのプレイヤーの方を向く
     tag @s add AZ.Temp.This
-    function asset:mob/0393.labyria_first/ai/general/2.rotate
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     tag @s remove AZ.Temp.This
 
 # アニメーション再生
