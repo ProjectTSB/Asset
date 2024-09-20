@@ -18,5 +18,8 @@
 # 斬撃エフェクト表示
     execute if score @s AZ.AnimationTick matches 47 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/slash_effect/1
 
+# 斬撃エフェクト表示
+    execute if score @s AZ.AnimationTick matches 54 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/slash_effect/2
+
 # 終了処理
     execute if score @s AZ.AnimationTick matches 85 run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/end
