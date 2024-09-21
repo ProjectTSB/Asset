@@ -2615,7 +2615,7 @@
                     "type": "file",
                     "rel": "data/asset/functions/object/%namespace%/summon/debug.mcfunction",
                     "content": [
-                        "#> asset:mob/%namespace%/summon/debug",
+                        "#> asset:object/%namespace%/summon/debug",
                         "#",
                         "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
                         "#",
@@ -2654,7 +2654,7 @@
                         "    summon %entity% ~ ~ ~ {Tags:[\"ObjectInit\"]}",
                         "",
                         "# 実装フラグを立てる",
-                        "data modify storage asset:object Implement set value true"
+                        "   data modify storage asset:object Implement set value true"
                     ]
                 },
                 {
