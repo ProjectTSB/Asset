@@ -8,4 +8,4 @@
     summon item_display ~ ~ ~ {Tags:["ObjectInit"]}
 
 # 実装フラグを立てる
-data modify storage asset:object Implement set value true
+    data modify storage asset:object Implement set value true
