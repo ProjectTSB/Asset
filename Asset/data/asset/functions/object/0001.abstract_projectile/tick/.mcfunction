@@ -12,9 +12,6 @@
 # 消滅処理
 #   kill @s[scores={General.Object.Tick=1000..}]
 
-# パーティクル
-    particle firework
-
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={1.Recursion=1..,1.Range=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
 
