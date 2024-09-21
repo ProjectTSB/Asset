@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0219.aorta/_/attack",
         "asset:mob/0076.golden_watermelon_bomber/_/attack",
         "asset:mob/0074.watermelon_bomber/_/attack",
         "asset:mob/0181.magic_bookshelf/_/attack",
@@ -24,7 +25,6 @@
         "asset:mob/0270.who_hate/attack/1.trigger",
         "asset:mob/0242.poltergeist_subspecies_bow/attack/1.trigger",
         "asset:mob/0241.poltergeist_subspecies/attack/1.trigger",
-        "asset:mob/0219.aorta/attack/1.trigger",
         "asset:mob/0220.vena_cana/attack/1.trigger",
         "asset:mob/0244.ignition_spider/attack/1.trigger",
         "asset:mob/0030.warped/attack/1.trigger",
