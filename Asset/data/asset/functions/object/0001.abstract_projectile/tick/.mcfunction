@@ -26,10 +26,7 @@
     scoreboard players remove @s 1.Range 1
 
 # エンティティへの衝突判定
-#    execute positioned ~-0.1 ~-0.1 ~-0.1 if entity @p[tag=!1.PlayerShouldInvulnerable,dx=0] positioned ~-0.8 ~-0.8 ~-0.8 if entity @p[tag=!1.PlayerShouldInvulnerable,dx=0] at @s run function chuzmobs:entity/projectile/recursive_bullet/hit
-
-# 壁の衝突判定
-#    execute unless block ~ ~ ~ #lib:no_collision run function chuzmobs:entity/projectile/check/break
+    function asset:object/call.m {method:detect_hit_entity}
 
 # ブロックへの衝突判定
     function asset:object/call.m {method:detect_hit_block}
