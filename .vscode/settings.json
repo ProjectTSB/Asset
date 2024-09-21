@@ -2605,7 +2605,7 @@
                         "#",
                         "# Objectのデータ指定処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/summon/summon.m",
+                        "# @within asset_manager:object/summon/register.m",
                         "",
                         "# 元の登録処理を呼び出す",
                         "   function asset:object/%namespace%/register"
@@ -2722,6 +2722,45 @@
                         "",
                         "# 元のTick処理を呼び出す",
                         "   function asset:object/%namespace%/tick/"
+                    ]
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "ObjectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Object/トリガー: init",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/object/%namespace%/init/.mcfunction",
+                    "content": [
+                        "#> asset:object/%namespace%/init/",
+                        "#",
+                        "# Objectのinit時の処理",
+                        "#",
+                        "# @within asset:object/alias/%id%/init",
+                        ""
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/object/alias/%id%/init.mcfunction",
+                    "content": [
+                        "#> asset:object/alias/%id%/init",
+                        "#",
+                        "# Init処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:object/init/init.m",
+                        "",
+                        "# 元のInit処理を呼び出す",
+                        "   function asset:object/%namespace%/init/"
                     ]
                 }
             ],
