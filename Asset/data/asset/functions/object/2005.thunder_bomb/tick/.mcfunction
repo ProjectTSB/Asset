@@ -1,0 +1,32 @@
+#> asset:object/2005.thunder_bomb/tick/
+#
+# Objectのtick時の処理
+#
+# @within asset:object/alias/2005/tick
+
+# Tick加算
+   scoreboard players add @s General.Object.Tick 1
+
+# 召喚時に音を鳴らす
+   execute if score @s General.Object.Tick matches 1 run playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 1.5 0
+
+# マーカーを回転させる
+   execute if score @s General.Object.Tick matches ..100 run tp @s ~ ~ ~ ~8 0
+
+# VFX表示
+   execute at @s run function asset:object/2005.thunder_bomb/tick/vfx
+
+# 発動処理
+   execute if score @s General.Object.Tick matches 100 run function asset:object/2005.thunder_bomb/tick/cast
+
+# 余波のサンダーを召喚
+   execute if score @s General.Object.Tick matches 102 run function asset:object/2005.thunder_bomb/tick/thunder_summon/1
+   execute if score @s General.Object.Tick matches 104 run function asset:object/2005.thunder_bomb/tick/thunder_summon/2
+   execute if score @s General.Object.Tick matches 106 run function asset:object/2005.thunder_bomb/tick/thunder_summon/3
+   execute if score @s General.Object.Tick matches 108 run function asset:object/2005.thunder_bomb/tick/thunder_summon/4
+   execute if score @s General.Object.Tick matches 110 run function asset:object/2005.thunder_bomb/tick/thunder_summon/5
+   execute if score @s General.Object.Tick matches 112 run function asset:object/2005.thunder_bomb/tick/thunder_summon/6
+   execute if score @s General.Object.Tick matches 114.. run function asset:object/2005.thunder_bomb/tick/thunder_summon/7
+
+# 実装フラグを立てる
+data modify storage asset:object Implement set value true

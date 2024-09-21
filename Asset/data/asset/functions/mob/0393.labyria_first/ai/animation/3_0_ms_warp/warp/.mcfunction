@@ -5,6 +5,7 @@
 # @within function
 #   asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/
 #   asset:mob/0393.labyria_first/ai/animation/5_0_sw_ms_warp/
+#   asset:mob/0393.labyria_first/ai/animation/7_0_sw_thunder_grenade/
 
 # スコアを設定
     scoreboard players set $AZ.Loop Temporary 0

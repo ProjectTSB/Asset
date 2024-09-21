@@ -24,3 +24,6 @@
 
 # スモークボム
     execute if score @s AZ.AnimationNum matches 60 run function asset:mob/0393.labyria_first/ai/animation/6_0_sw_smoke_bomb/
+
+# サンダーグレネード
+    execute if score @s AZ.AnimationNum matches 70 run function asset:mob/0393.labyria_first/ai/animation/7_0_sw_thunder_grenade/
