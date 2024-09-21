@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:witch ~ ~ ~ 0.5 0.5 0.5 2 50 force @a[distance=..10]
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,distance=..10] at @s run particle minecraft:witch ~ ~ ~ 0.5 0.5 0.5 2 50 force @a[distance=..10]
     playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 1
 
 # テレポート処理
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run tp ~ ~-1 ~
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,distance=..10] at @s run tp ~ ~-1 ~
