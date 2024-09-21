@@ -29,13 +29,16 @@
 #    execute positioned ~-0.1 ~-0.1 ~-0.1 if entity @p[tag=!1.PlayerShouldInvulnerable,dx=0] positioned ~-0.8 ~-0.8 ~-0.8 if entity @p[tag=!1.PlayerShouldInvulnerable,dx=0] at @s run function chuzmobs:entity/projectile/recursive_bullet/hit
 
 # 壁の衝突判定
-#    execute unless block ~ ~ ~ #chuzmobs:no_collision run function chuzmobs:entity/projectile/check/break
+#    execute unless block ~ ~ ~ #lib:no_collision run function chuzmobs:entity/projectile/check/break
+
+# ブロックへの衝突判定
+    function asset:object/call.m {method:detect_hit_block}
+
+# キル
+    execute if entity @s[scores={1.Range=0}] run function asset:object/call.m {method:kill}
 
 # 再帰
     execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] at @s run function asset:object/0001.abstract_projectile/tick/
-
-# キル
-#    execute if entity @s[scores={1.Range=0}] run function chuzmobs:entity/projectile/check/break
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
