@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1/init
 
-# 名乗る
-    say 俺だよ！
-
-# スコア設定
-    scoreboard players set @s 1.Speed 1
-    scoreboard players set @s 1.Range 20
+# フィールドのデータからスコアを設定
+    execute store result score @s 1.Speed run data get storage asset:context this.Speed
+    execute store result score @s 1.Range run data get storage asset:context this.Range
