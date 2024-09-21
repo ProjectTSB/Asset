@@ -26,14 +26,14 @@
 # スコアから4を引く
     scoreboard players remove $EmptyHotbarSlot Temporary 4
 
-# スコアの値がプラスならバフ、マイナスならデバフを付与 0なら実行しない
-    #execute if score $EmptyHotbarSlot Temporary matches 1.. run data modify storage api: Argument.ID set value 226
-    #execute if score $EmptyHotbarSlot Temporary matches 1.. store result storage api: Argument.Stack int 1 run scoreboard players get $EmptyHotbarSlot Temporary
-    #execute if score $EmptyHotbarSlot Temporary matches ..-1 run data modify storage api: Argument.ID set value 227
-   # execute if score $EmptyHotbarSlot Temporary matches ..-1 store result storage api: Argument.Stack int -1 run scoreboard players get $EmptyHotbarSlot Temporary
-    #execute unless score $EmptyHotbarSlot Temporary matches 0 run function api:entity/mob/effect/give
+# スコアの値が1以上ならバフ、0以下ならデバフを付与
+    execute if score $EmptyHotbarSlot Temporary matches 1.. run data modify storage api: Argument.ID set value 226
+    execute if score $EmptyHotbarSlot Temporary matches 1.. store result storage api: Argument.Stack int 1 run scoreboard players get $EmptyHotbarSlot Temporary
+    execute if score $EmptyHotbarSlot Temporary matches ..0 run data modify storage api: Argument.ID set value 227
+    execute if score $EmptyHotbarSlot Temporary matches ..0 store result storage api: Argument.Stack int -1 run scoreboard players get $EmptyHotbarSlot Temporary
+    execute unless score $EmptyHotbarSlot Temporary matches 0 run function api:entity/mob/effect/give
 
-    data modify storage api: Argument.ID set value 227
+    data modify storage api: Argument.ID set value 226
     function api:entity/mob/effect/give
 
     say 余白 end
