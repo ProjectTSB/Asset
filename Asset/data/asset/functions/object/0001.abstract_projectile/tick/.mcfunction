@@ -6,12 +6,6 @@
 #   asset:object/alias/1/tick
 #   asset:object/0001.abstract_projectile/tick/
 
-# Tick加算
-#   scoreboard players add @s General.Object.Tick 1
-
-# 消滅処理
-#   kill @s[scores={General.Object.Tick=1000..}]
-
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={1.Recursion=1..,1.Range=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
 
