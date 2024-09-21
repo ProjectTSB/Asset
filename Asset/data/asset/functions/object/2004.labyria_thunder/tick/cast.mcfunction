@@ -5,8 +5,8 @@
 # @within function asset:object/2004.labyria_thunder/tick/
 
 # パーティクル表示
-    particle dust 1 1 0.3 1.5 ~ ~1 ~ 0.5 0.5 0.5 0 30 force @a[distance=..32]
-    particle dust 1 1 0.3 1.5 ~ ~5 ~ 0.25 2.5 0.25 0 40 force @a[distance=..32]
+    particle dust 1 1 0.3 2 ~ ~1 ~ 1 0.5 1 0 20 force @a[distance=..32]
+    particle dust 1 1 0.3 2 ~ ~5 ~ 0.5 2.5 0.5 0 30 force @a[distance=..32]
 # 音
     playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 0.6 1.5
     playsound entity.lightning_bolt.impact hostile @a[distance=..16] ~ ~ ~ 0.6 2 0
@@ -26,7 +26,7 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
 

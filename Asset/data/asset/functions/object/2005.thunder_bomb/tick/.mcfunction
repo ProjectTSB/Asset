@@ -20,13 +20,11 @@
    execute if score @s General.Object.Tick matches 100 run function asset:object/2005.thunder_bomb/tick/cast
 
 # 余波のサンダーを召喚
-   execute if score @s General.Object.Tick matches 102 run function asset:object/2005.thunder_bomb/tick/thunder_summon/1
-   execute if score @s General.Object.Tick matches 104 run function asset:object/2005.thunder_bomb/tick/thunder_summon/2
-   execute if score @s General.Object.Tick matches 106 run function asset:object/2005.thunder_bomb/tick/thunder_summon/3
-   execute if score @s General.Object.Tick matches 108 run function asset:object/2005.thunder_bomb/tick/thunder_summon/4
-   execute if score @s General.Object.Tick matches 110 run function asset:object/2005.thunder_bomb/tick/thunder_summon/5
-   execute if score @s General.Object.Tick matches 112 run function asset:object/2005.thunder_bomb/tick/thunder_summon/6
-   execute if score @s General.Object.Tick matches 114.. run function asset:object/2005.thunder_bomb/tick/thunder_summon/7
+   execute if score @s General.Object.Tick matches 103 run function asset:object/2005.thunder_bomb/tick/thunder_summon/1
+   execute if score @s General.Object.Tick matches 106 run function asset:object/2005.thunder_bomb/tick/thunder_summon/2
+   execute if score @s General.Object.Tick matches 109 run function asset:object/2005.thunder_bomb/tick/thunder_summon/3
+   execute if score @s General.Object.Tick matches 112 run function asset:object/2005.thunder_bomb/tick/thunder_summon/4
+   execute if score @s General.Object.Tick matches 115 run function asset:object/2005.thunder_bomb/tick/thunder_summon/5
 
 # 実装フラグを立てる
 data modify storage asset:object Implement set value true
