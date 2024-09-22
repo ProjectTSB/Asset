@@ -10,9 +10,8 @@
 # スコア反転
     execute if score @s General.Object.Tick matches ..-1 run scoreboard players operation @s General.Object.Tick *= $-1 Const
 
-# スコアが3と2なら切り替え
-    execute if score @s General.Object.Tick matches 3 store result entity @s item.tag.CustomModelData int -1 run data get entity @s item.tag.CustomModelData -1.0000001
-    execute if score @s General.Object.Tick matches 2 store result entity @s item.tag.CustomModelData int -1 run data get entity @s item.tag.CustomModelData -1.0000001
+# スコアがFrame以下ならCustomModelDataを切り替える
+    execute if score @s General.Object.Tick <= @s 2001.Frame store result entity @s item.tag.CustomModelData int -1 run data get entity @s item.tag.CustomModelData -1.0000001
 
 # スコアが1以下ならキル
     execute if score @s General.Object.Tick matches 1 run kill @s
