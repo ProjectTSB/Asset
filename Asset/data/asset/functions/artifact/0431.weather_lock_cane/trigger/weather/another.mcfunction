@@ -11,3 +11,4 @@ function api:entity/mob/effect/remove/from_id
 data modify storage api: Argument.ID set value 252
 tellraw @s [{"text":"全属性攻撃","color":"light_purple"},{"text":"が10%上がった！","color":"white"}]
 function api:entity/mob/effect/give
+execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/0431.weather_lock_cane/trigger/vfx/another
