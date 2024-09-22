@@ -8,10 +8,10 @@
     tp 0-0-0-0-0 ~ ~ ~ ~ ~
 
 # プレイヤーの位置に配置
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..100] at @s run tp 0-0-0-0-0 ~ ~ ~ ~ ~
+    execute as @r[tag=!PlayerShouldInvulnerable,distance=..100] at @s run tp 0-0-0-0-0 ~ ~ ~ ~ ~
 
 # 高さを調整
-    data modify entity 0-0-0-0-0 Pos[1] set from entity @e[type=marker,tag=AZ.Marker.SummonPoint,sort=nearest,limit=1] Pos[1]
+    data modify entity 0-0-0-0-0 Pos[1] set from entity @e[type=marker,tag=AZ.Marker.SummonPoint,distance=..100,sort=nearest,limit=1] Pos[1]
 
 # 拡散する
     data modify storage lib: Argument.Bounds set value [[2d,2d],[0,0],[2d,2d]]
@@ -22,7 +22,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2002
-    function api:object/summon
+    execute at 0-0-0-0-0 run function api:object/summon
 
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

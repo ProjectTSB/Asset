@@ -4,9 +4,6 @@
 #
 # @within function asset:object/2002.lighting_fast/tick/
 
-# パーティクル処理
-    execute positioned ^ ^1.5 ^ run function asset:object/2002.lighting_fast/tick/vfx
-
 # 判定内にいるプレイヤーをタグ付け
     execute positioned ^ ^ ^0 positioned ~-1.5 ~-1.5 ~-1.5 as @a[tag=!PlayerShouldInvulnerable,dx=2,dy=2,dz=2] run tag @s add 2002.Landing
     execute positioned ^ ^ ^3 positioned ~-1.5 ~-1.5 ~-1.5 as @a[tag=!PlayerShouldInvulnerable,dx=2,dy=2,dz=2] run tag @s add 2002.Landing
@@ -48,6 +45,9 @@
 
 # タグ外し
     tag @a[tag=2002.Landing,distance=..100] remove 2002.Landing
+
+# パーティクル処理
+    execute positioned ^ ^1.5 ^ run function asset:object/2002.lighting_fast/tick/vfx
 
 # キル
     kill @s

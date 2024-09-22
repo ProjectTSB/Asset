@@ -16,7 +16,7 @@
    execute if predicate api:global_vars/difficulty/min/hard if score @s General.Object.Tick matches 2.. facing entity @p[tag=!PlayerShouldInvulnerable,distance=..30] feet positioned ^ ^ ^0.1 rotated as @s run tp @s ~ ~ ~ ~ ~
 
 # 発動処理
-   execute if score @s General.Object.Tick matches 50.. run function asset:object/2002.lighting_fast/tick/cast
+   execute if score @s General.Object.Tick matches 30.. run function asset:object/2002.lighting_fast/tick/cast
 
 # 実装フラグを立てる
    data modify storage asset:object Implement set value true
