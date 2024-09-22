@@ -11,11 +11,11 @@
     execute if score @s AZ.AnimationTick matches 57 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/warp/start
 
 # 範囲外からワープして戻って来る
-    execute if score @s AZ.AnimationTick matches 184 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/warp/end1
-    execute if score @s AZ.AnimationTick matches 185 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/warp/end1
+    execute if score @s AZ.AnimationTick matches 274 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/warp/end1
+    execute if score @s AZ.AnimationTick matches 275 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/warp/end2
 
 # アニメーション再生
-    execute if score @s AZ.AnimationTick matches 185 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/2_2_sw_move_end/play
+    execute if score @s AZ.AnimationTick matches 275 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/2_2_sw_move_end/play
 
 # 終了処理
-    execute if score @s AZ.AnimationTick matches 210 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/end
+    execute if score @s AZ.AnimationTick matches 300 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/end
