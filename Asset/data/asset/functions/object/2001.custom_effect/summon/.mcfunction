@@ -1,4 +1,4 @@
-#> asset:object/2001.slash_effect/summon/
+#> asset:object/2001.custom_effect/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
