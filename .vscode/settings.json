@@ -2597,8 +2597,8 @@
                         "",
                         "# ID (int)",
                         "    data modify storage asset:object ID set value %id%",
-                        "# フィールド",
-                        "    data modify storage asset:object Field.myValue set value "
+                        "# フィールド(オプション)",
+                        "    # data modify storage asset:object Field.myValue set value "
                     ]
                 },
                 {
