@@ -2,34 +2,10 @@
 #
 # Objectのtick時の処理
 #
-# @within function
-#    asset:object/alias/1/tick
-#    asset:object/0001.abstract_projectile/tick/
+# @within function asset:object/alias/1/tick
 
-# 再帰カウントが0なら弾速からセット
-    execute unless entity @s[scores={1.Recursion=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
+# フィールドのデータからスコアを設定
+    execute store result score @s 1.Speed run data get storage asset:context this.Speed
 
-# 前進
-    execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] run tp @s ^ ^ ^0.5 ~ ~
-
-# スコア減算
-    scoreboard players remove @s 1.Recursion 1
-    scoreboard players remove @s 1.Range 1
-
-# エンティティへの衝突判定
-    function asset:object/call.m {method:detect_hit_entity}
-
-# ブロックへの衝突判定
-    function asset:object/call.m {method:detect_hit_block}
-
-# パーティクルなど、この再帰内で一緒に実行してほしいメソッド
-    function asset:object/call.m {method:recursive}
-
-# 距離を使い果たした場合
-    execute if entity @s[scores={1.Range=0}] run function asset:object/call.m {method:kill}
-
-# 再帰
-    execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] at @s run function asset:object/0001.abstract_projectile/tick/
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
+# 再帰する
+    function asset:object/0001.abstract_projectile/tick/recursive
