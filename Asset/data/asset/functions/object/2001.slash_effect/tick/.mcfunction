@@ -14,7 +14,7 @@
 # Frameを切り替える
     execute unless entity @s[tag=2001.Invisible] run data modify entity @s item.tag.CustomModelData set from storage asset:temp 2001.Frame
 
-# スコアが1以下ならキル
+# Frameがなければキル
     execute unless data storage asset:temp 2001.Frame run kill @s
 
 # データを削除
