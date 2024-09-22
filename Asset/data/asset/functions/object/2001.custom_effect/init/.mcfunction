@@ -32,5 +32,5 @@
     data modify storage asset:context this.Frames append value -1
 
 # タグ付け
-    tag @s add 2001.SlashEffect
+    tag @s add 2001.CustomEffect
     tag @s add 2001.Invisible
