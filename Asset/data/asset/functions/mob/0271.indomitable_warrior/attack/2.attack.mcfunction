@@ -13,7 +13,7 @@
     playsound item.trident.throw hostile @a ~ ~ ~ 1 1
 
 # 属性ダメージ
-   # 与えるダメージ
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 19.5f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
