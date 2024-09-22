@@ -13,17 +13,17 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 反射しつつ前進
-    scoreboard players set $Speed Lib 4
+    scoreboard players set $Speed Lib 8
     function lib:reflection_bullet/
 
 # 4Tickに1回雷を落とす
     scoreboard players operation $2006.Temp Temporary = @s General.Object.Tick
-    scoreboard players operation $2006.Temp Temporary %= $15 Const
+    scoreboard players operation $2006.Temp Temporary %= $5 Const
     execute if score $2006.Temp Temporary matches 0 run function asset:object/2006.reflect_thunder/tick/summon
     scoreboard players reset $2006.Temp Temporary
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=120..}]
+    kill @s[scores={General.Object.Tick=100..}]
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
