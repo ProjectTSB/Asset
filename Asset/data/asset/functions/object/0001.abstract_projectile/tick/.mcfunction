@@ -22,7 +22,10 @@
 # ブロックへの衝突判定
     function asset:object/call.m {method:detect_hit_block}
 
-# キル
+# パーティクルなど、この再帰内で一緒に実行してほしいメソッド
+    function asset:object/call.m {method:recursive}
+
+# 距離を使い果たした場合
     execute if entity @s[scores={1.Range=0}] run function asset:object/call.m {method:kill}
 
 # 再帰
