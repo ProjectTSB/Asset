@@ -12,18 +12,19 @@
     # transformation : エフェクトの向きと位置。クォータニオンや座標で指定する、あれ。
 
 
-# その場にTPする
+# 実行向きに合わせる
     tp @s ~ ~ ~ ~ ~
-
-# アイテムディスプレイに表示するItemをFieldから代入する
-    data modify entity @s item set from storage asset:context this.item
 
 # 初期設定を行う（FieldOverride）
     execute unless data storage asset:context this.Color run data modify storage asset:context this.Color set value 0
     execute unless data storage asset:context this.Scale[0] run data modify storage asset:context this.Scale set value [5f,5f,0.1f]
     execute unless data storage asset:context this.Frames[0] run data modify storage asset:context this.Frames set value [20335,20335,20335,20336,20337]
-    execute if data storage asset:context this.transformation run data modify entity @s transformation merge from storage asset:context this.transformation
-    data modify entity @s item.tag.display.color set from storage asset:context this.Color
+
+# mergeを行う
+    data modify storage asset:temp 2001.item set from storage asset:context this.item
+    data modify storage asset:temp 2001.item.tag.display.color set from storage asset:context this.Color
+    execute if data storage asset:context this.transformation run data modify storage asset:temp 2001.transformation set from storage asset:context this.transformation
+    data modify entity @s {} merge from storage asset:temp 2001
 
 # Framesのint配列を反転させる
     function lib:array/session/open
