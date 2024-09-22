@@ -1,4 +1,4 @@
-#> asset:object/2001.slash_effect/tick/
+#> asset:object/2001.custom_effect/tick/
 #
 # Objectのtick時の処理
 #
@@ -9,7 +9,7 @@
     data remove storage asset:context this.Frames[-1]
 
 # スコアが正かつ透明状態なら可視化
-    execute if entity @s[tag=2001.Invisible] unless data storage asset:temp 2001{Frame:-1} run function asset:object/2001.slash_effect/tick/visible
+    execute if entity @s[tag=2001.Invisible] unless data storage asset:temp 2001{Frame:-1} run function asset:object/2001.custom_effect/tick/visible
 
 # Frameを切り替える
     execute unless entity @s[tag=2001.Invisible] run data modify entity @s item.tag.CustomModelData set from storage asset:temp 2001.Frame

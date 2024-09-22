@@ -1,4 +1,4 @@
-#> asset:object/2001.slash_effect/init/
+#> asset:object/2001.custom_effect/init/
 #
 # Objectのinit時の処理
 #
