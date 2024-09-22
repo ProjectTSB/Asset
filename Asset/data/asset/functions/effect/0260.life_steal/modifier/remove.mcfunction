@@ -8,5 +8,5 @@
 #   asset:effect/0260.life_steal/remove/
 
 # 物理攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,1047,7]
+    data modify storage api: Argument.UUID set value [I;1,3,260,0]
     function api:modifier/attack/physical/remove
