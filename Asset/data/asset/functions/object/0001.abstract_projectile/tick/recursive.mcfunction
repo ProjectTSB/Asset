@@ -16,11 +16,19 @@
     scoreboard players remove @s 1.Recursion 1
     scoreboard players remove @s 1.Range 1
 
-# エンティティへの衝突判定
-    function asset:object/call.m {method:detect_hit_entity}
+# エンティティへの衝突
+    # 判定
+        function asset:object/call.m {method:detect_hit_entity}
+    # メソッド実行
+        execute if data storage asset:context {IsHitEntity:true} run function asset:object/call.m {method:hit_entity}
+        data remove storage asset:context IsHitEntity
 
-# ブロックへの衝突判定
-    function asset:object/call.m {method:detect_hit_block}
+# ブロックへの衝突
+    # 判定
+        function asset:object/call.m {method:detect_hit_block}
+    # メソッド実行
+        execute if data storage asset:context {IsHitBlock:true} run function asset:object/call.m {method:hit_block}
+        data remove storage asset:context IsHitBlock
 
 # パーティクルなど、この再帰内で一緒に実行してほしいメソッド
     function asset:object/call.m {method:recursive}
