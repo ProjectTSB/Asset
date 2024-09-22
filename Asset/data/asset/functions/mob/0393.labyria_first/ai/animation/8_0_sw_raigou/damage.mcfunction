@@ -1,8 +1,8 @@
-#> asset:mob/0393.labyria_first/ai/animation/8_0_raigou/damage
+#> asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/damage
 #
 # VFX処理とダメージ処理
 #
-# @within function asset:mob/0393.labyria_first/ai/animation/8_0_raigou/
+# @within function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/
 
 #> Temp
 # @private
@@ -24,7 +24,7 @@
     scoreboard players reset $AZ.Temp Temporary
 
 # マーカーの位置でVFX起動
-    execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_raigou/vfx
+    execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/vfx
 
 # マーカーを90度だけ横に回転させつつ、用意する
     tp 0-0-0-0-0 ~ ~ ~ ~90 ~
@@ -42,7 +42,7 @@
     scoreboard players reset $AZ.Temp Temporary
 
 # マーカーの位置でVFX起動
-    execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_raigou/vfx
+    execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/vfx
 
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

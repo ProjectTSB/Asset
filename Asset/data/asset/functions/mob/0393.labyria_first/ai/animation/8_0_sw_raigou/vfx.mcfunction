@@ -1,8 +1,8 @@
-#> asset:mob/0393.labyria_first/ai/animation/8_0_raigou/vfx
+#> asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/vfx
 #
 # VFX表示
 #
-# @within function asset:mob/0393.labyria_first/ai/animation/8_0_raigou/damage
+# @within function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/damage
 
 # Collection--円
     particle dust 1 1 0.3 1.25 ^6.0 ^0.0 ^-0.0 0.0 0.0 0.0 0.5 1 force @a[distance=..32]
