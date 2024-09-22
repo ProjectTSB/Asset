@@ -11,7 +11,7 @@
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:object ExtendsSafe set value false
 # 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)
-   data modify storage asset:object IsAbstract set value false
+    data modify storage asset:object IsAbstract set value false
 # ID (int)
     data modify storage asset:object ID set value 2001
 # フィールド
