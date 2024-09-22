@@ -7,7 +7,7 @@
 #   asset:object/0001.abstract_projectile/tick/
 
 # 再帰カウントが0なら弾速からセット
-    execute unless entity @s[scores={1.Recursion=1..,1.Range=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
+    execute unless entity @s[scores={1.Recursion=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
 
 # 前進
     execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] run tp @s ^ ^ ^0.5 ~ ~
