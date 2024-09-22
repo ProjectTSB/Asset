@@ -1,4 +1,4 @@
-#> asset:object/2001.slash_effect_1/summon/debug
+#> asset:mob/2001.slash_effect/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

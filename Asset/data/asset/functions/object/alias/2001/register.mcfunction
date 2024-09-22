@@ -2,7 +2,7 @@
 #
 # Objectのデータ指定処理のエイリアス
 #
-# @within asset_manager:object/summon/summon.m
+# @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-   function asset:object/2001.slash_effect_1/register
+   function asset:object/2001.slash_effect/register
