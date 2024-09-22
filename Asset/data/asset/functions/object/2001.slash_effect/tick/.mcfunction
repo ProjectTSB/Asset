@@ -4,20 +4,21 @@
 #
 # @within asset:object/alias/2001/tick
 
+# まずFrameを取得
+    data modify storage asset:temp 2001.Frame set from storage asset:context this.Frames[-1]
+    data remove storage asset:context this.Frames[-1]
+
 # スコアが正かつ透明状態なら可視化
-    execute if score @s General.Object.Tick matches 1.. if entity @s[tag=2001.Invisible] run function asset:object/2001.slash_effect/tick/visible
+    execute if entity @s[tag=2001.Invisible] unless data storage asset:temp 2001{Frame:-1} run function asset:object/2001.slash_effect/tick/visible
 
-# スコア反転
-    execute if score @s General.Object.Tick matches ..-1 run scoreboard players operation @s General.Object.Tick *= $-1 Const
-
-# スコアがFrame以下ならCustomModelDataを切り替える
-    execute if score @s General.Object.Tick <= @s 2001.Frame store result entity @s item.tag.CustomModelData int -1 run data get entity @s item.tag.CustomModelData -1.0000001
+# Frameを切り替える
+    execute unless entity @s[tag=2001.Invisible] run data modify entity @s item.tag.CustomModelData set from storage asset:temp 2001.Frame
 
 # スコアが1以下ならキル
-    execute if score @s General.Object.Tick matches 1 run kill @s
+    execute unless data storage asset:temp 2001.Frame run kill @s
 
-# スコア減少
-    scoreboard players remove @s General.Object.Tick 1
+# データを削除
+    data remove storage asset:temp 2001.Frame
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
