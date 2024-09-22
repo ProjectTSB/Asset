@@ -1,8 +1,8 @@
-#> asset:object/0005.slash_effect_abs/init/
+#> asset:object/2001.slash_effect/init/
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/5/init
+# @within asset:object/alias/2001/init
 
 # アイテムディスプレイに表示するItemをFieldから代入する
     data modify entity @s item set from storage asset:context this.item
@@ -16,5 +16,5 @@
     execute store result score @s General.Object.Tick run data get storage asset:context this.Second -1
 
 # タグ付け
-    tag @s add 5.SlashEffect
-    tag @s add 5.Invisible
+    tag @s add 2001.SlashEffect
+    tag @s add 2001.Invisible

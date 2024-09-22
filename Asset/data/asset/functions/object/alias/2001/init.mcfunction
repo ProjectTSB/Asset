@@ -1,8 +1,8 @@
-#> asset:object/alias/5/init
+#> asset:object/alias/2001/init
 #
 # Init処理のエイリアス
 #
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-   function asset:object/0005.slash_effect_abs/init/
+   function asset:object/2001.slash_effect/init/
