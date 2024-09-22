@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2002.lighting_fast/**
-    #declare
+    #declare tag 2002.Landing
