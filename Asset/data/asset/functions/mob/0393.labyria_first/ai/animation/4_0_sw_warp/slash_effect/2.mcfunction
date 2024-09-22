@@ -7,7 +7,7 @@
 #   asset:mob/0393.labyria_first/ai/animation/5_0_sw_ms_warp/
 
 # オーバーライドを設定
-    data modify storage api: Argument.FieldOverride set value {Color:16777088,Second:8,Scale:5f,transformation:{left_rotation:[0.1228f,-0.6964f,0.1228f,0.6964f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    data modify storage api: Argument.FieldOverride set value {Color:16777088,Frames:[20335,20335,20335,20335,20336,20336,20337],Scale:[5f,5f,0.1f],transformation:{left_rotation:[0.1228f,-0.6964f,0.1228f,0.6964f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
