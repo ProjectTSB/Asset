@@ -17,5 +17,5 @@
 # マーカーの位置にブロックがなかったらテレポートする
     execute at 0-0-0-0-0 if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

@@ -17,5 +17,5 @@
 # 発射
     execute positioned ~ ~2 ~ facing entity @e[type=marker,tag=B1.Marker,distance=..15,limit=1] feet run function asset:mob/0397.crystal_turret/ai/projectile/0.summon
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     kill @e[type=marker,tag=B1.Marker,distance=..15,limit=1]

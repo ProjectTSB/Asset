@@ -31,7 +31,7 @@
 # 条件を満たしていればワープする
     execute unless score $AZ.Temp Temporary matches 1 at 0-0-0-0-0 run tp @s ~ ~ ~ ~ ~
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # 満たしていなければ再拡散

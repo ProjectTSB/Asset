@@ -25,7 +25,7 @@
     execute if score $AW.Crystal Temporary matches ..3 at 0-0-0-0-0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
     execute if score $AW.Crystal Temporary matches ..3 at 0-0-0-0-0 rotated ~180 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/5.summon_healer
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # スコアリセット

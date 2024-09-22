@@ -28,7 +28,7 @@
 # 魔導書召喚
     execute if score $AW.Book Temporary matches ..8 at 0-0-0-0-0 positioned ^ ^ ^10 run function asset:mob/0392.ecual_first/ai/general/9.summon_book
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # スコアリセット

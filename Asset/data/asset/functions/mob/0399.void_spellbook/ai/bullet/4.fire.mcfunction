@@ -17,5 +17,5 @@
 # 発射
     execute positioned ~ ~1 ~ facing entity @e[type=marker,tag=B3.Marker,distance=..15,limit=1] feet run function asset:mob/0399.void_spellbook/ai/bullet/0.summon
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     kill @e[type=marker,tag=B3.Marker,distance=..15,limit=1]

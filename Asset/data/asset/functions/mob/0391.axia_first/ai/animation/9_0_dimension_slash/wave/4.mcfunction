@@ -26,5 +26,5 @@
     execute rotated ~-60 ~ run tp 0-0-0-0-0 ^ ^ ^22 ~ ~
 # 衝撃波召喚
     execute at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

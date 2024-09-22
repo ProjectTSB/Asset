@@ -14,5 +14,5 @@
         execute at 0-0-0-0-0 run tp 0-0-0-0-0 ^ ^ ^0.5
     # マーカーPosをFieldに保存する
         data modify storage asset:context this.Pos set from entity 0-0-0-0-0 Pos
-    # Makerを戻してあげる
+    # マーカーを戻してあげる
         execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

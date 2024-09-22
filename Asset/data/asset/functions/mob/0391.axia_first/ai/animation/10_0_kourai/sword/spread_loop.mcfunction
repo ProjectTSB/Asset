@@ -24,7 +24,7 @@
 # 条件を満たしていれば置く
     execute unless score $AV.Temp Temporary matches 1 at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
 
-# Makerを戻してあげる
+# マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # 満たしていなければ再拡散
