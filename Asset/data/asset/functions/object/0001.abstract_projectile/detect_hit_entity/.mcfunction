@@ -8,4 +8,4 @@
     execute positioned ~-0.5 ~0.0 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:object/call.m {method:hit_entity}
 
 # 実装フラグを立てる
-   data modify storage asset:object Implement set value true
+    data modify storage asset:object Implement set value true

@@ -8,4 +8,4 @@
     execute unless block ~ ~ ~ #lib:no_collision run function asset:object/call.m {method:hit_block}
 
 # 実装フラグを立てる
-   data modify storage asset:object Implement set value true
+    data modify storage asset:object Implement set value true

@@ -3,8 +3,8 @@
 # Objectのtick時の処理
 #
 # @within function
-#   asset:object/alias/1/tick
-#   asset:object/0001.abstract_projectile/tick/
+#    asset:object/alias/1/tick
+#    asset:object/0001.abstract_projectile/tick/
 
 # 再帰カウントが0なら弾速からセット
     execute unless entity @s[scores={1.Recursion=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
