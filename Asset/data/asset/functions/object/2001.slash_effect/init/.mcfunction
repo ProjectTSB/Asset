@@ -4,6 +4,9 @@
 #
 # @within asset:object/alias/2001/init
 
+# その場にTPする
+    tp @s ~ ~ ~ ~ ~
+
 # アイテムディスプレイに表示するItemをFieldから代入する
     data modify entity @s item set from storage asset:context this.item
 
