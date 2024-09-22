@@ -16,5 +16,5 @@
   # 演出
      execute if entity @s[scores={1O.ExplodeFuse=1..39}] run particle smoke ~ ~1.2 ~ 0.4 0.5 0.4 0 6 normal @a
 
-   # 爆破
+    # 爆破
      execute if entity @s[scores={1O.ExplodeFuse=40..}] run function asset:mob/0060.self_destructor/tick/4.self-desruct

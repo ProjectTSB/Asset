@@ -11,7 +11,7 @@
     effect give @a[gamemode=!spectator,distance=..1.2] wither 1 2 false
 
 # 増殖スコア
-   scoreboard players add @s 1M.Tick 1
+    scoreboard players add @s 1M.Tick 1
 
 # 増殖
-   execute if score @s 1M.Tick matches 200.. run function asset:mob/0058.divide_haze/tick/3.mob_count
+    execute if score @s 1M.Tick matches 200.. run function asset:mob/0058.divide_haze/tick/3.mob_count

@@ -100,7 +100,6 @@
         "asset:mob/0182.skull_raven/0.load",
         "asset:mob/0081.snow_cloud/0.load",
         "asset:mob/0059.jack_o_lantern/0.load",
-        "asset:mob/0139.blast_eye/0.load",
-        "asset:mob/0171.lumberjack_of_blue_forest/0.load"
+        "asset:mob/0139.blast_eye/0.load"
     ]
 }

@@ -9,7 +9,7 @@
     execute at @p[tag=Victim] run playsound minecraft:block.end_portal_frame.fill hostile @a ~ ~ ~ 1 0.5 0
 
 # 属性ダメージ
-   # 与えるダメージ
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 2.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Magic"

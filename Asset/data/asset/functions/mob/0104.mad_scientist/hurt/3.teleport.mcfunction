@@ -18,7 +18,7 @@
     kill @e[type=marker,tag=SpreadMarker]
 
 # 斧を持ち出してくる
-   item replace entity @s weapon.mainhand with netherite_axe
+    item replace entity @s weapon.mainhand with netherite_axe
 
 # 突進する
     data modify storage lib: Argument.VectorMagnitude set value 2
