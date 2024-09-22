@@ -13,5 +13,5 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
 
-# 範囲内のプレイヤーにデバフを付与
-    execute as @a[distance=..2] run function asset:mob/0364.white_magic/tick/debuff
+# ノーマル以上なら範囲内のプレイヤーにデバフを付与
+    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0364.white_magic/tick/debuff

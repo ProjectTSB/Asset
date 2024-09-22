@@ -6,5 +6,5 @@
 # @private
 
 # モブを召喚
-   data modify storage api: Argument.ID set value 266
-   function api:mob/summon
+    data modify storage api: Argument.ID set value 266
+    function api:mob/summon
