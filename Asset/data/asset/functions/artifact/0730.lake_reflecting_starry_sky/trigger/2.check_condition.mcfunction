@@ -10,7 +10,7 @@
 
 # 夜かどうかをチェックする
     execute if predicate lib:is_day run tag @s remove CanUsed
-    execute if predicate lib:is_day run tellraw @s {"text":"発動条件を満たしていません。","color":"red"}
+    execute if predicate lib:is_day run function lib:message/artifact/condition_not_met
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0730.lake_reflecting_starry_sky/trigger/3.main
