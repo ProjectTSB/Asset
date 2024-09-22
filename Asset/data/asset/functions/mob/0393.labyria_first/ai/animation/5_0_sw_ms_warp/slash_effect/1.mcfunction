@@ -9,8 +9,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
-    function api:object/summon
-    execute as @e[type=item_display,tag=5.SlashEffect,distance=..0.001,sort=nearest,limit=1] positioned ^ ^1 ^1 run tp @s ~ ~ ~ ~ ~
+    execute positioned ^ ^1 ^1 run function api:object/summon
 
 # サウンド
     function asset:mob/0393.labyria_first/ai/general/6.slash_sound
