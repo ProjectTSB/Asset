@@ -10,5 +10,3 @@
     data modify storage asset:object IsAbstract set value true
 # ID (int)
     data modify storage asset:object ID set value 1
-# フィールド
-    data modify storage asset:object Field.myValue set value []
