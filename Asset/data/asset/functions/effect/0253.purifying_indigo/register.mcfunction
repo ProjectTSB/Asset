@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"浄藍","color":"#83aaf7"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"与える水属性ダメージが上昇する"}'
+    data modify storage asset:effect Description set value '{"text":"水属性与ダメージが上昇する"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)

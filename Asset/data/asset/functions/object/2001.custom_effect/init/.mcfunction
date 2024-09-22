@@ -18,7 +18,7 @@
 # mergeを行う
     data modify storage asset:temp 2001.item set from storage asset:context this.Item
     data modify storage asset:temp 2001.item.tag.display.color set from storage asset:context this.Color
-    execute if data storage asset:context this.transformation run data modify storage asset:temp 2001.transformation set from storage asset:context this.Transformation
+    execute if data storage asset:context this.Transformation run data modify storage asset:temp 2001.transformation set from storage asset:context this.Transformation
     data modify entity @s {} merge from storage asset:temp 2001
 
 # Framesのint配列を反転させる
