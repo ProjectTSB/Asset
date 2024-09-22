@@ -11,4 +11,4 @@
 # ID (int)
     data modify storage asset:object ID set value 2001
 # フィールド
-    data modify storage asset:object Field set value {item:{id:"minecraft:leather_boots",Count:1b}}
+    data modify storage asset:object Field set value {item:{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},Scale:[5f,5f,0.1f],Frames:[20335,20335,20335,20336,20337]}

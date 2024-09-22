@@ -15,11 +15,6 @@
 # 実行向きに合わせる
     tp @s ~ ~ ~ ~ ~
 
-# 初期設定を行う（FieldOverride）
-    execute unless data storage asset:context this.Color run data modify storage asset:context this.Color set value 0
-    execute unless data storage asset:context this.Scale[0] run data modify storage asset:context this.Scale set value [5f,5f,0.1f]
-    execute unless data storage asset:context this.Frames[0] run data modify storage asset:context this.Frames set value [20335,20335,20335,20336,20337]
-
 # mergeを行う
     data modify storage asset:temp 2001.item set from storage asset:context this.item
     data modify storage asset:temp 2001.item.tag.display.color set from storage asset:context this.Color
