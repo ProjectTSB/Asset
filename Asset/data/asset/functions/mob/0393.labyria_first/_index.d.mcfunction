@@ -16,6 +16,7 @@
 #> tag obj
 # @within function asset:mob/0393.labyria_first/**
     #declare tag 2007.NovaCore
+    #declare tag 2008.ShotReadyManual
 
 #> val
 # @within function asset:mob/0393.labyria_first/**
