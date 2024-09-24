@@ -1,7 +1,6 @@
 {
     "values": [
         "asset:artifact/0991.soul_mate/give/1.trigger",
-        "asset:artifact/0991.soul_mate/give/1.trigger",
         "asset:artifact/0900.pure_water_bracelet/give/1.trigger",
         "asset:artifact/0772.dolphin_amulet/give/1.trigger",
         "asset:artifact/0702.bright_lamp/give/1.trigger",
@@ -76,8 +75,10 @@
         "asset:artifact/0005.musket_matchlock/give/1.trigger",
         "asset:artifact/0933.auto_torch/give/1.trigger",
         "asset:artifact/0928.ankh/give/1.trigger",
+        "asset:artifact/0775.jade_armor/give/1.trigger",
         "asset:artifact/0776.jade_armor/give/1.trigger",
         "asset:artifact/0777.jade_armor/give/1.trigger",
+        "asset:artifact/0778.jade_armor/give/1.trigger",
         "asset:artifact/0905.book_of_metastasis/give/1.trigger",
         "asset:artifact/0007.nitrogen_fixater/give/1.trigger",
         "asset:artifact/0756.sakura_hubuki/give/1.trigger",
