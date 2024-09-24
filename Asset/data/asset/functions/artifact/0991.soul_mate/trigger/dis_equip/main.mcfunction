@@ -27,3 +27,14 @@
     function lib:damage/
 # リセット
     function lib:damage/reset
+
+# 効果
+    data modify storage api: Argument.ID set value 264
+    function api:entity/mob/effect/remove/from_id
+
+# メッセージ
+    tellraw @a[tag=RJ.SoulMate] [{"selector":"@s","color":"dark_red"},{"text":"がソウルメイトを脱退しました。","color":"dark_red"}]
+
+# タグ付与
+
+    tag @s remove RJ.SoulMate

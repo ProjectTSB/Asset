@@ -8,8 +8,8 @@
     #function asset:artifact/common/use/mainhand
 
 # ソウルメイト呼び出し
-    execute as @a[tag=RJ.SoulMate,distance=0.5..200] run tp @s ~ ~ ~
-
+    execute unless predicate lib:is_ban_tp_area as @a[tag=RJ.SoulMate,distance=0.5..] unless predicate lib:is_ban_tp_area run tp @s ~ ~ ~
+    execute if predicate lib:is_ban_tp_area run tellraw @s {"text":"不思議な力が転送を妨害した。","color":"dark_aqua"}
 # 演出
     playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1
     playsound minecraft:entity.allay.ambient_with_item player @a ~ ~ ~ 1 1
