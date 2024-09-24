@@ -1,8 +1,8 @@
-#> asset:artifact/0991.soul_mate/trigger/dis_equip/main
+#> asset:artifact/0991.soul_mate/dis_equip/main
 #
 # 装備を外した時のメイン処理
 #
-# @within function asset:artifact/0991.soul_mate/trigger/dis_equip/
+# @within function asset:artifact/0991.soul_mate/dis_equip/
 
 # 演出
     playsound minecraft:entity.ghast.scream player @a ~ ~ ~ 1 0.8

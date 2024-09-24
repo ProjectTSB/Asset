@@ -1,8 +1,8 @@
-#> asset:artifact/0991.soul_mate/trigger/equip/2.check_condition
+#> asset:artifact/0991.soul_mate/equip/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:artifact/0991.soul_mate/trigger/equip/1.trigger
+# @within function asset:artifact/0991.soul_mate/equip/1.trigger
 
 # ID指定する
     data modify storage asset:artifact TargetID set value 991
@@ -11,4 +11,4 @@
 # 他にアイテム等確認する場合はここに書く
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0991.soul_mate/trigger/equip/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/0991.soul_mate/equip/3.main
