@@ -8,7 +8,7 @@
     playsound minecraft:entity.ghast.scream player @a ~ ~ ~ 1 0.8
     playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.8
     execute anchored eyes positioned ^ ^ ^ run particle soul ~ ~0.5 ~ 0 0 0 0.01 5
-    
+
 # ダメージ
     # 引数の設定
     # 与えるダメージ
@@ -24,6 +24,6 @@
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージ
-    #function lib:damage/
+    function lib:damage/
 # リセット
     function lib:damage/reset
