@@ -38,5 +38,5 @@
 
 
 # 消滅処理
-    kill @e[type=item_display,tag=2001.Nova,distance=..0.001,sort=nearest,limit=1]
+    kill @e[type=item_display,tag=2007.Nova,distance=..0.001,sort=nearest,limit=1]
     kill @s

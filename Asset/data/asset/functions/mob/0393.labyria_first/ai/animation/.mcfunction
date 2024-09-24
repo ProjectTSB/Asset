@@ -33,3 +33,6 @@
 
 # 雷神無双
     execute if score @s AZ.AnimationNum matches 90 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
+
+# ノヴァ
+    execute if score @s AZ.AnimationNum matches 100 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/

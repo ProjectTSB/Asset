@@ -2,7 +2,9 @@
 #
 # 偏差ワープ
 #
-# @within function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/warp/adj
+# @within function
+#   asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/warp/adj
+#   asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/warp/adj
 
 # 自身にタグ付け
     tag @s add AZ.Temp.This

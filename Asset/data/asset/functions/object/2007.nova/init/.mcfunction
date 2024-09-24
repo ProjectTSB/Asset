@@ -11,5 +11,8 @@
     execute on passengers on passengers store result entity @s Rotation[0] float 0.01 run scoreboard players get $2007.Temp Temporary
     execute on passengers on passengers on passengers store result entity @s Rotation[0] float 0.01 run scoreboard players get $2007.Temp Temporary
 
+# タグセット
+    tag @s add 2007.NovaCore
+
 # スコアリセット
     scoreboard players reset $2007.Temp Temporary

@@ -13,6 +13,10 @@
     #declare tag AZ.SuperiorSkill
     #declare tag AZ.Death
 
+#> tag obj
+# @within function asset:mob/0393.labyria_first/**
+    #declare tag 2007.NovaCore
+
 #> val
 # @within function asset:mob/0393.labyria_first/**
     #declare score_holder $AZ.Temp

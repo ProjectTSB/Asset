@@ -5,6 +5,7 @@
 # @within function
 #   asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/
 #   asset:mob/0393.labyria_first/ai/animation/5_0_sw_ms_warp/
+#   asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/
 
 # ダメージ
     # 引数の設定
