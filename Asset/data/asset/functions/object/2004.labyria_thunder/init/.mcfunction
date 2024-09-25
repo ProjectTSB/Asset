@@ -18,3 +18,6 @@
 
 # TP
     execute at @s run tp @s ~ ~ ~ ~ 0
+
+# 実装フラグを立てる
+    data modify storage asset:object Implement set value true

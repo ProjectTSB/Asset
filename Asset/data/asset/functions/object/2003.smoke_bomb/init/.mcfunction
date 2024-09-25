@@ -16,3 +16,6 @@
         data modify storage asset:context this.Pos set from entity 0-0-0-0-0 Pos
     # マーカーを戻してあげる
         execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
+
+# 実装フラグを立てる
+    data modify storage asset:object Implement set value true
