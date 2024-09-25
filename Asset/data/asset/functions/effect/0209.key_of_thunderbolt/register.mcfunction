@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"雷霆の鍵","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"雷属性の攻撃力が上昇する。"}']
+    data modify storage asset:effect Description set value ['{"text":"雷属性の与ダメージが上昇する。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 3600
 # スタック (int) (default = API || 1)
