@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1024.brave_rod/trigger/0.load",
+        "asset:artifact/0837.the_world_knife/trigger/0.load",
+        "asset:artifact/0600.xtal/trigger/0.load",
+        "asset:artifact/0664.soul_fire_armor/trigger/0.load",
+        "asset:artifact/0105.secret_meat/trigger/0.load",
+        "asset:artifact/1047.life_steal_emblem/trigger/0.load",
         "asset:artifact/1048.thunder_storm/trigger/0.load",
         "asset:artifact/1057.great_demon_head/trigger/0.load",
         "asset:artifact/1045.mini_black_hole/trigger/0.load",
@@ -45,7 +51,6 @@
         "asset:artifact/0278.reveille/trigger/0.load",
         "asset:artifact/0456.potion_of_stalling_power/trigger/0.load",
         "asset:artifact/0078.self_destruct_order/trigger/0.load",
-        "asset:artifact/0297.spirit_world_trance/trigger/0.load",
         "asset:artifact/0573.final_prism/trigger/0.load",
         "asset:artifact/0210.terra_blade/trigger/0.load",
         "asset:artifact/0373.ice_sorcery/trigger/0.load",
@@ -60,6 +65,7 @@
         "asset:artifact/0265.holy_symbol_lv.5/trigger/0.load",
         "asset:artifact/0266.angel_ray_lv.5/trigger/0.load",
         "asset:artifact/0269.holy_symbol_lv.10/trigger/0.load",
-        "asset:artifact/0270.angel_ray_lv.10/trigger/0.load"
+        "asset:artifact/0270.angel_ray_lv.10/trigger/0.load",
+        "asset:artifact/0431.weather_lock_cane/trigger/0.load"
     ]
 }

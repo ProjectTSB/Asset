@@ -5,8 +5,8 @@
 # @within function asset:mob/0182.skull_raven/attack/1.trigger
 
 # 演出
-   execute at @p[tag=Victim,distance=..60] run particle minecraft:lava ~ ~0.5 ~ 0.8 0.8 0.8 0.1 20 normal @p
-   execute at @p[tag=Victim,distance=..60] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.8 0.8 0
+    execute at @p[tag=Victim,distance=..60] run particle minecraft:lava ~ ~0.5 ~ 0.8 0.8 0.8 0.1 20 normal @p
+    execute at @p[tag=Victim,distance=..60] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.8 0.8 0
 
 # ハードなら打ち上げ
     execute if predicate api:global_vars/difficulty/min/hard at @p[tag=Victim,distance=..60] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:5,show_particles:1b}]}
