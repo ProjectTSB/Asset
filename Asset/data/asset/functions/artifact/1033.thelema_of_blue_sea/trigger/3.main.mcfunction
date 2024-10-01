@@ -13,17 +13,17 @@
 # @private
     #declare score_holder $Damage
 
-# 攻撃回数スコアを増やす
-    scoreboard players add @s SP.AttackCount 1
-
 # デバッグ用
     #scoreboard players set @s SP.AttackCount 1
 
 # 次の段階までの待機時間のスコア
     scoreboard players set @s SP.WaitingTime 40
 
-# 演出用AECを召喚
-    execute anchored eyes positioned ^ ^-0.3 ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.VFXEntity","SP.Init","Object"],Particle:"block air",Duration:10}
+# 演出用オブジェクトを召喚
+    data modify storage api: Argument.ID set value 1038
+    execute store result storage api: Argument.FieldOverride.Count int 1 run scoreboard players add @s SP.AttackCount 1
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute anchored eyes positioned ^ ^-0.3 ^2 run function api:object/summon
 
 # 3回目の攻撃の時、追撃用のAECを設置
     execute if entity @s[scores={SP.AttackCount=3}] at @e[type=#lib:living,tag=Victim,distance=..6] rotated as @s run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.PersuitEntity","SP.Init","Object"],Particle:"block air",Duration:40}
