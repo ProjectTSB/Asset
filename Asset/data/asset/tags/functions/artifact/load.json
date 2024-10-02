@@ -66,6 +66,7 @@
         "asset:artifact/0265.holy_symbol_lv.5/trigger/0.load",
         "asset:artifact/0266.angel_ray_lv.5/trigger/0.load",
         "asset:artifact/0269.holy_symbol_lv.10/trigger/0.load",
-        "asset:artifact/0270.angel_ray_lv.10/trigger/0.load"
+        "asset:artifact/0270.angel_ray_lv.10/trigger/0.load",
+        "asset:artifact/0431.weather_lock_cane/trigger/0.load"
     ]
 }

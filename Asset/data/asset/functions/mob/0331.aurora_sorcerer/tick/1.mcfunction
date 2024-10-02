@@ -8,7 +8,7 @@
     particle dust_color_transition 0.000 1.000 0.886 1.3 0 0.235 1 ~ ~1.7 ~ 0.1 0.1 0.1 0 2 normal @a
 
 # プレイヤーが近くにいる場合、自身に鈍足を付与
-   execute if entity @p[gamemode=!spectator,distance=..12] run effect give @s slowness 1 3 true
+    execute if entity @p[gamemode=!spectator,distance=..12] run effect give @s slowness 1 3 true
 
 # プレイヤーと非常に近い場合、MotionCountスコアを増加
     execute unless entity @s[scores={97.MotionCT=1..}] if entity @p[gamemode=!spectator,distance=..7] run scoreboard players add @s 97.MotionCount 1
