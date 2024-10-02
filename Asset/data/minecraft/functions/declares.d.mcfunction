@@ -190,6 +190,7 @@
     #declare function api:teleporter/set_activation_state/from_nearest                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
     #declare function asset:object/example.1/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.1/summon/debug.mcfunction#L1
     #declare function asset:object/example.2/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.2/summon/debug.mcfunction#L1
+    #declare function asset:object/example.3/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.3/summon/debug.mcfunction#L1
     #declare function debug:stopwatch.start                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/stopwatch.start.mcfunction#L1
     #declare function debug:stopwatch.stop                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/stopwatch.stop.mcfunction#L1
     #declare function debug:tps/watch                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
