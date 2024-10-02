@@ -9,4 +9,3 @@
     scoreboard objectives add 1.Recursion dummy
     scoreboard objectives add 1.Range dummy
     scoreboard objectives add 1.Speed dummy
-    scoreboard objectives add 1.MovePerStep dummy
