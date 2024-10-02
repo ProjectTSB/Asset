@@ -4,16 +4,19 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/**
 
+#> 行き先マーカー
+# @private
+#declare tag FacingMarker
+
 # 拡散
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
-    
+
 # 召喚
-    data modify storage api: Argument.ID set value 1013
-    function api:mob/summon
+    data modify storage api: Argument.ID set value 2027
+    function api:object/summon
 
 # リセット
     kill @e[type=marker,tag=FacingMarker]
-    data remove storage rw_shotspeed: Speed
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2

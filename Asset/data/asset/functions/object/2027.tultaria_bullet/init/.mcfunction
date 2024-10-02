@@ -4,16 +4,18 @@
 #
 # @within asset:object/alias/2027/init
 
-#> 行き先マーカーと弾速ストレージ
+#> 行き先マーカー
 # @private
 #declare tag FacingMarker
-#declare storage rw_shotspeed:
 
 # マーカーの方向く
     execute facing entity @e[type=marker,tag=FacingMarker,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # キル
     kill @e[type=marker,tag=FacingMarker,limit=1]
+
+# super
+    function asset:object/super.init
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true

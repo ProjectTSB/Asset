@@ -4,8 +4,13 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/move_shot/tick
 
-# 弾速設定
-    data modify storage rw_shotspeed: Speed set value 1
+#> 行き先マーカー
+# @private
+#declare tag FacingMarker
+#declare tag SpreadMarker
+
+# 発射体のステータス設定
+#    data modify storage api: Argument.FieldOverride set value {Speed:1,Range:60}
 
 # 拡散させるEntityを召喚する
     summon marker ~ ~ ~ {Tags:["SpreadMarker","FacingMarker"]}
