@@ -2587,13 +2587,17 @@
                         "#",
                         "# @within function asset:object/alias/%id%/register",
                         "",
+                        "# 継承(オプション)",
+                        "    # data modify storage asset:object Extends append value ",
+                        "    # function asset:object/extends",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:object ExtendsSafe set value ",
                         "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
-                        "   data modify storage asset:object IsAbstract set value false",
+                        "    data modify storage asset:object IsAbstract set value false",
+                        "",
                         "# ID (int)",
                         "    data modify storage asset:object ID set value %id%",
-                        "# フィールド",
+                        "# フィールド(オプション)",
                         "    # data modify storage asset:object Field.myValue set value "
                     ]
                 },
@@ -2608,14 +2612,14 @@
                         "# @within asset_manager:object/summon/register.m",
                         "",
                         "# 元の登録処理を呼び出す",
-                        "   function asset:object/%namespace%/register"
+                        "    function asset:object/%namespace%/register"
                     ]
                 },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/object/%namespace%/summon/debug.mcfunction",
                     "content": [
-                        "#> asset:mob/%namespace%/summon/debug",
+                        "#> asset:object/%namespace%/summon/debug",
                         "#",
                         "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
                         "#",
@@ -2623,8 +2627,8 @@
                         "# @private",
                         "",
                         "# 召喚",
-                        "   data modify storage api: Argument.ID set value %id%",
-                        "   function api:object/summon"
+                        "    data modify storage api: Argument.ID set value %id%",
+                        "    function api:object/summon"
                     ]
                 }
             ],
@@ -2654,7 +2658,7 @@
                         "    summon %entity% ~ ~ ~ {Tags:[\"ObjectInit\"]}",
                         "",
                         "# 実装フラグを立てる",
-                        "data modify storage asset:object Implement set value true"
+                        "    data modify storage asset:object Implement set value true"
                     ]
                 },
                 {
@@ -2668,7 +2672,7 @@
                         "# @within asset_manager:object/summon/summon.m",
                         "",
                         "# 元の召喚処理を呼び出す",
-                        "   function asset:object/%namespace%/summon/"
+                        "    function asset:object/%namespace%/summon/"
                     ]
                 }
             ],
@@ -2701,13 +2705,13 @@
                         "# @within asset:object/alias/%id%/tick",
                         "",
                         "# Tick加算",
-                        "   scoreboard players add @s General.Object.Tick 1",
+                        "    scoreboard players add @s General.Object.Tick 1",
                         "",
                         "# 消滅処理",
-                        "   kill @s[scores={General.Object.Tick=1000..}]",
+                        "    kill @s[scores={General.Object.Tick=1000..}]",
                         "",
                         "# 実装フラグを立てる",
-                        "data modify storage asset:object Implement set value true"
+                        "    data modify storage asset:object Implement set value true"
                     ]
                 },
                 {
@@ -2721,7 +2725,7 @@
                         "# @within asset_manager:object/tick/tick.m",
                         "",
                         "# 元のTick処理を呼び出す",
-                        "   function asset:object/%namespace%/tick/"
+                        "    function asset:object/%namespace%/tick/"
                     ]
                 }
             ],
@@ -2746,7 +2750,10 @@
                         "# Objectのinit時の処理",
                         "#",
                         "# @within asset:object/alias/%id%/init",
-                        ""
+                        "",
+                        "# 実装フラグを立てる",
+                        "    data modify storage asset:object Implement set value true"
+
                     ]
                 },
                 {
@@ -2760,7 +2767,7 @@
                         "# @within asset_manager:object/init/init.m",
                         "",
                         "# 元のInit処理を呼び出す",
-                        "   function asset:object/%namespace%/init/"
+                        "    function asset:object/%namespace%/init/"
                     ]
                 }
             ],
@@ -2838,7 +2845,7 @@
                         "# @within asset:object/alias/%id%/%method_name%",
                         "",
                         "# 実装フラグを立てる",
-                        "   data modify storage asset:object Implement set value true"
+                        "    data modify storage asset:object Implement set value true"
                     ]
                 },
                 {
@@ -2852,7 +2859,7 @@
                         "# @within asset_manager:object/tick/tick.m",
                         "",
                         "# 元のメソッド処理を呼び出す",
-                        "   function asset:object/%namespace%/%method_name%/"
+                        "    function asset:object/%namespace%/%method_name%/"
                     ]
                 }
             ],
