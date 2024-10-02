@@ -47,12 +47,9 @@
     function api:damage/reset
 
 # スケジュールループを起動
-    schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/loop 1t replace
     schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/loop 1t replace
 
 # 攻撃回数が3ならスコアをリセット
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.WaitingTime
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.AttackCount
 
-# リセット
-    scoreboard players reset $Health Temporary
