@@ -25,8 +25,12 @@
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute anchored eyes positioned ^ ^-0.3 ^2 run function api:object/summon
 
-# 3回目の攻撃の時、追撃用のAECを設置
-    execute if entity @s[scores={SP.AttackCount=3}] at @e[type=#lib:living,tag=Victim,distance=..6] rotated as @s run summon area_effect_cloud ~ ~ ~ {Tags:["SP.Entity","SP.PersuitEntity","SP.Init","Object"],Particle:"block air",Duration:40}
+# 3回目の攻撃の時、追撃用オブジェクトを召喚
+    execute if entity @s[scores={SP.AttackCount=3}] run data modify storage api: Argument.ID set value 1039
+    execute if entity @s[scores={SP.AttackCount=3}] run data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute if entity @s[scores={SP.AttackCount=3}] store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute if entity @s[scores={SP.AttackCount=3}] store result storage api: Argument.FieldOverride.MaxHP int 0.05 run attribute @s generic.max_health get
+    execute if entity @s[scores={SP.AttackCount=3}] at @e[type=#lib:living,tag=Victim,distance=..6] run function api:object/summon
 
 # entityのinit処理
     execute as @e[type=area_effect_cloud,tag=SP.Init,distance=..6,limit=2] at @s run function asset:artifact/1033.thelema_of_blue_sea/trigger/entity/init
