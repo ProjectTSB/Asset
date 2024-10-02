@@ -33,3 +33,6 @@
     execute if entity @s[scores={1038.Count=1..2,General.Object.Tick=1..4}] run playsound block.amethyst_cluster.step player @a ~ ~ ~ 0.7 1.3
     execute if entity @s[scores={1038.Count=3,General.Object.Tick=1..4}] run playsound block.amethyst_cluster.step player @a ~ ~ ~ 0.7 0.8
     execute if entity @s[scores={1038.Count=1,General.Object.Tick=1..4}] run playsound entity.dolphin.jump player @a ~ ~ ~ 0.2 0.9
+
+# 実装フラグを立てる
+    data modify storage asset:object Implement set value true
