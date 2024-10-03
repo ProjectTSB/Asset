@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
 
-# データ指定
-    data modify storage api: Argument.FieldOverride set value {Color:16731392,Frames:[20335,20336,20337]}
-
 # 召喚
     data modify storage api: Argument.ID set value 2001
     function api:object/summon
