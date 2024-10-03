@@ -22,7 +22,7 @@
     execute if entity @s[scores={General.Object.Tick=70}] run data modify storage asset:context this.Speed set value 10
 
 # 継承して動かす
-    #execute if entity @s[scores={General.Object.Tick=70..}] run function asset:object/super.tick
+    function asset:object/super.tick
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
@@ -30,4 +30,4 @@
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
 
-kill @e[type=item_display]
+#kill @e[type=item_display]

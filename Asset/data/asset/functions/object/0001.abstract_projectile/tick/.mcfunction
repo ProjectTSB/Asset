@@ -7,5 +7,8 @@
 # フィールドのデータからスコアを設定
     execute store result score @s 1.Speed run data get storage asset:context this.Speed
 
+execute if data storage asset:context this.Speed run say abstract.tick
+tellraw @a [{"text":"Speed:"},{"storage":"asset:context","nbt":"this.Speed"},{"text":" Range:"},{"storage":"asset:context","nbt":"this.Range"}]
+
 # 再帰する
     function asset:object/0001.abstract_projectile/tick/recursive
