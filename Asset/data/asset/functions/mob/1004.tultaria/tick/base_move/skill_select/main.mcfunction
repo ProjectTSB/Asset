@@ -34,7 +34,7 @@
         execute if entity @s[scores={RW.Phase=3}] run scoreboard players operation $Random Temporary %= $8 Const
 
 # デバッグ用、実行する技を確定させる
-    scoreboard players set $Random Temporary 10
+    scoreboard players set $Random Temporary 8
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Meteor
