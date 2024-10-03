@@ -10,7 +10,7 @@
     execute unless entity @s[scores={1.Recursion=1..}] run scoreboard players operation @s 1.Recursion = @s 1.Speed
 
 # 前進
-    execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] run tp @s ^ ^ ^0.5 ~ ~
+    execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] run function asset:object/0001.abstract_projectile/tick/move.m with storage asset:context this
 
 # スコア減算
     scoreboard players remove @s 1.Recursion 1
