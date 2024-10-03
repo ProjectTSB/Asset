@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0059.jack_o_lantern/_/summon",
         "asset:mob/0266.small_dark_ball/_/summon",
         "asset:mob/0265.dark_familiar/_/summon",
         "asset:mob/0264.dark_summoner/_/summon",
