@@ -10,7 +10,7 @@
     particle minecraft:large_smoke ~ ~1 ~ 0.3 0.5 0.3 0 50
 
 # 上に持ってくる
-    tp @s ~ ~100 ~
+    tp @s ~ ~ ~
 
 # プレイヤーをみる
     tp @s ~ ~ ~ facing entity @p

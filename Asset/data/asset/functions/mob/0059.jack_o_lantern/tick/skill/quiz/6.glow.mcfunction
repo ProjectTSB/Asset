@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.glow
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.glow
 #
 # 偽物を消して発光する
 #

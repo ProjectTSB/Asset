@@ -14,5 +14,12 @@
     data modify storage lib: Args.scarcity_history_size set value 3
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
+# デバッグ用
+    scoreboard players set $Random Temporary 0
+
+
 # スキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 1N.Quiz
+
+# リセット
+    scoreboard players reset $Random Temporary
