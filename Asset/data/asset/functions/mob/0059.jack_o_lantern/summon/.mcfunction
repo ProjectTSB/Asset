@@ -5,5 +5,4 @@
 # @within asset:mob/0059.jack_o_lantern/_/summon
 
 # 元となるMobを召喚する
-# 100ブロック下に召喚し、initで100ブロック上に戻す
     summon husk ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiBurn","AntiVoid"],DeathLootTable:"asset:mob/death/0059.jack_o_lantern"}

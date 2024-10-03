@@ -10,4 +10,4 @@
     #declare tag 1N.FakeBomb
     #declare tag 1N.GiantPumpkin
     #declare tag 1N.Hurt
-    #declare 
+    #declare tag 1N.SpawnMarker

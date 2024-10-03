@@ -4,7 +4,8 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/_/init
 
-#
+# スポーン位置を保存するマーカーを召喚
+    summon marker ~ ~ ~ {Tags:["Object","1N.SpawnMarker"]}
 
 # 演出
     playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1.5 1
