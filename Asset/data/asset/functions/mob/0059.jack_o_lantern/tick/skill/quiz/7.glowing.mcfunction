@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glowing
 #
-#
+# 発光中の処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
 

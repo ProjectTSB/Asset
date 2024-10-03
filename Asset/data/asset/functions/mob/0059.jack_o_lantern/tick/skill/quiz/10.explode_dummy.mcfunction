@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.explode_dummy
 #
-#
+# 偽物を爆破する
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.explode_process
 

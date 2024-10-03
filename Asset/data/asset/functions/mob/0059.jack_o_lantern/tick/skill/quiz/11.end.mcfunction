@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end
 #
-#
+# クイズの終了処理
 #
 # @within function
 #   asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main

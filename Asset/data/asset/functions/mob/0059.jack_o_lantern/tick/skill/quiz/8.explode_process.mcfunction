@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.explode_process
 #
-#
+# 偽物を爆破する際の処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glowing
 
