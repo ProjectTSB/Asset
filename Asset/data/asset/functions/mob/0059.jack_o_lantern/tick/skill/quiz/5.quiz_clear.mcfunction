@@ -20,4 +20,4 @@
     function api:damage/reset
 
 # クイズエンド
-    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.end
+    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end

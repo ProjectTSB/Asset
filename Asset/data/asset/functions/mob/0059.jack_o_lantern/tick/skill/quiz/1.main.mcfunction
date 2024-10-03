@@ -7,6 +7,7 @@
 # 自分を透明化する
     execute if entity @s[scores={1N.Tick=0}] run item replace entity @s armor.head with stone{CustomModelData:20019}
     execute if entity @s[scores={1N.Tick=0}] run effect give @s slowness 12 100 true
+    execute if entity @s[scores={1N.Tick=0}] run effect give @s weakness 8 100 true
     execute if entity @s[scores={1N.Tick=0}] run effect clear @s glowing
 
 # 自分を何処かにテレポートさせる
@@ -27,4 +28,8 @@
 # クイズに失敗した場合、発光する
     execute if entity @s[scores={1N.Tick=160}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.glow
 
-    execute if entity @s[scores={1N.Tick=260..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.end
+# 発光状態中の処理
+    execute if entity @s[scores={1N.Tick=160..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glowing
+
+# 終了処理
+    execute if entity @s[scores={1N.Tick=260..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end

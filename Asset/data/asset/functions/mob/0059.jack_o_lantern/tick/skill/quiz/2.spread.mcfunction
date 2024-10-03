@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
 
 # 拡散値
-    data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
+    data modify storage lib: Argument.Bounds set value [[10d,10d],[0d,0d],[10d,10d]]
 # 拡散する
     function lib:spread_entity/
 

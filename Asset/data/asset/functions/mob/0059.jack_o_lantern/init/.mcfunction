@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/_/init
 
+#
+
 # 演出
     playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1.5 1
     playsound minecraft:entity.zombie_villager.converted hostile @a ~ ~ ~ 1.5 1.5
