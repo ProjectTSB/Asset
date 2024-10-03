@@ -1,8 +1,8 @@
-#> asset:object/2007.nova/register
+#> asset:object/2009.magic_bullet/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/2007/register
+# @within function asset:object/alias/2009/register
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:object ExtendsSafe set value 
@@ -13,6 +13,6 @@
     # function asset:object/extends
 
 # ID (int)
-    data modify storage asset:object ID set value 2007
+    data modify storage asset:object ID set value 2009
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value 
