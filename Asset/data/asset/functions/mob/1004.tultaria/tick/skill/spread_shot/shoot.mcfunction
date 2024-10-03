@@ -10,7 +10,7 @@
 #declare tag SpreadMarker
 
 # 発射体のステータス設定
-    data modify storage api: Argument.FieldOverride set value {Speed:2,Range:60}
+    data modify storage api: Argument.FieldOverride set value {Speed:1,Range:60,MovePerStep:0.5}
 
 # 拡散させるEntityを召喚する
     summon marker ~ ~ ~ {Tags:["SpreadMarker","FacingMarker"]}
