@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
 
-# 1tick後に消す
-    #schedule function asset:mob/0059.jack_o_lantern/tick/dummy_kill 1t replace
 # 演出
     playsound ogg:mob.strider.retreat5 hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 2
@@ -18,6 +16,9 @@
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
+
+# 偽物を消し飛ばす
+    tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
 
 # クイズエンド
     function asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end
