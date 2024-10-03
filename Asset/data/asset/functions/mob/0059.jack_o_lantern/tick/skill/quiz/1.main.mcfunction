@@ -10,6 +10,9 @@
     execute if entity @s[scores={1N.Tick=0}] run effect give @s weakness 8 100 true
     execute if entity @s[scores={1N.Tick=0}] run effect clear @s glowing
 
+# スポーンマーカーの位置へワープ
+    execute if entity @s[scores={1N.Tick=1}] run tp @s @e[type=marker,tag=1N.SpawnMarker,distance=..100,limit=1]
+
 # 自分を何処かにテレポートさせる
     execute if entity @s[scores={1N.Tick=20}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/2.spread
 
