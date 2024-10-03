@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:artifact/register
 
-data modify storage asset:artifact RarityRegistry[4] append value 664
+data modify storage asset:artifact RarityRegistry[4] append value [664,665,666,667]
