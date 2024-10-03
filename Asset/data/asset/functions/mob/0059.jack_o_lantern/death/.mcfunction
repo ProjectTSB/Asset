@@ -6,3 +6,6 @@
 
 # 偽物を抹消する
     kill @e[type=husk,scores={MobID=224},distance=..50]
+
+# スポーンマーカーをkill
+    kill @e[type=marker,tag=1N.SpawnMarker]
