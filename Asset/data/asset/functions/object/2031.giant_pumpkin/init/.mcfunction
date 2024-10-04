@@ -4,6 +4,7 @@
 #
 # @within function asset:object/alias/2031/init
 
+# 継承
     function asset:object/super.init
 
 # 実装フラグを立てる
