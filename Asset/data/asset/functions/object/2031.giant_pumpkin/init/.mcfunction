@@ -2,10 +2,9 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2031/init
+# @within function asset:object/alias/2031/init
 
     function asset:object/super.init
-
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
