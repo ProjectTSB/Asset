@@ -14,3 +14,5 @@
         execute if entity @s[tag=RW.Skill.Thunder.2] run function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/pattern/2
     # 3
         execute if entity @s[tag=RW.Skill.Thunder.3] run function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/pattern/3
+    # 4
+        execute if entity @s[tag=RW.Skill.Thunder.4] run function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/pattern/4

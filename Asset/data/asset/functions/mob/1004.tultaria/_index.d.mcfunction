@@ -62,7 +62,8 @@
     #declare tag RW.Skill.Thunder.1
     #declare tag RW.Skill.Thunder.2
     #declare tag RW.Skill.Thunder.3
-
+    #declare tag RW.Skill.Thunder.4
+    
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot
     #declare tag RW.Skill.Mini.MoveShotLeft

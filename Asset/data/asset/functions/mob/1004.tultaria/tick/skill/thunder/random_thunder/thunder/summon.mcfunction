@@ -1,6 +1,6 @@
-#> asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/summon
+#> asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/thunder/summon
 #
-#
+# 召喚処理。狙い撃ちで落としたいときにも使う
 #
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/**
 
