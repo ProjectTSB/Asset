@@ -820,6 +820,10 @@
 #declare function asset:effect/super.remove from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.remove.mcfunction#L1
 
 #> declare
+# @within function asset:object/*/init/
+#declare function asset:object/super.init from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.init.mcfunction#L1
+
+#> declare
 # @within
 #   asset_manager:artifact/**
 #   asset:artifact/*/register
