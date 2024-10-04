@@ -763,6 +763,10 @@
 #declare function asset:object/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.tick.mcfunction#L1
 
 #> declare
+# @within function asset:object/*/init/
+#declare function asset:object/super.init from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.init.mcfunction#L1
+
+#> declare
 # @within function asset:effect/*/given/
 #declare function asset:effect/super.given from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
 
