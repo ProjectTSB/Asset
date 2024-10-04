@@ -21,6 +21,11 @@
 # Speedを変更
     execute if entity @s[scores={General.Object.Tick=70}] run data modify storage asset:context this.Speed set value 2
 
+# 演出
+    execute if entity @s[scores={General.Object.Tick=70..}] run particle dust 1 0.6 0 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
+    execute if entity @s[scores={General.Object.Tick=70..}] run particle dust 0.851 0 1 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
+    execute if entity @s[scores={General.Object.Tick=70..}] run particle block carved_pumpkin ~ ~0.1 ~ 0.8 0 0.8 0 10 normal @a
+
 # 継承して動かす
     function asset:object/super.tick
 
