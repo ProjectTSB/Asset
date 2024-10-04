@@ -8,9 +8,6 @@
     execute store result score @s 1.Speed run data get storage asset:context this.Speed
     execute store result score @s 1.Range run data get storage asset:context this.Range
 
-tellraw @a [{"text":"Speed:"},{"storage":"asset:context","nbt":"this.Speed"},{"text":" Range:"},{"storage":"asset:context","nbt":"this.Range"}]
-
-
 # 上記が設定されてなければ、デフォルト値で0.5にする
     execute unless data storage asset:context this.MovePerStep run data modify storage asset:context this.MovePerStep set value 0.5
 
