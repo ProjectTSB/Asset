@@ -58,6 +58,10 @@
         #declare tag RW.Skill.Starfury
         #declare tag RW.Skill.Melee
 
+    ## 雷攻撃は複数パターンあってもいいよね
+    #declare tag RW.Skill.Thunder.1
+    #declare tag RW.Skill.Thunder.2
+    #declare tag RW.Skill.Thunder.3
 
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot

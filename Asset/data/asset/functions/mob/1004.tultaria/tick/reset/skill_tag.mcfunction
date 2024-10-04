@@ -8,6 +8,9 @@
     tag @s remove RW.Skill.Melee
     tag @s remove RW.Skill.Meteor
     tag @s remove RW.Skill.Thunder
+    tag @s remove RW.Skill.Thunder.1
+    tag @s remove RW.Skill.Thunder.2
+    tag @s remove RW.Skill.Thunder.3
     tag @s remove RW.Skill.AncientLight
     tag @s remove RW.Skill.Starfury
     tag @s remove RW.Skill.FreezingShred

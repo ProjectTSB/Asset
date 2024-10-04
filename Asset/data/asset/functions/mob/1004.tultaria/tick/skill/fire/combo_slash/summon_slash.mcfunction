@@ -6,7 +6,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
-    execute anchored eyes positioned ^ ^-1.8 ^ positioned ^ ^ ^2 run function api:object/summon
+    execute anchored eyes positioned ^ ^-1 ^ positioned ^ ^ ^2 run function api:object/summon
 
 # 演出
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1.2 0.7

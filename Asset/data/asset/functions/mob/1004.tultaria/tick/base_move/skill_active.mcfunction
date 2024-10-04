@@ -21,7 +21,7 @@
     # 水属性: 誘導弾を複数放つ
         execute if entity @s[tag=RW.Skill.AncientLight] run function asset:mob/1004.tultaria/tick/skill/5.ball_attack/1.tick
     # 雷属性: 位置を覚えづらい雷がたくさん降ってくる
-        execute if entity @s[tag=RW.Skill.Thunder] run function asset:mob/1004.tultaria/tick/skill/3.coordinate_attack/1.tick
+        execute if entity @s[tag=RW.Skill.Thunder] run function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/tick
     # 無属性: 移動
         execute if entity @s[tag=RW.Skill.SpreadShot] run function asset:mob/1004.tultaria/tick/skill/spread_shot/tick
     # 無属性: こちらに並びつつ射撃
@@ -65,4 +65,3 @@
         execute if entity @s[tag=RW.Skill.Mini.BackShot] run function asset:mob/1004.tultaria/tick/skill/mini/back_shot/
     # ワープ攻撃
         execute if entity @s[tag=RW.Skill.Mini.TeleportBeam] run function asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/
-
