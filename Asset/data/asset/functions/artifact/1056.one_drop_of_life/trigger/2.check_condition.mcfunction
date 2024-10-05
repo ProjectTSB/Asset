@@ -16,7 +16,8 @@
     #declare score_holder $CurrentHealth
 
 # 最大体力と現在体力の100倍を取得
-    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
+    function api:modifier/max_health/get
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 1
     function api:data_get/health
     execute store result score $CurrentHealth Temporary run data get storage api: Health 100
 
