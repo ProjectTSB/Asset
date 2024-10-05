@@ -10,7 +10,7 @@
     data modify entity @s Rotation set from storage asset:context this.Rotation
 
 # スピード関連の設定
-    data modify storage asset:context this set value {Speed:0,Range:128,MovePerStep:0.5}
+    data modify storage asset:context this set value {Speed:0,Range:128,MovePerStep:1}
 
 # 継承
     function asset:object/super.init
