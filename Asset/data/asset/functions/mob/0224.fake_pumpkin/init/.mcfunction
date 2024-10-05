@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0224.fake_pumpkin/_/init
 
-#> Private
-# @private
-    #declare score_holder $Random
-
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
 # ほしい範囲に剰余算する

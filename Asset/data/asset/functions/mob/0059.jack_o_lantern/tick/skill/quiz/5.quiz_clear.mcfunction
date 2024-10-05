@@ -20,7 +20,8 @@
     function api:damage/reset
 
 # 偽物を消し飛ばす
-    tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
+    #tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
+say a
 
 # クイズエンド
-    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end
+    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.end

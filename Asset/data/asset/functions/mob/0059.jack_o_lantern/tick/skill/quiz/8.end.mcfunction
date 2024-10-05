@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.end
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.end
 #
 # クイズの終了処理
 #
@@ -12,6 +12,9 @@
 
 # 頭を変える
     item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
+
+# 偽物を消し飛ばす
+    tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
 
 # 共通リセット処理
     function asset:mob/0059.jack_o_lantern/tick/skill/reset

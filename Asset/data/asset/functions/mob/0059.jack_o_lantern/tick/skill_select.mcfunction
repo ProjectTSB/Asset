@@ -15,7 +15,7 @@
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグ用
-    #scoreboard players set $Random Temporary 1
+    scoreboard players set $Random Temporary 0
 
 
 # スキルTagを付与

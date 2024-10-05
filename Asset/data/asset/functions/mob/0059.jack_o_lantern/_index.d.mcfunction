@@ -3,6 +3,7 @@
 
 #> tag
 # @within function asset:mob/0059.jack_o_lantern/**
+    #declare score_holder $Random
     #declare tag 1N.Quiz
     #declare tag 1N.ForwardShoot
     #declare tag 1N.SpreadShoot
