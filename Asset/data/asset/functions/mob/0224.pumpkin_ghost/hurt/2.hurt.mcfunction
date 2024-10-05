@@ -4,12 +4,13 @@
 #
 # @within function asset:mob/0224.pumpkin_ghost/hurt/1.trigger
 
-# 割合ダメージ
-    execute store result storage api: Argument.Damage float 0.020 run attribute @p[tag=Attacker,distance=..50] generic.max_health get 10
+# 攻撃者に割合ダメージ
+    execute as @p[tag=Attacker] run function api:modifier/max_health/get
+    execute store result storage api: Argument.Damage float 0.020 run data get storage api: Return.MaxHealth 10
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.FixedDamage set value 1b
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは呪われてしまった！","with":[{"selector":"@s"}]}]'
     function api:damage/modifier
     execute as @p[tag=Attacker,distance=..50] run function api:damage/
     function api:damage/reset
