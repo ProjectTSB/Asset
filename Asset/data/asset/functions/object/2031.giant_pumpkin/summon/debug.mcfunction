@@ -6,7 +6,7 @@
 # @private
 
 # データ指定
-    data modify storage api: Argument.FieldOverride set value {Speed:0,Range:120,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride set value {Speed:0,Range:125,MovePerStep:0.5}
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
 
 # 召喚
