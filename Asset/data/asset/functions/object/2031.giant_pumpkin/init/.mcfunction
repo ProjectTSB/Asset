@@ -4,6 +4,9 @@
 #
 # @within function asset:object/alias/2031/init
 
+# フィールドからRotationを取得
+    data modify entity @s Rotation set from storage asset:context this.Rotation
+
 # 継承
     function asset:object/super.init
 

@@ -7,6 +7,7 @@
 
 # データ指定
     data modify storage api: Argument.FieldOverride set value {Speed:0,Range:150,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
 
 # 召喚
     data modify storage api: Argument.ID set value 2031
