@@ -16,8 +16,8 @@
     execute if entity @s[scores={1N.Tick=20}] rotated ~ 0 positioned ^ ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
     execute if entity @s[scores={1N.Tick=30}] rotated ~ 0 positioned ^3 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
     execute if entity @s[scores={1N.Tick=30}] rotated ~ 0 positioned ^-3 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
-    execute if entity @s[scores={1N.Tick=35}] rotated ~ 0 positioned ^6 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
-    execute if entity @s[scores={1N.Tick=35}] rotated ~ 0 positioned ^-6 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
+    execute if entity @s[scores={1N.Tick=40}] rotated ~ 0 positioned ^6 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
+    execute if entity @s[scores={1N.Tick=40}] rotated ~ 0 positioned ^-6 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.summon
 
 
 
