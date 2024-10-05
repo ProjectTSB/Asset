@@ -19,7 +19,8 @@
         execute store result score $01.MaxHP Temporary run function api:mob/get_max_health
 
     # 現在体力を取得
-        execute store result score $01.CurrentHP Temporary run data get entity @s AbsorptionAmount 100
+        function api:mob/get_health
+        execute store result score $01.CurrentHP Temporary run data get storage api: Return.Health 100
 
     # 割合
         scoreboard players operation $01.PercentHP Temporary = $01.CurrentHP Temporary

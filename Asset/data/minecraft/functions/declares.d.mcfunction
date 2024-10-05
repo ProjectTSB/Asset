@@ -38,6 +38,7 @@
     #declare function api:damage/                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/.mcfunction#L1
     #declare function api:damage/modifier                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier.mcfunction#L1
     #declare function api:damage/modifier_continuation                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier_continuation.mcfunction#L1
+    #declare function api:damage/modifier_manual                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier_manual.mcfunction#L1
     #declare function api:damage/reset                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/reset.mcfunction#L1
     #declare function api:data_get/abilities                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/data_get/abilities.mcfunction#L1
     #declare function api:data_get/absorption_amount                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/data_get/absorption_amount.mcfunction#L1
@@ -107,7 +108,10 @@
     #declare function api:entity/mob/effect/give                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/give.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_id                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_id.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_level                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_level.mcfunction#L1
+    #declare function api:entity/player/get_health_per                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/player/get_health_per.mcfunction#L1
+    #declare function api:global_vars/game_progress                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/global_vars/game_progress.mcfunction#L1
     #declare function api:global_vars/get_difficulty                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/global_vars/get_difficulty.mcfunction#L1
+    #declare function api:global_vars/islands_purified                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/global_vars/islands_purified.mcfunction#L1
     #declare function api:heal/                                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/heal/.mcfunction#L1
     #declare function api:heal/modifier                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/heal/modifier.mcfunction#L1
     #declare function api:heal/reset                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/heal/reset.mcfunction#L1
@@ -127,6 +131,7 @@
     #declare function api:modifier/attack/base/add                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/base/add.mcfunction#L1
     #declare function api:modifier/attack/base/get                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/base/get.mcfunction#L1
     #declare function api:modifier/attack/base/remove                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/base/remove.mcfunction#L1
+    #declare function api:modifier/attack/base/update_bonus                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/base/update_bonus.mcfunction#L1
     #declare function api:modifier/attack/fire/add                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/fire/add.mcfunction#L1
     #declare function api:modifier/attack/fire/get                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/fire/get.mcfunction#L1
     #declare function api:modifier/attack/fire/remove                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/attack/fire/remove.mcfunction#L1
@@ -145,6 +150,7 @@
     #declare function api:modifier/defense/base/add                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/base/add.mcfunction#L1
     #declare function api:modifier/defense/base/get                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/base/get.mcfunction#L1
     #declare function api:modifier/defense/base/remove                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/base/remove.mcfunction#L1
+    #declare function api:modifier/defense/base/update_bonus                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/base/update_bonus.mcfunction#L1
     #declare function api:modifier/defense/fire/add                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/fire/add.mcfunction#L1
     #declare function api:modifier/defense/fire/get                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/fire/get.mcfunction#L1
     #declare function api:modifier/defense/fire/remove                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/defense/fire/remove.mcfunction#L1
@@ -163,6 +169,14 @@
     #declare function api:modifier/heal/add                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/heal/add.mcfunction#L1
     #declare function api:modifier/heal/get                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/heal/get.mcfunction#L1
     #declare function api:modifier/heal/remove                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/heal/remove.mcfunction#L1
+    #declare function api:modifier/max_health/add                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_health/add.mcfunction#L1
+    #declare function api:modifier/max_health/get                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_health/get.mcfunction#L1
+    #declare function api:modifier/max_health/remove                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_health/remove.mcfunction#L1
+    #declare function api:modifier/max_health/update_bonus                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_health/update_bonus.mcfunction#L1
+    #declare function api:modifier/max_mp/add                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_mp/add.mcfunction#L1
+    #declare function api:modifier/max_mp/get                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_mp/get.mcfunction#L1
+    #declare function api:modifier/max_mp/remove                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_mp/remove.mcfunction#L1
+    #declare function api:modifier/max_mp/update_bonus                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/max_mp/update_bonus.mcfunction#L1
     #declare function api:modifier/mp_regen/add                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/mp_regen/add.mcfunction#L1
     #declare function api:modifier/mp_regen/get                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/mp_regen/get.mcfunction#L1
     #declare function api:modifier/mp_regen/remove                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/modifier/mp_regen/remove.mcfunction#L1
@@ -174,11 +188,16 @@
     #declare function api:mp/get_current                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/mp/get_current.mcfunction#L1
     #declare function api:mp/get_max                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/mp/get_max.mcfunction#L1
     #declare function api:mp/set                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/mp/set.mcfunction#L1
+    #declare function api:mp/update_max                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/mp/update_max.mcfunction#L1
+    #declare function api:object/summon                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/object/summon.mcfunction#L1
     #declare function api:player_vector/get                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/player_vector/get.mcfunction#L1
     #declare function api:rom/please                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/rom/please.mcfunction#L1
     #declare function api:spawner/subtract_hp                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/spawner/subtract_hp.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_id                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_id.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_nearest                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
+    #declare function asset:object/example.1/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.1/summon/debug.mcfunction#L1
+    #declare function asset:object/example.2/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.2/summon/debug.mcfunction#L1
+    #declare function asset:object/example.3/summon/debug                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/example.3/summon/debug.mcfunction#L1
     #declare function debug:stopwatch.start                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/stopwatch.start.mcfunction#L1
     #declare function debug:stopwatch.stop                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/stopwatch.stop.mcfunction#L1
     #declare function debug:tps/watch                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/tps/watch.mcfunction#L1
@@ -228,7 +247,6 @@
     #declare function lib:random/with_biased/m                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/random/with_biased/m.mcfunction#L1
     #declare function lib:random/with_biased/manual.m                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/random/with_biased/manual.m.mcfunction#L1
     #declare function lib:reflection_bullet/                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/reflection_bullet/.mcfunction#L1
-    #declare function lib:rotatable_dxyz/core/each_minus                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/rotatable_dxyz/core/each_minus.mcfunction#L1
     #declare function lib:rotatable_dxyz/m                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L1
     #declare function lib:score_to_health_wrapper/set                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/set.mcfunction#L1
     #declare function lib:score_to_move/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_move/.mcfunction#L1
@@ -312,14 +330,15 @@
     #declare loot_table minecraft:blocks/stone                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/stone.json#L1
     #declare loot_table minecraft:empty                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/empty.json#L1
     #declare loot_table player_manager:lost_item/give_all/name_to_textcomponent       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/loot_tables/lost_item/give_all/name_to_textcomponent.json#L1
-    #declare objective Const                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L118
+    #declare objective Const                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L120
     #declare objective Global                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L105
-    #declare objective Lib                                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L212
-    #declare objective MobHealth                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L160
-    #declare objective MobID                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L159
-    #declare objective MobUUID                                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L124
+    #declare objective Lib                                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L223
+    #declare objective MobHealth                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L162
+    #declare objective MobID                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L161
+    #declare objective MobUUID                                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L126
+    #declare objective ObjectID                                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L176
     #declare objective Temporary                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L101
-    #declare objective UserID                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L123
+    #declare objective UserID                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L125
     #declare predicate api:global_vars/difficulty/easy                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/predicates/global_vars/difficulty/easy.json#L1
     #declare predicate api:global_vars/difficulty/hard                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/predicates/global_vars/difficulty/hard.json#L1
     #declare predicate api:global_vars/difficulty/max/hard                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/predicates/global_vars/difficulty/max/hard.json#L1
@@ -346,6 +365,7 @@
     #declare predicate lib:is_in_lava/include_flowing                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_lava/include_flowing.json#L1
     #declare predicate lib:is_in_water/                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_water/.json#L1
     #declare predicate lib:is_in_water/include_flowing                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_water/include_flowing.json#L1
+    #declare predicate lib:is_night                                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_night.json#L1
     #declare predicate lib:is_passenger                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_passenger.json#L1
     #declare predicate lib:is_placeable_vehicle                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_placeable_vehicle.json#L1
     #declare predicate lib:is_player_moving                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_player_moving.json#L1
@@ -539,17 +559,19 @@
     #declare recipe minecraft:enchanting_table                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/recipes/enchanting_table.json#L1
     #declare score_holder $LoadTime                                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L7
     #declare score_holder $PlayerCount                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L6
+    #declare score_holder $PrevAbsorption                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/core/absorb_damage.mcfunction#L10
     #declare storage api:                                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/_index.d.mcfunction#L6
     #declare storage lib:                                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L57
     #declare tag AttackedEntity                                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacked_entity/_index.d.mcfunction#L11
     #declare tag AttackingEntity                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/entity_finder/attacking_entity/_index.d.mcfunction#L10
     #declare tag BetaEndingPortal                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/_index.d.mcfunction#L7
-    #declare tag Death                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L22
+    #declare tag Death                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L32
     #declare tag DevPrivilege                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L56
     #declare tag DXYZ                                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L22
     #declare tag Enemy                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L7
     #declare tag Enemy.Boss                                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L8
+    #declare tag FallDamageImmunity                                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/functions/fall_damage/_index.d.mcfunction#L14
     #declare tag Friend                                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L6
     #declare tag Immovable                                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L13
     #declare tag Npc                                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L10
@@ -617,18 +639,18 @@
     #declare tag/function asset:artifact/tick                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/tick.json#L1
     #declare tag/function asset:artifact/use_item                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/use_item.json#L1
     #declare tag/function asset:artifact/using_item                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/artifact/using_item.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/end.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/end.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/end.json#L1
     #declare tag/function asset:effect/end
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/given.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/given.json#L1
     #declare tag/function asset:effect/given
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/load.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/load.json#L1
     #declare tag/function asset:effect/load
     #declare tag/function asset:effect/re-given                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/re-given.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/register.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/register.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/register.json#L1
     #declare tag/function asset:effect/register
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/effect/remove.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/effect/remove.json#L1
@@ -640,8 +662,8 @@
     #declare tag/function asset:island/register                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/island/register.json#L1
     #declare tag/function asset:mob/attack                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/attack.json#L1
     #declare tag/function asset:mob/death                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/death.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/hurt.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/hurt.json#L1
     #declare tag/function asset:mob/hurt
     #declare tag/function asset:mob/initialize                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/initialize.json#L1
     #declare tag/function asset:mob/load                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/load.json#L1
@@ -649,12 +671,13 @@
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/register.json#L1
     #declare tag/function asset:mob/register
     #declare tag/function asset:mob/remove                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/remove.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/summon.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/summon.json#L1
     #declare tag/function asset:mob/summon
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/tick.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/mob/tick.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/mob/tick.json#L1
     #declare tag/function asset:mob/tick
+    #declare tag/function asset:object/load                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/object/load.json#L1
     #declare tag/function asset:rejoin                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/rejoin.json#L1
     #declare tag/function asset:spawner/register/a                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/a.json#L1
     #declare tag/function asset:spawner/register/b                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/b.json#L1
@@ -664,9 +687,9 @@
     #declare tag/function asset:spawner/register/f                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/spawner/register/f.json#L1
     #declare tag/function asset:teleporter/register                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/teleporter/register.json#L1
     #declare tag/function asset:trader/register                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/Asset/data/asset/tags/functions/trader/register.json#L1
-    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/load.json#L1
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/OhMyDat/data/minecraft/tags/functions/load.json#L1
+    # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
     #declare tag/function minecraft:load
     #declare tag/function minecraft:tick                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
     #declare tag/item lib:all                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/all.json#L1
@@ -703,20 +726,6 @@
     #declare team NoCollision                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L93
 
 #> declare
-# @within function asset:artifact/*/give/2.give
-#declare function asset:artifact/common/give from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
-
-#> declare
-# @within function asset:teleporter/*/register
-#declare function asset:teleporter/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
-
-#> declare
-# @within
-#   function api:mob/core/summon
-#   function asset:mob/*/summon/2.summon
-#declare function asset:mob/common/summon from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
-
-#> declare
 # @within function asset:artifact/*/*/2.check_condition
     #declare function asset:artifact/common/check_condition/auto     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/auto.mcfunction#L1
     #declare function asset:artifact/common/check_condition/chest    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/chest.mcfunction#L1
@@ -728,8 +737,8 @@
     #declare function asset:artifact/common/check_condition/offhand  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/check_condition/offhand.mcfunction#L1
 
 #> declare
-# @within function asset:island/*/register/register
-#declare function asset:island/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/island/common/register.mcfunction#L1
+# @within function asset:artifact/*/give/2.give
+#declare function asset:artifact/common/give from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/give.mcfunction#L1
 
 #> declare
 # @within function asset:artifact/*/*/3.main
@@ -743,56 +752,87 @@
     #declare function asset:artifact/common/use/offhand  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/artifact/common/use/offhand.mcfunction#L1
 
 #> declare
-# @within function asset:effect/*/tick/
-#declare function asset:effect/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/attack/
-#declare function asset:mob/super.attack from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.attack.mcfunction#L1
-
-#> declare
-# @within function asset:trader/*/register/register
-#declare function asset:trader/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:spawner/*/register
-#declare function asset:spawner/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/tick/
-#declare function asset:mob/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
-
-#> declare
-# @within function asset:mob/*/death/
-#declare function asset:mob/super.death from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.death.mcfunction#L1
-
-#> declare
-# @within function asset:effect/*/re-given/
-#declare function asset:effect/super.re-given from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
+# @within function asset:teleporter/*/register
+#declare function asset:teleporter/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/teleporter/common/register.mcfunction#L1
 
 #> declare
 # @within function asset:mob/*/register
 #declare function asset:mob/extends from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/extends.mcfunction#L1
 
 #> declare
-# @within function asset:effect/*/register
-#declare function asset:effect/extends from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+# @within
+#   function api:mob/core/summon
+#   function asset:mob/*/summon/2.summon
+#declare function asset:mob/common/summon from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/common/summon.mcfunction#L1
 
 #> declare
-# @within function asset:mob/*/hurt/
-#declare function asset:mob/super.hurt from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
+# @within function asset:effect/*/re-given/
+#declare function asset:effect/super.re-given from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
 
 #> declare
-# @within function asset:effect/*/end/
-#declare function asset:effect/super.end from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.end.mcfunction#L1
+# @within function asset:object/*/tick/
+#declare function asset:object/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.tick.mcfunction#L1
 
 #> declare
 # @within function asset:effect/*/given/
 #declare function asset:effect/super.given from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.given.mcfunction#L1
 
 #> declare
+# @within function asset:effect/*/end/
+#declare function asset:effect/super.end from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.end.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/register
+#declare function asset:effect/extends from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/extends.mcfunction#L1
+
+#> declare
+# @within function asset:effect/*/tick/
+#declare function asset:effect/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.tick.mcfunction#L1
+
+#> declare
+# @within function asset:trader/*/register/register
+#declare function asset:trader/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/trader/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:object/*/**
+    #declare function asset:object/call.m       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/call.m.mcfunction#L1
+    #declare function asset:object/super.method from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.method.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/attack/
+#declare function asset:mob/super.attack from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.attack.mcfunction#L1
+
+#> declare
+# @within function asset:island/*/register/register
+#declare function asset:island/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/island/common/register.mcfunction#L1
+
+#> declare
+# @within function asset:object/*/register
+#declare function asset:object/extends from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/extends.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/tick/
+#declare function asset:mob/super.tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.tick.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/hurt/
+#declare function asset:mob/super.hurt from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.hurt.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/death/
+#declare function asset:mob/super.death from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.death.mcfunction#L1
+
+#> declare
+# @within function asset:spawner/*/register
+#declare function asset:spawner/common/register from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/spawner/common/register.mcfunction#L1
+
+#> declare
 # @within function asset:effect/*/remove/
 #declare function asset:effect/super.remove from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.remove.mcfunction#L1
+
+#> declare
+# @within function asset:object/*/init/
+#declare function asset:object/super.init from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/object/super.init.mcfunction#L1
 
 #> declare
 # @within
@@ -802,38 +842,8 @@
 #   asset:artifact/*/trigger/2.check_condition
 #   asset:artifact/*/trigger/3.main
 #   asset:artifact/common/**
-#declare storage asset:artifact from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
-
-#> declare
-# @within
-#   asset:teleporter/*/*
-#   asset:teleporter/common/register
-#   asset_manager:teleporter/**
-#   function core:migration/v0.1.4/
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/teleporter/_index.d.mcfunction#L9
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/migration/v0.1.4/.mcfunction#L12
-#declare storage asset:teleporter
-
-#> declare
-# @within
-#   function asset_manager:**
-#   function asset:*/*/**
-#   function asset:*/extends
-#   function asset:*/super.*
-#   function api:**
-#declare storage asset:context from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L11
-
-#> declare
-# @within
-#   api:mob/core/**
-#   asset:mob/*/register
-#   asset:mob/*/*/
-#   asset:mob/extends
-#   asset:mob/super.*
-#   asset_manager:mob/**
-#   asset:mob/*/summon/2.summon
-#   asset:mob/common/**
-#declare storage asset:mob from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
+#   player_manager:actionbar/
+#declare storage asset:artifact from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L13
 
 #> declare
 # @within
@@ -851,10 +861,20 @@
 
 #> declare
 # @within
-#   asset_manager:trader/**
-#   asset:trader/*/register/*
-#   asset:trader/common/register
-#declare storage asset:trader from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
+#   function asset_manager:**
+#   function asset:*/*/**
+#   function asset:*/extends
+#   function asset:*/super.*
+#   function api:**
+#   function asset:object/call.m
+#declare storage asset:context from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/_index.d.mcfunction#L12
+
+#> declare
+# @within
+#   asset_manager:object/**
+#   asset:object/**
+#   api:object/**
+#declare storage asset:object from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L9
 
 #> declare
 # @within
@@ -865,6 +885,41 @@
 #   function asset:effect/*/
 #   function asset_manager:effect/**
 #declare storage asset:effect from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
+
+#> declare
+# @within
+#   asset:spawner/*/*
+#   asset_manager:spawner/**
+#declare storage asset:spawner from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
+
+#> declare
+# @within
+#   asset_manager:trader/**
+#   asset:trader/*/register/*
+#   asset:trader/common/register
+#declare storage asset:trader from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
+
+#> declare
+# @within
+#   api:mob/core/**
+#   asset:mob/*/register
+#   asset:mob/*/*/
+#   asset:mob/extends
+#   asset:mob/super.*
+#   asset_manager:mob/**
+#   asset:mob/*/summon/2.summon
+#   asset:mob/common/**
+#declare storage asset:mob from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L14
+
+#> declare
+# @within
+#   asset:teleporter/*/*
+#   asset:teleporter/common/register
+#   asset_manager:teleporter/**
+#   function core:migration/v0.1.4/
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/teleporter/_index.d.mcfunction#L9
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/migration/v0.1.4/.mcfunction#L12
+#declare storage asset:teleporter
 
 #> declare
 # @within
@@ -879,30 +934,30 @@
 
 #> declare
 # @within
-#   asset:spawner/*/*
-#   asset_manager:spawner/**
-#declare storage asset:spawner from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+#   asset_manager:mob/triggers/
+#   asset:mob/*/hurt/**
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
+#declare tag Attacker
 
 #> declare
 # @within
-#   function asset_manager:island/dispel/boss/*
-#   asset_manager:mob/triggers/
-#   asset_manager:mob/triggers/death/
-#   asset:mob/**
-#   function asset_manager:mob/common_tag/anti_void_action/**
-#   core:tick/player/
-#   player_manager:vanilla_attack
 #   asset_manager:artifact/triggers/**
 #   asset:artifact/**
-#   asset_manager:teleporter/tick/**
-#   core:handler/attack
-#   asset_manager:spawner/tick/*
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L87
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
-#declare tag this
+#   asset_manager:mob/triggers/
+#   asset:mob/*/attack/**
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L57
+#declare tag Victim
+
+#> declare
+# @within
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+    #declare tag DisEquip from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L60
+    #declare tag Equip    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L59
 
 #> declare
 # @within
@@ -928,31 +983,35 @@
 
 #> declare
 # @within
+#   asset_manager:mob/triggers/
+#   asset_manager:mob/triggers/death/
+#   asset:mob/**
+#   function asset_manager:mob/common_tag/anti_void_action/**
+#   asset_manager:spawner/tick/*
+#   function asset_manager:island/dispel/boss/*
+#   function asset_manager:object/triggers/tick
+#   function assst:object/**
+#   core:tick/player/
+#   player_manager:vanilla_attack
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
+#   asset_manager:teleporter/tick/**
+#   core:handler/attack
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L43
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L87
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L28
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
+#declare tag this
+
+#> declare
+# @within
 #   asset_manager:mob/triggers/death/*
 #   api:damage/core/health_subtract/non-player
 #   player_manager:vanilla_attack
 #   asset:mob/*/death/**
 #declare tag Killer from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L51
-
-#> declare
-# @within
-#   asset_manager:mob/triggers/
-#   asset:mob/*/attack/**
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L57
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L58
-#declare tag Victim
-
-#> declare
-# @within
-#   asset_manager:mob/triggers/
-#   asset:mob/*/hurt/**
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
-#declare tag Attacker
 
 #> declare
 # @within
@@ -980,10 +1039,14 @@
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
-    #declare tag DisEquip from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L60
-    #declare tag Equip    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L59
+#   asset_manager:object/**
+#   api:object/core/summon
+#   asset:object/**
+#declare tag ObjectInit from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L16
+
+#> declare
+# @within function asset:object/**
+#declare objective General.Object.Tick from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L181
 
 #> declare
 # @within asset:artifact/**

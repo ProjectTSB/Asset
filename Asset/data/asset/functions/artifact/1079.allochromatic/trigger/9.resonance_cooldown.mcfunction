@@ -19,3 +19,6 @@
 
 # 成功時にその時のtickを保存
     execute if score $TZ.Cooldown Temporary matches 20.. store result score @s TZ.LatestResonanceTick run time query gametime
+
+# リセット
+    scoreboard players reset $TZ.Cooldown Temporary
