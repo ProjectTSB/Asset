@@ -11,7 +11,7 @@
 
 # 徐々に加速する縦回転をする
     data modify entity @s start_interpolation set value 0
-    execute if entity @s[scores={General.Object.Tick=0}] run function asset:object/2031.giant_pumpkin/tick/set_spin
+    #execute if entity @s[scores={General.Object.Tick=0}] run function asset:object/2031.giant_pumpkin/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=8}] run function asset:object/2031.giant_pumpkin/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=16}] run function asset:object/2031.giant_pumpkin/tick/set_spin
     execute if entity @s[scores={General.Object.Tick=16}] run data modify entity @s interpolation_duration set value 7
@@ -30,8 +30,8 @@
     execute if entity @s[scores={General.Object.Tick=62}] run function asset:object/2031.giant_pumpkin/tick/set_spin
 
 # 演出
-    execute if entity @s[scores={General.Object.Tick=0}] run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 0.5 1
-    execute if entity @s[scores={General.Object.Tick=0}] run particle cloud ~ ~0.2 ~ 0.1 0 0.1 0.2 5 normal @a
+    #execute if entity @s[scores={General.Object.Tick=0}] run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 0.5 1
+    #execute if entity @s[scores={General.Object.Tick=0}] run particle cloud ~ ~0.2 ~ 0.1 0 0.1 0.2 5 normal @a
     execute if entity @s[scores={General.Object.Tick=8}] run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 0.5 1.1
     execute if entity @s[scores={General.Object.Tick=8}] run particle cloud ~ ~0.2 ~ 0.1 0 0.1 0.2 6 normal @a
     execute if entity @s[scores={General.Object.Tick=16}] run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 0.5 1.2
