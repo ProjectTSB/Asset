@@ -26,6 +26,10 @@
     execute if entity @s[scores={General.Object.Tick=70}] run data modify entity @s interpolation_duration set value 3
     execute if entity @s[scores={General.Object.Tick=73}] run function asset:object/2031.giant_pumpkin/tick/set_spin
 
+# スコアが一定値(73)まで行ったなら高速回転Tagを付与
+    execute if entity @s[scores={General.Object.Tick=73}] run tag @s add 2031.HighSpeedSpinning
+    execute if entity @s[scores={General.Object.Tick=73}] run data modify storage asset:context this.Speed set value 1
+
 # 演出
     #execute if entity @s[scores={General.Object.Tick=0}] run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 0.5 1
     #execute if entity @s[scores={General.Object.Tick=0}] run particle cloud ~ ~0.2 ~ 0.1 0 0.1 0.2 5 normal @a
