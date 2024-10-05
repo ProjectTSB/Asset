@@ -9,7 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
     # 演出
-        stopsound @s * entity.item.break
         tellraw @s [{"text": "<"},{"selector":"@s"},{"text": "> き の こ 万 歳 ！"}]
     # 処理
         execute store result storage lib: Argument.Heal double 0.01 run attribute @s generic.max_health get 50
