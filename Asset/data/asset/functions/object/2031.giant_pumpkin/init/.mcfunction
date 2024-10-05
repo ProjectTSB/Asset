@@ -4,7 +4,7 @@
 #
 # @within function asset:object/alias/2031/init
 
-# フィールドからRotationを取得]
+# フィールドからRotationを取得
 # 地面に水平にしか転がらないようにする
     data modify storage asset:context this.Rotation[1] set value 0.0f
     data modify entity @s Rotation set from storage asset:context this.Rotation
