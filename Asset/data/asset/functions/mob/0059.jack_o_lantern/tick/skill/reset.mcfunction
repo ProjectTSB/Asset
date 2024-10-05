@@ -6,9 +6,11 @@
 
 # NoGravity解除
     data modify entity @s NoGravity set value 0b
+    data modify entity @s NoAI set value 0b
 
 # タグ消す
     tag @s remove 1N.Quiz
+    tag @s remove 1N.GiantPumpkin1
 
 # スコアを変える
     scoreboard players set @s 1N.Tick -50

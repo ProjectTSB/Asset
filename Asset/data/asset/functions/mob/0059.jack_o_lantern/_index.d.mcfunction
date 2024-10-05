@@ -8,6 +8,6 @@
     #declare tag 1N.SpreadShoot
     #declare tag 1N.Bomb
     #declare tag 1N.FakeBomb
-    #declare tag 1N.GiantPumpkin
+    #declare tag 1N.GiantPumpkin1
     #declare tag 1N.Hurt
     #declare tag 1N.SpawnMarker
