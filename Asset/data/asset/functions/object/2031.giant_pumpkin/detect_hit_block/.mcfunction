@@ -5,8 +5,7 @@
 # @within asset:object/alias/2031/detect_hit_block
 
 # 判定
-    execute unless block ^ ^ ^1 #lib:no_collision run data modify storage asset:context IsHitBlock set value true
-    execute unless block ^ ^ ^1 #lib:no_collision run data modify storage asset:context IsHitBlock set value true
+    execute if entity @s[scores={General.Object.Tick=64..}] run function asset:object/2031.giant_pumpkin/detect_hit_block/check
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
