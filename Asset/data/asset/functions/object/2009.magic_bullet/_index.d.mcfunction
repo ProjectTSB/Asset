@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:object/2009.magic_bullet/**
-    #declare
+    #declare tag 2009.AnnounceLine
+    #declare tag 2009.Target

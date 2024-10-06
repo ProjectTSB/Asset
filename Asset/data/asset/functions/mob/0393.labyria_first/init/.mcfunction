@@ -10,7 +10,7 @@
 
 # スコア初期化
     scoreboard players set @s AZ.AnimationTick 0
-    scoreboard players set @s AZ.AnimationNum 110
+    scoreboard players set @s AZ.AnimationNum 70
     scoreboard players set @s AZ.FalterCount 0
 
 # animated javaモデル召喚
