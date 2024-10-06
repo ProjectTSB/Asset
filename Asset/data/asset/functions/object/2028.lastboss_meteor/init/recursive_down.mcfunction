@@ -3,7 +3,8 @@
 # マーカーを床に貼り付ける処理
 #
 # @within function
-#   asset:object/2028.lastboss_meteor/init/
+#   asset:object/2028.lastboss_meteor/init/aiming_summon/
+#   asset:object/2028.lastboss_meteor/init/spread_summon/spread
 #   asset:object/2028.lastboss_meteor/init/recursive_down
 
 # 下にずらして再帰
