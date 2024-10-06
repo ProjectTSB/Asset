@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.quiz_clear
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.quiz_clear
 #
 # クイズに正解されたときの処理
 #
@@ -19,9 +19,5 @@
     function api:damage/
     function api:damage/reset
 
-# 偽物を消し飛ばす
-    #tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
-say a
-
 # クイズエンド
-    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.end
+    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/9.end

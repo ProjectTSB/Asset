@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glowing
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
 #
 # 発光中の処理
 #

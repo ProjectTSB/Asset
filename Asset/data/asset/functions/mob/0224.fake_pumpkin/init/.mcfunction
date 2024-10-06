@@ -20,4 +20,4 @@
     scoreboard players reset $Random Temporary
 
 # 最寄りのプレイヤーを見る
-    tp @s ~ ~ ~ facing entity @p
+    execute facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~

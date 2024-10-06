@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_rotate
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.random_rotate
 #
 #
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_move
 
 # ランダムな方向を向く
 

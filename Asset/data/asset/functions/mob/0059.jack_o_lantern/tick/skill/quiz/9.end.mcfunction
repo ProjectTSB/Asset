@@ -1,10 +1,10 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.end
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/9.end
 #
 # クイズの終了処理
 #
 # @within function
 #   asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
-#   asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.quiz_clear
+#   asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.quiz_clear
 
 # 発光状態だったなら演出
     execute if entity @s[scores={1N.Tick=260..}] run particle large_smoke ~ ~1.8 ~ 0 0 0 0.1 50 normal @a
@@ -14,7 +14,8 @@
     item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
 
 # 偽物を消し飛ばす
-    tp @e[type=husk,scores={MobID=224},distance=..50] ~ -100 ~
+    tp @e[type=husk,scores={MobID=224},distance=..100] ~ -100 ~
+    kill @e[type=husk,scores={MobID=224}]
 
 # 共通リセット処理
     function asset:mob/0059.jack_o_lantern/tick/skill/reset
