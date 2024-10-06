@@ -24,7 +24,7 @@
 
 # TODO：1.20.5以降になったらattributeにする
 # 移動速度+20%
-    attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00cb00000000 "203.Speed" 0.3 multiply
+    attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00cb00000000 "203.Speed" 0.2 multiply
 
 # ジャンプ力
     effect give @s jump_boost 30 0 true
