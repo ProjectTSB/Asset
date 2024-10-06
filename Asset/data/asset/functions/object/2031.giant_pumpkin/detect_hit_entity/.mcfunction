@@ -4,8 +4,8 @@
 #
 # @within asset:object/alias/2031/detect_hit_entity
 
-# 判定
-    execute if entity @s[tag=2031.HighSpeedSpinning] positioned ~-0.5 ~0.0 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run data modify storage asset:context IsHitEntity set value true
+# 高速回転状態でのみ判定を行う
+    execute if entity @s[tag=2031.HighSpeedSpinning] run function asset:object/2031.giant_pumpkin/detect_hit_entity/high_speed_spinning
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
