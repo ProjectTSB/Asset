@@ -2,6 +2,9 @@
     "values": [
         "asset:effect/0124.darkness/_/remove",
         "asset:effect/0206.spirit_state/_/remove",
+        "asset:effect/0207.key_of_the_sun/_/remove",
+        "asset:effect/0208.key_of_shower_rain/_/remove",
+        "asset:effect/0209.key_of_thunderbolt/_/remove",
         "asset:effect/0212.lunatic_moon/_/remove",
         "asset:effect/0213.reflecting_sky/_/remove",
         "asset:effect/0214.quick_charge/_/remove",
@@ -17,6 +20,7 @@
         "asset:effect/0249.oracle_physical_defense/_/remove",
         "asset:effect/0250.oracle_magic_attack/_/remove",
         "asset:effect/0251.oracle_magic_defense/_/remove",
+        "asset:effect/0252.key_of_another_world/_/remove",
         "asset:effect/0253.purifying_indigo/_/remove",
         "asset:effect/0257.sprout/_/remove",
         "asset:effect/0259.virtual_image/_/remove",

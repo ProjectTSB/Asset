@@ -11,7 +11,7 @@
 # 他にアイテム等確認する場合はここに書く
 
 # 天候が(雨or雷雨でなければ) = 晴れならCanUsedを削除
-    execute if predicate lib:weather/is_sunny run tag @s remove CanUsed
+    execute unless predicate lib:weather/is_raining unless predicate lib:weather/is_thundering run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1088.purifying_hydrangea/trigger/3.main
