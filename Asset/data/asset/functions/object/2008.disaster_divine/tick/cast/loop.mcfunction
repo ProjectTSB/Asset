@@ -6,7 +6,7 @@
 #   asset:object/2008.disaster_divine/tick/cast/
 #   asset:object/2008.disaster_divine/tick/cast/loop
 
-# 残念ながら羊毛は破壊します
+# 残念ながらブロックは破壊します
     execute unless block ^ ^ ^0.5 #lib:air unless block ^ ^ ^0.5 #lib:unbreakable run setblock ^ ^ ^0.5 air destroy
 
 # 着弾検知
