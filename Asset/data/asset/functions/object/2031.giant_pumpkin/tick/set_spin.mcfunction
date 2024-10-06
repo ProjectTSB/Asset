@@ -9,6 +9,9 @@
 # スコアを加算
     scoreboard players add @s 2031.SpinCount 1
 
+# start_interpolationを設定
+    data modify entity @s start_interpolation set value 0
+
 # スコアに応じてtansformationをセット
     execute if entity @s[scores={2031.SpinCount=1}] run data modify entity @s transformation set value [3.0f,0.0f,0.0f,0.0f,0.0f,-0.0f,-3.0f,0.0f,0.0f,3.0f,-0.0f,0.0f,0.0f,0.0f,0.0f,1.0f]
     execute if entity @s[scores={2031.SpinCount=2}] run data modify entity @s transformation set value [3.0f,0.0f,0.0f,0.0f,0.0f,-3.0f,0.0f,0.0f,0.0f,-0.0f,-3.0f,0.0f,0.0f,0.0f,0.0f,1.0f]

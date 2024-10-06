@@ -26,7 +26,6 @@
     scoreboard players operation $Interval Temporary %= $3 Const
 
 # 縦回転する
-    execute if score $Interval Temporary matches 0 run data modify entity @s start_interpolation set value 0
     execute if score $Interval Temporary matches 0 run function asset:object/2031.giant_pumpkin/tick/set_spin
 
 # リセット
