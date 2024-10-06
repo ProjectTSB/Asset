@@ -10,8 +10,9 @@
     effect clear @s weakness
     effect give @s speed 5 6 true
 
-# NoGravityの解除
+# NoGravityとNoAIの解除
     data modify entity @s NoGravity set value 0b
+    data modify entity @s NoAI set value 0b
 
 # 演出
     particle witch ~ ~1 ~ 0 0 0 0.7 100

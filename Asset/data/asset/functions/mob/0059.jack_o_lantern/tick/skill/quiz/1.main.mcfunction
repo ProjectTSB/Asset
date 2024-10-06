@@ -19,25 +19,27 @@
     execute if entity @s[scores={1N.Tick=20}] run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
 
 # 走り回る
-    execute if entity @s[scores={1N.Tick=20..160}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_move
+    execute if entity @s[scores={1N.Tick=20..120}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_move
 
 # ハード以上の場合、時間を2.5秒飛ばす
     #execute if entity @s[scores={1N.Tick=20}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s 1N.Tick 50
 
+    execute if entity @s[scores={1N.Tick=120}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
+
 # 走り回った後は最寄りのプレイヤーの方を向く
-    execute if entity @s[scores={1N.Tick=160..300}] run tp @s ~ ~ ~ facing entity @p feet
+    execute if entity @s[scores={1N.Tick=120..260}] run tp @s ~ ~ ~ facing entity @p feet
 
 # 分身中、確率で笑い声を出す
-    execute if entity @s[scores={1N.Tick=20..300}] if predicate lib:random_pass_per/3 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
+    execute if entity @s[scores={1N.Tick=20..260}] if predicate lib:random_pass_per/3 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
 # hurt時につく被ダメタグがあった場合、クイズに正解して、このスキルを終える
-    execute if entity @s[scores={1N.Tick=20..300}] if entity @s[tag=1N.Hurt] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.quiz_clear
+    execute if entity @s[scores={1N.Tick=20..260}] if entity @s[tag=1N.Hurt] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.quiz_clear
 
 # クイズに失敗した場合、発光する
-    execute if entity @s[scores={1N.Tick=300}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glow
+    execute if entity @s[scores={1N.Tick=260}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/7.glow
 
 # 発光状態中の処理
-    execute if entity @s[scores={1N.Tick=300..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
+    execute if entity @s[scores={1N.Tick=260..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
 
 # 終了処理
-    execute if entity @s[scores={1N.Tick=380..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.end
+    execute if entity @s[scores={1N.Tick=340..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.end
