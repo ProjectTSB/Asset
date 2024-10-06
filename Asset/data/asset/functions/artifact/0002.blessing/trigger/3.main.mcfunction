@@ -11,7 +11,7 @@
 # 固定加算量  : HP  +2, MP  +4
 # 50島攻略時  : HP+100, MP+200
 # 追加選択    : HP  +1, MP  +2, Atk +1%, Def +1%
-# 50島極振り時: HP +50, MP+100, Atk+40%, Def+40%
+# 50島極振り時: HP +50, MP+100, Atk+50%, Def+50%
 
 # 固定加算
     scoreboard players add $BonusHealth Global 2
