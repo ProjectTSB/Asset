@@ -40,4 +40,4 @@
     execute if entity @s[scores={1N.Tick=300..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
 
 # 終了処理
-    execute if entity @s[scores={1N.Tick=380..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/9.end
+    execute if entity @s[scores={1N.Tick=380..}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.end

@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/9.end
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.end
 #
 # クイズの終了処理
 #
@@ -14,8 +14,7 @@
     item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
 
 # 偽物を消し飛ばす
-    tp @e[type=husk,scores={MobID=224},distance=..100] ~ -100 ~
-    kill @e[type=husk,scores={MobID=224}]
+    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/11.kill_all_fake
 
 # 共通リセット処理
     function asset:mob/0059.jack_o_lantern/tick/skill/reset

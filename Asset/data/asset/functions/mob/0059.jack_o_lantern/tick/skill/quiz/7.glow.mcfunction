@@ -21,4 +21,4 @@
     playsound minecraft:entity.witch.celebrate hostile @a ~ ~ ~ 1 2
 
 # ノーマル以下ならキル
-    execute if predicate api:global_vars/difficulty/max/normal run tp @e[type=husk,scores={MobID=224},distance=..30,limit=8] ~ -100 ~
+    #execute if predicate api:global_vars/difficulty/max/normal run tp @e[type=husk,scores={MobID=224},distance=..30,limit=8] ~ -100 ~

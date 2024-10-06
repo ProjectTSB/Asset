@@ -22,7 +22,3 @@
 
 # 最寄りのプレイヤーの方を向く
     execute if entity @s[scores={68.Tick=140..300}] at @s run tp @s ~ ~ ~ facing entity @p feet
-
-# ハード以上なら最寄りのプレイヤーの方を見てから巨大カボチャを召喚
-    execute if entity @s[scores={68.Tick=300..}] if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/10 run function asset:mob/0224.fake_pumpkin/tick/summon_giant_pumpkin
-    execute if entity @s[scores={68.Tick=310..}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0224.fake_pumpkin/tick/summon_giant_pumpkin
