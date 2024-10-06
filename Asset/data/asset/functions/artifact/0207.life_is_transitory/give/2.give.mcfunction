@@ -50,10 +50,12 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時のステータス補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value [{Type:"maxHealth",Slot:"offhand",Amount:-0.99d,Operation:"multiply"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-0.99,Operation:2,UUID:[I;1,1,207,2],Slot:"offhand"}]}
+    # data modify storage asset:artifact CustomNBT set value {}
 
 # 神器の入手用function
     function asset:artifact/common/give

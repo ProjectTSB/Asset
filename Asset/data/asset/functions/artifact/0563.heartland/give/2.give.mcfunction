@@ -25,7 +25,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "passive"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"大地の衣で全身を覆う"}]'
+    # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -50,10 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備のID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 237
+# 装備時のステータス補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value [{Type:"maxHealth",Slot:"chest",Amount:4,Operation:"add"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:64,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5},{id:mending,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,563,5],AttributeName:"generic.armor",Name:"armor",Slot:chest,Operation:0,Amount:3},{UUID:[I;1,1,563,5],AttributeName:"generic.max_health",Name:"max_health",Slot:chest,Operation:0,Amount:4}]}
+    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:64,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5},{id:mending,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,563,5],AttributeName:"generic.armor",Name:"armor",Slot:chest,Operation:0,Amount:3}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

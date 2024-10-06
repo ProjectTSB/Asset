@@ -50,10 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備のID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 237
+# 装備時のステータス補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value [{Type:"maxHealth",Slot:"legs",Amount:4,Operation:"add"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:64,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5},{id:mending,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,564,4],AttributeName:"generic.armor",Name:"armor",Slot:legs,Operation:0,Amount:3},{UUID:[I;1,1,564,4],AttributeName:"generic.max_health",Name:"max_health",Slot:legs,Operation:0,Amount:4}]}
+    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:64,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5},{id:mending,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,564,4],AttributeName:"generic.armor",Name:"armor",Slot:legs,Operation:0,Amount:3}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
