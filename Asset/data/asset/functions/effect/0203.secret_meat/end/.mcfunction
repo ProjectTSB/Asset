@@ -8,10 +8,11 @@
     function asset:effect/0203.secret_meat/modifier/remove
 
 # 最大体力の40%分のダメージを受ける
-    execute store result storage api: Argument.Damage double 0.4 run attribute @s generic.max_health get
+    function api:modifier/max_health/get
+    execute store result storage api: Argument.Damage double 0.4 run data get storage api: Return.MaxHealth
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは発狂し、内蔵をぶちまけた","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは発狂し、内蔵をぶちまけた","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
