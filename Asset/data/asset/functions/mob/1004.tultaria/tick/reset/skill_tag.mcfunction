@@ -7,6 +7,10 @@
 # タグをリセットする
     tag @s remove RW.Skill.Melee
     tag @s remove RW.Skill.Meteor
+    tag @s remove RW.Skill.Meteor.1
+    tag @s remove RW.Skill.Meteor.2
+    tag @s remove RW.Skill.Meteor.3
+    tag @s remove RW.Skill.Meteor.4
     tag @s remove RW.Skill.Thunder
     tag @s remove RW.Skill.Thunder.1
     tag @s remove RW.Skill.Thunder.2

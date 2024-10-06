@@ -11,7 +11,7 @@
 #declare tag MeteorSpreadMarker
 
 # 拡散
-    data modify storage lib: Argument.Bounds set value [[10d,10d],[0d,0d],[10d,10d]]
+    data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0d],[16d,16d]]
     function lib:spread_entity/
 
 # マーカーを地面に下ろす

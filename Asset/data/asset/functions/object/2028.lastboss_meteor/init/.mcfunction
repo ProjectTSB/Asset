@@ -14,7 +14,7 @@
     execute if data storage asset:context this{Type:Spread} run function asset:object/2028.lastboss_meteor/init/spread_summon/
 
 # 発射体のステータス
-    data modify storage asset:context this set value {Speed:3,Range:128}
+    data modify storage asset:context this set value {Speed:2,Range:128}
 
 # Super!
     function asset:object/super.init
