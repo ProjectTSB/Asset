@@ -11,7 +11,7 @@
     kill @s[scores={General.Object.Tick=200..}]
 
 # 範囲
-    function asset:object/2029.lastboss_meteor_marker/tick/shape
+    execute positioned ~ ~0.1 ~ run function asset:object/2029.lastboss_meteor_marker/tick/shape
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
