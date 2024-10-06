@@ -5,8 +5,8 @@
 # @within function asset:mob/0336.cherry_blossom_fairy/attack/1.trigger
 
 # 演出
-   execute at @p[tag=Victim,distance=..60] run particle cherry_leaves ~ ~1 ~ 0.5 1 0.5 0 20 normal @p
-   execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @s ~ ~ ~ 2 2 0
+    execute at @p[tag=Victim,distance=..60] run particle cherry_leaves ~ ~1 ~ 0.5 1 0.5 0 20 normal @p
+    execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @s ~ ~ ~ 2 2 0
 
 # ダメージ
     data modify storage api: Argument.Damage set value 10.0d

@@ -23,13 +23,13 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-       # data modify storage asset:mob Armor.Head set value
+        # data modify storage asset:mob Armor.Head set value
     # 胴 (Compound(Item)) (オプション)
      data modify storage asset:mob Armor.Chest set value {id:"minecraft:leather_chestplate",Count:1b}
     # 脚 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Legs set value {id:"minecraft:leather_leggings",Count:1b}
     # 足 (Compound(Item)) (オプション)
-       # data modify storage asset:mob Armor.Feet set value
+        # data modify storage asset:mob Armor.Feet set value
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
