@@ -5,6 +5,9 @@
 # @user
 # @private
 
+# 発射体のステータス設定
+    data modify storage api: Argument.FieldOverride set value {Speed:4,Range:100,MovePerStep:0.5}
+
 # 召喚
     data modify storage api: Argument.ID set value 2028
     function api:object/summon

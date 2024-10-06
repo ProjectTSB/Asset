@@ -7,17 +7,15 @@
 ## 未使用
     # 近接
         execute if entity @s[tag=RW.Skill.Melee] run function asset:mob/1004.tultaria/tick/skill/1.melee_attack/1.tick
-
     # 座標外し
         execute if entity @s[tag=RW.Skill.OffCoordinate] run function asset:mob/1004.tultaria/tick/skill/4.off_coordinate_attack/1.off_coordinate_attack
-
     # 召喚
         execute if entity @s[tag=RW.Skill.Summon] run function asset:mob/1004.tultaria/tick/skill/7.star_summon/1.star_summon
     # 火属性: 追跡→巨大な斬撃を放つ
         execute if entity @s[tag=RW.Skill.BlazingSlash] run function asset:mob/1004.tultaria/tick/skill/blazing_slash/tick
 ## 魔法技
     # 火属性: 空からメテオがいっぱい降ってくる
-        execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/2.meteor_attack/1.tick
+        execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/tick
     # 水属性: 誘導弾を複数放つ
         execute if entity @s[tag=RW.Skill.AncientLight] run function asset:mob/1004.tultaria/tick/skill/5.ball_attack/1.tick
     # 雷属性: 位置を覚えづらい雷がたくさん降ってくる

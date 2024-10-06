@@ -10,6 +10,9 @@
     playsound ogg:block.respawn_anchor.charge3 hostile @a ~ ~ ~ 2 2
     playsound minecraft:entity.guardian.death hostile @a ~ ~ ~ 2 2
 
+# 自身のモデルにモーションを再生させる
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/staff_swing_1/play
+
 # 行動をランダムに選択
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/

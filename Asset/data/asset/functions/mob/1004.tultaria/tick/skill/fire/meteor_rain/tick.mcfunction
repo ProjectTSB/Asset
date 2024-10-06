@@ -7,7 +7,7 @@
 # 構えて攻撃のパターンを決定
     execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/windup
 
-# サンダー攻撃
+# メテオ攻撃
     # 1
         execute if entity @s[tag=RW.Skill.Meteor.1] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/pattern/1
     # 2

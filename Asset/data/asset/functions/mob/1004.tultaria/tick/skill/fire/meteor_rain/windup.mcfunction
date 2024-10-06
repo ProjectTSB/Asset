@@ -10,6 +10,9 @@
     playsound ogg:block.respawn_anchor.charge2 hostile @a ~ ~ ~ 2 2
     playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 3 1.2
 
+# 自身のモデルにモーションを再生させる
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/staff_swing_1/play
+
 # 行動をランダムに選択
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
@@ -17,14 +20,14 @@
         scoreboard players operation $Random Temporary %= $2 Const
 
 # デバッグ用、実行する技を確定させる
-    scoreboard players set $Random Temporary 1
+    scoreboard players set $Random Temporary 0
 
 # タグ付与
     # 1
-        execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Thunder.1
+        execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Meteor.1
     # 2
-        execute if score $Random Temporary matches 1 run tag @s add RW.Skill.Thunder.2
+        execute if score $Random Temporary matches 1 run tag @s add RW.Skill.Meteor.2
     # 3
-        execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Thunder.3
+        execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Meteor.3
     # 4
-        execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Thunder.4
+        execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Meteor.4

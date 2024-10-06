@@ -26,4 +26,4 @@
     #execute if score @s RW.Tick matches 70.. run scoreboard players set @s RW.Tick -40
 
 # 無敵解除、戦闘開始
-    execute if score @s RW.Tick matches 75 run function asset:mob/1004.tultaria/tick/wait_time/opening/battle_start
+    execute if score @s RW.Tick matches 10 run function asset:mob/1004.tultaria/tick/wait_time/opening/battle_start
