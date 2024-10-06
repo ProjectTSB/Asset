@@ -10,7 +10,6 @@
 #declare tag RW.Marker.SpawnPoint
 
 # 自分のエイムパターンで分岐する
-    tellraw @a [{"text":"storage: "},{"storage":"asset:context","nbt":"this.Type"}]
     execute if data storage asset:context this{Type:Aim} run function asset:object/2028.lastboss_meteor/init/aiming_summon/
     execute if data storage asset:context this{Type:Spread} run function asset:object/2028.lastboss_meteor/init/spread_summon/
 
