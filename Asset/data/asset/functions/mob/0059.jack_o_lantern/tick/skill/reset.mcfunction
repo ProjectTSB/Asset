@@ -11,6 +11,7 @@
 # タグ消す
     tag @s remove 1N.Quiz
     tag @s remove 1N.GiantPumpkin1
+    tag @s remove 1N.GiantPumpkin2
 
 # スコアを変える
     scoreboard players set @s 1N.Tick -50
