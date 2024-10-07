@@ -7,9 +7,6 @@
 # プレイヤーのほう向く
     execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
 
-# 座標をalign
-    execute align xyz run tp @s ~0.5 ~ ~0.5
-
 # 発射体のステータス
     data modify storage asset:context this set value {Speed:0,Range:100,MovePerStep:1}
 

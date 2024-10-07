@@ -12,10 +12,10 @@
 
 # 落下開始
     # 落下直前、ちょっとフワっと上がる
-        execute if score @s General.Object.Tick matches 27 run tp @s ~ ~1 ~ ~ ~
-        execute if score @s General.Object.Tick matches 28 run tp @s ~ ~0.5 ~ ~ ~
-        execute if score @s General.Object.Tick matches 29 run tp @s ~ ~0.25 ~ ~ ~
+        execute if score @s General.Object.Tick matches 37 run tp @s ~ ~1 ~ ~ ~
+        execute if score @s General.Object.Tick matches 38 run tp @s ~ ~0.5 ~ ~ ~
+        execute if score @s General.Object.Tick matches 39 run tp @s ~ ~0.25 ~ ~ ~
     # 上昇の頂点でプレイヤーのほうを見る
-        execute if score @s General.Object.Tick matches 29 facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
+        execute if score @s General.Object.Tick matches 39 facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
     # 落下する
-        execute if score @s General.Object.Tick matches 30 run function asset:object/2043.lastboss_ice_sword/tick/fall_start
+        execute if score @s General.Object.Tick matches 40 run function asset:object/2043.lastboss_ice_sword/tick/fall_start
