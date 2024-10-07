@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
 
 # 本体のカウントを1減らす
-    scoreboard players remove @e[type=husk,scores={MobID=59},distance=..30,limit=1] 1N.FakeCount 1
+    scoreboard players remove @e[type=husk,tag=this,scores={MobID=59},distance=..30] 1N.FakeCount 1
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
