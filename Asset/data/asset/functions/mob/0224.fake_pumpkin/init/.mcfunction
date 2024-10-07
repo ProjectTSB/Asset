@@ -7,7 +7,7 @@
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
 # ほしい範囲に剰余算する
-    scoreboard players operation $Random Temporary %= $8 Const
+    scoreboard players operation $Random Temporary %= $9 Const
 
 # 顔選択
     execute if score $Random Temporary matches 0 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20201}
@@ -18,6 +18,7 @@
     execute if score $Random Temporary matches 5 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20206}
     execute if score $Random Temporary matches 6 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20282}
     execute if score $Random Temporary matches 7 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20283}
+    execute if score $Random Temporary matches 8 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20284}
 
 # リセット
     scoreboard players reset $Random Temporary
