@@ -1,11 +1,14 @@
-#> asset:mob/1016.divine_sword_red/summon/3.init
+#> asset:object/2043.lastboss_ice_sword/init/
 #
+# Objectのinit時の処理
 #
-#
-# @within function asset:mob/1016.divine_sword_red/summon/2.summon
+# @within asset:object/alias/2043/init
 
 # プレイヤーのほう向く
-    execute facing entity @p[distance=..20] feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 0
+
+# 座標をalign
+    execute align xyz run tp @s ~0.5 ~ ~0.5
 
 # 演出
     particle explosion ~ ~1 ~ 0 0 0 0 1
@@ -13,3 +16,6 @@
     playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.zombie_villager.converted neutral @a ~ ~ ~ 1 2
     playsound minecraft:block.beacon.ambient neutral @a ~ ~ ~ 1 2
+
+# 実装フラグを立てる
+    data modify storage asset:object Implement set value true
