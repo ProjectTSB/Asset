@@ -26,7 +26,8 @@
         execute if entity @s[tag=RW.Skill.MoveShot] run function asset:mob/1004.tultaria/tick/skill/move_shot/tick
     # 無属性: 最悪偏差撃ちレーザー
         execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
-
+    # 水属性: 持続攻撃の雨
+        execute if entity @s[tag=RW.Skill.SwordRain] run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/tick
 ## 物理技
     # 火属性: 追いかけてきながらコンボ攻撃
         execute if entity @s[tag=RW.Skill.BlazingCombo] run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick

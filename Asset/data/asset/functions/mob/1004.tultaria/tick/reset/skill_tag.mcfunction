@@ -16,6 +16,12 @@
     tag @s remove RW.Skill.Thunder.2
     tag @s remove RW.Skill.Thunder.3
     tag @s remove RW.Skill.Thunder.4
+    tag @s remove RW.Skill.SwordRain
+    tag @s remove RW.Skill.SwordRain.1
+    tag @s remove RW.Skill.SwordRain.2
+    tag @s remove RW.Skill.SwordRain.3
+    tag @s remove RW.Skill.SwordRain.4
+
     tag @s remove RW.Skill.AncientLight
     tag @s remove RW.Skill.Starfury
     tag @s remove RW.Skill.FreezingShred

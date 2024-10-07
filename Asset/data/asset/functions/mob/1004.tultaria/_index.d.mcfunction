@@ -48,6 +48,7 @@
     # 水属性
         #declare tag RW.Skill.FreezingShred
         #declare tag RW.Skill.AncientLight
+        #declare tag RW.Skill.SwordRain
     # 雷属性
         #declare tag RW.Skill.Thunder
         #declare tag RW.Skill.LightningStab
@@ -69,6 +70,12 @@
     #declare tag RW.Skill.Meteor.2
     #declare tag RW.Skill.Meteor.3
     #declare tag RW.Skill.Meteor.4
+
+    ## 剣の雨攻撃も複数パターンあります！
+    #declare tag RW.Skill.SwordRain.1
+    #declare tag RW.Skill.SwordRain.2
+    #declare tag RW.Skill.SwordRain.3
+    #declare tag RW.Skill.SwordRain.4
 
     ## ボスの使う小技のタグ
     #declare tag RW.Skill.Mini.MoveShot
