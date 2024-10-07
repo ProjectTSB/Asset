@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/2043.lastboss_ice_sword/tick/
+# @within function asset:object/2043.lastboss_ice_sword/tick/unlanded/
 
 # 演出
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 2 0.5
