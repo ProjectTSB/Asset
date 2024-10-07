@@ -7,11 +7,11 @@
 # このmcfのコマンド全てはスポーンマーカーの位置で実行される
 
 # スポーンマーカーを中心として巨大カボチャを召喚
-    execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/1
+    execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal1
 
-    execute if entity @s[scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/2
+    execute if entity @s[scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal2
 
-    execute if entity @s[scores={1N.Tick=130}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/3
+    execute if entity @s[scores={1N.Tick=130}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/2.select_straight
 
 # リセット
     execute if entity @s[scores={1N.Tick=150..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset

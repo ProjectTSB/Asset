@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/2
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal2
 #
 #
 #
