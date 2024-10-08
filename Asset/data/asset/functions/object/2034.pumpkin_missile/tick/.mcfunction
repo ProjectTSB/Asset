@@ -4,19 +4,21 @@
 #
 # @within asset:object/alias/2034/tick
 
+#> Private
+# @private
+    #declare tag Target
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# playsound
-    #playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.1 2
-
-# Tickによって追尾の強さを変える
-    execute if entity @s[scores={General.Object.Tick=3..20}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
-    #execute if entity @s[scores={General.Object.Tick=14..16}] facing entity @p eyes positioned ^ ^ ^-500 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if entity @s[scores={General.Object.Tick=21..}] facing entity @p eyes positioned ^ ^ ^-150 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+# ターゲットに追尾する
+    execute at @a[distance=..50] if score @s 2034.TargetID = @p UserID run tag @p add Target
+    execute if entity @s[scores={General.Object.Tick=3..35}] facing entity @p[tag=Target] eyes positioned ^ ^ ^-120 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    #execute unless entity @p[tag=Target] run kill @s
+    tag @p[tag=Target,distance=..50] remove Target
 
 # 速度を変える
-    #execute if entity @s[scores={General.Object.Tick=17}] run data modify storage asset:context this.MovePerStep set value 0.
+    execute if entity @s[scores={General.Object.Tick=35}] if predicate api:global_vars/difficulty/min/normal run data modify storage asset:context this.Speed set value 4
 
 # 継承して動かす
     execute at @s run function asset:object/super.tick
