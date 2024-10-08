@@ -8,7 +8,7 @@
     particle dust 1 0.6 0 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
     particle dust 0.851 0 1 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
     particle block carved_pumpkin ~ ~0.1 ~ 0.8 0 0.8 0 10 normal @a
-    playsound entity.breeze.shoot hostile @a ~ ~ ~ 0.5 2
+    playsound entity.breeze.shoot hostile @a ~ ~ ~ 0.25 2
 
 # 羊毛を破壊する
     execute if predicate world_manager:area/02.islands positioned ^ ^ ^0.5 if block ~ ~ ~ #wool run setblock ~ ~ ~ air destroy
