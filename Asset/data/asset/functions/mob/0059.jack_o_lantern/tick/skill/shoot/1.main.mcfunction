@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/shoot/1.main
 #
-#
+# カボチャミサイルのメイン処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill_branch
 
@@ -13,6 +13,9 @@
     execute if entity @s[scores={1N.Tick=4}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
     execute if entity @s[scores={1N.Tick=6}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
     execute if entity @s[scores={1N.Tick=8}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+
+# ターゲットを決める
+    execute if entity @s[scores={1N.Tick=15}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/2.select_target
 
     execute if entity @s[scores={1N.Tick=15}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
     execute if entity @s[scores={1N.Tick=17}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot

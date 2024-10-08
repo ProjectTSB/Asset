@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/shoot/2.select_target
 #
-#
+# ミサイルのターゲットを決める
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/shoot/1.main
 

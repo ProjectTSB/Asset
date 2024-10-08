@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/shoot/4.shoot2
 #
-#
+# カボチャミサイルの発射処理2
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
 
@@ -12,7 +12,7 @@
     execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,scores={MobID=59}] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @p ~ ~ ~ 0.7 1 1
     #execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,scores={MobID=59}] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1
     execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,scores={MobID=59}] eyes positioned ^ ^ ^1 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.5 1.8
-    
+
 # 前方拡散
     execute rotated ~ 0 run summon marker ^ ^ ^0.1 {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 1.0
