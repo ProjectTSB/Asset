@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
 #
-#
+# 巨大カボチャ転がし2のメイン処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill_branch
 
@@ -12,14 +12,14 @@
     execute if entity @s[scores={1N.Tick=0}] run tag @s add 1N.Random
 
 # 網目状にカボチャを転がす
-    execute if entity @s[tag=1N.Random,scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal1
-    execute if entity @s[tag=!1N.Random,scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal2
+    execute if entity @s[tag=1N.Random,scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal/1
+    execute if entity @s[tag=!1N.Random,scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal/2
 
 # ハード以上なら25tickまで飛ばす
     execute if entity @s[scores={1N.Tick=0}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s 1N.Tick 25
 
-    execute if entity @s[tag=1N.Random,scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal2
-    execute if entity @s[tag=!1N.Random,scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal1
+    execute if entity @s[tag=1N.Random,scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal/2
+    execute if entity @s[tag=!1N.Random,scores={1N.Tick=50}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal/1
 
 # Tagを削除
     execute if entity @s[scores={1N.Tick=50}] run tag @s remove 1N.Random

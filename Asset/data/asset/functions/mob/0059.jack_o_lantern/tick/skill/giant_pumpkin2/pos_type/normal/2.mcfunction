@@ -1,9 +1,10 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal2
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/normal/2
 #
-#
+# 網目状に転がす.2
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
 
+# Rotationを設定して召喚
     data modify storage api: Argument.FieldOverride.Rotation set value [180.0f,0.0f]
     execute positioned ^-1.5 ^0 ^9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
 

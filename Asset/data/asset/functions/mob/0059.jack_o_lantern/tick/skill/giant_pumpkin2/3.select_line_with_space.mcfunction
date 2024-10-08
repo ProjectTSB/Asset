@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_line_with_space
 #
-#
+# 隙間を1箇所用意して転がす
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
 
@@ -27,4 +27,3 @@
 
 # 判定Tagを削除
     tag @s remove 50Per
-
