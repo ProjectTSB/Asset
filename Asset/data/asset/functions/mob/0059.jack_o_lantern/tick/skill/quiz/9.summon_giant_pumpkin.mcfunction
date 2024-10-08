@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/9.summon_giant_pumpkin
 #
-#
+# 偽物を巨大カボチャへ変身させる
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/8.glowing
 

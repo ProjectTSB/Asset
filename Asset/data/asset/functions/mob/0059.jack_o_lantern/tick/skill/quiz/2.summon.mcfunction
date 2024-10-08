@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/2.summon
 #
-# 眷属を沢山召喚する
+# 偽物を沢山召喚する
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
 

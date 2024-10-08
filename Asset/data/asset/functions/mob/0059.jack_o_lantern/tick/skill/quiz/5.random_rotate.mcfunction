@@ -1,17 +1,12 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.random_rotate
 #
-#
+# ランダムな方向を向く
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_move
 
 # ランダムな方向を向く
-
-# 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算する
     scoreboard players operation $Random Temporary %= $6 Const
-
-# スキル選択
     #execute if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~
     execute if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~30 ~
     execute if score $Random Temporary matches 2 run tp @s ~ ~ ~ ~60 ~
