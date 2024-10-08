@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/1.main
 #
-#
+# カボチャ転がし1のメイン処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill_branch
 
