@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/*
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/**
 
 # FieldOverrideを設定
     #data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

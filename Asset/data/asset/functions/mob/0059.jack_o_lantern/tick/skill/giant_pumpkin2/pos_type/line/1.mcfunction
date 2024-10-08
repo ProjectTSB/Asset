@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/straight1
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/1
 #
 #
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/2.select_straight
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/2.select_line
 
     data modify storage api: Argument.FieldOverride.Rotation set value [0.0f,0.0f]
     execute positioned ^7.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
