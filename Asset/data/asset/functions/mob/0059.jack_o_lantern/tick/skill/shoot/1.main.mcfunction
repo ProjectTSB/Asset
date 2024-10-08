@@ -4,9 +4,24 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill_branch
 
-# カボチャミサイルを撃つ
-    execute if entity @s[scores={1N.Tick=0..5}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/2.shoot
+# ターゲットを決める
+    execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/2.select_target
 
+# カボチャミサイルを撃つ
+    execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=2}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=4}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=6}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=8}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+
+    execute if entity @s[scores={1N.Tick=15}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=17}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=19}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=21}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+    execute if entity @s[scores={1N.Tick=23}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
+
+# カボチャミサイルを撃つ
+   # execute if entity @s[scores={1N.Tick=10..15}] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/3.shoot
 
 # リセット
-    execute if entity @s[scores={1N.Tick=60..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={1N.Tick=30..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
