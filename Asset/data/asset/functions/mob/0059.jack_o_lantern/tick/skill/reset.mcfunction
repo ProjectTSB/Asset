@@ -11,6 +11,9 @@
 # タグ消す
     tag @s remove 1N.Quiz
     tag @s remove 1N.GiantPumpkin1
+    tag @s remove 1N.GiantPumpkin1.Center
+    tag @s remove 1N.GiantPumpkin1.Left
+    tag @s remove 1N.GiantPumpkin1.Right
     tag @s remove 1N.GiantPumpkin2
     tag @s remove 1N.Shoot
 
