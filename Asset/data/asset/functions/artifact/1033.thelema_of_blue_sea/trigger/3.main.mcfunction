@@ -26,11 +26,7 @@
     execute anchored eyes positioned ^ ^-0.3 ^2 run function api:object/summon
 
 # 3回目の攻撃の時、追撃用オブジェクトを召喚
-    execute if entity @s[scores={SP.AttackCount=3}] run data modify storage api: Argument.ID set value 1039
-    execute if entity @s[scores={SP.AttackCount=3}] run data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute if entity @s[scores={SP.AttackCount=3}] store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute if entity @s[scores={SP.AttackCount=3}] store result storage api: Argument.FieldOverride.MaxHP int 0.05 run attribute @s generic.max_health get
-    execute if entity @s[scores={SP.AttackCount=3}] at @e[type=#lib:living,tag=Victim,distance=..6] run function api:object/summon
+    execute if entity @s[scores={SP.AttackCount=3}] run function asset:artifact/1033.thelema_of_blue_sea/trigger/4.persuit
 
 # ダメージ 基礎火力+現在体力の100%(最大200まで)
     function api:data_get/health

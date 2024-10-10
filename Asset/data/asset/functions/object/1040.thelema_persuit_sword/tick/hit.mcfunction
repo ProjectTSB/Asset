@@ -22,7 +22,7 @@
 
 # ダメージ 最大体力の160%分(最大320)
 # api:damage/にif dataをつけているのはデバッグ中に引数Damageが足りませんと出たため
-    execute at @a if score @s 1040.UserID = @p UserID store result score $Damage Temporary run attribute @p generic.max_health get 1.6
+    execute store result score $Damage Temporary run data get storage asset:context this.MaxHP 1.6
     execute store result storage api: Argument.Damage int 1 run scoreboard players operation $Damage Temporary < $320 Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
