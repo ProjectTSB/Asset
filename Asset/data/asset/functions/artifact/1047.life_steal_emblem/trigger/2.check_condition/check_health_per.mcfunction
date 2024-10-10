@@ -6,22 +6,13 @@
 
 #> Val
 # @private
-    #declare score_holder $T3.MaxHP
-    #declare score_holder $T3.CurrentHP
+    #declare score_holder $T3.HPPer
 
-# 体力
-    # 最大体力を取得
-        execute store result score $T3.MaxHP Temporary run attribute @s minecraft:generic.max_health get
-
-    # 現在体力を取得
-        function api:data_get/health
-        execute store result score $T3.CurrentHP Temporary run data get storage api: Health 1000
-
-    # 割合
-        scoreboard players operation $T3.CurrentHP Temporary /= $T3.MaxHP Temporary
+# 体力割合を取得
+    function api:entity/player/get_health_per
+    execute store result score $T3.HPPer Temporary run data get storage api: Return.HealthPer
 
 # 体力が25%以上か確認
-    execute unless score $T3.CurrentHP Temporary matches 251.. run function asset:artifact/1047.life_steal_emblem/trigger/2.check_condition/error_message
-    execute unless score $T3.CurrentHP Temporary matches 251.. run tag @s remove CanUsed
-    scoreboard players reset $T3.MaxHP Temporary
-    scoreboard players reset $T3.CurrentHP Temporary
+    execute unless score $T3.HPPer Temporary matches 251.. run function asset:artifact/1047.life_steal_emblem/trigger/2.check_condition/error_message
+    execute unless score $T3.HPPer Temporary matches 251.. run tag @s remove CanUsed
+    scoreboard players reset $T3.HPPer Temporary
