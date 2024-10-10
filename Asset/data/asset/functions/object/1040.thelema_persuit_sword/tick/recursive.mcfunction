@@ -1,0 +1,25 @@
+#> asset:object/1040.thelema_persuit_sword/tick/recursive
+#
+# 再帰で下に落ちる
+#
+# @within function
+#   asset:object/1040.thelema_persuit_sword/tick/
+#   asset:object/1040.thelema_persuit_sword/tick/recursive
+
+# 演出
+    particle dust 1 1 100000000 1 ~ ~0.5 ~ 0 0 0 0 1 normal @a
+    execute if predicate lib:random_pass_per/15 run particle wax_off ~ ~0.5 ~ 0.05 0.05 0.05 0 1 normal @a
+
+# スコア
+    scoreboard players add $Count Temporary 1
+
+# tp
+    tp @s ~ ~-0.2 ~
+
+# 地面に当たった場合ダメージ処理と強制終了
+# スコア一定値までは地面にヒットした判定にならない
+    execute if entity @s[scores={General.Object.Tick=18..}] unless block ~ ~ ~ #lib:no_collision run function asset:object/1040.thelema_persuit_sword/tick/hit
+    execute if entity @s[scores={General.Object.Tick=18..}] unless block ~ ~ ~ #lib:no_collision run return 0
+
+# 6回まで再帰
+    execute if score $Count Temporary matches ..6 at @s run function asset:object/1040.thelema_persuit_sword/tick/recursive
