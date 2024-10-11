@@ -1,18 +1,16 @@
-#> asset:object/1040.thelema_persuit_sword/tick/hit
+#> asset:object/1040.thelema_persuit_sword/kill/
 #
+# 継承先などから実行される処理
 #
-#
-# @within function
-#   asset:object/1040.thelema_persuit_sword/tick/
-#   asset:object/1040.thelema_persuit_sword/tick/recursive
+# @within asset:object/alias/1040/kill
 
 #> Private
 # @private
-    #declare score_holder $Damage
     #declare score_holder $320
+    #declare score_holder $Damage
 
 # 演出
-    execute positioned ~ ~0.3 ~ run function asset:object/1040.thelema_persuit_sword/tick/vfx
+    execute positioned ~ ~0.3 ~ rotated ~ 0 run function asset:object/1040.thelema_persuit_sword/kill/vfx
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1 0.7 0
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1 1 0
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1 1.3 0
@@ -36,3 +34,6 @@
 
 # 消滅
     kill @s
+
+# 実装フラグを立てる
+    data modify storage asset:object Implement set value true

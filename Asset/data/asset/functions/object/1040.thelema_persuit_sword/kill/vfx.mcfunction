@@ -1,8 +1,8 @@
-#> asset:object/1040.thelema_persuit_sword/tick/vfx
+#> asset:object/1040.thelema_persuit_sword/kill/vfx
 #
-# vfx
 #
-# @within function asset:object/1040.thelema_persuit_sword/tick/hit
+#
+# @within function asset:object/1040.thelema_persuit_sword/kill/
 
 # 演出
     execute rotated ~00 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
