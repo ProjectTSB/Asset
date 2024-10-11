@@ -8,7 +8,7 @@
     function api:modifier/max_health/get
 
 # 3回目の攻撃の時、追撃用オブジェクトを召喚
-# ID、Rotation、UserIDをFieldOverrideへ入れる
+# Rotation、MaxHealth、UserIDをFieldOverrideへ入れる
     data modify storage api: Argument.ID set value 1039
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     data modify storage api: Argument.FieldOverride.MaxHP set from storage api: Return.MaxHealth
