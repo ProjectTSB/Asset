@@ -12,12 +12,20 @@
 #> Private
 # @private
     #declare score_holder $Damage
+    #declare score_holder $WaitingTime
 
 # デバッグ用
     #scoreboard players set @s SP.AttackCount 1
 
 # 次の段階までの待機時間のスコア
-    scoreboard players set @s SP.WaitingTime 40
+# 差が40tick以上ならAttackCountをリセットする
+    execute store result score $WaitingTime Temporary run time query gametime
+    scoreboard players operation $WaitingTime Temporary -= @s SP.LatestUseTick
+    execute if score $WaitingTime Temporary matches 40.. run scoreboard players reset @s SP.AttackCount
+    scoreboard players reset $WaitingTime Temporary
+
+# 使用tickをスコアで残しておく
+    execute store result score @s SP.LatestUseTick run time query gametime
 
 # 演出用オブジェクトを召喚
     data modify storage api: Argument.ID set value 1038
@@ -39,9 +47,5 @@
     execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
 
-# スケジュールループを起動
-    schedule function asset:artifact/1033.thelema_of_blue_sea/trigger/loop 1t replace
-
 # 攻撃回数が3ならスコアをリセット
-    execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.WaitingTime
     execute if entity @s[scores={SP.AttackCount=3..}] run scoreboard players reset @s SP.AttackCount
