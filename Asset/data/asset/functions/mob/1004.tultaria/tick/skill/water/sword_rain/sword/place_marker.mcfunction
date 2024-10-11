@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/water/sword_rain/pattern/1
+# @within function asset:mob/1004.tultaria/tick/skill/water/sword_rain/pattern/**
 
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
