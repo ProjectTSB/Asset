@@ -4,10 +4,11 @@
 #> tag
 # @within function asset:mob/0059.jack_o_lantern/**
     #declare score_holder $Random
+    #declare score_holder $Interval
     #declare tag 1N.Quiz
     #declare tag 1N.ForwardShoot
     #declare tag 1N.SpreadShoot
-    #declare tag 1N.Bomb
+    #declare tag 1N.GiganticPumpkin
     #declare tag 1N.FakeBomb
     #declare tag 1N.GiantPumpkin1
     #declare tag 1N.GiantPumpkin1.Center

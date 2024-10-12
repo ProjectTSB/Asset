@@ -16,3 +16,6 @@
 
 # カボチャミサイル
     execute if entity @s[tag=1N.Shoot] run function asset:mob/0059.jack_o_lantern/tick/skill/shoot/1.main
+
+# 超巨大カボチャ
+    execute if entity @s[tag=1N.GiganticPumpkin] run function asset:mob/0059.jack_o_lantern/tick/skill/gigantic_pumpkin/1.main

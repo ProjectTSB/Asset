@@ -10,18 +10,19 @@
 
 # 乱数によるスキル選択
     data modify storage lib: Args.key set value "59.Skill"
-    data modify storage lib: Args.max set value 4
+    data modify storage lib: Args.max set value 5
     data modify storage lib: Args.scarcity_history_size set value 3
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグ用
-    scoreboard players set $Random Temporary 1
+    scoreboard players set $Random Temporary 4
 
 # スキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 1N.Quiz
     execute if score $Random Temporary matches 1 run tag @s add 1N.GiantPumpkin1
     execute if score $Random Temporary matches 2 run tag @s add 1N.GiantPumpkin2
     execute if score $Random Temporary matches 3 run tag @s add 1N.Shoot
+    execute if score $Random Temporary matches 4 run tag @s add 1N.GiganticPumpkin
 
 # リセット
     scoreboard players reset $Random Temporary

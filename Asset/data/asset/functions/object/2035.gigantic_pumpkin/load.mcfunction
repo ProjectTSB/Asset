@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2035.gigantic_pumpkin/**
-    scoreboard objectives add 
+    #scoreboard objectives add 

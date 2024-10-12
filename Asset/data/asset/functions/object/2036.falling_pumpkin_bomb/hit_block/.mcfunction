@@ -7,8 +7,5 @@
 # 接地Tagを付与
     tag @s add 2036.OnGround
 
-# Speedを0にする
-    data modify storage asset:context this.Speed set value 0
-
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
