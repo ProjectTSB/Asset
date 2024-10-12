@@ -14,7 +14,8 @@
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージを与える
-    execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
+    execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
+
 # リセット
     function lib:damage/reset
 
