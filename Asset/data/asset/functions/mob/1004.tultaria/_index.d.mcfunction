@@ -49,6 +49,7 @@
         #declare tag RW.Skill.FreezingShred
         #declare tag RW.Skill.AncientLight
         #declare tag RW.Skill.SwordRain
+        #declare tag RW.Skill.HomingShot
     # 雷属性
         #declare tag RW.Skill.Thunder
         #declare tag RW.Skill.LightningStab

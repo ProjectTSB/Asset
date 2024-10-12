@@ -32,6 +32,8 @@
     tag @s remove RW.Skill.MoveShot
     tag @s remove RW.Skill.AimingLaser
 
+    tag @s remove RW.Skill.HomingShot
+
 #
     tag @s remove RW.MiniSkillChase
     tag @s remove RW.MiniSkillBulletHell

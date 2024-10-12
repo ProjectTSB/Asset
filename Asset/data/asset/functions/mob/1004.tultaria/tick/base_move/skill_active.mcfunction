@@ -7,8 +7,6 @@
 ## 未使用
     # 近接
         execute if entity @s[tag=RW.Skill.Melee] run function asset:mob/1004.tultaria/tick/skill/1.melee_attack/1.tick
-    # 座標外し
-        execute if entity @s[tag=RW.Skill.OffCoordinate] run function asset:mob/1004.tultaria/tick/skill/4.off_coordinate_attack/1.off_coordinate_attack
     # 召喚
         execute if entity @s[tag=RW.Skill.Summon] run function asset:mob/1004.tultaria/tick/skill/7.star_summon/1.star_summon
     # 火属性: 追跡→巨大な斬撃を放つ
@@ -28,6 +26,8 @@
         execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
     # 水属性: 持続攻撃の雨
         execute if entity @s[tag=RW.Skill.SwordRain] run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/tick
+    # 水属性: ホーミングショット
+        execute if entity @s[tag=RW.Skill.HomingShot] run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/tick
 ## 物理技
     # 火属性: 追いかけてきながらコンボ攻撃
         execute if entity @s[tag=RW.Skill.BlazingCombo] run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
