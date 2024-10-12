@@ -2,7 +2,7 @@
 #
 # 1つ隙間を空けて1直線に転がす.3
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_line_with_space
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
 
 # Rotationを設定して召喚
     data modify storage api: Argument.FieldOverride.Rotation set value [180.0f,0.0f]

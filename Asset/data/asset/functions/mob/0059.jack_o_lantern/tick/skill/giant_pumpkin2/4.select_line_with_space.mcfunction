@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_line_with_space
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/4.select_line_with_space
 #
 # 隙間を1箇所用意して転がす
 #
