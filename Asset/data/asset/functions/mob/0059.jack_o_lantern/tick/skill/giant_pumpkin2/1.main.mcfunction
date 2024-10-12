@@ -20,7 +20,7 @@
         execute if entity @s[scores={1N.Tick=50}] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/2.select_cross
 
     # ハード
-        execute if entity @s[scores={1N.Tick=0..50}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_cross_hard
+        execute if entity @s[scores={1N.Tick=0..25}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_cross_hard
 
 # ハード以上なら70tickまで飛ばす
     execute if entity @s[scores={1N.Tick=50}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s 1N.Tick 70
