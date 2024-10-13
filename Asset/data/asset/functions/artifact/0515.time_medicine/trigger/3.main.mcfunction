@@ -11,4 +11,4 @@
 # 朝
     execute if predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/day
 # 夜
-    execute unless predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/night
+    execute if predicate lib:is_night run function asset:artifact/0515.time_medicine/trigger/night
