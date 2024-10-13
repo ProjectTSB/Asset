@@ -34,6 +34,9 @@
 
     tag @s remove RW.Skill.HomingShot
 
+    tag @s remove RW.Skill.Hellfire
+
+
 #
     tag @s remove RW.MiniSkillChase
     tag @s remove RW.MiniSkillBulletHell

@@ -44,6 +44,7 @@
     ## ボスの使う技のタグ
     # 火属性
         #declare tag RW.Skill.Meteor
+        #declare tag RW.Skill.Hellfire
         #declare tag RW.Skill.BlazingCombo
     # 水属性
         #declare tag RW.Skill.FreezingShred

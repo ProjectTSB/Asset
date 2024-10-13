@@ -18,7 +18,7 @@
     execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/
 
 # デバッグ用、この行動をループする
-    execute if score @s RW.Tick matches 60 run scoreboard players set @s RW.Tick -10
+#    execute if score @s RW.Tick matches 60 run scoreboard players set @s RW.Tick -10
 
 # リセット
     execute if score @s RW.Tick matches 100 run function asset:mob/1004.tultaria/tick/base_move/reset

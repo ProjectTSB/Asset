@@ -14,6 +14,8 @@
 ## 魔法技
     # 火属性: 空からメテオがいっぱい降ってくる
         execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/tick
+    # 火属性: 低速誘導弾を発射
+        execute if entity @s[tag=RW.Skill.Hellfire] run function asset:mob/1004.tultaria/tick/skill/fire/hell_fire/tick
     # 水属性: 誘導弾を複数放つ
         execute if entity @s[tag=RW.Skill.AncientLight] run function asset:mob/1004.tultaria/tick/skill/5.ball_attack/1.tick
     # 雷属性: 位置を覚えづらい雷がたくさん降ってくる
