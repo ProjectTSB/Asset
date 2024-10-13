@@ -1,8 +1,8 @@
-#> asset:mob/0370.prominence_magic/tick/debuff
+#> asset:object/2047.prominence_magic/tick/debuff
 #
 # デバフを付与
 #
-# @within function asset:mob/0370.prominence_magic/tick/damage
+# @within function asset:object/2047.prominence_magic/tick/damage
 
 #> Private
 # @private

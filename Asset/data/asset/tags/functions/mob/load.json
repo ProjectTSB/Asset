@@ -1,6 +1,5 @@
 {
     "values": [
-        "asset:mob/0370.prominence_magic/load",
         "asset:mob/0369.prominence_spellbook/load",
         "asset:mob/0266.small_dark_ball/load",
         "asset:mob/0265.dark_familiar/load",

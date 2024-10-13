@@ -1,6 +1,5 @@
 {
     "values": [
-        "asset:mob/0370.prominence_magic/_/summon",
         "asset:mob/0369.prominence_spellbook/_/summon",
         "asset:mob/0266.small_dark_ball/_/summon",
         "asset:mob/0265.dark_familiar/_/summon",

@@ -1,10 +1,10 @@
-#> asset:mob/0370.prominence_magic/tick/damage
+#> asset:object/2047.prominence_magic/tick/damage
 #
-# 1回目の爆発
+# ダメージ
 #
 # @within function
-#   asset:mob/0370.prominence_magic/tick/3.on_ground
-#   asset:mob/0370.prominence_magic/tick/5.2nd_blast
+#   asset:object/2047.prominence_magic/tick/
+#   asset:object/2047.prominence_magic/tick/2nd_blast
 
 # 演出
     particle explosion ~ ~ ~ 0 0 0 0 1 normal @a
@@ -21,4 +21,4 @@
     function api:damage/reset
 
 # ノーマル以上でデバフを付与
-    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function asset:mob/0370.prominence_magic/tick/debuff
+    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function asset:object/2047.prominence_magic/tick/debuff

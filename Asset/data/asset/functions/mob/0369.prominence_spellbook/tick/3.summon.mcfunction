@@ -1,15 +1,18 @@
 #> asset:mob/0369.prominence_spellbook/tick/3.summon
 #
-#
+# 魔法を召喚する
 #
 # @within function asset:mob/0369.prominence_spellbook/tick/2.ready
 
+# 最寄りのプレイヤーの方を見る
+    tp @s ~ ~ ~ facing entity @p eyes
+
+# RotationをFieldOverrideへ
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+
 # 弾を召喚
-    data modify storage api: Argument.ID set value 370
-    function api:mob/summon
+    data modify storage api: Argument.ID set value 2047
+    function api:object/summon
 
-# プレイヤーの方向に向かせる
-    execute facing entity @p feet run tp @e[type=marker,scores={MobID=370},distance=..0.01,sort=nearest,limit=1] ~ ~ ~ ~ ~
-
-# リセット
-    function asset:mob/0369.prominence_spellbook/tick/4.reset
+# 消滅
+    kill @s

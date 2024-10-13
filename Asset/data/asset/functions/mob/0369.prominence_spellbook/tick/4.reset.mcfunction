@@ -4,7 +4,6 @@
 #
 # @within function
 #   asset:mob/0369.prominence_spellbook/tick/2.ready
-#   asset:mob/0369.prominence_spellbook/tick/3.summon
 
 #> Private
 # @private
