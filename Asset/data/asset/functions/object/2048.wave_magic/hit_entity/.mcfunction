@@ -17,5 +17,8 @@
 # ノーマル以上ならデバフを付与
     execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function asset:object/2048.wave_magic/hit_entity/debuff
 
+# 消滅
+    function asset:object/call.m {method:kill}
+
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
