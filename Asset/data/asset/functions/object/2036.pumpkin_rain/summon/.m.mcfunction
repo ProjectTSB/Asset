@@ -2,6 +2,9 @@
 #
 # マクロで向きを合わせて召喚する
 #
+# args:
+#    RotationX : int
+#
 # @within function asset:object/2036.pumpkin_rain/summon/
 
 # 元となるEntityを召喚する
