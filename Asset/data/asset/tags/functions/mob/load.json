@@ -1,6 +1,5 @@
 {
     "values": [
-        "asset:mob/0374.lightning_magic/load",
         "asset:mob/0371.lightning_spellbook/load",
         "asset:mob/0266.small_dark_ball/load",
         "asset:mob/0265.dark_familiar/load",
