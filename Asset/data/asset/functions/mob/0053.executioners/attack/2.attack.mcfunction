@@ -32,8 +32,8 @@
 
 # 以下自分がテレポートする処理
 # 演出
-   particle minecraft:firework ~ ~1 ~ 0.5 0.5 0.5 0 10 normal @a
-   playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1
+    particle minecraft:firework ~ ~1 ~ 0.5 0.5 0.5 0 10 normal @a
+    playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1
 
 # マーカーをワープさせて、そこが安全地帯ならワープする
     execute at @p[tag=Victim,distance=..50] run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
