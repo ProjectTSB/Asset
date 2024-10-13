@@ -1,10 +1,10 @@
-#> asset:mob/0371.wave_spellbook/tick/4.reset
+#> asset:mob/0370.wave_spellbook/tick/4.reset
 #
 # リセット
 #
 # @within function
-#   asset:mob/0371.wave_spellbook/tick/2.ready
-#   asset:mob/0371.wave_spellbook/tick/3.summon
+#   asset:mob/0370.wave_spellbook/tick/2.ready
+#   asset:mob/0370.wave_spellbook/tick/3.summon
 
 #> Private
 # @private

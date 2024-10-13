@@ -1,7 +1,7 @@
 {
     "values": [
         "asset:mob/0372.wave_magic/_/register",
-        "asset:mob/0371.wave_spellbook/_/register",
+        "asset:mob/0370.wave_spellbook/_/register",
         "asset:mob/0266.small_dark_ball/_/register",
         "asset:mob/0265.dark_familiar/_/register",
         "asset:mob/0264.dark_summoner/_/register",

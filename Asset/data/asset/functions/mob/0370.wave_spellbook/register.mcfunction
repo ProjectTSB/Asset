@@ -1,8 +1,8 @@
-#> asset:mob/0371.wave_spellbook/register
+#> asset:mob/0370.wave_spellbook/register
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0371.wave_spellbook/_/register
+# @within function asset:mob/0370.wave_spellbook/_/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -11,7 +11,7 @@
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:mob ID set value 371
+    data modify storage asset:mob ID set value 370
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
