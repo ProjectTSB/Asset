@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/7.summon
 #
-#
+# 召喚処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/*
 

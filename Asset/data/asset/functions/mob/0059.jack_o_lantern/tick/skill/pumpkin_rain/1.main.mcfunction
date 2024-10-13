@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/1.main
 #
-#
+# カボチャの雨のメイン処理
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill_branch
 

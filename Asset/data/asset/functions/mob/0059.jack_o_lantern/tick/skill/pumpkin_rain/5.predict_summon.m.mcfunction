@@ -1,5 +1,7 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/5.predict_summon
 #
+# 偏差で召喚
+#
 # args:
 #    X: double
 #    Z: double

@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/hurt/check_health_per
 #
-#
+# 体力割合を取得
 #
 # @within function asset:mob/0059.jack_o_lantern/hurt/
 

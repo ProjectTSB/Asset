@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/6.spread
 #
-#
+# 拡散して召喚
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/3.select_pos
 

@@ -1,6 +1,6 @@
 #> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/4.predict
 #
-#
+# 偏差でカボチャの雨を降らす
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/3.select_pos
 
