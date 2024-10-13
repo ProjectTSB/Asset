@@ -1,8 +1,8 @@
-#> asset:mob/0364.white_magic/tick/debuff
+#> asset:object/2046.white_magic/tick/debuff
 #
-# デバフを付与
+# デバフ付与処理
 #
-# @within function asset:mob/0364.white_magic/tick/attack
+# @within function asset:object/2046.white_magic/tick/hit
 
 #> Private
 # @private

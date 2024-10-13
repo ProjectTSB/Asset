@@ -1,8 +1,8 @@
-#> asset:mob/0364.white_magic/tick/attack
+#> asset:object/2046.white_magic/tick/hit
 #
-# 攻撃の際の処理
+# ヒット処理
 #
-# @within function asset:mob/0364.white_magic/tick/
+# @within function asset:object/2046.white_magic/tick/
 
 # ダメージ
     data modify storage api: Argument.Damage set value 30.0d
@@ -14,4 +14,4 @@
     function api:damage/reset
 
 # ノーマル以上なら範囲内のプレイヤーにデバフを付与
-    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0364.white_magic/tick/debuff
+    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:object/2046.white_magic/tick/debuff
