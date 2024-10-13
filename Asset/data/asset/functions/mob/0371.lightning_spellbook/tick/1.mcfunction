@@ -11,6 +11,14 @@
 # パーティクル
     particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
 
+# スコア
+    scoreboard players add @s AD.Tick 1
+
+# 攻撃
+    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/2.ready
+
+# ここより下は移動処理
+
 # 接地で上を向く
     execute unless block ~ ~-0.1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
     execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
@@ -39,9 +47,3 @@
 # カベにぶつかった際の処理
     execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-
-# スコア
-    scoreboard players add @s AD.Tick 1
-
-# 攻撃
-    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/2.ready
