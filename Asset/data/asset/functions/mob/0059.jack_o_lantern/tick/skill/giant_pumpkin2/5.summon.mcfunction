@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/5.summon
 #
 # 巨大カボチャを召喚する
 #
