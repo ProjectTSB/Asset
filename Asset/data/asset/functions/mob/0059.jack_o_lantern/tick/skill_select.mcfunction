@@ -24,7 +24,7 @@
     execute if score $Random Temporary matches 0 run tag @s add 1N.Quiz
     execute if score $Random Temporary matches 1 run tag @s add 1N.GiantPumpkin1
     execute if score $Random Temporary matches 2 run tag @s add 1N.GiantPumpkin2
-    execute if score $Random Temporary matches 3 run tag @s add 1N.Shoot
+    execute if score $Random Temporary matches 3 run tag @s add 1N.Missile
     execute if score $Random Temporary matches 4 run tag @s add 1N.PumpkinRain
 
 # リセット

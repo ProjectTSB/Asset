@@ -16,7 +16,7 @@
     #declare tag 1N.GiantPumpkin1.Left
     #declare tag 1N.GiantPumpkin1.Right
     #declare tag 1N.GiantPumpkin2
-    #declare tag 1N.Shoot
+    #declare tag 1N.Missile
     #declare tag 1N.Random
     #declare tag 1N.Random2
     #declare tag 1N.Hurt
