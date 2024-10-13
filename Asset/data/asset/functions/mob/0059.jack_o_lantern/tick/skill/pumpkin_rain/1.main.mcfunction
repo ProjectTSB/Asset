@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/gigantic_pumpkin/1.main
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/1.main
 #
 #
 #
@@ -12,7 +12,7 @@
     execute if entity @s[scores={1N.Tick=76}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s 1N.Interval 4
 
 # 召喚
-    function asset:mob/0059.jack_o_lantern/tick/skill/gigantic_pumpkin/2.interval
+    function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/2.interval
 
 # リセット
     execute if entity @s[scores={1N.Tick=200..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset

@@ -1,4 +1,4 @@
-#> asset:object/2035.gigantic_pumpkin/init/
+#> asset:object/2035.pumpkin_rain/init/
 #
 # Objectのinit時の処理
 #

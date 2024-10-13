@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/gigantic_pumpkin/7.summon
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/7.summon
 #
 #
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/gigantic_pumpkin/*
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/*
 
 # ID設定
     data modify storage api: Argument.ID set value 2036

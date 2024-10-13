@@ -15,7 +15,7 @@
     tag @s remove 1N.GiantPumpkin1.Left
     tag @s remove 1N.GiantPumpkin1.Right
     tag @s remove 1N.GiantPumpkin2
-    tag @s remove 1N.GiganticPumpkin
+    tag @s remove 1N.PumpkinRain
     tag @s remove 1N.Shoot
 
 # スコアを変える

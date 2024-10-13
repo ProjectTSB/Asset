@@ -1,4 +1,4 @@
-#> asset:object/2035.gigantic_pumpkin/summon/
+#> asset:object/2035.pumpkin_rain/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

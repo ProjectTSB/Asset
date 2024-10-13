@@ -1,4 +1,4 @@
-#> asset:object/2035.gigantic_pumpkin/detect_hit_entity/
+#> asset:object/2035.pumpkin_rain/detect_hit_entity/
 #
 # 継承先などから実行される処理
 #

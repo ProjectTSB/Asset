@@ -1,4 +1,4 @@
-#> asset:object/2035.gigantic_pumpkin/tick/
+#> asset:object/2035.pumpkin_rain/tick/
 #
 # Objectのtick時の処理
 #

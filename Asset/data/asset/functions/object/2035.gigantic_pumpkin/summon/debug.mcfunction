@@ -1,4 +1,4 @@
-#> asset:object/2035.gigantic_pumpkin/summon/debug
+#> asset:object/2035.pumpkin_rain/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #
