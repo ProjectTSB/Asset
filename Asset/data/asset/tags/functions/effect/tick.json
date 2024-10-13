@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0124.darkness/_/tick",
         "asset:effect/0202.sheep_blessing/_/tick",
         "asset:effect/0204.void_transaction/_/tick",
         "asset:effect/0212.lunatic_moon/_/tick",
@@ -22,6 +23,7 @@
         "asset:effect/0259.virtual_image/_/tick",
         "asset:effect/0260.life_steal/_/tick",
         "asset:effect/0603.domination/_/tick",
+        "asset:effect/0604.logging_of_soul/_/tick",
         "asset:effect/0605.aurora_corrosion/_/tick",
         "asset:effect/0607.sedation/_/tick",
         "asset:effect/0608.sinking/_/tick",
@@ -30,6 +32,6 @@
         "asset:effect/0615.wave_curse/_/tick",
         "asset:effect/0613.white_curse/_/tick",
         "asset:effect/0613.white_curse/_/tick",
-        "asset:effect/0124.darkness/_/tick"
+        "asset:effect/0203.secret_meat/_/tick"
     ]
 }
