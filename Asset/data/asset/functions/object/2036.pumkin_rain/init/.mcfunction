@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/init/
+#> asset:object/2036.pumpkin_rain/init/
 #
 # Objectのinit時の処理
 #

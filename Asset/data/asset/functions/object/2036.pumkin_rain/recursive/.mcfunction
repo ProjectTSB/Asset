@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/recursive/
+#> asset:object/2036.pumpkin_rain/recursive/
 #
 # 継承先などから実行される処理
 #

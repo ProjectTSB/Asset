@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/kill/
+#> asset:object/2036.pumpkin_rain/kill/
 #
 # 継承先などから実行される処理
 #

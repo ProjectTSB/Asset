@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/register
+#> asset:object/2036.pumpkin_rain/register
 #
 # Objectのデータを指定
 #

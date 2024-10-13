@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/2036.falling_pumpkin_bomb/init/
+    function asset:object/2036.pumpkin_rain/init/

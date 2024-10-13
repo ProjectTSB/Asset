@@ -1,8 +1,8 @@
-#> asset:object/2036.falling_pumpkin_bomb/detect_hit_entity/check_hit
+#> asset:object/2036.pumpkin_rain/detect_hit_entity/check_hit
 #
 #
 #
-# @within function asset:object/2036.falling_pumpkin_bomb/detect_hit_entity/
+# @within function asset:object/2036.pumpkin_rain/detect_hit_entity/
 
     execute if entity @s[scores={General.Object.Tick=500..510}] run data modify storage lib: args.dx set value 0.55
     execute if entity @s[scores={General.Object.Tick=511..520}] run data modify storage lib: args.dx set value 0.7

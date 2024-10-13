@@ -1,8 +1,8 @@
-#> asset:object/2036.falling_pumpkin_bomb/tick/expand
+#> asset:object/2036.pumpkin_rain/tick/expand
 #
 #
 #
-# @within function asset:object/2036.falling_pumpkin_bomb/tick/
+# @within function asset:object/2036.pumpkin_rain/tick/
 
 # カウントする
     scoreboard players add @s 2036.ExpandCount 1

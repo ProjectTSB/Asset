@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/detect_hit_block/
+#> asset:object/2036.pumpkin_rain/detect_hit_block/
 #
 # 継承先などから実行される処理
 #

@@ -1,4 +1,4 @@
-#> asset:object/2036.falling_pumpkin_bomb/tick/
+#> asset:object/2036.pumpkin_rain/tick/
 #
 # Objectのtick時の処理
 #
