@@ -1,8 +1,8 @@
-#> asset:mob/0373.lightning_spellbook/death/
+#> asset:mob/0371.lightning_spellbook/death/
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0373.lightning_spellbook/_/death
+# @within function asset:mob/0371.lightning_spellbook/_/death
 
 # 演出
     particle electric_spark ~ ~1.68 ~ 0 0 0 0.15 35 normal @a

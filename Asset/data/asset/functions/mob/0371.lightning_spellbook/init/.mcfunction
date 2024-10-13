@@ -1,8 +1,8 @@
-#> asset:mob/0373.lightning_spellbook/init/
+#> asset:mob/0371.lightning_spellbook/init/
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0373.lightning_spellbook/_/init
+# @within function asset:mob/0371.lightning_spellbook/_/init
 
 # スコア初期化
     scoreboard players set @s AD.Tick -80
