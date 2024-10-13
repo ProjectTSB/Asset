@@ -5,6 +5,9 @@
 # @user
 # @private
 
+# フィールドを設定
+    data modify storage api: Argument.FieldOverride.Rotation set value [0.0f,45.0f]
+
 # 召喚
     data modify storage api: Argument.ID set value 2048
     function api:object/summon

@@ -5,7 +5,7 @@
 # @within asset:object/alias/2048/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    function asset:object/2048.wave_magic/summon/.m with storage asset:context this
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true

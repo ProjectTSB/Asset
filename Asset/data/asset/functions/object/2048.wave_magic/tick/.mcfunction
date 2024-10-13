@@ -16,9 +16,16 @@
 # 継承
     execute at @s run function asset:object/super.tick
 
+# リセット
+    tag @s[tag=2048.Interval] remove 2048.Interval
+
 # 消滅
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={General.Object.Tick=118..}] run kill @s
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Object.Tick=127..}] run kill @s
+# 80..99 着陸前で4秒以上経過で消滅
+# 120.. ノーマル以下で着陸後1秒で消滅
+# 130.. ハード以上で着陸後1.5秒で消滅
+    execute if entity @s[scores={General.Object.Tick=80..99}] run kill @s
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={General.Object.Tick=120..}] run kill @s
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Object.Tick=130..}] run kill @s
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
