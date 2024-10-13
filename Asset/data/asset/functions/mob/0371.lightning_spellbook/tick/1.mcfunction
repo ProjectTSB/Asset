@@ -33,8 +33,6 @@
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=2D.LeftRotate] run tp @s ^ ^ ^0.2 ~-12 0
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=!2D.LeftRotate] run tp @s ^ ^ ^0.2 ~12 0
 
-    execute if entity @s[tag=OnTop] run say b
-
 # 判定用Tagを削除
     tag @s[tag=OnTop] remove OnTop
 
