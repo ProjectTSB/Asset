@@ -5,8 +5,8 @@
 # @within function asset:mob/0371.lightning_spellbook/tick/2.ready
 
 # 弾を召喚
-    data modify storage api: Argument.ID set value 374
-    function api:mob/summon
+    data modify storage api: Argument.ID set value 2049
+    function api:object/summon
 
 # リセット
     function asset:mob/0371.lightning_spellbook/tick/4.reset
