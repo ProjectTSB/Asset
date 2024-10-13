@@ -10,7 +10,7 @@
 
 # 体力割合取得
     function api:mob/get_health_percent
-    execute store result score $Per Temporary run data get storage api: Return.HealthPer
+    execute store result score $Per Temporary run data get storage api: Return.HealthPer 100
 
 # 40%以下ならTagを付与
     execute if score $Per Temporary matches 40.. run tag @s add 1N.HealthLess40Per

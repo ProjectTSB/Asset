@@ -16,7 +16,7 @@
     tag @s remove 1N.GiantPumpkin1.Right
     tag @s remove 1N.GiantPumpkin2
     tag @s remove 1N.PumpkinRain
-    tag @s remove 1N.Shoot
+    tag @s remove 1N.Missile
 
 # スコアを変える
     scoreboard players set @s 1N.Tick -50
