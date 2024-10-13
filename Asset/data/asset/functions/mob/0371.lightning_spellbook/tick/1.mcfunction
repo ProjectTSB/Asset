@@ -24,7 +24,7 @@
     execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
 
 # 下にプレイヤーがいるか判定
-    execute positioned ~-1.5 ~-2.5 ~-1.5 if entity @p[dx=2,dy=1.5,dz=2] at @s run tag @s add OnTop
+    execute positioned ~-1.5 ~ ~-1.5 if entity @p[dx=2,dy=-2.5,dz=2] at @s run tag @s add OnTop
 
 # プレイヤーが下にいなければ移動
     execute if entity @s[tag=!OnTop] at @s facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
@@ -32,6 +32,8 @@
 # プレイヤーが下にいれば旋回する
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=2D.LeftRotate] run tp @s ^ ^ ^0.2 ~-12 0
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=!2D.LeftRotate] run tp @s ^ ^ ^0.2 ~12 0
+
+    say @s[tag=OnTop]
 
 # 判定用Tagを削除
     tag @s[tag=OnTop] remove OnTop
