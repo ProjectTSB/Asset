@@ -35,22 +35,22 @@
 
 # デバッグ用、実行する技を確定させる
     scoreboard players set $Random Temporary 13
+    tag @s add RW.Skill.BlazingCombo
 
 # スキル選択
-    execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Meteor
-    execute if score $Random Temporary matches 1 run tag @s add RW.Skill.Thunder
-    execute if score $Random Temporary matches 2 run tag @s add RW.Skill.AncientLight
-    execute if score $Random Temporary matches 3 run tag @s add RW.Skill.FreezingShred
-    execute if score $Random Temporary matches 4 run tag @s add RW.Skill.BlazingSlash
-    execute if score $Random Temporary matches 5 run tag @s add RW.Skill.LightningStab
-    execute if score $Random Temporary matches 6 run tag @s add RW.Skill.SpreadShot
-    execute if score $Random Temporary matches 7 run tag @s add RW.Skill.Starfury
-    execute if score $Random Temporary matches 8 run tag @s add RW.Skill.MoveShot
-    execute if score $Random Temporary matches 9 run tag @s add RW.Skill.AimingLaser
-    execute if score $Random Temporary matches 10 run tag @s add RW.Skill.BlazingCombo
-    execute if score $Random Temporary matches 11 run tag @s add RW.Skill.SwordRain
-    execute if score $Random Temporary matches 12 run tag @s add RW.Skill.HomingShot
-    execute if score $Random Temporary matches 13 run tag @s add RW.Skill.Hellfire
+#    execute if score $Random Temporary matches 1 run tag @s add RW.Skill.Thunder
+#    execute if score $Random Temporary matches 2 run tag @s add RW.Skill.AncientLight
+#    execute if score $Random Temporary matches 3 run tag @s add RW.Skill.FreezingShred
+#    execute if score $Random Temporary matches 4 run tag @s add RW.Skill.BlazingSlash
+#    execute if score $Random Temporary matches 5 run tag @s add RW.Skill.LightningStab
+#    execute if score $Random Temporary matches 6 run tag @s add RW.Skill.SpreadShot
+#    execute if score $Random Temporary matches 7 run tag @s add RW.Skill.Starfury
+#    execute if score $Random Temporary matches 8 run tag @s add RW.Skill.MoveShot
+#    execute if score $Random Temporary matches 9 run tag @s add RW.Skill.AimingLaser
+#    execute if score $Random Temporary matches 10 run tag @s add RW.Skill.BlazingCombo
+#    execute if score $Random Temporary matches 11 run tag @s add RW.Skill.SwordRain
+#    execute if score $Random Temporary matches 12 run tag @s add RW.Skill.HomingShot
+#    execute if score $Random Temporary matches 13 run tag @s add RW.Skill.Hellfire
 
 # リセット
     scoreboard players reset $Random Temporary

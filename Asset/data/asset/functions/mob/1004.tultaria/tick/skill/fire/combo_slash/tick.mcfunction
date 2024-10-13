@@ -10,7 +10,6 @@
 # 移動先を決定
 #    execute if score @s RW.Tick matches 0 at @r run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
 
-
 # 狙いを定めた対象に突っ込んでくる
     execute if score @s RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/dash_start
 
@@ -18,18 +17,22 @@
     execute if score @s RW.Tick matches 20..40 run tp @s ^ ^ ^1
 
 # 眼の前に対象がいたらそこで発動
-    execute if score @s RW.Tick matches 20..40 positioned ^ ^ ^2 if entity @p[distance=..2] run scoreboard players set @s RW.Tick 60
+    execute if score @s RW.Tick matches 20..40 positioned ^ ^ ^4 if entity @p[distance=..2] run scoreboard players set @s RW.Tick 40
 
 # コンボ攻撃
     # 1
         data modify storage api: Argument.FieldOverride set value {Color:16731392,Frames:[20335,20336,20337],Scale:[5f,5f,0.1f],Transformation:{left_rotation:[0.5f,-0.5f,0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
-        execute if score @s RW.Tick matches 60 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 40..44 run tp @s ^ ^ ^0.8
     # 2
         data modify storage api: Argument.FieldOverride set value {Color:16731392,Frames:[20335,20336,20337],Scale:[5f,5f,0.1f],Transformation:{left_rotation:[-0.39f,-0.58f,-0.69f,0.13f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
-        execute if score @s RW.Tick matches 64 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 44 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 44..48 run tp @s ^ ^ ^0.5
     # 3
         data modify storage api: Argument.FieldOverride set value {Color:16731392,Frames:[20335,20336,20337],Scale:[5f,5f,0.1f],Transformation:{left_rotation:[0.27f,-0.65f,0.27f,0.65f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
-        execute if score @s RW.Tick matches 68 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 48 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/summon_slash
+        execute if score @s RW.Tick matches 48..50 run tp @s ^ ^ ^0.3
+        execute if score @s RW.Tick matches 50..54 run tp @s ^ ^ ^0.1
 
     # 剣投げ
         #execute if score @s RW.Tick matches 68 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/throw_sword
