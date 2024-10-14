@@ -6,7 +6,15 @@
 
 # 着地Tagを付与
     tag @s add 2037.OnGround
+
+# スコアを弄る
+    scoreboard players set @s General.Object.Tick 1000
+
+# 動かないように速度を0に
     data modify storage asset:context this.MovePerStep set value 0
+
+# y座標を良い感じにする
+    execute align y run tp @s ~ ~0.5 ~
 
 # デバッグ用
     #tellraw @a [{"score":{"name":"@s","objective":"General.Object.Tick"}}]
