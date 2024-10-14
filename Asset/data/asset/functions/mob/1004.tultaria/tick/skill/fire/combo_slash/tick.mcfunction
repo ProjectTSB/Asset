@@ -19,6 +19,11 @@
 # 眼の前に対象がいたらそこで発動
     execute if score @s RW.Tick matches 20..40 positioned ^ ^ ^4 if entity @p[distance=..2] run scoreboard players set @s RW.Tick 40
 
+# 光の柱を設置する
+    execute if score @s RW.Tick matches 30 rotated ~90 ~ run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/place_light_pillar
+    execute if score @s RW.Tick matches 35 rotated ~90 ~ run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/place_light_pillar
+    execute if score @s RW.Tick matches 40 rotated ~90 ~ run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/place_light_pillar
+
 # コンボ攻撃
     # 1
         data modify storage api: Argument.FieldOverride set value {Color:16731392,Frames:[20335,20336,20337],Scale:[5f,5f,0.1f],Transformation:{left_rotation:[0.5f,-0.5f,0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
