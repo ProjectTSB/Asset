@@ -8,8 +8,10 @@
     summon item ~ ~2 ~ {Item:{id:"carved_pumpkin",Count:1b}}
 
 # 演出
-    particle dust 1 0.6 0 2 ~ ~2.5 ~ 2 2 2 0 120 normal @a
-    particle dust 0.851 0 1 2 ~ ~2.5 ~ 2 2 2 0 120 normal @a
+    particle dust 1 0.6 0 2 ~ ~2 ~ 2 2 2 0 120 normal @a
+    particle dust 0.851 0 1 2 ~ ~2 ~ 2 2 2 0 120 normal @a
+    particle cloud ~ ~2 ~ 0 0 0 0.3 120 normal @a
+    particle flame ~ ~2 ~ 0 0 0 0.3 120 normal @a
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.6 1.3 0
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.6 1.6 0
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.6 1.9 0
