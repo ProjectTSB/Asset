@@ -6,6 +6,7 @@
     #declare score_holder $Random
     #declare score_holder $Random2
     #declare score_holder $Interval
+    #declare score_holder $Temp
     #declare tag 1N.Quiz
     #declare tag 1N.ForwardShoot
     #declare tag 1N.SpreadShoot
