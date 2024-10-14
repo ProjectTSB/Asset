@@ -19,7 +19,7 @@
     data modify storage lib: args.dx set value 2.8
     data modify storage lib: args.dy set value 2.8
     data modify storage lib: args.dz set value 2.8
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..9]"
+    data modify storage lib: args.selector set value "@a[distance=..9]"
     function lib:rotatable_dxyz/m with storage lib: args
 
 # 演出とは逆にプレイヤーを回復する
