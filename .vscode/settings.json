@@ -745,7 +745,7 @@
                         "#",
                         "# @within tag/function asset:artifact/register",
                         "",
-                        "data modify storage asset:artifact RarityRegistry[%Rarity%] append value %ItemID%"
+                        "data modify storage asset:artifact RarityRegistry[%Rarity%] append value [%ItemID%]"
                     ]
                 },
                 {
