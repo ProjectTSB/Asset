@@ -45,6 +45,7 @@
     execute if entity @s[scores={General.Object.Tick=1010}] run playsound minecraft:entity.item.pickup hostile @a ~ ~ ~ 1 0.8
     execute if entity @s[scores={General.Object.Tick=1010}] run data modify entity @s start_interpolation set value 0
     execute if entity @s[scores={General.Object.Tick=1010}] run data modify entity @s transformation.scale set value [0.3f,0.3f,0.3f]
+    execute if entity @s[scores={General.Object.Tick=1010}] run data modify entity @s transformation.translation set value [0f,0f,0.35f]
 
 # デカくなる
     execute if entity @s[scores={General.Object.Tick=1020}] run playsound minecraft:entity.item.pickup hostile @a ~ ~ ~ 1 0.5
