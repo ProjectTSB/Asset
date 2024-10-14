@@ -11,9 +11,9 @@
     function api:damage/modifier
 
 # 回転するxyzLibを使ってダメージ判定を行う
-    data modify storage lib: args.dx set value 1.5
-    data modify storage lib: args.dy set value 1.5
-    data modify storage lib: args.dz set value 1.5
+    data modify storage lib: args.dx set value 1.8
+    data modify storage lib: args.dy set value 1.8
+    data modify storage lib: args.dz set value 1.8
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..5]"
     function lib:rotatable_dxyz/m with storage lib: args
     execute as @a[tag=DXYZ,distance=..5] run function api:damage/
