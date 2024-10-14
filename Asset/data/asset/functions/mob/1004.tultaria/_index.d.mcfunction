@@ -8,6 +8,12 @@
 
     #declare storage rw_storage:
 
+## ボスのモードに関するタグ
+    #declare tag RW.Mode.Fire
+    #declare tag RW.Mode.Water
+    #declare tag RW.Mode.Thunder
+    #declare tag RW.Mode.Light
+
     ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss
     #declare tag RW.ModelRoot

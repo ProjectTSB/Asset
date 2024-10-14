@@ -23,15 +23,34 @@
 # チェイス停止
     kill @e[tag=RW.ChaseMarker]
 
-# 行動をランダムに選択
+# 属性をランダムに選択
+# TODO: あとで個人用ストレージにしておくこと
+    # 要素がない場合は再付与
+        execute if data storage rw_storage: Tultaria{Element:[]} run data modify storage rw_storage: Element set value [Fire,Water,Thunder]
+    # ストレージの要素数を取得
+        execute store result score $Element Temporary run data get storage rw_storage: Element
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
+    # 要素数で剰余算
+        scoreboard players operation $Random Temporary %= $Element Temporary
+    # 選択
+
     # フェイズ1
         execute if entity @s[scores={RW.Phase=1}] run scoreboard players operation $Random Temporary %= $6 Const
     # フェイズ2(拡散ショットを解禁)
         execute if entity @s[scores={RW.Phase=2}] run scoreboard players operation $Random Temporary %= $7 Const
     # フェイズ3(スターフューリーを解禁)
         execute if entity @s[scores={RW.Phase=3}] run scoreboard players operation $Random Temporary %= $8 Const
+
+# 行動をランダムに選択
+#    # 疑似乱数取得
+#        execute store result score $Random Temporary run function lib:random/
+#    # フェイズ1
+#        execute if entity @s[scores={RW.Phase=1}] run scoreboard players operation $Random Temporary %= $6 Const
+#    # フェイズ2(拡散ショットを解禁)
+#        execute if entity @s[scores={RW.Phase=2}] run scoreboard players operation $Random Temporary %= $7 Const
+#    # フェイズ3(スターフューリーを解禁)
+#        execute if entity @s[scores={RW.Phase=3}] run scoreboard players operation $Random Temporary %= $8 Const
 
 # デバッグ用、実行する技を確定させる
     scoreboard players set $Random Temporary 13
