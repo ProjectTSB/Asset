@@ -5,7 +5,7 @@
 # @within asset:object/alias/1040/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[0.0f,90.0f],teleport_duration:1,item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:1033}},billboard:vertical,transformation:[0.7071f,0.7071f,0.0000f,0.0000f,0.0000f,-0.0000f,-1.0000f,0.0000f,-0.7071f,0.7071f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[0.0f,90.0f],teleport_duration:1,item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20344}},billboard:vertical,transformation:[0.7071f,0.7071f,0.0f,0.0f,0.0f,-0.0f,-1.0f,0.0f,-0.7071f,0.7071f,-0.0f,0.0f,0.0f,0.0f,0.0f,1.0f]}
 
 
 # 実装フラグを立てる
