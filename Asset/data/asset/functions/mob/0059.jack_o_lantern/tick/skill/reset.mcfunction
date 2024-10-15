@@ -20,6 +20,8 @@
 
 # スコアを変える
     scoreboard players set @s 1N.Tick -80
+    scoreboard players reset @s 1N.2ndTick
+    scoreboard players reset @s 1N.Interval
 
 # 一部フィールドのリセット
     data remove storage asset:context this.TargetID

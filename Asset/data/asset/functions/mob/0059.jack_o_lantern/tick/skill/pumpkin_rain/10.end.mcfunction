@@ -1,4 +1,4 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/9.end
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/10.end
 #
 # カボチャの雨の終わり
 #

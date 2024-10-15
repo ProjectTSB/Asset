@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/8.random_face
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/9.random_face
 #
 # 返り値としてCustomModelDataのIDを返す
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/7.summon
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/8.summon
 
 #> Private
 # @private
