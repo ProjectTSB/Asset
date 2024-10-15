@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/2.interval
 
-
 # ノーマル以下なら 座標 + エリア内拡散で召喚
 # ハード以上なら (座標 or 偏差) + エリア内拡散で召喚
     execute if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/50 run tag @s add 1N.Random
