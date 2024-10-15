@@ -15,11 +15,11 @@
     tag @s remove 1N.GiantPumpkin1.Left
     tag @s remove 1N.GiantPumpkin1.Right
     tag @s remove 1N.GiantPumpkin2
-    tag @s remove 1N.PumpkinRain
     tag @s remove 1N.Missile
+    tag @s remove 1N.PumpkinRain
 
 # スコアを変える
-    scoreboard players set @s 1N.Tick -50
+    scoreboard players set @s 1N.Tick -80
 
 # 一部フィールドのリセット
     data remove storage asset:context this.TargetID

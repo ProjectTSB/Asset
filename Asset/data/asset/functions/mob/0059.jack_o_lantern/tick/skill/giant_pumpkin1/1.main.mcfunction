@@ -10,7 +10,6 @@
 
 # 前方に巨大カボチャを召喚
 
-
 # パターン1 中央スタート
     execute if entity @s[tag=1N.GiantPumpkin1.Center,scores={1N.Tick=20}] rotated ~ 0 positioned ^ ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/3.summon
     execute if entity @s[tag=1N.GiantPumpkin1.Center,scores={1N.Tick=30}] rotated ~ 0 positioned ^3 ^ ^3.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/3.summon

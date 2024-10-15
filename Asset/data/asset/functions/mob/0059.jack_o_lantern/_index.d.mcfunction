@@ -8,10 +8,7 @@
     #declare score_holder $Interval
     #declare score_holder $Temp
     #declare tag 1N.Quiz
-    #declare tag 1N.ForwardShoot
-    #declare tag 1N.SpreadShoot
     #declare tag 1N.PumpkinRain
-    #declare tag 1N.FakeBomb
     #declare tag 1N.GiantPumpkin1
     #declare tag 1N.GiantPumpkin1.Center
     #declare tag 1N.GiantPumpkin1.Left
