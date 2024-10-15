@@ -1,6 +1,7 @@
 #> asset:object/2037.defeated_pumpkin/summon/.m
 #
-#
+# args:
+#   RotationX : double
 #
 # @within function asset:object/2037.defeated_pumpkin/summon/
 
