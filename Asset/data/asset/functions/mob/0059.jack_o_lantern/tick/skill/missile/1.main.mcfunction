@@ -14,17 +14,19 @@
     execute if entity @s[scores={1N.Tick=6}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
     execute if entity @s[scores={1N.Tick=8}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
 
+# ハード以上でTickをスキップ
+    execute if entity @s[scores={1N.Tick=10}] run scoreboard players set @s 1N.Tick 35
+
 # ターゲットを決める
-    execute if entity @s[scores={1N.Tick=15}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/2.select_target
+    execute if entity @s[scores={1N.Tick=40}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/2.select_target
 
-    execute if entity @s[scores={1N.Tick=15}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
-    execute if entity @s[scores={1N.Tick=17}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
-    execute if entity @s[scores={1N.Tick=19}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
-    execute if entity @s[scores={1N.Tick=21}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
-    execute if entity @s[scores={1N.Tick=23}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
-
-# カボチャミサイルを撃つ
-   # execute if entity @s[scores={1N.Tick=10..15}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+# 撃つ
+    execute if entity @s[scores={1N.Tick=40}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+    execute if entity @s[scores={1N.Tick=42}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+    execute if entity @s[scores={1N.Tick=44}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+    execute if entity @s[scores={1N.Tick=46}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+    execute if entity @s[scores={1N.Tick=48}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
 
 # リセット
-    execute if entity @s[scores={1N.Tick=30..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={1N.Tick=40..}] if predicate api:global_vars/difficulty/easy run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={1N.Tick=60..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset

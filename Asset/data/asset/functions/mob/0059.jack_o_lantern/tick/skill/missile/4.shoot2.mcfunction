@@ -25,7 +25,7 @@
 
 # ミサイルを召喚
     data modify storage api: Argument.ID set value 2034
-    data modify storage api: Argument.FieldOverride.TargetID set from storage asset:context this.TargetID
+    data modify storage api: Argument.FieldOverride.TargetName set from storage asset:context this.TargetName
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s run data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~0.3 ~ run function api:object/summon
 
