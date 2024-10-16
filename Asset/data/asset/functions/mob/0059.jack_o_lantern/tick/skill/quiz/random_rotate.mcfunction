@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/5.random_rotate
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_rotate
 #
 # ランダムな方向を向く
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/4.random_move
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move
 
 # ランダムな方向を向く
     execute store result score $Random Temporary run function lib:random/

@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/6.quiz_clear
+#> asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_clear
 #
 # クイズに正解されたときの処理
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/
 
 # 演出
     particle large_smoke ~ ~1.8 ~ 0 0 0 0.1 50 normal @a
@@ -20,4 +20,4 @@
     function api:damage/reset
 
 # クイズエンド
-    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/10.end
+    function asset:mob/0059.jack_o_lantern/tick/skill/quiz/end

@@ -10,6 +10,7 @@
 
 # タグ消す
     tag @s remove 1N.Quiz
+    tag @s remove 1N.Quiz.Glowing
     tag @s remove 1N.GiantPumpkin1
     tag @s remove 1N.GiantPumpkin1.Center
     tag @s remove 1N.GiantPumpkin1.Left

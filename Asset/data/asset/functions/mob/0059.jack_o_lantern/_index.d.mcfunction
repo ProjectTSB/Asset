@@ -8,6 +8,7 @@
     #declare score_holder $Interval
     #declare score_holder $Temp
     #declare tag 1N.Quiz
+    #declare tag 1N.Quiz.Glowing
     #declare tag 1N.PumpkinRain
     #declare tag 1N.GiantPumpkin1
     #declare tag 1N.GiantPumpkin1.Center
