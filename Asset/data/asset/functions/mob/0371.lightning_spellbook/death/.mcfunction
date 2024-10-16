@@ -5,6 +5,5 @@
 # @within function asset:mob/0371.lightning_spellbook/_/death
 
 # 演出
-    particle electric_spark ~ ~1.68 ~ 0 0 0 0.15 35 normal @a
-    particle large_smoke ~ ~1.68 ~ 0 0 0 0.15 15 normal @a
+    particle wax_off ~ ~1.68 ~ 0 0 0 20 35 normal @a
     playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 0.6 0.7
