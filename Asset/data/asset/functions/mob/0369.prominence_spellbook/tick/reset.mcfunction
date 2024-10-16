@@ -1,9 +1,9 @@
-#> asset:mob/0369.prominence_spellbook/tick/4.reset
+#> asset:mob/0369.prominence_spellbook/tick/reset
 #
 # リセット処理
 #
 # @within function
-#   asset:mob/0369.prominence_spellbook/tick/2.ready
+#   asset:mob/0369.prominence_spellbook/tick/ready
 
 #> Private
 # @private

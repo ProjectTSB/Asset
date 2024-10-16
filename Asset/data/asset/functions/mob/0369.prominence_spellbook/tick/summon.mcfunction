@@ -1,8 +1,8 @@
-#> asset:mob/0369.prominence_spellbook/tick/3.summon
+#> asset:mob/0369.prominence_spellbook/tick/summon
 #
 # 魔法を召喚する
 #
-# @within function asset:mob/0369.prominence_spellbook/tick/2.ready
+# @within function asset:mob/0369.prominence_spellbook/tick/ready
 
 # 最寄りのプレイヤーの方を見る
     tp @s ~ ~ ~ facing entity @p eyes
