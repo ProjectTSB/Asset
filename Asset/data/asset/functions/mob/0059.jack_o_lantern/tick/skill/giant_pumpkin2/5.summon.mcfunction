@@ -6,4 +6,5 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2031
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute positioned ~ ~1.5 ~ run function api:object/summon

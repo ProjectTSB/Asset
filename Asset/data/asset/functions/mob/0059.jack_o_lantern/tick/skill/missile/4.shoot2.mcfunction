@@ -27,6 +27,7 @@
     data modify storage api: Argument.ID set value 2034
     data modify storage api: Argument.FieldOverride.TargetName set from storage asset:context this.TargetName
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s run data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute positioned ~ ~0.3 ~ run function api:object/summon
 
 # 前方拡散Markerをkill

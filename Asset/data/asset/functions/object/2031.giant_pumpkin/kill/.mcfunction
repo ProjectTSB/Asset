@@ -15,17 +15,19 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.5 1.9 0
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 1.7 0
 
-# ダメージ
-    data modify storage api: Argument.Damage set value 18
-    data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Fire"
-    function api:damage/modifier
 # 回転するxyzLibを使ってダメージ判定を行う
     data modify storage lib: args.dx set value 1.8
     data modify storage lib: args.dy set value 1.8
     data modify storage lib: args.dz set value 1.8
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..5]"
     function lib:rotatable_dxyz/m with storage lib: args
+
+# ダメージ
+    data modify storage api: Argument.Damage set value 15
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=DXYZ,distance=..5] run function api:damage/
     function api:damage/reset
 
