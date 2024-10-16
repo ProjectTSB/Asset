@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/
 
 # 徐々に召喚間隔を狭めていき、最終的にはインターバル処理で召喚
-# 2回召喚する毎に2tick狭めていく
+# 最初は12tick間隔で、2回召喚する毎に2tick狭めていく
 # ノーマル以下では最低6tick、ハード以上では4tick
     execute if entity @s[scores={1N.Tick=20}] run tag @s add 1N.PumpkinRain.Interval
     execute if entity @s[scores={1N.Tick=32}] run tag @s add 1N.PumpkinRain.Interval
