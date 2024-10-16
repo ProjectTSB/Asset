@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/missile/4.shoot2
+#> asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot2
 #
 # カボチャミサイルの発射処理2
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/3.shoot
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot
 
 #> Private
 # @private

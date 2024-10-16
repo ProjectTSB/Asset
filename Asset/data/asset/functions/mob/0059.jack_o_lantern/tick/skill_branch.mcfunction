@@ -15,7 +15,7 @@
     execute if entity @s[tag=1N.GiantPumpkin2] at @e[type=marker,tag=1N.SpawnMarker,distance=..30,limit=1] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
 
 # カボチャミサイル
-    execute if entity @s[tag=1N.Missile] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/1.main
+    execute if entity @s[tag=1N.Missile] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/
 
 # 超巨大カボチャ
     execute if entity @s[tag=1N.PumpkinRain] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/

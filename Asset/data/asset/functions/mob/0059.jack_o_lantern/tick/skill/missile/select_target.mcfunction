@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/missile/2.select_target
+#> asset:mob/0059.jack_o_lantern/tick/skill/missile/select_target
 #
 # ミサイルのターゲットを決める
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/
 
 #> Private
 # @private
