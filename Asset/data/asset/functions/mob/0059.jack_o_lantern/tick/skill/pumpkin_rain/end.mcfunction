@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/10.end
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/end
 #
 # カボチャの雨の終わり
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/
 
 # 頭を変える
     item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}

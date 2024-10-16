@@ -18,4 +18,4 @@
     execute if entity @s[tag=1N.Missile] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/1.main
 
 # 超巨大カボチャ
-    execute if entity @s[tag=1N.PumpkinRain] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/1.main
+    execute if entity @s[tag=1N.PumpkinRain] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/

@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/5.predict
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/predict_set
 #
 # 偏差でカボチャの雨を降らす
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/4.select_pos
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/select_pos
 
 #> Private
 # @private
@@ -35,7 +35,7 @@
     function lib:array/session/close
 
 # マクロで偏差撃ちする
-    execute at @p[tag=Target] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/6.predict_summon.m with storage asset:temp Predict
+    execute at @p[tag=Target] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/predict_summon.m with storage asset:temp Predict
 
 # リセット
     tag @p[tag=Target] remove Target

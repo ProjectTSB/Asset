@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/2.first_tick
+#> asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/first_tick
 #
 # スキルの最初のtickで実行する
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/
 
 # 演出
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
