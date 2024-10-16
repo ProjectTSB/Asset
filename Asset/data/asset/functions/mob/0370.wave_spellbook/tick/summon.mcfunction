@@ -13,7 +13,7 @@
 
 # 弾を召喚
     data modify storage api: Argument.ID set value 2048
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..3,limit=1] MobUUID
     function api:object/summon
 
 # 消滅
