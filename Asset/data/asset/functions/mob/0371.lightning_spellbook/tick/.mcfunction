@@ -1,4 +1,4 @@
-#> asset:mob/0371.lightning_spellbook/tick/1
+#> asset:mob/0371.lightning_spellbook/tick/
 #
 # Mobのtick時の処理
 #
@@ -15,7 +15,7 @@
     scoreboard players add @s AD.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/2.ready
+    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/ready
 
 # ここより下は移動処理
 

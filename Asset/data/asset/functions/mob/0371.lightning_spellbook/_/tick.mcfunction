@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:mob/tick
 
-execute if data storage asset:context {id:371} run function asset:mob/0371.lightning_spellbook/tick/1
+execute if data storage asset:context {id:371} run function asset:mob/0371.lightning_spellbook/tick/
