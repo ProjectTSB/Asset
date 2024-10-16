@@ -2,7 +2,7 @@
 #
 # フェイズ2移行する時の動作
 #
-# @within function asset:mob/1004.tultaria/tick/2.tick
+# @within function asset:mob/1004.tultaria/tick/
 
 # 怯み動作
     execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/wait_time/phase2_transition/2.damage_pose

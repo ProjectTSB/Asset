@@ -2,7 +2,7 @@
 #
 # ベース動作。他モブでいうTickに相当
 #
-# @within function asset:mob/1004.tultaria/tick/2.tick
+# @within function asset:mob/1004.tultaria/tick/
 
 # こっち向く
     execute if entity @s[tag=!RW.InAction] unless entity @s[scores={RW.FakeInertia=0..}] facing entity @p feet run tp @s ~ ~ ~ ~ ~
@@ -31,7 +31,7 @@
     execute if entity @s[tag=RW.Move] run function asset:mob/1004.tultaria/tick/move/teleport/move_to_marker
 
 # リセットからの復帰時に待機アニメを再生
-    execute if score @s RW.Tick matches -1 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral/play
+    execute if score @s RW.Tick matches -1 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/play
 
 ## 嘘慣性
     # 下が空気なら通常実行
