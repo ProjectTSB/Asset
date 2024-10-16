@@ -8,7 +8,7 @@
     execute if entity @s[tag=1N.Quiz] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/
 
 # 巨大カボチャ転がし
-    execute if entity @s[tag=1N.GiantPumpkin1] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/1.main
+    execute if entity @s[tag=1N.GiantPumpkin1] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/
 
 # 巨大カボチャ転がし2
 # 仕様上スポーンマーカーの位置で実行する

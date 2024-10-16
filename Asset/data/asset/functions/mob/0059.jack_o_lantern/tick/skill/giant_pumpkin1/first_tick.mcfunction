@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/2.first_tick
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/first_tick
 #
 # 最初のTickにやるべきこと
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/
 
 # NoAIにする
     data modify entity @s NoAI set value 1b

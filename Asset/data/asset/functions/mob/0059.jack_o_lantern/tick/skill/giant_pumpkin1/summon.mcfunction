@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/3.summon
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/summon
 #
 # 巨大カボチャを召喚する
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/
 
 # FieldOverrideを設定
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
