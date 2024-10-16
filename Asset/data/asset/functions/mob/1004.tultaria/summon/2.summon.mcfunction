@@ -43,9 +43,11 @@
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:tultaria/summon
 
+# ストレージ管理
+    data modify storage rw_storage: Element set value [Fire,Water,Thunder]
+
 # 自身のモデルに待機モーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/apply_variant/no_wing
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral/play
+    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/play
 
 # モデルにTeleport_durationを設定
     execute as @e[type=#animated_java:root,tag=aj.tultaria.bone] run data modify entity @s teleport_duration set value 1

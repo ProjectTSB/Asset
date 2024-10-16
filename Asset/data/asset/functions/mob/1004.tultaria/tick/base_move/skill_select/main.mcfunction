@@ -23,17 +23,8 @@
 # チェイス停止
     kill @e[tag=RW.ChaseMarker]
 
-# 属性をランダムに選択
-# TODO: あとで個人用ストレージにしておくこと
-    # 要素がない場合は再付与
-        execute if data storage rw_storage: Tultaria{Element:[]} run data modify storage rw_storage: Element set value [Fire,Water,Thunder]
-    # ストレージの要素数を取得
-        execute store result score $Element Temporary run data get storage rw_storage: Element
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # 要素数で剰余算
-        scoreboard players operation $Random Temporary %= $Element Temporary
-    # 選択
+# 属性選択可能であれば、属性をランダムに選択
+    execute if entity @s run function asset:mob/1004.tultaria/tick/base_move/skill_select/element/select
 
     # フェイズ1
         execute if entity @s[scores={RW.Phase=1}] run scoreboard players operation $Random Temporary %= $6 Const

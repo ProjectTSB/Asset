@@ -14,6 +14,9 @@
     #declare tag RW.Mode.Thunder
     #declare tag RW.Mode.Light
 
+## ボスの状態に関するタグ
+    #declare tag RW.CanElementChange
+
     ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss
     #declare tag RW.ModelRoot

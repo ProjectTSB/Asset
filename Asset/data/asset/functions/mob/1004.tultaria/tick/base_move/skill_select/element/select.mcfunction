@@ -14,4 +14,3 @@
         execute unless data storage rw_storage: Element{Count:1} run function asset:mob/1004.tultaria/tick/base_move/skill_select/element/roll.m with storage rw_storage: Element
     # 要素数１個しかないとき
         execute if data storage rw_storage: Element{Count:1} run function asset:mob/1004.tultaria/tick/base_move/skill_select/element/only_one_element with storage rw_storage: Element
-    # 選択
