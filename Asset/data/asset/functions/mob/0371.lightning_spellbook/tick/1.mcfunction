@@ -33,9 +33,10 @@
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=2D.LeftRotate] run tp @s ^ ^ ^0.2 ~-12 0
     execute if entity @s[tag=OnTop] at @s if entity @s[tag=!2D.LeftRotate] run tp @s ^ ^ ^0.2 ~12 0
 
-    say @s[tag=OnTop]
+# デバッグ用
+    #say @s[tag=OnTop]
 
-# 判定用Tagを削除
+# 判定Tagを削除
     tag @s[tag=OnTop] remove OnTop
 
 # プレイヤーが近くにいたら上に移動
