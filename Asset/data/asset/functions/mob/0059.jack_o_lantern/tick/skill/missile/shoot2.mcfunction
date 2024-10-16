@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot
 
-#> Private
-# @private
-    #declare tag SpreadMarker
-
 # 演出
     execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,scores={MobID=59}] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @p ~ ~ ~ 0.7 1 1
     #execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,scores={MobID=59}] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1

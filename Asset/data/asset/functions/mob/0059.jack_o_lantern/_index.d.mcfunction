@@ -22,5 +22,6 @@
     #declare tag 1N.Random2
     #declare tag 1N.Hurt
     #declare tag 1N.SpawnMarker
+    #declare tag SpreadMarker
     #declare tag 1N.HealthLess40Per
     #declare tag 1N.AlreadySpecial

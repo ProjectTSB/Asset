@@ -12,7 +12,8 @@
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 2
 
 # 割合ダメージ
-    execute store result storage api: Argument.Damage float 0.08 run function api:mob/get_max_health
+    execute if predicate api:global_vars/difficulty/max/normal store result storage api: Argument.Damage float 0.08 run function api:mob/get_max_health
+    execute if predicate api:global_vars/difficulty/min/hard store result storage api: Argument.Damage float 0.04 run function api:mob/get_max_health
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value 1b
     function api:damage/modifier
