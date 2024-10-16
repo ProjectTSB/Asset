@@ -21,5 +21,5 @@
 # スコアをリセット
     execute if entity @s[scores={2031.SpinCount=4..}] run scoreboard players reset @s 2031.SpinCount
 
-# 高速回転状態でなければ近くのプレイヤーにダメージを与える
-    execute if entity @s[tag=!2031.HighSpeedSpinning] if entity @p[distance=..3.2] run function asset:object/2031.giant_pumpkin/tick/beginning_hit
+# 高速回転状態でなければ自身にヒット判定Tagを付与
+    execute if entity @s[tag=!2031.HighSpeedSpinning] if entity @p[distance=..5] run tag @s add 2031.BeginningSpin

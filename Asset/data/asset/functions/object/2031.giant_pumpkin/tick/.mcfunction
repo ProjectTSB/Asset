@@ -21,6 +21,9 @@
 # 継承して動かす
     function asset:object/super.tick
 
+# リセット
+    tag @s[tag=2031.BeginningSpin] remove 2031.BeginningSpin
+
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
 

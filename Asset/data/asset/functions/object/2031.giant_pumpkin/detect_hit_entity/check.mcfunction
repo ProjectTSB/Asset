@@ -1,4 +1,4 @@
-#> asset:object/2031.giant_pumpkin/detect_hit_entity/high_speed_spinning
+#> asset:object/2031.giant_pumpkin/detect_hit_entity/check
 #
 #
 #
@@ -8,9 +8,9 @@
     data modify storage lib: args.dx set value 1.8
     data modify storage lib: args.dy set value 1.8
     data modify storage lib: args.dz set value 1.8
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..4]"
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..5]"
     function lib:rotatable_dxyz/m with storage lib: args
     execute if entity @p[tag=DXYZ] run data modify storage asset:context IsHitEntity set value true
 
 # リセット
-    tag @a[tag=DXYZ,distance=..4] remove DXYZ
+    tag @a[tag=DXYZ,distance=..5] remove DXYZ

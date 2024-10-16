@@ -1,11 +1,12 @@
-#> asset:object/2031.giant_pumpkin/tick/beginning_hit
+#> asset:object/2031.giant_pumpkin/hit_entity/beginning_hit
 #
-# 回り始めにプレイヤーを轢いたとき
 #
-# @within function asset:object/2031.giant_pumpkin/tick/set_spin
+#
+# @within function asset:object/2031.giant_pumpkin/hit_entity/
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 12
+# ダメージ量は回転し始めと高速回転中で異なる
+    data modify storage api: Argument.Damage set value 8
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
@@ -18,6 +19,3 @@
     function lib:rotatable_dxyz/m with storage lib: args
     execute as @a[tag=DXYZ,distance=..5] run function api:damage/
     function api:damage/reset
-
-# リセット
-    tag @a[tag=DXYZ,distance=..5] remove DXYZ
