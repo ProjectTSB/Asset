@@ -12,7 +12,7 @@
 
 # 巨大カボチャ転がし2
 # 仕様上スポーンマーカーの位置で実行する
-    execute if entity @s[tag=1N.GiantPumpkin2] at @e[type=marker,tag=1N.SpawnMarker,distance=..30,limit=1] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
+    execute if entity @s[tag=1N.GiantPumpkin2] at @e[type=marker,tag=1N.SpawnMarker,distance=..30,limit=1] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 # カボチャミサイル
     execute if entity @s[tag=1N.Missile] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/

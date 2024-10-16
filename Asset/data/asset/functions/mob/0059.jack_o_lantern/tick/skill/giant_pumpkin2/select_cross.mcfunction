@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/2.select_cross
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_cross
 #
 # 交差転がし(交差ナシ)の処理
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 #> Private
 # @private

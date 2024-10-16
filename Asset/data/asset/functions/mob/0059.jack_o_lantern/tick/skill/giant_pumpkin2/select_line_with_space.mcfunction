@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/4.select_line_with_space
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line_with_space
 #
 # 隙間を1箇所用意して転がす
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 #> Private
 # @private

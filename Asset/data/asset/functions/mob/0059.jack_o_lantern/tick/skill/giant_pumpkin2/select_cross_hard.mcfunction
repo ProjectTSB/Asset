@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_cross_hard
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_cross_hard
 #
 # 交差転がし(交差アリ)の処理
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 # 最初に50%のTagを付与し、転がすのを2回繰り返す
 

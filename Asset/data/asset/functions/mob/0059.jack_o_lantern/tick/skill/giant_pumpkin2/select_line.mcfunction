@@ -1,8 +1,8 @@
-#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/3.select_line
+#> asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line
 #
 # ランダムな方向から1列に並べて転がす
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/1.main
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 # ランダムな方向から召喚する
     execute store result score $Random Temporary run function lib:random/
