@@ -1,4 +1,4 @@
-#> asset:mob/0370.wave_spellbook/tick/1
+#> asset:mob/0370.wave_spellbook/tick/
 #
 # Mobのtick時の処理
 #
@@ -24,4 +24,4 @@
     scoreboard players add @s AB.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={AB.Tick=0..}] run function asset:mob/0370.wave_spellbook/tick/2.ready
+    execute if entity @s[scores={AB.Tick=0..}] run function asset:mob/0370.wave_spellbook/tick/ready

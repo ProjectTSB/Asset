@@ -1,8 +1,8 @@
-#> asset:mob/0370.wave_spellbook/tick/3.summon
+#> asset:mob/0370.wave_spellbook/tick/summon
 #
 # 魔法を召喚
 #
-# @within function asset:mob/0370.wave_spellbook/tick/2.ready
+# @within function asset:mob/0370.wave_spellbook/tick/ready
 
 # プレイヤーの方を見る
 # Rotation[1]は45で固定
