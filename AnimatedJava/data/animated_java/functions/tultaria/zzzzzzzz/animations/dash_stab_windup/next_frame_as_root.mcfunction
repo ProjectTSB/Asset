@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/dash_stab_windup/tick_animation

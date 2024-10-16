@@ -1,0 +1,1 @@
+function animated_java:tultaria/zzzzzzzz/animations/attack_magic_1_left/tick_animation

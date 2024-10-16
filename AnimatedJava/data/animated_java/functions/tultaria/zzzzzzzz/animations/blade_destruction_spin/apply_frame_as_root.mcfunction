@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..30 run function animated_java:tultaria/zzzzzzzz/animations/blade_destruction_spin/tree/branch_0_30

@@ -1,0 +1,1 @@
+tag @s remove aj.tultaria.animation.attack_melee_2_throw

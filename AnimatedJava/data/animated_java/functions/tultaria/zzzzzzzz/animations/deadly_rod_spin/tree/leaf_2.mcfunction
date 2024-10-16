@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:tultaria/zzzzzzzz/animations/deadly_rod_spin/tree/leaf_2_as_bone

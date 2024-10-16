@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/deadly_loop/tick_animation

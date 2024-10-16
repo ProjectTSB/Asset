@@ -1,0 +1,1 @@
+tag @s remove aj.tultaria.animation.attack_magic_2_right

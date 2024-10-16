@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/blade_destruction_start/tick_animation
