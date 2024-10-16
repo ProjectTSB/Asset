@@ -6,8 +6,17 @@
 
 # このmcfのコマンド全てはスポーンマーカーの位置で実行される
 
-# スポーンマーカーを中心として巨大カボチャを召喚
+# 最初のTickでのみ実行
+    execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/first_tick
 
+# ノーマル以下での回転
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=1N.GiantPumpkin2.LeftRotate] at @s run tp @s ~ ~ ~ ~-20 ~
+    execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=!1N.GiantPumpkin2.LeftRotate] at @s run tp @s ~ ~ ~ ~20 ~
+
+# ハード以上での回転
+    execute if entity @s[scores={1N.Tick=..280}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/rotate
+
+# スポーンマーカーを中心として巨大カボチャを召喚
 
 # 網目状にカボチャを転がす
 # ノーマルなら1面ずつ転がす
@@ -32,5 +41,5 @@
     execute if entity @s[scores={1N.Tick=200}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line_with_space
 
 # リセット
-    execute if entity @s[scores={1N.Tick=180..}] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/reset
-    execute if entity @s[scores={1N.Tick=250..}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={1N.Tick=220..}] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={1N.Tick=300..}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/reset
