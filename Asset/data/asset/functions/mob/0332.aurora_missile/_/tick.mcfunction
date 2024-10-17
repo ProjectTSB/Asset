@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:mob/tick
 
-execute if data storage asset:context {id:332} run function asset:mob/0332.aurora_missile/tick/1
+execute if data storage asset:context {id:332} run function asset:mob/0332.aurora_missile/tick/

@@ -1,4 +1,4 @@
-#> asset:mob/0331.aurora_sorcerer/tick/1
+#> asset:mob/0331.aurora_sorcerer/tick/
 #
 # Mobのtick時の処理
 #

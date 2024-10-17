@@ -1,4 +1,4 @@
-#> asset:mob/0187.flame_mage/tick/1
+#> asset:mob/0187.flame_mage/tick/
 #
 # Mobのtick時の処理
 #

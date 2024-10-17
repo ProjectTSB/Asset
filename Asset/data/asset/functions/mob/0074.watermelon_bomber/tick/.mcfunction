@@ -1,4 +1,4 @@
-#> asset:mob/0074.watermelon_bomber/tick/1
+#> asset:mob/0074.watermelon_bomber/tick/
 #
 # Mobのtick時の処理
 #

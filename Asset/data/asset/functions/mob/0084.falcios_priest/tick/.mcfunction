@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/tick/1
+#> asset:mob/0084.falcios_priest/tick/
 #
 # Mobのtick時の処理
 #
