@@ -16,6 +16,7 @@
 
 ## ボスの状態に関するタグ
     #declare tag RW.CanElementChange
+    #declare tag RW.SkillSelected
 
     ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss

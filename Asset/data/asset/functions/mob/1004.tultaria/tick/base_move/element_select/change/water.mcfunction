@@ -1,10 +1,10 @@
-#> asset:mob/1004.tultaria/tick/base_move/skill_select/element/change/water
+#> asset:mob/1004.tultaria/tick/base_move/element_select/change/water
 #
 # チェーンジウォーター！
 #
 # @within function
-#   asset:mob/1004.tultaria/tick/base_move/skill_select/element/only_one_element
-#   asset:mob/1004.tultaria/tick/base_move/skill_select/element/only_one_element
+#   asset:mob/1004.tultaria/tick/base_move/element_select/only_one_element
+#   asset:mob/1004.tultaria/tick/base_move/element_select/get.m
 
 # 演出
     particle dust 0.8 1 1 1.5 ~ ~1 ~ 0.3 0.7 0.3 1 50

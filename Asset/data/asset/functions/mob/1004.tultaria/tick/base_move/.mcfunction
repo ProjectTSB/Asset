@@ -7,22 +7,14 @@
 # こっち向く
     execute if entity @s[tag=!RW.InAction] unless entity @s[scores={RW.FakeInertia=0..}] facing entity @p feet run tp @s ~ ~ ~ ~ ~
 
-# プレイヤーが周囲にいたらスキル選択
-    #execute if score @s[tag=!RW.InAction,scores={RW.Phase=1..2}] RW.Tick matches 30.. if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/reset
-    #execute if score @s[tag=!RW.InAction,scores={RW.Phase=1..2}] RW.Tick matches 30.. if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/mini
-    execute if score @s[tag=!RW.InAction,scores={RW.Phase=1..2}] RW.Tick matches 30.. if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/main
+# 属性チェンジ可能であれば属性を選択
+    execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] RW.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
 
-# ミニスキル使った後に技発動(フェイズ3)
-    #execute if score @s[tag=RW.MiniSkillUsed,tag=!RW.InAction,scores={RW.Phase=2..}] RW.Tick matches 40.. if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select
+# プレイヤーが周囲にいたらスキル選択
+    execute if score @s[tag=!RW.InAction] RW.Tick matches 40 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/
 
 # プレイヤーが周囲にいないのに時間がきてしまった場合。スコアを戻す
     execute if score @s RW.Tick matches 40.. unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s RW.Tick 0
-
-# フェイズ2以降の設置攻撃
-#    execute if score @s[tag=!RW.InAction,scores={RW.Phase=2..}] RW.Tick matches 10 run function asset:mob/1004.tultaria/tick/skill/phase2/1.place_red_sword/main
-
-# フェイズ3以降、行動選択前にランダムな行動してくる
-#    execute if score @s[tag=!RW.MiniSkillUsed,tag=!RW.InAction,scores={RW.Phase=3..}] RW.Tick matches 20.. run function asset:mob/1004.tultaria/tick/skill/phase3/1.select
 
 # 選択したスキル発動
     execute if entity @s[tag=RW.InAction] run function asset:mob/1004.tultaria/tick/base_move/skill_active

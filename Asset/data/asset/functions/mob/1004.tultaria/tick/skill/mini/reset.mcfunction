@@ -22,4 +22,4 @@
 # 行動カウント満たしてたらメインのスキル選択
     execute if score @s RW.MiniSkillCount matches 3.. run data modify storage lib: Argument.Bounds set value [[10d,10d],[0.0d,0.0d],[10d,10d]]
     execute if score @s RW.MiniSkillCount matches 3.. run function asset:mob/1004.tultaria/tick/base_move/teleport/
-    execute if score @s RW.MiniSkillCount matches 3.. run function asset:mob/1004.tultaria/tick/base_move/skill_select/main
+    execute if score @s RW.MiniSkillCount matches 3.. run function asset:mob/1004.tultaria/tick/base_move/skill_select/
