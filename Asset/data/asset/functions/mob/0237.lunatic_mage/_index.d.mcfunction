@@ -34,7 +34,7 @@
 #   asset:mob/0237.lunatic_mage/remove/
 #   asset:mob/0237.lunatic_mage/skill/elemental_confine/**
 #   asset:mob/0237.lunatic_mage/skill/teleport/main
-#   asset:mob/0237.lunatic_mage/summon/
+#   asset:mob/0237.lunatic_mage/init/
     #declare tag 6L.SpawnPoint
 
 #> score_holder

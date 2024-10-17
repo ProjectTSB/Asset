@@ -3,5 +3,5 @@
 
 execute store result score $Random Temporary run function lib:random/
 scoreboard players operation $Random Temporary %= $100 Const
-scoreboard players operation @e[type=zombie,tag=MobInit,distance=..0.01] 3v.Time = $Random Temporary
+scoreboard players operation @s 3v.Time = $Random Temporary
 scoreboard players reset $Random Temporary
