@@ -1,8 +1,8 @@
-#> asset:mob/0204_infernal_watcher/tick/event/attack_strong
+#> asset:mob/0204.infernal_watcher/tick/event/attack_strong
 #
 #
 #
-# @within function asset:mob/0204_infernal_watcher/tick/2.tick
+# @within function asset:mob/0204.infernal_watcher/tick/2.tick
 
 # VFX
     playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 1.5
