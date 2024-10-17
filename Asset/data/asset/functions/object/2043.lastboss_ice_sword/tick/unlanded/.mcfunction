@@ -17,5 +17,7 @@
         execute if score @s General.Object.Tick matches 39 run tp @s ~ ~0.25 ~ ~ ~
     # 上昇の頂点でプレイヤーのほうを見る
         execute if score @s General.Object.Tick matches 39 facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
+    # 座標をalign
+        execute if score @s General.Object.Tick matches 39 align xyz run tp @s ~0.5 ~0.5 ~0.5
     # 落下する
         execute if score @s General.Object.Tick matches 40 run function asset:object/2043.lastboss_ice_sword/tick/fall_start
