@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/_/tick
+# @within function asset:mob/alias/76/tick
 
 # スイカ投げのためスコア
     scoreboard players add @s 24.Tick 1

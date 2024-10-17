@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0181.magic_bookshelf/_/death
+# @within function asset:mob/alias/181/death
 
 # 演出
     particle witch ~ ~1.2 ~ 0.5 0.4 0.5 0 40 normal @a

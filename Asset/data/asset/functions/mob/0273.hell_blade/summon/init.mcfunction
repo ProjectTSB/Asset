@@ -2,7 +2,7 @@
 #
 # 召喚時のinit処理
 #
-# @within function asset:mob/0273.hell_blade/summon/2.summon
+# @within function asset:mob/0273.hell_blade/summon/
 
 # 向きを90°刻みのランダムに
     # 疑似乱数取得

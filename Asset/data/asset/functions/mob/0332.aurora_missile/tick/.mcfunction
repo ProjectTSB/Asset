@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0332.aurora_missile/_/tick
+# @within function asset:mob/alias/332/tick
 
 # スコア
     scoreboard players add @s 98.Tick 1

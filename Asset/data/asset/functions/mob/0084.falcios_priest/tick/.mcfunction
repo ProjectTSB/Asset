@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0084.falcios_priest/_/tick
+# @within function asset:mob/alias/84/tick
 
 # スコア
     scoreboard players add @s 2C.Tick 1

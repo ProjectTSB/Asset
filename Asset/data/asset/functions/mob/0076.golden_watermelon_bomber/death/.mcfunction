@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/_/death
+# @within function asset:mob/alias/76/death
 
 # 演出
     particle block melon ~ ~1.3 ~ 0.3 0.5 0.3 0 40 normal @a

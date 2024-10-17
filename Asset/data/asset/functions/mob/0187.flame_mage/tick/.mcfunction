@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0187.flame_mage/_/tick
+# @within function asset:mob/alias/187/tick
 
 # パーティクル
     particle minecraft:falling_dust red_terracotta ~ ~1 ~ 0.1 0 0.1 0 1

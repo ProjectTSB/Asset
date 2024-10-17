@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0286.456_dice_entity/summon/2.summon
+# @within function asset:mob/0286.456_dice_entity/summon/
 
 # 乱数決定生成
     # 疑似乱数取得

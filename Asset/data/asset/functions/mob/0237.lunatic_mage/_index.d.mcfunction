@@ -30,11 +30,11 @@
 
 #> 召喚地点の位置用Marker
 # @within function
-#   asset:mob/0237.lunatic_mage/death/2.death
-#   asset:mob/0237.lunatic_mage/remove/2.remove
+#   asset:mob/0237.lunatic_mage/death/
+#   asset:mob/0237.lunatic_mage/remove/
 #   asset:mob/0237.lunatic_mage/skill/elemental_confine/**
 #   asset:mob/0237.lunatic_mage/skill/teleport/main
-#   asset:mob/0237.lunatic_mage/summon/2.summon
+#   asset:mob/0237.lunatic_mage/summon/
     #declare tag 6L.SpawnPoint
 
 #> score_holder

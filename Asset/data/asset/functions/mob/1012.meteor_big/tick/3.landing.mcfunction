@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1012.meteor_big/tick/2.tick
+# @within function asset:mob/1012.meteor_big/tick/
 
 # 演出
     particle minecraft:explosion ~ ~ ~ 3 1 3 0 6
