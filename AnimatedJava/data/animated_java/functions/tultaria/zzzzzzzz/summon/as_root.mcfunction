@@ -20,10 +20,10 @@ execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_2_right a
 execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_2_right aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_2_right.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_2_left aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_2_left/apply_frame_as_root
 execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_2_left aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_2_left.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3 aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3/apply_frame_as_root
-execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3 aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_3.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_loop aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_loop/apply_frame_as_root
-execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_loop aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_3_loop.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_right aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right/apply_frame_as_root
+execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_right aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_3_right.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_right_loop aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right_loop/apply_frame_as_root
+execute if score #animation aj.i = $aj.tultaria.animation.attack_magic_3_right_loop aj.id run scoreboard players operation @s aj.tultaria.animation.attack_magic_3_right_loop.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_1 aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_1/apply_frame_as_root
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_1 aj.id run scoreboard players operation @s aj.tultaria.animation.attack_melee_1.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_2 aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2/apply_frame_as_root

@@ -1,0 +1,3 @@
+execute if score @s aj.tultaria.animation.attack_magic_3_right_loop.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right_loop/end_loop
+execute if score @s aj.tultaria.animation.attack_magic_3_right_loop.loop_mode = $aj.loop_mode.once aj.i run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
+execute if score @s aj.tultaria.animation.attack_magic_3_right_loop.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:tultaria/animations/attack_magic_3_right_loop/pause
