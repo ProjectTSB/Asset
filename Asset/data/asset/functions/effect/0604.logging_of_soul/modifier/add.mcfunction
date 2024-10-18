@@ -15,10 +15,12 @@
 
 # スタックを取得し、2を足し、storageへ代入
     execute store result score $Stack Temporary run data get storage asset:context Stack
-    execute store result storage asset:context this.ModfierValue float -0.1 run scoreboard players add $Stack Temporary 2
+    execute store result storage api: Argument.Amount double -0.1 run scoreboard players add $Stack Temporary 2
 
-# 代入する
-    function asset:effect/0604.logging_of_soul/modifier/add.m with storage asset:context this
+# 最大体力低下
+    data modify storage api: Argument.UUID set value [I;1,3,604,0]
+    data modify storage api: Argument.Operation set value "multiply"
+    function api:modifier/max_health/add
 
 # リセット
     scoreboard players reset $Stack Temporary
