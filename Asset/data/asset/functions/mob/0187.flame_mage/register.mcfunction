@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0187.flame_mage/_/register
+# @within function asset:mob/alias/187/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value

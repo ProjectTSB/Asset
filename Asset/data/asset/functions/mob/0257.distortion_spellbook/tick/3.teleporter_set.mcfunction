@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0257.distortion_spellbook/tick/2.tick
+# @within function asset:mob/0257.distortion_spellbook/tick/
 
 # プレイヤー位置にテレポーター召喚
     data modify storage api: Argument.ID set value 258

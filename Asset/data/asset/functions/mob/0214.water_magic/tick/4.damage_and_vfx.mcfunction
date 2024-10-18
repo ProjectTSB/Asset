@@ -2,7 +2,7 @@
 #
 # ダメージと演出
 #
-# @within function asset:mob/0214.water_magic/tick/2.tick
+# @within function asset:mob/0214.water_magic/tick/
 
 # vfx
     execute positioned ~ ~0.3 ~ rotated 0 0 run function asset:mob/0214.water_magic/tick/vfx2

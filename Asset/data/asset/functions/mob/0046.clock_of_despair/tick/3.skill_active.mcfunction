@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/2.tick
+# @within function asset:mob/0046.clock_of_despair/tick/
 
 # 0時
     execute if score @s 1A.LifeTime matches 0..199 run function asset:mob/0046.clock_of_despair/tick/skill/0_oclock

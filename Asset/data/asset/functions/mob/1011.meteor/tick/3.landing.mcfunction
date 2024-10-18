@@ -2,9 +2,13 @@
 #
 #
 #
+<<<<<<< HEAD
 # @within function
 #   asset:mob/1011.meteor/tick/2.tick
 #   asset:mob/1011.meteor/tick/3.move
+=======
+# @within function asset:mob/1011.meteor/tick/
+>>>>>>> master
 
 # パーティクル
     particle minecraft:explosion_emitter ~ ~ ~ 0.1 0.1 0.1 1 1

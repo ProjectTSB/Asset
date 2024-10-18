@@ -2,7 +2,7 @@
 #
 # 演出
 #
-# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/2.tick
+# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/
 
 # Spiral.002
     particle cherry_leaves ^-1.0 ^0.0 ^0.0 0 0 0 0 1
