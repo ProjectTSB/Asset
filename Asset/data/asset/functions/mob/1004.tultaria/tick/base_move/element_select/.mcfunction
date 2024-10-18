@@ -4,10 +4,13 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/
 
-# アニメストップ
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/stop
-# アニメ再生
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_left/play
+# リセット！
+    tag @s remove RW.Mode.Fire
+    tag @s remove RW.Mode.Water
+    tag @s remove RW.Mode.Thunder
+
+# 剣を破壊
+    execute as @e[type=item_display,scores={ObjectID=2043},distance=..64] at @s run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/sword/break
 
 # 属性をランダムに選択
     # 要素がない場合は再付与

@@ -2,7 +2,7 @@
 #
 # 要素数が一個のとき
 #
-# @within function asset:mob/1004.tultaria/tick/base_move/element_select/select
+# @within function asset:mob/1004.tultaria/tick/base_move/element_select/
 
 # Element.Listの要素を番号で指定
     data modify storage asset:context this.Element.Get set from storage asset:context this.Element.List[0]

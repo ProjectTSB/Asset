@@ -17,3 +17,5 @@
     scoreboard objectives add RW.SwordCount dummy
     scoreboard objectives add RW.MiniSkillCount dummy
     scoreboard objectives add RW.MiniSlashCount dummy
+    scoreboard objectives add RW.Platform.ID dummy
+    scoreboard objectives add RW.Platform.CoreID dummy

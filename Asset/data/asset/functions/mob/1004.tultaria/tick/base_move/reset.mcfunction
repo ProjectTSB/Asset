@@ -8,9 +8,9 @@
 # @private
 #declare tag S8.Death
 
-
-# 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/return_to_neutral/play
+# 自身のモデルのアニメ
+    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/stop
+    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_side/play
 
 # スキルのタグをリセットする
     function asset:mob/1004.tultaria/tick/reset/skill_tag
@@ -34,7 +34,7 @@
     tag @s remove Uninterferable
 
 # スコアを戻す
-    scoreboard players set @s RW.Tick -26
+    scoreboard players set @s RW.Tick -2
     scoreboard players set @s RW.LoopCount 0
     scoreboard players reset @s RW.FakeInertia
     scoreboard players reset @s RW.MiniSkillCount

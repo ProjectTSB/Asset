@@ -7,8 +7,12 @@
 # こっち向く
     execute if entity @s[tag=!RW.InAction] unless entity @s[scores={RW.FakeInertia=0..}] facing entity @p feet run tp @s ~ ~ ~ ~ ~
 
-# 属性チェンジ可能であれば属性を選択
-    execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] RW.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
+# 属性チェンジ
+    # アニメーション
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] RW.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] RW.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/play
+    # 属性チェンジ可能であれば属性を選択
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] RW.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
 
 # プレイヤーが周囲にいたらスキル選択
     execute if score @s[tag=!RW.InAction] RW.Tick matches 40 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/

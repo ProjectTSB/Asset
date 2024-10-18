@@ -8,11 +8,6 @@
 # @private
     #declare score_holder $Random
 
-# アニメストップ
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/stop
-# アニメ再生
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/play
-
 # ミニスラッシュのカウントをリセット
     scoreboard players reset @s RW.MiniSlashCount
 
@@ -37,7 +32,4 @@
     # 取得した要素数を使ってランダムに属性を選ぶ
         execute unless data storage asset:context this.Skill{Count:1} run function asset:mob/1004.tultaria/tick/base_move/skill_select/roll.m with storage asset:context this.Skill
     # 要素数１個しかないとき
-        execute if data storage asset:context this.Skill{Count:1} run function asset:mob/1004.tultaria/tick/base_move/skill_select/only_one_skill with storage asset:context this.Skill
-
-# アニメストップ
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/stop
+        execute if data storage asset:context this.Skill{Count:1} run function asset:mob/1004.tultaria/tick/base_move/skill_select/only_one_skill

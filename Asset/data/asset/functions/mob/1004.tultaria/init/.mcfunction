@@ -11,9 +11,8 @@
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:tultaria/summon
 
-# ストレージ管理
+# タグ管理
     tag @s add RW.CanElementChange
-    data modify storage asset:context this.Element set value [Fire,Water,Thunder]
 
 # 自身のモデルに待機モーションを再生させる
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/play

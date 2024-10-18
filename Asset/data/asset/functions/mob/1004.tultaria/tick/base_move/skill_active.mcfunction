@@ -11,9 +11,12 @@
         execute if entity @s[tag=RW.Skill.Summon] run function asset:mob/1004.tultaria/tick/skill/7.star_summon/1.star_summon
     # 火属性: 追跡→巨大な斬撃を放つ
         execute if entity @s[tag=RW.Skill.BlazingSlash] run function asset:mob/1004.tultaria/tick/skill/blazing_slash/tick
-## 魔法技
-    # 火属性: 空からメテオがいっぱい降ってくる
+
+## 炎
+    # 魔法:空からメテオがいっぱい降ってくる
         execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/tick
+    # 物理/魔法: 
+## 魔法技
     # 火属性: 低速誘導弾を発射
         execute if entity @s[tag=RW.Skill.Hellfire] run function asset:mob/1004.tultaria/tick/skill/fire/hell_fire/tick
     # 水属性: 誘導弾を複数放つ
@@ -25,7 +28,7 @@
     # 無属性: こちらに並びつつ射撃
         execute if entity @s[tag=RW.Skill.MoveShot] run function asset:mob/1004.tultaria/tick/skill/move_shot/tick
     # 無属性: 最悪偏差撃ちレーザー
-        execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
+        execute if entity @s[tag=RW.Skill.AimingLaser] run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/tick
     # 水属性: 持続攻撃の雨
         execute if entity @s[tag=RW.Skill.SwordRain] run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/tick
     # 水属性: ホーミングショット
