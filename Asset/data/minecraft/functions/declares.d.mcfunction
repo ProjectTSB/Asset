@@ -937,6 +937,14 @@
 
 #> declare
 # @within
+#   function api:mob/core/summon
+#   function asset:mob/*/summon/
+#   function asset:mob/common/summon
+#   function asset_manager:mob/summon/init
+#declare tag MobInit from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L23
+
+#> declare
+# @within
 #   function core:tick/
 #   function mob_manager:init/
 #   function asset:mob/**
