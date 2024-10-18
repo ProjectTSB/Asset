@@ -1,4 +1,4 @@
-#> asset:mob/0204_infernal_watcher/tick/
+#> asset:mob/0204.infernal_watcher/tick/
 #
 # Mobのtick時の処理
 #
