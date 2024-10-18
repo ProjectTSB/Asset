@@ -7,4 +7,4 @@
 # 演出
     execute at @a[distance=..60] run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 2 0.7
     execute at @a[distance=..60] run playsound minecraft:block.amethyst_block.break hostile @a ~ ~ ~ 2 1
-    execute at @e[type=area_effect_cloud,tag=S2.Wait] run particle end_rod ~ ~ ~ 0 0 0 0.1 1 force
+    execute at @e[type=item_display,scores={ObjectID=2030},distance=..100] run particle end_rod ~ ~ ~ 0 0 0 0.1 1 force
