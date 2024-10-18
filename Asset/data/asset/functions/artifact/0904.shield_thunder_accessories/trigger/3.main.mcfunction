@@ -12,7 +12,7 @@
 # @private
     #declare score_holder $P4.Count
     #declare score_holder $P4.Defense
-    #declare score_holder $DefenseBonus
+    #declare score_holder $BonusDefense
 
 # VFX
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle electric_spark ~ ~1.2 ~ 0.3 0.3 0.3 0.05 30 normal @a[distance=..16]
@@ -27,7 +27,7 @@
     scoreboard players add $P4.Count Temporary 10
 
 # 与えるダメージ = {100 + (防御力) × 6} × {(個数 - 1) × 0.5 + 1 }
-    scoreboard players operation $P4.Defense Temporary = $DefenseBonus Global
+    scoreboard players operation $P4.Defense Temporary = $BonusDefense Global
     scoreboard players operation $P4.Defense Temporary *= $6 Const
     scoreboard players operation $P4.Defense Temporary += $100 Const
     scoreboard players operation $P4.Defense Temporary *= $P4.Count Temporary
