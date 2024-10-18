@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0274.death_saw_jiki/tick/2.tick
+# @within function asset:mob/0274.death_saw_jiki/tick/
 #> private
 # @private
     #declare tag DamageTarget

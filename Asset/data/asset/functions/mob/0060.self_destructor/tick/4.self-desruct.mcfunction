@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0060.self_destructor/tick/2.tick
+# @within function asset:mob/0060.self_destructor/tick/
 
 # 演出
     particle explosion ~ ~ ~ 5 5 5 1 140 normal @a

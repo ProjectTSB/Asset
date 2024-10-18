@@ -2,7 +2,7 @@
 #
 # 雷を落とす
 #
-# @within function asset:mob/0190.thunder_mage/tick/2.tick
+# @within function asset:mob/0190.thunder_mage/tick/
 
 #> Private
 # @private

@@ -2,7 +2,7 @@
 #
 # 首落ちモデルに変更し、頭の雪を消す
 #
-# @within function asset:mob/0236.ksitigarbha/death/2.death
+# @within function asset:mob/0236.ksitigarbha/death/
 
 # 首落ちモデルに変更し、頭の雪を消す
     data modify entity @s HandItems[0].tag.CustomModelData set value 20181

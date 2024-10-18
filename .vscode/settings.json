@@ -2909,4 +2909,7 @@
     ],
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "files.watcherExclude": {
+        "**/target": true
+    },
 }

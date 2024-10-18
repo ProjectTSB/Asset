@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0075.watermelon/_/tick
+# @within function asset:mob/alias/75/tick
 
 # スコア
     scoreboard players add @s 23.Tick 1
