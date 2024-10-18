@@ -8,9 +8,7 @@
     data modify storage asset:context this.Element.Get set from storage asset:context this.Element.List[0]
 
 # 属性チェンジじゃ！
-    execute if data storage asset:context this.Element{Get:Fire} run function asset:mob/1004.tultaria/tick/base_move/element_select/change/fire
-    execute if data storage asset:context this.Element{Get:Thunder} run function asset:mob/1004.tultaria/tick/base_move/element_select/change/fire
-    execute if data storage asset:context this.Element{Get:Water} run function asset:mob/1004.tultaria/tick/base_move/element_select/change/fire
+    function asset:mob/1004.tultaria/tick/base_move/element_select/tags
 
 # 残った最後の要素を削除
     data remove storage asset:context this.Element.List[0]
