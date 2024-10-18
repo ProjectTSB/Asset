@@ -1,5 +1,4 @@
 #> asset:mob/alias/1004/init
-<<<<<<< HEAD
 #
 # Init処理のエイリアス
 #
@@ -7,8 +6,3 @@
 
 # 元のInit処理を呼び出す
    function asset:mob/1004.tultaria/init/
-=======
-# @within asset_manager:mob/init/init.m
-
-function asset:mob/1004.tultaria/init/
->>>>>>> master
