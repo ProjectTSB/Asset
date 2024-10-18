@@ -7,5 +7,6 @@
 #   asset:effect/0604.logging_of_soul/re-given/
 #   asset:effect/0604.logging_of_soul/remove/
 
-# 最大体力
-    attribute @s generic.max_health modifier remove 00000001-0000-0003-0000-025c00000000
+# 最大体力低下
+    data modify storage api: Argument.UUID set value [I;1,3,604,0]
+    function api:modifier/max_health/remove
