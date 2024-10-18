@@ -15,7 +15,7 @@
 ## 炎
     # 魔法:空からメテオがいっぱい降ってくる
         execute if entity @s[tag=RW.Skill.Meteor] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/tick
-    # 物理/魔法: 
+    # 物理/魔法:
 ## 魔法技
     # 火属性: 低速誘導弾を発射
         execute if entity @s[tag=RW.Skill.Hellfire] run function asset:mob/1004.tultaria/tick/skill/fire/hell_fire/tick
@@ -43,7 +43,7 @@
 
 ## ちょっと特殊な技
     # 流星
-        execute if entity @s[tag=RW.Skill.Starfury] run function asset:mob/1004.tultaria/tick/skill/6.starfury_attack/1.tick
+        execute if entity @s[tag=RW.Skill.Starfury] run function asset:mob/1004.tultaria/tick/skill/light/stellar_fury_1/tick
     # ショット
         #execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=1..2}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick
         #execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=3..}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick_phase3
