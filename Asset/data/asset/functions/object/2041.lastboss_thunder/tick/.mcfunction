@@ -10,5 +10,8 @@
 # 雷が落ちてくる
     execute if score @s General.Object.Tick matches 20 run function asset:object/2041.lastboss_thunder/tick/thunder
 
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
+# 縮む
+    execute if score @s General.Object.Tick matches 22 run function asset:object/2041.lastboss_thunder/tick/transform/2
+
+# しばらくしたらキル
+    execute if score @s General.Object.Tick matches 24 run kill @s
