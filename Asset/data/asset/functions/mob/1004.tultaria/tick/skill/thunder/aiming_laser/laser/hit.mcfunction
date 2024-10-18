@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/beam/hit
+#> asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/hit
 #
 #
 #

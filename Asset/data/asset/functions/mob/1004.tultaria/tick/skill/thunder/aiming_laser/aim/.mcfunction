@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/aiming_laser/aim/main
+#> asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/aiming_laser/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/tick
 
 #> Private
 # @private
@@ -30,7 +30,7 @@
     function lib:array/session/close
 
 # マクロで偏差撃ちする
-    execute at @p[tag=Target] run function asset:mob/1004.tultaria/tick/skill/aiming_laser/aim/macro.m with storage asset:temp Predict
+    execute at @p[tag=Target] run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/macro.m with storage asset:temp Predict
 
 # リセット
     tag @p[tag=Target] remove Target

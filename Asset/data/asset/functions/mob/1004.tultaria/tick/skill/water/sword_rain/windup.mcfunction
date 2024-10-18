@@ -10,8 +10,11 @@
     playsound ogg:block.respawn_anchor.charge1 hostile @a ~ ~ ~ 2 2
     playsound minecraft:item.trident.riptide_1 hostile @a ~ ~ ~ 2 1
 
+# アニメストップ
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/stop
+
 # 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/staff_swing_1/play
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_left/play
 
 # 行動をランダムに選択
     # 疑似乱数取得
@@ -20,7 +23,7 @@
         scoreboard players operation $Random Temporary %= $2 Const
 
 # デバッグ用、実行する技を確定させる
-    scoreboard players set $Random Temporary 2
+    scoreboard players set $Random Temporary 1
 
 # タグ付与
     # 1
