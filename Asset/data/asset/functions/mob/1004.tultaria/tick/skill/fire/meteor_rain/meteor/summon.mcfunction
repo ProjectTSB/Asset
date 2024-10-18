@@ -14,4 +14,4 @@
     data modify storage api: Argument.ID set value 2028
 
 # マーカーの位置にオブジェクト召喚
-    execute at @s unless entity @e[type=marker,scores={ObjectID=2041},distance=0.1..4,limit=1] positioned ~ ~40 ~ run function api:object/summon
+    execute at @s unless entity @e[type=item_display,scores=\{ObjectID=2041\},distance=0.1..4,limit=1] positioned ~ ~40 ~ run function api:object/summon

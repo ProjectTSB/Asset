@@ -8,7 +8,7 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add RW.Skill.Meteor
+    tag @s add RW.Skill.Starfury
     return fail
 
 # 技を選択、属性ごとに違う
@@ -23,3 +23,7 @@
         execute if entity @s[tag=RW.Mode.Thunder] if data storage asset:context this.Skill{Get:0} run tag @s add RW.Skill.AimingLaser
         execute if entity @s[tag=RW.Mode.Thunder] if data storage asset:context this.Skill{Get:1} run tag @s add RW.Skill.Thunder
         execute if entity @s[tag=RW.Mode.Thunder] if data storage asset:context this.Skill{Get:2} run tag @s add RW.Skill.Thunder
+    # 光
+        execute if entity @s[tag=RW.Mode.Light] if data storage asset:context this.Skill{Get:0} run tag @s add RW.Skill.Starfury
+        execute if entity @s[tag=RW.Mode.Light] if data storage asset:context this.Skill{Get:1} run tag @s add RW.Skill.Starfury
+        execute if entity @s[tag=RW.Mode.Light] if data storage asset:context this.Skill{Get:2} run tag @s add RW.Skill.Starfury
