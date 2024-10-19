@@ -2,7 +2,7 @@
 #
 # 次に投げるポーションを設定
 #
-# @within function asset:mob/0104.mad_scientist/tick/2.tick
+# @within function asset:mob/0104.mad_scientist/tick/
 
  # 25%ずつの確率で4つに分岐 それぞれ毒、火、水、雷
     execute store result score $Random Temporary run function lib:random/

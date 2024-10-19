@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0078.messenger_of_thunder/hurt/2.hurt
+# @within function asset:mob/0078.messenger_of_thunder/hurt/
 
 #> Private
 # @private

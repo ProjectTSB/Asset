@@ -2,7 +2,7 @@
 #
 # 攻撃
 #
-# @within function asset:mob/0210.aurora_eye/tick/2.tick
+# @within function asset:mob/0210.aurora_eye/tick/
 
 # VFX
     particle dust 0.000 0.545 1.000 1.5 ~ ~1.2 ~ 0.4 0.4 0.4 1 50 normal

@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0077.golden_watermelon/_/tick
+# @within function asset:mob/alias/77/tick
 
 # 演出
     particle dust 1 0.941 0.141 2 ~ ~ ~ 0.4 0.4 0.4 0 2 normal @a

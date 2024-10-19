@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0120.convict/tick/2.tick
+# @within function asset:mob/0120.convict/tick/
 
 # 斧
     execute if entity @s[tag=3C.SkillAxe] run function asset:mob/0120.convict/tick/1.axe/1.axe

@@ -2,7 +2,7 @@
 #
 # 雷を落とす位置とダメージを与える
 #
-# @within function asset:mob/0082.thunder_curtain/tick/2.tick
+# @within function asset:mob/0082.thunder_curtain/tick/
 
 # 移動
     tp @s ^ ^ ^0.45

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0286.456_dice_entity/tick/2.tick
+# @within function asset:mob/0286.456_dice_entity/tick/
 
 # サウンド
     playsound ogg:random.levelup neutral @a ~ ~ ~ 1.5 1.5

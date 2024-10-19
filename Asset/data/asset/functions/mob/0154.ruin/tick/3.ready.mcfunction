@@ -2,7 +2,7 @@
 #
 # 形態変化する
 #
-# @within function asset:mob/0154.ruin/tick/2.tick
+# @within function asset:mob/0154.ruin/tick/
 
 # 装備変更
     item replace entity @s weapon.mainhand with stick{CustomModelData:20065}

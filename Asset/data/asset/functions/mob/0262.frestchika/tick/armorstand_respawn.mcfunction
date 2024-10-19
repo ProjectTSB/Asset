@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0262.frestchika/tick/2.tick
+# @within function asset:mob/0262.frestchika/tick/
 
 # どっかいったアマスタを殺す
     execute as @e[type=armor_stand,tag=7A.ArmorStand] at @s unless entity @e[type=wither_skeleton,tag=7A.Angel,distance=..0.1] run kill @s

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0292.trample_bot/tick/2.tick
+# @within function asset:mob/0292.trample_bot/tick/
 
 # 演出
     playsound minecraft:entity.iron_golem.hurt hostile @a ~ ~ ~ 1 1.5

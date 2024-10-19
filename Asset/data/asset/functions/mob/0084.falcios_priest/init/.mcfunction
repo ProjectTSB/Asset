@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0084.falcios_priest/_/init
+# @within function asset:mob/alias/84/init
 
 # スコア初期化
     scoreboard players set @s 2C.Tick -80

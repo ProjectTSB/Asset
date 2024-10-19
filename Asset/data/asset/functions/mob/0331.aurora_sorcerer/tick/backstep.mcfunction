@@ -2,7 +2,7 @@
 #
 # バックステップする
 #
-# @within function asset:mob/0331.aurora_sorcerer/tick/1
+# @within function asset:mob/0331.aurora_sorcerer/tick/
 
 # バックステップ
     data modify storage lib: Argument.VectorMagnitude set value 1.6

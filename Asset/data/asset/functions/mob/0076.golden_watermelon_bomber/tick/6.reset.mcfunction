@@ -2,7 +2,7 @@
 #
 # リセット処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/tick/1
+# @within function asset:mob/0076.golden_watermelon_bomber/tick/
 
 # リセット
     scoreboard players set @s 24.Tick -70

@@ -2,7 +2,7 @@
 #
 # 発動時
 #
-# @within function asset:mob/0073.clutch_spider/tick/2.tick
+# @within function asset:mob/0073.clutch_spider/tick/
 
 
 # 演出

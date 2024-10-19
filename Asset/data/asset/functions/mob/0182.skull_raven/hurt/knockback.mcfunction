@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0182.skull_raven/hurt/2.hurt
+# @within function asset:mob/0182.skull_raven/hurt/
 
 # 演出
     particle minecraft:cloud ~ ~1 ~ 0 0 0 0.4 20

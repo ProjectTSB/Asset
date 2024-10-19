@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0131.haruclaire/tick/2.tick
+# @within function asset:mob/0131.haruclaire/tick/
 
 
 # どっかいったアマスタを殺す
@@ -23,5 +23,3 @@
 
 # 強制的にテレポする
     function asset:mob/0131.haruclaire/tick/teleport
-
-

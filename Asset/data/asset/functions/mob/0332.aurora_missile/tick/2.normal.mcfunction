@@ -2,7 +2,7 @@
 #
 # ノーマル以下のtick処理
 #
-# @within function asset:mob/0332.aurora_missile/tick/1
+# @within function asset:mob/0332.aurora_missile/tick/
 
 # 演出
     execute if entity @s[scores={98.Tick=..19}] run particle dust_color_transition 0 0.408 0.361 1 0 0.114 0.478 ~ ~ ~ 0 0 0 0 3 normal @a

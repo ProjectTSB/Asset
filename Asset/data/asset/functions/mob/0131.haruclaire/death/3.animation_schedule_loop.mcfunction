@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:mob/0131.haruclaire/death/2.death
+#   asset:mob/0131.haruclaire/death/
 #   asset:mob/0131.haruclaire/death/3.animation_schedule_loop
 #   asset:mob/0131.haruclaire/rejoin_process
 

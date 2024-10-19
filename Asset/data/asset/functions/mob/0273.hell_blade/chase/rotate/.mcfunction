@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0273.hell_blade/tick/2.tick
+# @within function asset:mob/0273.hell_blade/tick/
 
 # タイマー
     scoreboard players add @s 7L.Timer 1
@@ -16,5 +16,3 @@
 
 # 落下チェック
     execute at @s align xyz positioned ~.5 ~.5 ~.5 run function asset:mob/0273.hell_blade/unstuck/
-
-

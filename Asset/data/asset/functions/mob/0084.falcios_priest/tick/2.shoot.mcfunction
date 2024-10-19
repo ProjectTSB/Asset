@@ -2,7 +2,7 @@
 #
 # 魔法を発射する
 #
-# @within function asset:mob/0084.falcios_priest/tick/1
+# @within function asset:mob/0084.falcios_priest/tick/
 
 # 自身に鈍足を付与
     effect give @s slowness 1 2 true

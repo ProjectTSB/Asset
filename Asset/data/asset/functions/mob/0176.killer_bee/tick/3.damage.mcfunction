@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0176.killer_bee/tick/2.tick
+# @within function asset:mob/0176.killer_bee/tick/
 
 # 演出
     playsound entity.bee.sting hostile @a ~ ~ ~ 1 1

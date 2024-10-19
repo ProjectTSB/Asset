@@ -16,7 +16,8 @@
     playsound entity.blaze.death player @a[distance=..16] ~ ~ ~ 0.5 0 0
 
 # 自身に最大HPの25%のダメージを与える
-    execute store result storage api: Argument.Damage double 0.25 run attribute @s minecraft:generic.max_health get 1
+    function api:modifier/max_health/get
+    execute store result storage api: Argument.Damage double 0.25 run data get storage api: Return.MaxHealth
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b

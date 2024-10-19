@@ -16,5 +16,3 @@
 
     # 天井
         execute as @s[tag=7L.FaceCeiling] run function asset:mob/0273.hell_blade/unstuck/ceiling
-
-

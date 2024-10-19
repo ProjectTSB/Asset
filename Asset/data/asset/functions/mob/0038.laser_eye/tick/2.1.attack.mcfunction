@@ -2,7 +2,7 @@
 #
 # 適正距離の処理
 #
-# @within function asset:mob/0038.laser_eye/tick/2.tick
+# @within function asset:mob/0038.laser_eye/tick/
 
 # スコアを増やしていく
     scoreboard players add @s C.LaserTime 1

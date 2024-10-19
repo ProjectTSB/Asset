@@ -2,7 +2,7 @@
 #
 # 二回目以降の攻撃
 #
-# @within function asset:mob/0047.the_heretic/attack/2.attack
+# @within function asset:mob/0047.the_heretic/attack/
 
 # 演出
     execute as @p[tag=Victim] at @s run particle dragon_breath ~ ~ ~ 0 1 0 0 20

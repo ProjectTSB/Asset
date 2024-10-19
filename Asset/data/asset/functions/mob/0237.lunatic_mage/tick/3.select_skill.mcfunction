@@ -2,7 +2,7 @@
 #
 # 技決定
 #
-# @within function asset:mob/0237.lunatic_mage/tick/2.tick
+# @within function asset:mob/0237.lunatic_mage/tick/
 
 #> 体力40%以下で確定で必殺技を打つ、のでそれを何度も発動しないためのTag
 # @private

@@ -2,7 +2,7 @@
 #
 # 魔法を発射する
 #
-# @within function asset:mob/0187.flame_mage/tick/1
+# @within function asset:mob/0187.flame_mage/tick/
 
 #> Private
 # @private

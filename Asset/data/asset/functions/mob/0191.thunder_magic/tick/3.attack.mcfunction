@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0191.thunder_magic/tick/2.tick
+# @within function asset:mob/0191.thunder_magic/tick/
 
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 150

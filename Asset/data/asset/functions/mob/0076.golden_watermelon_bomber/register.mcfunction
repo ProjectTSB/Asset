@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/_/register
+# @within function asset:mob/alias/76/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value

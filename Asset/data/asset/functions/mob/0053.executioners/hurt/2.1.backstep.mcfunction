@@ -2,7 +2,7 @@
 #
 # バックステップ（ほとんどチェーンソーゾンビと一緒）
 #
-# @within function asset:mob/0053.executioners/hurt/2.hurt
+# @within function asset:mob/0053.executioners/hurt/
 
 # 演出
     playsound item.trident.throw hostile @a ~ ~ ~ 1 0.8

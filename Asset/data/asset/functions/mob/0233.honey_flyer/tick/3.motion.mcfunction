@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0233.honey_flyer/tick/2.tick
+# @within function asset:mob/0233.honey_flyer/tick/
 
 #> Private
 # @private

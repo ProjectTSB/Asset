@@ -2,7 +2,7 @@
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0074.watermelon_bomber/_/attack
+# @within function asset:mob/alias/74/attack
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.player.splash hostile @a ~ ~ ~ 0.8 0.8 0

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0186.ferocious_bee/tick/2.tick
+# @within function asset:mob/0186.ferocious_bee/tick/
 
 # 演出
     playsound entity.bee.sting hostile @a ~ ~ ~ 1 1

@@ -11,7 +11,8 @@
     execute at @a[distance=..100] if score @s SP.UserID = @p UserID run tag @p add SP.Owner
 
 # Ownerの最大体力の0.05倍をスコアで取得
-    execute store result score @s SP.MaxHealth run attribute @p[tag=SP.Owner] generic.max_health get 0.05
+    execute as @p[tag=SP.Owner] run function api:modifier/max_health/get
+    execute store result score @s SP.MaxHealth run data get storage api: Return.MaxHealth 0.05
 
 # 最大HP20につき1本増加 最大10本まで
 # 左右対称になるように、偶数本目は2パターン配置箇所が存在する

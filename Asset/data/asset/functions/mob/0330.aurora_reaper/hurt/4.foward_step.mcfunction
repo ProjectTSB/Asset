@@ -2,7 +2,7 @@
 #
 # 前進する
 #
-# @within function asset:mob/0330.aurora_reaper/hurt/2.hurt
+# @within function asset:mob/0330.aurora_reaper/hurt/
 
 # 乱数取得
     execute store result score $Random Temporary run function lib:random/

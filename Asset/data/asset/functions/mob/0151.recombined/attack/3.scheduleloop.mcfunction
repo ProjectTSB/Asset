@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:mob/0151.recombined/attack/2.attack
+#   asset:mob/0151.recombined/attack/
 #   asset:mob/0151.recombined/attack/3.scheduleloop
 #   asset:mob/0151.recombined/rejoin_process
 

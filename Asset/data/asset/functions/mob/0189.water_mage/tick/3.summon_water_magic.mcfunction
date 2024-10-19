@@ -2,7 +2,7 @@
 #
 # ウォーターマジックを召喚
 #
-# @within function asset:mob/0189.water_mage/tick/2.tick
+# @within function asset:mob/0189.water_mage/tick/
 
 #> Private
 # @private

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0129.lexiel/tick/2.tick
+# @within function asset:mob/0129.lexiel/tick/
 
 
 # どっかいったアマスタを殺す
@@ -25,5 +25,3 @@
 
 # 強制的にテレポする
     function asset:mob/0129.lexiel/tick/2.1.teleport
-
-

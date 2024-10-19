@@ -13,4 +13,3 @@
 
 # ダメージ
     function asset:mob/0216.gray_guardian/tick/4.skill_impact/4.damage
-

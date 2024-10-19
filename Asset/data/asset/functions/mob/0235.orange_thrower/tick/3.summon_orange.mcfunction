@@ -2,7 +2,7 @@
 #
 # みかんをしょうかんするよ
 #
-# @within function asset:mob/0235.orange_thrower/tick/2.tick
+# @within function asset:mob/0235.orange_thrower/tick/
 
 #> Private
 # @private

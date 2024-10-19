@@ -3,7 +3,7 @@
 # 死亡アニメーションをするための再起部分
 #
 # @within function
-#   asset:mob/0129.lexiel/death/2.death
+#   asset:mob/0129.lexiel/death/
 #   asset:mob/0129.lexiel/death/2.1.death_animation
 #   asset:mob/0129.lexiel/rejoin_process
 

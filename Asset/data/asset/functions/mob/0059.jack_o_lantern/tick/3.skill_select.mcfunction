@@ -2,7 +2,7 @@
 #
 # スキル設定
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/2.tick
+# @within function asset:mob/0059.jack_o_lantern/tick/
 
 #> private
 # @private

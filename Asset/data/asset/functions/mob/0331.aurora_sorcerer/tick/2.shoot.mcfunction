@@ -2,7 +2,7 @@
 #
 # オーロラ弾発射時の処理
 #
-# @within function asset:mob/0331.aurora_sorcerer/tick/1
+# @within function asset:mob/0331.aurora_sorcerer/tick/
 
 # 鈍足
     effect give @s slowness 1 4 true

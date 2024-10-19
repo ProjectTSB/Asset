@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0187.flame_mage/_/death
+# @within function asset:mob/alias/187/death
 
 # 演出
     playsound minecraft:entity.vex.ambient hostile @a ~ ~ ~ 1 0.5

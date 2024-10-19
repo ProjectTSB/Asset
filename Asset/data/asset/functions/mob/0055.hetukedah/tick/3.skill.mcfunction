@@ -2,7 +2,7 @@
 #
 # モブが持つスキル一覧、ランダムに実行
 #
-# @within function asset:mob/0055.hetukedah/tick/2.tick
+# @within function asset:mob/0055.hetukedah/tick/
 #> Private
 # @private
     #declare score_holder $Random

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0185.tutankhamen/tick/2.tick
+# @within function asset:mob/0185.tutankhamen/tick/
 
 #> Private
 # @private

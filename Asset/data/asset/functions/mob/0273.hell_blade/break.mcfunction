@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0273.hell_blade/tick/2.tick
+# @within function asset:mob/0273.hell_blade/tick/
 
 # 松明即壊す
     execute at @s if block ~ ~ ~ #lib:torches run setblock ~ ~ ~ air destroy
@@ -18,4 +18,3 @@
 
 # 羊毛なら0275.destroyed_blockを召喚
     execute if block ~ ~ ~ #wool unless entity @e[scores={MobID=275},distance=..0.01] run function asset:mob/0273.hell_blade/summon_crack
-

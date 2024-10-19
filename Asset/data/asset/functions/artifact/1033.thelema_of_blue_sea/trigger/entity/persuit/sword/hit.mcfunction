@@ -14,7 +14,8 @@
 
 # ダメージ 最大体力の160%分
 # api:damage/にif dataをつけているのはデバッグ中に引数Damageが足りませんと出たため
-    execute at @a if score @s SP.UserID = @p UserID store result storage api: Argument.Damage float 1.6 run attribute @p generic.max_health get 1
+    execute at @a if score @s SP.UserID = @p UserID as @p run function api:modifier/max_health/get
+    execute store result storage api: Argument.Damage float 1.6 run data get storage api: Return.MaxHealth
 
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"

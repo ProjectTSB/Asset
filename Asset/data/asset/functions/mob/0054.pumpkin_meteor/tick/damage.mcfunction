@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0054.pumpkin_meteor/tick/2.tick
+# @within function asset:mob/0054.pumpkin_meteor/tick/
 
 # 演出
     particle explosion ~ ~1.5 ~ 0 0 0 0 1 normal @a

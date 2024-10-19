@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0292.trample_bot/tick/2.tick
+# @within function asset:mob/0292.trample_bot/tick/
 
 # 演出
     particle minecraft:poof ~ ~0.2 ~ 0.25 0 0.25 0 20

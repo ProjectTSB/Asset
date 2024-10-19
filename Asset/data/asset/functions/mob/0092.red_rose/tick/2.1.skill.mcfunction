@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0092.red_rose/tick/2.tick
+# @within function asset:mob/0092.red_rose/tick/
 
 # 演出
     particle minecraft:explosion ~ ~ ~ 1 1 1 0 30

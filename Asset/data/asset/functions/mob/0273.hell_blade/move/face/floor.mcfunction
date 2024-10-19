@@ -16,5 +16,3 @@
     tag @s remove 7L.FaceWallUp
     tag @s remove 7L.FaceWallDown
     tag @s add 7L.FaceFloor
-
-

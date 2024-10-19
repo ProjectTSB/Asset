@@ -15,4 +15,3 @@
 
 # 再帰
     execute unless entity @p[tag=LandingTarget,distance=..20] positioned ^ ^ ^1 if block ~ ~ ~ #asset:mob/0217.medousa_eye/passing_block run function asset:mob/0217.medousa_eye/tick/06.beam
-

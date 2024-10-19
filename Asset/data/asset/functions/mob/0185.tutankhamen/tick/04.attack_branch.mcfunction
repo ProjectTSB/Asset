@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0185.tutankhamen/tick/2.tick
+# @within function asset:mob/0185.tutankhamen/tick/
 
 # 炎レーザー
     execute if entity @s[tag=55.BurnLaser] run function asset:mob/0185.tutankhamen/tick/burn_laser/01.main

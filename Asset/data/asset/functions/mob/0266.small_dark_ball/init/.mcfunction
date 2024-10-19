@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0266.small_dark_ball/_/init
+# @within function asset:mob/alias/266/init
 
 #> SpreadLib
 # @private

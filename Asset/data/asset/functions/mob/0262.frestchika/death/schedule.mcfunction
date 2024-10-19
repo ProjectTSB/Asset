@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#        asset:mob/0262.frestchika/death/2.death
+#        asset:mob/0262.frestchika/death/
 #        asset:mob/0262.frestchika/death/schedule
 #        asset:mob/0262.frestchika/rejoin_process
 # ファンクション

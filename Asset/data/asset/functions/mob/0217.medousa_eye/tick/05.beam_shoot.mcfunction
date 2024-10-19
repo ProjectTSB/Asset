@@ -2,7 +2,7 @@
 #
 # ビーム発射と
 #
-# @within function asset:mob/0217.medousa_eye/tick/2.tick
+# @within function asset:mob/0217.medousa_eye/tick/
 
 # スコアが70以上で石化ビーム発射
     execute positioned ^ ^1.7 ^ run function asset:mob/0217.medousa_eye/tick/06.beam

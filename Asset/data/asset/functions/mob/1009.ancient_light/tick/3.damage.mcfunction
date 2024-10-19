@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1009.ancient_light/tick/2.tick
+# @within function asset:mob/1009.ancient_light/tick/
 
 
 # 演出

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0187.flame_mage/tick/1
+# @within function asset:mob/0187.flame_mage/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGYCMAnAByUBM1TAtPQEZyVsAscUrQ4omAQzaUAzEyn0ArPIDspAGwAGdWAIA7MQFsEyQGGKAAmrawMMRgMBnJOBQB7QjohIm6gijju4GI5gAG5i2IRG4AAeSN5gULEAvokEtqRohA6I1AR2EDYeiHFw2NhoMHZG1JqpzvkQRnFodgCipeWVLQCOhGHYUADK1r7kiJRhlckAukA_3
 # 円 1

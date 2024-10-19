@@ -3,7 +3,7 @@
 # 爆発
 #
 # @within function
-#   asset:mob/0263.orange/tick/2.tick
+#   asset:mob/0263.orange/tick/
 #   asset:mob/0263.orange/tick/3.on_block
 
 # 演出

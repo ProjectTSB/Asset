@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0181.magic_bookshelf/_/hurt
+# @within function asset:mob/alias/181/hurt
 
 # 演出
     particle witch ~ ~1.2 ~ 0.5 0.4 0.5 0 20 normal @a

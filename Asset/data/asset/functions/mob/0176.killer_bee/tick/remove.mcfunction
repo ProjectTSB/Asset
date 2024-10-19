@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0176.killer_bee/tick/2.tick
+# @within function asset:mob/0176.killer_bee/tick/
 
 # 消失処理
     tp @s ~ -1000 ~

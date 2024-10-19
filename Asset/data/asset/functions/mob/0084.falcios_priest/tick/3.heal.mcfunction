@@ -3,7 +3,7 @@
 # 周囲の敵を回復する
 #
 # @within function
-#   asset:mob/0084.falcios_priest/tick/1
+#   asset:mob/0084.falcios_priest/tick/
 #   asset:mob/0084.falcios_priest/tick/2.shoot
 
 #> Private

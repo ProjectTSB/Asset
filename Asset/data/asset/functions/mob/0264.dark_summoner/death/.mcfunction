@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0264.dark_summoner/_/death
+# @within function asset:mob/alias/264/death
 
 # 音
     playsound minecraft:entity.vex.ambient hostile @a ~ ~ ~ 1 0.7

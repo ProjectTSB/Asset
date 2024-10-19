@@ -46,4 +46,3 @@
 # リセット処理
     execute if score @s 4V.Tick matches 80.. run tag @s remove 4V.SkillTackle
     execute if score @s 4V.Tick matches 80.. run scoreboard players set @s 4V.Tick -60
-

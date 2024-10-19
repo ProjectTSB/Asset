@@ -5,7 +5,8 @@
 # @within function asset:artifact/1068.dream_of_burning_butterfly/trigger/2.check_condition
 
 # 最大体力と現在体力を取得
-    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
+    function api:modifier/max_health/get
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health
 

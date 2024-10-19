@@ -2,7 +2,7 @@
 #
 # 各スキルの技のfunctionに分岐します
 #
-# @within function asset:mob/0237.lunatic_mage/tick/2.tick
+# @within function asset:mob/0237.lunatic_mage/tick/
 
 # 火
     execute if entity @s[tag=6L.Fire] run function asset:mob/0237.lunatic_mage/skill/fire/1

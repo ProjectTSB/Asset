@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0266.small_dark_ball/_/tick
+# @within function asset:mob/alias/266/tick
 
 # スコア
     scoreboard players add @s 7E.Tick 1

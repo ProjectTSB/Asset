@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0188.fireball/_/tick
+# @within function asset:mob/alias/188/tick
 
 # スコア
     scoreboard players add @s 58.Tick 1

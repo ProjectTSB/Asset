@@ -2,7 +2,7 @@
 #
 # ポーション投げるタイミングの処理
 #
-# @within function asset:mob/0104.mad_scientist/tick/2.tick
+# @within function asset:mob/0104.mad_scientist/tick/
 
 # バックステップ
     data modify storage lib: Argument.VectorMagnitude set value 1

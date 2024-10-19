@@ -2,7 +2,7 @@
 #
 # スキル選択
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/2.tick
+# @within function asset:mob/0078.messenger_of_thunder/tick/
 
 #> Private
 # @private

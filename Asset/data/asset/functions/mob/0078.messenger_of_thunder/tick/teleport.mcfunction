@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:mob/0078.messenger_of_thunder/tick/2.tick
+#   asset:mob/0078.messenger_of_thunder/tick/
 
 # 演出
     playsound block.respawn_anchor.charge hostile @a ~ ~ ~ 1 2 0

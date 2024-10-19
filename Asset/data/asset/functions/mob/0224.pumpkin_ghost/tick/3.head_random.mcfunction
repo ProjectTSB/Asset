@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0224.pumpkin_ghost/tick/2.tick
+# @within function asset:mob/0224.pumpkin_ghost/tick/
 
 #> private
 # @private

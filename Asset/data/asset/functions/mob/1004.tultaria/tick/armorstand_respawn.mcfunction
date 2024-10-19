@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/2.tick
+# @within function asset:mob/1004.tultaria/tick/
 
 # どっかいったアマスタを殺す
     execute as @e[type=armor_stand,tag=RW.ArmorStand] at @s unless entity @e[type=wither_skeleton,tag=RW.Boss,distance=..0.1] run kill @s

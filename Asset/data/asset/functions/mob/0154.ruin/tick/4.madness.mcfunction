@@ -2,7 +2,7 @@
 #
 # 形態変化後のtick処理
 #
-# @within function asset:mob/0154.ruin/tick/2.tick
+# @within function asset:mob/0154.ruin/tick/
 
 # 演出
     particle dust 0.255 0.039 0.039 1 ~ ~1 ~ 0.3 0.3 0.3 1 10

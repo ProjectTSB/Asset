@@ -2,7 +2,7 @@
 #
 # 発砲準備をします
 #
-# @within function asset:mob/0302.call_gun/tick/2.tick
+# @within function asset:mob/0302.call_gun/tick/
 
 #> tag
 # @private

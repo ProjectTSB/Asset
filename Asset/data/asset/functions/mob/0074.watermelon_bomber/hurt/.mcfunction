@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0074.watermelon_bomber/_/hurt
+# @within function asset:mob/alias/74/hurt
 
 # 演出
     playsound entity.player.splash hostile @a ~ ~ ~ 0.8 0.8 0

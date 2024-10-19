@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0023.chainsaw_zombie/tick/2.tick
+# @within function asset:mob/0023.chainsaw_zombie/tick/
 
 # 演出
     playsound entity.generic.drink hostile @a ~ ~ ~ 0.8 0.3

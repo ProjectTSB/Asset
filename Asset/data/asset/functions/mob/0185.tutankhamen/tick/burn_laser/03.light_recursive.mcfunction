@@ -11,4 +11,3 @@
 
 # 再帰
     execute if entity @s[distance=..30] unless entity @a[tag=!PlayerShouldInvulnerable,dx=0] if block ~ ~ ~ #lib:no_collision positioned ^ ^ ^0.5 run function asset:mob/0185.tutankhamen/tick/burn_laser/03.light_recursive
-

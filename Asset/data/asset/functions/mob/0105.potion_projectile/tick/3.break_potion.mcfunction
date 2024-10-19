@@ -1,7 +1,7 @@
 #> asset:mob/0105.potion_projectile/tick/3.break_potion
 #
 #
-# @within function asset:mob/0105.potion_projectile/tick/2.tick
+# @within function asset:mob/0105.potion_projectile/tick/
 
 # ポーション消し
     item replace entity @s armor.head with air

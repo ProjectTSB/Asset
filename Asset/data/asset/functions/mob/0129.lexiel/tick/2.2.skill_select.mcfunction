@@ -2,7 +2,7 @@
 #
 # スキルを選ぶよ
 #
-# @within function asset:mob/0129.lexiel/tick/2.tick
+# @within function asset:mob/0129.lexiel/tick/
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/

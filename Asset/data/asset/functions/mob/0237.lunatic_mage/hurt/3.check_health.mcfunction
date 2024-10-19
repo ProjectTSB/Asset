@@ -2,7 +2,7 @@
 #
 # 体力の割合を検知する
 #
-# @within function asset:mob/0237.lunatic_mage/hurt/2.hurt
+# @within function asset:mob/0237.lunatic_mage/hurt/
 
 #> Priuvate
 # @private

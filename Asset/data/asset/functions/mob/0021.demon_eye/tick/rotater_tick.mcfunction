@@ -2,7 +2,7 @@
 #
 # 頭の上に乗っかってるやつが使用
 #
-# @within function asset:mob/0021.demon_eye/tick/2.tick
+# @within function asset:mob/0021.demon_eye/tick/
 
 # いろは丸様のホーミング機構を使用させていただきました。
 

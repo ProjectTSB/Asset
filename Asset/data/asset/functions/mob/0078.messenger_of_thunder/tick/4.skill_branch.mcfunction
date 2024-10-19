@@ -2,7 +2,7 @@
 #
 # スキルを分岐して実行するfunction
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/2.tick
+# @within function asset:mob/0078.messenger_of_thunder/tick/
 
 # 震雷
     execute if entity @s[scores={26.SkillSelect=0}] run function asset:mob/0078.messenger_of_thunder/skill/1/1

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0255.dependence_eye/tick/2.tick
+# @within function asset:mob/0255.dependence_eye/tick/
 
 # VFX
     playsound minecraft:block.wart_block.break hostile @a ~ ~ ~ 2 1

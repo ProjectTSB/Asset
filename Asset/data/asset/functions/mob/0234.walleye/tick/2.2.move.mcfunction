@@ -1,7 +1,7 @@
 #> asset:mob/0234.walleye/tick/2.2.move
 #
 # @within
-#   function asset:mob/0234.walleye/tick/2.tick
+#   function asset:mob/0234.walleye/tick/
 
 # 向いてる方向に向かって移動、ブロックにめり込むorエンティティが半径1ブロック以内に入るor奈落に行くで爆発
     execute at @s run tp @s ^ ^ ^0.5

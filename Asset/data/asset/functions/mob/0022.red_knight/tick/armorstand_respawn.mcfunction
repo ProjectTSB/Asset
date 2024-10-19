@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0022.red_knight/tick/2.tick
+# @within function asset:mob/0022.red_knight/tick/
 
 # どっかいったアマスタを殺す
     execute as @e[type=armor_stand,tag=M.ArmorStand] at @s unless entity @e[type=zombie,tag=M.Angel,distance=0] run kill @s

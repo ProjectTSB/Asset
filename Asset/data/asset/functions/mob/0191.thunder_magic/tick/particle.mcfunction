@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0191.thunder_magic/tick/2.tick
+# @within function asset:mob/0191.thunder_magic/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGYoCMATABwoAMALALQBGArDQGztWrOHC4MAnAGZ2KTuOY0UdOAHY+KmmAIA7AIYBbBMkBhigAJNBGLowGAzknAoA9oW0QkkvgRRw3cDA5gAG662IRG4AAeSMwEUDEAvgkENqRohPaINAB03AS2ENbuiLFgcNjYaDC2RjTMpRhOhRBGpWi2AKIVVTUdAI6EodhQAMpWPuSIlKE1SQC6QA_3
 # 円 1

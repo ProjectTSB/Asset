@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0214.water_magic/tick/2.tick
+# @within function asset:mob/0214.water_magic/tick/
 
 # 自分を回転
     tp @s ~ ~ ~ ~7.5 0

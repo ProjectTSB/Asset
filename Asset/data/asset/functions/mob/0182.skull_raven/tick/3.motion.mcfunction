@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0182.skull_raven/tick/2.tick
+# @within function asset:mob/0182.skull_raven/tick/
 
 #> private
 # @private

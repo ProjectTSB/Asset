@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0058.divide_haze/tick/2.tick
+# @within function asset:mob/0058.divide_haze/tick/
 
 #> Private
 # @private

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0263.orange/tick/2.tick
+# @within function asset:mob/0263.orange/tick/
 
 # 一定間隔で音を鳴らす
     scoreboard players operation $Temp Temporary = @s 7B.Tick

@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0227.frost_eye/_/tick
+# @within function asset:mob/alias/227/tick
 
 # 演出
     execute anchored eyes positioned ^ ^ ^-0.5 run particle snowflake ~ ~ ~ 0.2 0.2 0.2 0 1 normal @a

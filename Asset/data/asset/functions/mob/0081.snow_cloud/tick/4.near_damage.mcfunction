@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0081.snow_cloud/tick/2.tick
+# @within function asset:mob/0081.snow_cloud/tick/
 
 # ダメージ
     data modify storage lib: Argument.Damage set value 5.0f

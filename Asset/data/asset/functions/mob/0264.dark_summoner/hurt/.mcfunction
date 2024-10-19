@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0264.dark_summoner/_/hurt
+# @within function asset:mob/alias/264/hurt
 
 # サウンド
     playsound minecraft:entity.donkey.hurt hostile @a ~ ~ ~ 1 0

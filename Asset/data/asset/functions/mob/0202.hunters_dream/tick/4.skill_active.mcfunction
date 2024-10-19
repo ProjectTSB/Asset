@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/2.tick
+# @within function asset:mob/0202.hunters_dream/tick/
 
 # 剣
     execute if entity @s[tag=5M.SkillSword] run function asset:mob/0202.hunters_dream/tick/1.skill_sword/1.skill_sword
