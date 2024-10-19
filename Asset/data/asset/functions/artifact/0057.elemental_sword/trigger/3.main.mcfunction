@@ -19,6 +19,11 @@
     # 使用回数を3で剰余算
         scoreboard players operation $ElementalSwordAttack Temporary %= $3 Const
 
+# 属性それぞれの演出
+    execute if score $ElementalSwordAttack Temporary matches 0 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/fire
+    execute if score $ElementalSwordAttack Temporary matches 1 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/water
+    execute if score $ElementalSwordAttack Temporary matches 2 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/thunder
+
 # ダメージ
     data modify storage api: Argument.Damage set value 80.0f
     data modify storage api: Argument.AttackType set value "Physical"
@@ -28,11 +33,6 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
-
-# 属性それぞれの演出
-    execute if score $ElementalSwordAttack Temporary matches 0 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/fire
-    execute if score $ElementalSwordAttack Temporary matches 1 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/water
-    execute if score $ElementalSwordAttack Temporary matches 2 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/thunder
 
 # リセット
     scoreboard players reset $ElementalSwordAttack Temporary
