@@ -1,15 +1,6 @@
 #> asset:mob/0082.thunder_curtain/register
-#
-# Mobのデータを指定
-#
-# @within function asset:mob/0082.thunder_curtain/_/register
+# @within asset:mob/alias/82/register
 
-# 継承 (int) (オプション)
-    # data modify storage asset:mob Extends append value
-    # function asset:mob/extends
-
-# 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 82
 # Type (string) Wikiを参照

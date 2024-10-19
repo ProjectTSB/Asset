@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0078.messenger_of_thunder/_/hurt
+# @within function asset:mob/alias/78/hurt
 
 # 演出
     particle dust 1 1 0 1 ~ ~1.6 ~ 0.4 0.6 0.4 0 10 normal @a

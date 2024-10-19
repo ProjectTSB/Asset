@@ -23,7 +23,8 @@
     execute as @a[tag=HealTarget,distance=..20] at @s run playsound minecraft:entity.allay.item_given player @s ~ ~ ~ 1.4 1.2
 
 # 回復 回復量 = 使用者の最大体力の5%
-    execute store result storage api: Argument.Heal double 0.05 run attribute @s generic.max_health get 1
+    function api:modifier/max_health/get
+    execute store result storage api: Argument.Heal double 0.05 run data get storage api: Return.MaxHealth 1
     function api:heal/modifier
     execute as @a[tag=HealTarget,distance=..20] run function api:heal/
     function api:heal/reset

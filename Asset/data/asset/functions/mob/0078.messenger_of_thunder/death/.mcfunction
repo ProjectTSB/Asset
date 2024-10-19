@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0078.messenger_of_thunder/_/death
+# @within function asset:mob/alias/78/death
 
 # 演出
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10

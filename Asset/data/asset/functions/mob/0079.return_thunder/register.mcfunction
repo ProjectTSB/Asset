@@ -1,15 +1,6 @@
 #> asset:mob/0079.return_thunder/register
-#
-# Mobのデータを指定
-#
-# @within function asset:mob/0079.return_thunder/_/register
+# @within asset:mob/alias/79/register
 
-# 継承 (int) (オプション)
-    # data modify storage asset:mob Extends append value
-    # function asset:mob/extends
-
-# 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 79
 # Type (string) Wikiを参照

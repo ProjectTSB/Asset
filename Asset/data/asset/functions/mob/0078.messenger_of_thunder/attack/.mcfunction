@@ -2,7 +2,7 @@
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0078.messenger_of_thunder/_/attack
+# @within function asset:mob/alias/78/attack
 
 # 演出
     execute at @p[tag=Victim] run function asset:mob/0078.messenger_of_thunder/attack/fx

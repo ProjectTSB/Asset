@@ -2,7 +2,7 @@
 #
 # ヒット時の内容
 #
-# @within function asset:mob/0211.aurora_bullet/tick/2.tick
+# @within function asset:mob/0211.aurora_bullet/tick/
 
 # ダメージ
     data modify storage lib: Argument.Damage set value 25f
