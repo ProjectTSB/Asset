@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/2058/summon
 
-# 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+# 召喚する
+    function asset:object/2058.return_thunder/summon/.m with storage asset:context this

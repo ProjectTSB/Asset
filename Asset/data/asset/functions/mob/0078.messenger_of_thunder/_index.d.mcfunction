@@ -21,5 +21,6 @@
     #declare tag 26.Already
     #declare tag 26.TargetPlayer
     #declare tag 26.NotFirst
+    #declare tag 26.RotationMarker
     #declare score_holder $Interval
     #declare score_holder $Random

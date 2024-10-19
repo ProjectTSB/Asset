@@ -10,7 +10,8 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの稲妻に焼け落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function api:damage/modifier
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
 
