@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function function asset:mob/alias/371/register
+# @within function asset:mob/alias/371/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
