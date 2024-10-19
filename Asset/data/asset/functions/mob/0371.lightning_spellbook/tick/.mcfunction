@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0371.lightning_spellbook/_/tick
+# @within function asset:mob/alias/371/tick
 
 #> Private
 # @private
@@ -12,10 +12,10 @@
     particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
 
 # スコア
-    scoreboard players add @s AD.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={AD.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/ready
+    execute if entity @s[scores={General.Mob.Tick=0..}] at @s run function asset:mob/0371.lightning_spellbook/tick/ready
 
 # ここより下は移動処理
 

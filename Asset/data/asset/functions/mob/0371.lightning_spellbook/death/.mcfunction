@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0371.lightning_spellbook/_/death
+# @within function asset:mob/alias/371/death
 
 # 演出
     particle wax_off ~ ~1.68 ~ 0 0 0 20 35 normal @a
