@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0078.messenger_of_thunder/_/register
+# @within function asset:mob/alias/78/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
