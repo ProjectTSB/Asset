@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0370.wave_spellbook/_/death
+# @within function asset:mob/alias/370/death
 
 # 演出
     particle rain ~ ~1.68 ~ 0 0 0 0.15 100 normal @a

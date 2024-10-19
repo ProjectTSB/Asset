@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0370.wave_spellbook/_/tick
+# @within function asset:mob/alias/370/tick
 
 # パーティクル
     particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
@@ -21,7 +21,7 @@
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # スコア
-    scoreboard players add @s AB.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={AB.Tick=0..}] run function asset:mob/0370.wave_spellbook/tick/ready
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0370.wave_spellbook/tick/ready
