@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0224.fake_pumpkin/_/hurt
+# @within function asset:mob/alias/224/hurt
 
 # 割合ダメージ
     execute as @p[tag=Attacker] run function api:modifier/max_health/get

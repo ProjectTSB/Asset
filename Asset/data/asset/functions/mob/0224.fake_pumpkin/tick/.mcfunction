@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0224.fake_pumpkin/_/tick
+# @within function asset:mob/alias/224/tick
 
 # スコア加算
     scoreboard players add @s 68.Tick 1
