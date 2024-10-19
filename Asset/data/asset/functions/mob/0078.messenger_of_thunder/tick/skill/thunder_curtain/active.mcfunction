@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/3.active
+#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/active
 #
 # スキル発動
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/
 
 # 雷を召喚
     data modify storage api: Argument.ID set value 82

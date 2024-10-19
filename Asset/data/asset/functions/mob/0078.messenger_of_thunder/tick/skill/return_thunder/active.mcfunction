@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/4.active
+#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/active
 #
 # スキル発動
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/
 
 # 雷を召喚
     data modify storage api: Argument.ID set value 79

@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder/3.thunder_point2
+#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder/thunder_point2
 #
 # 雷を落とす処理2
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder/2.thunder_point1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder/thunder_point1
 
 # AECを召喚
     summon area_effect_cloud ~ ~ ~ {CustomNameVisible:0b,Particle:"block air",Duration:31,Tags:["Object","26.SkillThunderMarker"]}

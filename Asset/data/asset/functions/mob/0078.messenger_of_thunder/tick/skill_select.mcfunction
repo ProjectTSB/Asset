@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/2.skill_select
+#> asset:mob/0078.messenger_of_thunder/tick/skill_select
 #
 # スキルを選択する
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "78.MessengerOfThunder"
@@ -17,7 +17,7 @@
 
 # ハード以上 & 体力が半分以下なら乱数とは別口で低確率で連続攻撃へ移行
     execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per,tag=!26.ConsecutiveThunder] if predicate lib:random_pass_per/15 run tag @s add 26.ConsecutiveThunder
-    execute if entity @s[tag=26.ConsecutiveThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/1.skill_select
+    execute if entity @s[tag=26.ConsecutiveThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
 
 # debug2
     #scoreboard players set $Random Temporary 2

@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/3.display_vfx
+#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/display_vfx
 #
 # vfxを表示する
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/2.ready
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/ready
 
 # 線を表示する
 # 強化状態なら追加で2本表示する

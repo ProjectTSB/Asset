@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/consective/1.skill_select
+#> asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
 #
 # 連続攻撃状態でのスキル選択処理
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/2.skill_select
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill_select
 
 # 仕様
 # (通常雷 or 偏差雷)を2~4回繰り返す → リターン → カーテン
@@ -25,4 +25,4 @@
     execute if entity @s[scores={26.Consecutive=11..}] run scoreboard players set $Random Temporary 1
 
 # 11以上ならリセット処理
-    execute if entity @s[scores={26.Consecutive=11..}] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/2.reset
+    execute if entity @s[scores={26.Consecutive=11..}] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/end

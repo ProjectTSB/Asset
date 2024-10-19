@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/5.addition_thunder
+#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/addition_thunder
 #
 # 追加で2本召喚する処理
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/
 
 # 雷を召喚
     data modify storage api: Argument.ID set value 79

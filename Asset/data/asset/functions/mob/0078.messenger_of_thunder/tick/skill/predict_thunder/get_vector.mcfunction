@@ -1,8 +1,8 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/2.get_vector
+#> asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/get_vector
 #
 # 対象のプレイヤーのベクトルを取得する
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/1
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/
 
 # ターゲットにするプレイヤーにTagを付与
     tag @p add 26.TargetPlayer
@@ -30,7 +30,7 @@
     function lib:array/session/close
 
 # マクロで偏差撃ちする
-    execute at @p[tag=26.TargetPlayer] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/3.predict_point1.m with storage asset:temp Predict
+    execute at @p[tag=26.TargetPlayer] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point1.m with storage asset:temp Predict
 
 # リセット
     data remove storage asset:temp Predict

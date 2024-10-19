@@ -1,4 +1,4 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/4.predict_point2
+#> asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point2
 #
 # 偏差の処理2
 #
