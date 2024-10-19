@@ -11,8 +11,10 @@
     playsound ogg:block.respawn_anchor.charge1 hostile @a ~ ~ ~ 2 1.5
     playsound ogg:item.trident.thunder2 hostile @a ~ ~ ~ 2 2
 
-# 周囲に演出兼ねた暗闇を展開
-    effect give @a[distance=..64] darkness 2 0 true
+# 召喚ごまかすために画面エフェクト
+    title @a[distance=..100] times 5 10 5
+    title @a[distance=..100] title {"text":""}
+    title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"white"}
 
 # タグ付与
     tag @s add RW.Mode.Light

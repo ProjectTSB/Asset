@@ -12,6 +12,9 @@
 # 剣を破壊
     execute as @e[type=item_display,scores={ObjectID=2043},distance=..64] at @s run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/sword/break
 
+# スカイボックスが存在しているようなら消す
+    execute if entity @e[type=item_display,tag=RW.SkyBox] run function asset:mob/1004.tultaria/tick/base_move/element_select/delete_skybox
+
 # 属性をランダムに選択
     # 要素がない場合は再付与
         execute if data storage asset:context this.Element{List:[]} run data modify storage asset:context this.Element.List set value [Fire,Water,Thunder]

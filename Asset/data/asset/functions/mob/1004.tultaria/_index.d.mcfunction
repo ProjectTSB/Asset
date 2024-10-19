@@ -138,6 +138,9 @@
     #declare tag RW.DeathInit
     #declare tag Hit
 
+## その他
+    #declare tag RW.SkyBox
+
     #
     #declare tag Landing
     #declare tag LandingTarget
