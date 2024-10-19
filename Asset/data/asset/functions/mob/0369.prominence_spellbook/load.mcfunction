@@ -6,5 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0369.prominence_spellbook/**
-    scoreboard objectives add A9.Tick dummy
     scoreboard objectives add A9.StepBack dummy

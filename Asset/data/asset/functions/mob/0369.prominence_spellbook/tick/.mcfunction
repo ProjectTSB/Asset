@@ -35,7 +35,7 @@
     execute unless entity @s[scores={A9.StepBack=0..}] at @s unless block ^ ^ ^0.3 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # スコア
-    scoreboard players add @s A9.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={A9.Tick=0..}] run function asset:mob/0369.prominence_spellbook/tick/ready
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0369.prominence_spellbook/tick/ready
