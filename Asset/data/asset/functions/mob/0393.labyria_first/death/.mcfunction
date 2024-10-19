@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0393.labyria_first/_/death
+# @within function asset:mob/alias/393/death
 
 # デバッグ用
     kill @e[type=marker,tag=AZ.Marker.SummonPoint]

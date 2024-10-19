@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0392.ecual_first/_/init
+# @within function asset:mob/alias/392/init
 
 # 召喚位置を記録
 # （島の位置が変更されるごとにメンテ）

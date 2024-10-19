@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0398.crystal_healer/_/register
+# @within function asset:mob/alias/398/register
 
 # ID (int)
     data modify storage asset:mob ID set value 398

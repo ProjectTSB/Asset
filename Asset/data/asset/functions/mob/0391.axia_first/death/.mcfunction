@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0391.axia_first/_/death
+# @within function asset:mob/alias/391/death
 
 
 # マーカー削除

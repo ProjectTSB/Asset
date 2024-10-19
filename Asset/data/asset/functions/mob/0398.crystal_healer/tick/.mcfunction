@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0398.crystal_healer/_/tick
+# @within function asset:mob/alias/398/tick
 
 # スコアをカウントアップ
     scoreboard players add @s B2.Tick 1

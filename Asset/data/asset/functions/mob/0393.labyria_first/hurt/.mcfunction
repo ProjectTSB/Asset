@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0393.labyria_first/_/hurt
+# @within function asset:mob/alias/393/hurt
 
 # モデルを紐づけ
     tag @e[type=item_display,tag=AZ.ModelRoot,sort=nearest,limit=1] add AZ.Root.This

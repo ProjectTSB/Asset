@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0392.ecual_first/_/register
+# @within function asset:mob/alias/392/register
 
 # ID (int)
     data modify storage asset:mob ID set value 392

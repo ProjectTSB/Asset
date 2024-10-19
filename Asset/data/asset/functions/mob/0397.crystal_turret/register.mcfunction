@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0397.crystal_turret/_/register
+# @within function asset:mob/alias/397/register
 
 # ID (int)
     data modify storage asset:mob ID set value 397

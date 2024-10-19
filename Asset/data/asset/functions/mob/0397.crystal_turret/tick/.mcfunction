@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0397.crystal_turret/_/tick
+# @within function asset:mob/alias/397/tick
 
 # スコアをカウントアップ
     scoreboard players add @s B1.Tick 1

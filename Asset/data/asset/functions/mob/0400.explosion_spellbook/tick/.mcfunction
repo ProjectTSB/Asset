@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0400.explosion_spellbook/_/tick
+# @within function asset:mob/alias/400/tick
 
 # パーティクル
     particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]

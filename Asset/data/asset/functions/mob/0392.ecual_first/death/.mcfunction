@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0392.ecual_first/_/death
+# @within function asset:mob/alias/392/death
 
 # ディスプレイ削除
     kill @e[tag=AW.WaterMagic]

@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0393.labyria_first/_/tick
+# @within function asset:mob/alias/393/tick
 
 # 対象のanimated javaモデルを紐づけ
     tag @e[type=item_display,tag=AZ.ModelRoot,distance=..100,sort=nearest,limit=1] add AZ.Root.This

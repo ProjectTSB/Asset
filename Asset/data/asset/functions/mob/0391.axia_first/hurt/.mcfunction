@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0391.axia_first/_/hurt
+# @within function asset:mob/alias/391/hurt
 
 # モデルを紐づけ
     tag @e[type=item_display,tag=AV.ModelRoot,sort=nearest,limit=1] add AV.Root.This

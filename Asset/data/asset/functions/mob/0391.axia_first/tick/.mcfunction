@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0391.axia_first/_/tick
+# @within function asset:mob/alias/391/tick
 
 # 対象のanimated javaモデルを紐づけ
     tag @e[type=item_display,tag=AV.ModelRoot,distance=..100,sort=nearest,limit=1] add AV.Root.This

@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0392.ecual_first/_/hurt
+# @within function asset:mob/alias/392/hurt
 
 # モデルを紐づけ
     tag @e[type=item_display,tag=AW.ModelRoot,sort=nearest,limit=1] add AW.Root.This
