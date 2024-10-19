@@ -13,6 +13,6 @@
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value 2057
+    data modify storage asset:object ID set value 1049
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value

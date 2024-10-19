@@ -6,5 +6,5 @@
 # @private
 
 # 召喚
-    data modify storage api: Argument.ID set value 2057
+    data modify storage api: Argument.ID set value 1049
     function api:object/summon
