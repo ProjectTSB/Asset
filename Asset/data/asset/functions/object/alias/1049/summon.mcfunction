@@ -1,8 +1,8 @@
-#> asset:object/alias/2057/summon
+#> asset:object/alias/1049/summon
 #
 # Object召喚処理のエイリアス
 #
 # @within asset_manager:object/summon/summon.m
 
 # 元の召喚処理を呼び出す
-    function asset:object/2057.lexiel_rod_fireball/summon/
+    function asset:object/1049.lexiel_rod_fireball/summon/

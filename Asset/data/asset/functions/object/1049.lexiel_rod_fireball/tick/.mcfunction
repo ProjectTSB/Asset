@@ -1,8 +1,8 @@
-#> asset:object/2057.lexiel_rod_fireball/tick/
+#> asset:object/1049.lexiel_rod_fireball/tick/
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2057/tick
+# @within asset:object/alias/1049/tick
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1

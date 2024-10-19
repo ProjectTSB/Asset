@@ -1,8 +1,8 @@
-#> asset:object/2057.lexiel_rod_fireball/init/
+#> asset:object/1049.lexiel_rod_fireball/init/
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2057/init
+# @within asset:object/alias/1049/init
 
 # フィールドのデータからスコアを設定
     data modify storage asset:context this.Speed set value 2

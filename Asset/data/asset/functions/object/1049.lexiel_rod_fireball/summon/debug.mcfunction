@@ -1,4 +1,4 @@
-#> asset:object/2057.lexiel_rod_fireball/summon/debug
+#> asset:object/1049.lexiel_rod_fireball/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

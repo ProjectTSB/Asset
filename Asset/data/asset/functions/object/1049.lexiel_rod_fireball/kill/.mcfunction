@@ -1,15 +1,15 @@
-#> asset:object/2057.lexiel_rod_fireball/kill/
+#> asset:object/1049.lexiel_rod_fireball/kill/
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/alias/2057/kill
+# @within asset:object/alias/1049/kill
 
 #> private
 # @private
     #declare score_holder $OwnerID
 
 # 演出
-    function asset:object/2057.lexiel_rod_fireball/kill/vfx
+    function asset:object/1049.lexiel_rod_fireball/kill/vfx
 
 # ダメージを与える
 # ダメージ設定

@@ -1,8 +1,8 @@
-#> asset:object/2057.lexiel_rod_fireball/register
+#> asset:object/1049.lexiel_rod_fireball/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/2057/register
+# @within function asset:object/alias/1049/register
 
 # 継承(オプション)
     data modify storage asset:object Extends append value 1

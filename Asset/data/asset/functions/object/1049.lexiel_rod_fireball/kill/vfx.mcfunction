@@ -1,8 +1,8 @@
-#> asset:object/2057.lexiel_rod_fireball/kill/vfx
+#> asset:object/1049.lexiel_rod_fireball/kill/vfx
 #
 #
 #
-# @within function asset:object/2057.lexiel_rod_fireball/kill/
+# @within function asset:object/1049.lexiel_rod_fireball/kill/
 
 particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
 particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 100
