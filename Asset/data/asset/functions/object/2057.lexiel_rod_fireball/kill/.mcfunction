@@ -4,26 +4,27 @@
 #
 # @within asset:object/alias/2057/kill
 
+#> private
+# @private
+    #declare score_holder $OwnerID
+
 # 演出
-    particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 100
-    playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0
+    function asset:object/2057.lexiel_rod_fireball/kill/vfx
 
 # ダメージを与える
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 40.0f
+        data modify storage lib: Argument.Damage set value 250.0f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 属性
         data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
-        function lib:damage/modifier
+        execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
+        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
         execute as @e[type=#lib:living,tag=Enemy,distance=..3] run function lib:damage/
 # リセット
     function lib:damage/reset
 
 # キル
     kill @s
-
-execute if entity @s run say a

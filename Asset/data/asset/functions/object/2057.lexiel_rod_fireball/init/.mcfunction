@@ -5,7 +5,7 @@
 # @within asset:object/alias/2057/init
 
 # フィールドのデータからスコアを設定
-    data modify storage asset:context this.Speed set value 1
+    data modify storage asset:context this.Speed set value 2
     data modify storage asset:context this.Range set value 32
 
 # デフォルト値0.5

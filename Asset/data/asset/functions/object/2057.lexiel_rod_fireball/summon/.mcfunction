@@ -5,4 +5,4 @@
 # @within asset:object/alias/2057/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {billboard:"fixed",teleport_duration:1,Tags:["ObjectInit"],item:{id:"minecraft:fire_charge",Count:1b}}
+    function asset:object/2057.lexiel_rod_fireball/summon/macro.m with storage asset:context this

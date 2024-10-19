@@ -4,4 +4,6 @@
 #
 # @within asset:object/alias/2057/recursive
 
-    particle flame ~ ~ ~ 0 0 0 0 0
+# particle
+    execute if predicate lib:random_pass_per/30 run particle flame ~ ~0.2 ~ 0 0 0 0.01 2
+    execute if predicate lib:random_pass_per/30 run particle smoke ~ ~0.2 ~ 0 0 0 0.01 3
