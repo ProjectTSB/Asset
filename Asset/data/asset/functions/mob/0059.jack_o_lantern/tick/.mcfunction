@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0059.jack_o_lantern/_/tick
+# @within function asset:mob/alias/59/tick
 
 # Tick処理
     scoreboard players add @s 1N.Tick 1

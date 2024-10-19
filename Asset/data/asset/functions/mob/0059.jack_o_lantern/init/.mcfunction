@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0059.jack_o_lantern/_/init
+# @within function asset:mob/alias/59/init
 
 # スポーン位置を保存するマーカーを召喚
     summon marker ~ ~ ~ {Tags:["Object","1N.SpawnMarker"]}

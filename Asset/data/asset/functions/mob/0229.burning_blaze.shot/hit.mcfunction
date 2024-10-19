@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0229.burning_blaze.shot/tick/2.tick
+# @within function asset:mob/0229.burning_blaze.shot/tick/
 
 # ダメージ
     data modify storage lib: Argument set value {Damage:22,AttackType:Physical,AttackElement:Fire}

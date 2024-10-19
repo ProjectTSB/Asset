@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0224.fake_pumpkin/_/init
+# @within function asset:mob/alias/224/init
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/

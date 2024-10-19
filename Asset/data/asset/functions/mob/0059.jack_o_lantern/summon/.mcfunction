@@ -2,7 +2,7 @@
 #
 # Mob召喚処理の呼び出し時に実行されるfunction
 #
-# @within asset:mob/0059.jack_o_lantern/_/summon
+# @within asset:mob/alias/59/summon
 
 # 元となるMobを召喚する
 # 一部スキルで使用するのでカボチャのscale0のitem_displayを被せておく

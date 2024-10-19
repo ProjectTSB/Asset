@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0059.jack_o_lantern/_/death
+# @within function asset:mob/alias/59/death
 
 # プレイヤーの方を見る
     tp @s ~ ~ ~ facing entity @p eyes
@@ -20,3 +20,8 @@
 
 # スポーンマーカーをkill
     kill @e[type=marker,tag=1N.SpawnMarker]
+
+# ボスドロ
+    data modify storage api: Argument.ID set value 950
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id

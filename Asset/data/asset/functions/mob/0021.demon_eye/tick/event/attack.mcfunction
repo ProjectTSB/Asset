@@ -2,7 +2,7 @@
 #
 # 接触ダメージ 実行しているのはプレイヤー自身
 #
-# @within function asset:mob/0021.demon_eye/tick/2.tick
+# @within function asset:mob/0021.demon_eye/tick/
 
 # VFX
     playsound minecraft:block.wart_block.break hostile @a ~ ~ ~ 2 1
