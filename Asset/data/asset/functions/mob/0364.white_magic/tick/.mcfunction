@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0364.white_magic/_/tick
+# @within function asset:mob/alias/364/tick
 
 #> Private
 # @private
