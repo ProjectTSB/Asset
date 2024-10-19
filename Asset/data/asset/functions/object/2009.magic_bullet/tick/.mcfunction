@@ -23,6 +23,9 @@
 # 予告線
     execute if score @s General.Object.Tick matches 101..119 run function asset:object/2009.magic_bullet/tick/announce_line
 
+# 発射
+    execute if score @s General.Object.Tick matches 120 run function asset:object/2009.magic_bullet/tick/cast/
+
 # 消滅処理
     kill @s[scores={General.Object.Tick=150..}]
 
