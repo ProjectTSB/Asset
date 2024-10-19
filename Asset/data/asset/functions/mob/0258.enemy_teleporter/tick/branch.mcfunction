@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0258.enemy_teleporter/tick/2.tick
+# @within function asset:mob/0258.enemy_teleporter/tick/
 
 #> private
 # @private

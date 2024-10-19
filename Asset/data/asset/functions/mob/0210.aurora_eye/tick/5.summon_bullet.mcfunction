@@ -2,7 +2,7 @@
 #
 # オーロラ弾を発射するよ
 #
-# @within function asset:mob/0210.aurora_eye/tick/2.tick
+# @within function asset:mob/0210.aurora_eye/tick/
 
 # 発射
     data modify storage api: Argument.ID set value 211
