@@ -1,13 +1,13 @@
-#> asset:artifact/0057.elemental_sword/trigger/3.3.thunderattack
+#> asset:artifact/0057.elemental_sword/trigger/vfx/fire
 #
-# 雷属性
+# 火属性
 #
 # @within function asset:artifact/0057.elemental_sword/trigger/3.main
 
 
-    # 演出
-        particle crit ~ ~3 ~ 0.025 3 0.025 0 100 normal @a
-        playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
+# 演出
+    particle minecraft:flame ~ ~0.5 ~ 0 0.5 0 0.1 100
+    playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.6
 
 # ダメージ設定
     # 与えるダメージ = 30
@@ -15,7 +15,7 @@
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage lib: Argument.ElementType set value "Fire"
     # ダメージ
         execute as @p[tag=this] run function lib:damage/modifier
         function lib:damage/
