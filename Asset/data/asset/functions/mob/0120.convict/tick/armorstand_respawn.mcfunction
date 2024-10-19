@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0120.convict/tick/2.tick
+# @within function asset:mob/0120.convict/tick/
 
 # どっかいったアマスタを殺す
     execute as @e[type=armor_stand,tag=3C.ArmorStand] at @s unless entity @e[type=wither_skeleton,tag=3C.Angel,distance=..0.1] run kill @s

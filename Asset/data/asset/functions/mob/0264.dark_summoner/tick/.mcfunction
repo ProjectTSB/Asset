@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0264.dark_summoner/_/tick
+# @within function asset:mob/alias/264/tick
 
 # パーティクル
     particle minecraft:falling_dust black_concrete ~ ~0.5 ~ 0.1 0 0.1 0 1
