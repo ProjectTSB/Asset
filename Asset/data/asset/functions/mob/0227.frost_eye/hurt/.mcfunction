@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0227.frost_eye/_/hurt
+# @within function asset:mob/alias/227/hurt
 
 # 演出
     particle snowflake ~ ~1.7 ~ 1.2 0.1 1.2 0 70 normal @a

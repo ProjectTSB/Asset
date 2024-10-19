@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0206.skull_basher/tick/2.tick
+# @within function asset:mob/0206.skull_basher/tick/
 
 # VFX
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1.5 1.2

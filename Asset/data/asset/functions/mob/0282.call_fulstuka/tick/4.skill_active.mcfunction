@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0282.call_fulstuka/tick/2.tick
+# @within function asset:mob/0282.call_fulstuka/tick/
 
 # 銃
     execute if entity @s[tag=7U.SkillGun] run function asset:mob/0282.call_fulstuka/tick/1.skill_gun/1.skill_gun
