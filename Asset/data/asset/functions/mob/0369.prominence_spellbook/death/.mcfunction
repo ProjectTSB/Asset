@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0369.prominence_spellbook/_/death
+# @within function asset:mob/alias/369/death
 
 # 演出
     particle flame ~ ~1.68 ~ 0 0 0 0.15 35 normal @a
