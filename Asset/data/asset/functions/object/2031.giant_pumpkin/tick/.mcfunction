@@ -4,11 +4,6 @@
 #
 # @within asset:object/alias/2031/tick
 
-#> Private
-# @private
-    #declare score_holder $Interval
-    #declare score_holder $Interval2
-
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
