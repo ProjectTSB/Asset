@@ -16,7 +16,7 @@
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # 補正を無視する
-        #data modify storage lib: Argument.BypassModifier set value true
+        data modify storage lib: Argument.BypassModifier set value true
     # ダメージ
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
         execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
