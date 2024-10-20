@@ -13,11 +13,11 @@
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # debug1
-    # tag @s add 26.ConsecutiveThunder
+    # tag @s add 26.ConsecutiveAttack
 
 # ハード以上 & 体力が半分以下なら乱数とは別口で低確率で連続攻撃へ移行
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per,tag=!26.ConsecutiveThunder] if predicate lib:random_pass_per/15 run tag @s add 26.ConsecutiveThunder
-    execute if entity @s[tag=26.ConsecutiveThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per,tag=!26.ConsecutiveAttack] if predicate lib:random_pass_per/15 run tag @s add 26.ConsecutiveAttack
+    execute if entity @s[tag=26.ConsecutiveAttack] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
 
 # debug2
     scoreboard players set $Random Temporary 4
