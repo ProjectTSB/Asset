@@ -5,6 +5,7 @@
 # @within function asset:mob/alias/46/death
 
 kill @e[type=armor_stand,tag=1A.ClockHand]
+kill @e[type=item_display,tag=1A.ClockDisplay]
 
 # ボスドロ
     data modify storage api: Argument.ID set value 837

@@ -5,6 +5,7 @@
 # @within function asset:mob/0046.clock_of_despair/**
     #declare tag 1A.ClockHand
     #declare tag 1A.Clock
+    #declare tag 1A.ClockDisplay
     #
     #declare tag 1A.SkillMarker
     #declare tag 1A.SkillPenaltyThunderMaker
@@ -15,6 +16,7 @@
     #declare tag 1A.GearSilver
     #declare tag 1A.GearGold
     #declare tag 1A.WallLazerClock
+    #declare tag 1A.WallLazerClockDisplay
     #declare tag 1A.This
     #
     #declare tag Landing
