@@ -1,4 +1,4 @@
-#> asset:mob/0332.aurora_missile/tick/1
+#> asset:mob/0332.aurora_missile/tick/
 #
 # Mobのtick時の処理
 #
