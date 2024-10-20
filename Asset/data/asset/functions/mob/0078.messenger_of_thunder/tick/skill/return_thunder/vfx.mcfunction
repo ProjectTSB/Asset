@@ -1,4 +1,4 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/vfx/line
+#> asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
 #
 # 線の演出
 #

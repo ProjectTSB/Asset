@@ -1,4 +1,4 @@
-#> asset:mob/0078.messenger_of_thunder/tick/skill/vfx/curtain
+#> asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/vfx
 #
 # カーテン用の演出
 #
