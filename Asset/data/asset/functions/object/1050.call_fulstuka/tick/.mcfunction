@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/alias/1050/tick
+# @within function asset:object/alias/1050/tick
 
 # スコアを増やす
     scoreboard players add @s 1050.ActionTime 1
