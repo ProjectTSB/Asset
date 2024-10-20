@@ -1,4 +1,9 @@
 #> asset:mob/0059.jack_o_lantern/summon/
+#
+# Mob召喚処理の呼び出し時に実行されるfunction
+#
 # @within asset:mob/alias/59/summon
 
-summon husk ~ ~-100 ~ {DeathTime:19s,Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiVoid"],DeathLootTable:"asset:mob/death/0059.jack_o_lantern"}
+# 元となるMobを召喚する
+# 一部スキルで使用するのでカボチャのscale0のitem_displayを被せておく
+    summon husk ~ ~ ~ {DeathTime:19s,Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiBurn","AntiVoid"],DeathLootTable:"asset:mob/death/0059.jack_o_lantern"}
