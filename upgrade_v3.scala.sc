@@ -19,11 +19,7 @@ import scala.util.chaining.*
 
 // MARK: Configurations
 
-val convertTarget = ConvertTarget.Specific(
-    List(
-        "0301.sinful_thoughts"
-    )
-)
+val convertTarget = ConvertTarget.All
 val targetDir     = "Asset/data/asset/functions/mob"
 val debug         = true
 
