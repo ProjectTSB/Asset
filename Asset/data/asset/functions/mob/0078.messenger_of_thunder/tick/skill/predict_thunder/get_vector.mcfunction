@@ -29,7 +29,7 @@
 # セッション閉じる
     function lib:array/session/close
 
-# マクロで偏差撃ちする
+# マクロで偏差召喚する
     execute at @p[tag=26.TargetPlayer] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point1.m with storage asset:temp Predict
 
 # リセット

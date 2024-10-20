@@ -4,15 +4,26 @@
 #
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/3.predict_point1.m
 
-# 演出
-    playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.5 0
+# AECを召喚して拡散するを5回繰り返す
+# それぞれ起爆までの時間をそれぞれ設定する
+    data modify storage api: Argument.FieldOverride.Tick set value 22
+    function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
 
-# 最初の1回だけは偏差位置に落ちるようにする
+    data modify storage api: Argument.FieldOverride.Tick set value 24
+    function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
 
-# AECを召喚
-    summon area_effect_cloud ~ ~ ~ {CustomNameVisible:0b,Particle:"block air",Duration:31,Tags:["Object","26.SkillThunderMarker"]}
-    execute if entity @s[tag=26.NotFirst] run data modify storage lib: Argument.Bounds set value [[6d,6d],[0d,0d],[6d,6d]]
-    execute if entity @s[tag=26.NotFirst] as @e[type=area_effect_cloud,tag=26.SkillThunderMarker,distance=..0.01,limit=1] run function lib:spread_entity/
+    data modify storage api: Argument.FieldOverride.Tick set value 26
+    function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
 
-# 最初の1回ではないこと検知用Tagを付与
-    tag @s add 26.NotFirst
+    data modify storage api: Argument.FieldOverride.Tick set value 28
+    function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
+
+    data modify storage api: Argument.FieldOverride.Tick set value 30
+    function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
+
+# ハードかつ体力半分以下で追加で2本召喚する
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Tick set value 27
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
+
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Tick set value 29
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
