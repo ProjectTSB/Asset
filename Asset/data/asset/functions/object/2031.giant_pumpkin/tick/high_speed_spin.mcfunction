@@ -7,7 +7,7 @@
 # 演出
     particle dust 1 0.6 0 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
     particle dust 0.851 0 1 1.3 ~ ~ ~ 0.8 0.8 0.8 0 3 normal @a
-    particle block carved_pumpkin ~ ~0.1 ~ 0.8 0 0.8 0 10 normal @a
+    particle block carved_pumpkin ~ ~-1 ~ 0.8 0 0.8 0 10 normal @a
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 0.25 2
 
 # 一定間隔で実行
