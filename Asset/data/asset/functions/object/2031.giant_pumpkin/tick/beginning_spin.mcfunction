@@ -1,4 +1,4 @@
-#> asset:object/2031.giant_pumpkin/tick/begining_spin
+#> asset:object/2031.giant_pumpkin/tick/beginning_spin
 #
 #
 #
