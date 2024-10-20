@@ -18,6 +18,6 @@
         function lib:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
     # 打ち上げ
-        execute at @a[tag=!PlayerShouldInvulnerable,distance=..2] run summon area_effect_cloud ~ ~ ~ {Particle:"poof",Radius:0.5f,Duration:6,Age:4,Effects:[{Id:25,Amplifier:15b,Duration:5,ShowParticles:1b}]}
+        execute at @a[tag=!PlayerShouldInvulnerable,distance=..2] run summon area_effect_cloud ~ ~ ~ {Particle:"poof",Radius:0.5f,Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:15b,duration:5,show_particles:1b}]}
 # リセット
     function lib:damage/reset
