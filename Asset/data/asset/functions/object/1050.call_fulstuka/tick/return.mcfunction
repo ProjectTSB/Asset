@@ -1,8 +1,8 @@
-#> asset:mob/0282.call_fulstuka/tick/return
+#> asset:object/1050.call_fulstuka/tick/return
 #
 #
 #
-# @within function asset:mob/0282.call_fulstuka/tick/
+# @within function asset:object/1050.call_fulstuka/tick/
 
 # 死ぬ
     kill @s

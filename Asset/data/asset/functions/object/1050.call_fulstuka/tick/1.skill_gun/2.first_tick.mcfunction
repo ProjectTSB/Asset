@@ -1,8 +1,8 @@
-#> asset:mob/0282.call_fulstuka/tick/1.skill_gun/2.first_tick
+#> asset:object/1050.call_fulstuka/tick/1.skill_gun/2.first_tick
 #
 #
 #
-# @within function asset:mob/0282.call_fulstuka/tick/1.skill_gun/1.skill_gun
+# @within function asset:object/1050.call_fulstuka/tick/1.skill_gun/1.skill_gun
 
 # 腕を変える
     data modify entity @s Pose.RightArm set value [270f,0f,0f]
