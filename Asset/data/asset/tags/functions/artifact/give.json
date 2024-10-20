@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0569.great_sage_boots/give/1.trigger",
+        "asset:artifact/0568.great_sage_leggings/give/1.trigger",
+        "asset:artifact/0567.great_sage_chestplate/give/1.trigger",
+        "asset:artifact/0566.great_sage_helmet/give/1.trigger",
         "asset:artifact/0002.blessing/give/1.trigger",
         "asset:artifact/1108.white_lily_of_priestess/give/1.trigger",
         "asset:artifact/1106.rainbow_candy/give/1.trigger",
