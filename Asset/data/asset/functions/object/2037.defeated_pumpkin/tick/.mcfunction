@@ -26,10 +26,10 @@
     execute if entity @s[scores={General.Object.Tick=100}] run data modify storage asset:context this.MovePerStep set value -1
 
 # 花火を召喚
-    execute if entity @s[scores={General.Object.Tick=115}] run summon firework_rocket ~ ~ ~ {Life:5,FireworksItem:{id:"firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Colors:[I;16750848,14221567]}]}}}}
+    #execute if entity @s[scores={General.Object.Tick=115}] run summon firework_rocket ~ ~ ~ {Life:5,FireworksItem:{id:"firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1b,Colors:[I;16750848,14221567]}]}}}}
 
 # カボチャをドロップ
-    execute if entity @s[scores={General.Object.Tick=115}] run summon item ~ ~2 ~ {Item:{id:"carved_pumpkin",Count:1b}}
+    execute if entity @s[scores={General.Object.Tick=140}] run summon item ~ ~2 ~ {Item:{id:"carved_pumpkin",Count:1b}}
 
 # 回転
 # 最初の浮遊時、または着地後は回転しない
@@ -40,7 +40,7 @@
     execute at @s run function asset:object/super.tick
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=115..}]
+    kill @s[scores={General.Object.Tick=200..}]
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true

@@ -14,7 +14,7 @@
 
 # スピード関連の設定
     data modify storage asset:context this.Speed set value 1
-    data modify storage asset:context this.Range set value 480
+    data modify storage asset:context this.Range set value 9999
     data modify storage asset:context this.MovePerStep set value 0.1
 
 # 継承
