@@ -1,6 +1,6 @@
 #> asset:object/2031.giant_pumpkin/summon/.m
 #
-# args:
+# @input args:
 #   Rotation : double @ 2
 #   FaceID : int
 #

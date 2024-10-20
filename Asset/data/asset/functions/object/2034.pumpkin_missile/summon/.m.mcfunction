@@ -1,6 +1,6 @@
 #> asset:object/2034.pumpkin_missile/summon/.m
 #
-# args
+# @input args
 #   Rotation : double @ 2
 #
 # @within function asset:object/2034.pumpkin_missile/summon/

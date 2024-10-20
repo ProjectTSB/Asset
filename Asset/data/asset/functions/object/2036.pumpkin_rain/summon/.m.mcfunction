@@ -2,7 +2,7 @@
 #
 # マクロで向きを合わせて召喚する
 #
-# args:
+# @input args:
 #    RotationX : int
 #
 # @within function asset:object/2036.pumpkin_rain/summon/

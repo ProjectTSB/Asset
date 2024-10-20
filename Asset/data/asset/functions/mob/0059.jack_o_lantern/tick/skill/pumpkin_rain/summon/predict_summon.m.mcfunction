@@ -2,7 +2,7 @@
 #
 # 偏差で召喚
 #
-# args:
+# @input args:
 #    X: double
 #    Z: double
 #
