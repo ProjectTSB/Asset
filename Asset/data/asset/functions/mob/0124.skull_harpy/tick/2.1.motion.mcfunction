@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0124.skull_harpy/tick/2.tick
+# @within function asset:mob/0124.skull_harpy/tick/
 
 #> private
 # @private
