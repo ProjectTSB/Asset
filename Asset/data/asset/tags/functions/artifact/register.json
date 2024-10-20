@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/0817.dragons_neck_ball/register",
+        "asset:artifact/0816.fur_coad_of_firerat/register",
         "asset:artifact/0003.humanity/register",
         "asset:artifact/0005.musket_matchlock/register",
         "asset:artifact/0007.nitrogen_fixater/register",
