@@ -1,8 +1,8 @@
-#> asset:mob/0217.medousa_eye/hurt/2.hurt
+#> asset:mob/0217.medousa_eye/hurt/
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0217.medousa_eye/hurt/1.trigger
+# @within function asset:mob/alias/217/hurt
 
 # 演出
     playsound minecraft:entity.spider.step hostile @a ~ ~ ~ 1.5 1.5

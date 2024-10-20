@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0217.medousa_eye/tick/2.tick
+# @within function asset:mob/0217.medousa_eye/tick/
 
 # 演出
 # 円 1

@@ -1,8 +1,8 @@
-#> asset:mob/0217.medousa_eye/tick/4.find_target
+#> asset:mob/0217.medousa_eye/tick/find_target
 #
 # 特定の条件を満たすプレイヤーを探す
 #
-# @within function asset:mob/0217.medousa_eye/tick/3.fix_direction
+# @within function asset:mob/0217.medousa_eye/tick/fix_direction
 
 # 石化デバフ(ID:606)を持っていないプレイヤーを探す
     data modify storage api: Argument.ID set value 606

@@ -1,8 +1,8 @@
-#> asset:mob/0217.medousa_eye/tick/7.beam_hit
+#> asset:mob/0217.medousa_eye/tick/beam_hit
 #
 # 石化ビームの着弾判定
 #
-# @within function asset:mob/0217.medousa_eye/tick/5.beam_shoot
+# @within function asset:mob/0217.medousa_eye/tick/beam_shoot
 
 #> Private
 # @private

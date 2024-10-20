@@ -1,11 +1,6 @@
-#> asset:mob/0217.medousa_eye/summon/2.summon
-#
-# Mobの召喚時の処理
-#
-# @within function asset:mob/0217.medousa_eye/summon/1.trigger
+#> asset:mob/0217.medousa_eye/register
+# @within asset:mob/alias/217/register
 
-# 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","AntiBurn","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"asset:mob/death/0217.medousa_eye"}
 # ID (int)
     data modify storage asset:mob ID set value 217
 # Type (string) Wikiを参照
@@ -57,6 +52,3 @@
         data modify storage asset:mob Resist.Water set value 0.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.7
-
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=zombie,tag=MobInit,distance=..0.01] run function asset:mob/common/summon
