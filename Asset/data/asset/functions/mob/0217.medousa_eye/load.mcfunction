@@ -1,4 +1,4 @@
-#> asset:mob/0217.medousa_eye/0.load
+#> asset:mob/0217.medousa_eye/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
