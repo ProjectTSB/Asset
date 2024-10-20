@@ -5,4 +5,4 @@
 # @within asset:object/alias/2059/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    function asset:object/2059.thunder_curtain/summon/.m with storage asset:context this

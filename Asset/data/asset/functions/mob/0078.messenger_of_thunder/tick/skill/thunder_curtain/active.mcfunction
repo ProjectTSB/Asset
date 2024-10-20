@@ -4,11 +4,24 @@
 #
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/
 
-# 雷を召喚
-    data modify storage api: Argument.ID set value 82
-    function api:mob/summon
-    execute facing entity @p[gamemode=!spectator,distance=..50] feet rotated ~ 0 run tp @e[type=marker,tag=!26.Already,scores={MobID=82},distance=..0.001,sort=nearest,limit=1] ~ ~ ~ ~ ~
-    tag @e[type=marker,tag=!26.Already,scores={MobID=82},distance=..0.01,sort=nearest,limit=1] add 26.Already
+# マーカーを召喚し、プレイヤーの方に向ける
+    summon marker ~ ~ ~ {Tags:["26.RotationMarker"]}
+    tp @e[type=marker,tag=26.RotationMarker,distance=..0.01] ~ ~ ~ facing entity @p feet
+
+# FieldOverrideへRotation[0]を入れる
+    data modify storage api: Argument.FieldOverride.RotationX set from entity @e[type=marker,tag=26.RotationMarker,distance=..0.01,sort=nearest,limit=1] Rotation[0]
+
+# 雷のダメージを設定
+    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set value 15.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 18.0f
+
+# サンダーカーテンを召喚
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.ID set value 2059
+    function api:object/summon
+
+# マーカーをkill
+    kill @e[type=marker,tag=26.RotationMarker,distance=..0.01]
 
 # モーション
     data modify storage lib: Argument.VectorMagnitude set value 1.2

@@ -20,7 +20,7 @@
     execute if entity @s[tag=26.ConsecutiveThunder] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
 
 # debug2
-    scoreboard players set $Random Temporary 2
+    scoreboard players set $Random Temporary 1
 
 # スコアに応じたスキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 26.Thunder
