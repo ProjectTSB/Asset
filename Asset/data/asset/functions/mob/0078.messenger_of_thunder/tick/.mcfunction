@@ -9,13 +9,13 @@
     particle dust 0.2 0.2 0.2 1 ~ ~1.7 ~ 0.2 0.2 0.2 0 3 normal @a
 
 # スコア
-    scoreboard players add @s 26.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 技選択
-    execute if entity @s[scores={26.Tick=0}] run function asset:mob/0078.messenger_of_thunder/tick/skill_select
+    execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0078.messenger_of_thunder/tick/skill_select
 
 # スキル
-    execute if entity @s[scores={26.Tick=0..}] run function asset:mob/0078.messenger_of_thunder/tick/skill_branch
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0078.messenger_of_thunder/tick/skill_branch
 
 # ワープのクールダウン処理(0以下ならワープ可能になる)
     execute if entity @s[scores={26.TPCool=0..}] run scoreboard players remove @s 26.TPCool 1

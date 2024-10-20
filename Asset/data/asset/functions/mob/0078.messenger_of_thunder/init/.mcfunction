@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/78/init
 
 # スポーン時スコア設定
-    scoreboard players set @s 26.Tick -80
+    scoreboard players set @s General.Mob.Tick -80

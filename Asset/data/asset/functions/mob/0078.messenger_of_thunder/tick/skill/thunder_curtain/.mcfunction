@@ -5,11 +5,11 @@
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill_branch
 
 # 予備動作
-    execute if entity @s[scores={26.Tick=0}] run playsound entity.zombie_villager.converted hostile @a[distance=..30] ~ ~ ~ 2 1.5 1
-    execute if entity @s[scores={26.Tick=0..19}] facing entity @p eyes rotated ~ 0 positioned ^ ^0.2 ^0.8 run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/ready
+    execute if entity @s[scores={General.Mob.Tick=0}] run playsound entity.zombie_villager.converted hostile @a[distance=..30] ~ ~ ~ 2 1.5 1
+    execute if entity @s[scores={General.Mob.Tick=0..19}] facing entity @p eyes rotated ~ 0 positioned ^ ^0.2 ^0.8 run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/ready
 
 # 発動
-    execute if entity @s[scores={26.Tick=20}] run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/active
+    execute if entity @s[scores={General.Mob.Tick=20}] run function asset:mob/0078.messenger_of_thunder/tick/skill/thunder_curtain/active
 
 # リセット
-    execute if entity @s[scores={26.Tick=60..}] run function asset:mob/0078.messenger_of_thunder/tick/skill/reset
+    execute if entity @s[scores={General.Mob.Tick=60..}] run function asset:mob/0078.messenger_of_thunder/tick/skill/reset
