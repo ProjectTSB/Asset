@@ -15,9 +15,13 @@
 # debug1
     # tag @s add 26.ConsecutiveAttack
 
-# ハード以上 & 体力が半分以下なら乱数とは別口で低確率で連続攻撃へ移行
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per,tag=!26.ConsecutiveAttack] if predicate lib:random_pass_per/15 run tag @s add 26.ConsecutiveAttack
+# ハード以上 & 体力が半分以下 & 連続攻撃のCD中でない を満たすなら
+# 乱数とは別口で低確率で連続攻撃へ移行
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per] unless entity @s[scores={26.ConsecutiveCool=1..}] if predicate lib:random_pass_per/40 run tag @s add 26.ConsecutiveAttack
     execute if entity @s[tag=26.ConsecutiveAttack] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
+
+# 連続攻撃のクールタイムを減らす
+    execute if entity @s[scores={26.ConsecutiveCool=0..}] run scoreboard players remove @s 26.ConsecutiveCool 1
 
 # debug2
     #scoreboard players set $Random Temporary 5
