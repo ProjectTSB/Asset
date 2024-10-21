@@ -5,6 +5,8 @@
 # @within tag/function asset:object/load
 
 #> 定義類はここに
-# @within function asset:object/2026.lastbattle_platform/**
+# @within function
+#   asset:object/2026.lastbattle_platform/**
+#   asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick
     scoreboard objectives add 2026.ID dummy
     scoreboard objectives add 2026.CoreID dummy
