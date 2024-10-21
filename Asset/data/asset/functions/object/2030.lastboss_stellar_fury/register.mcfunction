@@ -15,6 +15,6 @@
 # ID (int)
     data modify storage asset:object ID set value 2030
 # フィールド(オプション)
-    data modify storage asset:object Field.Speed set value 6
+    data modify storage asset:object Field.Speed set value 3
     data modify storage asset:object Field.Range set value 200
-    data modify storage asset:object Field.MovePerStep set value 0.5
+    data modify storage asset:object Field.MovePerStep set value 1
