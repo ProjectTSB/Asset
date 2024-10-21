@@ -8,4 +8,6 @@
     function asset:artifact/common/use/head
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1118.time_samsara
+
+# 近くのモブのうちランダムな野郎を狙って撃つ
+    execute at @e[type=#lib:living,tag=Enemy,distance=..20,limit=1] positioned ~ ~1 ~ run function asset:artifact/1118.time_samsara/trigger/summon

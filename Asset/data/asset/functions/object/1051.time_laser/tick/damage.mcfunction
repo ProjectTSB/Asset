@@ -1,0 +1,26 @@
+#> asset:object/1051.time_laser/tick/damage
+#
+#
+#
+# @within function asset:object/1051.time_laser/tick/loop
+
+#> private
+# @private
+    #declare score_holder $OwnerID
+
+# ダメージ設定
+    # 与えるダメージ = 10
+        data modify storage lib: Argument.Damage set value 20
+    # 第一属性
+        data modify storage lib: Argument.AttackType set value "Physical"
+    # 死亡ログ
+        data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの光線により身を焼かれて息絶えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    # ダメージ
+        execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
+        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=LandingTarget,sort=nearest] run function lib:damage/
+# リセット
+    function lib:damage/reset
+
+# 着弾タグを消す
+    tag @e[type=#lib:living,tag=Enemy,tag=LandingTarget,sort=nearest] remove LandingTarget
