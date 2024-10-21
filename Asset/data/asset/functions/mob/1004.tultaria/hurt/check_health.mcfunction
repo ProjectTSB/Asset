@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/hurt/3.check_health
+#> asset:mob/1004.tultaria/hurt/check_health
 #
 #
 #
-# @within function asset:mob/1004.tultaria/hurt/2.hurt
+# @within function asset:mob/1004.tultaria/hurt/
 
 #> private
 # @private

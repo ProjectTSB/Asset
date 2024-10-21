@@ -2,7 +2,9 @@
 #
 # ハード限定で、三属性を一周した場合にこれになる
 #
-# @within function asset:mob/1004.tultaria/tick/base_move/element_select/tags
+# @within function
+#   asset:mob/1004.tultaria/tick/base_move/element_select/tags
+#   asset:mob/1004.tultaria/tick/skill/**
 
 # 演出
     particle dust 1 1 1 1.5 ~ ~1 ~ 0.3 0.7 0.3 1 50

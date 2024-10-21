@@ -8,6 +8,7 @@
     tag @s remove RW.Mode.Fire
     tag @s remove RW.Mode.Water
     tag @s remove RW.Mode.Thunder
+    tag @s remove RW.Mode.Light
 
 # 剣を破壊
     execute as @e[type=item_display,scores={ObjectID=2043},distance=..64] at @s run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/sword/break

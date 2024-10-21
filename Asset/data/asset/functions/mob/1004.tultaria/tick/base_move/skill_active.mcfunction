@@ -45,7 +45,7 @@
     # 流星
         execute if entity @s[tag=RW.Skill.Starfury] run function asset:mob/1004.tultaria/tick/skill/light/stellar_fury_1/tick
     # 移行攻撃1
-        execute if entity @s[tag=RW.Skill.TransitionAttack2] run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick
+        execute if entity @s[tag=RW.Skill.TransitionAttack2] run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/attack
 
     # ショット
         #execute if entity @s[tag=RW.Skill.SpreadShot,scores={RW.Phase=1..2}] run function asset:mob/1004.tultaria/tick/skill/8.n_way_bullet/1.tick

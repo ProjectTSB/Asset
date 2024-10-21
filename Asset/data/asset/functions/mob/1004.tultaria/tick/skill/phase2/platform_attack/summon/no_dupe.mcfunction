@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick
+# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/attack
 
 #> 被らないようにするタグ
 # @private
