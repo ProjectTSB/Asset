@@ -14,6 +14,7 @@
     #declare tag 1A.SkillBeam
     #declare tag 1A.GearSilver
     #declare tag 1A.GearGold
+    #declare tag 1A.GearSubVfx
     #declare tag 1A.WallLazerClock
     #declare tag 1A.This
     #
