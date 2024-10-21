@@ -8,10 +8,10 @@
     particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 normal @a
 
 # Tickスコア
-    scoreboard players add @s A3.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 魔法陣を召喚する
-    execute if entity @s[scores={A3.Tick=0..}] run function asset:mob/0363.white_spellbook/tick/magic
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0363.white_spellbook/tick/magic
 
 # 接地で上を向く
     execute unless block ~ ~-0.1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
