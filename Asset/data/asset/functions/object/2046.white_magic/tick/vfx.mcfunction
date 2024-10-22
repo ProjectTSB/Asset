@@ -1,8 +1,8 @@
-#> asset:mob/0364.white_magic/tick/vfx
+#> asset:object/2046.white_magic/tick/vfx
 #
 # vfx
 #
-# @within function asset:mob/0364.white_magic/tick/
+# @within function asset:object/2046.white_magic/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIYBGA7CgCzUCczAtHKQKzVsMAMAJgBmbSigDMlNhOFwJDLimalaE8gQB2lALYJkgMMUABAEYwBGJQy6AzknAoA9oU0QkghgRRxXcDPbAAN0psQn1wAA8kfgIoaIBfeIJrUjRCO0RBAhsIKzdEGLA4bGw0GBt9E35CjEdciH1CtBsAURKyipaAR0IQ7CgAZUtvckRhEIrEgF0gA_3
 # 円 1
