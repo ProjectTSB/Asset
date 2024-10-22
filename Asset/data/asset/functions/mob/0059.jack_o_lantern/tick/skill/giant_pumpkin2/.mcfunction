@@ -9,12 +9,8 @@
 # 最初のTickでのみ実行
     execute if entity @s[scores={1N.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/first_tick
 
-# ノーマル以下での回転
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=1N.GiantPumpkin2.LeftRotate] at @s run tp @s ~ ~ ~ ~-20 ~
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=!1N.GiantPumpkin2.LeftRotate] at @s run tp @s ~ ~ ~ ~20 ~
-
 # ハード以上での回転
-    execute if entity @s[scores={1N.Tick=..280}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/rotate
+    execute if entity @s[scores={1N.Tick=..280}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/rotate
 
 # スポーンマーカーを中心として巨大カボチャを召喚
 
