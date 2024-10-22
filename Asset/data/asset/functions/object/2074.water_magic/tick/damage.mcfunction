@@ -16,7 +16,8 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより激流に飲み込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより水底に沈んだ","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function api:damage/modifier
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.25] positioned ~-2.25 ~-1.5 ~-2.25 if entity @s[dx=3.5,dy=2,dz=3.5] run function api:damage/
     function api:damage/reset
 
