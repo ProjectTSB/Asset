@@ -21,7 +21,7 @@
     tag @s remove 1N.PumpkinRain
 
 # スコアを変える
-    scoreboard players set @s 1N.Tick -80
+    scoreboard players set @s General.Mob.Tick -80
 
 # 一部フィールドのリセット
     data remove storage asset:context this.TargetID

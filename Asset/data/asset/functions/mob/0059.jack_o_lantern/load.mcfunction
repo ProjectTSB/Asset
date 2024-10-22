@@ -6,5 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0059.jack_o_lantern/**
-    scoreboard objectives add 1N.Tick dummy
     scoreboard objectives add 1N.FakeCount dummy

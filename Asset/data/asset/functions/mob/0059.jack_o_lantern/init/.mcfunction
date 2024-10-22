@@ -19,4 +19,4 @@
     tp @s ~ ~ ~ facing entity @p
 
 # スコアをセットする
-    scoreboard players set @s 1N.Tick -30
+    scoreboard players set @s General.Mob.Tick -30
