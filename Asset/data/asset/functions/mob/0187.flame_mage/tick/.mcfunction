@@ -21,7 +21,7 @@
     execute if entity @s[scores={57.Tick=7..8}] facing entity @p eyes anchored eyes positioned ^ ^ ^1 run function asset:mob/0187.flame_mage/tick/vfx/3
 
 # 攻撃
-    execute if entity @s[scores={57.Tick=10..}] run function asset:mob/0187.flame_mage/tick/2.shoot_magic
+    execute if entity @s[scores={57.Tick=10..}] run function asset:mob/0187.flame_mage/tick/shoot_magic
 
 # 射撃攻撃キャンセル
     execute unless entity @p[distance=..20] unless entity @s[scores={57.Tick=0..}] run scoreboard players set @s 57.Tick -60
