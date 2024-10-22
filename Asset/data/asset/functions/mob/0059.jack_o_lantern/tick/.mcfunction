@@ -7,6 +7,9 @@
 # Tick処理
     scoreboard players add @s 1N.Tick 1
 
+# Rotation[1]を固定
+    data modify entity @s Rotation[1] set value 0.0f
+
 # 演出
     particle dust 1 0.6 0 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
     particle dust 0.851 0 1 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
