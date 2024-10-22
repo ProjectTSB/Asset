@@ -51,6 +51,13 @@
     #declare tag RW.HPless75per
     #declare tag RW.HPless50per
 
+## ボスの使う大技のタグ
+    #declare tag RW.Transition.Phase2
+    #declare tag RW.Transition.Phase2.Windup
+    #declare tag RW.Transition.Phase2.Attack
+
+    #declare tag RW.Transition.Phase3
+
 ## ボスの使う技のタグ
     # 火属性
         #declare tag RW.Skill.Meteor
@@ -64,12 +71,15 @@
     # 雷属性
         #declare tag RW.Skill.Thunder
         #declare tag RW.Skill.LightningStab
+        #declare tag RW.Skill.AimingLaser
     # 無属性
         #declare tag RW.Skill.MoveShot
-        #declare tag RW.Skill.AimingLaser
         #declare tag RW.Skill.SpreadShot
         #declare tag RW.Skill.Starfury
         #declare tag RW.Skill.Melee
+    # フェイズ移行攻撃
+        #declare tag RW.Skill.TransitionAttack2
+        #declare tag RW.Skill.TransitionAttack3
 
 ## 雷攻撃は複数パターンあってもいいよね
     #declare tag RW.Skill.Thunder.1
@@ -101,10 +111,6 @@
 ## ボスの移動方向に関するタグ
     #declare tag RW.Direction.Left
     #declare tag RW.Direction.Right
-
-## ボスの使う大技のタグ
-    #declare tag RW.Skill.Deadly1
-    #declare tag RW.Skill.Deadly2
 
 ## ボスの使う違う技のタグ
     #declare tag RW.MiniSkillChase

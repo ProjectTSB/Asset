@@ -28,7 +28,7 @@
     execute if entity @s[tag=!RW.Opening] run function asset:mob/1004.tultaria/tick/base_move/
 
 # フェーズ2移行動作
-    execute if entity @s[tag=RW.Skill.Deadly1] run function asset:mob/1004.tultaria/tick/wait_time/phase2_transition/1.tick
+    execute if entity @s[tag=RW.Transition.Phase2] run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/
 
 # フェーズ3移行動作
     execute if entity @s[tag=RW.Skill.Deadly2] run function asset:mob/1004.tultaria/tick/wait_time/phase3_transition/1.tick

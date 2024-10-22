@@ -25,7 +25,7 @@
 
 # モードチェンジ
     execute if score @s RW.Tick matches 75 run function asset:mob/1004.tultaria/tick/base_move/element_select/change/light
-    execute if score @s RW.Tick matches 80 at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] run summon item_display ~ ~ ~ {teleport_duration:10,Tags:["RW.SkyBox"],brightness:{sky:15,block:15},transformation:{left_rotation:[0.35f,0.14f,0.35f,0.85f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[-100f,-100f,-100f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16711680},CustomModelData:20381}}}
+#    execute if score @s RW.Tick matches 80 at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] run summon item_display ~ ~ ~ {teleport_duration:10,Tags:["RW.SkyBox"],brightness:{sky:15,block:15},transformation:{left_rotation:[0.35f,0.14f,0.35f,0.85f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[-100f,-100f,-100f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16711680},CustomModelData:20381}}}
 
 # 自身のモデルにモーションを再生させる
     execute if score @s RW.Tick matches 100 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/play
