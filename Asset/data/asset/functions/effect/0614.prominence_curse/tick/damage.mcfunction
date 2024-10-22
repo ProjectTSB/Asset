@@ -17,14 +17,12 @@
     scoreboard players add $Damage Temporary 1
 
 # 魔法火属性ダメージ
-# プレイヤーの補正がかからないように、でも属性耐性は考慮するように
-# TODO：いつか適切な方法が出来たら処理を書き換える
+# modifier_manualを用いて付与したMobが補正を行う
     execute store result storage api: Argument.Damage int 2 run scoreboard players get $Damage Temporary
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
-    data modify storage api: Argument.BypassModifier set value true
-    function api:damage/modifier
-    data modify storage api: Argument.BypassModifier set value false
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     function api:damage/
     function api:damage/reset
 
