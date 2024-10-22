@@ -17,7 +17,6 @@
     #declare tag 1N.GiantPumpkin1.Right
     #declare tag 1N.GiantPumpkin2
     #declare tag 1N.GiantPumpkin2.LeftRotate
-    #declare tag 1N.GiantPumpkin2.PurpleMirage
     #declare tag 1N.Missile
     #declare tag 1N.Random
     #declare tag 1N.Random2

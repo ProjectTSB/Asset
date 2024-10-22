@@ -10,5 +10,3 @@
 # 左回転か右回転か判定
     execute if predicate lib:random_pass_per/50 run tag @s add 1N.GiantPumpkin2.LeftRotate
 
-# 紫の残像かオレンジの残像か設定
-    execute if predicate lib:random_pass_per/50 run tag @s add 1N.GiantPumpkin2.PurpleMirage
