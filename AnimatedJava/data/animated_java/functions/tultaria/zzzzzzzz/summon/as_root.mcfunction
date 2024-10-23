@@ -8,7 +8,6 @@ execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:tultaria/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.tultaria.variant.normal aj.id run function animated_java:tultaria/zzzzzzzz/apply_variant/normal/as_root
-execute if score #variant aj.i = $aj.tultaria.variant.winged aj.id run function animated_java:tultaria/zzzzzzzz/apply_variant/winged/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.neutral_air aj.id run function animated_java:tultaria/zzzzzzzz/animations/neutral_air/apply_frame_as_root
 execute if score #animation aj.i = $aj.tultaria.animation.neutral_air aj.id run scoreboard players operation @s aj.tultaria.animation.neutral_air.local_anim_time = #frame aj.i
