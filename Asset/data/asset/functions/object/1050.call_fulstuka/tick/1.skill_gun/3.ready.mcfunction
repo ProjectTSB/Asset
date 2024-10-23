@@ -1,8 +1,8 @@
-#> asset:mob/0282.call_fulstuka/tick/1.skill_gun/3.ready
+#> asset:object/1050.call_fulstuka/tick/1.skill_gun/3.ready
 #
 # 発砲準備をします
 #
-# @within function asset:mob/0282.call_fulstuka/tick/1.skill_gun/1.skill_gun
+# @within function asset:object/1050.call_fulstuka/tick/1.skill_gun/1.skill_gun
 #> tag
 # @private
     #declare tag SpreadMarker
@@ -17,7 +17,7 @@
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 
 # 発砲
-    execute positioned ^-0.4 ^ ^1.4 facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet positioned ~ ~-0.425 ~ anchored eyes positioned ^ ^ ^ run function asset:mob/0282.call_fulstuka/tick/1.skill_gun/4.shot
+    execute positioned ^-0.4 ^ ^1.4 facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet positioned ~ ~-0.425 ~ anchored eyes positioned ^ ^ ^ run function asset:object/1050.call_fulstuka/tick/1.skill_gun/4.shot
 
 # 演出
     playsound minecraft:entity.shulker.shoot neutral @a ~ ~ ~ 1 1.6

@@ -1,8 +1,12 @@
-#> asset:mob/0282.call_fulstuka/tick/1.skill_gun/5.damage
+#> asset:object/1050.call_fulstuka/tick/1.skill_gun/5.damage
 #
 # ダメージを与えます
 #
-# @within function asset:mob/0282.call_fulstuka/tick/1.skill_gun/4.shot
+# @within function asset:object/1050.call_fulstuka/tick/1.skill_gun/4.shot
+
+#> private
+# @private
+    #declare score_holder $OwnerID
 
 # ダメージ設定
     # 与えるダメージ
@@ -14,10 +18,12 @@
     # 補正を無視する
         data modify storage lib: Argument.BypassModifier set value true
     # ダメージ
-        execute as @a if score @s UserID = @e[type=armor_stand,tag=7U.Fulstuka,limit=1] 7U.UserID run function lib:damage/modifier
+        execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
+        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
         data modify storage lib: Argument.BypassModifier set value false
         execute as @e[type=#lib:living,tag=LandingTarget,tag=Enemy,tag=!Uninterferable,distance=..30] at @s run function lib:damage/
 # リセット
+    scoreboard players reset $OwnerID Temporary
     function lib:damage/reset
 
 # 着弾タグを消す

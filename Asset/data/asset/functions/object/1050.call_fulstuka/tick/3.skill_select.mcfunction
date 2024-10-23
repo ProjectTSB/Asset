@@ -1,8 +1,8 @@
-#> asset:mob/0282.call_fulstuka/tick/3.skill_select
+#> asset:object/1050.call_fulstuka/tick/3.skill_select
 #
 #
 #
-# @within function asset:mob/0282.call_fulstuka/tick/
+# @within function asset:object/1050.call_fulstuka/tick/
 
 #> private
 # @private
@@ -24,8 +24,8 @@
     execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run scoreboard players set $Random Temporary 1
 
 # スキル選択
-    execute if score $Random Temporary matches 0 run tag @s add 7U.SkillGun
-    execute if score $Random Temporary matches 1 run tag @s add 7U.SkillMelee
+    execute if score $Random Temporary matches 0 run tag @s add 1050.SkillGun
+    execute if score $Random Temporary matches 1 run tag @s add 1050.SkillMelee
 
 
 
