@@ -20,6 +20,10 @@
 # モデルにTeleport_durationを設定
     execute as @e[type=#animated_java:root,tag=aj.tultaria.bone] run data modify entity @s teleport_duration set value 1
 
+# 発光パーツを設定
+    data modify entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
+    data modify entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
+
 # 出現座標を記憶する
     summon marker ~ ~ ~ {Tags:["RW.Marker.SpawnPoint"]}
 

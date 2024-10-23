@@ -13,6 +13,10 @@
     playsound ogg:block.respawn_anchor.charge1 hostile @a ~ ~ ~ 2 1.5
     playsound ogg:item.trident.thunder2 hostile @a ~ ~ ~ 2 2
 
+# 腕輪を変更
+    item replace entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:16777215}}
+    item replace entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:16777215}}
+
 # 召喚ごまかすために画面エフェクト
     title @a[distance=..100] times 5 10 5
     title @a[distance=..100] title {"text":""}
