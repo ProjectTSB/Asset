@@ -23,6 +23,7 @@
         data modify storage lib: Argument.BypassModifier set value false
         execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run function lib:damage/
 # リセット
+    scoreboard players reset $OwnerID Temporary
     function lib:damage/reset
 
 # 演出
