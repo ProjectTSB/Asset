@@ -11,7 +11,11 @@
     playsound ogg:mob.strider.retreat5 hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 2
 
-# 割合ダメージ
+# 自身に鈍足と弱化を付与
+    effect give @s slowness 3 10 true
+    effect give @s weakness 3 10 true
+
+# 自身に割合ダメージ
     execute if predicate api:global_vars/difficulty/max/normal store result storage api: Argument.Damage float 0.08 run function api:mob/get_max_health
     execute if predicate api:global_vars/difficulty/min/hard store result storage api: Argument.Damage float 0.04 run function api:mob/get_max_health
     data modify storage api: Argument.AttackType set value "Physical"
