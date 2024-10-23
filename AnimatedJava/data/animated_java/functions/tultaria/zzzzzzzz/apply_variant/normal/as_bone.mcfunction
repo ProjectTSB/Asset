@@ -3,10 +3,13 @@ execute if entity @s[tag=aj.tultaria.bone.bust] run data modify entity @s item.t
 execute if entity @s[tag=aj.tultaria.bone.left_wing] run data modify entity @s item.tag.CustomModelData set value 11
 execute if entity @s[tag=aj.tultaria.bone.right_wing] run data modify entity @s item.tag.CustomModelData set value 12
 execute if entity @s[tag=aj.tultaria.bone.body] run data modify entity @s item.tag.CustomModelData set value 13
+
 execute if entity @s[tag=aj.tultaria.bone.right_ring] run data modify entity @s item.tag.CustomModelData set value 14
+
 execute if entity @s[tag=aj.tultaria.bone.sword] run data modify entity @s item.tag.CustomModelData set value 15
 execute if entity @s[tag=aj.tultaria.bone.right_hand] run data modify entity @s item.tag.CustomModelData set value 16
 execute if entity @s[tag=aj.tultaria.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 17
+
 execute if entity @s[tag=aj.tultaria.bone.left_ring] run data modify entity @s item.tag.CustomModelData set value 18
 execute if entity @s[tag=aj.tultaria.bone.left_hand] run data modify entity @s item.tag.CustomModelData set value 19
 execute if entity @s[tag=aj.tultaria.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 20
