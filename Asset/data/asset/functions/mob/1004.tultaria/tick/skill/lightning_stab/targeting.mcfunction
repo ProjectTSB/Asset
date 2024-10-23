@@ -10,7 +10,7 @@
 
 
 # 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/dash_stab_windup_fast/play
+    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/play
 
 # モデルをプレイヤーに向ける
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
@@ -42,4 +42,3 @@
 
 # プレイヤーのタグを外す
     tag @a[tag=TargetPlayer] remove TargetPlayer
-

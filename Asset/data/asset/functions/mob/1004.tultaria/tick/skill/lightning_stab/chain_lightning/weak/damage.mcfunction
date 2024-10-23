@@ -1,12 +1,12 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/damage
+#> asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/weak/damage
 #
-# 突き部分のダメージ
+# チェインライトニング部分のダメージ
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/weak/thunder.recusrive
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 20.0f
+        data modify storage lib: Argument.Damage set value 10.0f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 雷属性
