@@ -1,8 +1,8 @@
-#> asset:mob/0214.water_magic/tick/3.ready_vfx
+#> asset:object/2074.water_magic/tick/ready
 #
+# 予備動作
 #
-#
-# @within function asset:mob/0214.water_magic/tick/
+# @within function asset:object/2074.water_magic/tick/
 
 # 自分を回転
     tp @s ~ ~ ~ ~7.5 0

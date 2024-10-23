@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2074.water_magic/load",
         "asset:object/0001.abstract_projectile/load"
     ]
 }
