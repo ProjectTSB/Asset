@@ -34,8 +34,9 @@
 # トゥルットゥーって鳴らす
     execute if entity @s[scores={General.Mob.Tick=160}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
 
-# 走り回った後は最寄りのプレイヤーの方を向く
+# 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=160..300}] run tp @s ~ ~ ~ facing entity @p feet
+    execute if entity @s[scores={General.Mob.Tick=160..300}] as @e[type=husk,scores={MobID=224},distance=..40] at @s run tp @s ~ ~ ~ facing entity @p feet
 
 # 分身中、確率で笑い声を出す
     execute if entity @s[scores={General.Mob.Tick=60..300}] if predicate lib:random_pass_per/3 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
