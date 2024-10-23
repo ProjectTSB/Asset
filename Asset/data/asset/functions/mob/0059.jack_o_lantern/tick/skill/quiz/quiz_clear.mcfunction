@@ -6,6 +6,7 @@
 
 # 演出
     particle large_smoke ~ ~1.8 ~ 0 0 0 0.1 50 normal @a
+    particle explosion ~ ~1.8 ~ 0 0 0 0 1
     particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.7 100
     playsound block.fire.extinguish hostile @a ~ ~ ~ 1 0.7 0
     playsound ogg:mob.strider.retreat5 hostile @a ~ ~ ~ 1 1.5
