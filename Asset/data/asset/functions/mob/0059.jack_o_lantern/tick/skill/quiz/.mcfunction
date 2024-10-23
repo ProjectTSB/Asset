@@ -21,9 +21,11 @@
     execute if entity @s[scores={General.Mob.Tick=35}] run particle explosion ~ ~1.8 ~ 0 0 0 0 1
     execute if entity @s[scores={General.Mob.Tick=40}] run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
 
-# 自分と偽物を拡散する
+# 自分と偽物を拡散し、発光を解除
+# 自身にparticle非表示Tagを付与
     execute if entity @s[scores={General.Mob.Tick=60}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/dummy_summon/
     execute if entity @s[scores={General.Mob.Tick=60}] run effect clear @s glowing
+    execute if entity @s[scores={General.Mob.Tick=60}] run tag @s add 1N.DisableParticle
 
 # 走り回る
     execute if entity @s[scores={General.Mob.Tick=60..160}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move/

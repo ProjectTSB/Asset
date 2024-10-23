@@ -15,6 +15,9 @@
 # 発光状態用Tagを付与
     tag @s add 1N.Quiz.Glowing
 
+# Particle非表示Tagを削除
+    tag @s remove 1N.DisableParticle
+
 # NoGravityとNoAIの解除
     data modify entity @s NoGravity set value 0b
     data modify entity @s NoAI set value 0b
