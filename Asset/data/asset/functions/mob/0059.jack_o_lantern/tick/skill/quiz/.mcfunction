@@ -26,23 +26,23 @@
     execute if entity @s[scores={General.Mob.Tick=60}] run effect clear @s glowing
 
 # 走り回る
-    execute if entity @s[scores={General.Mob.Tick=60..160}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move
-
-# ハード以上の場合、時間を2.5秒飛ばす
-    #execute if entity @s[scores={General.Mob.Tick=20}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick 50
-
-# トゥルットゥーって鳴らす
-    execute if entity @s[scores={General.Mob.Tick=160}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
-
-# 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
-    execute if entity @s[scores={General.Mob.Tick=160..300}] run tp @s ~ ~ ~ facing entity @p feet
-    execute if entity @s[scores={General.Mob.Tick=160..300}] as @e[type=husk,scores={MobID=224},distance=..40] at @s run tp @s ~ ~ ~ facing entity @p feet
+    execute if entity @s[scores={General.Mob.Tick=60..160}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move/
 
 # 分身中、確率で笑い声を出す
     execute if entity @s[scores={General.Mob.Tick=60..300}] if predicate lib:random_pass_per/3 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
 # hurt時につく被ダメタグがあった場合、クイズに正解して、このスキルを終える
     execute if entity @s[scores={General.Mob.Tick=60..300}] if entity @s[tag=1N.Hurt] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_clear
+
+# トゥルットゥーって鳴らす
+    execute if entity @s[scores={General.Mob.Tick=160}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
+
+# ハード以上の場合、クイズの時間を2秒飛ばす
+    execute if entity @s[scores={General.Mob.Tick=160}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick 200
+
+# 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
+    execute if entity @s[scores={General.Mob.Tick=160..300}] run tp @s ~ ~ ~ facing entity @p feet
+    execute if entity @s[scores={General.Mob.Tick=160..300}] as @e[type=husk,scores={MobID=224},distance=..40] at @s run tp @s ~ ~ ~ facing entity @p feet
 
 # クイズに失敗した場合、発光する
     execute if entity @s[scores={General.Mob.Tick=300}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_fail/glow
