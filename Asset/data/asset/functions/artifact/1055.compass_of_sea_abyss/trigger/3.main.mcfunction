@@ -11,7 +11,12 @@
 
 #> Private
 # @private
-    #declare score_holder $SelfDamage
+    #declare tag Target
+
+# ターゲット選定
+# Attackerと周囲の敵5体
+    tag @e[type=#lib:living,tag=Attacker,distance=..32] add Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Attacker,distance=..16,sort=nearest,limit=5] add Target
 
 # 演出
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/vfx_compass
@@ -24,5 +29,8 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,distance=..10,sort=nearest,limit=5] run function api:damage/
+    execute as @e[type=#lib:living,tag=Target,distance=..32,sort=nearest,limit=6] run function api:damage/
     function api:damage/reset
+
+# リセット
+    tag @e[type=#lib:living,tag=Target,distance=..32] remove Target
