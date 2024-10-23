@@ -13,8 +13,9 @@
     #execute if entity @s[scores={General.Mob.Tick=60..80}] run tp @s ~ ~ ~ ~20 0
 
 # 回転演出
-    execute if entity @s[scores={General.Mob.Tick=0..19}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.1 4 normal @a
-    execute if entity @s[scores={General.Mob.Tick=20..59}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.2 4 normal @a
+    execute if entity @s[scores={General.Mob.Tick=0..19}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.1 3 normal @a
+    execute if entity @s[scores={General.Mob.Tick=20..39}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.2 4 normal @a
+    execute if entity @s[scores={General.Mob.Tick=40..59}] run particle cloud ~ ~1.8 ~ 0 0 0 0.3 5 normal @a
     execute if entity @s[scores={General.Mob.Tick=0..59}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/first_rotate_sound
 
 # 回転途中で頭を取り換える
