@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/active
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/active
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 # 構えモーション停止
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/stop

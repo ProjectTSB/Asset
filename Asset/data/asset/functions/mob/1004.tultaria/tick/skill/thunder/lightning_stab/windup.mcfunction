@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/windup
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/windup
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 # 待機モーション停止
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/stop

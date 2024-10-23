@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/targeting
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/targeting
 #
 # 構えポーズを取りつつターゲッティング
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 #> Private
 # @private

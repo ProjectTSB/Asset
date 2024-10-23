@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/stop
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stop
 #
 # 埋まりそうになったら止まる
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 #
 # タグを消す

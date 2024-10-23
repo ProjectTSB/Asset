@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/weak/damage
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/damage
 #
 # チェインライトニング部分のダメージ
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/weak/thunder.recusrive
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/thunder.recusrive
 
 # ダメージ設定
     # 与えるダメージ

@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/strong/
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/
 #
-# 初撃は強力
+# 連なるイカヅチ
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 # 対応するマーカーの方を見る
     execute if entity @s[tag=RW.ChainLightning1] facing entity @e[type=marker,tag=RW.ChainLightning2,distance=..120,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
@@ -13,8 +13,7 @@
     execute if entity @s[tag=RW.ChainLightning.Last] facing entity @e[type=marker,tag=RW.ChainLightning1,distance=..120,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # 再帰スタート
-    execute at @s run function asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/strong/thunder.recursive
+    execute at @s run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/thunder.recusrive
 
 # サウンド
-    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 2
-    playsound minecraft:entity.lightning_bolt.thunder hostile @p ~ ~ ~ 1 1.5 0
+    playsound minecraft:item.trident.riptide_1 hostile @a ~ ~ ~ 1 1.5

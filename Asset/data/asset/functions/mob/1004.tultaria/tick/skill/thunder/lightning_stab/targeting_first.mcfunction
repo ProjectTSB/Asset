@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/targeting_first
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/targeting_first
 #
 # 構えを省略したターゲッティング
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 #> Private
 # @private

@@ -1,12 +1,12 @@
-#> asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/strong/damage
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
 #
-# 
 #
-# @within function asset:mob/1004.tultaria/tick/skill/lightning_stab/chain_lightning/strong/thunder.recursive
+#
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 10.0f
+        data modify storage lib: Argument.Damage set value 20.0f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 雷属性
