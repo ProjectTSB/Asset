@@ -6,3 +6,6 @@
 
 # スポーンマーカーをkill
     kill @e[type=marker,tag=1N.SpawnMarker]
+
+# TextDisplayをkill
+    kill @e[type=text_display,tag=1N.TextDisplay]
