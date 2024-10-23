@@ -12,10 +12,8 @@
 # 残像を一定間隔で召喚
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $2 Const
-    execute if entity @s[scores={General.Mob.Tick=61..}] if score $Interval Temporary matches 0 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon_mirage
+    execute if entity @s[scores={General.Mob.Tick=91..}] if score $Interval Temporary matches 0 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon_mirage
     scoreboard players reset $Interval Temporary
-
-
 
 # 段々加速していく
 # 左回転と右回転が存在する
