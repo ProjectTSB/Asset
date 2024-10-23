@@ -4,28 +4,24 @@
 #
 # @within function asset:mob/alias/59/tick
 
+# Tick処理
+    scoreboard players add @s General.Mob.Tick 1
+
+# Rotation[1]を固定
+    data modify entity @s Rotation[1] set value 0.0f
+
 # 演出
-    particle dust 1 0.6 0 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 1 normal @a
-    particle dust 0.851 0 1 1 ~ ~0.5 ~ 0.2 0.2 0.2 0 1 normal @a
+    particle dust 1 0.6 0 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
+    particle dust 0.851 0 1 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
 
-# 常時耐性
-    effect give @s resistance 9 1 true
+# クイズの時以外のみ表示する
+    execute if entity @s[tag=!1N.DisableParticle] run particle falling_dust blue_terracotta ~ ~0.5 ~ 0.35 0 0.35 0 2 normal @a
 
-# ハメ対策
-    execute unless block ~ ~0.5 ~ #lib:no_collision at @p run function asset:mob/0059.jack_o_lantern/tick/spread_tp
+# スキル選択
+    execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill_select
 
-# スコアを増やす
-    scoreboard players add @s 1N.Tick 1
+# スキル実行
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0059.jack_o_lantern/tick/skill_branch
 
-# プレイヤーが周囲にいないのに時間が着てしまった場合。スコアを戻す
-    execute if score @s 1N.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 1N.Tick -60
-
-# その後発動するスキル
-# プレイヤーが周囲にいたらスキル選択
-    execute if score @s 1N.Tick matches 0 run function asset:mob/0059.jack_o_lantern/tick/3.skill_select
-
-# 選択したスキル発動
-    execute if score @s 1N.Tick matches 0.. run function asset:mob/0059.jack_o_lantern/tick/4.skill_active
-
-# Hurt時に付くタグを消す
+# 被ダメ時に付与されるTagを消す
     tag @s[tag=1N.Hurt] remove 1N.Hurt
