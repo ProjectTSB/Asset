@@ -25,6 +25,7 @@
         execute as @e[type=#lib:living,tag=Enemy,distance=..3] run function lib:damage/
 # リセット
     function lib:damage/reset
+    scoreboard players reset $OwnerID Temporary
 
 # キル
     kill @s
