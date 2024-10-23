@@ -12,6 +12,9 @@
     execute if entity @s[tag=RW.ChainLightning5] facing entity @e[type=marker,tag=RW.ChainLightning.Last,distance=..120,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
     execute if entity @s[tag=RW.ChainLightning.Last] facing entity @e[type=marker,tag=RW.ChainLightning1,distance=..120,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
+# 場合によっては4番が最後なので
+    execute if entity @s[tag=RW.ChainLightning4] unless entity @e[type=marker,tag=RW.ChainLightning5,distance=..120,sort=nearest,limit=1] facing entity @e[type=marker,tag=RW.ChainLightning1,distance=..120,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+
 # 再帰スタート
     execute at @s run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/thunder.recusrive
 
