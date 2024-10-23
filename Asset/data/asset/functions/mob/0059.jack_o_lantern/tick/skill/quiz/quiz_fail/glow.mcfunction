@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/
 
 # 頭を取り換える
-    item replace entity @s armor.head with jack_o_lantern{CustomModelData:20017}
+    item replace entity @s armor.head with stick{CustomModelData:20395}
 
 # デバフを解除し移動速度上昇を得る
     effect clear @s slowness
