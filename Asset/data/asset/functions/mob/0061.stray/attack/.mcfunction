@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/61/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 
 # 水属性ダメージ
 
