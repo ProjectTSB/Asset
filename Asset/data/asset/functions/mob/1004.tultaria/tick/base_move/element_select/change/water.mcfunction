@@ -12,8 +12,8 @@
     playsound minecraft:item.trident.riptide_1 hostile @a ~ ~ ~ 2 1
 
 # 腕輪を変更
-    item replace entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:57855}}
-    item replace entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:57855}}
+    item replace entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:10614015}}
+    item replace entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:10614015}}
 
 # タグ付与
     tag @s add RW.Mode.Water
