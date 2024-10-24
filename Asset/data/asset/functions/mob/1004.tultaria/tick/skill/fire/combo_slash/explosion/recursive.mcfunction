@@ -26,4 +26,4 @@
     function lib:damage/reset
 
 # 壁がなければ再帰
-    execute if entity @s[distance=..32] positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/explosion/recursive
+    execute if entity @s[distance=..32] positioned ^ ^ ^2 if block ~ ~ ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/explosion/recursive
