@@ -24,10 +24,6 @@
 # 敵が近くにいたら、射撃用意
     execute if entity @a[tag=1052.Owner,distance=..5] if entity @e[type=#lib:hostile,tag=Enemy,distance=..14] run function asset:object/1052.maid/tick/action
 
-# デバッグ用、イラネ
-    #execute if entity @a[tag=1052.Owner,distance=..5] if entity @e[type=#lib:hostile,tag=Enemy,distance=..7] run say search
-    #execute unless entity @a[tag=1052.Owner,distance=..5] run say tuibi
-
 # 召喚者のタグを削除
     tag @a[tag=1052.Owner] remove 1052.Owner
 
