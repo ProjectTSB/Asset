@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2_throw/tick_animation

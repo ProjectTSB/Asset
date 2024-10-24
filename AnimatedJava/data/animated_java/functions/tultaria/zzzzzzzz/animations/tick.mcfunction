@@ -7,7 +7,6 @@ execute if entity @s[tag=aj.tultaria.animation.attack_magic_3_right] run functio
 execute if entity @s[tag=aj.tultaria.animation.attack_magic_3_right_loop] run function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right_loop/tick
 execute if entity @s[tag=aj.tultaria.animation.attack_melee_1] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_1/tick
 execute if entity @s[tag=aj.tultaria.animation.attack_melee_2] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2/tick
-execute if entity @s[tag=aj.tultaria.animation.attack_melee_2_throw] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2_throw/tick
 execute if entity @s[tag=aj.tultaria.animation.attack_melee_3] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_3/tick
 execute if entity @s[tag=aj.tultaria.animation.attack_melee_4_windup] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_4_windup/tick
 execute if entity @s[tag=aj.tultaria.animation.attack_melee_4_active] run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_4_active/tick

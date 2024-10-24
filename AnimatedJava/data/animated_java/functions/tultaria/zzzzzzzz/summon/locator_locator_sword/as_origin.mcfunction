@@ -1,4 +1,0 @@
-summon minecraft:marker ~ ~ ~ {Tags:["RW.ModelLocator.Sword","aj.tultaria.locator","aj.tultaria.locator.locator_sword","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"tultaria\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"locator_sword\",\"color\":\"yellow\"},\"]\"]]"}
-execute as @e[type=minecraft:marker,tag=aj.tultaria.locator.locator_sword,tag=aj.new,limit=1,distance=..1] run function animated_java:tultaria/zzzzzzzz/summon/locator_locator_sword/as_entity
-data modify entity @s Owner set from storage animated_java Owner
-data remove storage animated_java Owner

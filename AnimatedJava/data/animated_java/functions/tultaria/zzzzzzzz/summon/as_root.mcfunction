@@ -27,8 +27,6 @@ execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_1 aj.id r
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_1 aj.id run scoreboard players operation @s aj.tultaria.animation.attack_melee_1.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_2 aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2/apply_frame_as_root
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_2 aj.id run scoreboard players operation @s aj.tultaria.animation.attack_melee_2.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_2_throw aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2_throw/apply_frame_as_root
-execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_2_throw aj.id run scoreboard players operation @s aj.tultaria.animation.attack_melee_2_throw.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_3 aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_3/apply_frame_as_root
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_3 aj.id run scoreboard players operation @s aj.tultaria.animation.attack_melee_3.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.tultaria.animation.attack_melee_4_windup aj.id run function animated_java:tultaria/zzzzzzzz/animations/attack_melee_4_windup/apply_frame_as_root

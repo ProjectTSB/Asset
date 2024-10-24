@@ -7,7 +7,6 @@ function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right/pause_a
 function animated_java:tultaria/zzzzzzzz/animations/attack_magic_3_right_loop/pause_as_root
 function animated_java:tultaria/zzzzzzzz/animations/attack_melee_1/pause_as_root
 function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2/pause_as_root
-function animated_java:tultaria/zzzzzzzz/animations/attack_melee_2_throw/pause_as_root
 function animated_java:tultaria/zzzzzzzz/animations/attack_melee_3/pause_as_root
 function animated_java:tultaria/zzzzzzzz/animations/attack_melee_4_windup/pause_as_root
 function animated_java:tultaria/zzzzzzzz/animations/attack_melee_4_active/pause_as_root

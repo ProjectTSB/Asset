@@ -14,7 +14,6 @@ scoreboard objectives remove aj.tultaria.animation.attack_magic_3_right.local_an
 scoreboard objectives remove aj.tultaria.animation.attack_magic_3_right_loop.local_anim_time
 scoreboard objectives remove aj.tultaria.animation.attack_melee_1.local_anim_time
 scoreboard objectives remove aj.tultaria.animation.attack_melee_2.local_anim_time
-scoreboard objectives remove aj.tultaria.animation.attack_melee_2_throw.local_anim_time
 scoreboard objectives remove aj.tultaria.animation.attack_melee_3.local_anim_time
 scoreboard objectives remove aj.tultaria.animation.attack_melee_4_windup.local_anim_time
 scoreboard objectives remove aj.tultaria.animation.attack_melee_4_active.local_anim_time
@@ -29,7 +28,6 @@ scoreboard objectives remove aj.tultaria.animation.attack_magic_3_right.loop_mod
 scoreboard objectives remove aj.tultaria.animation.attack_magic_3_right_loop.loop_mode
 scoreboard objectives remove aj.tultaria.animation.attack_melee_1.loop_mode
 scoreboard objectives remove aj.tultaria.animation.attack_melee_2.loop_mode
-scoreboard objectives remove aj.tultaria.animation.attack_melee_2_throw.loop_mode
 scoreboard objectives remove aj.tultaria.animation.attack_melee_3.loop_mode
 scoreboard objectives remove aj.tultaria.animation.attack_melee_4_windup.loop_mode
 scoreboard objectives remove aj.tultaria.animation.attack_melee_4_active.loop_mode

@@ -14,7 +14,6 @@ scoreboard objectives add aj.tultaria.animation.attack_magic_3_right.local_anim_
 scoreboard objectives add aj.tultaria.animation.attack_magic_3_right_loop.local_anim_time dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_1.local_anim_time dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_2.local_anim_time dummy
-scoreboard objectives add aj.tultaria.animation.attack_melee_2_throw.local_anim_time dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_3.local_anim_time dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_4_windup.local_anim_time dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_4_active.local_anim_time dummy
@@ -29,7 +28,6 @@ scoreboard objectives add aj.tultaria.animation.attack_magic_3_right.loop_mode d
 scoreboard objectives add aj.tultaria.animation.attack_magic_3_right_loop.loop_mode dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_1.loop_mode dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_2.loop_mode dummy
-scoreboard objectives add aj.tultaria.animation.attack_melee_2_throw.loop_mode dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_3.loop_mode dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_4_windup.loop_mode dummy
 scoreboard objectives add aj.tultaria.animation.attack_melee_4_active.loop_mode dummy
@@ -44,17 +42,16 @@ scoreboard players set $aj.tultaria.animation.attack_magic_3_right aj.id 5
 scoreboard players set $aj.tultaria.animation.attack_magic_3_right_loop aj.id 6
 scoreboard players set $aj.tultaria.animation.attack_melee_1 aj.id 7
 scoreboard players set $aj.tultaria.animation.attack_melee_2 aj.id 8
-scoreboard players set $aj.tultaria.animation.attack_melee_2_throw aj.id 9
-scoreboard players set $aj.tultaria.animation.attack_melee_3 aj.id 10
-scoreboard players set $aj.tultaria.animation.attack_melee_4_windup aj.id 11
-scoreboard players set $aj.tultaria.animation.attack_melee_4_active aj.id 12
-scoreboard players set $aj.tultaria.animation.dodge_back aj.id 13
-scoreboard players set $aj.tultaria.animation.dodge_side aj.id 14
+scoreboard players set $aj.tultaria.animation.attack_melee_3 aj.id 9
+scoreboard players set $aj.tultaria.animation.attack_melee_4_windup aj.id 10
+scoreboard players set $aj.tultaria.animation.attack_melee_4_active aj.id 11
+scoreboard players set $aj.tultaria.animation.dodge_back aj.id 12
+scoreboard players set $aj.tultaria.animation.dodge_side aj.id 13
 scoreboard players set $aj.tultaria.variant.normal aj.id 0
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.tultaria.export_version aj.i 1039349257
+scoreboard players set aj.tultaria.export_version aj.i 1007994605
 scoreboard players reset * aj.tultaria.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.tultaria.root] run function animated_java:tultaria/zzzzzzzz/on_load
