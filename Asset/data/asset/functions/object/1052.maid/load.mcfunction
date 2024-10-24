@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:object/1052.maid/**
     scoreboard objectives add 1052.ActionTime dummy
+    scoreboard objectives add 1052.ShotCount dummy
