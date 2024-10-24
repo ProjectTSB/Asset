@@ -23,7 +23,7 @@
         scoreboard players operation $Random Temporary %= $2 Const
 
 # デバッグ用、実行する技を確定させる
-    scoreboard players set $Random Temporary 1
+    scoreboard players set $Random Temporary 0
 
 # タグ付与
     # 1

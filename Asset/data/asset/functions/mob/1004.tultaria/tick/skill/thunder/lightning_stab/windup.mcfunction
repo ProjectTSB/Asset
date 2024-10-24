@@ -23,3 +23,4 @@
     playsound minecraft:entity.guardian.death hostile @a ~ ~ ~ 2 2
     playsound minecraft:block.grindstone.use hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 2
+

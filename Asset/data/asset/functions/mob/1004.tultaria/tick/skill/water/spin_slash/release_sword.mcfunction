@@ -7,3 +7,7 @@
 # タグ付与
     tag @e[type=item_display,scores={ObjectID=2053},distance=..16] add 2053.Release
 
+
+# 演出
+    playsound minecraft:item.trident.throw player @a ~ ~ ~ 2 0.5
+    playsound minecraft:item.trident.throw player @a ~ ~ ~ 2 1
