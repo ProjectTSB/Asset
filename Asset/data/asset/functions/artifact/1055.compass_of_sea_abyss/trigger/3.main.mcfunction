@@ -12,6 +12,7 @@
 #> Private
 # @private
     #declare tag Target
+    #declare score_holder $UU.Damage
 
 # ターゲット選定
 # Attackerと周囲の敵5体
@@ -24,8 +25,14 @@
     playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.8 0.8 0
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 0.8 0.5
 
+# ダメージを500倍にしてスコアへ移す
+    execute store result score $UU.Damage Temporary run data get storage asset:context Damage.Amount 500
+
+# 30000以上なら30000にする
+    scoreboard players operation $UU.Damage Temporary < $30000 Const
+
 # ダメージ
-    execute store result storage api: Argument.Damage double 50 run data get storage asset:context Damage.Amount
+    execute store result storage api: Argument.Damage double 0.1 run scoreboard players get $UU.Damage Temporary
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
@@ -34,3 +41,4 @@
 
 # リセット
     tag @e[type=#lib:living,tag=Target,distance=..32] remove Target
+    scoreboard players reset $UU.Damage Temporary
