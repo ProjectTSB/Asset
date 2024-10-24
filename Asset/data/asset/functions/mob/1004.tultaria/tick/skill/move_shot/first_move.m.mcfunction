@@ -21,11 +21,6 @@
 # 残ってたらヤなのでマーカーを消す
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 
-# 拡散値
-#    execute if block ~ ~-1 ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[4d,6d],[0d,0d],[4d,6d]]
-#    execute unless block ~ ~-1 ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[4d,6d],[0d,0d],[4d,6d]]
-#    execute as @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit] at @s run function lib:spread_entity/
-
 # プレイヤーの足元に召喚
     execute at @r run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
 
