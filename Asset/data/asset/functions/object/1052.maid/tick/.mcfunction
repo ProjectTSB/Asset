@@ -28,4 +28,4 @@
     tag @a[tag=1052.Owner] remove 1052.Owner
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    execute if score @s General.Object.Tick matches 1000.. run function asset:object/1052.maid/tick/kill
