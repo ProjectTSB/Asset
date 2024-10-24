@@ -20,7 +20,10 @@
 # 召喚ごまかすために画面エフェクト
     title @a[distance=..100] times 5 10 5
     title @a[distance=..100] title {"text":""}
-    title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"white"}
+    title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+
+# 次移行は光属性にならないために、属性リストを復活させておく
+    data modify storage asset:context this.Element.List set value [Fire,Water,Thunder]
 
 # タグ付与
     tag @s add RW.Mode.Light
