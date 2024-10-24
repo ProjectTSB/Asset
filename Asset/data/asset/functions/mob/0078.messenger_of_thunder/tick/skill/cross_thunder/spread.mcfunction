@@ -11,6 +11,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2060
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=marker,tag=26.SpreadMarker,distance=..16,limit=1] run function api:object/summon
 
 # リセット
