@@ -31,5 +31,4 @@
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 2
-    playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2

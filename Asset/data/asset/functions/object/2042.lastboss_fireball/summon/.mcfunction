@@ -5,4 +5,4 @@
 # @within asset:object/alias/2042/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {billboard:"center",teleport_duration:1,Tags:["ObjectInit"],item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:10694707},CustomModelData:20375}}}
+    summon item_display ~ ~ ~ {billboard:"center",teleport_duration:1,Tags:["ObjectInit"],item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16738816},CustomModelData:20375}}}
