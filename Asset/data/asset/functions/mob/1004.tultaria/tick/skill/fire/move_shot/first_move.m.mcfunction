@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/move_shot/first_move.m
+#> asset:mob/1004.tultaria/tick/skill/fire/move_shot/first_move.m
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/move_shot/tick
+# @within function asset:mob/1004.tultaria/tick/skill/fire/move_shot/tick
 
 #
 

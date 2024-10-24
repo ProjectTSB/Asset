@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/skill/move_shot/tick
+#> asset:mob/1004.tultaria/tick/skill/fire/move_shot/tick
 #
 #
 #
@@ -16,7 +16,7 @@
 
 # 最初の移動
     execute if score @s RW.Tick matches 0 store result storage rw_storage: Rotation int 1 run random value -180..180
-    execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/move_shot/first_move.m with storage rw_storage:
+    execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/first_move.m with storage rw_storage:
 
 # モデルをプレイヤーに向ける
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
@@ -29,9 +29,9 @@
 
 # 射撃
     scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 if score @s RW.Tick matches 15..35 at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] facing entity @p eyes run function asset:mob/1004.tultaria/tick/skill/move_shot/shoot
+    execute if score $Interval Temporary matches 0 if score @s RW.Tick matches 15..35 at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] facing entity @p eyes run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/shoot
 # ループ
-    execute if entity @s[scores={RW.LoopCount=..1,RW.Tick=35}] run function asset:mob/1004.tultaria/tick/skill/move_shot/add_loop_count
+    execute if entity @s[scores={RW.LoopCount=..1,RW.Tick=35}] run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/add_loop_count
 
 # アニメストップ
     execute if score @s RW.Tick matches 60 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
