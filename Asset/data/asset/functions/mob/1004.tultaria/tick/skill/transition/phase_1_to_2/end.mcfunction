@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/end
+#> asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/end
 #
 # 終了時の動作
 #
-# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/attack
+# @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/attack
 
 # 無敵解除
     data modify entity @s Invulnerable set value 0b

@@ -1,11 +1,11 @@
-#> asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/windup
+#> asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/windup
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/
+# @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/
 
 # 構え
-    execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/windup
+    execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/windup
 
 # ちょっと下がってく
     execute if score @s RW.Tick matches 0..5 rotated ~ 0 run tp @s ^ ^ ^-0.5
@@ -13,7 +13,7 @@
     execute if score @s RW.Tick matches 16..20 rotated ~ 0 run tp @s ^ ^ ^-0.1
 
 # センターに移動
-    execute if score @s RW.Tick matches 30 run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/move_to_center
+    execute if score @s RW.Tick matches 30 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/move_to_center
 
 # こっちを向く
     execute if score @s RW.Tick matches 50 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0

@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/move_to_center
+#> asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/move_to_center
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/windup
+# @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/windup
 
 # アニメ再生
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_side/play

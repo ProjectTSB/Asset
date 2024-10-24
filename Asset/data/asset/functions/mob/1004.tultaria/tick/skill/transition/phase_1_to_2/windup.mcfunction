@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/windup
+#> asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/windup
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/windup
+# @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/windup
 
 # タグ付与、全基本動作停止
     tag @s add RW.InAction
