@@ -11,6 +11,9 @@
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:tultaria/summon
 
+# DeathTime設定
+    data modify entity @s DeathTime set value 19
+
 # タグ管理
     tag @s add RW.CanElementChange
 
