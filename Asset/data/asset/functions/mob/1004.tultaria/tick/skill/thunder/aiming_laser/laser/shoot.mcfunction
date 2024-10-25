@@ -19,7 +19,7 @@
     # 拡散
         execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
     # その位置から実行
-        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RW.AimMarker,sort=nearest,limit=1] eyes rotated ~ ~90 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/ring
-        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RW.AimMarker,sort=nearest,limit=1] eyes run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/
+        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes rotated ~ ~90 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/ring
+        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/
     # リセット
         kill @e[type=marker,tag=SpreadMarker]

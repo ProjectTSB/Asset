@@ -7,4 +7,4 @@
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/
 
 # 取得した位置を使ってプレイヤーの足元にマーカーを召喚する
-    $execute positioned ~$(X) ~1 ~$(Z) if entity @s[distance=..20] run summon marker ~ ~ ~ {Tags:["RW.AimMarker"]}
+    $execute positioned ~$(X) ~1 ~$(Z) if entity @s[distance=..20] run summon marker ~ ~ ~ {Tags:["RW.Marker.Aim"]}
