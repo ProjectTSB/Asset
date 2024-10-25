@@ -7,6 +7,3 @@
 # 演出
     particle dust 0.667 1 0.976 1 ~ ~-0.7 ~ 0.2 0.5 0.2 0 10
     particle electric_spark ~ ~-0.7 ~ 0.2 0.5 0.2 0 5
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

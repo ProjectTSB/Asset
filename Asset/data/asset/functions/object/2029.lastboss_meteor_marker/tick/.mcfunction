@@ -12,6 +12,3 @@
 
 # 範囲
     execute positioned ~ ~0.1 ~ run function asset:object/2029.lastboss_meteor_marker/tick/shape
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

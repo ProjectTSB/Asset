@@ -7,6 +7,3 @@
 # particle
     particle dust 0.8 1 1 0.5 ~ ~ ~ 0.1 0.1 0.1 1 5 normal @a
     particle electric_spark ~ ~ ~ 0.1 0.1 0.1 0 1 normal @a
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

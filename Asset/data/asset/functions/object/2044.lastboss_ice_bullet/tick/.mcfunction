@@ -21,6 +21,3 @@
 
 # 誘導！
     function asset:object/2044.lastboss_ice_bullet/tick/homing.m with storage asset:context this
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

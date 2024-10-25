@@ -25,6 +25,3 @@
 
 # 図形表示
     execute positioned ~ ~1 ~ rotated 0 0 run function asset:object/2043.lastboss_ice_sword/hit_block/shape
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

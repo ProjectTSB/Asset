@@ -21,6 +21,3 @@
 
 # 消失
     function asset:object/call.m {method:kill}
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

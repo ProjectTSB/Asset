@@ -6,6 +6,3 @@
 
 # パーティクル
     particle minecraft:dust 0.6 0.15 0.1 1 ^ ^ ^-0.5 0 0 0 0 1
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

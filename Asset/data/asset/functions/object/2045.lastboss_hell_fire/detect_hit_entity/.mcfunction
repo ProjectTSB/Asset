@@ -6,6 +6,3 @@
 
 # 判定
     execute positioned ~-1.5 ~-1.5 ~-1.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=2,dy=2,dz=2] run data modify storage asset:context IsHitEntity set value true
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

@@ -21,6 +21,3 @@
 
 # パーティクル
     particle explosion ~ ~ ~ 0 0 0 0 0 force @a[distance=..100]
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

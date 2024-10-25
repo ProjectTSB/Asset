@@ -22,6 +22,3 @@
 
 # Super、ただし着地後は必要なくなるので実行しない
     execute if entity @s[tag=!2043.Landed] run function asset:object/super.tick
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

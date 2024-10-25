@@ -15,6 +15,3 @@
 
 # 誘導！
     function asset:object/2045.lastboss_hell_fire/tick/homing.m with storage asset:context this
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
