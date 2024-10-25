@@ -11,10 +11,15 @@
 # ユーザーIDをフィールドにいれる
     execute store result storage asset:context this.TargetID int 1 run scoreboard players get @p[distance=..64] UserID
 
-# 召喚、上に乗っける
-#    summon item_display ~ ~ ~ {teleport_duration:1,interpolation_duration:1,Tags:["2054.Init"],brightness:{sky:15,block:15},transformation:{left_rotation:[-0.7f,0f,0f,0.7f],right_rotation:[0f,0f,0f,1f],translation:[0f,20f,0f],scale:[0f,0f,40f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16777215},CustomModelData:20376}}}
-#    ride @e[type=item_display,tag=2054.Init,sort=nearest,limit=1] mount @s
-#    execute on passengers run tag @s remove 2054.Init
+# 付近の対象を狙う
+    execute facing entity @p[distance=..64] eyes run tp @s ~ ~ ~ ~ 0
+
+
+# サウンド
+    playsound ogg:block.respawn_anchor.deplete1 hostile @a ~ ~ ~ 2 2
+    playsound entity.lightning_bolt.impact hostile @p ~ ~ ~ 0.3 0 0
+    playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 1 0.5
+    playsound minecraft:block.amethyst_block.resonate hostile @a ~ ~ ~ 1 1
 
 # 地面を探す
     function asset:object/2054.lastboss_white_pillar/init/search_ground
