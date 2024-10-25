@@ -14,7 +14,7 @@
 # 召喚
     data modify storage api: Argument.ID set value 2073
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=marker,tag=this,distance=..3,limit=1] MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..3,limit=1] MobUUID
     function api:object/summon
 
 # 消滅
