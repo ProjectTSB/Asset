@@ -28,10 +28,13 @@
     execute if entity @s[tag=!RW.Opening] run function asset:mob/1004.tultaria/tick/base_move/
 
 # フェーズ2移行動作
-    execute if entity @s[tag=RW.Transition.Phase2] run function asset:mob/1004.tultaria/tick/skill/phase2/platform_attack/tick/
+    execute if entity @s[tag=RW.Transition.Phase2] run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/
 
 # フェーズ3移行動作
-    execute if entity @s[tag=RW.Skill.Deadly2] run function asset:mob/1004.tultaria/tick/wait_time/phase3_transition/1.tick
+    execute if entity @s[tag=RW.Transition.Phase3] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/
+
+# 奈落落ちたときの処理
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/void/
 
 # リセット
     tag @e[type=item_display,tag=RW.ModelRoot.Target] remove RW.ModelRoot.Target

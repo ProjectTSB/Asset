@@ -5,7 +5,7 @@
 # @within function asset:object/2052.lastboss_platform_attack_purple/tick/damage
 
 # 足場消える
-    fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 air
+    fill ~2 ~-1 ~2 ~-2 ~-5 ~-2 air
 
 # 演出
     playsound minecraft:ui.toast.in neutral @a ~ ~ ~ 1 0

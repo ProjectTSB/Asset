@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/base_move/regenerate_platform/
 
 # 足場復活
-    fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 barrier
+    fill ~2 ~-1 ~2 ~-2 ~-5 ~-2 barrier
 
 # 演出
     playsound minecraft:ui.toast.in neutral @a ~ ~ ~ 1 0
