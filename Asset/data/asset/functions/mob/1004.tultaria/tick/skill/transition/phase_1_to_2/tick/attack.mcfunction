@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/base_move/skill_active
+# @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/
 
 #> 被らないようにするタグと、攻撃開始のタグ
 # @private
