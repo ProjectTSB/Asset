@@ -21,8 +21,8 @@
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.7
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.65
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.6
-    playsound block.beacon.power_select player @a ~ ~ ~ 0.3 1.5 0
-    playsound block.beacon.power_select player @a ~ ~ ~ 0.3 1.55 0
+    playsound block.beacon.power_select player @a ~ ~ ~ 0.7 1.5 0
+    playsound block.beacon.power_select player @a ~ ~ ~ 0.7 1.55 0
 
 # 周囲のプレイヤーのデバフを全解除
     execute as @a[distance=..2.5] run function asset:artifact/1111.rod_o_redeem/trigger/4.clear_debuff
