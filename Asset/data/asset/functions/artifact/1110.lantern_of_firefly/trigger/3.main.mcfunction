@@ -9,3 +9,4 @@
 
 # ここから先は神器側の効果の処理を書く
 
+    playsound minecraft:block.respawn_anchor.charge player @a ~ ~ ~ 0.3 2
