@@ -15,9 +15,9 @@
     execute rotated ~90 -30 positioned ~ ~0.8 ~ run function asset:artifact/1111.rod_o_redeem/trigger/vfx2
     particle wax_off ~ ~1.2 ~ 0 0 0 12 60 normal @a
 
-    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.95
-    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.9
-    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 0.8 0.85
+    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 1.5 0.95
+    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 1.5 0.9
+    playsound minecraft:block.amethyst_block.step player @a ~ ~ ~ 1.5 0.85
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.7
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.65
     playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.6
