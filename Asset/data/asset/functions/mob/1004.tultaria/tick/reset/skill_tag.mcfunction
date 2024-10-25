@@ -2,7 +2,7 @@
 #
 # タグリセット
 #
-# @within function asset:mob/1004.tultaria/tick/**
+# @within function asset:mob/1004.tultaria/**
 
 # タグをリセットする
     tag @s remove RW.Skill.Melee
@@ -34,8 +34,10 @@
 
     tag @s remove RW.Skill.HomingShot
 
-    tag @s remove RW.Skill.Hellfire
+    tag @s remove RW.Skill.SpinSlash
 
+
+    tag @s remove RW.Skill.BlazingCombo
 
 #
     tag @s remove RW.MiniSkillChase
