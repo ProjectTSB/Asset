@@ -15,8 +15,5 @@
     data modify storage api: Argument.ID set value 2030
     execute at @e[type=marker,tag=SpreadMarker,distance=..100] run function api:object/summon
 
-# 演出
-    execute at @a[distance=..100] run playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 1 1
-
 # キル
     kill @e[type=marker,tag=SpreadMarker,distance=..100]
