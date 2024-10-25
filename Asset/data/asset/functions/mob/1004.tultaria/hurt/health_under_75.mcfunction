@@ -12,3 +12,6 @@
 # タグ付与
     tag @s add RW.HPless75per
     tag @s add RW.Transition.Phase2
+
+# リセット
+    function asset:mob/1004.tultaria/tick/reset/skill_tag

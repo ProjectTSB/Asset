@@ -11,4 +11,7 @@
 
 # タグ付与
     tag @s add RW.HPless50per
-    tag @s add RW.Skill.Deadly2
+    tag @s add RW.Transition.Phase3
+
+# リセット
+    function asset:mob/1004.tultaria/tick/reset/skill_tag
