@@ -20,8 +20,6 @@
 
 ## ボスの体と移動に関連するタグ
     #declare tag RW.Boss
-    #declare tag RW.ModelRoot
-    #declare tag RW.ModelRoot.Target
     #declare tag RW.Opening
     #declare tag RW.Start
     #declare tag RW.PlayerFacing
@@ -38,6 +36,12 @@
     #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
 
+## ボスのモデルに関するタグ
+    #declare tag RW.ModelLocator.LeftHand
+    #declare tag RW.ModelLocator.RightHand
+    #declare tag RW.ModelRoot
+    #declare tag RW.ModelRoot.Target
+
 ## ボスのマーカーに関するタグ
     #declare tag RW.RotateMarker
     #declare tag RW.Marker.SpawnPoint
@@ -45,7 +49,8 @@
     #declare tag RW.TeleportMarker
     #declare tag RW.BodyMarker
     #declare tag RW.MarkerInit
-    #declare tag RW.AimMarker
+    #declare tag RW.Marker.Aim
+
 
 ## ボスのHPのタグ
     #declare tag RW.HPless75per
@@ -57,6 +62,9 @@
     #declare tag RW.Transition.Phase2.Attack
 
     #declare tag RW.Transition.Phase3
+    #declare tag RW.Transition.Phase3.Windup
+    #declare tag RW.Transition.Phase3.Attack
+
 
 ## ボスの使う技のタグ
     # 火属性
@@ -65,6 +73,7 @@
         #declare tag RW.Skill.BlazingCombo
     # 水属性
         #declare tag RW.Skill.FreezingShred
+        #declare tag RW.Skill.SpinSlash
         #declare tag RW.Skill.AncientLight
         #declare tag RW.Skill.SwordRain
         #declare tag RW.Skill.HomingShot
@@ -131,11 +140,14 @@
     #declare tag RW.TargetMarker
     #declare tag RW.TargetMarkerInit
     #declare tag RW.ChainLightning.Common
+    #declare tag RW.ChainLightning0
     #declare tag RW.ChainLightning1
     #declare tag RW.ChainLightning2
     #declare tag RW.ChainLightning3
     #declare tag RW.ChainLightning4
     #declare tag RW.ChainLightning5
+    #declare tag RW.ChainLightning6
+    #declare tag RW.ChainLightning7
     #declare tag RW.ChainLightning.Last
     #declare tag S2.Wait
 
