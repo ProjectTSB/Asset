@@ -7,6 +7,9 @@
 # 上に飛ばされる
     summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:20b,duration:3,show_particles:0b,show_icon:0b}]}
 
+# 演出
+    particle dust 0.718 0.188 0.188 1 ~ ~1 ~ 0.3 0.5 0.3 0 5
+
 # 自分のEffectを取得
     function api:data_get/active_effects
 
