@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0282.call_fulstuka/tick/2.tick
+# @within function asset:mob/0282.call_fulstuka/tick/
 
 #> private
 # @private
