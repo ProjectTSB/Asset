@@ -17,16 +17,16 @@
     execute if score @s[scores={RW.LoopCount=1..}] RW.Tick matches 10 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/targeting
 
 # 突き開始
-    execute if score @s[scores={RW.Phase=1}] RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/active
+    execute if score @s[scores={RW.Phase=1..2}] RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/active
     # 突き部分のダメージ
-        execute if score @s[scores={RW.Phase=1}] RW.Tick matches 21 positioned ^ ^ ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
+        execute if score @s[scores={RW.Phase=1..2}] RW.Tick matches 21 positioned ^ ^ ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
 # ハイパー突き
     execute if score @s[scores={RW.Phase=3}] RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/hyper_stab/
 
 # ループ回数によってループ
     execute if score @s[scores={RW.Phase=1}] RW.Tick matches 22 run scoreboard players set @s[scores={RW.LoopCount=..2}] RW.Tick 7
     execute if score @s[scores={RW.Phase=2}] RW.Tick matches 22 run scoreboard players set @s[scores={RW.LoopCount=..4}] RW.Tick 7
-    execute if score @s[scores={RW.Phase=3}] RW.Tick matches 22 run scoreboard players set @s[scores={RW.LoopCount=..4}] RW.Tick 9
+    execute if score @s[scores={RW.Phase=3}] RW.Tick matches 20 run scoreboard players set @s[scores={RW.LoopCount=..4}] RW.Tick 9
 
 # 埋まりそうになったら移動をやめる
     execute at @s[scores={RW.Tick=21}] positioned ~ ~0.5 ~ unless block ^ ^ ^2 #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stop

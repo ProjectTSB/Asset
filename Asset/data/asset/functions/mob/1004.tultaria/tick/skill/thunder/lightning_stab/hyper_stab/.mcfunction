@@ -8,6 +8,7 @@
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1.5 1
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1.5 0.9
     playsound minecraft:item.axe.scrape hostile @a ~ ~ ~ 1 1.4
+    particle flash ~ ~ ~ 0 0 0 1 1
 
 # 構えモーション停止
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/stop
