@@ -348,6 +348,7 @@
     #declare predicate lib:is_burning                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_burning.json#L1
     #declare predicate lib:is_day                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_day.json#L1
     #declare predicate lib:is_deep_void                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_deep_void.json#L1
+    #declare predicate lib:is_flying_elytra                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_flying_elytra.json#L1
     #declare predicate lib:is_in_lava/                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_lava/.json#L1
     #declare predicate lib:is_in_lava/include_flowing                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_lava/include_flowing.json#L1
     #declare predicate lib:is_in_water/                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/is_in_water/.json#L1
@@ -906,22 +907,22 @@
 #   function asset_manager:island/dispel/boss/*
 #   function asset_manager:object/triggers/tick
 #   function asset:object/**
+#   asset_manager:mob/triggers/
+#   asset_manager:mob/triggers/death/
+#   asset:mob/**
+#   function asset_manager:mob/common_tag/anti_void_action/**
 #   core:tick/player/
 #   player_manager:vanilla_attack
 #   asset_manager:artifact/triggers/**
 #   asset:artifact/**
 #   asset_manager:teleporter/tick/**
 #   core:handler/attack
-#   asset_manager:mob/triggers/
-#   asset_manager:mob/triggers/death/
-#   asset:mob/**
-#   function asset_manager:mob/common_tag/anti_void_action/**
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L33
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L35
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L44
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L94
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 #declare tag this
 
 #> declare
