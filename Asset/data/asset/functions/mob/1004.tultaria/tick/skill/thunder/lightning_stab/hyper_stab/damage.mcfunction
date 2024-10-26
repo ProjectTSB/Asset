@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/strong/damage
+#> asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/hyper_stab/damage
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/strong/thunder.recursive
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/hyper_stab/recursive
 
 # ダメージ設定
     # 与えるダメージ

@@ -24,7 +24,7 @@
 # こっち狙いで突進
     # 速度設定
         scoreboard players set @s[scores={RW.Phase=1}] RW.Speed 10
-        scoreboard players set @s[scores={RW.Phase=2..}] RW.Speed 12
+        scoreboard players set @s[scores={RW.Phase=2}] RW.Speed 12
 
     # 移動タグ付与
         tag @s add RW.Move
