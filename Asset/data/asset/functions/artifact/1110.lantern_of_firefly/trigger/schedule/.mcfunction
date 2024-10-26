@@ -1,6 +1,6 @@
 #> asset:artifact/1110.lantern_of_firefly/trigger/schedule/
 #
-#
+# スケジュールループのメイン処理
 #
 # @within function asset:artifact/1110.lantern_of_firefly/trigger/schedule/loop
 
