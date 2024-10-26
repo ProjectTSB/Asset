@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1110.lantern_of_firefly/trigger/3.main
+# @within function asset:artifact/1110.lantern_of_firefly/trigger/**
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIYBMKArAGYAMDAjALSkDMdAnOwBZqAIwDs7ABxdhANnZcUXVjIZLqDXlzAEAdpQC2CZIDDFAASttYGJQwGAzknAoA9oR0QkdJgRRx3cDEcwADdKbEIjcAAPJG8wKFiAX0SCW1I0QgdEViZcgjsIGw9EOLhsbDQYOyMcuIxnQogjOLQ7AFFyyuq2gEdCMOwoAGVrX3JEBjDq5IBdIA_3
 # 円 1

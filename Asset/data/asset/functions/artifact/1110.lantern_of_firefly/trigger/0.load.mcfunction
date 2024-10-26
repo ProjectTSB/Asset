@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:artifact/1110.lantern_of_firefly/trigger/**
     scoreboard objectives add UU.AttackCount dummy
+    scoreboard objectives add UU.Tick dummy
