@@ -36,6 +36,15 @@
 # 奈落落ちたときの処理
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/void/
 
+# 属性モードに応じたパーティクルを両手から出す
+    execute if entity @s[tag=RW.Mode.Fire] at @e[type=marker,tag=RW.ModelLocator.LeftHand,sort=nearest,limit=1] run particle dust 1 0.5 0 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Fire] at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] run particle dust 1 0.5 0 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Water] at @e[type=marker,tag=RW.ModelLocator.LeftHand,sort=nearest,limit=1] run particle dust 0.8 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Water] at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] run particle dust 0.8 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Thunder] at @e[type=marker,tag=RW.ModelLocator.LeftHand,sort=nearest,limit=1] run particle dust 1 1 0.5 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Thunder] at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] run particle dust 1 1 0.5 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.LeftHand,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
 # リセット
     tag @e[type=item_display,tag=RW.ModelRoot.Target] remove RW.ModelRoot.Target
 
