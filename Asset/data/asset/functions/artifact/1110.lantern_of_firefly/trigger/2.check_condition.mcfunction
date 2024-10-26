@@ -20,3 +20,6 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1110.lantern_of_firefly/trigger/3.main
+
+# 20以上ならカウントをリセット
+    execute if entity @s[scores={UU.AttackCount=20..}] run scoreboard players reset @s UU.AttackCount
