@@ -1,15 +1,15 @@
-#> asset:effect/0267.dreaming_blessing/register
+#> asset:effect/0267.dreaming_veil/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0267.dreaming_blessing/_/register
+# @within function asset:effect/0267.dreaming_veil/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 267
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"夢見の加護","color":"light_purple"}'
+    data modify storage asset:effect Name set value '{"text":"夢見の護り","color":"light_purple"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"ダメージを吸収する","color":"white"}']
 # 効果時間 (int) (default = API || error)
