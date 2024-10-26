@@ -2,7 +2,7 @@
 #
 # 発砲準備をします
 #
-# @within function asset:mob/0155.immorality/tick/2.tick
+# @within function asset:mob/0155.immorality/tick/
 
 # NoAIにする
     data modify entity @s NoAI set value 1b

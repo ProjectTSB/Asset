@@ -2,7 +2,7 @@
 #
 # スキル実行中
 #
-# @within function asset:mob/0129.lexiel/tick/2.tick
+# @within function asset:mob/0129.lexiel/tick/
 
 # 剣スキル
     execute if entity @s[tag=3L.SkillSword] run function asset:mob/0129.lexiel/tick/skill_sword/1.skill_sword

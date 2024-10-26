@@ -2,7 +2,7 @@
 #
 # Playerが近くにいる時のみ実行するtick
 #
-# @within function asset:mob/0139.blast_eye/tick/2.tick
+# @within function asset:mob/0139.blast_eye/tick/
 
 # eye本体にタイマー加算
     scoreboard players add @s 3v.Time 1
