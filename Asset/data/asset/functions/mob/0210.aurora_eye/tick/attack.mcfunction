@@ -1,4 +1,4 @@
-#> asset:mob/0210.aurora_eye/tick/3.attack
+#> asset:mob/0210.aurora_eye/tick/attack
 #
 # 攻撃
 #
@@ -20,7 +20,7 @@
     function api:damage/reset
 
 # 難易度がノーマル以上ならデバフを付与
-    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0210.aurora_eye/tick/4.debuff
+    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0210.aurora_eye/tick/debuff
 
 # クールタイム設定
     scoreboard players set @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] 5U.AttackCT 20

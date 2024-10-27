@@ -1,8 +1,8 @@
-#> asset:mob/0210.aurora_eye/tick/4.debuff
+#> asset:mob/0210.aurora_eye/tick/debuff
 #
 # デバフを付与
 #
-# @within function asset:mob/0210.aurora_eye/tick/3.attack
+# @within function asset:mob/0210.aurora_eye/tick/attack
 
 #> Private
 # @private

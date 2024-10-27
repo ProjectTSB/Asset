@@ -1,4 +1,4 @@
-#> asset:mob/0210.aurora_eye/tick/5.summon_bullet
+#> asset:mob/0210.aurora_eye/tick/summon_bullet
 #
 # オーロラ弾を発射するよ
 #
