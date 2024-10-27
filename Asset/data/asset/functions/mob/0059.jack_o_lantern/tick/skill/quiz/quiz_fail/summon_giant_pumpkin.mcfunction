@@ -25,8 +25,8 @@
 # 自分のカボチャの頭のCMDをFieldOverrideに突っ込む
     data modify storage api: Argument.FieldOverride.FaceID set from entity @s ArmorItems[3].tag.CustomModelData
 
-# RotationをFieldOverrideへ
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+# Rotation[0]をFieldOverrideへ
+    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
 
 # 召喚する
     data modify storage api: Argument.ID set value 2031
