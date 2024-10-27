@@ -5,7 +5,9 @@
 # @within asset:object/1029.barrage_spirit/tick/
 
 # 弾を召喚する
-    say shot
+    data modify storage api: Argument.ID set value 1030
+    execute as @p[tag=1029.OwnerPlayer] store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute as @p[tag=1029.OwnerPlayer] run function api:object/summon
 
 # カウントを増やす
     scoreboard players add @s 1029.ShotCount 1

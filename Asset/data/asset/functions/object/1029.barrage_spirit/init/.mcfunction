@@ -26,12 +26,12 @@
     scoreboard players operation $Random Temporary %= $6 Const
 
 # メッセージ
-    execute if score $Random Temporary matches 0 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Hello!","font":"illageralt"}]
-    execute if score $Random Temporary matches 1 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"I will help you!","font":"illageralt"}]
-    execute if score $Random Temporary matches 2 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Where is your enemies?","font":"illageralt"}]
-    execute if score $Random Temporary matches 3 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Let us do it!","font":"illageralt"}]
-    execute if score $Random Temporary matches 4 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"I am ready!","font":"illageralt"}]
-    execute if score $Random Temporary matches 5 run tellraw @s [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"My master!","font":"illageralt"}]
+    execute if score $Random Temporary matches 0 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Hello!","font":"illageralt"}]
+    execute if score $Random Temporary matches 1 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"I will help you!","font":"illageralt"}]
+    execute if score $Random Temporary matches 2 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Where is your enemies?","font":"illageralt"}]
+    execute if score $Random Temporary matches 3 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Let us do it!","font":"illageralt"}]
+    execute if score $Random Temporary matches 4 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"I am ready!","font":"illageralt"}]
+    execute if score $Random Temporary matches 5 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"My master!","font":"illageralt"}]
 
 # パーティクル
     particle poof ~ ~0.5 ~ 0.1 0.1 0.1 0.05 10
