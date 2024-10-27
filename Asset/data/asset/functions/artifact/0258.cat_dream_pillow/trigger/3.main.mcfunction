@@ -25,8 +25,8 @@
     execute if score $Random Temporary matches 1 run playsound entity.cat.purreow player @a ~ ~ ~ 1 1 0
     execute if score $Random Temporary matches 2 run playsound entity.cat.stray_ambient player @a ~ ~ ~ 1 1 0
 
-# 回復量の20%分をバリア数値としてフィールドへ代入
-    execute store result storage api: Argument.FieldOverride.Barrier double 0.2 run data get storage asset:context Heal.Amount
+# 回復量の30%分をバリア数値としてフィールドへ代入
+    execute store result storage api: Argument.FieldOverride.Barrier double 0.3 run data get storage asset:context Heal.Amount
 
 # エフェクトを付与
     data modify storage api: Argument.ID set value 267

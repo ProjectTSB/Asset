@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"猫の夢見枕","color":"#F8CEF5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"回復量の20%分のバリアを得る。"}','{"text":"猫の意匠が施された枕。","color":"gray"}','{"text":"この枕で眠ると猫に囲まれる夢を見る。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"回復量の30%分のバリアを得る。"}','{"text":"猫の意匠が施された枕。","color":"gray"}','{"text":"この枕で眠ると猫に囲まれる夢を見る。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -43,7 +43,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 300
+    data modify storage asset:artifact LocalCooldown set value 200
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
