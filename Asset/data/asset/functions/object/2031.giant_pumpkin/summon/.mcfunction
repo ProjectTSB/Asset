@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/2031/summon
 
-# Rotation[1]を0にする
-    data modify storage asset:context this.Rotation[1] set value 0.0f
-
 # FaceIDがなければ自動的に1を入れる
     execute unless data storage asset:context this.FaceID run data modify storage asset:context this.FaceID set value 1
 
