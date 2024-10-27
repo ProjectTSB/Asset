@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2049.lightning_magic/load",
         "asset:object/0001.abstract_projectile/load"
     ]
 }

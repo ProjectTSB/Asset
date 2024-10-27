@@ -20,9 +20,10 @@
     tag @s[tag=2049.Interval] remove 2049.Interval
 
 # 消滅
+# 80..99 着陸前で4秒以上経過で消滅
+# 100.. 汎用Tick > KillTickなら消滅
     execute if entity @s[scores={General.Object.Tick=80..99}] run kill @s
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={General.Object.Tick=130..}] run kill @s
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Object.Tick=150..}] run kill @s
+    execute if score @s General.Object.Tick >= @s 2049.KillTick run kill @s
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
