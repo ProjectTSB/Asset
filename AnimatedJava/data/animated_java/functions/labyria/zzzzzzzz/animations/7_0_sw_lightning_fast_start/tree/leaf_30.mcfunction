@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:labyria/zzzzzzzz/animations/7_0_sw_lightning_fast_start/tree/leaf_30_as_bone
-function animated_java:labyria/zzzzzzzz/apply_variant/mabataki/as_root

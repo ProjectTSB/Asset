@@ -1,3 +1,0 @@
-execute if score @s aj.axia.animation.14_0_opening_attack.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/14_0_opening_attack/end_loop
-execute if score @s aj.axia.animation.14_0_opening_attack.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/14_0_opening_attack/stop
-execute if score @s aj.axia.animation.14_0_opening_attack.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/14_0_opening_attack/pause

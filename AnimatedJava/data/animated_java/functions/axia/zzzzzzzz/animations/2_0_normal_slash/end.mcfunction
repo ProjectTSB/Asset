@@ -1,3 +1,0 @@
-execute if score @s aj.axia.animation.2_0_normal_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/2_0_normal_slash/end_loop
-execute if score @s aj.axia.animation.2_0_normal_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/2_0_normal_slash/stop
-execute if score @s aj.axia.animation.2_0_normal_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/2_0_normal_slash/pause

@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/15_1_ms_stan/tick_animation

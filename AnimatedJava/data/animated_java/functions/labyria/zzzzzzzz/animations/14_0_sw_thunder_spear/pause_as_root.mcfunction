@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.14_0_sw_thunder_spear

@@ -14,7 +14,7 @@
     tag @s remove AV.Temp.This
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/12_0_kourai/play
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/12_0_kourai/tween {duration:1, to_frame: 0}
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 191 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/end

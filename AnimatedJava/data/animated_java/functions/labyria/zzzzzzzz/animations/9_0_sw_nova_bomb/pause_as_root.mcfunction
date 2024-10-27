@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.9_0_sw_nova_bomb

@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 184 run function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/tree/leaf_184
-execute if score @s aj.anim_time matches 185 run function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/tree/leaf_185

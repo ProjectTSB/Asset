@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.6_0_sw_thunder_grenade_start

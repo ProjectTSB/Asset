@@ -15,7 +15,7 @@
     scoreboard players reset $AV.Temp AV.UUID
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/8_0_moving_spin/play
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/8_0_moving_spin/tween {duration:1, to_frame: 0}
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 83 run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/end

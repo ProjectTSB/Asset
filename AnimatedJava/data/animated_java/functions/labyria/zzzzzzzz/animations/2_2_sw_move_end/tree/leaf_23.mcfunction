@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:labyria/zzzzzzzz/animations/2_2_sw_move_end/tree/leaf_23_as_bone

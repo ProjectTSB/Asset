@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/tree/leaf_126_as_bone

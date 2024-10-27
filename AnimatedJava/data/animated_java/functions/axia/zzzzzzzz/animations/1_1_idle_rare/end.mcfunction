@@ -1,3 +1,0 @@
-execute if score @s aj.axia.animation.1_1_idle_rare.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/1_1_idle_rare/end_loop
-execute if score @s aj.axia.animation.1_1_idle_rare.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/1_1_idle_rare/stop
-execute if score @s aj.axia.animation.1_1_idle_rare.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/1_1_idle_rare/pause

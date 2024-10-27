@@ -1,3 +1,0 @@
-execute if score @s aj.ecual.animation.4_0_summon_book.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/end_loop
-execute if score @s aj.ecual.animation.4_0_summon_book.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/4_0_summon_book/stop
-execute if score @s aj.ecual.animation.4_0_summon_book.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/4_0_summon_book/pause

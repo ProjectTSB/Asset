@@ -1,1 +1,0 @@
-function animated_java:axia/zzzzzzzz/animations/10_1_warp_slash_0/tick_animation

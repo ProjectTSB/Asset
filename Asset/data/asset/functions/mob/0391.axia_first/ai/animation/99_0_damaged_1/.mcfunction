@@ -8,7 +8,7 @@
     execute if score @s AV.AnimationTick matches 1 positioned ^ ^ ^-1 run function asset:mob/0391.axia_first/ai/general/1.teleport
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/13_0_damage_1/play
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/13_0_damage_1/tween {duration:1, to_frame: 0}
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 21 run function asset:mob/0391.axia_first/ai/animation/99_0_damaged_1/end

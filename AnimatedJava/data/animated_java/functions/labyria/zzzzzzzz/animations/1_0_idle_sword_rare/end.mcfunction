@@ -1,3 +1,0 @@
-execute if score @s aj.labyria.animation.1_0_idle_sword_rare.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/1_0_idle_sword_rare/end_loop
-execute if score @s aj.labyria.animation.1_0_idle_sword_rare.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/1_0_idle_sword_rare/stop
-execute if score @s aj.labyria.animation.1_0_idle_sword_rare.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/1_0_idle_sword_rare/pause

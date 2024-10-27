@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:labyria/zzzzzzzz/animations/6_1_sw_thunder_grenade_set/tree/leaf_20_as_bone
-function animated_java:labyria/zzzzzzzz/apply_variant/default/as_root

@@ -1,1 +1,0 @@
-tag @s remove aj.ecual.animation.6_0_moving

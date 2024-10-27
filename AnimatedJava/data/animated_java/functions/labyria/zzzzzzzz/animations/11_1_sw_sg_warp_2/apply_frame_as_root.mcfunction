@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..33 run function animated_java:labyria/zzzzzzzz/animations/11_1_sw_sg_warp_2/tree/branch_0_33

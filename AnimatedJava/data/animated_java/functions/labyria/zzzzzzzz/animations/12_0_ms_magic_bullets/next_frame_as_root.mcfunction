@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/12_0_ms_magic_bullets/tick_animation

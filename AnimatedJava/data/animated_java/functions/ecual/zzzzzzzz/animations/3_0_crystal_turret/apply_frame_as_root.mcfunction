@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..80 run function animated_java:ecual/zzzzzzzz/animations/3_0_crystal_turret/tree/branch_0_80

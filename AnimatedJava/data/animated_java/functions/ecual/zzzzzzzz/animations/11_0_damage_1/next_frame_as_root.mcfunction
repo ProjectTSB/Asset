@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/11_0_damage_1/tick_animation

@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/tick_animation

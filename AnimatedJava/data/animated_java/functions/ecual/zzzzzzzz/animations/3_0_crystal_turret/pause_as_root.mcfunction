@@ -1,1 +1,0 @@
-tag @s remove aj.ecual.animation.3_0_crystal_turret

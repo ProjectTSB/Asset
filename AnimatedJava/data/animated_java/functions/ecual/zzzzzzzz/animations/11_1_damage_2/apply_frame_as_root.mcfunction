@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..20 run function animated_java:ecual/zzzzzzzz/animations/11_1_damage_2/tree/branch_0_20

@@ -1,1 +1,0 @@
-function animated_java:axia/zzzzzzzz/animations/4_0_naginagi/tick_animation

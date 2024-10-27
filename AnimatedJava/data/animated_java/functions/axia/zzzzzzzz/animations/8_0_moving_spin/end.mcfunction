@@ -1,3 +1,0 @@
-execute if score @s aj.axia.animation.8_0_moving_spin.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/8_0_moving_spin/end_loop
-execute if score @s aj.axia.animation.8_0_moving_spin.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/8_0_moving_spin/stop
-execute if score @s aj.axia.animation.8_0_moving_spin.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/8_0_moving_spin/pause

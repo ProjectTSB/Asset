@@ -1,1 +1,0 @@
-function animated_java:axia/zzzzzzzz/animations/1_1_idle_rare/tick_animation

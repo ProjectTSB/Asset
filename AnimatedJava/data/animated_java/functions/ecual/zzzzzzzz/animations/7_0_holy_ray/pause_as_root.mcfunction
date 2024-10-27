@@ -1,1 +1,0 @@
-tag @s remove aj.ecual.animation.7_0_holy_ray

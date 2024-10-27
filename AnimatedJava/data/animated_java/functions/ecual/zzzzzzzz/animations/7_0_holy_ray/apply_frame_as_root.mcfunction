@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..175 run function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/tree/branch_0_175

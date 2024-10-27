@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..185 run function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/tree/branch_0_185

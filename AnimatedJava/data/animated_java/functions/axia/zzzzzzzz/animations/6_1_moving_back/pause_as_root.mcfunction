@@ -1,1 +1,0 @@
-tag @s remove aj.axia.animation.6_1_moving_back

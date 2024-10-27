@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:labyria/zzzzzzzz/animations/14_0_sw_thunder_spear/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:labyria/zzzzzzzz/animations/14_0_sw_thunder_spear/tick_animation

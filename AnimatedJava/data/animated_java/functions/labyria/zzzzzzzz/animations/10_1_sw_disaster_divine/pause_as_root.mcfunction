@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.10_1_sw_disaster_divine

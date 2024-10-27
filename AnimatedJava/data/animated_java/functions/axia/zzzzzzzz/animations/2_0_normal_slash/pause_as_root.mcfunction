@@ -1,1 +1,0 @@
-tag @s remove aj.axia.animation.2_0_normal_slash

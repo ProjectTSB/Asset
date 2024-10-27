@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.5_0_sw_smoke_bomb

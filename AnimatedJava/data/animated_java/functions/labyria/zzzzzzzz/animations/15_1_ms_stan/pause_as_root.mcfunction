@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.15_1_ms_stan

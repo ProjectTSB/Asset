@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/5_1_water_bullet/tick_animation
