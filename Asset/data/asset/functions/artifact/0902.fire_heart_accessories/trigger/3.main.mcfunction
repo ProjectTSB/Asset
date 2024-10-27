@@ -26,7 +26,8 @@
     scoreboard players add $P2.Count Temporary 10
 
 # 与えるダメージ = 最大体力 × {(個数 - 1) × 0.5 + 1 } × 2
-    execute store result score $P2.MaxHP Temporary run attribute @s minecraft:generic.max_health get 2
+    function api:modifier/max_health/get
+    execute store result score $P2.MaxHP Temporary run data get storage api: Return.MaxHealth 2
     scoreboard players operation $P2.MaxHP Temporary *= $P2.Count Temporary
     scoreboard players operation $P2.MaxHP Temporary /= $10 Const
 

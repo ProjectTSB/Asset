@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0216.gray_guardian/tick/2.tick
+# @within function asset:mob/0216.gray_guardian/tick/
 #> private
 # @private
     #declare score_holder $Random
