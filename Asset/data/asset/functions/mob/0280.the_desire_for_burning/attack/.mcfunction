@@ -14,7 +14,7 @@
     execute at @p[tag=Victim,distance=..100] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
 
 # もやす
-    execute if predicate world_manager:area/02.islands at @p[tag=Victim,distance=..100] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
+    execute if predicate api:area/is_breakable at @p[tag=Victim,distance=..100] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
 
 # 引数の設定
     # 与えるダメージ
