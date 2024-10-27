@@ -21,7 +21,9 @@
         data modify storage lib: Argument.BypassResist set value true
     # 補正を無視
         data modify storage lib: Argument.FixedDamage set value true
-# 補正functionを実行
+    # キルログ
+    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは魂の接続が途絶えた。","with":[{"selector":"@s"}]}]']
+    # 補正functionを実行
     function lib:damage/modifier
 # ダメージ
     function lib:damage/
