@@ -21,5 +21,5 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function api:damage/
     function api:damage/reset
 
-# ノーマル以上でデバフを付与
-    execute if predicate api:global_vars/difficulty/min/normal as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function asset:object/2047.prominence_magic/tick/debuff
+# Debuff:trueならデバフを付与
+    execute if data storage asset:context this{Debuff:true} as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function asset:object/2047.prominence_magic/tick/debuff

@@ -9,5 +9,5 @@
     execute rotated ~180 ~ positioned ^ ^ ^2.4 run function asset:object/2047.prominence_magic/tick/vfx
 
 # ハード以上で追加で2つ
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~90 ~ positioned ^ ^ ^2.4 run function asset:object/2047.prominence_magic/tick/vfx
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~270 ~ positioned ^ ^ ^2.4 run function asset:object/2047.prominence_magic/tick/vfx
+    execute if data storage asset:context this{AddBlast:true} rotated ~90 ~ positioned ^ ^ ^2.4 run function asset:object/2047.prominence_magic/tick/vfx
+    execute if data storage asset:context this{AddBlast:true} rotated ~270 ~ positioned ^ ^ ^2.4 run function asset:object/2047.prominence_magic/tick/vfx
