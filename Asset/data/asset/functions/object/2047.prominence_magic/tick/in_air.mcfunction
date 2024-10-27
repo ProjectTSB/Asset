@@ -11,8 +11,5 @@
     execute rotated ~ ~2 run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.1 1.5 0
 
-# 地面に着弾するまで直進
+# 地面に着弾するまで下を向く
     tp @s ^ ^ ^ ~ ~2
-
-# 地面に着弾したらTickの値を変更
-    execute unless block ^ ^ ^0.5 #lib:no_collision run scoreboard players set @s General.Object.Tick 100
