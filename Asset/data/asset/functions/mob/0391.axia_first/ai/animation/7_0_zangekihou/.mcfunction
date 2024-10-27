@@ -18,7 +18,7 @@
     tag @s remove AV.Temp.This
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/9_0_zangekihou/tween {duration:1, to_frame: 0}
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/9_0_zangekihou/play
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 56 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/end

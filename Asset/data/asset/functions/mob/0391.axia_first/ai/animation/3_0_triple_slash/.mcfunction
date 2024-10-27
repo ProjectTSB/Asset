@@ -15,7 +15,7 @@
     tag @s remove AV.Temp.This
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/3_0_triple_slash/tween {duration:1, to_frame: 0}
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/3_0_triple_slash/play
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 81 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/end

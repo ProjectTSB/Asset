@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..160 run function animated_java:ecual/zzzzzzzz/animations/5_1_water_bullet/tree/branch_0_160

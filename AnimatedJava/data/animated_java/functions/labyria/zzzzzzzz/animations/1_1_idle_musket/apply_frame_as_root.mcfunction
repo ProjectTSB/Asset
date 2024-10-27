@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..40 run function animated_java:labyria/zzzzzzzz/animations/1_1_idle_musket/tree/branch_0_40

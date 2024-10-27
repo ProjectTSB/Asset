@@ -1,0 +1,3 @@
+execute if score @s aj.axia.animation.13_1_damage_2.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/13_1_damage_2/end_loop
+execute if score @s aj.axia.animation.13_1_damage_2.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/13_1_damage_2/stop
+execute if score @s aj.axia.animation.13_1_damage_2.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/13_1_damage_2/pause

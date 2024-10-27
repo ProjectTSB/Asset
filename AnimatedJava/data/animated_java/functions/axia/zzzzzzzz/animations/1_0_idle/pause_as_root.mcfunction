@@ -1,0 +1,1 @@
+tag @s remove aj.axia.animation.1_0_idle

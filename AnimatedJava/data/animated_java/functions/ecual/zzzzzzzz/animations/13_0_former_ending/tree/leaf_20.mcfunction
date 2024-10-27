@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/13_0_former_ending/tree/leaf_20_as_bone
+function animated_java:ecual/zzzzzzzz/apply_variant/jitome/as_root

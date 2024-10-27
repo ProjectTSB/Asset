@@ -1,0 +1,3 @@
+execute if score @s aj.axia.animation.9_0_zangekihou.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/9_0_zangekihou/end_loop
+execute if score @s aj.axia.animation.9_0_zangekihou.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/9_0_zangekihou/stop
+execute if score @s aj.axia.animation.9_0_zangekihou.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/9_0_zangekihou/pause

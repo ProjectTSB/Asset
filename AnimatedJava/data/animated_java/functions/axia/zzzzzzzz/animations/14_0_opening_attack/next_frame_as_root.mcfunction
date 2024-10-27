@@ -1,0 +1,1 @@
+function animated_java:axia/zzzzzzzz/animations/14_0_opening_attack/tick_animation

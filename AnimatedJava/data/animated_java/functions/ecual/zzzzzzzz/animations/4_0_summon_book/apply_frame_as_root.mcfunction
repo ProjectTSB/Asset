@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..120 run function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/tree/branch_0_120

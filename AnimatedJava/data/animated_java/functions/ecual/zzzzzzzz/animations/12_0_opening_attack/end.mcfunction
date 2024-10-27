@@ -1,0 +1,3 @@
+execute if score @s aj.ecual.animation.12_0_opening_attack.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/12_0_opening_attack/end_loop
+execute if score @s aj.ecual.animation.12_0_opening_attack.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/12_0_opening_attack/stop
+execute if score @s aj.ecual.animation.12_0_opening_attack.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/12_0_opening_attack/pause

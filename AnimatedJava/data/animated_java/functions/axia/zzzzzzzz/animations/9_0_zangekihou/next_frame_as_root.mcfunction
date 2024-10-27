@@ -1,0 +1,1 @@
+function animated_java:axia/zzzzzzzz/animations/9_0_zangekihou/tick_animation

@@ -1,1 +1,6 @@
-{"values":[]}
+{
+	"replace": false,
+	"values": [
+		"animated_java:tick"
+	]
+}

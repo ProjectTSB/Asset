@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/apply_variant/majime/as_bone

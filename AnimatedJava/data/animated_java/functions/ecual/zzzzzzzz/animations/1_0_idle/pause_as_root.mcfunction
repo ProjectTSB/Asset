@@ -1,0 +1,1 @@
+tag @s remove aj.ecual.animation.1_0_idle

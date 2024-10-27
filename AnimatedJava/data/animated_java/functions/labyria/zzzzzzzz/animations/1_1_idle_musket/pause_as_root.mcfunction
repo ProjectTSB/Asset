@@ -1,0 +1,1 @@
+tag @s remove aj.labyria.animation.1_1_idle_musket

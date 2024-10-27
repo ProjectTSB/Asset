@@ -1,0 +1,1 @@
+function animated_java:ecual/zzzzzzzz/animations/4_0_summon_book/tick_animation

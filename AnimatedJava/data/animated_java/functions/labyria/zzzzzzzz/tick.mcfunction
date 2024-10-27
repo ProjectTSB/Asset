@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.labyria.root] run function animated_java:labyria/zzzzzzzz/tick_as_root

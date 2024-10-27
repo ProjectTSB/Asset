@@ -1,0 +1,1 @@
+tag @s remove aj.axia.animation.14_0_opening_attack

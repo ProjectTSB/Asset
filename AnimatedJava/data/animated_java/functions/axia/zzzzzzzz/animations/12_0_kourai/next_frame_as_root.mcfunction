@@ -1,0 +1,1 @@
+function animated_java:axia/zzzzzzzz/animations/12_0_kourai/tick_animation

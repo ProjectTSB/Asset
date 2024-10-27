@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ecual/zzzzzzzz/animations/5_0_shining_ray/tree/leaf_40_as_bone
+function animated_java:ecual/zzzzzzzz/apply_variant/default/as_root

@@ -12,7 +12,7 @@
     scoreboard players add @s AV.AnimationTick 1
 
 # アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..250] run function animated_java:axia/animations/15_0_former_ending/tween {duration:1, to_frame: 0}
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..250] run function animated_java:axia/animations/15_0_former_ending/play
 
 # パーティクル処理
     execute if score @s AV.AnimationTick matches 99 as @e[type=item_display,tag=AV.Root.This,distance=..250] at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal

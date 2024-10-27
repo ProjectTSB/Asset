@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:labyria/zzzzzzzz/animations/8_0_sw_raigou/tree/leaf_65_as_bone
+function animated_java:labyria/zzzzzzzz/apply_variant/default/as_root

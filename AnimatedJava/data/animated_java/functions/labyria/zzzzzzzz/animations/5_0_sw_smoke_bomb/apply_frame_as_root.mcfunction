@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:labyria/zzzzzzzz/animations/5_0_sw_smoke_bomb/tree/branch_0_50

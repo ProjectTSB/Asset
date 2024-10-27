@@ -1,0 +1,3 @@
+execute if score @s aj.ecual.animation.7_0_holy_ray.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/7_0_holy_ray/end_loop
+execute if score @s aj.ecual.animation.7_0_holy_ray.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/7_0_holy_ray/stop
+execute if score @s aj.ecual.animation.7_0_holy_ray.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/7_0_holy_ray/pause

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..95 run function animated_java:ecual/zzzzzzzz/animations/9_0_water_wall/tree/branch_0_95

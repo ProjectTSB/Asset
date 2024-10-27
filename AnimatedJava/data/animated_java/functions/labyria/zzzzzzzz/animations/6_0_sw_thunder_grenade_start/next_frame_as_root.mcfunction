@@ -1,0 +1,1 @@
+function animated_java:labyria/zzzzzzzz/animations/6_0_sw_thunder_grenade_start/tick_animation

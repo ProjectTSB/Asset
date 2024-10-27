@@ -1,0 +1,3 @@
+execute if score @s aj.axia.animation.12_0_kourai.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/12_0_kourai/end_loop
+execute if score @s aj.axia.animation.12_0_kourai.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/12_0_kourai/stop
+execute if score @s aj.axia.animation.12_0_kourai.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/12_0_kourai/pause
