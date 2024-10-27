@@ -1,8 +1,8 @@
-#> asset:artifact/0973.call_rod_spirit/trigger/fairy/5.disapper
+#> asset:object/1029.barrage_spirit/tick/disapper
 #
 # 消滅処理
 #
-# @within function asset:artifact/0973.call_rod_spirit/trigger/fairy/3.main
+# @within function asset:object/1029.barrage_spirit/tick/
 
 # 演出
     playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1.5 2
