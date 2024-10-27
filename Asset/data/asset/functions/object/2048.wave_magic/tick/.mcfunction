@@ -21,11 +21,11 @@
 
 # 消滅
 # 80..99 着陸前で4秒以上経過で消滅
-# 120.. ノーマル以下で着陸後1秒で消滅
-# 130.. ハード以上で着陸後1.5秒で消滅
+# 100.. 汎用Tick > KillTickなら消滅
     execute if entity @s[scores={General.Object.Tick=80..99}] run kill @s
-    execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={General.Object.Tick=120..}] run kill @s
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Object.Tick=130..}] run kill @s
+    execute if score @s General.Object.Tick >= @s 2048.KillTick run kill @s
+    #execute if predicate api:global_vars/difficulty/max/normal if entity @s[scores={General.Object.Tick=120..}] run kill @s
+    #execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Object.Tick=130..}] run kill @s
 
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
