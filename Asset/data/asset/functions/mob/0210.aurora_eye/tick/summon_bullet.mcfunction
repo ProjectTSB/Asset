@@ -18,6 +18,9 @@
     execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
     execute store result storage api: Argument.FieldOverride.Stack int 1 run scoreboard players remove $Difficulty Temporary 1
 
+# MobUUID設定
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players remove $Difficulty Temporary 1
+
 # 発射
     data modify storage api: Argument.ID set value 2076
     function api:object/summon
