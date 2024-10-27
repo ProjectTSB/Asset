@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0210.aurora_eye/tick/attack
 
-#> Private
-# @private
-    #declare score_holder $Difficulty
-
 # (難易度値 - 1)のStackのEffectを付与する
 # このmcfの実行者はプレイヤー
 # このmcfの実行条件はノーマル以上なのでStack0にはならない

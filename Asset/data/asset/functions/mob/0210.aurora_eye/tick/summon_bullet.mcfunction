@@ -1,13 +1,30 @@
 #> asset:mob/0210.aurora_eye/tick/summon_bullet
 #
-# オーロラ弾を発射するよ
+# オーロラ弾を発射する
 #
 # @within function asset:mob/0210.aurora_eye/tick/
 
-# 発射
-    data modify storage api: Argument.ID set value 211
-    execute anchored eyes positioned ^ ^ ^-0.25 run function api:mob/summon
-    execute anchored eyes positioned ^ ^ ^-0.25 run tp @e[type=marker,scores={MobID=211},distance=..0.01] ~ ~ ~ facing entity @p[gamemode=!spectator] eyes
+# プレイヤーの方を向く
+    tp @s ~ ~ ~ facing entity @p eyes
 
-# スコアリセット
-    scoreboard players reset @s 5U.Shoot
+# RotationをFieldOvrrideへ
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+
+# ノーマル以上ならデバフを付与するように
+    execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
+
+# (難易度値 - 1)だけ付与するスタックを設定
+    function api:global_vars/get_difficulty
+    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.FieldOverride.Stack int 1 run scoreboard players remove $Difficulty Temporary 1
+
+# 発射
+    data modify storage api: Argument.ID set value 2076
+    function api:object/summon
+
+# リセット
+    scoreboard players reset @e[type=zombie,tag=this,distance=..3,limit=1] 5U.Shoot
+    scoreboard players reset $Difficulty Temporary
+
+# 弾召喚用markerを消滅
+    kill @s
