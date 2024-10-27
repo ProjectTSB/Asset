@@ -14,7 +14,7 @@
 # RotationをFieldOverrideへ
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
 
-# ハード以上なら追加でAddDebuffをtrueへ
+# ハード以上なら追加でAddBlastをtrueへ
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.AddBlast set value true
 
 # ノーマル以上ならDebuffをtrueに
