@@ -1,3 +1,0 @@
-execute if score @s aj.tultaria.animation.dodge_side.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:tultaria/zzzzzzzz/animations/dodge_side/end_loop
-execute if score @s aj.tultaria.animation.dodge_side.loop_mode = $aj.loop_mode.once aj.i run function animated_java:tultaria/animations/dodge_side/stop
-execute if score @s aj.tultaria.animation.dodge_side.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:tultaria/animations/dodge_side/pause

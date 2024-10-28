@@ -1,1 +1,0 @@
-tag @s remove aj.tultaria.animation.attack_melee_4_active

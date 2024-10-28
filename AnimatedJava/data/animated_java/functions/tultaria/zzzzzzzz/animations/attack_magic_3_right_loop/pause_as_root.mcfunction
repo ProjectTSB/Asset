@@ -1,1 +1,0 @@
-tag @s remove aj.tultaria.animation.attack_magic_3_right_loop

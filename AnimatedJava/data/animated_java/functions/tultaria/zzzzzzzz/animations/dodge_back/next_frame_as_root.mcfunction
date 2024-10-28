@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/dodge_back/tick_animation

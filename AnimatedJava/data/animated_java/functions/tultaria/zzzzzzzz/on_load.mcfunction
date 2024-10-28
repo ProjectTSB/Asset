@@ -1,2 +1,0 @@
-scoreboard players set @s aj.tultaria.rig_loaded 1
-execute unless score @s aj.tultaria.export_version = aj.tultaria.export_version aj.i at @s run function animated_java:tultaria/zzzzzzzz/mark_outdated_rig

@@ -1,1 +1,0 @@
-function animated_java:tultaria/zzzzzzzz/animations/neutral_air/tick_animation
