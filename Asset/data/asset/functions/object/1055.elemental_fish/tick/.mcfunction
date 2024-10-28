@@ -22,10 +22,6 @@
 # 頭の向き
     execute store result entity @s Pose.Head[0] float 1 run data get entity @s Rotation[1]
 
-# 接地で上を向く
-    execute unless block ~ ~-1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
-    execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
-
 # 継承
     execute at @s run function asset:object/super.tick
 
@@ -51,11 +47,11 @@
 # 存在時間
     scoreboard players add @s General.Object.Tick 1
 
-# リセット
-    tag @p[tag=1055.OwnerPlayer] remove 1055.OwnerPlayer
-    kill @e[type=marker,tag=1055.MoveMarker]
-
 # 消滅処理
 # 一定Tick経過 または一定以上MoveMarkerから離れると消える
     execute if entity @s[scores={General.Object.Tick=400..}] run function asset:object/1055.elemental_fish/tick/disappear
-    #execute unless entity @e[type=marker,tag=1055.MoveMarker,distance=..30,limit=1] run function asset:object/1055.elemental_fish/tick/disappear
+    execute unless entity @e[type=marker,tag=1055.MoveMarker,distance=..30,limit=1] run function asset:object/1055.elemental_fish/tick/disappear
+
+# リセット
+    tag @p[tag=1055.OwnerPlayer] remove 1055.OwnerPlayer
+    kill @e[type=marker,tag=1055.MoveMarker]
