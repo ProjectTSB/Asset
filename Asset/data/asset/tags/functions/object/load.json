@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/1055.elemental_fish/load",
         "asset:object/0001.abstract_projectile/load"
     ]
 }
