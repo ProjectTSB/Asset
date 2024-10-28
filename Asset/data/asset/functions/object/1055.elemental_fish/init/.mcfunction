@@ -18,7 +18,7 @@
 # 近くの誰かを見る
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
-# 見た目を設定
+# 属性Tag設定
     execute if data storage asset:context this{Element:Fire} run tag @s add 1055.Fire
     execute if data storage asset:context this{Element:Water} run tag @s add 1055.Water
     execute if data storage asset:context this{Element:Thunder} run tag @s add 1055.Thunder
