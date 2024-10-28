@@ -25,8 +25,8 @@
 
 # 見た目を設定
     execute if entity @s[tag=1055.Fire] run data modify entity @s item set value {id:"stick",Count:1b,tag:{CustomModelData:20230}}
-    execute if entity @s[tag=1055.Water] run data modify entity @s item set value {id:"stick",Count:1b,tag:{CustomModelData:20231}}
-    execute if entity @s[tag=1055.Thunder] run data modify entity @s item set value {id:"stick",Count:1b,tag:{CustomModelData:20232}}
+    execute if entity @s[tag=1055.Thunder] run data modify entity @s item set value {id:"stick",Count:1b,tag:{CustomModelData:20231}}
+    execute if entity @s[tag=1055.Water] run data modify entity @s item set value {id:"stick",Count:1b,tag:{CustomModelData:20232}}
 
 # 継承
     function asset:object/super.init

@@ -5,4 +5,4 @@
 # @within asset:object/alias/1055/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],item_display:"head"}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],item_display:"head",teleport_duration:1}
