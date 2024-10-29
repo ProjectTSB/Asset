@@ -18,6 +18,3 @@
 
 # 発動処理
     execute if score @s General.Object.Tick matches 20.. run function asset:object/2004.labyria_thunder/tick/cast
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

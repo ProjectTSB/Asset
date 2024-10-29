@@ -37,6 +37,3 @@
 
 # 爆発処理
     execute if score @s General.Object.Tick matches 62 run function asset:object/2007.nova/tick/cast
-    
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

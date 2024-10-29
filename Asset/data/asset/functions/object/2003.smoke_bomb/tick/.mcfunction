@@ -15,6 +15,3 @@
 
 # 発動
     execute if score @s General.Object.Tick matches 140 run function asset:object/2003.smoke_bomb/tick/cast
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

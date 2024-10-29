@@ -16,6 +16,3 @@
 
 # スコアリセット
     scoreboard players reset $2007.Temp Temporary
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

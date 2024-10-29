@@ -25,6 +25,3 @@
     execute if score @s General.Object.Tick matches 109 run function asset:object/2005.thunder_bomb/tick/thunder_summon/3
     execute if score @s General.Object.Tick matches 112 run function asset:object/2005.thunder_bomb/tick/thunder_summon/4
     execute if score @s General.Object.Tick matches 115 run function asset:object/2005.thunder_bomb/tick/thunder_summon/5
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
