@@ -4,8 +4,5 @@
 #
 # @within asset:object/alias/2031/summon
 
-# FaceIDがなければ自動的に1を入れる
-    execute unless data storage asset:context this.FaceID run data modify storage asset:context this.FaceID set value 1
-
 # 元となるEntityを召喚する
     function asset:object/2031.giant_pumpkin/summon/.m with storage asset:context this
