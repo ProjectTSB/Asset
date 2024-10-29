@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/259/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 属性ダメージ
     # 与えるダメージ
         data modify storage lib: Argument.Damage set value 11.0f

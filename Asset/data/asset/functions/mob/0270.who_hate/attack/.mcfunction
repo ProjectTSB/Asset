@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/270/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     particle flame ~ ~1 ~ 0.8 0.8 0.8 0 20 normal @a
     playsound block.lava.extinguish hostile @a ~ ~ ~ 2 1 0

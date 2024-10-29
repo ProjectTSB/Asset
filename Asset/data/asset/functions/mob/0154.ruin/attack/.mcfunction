@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/154/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 #> Private
 # @private
     #declare score_holder $DamageValue

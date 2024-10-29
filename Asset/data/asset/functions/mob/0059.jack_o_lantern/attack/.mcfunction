@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/59/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 0.8 1.8 0
     execute at @p[tag=Victim,distance=..6] run particle dust 1 0.651 0 1 ~ ~1.2 ~ 0.4 0.4 0.4 0 15 normal @a

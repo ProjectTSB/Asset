@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/1005/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 効果
     effect give @a[tag=Victim,distance=..30] slowness 5 2
 

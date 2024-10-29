@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/181/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 火、水、雷のいずれかの属性で攻撃する
 # ノーマル以下では3つの中かランダム
 # ハード以上では対象の最も耐性が脆弱な属性で攻撃する

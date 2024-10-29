@@ -17,7 +17,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living,tag=Enemy,dx=0] add LandingTarget
 
 # ついでに火を消す おまけで範囲を広くしておく
-    execute if predicate world_manager:area/02.islands run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace fire
+    execute if predicate api:area/is_breakable run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace fire
 
 # 再帰
     execute if entity @s[distance=..12] if block ^ ^ ^0.5 #lib:no_collision positioned ^ ^ ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam_recursive

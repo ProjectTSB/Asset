@@ -3,6 +3,10 @@
 # Mobの攻撃時の処理（雷弄者と似た感じ）
 #
 # @within function asset:mob/alias/53/attack
+
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
 #> tag
 # @within function asset:mob/0053.executioners/attack/
     #declare tag SpreadMarker

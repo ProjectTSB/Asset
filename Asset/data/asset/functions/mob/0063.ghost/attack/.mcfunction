@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/63/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @a[tag=Victim] run particle squid_ink ~ ~ ~ 0.3 0.3 0.3 0.4 100
     execute at @a[tag=Victim] run playsound entity.squid.death hostile @a ~ ~ ~

@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/269/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     playsound minecraft:entity.wither_skeleton.hurt hostile @a ~ ~ ~ 1.0 1
 

@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/152/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # タグを付与する
     tag @s add RunOnce
 

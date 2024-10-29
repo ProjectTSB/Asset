@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/179/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle minecraft:splash ~ ~1 ~ 0.5 0.5 0.5 2 200
     execute at @p[tag=Victim,distance=..6] run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 0.6 1.3 0

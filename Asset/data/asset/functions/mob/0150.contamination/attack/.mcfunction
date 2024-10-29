@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/150/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # ガス召喚
     execute at @p[tag=Victim,distance=..32] run function asset:mob/0150.contamination/gus_summon
 
