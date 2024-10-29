@@ -39,3 +39,6 @@
 
 # ディザスター・ディバイン
     execute if score @s AZ.AnimationNum matches 110 run function asset:mob/0393.labyria_first/ai/animation/11_0_sw_disaster_divine/
+
+# 魔弾7連射
+    execute if score @s AZ.AnimationNum matches 120 run function asset:mob/0393.labyria_first/ai/animation/12_0_ms_magic_bullets/ 

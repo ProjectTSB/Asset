@@ -16,6 +16,3 @@
 
 # ダメージ処理
     execute as @a[tag=2009.Landing,distance=..55] run function asset:object/2009.magic_bullet/tick/cast/damage
-
-# キル
-    kill @s

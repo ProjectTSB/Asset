@@ -1,8 +1,8 @@
-#> asset:object/2005.thunder_bomb/register
+#> asset:object/2010.hexa_laser/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/2005/register
+# @within function asset:object/alias/2010/register
 
 # 継承(オプション)
     # data modify storage asset:object Extends append value 
@@ -11,7 +11,8 @@
     # data modify storage asset:object ExtendsSafe set value 
 # 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value false
+
 # ID (int)
-    data modify storage asset:object ID set value 2005
-# フィールド
+    data modify storage asset:object ID set value 2010
+# フィールド(オプション)
     # data modify storage asset:object Field.myValue set value 
