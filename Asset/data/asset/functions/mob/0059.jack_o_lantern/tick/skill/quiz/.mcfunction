@@ -20,6 +20,7 @@
     execute if entity @s[scores={General.Mob.Tick=0..50}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/first_rotate_sound
 
 # 煽りメッセージ
+    execute if entity @s[scores={General.Mob.Tick=50}] run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 1 1.5
     execute if entity @s[scores={General.Mob.Tick=50}] run summon text_display ~ ~3 ~ {Tags:["1N.TextDisplay"],billboard:"center",shadow:1b,text:'[{"text":"探してみな！"},{"text":"\\n↓","color":"white"}]',background:16711680,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f]}}
     execute if entity @s[scores={General.Mob.Tick=70}] positioned ~ ~3 ~ run kill @e[type=text_display,distance=..0.01,sort=nearest,limit=1]
 
