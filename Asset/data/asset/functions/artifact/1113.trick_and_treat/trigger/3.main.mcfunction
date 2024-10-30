@@ -10,6 +10,6 @@
 # ここから先は神器側の効果の処理を書く
 
 # 巨大カボチャを召喚
-    data modify storage api: Argument.ID set value 2031
+    data modify storage api: Argument.ID set value 1057
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
     execute rotated ~ 0 positioned ^ ^1.5 ^3 run function api:object/summon
