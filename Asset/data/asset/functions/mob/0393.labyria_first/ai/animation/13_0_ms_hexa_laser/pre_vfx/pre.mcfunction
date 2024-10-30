@@ -26,28 +26,28 @@
     execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -9000..9000
 
-# VFX表示（マクロを動かす）
+# VFX表示
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/pre_vfx/vfx
 
 # ランダムな方向を向かせる（Y軸は固定）
     execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -9000..9000
 
-# VFX表示（マクロを動かす）
+# VFX表示
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/pre_vfx/vfx
 
 # ランダムな方向を向かせる（Y軸は固定）
     execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -9000..9000
 
-# VFX表示（マクロを動かす）
+# VFX表示
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/pre_vfx/vfx
 
 # ランダムな方向を向かせる（Y軸は固定）
     execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..36000
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value -9000..9000
 
-# VFX表示（マクロを動かす）
+# VFX表示
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/pre_vfx/vfx
 
 # マーカーを戻してあげる

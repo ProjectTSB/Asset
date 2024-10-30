@@ -4,11 +4,6 @@
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/
 
-## 近くのプレイヤーの方を向く
-#    tag @s add AZ.Temp.This
-#    execute if score @s AZ.AnimationTick matches 1..140 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
-#    tag @s remove AZ.Temp.This
-
 # アニメーション再生
     execute if score @s AZ.AnimationTick matches 1 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/13_0_ms_hexa_laser/play
 
@@ -22,6 +17,9 @@
     execute if score @s AZ.AnimationTick matches 15 at @s run tp @s ^ ^-0.4 ^ ~ ~
     execute if score @s AZ.AnimationTick matches 16 at @s run tp @s ^ ^-0.5 ^ ~ ~
     execute if score @s AZ.AnimationTick matches 17 at @s run tp @s ^ ^-0.5 ^ ~ ~
+
+# サウンド
+    execute if score @s AZ.AnimationTick matches 40 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/sound
 
 # エフェクト
     execute if score @s AZ.AnimationTick matches 40..55 positioned ^-0.5 ^2.5 ^0.4 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/pre_vfx/pre
