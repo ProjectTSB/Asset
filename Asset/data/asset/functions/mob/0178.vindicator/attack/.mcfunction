@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/178/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle dust 0.867 0.667 0.161 1 ~ ~2 ~ 0 2.5 0 0 100
     execute at @p[tag=Victim,distance=..6] run particle minecraft:explosion ~ ~ ~ 0.7 0.1 0.7 0 10
