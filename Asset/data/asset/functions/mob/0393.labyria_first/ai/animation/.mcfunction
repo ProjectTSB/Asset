@@ -45,3 +45,6 @@
 
 # ヘキサレーザー
     execute if score @s AZ.AnimationNum matches 130 run function asset:mob/0393.labyria_first/ai/animation/13_0_ms_hexa_laser/
+
+# 雷槍
+    execute if score @s AZ.AnimationNum matches 140 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/

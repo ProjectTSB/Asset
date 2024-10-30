@@ -17,6 +17,11 @@
 # @within function asset:mob/0393.labyria_first/**
     #declare tag 2007.NovaCore
     #declare tag 2008.ShotReadyManual
+    #declare tag 2012.NormalElect
+    #declare tag 2012.HardElect
+    #declare tag 2012.NormalElectCast
+    #declare tag 2012.HardElectCast
+    #declare tag 2012.Kill
 
 #> val
 # @within function asset:mob/0393.labyria_first/**

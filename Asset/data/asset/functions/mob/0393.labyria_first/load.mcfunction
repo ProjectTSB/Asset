@@ -11,6 +11,7 @@
     scoreboard objectives add AZ.ProjectileTick dummy
     scoreboard objectives add AZ.UUID dummy
     scoreboard objectives add AZ.FalterCount dummy
+    scoreboard objectives add AZ.ThunderSpear dummy
 
 # AnimationTick
     # Animationがどれくらいの時間経過したかを記録するスコア
