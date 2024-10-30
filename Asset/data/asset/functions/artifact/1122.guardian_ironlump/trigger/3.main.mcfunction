@@ -8,6 +8,10 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
+
+# リセット処理
+    function asset:artifact/1122.guardian_ironlump/trigger/removal
+
     attribute @s minecraft:generic.armor modifier add 1-0-1-0-46200000007 "1122" 3 add
     attribute @s minecraft:generic.knockback_resistance modifier add 1-0-1-0-46200000007 "1122" 99 add
 
