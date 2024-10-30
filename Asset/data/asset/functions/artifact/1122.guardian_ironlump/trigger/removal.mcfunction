@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#    asset:artifact/1122.guardian_ironlump/trigger/main
+#    asset:artifact/1122.guardian_ironlump/trigger/3.main
 #    asset:artifact/1122.guardian_ironlump/trigger/dis_equip/main
 
 # attribute削除
