@@ -13,6 +13,9 @@
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value 2031
+    data modify storage asset:object ID set value 2035
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
+
+# FaceIDが指定されてなければ自動的に1を設定
+    data modify storage asset:object Field.FaceID set value 1

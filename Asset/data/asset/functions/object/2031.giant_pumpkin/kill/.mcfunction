@@ -36,6 +36,3 @@
 
 # キル
     kill @s
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

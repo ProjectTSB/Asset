@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2031.giant_pumpkin/**
-   scoreboard objectives add 2031.SpinCount dummy
+    scoreboard objectives add 2031.SpinCount dummy

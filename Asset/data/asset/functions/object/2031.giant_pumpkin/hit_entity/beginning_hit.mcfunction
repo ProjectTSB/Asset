@@ -1,6 +1,6 @@
 #> asset:object/2031.giant_pumpkin/hit_entity/beginning_hit
 #
-#
+# 回転し始めのヒット判定
 #
 # @within function asset:object/2031.giant_pumpkin/hit_entity/
 
