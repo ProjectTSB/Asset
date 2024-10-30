@@ -4,9 +4,6 @@
 #
 # @within function asset:object/2010.hexa_laser/tick/
 
-# 演出
-    playsound item.spyglass.use hostile @a ~ ~ ~ 2 1.4
-
 # ループ処理
     function asset:object/2010.hexa_laser/tick/beam/loop
 

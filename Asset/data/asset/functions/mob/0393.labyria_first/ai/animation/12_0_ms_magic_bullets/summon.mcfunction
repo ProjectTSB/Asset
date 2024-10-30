@@ -1,6 +1,6 @@
 #> asset:mob/0393.labyria_first/ai/animation/12_0_ms_magic_bullets/summon
 #
-# 
+# 魔弾魔法陣召喚
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/12_0_ms_magic_bullets/
 

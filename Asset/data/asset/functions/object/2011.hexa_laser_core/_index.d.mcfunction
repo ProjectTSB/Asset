@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:object/2011.hexa_laser_core/**
-    #declare
+    #declare tag 2010.Laser
+    #declare score_holder $2011.Temp
