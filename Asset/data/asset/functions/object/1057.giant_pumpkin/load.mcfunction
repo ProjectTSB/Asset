@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/1057.giant_pumpkin/**
-    scoreboard objectives add 
+    scoreboard objectives add 1057.OwnerID dummy
