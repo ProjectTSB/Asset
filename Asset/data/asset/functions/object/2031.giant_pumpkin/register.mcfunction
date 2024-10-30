@@ -18,6 +18,6 @@
     # data modify storage asset:object Field.myValue set value
 
 # FaceIDが指定されてなければ自動的に1を設定
-    execute unless data storage asset:context this.FaceID run data modify storage asset:object Field.FaceID set value 1
+    data modify storage asset:object Field.FaceID set value 1
 
 tellraw @a {"storage":"asset:object","nbt":"Field"}
