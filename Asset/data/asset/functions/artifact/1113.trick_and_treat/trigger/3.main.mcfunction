@@ -10,7 +10,6 @@
 # ここから先は神器側の効果の処理を書く
 
 # 巨大カボチャを召喚
-    data modify storage api: Argument.ID set value 1057
-    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute rotated ~ 0 positioned ^ ^1.5 ^3 run function api:object/summon
+    execute rotated ~ 0 positioned ^ ^1.5 ^3 run function asset:artifact/1113.trick_and_treat/trigger/summon_pumpkin
+    execute rotated ~ 0 positioned ^4.5 ^1.5 ^3 run function asset:artifact/1113.trick_and_treat/trigger/summon_pumpkin
+    execute rotated ~ 0 positioned ^-4.5 ^1.5 ^3 run function asset:artifact/1113.trick_and_treat/trigger/summon_pumpkin
