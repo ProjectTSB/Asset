@@ -12,4 +12,5 @@
 # 巨大カボチャを召喚
     data modify storage api: Argument.ID set value 1057
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute rotated ~ 0 positioned ^ ^1.5 ^3 run function api:object/summon
