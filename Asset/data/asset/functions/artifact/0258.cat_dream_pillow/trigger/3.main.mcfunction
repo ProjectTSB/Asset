@@ -14,6 +14,7 @@
     #declare score_holder $Random
     #declare score_holder $MaxHP30Per
     #declare score_holder $Barrier
+    #declare tag BarrierTarget
 
 # 演出
     particle dust 1000000000 -0.3 -0.2 1 ~ ~1.2 ~ 0.8 0.4 0.8 0 50
@@ -40,11 +41,16 @@
 # $Barrierの値の0.1倍をFieldOverrideへ突っ込む
     execute store result storage api: Argument.FieldOverride.Barrier double 0.1 run scoreboard players get $Barrier Temporary
 
-# エフェクトを付与
+# 自身と回復者にTagを付与
+    tag @s add BarrierTarget
+    tag @a[tag=Receiver,distance=..30] add BarrierTarget
+
+# 自身と回復対象へエフェクトを付与
     data modify storage api: Argument.ID set value 267
-    function api:entity/mob/effect/give
+    execute as @a[tag=BarrierTarget] run function api:entity/mob/effect/give
 
 # リセット
     scoreboard players reset $Random Temporary
     scoreboard players reset $MaxHP30Per Temporary
     scoreboard players reset $Barrier Temporary
+    tag @a[tag=BarrierTarget,distance=..30] remove BarrierTarget
