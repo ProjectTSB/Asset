@@ -14,7 +14,7 @@
     playsound minecraft:block.sculk_shrieker.shriek player @a ~ ~ ~ 0.4 1.6
 
 # MP回復
-    data modify storage api: Argument.Fluctuation set value 80
+    data modify storage api: Argument.Fluctuation set value 30
     function api:mp/fluctuation
 
 # 低速落下と透明化
