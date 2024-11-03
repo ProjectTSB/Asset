@@ -4,6 +4,11 @@
 #
 # @within asset:object/alias/1057/init
 
+# 演出
+    particle explosion ~ ~ ~ 0 0 0 0 1 normal @a
+    particle cloud ~ ~ ~ 0 0 0 0.3 30 normal @a
+    playsound minecraft:entity.item.pickup neutral @a ~ ~ ~ 0.7 0.8
+
 # UserIDを取得
     execute store result score @s 1057.OwnerID run data get storage asset:context this.UserID
 
