@@ -6,3 +6,4 @@
     #declare tag 2031.BeginningSpin
     #declare tag 2031.HighSpeedSpinning
     #declare tag 2031.Interval
+    #declare score_holder $HitCount
