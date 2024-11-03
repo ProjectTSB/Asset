@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:lexiel/zzzzzzzz/animations/rod/tree/leaf_7_as_bone

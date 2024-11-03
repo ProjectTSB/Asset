@@ -1,2 +1,0 @@
-execute if entity @s[tag=aj.lexiel.locator_origin.locator_right_hand] at @s on origin run tp @s ^-0.42667 ^0.61403 ^0.26508 ~-6.76788 ~-9.31612
-execute if entity @s[tag=aj.lexiel.locator_origin.locator_left_hand] at @s on origin run tp @s ^0.4249 ^0.66092 ^0.1903 ~4.08664 ~-4.88222

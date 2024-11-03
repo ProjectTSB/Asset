@@ -5,12 +5,10 @@ execute if entity @s[tag=aj.lexiel.bone.bust] run data modify entity @s item.tag
 execute if entity @s[tag=aj.lexiel.bone.left_wing] run data modify entity @s item.tag.CustomModelData set value 36
 execute if entity @s[tag=aj.lexiel.bone.right_wing] run data modify entity @s item.tag.CustomModelData set value 37
 execute if entity @s[tag=aj.lexiel.bone.body] run data modify entity @s item.tag.CustomModelData set value 38
-
 execute if entity @s[tag=aj.lexiel.bone.sword] run data modify entity @s item.tag.CustomModelData set value 39
 execute if entity @s[tag=aj.lexiel.bone.rod] run data modify entity @s item.tag.CustomModelData set value 40
 execute if entity @s[tag=aj.lexiel.bone.right_hand] run data modify entity @s item.tag.CustomModelData set value 41
 execute if entity @s[tag=aj.lexiel.bone.right_arm] run data modify entity @s item.tag.CustomModelData set value 42
-
 execute if entity @s[tag=aj.lexiel.bone.left_hand] run data modify entity @s item.tag.CustomModelData set value 712
 execute if entity @s[tag=aj.lexiel.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 713
 execute if entity @s[tag=aj.lexiel.bone.skirt_right] run data modify entity @s item.tag.CustomModelData set value 714

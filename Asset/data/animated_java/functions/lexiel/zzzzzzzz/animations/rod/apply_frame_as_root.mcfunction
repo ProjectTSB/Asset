@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..84 run function animated_java:lexiel/zzzzzzzz/animations/rod/tree/branch_0_84
+execute if score @s aj.anim_time matches 0 run function animated_java:lexiel/zzzzzzzz/animations/rod/tree/leaf_0
