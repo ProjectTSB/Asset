@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:mob/0123.lexiel_v3/**
-    #declare
+    #declare tag 3F.AJ
+    
