@@ -1,8 +1,8 @@
-#> asset:effect/0269.honey_regeneration/register
+#> asset:effect/0270.honey_regeneration/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0269.honey_regeneration/_/register
+# @within function asset:effect/0270.honey_regeneration/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

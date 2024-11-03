@@ -1,8 +1,8 @@
-#> asset:effect/0270.pain_and_sweet/register
+#> asset:effect/0269.pain_and_sweet/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0270.pain_and_sweet/_/register
+# @within function asset:effect/0269.pain_and_sweet/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

@@ -1,8 +1,8 @@
-#> asset:effect/0269.honey_regeneration/tick/
+#> asset:effect/0270.honey_regeneration/tick/
 #
 # Effectのtick処理
 #
-# @within function asset:effect/0269.honey_regeneration/_/tick
+# @within function asset:effect/0270.honey_regeneration/_/tick
 
 #> Private
 # @private
@@ -16,5 +16,5 @@
 
 # 20tick間隔で回復
     scoreboard players operation $Interval Temporary %= $20 Const
-    execute if score $Interval Temporary matches 0 run function asset:effect/0269.honey_regeneration/tick/heal
+    execute if score $Interval Temporary matches 0 run function asset:effect/0270.honey_regeneration/tick/heal
     scoreboard players reset $Interval Temporary
