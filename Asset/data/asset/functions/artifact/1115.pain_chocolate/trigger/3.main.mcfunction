@@ -21,7 +21,6 @@
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは虫歯が急激に進行した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは歯が砕け散った","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはチョコが突き刺さった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
-
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
