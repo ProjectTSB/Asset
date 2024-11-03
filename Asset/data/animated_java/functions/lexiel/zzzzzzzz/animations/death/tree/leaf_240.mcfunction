@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:lexiel/zzzzzzzz/animations/death/tree/leaf_240_as_bone

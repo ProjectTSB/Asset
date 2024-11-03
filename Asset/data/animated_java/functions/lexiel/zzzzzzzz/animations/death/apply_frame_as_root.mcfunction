@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..352 run function animated_java:lexiel/zzzzzzzz/animations/death/tree/branch_0_352

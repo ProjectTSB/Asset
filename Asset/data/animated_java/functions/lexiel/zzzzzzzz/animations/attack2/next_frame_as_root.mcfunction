@@ -1,0 +1,1 @@
+function animated_java:lexiel/zzzzzzzz/animations/attack2/tick_animation

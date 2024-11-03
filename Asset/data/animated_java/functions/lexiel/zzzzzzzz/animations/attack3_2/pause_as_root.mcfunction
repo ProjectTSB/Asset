@@ -1,0 +1,1 @@
+tag @s remove aj.lexiel.animation.attack3_2

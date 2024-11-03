@@ -1,0 +1,3 @@
+execute if score @s aj.lexiel.animation.neutral.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:lexiel/zzzzzzzz/animations/neutral/end_loop
+execute if score @s aj.lexiel.animation.neutral.loop_mode = $aj.loop_mode.once aj.i run function animated_java:lexiel/animations/neutral/stop
+execute if score @s aj.lexiel.animation.neutral.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:lexiel/animations/neutral/pause
