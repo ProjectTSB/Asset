@@ -1,13 +1,13 @@
-#> asset:effect/0269.pain_and_sweet/register
+#> asset:effect/0270.pain_and_sweet/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0269.pain_and_sweet/_/register
+# @within function asset:effect/0270.pain_and_sweet/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 269
+    data modify storage asset:effect ID set value 270
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"痛い！甘い！","color":"BF6A4B"}'
 # 説明文 (TextComponentString[])

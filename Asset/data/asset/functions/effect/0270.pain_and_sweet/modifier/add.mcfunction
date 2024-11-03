@@ -1,8 +1,8 @@
-#> asset:effect/0269.pain_and_sweet/modifier/add
+#> asset:effect/0270.pain_and_sweet/modifier/add
 #
 # 補正を付与する
 #
-# @within function asset:effect/0269.pain_and_sweet/given/
+# @within function asset:effect/0270.pain_and_sweet/given/
 
 # MP回復+5%
     data modify storage api: Argument.UUID set value [I;1,3,269,0]
