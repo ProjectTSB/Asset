@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"トリック・","color":"#FFAA00"},{"text":"アンド","color":"#D900FF"},{"text":"・トリート","color":"#FFAA00"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"前方に巨大カボチャを3つ召喚する。","color":"white"}','{"text":"巨大カボチャは敵を追尾し","color":"white"}','{"text":"ヒット時に確率でお菓子神器を得る。","color":"white"}','{"text":"「イタズラしてお菓子も貰うぞ！」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"巨大カボチャを3つ召喚する。","color":"white"}','{"text":"巨大カボチャは敵を追尾し","color":"white"}','{"text":"ヒット時に確率でお菓子神器を得る。","color":"white"}','{"text":"「イタズラしてお菓子も貰うぞ！」","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [15,120]
+    data modify storage asset:artifact AttackInfo.Damage set value ["15 / 280"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

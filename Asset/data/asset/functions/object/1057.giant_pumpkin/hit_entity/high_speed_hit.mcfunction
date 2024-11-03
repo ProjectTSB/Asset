@@ -16,7 +16,7 @@
     execute as @p[tag=1057.Owner] run function asset:object/1057.giant_pumpkin/hit_entity/give_sweets/recursive
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 120f
+    data modify storage api: Argument.Damage set value 280f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @p[tag=1057.Owner] run function api:damage/modifier
