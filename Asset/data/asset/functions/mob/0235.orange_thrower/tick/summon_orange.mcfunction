@@ -1,6 +1,6 @@
 #> asset:mob/0235.orange_thrower/tick/summon_orange
 #
-# みかんをしょうかんするよ
+# みかんを召喚する
 #
 # @within function asset:mob/0235.orange_thrower/tick/
 
