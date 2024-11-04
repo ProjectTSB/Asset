@@ -12,7 +12,7 @@
     scoreboard players operation $Temp Temporary = @s 6J.Tick
     scoreboard players operation $Temp Temporary %= $10 Const
     execute if score $Temp Temporary matches 0 run data modify storage api: Argument.ID set value 2079
-    execute if score $Temp Temporary matches 0 at @p[gamemode=!spectator,distance=..10] positioned ~ ~2.5 ~ run function api:object/summon
+    execute if score $Temp Temporary matches 0 at @p[distance=..10] positioned ~ ~2.5 ~ run function api:object/summon
     scoreboard players reset $Temp Temporary
 
 # スコア
