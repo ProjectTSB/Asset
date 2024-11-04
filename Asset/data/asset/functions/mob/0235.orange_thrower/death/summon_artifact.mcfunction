@@ -1,4 +1,4 @@
-#> asset:mob/0235.orange_thrower/death/3.summon_artifact
+#> asset:mob/0235.orange_thrower/death/summon_artifact
 #
 # 神器を召喚
 #
