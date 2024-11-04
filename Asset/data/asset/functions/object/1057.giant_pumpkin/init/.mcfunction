@@ -14,7 +14,7 @@
 
 # StartDelayの値を-1倍して入れる
 # 未設定でも0が自動的に入るのでそのまま突っ込む
-    execute store result score @s General.Object.Tick run data get storage asset:context this.StartDelay
+    execute store result score @s General.Object.Tick run data get storage asset:context this.StartDelay -1
 
 # 継承
     function asset:object/super.init
