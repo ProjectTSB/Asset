@@ -17,4 +17,4 @@
     execute if entity @s[scores={General.Mob.Tick=0}] unless entity @p[distance=..10] run scoreboard players set @s General.Mob.Tick -60
 
 # みかん召喚
-    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0235.orange_thrower/tick/summon_orange
+    execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0235.orange_thrower/tick/attack
