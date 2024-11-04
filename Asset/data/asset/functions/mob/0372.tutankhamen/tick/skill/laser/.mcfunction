@@ -21,10 +21,10 @@
     #execute if entity @s[scores={General.Mob.Tick=20..100}] run data modify entity @e[type=item_display,tag=AC.LaserDisplay,distance=..30,limit=1] Rotation set from entity @s Rotation
 
 # displayを消す
-    execute if entity @s[scores={General.Mob.Tick=100}] run kill @e[type=item_display,tag=AC.LaserDisplay,distance=..30]
+    execute if entity @s[scores={General.Mob.Tick=50}] run kill @e[type=item_display,tag=AC.LaserDisplay,distance=..30]
 
 # レーザー発射
-    execute if entity @s[scores={General.Mob.Tick=100}] at @s anchored eyes positioned ^-0.35 ^-0.5 ^1 run function asset:mob/0372.tutankhamen/tick/skill/laser/shoot
+    execute if entity @s[scores={General.Mob.Tick=50}] at @s anchored eyes positioned ^-0.35 ^-0.5 ^1 run function asset:mob/0372.tutankhamen/tick/skill/laser/shoot
 
 # リセット
-    execute if entity @s[scores={General.Mob.Tick=100..}] run function asset:mob/0372.tutankhamen/tick/skill/reset
+    execute if entity @s[scores={General.Mob.Tick=50..}] run function asset:mob/0372.tutankhamen/tick/skill/reset

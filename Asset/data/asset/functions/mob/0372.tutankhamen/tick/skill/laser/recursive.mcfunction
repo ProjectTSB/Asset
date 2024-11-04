@@ -16,6 +16,7 @@
     scoreboard players operation $Interval Temporary = $Recursive Temporary
     scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1
+    execute if score $Interval Temporary matches 0 run function asset:mob/0372.tutankhamen/tick/skill/laser/vfx
     scoreboard players reset $Interval Temporary
 
 # 再帰スコア
