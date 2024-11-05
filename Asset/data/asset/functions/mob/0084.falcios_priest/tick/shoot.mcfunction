@@ -16,9 +16,8 @@
     execute if entity @s[scores={2C.Tick=7..8}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function asset:mob/0084.falcios_priest/tick/vfx/3
     execute if entity @s[scores={2C.Tick=1..9}] run playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.25 0.5 0
 
-# 召喚
-    execute if entity @s[scores={2C.Tick=10}] run data modify storage api: Argument.ID set value 85
-    execute if entity @s[scores={2C.Tick=10}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function api:mob/summon
+# 発射
+    execute if entity @s[scores={2C.Tick=10}] anchored eyes facing entity @p eyes positioned ^ ^ ^0.4 summon marker run function asset:mob/0084.falcios_priest/tick/shoot2
 
 # リセット
     execute if entity @s[scores={2C.Tick=25..}] run function asset:mob/0084.falcios_priest/tick/reset

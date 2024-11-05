@@ -6,7 +6,7 @@
 
 # フィールドのデータからスコアを設定
     data modify storage asset:context this.Speed set value 1
-    data modify storage asset:context this.Range set value 200
+    data modify storage asset:context this.Range set value 40
     data modify storage asset:context this.MovePerStep set value 0.8
 
 # スーパーメソッド呼び出し

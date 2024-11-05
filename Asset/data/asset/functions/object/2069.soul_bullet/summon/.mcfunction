@@ -5,4 +5,6 @@
 # @within asset:object/alias/2069/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    tellraw @a {"storage":"asset:context","nbt":"this"}
+
+    function asset:object/2069.soul_bullet/summon/.m with storage asset:context this
