@@ -14,6 +14,9 @@
 # ヒットTagを付与
     tag @s add 2068.1stHit
 
+# スコアの値を変更
+    scoreboard players set @s General.Object.Tick 20
+
 # Speedを0へ
     data modify storage asset:context this.MovePerStep set value 0
 
