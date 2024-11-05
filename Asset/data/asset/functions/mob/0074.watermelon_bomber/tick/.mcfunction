@@ -14,7 +14,7 @@
     execute if entity @s[scores={22.Tick=0}] run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 1 1
 
 # スイカ投げ
-    execute if entity @s[scores={22.Tick=15..}] if entity @p[distance=..25] run function asset:mob/0074.watermelon_bomber/tick/throw
+    execute if entity @s[scores={22.Tick=15..}] if entity @p[distance=..25] anchored eyes positioned ^-0.6 ^-0.35 ^ summon marker run function asset:mob/0074.watermelon_bomber/tick/throw
 
 # リセット
     execute if entity @s[scores={22.Tick=15..}] run function asset:mob/0074.watermelon_bomber/tick/reset

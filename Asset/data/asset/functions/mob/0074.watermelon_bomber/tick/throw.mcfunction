@@ -1,12 +1,18 @@
 #> asset:mob/0074.watermelon_bomber/tick/throw
 #
-# プレイヤーの方向へ投げる
+# スイカをプレイヤーの方向へ投げる
 #
 # @within function asset:mob/0074.watermelon_bomber/tick/
 
-# スイカ召喚を1000ブロック上で実行
-    data modify storage api: Argument.ID set value 75
-    execute anchored eyes positioned ^-0.6 ^-0.35 ^ positioned ~ ~1000 ~ run function api:mob/summon
+# プレイヤーの方を向く
+# ちょっと上に向けておく
+    execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~-5
 
-# プレイヤーの方へ投げる
-    execute positioned ~ ~1000 ~ as @e[type=block_display,scores={MobID=75},distance=..5,limit=1] at @s positioned ~ ~-1000 ~ facing entity @p eyes run tp @s ~ ~ ~ ~ ~-2
+# スイカ召喚
+    data modify storage api: Argument.ID set value 2067
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..3,limit=1] MobUUID
+    function api:object/summon
+
+# 召喚用markerの消滅
+    kill @s
