@@ -7,5 +7,5 @@
 #   asset:mob/0084.falcios_priest/tick/heal
 
 # リセット
-    scoreboard players set @s 2C.Tick -80
+    scoreboard players set @s General.Mob.Tick -80
     tag @s[tag=2C.Attack] remove 2C.Attack
