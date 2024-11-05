@@ -1,4 +1,4 @@
-#> asset:mob/0084.falcios_priest/tick/2.shoot
+#> asset:mob/0084.falcios_priest/tick/shoot
 #
 # 魔法を発射する
 #
@@ -8,7 +8,7 @@
     effect give @s slowness 1 2 true
 
 # ハード以上なら回復も実行
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={2C.Tick=0}] run function asset:mob/0084.falcios_priest/tick/3.heal
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={2C.Tick=0}] run function asset:mob/0084.falcios_priest/tick/heal
 
 # 予備動作
     execute if entity @s[scores={2C.Tick=1..2}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.2 run function asset:mob/0084.falcios_priest/tick/vfx/1
@@ -21,4 +21,4 @@
     execute if entity @s[scores={2C.Tick=10}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function api:mob/summon
 
 # リセット
-    execute if entity @s[scores={2C.Tick=25..}] run function asset:mob/0084.falcios_priest/tick/4.reset
+    execute if entity @s[scores={2C.Tick=25..}] run function asset:mob/0084.falcios_priest/tick/reset

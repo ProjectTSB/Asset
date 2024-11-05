@@ -13,7 +13,7 @@
     execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={2C.Tick=0}] run tag @s add 2C.Attack
 
 # 魔法を発射
-    execute if entity @s[tag=2C.Attack,scores={2C.Tick=0..}] run function asset:mob/0084.falcios_priest/tick/2.shoot
+    execute if entity @s[tag=2C.Attack,scores={2C.Tick=0..}] run function asset:mob/0084.falcios_priest/tick/shoot
 
 # 回復
-    execute if entity @s[tag=!2C.Attack,scores={2C.Tick=0..}] run function asset:mob/0084.falcios_priest/tick/3.heal
+    execute if entity @s[tag=!2C.Attack,scores={2C.Tick=0..}] run function asset:mob/0084.falcios_priest/tick/heal

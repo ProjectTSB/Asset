@@ -1,10 +1,10 @@
-#> asset:mob/0084.falcios_priest/tick/4.reset
+#> asset:mob/0084.falcios_priest/tick/reset
 #
 # リセット
 #
 # @within function
-#   asset:mob/0084.falcios_priest/tick/2.shoot
-#   asset:mob/0084.falcios_priest/tick/3.heal
+#   asset:mob/0084.falcios_priest/tick/shoot
+#   asset:mob/0084.falcios_priest/tick/heal
 
 # リセット
     scoreboard players set @s 2C.Tick -80
