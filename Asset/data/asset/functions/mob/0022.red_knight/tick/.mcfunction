@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/alias/General.Mob.Tick
+# @within function asset:mob/alias/22/tick
 
 
 # スコアを増やす
