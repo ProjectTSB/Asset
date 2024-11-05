@@ -20,7 +20,5 @@
     execute if entity @s[tag=2068.1stHit] if block ~ ~-0.2 ~ #lib:no_collision run tp @s ~ ~-0.2 ~
 
 # 2段目爆発
-    execute if entity @s[scores={General.Object.Tick=35..}] run function asset:object/2068.golden_watermelon/tick/2nd_explode
+    execute if entity @s[scores={General.Object.Tick=30..}] run function asset:object/2068.golden_watermelon/tick/2nd_explode
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
