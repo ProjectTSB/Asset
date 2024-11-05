@@ -1,4 +1,4 @@
-#> asset:mob/0074.watermelon_bomber/tick/6.reset
+#> asset:mob/0074.watermelon_bomber/tick/reset
 #
 # リセット処理
 #
