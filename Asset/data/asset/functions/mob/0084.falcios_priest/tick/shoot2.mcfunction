@@ -10,8 +10,7 @@
 # 発射
     data modify storage api: Argument.ID set value 2069
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    tellraw @a {"storage":"api:","nbt":"Argument"}
-    execute store result storage api: Argument.FieldOverride int 1 run scoreboard players get @e[type=wither_skeleton,tag=this,distance=..3,limit=1] MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=wither_skeleton,tag=this,distance=..3,limit=1] MobUUID
     function api:object/summon
 
 # 消滅
