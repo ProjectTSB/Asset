@@ -5,9 +5,9 @@
 # @within asset:object/alias/2069/init
 
 # フィールドのデータからスコアを設定
-    data modify storage asset:context this.Speed set value 1
-    data modify storage asset:context this.Range set value 40
-    data modify storage asset:context this.MovePerStep set value 0.8
+    data modify storage asset:context this.Speed set value 2
+    data modify storage asset:context this.Range set value 80
+    data modify storage asset:context this.MovePerStep set value 0.4
 
 # スーパーメソッド呼び出し
     function asset:object/super.init

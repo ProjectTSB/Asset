@@ -8,12 +8,6 @@
 # @private
     #declare score_holder $Temp
 
-    particle soul ~ ~ ~ 0 0 0 0 1 normal @a
-    #particle soul ^ ^ ^0.2 0 0 0 0 1 normal @a
-    particle soul ^ ^ ^0.4 0 0 0 0 1 normal @a
-    #particle soul ^ ^ ^0.6 0 0 0 0 1 normal @a
-    particle soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0 2 normal @a
-
 # 定期的に追加で演出
     scoreboard players operation $Temp Temporary = @s General.Object.Tick
     scoreboard players operation $Temp Temporary %= $5 Const
