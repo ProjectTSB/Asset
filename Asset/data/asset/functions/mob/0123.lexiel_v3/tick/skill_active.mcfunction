@@ -1,5 +1,10 @@
 #> asset:mob/0123.lexiel_v3/tick/skill_active
 #
-# 
+#
 #
 # @within function asset:mob/0123.lexiel_v3/tick/
+
+# スキル郡
+    execute if entity @s[tag=3F.SkillSword1] run function asset:mob/0123.lexiel_v3/tick/01.skill_sword/main
+    execute if entity @s[tag=3F.SkillSword2] run function asset:mob/0123.lexiel_v3/tick/02.skill_sword2/main
+    execute if entity @s[tag=3F.SkillSword3] run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/main

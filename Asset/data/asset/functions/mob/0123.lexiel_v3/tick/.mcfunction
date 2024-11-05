@@ -8,7 +8,7 @@
     scoreboard players add @s 3F.Tick 1
 
 # 最寄りのAJにタグ付け
-
+    tag @e[type=item_display,tag=3F.AJ,distance=..0.01,sort=nearest,limit=1] add 3F.AJLink
 
 # その後発動するスキル
 # プレイヤーが周囲にいたらスキル選択
@@ -22,7 +22,7 @@
 
 
 # リセット処理
-    function asset:mob/0123.lexiel_v3/tick/reset
+    execute at @s run function asset:mob/0123.lexiel_v3/tick/always_reset
 
 # もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
 #    execute at @s unless entity @e[type=armor_stand,tag=3F.ArmorStand,distance=..0.01] run function asset:mob/1004.tultaria/tick/armorstand_respawn
