@@ -7,9 +7,6 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 1段目爆発までは少しずつ下を向く
-    execute if entity @s[tag=!2068.1stHit] run tp @s ~ ~ ~ ~ ~1.5
-
 # 20Tick経過で1段目爆発
     execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/call.m {method:1st_explode}
 
