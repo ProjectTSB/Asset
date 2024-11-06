@@ -5,11 +5,11 @@
 # @within function asset:object/2068.golden_watermelon/tick/
 
 # 演出
-    playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1.6 1.7 0
-    playsound entity.generic.explode hostile @a ~ ~ ~ 1.3 1 0
+    playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1.0 1.7 0
+    playsound entity.generic.explode hostile @a ~ ~ ~ 0.8 1 0
     particle dust 1 0.941 0.141 2 ~ ~5 ~ 0.1 3 0.1 0 60 normal @a
     particle large_smoke ~ ~ ~ 0 0 0 0.2 60 normal @a
-    execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:object/2068.golden_watermelon/tick/vfx
+    execute rotated ~ 0 run function asset:object/2068.golden_watermelon/tick/vfx
 
 # 金のスイカスライスを召喚
     summon item ~ ~ ~ {Age:5940s,PickupDelay:5s,Item:{id:"minecraft:glistering_melon_slice",Count:4b}}
