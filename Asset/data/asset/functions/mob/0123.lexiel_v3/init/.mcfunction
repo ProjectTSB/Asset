@@ -9,6 +9,7 @@
 
 # 自身のモデルに待機モーションを再生させる
     execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run function animated_java:lexiel/animations/spawn/play
-
+# tpさせる
+    execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run 
 # スコア設定
     scoreboard players set @s 3F.Tick -100

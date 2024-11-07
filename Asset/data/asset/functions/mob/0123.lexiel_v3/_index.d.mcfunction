@@ -14,4 +14,6 @@
     #declare tag 3F.SkillMagic2
     #declare tag 3F.SkillMagic3
 
+    #declare tag 3F.SkillSwordDamageThis
+
     #declare score_holder $Random
