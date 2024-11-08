@@ -519,8 +519,6 @@
     #declare predicate lib:weather/is_raining                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/weather/is_raining.json#L1
     #declare predicate lib:weather/is_sunny                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/weather/is_sunny.json#L1
     #declare predicate lib:weather/is_thundering                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/weather/is_thundering.json#L1
-    #declare predicate player_manager:god/flora/has_high_lvl_regeneration             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/predicates/god/flora/has_high_lvl_regeneration.json#L1
-    #declare predicate player_manager:god/nyaptov/has_high_lvl_slow_falling           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/predicates/god/nyaptov/has_high_lvl_slow_falling.json#L1
     #declare predicate player_manager:is_believe/flora                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/predicates/is_believe/flora.json#L1
     #declare predicate player_manager:is_believe/null                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/predicates/is_believe/null.json#L1
     #declare predicate player_manager:is_believe/nyaptov                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/predicates/is_believe/nyaptov.json#L1
