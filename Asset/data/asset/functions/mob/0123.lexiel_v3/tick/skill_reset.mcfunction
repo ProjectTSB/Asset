@@ -5,6 +5,9 @@
 # @within function asset:mob/0123.lexiel_v3/tick/**/**
 
     execute as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/attack1/stop
+    execute as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/attack2/stop
+    execute as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/attack3_1/stop
+    execute as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/attack3_2/stop
 # CDいれる
     scoreboard players set @s 3F.Tick -30
 

@@ -6,19 +6,13 @@
 
 # 斬撃エフェクト
     data modify storage api: Argument.ID set value 2001
-    execute anchored eyes positioned ^ ^-1 ^ positioned ^ ^ ^2 run function api:object/summon
+    execute anchored eyes positioned ^ ^-0.5 ^ positioned ^ ^ ^2 rotated ~ 0 run function api:object/summon
 
 # 前方にいるプレイヤーにタグをつける
-    execute positioned ^ ^ ^1.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 3F.SkillSwordDamageThis
-    execute positioned ^ ^ ^3 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 3F.SkillSwordDamageThis
-    execute positioned ^ ^ ^1.5 run say @a[distance=..1.5]
-    execute positioned ^ ^ ^3 run say @a[distance=..1.5]
+    execute positioned ^ ^ ^2 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 3F.SkillSwordDamageThis
+    execute positioned ^ ^ ^2 run say @a[distance=..3]
 
 # 演出
-    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1 0 0 0 1 2 normal
-    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^2 0 0 0 1 2 normal
-    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^3 0 0 0 1 2 normal
-    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^4 0 0 0 1 2 normal
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
 # 引数の設定
