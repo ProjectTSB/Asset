@@ -16,9 +16,9 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 前方にいたプレイヤーにダメージ
-    execute as @a[tag=3F.SkillSwordDamageThis] run function lib:damage/
+    execute as @a[tag=3F.SkillSwordDamageThis] run function api:damage/
 
 # もし攻撃当たってたら終わる
     execute if entity @a[tag=3F.SkillSwordDamageThis,distance=..30] if score @s 3F.Tick matches ..1000 run scoreboard players set @s 3F.Tick 26
@@ -27,5 +27,5 @@
     execute if entity @a[tag=3F.SkillSwordDamageThis,distance=..30] if score @s 3F.Tick matches 1000.. at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/skill_move
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @a[tag=3F.SkillSwordDamageThis] remove 3F.SkillSwordDamageThis

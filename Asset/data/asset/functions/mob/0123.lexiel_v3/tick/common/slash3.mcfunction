@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/0123.lexiel_v3/tick/**/**
 
-# 斬撃エフェクト
+# 斬撃エフェクト（これ実行する前に設定いれろよ！いれるんだぞ！！）
     data modify storage api: Argument.ID set value 2001
     execute anchored eyes positioned ^ ^-0.5 ^ positioned ^ ^ ^2 rotated ~ 0 run function api:object/summon
 
@@ -23,9 +23,9 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 前方にいたプレイヤーにダメージ
-    execute as @a[tag=3F.SkillSwordDamageThis] run function lib:damage/
+    execute as @a[tag=3F.SkillSwordDamageThis] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @a[tag=3F.SkillSwordDamageThis] remove 3F.SkillSwordDamageThis
