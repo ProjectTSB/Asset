@@ -1,4 +1,4 @@
-#> asset:object/2102.lexiel_thunder/tick/
+#> asset:object/2102.lexiel_tp/tick/
 #
 # Objectのtick時の処理
 #
@@ -7,5 +7,8 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
+# パーティクル
+    particle portal ~ ~ ~ 0.3 1 0.3 0 30 force
+
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    kill @s[scores={General.Object.Tick=80..}]

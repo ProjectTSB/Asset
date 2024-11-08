@@ -14,7 +14,7 @@
     execute if score @s 3F.Tick matches 33 positioned ^ ^ ^3 facing entity @p[] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute if score @s 3F.Tick matches 34 run function asset:mob/0123.lexiel_v3/tick/common/slash2
 # 54tick
-    execute if score @s 3F.Tick matches 53 positioned ^ ^ ^2 run function asset:mob/0123.lexiel_v3/tick/common/tp
+    execute if score @s 3F.Tick matches 53 positioned ^ ^ ^2 facing entity @p[] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute if score @s 3F.Tick matches 54 run function asset:mob/0123.lexiel_v3/tick/common/slash
 
 # リセット

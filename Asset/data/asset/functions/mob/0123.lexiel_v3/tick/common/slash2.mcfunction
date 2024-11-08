@@ -5,7 +5,7 @@
 # @within function asset:mob/0123.lexiel_v3/tick/**/**
 
 # 周囲にいるプレイヤーにタグをつける
-    tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 3F.SkillSwordDamageThis
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add 3F.SkillSwordDamageThis
     say @a[distance=..3]
 
 # 演出

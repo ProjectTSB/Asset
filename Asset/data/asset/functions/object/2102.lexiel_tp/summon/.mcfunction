@@ -1,4 +1,4 @@
-#> asset:object/2102.lexiel_thunder/summon/
+#> asset:object/2102.lexiel_tp/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
