@@ -10,3 +10,4 @@
     execute if entity @s[tag=3F.SkillSword3] run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/main
 
     execute if entity @s[tag=3F.SkillMagic1] run function asset:mob/0123.lexiel_v3/tick/11.skill_fireball/main
+    execute if entity @s[tag=3F.SkillMagic2] run function asset:mob/0123.lexiel_v3/tick/12.skill_thunder/main

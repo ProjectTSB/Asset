@@ -13,7 +13,7 @@
     execute if entity @s[tag=3F.SkillEven] run scoreboard players add $Random Temporary 10
 
 # デバッグスキル固定
-    scoreboard players set $Random Temporary 10
+    scoreboard players set $Random Temporary 11
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add 3F.SkillSword1
     execute if score $Random Temporary matches 1 run tag @s add 3F.SkillSword2

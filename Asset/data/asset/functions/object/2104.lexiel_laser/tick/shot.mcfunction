@@ -7,6 +7,7 @@
 # 演出
     playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2
     particle explosion ~ ~ ~ 0 0 0 0 1
+    particle flash ~ ~ ~ 0 0 0 0 1
     particle wax_off ~ ~5 ~ 0.2 10 0.2 0 100
 
     data modify entity @s start_interpolation set value 0

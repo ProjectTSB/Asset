@@ -16,4 +16,7 @@
 
     #declare tag 3F.SkillSwordDamageThis
 
+    #declare tag Target
+    #declare tag UsedThunder
+
     #declare score_holder $Random
