@@ -9,4 +9,4 @@
     kill @e[type=marker,scores={ObjectID=2102},distance=..70,limit=1]
 # AJも持ってくる
     execute at @s run function asset:mob/0123.lexiel_v3/tick/common/tp_vfx
-    execute at @s run tp @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,distance=..100,sort=nearest,limit=1] ~ ~ ~ ~ ~
+    execute at @s run tp @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,distance=..100,sort=nearest,limit=1] ~ ~ ~

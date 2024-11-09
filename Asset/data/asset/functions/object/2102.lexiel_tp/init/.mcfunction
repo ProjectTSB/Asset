@@ -5,7 +5,7 @@
 # @within asset:object/alias/2102/init
 
 # 値を入れる
-    data modify storage lib: Argument.Bounds set value [[6d,6d],[3d,3d],[6d,6d]]
+    data modify storage lib: Argument.Bounds set value [[8d,8d],[3d,3d],[8d,8d]]
 # 拡散する
     function lib:spread_entity/
 

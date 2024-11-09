@@ -28,7 +28,7 @@
     execute if score @s 3F.Tick matches 78 at @s run function asset:mob/0123.lexiel_v3/tick/skill_reset
 
 # ハードモードの行動
-    execute if score @s 3F.Tick matches 1000..1003 at @p[] run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_set
+    execute if score @s 3F.Tick matches 1000..1002 at @p[] run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_set
     execute if score @s 3F.Tick matches 1020..1060 positioned ^ ^ ^2 run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute if score @s 3F.Tick matches 1030 at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_tp
     execute if score @s 3F.Tick matches 1040 at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_tp
