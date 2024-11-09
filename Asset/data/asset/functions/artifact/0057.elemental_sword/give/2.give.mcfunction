@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"エレメンタルソード","color":"yellow"}]'
+    data modify storage asset:artifact Name set value '[{"text":"エレメンタルソード","color":"yellow","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"攻撃の度に属性の変わる剣"}']
 # MP以外の消費物 (TextComponentString) (オプション)

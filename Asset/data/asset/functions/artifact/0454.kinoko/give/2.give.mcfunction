@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:cooked_beef"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"きのこの山","color":"gold"}]'
+    data modify storage asset:artifact Name set value '[{"text":"きのこの山","color":"gold","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"持ちやすい。しかもうまい！"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
