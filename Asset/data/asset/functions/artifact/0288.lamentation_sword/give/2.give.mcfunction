@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"Help","color":"dark_purple","obfuscated":true},{"text":"嘆きの剣","obfuscated":false},{"text":"Help","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"嘆きの剣"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"嘆く狂人を"},{"text":"助","color":"dark_red","bold":true,"obfuscated":true},{"text":"すり潰し、型に流し込んで作ら"},{"text":"け","color":"dark_red","bold":true,"obfuscated":true},{"text":"れた剣。"},{"text":"て","color":"dark_red","bold":true,"obfuscated":true}]','[{"text":"未だに嘆"},{"text":"痛","color":"dark_red","bold":true,"obfuscated":true},{"text":"き続"},{"text":"い","color":"dark_red","bold":true,"obfuscated":true},{"text":"ける"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
