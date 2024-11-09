@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/147/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 自身に移動速度上昇
     effect give @s speed 2 1 true
 

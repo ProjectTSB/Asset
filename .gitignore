@@ -2,3 +2,7 @@
 MACOSX
 *.zip
 cspell.json
+.metals
+.scala-build
+.bsp
+.bloop
