@@ -4,10 +4,6 @@
 #
 # @within asset:object/alias/2101/kill
 
-#> private
-# @private
-    #declare score_holder $OwnerID
-
 # 演出
     function asset:object/2101.lexiel_fireball/kill/vfx
 
@@ -25,7 +21,6 @@
         execute as @a[distance=..3] run function lib:damage/
 # リセット
     function lib:damage/reset
-    scoreboard players reset $OwnerID Temporary
 
 # キル
     kill @s
