@@ -14,5 +14,8 @@
 # 弾
     execute if score @s 3F.Tick matches 22..46 if entity @p[distance=..80] run function asset:mob/0123.lexiel_v3/tick/common/thunder/main
 
+# ハード限定で二倍にする
+    execute if score @s 3F.Tick matches 22..46 if entity @p[distance=..80] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0123.lexiel_v3/tick/common/thunder/main
+
 # リセット
     execute if score @s 3F.Tick matches 64 run function asset:mob/0123.lexiel_v3/tick/skill_reset

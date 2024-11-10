@@ -17,13 +17,13 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 32f
+        data modify storage lib: Argument.Damage set value 20f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
         function lib:damage/modifier
-        execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=10] at @s run function lib:damage/
+        execute positioned ~-1 ~-1 ~-1 as @a[tag=!PlayerShouldInvulnerable,dx=1,dy=10,dz=1] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
