@@ -1,1 +1,0 @@
-function animated_java:lexiel/zzzzzzzz/animations/death/tick_animation

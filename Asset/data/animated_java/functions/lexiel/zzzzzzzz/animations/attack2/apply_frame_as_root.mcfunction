@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..36 run function animated_java:lexiel/zzzzzzzz/animations/attack2/tree/branch_0_36

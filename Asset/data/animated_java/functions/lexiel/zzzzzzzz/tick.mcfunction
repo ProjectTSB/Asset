@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.lexiel.root] run function animated_java:lexiel/zzzzzzzz/tick_as_root

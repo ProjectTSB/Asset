@@ -1,1 +1,0 @@
-function animated_java:lexiel/zzzzzzzz/animations/rod/tick_animation

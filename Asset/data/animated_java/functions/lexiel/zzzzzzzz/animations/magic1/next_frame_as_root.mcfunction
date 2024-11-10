@@ -1,1 +1,0 @@
-function animated_java:lexiel/zzzzzzzz/animations/magic1/tick_animation
