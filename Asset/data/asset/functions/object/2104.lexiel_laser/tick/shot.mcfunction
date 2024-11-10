@@ -12,3 +12,18 @@
 
     data modify entity @s start_interpolation set value 0
     data modify entity @s transformation.scale set value [0.5f,20f,0.5f]
+
+# ダメージ
+
+# ダメージ設定
+    # 与えるダメージ
+        data modify storage lib: Argument.Damage set value 32f
+    # 魔法属性
+        data modify storage lib: Argument.AttackType set value "Magic"
+    # 雷属性
+        data modify storage lib: Argument.ElementType set value "Thunder"
+    # ダメージ
+        function lib:damage/modifier
+        execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=10] at @s run function lib:damage/
+# リセット
+    function lib:damage/reset
