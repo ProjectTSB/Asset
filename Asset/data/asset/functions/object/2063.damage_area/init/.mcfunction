@@ -14,10 +14,10 @@
     data modify storage asset:temp 2063.transformation.scale set from storage asset:context this.Scale
     data modify entity @s {} merge from storage asset:temp 2063
 
-# 内円にmergeを行う
+# 内円にmergeを先に行っておく
     data modify storage asset:temp 2063.interpolation_duration set from storage asset:context this.Tick
     data modify storage asset:temp 2063.start_interpolation set value 0
-    execute on passengers run data modify entity @s {} merge from storage asset:temp 2063
+    data modify storage asset:context this.Merge set from storage asset:temp 2063
 
 # データリセット
     data remove storage asset:temp 2063
