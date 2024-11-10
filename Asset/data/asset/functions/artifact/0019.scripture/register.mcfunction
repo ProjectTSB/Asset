@@ -1,4 +1,4 @@
-#> asset:artifact/0019.scriputre/register
+#> asset:artifact/0019.scripture/register
 #
 # 神器プールへの登録処理
 #
