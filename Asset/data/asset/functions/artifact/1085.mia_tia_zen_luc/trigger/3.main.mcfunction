@@ -13,7 +13,7 @@
     particle dragon_breath ~ ~0.5 ~ 2 0 2 0 100
     playsound entity.ravager.death player @a ~ ~ ~ 1 2
 
-# 魔法攻撃-5%
+# 魔法攻撃+15%
     data modify storage api: Argument.UUID set value [I;1,1,1085,2]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
