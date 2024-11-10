@@ -29,4 +29,4 @@
 # タグを消す
     tag @a remove Target
 # スコアを消す
-    scoreboard players reset @s 3G.Tick
+    scoreboard players reset @s General.Mob.Tick

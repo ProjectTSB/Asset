@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0124.skull_harpy/**
-    scoreboard objectives add 3G.Tick dummy
+    scoreboard objectives add 3G.LatestEscapeTick dummy
