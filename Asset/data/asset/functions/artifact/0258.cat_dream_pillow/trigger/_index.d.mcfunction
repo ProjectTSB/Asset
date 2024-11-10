@@ -6,5 +6,4 @@
     #declare score_holder $TempUserID
     #declare score_holder $BarrierAmount
     #declare score_holder $CurrentBarrier
-    #declare score_holder $MaxHP30Per
     #declare tag BarrierTarget

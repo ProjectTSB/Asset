@@ -22,10 +22,6 @@
 # 演出 使用者には演出を出さない
     execute at @p[tag=BarrierTarget,tag=!this] run particle dust 1000000000 -0.3 -0.2 1 ~ ~1.2 ~ 0.8 0.4 0.8 0 50
 
-# 最大HPの30%の10倍を取得
-    execute as @p[tag=BarrierTarget] run function api:modifier/max_health/get
-    execute store result score $MaxHP30Per Temporary run data get storage api: Return.MaxHealth 3
-
 # 現在のバリアの数値を取得
     data modify storage api: Argument.UUID set value [I;1,3,267,0]
     function api:entity/player/absorption/get
@@ -34,8 +30,8 @@
 # 付与するバリア数値 < 現在バリア数値ならTagを削除
     execute if score $BarrierAmount Temporary < $CurrentBarrier Temporary run tag @p[tag=BarrierTarget] remove BarrierTarget
 
-# バリア数値が最大HPの30%を超えないようにし、フィールドへ代入
-    execute store result storage api: Argument.FieldOverride.Barrier double 0.1 run scoreboard players operation $BarrierAmount Temporary < $MaxHP30Per Temporary
+# バリア数値をフィールドへ代入
+    execute store result storage api: Argument.FieldOverride.Barrier double 0.1 run scoreboard players get $BarrierAmount Temporary
 
 # バリア用エフェクトを付与
     data modify storage api: Argument.ID set value 267

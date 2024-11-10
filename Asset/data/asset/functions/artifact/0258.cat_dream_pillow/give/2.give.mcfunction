@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"猫の夢見枕","color":"#F8CEF5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"回復対象に回復量の30%分のバリアを付与する。"}','{"text":"(最大バリア：最大HPの30%)"}','{"text":"猫の意匠が施された枕。","color":"gray"}','{"text":"この枕で眠ると猫に囲まれる夢を見る。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"回復対象に回復量の30%分のバリアを付与する。"}','{"text":"猫の意匠が施された枕。","color":"gray"}','{"text":"この枕で眠ると猫に囲まれる夢を見る。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
