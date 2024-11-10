@@ -8,8 +8,6 @@
     execute positioned ^ ^ ^1.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 3F.SkillSwordDamageThis
     execute positioned ^ ^ ^3 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 3F.SkillSwordDamageThis
     execute positioned ^ ^ ^4 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 3F.SkillSwordDamageThis
-    execute positioned ^ ^ ^1.5 run say @a[distance=..1.5]
-    execute positioned ^ ^ ^3 run say @a[distance=..1.5]
 
 # 演出
     execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1 0 0 0 1 2 normal

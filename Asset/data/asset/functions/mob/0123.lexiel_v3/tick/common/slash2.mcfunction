@@ -6,8 +6,6 @@
 
 # 周囲にいるプレイヤーにタグをつける
     tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add 3F.SkillSwordDamageThis
-    say @a[distance=..3]
-
 # 演出
     execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^ 2 0 2 0 20
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2

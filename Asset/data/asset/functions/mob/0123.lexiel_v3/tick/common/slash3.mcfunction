@@ -10,7 +10,6 @@
 
 # 前方にいるプレイヤーにタグをつける
     execute positioned ^ ^ ^2 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 3F.SkillSwordDamageThis
-    execute positioned ^ ^ ^2 run say @a[distance=..3]
 
 # 演出
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2

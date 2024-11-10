@@ -20,9 +20,5 @@
 # 選択したスキル発動
     execute if score @s 3F.Tick matches 0.. run function asset:mob/0123.lexiel_v3/tick/skill_active
 
-
 # リセット処理
     execute at @s run function asset:mob/0123.lexiel_v3/tick/always_reset
-
-# もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
-#    execute at @s unless entity @e[type=armor_stand,tag=3F.ArmorStand,distance=..0.01] run function asset:mob/1004.tultaria/tick/armorstand_respawn
