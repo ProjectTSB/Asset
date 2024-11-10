@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:object/1052.maid/load",
+        "asset:object/2031.giant_pumpkin/load",
         "asset:object/0001.abstract_projectile/load"
     ]
 }
