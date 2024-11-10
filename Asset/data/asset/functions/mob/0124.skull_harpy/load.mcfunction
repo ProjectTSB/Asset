@@ -1,4 +1,4 @@
-#> asset:mob/0124.skull_harpy/0.load
+#> asset:mob/0124.skull_harpy/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
