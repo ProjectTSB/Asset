@@ -21,3 +21,5 @@
 
 # タグ消す
     tag @s remove 1054.Init
+# リセット
+    scoreboard players reset $OwnerID Temporary
