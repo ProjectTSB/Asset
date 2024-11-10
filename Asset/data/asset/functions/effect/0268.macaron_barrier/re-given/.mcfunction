@@ -4,6 +4,5 @@
 #
 # @within function asset:effect/0268.macaron_barrier/_/re-given
 
-# バリアを削除してから付与する
-    function asset:effect/0268.macaron_barrier/barrier/remove
+# バリアを付与する
     function asset:effect/0268.macaron_barrier/barrier/add
