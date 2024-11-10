@@ -4,6 +4,10 @@
 #
 # @within asset:object/alias/2105/tick
 
+#> private
+# @private
+#declare function animated_java:lexiel/remove/this
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
     execute if score @s General.Object.Tick matches 1 run tp @s @e[type=item_display,distance=..0.1,sort=nearest,limit=1]

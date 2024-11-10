@@ -38,6 +38,3 @@
     #declare function animated_java:lexiel/animations/spawn/play
     #declare function animated_java:lexiel/animations/neutral/play
     #declare function animated_java:lexiel/animations/neutral/stop
-    #declare function animated_java:lexiel/remove/this
-    #declare function animated_java:lexiel/zzzzzzzz/load
-    #declare function animated_java:tick
