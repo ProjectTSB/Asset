@@ -22,3 +22,5 @@
     tag @s remove 3F.SkillMagic1
     tag @s remove 3F.SkillMagic2
     tag @s remove 3F.SkillMagic3
+
+    tag @s remove 3F.Opening
