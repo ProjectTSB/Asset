@@ -19,4 +19,4 @@
     function lib:damage/reset
 
 # 着弾タグを消す
-    tag @e[type=#lib:living,tag=Enemy,tag=LandingTarget,sort=nearest] remove LandingTarget
+    tag @e[type=#lib:living,tag=Enemy,tag=LandingTarget,distance=..60,sort=nearest] remove LandingTarget
