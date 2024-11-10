@@ -1,4 +1,4 @@
-#> asset:mob/0124.skull_harpy/tick/2.1.motion
+#> asset:mob/0124.skull_harpy/tick/motion
 #
 #
 #
