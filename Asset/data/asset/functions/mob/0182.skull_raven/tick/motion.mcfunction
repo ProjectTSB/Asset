@@ -1,4 +1,4 @@
-#> asset:mob/0182.skull_raven/tick/3.motion
+#> asset:mob/0182.skull_raven/tick/motion
 #
 #
 #

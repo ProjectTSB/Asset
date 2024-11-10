@@ -1,4 +1,4 @@
-#> asset:mob/0182.skull_raven/0.load
+#> asset:mob/0182.skull_raven/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
