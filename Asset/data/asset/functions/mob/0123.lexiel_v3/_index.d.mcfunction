@@ -23,8 +23,6 @@
     #
     #declare score_holder $Random
     #
-#> Private
-# @private
     #declare function animated_java:lexiel/summon
     #declare function animated_java:lexiel/animations/pause_all
     #declare function animated_java:lexiel/animations/death/play
