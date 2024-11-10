@@ -9,7 +9,7 @@
     #declare score_holder $Random
 
 # 召喚演出
-    playsound minecraft:entity.zombie_villager.cure player @a ~ ~ ~ 1 2
+    playsound minecraft:entity.zombie_villager.cure neutral @a ~ ~ ~ 1 2
     particle reverse_portal ~ ~1 ~ 0.2 0.2 0.2 0.4 50
 
 # 一時的にタグ付け
