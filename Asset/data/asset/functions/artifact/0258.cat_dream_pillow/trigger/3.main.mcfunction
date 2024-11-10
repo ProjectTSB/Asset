@@ -36,5 +36,6 @@
     scoreboard players reset $TempUserID Temporary
     scoreboard players reset $Random Temporary
     scoreboard players reset $BarrierAmount Temporary
+    scoreboard players reset $CurrentBarrier Temporary
     scoreboard players reset $MaxHP30Per Temporary
     data remove storage asset:temp Temp
