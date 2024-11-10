@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0182.skull_raven/**
-    scoreboard objectives add 52.Tick dummy
+    scoreboard objectives add 52.LatestEscapeTick dummy

@@ -29,4 +29,4 @@
 # タグを消す
     tag @a remove Target
 # スコアリセット
-    scoreboard players reset @s 52.Tick
+    scoreboard players reset @s General.Mob.Tick
