@@ -23,11 +23,11 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onReceiveHeal"
+    data modify storage asset:artifact Trigger set value "onHeal"
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"3回回復する毎","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"3回回復を与える毎","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
