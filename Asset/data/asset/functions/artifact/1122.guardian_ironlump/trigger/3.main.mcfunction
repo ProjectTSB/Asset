@@ -16,7 +16,7 @@
     attribute @s minecraft:generic.knockback_resistance modifier add 1-0-1-0-46200000007 "1122" 99 add
 
 # 防御力+5%
-    data modify storage api: Argument.UUID set value [I;1,1,1122,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1122,7]
     data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/base/add
