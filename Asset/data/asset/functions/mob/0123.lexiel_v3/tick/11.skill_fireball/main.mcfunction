@@ -9,6 +9,8 @@
     execute if score @s 3F.Tick matches 0 facing entity @p[] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
 # 弾
     execute if score @s 3F.Tick matches 22..24 positioned ~ ~1 ~ positioned ^ ^ ^1 run function asset:mob/0123.lexiel_v3/tick/common/fireball
+# ハードだともうちょっと出る
+    execute if score @s 3F.Tick matches 24..26 positioned ~ ~1 ~ positioned ^ ^ ^1 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0123.lexiel_v3/tick/common/fireball
 
 # リセット
     execute if score @s 3F.Tick matches 45 run function asset:mob/0123.lexiel_v3/tick/skill_reset

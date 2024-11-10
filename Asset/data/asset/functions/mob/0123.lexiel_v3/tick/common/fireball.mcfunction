@@ -8,6 +8,12 @@
 # @private
     #declare tag SpreadMarker
 
+# 演出
+    playsound entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
+    playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 1.5
+    playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 2
+    playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 2 0.7
+
 # 前方拡散
     execute positioned ^ ^ ^1 run summon marker ^ ^ ^ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 1.0
