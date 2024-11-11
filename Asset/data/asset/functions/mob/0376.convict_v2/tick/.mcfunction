@@ -20,5 +20,5 @@
 # 選択したスキル発動
     execute if score @s AG.Tick matches 0.. run function asset:mob/0376.convict_v2/tick/skill_active
 
-# リセット処理
-    execute at @s run function asset:mob/0376.convict_v2/tick/always_reset
+# タグ消す
+    execute at @s run tag @e[type=item_display,tag=AG.AJ,distance=..0.01,sort=nearest,limit=1] remove AG.AJLink
