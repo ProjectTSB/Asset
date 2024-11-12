@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1021.brave_book/register",
         "asset:artifact/0003.humanity/register",
         "asset:artifact/0005.musket_matchlock/register",
         "asset:artifact/0007.nitrogen_fixater/register",
