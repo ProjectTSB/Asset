@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:cooked_chicken"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"tknoko","color":"dark_green","obfuscated":true,"bold":true},{"text":" たけのこの里 ","color":"green","obfuscated":false},{"text":"umauma","color":"dark_green","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"たけのこの里","color":"green","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"食べやすい。しかもうまい！"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
@@ -50,6 +50,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

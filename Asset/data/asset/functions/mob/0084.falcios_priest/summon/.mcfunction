@@ -5,4 +5,4 @@
 # @within asset:mob/alias/84/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0084.falcios_priest"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"]}

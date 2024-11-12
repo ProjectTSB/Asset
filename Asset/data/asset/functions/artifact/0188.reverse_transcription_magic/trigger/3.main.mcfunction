@@ -14,5 +14,4 @@
         function lib:mp/set
     # 演出
         playsound ogg:random.levelup player @s ~ ~ ~ 1 1 1
-        stopsound @s * entity.item.break
         particle totem_of_undying ~ ~1.5 ~ 0.5 1 0.5 0 100 force @s

@@ -5,4 +5,4 @@
 # @within asset:mob/alias/219/summon
 
 # 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"asset:mob/death/0219.aorta"}
+    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit"],DeathLootTable:"empty"}

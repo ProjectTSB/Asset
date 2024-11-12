@@ -5,21 +5,6 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "loot_table",
-                    "name": "asset:mob/death/abstract_detect_item",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{TSB:{ID:205}}"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
                     "type": "minecraft:item",
                     "name": "minecraft:bone"
                 }
