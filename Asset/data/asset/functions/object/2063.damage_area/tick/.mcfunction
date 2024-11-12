@@ -15,7 +15,6 @@
     data modify storage asset:context this.Merge.transformation.scale set value [0f,0f,0.01f]
     execute store result storage asset:context this.Merge.transformation.scale[0] float 0.001 run scoreboard players get @s 2063.Scale.Tick
     execute store result storage asset:context this.Merge.transformation.scale[1] float 0.001 run scoreboard players get @s 2063.Scale.Tick
-    tellraw @a {"storage":"asset:context","nbt":"this.Merge"}
 
 # データからTickを取り出す
     execute store result score $2063.Temp General.Object.Tick run data get storage asset:context this.Tick
