@@ -17,3 +17,4 @@
 # 演出
     playsound minecraft:block.amethyst_block.break player @a ~ ~ ~ 1 0.8
     playsound minecraft:entity.chicken.egg neutral @a ~ ~ ~ 1 2
+    playsound ogg:block.smithing_table.smithing_table2 neutral @a ~ ~ ~ 1 0.7

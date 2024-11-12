@@ -5,7 +5,7 @@
 # @within function asset:object/1058.brave_knight/tick/
 
 # 付近に敵がいたらそっちへ移動
-    execute facing entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,distance=1.5..15,sort=nearest,limit=1] feet run tp @s ^ ^ ^0.3 ~ ~
+    execute facing entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,distance=1.5..15,sort=nearest,limit=1] feet run tp @s ^ ^ ^0.6 ~ ~
 
 # 近くの敵の方を向く
     execute unless entity @s[tag=1058.FacingLock] facing entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,distance=..1.5,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
