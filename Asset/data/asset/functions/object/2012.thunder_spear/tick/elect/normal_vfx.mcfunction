@@ -7,6 +7,3 @@
 # 追加パーティクル
     particle dust 1 1 0.3 3 ~ ~ ~ 5 5 5 0 5 force @a[distance=..32]
     particle electric_spark ~ ~ ~ 1 5 1 0 25 force @a[distance=..32]
-
-# 範囲表示
-    function asset:object/2012.thunder_spear/tick/start/vfx_tick

@@ -25,6 +25,6 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..10] run function lib:damage/
+    execute as @a[gamemode=!creative,distance=..15] run function lib:damage/
 # リセット
     function lib:damage/reset

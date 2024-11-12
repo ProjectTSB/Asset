@@ -10,7 +10,7 @@
 # スタート段階の処理
     # 回転・演出
         tp @s ~ ~ ~ ~20 0
-        execute if entity @s[tag=!2012.NormalElect,tag=!2012.HardElect,tag=!2012.NormalElectCast,tag=!2012.HardElectCast,tag=!2012.Kill] if score @s General.Object.Tick matches 1..70 at @s run function asset:object/2012.thunder_spear/tick/start/vfx_tick
+        execute if entity @s[tag=!2012.NormalElect,tag=!2012.HardElect,tag=!2012.NormalElectCast,tag=!2012.HardElectCast,tag=!2012.Kill] if score @s General.Object.Tick matches 1 run function asset:object/2012.thunder_spear/tick/start/summon_area
         execute if entity @s[tag=!2012.NormalElect,tag=!2012.HardElect,tag=!2012.NormalElectCast,tag=!2012.HardElectCast,tag=!2012.Kill] if score @s General.Object.Tick matches 1 run playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 1.5 0
 
     # 発動処理

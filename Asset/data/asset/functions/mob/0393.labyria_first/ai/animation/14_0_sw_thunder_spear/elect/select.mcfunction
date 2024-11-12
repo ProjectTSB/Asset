@@ -5,7 +5,7 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/
 
 # スコア初期化
-    scoreboard players set $AZ.Temp Temporary 0
+    scoreboard players set $AZ.Temp Temporary 2
 
 # 乱数で決める
     #execute store result score $AZ.Temp Temporary run random value 0..3
