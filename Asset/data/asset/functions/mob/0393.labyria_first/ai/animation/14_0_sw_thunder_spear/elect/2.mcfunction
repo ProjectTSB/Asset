@@ -30,14 +30,14 @@
     execute if score @s AZ.AnimationTick matches 291 positioned ^12.728 ^ ^12.728 as @e[type=item_display,scores={ObjectID=2012},distance=..0.01] run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/normal
 
 # 帯電ダメージエリア表示
-    execute if score @s AZ.AnimationTick matches 318 positioned ^ ^ ^18 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^ ^ ^-18 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^18 ^ ^ run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^-18 ^ ^ run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^-12.728 ^ ^12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^-12.728 ^ ^-12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^12.728 ^ ^-12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
-    execute if score @s AZ.AnimationTick matches 318 positioned ^12.728 ^ ^12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^ ^ ^18 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^ ^ ^-18 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^18 ^ ^ run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^-18 ^ ^ run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^-12.728 ^ ^12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^-12.728 ^ ^-12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^12.728 ^ ^-12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
+    execute if score @s AZ.AnimationTick matches 340 positioned ^12.728 ^ ^12.728 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/summon_area/normal
 
 # 発動
-    execute if score @s AZ.AnimationTick matches 390 as @e[type=item_display,tag=2012.NormalElect,scores={ObjectID=2012},distance=..32] run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/normal_cast
+    execute if score @s AZ.AnimationTick matches 350 as @e[type=item_display,tag=2012.NormalElect,scores={ObjectID=2012},distance=..32] run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/normal_cast

@@ -5,7 +5,7 @@
 # @within function asset:object/2012.thunder_spear/tick/
 
 # 追加パーティクル
-    particle dust 2 0 100000000 2 ~ ~ ~ 7.5 7.5 7.5 0 800 force @a[distance=..32]
+    particle dust 2 0 100000000 2 ~ ~ ~ 9 9 9 0 800 force @a[distance=..32]
 # 音
     playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 1.5
     playsound entity.lightning_bolt.thunder hostile @a[distance=..32] ~ ~ ~ 1 1
@@ -25,6 +25,6 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..15] run function lib:damage/
+    execute as @a[gamemode=!creative,distance=..20] run function lib:damage/
 # リセット
     function lib:damage/reset
