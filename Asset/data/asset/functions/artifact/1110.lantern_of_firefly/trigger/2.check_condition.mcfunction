@@ -15,7 +15,7 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Fire} run scoreboard players add @s UU.AttackCount 1
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players add @s UU.AttackCount 1
 
-# 回数が20未満ならCanUsedを削除
+# 回数が50未満ならCanUsedを削除
     execute unless entity @s[scores={UU.AttackCount=50..}] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
