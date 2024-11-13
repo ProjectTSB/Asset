@@ -74,6 +74,8 @@ execute if score #animation aj.i = $aj.labyria.animation.15_0_sw_stan aj.id run 
 execute if score #animation aj.i = $aj.labyria.animation.15_0_sw_stan aj.id run scoreboard players operation @s aj.labyria.animation.15_0_sw_stan.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.labyria.animation.15_1_ms_stan aj.id run function animated_java:labyria/zzzzzzzz/animations/15_1_ms_stan/apply_frame_as_root
 execute if score #animation aj.i = $aj.labyria.animation.15_1_ms_stan aj.id run scoreboard players operation @s aj.labyria.animation.15_1_ms_stan.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.labyria.animation.16_0_invisible aj.id run function animated_java:labyria/zzzzzzzz/animations/16_0_invisible/apply_frame_as_root
+execute if score #animation aj.i = $aj.labyria.animation.16_0_invisible aj.id run scoreboard players operation @s aj.labyria.animation.16_0_invisible.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:labyria/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

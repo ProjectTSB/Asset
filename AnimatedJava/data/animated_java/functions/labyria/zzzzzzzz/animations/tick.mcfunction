@@ -28,3 +28,4 @@ execute if entity @s[tag=aj.labyria.animation.14_0_sw_thunder_spear] run functio
 execute if entity @s[tag=aj.labyria.animation.14_1_sw_thunder_spear_end] run function animated_java:labyria/zzzzzzzz/animations/14_1_sw_thunder_spear_end/tick
 execute if entity @s[tag=aj.labyria.animation.15_0_sw_stan] run function animated_java:labyria/zzzzzzzz/animations/15_0_sw_stan/tick
 execute if entity @s[tag=aj.labyria.animation.15_1_ms_stan] run function animated_java:labyria/zzzzzzzz/animations/15_1_ms_stan/tick
+execute if entity @s[tag=aj.labyria.animation.16_0_invisible] run function animated_java:labyria/zzzzzzzz/animations/16_0_invisible/tick

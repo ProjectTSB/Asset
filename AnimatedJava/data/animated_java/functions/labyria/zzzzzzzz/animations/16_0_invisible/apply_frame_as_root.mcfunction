@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0 run function animated_java:labyria/zzzzzzzz/animations/16_0_invisible/tree/leaf_0

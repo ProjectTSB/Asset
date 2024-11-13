@@ -28,3 +28,4 @@ function animated_java:labyria/zzzzzzzz/animations/14_0_sw_thunder_spear/pause_a
 function animated_java:labyria/zzzzzzzz/animations/14_1_sw_thunder_spear_end/pause_as_root
 function animated_java:labyria/zzzzzzzz/animations/15_0_sw_stan/pause_as_root
 function animated_java:labyria/zzzzzzzz/animations/15_1_ms_stan/pause_as_root
+function animated_java:labyria/zzzzzzzz/animations/16_0_invisible/pause_as_root

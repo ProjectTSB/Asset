@@ -35,6 +35,7 @@ scoreboard objectives add aj.labyria.animation.14_0_sw_thunder_spear.local_anim_
 scoreboard objectives add aj.labyria.animation.14_1_sw_thunder_spear_end.local_anim_time dummy
 scoreboard objectives add aj.labyria.animation.15_0_sw_stan.local_anim_time dummy
 scoreboard objectives add aj.labyria.animation.15_1_ms_stan.local_anim_time dummy
+scoreboard objectives add aj.labyria.animation.16_0_invisible.local_anim_time dummy
 scoreboard objectives add aj.labyria.animation.1_0_idle_sword.loop_mode dummy
 scoreboard objectives add aj.labyria.animation.1_1_idle_musket.loop_mode dummy
 scoreboard objectives add aj.labyria.animation.1_0_idle_sword_rare.loop_mode dummy
@@ -65,6 +66,7 @@ scoreboard objectives add aj.labyria.animation.14_0_sw_thunder_spear.loop_mode d
 scoreboard objectives add aj.labyria.animation.14_1_sw_thunder_spear_end.loop_mode dummy
 scoreboard objectives add aj.labyria.animation.15_0_sw_stan.loop_mode dummy
 scoreboard objectives add aj.labyria.animation.15_1_ms_stan.loop_mode dummy
+scoreboard objectives add aj.labyria.animation.16_0_invisible.loop_mode dummy
 scoreboard players set $aj.labyria.animation.1_0_idle_sword aj.id 0
 scoreboard players set $aj.labyria.animation.1_1_idle_musket aj.id 1
 scoreboard players set $aj.labyria.animation.1_0_idle_sword_rare aj.id 2
@@ -95,6 +97,7 @@ scoreboard players set $aj.labyria.animation.14_0_sw_thunder_spear aj.id 26
 scoreboard players set $aj.labyria.animation.14_1_sw_thunder_spear_end aj.id 27
 scoreboard players set $aj.labyria.animation.15_0_sw_stan aj.id 28
 scoreboard players set $aj.labyria.animation.15_1_ms_stan aj.id 29
+scoreboard players set $aj.labyria.animation.16_0_invisible aj.id 30
 scoreboard players set $aj.labyria.variant.default aj.id 0
 scoreboard players set $aj.labyria.variant.jitome aj.id 1
 scoreboard players set $aj.labyria.variant.mabataki aj.id 2
@@ -105,6 +108,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.labyria.export_version aj.i -1058180542
+scoreboard players set aj.labyria.export_version aj.i 194597095
 scoreboard players reset * aj.labyria.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.labyria.root] run function animated_java:labyria/zzzzzzzz/on_load
