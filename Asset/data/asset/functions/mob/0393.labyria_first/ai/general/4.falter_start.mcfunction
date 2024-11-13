@@ -4,15 +4,15 @@
 #
 # @within function asset:mob/0393.labyria_first/**
 
-# アニメーションストップ
-    function asset:mob/0393.labyria_first/ai/animation/all_stop
+# 停止処理
+    execute as @e[type=item_display,tag=AZ.Root.This,distance=..100,sort=nearest,limit=1] run function animated_java:labyria/animations/pause_all
 
 # 怯みアニメーション
-    scoreboard players set @s AZ.AnimationNum 990
-    execute if predicate lib:random_pass_per/50 run scoreboard players set @s AZ.AnimationNum 991
+    execute if score @s AZ.AnimationNum matches 10..11 run scoreboard players set @s AZ.AnimationNum 990
+    execute if score @s AZ.AnimationNum matches 12 run scoreboard players set @s AZ.AnimationNum 991
 
 # アニメーションリセット
     scoreboard players set @s AZ.AnimationTick 0
 
-# 怯み回数を増やす
-    scoreboard players add @s AZ.FalterCount 1
+# 怯み回数をリセット
+    scoreboard players set @s AZ.FalterCount 0

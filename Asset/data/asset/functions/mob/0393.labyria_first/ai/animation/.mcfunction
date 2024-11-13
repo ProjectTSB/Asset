@@ -13,6 +13,18 @@
 # 待機 銃通常
     execute if score @s AZ.AnimationNum matches 12 run function asset:mob/0393.labyria_first/ai/animation/1_2_ms_idle/
 
+# 移動開始　ソード
+    execute if score @s AZ.AnimationNum matches 20 run function asset:mob/0393.labyria_first/ai/animation/2_0_sw_move_start/
+
+# 移動開始　マスケット
+    execute if score @s AZ.AnimationNum matches 21 run function asset:mob/0393.labyria_first/ai/animation/2_1_ms_move_start/
+
+# 移動終了　ソード
+    execute if score @s AZ.AnimationNum matches 22 run function asset:mob/0393.labyria_first/ai/animation/2_2_sw_move_end/
+
+# 移動終了　マスケット
+    execute if score @s AZ.AnimationNum matches 23 run function asset:mob/0393.labyria_first/ai/animation/2_3_ms_move_end/
+
 # 銃三連射
     execute if score @s AZ.AnimationNum matches 30 run function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/
 
@@ -48,6 +60,12 @@
 
 # 雷槍
     execute if score @s AZ.AnimationNum matches 140 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/
+
+# スタン（ソード）
+    execute if score @s AZ.AnimationNum matches 990 run function asset:mob/0393.labyria_first/ai/animation/99_0_sw_stan/
+
+# スタン（マスケット）
+    execute if score @s AZ.AnimationNum matches 991 run function asset:mob/0393.labyria_first/ai/animation/99_1_ms_stan/
 
 # オープニング
     execute if score @s AZ.AnimationNum matches 1000 run function asset:mob/0393.labyria_first/ai/animation/100_0_opening/

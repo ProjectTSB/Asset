@@ -4,6 +4,6 @@
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/7_0_sw_thunder_grenade/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AZ.AnimationNum 70
-    scoreboard players set @s AZ.AnimationTick -80
+# 移動モーションに移行
+    scoreboard players set @s AZ.AnimationNum 20
+    scoreboard players set @s AZ.AnimationTick 0

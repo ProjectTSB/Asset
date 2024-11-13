@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AZ.AnimationNum 90
+# アイドルモーションに移行
+    scoreboard players set @s AZ.AnimationNum 10
+    execute if predicate lib:random_pass_per/5 run scoreboard players set @s AZ.AnimationNum 11
+
+# アニメーションリセット
     scoreboard players set @s AZ.AnimationTick 0

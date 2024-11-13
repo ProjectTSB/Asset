@@ -14,7 +14,7 @@
     execute if score @s General.Object.Tick matches ..100 run tp @s ~ ~ ~ ~8 0
 
 # VFX表示
-    execute at @s run function asset:object/2005.thunder_bomb/tick/vfx
+    execute if score @s General.Object.Tick matches 1 run function asset:object/2005.thunder_bomb/tick/summon_area
 
 # 発動処理
     execute if score @s General.Object.Tick matches 100 run function asset:object/2005.thunder_bomb/tick/cast

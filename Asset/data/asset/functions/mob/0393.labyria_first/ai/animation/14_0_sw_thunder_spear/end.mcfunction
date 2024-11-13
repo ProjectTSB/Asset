@@ -4,7 +4,10 @@
 #
 # @within function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/
 
-# デバッグ用　アニメーションループ
-    scoreboard players set @s AZ.AnimationNum 140
+# アイドルモーションに移行
+    scoreboard players set @s AZ.AnimationNum 10
+    execute if predicate lib:random_pass_per/5 run scoreboard players set @s AZ.AnimationNum 11
+
+# アニメーションリセット
     scoreboard players set @s AZ.AnimationTick 0
     scoreboard players reset @s AZ.ThunderSpear
