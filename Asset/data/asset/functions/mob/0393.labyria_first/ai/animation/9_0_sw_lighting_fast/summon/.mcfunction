@@ -2,7 +2,10 @@
 #
 # 雷神無双 召喚処理
 #
-# @within function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
+# @within function
+#   asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
+#   asset:mob/0393.labyria_first/ai/animation/100_0_opening/
+
 
 # マーカーを用意する
     tp 0-0-0-0-0 ~ ~ ~ ~ ~

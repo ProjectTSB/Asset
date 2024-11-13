@@ -2,7 +2,9 @@
 #
 # 終了時のワープ1
 #
-# @within function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
+# @within function
+#   asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/
+#   asset:mob/0393.labyria_first/ai/animation/100_0_opening/
 
 # 中央にワープ
     execute at @e[type=marker,tag=AZ.Marker.SummonPoint,distance=..100] run tp 0-0-0-0-0 ~ ~ ~ ~ 0
