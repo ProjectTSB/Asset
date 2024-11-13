@@ -25,7 +25,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @e[tag=SZ.Landing,distance=..28] run function api:damage/
+    execute as @e[type=#lib:living,tag=SZ.Landing,distance=..28] run function api:damage/
     function api:damage/reset
 
 # 演出
