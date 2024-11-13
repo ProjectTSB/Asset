@@ -49,3 +49,4 @@
     tag @s remove SZ.Cast
     tag @e[tag=SZ.Landing,distance=..28] remove SZ.Landing
     scoreboard players reset @s SZ.CastTick
+    scoreboard players reset $SZ.Damage Temporary
