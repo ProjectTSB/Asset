@@ -1,6 +1,6 @@
-#> asset:mob/0182.skull_raven/hurt/knockback
+#> asset:mob/0182.skull_raven/hurt/escape
 #
-#
+# 逃げる
 #
 # @within function asset:mob/0182.skull_raven/hurt/
 
@@ -8,8 +8,8 @@
     particle minecraft:cloud ~ ~1 ~ 0 0 0 0.4 20
     playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 0.4 0
 
-# 浮遊を自分に付与
-    effect give @s levitation 1 8 true
+# 最後に逃げたTickを保存
+    execute store result score @s 52.LatestEscapeTick run time query gametime
 
 # プレイヤーから離れる
     data modify storage lib: Argument.VectorMagnitude set value 1.5

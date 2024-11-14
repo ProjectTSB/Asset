@@ -1,4 +1,4 @@
-#> asset:mob/0182.skull_raven/tick/3.motion
+#> asset:mob/0182.skull_raven/tick/motion
 #
 #
 #
@@ -29,4 +29,4 @@
 # タグを消す
     tag @a remove Target
 # スコアリセット
-    scoreboard players reset @s 52.Tick
+    scoreboard players reset @s General.Mob.Tick

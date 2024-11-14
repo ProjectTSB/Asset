@@ -1,4 +1,4 @@
-#> asset:mob/0124.skull_harpy/tick/2.1.motion
+#> asset:mob/0124.skull_harpy/tick/motion
 #
 #
 #
@@ -29,4 +29,4 @@
 # タグを消す
     tag @a remove Target
 # スコアを消す
-    scoreboard players reset @s 3G.Tick
+    scoreboard players reset @s General.Mob.Tick
