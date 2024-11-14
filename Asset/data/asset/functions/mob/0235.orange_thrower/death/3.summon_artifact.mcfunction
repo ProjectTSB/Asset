@@ -2,7 +2,7 @@
 #
 # 神器を召喚
 #
-# @within function asset:mob/0235.orange_thrower/death/2.death
+# @within function asset:mob/0235.orange_thrower/death/
 
 # ID:1104の神器を召喚
     data modify storage api: Argument.ID set value 1104

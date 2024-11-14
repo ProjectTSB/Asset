@@ -13,7 +13,8 @@
     execute as @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes rotated ~ -55 run function asset:artifact/1082.cursed_straw_doll/trigger/vfx/
 
 # 最大体力の13倍、現在体力の13倍を取得
-    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 13
+    function api:modifier/max_health/get
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 13
     function api:data_get/health
     execute store result score $CurrentHealth Temporary run data get storage api: Health 13
 
@@ -21,7 +22,8 @@
     execute store result score $DamageValue Temporary run scoreboard players operation $MaxHealth Temporary -= $CurrentHealth Temporary
 
 # 最大体力、現在体力の100倍を取得
-    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
+    function api:modifier/max_health/get
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 1
     function api:data_get/health
     execute store result score $CurrentHealth Temporary run data get storage api: Health 100
 

@@ -23,7 +23,7 @@
     function api:damage/reset
 
 # ついでに火を消す
-    execute if predicate world_manager:area/02.islands run fill ~2.5 ~2.5 ~2.5 ~-2.5 ~-2.5 ~-2.5 air replace fire
+    execute if predicate api:area/is_breakable run fill ~2.5 ~2.5 ~2.5 ~-2.5 ~-2.5 ~-2.5 air replace fire
 
 # 消滅
     kill @s

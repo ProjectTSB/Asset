@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/2.tick
+# @within function asset:mob/1004.tultaria/tick/
 
 # 近接
     execute if entity @s[tag=RW.SkillMelee] run function asset:mob/1004.tultaria/tick/1.melee_attack/1.melee_attack
