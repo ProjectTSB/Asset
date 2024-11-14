@@ -16,15 +16,15 @@
 
 # ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 33.0f
+        data modify storage api: Argument.Damage set value 33.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function lib:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     kill @s
