@@ -33,8 +33,8 @@
 
 # ダメージ
     execute store result storage api: Argument.Damage double 0.1 run scoreboard players get $UU.Damage Temporary
-    data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Target,distance=..32,sort=nearest,limit=6] run function api:damage/
     function api:damage/reset
