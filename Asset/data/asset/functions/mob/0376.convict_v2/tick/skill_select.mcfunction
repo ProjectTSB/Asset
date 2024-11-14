@@ -7,14 +7,14 @@
 
 # スキルを+1する。稀に確率でスキルをスキップする
     scoreboard players add @s AG.Skill 1
-    execute if predicate lib:random_pass_per/40 run scoreboard players add @s AG.Skill 1
+    #execute if predicate lib:random_pass_per/40 run scoreboard players add @s AG.Skill 1
 
 # スキルが超えたら戻す
-    execute if score @s AG.Skill matches 9.. run scoreboard players set @s AG.Skill 1
-    execute if score @s AG.Skill matches 7.. run scoreboard players set @s AG.Skill 7
+    execute if score @s AG.Skill matches 8.. run scoreboard players set @s AG.Skill 1
+    #execute if score @s AG.Skill matches 7.. run scoreboard players set @s AG.Skill 7
 
 # デバッグスキル固定
-    scoreboard players set @s AG.Skill 1
+    scoreboard players set @s AG.Skill 7
 
 # スキル選択
     execute if score @s AG.Skill matches 1 run tag @s add AG.SkillAxe1

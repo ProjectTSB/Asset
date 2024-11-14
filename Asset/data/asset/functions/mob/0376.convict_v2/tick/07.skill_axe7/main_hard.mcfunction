@@ -1,4 +1,4 @@
-#> asset:mob/0376.convict_v2/tick/07.skill_axe7/main
+#> asset:mob/0376.convict_v2/tick/07.skill_axe7/main_hard
 #
 #
 #
@@ -10,7 +10,7 @@
 
 # アニメーション変える
     execute if score @s AG.Tick matches 0 as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/wait/stop
-    execute if score @s AG.Tick matches 0 as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/attack7/play
+    execute if score @s AG.Tick matches 0 as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/attack7_hard/play
 
     execute if score @s AG.Tick matches 9..48 run function asset:mob/0376.convict_v2/tick/common/particle/particle_6
     execute if score @s AG.Tick matches 39..48 positioned ~ ~1 ~ run function asset:mob/0376.convict_v2/tick/common/particle/particle_5
@@ -30,5 +30,8 @@
 # リセット
     scoreboard players reset $2tInterval
 
-# 終わる
-    execute if score @s AG.Tick matches 66 run function asset:mob/0376.convict_v2/tick/skill_reset
+
+
+    execute if score @s AG.Tick matches 77 positioned ^ ^ ^1 run function asset:mob/0376.convict_v2/tick/07.skill_axe7/hard_explode
+
+    execute if score @s AG.Tick matches 107 run function asset:mob/0376.convict_v2/tick/skill_reset

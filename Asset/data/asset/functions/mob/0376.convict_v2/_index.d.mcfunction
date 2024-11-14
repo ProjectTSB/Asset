@@ -18,6 +18,7 @@
     #declare tag AG.Opening
     #
     #declare tag AG.DamageThis
+    #declare tag AG.Hit
     #
     #declare tag Target
     #declare tag UsedThunder
@@ -39,3 +40,5 @@
     #declare function animated_java:convict/animations/attack6_2/play
     #declare function animated_java:convict/animations/attack7/play
     #declare function animated_java:convict/animations/attack7_hard/play
+    #declare function animated_java:convict/animations/wait/stop
+    #declare function animated_java:convict/animations/attack6_1/stop

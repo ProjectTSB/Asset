@@ -1,5 +1,28 @@
 #> asset:mob/0376.convict_v2/tick/06.skill_axe6/main
 #
-# 
+#
 #
 # @within function asset:mob/0376.convict_v2/tick/skill_active
+
+# アニメーション変える
+    execute if score @s AG.Tick matches 0 as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/wait/stop
+    execute if score @s AG.Tick matches 0 as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/attack6_1/play
+
+# プレイヤーを見る
+    execute if score @s AG.Tick matches 0 facing entity @p eyes rotated ~ 0 run function asset:mob/0376.convict_v2/tick/common/tp
+
+    execute if score @s AG.Tick matches 18..28 positioned ^ ^ ^1.2 run function asset:mob/0376.convict_v2/tick/common/tp
+    execute if score @s AG.Tick matches 18..28 at @s if entity @p[distance=..2] run function asset:mob/0376.convict_v2/tick/06.skill_axe6/grab
+
+# リセット
+    execute if score @s AG.Tick matches 57 run function asset:mob/0376.convict_v2/tick/skill_reset
+
+
+# つかみに成功した時
+
+# プレイヤー束縛
+    execute if score @s AG.Tick matches 1000.. positioned ^ ^ ^0.7 positioned ~ ~1 ~ if entity @p[distance=..2] as @p at @s facing entity @e[type=skeleton,tag=Enemy.Boss,sort=nearest,limit=1] feet run tp @s @s
+
+
+    execute if score @s AG.Tick matches 1062 positioned ^ ^ ^0.7 positioned ~ ~1 ~ run function asset:mob/0376.convict_v2/tick/06.skill_axe6/execute
+    execute if score @s AG.Tick matches 1095 run function asset:mob/0376.convict_v2/tick/skill_reset

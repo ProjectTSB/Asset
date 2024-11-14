@@ -22,3 +22,4 @@
 
 # タグ消す
     execute at @s run tag @e[type=item_display,tag=AG.AJ,distance=..0.01,sort=nearest,limit=1] remove AG.AJLink
+    tag @a[tag=AG.Hit] remove AG.Hit
