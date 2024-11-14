@@ -9,7 +9,14 @@
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s AG.Tick -30
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s AG.Tick -45
 
-say reset
+# 足元空気なら下にいく
+    execute at @s if block ~ ~-0.5 ~ #lib:no_collision positioned ~ ~-0.5 ~ run function asset:mob/0376.convict_v2/tick/common/tp
+    execute at @s if block ~ ~-0.5 ~ #lib:no_collision positioned ~ ~-0.5 ~ run function asset:mob/0376.convict_v2/tick/common/tp
+    execute at @s if block ~ ~-0.5 ~ #lib:no_collision positioned ~ ~-0.5 ~ run function asset:mob/0376.convict_v2/tick/common/tp
+    execute at @s if block ~ ~-0.5 ~ #lib:no_collision positioned ~ ~-0.5 ~ run function asset:mob/0376.convict_v2/tick/common/tp
+
+# 埋まってたらTPする
+    execute at @s unless block ~ ~ ~ #lib:no_collision positioned as @p run function asset:mob/0376.convict_v2/tick/common/spread_tp
 
 # アニメーション戻す
     execute as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/wait/play

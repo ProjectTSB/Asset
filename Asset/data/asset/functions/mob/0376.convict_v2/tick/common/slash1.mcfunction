@@ -9,8 +9,6 @@
     playsound item.trident.throw hostile @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.glow_squid.squirt hostile @a ~ ~ ~ 1 2
 
-say @a[distance=..3]
-
 # ダメージ設定
     data modify storage api: Argument.Damage set value 20.0f
     data modify storage api: Argument.AttackType set value "Physical"

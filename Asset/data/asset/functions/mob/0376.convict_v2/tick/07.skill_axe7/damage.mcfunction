@@ -11,8 +11,6 @@
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 0.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
-say @a[distance=..6.7]
-
 # ダメージ設定
     data modify storage api: Argument.Damage set value 10.0f
     data modify storage api: Argument.AttackType set value "Physical"

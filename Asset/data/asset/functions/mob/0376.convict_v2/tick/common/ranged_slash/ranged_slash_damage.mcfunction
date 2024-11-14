@@ -5,9 +5,6 @@
 # @within function asset:mob/0376.convict_v2/tick/**/**
 
 
-
-say @a[tag=!AG.Hit,distance=..3]
-
 # ダメージ設定
     data modify storage api: Argument.Damage set value 20.0f
     data modify storage api: Argument.AttackType set value "Physical"

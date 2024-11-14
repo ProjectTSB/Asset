@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0376.convict_v2/tick/**/**
+# @within function asset:mob/0376.convict_v2/tick/**
 
 # 自身をその場所まで持っていく(雑床埋まり対策もする)
     execute if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~
