@@ -1,8 +1,8 @@
-#> asset:artifact/1088.purifying_hydrangea/trigger/5.find_highest_water_attack_player
+#> asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
 #
 # 水攻撃補正が最も高いプレイヤーを検索する
 #
-# @within function asset:artifact/1088.purifying_hydrangea/trigger/4.set_effect_target
+# @within function asset:artifact/1088.purifying_hydrangea/trigger/3.main
 
 #> Private
 # @private
@@ -14,8 +14,8 @@
 # 検索対象にTagを付与
     tag @a[tag=!BuffTarget,distance=..20] add SearchTarget
 
-# 各プレイヤーの現在体力をスコアへ代入
-    execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/6.get_water_attack_modifier
+# 各プレイヤーの水攻撃補正をスコアへ代入
+    execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/5.get_water_attack_modifier
 
 # 全員の水攻撃補正と比較する
     execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
