@@ -17,8 +17,8 @@
     function api:mp/get_max
 
 # MPを最大値の50%分回復する
-    execute store result score $Fluctuation Lib run data get storage api: Return.MaxMP 0.5
-    function lib:mp/fluctuation
+    #execute store result score $Fluctuation Lib run data get storage api: Return.MaxMP 0.5
+    #function lib:mp/fluctuation
 
 # 急速充電を付与
     data modify storage api: Argument.ID set value 214
