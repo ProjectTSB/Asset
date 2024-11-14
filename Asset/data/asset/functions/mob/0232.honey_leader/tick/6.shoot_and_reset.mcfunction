@@ -2,7 +2,7 @@
 #
 # ビーム発射の処理とリセット処理を行うよ
 #
-# @within function asset:mob/0232.honey_leader/tick/2.tick
+# @within function asset:mob/0232.honey_leader/tick/
 
 # ビーム発射
     playsound entity.glow_squid.squirt hostile @a[distance=..32] ~ ~ ~ 1 1.5 0.8

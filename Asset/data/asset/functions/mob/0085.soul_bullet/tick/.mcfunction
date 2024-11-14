@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0085.soul_bullet/_/tick
+# @within function asset:mob/alias/85/tick
 
 #> Private
 # @private

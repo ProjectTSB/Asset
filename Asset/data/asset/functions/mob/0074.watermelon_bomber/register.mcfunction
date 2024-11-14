@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0074.watermelon_bomber/_/register
+# @within function asset:mob/alias/74/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -22,7 +22,7 @@
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-       data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:melon",Count:1b,tag:{CustomModelData:20023}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:melon",Count:1b,tag:{CustomModelData:20023}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
@@ -51,7 +51,7 @@
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 25.0
 # ノックバック耐性 (double) (オプション)
-    data modify storage asset:mob KnockBackResist set value 0.3
+    data modify storage asset:mob KnockBackResist set value 0.825
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0

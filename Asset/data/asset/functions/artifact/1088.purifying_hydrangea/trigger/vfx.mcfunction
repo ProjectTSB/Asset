@@ -4,7 +4,7 @@
 #
 # @within function
 #   asset:artifact/1088.purifying_hydrangea/trigger/3.main
-#   asset:artifact/1088.purifying_hydrangea/trigger/7.give_effect
+#   asset:artifact/1088.purifying_hydrangea/trigger/6.give_effect
 
 # 演出
     particle rain ~ ~1.5 ~ 0.6 1 0.6 0 120 normal @a

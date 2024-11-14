@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"flying","color":"black","obfuscated":true},{"text":"- 飛竜落としの術 -","color":"yellow","obfuscated":false,"bold":true},{"text":"dragon","color":"black","obfuscated":true,"bold":false}]'
+    data modify storage asset:artifact Name set value '[{"text":"飛竜落としの術","color":"yellow","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"嘗て天を翔け世界を波乱に貶めた"}]','[{"text":"龍を討ち落としたとされる神器"}]']
 # MP以外の消費物 (TextComponentString) (オプション)

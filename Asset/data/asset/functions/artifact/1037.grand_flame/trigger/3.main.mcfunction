@@ -6,8 +6,6 @@
 
 #> Val
 # @private
-    #declare score_holder $ST.MaxHP
-    #declare score_holder $ST.CurrentHP
     #declare score_holder $ST.OwnerId
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
@@ -18,22 +16,14 @@
 # 雪玉を召喚する
     execute anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["ST.SnowBall","ST.SnowBallInit"],Item:{Count:1b,id:"minecraft:stick",tag:{CustomModelData:1037}},Passengers:[{id:"minecraft:marker",Tags:["ST.Marker"]}]}
 
-# 体力
-    # 最大体力を取得
-        execute store result score $ST.MaxHP Temporary run attribute @s minecraft:generic.max_health get
-
-    # 現在体力を取得
-        function api:data_get/health
-        execute store result score $ST.CurrentHP Temporary run data get storage api: Health 100
-
-    # 割合
-        scoreboard players operation $ST.CurrentHP Temporary /= $ST.MaxHP Temporary
+# 体力割合を取得
+    function api:entity/player/get_health_per
 
 # スコアセット
-    scoreboard players operation $ST.OwnerId Temporary = @s UserID 
+    scoreboard players operation $ST.OwnerId Temporary = @s UserID
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.OwnerID = $ST.OwnerId Temporary
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s ST.FlyingTick 100
-    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.PercentHP = $ST.CurrentHP Temporary
+    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers store result score @s ST.PercentHP run data get storage api: Return.HealthPer
 
 # 雪玉にMotionをセットする
     data modify storage lib: Argument.VectorMagnitude set value 1.5
@@ -53,6 +43,4 @@
 # リセット処理
     tag @e[type=snowball,tag=ST.SnowBallInit,distance=..3] remove ST.SnowBallInit
     data remove storage lib: Argument
-    scoreboard players reset $ST.MaxHP Temporary
     scoreboard players reset $ST.OwnerId Temporary
-    scoreboard players reset $ST.CurrentHP Temporary

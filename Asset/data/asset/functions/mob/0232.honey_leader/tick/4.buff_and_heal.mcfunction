@@ -2,7 +2,7 @@
 #
 # ハニー系のMobにバフを付与して回復するよ
 #
-# @within function asset:mob/0232.honey_leader/tick/2.tick
+# @within function asset:mob/0232.honey_leader/tick/
 
 #> Private
 # @private

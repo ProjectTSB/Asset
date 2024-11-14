@@ -2,7 +2,11 @@
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/_/attack
+# @within function asset:mob/alias/76/attack
+
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.8 0
