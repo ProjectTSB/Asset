@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:feather"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"hea ","color":"white","obfuscated":true},{"text":"天国草","color":"yellow","obfuscated":false},{"text":" ven","color":"white","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"天国草","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"傷を即座に癒す効能があるが、"}','{"text":"5%の確率で昇天してしまう。"}']
 # MP以外の消費物 (TextComponentString) (オプション)

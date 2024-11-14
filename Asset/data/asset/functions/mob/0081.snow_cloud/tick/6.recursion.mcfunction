@@ -11,4 +11,3 @@
 
 # 再帰ループ
     execute unless entity @e[type=polar_bear,scores={MobID=81},distance=..1] if block ~ ~1 ~ #lib:no_collision_without_fluid positioned ~ ~1 ~ run function asset:mob/0081.snow_cloud/tick/6.recursion
-
