@@ -11,6 +11,9 @@
 # プレイヤーを見る
     execute if score @s AG.Tick matches 0 facing entity @p eyes rotated ~ 0 run function asset:mob/0376.convict_v2/tick/common/tp
 
+# 演出
+    execute if score @s AG.Tick matches 18 run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 1
+
 # つかみ挙動へ
     execute if score @s AG.Tick matches 18..28 positioned ^ ^ ^1.2 run function asset:mob/0376.convict_v2/tick/common/tp
     execute if score @s AG.Tick matches 18..28 at @s if entity @p[distance=..2] run function asset:mob/0376.convict_v2/tick/06.skill_axe6/grab
