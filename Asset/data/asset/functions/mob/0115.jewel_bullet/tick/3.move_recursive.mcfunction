@@ -3,7 +3,7 @@
 # 再帰処理で前方へ進む
 #
 # @within function
-#   asset:mob/0115.jewel_bullet/tick/2.tick
+#   asset:mob/0115.jewel_bullet/tick/
 #   asset:mob/0115.jewel_bullet/tick/3.move_recursive
 
 # 演出

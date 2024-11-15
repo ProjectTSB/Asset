@@ -9,7 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
     # 演出
-        stopsound @s * entity.item.break
         tellraw @s [{"text": "<"},{"selector":"@s"},{"text": "> た け の こ 万 歳 ！"}]
     # 処理
         function api:data_get/health

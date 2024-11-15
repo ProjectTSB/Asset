@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"カボチャの怨念の残滓","color":"#FFAA00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"効果発動時、","color":"#D900FF"}]','[{"text":"満腹度を回復し、移動速度上昇と暗視を30秒得る。","color":"#D900FF"}]','[{"text":"僅かに残ったジャック・オ・ランタンの魂。","color":"gray"}]','[{"text":"魂を吸収することで僅かに力を取り戻し幽かに輝く。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、満腹度を回復し","color":"white"}','[{"text":"移動速度上昇と暗視を30秒間得る。","color":"white"}]','[{"text":"僅かに残ったジャック・オ・ランタンの魂。","color":"gray"}]','[{"text":"魂を吸収することで妖しく幽かに輝く。","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -23,7 +23,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onKilledByMelee"
+    data modify storage asset:artifact Trigger set value "onKilled"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

@@ -2,7 +2,7 @@
 #
 # スキル発動すれ
 #
-# @within function asset:mob/0022.red_knight/tick/2.tick
+# @within function asset:mob/0022.red_knight/tick/
 
 # 剣スキル
     execute if entity @s[tag=M.SkillSword] run function asset:mob/0022.red_knight/tick/skill_sword/1.skill_sword

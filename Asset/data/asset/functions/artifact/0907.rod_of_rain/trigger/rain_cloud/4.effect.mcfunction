@@ -40,7 +40,8 @@
         execute as @p[tag=P8.Owner] run function api:modifier/heal/add
 
     # 範囲内のプレイヤーを使用者の最大体力の10%分回復
-        execute store result storage api: Argument.Heal float 0.1 run attribute @p[tag=P8.Owner] generic.max_health get
+        execute as @p[tag=Object] run function api:modifier/max_health/get
+        execute store result storage api: Argument.Heal float 0.1 run data get storage api: Return.MaxHealth
         execute as @p[tag=P8.Owner] run function api:heal/modifier
         execute as @a[tag=P8.TargetEntity,distance=..10] run function api:heal/
         function api:heal/reset

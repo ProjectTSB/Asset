@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0257.distortion_spellbook/hurt/2.hurt
+# @within function asset:mob/0257.distortion_spellbook/hurt/
 
 #> Private
 # @private
