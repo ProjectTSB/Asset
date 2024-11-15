@@ -17,7 +17,7 @@
     execute if entity @s[scores={General.Mob.Tick=0}] unless entity @p[distance=..10] run scoreboard players set @s General.Mob.Tick -60
 
 # 何回みかんを召喚するかを難易度値で決める
-# 難易度値1につき1個
+# (2 * 難易度値 - 1)個召喚する
 # 2(10 * (難易度値 - 1))Tick後にリセットするのでリセットするスコアを決めておく
     execute if entity @s[scores={General.Mob.Tick=0}] run function api:global_vars/get_difficulty
     execute if entity @s[scores={General.Mob.Tick=0}] store result score @s 6J.ResetTick run data get storage api: Return.Difficulty 20
