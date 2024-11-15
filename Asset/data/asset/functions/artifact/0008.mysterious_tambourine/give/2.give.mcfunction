@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"不思議なタンバリン","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲にプレイヤーに"}','{"text":"物理攻撃+10%を30秒間付与する。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲のプレイヤーに","color":"white"}','{"text":"物理攻撃+10%を30秒間付与する。","color":"white"}','{"text":"不思議な力を持つタンバリン。","color":"gray"}','{"text":"叩くと力がみなぎってくる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
