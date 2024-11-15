@@ -1,4 +1,4 @@
-#> asset:mob/0376.convict_v2/tick/06.skill_axe6/hard_explode
+#> asset:mob/0376.convict_v2/tick/07.skill_axe7/hard_explode
 #
 #
 #
