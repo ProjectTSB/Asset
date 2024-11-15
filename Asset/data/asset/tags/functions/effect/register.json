@@ -39,6 +39,7 @@
         "asset:effect/0613.white_curse/_/register",
         "asset:effect/0210.fading_speed/_/register",
         "asset:effect/0211.fading_speed/_/register",
-        "asset:effect/0203.secret_meat/_/register"
+        "asset:effect/0203.secret_meat/_/register",
+        "asset:effect/0272.inspiration/_/register"
     ]
 }
