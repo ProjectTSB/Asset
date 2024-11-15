@@ -1,12 +1,11 @@
-#> asset:object/2068.golden_watermelon/1st_explode/
+#> asset:object/2068.golden_watermelon/tick/1st_explode
 #
-# 継承先などから実行される処理
 #
-# @within asset:object/alias/2068/1st_explode
-
-# 複数箇所から実行されるのでやりやすいようにメソッドにしたが、正直間違いな気がしている
-# メソッドで継承のためのモノのような認識がある
-# tick/下に置くのも違うなーと思っていて、どうしようって感じ
+#
+# @within function
+#   asset:object/2068.golden_watermelon/tick/
+#   asset:object/2068.golden_watermelon/hit_block/
+#   asset:object/2068.golden_watermelon/hit_entity/
 
 # 既にヒットしているなら中断
     execute if entity @s[tag=2068.1stHit] run return 0

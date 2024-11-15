@@ -8,7 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 20Tick経過で1段目爆発
-    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/call.m {method:1st_explode}
+    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/2068.golden_watermelon/tick/1st_explode
 
 # 1段目の爆発前ならスーパーメソッド呼び出し
     execute if entity @s[tag=!2068.1stHit] at @s run function asset:object/super.tick

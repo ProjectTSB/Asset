@@ -5,4 +5,4 @@
 # @within asset:object/alias/2068/hit_entity
 
 # 1st_explodeメソッドを実行
-    function asset:object/call.m {method:1st_explode}
+    function asset:object/2068.golden_watermelon/tick/1st_explode
