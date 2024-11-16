@@ -8,4 +8,4 @@
     scoreboard players set @s General.Mob.Tick -120
 
 # 最初にまず4つの属性に分岐
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0104.mad_scientist/tick/random_element_select
+    function asset:mob/0104.mad_scientist/tick/random_element_select
