@@ -6,7 +6,7 @@
 
 # 爆発演出
     particle explosion ~ ~1.2 ~ 0.6 0.4 0.6 0 10 normal @a
-    particle lava ~ ~1.2 ~ 1 0.4 1 0 50 normal @a
+    particle lava ~ ~1.2 ~ 1 0.4 1 0 20 normal @a
     particle flame ~ ~1.2 ~ 0 0 0 0.3 40 normal @a
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.7 1 0
 
