@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2070.potion/**
-    #declare
+    #declare tag 2070.PoisonPotionBreak 毒ポーションで壊れている

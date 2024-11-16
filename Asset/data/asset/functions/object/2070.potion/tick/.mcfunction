@@ -4,14 +4,11 @@
 #
 # @within asset:object/alias/2070/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+# 毒ポーションの処理
+    execute if entity @s[tag=2070.PoisonPotionBreak] run function asset:object/2070.potion/tick/poison
 
 # 下を向く
     tp @s ~ ~ ~ ~ ~1
 
 # スーパーメソッド呼び出し
-    execute at @s run function asset:object/super.tick
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    execute unless entity @s[tag=2070.PoisonPotionBreak] at @s run function asset:object/super.tick

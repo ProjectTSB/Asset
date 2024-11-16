@@ -5,7 +5,7 @@
 # @within asset:object/alias/2070/kill
 
 # 共通playsound
-    execute unless data storage asset:context this{Element:Poison} run playsound block.glass.break hostile @a ~ ~ ~ 1 1 0
+    playsound block.glass.break hostile @a ~ ~ ~ 1 1 0
 
 # 属性別の処理
     execute if data storage asset:context this{Element:Fire} run function asset:object/2070.potion/kill/fire

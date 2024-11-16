@@ -6,3 +6,6 @@
 
 # 毒以外ならkillメソッド呼び出し
     execute unless data storage asset:context this{Element:Poison} run function asset:object/call.m {method:kill}
+
+# 毒なら自身にTagを付与
+    execute if data storage asset:context this{Element:Poison} run tag @s add 2070.PoisonPotionBreak
