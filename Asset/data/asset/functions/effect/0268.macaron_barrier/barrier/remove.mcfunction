@@ -4,7 +4,6 @@
 #
 # @within function
 #   asset:effect/0268.macaron_barrier/end/
-#   asset:effect/0268.macaron_barrier/re-given/
 #   asset:effect/0268.macaron_barrier/remove/
 
 # バリアを削除する
