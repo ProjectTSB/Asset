@@ -16,5 +16,3 @@
 # ポーションを投げる(Projectile使用)
     execute if score @s 2W.Tick matches 120.. run function asset:mob/0104.mad_scientist/tick/throw_potion
 
-# 体力が半分以下の場合なんかパーティクルを纏う
-    execute if entity @s[tag=2W.HPless50Per] run particle witch ~ ~1.2 ~ 0.3 0.4 0.3 0 5 normal @a
