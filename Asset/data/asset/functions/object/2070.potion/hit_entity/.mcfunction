@@ -4,8 +4,8 @@
 #
 # @within asset:object/alias/2070/hit_entity
 
-# 毒以外ならkillメソッド呼び出し
+# 毒ポーション以外ならkillメソッド呼び出し
     execute unless data storage asset:context this{Element:Poison} run function asset:object/call.m {method:kill}
 
-# 毒なら自身にTagを付与
-    execute if data storage asset:context this{Element:Poison} run tag @s add 2070.PoisonPotionBreak
+# 毒ポーションのときの処理
+    execute if data storage asset:context this{Element:Poison} run function asset:object/2070.potion/tick/poison/break

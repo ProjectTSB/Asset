@@ -1,4 +1,4 @@
-#> asset:object/2070.potion/tick/poison
+#> asset:object/2070.potion/tick/poison/tick
 #
 # 毒ポーションの処理
 #

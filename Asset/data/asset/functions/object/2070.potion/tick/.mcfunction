@@ -5,7 +5,7 @@
 # @within asset:object/alias/2070/tick
 
 # 毒ポーションの処理
-    execute if entity @s[tag=2070.PoisonPotionBreak] run function asset:object/2070.potion/tick/poison
+    execute if entity @s[tag=2070.PoisonPotionBreak] run function asset:object/2070.potion/tick/poison/tick
 
 # 下を向く
     tp @s ~ ~ ~ ~ ~1
