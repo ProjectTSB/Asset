@@ -23,6 +23,8 @@
 
 # プレイヤーを支配デバフを付与
 # 効果時間 (20 × 難易度値)tick
+# MobUUIDをFieldOverrideに入れておく
     data modify storage api: Argument.ID set value 603
     execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
