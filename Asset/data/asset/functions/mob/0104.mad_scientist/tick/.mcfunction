@@ -5,14 +5,10 @@
 # @within function asset:mob/alias/104/tick
 
 # スコア
-    scoreboard players add @s 2W.Tick 1
-
-# 最初にまず4つの属性に分岐
-    execute if score @s 2W.Tick matches 1 run function asset:mob/0104.mad_scientist/tick/random_element_select
+    scoreboard players add @s General.Mob.Tick 1
 
 # 投げる予告音
-    execute if score @s 2W.Tick matches 100 run playsound minecraft:entity.wither.ambient hostile @a ~ ~ ~ 1 1.5
+    execute if score @s General.Mob.Tick matches 0 run playsound minecraft:entity.wither.ambient hostile @a ~ ~ ~ 1 1.5
 
 # ポーションを投げる(Projectile使用)
-    execute if score @s 2W.Tick matches 120.. run function asset:mob/0104.mad_scientist/tick/throw_potion
-
+    execute if score @s General.Mob.Tick matches 20.. run function asset:mob/0104.mad_scientist/tick/throw_potion
