@@ -1,4 +1,4 @@
-#> asset:mob/0104.mad_scientist/0.load
+#> asset:mob/0104.mad_scientist/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #

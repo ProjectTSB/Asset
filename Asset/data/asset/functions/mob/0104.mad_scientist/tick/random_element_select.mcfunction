@@ -1,4 +1,4 @@
-#> asset:mob/0104.mad_scientist/tick/3.random_element_select
+#> asset:mob/0104.mad_scientist/tick/random_element_select
 #
 # 次に投げるポーションを設定
 #

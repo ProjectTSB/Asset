@@ -1,8 +1,8 @@
-#> asset:mob/0104.mad_scientist/tick/5.addition_throw
+#> asset:mob/0104.mad_scientist/tick/addition_throw
 #
 # 追加でポーション投げるfunction
 #
-# @within function asset:mob/0104.mad_scientist/tick/4.throw_potion
+# @within function asset:mob/0104.mad_scientist/tick/throw_potion
 
 # 一度タグを全消し
     execute if entity @s[tag=2W.Poison] run tag @s remove 2W.Poison
