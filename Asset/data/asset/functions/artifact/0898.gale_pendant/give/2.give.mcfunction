@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"疾風のペンダント","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"風の力を蓄えたペンダント"}','{"text":"付けると体が軽くなる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"非戦闘時、移動速度が大きく上昇する。","color":"white"}','{"text":"風の力を蓄えたペンダント。","color":"gray"}','{"text":"付けると体が軽くなる。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
