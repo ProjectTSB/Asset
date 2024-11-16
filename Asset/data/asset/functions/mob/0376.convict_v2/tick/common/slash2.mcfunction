@@ -16,5 +16,8 @@
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..4.5] at @s run function api:damage/
+
+# エフェクト
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4.5] run function asset:mob/0376.convict_v2/tick/common/effect
 # リセット
     function api:damage/reset

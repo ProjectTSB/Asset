@@ -19,3 +19,6 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..6.7] at @s run function api:damage/
 # リセット
     function api:damage/reset
+
+# エフェクト
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6.7] run function asset:mob/0376.convict_v2/tick/common/effect

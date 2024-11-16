@@ -21,5 +21,9 @@
     data modify storage lib: Argument.FixedDamage set value true
     function lib:damage/modifier
     execute as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+
+# エフェクト
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:mob/0376.convict_v2/tick/common/effect
+
 # リセット
     function lib:damage/reset
