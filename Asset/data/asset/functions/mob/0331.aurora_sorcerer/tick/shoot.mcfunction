@@ -1,4 +1,4 @@
-#> asset:mob/0331.aurora_sorcerer/tick/2.shoot
+#> asset:mob/0331.aurora_sorcerer/tick/shoot
 #
 # オーロラ弾発射時の処理
 #

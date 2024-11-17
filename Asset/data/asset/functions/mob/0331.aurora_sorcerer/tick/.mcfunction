@@ -24,4 +24,4 @@
     execute if entity @s[scores={97.Skill=0}] run attribute @s generic.knockback_resistance base set 10
 
 # スキル実行
-    execute if entity @s[scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/2.shoot
+    execute if entity @s[scores={97.Skill=0..}] run function asset:mob/0331.aurora_sorcerer/tick/shoot
