@@ -9,9 +9,12 @@
     execute if score @s 1A.LifeTime matches 1801 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~180 ~
     execute if score @s 1A.LifeTime matches 1801 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
 # ビーム回転
-    execute if score @s 1A.LifeTime matches 1801..1820 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~4 ~
-    execute if score @s 1A.LifeTime matches 1821..1840 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~6 ~
-    execute if score @s 1A.LifeTime matches 1841..1860 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~8 ~
+    execute if score @s 1A.LifeTime matches 1801..1810 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~1 ~
+    execute if score @s 1A.LifeTime matches 1811..1820 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~2 ~
+    execute if score @s 1A.LifeTime matches 1821..1830 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~3 ~
+    execute if score @s 1A.LifeTime matches 1831..1840 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~4 ~
+    execute if score @s 1A.LifeTime matches 1841..1850 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~6 ~
+    execute if score @s 1A.LifeTime matches 1851..1860 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~8 ~
     execute if score @s 1A.LifeTime matches 1861..1940 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~10 ~
     execute if score @s 1A.LifeTime matches 1941 run kill @e[type=marker,tag=1A.SkillBeam,distance=..100]
 
