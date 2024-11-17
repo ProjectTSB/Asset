@@ -1,4 +1,4 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/8
+#> asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/8-0
 #
 #
 #
@@ -13,8 +13,8 @@ summon marker ~ ~ ~ {Tags:["1A.GearMarker"]}
 summon marker ~ ~ ~ {Tags:["1A.GearMarker"]}
 summon marker ~ ~ ~ {Tags:["1A.GearMarker"]}
 
-execute as @e[type=marker,tag=1A.GearMarker,distance=..0.1] run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/spread
+execute as @e[type=marker,tag=1A.GearMarker,distance=..0.1] run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/spread
 
 execute store result storage asset:temp MobUUID int 1 run scoreboard players get @s MobUUID
-execute as @e[type=marker,tag=1A.GearMarker,distance=..14] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/summon
+execute as @e[type=marker,tag=1A.GearMarker,distance=..14] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/summon.m {ID:2061}
 data remove storage asset:temp MobUUID

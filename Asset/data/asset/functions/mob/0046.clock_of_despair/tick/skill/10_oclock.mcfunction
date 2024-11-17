@@ -5,10 +5,9 @@
 # @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
 
 # RE:RE: 歯車の恐怖
-    execute if score @s 1A.LifeTime matches 2000 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_golden_gears/4
-    execute if score @s 1A.LifeTime matches 2000 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/5
-    # execute if score @s 1A.LifeTime matches 2030 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/8
-    execute if score @s 1A.LifeTime matches 2060 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/8
+    execute if score @s 1A.LifeTime matches 2000 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/5-4
+    # execute if score @s 1A.LifeTime matches 2030 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/8-0
+    execute if score @s 1A.LifeTime matches 2060 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/8-0
 
 # サンダー召喚
     execute if score @s 1A.LifeTime matches 2080 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon

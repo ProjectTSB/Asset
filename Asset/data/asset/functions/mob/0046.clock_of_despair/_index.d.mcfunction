@@ -21,5 +21,5 @@
     #declare score_holder $LazerDistance
 
 #> Val
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_*_gears/*
+# @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/*
 #declare tag 1A.GearMarker

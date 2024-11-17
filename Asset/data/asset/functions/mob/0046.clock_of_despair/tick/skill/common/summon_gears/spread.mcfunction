@@ -1,8 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/spread
+#> asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/spread
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/*
+# @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/*
 
 #> Val
 # @private
@@ -16,4 +16,4 @@
 # 半径14m以内ではない 又は 他の歯車と重なっている場合再拡散する
     execute at @s if entity @e[type=zombie,tag=this,distance=14..20,limit=1] run scoreboard players set $Continuation Temporary 1
     execute at @s if entity @e[type=marker,tag=1A.GearMarker,distance=0.01..3.5] run scoreboard players set $Continuation Temporary 1
-    execute if score $Continuation Temporary matches 1 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_silver_gears/spread
+    execute if score $Continuation Temporary matches 1 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/spread
