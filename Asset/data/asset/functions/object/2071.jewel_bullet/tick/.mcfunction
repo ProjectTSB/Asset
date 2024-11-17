@@ -4,8 +4,8 @@
 #
 # @within asset:object/alias/2071/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+# 演出
+    playsound minecraft:block.amethyst_cluster.step hostile @a ~ ~ ~ 0.4 1 0
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+# スーパーメソッド呼び出し
+    function asset:object/super.tick
