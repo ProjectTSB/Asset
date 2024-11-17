@@ -13,7 +13,7 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.8 0
     playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.5 0
 
-# 雷属性ダメージ
+# ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"

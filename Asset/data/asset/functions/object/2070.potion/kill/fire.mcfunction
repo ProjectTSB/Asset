@@ -10,7 +10,7 @@
     particle flame ~ ~1.2 ~ 0 0 0 0.3 40 normal @a
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.7 1 0
 
-# 火属性ダメージ
+# ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
