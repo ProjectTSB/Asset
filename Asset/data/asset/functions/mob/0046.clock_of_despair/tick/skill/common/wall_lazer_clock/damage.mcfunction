@@ -15,3 +15,4 @@
     function lib:damage/
 # リセット
     function lib:damage/reset
+    tag @s remove DXYZ

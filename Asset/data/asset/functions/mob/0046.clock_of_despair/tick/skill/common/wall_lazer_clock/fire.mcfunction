@@ -6,10 +6,13 @@
 #   asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/tick
 #   asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/fire
 
-scoreboard players add $LazerDistance Temporary 1
+function asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/vfx/fire/
 
-function asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/vfx
+data modify storage lib: args.dx set value 6.3
+data modify storage lib: args.dy set value 6.3
+data modify storage lib: args.dz set value 20
+data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..40]"
+execute positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
+execute as @a[tag=DXYZ] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/damage
 
-execute as @e[type=#lib:living,tag=Friend,tag=!PlayerShouldInvulnerable,tag=!Uninterferable,distance=..8] positioned ^ ^ ^-500 if entity @s[distance=..500.5] positioned ^ ^ ^1000 if entity @s[distance=..500.5] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/damage
-
-execute if block ~ ~ ~ #lib:no_collision if score $LazerDistance Temporary matches ..79 positioned ^ ^ ^0.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_lazer_clock/fire
+data remove storage lib: args
