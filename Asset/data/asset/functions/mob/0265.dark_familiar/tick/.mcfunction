@@ -35,5 +35,5 @@
 # 一定間隔で攻撃 召喚してすぐは攻撃しないようにしている
     scoreboard players operation $Interval Temporary = @s 7D.Tick
     scoreboard players operation $Interval Temporary %= $40 Const
-    execute if score $Interval Temporary matches 0 run function asset:mob/0265.dark_familiar/tick/shoot
+    execute if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ summon marker run function asset:mob/0265.dark_familiar/tick/shoot
     scoreboard players reset $Interval Temporary
