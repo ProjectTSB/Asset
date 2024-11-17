@@ -13,7 +13,7 @@
 # (再)拡散
     data modify storage lib: Argument.Bounds set value [[14,14],[0,0],[14,14]]
     function lib:spread_entity/
-# 半径14m以内ではない 又は 他の歯車と重なっている場合再拡散する
-    execute at @s if entity @e[type=zombie,tag=this,distance=14..20,limit=1] run scoreboard players set $Continuation Temporary 1
-    execute at @s if entity @e[type=marker,tag=1A.GearMarker,distance=0.01..3.5] run scoreboard players set $Continuation Temporary 1
+# いい感じに再拡散する
+    execute at @s if entity @e[type=zombie,tag=this,distance=10..20,limit=1] run scoreboard players set $Continuation Temporary 1
+    execute at @s if entity @e[type=marker,tag=1A.GearMarker,distance=0.01..5] run scoreboard players set $Continuation Temporary 1
     execute if score $Continuation Temporary matches 1 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/spread
