@@ -13,9 +13,6 @@
     #declare tag 1A.SkillFireMaker
     #declare tag 1A.SkillBallAEC
     #declare tag 1A.SkillBeam
-    #declare tag 1A.GearSilver
-    #declare tag 1A.GearGold
-    #declare tag 1A.GearSubVfx
     #declare tag 1A.WallLazerClock
     #declare tag 1A.This
     #
@@ -24,5 +21,5 @@
     #declare score_holder $LazerDistance
 
 #> Val
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/gear_*/spread_summon/*
-#declare tag GearInit
+# @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_*_gears/*
+#declare tag 1A.GearMarker
