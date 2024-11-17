@@ -8,6 +8,6 @@
 # @private
 #declare tag ClockInit
 
-summon marker ~ ~ ~ {Tags:["1A.SkillMarker","1A.WalllaserClock","ClockInit","Object","Uninterferable"]}
+summon marker ~ ~ ~ {Tags:["1A.SkillMarker","1A.WallLaserClock","ClockInit","Object","Uninterferable"]}
 tp @e[type=marker,tag=ClockInit,distance=..0.01] ~ ~ ~ ~-90 ~
 tag @e[type=marker,tag=ClockInit,distance=..0.01] remove ClockInit

@@ -13,7 +13,7 @@
     #declare tag 1A.SkillFireMaker
     #declare tag 1A.SkillBallAEC
     #declare tag 1A.SkillBeam
-    #declare tag 1A.WalllaserClock
+    #declare tag 1A.WallLaserClock
     #declare tag 1A.This
     #
     #declare tag Landing
