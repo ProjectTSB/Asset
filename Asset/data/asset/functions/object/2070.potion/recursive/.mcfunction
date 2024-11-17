@@ -8,4 +8,4 @@
     particle witch ~ ~ ~ 0 0 0 0 1 normal @a
 
 # 下を向く
-    execute at @s run tp @s ~ ~ ~ ~ ~0.5
+    execute at @s run tp @s ~ ~ ~ ~ ~1

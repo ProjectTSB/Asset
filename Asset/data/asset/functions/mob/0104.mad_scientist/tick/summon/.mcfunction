@@ -7,7 +7,7 @@
 # 実行者はマーカー
 
 # プレイヤーの方を向く
-    execute facing entity @p feet run tp @s ~ ~ ~ ~ ~-5
+    execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~-5
 
 # 召喚する
     function asset:mob/0104.mad_scientist/tick/summon/summon
