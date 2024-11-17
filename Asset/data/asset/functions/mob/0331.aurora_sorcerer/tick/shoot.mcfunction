@@ -14,8 +14,7 @@
     execute if entity @s[scores={97.Skill=1..9}] run playsound block.beacon.activate hostile @a ~ ~ ~ 0.7 1.9 0
 
 # 召喚
-    execute if entity @s[scores={97.Skill=10}] run data modify storage api: Argument.ID set value 332
-    execute if entity @s[scores={97.Skill=10}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 run function api:mob/summon
+    execute if entity @s[scores={97.Skill=10}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.4 summon marker run function asset:mob/0331.aurora_sorcerer/tick/summon
 
 # リセット
     execute if entity @s[scores={97.Skill=25..}] run function asset:mob/0331.aurora_sorcerer/tick/reset
