@@ -9,4 +9,4 @@
     playsound minecraft:block.amethyst_cluster.step hostile @a ~ ~ ~ 1 1 0
 
 # Attackerが離れた場所にいる場合、Attackerに反射攻撃
-    execute unless entity @p[tag=Attacker,distance=..5] anchored eyes facing entity @p[tag=Attacker,distance=..32] eyes anchored feet positioned ^ ^ ^ run function asset:mob/0114.jewel_hunter/hurt/3.reflect
+    execute unless entity @p[tag=Attacker,distance=..5] anchored eyes facing entity @p[tag=Attacker,distance=..32] eyes anchored feet positioned ^ ^1 ^ summon marker run function asset:mob/0114.jewel_hunter/hurt/reflect
