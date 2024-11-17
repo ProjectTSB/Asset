@@ -4,6 +4,12 @@
 #
 # @within asset:object/alias/2070/kill
 
+# 既に実行済みの場合はreturn
+    execute if entity @s[tag=2070.AlreadyHit] run return 0
+
+# 実行Tagを付与
+    tag @s add 2070.AlreadyHit
+
 # 共通playsound
     playsound block.glass.break hostile @a ~ ~ ~ 1 1 0
 
