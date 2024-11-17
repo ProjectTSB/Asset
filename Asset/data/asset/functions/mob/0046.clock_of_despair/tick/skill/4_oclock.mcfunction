@@ -4,16 +4,28 @@
 #
 # @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
 
-# ビーム3本投射
+# ビーム投射
     execute if score @s 1A.LifeTime matches 801 run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
-    execute if score @s 1A.LifeTime matches 801 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~90 ~
+
     execute if score @s 1A.LifeTime matches 801 run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
-    execute if score @s 1A.LifeTime matches 801 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~90 ~
+
     execute if score @s 1A.LifeTime matches 801 run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
-    execute if score @s 1A.LifeTime matches 801 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~120 ~
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~90 ~
+
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
+    execute if score @s 1A.LifeTime matches 801 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~90 ~
 # ビーム回転
-    # execute if score @s 1A.LifeTime matches 821..999 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~5 ~
-    execute if score @s 1A.LifeTime matches 821..999 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~4 ~
+    execute if score @s 1A.LifeTime matches 821..830 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~1 ~
+    execute if score @s 1A.LifeTime matches 831..840 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~2 ~
+    execute if score @s 1A.LifeTime matches 841..850 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~3 ~
+    execute if score @s 1A.LifeTime matches 851..860 as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~4 ~
+    execute if score @s 1A.LifeTime matches 861..999 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~4 ~
+    execute if score @s 1A.LifeTime matches 861..999 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=1A.SkillBeam,distance=..100] at @s run tp @s ~ ~ ~ ~5 ~
     execute if score @s 1A.LifeTime matches 999 run kill @e[type=marker,tag=1A.SkillBeam,distance=..100]
 
 
