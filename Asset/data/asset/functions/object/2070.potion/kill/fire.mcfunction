@@ -11,7 +11,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.7 1 0
 
 # 火属性ダメージ
-    data modify storage api: Argument.Damage set value 20f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの炎の薬品により焼け焦げた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'

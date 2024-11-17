@@ -14,7 +14,7 @@
     effect give @a[tag=!PlayerShouldInvulnerable,distance=..3] slowness 5 2 true
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 16.0
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの氷の薬品により氷に閉ざされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'

@@ -6,6 +6,11 @@
 #   asset:mob/0104.mad_scientist/tick/summon/
 #   asset:mob/0104.mad_scientist/tick/summon/addition
 
+# 属性ごとにダメージを調整しておく
+    execute if data storage asset:context this{Element:Fire} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
+    execute if data storage asset:context this{Element:Water} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
+    execute if data storage asset:context this{Element:Thunder} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
+
 # 召喚する
     data modify storage api: Argument.ID set value 2070
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

@@ -14,7 +14,7 @@
     playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1.5 0
 
 # 雷属性ダメージ
-    data modify storage api: Argument.Damage set value 16.0
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷の薬品により感電死した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
