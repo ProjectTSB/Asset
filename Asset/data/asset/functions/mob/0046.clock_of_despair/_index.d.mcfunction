@@ -13,12 +13,12 @@
     #declare tag 1A.SkillFireMaker
     #declare tag 1A.SkillBallAEC
     #declare tag 1A.SkillBeam
-    #declare tag 1A.WallLazerClock
+    #declare tag 1A.WalllaserClock
     #declare tag 1A.This
     #
     #declare tag Landing
     #declare tag LandingTarget
-    #declare score_holder $LazerDistance
+    #declare score_holder $laserDistance
 
 #> Val
 # @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/*
