@@ -24,7 +24,7 @@
         data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     # ダメージ
         function api:damage/modifier
-        execute as @a[gamemode=!creative,distance=..2] at @s run function api:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function api:damage/
 # リセット
     function api:damage/reset
 
