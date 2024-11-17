@@ -4,6 +4,12 @@
 #
 # @within asset:object/alias/2080/kill
 
+# 実行済みならreturn
+    execute if entity @s[tag=2080.AlreadyHit] run return 0
+
+# Tagを付与
+    tag @s add 2080.AlreadyHit
+
 # 演出
     execute if entity @s[tag=!2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/normal
     execute if entity @s[tag=2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/enhanced
