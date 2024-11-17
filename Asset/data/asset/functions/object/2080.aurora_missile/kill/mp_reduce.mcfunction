@@ -23,9 +23,3 @@
 # リセット
     scoreboard players reset $MaxMP Temporary
     scoreboard players reset $ReducePer Temporary
-
-
-
-
-
-#
