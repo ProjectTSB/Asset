@@ -6,9 +6,9 @@
 
 scoreboard players add @s General.Object.Tick 1
 
-execute if score @s General.Object.Tick matches 02 run data merge entity @s {interpolation_duration:12,transformation:{translation:[0f, 0f, 0f],scale:[7f,0.05f,7f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20392}},start_interpolation:0}
+execute if score @s General.Object.Tick matches 03 run data merge entity @s {interpolation_duration:12,transformation:{translation:[0f, 0f, 0f],scale:[7f,0.05f,7f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20392}},start_interpolation:0}
 
-execute if score @s General.Object.Tick matches 02..09 run tp @s ~ ~ ~ ~5 ~
+execute if score @s General.Object.Tick matches 03..09 run tp @s ~ ~ ~ ~5 ~
 execute if score @s General.Object.Tick matches 10..16 run tp @s ~ ~ ~ ~4 ~
 execute if score @s General.Object.Tick matches 17..22 run tp @s ~ ~ ~ ~3 ~
 execute if score @s General.Object.Tick matches 23..27 run tp @s ~ ~ ~ ~2 ~
