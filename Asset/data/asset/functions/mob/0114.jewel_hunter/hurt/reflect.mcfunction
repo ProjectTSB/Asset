@@ -2,7 +2,7 @@
 #
 # 反射攻撃
 #
-# @within function asset:mob/0114.jewel_hunter/hurt/
+# @within function asset:mob/0114.jewel_hunter/hurt/reflect_cooldown
 
 #> Private
 # @private
