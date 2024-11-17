@@ -18,7 +18,8 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷の薬品により感電死した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
-    function api:damage/modifier
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
     function api:damage/reset
 
