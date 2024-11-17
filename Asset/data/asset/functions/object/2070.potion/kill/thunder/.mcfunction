@@ -23,9 +23,4 @@
     function api:damage/reset
 
 # MPを減らす
-# (難易度値 * 8)
-# 先に難易度値を取得して、何度も取得処理を繰り返さないようにする
-    function api:global_vars/get_difficulty
-    execute store result storage asset:temp 2070.MPReduceVal int 1 run data get storage api: Return.Difficulty -8
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function asset:object/2070.potion/kill/thunder/mp_reduce
-    data remove storage asset:temp 2070.MPReduceVal

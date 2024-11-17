@@ -5,5 +5,5 @@
 # @within function asset:object/2070.potion/kill/thunder/
 
 # MP減らす
-    data modify storage api: Argument.Fluctuation set from storage asset:temp 2070.MPReduceVal
+    data modify storage api: Argument.Fluctuation set from storage asset:context this.MPReduceVal
     function api:mp/fluctuation

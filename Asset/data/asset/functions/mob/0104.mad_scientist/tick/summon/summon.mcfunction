@@ -11,6 +11,11 @@
     execute if data storage asset:context this{Element:Water} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
     execute if data storage asset:context this{Element:Thunder} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
 
+# 雷ポーションなら難易度値に比例したMP減少量をフィールドに突っ込んでおく
+# MPReduceVal = (難易度値 * 8)
+    execute if data storage asset:context this{Element:Thunder} run function api:global_vars/get_difficulty
+    execute if data storage asset:context this{Element:Thunder} store result storage api: Argument.FieldOverride.MPReduceVal int -8 run data get storage api: Return.Difficulty
+
 # 召喚する
     data modify storage api: Argument.ID set value 2070
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
