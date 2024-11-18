@@ -13,7 +13,7 @@
 
 # だいたい本からコピー。
 # パーティクル
-    particle enchant ~ ~1.68 ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
+    particle enchant ~ ~ ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
 
 # 接地で上を向く
     execute unless block ~ ~-0.1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
@@ -42,6 +42,10 @@
 
 # リセット
     scoreboard players reset $OwnerID Temporary
+    tag @a[tag=1059.OwnerPlayer,distance=..80] add 1059.OwnerPlayer
+
+# 離れ過ぎたら消える
+    execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run kill @s
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=300..}]
