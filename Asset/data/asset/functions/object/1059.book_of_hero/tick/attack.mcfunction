@@ -10,6 +10,9 @@
     #declare score_holder $Damage
     #declare score_holder $Level
 
+# 演出
+    execute at @e[type=#lib:living,tag=Enemy,distance=..10,sort=nearest,limit=1] run function asset:object/1059.book_of_hero/tick/vfx
+
 # 変数
     function api:global_vars/game_progress
     execute store result score $Progress Temporary run data get storage api: Return.Progress 100
@@ -35,16 +38,12 @@
 # ダメージ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
     execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,distance=..6,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living,tag=Enemy,distance=..10,sort=nearest,limit=1] run function api:damage/
+
 # リセット
-    scoreboard players reset $OwnerID Temporary
     function api:damage/reset
-
-
-
-
-# リセット
     scoreboard players set @s 1059.ActionTime 0
+    scoreboard players reset $OwnerID Temporary
     scoreboard players reset $Damage Temporary
     scoreboard players reset $Level Temporary
     scoreboard players reset $Progress Temporary
