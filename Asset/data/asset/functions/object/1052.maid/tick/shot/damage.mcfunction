@@ -11,7 +11,7 @@
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        execute as @p[tag1052.Owner] run function lib:damage/modifier
+        execute as @p[tag=1052.Owner] run function lib:damage/modifier
         execute as @e[type=#lib:living,tag=Enemy,tag=LandingTarget,distance=..60,sort=nearest,limit=1] run function lib:damage/
 # リセット
     scoreboard players reset $OwnerID Temporary
