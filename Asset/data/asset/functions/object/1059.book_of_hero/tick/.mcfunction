@@ -32,9 +32,9 @@
 # スコア増やす
     scoreboard players add @s 1059.ActionTime 1
 # 敵が周囲にいてスコア達したら実行
-    execute if score @s 1059.ActionTime matches 15.. if entity @e[type=#lib:living,tag=Enemy,distance=..10] run function asset:object/1059.book_of_hero/tick/attack
+    execute if score @s 1059.ActionTime matches 40.. if entity @e[type=#lib:living,tag=Enemy,distance=..10] run function asset:object/1059.book_of_hero/tick/attack
 # 敵が周囲にいない状態でスコア達したらスコア戻す
-    execute if score @s 1059.ActionTime matches 15.. unless entity @e[type=#lib:living,tag=Enemy,distance=..10] run scoreboard players set @s 1059.ActionTime 0
+    execute if score @s 1059.ActionTime matches 40.. unless entity @e[type=#lib:living,tag=Enemy,distance=..10] run scoreboard players set @s 1059.ActionTime 0
 
 # カベにぶつかった際の処理
     execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
