@@ -2,7 +2,7 @@
 #
 # リセット処理
 #
-# @within function asset:mob/0092.red_rose/tick/2.tick
+# @within function asset:mob/0092.red_rose/tick/
 
 # スコアを戻す
     scoreboard players set @s 2K.Time 0

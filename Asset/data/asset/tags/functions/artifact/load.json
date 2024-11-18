@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/0002.blessing/trigger/0.load",
         "asset:artifact/1024.brave_rod/trigger/0.load",
         "asset:artifact/0837.the_world_knife/trigger/0.load",
         "asset:artifact/0600.xtal/trigger/0.load",
@@ -48,7 +49,6 @@
         "asset:artifact/0152.call_cat/trigger/0.load",
         "asset:artifact/0295.call_elemental_familiar/trigger/0.load",
         "asset:artifact/0278.reveille/trigger/0.load",
-        "asset:artifact/0456.potion_of_stalling_power/trigger/0.load",
         "asset:artifact/0078.self_destruct_order/trigger/0.load",
         "asset:artifact/0573.final_prism/trigger/0.load",
         "asset:artifact/0210.terra_blade/trigger/0.load",

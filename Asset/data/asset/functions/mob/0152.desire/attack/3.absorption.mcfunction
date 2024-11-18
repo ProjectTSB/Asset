@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0152.desire/attack/2.attack
+# @within function asset:mob/0152.desire/attack/
 #> private
 # @private
     #declare score_holder $MPCheck

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0131.haruclaire/tick/2.tick
+# @within function asset:mob/0131.haruclaire/tick/
 
 # アイスエリア
     execute if entity @s[tag=3N.SkillIceArea] run function asset:mob/0131.haruclaire/tick/skill_ice_area/1.skill_ice_area
