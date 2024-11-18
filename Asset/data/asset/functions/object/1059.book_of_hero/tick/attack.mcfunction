@@ -37,13 +37,12 @@
     data modify storage api: Argument.ElementType set value "None"
 # ダメージ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
+    execute as @p[tag=1059.OwnerPlayer] run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,distance=..10,sort=nearest,limit=1] run function api:damage/
 
 # リセット
     function api:damage/reset
     scoreboard players set @s 1059.ActionTime 0
-    scoreboard players reset $OwnerID Temporary
     scoreboard players reset $Damage Temporary
     scoreboard players reset $Level Temporary
     scoreboard players reset $Progress Temporary

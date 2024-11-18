@@ -40,6 +40,8 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
+# リセット
+    scoreboard players reset $OwnerID Temporary
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    kill @s[scores={General.Object.Tick=300..}]
