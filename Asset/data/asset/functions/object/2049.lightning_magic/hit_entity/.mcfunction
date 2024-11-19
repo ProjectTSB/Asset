@@ -5,7 +5,7 @@
 # @within asset:object/alias/2049/hit_entity
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 30f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
@@ -18,4 +18,3 @@
 
 # 消滅
     function asset:object/call.m {method:kill}
-
