@@ -5,6 +5,3 @@
 # @within asset:object/alias/1040/detect_hit_entity
 
 # 何もしない
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

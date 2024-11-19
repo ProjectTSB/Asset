@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1039/init
 
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
-
 # フィールドから各データを取得
 
 # 向き

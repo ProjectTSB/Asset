@@ -6,6 +6,3 @@
 
 # 15tick以降にブロック接触判定
     execute if entity @s[scores={General.Object.Tick=15..}] unless block ~ ~-0.2 ~ #lib:no_collision run data modify storage asset:context IsHitBlock set value true
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
