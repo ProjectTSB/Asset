@@ -24,4 +24,3 @@
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
-
