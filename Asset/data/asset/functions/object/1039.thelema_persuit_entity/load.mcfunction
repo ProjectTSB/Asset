@@ -7,4 +7,4 @@
 #> 定義類はここに
 # @within function asset:object/1039.thelema_persuit_entity/**
     scoreboard objectives add 1039.UserID dummy
-    scoreboard objectives add 1039.MaxHP5Per dummy
+    scoreboard objectives add 1039.SwordCount dummy

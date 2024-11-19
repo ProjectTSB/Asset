@@ -7,5 +7,5 @@
 # 召喚
     data modify storage api: Argument.ID set value 1040
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
-    execute store result storage api: Argument.FieldOverride.MaxHP double 1.0 run data get storage asset:context this.MaxHP
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     function api:object/summon

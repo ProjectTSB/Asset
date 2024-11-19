@@ -15,5 +15,5 @@
 # UserID
     execute store result score @s 1039.UserID run data get storage asset:context this.UserID
 
-# 最大体力の5%
-    execute store result score @s 1039.MaxHP5Per run data get storage asset:context this.MaxHP 0.05
+# 剣の本数
+    execute store result score @s 1039.SwordCount run data get storage asset:context this.SwordCount
