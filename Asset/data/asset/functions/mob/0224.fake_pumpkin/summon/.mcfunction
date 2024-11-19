@@ -5,4 +5,4 @@
 # @within asset:mob/alias/224/summon
 
 # 元となるMobを召喚する
-    summon husk ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0224.fake_pumpkin"}
+    summon husk ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}
