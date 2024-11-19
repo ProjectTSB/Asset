@@ -17,7 +17,7 @@
     execute if entity @s[scores={General.Object.Tick=..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # それ以降は前進する
-    execute if entity @s[scores={General.Object.Tick=21}] run data modify storage asset:context this.MovePerStep set value 1
+    execute if entity @s[scores={General.Object.Tick=21}] run data modify storage asset:context this.MovePerStep set value 0.7
 
 # 消滅
     execute if entity @s[scores={General.Object.Tick=50..}] run function asset:object/call.m {method:kill}

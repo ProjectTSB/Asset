@@ -12,7 +12,7 @@
     data modify storage asset:context this.Range set value 50
 # Enhancedタグがあるか否かでMovePerStepを変える
     execute if entity @s[tag=!2080.Enhanced] run data modify storage asset:context this.MovePerStep set value 0.35
-    execute if entity @s[tag=2080.Enhanced] run data modify storage asset:context this.MovePerStep set value 0.7
+    execute if entity @s[tag=2080.Enhanced] run data modify storage asset:context this.MovePerStep set value 0.5
 
 # スーパーメソッド呼び出し
     function asset:object/super.init
