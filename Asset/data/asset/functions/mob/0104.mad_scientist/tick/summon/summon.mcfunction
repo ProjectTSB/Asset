@@ -7,9 +7,9 @@
 #   asset:mob/0104.mad_scientist/tick/summon/addition
 
 # 属性ごとにダメージを調整しておく
-    execute if data storage asset:context this{Element:Fire} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
-    execute if data storage asset:context this{Element:Water} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
-    execute if data storage asset:context this{Element:Thunder} run data modify storage api: Argument.FieldOverride.Damage set value 20.0f
+    execute if data storage asset:context this{Element:Fire} run data modify storage api: Argument.FieldOverride.Damage set value 24.0f
+    execute if data storage asset:context this{Element:Water} run data modify storage api: Argument.FieldOverride.Damage set value 16.0f
+    execute if data storage asset:context this{Element:Thunder} run data modify storage api: Argument.FieldOverride.Damage set value 16.0f
 
 # 雷ポーションなら難易度値に比例したMP減少量をフィールドに突っ込んでおく
 # MPReduceVal = (難易度値 * -8)
