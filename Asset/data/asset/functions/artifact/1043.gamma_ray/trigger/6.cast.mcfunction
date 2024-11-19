@@ -19,14 +19,15 @@
     scoreboard players operation $SZ.Damage Temporary = @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary *= @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary /= $5 Const
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation $SZ.Damage Temporary += $200 Const
+    execute store result storage api: Argument.Damage float 1 run scoreboard players operation $SZ.Damage Temporary += $200 Const
 
 # ダメージ
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[tag=SZ.Landing,distance=..28] run function lib:damage/
-    
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=SZ.Landing,distance=..28] run function api:damage/
+    function api:damage/reset
+
 # 演出
     execute if score @s SZ.CastTick matches 0..20 anchored eyes run function asset:artifact/1043.gamma_ray/trigger/cast_vfx/1
     execute if score @s SZ.CastTick matches 21..40 anchored eyes run function asset:artifact/1043.gamma_ray/trigger/cast_vfx/2
@@ -45,7 +46,7 @@
     execute if score @s SZ.CastTick matches 101.. anchored eyes run playsound entity.warden.sonic_boom player @a[distance=..32] ~ ~ ~ 1 1.99
 
 # リセット
-    function lib:damage/reset
     tag @s remove SZ.Cast
     tag @e[tag=SZ.Landing,distance=..28] remove SZ.Landing
     scoreboard players reset @s SZ.CastTick
+    scoreboard players reset $SZ.Damage Temporary
