@@ -24,6 +24,3 @@
 # 100.. 汎用Tick > KillTickなら消滅
     execute if entity @s[scores={General.Object.Tick=80..99}] run kill @s
     execute if score @s General.Object.Tick >= @s 2049.KillTick run kill @s
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

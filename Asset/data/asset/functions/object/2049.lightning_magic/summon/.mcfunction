@@ -6,6 +6,3 @@
 
 # 元となるEntityを召喚する
     summon marker ~ ~ ~ {Rotation:[0.0f,90.0f],Tags:["ObjectInit"]}
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

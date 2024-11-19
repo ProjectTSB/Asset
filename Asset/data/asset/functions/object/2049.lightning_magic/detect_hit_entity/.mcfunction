@@ -6,6 +6,3 @@
 
 # 地面に着いた後、かつIntervalTagのある時のみ判定
     execute if entity @s[tag=2049.OnGround,tag=2049.Interval] if entity @p[distance=..1.2] run data modify storage asset:context IsHitEntity set value true
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

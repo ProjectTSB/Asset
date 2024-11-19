@@ -12,6 +12,3 @@
 
 # Tag削除
     tag @s[tag=2049.RunOnce] remove 2049.RunOnce
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
