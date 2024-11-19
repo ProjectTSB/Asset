@@ -6,6 +6,3 @@
 
 # 何もしない
 # プレイヤーに当たっても何もないため
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
