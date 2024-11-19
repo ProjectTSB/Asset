@@ -31,6 +31,8 @@
         "asset:effect/0613.white_curse/_/tick",
         "asset:effect/0616.lightning_curse/_/tick",
         "asset:effect/0124.darkness/_/tick",
+        "asset:effect/0261.gale_blessing/_/tick",
+        "asset:effect/0210.fading_speed/_/tick",
         "asset:effect/0203.secret_meat/_/tick"
     ]
 }
