@@ -1643,47 +1643,6 @@
                         "   data modify storage api: Argument.ID set value %id%",
                         "   function api:mob/summon"
                     ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/loot_tables/mob/death/%namespace%.json",
-                    "content": {
-                        "type": "entity",
-                        "pools": [
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "asset:mob/death/abstract_detect_item",
-                                        "functions": [
-                                            {
-                                                "function": "set_nbt",
-                                                "tag": "{TSB:{ID:%id%}}"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "entities/%entity%"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
                 }
             ]
         },
@@ -1701,7 +1660,7 @@
                         "# @within asset:mob/alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
-                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"],DeathLootTable:\"asset:mob/death/%namespace%\"}",
+                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
                         ""
                     ]
                 },
@@ -2552,6 +2511,8 @@
                         "    # data modify storage asset:object ExtendsSafe set value ",
                         "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
                         "    data modify storage asset:object IsAbstract set value false",
+                        "# Tickするかどうか(boolean) (オプション)",
+                        "    # data modify storage asset:object IsTicking set value ",
                         "",
                         "# ID (int)",
                         "    data modify storage asset:object ID set value %id%",
