@@ -13,7 +13,7 @@
     execute at @s run particle dust 0.851 0 1 1.5 ~ ~3 ~ 0.4 2 0.4 0 200 normal @a
 
 # 頭を変える
-    execute at @s run item replace entity @s armor.head with stick{CustomModelData:20394}
+    #execute at @s run item replace entity @s armor.head with stick{CustomModelData:20394}
 
 # NoAI解除
     data modify entity @s NoAI set value 0b

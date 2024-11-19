@@ -13,5 +13,8 @@
 # カボチャの雨の終わり
     execute if entity @s[scores={General.Mob.Tick=300}] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/end
 
+# endの1tick後に姿を現す そうしないと上から降りてくるのが見えてしまう
+    execute if entity @s[scores={General.Mob.Tick=305}] at @s run item replace entity @s armor.head with stick{CustomModelData:20394}
+
 # リセット
     execute if entity @s[scores={General.Mob.Tick=360..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
