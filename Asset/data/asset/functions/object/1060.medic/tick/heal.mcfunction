@@ -23,3 +23,4 @@
     execute as @a[distance=..5] run function api:heal/
 # リセット
     function api:heal/reset
+    scoreboard players reset $OwnerID Temporary
