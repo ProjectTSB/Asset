@@ -6,6 +6,8 @@
 
 # 演出
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
+    particle dust 1 0.6 0 1.5 ~ ~3 ~ 0.4 2 0.4 0 200 normal @a
+    particle dust 0.851 0 1 1.5 ~ ~3 ~ 0.4 2 0.4 0 200 normal @a
 
 # 自身は透明化して上空で待機する
     item replace entity @s armor.head with air

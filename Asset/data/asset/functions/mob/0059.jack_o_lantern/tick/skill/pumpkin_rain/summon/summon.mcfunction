@@ -2,7 +2,10 @@
 #
 # 召喚処理
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/*
+# @within function
+#   asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/select_pos
+#   asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/predict_summon.m
+#   asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/spread
 
 # ランダムな方向を向かせる
     execute store result score $Random Temporary run function lib:random/

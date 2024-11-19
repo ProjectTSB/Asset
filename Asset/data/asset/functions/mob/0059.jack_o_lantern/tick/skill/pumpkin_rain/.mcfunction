@@ -11,7 +11,7 @@
     execute if entity @s[scores={General.Mob.Tick=20..240}] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/summon/
 
 # カボチャの雨の終わり
-    execute if entity @s[scores={General.Mob.Tick=260}] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/end
+    execute if entity @s[scores={General.Mob.Tick=300}] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/end
 
 # リセット
-    execute if entity @s[scores={General.Mob.Tick=300..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={General.Mob.Tick=360..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset
