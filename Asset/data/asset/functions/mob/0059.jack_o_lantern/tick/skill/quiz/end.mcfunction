@@ -11,7 +11,7 @@
     execute if entity @s[tag=1N.Quiz.Glowing] run playsound block.fire.extinguish hostile @a ~ ~ ~ 1 0.7 0
     execute if entity @s[tag=1N.Quiz.Glowing] run effect clear @s speed
 
-# 発光状態用Tagを付与
+# 発光状態用Tagを削除
     tag @s remove 1N.DisableParticle
 
 # 頭を元に戻す
