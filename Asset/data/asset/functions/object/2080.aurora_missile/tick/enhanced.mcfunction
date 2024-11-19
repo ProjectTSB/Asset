@@ -14,7 +14,7 @@
     scoreboard players reset $Interval Temporary
 
 # 最初の20tickは誘導弾になる
-    execute if entity @s[scores={General.Object.Tick=..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Object.Tick=..20}] facing entity @p feet positioned ^ ^ ^-150 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # それ以降は前進する
     execute if entity @s[scores={General.Object.Tick=21}] run data modify storage asset:context this.MovePerStep set value 0.7
