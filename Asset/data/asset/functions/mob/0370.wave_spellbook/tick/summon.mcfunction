@@ -12,9 +12,6 @@
 # Rotation[1]は45で固定
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ 45
 
-# FieldOverrideへRotationを突っ込む
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-
 # ノーマル以上ならDebuffをtrueに
     execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
 
@@ -37,6 +34,8 @@
 
 # 弾を召喚
     data modify storage api: Argument.ID set value 2048
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..3,limit=1] MobUUID
     function api:object/summon
 
