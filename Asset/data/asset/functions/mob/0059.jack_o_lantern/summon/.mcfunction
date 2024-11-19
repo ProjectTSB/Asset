@@ -5,5 +5,4 @@
 # @within asset:mob/alias/59/summon
 
 # 元となるMobを召喚する
-# 一部スキルで使用するのでカボチャのscale0のitem_displayを被せておく
-    summon husk ~ ~ ~ {DeathTime:19s,Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiBurn","AntiVoid"],DeathLootTable:"asset:mob/death/0059.jack_o_lantern"}
+    summon husk ~ ~ ~ {DeathTime:19s,Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiBurn","AntiVoid"],DeathLootTable:"empty"}
