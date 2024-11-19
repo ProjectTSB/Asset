@@ -13,7 +13,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.2 0.9 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 34f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID

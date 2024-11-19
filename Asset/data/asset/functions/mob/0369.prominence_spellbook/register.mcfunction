@@ -65,4 +65,5 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+# ダメージ
+    data modify storage asset:mob Field.Damage set value 34
