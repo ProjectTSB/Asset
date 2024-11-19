@@ -14,3 +14,6 @@
 
 # 40%以下ならTagを付与
     execute if score $Per Temporary matches ..40 run tag @s add 1N.HealthLess40Per
+
+# リセット
+    scoreboard players reset $Per Temporary
