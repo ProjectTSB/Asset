@@ -17,7 +17,7 @@
     #declare tag AW.WaterMagicDisplay
     #declare tag AW.AnnounceLine
     #declare tag AW.AnnounceLineEven
-    #declare tag AW.Inbisible
+    #declare tag AW.Invisible
     #declare tag AW.AnnounceInit
     #declare tag AW.QuietusRain
     #declare tag AW.QuietusRainMagic

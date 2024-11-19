@@ -5,8 +5,8 @@
 # @within function asset:mob/0391.axia_first/tick/
 
 # スコアが正かつ透明状態なら可視化
-    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.Inbisible] run data modify entity @s item set value {id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16711731},CustomModelData:20335}}
-    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.Inbisible] run tag @s remove AV.Inbisible
+    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.Invisible] run data modify entity @s item set value {id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16711731},CustomModelData:20335}}
+    execute if score @s AV.ProjectileTick matches 1.. if entity @s[tag=AV.Invisible] run tag @s remove AV.Invisible
 
 # スコア反転
     execute if score @s AV.ProjectileTick matches ..-1 run scoreboard players operation @s AV.ProjectileTick *= $-1 Const

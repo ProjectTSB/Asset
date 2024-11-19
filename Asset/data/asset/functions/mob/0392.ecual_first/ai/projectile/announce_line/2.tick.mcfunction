@@ -5,8 +5,8 @@
 # @within function asset:mob/0392.ecual_first/tick/
 
 # スコアが正かつ透明状態なら可視化
-    execute if score @s AW.ProjectileTick matches 1.. if entity @s[tag=AW.Inbisible] run data merge entity @s {teleport_duration:1,transformation:{scale:[0.1f,0.1f,40f]}}
-    execute if score @s AW.ProjectileTick matches 1.. if entity @s[tag=AW.Inbisible] run tag @s remove AW.Inbisible
+    execute if score @s AW.ProjectileTick matches 1.. if entity @s[tag=AW.Invisible] run data merge entity @s {teleport_duration:1,transformation:{scale:[0.1f,0.1f,40f]}}
+    execute if score @s AW.ProjectileTick matches 1.. if entity @s[tag=AW.Invisible] run tag @s remove AW.Invisible
 
 # スコア反転
     execute if score @s AW.ProjectileTick matches ..-1 run scoreboard players operation @s AW.ProjectileTick *= $-1 Const

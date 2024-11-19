@@ -13,5 +13,5 @@
 
 # 初期化タグ消去
     tag @s add AW.AnnounceLine
-    tag @s add AW.Inbisible
+    tag @s add AW.Invisible
     tag @s remove AW.AnnounceInit

@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/
 
-# Tempタグ付与
-    tag @s add AV.Temp.This
-
 # 近くのプレイヤーの方を向く
 # 最初の方だけ向く処理を入れる
     execute if score @s AV.AnimationTick matches 1..12 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
@@ -38,6 +35,3 @@
 # ダメージ
     execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
     execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
-
-# Tempタグ消去
-    tag @s remove AV.Temp.This

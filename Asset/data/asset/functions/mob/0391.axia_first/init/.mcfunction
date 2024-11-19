@@ -10,7 +10,7 @@
 
 # スコア初期化
     scoreboard players set @s AV.AnimationTick 0
-    scoreboard players set @s AV.AnimationNum 1000
+    scoreboard players set @s AV.AnimationNum 20
     scoreboard players set @s AV.FalterCount 0
 
 # animated javaモデル召喚
@@ -20,5 +20,5 @@
     execute positioned ~ ~99 ~ as @e[type=item_display,distance=..0.1] run data modify entity @s teleport_duration set value 1
 
 # 登場演出時は干渉付加
-    data modify entity @s Invulnerable set value 1b
-    tag @s add Uninterferable
+#    data modify entity @s Invulnerable set value 1b
+#    tag @s add Uninterferable

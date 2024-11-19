@@ -13,7 +13,7 @@
     #declare tag AV.SlashEffect
     #declare tag AV.SlashEffectMini
     #declare tag AV.SlashEffectInit
-    #declare tag AV.Inbisible
+    #declare tag AV.Invisible
     #declare tag AV.SlashSonicInit
     #declare tag AV.SlashSonic
     #declare tag AV.Predict
@@ -27,6 +27,7 @@
     #declare tag AV.CriticalOpening
     #declare tag AV.SuperiorSkill
     #declare tag AV.Death
+    #declare tag 2001.CustomEffect
 
 #> val
 # @within function asset:mob/0391.axia_first/**
