@@ -52,3 +52,9 @@
         data modify storage asset:mob Resist.Water set value 1.0
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
+
+# フィールド
+# ダメージの属性別設定
+    data modify storage asset:mob Field.Damage set value {Fire:24.0f,Water:16.0f,Thunder:16.0f}
+# 基礎MP減少量設定
+    data modify storage asset:mob Field.MPReduceVal set value -8
