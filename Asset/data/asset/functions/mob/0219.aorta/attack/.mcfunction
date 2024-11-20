@@ -2,7 +2,11 @@
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0219.aorta/_/attack
+# @within function asset:mob/alias/219/attack
+
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
 
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle dust 0.769 0 0 2 ~ ~1 ~ 0.6 0.6 0.6 0 50 normal @a

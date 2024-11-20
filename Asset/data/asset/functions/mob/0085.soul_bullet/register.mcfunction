@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0085.soul_bullet/_/register
+# @within function asset:mob/alias/85/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
