@@ -1,8 +1,13 @@
-#> asset:artifact/0973.call_rod_spirit/trigger/shot/5.hit
+#> asset:object/1030.barrage_spirit_bullet/kill/damage
 #
-# ショットヒット時
 #
-# @within function asset:artifact/0973.call_rod_spirit/trigger/shot/4.move
+#
+# @within function asset:object/1030.barrage_spirit_bullet/kill/
+
+#> private
+# @private
+    #declare score_holder $RandomDamage
+    #declare score_holder $OwnerID
 
 # ダメージ値設定
     #ダメージブレのための処理
@@ -20,7 +25,8 @@
     data modify storage lib: Argument.ElementType set value "None"
 
 # マスターとして補正functionを実行
-    execute at @a if score @s R1.UserID = @p UserID as @p run function lib:damage/modifier
+    execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
+    execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
 
 # ダメージ実行
     execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function lib:damage/
@@ -28,6 +34,4 @@
 # リセット
     function lib:damage/reset
     scoreboard players reset $RandomDamage Temporary
-
-# キル
-    function asset:artifact/0973.call_rod_spirit/trigger/shot/6.break
+    scoreboard players reset $OwnerID Temporary
