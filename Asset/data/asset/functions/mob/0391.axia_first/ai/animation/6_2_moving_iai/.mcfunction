@@ -8,11 +8,9 @@
     execute if score @s AV.AnimationTick matches 1 run scoreboard players operation @s AV.UUID = @r[tag=!PlayerShouldInvulnerable,distance=..100] UserID
 
 # 近くのプレイヤーの方を向く
-    tag @s add AV.Temp.This
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
     execute if score @s AV.AnimationTick matches 1..45 as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 57..66 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/7_0_moving_iai/play

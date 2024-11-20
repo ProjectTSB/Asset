@@ -6,9 +6,7 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 161..187 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_0_warp_start/play

@@ -9,7 +9,6 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    tag @s add AV.Temp.This
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
     execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/min/hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
@@ -18,7 +17,6 @@
     execute if score @s AV.AnimationTick matches 230..243 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 244..253 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     scoreboard players reset $AV.Temp AV.UUID
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/14_0_opening_attack/play
@@ -34,7 +32,7 @@
 
 # クリティカルヒット 配置
     execute if score @s AV.AnimationTick matches 1 run function asset:mob/0391.axia_first/ai/projectile/critical/0.summon
-    execute if score @s AV.AnimationTick matches 1 run tag @e[tag=AV.CriticalHit,distance=..64] add AV.CriticalOpening
+    execute if score @s AV.AnimationTick matches 1 run tag @e[tag=2016.Critical,distance=..64] add 2016.Opening
 
 # 衝撃波 配置
     execute if score @s AV.AnimationTick matches 81 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/1
@@ -80,7 +78,6 @@
     execute if score @s AV.AnimationTick matches 262 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/4
 
 # 自機狙い
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 253 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
     execute if score @s AV.AnimationTick matches 268 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
     execute if score @s AV.AnimationTick matches 281 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
@@ -98,4 +95,3 @@
     execute if score @s AV.AnimationTick matches 265 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
     execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
     execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    tag @s remove AV.Temp.This

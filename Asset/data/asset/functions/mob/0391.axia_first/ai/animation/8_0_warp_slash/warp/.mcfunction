@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
 
-# 自身にタグ付け
-    tag @s add AV.Temp.This
-
 # 攻撃対象にTagを付与
     tag @r[tag=!PlayerShouldInvulnerable,distance=..100] add AV.Temp.Target
 
@@ -33,5 +30,4 @@
 
 # リセット
     tag @p[tag=AV.Temp.Target,distance=..100] remove AV.Temp.Target
-    tag @s remove AV.Temp.This
     data remove storage asset:temp Predict

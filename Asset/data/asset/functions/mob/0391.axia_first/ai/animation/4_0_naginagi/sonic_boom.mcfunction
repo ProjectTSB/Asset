@@ -4,14 +4,9 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/
 
-# Tempタグ付与
-    tag @s add AV.Temp.This
+# オーバーライドを設定
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"minecraft:leather_horse_armor"},Color:16711731,Frames:[20356,20357,20358,20359,20360,20361,20362],Scale:[20f,20f,0.1f],Transformation:{left_rotation:[-0.5f,-0.5f,-0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
 
-# ディスプレイ召喚
-    summon item_display ^ ^0.2 ^ {interpolation_duration:0,Tags:["AV.SlashEffectInit"],brightness:{sky:15,block:15},transformation:{left_rotation:[-0.5f,-0.5f,-0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[20f,20f,0.1f]},item:{id:"air",Count:1b}}
-
-# 斬撃エフェクト初期化
-    execute positioned ^ ^0.2 ^ as @e[tag=AV.SlashEffectInit,distance=..0.1] run function asset:mob/0391.axia_first/ai/projectile/sonic_boom/1.init
-
-# Tempタグ消去
-    tag @s remove AV.Temp.This
+# 召喚
+    data modify storage api: Argument.ID set value 2001
+    execute positioned ^ ^0.2 ^ run function api:object/summon

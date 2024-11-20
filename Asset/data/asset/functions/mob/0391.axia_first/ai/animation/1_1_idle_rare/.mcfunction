@@ -7,7 +7,6 @@
 # ノーマルは80Tick
 # ハードは40Tick
 # 近くのプレイヤーの方を向く
-    tag @s add AV.Temp.This
     execute as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
 
 # アニメーション再生

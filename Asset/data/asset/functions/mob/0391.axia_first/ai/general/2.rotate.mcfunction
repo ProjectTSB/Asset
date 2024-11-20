@@ -13,4 +13,3 @@
     execute as @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] at @s rotated ~ 0 positioned ^ ^ ^1 facing entity @e[tag=AV.Temp.Target,distance=..66,limit=1] feet rotated ~ 0 positioned ^ ^ ^1 if entity @e[type=wither_skeleton,tag=this,distance=..0.1,sort=nearest,limit=1] at @s run tp @s ^ ^ ^ ~1 ~
 # 終了
     tag @s remove AV.Temp.Target
-    tag @e[type=wither_skeleton,tag=this,distance=..64] remove this

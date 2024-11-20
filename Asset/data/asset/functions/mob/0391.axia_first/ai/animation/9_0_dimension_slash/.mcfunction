@@ -6,13 +6,11 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 1..98 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     execute if score @s AV.AnimationTick matches 125..152 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 153..162 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/11_0_dimension_slash/play
@@ -22,7 +20,6 @@
 
 # ディメンションソード 召喚
 # 偏差撃ち
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 31 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
     execute if score @s AV.AnimationTick matches 41 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
     execute if score @s AV.AnimationTick matches 51 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/predict
@@ -57,12 +54,11 @@
     execute if score @s AV.AnimationTick matches 78 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
     execute if score @s AV.AnimationTick matches 83 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
     execute if score @s AV.AnimationTick matches 88 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    tag @s remove AV.Temp.This
 
 
 # 斬撃飛ばし
     execute if score @s AV.AnimationTick matches 124 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/slash_summon
-    execute if score @s AV.AnimationTick matches 124 run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/slash_sonic_start
+    execute if score @s AV.AnimationTick matches 124 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/slash_sonic_start
     execute if score @s AV.AnimationTick matches 99 run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/announce_line
 
 # TP

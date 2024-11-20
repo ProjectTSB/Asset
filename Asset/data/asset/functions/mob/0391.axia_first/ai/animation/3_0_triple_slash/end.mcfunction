@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/
 
-# デバッグ用　アニメーションループ
-#    scoreboard players set @s AV.AnimationNum 30
-#    scoreboard players set @s AV.AnimationTick 0
-
 # 上位スキルタグを付ける
     tag @s add AV.SuperiorSkill
 

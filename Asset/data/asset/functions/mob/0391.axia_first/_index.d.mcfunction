@@ -7,7 +7,6 @@
     #declare tag AV.Marker.Movement
     #declare tag AV.ModelRoot
     #declare tag AV.Root.This
-    #declare tag AV.Temp.This
     #declare tag AV.Temp.Target
     #declare tag AV.Landing
     #declare tag AV.SlashEffect
@@ -28,6 +27,9 @@
     #declare tag AV.SuperiorSkill
     #declare tag AV.Death
     #declare tag 2001.CustomEffect
+    #declare tag 2013.SonicBoomSlash
+    #declare tag 2016.Critical
+    #declare tag 2016.Opening
 
 #> val
 # @within function asset:mob/0391.axia_first/**

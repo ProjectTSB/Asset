@@ -6,12 +6,10 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 1..130 if predicate api:global_vars/difficulty/min/hard as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 1..45 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 56..59 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 70..85 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/12_0_kourai/play
@@ -21,12 +19,12 @@
 
 # 斬撃エフェクト
     execute if score @s AV.AnimationTick matches 55 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/1
-    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/2
-    execute if score @s AV.AnimationTick matches 80 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/3
+    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/1
+    execute if score @s AV.AnimationTick matches 80 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/2
     execute if score @s AV.AnimationTick matches 81..90 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_rotate
-    execute if score @s AV.AnimationTick matches 95 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/4
-    execute if score @s AV.AnimationTick matches 107 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/5
-    execute if score @s AV.AnimationTick matches 119 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/6
+    execute if score @s AV.AnimationTick matches 95 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/3
+    execute if score @s AV.AnimationTick matches 107 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/3
+    execute if score @s AV.AnimationTick matches 119 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/1
 
 # ダメージ
     execute if score @s AV.AnimationTick matches 55 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/damage
@@ -47,10 +45,10 @@
 
 # 斬撃飛ばし
     execute if score @s AV.AnimationTick matches 55 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/1
-    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/2
-    execute if score @s AV.AnimationTick matches 95 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/3
-    execute if score @s AV.AnimationTick matches 107 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/4
-    execute if score @s AV.AnimationTick matches 119 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/5
+    execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/1
+    execute if score @s AV.AnimationTick matches 95 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/2
+    execute if score @s AV.AnimationTick matches 107 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/2
+    execute if score @s AV.AnimationTick matches 119 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_sonic_start/1
     execute if score @s AV.AnimationTick matches 45 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/announce_line
     execute if score @s AV.AnimationTick matches 59 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/announce_line
     execute if score @s AV.AnimationTick matches 85 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/announce_line

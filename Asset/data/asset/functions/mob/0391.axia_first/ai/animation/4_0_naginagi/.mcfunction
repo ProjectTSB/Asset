@@ -5,9 +5,7 @@
 # @within function asset:mob/0391.axia_first/ai/animation/
 
 # 近くのプレイヤーの方を向く
-    tag @s add AV.Temp.This
     execute if score @s AV.AnimationTick matches 1..12 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    tag @s remove AV.Temp.This
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/4_0_naginagi/play
@@ -19,15 +17,15 @@
     # 1発目
         execute if score @s AV.AnimationTick matches 18 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_summon/1
     # 1発目回転
-        execute if score @s AV.AnimationTick matches 19..27 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/1
+        execute if score @s AV.AnimationTick matches 20..27 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/1
     # 2発目
         execute if score @s AV.AnimationTick matches 31 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_summon/2
     # 2発目回転
-        execute if score @s AV.AnimationTick matches 32..38 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/2
+        execute if score @s AV.AnimationTick matches 33..38 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/2
     # 3発目
         execute if score @s AV.AnimationTick matches 43 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_summon/3
     # 3発目回転
-        execute if score @s AV.AnimationTick matches 44..47 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/3
+        execute if score @s AV.AnimationTick matches 45..47 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/slash_rotate/3
     # ソニックブーム
         execute if score @s AV.AnimationTick matches 18 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/sonic_boom
         execute if score @s AV.AnimationTick matches 31 run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/sonic_boom
