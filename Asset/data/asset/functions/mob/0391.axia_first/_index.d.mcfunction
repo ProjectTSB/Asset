@@ -9,21 +9,9 @@
     #declare tag AV.Root.This
     #declare tag AV.Temp.Target
     #declare tag AV.Landing
-    #declare tag AV.SlashEffect
-    #declare tag AV.SlashEffectMini
-    #declare tag AV.SlashEffectInit
-    #declare tag AV.Invisible
-    #declare tag AV.SlashSonicInit
-    #declare tag AV.SlashSonic
     #declare tag AV.Predict
-    #declare tag AV.SonicBoomEffect
     #declare tag AV.AnnounceInit
     #declare tag AV.AnnounceLine
-    #declare tag AV.DimSword
-    #declare tag AV.DimSwordDisplay
-    #declare tag AV.ShockWave
-    #declare tag AV.CriticalHit
-    #declare tag AV.CriticalOpening
     #declare tag AV.SuperiorSkill
     #declare tag AV.Death
     #declare tag 2001.CustomEffect
