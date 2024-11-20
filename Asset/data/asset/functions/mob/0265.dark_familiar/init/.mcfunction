@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0265.dark_familiar/_/init
+# @within function asset:mob/alias/265/init
 
 # 降りてくる
     execute at @s run tp @s ~ ~-1000 ~

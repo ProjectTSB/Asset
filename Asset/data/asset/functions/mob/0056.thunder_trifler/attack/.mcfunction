@@ -2,7 +2,11 @@
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/0056.thunder_trifler/_/attack
+# @within function asset:mob/alias/56/attack
+
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
 
 # 演出
     particle minecraft:dust 1 1 0 2 ~ ~ ~ 0.8 0.8 0.8 0.1 20 normal @a
