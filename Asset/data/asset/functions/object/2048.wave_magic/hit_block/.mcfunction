@@ -7,5 +7,3 @@
 # 着陸前のみ判定
     execute if entity @s[tag=!2048.OnGround] run function asset:object/2048.wave_magic/hit_block/in_air
 
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

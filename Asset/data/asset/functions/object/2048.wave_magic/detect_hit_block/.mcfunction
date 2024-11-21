@@ -8,6 +8,3 @@
     execute if entity @s[tag=!2048.OnGround] unless block ^ ^ ^0.5 #lib:no_collision run data modify storage asset:context IsHitBlock set value true
 
 # 着陸後のヒット判定はtickで行う
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
