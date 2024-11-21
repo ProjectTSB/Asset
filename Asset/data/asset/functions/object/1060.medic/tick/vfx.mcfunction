@@ -1,4 +1,4 @@
-#> asset:object/1060.medic/tick/heal
+#> asset:object/1060.medic/tick/vfx
 #
 #
 #
