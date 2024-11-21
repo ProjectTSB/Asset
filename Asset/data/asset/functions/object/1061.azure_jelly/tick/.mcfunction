@@ -14,7 +14,7 @@
 
 # インターバル
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    scoreboard players operation $Interval Temporary %= $60 Const
+    scoreboard players operation $Interval Temporary %= $30 Const
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
@@ -26,7 +26,8 @@
     execute if score $Interval Temporary matches 0 if entity @p[tag=1061.Owner,distance=..8] run function asset:object/1061.azure_jelly/tick/random_rotate
 
 # 移動
-    tp @s ^ ^ ^0.1
+    execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ -30
+    execute if score $Interval Temporary matches 0..29 at @s run tp @s ^ ^ ^0.3 ~ ~2
 
 
 
@@ -35,4 +36,4 @@
     tag @p[tag=1061.Owner] remove 1061.Owner
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=100..}]
+    kill @s[scores={General.Object.Tick=600..}]
