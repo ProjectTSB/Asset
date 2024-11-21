@@ -14,22 +14,34 @@
 
 # インターバル
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    scoreboard players operation $Interval Temporary %= $30 Const
+    scoreboard players operation $Interval Temporary %= $42 Const
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
 # 周囲にOwnerがいなければOwnerの方を向く
-    execute if score $Interval Temporary matches 0 unless entity @p[tag=1061.Owner,distance=..8] facing entity @p[tag=1061.Owner] eyes run function asset:object/1061.azure_jelly/tick/forward_spread
+    execute if score $Interval Temporary matches 0 unless entity @p[tag=1061.Owner,distance=..5] facing entity @p[tag=1061.Owner] eyes run function asset:object/1061.azure_jelly/tick/forward_spread
 
 # 周囲にOwnerがいればランダムな方向を向く
-    execute if score $Interval Temporary matches 0 if entity @p[tag=1061.Owner,distance=..8] run function asset:object/1061.azure_jelly/tick/random_rotate
+    execute if score $Interval Temporary matches 0 if entity @p[tag=1061.Owner,distance=..5] run function asset:object/1061.azure_jelly/tick/random_rotate
+
+# 演出
+    execute if score $Interval Temporary matches 0 at @s rotated ~ 0 run function asset:object/1061.azure_jelly/tick/vfx
 
 # 移動
-    execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ -30
-    execute if score $Interval Temporary matches 0..29 at @s run tp @s ^ ^ ^0.3 ~ ~2
+    #execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ ~-30
+    #execute if score $Interval Temporary matches 0..30 at @s run tp @s ^ ^ ^0.3 ~ ~2
+    execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ ~10
+    execute if score $Interval Temporary matches 0..8 at @s run tp @s ^ ^ ^0.2 ~ ~-6
+    execute if score $Interval Temporary matches 9..20 at @s run tp @s ^ ^ ^0.3 ~ ~-3
+    execute if score $Interval Temporary matches 21..39 at @s run tp @s ^ ^ ^0.2 ~ ~8
+    execute if score $Interval Temporary matches 21..39 at @s run tp @s ~ ~-0.1 ~ ~ ~
 
 
+
+# 地面に接触したら上を向く
+    #execute at @s unless block ~ ~-0.6 ~ #lib:no_collision run function asset:object/1061.azure_jelly/tick/vfx
+    #execute at @s unless block ~ ~-0.6 ~ #lib:no_collision run tp @s ~ ~ ~ ~ -30
 
 # リセット
     scoreboard players reset $Interval Temporary

@@ -16,6 +16,6 @@
 
 # 向きを合わせる
     execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run tp @s ~ ~ ~ ~ ~
-    
+
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
