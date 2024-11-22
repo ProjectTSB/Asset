@@ -1,5 +1,13 @@
 {
     "values": [
+        "asset:artifact/1085.mia_tia_zen_luc/give/1.trigger",
+        "asset:artifact/1112.lexiel_rod/give/1.trigger",
+        "asset:artifact/1118.time_samsara/give/1.trigger",
+        "asset:artifact/1119.call_maid/give/1.trigger",
+        "asset:artifact/1123.ride_missile/give/1.trigger",
+        "asset:artifact/1142.book_of_hero/give/1.trigger",
+        "asset:artifact/1145.nurse_call/give/1.trigger",
+        "asset:artifact/0730.lake_reflecting_starry_sky/give/1.trigger",
         "asset:artifact/0002.blessing/give/1.trigger",
         "asset:artifact/1108.white_lily_of_priestess/give/1.trigger",
         "asset:artifact/1106.rainbow_candy/give/1.trigger",
@@ -196,7 +204,7 @@
         "asset:artifact/0012.sketchy_herb/give/1.trigger",
         "asset:artifact/0016.golem_core/give/1.trigger",
         "asset:artifact/0017.harmful_books/give/1.trigger",
-        "asset:artifact/0019.scriputre/give/1.trigger",
+        "asset:artifact/0019.scripture/give/1.trigger",
         "asset:artifact/0022.amen_ra_rod/give/1.trigger",
         "asset:artifact/0033.magic_shield/give/1.trigger",
         "asset:artifact/0035.malleus_maleficarum/give/1.trigger",
