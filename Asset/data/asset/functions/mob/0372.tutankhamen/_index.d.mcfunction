@@ -5,6 +5,7 @@
 # @within function asset:mob/0372.tutankhamen/**
     #declare tag AC.Laser
     #declare tag AC.LaserDisplay
+    #declare tag AC.ManyShoot
     #declare tag AC.GiantSkull
     #declare tag AC.AJ
     #declare tag AC.AJLink
@@ -27,6 +28,8 @@
     #declare function animated_java:tutankhamen/animations/beam_shot/stop
     #declare function animated_java:tutankhamen/animations/beam_end/play
     #declare function animated_java:tutankhamen/animations/beam_end/stop
+    #declare function animated_java:tutankhamen/animations/soul_shot/play
+    #declare function animated_java:tutankhamen/animations/soul_shot/stop
 
 
 

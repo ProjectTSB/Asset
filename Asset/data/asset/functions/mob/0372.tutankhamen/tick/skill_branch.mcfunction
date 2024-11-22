@@ -9,3 +9,6 @@
 
 # レーザー
     execute if entity @s[tag=AC.Laser] run function asset:mob/0372.tutankhamen/tick/skill/laser/
+
+# いっぱい撃つ
+    execute if entity @s[tag=AC.ManyShoot] run function asset:mob/0372.tutankhamen/tick/skill/many_shoot/
