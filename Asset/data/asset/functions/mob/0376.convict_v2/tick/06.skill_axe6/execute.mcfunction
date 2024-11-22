@@ -11,7 +11,7 @@
     function asset:mob/0376.convict_v2/tick/common/particle/particle_2
 
 # 割合ダメージ
-    execute as @p run function api:data_get/health
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function api:data_get/health
     execute if predicate api:global_vars/difficulty/min/hard store result storage lib: Argument.Damage float 0.95 run data get storage api: Health
     execute if predicate api:global_vars/difficulty/normal store result storage lib: Argument.Damage float 0.50 run data get storage api: Health
     execute if predicate api:global_vars/difficulty/easy store result storage lib: Argument.Damage float 0.20 run data get storage api: Health

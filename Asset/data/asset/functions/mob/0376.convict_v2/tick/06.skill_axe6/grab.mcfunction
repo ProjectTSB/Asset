@@ -15,5 +15,5 @@
     execute positioned ^ ^ ^0.7 positioned ~ ~1 ~ if entity @p[distance=..5] run effect give @p darkness 5 0 true
 
 #演出
-    playsound minecraft:ambient.nether_wastes.mood hostile @s
+    playsound minecraft:ambient.nether_wastes.mood hostile @a
     playsound minecraft:entity.iron_golem.hurt hostile @a ~ ~ ~ 1 0
