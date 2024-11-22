@@ -1,8 +1,8 @@
-#> asset:artifact/0613.call_fulstuka/trigger/particle
+#> asset:object/1050.call_fulstuka/init/particle
 #
 #
 #
-# @within function asset:artifact/0613.call_fulstuka/trigger/3.main
+# @within function asset:object/1050.call_fulstuka/init/
 
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGwCcA7AGYr0AcAzALTUAsD7XrrLuwCG9YXHb1WAJgAMs6QCMUtAKwBGVmAIA7YQFsEyQGGKAAnXawMYRgMBnJOBQB7QjohJVsgijju4GI5gAG7C2IRG4AAeSN5gULEAvokEtqRohA6IrAR2EDYeiHFw2NhoMHZG6vKpzvkQRnFodgCipeWVLQCOhGHYUADK1r7kiGLYlckAukA_3

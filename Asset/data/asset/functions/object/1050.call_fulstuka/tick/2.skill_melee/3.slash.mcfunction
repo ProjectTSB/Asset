@@ -11,9 +11,9 @@
 # ダメージ設定
     # 与えるダメージ
         data modify storage lib: Argument.Damage set value 260.0f
-    # 魔法属性
+    # 属性
         data modify storage lib: Argument.AttackType set value "Physical"
-    # 無属性
+    # 属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # 補正を無視する
         data modify storage lib: Argument.BypassModifier set value true

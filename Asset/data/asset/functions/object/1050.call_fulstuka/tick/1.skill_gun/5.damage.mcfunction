@@ -11,7 +11,7 @@
 # ダメージ設定
     # 与えるダメージ
         data modify storage lib: Argument.Damage set value 85f
-    # 魔法属性
+    # 属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"

@@ -1,4 +1,4 @@
-#> asset:object/1050.call_fulstuka/tick/spreadteleport
+#> asset:object/1050.call_fulstuka/tick/spread_teleport
 #
 #
 #

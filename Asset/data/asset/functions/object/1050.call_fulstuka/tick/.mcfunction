@@ -8,7 +8,7 @@
     scoreboard players add @s 1050.ActionTime 1
     scoreboard players add @s General.Object.Tick 1
 # プレイヤーと離れ過ぎたら誰でもいいからプレイヤーにつきまとう
-    execute if score @s 1050.ActionTime matches -5 unless entity @p[distance=..9] at @p run function asset:object/1050.call_fulstuka/tick/spreadteleport
+    execute if score @s 1050.ActionTime matches -5 unless entity @p[distance=..9] at @p run function asset:object/1050.call_fulstuka/tick/spread_teleport
 
 # 一定時間で帰る
     execute if score @s 1050.ActionTime matches 0 if score @s General.Object.Tick matches 600.. run function asset:object/1050.call_fulstuka/tick/return
