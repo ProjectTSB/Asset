@@ -8,3 +8,17 @@
     #declare tag AC.GiantSkull
     #declare score_holder $Recursive
     #declare score_holder $Interval
+    #
+    #
+    #declare function animated_java:tutankhamen/summon
+
+
+
+
+
+
+
+
+
+
+#

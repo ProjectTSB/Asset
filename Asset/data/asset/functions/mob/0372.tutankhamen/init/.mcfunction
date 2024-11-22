@@ -4,5 +4,8 @@
 #
 # @within asset:mob/alias/372/init
 
+# AJ召喚
+    execute rotated ~ 0 run function animated_java:tutankhamen/summon
+
 # スコア初期化
     scoreboard players set @s General.Mob.Tick -80
