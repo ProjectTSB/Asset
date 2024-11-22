@@ -10,6 +10,6 @@
 # タグ付与
     tag @s add AW.Temp.Target
 # プレイヤーの方向を確実に向く
-    execute as @e[type=wither_skeleton,tag=AW.Temp.This,distance=..64,sort=nearest,limit=1] at @s facing entity @e[tag=AW.Temp.Target,distance=..66,limit=1] feet run tp @s ^ ^ ^ ~ 0
+    execute as @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] at @s facing entity @e[tag=AW.Temp.Target,distance=..66,limit=1] feet run tp @s ^ ^ ^ ~ 0
 # 終了
     tag @s remove AW.Temp.Target

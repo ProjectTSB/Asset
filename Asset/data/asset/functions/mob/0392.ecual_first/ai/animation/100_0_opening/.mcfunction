@@ -9,14 +9,12 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    tag @s add AW.Temp.This
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
     execute if score @s AW.AnimationTick matches 211..261 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     execute if score @s AW.AnimationTick matches 268..281 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     execute if score @s AW.AnimationTick matches 284..301 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     execute if score @s AW.AnimationTick matches 308.. as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     scoreboard players reset $AW.Temp AW.UUID
-    tag @s remove AW.Temp.This
 
 # アニメーション再生
     execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/animations/12_0_opening_attack/play

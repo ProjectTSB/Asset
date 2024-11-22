@@ -6,7 +6,6 @@
     #declare tag AW.Marker.SummonPoint
     #declare tag AW.ModelRoot
     #declare tag AW.Root.This
-    #declare tag AW.Temp.This
     #declare tag AW.Temp.Target
     #declare tag AW.Landing
     #declare tag AW.Predict

@@ -8,7 +8,6 @@
     execute if score @s AW.AnimationTick matches 1 run scoreboard players operation @s AW.UUID = @p[tag=!PlayerShouldInvulnerable,distance=..100] UserID
 
 # 近くのプレイヤーの方を向く
-    tag @s add AW.Temp.This
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
     execute if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 1..77 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/rotate
@@ -16,7 +15,6 @@
     execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 103..117 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/rotate
     execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 123.. as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     scoreboard players reset $AW.Temp AW.UUID
-    tag @s remove AW.Temp.This
 
 # アニメーション再生
     execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/animations/5_0_shining_ray/play

@@ -9,7 +9,6 @@
 
 # プレイヤーの方を向く
 # 移動中は対象プレイヤーの方を向く
-    tag @s add AW.Temp.This
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
     execute as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     scoreboard players reset $AW.Temp AW.UUID
