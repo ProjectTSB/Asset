@@ -5,4 +5,4 @@
 # @within asset:object/alias/1061/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],teleport_duration:1,item:{id:"blue_stained_glass",Count:1b}}
+    summon armor_stand ~ ~ ~ {Tags:["ObjectInit"],Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blue_stained_glass",Count:1b}]}

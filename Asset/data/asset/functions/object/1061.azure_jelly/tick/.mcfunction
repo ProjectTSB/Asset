@@ -14,7 +14,7 @@
 
 # インターバル
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    scoreboard players operation $Interval Temporary %= $42 Const
+    scoreboard players operation $Interval Temporary %= $43 Const
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
@@ -29,13 +29,18 @@
     execute if score $Interval Temporary matches 0 at @s rotated ~ 0 run function asset:object/1061.azure_jelly/tick/vfx
 
 # 移動
-    #execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ ~-30
+    execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ -10
     #execute if score $Interval Temporary matches 0..30 at @s run tp @s ^ ^ ^0.3 ~ ~2
-    execute if score $Interval Temporary matches 0 at @s run tp @s ^ ^ ^ ~ ~10
-    execute if score $Interval Temporary matches 0..8 at @s run tp @s ^ ^ ^0.2 ~ ~-6
-    execute if score $Interval Temporary matches 9..20 at @s run tp @s ^ ^ ^0.3 ~ ~-3
-    execute if score $Interval Temporary matches 21..39 at @s run tp @s ^ ^ ^0.2 ~ ~8
-    execute if score $Interval Temporary matches 21..39 at @s run tp @s ~ ~-0.1 ~ ~ ~
+    execute if score $Interval Temporary matches 0..5 at @s run tp @s ^ ^ ^0.2 ~ ~-1
+    execute if score $Interval Temporary matches 6..8 at @s run tp @s ^ ^ ^0.3 ~ ~-2
+    execute if score $Interval Temporary matches 9..10 at @s run tp @s ^ ^ ^0.4 ~ ~-3
+    execute if score $Interval Temporary matches 11..12 at @s run tp @s ^ ^ ^0.3 ~ ~-3
+    execute if score $Interval Temporary matches 13..17 at @s run tp @s ^ ^ ^0.2 ~ ~2
+    execute if score $Interval Temporary matches 18..21 at @s run tp @s ^ ^ ^0.2 ~ ~3
+    execute if score $Interval Temporary matches 22..32 at @s run tp @s ^ ^ ^0.25 ~ ~4
+    execute if score $Interval Temporary matches 33..35 at @s run tp @s ^ ^ ^0.3 ~ ~6
+    execute if score $Interval Temporary matches 36..39 at @s run tp @s ^ ^ ^0.2 ~ ~6
+    execute if score $Interval Temporary matches 40..42 at @s run tp @s ^ ^ ^0.1 ~ ~6
 
 
 
@@ -48,4 +53,4 @@
     tag @p[tag=1061.Owner] remove 1061.Owner
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=600..}]
+    execute if entity @s[scores={General.Object.Tick=600..}] run function asset:object/1061.azure_jelly/tick/kill
