@@ -1774,7 +1774,7 @@
             ]
         },
         {
-            "label": "MOB/テンプレート: _index.d ",
+            "label": "Mob/テンプレート: _index.d ",
             "generates": [
                 {
                     "type": "file",
@@ -1791,7 +1791,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 攻撃",
+            "label": "Mob/トリガー: 攻撃",
             "generates": [
                 {
                     "type": "file",
@@ -1830,7 +1830,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 被ダメージ",
+            "label": "Mob/トリガー: 被ダメージ",
             "generates": [
                 {
                     "type": "file",
@@ -1869,7 +1869,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 死亡",
+            "label": "Mob/トリガー: 死亡",
             "generates": [
                 {
                     "type": "file",
@@ -1986,7 +1986,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: 再Join",
+            "label": "Mob/特殊トリガー: 再Join",
             "generates": [
                 {
                     "type": "file",
@@ -2016,7 +2016,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: remove",
+            "label": "Mob/特殊トリガー: remove",
             "generates": [
                 {
                     "type": "file",
