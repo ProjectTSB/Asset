@@ -9,6 +9,8 @@
     #declare tag AC.AJ
     #declare tag AC.AJLink
     #declare tag AC.Opening
+    #declare tag AC.Hit
+    #declare tag AC.RotationMarker
     #declare score_holder $Recursive
     #declare score_holder $Interval
     #
@@ -23,6 +25,8 @@
     #declare function animated_java:tutankhamen/animations/beam_start/stop
     #declare function animated_java:tutankhamen/animations/beam_shot/play
     #declare function animated_java:tutankhamen/animations/beam_shot/stop
+    #declare function animated_java:tutankhamen/animations/beam_end/play
+    #declare function animated_java:tutankhamen/animations/beam_end/stop
 
 
 
