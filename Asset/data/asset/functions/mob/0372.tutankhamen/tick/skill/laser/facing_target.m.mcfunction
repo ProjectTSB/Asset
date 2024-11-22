@@ -15,7 +15,6 @@
 # さらにdisplayも一緒に回転
 # markerを召喚し、displayにそれを向かせる
     execute at @s rotated ~ 0 anchored eyes positioned ^0.2 ^-0.5 ^1 run summon marker ~ ~ ~ {Tags:["AC.RotationMarker"]}
-    execute at @s rotated ~ 0 anchored eyes positioned ^0.2 ^-0.5 ^5 run particle flame ~ ~ ~ 0 0 0 0.1 5 normal @a
     execute at @s anchored eyes positioned ^0.2 ^-0.5 ^8 run tp @e[type=item_display,tag=AC.LaserDisplay,distance=..50,limit=1] ~ ~ ~ ~ ~
     execute at @s as @e[type=item_display,tag=AC.LaserDisplay,distance=..30,limit=1] at @s facing entity @e[type=marker,tag=AC.RotationMarker,distance=..50,limit=1] feet run tp @s ~ ~ ~ ~ ~
     kill @e[type=marker,tag=AC.RotationMarker,distance=..30]
