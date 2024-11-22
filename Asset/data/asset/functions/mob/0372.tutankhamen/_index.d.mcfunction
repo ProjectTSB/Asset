@@ -25,8 +25,8 @@
     #declare function animated_java:tutankhamen/animations/beam_start/stop
     #declare function animated_java:tutankhamen/animations/beam_shot/play
     #declare function animated_java:tutankhamen/animations/beam_shot/stop
-    #declare function animated_java:tutankhamen/animations/beam_charge/play
-    #declare function animated_java:tutankhamen/animations/beam_charge/stop
+    #declare function animated_java:tutankhamen/animations/beam_wait/play
+    #declare function animated_java:tutankhamen/animations/beam_wait/stop
     #declare function animated_java:tutankhamen/animations/beam_end/play
     #declare function animated_java:tutankhamen/animations/beam_end/stop
 

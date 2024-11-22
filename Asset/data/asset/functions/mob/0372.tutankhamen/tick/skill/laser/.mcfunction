@@ -7,7 +7,7 @@
 # AJの開始アニメーション
     execute if entity @s[scores={General.Mob.Tick=0}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/neutral/stop
     execute if entity @s[scores={General.Mob.Tick=0}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/beam_start/play
-    execute if entity @s[scores={General.Mob.Tick=11}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/beam_charge/play
+    execute if entity @s[scores={General.Mob.Tick=11}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/beam_wait/play
 
 # 狙うプレイヤーを決定しフィールドに放り込む
     execute if entity @s[scores={General.Mob.Tick=0}] as @r[distance=..30] run function lib:get_name/
