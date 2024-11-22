@@ -25,11 +25,11 @@
 
 # Rotationをフィールドに入れてからdisplayを前方に召喚
     execute if entity @s[scores={General.Mob.Tick=20}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=20}] at @s anchored eyes positioned ^0.2 ^-0.5 ^8 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
+    execute if entity @s[scores={General.Mob.Tick=20}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
     execute if entity @s[scores={General.Mob.Tick=55}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=55}] at @s anchored eyes positioned ^0.2 ^-0.5 ^8 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
+    execute if entity @s[scores={General.Mob.Tick=55}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
     execute if entity @s[scores={General.Mob.Tick=75}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=75}] at @s anchored eyes positioned ^0.2 ^-0.5 ^8 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
+    execute if entity @s[scores={General.Mob.Tick=75}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
 
 # displayを消す
     execute if entity @s[scores={General.Mob.Tick=45}] run kill @e[type=item_display,tag=AC.LaserDisplay,distance=..30]
