@@ -17,7 +17,7 @@
     execute if entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,distance=..2,sort=nearest,limit=1] run function asset:object/1058.brave_knight/tick/event/combo/
 
 # 攻撃モード時、離れ過ぎると帰ってくる
-    execute unless entity @e[type=marker,tag=1058.OwnerMarker,distance=..10,limit=1] run function asset:object/1058.brave_knight/tick/event/force_back
+    execute unless entity @e[type=marker,tag=1058.MoveMarker,distance=..10,limit=1] run function asset:object/1058.brave_knight/tick/event/force_back
 
 # 付近に敵がいなかったら解除
     execute unless entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,distance=..8] run function asset:object/1058.brave_knight/tick/event/turn_off_attackmode
