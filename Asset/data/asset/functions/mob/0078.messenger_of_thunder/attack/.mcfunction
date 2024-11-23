@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/78/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 250
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 250
