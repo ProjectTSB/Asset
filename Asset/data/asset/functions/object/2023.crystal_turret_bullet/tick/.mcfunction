@@ -1,8 +1,8 @@
-#> asset:object/2018.ecual_water_bullet/tick/
+#> asset:object/2023.crystal_turret_bullet/tick/
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2018/tick
+# @within asset:object/alias/2023/tick
 
 #> Index
     #declare function asset:object/0001.abstract_projectile/tick/recursive

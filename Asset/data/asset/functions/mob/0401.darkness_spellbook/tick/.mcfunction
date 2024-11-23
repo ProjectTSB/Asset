@@ -22,11 +22,7 @@
     scoreboard players add @s B5.Tick 1
 
 # 時間が経過したら発射
-    execute if score @s B5.Tick matches 120 run function asset:mob/0401.darkness_spellbook/ai/bullet/0.summon
-
-# 弾幕Tick処理
-    scoreboard players operation $B5.Temp B5.UUID = @s MobUUID
-    execute as @e[type=item_display,tag=B5.Bullet,distance=..100] if score @s B5.UUID = $B5.Temp B5.UUID at @s run function asset:mob/0401.darkness_spellbook/ai/bullet/2.tick
+    execute if score @s B5.Tick matches 120 at @s positioned ~ ~1.5 ~ facing entity @p[tag=!PlayerShouldInvulnerable,distance=..64] eyes run function asset:mob/0401.darkness_spellbook/ai/bullet/0.summon
 
 # ランダムテレポート
     execute store result score $B5.Temp B5.Tick run random value 1..150

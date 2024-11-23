@@ -11,20 +11,10 @@
     #declare tag AW.Predict
     #declare tag AW.SuperiorSkill
     #declare tag AW.ProjectileInit
-    #declare tag AW.WaterMagic
-    #declare tag AW.WaterBullet
-    #declare tag AW.WaterMagicDisplay
     #declare tag AW.AnnounceLine
     #declare tag AW.AnnounceLineEven
     #declare tag AW.Invisible
     #declare tag AW.AnnounceInit
-    #declare tag AW.QuietusRain
-    #declare tag AW.QuietusRainMagic
-    #declare tag AW.WaterWall
-    #declare tag AW.HydroStorm
-    #declare tag AW.HydroStormFirst
-    #declare tag AW.HydroAnnounce
-    #declare tag AW.Critical
     #declare tag AW.Death
 
 #> val

@@ -1,8 +1,8 @@
-#> asset:object/2018.ecual_water_bullet/init/
+#> asset:object/2038.drown_spellbook_bullet/init/
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2018/init
+# @within asset:object/alias/2038/init
 
 # 向きを決定
     tp @s ~ ~ ~ ~ ~

@@ -20,18 +20,5 @@
     tag @e[type=item_display,tag=AV.Root.This,distance=..100] remove AV.Root.This
 
 # Projectile Tick処理
-    # 斬撃エフェクト Tick処理
-        execute as @e[type=item_display,tag=AV.SlashEffect,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_effect/2.tick
-        execute as @e[type=item_display,tag=AV.SlashEffectMini,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_effect_mini/2.tick
-    # 斬撃飛ばし Tick処理
-        execute as @e[type=item_display,tag=AV.SlashSonic,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/slash_sonic/2.tick
-    # ソニックブーム Tick処理
-        execute as @e[type=item_display,tag=AV.SonicBoomEffect,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/sonic_boom/2.tick
     # 予告線 Tick処理
         execute at @s as @e[type=item_display,tag=AV.AnnounceLine,distance=..100] run function asset:mob/0391.axia_first/ai/projectile/announce_line/2.tick
-    # ディメンションソード Tick処理
-        execute as @e[type=marker,tag=AV.DimSword,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/2.tick
-    # 衝撃波 Tick処理
-        execute as @e[type=marker,tag=AV.ShockWave,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/shock_wave/2.tick
-    # クリティカルヒット Tick処理
-        execute as @e[type=marker,tag=AV.CriticalHit,distance=..100] at @s run function asset:mob/0391.axia_first/ai/projectile/critical/2.tick

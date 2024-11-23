@@ -34,10 +34,6 @@
     #ハードは60Tick
         execute if score @s B1.Tick matches 360 if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s B1.Tick 300
         execute if score @s B1.Tick matches 420 if predicate api:global_vars/difficulty/max/normal run scoreboard players set @s B1.Tick 300
-
-# 弾幕Tick処理
-    scoreboard players operation $B1.Temp B1.UUID = @s MobUUID
-    execute as @e[type=item_display,tag=B1.Bullet,distance=..100] if score @s B1.UUID = $B1.Temp B1.UUID at @s run function asset:mob/0397.crystal_turret/ai/projectile/2.tick
-
+        
 # リセット
     scoreboard players reset $B1.Temp B1.UUID

@@ -20,18 +20,6 @@
     tag @e[type=item_display,tag=AW.Root.This,distance=..100] remove AW.Root.This
 
 # Projectile Tick処理
-    # 設置水魔法 Tick処理
-        execute as @e[type=item_display,tag=AW.WaterMagic,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_magic/2.tick
     # 予告線 Tick処理
         execute at @s as @e[type=item_display,tag=AW.AnnounceLine,distance=..100] run function asset:mob/0392.ecual_first/ai/projectile/announce_line/2.tick
         execute at @s as @e[type=item_display,tag=AW.AnnounceLineEven,distance=..100] run function asset:mob/0392.ecual_first/ai/projectile/announce_line_even/2.tick
-    # 水の弾丸 Tick処理
-        execute as @e[type=item_display,tag=AW.WaterBullet,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_bullet/2.tick
-    # クワイタスレイン Tick処理
-        execute as @e[type=marker,tag=AW.QuietusRain,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/quietus_rain/2.tick
-    # 水の壁 Tick処理
-        execute as @e[type=marker,tag=AW.WaterWall,distance=..100] at @s run function asset:mob/0392.ecual_first/ai/projectile/water_wall/2.tick
-    # ハイドロストーム Tick処理
-        execute as @e[type=item_display,tag=AW.HydroStorm,distance=..200] at @s run function asset:mob/0392.ecual_first/ai/projectile/hydro/2.tick
-    # クリティカル Tick処理
-        execute as @e[type=marker,tag=AW.Critical,distance=..200] at @s run function asset:mob/0392.ecual_first/ai/projectile/critical/2.tick

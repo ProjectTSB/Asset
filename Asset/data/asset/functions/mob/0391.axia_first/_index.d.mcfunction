@@ -12,6 +12,7 @@
     #declare tag AV.Predict
     #declare tag AV.AnnounceInit
     #declare tag AV.AnnounceLine
+    #declare tag AV.Invisible
     #declare tag AV.SuperiorSkill
     #declare tag AV.Death
     #declare tag 2001.CustomEffect

@@ -1,8 +1,8 @@
-#> asset:object/2018.ecual_water_bullet/tick/
+#> asset:object/2025.darkness_spellbook_bullet/tick/
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2018/tick
+# @within asset:object/alias/2025/tick
 
 #> Index
     #declare function asset:object/0001.abstract_projectile/tick/recursive
@@ -12,7 +12,7 @@
 
 # パーティクル
     particle fishing ~ ~ ~ 0.2 0.2 0.2 0.05 1 force @a[distance=..32]
-    particle minecraft:dust 0.5 1 100000000 1 ~ ~ ~ 0.2 0.2 0.2 0 1 force @a[distance=..32]
+    particle minecraft:dust 0.07 0.10 0.55 1 ~ ~ ~ 0.2 0.2 0.2 0 1 force @a[distance=..32]
 
 # フィールドのデータからスコアを設定
     execute store result score @s 1.Speed run data get storage asset:context this.Speed

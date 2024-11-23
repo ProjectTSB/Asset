@@ -25,10 +25,6 @@
 # 地面に足を付けていないプレイヤを見つけろ！
     execute if score $B3.Temp Temporary matches 0 if entity @p[tag=!PlayerShouldInvulnerable,nbt={OnGround:0b},distance=..100] at @s run function asset:mob/0399.void_spellbook/ai/bullet/4.fire
 
-# 弾幕Tick処理
-    scoreboard players operation $B3.Temp B3.UUID = @s MobUUID
-    execute as @e[type=item_display,tag=B3.Bullet,distance=..100] if score @s B3.UUID = $B3.Temp B3.UUID at @s run function asset:mob/0399.void_spellbook/ai/bullet/2.tick
-
 # リセット
     scoreboard players reset $B3.Temp Temporary
     scoreboard players reset $B3.Temp B3.UUID

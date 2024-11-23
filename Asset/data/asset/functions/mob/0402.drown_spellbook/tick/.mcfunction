@@ -22,11 +22,7 @@
     scoreboard players add @s B6.Tick 1
 
 # 時間が経過したら発射
-    execute if score @s B6.Tick matches 120 run function asset:mob/0402.drown_spellbook/ai/bullet/0.summon
-
-# 弾幕Tick処理
-    scoreboard players operation $B6.Temp B6.UUID = @s MobUUID
-    execute as @e[type=item_display,tag=B6.Bullet,distance=..100] if score @s B6.UUID = $B6.Temp B6.UUID at @s run function asset:mob/0402.drown_spellbook/ai/bullet/2.tick
+    execute if score @s B6.Tick matches 120 at @s positioned ~ ~1.5 ~ facing entity @p[tag=!PlayerShouldInvulnerable,distance=..64] eyes run function asset:mob/0402.drown_spellbook/ai/bullet/0.summon
 
 # ランダムテレポート
     execute store result score $B6.Temp B6.Tick run random value 1..150
