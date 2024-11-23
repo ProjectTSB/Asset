@@ -6,9 +6,6 @@
 #   asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/warp/adj
 #   asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/warp/adj
 
-# 自身にタグ付け
-    tag @s add AZ.Temp.This
-
 # 攻撃対象にTagを付与
     tag @r[tag=!PlayerShouldInvulnerable,distance=..100] add AZ.Temp.Target
 
@@ -35,5 +32,4 @@
 
 # リセット
     tag @p[tag=AZ.Temp.Target,distance=..100] remove AZ.Temp.Target
-    tag @s remove AZ.Temp.This
     data remove storage asset:temp Predict

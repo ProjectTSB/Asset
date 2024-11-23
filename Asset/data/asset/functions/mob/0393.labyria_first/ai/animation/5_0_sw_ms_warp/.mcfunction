@@ -5,13 +5,11 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/
 
 # 近くのプレイヤーの方を向く
-    tag @s add AZ.Temp.This
     execute if score @s AZ.AnimationTick matches 1..53 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AZ.AnimationTick matches 80..92 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if predicate api:global_vars/difficulty/min/hard if score @s AZ.AnimationTick matches 93..124 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AZ.AnimationTick matches 125..130 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AZ.AnimationTick matches 160..175 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
-    tag @s remove AZ.Temp.This
 
 # アニメーション再生
     execute if score @s AZ.AnimationTick matches 1 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/11_0_sw_sg_warp_1/play

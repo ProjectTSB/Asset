@@ -5,9 +5,7 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/
 
 # 近くのプレイヤーの方を向く
-    tag @s add AZ.Temp.This
     execute if score @s AZ.AnimationTick matches 1..168 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
-    tag @s remove AZ.Temp.This
 
 # アニメーション再生
     execute if score @s AZ.AnimationTick matches 1 as @e[type=item_display,tag=AZ.Root.This,distance=..100] run function animated_java:labyria/animations/9_0_sw_nova_bomb/play
