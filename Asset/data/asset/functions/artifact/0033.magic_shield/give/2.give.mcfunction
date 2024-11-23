@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"マジックシールド","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"食らうダメージを1度だけ"},{"text":"80%軽減","color":"green"},{"text":"する"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"一度だけ攻撃を防ぐバリアを20得る"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
