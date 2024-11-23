@@ -19,12 +19,9 @@
     execute if entity @s[scores={General.Mob.Tick=75..85}] as @a[distance=..30] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..30,limit=1] eyes positioned ^ ^ ^1 run playsound block.note_block.bit hostile @s ~ ~ ~ 0.4 1 1
 
 # Rotationをフィールドに入れてからdisplayを前方に召喚
-    execute if entity @s[scores={General.Mob.Tick=20}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=20}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
-    execute if entity @s[scores={General.Mob.Tick=55}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=55}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
-    execute if entity @s[scores={General.Mob.Tick=75}] at @s run data modify storage asset:context this.Rotation set from entity @s Rotation
-    execute if entity @s[scores={General.Mob.Tick=75}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
+    execute if entity @s[scores={General.Mob.Tick=20}] at @s anchored eyes positioned ^0.2 ^-0.5 ^18 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with entity @s Rotation
+    execute if entity @s[scores={General.Mob.Tick=55}] at @s anchored eyes positioned ^0.2 ^-0.5 ^18 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with entity @s Rotation
+    execute if entity @s[scores={General.Mob.Tick=75}] at @s anchored eyes positioned ^0.2 ^-0.5 ^18 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with entity @s Rotation
 
 # ターゲットの方を向く
     execute if entity @s[scores={General.Mob.Tick=0..35}] run function asset:mob/0372.tutankhamen/tick/skill/laser/facing_target.m with storage asset:context this
