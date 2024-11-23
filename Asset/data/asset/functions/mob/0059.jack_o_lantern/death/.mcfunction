@@ -11,7 +11,7 @@
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1.5 1.5
 
 # 死亡時カボチャ設置
-    execute if predicate world_manager:area/02.islands if block ~ ~ ~ #lib:air run summon falling_block ~ ~1.5 ~ {BlockState:{Name:"minecraft:carved_pumpkin"},Time:1,Motion:[0.0,0.7,0.0]}
+    execute if predicate api:area/is_breakable if block ~ ~ ~ #lib:air run summon falling_block ~ ~1.5 ~ {BlockState:{Name:"minecraft:carved_pumpkin"},Time:1,Motion:[0.0,0.7,0.0]}
 
 # ボスドロ
     data modify storage api: Argument.ID set value 950

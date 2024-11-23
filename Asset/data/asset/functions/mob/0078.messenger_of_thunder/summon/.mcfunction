@@ -4,5 +4,4 @@
 #
 # @within asset:mob/alias/78/summon
 
-# 元となるMobを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0078.messenger_of_thunder"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiVoid"],DeathLootTable:"empty"}
