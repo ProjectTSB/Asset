@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"マジックシールド","color":"green"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"一度だけ被ダメージを大きく軽減する","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"一度だけダメージを吸収する","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 600
 # スタック (int) (default = API || 1)
