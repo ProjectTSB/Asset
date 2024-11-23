@@ -27,3 +27,5 @@
     #declare function animated_java:grey_guardian/animations/summon/play
     #declare function animated_java:grey_guardian/animations/wait/play
     #declare function animated_java:grey_guardian/animations/wait/stop
+    #declare function animated_java:grey_guardian/animations/move/play
+    #declare function animated_java:grey_guardian/animations/move/stop

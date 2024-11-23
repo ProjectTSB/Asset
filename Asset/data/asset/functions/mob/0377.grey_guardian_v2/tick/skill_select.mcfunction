@@ -10,7 +10,7 @@
     scoreboard players operation $Random Temporary %= $5 Const
 
 # デバッグスキル固定
-    #scoreboard players set $Random Temporary 12
+    #scoreboard players set $Random Temporary 0
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add AH.Skill01
