@@ -4,13 +4,19 @@
 #
 # @within function asset:mob/0372.tutankhamen/tick/skill/laser/
 
+# 演出
+    execute as @a[distance=..30] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..30,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.warden.sonic_boom hostile @s ~ ~ ~ 1 2
+    function asset:mob/0372.tutankhamen/tick/skill/laser/vfx
+
 # 再帰発射
     function asset:mob/0372.tutankhamen/tick/skill/laser/recursive
     scoreboard players reset $Recursive Temporary
 
-# 演出
-    execute as @a[distance=..30] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..30,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.warden.sonic_boom hostile @s ~ ~ ~ 1 2
-    function asset:mob/0372.tutankhamen/tick/skill/laser/vfx
+# displayを消す
+    kill @e[type=item_display,tag=AC.LaserDisplay,distance=..30]
+
+# 発射アニメーション
+    execute as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/beam_shot/play
 
 # 回転するxyzLibを使ってヒット判定を行う
 # x,yは半径0.75に+0.3して判定する
