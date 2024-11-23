@@ -64,3 +64,4 @@
     #declare function animated_java:labyria/animations/15_0_sw_stan/play
     #declare function animated_java:labyria/animations/15_1_ms_stan/play
     #declare function animated_java:labyria/animations/16_0_invisible/play
+    #declare function animated_java:labyria/animations/99_0_finish/play

@@ -5,14 +5,8 @@
 # @within function asset:mob/alias/392/death
 
 # ディスプレイ削除
-    kill @e[tag=AW.WaterMagic]
-    kill @e[tag=AW.WaterMagicDisplay]
     kill @e[tag=AW.AnnounceLine]
     kill @e[tag=AW.AnnounceLineEven]
-    kill @e[tag=AW.WaterBullet]
-    kill @e[tag=AW.QuietusRain]
-    kill @e[tag=AW.WaterWall]
-    kill @e[tag=AW.Critical]
 
 # スケジュール起動
     tag @e[type=marker,tag=AW.Marker.SummonPoint,distance=..200] add AW.Death
