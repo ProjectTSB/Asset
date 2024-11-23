@@ -13,7 +13,7 @@
     scoreboard players operation $Random Temporary %= $7 Const
 
 # デバッグのコマンド
-    scoreboard players set $Random Temporary 3
+    scoreboard players set $Random Temporary 0
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add AC.Laser
