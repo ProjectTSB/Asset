@@ -21,10 +21,11 @@
     execute if entity @s[scores={26.TPCool=0..}] run scoreboard players remove @s 26.TPCool 1
 
 # ハメ、落下対策でのtp処理
+# スキル中は使用不可
 # ハメ対策
-    execute unless entity @s[scores={26.TPCool=0..}] unless block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~ ~ #walls run tag @s add 26.Teleport
+    execute unless entity @s[scores={General.Mob.Tick=0..,26.TPCool=0..}] unless block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~ ~ #walls run tag @s add 26.Teleport
 # 落下対策
-    execute unless entity @s[scores={26.TPCool=0..}] if block ~ ~-0.5 ~ #lib:no_collision if block ~ ~-1.5 ~ #lib:no_collision if block ~ ~-2.5 ~ #lib:no_collision if block ~ ~-3.5 ~ #lib:no_collision run tag @s add 26.Teleport
+    execute unless entity @s[scores={General.Mob.Tick=0..,26.TPCool=0..}] if block ~ ~-0.5 ~ #lib:no_collision if block ~ ~-1.5 ~ #lib:no_collision if block ~ ~-2.5 ~ #lib:no_collision if block ~ ~-3.5 ~ #lib:no_collision run tag @s add 26.Teleport
 
 # tpする
     execute if entity @s[tag=26.Teleport] run function asset:mob/0078.messenger_of_thunder/tick/teleport

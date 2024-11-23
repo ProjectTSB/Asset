@@ -11,6 +11,9 @@
     data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
     execute at @p[distance=..50] run function lib:spread_entity/
 
+# Tickを少し戻す
+    scoreboard players remove @s General.Mob.Tick 10
+
 # リセット
     data remove storage lib: Argument
 
