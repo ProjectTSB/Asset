@@ -13,10 +13,6 @@
     playsound block.anvil.use player @a ~ ~ ~ 0.5 0.5 0
     particle enchanted_hit ~ ~1 ~ 0.2 0.2 0.2 1 30
 
-# プレイヤーにタグを付与
-# check_conditionや4.damage_triggerで、apiを叩くかTagでやるか迷っているのでレビューで教えてほしい
-    tag @s add X.MagicShield
-
 # プレイヤーにバフを付与
     data modify storage api: Argument.ID set value 201
     function api:entity/mob/effect/give
