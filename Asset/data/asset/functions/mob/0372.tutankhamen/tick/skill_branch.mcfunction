@@ -12,3 +12,6 @@
 
 # いっぱい撃つ
     execute if entity @s[tag=AC.ManyShoot] run function asset:mob/0372.tutankhamen/tick/skill/many_shoot/
+
+# ハイパーレーザー
+    execute if entity @s[tag=AC.HyperLaser] run function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/

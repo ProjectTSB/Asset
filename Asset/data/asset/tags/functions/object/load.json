@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2090.magic_square/load",
         "asset:object/1052.maid/load",
         "asset:object/1029.barrage_spirit/load",
         "asset:object/1059.book_of_hero/load",

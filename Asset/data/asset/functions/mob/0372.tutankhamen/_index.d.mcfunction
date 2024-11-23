@@ -7,6 +7,7 @@
     #declare tag AC.LaserDisplay
     #declare tag AC.ManyShoot
     #declare tag AC.GiantSkull
+    #declare tag AC.HyperLaser
     #declare tag AC.AJ
     #declare tag AC.AJLink
     #declare tag AC.Opening
@@ -32,6 +33,12 @@
     #declare function animated_java:tutankhamen/animations/beam_end/stop
     #declare function animated_java:tutankhamen/animations/soul_shot/play
     #declare function animated_java:tutankhamen/animations/soul_shot/stop
+    #declare function animated_java:tutankhamen/animations/beam_long/play
+    #declare function animated_java:tutankhamen/animations/beam_long/stop
+    #declare function animated_java:tutankhamen/animations/beam_long_charge/play
+    #declare function animated_java:tutankhamen/animations/beam_long_charge/stop
+    #declare function animated_java:tutankhamen/animations/beam_long_shot/play
+    #declare function animated_java:tutankhamen/animations/beam_long_shot/stop
 
 
 
