@@ -27,7 +27,7 @@
     execute if entity @s[scores={General.Mob.Tick=75}] at @s anchored eyes positioned ^0.2 ^-0.5 ^16 run function asset:mob/0372.tutankhamen/tick/skill/common/summon_laser_display.m with storage asset:context this
 
 # ターゲットの方を向く
-    execute if entity @s[scores={General.Mob.Tick=20..35}] run function asset:mob/0372.tutankhamen/tick/skill/laser/facing_target.m with storage asset:context this
+    execute if entity @s[scores={General.Mob.Tick=0..35}] run function asset:mob/0372.tutankhamen/tick/skill/laser/facing_target.m with storage asset:context this
     execute if entity @s[scores={General.Mob.Tick=55}] run function asset:mob/0372.tutankhamen/tick/skill/laser/facing_target.m with storage asset:context this
     execute if entity @s[scores={General.Mob.Tick=75}] run function asset:mob/0372.tutankhamen/tick/skill/laser/facing_target.m with storage asset:context this
 
