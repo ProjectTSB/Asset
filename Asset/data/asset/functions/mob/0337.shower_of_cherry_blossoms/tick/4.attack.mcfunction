@@ -2,7 +2,7 @@
 #
 # 桜吹雪の攻撃
 #
-# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/2.tick
+# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/
 
 # ダメージ
     data modify storage api: Argument.Damage set value 3.0d

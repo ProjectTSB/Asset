@@ -3,7 +3,7 @@
 # Mobのtick時の処理
 #
 # @within function
-#       asset:mob/0027.skull_sniper/tick/2.tick
+#       asset:mob/0027.skull_sniper/tick/
 #       asset:mob/0027.skull_sniper/tick/2.1.shot
 
 # 着弾の演出
@@ -28,5 +28,3 @@
 
 # 着弾タグを消す
     tag @p[tag=LandingTarget] remove LandingTarget
-
-
