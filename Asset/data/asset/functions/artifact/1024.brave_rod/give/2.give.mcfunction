@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ブレイブグリモア","color":"light_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"ブレイブロッド","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法の光線を前方に連続で放つ。","color":"white"}]','[{"text":"コンボフィニッシュの光線は、射程が少し伸びる。","color":"white"}]','[{"text":"\\"この知識あっての勇気\\"","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法の光線を前方に連続で放つ。","color":"white"}]','[{"text":"コンボフィニッシュの光線は、射程が少し伸びる。","color":"white"}]','[{"text":"\\"勇気の魔法\\"","color":"gray"}]']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -41,7 +41,7 @@
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 15
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 250
+    # data modify storage asset:artifact MPRequire set value 250
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 6
 # グローバルクールダウン (int) (オプション)
@@ -51,7 +51,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Wi-ki"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora","Wi-ki","Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
