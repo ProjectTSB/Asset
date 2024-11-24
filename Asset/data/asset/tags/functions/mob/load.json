@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/2000.abstract_angel/load",
         "asset:mob/0264.dark_summoner/load",
         "asset:mob/0188.fireball/load",
         "asset:mob/0187.flame_mage/load",
