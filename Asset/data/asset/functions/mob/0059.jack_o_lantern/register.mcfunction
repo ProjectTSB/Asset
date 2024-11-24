@@ -68,4 +68,5 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
+# 各スキルのダメージ設定
     data modify storage asset:mob Field.Damage set value {Vanilla:14.0f,Giant:15.0f,Missile:8.0f,Rain:14.0f}
