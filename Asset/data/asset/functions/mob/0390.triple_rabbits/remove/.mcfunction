@@ -22,3 +22,6 @@
 
 # リセット
     scoreboard players reset $AU.Temp AU.Dummy.UUID
+
+# 継承元の処理
+    function asset:mob/super.remove

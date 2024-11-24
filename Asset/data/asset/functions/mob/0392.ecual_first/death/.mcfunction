@@ -23,3 +23,6 @@
 
 # リセット
     scoreboard players reset $AW.Temp AU.Dummy.UUID
+
+# 継承元の処理
+    function asset:mob/super.death

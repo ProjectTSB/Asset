@@ -22,11 +22,6 @@
 
 #> function
 # @private
-    #declare function asset:mob/0390.triple_rabbits/ai/general/share_health
+    #declare function asset:mob/2000.abstract_angel/update_bossbar/
 
-# 管理用スライムに情報を送る
-    execute as @e[type=wither_skeleton,scores={MobID=392},distance=..25] run scoreboard players operation $B2.Temp AU.Dummy.UUID = @s AU.Dummy.UUID
-    execute as @e[type=slime,scores={MobID=390},distance=..100] if score @s AU.Dummy.UUID = $B2.Temp AU.Dummy.UUID run function asset:mob/0390.triple_rabbits/ai/general/share_health
-
-# リセット
-    scoreboard players reset $B2.Temp AU.Dummy.UUID
+    execute as @e[type=wither_skeleton,scores={MobID=392},distance=..25] run function asset:mob/2000.abstract_angel/update_bossbar/

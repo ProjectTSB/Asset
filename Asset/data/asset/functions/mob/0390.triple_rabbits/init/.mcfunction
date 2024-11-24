@@ -18,8 +18,5 @@
     execute as @e[type=wither_skeleton,scores={MobID=391},distance=..0.001,sort=nearest,limit=1] run tag @s add AU.Target
     execute as @e[type=wither_skeleton,scores={MobID=391},distance=..0.001,sort=nearest,limit=1] run scoreboard players operation @s AU.Dummy.UUID = $AU.Temp AU.Dummy.UUID
 
-# ボスバーの表示を自分にする
-    function asset_manager:mob/bossbar/init
-
 # リセット
     scoreboard players reset $AU.Temp AU.Dummy.UUID

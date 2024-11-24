@@ -17,13 +17,5 @@
 # 紐づけ終了
     tag @e[type=item_display,tag=AV.Root.This,distance=..100] remove AV.Root.This
 
-#> function
-# @private
-    #declare function asset:mob/0390.triple_rabbits/ai/general/share_health
-
-# 管理用スライムに情報を送る
-    scoreboard players operation $AV.Temp AU.Dummy.UUID = @s AU.Dummy.UUID
-    execute as @e[type=slime,scores={MobID=390},distance=..100] if score @s AU.Dummy.UUID = $AV.Temp AU.Dummy.UUID run function asset:mob/0390.triple_rabbits/ai/general/share_health
-
-# リセット
-    scoreboard players reset $AV.Temp AU.Dummy.UUID
+# 継承元の処理
+    function asset:mob/super.hurt

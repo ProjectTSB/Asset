@@ -14,3 +14,6 @@
     function animated_java:axia/remove/all
     function animated_java:ecual/remove/all
     function animated_java:labyria/remove/all
+
+# 継承元の処理
+    function asset:mob/super.death

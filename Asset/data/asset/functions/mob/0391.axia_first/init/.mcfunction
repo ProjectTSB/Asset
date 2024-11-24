@@ -22,3 +22,6 @@
 # 登場演出時は干渉付加
     data modify entity @s Invulnerable set value 1b
     tag @s add Uninterferable
+
+# 継承元の処理
+    function asset:mob/super.init

@@ -5,4 +5,4 @@
 # @within asset:mob/alias/393/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0393.labyria_first",NoAI:1b,Silent:1b}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],NoAI:1b,Silent:1b,DeathLootTable:"empty"}

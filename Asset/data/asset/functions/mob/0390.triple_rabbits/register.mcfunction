@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/390/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value 
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
@@ -15,7 +18,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value false
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '[{"text":"アキシャ","color":"#FF8A8A","bold":true}]'
+    data modify storage asset:mob Name set value '[{"text":"異界のウサギ共","color":"#FFFFFF","bold":true}]'
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 100
 # フィールド

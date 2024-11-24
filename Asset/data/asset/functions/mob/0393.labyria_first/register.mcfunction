@@ -4,6 +4,11 @@
 #
 # @within function asset:mob/alias/393/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 393
 # Type (string) Wikiを参照
