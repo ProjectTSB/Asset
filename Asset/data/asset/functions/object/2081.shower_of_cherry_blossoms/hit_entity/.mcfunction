@@ -1,18 +1,19 @@
-#> asset:mob/0337.shower_of_cherry_blossoms/tick/4.attack
+#> asset:object/2081.shower_of_cherry_blossoms/hit_entity/
 #
-# 桜吹雪の攻撃
+# 継承先などから実行される処理
 #
-# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/
+# @within asset:object/alias/2081/hit_entity
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 3.0d
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって桜の木の下に埋められた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは桜の木を切り倒した罪を背負いながら、%2$sによって倒された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    execute as @e[type=#lib:living,tag=this,distance=..16,limit=1] run function api:damage/modifier
-    function api:damage/
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
+    execute as @a[tag=2081.Target,distance=..10] run function api:damage/
     function api:damage/reset
 
-# タグ外し
-    tag @s remove 9D.Landing
+# プレイヤーのターゲットTagを削除
+    tag @a[tag=2081.Target,distance=..10] remove 2081.Target

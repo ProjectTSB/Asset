@@ -1,8 +1,8 @@
-#> asset:mob/0337.shower_of_cherry_blossoms/tick/3.vfx
+#> asset:object/2081.shower_of_cherry_blossoms/tick/vfx
 #
-# 演出
 #
-# @within function asset:mob/0337.shower_of_cherry_blossoms/tick/
+#
+# @within function asset:object/2081.shower_of_cherry_blossoms/tick/
 
 # Spiral.002
     particle cherry_leaves ^-1.0 ^0.0 ^0.0 0 0 0 0 1
@@ -39,12 +39,12 @@
     particle cherry_leaves ^-2.077 ^8.0 ^-2.077 0 0 0 0 1
     particle cherry_leaves ^-3.0 ^8.258 ^0.0 0 0 0 0 1
 # 平面
-    particle sweep_attack ^-0.0 ^0.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^8.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^1.333 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^2.667 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^4.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^5.333 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
-    particle sweep_attack ^-0.0 ^6.667 ^0.0 0.2 0.2 0.2 0.0 1 normal @a[distance=..32]
+    particle sweep_attack ^-0.0 ^0.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^8.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^1.333 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^2.667 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^4.0 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^5.333 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
+    particle sweep_attack ^-0.0 ^6.667 ^0.0 0.2 0.2 0.2 0.0 1 normal @a
 # 音
-    playsound item.elytra.flying hostile @a[distance=..16] ~ ~ ~ 0.5 2 0
+    playsound item.elytra.flying hostile @a ~ ~ ~ 0.5 2 0
