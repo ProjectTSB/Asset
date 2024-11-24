@@ -2,7 +2,6 @@
     "values": [
         "asset:mob/0224.fake_pumpkin/load",
         "asset:mob/0059.jack_o_lantern/load",
-        "asset:mob/0265.dark_familiar/load",
         "asset:mob/2000.abstract_angel/load",
         "asset:mob/0264.dark_summoner/load",
         "asset:mob/0188.fireball/load",
