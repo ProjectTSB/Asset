@@ -16,3 +16,14 @@
 
 # 紐づけ終了
     tag @e[type=item_display,tag=AW.Root.This,distance=..100] remove AW.Root.This
+
+#> function
+# @private
+    #declare function asset:mob/0390.triple_rabbits/ai/general/share_health
+
+# 管理用スライムに情報を送る
+    scoreboard players operation $AW.Temp AU.Dummy.UUID = @s AU.Dummy.UUID
+    execute as @e[type=slime,scores={MobID=390},distance=..100] if score @s AU.Dummy.UUID = $AW.Temp AU.Dummy.UUID run function asset:mob/0390.triple_rabbits/ai/general/share_health
+
+# リセット
+    scoreboard players reset $AW.Temp AU.Dummy.UUID

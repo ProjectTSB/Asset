@@ -11,7 +11,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"エクアル"}'
+    data modify storage asset:mob Name set value '[{"text":"エクアル","color":"#8CBEFF","bold":true}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value 
 # 体力 (double) (オプション)
