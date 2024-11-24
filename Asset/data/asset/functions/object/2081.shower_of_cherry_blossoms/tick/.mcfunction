@@ -14,7 +14,7 @@
 # 回転
     tp @s ~ ~ ~ ~2 ~
 
-# 追尾する
+# 近くのプレイヤーの方を向く
     execute at @s facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet positioned ^ ^ ^0.05 rotated as @s run tp @s ^ ^ ^ ~ ~
 
 # 4Tickに1回演出
