@@ -11,11 +11,11 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"与ダメージ低下"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"与ダメージが低下する。"}']
+    data modify storage asset:effect Description set value ['{"text":"与ダメージが低下する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
-    data modify storage asset:effect Stack set value 1
+    # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
     # data modify storage asset:effect DurationOperation set value
 # スタックの操作方法 (default = API || "replace")
