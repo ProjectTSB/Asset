@@ -12,7 +12,7 @@
     function asset:object/2060.cross_thunder/tick/vfx2
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 25.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
