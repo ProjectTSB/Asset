@@ -12,3 +12,5 @@
     data modify storage asset:mob ID set value 2000
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy.Boss"
+# フィールド
+    data modify storage asset:mob Field.BossbarName set value '{"selector":"@s"}'
