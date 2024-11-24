@@ -43,6 +43,7 @@
         "asset:effect/0261.gale_blessing/_/register",
         "asset:effect/0210.fading_speed/_/register",
         "asset:effect/0211.fading_speed/_/register",
-        "asset:effect/0101.attack_base_debuff/_/register"
+        "asset:effect/0101.attack_base_debuff/_/register",
+        "asset:effect/0107.defense_base_debuff/_/register"
     ]
 }
