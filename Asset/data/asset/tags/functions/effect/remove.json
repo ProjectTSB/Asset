@@ -36,7 +36,8 @@
         "asset:effect/0261.gale_blessing/_/remove",
         "asset:effect/0210.fading_speed/_/remove",
         "asset:effect/0211.fading_speed/_/remove",
-        "asset:effect/0203.secret_meat/_/remove",
-        "asset:effect/0201.magic_shield/_/remove"
+        "asset:effect/0201.magic_shield/_/remove",
+        "asset:effect/0101.attack_base_debuff/_/remove",
+        "asset:effect/0107.defense_base_debuff/_/remove"
     ]
 }
