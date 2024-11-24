@@ -802,9 +802,17 @@
 #declare function asset:effect/super.re-given from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/effect/super.re-given.mcfunction#L1
 
 #> declare
+# @within function asset:mob/*/init/
+#declare function asset:mob/super.init from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.init.mcfunction#L1
+
+#> declare
 # @within function asset:mob/*/**
     #declare function asset:mob/call.m       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/call.m.mcfunction#L1
     #declare function asset:mob/super.method from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.method.mcfunction#L1
+
+#> declare
+# @within function asset:mob/*/remove/
+#declare function asset:mob/super.remove from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/mob/super.remove.mcfunction#L1
 
 #> declare
 # @within
