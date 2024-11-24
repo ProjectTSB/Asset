@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/78/hurt
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.hurt
+
 # 演出
     particle dust 1 1 0 1 ~ ~1.6 ~ 0.4 0.6 0.4 0 10 normal @a
     particle dust 0.3 0.3 0.3 1 ~ ~1.6 ~ 0.4 0.6 0.4 0 30 normal @a

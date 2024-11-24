@@ -4,9 +4,11 @@
 #
 # @within function asset:mob/alias/78/attack
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.attack
+
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
-
 
 # 演出
     execute at @p[tag=Victim] run function asset:mob/0078.messenger_of_thunder/attack/fx

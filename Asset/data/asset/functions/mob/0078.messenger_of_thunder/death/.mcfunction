@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/78/death
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.death
+
 # 演出
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
     particle minecraft:large_smoke ~ ~0.2 ~ 0 0 0 0.4 250
