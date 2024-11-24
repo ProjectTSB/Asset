@@ -68,4 +68,9 @@
         data modify storage asset:mob Resist.Thunder set value 0
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+# 各スキルのダメージ設定
+    data modify storage asset:mob Field.Damage.Vanilla set value {Normal:18.0f,HPLess50Per:25.0f}
+    data modify storage asset:mob Field.Damage.Thunder set value 20.0f
+    data modify storage asset:mob Field.Damage.Return set value {Normal:16.0f,Hard:22.5f}
+    data modify storage asset:mob Field.Damage.Curtain set value {Normal:15.0f,Hard:18.0f}
+    data modify storage asset:mob Field.Damage.Cross set value 25.0f

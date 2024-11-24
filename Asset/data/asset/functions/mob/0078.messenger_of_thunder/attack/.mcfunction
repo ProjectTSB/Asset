@@ -12,8 +12,8 @@
     execute at @p[tag=Victim] run function asset:mob/0078.messenger_of_thunder/attack/fx
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 18.0d
-    execute if entity @s[tag=26.HPLess50Per] run data modify storage api: Argument.Damage set value 25.0d
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Vanilla.Normal
+    execute if entity @s[tag=26.HPLess50Per] run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Vanilla.HPLess50Per
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの雷に撃たれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'

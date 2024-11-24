@@ -9,8 +9,8 @@
 # Rotationだけこのmcf実行前に設定しておく
 
 # ダメージ設定
-    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set value 16.0f
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 22.5f
+    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Return.Normal
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Return.Hard
 
 # 速度設定
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.MovePerStep set value 0.5

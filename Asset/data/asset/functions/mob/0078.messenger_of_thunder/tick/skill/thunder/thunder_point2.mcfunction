@@ -14,6 +14,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2057
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Thunder
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=marker,tag=26.SpreadMarker,distance=..20,limit=1] run function api:object/summon
 
