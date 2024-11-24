@@ -5,11 +5,11 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/11_0_sw_disaster_divine/
 
 # ループTPする
-    scoreboard players set $AZ.Loop Temporary 25
+    scoreboard players set $AX.Loop Temporary 25
     function asset:mob/0393.labyria_first/ai/animation/11_0_sw_disaster_divine/warp/loop
 
 # スコアリセット
-    scoreboard players reset $AZ.Loop Temporary
+    scoreboard players reset $AX.Loop Temporary
 
 # オーバーライドを設定
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
@@ -19,7 +19,7 @@
     execute positioned ~ ~1.2 ~ run function api:object/summon
 
 # スコアセット
-    execute positioned ~ ~1.2 ~ run scoreboard players operation @e[type=item_display,distance=..0.001] AZ.AnimationTick = @s AZ.AnimationTick
+    execute positioned ~ ~1.2 ~ run scoreboard players operation @e[type=item_display,distance=..0.001] AX.AnimationTick = @s AX.AnimationTick
 
 # ダメージ設定
     # ダメージ

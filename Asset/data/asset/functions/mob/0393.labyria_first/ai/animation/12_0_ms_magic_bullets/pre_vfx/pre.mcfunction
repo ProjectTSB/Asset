@@ -5,8 +5,8 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/12_0_ms_magic_bullets/
 
 # 数値を代入してマクロの準備をする
-    scoreboard players operation $AZ.Temp AZ.AnimationTick = @s AZ.AnimationTick
-    execute store result storage asset:temp AZ.Tick double 0.005 run scoreboard players remove $AZ.Temp AZ.AnimationTick 22
+    scoreboard players operation $AX.Temp AX.AnimationTick = @s AX.AnimationTick
+    execute store result storage asset:temp AX.Tick double 0.005 run scoreboard players remove $AX.Temp AX.AnimationTick 22
 
 # マーカーを呼び出す
     tp 0-0-0-0-0 ^ ^ ^ ~ ~

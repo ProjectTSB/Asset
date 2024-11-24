@@ -6,7 +6,7 @@
 
 #> Temp
 # @private
-    #declare score_holder $AZ.X
+    #declare score_holder $AX.X
 
 # マーカーを90度だけ横に回転させつつ、用意する
     tp 0-0-0-0-0 ~ ~ ~ ~90 ~
@@ -15,13 +15,13 @@
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.001 run random value -15000..15000
 
 # X軸を取得する
-    execute store result score $AZ.X Temporary run data get entity 0-0-0-0-0 Rotation[0] 1000
-    execute store result score $AZ.Temp Temporary run random value -15000..15000
-    execute store result entity 0-0-0-0-0 Rotation[0] float 0.001 run scoreboard players operation $AZ.X Temporary += $AZ.Temp Temporary
+    execute store result score $AX.X Temporary run data get entity 0-0-0-0-0 Rotation[0] 1000
+    execute store result score $AX.Temp Temporary run random value -15000..15000
+    execute store result entity 0-0-0-0-0 Rotation[0] float 0.001 run scoreboard players operation $AX.X Temporary += $AX.Temp Temporary
 
 # スコア群をリセット
-    scoreboard players reset $AZ.X Temporary
-    scoreboard players reset $AZ.Temp Temporary
+    scoreboard players reset $AX.X Temporary
+    scoreboard players reset $AX.Temp Temporary
 
 # マーカーの位置でVFX起動
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/vfx
@@ -33,13 +33,13 @@
     execute store result entity 0-0-0-0-0 Rotation[1] float 0.001 run random value -15000..15000
 
 # X軸を取得する
-    execute store result score $AZ.X Temporary run data get entity 0-0-0-0-0 Rotation[0] 1000
-    execute store result score $AZ.Temp Temporary run random value -15000..15000
-    execute store result entity 0-0-0-0-0 Rotation[0] float 0.001 run scoreboard players operation $AZ.X Temporary += $AZ.Temp Temporary
+    execute store result score $AX.X Temporary run data get entity 0-0-0-0-0 Rotation[0] 1000
+    execute store result score $AX.Temp Temporary run random value -15000..15000
+    execute store result entity 0-0-0-0-0 Rotation[0] float 0.001 run scoreboard players operation $AX.X Temporary += $AX.Temp Temporary
 
 # スコア群をリセット
-    scoreboard players reset $AZ.X Temporary
-    scoreboard players reset $AZ.Temp Temporary
+    scoreboard players reset $AX.X Temporary
+    scoreboard players reset $AX.Temp Temporary
 
 # マーカーの位置でVFX起動
     execute at 0-0-0-0-0 run function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/vfx

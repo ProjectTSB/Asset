@@ -15,9 +15,9 @@
         data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの魔弾によって貫かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージを与える
         function lib:damage/modifier
-        execute as @a[tag=AZ.Temp.Target,distance=..5] run function lib:damage/
+        execute as @a[tag=AX.Temp.Target,distance=..5] run function lib:damage/
 # リセット
     function lib:damage/reset
 
 # 着弾タグを消す
-    tag @a[tag=AZ.Temp.Target,distance=..5] remove AZ.Temp.Target
+    tag @a[tag=AX.Temp.Target,distance=..5] remove AX.Temp.Target

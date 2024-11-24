@@ -6,12 +6,12 @@
 
 #> 定義類はここに
 # @within function asset:mob/0393.labyria_first/**
-    scoreboard objectives add AZ.AnimationTick dummy
-    scoreboard objectives add AZ.AnimationNum dummy
-    scoreboard objectives add AZ.ProjectileTick dummy
-    scoreboard objectives add AZ.UUID dummy
-    scoreboard objectives add AZ.FalterCount dummy
-    scoreboard objectives add AZ.ThunderSpear dummy
+    scoreboard objectives add AX.AnimationTick dummy
+    scoreboard objectives add AX.AnimationNum dummy
+    scoreboard objectives add AX.ProjectileTick dummy
+    scoreboard objectives add AX.UUID dummy
+    scoreboard objectives add AX.FalterCount dummy
+    scoreboard objectives add AX.ThunderSpear dummy
 
 # AnimationTick
     # Animationがどれくらいの時間経過したかを記録するスコア

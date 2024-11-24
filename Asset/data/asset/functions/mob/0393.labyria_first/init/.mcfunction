@@ -6,12 +6,12 @@
 
 # 召喚位置を記録
 # （島の位置が変更されるごとにメンテ）
-    summon marker ~ ~ ~ {Tags:["AZ.Marker.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["AX.Marker.SummonPoint"]}
 
 # スコア初期化
-    scoreboard players set @s AZ.AnimationTick 0
-    scoreboard players set @s AZ.AnimationNum 1000
-    scoreboard players set @s AZ.FalterCount 0
+    scoreboard players set @s AX.AnimationTick 0
+    scoreboard players set @s AX.AnimationNum 1000
+    scoreboard players set @s AX.FalterCount 0
 
 # animated javaモデル召喚
     execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:labyria/summon

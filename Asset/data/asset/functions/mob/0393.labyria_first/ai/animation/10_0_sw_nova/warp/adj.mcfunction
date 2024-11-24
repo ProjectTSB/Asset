@@ -11,7 +11,7 @@
     execute if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0393.labyria_first/ai/animation/4_0_sw_warp/warp/
 
 # Posの調整
-    data modify entity @s Pos[1] set from entity @e[type=marker,tag=AZ.Marker.SummonPoint,distance=..100,limit=1] Pos[1]
+    data modify entity @s Pos[1] set from entity @e[type=marker,tag=AX.Marker.SummonPoint,distance=..100,limit=1] Pos[1]
 
 # 演出
     function asset:mob/0393.labyria_first/ai/general/3.teleport_effect/

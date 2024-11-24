@@ -14,7 +14,7 @@
     execute as @r[tag=!PlayerShouldInvulnerable,distance=..100] at @s run tp 0-0-0-0-0 ~ ~ ~ ~ ~
 
 # 高さを調整
-    data modify entity 0-0-0-0-0 Pos[1] set from entity @e[type=marker,tag=AZ.Marker.SummonPoint,distance=..100,sort=nearest,limit=1] Pos[1]
+    data modify entity 0-0-0-0-0 Pos[1] set from entity @e[type=marker,tag=AX.Marker.SummonPoint,distance=..100,sort=nearest,limit=1] Pos[1]
 
 # 拡散する
     data modify storage lib: Argument.Bounds set value [[2d,2d],[0,0],[2d,2d]]

@@ -3,15 +3,15 @@
 
 #> tag
 # @within function asset:mob/0393.labyria_first/**
-    #declare tag AZ.Marker.SummonPoint
-    #declare tag AZ.ModelRoot
-    #declare tag AZ.Root.This
-    #declare tag AZ.Temp.This
-    #declare tag AZ.Temp.Target
-    #declare tag AZ.Landing
-    #declare tag AZ.Predict
-    #declare tag AZ.SuperiorSkill
-    #declare tag AZ.Death
+    #declare tag AX.Marker.SummonPoint
+    #declare tag AX.ModelRoot
+    #declare tag AX.Root.This
+    #declare tag AX.Temp.This
+    #declare tag AX.Temp.Target
+    #declare tag AX.Landing
+    #declare tag AX.Predict
+    #declare tag AX.SuperiorSkill
+    #declare tag AX.Death
 
 #> tag obj
 # @within function asset:mob/0393.labyria_first/**
@@ -25,8 +25,8 @@
 
 #> val
 # @within function asset:mob/0393.labyria_first/**
-    #declare score_holder $AZ.Temp
-    #declare score_holder $AZ.Loop
+    #declare score_holder $AX.Temp
+    #declare score_holder $AX.Loop
 
 #> AJ
 # @within function asset:mob/0393.labyria_first/**

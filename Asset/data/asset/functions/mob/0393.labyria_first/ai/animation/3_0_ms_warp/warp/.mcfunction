@@ -8,7 +8,7 @@
 #   asset:mob/0393.labyria_first/ai/animation/7_0_sw_thunder_grenade/
 
 # スコアを設定
-    scoreboard players set $AZ.Loop Temporary 0
+    scoreboard players set $AX.Loop Temporary 0
 
 # ループ処理を行う
     function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/warp/loop
@@ -17,4 +17,4 @@
     function asset:mob/0393.labyria_first/ai/general/3.teleport_effect/
 
 # スコアリセット
-    scoreboard players reset $AZ.Loop Temporary
+    scoreboard players reset $AX.Loop Temporary

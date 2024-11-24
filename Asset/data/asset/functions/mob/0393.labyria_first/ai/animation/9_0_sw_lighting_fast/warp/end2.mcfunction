@@ -7,7 +7,7 @@
 #   asset:mob/0393.labyria_first/ai/animation/100_0_opening/
 
 # 中央にワープ
-    execute at @e[type=marker,tag=AZ.Marker.SummonPoint,distance=..100] run tp @s ~ ~ ~ ~ 0
+    execute at @e[type=marker,tag=AX.Marker.SummonPoint,distance=..100] run tp @s ~ ~ ~ ~ 0
     function asset:mob/0393.labyria_first/ai/general/3.teleport_effect/
 
 # 干渉可能に
