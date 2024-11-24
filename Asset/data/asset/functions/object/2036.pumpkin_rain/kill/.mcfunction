@@ -15,13 +15,6 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.4 1.9 0
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 0.7 1.7 0
 
-# 回転するxyzLibを使ってダメージ判定を行う
-    data modify storage lib: args.dx set value 1.3
-    data modify storage lib: args.dy set value 1.0
-    data modify storage lib: args.dz set value 1.3
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..4]"
-    function lib:rotatable_dxyz/m with storage lib: args
-
 # ダメージ
     data modify storage api: Argument.Damage set value 14
     data modify storage api: Argument.AttackType set value "Magic"

@@ -18,5 +18,4 @@
     function lib:rotatable_dxyz/m with storage lib: args
     execute if entity @p[tag=DXYZ,distance=..4] run data modify storage asset:context IsHitEntity set value true
 
-# リセット
-    tag @a[tag=DXYZ,distance=..4] remove DXYZ
+# 付与されたDXYZタグをkillメソッドへ引き継ぐ
