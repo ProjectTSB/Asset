@@ -23,4 +23,4 @@
     function lib:mp/fluctuation
 
 # リセット
-    data remove storage asset:temp 3U.Temp
+    data remove storage asset:temp 3U

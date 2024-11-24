@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Log4Shell","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"原木を消費して弾丸を発射する。"}','{"text":"${jndi:ldap://tsb.com/sacred_tresure}","color":"dark_purple","italic":false}']
+    data modify storage asset:artifact Lore set value ['{"text":"原木を消費して弾丸を発射する。"}','{"text":"${jndi:ldap://tsb.example.com/artifact}","color":"dark_purple","italic":false}']
 # MP以外の消費物 (TextComponentString) (オプション)
     data modify storage asset:artifact CostText set value '[{"text":"原木"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
