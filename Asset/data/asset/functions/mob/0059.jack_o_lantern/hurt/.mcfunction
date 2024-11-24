@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/59/hurt
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.hurt
+
 # 被ダメ時に自身にTagを付与
     tag @s add 1N.Hurt
 

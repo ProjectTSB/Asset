@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/59/death
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.death
+
 # プレイヤーの方を見る
     tp @s ~ ~ ~ facing entity @p eyes
 

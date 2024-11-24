@@ -4,9 +4,11 @@
 #
 # @within function asset:mob/alias/59/attack
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.attack
+
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
-
 
 # 演出
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 0.8 1.8 0

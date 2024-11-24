@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/59/init
 
+# スーパーメソッド呼び出し
+    function asset:mob/super.init
+
 # スポーン位置を保存するマーカーを召喚
     summon marker ~ ~ ~ {Tags:["Object","1N.SpawnMarker"]}
 
