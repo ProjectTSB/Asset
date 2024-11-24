@@ -8,7 +8,7 @@
     tp @s ~ ~ ~ 0 90
 
 # UUIDを設定
-    execute store result score @s 2011.Dummy.UUID run random value -2147483648..2147483647
+    execute store result score @s 2011.Dummy.UUID run random value 0..2147483646
 
 # オーバーライドを設定
     data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
