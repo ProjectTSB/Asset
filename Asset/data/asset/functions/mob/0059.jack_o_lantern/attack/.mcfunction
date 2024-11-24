@@ -17,7 +17,7 @@
     particle flame ~ ~1.5 ~ 0.5 0.5 0.5 0 10 normal @a
 
 # 火属性ダメージ
-    data modify storage api: Argument.Damage set value 14.0
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Vanilla
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによりカボチャの怨念を受け、燃え尽きた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
