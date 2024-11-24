@@ -40,7 +40,7 @@
 # 演出
     execute store result storage asset:temp T1.Num int 1 run scoreboard players get @s T1.LandingTick
     function asset:artifact/1045.mini_black_hole/trigger/schedule/landing_vfx/m with storage asset:temp T1
-    data remove storage asset:temp T1.Num
+    data remove storage asset:temp T1
 
 # 音（着弾時）
     execute if score @s T1.LandingTick matches 1 run function asset:artifact/1045.mini_black_hole/trigger/schedule/3.2.landing_sound
