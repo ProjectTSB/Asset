@@ -18,16 +18,11 @@
     effect give @p[tag=Victim] poison 3 1 true
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 28f
-# 属性
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-# デスログ
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってべとべとに斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにハチの巣の材料にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-# 補正functionを実行
-    function lib:damage/modifier
-# 対象
-    execute as @p[tag=Victim] run function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 28f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってべとべとに斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにハチの巣の材料にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}'
+    function api:damage/modifier
+    execute as @p[tag=Victim] run function api:damage/
+    function api:damage/reset
