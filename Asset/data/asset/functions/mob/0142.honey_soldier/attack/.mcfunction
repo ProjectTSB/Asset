@@ -12,8 +12,7 @@
     execute at @p[tag=Victim] run particle dust 1.000 0.741 0.141 1.3 ~ ~1.2 ~ 0.5 0.4 0.5 0 20 normal
     execute at @p[tag=Victim] run playsound minecraft:block.honey_block.place hostile @a ~ ~ ~ 0.7 1 0
 
-# デバフ
-    effect give @p[tag=Victim] weakness 3 1 true
+# バニラデバフ
     effect give @p[tag=Victim] mining_fatigue 3 1 true
     effect give @p[tag=Victim] poison 3 1 true
 
