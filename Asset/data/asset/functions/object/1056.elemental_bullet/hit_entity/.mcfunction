@@ -15,7 +15,7 @@
     particle minecraft:crit ~ ~ ~ 0 0 0 0.5 5
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 40.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set from storage asset:context this.Element
     function api:damage/

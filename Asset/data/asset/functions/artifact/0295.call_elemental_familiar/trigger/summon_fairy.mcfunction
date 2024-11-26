@@ -12,6 +12,9 @@
     execute store result score $Random Temporary run function lib:random/
     scoreboard players operation $Random Temporary %= $3 Const
 
+# ダメージ設定
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+
 # 属性を決める
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.FieldOverride.Element set value "Fire"
     execute if score $Random Temporary matches 1 run data modify storage api: Argument.FieldOverride.Element set value "Thunder"

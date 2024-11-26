@@ -12,6 +12,9 @@
 # 属性設定
     data modify storage api: Argument.FieldOverride.Element set from storage asset:context this.Element
 
+# ダメージ量
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+
 # UserID
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
 
