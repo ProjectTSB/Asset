@@ -31,4 +31,4 @@
 
 # リセット
     function lib:heal/reset
-    data remove storage asset:temp 3X.Temp
+    data remove storage asset:temp 3X

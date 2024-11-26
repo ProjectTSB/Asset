@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/30/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @p[tag=Victim] run particle minecraft:dragon_breath ~ ~ ~ 0.5 1 0.5 0.05 50 normal @a
     execute at @p[tag=Victim] run playsound minecraft:block.end_portal_frame.fill hostile @a ~ ~ ~ 1 0.5 0
