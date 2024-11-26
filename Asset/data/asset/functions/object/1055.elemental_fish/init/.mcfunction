@@ -6,6 +6,8 @@
 
 # 演出
     particle poof ~ ~0.5 ~ 0.1 0.1 0.1 0.05 5
+    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 1.75
+    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 2
 
 # スピード設定
     data modify storage asset:context this.Speed set value 1

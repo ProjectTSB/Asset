@@ -18,5 +18,3 @@
     playsound minecraft:item.bottle.fill_dragonbreath player @a ~ ~ ~ 2 2
     playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 2 1.75
     playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 2 2
-    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 1.75
-    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 2
