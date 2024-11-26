@@ -19,7 +19,6 @@
 # 与ダメージ低下(ID:101)を付与
 # Stack = 難易度値 * 2
     function api:global_vars/get_difficulty
-    data modify storage api: Argument.ID set value 607
     data modify storage api: Argument.ID set value 101
     data modify storage api: Argument.Duration set value 100
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
