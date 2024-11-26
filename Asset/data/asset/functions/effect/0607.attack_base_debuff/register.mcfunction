@@ -1,8 +1,8 @@
-#> asset:effect/0607.sedation/register
+#> asset:effect/0607.attack_base_debuff/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0607.sedation/_/register
+# @within function asset:effect/0607.attack_base_debuff/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
