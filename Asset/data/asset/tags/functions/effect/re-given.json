@@ -12,6 +12,9 @@
         "asset:effect/0613.white_curse/_/re-given",
         "asset:effect/0261.gale_blessing/_/re-given",
         "asset:effect/0211.fading_speed/_/re-given",
-        "asset:effect/0210.fading_speed/_/re-given"
+        "asset:effect/0210.fading_speed/_/re-given",
+        "asset:effect/0201.magic_shield/_/re-given",
+        "asset:effect/0101.attack_base_debuff/_/re-given",
+        "asset:effect/0107.defense_base_debuff/_/re-given"
     ]
 }
