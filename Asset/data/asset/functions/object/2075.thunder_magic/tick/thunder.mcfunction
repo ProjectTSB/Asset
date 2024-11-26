@@ -15,7 +15,7 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.7 0 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 36f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
