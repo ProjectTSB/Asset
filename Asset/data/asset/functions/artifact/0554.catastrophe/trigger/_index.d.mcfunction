@@ -17,3 +17,4 @@
     #declare score_holder $FE.Cooldown
     #declare score_holder $Physical
     #declare score_holder $Magic
+    #declare score_holder $DamageVal
