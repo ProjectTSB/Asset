@@ -26,14 +26,14 @@
     execute at @s run function asset:object/super.tick
 
 # パーティクル
-    execute if entity @s[tag=1055.Fire] positioned ^ ^ ^-0.3 run particle dust 1 0 0 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
-    execute if entity @s[tag=1055.Fire] positioned ^ ^ ^-0.3 run particle dust 1 0.5 0 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Fire} positioned ^ ^ ^-0.3 run particle dust 1 0 0 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Fire} positioned ^ ^ ^-0.3 run particle dust 1 0.5 0 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
 
-    execute if entity @s[tag=1055.Thunder] positioned ^ ^ ^-0.3 run particle dust 1 1 0 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
-    execute if entity @s[tag=1055.Thunder] positioned ^ ^ ^-0.3 run particle dust 1 1 0.7 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Thunder} positioned ^ ^ ^-0.3 run particle dust 1 1 0 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Thunder} positioned ^ ^ ^-0.3 run particle dust 1 1 0.7 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
 
-    execute if entity @s[tag=1055.Water] positioned ^ ^ ^-0.3 run particle dust 0 0.267 1 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
-    execute if entity @s[tag=1055.Water] positioned ^ ^ ^-0.3 run particle dust 0 0.667 1 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Water} positioned ^ ^ ^-0.3 run particle dust 0 0.267 1 0.5 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
+    execute if data storage asset:context this{Element:Water} positioned ^ ^ ^-0.3 run particle dust 0 0.667 1 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
 
 # 付近に敵がいるならスコア増やす
     execute if entity @e[type=#lib:living,tag=Enemy,distance=..15] run scoreboard players add @s 1055.Attack 1

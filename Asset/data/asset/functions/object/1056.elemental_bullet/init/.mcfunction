@@ -12,10 +12,8 @@
     data modify storage asset:context this.Range set value 40
     data modify storage asset:context this.MovePerStep set value 0.8
 
-# 属性Tag設定
-    execute if data storage asset:context this{Element:Fire} run tag @s add 1056.Fire
-    execute if data storage asset:context this{Element:Water} run tag @s add 1056.Water
-    execute if data storage asset:context this{Element:Thunder} run tag @s add 1056.Thunder
+# debug : 属性が未設定の場合ログを出す
+    execute unless data storage asset:context this.Element run say "属性が未設定です"
 
 # 継承
     function asset:object/super.init
