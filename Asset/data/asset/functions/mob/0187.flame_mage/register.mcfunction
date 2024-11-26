@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0187.flame_mage/_/register
+# @within function asset:mob/alias/187/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -23,7 +23,7 @@
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:369}}
-   # オフハンド (Compound(Item)) (オプション)
+    # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob WeaponDropChances set value

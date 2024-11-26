@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:mob/1008.yellow_star/attack/2.attack
+#   asset:mob/1008.yellow_star/attack/
 #   asset:mob/1008.yellow_star/attack/3.scheduleloop
 #   asset:mob/1008.yellow_star/rejoin_process
 

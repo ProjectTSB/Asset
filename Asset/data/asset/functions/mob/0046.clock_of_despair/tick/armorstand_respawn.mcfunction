@@ -2,7 +2,7 @@
 #
 # 実質リセット処理（こんなことすんな！！！！）
 #
-# @within function asset:mob/0046.clock_of_despair/tick/2.tick
+# @within function asset:mob/0046.clock_of_despair/tick/
 
 # キル
     kill @e[type=armor_stand,tag=1A.ClockHand]

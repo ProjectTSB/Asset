@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0274.death_saw_jiki/tick/2.tick
+# @within function asset:mob/0274.death_saw_jiki/tick/
 #> private
 # @private
     #declare tag DamageTarget
@@ -13,7 +13,7 @@
     playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 2.0 0
 
 # 属性ダメージ
-   # 与えるダメージ
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 28.4f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"

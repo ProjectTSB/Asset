@@ -2,7 +2,7 @@
 #
 # 1度だけ発動する攻撃
 #
-# @within function asset:mob/0047.the_heretic/attack/2.attack
+# @within function asset:mob/0047.the_heretic/attack/
 
 # テレポートする
     execute at @e[type=#lib:living,tag=Victim] rotated ~ -10 positioned ^ ^ ^3 facing entity @e[type=#lib:living,tag=Victim] eyes run tp @s ~ ~ ~
