@@ -11,7 +11,7 @@
     execute positioned ~ ~0.3 ~ rotated 0 0 run function asset:object/2074.water_magic/tick/vfx/square
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 24.5f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより激流に飲み込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
