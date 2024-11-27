@@ -23,6 +23,8 @@
     #declare function animated_java:tutankhamen/animations/neutral/stop
     #declare function animated_java:tutankhamen/animations/spawn/play
     #declare function animated_java:tutankhamen/animations/spawn/stop
+    #declare function animated_java:tutankhamen/animations/death/play
+    #declare function animated_java:tutankhamen/animations/death/stop
     #declare function animated_java:tutankhamen/animations/beam_start/play
     #declare function animated_java:tutankhamen/animations/beam_start/stop
     #declare function animated_java:tutankhamen/animations/beam_shot/play

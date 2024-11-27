@@ -4,6 +4,9 @@
 #
 # @within asset:mob/alias/372/init
 
+# super.init呼び出し
+    function asset:mob/super.init
+
 # AJ召喚
     execute rotated ~ 0 run function animated_java:tutankhamen/summon
 
