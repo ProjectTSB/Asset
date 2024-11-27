@@ -18,7 +18,7 @@
     execute if score @s General.Mob.Tick matches 350 if entity @s[tag=AU.EcualDeath] run function asset:mob/0390.triple_rabbits/ai/general/ecual_to_labyria
 
 # ラビリア to Death
-    execute if score @s General.Mob.Tick matches 510 if entity @s[tag=AU.LabyriaDeath] run kill @s
+    execute if score @s General.Mob.Tick matches 510 if entity @s[tag=AU.LabyriaDeath] run function api:mob/kill
 
 # ズル対策
     scoreboard players operation $IntervalTime Temporary = @s General.Mob.Tick
