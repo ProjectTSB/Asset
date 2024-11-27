@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0410.heiloang/**
-    # scoreboard objectives add
+    scoreboard objectives add BE.EventTimer dummy

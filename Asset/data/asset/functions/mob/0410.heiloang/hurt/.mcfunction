@@ -7,4 +7,4 @@
 # 継承元の処理実行
     function asset:mob/super.hurt
 
-# TODO：ダメージ処理
+# TODO：ダメージ時処理
