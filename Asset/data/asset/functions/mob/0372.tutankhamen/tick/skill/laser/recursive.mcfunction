@@ -13,7 +13,7 @@
 
 # 一定間隔での演出
     scoreboard players operation $Interval Temporary = $Recursive Temporary
-    scoreboard players operation $Interval Temporary %= $10 Const
+    scoreboard players operation $Interval Temporary %= $5 Const
     execute if score $Interval Temporary matches 0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1
     scoreboard players reset $Interval Temporary
 
