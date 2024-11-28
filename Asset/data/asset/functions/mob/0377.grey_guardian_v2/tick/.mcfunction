@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within asset:mob/alias/123/tick
+# @within asset:mob/alias/377/tick
 
 # スコアを増やす
     scoreboard players add @s AH.Tick 1
