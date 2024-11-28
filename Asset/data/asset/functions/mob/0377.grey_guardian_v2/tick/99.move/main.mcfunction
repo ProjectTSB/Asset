@@ -9,8 +9,9 @@
     execute if score @s AH.Tick matches -20 as @e[type=item_display,tag=AH.AJ,tag=AH.AJLink,sort=nearest,limit=1] run function animated_java:grey_guardian/animations/move/play
 
 
-# 動き続ける
+# 動き続ける(ハードだと移動速度倍！ｗ)
     execute facing entity @p[gamemode=!spectator] eyes rotated ~ 0 positioned ^ ^ ^0.25 run function asset:mob/0377.grey_guardian_v2/tick/common/tp
+    execute if predicate api:global_vars/difficulty/hard at @s facing entity @p[gamemode=!spectator] eyes rotated ~ 0 positioned ^ ^ ^0.25 run function asset:mob/0377.grey_guardian_v2/tick/common/tp
     execute at @s if block ~ ~-0.5 ~ #lib:air positioned ~ ~-0.5 ~ run function asset:mob/0377.grey_guardian_v2/tick/common/tp
 
 # プレイヤーが近くにいるなら終わる

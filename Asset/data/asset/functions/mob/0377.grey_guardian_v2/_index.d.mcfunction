@@ -6,6 +6,8 @@
     #declare tag AH.AJ
     #declare tag AH.AJLink
     #
+    #declare tag AH.Hit
+    #
     #declare tag AH.Skill01
     #declare tag AH.Skill02
     #declare tag AH.Skill03
