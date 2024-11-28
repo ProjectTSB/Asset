@@ -11,6 +11,7 @@
     #declare tag AH.Skill03
     #declare tag AH.Skill04
     #declare tag AH.Skill05
+    #declare tag AH.Skill90
     #
     #declare tag AH.Opening
     #

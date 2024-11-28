@@ -18,7 +18,10 @@
     execute if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..4] run function asset:mob/0377.grey_guardian_v2/tick/99.move/end
 
 # スペクテイターでないプレイヤーが攻撃当たる程度に近くにいない時。スコアを戻す
-    execute if score @s AH.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..6] run scoreboard players set @s AH.Tick -20
+    execute if score @s AH.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..6] if predicate lib:random_pass_per/40 run tag @s add AH.Skill90
+
+# スペクテイターでないプレイヤーが攻撃当たる程度に近くにいない時。スコアを戻す
+    execute if score @s[tag=!AH.Skill90] AH.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..6] run scoreboard players set @s AH.Tick -20
 
 
 # 時間で動き終われ

@@ -19,4 +19,6 @@
     tag @s remove AH.Skill04
     tag @s remove AH.Skill05
 
+    tag @s remove AH.Skill90
+
     tag @s remove AH.Opening
