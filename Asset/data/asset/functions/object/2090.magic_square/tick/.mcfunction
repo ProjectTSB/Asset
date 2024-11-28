@@ -14,6 +14,7 @@
 
 # 一定間隔で回転
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    scoreboard players add $Interval Temporary 9
     scoreboard players operation $Interval Temporary %= $12 Const
     execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=3..}] run function asset:object/2090.magic_square/tick/spin
     scoreboard players reset $Interval Temporary
