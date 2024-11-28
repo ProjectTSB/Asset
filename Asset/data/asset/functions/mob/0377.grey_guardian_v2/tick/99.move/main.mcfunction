@@ -14,7 +14,8 @@
     execute at @s if block ~ ~-0.5 ~ #lib:air positioned ~ ~-0.5 ~ run function asset:mob/0377.grey_guardian_v2/tick/common/tp
 
 # プレイヤーが近くにいるなら終わる
-    execute if entity @p[distance=..4] run function asset:mob/0377.grey_guardian_v2/tick/99.move/end
+    execute unless predicate api:global_vars/difficulty/min/hard if entity @p[distance=..5] run function asset:mob/0377.grey_guardian_v2/tick/99.move/end
+    execute if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..4] run function asset:mob/0377.grey_guardian_v2/tick/99.move/end
 
 # スペクテイターでないプレイヤーが攻撃当たる程度に近くにいない時。スコアを戻す
     execute if score @s AH.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..6] run scoreboard players set @s AH.Tick -20
