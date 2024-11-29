@@ -4,6 +4,7 @@
 #
 # @within asset:mob/alias/377/init
 
+function asset:mob/super.init
 
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:grey_guardian/summon
