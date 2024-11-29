@@ -22,6 +22,9 @@
 # リセット
     scoreboard players reset $Interval
 
+# プレイヤーみる
+    execute if score @s AH.Tick matches 35 if predicate api:global_vars/difficulty/min/hard facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function asset:mob/0377.grey_guardian_v2/tick/common/tp
+
 # 地面叩く
     execute if score @s AH.Tick matches 53 positioned ^ ^ ^4 run function asset:mob/0377.grey_guardian_v2/tick/03.axe1/explode
     execute if score @s AH.Tick matches 54 positioned ^ ^ ^5 run function asset:mob/0377.grey_guardian_v2/tick/03.axe1/explode
