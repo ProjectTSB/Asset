@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/animated_java/play_3_0_hellfire_start
+#> asset:mob/0410.heiloang/tick/animated_java/play/3_0_hellfire_start
 #
 # アニメーション再生
 #

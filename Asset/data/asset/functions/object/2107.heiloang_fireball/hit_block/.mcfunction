@@ -6,9 +6,10 @@
 
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2108
+    data modify storage api: Argument.FieldOverride.Damage set value 20.0f
     # 攻撃元の特定用にUUIDを引き継ぎ
         data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
-    function api:object/summon
+    execute positioned ~ ~0.3 ~ run function api:object/summon
 
 # 着弾時の消滅処理
     kill @s

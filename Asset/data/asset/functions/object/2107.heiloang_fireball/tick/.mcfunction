@@ -11,6 +11,7 @@
     function asset:object/super.tick
 
 # 独自処理
+    particle flame ~ ~ ~ 0.1 0.1 0.1 0.05 3
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]

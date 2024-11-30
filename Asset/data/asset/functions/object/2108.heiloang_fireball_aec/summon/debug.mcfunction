@@ -1,4 +1,4 @@
-#> asset:object/2107.heiloang_fireball/summon/debug
+#> asset:object/2108.heiloang_fireball_aec/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #
@@ -6,5 +6,5 @@
 # @private
 
 # 召喚
-    data modify storage api: Argument.ID set value 2107
+    data modify storage api: Argument.ID set value 2108
     function api:object/summon

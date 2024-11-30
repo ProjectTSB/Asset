@@ -6,4 +6,8 @@
 
 #> 定義類はここに
 # @within function asset:mob/0410.heiloang/**
-    scoreboard objectives add BE.EventTimer dummy
+    # エラー対策
+        scoreboard objectives add aj.heiloang_aj.animation.1_idle.local_anim_time dummy
+
+    # 処理用
+        scoreboard objectives add BE.EventTimer dummy

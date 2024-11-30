@@ -5,4 +5,4 @@
 # @within asset:object/2107.heiloang_fireball/summon/
 
 # 元となるEntityを召喚する
-    $summon marker ~ ~ ~ {Tags:["ObjectInit"],Rotation:$(Rotation)}
+    $summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:$(Rotation)}

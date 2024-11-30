@@ -14,11 +14,5 @@
     # 移動
         execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
     # NBT設定
-    # AjModelの召喚
-        execute at @s run function animated_java:heiloang_aj/summon
-    # AjModelのパーツに以下処理を実行する
-        execute as @e[type=item_display,tag=BE.ModelRoot] on passengers if entity @s[type=item_display] run data merge entity @s {view_range:16f,width:0f,height:0f}
-
-# テスト
-    # 待機モーション再生
-        execute as @e[type=item_display,tag=BE.ModelRoot] at @s run function animated_java:heiloang_aj/animations/1_idle/play
+    # Aj関連初期化
+        function asset:mob/0410.heiloang/tick/animated_java/init
