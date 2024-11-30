@@ -5,4 +5,4 @@
 # @within asset:object/alias/2108/summon
 
 # 元となるEntityを召喚する
-    summon area_effect_cloud ~ ~ ~ {Tags:["ObjectInit"],Particle:"flame",Radius:6f,Duration:300}
+    summon area_effect_cloud ~ ~ ~ {Tags:["ObjectInit"],Particle:"flame",Radius:6f,Duration:500}

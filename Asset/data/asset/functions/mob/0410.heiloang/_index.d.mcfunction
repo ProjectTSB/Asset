@@ -32,4 +32,6 @@
     #declare tag BE.AttackTarget 攻撃ターゲット
 
 # 一時
+    #declare tag BE.Temp.Ground 角度決定用
     #declare tag BE.Temp.AttackRotation 角度決定用
+    #declare tag BE.Temp.AttackPosition 位置決定用

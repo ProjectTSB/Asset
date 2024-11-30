@@ -11,5 +11,9 @@
         data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
     execute positioned ~ ~0.3 ~ run function api:object/summon
 
+# ヒット演出
+    playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.7
+    particle explosion ~ ~2 ~ 2 1 2 0 20
+
 # 着弾時の消滅処理
     kill @s

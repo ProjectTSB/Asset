@@ -2,7 +2,7 @@
 #
 # ヘルファイア
 #
-# @within asset:mob/0410.heiloang/tick/event/
+# @within asset:mob/0410.heiloang/tick/event/hellfire/
 
 # タグ消去
     tag @s remove BE.Skill.Hellfire
