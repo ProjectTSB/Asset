@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/hellfire/
 
 # 中心
-    particle flame ~ ~ ~ 0.1 0.1 0.1 0.2 2
+    particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.2 2
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwCcAzLQAwMAcAtAEbtwOsAsATJTitqAdl4BDVrQCs-GQEZ+DFADNG+MADsJAWwTJAYYoACBWAIwJGPQGck4FAHtCWiElrUCKOK7gZ7YABuEtiEBuAAHkgMBFDRAL7xBNakaIR2iJQENhBWbogxYHDY2GgwNgYKTMmOuRAGhWg2AKIlZRXNAI6EIdhQAMqW3uSIqiEViQC6QA_3
 # 円 1

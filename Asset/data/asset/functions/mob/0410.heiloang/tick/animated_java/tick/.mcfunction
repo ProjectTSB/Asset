@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/animated_java/tick/
 #
-# アニメーション用のイベントへの振り分け
+# アニメーション用のイベントへの振り分け 主に演出用
 #
 # @within asset:mob/0410.heiloang/tick/
 

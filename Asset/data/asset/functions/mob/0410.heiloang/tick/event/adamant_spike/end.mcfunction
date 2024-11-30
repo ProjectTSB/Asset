@@ -1,11 +1,11 @@
-#> asset:mob/0410.heiloang/tick/event/hellfire/end
+#> asset:mob/0410.heiloang/tick/event/adamant_spike/end
 #
-# ヘルファイア
+# アダマントスパイク
 #
-# @within asset:mob/0410.heiloang/tick/event/hellfire/
+# @within asset:mob/0410.heiloang/tick/event/adamant_spike/
 
 # タグ消去
-    tag @s remove BE.Skill.Hellfire
+    tag @s remove BE.Skill.Adamant
     tag @a add BE.MainTarget
 
 # 待機モーション再生

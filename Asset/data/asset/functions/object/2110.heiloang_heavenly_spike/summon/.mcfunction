@@ -1,0 +1,8 @@
+#> asset:object/2110.heiloang_heavenly_spike/summon/
+#
+# Object召喚処理の呼び出し時に実行されるfunction
+#
+# @within asset:object/alias/2110/summon
+
+# 元となるEntityを召喚する
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],interpolation_duration:10,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"minecraft:blue_ice",Count:1b}}
