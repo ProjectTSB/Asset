@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"ゴーレムコア","color":"dark_purple"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"アイアンゴーレムの核となる精密機械"}','{"text":"鉄ブロックに取り付けるだけでゴーレムを製造できる。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"block.minecraft.iron_block"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 30

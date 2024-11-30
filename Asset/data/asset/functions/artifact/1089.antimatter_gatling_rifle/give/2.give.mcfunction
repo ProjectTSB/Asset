@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"反物質回転式多銃身機関銃","color":"dark_gray","bold":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"対象を","color":"white"},{"text":"消滅","color":"gray","bold":true},{"text":"させるために作られた銃"}]','{"text":"相手は死ぬ","color":"white"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

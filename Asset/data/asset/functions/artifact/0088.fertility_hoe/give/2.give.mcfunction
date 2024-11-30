@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '[{"text":"豊穣の鍬","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"周囲5mの範囲の作物を最大まで成長させる"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.bone_meal"},{"text":"x8"}]'
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 50

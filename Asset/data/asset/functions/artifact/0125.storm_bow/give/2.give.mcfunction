@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"ストームボウ","color":"dark_blue","bold":true,"italic":false,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"周囲のモブの上から矢を降らす"}']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.arrow"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value

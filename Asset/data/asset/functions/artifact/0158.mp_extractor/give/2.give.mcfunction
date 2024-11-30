@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '[{"text":"MP抽出装置","color":"light_purple"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"MPを瓶に詰めて抽出できる"}]','[{"text":"一部は天使の取り分となることがある"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.glass_bottle"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value

@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"Sina-TK<Empty>","color":"#7CC71A"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"竹製の竹を発射する竹々しい銃。","color":"#9FFF21"}]','[{"text":"竹をありったけ装填することで再使用できる。","color":"#9FFF21"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"block.minecraft.bamboo"},{"text":" x16"}]'
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 4

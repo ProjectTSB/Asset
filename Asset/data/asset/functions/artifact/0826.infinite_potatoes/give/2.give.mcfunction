@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"∞のじゃがいも袋","color":"#a24924"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"無限にじゃがいもが出てくる袋","color":"dark_aqua","bold":true,"italic":false}']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.bone_meal"},{"text":" x1 (25%)"}]'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value

@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"マスケット銃(マッチロック)","color":"red"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"マッチロック式の銃、俗に言う火縄銃。"}','{"text":"命中精度は悪い。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.gunpowder"},{"text":" x1"}]'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
