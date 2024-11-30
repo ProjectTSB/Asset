@@ -17,7 +17,9 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"儚い花の香りを宿した大斧"}','{"text":"ひとたび敵に振るえば、付いた傷跡に猛毒がしみこむ。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    data modify storage asset:artifact CostText set value '[{"translate":"block.minecraft.lily_of_the_valley"},{"text":" x1"}]'
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.lily_of_the_valley"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 100
 # 神器を発動できるスロット (string) Wikiを参照

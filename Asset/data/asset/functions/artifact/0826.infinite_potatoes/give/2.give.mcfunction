@@ -17,7 +17,9 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"無限にじゃがいもが出てくる袋","color":"dark_aqua","bold":true,"italic":false}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    data modify storage asset:artifact CostText set value '[{"translate":"item.minecraft.bone_meal"},{"text":" x1 (25%)"}]'
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.bone_meal"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
+    data modify storage asset:artifact ConsumeItem.Extra set value '{"text":"25%"}'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
