@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2110.heiloang_heavenly_spike/**
-    scoreboard objectives add 
+    # scoreboard objectives add

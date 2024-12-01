@@ -19,6 +19,7 @@
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 2 0.7
     particle firework ~ ~2 ~ 0.1 0.1 0.1 0.5 30
     particle block blue_ice ~ ~2 ~ 3 3 3 0.5 30
+    function asset:object/2110.heiloang_heavenly_spike/tick/particle
 
 # 消去
     kill @s

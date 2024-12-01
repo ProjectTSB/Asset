@@ -9,5 +9,8 @@
     data modify storage asset:context this.Range set value 90
     data modify storage asset:context this.MovePerStep set value 0.7
 
+# 初期化
+    scoreboard players set @s 2109.DamageInterval 0
+
 # 継承
     function asset:object/super.init

@@ -16,17 +16,17 @@
     # 氷設置位置予告
         execute if score @s BE.EventTimer matches 23..90 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/adamant_spike/particle_before
     # 攻撃範囲予告
-        execute if score @s BE.EventTimer matches 10..279 at @p[tag=BE.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0410.heiloang/tick/event/adamant_spike/particle_attack_area
+        execute if score @s BE.EventTimer matches 10..182 at @p[tag=BE.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0410.heiloang/tick/event/adamant_spike/particle_attack_area
 # 発動
     # アニメーション再生
         execute if score @s BE.EventTimer matches 90 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/4_blizzard
     # 攻撃開始
-        execute if score @s BE.EventTimer matches 100 at @e[type=marker,tag=BE.CenterPosition] positioned ^16.5 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
-        execute if score @s BE.EventTimer matches 116 at @e[type=marker,tag=BE.CenterPosition] positioned ^10 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
-        execute if score @s BE.EventTimer matches 132 at @e[type=marker,tag=BE.CenterPosition] positioned ^3.5 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
-        execute if score @s BE.EventTimer matches 148 at @e[type=marker,tag=BE.CenterPosition] positioned ^-3.5 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
-        execute if score @s BE.EventTimer matches 164 at @e[type=marker,tag=BE.CenterPosition] positioned ^-10 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
-        execute if score @s BE.EventTimer matches 180 at @e[type=marker,tag=BE.CenterPosition] positioned ^-16.5 ^2 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 100 at @e[type=marker,tag=BE.CenterPosition] positioned ^16.5 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 116 at @e[type=marker,tag=BE.CenterPosition] positioned ^10 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 132 at @e[type=marker,tag=BE.CenterPosition] positioned ^3.5 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 148 at @e[type=marker,tag=BE.CenterPosition] positioned ^-3.5 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 164 at @e[type=marker,tag=BE.CenterPosition] positioned ^-10 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+        execute if score @s BE.EventTimer matches 180 at @e[type=marker,tag=BE.CenterPosition] positioned ^-16.5 ^1 ^25 run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon
     # ハード以上：ヘヴンリースパイク
         execute if score @s BE.EventTimer matches 102 at @p[tag=BE.MainTarget] positioned ~ ~0.2 ~ run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_heavenly
         execute if score @s BE.EventTimer matches 118 at @p[tag=BE.MainTarget] positioned ~ ~0.2 ~ run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_heavenly
@@ -39,4 +39,4 @@
     execute if score @s BE.EventTimer matches 208 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
 # 終了
-    execute if score @s BE.EventTimer matches 408.. run function asset:mob/0410.heiloang/tick/event/adamant_spike/end
+    execute if score @s BE.EventTimer matches 248.. run function asset:mob/0410.heiloang/tick/event/adamant_spike/end

@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2109.heiloang_adamant_spike/**
-    # scoreboard objectives add
+    scoreboard objectives add 2109.DamageInterval dummy
