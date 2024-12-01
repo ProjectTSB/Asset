@@ -30,6 +30,7 @@
             execute if score @s BE.EventTimer matches 180 run summon lightning_bolt ~ ~100 ~
             execute if score @s BE.EventTimer matches 180 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
     # ハード以上の場合、回転する雷を設置
+            execute if score @s BE.EventTimer matches 100 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_spin
 
 # 待機
     execute if score @s BE.EventTimer matches 175 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
