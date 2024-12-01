@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"雷鳴の余光","color":"#D9B111"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷攻撃+10%を20秒間得る","color":"white"}','{"text":"雷鳴の化身が残した残滓","color":"gray"}','{"text":"雷雲の如く閃光が瞬き、雷鳴が轟く","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雷攻撃+10%を20秒間得る","color":"white"}','{"text":"雷鳴の化身が残した残滓","color":"gray"}','{"text":"主が消えようと雷鳴が鳴り止むことはない","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -33,7 +33,7 @@
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.ElementType set value [Fire,Water,Thunder,None]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.BypassResist set value
+    # data modify storage asset:artifact AttackInfo.BypzassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
