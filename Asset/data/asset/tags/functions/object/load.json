@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2088.patriot_launcher/load",
         "asset:object/0001.abstract_projectile/load"
     ]
 }
