@@ -4,6 +4,7 @@
 #
 # @within asset:mob/0410.heiloang/tick/event/hellfire/
 # @within asset:mob/0410.heiloang/tick/event/adamant_spike/
+# @within asset:mob/0410.heiloang/tick/event/richt_blitzen/
 
 # アニメーション停止
     function animated_java:heiloang_aj/animations/pause_all

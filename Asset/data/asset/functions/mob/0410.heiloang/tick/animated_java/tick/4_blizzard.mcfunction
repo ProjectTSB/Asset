@@ -11,4 +11,4 @@
     execute if score @s aj.anim_time matches 67 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     execute if score @s aj.anim_time matches 84 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     execute if score @s aj.anim_time matches 106 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
-    execute if score @s aj.anim_time matches 58 run playsound entity.ender_dragon.growl hostile @a ~ ~ ~ 2 0.7
+    execute if score @s aj.anim_time matches 58 run playsound entity.ender_dragon.growl hostile @a ~ ~ ~ 3 0.7

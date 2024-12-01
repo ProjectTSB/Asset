@@ -9,3 +9,6 @@
 
 # アダマントスパイク
     execute if entity @s[tag=BE.Skill.Adamant] run function asset:mob/0410.heiloang/tick/event/adamant_spike/
+
+# リヒトブリッツェン
+    execute if entity @s[tag=BE.Skill.Blitz] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/

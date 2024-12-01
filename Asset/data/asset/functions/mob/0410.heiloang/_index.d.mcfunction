@@ -13,6 +13,7 @@
         #declare function animated_java:heiloang_aj/animations/1_idle/tween_play
         #declare function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween_play
         #declare function animated_java:heiloang_aj/animations/2_1_common_casting/tween_play
+        #declare function animated_java:heiloang_aj/animations/2_2_common_invoke/tween_play
         #declare function animated_java:heiloang_aj/animations/3_0_hellfire_start/tween_play
         #declare function animated_java:heiloang_aj/animations/4_blizzard/tween_play
     # アニメーションタグ
@@ -28,6 +29,7 @@
 # スキル
     #declare tag BE.Skill.Hellfire ヘルファイア
     #declare tag BE.Skill.Adamant アダマントスパイク
+    #declare tag BE.Skill.Blitz リヒトブリッツェン
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
@@ -37,3 +39,4 @@
     #declare tag BE.Temp.Ground 角度決定用
     #declare tag BE.Temp.AttackRotation 角度決定用
     #declare tag BE.Temp.AttackPosition 位置決定用
+    #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
