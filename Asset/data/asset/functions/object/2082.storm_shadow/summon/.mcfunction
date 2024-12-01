@@ -5,4 +5,4 @@
 # @within asset:object/alias/2082/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"]}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],item:{id:"minecraft:tnt",Count:1b}}

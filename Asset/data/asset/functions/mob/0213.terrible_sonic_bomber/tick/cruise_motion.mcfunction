@@ -9,3 +9,5 @@ execute unless entity @e[tag=5X.Centre,distance=..95] facing entity @e[tag=5X.Ce
 
 # 直進
 tp @s ^ ^ ^3
+
+say cruise
