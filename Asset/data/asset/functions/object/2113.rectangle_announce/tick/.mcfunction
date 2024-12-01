@@ -7,9 +7,6 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 2tick目にscaleのxを適用
-    execute if entity @s[scores={General.Object.Tick=2}] run data modify entity @s transformation.scale[0] set from storage asset:context this.ScaleX
-
 # 3Tick後に伸びていく
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2113.rectangle_announce/tick/tranform
 

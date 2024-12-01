@@ -4,8 +4,6 @@
 #
 # @within asset:mob/0410.heiloang/tick/event/adamant_spike/
 
-# TODO:着弾位置は移動を予測する
-
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2110
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
