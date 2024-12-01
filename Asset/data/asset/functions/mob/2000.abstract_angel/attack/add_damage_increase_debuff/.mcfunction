@@ -1,4 +1,4 @@
-#> asset:mob/2000.abstract_angel/attack/add_damage_increase_debug/
+#> asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/
 #
 #
 #
@@ -13,7 +13,7 @@
     execute store result score $LatestTick Temporary run scoreboard players get @s 1JK.LatestDamageIncreaseDebugAddTick
     execute store result score $Tick Temporary run time query gametime
     scoreboard players operation $LatestTick Temporary -= $Tick Temporary
-    execute if score $LatestTick Temporary matches ..-20 run function asset:mob/2000.abstract_angel/attack/add_damage_increase_debug/add
+    execute if score $LatestTick Temporary matches ..-20 run function asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/add
     execute if score $LatestTick Temporary matches ..-20 run scoreboard players operation @s 1JK.LatestDamageIncreaseDebugAddTick = $Tick Temporary
 # リセット
     scoreboard players reset $Tick Temporary
