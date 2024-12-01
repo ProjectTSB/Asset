@@ -19,6 +19,8 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} store result score $1149.Damage Temporary run data get storage asset:context Attack.Amount 10
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players operation @s VX.DamageSum += $1149.Damage Temporary
 
+    tellraw @a {"storage":"asset:context","nbt":"Attack.Amount"}
+
 # 雷属性以外ならスコアをリセット
     execute if entity @s[tag=CanUsed] unless data storage asset:context Attack{ElementType:Thunder} run scoreboard players reset @s VX.DamageSum
 

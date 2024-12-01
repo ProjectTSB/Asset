@@ -38,6 +38,7 @@
         "asset:effect/0211.fading_speed/_/remove",
         "asset:effect/0201.magic_shield/_/remove",
         "asset:effect/0101.attack_base_debuff/_/remove",
-        "asset:effect/0107.defense_base_debuff/_/remove"
+        "asset:effect/0107.defense_base_debuff/_/remove",
+        "asset:effect/0276.unending_thunder/_/remove"
     ]
 }

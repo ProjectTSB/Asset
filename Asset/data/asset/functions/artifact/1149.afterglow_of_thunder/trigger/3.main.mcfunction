@@ -14,8 +14,8 @@
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 250
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
     particle minecraft:large_smoke ~ ~0.2 ~ 0 0 0 0.4 100
-    playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.5 2 0
-    playsound entity.lightning_bolt.impact player @a ~ ~ ~ 0.5 0 0
+    playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.9 2 0
+    playsound entity.lightning_bolt.impact player @a ~ ~ ~ 0.9 0 0
 
 # バフ
     data modify storage api: Argument.ID set value 276
