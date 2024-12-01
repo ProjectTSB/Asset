@@ -16,7 +16,7 @@
     particle firework ~ ~ ~ 0.3 0.3 0.3 0.05 1 force
 
 # ダメージ
-    execute if entity @s[scores={2109.DamageInterval=..0}] positioned ~ ~-1 ~ if entity @a[tag=!PlayerShouldInvulnerable,distance=..4] run function asset:object/2109.heiloang_adamant_spike/tick/damage
+    execute if entity @s[scores={2109.DamageInterval=..0}] positioned ~ ~-1 ~ if entity @a[tag=!PlayerShouldInvulnerable,distance=..3.3] run function asset:object/2109.heiloang_adamant_spike/tick/damage
     execute if entity @s[scores={2109.DamageInterval=1..}] run scoreboard players remove @s 2109.DamageInterval 1
 
 # 消滅処理

@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2111.heiloang_thunder/**
-    scoreboard objectives add 
+    # scoreboard objectives add
