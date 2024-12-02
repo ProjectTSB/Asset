@@ -1,8 +1,8 @@
-#> asset:mob/0378.red_night_v3/tick/common/slash
+#> asset:mob/0378.red_knight_v3/tick/common/slash
 #
 #
 #
-# @within function asset:mob/0378.red_night_v3/tick/**
+# @within function asset:mob/0378.red_knight_v3/tick/**
 
 # 演出
     playsound item.trident.throw hostile @a ~ ~ ~ 1 0.6

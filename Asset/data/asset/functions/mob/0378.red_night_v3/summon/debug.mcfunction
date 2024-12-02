@@ -1,4 +1,4 @@
-#> asset:mob/0378.red_night_v3/summon/debug
+#> asset:mob/0378.red_knight_v3/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

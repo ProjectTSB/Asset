@@ -1,4 +1,4 @@
-#> asset:mob/0378.red_night_v3/init/
+#> asset:mob/0378.red_knight_v3/init/
 #
 # Mobのinit時の処理
 #

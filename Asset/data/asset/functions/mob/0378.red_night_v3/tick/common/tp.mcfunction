@@ -1,8 +1,8 @@
-#> asset:mob/0378.red_night_v3/tick/common/tp
+#> asset:mob/0378.red_knight_v3/tick/common/tp
 #
 #
 #
-# @within function asset:mob/0378.red_night_v3/tick/**
+# @within function asset:mob/0378.red_knight_v3/tick/**
 
 # 自身をその場所まで持っていく(雑床埋まり対策もする)
     execute if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~

@@ -1,8 +1,8 @@
-#> asset:mob/0378.red_night_v3/tick/skill_reset
+#> asset:mob/0378.red_knight_v3/tick/skill_reset
 #
 #
 #
-# @within function asset:mob/0378.red_night_v3/tick/**/**
+# @within function asset:mob/0378.red_knight_v3/tick/**/**
 
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s AI.Tick -30

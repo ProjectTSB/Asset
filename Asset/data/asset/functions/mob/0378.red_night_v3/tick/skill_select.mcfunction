@@ -1,8 +1,8 @@
-#> asset:mob/0378.red_night_v3/tick/skill_select
+#> asset:mob/0378.red_knight_v3/tick/skill_select
 #
 #
 #
-# @within function asset:mob/0378.red_night_v3/tick/
+# @within function asset:mob/0378.red_knight_v3/tick/
 
 # ランダム
     execute store result score $Random Temporary run function lib:random/
