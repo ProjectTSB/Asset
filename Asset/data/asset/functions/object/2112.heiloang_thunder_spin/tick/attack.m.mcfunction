@@ -30,4 +30,4 @@
 
 # 攻撃開始
     scoreboard players set @s 2112.AttackTimer 18
-    $scoreboard players add @s 2112.AttackTimer $(Duration)
+    $scoreboard players add @s 2112.AttackTimer $(KillTick)

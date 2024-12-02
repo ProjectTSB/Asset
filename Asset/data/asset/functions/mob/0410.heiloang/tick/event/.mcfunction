@@ -12,3 +12,6 @@
 
 # リヒトブリッツェン
     execute if entity @s[tag=BE.Skill.Blitz] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/
+
+# エンハンスドディザスター
+    execute if entity @s[tag=BE.Skill.Ehd] run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/

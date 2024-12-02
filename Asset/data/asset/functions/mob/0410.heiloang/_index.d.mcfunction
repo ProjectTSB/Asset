@@ -30,6 +30,7 @@
     #declare tag BE.Skill.Hellfire ヘルファイア
     #declare tag BE.Skill.Adamant アダマントスパイク
     #declare tag BE.Skill.Blitz リヒトブリッツェン
+    #declare tag BE.Skill.Ehd エンハンスドディザスター
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
