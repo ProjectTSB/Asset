@@ -20,3 +20,6 @@ execute store result score $attack_start_time Temporary run data get storage ass
 
 execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
 execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
+
+# 攻撃終了後の離脱
+execute if score $current_gametime Temporary = $attack_start_time Temporary run tp @s ~ ~ ~ ~60 ~

@@ -19,7 +19,7 @@ execute store result score $attack_start_time Temporary run time query gametime
 execute store result storage asset:context this.attack_start_time int 1 run scoreboard players add $attack_start_time Temporary 20
 
 # 中心座標を向く
-execute facing entity @e[tag=5X.Centre,limit=1] eyes rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+execute facing entity @e[tag=5X.Centre,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 武器ごとの処理
 execute if score $weapon_num Temporary matches 1 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare

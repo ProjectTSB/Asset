@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0213.terrible_sonic_bomber/**
-    scoreboard objectives add 
+    # scoreboard objectives add 

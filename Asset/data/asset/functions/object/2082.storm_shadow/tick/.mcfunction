@@ -14,6 +14,5 @@
 #加速
 #命中判定
 function asset:object/super.tick
-#テンプレートからオブジェクト->テンプレート->メソッド->detect_hit_entity
 #攻撃
 #テンプレートからオブジェクト->テンプレート->メソッド->hit_entity
