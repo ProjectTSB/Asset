@@ -1,4 +1,4 @@
-#> asset:object/2113.rectangle_announce/tick/tranform
+#> asset:object/2113.rectangle_announce/tick/transform
 #
 #
 #
