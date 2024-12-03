@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/summon/debug
+#> asset:object/2092.ghost_bullet/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/kill/
+#> asset:object/2092.ghost_bullet/kill/
 #
 # 継承先などから実行される処理
 #

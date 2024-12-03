@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/skill/many_shoot/summon_square
+#> asset:mob/0372.tutankhamen/tick/skill/many_shoot/summon
 #
 # 魔法陣を召喚
 #

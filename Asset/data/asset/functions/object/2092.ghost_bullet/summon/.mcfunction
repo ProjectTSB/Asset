@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/summon/
+#> asset:object/2092.ghost_bullet/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

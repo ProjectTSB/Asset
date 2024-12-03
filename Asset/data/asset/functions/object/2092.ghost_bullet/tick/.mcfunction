@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/tick/
+#> asset:object/2092.ghost_bullet/tick/
 #
 # Objectのtick時の処理
 #

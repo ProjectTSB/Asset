@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/init/
+#> asset:object/2092.ghost_bullet/init/
 #
 # Objectのinit時の処理
 #

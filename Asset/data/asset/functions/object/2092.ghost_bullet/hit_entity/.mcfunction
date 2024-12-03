@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/hit_entity/
+#> asset:object/2092.ghost_bullet/hit_entity/
 #
 # 継承先などから実行される処理
 #

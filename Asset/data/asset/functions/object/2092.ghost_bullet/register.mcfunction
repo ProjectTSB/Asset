@@ -1,4 +1,4 @@
-#> asset:object/2092.soul_bullet/register
+#> asset:object/2092.ghost_bullet/register
 #
 # Objectのデータを指定
 #
