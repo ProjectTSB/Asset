@@ -17,4 +17,4 @@
 
 # 効果
     #tp ~ -30 ~
-    execute as @e[type=#lib:living,tag=Victim,distance=..0.01] run function api:mob/remove
+    execute as @e[type=#lib:living,tag=Victim,distance=..0.01,limit=1] run function api:mob/remove
