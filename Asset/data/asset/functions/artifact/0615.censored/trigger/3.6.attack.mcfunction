@@ -15,5 +15,5 @@
     data modify storage api: Argument.Damage set value 333.0f
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim] run function api:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..0.01,limit=1] run function api:damage/
     function api:damage/reset
