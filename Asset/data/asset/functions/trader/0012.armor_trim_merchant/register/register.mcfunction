@@ -14,6 +14,11 @@
 # 方向 (float) (オプション)
     data modify storage asset:trader Rotation set value 0f
 
+# 取引 ネザライト強化
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:netherite_upgrade_smithing_template",Count:1b}
+
 # 取引 略奪者風
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
