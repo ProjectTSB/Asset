@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/0718.world_tree_root/give/1.trigger",
+        "asset:artifact/0717.world_tree_stem/give/1.trigger",
+        "asset:artifact/0716.world_tree_branch/give/1.trigger",
+        "asset:artifact/0715.world_tree_crown/give/1.trigger",
         "asset:artifact/1028.executioner_axe/give/1.trigger",
         "asset:artifact/1084.mia_zoru_luc/give/1.trigger",
         "asset:artifact/1085.mia_tia_zen_luc/give/1.trigger",
