@@ -12,7 +12,6 @@
     execute if entity @s[scores={General.Mob.Tick=4}] at @p[gamemode=!spectator,distance=..50] run function asset:mob/0078.messenger_of_thunder/tick/skill/cross_thunder/spread
     execute if entity @s[scores={General.Mob.Tick=6}] at @p[gamemode=!spectator,distance=..50] run function asset:mob/0078.messenger_of_thunder/tick/skill/cross_thunder/spread
     execute if entity @s[scores={General.Mob.Tick=8}] at @p[gamemode=!spectator,distance=..50] run function asset:mob/0078.messenger_of_thunder/tick/skill/cross_thunder/spread
-    #execute if entity @s[tag=26.HPLess50Per,scores={General.Mob.Tick=10}] at @p[distance=..50] run function asset:mob/0078.messenger_of_thunder/tick/skill/cross_thunder/2.spread
 
 # リセット
     execute if entity @s[scores={General.Mob.Tick=26..}] run function asset:mob/0078.messenger_of_thunder/tick/skill/reset
