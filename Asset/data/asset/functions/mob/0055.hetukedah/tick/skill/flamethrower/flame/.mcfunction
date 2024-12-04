@@ -8,7 +8,7 @@
 
 #> インターバルのスコアホルダー
 # @private
-# declare score_holder $DamageInterval
+    #declare score_holder $DamageInterval
 
 # パーティクル
     particle dust 1 0.5 0 0.5 ^ ^ ^0.5 0.1 0.1 0.1 0 2
@@ -17,7 +17,7 @@
     particle flame ^ ^ ^ 0.1 0.1 0.1 0 1
 
 # 実行時間を移す
-    scoreboard players operation $DamageInterval Temporary = @s 1J.Tick
+    #scoreboard players operation $DamageInterval Temporary = @s 1J.Tick
 
 # 数Tickごとにダメージ
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/hit

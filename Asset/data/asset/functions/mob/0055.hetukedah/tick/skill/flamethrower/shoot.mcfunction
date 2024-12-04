@@ -6,7 +6,7 @@
 
 #> インターバルのスコアホルダー
 # @private
-# declare score_holder $SoundInterval
+    #declare score_holder $SoundInterval
 
 # 実行時間を移す
     scoreboard players operation $SoundInterval Temporary = @s 1J.Tick
@@ -14,6 +14,7 @@
 # 数Tickごとにサウンド
     scoreboard players operation $SoundInterval Temporary %= $6 Const
     execute if score $SoundInterval Temporary matches 0 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2
+    scoreboard players reset $SoundInterval Temporary
 
 # 火を放つ
     execute anchored eyes positioned ^ ^-0.5 ^1 run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/
