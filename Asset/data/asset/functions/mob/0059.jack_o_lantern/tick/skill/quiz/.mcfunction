@@ -41,7 +41,7 @@
     execute if entity @s[scores={General.Mob.Tick=70..310}] if predicate lib:random_pass_per/3 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
 # hurt時につく被ダメタグがあった場合、クイズに正解して、このスキルを終える
-    execute if entity @s[scores={General.Mob.Tick=70..310}] if entity @s[tag=1N.Hurt] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_clear
+    execute if entity @s[scores={General.Mob.Tick=80..310}] if entity @s[tag=1N.Hurt] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_clear
 
 # トゥルットゥーって鳴らす
     execute if entity @s[scores={General.Mob.Tick=170}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
