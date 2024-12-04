@@ -16,10 +16,10 @@
     effect give @p[tag=Victim] mining_fatigue 3 1 true
     effect give @p[tag=Victim] poison 3 1 true
 
-# 与ダメージ低下(ID:101)を付与
+# 与ダメージ低下Lv2(ID:51)を付与
 # Stack = 難易度値 * 2
     function api:global_vars/get_difficulty
-    data modify storage api: Argument.ID set value 101
+    data modify storage api: Argument.ID set value 51
     data modify storage api: Argument.Duration set value 100
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
