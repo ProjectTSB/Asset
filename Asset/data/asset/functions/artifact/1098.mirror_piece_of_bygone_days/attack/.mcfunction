@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1098/attack/
 
-
 # 演出
     particle item glass ~ ~1.2 ~ 0.5 0.4 0.5 0.2 250 normal @a
     playsound block.glass.break player @a ~ ~ ~ 0.4 0.6

@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/383/click/
 
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $Random
 
 # ランダムで変なこと言うやつ
     # 引数

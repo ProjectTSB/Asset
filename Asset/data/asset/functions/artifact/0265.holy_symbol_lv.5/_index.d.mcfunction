@@ -3,4 +3,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/0265.holy_symbol_lv.5/**
-#declare tag 7D.HolySymbol
+    #declare tag 7D.HolySymbol

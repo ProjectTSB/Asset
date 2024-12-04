@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0976.brave_sword/click/
 #   asset:artifact/0976.brave_sword/click/slash_entity/1.tick
-#   asset:artifact/0976.brave_sword/click/rejoin_process
+#   asset:artifact/0976.brave_sword/rejoin_process
 
 # エンティティに実行させる
     execute as @e[type=armor_stand,tag=R4.SlashSweep] at @s run function asset:artifact/0976.brave_sword/click/slash_entity/2.main

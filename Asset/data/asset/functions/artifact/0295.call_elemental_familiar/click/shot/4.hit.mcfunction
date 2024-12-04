@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/0295.call_elemental_familiar/click/shot/
+# @within function asset:artifact/0295.call_elemental_familiar/click/shot/3.main
 
 # 魔法、火属性のダメージをぶちかます
     data modify storage lib: Argument.Damage set value 40.0f

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/985/click/
 
-
 # スコアを戻す
     scoreboard players set @s RD.Time 1
 

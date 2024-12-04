@@ -3,6 +3,7 @@
 # メッセージを流す
 #
 # @within function asset:artifact/0441.awaited_opportunity/attack_melee/
+
 #> Private
 # @private
     #declare score_holder $Random

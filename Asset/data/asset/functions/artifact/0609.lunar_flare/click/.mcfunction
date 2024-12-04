@@ -4,9 +4,8 @@
 #
 # @within function asset:artifact/alias/609/click/
 
+# 視点先検知
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0609.lunar_flare/click/find_target_entity
-
-# ここから先は神器側の効果の処理を書く
 
 # VFX
     playsound minecraft:block.fire.ambient player @a ~ ~ ~ 1 2

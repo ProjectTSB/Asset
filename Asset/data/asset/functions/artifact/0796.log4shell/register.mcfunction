@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Log4Shell","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"原木を消費して弾丸を発射する。"}','{"text":"${jndi:ldap://tsb.example.com/artifact}","color":"dark_purple","italic":false}']
+    data modify storage asset:artifact Lore set value ['{"text":"原木を消費して弾丸を発射する。"}','{"text":"${jndi:ldap://tsb.com/sacred_tresure}","color":"dark_purple","italic":false}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"text":"原木"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -52,4 +52,3 @@
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

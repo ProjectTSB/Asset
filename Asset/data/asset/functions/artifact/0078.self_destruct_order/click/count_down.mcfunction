@@ -5,7 +5,7 @@
 # @within function
 #    asset:artifact/0078.self_destruct_order/click/
 #    asset:artifact/0078.self_destruct_order/click/count_down
-#    asset:artifact/0078.self_destruct_order/click/rejoin_process
+#    asset:artifact/0078.self_destruct_order/rejoin_process
 
 scoreboard players add @a[tag=26.Owner] 26.TickCount 1
 

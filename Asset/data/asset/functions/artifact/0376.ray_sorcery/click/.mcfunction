@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/376/click/
 
-
 # 弾を進めるための再起開始
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0376.ray_sorcery/click/3.1.shoot
 

@@ -5,7 +5,7 @@
 # @within function
 #    asset:artifact/0609.lunar_flare/click/
 #    asset:artifact/0609.lunar_flare/click/projectile/laser_pos_main
-#    asset:artifact/0609.lunar_flare/click/rejoin_process
+#    asset:artifact/0609.lunar_flare/rejoin_process
 
 # またファンクション分岐
     execute as @e[type=marker,tag=GX.LaserPos,scores={GX.BeamTime=1..}] at @s rotated ~ 90 run function asset:artifact/0609.lunar_flare/click/projectile/summon_laser

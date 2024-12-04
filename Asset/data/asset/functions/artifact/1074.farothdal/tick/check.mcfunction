@@ -4,6 +4,5 @@
 #
 # @within function asset:artifact/alias/1074/tick/check
 
-
 # 走ってる時だけCanUsedがつく
-    execute unless predicate lib:is_sprinting run tag @s remove CanUsed
+    execute unless predicate lib:is_sprinting run tag @s remove CanUsed

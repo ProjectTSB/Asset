@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/437/use_item/
 
-
 # 20%ずつの確率
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/

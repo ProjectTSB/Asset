@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/217/use_item/
 
-
 # 最大体力を取得
     function api:modifier/max_health/get
 

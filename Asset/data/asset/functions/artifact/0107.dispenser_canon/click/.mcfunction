@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/107/click/
 
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> private
+# @private
+    #declare tag TNTStick
 
 # 演出
     playsound minecraft:entity.tnt.primed player @a

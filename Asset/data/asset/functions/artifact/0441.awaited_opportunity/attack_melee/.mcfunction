@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/441/attack_melee/
 
-
 # エフェクト付与
     effect give @s speed 10 2 true
 

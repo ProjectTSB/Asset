@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0976.brave_sword/click/
 #   asset:artifact/0976.brave_sword/click/combo/1.tick
-#   asset:artifact/0976.brave_sword/click/rejoin_process
+#   asset:artifact/0976.brave_sword/rejoin_process
 
 # エンティティに実行させる
     execute as @a[scores={R4.Wait=0..}] at @s run function asset:artifact/0976.brave_sword/click/combo/2.main

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/245/use_item/
 
-
 # 回復
     data modify storage lib: Argument.Heal set value 30f
     function lib:heal/modifier

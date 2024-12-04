@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/249/attack_projectile/
 
-
 #> Private
 # @private
     #declare score_holder $AroundWater

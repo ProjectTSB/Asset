@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/247/damage/
 
-
 # 5%の確率で昇天する
     execute if predicate lib:random_pass_per/5 run function asset:artifact/0247.heavenly_herb/damage/4.ascension
 

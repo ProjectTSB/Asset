@@ -16,7 +16,7 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound block.beacon.activate player @a[distance=..16] ~ ~ ~ 0.8 2 0
 
 # 個数を取得
-    execute store result score $P3.Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:903}}}]
+    execute store result score $P3.Count Temporary run data get storage asset:context Count
     scoreboard players remove $P3.Count Temporary 1
     scoreboard players operation $P3.Count Temporary *= $5 Const
     scoreboard players add $P3.Count Temporary 10

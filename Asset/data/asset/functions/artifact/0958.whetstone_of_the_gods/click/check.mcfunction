@@ -4,10 +4,10 @@
 #
 # @within function asset:artifact/alias/958/click/check
 
+#> Val
+# @private
+    #declare score_holder $MPMax
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/offhand
-# 他にアイテム等確認する場合はここに書く
 # 剣を持っていることを判定する
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tellraw @s [{"text":"剣以外を砥ぐことは出来ないようだ..."}]
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tag @s remove CanUsed
@@ -32,4 +32,5 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:  "minecraft:diamond_sword"} unless score $MPMax Temporary matches 230.. run tag @s remove CanUsed
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:"minecraft:netherite_sword"} unless score $MPMax Temporary matches 260.. run tellraw @s [{"text":"この材質の剣を砥ぐにはMP最大値が","color":"white"},{"text":"260","color":"aqua"},{"text":"必要なようだ...","color":"white"}]
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:"minecraft:netherite_sword"} unless score $MPMax Temporary matches 260.. run tag @s remove CanUsed
-# リセット
+# リセット
+    scoreboard players reset $MPMax Temporary

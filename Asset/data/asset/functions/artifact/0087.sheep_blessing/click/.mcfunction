@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/87/click/
 
-
 # 羊毛消費
     clear @s white_wool 16
 

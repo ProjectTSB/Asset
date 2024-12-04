@@ -4,6 +4,7 @@
 # 対象の敵がいないときはCanUsedを削除
 #
 # @within function asset:artifact/0468.raging_demon/tick/check
+
 #> Private
 # @private
     #declare tag CanUsed

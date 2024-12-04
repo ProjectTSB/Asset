@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:artifact/0905.book_of_metastasis/click/4.schedule
+
 #> Private
 # @private
     #declare score_holder $isBanTPArea

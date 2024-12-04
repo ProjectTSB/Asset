@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/1045.mini_black_hole/click/
 #   asset:artifact/1045.mini_black_hole/click/schedule/1.tick
-#   asset:artifact/1045.mini_black_hole/click/rejoin_process
+#   asset:artifact/1045.mini_black_hole/rejoin_process
 
 # Markerが雪玉に乗っている場合の処理(継続処理)
     execute as @e[type=marker,tag=T1.Marker] if predicate lib:is_vehicle at @s run function asset:artifact/1045.mini_black_hole/click/schedule/2.flying

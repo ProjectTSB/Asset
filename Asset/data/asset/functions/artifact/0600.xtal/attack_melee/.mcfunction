@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/600/attack_melee/
 
-
 # スコア付与する
     scoreboard players add @s GO.Time 3
 # スケジュール開始

@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0985.ark_of_the_sanctuary/click/
 #   asset:artifact/0985.ark_of_the_sanctuary/click/schedule_loop
-#   asset:artifact/0985.ark_of_the_sanctuary/click/rejoin_process
+#   asset:artifact/0985.ark_of_the_sanctuary/rejoin_process
 
 # Timeがある状態ならスキルを発動している
     execute as @a[scores={RD.Time=1..}] at @s run function asset:artifact/0985.ark_of_the_sanctuary/click/skill/skill_active

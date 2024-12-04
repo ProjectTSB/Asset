@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0870.samurai_blade/click/
 #   asset:artifact/0870.samurai_blade/click/schedule_loop
-#   asset:artifact/0870.samurai_blade/click/rejoin_process
+#   asset:artifact/0870.samurai_blade/rejoin_process
 
 # Timeがある状態ならスキルを発動している
     execute as @a[scores={O6.Time=1..}] at @s run function asset:artifact/0870.samurai_blade/click/skill_list/skill_active

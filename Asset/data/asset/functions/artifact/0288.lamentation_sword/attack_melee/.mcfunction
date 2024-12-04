@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/288/attack_melee/
 
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> private
+# @private
+    #declare tag Hit
 
 # 演出
     playsound minecraft:entity.ghast.hurt player @a ~ ~ ~ 0.3 1.6

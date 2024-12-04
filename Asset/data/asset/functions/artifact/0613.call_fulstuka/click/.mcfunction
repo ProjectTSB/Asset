@@ -4,11 +4,9 @@
 #
 # @within function asset:artifact/alias/613/click/
 
-
 # 召喚
     data modify storage api: Argument.ID set value 282
     function api:mob/summon
-
 
 # 演出
     particle dust 1 0 0.749 1 ~ ~3 ~ 0.3 3 0.3 0 50
@@ -20,4 +18,3 @@
     playsound entity.lightning_bolt.thunder neutral @a ~ ~ ~ 0.7 2
     playsound entity.lightning_bolt.thunder neutral @a ~ ~ ~ 0.7 2
     playsound entity.lightning_bolt.impact neutral @a ~ ~ ~ 0.7 0
-

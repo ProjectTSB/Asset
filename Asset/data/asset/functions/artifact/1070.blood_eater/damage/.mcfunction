@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1070/damage/
 
-
 # particle
     particle landing_lava ~ ~1 ~ 0.1 0.5 0.1 0 100
     particle block redstone_block ~ ~1 ~ 0 0 0 1 20

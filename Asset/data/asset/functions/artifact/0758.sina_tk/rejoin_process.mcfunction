@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # スケジュールループ再開
-    execute if entity @e[type=marker,tag=L2.Bullet,limit=1] run schedule function asset:artifact/0758.sina_tk/click/bullet/loop 1t replace
+    execute if entity @e[type=marker,tag=L2.Bullet,limit=1] run schedule function asset:artifact/0758.sina_tk/using_item/bullet/loop 1t replace

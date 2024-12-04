@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/840/click/
 
-
 # 演出
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/0840.honey_bee_stick/click/4.vfx
     particle minecraft:block honey_block ~ ~1.2 ~ 3 0.4 3 0 50

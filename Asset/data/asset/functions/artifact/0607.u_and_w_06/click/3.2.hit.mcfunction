@@ -5,9 +5,6 @@
 #    asset:artifact/0607.u_and_w_06/click/
 #    asset:artifact/0607.u_and_w_06/click/3.1.bullet
 
-
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     execute at @e[tag=LandingTarget,limit=1] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.4 0.4 0.4 0 4
 

@@ -2,7 +2,7 @@
 #
 # 全体のtick
 #
-# @within function asset:artifact/0355.barrel/click/3.*
+# @within function asset:artifact/0355.barrel/click/**
 
 # 樽ごとに実行
     execute as @e[type=armor_stand,tag=9V.Barrel] at @s run function asset:artifact/0355.barrel/click/barrel/tick

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1110/attack/
 
-
 # 演出
     playsound minecraft:block.respawn_anchor.charge player @a ~ ~ ~ 0.25 1.4
     playsound minecraft:block.amethyst_block.fall player @a ~ ~ ~ 1.2 1.2

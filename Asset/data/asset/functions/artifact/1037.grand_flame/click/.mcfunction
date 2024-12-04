@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/1037/click/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> Val
+# @private
+    #declare score_holder $ST.OwnerId
 
 # 雪玉を召喚する
     execute anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["ST.SnowBall","ST.SnowBallInit"],Item:{Count:1b,id:"minecraft:stick",tag:{CustomModelData:1037}},Passengers:[{id:"minecraft:marker",Tags:["ST.Marker"]}]}

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/322/click/
 
-
 # 使用効果
     fill ~-5 ~-3 ~-5 ~5 ~1 ~5 blue_ice replace packed_ice
     fill ~-5 ~-3 ~-5 ~5 ~1 ~5 packed_ice replace ice

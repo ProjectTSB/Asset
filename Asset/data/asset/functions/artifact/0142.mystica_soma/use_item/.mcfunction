@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/alias/142/use_item/
 
+#> private
+# @private
+    #declare score_holder $Fluctuation
 
 # 演出
     particle minecraft:composter ~ ~1 ~ 0.5 0.5 0.5 1 20 force @s

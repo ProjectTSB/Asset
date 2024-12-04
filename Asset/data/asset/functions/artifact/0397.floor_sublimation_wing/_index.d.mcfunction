@@ -1,7 +1,5 @@
 #> asset:artifact/0397.floor_sublimation_wing/_index.d
 # @private
-#
-# @private
 
 #> Temp
 # 条件チェックに必要なスコアホルダー、タグ
@@ -12,9 +10,7 @@
 # 397.Marker: TPに使用
 #
 # @within function
-#   asset:artifact/0397.floor_sublimation_wing/2.*
-#   asset:artifact/0397.floor_sublimation_wing/3.main
-#
+#   asset:artifact/0397.floor_sublimation_wing/**
     #declare score_holder $397_Count
     #declare score_holder $397_Stat
     #declare tag B1.Marker

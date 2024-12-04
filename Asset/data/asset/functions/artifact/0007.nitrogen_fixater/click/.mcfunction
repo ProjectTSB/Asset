@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/7/click/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> prv
+# @private
+    #declare score_holder $7.IsPeace # 0: 火薬を入手 1: 骨粉を入手
 
 # 水入り瓶をガラス瓶に置き換え
     clear @s minecraft:potion{Potion:"minecraft:water"} 1

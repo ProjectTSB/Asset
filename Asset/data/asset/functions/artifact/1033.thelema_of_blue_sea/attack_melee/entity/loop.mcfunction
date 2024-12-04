@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/1033.thelema_of_blue_sea/attack_melee/
 #   asset:artifact/1033.thelema_of_blue_sea/attack_melee/entity/loop
-#   asset:artifact/1033.thelema_of_blue_sea/attack_melee/rejoin_process
+#   asset:artifact/1033.thelema_of_blue_sea/rejoin_process
 
 # main処理の実行
     execute as @e[type=area_effect_cloud,tag=SP.VFXEntity] at @s run function asset:artifact/1033.thelema_of_blue_sea/attack_melee/entity/vfx_process/main

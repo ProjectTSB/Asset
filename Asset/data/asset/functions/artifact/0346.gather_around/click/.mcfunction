@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/346/click/
 
-
 # 演出 (particleは共通)
     particle minecraft:reverse_portal ~ ~ ~ 0.75 0.125 0.75 0.3 100 force
 

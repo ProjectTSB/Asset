@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/alias/90/click/
 
-
-
-
-
 # 装備変更成功の時
     execute as @s[nbt=!{Inventory:[{Slot:100b},{Slot:101b},{Slot:102b},{Slot:103b}]}] at @s run particle minecraft:happy_villager ~ ~1 ~ 0.4 0.4 0.4 0.1 50
     execute as @s[nbt=!{Inventory:[{Slot:100b},{Slot:101b},{Slot:102b},{Slot:103b}]}] at @s run playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 2

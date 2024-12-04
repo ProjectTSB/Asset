@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/0600.xtal/attack_melee/4.wait_time
 
-
 # 演出
     playsound item.trident.throw player @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2

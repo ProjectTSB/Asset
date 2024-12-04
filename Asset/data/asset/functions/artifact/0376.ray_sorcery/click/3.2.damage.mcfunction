@@ -5,8 +5,6 @@
 # @within function
 #   asset:artifact/0376.ray_sorcery/click/3.1.shoot
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 300
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 300

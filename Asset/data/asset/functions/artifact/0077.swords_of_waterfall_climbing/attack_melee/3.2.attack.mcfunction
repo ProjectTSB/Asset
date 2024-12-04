@@ -5,8 +5,6 @@
 # @within function
 #   asset:artifact/0077.swords_of_waterfall_climbing/attack_melee/
 
-# ここから先は神器側の効果の処理を書く
-
 # タグ付与
     tag @s add 25.Hit
 

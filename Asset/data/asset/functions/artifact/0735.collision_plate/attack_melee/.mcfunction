@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/735/attack_melee/
 
-
 # 演出
     execute at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run playsound minecraft:block.anvil.place player @a ~ ~ ~ 1 1.5 0
     execute at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run playsound minecraft:block.anvil.place player @a ~ ~ ~ 1 1 0

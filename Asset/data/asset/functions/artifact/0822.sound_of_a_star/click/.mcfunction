@@ -4,6 +4,10 @@
 #
 # @within function asset:artifact/alias/822/click/
 
+# 最初にMP割合を求める
+# 最大MPを取得する
+    execute store result score $MPMaxValue Temporary run function lib:mp/get_max
+# 使用直前のMPを取得する
     execute store result score $MPValue Temporary run function lib:mp/get
 
 # MP現在量を100倍する
@@ -11,11 +15,6 @@
 
 # 割る
     scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
 
 # 演出
     playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.7 0 0

@@ -5,7 +5,7 @@
 # @within function
 #    asset:artifact/0610.call_fish/click/
 #    asset:artifact/0610.call_fish/click/3.1.tick
-#    asset:artifact/0610.call_fish/click/rejoin_process
+#    asset:artifact/0610.call_fish/rejoin_process
 
 # スコアを増やす
     scoreboard players add @e[type=cod,tag=GY.Fish] GY.FishCool 1

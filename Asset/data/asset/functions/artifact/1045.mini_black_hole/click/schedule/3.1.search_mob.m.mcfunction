@@ -8,4 +8,4 @@
     #declare tag T1.Landing
 
 # 着弾タグを付ける
-$tag @e[tag=Enemy,tag=!Uninterferable,distance=..$(Num)] add T1.Landing
+    $tag @e[tag=Enemy,tag=!Uninterferable,distance=..$(Num)] add T1.Landing

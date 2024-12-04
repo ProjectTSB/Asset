@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/1034.eiya/attack_melee/
 #   asset:artifact/1034.eiya/attack_melee/schedule
-#   asset:artifact/1034.eiya/attack_melee/rejoin_process
+#   asset:artifact/1034.eiya/rejoin_process
 
 # ループ
     execute if entity @p[scores={SQ.WaitingTime=0..}] run schedule function asset:artifact/1034.eiya/attack_melee/schedule 1t replace

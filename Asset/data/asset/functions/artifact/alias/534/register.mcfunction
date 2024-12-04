@@ -4,4 +4,4 @@
 #
 # @within function asset_manager:artifact/give/register.m
 
-function asset:artifact/0534.all_night_hellmet/register
+function asset:artifact/0534.all_night_helmet/register

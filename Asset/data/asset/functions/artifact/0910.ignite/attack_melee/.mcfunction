@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/910/attack_melee/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare tag PA.SlashHit
 
 # 演出
     execute as @e[type=#lib:living,tag=Victim,distance=..10] at @s run particle minecraft:lava ~ ~ ~ 0 0 0 1 20

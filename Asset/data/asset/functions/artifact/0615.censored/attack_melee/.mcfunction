@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/615/attack_melee/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $Random
 
 # 確率で処刑する
     # 疑似乱数取得

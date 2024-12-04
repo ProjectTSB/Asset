@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:artifact/0002.blessing/click/*
+# @within function
+#   asset:artifact/0002.blessing/click/*
+#   asset:artifact/0002.blessing/rejoin_process
 
 # 出力
     tellraw @s {"text":"能力ボーナスを一つ選んでください"}

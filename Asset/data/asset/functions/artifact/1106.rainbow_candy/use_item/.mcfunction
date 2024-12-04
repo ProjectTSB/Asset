@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1106/use_item/
 
-
 #> Private
 # @private
     #declare score_holder $Random

@@ -48,8 +48,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"generic.attack_damage",Amount:31.2d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:31.2,Operation:0,UUID:[I;1,1,292,1],Slot:mainhand,Name:"generic.attack_damage"},{AttributeName:"generic.attack_speed",Amount:-0.2,Operation:0,UUID:[I;1,1,292,1],Slot:mainhand,Name:"generic.attack_speed"}]}
-
+    data modify storage asset:artifact CustomNBT set value {AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:-0.2,Operation:0,UUID:[I;1,1,292,1],Slot:mainhand,Name:"generic.attack_speed"}]}

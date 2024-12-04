@@ -3,4 +3,4 @@
 
 #> Val
 # @within function asset:artifact/0190.amor_wand/**
-#declare tag 5A.VFX
+    #declare tag 5A.VFX

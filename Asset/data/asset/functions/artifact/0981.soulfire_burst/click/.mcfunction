@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/981/click/
 
-
 # 演出
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 0.8
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 1.2

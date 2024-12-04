@@ -2,9 +2,9 @@
 #
 # テラブレードショットに"3.4.terra_shot_main2"を複数回実行させたいだけのfunction 負荷によってはボツにする予定
 #
-# @within function asset:artifact/0210.terra_blade/click/3.1.terra_shot_tick
-# @within function asset:artifact/0210.terra_blade/click/3.3.terra_shot_main
-
+# @within function
+#   asset:artifact/0210.terra_blade/click/3.1.terra_shot_tick
+#   asset:artifact/0210.terra_blade/click/3.3.terra_shot_main
 
 # 移動とパーティクル
     tp @s ^ ^ ^0.5

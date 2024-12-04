@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/733/attack_melee/
 
-
 # 演出
     execute positioned ^ ^1.2 ^0.5 rotated ~ ~-4 run function asset:artifact/0733.percentage_sword/attack_melee/4.sweeping_particle
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1 0

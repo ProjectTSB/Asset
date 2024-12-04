@@ -5,7 +5,6 @@
 # @within function
 #   asset:artifact/0374.thunder_spell/click/
 #   asset:artifact/0374.thunder_spell/click/3.1.line
-# ここから先は神器側の効果の処理を書く
 
 # 演出
     particle dust 1 1 0 1 ~ ~ ~ 0.1 0 0.1 0 5

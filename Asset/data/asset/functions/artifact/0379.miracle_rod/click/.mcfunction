@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/379/click/
 
-
 # 演出
     playsound minecraft:entity.puffer_fish.death player @a ~ ~ ~ 1 0
 

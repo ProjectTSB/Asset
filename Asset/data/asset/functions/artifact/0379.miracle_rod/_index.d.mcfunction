@@ -2,8 +2,7 @@
 # @private
 
 #> tag
-# @within function
-#   asset:artifact/0379.miracle_rod/**
+# @within function asset:artifact/0379.miracle_rod/**
     #declare tag AJ.Magic
     #declare tag AJ.MagicSet
     #declare tag Landing

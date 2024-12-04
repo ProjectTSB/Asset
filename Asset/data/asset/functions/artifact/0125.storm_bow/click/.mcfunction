@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/125/click/
 
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> private
+# @private
+    #declare tag ArrowTarget
 
 # 不発処理
     execute unless entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..15,limit=1] run playsound minecraft:block.dispenser.fail player @a ~ ~ ~ 1 2

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1015/attack_melee/
 
-
 # 演出
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1 0
 

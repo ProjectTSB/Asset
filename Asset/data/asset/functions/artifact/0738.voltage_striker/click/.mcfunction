@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/738/click/
 
-
 # 演出
     playsound item.trident.riptide_1 player @a ~ ~ ~ 0.6 2 0
     playsound item.trident.riptide_1 player @a ~ ~ ~ 0.6 1.5 0

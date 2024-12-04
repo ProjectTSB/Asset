@@ -4,5 +4,7 @@
 #
 # @within function asset:artifact/alias/900/damage_burn/check
 
-    function asset:artifact/common/check_condition/hotbar
-# 他にアイテム等確認する場合はここに書く
+execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+execute if block ~ ~ ~ lava run tag @s remove CanUsed
+execute if block ~ ~1 ~ lava run tag @s remove CanUsed
+execute if entity @s[tag=CanUsed] if predicate lib:random_pass_per/60 run tag @s remove CanUsed

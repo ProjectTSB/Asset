@@ -1,4 +1,4 @@
-#> asset:artifact/0981.soulfire_burst/click/small_fireball/
+#> asset:artifact/0981.soulfire_burst/click/small_fireball/3.main
 #
 # Tick実行部分
 #

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1068/damage_entity/
 
-
 # 演出
     particle flame ~ ~1.3 ~ 0.4 0.6 0.4 0.15 25
     particle small_flame ~ ~1.3 ~ 0.4 0.6 0.4 0.3 25

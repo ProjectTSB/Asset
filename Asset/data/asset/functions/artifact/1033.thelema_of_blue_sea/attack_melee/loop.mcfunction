@@ -5,8 +5,7 @@
 # @within function
 #   asset:artifact/1033.thelema_of_blue_sea/attack_melee/
 #   asset:artifact/1033.thelema_of_blue_sea/attack_melee/loop
-#   asset:artifact/1033.thelema_of_blue_sea/attack_melee/rejoin_process
-
+#   asset:artifact/1033.thelema_of_blue_sea/rejoin_process
 
 # WaitingTimeを減らす
     scoreboard players remove @a[scores={SP.WaitingTime=0..}] SP.WaitingTime 1

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/244/kill_melee/
 
-
 # 神器give
     data modify storage api: Argument.ID set value 245
     function api:artifact/give/from_id

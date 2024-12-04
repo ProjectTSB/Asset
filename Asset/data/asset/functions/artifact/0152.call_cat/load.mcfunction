@@ -5,6 +5,5 @@
 # @within tag/function asset:artifact/load
 
 #> 定義類はここに
-# @within function
-#   asset:artifact/0152.call_cat/*
+# @within function asset:artifact/0152.call_cat/**
     scoreboard objectives add 48.CatTime dummy

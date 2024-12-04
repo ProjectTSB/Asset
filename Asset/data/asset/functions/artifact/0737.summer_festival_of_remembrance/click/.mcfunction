@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/737/click/
 
-
 # 花火の処理を実行するエンティティを召喚
     summon marker ~ ~ ~ {Tags:["KH.FireworkCore","Object"]}
 

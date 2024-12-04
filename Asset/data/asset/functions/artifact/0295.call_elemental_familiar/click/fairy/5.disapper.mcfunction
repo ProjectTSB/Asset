@@ -2,7 +2,7 @@
 #
 # 消滅処理
 #
-# @within function asset:artifact/0295.call_elemental_familiar/click/fairy/
+# @within function asset:artifact/0295.call_elemental_familiar/click/fairy/3.main
 
 # 演出
     playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1.5 1.5

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1047/click/
 
-
 # 演出
     particle dust 0.45 0 0 1 ~ ~1 ~ 0.5 0.5 0.5 1 75 normal
     particle witch ~ ~ ~ 0.3 0 0.3 1 30 normal

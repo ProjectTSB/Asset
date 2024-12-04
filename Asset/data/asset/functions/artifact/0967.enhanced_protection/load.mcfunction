@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/0967.enhanced_protection/**
-scoreboard objectives add QV.Protected dummy
+    scoreboard objectives add QV.Protected dummy

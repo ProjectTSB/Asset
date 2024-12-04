@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1104/use_item/
 
-
 # 演出
     particle dust 100000000 0.7 0.25 1 ~ ~1.2 ~ 0.4 0.4 0.4 0 40 normal @a
     playsound ogg:random.levelup player @a ~ ~ ~ 0.3 2

@@ -1,6 +1,6 @@
 #> asset:artifact/1110.lantern_of_firefly/rejoin_process
 #
-# プレイヤー再参加時の処理
+# 使い方は必ずwikiを見ること
 #
 # @within tag/function asset:rejoin
 

@@ -16,8 +16,6 @@
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.gunpowder"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
-# 使用回数 (int) (オプション)
-    # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -52,4 +50,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

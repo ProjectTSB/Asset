@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/318/attack_melee/
 
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $RandomDamage
 
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle dust 1 1 0 1 ~ ~2 ~ 0 2.5 0 0 100

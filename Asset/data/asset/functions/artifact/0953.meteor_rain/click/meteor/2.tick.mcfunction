@@ -7,7 +7,7 @@
 #   asset:artifact/0953.meteor_rain/click/meteor/2.tick
 
 # エンティティに実行させる
-    execute as @e[type=armor_stand,tag=QH.Meteor] at @s run function asset:artifact/0953.meteor_rain/click/meteor/
+    execute as @e[type=armor_stand,tag=QH.Meteor] at @s run function asset:artifact/0953.meteor_rain/click/meteor/3.main
 
 # エンティティがいればループ
     execute if entity @e[type=armor_stand,tag=QH.Meteor,limit=1] run schedule function asset:artifact/0953.meteor_rain/click/meteor/2.tick 1t

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/361/click/
 
-
 # 演出
     particle dust 255 255 255 1 ~ ~ ~ 15 0.25 15 0 1000 force @a
     stopsound @s * block.beacon.activate

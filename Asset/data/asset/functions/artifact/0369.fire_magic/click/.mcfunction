@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/369/click/
 
-
 # 演出
     playsound entity.blaze.shoot player @a ~ ~ ~ 1 1
     playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.5

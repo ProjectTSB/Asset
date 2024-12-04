@@ -4,6 +4,5 @@
 #
 # @within function asset:artifact/alias/928/tick/check
 
-    function asset:artifact/common/check_condition/hotbar
-# 他にアイテム等確認する場合はここに書く
-# 5%の確率でしか発動しない
+# 15%の確率でしか発動しない
+    execute unless predicate lib:random_pass_per/15 run tag @s remove CanUsed

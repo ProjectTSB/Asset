@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/73/attack_melee/
 
-
 # 物理無属性ダメージ:50
     data modify storage lib: Argument.Damage set value 50.0f
     data modify storage lib: Argument.AttackType set value "Physical"

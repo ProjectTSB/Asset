@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/431/click/
 
-
 # 天候によりstorageを設定する
     execute in overworld if predicate lib:weather/is_sunny run data modify storage asset:temp BZ.Weather set value "Sunny"
     execute in overworld if predicate lib:weather/is_raining run data modify storage asset:temp BZ.Weather set value "Rain"
