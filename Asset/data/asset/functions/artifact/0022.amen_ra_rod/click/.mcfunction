@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/22/click/
 
-
 # 発光を付与
     effect give @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] minecraft:glowing 3 0 true
 

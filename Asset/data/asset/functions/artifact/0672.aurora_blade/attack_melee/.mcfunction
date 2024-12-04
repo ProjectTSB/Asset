@@ -4,6 +4,10 @@
 #
 # @within function asset:artifact/alias/672/attack_melee/
 
+#> Private
+# @private
+    #declare score_holder $RandomDamage
+    #declare score_holder $CalcRandom
     #declare score_holder $MP
     #declare score_holder $MPMax
     #declare score_holder $MPPer
@@ -17,18 +21,13 @@
 # 現在のMP割合を算出
     execute store result score $MPPer Temporary run scoreboard players operation $MP Temporary /= $MPMax Temporary
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     execute positioned ^ ^1.2 ^0.6 rotated ~ ~-4 run function asset:artifact/0672.aurora_blade/attack_melee/4.sweeping_particle
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.4 1 0
     playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.8 2 0
 
 # ダメージ
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~300の追加ダメージ

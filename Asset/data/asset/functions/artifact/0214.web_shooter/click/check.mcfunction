@@ -4,6 +4,6 @@
 #
 # @within function asset:artifact/alias/214/click/check
 
-
+# アドベンチャーモードのとき利用できないように
     execute if entity @s[gamemode=adventure] run function lib:message/artifact/can_not_use_here
-    execute if entity @s[gamemode=adventure] run tag @s remove CanUsed
+    execute if entity @s[gamemode=adventure] run tag @s remove CanUsed

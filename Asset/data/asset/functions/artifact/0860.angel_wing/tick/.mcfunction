@@ -4,6 +4,6 @@
 #
 # @within function asset:artifact/alias/860/tick/
 
-# ここから先は神器側の効果の処理を書く
+# プレイヤー効果
     effect give @s minecraft:jump_boost 2 2 true
     effect give @s minecraft:speed 2 1 true

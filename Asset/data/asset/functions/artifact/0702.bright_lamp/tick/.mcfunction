@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/702/tick/
 
-
 # 演出
     #playsound ogg:block.respawn_anchor.charge3 player @a ~ ~ ~ 0.25 2
     execute positioned ~ ~1 ~ run function asset:artifact/0702.bright_lamp/tick/vfx

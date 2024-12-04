@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/958/click/check
 
-# 他にアイテム等確認する場合はここに書く
 # 剣/斧を持っていることを判定する
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tellraw @s [{"text":"剣と斧以外を砥ぐことは出来ないようだ..."}]
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tag @s remove CanUsed
@@ -30,4 +29,3 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:     "minecraft:golden_axe"} run function asset:artifact/0958.whetstone_of_the_gods/click/check_progress.m {RequiredPercentage:60}
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:    "minecraft:diamond_axe"} run function asset:artifact/0958.whetstone_of_the_gods/click/check_progress.m {RequiredPercentage:85}
     execute if entity @s[tag=CanUsed] if data storage asset:context Items.mainhand{id:  "minecraft:netherite_axe"} run function asset:artifact/0958.whetstone_of_the_gods/click/check_progress.m {RequiredPercentage:85}
-

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/374/click/
 
-
 # 演出
     execute positioned ^ ^ ^1 run particle dust 1 1 0 1 ~ ~1 ~ 0.1 0 0.1 0 5
     execute positioned ^ ^ ^1.5 run particle dust 1 1 0 1 ~ ~1 ~ 0.1 0 0.1 0 5

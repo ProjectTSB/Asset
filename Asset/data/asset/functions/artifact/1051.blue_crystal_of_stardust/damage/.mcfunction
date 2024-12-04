@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1051/damage/
 
-
 # 自身と12m以内の現在体力割合の最も低いプレイヤー2名が回復の対象
 
 # 演出

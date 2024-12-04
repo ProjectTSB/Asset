@@ -3,4 +3,4 @@
 
 #> Val
 # @within function asset:artifact/0192.falcios_wand/**
-#declare tag 5C.VFX
+    #declare tag 5C.VFX

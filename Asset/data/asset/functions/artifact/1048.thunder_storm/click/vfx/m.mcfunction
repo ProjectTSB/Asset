@@ -7,4 +7,4 @@
 # @within function asset:artifact/1048.thunder_storm/click/5.tick
 
 # VFXを呼び出す
-$function asset:artifact/1048.thunder_storm/click/vfx/fc_$(Num)
+    $function asset:artifact/1048.thunder_storm/click/vfx/fc_$(Num)

@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0210.terra_blade/click/3.1.terra_shot_tick
 #   asset:artifact/0210.terra_blade/click/event/summon_shot
-#   asset:artifact/0210.terra_blade/click/rejoin_process
+#   asset:artifact/0210.terra_blade/rejoin_process
 
 # テラショットにコマンド実行
     execute as @e[type=armor_stand,tag=5U.Shot] at @s run function asset:artifact/0210.terra_blade/click/3.3.terra_shot_main

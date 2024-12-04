@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/297/click/
 
-
 # 霊界状態になる
     data modify storage api: Argument.ID set value 206
     function api:entity/mob/effect/give

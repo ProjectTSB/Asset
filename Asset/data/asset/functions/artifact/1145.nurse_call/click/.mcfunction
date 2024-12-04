@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1145/click/
 
-
 # 召喚
     data modify storage api: Argument.ID set value 1060
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

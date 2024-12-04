@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 218
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"超重量","color":"light_gray"}'
+    data modify storage asset:effect Name set value '{"text":"超重量","color":"gray"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"ノックバック耐性が上昇するが"}','{"text":"移動速度とジャンプ力が低下し、低速落下が解除される"}']
 # 効果時間 (int) (default = API || error)

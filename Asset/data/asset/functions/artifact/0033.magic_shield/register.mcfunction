@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"マジックシールド","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"一度だけ攻撃を防ぐバリアを20得る"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"食らうダメージを1度だけ"},{"text":"80%軽減","color":"green"},{"text":"する"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

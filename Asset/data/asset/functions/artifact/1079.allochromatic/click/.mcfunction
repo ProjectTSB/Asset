@@ -4,15 +4,14 @@
 #
 # @within function asset:artifact/alias/1079/click/
 
+#> Private
+# @private
+    #declare tag MainHand
+
 # 使用スロットをチェックする
 # 残り使用回数が0になったタイミングでcommon処理を行うとデータが消えるためここでチェックしている
 # でもダメージとかをcommon処理の前に行うのは気持ち悪いからTagで判別している
-    execute if data storage asset:context id{mainhand:1079} run tag @s add MainHand
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+    execute if data storage asset:context {TargetSlot:"mainhand"} run tag @s add MainHand
 
 # 自身に共鳴・蒼バフを付与
     data modify storage api: Argument.ID set value 229
@@ -36,10 +35,9 @@
 
 # 残り回数が1回の時発動した場合
 # 使用スロットで条件分岐しないと消えるので分岐している
-    execute if entity @s[tag=MainHand] unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 1080
-    execute if entity @s[tag=MainHand] unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
-    execute if entity @s[tag=!MainHand] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.ID set value 1080
-    execute if entity @s[tag=!MainHand] unless data storage asset:context Items.offhand.id run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem: true} run data modify storage api: Argument.ID set value 1080
+    execute if data storage asset:context {BrokeItem: true} run data modify storage api: Argument.Slot set from storage asset:context Slot
+    execute if data storage asset:context {BrokeItem: true} run function api:artifact/replace/from_id
 
 # リセット
     tag @s[tag=Resonance] remove Resonance

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/172/click/
 
-
 # 演出
     playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0
 

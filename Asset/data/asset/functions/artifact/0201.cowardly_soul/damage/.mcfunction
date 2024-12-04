@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/201/damage/
 
-
 # 落下速度低下付与
     effect give @s minecraft:slow_falling 1 1
 

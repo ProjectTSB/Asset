@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/kill/kill.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/0728.magatama_of_soul_eating/kill/

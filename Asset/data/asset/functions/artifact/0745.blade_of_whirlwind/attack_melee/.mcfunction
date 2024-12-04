@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/745/attack_melee/
 
-
 #> Private
 # @private
     #declare score_holder $BaseSpeed

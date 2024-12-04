@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/258/heal/
 
-
 #> Private
 # @private
     #declare score_holder $Random

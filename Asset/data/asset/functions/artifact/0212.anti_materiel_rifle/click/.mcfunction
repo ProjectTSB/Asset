@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/212/click/
 
-
 # 弾を進めるための再起開始
     execute positioned ~ ~1.5 ~ run function asset:artifact/0212.anti_materiel_rifle/click/3.1.bullet
 # タグを消す

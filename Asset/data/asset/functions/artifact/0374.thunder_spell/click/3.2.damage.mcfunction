@@ -5,8 +5,6 @@
 # @within function
 #   asset:artifact/0374.thunder_spell/click/3.1.line
 
-# ここから先は神器側の効果の処理を書く
-
 # タグチェック用
     tag @s add AE.Check
 # 演出

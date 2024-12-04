@@ -4,7 +4,7 @@
 #
 # @within function
 #      asset:artifact/0431.weather_lock_cane/click/end
-#      asset:artifact/0431.weather_lock_cane/click/rejoin_process
+#      asset:artifact/0431.weather_lock_cane/rejoin_process
 
 # 演出
     # chat

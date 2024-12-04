@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/468/tick/
 
-
 # 防御無視・補正なし・物理・無属性の30のダメージを与える
     data modify storage lib: Argument.Damage set value 30f
     data modify storage lib: Argument.AttackType set value "Physical"

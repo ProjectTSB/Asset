@@ -4,8 +4,7 @@
 #
 # @within function asset:artifact/alias/963/tick/
 
-
-#連続で発動しないようにタグで制御する
+# 連続で発動しないようにタグで制御する
     tag @s add QR.Run
 
 # 効果

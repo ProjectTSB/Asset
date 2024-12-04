@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/78/click/check
 
-
 # アイアンゴーレムとスノーゴーレムが近くにいるときのみ発動
     scoreboard players set @s Temporary 0
     execute if entity @e[type=iron_golem,distance=..15] run scoreboard players set @s Temporary 1

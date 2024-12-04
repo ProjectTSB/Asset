@@ -5,7 +5,7 @@
 # @within function
 #       asset:artifact/0210.terra_blade/click/sword/summon_sword
 #       asset:artifact/0210.terra_blade/click/sword/sword_schedule
-#       asset:artifact/0210.terra_blade/click/rejoin_process
+#       asset:artifact/0210.terra_blade/rejoin_process
 
 # 実行
     execute as @e[type=armor_stand,tag=5U.Sword] at @s run function asset:artifact/0210.terra_blade/click/sword/sword

@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/receive_heal/receive_heal.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/1081.wandering_piece_of_dream/receive_heal/

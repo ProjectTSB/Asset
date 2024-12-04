@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/772/tick/
 
-
 # 演出
     particle dolphin ~ ~ ~ 1 1 1 0 140 normal @a
 

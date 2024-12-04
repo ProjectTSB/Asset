@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/204/tick/
 
-
 # プレイヤーを死亡させる
     data modify storage api: Argument.Damage set value 9999
     data modify storage api: Argument.AttackType set value "Physical"

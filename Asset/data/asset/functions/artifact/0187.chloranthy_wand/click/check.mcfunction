@@ -4,6 +4,5 @@
 #
 # @within function asset:artifact/alias/187/click/check
 
-
 # プレイヤーのゲームモードがサバイバル・クリエイティブの時にのみ使用可能
     execute if entity @s[gamemode=!survival,gamemode=!creative] run tag @s remove CanUsed

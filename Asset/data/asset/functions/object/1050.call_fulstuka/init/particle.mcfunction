@@ -4,7 +4,6 @@
 #
 # @within function asset:object/1050.call_fulstuka/init/
 
-
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGwCcA7AGYr0AcAzALTUAsD7XrrLuwCG9YXHb1WAJgAMs6QCMUtAKwBGVmAIA7YQFsEyQGGKAAnXawMYRgMBnJOBQB7QjohJVsgijju4GI5gAG7C2IRG4AAeSN5gULEAvokEtqRohA6IrAR2EDYeiHFw2NhoMHZG6vKpzvkQRnFodgCipeWVLQCOhGHYUADK1r7kiGLYlckAukA_3
 # 円 1
 particle end_rod ~ ~ ~ 0 0 -3 0.3 0

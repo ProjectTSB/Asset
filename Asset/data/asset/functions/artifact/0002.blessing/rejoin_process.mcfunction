@@ -1,6 +1,6 @@
 #> asset:artifact/0002.blessing/rejoin_process
 #
-# プレイヤー再参加時の処理
+# 使い方は必ずwikiを見ること
 #
 # @within tag/function asset:rejoin
 

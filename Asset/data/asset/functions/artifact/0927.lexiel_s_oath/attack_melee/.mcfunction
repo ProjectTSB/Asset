@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/927/attack_melee/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $RandomDamage
 
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle sweep_attack ~ ~1 ~ 0 0 0 1 20
@@ -18,15 +17,8 @@
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.5
     playsound minecraft:item.trident.return player @a ~ ~ ~ 1 2
 # ダメージ
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。0~100の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $100 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 720
-    #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+    # ダメージセット
+        execute store result storage lib: Argument.Damage float 1 run random value 720..820
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性

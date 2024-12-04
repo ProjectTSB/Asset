@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1048/click/
 
-
 # MP減少率を計算
 # 最大MPを取得する
     function api:mp/get_max

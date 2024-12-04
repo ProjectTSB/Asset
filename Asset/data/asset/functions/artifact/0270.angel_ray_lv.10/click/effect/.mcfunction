@@ -6,7 +6,7 @@
 
 #> Target
 # @private
-#declare tag Target
+    #declare tag Target
 
 # それぞれでmodifierを実行するのは面倒なので先に処理してしまう
     data modify storage api: Argument.Damage set value 1750d

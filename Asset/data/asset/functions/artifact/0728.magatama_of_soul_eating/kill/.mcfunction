@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/728/kill/
 
-
 #> Private
 # @private
     #declare score_holder $Count
@@ -19,8 +18,8 @@
 
 # 個数を取得し、その値に1を足す
 # 回復量 = 5(n+1)％
-    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:728}}}]
-    scoreboard players add $Count Temporary 1
+    execute store result score $Count Temporary run data get storage asset:context Count
+    scoreboard players operation $Count Temporary += $1 Const
 
 # 5％分を100倍で取得
     function api:modifier/max_health/get

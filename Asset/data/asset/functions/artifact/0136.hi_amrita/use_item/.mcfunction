@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/136/use_item/
 
-
 # 演出
     particle minecraft:composter ~ ~1 ~ 0.5 0.5 0.5 1 20 force @s
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1

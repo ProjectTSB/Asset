@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/355/click/
 
-
 # 樽召喚
     execute at @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..8] run function asset:artifact/0355.barrel/click/summon_barrel
 

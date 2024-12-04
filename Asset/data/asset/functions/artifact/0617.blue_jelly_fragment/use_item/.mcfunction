@@ -4,5 +4,5 @@
 #
 # @within function asset:artifact/alias/617/use_item/
 
-    data modify storage api: Argument.Fluctuation set value 5
-    function api:mp/fluctuation
+data modify storage api: Argument.Fluctuation set value 5
+function api:mp/fluctuation

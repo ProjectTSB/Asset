@@ -4,6 +4,5 @@
 #
 # @within function asset:artifact/alias/985/click/check
 
-
 # コマンド実行中（Timeをもっている）なら実行できない
-    execute if score @s RD.Time matches 1.. run tag @s remove CanUsed
+    execute if score @s RD.Time matches 1.. run tag @s remove CanUsed

@@ -4,9 +4,6 @@
 #
 # @within function asset:artifact/alias/1056/damage/check
 
-    function asset:artifact/common/check_condition/hotbar
-# 他にアイテム等確認する場合はここに書く
-
 #> Private
 # @private
     #declare score_holder $HealthPer
@@ -20,4 +17,3 @@
 
 # リセット
     scoreboard players reset $HealthPer Temporary
-

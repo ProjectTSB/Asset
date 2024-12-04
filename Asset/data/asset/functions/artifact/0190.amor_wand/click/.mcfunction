@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/190/click/
 
-
 # 演出
     execute at @a[distance=..8] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..8]
     playsound minecraft:entity.arrow.hit_player player @a[distance=..8] ~ ~ ~ 20 1

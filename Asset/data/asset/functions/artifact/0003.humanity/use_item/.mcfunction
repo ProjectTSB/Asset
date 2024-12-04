@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/3/use_item/
 
-
 # 10%の確率で死亡
     scoreboard players set @s Temporary 0
     execute if predicate lib:random_pass_per/10 run scoreboard players set @s Temporary 1

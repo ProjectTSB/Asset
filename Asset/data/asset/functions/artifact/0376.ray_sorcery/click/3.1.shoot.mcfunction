@@ -6,7 +6,6 @@
 #   asset:artifact/0376.ray_sorcery/click/
 #   asset:artifact/0376.ray_sorcery/click/3.1.shoot
 
-# ここから先は神器側の効果の処理を書く
 # 着弾検知
     execute if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] run tag @s add Landing
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing

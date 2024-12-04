@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/185/use_item/
 
-
 #> Val
 # @private
     #declare score_holder $MaxHealth
@@ -13,10 +12,10 @@
 # 失った体力の5%分回復
 
 # 現在/最大体力を取得する(100倍)
-    function api:data_get/health
-    execute store result score $CurHealth Temporary run data get storage api: Health 100
     function api:modifier/max_health/get
     execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
+    function api:data_get/health
+    execute store result score $CurHealth Temporary run data get storage api: Health 100
 
 # 失った体力(100倍)を計算し回復する
 # 失った体力(100倍)の0.01倍*5%を回復量にする

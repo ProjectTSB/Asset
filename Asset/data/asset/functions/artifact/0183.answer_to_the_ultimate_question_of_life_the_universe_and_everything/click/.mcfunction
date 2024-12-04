@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/183/click/
 
-
 # 演出
     particle portal ~ ~1.2 ~ 0 0 0 2 250 force @a
     particle reverse_portal ~ ~1.2 ~ 0 0 0 2 250 force @a

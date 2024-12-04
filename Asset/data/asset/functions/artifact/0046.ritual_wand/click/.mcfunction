@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/46/click/
 
-
 # 現在の天気から切り替える天気を取得する
     execute if predicate lib:weather/is_sunny run scoreboard players set @s Temporary 0
     execute if predicate lib:weather/is_raining run scoreboard players set @s Temporary 1

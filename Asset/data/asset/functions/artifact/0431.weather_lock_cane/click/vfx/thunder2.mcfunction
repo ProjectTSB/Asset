@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/0431.weather_lock_cane/click/vfx/thunder
 
-
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 200
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 200

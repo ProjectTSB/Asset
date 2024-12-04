@@ -8,5 +8,3 @@
     execute if entity @s[tag=CanUsed] unless entity @e[type=#lib:living,type=!player,tag=3E.Hit,distance=..5] run playsound minecraft:block.dispenser.fail player @a ~ ~ ~ 1 1
     execute if entity @s[tag=CanUsed] unless entity @e[type=#lib:living,type=!player,tag=3E.Hit,distance=..5] run tag @s remove CanUsed
     data remove storage asset:temp IsTargetEntityFound
-# CanUsedタグをチェックして.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0122.lunatic_lay/click/

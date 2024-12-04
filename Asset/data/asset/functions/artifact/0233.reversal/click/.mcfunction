@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/233/click/
 
-
 # MP反転
     execute as @a run function asset:artifact/0233.reversal/click/set_mp
 

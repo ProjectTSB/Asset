@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/375/click/
 
-
 #> Private
 # @private
     #declare tag Target

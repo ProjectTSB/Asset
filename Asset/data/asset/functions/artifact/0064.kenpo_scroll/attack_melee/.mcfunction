@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/64/attack_melee/
 
-
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:crit ~ ~ ~ 0.5 0.5 0.5 1 50 force @a[distance=..10]
     playsound minecraft:entity.firework_rocket.blast player @s ~ ~ ~ 1 2

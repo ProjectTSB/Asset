@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/heal/heal.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/0258.cat_dream_pillow/heal/

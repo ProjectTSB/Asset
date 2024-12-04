@@ -2,6 +2,6 @@
 #
 # 神器の使用条件の確認処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/attack_melee/check.m
+# @within function asset_manager:artifact/triggers/event/check.m
 
 function asset:artifact/0606.traffic_sign/attack_melee/check

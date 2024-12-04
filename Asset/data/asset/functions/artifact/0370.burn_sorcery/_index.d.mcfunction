@@ -2,6 +2,5 @@
 # @private
 
 #> tag
-# @within function
-#   asset:artifact/0370.burn_sorcery/**
+# @within function asset:artifact/0370.burn_sorcery/**
     #declare tag Landing

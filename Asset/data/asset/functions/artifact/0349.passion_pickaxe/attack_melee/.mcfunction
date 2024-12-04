@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/349/attack_melee/
 
-
 # ダメージ
     # 与えるダメージ = 550
         data modify storage lib: Argument.Damage set value 50f

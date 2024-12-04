@@ -4,10 +4,9 @@
 #
 # @within function asset:artifact/alias/1034/attack_melee/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+# 現在MPの10×1.2倍を取得
+    function api:mp/get_current
+    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 12
 
 # 待機時間を設定 0以下になるとschedule.mcfでリセットされる
     scoreboard players set @s SQ.WaitingTime 60

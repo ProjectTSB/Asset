@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1083/kill/
 
-
 # 演出
     playsound minecraft:block.bell.resonate player @a ~ ~ ~ 1 1
     particle minecraft:enchant ~ ~2 ~ 0 0 0 1 100

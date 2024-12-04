@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/damage/damage.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/1051.blue_crystal_of_stardust/damage/

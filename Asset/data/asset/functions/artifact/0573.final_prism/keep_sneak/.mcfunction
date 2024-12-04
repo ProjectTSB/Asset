@@ -4,8 +4,9 @@
 #
 # @within function asset:artifact/alias/573/keep_sneak/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/mainhand
+#> SpreadLib
+# @private
+    #declare tag SpreadMarker
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/

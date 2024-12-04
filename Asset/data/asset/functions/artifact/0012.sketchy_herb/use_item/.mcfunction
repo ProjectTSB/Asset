@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/12/use_item/
 
-
 # エフェクト効果
     effect give @s minecraft:strength 60 10 true
     effect give @s minecraft:resistance 60 1 true

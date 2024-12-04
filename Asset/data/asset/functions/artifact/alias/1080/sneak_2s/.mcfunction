@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/sneak_2s/sneak_2s.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/1080.allochromatic_empty/sneak_2s/

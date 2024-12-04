@@ -4,9 +4,10 @@
 #
 # @within function asset:artifact/alias/108/click/
 
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+#> Private
+# @private
+    #declare tag Vacuum
+    #declare score_holder $Items
 
 # ここから先は神器側の効果の処理を書く
     playsound entity.enderman.teleport player @s ~ ~ ~ 1 2

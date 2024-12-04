@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/damage_entity/damage_entity.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/0801.red_secret_stone/damage_entity/

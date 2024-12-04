@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/75/click/
 
-
 # 演出(水中)
     execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,predicate=lib:is_in_water/include_flowing,distance=..5] run function asset:artifact/0075.whirlpool_wand/click/vfx/inside_water
 # 演出(水中ではない)

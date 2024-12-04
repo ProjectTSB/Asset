@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/233/click/check
 
-
 #> Val
 # @private
     #declare score_holder $6H.HealthPer

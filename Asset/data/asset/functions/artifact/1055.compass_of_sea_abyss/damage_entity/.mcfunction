@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1055/damage_entity/
 
-
 #> Private
 # @private
     #declare tag Target

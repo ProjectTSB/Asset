@@ -2,6 +2,6 @@
 #
 # 神器の使用条件の確認処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/attack_melee/check.m
+# @within function asset_manager:artifact/triggers/event/check.m
 
 function asset:artifact/1216.sharpened_netherite_axe/attack_melee/check

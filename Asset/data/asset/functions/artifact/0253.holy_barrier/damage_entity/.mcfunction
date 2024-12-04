@@ -4,14 +4,14 @@
 #
 # @within function asset:artifact/alias/253/damage_entity/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/hotbar
+#> prv
+# @private
+    #declare tag 71.Target
 
-# ここから先は神器側の効果の処理を書く
 # 攻撃対象にタグ付け
     tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry] add 71.Target
 
-#音
+# 音
     playsound minecraft:block.respawn_anchor.deplete player @a[distance=..16] ~ ~ ~ 1 1 1
     playsound entity.experience_orb.pickup player @a[distance=..16] ~ ~ ~ 1 1.2 1
 

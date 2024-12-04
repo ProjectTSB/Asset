@@ -16,5 +16,4 @@
     particle block bedrock ~ ~1.5 ~ 0.5 0.5 0.5 1 30
 
 # 効果
-    #tp ~ -30 ~
     execute as @e[type=#lib:living,tag=Victim,distance=..0.01,limit=1] run function api:mob/remove

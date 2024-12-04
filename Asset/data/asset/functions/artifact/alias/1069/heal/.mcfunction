@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/heal/heal.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/1069.sprout_of_dappled_sunlight/heal/

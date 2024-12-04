@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/954/tick/
 
-
 # 地面にいる時のみ演出
     function api:data_get/on_ground
     execute if data storage api: {OnGround:1b} run playsound minecraft:entity.bat.takeoff player @a ~ ~ ~ 0.5 0

@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/0210.terra_blade/click/3.3.terra_shot_main
 
-
-
 # 魔法、無属性のダメージをぶちかます
     data modify storage api: Argument.Damage set value 35.0f
     data modify storage api: Argument.AttackType set value "Physical"

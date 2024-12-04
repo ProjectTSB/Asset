@@ -4,9 +4,8 @@
 #
 # @within function asset:artifact/alias/897/attack_melee/
 
-
 # 個数を取得
-    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:897}}}]
+    execute store result score $Count Temporary run data get storage asset:context Count
     scoreboard players operation $Count Temporary < $3 Const
 # ダメージ係数の設定
     scoreboard players set $Multi.Normal Temporary 100

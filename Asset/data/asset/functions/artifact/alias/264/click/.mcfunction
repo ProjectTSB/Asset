@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/click/click.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/0264.heal_lv.5/click/

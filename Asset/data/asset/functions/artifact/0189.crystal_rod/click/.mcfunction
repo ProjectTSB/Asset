@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/189/click/
 
-
 # vfx
     execute at @a[distance=..15] run function asset:artifact/0189.crystal_rod/click/vfx
 

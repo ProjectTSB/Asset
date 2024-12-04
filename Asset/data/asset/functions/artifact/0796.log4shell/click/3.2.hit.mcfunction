@@ -5,9 +5,6 @@
 #    asset:artifact/0796.log4shell/click/
 #    asset:artifact/0796.log4shell/click/3.1.shell
 
-
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     execute at @e[tag=M4.LandingTarget,limit=1] run particle minecraft:block oak_log ~ ~1.2 ~ 0.4 0.4 0.4 0 4
 

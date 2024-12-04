@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1081/receive_heal/
 
-
 # Effect付与対象: 使用者 & 周囲の現在体力の最も低いプレイヤー2名
 
 # 付与対象にTagを付与

@@ -2,6 +2,6 @@
 # @private
 
 #> Private
-# @within asset:artifact/0467.cosmo_blue_flash/*
+# @within asset:artifact/0467.cosmo_blue_flash/**
     #declare tag CZ.HitEntity
     #declare tag CZ.HitFlag

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/999/click/
 
-
 # 召喚
     execute rotated ~000 -25 anchored eyes positioned ^ ^ ^5 run function asset:artifact/0999.sextaple_ultima/click/gun_summon
     execute rotated ~060 -25 anchored eyes positioned ^ ^ ^5 run function asset:artifact/0999.sextaple_ultima/click/gun_summon

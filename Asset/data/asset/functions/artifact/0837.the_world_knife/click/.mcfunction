@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/837/click/
 
-
 # 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 0
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 1

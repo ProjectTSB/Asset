@@ -1,10 +1,10 @@
 #> asset:artifact/1037.grand_flame/click/schedule/3.1.vfx
 #
-# çĺźžććźĺşďźçä˝ďź
+# 着弾時演出 (球体)
 #
 # @within function asset:artifact/1037.grand_flame/click/schedule/3.landing
 
-# ç
+# 球
     particle dust 100000000 1 0 4 ~-0.0 ~1.294 ~4.83 0.0 0.0 0.0 0.0 1 force @a[distance=..64]
     particle dust 100000000 1 0 4 ~-0.0 ~0.0 ~5.0 0.0 0.0 0.0 0.0 1 force @a[distance=..64]
     particle dust 100000000 1 0 4 ~-0.0 ~-1.294 ~4.83 0.0 0.0 0.0 0.0 1 force @a[distance=..64]

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/371/click/
 
-
 # 敵が居ない場合
     execute positioned ^ ^ ^5 unless entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..5] run function asset:artifact/0371.water_spell/click/3.1.attack
 

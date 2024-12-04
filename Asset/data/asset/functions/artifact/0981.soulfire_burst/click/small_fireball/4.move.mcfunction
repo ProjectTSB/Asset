@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:artifact/0981.soulfire_burst/click/small_fireball/
+#   asset:artifact/0981.soulfire_burst/click/small_fireball/3.main
 #   asset:artifact/0981.soulfire_burst/click/small_fireball/4.move
 
 # 再帰カウントが0なら弾速からセット

@@ -2,6 +2,6 @@
 #
 # 神器のトリガー処理のエイリアス
 #
-# @within function asset_manager:artifact/triggers/use_item/use_item.m
+# @within function asset_manager:artifact/triggers/event/use.m
 
 function asset:artifact/0137.aure_amrita/use_item/

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/801/damage_entity/
 
-
 #> Private
 # @private
     #declare score_holder $HealValue
@@ -14,7 +13,7 @@
     playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 0.4 0.8
 
 # 所持数を基に回復量を計算 HealValue = 2.5(n+1)
-    execute store result score $HealValue Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:801}}}]
+    execute store result score $HealValue Temporary run data get storage asset:context Count
     scoreboard players add $HealValue Temporary 1
 
 # 回復する

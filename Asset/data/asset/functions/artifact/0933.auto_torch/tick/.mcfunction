@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/933/tick/
 
-
 # 松明一個消す
     clear @s torch 1
 # 前方におけるなら置く、おけなかったら足元に置く

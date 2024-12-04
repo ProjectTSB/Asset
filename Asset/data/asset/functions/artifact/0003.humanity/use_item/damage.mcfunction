@@ -7,7 +7,6 @@
 # 演出
     title @a title {"text":"YOU DIED","color":"red"}
     playsound block.beacon.power_select player @s ~ ~ ~ 1 0 1
-
 # 致死量のダメージを受ける
     data modify storage api: Argument.Damage set value 9999
     data modify storage api: Argument.AttackType set value "Magic"

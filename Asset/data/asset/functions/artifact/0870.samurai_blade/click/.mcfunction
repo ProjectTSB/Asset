@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/870/click/
 
-
 # スコアを戻す
     scoreboard players set @s O6.Time 1
 

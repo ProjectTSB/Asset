@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/373/click/
 
-
 # 演出
     playsound minecraft:entity.guardian.death player @a ~ ~ ~ 1 1
     playsound minecraft:entity.guardian.death player @a ~ ~ ~ 1 1

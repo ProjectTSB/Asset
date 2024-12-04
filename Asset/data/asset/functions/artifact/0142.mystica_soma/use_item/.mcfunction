@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/alias/142/use_item/
 
+#> private
+# @private
+    #declare score_holder $Fluctuation
 
 # 演出
     particle minecraft:composter ~ ~1 ~ 0.5 0.5 0.5 1 20 force @s
@@ -17,10 +20,9 @@
 
 # HP回復
     function api:modifier/max_health/get
-    execute store result storage lib: Argument.Heal double 0.0040 run data get storage api: Return.MaxHealth 100
-    function lib:heal/modifier
-    function lib:heal/
+    execute store result storage api: Argument.Heal double 0.0040 run data get storage api: Return.MaxHealth 100
+    function api:heal/modifier
+    function api:heal/
 
 # リセット
-    function lib:heal/reset
-    data remove storage asset:temp 3Y
+    function api:heal/reset

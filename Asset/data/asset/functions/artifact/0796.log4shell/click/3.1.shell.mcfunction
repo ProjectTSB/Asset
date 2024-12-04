@@ -6,9 +6,6 @@
 #    asset:artifact/0796.log4shell/click/
 #    asset:artifact/0796.log4shell/click/3.1.shell
 
-
-# ここから先は神器側の効果の処理を書く
-
 # 着弾検知
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] run tag @s add M4.Landing
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add M4.Landing

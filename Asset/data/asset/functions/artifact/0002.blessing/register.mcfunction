@@ -9,8 +9,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    function asset:artifact/0002.blessing/give/get_random_name
-    data modify storage asset:artifact Name set value '[{"storage":"asset:temp","nbt":"02.Name"},{"text":"の祝福"}]'
+    function asset:artifact/0002.blessing/random_name/
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"この世界を浄化する者に祝福を与える"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -56,7 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-
-# 神器の入手用function
-    function asset:artifact/common/give
-

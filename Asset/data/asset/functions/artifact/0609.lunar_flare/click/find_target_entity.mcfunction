@@ -2,8 +2,9 @@
 #
 # 視点先みるやつ
 #
-# @within function asset:artifact/0609.lunar_flare/click/
-# @within function asset:artifact/0609.lunar_flare/click/find_target_entity
+# @within function
+#   asset:artifact/0609.lunar_flare/click/
+#   asset:artifact/0609.lunar_flare/click/find_target_entity
 
 # 地形にぶつかったとき
     execute unless entity @s[tag=GX.RecursiveEnd] unless block ^ ^ ^1 #lib:no_collision run function asset:artifact/0609.lunar_flare/click/summon_laser_pos

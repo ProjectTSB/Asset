@@ -57,4 +57,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:1,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}
-

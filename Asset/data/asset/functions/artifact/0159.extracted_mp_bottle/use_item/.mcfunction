@@ -4,15 +4,15 @@
 #
 # @within function asset:artifact/alias/159/use_item/
 
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+#> Private
+# @private
+    #declare score_holder $Random
+    #declare score_holder $Fluctuation
 
 # 演出
     execute anchored eyes run particle dust 1 0.31 0.91 0.3 ^ ^ ^ 0.4 0.4 0.4 0 20 normal @s
 # MP回復量を計算
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $6 Const
+    execute store result score $Random Temporary run random value 0..5
     scoreboard players set $Fluctuation Temporary 30
     execute store result storage api: Argument.Fluctuation int 1 run scoreboard players operation $Fluctuation Temporary -= $Random Temporary
 

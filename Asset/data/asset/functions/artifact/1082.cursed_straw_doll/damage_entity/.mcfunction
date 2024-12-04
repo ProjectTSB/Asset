@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1082/damage_entity/
 
-
 # 演出
     execute as @e[type=#lib:living,tag=Attacker,distance=..50,limit=1] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes rotated ~ -55 run function asset:artifact/1082.cursed_straw_doll/damage_entity/vfx/
 

@@ -5,7 +5,8 @@
 # @within function
 #       asset:artifact/0600.xtal/attack_melee/
 #       asset:artifact/0600.xtal/attack_melee/schedule
-#       asset:artifact/0600.xtal/attack_melee/rejoin_process
+#       asset:artifact/0600.xtal/rejoin_process
+
 # プレイヤーに実行させる
     execute as @a[scores={GO.Time=1..}] at @s run function asset:artifact/0600.xtal/attack_melee/4.wait_time
 # ループする

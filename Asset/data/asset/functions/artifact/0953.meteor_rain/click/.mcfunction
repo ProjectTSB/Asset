@@ -4,6 +4,7 @@
 #
 # @within function asset:artifact/alias/953/click/
 
+# サウンド
     playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 3 1.2
     playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 3 0.8
     playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 3 1.5

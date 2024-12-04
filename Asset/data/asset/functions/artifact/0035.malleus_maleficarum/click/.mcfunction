@@ -4,8 +4,10 @@
 #
 # @within function asset:artifact/alias/35/click/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+#> private
+# @private
+    #declare tag MalleusMaleficarumInit
+    #declare tag MalleusMaleficarumEntity
 
 # エンダーパールwithアーマースタンド召喚
     execute anchored eyes run summon ender_pearl ^ ^ ^1 {Tags:[MalleusMaleficarumInit,MalleusMaleficarumEntity],Passengers:[{id:"minecraft:armor_stand",Tags:[MalleusMaleficarumIndicator,MalleusMaleficarumInit],NoGravity:1b,Invisible:1b}]}

@@ -4,10 +4,10 @@
 #
 # @within function asset:artifact/alias/796/click/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+#> prv
+# @private
+    #declare tag M4.SpreadMarker
 
-# ここから先は神器側の効果の処理を書く
 # 原木を消費
     clear @s #minecraft:logs 1
 
