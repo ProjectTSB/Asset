@@ -1,0 +1,7 @@
+#> asset:artifact/alias/265/click/
+#
+# 神器のトリガー処理のエイリアス
+#
+# @within function asset_manager:artifact/triggers/click/click.m
+
+function asset:artifact/0265.holy_symbol_lv.5/click/
