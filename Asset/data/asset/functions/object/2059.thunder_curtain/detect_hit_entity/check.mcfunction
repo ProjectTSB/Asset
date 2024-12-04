@@ -15,6 +15,3 @@
     data modify storage lib: args.selector set value "@p[tag=!PlayerShouldInvulnerable,distance=..15]"
     function lib:rotatable_dxyz/m with storage lib: args
     execute if entity @p[tag=DXYZ] run data modify storage asset:context IsHitEntity set value true
-
-# リセット
-    tag @a[tag=DXYZ,distance=..15] remove DXYZ
