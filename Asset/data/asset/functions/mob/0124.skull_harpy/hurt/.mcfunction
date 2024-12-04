@@ -4,13 +4,12 @@
 #
 # @within function asset:mob/alias/124/hurt
 
-# 演出
-    particle minecraft:cloud ~ ~1 ~ 0 0 0 0.4 20
-    playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
+#> Private
+# @private
+    #declare score_holder $Cooldown
 
-# プレイヤーから離れる
-    data modify storage lib: Argument.VectorMagnitude set value 1
-    execute facing entity @p eyes rotated ~180 -10 run function lib:motion/
-
-# リセット
-    data remove storage lib: Argument
+# 最後に被ダメしたTickから50Tick経っていれば逃げる
+    execute store result score $Cooldown Temporary run time query gametime
+    scoreboard players operation $Cooldown Temporary -= @s 3G.LatestEscapeTick
+    execute if score $Cooldown Temporary matches 50.. run function asset:mob/0124.skull_harpy/hurt/escape
+    scoreboard players reset $Cooldown Temporary
