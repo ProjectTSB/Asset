@@ -14,7 +14,7 @@
 # 与ダメージ低下(ID:607)を付与
 # Stack = 難易度値
     function api:global_vars/get_difficulty
-    data modify storage api: Argument.ID set value 607
+    data modify storage api: Argument.ID set value 1
     data modify storage api: Argument.Duration set value 100
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
