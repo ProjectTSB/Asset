@@ -57,7 +57,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:artifact CustomNBT set value {}
-
+    data modify storage asset:artifact CustomNBT set value {HideFlags:1,Enchantments:[{id:"minecraft:vanishing_curse",lvl:1s}]}
+    
 # 神器の入手用function
     function asset:artifact/common/give
