@@ -9,7 +9,7 @@
     #declare score_holder $SoundInterval
 
 # 実行時間を移す
-    scoreboard players operation $SoundInterval Temporary = @s 1J.Tick
+    scoreboard players operation $SoundInterval Temporary = @s General.Mob.Tick
 
 # 数Tickごとにサウンド
     scoreboard players operation $SoundInterval Temporary %= $2 Const
@@ -28,7 +28,7 @@
     execute if predicate api:global_vars/difficulty/min/hard if predicate api:area/is_breakable rotated ~ 0 positioned ^ ^ ^1 run function asset:mob/0055.hetukedah/tick/skill/charge/break_block
 
 # 壁があったら終了
-    execute unless block ^ ^ ^1 #lib:no_collision run scoreboard players set @s 1J.Tick 50
+    execute unless block ^ ^ ^1 #lib:no_collision run scoreboard players set @s General.Mob.Tick 50
 
 # 前に移動
     execute if block ^ ^ ^1 #lib:no_collision run tp @s ^ ^ ^1

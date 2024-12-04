@@ -15,7 +15,7 @@
     tag @s remove 1J.Turn.Left
 
 # スコアリセット
-    scoreboard players reset @s 1J.Tick
+    scoreboard players reset @s General.Mob.Tick
     scoreboard players reset @s 1J.LoopCount
 
 # NoAI解除

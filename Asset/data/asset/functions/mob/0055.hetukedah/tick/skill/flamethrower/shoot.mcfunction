@@ -9,7 +9,7 @@
     #declare score_holder $SoundInterval
 
 # 実行時間を移す
-    scoreboard players operation $SoundInterval Temporary = @s 1J.Tick
+    scoreboard players operation $SoundInterval Temporary = @s General.Mob.Tick
 
 # 数Tickごとにサウンド
     scoreboard players operation $SoundInterval Temporary %= $6 Const

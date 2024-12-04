@@ -3,12 +3,13 @@
 # モブが持つスキル一覧、ランダムに実行
 #
 # @within function asset:mob/0055.hetukedah/tick/
+
 #> Private
 # @private
     #declare score_holder $Random
 
 # Tick0に戻す
-    scoreboard players set @s 1J.Tick 0
+    scoreboard players set @s General.Mob.Tick 0
 
 # 行動中としてタグ付与
     tag @s add 1J.InAction
