@@ -16,3 +16,4 @@
     data modify storage asset:object ID set value 2060
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1f
+    data modify storage asset:object Field.MobUUID set value -1
