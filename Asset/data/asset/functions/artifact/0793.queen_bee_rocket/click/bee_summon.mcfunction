@@ -1,0 +1,28 @@
+#> asset:artifact/0793.queen_bee_rocket/click/bee_summon
+#
+#
+#
+# @within function asset:artifact/0793.queen_bee_rocket/click/
+
+#> Private
+# @private
+    #declare tag SpreadMarker
+
+# 前方拡散設定
+    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    data modify storage lib: Argument.Distance set value 1
+    data modify storage lib: Argument.Spread set value 0.6
+# 前方拡散を実行する
+    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
+
+# 弾を召喚
+    summon item_display ~ ~ ~ {Tags:["M1.First","M1.Bee","Projectile"],teleport_duration:1,item:{id:"stone",Count:1b,tag:{CustomModelData:20054}}}
+# 弾を前方拡散に向ける
+    tp @e[type=item_display,tag=M1.First,distance=..1,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=SpreadMarker,limit=1]
+# ユーザーID適応
+    scoreboard players operation @e[type=item_display,tag=M1.First] M1.UserID = @s UserID
+# タグを消す
+    tag @e[tag=M1.First] remove M1.First
+
+# 前方拡散をキル
+    kill @e[type=marker,tag=SpreadMarker,distance=..10]
