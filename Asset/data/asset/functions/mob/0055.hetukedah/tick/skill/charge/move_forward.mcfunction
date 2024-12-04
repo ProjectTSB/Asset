@@ -6,7 +6,7 @@
 
 #> インターバルのスコアホルダー
 # @private
-# declare score_holder $SoundInterval
+    #declare score_holder $SoundInterval
 
 # 実行時間を移す
     scoreboard players operation $SoundInterval Temporary = @s 1J.Tick
@@ -15,6 +15,7 @@
     scoreboard players operation $SoundInterval Temporary %= $2 Const
     execute if score $SoundInterval Temporary matches 0 run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 2
     execute if score $SoundInterval Temporary matches 0 run playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 1 2
+    scoreboard players reset $SoundInterval Temporary
 
 # 演出
     execute positioned ~ ~1.6 ~ run particle minecraft:dust 1 1 0 1 ^ ^ ^ 0.5 0.5 0.5 0 15 force @a[distance=..30]
