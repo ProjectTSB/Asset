@@ -13,11 +13,11 @@
     execute rotated ~ 0 positioned ^0.3 ^0.8 ^0.3 run function asset:artifact/1141.bell_of_courage/trigger/vfx
     playsound ogg:ambient.nether.crimson_forest.shine1 player @a ~ ~ ~ 1 1.2
 
-# デバフを1つ解除
-    data modify storage api: Argument.ClearLv set value 2
-    data modify storage api: Argument.ClearType set value "bad"
-    data modify storage api: Argument.IsSingle set value true
-    function api:entity/mob/effect/remove/from_level
+# スケジュール用Tagを付与
+    tag @s add VP.Schedule
+
+# スケジュール実行
+    schedule function asset:artifact/1141.bell_of_courage/trigger/schedule 1t replace
 
 # バリア用エフェクトを付与
     data modify storage api: Argument.ID set value 273
