@@ -98,6 +98,7 @@
     #declare function api:entity/mob/effect/give                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/give.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_id                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_id.mcfunction#L1
     #declare function api:entity/mob/effect/remove/from_level                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/remove/from_level.mcfunction#L1
+    #declare function api:entity/mob/effect/reset                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/mob/effect/reset.mcfunction#L1
     #declare function api:entity/player/absorption/add                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/player/absorption/add.mcfunction#L1
     #declare function api:entity/player/absorption/get                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/player/absorption/get.mcfunction#L1
     #declare function api:entity/player/absorption/remove                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/entity/player/absorption/remove.mcfunction#L1
@@ -324,6 +325,7 @@
     #declare loot_table minecraft:empty                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/empty.json#L1
     #declare loot_table player_manager:lost_item/give_all/name_to_textcomponent       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/player_manager/loot_tables/lost_item/give_all/name_to_textcomponent.json#L1
     #declare objective Const                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L137
+    #declare objective ForwardTargetMobUUID                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L245
     #declare objective Global                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L122
     #declare objective Lib                                                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L244
     #declare objective MobHealth                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L179
