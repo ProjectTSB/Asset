@@ -6,6 +6,6 @@
 #   asset:effect/0272.inspiration/end/
 #   asset:effect/0272.inspiration/remove/
 
-# 物理攻撃+10%
+# 物理攻撃+20%
     data modify storage api: Argument.UUID set value [I;1,3,272,0]
     function api:modifier/attack/physical/remove
