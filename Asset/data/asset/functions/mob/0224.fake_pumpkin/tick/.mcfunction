@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/224/tick
 
 # スコア加算
-    scoreboard players add @s 68.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 演出
     particle dust 1 0.6 0 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
