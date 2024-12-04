@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/220/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     playsound minecraft:block.conduit.ambient hostile @a ~ ~ ~ 0.7 0.8 0
     particle dust 0.149 0.682 0.741 1 ~ ~1.2 ~ 0.6 0.3 0.6 0 30 normal @a
