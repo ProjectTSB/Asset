@@ -17,7 +17,7 @@
 # セッション開ける
     function lib:array/session/open
 
-# ベクトルを20倍する
+# ベクトルに倍率をかける
     data modify storage lib: Array set from storage api: Return.Vector
     data modify storage lib: Mul set value 22
     function lib:array/math/scalar_multiply
