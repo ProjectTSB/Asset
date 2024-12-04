@@ -31,7 +31,7 @@
 # 召喚する
     data modify storage api: Argument.ID set value 2031
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Giant
-    execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=husk,tag=this,scores={MobID=59},distance=..30,limit=1] MobUUID
+    execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=husk,tag=this,distance=..30,limit=1] MobUUID
     execute positioned ~ ~1.5 ~ run function api:object/summon
 
 # 消滅
