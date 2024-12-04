@@ -6,6 +6,3 @@
 
 # 何もしない
 # このファイルが存在しないとプレイヤーにヒットしたときに消滅する
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

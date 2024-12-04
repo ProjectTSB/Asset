@@ -9,6 +9,3 @@
 
 # 元となるEntityを召喚する
     function asset:object/2036.pumpkin_rain/summon/.m with storage asset:context this
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

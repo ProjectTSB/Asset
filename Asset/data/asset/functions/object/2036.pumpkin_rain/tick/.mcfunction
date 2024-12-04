@@ -40,6 +40,3 @@
     execute if entity @s[tag=2036.OnGround] at @s run function asset:object/call.m {method:detect_hit_entity}
     execute if entity @s[tag=2036.OnGround] if data storage asset:context {IsHitEntity:true} run function asset:object/call.m {method:hit_entity}
     execute if entity @s[tag=2036.OnGround] run data remove storage asset:context IsHitEntity
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

@@ -6,6 +6,3 @@
 
 # スコア500以上でかつ周囲にプレイヤーがいる時のみ判定
     execute if entity @s[scores={General.Object.Tick=500..}] if entity @p[distance=..4] run function asset:object/2036.pumpkin_rain/detect_hit_entity/check_hit
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
