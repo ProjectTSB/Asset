@@ -9,19 +9,13 @@
 #declare tag aj.tultaria.bone
 
 # AJモデル召喚
-    execute rotated ~ 0 run function animated_java:tultaria/summon
+    execute rotated ~ 0 run function animated_java:tultaria/summon {args:{animation:neutral_air,start_animation:1b}}
 
 # DeathTime設定
     data modify entity @s DeathTime set value 19
 
 # タグ管理
     tag @s add RW.CanElementChange
-
-# 自身のモデルに待機モーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/play
-
-# モデルにTeleport_durationを設定
-    execute as @e[type=#animated_java:root,tag=aj.tultaria.bone] run data modify entity @s teleport_duration set value 1
 
 # 発光パーツを設定
     data modify entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
