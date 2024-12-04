@@ -11,5 +11,4 @@
     #declare tag 1J.Skill.FlameThrower
     #declare tag 1J.Skill.Charge
     #declare tag 1J.Turn.Left
-    #declare tag 1J.Turn.Right
     #declare tag 1J.InAction

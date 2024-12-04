@@ -14,14 +14,7 @@
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # 右か左をランダムで選択
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-        scoreboard players operation $Random Temporary %= $2 Const
-    # 結果によって方向を選ぶ
-        execute if score $Random Temporary matches 0 run tag @s add 1J.Turn.Left
-        execute if score $Random Temporary matches 1 run tag @s add 1J.Turn.Right
-    # リセット
-        scoreboard players reset $Random Temporary
+    execute if predicate lib:random_pass_per/50 run tag @s add 1J.Turn.Left
 
 # NoAIにする
     data merge entity @s {NoAI:1b}

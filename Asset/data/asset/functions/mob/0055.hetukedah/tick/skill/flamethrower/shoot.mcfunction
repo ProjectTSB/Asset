@@ -24,4 +24,4 @@
 
 # 回転方向
     execute if entity @s[tag=1J.Turn.Left] run tp @s ~ ~ ~ ~-2.5 ~
-    execute if entity @s[tag=1J.Turn.Right] run tp @s ~ ~ ~ ~2.5 ~
+    execute if entity @s[tag=!1J.Turn.Left] run tp @s ~ ~ ~ ~2.5 ~
