@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"氷はもうこーりごり！","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"クソみたいなダジャレを言う","color":"dark_aqua"}','{"text":"周囲に水属性の攻撃をし、移動速度低下を与える","color":"dark_aqua"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
