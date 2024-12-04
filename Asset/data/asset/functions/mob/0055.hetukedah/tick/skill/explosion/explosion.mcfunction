@@ -13,7 +13,7 @@
     execute if predicate api:global_vars/difficulty/min/hard run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1.5 2
 
 # ハメ防止
-    function asset:mob/0055.hetukedah/tick/skill/explosion/break_block
+    execute if predicate api:area/is_breakable run function asset:mob/0055.hetukedah/tick/skill/explosion/break_block
 
 # ハードだと追加で爆発を起こす
     execute if predicate api:global_vars/difficulty/min/hard rotated ~0 ~ positioned ^ ^ ^7 run function asset:mob/0055.hetukedah/tick/skill/explosion/explosion_mini
