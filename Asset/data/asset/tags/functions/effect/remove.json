@@ -27,7 +27,6 @@
         "asset:effect/0260.life_steal/_/remove",
         "asset:effect/0604.logging_of_soul/_/remove",
         "asset:effect/0605.aurora_corrosion/_/remove",
-        "asset:effect/0607.sedation/_/remove",
         "asset:effect/0608.sinking/_/remove",
         "asset:effect/0612.infringement/_/remove",
         "asset:effect/0613.white_curse/_/remove",
@@ -39,6 +38,8 @@
         "asset:effect/0211.fading_speed/_/remove",
         "asset:effect/0201.magic_shield/_/remove",
         "asset:effect/0101.attack_base_debuff/_/remove",
-        "asset:effect/0107.defense_base_debuff/_/remove"
+        "asset:effect/0107.defense_base_debuff/_/remove",
+        "asset:effect/0001.attack_base_debuff/_/remove",
+        "asset:effect/0051.attack_base_debuff/_/remove"
     ]
 }
