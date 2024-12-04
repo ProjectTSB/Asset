@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/0371.water_spell/click/
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     particle minecraft:rain ~ ~1 ~ 0.2 0.2 0.2 0 200
     playsound minecraft:entity.squid.death player @a ~ ~ ~ 1 2

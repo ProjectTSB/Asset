@@ -1,8 +1,5 @@
 {
     "values": [
-        "asset:artifact/1110.lantern_of_firefly/enroll_pool",
-        "asset:artifact/1119.call_maid/enroll_pool",
-        "asset:artifact/1145.nurse_call/enroll_pool",
         "asset:artifact/0003.humanity/enroll_pool",
         "asset:artifact/0005.musket_matchlock/enroll_pool",
         "asset:artifact/0007.nitrogen_fixater/enroll_pool",
@@ -134,7 +131,7 @@
         "asset:artifact/0501.infinity/enroll_pool",
         "asset:artifact/0522.humanism/enroll_pool",
         "asset:artifact/0529.safety_helmet/enroll_pool",
-        "asset:artifact/0534.all_night_hellmet/enroll_pool",
+        "asset:artifact/0534.all_night_helmet/enroll_pool",
         "asset:artifact/0554.catastrophe/enroll_pool",
         "asset:artifact/0558.solitariness/enroll_pool",
         "asset:artifact/0562.heartland/enroll_pool",
@@ -252,6 +249,8 @@
         "asset:artifact/1088.purifying_hydrangea/enroll_pool",
         "asset:artifact/1089.antimatter_gatling_rifle/enroll_pool",
         "asset:artifact/1098.mirror_piece_of_bygone_days/enroll_pool",
-        "asset:artifact/1108.white_lily_of_priestess/enroll_pool"
+        "asset:artifact/1108.white_lily_of_priestess/enroll_pool",
+        "asset:artifact/1119.call_maid/enroll_pool",
+        "asset:artifact/1145.nurse_call/enroll_pool"
     ]
 }

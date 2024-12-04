@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/826/click/
 
-
 # 演出
     playsound minecraft:item.armor.equip_leather player @a ~ ~ ~ 1 2.0
     particle minecraft:squid_ink ~ ~1 ~ 0.4 0 0.4 0.01 10 force

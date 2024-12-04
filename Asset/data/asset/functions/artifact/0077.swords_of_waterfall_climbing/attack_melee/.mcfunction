@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/77/attack_melee/
 
-
 # OnGround取得
     function api:data_get/on_ground
 

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1024/click/
 
-
 # スコア持ってないなら0に
     execute unless entity @s[scores={SG.Combo=0..}] run scoreboard players set @s SG.Combo 0
 

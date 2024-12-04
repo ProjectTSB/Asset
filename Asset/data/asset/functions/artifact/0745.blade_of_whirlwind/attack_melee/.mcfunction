@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/745/attack_melee/
 
-
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0745.blade_of_whirlwind/attack_melee/4.vfx
 

@@ -4,6 +4,5 @@
 #
 # @within function asset:artifact/alias/204/tick/
 
-
 # プレイヤーを死亡させる
     kill @s

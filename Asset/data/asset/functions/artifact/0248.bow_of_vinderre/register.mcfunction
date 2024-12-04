@@ -52,4 +52,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:4,Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:6s}]}
-

@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0953.meteor_rain/click/
 #   asset:artifact/0953.meteor_rain/click/4.emitter_tick
-#   asset:artifact/0953.meteor_rain/click/rejoin_process
+#   asset:artifact/0953.meteor_rain/rejoin_process
 
 # プレイヤーに実行させる
     execute as @a[scores={QH.MeteorCastedCount=..19}] at @s run function asset:artifact/0953.meteor_rain/click/5.emitter_main

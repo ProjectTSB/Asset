@@ -48,8 +48,11 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備のID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 241
+# 装備時補正 (Compound[]) (オプション)
+    # data modify storage asset:artifact Modifiers set value []
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,display:{color:1050959},HideFlags:64,Enchantments:[{id:"minecraft:protection",lvl:5s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,535,5],Slot:"chest"}]}
-

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1074/tick/
 
-
 # 効果
     data modify storage api: Argument.ID set value 230
     function api:entity/mob/effect/give

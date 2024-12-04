@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/alias/933/tick/check
 
-    function asset:artifact/common/check_condition/hotbar
-# 他にアイテム等確認する場合はここに書く
 # いろいろチェックする。
     execute if entity @s[tag=CanUsed] run function asset:artifact/0933.auto_torch/tick/can_set_check
 # 前方と足元を見て、どちらかがおけるならチェック入れる
@@ -15,4 +13,4 @@
     execute if entity @s[tag=CanUsed,tag=!CanTorchSet] run tag @s remove CanUsed
     execute if entity @s[tag=CanUsed,tag=ExtraCheckFailed] run tag @s remove CanUsed
     execute if entity @s[tag=ExtraCheckFailed] run tag @s remove ExtraCheckFailed
-    execute if entity @s[tag=CanTorchSet] run tag @s remove CanTorchSet
+    execute if entity @s[tag=CanTorchSet] run tag @s remove CanTorchSet

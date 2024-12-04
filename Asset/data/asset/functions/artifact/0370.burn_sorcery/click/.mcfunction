@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/370/click/
 
-
 # 弾を進めるための再起開始
     execute anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/0370.burn_sorcery/click/3.1.shoot
 

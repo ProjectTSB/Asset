@@ -4,8 +4,8 @@
 #
 # @within function
 #    asset:artifact/0172.icicle/click/
-#    asset:artifact/0172.icicle/click/rejoin_process
 #    asset:artifact/0172.icicle/click/laser/schedule
+#    asset:artifact/0172.icicle/rejoin_process
 
 # 実行する
     execute as @e[type=area_effect_cloud,tag=4S.Laser] at @s run function asset:artifact/0172.icicle/click/laser/1.laser

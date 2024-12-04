@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/610/click/
 
-
 # 演出
     execute positioned ~ ~0.5 ~ rotated ~ 0 run function asset:artifact/0610.call_fish/click/particle.1
     playsound minecraft:entity.puffer_fish.blow_up neutral @a ~ ~ ~ 1 1.3

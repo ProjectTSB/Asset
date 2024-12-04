@@ -6,8 +6,6 @@
 #   asset:artifact/0467.cosmo_blue_flash/click/
 #   asset:artifact/0467.cosmo_blue_flash/click/shot
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     particle minecraft:dolphin ~ ~ ~ 0.1 0.1 0.1 1 30 force
 

@@ -2,8 +2,7 @@
 # @private
 
 #> tag
-# @within function
-#   asset:artifact/0369.fire_magic/**
+# @within function asset:artifact/0369.fire_magic/**
     #declare tag A9.First
     #declare tag A9.This
     #declare tag A9.Fire

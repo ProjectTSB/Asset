@@ -4,20 +4,19 @@
 #
 # @within function asset:artifact/alias/897/attack_melee/
 
+#> health
+# @private
+    #declare score_holder $Health
+    #declare score_holder $Count
     #declare score_holder $CountMul
     #declare score_holder $Base
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/hotbar
-
-# ここから先は神器側の効果の処理を書く
 
 # VFX
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle dust 100000000 100000000 0 1 ~ ~1.5 ~ 0.05 1 0.05 0 150
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound entity.lightning_bolt.impact player @a
 
 # 個数を取得
-    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:897}}}]
+    execute store result score $Count Temporary run data get storage asset:context Count
 
 # ダメージ係数の設定
     scoreboard players set $Base Temporary 60

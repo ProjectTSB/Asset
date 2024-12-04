@@ -2,8 +2,7 @@
 #
 # ショット発射！
 #
-# @within asset:artifact/0295.call_elemental_familiar/click/fairy/
-
+# @within asset:artifact/0295.call_elemental_familiar/click/fairy/3.main
 
 # タグ付与
     tag @s add 87.IDCopyBase

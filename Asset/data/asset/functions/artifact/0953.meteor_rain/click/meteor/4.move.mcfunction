@@ -3,7 +3,7 @@
 # 移動処理
 #
 # @within function
-#   asset:artifact/0953.meteor_rain/click/meteor/
+#   asset:artifact/0953.meteor_rain/click/meteor/3.main
 #   asset:artifact/0953.meteor_rain/click/meteor/4.move
 
 # パーティクル

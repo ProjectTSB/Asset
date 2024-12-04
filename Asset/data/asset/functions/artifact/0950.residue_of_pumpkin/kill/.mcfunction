@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/950/kill/
 
-
 # 演出
     particle dust 1 0.651 0 1 ~ ~1.2 ~ 0.6 0.4 0.6 0 100 normal @a
     particle dust 0.851 0 1 1 ~ ~1.2 ~ 0.6 0.4 0.6 0 100 normal @a

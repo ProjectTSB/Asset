@@ -5,8 +5,6 @@
 # @within function
 #   asset:artifact/0379.miracle_rod/click/3.3.shoot
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     particle end_rod ~ ~ ~ 0 0 0 0.4 200
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10

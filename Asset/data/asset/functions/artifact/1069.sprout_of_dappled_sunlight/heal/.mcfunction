@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1069/heal/
 
-
 # 演出
     particle dust 1 1000000000 1 1 ~ ~1.2 ~ 0.5 0.4 0.5 0 50 normal @a
     particle happy_villager ~ ~1.2 ~ 0.5 0.4 0.5 0 10 normal @a

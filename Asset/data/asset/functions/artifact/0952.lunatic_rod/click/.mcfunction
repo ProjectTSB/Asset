@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/952/click/
 
-
 # 音
     playsound block.portal.travel player @a ~ ~ ~ 0.05 2
     playsound item.trident.return player @a ~ ~ ~ 0.6 0.8

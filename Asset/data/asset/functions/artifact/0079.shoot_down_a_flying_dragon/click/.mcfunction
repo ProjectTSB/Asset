@@ -4,13 +4,12 @@
 #
 # @within function asset:artifact/alias/79/click/
 
+#> private
+# @private
+    #declare tag Hit
+    #declare score_holder $Weather
     #declare score_holder $AroundWater
     #declare score_holder $AttackStrength
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
 
 # 準備
     # 天候を取得
@@ -32,7 +31,6 @@
             execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
         # プレイヤーへの誤Hit処理 HitしたMobの0.05m以内にいると自分にもあたる やっぱPKしたいじゃぁん？
             execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.05] run tag @s add Hit
-
 
 # ダメージを設定
     # 演算

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/33/click/
 
-
 # 演出
     playsound block.anvil.use player @a ~ ~ ~ 0.5 0.5 0
     particle enchanted_hit ~ ~1 ~ 0.2 0.2 0.2 1 30

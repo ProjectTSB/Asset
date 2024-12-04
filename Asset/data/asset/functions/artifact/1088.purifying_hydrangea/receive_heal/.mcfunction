@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1088/receive_heal/
 
-
 #> Private
 # @private
     #declare score_holder $DebuffCount

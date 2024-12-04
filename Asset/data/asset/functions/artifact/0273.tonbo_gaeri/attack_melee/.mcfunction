@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/alias/273/attack_melee/
 
-
-
 # 移動前の地点にパーティクルと音を残す
     function asset:artifact/0273.tonbo_gaeri/attack_melee/3.1.warp_effect
 

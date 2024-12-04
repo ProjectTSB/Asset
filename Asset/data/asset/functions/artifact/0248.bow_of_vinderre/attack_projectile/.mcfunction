@@ -4,8 +4,9 @@
 #
 # @within function asset:artifact/alias/248/attack_projectile/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/mainhand
+#> private
+# @private
+    #declare tag RandomTP
 
 # ここから先は神器側の効果の処理を書く
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..100] run effect give @s poison 20 4

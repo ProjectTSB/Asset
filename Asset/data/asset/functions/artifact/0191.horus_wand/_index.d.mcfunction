@@ -3,4 +3,4 @@
 
 #> Val
 # @within function asset:artifact/0191.horus_wand/**
-#declare tag 5B.VFX
+    #declare tag 5B.VFX

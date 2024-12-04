@@ -21,7 +21,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "click"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -52,4 +52,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora","Wi-ki","Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

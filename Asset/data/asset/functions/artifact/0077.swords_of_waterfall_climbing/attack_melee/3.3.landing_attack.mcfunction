@@ -5,8 +5,6 @@
 # @within function
 #   asset:artifact/0077.swords_of_waterfall_climbing/attack_melee/3.1.effectclear
 
-# ここから先は神器側の効果の処理を書く
-
 # タグを消しちゃう
     tag @s remove 25.Landing
 

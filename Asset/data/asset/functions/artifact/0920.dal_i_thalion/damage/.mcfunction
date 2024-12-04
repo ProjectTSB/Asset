@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/920/damage/
 
-
 # 効果を与えるためにタグをつける
     tag @s add PK.EffectClear
 

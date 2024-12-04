@@ -4,7 +4,7 @@
 #
 # @within function
 #        asset:artifact/0920.dal_i_thalion/damage/
-#        asset:artifact/0920.dal_i_thalion/damage/rejoin_process
+#        asset:artifact/0920.dal_i_thalion/rejoin_process
 
 # 1tick後にうごく
     execute as @a[tag=PK.EffectClear] run function asset:artifact/0920.dal_i_thalion/damage/5.effect_clear

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/953/click/
 
-
 # サウンド
     playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 3 1.2
     playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 3 0.8

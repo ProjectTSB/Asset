@@ -3,6 +3,5 @@
 
 #> tag
 # @within
-#   function asset:artifact/0107.dispenser_canon/3.main
-#   function asset:artifact/0107.dispenser_canon/3.1.sticky
+#   function asset:artifact/0107.dispenser_canon/**
     #declare tag TNTStick

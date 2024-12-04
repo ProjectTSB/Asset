@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/605/attack_melee/
 
-
 # 没収されたアイテムの個数を取得
     execute store result score @s Temporary run function api:lost_items/get_length
 

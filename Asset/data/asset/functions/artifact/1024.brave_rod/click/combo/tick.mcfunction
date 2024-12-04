@@ -5,8 +5,7 @@
 # @within function
 #   asset:artifact/1024.brave_rod/click/
 #   asset:artifact/1024.brave_rod/click/combo/tick
-#   asset:artifact/1024.brave_rod/click/
-#   asset:artifact/1024.brave_rod/click/rejoin_process
+#   asset:artifact/1024.brave_rod/rejoin_process
 
 # エンティティに実行させる
     execute as @a[scores={SG.Wait=0..}] at @s run function asset:artifact/1024.brave_rod/click/combo/main

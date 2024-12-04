@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # IDコピー
     scoreboard players operation @s R9.UserID = @e[type=armor_stand,tag=R9.BigFireball,tag=R9.CopyBase,distance=..2,sort=nearest,limit=1] R9.UserID

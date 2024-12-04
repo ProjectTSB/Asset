@@ -6,8 +6,6 @@
 #       asset:artifact/0379.miracle_rod/click/
 #       asset:artifact/0379.miracle_rod/click/3.2.magic_circle
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     execute as @e[type=area_effect_cloud,tag=AJ.Magic] at @s positioned ~ ~1.5 ~ positioned ^ ^ ^2 rotated ~ ~90 run function asset:artifact/0379.miracle_rod/click/3.1.particle
 

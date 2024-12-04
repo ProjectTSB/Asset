@@ -5,9 +5,7 @@
 # @within function
 #   asset:artifact/0077.swords_of_waterfall_climbing/attack_melee/
 #   asset:artifact/0077.swords_of_waterfall_climbing/attack_melee/3.1.effectclear
-#   asset:artifact/0077.swords_of_waterfall_climbing/attack_melee/rejoin_process
-
-# ここから先は神器側の効果の処理を書く
+#   asset:artifact/0077.swords_of_waterfall_climbing/rejoin_process
 
 # OnGround取得
     execute as @a[tag=25.EffectClear] run function api:data_get/on_ground

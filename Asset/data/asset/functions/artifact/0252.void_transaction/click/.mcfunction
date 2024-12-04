@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/252/click/
 
-
 # エフェクトがあるか見る
     data modify storage api: Argument.ID set value 204
     function api:entity/mob/effect/get/from_id

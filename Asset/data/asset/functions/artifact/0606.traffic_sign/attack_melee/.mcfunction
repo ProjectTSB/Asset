@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/606/attack_melee/
 
-
 # 演出
     execute at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/attack_melee/3.1.vfx
 

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/729/attack_melee/
 
-
 #> Private
 # @private
     #declare score_holder $Count
@@ -21,7 +20,7 @@
 # 回復量は1+最大体力×0.15N (Nはホットバーにある数)
 
 # 個数取得
-    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:729}}}]
+    execute store result score $Count Temporary run data get storage asset:context Count
 
 # 1.5%分を取得(intの都合上100倍している)
     function api:modifier/max_health/get

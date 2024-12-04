@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/771/use_item/
 
-
 # エフェクト消す
     effect clear @s
 # Assetのバフ/デバフを消去する

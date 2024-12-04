@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/277/damage/
 
-
 # 回復処理
     # 全回復
         data modify storage lib: Argument.Heal set value 10000f

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/770/keep_sneak/check
 
-
 #> Private
 # @private
     #declare score_holder $RotationY
@@ -25,4 +24,4 @@
 # リセット等
     scoreboard players operation @s LE.OldRotationY = $RotationY Temporary
     scoreboard players reset $Diff Temporary
-    scoreboard players reset $RotationY Temporary
+    scoreboard players reset $RotationY Temporary

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/365/click/
 
-
 # 神器もらうよ
     data modify storage api: Argument.ID set value 364
     function api:artifact/give/from_id

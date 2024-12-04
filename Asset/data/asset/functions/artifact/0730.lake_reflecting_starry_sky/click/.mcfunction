@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/730/click/
 
-
 # 演出
     playsound minecraft:block.end_portal.spawn neutral @a ~ ~ ~ 0.3 1.4 0
     particle end_rod ~ ~1.2 ~ 0 0 0 0.4 150 normal @a

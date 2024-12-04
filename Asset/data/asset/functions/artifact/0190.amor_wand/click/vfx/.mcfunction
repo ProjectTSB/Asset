@@ -6,7 +6,7 @@
 
 #> Val
 # @private
-#declare tag Init
+    #declare tag Init
 
 # VFX用Entityの初期化
     summon marker ~ ~ ~ {Tags:["5A.VFX","Init","Object","Uninterferable"]}

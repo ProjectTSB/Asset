@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1075/receive_heal/
 
-
 # 回復対象にTagを付与
 # 回復対象：使用者と20m以内の現在体力の低いプレイヤー2名
     tag @s add HealTarget

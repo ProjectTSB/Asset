@@ -4,11 +4,11 @@
 #
 # @within function asset:artifact/alias/607/click/
 
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $UseCount
+    #declare score_holder $Random
+    #declare tag SpreadMarker
 
 # 演出
     playsound minecraft:entity.zombie.attack_wooden_door player @s ~ ~ ~ 1 2
@@ -16,8 +16,8 @@
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.8 2
 
 # 残り回数が1回の時発動した場合
-    execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 608
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem:true} run data modify storage api: Argument.ID set value 608
+    execute if data storage asset:context {BrokeItem:true} run function api:artifact/give/from_id
 
 # 前方拡散設定
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/529/damage/
 
-
 # 演出
     playsound entity.ender_eye.death player @p ~ ~ ~ 1.0 1.0
 

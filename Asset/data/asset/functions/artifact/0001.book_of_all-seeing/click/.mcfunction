@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1/click/
 
-# VFX
     playsound minecraft:item.book.page_turn player @s ~ ~ ~ 2 1
     playsound minecraft:item.book.page_turn player @s ~ ~ ~ 2 0.7
     playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 2 1

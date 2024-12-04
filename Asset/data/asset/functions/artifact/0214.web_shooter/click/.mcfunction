@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/214/click/
 
-
 # 蜘蛛の巣を設置
     execute at @e[tag=Enemy,tag=!Uninterferable,distance=..7] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 cobweb replace air
 

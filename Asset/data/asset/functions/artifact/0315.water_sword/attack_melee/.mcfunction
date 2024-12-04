@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/315/attack_melee/
 
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $RandomDamage
 
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:rain ~ ~1 ~ 0.2 0.2 0.2 0 200
@@ -14,7 +14,7 @@
     playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 1 1
 
 # ダメージ
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~10の追加ダメージ

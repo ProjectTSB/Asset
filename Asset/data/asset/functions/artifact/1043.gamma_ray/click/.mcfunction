@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1043/click/
 
-
 # 発動時のタグとスコア
     tag @s add SZ.Cast
     scoreboard players set @s SZ.CastTick 0

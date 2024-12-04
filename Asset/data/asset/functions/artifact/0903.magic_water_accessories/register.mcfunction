@@ -22,10 +22,12 @@
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "attack_melee"
+# 効果の重複回数 (int) (オプション)
+    data modify storage asset:artifact PartsMax set value 9
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["§bダメージ=(最大MP)"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["§b(最大MP)"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -52,4 +54,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

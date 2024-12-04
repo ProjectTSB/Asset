@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/456/use_item/
 
-
 # 薄れゆく速さデバフ(ID:211)があるかどうかチェックする
     #data modify storage api: Argument.ID set value 211
     #function api:entity/mob/effect/get/from_id

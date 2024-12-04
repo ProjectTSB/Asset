@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/949/sneak_1s/
 
-
 # ここから先は神器側の効果の処理を書く
     playsound block.iron_trapdoor.close player @a ~ ~ ~ 1 0.5
     playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.6

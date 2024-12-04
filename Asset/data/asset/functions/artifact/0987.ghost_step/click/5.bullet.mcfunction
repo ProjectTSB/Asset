@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:artifact/0987.ghost_step/click/4.schedule
+
 #> Private
 # @private
     #declare score_holder $isBanTPArea

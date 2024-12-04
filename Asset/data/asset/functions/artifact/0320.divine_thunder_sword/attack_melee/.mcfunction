@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/320/attack_melee/
 
-
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] rotated ~ 0 run function asset:artifact/0320.divine_thunder_sword/attack_melee/3.1.particle
     playsound item.trident.throw player @a ~ ~ ~ 1 1

@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/467/click/
 
-
 # 演出
     playsound entity.squid.death player @a ~ ~ ~ 1.0 2.0
 

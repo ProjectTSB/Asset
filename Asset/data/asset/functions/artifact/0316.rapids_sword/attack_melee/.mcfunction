@@ -4,9 +4,9 @@
 #
 # @within function asset:artifact/alias/316/attack_melee/
 
-    function asset:artifact/common/use/mainhand
-
-# ここから先は神器側の効果の処理を書く
+#> Private
+# @private
+    #declare score_holder $RandomDamage
 
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:block blue_ice ~ ~1 ~ 0.5 0.5 0.5 2 50
@@ -15,14 +15,14 @@
     playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 1 1
 
 # ダメージ
-    #ダメージブレのための処理
+    # ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~30の追加ダメージ
             scoreboard players operation $RandomDamage Temporary %= $31 Const
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 90
-    #ダメージセット
+    # ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"

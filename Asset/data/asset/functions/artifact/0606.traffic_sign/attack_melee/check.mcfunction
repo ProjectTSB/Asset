@@ -4,9 +4,8 @@
 #
 # @within function asset:artifact/alias/606/attack_melee/check
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/mainhand
-# 他にアイテム等確認する場合はここに書く
-    
-# CanUsedタグをチェックして.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0606.traffic_sign/attack_melee/
+# 先にLatestUseTickを取っておく
+    execute store result score $GU.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
+
+# リセット
+    scoreboard players reset $GU.LatestUseTick Temporary

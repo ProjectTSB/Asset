@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/1048.thunder_storm/click/
 #   asset:artifact/1048.thunder_storm/click/4.schedule
-#   asset:artifact/1048.thunder_storm/click/rejoin_process
+#   asset:artifact/1048.thunder_storm/rejoin_process
 
 # Markerを実行者にして起動
     execute as @e[tag=T4.Marker] at @s run function asset:artifact/1048.thunder_storm/click/5.tick

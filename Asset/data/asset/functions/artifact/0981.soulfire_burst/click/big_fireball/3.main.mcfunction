@@ -1,4 +1,4 @@
-#> asset:artifact/0981.soulfire_burst/click/big_fireball/
+#> asset:artifact/0981.soulfire_burst/click/big_fireball/3.main
 #
 # Tick実行部分。多く出したくないパーティクルとかが放り込まれる
 #

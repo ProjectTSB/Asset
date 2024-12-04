@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1142/click/
 
-
 # 召喚
     data modify storage api: Argument.ID set value 1059
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

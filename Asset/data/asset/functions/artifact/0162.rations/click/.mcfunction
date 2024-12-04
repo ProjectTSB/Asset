@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/162/click/
 
-
 # 満腹度回復の効果
     effect give @s minecraft:saturation 10 0 true
 

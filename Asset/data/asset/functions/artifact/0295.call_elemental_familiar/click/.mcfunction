@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/295/click/
 
-
 # 精霊召喚
     execute rotated ~ 0 run summon armor_stand ^2 ^ ^ {Pose:{Head:[0.1f,0.1f,0.1f]},DisabledSlots:4144959,Invisible:1b,NoGravity:1b,Small:1b,Tags:["87.FamiliarInit","Friend"]}
     execute rotated ~ 0 run summon armor_stand ^ ^ ^-2 {Pose:{Head:[0.1f,0.1f,0.1f]},DisabledSlots:4144959,Invisible:1b,NoGravity:1b,Small:1b,Tags:["87.FamiliarInit","Friend"]}

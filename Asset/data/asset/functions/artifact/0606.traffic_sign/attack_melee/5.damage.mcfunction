@@ -24,4 +24,3 @@
 
 # リセット
     function lib:damage/reset
-

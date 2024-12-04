@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/92/click/
 
-
 # 装備変更成功の時
     execute unless data storage asset:context {Inventory:[{Slot:100b},{Slot:101b},{Slot:102b},{Slot:103b}]} run particle minecraft:happy_villager ~ ~1 ~ 0.4 0.4 0.4 0.1 50
     execute unless data storage asset:context {Inventory:[{Slot:100b},{Slot:101b},{Slot:102b},{Slot:103b}]} run playsound minecraft:block.anvil.land player @a ~ ~ ~ 1 2

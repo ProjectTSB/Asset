@@ -4,4 +4,5 @@
 #
 # @within function asset:artifact/alias/555/damage_entity/check
 
-    # 頭(554),脚(556),足(557)がカタストロフィか確認
+# 効果を発動させない
+    tag @s remove CanUsed

@@ -4,7 +4,5 @@
 #
 # @within function asset:artifact/alias/1047/click/check
 
-
 # CanUsedなら体力割合をチェックする
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1047.life_steal_emblem/click/check/check_health_per
-
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1047.life_steal_emblem/click/check_health_per

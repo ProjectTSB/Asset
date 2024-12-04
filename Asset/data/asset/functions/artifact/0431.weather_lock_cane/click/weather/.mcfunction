@@ -5,7 +5,7 @@
 # @within function
 #   asset:artifact/0431.weather_lock_cane/click/
 #   asset:artifact/0431.weather_lock_cane/click/weather/lock
-#   asset:artifact/0431.weather_lock_cane/click/rejoin_process
+#   asset:artifact/0431.weather_lock_cane/rejoin_process
 
 # ディメンションチェック
     execute if predicate lib:dimension/is_overworld unless score @s BZ.Dimension matches 0 run function asset:artifact/0431.weather_lock_cane/click/weather/overworld

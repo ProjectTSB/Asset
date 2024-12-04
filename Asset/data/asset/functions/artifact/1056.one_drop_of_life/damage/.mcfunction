@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/1056/damage/
 
-
 # 演出
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1056.one_drop_of_life/damage/vfx/circle1
     execute positioned ~ ~0.4 ~ rotated ~ 0 run function asset:artifact/1056.one_drop_of_life/damage/vfx/circle2

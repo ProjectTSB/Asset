@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/756/attack_melee/
 
-
 # 確率で攻撃演出を分岐
     execute store result score $Random Temporary run function lib:random/
     scoreboard players operation $Random Temporary %= $7 Const

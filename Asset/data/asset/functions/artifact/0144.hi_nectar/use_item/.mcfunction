@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/144/use_item/
 
-
 # 演出
     particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @s
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1

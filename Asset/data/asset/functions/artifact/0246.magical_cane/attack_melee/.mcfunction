@@ -4,6 +4,8 @@
 #
 # @within function asset:artifact/alias/246/attack_melee/
 
+# 使用時のMPの数値によって演出がかわるよ
+    execute store result score $MagicalCane Temporary run function lib:mp/get
     execute if score $MagicalCane Temporary matches 0..49 run function asset:artifact/0246.magical_cane/attack_melee/3.1.weak_hit
     execute if score $MagicalCane Temporary matches 50..249 run function asset:artifact/0246.magical_cane/attack_melee/3.2.strong_hit
     execute if score $MagicalCane Temporary matches 250.. run function asset:artifact/0246.magical_cane/attack_melee/3.3.hyper_hit
@@ -21,9 +23,6 @@
 
 # ダメージを受けろ！
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/mainhand
 
 # リセット
     function lib:damage/reset

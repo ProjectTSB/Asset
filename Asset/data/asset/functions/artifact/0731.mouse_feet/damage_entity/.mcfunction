@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/731/damage_entity/
 
-
 # スピードバフ
     effect give @s speed 3 1 true
 

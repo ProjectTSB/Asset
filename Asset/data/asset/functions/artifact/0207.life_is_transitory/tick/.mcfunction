@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/207/tick/
 
-
 # プレイヤーのHPを1に
     scoreboard players set $Set Lib 1
     function lib:score_to_health_wrapper/set

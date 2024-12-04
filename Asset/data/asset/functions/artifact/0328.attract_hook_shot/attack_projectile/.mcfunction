@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/328/attack_projectile/
 
-
 # ヒットした敵をプレイヤーの手前にテレポート
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,distance=..150] rotated ~ 0 run tp @s ^ ^ ^1
 

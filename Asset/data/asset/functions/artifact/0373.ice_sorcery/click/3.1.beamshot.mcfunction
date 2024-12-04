@@ -5,7 +5,7 @@
 # @within function
 #    asset:artifact/0373.ice_sorcery/click/
 #    asset:artifact/0373.ice_sorcery/click/3.1.beamshot
-#    asset:artifact/0373.ice_sorcery/click/rejoin_process
+#    asset:artifact/0373.ice_sorcery/rejoin_process
 
 # またファンクション分岐
     execute as @a[scores={AD.BeamTime=1..}] at @s run function asset:artifact/0373.ice_sorcery/click/3.2.beamshot2

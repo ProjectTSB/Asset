@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/250/attack_projectile/
 
-
 # ここから@sのTemporaryは強さ指数に変化(0..2)
 # 昼だったらTemporaryが強さ指数が1になる
     execute if predicate lib:is_night run scoreboard players set @s Temporary 0

@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/alias/218/click/
 
+#> private
+# @private
+    #declare tag DA.Number1
     #declare tag DA.Number2
     #declare tag DA.Number3
     #declare tag DA.Number4
@@ -13,12 +16,6 @@
     #declare tag DA.Number8
     #declare tag DA.Number9
     #declare tag IronStormInit
-
-
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
 
 # アイアンゴーレム召喚
     summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number1","DA.InAir","Friend"],OnGround:0b}

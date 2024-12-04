@@ -5,7 +5,6 @@
 # @within function
 #   asset:artifact/0375.thunder_magic/click/
 #   asset:artifact/0375.thunder_magic/click/3.1.circle_particle
-# ここから先は神器側の効果の処理を書く
 
 # 演出
     execute positioned ^ ^ ^1 run particle dust 1 1 0 1 ~ ~ ~ 0.1 0 0.1 0 5

@@ -4,16 +4,15 @@
 #
 # @within function asset:artifact/alias/1045/click/
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
-
-# ここから先は神器側の効果の処理を書く
+#> Val
+# @private
+    #declare score_holder $T1.OwnerId
 
 # 雪玉を召喚する
     execute anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["T1.SnowBall","T1.SnowBallInit"],NoGravity:1b,Item:{Count:1b,id:"minecraft:stick",tag:{CustomModelData:1037}},Passengers:[{id:"minecraft:marker",Tags:["T1.Marker"]}]}
 
 # スコアセット
-    scoreboard players operation $T1.OwnerId Temporary = @s UserID 
+    scoreboard players operation $T1.OwnerId Temporary = @s UserID
     execute as @e[type=snowball,tag=T1.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s T1.OwnerID = $T1.OwnerId Temporary
     execute as @e[type=snowball,tag=T1.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s T1.FlyingTick 100
     execute as @e[type=snowball,tag=T1.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s T1.LandingTick 0
