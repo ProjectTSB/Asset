@@ -70,6 +70,6 @@
 # フィールド
 # 各スキルのダメージ設定
     data modify storage asset:mob Field.Damage.Vanilla set value 14.0f
-    data modify storage asset:mob Field.Damage.Giant set value 15.0f
+    data modify storage asset:mob Field.Damage.Giant set value {Beginning:8f,Clash:15f}
     data modify storage asset:mob Field.Damage.Missile set value 8.0f
     data modify storage asset:mob Field.Damage.Rain set value 14.0f
