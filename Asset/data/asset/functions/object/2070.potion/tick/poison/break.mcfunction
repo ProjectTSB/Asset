@@ -10,7 +10,7 @@
     playsound block.glass.break hostile @a ~ ~ ~ 1 1 0
 
 # Tagを付与
-    tag @s add 2070.PoisonPotionBreak
+    tag @s add 2070.PoisonPotionBroken
 
 # displayの見た目を無くす
     data modify entity @s transformation.scale set value [0.0f,0.0f,0.0f]
