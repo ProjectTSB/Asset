@@ -16,14 +16,16 @@
     data modify storage asset:artifact Name set value '{"text":"彷徨う夢の欠片","color":"#FA63FF"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲の3名に","color":"white"}','{"text":"魔法耐性+12%と被回復量+12%を8秒間付与する。","color":"white"}','{"text":"(現在体力の最も低いプレイヤーを優先)","color":"white"}','{"text":"誰かの見ていた、不思議な夢の一部。","color":"gray"}','{"text":"触れるとその夢が脳裏に見えてくる。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onHeal"
+    data modify storage asset:artifact Trigger set value "onReceiveHeal"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

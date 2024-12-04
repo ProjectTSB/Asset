@@ -13,11 +13,13 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"X","color":"red","bold":true,"obfuscated":true},{"text":"x","color":"blue","obfuscated":true},{"text":"_","color":"gold","obfuscated":true},{"text":"エレメンタルソード","color":"yellow","obfuscated":false},{"text":"_","color":"gold","obfuscated":true},{"text":"x","color":"blue","obfuscated":true},{"text":"X","color":"red","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"エレメンタルソード","color":"yellow","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"攻撃の度に属性の変わる剣"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 250
 # 神器を発動できるスロット (string) Wikiを参照

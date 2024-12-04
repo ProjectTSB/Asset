@@ -60,4 +60,4 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.Damage set value 32f

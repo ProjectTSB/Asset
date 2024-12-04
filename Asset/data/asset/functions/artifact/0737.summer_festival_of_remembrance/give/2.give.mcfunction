@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"追憶の夏祭り","color":"red"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"あの日の夏祭りの思い出の詰まったお守り。","color":"#FF962E"}]','[{"text":"手に握れば、かつての情景を再現できる。","color":"#FF962E"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
