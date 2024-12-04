@@ -23,6 +23,9 @@
     execute if data storage asset:context this{Element:Thunder} store result score $MPReduceVal Temporary run data get storage asset:context this.MPReduceVal
     execute if data storage asset:context this{Element:Thunder} store result storage api: Argument.FieldOverride.MPReduceVal int 1 run scoreboard players operation $MPReduceVal Temporary *= $Difficulty Temporary
 
+# 毒ポーションならデータを引き継がせる
+    execute if data storage asset:context this{Element:Poison} run data modify storage api: Argument.FieldOverride.Poison set from storage asset:context this.Poison
+
 # 召喚する
     data modify storage api: Argument.ID set value 2070
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

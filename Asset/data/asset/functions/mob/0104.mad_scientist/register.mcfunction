@@ -56,5 +56,9 @@
 # フィールド
 # ダメージの属性別設定
     data modify storage asset:mob Field.Damage set value {Fire:24.0f,Water:16.0f,Thunder:16.0f}
+
+# 毒ポーションの設定
+    data modify storage asset:mob Field.Poison set value {Duration:5,Amplifier:6}
+
 # 基礎MP減少量設定
     data modify storage asset:mob Field.MPReduceVal set value -8

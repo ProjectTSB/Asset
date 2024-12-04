@@ -4,7 +4,6 @@
 #
 # @within function asset:object/2070.potion/tick/
 
-# これ固有スコア作るべき? General.Object.Tickじゃない気がしている
 # スコア加算
     scoreboard players add @s General.Object.Tick 1
 
