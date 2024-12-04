@@ -5,7 +5,7 @@
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/
 
 # ターゲットにするプレイヤーにTagを付与
-    tag @p add 26.TargetPlayer
+    tag @p[gamemode=!spectator,distance=..50] add 26.TargetPlayer
 
 # @pのベクトルを取得
     execute as @p[tag=26.TargetPlayer] run function api:player_vector/get
