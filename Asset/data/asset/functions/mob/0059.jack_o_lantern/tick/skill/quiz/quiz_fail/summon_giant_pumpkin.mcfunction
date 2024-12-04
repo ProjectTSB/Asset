@@ -35,5 +35,4 @@
     execute positioned ~ ~1.5 ~ run function api:object/summon
 
 # 消滅
-    tp @s ~ -100 ~
-    kill @s
+    function api:mob/remove
