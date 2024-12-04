@@ -47,7 +47,7 @@
     execute if entity @s[scores={General.Mob.Tick=170}] at @a[distance=..30] run playsound minecraft:item.goat_horn.sound.1 hostile @p ~ ~ ~ 1 1.5 0
 
 # ハード以上の場合、クイズの時間を2秒飛ばす
-    execute if entity @s[scores={General.Mob.Tick=170}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick 200
+    execute if entity @s[scores={General.Mob.Tick=170}] if predicate api:global_vars/difficulty/min/hard run scoreboard players add @s General.Mob.Tick 40
 
 # 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=170..310}] run tp @s ~ ~ ~ facing entity @p feet
