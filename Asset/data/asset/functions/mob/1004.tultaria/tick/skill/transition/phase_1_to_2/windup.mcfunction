@@ -28,5 +28,8 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.7
     playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.5
 
+# オブジェクト削除
+    function asset:mob/1004.tultaria/tick/reset/remove_objects
+
 # テスト用メッセージ
     tellraw @a[distance=..50] [{"text":"<","color":"white"},{"text":"Tultaria","color":"#a33033"},{"text":"> ふぅん…。","color":"white"}]

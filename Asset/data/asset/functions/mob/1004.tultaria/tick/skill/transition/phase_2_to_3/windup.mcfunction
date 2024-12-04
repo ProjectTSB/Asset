@@ -24,6 +24,9 @@
     data modify entity @s Invulnerable set value 1b
     tag @s add Uninterferable
 
+# オブジェクト削除
+    function asset:mob/1004.tultaria/tick/reset/remove_objects
+    
 # 演出
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.7
     playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.5
