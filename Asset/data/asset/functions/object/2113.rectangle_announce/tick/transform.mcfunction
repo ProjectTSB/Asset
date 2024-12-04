@@ -1,4 +1,4 @@
-#> asset:object/2113.rectangle_announce/tick/tranform
+#> asset:object/2113.rectangle_announce/tick/transform
 #
 #
 #
@@ -14,4 +14,5 @@
     data modify entity @s transformation.translation[2] set from storage asset:context this.TranslationZ
 
 # 指定されたScaleZに変化
-    data modify entity @s transformation.scale[2] set from storage asset:context this.ScaleZ
+# 確かに奥行きではあるのだが、内部的にはyなのである、どうしようね
+    data modify entity @s transformation.scale[1] set from storage asset:context this.ScaleZ
