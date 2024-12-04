@@ -33,5 +33,4 @@
     execute at @p[tag=26.TargetPlayer] run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point1.m with storage asset:temp Predict
 
 # リセット
-    data remove storage asset:temp Predict
     tag @p[tag=26.TargetPlayer] remove 26.TargetPlayer

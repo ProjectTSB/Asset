@@ -25,5 +25,4 @@
     tag @s add 26.NotFirst
 
 # リセット
-    data remove storage lib: Argument
     kill @e[type=marker,tag=26.SpreadMarker,distance=..50]

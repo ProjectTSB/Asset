@@ -16,5 +16,4 @@
     execute at @e[type=marker,tag=26.SpreadMarker,distance=..16,limit=1] run function api:object/summon
 
 # リセット
-    data remove storage lib: Argument
     kill @e[type=marker,tag=26.SpreadMarker,distance=..16]

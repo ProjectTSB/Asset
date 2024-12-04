@@ -14,9 +14,6 @@
 # Tickを少し戻す
     scoreboard players remove @s General.Mob.Tick 10
 
-# リセット
-    data remove storage lib: Argument
-
 # ワープのクールダウンを設定
     scoreboard players set @s 26.TPCool 30
 
