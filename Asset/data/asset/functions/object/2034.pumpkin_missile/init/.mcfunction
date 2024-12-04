@@ -4,6 +4,9 @@
 #
 # @within asset:object/alias/2034/init
 
+# TargetIDをスコアへ
+    execute store result score @s 2034.TargetID run data get storage asset:context this.TargetID
+
 # スピード関連の設定
     data modify storage asset:context this.Speed set value 2
     data modify storage asset:context this.Range set value 160

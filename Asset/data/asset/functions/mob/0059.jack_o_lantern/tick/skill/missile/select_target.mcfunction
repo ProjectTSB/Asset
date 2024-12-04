@@ -14,9 +14,8 @@
 # 前方にいなければ近くのプレイヤーを対象とする
     execute unless entity @p[tag=Target] run tag @p[distance=..50] add Target
 
-# ターゲットの名前をフィールドに突っ込む
-    execute as @p[tag=Target] run function lib:get_name/
-    data modify storage asset:context this.TargetName set from storage lib: Return.Name
+# ターゲットのUserIDをフィールドに突っ込む
+    execute store result storage asset:context this.TargetID int 1 run scoreboard players get @p[tag=Target] UserID
 
 # リセット
     tag @p[tag=Target,distance=..50] remove Target
