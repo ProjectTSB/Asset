@@ -1,0 +1,20 @@
+#> asset:artifact/0192.falcios_wand/click/
+#
+# 神器のトリガー処理
+#
+# @within function asset:artifact/alias/192/click/
+
+
+# 演出
+    execute at @a[distance=..15] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..30]
+    playsound minecraft:entity.arrow.hit_player player @a[distance=..15] ~ ~ ~ 20 1
+    execute positioned ~ ~4 ~ run function asset:artifact/0192.falcios_wand/click/vfx/
+
+# 回復
+    data modify storage lib: Argument.Heal set value 16
+    function lib:heal/modifier
+    execute as @a[distance=..15] run function lib:heal/
+    effect give @a[distance=..15] regeneration 8 2 true
+
+# リセット
+    function lib:heal/reset
