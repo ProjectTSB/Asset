@@ -301,10 +301,6 @@
     #declare loot_table asset_manager:artifact/get_lore                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/get_lore.json#L1
     #declare loot_table asset_manager:artifact/get_name/                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/get_name/.json#L1
     #declare loot_table asset_manager:artifact/get_name/has_remain                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/get_name/has_remain.json#L1
-    #declare loot_table asset:mob/death/abstract_detect_item                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/loot_tables/mob/death/abstract_detect_item.json#L1
-    #declare loot_table asset:mob/death/example.1                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/loot_tables/mob/death/example.1.json#L1
-    #declare loot_table asset:mob/death/example.2                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/loot_tables/mob/death/example.2.json#L1
-    #declare loot_table asset:mob/death/example.3                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/loot_tables/mob/death/example.3.json#L1
     #declare loot_table common:currency/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/currency/.json#L1
     #declare loot_table common:currency/high                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/currency/high.json#L1
     #declare loot_table common:island_rewards/lv-1                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/lv-1.json#L1
