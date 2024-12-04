@@ -4,16 +4,12 @@
 #
 # @within function asset:mob/0055.hetukedah/tick/skill/charge/move_forward
 
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 8.0f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
-    # ダメージ
-        function api:data_get/hurt_time
-        function lib:damage/modifier
-        execute if data storage api: {HurtTime:0s} run function lib:damage/
-# リセット
-    function lib:damage/reset
+# ダメージ
+# HurtTime:0sならダメージを与える
+    data modify storage api: Argument.Damage set value 8.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:data_get/hurt_time
+    execute as @e[type=zombie,tag=this,distance=..3,sort=nearest,limit=1] run function api:damage/modifier
+    execute if data storage api: {HurtTime:0s} run function api:damage/
+    function api:damage/reset
