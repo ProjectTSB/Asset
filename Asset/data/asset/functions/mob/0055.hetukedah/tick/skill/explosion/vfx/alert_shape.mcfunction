@@ -1,4 +1,4 @@
-#> asset:mob/0055.hetukedah/tick/skill/explosion/alert_shape
+#> asset:mob/0055.hetukedah/tick/skill/explosion/vfx/alert_shape
 #
 #
 #

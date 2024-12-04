@@ -5,7 +5,7 @@
 # @within function asset:mob/0055.hetukedah/tick/skill/explosion/tick
 
 # 演出
-    function asset:mob/0055.hetukedah/tick/skill/explosion/shape
+    function asset:mob/0055.hetukedah/tick/skill/explosion/vfx/shape
     particle minecraft:lava ~ ~ ~ 2 0.1 2 0 30
     particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1
     playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 0.5 2

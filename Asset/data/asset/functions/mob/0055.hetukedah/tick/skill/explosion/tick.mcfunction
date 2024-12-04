@@ -8,7 +8,7 @@
     execute if score @s 1J.Tick matches 0 run function asset:mob/0055.hetukedah/tick/skill/explosion/windup
 
 # スタート
-    execute if score @s 1J.Tick matches 30 run function asset:mob/0055.hetukedah/tick/skill/explosion/start
+    execute if score @s 1J.Tick matches 30 run function asset:mob/0055.hetukedah/tick/skill/explosion/vfx/start
 
 # 加速
     execute if score @s 1J.Tick matches 30..60 run function asset:mob/0055.hetukedah/tick/skill/explosion/dash

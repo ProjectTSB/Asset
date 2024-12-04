@@ -1,9 +1,8 @@
-#> asset:mob/0055.hetukedah/tick/skill/explosion/shape
+#> asset:mob/0055.hetukedah/tick/skill/explosion/vfx/shape
 #
 #
 #
 # @within function asset:mob/0055.hetukedah/tick/skill/explosion/explosion
-
 
 # パーティクル
     particle flame ^0 ^ ^-3 0 0 0 0 1

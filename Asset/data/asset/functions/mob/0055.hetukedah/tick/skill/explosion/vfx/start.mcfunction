@@ -1,4 +1,4 @@
-#> asset:mob/0055.hetukedah/tick/skill/explosion/start
+#> asset:mob/0055.hetukedah/tick/skill/explosion/vfx/start
 #
 # ダッシュスタート
 #
