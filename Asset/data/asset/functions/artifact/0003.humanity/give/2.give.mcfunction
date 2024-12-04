@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"人間性","color":"white"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"－人間性を捧げよ－", "bold":true, "color":"white"}', '{"text":"使用すると体力をすべて回復するが"}', '{"text":"まれに人間性の過剰摂取により暴走し、亡者となる"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
