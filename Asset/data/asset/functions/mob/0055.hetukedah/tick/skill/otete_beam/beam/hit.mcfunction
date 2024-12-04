@@ -10,14 +10,9 @@
     playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1 1.5
 
 # ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 7.0f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
-    # ダメージ
-        function lib:damage/modifier
-        execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 7.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    function api:damage/reset
