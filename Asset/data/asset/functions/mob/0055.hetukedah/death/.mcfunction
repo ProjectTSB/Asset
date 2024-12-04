@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/55/death
 
+# super.death
+    function asset:mob/super.death
+
 # 演出
     particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1

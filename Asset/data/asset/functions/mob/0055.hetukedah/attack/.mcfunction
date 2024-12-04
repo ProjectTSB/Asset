@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/55/attack
 
+# super.attack
+    function asset:mob/super.attack
+
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
