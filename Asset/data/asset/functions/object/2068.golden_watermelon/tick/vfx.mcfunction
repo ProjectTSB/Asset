@@ -1,8 +1,8 @@
-#> asset:mob/0077.golden_watermelon/tick/vfx
+#> asset:object/2068.golden_watermelon/tick/vfx
 #
+# vfx
 #
-#
-# @within function asset:mob/0077.golden_watermelon/tick/2nd_explosion
+# @within function asset:object/2068.golden_watermelon/tick/2nd_explode
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmACwBGAjKdQAxyMC0lKKAzOwIbWVWvAKwperOACZeAdhZiUjLozAEAdrwC2CZIDDFAAS1VYGLwxaAzknAoA9oTUQkkgBwEUcR3AzWwAN15sQh1wAA8kRgIoCIBfGIJzUjRCK0QuADphAgsIMydESLA4bGw0GAsdWkZCjFtciB1CtAsAURKyipaAR0JA7CgAZVMPckQAM0CKuIBdIA_3
 # 円 1
