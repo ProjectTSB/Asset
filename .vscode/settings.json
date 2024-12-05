@@ -55,7 +55,7 @@
         ]
     ],
     "datapack.lint.nameOfObjectives": [
-        "error",
+        "information",
         {
             "label": "ChainedPascalCase",
             "allowLessParts": true,
@@ -65,7 +65,7 @@
         }
     ],
     "datapack.lint.nameOfTags": [
-        "error",
+        "information",
         [
             {
                 "label": "ChainedPascalCase",
@@ -624,8 +624,10 @@
                         "    data modify storage asset:artifact Name set value ",
                         "# 神器の説明文 (TextComponentString[])",
                         "    data modify storage asset:artifact Lore set value []",
-                        "# MP以外の消費物 (TextComponentString) (オプション)",
-                        "    # data modify storage asset:artifact CostText set value ",
+                        "# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)",
+                        "    # data modify storage asset:artifact ConsumeItem.Item set value '{\"translate\":\"item.minecraft.stick\"}'",
+                        "    # data modify storage asset:artifact ConsumeItem.Count set value 1",
+                        "    # data modify storage asset:artifact ConsumeItem.Extra set value ",
                         "# 使用回数 (int) (オプション)",
                         "    # data modify storage asset:artifact RemainingCount set value ",
                         "# 神器を発動できるスロット (string) Wikiを参照",
@@ -1774,7 +1776,7 @@
             ]
         },
         {
-            "label": "MOB/テンプレート: _index.d ",
+            "label": "Mob/テンプレート: _index.d ",
             "generates": [
                 {
                     "type": "file",
@@ -1791,7 +1793,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 攻撃",
+            "label": "Mob/トリガー: 攻撃",
             "generates": [
                 {
                     "type": "file",
@@ -1830,7 +1832,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 被ダメージ",
+            "label": "Mob/トリガー: 被ダメージ",
             "generates": [
                 {
                     "type": "file",
@@ -1869,7 +1871,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 死亡",
+            "label": "Mob/トリガー: 死亡",
             "generates": [
                 {
                     "type": "file",
@@ -1986,7 +1988,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: 再Join",
+            "label": "Mob/特殊トリガー: 再Join",
             "generates": [
                 {
                     "type": "file",
@@ -2016,7 +2018,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: remove",
+            "label": "Mob/特殊トリガー: remove",
             "generates": [
                 {
                     "type": "file",
@@ -2507,9 +2509,9 @@
                         "# 継承(オプション)",
                         "    # data modify storage asset:object Extends append value ",
                         "    # function asset:object/extends",
-                        "# 他のモブに継承されることを許可するか (boolean) (オプション)",
+                        "# 他のObjectに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:object ExtendsSafe set value ",
-                        "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
+                        "# 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)",
                         "    data modify storage asset:object IsAbstract set value false",
                         "# Tickするかどうか(boolean) (オプション)",
                         "    # data modify storage asset:object IsTicking set value ",
@@ -2561,7 +2563,7 @@
             ]
         },
         {
-            "label": "Object/ 召喚処理",
+            "label": "Object/召喚処理",
             "generates": [
                 {
                     "type": "file",
