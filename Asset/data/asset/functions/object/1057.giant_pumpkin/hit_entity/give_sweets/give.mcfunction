@@ -14,7 +14,7 @@
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set value 1106
     execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set value 1114
     execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set value 1115
-    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set value 1115
+    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set value 1116
     execute if score $Random Temporary matches 4 run data modify storage api: Argument.ID set value 1117
 
 # give
