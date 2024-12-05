@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/2068/hit_entity
 
-# 1st_explodeメソッドを実行
+# 1段目の爆発
     function asset:object/2068.golden_watermelon/tick/1st_explode
