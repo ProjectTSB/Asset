@@ -11,7 +11,7 @@
     scoreboard players add @s 8X.Tick 1
 
 # こっちを狙う
-    execute at @s if score @s 8X.Tick matches 0..40 facing entity @p feet positioned ^ ^ ^-200 rotated as @s positioned ^ ^ ^-1000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
+    execute at @s if score @s 8X.Tick matches 0..40 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-200 rotated as @s positioned ^ ^ ^-1000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
 
 # 照射開始動作
     execute if score @s 8X.Tick matches 40 run function asset:mob/0321.mini_guardian/tick/event/start_attack
