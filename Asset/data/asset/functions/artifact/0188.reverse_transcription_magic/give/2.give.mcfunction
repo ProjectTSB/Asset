@@ -13,11 +13,13 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"esrever ","color":"blue","obfuscated":true},{"text":"逆","color":"dark_aqua","obfuscated":false},{"text":"転","color":"aqua","obfuscated":false},{"text":"写","color":"dark_aqua","obfuscated":false},{"text":"魔","color":"aqua","obfuscated":false},{"text":"素","color":"dark_aqua","obfuscated":false},{"text":" reverse","color":"blue","obfuscated":true}]'
+    data modify storage asset:artifact Name set value '[{"text":"逆","color":"dark_aqua"},{"text":"転","color":"aqua"},{"text":"写","color":"dark_aqua"},{"text":"魔","color":"aqua"},{"text":"素","color":"dark_aqua"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"オフハンドの神器の対価を自らの魔力にする"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
