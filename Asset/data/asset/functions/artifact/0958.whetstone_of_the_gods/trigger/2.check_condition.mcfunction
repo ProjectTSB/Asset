@@ -11,7 +11,7 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/offhand
 # 他にアイテム等確認する場合はここに書く
-# 剣を持っていることを判定する
+# 剣/斧を持っていることを判定する
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tellraw @s [{"text":"剣と斧以外を砥ぐことは出来ないようだ..."}]
     execute unless predicate asset:artifact/0958.whetstone_of_the_gods/has_weapon run tag @s remove CanUsed
 # 神器ではないことを判定する
