@@ -30,7 +30,7 @@
     execute if predicate api:global_vars/difficulty/min/normal run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
 
 # 水属性ダメージ
-    data modify storage api: Argument.Damage set value 20
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.1st
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの金色の爆発により消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'

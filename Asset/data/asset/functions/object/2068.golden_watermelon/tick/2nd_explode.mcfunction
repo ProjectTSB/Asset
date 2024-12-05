@@ -15,7 +15,7 @@
     summon item ~ ~ ~ {Age:5940s,PickupDelay:5s,Item:{id:"minecraft:glistering_melon_slice",Count:4b}}
 
 # 雷属性ダメージ
-    data modify storage api: Argument.Damage set value 20
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.2nd
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのスイカの金色の電撃により消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
