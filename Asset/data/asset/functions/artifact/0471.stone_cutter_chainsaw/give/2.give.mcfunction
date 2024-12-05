@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"イシキリチェンソー","color":"dark_red","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"前方の敵全体を切り刻む"},{"text":"石切台","strikethrough":true,"italic":true},{"text":"チェンソー"}]','""','[{"text":"魔力を注ぎ込みエンジンをふかせ","color":"dark_purple","italic":true}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1800
 # 神器を発動できるスロット (string) Wikiを参照
