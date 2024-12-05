@@ -16,4 +16,4 @@
 
 # 前方にブロック
     execute unless block ^ ^ ^0.5 #lib:no_collision run data modify storage asset:context IsHitBlock set value true
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 1055.Foward
+    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 1055.Forward

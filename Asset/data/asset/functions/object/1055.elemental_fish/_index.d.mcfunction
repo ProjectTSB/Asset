@@ -3,6 +3,6 @@
 
 #> tag
 # @within function asset:object/1055.elemental_fish/**
-    #declare tag 1055.Foward
+    #declare tag 1055.Forward
     #declare tag 1055.Upper
     #declare tag 1055.Lower

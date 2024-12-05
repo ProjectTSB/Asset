@@ -7,9 +7,9 @@
 # 向きを変える
     execute if entity @s[tag=1055.Upper] at @s run tp @s ~ ~ ~ ~ ~-35
     execute if entity @s[tag=1055.Lower] at @s run tp @s ~ ~ ~ ~ ~80
-    execute if entity @s[tag=1055.Foward] at @s run tp @s ~ ~ ~ ~20 ~-20
+    execute if entity @s[tag=1055.Forward] at @s run tp @s ~ ~ ~ ~20 ~-20
 
 # リセット
-    tag @s remove 1055.Foward
+    tag @s remove 1055.Forward
     tag @s remove 1055.Upper
     tag @s remove 1055.Lower
