@@ -9,6 +9,3 @@
 
 # チェックする
     function asset:object/1057.giant_pumpkin/detect_hit_entity/check_multiple_hit/.m with storage asset:context this
-
-#say @s
-#say @s[tag=DXYZ]
