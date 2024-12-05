@@ -15,7 +15,7 @@
     summon item ~ ~ ~ {Age:5900s,PickupDelay:5s,Item:{id:"minecraft:melon_slice",Count:5b}}
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 13.0
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってスイカの爆発に巻き込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
