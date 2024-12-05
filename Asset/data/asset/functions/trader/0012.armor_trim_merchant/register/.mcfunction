@@ -1,4 +1,4 @@
-#> asset:trader/0012.armor_trim_merchant/
+#> asset:trader/0012.armor_trim_merchant/register/
 #
 #
 #
