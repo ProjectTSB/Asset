@@ -6,11 +6,6 @@
 #   asset:mob/0321.mini_guardian/tick/event/laser/
 #   asset:mob/0321.mini_guardian/tick/event/laser/green
 
-#> インターバルのスコアホルダー
-# @private
-#declare score_holder $DamageInterval
-#declare score_holder $SoundInterval
-
 # パーティクル
     particle dust 0 1 0 0.5 ^ ^ ^ 0 0 0 0 1 force @a[distance=..30]
     particle dust 0 1 0 0.5 ^ ^ ^0.5 0 0 0 0 1 force @a[distance=..30]
@@ -24,6 +19,7 @@
 # 数Tickごとにダメージ
     scoreboard players operation $DamageInterval Temporary %= $5 Const
     execute if score $DamageInterval Temporary matches 0 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0321.mini_guardian/tick/event/laser/damage
+    scoreboard players reset $DamageInterval Temporary
 
 # 壁がなかったり、プレイヤーにあたったりしなければ再帰
     execute if entity @s[distance=..15] positioned ~-0.5 ~-0.5 ~-0.5 unless entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:mob/0321.mini_guardian/tick/event/laser/green
