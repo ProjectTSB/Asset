@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/0055.hetukedah/**
-    scoreboard objectives add 1J.BossTime dummy
+    scoreboard objectives add 1J.MoveCount dummy
+    scoreboard objectives add 1J.LoopCount dummy
