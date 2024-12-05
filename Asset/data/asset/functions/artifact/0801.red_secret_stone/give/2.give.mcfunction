@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"謎の赤い秘石","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、体力を回復する。","color":"dark_aqua"}','{"text":"赤い卵型の宝石だ。中に人型の何かが入っているようだ。","color":"dark_aqua"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 100
 # 神器を発動できるスロット (string) Wikiを参照
