@@ -8,3 +8,6 @@
 # @within function asset:mob/0410.heiloang/**
         scoreboard objectives add BE.Counter dummy
         scoreboard objectives add BE.EventTimer dummy
+        scoreboard objectives add BE.Ehd.Fire dummy
+        scoreboard objectives add BE.Ehd.Water dummy
+        scoreboard objectives add BE.Ehd.Thunder dummy
