@@ -31,10 +31,10 @@
         scoreboard players operation $01.CurrentHP Temporary /= $100 Const
 
     # 表示する
-        execute if entity @s[tag=!Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ","font":"default"},{"score":{"objective":"Temporary","name":"$01.CurrentHP"},"color":"white","font":"default"},{"text":" / ","color":"white","font":"default"},{"score":{"objective":"Temporary","name":"$01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=!Enemy.Boss] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.CurrentHP"},"color":"white","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
     # 天使だったら今までのデータを気にせず秘匿
-        execute if entity @s[tag=Enemy.Boss] run tellraw @p[tag=this] [{"text":"\uE01A","font":"tsb"},{"text":" ??? / ???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=Enemy.Boss] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
 # 物理と魔法
     # 物理耐性取得
@@ -52,7 +52,7 @@
         data remove storage asset:temp 01.Def
 
     # 表示
-        tellraw @p[tag=this] [{"text":"\uE018","font":"tsb"},{"storage":"asset:temp","nbt":"01.PhysicalDefense","interpret":true},{"text":" | ","font":"default"},{"text":"\uE019","font":"tsb"},{"storage":"asset:temp","nbt":"01.MagicDefense","interpret":true}]
+        tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Physical","interpret":true},{"storage":"asset:temp","nbt":"01.PhysicalDefense","interpret":true},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Magic","interpret":true},{"storage":"asset:temp","nbt":"01.MagicDefense","interpret":true}]
 
 # 炎、水、雷
     # 炎耐性取得
@@ -77,7 +77,7 @@
         data remove storage asset:temp 01.Def
 
     # 表示
-        tellraw @p[tag=this] [{"text":"\uE01C","font":"tsb"},{"storage":"asset:temp","nbt":"01.FireDefense","interpret":true},{"text":" | ","font":"default"},{"text":"\uE01D","font":"tsb"},{"storage":"asset:temp","nbt":"01.WaterDefense","interpret":true},{"text":" | ","font":"default"},{"text":"\uE01E","font":"tsb"},{"storage":"asset:temp","nbt":"01.ThunderDefense","interpret":true}]
+        tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Fire","interpret":true},{"storage":"asset:temp","nbt":"01.FireDefense","interpret":true},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Water","interpret":true},{"storage":"asset:temp","nbt":"01.WaterDefense","interpret":true},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Thunder","interpret":true},{"storage":"asset:temp","nbt":"01.ThunderDefense","interpret":true}]
 
 # 空行
     tellraw @p[tag=this] {"text":" "}
