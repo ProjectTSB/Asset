@@ -1,13 +1,8 @@
-#> asset:mob/0214.water_magic/tick/vfx2
+#> asset:object/2074.water_magic/tick/vfx/square
 #
+# 魔法陣のvfx
 #
-#
-# @within function asset:mob/0214.water_magic/tick/4.damage_and_vfx
-
-# 音
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 2 0
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 1 0
-    playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 0 0
+# @within function asset:object/2074.water_magic/tick/damage
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmABwCM1pAZgIamMC0AzAJydsAspKTq0oAjSgHZWANnrjq7cSM7sADJxVgCAO0YBbBMkBhigAJqmsDEYY9AZyTgUAe0JaISAKxSCKOK7gZ7MAA3RmxCA3AADyQVAigYgF8EgmtSNEI7RAAmADos9wIbCCs3RFiwOGxsNBgbA2oVcoxHYogDcrQbAFEqmrqugEdCUOwoAGVLH3JEJmw6pLxwaHgKGEdRgHNHLXNiMgp6d3YUXhEVXmkVRnpWXil3Nk5xehRWOHo4FEYROClOdyy5G0egMYEAWJqAJcjAEb6pnMlmsukyDmcriQ1Cy3l8bQCiHAITCETA0TKcUSyTAqXSmVy+UKxQwpXKlWqtXqjRSLUYbRi3kcGC0-iQXjAACtCLoYEgMWAfgAvNCCklgTo9Fn9IYjcaTODTWZ1AidABCcHl-kGwyqWsYUyQergSQAukA_3
 # 多角形 1

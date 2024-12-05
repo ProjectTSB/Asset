@@ -1,8 +1,8 @@
-#> asset:mob/0214.water_magic/tick/vfx
+#> asset:object/2074.water_magic/tick/vfx/circe
 #
-# 当たり判定表示の円
+# 円のvfx
 #
-# @within function asset:mob/0214.water_magic/tick/
+# @within function asset:object/2074.water_magic/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmABwCM1pAZgIamMC0AzAJydsAspKTq0oAjSgHZWANnrjq7cSM7sADJxVgCAO0YBbBMkBhigAJqmsDEYY9AZyTgUAe0JaISAEy8CKOK7gZ7MAA3RmxCA3AADyQVAigYgF8EgmtSNEI7RHcAOncAVgIbCCs3RFiwOGxsNBgbA2oVcoxHYogDcrQbAFEqmrqugEdCUOwoAGVLH3JEJmw6pIBdIA_3
 # 円 1
