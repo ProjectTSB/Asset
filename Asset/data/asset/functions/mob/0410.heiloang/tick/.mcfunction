@@ -4,8 +4,7 @@
 #
 # @within asset:mob/alias/410/tick
 
-# TODO メイン処理
-    # say tick
+# TODO:メイン処理
 
 # スキル用イベントハンドラ
     function asset:mob/0410.heiloang/tick/event/

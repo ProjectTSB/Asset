@@ -10,4 +10,4 @@
     data modify storage api: Argument.FieldOverride.Color set value 16762434
     data modify storage api: Argument.FieldOverride.Scale set value [50f, 50f, 0.05f]
     data modify storage api: Argument.FieldOverride.Tick set value 140
-    execute positioned ~ ~0.45 ~ run function api:object/summon
+    execute positioned ~ ~0.28 ~ run function api:object/summon

@@ -7,7 +7,7 @@
 # 予告
     data modify storage api: Argument.ID set value 2113
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-    data modify storage api: Argument.FieldOverride.Item set value "yellow_stained_glass"
+    data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.ScaleX set value 5f
     data modify storage api: Argument.FieldOverride.ScaleZ set value 30f
     $data modify storage api: Argument.FieldOverride.Duration set value $(Duration)
@@ -16,7 +16,7 @@
     execute at @s run tp @s ~ ~ ~ ~180 ~
     data modify storage api: Argument.ID set value 2113
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-    data modify storage api: Argument.FieldOverride.Item set value "yellow_stained_glass"
+    data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.ScaleX set value 5f
     data modify storage api: Argument.FieldOverride.ScaleZ set value 30f
     $data modify storage api: Argument.FieldOverride.Duration set value $(Duration)

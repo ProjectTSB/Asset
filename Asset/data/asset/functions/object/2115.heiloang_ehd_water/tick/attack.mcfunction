@@ -14,10 +14,13 @@
     function api:damage/reset
 
 # 演出
-    playsound block.glass.break hostile @a ~ ~ ~ 3 0.7
-    playsound block.glass.break hostile @a ~ ~ ~ 3 0.5
+    # playsound block.glass.break hostile @a ~ ~ ~ 3 0.7
+    # playsound block.glass.break hostile @a ~ ~ ~ 3 0.5
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.7
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.7
+    playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.5
+    playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.5
+    playsound entity.generic.explode hostile @a ~ ~ ~ 3 0.7
     particle block ice ~ ~1 ~ 10 1 10 0.1 100 force
     particle explosion ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
