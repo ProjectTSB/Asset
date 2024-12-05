@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"海淵の羅針盤","color":"#1050B0"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、現在体力の10%分のダメージを受ける。","color":"white"}','{"text":"この効果での被ダメージ2につきMPを2回復し","color":"white"}','{"text":"周囲の敵5体へ120ダメージを与える。","color":"white"}','{"text":"(効果による被ダメージは最低2、最大20)","color":"white"}','{"text":"遥か海底の彼方を指す羅針盤。","color":"gray"}','{"text":"その針は光無き深淵を指し示す。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

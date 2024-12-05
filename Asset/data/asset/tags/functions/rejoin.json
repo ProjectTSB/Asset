@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1141.bell_of_courage/trigger/rejoin_process",
+        "asset:artifact/1110.lantern_of_firefly/trigger/rejoin_process",
         "asset:artifact/0002.blessing/trigger/rejoin_process",
         "asset:artifact/1024.brave_rod/trigger/rejoin_process",
         "asset:artifact/0837.the_world_knife/trigger/rejoin_process",
