@@ -15,10 +15,11 @@
     tag @s add 1J.InAction
 
 # ランダム
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $4 Const
+# 乱数によるスキル選択
+        data modify storage lib: Args.key set value "55.Skill"
+        data modify storage lib: Args.max set value 4
+        data modify storage lib: Args.scarcity_history_size set value 3
+        execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # ハードだったら動作カウント増やす
         execute if predicate api:global_vars/difficulty/min/hard run scoreboard players add @s 1J.MoveCount 1
     # デバッグ
