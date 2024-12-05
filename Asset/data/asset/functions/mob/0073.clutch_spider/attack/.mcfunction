@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/73/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @p[tag=Victim] run particle poof ~ ~ ~ 0 0 0 0.2 10 normal
 # 効果
