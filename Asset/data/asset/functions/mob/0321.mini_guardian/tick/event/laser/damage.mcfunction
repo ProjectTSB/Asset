@@ -5,14 +5,9 @@
 # @within function asset:mob/0321.mini_guardian/tick/event/laser/green
 
 # ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 4f
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
-    # ダメージ
-        function lib:damage/modifier
-        function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 4f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    execute as @e[type=zombie,tag=this,distance=..40,sort=nearest,limit=1] run function api:damage/modifier
+    function api:damage/
+    function api:damage/reset
