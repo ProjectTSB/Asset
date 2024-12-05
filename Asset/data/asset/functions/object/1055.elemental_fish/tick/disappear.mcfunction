@@ -1,8 +1,8 @@
-#> asset:artifact/0295.call_elemental_familiar/trigger/fairy/5.disapper
+#> asset:object/1055.elemental_fish/tick/disappear
 #
-# 消滅処理
+# 消えるときの処理
 #
-# @within function asset:artifact/0295.call_elemental_familiar/trigger/fairy/3.main
+# @within function asset:object/1055.elemental_fish/tick/
 
 # 演出
     playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1.5 1.5
