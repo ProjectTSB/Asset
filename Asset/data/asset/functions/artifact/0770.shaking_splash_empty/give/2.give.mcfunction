@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"シェイキングスプラッシュ<Empty>","color":"#00F7FF"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"持った状態で視界を縦に振ることで使用でき、","color":"#7AF6FF"}','{"text":"振り終わるとリロードが完了する。","color":"#7AF6FF"}','{"text":"蒼い液体が詰まった水鉄砲。","color":"#96DCFF"}','{"text":"液体が泡立っていないため発射できない。","color":"#96DCFF"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 10
 # 神器を発動できるスロット (string) Wikiを参照
