@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"天国草","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"傷を即座に癒す効能があるが、"}','{"text":"5%の確率で昇天してしまう。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 25
 # 神器を発動できるスロット (string) Wikiを参照
