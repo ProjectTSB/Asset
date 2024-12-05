@@ -1,8 +1,8 @@
-#> asset:mob/0190.thunder_mage/tick/4.predict_attack
+#> asset:mob/0190.thunder_mage/tick/predict_attack
 #
 # 偏差攻撃
 #
-# @within function asset:mob/0190.thunder_mage/tick/3.attack
+# @within function asset:mob/0190.thunder_mage/tick/attack
 
 #> Private
 # @private
@@ -30,7 +30,7 @@
     function lib:array/session/close
 
 # マクロで偏差撃ちする
-    execute at @p[tag=Target] run function asset:mob/0190.thunder_mage/tick/5.predict.m with storage asset:temp Predict
+    execute at @p[tag=Target] run function asset:mob/0190.thunder_mage/tick/predict.m with storage asset:temp Predict
 
 # リセット
     tag @p[tag=Target] remove Target
