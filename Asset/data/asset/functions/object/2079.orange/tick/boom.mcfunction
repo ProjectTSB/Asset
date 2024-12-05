@@ -14,7 +14,7 @@
     effect give @a[gamemode=!spectator,distance=..1.5] saturation 3 0 true
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 15f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって橙色になった。","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
