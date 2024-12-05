@@ -20,4 +20,3 @@
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=60..199}]
-    #kill @s[scores={General.Object.Tick=276..}]
