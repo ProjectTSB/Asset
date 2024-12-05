@@ -6,4 +6,4 @@
 
 # スコアをリセット
     scoreboard players reset @s 6J.ResetTick
-    scoreboard players set @s General.Mob.Tick -50
+    scoreboard players set @s General.Mob.Tick -80
