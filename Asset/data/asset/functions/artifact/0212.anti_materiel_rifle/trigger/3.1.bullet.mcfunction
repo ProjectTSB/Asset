@@ -22,7 +22,7 @@
     execute if entity @s[tag=Landing] run function asset:artifact/0212.anti_materiel_rifle/trigger/3.2.bullet_damage
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..80] run function asset:artifact/0212.anti_materiel_rifle/trigger/3.1.bullet
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..40] run function asset:artifact/0212.anti_materiel_rifle/trigger/3.1.bullet
 
 # タグを消す
     tag @s remove Landing
