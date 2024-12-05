@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"アイスステッキ","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"周囲の"},{"text":"水","color":"dark_aqua"},{"text":"を","color":"white"},{"text":"氷ブロック","color":"dark_aqua"},{"text":"に","color":"white"}]','[{"text":"氷ブロック","color":"dark_aqua"},{"text":"を","color":"white"},{"text":"氷塊ブロック","color":"dark_aqua"},{"text":"に","color":"white"}]','[{"text":"氷塊ブロック","color":"dark_aqua"},{"text":"を","color":"white"},{"text":"青氷ブロック","color":"dark_aqua"},{"text":"にする。","color":"white"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
