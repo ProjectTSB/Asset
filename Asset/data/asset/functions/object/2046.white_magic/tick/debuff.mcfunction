@@ -17,6 +17,6 @@
 
 # 付与
     data modify storage api: Argument.ID set value 613
-    execute store result storage api: Argument.Duration int 50 run scoreboard players add $Difficulty Temporary 1
-    execute store result storage api: Argument.Stack int 1 run scoreboard players remove $Difficulty Temporary 2
+    data modify storage api: Argument.Stack set from storage asset:context this.Stack
+    data modify storage api: Argument.Duration set from storage asset:context this.Duration
     function api:entity/mob/effect/give
