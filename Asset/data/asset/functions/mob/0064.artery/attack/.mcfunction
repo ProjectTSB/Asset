@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/64/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 周りのmobにパワー付与
     effect give @e[type=#lib:living,tag=Enemy,distance=..5] strength 6 0 true
 
