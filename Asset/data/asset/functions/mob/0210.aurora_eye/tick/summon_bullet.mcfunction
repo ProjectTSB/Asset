@@ -8,7 +8,6 @@
     tp @s ~ ~ ~ facing entity @p eyes
 
 # RotationをFieldOvrrideへ
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
 
 # ノーマル以上ならデバフを付与するように
     execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
@@ -23,6 +22,8 @@
 
 # 発射
     data modify storage api: Argument.ID set value 2076
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.BulletDamage
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     function api:object/summon
 
 # リセット
