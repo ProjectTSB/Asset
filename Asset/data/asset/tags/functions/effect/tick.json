@@ -25,11 +25,19 @@
         "asset:effect/0603.domination/_/tick",
         "asset:effect/0604.logging_of_soul/_/tick",
         "asset:effect/0605.aurora_corrosion/_/tick",
-        "asset:effect/0607.sedation/_/tick",
         "asset:effect/0608.sinking/_/tick",
         "asset:effect/0612.infringement/_/tick",
+        "asset:effect/0201.magic_shield/_/tick",
         "asset:effect/0613.white_curse/_/tick",
+        "asset:effect/0203.secret_meat/_/tick",
+        "asset:effect/0269.pain_and_sweet/_/tick",
+        "asset:effect/0270.honey_regeneration/_/tick",
+        "asset:effect/0265.light_of_firefly/_/tick",
+        "asset:effect/0619.hand_of_destruction/_/tick",
+        "asset:effect/0261.gale_blessing/_/tick",
         "asset:effect/0210.fading_speed/_/tick",
-        "asset:effect/0203.secret_meat/_/tick"
+        "asset:effect/0276.unending_thunder/_/tick",
+        "asset:effect/0203.secret_meat/_/tick",
+        "asset:effect/0272.inspiration/_/tick"
     ]
 }

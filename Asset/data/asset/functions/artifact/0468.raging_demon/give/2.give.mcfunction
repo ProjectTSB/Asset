@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"瞬獄殺","color":"dark_red","bold":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"周囲10M以内の","color":"white"},{"text":"体力が30以下","color":"light_purple"},{"text":"の","color":"white"},{"text":"敵","color":"red"},{"text":"にダメージを与える","color":"white"}]','{"text":"「我こそ、拳を極めし者」","color":"dark_red"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
