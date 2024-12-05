@@ -1,12 +1,8 @@
-#> asset:mob/0211.aurora_bullet/tick/4.debuff
+#> asset:mob/0210.aurora_eye/tick/debuff
 #
 # デバフを付与
 #
-# @within function asset:mob/0211.aurora_bullet/tick/3.hit
-
-#> Private
-# @private
-    #declare score_holder $Difficulty
+# @within function asset:mob/0210.aurora_eye/tick/attack
 
 # (難易度値 - 1)のStackのEffectを付与する
 # このmcfの実行者はプレイヤー
@@ -20,7 +16,7 @@
 # Effectを付与
     data modify storage api: Argument.ID set value 605
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $Difficulty Temporary
-    data modify storage api: Argument.Duration set value 80
+    data modify storage api: Argument.Duration set value 120
     function api:entity/mob/effect/give
 
 # リセット
