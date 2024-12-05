@@ -55,7 +55,7 @@
         ]
     ],
     "datapack.lint.nameOfObjectives": [
-        "error",
+        "information",
         {
             "label": "ChainedPascalCase",
             "allowLessParts": true,
@@ -65,7 +65,7 @@
         }
     ],
     "datapack.lint.nameOfTags": [
-        "error",
+        "information",
         [
             {
                 "label": "ChainedPascalCase",
