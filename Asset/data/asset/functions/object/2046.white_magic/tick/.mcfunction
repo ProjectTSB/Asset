@@ -30,6 +30,3 @@
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=45..}]
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
