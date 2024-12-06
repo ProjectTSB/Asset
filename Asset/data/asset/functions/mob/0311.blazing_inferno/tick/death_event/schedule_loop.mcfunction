@@ -3,7 +3,7 @@
 # Scheduleループする部分
 #
 # @within function
-#   asset:mob/0311.blazing_inferno/death/2.death
+#   asset:mob/0311.blazing_inferno/death/
 #   asset:mob/0311.blazing_inferno/tick/death_event/schedule_loop
 #   asset:mob/0311.blazing_inferno/rejoin_process
 

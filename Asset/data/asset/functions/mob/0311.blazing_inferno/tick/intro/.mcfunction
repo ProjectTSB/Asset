@@ -2,7 +2,7 @@
 #
 # 開幕時の動作。
 #
-# @within function asset:mob/0311.blazing_inferno/tick/2.tick
+# @within function asset:mob/0311.blazing_inferno/tick/
 
 # ポージング
     execute if score @s 8N.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/intro/posing

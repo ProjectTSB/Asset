@@ -1,8 +1,8 @@
-#> asset:mob/0311.blazing_inferno/death/2.death
+#> asset:mob/0311.blazing_inferno/death/
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0311.blazing_inferno/death/1.trigger
+# @within function asset:mob/alias/311/death
 
 # サウンド
     playsound minecraft:entity.item.break hostile @a ~ ~ ~ 1 0.5

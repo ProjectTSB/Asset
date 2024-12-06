@@ -2,7 +2,7 @@
 #
 # ベースムーブ。他のモブの"tick"に当たる部分。
 #
-# @within function asset:mob/0311.blazing_inferno/tick/2.tick
+# @within function asset:mob/0311.blazing_inferno/tick/
 
 # 予告動作
     execute if score @s[tag=!8N.InAction] 8N.Tick matches 20 if entity @p[distance=..100] run function asset:mob/0311.blazing_inferno/tick/base_move/windup

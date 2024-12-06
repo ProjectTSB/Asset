@@ -1,8 +1,8 @@
-#> asset:mob/0311.blazing_inferno/tick/2.tick
+#> asset:mob/0311.blazing_inferno/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0311.blazing_inferno/tick/1.trigger
+# @within function asset:mob/alias/311/tick
 
 # 最寄りのモデルのRootを自身の座標にもってくる
     execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0

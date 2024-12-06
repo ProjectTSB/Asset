@@ -1,8 +1,8 @@
-#> asset:mob/0311.blazing_inferno/hurt/2.hurt
+#> asset:mob/0311.blazing_inferno/hurt/
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0311.blazing_inferno/hurt/1.trigger
+# @within function asset:mob/alias/311/hurt
 
 # サウンド
     playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1.5 1

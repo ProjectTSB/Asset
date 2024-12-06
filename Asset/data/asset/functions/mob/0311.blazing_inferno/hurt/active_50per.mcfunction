@@ -2,7 +2,7 @@
 #
 # 本気出すときのイベント
 #
-# @within function asset:mob/0311.blazing_inferno/hurt/2.hurt
+# @within function asset:mob/0311.blazing_inferno/hurt/
 
 
 # ポーズリセット

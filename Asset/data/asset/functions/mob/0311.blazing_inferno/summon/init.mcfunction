@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0311.blazing_inferno/summon/2.summon
+# @within function asset:mob/0311.blazing_inferno/summon/
 
 # 降りてくる
     execute at @s run tp @s ~ ~100 ~

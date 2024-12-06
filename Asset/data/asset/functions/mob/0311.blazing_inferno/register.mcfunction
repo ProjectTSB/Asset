@@ -1,11 +1,6 @@
-#> asset:mob/0311.blazing_inferno/summon/2.summon
-#
-# Mobの召喚時の処理
-#
-# @within function asset:mob/0311.blazing_inferno/summon/1.trigger
+#> asset:mob/0311.blazing_inferno/register
+# @within asset:mob/alias/311/register
 
-# 元となるMobを召喚する。見えないようにかなり下から召喚
-    summon wither_skeleton ~ ~-100 ~ {NoAI:1b,Silent:1b,Tags:["8N.PlayerFacing","8N.RailMove","8N.Turn.Clockwise","MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0311.blazing_inferno"}
 # ID (int)
     data modify storage asset:mob ID set value 311
 # Type (string) Wikiを参照
@@ -57,18 +52,3 @@
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
-
-# AJモデル召喚
-    execute rotated ~ 0 run function animated_java:blazing_inferno/summon
-
-# 自身のモデルに待機モーションを再生させる
-    execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neurtal/play
-
-# 起点を召喚
-    summon marker ~ ~2 ~ {Tags:["8N.Marker.SpawnPoint"],Rotation:[180.0f,0.0f]}
-
-# Init処理して出てくる
-    execute positioned ~ ~-100 ~ as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/0311.blazing_inferno/summon/init
-
-# MobInitタグ持ちを対象にして召喚関数呼び出し
-    execute as @e[type=wither_skeleton,tag=MobInit,distance=..0.01] run function asset:mob/common/summon

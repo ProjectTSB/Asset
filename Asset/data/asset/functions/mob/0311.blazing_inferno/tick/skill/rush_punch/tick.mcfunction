@@ -24,4 +24,3 @@
 
 # リセット
     execute if score @s 8N.Tick matches 100 run function asset:mob/0311.blazing_inferno/tick/base_move/reset
-
