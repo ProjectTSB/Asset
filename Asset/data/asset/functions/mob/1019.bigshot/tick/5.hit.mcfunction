@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/1019.bigshot/tick/2.tick
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # ダメージを与える
 # ダメージ設定
     # 与えるダメージ
