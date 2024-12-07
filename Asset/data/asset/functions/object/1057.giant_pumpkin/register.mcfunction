@@ -15,4 +15,5 @@
 # ID (int)
     data modify storage asset:object ID set value 1057
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+    data modify storage asset:object Field.Damage set value {Beginning:1f,Clash:2f}
+    data modify storage asset:object Field.StartDelay set value 0
