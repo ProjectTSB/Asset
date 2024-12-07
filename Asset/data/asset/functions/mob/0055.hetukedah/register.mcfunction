@@ -1,6 +1,13 @@
 #> asset:mob/0055.hetukedah/register
 # @within asset:mob/alias/55/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 55
 # Type (string) Wikiを参照
@@ -30,7 +37,7 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 3100
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 10
+    data modify storage asset:mob AttackDamage set value 0.1
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
