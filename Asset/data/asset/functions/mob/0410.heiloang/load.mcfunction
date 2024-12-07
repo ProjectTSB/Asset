@@ -6,6 +6,7 @@
 
 #> 定義類はここに
 # @within function asset:mob/0410.heiloang/**
+        scoreboard objectives add BE.Dummy dummy
         scoreboard objectives add BE.Counter dummy
         scoreboard objectives add BE.EventTimer dummy
         scoreboard objectives add BE.Ehd.Fire dummy

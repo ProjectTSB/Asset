@@ -2,7 +2,7 @@
 #
 # デバッグ用処理 割り込みで強制的に初期状態に戻す
 #
-# @within asset:mob/alias/410/tick
+# @within asset:mob/0410.heiloang/tick/debug/interrupt
 
 # メモ
     # execute as @e[tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/reset
@@ -13,6 +13,10 @@
 # タグ消去
     function asset:mob/0410.heiloang/tick/util/remove_all_tag
     tag @s remove BE.Skill.Hellfire
+    tag @s remove BE.Skill.Adamant
+    tag @s remove BE.Skill.Blitz
+    tag @s remove BE.Skill.Ehd
+    tag @s remove BE.Skill.Move
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0

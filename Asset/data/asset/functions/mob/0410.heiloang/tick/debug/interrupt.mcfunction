@@ -8,8 +8,8 @@
     # execute as @e[tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/interrupt
 
 # 全アニメーション停止
-    execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function animated_java:heiloang_aj/animations/pause_all
+    function asset:mob/0410.heiloang/tick/debug/reset
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Move
+    tag @s add BE.Skill.Ehd

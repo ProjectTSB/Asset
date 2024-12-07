@@ -17,3 +17,7 @@
 
 # アダマントスパイク
     execute if entity @s[tag=aj.heiloang_aj.animation.4_blizzard] run function asset:mob/0410.heiloang/tick/animated_java/tick/4_blizzard
+
+# 移動攻撃
+    execute if entity @s[tag=aj.heiloang_aj.animation.5_1_move_start] run function asset:mob/0410.heiloang/tick/animated_java/tick/5_1_move_start
+    execute if entity @s[tag=aj.heiloang_aj.animation.5_2_move] run function asset:mob/0410.heiloang/tick/animated_java/tick/5_2_move

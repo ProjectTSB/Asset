@@ -12,13 +12,22 @@
     execute positioned ^-10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
     execute positioned ^-15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
 
+    execute positioned ^15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^-5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^-15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
+
 # ダメージ
-    data modify storage lib: Argument.Damage set value 20f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @a[tag=BE.Temp.Hit] at @s run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 10
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @a[tag=BE.Temp.Hit] run function api:damage/
+    function api:damage/reset
 
 # 終了
     tag @a remove BE.Temp.Hit
