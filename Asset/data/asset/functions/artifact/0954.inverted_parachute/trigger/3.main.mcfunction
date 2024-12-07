@@ -14,4 +14,4 @@
     execute if data storage api: {OnGround:1b} run playsound minecraft:entity.bat.takeoff player @a ~ ~ ~ 0.5 0
 
 # 浮遊を付与
-    effect give @s levitation 3 3 true
+    effect give @s levitation 2 3 true
