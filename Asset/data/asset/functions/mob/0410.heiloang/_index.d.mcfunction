@@ -16,6 +16,8 @@
         #declare function animated_java:heiloang_aj/animations/2_2_common_invoke/tween_play
         #declare function animated_java:heiloang_aj/animations/3_0_hellfire_start/tween_play
         #declare function animated_java:heiloang_aj/animations/4_blizzard/tween_play
+        #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween_play
+        #declare function animated_java:heiloang_aj/animations/5_2_move/tween_play
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
@@ -31,6 +33,7 @@
     #declare tag BE.Skill.Adamant アダマントスパイク
     #declare tag BE.Skill.Blitz リヒトブリッツェン
     #declare tag BE.Skill.Ehd エンハンスドディザスター
+    #declare tag BE.Skill.Move 移動
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
@@ -41,3 +44,4 @@
     #declare tag BE.Temp.AttackRotation 角度決定用
     #declare tag BE.Temp.AttackPosition 位置決定用
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
+    #declare tag BE.Temp.Dummy ダミー

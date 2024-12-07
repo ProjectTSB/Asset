@@ -15,6 +15,9 @@
     kill @e[type=marker,tag=BE.CenterPosition]
 
 # Ajモデル消去
+    execute as @e[type=item_display,tag=BE.ModelRoot] on passengers if entity @s[type=snowball] on origin run data merge entity @s {Size:0,Tags:["BE.Temp.Dummy"]}
+    execute as @e[type=slime,tag=BE.Temp.Dummy] run tp @s ~ ~100 ~
+    kill @e[type=slime,tag=BE.Temp.Dummy]
     function animated_java:heiloang_aj/remove/all
 
 say death
