@@ -1,4 +1,4 @@
-#> asset:artifact/1033.thelema_of_blue_sea/trigger/entity/vfx_process/vfx/slash1.1
+#> asset:object/1038.thelema_slash_entity/tick/vfx/slash1.1
 #
 #
 #
