@@ -6,5 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0363.white_spellbook/**
-    scoreboard objectives add A3.Tick dummy
     scoreboard objectives add A3.MoveTimer dummy

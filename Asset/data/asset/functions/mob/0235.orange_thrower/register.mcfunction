@@ -40,7 +40,7 @@
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 32
 # ノックバック耐性 (double) (オプション)
-    data modify storage asset:mob KnockBackResist set value 0.2
+    data modify storage asset:mob KnockBackResist set value 0.8
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 0.5
@@ -52,3 +52,6 @@
         data modify storage asset:mob Resist.Water set value 0.5
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.5
+
+# フィールド
+    data modify storage asset:mob Field.Damage set value 15f
