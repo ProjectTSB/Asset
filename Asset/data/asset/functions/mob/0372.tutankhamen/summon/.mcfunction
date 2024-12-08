@@ -5,4 +5,4 @@
 # @within asset:mob/alias/372/summon
 
 # 元となるEntityを召喚する
-    summon wither_skeleton ~ ~ ~ {NoAI:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0372.tutankhamen"}
+    summon wither_skeleton ~ ~ ~ {NoAI:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}
