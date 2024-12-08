@@ -5,9 +5,9 @@
 # @within asset:object/2112.heiloang_thunder_spin/tick/
 
 # 演出
-    particle flash ^ ^ ^ 1 1 1 0 10 force
-    particle end_rod ^ ^ ^ 0.5 0.5 0.5 0.05 3 force
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0.7
+    data modify storage api: Argument.ID set value 2120
+    execute positioned ~ ~ ~ run function api:object/summon
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage

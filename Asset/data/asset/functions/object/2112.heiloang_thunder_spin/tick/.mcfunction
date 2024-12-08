@@ -13,13 +13,13 @@
     execute if entity @s[scores={General.Object.Tick=100}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:5,KillTick:15}
     execute if entity @s[scores={General.Object.Tick=120}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:5,KillTick:15}
     execute if entity @s[scores={General.Object.Tick=140}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:5,KillTick:7}
-    execute if entity @s[scores={General.Object.Tick=150}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=155}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=160}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=165}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=170}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=175}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
-    execute if entity @s[scores={General.Object.Tick=180}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:2,KillTick:2}
+    execute if entity @s[scores={General.Object.Tick=150}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=156}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=162}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=168}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=174}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=180}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
+    execute if entity @s[scores={General.Object.Tick=186}] run function asset:object/2112.heiloang_thunder_spin/tick/attack.m {Duration:3,KillTick:3}
 
     scoreboard players remove @s 2112.AttackTimer 1
     execute if entity @s[scores={2112.AttackTimer=20}] positioned ^ ^ ^ run function asset:object/2112.heiloang_thunder_spin/tick/attack_0
