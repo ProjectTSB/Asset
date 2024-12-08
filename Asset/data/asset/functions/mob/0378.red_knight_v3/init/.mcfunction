@@ -4,7 +4,8 @@
 #
 # @within asset:mob/alias/378/init
 
-function asset:mob/super.init
+# 抽象
+    function asset:mob/super.init
 
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:red_knight/summon

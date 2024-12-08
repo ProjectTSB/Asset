@@ -4,11 +4,13 @@
 #
 # @within function asset:mob/alias/378/hurt
 
-
 #> private
 # @private
     #declare score_holder $Health
     #declare score_holder $MaxHealth
+
+# 抽象
+    function asset:mob/super.hurt
 
 # 演出
     playsound minecraft:entity.item.break hostile @a ~ ~ ~ 1 1.5

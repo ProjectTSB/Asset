@@ -3,3 +3,6 @@
 # 天使が居なくなる際に実行される処理
 #
 # @within asset:mob/alias/378/remove
+
+# 抽象
+    function asset:mob/super.remove
