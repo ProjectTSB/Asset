@@ -7,9 +7,6 @@
 # プレイヤーのほう向く
     execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
 
-# 発射体のステータス
-    data modify storage asset:context this set value {Speed:0,Range:100,MovePerStep:1}
-
 # ゆっくり回るようになる
     data modify entity @s teleport_duration set value 1
 

@@ -15,4 +15,4 @@
 # ID (int)
     data modify storage asset:object ID set value 2043
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+    data modify storage asset:object Field set value {Speed:0,Range:100,MovePerStep:1}
