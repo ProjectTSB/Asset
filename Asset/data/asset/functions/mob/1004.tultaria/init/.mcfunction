@@ -29,3 +29,6 @@
 
 # スコアをセットする
     scoreboard players set @s RW.Tick 0
+
+# Super!
+    function asset:mob/super.init

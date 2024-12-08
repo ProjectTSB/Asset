@@ -7,3 +7,6 @@
 # オブジェクト類のキル
     kill @e[type=item_display,scores={ObjectID=2030}]
     kill @e[type=item_display,tag=RW.SkyBox,sort=nearest,limit=1]
+
+# Super!
+    function asset:mob/super.death

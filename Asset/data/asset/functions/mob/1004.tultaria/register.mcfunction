@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/1004/register
 
+ #継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:mob ExtendsSafe set value false
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
@@ -17,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"トゥルタリア","color":"#a33033"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"この世界に終焉をもたらさんとする存在。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"この世界に終焉をもたらさんとする存在","color":"white"}']
 # 体力 (double) (オプション)
     #data modify storage asset:mob Health set value 140000d
 # デバッグ用体力
