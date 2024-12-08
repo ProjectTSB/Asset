@@ -16,10 +16,14 @@
     execute positioned ^5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
     execute positioned ^-5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
     execute positioned ^-15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^-5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^-15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
 
 # ダメージ
     data modify storage api: Argument.Damage set value 10
