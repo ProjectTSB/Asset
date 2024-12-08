@@ -4,8 +4,15 @@
 #
 # @within asset:mob/alias/213/remove
 
-# ミサイルを消す
-# 対空砲を消す
+# Todo: ミサイルを消す
+# Todo: 対空砲を消す
+
+# super
+function asset:mob/super.remove
 
 # remove markers
 kill @e[tag=5X.Centre]
+
+# remove objects
+execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
+kill @e[scores={ObjectID=2082..2088}]

@@ -13,7 +13,7 @@
     function asset:object/super.init
 
 # 向きを指定座標へ向ける
-    tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
+    # tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
 
     data modify storage asset:temp args.x set from storage asset:context this.target_pos[0]
     data modify storage asset:temp args.y set from storage asset:context this.target_pos[1]

@@ -3,3 +3,6 @@
 # Mobのダメージ時の処理
 #
 # @within function asset:mob/alias/213/hurt
+
+# super
+function asset:mob/super.hurt
