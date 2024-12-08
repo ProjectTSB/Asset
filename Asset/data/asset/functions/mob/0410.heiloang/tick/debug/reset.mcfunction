@@ -17,6 +17,8 @@
     tag @s remove BE.Skill.Blitz
     tag @s remove BE.Skill.Ehd
     tag @s remove BE.Skill.Move
+    tag @s remove BE.Skill.Tornado
+    tag @s remove BE.Skill.Sweep
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0

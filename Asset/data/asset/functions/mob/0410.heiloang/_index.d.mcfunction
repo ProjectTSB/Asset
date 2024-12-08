@@ -18,6 +18,7 @@
         #declare function animated_java:heiloang_aj/animations/4_blizzard/tween_play
         #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween_play
         #declare function animated_java:heiloang_aj/animations/5_2_move/tween_play
+        #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween_play
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
@@ -34,6 +35,8 @@
     #declare tag BE.Skill.Blitz リヒトブリッツェン
     #declare tag BE.Skill.Ehd エンハンスドディザスター
     #declare tag BE.Skill.Move 移動
+    #declare tag BE.Skill.Tornado 竜巻
+    #declare tag BE.Skill.Sweep なぎはらいブレス
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
