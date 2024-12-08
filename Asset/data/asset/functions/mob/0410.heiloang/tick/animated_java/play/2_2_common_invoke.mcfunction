@@ -4,6 +4,7 @@
 #
 # @within asset:mob/0410.heiloang/tick/event/richt_blitzen/
 # @within asset:mob/0410.heiloang/tick/event/enhanced_disaster/
+# @within asset:mob/0410.heiloang/tick/event/tornado/
 
 # アニメーション停止
     function animated_java:heiloang_aj/animations/pause_all

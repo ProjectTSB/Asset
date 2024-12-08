@@ -13,7 +13,7 @@
     # 予告
     execute if score @s BE.EventTimer matches 5 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
     # 攻撃
-        execute if score @s BE.EventTimer matches 48..105 positioned as @e[type=marker,tag=aj.heiloang_aj.locator.locator_head,limit=1,sort=nearest] run function asset:mob/0410.heiloang/tick/event/sweep/attack
+        execute if score @s BE.EventTimer matches 48..105 positioned as @e[type=marker,tag=aj.heiloang_aj.locator.locator_head,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/event/sweep/attack
     # 角度
         execute if score @s BE.EventTimer matches 10 run tp @s ~ ~ ~ ~70 0
         execute if score @s BE.EventTimer matches 78..105 run tp @s ~ ~ ~ ~-8 ~
