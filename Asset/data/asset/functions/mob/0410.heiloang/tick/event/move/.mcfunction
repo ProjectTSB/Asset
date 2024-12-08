@@ -19,10 +19,10 @@
         execute if score @s BE.EventTimer matches 80 at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 # 出現、攻撃
     # アニメーション再生
-        execute if score @s BE.EventTimer matches 451 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/5_2_move
+        execute if score @s BE.EventTimer matches 151 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/5_2_move
     # 攻撃
-        execute if score @s BE.EventTimer matches 494 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move/prediction
-        execute if score @s BE.EventTimer matches 524 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^15.5 run function asset:mob/0410.heiloang/tick/event/move/attack
+        execute if score @s BE.EventTimer matches 194 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move/prediction
+        execute if score @s BE.EventTimer matches 224 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move/attack
 
 # 終了
-    execute if score @s BE.EventTimer matches 575.. run function asset:mob/0410.heiloang/tick/event/move/end
+    execute if score @s BE.EventTimer matches 275.. run function asset:mob/0410.heiloang/tick/event/move/end

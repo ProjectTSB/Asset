@@ -5,25 +5,25 @@
 # @within asset:mob/0410.heiloang/tick/event/move/
 
 # ヒット判定
-    execute positioned ^15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-
-    execute positioned ^15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^-5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^-15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^-5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^-15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    data modify storage lib: args.dx set value 20
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 18
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute positioned ^ ^-5 ^ run function lib:rotatable_dxyz/m with storage lib: args
+    tag @a[tag=DXYZ] add BE.Temp.Hit
+    tag @a[tag=DXYZ] remove DXYZ
+    execute positioned ^15 ^ ^5 run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^5 ^ ^5 run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^-5 ^ ^5 run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^-15 ^ ^5 run particle cloud ~ ~5 ~ 2 2 2 0.1 20
+    execute positioned ^15 ^ ^7 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^5 ^ ^7 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^-5 ^ ^7 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^-15 ^ ^7 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
+    execute positioned ^15 ^ ^7 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^5 ^ ^7 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-5 ^ ^7 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
+    execute positioned ^-15 ^ ^7 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
 
 # ダメージ
     data modify storage api: Argument.Damage set value 10

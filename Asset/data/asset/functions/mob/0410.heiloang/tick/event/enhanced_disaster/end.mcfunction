@@ -12,4 +12,4 @@
 
 # 移動に遷移
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Move
+    tag @s add BE.Skill.MoveAfterEhd

@@ -3,6 +3,7 @@
 # アニメーション再生
 #
 # @within asset:mob/0410.heiloang/tick/event/move/
+# @within asset:mob/0410.heiloang/tick/event/move_after_ehd/
 
 # アニメーション停止
     function animated_java:heiloang_aj/animations/pause_all
