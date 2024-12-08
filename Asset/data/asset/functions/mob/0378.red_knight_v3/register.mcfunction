@@ -11,9 +11,9 @@
 # ID (int)
     data modify storage asset:mob ID set value 378
 # Type (string) Wikiを参照
-    data modify storage asset:mob Type set value ""
+    data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
-    data modify storage asset:mob Interferable set value
+    data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     # data modify storage asset:mob Name set value
 # Mobの説明文 (TextComponentString[]) (オプション)
@@ -37,7 +37,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    # data modify storage asset:mob Health set value
+    data modify storage asset:mob Health set value 999
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち

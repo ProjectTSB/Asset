@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0378.red_knight_v3/**
-    scoreboard objectives add
+    scoreboard objectives add AI.Tick dummy
