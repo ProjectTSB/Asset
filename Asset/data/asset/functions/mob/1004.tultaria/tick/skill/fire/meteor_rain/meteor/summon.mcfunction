@@ -13,5 +13,8 @@
 # 召喚IDを指定
     data modify storage api: Argument.ID set value 2028
 
+# 発射体のデータを設定
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+
 # マーカーの位置にオブジェクト召喚
     execute at @s unless entity @e[type=item_display,scores={ObjectID=2041},distance=0.1..4,limit=1] positioned ~ ~40 ~ run function api:object/summon

@@ -35,6 +35,7 @@
     #declare tag RW.ChaseMarker3
     #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
+    #declare tag RW.Shield
 
 ## ボスのモデルに関するタグ
     #declare tag RW.ModelLocator.LeftHand

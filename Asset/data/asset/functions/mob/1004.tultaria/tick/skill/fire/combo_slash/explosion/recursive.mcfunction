@@ -14,16 +14,16 @@
 # ダメージを与える
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 30.0f
+        data modify storage api: Argument.Damage set value 30.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[gamemode=!creative,gamemode=!spectator,distance=..2] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[gamemode=!creative,gamemode=!spectator,distance=..2] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 壁がなければ再帰
     execute if entity @s[distance=..32] positioned ^ ^ ^2 if block ~ ~ ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/explosion/recursive

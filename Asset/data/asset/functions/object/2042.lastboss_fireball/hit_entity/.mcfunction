@@ -6,17 +6,18 @@
 
 # 引数の設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 10.0f
+        data modify storage api: Argument.Damage set value 10.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+        data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+        function api:damage/modifier_manual
 # ダメージを与える
-    execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
+    execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 消失
     function asset:object/call.m {method:kill}

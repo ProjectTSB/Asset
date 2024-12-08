@@ -6,14 +6,14 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 10.0f
+        data modify storage api: Argument.Damage set value 10.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ補正
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージ与える
-        function lib:damage/
+        function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

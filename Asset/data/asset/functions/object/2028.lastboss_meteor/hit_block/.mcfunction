@@ -15,16 +15,17 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 40.0f
+        data modify storage api: Argument.Damage set value 40.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 火属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s run function lib:damage/
+        data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+        function api:damage/modifier_manual
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 最寄りの着弾地点マーカーを消す
     kill @e[type=item_display,scores={ObjectID=2029},sort=nearest,limit=1]

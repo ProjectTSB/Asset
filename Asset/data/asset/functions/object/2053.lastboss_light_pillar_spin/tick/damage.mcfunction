@@ -6,16 +6,17 @@
 
 # 引数の設定
     # 与えるダメージ、待機時と開放時でダメージが違う
-        execute if entity @s[tag=!2053.Release] run data modify storage lib: Argument.Damage set value 5.0f
-        execute if entity @s[tag=2053.Release] run data modify storage lib: Argument.Damage set value 40.0f
+        execute if entity @s[tag=!2053.Release] run data modify storage api: Argument.Damage set value 5.0f
+        execute if entity @s[tag=2053.Release] run data modify storage api: Argument.Damage set value 40.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

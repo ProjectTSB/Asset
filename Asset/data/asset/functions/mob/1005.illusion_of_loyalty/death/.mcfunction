@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/1005/death
 
 # モデルを消す
-    execute as @e[tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/remove/this
+    execute as @e[type=item_display,tag=RX.ModelRoot,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/remove/this
 
 # 演出
     playsound minecraft:block.amethyst_block.break hostile @a ~ ~ ~ 1 0.5
