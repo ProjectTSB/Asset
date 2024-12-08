@@ -14,8 +14,6 @@
     function api:damage/reset
 
 # 演出
-    # playsound block.glass.break hostile @a ~ ~ ~ 3 0.7
-    # playsound block.glass.break hostile @a ~ ~ ~ 3 0.5
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.7
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.7
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.5
@@ -25,5 +23,10 @@
     particle explosion ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
 
-# 消去
-    kill @s
+# 演出用AEC召喚
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
+    spreadplayers ~ ~ 6 15 false @e[type=area_effect_cloud,tag=2115.Pos]

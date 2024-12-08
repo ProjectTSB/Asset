@@ -17,9 +17,14 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 3 0.7
     playsound item.firecharge.use hostile @a ~ ~ ~ 3 0.7
     playsound item.firecharge.use hostile @a ~ ~ ~ 3 0.8
-    particle soul_fire_flame ~ ~1 ~ 10 1 10 0.1 100 force
+    particle flame ~ ~1 ~ 10 1 10 0.1 100 force
     particle explosion ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
 
-# 消去
-    kill @s
+# 演出用AEC召喚
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2114.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2114.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2114.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2114.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2114.Pos"]}
+    spreadplayers ~ ~ 6 15 false @e[type=area_effect_cloud,tag=2114.Pos]

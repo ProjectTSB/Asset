@@ -20,6 +20,20 @@
     particle firework ~ ~1 ~ 10 1 10 0.1 100 force
     particle dust 1 0.855 0.376 4 ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
+    particle explosion ~ ~1 ~ 10 1 10 0.1 50 force
 
-# 消去
-    kill @s
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.OverrideTransform set value [32.0000f,0.0000f,0.0000f,0.0000f,0.0000f,32.0000f,0.0000f,-3.6250f,0.0000f,0.0000f,32.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]
+    data modify storage api: Argument.FieldOverride.OverrideBillboard set value "vertical"
+    data modify storage api: Argument.FieldOverride.OverrideSubScale set value [20f, 20f, 20f]
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -8f]
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute positioned ~ ~ ~ rotated ~ ~ run function api:object/summon
+
+# 演出用AEC召喚
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2116.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2116.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2116.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2116.Pos"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2116.Pos"]}
+    spreadplayers ~ ~ 6 15 false @e[type=area_effect_cloud,tag=2116.Pos]
