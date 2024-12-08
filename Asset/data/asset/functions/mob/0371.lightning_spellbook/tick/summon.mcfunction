@@ -36,4 +36,7 @@
     function api:object/summon
 
 # リセット
+    scoreboard players reset $Difficulty Temporary
+
+# リセット
     function asset:mob/0371.lightning_spellbook/tick/reset
