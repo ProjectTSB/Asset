@@ -10,9 +10,6 @@
 # @private
     #declare score_holder $Difficulty
 
-# 最寄りのプレイヤーの方を見る
-    tp @s ~ ~ ~ facing entity @p eyes
-
 # ノーマル以上ならDebuffをtrueに
     execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
 
