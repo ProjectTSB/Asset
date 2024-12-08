@@ -1,4 +1,4 @@
-#> asset:mob/0321.mini_guardian/0.load
+#> asset:mob/0321.mini_guardian/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #

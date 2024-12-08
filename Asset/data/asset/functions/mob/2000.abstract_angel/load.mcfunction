@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/2000.abstract_angel/**
-    scoreboard objectives add 1JK.LatestDamageIncreaseDebugAddTick dummy
+    scoreboard objectives add 1JK.LatestDamageIncreaseDebuffAddTick dummy

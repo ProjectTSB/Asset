@@ -10,9 +10,6 @@
 # @private
     #declare score_holder $Difficulty
 
-# 最寄りのプレイヤーの方を見る
-    tp @s ~ ~ ~ facing entity @p eyes
-
 # ノーマル以上ならDebuffをtrueに
     execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
 
@@ -31,3 +28,6 @@
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     function api:object/summon
+
+# リセット
+    scoreboard players reset $Difficulty Temporary
