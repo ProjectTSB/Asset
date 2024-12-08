@@ -35,4 +35,4 @@
     execute if entity @s[scores={1038.Count=1,General.Object.Tick=1..4}] run playsound entity.dolphin.jump player @a ~ ~ ~ 0.2 0.9
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=5..}]
+    kill @s[scores={General.Object.Tick=6..}]
