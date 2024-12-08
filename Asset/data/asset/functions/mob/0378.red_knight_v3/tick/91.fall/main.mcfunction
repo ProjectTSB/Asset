@@ -10,6 +10,8 @@
 
 # 下に落ちる
     execute if score @s AI.Tick matches 0.. positioned ~ ~-0.25 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 2.. at @s positioned ~ ~-0.25 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 4.. at @s positioned ~ ~-0.25 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
 
 # 地面についたらリセット
     execute if score @s AI.Tick matches 0.. at @s unless block ~ ~-0.25 ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/skill_reset

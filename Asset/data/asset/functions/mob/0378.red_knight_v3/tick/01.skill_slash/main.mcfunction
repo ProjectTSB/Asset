@@ -27,6 +27,8 @@
     execute if score @s AI.Tick matches 28 run data modify storage api: Argument.FieldOverride set value {Color:8388608,Frames:[20335,20336,20337],Scale:[7f,7f,0.1f],Transformation:{left_rotation:[0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     execute if score @s AI.Tick matches 28 at @s positioned ^ ^ ^2 positioned ~ ~1 ~ run function asset:mob/0378.red_knight_v3/tick/common/slash_obj_summon
 
+# 低HP状態でナイフ追加で投げる
+    execute if score @s AI.Tick matches 28 if entity @s[tag=AI.HPless50per] run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
 
 # リセット
     execute if score @s AI.Tick matches 34 run function asset:mob/0378.red_knight_v3/tick/skill_reset

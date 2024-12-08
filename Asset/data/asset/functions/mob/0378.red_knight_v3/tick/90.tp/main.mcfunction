@@ -18,10 +18,11 @@
     execute if score @s AI.Tick matches 3 positioned ~ ~0.25 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
     execute if score @s AI.Tick matches 4 positioned ~ ~0.5 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
 # テレポートを３回くらい繰り返す
-    execute if score @s AI.Tick matches 10 facing entity @p[gamemode=!spectator] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
-    execute if score @s AI.Tick matches 14 facing entity @p[gamemode=!spectator] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
-    execute if score @s AI.Tick matches 18 run data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
-    execute if score @s AI.Tick matches 18 facing entity @p[gamemode=!spectator] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
-
+    execute if score @s AI.Tick matches 10 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
+    execute if score @s AI.Tick matches 18 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
+    execute if score @s AI.Tick matches 20 run data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
+    execute if score @s AI.Tick matches 20 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
+    execute if score @s AI.Tick matches 21 if predicate api:global_vars/difficulty/min/hard facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/90.tp/spread_facing_tp
+    execute if score @s AI.Tick matches 21 if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
 # 攻撃に移行
     execute if score @s AI.Tick matches 25 run function asset:mob/0378.red_knight_v3/tick/90.tp/skill_move

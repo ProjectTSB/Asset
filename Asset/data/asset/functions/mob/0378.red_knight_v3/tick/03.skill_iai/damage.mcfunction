@@ -23,7 +23,7 @@
     # 第1属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第2属性
-        data modify storage api: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
         function api:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/

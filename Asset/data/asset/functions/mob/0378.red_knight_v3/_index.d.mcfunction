@@ -14,11 +14,13 @@
     #declare tag AI.Skill03
     #declare tag AI.Skill04
     #declare tag AI.Skill05
+    #declare tag AI.Skill06
     #declare tag AI.Skill90
     #declare tag AI.Skill91
     #declare tag AI.Skill90Used
     #
     #declare tag AI.Opening
+    #declare tag AI.HPless50per
     #
     #declare score_holder $Random
     #

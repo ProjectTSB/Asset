@@ -35,5 +35,9 @@
     execute if score @s AI.Tick matches 41 positioned ^ ^ ^-3 run function asset:mob/0378.red_knight_v3/tick/common/slash_obj_summon
     execute if score @s AI.Tick matches 41 positioned ^ ^ ^-3 run function asset:mob/0378.red_knight_v3/tick/02.skill_plunge/damage
 
+
+# たまにスコア戻して連続攻撃
+    execute if score @s AI.Tick matches 42 if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/30 run scoreboard players set @s AI.Tick -1
+
 # リセット
     execute if score @s AI.Tick matches 63 run function asset:mob/0378.red_knight_v3/tick/skill_reset

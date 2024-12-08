@@ -1,4 +1,4 @@
-#> asset:mob/0378.red_knight_v3/tick/02.skill_plunge/tp
+#> asset:mob/0378.red_knight_v3/tick/05.skill_jump/tp
 #
 #
 #
