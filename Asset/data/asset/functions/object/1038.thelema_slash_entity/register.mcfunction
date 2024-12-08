@@ -15,4 +15,5 @@
 # ID (int)
     data modify storage asset:object ID set value 1038
 # フィールド(オプション)
-    #data modify storage asset:object Field.Number set value 1
+    data modify storage asset:object Field.Count set value 1
+    data modify storage asset:object Field.Rotation set value [0f,0f]
