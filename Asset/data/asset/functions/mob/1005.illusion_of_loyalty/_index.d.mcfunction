@@ -7,9 +7,9 @@
     #declare tag RX.ModelRoot.Target
 
 ## スキルリスト
-    #declare tag RX.Skill.AimingLasser
-    #declare tag RX.Skill.AimingLasser.Direct
-    #declare tag RX.Skill.AimingLasser.Advance
+    #declare tag RX.Skill.AimingLaser
+    #declare tag RX.Skill.AimingLaser.Direct
+    #declare tag RX.Skill.AimingLaser.Advance
 
 
 ## マーカー

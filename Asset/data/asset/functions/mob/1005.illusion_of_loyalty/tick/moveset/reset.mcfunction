@@ -5,9 +5,9 @@
 # @within function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/**
 
 # スコアを戻す
-    scoreboard players set @s General.Mob.Tick -2
+    scoreboard players set @s General.Mob.Tick 0
 
 # スキル
-    tag @s remove RX.Skill.AimingLasser
-    tag @s remove RX.Skill.AimingLasser.Advance
-    tag @s remove RX.Skill.AimingLasser.Direct
+    tag @s remove RX.Skill.AimingLaser
+    tag @s remove RX.Skill.AimingLaser.Advance
+    tag @s remove RX.Skill.AimingLaser.Direct

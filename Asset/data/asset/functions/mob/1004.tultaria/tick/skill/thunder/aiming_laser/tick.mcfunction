@@ -4,9 +4,14 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
+#> タグ
+# @private
+    #declare tag RX.Skill.AimingLaser.Direct
+    #declare tag RX.Skill.AimingLaser.Advance
+
+
 # モデルを自分の向きに
     execute if score @s RW.Tick matches 0.. at @s facing entity @p eyes run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ 0
-
 
 # 最初の移動
     execute if score @s RW.Tick matches 0 store result storage rw_storage: Rotation int 1 run random value -180..180
@@ -26,6 +31,9 @@
 
 # 射撃
     # 偏差
+        # 幻影へ号令
+            execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 20 run tag @e[type=wither_skeleton,scores={MobID=1005},distance=..64] add RX.Skill.AimingLaser.Advance
+            execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/aiming_laser/
         # マーカー設置
             execute if score @s RW.Tick matches 20 facing entity @p eyes run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/
         # 警告
@@ -35,14 +43,17 @@
         # マーカーキル
             execute if score @s RW.Tick matches 35 run kill @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1]
     # 直接狙う
+        # 幻影へ号令
+            execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 20 run tag @e[type=wither_skeleton,scores={MobID=1005},distance=..64] add RX.Skill.AimingLaser.Direct
+            execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 35 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/aiming_laser/
         # マーカー設置
             execute if score @s RW.Tick matches 35 at @p[distance=..30] anchored eyes rotated ~ 0 positioned ^ ^-1 ^ run summon marker ~ ~ ~ {Tags:["RW.Marker.Aim"]}
         # 警告
-            execute if score @s RW.Tick matches 35..40 positioned ~ ~1.5 ~ facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/alert
+            execute if score @s RW.Tick matches 35..45 positioned ~ ~1.5 ~ facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/alert
         # エイム射撃
-            execute if score @s RW.Tick matches 40..45 positioned ~ ~1.5 ~ facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/shoot
+            execute if score @s RW.Tick matches 45..50 positioned ~ ~1.5 ~ facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/shoot
         # マーカーキル
-            execute if score @s RW.Tick matches 45 run kill @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1]
+            execute if score @s RW.Tick matches 50 run kill @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1]
 
 # ループ
     execute if entity @s[scores={RW.LoopCount=..1,RW.Tick=50}] run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/add_loop_count
