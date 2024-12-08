@@ -1,4 +1,4 @@
-#> asset:object/1049.lexiel_rod_fireball/summon/.m
+#> asset:object/1049.lexiel_rod_fireball/summon/macro.m
 #
 #
 #
