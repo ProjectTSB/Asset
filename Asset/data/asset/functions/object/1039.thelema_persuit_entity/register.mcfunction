@@ -18,4 +18,4 @@
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.SwordCount set value 1
-    data modify storage asset:object Field.Rotation set value [0f,0f]
+    data modify storage asset:object Field.RotationX set value 0f
