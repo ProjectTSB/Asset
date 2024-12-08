@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0227.frost_eye/_/death
+# @within function asset:mob/alias/227/death
 
 # 演出
     particle block ice ~ ~1.6 ~ 0.3 0.3 0.3 0 50 normal @a

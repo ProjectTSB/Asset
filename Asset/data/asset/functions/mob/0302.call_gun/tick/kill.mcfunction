@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0302.call_gun/tick/2.tick
+# @within function asset:mob/0302.call_gun/tick/
 
 # 抹消
     tp ~ ~-1000 ~
