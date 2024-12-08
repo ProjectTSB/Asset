@@ -1,8 +1,9 @@
 #> asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
 #
-# アダマントスパイク
+# 竜巻・なぎはらい火炎放射の風弾
 #
 # @within asset:mob/0410.heiloang/tick/event/tornado/
+# @within asset:mob/0410.heiloang/tick/event/sweep/
 
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2119

@@ -11,13 +11,27 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/6_sweep_breath
     # 予告
-    execute if score @s BE.EventTimer matches 5 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
+        execute if score @s BE.EventTimer matches 5 at @e[type=marker,tag=BE.CenterPosition] rotated ~-90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
     # 攻撃
         execute if score @s BE.EventTimer matches 48..105 positioned as @e[type=marker,tag=aj.heiloang_aj.locator.locator_head,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/event/sweep/attack
     # 角度
         execute if score @s BE.EventTimer matches 10 run tp @s ~ ~ ~ ~70 0
         execute if score @s BE.EventTimer matches 78..105 run tp @s ~ ~ ~ ~-8 ~
         execute if score @s BE.EventTimer matches 130 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
+    # 位置決定
+            execute if score @s BE.EventTimer matches 10 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/tornado/summon_attack_pos
+        # 攻撃
+            execute if score @s BE.EventTimer matches 11 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 13 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 15 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 17 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 19 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 21 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 23 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 25 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 27 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 29 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
+            execute if score @s BE.EventTimer matches 31 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/summon_wind_burst
 
 # 終了
     execute if score @s BE.EventTimer matches 136.. run function asset:mob/0410.heiloang/tick/event/sweep/end

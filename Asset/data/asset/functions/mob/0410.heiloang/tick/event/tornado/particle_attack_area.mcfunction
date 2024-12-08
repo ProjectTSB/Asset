@@ -50,9 +50,9 @@
     particle cloud ^-1.60411 ^ ^-9.8705 0 0 0 0.05 1
 
 # 近くのプレイヤーを吸引
-    execute as @a[distance=3..15] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.1
-    execute as @a[distance=16..20] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.2
-    execute as @a[distance=20..50] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.3
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=3..15] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.1
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=16..20] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.2
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=20..50] at @s facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ^ ^ ^0.3
 
 # パーティクル
     tp @s ~ ~ ~ ~2 0

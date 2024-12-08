@@ -4,3 +4,5 @@
 #> tag
 # @within function asset:object/2117.heiloang_tornado/**
     #declare tag 2117.Pos
+    #declare tag 2117.Text
+    #declare tag 2117.Append

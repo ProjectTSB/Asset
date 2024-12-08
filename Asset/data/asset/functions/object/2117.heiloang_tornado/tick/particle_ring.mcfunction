@@ -4,9 +4,6 @@
 #
 # @within asset:object/2117.heiloang_tornado/tick/
 
-# 回転
-    tp @s ~ ~ ~ ~5 ~
-
 # 円型ベクトルパーティクル
 # 円 1
     execute rotated ~00 0 positioned ^ ^ ^1.8 run particle cloud ~ ~ ~ ^ ^ ^100000000 0.00000004 0
