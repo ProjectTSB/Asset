@@ -32,4 +32,4 @@
     data modify storage asset:effect RequireClearLv set value 2
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.MobUUID set value -1
