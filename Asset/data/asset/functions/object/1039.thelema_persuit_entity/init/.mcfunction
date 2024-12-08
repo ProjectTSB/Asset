@@ -5,10 +5,6 @@
 # @within asset:object/alias/1039/init
 
 # フィールドから各データを取得
-
-# 向き
-    data modify entity @s Rotation set from storage asset:context this.Rotation
-
 # UserID
     execute store result score @s 1039.UserID run data get storage asset:context this.UserID
 

@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/1039/summon
 
-# 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+# 召喚
+    function asset:object/1039.thelema_persuit_entity/summon/.m with storage asset:context this
