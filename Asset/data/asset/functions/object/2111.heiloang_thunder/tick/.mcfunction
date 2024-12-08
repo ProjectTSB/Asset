@@ -8,7 +8,6 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 攻撃
-    particle firework ~ ~ ~ 1 1 1 0.05 5
     execute if entity @s[scores={General.Object.Tick=1}] run function asset:object/2111.heiloang_thunder/tick/prediction
     execute if entity @s[scores={General.Object.Tick=20}] rotated ~180 ~ run function asset:object/2111.heiloang_thunder/tick/attack
 
