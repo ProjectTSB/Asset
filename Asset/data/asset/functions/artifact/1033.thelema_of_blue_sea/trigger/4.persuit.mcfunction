@@ -24,7 +24,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1039
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
     execute store result storage api: Argument.FieldOverride.SwordCount int 1 run data get storage api: Return.MaxHealth 0.05
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute at @e[type=#lib:living,tag=Victim,distance=..6] run function api:object/summon
