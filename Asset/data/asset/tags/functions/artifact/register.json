@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1110.lantern_of_firefly/register",
         "asset:artifact/1119.call_maid/register",
         "asset:artifact/1145.nurse_call/register",
         "asset:artifact/0003.humanity/register",
@@ -202,7 +203,6 @@
         "asset:artifact/0910.ignite/register",
         "asset:artifact/0911.reactive_armor_head/register",
         "asset:artifact/0915.flame_hunter_hat/register",
-        "asset:artifact/0920.dal_i_thalion/register",
         "asset:artifact/0930.z_flag/register",
         "asset:artifact/0931.d_u_t_y/register",
         "asset:artifact/0932.equal_speed_charlie_london/register",
@@ -252,7 +252,6 @@
         "asset:artifact/1088.purifying_hydrangea/register",
         "asset:artifact/1089.antimatter_gatling_rifle/register",
         "asset:artifact/1098.mirror_piece_of_bygone_days/register",
-        "asset:artifact/1106.rainbow_candy/register",
         "asset:artifact/1108.white_lily_of_priestess/register"
     ]
 }
