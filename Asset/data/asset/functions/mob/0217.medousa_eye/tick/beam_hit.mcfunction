@@ -38,5 +38,8 @@
     execute store result storage api: Argument.Fluctuation int -30 run scoreboard players remove $Difficulty Temporary 1
     execute unless predicate api:global_vars/difficulty/easy run function api:mp/fluctuation
 
+# リセット
+    scoreboard players reset $Difficulty Temporary
+
 # ヒットTag削除
     tag @s remove LandingTarget
