@@ -8,3 +8,5 @@
     #declare score_holder $BonusMPSelectCount
     #declare score_holder $BonusAttackSelectCount
     #declare score_holder $BonusDefenseSelectCount
+    #declare score_holder $SelectBonusHealthSum
+    #declare score_holder $SelectBonusMPSum
