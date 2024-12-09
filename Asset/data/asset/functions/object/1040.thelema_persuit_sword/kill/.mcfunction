@@ -4,6 +4,18 @@
 #
 # @within asset:object/alias/1040/kill
 
+#> Private
+# @private
+    #declare tag 1040.Already
+
+# tickとhit_blockメソッドから2回呼ばれる可能性があるため1度だけ実行されるように対策する
+
+# 実行済みならreturn
+    execute if entity @s[tag=1040.Already] run return 0
+
+# 自身に実行済みTag付与
+    tag @s add 1040.Already
+
 # 演出
     execute positioned ~ ~0.3 ~ rotated ~ 0 run function asset:object/1040.thelema_persuit_sword/kill/vfx
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1 0.7 0
