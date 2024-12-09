@@ -3,8 +3,8 @@
 # 神器のメイン処理部
 #
 # @within function
-#       asset:artifact/1027.fire_of_rebirth/trigger/3.main
-#       asset:artifact/1027.fire_of_rebirth/trigger/magic_circle
+#   asset:artifact/1027.fire_of_rebirth/trigger/3.main
+#   asset:artifact/1027.fire_of_rebirth/trigger/magic_circle
 
 # ここから先は神器側の効果の処理を書く
 
