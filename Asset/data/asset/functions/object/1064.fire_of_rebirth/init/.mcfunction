@@ -5,7 +5,7 @@
 # @within asset:object/alias/1064/init
 
 # 移動設定
-    data modify storage asset:context this.Speed set value 4
+    data modify storage asset:context this.Speed set value 8
     data modify storage asset:context this.Range set value 100
 
 # 継承

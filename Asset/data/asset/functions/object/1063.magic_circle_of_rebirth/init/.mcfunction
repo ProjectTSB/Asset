@@ -21,14 +21,14 @@
 
 # ターゲット距離設定
 # 出来る限り広範囲を拾えるように、それでいてあまり被らないように
-    # Min = 2 + MagicID / 2
+    # Min = 1 + MagicID / 2
         execute store result score $TJ.Distance Temporary run data get storage asset:context this.MagicID
         scoreboard players operation $TJ.Distance Temporary /= $2 Const
-        execute store result storage asset:context this.Distance.Min int 1 run scoreboard players operation $TJ.Distance Temporary += $2 Const
-    # Diameter = 10 + ((MagicID / 2) * 5
-    # Radius = (10 + ((MagicID / 2) * 5)) / 2
+        execute store result storage asset:context this.Distance.Min int 1 run scoreboard players operation $TJ.Distance Temporary += $1 Const
+    # Diameter = 20 + (MagicID / 2) * 5
+    # Radius = (20 + (MagicID / 2) * 5) / 2
         execute store result score $TJ.Distance Temporary run data get storage asset:context this.MagicID
         scoreboard players operation $TJ.Distance Temporary /= $2 Const
         scoreboard players operation $TJ.Distance Temporary *= $5 Const
-        execute store result storage asset:context this.Distance.Diameter int 1 run scoreboard players operation $TJ.Distance Temporary += $10 Const
+        execute store result storage asset:context this.Distance.Diameter int 1 run scoreboard players operation $TJ.Distance Temporary += $20 Const
         execute store result storage asset:context this.Distance.Radius int 1 run scoreboard players operation $TJ.Distance Temporary /= $2 Const
