@@ -16,7 +16,7 @@
 # 固定加算
     scoreboard players add $BonusHealth Global 2
     execute as @a run function api:modifier/max_health/update_bonus
-    scoreboard players add $BonusMP Global 4
+    scoreboard players add $BonusMP Global 5
     execute as @a run function api:modifier/max_mp/update_bonus
 # 選択トリガー
     scoreboard players enable @s 02.Trigger
