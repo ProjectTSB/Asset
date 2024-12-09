@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"つけもの石","color":"gray"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+2","color":"green"}','{"translate":"%s %s","with":[{"text":"移動速度-15%","color":"dark_red"},{"text":"低速落下無効","color":"gray"}]}','{"text":"漬物を漬ける時に使うとても大きくて重い石。"}','{"text":"身動きが重くなる代わりにノックバックしにくくなる。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

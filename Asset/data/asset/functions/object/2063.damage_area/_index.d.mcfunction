@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2063.damage_area/**
-    #declare scoreholder $2063.Temp
+    #declare score_holder $2063.Temp
