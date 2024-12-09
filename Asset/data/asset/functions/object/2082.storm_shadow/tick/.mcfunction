@@ -10,9 +10,4 @@
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
 
-#方向転換
-#加速
-#命中判定
-function asset:object/super.tick
-#攻撃
-#テンプレートからオブジェクト->テンプレート->メソッド->hit_entity
+    function asset:object/super.tick
