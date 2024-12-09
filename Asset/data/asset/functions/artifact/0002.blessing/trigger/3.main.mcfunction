@@ -8,10 +8,10 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-# 固定加算量  : HP  +2, MP  +4
-# 50島攻略時  : HP+100, MP+200
-# 追加選択    : HP  +1, MP  +2, Atk +1%, Def +1%
-# 50島極振り時: HP +50, MP+100, Atk+50%, Def+50%
+# 固定加算量  : HP  +2, MP  +5
+# 60島攻略時  : HP+120, MP+300
+# 追加選択    : HP  +2, MP  +4, Atk +1%, Def +1%
+# 選択上限時  : HP +60, MP+120, Atk+30%, Def+30%
 
 # 固定加算
     scoreboard players add $BonusHealth Global 2
