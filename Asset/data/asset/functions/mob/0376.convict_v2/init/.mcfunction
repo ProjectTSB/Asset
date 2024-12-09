@@ -3,7 +3,9 @@
 # Mobのinit時の処理
 #
 # @within asset:mob/alias/376/init
-
+# super.init呼び出し
+    function asset:mob/super.init
+    
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:convict/summon
 
