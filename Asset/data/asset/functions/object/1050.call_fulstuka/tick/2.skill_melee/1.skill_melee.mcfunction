@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1050.call_fulstuka/tick/4.skill_active
+# @within function asset:object/1050.call_fulstuka/tick/skill_active
 
 # 最初に実行するの
     execute if score @s 1050.ActionTime matches 0 as @s run function asset:object/1050.call_fulstuka/tick/2.skill_melee/2.first_tick

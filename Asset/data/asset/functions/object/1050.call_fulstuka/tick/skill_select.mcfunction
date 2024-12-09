@@ -1,4 +1,4 @@
-#> asset:object/1050.call_fulstuka/tick/3.skill_select
+#> asset:object/1050.call_fulstuka/tick/skill_select
 #
 #
 #

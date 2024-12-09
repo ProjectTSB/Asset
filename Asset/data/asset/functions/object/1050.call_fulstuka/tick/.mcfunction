@@ -17,7 +17,7 @@
     execute if score @s 1050.ActionTime matches 0 unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20] run scoreboard players set @s 1050.ActionTime -10
 
 # 敵が周囲にいたらスキル選択
-    execute if score @s 1050.ActionTime matches 0 run function asset:object/1050.call_fulstuka/tick/3.skill_select
+    execute if score @s 1050.ActionTime matches 0 run function asset:object/1050.call_fulstuka/tick/skill_select
 
 # 選択したスキル発動
-    execute if score @s 1050.ActionTime matches 0.. run function asset:object/1050.call_fulstuka/tick/4.skill_active
+    execute if score @s 1050.ActionTime matches 0.. run function asset:object/1050.call_fulstuka/tick/skill_active

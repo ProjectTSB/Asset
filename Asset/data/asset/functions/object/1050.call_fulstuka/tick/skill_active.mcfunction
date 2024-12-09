@@ -1,4 +1,4 @@
-#> asset:object/1050.call_fulstuka/tick/4.skill_active
+#> asset:object/1050.call_fulstuka/tick/skill_active
 #
 #
 #
