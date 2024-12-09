@@ -7,7 +7,6 @@
 #> Private
 # @private
     #declare score_holder $Damage
-    #declare score_holder $3200
 
 # 最大体力取得
     function api:modifier/max_health/get
@@ -18,9 +17,9 @@
 
 # 与ダメージを計算しフィールドへ
 # 最大体力の160%、最大320
-    scoreboard players set $3200 Temporary 3200
-    execute store result score $Damage Temporary run data get storage api: Return.MaxHealth 16
-    execute store result storage api: Argument.FieldOverride.Damage double 0.1 run scoreboard players operation $Damage Temporary < $3200 Temporary
+# 一度200の10倍を取得し、200より大きいなら200にする
+    execute store result score $Damage Temporary run data get storage api: Return.MaxHealth 10
+    execute store result storage api: Argument.FieldOverride.Damage double 0.16 run scoreboard players operation $Damage Temporary < $2000 Const
 
 # 召喚
     data modify storage api: Argument.ID set value 1039
@@ -30,5 +29,4 @@
     execute at @e[type=#lib:living,tag=Victim,distance=..6] run function api:object/summon
 
 # リセット
-    scoreboard players reset $3200 Temporary
     scoreboard players reset $Damage Temporary
