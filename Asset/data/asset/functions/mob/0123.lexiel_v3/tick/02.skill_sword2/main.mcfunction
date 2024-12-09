@@ -5,10 +5,10 @@
 # @within function asset:mob/0123.lexiel_v3/tick/skill_active
 
 # ３回くらいTPする
-    execute if score @s 3F.Tick matches 0 at @p[distance=..100,gamemode=!spectate] rotated ~ 0 positioned ^ ^ ^5 run function asset:mob/0123.lexiel_v3/tick/common/spread_tp
-    execute if score @s 3F.Tick matches 0 at @s facing entity @p[distance=..100,gamemode=!spectate] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
-    execute if score @s 3F.Tick matches 7 at @p[distance=..100,gamemode=!spectate] rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0123.lexiel_v3/tick/common/spread_tp
-    execute if score @s 3F.Tick matches 7 at @s facing entity @p[distance=..100,gamemode=!spectate] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
+    execute if score @s 3F.Tick matches 0 at @p[gamemode=!spectator,distance=..100] rotated ~ 0 positioned ^ ^ ^5 run function asset:mob/0123.lexiel_v3/tick/common/spread_tp
+    execute if score @s 3F.Tick matches 0 at @s facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
+    execute if score @s 3F.Tick matches 7 at @p[gamemode=!spectator,distance=..100] rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0123.lexiel_v3/tick/common/spread_tp
+    execute if score @s 3F.Tick matches 7 at @s facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
 # アニメーション開始
     execute if score @s 3F.Tick matches 15 as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/attack2/play
 # フィールド設定
