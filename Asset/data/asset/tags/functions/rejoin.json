@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0365.frestchika_v2/rejoin_process",
         "asset:artifact/1065.magic_bullet/trigger/rejoin_process",
         "asset:artifact/1141.bell_of_courage/trigger/rejoin_process",
         "asset:artifact/1110.lantern_of_firefly/trigger/rejoin_process",
