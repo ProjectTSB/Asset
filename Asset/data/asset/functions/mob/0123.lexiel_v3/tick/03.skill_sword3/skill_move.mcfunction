@@ -10,7 +10,7 @@
     kill @e[type=marker,scores={ObjectID=2102},distance=..70]
 
 # その場にTP
-    execute facing entity @p[] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
+    execute facing entity @p[distance=..100,gamemode=!spectate] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute at @s run function asset:mob/0123.lexiel_v3/tick/common/tp_vfx
 
 # 時間無理やり変更

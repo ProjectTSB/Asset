@@ -6,7 +6,7 @@
 
 # アニメーション開始
     execute if score @s 3F.Tick matches 0 as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] run function animated_java:lexiel/animations/magic2/play
-    execute if score @s 3F.Tick matches 0 facing entity @p[] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
+    execute if score @s 3F.Tick matches 0 facing entity @p[distance=..100,gamemode=!spectate] feet run function asset:mob/0123.lexiel_v3/tick/common/tp
 
 # 演出
     execute if score @s 3F.Tick matches 22 run playsound minecraft:item.trident.riptide_2 hostile @a ~ ~ ~ 1 1.4
