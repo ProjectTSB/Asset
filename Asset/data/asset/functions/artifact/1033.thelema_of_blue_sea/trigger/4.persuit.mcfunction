@@ -13,7 +13,7 @@
     function api:modifier/max_health/get
 
 # 3回目の攻撃の時、追撃用オブジェクトを召喚
-# Rotation、SwordCount、Damage、UserIDをFieldOverrideへ入れる
+# RotationX、SwordCount、Damage、UserIDをFieldOverrideへ入れる
 # SwordCountは最大HPの5%(int)として召喚
 
 # 与ダメージを計算しフィールドへ
