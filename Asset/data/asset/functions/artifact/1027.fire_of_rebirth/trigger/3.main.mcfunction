@@ -15,16 +15,16 @@
 # 魔法陣設置
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYALAGYUCGFAbAEbUC0A7AMwCMRzZRAHACZm-AJzsAxszpFBRaq278ycTmFwZqAWwTJAW74ACNbhjUATtoDOScBID2eDBCQBWXBTN2tNsADdqKHi64AAeSNK4UEgADAC+sbgQdj7+gcFgYYh0kTHxuHZUlnDOiNG4DHAAXmhwZjG4aJYAQlU1ZgCiAI54AShQAMqmEnAkiDQoRXng0PCk6Fjq+ISjYJJEZOzULgwiguzCZJxw7MzU1Jz8zHASrHCirBL8dIJ3i5o6pIaczPYwUSbmKw+eyOErsdyebyIcCpII+TLSAB0bjAUUQzHYiP4eUgyWhfgCcPxmTKqNyCTABQoRRKpIq1Vq4U4iOyYEaLQZHW6vQGQxGSHGkwS01gulQmBwS2IpFYdBcgjoZ2+LjgdDgvHYNGYDAYFFEzCIrFYur49AoDDIb20Yq+Pzsfztf0WpgsWms+JBTiQ4LAHi8KUJ6UydGROXRmOxFKSAbS8PqZNKOKpNPj9LaSGZrPZrVqXR6KD6g2ow1Ggrg8QAukA_3
     # 線 1
-    execute anchored eyes positioned ^-6 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    execute anchored eyes positioned ^-3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    execute anchored eyes positioned ^3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    execute anchored eyes positioned ^6 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
+    execute anchored eyes positioned ^-6 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
+    execute anchored eyes positioned ^-3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
+    execute anchored eyes positioned ^3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
+    execute anchored eyes positioned ^6 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
     # 線 2
-    execute anchored eyes positioned ^-6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    execute anchored eyes positioned ^-3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
+    execute anchored eyes positioned ^-6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
+    execute anchored eyes positioned ^-3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
     # 線 3
-    execute anchored eyes positioned ^6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    execute anchored eyes positioned ^3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
+    execute anchored eyes positioned ^6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
+    execute anchored eyes positioned ^3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/summon
 
-# 魔法陣実行
-    function asset:artifact/1027.fire_of_rebirth/trigger/magic_circle
+# リセット
+    scoreboard players reset $SJ.MagicID Temporary
