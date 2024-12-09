@@ -1,8 +1,6 @@
 {
     "values": [
         "asset:mob/0123.lexiel_v3/load",
-        "asset:mob/0266.small_dark_ball/load",
-        "asset:mob/0265.dark_familiar/load",
         "asset:mob/0369.prominence_spellbook/load",
         "asset:mob/0235.orange_thrower/load",
         "asset:mob/0321.mini_guardian/load",
