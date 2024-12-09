@@ -1,8 +1,8 @@
-#> asset:artifact/0983.icicle_blade/trigger/slash/particle5
+#> asset:artifact/0983.icicle_blade/trigger/vfx/5
 #
 #
 #
-# @within function asset:artifact/0983.icicle_blade/trigger/**
+# @within function asset:artifact/0983.icicle_blade/trigger/vfx/.m
 
 ## slash5.obj
 # slash.001
