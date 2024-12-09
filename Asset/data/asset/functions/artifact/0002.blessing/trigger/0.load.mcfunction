@@ -7,3 +7,10 @@
 #> 定義類はここに
 # @within function asset:artifact/0002.blessing/trigger/**
     scoreboard objectives add 02.Trigger trigger
+    scoreboard objectives add 02.SelectCount dummy
+
+# 初期化
+    scoreboard players set $BonusHealthSelectCount 02.SelectCount 0
+    scoreboard players set $BonusMPSelectCount 02.SelectCount 0
+    scoreboard players set $BonusAttackSelectCount 02.SelectCount 0
+    scoreboard players set $BonusDefenseSelectCount 02.SelectCount 0
