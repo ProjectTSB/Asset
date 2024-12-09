@@ -8,11 +8,11 @@
     execute unless score @s 02.Trigger matches 1..4 run function lib:message/invalid_operation
     execute unless score @s 02.Trigger matches 1..4 run function asset:artifact/0002.blessing/trigger/show_trigger_chat
 # 体力
-    execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealth Global 1
+    execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealth Global 2
     execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealthSelectCount 02.SelectCount 1
     execute if score @s 02.Trigger matches 1 as @a run function api:modifier/max_health/update_bonus
 # MP
-    execute if score @s 02.Trigger matches 2 run scoreboard players add $BonusMP Global 2
+    execute if score @s 02.Trigger matches 2 run scoreboard players add $BonusMP Global 4
     execute if score @s 02.Trigger matches 2 run scoreboard players add $BonusMPSelectCount 02.SelectCount 1
     execute if score @s 02.Trigger matches 2 as @a run function api:modifier/max_mp/update_bonus
 # 攻撃
