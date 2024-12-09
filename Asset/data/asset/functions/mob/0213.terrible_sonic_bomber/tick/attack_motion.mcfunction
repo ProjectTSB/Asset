@@ -22,4 +22,4 @@ execute if score $current_gametime Temporary = $attack_start_time Temporary run 
 execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
 
 # 攻撃終了後の離脱
-execute if score $current_gametime Temporary = $attack_start_time Temporary run tp @s ~ ~ ~ ~60 ~
+execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/escape_after_attack
