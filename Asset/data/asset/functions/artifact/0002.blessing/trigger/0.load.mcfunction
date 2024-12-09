@@ -11,9 +11,9 @@
     scoreboard objectives add 02.SelectBonusSum dummy
 
 # 初期化
-    scoreboard players set $BonusHealthSelectCount 02.SelectCount 0
-    scoreboard players set $BonusMPSelectCount 02.SelectCount 0
-    scoreboard players set $BonusAttackSelectCount 02.SelectCount 0
-    scoreboard players set $BonusDefenseSelectCount 02.SelectCount 0
-    scoreboard players set $SelectBonusHealthSum 02.SelectBonusSum 0
-    scoreboard players set $SelectBonusMPSum 02.SelectBonusSum 0
+    scoreboard players set $02.MaxHealth 02.SelectCount 0
+    scoreboard players set $02.MaxMP 02.SelectCount 0
+    scoreboard players set $02.Attack 02.SelectCount 0
+    scoreboard players set $02.Defense 02.SelectCount 0
+    scoreboard players set $02.MaxHealth 02.SelectBonusSum 0
+    scoreboard players set $02.MaxMP 02.SelectBonusSum 0
