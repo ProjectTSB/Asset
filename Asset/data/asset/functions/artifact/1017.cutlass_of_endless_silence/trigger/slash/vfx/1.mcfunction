@@ -1,8 +1,8 @@
-#> asset:artifact/1017.cutlass_of_endless_silence/trigger/vfx
+#> asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/vfx/1
 #
 #
 #
-# @within function asset:artifact/1017.cutlass_of_endless_silence/trigger/**
+# @within function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/first
 
 ## 外4
 particle dust 0.647 0.647 0.647 1.3 ^1.96457 ^1.96457 ^0.12107 0 0 0 0 1

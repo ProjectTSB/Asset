@@ -1,8 +1,8 @@
-#> asset:artifact/1017.cutlass_of_endless_silence/trigger/vfx2
+#> asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/vfx/2
 #
 #
 #
-# @within function asset:artifact/1017.cutlass_of_endless_silence/trigger/**
+# @within function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/second
 
 # 演出
     particle explosion ~ ~ ~ 0 0 0 3 0

@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # ループさせる
-    execute if entity @a[tag=S9.Activation] run schedule function asset:artifact/1017.cutlass_of_endless_silence/trigger/schedule 1t replace
+    execute if entity @a[tag=S9.Activation] run schedule function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/loop 1t replace

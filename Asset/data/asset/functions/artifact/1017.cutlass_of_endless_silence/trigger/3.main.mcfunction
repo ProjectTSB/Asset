@@ -13,4 +13,4 @@
     tag @s add S9.Activation
 
 # スケジュールを開始する
-    schedule function asset:artifact/1017.cutlass_of_endless_silence/trigger/schedule 1t replace
+    schedule function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/loop 1t replace
