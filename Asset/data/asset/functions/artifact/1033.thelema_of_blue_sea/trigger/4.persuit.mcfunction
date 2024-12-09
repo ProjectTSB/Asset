@@ -17,9 +17,9 @@
 # SwordCountは最大HPの5%(int)として召喚
 
 # 与ダメージを計算しフィールドへ
-# 最大体力の200%、最大320
+# 最大体力の160%、最大320
     scoreboard players set $3200 Temporary 3200
-    execute store result score $Damage Temporary run data get storage api: Return.MaxHealth 20
+    execute store result score $Damage Temporary run data get storage api: Return.MaxHealth 16
     execute store result storage api: Argument.FieldOverride.Damage double 0.1 run scoreboard players operation $Damage Temporary < $3200 Temporary
 
 # 召喚
