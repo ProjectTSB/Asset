@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:artifact/1027.fire_of_rebirth/trigger/3.main
+
 #> private
 # @private
     #declare score_holder $Random
@@ -16,16 +17,17 @@
     execute unless entity @e[type=#lib:living,tag=SH.This,distance=..80] run tp @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] ~ ~ ~
     tag @e[type=#lib:living,tag=SH.This,distance=..80] remove SH.This
 
-# スコア設定
+# クールタイム設定
+    # 疑似乱数取得
+        execute store result score $Random Temporary run function lib:random/
+    # ほしい範囲に剰余算
+        scoreboard players operation $Random Temporary %= $10 Const
+        scoreboard players set @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] SH.CoolTime 40
+        scoreboard players operation @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] SH.CoolTime += $Random Temporary
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $10 Const
-    scoreboard players set @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] SH.CoolTime 40
-    scoreboard players operation @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] SH.CoolTime += $Random Temporary
-# UserID
+# UserIDを代入
     scoreboard players operation @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] SH.UserID = @s UserID
+
 # リセット
     tag @e[type=area_effect_cloud,tag=SH.MagicSet,sort=nearest,limit=1] remove SH.MagicSet
     scoreboard players reset $Random

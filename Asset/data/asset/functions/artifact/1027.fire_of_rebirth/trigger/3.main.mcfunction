@@ -19,12 +19,12 @@
     execute anchored eyes positioned ^-3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
     execute anchored eyes positioned ^3 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
     execute anchored eyes positioned ^6 ^ ^ positioned ~ ~0 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    # 線 1-copy
+    # 線 2
     execute anchored eyes positioned ^-6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
     execute anchored eyes positioned ^-3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
-    # 線 1-copy-copy
+    # 線 3
     execute anchored eyes positioned ^6.5 ^ ^ positioned ~ ~3.8 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
     execute anchored eyes positioned ^3.65376 ^ ^ positioned ~ ~1.20936 ~ run function asset:artifact/1027.fire_of_rebirth/trigger/magicset
 
 # 魔法陣実行
-    function asset:artifact/1027.fire_of_rebirth/trigger/4.magic_circle
+    function asset:artifact/1027.fire_of_rebirth/trigger/magic_circle
