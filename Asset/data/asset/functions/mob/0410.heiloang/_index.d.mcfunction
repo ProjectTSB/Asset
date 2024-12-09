@@ -39,6 +39,7 @@
     #declare tag BE.Skill.MoveAfterEhd 移動
     #declare tag BE.Skill.Tornado 竜巻
     #declare tag BE.Skill.Sweep なぎはらいブレス
+    #declare tag BE.Skill.Tempest テンペスト
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
