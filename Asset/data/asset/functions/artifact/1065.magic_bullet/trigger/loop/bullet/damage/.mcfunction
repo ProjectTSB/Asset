@@ -55,7 +55,7 @@
     function api:damage/reset
 
 # 7つ目の弾丸かつプレイヤーを狙っててかつ使用者に当たってるなら実行
-    execute if entity @s[tag=TL.AimToPlayer,scores={TL.UseCount=7}] if entity @p[tag=Owner,tag=TL.TargetEntity] as @p[tag=Owner] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/hit_myself
+    execute if entity @s[tag=TL.AimToPlayer,scores={TL.UseCount=7}] as @p[tag=Owner,tag=TL.TargetEntity] run function asset:artifact/1065.magic_bullet/trigger/loop/bullet/damage/hit_myself
 
 # リセット
     scoreboard players reset $Damage Temporary
