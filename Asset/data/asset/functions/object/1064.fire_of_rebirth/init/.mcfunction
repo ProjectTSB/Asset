@@ -6,7 +6,7 @@
 
 # 移動設定
     data modify storage asset:context this.Speed set value 8
-    data modify storage asset:context this.Range set value 100
+    data modify storage asset:context this.Range set value 160
 
 # 継承
     function asset:object/super.init

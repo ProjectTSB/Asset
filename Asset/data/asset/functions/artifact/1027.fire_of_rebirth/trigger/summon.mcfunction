@@ -14,7 +14,7 @@
     # プレイヤーの方向
         data modify storage api: Argument.FieldOverride.Yaw set from entity @s Rotation[0]
     # 魔法陣の召喚番号
-        execute store result storage api: Argument.FieldOverride.MagicID int 1 run scoreboard players add $SJ.MagicID Temporary 1
+        execute store result storage api: Argument.FieldOverride.MagicID int 1 run scoreboard players get $SJ.MagicID Temporary
     # チャージタイム (乱数アリ)
         execute store result score $Random Temporary run function lib:random/
         scoreboard players operation $Random Temporary %= $20 Const
