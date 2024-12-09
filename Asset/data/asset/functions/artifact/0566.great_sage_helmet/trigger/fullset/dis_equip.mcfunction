@@ -1,12 +1,8 @@
-#> asset:artifact/0566.great_sage_helmet/equip/fullset_remove
+#> asset:artifact/0566.great_sage_helmet/trigger/fullset/dis_equip
 #
 #
 #
-# @within function asset:artifact/056?.great_sage_*/*/dis_equip/main
-
-#> Private
-# @private
-    #declare score_holder $Random
+# @within function asset:artifact/056?.great_sage_*/trigger/dis_equip/main
 
 # タグを消す
     tag @s remove FQ.Fullset
@@ -16,9 +12,10 @@
 
 # ランダムでメッセージを垂れ流す
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $10 Const
+        data modify storage lib: Args.key set value "FQ.DisEquipMessage"
+        data modify storage lib: Args.max set value 10
+        data modify storage lib: Args.scarcity_history_size set value 3
+        execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @s[tag=!Death] {"text":"<Erysus> うるさくて嫌になっちゃった？"}
         execute if score $Random Temporary matches 1 run tellraw @s[tag=!Death] {"text":"<Erysus> ばいばい、また会おうね"}
@@ -30,9 +27,11 @@
         execute if score $Random Temporary matches 7 run tellraw @s[tag=!Death] {"text":"<Erysus> 私のこと嫌いにならないよね？"}
         execute if score $Random Temporary matches 8 run tellraw @s[tag=!Death] {"text":"<Erysus> そう...しばらく寂しくなっちゃうな"}
         execute if score $Random Temporary matches 9 run tellraw @s[tag=!Death] {"text":"<Erysus> またね、いつか絶対使ってよね？"}
-    # リセット
-        scoreboard players reset $Random Temporary
 
-# 好感度とか時間とか消す
-    scoreboard players reset @s FQ.Favorability
+# 好感度・時間の修正
+    scoreboard players remove @s FQ.Favorability 1
+    scoreboard players operation @s FQ.Favorability < $0 Const
     scoreboard players reset @s FQ.TalkTime
+
+# リセット
+    scoreboard players reset $Random Temporary

@@ -25,4 +25,4 @@
     function api:modifier/attack/physical/remove
 
 # フルセット外す
-    execute if entity @s[tag=FQ.Fullset] run function asset:artifact/0566.great_sage_helmet/equip/fullset_remove
+    execute if entity @s[tag=FQ.Fullset] run function asset:artifact/0566.great_sage_helmet/trigger/fullset/dis_equip

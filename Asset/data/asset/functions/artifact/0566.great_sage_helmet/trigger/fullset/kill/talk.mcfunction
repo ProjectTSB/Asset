@@ -1,21 +1,18 @@
-#> asset:artifact/0566.great_sage_helmet/killed/3.talk
+#> asset:artifact/0566.great_sage_helmet/trigger/fullset/kill/talk
 #
 #
 #
-# @within function asset:artifact/0566.great_sage_helmet/killed/2.check
-
-#> Private
-# @private
-    #declare score_holder $Random
+# @within function asset:artifact/0566.great_sage_helmet/trigger/fullset/kill/
 
 # 喋る
     playsound minecraft:entity.allay.item_given player @a ~ ~ ~ 2 1.45
 
 # ランダムでメッセージを垂れ流す
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $10 Const
+        data modify storage lib: Args.key set value "FQ.KillMessage"
+        data modify storage lib: Args.max set value 10
+        data modify storage lib: Args.scarcity_history_size set value 3
+        execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @s {"text":"<Erysus> よし！殺戮だー！"}
         execute if score $Random Temporary matches 1 run tellraw @s {"text":"<Erysus> 血みどろだね！楽しんでる？"}
@@ -28,5 +25,5 @@
         execute if score $Random Temporary matches 8 run tellraw @s {"text":"<Erysus> まだいける？"}
         execute if score $Random Temporary matches 9 run tellraw @s {"text":"<Erysus> いい感じだよ！その調子！"}
 
-    # リセット
-        scoreboard players reset $Random Temporary
+# リセット
+    scoreboard players reset $Random Temporary

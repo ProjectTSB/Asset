@@ -1,8 +1,8 @@
-#> asset:artifact/0566.great_sage_helmet/equip/3.main
+#> asset:artifact/0566.great_sage_helmet/trigger/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/0566.great_sage_helmet/equip/2.check_condition
+# @within function asset:artifact/0566.great_sage_helmet/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/head
@@ -43,5 +43,5 @@
     particle end_rod ~ ~1.7 ~ 0.3 0.1 0.3 0.1 10 normal @a
     playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 0.8 1
 
-#セット効果用のファンクション実行（実行は頭のほうで）
-    execute if data storage asset:context id.all{head:566,chest:567,legs:568,feet:569} run function asset:artifact/0566.great_sage_helmet/equip/4.fullset
+# セット効果用のファンクション実行（実行は頭のほうで）
+    execute if data storage asset:context id.all{head:566,chest:567,legs:568,feet:569} run function asset:artifact/0566.great_sage_helmet/trigger/fullset/equip
