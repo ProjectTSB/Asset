@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/177/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 # 演出
     execute at @p[tag=Victim,distance=..32] run particle lava ~ ~1 ~ 0.4 0.3 0.4 0 20 normal @a
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 0.6 0

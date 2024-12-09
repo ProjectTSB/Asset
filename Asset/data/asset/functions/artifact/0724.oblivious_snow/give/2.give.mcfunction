@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"深雪に埋もれた記憶","color":"#ABF4FF"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"水耐性+10% 水攻撃+10%","color":"aqua"}','{"text":"被回復量-15%","color":"dark_red"}','{"text":"「ある者が故郷へと深雪の地を歩いていた。","color":"gray","italic":true}','{"text":" けれど記憶の地には故郷はなかった。」","color":"gray","italic":true}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

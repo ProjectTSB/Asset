@@ -15,11 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"不思議なタンバリン","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲のプレイヤー及び味方モブの"}','{"text":"攻撃力を大幅に上昇させる。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲のプレイヤーに","color":"white"}','{"text":"物理攻撃+20%を30秒間付与する。","color":"white"}','{"text":"不思議な力を持つタンバリン。","color":"gray"}','{"text":"叩くと力がみなぎってくる。","color":"gray"}']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 1
+    # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -45,7 +47,7 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value
+    data modify storage asset:artifact SpecialCooldown set value 1200
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
