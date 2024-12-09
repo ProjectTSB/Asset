@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/123/death
 
+function asset:mob/super.death
+
 # AJ殺す
     execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run function animated_java:lexiel/animations/pause_all
     execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run function animated_java:lexiel/animations/death/play
