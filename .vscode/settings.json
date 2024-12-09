@@ -55,7 +55,7 @@
         ]
     ],
     "datapack.lint.nameOfObjectives": [
-        "error",
+        "information",
         {
             "label": "ChainedPascalCase",
             "allowLessParts": true,
@@ -65,7 +65,7 @@
         }
     ],
     "datapack.lint.nameOfTags": [
-        "error",
+        "information",
         [
             {
                 "label": "ChainedPascalCase",
@@ -624,8 +624,10 @@
                         "    data modify storage asset:artifact Name set value ",
                         "# 神器の説明文 (TextComponentString[])",
                         "    data modify storage asset:artifact Lore set value []",
-                        "# MP以外の消費物 (TextComponentString) (オプション)",
-                        "    # data modify storage asset:artifact CostText set value ",
+                        "# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)",
+                        "    # data modify storage asset:artifact ConsumeItem.Item set value '{\"translate\":\"item.minecraft.stick\"}'",
+                        "    # data modify storage asset:artifact ConsumeItem.Count set value 1",
+                        "    # data modify storage asset:artifact ConsumeItem.Extra set value ",
                         "# 使用回数 (int) (オプション)",
                         "    # data modify storage asset:artifact RemainingCount set value ",
                         "# 神器を発動できるスロット (string) Wikiを参照",
@@ -1541,65 +1543,8 @@
             ]
         },
         {
-            "label": "MOB/テンプレート",
+            "label": "Mob/登録処理",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/summon/.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/summon/",
-                        "#",
-                        "# Mob召喚処理の呼び出し時に実行されるfunction",
-                        "#",
-                        "# @within asset:mob/%namespace%/_/summon",
-                        "",
-                        "# 元となるMobを召喚する",
-                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"],DeathLootTable:\"asset:mob/death/%namespace%\"}"
-                    ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/summon.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/summon",
-                        "#",
-                        "#",
-                        "#",
-                        "# @within tag/function asset:mob/summon",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/summon/"
-                    ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/tags/functions/mob/summon.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/summon"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/summon"
-                    }
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/summon/debug.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/summon/debug",
-                        "#",
-                        "# モブの動作チェック用の召喚処理 使い終わったら消してもいいかも",
-                        "#",
-                        "# @user",
-                        "# @private",
-                        "",
-                        "# モブを召喚",
-                        "    data modify storage api: Argument.ID set value %id%",
-                        "    function api:mob/summon"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/register.mcfunction",
@@ -1608,14 +1553,12 @@
                         "#",
                         "# Mobのデータを指定",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/register",
-                        "",
-                        "# 継承 (int) (オプション)",
-                        "    # data modify storage asset:mob Extends append value",
-                        "    # function asset:mob/extends",
+                        "# @within function asset:mob/alias/%id%/register",
                         "",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
-                        "    # data modify storage asset:mob ExtendsSafe set value true",
+                        "    # data modify storage asset:mob ExtendsSafe set value ",
+                        "# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)",
+                        "    data modify storage asset:mob IsAbstract set value false",
                         "# ID (int)",
                         "    data modify storage asset:mob ID set value %id%",
                         "# Type (string) Wikiを参照",
@@ -1669,70 +1612,73 @@
                         "        # data modify storage asset:mob Resist.Water set value ",
                         "    # 雷倍率 (float) (オプション)",
                         "        # data modify storage asset:mob Resist.Thunder set value ",
-                        "",
                         "# フィールド",
-                        "    # data modify storage asset:mob Field set value {}"
+                        "    # data modify storage asset:mob Field.myValue set value "
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/register.mcfunction",
+                    "rel": "data/asset/functions/mob/alias/%id%/register.mcfunction",
                     "content": [
-                        "#> asset:mob/%namespace%/_/register",
+                        "#> asset:mob/alias/%id%/register",
                         "#",
+                        "# Mobのデータ指定処理のエイリアス",
                         "#",
-                        "#",
-                        "# @within tag/function asset:mob/register",
+                        "# @within asset_manager:mob/triggers/summon/register.m",
                         "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/register"
+                        "# 元の登録処理を呼び出す",
+                        "   function asset:mob/%namespace%/register"
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/register.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/register"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/register"
-                    }
+                    "rel": "data/asset/functions/mob/%namespace%/summon/debug.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/summon/debug",
+                        "#",
+                        "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
+                        "#",
+                        "# @user",
+                        "# @private",
+                        "",
+                        "# 召喚",
+                        "   data modify storage api: Argument.ID set value %id%",
+                        "   function api:mob/summon"
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Mob/召喚処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/mob/%namespace%/summon/.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/summon/",
+                        "#",
+                        "# Object召喚処理の呼び出し時に実行されるfunction",
+                        "#",
+                        "# @within asset:mob/alias/%id%/summon",
+                        "",
+                        "# 元となるEntityを召喚する",
+                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
+                        ""
+                    ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/loot_tables/mob/death/%namespace%.json",
-                    "content": {
-                        "type": "entity",
-                        "pools": [
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "asset:mob/death/abstract_detect_item",
-                                        "functions": [
-                                            {
-                                                "function": "set_nbt",
-                                                "tag": "{TSB:{ID:%id%}}"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "entities/%entity%"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/summon.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/summon",
+                        "#",
+                        "# Mob召喚処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/summon/summon.m",
+                        "",
+                        "# 本来の処理を呼び出す",
+                        "   function asset:mob/%namespace%/summon/"
+                    ]
                 }
             ],
             "customQuestion": [
@@ -1746,12 +1692,12 @@
                     "name": "entity",
                     "question": "元となるentity",
                     "pattern": "area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|boat|cat|cave_spider|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fox|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|iron_golem|item|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
-                    "patternErrorMessage": "Mobの名前のみが許されるよ"
+                    "patternErrorMessage": "Entityの名前のみが許されるよ"
                 }
             ]
         },
         {
-            "label": "MOB/トリガー: 初期化処理",
+            "label": "Mob/テンプレート: 初期化処理",
             "generates": [
                 {
                     "type": "file",
@@ -1759,7 +1705,7 @@
                     "content": [
                         "#> asset:mob/%namespace%/load",
                         "#",
-                        "# MOBに利用するスコアボード等の初期化処理",
+                        "# Mobに利用するスコアボード等の初期化処理",
                         "#",
                         "# @within tag/function asset:mob/load",
                         "",
@@ -1785,7 +1731,52 @@
             ]
         },
         {
-            "label": "MOB/テンプレート: _index.d ",
+            "label": "Mob/メソッド",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/mob/%namespace%/%method_name%/.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/%method_name%/",
+                        "#",
+                        "# 継承先などから実行される処理",
+                        "#",
+                        "# @within asset:mob/alias/%id%/%method_name%",
+                        "",
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/mob/alias/%id%/%method_name%.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/%method_name%",
+                        "#",
+                        "# メソッド処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/tick/tick.m",
+                        "",
+                        "# 本来の処理を呼び出す",
+                        "   function asset:mob/%namespace%/%method_name%/"
+                    ]
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "method_name",
+                    "question": "メソッドの名前",
+                    "pattern": "[a-z0-9./_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
+                },
+                {
+                    "name": "id",
+                    "question": "ObjectのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Mob/テンプレート: _index.d ",
             "generates": [
                 {
                     "type": "file",
@@ -1802,21 +1793,8 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 攻撃",
+            "label": "Mob/トリガー: 攻撃",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/attack.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/attack",
-                        "#",
-                        "# Mobの攻撃時に実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/attack",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/attack/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/attack/.mcfunction",
@@ -1825,22 +1803,23 @@
                         "#",
                         "# Mobの攻撃時の処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/attack"
+                        "# @within function asset:mob/alias/%id%/attack",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/attack.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/attack"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/attack"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/attack.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/attack",
+                        "#",
+                        "# Mobの攻撃時の処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/attack/attack.m",
+                        "",
+                        "# 本来の処理を呼び出す",
+                        "   function asset:mob/%namespace%/attack/",
+                    ]
                 }
             ],
             "customQuestion": [
@@ -1853,45 +1832,33 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 被ダメージ",
+            "label": "Mob/トリガー: 被ダメージ",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/hurt.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/hurt",
-                        "#",
-                        "# Mobの被ダメージに実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/hurt",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/hurt/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/hurt/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/hurt/",
                         "#",
-                        "# Mobの被ダメージ時の処理",
+                        "# Mobのダメージ時の処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/hurt"
+                        "# @within function asset:mob/alias/%id%/hurt",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/hurt.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/hurt"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/hurt"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/hurt.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/hurt",
+                        "#",
+                        "# Mobのダメージ時の処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/hurt/hurt.m",
+                        "",
+                        "# 本来の処理を呼び出す",
+                        "   function asset:mob/%namespace%/hurt/",
+                    ]
                 }
             ],
             "customQuestion": [
@@ -1904,21 +1871,8 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 死亡",
+            "label": "Mob/トリガー: 死亡",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/death.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/death",
-                        "#",
-                        "# Mobの死亡時に実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/death",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/death/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/death/.mcfunction",
@@ -1927,22 +1881,23 @@
                         "#",
                         "# Mobの死亡時の処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/death"
+                        "# @within function asset:mob/alias/%id%/death",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/death.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/death"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/death"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/death.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/death",
+                        "#",
+                        "# Mobの死亡時の処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/death/death.m",
+                        "",
+                        "# 本来の処理を呼び出す",
+                        "   function asset:mob/%namespace%/death/",
+                    ]
                 }
             ],
             "customQuestion": [
@@ -1955,21 +1910,8 @@
             ]
         },
         {
-            "label": "MOB/トリガー: tick",
+            "label": "Mob/トリガー: tick",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/tick.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/tick",
-                        "#",
-                        "# Mobが生きている間毎tick実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/tick",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/tick/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/tick/.mcfunction",
@@ -1978,22 +1920,23 @@
                         "#",
                         "# Mobのtick時の処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/tick"
+                        "# @within asset:mob/alias/%id%/tick",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/tick.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/tick"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/tick"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/tick.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/tick",
+                        "#",
+                        "# Tick時処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/tick/tick.m",
+                        "",
+                        "# 元のTick処理を呼び出す",
+                        "   function asset:mob/%namespace%/tick/"
+                    ]
                 }
             ],
             "customQuestion": [
@@ -2006,45 +1949,33 @@
             ]
         },
         {
-            "label": "MOB/トリガー: init",
+            "label": "Mob/トリガー: init",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/init.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/init",
-                        "#",
-                        "# Mobの召喚時に実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/initialize",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/init/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/init/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/init/",
                         "#",
-                        "# Mob召喚時のInit処理",
+                        "# Mobのinit時の処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/init"
+                        "# @within asset:mob/alias/%id%/init",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/initialize.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/init"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/init"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/init.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/init",
+                        "#",
+                        "# Init処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/triggers/init/init.m",
+                        "",
+                        "# 元のInit処理を呼び出す",
+                        "   function asset:mob/%namespace%/init/"
+                    ]
                 }
             ],
             "customQuestion": [
@@ -2057,13 +1988,13 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: 再Join",
+            "label": "Mob/特殊トリガー: 再Join",
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/rejoin_process.mcfunction",
+                    "rel": "data/asset/functions/mob/%namespace%/rejoin_process/.mcfunction",
                     "content": [
-                        "#> asset:mob/%namespace%/rejoin_process",
+                        "#> asset:mob/%namespace%/rejoin_process/",
                         "#",
                         "# 使い方は必ずwikiを見ること",
                         "#",
@@ -2087,45 +2018,33 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: remove",
+            "label": "Mob/特殊トリガー: remove",
             "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/functions/mob/%namespace%/_/remove.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/_/remove",
-                        "#",
-                        "# 天使が居なくなる際に実行されるfunction",
-                        "#",
-                        "# @within tag/function asset:mob/remove",
-                        "",
-                        "execute if data storage asset:context {id:%id%} run function asset:mob/%namespace%/remove/"
-                    ]
-                },
                 {
                     "type": "file",
                     "rel": "data/asset/functions/mob/%namespace%/remove/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/remove/",
                         "#",
-                        "# Mobのremove時の処理",
+                        "# 天使が居なくなる際に実行される処理",
                         "#",
-                        "# @within function asset:mob/%namespace%/_/remove"
+                        "# @within asset:mob/alias/%id%/remove",
+                        ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/remove.json",
-                    "content": {
-                        "values": [
-                            "asset:mob/%namespace%/_/remove"
-                        ]
-                    },
-                    "append": {
-                        "addFirst": true,
-                        "key": "values",
-                        "elem": "asset:mob/%namespace%/_/remove"
-                    }
+                    "rel": "data/asset/functions/mob/alias/%id%/remove.mcfunction",
+                    "content": [
+                        "#> asset:mob/alias/%id%/init",
+                        "#",
+                        "# Remove処理のエイリアス",
+                        "#",
+                        "# @within asset_manager:mob/remove/remove.m",
+                        "",
+                        "# 元のInit処理を呼び出す",
+                        "   function asset:mob/%namespace%/remove/"
+                    ]
                 }
             ],
             "customQuestion": [
@@ -2590,10 +2509,12 @@
                         "# 継承(オプション)",
                         "    # data modify storage asset:object Extends append value ",
                         "    # function asset:object/extends",
-                        "# 他のモブに継承されることを許可するか (boolean) (オプション)",
+                        "# 他のObjectに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:object ExtendsSafe set value ",
-                        "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
+                        "# 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)",
                         "    data modify storage asset:object IsAbstract set value false",
+                        "# Tickするかどうか(boolean) (オプション)",
+                        "    # data modify storage asset:object IsTicking set value ",
                         "",
                         "# ID (int)",
                         "    data modify storage asset:object ID set value %id%",
@@ -2642,7 +2563,7 @@
             ]
         },
         {
-            "label": "Object/ 召喚処理",
+            "label": "Object/召喚処理",
             "generates": [
                 {
                     "type": "file",
@@ -2684,7 +2605,7 @@
                 {
                     "name": "entity",
                     "question": "元となるentity",
-                    "pattern": "area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|boat|cat|cave_spider|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fox|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|iron_golem|item|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
+                    "pattern": "allay|area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|block_display|boat|breeze|camel|cat|cave_spider|chest_boat|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fishing_bobber|fox|frog|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|interaction|iron_golem|item|item_display|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|sniffer|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tadpole|text_display|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|warden|wind_charge|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
                     "patternErrorMessage": "Entityの名前のみが許されるよ"
                 }
             ]
