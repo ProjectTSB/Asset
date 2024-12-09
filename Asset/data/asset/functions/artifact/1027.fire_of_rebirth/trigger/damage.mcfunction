@@ -1,4 +1,4 @@
-#> asset:artifact/1027.fire_of_rebirth/trigger/6.damage
+#> asset:artifact/1027.fire_of_rebirth/trigger/damage
 #
 # 神器のメイン処理部
 #
