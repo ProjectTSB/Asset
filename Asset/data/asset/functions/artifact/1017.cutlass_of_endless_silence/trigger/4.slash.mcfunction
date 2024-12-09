@@ -9,13 +9,8 @@
 
 # 斬る
     execute if score @s S9.Time matches 1 run function asset:artifact/1017.cutlass_of_endless_silence/trigger/5.slash_first
-
-
-
 # 衝撃波
     execute if score @s S9.Time matches 10 run function asset:artifact/1017.cutlass_of_endless_silence/trigger/6.slash_second
-
-
 
 # スコア一定になったらタグ消す
     execute if score @s S9.Time matches 10 run tag @s remove S9.Activation
