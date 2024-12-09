@@ -26,10 +26,8 @@
     # 処理を呼び出す
         function asset:artifact/0983.icicle_blade/trigger/vfx/.m with storage asset:temp RB
 
-# 半円状に判定を出す
-    tag @e[type=#lib:living,tag=Enemy,distance=..5] add RB.Hit
-    execute as @e[type=#lib:living,tag=Enemy,tag=RB.Hit,distance=..6] positioned ^ ^ ^-100 run tag @s[type=#lib:living,tag=Enemy,tag=RB.Hit,distance=..100] remove RB.Hit
-    execute as @e[type=#lib:living,tag=Enemy,tag=RB.Hit,distance=..6] at @s run function asset:artifact/0983.icicle_blade/trigger/4.damage
+# ダメージ処理
+    function asset:artifact/0983.icicle_blade/trigger/damage
 
 # リセット
     scoreboard players reset $Random Temporary
