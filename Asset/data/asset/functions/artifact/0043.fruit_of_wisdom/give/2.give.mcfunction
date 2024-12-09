@@ -13,11 +13,13 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:apple"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"fruit ","color":"dark_aqua","obfuscated": true},{"text":"叡智の果実","color":"aqua","obfuscated": false},{"text":" tiurf","color":"dark_aqua","obfuscated": true}]'
+    data modify storage asset:artifact Name set value '[{"text":"叡智の果実","color":"aqua"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"大空の楽園に実る"},{"text":"禁断の果実","color":"light_purple"}]','[{"text":"口にすれば"},{"text":"膨大な魔力","color":"aqua"},{"text":"を得られるが、","color":"white"}]','[{"text":"代償として","color":"white"},{"text":"生命力","color":"light_purple"},{"text":"を失ってしまう。","color":"white"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 10
 # 神器を発動できるスロット (string) Wikiを参照
@@ -50,6 +52,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

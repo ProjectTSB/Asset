@@ -11,7 +11,7 @@
 # 演出
     execute store result storage asset:temp T4.Num int 1 run scoreboard players get @s T4.Tick
     execute if score @s T4.Tick matches ..20 run function asset:artifact/1048.thunder_storm/trigger/vfx/m with storage asset:temp T4
-    data remove storage asset:temp T4.Num
+    data remove storage asset:temp T4
 
 # スコアが一定以上なら発動
     execute if score @s T4.Tick matches 21.. run function asset:artifact/1048.thunder_storm/trigger/6.cast
