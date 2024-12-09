@@ -5,3 +5,7 @@
 # @within function asset:mob/alias/377/hurt
 
 function asset:mob/super.hurt
+
+# 演出
+    playsound minecraft:entity.skeleton.converted_to_stray hostile @a ~ ~ ~ 1 0
+
