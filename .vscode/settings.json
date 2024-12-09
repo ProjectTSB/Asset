@@ -1753,7 +1753,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:mob/tick/tick.m",
+                        "# @within asset_manager:mob/triggers/call_method/run_method.m",
                         "",
                         "# 本来の処理を呼び出す",
                         "   function asset:mob/%namespace%/%method_name%/"
@@ -2769,7 +2769,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
+                        "# @within asset_manager:object/call_method/run_method.m",
                         "",
                         "# 元のメソッド処理を呼び出す",
                         "    function asset:object/%namespace%/%method_name%/"
