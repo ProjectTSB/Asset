@@ -18,8 +18,5 @@
     execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.Speed set value 6
     execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.MovePerStep set value 0.2
 
-# 消滅
-    execute if entity @s[scores={General.Object.Tick=25..}] run data modify storage asset:object Implement set value true
-
 # 継承
     function asset:object/super.tick
