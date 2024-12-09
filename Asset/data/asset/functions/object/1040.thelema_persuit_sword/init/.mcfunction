@@ -11,7 +11,7 @@
 
 # スピード関連のデータ設定
     data modify storage asset:context this.Speed set value 1
-    data modify storage asset:context this.Range set value 200
+    data modify storage asset:context this.Range set value 500
     data modify storage asset:context this.MovePerStep set value -0.1
 
 # フィールドから諸々設定
