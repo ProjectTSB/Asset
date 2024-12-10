@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1065.magic_bullet/give/1.trigger",
+        "asset:artifact/1111.rod_o_redeem/give/1.trigger",
+        "asset:artifact/0557.catastrophe/give/1.trigger",
+        "asset:artifact/0556.catastrophe/give/1.trigger",
+        "asset:artifact/0555.catastrophe/give/1.trigger",
+        "asset:artifact/0554.catastrophe/give/1.trigger",
         "asset:artifact/1216.sharpened_netherite_axe/give/1.trigger",
         "asset:artifact/1215.sharpened_diamond_axe/give/1.trigger",
         "asset:artifact/1214.sharpened_golden_axe/give/1.trigger",

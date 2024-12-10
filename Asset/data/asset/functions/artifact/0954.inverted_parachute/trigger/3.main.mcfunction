@@ -8,5 +8,10 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
-    playsound minecraft:entity.bat.takeoff player @a ~ ~ ~ 0.5 0
-    effect give @s levitation 1000000 3 true
+
+# 地面にいる時のみ演出
+    function api:data_get/on_ground
+    execute if data storage api: {OnGround:1b} run playsound minecraft:entity.bat.takeoff player @a ~ ~ ~ 0.5 0
+
+# 浮遊を付与
+    effect give @s levitation 2 3 true
