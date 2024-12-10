@@ -34,7 +34,7 @@ execute if score $initial_motion_end_time Temporary < $current_gametime Temporar
 # 攻撃モーション準備
 execute if score $initial_motion_end_time Temporary < $current_gametime Temporary if score $next_attack_time Temporary = $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/attack_motion_prepare
 
-# 攻撃モーション準備
+# 攻撃モーション実行
 execute if score $initial_motion_end_time Temporary < $current_gametime Temporary if score $next_attack_time Temporary < $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/attack_motion
 
 

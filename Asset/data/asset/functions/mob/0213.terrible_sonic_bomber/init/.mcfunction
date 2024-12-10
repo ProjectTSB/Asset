@@ -28,7 +28,7 @@ data modify entity @s Size set value 32
 
    # 次回攻撃時刻を記録
    execute store result score $next_attack_time Temporary run time query gametime
-   execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $initial_motion_end_time Temporary 230
+   execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $initial_motion_end_time Temporary 120
 
 # 旋回中心座標を示すマーカーを置く
 summon marker ~ ~ ~ {Tags:["Uninterferable","5X.Centre"]}

@@ -10,6 +10,7 @@ function asset:mob/super.death
 # remove markers
 kill @e[tag=5X.Centre]
 
-# remove objects
+# remove objects and mobs
 execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
+execute as @e[scores={MobID=214}] run function api:mob/kill
 kill @e[scores={ObjectID=2082..2088}]

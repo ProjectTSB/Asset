@@ -25,8 +25,8 @@ execute store result storage asset:context this.RepairTime int 1 run scoreboard 
 # ミサイル命中時の修理時間減速
 execute if entity @s[tag=PatriotLauncher.HitMissile] run scoreboard players add $RepairTime Temporary 10000
 tag @s remove PatriotLauncher.HitMissile
-    tellraw @a [{"text":"repair time "},{"score":{"objective":"Temporary","name":"$RepairTime"}}]
-    tellraw @a [{"text":"repair value "},{"score":{"objective":"Temporary","name":"$RepairValue"}}]
+    #tellraw @a [{"text":"repair time "},{"score":{"objective":"Temporary","name":"$RepairTime"}}]
+    #tellraw @a [{"text":"repair value "},{"score":{"objective":"Temporary","name":"$RepairValue"}}]
 
 # 修理時間0以下になったら修理完了
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.Durability set value 10

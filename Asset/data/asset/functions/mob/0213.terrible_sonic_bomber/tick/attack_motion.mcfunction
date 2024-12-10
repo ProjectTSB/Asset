@@ -12,6 +12,9 @@
 # 現在時間を記録
 execute store result score $current_gametime Temporary run time query gametime
 
+# 中心座標を中心に旋回
+execute unless entity @e[tag=5X.Centre,distance=..95] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
+
 # 直進
 tp @s ^ ^ ^3
 

@@ -7,6 +7,7 @@
 
 #> suffer_damage
 # @within
+#    function asset:mob/0214.drone/**
 #    function asset:object/2088.patriot_launcher/**
 #    function asset:object/2082.storm_shadow/**
 #    function asset:object/2083.brimstone/**

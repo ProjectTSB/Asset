@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0214.drone/load",
         "asset:mob/0213.terrible_sonic_bomber/load",
         "asset:mob/0235.orange_thrower/load",
         "asset:mob/0321.mini_guardian/load",

@@ -13,4 +13,4 @@ execute store result score $use_waapon Temporary run data get storage asset:cont
 
 execute if score $use_waapon Temporary matches 1 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow
 execute if score $use_waapon Temporary matches 2 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone
-execute if score $use_waapon Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/harm
+execute if score $use_waapon Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone

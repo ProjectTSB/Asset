@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/weapons/harm_prepare
+#> asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
 #
 # 
 #
