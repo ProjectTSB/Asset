@@ -14,3 +14,6 @@
     execute if data storage asset:context this{Rotation:6} run tp @s ~ ~ ~ 135 ~
     execute if data storage asset:context this{Rotation:7} run tp @s ~ ~ ~ 225 ~
     execute if data storage asset:context this{Rotation:8} run tp @s ~ ~ ~ 315 ~
+
+# 逆向き指定されてたら逆に回る
+    execute if data storage asset:context this{Reverse:true} run tag @s add 2053.Reverse

@@ -14,6 +14,8 @@
     # ダメージ
         function api:damage/modifier
         execute if entity @p[distance=..6] positioned ^ ^ ^100 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function api:damage/
+# リセット
+    function api:damage/reset
 
 # データ設定
 #    data modify storage api: Argument.FieldOverride set value {Item:{id:"minecraft:leather_horse_armor",Count:1b},Color:8251903,Frames:[20353,20354,20355],Scale:[10f,10f,0.1f],Transformation:{left_rotation:[-0.5f,-0.5f,-0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}

@@ -11,6 +11,8 @@
 # スキル
     # エイミングレーザー
         execute if entity @s[tag=RX.Skill.AimingLaser] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/
+    # ソードスピン
+        execute if entity @s[tag=RX.Skill.SwordSpin] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/sword_spin/
 
 # 演出
     particle minecraft:ash ~ ~1 ~ 0.2 0.2 0.2 0 2

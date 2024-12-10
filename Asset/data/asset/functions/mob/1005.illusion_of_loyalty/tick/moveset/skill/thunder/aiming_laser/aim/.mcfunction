@@ -9,7 +9,7 @@
     #declare tag Target
 
 # 攻撃対象にTagを付与
-    tag @r[distance=..30] add Target
+    tag @r[distance=..64] add Target
 
 # 攻撃対象のベクトルを取得
     execute as @p[tag=Target] run function api:player_vector/get
@@ -34,4 +34,5 @@
 
 # リセット
     tag @p[tag=Target] remove Target
+    tag @s remove RX.Skill.AimingLaser.Advance
     data remove storage asset:temp Predict

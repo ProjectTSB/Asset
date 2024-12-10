@@ -20,10 +20,12 @@
     # 疑似乱数取得
         execute store result score $Random Temporary run function lib:random/
     # フェイズ1
-        scoreboard players operation $Random Temporary %= $2 Const
+        execute if score @s RW.Phase matches 1 run scoreboard players operation $Random Temporary %= $2 Const
+    # フェイズ2..
+        execute if score @s RW.Phase matches 2.. run scoreboard players operation $Random Temporary %= $3 Const
 
 # デバッグ用、実行する技を確定させる
-#    scoreboard players set $Random Temporary 1
+#    scoreboard players set $Random Temporary 3
 
 # タグ付与
     # 1

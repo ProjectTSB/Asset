@@ -19,7 +19,7 @@
     # 拡散
         execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
     # その位置から実行
-        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RX.Marker.Aim,sort=nearest,limit=1] eyes rotated ~ ~90 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/ring
-        execute at @e[type=marker,tag=SpreadMarker,limit=1] facing entity @e[type=marker,tag=RX.Marker.Aim,sort=nearest,limit=1] eyes run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/
+        execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s rotated ~ ~90 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/ring
+        execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/
     # リセット
         kill @e[type=marker,tag=SpreadMarker]

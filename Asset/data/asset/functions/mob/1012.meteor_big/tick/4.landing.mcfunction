@@ -12,7 +12,6 @@
     #playsound entity.generic.explode hostile @a ~ ~ ~ 1 0
     #playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.5
 
-say yo
 
 # ダメージ設定
     # 与えるダメージ

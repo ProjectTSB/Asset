@@ -14,6 +14,9 @@
     # 召喚
         execute if score @s RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/
 
+# 幻影にも剣を召喚
+    execute if score @s RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
+
 # 剣を振りながら前進
     # 付近のプレイヤーの方を向く
         execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/active
