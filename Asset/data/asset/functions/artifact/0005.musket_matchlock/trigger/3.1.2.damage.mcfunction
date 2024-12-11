@@ -25,9 +25,9 @@
     scoreboard players operation $5.OwnerId Temporary = @s 5.OwnerId
     execute as @a if score @s UserID = $5.OwnerId Temporary run tag @s add 5.Owner
 
-# Damage計算(40*FlyingDuration)
-    execute store result storage lib: Argument.Damage float 40 run scoreboard players get @s 5.FlyingDuration
-
+# Damage計算
+    scoreboard players add @s 5.FlyingDuration 10
+    execute store result storage lib: Argument.Damage float 4 run scoreboard players get @s 5.FlyingDuration
 # 属性セット
     data modify storage lib: Argument.AttackType set value "Physical"
 
