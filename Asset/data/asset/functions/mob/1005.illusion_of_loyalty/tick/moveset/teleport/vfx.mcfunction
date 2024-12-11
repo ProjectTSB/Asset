@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/teleport/vfx
+#> asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/vfx
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/teleport/
+# @within function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/spread
 
 # パーティクル
     particle minecraft:explosion ~ ~1 ~ 0 0 0 0 1 force @a[distance=..64]
