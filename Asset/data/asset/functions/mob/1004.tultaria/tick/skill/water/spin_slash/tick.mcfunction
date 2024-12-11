@@ -14,9 +14,6 @@
     # 召喚
         execute if score @s RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/
 
-# 幻影にも剣を召喚
-    execute if score @s RW.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
-
 # 剣を振りながら前進
     # 付近のプレイヤーの方を向く
         execute if score @s RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/active
@@ -44,6 +41,9 @@
     execute if score @s RW.Tick matches 95 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_1/stop
     execute if score @s RW.Tick matches 95 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/play
     execute if score @s RW.Tick matches 100 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/release_sword
+
+# 幻影にも剣を召喚
+    execute if score @s RW.Tick matches 100 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
 
 # リセット
     execute if score @s RW.Tick matches 180.. run function asset:mob/1004.tultaria/tick/base_move/reset
