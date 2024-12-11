@@ -33,7 +33,6 @@ data modify entity @s Size set value 32
 # 旋回中心座標を示すマーカーを置く
 summon marker ~ ~ ~ {Tags:["Uninterferable","5X.Centre"]}
 
-
 # 対空砲召喚
 data modify storage api: Argument.ID set value 2088
 function api:object/summon

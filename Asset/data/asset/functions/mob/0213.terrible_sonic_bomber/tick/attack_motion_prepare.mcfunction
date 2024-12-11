@@ -11,8 +11,9 @@
 
 # 攻撃武器選択
 execute store result score $weapon_num Temporary run random value 1..3
-#scoreboard players set $weapon_num Temporary 3
 execute store result storage asset:context this.use_weapon int 1 run scoreboard players get $weapon_num Temporary
+
+#function api:mob/get_health
 
 # 攻撃開始時間選択
 execute store result score $attack_start_time Temporary run time query gametime

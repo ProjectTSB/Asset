@@ -22,4 +22,7 @@ function api:damage/reset
 # 対空砲へのダメージ
 tag @e[scores={ObjectID=2088},distance=..3] add PatriotLauncher.HitMissile
 
+# エンジン音停止
+stopsound @a[distance=..128] hostile minecraft:entity.bee.loop
+
 function api:mob/kill

@@ -11,3 +11,6 @@
 # 次回攻撃時刻を記録
 execute store result score $next_attack_time Temporary run time query gametime
 execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $next_attack_time Temporary 120
+
+# reset 
+scoreboard players reset $next_attack_time Temporary
