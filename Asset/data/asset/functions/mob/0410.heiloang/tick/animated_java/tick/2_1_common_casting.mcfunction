@@ -5,4 +5,4 @@
 # @within asset:mob/0410.heiloang/tick/animated_java/tick/
 
 # 演出
-    execute if score @s aj.anim_time matches 2 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+    execute if score @s aj.2_1_common_casting.frame matches 2 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7

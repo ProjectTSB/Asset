@@ -4,8 +4,5 @@
 #
 # @within asset:mob/0410.heiloang/tick/event/sweep/
 
-# アニメーション停止
-    function animated_java:heiloang_aj/animations/pause_all
-
 # 再生
-    function animated_java:heiloang_aj/animations/6_sweep_breath/tween_play
+    function animated_java:heiloang_aj/animations/6_sweep_breath/tween {duration:1, to_frame: 0}

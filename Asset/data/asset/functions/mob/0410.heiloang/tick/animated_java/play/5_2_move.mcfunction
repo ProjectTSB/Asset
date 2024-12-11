@@ -5,8 +5,5 @@
 # @within asset:mob/0410.heiloang/tick/event/move/
 # @within asset:mob/0410.heiloang/tick/event/move_after_ehd/
 
-# アニメーション停止
-    function animated_java:heiloang_aj/animations/pause_all
-
 # 再生
-    function animated_java:heiloang_aj/animations/5_2_move/tween_play
+    function animated_java:heiloang_aj/animations/5_2_move/tween {duration:1, to_frame: 0}

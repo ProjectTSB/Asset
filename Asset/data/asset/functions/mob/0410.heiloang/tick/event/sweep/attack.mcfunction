@@ -2,7 +2,7 @@
 #
 # なぎはらい火炎放射
 #
-# @within asset:mob/0410.heiloang/tick/event/sweep/
+# @within function asset:mob/0410.heiloang/tick/event/sweep/attack
 
 # 演出 + ヒット判定
     particle explosion ~ ~ ~ 1 1 1 0 1 force

@@ -7,8 +7,5 @@
 # @within asset:mob/0410.heiloang/tick/event/tornado/
 # @within asset:mob/0410.heiloang/tick/event/tempest/
 
-# アニメーション停止
-    function animated_java:heiloang_aj/animations/pause_all
-
 # 再生
-    function animated_java:heiloang_aj/animations/2_2_common_invoke/tween_play
+    function animated_java:heiloang_aj/animations/2_2_common_invoke/tween {duration:1, to_frame: 0}

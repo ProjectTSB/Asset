@@ -13,10 +13,11 @@
     # 予告
         execute if score @s BE.EventTimer matches 5 at @e[type=marker,tag=BE.CenterPosition] rotated ~-90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
     # 攻撃
-        execute if score @s BE.EventTimer matches 48..105 positioned as @e[type=marker,tag=aj.heiloang_aj.locator.locator_head,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/event/sweep/attack
+        # execute if score @s BE.EventTimer matches 48..105 positioned as @e[type=marker,tag=aj.heiloang_aj.locator.locator_head,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/event/sweep/attack
+        execute if score @s BE.EventTimer matches 48..105 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0410.heiloang/tick/event/sweep/get_attack_position.m with entity @s data.locators.locator_head
     # 角度
         execute if score @s BE.EventTimer matches 10 run tp @s ~ ~ ~ ~70 0
-        execute if score @s BE.EventTimer matches 78..105 run tp @s ~ ~ ~ ~-8 ~
+        execute if score @s BE.EventTimer matches 79..106 run tp @s ~ ~ ~ ~-8 ~
         execute if score @s BE.EventTimer matches 130 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
     # 位置決定
             execute if score @s BE.EventTimer matches 10 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/tornado/summon_attack_pos

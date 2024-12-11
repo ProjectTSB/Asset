@@ -9,17 +9,19 @@
         #declare function animated_java:heiloang_aj/summon
         #declare function animated_java:heiloang_aj/remove/all
         #declare function animated_java:heiloang_aj/animations/pause_all
+        #declare function animated_java:heiloang_aj/as_own_locator_entities
     # アニメーション再生
-        #declare function animated_java:heiloang_aj/animations/1_idle/tween_play
-        #declare function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween_play
-        #declare function animated_java:heiloang_aj/animations/2_1_common_casting/tween_play
-        #declare function animated_java:heiloang_aj/animations/2_2_common_invoke/tween_play
-        #declare function animated_java:heiloang_aj/animations/3_0_hellfire_start/tween_play
-        #declare function animated_java:heiloang_aj/animations/3_1_hellfire_shoot/tween_play
-        #declare function animated_java:heiloang_aj/animations/4_blizzard/tween_play
-        #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween_play
-        #declare function animated_java:heiloang_aj/animations/5_2_move/tween_play
-        #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween_play
+        #declare function animated_java:heiloang_aj/animations/1_idle/tween
+        #declare function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween
+        #declare function animated_java:heiloang_aj/animations/2_1_common_casting/tween
+        #declare function animated_java:heiloang_aj/animations/2_2_common_invoke/tween
+        #declare function animated_java:heiloang_aj/animations/3_0_hellfire_start/tween
+        #declare function animated_java:heiloang_aj/animations/3_1_hellfire_shoot/tween
+        #declare function animated_java:heiloang_aj/animations/3_2_hellfire_shoot_end/tween
+        #declare function animated_java:heiloang_aj/animations/4_blizzard/tween
+        #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween
+        #declare function animated_java:heiloang_aj/animations/5_2_move/tween
+        #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
