@@ -21,4 +21,4 @@
     data modify storage asset:object Field.Color set value 10000
     data modify storage asset:object Field.Interpolation set value 20
     data modify storage asset:object Field.Scale set value [5f,10f]
-    data modify storage asset:object Field.KillTick set value 50
+    data modify storage asset:object Field.Tick set value 50

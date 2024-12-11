@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2113.rectangle_announce/**
-    scoreboard objectives add 2113.KillTick dummy
+    scoreboard objectives add 2113.Tick dummy

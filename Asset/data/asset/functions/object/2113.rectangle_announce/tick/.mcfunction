@@ -11,4 +11,4 @@
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2113.rectangle_announce/tick/transform
 
 # 消滅処理
-    execute if score @s General.Object.Tick > @s 2113.KillTick run kill @s
+    execute if score @s General.Object.Tick > @s 2113.Tick run kill @s
