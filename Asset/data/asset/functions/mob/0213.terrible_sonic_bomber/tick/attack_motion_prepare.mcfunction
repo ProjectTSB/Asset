@@ -8,13 +8,18 @@
 # @private
    #declare score_holder $attack_start_time
    #declare score_holder $weapon_num
+   #declare score_holder $health
+ 
+# 攻撃武器選択 HP半分以下なら選択肢変化
+function api:mob/get_health
+execute store result score $health Temporary run data get storage api: Return.Health 1
 
-# 攻撃武器選択
-execute store result score $weapon_num Temporary run random value 1..3
-scoreboard players set $weapon_num Temporary 4
+execute if score $health Temporary matches 10000.. store result score $weapon_num Temporary run random value 1..3
+execute if score $health Temporary matches ..9999 store result score $weapon_num Temporary run random value 1..4
+#scoreboard players set $weapon_num Temporary 4
 execute store result storage asset:context this.use_weapon int 1 run scoreboard players get $weapon_num Temporary
 
-#function api:mob/get_health
+
 
 # 攻撃開始時間選択
 execute store result score $attack_start_time Temporary run time query gametime
@@ -33,3 +38,4 @@ execute if score $weapon_num Temporary matches 4 run function asset:mob/0213.ter
 # reset
 scoreboard players reset $attack_start_time Temporary
 scoreboard players reset $weapon_num Temporary
+scoreboard players reset $health Temporary
