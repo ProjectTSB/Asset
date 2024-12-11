@@ -16,7 +16,7 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 敵にコンバラトキシンを付与
     data modify storage api: Argument.ID set value 205
