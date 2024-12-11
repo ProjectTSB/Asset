@@ -1,27 +1,27 @@
-#> asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/summon
+#> asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/summon_reversed
 #
 #
 #
 # @within function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
 
 # 召喚
-    data modify storage api: Argument.FieldOverride set value {Rotation:1}
+    data modify storage api: Argument.FieldOverride set value {Rotation:1,Reverse:true}
     function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    data modify storage api: Argument.FieldOverride set value {Rotation:2}
+    data modify storage api: Argument.FieldOverride set value {Rotation:2,Reverse:true}
     function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    data modify storage api: Argument.FieldOverride set value {Rotation:3}
+    data modify storage api: Argument.FieldOverride set value {Rotation:3,Reverse:true}
     function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    data modify storage api: Argument.FieldOverride set value {Rotation:4}
+    data modify storage api: Argument.FieldOverride set value {Rotation:4,Reverse:true}
     function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
 
 # ハード以上かつ分身が残り一体だと増える
-    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:5}
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:5,Reverse:true}
     execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:6}
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:6,Reverse:true}
     execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:7}
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:7,Reverse:true}
     execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
-    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:8}
+    execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run data modify storage api: Argument.FieldOverride set value {Rotation:8,Reverse:true}
     execute if predicate api:global_vars/difficulty/min/hard unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=0.1..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/summon
 
 # 演出
