@@ -8,6 +8,7 @@
 # @private
    #declare score_holder $current_gametime
    #declare score_holder $attack_start_time
+   #declare score_holder $attack_end_time
    #declare score_holder $use_waapon
 
 # 現在時間を記録
@@ -17,21 +18,23 @@ execute store result score $current_gametime Temporary run time query gametime
 execute store result score $use_waapon Temporary run data get storage asset:context this.use_weapon
 
 # 中心座標を中心に旋回
-execute unless entity @e[tag=5X.Centre,distance=..95] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
+execute unless entity @e[tag=5X.Centre,distance=..105] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進
 tp @s ^ ^ ^3
 
 # 攻撃開始時刻になったら攻撃開始
 execute store result score $attack_start_time Temporary run data get storage asset:context this.attack_start_time
+execute store result score $attack_end_time Temporary run data get storage asset:context this.attack_end_time
 
-execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
-execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
+execute if score $current_gametime Temporary = $attack_start_time Temporary if score $current_gametime Temporary < $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
 
-# 攻撃終了後の離脱
-execute if score $current_gametime Temporary = $attack_start_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/escape_after_attack
+# 攻撃終了後の処理
+execute if score $current_gametime Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
+execute if score $current_gametime Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/escape_after_attack
 
 # reset
 scoreboard players reset $current_gametime Temporary
 scoreboard players reset $attack_start_time Temporary
+scoreboard players reset $attack_end_time Temporary
 scoreboard players reset $use_waapon Temporary

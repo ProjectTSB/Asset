@@ -12,5 +12,8 @@
 execute store result score $next_attack_time Temporary run time query gametime
 execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $next_attack_time Temporary 120
 
+# 標的タグを外す
+tag @a remove 5X.BrimstoneTarget
+
 # reset 
 scoreboard players reset $next_attack_time Temporary
