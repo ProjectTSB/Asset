@@ -5,4 +5,4 @@
 # @within asset:mob/alias/213/summon
 
 # 元となるEntityを召喚する
-    summon phantom ~ ~ ~ {Tags:["MobInit","AntiBurn"],DeathLootTable:"asset:mob/death/0213.terrible_sonic_bomber",NoAI:1b}
+    summon phantom ~ ~ ~ {Tags:["MobInit","AntiBurn"],DeathLootTable:"empty",NoAI:1b}
