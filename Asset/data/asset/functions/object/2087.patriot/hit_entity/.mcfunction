@@ -8,7 +8,7 @@
 data modify storage api: Argument.Damage set value 700f
 data modify storage api: Argument.AttackType set value "Physical"
 data modify storage api: Argument.ElementType set value "Fire"
-#data modify storage api: Argument.FixedDamage set value true
+data modify storage api: Argument.FixedDamage set value true
 function api:damage/modifier
 execute as @e[type=#lib:living,tag=Enemy,distance=..5] run function api:damage/
 function api:damage/reset

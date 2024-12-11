@@ -14,3 +14,7 @@ execute store result score $use_waapon Temporary run data get storage asset:cont
 execute if score $use_waapon Temporary matches 1 run tp @s ~ ~ ~ ~60 ~
 execute if score $use_waapon Temporary matches 2 run tp @s ~ ~ ~ ~ ~
 execute if score $use_waapon Temporary matches 3 run tp @s ~ ~ ~ ~ ~
+execute if score $use_waapon Temporary matches 4 run tp @s ~ ~ ~ ~ ~
+
+# reset
+scoreboard players reset $use_waapon Temporary

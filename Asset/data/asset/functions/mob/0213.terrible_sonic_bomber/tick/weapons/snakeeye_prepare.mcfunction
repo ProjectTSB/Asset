@@ -15,3 +15,6 @@ execute store result storage asset:context this.attack_end_time int 1 run scoreb
 
 # 攻撃座標指定
 data modify storage asset:context this.storm_shadow.target_pos set from entity @p Pos
+
+# reset
+scoreboard players reset $attack_start_time Temporary

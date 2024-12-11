@@ -14,3 +14,6 @@ data modify storage api: Argument.FieldOverride.target_pos set from storage asse
 data modify storage api: Argument.ID set value 2082
 execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
 function api:object/summon
+
+# reset
+scoreboard players reset $attack_start_time Temporary

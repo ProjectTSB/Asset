@@ -35,3 +35,4 @@ execute if score $MissileCooltime Temporary matches 0 run data modify storage as
 
 # reset
 scoreboard players reset $MissileCooltime Temporary
+scoreboard players reset $CurrentDurability Temporary

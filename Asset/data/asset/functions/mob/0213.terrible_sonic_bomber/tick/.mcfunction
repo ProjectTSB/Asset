@@ -41,3 +41,4 @@ execute if score $initial_motion_end_time Temporary < $current_gametime Temporar
 # reset
 scoreboard players reset $initial_motion_end_time Temporary
 scoreboard players reset $current_gametime Temporary
+scoreboard players reset $next_attack_time Temporary

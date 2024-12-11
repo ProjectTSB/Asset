@@ -7,7 +7,6 @@
 #> prv
 # @private
    #declare score_holder $initial_motion_end_time
-   #declare score_holder $next_attack_time
 
 #モブの見た目をライドする
 #    アニジャバのsummonを実行
@@ -27,7 +26,6 @@ data modify entity @s Size set value 32
    execute store result storage asset:context this.initial_motion_end_time int 1 run scoreboard players add $initial_motion_end_time Temporary 30
 
    # 次回攻撃時刻を記録
-   execute store result score $next_attack_time Temporary run time query gametime
    execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $initial_motion_end_time Temporary 120
 
 # 旋回中心座標を示すマーカーを置く

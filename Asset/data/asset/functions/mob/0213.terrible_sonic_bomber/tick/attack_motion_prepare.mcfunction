@@ -29,3 +29,7 @@ execute if score $weapon_num Temporary matches 1 run function asset:mob/0213.ter
 execute if score $weapon_num Temporary matches 2 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_prepare
 execute if score $weapon_num Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
 execute if score $weapon_num Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
+
+# reset
+scoreboard players reset $attack_start_time Temporary
+scoreboard players reset $weapon_num Temporary
