@@ -13,7 +13,9 @@
     #declare tag AC.Opening
     #declare tag AC.Hit
     #declare tag AC.RotationMarker
+    #declare tag Target
     #declare score_holder $Recursive
+    #declare score_holder $Random
     #declare score_holder $Interval
     #
     #

@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0372.tutankhamen/**
-    #scoreboard objectives add 
+    scoreboard objectives add AC.TargetID dummy
