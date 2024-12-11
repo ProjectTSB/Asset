@@ -5,4 +5,4 @@
 # @within asset:object/alias/2092/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Rotation:[0.0f,-90.0f],Tags:["ObjectInit"]}
+    function asset:object/2092.ghost_bullet/summon/.m with storage asset:context this

@@ -12,10 +12,15 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-    particle soul ~ ~ ~ 0.25 0.25 0.25 0 4 normal @a
+    particle soul ~ ~ ~ 0.25 0.25 0.25 0 1 normal @a
+
+# 最初は少し上昇する
+# 上向き移動の際はobjectを上に向かせる必要があり、プレイヤーの方を見ていてほしく
+# displayのtransformationを弄る必要があるので飛翔体抽象の処理は用いない
+    execute if entity @s[scores={General.Object.Tick=..50}] run tp @s ~ ~0.05 ~
 
 # 一度止まる
-    execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.Speed set value 0
+    #execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.Speed set value 0
 
 # プレイヤーの方を見て動き出す
     execute if entity @s[scores={General.Object.Tick=80}] run tp @s ~ ~ ~ facing entity @p eyes
@@ -30,7 +35,7 @@
     scoreboard players reset $Interval Temporary
 
 # 継承
-    execute at @s run function asset:object/super.tick
+    execute if entity @s[scores={General.Object.Tick=80..}] at @s run function asset:object/super.tick
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=200..}]
