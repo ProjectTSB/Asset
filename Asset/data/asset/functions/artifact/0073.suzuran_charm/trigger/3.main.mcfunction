@@ -10,13 +10,13 @@
 # ここから先は神器側の効果の処理を書く
 
 # 物理無属性ダメージ
-    data modify storage lib: Argument.Damage set value 50.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 敵にコンバラトキシンを付与
     data modify storage api: Argument.ID set value 205
