@@ -15,4 +15,4 @@
 
 # 指定されたScaleZに変化
 # 確かに奥行きではあるのだが、内部的にはyなのである、どうしようね
-    data modify entity @s transformation.scale[1] set from storage asset:context this.ScaleZ
+    data modify entity @s transformation.scale[1] set from storage asset:context this.Scale[1]
