@@ -14,4 +14,6 @@
 
 # 向きを指定プレイヤーへ向ける
     # tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
-    execute facing entity @p[tag=5X.BrimstoneTarget] eyes run tp @s ~ ~ ~ ~ ~
+
+    function asset:object/2083.brimstone/turn with storage asset:context this
+    #execute facing entity @p[tag=5X.BrimstoneTarget] eyes run tp @s ~ ~ ~ ~ ~

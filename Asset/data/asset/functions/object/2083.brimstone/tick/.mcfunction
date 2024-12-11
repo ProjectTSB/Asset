@@ -11,7 +11,7 @@
     kill @s[scores={General.Object.Tick=1000..}]
 
 # 方向転換
-    execute unless entity @p[tag=5X.BrimstoneTarget,distance=..15] facing entity @p[tag=5X.BrimstoneTarget] eyes run tp @s ~ ~ ~ ~ ~
+    function asset:object/2083.brimstone/turn with storage asset:context this
 
 # super
     execute at @s run function asset:object/super.tick
