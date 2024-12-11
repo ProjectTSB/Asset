@@ -52,10 +52,10 @@
 
     # //ここ時点で$AttackStrengthは0..3をとる
     # AttackStrengthに従ってダメージを設定
-        execute if score $AttackStrength Temporary matches 0 run data modify storage api: Argument.Damage set value 160.0f
-        execute if score $AttackStrength Temporary matches 1 run data modify storage api: Argument.Damage set value 180.0f
-        execute if score $AttackStrength Temporary matches 2 run data modify storage api: Argument.Damage set value 220.0f
-        execute if score $AttackStrength Temporary matches 3 run data modify storage api: Argument.Damage set value 270.0f
+        execute if score $AttackStrength Temporary matches 0 run data modify storage api: Argument.Damage set value 200.0f
+        execute if score $AttackStrength Temporary matches 1 run data modify storage api: Argument.Damage set value 210.0f
+        execute if score $AttackStrength Temporary matches 2 run data modify storage api: Argument.Damage set value 230.0f
+        execute if score $AttackStrength Temporary matches 3 run data modify storage api: Argument.Damage set value 250.0f
     # 属性なのでModifierを実行
         function api:damage/modifier
 
