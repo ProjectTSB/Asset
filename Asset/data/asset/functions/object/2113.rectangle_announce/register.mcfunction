@@ -19,7 +19,7 @@
 # フィールド(オプション)
     data modify storage asset:object Field.RotationX set value 0.0f
     data modify storage asset:object Field.Color set value 10000
-    data modify storage asset:object Field.Duration set value 20
+    data modify storage asset:object Field.Interpolation set value 20
     data modify storage asset:object Field.ScaleX set value 5f
     data modify storage asset:object Field.ScaleZ set value 20f
     data modify storage asset:object Field.KillTick set value 50
