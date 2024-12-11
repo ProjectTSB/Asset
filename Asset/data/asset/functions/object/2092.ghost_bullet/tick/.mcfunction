@@ -13,7 +13,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-   # particle soul ~ ~ ~ 0.25 0.25 0.25 0 1 normal @a
+   #
 
 # 最初は少し上昇する
 # 上向き移動の際はobjectを上に向かせる必要があり、プレイヤーの方を見ていてほしく
@@ -23,15 +23,12 @@
 # ターゲットの方を見る
     execute at @a if score @s 2092.TargetID = @p UserID run tag @p add Target
     execute if entity @s[scores={General.Object.Tick=..0}] at @s facing entity @p[tag=Target] eyes run tp @s ~ ~ ~ ~ ~
-    tag @p[tag=Target] remove Target
 
-# 一度止まる
-    #execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.Speed set value 0
+# スコアが0の時に演出
+    execute if entity @s[scores={General.Object.Tick=0}] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1 0.8 0
 
-# プレイヤーの方を見て動き出す
-    execute if entity @s[scores={General.Object.Tick=0}] at @s run tp @s ~ ~ ~ facing entity @p eyes
-    execute if entity @s[scores={General.Object.Tick=0}] run data modify storage asset:context this.Speed set value 1
-    execute if entity @s[scores={General.Object.Tick=0}] run data modify storage asset:context this.MovePerStep set value 0.8
+# 発射してすぐまでは誘導
+    execute if entity @s[scores={General.Object.Tick=0..10}] at @s facing entity @p[tag=Target] eyes positioned ^ ^ ^-120 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # 定期的に追加で演出
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
@@ -42,6 +39,9 @@
 
 # 継承
     execute if entity @s[scores={General.Object.Tick=0..}] at @s run function asset:object/super.tick
+
+# リセット
+    tag @p[tag=Target] remove Target
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=200..}]
