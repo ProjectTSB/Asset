@@ -6,11 +6,19 @@
     #declare tag RX.ModelRoot
     #declare tag RX.ModelRoot.Target
 
-## スキルリスト
+## マーカー
+    #declare tag RX.Marker.Aim
+
+#> 外部からも呼び出されるタグ
+# @within function
+#   asset:mob/1005.illusion_of_loyalty/**
+#   asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/**
+# 移動関連
+    #declare tag RX.Move.Teleport
+
+# スキルリスト
     #declare tag RX.Skill.AimingLaser
     #declare tag RX.Skill.AimingLaser.Direct
     #declare tag RX.Skill.AimingLaser.Advance
     #declare tag RX.Skill.SwordSpin
-
-## マーカー
-    #declare tag RX.Marker.Aim
+    #declare tag RX.Skill.HomingShot

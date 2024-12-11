@@ -26,7 +26,7 @@
 #    execute as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] at @s run tp @s ~ ~ ~
 
 # モデルをプレイヤーに向ける
-    execute as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute at @s as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # リセット
     tag @e[type=item_display,tag=RX.ModelRoot.Target] remove RX.ModelRoot.Target

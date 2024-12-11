@@ -20,4 +20,4 @@
 # エイム射撃
     execute if score @s General.Mob.Tick matches 10..15 positioned ~ ~1.5 ~ run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/shoot
 # リセット
-    execute if score @s General.Mob.Tick matches 15 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/reset
+    execute if score @s General.Mob.Tick matches 15 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/reset/

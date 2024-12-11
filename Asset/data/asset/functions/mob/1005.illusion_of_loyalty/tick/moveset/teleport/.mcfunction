@@ -12,7 +12,7 @@
     scoreboard players add @s General.Mob.Tick 1
 
 # 自身のモデルのアニメ
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/neutral_air/stop
+    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/pause_all
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/dodge_back/play
 
 # テレポート実行
@@ -20,7 +20,6 @@
 
 # アニメを戻す
     execute if score @s General.Mob.Tick matches 32 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/dodge_back/stop
-    execute if score @s General.Mob.Tick matches 32 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/neutral_air/play
 
 # リセット
-    execute if score @s General.Mob.Tick matches 32 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/reset
+    execute if score @s General.Mob.Tick matches 32 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/reset/
