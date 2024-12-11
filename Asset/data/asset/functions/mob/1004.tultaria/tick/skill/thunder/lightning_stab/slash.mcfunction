@@ -14,6 +14,8 @@
     # ダメージ
         function api:damage/modifier
         execute if entity @p[distance=..6] positioned ^ ^ ^100 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function api:damage/
+# リセット
+    function api:damage/reset
 
 # データ設定
     data modify storage api: Argument.FieldOverride set value {Color:16773266,Frames:[20335,20336,20337],Scale:[10f,10f,0.1f],Transformation:{left_rotation:[-0.39f,-0.58f,-0.69f,0.13f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
