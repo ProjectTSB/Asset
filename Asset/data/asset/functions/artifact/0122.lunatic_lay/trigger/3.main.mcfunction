@@ -15,8 +15,10 @@
         execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..5,limit=1] run function asset:artifact/0122.lunatic_lay/trigger/vfx
         playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
     # ダメージ
-        data merge storage lib: {Argument:{Damage:100.0f,AttackType:Magic,ElementType:Thunder}}
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Hit,distance=..5,limit=1] run function lib:damage/
+        data modify storage api: Argument.Damage set value 100.0f
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "Thunder"
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Hit,distance=..5,limit=1] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
