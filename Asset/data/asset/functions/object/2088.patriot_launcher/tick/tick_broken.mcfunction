@@ -18,6 +18,9 @@ execute if score $RepairPlayer Temporary matches 2 run scoreboard players set $R
 execute if score $RepairPlayer Temporary matches 3 run scoreboard players set $RepairValue Temporary 352
 execute if score $RepairPlayer Temporary matches 4.. run scoreboard players set $RepairValue Temporary 348
 
+# RepairPlayerがいるならパーティクル
+execute if score $RepairPlayer Temporary matches 1.. run particle happy_villager ~ ~2 ~ 1 1 1 1 10
+
 # 修理時間減らす
 execute store result score $RepairTime Temporary run data get storage asset:context this.RepairTime
 execute store result storage asset:context this.RepairTime int 1 run scoreboard players operation $RepairTime Temporary -= $RepairValue Temporary
