@@ -7,10 +7,7 @@
 #> Private
 # @private
     #declare score_holder $Random
-    #declare tag 1058.Init
 
-# 自分に一時的なタグ付け
-    tag @s add 1058.Init
 # 同IDのプレイヤーを特定
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
     execute at @a[distance=..60] if score $OwnerID Temporary = @p UserID as @p run tag @s add 1058.OwnerPlayer
@@ -46,5 +43,4 @@
 # リセット
     scoreboard players reset $Random Temporary
     scoreboard players reset $OwnerID Temporary
-    tag @s remove 1058.Init
     tag @a remove 1058.OwnerPlayer
