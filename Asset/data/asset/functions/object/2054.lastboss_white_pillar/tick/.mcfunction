@@ -28,12 +28,16 @@
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 
-# 射撃
+# サウンド
     scoreboard players operation $Interval Temporary %= $9 Const
     execute if score $Interval Temporary matches 0 run playsound minecraft:block.beacon.ambient neutral @a ~ ~ ~ 2 1.5
 
 # デカくなる
     execute if score @s General.Object.Tick matches 3 run function asset:object/2054.lastboss_white_pillar/tick/transform/1
+
+# ダメージ判定
+    scoreboard players operation $Interval Temporary %= $6 Const
+    execute if score $Interval Temporary matches 0 positioned ~-0.5 ~1 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=5] run function asset:object/2054.lastboss_white_pillar/tick/damage
 
 # 誘導！
     function asset:object/2054.lastboss_white_pillar/tick/homing.m with storage asset:context this
