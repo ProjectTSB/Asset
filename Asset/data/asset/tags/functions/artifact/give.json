@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:artifact/1027.fire_of_rebirth/give/1.trigger",
+        "asset:artifact/1017.cutlass_of_endless_silence/give/1.trigger",
+        "asset:artifact/1021.brave_book/give/1.trigger",
+        "asset:artifact/0983.icicle_blade/give/1.trigger",
+        "asset:artifact/1065.magic_bullet/give/1.trigger",
         "asset:artifact/1111.rod_o_redeem/give/1.trigger",
         "asset:artifact/0557.catastrophe/give/1.trigger",
         "asset:artifact/0556.catastrophe/give/1.trigger",
