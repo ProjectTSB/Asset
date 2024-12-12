@@ -11,13 +11,13 @@
 
 # ダメージ処理
     # 引数の設定
-    # 与えるダメージ: 8
-        data modify storage lib: Argument.Damage set value 28.0f
+    # 与えるダメージ: 160
+        data modify storage api: Argument.Damage set value 160.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
 # 補正
-    execute as @p[tag=this,distance=..15] run function lib:damage/modifier
+    execute as @p[tag=this,distance=..15] run function api:damage/modifier
 # 実行
-    function lib:damage/
+    function api:damage/
 # 開放
-    function lib:damage/reset
+    function api:damage/reset
