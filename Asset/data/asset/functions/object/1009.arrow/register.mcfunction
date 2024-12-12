@@ -24,5 +24,5 @@
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.AttackType set value "Physical"
     data modify storage asset:object Field.ElementType set value "None"
-    data modify storage asset:object Field.UserID set value -1
-    data modify storage asset:object Field.MobUUID set value -1
+    # data modify storage asset:object Field.UserID set value
+    # data modify storage asset:object Field.MobUUID set value
