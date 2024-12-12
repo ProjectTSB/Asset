@@ -3,7 +3,6 @@
 
 #> tag
 # @within function asset:object/1058.brave_knight/**
-    #declare tag 1058.Spirit
     #declare tag 1058.OwnerPlayer
     #declare tag 1058.AttackMode
     #declare tag 1058.StopAttack

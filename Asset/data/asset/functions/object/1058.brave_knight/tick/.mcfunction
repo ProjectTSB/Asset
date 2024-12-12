@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1058/tick
 
-#> ゴーストちゃんの移動先を決定するマーカーのタグ
-# @private
-    #declare tag MoveMarker
 
 # 同IDのプレイヤーを特定
     execute at @a[distance=..60] if score @s 1058.OwnerID = @p UserID run tag @p add 1058.OwnerPlayer
