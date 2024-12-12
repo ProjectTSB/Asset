@@ -1,4 +1,4 @@
-#> asset:mob/0378.red_knight_v3/tick/common/tp
+#> asset:mob/0378.red_knight_v3/tick/common/absolute_tp
 #
 #
 #

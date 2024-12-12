@@ -9,12 +9,12 @@
     execute if predicate lib:random_pass_per/20 run scoreboard players add @s AI.Skill 1
 
 # スキルが超えたら戻す
-    execute if score @s AI.Skill matches 7.. run scoreboard players set @s AI.Skill 1
+    execute if score @s AI.Skill matches 7.. run scoreboard players remove @s AI.Skill 6
 
 # デバッグスキル固定
     #scoreboard players set @s AI.Skill 7
 
-# 低HPでスキル6だとスキル戻す
+# 高HPでスキル6だとスキル戻す
     execute if score @s AI.Skill matches 6 unless entity @s[tag=AI.HPless50per] run scoreboard players set @s AI.Skill 5
 # 大技の頻度を下げる
     execute if score @s AI.Skill matches 6 if predicate lib:random_pass_per/20 run scoreboard players set @s AI.Skill 1

@@ -6,7 +6,6 @@
     #declare tag AI.AJ
     #declare tag AI.AJLink
     #
-    #declare tag AI.Hit
     #declare tag AI.TPConfirmed
     #
     #declare tag AI.Skill01
