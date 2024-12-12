@@ -3,5 +3,5 @@
 
 particle dust 100000000 2 0 2 ~ ~ ~ 0.6 0.6 0.6 0 30
 particle lava ~ ~ ~ 0.6 0.6 0.6 0 15
-playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.7
-playsound entity.blaze.shoot player @a ~ ~ ~ 1 1.3
+playsound entity.blaze.shoot neutral @a ~ ~ ~ 1 0.7
+playsound entity.blaze.shoot neutral @a ~ ~ ~ 1 1.3

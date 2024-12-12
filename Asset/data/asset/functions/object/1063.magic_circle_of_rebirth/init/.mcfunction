@@ -9,8 +9,8 @@
     #declare score_holder $TJ.Distance
 
 # 音
-    playsound minecraft:entity.blaze.death player @a ~ ~ ~ 1 2
-    playsound minecraft:entity.iron_golem.death player @a ~ ~ ~ 1 0
+    playsound minecraft:entity.blaze.death neutral @a ~ ~ ~ 1 2
+    playsound minecraft:entity.iron_golem.death neutral @a ~ ~ ~ 1 0
 
 # General.Mob.Tickに代入
     execute store result score @s General.Object.Tick run data get storage asset:context this.ChargeTime -1
