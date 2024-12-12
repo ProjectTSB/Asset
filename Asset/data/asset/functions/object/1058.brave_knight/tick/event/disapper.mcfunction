@@ -1,4 +1,4 @@
-#> asset:object/1058.brave_knight/tick/event/disapper
+#> asset:object/1058.brave_knight/tick/event/disappear
 #
 #
 #
