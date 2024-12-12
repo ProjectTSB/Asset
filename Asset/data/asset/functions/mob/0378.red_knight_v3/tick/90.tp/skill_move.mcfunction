@@ -5,10 +5,11 @@
 # @within function asset:mob/0378.red_knight_v3/tick/90.tp/main
 
 # 近寄ってから攻撃するのでそれ用のスキルのみ選択したい
-# ランダム
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $4 Const
+# 乱数によるスキル選択
+    data modify storage lib: Args.key set value "AI.SkillAfterTP"
+    data modify storage lib: Args.max set value 4
+    data modify storage lib: Args.scarcity_history_size set value 3
+    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグスキル固定
     #scoreboard players set $Random Temporary 2
