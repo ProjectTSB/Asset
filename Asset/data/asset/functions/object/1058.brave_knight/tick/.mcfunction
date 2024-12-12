@@ -35,11 +35,11 @@
     particle minecraft:dust 0.4 0.7 1 1 ~ ~0.3 ~ 0.1 0.1 0.1 0 1
 
 # 離れ過ぎると消える
-    execute unless entity @e[type=marker,tag=1058.MoveMarker,distance=..40,limit=1] run function asset:object/1058.brave_knight/tick/event/disapper
+    execute unless entity @e[type=marker,tag=1058.MoveMarker,distance=..40,limit=1] run function asset:object/1058.brave_knight/tick/event/disappear
 
 # ヘルス
    scoreboard players remove @s 1058.LifeTime 1
-   execute if score @s 1058.LifeTime matches 0 run function asset:object/1058.brave_knight/tick/event/disapper
+   execute if score @s 1058.LifeTime matches 0 run function asset:object/1058.brave_knight/tick/event/disappear
 
 # リセット
     kill @e[type=marker,tag=1058.MoveMarker]
