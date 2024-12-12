@@ -7,8 +7,12 @@
 # スコア
     scoreboard players add @s General.Mob.Tick 1
 
-# ﾊﾟｯｶｰﾝ
-    execute if entity @s[scores={General.Mob.Tick=100}] on passengers run data modify entity @s item.tag.CustomModelData set value 20449
+# 演出
+    execute if predicate lib:random_pass_per/30 run particle witch ^ ^1 ^0.5 0.5 0.5 0.5 0 1 normal @a
+    execute if predicate lib:random_pass_per/30 run particle witch ^ ^1 ^-0.5 0.5 0.5 0.5 0 1 normal @a
 
-# 一定時間で消滅
-    execute if entity @s[scores={General.Mob.Tick=200..}] run kill @s
+# 開閉を繰り返す
+    execute if entity @s[scores={General.Mob.Tick=..1000}] run function asset:mob/0374.gray_coffin/tick/open_and_close
+
+# ペナルティとして爆発する
+    execute if entity @s[scores={General.Mob.Tick=1000..}] run function asset:mob/0374.gray_coffin/tick/penalty_ready
