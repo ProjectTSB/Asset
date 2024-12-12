@@ -6,12 +6,6 @@
 #   asset:object/1058.brave_knight/tick/event/combo/0
 #   asset:object/1058.brave_knight/tick/event/combo/1
 
-# どうしてもダメージを受けてほしい（HurtTimeで反応を起こすモブもいるので)
-    damage @s 0
-
-# リセット
-    function lib:damage/reset
-
     # 引数の設定
     #ダメージブレのための処理
         # 疑似乱数取得
@@ -27,7 +21,7 @@
     # 第二属性
         data modify storage lib: Argument.ElementType set value "None"
 # 補正functionを実行
-    execute as @p[tag=1058.OwnerPlayer] run function lib:damage/modifier
+    execute as @p[tag=1058.OwnerPlayer] run function api:damage/modifier
 
 # ノクバ耐性を考慮して吹っ飛ばす
     data modify storage lib: Argument.VectorMagnitude set value -0.3
@@ -35,9 +29,8 @@
     execute facing entity @e[type=armor_stand,scores={MobID=307},sort=nearest,limit=1] feet rotated ~ ~25 run function lib:motion/
 
 # ダメージ実行
-    function lib:damage/
+    function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
-    data remove storage lib: Argument
