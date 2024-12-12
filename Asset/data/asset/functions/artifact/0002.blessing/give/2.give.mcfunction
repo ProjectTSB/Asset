@@ -62,4 +62,4 @@
     function asset:artifact/common/give
 
 # リセット
-    data remove storage asset:temp 02.Name
+    data remove storage asset:temp 02
