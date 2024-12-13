@@ -143,9 +143,9 @@
 #    execute if score @s RW.Tick matches 0 run scoreboard players set @s RW.Tick 451
 
 # 画面エフェクト
-    execute if score @s RW.Tick matches 490 run title @a[distance=..100] times 10 20 10
-    execute if score @s RW.Tick matches 490 run title @a[distance=..100] title {"text":""}
-    execute if score @s RW.Tick matches 490 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+#    execute if score @s RW.Tick matches 490 run title @a[distance=..100] times 10 20 10
+#    execute if score @s RW.Tick matches 490 run title @a[distance=..100] title {"text":""}
+#    execute if score @s RW.Tick matches 490 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
 # アニメ停止と再生
     execute if score @s RW.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
