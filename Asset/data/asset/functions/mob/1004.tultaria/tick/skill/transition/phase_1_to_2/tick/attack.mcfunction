@@ -146,8 +146,5 @@
     execute if score @s RW.Tick matches 490 run title @a[distance=..100] title {"text":""}
     execute if score @s RW.Tick matches 490 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
-# スカイボックスが存在しているようなら消す
-    execute if score @s RW.Tick matches 495 run function asset:mob/1004.tultaria/tick/base_move/element_select/delete_skybox
-
 # 終了
     execute if score @s RW.Tick matches 560 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/end

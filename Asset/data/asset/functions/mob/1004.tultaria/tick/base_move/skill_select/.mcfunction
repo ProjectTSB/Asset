@@ -8,21 +8,12 @@
 # @private
     #declare score_holder $Random
 
-# ミニスラッシュのカウントをリセット
-    scoreboard players reset @s RW.MiniSlashCount
-
 # 通常行動停止タグ付与
     tag @s add RW.InAction
-
-# 小技出しましたタグを消す
-    tag @s remove RW.MiniSkillUsed
 
 # スコアを0に戻す
     scoreboard players set @s RW.Tick -10
     scoreboard players set @s RW.LoopCount 0
-
-# チェイス停止
-    kill @e[tag=RW.ChaseMarker]
 
 # 属性をランダムに選択
     # 要素がない場合は再付与
