@@ -2,7 +2,7 @@
 #
 # 座標攻撃メテオ
 #
-# @within function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/meteor_rain/pattern/**
+# @within function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/pattern/**
 
 # メテオのタイプ指定
     data modify storage api: Argument.FieldOverride set value {Type:Aim}
