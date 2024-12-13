@@ -8,7 +8,7 @@
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/play
 
 # フェイズ3だったら足場破壊
-    execute if score @s RW.Phase matches 2 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/break_platform
+    execute if score @s RW.Phase matches 3.. run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/break_platform
 
 # 行動をランダムに選択
     # 疑似乱数取得

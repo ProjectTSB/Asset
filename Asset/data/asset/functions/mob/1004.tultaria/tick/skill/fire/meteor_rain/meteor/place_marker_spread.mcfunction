@@ -11,7 +11,7 @@
     data modify storage api: Argument.FieldOverride set value {Type:Spread}
 
 # マーカーに対して拡散処理を実行
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] at @s run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/summon
+    execute at @e[type=marker,tag=SpreadMarker,limit=1] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/summon
 
 # マーカーキル
     kill @e[type=marker,tag=SpreadMarker,limit=1]
