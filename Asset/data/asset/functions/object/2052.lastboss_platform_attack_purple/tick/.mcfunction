@@ -12,10 +12,10 @@
     execute if score @s General.Object.Tick matches 3 run function asset:object/2052.lastboss_platform_attack_purple/tick/transform
 
 # 攻撃
-    execute if score @s General.Object.Tick matches 23 run function asset:object/2052.lastboss_platform_attack_purple/tick/damage
+    execute if score @s General.Object.Tick matches 43 run function asset:object/2052.lastboss_platform_attack_purple/tick/damage
 
 # 縮小開始
 #    execute if score @s General.Object.Tick matches 25 run function asset:object/2051.lastboss_platform_attack_red/tick/vanish
 
 # 消滅
-    execute if score @s General.Object.Tick matches 23.. run kill @s
+    execute if score @s General.Object.Tick matches 43.. run kill @s
