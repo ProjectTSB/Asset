@@ -28,7 +28,7 @@
     #execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] positioned ~-23 ~ ~-23 run place template asset:1004.wall
 
 # スコアをセットする
-    scoreboard players set @s General.Mob.Tick 0
+    scoreboard players set @s General.Mob.Tick -1
 
 # Super!
     function asset:mob/super.init
