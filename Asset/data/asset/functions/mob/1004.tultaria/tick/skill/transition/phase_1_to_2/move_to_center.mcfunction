@@ -17,7 +17,7 @@
     execute facing entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
 
 # 移動終了までTick加算停止
-    tag @s add RW.TickLock
+    tag @s add General.Mob.TickLock
 
 # この動作をループしないようにスコア1だけ増やす
-    scoreboard players add @s RW.Tick 1
+    scoreboard players add @s General.Mob.Tick 1

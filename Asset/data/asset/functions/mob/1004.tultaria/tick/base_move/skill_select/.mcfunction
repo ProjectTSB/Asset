@@ -12,7 +12,7 @@
     tag @s add RW.InAction
 
 # スコアを0に戻す
-    scoreboard players set @s RW.Tick -10
+    scoreboard players set @s General.Mob.Tick -10
     scoreboard players set @s RW.LoopCount 0
 
 # 属性をランダムに選択

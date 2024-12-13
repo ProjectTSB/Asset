@@ -14,7 +14,7 @@
     data modify entity @s Invulnerable set value 0b
 
 # スコアセット
-    scoreboard players reset @s RW.Tick
+    scoreboard players reset @s General.Mob.Tick
     scoreboard players set @s RW.LoopCount 0
     scoreboard players set @s RW.SwordCount 0
 

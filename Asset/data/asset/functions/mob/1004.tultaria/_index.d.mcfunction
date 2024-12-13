@@ -25,7 +25,7 @@
     #declare tag RW.PlayerFacing
     #declare tag RW.TeleportMarker
     #declare tag RW.Move
-    #declare tag RW.TickLock
+    #declare tag General.Mob.TickLock
     #declare tag RW.InAction
     #declare tag RW.LoopCount
     #declare tag RW.ChaseShot

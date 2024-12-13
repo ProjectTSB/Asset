@@ -7,13 +7,13 @@
 #
 
 #
-    #scoreboard players set @s RW.Tick -20
+    #scoreboard players set @s General.Mob.Tick -20
 
 # TickLock
-    tag @s add RW.TickLock
+    tag @s add General.Mob.TickLock
 
 # これをループされると困るのでTickを1増やす
-    scoreboard players add @s RW.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 速度設定
     scoreboard players set @s RW.Speed 8

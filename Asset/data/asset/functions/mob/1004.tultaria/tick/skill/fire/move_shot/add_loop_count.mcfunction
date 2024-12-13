@@ -9,4 +9,4 @@
 
 # スコアボード設定、ループカウント増やして、処理をリスタートするためにTickを-1にする
     scoreboard players add @s RW.LoopCount 1
-    scoreboard players set @s RW.Tick -1
+    scoreboard players set @s General.Mob.Tick -1

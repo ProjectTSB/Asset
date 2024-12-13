@@ -15,8 +15,8 @@
 
 # Tickロックして、この行動自体をループしないように1増やす
 # Tickロックは移動終了時に勝手に解除される
-    tag @s add RW.TickLock
-    scoreboard players add @s RW.Tick 1
+    tag @s add General.Mob.TickLock
+    scoreboard players add @s General.Mob.Tick 1
 
 # マーカーの方を向く
     execute facing entity @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~

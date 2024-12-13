@@ -7,7 +7,7 @@
 #   asset:mob/1004.tultaria/hurt/test_hp50
 
 # Tick初期化
-    scoreboard players set @s RW.Tick -1
+    scoreboard players set @s General.Mob.Tick -1
 
 # タグ付与
     tag @s add RW.HPless50per

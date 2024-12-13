@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
 # 構えて攻撃のパターンを決定
-    execute if score @s RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/windup
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/windup
 
 # メテオ攻撃
     # 1

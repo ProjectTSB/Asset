@@ -10,7 +10,7 @@
     #declare score_holder $4tInterval
 
 # スコア加算
-    scoreboard players add @s[tag=!RW.TickLock] RW.Tick 1
+    scoreboard players add @s[tag=!General.Mob.TickLock] General.Mob.Tick 1
 
 # モデルにタグ付与
     tag @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] add RW.ModelRoot.Target
@@ -71,7 +71,7 @@
 #        execute if score $Count Temporary matches 2.. run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
 #        execute if score $Count Temporary matches 2.. run function asset:mob/1004.tultaria/tick/move/spread
 #    # スコアも一応戻す
-#        execute if score $Count Temporary matches 2.. run scoreboard players reset @s RW.Tick
+#        execute if score $Count Temporary matches 2.. run scoreboard players reset @s General.Mob.Tick
 #    # リセット
 #        scoreboard players reset $Count
 
