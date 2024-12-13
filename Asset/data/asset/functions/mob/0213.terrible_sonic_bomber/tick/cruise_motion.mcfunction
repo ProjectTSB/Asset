@@ -12,7 +12,7 @@
 execute unless entity @e[tag=5X.Centre,distance=..95] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進
-execute at @s run tp @s ^ ^ ^3
+execute rotated as @s run tp @s ^ ^ ^3
 
 # 対空砲付近を飛ぶときはフレアを出す(3tickおき)
 execute store result score $flare_time Temporary run time query gametime

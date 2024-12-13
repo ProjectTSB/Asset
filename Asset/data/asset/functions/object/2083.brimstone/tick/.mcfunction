@@ -7,11 +7,11 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
-
 # 方向転換
     function asset:object/2083.brimstone/turn with storage asset:context this
 
 # super
     execute at @s run function asset:object/super.tick
+
+# 消滅処理
+    kill @s[scores={General.Object.Tick=1000..}]

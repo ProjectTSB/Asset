@@ -4,7 +4,6 @@
 #
 # @within asset:object/alias/2082/kill
 
-kill @s
 
 # hit entityとhit block両方で同じ処理書くのも冗長なのでここで書く
 # plausound
@@ -26,3 +25,6 @@ function api:damage/reset
 
 # 対空砲へのダメージ
 tag @e[scores={ObjectID=2088},distance=..3] add PatriotLauncher.HitMissile
+
+# 消滅
+kill @s

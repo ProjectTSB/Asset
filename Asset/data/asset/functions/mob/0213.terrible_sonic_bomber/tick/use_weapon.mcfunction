@@ -6,15 +6,15 @@
 
 #> prv
 # @private
-   #declare score_holder $use_waapon
+   #declare score_holder $use_weapon
 
 #発射
-execute store result score $use_waapon Temporary run data get storage asset:context this.use_weapon
+execute store result score $use_weapon Temporary run data get storage asset:context this.use_weapon
 
-execute if score $use_waapon Temporary matches 1 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow
-execute if score $use_waapon Temporary matches 2 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone
-execute if score $use_waapon Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone
-execute if score $use_waapon Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye
+execute if score $use_weapon Temporary matches 1 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow
+execute if score $use_weapon Temporary matches 2 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone
+execute if score $use_weapon Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone
+execute if score $use_weapon Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye
 
 # reset
-scoreboard players reset $use_waapon Temporary
+scoreboard players reset $use_weapon Temporary

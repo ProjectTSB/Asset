@@ -6,15 +6,15 @@
 
 #> prv
 # @private
-   #declare score_holder $use_waapon
+   #declare score_holder $use_weapon
 
 #離脱
-execute store result score $use_waapon Temporary run data get storage asset:context this.use_weapon
+execute store result score $use_weapon Temporary run data get storage asset:context this.use_weapon
 
-execute if score $use_waapon Temporary matches 1 run tp @s ~ ~ ~ ~60 ~
-execute if score $use_waapon Temporary matches 2 run tp @s ~ ~ ~ ~ ~
-execute if score $use_waapon Temporary matches 3 run tp @s ~ ~ ~ ~ ~
-execute if score $use_waapon Temporary matches 4 run tp @s ~ ~ ~ ~ ~
+execute if score $use_weapon Temporary matches 1 run tp @s ~ ~ ~ ~60 ~
+execute if score $use_weapon Temporary matches 2 run tp @s ~ ~ ~ ~ ~
+execute if score $use_weapon Temporary matches 3 run tp @s ~ ~ ~ ~ ~
+execute if score $use_weapon Temporary matches 4 run tp @s ~ ~ ~ ~ ~
 
 # reset
-scoreboard players reset $use_waapon Temporary
+scoreboard players reset $use_weapon Temporary

@@ -4,8 +4,6 @@
 #
 # @within asset:object/alias/2083/kill
 
-kill @s
-
 # hit entityとhit block両方で同じ処理書くのも冗長なのでここで書く
 # plausound
 playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.5 1
@@ -26,3 +24,6 @@ data modify storage api: Argument.MobUUID set from storage asset:context this.Mo
 function api:damage/modifier_manual
 execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 function api:damage/reset
+
+# 消滅
+kill @s

@@ -12,5 +12,5 @@ kill @e[tag=5X.Centre]
 
 # remove objects and mobs
 execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
-execute as @e[scores={MobID=214}] run function api:mob/kill
+execute as @e[scores={MobID=214}] run function api:mob/remove
 kill @e[scores={ObjectID=2082..2088}]

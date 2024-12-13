@@ -8,18 +8,22 @@
 # @private
    #declare score_holder $attack_start_time
    #declare score_holder $weapon_num
-   #declare score_holder $health
+   #declare score_holder $health_per
  
 # 攻撃武器選択 HP半分以下なら選択肢変化
-function api:mob/get_health
-execute store result score $health Temporary run data get storage api: Return.Health 1
+function api:mob/get_health_percent
+execute store result score $health_per Temporary run data get storage api: Return.HealthPer 100
 
-execute if score $health Temporary matches 10000.. store result score $weapon_num Temporary run random value 1..3
-execute if score $health Temporary matches ..9999 store result score $weapon_num Temporary run random value 1..4
-#scoreboard players set $weapon_num Temporary 4
+# 乱数によるスキル選択
+data modify storage lib: Args.key set value "5XWeapon"
+execute if score $health_per Temporary matches 50.. run data modify storage lib: Args.max set value 3
+execute if score $health_per Temporary matches ..49 run data modify storage lib: Args.max set value 4
+data modify storage lib: Args.scarcity_history_size set value 2
+execute store result score $weapon_num Temporary run function lib:random/with_biased/manual.m with storage lib: Args
+scoreboard players add $weapon_num Temporary 1
+   #tellraw @a [{"score":{"name":"$health_per","objective":"Temporary"},"color":"blue"}]
+
 execute store result storage asset:context this.use_weapon int 1 run scoreboard players get $weapon_num Temporary
-
-
 
 # 攻撃開始時間選択
 execute store result score $attack_start_time Temporary run time query gametime
@@ -38,4 +42,4 @@ execute if score $weapon_num Temporary matches 4 run function asset:mob/0213.ter
 # reset
 scoreboard players reset $attack_start_time Temporary
 scoreboard players reset $weapon_num Temporary
-scoreboard players reset $health Temporary
+scoreboard players reset $health_per Temporary
