@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
-# 幻影に攻撃させる
-    execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/homing_shot/
-
 # モデルをプレイヤーに向ける
     execute if score @s RW.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
     execute if score @s RW.Tick matches 0 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
@@ -33,6 +30,9 @@
 
 # デバッグ用、この行動をループする
 #    execute if score @s RW.Tick matches 60 run scoreboard players set @s RW.Tick -10
+
+# 幻影に攻撃させる
+    execute if score @s[scores={RW.Phase=3..}] RW.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/homing_shot/
 
 # リセット
     execute if score @s RW.Tick matches 60 run function asset:mob/1004.tultaria/tick/base_move/reset

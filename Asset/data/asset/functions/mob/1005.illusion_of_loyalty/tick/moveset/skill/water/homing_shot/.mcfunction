@@ -23,7 +23,7 @@
 
 # 射撃
     scoreboard players operation $Interval Temporary %= $3 Const
-    execute if score $Interval Temporary matches 0 if score @s General.Mob.Tick matches 10..30 positioned ~ ~1.5 ~ run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/homing_shot/shot/
+    execute if score $Interval Temporary matches 0 if score @s General.Mob.Tick matches 10..50 positioned ~ ~1.5 ~ run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/homing_shot/shot/
 
 # ワープ
-    execute if score @s General.Mob.Tick matches 60 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/start
+    execute if score @s General.Mob.Tick matches 70 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/start
