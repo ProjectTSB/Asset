@@ -22,3 +22,6 @@
     #declare tag RX.Skill.AimingLaser.Advance
     #declare tag RX.Skill.SwordSpin
     #declare tag RX.Skill.HomingShot
+    #declare tag RX.Skill.MeteorRain
+    #declare tag RX.Skill.Meteor.1
+    #declare tag RX.Skill.Meteor.2

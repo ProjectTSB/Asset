@@ -7,9 +7,6 @@
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
-# Tick加算
-    scoreboard players add @s General.Mob.Tick 1
-
 # モデルをプレイヤーに向ける
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
     execute if score @s General.Mob.Tick matches 0 facing entity @p eyes run tp @s ~ ~ ~ ~ ~

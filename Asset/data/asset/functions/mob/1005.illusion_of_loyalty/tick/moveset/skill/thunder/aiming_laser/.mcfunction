@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/1005.illusion_of_loyalty/tick/
 
-# Tick加算
-    scoreboard players add @s General.Mob.Tick 1
-
 # マーカー設置
     # 直接エイム
         execute if entity @s[tag=RX.Skill.AimingLaser.Direct] if score @s General.Mob.Tick matches 0 at @p[distance=..64] run summon marker ~ ~1.7 ~ {Tags:["RX.Marker.Aim"]}

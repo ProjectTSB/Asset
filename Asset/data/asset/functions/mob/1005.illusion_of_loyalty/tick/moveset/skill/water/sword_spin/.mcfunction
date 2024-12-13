@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/1005.illusion_of_loyalty/tick/
 
-# Tick加算
-    scoreboard players add @s General.Mob.Tick 1
-
 # プレイヤーのほうを向く
     execute if score @s General.Mob.Tick matches 0 facing entity @p feet run tp @s ~ ~ ~ ~ 0
 

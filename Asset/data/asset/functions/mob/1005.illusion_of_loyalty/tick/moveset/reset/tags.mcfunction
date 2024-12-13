@@ -11,3 +11,6 @@
     tag @s remove RX.Skill.SwordSpin
     tag @s remove RX.Skill.HomingShot
     tag @s remove RX.Move.Teleport
+    tag @s remove RX.Skill.MeteorRain
+    tag @s remove RX.Skill.Meteor.1
+    tag @s remove RX.Skill.Meteor.2

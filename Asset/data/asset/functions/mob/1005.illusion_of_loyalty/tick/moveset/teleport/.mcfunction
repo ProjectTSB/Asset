@@ -8,9 +8,6 @@
 # @private
 #declare tag RW.Marker.SpawnPoint
 
-# Tick加算
-    scoreboard players add @s General.Mob.Tick 1
-
 # 自身のモデルのアニメ
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/pause_all
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/dodge_back/play
