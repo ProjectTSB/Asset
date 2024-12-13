@@ -22,7 +22,7 @@
 
 # Markerに自分の方を向かせた上で反対を向かせる
 # これにより本体の向きを一切変えずに本体からMarkerへの方向がMarkerのRotationに入る
-    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s facing entity @e[type=skeleton,tag=this,distance=..30,limit=1] eyes facing ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
+    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..30,limit=1] eyes facing ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
 
 # 召喚
     data modify storage api: Argument.ID set value 2101
