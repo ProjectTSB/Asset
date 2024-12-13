@@ -25,7 +25,7 @@
 # 最大スタック (int) (default = 2147483647)
     # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か (boolean)
-    data modify storage asset:effect IsBadEffect set value false
+    data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
