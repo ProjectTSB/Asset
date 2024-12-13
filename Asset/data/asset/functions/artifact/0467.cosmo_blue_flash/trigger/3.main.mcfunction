@@ -15,8 +15,8 @@
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0467.cosmo_blue_flash/trigger/shot
 
 # ヒット処理
-    execute as @e[tag=CZ.HitEntity,distance=..40] run function asset:artifact/0467.cosmo_blue_flash/trigger/hit
+    execute as @e[type=#lib:living,tag=CZ.HitEntity,distance=..40] at @s run function asset:artifact/0467.cosmo_blue_flash/trigger/hit
 
 # リセット
-    tag @e[tag=CZ.HitEntity] remove CZ.HitEntity
+    tag @e[type=#lib:living,tag=CZ.HitEntity,distance=..40] remove CZ.HitEntity
     tag @s remove CZ.HitFlag
