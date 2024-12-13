@@ -32,4 +32,4 @@
     function asset:mob/1004.tultaria/tick/reset/remove_objects
 
 # テスト用メッセージ
-    tellraw @a[distance=..50] [{"text":"<","color":"white"},{"text":"Tultaria","color":"#a33033"},{"text":"> ふぅん…。","color":"white"}]
+#    tellraw @a[distance=..50] [{"text":"<","color":"white"},{"text":"Tultaria","color":"#a33033"},{"text":"> ふぅん…。","color":"white"}]

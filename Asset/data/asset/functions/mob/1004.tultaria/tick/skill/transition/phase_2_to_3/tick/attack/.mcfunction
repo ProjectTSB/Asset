@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/
 
 # 足場をランダムに5箇所選択
-    execute if score @s RW.Tick matches 00 at @r[distance=..64] as @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026},distance=..15,sort=random,limit=10] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s RW.Tick matches 0 at @r[distance=..64] as @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026},distance=..15,sort=random,limit=10] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 30 at @r[distance=..64] as @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026},distance=..15,sort=random,limit=10] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 60 at @r[distance=..64] as @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026},distance=..15,sort=random,limit=10] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 90 at @r[distance=..64] as @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026},distance=..15,sort=random,limit=10] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
@@ -77,12 +77,18 @@
     execute if score @s RW.Tick matches 570 at @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/summon
 
 # TODO: デバッグ用につき後で消すこと
-#    execute if score @s RW.Tick matches 1000.. run scoreboard players set @s RW.Tick -10
+#    execute if score @s RW.Tick matches 800.. run scoreboard players set @s RW.Tick 580
+#    execute if score @s RW.Tick matches 0 run scoreboard players set @s RW.Tick 580
 
-# 画面エフェクト
-    execute if score @s RW.Tick matches 690 run title @a[distance=..100] times 10 20 10
-    execute if score @s RW.Tick matches 690 run title @a[distance=..100] title {"text":""}
-    execute if score @s RW.Tick matches 690 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+# アニメ停止と再生
+    execute if score @s RW.Tick matches 710 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
+    execute if score @s RW.Tick matches 710 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/play
+
+# 「忠誠の幻想」を2体召喚する
+    execute if score @s RW.Tick matches 713 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/summon_illusion/
+
+# 幻影をテレポートさせる
+    execute if score @s RW.Tick matches 750 as @e[type=wither_skeleton,scores={MobID=1005},distance=..128] at @s run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/teleport
 
 # 終了
-    execute if score @s RW.Tick matches 740 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/end
+    execute if score @s RW.Tick matches 750 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/end

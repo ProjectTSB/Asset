@@ -9,7 +9,7 @@
 #declare tag RW.StopSummon
 
 # 足場をランダムに5箇所選択
-    execute if score @s RW.Tick matches 00 at @a[distance=..64] as @e[type=item_display,tag=!RW.StopSummon,scores={ObjectID=2026},distance=..10,sort=random,limit=5] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s RW.Tick matches 0 at @a[distance=..64] as @e[type=item_display,tag=!RW.StopSummon,scores={ObjectID=2026},distance=..10,sort=random,limit=5] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 30 at @a[distance=..64] as @e[type=item_display,tag=!RW.StopSummon,scores={ObjectID=2026},distance=..10,sort=random,limit=5] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 60 at @a[distance=..64] as @e[type=item_display,tag=!RW.StopSummon,scores={ObjectID=2026},distance=..10,sort=random,limit=5] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
     execute if score @s RW.Tick matches 90 at @a[distance=..64] as @e[type=item_display,tag=!RW.StopSummon,scores={ObjectID=2026},distance=..10,sort=random,limit=5] at @s run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
@@ -140,11 +140,19 @@
 
 # TODO: デバッグ用につき後で消すこと
 #    execute if score @s RW.Tick matches 1000.. run scoreboard players set @s RW.Tick -10
+#    execute if score @s RW.Tick matches 0 run scoreboard players set @s RW.Tick 451
 
 # 画面エフェクト
     execute if score @s RW.Tick matches 490 run title @a[distance=..100] times 10 20 10
     execute if score @s RW.Tick matches 490 run title @a[distance=..100] title {"text":""}
     execute if score @s RW.Tick matches 490 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
+# アニメ停止と再生
+    execute if score @s RW.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
+    execute if score @s RW.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/play
+
+# 翼を展開
+    execute if score @s RW.Tick matches 533 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/open_wing
+
 # 終了
-    execute if score @s RW.Tick matches 560 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/end
+    execute if score @s RW.Tick matches 570 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/end
