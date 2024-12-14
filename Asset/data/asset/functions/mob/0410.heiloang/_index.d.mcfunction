@@ -22,6 +22,7 @@
         #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween
         #declare function animated_java:heiloang_aj/animations/5_2_move/tween
         #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
+        #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
@@ -42,6 +43,7 @@
     #declare tag BE.Skill.Tornado 竜巻
     #declare tag BE.Skill.Sweep なぎはらいブレス
     #declare tag BE.Skill.Tempest テンペスト
+    #declare tag BE.Skill.Flare フレア
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット

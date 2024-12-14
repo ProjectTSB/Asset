@@ -23,6 +23,8 @@
         execute if entity @s[scores={General.Object.Tick=4}] run data merge entity @s {interpolation_duration:20,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1f,0f],scale:[4f,0.5f,4f]}}
         execute if entity @s[scores={General.Object.Tick=40}] run data merge entity @s {interpolation_duration:20,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1f,0f],scale:[3f,0.8f,3f]}}
         execute if entity @s[scores={General.Object.Tick=80}] run data merge entity @s {interpolation_duration:20,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1f,0f],scale:[4f,0.5f,4f]}}
+        execute if entity @s[scores={General.Object.Tick=130}] run data merge entity @s {interpolation_duration:10,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1f,0f],scale:[0f,0.0f,0f]}}
+        execute if entity @s[scores={General.Object.Tick=140}] run data merge entity @s {interpolation_duration:8,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[4f,1f,4f]}}
     # Main
         execute if entity @s[scores={2121.AttackTick=1}] run data merge entity @s {interpolation_duration:2,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,1f,3f]}}
         execute if entity @s[scores={2121.AttackTick=3}] run data merge entity @s {interpolation_duration:5,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,18f,0f],scale:[12f,13f,12f]}}
@@ -38,5 +40,5 @@
     execute if entity @s[scores={2121.AttackTick=29}] run data modify entity @s item set value {id:"minecraft:air",Count:1b}
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    kill @s[scores={General.Object.Tick=800..}]
     kill @s[scores={2121.AttackTick=31..}]
