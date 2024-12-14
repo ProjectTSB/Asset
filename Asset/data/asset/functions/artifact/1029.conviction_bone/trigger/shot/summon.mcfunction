@@ -7,9 +7,9 @@
 #　演出
     particle minecraft:soul ~ ~ ~ 0 0 0 0.05 20 normal
 
-# 魚召喚
+# 召喚
     summon marker ~ ~ ~ {Tags:["SL.Shot","SL.First","Object"]}
-# 魚の寿命を設定する
+# 寿命を設定する
     scoreboard players set @e[type=marker,tag=SL.First,distance=..10,sort=nearest] SL.ShotTime 60
 
 # ユーザーID適応

@@ -23,7 +23,7 @@
     scoreboard players add @s SL.CoolTime 1
 
 # ダメージ
-    execute if score @s SL.CoolTime matches 4.. if entity @e[tag=Enemy,distance=..2,sort=nearest,limit=1] run function asset:artifact/1029.conviction_bone/trigger/shot/hit
+    execute if score @s SL.CoolTime matches 4.. if entity @e[type=#lib:living,tag=Enemy,distance=..2,sort=nearest,limit=1] run function asset:artifact/1029.conviction_bone/trigger/shot/hit
 
 # 寿命が来たら発動するやつ。プレイヤーが発動する内容
     execute if score @s SL.ShotTime matches ..0 run kill @s

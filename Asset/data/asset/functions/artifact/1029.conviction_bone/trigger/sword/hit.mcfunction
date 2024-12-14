@@ -16,7 +16,6 @@
         data modify storage api: Argument.Damage set value 42.0f
     # 属性
         data modify storage api: Argument.AttackType set value "Physical"
-        data modify storage api: Argument.DamageType set value "Projectile"
         data modify storage api: Argument.ElementType set value "None"
     # 補正function
         execute as @a if score @s UserID = @e[type=item_display,tag=SL.This,distance=..10,sort=nearest,limit=1] SL.UserID run function api:damage/modifier
