@@ -4,10 +4,11 @@
 #
 # @within function asset:mob/0123.lexiel_v3/tick/
 
-# ランダム
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+# 乱数によるスキル選択
+    data modify storage lib: Args.key set value "3F.Skill"
+    data modify storage lib: Args.max set value 3
+    data modify storage lib: Args.scarcity_history_size set value 3
+    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # トグル式に+10を仕込む。これは剣攻撃と魔法攻撃を交互に繰り返すための処理。あとから技追加する時しんどそうだけどな！ガハハ！
     execute if entity @s[tag=3F.SkillEven] run scoreboard players add $Random Temporary 10
