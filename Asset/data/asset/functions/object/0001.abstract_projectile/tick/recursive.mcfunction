@@ -38,6 +38,3 @@
 
 # 再帰
     execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] at @s run function asset:object/0001.abstract_projectile/tick/recursive
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
