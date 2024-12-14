@@ -5,7 +5,6 @@
 # @within function asset:mob/0376.convict_v2/**
     #declare tag AG.AJ
     #declare tag AG.AJLink
-    #declare tag AG.SkillEven
     #
     #declare tag AG.SkillAxe1
     #declare tag AG.SkillAxe2
@@ -17,11 +16,9 @@
     #
     #declare tag AG.Opening
     #
-    #declare tag AG.DamageThis
     #declare tag AG.Hit
     #
     #declare tag Target
-    #declare tag UsedThunder
     #
     #declare score_holder $Random
     #

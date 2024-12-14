@@ -5,7 +5,7 @@
 # @within function asset:mob/0376.convict_v2/tick/
 
 
-# スキル郡
+# スキル
     execute if entity @s[tag=AG.SkillAxe1] run function asset:mob/0376.convict_v2/tick/01.skill_axe1/main
     execute if entity @s[tag=AG.SkillAxe2] run function asset:mob/0376.convict_v2/tick/02.skill_axe2/main
     execute if entity @s[tag=AG.SkillAxe3] run function asset:mob/0376.convict_v2/tick/03.skill_axe3/main
