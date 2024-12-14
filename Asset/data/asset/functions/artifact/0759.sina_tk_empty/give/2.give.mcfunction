@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['[{"text":"竹製の竹を発射する竹々しい銃。","color":"#9FFF21"}]','[{"text":"竹をありったけ装填することで再使用できる。","color":"#9FFF21"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.bamboo"}'
-    data modify storage asset:artifact ConsumeItem.Count set value 16
+    data modify storage asset:artifact ConsumeItem.Count set value 8
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 4
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 15
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
