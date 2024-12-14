@@ -1,37 +1,15 @@
-#> asset:mob/0410.heiloang/tick/event/move_after_ehd/attack
+#> asset:mob/0410.heiloang/tick/event/flare/attack
 #
-# 移動攻撃
+# フレア
 #
-# @within asset:mob/0410.heiloang/tick/event/move_after_ehd/
+# @within asset:mob/0410.heiloang/tick/event/flare/
 
-# ヒット判定
-    execute positioned ^15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-
-    execute positioned ^15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^-5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^-15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
-    execute positioned ^15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^-5 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^-15 ^ ^-4 run particle explosion ~ ~1 ~ 3 0.8 3 0.1 10
-    execute positioned ^15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-5 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-    execute positioned ^-15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
-
-# ダメージ
-    data modify storage api: Argument.Damage set value 10
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "None"
-    function api:damage/modifier
-    execute as @a[tag=BE.Temp.Hit] run function api:damage/
-    function api:damage/reset
+# 弾召喚
+    data modify storage api: Argument.ID set value 2123
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Damage set value 60.0f
+    function api:object/summon
 
 # 終了
-    tag @a remove BE.Temp.Hit
+    kill @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=nearest,limit=1]

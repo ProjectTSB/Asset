@@ -54,6 +54,7 @@
     #declare tag BE.Temp.AttackRotation 角度決定用
     #declare tag BE.Temp.AttackPosition 位置決定用
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
+    #declare tag BE.Temp.Flare.SummonPosition フレア召喚位置
     #declare tag BE.Temp.Hit 攻撃ヒット
     #declare tag BE.Temp.Dummy ダミー
     #declare tag BE.Temp.MoveEnd 処理終了
