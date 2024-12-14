@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/202/attack
 
+# バニラの攻撃じゃなかったら return
+    execute unless data storage asset:context Attack{IsVanilla:true} run return fail
+
+
 
 # 腕振る
     item replace entity @s weapon.mainhand with iron_sword
