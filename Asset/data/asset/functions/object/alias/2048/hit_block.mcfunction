@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のメソッド処理を呼び出す
-    function asset:object/2048.lastboss_ice_sword/hit_block/
+    function asset:object/2048.wave_magic/hit_block/
