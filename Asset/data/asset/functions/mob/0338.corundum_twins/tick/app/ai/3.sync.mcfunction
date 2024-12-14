@@ -2,7 +2,7 @@
 #
 # 双子に指示を出す シンクロ攻撃
 #
-# @within function asset:mob/0338.corundum_twins/tick/2.tick
+# @within function asset:mob/0338.corundum_twins/tick/
 
 # カウンター増加
     scoreboard players add @s 9E.ActionCount 1

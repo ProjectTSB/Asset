@@ -2,7 +2,7 @@
 #
 # 使用するスキルを決定する
 #
-# @within function asset:mob/0339.twins_sapphiel/tick/2.tick
+# @within function asset:mob/0339.twins_sapphiel/tick/
 
 # 待機通知
     execute unless entity @s[tag=9F.State.Await] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/2.notify

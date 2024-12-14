@@ -2,7 +2,7 @@
 #
 # Mobが生きている間毎tick実行されるfunction
 #
-# @within function asset:mob/0355.sapphiel_missile/tick/2.tick
+# @within function asset:mob/0355.sapphiel_missile/tick/
 
 # TODO:ダメージ
     # 与えるダメージ = 20

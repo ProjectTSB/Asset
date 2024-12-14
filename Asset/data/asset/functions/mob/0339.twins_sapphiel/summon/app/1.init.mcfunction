@@ -2,7 +2,7 @@
 #
 # Mobの召喚時の処理・wither_skeletonの初期化（独自実装）
 #
-# @within function asset:mob/0339.twins_sapphiel/summon/2.summon
+# @within function asset:mob/0339.twins_sapphiel/summon/
 
 # モデルにTeleport_durationを設定
     execute as @e[type=#animated_java:root,tag=9F.ModelRoot,tag=9F.Init] on passengers if entity @s[type=item_display] run data modify entity @s teleport_duration set value 1

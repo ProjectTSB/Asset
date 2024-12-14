@@ -2,7 +2,7 @@
 #
 # Mobの召喚時の処理・双子本体を召喚し、初期化する
 #
-# @within function asset:mob/0338.corundum_twins/summon/2.summon
+# @within function asset:mob/0338.corundum_twins/summon/
 
 # 双子を召喚
     data modify storage api: Argument.ID set value 339

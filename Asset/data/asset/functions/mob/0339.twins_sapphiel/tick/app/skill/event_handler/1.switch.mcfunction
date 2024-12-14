@@ -2,7 +2,7 @@
 #
 # 各スキルのイベントハンドラへの処理振り分け
 #
-# @within function asset:mob/0339.twins_sapphiel/tick/2.tick
+# @within function asset:mob/0339.twins_sapphiel/tick/
 
 ###########################################################################
 # 汎用

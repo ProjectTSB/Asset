@@ -2,7 +2,7 @@
 #
 # 各スキルのイベントハンドラへの処理振り分け
 #
-# @within function asset:mob/0340.twins_rubiel/tick/2.tick
+# @within function asset:mob/0340.twins_rubiel/tick/
 
 ###########################################################################
 # 汎用

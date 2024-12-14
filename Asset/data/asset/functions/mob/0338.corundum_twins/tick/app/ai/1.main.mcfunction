@@ -2,7 +2,7 @@
 #
 # 双子に指示を出す
 #
-# @within function asset:mob/0338.corundum_twins/tick/2.tick
+# @within function asset:mob/0338.corundum_twins/tick/
 
 # サフィに指示
     execute if entity @s[tag=9E.State.Phase.Sapphiel,tag=9E.State.GetAwait.Rubiel] if entity @e[type=wither_skeleton,tag=9F.Root,tag=9F.Target,tag=!9F.Skill.Damage.Down,tag=!9F.Skill.Damage.End] run function asset:mob/0338.corundum_twins/tick/app/ai/2.1.phase_sapphiel

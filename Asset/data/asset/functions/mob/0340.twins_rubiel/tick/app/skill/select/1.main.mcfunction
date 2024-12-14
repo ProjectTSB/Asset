@@ -2,7 +2,7 @@
 #
 # 使用するスキルを決定する
 #
-# @within function asset:mob/0340.twins_rubiel/tick/2.tick
+# @within function asset:mob/0340.twins_rubiel/tick/
 
 # 待機通知
     execute unless entity @s[tag=9G.State.Await] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/2.notify

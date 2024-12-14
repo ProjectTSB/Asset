@@ -2,7 +2,7 @@
 #
 # Mobの召喚時の処理・wither_skeletonの初期化（独自実装）
 #
-# @within function asset:mob/0338.corundum_twins/summon/2.summon
+# @within function asset:mob/0338.corundum_twins/summon/
 
 # 初期化開始
     tag @s add 9E.Init

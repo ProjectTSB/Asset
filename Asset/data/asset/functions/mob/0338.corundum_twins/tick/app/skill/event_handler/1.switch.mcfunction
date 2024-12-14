@@ -2,7 +2,7 @@
 #
 # 各スキルのイベントハンドラへの処理振り分け
 #
-# @within function asset:mob/0338.corundum_twins/tick/2.tick
+# @within function asset:mob/0338.corundum_twins/tick/
 
 # タイマー増加
     execute unless entity @s[tag=9E.State.Await] run scoreboard players add @s 9E.SkillTimer 1
