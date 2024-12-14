@@ -7,9 +7,10 @@
 
 # 演出 + ヒット判定
     scoreboard players remove @s BE.Dummy 1
-    particle flame ~ ~ ~ 1 1 1 0.1 1 force
-    # particle flame ~ ~ ~ 0.5 0.5 0.5 0.1 10 force
-    execute if predicate lib:random_pass_per/30 run particle lava ~ ~ ~ 1 1 1 0.1 1 force
+    execute if predicate lib:random_pass_per/30 run particle flame ~ ~ ~ 1 1 1 0.1 1 force
+    execute if predicate lib:random_pass_per/30 run particle squid_ink ~ ~ ~ 0.5 0.5 0.5 0.1 1 force
+    execute if predicate lib:random_pass_per/30 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.1 1 force
+    execute if predicate lib:random_pass_per/20 run particle lava ~ ~ ~ 1 1 1 0.1 1 force
     execute if predicate lib:random_pass_per/5 run particle explosion ~ ~ ~ 1 1 1 0.1 1 force
     execute positioned ^ ^-1 ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add BE.Temp.Hit
     execute positioned ^-3 ^-1 ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add BE.Temp.Hit
