@@ -26,24 +26,25 @@
     execute if score @s MS.AttackLevel matches 2.. run data modify storage lib: Argument.Damage set value 220f
     execute if score @s MS.AttackLevel matches 2.. run data modify storage lib: Argument.AttackType set value "Magic"
     execute if score @s MS.AttackLevel matches 2.. run data modify storage lib: Argument.ElementType set value "Thunder"
-    execute if score @s MS.AttackLevel matches 2.. as @p[tag=MS.Owner] run function lib:damage/modifier
+    execute if score @s MS.AttackLevel matches 2.. as @p[tag=MS.Owner] run function lib:damage/modifier_continuation
     execute if score @s MS.AttackLevel matches 2.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function lib:damage/
 
 # 3発目ダメージデータ
     execute if score @s MS.AttackLevel matches 3.. run data modify storage lib: Argument.Damage set value 220f
     execute if score @s MS.AttackLevel matches 3.. run data modify storage lib: Argument.AttackType set value "Magic"
     execute if score @s MS.AttackLevel matches 3.. run data modify storage lib: Argument.ElementType set value "Water"
-    execute if score @s MS.AttackLevel matches 3.. as @p[tag=MS.Owner] run function lib:damage/modifier
+    execute if score @s MS.AttackLevel matches 3.. as @p[tag=MS.Owner] run function lib:damage/modifier_continuation
     execute if score @s MS.AttackLevel matches 3.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function lib:damage/
 
 # 4,5発目ダメージデータ
     execute if score @s MS.AttackLevel matches 4.. run data modify storage lib: Argument.Damage set value 220f
     execute if score @s MS.AttackLevel matches 4.. run data modify storage lib: Argument.AttackType set value "Magic"
     execute if score @s MS.AttackLevel matches 4.. run data modify storage lib: Argument.ElementType set value "None"
-    execute if score @s MS.AttackLevel matches 4.. as @p[tag=MS.Owner] run function lib:damage/modifier
+    execute if score @s MS.AttackLevel matches 4.. as @p[tag=MS.Owner] run function lib:damage/modifier_continuation
     execute if score @s MS.AttackLevel matches 4.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function lib:damage/
     execute if score @s MS.AttackLevel matches 4.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function lib:damage/
 
 # reset
+    data remove storage lib: Argument
     tag @a[tag=MS.Owner] remove MS.Owner
     scoreboard players reset $MS.OwnerID Temporary
