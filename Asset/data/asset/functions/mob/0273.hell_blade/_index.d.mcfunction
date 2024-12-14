@@ -12,10 +12,3 @@
     #declare tag 7L.Fall
     #declare tag 7L.RotateLeft
     #declare tag 7L.RotateRight
-
-
-
-
-
-
-

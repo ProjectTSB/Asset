@@ -3,7 +3,7 @@
 # Mobのtick時の処理
 #
 # @within function
-#       asset:mob/0027.skull_sniper/tick/2.tick
+#       asset:mob/0027.skull_sniper/tick/
 #       asset:mob/0027.skull_sniper/tick/2.3.check
 # レーザー投射
     execute if entity @p[gamemode=!spectator,distance=..2] run tag @s add Landing

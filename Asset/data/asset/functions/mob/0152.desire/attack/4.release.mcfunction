@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0152.desire/attack/2.attack
+# @within function asset:mob/0152.desire/attack/
 
 # 演出
     execute at @p[tag=Victim,distance=..10] run particle minecraft:dragon_breath ~ ~1 ~ 0.5 0.5 0.5 0.03 200

@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder $MPReduce MP減少量
+    #declare score_holder $MPReduce MP低下量
     #declare score_holder $Stack スタック数
 
 # 演出
