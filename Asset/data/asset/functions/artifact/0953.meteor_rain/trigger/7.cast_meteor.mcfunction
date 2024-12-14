@@ -26,4 +26,4 @@
     schedule function asset:artifact/0953.meteor_rain/trigger/meteor/2.tick 1t replace
 
 # 拡散マーカーを消す
-   kill @e[type=marker,tag=SpreadMarker,distance=..50]
+    kill @e[type=marker,tag=SpreadMarker,distance=..50]

@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red","bold":true,"italic":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"渇きは収まることを知らない。","color":"dark_red"}','[{"text":"血の欲望は","color":"dark_red"},{"text":"貴方","color":"dark_red","underlined":true},{"text":"の身体まで求める。","color":"dark_red"}]','{"text":"壊れたとしても血を与えれば再生する。","color":"dark_red","underlined":true}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 13
 # 神器を発動できるスロット (string) Wikiを参照

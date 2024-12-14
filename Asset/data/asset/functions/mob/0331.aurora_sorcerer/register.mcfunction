@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0331.aurora_sorcerer/_/register
+# @within function asset:mob/alias/331/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -60,4 +60,4 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.Damage set value 32f

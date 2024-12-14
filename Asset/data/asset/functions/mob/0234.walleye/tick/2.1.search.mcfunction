@@ -1,7 +1,7 @@
 #> asset:mob/0234.walleye/tick/2.1.search
 #
 # @within
-#   function asset:mob/0234.walleye/tick/2.tick
+#   function asset:mob/0234.walleye/tick/
 
 #> prv
 # @private

@@ -2,7 +2,7 @@
 #
 # スキル選択
 #
-# @within function asset:mob/0232.honey_leader/tick/2.tick
+# @within function asset:mob/0232.honey_leader/tick/
 
 # まず0に設定 0の場合回復スキルを使う
     scoreboard players set @s 6G.SkillSelect 0

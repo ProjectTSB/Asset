@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0074.watermelon_bomber/_/death
+# @within function asset:mob/alias/74/death
 
 # 演出
     particle block melon ~ ~1.3 ~ 0.3 0.5 0.3 0 40 normal @a
@@ -11,4 +11,4 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.5 1 0
 
 # スイカ設置
-    execute if predicate world_manager:area/02.islands run fill ~ ~ ~ ~ ~ ~ melon replace #lib:air
+    execute if predicate api:area/is_breakable run fill ~ ~ ~ ~ ~ ~ melon replace #lib:air
