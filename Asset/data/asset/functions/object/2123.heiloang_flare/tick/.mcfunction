@@ -8,7 +8,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 予告
-    execute if entity @s[scores={General.Object.Tick=1}] run function asset:object/2123.heiloang_flare/tick/prediction
+    execute if entity @s[scores={General.Object.Tick=21}] run function asset:object/2123.heiloang_flare/tick/prediction
+    # execute if entity @s[scores={General.Object.Tick=21..104}] run function asset:object/2123.heiloang_flare/tick/prediction_text
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=105}] run function asset:object/2123.heiloang_flare/tick/damage
@@ -20,5 +21,5 @@
     execute if entity @s[scores={General.Object.Tick=285}] run function asset:object/2123.heiloang_flare/tick/damage
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=100..}] on passengers run kill @s
+    execute if entity @s[scores={General.Object.Tick=104..}] on passengers run kill @s
     kill @s[scores={General.Object.Tick=286..}]

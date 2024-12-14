@@ -22,85 +22,120 @@
 # 移動
     tp @s ^ ^ ^5.5
 
-# 円 1
-    particle flame ^0 ^ ^-5 0 0 0 0.05 1
-    particle flame ^0.80206 ^ ^-4.93525 0 0 0 0.05 1
-    particle flame ^1.58334 ^ ^-4.74268 0 0 0 0.05 1
-    particle flame ^2.32362 ^ ^-4.42728 0 0 0 0.05 1
-    particle flame ^3.00371 ^ ^-3.99721 0 0 0 0.05 1
-    particle flame ^3.60601 ^ ^-3.46362 0 0 0 0.05 1
-    particle flame ^4.11492 ^ ^-2.84032 0 0 0 0.05 1
-    particle flame ^4.51725 ^ ^-2.14346 0 0 0 0.05 1
-    particle flame ^4.80259 ^ ^-1.39109 0 0 0 0.05 1
-    particle flame ^4.96354 ^ ^-0.60268 0 0 0 0.05 1
-    particle flame ^4.99594 ^ ^0.20133 0 0 0 0.05 1
-    particle flame ^4.89895 ^ ^1.00013 0 0 0 0.05 1
-    particle flame ^4.67508 ^ ^1.77302 0 0 0 0.05 1
-    particle flame ^4.33013 ^ ^2.5 0 0 0 0.05 1
-    particle flame ^3.87302 ^ ^3.16223 0 0 0 0.05 1
-    particle flame ^3.31561 ^ ^3.74255 0 0 0 0.05 1
-    particle flame ^2.67233 ^ ^4.22595 0 0 0 0.05 1
-    particle flame ^1.95983 ^ ^4.5999 0 0 0 0.05 1
-    particle flame ^1.19658 ^ ^4.85471 0 0 0 0.05 1
-    particle flame ^0.40233 ^ ^4.98379 0 0 0 0.05 1
-    particle flame ^-0.40233 ^ ^4.98379 0 0 0 0.05 1
-    particle flame ^-1.19658 ^ ^4.85471 0 0 0 0.05 1
-    particle flame ^-1.95983 ^ ^4.5999 0 0 0 0.05 1
-    particle flame ^-2.67233 ^ ^4.22595 0 0 0 0.05 1
-    particle flame ^-3.31561 ^ ^3.74255 0 0 0 0.05 1
-    particle flame ^-3.87302 ^ ^3.16223 0 0 0 0.05 1
-    particle flame ^-4.33013 ^ ^2.5 0 0 0 0.05 1
-    particle flame ^-4.67508 ^ ^1.77302 0 0 0 0.05 1
-    particle flame ^-4.89895 ^ ^1.00013 0 0 0 0.05 1
-    particle flame ^-4.99594 ^ ^0.20133 0 0 0 0.05 1
-    particle flame ^-4.96354 ^ ^-0.60268 0 0 0 0.05 1
-    particle flame ^-4.80259 ^ ^-1.39109 0 0 0 0.05 1
-    particle flame ^-4.51725 ^ ^-2.14346 0 0 0 0.05 1
-    particle flame ^-4.11492 ^ ^-2.84032 0 0 0 0.05 1
-    particle flame ^-3.60601 ^ ^-3.46362 0 0 0 0.05 1
-    particle flame ^-3.00371 ^ ^-3.99721 0 0 0 0.05 1
-    particle flame ^-2.32362 ^ ^-4.42728 0 0 0 0.05 1
-    particle flame ^-1.58334 ^ ^-4.74268 0 0 0 0.05 1
-    particle flame ^-0.80206 ^ ^-4.93525 0 0 0 0.05 1
-
-# 円型ベクトルパーティクル
-# 円 1
-    execute rotated ~00 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~10 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~20 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~30 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~40 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~50 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~60 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~70 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~80 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~90 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~100 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~110 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~120 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~130 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~140 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~150 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~160 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~170 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~180 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~190 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~200 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~210 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~220 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~230 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~240 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~250 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~260 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~270 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~280 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~290 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~300 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~310 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~320 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~330 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~340 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-    execute rotated ~350 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+# 演出
+    # 光の柱
+        particle end_rod ^0 ^0 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^0.83333 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^1.66667 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^2.5 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^3.33333 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^4.16667 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^5 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^5.83333 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^6.66667 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^7.5 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^8.33333 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^9.16667 ^ 0.3 0.3 0.3 0.05 4
+        particle end_rod ^0 ^10 ^ 0.3 0.3 0.3 0.05 4
+    # 線 1
+        particle end_rod ^0 ^0 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^0.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^1 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^1.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^2 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^2.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^3 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^3.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^4 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^4.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^5.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^6 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^6.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^7 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^7.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^8 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^8.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^9 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^9.5 ^ 0.1 0.1 0.1 0.05 3
+        particle end_rod ^0 ^10 ^ 0.1 0.1 0.1 0.05 3
+    # 円 1
+        particle end_rod ^0 ^ ^-5 0 0 0 0.05 1
+        particle end_rod ^0.80206 ^ ^-4.93525 0 0 0 0.05 1
+        particle end_rod ^1.58334 ^ ^-4.74268 0 0 0 0.05 1
+        particle end_rod ^2.32362 ^ ^-4.42728 0 0 0 0.05 1
+        particle end_rod ^3.00371 ^ ^-3.99721 0 0 0 0.05 1
+        particle end_rod ^3.60601 ^ ^-3.46362 0 0 0 0.05 1
+        particle end_rod ^4.11492 ^ ^-2.84032 0 0 0 0.05 1
+        particle end_rod ^4.51725 ^ ^-2.14346 0 0 0 0.05 1
+        particle end_rod ^4.80259 ^ ^-1.39109 0 0 0 0.05 1
+        particle end_rod ^4.96354 ^ ^-0.60268 0 0 0 0.05 1
+        particle end_rod ^4.99594 ^ ^0.20133 0 0 0 0.05 1
+        particle end_rod ^4.89895 ^ ^1.00013 0 0 0 0.05 1
+        particle end_rod ^4.67508 ^ ^1.77302 0 0 0 0.05 1
+        particle end_rod ^4.33013 ^ ^2.5 0 0 0 0.05 1
+        particle end_rod ^3.87302 ^ ^3.16223 0 0 0 0.05 1
+        particle end_rod ^3.31561 ^ ^3.74255 0 0 0 0.05 1
+        particle end_rod ^2.67233 ^ ^4.22595 0 0 0 0.05 1
+        particle end_rod ^1.95983 ^ ^4.5999 0 0 0 0.05 1
+        particle end_rod ^1.19658 ^ ^4.85471 0 0 0 0.05 1
+        particle end_rod ^0.40233 ^ ^4.98379 0 0 0 0.05 1
+        particle end_rod ^-0.40233 ^ ^4.98379 0 0 0 0.05 1
+        particle end_rod ^-1.19658 ^ ^4.85471 0 0 0 0.05 1
+        particle end_rod ^-1.95983 ^ ^4.5999 0 0 0 0.05 1
+        particle end_rod ^-2.67233 ^ ^4.22595 0 0 0 0.05 1
+        particle end_rod ^-3.31561 ^ ^3.74255 0 0 0 0.05 1
+        particle end_rod ^-3.87302 ^ ^3.16223 0 0 0 0.05 1
+        particle end_rod ^-4.33013 ^ ^2.5 0 0 0 0.05 1
+        particle end_rod ^-4.67508 ^ ^1.77302 0 0 0 0.05 1
+        particle end_rod ^-4.89895 ^ ^1.00013 0 0 0 0.05 1
+        particle end_rod ^-4.99594 ^ ^0.20133 0 0 0 0.05 1
+        particle end_rod ^-4.96354 ^ ^-0.60268 0 0 0 0.05 1
+        particle end_rod ^-4.80259 ^ ^-1.39109 0 0 0 0.05 1
+        particle end_rod ^-4.51725 ^ ^-2.14346 0 0 0 0.05 1
+        particle end_rod ^-4.11492 ^ ^-2.84032 0 0 0 0.05 1
+        particle end_rod ^-3.60601 ^ ^-3.46362 0 0 0 0.05 1
+        particle end_rod ^-3.00371 ^ ^-3.99721 0 0 0 0.05 1
+        particle end_rod ^-2.32362 ^ ^-4.42728 0 0 0 0.05 1
+        particle end_rod ^-1.58334 ^ ^-4.74268 0 0 0 0.05 1
+        particle end_rod ^-0.80206 ^ ^-4.93525 0 0 0 0.05 1
+    # 円型ベクトルパーティクル
+        execute rotated ~00 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~10 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~20 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~30 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~40 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~50 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~60 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~70 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~80 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~90 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~100 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~110 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~120 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~130 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~140 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~150 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~160 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~170 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~180 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~190 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~200 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~210 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~220 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~230 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~240 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~250 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~260 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~270 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~280 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~290 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~300 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~310 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~320 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~330 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~340 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~350 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
 
 # ノーマル以下では攻撃範囲予告
     execute if predicate api:global_vars/difficulty/min/hard run return 0

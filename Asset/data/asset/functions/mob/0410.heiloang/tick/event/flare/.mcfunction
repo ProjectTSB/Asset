@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/
 #
-# フレア
+# アニヒレートフレア
 #
 # @within asset:mob/0410.heiloang/tick/event/
 
@@ -15,17 +15,19 @@
 # 待機
     # 100 tick
     # その間に中心点の正面方向に移動
-        execute if score @s BE.EventTimer matches 80 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
-        execute if score @s BE.EventTimer matches 80 at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+        execute if score @s BE.EventTimer matches 60 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+        execute if score @s BE.EventTimer matches 60 at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 # 出現、攻撃
     # アニメーション再生
         execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/8_1_move_flare
     # 設置位置決定
-        execute if score @s BE.EventTimer matches 101 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+    # 演出
+        execute if score @s BE.EventTimer matches 172..192 run particle end_rod ~ ~5 ~ 2 2 2 1 30 force
     # 攻撃
-        execute if score @s BE.EventTimer matches 150 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 210 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 270 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 110 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 170 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 230 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
 
 # 待機
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle

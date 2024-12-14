@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2123.heiloang_flare/**
-    scoreboard objectives add 
+    # scoreboard objectives add

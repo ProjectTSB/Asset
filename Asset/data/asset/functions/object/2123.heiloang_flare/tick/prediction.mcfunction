@@ -9,7 +9,7 @@
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Color set value 10684938
     data modify storage api: Argument.FieldOverride.Scale set value [10f, 10f, 0.05f]
-    data modify storage api: Argument.FieldOverride.Tick set value 97
+    data modify storage api: Argument.FieldOverride.Tick set value 77
     execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 予告線表示

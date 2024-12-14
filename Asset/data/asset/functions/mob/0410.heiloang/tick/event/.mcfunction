@@ -28,5 +28,5 @@
 # テンペスト
     execute if entity @s[tag=BE.Skill.Tempest] run function asset:mob/0410.heiloang/tick/event/tempest/
 
-# フレア
+# アニヒレートフレア
     execute if entity @s[tag=BE.Skill.Flare] run function asset:mob/0410.heiloang/tick/event/flare/

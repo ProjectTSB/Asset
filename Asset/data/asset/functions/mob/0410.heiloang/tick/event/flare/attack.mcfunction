@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/attack
 #
-# フレア
+# アニヒレートフレア
 #
 # @within asset:mob/0410.heiloang/tick/event/flare/
 
