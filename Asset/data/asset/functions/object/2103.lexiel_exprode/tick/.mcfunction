@@ -12,6 +12,3 @@
 
     execute if score @s General.Object.Tick matches 34 unless predicate api:global_vars/difficulty/hard run function asset:object/2103.lexiel_exprode/tick/damage
     execute if score @s General.Object.Tick matches 34 if predicate api:global_vars/difficulty/hard run function asset:object/2103.lexiel_exprode/tick/hard_damage
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=50..}]

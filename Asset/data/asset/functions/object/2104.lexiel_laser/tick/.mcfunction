@@ -1,4 +1,4 @@
-    #> asset:object/2104.lexiel_laser/tick/
+#> asset:object/2104.lexiel_laser/tick/
 #
 # Objectのtick時の処理
 #

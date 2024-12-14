@@ -13,4 +13,4 @@
     execute at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 1 1
 
 # プレイヤー見る
-    execute at @s run tp @s ~ ~ ~ facing entity @p[] feet
+    execute at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..100] feet

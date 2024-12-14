@@ -1,4 +1,4 @@
-#> asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tacle
+#> asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tackle
 #
 #
 #

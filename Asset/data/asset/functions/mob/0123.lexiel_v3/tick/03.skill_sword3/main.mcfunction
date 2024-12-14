@@ -19,7 +19,7 @@
     execute if score @s 3F.Tick matches 20..26 positioned ^ ^ ^2 run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute if score @s 3F.Tick matches 27..34 positioned ^ ^ ^0.5 run function asset:mob/0123.lexiel_v3/tick/common/tp
     execute if score @s 3F.Tick matches 35..39 positioned ^ ^ ^0.15 run function asset:mob/0123.lexiel_v3/tick/common/tp
-    execute if score @s 3F.Tick matches 20..26 run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tacle
+    execute if score @s 3F.Tick matches 20..26 run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tackle
 
 # ダメージ判定
 
@@ -33,7 +33,7 @@
     execute if score @s 3F.Tick matches 1030 at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_tp
     execute if score @s 3F.Tick matches 1040 at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_tp
     execute if score @s 3F.Tick matches 1050 at @s run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/portal_tp
-    execute if score @s 3F.Tick matches 1020..1060 run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tacle
+    execute if score @s 3F.Tick matches 1020..1060 run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/tackle
 
 # そのままスキル2へ
     execute if score @s 3F.Tick matches 1060 at @p[gamemode=!spectator,distance=..100] rotated ~ 0 positioned ~ ~1 ~ positioned ^ ^ ^1 run function asset:mob/0123.lexiel_v3/tick/03.skill_sword3/skill_move

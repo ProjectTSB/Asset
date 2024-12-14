@@ -10,5 +10,3 @@
 
 # デフォルト値0.5
     data modify storage asset:context this.MovePerStep set value 0.5
-
-    function asset:object/super.init
