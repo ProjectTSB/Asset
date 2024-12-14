@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2121.heiloang_tempest/**
-    # scoreboard objectives add
+    scoreboard objectives add 2121.AttackTick dummy

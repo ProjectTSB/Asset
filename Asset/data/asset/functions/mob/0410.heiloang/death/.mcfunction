@@ -15,9 +15,10 @@
     kill @e[type=marker,tag=BE.CenterPosition]
 
 # Ajモデル消去
-    execute as @e[type=item_display,tag=BE.ModelRoot] on passengers if entity @s[type=snowball] on origin run data merge entity @s {Size:0,Tags:["BE.Temp.Dummy"]}
-    execute as @e[type=slime,tag=BE.Temp.Dummy] run tp @s ~ ~100 ~
-    kill @e[type=slime,tag=BE.Temp.Dummy]
+    # execute as @e[type=item_display,tag=BE.ModelRoot] on passengers if entity @s[type=snowball] on origin run data merge entity @s {Size:0,Tags:["BE.Temp.Dummy"]}
+    # execute as @e[type=slime,tag=BE.Temp.Dummy] run tp @s ~ ~100 ~
+    # kill @e[type=slime,tag=BE.Temp.Dummy]
+    execute as @e[type=item_display,tag=BE.ModelRoot] run function animated_java:heiloang_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/death/kill_hitbox'}
     function animated_java:heiloang_aj/remove/all
 
 say death

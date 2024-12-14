@@ -25,7 +25,7 @@
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
-        #declare tag aj.heiloang_aj.locator.locator_head
+        #declare tag aj.data
 
 # 共通
     #declare tag BE.EntityRoot 自分自身（当たり判定）
@@ -54,3 +54,7 @@
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Hit 攻撃ヒット
     #declare tag BE.Temp.Dummy ダミー
+    #declare tag BE.Temp.MoveEnd 処理終了
+
+# オブジェクト
+    #declare tag 2121.Main テンペスト
