@@ -14,7 +14,7 @@
     particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 80
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 450.0f
+    data modify storage api: Argument.Damage set value 320.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
