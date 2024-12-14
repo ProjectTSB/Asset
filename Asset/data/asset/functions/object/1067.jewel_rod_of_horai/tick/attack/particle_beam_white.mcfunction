@@ -1,4 +1,4 @@
-#> asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.1.particle_beam_white
+#> asset:object/1067.jewel_rod_of_horai/tick/attack/particle_beam_white
 #
 # 敵に向かって直線に伸びるパーティクル
 # @input
@@ -7,7 +7,7 @@
 #   facing @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1]
 #
 # @within function
-#   asset:artifact/0820.jewel_rod_of_horai/trigger/**
+#   asset:object/1067.jewel_rod_of_horai/tick/attack/**
 
 # 向いてる方向の前方に攻撃対象がいた場合パーティクルを出す
     execute positioned ^ ^ ^1 positioned ^ ^ ^1000 if entity @s[distance=..1000] positioned ^ ^ ^-1000 run particle electric_spark ^ ^ ^ 0 0 0 0 1

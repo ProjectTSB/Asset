@@ -8,6 +8,7 @@
 #> 攻撃発動時
 # @within function asset:artifact/0820.jewel_rod_of_horai/trigger/**
     #declare score_holder $MS.TargetUUID
+    #declare score_holder $MS.AttackLevel
     #declare tag MS.Init
 
 #> スケジュールループ時

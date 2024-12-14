@@ -1,7 +1,7 @@
-#> asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.1.particle_1
+#> asset:object/1067.jewel_rod_of_horai/tick/attack/particle_1
 #
 # @within function
-#   asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.5.attack
+#   asset:object/1067.jewel_rod_of_horai/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmHAJwCMA7AMwCGpKAtAyjQGxsAsAMwYC2VABxwATGzFMB3PqUZDJYsAQB2TALYJkgMMUABDXVgYTDDoDOScCgD2hDRCQMADARRxncDLbAAbkzYhHrgAB5IHmBQUQC+cQSWpGiENog0BFYQFi6I0XDY2GgwVno0btEY9jkQetFoVgCiRSVlTQCOhMHYUADK5l7kiALBZQl44NDwFMUa+EQkw2AArJJyK-SkbDSk3CJ8fHRuMpJwNGxSK3CCktxMknQARqZauhSAW77GpuaW2ul2RzOJAVAgCarafxBEJhMCRRBsNwAOj4BFiCORYjoE0g9ihwVC-nhiJRaKiSKxOPsAgEZTy0SecAAXmhfEgSSsCI0AELM1kYTrdIr9QZwYajbDjRJTWB6MBzBbEMgUMWkQ7cUgXUhwJ50fhUJ4MURUQRsFArXVPJiVMSGhZvOVfC5oDQBH4Waz+BxOPKgsDg+yQxDgaGE4Nw8momLszHYxK4-EwomRsn5ClxgjU2lwekERkstlpzlgHl83yCnoiphDJASqWTSCy2YuxVLCg0FAMfYrNzbFYrPhPfiGqgyARuEQ67iMPg0AReSTkTQ6R2GSTuv4A1BA33RANBkME2Hw6LonY4iB48Oh49RVM0Kk0ul3sD5-kv0sFgVdSsDati2sxjgBIAF0gA_3
 # 円 1
@@ -47,7 +47,7 @@
     particle electric_spark ^0.4 ^0.87 ^ 0 0 0 0 1
 
 # 三日月パーティクル
-    execute positioned ^0.95106 ^0.30902 ^ run function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.1.particle_crescent_red
+    execute positioned ^0.95106 ^0.30902 ^ run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_crescent_red
 
 # 攻撃対象への攻撃予告パーティクル
-    execute positioned ^0.95106 ^0.30902 ^ as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1] facing entity @s eyes run function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.1.particle_beam_white
+    execute positioned ^0.95106 ^0.30902 ^ as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1] facing entity @s eyes run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_beam_white
