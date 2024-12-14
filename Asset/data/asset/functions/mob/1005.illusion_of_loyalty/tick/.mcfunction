@@ -19,15 +19,14 @@
         execute if entity @s[tag=RX.Skill.HomingShot] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/homing_shot/
     # メテオレイン
         execute if entity @s[tag=RX.Skill.MeteorRain] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/meteor_rain/
+    # ブレイジングスラッシュ
+        execute if entity @s[tag=RX.Skill.BlazingSlash] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/
 
 # テレポート
     execute if entity @s[tag=RX.Move.Teleport] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/
 
 # 演出
     particle minecraft:ash ~ ~1 ~ 0.2 0.2 0.2 0 2
-
-# 最寄りのモデルのRootを自身の座標にもってくる
-#    execute as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] at @s run tp @s ~ ~ ~
 
 # モデルをプレイヤーに向ける
     execute at @s as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0

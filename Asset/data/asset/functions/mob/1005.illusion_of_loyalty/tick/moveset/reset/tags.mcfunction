@@ -14,3 +14,4 @@
     tag @s remove RX.Skill.MeteorRain
     tag @s remove RX.Skill.Meteor.1
     tag @s remove RX.Skill.Meteor.2
+    tag @s remove RX.Skill.BlazingSlash

@@ -25,3 +25,4 @@
     #declare tag RX.Skill.MeteorRain
     #declare tag RX.Skill.Meteor.1
     #declare tag RX.Skill.Meteor.2
+    #declare tag RX.Skill.BlazingSlash

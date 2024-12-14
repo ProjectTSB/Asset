@@ -7,9 +7,12 @@
 # 構え
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/windup
 
+# パーティクル
+    execute if score @s General.Mob.Tick matches 7 at @e[type=marker,tag=RW.ModelLocator.RightHand,sort=nearest,limit=1] run particle electric_spark ~ ~ ~ 0.1 0.1 0.1 0.2 20
+    execute if score @s General.Mob.Tick matches 7 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
+
 # アニメ
     execute if score @s General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/play
-
 
 # 警告
     execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/warp
