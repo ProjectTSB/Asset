@@ -23,8 +23,8 @@
         execute if score @s BE.EventTimer matches 121 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_2_plamet_dive
     # 対象を向く
         execute if score @s BE.EventTimer matches 121 run tag @a[tag=BE.HateTarget] add BE.MainTarget
-        execute if score @s BE.EventTimer matches 121..138 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
-        execute if score @s BE.EventTimer matches 138 run tag @a[tag=BE.MainTarget] remove BE.MainTarget
+        execute if score @s BE.EventTimer matches 121..135 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
+        execute if score @s BE.EventTimer matches 135 run tag @a[tag=BE.MainTarget] remove BE.MainTarget
         execute if score @s BE.EventTimer matches 138 at @s positioned ~ ~-7 ~ run function asset:mob/0410.heiloang/tick/event/plamet/dive_prediction
     # 移動
         execute if score @s BE.EventTimer matches 128..135 at @s run tp @s ^ ^1 ^-3

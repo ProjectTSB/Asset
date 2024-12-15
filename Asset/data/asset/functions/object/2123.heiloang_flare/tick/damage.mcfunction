@@ -136,15 +136,3 @@
 
 # 移動
     tp @s ^ ^ ^5.5
-
-# ノーマル以下では攻撃範囲予告
-    execute if predicate api:global_vars/difficulty/min/hard run return 0
-    execute if entity @s[scores={General.Object.Tick=285..}] run return 0
-
-# 攻撃位置表示
-    data modify storage api: Argument.ID set value 2063
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Color set value 10684938
-    data modify storage api: Argument.FieldOverride.Scale set value [10f, 10f, 0.05f]
-    data modify storage api: Argument.FieldOverride.Tick set value 27
-    execute positioned ^ ^ ^5.5 positioned ~ ~0.5 ~ run function api:object/summon
