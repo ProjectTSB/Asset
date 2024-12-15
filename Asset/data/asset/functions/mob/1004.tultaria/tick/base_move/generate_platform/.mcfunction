@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/base_move/generate_platform
+# @within function asset:mob/1004.tultaria/**
 
 #> 足場のスコア
 # @private
