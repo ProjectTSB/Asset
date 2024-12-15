@@ -22,7 +22,7 @@
 
 # 近接で殴った相手に800ダメ
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 800.0f
+    data modify storage lib: Argument.Damage set value 666.0f
 # 第一属性
     data modify storage lib: Argument.AttackType set value "Physical"
 # 第二属性
@@ -41,7 +41,7 @@
     execute positioned ^ ^ ^1.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
     execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 500.0f
+    data modify storage lib: Argument.Damage set value 333.0f
 # 補正functionを実行
     function lib:damage/modifier_continuation
 # ダメージを与える
