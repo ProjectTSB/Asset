@@ -11,20 +11,18 @@
 # 予告
     data modify storage api: Argument.ID set value 2113
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-    data modify storage api: Argument.FieldOverride.Item set value "yellow_stained_glass"
-    data modify storage api: Argument.FieldOverride.ScaleX set value 6f
-    data modify storage api: Argument.FieldOverride.ScaleZ set value 30f
-    data modify storage api: Argument.FieldOverride.Duration set value 5
-    data modify storage api: Argument.FieldOverride.KillTick set value 5
+    data modify storage api: Argument.FieldOverride.Color set value 16761175
+    data modify storage api: Argument.FieldOverride.Scale set value [6f,30f]
+    data modify storage api: Argument.FieldOverride.Interpolation set value 5
+    data modify storage api: Argument.FieldOverride.Tick set value 5
     execute positioned ~ ~0.1 ~ run function api:object/summon
     execute at @s run tp @s ~ ~ ~ ~180 ~
     data modify storage api: Argument.ID set value 2113
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-    data modify storage api: Argument.FieldOverride.Item set value "yellow_stained_glass"
-    data modify storage api: Argument.FieldOverride.ScaleX set value 6f
-    data modify storage api: Argument.FieldOverride.ScaleZ set value 30f
-    data modify storage api: Argument.FieldOverride.Duration set value 5
-    data modify storage api: Argument.FieldOverride.KillTick set value 5
+    data modify storage api: Argument.FieldOverride.Color set value 16761175
+    data modify storage api: Argument.FieldOverride.Scale set value [6f,30f]
+    data modify storage api: Argument.FieldOverride.Interpolation set value 5
+    data modify storage api: Argument.FieldOverride.Tick set value 5
     execute positioned ~ ~0.1 ~ run function api:object/summon
     execute at @s run tp @s ~ ~ ~ ~180 ~
 
