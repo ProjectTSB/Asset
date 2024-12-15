@@ -14,7 +14,7 @@
     scoreboard players remove @s RW.MoveTimesPerTick 1
 
 # 前進
-    execute if entity @s[scores={RW.MoveTimesPerTick=0}] run function asset:mob/1004.tultaria/tick/move/tereport
+    execute if entity @s[scores={RW.MoveTimesPerTick=0}] run tp @s ~ ~ ~ ~ ~
 
 # 再帰
     execute if entity @s[scores={RW.MoveTimesPerTick=1..}] positioned ^ ^ ^0.2 run function asset:mob/1004.tultaria/tick/move/teleport/recursuve_tp
