@@ -17,12 +17,6 @@
     execute if score @s General.Mob.Tick matches 0 store result storage rw_storage: Rotation int 1 run random value -180..180
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/move.m with storage rw_storage:
 
-# アニメストップ
-    execute if score @s General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/stop
-
-# 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/play
-
 # 自身のモデルにモーションを再生させる
     execute if score @s General.Mob.Tick matches 40 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/play
 

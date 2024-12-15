@@ -10,6 +10,10 @@
 # これをループされると困るのでTickを1増やす
     scoreboard players add @s General.Mob.Tick 1
 
+# アニメ
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/play
+
 # 速度設定
     scoreboard players set @s RW.Speed 8
 
