@@ -10,7 +10,7 @@
     # 魔法: こちらの周囲へのランダム移動の後に射撃
         execute if entity @s[tag=RW.Skill.MoveShot] run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/tick
     # 物理: 複数の直線攻撃が発生するでかい斬撃
-        execute if entity @s[tag=RW.Skill.BlazingCombo] run function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
+        execute if entity @s[tag=RW.Skill.BlazingCombo] run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/tick
 
 ## 水属性
     # 魔法:初手で放ってくる設置型攻撃
