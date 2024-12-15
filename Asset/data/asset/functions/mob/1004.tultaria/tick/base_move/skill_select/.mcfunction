@@ -18,8 +18,8 @@
 # 属性をランダムに選択
     # 要素がない場合は再付与
         execute if data storage asset:context this.Skill{List:[]} run data modify storage asset:context this.Skill.List set value [0,1,2]
-    # 第一形態かつ光モードのときはリストを一個だけにする
-        execute if entity @s[tag=RW.Mode.Light,scores={RW.Phase=1}] run data modify storage asset:context this.Skill.List set value [0]
+    # 光モードのときはリストを一個だけにする
+        execute if entity @s[tag=RW.Mode.Light,scores={RW.Phase=1..}] run data modify storage asset:context this.Skill.List set value [0]
     # ストレージの要素数を取得
         execute store result storage asset:context this.Skill.Count int 1 run data get storage asset:context this.Skill.List
     # 取得した要素数を使ってランダムに技を選ぶ
