@@ -51,7 +51,7 @@
 #    execute if entity @s[tag=RW.Shield] run function asset:mob/1004.tultaria/tick/base_move/loyalty_shield/
 
 # フェイズ3以降、「忠誠の幻想」がいないなら
-    execute if score @s RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s remove RW.Shield
+#    execute if score @s RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s remove RW.Shield
 
 # リセット
     tag @e[type=item_display,tag=RW.ModelRoot.Target] remove RW.ModelRoot.Target
