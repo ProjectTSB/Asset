@@ -1,3 +1,0 @@
-execute if score @s aj.twins_sapphiel.animation.21_1_lc_shot_aim.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/end_loop
-execute if score @s aj.twins_sapphiel.animation.21_1_lc_shot_aim.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_sapphiel/animations/21_1_lc_shot_aim/stop
-execute if score @s aj.twins_sapphiel.animation.21_1_lc_shot_aim.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_sapphiel/animations/21_1_lc_shot_aim/pause

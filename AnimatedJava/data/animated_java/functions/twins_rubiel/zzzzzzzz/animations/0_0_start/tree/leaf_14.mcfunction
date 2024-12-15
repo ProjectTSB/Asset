@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/0_0_start/tree/leaf_14_as_bone

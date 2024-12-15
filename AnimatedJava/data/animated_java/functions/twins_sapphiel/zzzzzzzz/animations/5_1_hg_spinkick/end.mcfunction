@@ -1,3 +1,0 @@
-execute if score @s aj.twins_sapphiel.animation.5_1_hg_spinkick.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_1_hg_spinkick/end_loop
-execute if score @s aj.twins_sapphiel.animation.5_1_hg_spinkick.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_sapphiel/animations/5_1_hg_spinkick/stop
-execute if score @s aj.twins_sapphiel.animation.5_1_hg_spinkick.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_sapphiel/animations/5_1_hg_spinkick/pause

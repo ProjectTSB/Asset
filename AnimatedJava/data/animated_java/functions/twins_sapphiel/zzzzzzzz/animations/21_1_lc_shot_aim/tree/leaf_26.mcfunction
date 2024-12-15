@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:twins_sapphiel/zzzzzzzz/animations/21_1_lc_shot_aim/tree/leaf_26_as_bone
-function animated_java:twins_sapphiel/zzzzzzzz/apply_variant/default/as_root

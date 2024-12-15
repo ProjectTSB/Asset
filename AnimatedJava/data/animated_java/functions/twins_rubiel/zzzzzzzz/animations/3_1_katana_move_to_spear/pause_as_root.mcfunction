@@ -1,1 +1,0 @@
-tag @s remove aj.twins_rubiel.animation.3_1_katana_move_to_spear

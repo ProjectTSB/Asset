@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/339/remove
 
+function asset:mob/super.remove
+
 # 通常は呼び出されない想定
 # Rootのremove処理を呼び出す
     scoreboard players operation $Uid Temporary = @s 9E.Uid

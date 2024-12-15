@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..33 run function animated_java:twins_rubiel/zzzzzzzz/animations/13_0_scythe_warp_0/tree/branch_0_33

@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:twins_sapphiel/zzzzzzzz/animations/6_0_hg_punch/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:twins_sapphiel/zzzzzzzz/animations/6_0_hg_punch/tick_animation

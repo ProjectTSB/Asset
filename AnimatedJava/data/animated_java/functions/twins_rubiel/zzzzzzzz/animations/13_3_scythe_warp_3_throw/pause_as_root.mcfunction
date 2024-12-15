@@ -1,1 +1,0 @@
-tag @s remove aj.twins_rubiel.animation.13_3_scythe_warp_3_throw

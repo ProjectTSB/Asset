@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..41 run function animated_java:twins_sapphiel/zzzzzzzz/animations/8_0_hg_fullburst_start/tree/branch_0_41

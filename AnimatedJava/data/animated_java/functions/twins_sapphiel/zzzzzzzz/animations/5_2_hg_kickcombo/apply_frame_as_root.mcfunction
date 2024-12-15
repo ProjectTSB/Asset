@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..100 run function animated_java:twins_sapphiel/zzzzzzzz/animations/5_2_hg_kickcombo/tree/branch_0_100

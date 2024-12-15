@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..54 run function animated_java:twins_rubiel/zzzzzzzz/animations/8_0_katana_throw_start_normal/tree/branch_0_54

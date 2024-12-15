@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..15 run function animated_java:twins_sapphiel/zzzzzzzz/animations/2_1_hg_guard/tree/branch_0_15

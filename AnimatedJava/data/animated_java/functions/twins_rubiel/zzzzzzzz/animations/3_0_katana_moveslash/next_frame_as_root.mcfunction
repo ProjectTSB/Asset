@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/3_0_katana_moveslash/tick_animation

@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.41_0_cover

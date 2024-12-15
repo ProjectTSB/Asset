@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.3_1_hg_shot_move_left

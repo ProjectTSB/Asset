@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/32_0_sync_throwattack_0/tick_animation

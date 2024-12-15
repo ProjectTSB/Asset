@@ -1,1 +1,0 @@
-tag @s remove aj.twins_rubiel.animation.7_2_katana_horizon_w

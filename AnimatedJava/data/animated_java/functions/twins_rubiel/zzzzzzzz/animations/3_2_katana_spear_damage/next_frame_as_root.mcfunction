@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/3_2_katana_spear_damage/tick_animation

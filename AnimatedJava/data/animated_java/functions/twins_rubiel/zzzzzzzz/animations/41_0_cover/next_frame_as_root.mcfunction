@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/41_0_cover/tick_animation

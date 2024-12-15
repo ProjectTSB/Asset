@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..50 run function animated_java:twins_sapphiel/zzzzzzzz/animations/32_0_sync_throwattack_2/tree/branch_0_50

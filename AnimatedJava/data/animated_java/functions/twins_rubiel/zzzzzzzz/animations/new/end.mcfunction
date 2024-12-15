@@ -1,3 +1,0 @@
-execute if score @s aj.twins_rubiel.animation.new.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_rubiel/zzzzzzzz/animations/new/end_loop
-execute if score @s aj.twins_rubiel.animation.new.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_rubiel/animations/new/stop
-execute if score @s aj.twins_rubiel.animation.new.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_rubiel/animations/new/pause

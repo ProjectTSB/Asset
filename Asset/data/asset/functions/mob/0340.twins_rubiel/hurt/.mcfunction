@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/340/hurt
 
+function asset:mob/super.hurt
+
 # TODO:被ダメージ量の計算
 
 # 紐づけられたRootにhurt処理を移譲

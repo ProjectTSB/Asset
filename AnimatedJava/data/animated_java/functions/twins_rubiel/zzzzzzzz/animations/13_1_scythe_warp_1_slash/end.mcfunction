@@ -1,3 +1,0 @@
-execute if score @s aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:twins_rubiel/zzzzzzzz/animations/13_1_scythe_warp_1_slash/end_loop
-execute if score @s aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:twins_rubiel/animations/13_1_scythe_warp_1_slash/stop
-execute if score @s aj.twins_rubiel.animation.13_1_scythe_warp_1_slash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:twins_rubiel/animations/13_1_scythe_warp_1_slash/pause

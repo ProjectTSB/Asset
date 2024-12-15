@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/40_4_damage_stun/tree/leaf_0_as_bone
-function animated_java:twins_rubiel/zzzzzzzz/apply_variant/stun/as_root

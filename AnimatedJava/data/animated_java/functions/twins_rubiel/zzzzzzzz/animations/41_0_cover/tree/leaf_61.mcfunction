@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/41_0_cover/tree/leaf_61_as_bone
-function animated_java:twins_rubiel/zzzzzzzz/apply_variant/blink/as_root

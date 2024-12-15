@@ -1,6 +1,14 @@
 #> asset:mob/0338.corundum_twins/register
 # @within asset:mob/alias/338/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 338
 # Type (string) Wikiを参照

@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.10_1_hg_move_left

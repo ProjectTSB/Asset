@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:twins_rubiel/zzzzzzzz/animations/6_4_katana_sheathe_damage/tree/leaf_40_as_bone
-function animated_java:twins_rubiel/zzzzzzzz/apply_variant/jito/as_root

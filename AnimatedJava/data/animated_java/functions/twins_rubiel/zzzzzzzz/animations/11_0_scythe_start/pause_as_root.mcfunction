@@ -1,1 +1,0 @@
-tag @s remove aj.twins_rubiel.animation.11_0_scythe_start

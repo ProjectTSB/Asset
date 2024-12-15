@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.21_1_lc_shot_aim

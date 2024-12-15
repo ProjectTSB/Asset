@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/6_4_katana_sheathe_damage/tick_animation

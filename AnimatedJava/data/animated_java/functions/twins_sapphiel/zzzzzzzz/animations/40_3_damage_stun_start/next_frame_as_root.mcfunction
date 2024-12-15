@@ -1,1 +1,0 @@
-function animated_java:twins_sapphiel/zzzzzzzz/animations/40_3_damage_stun_start/tick_animation

@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..45 run function animated_java:twins_sapphiel/zzzzzzzz/animations/3_1_hg_shot_move_left/tree/branch_0_45

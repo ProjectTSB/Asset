@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/8_3_katana_throw_pursuit/tick_animation

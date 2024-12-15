@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/2_1_katana_guard/tick_animation

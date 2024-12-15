@@ -1,1 +1,0 @@
-tag @s remove aj.twins_rubiel.animation.1_0_katana_start

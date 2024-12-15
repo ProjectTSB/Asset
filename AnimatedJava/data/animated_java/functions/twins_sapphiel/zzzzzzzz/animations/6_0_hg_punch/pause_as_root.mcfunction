@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.6_0_hg_punch

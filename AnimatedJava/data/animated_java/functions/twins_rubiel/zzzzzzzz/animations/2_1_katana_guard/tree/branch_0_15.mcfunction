@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 0..7 run function animated_java:twins_rubiel/zzzzzzzz/animations/2_1_katana_guard/tree/branch_0_7
-execute if score @s aj.anim_time matches 8..15 run function animated_java:twins_rubiel/zzzzzzzz/animations/2_1_katana_guard/tree/branch_8_15

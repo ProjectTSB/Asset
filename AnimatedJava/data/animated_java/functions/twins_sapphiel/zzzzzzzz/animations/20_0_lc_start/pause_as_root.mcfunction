@@ -1,1 +1,0 @@
-tag @s remove aj.twins_sapphiel.animation.20_0_lc_start

@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/7_4_katana_backjump/tick_animation

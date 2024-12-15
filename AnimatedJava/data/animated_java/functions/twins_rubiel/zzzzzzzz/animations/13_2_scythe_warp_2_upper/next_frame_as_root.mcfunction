@@ -1,1 +1,0 @@
-function animated_java:twins_rubiel/zzzzzzzz/animations/13_2_scythe_warp_2_upper/tick_animation
