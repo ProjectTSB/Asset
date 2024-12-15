@@ -22,6 +22,7 @@
         #declare function animated_java:heiloang_aj/animations/5_1_move_start/tween
         #declare function animated_java:heiloang_aj/animations/5_2_move/tween
         #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
+        #declare function animated_java:heiloang_aj/animations/6_1_sweep_breath_mirror/tween
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
         #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
         #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
@@ -67,3 +68,4 @@
 
 # オブジェクト
     #declare tag 2121.Main テンペスト
+    #declare tag 2122.Main 火炎放射演出

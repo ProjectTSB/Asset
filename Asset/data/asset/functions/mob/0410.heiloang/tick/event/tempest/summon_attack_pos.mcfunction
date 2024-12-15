@@ -3,6 +3,8 @@
 # テンペスト
 #
 # @within asset:mob/0410.heiloang/tick/event/tempest/
+# @within asset:mob/0410.heiloang/tick/event/heil_disaster/
+# @within asset:mob/0410.heiloang/tick/event/heil_disaster/hard
 
 # 攻撃位置決定
     summon area_effect_cloud ~ ~ ~ {Duration:1,Tags:["BE.Temp.AttackPosition"]}

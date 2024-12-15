@@ -2,7 +2,7 @@
 #
 # ヘイルディザスター・火
 #
-# @within asset:mob/0410.heiloang/tick/event/heil_disaster/attack
+# @within asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
 
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2124

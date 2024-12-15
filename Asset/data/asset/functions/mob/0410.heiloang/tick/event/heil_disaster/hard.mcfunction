@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/heil_disaster/
+#> asset:mob/0410.heiloang/tick/event/heil_disaster/hard
 #
 # ヘイルディザスター
 #
@@ -23,11 +23,13 @@
             execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
+
             execute if score @s BE.EventTimer matches 120 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
             execute if score @s BE.EventTimer matches 122 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
             execute if score @s BE.EventTimer matches 124 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
             execute if score @s BE.EventTimer matches 126 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
             execute if score @s BE.EventTimer matches 128 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
+
             execute if score @s BE.EventTimer matches 170 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
             execute if score @s BE.EventTimer matches 172 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
             execute if score @s BE.EventTimer matches 174 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
@@ -49,7 +51,22 @@
     # 角度
         execute if score @s BE.EventTimer matches 224 run tp @s ~ ~ ~ ~70 0
         execute if score @s BE.EventTimer matches 293..320 run tp @s ~ ~ ~ ~-8 ~
-        execute if score @s BE.EventTimer matches 344 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
+    # 反転
+        # アニメーション再生
+            execute if score @s BE.EventTimer matches 311 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/6_1_sweep_breath_mirror
+        # ジャンプ増加
+            execute if score @s BE.EventTimer matches 321 run effect give @a[distance=..80] jump_boost 9 5
+        # 攻撃
+            execute if score @s BE.EventTimer matches 322..376 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0410.heiloang/tick/event/sweep/get_attack_position.m with entity @s data.locators.locator_head
+        # 演出
+            execute if score @s BE.EventTimer matches 311 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0410.heiloang/tick/event/sweep/text_start with entity @s data.locators.beam_start
+            execute if score @s BE.EventTimer matches 311..376 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0410.heiloang/tick/event/sweep/text with entity @s data.locators.beam_start
+        # 角度
+            execute if score @s BE.EventTimer matches 321 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
+            execute if score @s BE.EventTimer matches 321 at @s run tp @s ~ ~ ~ ~-70 0
+            execute if score @s BE.EventTimer matches 353..376 run tp @s ~ ~ ~ ~8 ~
+            execute if score @s BE.EventTimer matches 404 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
+            execute if score @s BE.EventTimer matches 376 run kill @e[type=text_display,tag=2122.Main]
 
 # テンペスト
     # ターゲット決定
@@ -60,8 +77,6 @@
         execute if score @s BE.EventTimer matches 200..330 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # リヒトブリッツェン
-    # 待機
-        execute if score @s BE.EventTimer matches 350 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃位置予告
         execute if score @s BE.EventTimer matches 260..315 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/particle_before
     # 攻撃
@@ -79,4 +94,4 @@
             execute if score @s BE.EventTimer matches 390 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
 
 # 終了
-    execute if score @s BE.EventTimer matches 390.. run function asset:mob/0410.heiloang/tick/event/heil_disaster/end
+    execute if score @s BE.EventTimer matches 411.. run function asset:mob/0410.heiloang/tick/event/heil_disaster/end

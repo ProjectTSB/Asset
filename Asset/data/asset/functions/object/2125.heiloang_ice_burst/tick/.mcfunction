@@ -13,7 +13,7 @@
     particle firework ~ ~ ~ 0.5 0.5 0.5 0.05 5 force
 
 # 移動
-    execute if entity @s[scores={General.Object.Tick=70..}] run tp @s ~ ~-1 ~
+    execute if entity @s[scores={General.Object.Tick=30..}] run tp @s ~ ~-1 ~
     execute unless block ~ ~-1 ~ #lib:no_collision run function asset:object/2125.heiloang_ice_burst/tick/damage
 
 # 消滅処理

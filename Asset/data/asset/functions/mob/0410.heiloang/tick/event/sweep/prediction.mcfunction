@@ -3,6 +3,8 @@
 # 移動攻撃
 #
 # @within asset:mob/0410.heiloang/tick/event/sweep/
+# @within asset:mob/0410.heiloang/tick/event/heil_disaster/
+# @within asset:mob/0410.heiloang/tick/event/heil_disaster/hard
 
 # 予告
     execute positioned as @s run tp @s ~ ~ ~ ~ 0
