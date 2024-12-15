@@ -15,7 +15,7 @@
     attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-02cb00000006
 
 # 最大体力+5%
-    data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    data modify storage api: Argument.UUID set value [I;1,1,715,6]
     function api:modifier/max_health/remove
 
 # MP回復量+10％
