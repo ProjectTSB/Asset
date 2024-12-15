@@ -32,7 +32,7 @@
 #    execute if score @s General.Mob.Tick matches 60 run scoreboard players set @s General.Mob.Tick -10
 
 # 幻影に攻撃させる
-    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/homing_shot/
+    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/homing_shot
 
 # リセット
     execute if score @s General.Mob.Tick matches 60 run function asset:mob/1004.tultaria/tick/base_move/reset

@@ -15,5 +15,5 @@
     particle minecraft:flame ~0.4 ~1.5 ~-0.7 0.0 1 0.0 0.6 0
     particle minecraft:flame ~0.7 ~2 ~0.5 0.0 1 0.0 0.7 0
 
-# 壁がなければ再帰
-    execute if entity @s[distance=..32] positioned ^ ^ ^2 if block ~ ~ ~ #lib:no_collision run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/explosion/recursive
+# 範囲内なら再帰
+    execute if entity @s[distance=..32] positioned ^ ^ ^2 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/explosion/recursive
