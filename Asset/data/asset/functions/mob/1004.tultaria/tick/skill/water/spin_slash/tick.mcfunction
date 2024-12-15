@@ -4,8 +4,8 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
-# 足場破壊
-#    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/break_platform
+# アニメ停止
+    execute if score @s General.Mob.Tick matches 17 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
 
 # 剣を召喚
     # アニメ
@@ -44,6 +44,9 @@
 
 # 幻影にも剣を召喚
     execute if score @s General.Mob.Tick matches 100 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
+
+# 待機アニメを再生
+    execute if score @s General.Mob.Tick matches 155 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
 
 # リセット
     execute if score @s General.Mob.Tick matches 180.. run function asset:mob/1004.tultaria/tick/base_move/reset

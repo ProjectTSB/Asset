@@ -27,7 +27,7 @@
     execute if entity @s[tag=RW.Move] run function asset:mob/1004.tultaria/tick/move/teleport/move_to_marker
 
 # リセットからの復帰時に待機アニメを再生
-    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:10, to_frame: 0}
+    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
 
 ## 嘘慣性
     # 下が空気なら通常実行
