@@ -10,10 +10,3 @@
     #declare score_holder $MS.TargetUUID
     #declare score_holder $MS.AttackLevel
     #declare tag MS.Init
-
-#> スケジュールループ時
-# @within
-#   function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.1.particle_*
-#   function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.5.attack
-#   function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.6.damage
-    #declare tag MS.AttackTarget
