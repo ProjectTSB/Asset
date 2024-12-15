@@ -7,3 +7,5 @@ function asset:mob/super.init
 # execute unless entity @s[type=slime,tag=9E.Root] run return -1
 execute positioned ~ ~0 ~ rotated ~ 0 run function animated_java:twins_sapphiel/summon {args:{}}
 function asset:mob/0339.twins_sapphiel/summon/app/1.init
+
+scoreboard players operation @s ForwardTargetMobUUID = @e[type=slime,sort=nearest,limit=1] MobUUID
