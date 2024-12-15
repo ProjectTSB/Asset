@@ -25,8 +25,9 @@
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
         #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
         #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
+        #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
+        #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # アニメーションタグ
-        #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
         #declare tag aj.data
 
@@ -45,6 +46,7 @@
     #declare tag BE.Skill.Tornado 竜巻
     #declare tag BE.Skill.Sweep なぎはらいブレス
     #declare tag BE.Skill.Tempest テンペスト
+    #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
 
