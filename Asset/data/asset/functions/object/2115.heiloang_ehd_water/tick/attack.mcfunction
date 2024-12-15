@@ -23,6 +23,19 @@
     particle explosion ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
 
+    data modify storage api: Argument.ID set value 2127
+    function api:object/summon
+    data modify storage api: Argument.ID set value 2127
+    execute rotated ~ ~ positioned ^ ^ ^8 run function api:object/summon
+    data modify storage api: Argument.ID set value 2127
+    execute rotated ~30 ~ positioned ^ ^ ^10 run function api:object/summon
+    data modify storage api: Argument.ID set value 2127
+    execute rotated ~70 ~ positioned ^ ^ ^9 run function api:object/summon
+    data modify storage api: Argument.ID set value 2127
+    execute rotated ~165 ~ positioned ^ ^ ^12 run function api:object/summon
+    data modify storage api: Argument.ID set value 2127
+    execute rotated ~204 ~ positioned ^ ^ ^13 run function api:object/summon
+
 # 演出用AEC召喚
     summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
     summon area_effect_cloud ~ ~ ~ {Duration:60,Tags:["2115.Pos"]}
