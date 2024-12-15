@@ -17,7 +17,7 @@
         particle minecraft:dust 1 1 0.3 0.7 ^ ^ ^-0.5 0.07 0.07 0.07 0 1 force @a[distance=..30]
 
 # ダメージ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 run function asset:mob/1004.tultaria/tick/skill/mini/teleport_beam/beam/hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/hit
 
 # 壁ヒットで炸裂
     execute unless block ^ ^ ^1 #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/hit
