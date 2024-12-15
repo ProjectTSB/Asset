@@ -58,7 +58,7 @@
 
 # ヘルス
     scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches 400 run function asset:object/1029.barrage_spirit/tick/disapper
+    execute if score @s General.Object.Tick matches 300 run function asset:object/1029.barrage_spirit/tick/disapper
 
 # リセット
     kill @e[type=marker,tag=MoveMarker]
