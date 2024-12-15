@@ -26,6 +26,12 @@
 # 移動速度+5％
     attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02cb00000006 "0715.Speed" 0.05 multiply_base
 
+# 最大体力+5%
+    data modify storage api: Argument.UUID set value [I;1,1,715,6]
+    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/max_health/add
+
 # MP回復量+7.5％
     data modify storage api: Argument.UUID set value [I;1,1,715,6]
     data modify storage api: Argument.Amount set value 0.075
