@@ -12,7 +12,7 @@
     #declare tag MS.Owner
 
 # 攻撃実行者のID取得
-    scoreboard players operation $MS.OwnerID Temporary = @s MS.OwnerID
+    execute store result score $MS.OwnerID Temporary run data get storage asset:context this.OwnerID
     execute as @a if score @s UserID = $MS.OwnerID Temporary run tag @s add MS.Owner
 
 # 1発目ダメージデータ
@@ -46,6 +46,5 @@
 
 # reset
     function lib:damage/reset
-    data remove storage lib: Argument
     tag @a[tag=MS.Owner] remove MS.Owner
     scoreboard players reset $MS.OwnerID Temporary

@@ -31,8 +31,10 @@
 # ダメージ
     execute if score @s General.Object.Tick matches 20 run function asset:object/1067.jewel_rod_of_horai/tick/attack/damage
 
-# タグリセット
+# リセット
     tag @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] remove MS.AttackTarget
+    scoreboard players reset $MS.TargetUUID Temporary
+    scoreboard players reset $MS.AttackLevel Temporary
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
