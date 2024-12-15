@@ -6,7 +6,6 @@
 
 #> prv
 # @private
-    #declare tag 
     #declare score_holder $MissileCooltime
     #declare score_holder $CurrentDurability
 
