@@ -22,10 +22,10 @@
     data modify entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
 
 # 出現座標を記憶する
-    summon marker ~ ~1 ~ {Tags:["RW.Marker.SpawnPoint"]}
+    summon marker ~ ~ ~ {Tags:["RW.Marker.SpawnPoint"]}
 
 # 召喚地点のPos[1]を記録しておく
-    execute store result storage asset:context this.Pos.Y int 1 run data get entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
+    execute store result storage asset:context this.Pos.Y double 1 run data get entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1

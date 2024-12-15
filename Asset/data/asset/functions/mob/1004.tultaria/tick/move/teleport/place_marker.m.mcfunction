@@ -8,7 +8,7 @@
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 
 # 移動先を設置
-    $summon marker ~ $(Y) ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
+    $summon marker ~ $(Y).5 ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
 
 # 拡散値
     execute if block ~ ~-1 ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[4d,6d],[0d,0d],[4d,6d]]
