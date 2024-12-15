@@ -1,10 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/alert
+#> asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/explosion/alert
 #
-# 予告
 #
-# @within function
-#   asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/tick
-#   asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/warp
+#
+# @within function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/
 
 # データ設定
     data modify storage api: Argument.FieldOverride set value {Color:16741120,Interpolation:5,Tick:30,Scale:[2f,32.0f]}

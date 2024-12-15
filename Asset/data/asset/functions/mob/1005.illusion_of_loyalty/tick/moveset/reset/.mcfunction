@@ -10,6 +10,7 @@
 
 # タグ削除
     function asset:mob/1005.illusion_of_loyalty/tick/moveset/reset/tags
+    tag @s remove RX.InAction
 
 # スコアを戻す
     scoreboard players reset @s General.Mob.Tick

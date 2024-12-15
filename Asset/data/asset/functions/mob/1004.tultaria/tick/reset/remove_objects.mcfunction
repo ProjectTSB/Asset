@@ -7,3 +7,4 @@
 # オブジェクト類のキル
     kill @e[type=item_display,scores={ObjectID=2030}]
     kill @e[type=item_display,scores={ObjectID=2043}]
+    kill @e[type=item_display,scores={ObjectID=2053}]

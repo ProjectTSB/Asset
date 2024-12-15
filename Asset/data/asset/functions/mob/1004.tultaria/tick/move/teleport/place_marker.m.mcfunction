@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/move/teleport/place_marker
+#> asset:mob/1004.tultaria/tick/move/teleport/place_marker.m
 #
 #
 #
@@ -8,7 +8,7 @@
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 
 # 移動先を設置
-    summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
+    $summon marker ~ $(Y) ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
 
 # 拡散値
     execute if block ~ ~-1 ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[4d,6d],[0d,0d],[4d,6d]]

@@ -8,7 +8,7 @@
     tag @e[type=item_display,tag=RX.ModelRoot,sort=nearest,limit=1] add RX.ModelRoot.Target
 
 # Tick加算
-    scoreboard players add @s[scores={General.Mob.Tick=..300}] General.Mob.Tick 1
+    scoreboard players add @s[tag=RX.InAction] General.Mob.Tick 1
 
 # スキル
     # エイミングレーザー
@@ -29,7 +29,7 @@
     particle minecraft:ash ~ ~1 ~ 0.2 0.2 0.2 0 2
 
 # モデルをプレイヤーに向ける
-    execute at @s as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute at @s[tag=!RX.InAction] as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # リセット
     tag @e[type=item_display,tag=RX.ModelRoot.Target] remove RX.ModelRoot.Target

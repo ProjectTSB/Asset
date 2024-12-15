@@ -11,4 +11,4 @@
     execute unless block ~ ~ ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/move/teleport/move_to_ground/2.detect_ground
 
 # 奈落だったり、下が遠すぎたらそのまま実行
-    execute unless entity @s[distance=..16] at @r run function asset:mob/1004.tultaria/tick/move/teleport/place_marker
+    execute unless entity @s[distance=..16] at @r run function asset:mob/1004.tultaria/tick/move/teleport/place_marker.m
