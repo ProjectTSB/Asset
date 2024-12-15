@@ -14,7 +14,7 @@
     execute at @s run function asset:mob/0123.lexiel_v3/tick/common/tp_vfx
 
 # 時間無理やり変更
-    scoreboard players set @s 3F.Tick 8
+    scoreboard players set @s General.Mob.Tick 8
 
 # スキル入れ替え
     tag @s add 3F.SkillSword2

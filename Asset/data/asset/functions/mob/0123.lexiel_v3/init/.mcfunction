@@ -12,7 +12,7 @@ function asset:mob/super.init
 # tpさせる
     execute at @s as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run tp @s ~ ~ ~
 # スコア設定
-    scoreboard players set @s 3F.Tick -1
+    scoreboard players set @s General.Mob.Tick -1
 
 # タグつけるやつ。スキルアクティベート内で動く
     tag @s add 3F.Opening
