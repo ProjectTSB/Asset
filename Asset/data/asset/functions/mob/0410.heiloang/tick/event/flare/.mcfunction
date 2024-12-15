@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/
 #
-# アニヒレートフレア
+# フレア
 #
 # @within asset:mob/0410.heiloang/tick/event/
 
@@ -33,4 +33,4 @@
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
 # 終了
-    execute if score @s BE.EventTimer matches 367.. run function asset:mob/0410.heiloang/tick/event/flare/end
+    execute if score @s BE.EventTimer matches 308.. run function asset:mob/0410.heiloang/tick/event/flare/end

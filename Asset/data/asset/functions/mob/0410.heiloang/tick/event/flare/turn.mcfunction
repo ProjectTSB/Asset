@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/turn
 #
-# アニヒレートフレア
+# フレア
 #
 # @within asset:mob/0410.heiloang/tick/event/flare/
 

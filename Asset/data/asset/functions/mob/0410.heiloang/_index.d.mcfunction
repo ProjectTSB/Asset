@@ -23,6 +23,8 @@
         #declare function animated_java:heiloang_aj/animations/5_2_move/tween
         #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
+        #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
+        #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
     # アニメーションタグ
         #declare tag aj.heiloang_aj.animation.1_idle
     # 自動生成タグ
@@ -44,10 +46,12 @@
     #declare tag BE.Skill.Sweep なぎはらいブレス
     #declare tag BE.Skill.Tempest テンペスト
     #declare tag BE.Skill.Flare フレア
+    #declare tag BE.Skill.Plamet 急降下
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
     #declare tag BE.AttackTarget 攻撃ターゲット
+    #declare tag BE.HateTarget P4攻撃ターゲット
 
 # 一時
     #declare tag BE.Temp.Ground 角度決定用

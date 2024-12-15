@@ -25,5 +25,9 @@
 # なぎはらい火炎放射
     execute if entity @s[tag=aj.heiloang_aj.animation.6_sweep_breath.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/6_sweep_breath
 
-# なぎはらい火炎放射
+# フレア
     execute if entity @s[tag=aj.heiloang_aj.animation.8_1_move_flare.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/8_1_move_flare
+
+# 急降下
+    execute if entity @s[tag=aj.heiloang_aj.animation.9_1_plamet.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/9_1_plamet
+    execute if entity @s[tag=aj.heiloang_aj.animation.9_2_plamet_dive.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/9_2_plamet_dive

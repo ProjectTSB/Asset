@@ -19,9 +19,6 @@
     particle flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30
     particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30
 
-# 移動
-    tp @s ^ ^ ^5.5
-
 # 演出
     # 光の柱
         particle end_rod ^0 ^0 ^ 0.3 0.3 0.3 0.05 4
@@ -137,8 +134,12 @@
         execute rotated ~340 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~350 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
 
+# 移動
+    tp @s ^ ^ ^5.5
+
 # ノーマル以下では攻撃範囲予告
     execute if predicate api:global_vars/difficulty/min/hard run return 0
+    execute if entity @s[scores={General.Object.Tick=285..}] run return 0
 
 # 攻撃位置表示
     data modify storage api: Argument.ID set value 2063
@@ -146,4 +147,4 @@
     data modify storage api: Argument.FieldOverride.Color set value 10684938
     data modify storage api: Argument.FieldOverride.Scale set value [10f, 10f, 0.05f]
     data modify storage api: Argument.FieldOverride.Tick set value 27
-    execute positioned as @s positioned ~ ~0.5 ~ run function api:object/summon
+    execute positioned ^ ^ ^5.5 positioned ~ ~0.5 ~ run function api:object/summon
