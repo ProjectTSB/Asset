@@ -34,10 +34,7 @@
     function asset:object/call.m {method:recursive}
 
 # 距離を使い果たした場合
-    execute if entity @s[scores={1.Range=0}] run function asset:object/call.m {method:kill}
+    execute if entity @s[scores={1.Range=0}] run function asset:object/call.m {method:range_over}
 
 # 再帰
     execute if entity @s[scores={1.Recursion=1..,1.Range=1..}] at @s run function asset:object/0001.abstract_projectile/tick/recursive
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true
