@@ -24,6 +24,8 @@
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
 
     data modify storage api: Argument.ID set value 2127
+    data modify storage api: Argument.FieldOverride.OverrideScale set value [22f,22f,22f]
+    data modify storage api: Argument.FieldOverride.OverrideKillTick set value 24
     function api:object/summon
     data modify storage api: Argument.ID set value 2127
     execute rotated ~ ~ positioned ^ ^ ^8 run function api:object/summon

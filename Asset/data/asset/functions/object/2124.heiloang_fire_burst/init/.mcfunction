@@ -13,7 +13,7 @@
     execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 移動
-    tp @s ~ ~30 ~
+    tp @s ~ ~30 ~ ~ 90
 
 # NBT設定
     data modify entity @s teleport_duration set value 3
