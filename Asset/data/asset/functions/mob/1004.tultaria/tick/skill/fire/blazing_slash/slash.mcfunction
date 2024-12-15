@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/fire/combo_slash/slash
+#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/slash
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
+# @within function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/tick
 
 # ダメージ設定
     # 与えるダメージ

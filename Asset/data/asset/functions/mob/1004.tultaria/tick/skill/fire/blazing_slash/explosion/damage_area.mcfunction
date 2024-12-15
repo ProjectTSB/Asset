@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/fire/combo_slash/explosion/damage_area
+#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/damage_area
 #
 # 範囲
 #
-# @within function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/explosion/
+# @within function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/
 
 # 1x2x3の立方体範囲内のプレイヤにtag付け
     data modify storage lib: args.dx set value 1

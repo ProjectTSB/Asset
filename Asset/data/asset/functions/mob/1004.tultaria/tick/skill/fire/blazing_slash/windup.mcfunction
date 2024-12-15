@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/skill/fire/combo_slash/windup
+#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/windup
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/fire/combo_slash/tick
+# @within function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/tick
 
 # こっちを向く
     execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
