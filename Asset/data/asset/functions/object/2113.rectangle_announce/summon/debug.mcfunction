@@ -5,9 +5,8 @@
 # @user
 # @private
 
-# Rotation
+# 見てる方向へRotationXを設定
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-
 
 # 召喚
     data modify storage api: Argument.ID set value 2113

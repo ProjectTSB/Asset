@@ -4,9 +4,8 @@
 #
 # @within asset:object/alias/2113/init
 
-# KillTick指定
-    execute store result score @s 2113.KillTick run data get storage asset:context this.KillTick
-    scoreboard players add @s 2113.KillTick 3
+# KillするTickを指定
+    execute store result score @s 2113.Tick run data get storage asset:context this.Tick
 
-# this.ScaleZの半分をthis.translationZへ
-    execute store result storage asset:context this.TranslationZ float 0.05 run data get storage asset:context this.ScaleZ 10
+# this.Scale[1]の半分をthis.translationZへ
+    execute store result storage asset:context this.TranslationZ float 0.05 run data get storage asset:context this.Scale[1] 10

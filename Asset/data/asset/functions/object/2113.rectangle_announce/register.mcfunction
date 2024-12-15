@@ -8,7 +8,7 @@
     # data modify storage asset:object Extends append value
     # function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:object ExtendsSafe set value
+    data modify storage asset:object ExtendsSafe set value true
 # 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value false
 # Tickするかどうか(boolean) (オプション)
@@ -19,7 +19,6 @@
 # フィールド(オプション)
     data modify storage asset:object Field.RotationX set value 0.0f
     data modify storage asset:object Field.Color set value 10000
-    data modify storage asset:object Field.Duration set value 20
-    data modify storage asset:object Field.ScaleX set value 5f
-    data modify storage asset:object Field.ScaleZ set value 20f
-    data modify storage asset:object Field.KillTick set value 50
+    data modify storage asset:object Field.Interpolation set value 0
+    data modify storage asset:object Field.Scale set value [5f,10f]
+    data modify storage asset:object Field.Tick set value 50

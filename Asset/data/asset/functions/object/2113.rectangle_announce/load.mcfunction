@@ -6,4 +6,8 @@
 
 #> 定義類はここに
 # @within function asset:object/2113.rectangle_announce/**
+<<<<<<< HEAD
     scoreboard objectives add 2113.KillTick dummy
+=======
+    scoreboard objectives add 2113.Tick dummy
+>>>>>>> master

@@ -1,4 +1,4 @@
-#> asset:object/alias/2111/tick
+#> asset:object/alias/2113/tick
 #
 # Tick時処理のエイリアス
 #
