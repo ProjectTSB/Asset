@@ -29,8 +29,10 @@
 # リセットからの復帰時に待機アニメを再生
     execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
 
-## 嘘慣性
+# 嘘慣性
+    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
+
     # 下が空気なら通常実行
-        execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] if block ~ ~-1 ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
+    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] if block ~ ~-1 ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
     # 下が空気じゃないなら縦軸を無視
-        execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] unless block ~ ~-1 ~ #lib:no_collision rotated ~ 0 run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
+    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] unless block ~ ~-1 ~ #lib:no_collision rotated ~ 0 run function asset:mob/1004.tultaria/tick/base_move/fake_inertia

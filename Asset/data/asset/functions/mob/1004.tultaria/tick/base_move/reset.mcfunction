@@ -30,7 +30,7 @@
 
 # 慣性ONに
     tag @s remove RW.DisableInertia
-
+    
 # チェイス停止
     kill @e[tag=RW.ChaseMarker]
     tag @s remove RW.ChaseShot
