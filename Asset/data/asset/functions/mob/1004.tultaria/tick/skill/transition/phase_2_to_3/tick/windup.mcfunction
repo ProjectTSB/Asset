@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/
 
 # 構え
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/windup
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/transition/common/start
 
 # ちょっと下がってく
     execute if score @s General.Mob.Tick matches 0..5 rotated ~ 0 run tp @s ^ ^ ^-0.5
@@ -13,7 +13,7 @@
     execute if score @s General.Mob.Tick matches 16..20 rotated ~ 0 run tp @s ^ ^ ^-0.1
 
 # センターに移動
-    execute if score @s General.Mob.Tick matches 30 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/move_to_center
+    execute if score @s General.Mob.Tick matches 30 run function asset:mob/1004.tultaria/tick/skill/transition/common/move_to_center
 
 # こっちを向く
     execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
