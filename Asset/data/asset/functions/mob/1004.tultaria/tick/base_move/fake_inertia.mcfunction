@@ -10,7 +10,7 @@
     scoreboard players remove @s RW.FakeInertia 1
 
 # パーティクル
-    execute positioned ~ ~-0.2 ~ run particle soul_fire_flame ^ ^ ^ 0 0 0 0 0 force @a[distance=..30]
+    execute positioned ~ ~-0.2 ~ run particle end_rod ^ ^ ^ 0 0 0 0 0 force @a[distance=..30]
 
 # それっぽい移動
     execute if entity @s[scores={RW.FakeInertia=13..}] positioned ^ ^ ^0.8 run function asset:mob/1004.tultaria/tick/move/tereport_no_facing

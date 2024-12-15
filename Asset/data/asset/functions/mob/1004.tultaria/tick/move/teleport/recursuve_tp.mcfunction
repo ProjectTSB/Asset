@@ -8,7 +8,7 @@
 
 
 # パーティクル
-    execute positioned ~ ~-0.2 ~ if predicate lib:random_pass_per/30 rotated ~ 0 run particle minecraft:soul_fire_flame ^ ^ ^-0.2 0.02 0.02 0.02 0 1
+    execute positioned ~ ~-0.2 ~ if predicate lib:random_pass_per/30 rotated ~ 0 run particle minecraft:end_rod ^ ^ ^-0.2 0.02 0.02 0.02 0 1
 
 # スコア減算
     scoreboard players remove @s RW.MoveTimesPerTick 1
