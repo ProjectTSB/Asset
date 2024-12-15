@@ -41,7 +41,10 @@
     function api:modifier/mp_regen/add
 
 # 最大体力-10%
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-029800000006 "MaxHealthDown" -0.1 multiply_base
+    data modify storage api: Argument.UUID set value [I;1,1,664,6]
+    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/max_health/add
 
 # 最大体力を反映するための即時回復
     effect give @s instant_health 1 0
