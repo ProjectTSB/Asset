@@ -16,6 +16,9 @@
 # 雷撃マーカー設置
     summon marker ~ ~1 ~ {Tags:["RW.ChainLightning.Common","RW.ChainLightning1"]}
 
+# 幻影への指示
+    function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/thunder/thunder
+
 # 演出
     particle minecraft:dust 0.878 1 0.333 1.5 ~ ~1 ~ 0.5 0.8 0.5 0 50 force @a[distance=..30]
     particle minecraft:instant_effect ~ ~1 ~ 0.3 0.8 0.3 0 25 force @a[distance=..30]
@@ -23,4 +26,3 @@
     playsound minecraft:entity.guardian.death hostile @a ~ ~ ~ 2 2
     playsound minecraft:block.grindstone.use hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 2
-

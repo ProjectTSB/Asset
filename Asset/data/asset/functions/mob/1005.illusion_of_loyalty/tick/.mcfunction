@@ -21,6 +21,8 @@
         execute if entity @s[tag=RX.Skill.MeteorRain] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/meteor_rain/
     # ブレイジングスラッシュ
         execute if entity @s[tag=RX.Skill.BlazingSlash] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/
+    # サンダーレイ
+        execute if entity @s[tag=RX.Skill.Thunder] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/random_thunder/
 
 # テレポート
     execute if entity @s[tag=RX.Move.Teleport] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/

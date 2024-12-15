@@ -15,3 +15,6 @@
     tag @s remove RX.Skill.Meteor.1
     tag @s remove RX.Skill.Meteor.2
     tag @s remove RX.Skill.BlazingSlash
+    tag @s remove RX.Skill.Thunder
+    tag @s remove RX.Skill.Thunder.1
+    tag @s remove RX.Skill.Thunder.2

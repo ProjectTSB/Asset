@@ -26,6 +26,9 @@
     #declare tag RX.Skill.Meteor.1
     #declare tag RX.Skill.Meteor.2
     #declare tag RX.Skill.BlazingSlash
+    #declare tag RX.Skill.Thunder
+    #declare tag RX.Skill.Thunder.1
+    #declare tag RX.Skill.Thunder.2
 
 # 行動タグ
     #declare tag RX.InAction

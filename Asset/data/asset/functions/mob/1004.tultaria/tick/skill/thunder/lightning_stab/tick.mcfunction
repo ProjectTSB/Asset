@@ -45,6 +45,9 @@
 # 雷撃発動演出
     execute if score @s General.Mob.Tick matches 33 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/slash
 
+# 幻影への指示
+    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 33 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/thunder/thunder
+
 # 雷撃
     # 初撃は強い
         execute if score @s General.Mob.Tick matches 33 as @e[type=marker,tag=RW.ChainLightning.Common] at @s run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/strong/
