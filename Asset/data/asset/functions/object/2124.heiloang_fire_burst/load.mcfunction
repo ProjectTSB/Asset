@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2124.heiloang_fire_burst/**
-    scoreboard objectives add 
+    scoreboard objectives add 2124.Count dummy

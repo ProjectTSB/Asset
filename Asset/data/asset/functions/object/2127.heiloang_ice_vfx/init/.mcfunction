@@ -12,5 +12,5 @@
 
 # サブ召喚
     summon item_display ~ ~ ~ {Tags:["2127.Append"],teleport_duration:3,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1f,0f],scale:[0f,0f,0f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20453}}}
-    execute at @s as @e[type=item_display,tag=2127.Append,sort=nearest,limit=1] run tp @s ~ ~ ~ ~-45 ~
+    execute at @s as @e[type=item_display,tag=2127.Append,sort=nearest,limit=1] run tp @s ~ ~ ~ ~45 ~
     ride @e[type=item_display,tag=2127.Append,sort=nearest,limit=1] mount @s

@@ -18,6 +18,8 @@
     particle block ice ~ ~1 ~ 2 2 2 0 20 force
     particle cloud ~ ~1 ~ 0.1 0.1 0.1 0.2 30
     particle end_rod ~ ~1 ~ 0.1 0.1 0.1 0.2 10
+    data modify storage api: Argument.ID set value 2127
+    execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 消去
     kill @s
