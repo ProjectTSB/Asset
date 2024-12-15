@@ -15,6 +15,10 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..7] run function api:damage/
     function api:damage/reset
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 96
+    data modify storage api: Argument.Duration set value 3
+    execute as @a[distance=..7] run function api:entity/mob/effect/give
 
 # 演出
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.7

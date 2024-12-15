@@ -19,8 +19,11 @@
     tag @s remove BE.Skill.Move
     tag @s remove BE.Skill.MoveAfterEhd
     tag @s remove BE.Skill.Tornado
-    tag @s remove BE.Skill.Tempest
     tag @s remove BE.Skill.Sweep
+    tag @s remove BE.Skill.Tempest
+    tag @s remove BE.Skill.HeilDisaster
+    tag @s remove BE.Skill.Flare
+    tag @s remove BE.Skill.Plamet
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
