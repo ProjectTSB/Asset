@@ -2141,6 +2141,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2197,6 +2198,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2239,6 +2241,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/load"
                     }
@@ -2298,6 +2301,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/given"
                     }
@@ -2348,6 +2352,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/re-given"
                     }
@@ -2398,6 +2403,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/end"
                     }
@@ -2448,6 +2454,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/remove"
                     }
@@ -2498,6 +2505,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/tick"
                     }
