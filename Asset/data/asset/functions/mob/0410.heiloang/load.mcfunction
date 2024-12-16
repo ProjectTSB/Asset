@@ -12,3 +12,4 @@
         scoreboard objectives add BE.Ehd.Fire dummy
         scoreboard objectives add BE.Ehd.Water dummy
         scoreboard objectives add BE.Ehd.Thunder dummy
+        scoreboard objectives add BE.Pb.Count dummy

@@ -13,4 +13,6 @@
 
 # 連発
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.PowerBreath.C2
+    scoreboard players remove @s BE.Pb.Count 1
+    execute if score @s BE.Pb.Count matches 2.. run tag @s add BE.Skill.PowerBreath.C2
+    execute if score @s BE.Pb.Count matches ..1 run tag @s add BE.Skill.PowerBreath.End

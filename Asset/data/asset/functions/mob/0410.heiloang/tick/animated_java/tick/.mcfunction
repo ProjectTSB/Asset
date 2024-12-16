@@ -31,3 +31,13 @@
 # 急降下
     execute if entity @s[tag=aj.heiloang_aj.animation.9_1_plamet.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/9_1_plamet
     execute if entity @s[tag=aj.heiloang_aj.animation.9_2_plamet_dive.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/9_2_plamet_dive
+
+# パワーブレス
+    execute if entity @s[tag=aj.heiloang_aj.animation.10_1_power_breath.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/10_1_power_breath
+    execute if entity @s[tag=aj.heiloang_aj.animation.10_2_power_breath_continue_1.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/10_2_power_breath_continue_1
+    execute if entity @s[tag=aj.heiloang_aj.animation.10_3_power_breath_continue_2.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/10_3_power_breath_continue_2
+    execute if entity @s[tag=aj.heiloang_aj.animation.10_4_power_breath_continue_end.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/10_4_power_breath_continue_end
+
+# ヘイルディザスター
+    execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster_cast.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster_cast
+    execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster
