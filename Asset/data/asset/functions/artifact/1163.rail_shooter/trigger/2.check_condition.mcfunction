@@ -5,7 +5,7 @@
 # @within function asset:artifact/1163.rail_shooter/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/mainhand
+    function asset:artifact/common/check_condition/auto
 # 矢がクリティカルか見る
     execute if entity @e[type=#arrows,tag=ShotArrow,nbt={crit:1b},distance=..5,sort=nearest,limit=1] run tag @s add WB.FullCharge
 # 何かしらの要因で矢がなくなってたらクリティカル扱いにする（この処理どうなん...）
@@ -16,4 +16,4 @@
     execute if entity @s[tag=CanUsed] run function asset:artifact/1163.rail_shooter/trigger/3.main
 
 # タグ消す
-    tag @s[] remove WB.FullCharge
+    tag @s remove WB.FullCharge
