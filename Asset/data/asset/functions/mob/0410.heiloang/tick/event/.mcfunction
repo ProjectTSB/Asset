@@ -37,3 +37,5 @@
 
 # 急降下
     execute if entity @s[tag=BE.Skill.Plamet] run function asset:mob/0410.heiloang/tick/event/plamet/
+
+# インパルス
