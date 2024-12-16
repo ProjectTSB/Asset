@@ -58,7 +58,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7,Operation:0,UUID:[I;1,1,471,1],Slot:mainhand,Name:"generic.attack_damage"},{AttributeName:"generic.movement_speed",Amount:-0.02,Operation:0,UUID:[I;1,1,471,1],Slot:mainhand,Name:"generic.movement_speed"},{AttributeName:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;1,1,471,1],Slot:mainhand,Name:"generic.attack_speed"}]}
+    # data modify storage asset:artifact CustomNBT set value {}
 
 # 神器の入手用function
     function asset:artifact/common/give
