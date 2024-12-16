@@ -7,9 +7,17 @@
 # 演出
     function asset:artifact/0077.swords_of_waterfall_climbing/trigger/attack/vfx
 
-# 浮遊を付与
-    execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"levitation",amplifier:100b,duration:2,show_particles:0b}]}
-    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"levitation",amplifier:127b,duration:2,show_particles:0b}]}
+# 自身に浮遊を付与
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 100
+    data modify storage api: Argument.Duration set value 3
+    function api:entity/mob/effect/give
+
+# 敵に浮遊を付与
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 127
+    data modify storage api: Argument.Duration set value 3
+    execute as @e[type=#lib:living,tag=Victim,distance=..0.01] run function api:entity/mob/effect/give
 
 # ダメージ
     data modify storage api: Argument.Damage set value 45f
