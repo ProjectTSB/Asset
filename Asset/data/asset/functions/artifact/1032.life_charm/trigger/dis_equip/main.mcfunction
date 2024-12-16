@@ -7,9 +7,6 @@
 # 演出
     playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8
 
-# 補正を削除
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-040800000007
-
 # 最大体力を反映するための即時回復
     effect give @s instant_health 1 0
 
