@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0205.convallatoxin/_/register",
         "asset:effect/0614.prominence_curse/_/register",
         "asset:effect/0124.darkness/_/register",
         "asset:effect/0202.sheep_blessing/_/register",
@@ -60,6 +61,9 @@
         "asset:effect/0276.unending_thunder/_/register",
         "asset:effect/0001.attack_base_debuff/_/register",
         "asset:effect/0051.attack_base_debuff/_/register",
-        "asset:effect/0125.levitation/_/register"
+        "asset:effect/0125.levitation/_/register",
+        "asset:effect/0277.the_world/_/register",
+        "asset:effect/0278.time_shackles/_/register",
+        "asset:effect/0279.poison_of_vinderre/_/register"
     ]
 }

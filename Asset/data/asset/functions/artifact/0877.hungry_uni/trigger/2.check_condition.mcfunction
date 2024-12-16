@@ -12,8 +12,8 @@
 # 他にアイテム等確認する場合はここに書く
     # コンブを持ってるかチェック
         execute store result score $Count Temporary run clear @s kelp 0
-        execute if score $Count Temporary matches 0 run tag @s remove CanUsed
-        execute if score $Count Temporary matches 0 run function lib:message/artifact/dont_have_require_items
+        execute unless score $Count Temporary matches 8.. run tag @s remove CanUsed
+        execute unless score $Count Temporary matches 8.. run function lib:message/artifact/dont_have_require_items
         scoreboard players reset $Count Temporary
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0877.hungry_uni/trigger/3.main

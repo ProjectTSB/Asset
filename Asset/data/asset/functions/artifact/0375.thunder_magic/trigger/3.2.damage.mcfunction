@@ -14,8 +14,8 @@
     playsound minecraft:entity.lightning_bolt.impact player @a ~ ~ ~ 1 1
 
 # ダメージ
-    # 与えるダメージ = 80
-        data modify storage lib: Argument.Damage set value 80f
+    # 与えるダメージ = 40
+        data modify storage lib: Argument.Damage set value 40f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 雷属性
@@ -23,6 +23,6 @@
 # 補正functionを実行
     function lib:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1.5,sort=nearest] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1.8,sort=nearest] run function lib:damage/
 # リセット
     function lib:damage/reset

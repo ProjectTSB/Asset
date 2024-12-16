@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"下克上", "color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"失ったものが多ければ多いほど","color":"white"}','[{"text":"強さ","color":"red"},{"text":"を増すと伝えられている斧","color":"white"}]','[{"text":"偉業","color":"yellow"},{"text":"を成し遂げ、失ったものを再び","color":"white"}]','[{"text":"手に入れた時、この力は弱まる","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"失ったものが多ければ多いほど","color":"white"}','[{"text":"強さ","color":"red"},{"text":"を増すと伝えられている斧","color":"white"}]','[{"text":"偉業","color":"yellow"},{"text":"を成し遂げ、失ったものを","color":"white"}]','[{"text":"取り戻した時、この力は弱まる","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 20
+    data modify storage asset:artifact MPCost set value 70
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
