@@ -34,9 +34,6 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/max_health/add
 
-# 最大体力を反映するための即時回復
-    effect give @s instant_health 1 0
-
 # フルセット用Tagを付与
     tag @s add IG.Fullset
 

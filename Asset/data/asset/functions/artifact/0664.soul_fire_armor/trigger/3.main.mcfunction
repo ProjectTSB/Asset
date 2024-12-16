@@ -46,8 +46,5 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/max_health/add
 
-# 最大体力を反映するための即時回復
-    effect give @s instant_health 1 0
-
 # フルセット検知
     execute if data storage asset:context id.all{head:664,chest:665,legs:666,feet:667} run function asset:artifact/0664.soul_fire_armor/trigger/fullset/
