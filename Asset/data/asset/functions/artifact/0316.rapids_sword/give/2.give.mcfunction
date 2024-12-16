@@ -49,7 +49,7 @@ data modify storage asset:artifact MPHealWhenHit set value 3
 # 神器のクールダウン (int) (オプション)
 # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value shortRange
+    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
     data modify storage asset:artifact TypeCooldown.Duration set value 5
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
