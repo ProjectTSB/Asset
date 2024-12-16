@@ -63,6 +63,7 @@
         "asset:effect/0051.attack_base_debuff/_/register",
         "asset:effect/0125.levitation/_/register",
         "asset:effect/0277.the_world/_/register",
-        "asset:effect/0278.time_shackles/_/register"
+        "asset:effect/0278.time_shackles/_/register",
+        "asset:effect/0279.poison_of_vinderre/_/register"
     ]
 }
