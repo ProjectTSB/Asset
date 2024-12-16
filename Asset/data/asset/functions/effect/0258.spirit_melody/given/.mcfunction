@@ -4,5 +4,5 @@
 #
 # @within function asset:effect/0258.spirit_melody/_/given
 
-# スコアを0に初期化
-    scoreboard players set @s 258.Tick 0
+# スコア初期化
+    function asset:effect/0258.spirit_melody/score/init
