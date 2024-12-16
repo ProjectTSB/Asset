@@ -7,5 +7,5 @@
 # 浮遊を付与
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 40
-    data modify storage api: Argument.Duration set value 4
+    data modify storage api: Argument.Duration set value 3
     function api:entity/mob/effect/give
