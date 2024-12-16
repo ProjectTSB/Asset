@@ -21,4 +21,7 @@
     execute as @e[type=item_display,tag=BE.ModelRoot] run function animated_java:heiloang_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/remove/kill_hitbox'}
     function animated_java:heiloang_aj/remove/all
 
+# その他リセット
+    function asset:mob/0410.heiloang/tick/util/remove_all_tag
+
 say remove
