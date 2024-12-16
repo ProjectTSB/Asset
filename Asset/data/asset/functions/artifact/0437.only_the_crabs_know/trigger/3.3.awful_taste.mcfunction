@@ -6,8 +6,8 @@
 
 # MP減少
     # 減少する量 = 50
-        scoreboard players set $Fluctuation Lib -50
-        function lib:mp/fluctuation
+        data modify storage api: Argument.Fluctuation set value -50
+        function api:mp/fluctuation
 
 # 毒
     effect give @s poison 15 2 true

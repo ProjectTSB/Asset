@@ -13,7 +13,8 @@
     #declare tag EmptyMP
 
 # プレイヤーのマナを検知する
-    execute as @p[tag=Victim] store result score $EctoplasmMPCheck Temporary run function lib:mp/get
+    execute as @p[tag=Victim] run function api:mp/get_current
+    execute store result score $EctoplasmMPCheck Temporary run data get storage api: Return.CurrentMP
     execute if score $EctoplasmMPCheck Temporary matches ..15 run tag @p[tag=Victim] add EmptyMP
 
 # マナが無いプレイヤーを殴った時
@@ -30,8 +31,8 @@
         execute as @p[tag=EmptyMP] at @s run particle soul ~ ~1 ~ 0 0 0 0.1 10
 
 # マナを吸い取る
-    scoreboard players set $Fluctuation Lib -15
-    execute as @p[tag=Victim] run function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value -15
+    execute as @p[tag=Victim] run function api:mp/fluctuation
 
 # タグリセット
     tag @p[tag=EmptyMP] remove EmptyMP

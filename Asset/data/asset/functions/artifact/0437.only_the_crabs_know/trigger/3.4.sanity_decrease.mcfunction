@@ -15,8 +15,8 @@
 
 # MP回復
     # 回復する量 = 100
-        scoreboard players set $Fluctuation Lib 100
-        function lib:mp/fluctuation
+        data modify storage api: Argument.Fluctuation set value 100
+        function api:mp/fluctuation
 
 # 演出
     tellraw @a[distance=..10] [{"selector":"@s","bold":true},{"text":"は正気度が減った"}]
