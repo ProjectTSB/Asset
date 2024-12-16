@@ -16,7 +16,7 @@
         # 剰余算する。追加ダメージ。
             scoreboard players operation $RandomDamage Temporary %= $51 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 250
+            scoreboard players add $RandomDamage Temporary 85
     #ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     # 第一属性
