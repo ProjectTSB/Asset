@@ -4,7 +4,7 @@
 #
 # @within asset:mob/0410.heiloang/tick/**
 
-# DEBUG
+# デバッグ用
     return 0
 
 # 行動リセット

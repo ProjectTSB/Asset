@@ -11,20 +11,19 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_1_plamet
     # ターゲット位置に移動
-        execute if score @s BE.EventTimer matches 35 run function asset:mob/0410.heiloang/tick/event/plamet/move
+        execute if score @s BE.EventTimer matches 32 run function asset:mob/0410.heiloang/tick/event/plamet/move
     # 攻撃
         execute if score @s BE.EventTimer matches 72 run function asset:mob/0410.heiloang/tick/event/plamet/attack_plamet
     # 対象を向く
         execute if score @s BE.EventTimer matches 1 run tag @a[tag=BE.HateTarget] add BE.MainTarget
         execute if score @s BE.EventTimer matches 1..34 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
         execute if score @s BE.EventTimer matches 35 run tag @a[tag=BE.MainTarget] remove BE.MainTarget
-# 突進攻撃
+# テンペストダイブ
     # アニメーション再生
         execute if score @s BE.EventTimer matches 121 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_2_plamet_dive
     # 対象を向く
-        execute if score @s BE.EventTimer matches 121 run tag @a[tag=BE.HateTarget] add BE.MainTarget
-        execute if score @s BE.EventTimer matches 121..135 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
-        execute if score @s BE.EventTimer matches 135 run tag @a[tag=BE.MainTarget] remove BE.MainTarget
+        execute if score @s BE.EventTimer matches 121 at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
+        execute if score @s BE.EventTimer matches 121..138 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target_aec
         execute if score @s BE.EventTimer matches 138 at @s positioned ~ ~-7 ~ run function asset:mob/0410.heiloang/tick/event/plamet/dive_prediction
     # 移動
         execute if score @s BE.EventTimer matches 128..135 at @s run tp @s ^ ^1 ^-3
@@ -47,6 +46,11 @@
         execute if score @s BE.EventTimer matches 191 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run data modify entity @s teleport_duration set value 6
         execute if score @s BE.EventTimer matches 201 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
         execute if score @s BE.EventTimer matches 220 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run data modify entity @s teleport_duration set value 1
+    # テンペスト配置
+        execute if score @s BE.EventTimer matches 30 as @a[distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 30 at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/set_tempest
+        execute if score @s BE.EventTimer matches 130..160 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 130..160 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # モデルを自身の位置に移動
     execute if score @s BE.EventTimer matches 35..191 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0

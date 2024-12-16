@@ -9,6 +9,7 @@
     execute if entity @s[tag=2121.Attack] run scoreboard players add @s 2121.AttackTick 1
 
 # 攻撃
+    execute if entity @s[tag=!2121.Attack,scores={General.Object.Tick=144}] run tag @s add 2121.StartAttack
     execute if entity @s[tag=!2121.Attack,scores={General.Object.Tick=145..}] run particle gust ~ ~ ~ 0.3 0.3 0.3 0.1 1
     execute if entity @s[tag=!2121.Attack,scores={General.Object.Tick=145..}] run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.1 3
     execute if entity @s[tag=!2121.Attack,scores={General.Object.Tick=145..}] if predicate lib:random_pass_per/10 run particle explosion ~ ~0.5 ~ 0.3 0.3 0.3 0.5 1

@@ -14,7 +14,7 @@
 # 終了
     kill @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=nearest,limit=1]
 
-# 弾召喚テスト
+# ノーマル以上では対角にも召喚
     execute if predicate api:global_vars/difficulty/easy run return 0
     execute at @s run tp @s ~ ~ ~ ~180 ~
     data modify storage api: Argument.ID set value 2123
