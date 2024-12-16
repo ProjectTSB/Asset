@@ -12,6 +12,8 @@
     execute unless entity @e[type=#arrows,tag=ShotArrow,distance=..5] run tag @s add WB.FullCharge
 # 矢を消す
     kill @e[type=#arrows,tag=ShotArrow,distance=..5]
+# 発動しなかったら矢を返す
+    execute unless entity @s[tag=CanUsed] run summon item ~ ~ ~ {PickupDelay:0,Item:{id:"minecraft:arrow",Count:1b}}
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1163.rail_shooter/trigger/3.main
 

@@ -17,7 +17,8 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"超高出力で矢をぶっ飛ばす装置"}','{"text":"溜めないと威力が激減する"}','{"text":"矢が発射の衝撃に耐えきれず、射程は短い","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

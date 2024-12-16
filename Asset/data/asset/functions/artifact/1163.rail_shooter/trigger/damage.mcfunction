@@ -10,7 +10,6 @@
 # 演出
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
     playsound entity.lightning_bolt.impact player @a ~ ~ ~ 0.4 0
-    playsound minecraft:entity.breeze.jump player @a ~ ~ ~ 1 0.7
 
 # ダメージ設定
     data modify storage lib: Argument.Damage set value 100.0f
