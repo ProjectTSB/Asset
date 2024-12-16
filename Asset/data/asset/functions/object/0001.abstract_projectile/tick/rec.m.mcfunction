@@ -9,6 +9,9 @@
 # TP
     tp @s ~ ~ ~
 
+# パーティクルなど、この再帰内で一緒に実行してほしいメソッド
+    function asset:object/call.m {method:"recursive"}
+
 # エンティティへの衝突
     # 判定
         function asset:object/call.m {method:"detect_hit_entity"}
@@ -22,9 +25,6 @@
     # メソッド実行
         execute if score @s ObjectID matches -2147483648..2147483647 if data storage asset:context {IsHitBlock:true} run function asset:object/call.m {method:"hit_block"}
         data remove storage asset:context IsHitBlock
-
-# パーティクルなど、この再帰内で一緒に実行してほしいメソッド
-    function asset:object/call.m {method:"recursive"}
 
 # RemainingRange を減らす
     execute store result storage asset:context this.RemainingRange int 0.9999999999 run data get storage asset:context this.RemainingRange 1
