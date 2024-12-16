@@ -26,6 +26,10 @@
     # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
+# アイコンを表示するか否か (boolean) (default = true)
+    data modify storage asset:effect Visible set value true
+# スタックを表示するか否か (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
 # 死亡時のエフェクトの処理 (default = "remove")
     data modify storage asset:effect ProcessOnDied set value "keep"
 # 消すのに必要なレベル (int) (default = 1)
