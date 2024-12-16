@@ -8,6 +8,7 @@
 # @within asset:mob/0410.heiloang/tick/event/enhanced_disaster/
 # @within asset:mob/0410.heiloang/tick/event/tornado/
 # @within asset:mob/0410.heiloang/tick/event/tempest/
+# @within asset:mob/0410.heiloang/tick/event/power_breath/
 
 # 再生
     function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween {duration:1, to_frame: 0}

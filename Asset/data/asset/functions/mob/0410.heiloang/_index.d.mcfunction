@@ -26,6 +26,10 @@
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
         #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
         #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
+        #declare function animated_java:heiloang_aj/animations/10_1_power_breath/tween
+        #declare function animated_java:heiloang_aj/animations/10_2_power_breath_continue_1/tween
+        #declare function animated_java:heiloang_aj/animations/10_3_power_breath_continue_2/tween
+        #declare function animated_java:heiloang_aj/animations/10_4_power_breath_continue_end/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # アニメーションタグ
@@ -50,6 +54,7 @@
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
+    #declare tag BE.Skill.PowerBreath パワーブレス
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
