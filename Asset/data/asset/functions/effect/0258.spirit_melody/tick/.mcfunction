@@ -25,6 +25,12 @@
     execute store result storage asset:context this.Note int 1 run scoreboard players get @s 258.Note
     function asset:effect/0258.spirit_melody/tick/note/.m with storage asset:context this
 
+# 一定間隔で回復
+    scoreboard players operation $Interval Temporary = @s 258.Tick
+    scoreboard players operation $Interval Temporary %= $20 Const
+    execute if score $Interval Temporary matches 0 run function asset:effect/0258.spirit_melody/tick/heal
+    scoreboard players reset $Interval Temporary
+
 # スコア
 # Durationから直接呼び出すと仕様上0が呼ばれないし
 # -1する都合上、storage → score → storageとめんどいのでスコアで実装する

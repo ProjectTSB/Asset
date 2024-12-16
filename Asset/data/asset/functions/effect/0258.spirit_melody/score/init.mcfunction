@@ -8,3 +8,5 @@
 
 # スコア初期化
     scoreboard players set @s 258.Tick -1
+    scoreboard players reset @s 258.Note
+    scoreboard players reset @s 258.RunCount
