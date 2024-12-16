@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2128.heiloang_powerbreath/**
-    scoreboard objectives add 
+    # scoreboard objectives add

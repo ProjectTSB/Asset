@@ -16,13 +16,14 @@
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
-    data modify storage asset:mob Interferable set value false
+# 現状、複数攻撃判定が動作しないので暫定で干渉可能にしている。修正され次第、falseに戻す
+    data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『黒龍』"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 10000
+    data modify storage asset:mob Health set value 50000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Physical set value

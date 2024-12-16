@@ -61,6 +61,7 @@
 
 # リヒトブリッツェン
     # 待機
+        execute if score @s BE.EventTimer matches 350 run scoreboard players set @s BE.Idle.Count 3
         execute if score @s BE.EventTimer matches 350 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃位置予告
         execute if score @s BE.EventTimer matches 260..315 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/particle_before

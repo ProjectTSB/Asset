@@ -7,6 +7,7 @@
 # ターゲット用タグ
     tag @a remove BE.MainTarget
     tag @a remove BE.AttackTarget
+    tag @a remove BE.HateTarget
 
 # オブジェクト処理用タグ
     tag @a remove BE.Temp.MoveEnd

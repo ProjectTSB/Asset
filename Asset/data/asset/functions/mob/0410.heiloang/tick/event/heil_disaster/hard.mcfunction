@@ -94,4 +94,5 @@
             execute if score @s BE.EventTimer matches 390 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
 
 # 終了
+    execute if score @s BE.EventTimer matches 411 run scoreboard players set @s BE.Idle.Count 2
     execute if score @s BE.EventTimer matches 411.. run function asset:mob/0410.heiloang/tick/event/heil_disaster/end

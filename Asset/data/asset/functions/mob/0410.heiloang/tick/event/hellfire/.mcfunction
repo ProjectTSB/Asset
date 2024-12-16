@@ -44,4 +44,5 @@
     execute if score @s BE.EventTimer matches 311..321 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_center
 
 # 終了
+    # execute if score @s BE.EventTimer matches 321 run scoreboard players set @s BE.Idle.Count 99
     execute if score @s BE.EventTimer matches 321.. run function asset:mob/0410.heiloang/tick/event/hellfire/end

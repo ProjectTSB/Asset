@@ -30,6 +30,7 @@
         execute if score @s BE.EventTimer matches 230 at @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] rotated ~0 0 run function asset:mob/0410.heiloang/tick/event/flare/attack
 
 # 待機
+    execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
 # 終了

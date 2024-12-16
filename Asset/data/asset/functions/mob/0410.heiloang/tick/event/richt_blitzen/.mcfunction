@@ -33,6 +33,7 @@
             execute if score @s BE.EventTimer matches 90 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_spin
 
 # 待機
+    execute if score @s BE.EventTimer matches 175 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 6
     execute if score @s BE.EventTimer matches 175 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
 # 終了

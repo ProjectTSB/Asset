@@ -16,6 +16,10 @@
     # NBT設定
     # Aj関連初期化
         function asset:mob/0410.heiloang/init/animated_java
+    # スコア初期化
+        scoreboard players set @s BE.Phase 0
+        scoreboard players set @s BE.ActCount 0
+        scoreboard players set @s BE.Idle.Count 0
     # エンハンスドディザスターの順番決定
         execute store result score @s BE.Ehd.Fire run random value 1..3
         execute store result score @s BE.Ehd.Water run random value 1..2
