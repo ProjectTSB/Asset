@@ -1402,6 +1402,25 @@
             ]
         },
         {
+            "label": "神器/トリガー: 弓発射",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/shot.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
             "label": "神器/トリガー: tick",
             "generates": [
                 {
