@@ -23,9 +23,9 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 90 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/10_1_power_breath
     # 攻撃位置決定
-        execute if score @s BE.EventTimer matches 105 at @p[tag=BE.MainTarget] run function asset:mob/0410.heiloang/tick/event/power_breath/summon_attack_pos
+        execute if score @s BE.EventTimer matches 95 at @p[tag=BE.MainTarget] run function asset:mob/0410.heiloang/tick/event/power_breath/summon_attack_pos_first
     # 攻撃
-        execute if score @s BE.EventTimer matches 125 positioned ^ ^1 ^4 run function asset:mob/0410.heiloang/tick/event/power_breath/attack
+        execute if score @s BE.EventTimer matches 125 at @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] positioned ^ ^1 ^4 run function asset:mob/0410.heiloang/tick/event/power_breath/attack
 # 対象を向く
     execute if score @s BE.EventTimer matches 1..104 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
 

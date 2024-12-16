@@ -24,6 +24,10 @@
     tag @s remove BE.Skill.HeilDisaster
     tag @s remove BE.Skill.Flare
     tag @s remove BE.Skill.Plamet
+    tag @s remove BE.Skill.PowerBreath
+    tag @s remove BE.Skill.PowerBreath.C1
+    tag @s remove BE.Skill.PowerBreath.C2
+    tag @s remove BE.Skill.PowerBreath.End
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0

@@ -3,6 +3,9 @@
 # パワーブレス
 #
 # @within asset:mob/0410.heiloang/tick/event/power_breath/
+# @within asset:mob/0410.heiloang/tick/event/power_breath_continue_1/
+# @within asset:mob/0410.heiloang/tick/event/power_breath_continue_2/
+# @within asset:mob/0410.heiloang/tick/event/power_breath_end/
 
 # 攻撃
     data modify storage api: Argument.ID set value 2128

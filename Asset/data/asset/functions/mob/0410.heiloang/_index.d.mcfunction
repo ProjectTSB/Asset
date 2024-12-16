@@ -55,6 +55,9 @@
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
     #declare tag BE.Skill.PowerBreath パワーブレス
+    #declare tag BE.Skill.PowerBreath.C1 パワーブレス連発
+    #declare tag BE.Skill.PowerBreath.C2 パワーブレス連発
+    #declare tag BE.Skill.PowerBreath.End パワーブレス終了
 
 # 処理用
     #declare tag BE.MainTarget 主ターゲット
