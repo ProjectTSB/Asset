@@ -18,7 +18,8 @@
     execute store result score $MPReduce Temporary run data get storage api: Return.Difficulty 40
 
 # プレイヤーのMP現在値と減少量を比較し、減少量の方が多ければTagを付与
-    execute as @p[tag=Victim] store result score $MPCheck Temporary run function lib:mp/get
+    execute as @p[tag=Victim] run function api:mp/get_current
+    execute store result score $MPCheck Temporary run data get storage api: Return.CurrentMP
     execute if score $MPCheck Temporary <= $MPReduce Temporary run tag @p[tag=Victim] add EmptyMP
 
 # ダメージ
@@ -34,8 +35,8 @@
     function lib:damage/reset
 
 # マナを吸い取る 吸収量 = (40 × 難易度値)
-    execute store result score $Fluctuation Lib run data get storage api: Return.Difficulty -40
-    execute as @p[tag=Victim] run function lib:mp/fluctuation
+    execute store result storage api: Argument.Fluctuation int -40 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim] run function api:mp/fluctuation
 
 # 自分にタグを付与する
     execute if entity @p[tag=Victim,tag=!EmptyMP] run tag @s add 48.HasMP
