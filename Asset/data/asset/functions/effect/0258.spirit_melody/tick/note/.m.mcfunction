@@ -2,6 +2,8 @@
 #
 # マクロで呼び出す
 #
+# @input args:
+#   Note : int
 # @within function asset:effect/0258.spirit_melody/tick/
 
 # SpecialThanks M7nt
