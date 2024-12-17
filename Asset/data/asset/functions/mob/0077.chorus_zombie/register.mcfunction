@@ -29,11 +29,11 @@
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"chorus_flower",Count:1b}
     # 胴 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Chest set value {id:"leather_chestplate",Count:1b,tag:{display:{color:9445520}}}
+        data modify storage asset:mob Armor.Chest set value {id:"leather_chestplate",Count:1b,tag:{display:{color:9445520,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1,2,77,5]}]}}}
     # 脚 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Legs set value
     # 足 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Feet set value {id:"leather_boots",Count:1b,tag:{display:{color:16777096}}}
+        data modify storage asset:mob Armor.Feet set value {id:"leather_boots",Count:1b,tag:{display:{color:16777096,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1,2,77,3]}]}}}
 # 防具ドロップ率 ([float, float]) (オプション)
     data modify storage asset:mob ArmorDropChances set value [0.0f,0.0f,0.0f,0.0f]
 # 体力 (double) (オプション)
