@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0136.hi_amrita/trigger/2.check_condition
 
-#> private
-# @private
-    #declare score_holder $Fluctuation
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
 
@@ -18,5 +14,5 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # MP回復
-    scoreboard players set $Fluctuation Lib 100
-    function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value 100
+    function api:mp/fluctuation

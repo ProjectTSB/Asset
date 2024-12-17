@@ -8,8 +8,8 @@
     execute store result score @s SU.CoolDown run time query gametime
 
 # MP回復
-    scoreboard players set $Fluctuation Lib 20
-    function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value 20
+    function api:mp/fluctuation
 
 # 演出
     particle dust 100000000 1 0 0.75 ~ ~0.9 ~0 0.5 1.0 0.5 0.0 20 normal
