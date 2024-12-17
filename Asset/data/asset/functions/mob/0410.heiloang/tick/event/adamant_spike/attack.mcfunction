@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/adamant_spike/summon
+#> asset:mob/0410.heiloang/tick/event/adamant_spike/attack
 #
 # アダマントスパイク
 #

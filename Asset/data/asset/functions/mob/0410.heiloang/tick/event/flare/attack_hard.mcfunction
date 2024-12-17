@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/flare/
 
 # 角度調整用のtp
-    execute positioned as @s rotated as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute rotated as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=nearest,limit=1] positioned as @s run tp @s ~ ~ ~ ~ 0
 
 # 攻撃地点削除
     kill @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=nearest,limit=1]

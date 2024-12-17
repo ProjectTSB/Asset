@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/flare/
 
 # 角度調整用のtp
-    execute positioned as @s rotated as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute rotated as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=nearest,limit=1] positioned as @s run tp @s ~ ~ ~ ~ 0
 
 # 攻撃地点削除
     kill @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=nearest,limit=1]
@@ -24,7 +24,7 @@
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Damage set value 60.0f
-    execute positioned ^ ^ ^32 run function api:object/summon
+    execute rotated as @s positioned ^ ^ ^-32 run function api:object/summon
 
 # 終了
     execute positioned as @s run tp @s ~ ~ ~ ~ 0

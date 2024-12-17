@@ -1,8 +1,8 @@
-#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/summon_ice
+#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/attack_ice
 #
 # エンハンスドディザスター
 #
-# @within asset:mob/0410.heiloang/tick/event/enhanced_disaster/summon
+# @within asset:mob/0410.heiloang/tick/event/enhanced_disaster/attack
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2115
