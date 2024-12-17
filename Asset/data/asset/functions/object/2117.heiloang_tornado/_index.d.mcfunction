@@ -6,3 +6,4 @@
     #declare tag 2117.Pos
     #declare tag 2117.Text
     #declare tag 2117.Append
+    #declare tag 2117.Ride

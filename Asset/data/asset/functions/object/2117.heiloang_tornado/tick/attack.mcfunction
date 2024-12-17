@@ -24,5 +24,6 @@
 # 竜巻演出開始
     summon item_display ~ ~ ~ {Tags:["2117.Append"],teleport_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[0f,-2f,0f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20450}}}
     summon text_display ~ ~ ~ {Tags:["2117.Text"],billboard:"vertical",alignment:"center",brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,3f,0f],scale:[0f,6f,0f]},text:'{"text":"0","font":"object/2117/0"}',background:16711680}
-    ride @e[type=item_display,tag=2117.Append,sort=nearest,limit=1] mount @s
-    ride @e[type=text_display,tag=2117.Text,sort=nearest,limit=1] mount @s
+    ride @e[type=item_display,tag=2117.Append,tag=!2117.Ride,sort=nearest,limit=1] mount @s
+    ride @e[type=text_display,tag=2117.Text,tag=!2117.Ride,sort=nearest,limit=1] mount @s
+    execute on passengers run tag @s add 2117.Ride

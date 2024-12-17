@@ -8,3 +8,4 @@
     #declare tag 2121.Append
     #declare tag 2121.Attack
     #declare tag 2121.StartAttack
+    #declare tag 2121.Ride
