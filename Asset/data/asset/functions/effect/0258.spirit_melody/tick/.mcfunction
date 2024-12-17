@@ -7,16 +7,18 @@
 #> Private
 # @private
     #declare score_holder $Interval
-    #declare score_holder $Temp
+    #declare score_holder $Note
 
-# Noteが1以上の時は3で余剰算して、余りが0-1の時は2回、2の時は1回鳴らす
-    execute if entity @s[scores={258.Note=1..}] run scoreboard players operation $Temp Temporary = @s 258.Note
-    execute if entity @s[scores={258.Note=1..}] run scoreboard players operation $Temp Temporary %= $3 Const
-    execute if entity @s[scores={258.Note=1..}] if score $Temp Temporary matches 0..1 run scoreboard players add @s 258.RunCount 1
-    execute if entity @s[scores={258.Note=1..,258.RunCount=2..}] if score $Temp Temporary matches 0..1 run scoreboard players add @s 258.Note 1
-    execute if entity @s[scores={258.Note=1..}] if score $Temp Temporary matches 2 run scoreboard players add @s 258.Note 1
+# Noteが1以上の時は3で余剰算する
+    execute if entity @s[scores={258.Note=1..}] run scoreboard players operation $Note Temporary = @s 258.Note
+    execute if entity @s[scores={258.Note=1..}] run scoreboard players operation $Note Temporary %= $3 Const
+
+# 余りが0-1の時は2回鳴らす、2の時は1回鳴らす
+    execute if entity @s[scores={258.Note=1..}] if score $Note Temporary matches 0..1 run scoreboard players add @s 258.RunCount 1
+    execute if entity @s[scores={258.Note=1..,258.RunCount=2..}] if score $Note Temporary matches 0..1 run scoreboard players add @s 258.Note 1
     execute if entity @s[scores={258.Note=1..,258.RunCount=2..}] run scoreboard players reset @s 258.RunCount
-    execute if entity @s[scores={258.Note=1..}] run scoreboard players reset $Temp Temporary
+    execute if entity @s[scores={258.Note=1..}] if score $Note Temporary matches 2 run scoreboard players add @s 258.Note 1
+    execute if entity @s[scores={258.Note=1..}] run scoreboard players reset $Note Temporary
 
 # 0の時はそのまま増やす
     execute if entity @s[scores={258.Tick=0}] run scoreboard players add @s 258.Note 1
