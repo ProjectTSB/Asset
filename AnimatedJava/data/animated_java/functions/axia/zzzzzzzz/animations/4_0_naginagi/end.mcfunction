@@ -1,3 +1,0 @@
-execute if score @s aj.axia.animation.4_0_naginagi.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:axia/zzzzzzzz/animations/4_0_naginagi/end_loop
-execute if score @s aj.axia.animation.4_0_naginagi.loop_mode = $aj.loop_mode.once aj.i run function animated_java:axia/animations/4_0_naginagi/stop
-execute if score @s aj.axia.animation.4_0_naginagi.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:axia/animations/4_0_naginagi/pause

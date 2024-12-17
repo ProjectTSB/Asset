@@ -1,3 +1,0 @@
-execute if score @s aj.labyria.animation.12_0_ms_magic_bullets.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/12_0_ms_magic_bullets/end_loop
-execute if score @s aj.labyria.animation.12_0_ms_magic_bullets.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/12_0_ms_magic_bullets/stop
-execute if score @s aj.labyria.animation.12_0_ms_magic_bullets.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/12_0_ms_magic_bullets/pause

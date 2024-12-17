@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:labyria/zzzzzzzz/apply_variant/mabataki/as_bone

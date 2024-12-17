@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 0..63 run function animated_java:axia/zzzzzzzz/animations/15_0_former_ending/tree/branch_0_63
-execute if score @s aj.anim_time matches 64..97 run function animated_java:axia/zzzzzzzz/animations/15_0_former_ending/tree/branch_64_97

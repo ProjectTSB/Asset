@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:axia/zzzzzzzz/apply_variant/mabataki/as_bone

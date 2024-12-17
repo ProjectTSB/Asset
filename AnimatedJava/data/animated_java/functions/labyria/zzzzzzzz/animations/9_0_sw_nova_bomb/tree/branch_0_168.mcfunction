@@ -1,3 +1,0 @@
-execute if score @s aj.anim_time matches 0..63 run function animated_java:labyria/zzzzzzzz/animations/9_0_sw_nova_bomb/tree/branch_0_63
-execute if score @s aj.anim_time matches 64..127 run function animated_java:labyria/zzzzzzzz/animations/9_0_sw_nova_bomb/tree/branch_64_127
-execute if score @s aj.anim_time matches 128..168 run function animated_java:labyria/zzzzzzzz/animations/9_0_sw_nova_bomb/tree/branch_128_168

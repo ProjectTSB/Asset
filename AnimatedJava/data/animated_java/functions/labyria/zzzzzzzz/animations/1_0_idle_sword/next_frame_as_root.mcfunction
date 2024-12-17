@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/1_0_idle_sword/tick_animation

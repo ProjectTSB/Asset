@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/6_0_moving/tick_animation

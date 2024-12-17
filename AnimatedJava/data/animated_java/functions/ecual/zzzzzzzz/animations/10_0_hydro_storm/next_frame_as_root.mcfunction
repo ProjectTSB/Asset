@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/10_0_hydro_storm/tick_animation

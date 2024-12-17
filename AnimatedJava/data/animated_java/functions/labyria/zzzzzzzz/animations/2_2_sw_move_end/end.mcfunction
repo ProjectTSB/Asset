@@ -1,3 +1,0 @@
-execute if score @s aj.labyria.animation.2_2_sw_move_end.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/2_2_sw_move_end/end_loop
-execute if score @s aj.labyria.animation.2_2_sw_move_end.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/2_2_sw_move_end/stop
-execute if score @s aj.labyria.animation.2_2_sw_move_end.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/2_2_sw_move_end/pause

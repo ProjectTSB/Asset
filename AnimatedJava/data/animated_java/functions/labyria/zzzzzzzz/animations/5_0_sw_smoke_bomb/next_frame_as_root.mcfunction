@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/5_0_sw_smoke_bomb/tick_animation

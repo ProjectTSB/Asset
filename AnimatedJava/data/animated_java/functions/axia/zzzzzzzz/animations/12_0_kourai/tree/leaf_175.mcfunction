@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:axia/zzzzzzzz/animations/12_0_kourai/tree/leaf_175_as_bone
-function animated_java:axia/zzzzzzzz/apply_variant/mabataki/as_root

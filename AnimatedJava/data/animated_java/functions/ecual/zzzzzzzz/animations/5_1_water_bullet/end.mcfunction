@@ -1,3 +1,0 @@
-execute if score @s aj.ecual.animation.5_1_water_bullet.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/5_1_water_bullet/end_loop
-execute if score @s aj.ecual.animation.5_1_water_bullet.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/5_1_water_bullet/stop
-execute if score @s aj.ecual.animation.5_1_water_bullet.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/5_1_water_bullet/pause

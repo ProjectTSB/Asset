@@ -1,1 +1,0 @@
-function animated_java:axia/zzzzzzzz/animations/7_0_moving_iai/tick_animation

@@ -1,1 +1,0 @@
-tag @s remove aj.ecual.animation.12_0_opening_attack

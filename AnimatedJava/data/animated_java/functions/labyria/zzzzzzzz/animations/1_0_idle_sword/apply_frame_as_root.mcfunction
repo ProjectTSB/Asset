@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..40 run function animated_java:labyria/zzzzzzzz/animations/1_0_idle_sword/tree/branch_0_40

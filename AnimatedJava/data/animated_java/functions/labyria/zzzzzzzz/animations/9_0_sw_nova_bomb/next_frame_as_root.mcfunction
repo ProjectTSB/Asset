@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/9_0_sw_nova_bomb/tick_animation

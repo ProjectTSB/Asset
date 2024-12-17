@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..50 run function animated_java:axia/zzzzzzzz/animations/10_2_warp_slash_1/tree/branch_0_50

@@ -1,3 +1,0 @@
-execute if score @s aj.labyria.animation.8_0_sw_raigou.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:labyria/zzzzzzzz/animations/8_0_sw_raigou/end_loop
-execute if score @s aj.labyria.animation.8_0_sw_raigou.loop_mode = $aj.loop_mode.once aj.i run function animated_java:labyria/animations/8_0_sw_raigou/stop
-execute if score @s aj.labyria.animation.8_0_sw_raigou.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:labyria/animations/8_0_sw_raigou/pause

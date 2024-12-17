@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/8_0_quietus_rain/tick_animation

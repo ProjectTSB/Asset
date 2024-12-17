@@ -1,1 +1,0 @@
-function animated_java:labyria/zzzzzzzz/animations/16_0_invisible/tick_animation

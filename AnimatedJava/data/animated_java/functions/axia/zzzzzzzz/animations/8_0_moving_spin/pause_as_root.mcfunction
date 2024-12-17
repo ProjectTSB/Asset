@@ -1,1 +1,0 @@
-tag @s remove aj.axia.animation.8_0_moving_spin

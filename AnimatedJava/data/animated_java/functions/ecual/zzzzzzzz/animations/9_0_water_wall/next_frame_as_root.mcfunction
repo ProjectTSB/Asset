@@ -1,1 +1,0 @@
-function animated_java:ecual/zzzzzzzz/animations/9_0_water_wall/tick_animation

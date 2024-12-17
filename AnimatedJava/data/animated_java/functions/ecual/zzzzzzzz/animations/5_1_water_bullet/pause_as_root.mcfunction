@@ -1,1 +1,0 @@
-tag @s remove aj.ecual.animation.5_1_water_bullet

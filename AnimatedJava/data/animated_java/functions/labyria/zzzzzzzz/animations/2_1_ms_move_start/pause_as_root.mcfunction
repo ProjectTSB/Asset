@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.2_1_ms_move_start

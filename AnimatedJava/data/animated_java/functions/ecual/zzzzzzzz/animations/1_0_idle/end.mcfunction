@@ -1,3 +1,0 @@
-execute if score @s aj.ecual.animation.1_0_idle.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ecual/zzzzzzzz/animations/1_0_idle/end_loop
-execute if score @s aj.ecual.animation.1_0_idle.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ecual/animations/1_0_idle/stop
-execute if score @s aj.ecual.animation.1_0_idle.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ecual/animations/1_0_idle/pause

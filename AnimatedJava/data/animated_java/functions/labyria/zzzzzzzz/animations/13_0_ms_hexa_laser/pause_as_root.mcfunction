@@ -1,1 +1,0 @@
-tag @s remove aj.labyria.animation.13_0_ms_hexa_laser

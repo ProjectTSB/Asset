@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..105 run function animated_java:labyria/zzzzzzzz/animations/99_0_finish/tree/branch_0_105
