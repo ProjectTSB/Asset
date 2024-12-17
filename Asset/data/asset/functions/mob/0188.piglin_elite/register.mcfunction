@@ -20,7 +20,7 @@
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"iron_axe",Count:1b,tag:{Unbreakable:1b}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"iron_axe",Count:1b,tag:{Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:0,Operation:0,UUID:[I;1,2,188,1]}]}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
@@ -39,7 +39,7 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 360
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value -5
+    # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
