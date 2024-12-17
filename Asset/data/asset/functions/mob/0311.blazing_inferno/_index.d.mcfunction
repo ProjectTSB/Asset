@@ -4,6 +4,7 @@
 #> tag
 # @within function asset:mob/0311.blazing_inferno/**
     #declare tag 8N.ModelRoot
+    #declare tag 8N.ModelRoot.Target
     #declare tag 8N.DeathEvent
 
     #declare tag 8N.RailMove
