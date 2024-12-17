@@ -6,4 +6,4 @@
 
 # 確率で敵をTPさせる
 # 床の上をターゲットにすること
-    execute as @a[tag=Victim,distance=..6] at @s if predicate lib:random_pass_per/30 run function asset:mob/0077.chorus_zombie/attack/teleport/
+    execute unless predicate lib:is_ban_tp_area as @a[tag=Victim,distance=..6] at @s if predicate lib:random_pass_per/30 run function asset:mob/0077.chorus_zombie/attack/teleport/
