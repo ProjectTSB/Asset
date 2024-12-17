@@ -25,10 +25,20 @@
     execute store result storage asset:context this.Note int 1 run scoreboard players get @s 258.Note
     function asset:effect/0258.spirit_melody/tick/note/.m with storage asset:context this
 
-# 一定間隔で回復
+# 演出
+    execute if predicate lib:random_pass_per/30 run particle note ~ ~1.8 ~ 5 1.5 5 0 1 normal @a
+    execute if predicate lib:random_pass_per/30 run particle note ~ ~1.8 ~ 5 1.5 5 0 1 normal @a
+
+# 一定間隔で回復とvfx表示
     scoreboard players operation $Interval Temporary = @s 258.Tick
-    scoreboard players operation $Interval Temporary %= $20 Const
+    scoreboard players operation $Interval Temporary %= $18 Const
     execute if score $Interval Temporary matches 0 run function asset:effect/0258.spirit_melody/tick/heal
+    execute if score $Interval Temporary matches 0 rotated ~ 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
+    execute if score $Interval Temporary matches 3 rotated ~60 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
+    execute if score $Interval Temporary matches 6 rotated ~120 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
+    execute if score $Interval Temporary matches 9 rotated ~180 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
+    execute if score $Interval Temporary matches 12 rotated ~240 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
+    execute if score $Interval Temporary matches 15 rotated ~300 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx
     scoreboard players reset $Interval Temporary
 
 # スコア
