@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0084.falcios_priest/tick/2.shoot
+# @within function asset:mob/0084.falcios_priest/tick/shoot
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIwDsARgGwAct1jAtIwEycBmbALPzgBDNsJ4pSHAJwAGUrU6lpKHjwCsYAgDthAWwTJAYYoACSlrAxhGfQGck4FAHtC2iEk6MCKOG7gYHMAA3YWxCQ3AADyRZAigYgF8EghtSNEJ7REoAOk4CWwhrd0RYsDhsbDQYW0NKWVKMJ0KIQ1K0WwBRCqqajoBHQlDsKABlKx9yRB5QmqSAXSA_3
 # 円 1

@@ -18,7 +18,7 @@
     scoreboard players remove @s[scores={5U.AttackCT=1..}] 5U.AttackCT 1
 
 # クールタイム中じゃないなら接触時に攻撃
-    execute unless score @s 5U.AttackCT matches 1.. anchored eyes positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/3.attack
+    execute unless score @s 5U.AttackCT matches 1.. anchored eyes positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/attack
 
 # カベにぶつかった際の処理
     execute unless block ^ ^ ^0.3 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
@@ -26,4 +26,4 @@
 
 # 遠距離攻撃
     execute unless entity @a[gamemode=!spectator,distance=..8] run scoreboard players add @s 5U.Shoot 1
-    execute if entity @s[scores={5U.Shoot=80..}] run function asset:mob/0210.aurora_eye/tick/5.summon_bullet
+    execute if entity @s[scores={5U.Shoot=80..}] anchored eyes positioned ^ ^ ^0.25 summon marker run function asset:mob/0210.aurora_eye/tick/summon_bullet
