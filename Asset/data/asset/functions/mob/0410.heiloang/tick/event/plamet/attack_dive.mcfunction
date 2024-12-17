@@ -14,7 +14,7 @@
     tag @a[tag=DXYZ] remove DXYZ
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 5
+    data modify storage api: Argument.Damage set value 40.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

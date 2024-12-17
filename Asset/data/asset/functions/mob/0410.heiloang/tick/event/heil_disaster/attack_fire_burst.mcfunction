@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/heil_disaster/summon_fire_burst
+#> asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire_burst
 #
 # ヘイルディザスター・火
 #

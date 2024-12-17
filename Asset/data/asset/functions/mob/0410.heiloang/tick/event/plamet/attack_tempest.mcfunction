@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/plamet/set_tempest
+#> asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
 #
 # 急降下
 #

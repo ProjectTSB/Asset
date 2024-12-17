@@ -12,5 +12,5 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Adamant
+    tag @s add BE.Skill.Tornado
     # scoreboard players set @s BE.Pb.Count 5

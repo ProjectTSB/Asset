@@ -48,7 +48,7 @@
         execute if score @s BE.EventTimer matches 220 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run data modify entity @s teleport_duration set value 1
     # テンペスト配置
         execute if score @s BE.EventTimer matches 30 as @a[distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
-        execute if score @s BE.EventTimer matches 30 at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/set_tempest
+        execute if score @s BE.EventTimer matches 30 at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
         execute if score @s BE.EventTimer matches 130..160 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 130..160 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 

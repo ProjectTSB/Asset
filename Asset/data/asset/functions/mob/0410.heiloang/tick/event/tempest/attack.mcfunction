@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/tempest/summon_attack_pos
+#> asset:mob/0410.heiloang/tick/event/tempest/attack
 #
 # テンペスト
 #

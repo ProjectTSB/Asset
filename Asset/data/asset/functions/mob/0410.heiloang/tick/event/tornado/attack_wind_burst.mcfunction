@@ -1,8 +1,9 @@
-#> asset:mob/0410.heiloang/tick/event/heil_disaster/summon_wind_burst
+#> asset:mob/0410.heiloang/tick/event/tornado/attack_wind_burst
 #
-# ヘイルディザスター・風
+# 竜巻・なぎはらい火炎放射の風弾
 #
-# @within asset:mob/0410.heiloang/tick/event/heil_disaster/attack
+# @within asset:mob/0410.heiloang/tick/event/tornado/
+# @within asset:mob/0410.heiloang/tick/event/sweep/
 
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2119
