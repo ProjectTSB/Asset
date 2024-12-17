@@ -8,8 +8,6 @@
     function asset:artifact/common/check_condition/auto
 # 矢がクリティカルか見る
     execute if entity @e[type=#arrows,tag=ShotArrow,nbt={crit:1b},distance=..5,sort=nearest,limit=1] run tag @s add WB.FullCharge
-# 何かしらの要因で矢がなくなってたらクリティカル扱いにする（この処理どうなん...）
-    execute unless entity @e[type=#arrows,tag=ShotArrow,distance=..5] run tag @s add WB.FullCharge
 # 矢を消す
     kill @e[type=#arrows,tag=ShotArrow,distance=..5]
 # 発動しなかったら矢を返す
