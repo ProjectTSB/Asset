@@ -9,7 +9,7 @@
     tag @s add 8N.RailMove
 
 # スコアリセット
-    scoreboard players reset @s 8N.Tick
+    scoreboard players reset @s General.Mob.Tick
 
 # テレポート演出
     execute at @s run function asset:mob/0311.blazing_inferno/tick/base_move/teleport_vfx

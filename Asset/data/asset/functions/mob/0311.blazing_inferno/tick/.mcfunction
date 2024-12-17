@@ -11,7 +11,7 @@
     execute if entity @s[tag=8N.PlayerFacing] facing entity @p feet run tp @s ~ ~ ~ ~ ~
 
 # Tick加算
-    scoreboard players add @s 8N.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # イントロをまだやってないなら、イントロをやる
     execute unless entity @s[tag=8N.IntroFinish] run function asset:mob/0311.blazing_inferno/tick/intro/

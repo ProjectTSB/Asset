@@ -8,7 +8,7 @@
     tag @s add 8N.InAction
 
 # スコアを0に戻す
-    scoreboard players set @s 8N.Tick 0
+    scoreboard players set @s General.Mob.Tick 0
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/

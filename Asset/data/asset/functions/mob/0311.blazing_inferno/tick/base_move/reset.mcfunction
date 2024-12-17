@@ -7,7 +7,7 @@
 #   asset:mob/0311.blazing_inferno/hurt/active_50per
 
 # スコアリセット
-    scoreboard players reset @s 8N.Tick
+    scoreboard players reset @s General.Mob.Tick
     scoreboard players reset @s[tag=8N.Skill.Summon] 8N.MoveCount
 
 # タグ削除

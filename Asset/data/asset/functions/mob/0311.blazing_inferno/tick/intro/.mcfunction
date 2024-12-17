@@ -5,10 +5,16 @@
 # @within function asset:mob/0311.blazing_inferno/tick/
 
 # ポージング
-    execute if score @s 8N.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/intro/posing
+#    execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/intro/posing
 
 # 音を鳴らしてタイトル表示
-    execute if score @s 8N.Tick matches 31 run function asset:mob/0311.blazing_inferno/tick/intro/title
+#    execute if score @s General.Mob.Tick matches 31 run function asset:mob/0311.blazing_inferno/tick/intro/title
+
+# 演出
+    execute if score @s General.Mob.Tick matches 5 at @e[type=marker,tag=8N.ModelLocator.RightHand,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/intro/knuckle_vfx
+
+# デバッグ: ループさせる
+
 
 # 戦闘開始
-    execute if score @s 8N.Tick matches 80 run function asset:mob/0311.blazing_inferno/tick/intro/battle_start
+#    execute if score @s General.Mob.Tick matches 80 run function asset:mob/0311.blazing_inferno/tick/intro/battle_start

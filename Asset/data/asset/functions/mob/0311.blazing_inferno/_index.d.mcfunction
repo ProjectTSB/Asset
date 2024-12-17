@@ -24,6 +24,10 @@
 
     #declare tag 8N.Health.50Per
 
+    #declare tag 8N.ModelLocator.LeftHand
+    #declare tag 8N.ModelLocator.RightHand
+
+
     #declare tag 8N.Turn.HighSpeed
     #declare tag 8N.Turn.Clockwise
     #declare tag 8N.Turn.CounterClockwise
