@@ -32,6 +32,4 @@
     scoreboard players reset $Interval Temporary
 
 # スコア
-# Durationから直接呼び出すと仕様上0が呼ばれないし
-# -1する都合上、storage → score → storageとめんどいのでスコアで実装する
     scoreboard players add @s 258.Tick 1
