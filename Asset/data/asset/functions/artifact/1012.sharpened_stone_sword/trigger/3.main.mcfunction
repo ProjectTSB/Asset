@@ -13,7 +13,7 @@
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 45.0f
+    data modify storage lib: Argument.Damage set value 15.0f
     data modify storage lib: Argument.AttackType set value "Physical"
     function lib:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
