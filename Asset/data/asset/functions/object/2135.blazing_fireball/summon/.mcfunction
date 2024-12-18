@@ -2,7 +2,7 @@
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
-# @within asset:object/alias/311/summon
+# @within asset:object/alias/2135/summon
 
 # 元となるEntityを召喚する
     execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
