@@ -1,4 +1,4 @@
-#> asset:object/2053.lastboss_light_pillar_spin/register
+#> asset:object/2053.lastboss_spinning_sword/register
 #
 # Objectのデータを指定
 #

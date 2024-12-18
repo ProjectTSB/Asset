@@ -1,4 +1,4 @@
-#> asset:object/2053.lastboss_light_pillar_spin/summon/
+#> asset:object/2053.lastboss_spinning_sword/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

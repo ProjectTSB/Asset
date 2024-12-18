@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元の召喚処理を呼び出す
-    function asset:object/2053.lastboss_light_pillar_spin/summon/
+    function asset:object/2053.lastboss_spinning_sword/summon/

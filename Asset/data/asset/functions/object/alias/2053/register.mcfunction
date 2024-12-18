@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:object/2053.lastboss_light_pillar_spin/register
+    function asset:object/2053.lastboss_spinning_sword/register

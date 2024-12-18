@@ -1,4 +1,4 @@
-#> asset:object/2053.lastboss_light_pillar_spin/tick/
+#> asset:object/2053.lastboss_spinning_sword/tick/
 #
 # Objectのtick時の処理
 #
@@ -12,11 +12,11 @@
     particle electric_spark ~ ~ ~ 0.05 0.05 0.05 0.05 2
 
 # 召喚者の特定
-    function asset:object/2053.lastboss_light_pillar_spin/tick/detect_owner.m with storage asset:context this
+    function asset:object/2053.lastboss_spinning_sword/tick/detect_owner.m with storage asset:context this
 
 # 拡大を開始
 # どういうわけか、Init処理にコレを入れるといきなり最大サイズになるのでこうしている
-    execute if score @s General.Object.Tick matches 3 run function asset:object/2053.lastboss_light_pillar_spin/tick/transform
+    execute if score @s General.Object.Tick matches 3 run function asset:object/2053.lastboss_spinning_sword/tick/transform
 
 # 召喚者の周りを回る
     # ふつう
@@ -30,10 +30,7 @@
         execute if entity @s[tag=2053.Release,tag=2053.Reverse] facing entity @e[type=#lib:living,tag=2053.Owner,distance=..32,limit=1] feet rotated ~-100 0 run tp @s ^ ^ ^1 ~ ~
 
 # ダメージ判定
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:object/2053.lastboss_light_pillar_spin/tick/damage
-
-# 攻撃
-#    execute if score @s General.Object.Tick matches 23 run function asset:object/2052.lastboss_platform_attack_purple/tick/damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:object/2053.lastboss_spinning_sword/tick/damage
 
 # リセット
     tag @e[type=#lib:living,tag=2053.Owner,limit=1] remove 2053.Owner

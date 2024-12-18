@@ -1,4 +1,4 @@
-#> asset:object/2053.lastboss_light_pillar_spin/summon/debug
+#> asset:object/2053.lastboss_spinning_sword/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

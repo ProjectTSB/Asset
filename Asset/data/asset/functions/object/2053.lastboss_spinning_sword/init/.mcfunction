@@ -1,4 +1,4 @@
-#> asset:object/2053.lastboss_light_pillar_spin/init/
+#> asset:object/2053.lastboss_spinning_sword/init/
 #
 # Objectのinit時の処理
 #

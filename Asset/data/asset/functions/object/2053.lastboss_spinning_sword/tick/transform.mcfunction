@@ -1,8 +1,8 @@
-#> asset:object/2053.lastboss_light_pillar_spin/tick/transform
+#> asset:object/2053.lastboss_spinning_sword/tick/transform
 #
 #
 #
-# @within function asset:object/2053.lastboss_light_pillar_spin/tick/
+# @within function asset:object/2053.lastboss_spinning_sword/tick/
 
 #> 行き先マーカー
 # @private

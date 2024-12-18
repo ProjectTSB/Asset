@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/2053.lastboss_light_pillar_spin/init/
+    function asset:object/2053.lastboss_spinning_sword/init/

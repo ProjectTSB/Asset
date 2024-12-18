@@ -1,8 +1,8 @@
-#> asset:object/2053.lastboss_light_pillar_spin/tick/damage
+#> asset:object/2053.lastboss_spinning_sword/tick/damage
 #
 #
 #
-# @within function asset:object/2053.lastboss_light_pillar_spin/tick/
+# @within function asset:object/2053.lastboss_spinning_sword/tick/
 
 # 引数の設定
     # 与えるダメージ、待機時と開放時でダメージが違う
