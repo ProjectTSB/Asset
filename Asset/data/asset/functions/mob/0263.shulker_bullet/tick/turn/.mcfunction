@@ -11,8 +11,8 @@
 # ターゲットを再設定する
     execute at @s facing entity @a[tag=7B.Target,distance=..25,limit=1] eyes run function asset:mob/0263.shulker_bullet/tick/turn/target
     execute if data storage asset:temp 7B{Visible:false} run return run function asset:mob/0263.shulker_bullet/tick/turn/break
-    execute if data storage asset:temp 7B{Visible:true} run tp @e[type=marker,tag=7B.Target,limit=1] @a[tag=7B.Target,distance=..25,limit=1]
-    execute if data storage asset:temp 7B{Visible:true} at @s facing entity @a[tag=7B.Target,distance=..25,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    execute if data storage asset:temp 7B{Visible:true} as @a[tag=7B.Target,distance=..25,limit=1] at @s anchored eyes run tp @e[type=marker,tag=7B.Target,limit=1] ^ ^ ^
+    execute if data storage asset:temp 7B{Visible:true} facing entity @a[tag=7B.Target,distance=..25,limit=1] eyes run tp @s ~ ~ ~ ~ ~
     execute if data storage asset:temp 7B{Visible:true} run data modify storage asset:context this.TargetPos set from entity @e[type=marker,tag=7B.Target,limit=1] Pos
 
 # 回数を減らす
