@@ -10,6 +10,7 @@
     function asset:mob/0106.mini_shulker/tick/target
 # 弾を召喚
     data modify storage api: Argument.ID set value 263
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     execute store result storage api: Argument.FieldOverride.OwnerUUID int 1 run scoreboard players get @s MobUUID
     execute store result storage api: Argument.FieldOverride.TurnLimit int 0.9999999999 run data get storage api: Return.Difficulty 1
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @a[tag=2Y.Target,distance=..50,limit=1] UserID
