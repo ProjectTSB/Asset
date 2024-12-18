@@ -21,6 +21,7 @@
     execute if score $Random Temporary matches 2 run tag @s add AC.GiantSkull
     execute if score $Random Temporary matches 3 run tag @s add AC.HyperLaser
     execute if score $Random Temporary matches 4 run tag @s add AC.Coffin
+    execute if score $Random Temporary matches 5 run tag @s add AC.DashSlash
 
 # リセット
     scoreboard players reset $Random Temporary
