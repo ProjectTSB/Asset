@@ -85,24 +85,24 @@
 # 引数の設定
     # 与えるダメージ
         # ノーマルなら 100f
-            execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 100f
+            execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.Damage set value 100f
         # ハードなら 9999f
-            execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 9999f
+            execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 9999f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # 悪いがこれにあたったら死んでね☆
         execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.FixedDamage set value true
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..6] at @s run function lib:damage/
+    execute as @a[gamemode=!creative,distance=..6] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s
