@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:mob/0393.labyria_first/load",
+        "asset:mob/0392.ecual_first/load",
+        "asset:mob/0391.axia_first/load",
+        "asset:mob/0390.triple_rabbits/load",
         "asset:mob/0378.red_knight_v3/load",
         "asset:mob/0377.grey_guardian_v2/load",
         "asset:mob/0369.prominence_spellbook/load",
