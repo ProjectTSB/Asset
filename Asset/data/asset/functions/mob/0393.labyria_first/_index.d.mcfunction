@@ -27,6 +27,7 @@
 # @within function asset:mob/0393.labyria_first/**
     #declare score_holder $AX.Temp
     #declare score_holder $AX.Loop
+    #declare objective General.Object.Tick
 
 #> AJ
 # @within function asset:mob/0393.labyria_first/**
