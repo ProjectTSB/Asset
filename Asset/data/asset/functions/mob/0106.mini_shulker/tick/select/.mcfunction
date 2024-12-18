@@ -5,7 +5,7 @@
 
 # プレイヤーを1名ターゲットする
 # ただし間に壁がないプレイヤーに限定する
-    execute as @a[distance=..25,sort=nearest] run function asset:mob/0106.mini_shulker/tick/select/foreach
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..25,sort=nearest] run function asset:mob/0106.mini_shulker/tick/select/foreach
 
 # いなければ待機形態に移行
     execute unless entity @a[tag=2Y.Target,distance=..25,limit=1] run return fail

@@ -8,8 +8,8 @@
     execute store result score $2Y.Temp Temporary run data get storage asset:context this.TargetID
     execute as @a[distance=..50] if score @s UserID = $2Y.Temp Temporary run tag @s add 2Y.Target
 # ターゲットがいなければリセット
-    execute unless entity @a[tag=2Y.Target,distance=..50,limit=1] run scoreboard players reset $2Y.Temp Temporary
-    execute unless entity @a[tag=2Y.Target,distance=..50,limit=1] run return run function asset:mob/0106.mini_shulker/tick/reset
+    execute unless entity @a[tag=2Y.Target,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run scoreboard players reset $2Y.Temp Temporary
+    execute unless entity @a[tag=2Y.Target,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run return run function asset:mob/0106.mini_shulker/tick/reset
 
 # 処理
     execute if score @s General.Mob.Tick matches 500 run function asset:mob/0106.mini_shulker/tick/shell/open
