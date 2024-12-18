@@ -12,4 +12,5 @@
 
 # 形態リセット
     data remove storage asset:context this.TargetID
+    data remove storage asset:context this.Rotation
     function asset:mob/0106.mini_shulker/tick/shell/close
