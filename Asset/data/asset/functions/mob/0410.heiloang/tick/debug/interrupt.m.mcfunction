@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/debug/interrupt
+#> asset:mob/0410.heiloang/tick/debug/interrupt.m
 #
 # デバッグ用処理 割り込みで強制的にイベントを実行する
 #
@@ -12,5 +12,5 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Flare
-    # scoreboard players set @s BE.Pb.Count 5
+    $tag @s add $(Tag)
+    scoreboard players set @s BE.Pb.Count 5

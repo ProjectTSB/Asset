@@ -3,6 +3,7 @@
 # デバッグ用処理 割り込みで強制的に初期状態に戻す
 #
 # @within asset:mob/0410.heiloang/tick/debug/interrupt
+# @within asset:mob/0410.heiloang/tick/debug/interrupt.m
 
 # メモ
     # execute as @e[tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/reset
