@@ -15,7 +15,10 @@
     execute if entity @s[scores={General.Mob.Tick=29}] rotated ~ 0 positioned ^ ^0.2 ^0.4 run particle soul ~ ~ ~ 0 0 0 0.4 100
 
 # 棺召喚
+# 難易度比例で召喚数を変える
     execute if entity @s[scores={General.Mob.Tick=30}] at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
+    execute if entity @s[scores={General.Mob.Tick=38}] if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
+    execute if entity @s[scores={General.Mob.Tick=46}] if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
 
 # 共通リセット処理
     execute if entity @s[scores={General.Mob.Tick=67..}] run function asset:mob/0372.tutankhamen/tick/skill/reset
