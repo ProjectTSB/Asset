@@ -8,6 +8,7 @@
 # sound
 playsound entity.generic.explode neutral @a ~ ~ ~ 1 2 1
 playsound minecraft:entity.breeze.death master @a ~ ~ ~ 1.0 0.5 1
+
 # オブジェクト召喚
 data modify storage api: Argument.ID set value 2087
 function api:object/summon

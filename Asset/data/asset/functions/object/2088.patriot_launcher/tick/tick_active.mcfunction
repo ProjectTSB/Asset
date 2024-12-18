@@ -18,8 +18,8 @@ tag @s remove PatriotLauncher.HitMissile
 # 回復までの時間は修理者無しで20秒想定(tickごとに128回復　128*20tick*20s)
 execute if score $CurrentDurability Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:black_concrete"
 execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 1b
-execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.RepairTime set value 51200
-execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[type=text_display] run data modify entity @s text set value '[{"bold":true,"color":"#FFFFFF","text":"PRESS "},{"color":"#FFFFFF","keybind":"key.sneak"}]'
+execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.RepairTime set from storage asset:context this.MaxRepairTime
+execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.DisplayName] run data modify entity @s text set value '[{"bold":true,"color":"#FFFFFF","text":"PRESS "},{"color":"#FFFFFF","keybind":"key.sneak"}]'
 execute if score $CurrentDurability Temporary matches ..0 run return run scoreboard players reset $CurrentDurability Temporary
 
 # 向きを敵の方へ向ける
@@ -32,7 +32,7 @@ execute store result storage asset:context this.MissileCooltime int 1 run scoreb
 
 # 発射時間が来ていた場合ミサイル発射
 execute if score $MissileCooltime Temporary matches 0 run function asset:object/2088.patriot_launcher/tick/missile_launch
-execute if score $MissileCooltime Temporary matches 0 run data modify storage asset:context this.MissileCooltime set value 199
+execute if score $MissileCooltime Temporary matches 0 run data modify storage asset:context this.MissileCooltime set from storage asset:context this.MaxMissileCooltime
 
 # reset
 scoreboard players reset $MissileCooltime Temporary

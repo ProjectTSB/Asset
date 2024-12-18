@@ -1,6 +1,14 @@
 #> asset:object/2088.patriot_launcher/_index.d
 # @private
 
+#> patriot_launcher
+# @within
+#    function asset:object/2088.patriot_launcher/**
+    #declare tag PatriotLauncher.Body
+    #declare tag PatriotLauncher.DisplayName
+    #declare tag PatriotLauncher.RepairGauge
+
+
 #> suffer_damage
 # @within
 #    function asset:mob/0214.drone/**
