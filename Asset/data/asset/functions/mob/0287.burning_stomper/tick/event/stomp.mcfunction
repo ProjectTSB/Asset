@@ -25,7 +25,7 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
 
 # 吹き飛ばし
-    execute at @a[gamemode=!spectator,distance=..3] run summon area_effect_cloud ~ ~ ~ {Radius:0.1f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:7,show_particles:0b}]}
+    execute as @a[gamemode=!spectator,distance=..3] run function asset:mob/0287.burning_stomper/tick/event/levitation
 
 # リセット
     function lib:damage/reset

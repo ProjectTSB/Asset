@@ -26,7 +26,8 @@
     scoreboard players add $P3.Count Temporary 10
 
 # 与えるダメージ = 最大MP × {(個数 - 1) × 0.5 + 1 }
-    execute store result score $P3.MaxMP Temporary run function lib:mp/get_max
+    function api:mp/get_max
+    execute store result score $P3.MaxMP Temporary run data get storage api: Return.MaxMP
     scoreboard players operation $P3.MaxMP Temporary *= $P3.Count Temporary
     scoreboard players operation $P3.MaxMP Temporary /= $10 Const
 
