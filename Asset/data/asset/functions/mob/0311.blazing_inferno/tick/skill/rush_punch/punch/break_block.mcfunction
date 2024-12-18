@@ -1,8 +1,8 @@
-#> asset:mob/0311.blazing_inferno/tick/skill/rush_punch/break_block
+#> asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/break_block
 #
+# ラッシュ中は壁を破壊する
 #
-#
-# @within function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch
+# @within function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
 
 #
     execute positioned ^ ^ ^ unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy

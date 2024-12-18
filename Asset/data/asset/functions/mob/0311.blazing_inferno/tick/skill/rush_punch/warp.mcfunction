@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/tick
 
-
 # 回転停止
     tag @s remove 8N.PlayerFacing
 
@@ -14,11 +13,8 @@
 # テレポート演出
     execute at @s run function asset:mob/0311.blazing_inferno/tick/base_move/teleport_vfx
 
-# 待機アニメを停止
-    execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neurtal/stop
-
-# パンチのアニメ
-    execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/dash_windup/play
+# アニメ
+    execute as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_oraora_windup/tween {duration:3,to_frame:0}
 
 # テレポート
     execute at @r[distance=..30] rotated ~ 0 run tp @s ^ ^0.5 ^2 ~ ~
