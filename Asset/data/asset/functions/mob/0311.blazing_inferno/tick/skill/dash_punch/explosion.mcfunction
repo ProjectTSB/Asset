@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/end
+# @within function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/tick
 
 #> 地雷の起爆チェック用タグ
 # @private
@@ -34,7 +34,7 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
 
 # 付近の地雷を起爆
-    execute positioned ^ ^ ^2 as @e[type=item_display,tag=!8S.Ready,scores={MobID=316},distance=..6] run function asset:mob/0316.blazing_mine/tick/event/bomb/start
+#    execute positioned ^ ^ ^2 as @e[type=item_display,tag=!8S.Ready,scores={MobID=316},distance=..6] run function asset:mob/0316.blazing_mine/tick/event/bomb/start
 
 # リセット
     function lib:damage/reset
