@@ -10,7 +10,7 @@
     #scoreboard players set @s General.Mob.Tick -20
 
 # TickLock
-    tag @s add General.Mob.TickLock
+    tag @s add RW.TickLock
 
 # これをループされると困るのでTickを1増やす
     scoreboard players add @s General.Mob.Tick 1

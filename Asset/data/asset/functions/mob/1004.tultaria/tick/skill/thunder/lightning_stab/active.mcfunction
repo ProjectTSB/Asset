@@ -15,7 +15,7 @@
 
 # Tickロックして、この行動自体をループしないように1増やす
 # Tickロックは移動終了時に勝手に解除される
-    tag @s add General.Mob.TickLock
+    tag @s add RW.TickLock
     scoreboard players add @s General.Mob.Tick 1
 
 # マーカーの方を向く

@@ -30,7 +30,7 @@
 
 # 慣性ONに
     tag @s remove RW.DisableInertia
-    
+
 # チェイス停止
     kill @e[tag=RW.ChaseMarker]
     tag @s remove RW.ChaseShot
@@ -55,7 +55,7 @@
     scoreboard players set @s[scores={RW.Phase=3,RW.SwordCount=1..}] RW.SwordCount 0
 
 # 移動完了するまでTickロックしちゃお
-    tag @s add General.Mob.TickLock
+    tag @s add RW.TickLock
 
 # 剣を消す
     tag @e[type=armor_stand,scores={MobID=1016}] add S8.Death

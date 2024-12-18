@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/tick
 
 # TickLock
-    tag @s add General.Mob.TickLock
+    tag @s add RW.TickLock
 
 # これをループされると困るのでTickを1増やす
     scoreboard players add @s General.Mob.Tick 1

@@ -10,7 +10,7 @@
     #declare score_holder $4tInterval
 
 # スコア加算
-    scoreboard players add @s[tag=!General.Mob.TickLock] General.Mob.Tick 1
+    scoreboard players add @s[tag=!RW.TickLock] General.Mob.Tick 1
 
 # モデルにタグ付与
     tag @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] add RW.ModelRoot.Target
