@@ -14,7 +14,7 @@
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     # data modify storage api: Argument.DurationOperation set value "replace"
     # data modify storage api: Argument.StackOperation set value "replace"
-    execute as @a[tag=Victim] run function api:entity/mob/effect/give
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
 
 # リセット
     function api:entity/mob/effect/reset
