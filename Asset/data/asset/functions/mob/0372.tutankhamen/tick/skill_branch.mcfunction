@@ -15,3 +15,6 @@
 
 # ハイパーレーザー
     execute if entity @s[tag=AC.HyperLaser] run function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/
+
+# 棺召喚
+    execute if entity @s[tag=AC.Coffin] run function asset:mob/0372.tutankhamen/tick/skill/coffin/

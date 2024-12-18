@@ -8,6 +8,9 @@
     #declare tag AC.ManyShoot
     #declare tag AC.GiantSkull
     #declare tag AC.HyperLaser
+    #declare tag AC.Coffin
+    #declare tag AC.SpawnMarker
+    #declare tag AC.CoffinPoint
     #declare tag AC.AJ
     #declare tag AC.AJLink
     #declare tag AC.Opening
@@ -43,7 +46,10 @@
     #declare function animated_java:tutankhamen/animations/beam_long_charge/stop
     #declare function animated_java:tutankhamen/animations/beam_long_shot/play
     #declare function animated_java:tutankhamen/animations/beam_long_shot/stop
-
+    #declare function animated_java:tutankhamen/animations/rod_ground/play
+    #declare function animated_java:tutankhamen/animations/rod_ground/stop
+    #declare function animated_java:tutankhamen/animations/rod_ground_end/play
+    #declare function animated_java:tutankhamen/animations/rod_ground_end/stop
 
 
 
