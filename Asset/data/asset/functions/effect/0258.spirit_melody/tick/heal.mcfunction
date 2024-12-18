@@ -6,7 +6,7 @@
 
 # 使用者の最大体力比例で回復させる
 # 20回回復する
-# 1回1.25%%、合計25%
+# 1回1.25%、合計25%
     function api:modifier/max_health/get
     execute store result storage api: Argument.Heal double 0.0125 run data get storage api: Return.MaxHealth
     function api:heal/modifier
