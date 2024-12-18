@@ -21,7 +21,7 @@
 
 # 半径22m以内ではない 又は 他と重なっている場合再拡散する
     execute at 0-0-0-0-0 unless entity @e[type=marker,tag=AV.Marker.SummonPoint,distance=..22,limit=1] run scoreboard players set $AV.Temp Temporary 1
-    execute at 0-0-0-0-0 if entity @e[type=marker,tag=AV.DimSword,distance=0.001..5] run scoreboard players set $AV.Temp Temporary 1
+    execute at 0-0-0-0-0 if entity @e[type=marker,tag=2014.DimSword,distance=0.001..5] run scoreboard players set $AV.Temp Temporary 1
 
 # 条件を満たしていれば置く
     execute unless score $AV.Temp Temporary matches 1 at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon

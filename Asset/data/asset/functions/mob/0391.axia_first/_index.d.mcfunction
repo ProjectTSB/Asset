@@ -17,6 +17,7 @@
     #declare tag AV.Death
     #declare tag 2001.CustomEffect
     #declare tag 2013.SonicBoomSlash
+    #declare tag 2014.DimSword
     #declare tag 2016.Critical
     #declare tag 2016.Opening
 
