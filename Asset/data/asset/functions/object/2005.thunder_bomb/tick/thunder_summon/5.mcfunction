@@ -15,6 +15,4 @@
     execute if predicate api:global_vars/difficulty/min/hard rotated ~300 0 positioned ^ ^ ^21 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
 
 # 自身をキルする
-    function #oh_my_dat:release
-    scoreboard players reset @s OhMyDatID
     kill @s
