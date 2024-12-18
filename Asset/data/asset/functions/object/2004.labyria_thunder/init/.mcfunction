@@ -18,3 +18,6 @@
 
 # TP
     execute at @s run tp @s ~ ~ ~ ~ 0
+
+# リセット
+    scoreboard players reset $2004.Temp Temporary

@@ -36,8 +36,7 @@
     function api:damage/reset
 
 # 暗闇エフェクト付与
-    data modify storage api: Argument set value {ID:124,Duration:150}
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function api:entity/mob/effect/give
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function asset:object/2003.smoke_bomb/tick/effect
 
 # キル
     kill @s
