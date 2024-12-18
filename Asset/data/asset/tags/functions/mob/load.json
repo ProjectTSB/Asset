@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0372.tutankhamen/load",
+        "asset:mob/0378.red_knight_v3/load",
         "asset:mob/0377.grey_guardian_v2/load",
         "asset:mob/0369.prominence_spellbook/load",
         "asset:mob/0235.orange_thrower/load",

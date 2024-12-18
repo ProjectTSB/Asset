@@ -1402,6 +1402,25 @@
             ]
         },
         {
+            "label": "神器/トリガー: 弓発射",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/shot.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
             "label": "神器/トリガー: tick",
             "generates": [
                 {
@@ -2122,6 +2141,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2178,6 +2198,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2220,6 +2241,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/load"
                     }
@@ -2279,6 +2301,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/given"
                     }
@@ -2329,6 +2352,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/re-given"
                     }
@@ -2379,6 +2403,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/end"
                     }
@@ -2429,6 +2454,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/remove"
                     }
@@ -2479,6 +2505,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/tick"
                     }

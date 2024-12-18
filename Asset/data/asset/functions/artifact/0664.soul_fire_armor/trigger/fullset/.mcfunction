@@ -16,12 +16,6 @@
     playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.6 1 0
     playsound ogg:mob.vex.idle1 player @a ~ ~ ~ 1 0 0
 
-# 最大体力-10%
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-029800000003 "FullsetMaxHealthDown" -0.1 multiply_base
-
-# 最大体力を反映するための即時回復
-    effect give @s instant_health 1 0
-
 # 火攻撃+10%
     data modify storage api: Argument.UUID set value [I;1,1,664,0]
     data modify storage api: Argument.Amount set value 0.1
@@ -33,6 +27,12 @@
     data modify storage api: Argument.Amount set value 0.08
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/mp_regen/add
+
+# 最大体力-10%
+    data modify storage api: Argument.UUID set value [I;1,1,664,0]
+    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/max_health/add
 
 # フルセット用Tagを付与
     tag @s add IG.Fullset
