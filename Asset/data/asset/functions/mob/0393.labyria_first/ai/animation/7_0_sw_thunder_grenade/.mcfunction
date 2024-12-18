@@ -45,3 +45,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 175 run function asset:mob/0393.labyria_first/ai/animation/7_0_sw_thunder_grenade/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/majime/apply
+    execute if score @s AX.AnimationTick matches 170 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

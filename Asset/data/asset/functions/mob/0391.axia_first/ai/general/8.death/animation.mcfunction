@@ -13,6 +13,7 @@
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..250] run function animated_java:axia/animations/15_0_former_ending/play
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/jitome/apply
 
 # パーティクル処理
     execute if score @s AV.AnimationTick matches 99 as @e[type=item_display,tag=AV.Root.This,distance=..250] at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal

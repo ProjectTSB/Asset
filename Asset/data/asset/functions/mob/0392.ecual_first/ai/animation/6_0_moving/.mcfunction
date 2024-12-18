@@ -31,3 +31,7 @@
 # サウンド・VFX
     execute if score @s AW.AnimationTick matches 13 run function asset:mob/0392.ecual_first/ai/animation/6_0_moving/sound
     execute if score @s AW.AnimationTick matches 13 positioned ^ ^0.5 ^-0.5 run function asset:mob/0392.ecual_first/ai/animation/6_0_moving/vfx
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 40 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 50 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

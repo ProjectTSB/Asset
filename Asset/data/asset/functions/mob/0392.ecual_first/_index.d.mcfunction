@@ -11,6 +11,7 @@
     #declare tag AW.Predict
     #declare tag AW.SuperiorSkill
     #declare tag AW.ProjectileInit
+    #declare tag AW.HydroStormFirst
     #declare tag AW.AnnounceLine
     #declare tag AW.AnnounceLineEven
     #declare tag AW.Invisible
@@ -45,3 +46,10 @@
     #declare function animated_java:ecual/animations/12_0_opening_attack/pause
     #declare function animated_java:ecual/animations/12_0_opening_attack/resume
     #declare function animated_java:ecual/animations/13_0_former_ending/play
+    #declare function animated_java:ecual/variants/default/apply
+    #declare function animated_java:ecual/variants/jitome/apply
+    #declare function animated_java:ecual/variants/mabataki/apply
+    #declare function animated_java:ecual/variants/majime/apply
+    #declare function animated_java:ecual/variants/normal/apply
+    #declare function animated_java:ecual/variants/wink/apply
+    #declare function animated_java:ecual/variants/yarare/apply

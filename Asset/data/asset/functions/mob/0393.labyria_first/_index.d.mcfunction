@@ -65,3 +65,9 @@
     #declare function animated_java:labyria/animations/15_1_ms_stan/play
     #declare function animated_java:labyria/animations/16_0_invisible/play
     #declare function animated_java:labyria/animations/99_0_finish/play
+    #declare function animated_java:labyria/variants/default/apply
+    #declare function animated_java:labyria/variants/jitome/apply
+    #declare function animated_java:labyria/variants/mabataki/apply
+    #declare function animated_java:labyria/variants/majime/apply
+    #declare function animated_java:labyria/variants/normal/apply
+    #declare function animated_java:labyria/variants/yarare/apply

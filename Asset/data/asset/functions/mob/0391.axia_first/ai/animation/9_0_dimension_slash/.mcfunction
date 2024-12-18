@@ -88,3 +88,8 @@
     execute if score @s AV.AnimationTick matches 165 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/2
     execute if score @s AV.AnimationTick matches 168 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/3
     execute if score @s AV.AnimationTick matches 171 at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/4
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 80 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mabataki/apply
+    execute if score @s AV.AnimationTick matches 90 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 180 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

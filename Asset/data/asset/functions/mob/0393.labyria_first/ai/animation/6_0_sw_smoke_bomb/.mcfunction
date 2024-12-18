@@ -27,3 +27,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 90 run function asset:mob/0393.labyria_first/ai/animation/6_0_sw_smoke_bomb/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 70 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/mabataki/apply
+    execute if score @s AX.AnimationTick matches 80 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

@@ -14,10 +14,7 @@
     scoreboard players set @s AW.FalterCount 0
 
 # animated javaモデル召喚
-    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:ecual/summon
-
-# teleport_durationを設定
-    execute positioned ~ ~99 ~ as @e[type=item_display,distance=..0.1] run data modify entity @s teleport_duration set value 1
+    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:ecual/summon {args:{}}
 
 # 登場演出時は干渉付加
 # デバッグ時は無効化

@@ -26,3 +26,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 110 run function asset:mob/0393.labyria_first/ai/animation/11_0_sw_disaster_divine/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 65 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/mabataki/apply
+    execute if score @s AX.AnimationTick matches 75 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

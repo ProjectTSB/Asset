@@ -12,3 +12,7 @@
 
 # アニメーション終了処理
     execute if score @s AV.AnimationTick matches 21 run function asset:mob/0391.axia_first/ai/animation/99_0_damaged_1/end
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/yarare/apply
+    execute if score @s AV.AnimationTick matches 15 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

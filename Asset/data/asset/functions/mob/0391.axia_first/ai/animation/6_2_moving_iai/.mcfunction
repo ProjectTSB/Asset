@@ -34,3 +34,8 @@
 
 # ダメージ
     execute if score @s AV.AnimationTick matches 48 run function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/damage
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 10 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mabataki/apply
+    execute if score @s AV.AnimationTick matches 20 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 60 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

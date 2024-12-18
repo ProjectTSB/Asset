@@ -29,3 +29,8 @@
     execute if score @s AW.AnimationTick matches 82 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
     execute if score @s AW.AnimationTick matches 102 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
     execute if score @s AW.AnimationTick matches 122 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 25 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 50 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 150 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

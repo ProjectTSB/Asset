@@ -20,3 +20,9 @@
 
 # アニメーション終了処理
     execute if predicate api:global_vars/difficulty/max/normal if score @s AW.AnimationTick matches 80 run function asset:mob/0392.ecual_first/ai/animation/1_0_idle/end
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 20 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 30 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply
+    execute if score @s AW.AnimationTick matches 60 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 70 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

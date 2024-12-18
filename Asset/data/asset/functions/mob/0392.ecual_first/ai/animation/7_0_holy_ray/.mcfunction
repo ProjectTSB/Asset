@@ -40,3 +40,7 @@
     execute if score @s AW.AnimationTick matches 173 at @s run tp @s ^ ^-0.12 ^ ~ ~
     execute if score @s AW.AnimationTick matches 174 at @s run tp @s ^ ^-0.12 ^ ~ ~
     execute if score @s AW.AnimationTick matches 175 at @s run tp @s ^ ^-0.12 ^ ~ ~
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 15 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 165 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

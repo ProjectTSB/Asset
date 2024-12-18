@@ -35,3 +35,7 @@
     execute if score @s AV.AnimationTick matches 60 at @s run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/damage
     execute if score @s AV.AnimationTick matches 65 at @s run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/damage
     execute if score @s AV.AnimationTick matches 70 at @s run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/damage
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 10 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 75 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

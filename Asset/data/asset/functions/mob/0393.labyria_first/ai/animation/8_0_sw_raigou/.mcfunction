@@ -21,3 +21,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 80 run function asset:mob/0393.labyria_first/ai/animation/8_0_sw_raigou/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/majime/apply
+    execute if score @s AX.AnimationTick matches 70 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

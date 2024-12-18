@@ -94,3 +94,8 @@
         execute if score @s AV.AnimationTick matches 53..57 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 67..76 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 93..113 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 45 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 170 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mabataki/apply
+    execute if score @s AV.AnimationTick matches 180 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

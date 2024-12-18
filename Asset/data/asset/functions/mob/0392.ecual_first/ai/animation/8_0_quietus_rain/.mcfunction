@@ -12,3 +12,8 @@
 
 # クワイタスレイン 発動
     execute if score @s AW.AnimationTick matches 31 run function asset:mob/0392.ecual_first/ai/projectile/quietus_rain/0.summon
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 10 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 20 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 140 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

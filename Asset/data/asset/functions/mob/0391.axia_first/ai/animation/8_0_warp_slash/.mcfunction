@@ -55,3 +55,7 @@
     execute if score @s AV.AnimationTick matches 29 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
     execute if score @s AV.AnimationTick matches 69 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
     execute if score @s AV.AnimationTick matches 120 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/warp/adj
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 5 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 170 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

@@ -51,3 +51,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 300 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/majime/apply
+    execute if score @s AX.AnimationTick matches 290 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

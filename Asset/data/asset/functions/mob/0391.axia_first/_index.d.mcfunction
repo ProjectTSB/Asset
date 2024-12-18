@@ -51,3 +51,10 @@
     #declare function animated_java:axia/animations/14_0_opening_attack/pause
     #declare function animated_java:axia/animations/14_0_opening_attack/resume
     #declare function animated_java:axia/animations/15_0_former_ending/play
+    #declare function animated_java:axia/variants/default/apply
+    #declare function animated_java:axia/variants/jitome/apply
+    #declare function animated_java:axia/variants/mabataki/apply
+    #declare function animated_java:axia/variants/mazime/apply
+    #declare function animated_java:axia/variants/normal/apply
+    #declare function animated_java:axia/variants/wink/apply
+    #declare function animated_java:axia/variants/yarare/apply

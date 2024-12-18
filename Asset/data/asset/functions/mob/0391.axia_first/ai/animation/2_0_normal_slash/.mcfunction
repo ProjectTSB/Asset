@@ -35,3 +35,7 @@
 # ダメージ
     execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
     execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_damage
+
+# バリアント
+    execute if score @s AV.AnimationTick matches 5 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply
+    execute if score @s AV.AnimationTick matches 30 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/normal/apply

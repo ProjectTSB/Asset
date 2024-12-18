@@ -13,6 +13,7 @@
 
 # アニメーション再生
     execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..250] run function animated_java:ecual/animations/13_0_former_ending/play
+    execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/jitome/apply
 
 # パーティクル処理
     execute if score @s AW.AnimationTick matches 102 as @e[type=item_display,tag=AW.Root.This,distance=..250] at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal

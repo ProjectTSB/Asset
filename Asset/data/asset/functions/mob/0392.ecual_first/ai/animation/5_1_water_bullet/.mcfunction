@@ -41,3 +41,8 @@
     execute if score @s AW.AnimationTick matches 124 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/summon
     execute if score @s AW.AnimationTick matches 125 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/summon
     execute if score @s AW.AnimationTick matches 126 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/summon
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 25 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply
+    execute if score @s AW.AnimationTick matches 50 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 150 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

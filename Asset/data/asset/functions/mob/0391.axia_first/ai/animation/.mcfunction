@@ -22,9 +22,6 @@
 # 通常移動
     execute if score @s AV.AnimationNum matches 60 run function asset:mob/0391.axia_first/ai/animation/6_0_moving_forward/
 
-# 通常移動（特定地点まで）
-    execute if score @s AV.AnimationNum matches 61 run function asset:mob/0391.axia_first/ai/animation/6_1_moving_point/
-
 # 居合い切り移動
     execute if score @s AV.AnimationNum matches 62 run function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/
 

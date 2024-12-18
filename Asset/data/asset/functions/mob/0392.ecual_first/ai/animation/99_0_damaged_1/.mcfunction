@@ -12,3 +12,7 @@
 
 # アニメーション終了処理
     execute if score @s AW.AnimationTick matches 21 run function asset:mob/0392.ecual_first/ai/animation/99_0_damaged_1/end
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/yarare/apply
+    execute if score @s AW.AnimationTick matches 15 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

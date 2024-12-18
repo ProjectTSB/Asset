@@ -42,3 +42,7 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 140 run function asset:mob/0393.labyria_first/ai/animation/3_0_ms_warp/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/majime/apply
+    execute if score @s AX.AnimationTick matches 130 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

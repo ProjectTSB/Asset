@@ -49,3 +49,8 @@
 
 # 終了処理
     execute if score @s AX.AnimationTick matches 213 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/end
+
+# バリアント
+    execute if score @s AX.AnimationTick matches 5 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/mabataki/apply
+    execute if score @s AX.AnimationTick matches 15 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/majime/apply
+    execute if score @s AX.AnimationTick matches 200 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/normal/apply

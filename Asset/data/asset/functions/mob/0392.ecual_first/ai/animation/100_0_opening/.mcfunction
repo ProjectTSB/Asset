@@ -50,3 +50,9 @@
     execute if score @s AW.AnimationTick matches 267 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
     execute if score @s AW.AnimationTick matches 287 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
     execute if score @s AW.AnimationTick matches 307 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 1 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 55 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply
+    execute if score @s AW.AnimationTick matches 155 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 265 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

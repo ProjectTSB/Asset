@@ -30,3 +30,7 @@
     execute positioned ^ ^ ^25 if score @s AW.AnimationTick matches 62 run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/summon
     execute positioned ^ ^ ^28 if score @s AW.AnimationTick matches 65 run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/summon
     execute positioned ^ ^ ^31 if score @s AW.AnimationTick matches 68 run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/summon
+
+# バリアント
+    execute if score @s AW.AnimationTick matches 20 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply
+    execute if score @s AW.AnimationTick matches 85 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/normal/apply

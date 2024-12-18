@@ -13,6 +13,8 @@
 
 # アニメーション再生
     execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..250] run function animated_java:labyria/animations/99_0_finish/play
+# バリアント
+    execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/variants/jitome/apply
 
 # パーティクル処理
     execute if score @s AX.AnimationTick matches 105 as @e[type=item_display,tag=AX.Root.This,distance=..250] at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal
