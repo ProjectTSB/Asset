@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/
 
-# 1x2x3の立方体範囲内のプレイヤにtag付け
+# 立方体範囲内のプレイヤーにtag付け
     data modify storage lib: args.dx set value 1
     data modify storage lib: args.dy set value 6.0
     data modify storage lib: args.dz set value 16.0
