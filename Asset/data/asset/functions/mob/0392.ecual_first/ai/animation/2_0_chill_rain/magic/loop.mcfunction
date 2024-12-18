@@ -21,7 +21,7 @@
 
 # 半径22m以内ではない 又は 他と重なっている場合再拡散する
     execute at 0-0-0-0-0 unless entity @e[type=marker,tag=AW.Marker.SummonPoint,distance=..22,limit=1] run scoreboard players set $AW.Temp Temporary 1
-    execute at 0-0-0-0-0 if entity @e[type=item_display,tag=AW.WaterMagic,distance=0.001..8] run scoreboard players set $AW.Temp Temporary 1
+    execute at 0-0-0-0-0 if entity @e[type=item_display,tag=2017.WaterMagic,distance=0.001..8] run scoreboard players set $AW.Temp Temporary 1
 
 # 条件を満たしていれば置く
     execute unless score $AW.Temp Temporary matches 1 at 0-0-0-0-0 run function asset:mob/0392.ecual_first/ai/projectile/water_magic/0.summon
