@@ -4,7 +4,7 @@
 #   asset:mob/0263.shulker_bullet/tick/turn/target
 
 # プレイヤー方向へ行く
-    execute if entity @a[tag=7B.Target,dx=0] run data modify storage asset:temp 7B.Visible set value true
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=7B.Target,dx=0] run data modify storage asset:temp 7B.Visible set value true
 # リセット
     execute unless block ^ ^ ^0.5 #lib:no_collision run data modify storage asset:temp 7B.Visible set value false
     execute unless entity @e[type=#lib:living,type=!player,tag=this,distance=..25,limit=1] run data modify storage asset:temp 7B.Visible set value false

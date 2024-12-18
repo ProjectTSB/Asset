@@ -1,7 +1,6 @@
 #> asset:mob/0263.shulker_bullet/tick/turn/
 # @within asset:mob/0263.shulker_bullet/tick/rec
 
-
 # ターゲットにテレポートする
     data modify entity @e[type=marker,tag=7B.Target,distance=..0.01,limit=1] Rotation set from entity @s Rotation
     tp @s @e[type=marker,tag=7B.Target,distance=..0.01,limit=1]
