@@ -24,16 +24,9 @@
 # 行動中タグを解除
     tag @s remove RW.InAction
 
-# 方向タグ削除
-    tag @s remove RW.Direction.Left
-    tag @s remove RW.Direction.Right
-
 # 慣性ONに
     tag @s remove RW.DisableInertia
 
-# チェイス停止
-    kill @e[tag=RW.ChaseMarker]
-    tag @s remove RW.ChaseShot
 
 # 無敵解除
     data modify entity @s Invulnerable set value 0b
@@ -43,16 +36,11 @@
     scoreboard players set @s General.Mob.Tick -2
     scoreboard players set @s RW.LoopCount 0
     scoreboard players reset @s RW.FakeInertia
-    scoreboard players reset @s RW.MiniSkillCount
 
 # 速度設定
     scoreboard players set @s[scores={RW.Phase=1}] RW.Speed 4
     scoreboard players set @s[scores={RW.Phase=1}] RW.Speed 6
     scoreboard players set @s[scores={RW.Phase=1}] RW.Speed 7
-
-# ソード設置カウントをリセット
-    scoreboard players set @s[scores={RW.Phase=2,RW.SwordCount=2..}] RW.SwordCount 0
-    scoreboard players set @s[scores={RW.Phase=3,RW.SwordCount=1..}] RW.SwordCount 0
 
 # 移動完了するまでTickロックしちゃお
     tag @s add RW.TickLock
