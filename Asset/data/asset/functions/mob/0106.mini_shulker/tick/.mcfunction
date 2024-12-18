@@ -17,9 +17,5 @@
 # テレポート
     execute if score @s General.Mob.Tick matches 1000 run function asset:mob/0106.mini_shulker/tick/teleport/
 
-# パッシブ耐性
-    execute if data storage asset:context this{State:"close"} run effect give @s resistance infinite 7 true
-    execute unless data storage asset:context this{State:"close"} run effect clear @s resistance
-
 # 加算
     scoreboard players add @s General.Mob.Tick 1
