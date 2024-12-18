@@ -40,9 +40,11 @@ execute store result score $attack_end_time Temporary run data get storage asset
 execute if score $current_gametime_for_attack Temporary = $attack_start_time Temporary if score $current_gametime_for_attack Temporary < $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
 
 # 攻撃終了後の処理
-execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
+execute if score $current_gametime_for_attack Temporary >= $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
 execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/escape_after_attack
 
+   #tellraw @a [{"text": "use_weapon"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]
+   #tellraw @a [{"text": "attack_start_time"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]
 
 # reset
 scoreboard players reset $current_gametime_for_attack Temporary
