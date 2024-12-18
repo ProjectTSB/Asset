@@ -3,10 +3,8 @@
 
 #> tag
 # @within function asset:mob/1004.tultaria/**
-    #declare tag RW.This
-    #
 
-    #declare storage rw_storage:
+#declare storage rw_storage:
 
 ## ボスのモードに関するタグ
     #declare tag RW.Mode.Fire
@@ -19,21 +17,12 @@
     #declare tag RW.SkillSelected
 
 ## ボスの体と移動に関連するタグ
-    #declare tag RW.Boss
     #declare tag RW.Opening
-    #declare tag RW.Start
     #declare tag RW.PlayerFacing
     #declare tag RW.TeleportMarker
     #declare tag RW.Move
-    #declare tag General.Mob.TickLock
+    #declare tag RW.TickLock
     #declare tag RW.InAction
-    #declare tag RW.LoopCount
-    #declare tag RW.ChaseShot
-    #declare tag RW.ChaseMarker
-    #declare tag RW.ChaseMarker1
-    #declare tag RW.ChaseMarker2
-    #declare tag RW.ChaseMarker3
-    #declare tag RW.ChaseMarker4
     #declare tag RW.DisableInertia
     #declare tag RW.Shield
 
@@ -51,7 +40,6 @@
     #declare tag RW.BodyMarker
     #declare tag RW.MarkerInit
     #declare tag RW.Marker.Aim
-
 
 ## ボスのHPのタグ
     #declare tag RW.HPless75per
@@ -109,35 +97,7 @@
     #declare tag RW.Skill.SwordRain.3
     #declare tag RW.Skill.SwordRain.4
 
-## ボスの使う小技のタグ
-    #declare tag RW.Skill.Mini.MoveShot
-    #declare tag RW.Skill.Mini.MoveShotLeft
-    #declare tag RW.Skill.Mini.MoveShotRight
-    #declare tag RW.Skill.Mini.SpreadShot
-    #declare tag RW.Skill.Mini.Slash
-    #declare tag RW.Skill.Mini.BackShot
-    #declare tag RW.Skill.Mini.TeleportBeam
-
-## ボスの移動方向に関するタグ
-    #declare tag RW.Direction.Left
-    #declare tag RW.Direction.Right
-
-## ボスの使う違う技のタグ
-    #declare tag RW.MiniSkillChase
-    #declare tag RW.MiniSkillShot
-    #declare tag RW.MiniSkillBulletHell
-    #declare tag RW.MiniSkillLaser
-    #declare tag RW.MiniSkillUsed
-
 ## ボスの飛び道具のタグ
-    #declare tag RW.MeteorMaker
-    #declare tag RW.BigMeteorMaker
-    #declare tag RW.CoordinateMarker
-    #declare tag RW.OffCoordinateMarker
-    #declare tag RW.SlashSweep
-    #declare tag RW.SlashInit
-    #declare tag RW.IceSweep
-    #declare tag RW.FireSweep
     #declare tag RW.TargetMarker
     #declare tag RW.TargetMarkerInit
     #declare tag RW.ChainLightning.Common
@@ -150,16 +110,7 @@
     #declare tag RW.ChainLightning6
     #declare tag RW.ChainLightning7
     #declare tag RW.ChainLightning.Last
-    #declare tag S2.Wait
 
 ## ボスの死亡時に使うタグ
     #declare tag RW.DeathAnimation
     #declare tag RW.DeathInit
-    #declare tag Hit
-
-## その他
-    #declare tag RW.SkyBox
-
-    #
-    #declare tag Landing
-    #declare tag LandingTarget
