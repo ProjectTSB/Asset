@@ -7,9 +7,19 @@
 # 確率でテレポートに移行
     execute if score @s General.Mob.Tick matches 0 if predicate lib:random_pass_per/15 run scoreboard players set @s General.Mob.Tick 1000
 
-# スキル処理
-    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0106.mini_shulker/tick/attack/
+# 状態制御
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0106.mini_shulker/tick/select/
+
+# 待機処理
+    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0106.mini_shulker/tick/wait
+# 攻撃処理
+    execute if score @s General.Mob.Tick matches 500.. run function asset:mob/0106.mini_shulker/tick/attack/
+# テレポート
     execute if score @s General.Mob.Tick matches 1000 run function asset:mob/0106.mini_shulker/tick/teleport/
+
+# パッシブ耐性
+    execute if data storage asset:context this{State:"close"} run effect give @s resistance infinite 7 true
+    execute unless data storage asset:context this{State:"close"} run effect clear @s resistance
 
 # 加算
     scoreboard players add @s General.Mob.Tick 1
