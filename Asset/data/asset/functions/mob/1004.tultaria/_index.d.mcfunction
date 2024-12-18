@@ -112,6 +112,7 @@
     #declare tag RW.ChainLightning.Last
 
 ## Animated animated_java
+    #declare function animated_java:tultaria/summon
     #declare function animated_java:tultaria/animations/neutral_air/play
 	#declare function animated_java:tultaria/animations/neutral_air/stop
 	#declare function animated_java:tultaria/animations/neutral_air/pause
@@ -225,3 +226,6 @@
 	#declare function animated_java:tultaria/animations/dodge_side/tween
 	#declare function animated_java:tultaria/animations/pause_all
     #declare function animated_java:tultaria/apply_default_pose
+
+    #declare tag aj.tultaria.bone.right_ring
+    #declare tag aj.tultaria.bone.left_ring
