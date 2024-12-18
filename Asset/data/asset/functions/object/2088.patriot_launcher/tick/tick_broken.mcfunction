@@ -27,7 +27,7 @@ execute store result score $RepairTime Temporary run data get storage asset:cont
 execute store result storage asset:context this.RepairTime int 1 run scoreboard players operation $RepairTime Temporary -= $RepairValue Temporary
 
 # ミサイル命中時の修理時間減速
-execute if entity @s[tag=PatriotLauncher.HitMissile] store result storage asset:context this.RepairTime int 1 run scoreboard players add $RepairTime Temporary 10000
+execute if entity @s[tag=PatriotLauncher.HitMissile] store result storage asset:context this.RepairTime int 1 run scoreboard players add $RepairTime Temporary 3000
 execute store result score $MaxRepairTime Temporary run data get storage asset:context this.MaxRepairTime
 execute if score $RepairTime Temporary >= $MaxRepairTime Temporary run data modify storage asset:context this.RepairTime set from storage asset:context this.MaxRepairTime
 function asset:object/2088.patriot_launcher/tick/set_repair_gauge
