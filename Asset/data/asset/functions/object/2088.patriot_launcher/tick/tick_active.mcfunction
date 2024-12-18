@@ -19,6 +19,7 @@ tag @s remove PatriotLauncher.HitMissile
 execute if score $CurrentDurability Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:black_concrete"
 execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 1b
 execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.RepairTime set value 51200
+execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[type=text_display] run data modify entity @s text set value '[{"bold":true,"color":"#FFFFFF","text":"PRESS "},{"color":"#FFFFFF","keybind":"key.sneak"}]'
 execute if score $CurrentDurability Temporary matches ..0 run return run scoreboard players reset $CurrentDurability Temporary
 
 # 向きを敵の方へ向ける

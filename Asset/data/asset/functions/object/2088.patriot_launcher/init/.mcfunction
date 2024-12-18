@@ -10,7 +10,9 @@
 
 # 見た目召喚
 summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,4f]},block_state:{Name:"minecraft:white_concrete"},Tags:["PatriotLauncher.ObjectInit"]}
-ride @e[tag=PatriotLauncher.ObjectInit,limit=1] mount @s
+summon text_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,4f,0f],scale:[2f,2f,4f]},billboard:"center",text:'{"color":"#ffffff","text":"対空砲"}',Tags:["PatriotLauncher.ObjectInit"]}
+ride @e[type=block_display,tag=PatriotLauncher.ObjectInit,limit=1] mount @s
+ride @e[type=text_display,tag=PatriotLauncher.ObjectInit,limit=1] mount @s
 
 # データセット
     data modify storage asset:context this.Durability set value 10

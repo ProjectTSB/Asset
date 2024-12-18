@@ -39,6 +39,7 @@ execute if score $RepairTime Temporary matches ..0 run data modify storage asset
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsActive set value 1b
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.MissileCooltime set value 199
 execute if score $RepairTime Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:white_concrete"
+execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[type=text_display] run data modify entity @s text set value '{"color":"#ffffff","text":"対空砲"}'
 
 # reset
 scoreboard players reset $RepairValue Temporary

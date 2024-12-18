@@ -37,7 +37,7 @@ function api:object/summon
 
 
 #タイトルで何をやるか説明
-
+title @a[distance=..128] title {"text":"対空砲を守り敵を迎撃せよ","color":"white","bold":true}
 
 
 # reset
