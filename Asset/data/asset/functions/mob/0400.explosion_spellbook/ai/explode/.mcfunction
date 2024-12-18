@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0400.explosion_spellbook/tick/
 
-# 爆発タグを付ける
-    tag @s add B4.Explode
-
 # 演出
     particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force @a[distance=..32]
     particle dust 0 0.75 100000000 2 ~ ~1 ~ 2 2 2 0 100 force @a[distance=..32]
