@@ -13,11 +13,11 @@
     execute as @e[type=marker,tag=2Y.Spread,distance=..0.01,limit=1] at @s run function lib:spread_entity/
     execute as @e[type=marker,tag=2Y.Spread,limit=1] at @s align xyz run tp @s ~0.5 ~0.2399 ~0.5
 # 壁の選定
-    execute as @e[type=marker,tag=2Y.Spread,limit=1] at @s run function asset:mob/0106.mini_shulker/tick/teleport/secure/ with storage asset:temp 2Y
-# 壁があればTPする
-    execute if data storage asset:temp 2Y.Target[0] run function asset:mob/0106.mini_shulker/tick/teleport/do/
+    execute as @e[type=marker,tag=2Y.Spread,limit=1] at @s run function asset:mob/0106.mini_shulker/tick/teleport/secure/
 # 壁がなければ再試行
     execute unless data storage asset:temp 2Y.Target[0] run scoreboard players set @s General.Mob.Tick 995
+# 壁があればTPする
+    execute if data storage asset:temp 2Y.Target[0] run function asset:mob/0106.mini_shulker/tick/teleport/do/
 
 # リセット
     kill @e[type=marker,tag=2Y.Spread,limit=1]

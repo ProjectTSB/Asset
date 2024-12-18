@@ -5,4 +5,4 @@
 # @within asset:mob/alias/106/init
 
 # スコア設定
-    scoreboard players set @s General.Mob.Tick 1000
+    scoreboard players set @s General.Mob.Tick 995
