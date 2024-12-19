@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/237/hurt
 
+# super.hurt
+    function asset:mob/super.hurt
+
 # 演出
     playsound minecraft:entity.vex.hurt hostile @a ~ ~ ~ 1 0.5
     playsound minecraft:entity.vex.hurt hostile @a ~ ~ ~ 1 0.7
