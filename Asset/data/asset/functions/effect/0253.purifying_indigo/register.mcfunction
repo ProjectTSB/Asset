@@ -29,7 +29,7 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 2
+    data modify storage asset:effect RequireClearLv set value 3
 
 # フィールド
     # data modify storage asset:effect Field set value {}
