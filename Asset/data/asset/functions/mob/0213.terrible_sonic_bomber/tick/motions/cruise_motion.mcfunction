@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/cruise_motion
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/cruise_motion
 #
 # 
 #

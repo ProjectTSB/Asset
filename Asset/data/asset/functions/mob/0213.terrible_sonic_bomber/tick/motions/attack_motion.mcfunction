@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/attack_motion
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion
 #
 # 
 #
@@ -37,11 +37,11 @@ execute store result score $use_weapon Temporary run data get storage asset:cont
 execute store result score $attack_start_time Temporary run data get storage asset:context this.attack_start_time
 execute store result score $attack_end_time Temporary run data get storage asset:context this.attack_end_time
 
-execute if score $current_gametime_for_attack Temporary = $attack_start_time Temporary if score $current_gametime_for_attack Temporary < $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
+execute if score $current_gametime_for_attack Temporary = $attack_start_time Temporary if score $current_gametime_for_attack Temporary < $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/use_weapon
 
 # 攻撃終了後の処理
-execute if score $current_gametime_for_attack Temporary >= $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
-execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/escape_after_attack
+execute if score $current_gametime_for_attack Temporary >= $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/set_next_attack_time
+execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/escape_after_attack
 
    #tellraw @a [{"text": "use_weapon"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]
    #tellraw @a [{"text": "attack_start_time"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]

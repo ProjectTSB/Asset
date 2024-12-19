@@ -1,8 +1,8 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/set_next_attack_time
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/set_next_attack_time
 #
 # 
 #
-# @within function asset:mob/0213.terrible_sonic_bomber/tick/attack_motion
+# @within function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion
 
 #> prv
 # @private

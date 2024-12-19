@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/attack_motion_prepare
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
 #
 # 
 #

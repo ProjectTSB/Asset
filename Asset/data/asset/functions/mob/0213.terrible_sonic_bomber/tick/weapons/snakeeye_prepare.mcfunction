@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function asset:mob/0213.terrible_sonic_bomber/tick/attack_motion_prepare
+# @within function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
 
 #> prv
 # @private
