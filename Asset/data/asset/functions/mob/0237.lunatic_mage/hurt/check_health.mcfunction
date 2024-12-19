@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/hurt/3.check_health
+#> asset:mob/0237.lunatic_mage/hurt/check_health
 #
 # 体力の割合を検知する
 #

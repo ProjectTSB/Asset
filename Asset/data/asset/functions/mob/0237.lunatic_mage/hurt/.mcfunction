@@ -13,4 +13,4 @@
     playsound minecraft:entity.glow_squid.ambient hostile @a ~ ~ ~ 1 2
 
 # 体力が40%であることを検知
-    execute if entity @s[tag=!6L.HealthLess40Per] run function asset:mob/0237.lunatic_mage/hurt/3.check_health
+    execute if entity @s[tag=!6L.HealthLess40Per] run function asset:mob/0237.lunatic_mage/hurt/check_health
