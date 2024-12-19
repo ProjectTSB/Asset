@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0067.slowness/_/end",
+        "asset:effect/0017.slowness/_/end",
         "asset:effect/0124.darkness/_/end",
         "asset:effect/0202.sheep_blessing/_/end",
         "asset:effect/0204.void_transaction/_/end",
