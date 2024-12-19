@@ -9,6 +9,7 @@
     #declare tag AC.GiantSkull
     #declare tag AC.HyperLaser
     #declare tag AC.DashSlash
+    #declare tag AC.DashSlash.IsNearPlayer
     #declare tag AC.Coffin
     #declare tag AC.ManyLaser
     #declare tag AC.SpawnMarker
@@ -28,6 +29,7 @@
     #declare function animated_java:tutankhamen/remove/this
     #declare function animated_java:tutankhamen/summon
     #declare function animated_java:tutankhamen/animations/neutral/play
+    #declare function animated_java:tutankhamen/animations/neutral/tween
     #declare function animated_java:tutankhamen/animations/neutral/stop
     #declare function animated_java:tutankhamen/animations/spawn/play
     #declare function animated_java:tutankhamen/animations/spawn/stop
@@ -54,8 +56,10 @@
     #declare function animated_java:tutankhamen/animations/rod_ground_end/play
     #declare function animated_java:tutankhamen/animations/rod_ground_end/stop
     #declare function animated_java:tutankhamen/animations/dash/play
+    #declare function animated_java:tutankhamen/animations/dash/tween
     #declare function animated_java:tutankhamen/animations/dash/stop
     #declare function animated_java:tutankhamen/animations/dash_slash/play
+    #declare function animated_java:tutankhamen/animations/dash_slash/tween
     #declare function animated_java:tutankhamen/animations/dash_slash/stop
     #declare function animated_java:tutankhamen/animations/dash_end/play
     #declare function animated_java:tutankhamen/animations/dash_end/tween
