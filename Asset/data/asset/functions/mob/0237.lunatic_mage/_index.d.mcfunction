@@ -33,7 +33,7 @@
 #   asset:mob/0237.lunatic_mage/death/
 #   asset:mob/0237.lunatic_mage/remove/
 #   asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/**
-#   asset:mob/0237.lunatic_mage/tick/skill/teleport/main
+#   asset:mob/0237.lunatic_mage/tick/skill/teleport/
 #   asset:mob/0237.lunatic_mage/init/
     #declare tag 6L.SpawnPoint
 
