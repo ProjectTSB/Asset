@@ -7,7 +7,7 @@
 function asset:mob/super.init
 
 # AJモデル召喚
-    execute rotated ~ 0 run function animated_java:grey_guardian/summon
+    execute rotated ~ 0 run function animated_java:grey_guardian/summon {args:{}}
 
 # tpさせる
     execute at @s as @e[type=item_display,tag=AH.AJ,sort=nearest,limit=1] run tp @s ~ ~ ~
