@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/use_weapon
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/use_weapon
 #
 # 
 #

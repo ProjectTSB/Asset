@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/initial_motion
+#> asset:mob/0213.terrible_sonic_bomber/tick/motions/initial_motion
 #
 # 
 #
