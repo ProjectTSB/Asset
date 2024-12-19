@@ -22,5 +22,7 @@
     #particle minecraft:trial_spawner_detection ~ ~ ~ 1 1 1 0 100
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/0008.mysterious_tambourine/trigger/vfx
 
-# バフを付与
-    execute as @a[distance=..16] run function asset:artifact/0008.mysterious_tambourine/trigger/buff
+# 鼓舞(ID:272)を付与
+    data modify storage api: Argument.ID set value 272
+    execute as @a[distance=..16] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

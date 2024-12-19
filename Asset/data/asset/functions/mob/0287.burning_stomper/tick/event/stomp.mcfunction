@@ -25,7 +25,11 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
 
 # 吹き飛ばし
-    execute as @a[gamemode=!spectator,distance=..3] run function asset:mob/0287.burning_stomper/tick/event/levitation
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 21
+    data modify storage api: Argument.Duration set value 7
+    execute as @a[gamemode=!spectator,distance=..3] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     function lib:damage/reset

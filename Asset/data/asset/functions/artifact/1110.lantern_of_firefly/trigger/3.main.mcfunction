@@ -20,6 +20,7 @@
 # エフェクトを付与
     data modify storage api: Argument.ID set value 265
     function api:entity/mob/effect/give
+    data modify storage api: Argument.ClearCount set value 2
 
 # スコア初期化
     scoreboard players set @s UU.Tick 0

@@ -14,8 +14,11 @@
 # フルセットバフを削除
     data modify storage api: Argument.ID set value 262
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
+
     data modify storage api: Argument.ID set value 263
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
 
 # スコアリセット
     scoreboard players reset @s FE.Cooldown

@@ -35,3 +35,4 @@
     data modify storage api: Argument.Stack set value 31
     data modify storage api: Argument.Duration set value 20
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

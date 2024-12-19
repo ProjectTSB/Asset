@@ -9,7 +9,9 @@
     data modify storage api: Argument.Stack set value 1
     data modify storage api: Argument.Duration set value 200
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 浄化の反動(ID:216)を付与
     data modify storage api: Argument.ID set value 216
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
