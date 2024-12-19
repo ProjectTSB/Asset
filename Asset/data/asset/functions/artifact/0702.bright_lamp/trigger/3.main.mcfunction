@@ -18,4 +18,6 @@
     effect give @a[distance=..8] night_vision 21 0 true
 
 # 暗闇を解除
-    execute as @a[distance=..8] run function asset:artifact/0702.bright_lamp/trigger/clear_darkness
+    data modify storage api: Argument.ID set value 124
+    execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
