@@ -1,8 +1,8 @@
 #> asset:mob/1004.tultaria/remove/
 #
+# Mobのremove時の処理
 #
-#
-# @within function asset:mob/alias/1004/remove
+# @within function asset:mob/alias/1004/init
 
-# アマスタ削除
-    kill @e[type=armor_stand,tag=RW.ArmorStand]
+# Super
+    function asset:mob/super.remove
