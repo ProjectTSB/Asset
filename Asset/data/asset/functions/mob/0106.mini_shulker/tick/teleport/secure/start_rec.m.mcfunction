@@ -11,7 +11,7 @@
     $data modify storage asset:temp 2Y.Secure.RelativePos set value "$(RelativePos)"
     $data modify storage asset:temp 2Y.Secure.Transformation set value $(Transformation)
 
-# 再起を開始
+# 再帰を開始
     function asset:mob/0106.mini_shulker/tick/teleport/secure/rec.m with storage asset:temp 2Y.Secure
 
 # リセット
