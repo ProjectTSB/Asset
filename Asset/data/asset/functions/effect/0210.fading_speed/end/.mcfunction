@@ -10,3 +10,4 @@
 # 効果時間終了時、デバフを付与
     data modify storage api: Argument.ID set value 211
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

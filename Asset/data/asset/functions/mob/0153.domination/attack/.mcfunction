@@ -28,3 +28,4 @@
     execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Difficulty
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

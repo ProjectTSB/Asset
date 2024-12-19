@@ -20,6 +20,7 @@
 # バフ
     data modify storage api: Argument.ID set value 276
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 累計スコアをリセット
     scoreboard players reset @s VX.DamageSum

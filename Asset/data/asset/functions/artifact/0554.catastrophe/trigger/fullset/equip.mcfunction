@@ -23,3 +23,4 @@
 # フルセットバフを付与
     data modify storage api: Argument.ID set value 262
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

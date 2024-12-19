@@ -26,7 +26,7 @@
     function lib:damage/reset
 
 # ノーマル以上で侵害エフェクトを付与
-    execute if predicate api:global_vars/difficulty/min/normal as @a[gamemode=!spectator,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
+    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0156.infringement/tick/5.debuff
 
 # 自滅する
 # ノーマル以下でkill @s ハードで奈落

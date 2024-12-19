@@ -15,4 +15,4 @@
     function api:damage/reset
 
 # ノーマル以上なら範囲内のプレイヤーにデバフを付与
-    execute if data storage asset:context this{Debuff:true} as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:object/2046.white_magic/tick/debuff
+    execute if data storage asset:context this{Debuff:true} run function asset:object/2046.white_magic/tick/debuff
