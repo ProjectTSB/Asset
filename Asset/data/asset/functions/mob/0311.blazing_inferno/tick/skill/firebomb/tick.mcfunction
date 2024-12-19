@@ -4,17 +4,29 @@
 #
 # @within function asset:mob/0311.blazing_inferno/tick/base_move/skill_active
 
-# 動作停止
-    #execute if score @s General.Mob.Tick matches 0 run tag @s remove 8N.RailMove
+# ハードモードなら謎の加速をかます
+    execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 0 run tag @s add 8N.Turn.HighSpeed
 
-# 攻撃
-    # 予備動作のほうはちょっと早めに実行
-        execute if score @s General.Mob.Tick matches 10 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/burst/play
+# 攻撃 1
+    # アニメ再生
+        execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_shoot_1_right/play
     # 攻撃を実行
-        execute if score @s General.Mob.Tick matches 17 anchored eyes positioned ^ ^ ^2 run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/throw
-    # ハードモードかつHP50%の場合、２本追加で放つ
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=8N.Health.50Per] General.Mob.Tick matches 17 anchored eyes positioned ^1 ^ ^2 rotated ~-45 ~ run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/throw_spread
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=8N.Health.50Per] General.Mob.Tick matches 17 anchored eyes positioned ^-1 ^ ^2 rotated ~45 ~ run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/throw_spread
+        execute if score @s General.Mob.Tick matches 10 at @e[type=marker,tag=8N.ModelLocator.RightHand] facing entity @p feet rotated ~90 ~-45 run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/shoot
+
+# 攻撃 2
+    # アニメ再生
+        execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_shoot_1_left/play
+    # 攻撃を実行
+        execute if score @s General.Mob.Tick matches 30 at @e[type=marker,tag=8N.ModelLocator.LeftHand] facing entity @p feet rotated ~-90 ~-45 run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/shoot
+
+# 攻撃 3
+    # アニメ再生
+        execute if score @s General.Mob.Tick matches 40 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_shoot_2/play
+    # 攻撃を実行
+        execute if score @s General.Mob.Tick matches 50 at @e[type=marker,tag=8N.ModelLocator.RightHand] facing entity @p feet rotated ~ ~-45 run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/shoot
+
+# 元のアニメに戻る
+    execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neutral_fighting/tween {duration:10, to_frame:0}
 
 # リセット
-    execute if score @s General.Mob.Tick matches 100 run function asset:mob/0311.blazing_inferno/tick/base_move/reset
+    execute if score @s General.Mob.Tick matches 60 run function asset:mob/0311.blazing_inferno/tick/base_move/reset
