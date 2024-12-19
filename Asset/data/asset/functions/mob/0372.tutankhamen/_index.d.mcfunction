@@ -10,6 +10,7 @@
     #declare tag AC.HyperLaser
     #declare tag AC.DashSlash
     #declare tag AC.Coffin
+    #declare tag AC.ManyLaser
     #declare tag AC.SpawnMarker
     #declare tag AC.CoffinPoint
     #declare tag AC.AJ
