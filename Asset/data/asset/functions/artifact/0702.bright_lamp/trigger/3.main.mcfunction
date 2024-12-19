@@ -17,6 +17,5 @@
 # 暗視を付与
     effect give @a[distance=..8] night_vision 21 0 true
 
-# 盲目とダークネスを解除
-    effect clear @a[distance=..8] blindness
-    effect clear @a[distance=..8] darkness
+# 暗闇を解除
+    execute as @a[distance=..8] run function asset:artifact/0702.bright_lamp/trigger/clear_darkness
