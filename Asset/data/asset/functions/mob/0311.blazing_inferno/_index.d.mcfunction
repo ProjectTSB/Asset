@@ -11,7 +11,9 @@
     #declare tag 8N.PlayerFacing
     #declare tag 8N.IntroFinish
 
+## マーカーリスト
     #declare tag 8N.Marker.SpawnPoint
+    #declare tag 8N.Marker.Target
     #declare tag 8N.Marker.MinePlace
     #declare tag 8N.Marker.MinePlaceInit
 
@@ -22,11 +24,9 @@
     #declare tag 8N.Skill.SpreadMine
     #declare tag 8N.Skill.OraOra
     #declare tag 8N.Skill.Summon
-
+    #declare tag 8N.Skill.GroundSlam
     #declare tag 8N.Health.50Per
 
-    #declare tag 8N.ModelLocator.LeftHand
-    #declare tag 8N.ModelLocator.RightHand
 
     #declare tag 8N.Turn.HighSpeed
     #declare tag 8N.Turn.Clockwise
@@ -168,8 +168,29 @@
     #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/set_frame
     #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/apply_frame
     #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/tween
-    #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/zzz/zzz/0
-    #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/zzz/zzz/1
-    #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/zzz/on_tick
-    #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/zzz/set_frame
-    #declare function animated_java:blazing_inferno/animations/attack_oraora_loop/zzz/apply_frame
+	#declare function animated_java:blazing_inferno/animations/teleport/play
+	#declare function animated_java:blazing_inferno/animations/teleport/stop
+	#declare function animated_java:blazing_inferno/animations/teleport/pause
+	#declare function animated_java:blazing_inferno/animations/teleport/resume
+	#declare function animated_java:blazing_inferno/animations/teleport/next_frame
+	#declare function animated_java:blazing_inferno/animations/teleport/set_frame
+	#declare function animated_java:blazing_inferno/animations/teleport/apply_frame
+	#declare function animated_java:blazing_inferno/animations/teleport/tween
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/play
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/stop
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/pause
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/resume
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/next_frame
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/set_frame
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/apply_frame
+	#declare function animated_java:blazing_inferno/animations/teleport_vanish/tween
+	#declare function animated_java:blazing_inferno/animations/attack_fall/play
+	#declare function animated_java:blazing_inferno/animations/attack_fall/stop
+	#declare function animated_java:blazing_inferno/animations/attack_fall/pause
+	#declare function animated_java:blazing_inferno/animations/attack_fall/resume
+	#declare function animated_java:blazing_inferno/animations/attack_fall/next_frame
+	#declare function animated_java:blazing_inferno/animations/attack_fall/set_frame
+	#declare function animated_java:blazing_inferno/animations/attack_fall/apply_frame
+	#declare function animated_java:blazing_inferno/animations/attack_fall/tween
+    #declare tag 8N.ModelLocator.LeftHand
+    #declare tag 8N.ModelLocator.RightHand
