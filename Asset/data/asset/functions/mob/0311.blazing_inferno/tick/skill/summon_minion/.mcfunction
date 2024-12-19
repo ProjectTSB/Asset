@@ -5,7 +5,7 @@
 # @within function asset:mob/0311.blazing_inferno/tick/base_move/skill_active
 
 # すでにいる雑魚は退散、ただしノーマルモード以下に限る
-    execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 0 as @e[type=blaze,scores={MobID=313},distance=..30] run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/banish_minion
+    execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 0 as @e[type=blaze,scores={MobID=313},distance=..32] at @s run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/banish_minion
 
 # 構える
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/windup
