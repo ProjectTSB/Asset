@@ -11,10 +11,10 @@
     execute if entity @s[tag=6L.HealthLess40Per] run particle minecraft:instant_effect ~ ~1 ~ 0.3 0.5 0.3 0 1
 
 # 技決定
-    execute if entity @s[scores={6L.Tick=0}] run function asset:mob/0237.lunatic_mage/tick/3.select_skill
+    execute if entity @s[scores={6L.Tick=0}] run function asset:mob/0237.lunatic_mage/tick/select_skill
 
 # 技
-    execute if entity @s[scores={6L.Tick=0..}] run function asset:mob/0237.lunatic_mage/tick/4.skill_branch
+    execute if entity @s[scores={6L.Tick=0..}] run function asset:mob/0237.lunatic_mage/tick/skill_branch
 
 # スコア
     scoreboard players add @s 6L.Tick 1
