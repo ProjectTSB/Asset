@@ -19,22 +19,22 @@
     playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 2 1.5
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 30f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.Damage set value 30f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
 
 # ブロック破壊
     execute positioned ^ ^-1 ^1 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
     execute positioned ^ ^-1 ^2 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
 
 # 補正実行
-    function lib:damage/modifier
+    function api:damage/modifier
 
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
 
 # 付近の地雷を起爆
 #    execute positioned ^ ^ ^2 as @e[type=item_display,tag=!8S.Ready,scores={MobID=316},distance=..6] run function asset:mob/0316.blazing_mine/tick/event/bomb/start
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
