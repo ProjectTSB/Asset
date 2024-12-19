@@ -5,7 +5,7 @@
 # @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/
 
 # 実行時間を移す
-    scoreboard players operation $Interval Temporary = @s 6L.Tick
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
 # 4tickおきに実行
     scoreboard players operation $Interval Temporary %= $4 Const

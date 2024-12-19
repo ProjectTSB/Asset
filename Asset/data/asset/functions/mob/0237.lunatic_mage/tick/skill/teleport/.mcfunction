@@ -21,5 +21,5 @@
     execute at @s run function asset:mob/0237.lunatic_mage/tick/skill/teleport/vfx
 
 # 色々リセット
-    scoreboard players set @s 6L.Tick -10
+    scoreboard players set @s General.Mob.Tick -10
     scoreboard players reset @s 6L.TeleportCount

@@ -6,7 +6,7 @@
 
 # 一定間隔で実行
     # 実行時間を移す
-    scoreboard players operation $Interval Temporary = @s 6L.Tick
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $80 Const
 
 # 4つ落とす
