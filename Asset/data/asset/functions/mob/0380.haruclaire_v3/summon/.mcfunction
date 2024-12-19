@@ -5,4 +5,4 @@
 # @within asset:mob/alias/380/summon
 
 # 元となるEntityを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"]}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","AK.EntityRoot"],Silent:1b,DeathLootTable:"minecraft:empty"}
