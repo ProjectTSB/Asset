@@ -16,3 +16,4 @@
 # 急速充電を付与
     data modify storage api: Argument.ID set value 214
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
