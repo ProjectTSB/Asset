@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:mob/0402.drown_spellbook/load",
+        "asset:mob/0401.darkness_spellbook/load",
+        "asset:mob/0400.explosion_spellbook/load",
+        "asset:mob/0399.void_spellbook/load",
+        "asset:mob/0398.crystal_healer/load",
+        "asset:mob/0397.crystal_turret/load",
         "asset:mob/0378.red_knight_v3/load",
         "asset:mob/0377.grey_guardian_v2/load",
         "asset:mob/0369.prominence_spellbook/load",
