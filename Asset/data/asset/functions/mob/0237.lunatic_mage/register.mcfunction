@@ -1,6 +1,14 @@
 #> asset:mob/0237.lunatic_mage/register
 # @within asset:mob/alias/237/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 237
 # Type (string) Wikiを参照
@@ -52,3 +60,9 @@
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# フィールド
+    data modify storage asset:mob Field.Damage.Fire set value 42f
+    data modify storage asset:mob Field.Damage.Water set value 28f
+    data modify storage asset:mob Field.Damage.Thunder set value 45f
+    data modify storage asset:mob Field.Damage.Magic set value 50f
