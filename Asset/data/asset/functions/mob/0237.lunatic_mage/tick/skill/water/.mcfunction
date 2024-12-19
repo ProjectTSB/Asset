@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/water/1
+#> asset:mob/0237.lunatic_mage/tick/skill/water/
 #
 # 水スキルのメイン処理
 #

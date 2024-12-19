@@ -22,4 +22,4 @@
     execute if entity @s[tag=6L.HealthLess40Per] run scoreboard players add @s 6L.TeleportCount 1
 
 # ワープ
-    execute if entity @s[scores={6L.TeleportCount=2..}] run function asset:mob/0237.lunatic_mage/tick/skill/teleport/main
+    execute if entity @s[scores={6L.TeleportCount=2..}] run function asset:mob/0237.lunatic_mage/tick/skill/teleport/

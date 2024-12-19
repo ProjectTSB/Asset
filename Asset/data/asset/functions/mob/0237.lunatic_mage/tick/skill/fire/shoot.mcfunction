@@ -1,8 +1,8 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/fire/2.shoot
+#> asset:mob/0237.lunatic_mage/tick/skill/fire/shoot
 #
 # 火の弾を発射する
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/fire/1
+# @within function asset:mob/0237.lunatic_mage/tick/skill/fire/
 
 # 音
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 3 1.5

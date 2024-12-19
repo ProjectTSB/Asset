@@ -1,8 +1,8 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/9.fire_hit
+#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/fire/hit
 #
 # 火の弾のヒット処理
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/7.fire_shoot
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/fire/shoot
 
 # ダメージ設定
     data modify storage lib: Argument.Damage set value 32f

@@ -1,8 +1,8 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/fire2/2.shoot
+#> asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot
 #
 # 3wayの火の弾を発射する処理
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/fire2/1
+# @within function asset:mob/0237.lunatic_mage/tick/skill/fire2/
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 3 1.5

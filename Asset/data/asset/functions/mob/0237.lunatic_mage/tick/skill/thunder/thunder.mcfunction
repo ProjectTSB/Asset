@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/thunder/2.thunder
+#> asset:mob/0237.lunatic_mage/tick/skill/thunder/thunder
 #
 # 雷を3箇所に落とす処理
 #

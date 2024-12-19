@@ -2,7 +2,7 @@
 #
 # プレイヤーを呼ぶ
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/1
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/
 
 # エフェクト
     summon area_effect_cloud ~ ~ ~ {Particle:"crit",Radius:0.5f,Duration:6,Age:4,effects:[{id:"slowness",amplifier:9b,duration:40},{id:"blindness",amplifier:0b,duration:15}]}

@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/fire2/1
+#> asset:mob/0237.lunatic_mage/tick/skill/fire2/
 #
 # 火スキル2のメイン処理
 #
@@ -13,9 +13,9 @@
     execute if entity @s[scores={6L.Tick=..20}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 run particle flame ~ ~ ~ 0 0 0 0.02 1
 
 # 軽く炎弾を連射
-    execute if entity @s[scores={6L.Tick=25}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/2.shoot
-    execute if entity @s[scores={6L.Tick=35}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/2.shoot
-    execute if entity @s[scores={6L.Tick=45}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/2.shoot
+    execute if entity @s[scores={6L.Tick=25}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot
+    execute if entity @s[scores={6L.Tick=35}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot
+    execute if entity @s[scores={6L.Tick=45}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot
 
 # リセット
     execute if entity @s[scores={6L.Tick=45..}] run function asset:mob/0237.lunatic_mage/tick/skill/reset

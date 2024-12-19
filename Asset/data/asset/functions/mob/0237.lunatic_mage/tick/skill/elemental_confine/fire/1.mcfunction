@@ -1,15 +1,15 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/6.fire2
+#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/fire/1
 #
-# 回転しながら炎弾連射 (2回目)
+# 回転しながら炎弾連射 (1回目)
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/1
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s 6L.Tick
 
-# 6tickおきに実行
-    scoreboard players operation $Interval Temporary %= $6 Const
-    execute positioned ~ ~-3 ~ if score $Interval Temporary matches 0 run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/7.fire_shoot
+# 4tickおきに実行
+    scoreboard players operation $Interval Temporary %= $4 Const
+    execute positioned ~ ~-3 ~ if score $Interval Temporary matches 0 run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/fire/shoot
 
 # 発射位置にパーティクル
     execute positioned ~ ~-2.4 ~ run particle minecraft:dust 100000000 1 0 1 ~ ~1 ~ 0.2 0.2 0.2 0 5 force @a[distance=..20]

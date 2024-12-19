@@ -2,7 +2,7 @@
 #
 # プレイヤーの位置から鳴らす
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/magic/3.shoot_beam
+# @within function asset:mob/0237.lunatic_mage/tick/skill/magic/shoot_beam
 
 # 音
     playsound block.portal.travel hostile @s ~ ~ ~ 0.05 2

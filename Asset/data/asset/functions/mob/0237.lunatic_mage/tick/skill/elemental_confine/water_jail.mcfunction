@@ -1,8 +1,8 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/3.water_jail
+#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail
 #
 # 水の檻のダメージと演出の処理
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/2.in_activation
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/in_activation
 
 # 音
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2

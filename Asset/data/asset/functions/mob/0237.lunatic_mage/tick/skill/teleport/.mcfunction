@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/teleport/main
+#> asset:mob/0237.lunatic_mage/tick/skill/teleport/
 #
 # 自身の出現位置を中心として拡散テレポート
 #

@@ -2,7 +2,7 @@
 #
 # 大技開始のながれ
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/1
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/
 
 # 頭装備解除
     item replace entity @s armor.head with minecraft:air

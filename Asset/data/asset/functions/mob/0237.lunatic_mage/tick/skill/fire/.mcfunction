@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/fire/1
+#> asset:mob/0237.lunatic_mage/tick/skill/fire/
 #
 # 火スキルのメイン処理
 #
@@ -26,7 +26,7 @@
     execute if entity @s[scores={6L.Tick=20..}] run scoreboard players operation $Interval Temporary = @s 6L.Tick
 # 4tickおきに実行
     execute if entity @s[scores={6L.Tick=20..}] run scoreboard players operation $Interval Temporary %= $5 Const
-    execute if entity @s[scores={6L.Tick=20..}] if score $Interval Temporary matches 0 run function asset:mob/0237.lunatic_mage/tick/skill/fire/2.shoot
+    execute if entity @s[scores={6L.Tick=20..}] if score $Interval Temporary matches 0 run function asset:mob/0237.lunatic_mage/tick/skill/fire/shoot
 
 # リセット
     scoreboard players reset $Interval Temporary

@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/thunder/1
+#> asset:mob/0237.lunatic_mage/tick/skill/thunder/
 #
 # 雷スキルのメイン処理
 #
@@ -28,13 +28,13 @@
     execute if entity @s[scores={6L.Tick=20}] run tag @a[tag=TargetPlayer,distance=..50,limit=2] remove TargetPlayer
 
 # 1回目の雷
-    execute if entity @s[scores={6L.Tick=21}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ run function asset:mob/0237.lunatic_mage/tick/skill/thunder/2.thunder
+    execute if entity @s[scores={6L.Tick=21}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ run function asset:mob/0237.lunatic_mage/tick/skill/thunder/thunder
 
 # 2回目
-    execute if entity @s[scores={6L.Tick=26}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ positioned ^ ^ ^5 run function asset:mob/0237.lunatic_mage/tick/skill/thunder/2.thunder
+    execute if entity @s[scores={6L.Tick=26}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ positioned ^ ^ ^5 run function asset:mob/0237.lunatic_mage/tick/skill/thunder/thunder
 
 # 3回目
-    execute if entity @s[scores={6L.Tick=31}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ positioned ^ ^ ^10 run function asset:mob/0237.lunatic_mage/tick/skill/thunder/2.thunder
+    execute if entity @s[scores={6L.Tick=31}] at @e[type=area_effect_cloud,tag=6L.ThunderSummonPoint,distance=..50,limit=2] positioned ~ ~0.5 ~ positioned ^ ^ ^10 run function asset:mob/0237.lunatic_mage/tick/skill/thunder/thunder
 
 # リセット
     execute if entity @s[scores={6L.Tick=41..}] run function asset:mob/0237.lunatic_mage/tick/skill/reset
