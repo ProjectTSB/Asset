@@ -36,6 +36,8 @@
 # リセット
     scoreboard players reset $Interval
 
+# タグ消す
+    tag @a[tag=1075.Owner] remove 1075.Owner
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=300..}]
