@@ -17,3 +17,4 @@
     data modify storage api: Argument.ClearType set value "bad"
     #execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.IsSingle set value true
     function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset
