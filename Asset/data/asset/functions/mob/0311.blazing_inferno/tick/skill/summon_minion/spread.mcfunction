@@ -15,3 +15,6 @@
 
 # マーカーに対して召喚
     execute at @e[type=marker,tag=SpreadMarker,distance=..64,limit=1] positioned ~ ~2 ~ run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/summon
+
+# マーカーキル
+    kill @e[type=marker,tag=SpreadMarker]
