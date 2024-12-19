@@ -32,18 +32,8 @@
     tag @a[tag=Hit] remove Hit
     function api:damage/reset
 
-# オブジェクト召喚
-    data modify storage api: Argument.ID set value 2137
-    data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    function api:object/summon
-
-# 燃える！！
-    summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire",Properties:{age:"7"}},Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.3,0.0]}
-    summon falling_block ~1 ~ ~ {BlockState:{Name:"minecraft:fire",Properties:{age:"7"}},Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.4,0.0]}
-    summon falling_block ~-1 ~ ~ {BlockState:{Name:"minecraft:fire",Properties:{age:"7"}},Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.5,0.0]}
-    summon falling_block ~ ~ ~1 {BlockState:{Name:"minecraft:fire",Properties:{age:"7"}},Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.6,0.0]}
-    summon falling_block ~ ~ ~-1 {BlockState:{Name:"minecraft:fire",Properties:{age:"7"}},Time:1,DropItem:0b,HurtEntities:0b,Motion:[0.0,0.7,0.0]}
+# 下が地面であれば、座標にアラインして実行
+    execute at @s align xyz positioned ~-0.5 ~1 ~-0.5 if block ~ ~ ~ #lib:no_collision run function asset:object/2136.blazing_bomb/kill/place_aoe
 
 # 消失
     kill @s
