@@ -3,4 +3,4 @@
 
 #> Private
 # @within function asset:artifact/0122.lunatic_lay/**
-#declare tag Hit
+#declare tag 3E.Hit
