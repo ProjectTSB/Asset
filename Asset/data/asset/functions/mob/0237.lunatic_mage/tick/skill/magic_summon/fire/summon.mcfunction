@@ -1,8 +1,8 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire
+#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire/summon
 #
 # 火魔法を召喚します
 #
-# @within function asset:mob/0237.lunatic_mage/tick/skill/**
+# @within function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire/
 
 # 実行向きを取る なんでこれで取れるの？
     execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
