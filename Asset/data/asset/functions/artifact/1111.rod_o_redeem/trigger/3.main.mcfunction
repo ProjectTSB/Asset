@@ -29,5 +29,4 @@
     data modify storage api: Argument.ClearLv set value 2
     data modify storage api: Argument.ClearType set value "bad"
     execute as @a[distance=..2.5] run function api:entity/mob/effect/remove/from_level
-    data modify storage api: Argument.ClearCount set value 2
     function api:entity/mob/effect/reset
