@@ -9,16 +9,16 @@
     #declare score_holder $Random
 
 # 通常行動停止タグ付与
-    tag @s add RW.InAction
+    tag @s add 8N.InAction
 
 # スコアを0に戻す
     scoreboard players set @s General.Mob.Tick -10
 
 # 属性をランダムに選択
     # 要素がない場合、特定の行動を行ってリストを復活させる
-        execute if data storage asset:context this.Skill{List:[]} run tag @s add 8N.Skill.Summon
+    #    execute if data storage asset:context this.Skill{List:[]} run tag @s add 8N.Skill.Summon
     # 要素がない場合は再付与
-    #    execute if data storage asset:context this.Skill{List:[]} run data modify storage asset:context this.Skill.List set value [0,1,2]
+        execute if data storage asset:context this.Skill{List:[]} run data modify storage asset:context this.Skill.List set value [0,1,2]
     # ストレージの要素数を取得
         execute store result storage asset:context this.Skill.Count int 1 run data get storage asset:context this.Skill.List
     # 取得した要素数を使ってランダムに技を選ぶ
