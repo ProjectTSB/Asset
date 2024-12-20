@@ -42,5 +42,8 @@
 # 元のアニメに戻る
     execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neutral_fighting/tween {duration:10, to_frame:0}
 
+# 回転を再開
+    execute if score @s General.Mob.Tick matches 90 run tag @s add 8N.RailMove
+
 # リセット
-    execute if score @s General.Mob.Tick matches 60 run function asset:mob/0311.blazing_inferno/tick/base_move/reset
+    execute if score @s General.Mob.Tick matches 90 run function asset:mob/0311.blazing_inferno/tick/base_move/reset
