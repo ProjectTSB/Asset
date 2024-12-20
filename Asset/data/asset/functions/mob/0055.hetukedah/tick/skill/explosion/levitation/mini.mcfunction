@@ -9,3 +9,4 @@
     data modify storage api: Argument.Stack set value 16
     data modify storage api: Argument.Duration set value 5
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

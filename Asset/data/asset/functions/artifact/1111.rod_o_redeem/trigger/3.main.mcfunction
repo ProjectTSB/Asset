@@ -25,4 +25,8 @@
     playsound block.beacon.power_select player @a ~ ~ ~ 0.7 1.55 0
 
 # 周囲のプレイヤーのデバフを全解除
-    execute as @a[distance=..2.5] run function asset:artifact/1111.rod_o_redeem/trigger/4.clear_debuff
+# デバフ全解除
+    data modify storage api: Argument.ClearLv set value 2
+    data modify storage api: Argument.ClearType set value "bad"
+    execute as @a[distance=..2.5] run function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset

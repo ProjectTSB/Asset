@@ -28,7 +28,9 @@
     playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.6 1.2
 
 # Tagが付与されたプレイヤーにEffectを付与
-    execute as @a[tag=U1.EffectTarget] run function asset:artifact/1081.wandering_piece_of_dream/trigger/6.give_effect
+    data modify storage api: Argument.ID set value 231
+    execute as @a[tag=U1.EffectTarget] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     tag @a[tag=U1.EffectTarget] remove U1.EffectTarget
