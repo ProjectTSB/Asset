@@ -9,11 +9,17 @@
     #declare tag 8N.RailMove
     #declare tag 8N.InAction
     #declare tag 8N.PlayerFacing
-    #declare tag 8N.IntroFinish
+
+## 動作モード
+    #declare tag 8N.Moveset.Intro
+    #declare tag 8N.Moveset.BaseMove
+    #declare tag 8N.Moveset.Transition
+
 
 ## マーカーリスト
     #declare tag 8N.Marker.SpawnPoint
     #declare tag 8N.Marker.Target
+    #declare tag 8N.Marker.GroundSlamBeam
     #declare tag 8N.Marker.MinePlace
     #declare tag 8N.Marker.MinePlaceInit
 
@@ -192,5 +198,13 @@
 	#declare function animated_java:blazing_inferno/animations/attack_fall/set_frame
 	#declare function animated_java:blazing_inferno/animations/attack_fall/apply_frame
 	#declare function animated_java:blazing_inferno/animations/attack_fall/tween
+	#declare function animated_java:blazing_inferno/animations/damage/play
+	#declare function animated_java:blazing_inferno/animations/damage/stop
+	#declare function animated_java:blazing_inferno/animations/damage/pause
+	#declare function animated_java:blazing_inferno/animations/damage/resume
+	#declare function animated_java:blazing_inferno/animations/damage/next_frame
+	#declare function animated_java:blazing_inferno/animations/damage/set_frame
+	#declare function animated_java:blazing_inferno/animations/damage/apply_frame
+	#declare function animated_java:blazing_inferno/animations/damage/tween
     #declare tag 8N.ModelLocator.LeftHand
     #declare tag 8N.ModelLocator.RightHand

@@ -12,16 +12,13 @@
 
 # タグ削除
     tag @s remove 8N.InAction
-    tag @s remove 8N.Skill.TripleFireball
+    tag @s remove 8N.Skill.Fireball
     tag @s remove 8N.Skill.DashPunch
-    tag @s remove 8N.Skill.Firebomb
+    tag @s remove 8N.Skill.FireBomb
     tag @s remove 8N.Skill.SpreadMine
-    tag @s remove 8N.Skill.RushPunch
+    tag @s remove 8N.Skill.OraOra
     tag @s remove 8N.Skill.Summon
-
-# 円移動タグとこっち向くタグを付与
-    tag @s add 8N.RailMove
-    tag @s add 8N.PlayerFacing
+    tag @s remove 8N.Skill.GroundSlam
 
 # 回転スピードもとに戻す
     tag @s remove 8N.Turn.HighSpeed
