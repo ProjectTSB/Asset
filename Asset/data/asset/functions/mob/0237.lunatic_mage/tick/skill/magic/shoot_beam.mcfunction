@@ -16,7 +16,7 @@
     execute positioned ^ ^ ^45 run function asset:mob/0237.lunatic_mage/tick/skill/magic/vfx
 
 # 音で相手の位置がわかるように
-    execute as @a[distance=..50] at @s facing entity @e[type=husk,tag=this,distance=..52] eyes positioned ^ ^ ^3 run function asset:mob/0237.lunatic_mage/tick/skill/magic/sound
+    execute as @a[distance=..50] at @s facing entity @e[type=zombie,tag=this,distance=..52] eyes positioned ^ ^ ^3 run function asset:mob/0237.lunatic_mage/tick/skill/magic/sound
 
 # 再帰
     function asset:mob/0237.lunatic_mage/tick/skill/magic/beam_recursive
