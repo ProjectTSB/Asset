@@ -10,3 +10,4 @@
     tag @s add Enemy.Boss
     tag @s add AlwaysInvisible
     tag @s add AllowProcessingCommonTag
+    # effect give @s instant_health infinite 0 true

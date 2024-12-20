@@ -18,6 +18,13 @@
         execute if score @s BE.EventTimer matches 1 run tag @a[tag=BE.HateTarget] add BE.MainTarget
         execute if score @s BE.EventTimer matches 1..34 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
         execute if score @s BE.EventTimer matches 35 run tag @a[tag=BE.MainTarget] remove BE.MainTarget
+    # 追撃
+        execute if score @s BE.EventTimer matches 72 run function asset:mob/0410.heiloang/tick/event/plamet/set_attack_position_pursuit_0
+        execute if score @s BE.EventTimer matches 92 run function asset:mob/0410.heiloang/tick/event/plamet/set_attack_position_pursuit_1
+        execute if score @s BE.EventTimer matches 115 run function asset:mob/0410.heiloang/tick/event/plamet/set_attack_position_pursuit_2
+        execute if score @s BE.EventTimer matches 83 at @e[type=area_effect_cloud,tag=BE.Temp.Plamet.SummonPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/plamet/attack_pursuit
+        execute if score @s BE.EventTimer matches 113 at @e[type=area_effect_cloud,tag=BE.Temp.Plamet.SummonPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/plamet/attack_pursuit
+        execute if score @s BE.EventTimer matches 143 at @e[type=area_effect_cloud,tag=BE.Temp.Plamet.SummonPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/plamet/attack_pursuit
 # テンペストダイブ
     # アニメーション再生
         execute if score @s BE.EventTimer matches 121 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_2_plamet_dive
