@@ -15,7 +15,7 @@
     scoreboard players operation $Interval Temporary = @s 8N.PassiveLaser
 
 # 数Tickおきに発動する
-    scoreboard players operation $Interval Temporary %= $19 Const
+    scoreboard players operation $Interval Temporary %= $29 Const
     execute if score $Interval Temporary matches 0 run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/summon
     execute if score $Interval Temporary matches 0 run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/summon
     execute if score $Interval Temporary matches 0 run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/summon
