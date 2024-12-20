@@ -9,11 +9,14 @@
 #declare tag SpreadMarker
 
 
-# ちょ～っとずつ進む
-    execute rotated ~ 0 run tp @s ^ ^ ^0.5
+# ちょ～っとずつ進む、ただしプレイヤーを捕捉していない場合
+    execute at @s positioned ^ ^ ^1.5 unless entity @p[distance=..1.5] at @s rotated ~ 0 run tp @s ^ ^ ^0.5
 
 # 常時壁破壊
     function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/break_block
+
+# 眼の前に壊せないブロックがあったら、そこでやめる
+    execute at @s if block ^ ^ ^1 #lib:unbreakable run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
 
 # パンチのダメージ判定
     # ダメージ設定
@@ -42,5 +45,8 @@
     # 拡散マーカー消す
         kill @e[type=marker,tag=SpreadMarker,distance=..30]
 
-# ラッシュ終了
-    execute if score @s General.Mob.Tick matches 40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
+# 攻撃終了
+    # ハード未満
+        execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
+    # ハード以上
+        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end

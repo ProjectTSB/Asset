@@ -9,3 +9,6 @@
 
 # 攻撃判定と演出を目の前に出す
     execute anchored eyes positioned ^ ^-1 ^3 rotated ~ 0 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/finish
+
+# スコアを固定
+    scoreboard players set @s General.Mob.Tick 40

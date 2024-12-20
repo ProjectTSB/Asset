@@ -13,12 +13,11 @@
 # ラッシュパンチのアニメ再生
     execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_oraora_loop/play
 
-# 眼の前に壊せないブロックあったらそこでやめる
-    execute if score @s General.Mob.Tick matches 20..40 at @s if block ^ ^ ^1 #lib:unbreakable run scoreboard players set @s General.Mob.Tick 40
-    execute if score @s General.Mob.Tick matches 20..40 at @s if block ^ ^ ^2 #lib:unbreakable run scoreboard players set @s General.Mob.Tick 40
-
 # 攻撃判定
-    execute if score @s General.Mob.Tick matches 20..40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
+    # ハード未満
+        execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20..30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
+    # ハード以上
+        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20..40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
 
 # 待機アニメを再生
     execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neutral_fighting/play
