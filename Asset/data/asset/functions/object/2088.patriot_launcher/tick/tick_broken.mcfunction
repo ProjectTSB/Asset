@@ -12,7 +12,7 @@
     #declare score_holder $MaxRepairTime
 
 # 修理値を決定
-execute store result score $RepairPlayer Temporary if entity @a[predicate=lib:is_sneaking,distance=..3]
+execute store result score $RepairPlayer Temporary if entity @a[predicate=lib:is_sneaking,distance=..8]
 execute if score $RepairPlayer Temporary matches 0 run scoreboard players set $RepairValue Temporary 128
 execute if score $RepairPlayer Temporary matches 1 run scoreboard players set $RepairValue Temporary 256
 execute if score $RepairPlayer Temporary matches 2 run scoreboard players set $RepairValue Temporary 320
@@ -42,6 +42,7 @@ execute if score $RepairTime Temporary matches ..0 run data modify storage asset
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsActive set value 1b
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.MissileCooltime set from storage asset:context this.MaxMissileCooltime
 execute if score $RepairTime Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:white_concrete"
+execute if score $RepairTime Temporary matches ..0 on passengers run tag @s remove PatriotLauncher.IsBroken
 execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.DisplayName] run data modify entity @s text set value '{"color":"#ffffff","text":"対空砲"}'
 execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.RepairGauge] run data modify entity @s text set value '{"color":"#ffffff","text":""}'
 
