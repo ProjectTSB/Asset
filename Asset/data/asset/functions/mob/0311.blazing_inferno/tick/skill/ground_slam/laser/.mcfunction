@@ -1,4 +1,4 @@
-#> asset:mob/0311.blazing_inferno/tick/skill/ground_slam/laser
+#> asset:mob/0311.blazing_inferno/tick/skill/ground_slam/laser/
 #
 # レーザー追撃
 #

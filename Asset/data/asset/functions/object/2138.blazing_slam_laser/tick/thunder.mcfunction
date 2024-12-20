@@ -4,9 +4,13 @@
 #
 # @within function asset:object/2138.blazing_slam_laser/tick/
 
+#>ヒット検知
+# @private
+#declare tag Hit
+
 # パーティクル
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.1 10 force @a[distance=..32]
-    particle minecraft:lava ~ ~ ~ 0 0 0 0.1 10 force @a[distance=..32]
+    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.1 5 force @a[distance=..32]
+    particle minecraft:lava ~ ~ ~ 0 0 0 0.1 5 force @a[distance=..32]
     particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @a[distance=..32]
     particle minecraft:flame ~ ~ ~ 0.0 1 0.0 0.17 0
     particle minecraft:flame ~0.3 ~0.1 ~-0.1 0.0 1 0.0 0.15 0
@@ -31,9 +35,13 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
         data modify storage api: Argument.ElementType set value "Fire"
-    # ダメージ
-        data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
-        function api:damage/modifier_manual
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+    # 円形の範囲、または上方向に当たったらダメージ
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
+    execute positioned ~-1 ~-1 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=10,dz=1] add Hit
+    tag @a[distance=..2] add Hit
+    execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable] run function api:damage/
+
 # リセット
+    tag @a[tag=Hit] remove Hit
     function api:damage/reset
