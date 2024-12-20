@@ -48,5 +48,5 @@
     #declare function animated_java:louvert/animations/15_2_final_spell_iai_start/play
     #declare function animated_java:louvert/animations/15_3_final_spell_iai_finish/play
     #declare function animated_java:louvert/animations/15_4_final_spell_fire/play
-    #declare function animated_java:louvert/animations/pause_al
+    #declare function animated_java:louvert/animations/pause_all
     #declare function animated_java:louvert/remove/all
