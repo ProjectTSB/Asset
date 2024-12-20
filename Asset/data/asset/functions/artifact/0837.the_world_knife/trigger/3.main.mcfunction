@@ -22,4 +22,4 @@
 # 弾を召喚 (ターゲットがいない場合)
     execute unless entity @e[type=#lib:living,tag=N9.Target,distance=..5] anchored eyes positioned ^ ^ ^0.25 positioned ~ ~-0.2 ~ run function asset:artifact/0837.the_world_knife/trigger/shot
 # 弾を召喚（ターゲットがいる場合）
-    execute as @e[type=#lib:living,tag=N9.Target,distance=..5,limit=1] at @s run function asset:artifact/0837.the_world_knife/trigger/the_world/
+    execute as @e[type=#lib:living,tag=N9.Target,distance=..5] at @s run function asset:artifact/0837.the_world_knife/trigger/the_world/
