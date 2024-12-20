@@ -4,20 +4,21 @@
 #
 # @within function asset:mob/0311.blazing_inferno/hurt/
 
+# フェイズ移行動作を実行
+    tag @s add 8N.Moveset.Transition
+    tag @s remove 8N.Moveset.BaseMove
 
-# ポーズリセット
-    execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/hurt/reset_animation
-
-# パーティクル
-    particle minecraft:flame ~ ~1 ~ 0 0 0 0.3 50
-    particle minecraft:lava ~ ~1 ~ 0 0 0 0.3 20
+# 無敵になる
+    data modify entity @s Invulnerable set value 1b
+    tag @s add Uninterferable
 
 # サウンド
-    playsound minecraft:entity.blaze.ambient hostile @a ~ ~ ~ 2 1.5
-    playsound minecraft:block.respawn_anchor.ambient hostile @a ~ ~ ~ 2 2
+    playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1.5 0.5
+    playsound minecraft:entity.zoglin.attack hostile @a ~ ~ ~ 1.5 0.5
+    playsound minecraft:entity.blaze.ambient hostile @a ~ ~ ~ 1 0.5
 
 # 全動作強制リセット
     function asset:mob/0311.blazing_inferno/tick/base_move/reset
 
-# 行動カウントリセット
-    scoreboard players reset @s 8N.MoveCount
+# スコアリセット
+    scoreboard players set @s General.Mob.Tick -1
