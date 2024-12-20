@@ -13,9 +13,6 @@
 # ファイアボム
     execute if entity @e[tag=8N.Skill.FireBomb] run function asset:mob/0311.blazing_inferno/tick/skill/firebomb/tick
 
-# 地雷設置
-    execute if entity @e[tag=8N.Skill.SpreadMine] run function asset:mob/0311.blazing_inferno/tick/skill/spread_mine/tick
-
 # ラッシュパンチ
     execute if entity @e[tag=8N.Skill.OraOra] run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/tick
 
