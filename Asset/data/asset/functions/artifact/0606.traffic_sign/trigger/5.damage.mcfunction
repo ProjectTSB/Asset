@@ -9,7 +9,7 @@
     #declare score_holder $BaseSpeed
     #declare score_holder $Speed
 
-# Damage = 280 * (|(速度 / ベース速度)% - 100%| + 100%)
+# Damage = (250 ~ 350) * (|(速度 / ベース速度)% - 100%| * 130% + 100%)
     execute store result score $Speed Temporary run attribute @s generic.movement_speed get 10000
     execute store result score $BaseSpeed Temporary run attribute @s generic.movement_speed base get 10
     execute if score $BaseSpeed Temporary matches 0 run scoreboard players set $Speed Temporary 1000
