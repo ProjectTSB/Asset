@@ -31,6 +31,7 @@
 
 # 付与する
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 0~2の乱数を取得する
     execute store result score $Random Temporary run function lib:random/
@@ -43,6 +44,7 @@
 
 # 付与する
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     data remove storage asset:temp Random
