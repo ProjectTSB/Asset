@@ -17,3 +17,9 @@
 #    function asset:object/2083.brimstone/**
 #    function asset:object/2084.snake_eye/**
     #declare tag PatriotLauncher.HitMissile
+
+#> is_broken
+# @within
+#    function asset:object/2088.patriot_launcher/**
+#    function asset:mob/0213.terrible_sonic_bomber/**
+    #declare tag PatriotLauncher.IsBroken
