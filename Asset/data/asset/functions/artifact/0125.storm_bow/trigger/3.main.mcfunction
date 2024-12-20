@@ -20,16 +20,16 @@
 
 # 矢を降らす
     execute as 0-0-0-0-0 at @s run function asset:artifact/0125.storm_bow/trigger/random_rotate/m {Mode:"",YawMin:0,YawMax:359,PitchMin:-88,PitchMax:-73}
-    execute as @e[type=#lib:living,type=!player,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
 # 2回目
     execute as 0-0-0-0-0 at @s run function asset:artifact/0125.storm_bow/trigger/random_rotate/m {Mode:"",YawMin:0,YawMax:359,PitchMin:-88,PitchMax:-73}
-    execute as @e[type=#lib:living,type=!player,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
 # 3回目
     execute as 0-0-0-0-0 at @s run function asset:artifact/0125.storm_bow/trigger/random_rotate/m {Mode:"",YawMin:0,YawMax:359,PitchMin:-88,PitchMax:-73}
-    execute as @e[type=#lib:living,type=!player,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
 # 4回目
     execute as 0-0-0-0-0 at @s run function asset:artifact/0125.storm_bow/trigger/random_rotate/m {Mode:"",YawMin:0,YawMax:359,PitchMin:-88,PitchMax:-73}
-    execute as @e[type=#lib:living,type=!player,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
 # 5回目
     execute as 0-0-0-0-0 at @s run function asset:artifact/0125.storm_bow/trigger/random_rotate/m {Mode:"",YawMin:0,YawMax:359,PitchMin:-88,PitchMax:-73}
-    execute as @e[type=#lib:living,type=!player,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10,sort=random,limit=1] at @s rotated as 0-0-0-0-0 positioned ^ ^ ^16 run function asset:artifact/0125.storm_bow/trigger/summon_arrow.m
