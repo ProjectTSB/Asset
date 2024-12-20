@@ -16,7 +16,7 @@
     # 補正function
         function lib:heal/modifier
     # 実行（既に4回回復した場合は実行しない）
-        execute if entity @s[scores={48.CatTime=21..24}] run function lib:heal/
+        execute if entity @s[scores={48.CatTime=19..24}] run function lib:heal/
     # リセット
         function lib:heal/reset
 
