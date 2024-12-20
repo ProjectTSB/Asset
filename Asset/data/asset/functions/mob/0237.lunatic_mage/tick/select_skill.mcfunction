@@ -8,11 +8,11 @@
 # @private
     #declare tag 6L.AlreadyElement
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $8 Const
-
+# 乱数によるスキル選択
+    data modify storage lib: Args.key set value "237.Skill"
+    data modify storage lib: Args.max set value 8
+    data modify storage lib: Args.scarcity_history_size set value 3
+    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 # デバッグ用
     #scoreboard players set $Random Temporary 7
 
