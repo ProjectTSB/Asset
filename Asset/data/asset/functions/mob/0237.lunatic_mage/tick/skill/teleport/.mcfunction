@@ -13,7 +13,7 @@
 # パーティクル
     function asset:mob/0237.lunatic_mage/tick/skill/teleport/vfx
 
-# 実行座標を中心として-x方向に1、+x方向に1、-y方向に0.2、+y方向に0.8、-z方向に1、+z方向に1の立方体内のランダムな位置にmarkerを移動
+# 実行座標を中心として拡散
     data modify storage lib: Argument.Bounds set value [[9d,9d],[0.0d,0.0d],[9d,9d]]
     execute at @e[type=marker,tag=6L.SpawnPoint,distance=..100,sort=nearest,limit=1] run function lib:spread_entity/
 
