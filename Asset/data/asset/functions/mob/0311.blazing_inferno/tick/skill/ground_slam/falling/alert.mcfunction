@@ -12,7 +12,7 @@
         data modify storage api: Argument.ID set value 2063
     # データ設定
         data modify storage api: Argument.FieldOverride.Color set value 16737792
-        data modify storage api: Argument.FieldOverride.Scale set value [5f,5f,0.01f]
-        data modify storage api: Argument.FieldOverride.Tick set value 20
+        data modify storage api: Argument.FieldOverride.Scale set value [10f,10f,0.01f]
+        data modify storage api: Argument.FieldOverride.Tick set value 30
     # 召喚
         function api:object/summon

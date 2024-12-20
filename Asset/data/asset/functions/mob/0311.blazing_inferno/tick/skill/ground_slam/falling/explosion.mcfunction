@@ -8,7 +8,7 @@
     execute at @e[type=marker,tag=8N.ModelLocator.RightHand,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/falling/knuckle_vfx
 
 # パーティクル
-    particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[distance=..32]
+    particle minecraft:explosion ~ ~ ~ 2.5 1 2.5 1 20 force @a[distance=..32]
     particle minecraft:lava ~ ~ ~ 1 1 1 0 50 force @a[distance=..32]
     particle minecraft:flame ~ ~ ~ 0.5 0.5 0.5 0.2 50 force @a[distance=..32]
 
@@ -26,7 +26,7 @@
     function api:damage/modifier
 
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
 
 # リセット
     function api:damage/reset
