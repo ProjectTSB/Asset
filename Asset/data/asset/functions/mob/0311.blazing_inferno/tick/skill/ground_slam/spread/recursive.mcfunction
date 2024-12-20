@@ -12,7 +12,7 @@
 
 # 拡散
     # ID指定
-        data modify storage api: Argument.ID set value 2138
+        data modify storage api: Argument.ID set value 2147
     # データ設定
         execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     # 拡散
