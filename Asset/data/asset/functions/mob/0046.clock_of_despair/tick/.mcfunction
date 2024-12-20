@@ -29,7 +29,7 @@
 # 40tick(2秒)毎の高高度ペナルティ
     scoreboard players operation $IntervalTime Temporary = @s 1A.LifeTime
     scoreboard players operation $IntervalTime Temporary %= $40 Const
-    execute if score $IntervalTime Temporary matches 0 positioned ~-15 ~3.2 ~-15 at @a[dx=29,dy=25,dz=29] positioned ~ ~1 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/penalty_thunder/summon
+    # execute if score $IntervalTime Temporary matches 0 positioned ~-15 ~3.2 ~-15 at @a[dx=29,dy=25,dz=29] positioned ~ ~1 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/penalty_thunder/summon
     scoreboard players reset $IntervalTime Temporary
 # 200tick(10秒)毎のSE
     scoreboard players operation $IntervalTime Temporary = @s 1A.LifeTime
@@ -37,6 +37,8 @@
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.6 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.7 1
     scoreboard players reset $IntervalTime Temporary
 
 
