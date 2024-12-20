@@ -5,8 +5,10 @@
 # @within function asset:mob/alias/311/death
 
 # サウンド
-    playsound minecraft:entity.item.break hostile @a ~ ~ ~ 1 0.5
-    playsound minecraft:block.anvil.place hostile @a ~ ~ ~ 1 1.5
+    playsound minecraft:entity.item.break hostile @a ~ ~ ~ 2 0.5
+    playsound minecraft:entity.item.break hostile @a ~ ~ ~ 2 0.7
+    playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 2 0.5
+    playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 2 0.7
 
 # 付近のしもべをキル
     kill @e[type=blaze,scores={MobID=313},distance=..64]
@@ -22,7 +24,7 @@
 
 # 撃破演出用オブジェクトを召喚
     data modify storage api: Argument.ID set value 2148
-    function api:object/summon
+    execute facing entity @p eyes run function api:object/summon
 
 # Super!
     function asset:mob/super.death
