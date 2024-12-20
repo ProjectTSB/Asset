@@ -7,7 +7,6 @@
 #> Private
 # @private
     #declare score_holder $Random
-    #declare tag 57.Already
 
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
