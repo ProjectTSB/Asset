@@ -17,7 +17,7 @@
     execute as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_oraora_windup/tween {duration:3,to_frame:0}
 
 # テレポート
-    execute at @r[distance=..30] rotated ~ 0 run tp @s ^ ^0.5 ^2 ~ ~
+    execute at @r[distance=..64] rotated ~ 0 run tp @s ^ ^0.5 ^2 ~ ~
 
 # 最寄りのプレイヤーに向く
     execute at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
