@@ -14,10 +14,10 @@
     tag @s remove 8N.Skill.Fireball
     tag @s remove 8N.Skill.DashPunch
     tag @s remove 8N.Skill.FireBomb
-    tag @s remove 8N.Skill.SpreadMine
     tag @s remove 8N.Skill.OraOra
     tag @s remove 8N.Skill.Summon
     tag @s remove 8N.Skill.GroundSlam
 
 # 回転スピードもとに戻す
     tag @s remove 8N.Turn.HighSpeed
+
