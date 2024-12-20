@@ -1,8 +1,8 @@
-#> asset:object/2138.blazing_slam_laser/tick/thunder
+#> asset:object/2147.blazing_slam_laser/tick/thunder
 #
 #
 #
-# @within function asset:object/2138.blazing_slam_laser/tick/
+# @within function asset:object/2147.blazing_slam_laser/tick/
 
 #>ヒット検知
 # @private
@@ -29,7 +29,7 @@
     playsound entity.lightning_bolt.impact hostile @p ~ ~ ~ 0.3 0 0
 
 # 変形
-    function asset:object/2138.blazing_slam_laser/tick/transform/1
+    function asset:object/2147.blazing_slam_laser/tick/transform/1
 
 # ダメージ設定
     # 与えるダメージ

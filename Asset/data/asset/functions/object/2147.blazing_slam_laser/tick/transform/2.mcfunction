@@ -1,8 +1,8 @@
-#> asset:object/2138.blazing_slam_laser/tick/transform/2
+#> asset:object/2147.blazing_slam_laser/tick/transform/2
 #
 # 縮んでいく
 #
-# @within function asset:object/2138.blazing_slam_laser/tick/
+# @within function asset:object/2147.blazing_slam_laser/tick/
 
 data modify entity @s start_interpolation set value 0
 data modify entity @s interpolation_duration set value 2

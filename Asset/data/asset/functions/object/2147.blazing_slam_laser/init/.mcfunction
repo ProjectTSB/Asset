@@ -1,8 +1,8 @@
-#> asset:object/2138.blazing_slam_laser/init/
+#> asset:object/2147.blazing_slam_laser/init/
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2138/init
+# @within asset:object/alias/2147/init
 
 # 攻撃予告
     data modify storage api: Argument.FieldOverride.Color set value 16737792

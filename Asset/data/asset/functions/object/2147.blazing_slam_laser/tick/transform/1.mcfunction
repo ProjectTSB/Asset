@@ -1,8 +1,8 @@
-#> asset:object/2138.blazing_slam_laser/tick/transform/1
+#> asset:object/2147.blazing_slam_laser/tick/transform/1
 #
 # 出現して、ちょっと大きく膨らむ
 #
-# @within function asset:object/2138.blazing_slam_laser/tick/thunder
+# @within function asset:object/2147.blazing_slam_laser/tick/thunder
 
 data modify entity @s start_interpolation set value 0
 data modify entity @s interpolation_duration set value 1
