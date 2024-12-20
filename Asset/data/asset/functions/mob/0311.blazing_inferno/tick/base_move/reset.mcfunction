@@ -8,7 +8,6 @@
 
 # スコアリセット
     scoreboard players reset @s General.Mob.Tick
-    scoreboard players reset @s[tag=8N.Skill.Summon] 8N.MoveCount
 
 # タグ削除
     tag @s remove 8N.InAction

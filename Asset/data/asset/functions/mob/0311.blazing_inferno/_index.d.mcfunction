@@ -5,7 +5,6 @@
 # @within function asset:mob/0311.blazing_inferno/**
     #declare tag 8N.ModelRoot
     #declare tag 8N.ModelRoot.Target
-    #declare tag 8N.DeathEvent
     #declare tag 8N.RailMove
     #declare tag 8N.InAction
     #declare tag 8N.PlayerFacing
@@ -15,19 +14,15 @@
     #declare tag 8N.Moveset.BaseMove
     #declare tag 8N.Moveset.Transition
 
-
 ## マーカーリスト
     #declare tag 8N.Marker.SpawnPoint
     #declare tag 8N.Marker.Target
     #declare tag 8N.Marker.GroundSlamBeam
-    #declare tag 8N.Marker.MinePlace
-    #declare tag 8N.Marker.MinePlaceInit
 
 ## スキルリスト
     #declare tag 8N.Skill.Fireball
     #declare tag 8N.Skill.DashPunch
     #declare tag 8N.Skill.FireBomb
-    #declare tag 8N.Skill.SpreadMine
     #declare tag 8N.Skill.OraOra
     #declare tag 8N.Skill.Summon
     #declare tag 8N.Skill.GroundSlam
