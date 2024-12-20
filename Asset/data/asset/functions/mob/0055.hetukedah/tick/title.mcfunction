@@ -5,9 +5,10 @@
 # @within function asset:mob/0055.hetukedah/tick/
 
 # タイトル
-    title @a[distance=..60] title {"text":""}
-    title @a[distance=..60] subtitle {"text":"\uE016","font":"screen_effect"}
-    title @a[distance=..64] times 5 30 5
+# TODO: またあとでここに戻ってこよう。CBTが終わったら全ボスモブにイントロを付けるんだ。
+#    title @a[distance=..60] title {"text":""}
+#    title @a[distance=..60] subtitle {"text":"\uE016","font":"screen_effect"}
+#    title @a[distance=..64] times 5 30 5
 
 # サウンド
     execute at @a[distance=..60] run playsound minecraft:item.trident.return hostile @p ~ ~ ~ 3 0.6
