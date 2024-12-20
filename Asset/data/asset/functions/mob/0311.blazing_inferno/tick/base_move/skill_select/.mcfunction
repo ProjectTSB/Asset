@@ -23,5 +23,3 @@
         execute unless data storage asset:context this.Skill{Count:1} run function asset:mob/0311.blazing_inferno/tick/base_move/skill_select/roll.m with storage asset:context this.Skill
     # 要素数１個しかないとき
         execute if data storage asset:context this.Skill{Count:1} run function asset:mob/0311.blazing_inferno/tick/base_move/skill_select/only_one_skill
-    # 要素がない場合、再付与
-        execute if data storage asset:context this.Skill{List:[]} run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
