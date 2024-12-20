@@ -19,11 +19,13 @@
 # Tick加算
     scoreboard players add @s General.Mob.Tick 1
 
-# イントロをまだやってないなら、イントロをやる
-    execute unless entity @s[tag=8N.IntroFinish] run function asset:mob/0311.blazing_inferno/tick/intro/
-
-# イントロが終了しているなら、基本動作を実行
-    execute if entity @s[tag=8N.IntroFinish] run function asset:mob/0311.blazing_inferno/tick/base_move/
+# 動作
+    # イントロ
+        execute if entity @s[tag=8N.Moveset.Intro] run function asset:mob/0311.blazing_inferno/tick/intro/
+    # 通常動作
+        execute if entity @s[tag=8N.Moveset.BaseMove] run function asset:mob/0311.blazing_inferno/tick/base_move/
+    # フェイズ移行
+        execute if entity @s[tag=8N.Moveset.Transition] run function asset:mob/0311.blazing_inferno/tick/phase_transition/
 
 # リセット
     tag @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] remove 8N.ModelRoot.Target
