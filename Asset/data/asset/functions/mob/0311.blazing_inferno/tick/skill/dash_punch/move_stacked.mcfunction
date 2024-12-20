@@ -14,4 +14,4 @@
     execute at @s[tag=8N.Health.50Per] run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/move
 
 # 燃やす
-    summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire",Properties:{age:"7"},Time:1,DropItem:1b,HurtEntities:0b,Motion:[0.0,0.3,0.0]}}
+    summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire",Properties:{age:"5"}},Time:1,DropItem:0b,CancelDrop:1b,HurtEntities:0b,Motion:[0.0,0.3,0.0]}
