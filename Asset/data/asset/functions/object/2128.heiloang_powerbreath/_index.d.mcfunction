@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2128.heiloang_powerbreath/**
-    #declare
+    #declare tag 2128.Hit

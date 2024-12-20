@@ -47,6 +47,7 @@
     execute positioned ^ ^-5 ^-45 run function lib:rotatable_dxyz/m with storage lib: args
     tag @a[tag=DXYZ] add 2111.Hit
     tag @a[tag=DXYZ] remove DXYZ
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"

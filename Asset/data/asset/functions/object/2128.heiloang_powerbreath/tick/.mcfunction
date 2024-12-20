@@ -12,8 +12,8 @@
     execute if entity @s[scores={General.Object.Tick=8}] run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[30f,50f,30f]}}
     execute if entity @s[scores={General.Object.Tick=15}] run data merge entity @s {start_interpolation:0,interpolation_duration:8,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.3f,0f],scale:[0f,60f,0f]}}
 
-# 演出
-    tp @s ~ ~ ~ ~43 ~
+# 攻撃
+    tp @s ~ ~ ~ ~45 ~
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2128.heiloang_powerbreath/tick/damage
     execute if entity @s[scores={General.Object.Tick=3..15}] run particle explosion ~ ~0.5 ~ 2.5 0.3 2.5 0 2
     execute if entity @s[scores={General.Object.Tick=3..15}] run particle explosion ~ ~10 ~ 2.5 5 2.5 0 3
@@ -28,6 +28,13 @@
     execute if entity @s[scores={General.Object.Tick=8}] positioned ~ ~5.5 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:18}
     execute if entity @s[scores={General.Object.Tick=9}] positioned ~ ~7 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:24}
     execute if entity @s[scores={General.Object.Tick=10}] positioned ~ ~9 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:30}
+
+# 追撃
+    execute if entity @s[scores={General.Object.Tick=5}] run function asset:object/2128.heiloang_powerbreath/tick/prediction
+    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/2128.heiloang_powerbreath/tick/damage_pursuit
+    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:5}
+    execute if entity @s[scores={General.Object.Tick=22}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:10}
+    execute if entity @s[scores={General.Object.Tick=24}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:15}
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=24..}]
