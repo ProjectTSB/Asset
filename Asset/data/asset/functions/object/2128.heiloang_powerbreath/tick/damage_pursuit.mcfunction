@@ -9,26 +9,6 @@
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 20
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute rotated ~ ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-    data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 10
-    data modify storage lib: args.dz set value 20
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute rotated ~90 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-    data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 10
-    data modify storage lib: args.dz set value 20
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute rotated ~180 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-    data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 10
-    data modify storage lib: args.dz set value 20
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute rotated ~270 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-    data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 10
-    data modify storage lib: args.dz set value 20
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
     execute rotated ~45 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
     data modify storage lib: args.dx set value 2
     data modify storage lib: args.dy set value 10
@@ -45,6 +25,28 @@
     data modify storage lib: args.dz set value 20
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
     execute rotated ~315 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    # イージーでは4Wayのため、ヒットタグを消す
+        execute if predicate api:global_vars/difficulty/easy run tag @a[tag=DXYZ] remove DXYZ
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 20
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute rotated ~ ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 20
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute rotated ~90 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 20
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute rotated ~180 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 20
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute rotated ~270 ~ positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
     tag @a[tag=DXYZ] add 2128.Hit
     tag @a[tag=DXYZ] remove DXYZ
 
