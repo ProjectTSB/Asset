@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ブレイジング・インフェルノ","color":"#FF6F00","bold":false,"italic":false}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"インフェルノは体だけでなく気持ちも大きい。","color":"white"}','{"text":"強力なパンチで、頑強なブロックでさえ豆腐のように砕いてしまうぞ！","color":"white"}','{"text":"火の力を素手で丸めてファイアボールにすることだってできるんだ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -40,7 +42,7 @@
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
-    # data modify storage asset:mob KnockBackResist set value
+    data modify storage asset:mob KnockBackResist set value 1.0d
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1
@@ -53,4 +55,4 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
 # フィールド
-    data modify storage asset:mob Field.Skill.List set value [0,1,2]
+    data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
