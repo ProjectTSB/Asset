@@ -24,4 +24,4 @@
     function api:damage/reset
 
 # Debuff:trueならデバフを付与
-    execute if data storage asset:context this{Debuff:true} as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function asset:object/2047.prominence_magic/tick/debuff
+    execute if data storage asset:context this{Debuff:true} run function asset:object/2047.prominence_magic/tick/debuff

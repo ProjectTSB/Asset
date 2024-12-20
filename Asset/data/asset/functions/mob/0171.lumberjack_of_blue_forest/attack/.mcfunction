@@ -31,3 +31,4 @@
     data modify storage api: Argument.ID set value 604
     execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
     execute as @p[tag=Victim,distance=..6] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

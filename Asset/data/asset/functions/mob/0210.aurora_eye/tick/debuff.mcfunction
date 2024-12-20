@@ -18,6 +18,7 @@
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $Difficulty Temporary
     data modify storage api: Argument.Duration set value 120
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     scoreboard players reset $Difficulty Temporary
