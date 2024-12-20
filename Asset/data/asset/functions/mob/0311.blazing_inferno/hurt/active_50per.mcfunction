@@ -2,7 +2,9 @@
 #
 # 本気出すときのイベント
 #
-# @within function asset:mob/0311.blazing_inferno/hurt/
+# @within function
+#   asset:mob/0311.blazing_inferno/hurt/
+#   asset:mob/0311.blazing_inferno/hurt/debug_health_50
 
 # フェイズ移行動作を実行
     tag @s add 8N.Moveset.Transition
