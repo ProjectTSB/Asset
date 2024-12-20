@@ -4,6 +4,6 @@
 #
 # @within asset:object/alias/2038/hit_entity
 
-# 暗闇エフェクト付与
+# 溺れるエフェクト付与
     data modify storage api: Argument set value {ID:618}
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:entity/mob/effect/give
