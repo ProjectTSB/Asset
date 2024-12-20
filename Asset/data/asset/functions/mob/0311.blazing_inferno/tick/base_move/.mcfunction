@@ -17,8 +17,9 @@
     execute if entity @s[tag=8N.Health.50Per,tag=!Uninterferable] run particle trial_spawner_detection ~ ~1.5 ~ 0.3 0.5 0.3 0 2 force @a[distance=..32]
     execute if entity @s[tag=8N.Health.50Per,tag=!Uninterferable] if predicate lib:random_pass_per/25 run particle flame ~ ~1.5 ~ 0.3 0.5 0.3 0.01 1 force @a[distance=..32]
 
-# ハードモード時、本気になると、あろうことかレーザー攻撃が定期的にオートで発動する
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=8N.Health.50Per] run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/
+# ハードモード時、本気になると、あろうことかレーザー攻撃が定期的にオートで発動する。
+# ただし、見栄えと画面のごちゃつきを考慮して、同じレーザーが降ってくるスラム攻撃のときは止まる
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=8N.Health.50Per,tag=!8N.Skill.GroundSlam] run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/
 
 # マーカーを中心に回る
     # 本気前
@@ -28,5 +29,5 @@
         execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~0.7 0 run tp @s ^ ^1 ^15
         execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-0.7 0 run tp @s ^ ^1 ^15
     # ハイスピード回転
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Turn.HighSpeed,tag=!8N.Health.50Per] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~2 0 run tp @s ^ ^1 ^15
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Turn.HighSpeed,tag=!8N.Health.50Per] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-2 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~2 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-2 0 run tp @s ^ ^1 ^15
