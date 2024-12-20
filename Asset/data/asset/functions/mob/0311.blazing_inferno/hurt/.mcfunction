@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/311/hurt
 
 # サウンド
-    playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1.5 1
+    playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1.5 0.7
     playsound minecraft:block.basalt.break hostile @a ~ ~ ~ 1.5 0.6
     playsound minecraft:block.deepslate.break hostile @a ~ ~ ~ 1.5 0.5
 
