@@ -11,6 +11,6 @@
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 3 0.7
 
 # 発射
-    execute positioned ^-0.25 ^-0.25 ^ summon marker run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire
-    execute rotated ~20 ~ positioned ^-0.25 ^-0.25 ^ summon marker run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire
-    execute rotated ~-20 ~ positioned ^-0.25 ^-0.25 ^ summon marker run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire
+    execute positioned ^-0.25 ^-0.25 ^ run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire/
+    execute rotated ~20 ~ positioned ^-0.25 ^-0.25 ^ run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire/
+    execute rotated ~-20 ~ positioned ^-0.25 ^-0.25 ^ run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/fire/
