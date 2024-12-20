@@ -10,5 +10,5 @@
 # モデル召喚
     execute at @s rotated ~ 0 run function animated_java:blazing_inferno/summon {args: {animation: 'intro', start_animation: true}}
 
-# スポーン地点にマーカー作る
-    summon marker ~ ~ ~ {Tags:["8N.Marker.SpawnPoint"]}
+# スポーン地点にマーカー作る、ただし（無いとは思うけど）すでに存在していない場合
+    execute unless entity @e[type=marker,tag=8N.Marker.SpawnPoint] run summon marker ~ ~ ~ {Tags:["8N.Marker.SpawnPoint"]}
