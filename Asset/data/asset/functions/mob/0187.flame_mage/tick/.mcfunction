@@ -7,9 +7,6 @@
 # パーティクル
     particle minecraft:falling_dust red_terracotta ~ ~1 ~ 0.1 0 0.1 0 1
 
-# 付近にプレイヤーがいるならスコア加算 Predicateなどが完成したらそれに移行したい
-    execute positioned ^ ^ ^10 if entity @p[distance=..10] run scoreboard players add @s General.Mob.Tick 1
-
 # 0以上なら強制的に実行
 # 実行順の関係で強制実行を先に配置
     execute if entity @s[scores={General.Mob.Tick=0..}] run scoreboard players add @s General.Mob.Tick 1
