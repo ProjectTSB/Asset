@@ -17,6 +17,9 @@
     execute if entity @s[tag=8N.Health.50Per,tag=!Uninterferable] run particle trial_spawner_detection ~ ~1.5 ~ 0.3 0.5 0.3 0 2 force @a[distance=..32]
     execute if entity @s[tag=8N.Health.50Per,tag=!Uninterferable] if predicate lib:random_pass_per/25 run particle flame ~ ~1.5 ~ 0.3 0.5 0.3 0.01 1 force @a[distance=..32]
 
+# ハードモード時、本気になると、あろうことかレーザー攻撃が定期的にオートで発動する
+    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=8N.Health.50Per] run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/
+
 # マーカーを回す。タグによって方向が変わる。
     # 本気前
         execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=!8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~0.5 0 run tp @s ^ ^1 ^15

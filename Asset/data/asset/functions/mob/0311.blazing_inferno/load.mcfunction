@@ -6,6 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/0311.blazing_inferno/**
-    scoreboard objectives add 8N.MoveCount dummy
     scoreboard objectives add 8N.AttackAmount dummy
-    scoreboard objectives add 8N.LoopCount dummy
+    scoreboard objectives add 8N.PassiveLaser dummy
