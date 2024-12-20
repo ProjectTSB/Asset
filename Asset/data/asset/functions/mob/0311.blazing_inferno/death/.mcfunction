@@ -13,3 +13,16 @@
 
 # 自分のマーカーを削除
     kill @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1]
+
+# 残るタイプのオブジェクトを削除
+    kill @e[type=marker,scores={ObjectID=2137}]
+
+# モデルを削除
+    execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/remove/this
+
+# 撃破演出用オブジェクトを召喚
+    data modify storage api: Argument.ID set value 2148
+    function api:object/summon
+
+# Super!
+    function asset:mob/super.death

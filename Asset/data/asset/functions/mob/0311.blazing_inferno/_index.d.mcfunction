@@ -201,5 +201,6 @@
 	#declare function animated_java:blazing_inferno/animations/damage/set_frame
 	#declare function animated_java:blazing_inferno/animations/damage/apply_frame
 	#declare function animated_java:blazing_inferno/animations/damage/tween
+    #declare function animated_java:blazing_inferno/remove/this
     #declare tag 8N.ModelLocator.LeftHand
     #declare tag 8N.ModelLocator.RightHand

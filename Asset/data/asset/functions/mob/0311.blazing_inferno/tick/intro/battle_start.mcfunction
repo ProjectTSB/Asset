@@ -13,6 +13,10 @@
 # スコアリセット
     scoreboard players reset @s General.Mob.Tick
 
+# 無敵解除
+    tag @s remove Uninterferable
+    data modify entity @s Invulnerable set value 0b
+
 # テレポート演出
     execute at @s run function asset:mob/0311.blazing_inferno/tick/base_move/teleport_vfx
 

@@ -17,3 +17,6 @@
 
 # HP50%以下時
     execute if entity @s[tag=!8N.Health.50Per] if score $HealthPercent Temporary matches ..50 run function asset:mob/0311.blazing_inferno/hurt/active_50per
+
+# Super!
+    function asset:mob/super.hurt

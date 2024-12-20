@@ -12,3 +12,6 @@
 
 # スポーン地点にマーカー作る、ただし（無いとは思うけど）すでに存在していない場合
     execute unless entity @e[type=marker,tag=8N.Marker.SpawnPoint] run summon marker ~ ~ ~ {Tags:["8N.Marker.SpawnPoint"]}
+
+# Super!
+    function asset:mob/super.init
