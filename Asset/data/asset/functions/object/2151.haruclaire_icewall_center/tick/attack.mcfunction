@@ -8,4 +8,4 @@
     data modify storage api: Argument.ID set value 2150
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.Damage
-    execute positioned ~ ~1 ~ run function api:object/summon
+    execute positioned ~ ~0.6 ~ run function api:object/summon

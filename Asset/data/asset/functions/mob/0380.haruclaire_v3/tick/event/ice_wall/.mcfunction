@@ -17,6 +17,10 @@
         execute if score @s AK.EventTimer matches 1..15 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if score @s AK.EventTimer matches 53..57 at @s run tp @s ~ ~0.1 ~
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 12 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 32 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 57 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 57 at @s run particle electric_spark ~ ~3 ~ 0 0 0 0.5 30
     # 攻撃
         execute if score @s AK.EventTimer matches 15 at @s positioned as @p[tag=AK.MainTarget,distance=..100] positioned ^ ^ ^-7 run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/summon_attack_pos
         execute if score @s AK.EventTimer matches 15 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/attack

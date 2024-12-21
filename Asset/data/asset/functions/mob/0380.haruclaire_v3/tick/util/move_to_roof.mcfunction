@@ -10,5 +10,5 @@
     execute as @e[type=area_effect_cloud,tag=AK.Temp.Ground] run scoreboard players set @s AK.Counter 20
     execute as @e[type=area_effect_cloud,tag=AK.Temp.Ground] at @s align y run tp @s ~ ~ ~
     execute as @e[type=area_effect_cloud,tag=AK.Temp.Ground] at @s run function asset:mob/0380.haruclaire_v3/tick/util/move_to_roof_loop
-    execute positioned as @e[type=area_effect_cloud,tag=AK.Temp.Ground] align y run tp @s ~ ~-0.4 ~
+    execute positioned as @e[type=area_effect_cloud,tag=AK.Temp.Ground] align y run tp @s ~ ~0.9 ~
     kill @e[type=area_effect_cloud,tag=AK.Temp.Ground]
