@@ -32,13 +32,13 @@
 # 補正functionを実行
     execute as @p[tag=1075.Owner] run function api:damage/modifier
 # ダメージ実行
-    execute as @e[type=#lib:living,tag=Enemy,tag=Uninterferable,distance=..2] run function api:damage/
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function api:damage/
     function api:damage/reset
 
 # ノクバ耐性を考慮して吹っ飛ばす
     data modify storage lib: Argument.VectorMagnitude set value -0.1
     data modify storage lib: Argument.KnockbackResist set value true
-    execute facing entity @p[tag=1075.Owner] eyes as @e[type=#lib:living,tag=Enemy,tag=Uninterferable,distance=..2] run function lib:motion/
+    execute facing entity @p[tag=1075.Owner] eyes as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function lib:motion/
 
 
 # リセット
