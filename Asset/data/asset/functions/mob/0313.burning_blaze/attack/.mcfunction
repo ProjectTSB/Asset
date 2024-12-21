@@ -1,8 +1,8 @@
-#> asset:mob/313.burning_blaze/attack/
+#> asset:mob/0313.burning_blaze/attack/
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/alias/313/attack
+# @within function asset:mob/alias/0313/attack
 
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail

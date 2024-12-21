@@ -1,4 +1,4 @@
-#> asset:mob/313.burning_blaze/summon/
+#> asset:mob/0313.burning_blaze/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

@@ -1,4 +1,4 @@
-#> asset:mob/313.burning_blaze/register
+#> asset:mob/0313.burning_blaze/register
 #
 # Mobのデータを指定
 #

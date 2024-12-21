@@ -1,4 +1,4 @@
-#> asset:mob/313.burning_blaze/summon/debug
+#> asset:mob/0313.burning_blaze/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #
