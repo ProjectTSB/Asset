@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0311.blazing_inferno/tick/skill/firebomb/tick
 
-#> SpreadLib
-# @private
-#declare tag SpreadMarker
-
 # 拡散弾
     # ID指定
         data modify storage api: Argument.ID set value 2136

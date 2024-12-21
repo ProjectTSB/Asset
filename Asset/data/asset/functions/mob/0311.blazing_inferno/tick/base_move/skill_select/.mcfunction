@@ -1,17 +1,13 @@
 #> asset:mob/0311.blazing_inferno/tick/base_move/skill_select/
 #
-# 属性に応じたスキルを選択する
+# スキル選択。一度使ったものはリストから消えるので、一度の周期で同じ技を2回使うことはない。
 #
 # @within function asset:mob/0311.blazing_inferno/tick/**
-
-#> private
-# @private
-    #declare score_holder $Random
 
 # 通常行動停止タグ付与
     tag @s add 8N.InAction
 
-# スコアを0に戻す
+# スコアを戻す
     scoreboard players set @s General.Mob.Tick -10
 
 # 属性をランダムに選択
