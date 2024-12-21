@@ -8,3 +8,4 @@
 #> 定義類はここに
 # @within function asset:effect/0603.domination/**
     scoreboard objectives add 603.TargetUUID dummy
+    scoreboard objectives add 603.Tick dummy

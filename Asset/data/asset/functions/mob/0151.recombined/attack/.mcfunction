@@ -9,7 +9,7 @@
 
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 25f
+    data modify storage lib: Argument.Damage set value 36f
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
@@ -26,6 +26,8 @@
 
 # 腕を振る
     item replace entity @s weapon with iron_axe
+
+# TODO エフェクトにする
 
 # プレイヤーの防具力を下げる(40)
     attribute @p[tag=Victim] minecraft:generic.armor modifier add 1-0-2-0-9700000000 "1-2-151-0" -0.4 multiply
