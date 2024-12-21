@@ -15,8 +15,8 @@
     execute unless predicate lib:is_day if predicate lib:weather/is_sunny run particle dust 1 0 0 1 ~ ~-.3 ~ 0.4 0.4 0.4 0 100 force @a
     execute if predicate lib:is_day if predicate lib:weather/is_sunny run particle dust 0.969 0 1 1 ~ ~0.3 ~ 0.4 0.4 0.4 0 100 force @a
 # SE
-    playsound item.firecharge.use player @a[distance=..100] ~ ~ ~ 10 1 1
-    playsound item.firecharge.use player @a[distance=..100] ~ ~ ~ 10 1 1
+    playsound item.firecharge.use player @a[distance=..100] ~ ~ ~ 10 1
+    playsound item.firecharge.use player @a[distance=..100] ~ ~ ~ 10 1
 
 # 燃やす
     data modify entity @e[type=#lib:living,type=!player,tag=1009.Target,distance=..0.1,limit=1] Fire set value 200s
