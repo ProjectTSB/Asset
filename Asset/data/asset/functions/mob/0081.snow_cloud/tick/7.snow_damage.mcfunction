@@ -11,11 +11,11 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 0.3 1.5 0
 
 # 重めのデバフ
-    effect give @s slowness 4 2 true
+    execute if predicate api:global_vars/difficulty/min/normal run effect give @s slowness 4 2 true
     effect give @s mining_fatigue 4 2 true
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 17f
+    data modify storage lib: Argument.Damage set value 14f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Water"
 # デスログ
@@ -24,6 +24,6 @@
 # 補正
     execute as @e[type=polar_bear,tag=this,scores={MobID=81},distance=..8,limit=1] run function lib:damage/modifier
 # 実行
-    function lib:damage/
+    execute if entity @s[tag=!PlayerShouldInvulnerable] run function lib:damage/
 # リセット
     function lib:damage/reset
