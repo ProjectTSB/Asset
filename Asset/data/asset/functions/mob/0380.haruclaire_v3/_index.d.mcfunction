@@ -22,6 +22,7 @@
     #declare tag AK.Skill.Move 移動
     #declare tag AK.Skill.IceBullet アイスバレット
     #declare tag AK.Skill.IceWall アイスウォール
+    #declare tag AK.Skill.IceSiege アイスシージ
     #declare tag AK.Skill.IceSpear アイススピア
 
 # 他Entity
