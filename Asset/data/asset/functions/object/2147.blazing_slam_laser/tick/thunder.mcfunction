@@ -26,7 +26,7 @@
 
 # サウンド
     playsound minecraft:entity.blaze.shoot neutral @a ~ ~ ~ 0.7 0
-    playsound entity.lightning_bolt.impact hostile @p ~ ~ ~ 0.3 0 0
+    playsound minecraft:entity.lightning_bolt.impact neutral @a ~ ~ ~ 0.3 0 0
 
 # 変形
     function asset:object/2147.blazing_slam_laser/tick/transform/1
@@ -46,5 +46,5 @@
         execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable] run function api:damage/
 
 # リセット
-    tag @a[tag=Hit] remove Hit
+    tag @a[tag=Hit,distance=..32] remove Hit
     function api:damage/reset
