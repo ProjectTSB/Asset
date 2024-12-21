@@ -20,6 +20,6 @@
         execute if score @s AK.EventTimer matches ..192 at @s unless block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~0.05 ~
 
 # 十分近づくか、一定時間後に終了
-    execute if score @s AK.EventTimer matches ..192 if entity @p[tag=AK.MainTarget,distance=..4] run scoreboard players set @s AK.EventTimer 193
+    execute if score @s AK.EventTimer matches ..192 if entity @p[tag=AK.MainTarget,distance=..5] run scoreboard players set @s AK.EventTimer 193
 
     execute if score @s AK.EventTimer matches 200.. run function asset:mob/0380.haruclaire_v3/tick/event/move/end

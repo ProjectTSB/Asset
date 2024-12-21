@@ -4,6 +4,9 @@
 #
 # @within asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/
 
+# 演出
+    playsound item.trident.return hostile @a ~ ~ ~ 2 2
+
 # 攻撃位置を向く
     summon area_effect_cloud ~ ~ ~ {Tags:["AK.Temp.AttackRotation"],Duration:1}
     execute facing entity @p[tag=AK.MainTarget] feet run tp @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,sort=nearest,limit=1] ~ ~ ~ ~ ~

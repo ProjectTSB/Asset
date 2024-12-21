@@ -20,9 +20,9 @@
         execute if score @s AK.EventTimer matches 12 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 32 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 57 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 57 at @s run particle electric_spark ~ ~3 ~ 0 0 0 0.5 30
+        execute if score @s AK.EventTimer matches 57 at @s run particle electric_spark ^-0.6 ^3 ^ 0 0 0 0.5 30
     # 攻撃
-        execute if score @s AK.EventTimer matches 15 at @s positioned as @p[tag=AK.MainTarget,distance=..100] positioned ^ ^ ^-7 run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/summon_attack_pos
+        execute if score @s AK.EventTimer matches 15 at @s positioned as @p[tag=AK.MainTarget,distance=..100] positioned ^ ^ ^-9 run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/summon_attack_pos
         execute if score @s AK.EventTimer matches 15 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/attack
         execute if score @s AK.EventTimer matches 18 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/attack
         execute if score @s AK.EventTimer matches 21 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/attack

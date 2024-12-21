@@ -8,8 +8,9 @@
     #declare function animated_java:haruclaire_aj/animations/pause_all
     #declare function animated_java:haruclaire_aj/animations/1_0_rod_idle/tween
     #declare function animated_java:haruclaire_aj/animations/3_0_rod_move/tween
-    #declare function animated_java:haruclaire_aj/animations/5_0_rod_icebullet/tween
     #declare function animated_java:haruclaire_aj/animations/4_0_rod_icewall/tween
+    #declare function animated_java:haruclaire_aj/animations/5_0_rod_icebullet/tween
+    #declare function animated_java:haruclaire_aj/animations/7_0_rod_icespear/tween {duration:1, to_frame: 0}
     #declare function animated_java:haruclaire_aj/remove/all
 
 # 汎用
@@ -21,6 +22,7 @@
     #declare tag AK.Skill.Move 移動
     #declare tag AK.Skill.IceBullet アイスバレット
     #declare tag AK.Skill.IceWall アイスウォール
+    #declare tag AK.Skill.IceSpear アイススピア
 
 # 他Entity
     #declare tag AK.CenterPosition 召喚位置

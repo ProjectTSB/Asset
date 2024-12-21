@@ -12,5 +12,5 @@
 
 # イベント実行
     scoreboard players set @s AK.EventTimer 0
-    tag @s add AK.Skill.IceWall
+    tag @s add AK.Skill.IceSpear
     # scoreboard players set @s BE.Pb.Count 5
