@@ -13,9 +13,9 @@
 
 # ハード以上の場合、浮遊を付与
     execute if predicate api:global_vars/difficulty/min/hard as @p[tag=Victim,distance=..60] run function asset:mob/0124.skull_harpy/attack/levitation
-    
+
 # 引数の設定
-    data modify storage api: Argument.Damage set value 8.0d
+    data modify storage api: Argument.Damage set value 9.5d
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
