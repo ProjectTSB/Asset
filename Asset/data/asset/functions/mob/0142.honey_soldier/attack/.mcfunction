@@ -25,7 +25,7 @@
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
 
 # 与えるダメージ
-    data modify storage api: Argument.Damage set value 28f
+    data modify storage api: Argument.Damage set value 41f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによってべとべとに斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}'
