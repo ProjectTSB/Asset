@@ -7,9 +7,8 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
-# 周りのmobにパワー付与
-    effect give @e[type=#lib:living,tag=Enemy,distance=..5] strength 6 0 true
+# ハード以上で周りのmobにパワー付与
+    execute if predicate api:global_vars/difficulty/min/hard run effect give @e[type=#lib:living,tag=Enemy,distance=..5] strength 6 0 true
 
 # 演出
     playsound block.note_block.basedrum hostile @a ~ ~ ~ 1.3 0.5 0

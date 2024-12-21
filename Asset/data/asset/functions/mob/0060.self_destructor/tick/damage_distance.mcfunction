@@ -1,8 +1,8 @@
-#> asset:mob/0060.self_destructor/tick/5.damage_distance
+#> asset:mob/0060.self_destructor/tick/damage_distance
 #
 # ダメージによる距離減衰
 #
-# @within function asset:mob/0060.self_destructor/tick/4.self-desruct
+# @within function asset:mob/0060.self_destructor/tick/self-desruct
 
 #> Private
 # @private
@@ -12,8 +12,8 @@
 
 # 基本ダメージ量
     execute if entity @s[distance=..7.5] run scoreboard players set $DamageValue Temporary 4
-    execute if entity @s[distance=..4] run scoreboard players set $DamageValue Temporary 10
-    execute if entity @s[distance=..3] run scoreboard players set $DamageValue Temporary 16
+    execute if entity @s[distance=..4] run scoreboard players set $DamageValue Temporary 8
+    execute if entity @s[distance=..3] run scoreboard players set $DamageValue Temporary 12
     execute if entity @s[distance=..2] run scoreboard players set $DamageValue Temporary 20
     execute if entity @s[distance=..1] run scoreboard players set $DamageValue Temporary 24
 
