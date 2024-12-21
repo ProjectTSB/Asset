@@ -12,14 +12,10 @@
 # 何故かこうするとプレイヤーと同じ剣の降り方をする
     item replace entity @s weapon with stick{CustomModelData:219}
 
-# 与えるダメージ
-    data modify storage lib: Argument.Damage set value 17f
-# 属性
+# ダメージ
+    data modify storage lib: Argument.Damage set value 18f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
-# 補正functionを実行
     function lib:damage/modifier
-# 対象
     execute as @p[tag=Victim] run function lib:damage/
-# リセット
     function lib:damage/reset
