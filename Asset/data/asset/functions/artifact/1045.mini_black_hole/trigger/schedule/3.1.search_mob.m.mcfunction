@@ -5,6 +5,9 @@
 # @input args
 #   Num : モブの距離
 # @within function asset:artifact/1045.mini_black_hole/trigger/schedule/3.landing
+
+#> Private
+# @private
     #declare tag T1.Landing
 
 # 着弾タグを付ける
