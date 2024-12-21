@@ -8,11 +8,26 @@
     function asset:artifact/common/use/legs
 
 # ここから先は神器側の効果の処理を書く
-# バフを付与
-    effect give @s fire_resistance 1000000 0
-    effect give @s haste 1000000 0
-    effect give @s resistance 1000000 0
-    effect give @s slow_falling 1000000 0
+# 炎耐性+10%
+    data modify storage api: Argument.UUID set value [I;1,1,816,5]
+    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/defense/fire/add
+# 水耐性+10%
+    data modify storage api: Argument.UUID set value [I;1,1,817,6]
+    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/defense/water/add
+# 物理耐性+5%
+    data modify storage api: Argument.UUID set value [I;1,1,818,4]
+    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/defense/physical/add
+# 落下耐性+10%
+    data modify storage api: Argument.UUID set value [I;1,1,819,3]
+    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/fall_damage/add
 
 # 音
     playsound ogg:ambient.nether.crimson_forest.shine3 master @a ~ ~ ~ 1 1
