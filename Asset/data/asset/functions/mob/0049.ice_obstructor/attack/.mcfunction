@@ -12,8 +12,8 @@
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:block.glass.break hostile @a ~ ~ ~ 0.8 1.3 0
 
 # デバフ
-    effect give @p[tag=Victim,distance=..32] slowness 3 2 true
-    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 2 true
+    execute if predicate api:global_vars/difficulty/min/hard run effect give @p[tag=Victim,distance=..32] slowness 3 1 true
+    execute if predicate api:global_vars/difficulty/min/hard run effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
 
 # 引数の設定
     data modify storage api: Argument.Damage set value 5f
