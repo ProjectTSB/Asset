@@ -7,6 +7,7 @@
     #declare function animated_java:haruclaire_aj/summon
     #declare function animated_java:haruclaire_aj/animations/pause_all
     #declare function animated_java:haruclaire_aj/animations/1_0_rod_idle/tween
+    #declare function animated_java:haruclaire_aj/animations/3_0_rod_move/tween
     #declare function animated_java:haruclaire_aj/animations/5_0_rod_icebullet/tween
     #declare function animated_java:haruclaire_aj/animations/4_0_rod_icewall/tween
     #declare function animated_java:haruclaire_aj/remove/all
@@ -17,6 +18,7 @@
     #declare tag AK.MainTarget 狙っている対象
 
 # スキル
+    #declare tag AK.Skill.Move 移動
     #declare tag AK.Skill.IceBullet アイスバレット
     #declare tag AK.Skill.IceWall アイスウォール
 
