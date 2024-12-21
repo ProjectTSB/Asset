@@ -14,7 +14,7 @@
     # アニメーション再生
         execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/5_0_rod_icebullet
     # 移動
-        execute if score @s AK.EventTimer matches 1..20 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
+        execute if score @s AK.EventTimer matches 1..69 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if score @s AK.EventTimer matches 1..14 at @s run tp @s ~ ~0.2 ~
         execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..7] run tp @s ^ ^ ^-0.6
         execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..13] run tp @s ^ ^ ^-0.2

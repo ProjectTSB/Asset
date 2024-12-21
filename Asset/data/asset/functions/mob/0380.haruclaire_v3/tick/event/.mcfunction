@@ -7,3 +7,6 @@
 ## 前半戦
 # アイスバレット
     execute if entity @s[tag=AK.Skill.IceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/
+
+# アイスウォール
+    execute if entity @s[tag=AK.Skill.IceWall] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/
