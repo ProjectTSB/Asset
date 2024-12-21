@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"風巻之刀","color":"#2970FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象を吹き飛ばす刀","color":"#7AB4FF"}','{"text":"自身の速度で吹き飛ばす距離と","color":"#7AB4FF"}','{"text":"ダメージが強化される","color":"#7AB4FF"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象を吹き飛ばす刀","color":"#7AB4FF"}','{"text":"自身の速度で吹き飛ばす距離と","color":"#7AB4FF"}','{"text":"ダメージが変化する","color":"#7AB4FF"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
