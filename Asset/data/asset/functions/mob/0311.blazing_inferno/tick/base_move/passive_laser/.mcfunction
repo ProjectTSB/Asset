@@ -23,3 +23,4 @@
 
 # リセット
     execute if score $Interval Temporary matches 0 run scoreboard players reset @s 8N.PassiveLaser
+    scoreboard players reset $Interval Temporary
