@@ -17,7 +17,7 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1.4 1.3 0
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 37f
+    data modify storage lib: Argument.Damage set value 41f
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
