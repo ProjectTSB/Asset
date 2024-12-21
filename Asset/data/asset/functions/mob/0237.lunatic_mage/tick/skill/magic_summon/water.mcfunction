@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/firewater
+#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/water
 #
 # 水魔法を召喚します
 #

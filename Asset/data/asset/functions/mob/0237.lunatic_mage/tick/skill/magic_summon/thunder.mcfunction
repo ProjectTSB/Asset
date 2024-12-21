@@ -1,4 +1,4 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/firethunder
+#> asset:mob/0237.lunatic_mage/tick/skill/magic_summon/thunder
 #
 # 雷魔法を召喚します
 #
