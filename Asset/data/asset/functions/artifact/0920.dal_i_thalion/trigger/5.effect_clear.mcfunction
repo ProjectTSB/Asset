@@ -8,6 +8,7 @@
     data modify storage api: Argument.ClearLv set value 1
     data modify storage api: Argument.ClearType set value "bad"
     function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset
 
 # タグ消す
     tag @s remove PK.EffectClear

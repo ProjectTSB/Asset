@@ -30,6 +30,7 @@
     data modify storage api: Argument.ID set value 606
     execute store result storage api: Argument.Duration int 40 run data get storage api: Return.Difficulty
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # MP吸収
 # Value = -30 * (難易度値- 1)

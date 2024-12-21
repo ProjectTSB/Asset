@@ -6,6 +6,3 @@
 
 # 判定
     execute if entity @s[tag=!2036.OnGround] unless block ~ ~-1 ~ #lib:no_collision run data modify storage asset:context IsHitBlock set value true
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

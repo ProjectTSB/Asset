@@ -18,3 +18,4 @@
     data modify storage api: Argument.Duration set value 100
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
