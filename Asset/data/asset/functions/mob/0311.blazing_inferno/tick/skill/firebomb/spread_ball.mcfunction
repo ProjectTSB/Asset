@@ -14,7 +14,7 @@
     data modify storage lib: Argument.Distance set value 10
     data modify storage lib: Argument.Spread set value 3
 # 拡散
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+    execute as @e[type=marker,tag=SpreadMarker,distance=..64,limit=1] run function lib:forward_spreader/circle
 
 # 召喚
     data modify storage api: Argument.ID set value 313

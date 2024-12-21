@@ -21,4 +21,4 @@
     # 召喚
         execute at @e[type=marker,tag=SpreadMarker] run function api:object/summon
     # 片付け
-        kill @e[type=marker,tag=SpreadMarker,limit=1]
+        kill @e[type=marker,tag=SpreadMarker,distance=..64,limit=1]
