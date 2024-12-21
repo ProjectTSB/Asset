@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:object/2150.haruclaire_ice_wall/**
-    #declare
+    #declare tag 2150.Append
+    #declare tag 2150.Ride

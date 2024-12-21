@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2150.haruclaire_ice_wall/**
-    scoreboard objectives add 
+    # scoreboard objectives add
