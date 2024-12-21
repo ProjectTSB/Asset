@@ -1,5 +1,5 @@
 #> asset:artifact/0787.aurora_helm/trigger/_index.d
-#
+#> private
 #
 #
 # @within function
