@@ -29,6 +29,12 @@
         execute if score @s AK.EventTimer matches 24 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
         execute if score @s AK.EventTimer matches 27 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
         execute if score @s AK.EventTimer matches 30 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 33 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 36 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 39 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 42 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 45 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
+        execute if score @s AK.EventTimer matches 48 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
 
     # 地面に戻る
         execute if score @s AK.EventTimer matches 76.. if block ~ ~-0.7 ~ #lib:no_collision run tp @s ^ ^-0.08 ^

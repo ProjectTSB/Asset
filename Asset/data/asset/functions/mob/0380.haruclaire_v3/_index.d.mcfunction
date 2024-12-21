@@ -31,4 +31,5 @@
 # 一時タグ
     #declare tag AK.Temp.Ground 接地用
     #declare tag AK.Temp.AttackPosition 攻撃位置保持用
+    #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用
