@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/0380.haruclaire_v3/**
     scoreboard objectives add AK.EventTimer dummy
+    scoreboard objectives add AK.Counter dummy
