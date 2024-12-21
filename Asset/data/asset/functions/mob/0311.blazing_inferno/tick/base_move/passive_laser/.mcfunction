@@ -4,9 +4,10 @@
 #
 # @within function asset:mob/0311.blazing_inferno/tick/base_move/
 
-#> SpreadLib
+#> 拡散マーカーとインターバルのスコアホルダー
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
+    #declare score_holder $Interval
 
 # 攻撃用のスコア加算
     scoreboard players add @s 8N.PassiveLaser 1

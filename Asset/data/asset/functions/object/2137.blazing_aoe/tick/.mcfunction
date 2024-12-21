@@ -4,6 +4,10 @@
 #
 # @within asset:object/alias/2137/tick
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $Interval
+
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 
