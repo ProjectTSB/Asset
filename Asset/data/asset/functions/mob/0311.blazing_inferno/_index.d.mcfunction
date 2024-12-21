@@ -1,6 +1,5 @@
 #> asset:mob/0311.blazing_inferno/_index.d
 # @private
-
 #> tag
 # @within function asset:mob/0311.blazing_inferno/**
     #declare tag 8N.ModelRoot
@@ -8,17 +7,14 @@
     #declare tag 8N.RailMove
     #declare tag 8N.InAction
     #declare tag 8N.PlayerFacing
-
 ## 動作モード
     #declare tag 8N.Moveset.Intro
     #declare tag 8N.Moveset.BaseMove
     #declare tag 8N.Moveset.Transition
-
 ## マーカーリスト
     #declare tag 8N.Marker.SpawnPoint
     #declare tag 8N.Marker.Target
     #declare tag 8N.Marker.GroundSlamBeam
-
 ## スキルリスト
     #declare tag 8N.Skill.Fireball
     #declare tag 8N.Skill.DashPunch
@@ -27,13 +23,11 @@
     #declare tag 8N.Skill.Summon
     #declare tag 8N.Skill.GroundSlam
     #declare tag 8N.Health.50Per
-
-
+## 動作リスト
     #declare tag 8N.Turn.HighSpeed
     #declare tag 8N.Turn.Clockwise
     #declare tag 8N.Turn.CounterClockwise
     #declare tag 8N.Turn.Wait
-
 ## Animated Java
     #declare function animated_java:blazing_inferno/summon
     #declare function animated_java:blazing_inferno/animations/intro/play
