@@ -12,4 +12,4 @@
     function api:object/summon
 
 # 燃える！！
-    fill ~3 ~ ~3 ~-3 ~ ~-3 fire[age=5] replace air
+    execute if predicate api:area/is_breakable run fill ~3 ~ ~3 ~-3 ~ ~-3 fire[age=4] replace air
