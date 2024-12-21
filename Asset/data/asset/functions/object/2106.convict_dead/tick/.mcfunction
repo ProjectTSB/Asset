@@ -15,7 +15,7 @@
     execute if score @s General.Object.Tick matches 19 run playsound ogg:block.sculk_sensor.sculk_clicking4 hostile @a ~ ~ ~ 1 0.6
 
 # ボスドロなんだけど、そもそもまだマスターに上がってない
-    #execute if score @s General.Object.Tick matches 64 run function asset:object/2106.convict_dead/tick/drop
+    execute if score @s General.Object.Tick matches 64 run function asset:object/2106.convict_dead/tick/drop
 # 演出
     execute if score @s General.Object.Tick matches 64 run function asset:object/2106.convict_dead/tick/vfx
 

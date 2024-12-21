@@ -5,7 +5,7 @@
 # @within function asset:mob/0376.convict_v2/tick/06.skill_axe6/main
 
 # つかみ判定が着たら、スコアを飛ばしてアニメーションを変えて色々する
-    scoreboard players set @s AG.Tick 999
+    scoreboard players set @s General.Mob.Tick 999
     execute as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/attack6_1/stop
     execute as @e[type=item_display,tag=AG.AJ,tag=AG.AJLink,sort=nearest,limit=1] run function animated_java:convict/animations/attack6_2/play
 

@@ -6,5 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0376.convict_v2/**
-    scoreboard objectives add AG.Tick dummy
     scoreboard objectives add AG.Skill dummy
