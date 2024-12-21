@@ -7,3 +7,4 @@
 # 映天効果を付与
     data modify storage api: Argument.ID set value 213
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

@@ -7,7 +7,7 @@
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 269
+    data modify storage asset:effect ID set value 270
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ハニーリジェネレーション"}'
 # 説明文 (TextComponentString[])

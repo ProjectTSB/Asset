@@ -14,6 +14,7 @@
 # Assetのバフ/デバフを消去する
     data modify storage api: Argument.ClearLv set value 3
     function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset
 
 # ちょっとだけ満腹度を回復させる
     effect give @s saturation 1 1
