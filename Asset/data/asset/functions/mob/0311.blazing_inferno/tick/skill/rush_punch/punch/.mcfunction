@@ -13,7 +13,7 @@
     execute at @s positioned ^ ^ ^1.5 unless entity @p[distance=..1.5] at @s rotated ~ 0 run tp @s ^ ^ ^0.5
 
 # 常時壁破壊
-    function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/break_block
+    execute if predicate api:area/is_breakable run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/break_block
 
 # 眼の前に壊せないブロックがあったら、そこでやめる
     execute at @s if block ^ ^ ^1 #lib:unbreakable run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end

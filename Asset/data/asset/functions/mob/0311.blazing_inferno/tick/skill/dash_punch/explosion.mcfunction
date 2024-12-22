@@ -24,8 +24,8 @@
     data modify storage api: Argument.ElementType set value "Fire"
 
 # ブロック破壊
-    execute positioned ^ ^-1 ^1 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
-    execute positioned ^ ^-1 ^2 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
+    execute if predicate api:area/is_breakable positioned ^ ^-1 ^1 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
+    execute if predicate api:area/is_breakable positioned ^ ^-1 ^2 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/break_block
 
 # 補正実行
     function api:damage/modifier
