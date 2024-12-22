@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $Interval
 
 # アニメストップ
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/stop

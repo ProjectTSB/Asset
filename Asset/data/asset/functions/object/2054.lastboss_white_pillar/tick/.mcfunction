@@ -4,6 +4,10 @@
 #
 # @within asset:object/alias/2054/tick
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $Interval
+
 # アニメ
     # 加算
         scoreboard players add @s 2054.Animation 1

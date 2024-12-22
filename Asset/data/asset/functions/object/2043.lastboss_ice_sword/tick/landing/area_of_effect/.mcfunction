@@ -4,6 +4,11 @@
 #
 # @within function asset:object/2043.lastboss_ice_sword/tick/landing/
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $ParticleInterval
+    #declare score_holder $DamageInterval
+
 # パーティクル
     scoreboard players operation $ParticleInterval Temporary %= $9 Const
     execute positioned ~ ~ ~ rotated 0 0 if score $ParticleInterval Temporary matches 0 run function asset:object/2043.lastboss_ice_sword/tick/landing/area_of_effect/particle/
