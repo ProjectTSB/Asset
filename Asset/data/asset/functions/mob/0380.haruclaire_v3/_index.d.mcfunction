@@ -30,6 +30,7 @@
     #declare tag AK.Skill.IceSiege アイスシージ
     #declare tag AK.Skill.IceSpear アイススピア
     #declare tag AK.Skill.Punch ぶんぶんぶん殴り
+    #declare tag AK.Skill.SuperIceBullet 超アイスバレット
 
 # 他Entity
     #declare tag AK.CenterPosition 召喚位置

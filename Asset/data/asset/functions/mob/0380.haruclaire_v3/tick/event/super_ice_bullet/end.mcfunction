@@ -1,8 +1,8 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/move/end
+#> asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/end
 #
 # アイスバレット
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/move/
+# @within asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
 
 # タグ消去
     tag @s remove AK.Skill.SuperIceBullet

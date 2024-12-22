@@ -22,3 +22,6 @@
 
 # ぶんぶんぶん殴り
     execute if entity @s[tag=AK.Skill.Punch] run function asset:mob/0380.haruclaire_v3/tick/event/punch/
+
+# 超アイスバレット
+    execute if entity @s[tag=AK.Skill.SuperIceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
