@@ -15,9 +15,9 @@
         execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/5_0_rod_icebullet
     # 移動
         execute if score @s AK.EventTimer matches 1..69 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-        execute if score @s AK.EventTimer matches 1..14 at @s run tp @s ~ ~0.2 ~
-        execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..7] run tp @s ^ ^ ^-0.6
-        execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..13] run tp @s ^ ^ ^-0.2
+        execute if score @s AK.EventTimer matches 1..14 at @s positioned ~ ~0.2 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..7] positioned ^ ^ ^-0.6 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 1..14 at @s if entity @a[tag=AK.MainTarget,distance=..13] positioned ^ ^ ^-0.2 run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run particle firework ~ ~1 ~ 0.1 0.1 0.1 0.3 10
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
     # 第1波
@@ -28,8 +28,8 @@
         execute if score @s AK.EventTimer matches 69 positioned ^ ^6 ^-4 run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/attack_circle
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 85..105 if block ~ ~-0.7 ~ #lib:no_collision run tp @s ^ ^-0.08 ^-0.02
-        execute if score @s AK.EventTimer matches 106..133 if block ~ ~-0.7 ~ #lib:no_collision run tp @s ^ ^-0.15 ^-0.02
+        execute if score @s AK.EventTimer matches 85..105 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 106..133 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.15 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 114.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/end

@@ -11,10 +11,10 @@
     # アニメーション再生
         execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/7_0_rod_icespear
     # 移動
-        execute if score @s AK.EventTimer matches 81..86 at @s run tp @s ~ ~0.1 ~
-        execute if score @s AK.EventTimer matches 87..93 at @s run tp @s ~ ~0.05 ~
-        execute if score @s AK.EventTimer matches 94..104 at @s run tp @s ~ ~-0.05 ~
-        execute if score @s AK.EventTimer matches 105..110 at @s run tp @s ~ ~0.15 ~
+        execute if score @s AK.EventTimer matches 81..86 at @s positioned ~ ~0.1 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 87..93 at @s positioned ~ ~0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 94..104 at @s positioned ~ ~-0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 105..110 at @s positioned ~ ~0.15 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 20 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 40 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
@@ -55,7 +55,7 @@
         execute if score @s AK.EventTimer matches 112..145 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/attack
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 136.. if block ~ ~-0.7 ~ #lib:no_collision run tp @s ^ ^-0.08 ^
+        execute if score @s AK.EventTimer matches 136.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 161.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/end
