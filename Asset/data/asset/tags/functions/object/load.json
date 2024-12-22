@@ -1,9 +1,9 @@
 {
     "values": [
+        "asset:object/2153.haruclaire_thrown_rod/load",
         "asset:object/2152.haruclaire_icespear/load",
         "asset:object/2151.haruclaire_icewall_center/load",
         "asset:object/2150.haruclaire_ice_wall/load",
-        "asset:object/2149.haruclaire_icebullet/load",
         "asset:object/2113.rectangle_announce/load",
         "asset:object/1058.brave_knight/load",
         "asset:object/1050.call_fulstuka/load",

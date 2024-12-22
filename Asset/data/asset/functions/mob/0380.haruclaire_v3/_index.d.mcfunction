@@ -10,7 +10,12 @@
     #declare function animated_java:haruclaire_aj/animations/3_0_rod_move/tween
     #declare function animated_java:haruclaire_aj/animations/4_0_rod_icewall/tween
     #declare function animated_java:haruclaire_aj/animations/5_0_rod_icebullet/tween
-    #declare function animated_java:haruclaire_aj/animations/7_0_rod_icespear/tween {duration:1, to_frame: 0}
+    #declare function animated_java:haruclaire_aj/animations/6_0_rod_icefang/tween
+    #declare function animated_java:haruclaire_aj/animations/6_1_rod_super_icebullet/tween
+    #declare function animated_java:haruclaire_aj/animations/7_0_rod_icespear/tween
+    #declare function animated_java:haruclaire_aj/animations/7_1_rod_iceray/tween
+    #declare function animated_java:haruclaire_aj/animations/8_0_rod_punch/tween
+    #declare function animated_java:haruclaire_aj/animations/9_0_rod_laser/tween
     #declare function animated_java:haruclaire_aj/remove/all
 
 # 汎用
@@ -24,12 +29,14 @@
     #declare tag AK.Skill.IceWall アイスウォール
     #declare tag AK.Skill.IceSiege アイスシージ
     #declare tag AK.Skill.IceSpear アイススピア
+    #declare tag AK.Skill.Punch ぶんぶんぶん殴り
 
 # 他Entity
     #declare tag AK.CenterPosition 召喚位置
 
 # 一時タグ
     #declare tag AK.Temp.Ground 接地用
+    #declare tag AK.Temp.Hit ヒット確認用
     #declare tag AK.Temp.AttackPosition 攻撃位置保持用
     #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用

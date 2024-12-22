@@ -19,3 +19,6 @@
 
 # アイススピア
     execute if entity @s[tag=AK.Skill.IceSpear] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/
+
+# ぶんぶんぶん殴り
+    execute if entity @s[tag=AK.Skill.Punch] run function asset:mob/0380.haruclaire_v3/tick/event/punch/
