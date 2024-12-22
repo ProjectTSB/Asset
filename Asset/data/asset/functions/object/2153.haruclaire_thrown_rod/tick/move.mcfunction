@@ -5,15 +5,18 @@
 # @within asset:object/2153.haruclaire_thrown_rod/tick/
 
 # 移動
-    tp @s ^ ^ ^0.8
+    tp @s ^ ^ ^0.5
 
-# 序盤は上昇
-    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^-0.2 ^0.2 ^
-    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^0.2 ^0.2 ^
+# ブーメラン
+    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^ ^ ^ ~ ~
+    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^ ^ ^ ~ ~
+    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=16..31}] at @s run tp @s ^ ^ ^ ~-5 ~
+    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=16..31}] at @s run tp @s ^ ^ ^ ~5 ~
+    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=32..40}] at @s run tp @s ^ ^ ^ ~ ~-1
+    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=32..40}] at @s run tp @s ^ ^ ^ ~ ~-1
 
-# 終盤は落下
-    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=16..}] at @s run tp @s ^0.2 ^-0.2 ^
-    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=16..}] at @s run tp @s ^-0.2 ^-0.2 ^
+# ブロックに衝突する場合、軌道修正
+    execute at @s unless block ^ ^ ^0.5 #lib:no_collision run tp @s ^ ^ ^-0.5 ~ -1
 
-# ブロックに衝突する場合、壊れる
-    execute at @s unless block ^ ^ ^0.8 #lib:no_collision run function asset:object/2153.haruclaire_thrown_rod/tick/kill
+# 攻撃
+    execute at @s if entity @a[tag=!PlayerShouldInvulnerable,distance=..2] if score @s 2153.CoolTime matches ..0 run function asset:object/2153.haruclaire_thrown_rod/tick/attack
