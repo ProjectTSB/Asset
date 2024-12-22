@@ -9,8 +9,8 @@
 
 # ここから先は神器側の効果の処理を書く
     # MP回復
-        scoreboard players set $Fluctuation Lib 10000
-        function lib:mp/fluctuation
+        data modify storage api: Argument.Fluctuation set value 10000
+        function api:mp/fluctuation
 
     # データ取得
         function api:data_get/health

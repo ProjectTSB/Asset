@@ -12,7 +12,7 @@
     execute if entity @s[scores={General.Object.Tick=..10}] run particle dust 1 1 100000000 1 ~ ~0.5 ~ 0 0 0 0 1 normal @a
 
 # 停止する
-    execute if entity @s[scores={General.Object.Tick=6}] run data modify storage asset:context this.Speed set value 0
+    execute if entity @s[scores={General.Object.Tick=6}] run data modify storage asset:context this.MovePerStep set value 0
 
 # 落ちる
     execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.Speed set value 6
