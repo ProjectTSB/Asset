@@ -13,6 +13,7 @@
     playsound block.beacon.ambient hostile @a ~ ~ ~ 2 1
     particle flash ~ ~ ~ 0 0 0 0 1
     particle block ice ~ ~ ~ 0.2 0.2 0.2 0 5
+    particle dust 1 1000000000 1000000000 3 ^ ^ ^ 0.5 0.5 0.5 1 10 force @a
 
 # ヒット判定、演出
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgAwBsAhgCwDsRAxgLQDMAnGUa3WQCY6rGuyIAzVoMrimAVipUG4sLgw0AtgmSAt3wAEARlVgYNAE6aAzknDMA9ngwQkAubnFm7Gm2ABuNFDxtcAAPJApcKHCAX2jcCDsff0DgsDDECLAoxHYKWNw7cXFLOGcM3DI4AC80ODNw3DRLACFq2rMAUQBHPACUKABlU2Y4EkRxAJLYgF0gA_3

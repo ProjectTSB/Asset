@@ -5,19 +5,10 @@
 # @within asset:mob/0380.haruclaire_v3/tick/**
 
 # アニメーションタグ
-    # tag @s remove BE.Skill.Hellfire
-    # tag @s remove BE.Skill.Adamant
-    # tag @s remove BE.Skill.Blitz
-    # tag @s remove BE.Skill.Ehd
-    # tag @s remove BE.Skill.Move
-    # tag @s remove BE.Skill.MoveAfterEhd
-    # tag @s remove BE.Skill.Tornado
-    # tag @s remove BE.Skill.Sweep
-    # tag @s remove BE.Skill.Tempest
-    # tag @s remove BE.Skill.HeilDisaster
-    # tag @s remove BE.Skill.Flare
-    # tag @s remove BE.Skill.Plamet
-    # tag @s remove BE.Skill.PowerBreath
-    # tag @s remove BE.Skill.PowerBreath.C1
-    # tag @s remove BE.Skill.PowerBreath.C2
-    # tag @s remove BE.Skill.PowerBreath.End
+    tag @s remove AK.Skill.IceBullet
+    tag @s remove AK.Skill.IceWall
+    tag @s remove AK.Skill.IceSiege
+    tag @s remove AK.Skill.IceSpear
+    tag @s remove AK.Skill.Punch
+    tag @s remove AK.Skill.Move
+    tag @s remove AK.Skill.SuperIceBullet
