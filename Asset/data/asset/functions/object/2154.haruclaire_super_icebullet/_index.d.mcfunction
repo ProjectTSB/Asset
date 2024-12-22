@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2154.haruclaire_super_icebullet/**
-    #declare
+    #declare tag 2154.AttackRotation
