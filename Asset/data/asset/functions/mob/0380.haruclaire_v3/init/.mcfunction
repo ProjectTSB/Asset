@@ -16,3 +16,6 @@
 
 # スコア初期化
     scoreboard players set @s AK.ActionCount 0
+
+# 登場演出開始
+    tag @s add AK.Skill.Start

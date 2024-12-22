@@ -9,7 +9,5 @@
     # AjModelのパーツに以下処理を実行する
         execute as @e[type=item_display,tag=AK.ModelRoot] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
         execute as @e[type=item_display,tag=AK.ModelRoot] on passengers if entity @s[type=item_display] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
-
-# テスト
-    # 待機モーション再生
-        execute as @e[type=item_display,tag=AK.ModelRoot] at @s run function animated_java:haruclaire_aj/animations/1_0_rod_idle/tween {duration:1, to_frame: 1}
+    # 登場モーション再生
+        execute as @e[type=item_display,tag=AK.ModelRoot] at @s run function animated_java:haruclaire_aj/animations/0_0_start/tween {duration:1, to_frame: 1}

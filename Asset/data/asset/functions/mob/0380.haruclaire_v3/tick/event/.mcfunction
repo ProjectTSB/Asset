@@ -4,6 +4,9 @@
 #
 # @within asset:mob/0380.haruclaire_v3/tick/
 
+# 登場
+    execute if entity @s[tag=AK.Skill.Start] run function asset:mob/0380.haruclaire_v3/tick/event/start/
+
 ## 前半戦
 # アイスバレット
     execute if entity @s[tag=AK.Skill.IceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/
