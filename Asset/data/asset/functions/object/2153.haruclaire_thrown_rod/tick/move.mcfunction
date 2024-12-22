@@ -10,10 +10,10 @@
 # ブーメラン
     execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^ ^ ^ ~ ~
     execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=..8}] at @s run tp @s ^ ^ ^ ~ ~
-    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=16..31}] at @s run tp @s ^ ^ ^ ~-5 ~
-    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=16..31}] at @s run tp @s ^ ^ ^ ~5 ~
-    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=32..40}] at @s run tp @s ^ ^ ^ ~ ~-1
-    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=32..40}] at @s run tp @s ^ ^ ^ ~ ~-1
+    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=20..29}] at @s run tp @s ^ ^ ^ ~-8 ~
+    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=20..29}] at @s run tp @s ^ ^ ^ ~8 ~
+    execute if entity @s[tag=!2153.Inverse,scores={General.Object.Tick=30..40}] at @s run tp @s ^ ^ ^ ~ ~-1
+    execute if entity @s[tag=2153.Inverse,scores={General.Object.Tick=30..40}] at @s run tp @s ^ ^ ^ ~ ~-1
 
 # ブロックに衝突する場合、軌道修正
     execute at @s unless block ^ ^ ^0.5 #lib:no_collision run tp @s ^ ^ ^-0.5 ~ -1

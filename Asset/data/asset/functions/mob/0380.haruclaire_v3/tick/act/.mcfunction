@@ -5,7 +5,7 @@
 # @within asset:mob/0380.haruclaire_v3/tick/**
 
 # デバッグ用
-    return 0
+    # return 0
 
 # 行動リセット
     scoreboard players set @s AK.EventTimer 0

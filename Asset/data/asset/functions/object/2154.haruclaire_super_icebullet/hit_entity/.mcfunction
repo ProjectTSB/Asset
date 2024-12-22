@@ -98,6 +98,9 @@
         execute rotated ~340 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0
         execute rotated ~350 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0
 
+# 攻撃位置召喚
+    summon area_effect_cloud ~ ~2 ~ {Tags:["2154.AttackRotation"],Duration:1}
+
 # 弾召喚
     execute store result score @e[type=area_effect_cloud,tag=2154.AttackRotation,sort=nearest,limit=1] MobUUID run data get storage asset:context this.MobUUID
     execute as @e[type=area_effect_cloud,tag=2154.AttackRotation,sort=nearest,limit=1] at @s run function asset:object/2154.haruclaire_super_icebullet/hit_block/summon_piece
