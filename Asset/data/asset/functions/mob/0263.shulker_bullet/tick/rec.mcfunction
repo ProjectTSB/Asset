@@ -11,8 +11,17 @@
 # プレイヤーに向けてターンする
     execute if entity @e[type=marker,tag=7B.Target,distance=..0.5,limit=1] unless data storage asset:context this{TurnLimit:0} run return run function asset:mob/0263.shulker_bullet/tick/turn/
 
+# 衝突判定
+    # ブロック
+        function asset:mob/call.m {method:detect_hit_block}
+        execute if data storage asset:temp Projectile{IsHitBlock:true} run function asset:mob/call.m {method:hit_block}
+    # エンティティ
+        function asset:mob/call.m {method:detect_hit_entity}
+        execute if data storage asset:temp Projectile{IsHitEntity:true} run function asset:mob/call.m {method:hit_entity}
+
 # 直進
     tp @s ^ ^ ^0.5
 
 # リセット
+    data remove storage asset:temp Projectile
     kill @e[type=marker,tag=7B.Target,distance=..50]

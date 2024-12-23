@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/263/detect_hit_entity
 
 # 判定
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run data modify storage asset:temp 7B.IsHitEntity set value true
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run data modify storage asset:temp Projectile.IsHitEntity set value true
