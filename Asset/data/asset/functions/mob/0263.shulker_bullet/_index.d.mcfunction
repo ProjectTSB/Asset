@@ -6,6 +6,6 @@
     #declare tag 7B.Exploded
 
 #> turn
-# @within function asset:mob/0263.shulker_bullet/**
-    #declare score_holder $7B.TargetID
+# @within function asset:mob/0263.shulker_bullet/tick/**
+    #declare score_holder $7B.Temp
     #declare tag 7B.Target
