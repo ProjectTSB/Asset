@@ -11,6 +11,5 @@
     scoreboard players reset $2Y.Temp
 
 # 形態リセット
-    data remove storage asset:context this.TargetID
-    data remove storage asset:context this.Rotation
+    data remove storage asset:context this.Target
     function asset:mob/0106.mini_shulker/tick/shell/close

@@ -13,7 +13,7 @@
 
 # 処理
     execute if score @s General.Mob.Tick matches 500 run function asset:mob/0106.mini_shulker/tick/shell/open
-    execute if score @s General.Mob.Tick matches 520 run function asset:mob/0106.mini_shulker/tick/attack/shoot
+    execute if score @s General.Mob.Tick matches 520 align xyz positioned ~0.5 ~0.5 ~0.5 summon marker run function asset:mob/0106.mini_shulker/tick/attack/shoot
     execute if score @s General.Mob.Tick matches 530 run function asset:mob/0106.mini_shulker/tick/reset
 
 # リセット

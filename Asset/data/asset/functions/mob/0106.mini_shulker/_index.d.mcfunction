@@ -8,4 +8,3 @@
 #> target
 # @within function asset:mob/0106.mini_shulker/tick/**
     #declare tag 2Y.Target
-    #declare tag 2Y.Rotation
