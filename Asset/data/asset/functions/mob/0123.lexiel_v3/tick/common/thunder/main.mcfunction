@@ -1,4 +1,4 @@
-#> asset:mob/0123.lexiel_v3/tick/thunder/common/main
+#> asset:mob/0123.lexiel_v3/tick/common/thunder/main
 #
 #
 #

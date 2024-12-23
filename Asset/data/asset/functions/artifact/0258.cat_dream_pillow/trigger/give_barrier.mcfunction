@@ -36,6 +36,7 @@
 # バリア用エフェクトを付与
     data modify storage api: Argument.ID set value 267
     execute as @p[tag=BarrierTarget] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # Tagを削除
     tag @p[tag=BarrierTarget] remove BarrierTarget
