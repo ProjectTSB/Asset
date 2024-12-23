@@ -23,11 +23,11 @@
 
 # マーカーを中心に回る
     # 本気前
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=!8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~0.5 0 run tp @s ^ ^1 ^15
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=!8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-0.5 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=!8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~0.5 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=!8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~-0.5 0 run tp @s ^ ^1 ^15
     # 本気後
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~0.7 0 run tp @s ^ ^1 ^15
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-0.7 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~0.7 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Health.50Per,tag=!8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~-0.7 0 run tp @s ^ ^1 ^15
     # ハイスピード回転
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~2 0 run tp @s ^ ^1 ^15
-        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,sort=nearest,limit=1] facing entity @s feet rotated ~-2 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.Clockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~2 0 run tp @s ^ ^1 ^15
+        execute if entity @s[tag=8N.RailMove,tag=8N.Turn.CounterClockwise,tag=8N.Turn.HighSpeed] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1] facing entity @s feet rotated ~-2 0 run tp @s ^ ^1 ^15
