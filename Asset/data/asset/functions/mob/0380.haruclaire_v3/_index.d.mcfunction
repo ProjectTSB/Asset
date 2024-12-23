@@ -5,6 +5,10 @@
 # @within function asset:mob/0380.haruclaire_v3/**
 # AJ自動生成ファンクション
     #declare function animated_java:haruclaire_aj/summon
+    #declare function animated_java:haruclaire_aj/variants/default/apply
+    #declare function animated_java:haruclaire_aj/variants/blink/apply
+    #declare function animated_java:haruclaire_aj/variants/damage/apply
+    #declare function animated_java:haruclaire_aj/variants/jito/apply
     #declare function animated_java:haruclaire_aj/animations/pause_all
     #declare function animated_java:haruclaire_aj/animations/0_0_start/tween
     #declare function animated_java:haruclaire_aj/animations/1_0_rod_idle/tween

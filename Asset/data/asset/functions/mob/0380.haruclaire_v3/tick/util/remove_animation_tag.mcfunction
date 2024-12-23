@@ -5,6 +5,7 @@
 # @within asset:mob/0380.haruclaire_v3/tick/**
 
 # アニメーションタグ
+    tag @s remove AK.Skill.Start
     tag @s remove AK.Skill.IceBullet
     tag @s remove AK.Skill.IceWall
     tag @s remove AK.Skill.IceSiege
