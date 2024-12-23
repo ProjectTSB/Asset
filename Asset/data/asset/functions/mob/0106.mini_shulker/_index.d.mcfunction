@@ -1,9 +1,9 @@
 #> asset:mob/0106.mini_shulker/_index.d
 # @private
 
-#> reset
-# @within function asset:mob/0106.mini_shulker/tick/reset
-    #declare score_holder $2Y.Random
+#> score
+# @within function asset:mob/0106.mini_shulker/tick/**
+    #declare score_holder $2Y.Temp
 
 #> target
 # @within function asset:mob/0106.mini_shulker/tick/**
