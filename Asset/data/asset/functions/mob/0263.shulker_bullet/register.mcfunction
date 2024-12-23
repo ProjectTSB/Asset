@@ -64,6 +64,5 @@
 # フィールド
     data modify storage asset:mob Field.Damage set value 0
     data modify storage asset:mob Field.TurnLimit set value 0
-    # data modify storage asset:mob Field.OwnerUUID set value
-    # data modify storage asset:mob Field.TargetID set value
-    # data modify storage asset:mob Field.TargetPos set value
+    # data modify storage asset:mob Field.OwnerUUID set value -1
+    # data modify storage asset:mob Field.Target set value {ID:-1,Pos:[0.0d,0.0d,0.0d]}

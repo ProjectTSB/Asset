@@ -12,9 +12,8 @@
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     execute store result storage api: Argument.FieldOverride.OwnerUUID int 1 run scoreboard players get @e[type=#lib:living,tag=this,distance=..1.5,limit=1] MobUUID
     execute store result storage api: Argument.FieldOverride.TurnLimit int 0.9999999999 run data get storage api: Return.Difficulty 1
-    data modify storage api: Argument.FieldOverride.TargetID set from storage asset:context this.Target.ID
-    data modify storage api: Argument.FieldOverride.TargetPos set from storage asset:context this.Target.Pos
-    execute rotated as @s as @e[type=#lib:living,tag=this,distance=..1.5,limit=1] run function api:mob/summon
+    data modify storage api: Argument.FieldOverride.Target set from storage asset:context this.Target
+    execute rotated as @s positioned ~ ~-0.2601 ~ as @e[type=#lib:living,tag=this,distance=..1.5,limit=1] run function api:mob/summon
 
 # リセット
     kill @s
