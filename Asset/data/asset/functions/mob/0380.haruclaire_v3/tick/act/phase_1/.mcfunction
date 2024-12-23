@@ -10,15 +10,16 @@
 # 行動回数一定毎に待機
     execute if score @s AK.ActionCount matches 5 run return 0
     execute if score @s AK.ActionCount matches 12 run return 0
+    execute if score @s AK.ActionCount matches 15 run return 0
+    execute if score @s AK.ActionCount matches 16.. run return run scoreboard players set @s AK.ActionCount 0
 
 # 行動回数一定毎にレーザーを使用
-    execute if score @s AK.ActionCount matches 15.. run tag @s add AK.Skill.IceLaser
-    execute if score @s AK.ActionCount matches 15.. run return run scoreboard players set @s AK.ActionCount 0
+    execute if score @s AK.ActionCount matches 15 run return run tag @s add AK.Skill.IceLaser
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "380.HaruclaireV3"
     data modify storage lib: Args.max set value 6
-    data modify storage lib: Args.scarcity_history_size set value 4
+    data modify storage lib: Args.scarcity_history_size set value 3
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 

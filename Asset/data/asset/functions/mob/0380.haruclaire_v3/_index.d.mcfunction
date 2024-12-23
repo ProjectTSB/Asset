@@ -41,6 +41,10 @@
 # 一時タグ
     #declare tag AK.Temp.Ground 接地用
     #declare tag AK.Temp.Hit ヒット確認用
+    #declare tag AK.Temp.Right 角度変更用
     #declare tag AK.Temp.AttackPosition 攻撃位置保持用
     #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用
+
+# 他オブジェクト
+    #declare tag 2155.Object アイスレーザー
