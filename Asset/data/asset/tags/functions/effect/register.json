@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0057.defense_base_debuff/_/register",
         "asset:effect/0614.prominence_curse/_/register",
         "asset:effect/0124.darkness/_/register",
         "asset:effect/0202.sheep_blessing/_/register",
@@ -37,7 +38,6 @@
         "asset:effect/0606.mineralization/_/register",
         "asset:effect/0608.sinking/_/register",
         "asset:effect/0612.infringement/_/register",
-        "asset:effect/0602.recombined/_/register",
         "asset:effect/0615.wave_curse/_/register",
         "asset:effect/0613.white_curse/_/register",
         "asset:effect/0601.conviction/_/register",

@@ -21,8 +21,12 @@
     function api:damage/reset
 
 # デバフを付与
-    data modify storage api: Argument.ID set value 602
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument.ID set value 57
+    execute store result storage api: Argument.Stack int 4 run data get storage api: Return.Difficulty 1
+    data modify storage api: Argument.Duration set value 60
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 腕を振る
     item replace entity @s weapon with iron_axe

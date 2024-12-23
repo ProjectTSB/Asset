@@ -5,7 +5,7 @@
 # @within function asset:effect/0007.defense_base_debuff/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    # data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 7
 # 名前 (TextComponentString)
