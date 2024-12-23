@@ -15,7 +15,7 @@
 # 攻撃処理
     execute if score @s General.Mob.Tick matches 500..530 run function asset:mob/0106.mini_shulker/tick/attack/
 # テレポート
-    execute if score @s General.Mob.Tick matches 1000 run function asset:mob/0106.mini_shulker/tick/teleport/
+    execute if score @s General.Mob.Tick matches 1000 summon marker run function asset:mob/0106.mini_shulker/tick/teleport/
 
 # 加算
     scoreboard players add @s General.Mob.Tick 1

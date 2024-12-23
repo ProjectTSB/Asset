@@ -9,7 +9,6 @@
     data modify entity @s Pos set from storage asset:temp 2Y.Teleport.Pos
     $execute at @s run tp @s $(RelativePos)
 # 頭の情報を変える
-    execute on passengers run data modify entity @s item.tag.CustomModelData set value 20456
     execute on passengers run data modify entity @s transformation set from storage asset:temp 2Y.Teleport.Transformation
 
 # 後演出
