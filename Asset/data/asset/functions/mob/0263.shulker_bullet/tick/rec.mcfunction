@@ -2,8 +2,7 @@
 # @within asset:mob/0263.shulker_bullet/tick/
 
 # 演出
-    particle crit ~ ~ ~ 0.1 0.1 0.1 0 30 normal
-    particle end_rod ~ ~ ~ 0 0 0 0 1 normal
+    execute anchored eyes run function asset:mob/0263.shulker_bullet/tick/vfx
 
 # ターゲットを召喚する
     execute if data storage asset:context this.TargetPos run summon marker ~ ~ ~ {Tags:["7B.Target"]}
