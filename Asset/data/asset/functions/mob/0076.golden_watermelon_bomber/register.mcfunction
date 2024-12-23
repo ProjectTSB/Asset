@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0076.golden_watermelon_bomber/_/register
+# @within function asset:mob/alias/76/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -51,7 +51,7 @@
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 25.0
 # ノックバック耐性 (double) (オプション)
-    data modify storage asset:mob KnockBackResist set value 0.6
+    data modify storage asset:mob KnockBackResist set value 0.9
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0
@@ -65,4 +65,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.5
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.Damage set value {1st:20f,2nd:20f}

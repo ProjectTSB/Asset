@@ -28,5 +28,6 @@
     data modify storage api: Argument.ID set value 220
     execute store result storage api: Argument.Stack int 0.1 run scoreboard players get $LostHealth Temporary
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセットはcheck_conditionで行っているので不要

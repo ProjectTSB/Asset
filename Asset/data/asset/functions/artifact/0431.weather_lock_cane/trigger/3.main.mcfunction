@@ -10,9 +10,9 @@
 # ここから先は神器側の効果の処理を書く
 
 # 天候によりstorageを設定する
-    execute if predicate lib:weather/is_sunny run data modify storage asset:temp BZ.Weather set value "Sunny"
-    execute if predicate lib:weather/is_raining run data modify storage asset:temp BZ.Weather set value "Rain"
-    execute if predicate lib:weather/is_thundering run data modify storage asset:temp BZ.Weather set value "Thunder"
+    execute in overworld if predicate lib:weather/is_sunny run data modify storage asset:temp BZ.Weather set value "Sunny"
+    execute in overworld if predicate lib:weather/is_raining run data modify storage asset:temp BZ.Weather set value "Rain"
+    execute in overworld if predicate lib:weather/is_thundering run data modify storage asset:temp BZ.Weather set value "Thunder"
 
 # 演出
     # chat
@@ -21,19 +21,14 @@
         playsound ui.button.click player @a ~ ~ ~ 1000000 1 1
         playsound ui.button.click player @a ~ ~ ~ 1000000 1 1
         playsound ui.button.click player @a ~ ~ ~ 1000000 1 1
-
     # Particle
         execute rotated ~ 0 positioned ^ ^10 ^-10 run function asset:artifact/0431.weather_lock_cane/trigger/vfx/key
-        execute if data storage asset:temp BZ{Weather:Sunny} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/sunny
-        execute if data storage asset:temp BZ{Weather:Rain} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/rain
-        execute if data storage asset:temp BZ{Weather:Thunder} as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/vfx/thunder
 # 補正の追加
-    execute as @a run function asset:artifact/0431.weather_lock_cane/trigger/4.weather_effect
+    execute as @a at @s run function asset:artifact/0431.weather_lock_cane/trigger/weather/
 
 # 天候を固定するためのループを発動
-    function asset:artifact/0431.weather_lock_cane/trigger/weather_lock
-
-# 処理
     gamerule doWeatherCycle false
-    schedule function asset:artifact/0431.weather_lock_cane/trigger/end 3600t replace
+    function asset:artifact/0431.weather_lock_cane/trigger/weather/lock
 
+# リセット用ループ
+    schedule function asset:artifact/0431.weather_lock_cane/trigger/end 3600t replace

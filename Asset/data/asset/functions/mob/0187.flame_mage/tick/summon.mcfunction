@@ -1,0 +1,15 @@
+#> asset:mob/0187.flame_mage/tick/summon
+#
+# 魔法を召喚する
+#
+# @within function asset:mob/0187.flame_mage/tick/shoot_magic
+
+# スピード設定
+    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Speed set value 2
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Speed set value 3
+
+# 召喚
+    data modify storage api: Argument.ID set value 2073
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    function api:object/summon

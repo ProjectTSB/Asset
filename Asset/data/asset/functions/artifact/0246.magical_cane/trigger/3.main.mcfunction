@@ -7,7 +7,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 使用時のMPの数値によって演出がかわるよ
-    execute store result score $MagicalCane Temporary run function lib:mp/get
+    function api:mp/get_current
+    execute store result score $MagicalCane Temporary run data get storage api: Return.CurrentMP
     execute if score $MagicalCane Temporary matches 0..49 run function asset:artifact/0246.magical_cane/trigger/3.1.weak_hit
     execute if score $MagicalCane Temporary matches 50..249 run function asset:artifact/0246.magical_cane/trigger/3.2.strong_hit
     execute if score $MagicalCane Temporary matches 250.. run function asset:artifact/0246.magical_cane/trigger/3.3.hyper_hit

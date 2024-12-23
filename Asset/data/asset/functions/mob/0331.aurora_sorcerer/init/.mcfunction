@@ -2,7 +2,7 @@
 #
 # Mob召喚時のInit処理
 #
-# @within function asset:mob/0331.aurora_sorcerer/_/init
+# @within function asset:mob/alias/331/init
 
 # スコア設定
-    scoreboard players set @s 97.Skill -60
+    scoreboard players set @s General.Mob.Tick -60

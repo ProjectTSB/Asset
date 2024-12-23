@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/0363.white_spellbook/_/register
+# @within function asset:mob/alias/363/register
 
 # 継承 (int) (オプション)
     # data modify storage asset:mob Extends append value
@@ -65,4 +65,4 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.Damage set value 30f

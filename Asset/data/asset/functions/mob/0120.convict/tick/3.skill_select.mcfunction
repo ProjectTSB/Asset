@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0120.convict/tick/2.tick
+# @within function asset:mob/0120.convict/tick/
 #> private
 # @private
     #declare score_holder $Random

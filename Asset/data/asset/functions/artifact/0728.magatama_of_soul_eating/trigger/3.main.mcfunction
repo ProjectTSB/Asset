@@ -27,7 +27,8 @@
     scoreboard players operation $Count Temporary += $1 Const
 
 # 5％分を100倍で取得
-    execute store result score $MaxHP5Per Temporary run attribute @s generic.max_health get 5
+    function api:modifier/max_health/get
+    execute store result score $MaxHP5Per Temporary run data get storage api: Return.MaxHealth 5
 
 # MaxHP5Perを個数と掛け、Argument.Healへ代入
     execute store result storage api: Argument.Heal float 0.01 run scoreboard players operation $MaxHP5Per Temporary *= $Count Temporary

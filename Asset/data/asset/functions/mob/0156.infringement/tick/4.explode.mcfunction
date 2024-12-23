@@ -2,7 +2,7 @@
 #
 # 自爆する
 #
-# @within function asset:mob/0156.infringement/tick/2.tick
+# @within function asset:mob/0156.infringement/tick/
 
 # 周囲のプレイヤーがサバイバルなら周囲の羊毛を全部砂利にする
     execute if entity @p[gamemode=survival,distance=..40] run fill ~3 ~3 ~3 ~-3 ~-3 ~-3 gravel replace #wool
@@ -26,7 +26,7 @@
     function lib:damage/reset
 
 # ノーマル以上で侵害エフェクトを付与
-    execute if predicate api:global_vars/difficulty/min/normal as @a[gamemode=!spectator,distance=..5] run function asset:mob/0156.infringement/tick/5.debuff
+    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0156.infringement/tick/5.debuff
 
 # 自滅する
 # ノーマル以下でkill @s ハードで奈落

@@ -19,7 +19,8 @@
 # 侵害エフェクトを付与
     data modify storage api: Argument.ID set value 612
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $EffectLv Temporary
-    function api:entity/mob/effect/give
+    execute as @a[gamemode=!spectator,distance=..5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     scoreboard players reset $EffectLv Temporary

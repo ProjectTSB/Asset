@@ -4,28 +4,47 @@
 #
 # @within function asset:artifact/1083.tablet_of_oracle/trigger/3.main
 
+#> Private
+# @private
+    #declare score_holder $Random
+
 # 4種のうちランダムなバフ2つを付与する
 
-# セッション開ける
-    function lib:array/session/open
-
 # ID候補リスト
-    data modify storage lib: Array set value [248,249,250,251]
+    data modify storage asset:temp Random set value [248,249,250,251]
 
-# シャッフルする
-    function lib:array/shuffle
+# 0~3の乱数を取得する
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $4 Const
 
-# 配列を移しておく
-    data modify storage asset:temp U3.Array set from storage lib: Array
+# (乱数)番目のIDのEffectのIDを代入する
+    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
+    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set from storage asset:temp Random[1]
+    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set from storage asset:temp Random[2]
+    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
 
-# セッションを閉じる
-    function lib:array/session/close
+# (乱数)番目のIDを配列から削除
+    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
+    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set from storage asset:temp Random[1]
+    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set from storage asset:temp Random[2]
+    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
 
-# 配列の前二つのIDのEffectを付与する
-    execute store result storage api: Argument.ID int 1 run data get storage asset:temp U3.Array[0]
+# 付与する
     function api:entity/mob/effect/give
-    execute store result storage api: Argument.ID int 1 run data get storage asset:temp U3.Array[1]
+    function api:entity/mob/effect/reset
+
+# 0~2の乱数を取得する
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $3 Const
+
+# (乱数)番目のIDのEffectのIDを代入する
+    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
+    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set from storage asset:temp Random[1]
+    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set from storage asset:temp Random[2]
+
+# 付与する
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
-    data remove storage asset:temp U3.Array
+    data remove storage asset:temp Random
