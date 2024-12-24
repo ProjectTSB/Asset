@@ -20,5 +20,4 @@
     playsound minecraft:entity.witch.celebrate hostile @a ~ ~ ~ 1 2
 
 # 撤退
-    tp ~ -1000 ~
-    kill @s
+    function api:mob/remove
