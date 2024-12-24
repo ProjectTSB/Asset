@@ -16,3 +16,7 @@
 # デバッグ用としてAJを消す
     execute as @e[type=item_display,tag=AC.AJ,distance=..100,sort=nearest,limit=1] run function animated_java:tutankhamen/remove/this
     #execute as @e[type=item_display,tag=AC.AJ,distance=..100,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/death/play
+
+# 撃破演出用オブジェクトを召喚
+    data modify storage api: Argument.ID set value 2093
+    execute facing entity @p[distance=..64] eyes run function api:object/summon
