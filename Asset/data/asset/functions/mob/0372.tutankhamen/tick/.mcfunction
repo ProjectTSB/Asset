@@ -14,7 +14,10 @@
     execute at @s run tp @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # スキル選択 開幕は実行しない
-    execute if entity @s[tag=!AC.Opening,scores={General.Mob.Tick=0}] run function asset:mob/0372.tutankhamen/tick/skill_select
+    execute if entity @s[tag=AC.DashUsed,tag=!AC.InAction,tag=!AC.Opening,scores={General.Mob.Tick=0}] run function asset:mob/0372.tutankhamen/tick/skill_select
+
+# ダッシュ選択 開幕は実行しないし、スキル中も使用しない
+    execute if entity @s[tag=!AC.InAction,tag=!AC.Opening,scores={General.Mob.Tick=0,AC.Count.Dash=0}] run function asset:mob/0372.tutankhamen/tick/dash_select
 
 # スキル実行
     execute if entity @s[scores={General.Mob.Tick=0..}] run function asset:mob/0372.tutankhamen/tick/skill_branch

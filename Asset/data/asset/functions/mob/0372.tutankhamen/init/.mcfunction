@@ -29,6 +29,7 @@
 
 # スコア初期化
     scoreboard players set @s General.Mob.Tick -1
+    scoreboard players set @s AC.Count.Dash 0
 
 # 召喚モーション用Tagを自身に付与
     tag @s add AC.Opening

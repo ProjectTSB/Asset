@@ -34,4 +34,4 @@
     execute if score @s General.Mob.Tick matches 50 run tp @s ~ ~ ~ ~ 0
 
 # リセット
-    execute if score @s General.Mob.Tick matches 90.. run function asset:mob/0372.tutankhamen/tick/skill/reset
+    execute if score @s General.Mob.Tick matches 50.. run function asset:mob/0372.tutankhamen/tick/skill/reset

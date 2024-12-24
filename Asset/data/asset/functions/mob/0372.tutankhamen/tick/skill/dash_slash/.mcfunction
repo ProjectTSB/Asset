@@ -31,4 +31,4 @@
     execute if score @s General.Mob.Tick matches 107..110 run tp @s ^ ^ ^0.1
 
 # リセット
-    execute if score @s General.Mob.Tick matches 150.. run function asset:mob/0372.tutankhamen/tick/skill/reset
+    execute if score @s General.Mob.Tick matches 140.. run function asset:mob/0372.tutankhamen/tick/skill/reset

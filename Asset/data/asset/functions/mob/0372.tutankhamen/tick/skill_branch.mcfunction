@@ -16,11 +16,13 @@
 # ハイパーレーザー
     execute if entity @s[tag=AC.HyperLaser] run function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/
 
-# ダッシュスラッシュ
-    execute if entity @s[tag=AC.DashSlash] run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
-
-# ファラオ・ぶちかまし
-    execute if entity @s[tag=AC.Charge] run function asset:mob/0372.tutankhamen/tick/skill/charge/
-
 # 棺召喚
     execute if entity @s[tag=AC.Coffin] run function asset:mob/0372.tutankhamen/tick/skill/coffin/
+
+# ダッシュ
+    # サイドダッシュ
+        execute if entity @s[tag=AC.Dash.Side] run function asset:mob/0372.tutankhamen/tick/skill/dash/side/
+    # ダッシュスラッシュ
+        execute if entity @s[tag=AC.Dash.Slash] run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
+    # ファラオ・ぶちかまし
+        execute if entity @s[tag=AC.Dash.Charge] run function asset:mob/0372.tutankhamen/tick/skill/charge/

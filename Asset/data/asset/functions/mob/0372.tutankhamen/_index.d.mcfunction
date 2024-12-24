@@ -12,8 +12,15 @@
     #declare tag AC.DashSlash.IsNearPlayer
     #declare tag AC.ManyLaser
     #declare tag AC.Charge
-
+#> ダッシュリスト
+    #declare tag AC.Dash.Left
+    #declare tag AC.Dash.Right
+    #declare tag AC.Dash.Side
+    #declare tag AC.Dash.Slash
+    #declare tag AC.Dash.Charge
 #>その他タグ
+    #declare tag AC.InAction
+    #declare tag AC.DashUsed
     #declare tag AC.LaserDisplay
     #declare tag AC.Coffin
     #declare tag AC.CoffinPoint
@@ -27,7 +34,6 @@
     #declare score_holder $Recursive
     #declare score_holder $Random
     #declare score_holder $Interval
-    #
     #
 #>Animated Java
     #declare function animated_java:tutankhamen/summon

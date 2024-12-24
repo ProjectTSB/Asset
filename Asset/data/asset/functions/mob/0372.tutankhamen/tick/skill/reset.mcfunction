@@ -20,3 +20,11 @@
     tag @s remove AC.DashSlash
     tag @s remove AC.ManyLaser
     tag @s remove AC.Charge
+
+    tag @s remove AC.Dash.Left
+    tag @s remove AC.Dash.Right
+    tag @s remove AC.Dash.Side
+    tag @s remove AC.Dash.Slash
+    tag @s remove AC.Dash.Charge
+
+    tag @s remove AC.InAction
