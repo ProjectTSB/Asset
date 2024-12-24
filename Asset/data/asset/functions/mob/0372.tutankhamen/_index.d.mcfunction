@@ -18,6 +18,10 @@
     #declare tag AC.Dash.Side
     #declare tag AC.Dash.Slash
     #declare tag AC.Dash.Charge
+#> 状態タグ
+    #declare tag AC.Health.50Per
+#> 動作タグ
+    #declare tag AC.Moveset.Transition
 #>その他タグ
     #declare tag AC.InAction
     #declare tag AC.DashUsed
@@ -82,5 +86,6 @@
     #declare function animated_java:tutankhamen/animations/attack_laser_windup/tween
     #declare function animated_java:tutankhamen/animations/attack_laser_loop/tween
     #declare function animated_java:tutankhamen/animations/attack_laser_end/tween
+    #declare function animated_java:tutankhamen/animations/damage/tween
     #declare tag AC.ModelLocator.Body
     #declare tag AC.ModelLocator.Weapon
