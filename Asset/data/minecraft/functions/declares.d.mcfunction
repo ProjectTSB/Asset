@@ -226,6 +226,10 @@
     #declare function lib:damage/modifier_continuation                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/damage/modifier_continuation.mcfunction#L1
     #declare function lib:damage/reset                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/damage/reset.mcfunction#L1
     #declare function lib:dimension/get                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/dimension/get.mcfunction#L1
+    #declare function lib:distance/as_to_at                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/as_to_at.mcfunction#L1
+    #declare function lib:distance/core/abs/x.m                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/core/abs/x.m.mcfunction#L1
+    #declare function lib:distance/core/abs/y.m                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/core/abs/y.m.mcfunction#L1
+    #declare function lib:distance/core/abs/z.m                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/core/abs/z.m.mcfunction#L1
     #declare function lib:forward_spreader/circle                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/forward_spreader/circle.mcfunction#L1
     #declare function lib:forward_spreader/square                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/forward_spreader/square.mcfunction#L1
     #declare function lib:get_name/                                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/get_name/.mcfunction#L1
@@ -414,6 +418,9 @@
     #declare predicate lib:light_level/min/7                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/light_level/min/7.json#L1
     #declare predicate lib:light_level/min/8                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/light_level/min/8.json#L1
     #declare predicate lib:light_level/min/9                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/light_level/min/9.json#L1
+    #declare predicate lib:pos/is_x_positive                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/pos/is_x_positive.json#L1
+    #declare predicate lib:pos/is_y_positive                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/pos/is_y_positive.json#L1
+    #declare predicate lib:pos/is_z_positive                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/pos/is_z_positive.json#L1
     #declare predicate lib:random_pass_per/1                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/random_pass_per/1.json#L1
     #declare predicate lib:random_pass_per/10                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/random_pass_per/10.json#L1
     #declare predicate lib:random_pass_per/11                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/predicates/random_pass_per/11.json#L1
