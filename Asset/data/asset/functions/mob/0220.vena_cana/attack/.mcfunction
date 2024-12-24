@@ -16,7 +16,7 @@
     effect clear @s
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 37f
+    data modify storage lib: Argument.Damage set value 41f
     data modify storage lib: Argument.AttackType set value "Physical"
 # 補正functionを実行
     execute as @e[type=zombie,tag=this,distance=..6,sort=nearest,limit=1] run function lib:damage/modifier
