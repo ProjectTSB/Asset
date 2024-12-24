@@ -12,6 +12,8 @@
     # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 228
+# 体力 (double) (オプション)
+    data modify storage asset:mob Health set value 3900
 
 # フィールド
 # 与えるダメージ
