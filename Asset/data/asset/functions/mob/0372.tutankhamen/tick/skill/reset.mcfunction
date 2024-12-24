@@ -19,3 +19,4 @@
     tag @s remove AC.Coffin
     tag @s remove AC.DashSlash
     tag @s remove AC.ManyLaser
+    tag @s remove AC.Charge

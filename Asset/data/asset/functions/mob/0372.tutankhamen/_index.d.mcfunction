@@ -3,17 +3,21 @@
 
 #> tag
 # @within function asset:mob/0372.tutankhamen/**
+#>スキルリスト
     #declare tag AC.Laser
-    #declare tag AC.LaserDisplay
     #declare tag AC.ManyShoot
     #declare tag AC.GiantSkull
     #declare tag AC.HyperLaser
     #declare tag AC.DashSlash
     #declare tag AC.DashSlash.IsNearPlayer
-    #declare tag AC.Coffin
     #declare tag AC.ManyLaser
-    #declare tag AC.SpawnMarker
+    #declare tag AC.Charge
+
+#>その他タグ
+    #declare tag AC.LaserDisplay
+    #declare tag AC.Coffin
     #declare tag AC.CoffinPoint
+    #declare tag AC.SpawnMarker
     #declare tag AC.AJ
     #declare tag AC.AJLink
     #declare tag AC.Opening
@@ -25,7 +29,7 @@
     #declare score_holder $Interval
     #
     #
-    #>Animated Java
+#>Animated Java
     #declare function animated_java:tutankhamen/summon
     #declare function animated_java:tutankhamen/remove/this
     #declare function animated_java:tutankhamen/summon

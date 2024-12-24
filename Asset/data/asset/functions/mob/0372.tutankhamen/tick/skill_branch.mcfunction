@@ -19,5 +19,8 @@
 # ダッシュスラッシュ
     execute if entity @s[tag=AC.DashSlash] run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
 
+# ファラオ・ぶちかまし
+    execute if entity @s[tag=AC.Charge] run function asset:mob/0372.tutankhamen/tick/skill/charge/
+
 # 棺召喚
     execute if entity @s[tag=AC.Coffin] run function asset:mob/0372.tutankhamen/tick/skill/coffin/
