@@ -71,10 +71,6 @@
     #declare function animated_java:tutankhamen/animations/dash_end/stop
     #declare function animated_java:tutankhamen/animations/attack_melee_1/tween
     #declare function animated_java:tutankhamen/animations/attack_dash_1/tween
-
-
-
-
-
-
-#
+    #declare function animated_java:tutankhamen/animations/attack_dash_2/tween
+    #declare tag AC.ModelLocator.Body
+    #declare tag AC.ModelLocator.Weapon
