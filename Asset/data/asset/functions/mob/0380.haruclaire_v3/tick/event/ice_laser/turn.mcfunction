@@ -12,8 +12,8 @@
     execute if entity @s[tag=AK.Temp.Right] run tp @s ~ ~ ~ ~0.5 ~
 
 # レーザーの角度と位置変更
-    execute unless entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object] rotated as @s run tp @s ~ ~ ~ ~-0.5 ~
-    execute if entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object] rotated as @s run tp @s ~ ~ ~ ~0.5 ~
+    execute unless entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object,sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~-0.5 ~
+    execute if entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object,sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~0.5 ~
 
 # 終了
     tag @s remove AK.Temp.Right
