@@ -16,4 +16,4 @@
     execute if entity @s[scores={General.Object.Tick=3..55}] run function asset:object/2155.haruclaire_icelaser/tick/attack
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=60..}]
+    execute if entity @s[scores={General.Object.Tick=60..}] run function asset:object/2155.haruclaire_icelaser/tick/kill
