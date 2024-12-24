@@ -1,4 +1,4 @@
-#> asset:object/2092.ghost_bullet/summon/.m
+#> asset:object/2092.ghost_bullet/summon/m
 #
 #
 #

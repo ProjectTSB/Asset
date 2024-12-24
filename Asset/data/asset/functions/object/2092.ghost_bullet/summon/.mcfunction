@@ -5,4 +5,7 @@
 # @within asset:object/alias/2092/summon
 
 # 元となるEntityを召喚する
-    function asset:object/2092.ghost_bullet/summon/.m with storage asset:context this
+    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/2092.ghost_bullet/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args
