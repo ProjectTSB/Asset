@@ -25,6 +25,7 @@
     #declare score_holder $Interval
     #
     #
+    #>Animated Java
     #declare function animated_java:tutankhamen/summon
     #declare function animated_java:tutankhamen/remove/this
     #declare function animated_java:tutankhamen/summon
@@ -64,8 +65,8 @@
     #declare function animated_java:tutankhamen/animations/dash_end/play
     #declare function animated_java:tutankhamen/animations/dash_end/tween
     #declare function animated_java:tutankhamen/animations/dash_end/stop
-
-
+    #declare function animated_java:tutankhamen/animations/attack_melee_1/tween
+    #declare function animated_java:tutankhamen/animations/attack_dash_1/tween
 
 
 

@@ -4,19 +4,31 @@
 #
 # @within function asset:mob/0372.tutankhamen/tick/skill_branch
 
-# AJ
-    execute if entity @s[scores={General.Mob.Tick=0}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/dash/tween {to_frame: 0, duration: 5}
-    execute if entity @s[scores={General.Mob.Tick=1001}] as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/dash_slash/tween {to_frame: 0, duration: 5}
+# ダッシュ開始
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/start
 
 # プレイヤーの方へ誘導する
-    execute if entity @s[scores={General.Mob.Tick=..99}] facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s rotated ~ 0 run tp @s ^ ^ ^0.4 ~ ~
-    execute if entity @s[scores={General.Mob.Tick=..99}] at @s run tp @e[type=item_display,tag=AC.AJLink,distance=..1,sort=nearest,limit=1] ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches ..99 run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/move
 
-# プレイヤーが近くに来たらスコアを変える
-    execute if entity @s[scores={General.Mob.Tick=..999}] at @s if entity @p[gamemode=!spectator,distance=..5] run scoreboard players set @s General.Mob.Tick 1000
+# プレイヤーが前方の範囲にいたらスコアを変える
+    execute if score @s General.Mob.Tick matches ..99 at @s positioned ^ ^ ^2 if entity @p[gamemode=!spectator,distance=..4] run scoreboard players set @s General.Mob.Tick 100
 
-# 斬撃アニメーション
+# 斬撃の構え
+    execute if score @s General.Mob.Tick matches 100 run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/slash/windup
 
-# 共通リセット処理
-    execute if entity @s[scores={General.Mob.Tick=100..999}] run function asset:mob/0372.tutankhamen/tick/skill/reset
-    execute if entity @s[scores={General.Mob.Tick=1100..}] run function asset:mob/0372.tutankhamen/tick/skill/reset
+# 構えその2
+    execute if score @s General.Mob.Tick matches 115 run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/slash/windup_2
+
+# そして斬撃のダメージ
+    execute if score @s General.Mob.Tick matches 118 run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/slash/damage
+
+# ニュートラルに戻る
+    execute if score @s General.Mob.Tick matches 140 as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/neutral/tween {to_frame: 0, duration: 5}
+    execute if score @s General.Mob.Tick matches 140 run tp @s ~ ~ ~ ~ 0
+# ウソ慣性
+    execute if score @s General.Mob.Tick matches 100..105 run tp @s ^ ^ ^0.5
+    execute if score @s General.Mob.Tick matches 106 run tp @s ^ ^ ^0.3
+    execute if score @s General.Mob.Tick matches 107..110 run tp @s ^ ^ ^0.1
+
+# リセット
+    execute if score @s General.Mob.Tick matches 150.. run function asset:mob/0372.tutankhamen/tick/skill/reset
