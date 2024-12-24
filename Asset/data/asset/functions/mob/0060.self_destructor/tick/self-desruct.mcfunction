@@ -18,5 +18,4 @@
     scoreboard players set @e[type=zombie,scores={MobID=60},distance=..7.5] 1O.ExplodeCnt 8
 
   # 消滅
-    tp @s ~ -1000 ~
-    kill @s
+    function api:mob/remove
