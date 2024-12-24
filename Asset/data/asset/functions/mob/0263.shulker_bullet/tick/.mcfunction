@@ -10,4 +10,4 @@
 # 加算
     scoreboard players add @s General.Mob.Tick 1
 # 自滅
-    execute if score @s General.Mob.Tick matches 600.. run function api:mob/kill
+    execute if score @s General.Mob.Tick matches 600.. run function api:mob/remove
