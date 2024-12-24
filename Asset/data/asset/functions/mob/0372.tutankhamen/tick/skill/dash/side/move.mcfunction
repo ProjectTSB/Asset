@@ -9,7 +9,7 @@
     #declare score_holder $Interval
 
 # 横に移動
-    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ 0
+    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ 0 run tp @s ^ ^ ^1 ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

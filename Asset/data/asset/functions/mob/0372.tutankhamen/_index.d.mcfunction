@@ -58,6 +58,7 @@
     #declare function animated_java:tutankhamen/animations/soul_shot/stop
     #declare function animated_java:tutankhamen/animations/beam_long/play
     #declare function animated_java:tutankhamen/animations/beam_long/stop
+    #declare function animated_java:tutankhamen/animations/beam_long/tween
     #declare function animated_java:tutankhamen/animations/beam_long_charge/play
     #declare function animated_java:tutankhamen/animations/beam_long_charge/stop
     #declare function animated_java:tutankhamen/animations/beam_long_shot/play
@@ -78,5 +79,8 @@
     #declare function animated_java:tutankhamen/animations/attack_melee_1/tween
     #declare function animated_java:tutankhamen/animations/attack_dash_1/tween
     #declare function animated_java:tutankhamen/animations/attack_dash_2/tween
+    #declare function animated_java:tutankhamen/animations/attack_laser_windup/tween
+    #declare function animated_java:tutankhamen/animations/attack_laser_loop/tween
+    #declare function animated_java:tutankhamen/animations/attack_laser_end/tween
     #declare tag AC.ModelLocator.Body
     #declare tag AC.ModelLocator.Weapon
