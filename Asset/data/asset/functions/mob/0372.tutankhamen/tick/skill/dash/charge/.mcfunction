@@ -22,9 +22,9 @@
     execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/dash_end/tween {to_frame: 0, duration: 5}
 
 # ウソ慣性
-    execute if score @s General.Mob.Tick matches 30..40 run tp @s ^ ^ ^0.5
-    execute if score @s General.Mob.Tick matches 40..45 run tp @s ^ ^ ^0.3
-    execute if score @s General.Mob.Tick matches 45..50 run tp @s ^ ^ ^0.1
+    execute if score @s General.Mob.Tick matches 30..40 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.5
+    execute if score @s General.Mob.Tick matches 40..45 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.3
+    execute if score @s General.Mob.Tick matches 45..50 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.1
 
 # 終わり際のパーティクル
     execute if score @s General.Mob.Tick matches 30..50 run particle dust 0 0.318 0.318 1 ~ ~1 ~ 0.5 0.5 0.5 0 10
