@@ -8,7 +8,6 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.7
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.7
     playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1 1.0
-
 # 斬撃オブジェクトを出す
     data modify storage api: Argument.FieldOverride set value {Item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:0}}},Color:16760576,Frames:[20353,20354,20355],Scale:[7f,7f,0.1f],Transformation:{left_rotation:[0.478f,0.521f,0.596f,-0.38f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     data modify storage api: Argument.ID set value 2001

@@ -8,19 +8,12 @@
 # @private
     #declare score_holder $Interval
 
+# 壁チェック
+    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ~ ~ ~ ~ 0
+    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run scoreboard players set @s General.Mob.Tick 100
+
 # ホーミング
-#    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ ~
-
-# 飛ぶのに使う
-    execute if data entity @s {HurtTime:0s} at @s anchored eyes rotated as @e[type=area_effect_cloud,tag=21.Rotater,sort=nearest,limit=1] run function lib:motion/
-    data remove storage lib: Argument
-
-# 速さ
-    data modify storage lib: Argument.VectorMagnitude set value 0.15
-
-# 飛ぶのに使う
-    execute if data entity @s {HurtTime:0s} at @s anchored eyes rotated as @e[type=area_effect_cloud,tag=21.Rotater,sort=nearest,limit=1] run function lib:motion/
-    data remove storage lib: Argument
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
