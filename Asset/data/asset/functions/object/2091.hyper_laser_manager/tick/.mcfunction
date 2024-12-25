@@ -20,14 +20,14 @@
 # 一定間隔での演出
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $3 Const
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=1..5}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.2
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=6..10}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.3
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=11..15}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.4
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=16..20}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.5
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=21..25}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.7
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=26..30}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.8
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=31..35}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 1.9
-    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=36..}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 1 2.0
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=1..5}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.2
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=6..10}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.3
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=11..15}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.4
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=16..20}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.5
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=21..25}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.7
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=26..30}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.8
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=31..35}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.9
+    execute if score $Interval Temporary matches 0 if entity @s[scores={General.Object.Tick=36..}] run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 2.0
     scoreboard players reset $Interval Temporary
 
 # 演出
