@@ -38,6 +38,7 @@
     #declare tag AK.EntityRoot 本体
     #declare tag AK.ModelRoot かわいいハルクレアのガワ
     #declare tag AK.MainTarget 狙っている対象
+    #declare tag AK.Debug デバッグ中
     #
     # - スキル
     #declare tag AK.Skill.Start 登場

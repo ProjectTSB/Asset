@@ -18,8 +18,8 @@
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "380.HaruclaireV3"
-    data modify storage lib: Args.max set value 6
-    data modify storage lib: Args.scarcity_history_size set value 3
+    data modify storage lib: Args.max set value 7
+    data modify storage lib: Args.scarcity_history_size set value 5
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
@@ -30,6 +30,7 @@
     execute if score $Random Temporary matches 3 run tag @s add AK.Skill.IceSpear
     execute if score $Random Temporary matches 4 run function asset:mob/0380.haruclaire_v3/tick/act/phase_1/punch
     execute if score $Random Temporary matches 5 run tag @s add AK.Skill.SuperIceBullet
+    execute if score $Random Temporary matches 6 run tag @s add AK.Skill.IcePillar
 
 # リセット
     scoreboard players reset $Random Temporary
