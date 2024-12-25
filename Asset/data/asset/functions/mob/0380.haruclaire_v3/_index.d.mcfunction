@@ -34,6 +34,15 @@
     #declare tag aj.haruclaire_aj.animation.9_0_rod_laser.playing
     #declare tag
     #
+    #declare objective aj.0_0_start.frame
+    #declare objective aj.1_0_rod_idle.frame
+    #declare objective aj.3_0_rod_move.frame
+    #declare objective aj.4_0_rod_icewall.frame
+    #declare objective aj.5_0_rod_icebullet.frame
+    #declare objective aj.6_1_rod_super_icebullet.frame
+    #declare objective aj.8_0_rod_punch.frame
+    #declare objective aj.9_0_rod_laser.frame
+    #
     # - 汎用
     #declare tag AK.EntityRoot 本体
     #declare tag AK.ModelRoot かわいいハルクレアのガワ
