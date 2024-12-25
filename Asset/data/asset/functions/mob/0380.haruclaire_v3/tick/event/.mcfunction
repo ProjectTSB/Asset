@@ -8,8 +8,11 @@
     execute if entity @s[tag=AK.Skill.Start] run function asset:mob/0380.haruclaire_v3/tick/event/start/
 
 ## 前半戦
-# アイスバレット
+# アイスバレット・エトワール
     execute if entity @s[tag=AK.Skill.IceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/
+
+# アイスバレット・ソレイユ
+    execute if entity @s[tag=AK.Skill.SuperIceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
 
 # アイスウォール
     execute if entity @s[tag=AK.Skill.IceWall] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall/
@@ -25,8 +28,8 @@
 # ぶんぶんぶん殴り
     execute if entity @s[tag=AK.Skill.Punch] run function asset:mob/0380.haruclaire_v3/tick/event/punch/
 
-# 超アイスバレット
-    execute if entity @s[tag=AK.Skill.SuperIceBullet] run function asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
-
 # アイスレーザー
     execute if entity @s[tag=AK.Skill.IceLaser] run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/
+
+# アイスピラー
+    execute if entity @s[tag=AK.Skill.IcePillar] run function asset:mob/0380.haruclaire_v3/tick/event/ice_pillar/

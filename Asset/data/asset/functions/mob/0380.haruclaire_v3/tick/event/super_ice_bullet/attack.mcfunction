@@ -1,6 +1,6 @@
 #> asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/attack
 #
-# アイスバレット
+# アイスバレット・ソレイユ
 #
 # @within asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
 

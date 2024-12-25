@@ -5,33 +5,41 @@
 # @within asset:object/2155.haruclaire_icelaser/tick/
 
 # ヒット判定
-# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgAwBsAhgCwDsRAxgLQDMAnGUa3WQCY6rGuyIAzVoMrimAVipUG4sLgw0AtgmSAt3wAEARlVgYNAE6aAzknDMA9ngwQkAubnFm7Gm2ABuNFDxtcAAPJApcKHCAX2jcCDsff0DgsDDECLAoxHYKWNw7cXFLOGcM3DI4AC80ODNw3DRLACFq2rMAUQBHPACUKABlU2Y4EkRxAJLYgF0gA_3
-# 線 1
-    execute positioned ^0 ^ ^0 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^1.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^2.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^3.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^6.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^7.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^8.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^10 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^11.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^12.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^13.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^15 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^16.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^17.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^18.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^20 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^21.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^22.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^23.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^26.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^27.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^28.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
-    execute positioned ^0 ^ ^30 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 2
+    data modify storage lib: args.dz set value 35
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    tag @a[tag=DXYZ] add 2155.Hit
+    tag @a[tag=DXYZ] remove DXYZ
+    # 旧
+        # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgAwBsAhgCwDsRAxgLQDMAnGUa3WQCY6rGuyIAzVoMrimAVipUG4sLgw0AtgmSAt3wAEARlVgYNAE6aAzknDMA9ngwQkAubnFm7Gm2ABuNFDxtcAAPJApcKHCAX2jcCDsff0DgsDDECLAoxHYKWNw7cXFLOGcM3DI4AC80ODNw3DRLACFq2rMAUQBHPACUKABlU2Y4EkRxAJLYgF0gA_3
+        # 線 1
+            # execute positioned ^0 ^ ^0 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^1.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^2.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^3.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^6.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^7.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^8.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^10 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^11.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^12.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^13.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^15 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^16.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^17.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^18.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^20 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^21.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^22.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^23.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^26.25 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^27.5 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^28.75 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
+            # execute positioned ^0 ^ ^30 run function asset:object/2155.haruclaire_icelaser/tick/check_hit
 
 # 一定間隔で攻撃
     scoreboard players operation $Interval Temporary = @s General.Object.Tick

@@ -1,11 +1,11 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/end
+#> asset:mob/0380.haruclaire_v3/tick/event/ice_pillar/end
 #
-# アイスバレット・ソレイユ
+# アイスピラー
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/
+# @within asset:mob/0380.haruclaire_v3/tick/event/ice_pillar/
 
 # タグ消去
-    tag @s remove AK.Skill.SuperIceBullet
+    tag @s remove AK.Skill.IcePillar
     tag @a remove AK.MainTarget
 
 # 待機モーション再生

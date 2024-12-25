@@ -26,13 +26,13 @@
     # - AJ自動生成タグ
     #declare tag aj.haruclaire_aj.animation.0_0_start.playing
     #declare tag aj.haruclaire_aj.animation.1_0_rod_idle.playing
-    #declare tag aj.haruclaire_aj.animation.4_0_rod_icewall.playing
     #declare tag aj.haruclaire_aj.animation.3_0_rod_move.playing
-    #declare tag aj.haruclaire_aj.animation.8_0_rod_punch.playing
+    #declare tag aj.haruclaire_aj.animation.4_0_rod_icewall.playing
     #declare tag aj.haruclaire_aj.animation.5_0_rod_icebullet.playing
+    #declare tag aj.haruclaire_aj.animation.6_0_rod_icefang
     #declare tag aj.haruclaire_aj.animation.6_1_rod_super_icebullet.playing
+    #declare tag aj.haruclaire_aj.animation.8_0_rod_punch.playing
     #declare tag aj.haruclaire_aj.animation.9_0_rod_laser.playing
-    #declare tag
     #
     # - 汎用
     #declare tag AK.EntityRoot 本体
@@ -42,13 +42,14 @@
     # - スキル
     #declare tag AK.Skill.Start 登場
     #declare tag AK.Skill.Move 移動
-    #declare tag AK.Skill.IceBullet アイスバレット
+    #declare tag AK.Skill.IceBullet アイスバレット・エトワール
     #declare tag AK.Skill.IceWall アイスウォール
     #declare tag AK.Skill.IceSiege アイスシージ
     #declare tag AK.Skill.IceSpear アイススピア
     #declare tag AK.Skill.Punch ぶんぶんぶん殴り
-    #declare tag AK.Skill.SuperIceBullet 超アイスバレット
+    #declare tag AK.Skill.SuperIceBullet アイスバレット・ソレイユ
     #declare tag AK.Skill.IceLaser アイスレーザー
+    #declare tag AK.Skill.IcePillar アイスピラー
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置

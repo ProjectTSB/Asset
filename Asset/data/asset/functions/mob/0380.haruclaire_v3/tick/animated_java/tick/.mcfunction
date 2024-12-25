@@ -21,10 +21,10 @@
 # ぶんぶんぶん殴り
     execute if entity @s[tag=aj.haruclaire_aj.animation.8_0_rod_punch.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/8_0_rod_punch
 
-# アイスバレット
+# アイスバレット・エトワール
     execute if entity @s[tag=aj.haruclaire_aj.animation.5_0_rod_icebullet.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/5_0_rod_icebullet
 
-# 超アイスバレット
+# アイスバレット・ソレイユ
     execute if entity @s[tag=aj.haruclaire_aj.animation.6_1_rod_super_icebullet.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/6_1_rod_super_icebullet
 
 # アイスレーザー
