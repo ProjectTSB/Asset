@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashslash/windup_2
+#> asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/slash/windup_2
 #
 # 予告その2
 #

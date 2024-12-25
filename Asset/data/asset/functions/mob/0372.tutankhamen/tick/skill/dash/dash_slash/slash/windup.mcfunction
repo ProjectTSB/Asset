@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashslash/windup
+#> asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/slash/windup
 #
 # 斬撃前には構えるものだ
 #

@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashslash/damage
+#> asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/slash/damage
 #
 # 発動、ってかダメージ部分
 #
