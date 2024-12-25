@@ -5,9 +5,9 @@
 # @within asset:object/alias/2092/init
 
 # 演出
-    particle soul ~ ~ ~ 0 0 0 0.05 20 normal @a
-    playsound block.sculk_sensor.clicking hostile @a ~ ~ ~ 0.8 0 0
-    playsound block.fire.ambient hostile @a ~ ~ ~ 1.5 0.8 0
+    particle soul_fire_flame ~ ~ ~ 0.2 0.2 0.2 0.03 20
+    playsound block.sculk_sensor.clicking neutral @a ~ ~ ~ 2 0
+    playsound block.fire.ambient neutral @a ~ ~ ~ 2 0.8
 
 # StartDelay
     execute store result score @s General.Object.Tick run data get storage asset:context this.StartDelay -1
