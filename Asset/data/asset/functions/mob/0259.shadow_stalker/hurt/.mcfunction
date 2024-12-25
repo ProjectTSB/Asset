@@ -6,7 +6,7 @@
 
 # 透明状態の時、被ダメ時にテレポート
 # 拡散値
-    execute if entity @s[tag=77.Dark] run data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,1d],[5d,5d]]
+    execute if entity @s[tag=77.Dark] run data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,1d],[3d,3d]]
 # 拡散する
     execute if entity @s[tag=77.Dark] at @a[gamemode=!spectator,distance=..30,sort=random,limit=1] run function lib:spread_entity/
 
