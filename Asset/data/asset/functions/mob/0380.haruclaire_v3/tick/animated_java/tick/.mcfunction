@@ -29,3 +29,6 @@
 
 # アイスレーザー
     execute if entity @s[tag=aj.haruclaire_aj.animation.9_0_rod_laser.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/9_0_rod_laser
+
+# アイスピラー
+    execute if entity @s[tag=aj.haruclaire_aj.animation.6_0_rod_icefang.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/6_0_rod_icefang

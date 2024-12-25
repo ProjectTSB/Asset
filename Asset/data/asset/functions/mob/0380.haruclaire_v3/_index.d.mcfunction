@@ -29,10 +29,21 @@
     #declare tag aj.haruclaire_aj.animation.3_0_rod_move.playing
     #declare tag aj.haruclaire_aj.animation.4_0_rod_icewall.playing
     #declare tag aj.haruclaire_aj.animation.5_0_rod_icebullet.playing
-    #declare tag aj.haruclaire_aj.animation.6_0_rod_icefang
+    #declare tag aj.haruclaire_aj.animation.6_0_rod_icefang.playing
     #declare tag aj.haruclaire_aj.animation.6_1_rod_super_icebullet.playing
     #declare tag aj.haruclaire_aj.animation.8_0_rod_punch.playing
     #declare tag aj.haruclaire_aj.animation.9_0_rod_laser.playing
+    #
+    # - AJ自動生成スコア
+    #declare objective aj.0_0_start.frame
+    #declare objective aj.1_0_rod_idle.frame
+    #declare objective aj.3_0_rod_move.frame
+    #declare objective aj.4_0_rod_icewall.frame
+    #declare objective aj.5_0_rod_icebullet.frame
+    #declare objective aj.6_0_rod_icefang.frame
+    #declare objective aj.6_1_rod_super_icebullet.frame
+    #declare objective aj.8_0_rod_punch.frame
+    #declare objective aj.9_0_rod_laser.frame
     #
     # - 汎用
     #declare tag AK.EntityRoot 本体

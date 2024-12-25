@@ -5,4 +5,4 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/ice_pillar/summon_attack_position
 
 # キル
-    $kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,limit=$(Count)]
+    $kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=$(Count)]
