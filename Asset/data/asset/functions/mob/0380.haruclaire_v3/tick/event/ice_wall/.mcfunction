@@ -8,7 +8,7 @@
     scoreboard players add @s AK.EventTimer 1
 
 # ターゲット決定
-    execute if score @s AK.EventTimer matches 1 run tag @p[distance=..50] add AK.MainTarget
+    function asset:mob/0380.haruclaire_v3/tick/util/check_target
 
 # 発射
     # アニメーション再生
