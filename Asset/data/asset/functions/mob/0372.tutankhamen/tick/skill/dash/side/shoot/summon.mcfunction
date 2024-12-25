@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/shoot/summon
+#> asset:mob/0372.tutankhamen/tick/skill/dash/side/shoot/summon
 #
 #
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/shoot/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/side/shoot/
 
 # データ設定
     execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.ManyShoot

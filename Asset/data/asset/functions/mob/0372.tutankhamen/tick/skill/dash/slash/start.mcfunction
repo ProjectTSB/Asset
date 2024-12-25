@@ -2,7 +2,7 @@
 #
 # ダッシュ開始
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slash
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/slash/
 
 # アニメ開始
     execute as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/dash/tween {to_frame: 0, duration: 1}

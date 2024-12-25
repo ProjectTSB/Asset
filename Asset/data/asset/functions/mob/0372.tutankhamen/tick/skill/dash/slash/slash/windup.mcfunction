@@ -2,7 +2,7 @@
 #
 # 斬撃前には構えるものだ
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slash
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/
 
 # アニメ
     execute as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/attack_dash_1/tween {to_frame: 0, duration: 5}

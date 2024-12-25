@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/move
+#> asset:mob/0372.tutankhamen/tick/skill/dash/side/move
 #
 #
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/side/
 
 # 横に移動
     execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ ~

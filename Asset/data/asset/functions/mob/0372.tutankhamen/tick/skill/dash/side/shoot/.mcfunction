@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/shoot/
+#> asset:mob/0372.tutankhamen/tick/skill/dash/side/shoot/
 #
 #
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/side/
 
 #> 攻撃のインターバルのスコアホルダー
 # @private
@@ -13,5 +13,5 @@
 
 # 数Tickごとにサウンド
     scoreboard players operation $AttackInterval Temporary %= $2 Const
-    execute if score $AttackInterval Temporary matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/side/shoot/summon
+    execute if score $AttackInterval Temporary matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/side/shoot/summon
     scoreboard players reset $AttackInterval Temporary
