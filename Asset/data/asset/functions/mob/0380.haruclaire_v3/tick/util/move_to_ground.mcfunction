@@ -2,8 +2,9 @@
 #
 # 汎用処理 接地
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/**
-# @within asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor
+# @within
+#   asset:mob/0380.haruclaire_v3/tick/event/**
+#   asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor
 
 # 接地
     summon area_effect_cloud ~ ~ ~ {Duration:1,Tags:["AK.Temp.Ground"]}

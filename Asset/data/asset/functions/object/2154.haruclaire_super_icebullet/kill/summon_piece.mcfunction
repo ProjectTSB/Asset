@@ -1,9 +1,8 @@
-#> asset:object/2154.haruclaire_super_icebullet/hit_block/summon_piece
+#> asset:object/2154.haruclaire_super_icebullet/kill/summon_piece
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/2154.haruclaire_super_icebullet/hit_block/
-# @within asset:object/2154.haruclaire_super_icebullet/hit_entity/
+# @within asset:object/2154.haruclaire_super_icebullet/kill/
 
 # 回転
     execute at @s run tp @s ~ ~ ~ ~ -60

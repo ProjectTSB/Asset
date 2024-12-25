@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:object/2153.haruclaire_thrown_rod/**
+    scoreboard objectives add 2153.Sub dummy
     scoreboard objectives add 2153.CoolTime dummy

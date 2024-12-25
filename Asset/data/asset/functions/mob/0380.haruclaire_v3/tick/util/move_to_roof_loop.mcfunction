@@ -2,8 +2,9 @@
 #
 # 汎用処理 接地
 #
-# @within asset:mob/0380.haruclaire_v3/tick/util/move_to_roof
-# @within asset:mob/0380.haruclaire_v3/tick/util/move_to_roof_loop
+# @within
+#   asset:mob/0380.haruclaire_v3/tick/util/move_to_roof
+#   asset:mob/0380.haruclaire_v3/tick/util/move_to_roof_loop
 
 # 接地するまで繰り返す
     scoreboard players remove @s AK.Counter 1

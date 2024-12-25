@@ -28,12 +28,12 @@
         execute if score @s AK.EventTimer matches 144 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 112 at @s run particle firework ^ ^2.5 ^0.5 0 0 0 0.5 30
     # 攻撃地点設置
-        execute if score @s AK.EventTimer matches 15..18 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 35..38 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 55..58 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 70..73 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 80..83 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 85..104 at @r[distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 15..18 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 35..38 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 55..58 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 70..73 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 80..83 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
+        execute if score @s AK.EventTimer matches 85..104 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
 
     # 攻撃
         execute if score @s AK.EventTimer matches 35..38 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/attack
