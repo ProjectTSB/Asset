@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash_slash/slash/windup_2
+#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashslash/windup_2
 #
 # 予告その2
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slash
 
 # 演出
     playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1 2

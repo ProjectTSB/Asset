@@ -2,13 +2,12 @@
 #
 #
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/**
+# @within function
+#   asset:mob/0372.tutankhamen/tick/skill/**
+#   asset:mob/0372.tutankhamen/hurt/active_50per
 
 # スコアをセット
     scoreboard players set @s General.Mob.Tick -10
-
-# アニメーションを元に戻す
-    execute as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/neutral/tween {to_frame: 0, duration: 5}
 
 # Tagを削除
     tag @s remove AC.Opening

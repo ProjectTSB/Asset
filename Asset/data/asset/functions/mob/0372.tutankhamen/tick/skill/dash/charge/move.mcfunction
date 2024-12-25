@@ -1,15 +1,15 @@
-#> asset:mob/0372.tutankhamen/tick/skill/charge/move
+#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/move
 #
 # 高速突進とダメージ
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/charge/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/
 
 #> インターバルのスコアホルダー
 # @private
     #declare score_holder $Interval
 
 # 弱ホーミングダッシュ
-    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-80 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1.5 ~ 0
+    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-80 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1.5 ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

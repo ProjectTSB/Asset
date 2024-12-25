@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/charge/backstep
+#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/backstep
 #
 # バックステップ
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/charge/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/
 
 # プレイヤーのほうを向く
     execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 0

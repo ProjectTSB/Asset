@@ -1,8 +1,8 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash_slash/slash/damage
+#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashslash/damage
 #
 # 発動、ってかダメージ部分
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slash
 
 # 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.7

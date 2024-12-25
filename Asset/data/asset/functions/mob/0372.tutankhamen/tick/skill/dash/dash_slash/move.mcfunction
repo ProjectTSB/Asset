@@ -1,15 +1,15 @@
-#> asset:mob/0372.tutankhamen/tick/skill/dash_slash/move
+#> asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slashmove
 #
 # 移動処理
 #
-# @within function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/charge/dash_slash
 
 #> インターバルのスコアホルダー
 # @private
     #declare score_holder $Interval
 
 # ホーミング
-    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ 0 run tp @s ^ ^ ^1 ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
