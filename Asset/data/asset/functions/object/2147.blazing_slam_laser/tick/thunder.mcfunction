@@ -34,9 +34,9 @@
 # ダメージ設定
     # 与えるダメージ
         data modify storage api: Argument.Damage set value 30.0f
-    # 魔法属性
+    # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
-    # 雷属性
+    # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
     # 円形の範囲、または上方向に当たったらダメージ
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
