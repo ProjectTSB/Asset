@@ -21,7 +21,7 @@
     # 雷属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # 死亡ログ
-        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージ
         function api:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function api:damage/

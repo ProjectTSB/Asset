@@ -21,7 +21,7 @@
     # 全てを...消し飛ばす
         data modify storage api: Argument.FixedDamage set value true
     # 死亡ログ
-        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの絶望の光球によって消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの絶望の光球によって消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージ(厳密な紐づけじゃないけど許して)
         execute as @e[type=zombie,scores={MobID=46},distance=..100,limit=1] run function api:damage/modifier
         execute as @a[gamemode=!creative,distance=..2.5] at @s run function api:damage/
