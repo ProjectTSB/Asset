@@ -7,14 +7,14 @@
 #   asset:object/2091.hyper_laser_manager/tick/recursive
 
 # 演出
-    particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.08 2 normal @a
-    particle soul_fire_flame ^ ^ ^0.25 0.1 0.1 0.1 0.08 2 normal @a
-    particle soul ~ ~ ~ 0 0 0 0.25 3 normal @a
+    execute if predicate lib:random_pass_per/75 run particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.08 1 normal @a
+    execute if predicate lib:random_pass_per/75 run particle soul_fire_flame ^ ^ ^0.25 0.1 0.1 0.1 0.08 1 normal @a
+    execute if predicate lib:random_pass_per/50 run particle soul ~ ~ ~ 0.5 .5 0.5 0.25 1 normal @a
 
 # 一定間隔での演出
     scoreboard players operation $Interval Temporary = $Recursive Temporary
     scoreboard players operation $Interval Temporary %= $5 Const
-    execute if score $Interval Temporary matches 0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1
+#    execute if score $Interval Temporary matches 0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1
     scoreboard players reset $Interval Temporary
 
 # 再帰スコア

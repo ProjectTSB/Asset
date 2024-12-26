@@ -4,12 +4,14 @@
 #
 # @within function asset:object/2091.hyper_laser_manager/tick/
 
-# vfx
+# サウンドと図形での演出
+    particle minecraft:dust 0 1 1 2 ~ ~ ~ 0.7 0.7 0.7 0 100
     function asset:object/2091.hyper_laser_manager/tick/vfx
-    execute as @a[distance=..32] at @s facing entity @e[type=marker,tag=this,distance=..30] eyes positioned ^ ^ ^1 run playsound minecraft:entity.warden.sonic_boom hostile @s ~ ~ ~ 1 1.8
-    execute as @a[distance=..32] at @s facing entity @e[type=marker,tag=this,distance=..30] eyes positioned ^ ^ ^1 run playsound minecraft:entity.warden.sonic_boom hostile @s ~ ~ ~ 1 1.6
+    execute as @a[distance=..32] at @s facing entity @e[type=marker,tag=this,distance=..30] eyes positioned ^ ^ ^1 run playsound minecraft:entity.warden.sonic_boom hostile @s ~ ~ ~ 0.7 1.8
+    execute as @a[distance=..32] at @s facing entity @e[type=marker,tag=this,distance=..30] eyes positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete2 hostile @a ~ ~ ~ 0.7 1
+    execute as @a[distance=..32] at @s facing entity @e[type=marker,tag=this,distance=..30] eyes positioned ^ ^ ^1 run playsound minecraft:entity.breeze.death hostile @a ~ ~ ~ 0.7 0.7
 
-# 発射
+# 再帰パーティクル演出
     function asset:object/2091.hyper_laser_manager/tick/recursive
     scoreboard players reset $Recursive Temporary
 
@@ -22,7 +24,7 @@
 
 # ダメージを与える
     # データ設定
-        data modify storage api: Argument.Damage set value 45.0f
+        data modify storage api: Argument.Damage set value 50.0f
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Fire"
     # tag付けされたプレイヤーにダメージを与える

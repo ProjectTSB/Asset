@@ -13,10 +13,8 @@
 # 前方に魔法陣を召喚
     execute if score @s General.Object.Tick matches 1 run data modify storage api: Argument.FieldOverride set value {Scale:[4.2f,4.2f,0.01f],Color:5436415}
     execute if score @s General.Object.Tick matches 1 anchored eyes positioned ^ ^ ^ run function asset:object/2091.hyper_laser_manager/tick/summon_square
-
     execute if score @s General.Object.Tick matches 2 run data modify storage api: Argument.FieldOverride set value {Scale:[2.8f,2.8f,0.01f],CMD:20444,Color:5436415,LeftRotate:true}
     execute if score @s General.Object.Tick matches 2 anchored eyes positioned ^ ^ ^0.2 run function asset:object/2091.hyper_laser_manager/tick/summon_square
-
     execute if score @s General.Object.Tick matches 3 run data modify storage api: Argument.FieldOverride set value {Scale:[1.4f,1.4f,0.01f],CMD:20444,Color:5436415}
     execute if score @s General.Object.Tick matches 3 anchored eyes positioned ^ ^ ^0.4 run function asset:object/2091.hyper_laser_manager/tick/summon_square
 
@@ -32,6 +30,9 @@
     execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 31..35 run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 1.9
     execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 35.. run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 0.5 2.0
     scoreboard players reset $Interval Temporary
+
+# ビーム！
+    execute if score @s General.Object.Tick matches 42 run function asset:object/2091.hyper_laser_manager/tick/summon_laser
 
 # 発射
     execute if score @s General.Object.Tick matches 42 anchored eyes positioned ^ ^ ^ run function asset:object/2091.hyper_laser_manager/tick/shoot
