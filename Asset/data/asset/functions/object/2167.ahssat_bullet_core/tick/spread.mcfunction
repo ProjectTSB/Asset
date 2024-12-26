@@ -17,5 +17,5 @@
 # 発射
     execute positioned ~ ~ ~ facing entity @e[type=marker,tag=2167.Marker,distance=..15,limit=1] feet run function asset:object/2167.ahssat_bullet_core/tick/summon
 
-# マーカーを戻してあげる
+# マーカーをキル
     kill @e[type=marker,tag=2167.Marker,distance=..15]

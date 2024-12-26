@@ -8,7 +8,7 @@
     execute store result score $BK.Temp Temporary run data get storage asset:context this.DeathCount
 
 # DeathCountが2以上なら打ち切り
-    execute if score $BK.Temp Temporary matches 2.. run return fail
+    execute if score $BK.Temp Temporary matches 2.. run return run scoreboard players reset $BK.Temp Temporary
 
 # DeathCountを+1
     scoreboard players add $BK.Temp Temporary 1
