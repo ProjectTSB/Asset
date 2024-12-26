@@ -60,7 +60,7 @@
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1.4
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.8
+        data modify storage asset:mob Resist.Water set value 0.7
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
 
