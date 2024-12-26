@@ -19,7 +19,7 @@
         execute if data storage asset:temp Projectile{IsHitEntity:true} run function asset:mob/call.m {method:hit_entity}
 
 # 直進
-    tp @s ^ ^ ^0.5
+    tp @s ^ ^ ^0.4
 
 # リセット
     data remove storage asset:temp Projectile
