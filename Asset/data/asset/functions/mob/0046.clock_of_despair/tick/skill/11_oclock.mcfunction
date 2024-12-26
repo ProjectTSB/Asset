@@ -24,25 +24,25 @@
 
 # 時計レーザー
 # + + -> - -
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection1] positioned ~007 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection1] if predicate api:global_vars/difficulty/min/hard positioned ~016 ~6 ~007 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection1] positioned ~-07 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection1] if predicate api:global_vars/difficulty/min/hard positioned ~-16 ~6 ~-07 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection1] positioned ~006 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection1] if predicate api:global_vars/difficulty/min/hard positioned ~016 ~6 ~006 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection1] positioned ~-06 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection1] if predicate api:global_vars/difficulty/min/hard positioned ~-16 ~6 ~-06 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 # + - -> - +
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection2] if predicate api:global_vars/difficulty/min/hard positioned ~007 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection2] positioned ~016 ~6 ~-07 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection2] if predicate api:global_vars/difficulty/min/hard positioned ~-07 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection2] positioned ~-16 ~6 ~007 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection2] if predicate api:global_vars/difficulty/min/hard positioned ~006 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection2] positioned ~016 ~6 ~-06 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection2] if predicate api:global_vars/difficulty/min/hard positioned ~-06 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection2] positioned ~-16 ~6 ~006 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 # - + -> + -
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection3] positioned ~-07 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection3] if predicate api:global_vars/difficulty/min/hard positioned ~016 ~6 ~007 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection3] positioned ~007 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection3] if predicate api:global_vars/difficulty/min/hard positioned ~-16 ~6 ~-07 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection3] positioned ~-06 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection3] if predicate api:global_vars/difficulty/min/hard positioned ~016 ~6 ~006 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection3] positioned ~006 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection3] if predicate api:global_vars/difficulty/min/hard positioned ~-16 ~6 ~-06 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 # - - -> + +
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection4] if predicate api:global_vars/difficulty/min/hard positioned ~-07 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection4] positioned ~016 ~6 ~-07 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection4] if predicate api:global_vars/difficulty/min/hard positioned ~007 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection4] positioned ~-16 ~6 ~007 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection4] if predicate api:global_vars/difficulty/min/hard positioned ~-06 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2205 if entity @s[tag=1A.LaserDirection4] positioned ~016 ~6 ~-06 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection4] if predicate api:global_vars/difficulty/min/hard positioned ~006 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+    execute if score @s 1A.LifeTime matches 2230 if entity @s[tag=1A.LaserDirection4] positioned ~-16 ~6 ~006 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 
 # タグ削除
     execute if score @s 1A.LifeTime matches 2230 run tag @s remove 1A.LaserDirection1
