@@ -16,5 +16,5 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1200
 # フィールド
-    data modify storage asset:mob Field.Damage set value 27
+    data modify storage asset:mob Field.Damage set value 42
     # data modify storage asset:mob Field.Pierce set value
