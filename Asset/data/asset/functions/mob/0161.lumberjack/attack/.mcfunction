@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/161/attack
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 11f
+    data modify storage lib: Argument.Damage set value 4.5f
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
