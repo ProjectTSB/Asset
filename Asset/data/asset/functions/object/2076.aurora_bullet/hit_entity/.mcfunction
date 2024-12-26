@@ -16,7 +16,7 @@
     function api:damage/reset
 
 # デバフを付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] if data storage asset:context this{Debuff:true} run function asset:object/2076.aurora_bullet/hit_entity/debuff
+    execute if data storage asset:context this{Debuff:true} run function asset:object/2076.aurora_bullet/hit_entity/debuff
 
 # 消滅
     kill @s

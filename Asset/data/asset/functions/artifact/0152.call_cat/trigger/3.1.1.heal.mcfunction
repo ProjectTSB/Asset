@@ -12,7 +12,7 @@
 
 # 回復
     # 引数の設定
-        data modify storage lib: Argument.Heal set value 2.0f
+        data modify storage lib: Argument.Heal set value 4.0f
     # 補正function
         function lib:heal/modifier
     # 実行（既に4回回復した場合は実行しない）

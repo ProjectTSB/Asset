@@ -30,6 +30,7 @@
 # ヒットしたら魔法攻撃バフ
     execute if entity @s[tag=Landing] run data modify storage api: Argument.ID set value 212
     execute if entity @s[tag=Landing] run function api:entity/mob/effect/give
+    execute if entity @s[tag=Landing] run function api:entity/mob/effect/reset
 
 # 再帰処理のリセット
     tag @e[type=#lib:living,tag=Hit,distance=..15] remove Hit

@@ -32,3 +32,4 @@
     data modify storage api: Argument.ID set value 608
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

@@ -23,6 +23,7 @@
     data modify storage api: Argument.Duration set value 100
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 与えるダメージ
     data modify storage api: Argument.Damage set value 41f
