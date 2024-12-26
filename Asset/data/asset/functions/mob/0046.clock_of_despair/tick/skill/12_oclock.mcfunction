@@ -14,7 +14,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 0
 
 # 自害
-    kill @s
+    function api:mob/kill
 
 # お掃除
     kill @e[type=item_display,tag=1A.ClockFrame]
