@@ -11,7 +11,7 @@
     playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 2 0.7
 
 # 付近のしもべをキル
-    execute as @e[type=blaze,scores={MobID=313},distance=..64] run api:mob/kill
+    execute as @e[type=blaze,scores={MobID=313},distance=..64] run function api:mob/kill
 
 # 自分のマーカーを削除
     kill @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1]
