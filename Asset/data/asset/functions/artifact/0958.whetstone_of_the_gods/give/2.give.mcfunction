@@ -15,9 +15,11 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"神々の砥石","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"その砥石で砥がれた剣は、"}','{"text":"邪悪な敵をも切る鋭さを持つ"}','{"text":"砥ぐ際に、材質に応じたMP最大値を必要とする"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"剣または斧を研ぎ、神器へ昇華させる","color":"white"}','{"text":"砥ぐ際に、材質に応じた攻略度を必要とする","color":"white"}','{"text":"その砥石で砥がれた武器は","color":"gray"}','{"text":"邪悪な敵をも切る鋭さを持つ","color":"gray"}']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 4
 # 神器を発動できるスロット (string) Wikiを参照
@@ -25,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"メインハンドに剣を持っている"}'
+    data modify storage asset:artifact Condition set value '{"text":"メインハンドに剣または斧を持っている"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"アロクロマティック","color":"#a1faf5"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"-使用時、銃撃を放ち、共鳴・","color":"white"},{"text":"蒼","color":"#a1faf5"},{"text":"効果を得る。","color":"white"}]','{"text":"-自身または周囲のプレイヤーが","color":"white"}','[{"text":"共鳴・","color":"white"},{"text":"紅","color":"#ffbfd4"},{"text":"効果を持つなら性能が強化される。","color":"white"}]','{"text":"-スニーク時、射撃精度が向上","color":"white"}','{"text":"-リロード可能","color":"white"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"正確無比かつ冷酷に、敵の急所を撃ち抜く。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 16
 # 神器を発動できるスロット (string) Wikiを参照

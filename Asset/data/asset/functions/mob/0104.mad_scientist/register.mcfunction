@@ -4,7 +4,7 @@
 # ID (int)
     data modify storage asset:mob ID set value 104
 # Type (string) Wikiを参照
-    data modify storage asset:mob Type set value "Enemy.Boss"
+    data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
@@ -28,9 +28,9 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 25000
+    data modify storage asset:mob Health set value 1000
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 16
+    data modify storage asset:mob AttackDamage set value 15
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value -7
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
@@ -52,3 +52,13 @@
         data modify storage asset:mob Resist.Water set value 1.0
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
+
+# フィールド
+# ダメージの属性別設定
+    data modify storage asset:mob Field.Damage set value {Fire:24.0f,Water:16.0f,Thunder:16.0f}
+
+# 毒ポーションの設定
+    data modify storage asset:mob Field.Poison set value {Duration:5,Amplifier:6}
+
+# 基礎MP減少量設定
+    data modify storage asset:mob Field.MPReduceVal set value -8

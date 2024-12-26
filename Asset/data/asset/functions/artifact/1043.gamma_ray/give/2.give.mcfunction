@@ -16,10 +16,12 @@
     data modify storage asset:artifact Name set value '{"text":"ガンマ・レイ","bold":true,"color":"#ffffe0"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"スニークを解除した瞬間、まばゆい光線を放つ","color":"white","italic":false}','{"text":"溜めれば溜めるほどダメージがあがるだろう","color":"white","italic":false}','{"text":"「なんで みんな 最初に 必殺技を つかわないんだろう」","color":"gray","italic":false}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value 
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    # data modify storage asset:artifact RemainingCount set value 
+    # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -33,23 +35,23 @@
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.ElementType set value [None]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.BypassResist set value 
+    # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "condition"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 24
-# MP消費量 (int) 
+# MP消費量 (int)
     data modify storage asset:artifact MPCost set value 75
 # MP必要量 (int) (オプション)
-    # data modify storage asset:artifact MPRequire set value 
+    # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 300
 # グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value 
+    # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value 
+    # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value 
+    # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora","Nyaptov","Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

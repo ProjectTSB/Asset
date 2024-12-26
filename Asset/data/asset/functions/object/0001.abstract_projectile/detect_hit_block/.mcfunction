@@ -6,6 +6,3 @@
 
 # 判定
     execute unless block ~ ~ ~ #lib:no_collision run data modify storage asset:context IsHitBlock set value true
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

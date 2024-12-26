@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1017.cutlass_of_endless_silence/trigger/rejoin_process",
+        "asset:artifact/1065.magic_bullet/trigger/rejoin_process",
+        "asset:artifact/1141.bell_of_courage/trigger/rejoin_process",
+        "asset:artifact/1110.lantern_of_firefly/trigger/rejoin_process",
         "asset:artifact/0002.blessing/trigger/rejoin_process",
         "asset:artifact/1024.brave_rod/trigger/rejoin_process",
         "asset:artifact/0837.the_world_knife/trigger/rejoin_process",
@@ -20,7 +24,6 @@
         "asset:artifact/0730.lake_reflecting_starry_sky/trigger/rejoin_process",
         "asset:artifact/0738.voltage_striker/trigger/rejoin_process",
         "asset:artifact/0606.traffic_sign/trigger/rejoin_process",
-        "asset:artifact/1033.thelema_of_blue_sea/trigger/rejoin_process",
         "asset:artifact/1043.gamma_ray/trigger/rejoin_process",
         "asset:artifact/1037.grand_flame/trigger/rejoin_process",
         "asset:artifact/1034.eiya/trigger/rejoin_process",
@@ -29,7 +32,6 @@
         "asset:artifact/0976.brave_sword/trigger/rejoin_process",
         "asset:artifact/0953.meteor_rain/trigger/rejoin_process",
         "asset:artifact/0981.soulfire_burst/trigger/rejoin_process",
-        "asset:artifact/0295.call_elemental_familiar/trigger/rejoin_process",
         "asset:mob/0120.convict/rejoin_process",
         "asset:artifact/0172.icicle/trigger/rejoin_process",
         "asset:artifact/0793.queen_bee_rocket/trigger/rejoin_process",
@@ -40,7 +42,6 @@
         "asset:mob/0262.frestchika/rejoin_process",
         "asset:artifact/0905.book_of_metastasis/trigger/rejoin_process",
         "asset:artifact/0907.rod_of_rain/trigger/rejoin_process",
-        "asset:mob/0217.medousa_eye/rejoin_process",
         "asset:mob/1008.yellow_star/rejoin_process",
         "asset:mob/1005.blue_star/rejoin_process",
         "asset:mob/1004.tultaria/rejoin_process",

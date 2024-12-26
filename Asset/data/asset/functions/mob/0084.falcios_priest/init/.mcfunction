@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/84/init
 
 # スコア初期化
-    scoreboard players set @s 2C.Tick -80
+    scoreboard players set @s General.Mob.Tick -80

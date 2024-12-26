@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"天鍵杖","color":"aqua"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"天候を固定し、その力を授かる。"}','{"text":"時雨 驟雨 零雨 五月","color":"gray"}','{"text":"淡雪 霙 野分に唄え","color":"gray"}','{"text":"東風 南風 北風 西風","color":"gray"}','{"text":"夜風を散らし 晴嵐に舞え","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

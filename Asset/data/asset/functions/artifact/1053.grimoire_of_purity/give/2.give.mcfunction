@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"純化の呪書","bold":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"","extra":[{"text":"攻撃力 +20%","color":"dark_green"},{"text":" "},{"text":"属性攻撃力 -30%","color":"dark_red"}]}','{"text":"魂を漂白し、何も持たぬ命へと","color":"gray"}','{"text":"変える力を持つ呪書。","color":"gray"}','{"text":"強固な意志を以てすれば、","color":"gray"}','{"text":"力の一端を引き出し","color":"gray"}','{"text":"純然たる破壊の力を高めることができる。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

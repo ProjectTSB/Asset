@@ -65,4 +65,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.5
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.Damage set value {1st:20f,2nd:20f}

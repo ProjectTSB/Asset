@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"ホーリーシンボル レベル10"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"聖なる魔法陣を生成し"}','{"text":"発動者および味方の精神を浄化する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"1秒ごとにMPを","color":"white"},{"text":"19","color":"#6e99ff"},{"text":"回復する。","color":"white"}]','{"text":"22秒間、物理/魔法ダメージ、攻撃速度が","color":"white"}','[{"text":"19","color":"#6e99ff"},{"text":"%増加する。","color":"white"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

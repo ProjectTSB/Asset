@@ -1,6 +1,18 @@
 #> asset:mob/0078.messenger_of_thunder/register
-# @within asset:mob/alias/78/register
+#
+# Mobのデータを指定
+#
+# @within function asset:mob/alias/78/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 78
 # Type (string) Wikiを参照
@@ -9,6 +21,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"雷鳴之使","color":"#D9B111"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:20188,Enchantments:[{id:"punch",lvl:1s}]}}
@@ -26,7 +40,7 @@
     # 足 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Feet set value
 # 防具ドロップ率 ([float, float]) (オプション)
-    data modify storage asset:mob ArmorDropChances set value [0.0f,0.0f,0.0f,0.0f]
+    # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 25000
 # 攻撃力 (double) (オプション)
@@ -43,12 +57,20 @@
     data modify storage asset:mob KnockBackResist set value 0.875
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 0.5
+        data modify storage asset:mob Resist.Physical set value 1
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.8
+        data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
+
+# フィールド
+# 各スキルのダメージ設定
+    data modify storage asset:mob Field.Damage.Vanilla set value {Normal:18.0f,HPLess50Per:25.0f}
+    data modify storage asset:mob Field.Damage.Thunder set value 20.0f
+    data modify storage asset:mob Field.Damage.Return set value {Normal:16.0f,Hard:22.5f}
+    data modify storage asset:mob Field.Damage.Curtain set value {Normal:15.0f,Hard:18.0f}
+    data modify storage asset:mob Field.Damage.Cross set value 25.0f

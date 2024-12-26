@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"4・5・6ダイス","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"4・5・6しか出ない変なサイコロ。"}','[{"text":"サイコロは近くの敵1体に"},{"text":"火 ","color":"red"},{"text":"水 ","color":"aqua"},{"text":"雷","color":"yellow"},{"text":"属性の攻撃を行う。","color":"white"}]','{"text":"攻撃回数は出目によって変わる。"}','{"text":"\\"バレバレのイカサマ\\"","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1216.sharpened_netherite_axe/trigger/1.trigger",
+        "asset:artifact/1215.sharpened_diamond_axe/trigger/1.trigger",
+        "asset:artifact/1214.sharpened_golden_axe/trigger/1.trigger",
+        "asset:artifact/1213.sharpened_iron_axe/trigger/1.trigger",
+        "asset:artifact/1212.sharpened_stone_axe/trigger/1.trigger",
+        "asset:artifact/1211.sharpened_wooden_axe/trigger/1.trigger",
         "asset:artifact/1028.executioner_axe/trigger/1.trigger",
         "asset:artifact/0600.xtal/trigger/1.trigger",
         "asset:artifact/0643.raimei_chestplate/trigger/1.1.attacktrigger",

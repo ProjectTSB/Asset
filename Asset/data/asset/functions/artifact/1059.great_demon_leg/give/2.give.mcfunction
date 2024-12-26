@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"豪鬼","color":"#A6A6A6","bold":true},{"text":"の脛当","color":"white","bold":true}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+5% 物理耐性+7.5%","color":"dark_green"}]','[{"text":"魔法攻撃-5% 魔法耐性-5%","color":"dark_red"}]','[{"text":"人々に倒された鬼は地下に幽閉された","color":"#A6A6A6","italic":true}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

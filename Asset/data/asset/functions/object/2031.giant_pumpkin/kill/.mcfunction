@@ -16,7 +16,7 @@
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 1.7 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 15
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Clash
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID

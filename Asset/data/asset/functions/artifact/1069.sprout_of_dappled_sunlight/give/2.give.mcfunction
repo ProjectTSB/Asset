@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"木洩れ日の新芽","color":"#A2FF94"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"発動時、MP回復量+12%を10秒間得る。","color":"white"}','{"text":"暖かな日差しの下で萌え出る新芽。","color":"gray"}','{"text":"その芽吹きには確かな生命力を感じられる。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

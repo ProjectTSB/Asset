@@ -25,7 +25,11 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
 
 # 吹き飛ばし
-    execute at @a[gamemode=!spectator,distance=..3] run summon area_effect_cloud ~ ~ ~ {Radius:0.1f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:7,show_particles:0b}]}
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 21
+    data modify storage api: Argument.Duration set value 7
+    execute as @a[gamemode=!spectator,distance=..3] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット
     function lib:damage/reset

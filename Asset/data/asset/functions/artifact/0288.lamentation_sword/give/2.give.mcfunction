@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"嘆きの剣","color":"dark_purple"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"嘆く狂人を"},{"text":"助","color":"dark_red","bold":true,"obfuscated":true},{"text":"すり潰し、型に流し込んで作ら"},{"text":"け","color":"dark_red","bold":true,"obfuscated":true},{"text":"れた剣。"},{"text":"て","color":"dark_red","bold":true,"obfuscated":true}]','[{"text":"未だに嘆"},{"text":"痛","color":"dark_red","bold":true,"obfuscated":true},{"text":"き続"},{"text":"い","color":"dark_red","bold":true,"obfuscated":true},{"text":"ける"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 250
 # 神器を発動できるスロット (string) Wikiを参照

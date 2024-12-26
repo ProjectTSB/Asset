@@ -4,16 +4,34 @@
 #
 # @within function asset:mob/alias/59/death
 
-# 演出
-    particle dust 1 0.6 0 1 ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
-    particle dust 0.851 0 1 1 ~ ~1.7 ~ 0.6 0.4 0.6 0 20 normal @a
-    particle explosion_emitter ~ ~1.5 ~ 0 0 0 0 0
-    playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1.5 1.5
+# スーパーメソッド呼び出し
+    function asset:mob/super.death
 
-# 死亡時カボチャ設置
-    execute if predicate api:area/is_breakable if block ~ ~ ~ #lib:air run summon falling_block ~ ~1.5 ~ {BlockState:{Name:"minecraft:carved_pumpkin"},Time:1,Motion:[0.0,0.7,0.0]}
+# プレイヤーの方を見る
+    tp @s ~ ~ ~ facing entity @p eyes
+
+# 死亡演出用オブジェクトを召喚
+    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
+    data modify storage api: Argument.ID set value 2037
+    execute positioned ~ ~1.5 ~ run function api:object/summon
+
+# 偽物を抹消する
+    kill @e[type=husk,scores={MobID=224},distance=..50]
+
+# カボチャが召喚するオブジェクトも抹消する
+    kill @e[type=item_display,scores={ObjectID=2031..2036},distance=..50]
+
+# TextDisplayをkill
+    kill @e[type=text_display,tag=1N.TextDisplay]
+
+# スポーンマーカーをkill
+    kill @e[type=marker,tag=1N.SpawnMarker]
 
 # ボスドロ
     data modify storage api: Argument.ID set value 950
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+    
+    data modify storage api: Argument.ID set value 1113
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id

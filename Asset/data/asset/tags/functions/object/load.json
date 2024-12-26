@@ -1,9 +1,22 @@
 {
     "values": [
+        "asset:object/2113.rectangle_announce/load",
+        "asset:object/1058.brave_knight/load",
+        "asset:object/1050.call_fulstuka/load",
+        "asset:object/1040.thelema_persuit_sword/load",
+        "asset:object/1039.thelema_persuit_entity/load",
+        "asset:object/1038.thelema_slash_entity/load",
+        "asset:object/2048.wave_magic/load",
+        "asset:object/2049.lightning_magic/load",
+        "asset:object/1055.elemental_fish/load",
+        "asset:object/2074.water_magic/load",
+        "asset:object/2063.damage_area/load",
+        "asset:object/1057.giant_pumpkin/load",
+        "asset:object/2034.pumpkin_missile/load",
+        "asset:object/2036.pumpkin_rain/load",
         "asset:object/1052.maid/load",
         "asset:object/1029.barrage_spirit/load",
         "asset:object/1059.book_of_hero/load",
-        "asset:object/2031.giant_pumpkin/load",
-        "asset:object/0001.abstract_projectile/load"
+        "asset:object/2031.giant_pumpkin/load"
     ]
 }

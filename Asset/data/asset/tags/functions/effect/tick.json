@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0614.prominence_curse/_/tick",
         "asset:effect/0124.darkness/_/tick",
         "asset:effect/0202.sheep_blessing/_/tick",
         "asset:effect/0204.void_transaction/_/tick",
@@ -25,14 +26,26 @@
         "asset:effect/0603.domination/_/tick",
         "asset:effect/0604.logging_of_soul/_/tick",
         "asset:effect/0605.aurora_corrosion/_/tick",
-        "asset:effect/0607.sedation/_/tick",
+        "asset:effect/0606.mineralization/_/tick",
         "asset:effect/0608.sinking/_/tick",
         "asset:effect/0612.infringement/_/tick",
+        "asset:effect/0615.wave_curse/_/tick",
+        "asset:effect/0262.catastrophe/_/tick",
+        "asset:effect/0263.chivalry_of_ruin/_/tick",
         "asset:effect/0201.magic_shield/_/tick",
         "asset:effect/0613.white_curse/_/tick",
-        "asset:effect/0203.secret_meat/_/tick",
+        "asset:effect/0601.conviction/_/tick",
+        "asset:effect/0616.lightning_curse/_/tick",
+        "asset:effect/0269.pain_and_sweet/_/tick",
+        "asset:effect/0270.honey_regeneration/_/tick",
+        "asset:effect/0265.light_of_firefly/_/tick",
         "asset:effect/0619.hand_of_destruction/_/tick",
         "asset:effect/0261.gale_blessing/_/tick",
-        "asset:effect/0210.fading_speed/_/tick"
+        "asset:effect/0210.fading_speed/_/tick",
+        "asset:effect/0276.unending_thunder/_/tick",
+        "asset:effect/0203.secret_meat/_/tick",
+        "asset:effect/0272.inspiration/_/tick",
+        "asset:effect/0125.levitation/_/tick",
+        "asset:effect/0258.spirit_melody/_/tick"
     ]
 }

@@ -1,4 +1,8 @@
 #> asset:mob/alias/77/register
-# @within asset_manager:mob/register/register.m
+#
+# Mobのデータ指定処理のエイリアス
+#
+# @within asset_manager:mob/triggers/summon/register.m
 
-function asset:mob/0077.golden_watermelon/register
+# 元の登録処理を呼び出す
+   function asset:mob/0077.chorus_zombie/register

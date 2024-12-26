@@ -15,5 +15,8 @@
 # ID (int)
     data modify storage asset:object ID set value 2031
 
-# FaceIDが指定されてなければ自動的に1を設定
+# フィールド
+    data modify storage asset:object Field.Damage set value {Beginning:1f,Clash:2f}
     data modify storage asset:object Field.FaceID set value 1
+    data modify storage asset:object Field.RotationX set value 0f
+    data modify storage asset:object Field.MobUUID set value -1

@@ -24,7 +24,9 @@
     data modify storage api: Argument.ClearType set value "bad"
     data modify storage api: Argument.IsSingle set value true
     function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset
 
 # 在りし日の虚像バフ(ID:259)を付与
     data modify storage api: Argument.ID set value 259
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
