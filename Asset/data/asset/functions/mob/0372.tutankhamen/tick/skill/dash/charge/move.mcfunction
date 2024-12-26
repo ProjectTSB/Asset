@@ -9,7 +9,7 @@
     #declare score_holder $Interval
 
 # 壁チェック
-    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ~ ~ ~ ~ 0
+    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ~ ~0.5 ~ ~ 0
     execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run scoreboard players set @s General.Mob.Tick 30
 
 # 弱ホーミングダッシュ
@@ -22,7 +22,7 @@
     scoreboard players operation $Interval Temporary %= $2 Const
     execute if score $Interval Temporary matches 0 run playsound minecraft:entity.breeze.slide hostile @a ~ ~ ~ 2 1.5
     execute if score $Interval Temporary matches 0 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.5 0.5
-    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5
+    execute if score $Interval Temporary matches 0 run playsound minecraft:item.trident.riptide_1 hostile @a ~ ~3 ~ 2 1.2
     scoreboard players reset $Interval Temporary
 
 # パーティクル
