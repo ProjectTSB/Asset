@@ -10,7 +10,7 @@
     playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1 1.5
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 46f
+    data modify storage lib: Argument.Damage set value 42f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
 
