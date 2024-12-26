@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/skill/common/select_taget
+#> asset:mob/0372.tutankhamen/tick/skill/common/select_target
 #
 # ターゲット選定
 #
