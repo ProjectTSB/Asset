@@ -65,6 +65,7 @@
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置
+    #declare tag AK.IceSpear.Spread アイススピア召喚位置
     #
     # - 一時タグ
     #declare tag AK.Temp.Ground 接地用
