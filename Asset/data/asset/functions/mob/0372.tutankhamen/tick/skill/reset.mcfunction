@@ -9,6 +9,9 @@
 # スコアをセット
     scoreboard players set @s General.Mob.Tick -10
 
+# リセット
+    scoreboard players reset @s AC.Count.Dash
+
 # Tagを削除
     tag @s remove AC.Opening
     tag @s remove AC.Laser

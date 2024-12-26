@@ -1,18 +1,24 @@
-#> asset:mob/0372.tutankhamen/tick/dash_select
+#> asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
 #
+# ダッシュからダッシュへ
 #
-#
-# @within function asset:mob/0372.tutankhamen/tick/
+# @within function asset:mob/0372.tutankhamen/tick/skill/dash/**
 
-#> private
-# @private
-    #declare score_holder $Random
+# スコアをセット
+    scoreboard players set @s General.Mob.Tick -1
 
-# 行動中扱いにする
-    tag @s add AC.InAction
+# 即座に付近のプレイヤーを見る
+    execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
-# ダッシュ使ったことにする
-    tag @s add AC.DashUsed
+# Tagを削除
+    tag @s remove AC.Dash.Left
+    tag @s remove AC.Dash.Right
+    tag @s remove AC.Dash.Side
+    tag @s remove AC.Dash.Slash
+    tag @s remove AC.Dash.Charge
+
+# カウント増やす
+    scoreboard players add @s AC.Count.Dash 1
 
 # 乱数によるスキル選択
     data modify storage lib: Args.key set value "0372.Dash"
@@ -21,7 +27,7 @@
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグのコマンド
-#    scoreboard players set $Random Temporary 3
+#    scoreboard players set $Random Temporary 2
 
 # スキル選択
     execute if score $Random Temporary matches 0..1 run tag @s add AC.Dash.Side

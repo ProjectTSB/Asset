@@ -21,6 +21,12 @@
 # ブレーキ
     execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/dash_end/tween {to_frame: 0, duration: 5}
 
+# 本気時は謎キャンセルでダッシュにチェインする
+    # ノーマルモード
+        execute unless predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 50 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+    # ハードモード
+        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 40 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+
 # ウソ慣性
     execute if score @s General.Mob.Tick matches 30..40 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.5
     execute if score @s General.Mob.Tick matches 40..45 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.3

@@ -12,6 +12,6 @@
     scoreboard players operation $AttackInterval Temporary = @s General.Mob.Tick
 
 # 数Tickごとにサウンド
-    scoreboard players operation $AttackInterval Temporary %= $2 Const
+    scoreboard players operation $AttackInterval Temporary %= $4 Const
     execute if score $AttackInterval Temporary matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/side/shoot/summon
     scoreboard players reset $AttackInterval Temporary
