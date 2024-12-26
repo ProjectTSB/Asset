@@ -23,6 +23,6 @@
     # サイドダッシュ
         execute if entity @s[tag=AC.Dash.Side] run function asset:mob/0372.tutankhamen/tick/skill/dash/side/
     # ダッシュスラッシュ
-        execute if entity @s[tag=AC.Dash.Slash] run function asset:mob/0372.tutankhamen/tick/skill/dash_slash/
+        execute if entity @s[tag=AC.Dash.Slash] run function asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/
     # ファラオ・ぶちかまし
-        execute if entity @s[tag=AC.Dash.Charge] run function asset:mob/0372.tutankhamen/tick/skill/charge/
+        execute if entity @s[tag=AC.Dash.Charge] run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/
