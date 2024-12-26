@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:object/2168.general_long_laser/**
     scoreboard objectives add 2168.LifeTime dummy
+    scoreboard objectives add 2168.DisppearTick dummy

@@ -23,7 +23,7 @@
     # サイズ(横の太さ、長さ、縦の太さ)
         data modify storage asset:object Field.Scale set value [3f,40f,3f]
     # 出現にかかる時間
-        data modify storage asset:object Field.AppearInterpolation set value 1
+        data modify storage asset:object Field.AppearInterpolation set value 2
     # 何Tick後に消失に向かうか
         data modify storage asset:object Field.DisappearTick set value 2
     # 縮小にかかる時間
