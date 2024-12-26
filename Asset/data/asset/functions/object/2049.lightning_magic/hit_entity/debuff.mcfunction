@@ -9,4 +9,5 @@
     data modify storage api: Argument.Stack set from storage asset:context this.Stack
     data modify storage api: Argument.Duration set from storage asset:context this.Duration
     data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
-    function api:entity/mob/effect/give
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

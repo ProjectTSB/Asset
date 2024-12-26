@@ -8,5 +8,6 @@
     execute store result storage api: Argument.Stack int 1 if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1066}}}]
     execute if data storage api: Argument{Stack:0} run function api:entity/mob/effect/remove/from_id
     execute unless data storage api: Argument{Stack:0} run function api:entity/mob/effect/give
+
 # リセット
-    data remove storage api: Argument.Stack
+    function api:entity/mob/effect/reset

@@ -16,3 +16,4 @@ execute if data storage asset:temp BZ{Weather:"Thunder"} run data modify storage
 execute if data storage asset:temp BZ{Weather:"Thunder"} run tellraw @s [{"text": "雷属性与ダメージ","color": "yellow"},{"text": "が30%上昇した！","color": "white"}]
 execute if data storage asset:temp BZ{Weather:"Thunder"} run function asset:artifact/0431.weather_lock_cane/trigger/vfx/thunder
 function api:entity/mob/effect/give
+function api:entity/mob/effect/reset
