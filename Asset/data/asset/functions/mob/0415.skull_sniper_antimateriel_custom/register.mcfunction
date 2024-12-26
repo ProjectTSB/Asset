@@ -17,4 +17,4 @@
     data modify storage asset:mob Health set value 1200
 # フィールド
     data modify storage asset:mob Field.Damage set value 27
-    data modify storage asset:mob Field.Pierce set value 1
+    # data modify storage asset:mob Field.Pierce set value
