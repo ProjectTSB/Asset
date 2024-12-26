@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/237/death
 
+# super.death
+    function asset:mob/super.death
+
 # 演出
     playsound minecraft:entity.phantom.hurt hostile @a ~ ~ ~ 1 0.5
     playsound minecraft:entity.player.breath hostile @a ~ ~ ~ 1 0.5
