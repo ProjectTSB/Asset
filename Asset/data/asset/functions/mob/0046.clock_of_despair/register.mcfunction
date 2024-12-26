@@ -1,6 +1,13 @@
 #> asset:mob/0046.clock_of_despair/register
 # @within asset:mob/alias/46/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 46
 # Type (string) Wikiを参照

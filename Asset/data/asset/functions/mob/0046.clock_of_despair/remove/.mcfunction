@@ -8,3 +8,6 @@
     kill @e[type=armor_stand,tag=1A.ClockHand]
     kill @e[type=item_display,tag=1A.ClockFrame]
     kill @e[type=marker,tag=1A.SkillMarker]
+
+# super 呼び出し
+    function asset:mob/super.remove
