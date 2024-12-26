@@ -5,7 +5,7 @@
 # @within asset:object/alias/2168/init
 
 # 消失までの時間を指定
-    execute store result score @s 2168.LifeTime run data get storage asset:context this.Tick
+    execute store result score @s 2168.LifeTime run data get storage asset:context this.LifeTime
 
 # 向き担当のマーカーを召喚して上に乗っけておく
 #    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~

@@ -46,7 +46,10 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 変形
-    execute if score @s General.Object.Tick matches 3.. run function asset:object/2168.general_long_laser/tick/transform
+    execute if score @s General.Object.Tick matches 3 run function asset:object/2168.general_long_laser/tick/transform/appear
+
+# 縮む
+    execute if score @s General.Object.Tick matches 5 run function asset:object/2168.general_long_laser/tick/transform/disappear
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    execute if score @s General.Object.Tick > @s 2168.LifeTime run kill @s
