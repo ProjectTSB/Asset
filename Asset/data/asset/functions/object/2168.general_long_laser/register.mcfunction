@@ -17,4 +17,9 @@
 # ID (int)
     data modify storage asset:object ID set value 2168
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+    data modify storage asset:object Field.LeftRotation set value {axis:[1f,0f,0f],angle:0}
+    data modify storage asset:object Field.RightRotation set value {axis:[0f,-1f,0f],angle:0}
+    data modify storage asset:object Field.Length set value 20f
+    data modify storage asset:object Field.Interpolation set value 1
+    data modify storage asset:object Field.Tick set value 5
+    
