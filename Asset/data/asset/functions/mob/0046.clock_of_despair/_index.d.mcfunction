@@ -19,6 +19,7 @@
     #declare tag Landing
     #declare tag LandingTarget
     #declare score_holder $laserDistance
+    #declare score_holder $VFXPattern
 
 #> Val
 # @within function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/*

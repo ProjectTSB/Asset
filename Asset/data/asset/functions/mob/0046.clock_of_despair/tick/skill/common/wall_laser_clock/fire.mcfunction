@@ -28,3 +28,5 @@ function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/
     function api:damage/reset
     tag @a[tag=DXYZ] remove DXYZ
     data remove storage lib: args
+    scoreboard players reset $laserDistance Temporary
+    scoreboard players reset $VFXPattern Temporary
