@@ -12,7 +12,10 @@
 # 腕振る
     item replace entity @s weapon.mainhand with iron_sword
 # 演出
-    playsound entity.blaze.shoot hostile @a ~ ~ ~ 1 0.6
+    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^1 0 0 0 1 2 normal
+    execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^2 0 0 0 1 2 normal
+    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
+
 # ダメージを与える
 # 引数の設定
     # 与えるダメージ
