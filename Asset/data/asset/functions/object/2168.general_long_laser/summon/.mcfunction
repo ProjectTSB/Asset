@@ -4,5 +4,8 @@
 #
 # @within asset:object/alias/2168/summon
 
-# 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,0f,1f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16777215},CustomModelData:20381}}}
+# 元となるエンティティを召喚
+    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/2168.general_long_laser/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args
