@@ -5,7 +5,6 @@
 # @within asset:object/alias/2092/kill
 
 # 演出
-    particle soul ~ ~ ~ 0.2 0.2 0.2 0.2 30 normal @a
     playsound ogg:mob.vex.idle1 hostile @a ~ ~ ~ 0.8 0.5 0
 
 # ダメージ
