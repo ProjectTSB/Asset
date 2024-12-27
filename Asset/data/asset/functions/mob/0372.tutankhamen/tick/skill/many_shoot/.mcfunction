@@ -7,9 +7,6 @@
 # AJ
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/soul_shot/tween {to_frame:5 ,duration:5}
 
-# 実行時間を移す
-    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
-
 # 演出
     execute if score @s General.Mob.Tick matches 15..35 run particle dust 0 0.7 0.7 1 ~ ~3 ~ 1 0 1 0 5
     execute if score @s General.Mob.Tick matches 15 run playsound item.trident.riptide_1 hostile @a ~ ~3 ~ 2 0.8
