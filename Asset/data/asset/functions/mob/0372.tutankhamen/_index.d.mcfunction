@@ -49,13 +49,8 @@
 #declare function animated_java:tutankhamen/animations/spawn/stop
 #declare function animated_java:tutankhamen/animations/death/play
 #declare function animated_java:tutankhamen/animations/death/stop
-#declare function animated_java:tutankhamen/animations/beam_start/play
-#declare function animated_java:tutankhamen/animations/beam_start/stop
 #declare function animated_java:tutankhamen/animations/beam_shot/play
 #declare function animated_java:tutankhamen/animations/beam_shot/stop
-#declare function animated_java:tutankhamen/animations/beam_wait/play
-#declare function animated_java:tutankhamen/animations/beam_wait/stop
-#declare function animated_java:tutankhamen/animations/beam_end/play
 #declare function animated_java:tutankhamen/animations/beam_end/stop
 #declare function animated_java:tutankhamen/animations/soul_shot/play
 #declare function animated_java:tutankhamen/animations/soul_shot/stop
@@ -66,10 +61,8 @@
 #declare function animated_java:tutankhamen/animations/beam_long_charge/stop
 #declare function animated_java:tutankhamen/animations/beam_long_shot/play
 #declare function animated_java:tutankhamen/animations/beam_long_shot/stop
-#declare function animated_java:tutankhamen/animations/rod_ground/play
-#declare function animated_java:tutankhamen/animations/rod_ground/stop
-#declare function animated_java:tutankhamen/animations/rod_ground_end/play
-#declare function animated_java:tutankhamen/animations/rod_ground_end/stop
+#declare function animated_java:tutankhamen/animations/rod_ground/tween
+#declare function animated_java:tutankhamen/animations/rod_ground_end/tween
 #declare function animated_java:tutankhamen/animations/dash/play
 #declare function animated_java:tutankhamen/animations/dash/tween
 #declare function animated_java:tutankhamen/animations/dash/stop
@@ -86,5 +79,10 @@
 #declare function animated_java:tutankhamen/animations/attack_laser_loop/tween
 #declare function animated_java:tutankhamen/animations/attack_laser_end/tween
 #declare function animated_java:tutankhamen/animations/damage/tween
+#declare function animated_java:tutankhamen/animations/soul_shot/tween
+#declare function animated_java:tutankhamen/animations/attack_laser_2_windup/tween
+#declare function animated_java:tutankhamen/animations/attack_laser_2_loop/tween
+#declare function animated_java:tutankhamen/animations/attack_laser_2_end/tween
+
 #declare tag AC.ModelLocator.Body
 #declare tag AC.ModelLocator.Weapon
