@@ -29,14 +29,14 @@
     function lib:damage/reset
 
 # 攻撃力低下エフェクト付与
-    data modify storage api: Argument set value {ID:101,Duration:200}
+    data modify storage api: Argument set value {ID:51,Duration:200}
     function api:global_vars/get_difficulty
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty 1
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 耐性低下エフェクト付与
-    data modify storage api: Argument set value {ID:107,Duration:200}
+    data modify storage api: Argument set value {ID:57,Duration:200}
     function api:global_vars/get_difficulty
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty 1
     execute as @p[tag=Victim] run function api:entity/mob/effect/give

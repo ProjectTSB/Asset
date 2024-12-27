@@ -28,7 +28,7 @@
 
 # 引数の設定
     # 与えるダメージ
-        execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.Damage set value 30f
+        data modify storage api: Argument.Damage set value 30f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -39,7 +39,7 @@
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..2.5] at @s run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function api:damage/
 # リセット
     function api:damage/reset
 
