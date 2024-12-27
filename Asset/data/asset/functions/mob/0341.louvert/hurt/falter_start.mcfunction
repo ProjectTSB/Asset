@@ -7,7 +7,7 @@
 # アニメーションストップ
     function asset:mob/0341.louvert/tick/animation/all_stop
 
-# ラストスペル
+# 怯みアニメーション移行
     scoreboard players set @s 9H.AnimationNum 21
     execute if predicate lib:random_pass_per/50 run scoreboard players set @s 9H.AnimationNum 22
 

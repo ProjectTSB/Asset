@@ -9,7 +9,5 @@
     scoreboard objectives add 9H.AnimationTick dummy
     scoreboard objectives add 9H.AnimationNum dummy
     scoreboard objectives add 9H.SkillSelect dummy
-    scoreboard objectives add 9H.ProjectileTick dummy
     scoreboard objectives add 9H.HPPer dummy
     scoreboard objectives add 9H.FalterCount dummy
-    scoreboard objectives add 9H.SoulBombHard dummy
