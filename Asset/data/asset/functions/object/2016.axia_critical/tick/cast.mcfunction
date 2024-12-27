@@ -95,7 +95,7 @@
     # 悪いがこれにあたったら死んでね☆
         execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FixedDamage set value true
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
 # 補正functionを実行
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
