@@ -1,8 +1,8 @@
-#> asset:mob/0421.silver_turret/attack/
+#> asset:mob/0422.silver_bullet/attack/
 #
 # Mobの攻撃時の処理
 #
-# @within function asset:mob/alias/421/attack
+# @within function asset:mob/alias/422/attack
 
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
@@ -13,7 +13,7 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 35.0f
+        data modify storage lib: Argument.Damage set value 20.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
