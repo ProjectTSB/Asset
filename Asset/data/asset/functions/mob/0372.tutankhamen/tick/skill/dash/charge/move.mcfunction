@@ -31,7 +31,7 @@
     execute at @e[type=marker,tag=AC.ModelLocator.Weapon,distance=..16,limit=1] run particle dust 1 1 0 2 ~ ~1 ~ 0.1 0.1 0.1 0 5
 
 # ダメージ判定
-    data modify storage api: Argument.Damage set value 20f
+    data modify storage api: Argument.Damage set value 50f
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"

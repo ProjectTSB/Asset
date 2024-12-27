@@ -22,7 +22,7 @@
 
 # ダメージを与える
     # データ設定
-        data modify storage api: Argument.Damage set value 10.0f
+        data modify storage api: Argument.Damage set value 20.0f
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "None"
     # tag付けされたプレイヤーにダメージを与える
