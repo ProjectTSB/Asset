@@ -76,4 +76,5 @@
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用
     #
     # - 他オブジェクト
+    #declare tag AK.Object ハルクレアオブジェクト共通タグ
     #declare tag 2155.Object アイスレーザー

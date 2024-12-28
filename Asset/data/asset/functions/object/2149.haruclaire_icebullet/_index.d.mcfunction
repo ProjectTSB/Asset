@@ -3,4 +3,5 @@
 
 #> tag
 # @within function asset:object/2149.haruclaire_icebullet/**
+    #declare tag AK.Object
     #declare tag 2149.IsPiece

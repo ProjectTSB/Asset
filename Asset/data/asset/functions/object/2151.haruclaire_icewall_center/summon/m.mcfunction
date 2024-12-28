@@ -5,4 +5,4 @@
 # @within asset:object/2151.haruclaire_icewall_center/summon/
 
 # 元となるEntityを召喚する
-    $summon armor_stand ~ ~ ~ {Tags:["ObjectInit"],Rotation:$(Rotation),Marker:1b,Invisible:1b}
+    $summon armor_stand ~ ~ ~ {Tags:["ObjectInit","AK.Object"],Rotation:$(Rotation),Marker:1b,Invisible:1b}
