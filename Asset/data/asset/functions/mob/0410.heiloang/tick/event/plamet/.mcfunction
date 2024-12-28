@@ -62,6 +62,7 @@
 # モデルを自身の位置に移動
     execute if score @s BE.EventTimer matches 35..191 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     execute if score @s BE.EventTimer matches 201 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute if score @s BE.EventTimer matches 201 at @s run tp @s ^ ^ ^6 ~ ~
 
 # 終了
     execute if score @s BE.EventTimer matches 237.. run function asset:mob/0410.heiloang/tick/event/plamet/end

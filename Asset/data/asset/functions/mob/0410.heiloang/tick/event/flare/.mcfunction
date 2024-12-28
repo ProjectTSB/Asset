@@ -17,6 +17,7 @@
     # その間に中心点の正面方向に移動
         execute if score @s BE.EventTimer matches 60 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
         execute if score @s BE.EventTimer matches 60 at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+        execute if score @s BE.EventTimer matches 60 at @s run tp @s ^ ^ ^6 ~ 0
 # 出現、攻撃
     # アニメーション再生
         execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/8_1_move_flare

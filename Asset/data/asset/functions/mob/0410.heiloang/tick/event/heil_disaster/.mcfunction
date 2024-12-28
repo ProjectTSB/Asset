@@ -11,6 +11,9 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/99_disaster_cast
     # 演出
+        execute if score @s BE.EventTimer matches 10..118 run particle flame ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle cloud ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle dust 1 0.855 0.376 4 ~ ~1 ~ 4 4 4 0.1 1 force
 
 # 全属性攻撃
     # アニメーション再生

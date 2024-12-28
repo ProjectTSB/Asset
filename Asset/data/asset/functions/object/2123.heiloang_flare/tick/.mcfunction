@@ -9,7 +9,7 @@
 
 # 予告
     execute if entity @s[scores={General.Object.Tick=21}] run function asset:object/2123.heiloang_flare/tick/prediction
-    # execute if entity @s[scores={General.Object.Tick=21..104}] run function asset:object/2123.heiloang_flare/tick/prediction_text
+    execute if entity @s[scores={General.Object.Tick=21..104}] on passengers run function asset:object/2123.heiloang_flare/tick/effect_vector
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=105}] run function asset:object/2123.heiloang_flare/tick/damage

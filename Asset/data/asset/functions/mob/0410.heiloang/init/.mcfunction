@@ -27,3 +27,5 @@
         scoreboard players set @s BE.Ehd.Thunder 6
         scoreboard players operation @s BE.Ehd.Thunder -= @s BE.Ehd.Fire
         scoreboard players operation @s BE.Ehd.Thunder -= @s BE.Ehd.Water
+    # 移動
+        execute at @s run tp @s ^ ^ ^3 ~ 0
