@@ -23,17 +23,17 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 20000
+    data modify storage asset:mob Health set value 60000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Physical set value
+        data modify storage asset:mob Resist.Physical set value 1.0f
     # 魔法倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Magic set value
+        data modify storage asset:mob Resist.Magic set value 0.7f
     # 火倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Fire set value
+        data modify storage asset:mob Resist.Fire set value 0.8f
     # 水倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Water set value
+        data modify storage asset:mob Resist.Water set value 0.8f
     # 雷倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Thunder set value
+        data modify storage asset:mob Resist.Thunder set value 0.8f
 # フィールド
     # data modify storage asset:mob Field.myValue set value

@@ -24,13 +24,13 @@
     execute if score @s BE.ActCount matches 5 run scoreboard players set @s BE.Pb.Count 4
 
 # 待機
-    execute if score @s BE.ActCount matches 6 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 5
+    execute if score @s BE.ActCount matches 6 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
 
 # フレア
     execute if score @s BE.ActCount matches 7 run tag @s add BE.Skill.Flare
 
 # 待機
-    execute if score @s BE.ActCount matches 8 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 5
+    execute if score @s BE.ActCount matches 8 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
 
 # 急降下
     execute if score @s BE.ActCount matches 9 run tag @s add BE.Skill.Plamet
@@ -40,13 +40,13 @@
     execute if score @s BE.ActCount matches 10 run scoreboard players set @s BE.Pb.Count 5
 
 # 待機
-    execute if score @s BE.ActCount matches 11 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 5
+    execute if score @s BE.ActCount matches 11 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
 
 # フレア
     execute if score @s BE.ActCount matches 12 run tag @s add BE.Skill.Flare
 
 # 待機
-    execute if score @s BE.ActCount matches 13 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 5
+    execute if score @s BE.ActCount matches 13 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 2
 
 # # テンペスト
 #     execute if score @s BE.ActCount matches 14 run tag @s add BE.Skill.Tempest
@@ -59,4 +59,4 @@
     execute if score @s BE.ActCount matches 15 run scoreboard players set @s BE.Pb.Count 6
 
 # 待機
-    execute if score @s BE.ActCount matches 16 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 6
+    execute if score @s BE.ActCount matches 16 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 4
