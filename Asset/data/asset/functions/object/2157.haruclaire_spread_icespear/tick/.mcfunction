@@ -13,6 +13,7 @@
 
 # 予告
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_vector
+    execute if entity @s[scores={General.Object.Tick=3..63}] at @s on passengers run function asset:object/2157.haruclaire_spread_icespear/tick/effect_vector
     execute if entity @s[scores={General.Object.Tick=13}] if predicate api:global_vars/difficulty/max/normal run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line
     execute if entity @s[scores={General.Object.Tick=43}] if predicate api:global_vars/difficulty/min/hard run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line_hard
 

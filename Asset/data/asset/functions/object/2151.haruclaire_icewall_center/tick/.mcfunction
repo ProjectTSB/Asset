@@ -12,6 +12,7 @@
     execute if entity @s[scores={General.Object.Tick=1}] at @s run function asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor
     execute if entity @s[scores={General.Object.Tick=1}] at @s run function asset:object/2151.haruclaire_icewall_center/tick/prediction
     execute if entity @s[scores={General.Object.Tick=3}] at @s run function asset:object/2151.haruclaire_icewall_center/tick/prediction_vector
+    execute if entity @s[scores={General.Object.Tick=3..40}] at @s on passengers run function asset:object/2151.haruclaire_icewall_center/tick/effect_vector
     execute if entity @s[scores={General.Object.Tick=40}] on passengers run kill @s
     execute if entity @s[scores={General.Object.Tick=40}] run tp @s ^ ^ ^5
     execute if entity @s[scores={General.Object.Tick=40}] at @s run function asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor

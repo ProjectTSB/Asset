@@ -11,7 +11,8 @@
     execute if score @s AK.ActionCount matches 5 run return 0
     execute if score @s AK.ActionCount matches 12 run return 0
     execute if score @s AK.ActionCount matches 16 run return 0
-    execute if score @s AK.ActionCount matches 21.. run return run scoreboard players set @s AK.ActionCount 0
+    execute if score @s AK.ActionCount matches 21..22 run return 0
+    execute if score @s AK.ActionCount matches 23.. run return run scoreboard players set @s AK.ActionCount 0
 
 # 行動回数一定毎にぶん殴りに行く
 # 近づく機会を増やし、近接でも攻撃しやすくするため
