@@ -58,6 +58,16 @@
         execute if score @s BE.EventTimer matches 25 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
         execute if score @s BE.EventTimer matches 130..157 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 130..157 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
+# アイスバースト
+
+# リヒトブリッツェン
+    # 攻撃位置決定
+        execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/plamet/set_attack_position_blitz
+        execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/hard as @e[type=area_effect_cloud,tag=BE.Temp.Blitz.SummonPosition] at @s run function asset:mob/0410.heiloang/tick/event/plamet/summon_circle_blitz
+    # 攻撃
+        execute if score @s BE.EventTimer matches 165 if predicate api:global_vars/difficulty/min/hard at @e[type=area_effect_cloud,tag=BE.Temp.Blitz.SummonPosition] run function asset:mob/0410.heiloang/tick/event/plamet/attack_blitz
+        execute if score @s BE.EventTimer matches 185 if predicate api:global_vars/difficulty/min/hard run summon lightning_bolt ~ ~100 ~
+        execute if score @s BE.EventTimer matches 185 if predicate api:global_vars/difficulty/min/hard run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
 
 # モデルを自身の位置に移動
     execute if score @s BE.EventTimer matches 35..191 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
