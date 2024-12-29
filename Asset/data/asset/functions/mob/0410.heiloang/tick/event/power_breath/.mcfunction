@@ -16,6 +16,7 @@
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 23 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # ターゲット決定
+        execute if score @s BE.EventTimer matches 1..155 run function asset:mob/0410.heiloang/tick/util/check_target_hate
         execute if score @s BE.EventTimer matches 1 as @a[tag=BE.HateTarget,distance=..80,limit=1] run tag @s add BE.MainTarget
     # 攻撃範囲予告
         execute if score @s BE.EventTimer matches 10..100 at @p[tag=BE.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0410.heiloang/tick/event/power_breath/particle_attack_area

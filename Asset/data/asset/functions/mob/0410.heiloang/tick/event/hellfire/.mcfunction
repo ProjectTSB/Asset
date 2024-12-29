@@ -12,7 +12,7 @@
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 23 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # ターゲット決定
-        execute if score @s BE.EventTimer matches 1 as @a[distance=..60,sort=random,limit=1] run tag @s add BE.MainTarget
+        execute if score @s BE.EventTimer matches 1..281 run function asset:mob/0410.heiloang/tick/util/check_target
     # 攻撃範囲予告
         execute if score @s BE.EventTimer matches 10..279 at @p[tag=BE.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0410.heiloang/tick/event/hellfire/particle_attack_area
 # 発動

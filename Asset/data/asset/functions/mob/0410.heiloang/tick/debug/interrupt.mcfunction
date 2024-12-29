@@ -12,5 +12,5 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.HeilDisaster
+    tag @s add BE.Skill.Plamet
     scoreboard players set @s BE.Pb.Count 3

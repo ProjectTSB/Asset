@@ -8,8 +8,7 @@
     scoreboard players add @s BE.EventTimer 1
 
 # ターゲット更新
-    execute if score @s BE.EventTimer matches 1 unless entity @a[tag=BE.HateTarget,distance=..80] run tag @a remove BE.HateTarget
-    execute if score @s BE.EventTimer matches 1 unless entity @a[tag=BE.HateTarget,distance=..80] run tag @p add BE.HateTarget
+    execute if score @s BE.EventTimer matches 1..25 run function asset:mob/0410.heiloang/tick/util/check_target_hate
 
 # 発動
     # アニメーション再生
