@@ -16,8 +16,6 @@
     playsound block.amethyst_block.place hostile @a ~ ~ ~ 2 1
     playsound block.amethyst_block.place hostile @a ~ ~ ~ 2 1
     playsound item.trident.return hostile @a ~ ~ ~ 2 0.7
-    particle flash ~ ~ ~ 1 1 1 0 4
-    particle firework ~ ~ ~ 1 1 1 0.3 10
 
 # 終了
     kill @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1]

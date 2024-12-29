@@ -5,13 +5,15 @@
 # @within asset:mob/0410.heiloang/tick/event/move_after_ehd/
 
 # ヒット判定
-    execute positioned ^15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-5 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-10 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
-    execute positioned ^-15 ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add BE.Temp.Hit
+    data modify storage lib: args.dx set value 20
+    data modify storage lib: args.dy set value 10
+    data modify storage lib: args.dz set value 18
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute positioned ^ ^-5 ^-9 run function lib:rotatable_dxyz/m with storage lib: args
+    tag @a[tag=DXYZ] add BE.Temp.Hit
+    tag @a[tag=DXYZ] remove DXYZ
 
+# 演出
     execute positioned ^15 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
     execute positioned ^5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20
     execute positioned ^-5 ^ ^ run particle cloud ~ ~5 ~ 2 2 2 0.1 20

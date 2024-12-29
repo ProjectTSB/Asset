@@ -33,6 +33,7 @@
             execute if score @s BE.EventTimer matches 180 run summon lightning_bolt ~ ~100 ~
             execute if score @s BE.EventTimer matches 180 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
     # ハード以上：回転する雷を設置
+            execute if score @s BE.EventTimer matches 23 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_circle_spin
             execute if score @s BE.EventTimer matches 90 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_spin
 
 # 待機

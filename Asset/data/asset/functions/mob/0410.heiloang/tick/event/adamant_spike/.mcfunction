@@ -28,6 +28,14 @@
         execute if score @s BE.EventTimer matches 148 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack
         execute if score @s BE.EventTimer matches 164 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack
         execute if score @s BE.EventTimer matches 180 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack
+
+        execute if score @s BE.EventTimer matches 182 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+        execute if score @s BE.EventTimer matches 198 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+        execute if score @s BE.EventTimer matches 214 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+        execute if score @s BE.EventTimer matches 230 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+        execute if score @s BE.EventTimer matches 246 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+        execute if score @s BE.EventTimer matches 262 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_circle
+
         execute if score @s BE.EventTimer matches 196 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack
         execute if score @s BE.EventTimer matches 212 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack
         execute if score @s BE.EventTimer matches 228 positioned as @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition,sort=arbitrary,limit=1] run function asset:mob/0410.heiloang/tick/event/adamant_spike/attack

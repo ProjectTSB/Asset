@@ -5,5 +5,6 @@
 # @within asset:object/alias/2130/init
 
 # 消滅時間設定
-    execute store result score @s 2130.RemoveTimer store result score @s 2130.KillTimer run data get storage asset:context this.RemoveTimer
+    execute store result score @s 2130.RemoveTimer store result score @s 2130.RemoveTimerMain store result score @s 2130.KillTimer run data get storage asset:context this.RemoveTimer
+    scoreboard players remove @s 2130.RemoveTimerMain 4
     scoreboard players add @s 2130.KillTimer 30

@@ -11,6 +11,9 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/99_disaster_cast
     # 演出
+        execute if score @s BE.EventTimer matches 10..118 run particle flame ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle cloud ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle dust 1 0.855 0.376 4 ~ ~1 ~ 4 4 4 0.1 1 force
 
 # 全属性攻撃
     # アニメーション再生
@@ -78,17 +81,19 @@
 
 # リヒトブリッツェン
     # 攻撃位置予告
-        execute if score @s BE.EventTimer matches 260..315 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/particle_before
+        execute if score @s BE.EventTimer matches 260 positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/heil_disaster/summon_circle_blitz_0
     # 攻撃
         # 1
             execute if score @s BE.EventTimer matches 320 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_0
             execute if score @s BE.EventTimer matches 340 run summon lightning_bolt ~ ~100 ~
             execute if score @s BE.EventTimer matches 340 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
         # 2
+            execute if score @s BE.EventTimer matches 320 positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/heil_disaster/summon_circle_blitz_1
             execute if score @s BE.EventTimer matches 345 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_1
             execute if score @s BE.EventTimer matches 365 run summon lightning_bolt ~ ~100 ~
             execute if score @s BE.EventTimer matches 365 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
         # 3
+            execute if score @s BE.EventTimer matches 350 positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/heil_disaster/summon_circle_blitz_2
             execute if score @s BE.EventTimer matches 370 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_0
             execute if score @s BE.EventTimer matches 390 run summon lightning_bolt ~ ~100 ~
             execute if score @s BE.EventTimer matches 390 run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 3 0.7
