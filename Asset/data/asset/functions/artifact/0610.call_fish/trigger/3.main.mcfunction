@@ -17,7 +17,7 @@
     summon cod ~ ~ ~ {Invulnerable:1b,Tags:["GY.Fish","GY.First","Friend"]}
 
 # 魚の寿命を設定する
-    scoreboard players set @e[type=cod,tag=GY.First] GY.FishTime 320
+    scoreboard players set @e[type=cod,tag=GY.First] GY.FishTime 200
 
 # ユーザーID適応
     scoreboard players operation @e[type=cod,tag=GY.First] GY.UserID = @s UserID
