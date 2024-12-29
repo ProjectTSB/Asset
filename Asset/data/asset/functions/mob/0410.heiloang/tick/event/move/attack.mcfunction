@@ -7,9 +7,9 @@
 # ヒット判定
     data modify storage lib: args.dx set value 20
     data modify storage lib: args.dy set value 10
-    data modify storage lib: args.dz set value 18
+    data modify storage lib: args.dz set value 9
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute positioned ^ ^-5 ^-9 run function lib:rotatable_dxyz/m with storage lib: args
+    execute positioned ^ ^ ^9 run function lib:rotatable_dxyz/m with storage lib: args
     tag @a[tag=DXYZ] add BE.Temp.Hit
     tag @a[tag=DXYZ] remove DXYZ
 
