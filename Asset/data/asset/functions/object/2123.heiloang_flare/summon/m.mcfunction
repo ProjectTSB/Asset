@@ -5,4 +5,4 @@
 # @within asset:object/2123.heiloang_flare/summon/
 
 # 元となるEntityを召喚する
-    $summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:$(Rotation)}
+    $summon item_display ~ ~ ~ {Tags:["ObjectInit","BE.Object"],Rotation:$(Rotation)}

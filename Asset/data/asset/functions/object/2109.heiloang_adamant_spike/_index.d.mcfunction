@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2109.heiloang_adamant_spike/**
-    #declare
+    #declare tag BE.Object

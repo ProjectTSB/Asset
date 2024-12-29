@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2107.heiloang_fireball/**
-    #declare
+    #declare tag BE.Object

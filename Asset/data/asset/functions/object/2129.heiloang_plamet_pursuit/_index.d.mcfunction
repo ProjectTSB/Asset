@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2129.heiloang_plamet_pursuit/**
-    #declare
+    #declare tag BE.Object

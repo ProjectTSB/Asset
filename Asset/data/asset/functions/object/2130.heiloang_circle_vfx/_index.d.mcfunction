@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2130.heiloang_circle_vfx/**
-    #declare
+    #declare tag BE.Object

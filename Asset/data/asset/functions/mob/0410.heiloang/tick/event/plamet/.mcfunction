@@ -58,8 +58,6 @@
         execute if score @s BE.EventTimer matches 25 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
         execute if score @s BE.EventTimer matches 130..157 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 130..157 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
-# アイスバースト
-
 # リヒトブリッツェン
     # 攻撃位置決定
         execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/plamet/set_attack_position_blitz

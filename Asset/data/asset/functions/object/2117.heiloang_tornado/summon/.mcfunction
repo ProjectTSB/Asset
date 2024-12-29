@@ -5,4 +5,4 @@
 # @within asset:object/alias/2117/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit","2117.Pos"]}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit","2117.Pos","BE.Object"]}

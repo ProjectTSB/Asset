@@ -22,10 +22,6 @@
         # 位置決定
             execute if score @s BE.EventTimer matches 115 at @e[type=marker,tag=BE.CenterPosition] positioned ~ ~-0.5 ~ run function asset:mob/0410.heiloang/tick/event/heil_disaster/summon_attack_pos
         # 攻撃
-            execute if score @s BE.EventTimer matches 200 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
 
             execute if score @s BE.EventTimer matches 120 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
             execute if score @s BE.EventTimer matches 122 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_fire
@@ -38,6 +34,11 @@
             execute if score @s BE.EventTimer matches 174 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
             execute if score @s BE.EventTimer matches 176 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
             execute if score @s BE.EventTimer matches 178 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_ice
+
+            execute if score @s BE.EventTimer matches 200 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
+            execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
+            execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
+            execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
 
 # なぎはらい火炎放射
     # アニメーション再生

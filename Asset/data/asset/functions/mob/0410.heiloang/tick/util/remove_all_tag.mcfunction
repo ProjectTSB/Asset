@@ -3,7 +3,7 @@
 # 他エンティティに付与しているタグをすべて消去する
 #
 # @within asset:mob/0410.heiloang/tick/**
-# @within asset:mob/0410.heiloang/kill/
+# @within asset:mob/0410.heiloang/death/
 # @within asset:mob/0410.heiloang/remove/
 
 # ターゲット用タグ
