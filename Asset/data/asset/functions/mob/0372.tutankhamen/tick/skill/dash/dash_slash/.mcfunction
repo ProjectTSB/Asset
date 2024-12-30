@@ -5,7 +5,7 @@
 # @within function asset:mob/0372.tutankhamen/tick/skill_branch
 
 # ダッシュ開始
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/start
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/start
 
 # プレイヤーの方へ誘導する
     execute if score @s General.Mob.Tick matches ..99 run function asset:mob/0372.tutankhamen/tick/skill/dash/dash_slash/move
