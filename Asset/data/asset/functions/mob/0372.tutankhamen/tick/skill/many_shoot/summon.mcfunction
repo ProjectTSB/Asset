@@ -11,7 +11,7 @@
 # プレイヤーの方を向く
     tp @s ~ ~ ~ facing entity @p[distance=..100] eyes
 
-# StartDelayを59にする
+# StartDelayを調整
     scoreboard players set $StartDelay Temporary 49
 
 # 発射タイミングをある程度一定にする
