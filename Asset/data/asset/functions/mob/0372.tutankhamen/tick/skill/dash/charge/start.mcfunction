@@ -9,7 +9,7 @@
 
 # 演出
     playsound ogg:mob.blaze.breathe2 hostile @a ~ ~ ~ 2 1
-    playsound minecraft:entity.breeze.wind_burst hostile @a ~ ~ ~ 2 1
     playsound minecraft:entity.breeze.death hostile @a ~ ~ ~ 2 0.5
+    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 1.7
     particle minecraft:crit ~ ~ ~ 0 0 0 1 25
     particle minecraft:poof ~ ~ ~ 0 0 0 0.3 50
