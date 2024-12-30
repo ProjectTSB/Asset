@@ -16,12 +16,8 @@
     tag @s remove AC.Opening
     tag @s remove AC.Laser
     tag @s remove AC.ManyShoot
-    tag @s remove AC.GiantSkull
     tag @s remove AC.HyperLaser
     tag @s remove AC.Coffin
-    tag @s remove AC.DashSlash
-    tag @s remove AC.ManyLaser
-    tag @s remove AC.Charge
 
     tag @s remove AC.Dash.Left
     tag @s remove AC.Dash.Right

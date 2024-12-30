@@ -3,42 +3,34 @@
 
 #> tag
 # @within function asset:mob/0372.tutankhamen/**
-#>スキルリスト
+# スキルリスト
+#declare tag AC.Coddin
 #declare tag AC.Laser
 #declare tag AC.ManyShoot
-#declare tag AC.GiantSkull
 #declare tag AC.HyperLaser
-#declare tag AC.DashSlash
-#declare tag AC.DashSlash.IsNearPlayer
-#declare tag AC.ManyLaser
-#declare tag AC.Charge
-#> ダッシュリスト
+# ダッシュリスト
 #declare tag AC.Dash.Left
 #declare tag AC.Dash.Right
 #declare tag AC.Dash.Side
 #declare tag AC.Dash.Slash
 #declare tag AC.Dash.Charge
-#> 状態タグ
+## 状態タグ
 #declare tag AC.Health.50Per
-#> 動作タグ
+# 動作タグ
 #declare tag AC.Moveset.Transition
-#>その他タグ
+# その他タグ
 #declare tag AC.InAction
 #declare tag AC.DashUsed
-#declare tag AC.LaserDisplay
 #declare tag AC.Coffin
 #declare tag AC.CoffinPoint
 #declare tag AC.SpawnMarker
 #declare tag AC.AJ
 #declare tag AC.AJLink
 #declare tag AC.Opening
-#declare tag AC.Hit
-#declare tag AC.RotationMarker
 #declare tag Target
-#declare score_holder $Recursive
 #declare score_holder $Random
 #declare score_holder $Interval
-#>Animated Java
+# Animated Java
 #declare function animated_java:tutankhamen/summon
 #declare function animated_java:tutankhamen/remove/this
 #declare function animated_java:tutankhamen/summon
@@ -83,6 +75,4 @@
 #declare function animated_java:tutankhamen/animations/attack_laser_2_windup/tween
 #declare function animated_java:tutankhamen/animations/attack_laser_2_loop/tween
 #declare function animated_java:tutankhamen/animations/attack_laser_2_end/tween
-
-#declare tag AC.ModelLocator.Body
 #declare tag AC.ModelLocator.Weapon
