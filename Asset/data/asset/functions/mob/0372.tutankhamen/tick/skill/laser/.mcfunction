@@ -8,8 +8,8 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/laser/windup
 
 # 演出
-    execute if score @s General.Mob.Tick matches 4 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 2 0.7
-    execute if score @s General.Mob.Tick matches 8 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 2 1
+    execute if score @s General.Mob.Tick matches 4 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 0.7
+    execute if score @s General.Mob.Tick matches 8 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1
 
 # ビーム開始
     execute if score @s General.Mob.Tick matches 23 as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/attack_laser_2_loop/tween {to_frame:0, duration:1}

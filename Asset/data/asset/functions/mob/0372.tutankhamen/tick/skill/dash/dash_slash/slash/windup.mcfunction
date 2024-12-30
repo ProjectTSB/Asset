@@ -11,6 +11,7 @@
     execute facing entity @p[distance=..16] feet run tp @s ~ ~ ~ ~ ~
 
 # 演出
-    playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1 1
+    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
+    playsound minecraft:entity.player.breath hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:block.grindstone.use hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
