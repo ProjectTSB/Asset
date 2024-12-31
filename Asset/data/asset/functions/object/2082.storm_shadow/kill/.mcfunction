@@ -24,7 +24,7 @@ execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damag
 function api:damage/reset
 
 # 対空砲へのダメージ
-tag @e[scores={ObjectID=2088},distance=..3] add PatriotLauncher.HitMissile
+tag @e[scores={ObjectID=2088},distance=..8] add PatriotLauncher.HitMissile
 
 # 消滅
 kill @s

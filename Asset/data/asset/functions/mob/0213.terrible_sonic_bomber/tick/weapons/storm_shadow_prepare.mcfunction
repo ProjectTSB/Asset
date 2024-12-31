@@ -13,8 +13,8 @@ execute store result score $attack_start_time Temporary run time query gametime
 execute store result storage asset:context this.attack_start_time int 1 run scoreboard players add $attack_start_time Temporary 20
 execute store result storage asset:context this.attack_end_time int 1 run scoreboard players add $attack_start_time Temporary 1
 
-# 攻撃座標指定
-data modify storage asset:context this.storm_shadow.target_pos set from entity @p Pos
+# 攻撃座標指定 対空砲の1番近くにいるプレイヤーの座標が攻撃目標
+execute at @e[tag=5X.Centre,limit=1] run data modify storage asset:context this.storm_shadow.target_pos set from entity @p Pos
 
 # reset
 scoreboard players reset $attack_start_time Temporary

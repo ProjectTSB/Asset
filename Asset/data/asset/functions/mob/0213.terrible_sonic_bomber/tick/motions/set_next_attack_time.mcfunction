@@ -6,8 +6,8 @@
 
 #> prv
 # @private
-   #declare score_holder $current_next_attack_time
-   #declare score_holder $next_attack_time
+    #declare score_holder $current_next_attack_time
+    #declare score_holder $next_attack_time
 
 # 次回攻撃時刻を記録
 execute store result score $next_attack_time Temporary run time query gametime
