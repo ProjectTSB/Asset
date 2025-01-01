@@ -15,10 +15,5 @@
 # TargetID
     execute store result score @s 2092.TargetID run data get storage asset:context this.TargetID
 
-# スピード設定
-    data modify storage asset:context this.Speed set value 2
-    data modify storage asset:context this.Range set value 300
-    data modify storage asset:context this.MovePerStep set value 0.4
-
 # 継承
     function asset:object/super.init
