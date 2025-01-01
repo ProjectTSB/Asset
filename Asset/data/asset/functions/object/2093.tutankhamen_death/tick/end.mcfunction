@@ -13,5 +13,10 @@
 # モデルを消す
     execute as @e[type=item_display,tag=AC.AJ,distance=..8,limit=1] run function animated_java:tutankhamen/remove/this
 
+# ボスドロ
+    data modify storage api: Argument.ID set value 928
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # 消失
     kill @s
