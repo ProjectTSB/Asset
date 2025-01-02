@@ -13,9 +13,9 @@
     execute unless entity @s[scores={R4.Combo=0..}] run scoreboard players set @s R4.Combo 0
 
 # 攻撃
-    execute if entity @s[scores={R4.Combo=0}] run function asset:artifact/0976.brave_sword/trigger/combo/slash1
-    execute if entity @s[scores={R4.Combo=1}] run function asset:artifact/0976.brave_sword/trigger/combo/slash2
-    execute if entity @s[scores={R4.Combo=2}] run function asset:artifact/0976.brave_sword/trigger/combo/slash3
+    execute if entity @s[scores={R4.Combo=0}] anchored eyes run function asset:artifact/0976.brave_sword/trigger/combo/slash1
+    execute if entity @s[scores={R4.Combo=1}] anchored eyes run function asset:artifact/0976.brave_sword/trigger/combo/slash2
+    execute if entity @s[scores={R4.Combo=2}] anchored eyes run function asset:artifact/0976.brave_sword/trigger/combo/slash3
 
 # Init
     execute rotated ~ 0 anchored eyes positioned ^ ^-1.8 ^ as @e[type=armor_stand,tag=R4.SlashInit,distance=..0.5,sort=nearest,limit=1] run function asset:artifact/0976.brave_sword/trigger/slash_entity/init
