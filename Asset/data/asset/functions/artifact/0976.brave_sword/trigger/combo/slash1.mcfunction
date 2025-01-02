@@ -5,8 +5,8 @@
 # @within function asset:artifact/0976.brave_sword/trigger/3.main
 
 # 演出
-    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 1
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.8
+    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 1
+    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.8
     playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1 1.5
 
 # 斬撃
