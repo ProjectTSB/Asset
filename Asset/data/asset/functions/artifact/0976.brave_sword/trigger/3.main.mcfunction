@@ -23,5 +23,4 @@
     scoreboard players set @s[scores={R4.Combo=3..}] R4.Combo 0
 
 # スケジュール開始
-    schedule function asset:artifact/0976.brave_sword/trigger/slash_entity/1.tick 1t replace
     schedule function asset:artifact/0976.brave_sword/trigger/combo/1.tick 1t replace
