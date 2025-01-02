@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ブレイブソード","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む、強力な斬撃を放つ。"}','{"text":"\\"勇気を刃に込めて！\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む、強力な斬撃を放つ。"}','{"text":"コンボフィニッシュでは、敵を貫通する衝撃波を放つ。"}','{"text":"\\"勇気の刃\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 100
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 5
+    data modify storage asset:artifact LocalCooldown set value 4
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
