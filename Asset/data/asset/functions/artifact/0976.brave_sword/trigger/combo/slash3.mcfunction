@@ -24,7 +24,7 @@
 # 衝撃波を飛ばす
     data modify storage api: Argument.ID set value 1077
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute positioned ^ ^ ^1.5 positioned ~ ~-0.5 ~ run function api:object/summon
+    execute positioned ^ ^ ^1 positioned ~ ~-0.5 ~ run function api:object/summon
 
 # しばらく撃てなくなる
     tag @s add R4.FinishCoolTime
