@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/0411.behemoth/load",
         "asset:mob/0410.heiloang/load",
         "asset:mob/0378.red_knight_v3/load",
         "asset:mob/0377.grey_guardian_v2/load",
