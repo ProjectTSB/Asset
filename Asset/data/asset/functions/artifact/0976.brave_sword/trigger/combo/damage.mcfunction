@@ -4,9 +4,6 @@
 #
 # @within function asset:artifact/0976.brave_sword/trigger/combo/**
 
-# どうしてもダメージを受けてほしい（HurtTimeで反応を起こすモブもいるので)
-    effect give @s[type=#lib:undead] instant_health
-    effect give @s[type=!#lib:undead] instant_damage
 
 # 引数の設定
     #ダメージブレのための処理
@@ -28,11 +25,12 @@
     function lib:damage/
 
 # ノクバ耐性を考慮して吹っ飛ばす
-    data modify storage lib: Argument.VectorMagnitude set value -0.2
+    data modify storage lib: Argument.VectorMagnitude set value -0.7
     data modify storage lib: Argument.KnockbackResist set value true
-    execute as @s at @s facing entity @p[tag=this] feet rotated ~ ~25 run function lib:motion/
+    execute as @s at @s facing entity @p[tag=this] feet rotated ~ ~5 run function lib:motion/
 
 # リセット
+    tag @s remove R4.Hit
     function lib:damage/reset
     scoreboard players reset $RandomDamage Temporary
     data remove storage lib: Argument
