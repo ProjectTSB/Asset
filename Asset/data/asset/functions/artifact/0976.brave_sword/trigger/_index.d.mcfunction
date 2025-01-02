@@ -13,3 +13,4 @@
     #declare tag R4.Combo1
     #declare tag R4.Combo2
     #declare tag R4.Combo3
+    #declare tag R4.Hit
