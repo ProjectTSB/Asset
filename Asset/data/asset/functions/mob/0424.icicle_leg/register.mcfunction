@@ -20,7 +20,7 @@
     data modify storage asset:mob Lore set value ['{"text":"強靭で、そしてとても冷たい脚を持つ。","color":"white"}','{"text":"その脚から放たれる踏みつけは、吹雪を巻き起こす。","color":"white"}']
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20209}}
+        data modify storage asset:mob Armor.Head set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20470}}
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 3500
 # 攻撃力 (double) (オプション)

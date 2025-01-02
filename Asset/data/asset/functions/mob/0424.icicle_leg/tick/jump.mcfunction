@@ -13,7 +13,7 @@
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 # モデル変更
-    item replace entity @s armor.head with stick{CustomModelData:20210}
+    item replace entity @s armor.head with stick{CustomModelData:20471}
 
 # こっちに対してMotionで飛ぶ 近いやつを優先
     execute if entity @a[gamemode=!spectator,distance=14..30] run data modify storage lib: Argument.VectorMagnitude set value 2

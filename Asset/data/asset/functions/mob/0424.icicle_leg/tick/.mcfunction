@@ -17,5 +17,11 @@
 # 着地で爆発
     execute if score @s[nbt={OnGround:1b}] General.Mob.Tick matches 31 run function asset:mob/0424.icicle_leg/tick/stomp
 
+# 着地後の攻撃
+    execute if score @s General.Mob.Tick matches 32.. run function asset:mob/0424.icicle_leg/tick/icicle_rain/
+
+# スコアリセット
+    execute if score @s General.Mob.Tick matches 60.. run scoreboard players reset @s General.Mob.Tick
+
 # 首固定
     data modify entity @s Rotation[1] set value 0.0f
