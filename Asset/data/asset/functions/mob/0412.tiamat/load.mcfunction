@@ -1,9 +1,9 @@
-#> asset:mob/0411.behemoth/load
+#> asset:mob/0412.tiamat/load
 #
 # Mobに利用するスコアボード等の初期化処理
 #
 # @within tag/function asset:mob/load
 
 #> 定義類はここに
-# @within function asset:mob/0411.behemoth/**
+# @within function asset:mob/0412.tiamat/**
     # scoreboard objectives add

@@ -9,7 +9,7 @@
 
 # 独自init処理
     # 移動
-        tp @s ^ ^3 ^ ~ 0
+        tp @s ^ ^2.5 ^ ~ 0
     # NBT設定
     # Aj関連初期化
         function asset:mob/0411.behemoth/init/animated_java
