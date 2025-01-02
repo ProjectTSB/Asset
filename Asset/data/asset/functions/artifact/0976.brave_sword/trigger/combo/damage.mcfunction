@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/0976.brave_sword/trigger/combo/**
 
+#> private
+# @private
+    #declare score_holder $RandomDamage
 
 # 引数の設定
     #ダメージブレのための処理
