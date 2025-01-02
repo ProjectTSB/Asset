@@ -5,4 +5,4 @@
 # @within function asset:object/1077.brave_slash/summon/
 
 # モブ召喚
-    $summon item_display ~ ~ ~ {Rotation:$(Rotation),Tags:["ObjectInit"],teleport_duration:1,transformation:{left_rotation:[0.271f,-0.653f,0.271f,0.653f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,0.01f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:8908799},CustomModelData:20377}}}
+    $summon item_display ~ ~ ~ {brightness:{sky:15,block:15},Rotation:$(Rotation),Tags:["ObjectInit"],teleport_duration:1,transformation:{left_rotation:[0.271f,-0.653f,0.271f,0.653f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,0.01f]},item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:8908799},CustomModelData:20377}}}
