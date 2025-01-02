@@ -16,6 +16,7 @@
 # 破滅の騎士道(ID:263)を得る
     data modify storage api: Argument.ID set value 263
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # スコアを10000で剰余算
 # 余剰分もリセットすると無駄が発生してしまうため

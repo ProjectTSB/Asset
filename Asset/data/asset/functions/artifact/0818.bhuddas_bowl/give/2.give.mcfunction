@@ -51,7 +51,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Enchantments:[{id:"minecraft:protection",lvl:1s}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:fortune",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,818,4],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,818,4],Slot:"head"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

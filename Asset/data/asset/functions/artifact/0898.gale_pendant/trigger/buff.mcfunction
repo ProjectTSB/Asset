@@ -7,6 +7,7 @@
 # バフを解除する
     data modify storage api: Argument.ID set value 261
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
 
 # 所持数が0ならreturn
     execute unless data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:898}}}] run return 0
@@ -16,3 +17,4 @@
     data modify storage api: Argument.ID set value 261
     execute store result storage api: Argument.Stack int 1 if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:898}}}]
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

@@ -2055,7 +2055,7 @@
                     "type": "file",
                     "rel": "data/asset/functions/mob/alias/%id%/remove.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/init",
+                        "#> asset:mob/alias/%id%/remove",
                         "#",
                         "# Remove処理のエイリアス",
                         "#",
@@ -2114,6 +2114,10 @@
                         "    # data modify storage asset:effect ProcessOnDied set value ",
                         "# 消すのに必要なレベル (int) (default = 1)",
                         "    # data modify storage asset:effect RequireClearLv set value ",
+                        "# エフェクトをUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect Visible set value ",
+                        "# エフェクトのスタックををUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect StackVisible set value",
                         "",
                         "# フィールド",
                         "    # data modify storage asset:effect Field set value {}"

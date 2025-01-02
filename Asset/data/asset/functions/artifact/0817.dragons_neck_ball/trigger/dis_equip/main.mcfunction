@@ -4,8 +4,15 @@
 #
 # @within function asset:artifact/0817.dragons_neck_ball/trigger/dis_equip/
 
-# バフを削除
-    effect clear @s fire_resistance
-    effect clear @s haste
-    effect clear @s resistance
-    effect clear @s slow_falling
+# 耐性削除
+    data modify storage api: Argument.UUID set value [I;1,1,816,5]
+    function api:modifier/defense/fire/remove
+
+    data modify storage api: Argument.UUID set value [I;1,1,817,6]
+    function api:modifier/defense/water/remove
+
+    data modify storage api: Argument.UUID set value [I;1,1,818,4]
+    function api:modifier/defense/physical/remove
+
+    data modify storage api: Argument.UUID set value [I;1,1,819,3]
+    function api:modifier/fall_damage/remove
