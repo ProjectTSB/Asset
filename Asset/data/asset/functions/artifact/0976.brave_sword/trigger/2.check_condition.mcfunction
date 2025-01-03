@@ -4,9 +4,6 @@
 #
 # @within function asset:artifact/0976.brave_sword/trigger/1.trigger
 
-# 先にLatestUseTickを取っておく
-    execute store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
-
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
