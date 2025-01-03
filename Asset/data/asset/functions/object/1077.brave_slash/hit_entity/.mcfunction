@@ -13,8 +13,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # ダメージ値設定
-    # ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run random value 105..155
+    execute store result storage lib: Argument.Damage float 1 run random value 105..155
 
 # ダメージの属性をセット
     data modify storage lib: Argument.AttackType set value "Physical"
