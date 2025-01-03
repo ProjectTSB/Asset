@@ -7,6 +7,6 @@
 # 数値
     data modify storage lib: Argument.VectorMagnitude set value 2
 # 飛ぶ方向
-    execute facing entity @p[gamemode=!spectator] eyes rotated ~90 ~90 run function lib:motion/
+    execute facing entity @p[gamemode=!spectator] eyes rotated 90 ~90 run function lib:motion/
 # リセット
     data remove storage lib: Argument

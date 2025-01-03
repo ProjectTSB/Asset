@@ -11,11 +11,11 @@
 
 # 引数の設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 12.0f
+        data modify storage lib: Argument.Damage set value 41.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Fire"
+        data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage lib: Argument.ElementType set value "Fire"
 # 補正functionを実行
     function lib:damage/modifier
 # 前方にいたプレイヤーにダメージ
