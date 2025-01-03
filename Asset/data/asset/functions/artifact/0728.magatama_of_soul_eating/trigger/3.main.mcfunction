@@ -24,7 +24,7 @@
 # 個数を取得し、その値に1を足す
 # 回復量 = 5(n+1)％
     execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:728}}}]
-    scoreboard players operation $Count Temporary += $1 Const
+    scoreboard players add $Count Temporary 1
 
 # 5％分を100倍で取得
     function api:modifier/max_health/get
