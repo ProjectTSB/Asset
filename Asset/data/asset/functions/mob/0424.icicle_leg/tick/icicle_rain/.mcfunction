@@ -4,9 +4,10 @@
 #
 # @within function asset:mob/0424.icicle_leg/tick/
 
-#> 拡散用エンティティ
+#> 拡散用エンティティのタグと、インターバルのスコアホルダー
 # @private
 #declare tag SpreadMarker
+#declare score_holder $Interval
 
 # マーカーを召喚して拡散させる
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -20,15 +21,18 @@
     execute positioned ~ ~0.1 ~ rotated ~ 0 run function asset:mob/0424.icicle_leg/tick/icicle_rain/shape
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 5f
+    data modify storage lib: Argument.Damage set value 25f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
 
 # 補正実行
     function lib:damage/modifier
 
-# ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
+# 一定間隔でダメージ
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
+    scoreboard players operation $Interval Temporary %= $5 Const
+    execute if score $Interval Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
+    scoreboard players reset $Interval Temporary
 
 # 吹き飛ばし
     data modify storage api: Argument.ID set value 17
@@ -39,5 +43,5 @@
 
 # リセット
     function lib:damage/reset
-     function api:entity/mob/effect/reset
+    function api:entity/mob/effect/reset
     kill @e[type=marker,tag=SpreadMarker,distance=..8,limit=1]
