@@ -12,13 +12,10 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-# 数みる
-    # 数のカウント
-        execute store result score $Count Temporary if entity @e[type=armor_stand,tag=N9.Knife,distance=..100]
-    # もしいたらtagけす
-        execute if score $Count Temporary matches 30.. run tag @s remove CanUsed
-    # リセット
-        scoreboard players reset $Count Temporary
+# ナイフが 30 本以上ある場合は使えない
+    execute as @e[type=item_display,scores={ObjectID=1066},distance=..100] if score @s 1066.API.UserID = @p[tag=this] UserID run scoreboard players add $Count Temporary 1
+    execute if score $Count Temporary matches 30.. run tag @s remove CanUsed
+    scoreboard players reset $Count Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0837.the_world_knife/trigger/3.main

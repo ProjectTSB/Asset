@@ -11,7 +11,7 @@
 
 # ダメージ
     # 与えるダメージ = 550
-        data modify storage lib: Argument.Damage set value 550f
+        data modify storage lib: Argument.Damage set value 50f
     # 物理属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 炎属性

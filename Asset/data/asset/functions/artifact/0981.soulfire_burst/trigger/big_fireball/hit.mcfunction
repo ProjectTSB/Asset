@@ -7,8 +7,8 @@
 # オーナーのプレイヤーを特定
     execute at @a[distance=..100] if score @s R9.UserID = @p UserID run tag @p add R9.OwnerPlayer
 
-# 範囲3にダメージ。着弾地点から範囲3以内のモブが実行者になる。
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] at @s run function asset:artifact/0981.soulfire_burst/trigger/big_fireball/damage
+# 範囲2にダメージ。着弾地点から範囲2以内のモブが実行者になる。
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.5] at @s run function asset:artifact/0981.soulfire_burst/trigger/big_fireball/damage
 
 # 演出
     playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1.5 1.5

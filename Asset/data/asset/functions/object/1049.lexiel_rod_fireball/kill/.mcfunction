@@ -5,27 +5,19 @@
 # @within asset:object/alias/1049/kill
 
 #> private
-# @private
-    #declare score_holder $OwnerID
+# @within function asset:object/1049.lexiel_rod_fireball/kill/*
+    #declare score_holder $UserID
 
 # 演出
     function asset:object/1049.lexiel_rod_fireball/kill/vfx
 
-# ダメージを与える
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 250.0f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 属性
-        data modify storage lib: Argument.ElementType set value "Fire"
-    # ダメージ
-        execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,distance=..3] run function lib:damage/
-# リセット
-    function lib:damage/reset
-    scoreboard players reset $OwnerID Temporary
 
+# プレイヤー特定
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+# ダメージ
+    function asset:object/1049.lexiel_rod_fireball/kill/deal_damage.m {DamagePer:100,RangeMax:0.5,RangeMaxD:0,RangeMinSubCommand:""}
+    function asset:object/1049.lexiel_rod_fireball/kill/deal_damage.m {DamagePer: 25,RangeMax:3.0,RangeMaxD:5,RangeMinSubCommand:"positioned ~-0.5 ~-0.5 ~-0.5 unless entity @s[dx=0,dy=0,dz=0] "}
+# リセット
+    scoreboard players reset $UserID Temporary
 # キル
     kill @s

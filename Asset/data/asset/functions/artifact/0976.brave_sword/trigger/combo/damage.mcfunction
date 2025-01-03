@@ -5,8 +5,8 @@
 # @within function asset:artifact/0976.brave_sword/trigger/combo/**
 
 # どうしてもダメージを受けてほしい（HurtTimeで反応を起こすモブもいるので)
-    effect give @s[type=#lib:undead] instant_health
-    effect give @s[type=!#lib:undead] instant_damage
+    # effect give @s[type=#lib:undead] instant_health
+    # effect give @s[type=!#lib:undead] instant_damage
 
 # 引数の設定
     #ダメージブレのための処理
@@ -15,7 +15,7 @@
         # 剰余算する。追加ダメージ。
             scoreboard players operation $RandomDamage Temporary %= $51 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 300
+            scoreboard players add $RandomDamage Temporary 125
     #ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     # 第一属性

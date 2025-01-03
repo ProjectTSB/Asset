@@ -23,7 +23,7 @@
     scoreboard players operation $ST.OwnerId Temporary = @s UserID
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players operation @s ST.OwnerID = $ST.OwnerId Temporary
     execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers run scoreboard players set @s ST.FlyingTick 100
-    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers store result score @s ST.PercentHP run data get storage api: Return.HealthPer
+    execute as @e[type=snowball,tag=ST.SnowBallInit,distance=..3,limit=1] on passengers store result score @s ST.PercentHP run data get storage api: Return.HealthPer 100
 
 # 雪玉にMotionをセットする
     data modify storage lib: Argument.VectorMagnitude set value 1.5

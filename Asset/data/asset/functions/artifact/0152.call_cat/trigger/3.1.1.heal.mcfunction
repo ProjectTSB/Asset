@@ -12,11 +12,11 @@
 
 # 回復
     # 引数の設定
-        data modify storage lib: Argument.Heal set value 2.0f
+        data modify storage lib: Argument.Heal set value 4.0f
     # 補正function
         function lib:heal/modifier
     # 実行（既に4回回復した場合は実行しない）
-        execute if entity @s[scores={48.CatTime=21..24}] run function lib:heal/
+        execute if entity @s[scores={48.CatTime=19..24}] run function lib:heal/
     # リセット
         function lib:heal/reset
 

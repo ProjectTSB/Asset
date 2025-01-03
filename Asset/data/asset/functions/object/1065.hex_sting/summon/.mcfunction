@@ -1,0 +1,12 @@
+#> asset:object/1065.hex_sting/summon/
+#
+# Object召喚処理の呼び出し時に実行されるfunction
+#
+# @within asset:object/alias/1065/summon
+
+# 元となるEntityを召喚する
+    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/1065.hex_sting/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args
+    

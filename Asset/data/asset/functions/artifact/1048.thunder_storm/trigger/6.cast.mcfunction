@@ -7,10 +7,13 @@
 # 演出
     function asset:artifact/1048.thunder_storm/trigger/6.1.cast_vfx
 
+# ダメージ = (減少したMP%) * 3 + 340
+# 最終的に-1倍するのでマイナスのまま計算する
+
 # 引き継がれたMP消費を取り出す
     scoreboard players operation $T4.Temp Temporary = @s T4.MPPer
-    scoreboard players operation $T4.Temp Temporary *= $4 Const
-    scoreboard players operation $T4.Temp Temporary -= $300 Const
+    scoreboard players operation $T4.Temp Temporary *= $3 Const
+    scoreboard players remove $T4.Temp Temporary 340
 
 # 使用者取得
     scoreboard players operation $T4.OwnerId Temporary = @s T4.OwnerID
@@ -21,7 +24,7 @@
         execute store result storage lib: Argument.Damage float -1 run scoreboard players get $T4.Temp Temporary
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
-    # 無属性
+    # 雷属性
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
         execute as @p[tag=T4.Owner] run function lib:damage/modifier

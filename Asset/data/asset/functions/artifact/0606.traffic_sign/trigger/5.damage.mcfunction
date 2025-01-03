@@ -4,14 +4,24 @@
 #
 # @within function asset:artifact/0606.traffic_sign/trigger/4.1.schedule_tick
 
-# 速度を取得
-    execute store result score $GU.Temp Temporary run attribute @s generic.movement_speed get 100
-    scoreboard players operation $GU.Temp Temporary -= $100 Const
-    scoreboard players operation $GU.Temp Temporary *= $-1 Const
+#> Private
+# @private
+    #declare score_holder $BaseSpeed
+    #declare score_holder $Speed
 
-# 計算結果をArgument.Damageに代入
-# Damage = (1 - 速度) * 50
-    execute store result storage lib: Argument.Damage float 0.5 run scoreboard players operation $GU.Temp Temporary > $1 Const
+# Damage = (250 ~ 350) * (|(速度 / ベース速度)% - 100%| * 130% + 100%)
+    execute store result score $Speed Temporary run attribute @s generic.movement_speed get 10000
+    execute store result score $BaseSpeed Temporary run attribute @s generic.movement_speed base get 10
+    execute if score $BaseSpeed Temporary matches 0 run scoreboard players set $Speed Temporary 1000
+    execute if score $BaseSpeed Temporary matches 0 run scoreboard players set $BaseSpeed Temporary 1
+    scoreboard players operation $Speed Temporary /= $BaseSpeed Temporary
+    scoreboard players remove $Speed Temporary 1000
+    execute if score $Speed Temporary matches ..0 run scoreboard players operation $Speed Temporary *= $-1 Const
+    scoreboard players operation $Speed Temporary *= $13 Const
+    scoreboard players add $Speed Temporary 10000
+    execute store result storage asset:temp Args.Damage int 1 run random value 250..350
+    function asset:artifact/0606.traffic_sign/trigger/5.1.set_damage.m with storage asset:temp Args
+    data remove storage asset:temp Args
 
 # ダメージ
     data modify storage lib: Argument.AttackType set value "Physical"
@@ -23,5 +33,6 @@
     particle item anvil ~ ~0.1 ~ 1 0.5 1 0.1 15
 
 # リセット
+    scoreboard players reset $Speed Temporary
+    scoreboard players reset $BaseSpeed Temporary
     function lib:damage/reset
-

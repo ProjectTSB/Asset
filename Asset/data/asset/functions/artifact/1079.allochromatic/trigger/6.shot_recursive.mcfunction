@@ -22,4 +22,4 @@
     scoreboard players add $Distance_Damping Temporary 1
 
 # 再帰
-    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..30] if block ^ ^ ^ #lib:no_collision run function asset:artifact/1079.allochromatic/trigger/6.shot_recursive
+    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..15] if block ^ ^ ^ #lib:no_collision run function asset:artifact/1079.allochromatic/trigger/6.shot_recursive

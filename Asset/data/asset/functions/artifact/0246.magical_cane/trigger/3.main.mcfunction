@@ -9,12 +9,12 @@
 # 使用時のMPの数値によって演出がかわるよ
     function api:mp/get_current
     execute store result score $MagicalCane Temporary run data get storage api: Return.CurrentMP
-    execute if score $MagicalCane Temporary matches 0..49 run function asset:artifact/0246.magical_cane/trigger/3.1.weak_hit
-    execute if score $MagicalCane Temporary matches 50..249 run function asset:artifact/0246.magical_cane/trigger/3.2.strong_hit
-    execute if score $MagicalCane Temporary matches 250.. run function asset:artifact/0246.magical_cane/trigger/3.3.hyper_hit
+    execute if score $MagicalCane Temporary matches 0..149 run function asset:artifact/0246.magical_cane/trigger/3.1.weak_hit
+    execute if score $MagicalCane Temporary matches 150..399 run function asset:artifact/0246.magical_cane/trigger/3.2.strong_hit
+    execute if score $MagicalCane Temporary matches 400.. run function asset:artifact/0246.magical_cane/trigger/3.3.hyper_hit
 
-# $MagicalCaneに現在のスコアx10の数値を持たせる
-    scoreboard players operation $MagicalCane Temporary *= $10 Const
+# $MagicalCaneに現在のスコアx12の数値を持たせる
+    scoreboard players operation $MagicalCane Temporary *= $12 Const
 
 # ぶん殴ったやつにさっきもたせた数値ぶんの魔法無属性のダメージをぶちかます
     execute store result storage lib: Argument.Damage float 1 run scoreboard players get $MagicalCane Temporary

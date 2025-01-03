@@ -10,14 +10,14 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @a[distance=..15] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..30]
-    playsound minecraft:entity.arrow.hit_player player @a[distance=..15] ~ ~ ~ 20 1
+    execute at @a[distance=..8] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..8]
+    playsound minecraft:entity.arrow.hit_player player @a[distance=..8] ~ ~ ~ 20 1
     execute positioned ~ ~4 ~ run function asset:artifact/0190.amor_wand/trigger/vfx/
 
 # 回復
-    data modify storage lib: Argument.Heal set value 7.6
+    data modify storage lib: Argument.Heal set value 8.4
     function lib:heal/modifier
-    execute as @a[distance=..15] run function lib:heal/
+    execute as @a[distance=..8] run function lib:heal/
 
 # リセット
     function lib:heal/reset

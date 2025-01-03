@@ -21,10 +21,10 @@
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0952.lunatic_rod/trigger/4.recursive
 
 # ヒットした対象にダメージ distance=..40なのは広めに判定をとっているため
-    data modify storage lib: Argument.Damage set value 2000.0f
+    data modify storage lib: Argument.Damage set value 300.0f
     data modify storage lib: Argument.AttackType set value "Magic"
     function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Hit,distance=..40] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Hit,distance=..15] run function lib:damage/
     function lib:damage/reset
 
 # ヒットしたら魔法攻撃バフ
@@ -33,6 +33,6 @@
     execute if entity @s[tag=Landing] run function api:entity/mob/effect/reset
 
 # 再帰処理のリセット
-    tag @e[type=#lib:living,tag=Hit,distance=..40] remove Hit
+    tag @e[type=#lib:living,tag=Hit,distance=..15] remove Hit
     tag @s remove Landing
     scoreboard players reset $Interval Temporary

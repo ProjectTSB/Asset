@@ -9,16 +9,16 @@
     effect give @s instant_damage
 
 # デバフ
-    effect give @s slowness 2 10
+    effect give @s slowness 15 3
 
 # ダメージ値設定
     #ダメージブレのための処理
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。追加ダメージ発生
-          scoreboard players operation $RandomDamage Temporary %= $300 Const
+          scoreboard players operation $RandomDamage Temporary %= $200 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 900
+            scoreboard players add $RandomDamage Temporary 400
     #ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 

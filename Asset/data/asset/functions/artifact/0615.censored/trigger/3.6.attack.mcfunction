@@ -12,7 +12,7 @@
     playsound minecraft:entity.illusioner.mirror_move player @a ~ ~ ~ 1 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 333.0f
+    data modify storage api: Argument.Damage set value 330.0f
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..0.01,limit=1] run function api:damage/

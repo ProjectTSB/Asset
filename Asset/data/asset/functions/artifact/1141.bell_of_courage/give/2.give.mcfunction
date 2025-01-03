@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"勇気の鈴","color":"#FFFF7A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し、バリアを5得る","color":"white"}','{"text":"「おしえたでしょ、勇気がでる方法」","color":"gray","italic":true}','{"text":"「手の中の鈴をならすんだ」","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し、バリアを得る","color":"white"}','{"text":"「おしえたでしょ、勇気がでる方法」","color":"gray","italic":true}','{"text":"「手の中の鈴をならすんだ」","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 16
+    data modify storage asset:artifact MPCost set value 22
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 400
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
