@@ -7,7 +7,7 @@
 #   asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/windup
 
 # アニメ再生
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_back/play
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_side/tween {to_frame:0,duration:1}
 
 # 速度設定
     scoreboard players set @s RW.Speed 7

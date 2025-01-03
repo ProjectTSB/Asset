@@ -10,8 +10,7 @@
     tag @s add RW.InAction
 
 # アニメ再生
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_back/play
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_back/tween {to_frame:0,duration:1}
 
 # スキルのタグをリセットする
     function asset:mob/1004.tultaria/tick/reset/skill_tag
