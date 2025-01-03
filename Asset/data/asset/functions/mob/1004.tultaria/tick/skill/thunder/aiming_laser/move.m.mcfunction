@@ -2,17 +2,13 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/tick
+# @within function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/first_move
 
 # TickLock
     tag @s add RW.TickLock
 
 # これをループされると困るのでTickを1増やす
     scoreboard players add @s General.Mob.Tick 1
-
-# アニメ
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/play
 
 # 速度設定
     scoreboard players set @s RW.Speed 8
@@ -35,6 +31,7 @@
 
 # リセット
     tag @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit] remove RW.MarkerInit
+    data remove storage rw_storage: Rotation
 
 # 行動中タグ付与
     tag @s add RW.Move

@@ -9,16 +9,14 @@
     #declare tag RX.Skill.AimingLaser.Direct
     #declare tag RX.Skill.AimingLaser.Advance
 
-
 # モデルを自分の向きに
     execute if score @s General.Mob.Tick matches 0.. at @s facing entity @p eyes run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
 # 最初の移動
-    execute if score @s General.Mob.Tick matches 0 store result storage rw_storage: Rotation int 1 run random value -180..180
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/move.m with storage rw_storage:
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/first_move
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 40 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/play
+    execute if score @s General.Mob.Tick matches 40 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:5}
 
 # 射撃
     # 偏差
@@ -49,15 +47,6 @@
 
 # ループ
     execute if entity @s[scores={RW.LoopCount=..1,General.Mob.Tick=50}] run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/add_loop_count
-
-# テレポート
-    #execute if score @s General.Mob.Tick matches 0 at @s run function asset:mob/1004.tultaria/tick/base_move/teleport/vfx
-
-# デバッグループ
-    #execute if score @s General.Mob.Tick matches 70.. run scoreboard players set @s General.Mob.Tick 0
-
-# アニメ停止
-    execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
 
 # リセット
     execute if score @s General.Mob.Tick matches 70 run function asset:mob/1004.tultaria/tick/base_move/reset
