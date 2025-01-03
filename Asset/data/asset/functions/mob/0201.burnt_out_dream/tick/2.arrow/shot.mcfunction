@@ -11,4 +11,4 @@
     data modify storage api: Argument.FieldOverride.Damage set value 23.2
     data modify storage api: Argument.FieldOverride.Speed set value 3
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute anchored eyes positioned ^ ^ ^ run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^ facing entity @p[gamemode=!spectator,distance=..10] eyes run function api:object/summon
