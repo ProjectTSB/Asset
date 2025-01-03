@@ -21,5 +21,6 @@
     # その位置から実行
         execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s rotated ~ ~90 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/ring
         execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/
+        execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/visual_laser
     # リセット
         kill @e[type=marker,tag=SpreadMarker]
