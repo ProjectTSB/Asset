@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/util/remove_animation_tag
 #
-# 他エンティティに付与しているタグをすべて消去する
+# 自身に付与しているタグをすべて消去する
 #
 # @within asset:mob/0410.heiloang/tick/**
 

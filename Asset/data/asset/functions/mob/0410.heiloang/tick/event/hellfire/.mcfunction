@@ -20,19 +20,19 @@
         execute if score @s BE.EventTimer matches 125 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_0_hellfire_start
     # 1
         execute if score @s BE.EventTimer matches 156 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_1_hellfire_shoot
-        execute if score @s BE.EventTimer matches 156 positioned ^ ^7 ^2 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
+        execute if score @s BE.EventTimer matches 156 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
     # 2
         execute if score @s BE.EventTimer matches 187 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_1_hellfire_shoot
-        execute if score @s BE.EventTimer matches 187 positioned ^ ^7 ^2 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
+        execute if score @s BE.EventTimer matches 187 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
     # 3
         execute if score @s BE.EventTimer matches 218 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_1_hellfire_shoot
-        execute if score @s BE.EventTimer matches 218 positioned ^ ^7 ^2 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
+        execute if score @s BE.EventTimer matches 218 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
     # 4
         execute if score @s BE.EventTimer matches 249 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_1_hellfire_shoot
-        execute if score @s BE.EventTimer matches 249 positioned ^ ^7 ^2 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
+        execute if score @s BE.EventTimer matches 249 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
     # 5
         execute if score @s BE.EventTimer matches 280 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/3_2_hellfire_shoot_end
-        execute if score @s BE.EventTimer matches 280 positioned ^ ^7 ^2 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
+        execute if score @s BE.EventTimer matches 280 run function asset:mob/0410.heiloang/tick/event/hellfire/attack
 
 # 対象を向く
     execute if score @s BE.EventTimer matches 1..125 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target
