@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/1004.tultaria/load",
+        "asset:mob/1005.illusion_of_loyalty/load",
         "asset:mob/0372.tutankhamen/load",
         "asset:mob/0380.haruclaire_v3/load",
         "asset:mob/0311.blazing_inferno/load",
@@ -47,9 +49,6 @@
         "asset:mob/0258.enemy_teleporter/0.load",
         "asset:mob/0257.distortion_spellbook/0.load",
         "asset:mob/0245.fire_creeper/0.load",
-        "asset:mob/1008.yellow_star/0.load",
-        "asset:mob/1005.blue_star/0.load",
-        "asset:mob/1004.tultaria/0.load",
         "asset:mob/0021.demon_eye/0.load",
         "asset:mob/0058.divide_haze/0.load",
         "asset:mob/0038.laser_eye/0.load",
