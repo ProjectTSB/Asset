@@ -9,7 +9,7 @@
 
 # 予告
     execute if entity @s[scores={General.Object.Tick=21}] run function asset:object/2123.heiloang_flare/tick/prediction
-    execute if entity @s[scores={General.Object.Tick=21..104}] on passengers run function asset:object/2123.heiloang_flare/tick/effect_vector
+    execute if entity @s[scores={General.Object.Tick=21..101}] on passengers run function asset:object/2123.heiloang_flare/tick/effect_vector
 
 # 拡大
     execute if entity @s[scores={General.Object.Tick=108}] run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[0f,50f,0f]}}
@@ -19,7 +19,6 @@
     execute if entity @s[scores={General.Object.Tick=228}] run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[0f,50f,0f]}}
     execute if entity @s[scores={General.Object.Tick=258}] run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[0f,50f,0f]}}
     execute if entity @s[scores={General.Object.Tick=288}] run data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[0f,50f,0f]}}
-
 
 # 移動
     execute if entity @s[scores={General.Object.Tick=112}] run tp @s ^ ^ ^5.5

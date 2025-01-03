@@ -1,12 +1,10 @@
 {
     "values": [
         "asset:object/2130.heiloang_circle_vfx/load",
-        "asset:object/2128.heiloang_powerbreath/load",
         "asset:object/2127.heiloang_ice_vfx/load",
         "asset:object/2126.heiloang_thunder_burst/load",
         "asset:object/2125.heiloang_ice_burst/load",
         "asset:object/2124.heiloang_fire_burst/load",
-        "asset:object/2123.heiloang_flare/load",
         "asset:object/2122.heiloang_flame_vfx/load",
         "asset:object/2121.heiloang_tempest/load",
         "asset:object/2120.heiloang_thunder_vfx/load",

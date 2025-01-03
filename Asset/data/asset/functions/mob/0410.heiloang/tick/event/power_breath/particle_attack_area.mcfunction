@@ -7,44 +7,44 @@
 # 中心
     particle firework ~ ~ ~ 0.1 0.1 0.1 0.2 1
 
-# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwCcAzLQAwMAcAtAEbtwOsAsATJTitqAdl4BDVrQCs-GQEZ+DFADNG+MADsJAWwTJAYYoACBWAIwJGPQGck4FAHtCWiElrUCKOK7gZ7YABuEtiEBuAAHkgMBFDRAL7xBNakaIR2iJQENhBWbogxYHDY2GgwNgYKTMmOuRAGhWg2AKIlZRXNAI6EIdhQAMqW3uSIqiEViQC6QA_3
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmHAEylUDMA7CgEYC0pAnABwqsAsANmYBGVlw7CAZu2akAhhzkNhcyXxRgCAOzkBbBMkBhigAJhmsDDkY9AZyTgUAe0JaISOhwIo4ruBntgAG5y2IQG4AAeSAAMBFAxAL4JBNakaIR2iACsAHR0BDYQVm6IsZTY2GgwNgbC0WUYjkUQBmVoNgCiFVU1HQCOhCHYUADKlt7kiJIhNUkAukA_3
 # 円 1
-    particle dust 0.992 1 0.612 1 ^0 ^ ^-6 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^0.96247 ^ ^-5.9223 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^1.90001 ^ ^-5.69122 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^2.78834 ^ ^-5.31274 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^3.60445 ^ ^-4.79666 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^4.32721 ^ ^-4.15635 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^4.9379 ^ ^-3.40839 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.4207 ^ ^-2.57216 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.76311 ^ ^-1.6693 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.95625 ^ ^-0.72322 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.99513 ^ ^0.2416 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.87874 ^ ^1.20015 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.6101 ^ ^2.12763 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^5.19615 ^ ^3 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^4.64763 ^ ^3.79467 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^3.97874 ^ ^4.49106 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^3.20679 ^ ^5.07114 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^2.3518 ^ ^5.51988 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^1.43589 ^ ^5.82565 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^0.4828 ^ ^5.98054 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-0.4828 ^ ^5.98054 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-1.43589 ^ ^5.82565 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-2.3518 ^ ^5.51988 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-3.20679 ^ ^5.07114 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-3.97874 ^ ^4.49106 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-4.64763 ^ ^3.79467 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.19615 ^ ^3 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.6101 ^ ^2.12763 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.87874 ^ ^1.20015 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.99513 ^ ^0.2416 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.95625 ^ ^-0.72322 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.76311 ^ ^-1.6693 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-5.4207 ^ ^-2.57216 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-4.9379 ^ ^-3.40839 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-4.32721 ^ ^-4.15635 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-3.60445 ^ ^-4.79666 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-2.78834 ^ ^-5.31274 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-1.90001 ^ ^-5.69122 0 0 0 0 1
-    particle dust 0.992 1 0.612 1 ^-0.96247 ^ ^-5.9223 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^0 ^ ^-5.3 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^0.85018 ^ ^-5.23137 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^1.67834 ^ ^-5.02724 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^2.46303 ^ ^-4.69292 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^3.18393 ^ ^-4.23705 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^3.82237 ^ ^-3.67144 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^4.36181 ^ ^-3.01074 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^4.78829 ^ ^-2.27207 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^5.09075 ^ ^-1.47455 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^5.26136 ^ ^-0.63884 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^5.2957 ^ ^0.21341 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^5.19289 ^ ^1.06014 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^4.95559 ^ ^1.87941 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^4.58993 ^ ^2.65 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^4.10541 ^ ^3.35196 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^3.51455 ^ ^3.96711 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^2.83267 ^ ^4.47951 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^2.07742 ^ ^4.87589 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^1.26837 ^ ^5.14599 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^0.42647 ^ ^5.28281 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-0.42647 ^ ^5.28281 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-1.26837 ^ ^5.14599 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-2.07742 ^ ^4.87589 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-2.83267 ^ ^4.47951 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-3.51455 ^ ^3.96711 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-4.10541 ^ ^3.35196 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-4.58993 ^ ^2.65 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-4.95559 ^ ^1.87941 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-5.19289 ^ ^1.06014 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-5.2957 ^ ^0.21341 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-5.26136 ^ ^-0.63884 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-5.09075 ^ ^-1.47455 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-4.78829 ^ ^-2.27207 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-4.36181 ^ ^-3.01074 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-3.82237 ^ ^-3.67144 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-3.18393 ^ ^-4.23705 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-2.46303 ^ ^-4.69292 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-1.67834 ^ ^-5.02724 0 0 0 0 1
+particle dust 0.992 1 0.612 1 ^-0.85018 ^ ^-5.23137 0 0 0 0 1
