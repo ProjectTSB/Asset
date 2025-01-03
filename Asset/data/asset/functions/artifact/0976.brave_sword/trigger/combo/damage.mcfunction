@@ -4,20 +4,9 @@
 #
 # @within function asset:artifact/0976.brave_sword/trigger/combo/**
 
-#> private
-# @private
-    #declare score_holder $RandomDamage
-
 # 引数の設定
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。追加ダメージ。
-            scoreboard players operation $RandomDamage Temporary %= $51 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 125
-    #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+    # ダメージ値設定
+        execute store result storage lib: Argument.Damage float 1 run random value 125..175
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性
@@ -35,5 +24,4 @@
 # リセット
     tag @s remove R4.Hit
     function lib:damage/reset
-    scoreboard players reset $RandomDamage Temporary
     data remove storage lib: Argument

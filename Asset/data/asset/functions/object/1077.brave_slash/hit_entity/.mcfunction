@@ -6,7 +6,6 @@
 
 #> private
 # @private
-    #declare score_holder $RandomDamage
     #declare score_holder $Interval
 
 # Tick加算
@@ -32,5 +31,4 @@
 
 # リセット
     function lib:damage/reset
-    scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $Interval Temporary
