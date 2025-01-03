@@ -13,15 +13,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # ダメージ値設定
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。0~50の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $51 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 105
-    #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+    # ダメージセット
+        execute store result storage lib: Argument.Damage float 1 run random value 105..155
 
 # ダメージの属性をセット
     data modify storage lib: Argument.AttackType set value "Physical"
