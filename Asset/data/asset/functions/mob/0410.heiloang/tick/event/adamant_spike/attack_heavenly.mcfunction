@@ -22,3 +22,8 @@
     playsound item.trident.return hostile @a ~ ~20 ~ 2 0.7
     particle flash ~ ~20 ~ 1 1 1 0 4
     particle firework ~ ~20 ~ 1 1 1 0.3 10
+    data modify storage api: Argument.ID set value 2130
+    data modify storage api: Argument.FieldOverride.Rotation set value [0f,90f]
+    data modify storage api: Argument.FieldOverride.Color set value 54783
+    data modify storage api: Argument.FieldOverride.RemoveTimer set value 30
+    execute at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ~ ~18.5 ~ run function api:object/summon

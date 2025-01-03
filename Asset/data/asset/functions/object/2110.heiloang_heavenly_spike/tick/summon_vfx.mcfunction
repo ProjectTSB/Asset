@@ -7,4 +7,4 @@
 # 演出
     data modify storage api: Argument.ID set value 2127
     data modify storage api: Argument.FieldOverride.OverrideScale set value [16f,16f,16f]
-    execute positioned ~ ~-3 ~ run function api:object/summon
+    execute positioned ~ ~-2.5 ~ run function api:object/summon

@@ -6,8 +6,8 @@
 
 # 近くのプレイヤーを吸引
     execute as @a[tag=!PlayerShouldInvulnerable,distance=3..15] at @s facing entity @e[type=item_display,tag=2117.Pos,limit=1] feet run tp @s ^ ^ ^0.2
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=16..20] at @s facing entity @e[type=item_display,tag=2117.Pos,limit=1] feet run tp @s ^ ^ ^0.4
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=20..50] at @s facing entity @e[type=item_display,tag=2117.Pos,limit=1] feet run tp @s ^ ^ ^0.8
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=14.9..20] at @s facing entity @e[type=item_display,tag=2117.Pos,limit=1] feet run tp @s ^ ^ ^0.4
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=19.9..50] at @s facing entity @e[type=item_display,tag=2117.Pos,limit=1] feet run tp @s ^ ^ ^0.8
 
 # パーティクル
     tp @s ~ ~ ~ ~2 0

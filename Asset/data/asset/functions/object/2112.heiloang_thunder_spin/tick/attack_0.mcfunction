@@ -1,4 +1,4 @@
-#> asset:object/2112.heiloang_thunder_spin/tick/attack
+#> asset:object/2112.heiloang_thunder_spin/tick/attack_0
 #
 # Objectのtick時の処理
 #
