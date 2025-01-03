@@ -5,10 +5,11 @@
 # @within asset:object/alias/2043/hit_block
 
 # 移動キャンセル
-    data remove storage asset:context this
+    data modify storage asset:context this.MovePerStep set value 0
+    data modify storage asset:context this.Speed set value 0
 
 # 位置調整
-    tp @s ~ ~1 ~ ~ ~
+    tp @s ~ ~2 ~ ~ ~
 
 # スコアリセット
     scoreboard players reset @s General.Object.Tick
