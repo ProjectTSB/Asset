@@ -30,8 +30,5 @@
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1
 
-# TODO: 足場生成の処理はもっと妥当なものがある気がする…
-    function asset:mob/1004.tultaria/tick/base_move/generate_platform/
-
 # Super!
     function asset:mob/super.init

@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/1004/death
 
+# 足場を元に戻す
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
 
 # オブジェクト類のキル
     function asset:mob/1004.tultaria/tick/reset/remove_objects
