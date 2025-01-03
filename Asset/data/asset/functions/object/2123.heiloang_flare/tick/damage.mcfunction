@@ -15,47 +15,14 @@
 
 # 演出
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.7
-    particle explosion_emitter ~ ~1 ~ 0 0 0 0 1
-    particle flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30
-    particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30
+    particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
+    particle flash ~ ~1 ~ 0.5 0.5 0.5 0 5 force
+    particle flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
+    particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30 force
 
 # 演出
     # 光の柱
-        particle end_rod ^0 ^0 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^0.83333 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^1.66667 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^2.5 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^3.33333 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^4.16667 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^5 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^5.83333 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^6.66667 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^7.5 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^8.33333 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^9.16667 ^ 0.3 0.3 0.3 0.05 4
-        particle end_rod ^0 ^10 ^ 0.3 0.3 0.3 0.05 4
-    # 線 1
-        particle end_rod ^0 ^0 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^0.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^1 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^1.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^2 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^2.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^3 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^3.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^4 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^4.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^5.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^6 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^6.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^7 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^7.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^8 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^8.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^9 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^9.5 ^ 0.1 0.1 0.1 0.05 3
-        particle end_rod ^0 ^10 ^ 0.1 0.1 0.1 0.05 3
+        data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[5f,50f,5f]}}
     # 円 1
         particle end_rod ^0 ^ ^-5 0 0 0 0.05 1
         particle end_rod ^0.80206 ^ ^-4.93525 0 0 0 0.05 1
@@ -133,6 +100,3 @@
         execute rotated ~330 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~340 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~350 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-
-# 移動
-    tp @s ^ ^ ^5.5
