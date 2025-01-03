@@ -12,7 +12,7 @@
     execute if score @s General.Mob.Tick matches 7 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
 
 # アニメ
-    execute if score @s General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/play
+    execute if score @s General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/tween {to_frame:0,duration:1}
 
 # 警告
     execute if score @s General.Mob.Tick matches 0 positioned ~ ~-0.5 ~ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert

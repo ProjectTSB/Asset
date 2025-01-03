@@ -40,7 +40,7 @@
     execute if score @s General.Mob.Tick matches 25 facing entity @p feet run tp @s ~ ~ ~ ~ ~
 
 # 雷撃発動アニメ
-    execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/play
+    execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/tween {to_frame:0,duration:1}
 
 # 雷撃発動演出
     execute if score @s General.Mob.Tick matches 33 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/slash

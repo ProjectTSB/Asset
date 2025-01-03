@@ -24,10 +24,8 @@
 # プレイヤーの足元に召喚
     execute at @r run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
 
-# マーカーが回る
+# プレイヤーから12ブロック離れた、ランダムな角度の位置にマーカーを置く
     $execute as @e[type=marker,tag=RW.RotateMarker,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12
-    #$execute as @e[type=marker,tag=RW.RotateMarker,limit=1] at @s run tp @s ^ ^ ^8 $(Rotation) ~
-    execute at @e[tag=RW.RotateMarker] run particle explosion
 
 # 移動先を設置
     execute at @e[type=marker,tag=RW.RotateMarker,limit=1] run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
@@ -37,6 +35,7 @@
 
 # リセット
     tag @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit] remove RW.MarkerInit
+    data remove storage rw_storage: Rotation
 
 # 行動中タグ付与
     tag @s add RW.Move

@@ -147,9 +147,8 @@
 #    execute if score @s General.Mob.Tick matches 490 run title @a[distance=..100] title {"text":""}
 #    execute if score @s General.Mob.Tick matches 490 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
-# アニメ停止と再生
-    execute if score @s General.Mob.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/stop
-    execute if score @s General.Mob.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/play
+# アニメ再生
+    execute if score @s General.Mob.Tick matches 530 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
 
 # 翼を展開
     execute if score @s General.Mob.Tick matches 533 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/open_wing

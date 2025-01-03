@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
-#
 # タグを消す
     tag @s remove RW.Move
     tag @s remove RW.TickLock

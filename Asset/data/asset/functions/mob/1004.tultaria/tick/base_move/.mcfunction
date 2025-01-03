@@ -10,7 +10,7 @@
 # 属性チェンジ
     # アニメーション
         execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
-        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/play
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
     # 属性チェンジ可能であれば属性を選択
         execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
 

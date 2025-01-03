@@ -8,7 +8,7 @@
 
 # デバッグ用処理: 属性を強制指定
 # TODO: ちゃんと消すんだよ！
-#    data modify storage asset:context this.Element.Get set value Thunder
+    data modify storage asset:context this.Element.Get set value Water
 
 # 属性チェンジじゃ！
     execute if data storage asset:context this.Element{Get:Fire} run function asset:mob/1004.tultaria/tick/base_move/element_select/change/fire

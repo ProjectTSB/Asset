@@ -53,6 +53,9 @@
 # フェイズ3以降、「忠誠の幻想」がいないなら
 #    execute if score @s RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s remove RW.Shield
 
+# 足元が埋まっている間は上にちょっとずつ登る
+    execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.2 ~
+
 # リセット
     tag @e[type=item_display,tag=RW.ModelRoot.Target] remove RW.ModelRoot.Target
 

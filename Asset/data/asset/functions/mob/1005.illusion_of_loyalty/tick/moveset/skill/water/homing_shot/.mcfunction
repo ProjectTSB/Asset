@@ -12,11 +12,10 @@
     execute if score @s General.Mob.Tick matches 0 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/neutral_air/stop
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/attack_magic_3_right/play
+    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/attack_magic_3_right/tween {to_frame:0,duration:1}
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/attack_magic_3_right_loop/play
+    execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
 
 # 射撃
     scoreboard players operation $Interval Temporary %= $3 Const

@@ -4,14 +4,8 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/tick
 
-# 構えモーション停止
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/stop
-
-# 突進モーション停止
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_active/stop
-
 # 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_active/play
+    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_active/tween {to_frame:0,duration:1}
 
 # Tickロックして、この行動自体をループしないように1増やす
 # Tickロックは移動終了時に勝手に解除される

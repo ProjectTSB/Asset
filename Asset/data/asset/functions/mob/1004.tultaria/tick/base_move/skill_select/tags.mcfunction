@@ -8,7 +8,7 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-#    tag @s add RW.Skill.LightningStab
+#    tag @s add RW.Skill.AimingLaser
 #    return fail
 
 # 技を選択、属性ごとに違う
