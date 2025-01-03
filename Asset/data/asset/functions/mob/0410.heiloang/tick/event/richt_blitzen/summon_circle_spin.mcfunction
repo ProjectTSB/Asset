@@ -13,7 +13,7 @@
     data modify storage api: Argument.ID set value 2130
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     data modify storage api: Argument.FieldOverride.Color set value 16762434
-    data modify storage api: Argument.FieldOverride.RemoveTimer set value 120
+    data modify storage api: Argument.FieldOverride.RemoveTimer set value 270
     function api:object/summon
 
 # 向きを戻す

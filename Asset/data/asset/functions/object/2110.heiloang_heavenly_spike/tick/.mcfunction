@@ -13,6 +13,7 @@
 
 # 移動
     execute if entity @s[scores={General.Object.Tick=80..}] run tp @s ~ ~-1 ~
+    execute unless block ~ ~-4 ~ #lib:no_collision run function asset:object/2110.heiloang_heavenly_spike/tick/summon_vfx
     execute unless block ~ ~-1 ~ #lib:no_collision run function asset:object/2110.heiloang_heavenly_spike/tick/damage
 
 # 消滅処理

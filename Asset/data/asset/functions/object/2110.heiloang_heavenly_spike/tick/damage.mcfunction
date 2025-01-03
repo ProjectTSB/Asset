@@ -20,9 +20,6 @@
     particle firework ~ ~2 ~ 0.1 0.1 0.1 0.5 30
     particle block blue_ice ~ ~2 ~ 3 3 3 0.5 30
     function asset:object/2110.heiloang_heavenly_spike/tick/particle
-    data modify storage api: Argument.ID set value 2127
-    data modify storage api: Argument.FieldOverride.OverrideScale set value [16f,16f,16f]
-    execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 消去
     kill @s

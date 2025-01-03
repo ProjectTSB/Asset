@@ -16,7 +16,7 @@
 # 攻撃位置表示
     data modify storage api: Argument.ID set value 2063
     data modify storage api: Argument.FieldOverride.Color set value 10684938
-    data modify storage api: Argument.FieldOverride.Scale set value [11f, 11f, 0.05f]
+    data modify storage api: Argument.FieldOverride.Scale set value [12f, 12f, 0.05f]
     data modify storage api: Argument.FieldOverride.Tick set value 10
     execute at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] positioned ~ ~0.5 ~ run function api:object/summon
 

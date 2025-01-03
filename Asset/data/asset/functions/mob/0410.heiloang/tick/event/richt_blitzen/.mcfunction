@@ -41,4 +41,5 @@
     execute if score @s BE.EventTimer matches 175 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
 # 終了
-    execute if score @s BE.EventTimer matches 254.. run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end
+    execute if score @s BE.EventTimer matches 215.. if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end
+    execute if score @s BE.EventTimer matches 254.. if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end
