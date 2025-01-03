@@ -8,3 +8,7 @@
     execute store result score @s 2130.RemoveTimer store result score @s 2130.RemoveTimerMain store result score @s 2130.KillTimer run data get storage asset:context this.RemoveTimer
     scoreboard players remove @s 2130.RemoveTimerMain 4
     scoreboard players add @s 2130.KillTimer 30
+
+# 初期スコア設定
+    scoreboard players set @s 2130.Count 1
+    execute on passengers run scoreboard players set @s 2130.Count 1

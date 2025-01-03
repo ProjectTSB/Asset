@@ -2,7 +2,8 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2130.heiloang_circle_vfx/tick/
+# @within
+#   asset:object/2130.heiloang_circle_vfx/tick/
 
 # Tick加算
     scoreboard players add @s 2130.Count 1
