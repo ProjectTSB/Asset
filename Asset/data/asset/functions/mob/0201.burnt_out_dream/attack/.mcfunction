@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 腕振る
-    item replace entity @s weapon.mainhand with iron_sword
+    item replace entity @s weapon.mainhand with stick{CustomModelData:20473}
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 1 0.6
 # ダメージを与える
