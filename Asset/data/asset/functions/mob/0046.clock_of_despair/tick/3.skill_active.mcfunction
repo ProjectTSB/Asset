@@ -23,7 +23,7 @@
 # 8時
     execute if score @s 1A.LifeTime matches 1600..1799 run function asset:mob/0046.clock_of_despair/tick/skill/8_oclock
 # 9時
-    execute if score @s 1A.LifeTime matches 1800..3999 run function asset:mob/0046.clock_of_despair/tick/skill/9_oclock
+    execute if score @s 1A.LifeTime matches 1800..1999 run function asset:mob/0046.clock_of_despair/tick/skill/9_oclock
 # 10時
     execute if score @s 1A.LifeTime matches 2000..2199 run function asset:mob/0046.clock_of_despair/tick/skill/10_oclock
 # 11時

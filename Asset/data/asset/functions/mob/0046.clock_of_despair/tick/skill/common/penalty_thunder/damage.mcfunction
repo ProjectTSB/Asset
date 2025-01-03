@@ -13,20 +13,20 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 9999
+        data modify storage api: Argument.Damage set value 9999
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # 全てを...消し飛ばす
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage api: Argument.FixedDamage set value true
     # 死亡ログ
-        data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの絶望の光球によって消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの絶望の光球によって消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージ(厳密な紐づけじゃないけど許して)
-        execute as @e[type=zombie,scores={MobID=46},distance=..100,limit=1] run function lib:damage/modifier
-        execute as @a[gamemode=!creative,distance=..2.5] at @s run function lib:damage/
+        execute as @e[type=zombie,scores={MobID=46},distance=..100,limit=1] run function api:damage/modifier
+        execute as @a[gamemode=!creative,distance=..2.5] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # キル
     kill @s
