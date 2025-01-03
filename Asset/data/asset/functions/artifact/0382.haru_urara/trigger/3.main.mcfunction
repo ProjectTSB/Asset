@@ -30,4 +30,9 @@
     function lib:damage/reset
 
 # 吹っ飛び効果
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run effect give @s minecraft:levitation 1 30 true
+# 自身に浮遊を付与
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 31
+    data modify storage api: Argument.Duration set value 20
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

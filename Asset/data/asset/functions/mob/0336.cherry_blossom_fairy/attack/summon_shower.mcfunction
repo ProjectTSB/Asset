@@ -23,7 +23,7 @@
 
 # 拡散した座標で召喚する
     data modify storage api: Argument.ID set value 2081
-    data modify storage api: Argument.FieldOverride.Damage set value 3.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Shower
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=marker,tag=SpreadMarker,distance=..8] run function api:object/summon
 
