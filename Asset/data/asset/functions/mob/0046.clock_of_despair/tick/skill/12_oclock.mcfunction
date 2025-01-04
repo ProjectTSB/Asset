@@ -15,8 +15,3 @@
 
 # 自害
     function api:mob/kill
-
-# お掃除
-    kill @e[type=item_display,tag=1A.ClockFrame]
-    kill @e[type=marker,tag=1A.SkillMarker]
-    kill @e[type=armor_stand,tag=1A.ClockHand]
