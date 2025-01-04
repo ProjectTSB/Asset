@@ -6,7 +6,8 @@
 #   asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/tick
 #   asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/fire
 
-function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/
+# VFX
+    function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/
 
 # ヒット対象を探す
     data modify storage lib: args.dx set value 6.3
