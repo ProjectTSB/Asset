@@ -23,3 +23,6 @@
 
 # 消滅処理
     execute if score @s General.Object.Tick matches 200.. run kill @s
+
+# リセット
+    scoreboard players reset $TickInterval Temporary
