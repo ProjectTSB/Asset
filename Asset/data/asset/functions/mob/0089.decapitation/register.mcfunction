@@ -1,6 +1,8 @@
 #> asset:mob/0089.decapitation/register
 # @within asset:mob/alias/89/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 89
 # Type (string) Wikiを参照
@@ -52,3 +54,7 @@
         data modify storage asset:mob Resist.Water set value 1.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# フィールド
+# ダメージ設定
+    data modify storage asset:mob Field.Damage set value 12f
