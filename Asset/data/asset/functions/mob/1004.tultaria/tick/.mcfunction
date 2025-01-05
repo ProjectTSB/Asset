@@ -22,7 +22,7 @@
     execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # 開幕
-    execute if entity @s[tag=RW.Opening] run function asset:mob/1004.tultaria/tick/wait_time/opening/tick
+    execute if entity @s[tag=RW.Opening] run function asset:mob/1004.tultaria/tick/intro/tick
 
 # ベース動作
     execute if entity @s[tag=!RW.Opening] run function asset:mob/1004.tultaria/tick/base_move/
