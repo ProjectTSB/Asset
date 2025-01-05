@@ -29,8 +29,8 @@
     execute if score @s 93.AnimationTimer matches 65 if predicate lib:random_pass_per/50 run tag @s add 93.Temp.MoveToRight
     execute if score @s 93.AnimationTimer matches 65 if entity @s[tag=!93.Temp.MoveToRight] run tag @s add 93.Temp.MoveToLeft
 # 攻撃
-    execute if score @s 93.AnimationTimer matches 40 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:20,Tags:["Object","93.Aec.AttackPos"]}
-    execute if score @s 93.AnimationTimer matches 45 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 40 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~ ~ {CustomNameVisible:0b,Particle:"block air",Duration:20,Tags:["Object","93.Aec.AttackPos"]}
+    execute if score @s 93.AnimationTimer matches 45 at @s run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
 
 ## 射撃
 # animated javaアニメーション再生 (長さ：95tick)
@@ -57,9 +57,9 @@
     execute if score @s 93.AnimationTimer matches 66 run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.3
 # 攻撃
     execute if score @s 93.AnimationTimer matches 92 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:8,Tags:["Object","93.Aec.AttackPos"]}
-    execute if score @s 93.AnimationTimer matches 96 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 96 at @s run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
     execute if score @s 93.AnimationTimer matches 103 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:20,Tags:["Object","93.Aec.AttackPos"]}
-    execute if score @s 93.AnimationTimer matches 106 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 106 at @s run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
 
 # 終了
     execute if score @s 93.AnimationTimer matches 161.. run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/2.end

@@ -19,7 +19,7 @@
     execute if score @s 93.AnimationTimer matches 13 run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 2 1.3
 # 攻撃
     execute if score @s 93.AnimationTimer matches 35 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","93.Aec.AttackPos"]}
-    execute if score @s 93.AnimationTimer matches 40 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/14_latter_moveshot/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 40 at @s run function asset:mob/0327.eclael/tick/app.skill_events/14_latter_moveshot/4.1.attack_shot
 # 攻撃地点決定
     execute if score @s 93.AnimationTimer matches 70 at @r[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~ ~ {CustomNameVisible:0b,Particle:"block air",Duration:40,Tags:["Object","93.Aec.AttackPos"]}
     execute if score @s 93.AnimationTimer matches 70 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @p rotated ~ 0 run tp @s ^ ^ ^ ~ 0

@@ -12,7 +12,8 @@
 # animated javaアニメーション再生 (長さ：65tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/27_latter_thunderstorm/3.play_animation
 # 天候を変える
-    execute if score @s 93.AnimationTimer matches 35 run weather thunder 6000t
+    # execute if score @s 93.AnimationTimer matches 35 run weather thunder 6000t
+    execute if score @s 93.AnimationTimer matches 35 run tag @s add 93.Temp.IsThunder
 # 演出
     execute if score @s 93.AnimationTimer matches 35 run function asset:mob/0327.eclael/tick/app.skill_events/27_latter_thunderstorm/4.effect
 

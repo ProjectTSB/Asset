@@ -15,14 +15,12 @@
 # 演出
     execute if score @s 93.AnimationTimer matches 10 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
     execute if score @s 93.AnimationTimer matches 30 run playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 2 2
-    execute if score @s 93.AnimationTimer matches 10..35 run particle end_rod ~ ~1 ~ 0.1 0.1 0.1 0.5 3 
+    execute if score @s 93.AnimationTimer matches 10..35 run particle end_rod ~ ~1 ~ 0.1 0.1 0.1 0.5 3
     execute if score @s 93.AnimationTimer matches 51 run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/4.1.attack_slash_0
     execute if score @s 93.AnimationTimer matches 80..85 run playsound block.grass.step hostile @a ~ ~ ~ 1 0.7
     execute if score @s 93.AnimationTimer matches 86 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
 # 予兆
-    execute if score @s 93.AnimationTimer matches 20 positioned ~ ~1 ~ rotated ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/5.1.particle_effect
-    execute if score @s 93.AnimationTimer matches 30 positioned ~ ~1 ~ rotated ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/5.1.particle_effect
-    execute if score @s 93.AnimationTimer matches 40 positioned ~ ~1 ~ rotated ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/5.1.particle_effect
+    execute if score @s 93.AnimationTimer matches 5 run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/5.1.particle_effect
 # 攻撃
     execute if score @s 93.AnimationTimer matches 66 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/4.2.attack_slash_1
     execute if score @s 93.AnimationTimer matches 69 if predicate api:global_vars/difficulty/max/normal run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2

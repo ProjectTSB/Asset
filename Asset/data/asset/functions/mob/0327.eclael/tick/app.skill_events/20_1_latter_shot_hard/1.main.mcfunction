@@ -24,13 +24,13 @@
     execute if score @s 93.AnimationTimer matches 10 run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.3
     execute if score @s 93.AnimationTimer matches 98 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
 # 攻撃
-    execute if score @s 93.AnimationTimer matches 21 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:41,Tags:["Object","93.Aec.AttackPos"]}
-    execute if score @s 93.AnimationTimer matches 26 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~1 ~ ~ 0
-    execute if score @s 93.AnimationTimer matches 38 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~1 ~ ~ 0
-    execute if score @s 93.AnimationTimer matches 57 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~1 ~ ~ 0
-    execute if score @s 93.AnimationTimer matches 25 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
-    execute if score @s 93.AnimationTimer matches 34 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
-    execute if score @s 93.AnimationTimer matches 43 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 21 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~ ~ {CustomNameVisible:0b,Particle:"block air",Duration:41,Tags:["Object","93.Aec.AttackPos"]}
+    execute if score @s 93.AnimationTimer matches 26 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute if score @s 93.AnimationTimer matches 38 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute if score @s 93.AnimationTimer matches 57 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    execute if score @s 93.AnimationTimer matches 25 at @s run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 34 at @s run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
+    execute if score @s 93.AnimationTimer matches 43 at @s run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.1.attack_shot
     execute if score @s 93.AnimationTimer matches 61 at @s positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.skill_events/20_1_latter_shot_hard/4.2.attack_shot
 
 # ガード受け付け
