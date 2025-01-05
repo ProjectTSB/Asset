@@ -10,6 +10,9 @@
     # 召喚
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/summon_sword/
 
+# 幻影にも剣を召喚
+    execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
+
 # 剣を振りながら前進
     # 付近のプレイヤーの方を向く
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/active
@@ -35,9 +38,6 @@
 # 剣を解き放つ
     execute if score @s General.Mob.Tick matches 95 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/tween {to_frame:0,duration:1}
     execute if score @s General.Mob.Tick matches 100 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/release_sword
-
-# 幻影にも剣を召喚
-    execute if score @s General.Mob.Tick matches 100 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
 
 # 待機アニメを再生
     execute if score @s General.Mob.Tick matches 155 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
