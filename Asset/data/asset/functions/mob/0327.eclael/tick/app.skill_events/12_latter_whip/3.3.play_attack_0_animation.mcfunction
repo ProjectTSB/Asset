@@ -7,4 +7,4 @@
 # 移動アニメーション再生停止
     execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/pause_all
 # 再生
-    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/12_2_latter_warp_slash_0/play
+    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/12_2_latter_warp_slash_0/tween {duration:1, to_frame: 1}

@@ -4,6 +4,8 @@
  #継承 (int) (オプション)
     data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 327
 # Type (string) Wikiを参照
@@ -13,7 +15,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"エクレール"}'
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 40000
+    data modify storage asset:mob Health set value 10000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

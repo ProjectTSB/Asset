@@ -5,4 +5,4 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/**
 
 # 再生
-    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/12_0_latter_warp_start/play
+    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/12_0_latter_warp_start/tween {duration:1, to_frame: 1}

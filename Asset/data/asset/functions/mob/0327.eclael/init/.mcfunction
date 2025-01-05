@@ -13,7 +13,7 @@
     summon marker ~ ~2 ~ {Tags:["93.Marker.SpawnPoint"]}
 
 # animated javaモデル召喚
-    execute positioned ~ ~-100 ~ rotated ~ 0 run function animated_java:eclael/summon
+    execute positioned ~ ~-100 ~ rotated ~ 0 run function animated_java:eclael/summon {args:{}}
 
 # 登場演出再生
     tag @s add 93.Skill.Former.Start

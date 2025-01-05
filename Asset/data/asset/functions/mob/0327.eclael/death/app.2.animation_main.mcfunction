@@ -9,13 +9,13 @@
 
 # 討伐アニメーション再生(100 tick)
     execute if score @s 93.AnimationTimer matches 1 run function animated_java:eclael/animations/pause_all
-    execute if score @s 93.AnimationTimer matches 1 run function animated_java:eclael/animations/30_0_phase_death/play
+    execute if score @s 93.AnimationTimer matches 1 run function animated_java:eclael/animations/30_0_phase_death/tween {duration:1, to_frame: 1}
 
 # 移動
     execute if score @s 93.AnimationTimer matches 1..15 at @s positioned ^ ^ ^-0.1 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 1..15 at @s positioned ^ ^-0.1 ^ run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 54..85 at @s positioned ^ ^0.04 ^ run function asset:mob/0327.eclael/tick/app.general/2.teleport
-    
+
 # 効果音
     execute if score @s 93.AnimationTimer matches 1 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 0.7
     execute if score @s 93.AnimationTimer matches 15 run playsound block.grass.step hostile @a ~ ~ ~ 1 0.7

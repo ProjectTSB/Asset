@@ -5,4 +5,4 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/1.main
 
 # 再生
-    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/21_1_latter_attack_magic_1/play
+    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/21_1_latter_attack_magic_1/tween {duration:1, to_frame: 1}
