@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/25_0_guard_0/tick_animation

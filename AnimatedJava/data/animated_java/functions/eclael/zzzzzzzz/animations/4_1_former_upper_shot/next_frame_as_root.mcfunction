@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/4_1_former_upper_shot/tick_animation

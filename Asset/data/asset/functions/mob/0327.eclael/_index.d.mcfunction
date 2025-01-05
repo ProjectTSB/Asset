@@ -3,10 +3,15 @@
 
 #> tag
 # @within function asset:mob/0327.eclael/**
+    ## AJ自動生成
+        # タグ
+            #
+        # function
+            #declare function animated_java:eclael/summon
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
-
+    #
     ## 処理用
     #declare tag 93.ModelRoot animated_javaモデルにつける処理簡略化用のタグ
     #declare tag 93.ModelRoot.Target animated_javaモデルにつける処理簡略化用のタグ(紐付け)
@@ -16,7 +21,7 @@
     #declare tag 93.Aec.AttackPos.Init 攻撃処理の保存用AEC
     #declare tag 93.Phase.Latter 後半戦
     #declare tag 93.Phase.HardLatter ハード後半戦
-
+    #
     ## 処理用(一時)
     #declare tag 93.Temp.Me 汎用処理に使う一時的なタグ，自身に付与
     #declare tag 93.Temp.GeneralTarget 汎用処理に使う一時的なタグ，対象に付与
@@ -32,7 +37,7 @@
     #declare tag 93.Temp.PrepareGuard ガード可能状態，この間に攻撃されるとガードに移行する
     #declare tag 93.Temp.Guard ガード中判別用
     #declare tag 93.Temp.IsThunder 天候が雷雨である
-
+    #
     ## スキル：前半
     #declare tag 93.Skill.Former.Start 登場演出
     #declare tag 93.Skill.Former.Idle 待機
@@ -45,7 +50,7 @@
     #declare tag 93.Skill.Former.UpperShot.Damage 曲射・怯み
     #declare tag 93.Skill.Former.Magic 魔法
     #declare tag 93.Skill.Former.ShortMagic 簡易魔法
-
+    #
     ## スキル：後半
     #declare tag 93.Skill.Latter.Start 後半戦開始
     #declare tag 93.Skill.Latter.Idle 待機

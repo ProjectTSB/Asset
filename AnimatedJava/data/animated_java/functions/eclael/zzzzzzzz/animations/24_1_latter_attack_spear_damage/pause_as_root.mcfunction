@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.24_1_latter_attack_spear_damage

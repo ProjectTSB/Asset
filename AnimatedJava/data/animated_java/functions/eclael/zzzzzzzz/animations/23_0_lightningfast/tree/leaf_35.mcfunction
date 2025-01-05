@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:eclael/zzzzzzzz/animations/23_0_lightningfast/tree/leaf_35_as_bone

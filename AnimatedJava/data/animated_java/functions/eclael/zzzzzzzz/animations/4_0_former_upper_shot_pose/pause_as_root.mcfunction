@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.4_0_former_upper_shot_pose

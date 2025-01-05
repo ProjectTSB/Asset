@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/26_0_phase_change/tick_animation

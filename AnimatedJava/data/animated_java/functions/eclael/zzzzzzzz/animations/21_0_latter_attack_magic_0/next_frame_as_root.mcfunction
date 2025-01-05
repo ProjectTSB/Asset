@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/21_0_latter_attack_magic_0/tick_animation

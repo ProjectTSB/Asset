@@ -4,11 +4,10 @@
 #
 # @within function asset:mob/alias/327/death
 
+# 継承元の処理実行
+    function asset:mob/super.death
+
 # TODO:以下仮の実装
-    # 中心点削除
-        # kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
-    # モデル削除
-        # function animated_java:eclael/remove/all
     # 天候を戻す
         weather clear
 
@@ -18,6 +17,9 @@
 
 # 中心点削除
     kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
-    
-# スケジュールループを開始する
-    schedule function asset:mob/0327.eclael/death/app.1.animation_schedule_loop 1t replace
+
+# TODO:とりあえずモデル消去
+    function animated_java:eclael/remove/all
+
+# 討伐演出再生
+    # schedule function asset:mob/0327.eclael/death/app.1.animation_schedule_loop 1t replace

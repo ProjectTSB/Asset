@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/17_1_latter_spinslash_to_momiji/tick_animation

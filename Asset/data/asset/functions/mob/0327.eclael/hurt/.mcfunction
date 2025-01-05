@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/327/hurt
 
+# 継承元の処理実行
+    function asset:mob/super.hurt
+
 # 対象のanimated javaモデルを紐づけ
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Target
 

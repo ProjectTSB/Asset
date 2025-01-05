@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/4_4_former_upper_damage_end/tick_animation

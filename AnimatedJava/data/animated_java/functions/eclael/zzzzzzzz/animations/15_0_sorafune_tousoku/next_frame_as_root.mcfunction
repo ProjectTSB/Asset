@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/15_0_sorafune_tousoku/tick_animation

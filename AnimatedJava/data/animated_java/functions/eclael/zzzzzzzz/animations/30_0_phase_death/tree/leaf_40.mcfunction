@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:eclael/zzzzzzzz/animations/30_0_phase_death/tree/leaf_40_as_bone
-function animated_java:eclael/zzzzzzzz/apply_variant/blink/as_root

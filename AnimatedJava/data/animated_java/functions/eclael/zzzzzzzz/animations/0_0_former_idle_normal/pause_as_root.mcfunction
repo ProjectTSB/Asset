@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.0_0_former_idle_normal

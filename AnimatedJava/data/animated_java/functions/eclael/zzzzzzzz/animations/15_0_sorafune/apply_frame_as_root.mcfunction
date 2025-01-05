@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..155 run function animated_java:eclael/zzzzzzzz/animations/15_0_sorafune/tree/branch_0_155

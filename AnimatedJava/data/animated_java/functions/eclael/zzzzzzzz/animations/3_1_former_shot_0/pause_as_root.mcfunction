@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.3_1_former_shot_0

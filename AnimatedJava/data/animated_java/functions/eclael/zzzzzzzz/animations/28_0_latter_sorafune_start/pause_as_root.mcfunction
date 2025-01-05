@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.28_0_latter_sorafune_start

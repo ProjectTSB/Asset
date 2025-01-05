@@ -1,1 +1,0 @@
-tag @s remove aj.eclael.animation.20_1_latter_attack_shot_1

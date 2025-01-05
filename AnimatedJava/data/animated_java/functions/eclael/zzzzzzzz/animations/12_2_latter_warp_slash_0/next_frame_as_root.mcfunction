@@ -1,1 +1,0 @@
-function animated_java:eclael/zzzzzzzz/animations/12_2_latter_warp_slash_0/tick_animation
