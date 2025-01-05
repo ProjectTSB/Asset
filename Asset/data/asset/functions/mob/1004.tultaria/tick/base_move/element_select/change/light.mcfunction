@@ -17,10 +17,10 @@
     item replace entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:16777215}}
     item replace entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] container.0 with minecraft:leather_horse_armor{CustomModelData:20397,display:{color:16777215}}
 
-# 召喚ごまかすために画面エフェクト
-    title @a[distance=..100] times 5 10 5
-    title @a[distance=..100] title {"text":""}
-    title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+# 画面エフェクト
+#    title @a[distance=..100] times 5 10 5
+#    title @a[distance=..100] title {"text":""}
+#    title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
 # 次移行は光属性にならないために、属性リストを復活させておく
     data modify storage asset:context this.Element.List set value [Fire,Water,Thunder]
