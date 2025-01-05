@@ -30,6 +30,9 @@
 # 演出
     particle minecraft:ash ~ ~1 ~ 0.2 0.2 0.2 0 2
 
+# 向きは変えないにしても、モデルは自分の場所に持ってくる
+    execute at @s as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+
 # モデルをプレイヤーに向ける
     execute at @s[tag=!RX.InAction] as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
