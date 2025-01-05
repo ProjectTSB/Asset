@@ -4,14 +4,19 @@
 #
 # @within function asset:mob/1004.tultaria/tick/void/
 
+# 浮遊にかかっているかを確認
+    data modify storage api: Argument.ID set value 125
+    function api:entity/mob/effect/get/from_id
+
+# かかっていなければダメージ
+    execute unless data storage api: Return.Effect run function asset:mob/1004.tultaria/tick/void/damage
+
 # 上に飛ばされる
-    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:20b,duration:3,show_particles:0b,show_icon:0b}]}
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 20
+    data modify storage api: Argument.Duration set value 5
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     particle dust 0.718 0.188 0.188 1 ~ ~1 ~ 0.3 0.5 0.3 0 5
-
-# 自分のEffectを取得
-    function api:data_get/active_effects
-
-# 浮遊状態でなければダメージ
-    execute unless data storage api: {active_effects:[{id:"minecraft:levitation"}]} run function asset:mob/1004.tultaria/tick/void/damage
