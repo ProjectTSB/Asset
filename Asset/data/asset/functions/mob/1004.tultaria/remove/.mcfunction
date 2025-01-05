@@ -2,7 +2,7 @@
 #
 # Mobのremove時の処理
 #
-# @within function asset:mob/alias/1004/init
+# @within function asset:mob/alias/1004/remove
 
 # 第2形態だった場合、足場を片付けて最初の足場を出す
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
