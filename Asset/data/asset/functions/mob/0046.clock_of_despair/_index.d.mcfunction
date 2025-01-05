@@ -22,7 +22,7 @@
     #
     #declare tag Landing
     #declare tag LandingTarget
-    #declare score_holder $laserDistance
+    #declare score_holder $LaserDistance
     #declare score_holder $VFXPattern
 
 #> Val

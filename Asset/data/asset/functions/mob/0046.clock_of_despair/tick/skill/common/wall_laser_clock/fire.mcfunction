@@ -29,5 +29,5 @@
     function api:damage/reset
     tag @a[tag=DXYZ] remove DXYZ
     data remove storage lib: args
-    scoreboard players reset $laserDistance Temporary
+    scoreboard players reset $LaserDistance Temporary
     scoreboard players reset $VFXPattern Temporary
