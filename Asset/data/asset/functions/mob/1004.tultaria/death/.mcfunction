@@ -4,8 +4,13 @@
 #
 # @within function asset:mob/alias/1004/death
 
-# 落下中のプレイヤーがいたら中心に寄せる
-    execute positioned ~-50 ~-14 ~-50 as @a[dx=100,dy=10,dz=100] as @s at @s run function asset:mob/1004.tultaria/death/call_player
+# 落下中のプレイヤーがいたら中心に置く
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] positioned ~-50 ~-14 ~-50 run tp @a[dx=100,dy=10,dz=100] ~ ~ ~
+
+# 画面エフェクト
+    title @a[distance=..64] times 0 5 10
+    title @a[distance=..64] title {"text":""}
+    title @a[distance=..64] subtitle {"text":"\uE010","font":"screen_effect","color":"#CCCCCC"}
 
 # 足場を元に戻す
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
@@ -19,6 +24,10 @@
 
 # モデルを消す
     execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/remove/this
+
+# 撃破演出用オブジェクトを召喚
+    data modify storage api: Argument.ID set value 2056
+    execute facing entity @p[distance=..64] eyes run function api:object/summon
 
 # Super!
     function asset:mob/super.death
