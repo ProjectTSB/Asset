@@ -1,8 +1,8 @@
-#> asset:mob/0328.eclael_arrow/tick/2.tick
+#> asset:mob/0328.eclael_arrow/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0328.eclael_arrow/tick/1.trigger
+# @within function asset:mob/alias/328/tick
 
 # 演出
     execute if score @s 94.Timer matches ..2 run function asset:mob/0328.eclael_arrow/tick/particle_ring_0

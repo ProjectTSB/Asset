@@ -2,7 +2,7 @@
 #
 # 使用するスキルを決定する
 #
-# @within function asset:mob/0327.eclael/tick/2.tick
+# @within function asset:mob/0327.eclael/tick/
 
 # 耐性のリセット
     function asset:mob/0327.eclael/tick/app.general/12.end_guard_prepare

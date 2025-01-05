@@ -2,7 +2,7 @@
 #
 # 汎用処理 追撃を行う
 #
-# @within function asset:mob/0327.eclael/hurt/2.hurt
+# @within function asset:mob/0327.eclael/hurt/
 
 # アニメーション再生停止
     function asset:mob/0327.eclael/tick/app.general/3.stop_all_animations

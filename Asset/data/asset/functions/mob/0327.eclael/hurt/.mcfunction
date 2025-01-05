@@ -1,8 +1,8 @@
-#> asset:mob/0327.eclael/hurt/2.hurt
+#> asset:mob/0327.eclael/hurt/
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0327.eclael/hurt/1.trigger
+# @within function asset:mob/alias/327/hurt
 
 # 対象のanimated javaモデルを紐づけ
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Target

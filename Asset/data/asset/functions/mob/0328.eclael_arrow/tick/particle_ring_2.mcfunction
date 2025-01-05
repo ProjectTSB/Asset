@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0328.eclael_arrow/tick/2.tick
+# @within function asset:mob/0328.eclael_arrow/tick/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGYCsATLQEYCcAzNQLRMAsAHE+1xRwu7AIYB2UvwBsARlFdRtHgAZRq0WAIA7UQFsEyQGGKAAllawMURn0BnJOBQB7QtohJlBIW7gYHYADdRbEJDcAAPJBUCKCiAXziCG1I0QntEWQJbCGt3RGiwOGxsNBhbQ1kVAownHIhDArRbAFFi0vLmgEdCYOwoAGUrIXJESmDyhIBdIA_3
 # 円 1

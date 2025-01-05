@@ -1,8 +1,8 @@
-#> asset:mob/0327.eclael/death/2.death
+#> asset:mob/0327.eclael/death/
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0327.eclael/death/1.trigger
+# @within function asset:mob/alias/327/death
 
 # TODO:以下仮の実装
     # 中心点削除

@@ -2,7 +2,7 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0328.eclael_arrow/tick/2.tick
+# @within function asset:mob/0328.eclael_arrow/tick/
 
 # 演出
     execute if score @s 94.Timer matches ..2 positioned ^ ^ ^ run particle dust 100000000 100000000 1 2 ~ ~ ~ 0.1 0.1 0.1 0 3

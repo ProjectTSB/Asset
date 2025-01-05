@@ -2,7 +2,7 @@
 #
 # Mobの被ダメージ時の処理
 #
-# @within function asset:mob/0327.eclael/hurt/2.hurt
+# @within function asset:mob/0327.eclael/hurt/
 
 
 # 体力が半分以下かどうかを検知する

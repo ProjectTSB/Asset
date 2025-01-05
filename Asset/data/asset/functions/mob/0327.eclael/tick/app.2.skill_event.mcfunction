@@ -2,7 +2,7 @@
 #
 # 付与されているスキルタグに応じて処理を振り分ける
 #
-# @within function asset:mob/0327.eclael/tick/2.tick
+# @within function asset:mob/0327.eclael/tick/
 
 ###########################################################################
 ## 汎用

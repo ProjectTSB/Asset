@@ -2,7 +2,7 @@
 #
 # Mob召喚処理の呼び出し時に実行されるfunction
 #
-# @within function asset:mob/0328.eclael_arrow/summon/2.summon
+# @within function asset:mob/0328.eclael_arrow/summon/
 
 # 角度調整
     tp @s ~ ~ ~ ~ ~

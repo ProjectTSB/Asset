@@ -1,8 +1,8 @@
-#> asset:mob/0329.eclael_swordbeam/tick/2.tick
+#> asset:mob/0329.eclael_swordbeam/tick/
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/0329.eclael_swordbeam/tick/1.trigger
+# @within function asset:mob/alias/329/tick
 
 # 演出
     execute rotated ~90 ~-40 run function asset:mob/0329.eclael_swordbeam/tick/particle

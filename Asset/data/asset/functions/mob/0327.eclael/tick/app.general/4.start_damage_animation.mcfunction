@@ -2,7 +2,7 @@
 #
 # 汎用処理 怯みアニメーションを再生開始する
 #
-# @within function asset:mob/0327.eclael/hurt/2.hurt
+# @within function asset:mob/0327.eclael/hurt/
 
 # 耐性消去
     effect clear @s resistance

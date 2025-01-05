@@ -2,7 +2,7 @@
 #
 # 汎用処理 ガードアニメーションを継続して再生する
 #
-# @within function asset:mob/0327.eclael/hurt/2.hurt
+# @within function asset:mob/0327.eclael/hurt/
 
 # 怯みアニメーション受け取り
     execute if entity @s[tag=93.Skill.Latter.Guard.0] run tag @s add 93.Temp.Me
