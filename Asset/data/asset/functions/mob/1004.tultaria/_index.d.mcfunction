@@ -21,7 +21,6 @@
 #declare tag RW.TickLock
 #declare tag RW.InAction
 #declare tag RW.DisableInertia
-#declare tag RW.Shield
 # ボスのモデルに関するタグ
 #declare tag RW.ModelLocator.LeftHand
 #declare tag RW.ModelLocator.RightHand
@@ -48,12 +47,10 @@
 # ボスの使う技のタグ
 # 火属性
 #declare tag RW.Skill.Meteor
-#declare tag RW.Skill.Hellfire
+#declare tag RW.Skill.MoveShot
 #declare tag RW.Skill.BlazingCombo
 # 水属性
-#declare tag RW.Skill.FreezingShred
 #declare tag RW.Skill.SpinSlash
-#declare tag RW.Skill.AncientLight
 #declare tag RW.Skill.SwordRain
 #declare tag RW.Skill.HomingShot
 # 雷属性
@@ -61,10 +58,7 @@
 #declare tag RW.Skill.LightningStab
 #declare tag RW.Skill.AimingLaser
 # 無属性
-#declare tag RW.Skill.MoveShot
-#declare tag RW.Skill.SpreadShot
 #declare tag RW.Skill.Starfury
-#declare tag RW.Skill.Melee
 # フェイズ移行攻撃
 #declare tag RW.Skill.TransitionAttack2
 #declare tag RW.Skill.TransitionAttack3
