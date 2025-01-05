@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/1004/death
 
+# 落下中のプレイヤーがいたら中心に寄せる
+    execute positioned ~-50 ~-14 ~-50 as @a[dx=100,dy=10,dz=100] as @s at @s run function asset:mob/1004.tultaria/death/call_player
+
 # 足場を元に戻す
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
 
