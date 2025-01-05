@@ -1,6 +1,8 @@
 #> asset:mob/0321.mini_guardian/register
 # @within asset:mob/alias/321/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 321
 # Type (string) Wikiを参照
@@ -52,3 +54,6 @@
         data modify storage asset:mob Resist.Water set value 0.7f
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.4f
+
+# フィールド
+    data modify storage asset:mob Field.Damage set value 5.5f

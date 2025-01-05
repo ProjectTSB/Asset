@@ -1,6 +1,13 @@
 #> asset:mob/0027.skull_sniper/register
-# @within asset:mob/alias/27/register
+#
+# Mobのデータを指定
+#
+# @within function asset:mob/alias/27/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 27
 # Type (string) Wikiを参照
@@ -13,7 +20,7 @@
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:212}}
     # オフハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Offhand set value {}
+        # data modify storage asset:mob Weapon.Offhand set value {}
 # 武器ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
@@ -22,9 +29,9 @@
     # 胴 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Chest set value {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:2377487}}}
     # 脚 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Legs set value {}
+        # data modify storage asset:mob Armor.Legs set value {}
     # 足 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Feet set value {}
+        # data modify storage asset:mob Armor.Feet set value {}
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
@@ -52,3 +59,6 @@
         data modify storage asset:mob Resist.Water set value 1.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+# フィールド
+    data modify storage asset:mob Field.Damage set value 22
+    data modify storage asset:mob Field.Pierce set value 0
