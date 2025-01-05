@@ -9,9 +9,9 @@
     #declare score_holder $HealthPercent
 
 # 演出
-    execute if entity @s[tag=!RW.Shield] run playsound minecraft:entity.generic.hurt hostile @a ~ ~ ~ 1 0.7
-    execute if entity @s[tag=RW.Shield] run playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 2 0.5
-    execute if entity @s[tag=RW.Shield] run playsound minecraft:block.end_portal_frame.fill hostile @a ~ ~ ~ 2 0.5
+    playsound minecraft:entity.generic.hurt hostile @a ~ ~ ~ 1 0.7
+#    execute if entity @s[tag=RW.Shield] run playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 2 0.5
+#    execute if entity @s[tag=RW.Shield] run playsound minecraft:block.end_portal_frame.fill hostile @a ~ ~ ~ 2 0.5
 
 # 体力チェック
     function asset:mob/1004.tultaria/hurt/check_health
