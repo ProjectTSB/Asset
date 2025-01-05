@@ -6,7 +6,7 @@
 
 #> 足場のスコア
 # @private
-#declare scoreboard 2026.CoreID
+#declare score_holder $2026.CoreID
 
 # リセット
     scoreboard players reset $2026.CoreID 2026.CoreID
