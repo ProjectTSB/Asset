@@ -14,6 +14,9 @@
     execute at @a[distance=..64] run playsound minecraft:entity.evoker.cast_spell hostile @p ~ ~ ~ 3 1.5
     particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.1 50 normal
 
+# アニメ再生
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
+
 # タグ調整
     tag @s remove RW.Opening
 
@@ -24,9 +27,9 @@
     data modify entity @s Invulnerable set value 0b
 
 # スコアセット
-    scoreboard players reset @s General.Mob.Tick
+    scoreboard players set @s General.Mob.Tick -40
     scoreboard players set @s RW.LoopCount 0
 
 # 移動する
-    scoreboard players set @s RW.Speed 5
-    function asset:mob/1004.tultaria/tick/base_move/reset
+#    scoreboard players set @s RW.Speed 5
+#    function asset:mob/1004.tultaria/tick/base_move/reset
