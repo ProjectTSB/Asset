@@ -5,7 +5,6 @@
 # @within function asset:mob/1004.tultaria/**
 
 # タグをリセットする
-    tag @s remove RW.Skill.Melee
     tag @s remove RW.Skill.Meteor
     tag @s remove RW.Skill.Meteor.1
     tag @s remove RW.Skill.Meteor.2
