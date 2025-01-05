@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:mob/1004.tultaria/death/2.death
+#   asset:mob/1004.tultaria/death/
 #   asset:mob/1004.tultaria/rejoin_process
 #   asset:mob/1004.tultaria/death/3.death_tick
 

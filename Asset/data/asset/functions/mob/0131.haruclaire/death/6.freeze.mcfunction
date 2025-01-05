@@ -14,4 +14,3 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 1
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0
-

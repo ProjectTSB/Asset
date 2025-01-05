@@ -2,7 +2,7 @@
 #
 # 自分に雪が乗っているか確認して、乗っていなかった場合片割れをキル
 #
-# @within function asset:mob/0276.ksitigarbha_body/tick/2.tick
+# @within function asset:mob/0276.ksitigarbha_body/tick/
 
 #> prv
 # @private

@@ -2,7 +2,7 @@
 #
 # プレイヤーを見る（拡散つき）
 #
-# @within function asset:mob/1004.tultaria/tick/2.tick
+# @within function asset:mob/1004.tultaria/tick/
 
 # マーカー召喚
     summon marker ~ ~ ~ {Tags:["Object","RW.This"]}

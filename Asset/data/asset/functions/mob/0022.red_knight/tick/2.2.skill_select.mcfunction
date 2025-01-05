@@ -2,7 +2,7 @@
 #
 # スキル選ぶぞ
 #
-# @within function asset:mob/0022.red_knight/tick/2.tick
+# @within function asset:mob/0022.red_knight/tick/
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/

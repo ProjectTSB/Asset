@@ -15,13 +15,15 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"旋風の鞘","color":"#7DFF9B"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"刀ではなく旋風を収めている鞘","color":"#B0FFC5"}','{"text":"その旋風を抜いた時、前を塞ぐ者を吹き飛ばす。","color":"#B0FFC5"}','{"text":"多く携えるほど旋風は勢いを増す。","color":"#B0FFC5"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、前を塞ぐ者を吹き飛ばす。","color":"white"}','{"text":"抜いた刀に旋風を纏わせる鞘。","color":"gray"}','{"text":"その旋風は何にも止めることはできない。","color":"gray"}']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "hotbar"
+    data modify storage asset:artifact Slot set value "offhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
@@ -39,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 2
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)

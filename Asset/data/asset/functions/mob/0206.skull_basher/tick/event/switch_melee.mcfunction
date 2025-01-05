@@ -2,7 +2,7 @@
 #
 # 近接への持ち替え操作
 #
-# @within function asset:mob/0206.skull_basher/tick/2.tick
+# @within function asset:mob/0206.skull_basher/tick/
 
 # VFX
     playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0262.frestchika/tick/2.tick
+# @within function asset:mob/0262.frestchika/tick/
 #> private
 # @private
     #declare score_holder $Random

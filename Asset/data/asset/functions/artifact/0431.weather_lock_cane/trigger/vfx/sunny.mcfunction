@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/0431.weather_lock_cane/trigger/3.main
+# @within function asset:artifact/0431.weather_lock_cane/trigger/weather/overworld
 
 # 演出
     particle flame ~ ~1.2 ~ 1.2 0.5 1.2 0.3 150 normal @s

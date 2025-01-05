@@ -2,7 +2,7 @@
 #
 # 予備動作演出です
 #
-# @within function asset:mob/0232.honey_leader/tick/2.tick
+# @within function asset:mob/0232.honey_leader/tick/
 
 # 視点固定&NoAI
     data modify entity @s NoAI set value 1b

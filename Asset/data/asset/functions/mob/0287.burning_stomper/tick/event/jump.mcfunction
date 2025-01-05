@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0287.burning_stomper/tick/2.tick
+# @within function asset:mob/0287.burning_stomper/tick/
 
 # 演出
     particle minecraft:poof ~ ~0.2 ~ 0.25 0 0.25 0 20

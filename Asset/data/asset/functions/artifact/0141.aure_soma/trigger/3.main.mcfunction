@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0141.aure_soma/trigger/2.check_condition
 
-#> private
-# @private
-    #declare score_holder $Fluctuation
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
 
@@ -19,15 +15,16 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # MP回復
-    execute store result storage asset:temp 3X.Temp double 0.32 run function lib:mp/get_max
-    execute store result score $Fluctuation Lib run data get storage asset:temp 3X.Temp
-    function lib:mp/fluctuation
+    function api:mp/get_max
+    execute store result storage api: Argument.Fluctuation double 0.32 run data get storage api: Return.MaxMP
+    function api:mp/fluctuation
 
 # HP回復
-    execute store result storage lib: Argument.Heal double 0.0018 run attribute @s generic.max_health get 100
+    function api:modifier/max_health/get
+    execute store result storage lib: Argument.Heal double 0.0018 run data get storage api: Return.MaxHealth 100
     function lib:heal/modifier
     function lib:heal/
 
 # リセット
     function lib:heal/reset
-    data remove storage asset:temp 3X.Temp
+    data remove storage asset:temp 3X

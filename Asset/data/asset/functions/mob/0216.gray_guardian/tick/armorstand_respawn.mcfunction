@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0216.gray_guardian/tick/2.tick
+# @within function asset:mob/0216.gray_guardian/tick/
 
 # どっかいったアマスタを殺す
     execute as @e[type=armor_stand,tag=60.ArmorStand] at @s unless entity @e[type=iron_golem,tag=60.Angel,distance=..0.1] run kill @s

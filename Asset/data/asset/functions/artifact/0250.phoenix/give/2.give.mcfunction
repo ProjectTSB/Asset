@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"舞焔","color":"dark_red"},{"text":"-Phoenix-","color":"red"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"Phoenix -フェニックス-"}]','[{"text":"不死鳥と呼ばれ、火から自ら蘇る"}]','[{"text":"輪廻の外にある神鳥とされる"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 30
 # 神器を発動できるスロット (string) Wikiを参照

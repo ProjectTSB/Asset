@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0273.hell_blade/tick/2.tick
+# @within function asset:mob/0273.hell_blade/tick/
 
 # SFX
     playsound minecraft:block.wart_block.break hostile @a ~ ~ ~ 2 1

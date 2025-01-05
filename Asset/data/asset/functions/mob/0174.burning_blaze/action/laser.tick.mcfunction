@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0174.burning_blaze/tick/2.tick
+# @within function asset:mob/0174.burning_blaze/tick/
 
 # スコア減らす
     scoreboard players remove @s 4U.ActionTime 1

@@ -15,15 +15,17 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"カボチャの怨念の残滓","color":"#FFAA00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"僅かに残ったジャック・オ・ランタンの魂","color":"#D900FF"}]','[{"text":"魂を吸収することで僅かに力を取り戻し幽かに輝く","color":"#D900FF"}]','[{"text":"効果発動時","color":"#D900FF"}]','[{"text":"満腹度を回復し、移動速度上昇と暗視を30秒得る。","color":"#D900FF"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、満腹度を回復し","color":"white"}','[{"text":"移動速度上昇と暗視を30秒間得る。","color":"white"}]','[{"text":"僅かに残ったジャック・オ・ランタンの魂。","color":"gray"}]','[{"text":"魂を吸収することで妖しく幽かに輝く。","color":"gray"}]']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onKilledByMelee"
+    data modify storage asset:artifact Trigger set value "onKilled"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -49,7 +51,7 @@
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0259.shadow_stalker/tick/2.tick
+# @within function asset:mob/0259.shadow_stalker/tick/
 
 # タグつけ
     tag @s add 77.Dark

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1010.starfury/tick/2.tick
+# @within function asset:mob/1010.starfury/tick/
 
 # particle
     execute if entity @s[tag=S2.Fire] run particle minecraft:dust 1000000000 1 0 1 ~ ~ ~ 0 0 0 0 1 force @a[distance=..30]

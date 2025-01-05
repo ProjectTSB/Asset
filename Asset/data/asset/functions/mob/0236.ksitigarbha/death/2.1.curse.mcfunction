@@ -4,7 +4,7 @@
 #
 # @input at player
 #
-# @within function asset:mob/0236.ksitigarbha/death/2.death
+# @within function asset:mob/0236.ksitigarbha/death/
 
 # ダメージ設定
     data modify storage lib: Argument.Damage set value 20f

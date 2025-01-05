@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0081.snow_cloud/tick/2.tick
+# @within function asset:mob/0081.snow_cloud/tick/
 
 # スコア蓄積
     scoreboard players add @s 29.SnowTick 1

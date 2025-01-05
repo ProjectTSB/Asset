@@ -2,7 +2,7 @@
 #
 # キル時間を迎えたmobをキル
 #
-# @within function asset:mob/0276.ksitigarbha_body/tick/2.tick
+# @within function asset:mob/0276.ksitigarbha_body/tick/
 
 #> prv
 # @private

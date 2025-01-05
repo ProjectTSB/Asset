@@ -2,7 +2,7 @@
 #
 # 4tick毎に発動します。particleの表示しすぎを防止する
 #
-# @within function asset:mob/0129.lexiel/tick/2.tick
+# @within function asset:mob/0129.lexiel/tick/
 
 # 爆発魔法陣
     execute if entity @s[tag=3L.SkillExplodeParticle] positioned ^ ^ ^5 positioned ~ ~0.3 ~ rotated ~ 0 run function asset:mob/0129.lexiel/tick/particle

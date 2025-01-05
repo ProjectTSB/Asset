@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/0038.laser_eye/**
     scoreboard objectives add C.LaserTime dummy
+    scoreboard objectives add C.LifeTime dummy

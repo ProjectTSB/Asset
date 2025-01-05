@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"U&W-06<Empty>","color":"gray","bold":true,"italic":false,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"とある神が協力をして作り上げた神器 "}','{"text":"しかし、お互い馬が合わなかったのか "}','[{"text":"少し"},{"text":"歪な性能","color":"gray","italic":true},{"text":"をしている"}]','{"text":" "}','{"text":"弾が入っていない","bold":true,"underlined":true}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
@@ -50,6 +52,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

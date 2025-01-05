@@ -2,7 +2,7 @@
 #
 # 近接への持ち替え操作
 #
-# @within function asset:mob/0205.skull_soldier/tick/2.tick
+# @within function asset:mob/0205.skull_soldier/tick/
 
 # VFX
     playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1

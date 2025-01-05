@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0647.thorn_armor/trigger/6.hurt_trigger
 
-#> Private
-# @private
-    #declare score_holder $Fluctuation
-
 # クールタイム処理
     scoreboard players set @s HZ.CoolDown 20
 

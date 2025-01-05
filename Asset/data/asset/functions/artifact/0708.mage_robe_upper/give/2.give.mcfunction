@@ -13,11 +13,13 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_chestplate"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"魔導士のローブ(上)","color":"#360F57"}'
+    data modify storage asset:artifact Name set value '{"text":"魔導士のローブ(上)","color":"#621B9E"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔導士が普段身に着けているローブ。","color":"gray"}]','[{"text":"魔法耐性+5% 魔法攻撃+5%","color":"dark_purple"}]','[{"text":"MP回復量+5%","color":"green"}]','[{"text":"物理耐性-5% 物理攻撃-5%","color":"dark_red"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% 魔法攻撃+5%","color":"dark_purple"}]','[{"text":"MP回復量+5%","color":"green"}]','[{"text":"物理耐性-5% 物理攻撃-5%","color":"dark_red"}]','[{"text":"魔導士が普段身に着けているローブ。","color":"gray"}]']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
@@ -53,7 +55,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:3542871},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,708,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;1,1,708,5],Slot:"chest"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:6429598},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,708,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;1,1,708,5],Slot:"chest"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

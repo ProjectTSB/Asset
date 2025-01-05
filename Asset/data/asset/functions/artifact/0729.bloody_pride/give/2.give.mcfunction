@@ -15,15 +15,19 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"血塗られた矜持","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"かつて誇り高き戦士がつけていた花。","color":"gray","italic":"true"}]','[{"text":"今はもう","color":"gray","italic":"true"},{"text":"鮮血","color":"dark_red","italic":"true"},{"text":"に染まり、無垢だった色の面影はない。","color":"gray","italic":"true"}]','[{"text":"発動時、体力を最大体力の値に応じて回復する。","color":"white"}]','[{"text":"多く持つほど回復量が増加する。","color":"white"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['[{"text":"発動時、体力を最大体力の値に応じて回復する。","color":"white"}]','[{"text":"かつて誇り高き戦士がつけていた花。","color":"gray"}]','[{"text":"今はもう","color":"gray"},{"text":"鮮血","color":"dark_red"},{"text":"に染まり、無垢だった色の面影はない。","color":"gray"}]']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
+# 効果が重複可能か否か (boolean) (オプション)",
+    data modify storage asset:artifact EnableDuplication set value true
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

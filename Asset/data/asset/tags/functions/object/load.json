@@ -1,0 +1,33 @@
+{
+    "values": [
+        "asset:object/2168.general_long_laser/load",
+        "asset:object/2092.ghost_bullet/load",
+        "asset:object/2090.magic_square/load",
+        "asset:object/2157.haruclaire_spread_icespear/load",
+        "asset:object/2156.haruclaire_icepillar/load",
+        "asset:object/2155.haruclaire_icelaser/load",
+        "asset:object/2154.haruclaire_super_icebullet/load",
+        "asset:object/2153.haruclaire_thrown_rod/load",
+        "asset:object/2152.haruclaire_icespear/load",
+        "asset:object/2151.haruclaire_icewall_center/load",
+        "asset:object/2150.haruclaire_ice_wall/load",
+        "asset:object/2113.rectangle_announce/load",
+        "asset:object/1058.brave_knight/load",
+        "asset:object/1050.call_fulstuka/load",
+        "asset:object/1040.thelema_persuit_sword/load",
+        "asset:object/1039.thelema_persuit_entity/load",
+        "asset:object/1038.thelema_slash_entity/load",
+        "asset:object/2048.wave_magic/load",
+        "asset:object/2049.lightning_magic/load",
+        "asset:object/1055.elemental_fish/load",
+        "asset:object/2074.water_magic/load",
+        "asset:object/2063.damage_area/load",
+        "asset:object/1057.giant_pumpkin/load",
+        "asset:object/2034.pumpkin_missile/load",
+        "asset:object/2036.pumpkin_rain/load",
+        "asset:object/1052.maid/load",
+        "asset:object/1029.barrage_spirit/load",
+        "asset:object/1059.book_of_hero/load",
+        "asset:object/2031.giant_pumpkin/load"
+    ]
+}

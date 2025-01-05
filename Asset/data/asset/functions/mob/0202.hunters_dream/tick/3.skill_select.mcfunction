@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/2.tick
+# @within function asset:mob/0202.hunters_dream/tick/
 
 
 #> private

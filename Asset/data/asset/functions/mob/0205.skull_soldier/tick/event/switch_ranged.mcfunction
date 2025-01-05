@@ -2,7 +2,7 @@
 #
 # 弓への持ち替え
 #
-# @within function asset:mob/0205.skull_soldier/tick/2.tick
+# @within function asset:mob/0205.skull_soldier/tick/
 
 
 # VFX

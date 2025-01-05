@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0273.hell_blade/tick/2.tick
+# @within function asset:mob/0273.hell_blade/tick/
 
 # 付く面のチェック
     execute if score @s 7L.Timer matches 3 align xyz positioned ~.5 ~.5 ~.5 run function asset:mob/0273.hell_blade/move/face/

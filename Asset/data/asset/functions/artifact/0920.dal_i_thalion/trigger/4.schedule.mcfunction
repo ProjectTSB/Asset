@@ -1,6 +1,6 @@
 #> asset:artifact/0920.dal_i_thalion/trigger/4.schedule
 #
-#
+# スケジュール処理
 #
 # @within function
 #        asset:artifact/0920.dal_i_thalion/trigger/3.main

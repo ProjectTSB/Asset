@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/0431.weather_lock_cane/trigger/3.main
+# @within function asset:artifact/0431.weather_lock_cane/trigger/weather/overworld
 
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 200

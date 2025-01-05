@@ -11,13 +11,15 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 253
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:glass_pane"
+    data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ホーリー・バリア","color":"white"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"罠カード","color":"light_purple"}','{"text":"(1)相手モンスターの攻撃時に発動する。"}','{"text":"発動プレイヤーを攻撃対象に"}','{"text":"しているモンスターを全て破壊する。"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照

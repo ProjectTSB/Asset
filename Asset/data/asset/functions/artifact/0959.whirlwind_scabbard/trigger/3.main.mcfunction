@@ -4,41 +4,28 @@
 #
 # @within function asset:artifact/0959.whirlwind_scabbard/trigger/2.check_condition
 
-#> score_holder
-# @private
-    #declare score_holder $Base
-    #declare score_holder $Count
-    #declare score_holder $Multi
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/hotbar
-
+    function asset:artifact/common/use/offhand
 # ここから先は神器側の効果の処理を書く
 
+#> Private
+# @private
+    #declare tag Target
+
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
+    execute at @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
 
-# 個数を取得
-    execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:959}}}]
-
-# motionの値の最低値
-    scoreboard players set $Base Temporary 140
-
-# 複数個ある場合の追加する値 (X=40×Count)
-    execute if score $Count Temporary matches 2.. store result score $Multi Temporary run scoreboard players operation $Count Temporary *= $40 Const
-
-# 合算する
-    execute store result storage lib: Argument.VectorMagnitude float 0.01 run scoreboard players operation $Base Temporary += $Multi Temporary
-
-# 対象が天使の場合、本来の値の20%にする
-    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..6] store result storage lib: Argument.VectorMagnitude float 0.002 run scoreboard players get $Base Temporary
-
-# motionLibの実行
+# モーション 対象が天使の場合無効
+    data modify storage lib: Argument.VectorMagnitude set value 2
     data modify storage lib: Argument.KnockbackResist set value 1b
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s rotated as @p[tag=this,distance=..6] rotated ~ -12 run function lib:motion/
+
+# ターゲット指定 Victimと前方を対象にする
+    tag @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,distance=..10] add Target
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,distance=..5] at @p[tag=this] positioned ^ ^ ^-3 unless entity @s[distance=..3] run tag @s add Target
+
+# 前方の5体を対象に、プレイヤーの方向と逆方向に飛ぶ
+    execute as @e[type=#lib:living,tag=Target,distance=..10,sort=nearest,limit=5] at @s facing entity @p[tag=this] eyes rotated ~180 -18 run function lib:motion/
 
 # リセット
-    scoreboard players reset $Base Temporary
-    scoreboard players reset $Count Temporary
-    scoreboard players reset $Multi Temporary
     data remove storage lib: Argument
+    tag @e[type=#lib:living,tag=Target,distance=..10] remove Target

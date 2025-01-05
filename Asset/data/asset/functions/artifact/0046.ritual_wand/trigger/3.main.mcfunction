@@ -12,9 +12,9 @@
 # 現在の天気から切り替える天気を取得する
     execute if predicate lib:weather/is_sunny run scoreboard players set @s Temporary 0
     execute if predicate lib:weather/is_raining run scoreboard players set @s Temporary 1
-    execute if predicate lib:weather/is_thundering run scoreboard players set @s Temporary 2
+    execute if predicate lib:weather/is_thundering run scoreboard players set @s Temporary 1
 # 晴れの時25%の確率で雷雨に切り替え
-    execute if predicate lib:weather/is_sunny if predicate lib:random_pass_per/25 run scoreboard players set @s Temporary 3
+    execute if predicate lib:weather/is_sunny if predicate lib:random_pass_per/25 run scoreboard players set @s Temporary 2
 
 # 演出
     particle minecraft:campfire_cosy_smoke ~ ~ ~ 0 5 0 0.1 100 force @a[distance=..30]
@@ -23,9 +23,10 @@
 # 天気を切り替える
     execute if score @s Temporary matches 0 run weather rain
     execute if score @s Temporary matches 0 run tellraw @s {"text":"天気が雨に切り替わった"}
-    execute if score @s Temporary matches 1..2 run weather clear
-    execute if score @s Temporary matches 1..2 run tellraw @s {"text":"天気が晴れに切り替わった"}
-    execute if score @s Temporary matches 3 run weather thunder
-    execute if score @s Temporary matches 3 run tellraw @s {"text":"天気が雷雨に切り替わった"}
+    execute if score @s Temporary matches 1 run weather clear
+    execute if score @s Temporary matches 1 run tellraw @s {"text":"天気が晴れに切り替わった"}
+    execute if score @s Temporary matches 2 run weather thunder
+    execute if score @s Temporary matches 2 run tellraw @s {"text":"天気が雷雨に切り替わった"}
 
-scoreboard players reset @s Temporary
+# リセット
+    scoreboard players reset @s Temporary
