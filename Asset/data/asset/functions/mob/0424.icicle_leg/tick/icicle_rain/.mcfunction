@@ -21,7 +21,7 @@
     execute positioned ~ ~0.1 ~ rotated ~ 0 run function asset:mob/0424.icicle_leg/tick/icicle_rain/shape
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 25f
+    data modify storage lib: Argument.Damage set value 20f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
 
@@ -43,5 +43,4 @@
 
 # リセット
     function lib:damage/reset
-    function api:entity/mob/effect/reset
     kill @e[type=marker,tag=SpreadMarker,distance=..8,limit=1]
