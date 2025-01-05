@@ -4,6 +4,14 @@
 #
 # @within function asset:mob/alias/1004/death
 
+# 演出
+    playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.7
+    playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.8
+    playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.9
+    playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.5
+    playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.6
+    playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.7
+
 # 落下中のプレイヤーがいたら中心に置く
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] positioned ~-50 ~-14 ~-50 run tp @a[dx=100,dy=10,dz=100] ~ ~ ~
 
