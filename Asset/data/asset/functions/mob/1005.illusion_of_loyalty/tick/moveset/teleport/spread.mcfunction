@@ -18,7 +18,7 @@
 
 # 拡散
     data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0.0d],[16d,16d]]
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] positioned ~ ~1 ~ run function lib:spread_entity/
+    execute as @e[type=marker,tag=SpreadMarker,limit=1] at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] positioned ~ ~0.5 ~ run function lib:spread_entity/
 
 # テレポートを確定
     execute at @e[type=marker,tag=SpreadMarker,limit=1] run tp @s ~ ~ ~
