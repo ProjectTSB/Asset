@@ -110,6 +110,7 @@
     #declare tag BE.Temp.AttackPosition 位置決定用
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Blitz.SummonPosition リヒトブリッツェン召喚位置
+    #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターン
     #declare tag BE.Temp.Flare.SummonPosition フレア召喚位置
     #declare tag BE.Temp.Flare.SummonPosition.Hard 追加フレア召喚位置
     #declare tag BE.Temp.Plamet.SummonPosition 急降下の追撃召喚位置

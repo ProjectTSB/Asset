@@ -23,13 +23,13 @@
     execute if score @s BE.ActCount matches 5 run tag @s add BE.Skill.Tempest
 
 # 順番リセット
-    execute if score @s BE.ActCount matches 6 run function asset:mob/0410.heiloang/tick/act/phase_2/reset_element
+    execute if score @s BE.ActCount matches 6 run function asset:mob/0410.heiloang/tick/util/set_ehd_order
 
 # 3属性技
-    execute if score @s BE.ActCount matches 6 run function asset:mob/0410.heiloang/tick/act/phase_2/element.m {Count:1}
+    execute if score @s BE.ActCount matches 6 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:1}
 
 # 3属性技
-    execute if score @s BE.ActCount matches 7 run function asset:mob/0410.heiloang/tick/act/phase_2/element.m {Count:2}
+    execute if score @s BE.ActCount matches 7 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:2}
 
 # 3属性技
-    execute if score @s BE.ActCount matches 8 run function asset:mob/0410.heiloang/tick/act/phase_2/element.m {Count:3}
+    execute if score @s BE.ActCount matches 8 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:3}

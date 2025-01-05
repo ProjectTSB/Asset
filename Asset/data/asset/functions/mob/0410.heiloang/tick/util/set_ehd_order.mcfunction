@@ -4,7 +4,7 @@
 #
 # @within
 #   asset:mob/0410.heiloang/init/
-#   asset:mob/0410.heiloang/tick/event/**
+#   asset:mob/0410.heiloang/tick/act/phase_2/
 
 # エンハンスドディザスターの順番決定
         execute store result score @s BE.Ehd.Fire run random value 1..3

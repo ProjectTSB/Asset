@@ -19,7 +19,7 @@
 # 急降下
     execute if score @s BE.ActCount matches 4 run tag @s add BE.Skill.Plamet
 
-# パワーブレス
+# パワーブレス4回
     execute if score @s BE.ActCount matches 5 run tag @s add BE.Skill.PowerBreath
     execute if score @s BE.ActCount matches 5 run scoreboard players set @s BE.Pb.Count 4
 
@@ -35,7 +35,7 @@
 # 急降下
     execute if score @s BE.ActCount matches 9 run tag @s add BE.Skill.Plamet
 
-# パワーブレス
+# パワーブレス5回
     execute if score @s BE.ActCount matches 10 run tag @s add BE.Skill.PowerBreath
     execute if score @s BE.ActCount matches 10 run scoreboard players set @s BE.Pb.Count 5
 
@@ -48,13 +48,10 @@
 # 待機
     execute if score @s BE.ActCount matches 13 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 2
 
-# # テンペスト
-#     execute if score @s BE.ActCount matches 14 run tag @s add BE.Skill.Tempest
-
 # 急降下
     execute if score @s BE.ActCount matches 14 run tag @s add BE.Skill.Plamet
 
-# パワーブレス
+# パワーブレス6回
     execute if score @s BE.ActCount matches 15 run tag @s add BE.Skill.PowerBreath
     execute if score @s BE.ActCount matches 15 run scoreboard players set @s BE.Pb.Count 6
 

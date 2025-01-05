@@ -6,6 +6,7 @@
 
 # タグ消去
     tag @s remove BE.Skill.Blitz
+    tag @s remove BE.Temp.Blitz.PatternB
     tag @a remove BE.MainTarget
 
 # 待機モーション再生

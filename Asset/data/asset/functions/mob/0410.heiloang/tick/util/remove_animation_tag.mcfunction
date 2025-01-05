@@ -21,3 +21,6 @@
     tag @s remove BE.Skill.PowerBreath.C1
     tag @s remove BE.Skill.PowerBreath.C2
     tag @s remove BE.Skill.PowerBreath.End
+
+# その他一時タグ
+    tag @s remove BE.Temp.Blitz.PatternB

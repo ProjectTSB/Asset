@@ -2,7 +2,8 @@
 #
 # リヒトブリッツェン
 #
-# @within asset:mob/0410.heiloang/tick/event/richt_blitzen/
+# @within asset:mob/0410.heiloang/tick/event/richt_blitzen/attack_pattern_a
+# @within asset:mob/0410.heiloang/tick/event/richt_blitzen/attack_pattern_b
 # @within asset:mob/0410.heiloang/tick/event/heil_disaster/
 # @within asset:mob/0410.heiloang/tick/event/heil_disaster/hard
 
