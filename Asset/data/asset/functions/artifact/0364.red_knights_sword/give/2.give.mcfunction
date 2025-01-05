@@ -11,21 +11,21 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 364
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red","bold":true,"italic":true}'
+    data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"渇きは収まることを知らない。","color":"dark_red"}','[{"text":"血の欲望は","color":"dark_red"},{"text":"貴方","color":"dark_red","underlined":true},{"text":"の身体まで求める。","color":"dark_red"}]','{"text":"壊れたとしても血を与えれば再生する。","color":"dark_red","underlined":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を剣に与え、"}','{"text":"この剣の攻撃を、しばらくの間強化する。"}','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 13
+    # data modify storage asset:artifact RemainingCount set value 13
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "mainhand"
+    data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -45,13 +45,13 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 10
+    data modify storage asset:artifact LocalCooldown set value 8
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    # data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
