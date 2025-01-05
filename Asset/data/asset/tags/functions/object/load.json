@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2173.heiloang_thunder_spin_attack/load",
         "asset:object/2130.heiloang_circle_vfx/load",
         "asset:object/2127.heiloang_ice_vfx/load",
         "asset:object/2126.heiloang_thunder_burst/load",
@@ -13,7 +14,6 @@
         "asset:object/2115.heiloang_ehd_water/load",
         "asset:object/2114.heiloang_ehd_fire/load",
         "asset:object/2113.rectangle_announce/load",
-        "asset:object/2112.heiloang_thunder_spin/load",
         "asset:object/2109.heiloang_adamant_spike/load",
         "asset:object/2108.heiloang_fireball_aec/load",
         "asset:object/2168.general_long_laser/load",
