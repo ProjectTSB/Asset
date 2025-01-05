@@ -1,8 +1,8 @@
-#> asset:mob/1004.tultaria/tick/wait_time/opening/battle_start
+#> asset:mob/1004.tultaria/tick/intro/battle_start
 #
 # 戦闘開始する
 #
-# @within function asset:mob/1004.tultaria/tick/wait_time/opening/tick
+# @within function asset:mob/1004.tultaria/tick/intro/tick
 
 # 画面エフェクト
     title @a[distance=..64] times 0 5 2

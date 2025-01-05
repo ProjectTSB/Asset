@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/wait_time/opening/tick
+#> asset:mob/1004.tultaria/tick/intro/tick
 #
 # 召喚時にポーズとる
 #
@@ -20,4 +20,4 @@
     execute if score @s General.Mob.Tick matches 45 at @a[distance=..64] run playsound minecraft:entity.blaze.shoot neutral @p ~ ~ ~ 1 1
 
 # 無敵解除、戦闘開始
-    execute if score @s General.Mob.Tick matches 65 run function asset:mob/1004.tultaria/tick/wait_time/opening/battle_start
+    execute if score @s General.Mob.Tick matches 65 run function asset:mob/1004.tultaria/tick/intro/battle_start
