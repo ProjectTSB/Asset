@@ -25,6 +25,11 @@
 # モードチェンジ
     execute if score @s General.Mob.Tick matches 75 run function asset:mob/1004.tultaria/tick/base_move/element_select/change/light
 
+# 画面エフェクト
+    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] times 10 20 10
+    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] title {"text":""}
+    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+
 # アリーナ召喚
     execute if score @s General.Mob.Tick matches 80 at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/summon_arena
 
