@@ -34,15 +34,39 @@
 
 
 # 弾召喚
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~ ~ positioned ^ ^1 ^7 run function api:mob/summon
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~60 ~ positioned ^ ^1 ^7 run function api:mob/summon
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~120 ~ positioned ^ ^1 ^7 run function api:mob/summon
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~180 ~ positioned ^ ^1 ^7 run function api:mob/summon
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~240 ~ positioned ^ ^1 ^7 run function api:mob/summon
-    data modify storage api: Argument.ID set value 329
-    execute rotated ~300 ~ positioned ^ ^1 ^7 run function api:mob/summon
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute at @s positioned ^ ^1 ^7 run function api:object/summon
+    execute at @s run tp @s ~ ~ ~ ~60 ~

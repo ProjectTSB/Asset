@@ -28,9 +28,8 @@
     function lib:damage/reset
 
 # 弾召喚
-    data modify storage api: Argument.ID set value 329
-    execute positioned ^ ^1 ^4 run function api:mob/summon
-    # data modify storage api: Argument.ID set value 329
-    # execute rotated ~-50 ~ positioned ^ ^1 ^4 run function api:mob/summon
-    # data modify storage api: Argument.ID set value 329
-    # execute rotated ~50 ~ positioned ^ ^1 ^4 run function api:mob/summon
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute positioned ^ ^1 ^4 run function api:object/summon
