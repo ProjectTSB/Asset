@@ -13,4 +13,3 @@
     scoreboard objectives add RW.Phase dummy
     scoreboard objectives add RW.Platform.ID dummy
     scoreboard objectives add RW.Platform.CoreID dummy
-    scoreboard objectives add RW.LaserLength dummy
