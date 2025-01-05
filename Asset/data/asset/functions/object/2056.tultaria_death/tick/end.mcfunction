@@ -1,6 +1,6 @@
 #> asset:object/2056.tultaria_death/tick/end
 #
-#
+# 最後の演出
 #
 # @within function asset:object/2056.tultaria_death/tick/
 
@@ -21,6 +21,11 @@
     title @a[distance=..64] times 5 15 20
     title @a[distance=..64] title {"text":""}
     title @a[distance=..64] subtitle {"text":"\uE010","font":"screen_effect","color":"#CCCCCC"}
+
+# オブジェクト召喚
+    data modify storage api: Argument.ID set value 2168
+    data modify storage api: Argument.FieldOverride set value {Scale:[7f,64f,7f],Color:16777215,DisappearInterpolation:10,LifeTime:60}
+    execute positioned ~ ~32 ~ rotated ~ 90 run function api:object/summon
 
 # 消滅
     kill @s
