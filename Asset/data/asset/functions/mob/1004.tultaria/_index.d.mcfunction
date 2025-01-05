@@ -96,8 +96,6 @@
 #declare tag RW.ChainLightning6
 #declare tag RW.ChainLightning7
 #declare tag RW.ChainLightning.Last
-# スコアホルダー
-#declare score_holder $RW.LaserLength
 # Animated animated_java
 #declare function animated_java:tultaria/summon
 #declare function animated_java:tultaria/animations/neutral_air/tween
