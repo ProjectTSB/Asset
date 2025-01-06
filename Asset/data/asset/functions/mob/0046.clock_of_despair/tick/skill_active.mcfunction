@@ -1,4 +1,4 @@
-#> asset:mob/0046.clock_of_despair/tick/3.skill_active
+#> asset:mob/0046.clock_of_despair/tick/skill_active
 #
 #
 #

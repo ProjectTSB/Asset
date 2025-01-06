@@ -2,7 +2,7 @@
 #
 # 時計レーザー + 固定火
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 execute if score @s 1A.LifeTime matches 1600 run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/init
 

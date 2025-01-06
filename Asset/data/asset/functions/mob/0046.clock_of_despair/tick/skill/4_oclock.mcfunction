@@ -2,7 +2,7 @@
 #
 # ビーム -> 自機狙い火
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # ビーム投射
     execute if score @s 1A.LifeTime matches 801 run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon

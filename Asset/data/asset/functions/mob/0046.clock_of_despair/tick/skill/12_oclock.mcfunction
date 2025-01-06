@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # 大爆発(見た目だけ)
     particle minecraft:explosion ~ ~1 ~ 1 1 1 0 10

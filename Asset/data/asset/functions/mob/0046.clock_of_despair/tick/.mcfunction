@@ -16,7 +16,7 @@
     execute if score @s 1A.LifeTime matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 1A.LifeTime -1
 
 # スキル発動
-    function asset:mob/0046.clock_of_despair/tick/3.skill_active
+    function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # 時計の針の回転
     execute as @e[type=armor_stand,tag=1A.ClockHand,distance=..0.1,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ ~0.15 ~

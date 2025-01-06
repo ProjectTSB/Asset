@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 execute if score @s 1A.LifeTime matches 1874 as @e[type=marker,tag=1A.SkillFF1,distance=..6.1] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/summon_aoe.m {VisibleTime:8,InterpolationTime:5}
 execute if score @s 1A.LifeTime matches 1884..1894 as @e[type=marker,tag=1A.SkillFF1,distance=..6.1] at @s run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire/

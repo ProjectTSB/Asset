@@ -2,7 +2,7 @@
 #
 # 金歯車 + 銀歯車 -> 銀歯車 -> 銀歯車
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # RE: 歯車の恐怖
     execute if score @s 1A.LifeTime matches 1400 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/5-4
