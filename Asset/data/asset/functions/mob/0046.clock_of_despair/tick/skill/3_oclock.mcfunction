@@ -2,7 +2,7 @@
 #
 # 空腹 + おやつ
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # おやつの時間だ！
     execute if score @s 1A.LifeTime matches 605 as @a[distance=..50] run tellraw @a [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> おやつの時間だ！"}]
