@@ -149,7 +149,7 @@
 # 補正functionを実行
     function lib:damage/modifier
 # ダメージを与える
-    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 as @a[gamemode=!creative,distance=..3.5] at @s run function lib:damage/
+    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] at @s run function lib:damage/
 # リセット
     function lib:damage/reset
 

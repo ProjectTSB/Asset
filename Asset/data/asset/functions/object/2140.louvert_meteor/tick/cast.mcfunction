@@ -101,4 +101,4 @@
 
 # キル
     kill @s
-    kill @e[type=item_display,tag=2140.Meteor.Display,distance=..0.001,limit=1]
+    kill @e[type=item_display,tag=2140.Meteor.Display,distance=..0.1,limit=1]

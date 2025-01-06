@@ -12,7 +12,7 @@
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/05_1_blade_cutter/play
 
 # 音
-    execute if score @s 9H.AnimationTick matches 1..40 run function asset:mob/0341.louvert/tick/animation/4_1_meteor/sound
+    execute if score @s 9H.AnimationTick matches 1..40 run function asset:mob/0341.louvert/tick/general/13.power_sound/
 
 # スコア調整
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick

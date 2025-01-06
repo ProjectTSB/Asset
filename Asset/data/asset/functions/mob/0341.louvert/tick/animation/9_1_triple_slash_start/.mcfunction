@@ -9,7 +9,7 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0341.louvert/tick/general/2.rotate
 
 # 音
-    function asset:mob/0341.louvert/tick/animation/4_1_meteor/sound
+    function asset:mob/0341.louvert/tick/general/13.power_sound/
 
 # アニメーション開始
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/09_1_triple_slash_start/play

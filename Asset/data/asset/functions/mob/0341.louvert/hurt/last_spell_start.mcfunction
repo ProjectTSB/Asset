@@ -12,3 +12,6 @@
 
 # アニメーションリセット
     scoreboard players set @s 9H.AnimationTick 0
+
+# ラストスペルを実行したというタグを付ける
+    tag @s add 9H.DoLastSpell

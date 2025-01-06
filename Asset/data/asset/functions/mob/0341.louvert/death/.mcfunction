@@ -4,13 +4,17 @@
 #
 # @within function asset:mob/alias/341/death
 
+# モデルは先にキルすべし
+    function animated_java:louvert/remove/all
+
+# 召喚
+    data modify storage api: Argument.ID set value 2191
+    execute at @e[type=marker,tag=9H.Marker.SummonPoint,distance=..200] positioned ~ ~ ~ run function api:object/summon
+
 # キル処理
     kill @e[type=item_display,tag=9H.Final.Display]
     kill @e[type=item_display,tag=9H.Final.Display.Bullet]
-
-# スケジュール起動
-    tag @e[type=marker,tag=9H.Marker.SummonPoint,distance=..200] add 9H.Death
-    schedule function asset:mob/0341.louvert/death/schedule 1t
+    kill @e[type=marker,tag=9H.Marker.SummonPoint,distance=..200]
 
 # 継承元の処理
     function asset:mob/super.death

@@ -12,7 +12,7 @@
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/07_1_soul_magic_cast/play
 
 # 音
-    execute if score @s 9H.AnimationTick matches 10..40 run function asset:mob/0341.louvert/tick/animation/4_1_meteor/sound
+    execute if score @s 9H.AnimationTick matches 10..40 run function asset:mob/0341.louvert/tick/general/13.power_sound/
 
 # 音
     execute if score @s 9H.AnimationTick matches 50 run playsound item.trident.throw hostile @a[distance=..32] ~ ~ ~ 0.75 0.5 0
@@ -22,6 +22,3 @@
 
 # 移動と終了
     execute if score @s 9H.AnimationTick matches 71 run function asset:mob/0341.louvert/tick/general/9.animation_end
-
-# リセット
-    data remove storage asset:temp 9H

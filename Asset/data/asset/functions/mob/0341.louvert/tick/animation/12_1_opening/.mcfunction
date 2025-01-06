@@ -14,5 +14,4 @@
     execute if score @s 9H.AnimationTick matches 75 run function asset:mob/0341.louvert/tick/animation/12_1_opening/first_attack
 
 # アニメーション終了処理
-    execute if score @s 9H.AnimationTick matches 101 run scoreboard players set @s 9H.AnimationNum 11
-    execute if score @s 9H.AnimationTick matches 101 run scoreboard players set @s 9H.AnimationTick 0
+    execute if score @s 9H.AnimationTick matches 101 run function asset:mob/0341.louvert/tick/general/9.animation_end

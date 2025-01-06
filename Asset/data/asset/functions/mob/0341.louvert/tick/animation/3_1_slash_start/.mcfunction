@@ -15,7 +15,7 @@
 # スコア調整
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick
     scoreboard players operation $9H.Temp 9H.AnimationTick %= $2 Const
-    execute if score @s 9H.AnimationTick matches 11..80 if score $9H.Temp 9H.AnimationTick matches 1 run function asset:mob/0341.louvert/tick/animation/3_1_slash_start/sound_set
+    execute if score @s 9H.AnimationTick matches 11..80 if score $9H.Temp 9H.AnimationTick matches 1 run function asset:mob/0341.louvert/tick/general/13.power_sound/
 
 
 # 移動と終了
