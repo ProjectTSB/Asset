@@ -9,4 +9,7 @@
 # 他にアイテム等確認する場合はここに書く
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed,tag=!R4.FinishCoolTime] run function asset:artifact/0976.brave_sword/trigger/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/0976.brave_sword/trigger/3.main
+
+# リセット
+    scoreboard players reset $R4.LatestUseTick Temporary
