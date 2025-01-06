@@ -7,7 +7,7 @@
 #   asset:object/2008.disaster_divine/tick/cast/loop
 
 # 残念ながらブロックは破壊します
-    execute unless block ^ ^ ^0.5 #lib:air unless block ^ ^ ^0.5 #lib:unbreakable run setblock ^ ^ ^0.5 air destroy
+    execute if predicate api:area/is_breakable unless block ^ ^ ^0.5 #lib:air unless block ^ ^ ^0.5 #lib:unbreakable run setblock ^ ^ ^0.5 air destroy
 
 # 着弾検知
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 2008.Landing

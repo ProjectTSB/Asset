@@ -14,6 +14,8 @@
     execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.25 ~ #lib:no_collision run scoreboard players set $2017.Temp Temporary -100
     execute at @s if score $2017.Temp Temporary matches 1.. run function asset:object/2017.ecual_water_magic/init/loop
 
-# ループしてもダメだったらキル / 中断
+# ループしてもダメだったらキル
     execute if score $2017.Temp Temporary matches 0 run kill @s
-    execute if score $2017.Temp Temporary matches 0 run return 0
+
+# リセット
+    scoreboard players reset $2017.Temp Temporary

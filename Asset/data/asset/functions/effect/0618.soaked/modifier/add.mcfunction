@@ -12,5 +12,5 @@
 # (-25 × Stack)%分の水耐性弱化を付与
     data modify storage api: Argument.UUID set value [I;1,3,618,0]
     execute store result storage api: Argument.Amount double -0.25 run data get storage asset:context Stack
-    data modify storage api: Argument.Operation set value "multiply_base"
+    data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/defense/water/add

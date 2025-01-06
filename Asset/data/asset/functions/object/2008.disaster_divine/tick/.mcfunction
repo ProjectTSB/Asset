@@ -13,7 +13,7 @@
 # プレイヤーの方向を向く
     execute unless entity @s[tag=2008.ShotReady] facing entity @p[tag=!PlayerShouldInvulnerable,distance=..100] eyes run tp @s ~ ~ ~ ~ ~
 
-# 60Tick以上もしくはtagがついている場合、発射待機
+# 80Tick以上もしくはtagがついている場合、発射待機
     execute if score @s General.Object.Tick matches 80.. run function asset:object/2008.disaster_divine/tick/ready
     execute if entity @s[tag=2008.ShotReadyManual] run function asset:object/2008.disaster_divine/tick/ready
 

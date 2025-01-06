@@ -100,7 +100,7 @@
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..6] at @s run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] at @s run function api:damage/
 # リセット
     function api:damage/reset
 
