@@ -105,7 +105,7 @@
     execute if score @s 93.AnimationTimer matches 202..205 at @s positioned ^ ^0.3 ^0.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 217..220 at @s positioned ^ ^-0.3 ^ run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 252..257 at @s positioned ^ ^0.1 ^-0.1 run function asset:mob/0327.eclael/tick/app.general/2.teleport
-# 攻撃  
+# 攻撃
     execute if score @s 93.AnimationTimer matches 220 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/4.4.attack_slash_3
     execute if score @s 93.AnimationTimer matches 223 run playsound item.trident.return hostile @a ~ ~ ~ 1 1.2
     execute if score @s 93.AnimationTimer matches 230 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/4.5.attack_thunder_main

@@ -18,5 +18,8 @@
     execute if score @s 93.AnimationTimer matches 12 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] positioned ^ ^0.1 ^ facing entity @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] feet rotated ~ 0 run tp @s ~ ~ ~ ~ 0
     execute if score @s 93.AnimationTimer matches 12 run function asset:mob/0327.eclael/tick/app.general/9.lightning_fast_effect
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 36.. run function asset:mob/0327.eclael/tick/app.skill_events/23_latter_lightningfast/2.end

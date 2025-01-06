@@ -37,5 +37,8 @@
 # 演出
     execute if score @s 93.AnimationTimer matches 41 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 0.5
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 112.. run function asset:mob/0327.eclael/tick/app.skill_events/21_latter_magic/2.end

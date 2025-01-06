@@ -58,5 +58,9 @@
     execute if score @s 93.AnimationTimer matches 118 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] positioned ^6 ^0.2 ^8 run tp @s ~ ~ ~ ~ 0
     execute if score @s 93.AnimationTimer matches 118 run function asset:mob/0327.eclael/tick/app.general/9.lightning_fast_effect
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/wink/apply
+    execute if score @s 93.AnimationTimer matches 81 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 119.. run function asset:mob/0327.eclael/tick/app.skill_events/14_latter_moveshot/2.1.end_mirror

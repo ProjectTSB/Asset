@@ -71,5 +71,9 @@
     execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 79 rotated ~270 ~ positioned ^ ^ ^10 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
     execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 79 rotated ~330 ~ positioned ^ ^ ^10 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 61 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 113.. run function asset:mob/0327.eclael/tick/app.skill_events/19_2_latter_attack_iai_cross/2.end

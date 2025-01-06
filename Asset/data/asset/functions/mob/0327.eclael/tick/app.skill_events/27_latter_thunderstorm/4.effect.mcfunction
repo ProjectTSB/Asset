@@ -10,7 +10,7 @@
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 200
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 2 1
     playsound entity.lightning_bolt.impact player @a ~ ~ ~ 1 0
-    
+
 # 演出用
     execute rotated ~ 0 positioned ^1.4 ^ ^-2.42487 run function asset:mob/0327.eclael/tick/app.skill_events/27_latter_thunderstorm/5.effect_thunder
     execute rotated ~ 0 positioned ^2.8 ^ ^0 run function asset:mob/0327.eclael/tick/app.skill_events/27_latter_thunderstorm/5.effect_thunder

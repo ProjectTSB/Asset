@@ -22,5 +22,8 @@
     execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 8 positioned ^ ^-2 ^ run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
     execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 11 positioned ^ ^-6 ^ run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 36.. run function asset:mob/0327.eclael/tick/app.skill_events/23_latter_lightningfast/2.end

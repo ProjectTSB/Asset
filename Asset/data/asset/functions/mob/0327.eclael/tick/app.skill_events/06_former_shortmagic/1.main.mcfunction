@@ -30,5 +30,11 @@
     execute if score @s 93.AnimationTimer matches 14 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
     execute if score @s 93.AnimationTimer matches 45 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
     execute if score @s 93.AnimationTimer matches 55 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 1
+
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 30 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+    execute if score @s 93.AnimationTimer matches 35 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 81.. run function asset:mob/0327.eclael/tick/app.skill_events/06_former_shortmagic/2.end

@@ -25,4 +25,3 @@
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
     data modify storage api: Argument.ID set value 2195
     function api:object/summon
-    # schedule function asset:mob/0327.eclael/death/app.1.animation_schedule_loop 1t replace

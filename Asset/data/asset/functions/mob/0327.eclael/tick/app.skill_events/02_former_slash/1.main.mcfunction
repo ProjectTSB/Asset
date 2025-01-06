@@ -78,5 +78,12 @@
     execute if score @s 93.AnimationTimer matches 162 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
     execute if score @s 93.AnimationTimer matches 170 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 5 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+    execute if score @s 93.AnimationTimer matches 32 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 63 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+    execute if score @s 93.AnimationTimer matches 91 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 200.. run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/2.end

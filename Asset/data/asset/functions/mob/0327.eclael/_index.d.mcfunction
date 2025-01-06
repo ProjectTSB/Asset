@@ -88,6 +88,10 @@
             #declare function animated_java:eclael/animations/25_2_guard_2/tween
             #declare function animated_java:eclael/animations/26_0_phase_change/tween
             #declare function animated_java:eclael/animations/27_0_latter_thunderstorm/tween
+            #declare function animated_java:eclael/variants/default/apply
+            #declare function animated_java:eclael/variants/blink/apply
+            #declare function animated_java:eclael/variants/akubi/apply
+            #declare function animated_java:eclael/variants/wink/apply
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker

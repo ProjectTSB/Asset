@@ -17,5 +17,9 @@
     execute if score @s 93.AnimationTimer matches 5 run tag @s add 93.Temp.NotArmor
     execute if score @s 93.AnimationTimer matches 40 run tag @s remove 93.Temp.NotArmor
 
+# 表情
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 21 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+
 # 終了
     execute if score @s 93.AnimationTimer matches 41.. run function asset:mob/0327.eclael/tick/app.skill_events/24_1_latter_spear_damage/2.end
