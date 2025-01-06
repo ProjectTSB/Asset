@@ -11,8 +11,7 @@
     execute rotated ~90 ~-40 run function asset:object/2190.eclael_slashbeam/tick/particle
 
 # 移動・攻撃処理
-    execute positioned ^ ^ ^1 run function asset:object/2190.eclael_slashbeam/tick/move
-    # execute positioned ^ ^ ^1 run function asset:object/2190.eclael_slashbeam/tick/move
+    execute positioned ^ ^ ^1 run function asset:object/2190.eclael_slashbeam/tick/hit
     tp @s ^ ^ ^2
     execute if entity @a[tag=2190.Hit] as @a[tag=2190.Hit] at @s run function asset:object/2190.eclael_slashbeam/tick/attack
 

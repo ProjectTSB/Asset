@@ -7,6 +7,9 @@
 # 継承元の処理実行
     function asset:mob/super.death
 
+# 死亡演出スキップ
+    execute if entity @s[tag=93.SkipDeathFunc] run return 0
+
 # TODO:以下仮の実装
     # 天候を戻す
         weather clear
@@ -18,8 +21,8 @@
 # 中心点削除
     kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
 
-# TODO:とりあえずモデル消去
-    function animated_java:eclael/remove/all
-
 # 討伐演出再生
+    tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
+    data modify storage api: Argument.ID set value 2195
+    function api:object/summon
     # schedule function asset:mob/0327.eclael/death/app.1.animation_schedule_loop 1t replace
