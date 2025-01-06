@@ -17,6 +17,7 @@
     #declare tag 9H.LastSpell
     #declare tag 2145.SoulBlast
     #declare tag 9H.DoLastSpell
+    #declare tag 2142.SoulBombhard
 
 #> val
 # @within function asset:mob/0341.louvert/**

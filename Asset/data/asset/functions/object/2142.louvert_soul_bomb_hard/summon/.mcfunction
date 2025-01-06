@@ -4,5 +4,9 @@
 #
 # @within asset:object/alias/2142/summon
 
+#> tag
+# @private
+    #declare tag 2142.SoulBombhard
+
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    summon marker ~ ~ ~ {Tags:["ObjectInit","2142.SoulBombhard"]}

@@ -15,6 +15,7 @@
     kill @e[type=item_display,tag=9H.Final.Display]
     kill @e[type=item_display,tag=9H.Final.Display.Bullet]
     kill @e[type=marker,tag=9H.Marker.SummonPoint,distance=..200]
+    kill @e[type=marker,tag=2142.SoulBombhard,distance=..200]
 
 # 継承元の処理
     function asset:mob/super.death
