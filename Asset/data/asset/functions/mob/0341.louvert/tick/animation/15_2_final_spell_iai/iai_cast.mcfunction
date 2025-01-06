@@ -22,22 +22,19 @@
 
 # 引数の設定
     # 与えるダメージ
-        # ノーマルなら 36f
-            execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 36.0f
-        # ハードなら 50f
-            execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set value 60.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの居合斬りによって真っ二つにされてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの居合斬りによって真っ二つにされてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @a[tag=9H.Landing,distance=..32] at @s run function lib:damage/
+    execute as @a[tag=9H.Landing,distance=..32] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # リセット
     tag @a[tag=9H.Landing,distance=..32] remove 9H.Landing

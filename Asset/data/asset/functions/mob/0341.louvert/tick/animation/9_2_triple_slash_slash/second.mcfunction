@@ -134,23 +134,19 @@
 
 # ダメージ
     # 引数の設定
-    # 与えるダメージ
-        # ノーマルなら 35f
-            execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 35.0f
-        # ハードなら 50f
-            execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set value 60.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに斬り裂かれ、猛火に焼かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに斬り裂かれ、猛火に焼かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] at @s run function lib:damage/
+    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # ハード用
     execute at @s rotated ~ ~0 positioned ^ ^1 ^1 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0341.louvert/tick/animation/9_2_triple_slash_slash/hard_soul

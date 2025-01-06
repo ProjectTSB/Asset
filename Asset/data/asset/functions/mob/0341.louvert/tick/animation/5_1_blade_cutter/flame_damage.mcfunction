@@ -19,22 +19,19 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        # ノーマルなら 10f
-            execute if predicate api:global_vars/difficulty/max/normal run data modify storage lib: Argument.Damage set value 10.0f
-        # ハードなら 20f
-            execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 20.0f
+        data modify storage api: Argument.Damage set value 15.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの燃える刃に斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの燃える刃に斬り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
     execute at @e[type=marker,tag=9H.FireBladeLocater,distance=..64] positioned ~-2 ~-2 ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=4,dy=4,dz=4] at @s run tag @s add 9H.Temp.Target
     execute at @e[type=marker,tag=9H.SoulBladeLocater,distance=..64] positioned ~-2 ~-2 ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=4,dy=4,dz=4] at @s run tag @s add 9H.Temp.Target
-    execute as @a[tag=9H.Temp.Target,distance=..100] at @s run function lib:damage/
+    execute as @a[tag=9H.Temp.Target,distance=..100] at @s run function api:damage/
 # リセット
     tag @a[distance=..100] remove 9H.Temp.Target
-    function lib:damage/reset
+    function api:damage/reset
