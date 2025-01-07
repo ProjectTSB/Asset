@@ -8,9 +8,6 @@
 # @private
 #declare tag aj.tultaria.bone
 
-# AJモデル召喚
-    execute rotated ~ 0 run function animated_java:tultaria/summon {args:{animation:neutral_air,start_animation:1b}}
-
 # DeathTime設定
     data modify entity @s DeathTime set value 19
 
@@ -26,6 +23,12 @@
 
 # 召喚地点のPos[1]を記録しておく
     execute store result storage asset:context this.Pos.Y double 1 run data get entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
+
+# ちょっと上に移動
+    tp @s ~ ~0.5 ~
+
+# AJモデル召喚
+    execute at @s rotated ~ 0 run function animated_java:tultaria/summon {args:{animation:neutral_air,start_animation:1b}}
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1
