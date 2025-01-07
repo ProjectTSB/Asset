@@ -6,8 +6,6 @@
 
 # スキル
     tag @s remove RX.Skill.AimingLaser
-    tag @s remove RX.Skill.AimingLaser.Advance
-    tag @s remove RX.Skill.AimingLaser.Direct
     tag @s remove RX.Skill.SwordSpin
     tag @s remove RX.Skill.HomingShot
     tag @s remove RX.Move.Teleport

@@ -4,11 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
-#> タグ
-# @private
-    #declare tag RX.Skill.AimingLaser.Direct
-    #declare tag RX.Skill.AimingLaser.Advance
-
 # モデルを自分の向きに
     execute if score @s General.Mob.Tick matches 0.. at @s facing entity @p eyes run tp @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
