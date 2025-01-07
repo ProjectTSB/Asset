@@ -11,7 +11,6 @@
 # タグ調整、フェイズ2開始
     scoreboard players add @s RW.Phase 1
     tag @s add RW.CanElementChange
-    tag @s remove RW.Transition.Phase2.Windup
     tag @s remove RW.Transition.Phase2.Attack
     tag @s remove RW.Transition.Phase2
     tag @s remove RW.InAction
