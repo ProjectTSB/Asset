@@ -5,4 +5,7 @@
 # @within asset:object/alias/2042/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {billboard:"center",teleport_duration:1,Tags:["ObjectInit"],item:{id:"minecraft:leather_horse_armor",Count:1b,tag:{display:{color:16738816},CustomModelData:20375}}}
+    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/2042.lastboss_fireball/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args

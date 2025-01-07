@@ -6,14 +6,13 @@
 
 #> 行き先マーカー
 # @private
-#declare tag FacingMarker
 #declare tag SpreadMarker
 
 # 拡散させるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["SpreadMarker","FacingMarker"]}
+    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
 # ステータス設定
-    data modify storage lib: Argument.Distance set value 5
+    data modify storage lib: Argument.Distance set value 1
     data modify storage lib: Argument.Spread set value 1
 
 # 拡散
@@ -25,10 +24,10 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2042
-    function api:object/summon
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] eyes run function api:object/summon
 
 # リセット
-    kill @e[type=marker,tag=FacingMarker,distance=..128,limit=1]
+    kill @e[type=marker,tag=SpreadMarker,distance=..128,limit=1]
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 2
