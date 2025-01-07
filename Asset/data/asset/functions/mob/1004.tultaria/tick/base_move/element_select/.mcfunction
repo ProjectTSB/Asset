@@ -21,9 +21,7 @@
     # ストレージの要素数を取得
         execute store result storage asset:context this.Element.Count int 1 run data get storage asset:context this.Element.List
     # 取得した要素数を使ってランダムに属性を選ぶ
-        execute unless data storage asset:context this.Element{Count:1} run function asset:mob/1004.tultaria/tick/base_move/element_select/roll.m with storage asset:context this.Element
-    # 要素数１個しかないとき
-        execute if data storage asset:context this.Element{Count:1} run function asset:mob/1004.tultaria/tick/base_move/element_select/only_one_element with storage asset:context this.Element
+        function asset:mob/1004.tultaria/tick/base_move/element_select/roll.m with storage asset:context this.Element
 
 # 技の数は全属性で一定なので！
     data modify storage asset:context this.Skill.List set value [0,1,2]
