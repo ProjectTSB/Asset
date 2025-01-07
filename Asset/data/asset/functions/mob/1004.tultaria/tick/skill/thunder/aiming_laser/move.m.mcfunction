@@ -30,7 +30,7 @@
 
 # リセット
     tag @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit] remove RW.MarkerInit
-    data remove storage rw_storage: Rotation
+    data remove storage asset:temp Rotation
 
 # 行動中タグ付与
     tag @s add RW.Move

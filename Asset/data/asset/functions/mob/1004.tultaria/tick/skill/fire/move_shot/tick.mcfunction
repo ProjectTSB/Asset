@@ -15,8 +15,8 @@
     execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
 
 # 最初の移動
-    execute if score @s General.Mob.Tick matches 0 store result storage rw_storage: Rotation int 1 run random value -180..180
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/first_move.m with storage rw_storage:
+    execute if score @s General.Mob.Tick matches 0 store result storage asset:temp Rotation int 1 run random value -180..180
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/first_move.m with storage asset:temp
 
 # モデルをプレイヤーに向ける
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0

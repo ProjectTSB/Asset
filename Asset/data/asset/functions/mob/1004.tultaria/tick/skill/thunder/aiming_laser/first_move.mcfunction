@@ -13,5 +13,5 @@
     playsound minecraft:entity.breeze.slide hostile @a ~ ~ ~ 1 0.7
 
 # ランダムな角度を指定して、そのデータを元に移動
-    execute store result storage rw_storage: Rotation int 1 run random value -180..180
-    function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/move.m with storage rw_storage:
+    execute store result storage asset:temp Rotation int 1 run random value -180..180
+    function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/move.m with storage asset:temp
