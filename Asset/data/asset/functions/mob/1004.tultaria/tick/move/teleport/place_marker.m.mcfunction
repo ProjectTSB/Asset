@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/1004.tultaria/tick/**
+# @within function asset:mob/1004.tultaria/tick/base_move/reset
 
 # 残ってたらヤなのでマーカーを消す
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
