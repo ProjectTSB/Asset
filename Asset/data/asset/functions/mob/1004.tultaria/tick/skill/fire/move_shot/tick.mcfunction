@@ -32,7 +32,7 @@
     execute if score $Interval Temporary matches 0 if score @s General.Mob.Tick matches 15..35 at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] facing entity @p eyes run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/shoot
 
 # 幻影に攻撃させる
-    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 35 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/fire/metor_rain
+    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 35 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/fire/meteor_rain
 
 # ループ
     execute if entity @s[scores={RW.LoopCount=..1,General.Mob.Tick=35}] run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/add_loop_count

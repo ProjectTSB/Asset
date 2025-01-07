@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/fire/metor_rain
+#> asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/fire/meteor_rain
 #
 #
 #
