@@ -13,11 +13,8 @@
     tag @s remove RW.Mode.Thunder
     tag @s remove RW.Mode.Light
 
-
 # 剣を破壊
     execute as @e[type=item_display,scores={ObjectID=2043},distance=..64] at @s run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/sword/break
-
-tellraw @a [{"text":"storage: "},{"storage":"asset:context","nbt":"this.Element.List"}]
 
 # 属性をランダムに選択
     # 要素がない場合は光属性モードに移行
