@@ -16,3 +16,6 @@
 # リセット
     data remove storage asset:context this.Skill.Roll
     data remove storage asset:context this.Skill.Get
+
+# 最後の一個だった場合、エレメントチェンジ可能になる
+    execute if data storage asset:context this.Skill{List:[]} run tag @s add RW.CanElementChange

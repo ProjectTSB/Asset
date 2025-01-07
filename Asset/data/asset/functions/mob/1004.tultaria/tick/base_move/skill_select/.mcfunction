@@ -16,8 +16,6 @@
     scoreboard players set @s RW.LoopCount 0
 
 # 属性をランダムに選択
-    # 要素がない場合は再付与
-        execute if data storage asset:context this.Skill{List:[]} run data modify storage asset:context this.Skill.List set value [0,1,2]
     # 光モードのときはリストを一個だけにする
         execute if entity @s[tag=RW.Mode.Light,scores={RW.Phase=1..}] run data modify storage asset:context this.Skill.List set value [0]
     # ストレージの要素数を取得
