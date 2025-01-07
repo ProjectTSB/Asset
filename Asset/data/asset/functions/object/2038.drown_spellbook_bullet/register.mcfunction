@@ -17,4 +17,4 @@
 # ID (int)
     data modify storage asset:object ID set value 2038
 # フィールド(オプション)
-    data modify storage asset:object Field set value {Speed:3,Range:192,MovePerStep:0.25}
+    data modify storage asset:object Field set value {Speed:1,Range:64,MovePerStep:0.75}

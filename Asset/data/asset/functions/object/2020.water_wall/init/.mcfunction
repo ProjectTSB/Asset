@@ -5,8 +5,8 @@
 # @within asset:object/alias/2020/init
 
 # ループ処理
-    scoreboard players set $2020.Temp Temporary 32
-    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.25 ~ #lib:no_collision run scoreboard players set $2020.Temp Temporary -100
+    scoreboard players set $2020.Temp Temporary 16
+    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set $2020.Temp Temporary -100
     execute at @s if score $2020.Temp Temporary matches 1.. run function asset:object/2020.water_wall/init/loop
 
 # ループしてもダメだったらキル / 中断

@@ -17,8 +17,8 @@
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # ループ処理
-    scoreboard players set $2014.Temp Temporary 32
-    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.25 ~ #lib:no_collision run scoreboard players set $2014.Temp Temporary -100
+    scoreboard players set $2014.Temp Temporary 16
+    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set $2014.Temp Temporary -100
     execute at @s if score $2014.Temp Temporary matches 1.. run function asset:object/2014.dimension_sword/init/loop
 
 # ループしてもダメだったらキル
