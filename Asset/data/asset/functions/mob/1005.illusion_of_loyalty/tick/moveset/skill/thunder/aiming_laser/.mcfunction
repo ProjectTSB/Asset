@@ -16,7 +16,7 @@
     execute if score @s General.Mob.Tick matches 0..60 positioned ~ ~1.5 ~ positioned ^ ^ ^1 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/alert
 
 # プレイヤーのほうにゆっくりと向く
-    function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/facing_tarfet.m with storage asset:context this
+    function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/facing_target.m with storage asset:context this
 
 # 数Tickごとにレーザー
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

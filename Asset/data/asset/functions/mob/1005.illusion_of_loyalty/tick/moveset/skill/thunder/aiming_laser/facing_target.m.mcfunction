@@ -1,4 +1,4 @@
-#> asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/facing_tarfet.m
+#> asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/facing_target.m
 #
 #
 #
