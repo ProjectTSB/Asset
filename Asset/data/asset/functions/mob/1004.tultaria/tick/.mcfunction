@@ -16,10 +16,10 @@
     tag @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] add RW.ModelRoot.Target
 
 # 最寄りのモデルのRootを自身の座標にもってくる
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run tp @s ~ ~ ~
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] run tp @s ~ ~ ~
 
 # モデルをプレイヤーに向ける
-    execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # 開幕
     execute if entity @s[tag=RW.Opening] run function asset:mob/1004.tultaria/tick/intro/tick
