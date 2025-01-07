@@ -4,11 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/fire/move_shot/tick
 
-#
-
-#
-    #scoreboard players set @s General.Mob.Tick -20
-
 # TickLock
     tag @s add RW.TickLock
 
