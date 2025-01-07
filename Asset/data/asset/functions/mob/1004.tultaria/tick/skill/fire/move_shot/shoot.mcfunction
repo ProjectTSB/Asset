@@ -12,14 +12,14 @@
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
 # ステータス設定
-    data modify storage lib: Argument.Distance set value 1
-    data modify storage lib: Argument.Spread set value 1
+    data modify storage lib: Argument.Distance set value 4
+    data modify storage lib: Argument.Spread set value 1.5
 
 # 拡散
     execute as @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] run function lib:forward_spreader/circle
 
 # 発射体のステータス設定
-    data modify storage api: Argument.FieldOverride set value {Speed:1,Range:60,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride set value {Speed:2,Range:60,MovePerStep:0.3}
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
 
 # 召喚
