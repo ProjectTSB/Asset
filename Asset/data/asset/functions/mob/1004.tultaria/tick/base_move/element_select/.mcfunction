@@ -4,14 +4,20 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/
 
+# 光属性のときにこれを実行した場合はリストの再付与も行う
+    execute if entity @s[tag=RW.Mode.Light] run data modify storage asset:context this.Element.List set value [Fire,Water,Thunder]
+
 # リセット！
     tag @s remove RW.Mode.Fire
     tag @s remove RW.Mode.Water
     tag @s remove RW.Mode.Thunder
     tag @s remove RW.Mode.Light
 
+
 # 剣を破壊
     execute as @e[type=item_display,scores={ObjectID=2043},distance=..64] at @s run function asset:mob/1004.tultaria/tick/skill/water/sword_rain/sword/break
+
+tellraw @a [{"text":"storage: "},{"storage":"asset:context","nbt":"this.Element.List"}]
 
 # 属性をランダムに選択
     # 要素がない場合は光属性モードに移行
