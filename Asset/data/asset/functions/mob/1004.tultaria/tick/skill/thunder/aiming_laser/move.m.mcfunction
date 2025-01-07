@@ -21,7 +21,6 @@
 
 # マーカーが回る
     $execute as @e[type=marker,tag=RW.RotateMarker,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12
-    execute at @e[tag=RW.RotateMarker] run particle explosion
 
 # 移動先を設置
     execute at @e[type=marker,tag=RW.RotateMarker,limit=1] run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
