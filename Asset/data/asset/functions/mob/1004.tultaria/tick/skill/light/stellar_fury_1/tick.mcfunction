@@ -29,7 +29,7 @@
 #    execute if score @s General.Mob.Tick matches 90 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
 # 待機アニメを再生
-    execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
+    execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
 
 # リセット
     execute if score @s General.Mob.Tick matches 120.. run function asset:mob/1004.tultaria/tick/base_move/reset

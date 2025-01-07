@@ -19,22 +19,22 @@
     scoreboard players set @s RW.Speed 8
 
 # 残ってたらヤなのでマーカーを消す
-    kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
+    kill @e[type=marker,tag=RW.TeleportMarker,distance=..128,sort=nearest,limit=1]
 
 # プレイヤーの足元に召喚
     execute at @r run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
 
 # プレイヤーから12ブロック離れた、ランダムな角度の位置にマーカーを置く
-    $execute as @e[type=marker,tag=RW.RotateMarker,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12
+    $execute as @e[type=marker,tag=RW.RotateMarker,distance=..128,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12
 
 # 移動先を設置
-    execute at @e[type=marker,tag=RW.RotateMarker,limit=1] run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
+    execute at @e[type=marker,tag=RW.RotateMarker,distance=..128,limit=1] run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
 
 # 回るマーカーをキル
-    kill @e[type=marker,tag=RW.RotateMarker,limit=1]
+    kill @e[type=marker,tag=RW.RotateMarker,distance=..128,limit=1]
 
 # リセット
-    tag @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit] remove RW.MarkerInit
+    tag @e[type=marker,tag=RW.TeleportMarker,tag=RW.MarkerInit,distance=..128,limit=1] remove RW.MarkerInit
     data remove storage rw_storage: Rotation
 
 # 行動中タグ付与

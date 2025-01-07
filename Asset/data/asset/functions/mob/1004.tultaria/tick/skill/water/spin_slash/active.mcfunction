@@ -8,7 +8,7 @@
     execute facing entity @p feet run tp @s ~ ~ ~ ~ ~
 
 # モデルを自分の向きに
-    execute at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ ~
+    execute at @s rotated ~ 0 run tp @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # ユーザーIDをフィールドにいれる
 #    execute store result storage asset:context this.TargetID int 1 run scoreboard players get @p[distance=..64] UserID

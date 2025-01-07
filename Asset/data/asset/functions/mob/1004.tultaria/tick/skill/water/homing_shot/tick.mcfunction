@@ -5,21 +5,21 @@
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
 # モデルをプレイヤーに向ける
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
     execute if score @s General.Mob.Tick matches 0 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
 # 射撃
     execute if score @s General.Mob.Tick matches 3 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
 # 射撃
     execute if score @s General.Mob.Tick matches 13 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
 # 射撃
     execute if score @s General.Mob.Tick matches 23 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/
 

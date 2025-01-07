@@ -10,13 +10,13 @@
     #declare tag RX.Skill.AimingLaser.Advance
 
 # モデルを自分の向きに
-    execute if score @s General.Mob.Tick matches 0.. at @s facing entity @p eyes run tp @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ 0
+    execute if score @s General.Mob.Tick matches 0.. at @s facing entity @p eyes run tp @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
 # 最初の移動
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/first_move
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 40 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:5}
+    execute if score @s General.Mob.Tick matches 40 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:5}
 
 # 射撃
     # 偏差

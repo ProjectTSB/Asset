@@ -12,8 +12,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 表情変更
-    execute if score @s General.Object.Tick matches 30 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/variants/face_eyehalf/apply
-    execute if score @s General.Object.Tick matches 75 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/variants/face_eyeclose/apply
+    execute if score @s General.Object.Tick matches 30 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/variants/face_eyehalf/apply
+    execute if score @s General.Object.Tick matches 75 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/variants/face_eyeclose/apply
 
 # 下がっていく
     execute if score @s General.Object.Tick matches ..9 run tp @s ^ ^ ^-0.05

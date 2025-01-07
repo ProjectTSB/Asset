@@ -31,7 +31,7 @@
     execute as @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run function api:mob/kill
 
 # モデルを消す
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/remove/this
+    execute as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/remove/this
 
 # 撃破演出用オブジェクトを召喚
     data modify storage api: Argument.ID set value 2056

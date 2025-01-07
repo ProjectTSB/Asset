@@ -81,7 +81,7 @@
 #    execute if score @s General.Mob.Tick matches 0 run scoreboard players set @s General.Mob.Tick 580
 
 # アニメ再生
-    execute if score @s General.Mob.Tick matches 710 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 710 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/tween {to_frame:0,duration:1}
 
 # 「忠誠の幻想」を2体召喚する
     execute if score @s General.Mob.Tick matches 713 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/summon_illusion/

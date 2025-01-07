@@ -14,7 +14,7 @@
     playsound minecraft:entity.breeze.slide hostile @a ~ ~ ~ 1 0.7
 
 # 自身のモデルのアニメ
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_side/tween {to_frame:0,duration:1}
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/dodge_side/tween {to_frame:0,duration:1}
 
 # 壊れてる足場を復帰させる
     function asset:mob/1004.tultaria/tick/base_move/regenerate_platform/

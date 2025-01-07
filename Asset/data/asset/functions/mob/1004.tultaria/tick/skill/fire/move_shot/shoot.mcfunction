@@ -17,7 +17,7 @@
     data modify storage lib: Argument.Spread set value 1
 
 # 拡散
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+    execute as @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] run function lib:forward_spreader/circle
 
 # 発射体のステータス設定
     data modify storage api: Argument.FieldOverride set value {Speed:1,Range:60,MovePerStep:0.5}
@@ -28,7 +28,7 @@
     function api:object/summon
 
 # リセット
-    kill @e[type=marker,tag=FacingMarker]
+    kill @e[type=marker,tag=FacingMarker,distance=..128,limit=1]
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 2

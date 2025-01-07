@@ -9,8 +9,8 @@
 
 # 属性チェンジ
     # アニメーション
-        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
-        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
     # 属性チェンジ可能であれば属性を選択
         execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
 
@@ -27,7 +27,7 @@
     execute if entity @s[tag=RW.Move] run function asset:mob/1004.tultaria/tick/move/teleport/move_to_marker
 
 # リセットからの復帰時に待機アニメを再生
-    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
+    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 10 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/neutral_air/tween {duration:5, to_frame: 0}
 
 # 嘘慣性
     execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] run function asset:mob/1004.tultaria/tick/base_move/fake_inertia

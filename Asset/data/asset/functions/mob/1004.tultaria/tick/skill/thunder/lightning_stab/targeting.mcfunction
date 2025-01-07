@@ -10,10 +10,10 @@
 
 
 # 自身のモデルにモーションを再生させる
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/tween {to_frame:0,duration:1}
+    execute as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_windup/tween {to_frame:0,duration:1}
 
 # モデルをプレイヤーに向ける
-    execute as @e[type=item_display,tag=RW.ModelRoot,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
 # 演出
     playsound minecraft:block.grindstone.use hostile @a ~ ~ ~ 2 1.5

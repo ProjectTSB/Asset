@@ -15,7 +15,7 @@
     particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.1 50 normal
 
 # アニメ再生
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
 
 # タグ調整
     tag @s remove RW.Opening
