@@ -32,3 +32,5 @@
     tag @s remove RW.Skill.SpinSlash
 
     tag @s remove RW.Skill.BlazingCombo
+
+    tag @s remove RW.Skill.Starfury
