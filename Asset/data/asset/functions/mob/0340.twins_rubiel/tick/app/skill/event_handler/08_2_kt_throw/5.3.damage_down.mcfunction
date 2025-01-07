@@ -19,10 +19,12 @@
     execute at @s anchored eyes run particle explosion ~ ~0.5 ~ 0 0 0 0 1
     execute at @s anchored eyes run particle cloud ~ ~0.5 ~ 0 0 0 0.2 20
 
-# ブロック設置
-    execute at @s if block ~ ~1 ~ air run setblock ~ ~1 ~ barrier
-    data modify storage api: Argument.ID set value 352
-    function api:mob/summon
+# 転倒演出
+    data modify storage api: Argument.ID set value 2196
+    execute at @s run function api:object/summon
+    # execute at @s if block ~ ~1 ~ air run setblock ~ ~1 ~ barrier
+    # data modify storage api: Argument.ID set value 352
+    # execute at @s run function api:mob/summon
 
 # 計算用AEC召喚
     execute positioned as @s run summon area_effect_cloud ^ ^ ^-0.5 {CustomNameVisible:0b,Particle:"block air",Duration:8,Tags:["Object","9G.Temp.Target.Aec.0"]}

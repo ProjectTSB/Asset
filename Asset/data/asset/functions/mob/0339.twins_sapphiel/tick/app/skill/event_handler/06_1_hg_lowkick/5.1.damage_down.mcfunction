@@ -15,10 +15,12 @@
 # 移動速度低下
     effect give @s slowness 3 10 true
 
-# ブロック設置
-    execute at @s if block ~ ~1 ~ air run setblock ~ ~1 ~ barrier
-    data modify storage api: Argument.ID set value 352
-    function api:mob/summon
+# 転倒演出
+    data modify storage api: Argument.ID set value 2196
+    execute at @s run function api:object/summon
+    # execute at @s if block ~ ~1 ~ air run setblock ~ ~1 ~ barrier
+    # data modify storage api: Argument.ID set value 352
+    # function api:mob/summon
 
 # 計算用AEC召喚
     execute positioned as @s run summon area_effect_cloud ^ ^ ^-0.5 {CustomNameVisible:0b,Particle:"block air",Duration:8,Tags:["Object","9F.Temp.Target.Aec.0"]}
