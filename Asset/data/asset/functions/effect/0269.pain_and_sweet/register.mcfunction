@@ -7,7 +7,7 @@
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 270
+    data modify storage asset:effect ID set value 269
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"痛い！甘い！","color":"BF6A4B"}'
 # 説明文 (TextComponentString[])

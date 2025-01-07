@@ -30,7 +30,6 @@
         "asset:artifact/1034.eiya/trigger/rejoin_process",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/rejoin_process",
         "asset:artifact/0647.thorn_armor/trigger/rejoin_process",
-        "asset:artifact/0976.brave_sword/trigger/rejoin_process",
         "asset:artifact/0953.meteor_rain/trigger/rejoin_process",
         "asset:artifact/0981.soulfire_burst/trigger/rejoin_process",
         "asset:mob/0120.convict/rejoin_process",
@@ -57,7 +56,6 @@
         "asset:artifact/0265.holy_symbol_lv.5/trigger/rejoin_process",
         "asset:artifact/0269.holy_symbol_lv.10/trigger/rejoin_process",
         "asset:artifact/0373.ice_sorcery/trigger/rejoin_process",
-        "asset:mob/0151.recombined/rejoin_process",
         "asset:artifact/0610.call_fish/trigger/rejoin_process",
         "asset:mob/0131.haruclaire/rejoin_process"
     ]

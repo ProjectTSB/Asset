@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0067.slowness/_/end",
+        "asset:effect/0017.slowness/_/end",
         "asset:effect/0124.darkness/_/end",
         "asset:effect/0202.sheep_blessing/_/end",
         "asset:effect/0204.void_transaction/_/end",
@@ -34,6 +36,7 @@
         "asset:effect/0612.infringement/_/end",
         "asset:effect/0613.white_curse/_/end",
         "asset:effect/0617.twins_sight/_/end",
+        "asset:effect/0601.conviction/_/end",
         "asset:effect/0263.chivalry_of_ruin/_/end",
         "asset:effect/0203.secret_meat/_/end",
         "asset:effect/0268.macaron_barrier/_/end",
@@ -54,6 +57,8 @@
         "asset:effect/0276.unending_thunder/_/end",
         "asset:effect/0001.attack_base_debuff/_/end",
         "asset:effect/0051.attack_base_debuff/_/end",
-        "asset:effect/0125.levitation/_/end"
+        "asset:effect/0125.levitation/_/end",
+        "asset:effect/0007.defense_base_debuff/_/end",
+        "asset:effect/0258.spirit_melody/_/end"
     ]
 }

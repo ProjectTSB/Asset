@@ -1,6 +1,8 @@
 #> asset:mob/0336.cherry_blossom_fairy/register
 # @within asset:mob/alias/336/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 336
 # Type (string) Wikiを参照
@@ -52,3 +54,5 @@
         data modify storage asset:mob Resist.Water set value 0.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
+# フィールド
+    data modify storage asset:mob Field.Damage set value {Attack:10d,Shower:3d}

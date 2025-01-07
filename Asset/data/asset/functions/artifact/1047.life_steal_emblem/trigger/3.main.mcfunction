@@ -28,3 +28,4 @@
 # 魂命バフを付与する
     data modify storage api: Argument.ID set value 260
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

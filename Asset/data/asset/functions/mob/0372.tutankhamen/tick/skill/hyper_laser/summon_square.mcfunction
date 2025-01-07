@@ -1,0 +1,13 @@
+#> asset:mob/0372.tutankhamen/tick/skill/hyper_laser/summon_square
+#
+#
+#
+# @within function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/
+
+# データ指定
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+
+# 召喚
+    data modify storage api: Argument.ID set value 2091
+    function api:object/summon

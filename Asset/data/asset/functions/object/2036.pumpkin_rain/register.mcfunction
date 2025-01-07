@@ -18,3 +18,4 @@
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.RotationX set value 0f
     data modify storage asset:object Field.MobUUID set value -1
+    data modify storage asset:object Field.FaceID set value 1

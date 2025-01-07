@@ -17,5 +17,4 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.Speed set value 1
-    data modify storage asset:object Field.Rotation set value [0f,0f]
     data modify storage asset:object Field.MobUUID set value -1
