@@ -14,7 +14,7 @@
 # ID (int)
     data modify storage asset:mob ID set value 1004
 # Type (string) Wikiを参照
-    data modify storage asset:mob Type set value "Enemy.Boss"
+    data modify storage asset:mob Type set value "Enemy.EndGameBoss"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
