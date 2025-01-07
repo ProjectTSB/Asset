@@ -12,10 +12,10 @@
     execute store result storage asset:context this.TargetID int 1 run scoreboard players get @p[distance=..64] UserID
 
 # マーカーの方向く
-    execute facing entity @e[type=marker,tag=FacingMarker,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+#    execute facing entity @e[type=marker,tag=FacingMarker,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # キル
-    kill @e[type=marker,tag=FacingMarker,limit=1]
+#    kill @e[type=marker,tag=FacingMarker,limit=1]
 
 # super
     function asset:object/super.init

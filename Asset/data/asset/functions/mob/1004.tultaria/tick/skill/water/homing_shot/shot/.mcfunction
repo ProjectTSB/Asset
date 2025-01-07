@@ -11,20 +11,15 @@
 
 # 弾を出す
     # 中心
-        execute positioned ^ ^ ^10 run summon marker ~ ~ ~ {Tags:["FacingMarker"]}
         function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
     # 横1
-        execute positioned ^5 ^ ^10 run summon marker ~ ~ ~ {Tags:["FacingMarker"]}
-        function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
+        execute facing ^5 ^ ^10 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
     # 横1
-        execute positioned ^-5 ^ ^10 run summon marker ~ ~ ~ {Tags:["FacingMarker"]}
-        function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
+        execute facing ^-5 ^ ^10 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
     # 横2
-        execute if entity @s[scores={RW.Phase=3..}] positioned ^15 ^ ^10 run summon marker ~ ~ ~ {Tags:["FacingMarker"]}
-        execute if entity @s[scores={RW.Phase=3..}] run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
+        execute if entity @s[scores={RW.Phase=3..}] facing ^15 ^ ^10 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
     # 横2
-        execute if entity @s[scores={RW.Phase=3..}] positioned ^-15 ^ ^10 run summon marker ~ ~ ~ {Tags:["FacingMarker"]}
-        execute if entity @s[scores={RW.Phase=3..}] run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
+        execute if entity @s[scores={RW.Phase=3..}] facing ^-15 ^ ^10 run function asset:mob/1004.tultaria/tick/skill/water/homing_shot/shot/summon
 
 # 演出
     playsound item.trident.riptide_3 hostile @a ~ ~ ~ 2 1.5
