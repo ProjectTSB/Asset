@@ -4,9 +4,18 @@
 #
 # @within function asset:mob/alias/46/death
 
-kill @e[type=armor_stand,tag=1A.ClockHand]
+# 削除
+    kill @e[type=armor_stand,tag=1A.ClockHand]
+    kill @e[type=item_display,tag=1A.ClockFrame]
+    kill @e[type=marker,tag=1A.SkillMarker]
 
 # ボスドロ
     data modify storage api: Argument.ID set value 837
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
+    data modify storage api: Argument.ID set value 1118
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
+# super 呼び出し
+    function asset:mob/super.death
