@@ -10,7 +10,6 @@
     scoreboard players set @s General.Mob.Tick -1
 
 # タグ付与
-    tag @s add RW.HPless50per
     tag @s add RW.Transition.Phase3
 
 # リセット

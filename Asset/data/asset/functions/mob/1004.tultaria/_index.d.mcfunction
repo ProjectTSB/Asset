@@ -32,9 +32,7 @@
 #declare tag RW.TeleportMarker
 #declare tag RW.BodyMarker
 #declare tag RW.Marker.Aim
-# ボスのHPのタグ
-#declare tag RW.HPless75per
-#declare tag RW.HPless50per
+
 # ボスの使う大技のタグ
 #declare tag RW.Transition.Phase2
 #declare tag RW.Transition.Phase2.Attack
