@@ -8,7 +8,7 @@
     # 最初は遅い
         execute if score @s General.Object.Tick matches 0..20 run tp @s ~ ~ ~ ~22.5 ~
     # 落下が近くなると速く回る
-        execute if score @s[tag=!2043.Landed] General.Object.Tick matches 21.. run tp @s ~ ~ ~ ~45 ~
+        execute if score @s General.Object.Tick matches 21.. run tp @s ~ ~ ~ ~45 ~
 
 # 落下開始
     # 落下直前、ちょっとフワっと上がる
