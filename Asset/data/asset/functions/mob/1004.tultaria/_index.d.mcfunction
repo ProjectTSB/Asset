@@ -55,9 +55,6 @@
 #declare tag RW.Skill.AimingLaser
 # 無属性
 #declare tag RW.Skill.Starfury
-# フェイズ移行攻撃
-#declare tag RW.Skill.TransitionAttack2
-#declare tag RW.Skill.TransitionAttack3
 # 雷攻撃は複数パターンあってもいいよね
 #declare tag RW.Skill.Thunder.1
 #declare tag RW.Skill.Thunder.2
@@ -74,18 +71,13 @@
 #declare tag RW.Skill.SwordRain.3
 #declare tag RW.Skill.SwordRain.4
 # ボスの飛び道具のタグ
-#declare tag RW.TargetMarker
-#declare tag RW.TargetMarkerInit
 #declare tag RW.ChainLightning.Common
-#declare tag RW.ChainLightning0
 #declare tag RW.ChainLightning1
 #declare tag RW.ChainLightning2
 #declare tag RW.ChainLightning3
 #declare tag RW.ChainLightning4
 #declare tag RW.ChainLightning5
 #declare tag RW.ChainLightning6
-#declare tag RW.ChainLightning7
-#declare tag RW.ChainLightning.Last
 # Animated animated_java
 #declare function animated_java:tultaria/summon
 #declare function animated_java:tultaria/animations/neutral_air/tween
