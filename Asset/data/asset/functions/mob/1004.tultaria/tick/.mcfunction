@@ -13,7 +13,7 @@
     scoreboard players add @s[tag=!RW.TickLock] General.Mob.Tick 1
 
 # モデルにタグ付与
-    tag @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] add RW.ModelRoot.Target
+    tag @e[type=item_display,tag=RW.ModelRoot,distance=..64,sort=nearest,limit=1] add RW.ModelRoot.Target
 
 # 最寄りのモデルのRootを自身の座標にもってくる
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] run tp @s ~ ~ ~
@@ -57,7 +57,7 @@
     execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.2 ~
 
 # リセット
-    tag @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,limit=1] remove RW.ModelRoot.Target
+    tag @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,limit=1] remove RW.ModelRoot.Target
 
 # Super!
     function asset:mob/super.tick
