@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/tick
 
-# 警告
+# ダメージエリア
     function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/damage_area
 
 # 見た目
