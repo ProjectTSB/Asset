@@ -8,13 +8,13 @@
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_right/tween {to_frame:0,duration:1}
 
 # 行動をランダムに選択
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # フェイズ1
-        scoreboard players operation $Random Temporary %= $2 Const
+    # フェイズ 1
+        execute if entity @s[scores={RW.Phase=1}] store result score $Random Temporary run random value 0..1
+    # フェイズ 2
+        execute if entity @s[scores={RW.Phase=2}] store result score $Random Temporary run random value 0..2
+    # フェイズ 3
+        execute if entity @s[scores={RW.Phase=3}] store result score $Random Temporary run random value 2..3
 
-# デバッグ用、実行する技を確定させる
-    scoreboard players set $Random Temporary 3
 
 # タグ付与
     # 1
