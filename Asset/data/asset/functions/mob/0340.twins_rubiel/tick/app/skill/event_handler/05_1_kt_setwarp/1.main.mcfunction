@@ -67,7 +67,7 @@
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 68 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^ ^ {CustomNameVisible:0b,Particle:"block air",Duration:8,Tags:["Object","9G.Temp.Target.Aec.0"]}
     execute if score @s 9G.AnimationTimer matches 73 as @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] at @s positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~1 ~
-    execute if score @s 9G.AnimationTimer matches 75 at @s positioned ^ ^1.2 ^1 facing entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] feet run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/5.2.throw_knife
+    execute if score @s 9G.AnimationTimer matches 75 at @s run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/5.2.throw_knife
 
 ## 突き
 # アニメーション再生 (長さ：55tick)

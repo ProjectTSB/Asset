@@ -10,15 +10,16 @@
 # デバッグ用強制再生
     # tag @s add 9G.Skill.Kt.Idle
     # tag @s add 9G.Skill.Sc.Idle
+    tag @s add 9G.Skill.Kt.JumpSlash
 # デバッグ用初期位置移動
     # tp @s -190 104.5 116
 
 # なにも武器を持っていない場合、装備する
-    execute if entity @s[tag=!9G.State.Weapon.Kt,tag=!9G.State.Weapon.Sc] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/3.equip
+    # execute if entity @s[tag=!9G.State.Weapon.Kt,tag=!9G.State.Weapon.Sc] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/3.equip
 
 # 待機モーション再生
-    execute if entity @s[tag=9G.State.Weapon.Kt,tag=!9G.Temp.Animated] run tag @s add 9G.Skill.Kt.Idle
-    execute if entity @s[tag=9G.State.Weapon.Sc,tag=!9G.Temp.Animated] run tag @s add 9G.Skill.Sc.Idle
+    # execute if entity @s[tag=9G.State.Weapon.Kt,tag=!9G.Temp.Animated] run tag @s add 9G.Skill.Kt.Idle
+    # execute if entity @s[tag=9G.State.Weapon.Sc,tag=!9G.Temp.Animated] run tag @s add 9G.Skill.Sc.Idle
 
 # 終了
     tag @s remove 9G.Temp.Animated
