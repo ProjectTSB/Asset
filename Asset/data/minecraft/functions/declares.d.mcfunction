@@ -314,6 +314,8 @@
     #declare loot_table lib:status_log/damage_with_icon                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/status_log/damage_with_icon.json#L1
     #declare loot_table lib:status_log/heal                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/status_log/heal.json#L1
     #declare loot_table lib:status_log/mp                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/status_log/mp.json#L1
+    #declare loot_table minecraft:blocks/chorus_flower                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/chorus_flower.json#L1
+    #declare loot_table minecraft:blocks/chorus_plant                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/chorus_plant.json#L1
     #declare loot_table minecraft:blocks/cobblestone                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/cobblestone.json#L1
     #declare loot_table minecraft:blocks/lime_shulker_box                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/lime_shulker_box.json#L1
     #declare loot_table minecraft:blocks/stone                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/loot_tables/blocks/stone.json#L1
