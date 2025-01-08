@@ -78,7 +78,7 @@
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 105 run particle electric_spark ^ ^1.2 ^1 0 0 0 0.3 10
     execute if score @s 9G.AnimationTimer matches 105 run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 2 1
-    execute if score @s 9G.AnimationTimer matches 110 facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet positioned ^ ^1 ^1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/5.2.throw_scythe
+    execute if score @s 9G.AnimationTimer matches 110 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/5.2.throw_scythe
 
 ## 斬り上げ
 # 移動

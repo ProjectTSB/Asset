@@ -12,9 +12,7 @@
     playsound entity.firework_rocket.blast hostile @a ~ ~ ~ 2 0.7
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 2 1
 
-# ミサイル(355)召喚
-    # data modify storage api: Argument.ID set value 355
-    # execute rotated ~ ~ run function api:mob/summon
+# ミサイル召喚
     execute facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
     data modify storage api: Argument.ID set value 2199
     data modify storage api: Argument.FieldOverride.Damage set value 60.0f
