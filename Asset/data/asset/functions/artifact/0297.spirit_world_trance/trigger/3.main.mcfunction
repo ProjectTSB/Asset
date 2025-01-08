@@ -12,3 +12,4 @@
 # 霊界状態になる
     data modify storage api: Argument.ID set value 206
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

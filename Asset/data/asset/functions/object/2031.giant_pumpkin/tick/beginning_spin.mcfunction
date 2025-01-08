@@ -27,7 +27,7 @@
 
 # スコアが一定値(73)まで行ったなら高速回転Tagを付与
     execute if entity @s[scores={General.Object.Tick=73}] run tag @s add 2031.HighSpeedSpinning
-    execute if entity @s[scores={General.Object.Tick=73}] run data modify storage asset:context this.Speed set value 1
+    execute if entity @s[scores={General.Object.Tick=73}] run data modify storage asset:context this.MovePerStep set value 1
 
 # 演出
     #execute if entity @s[scores={General.Object.Tick=0}] run playsound minecraft:entity.wither.shoot hostile @a[distance=..20] ~ ~ ~ 0.15 1

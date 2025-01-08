@@ -2055,7 +2055,7 @@
                     "type": "file",
                     "rel": "data/asset/functions/mob/alias/%id%/remove.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/init",
+                        "#> asset:mob/alias/%id%/remove",
                         "#",
                         "# Remove処理のエイリアス",
                         "#",

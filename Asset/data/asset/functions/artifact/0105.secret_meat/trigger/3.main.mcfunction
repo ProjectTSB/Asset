@@ -19,3 +19,4 @@
 # 自身に謎肉バフ(ID:203)を付与
     data modify storage api: Argument.ID set value 203
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
