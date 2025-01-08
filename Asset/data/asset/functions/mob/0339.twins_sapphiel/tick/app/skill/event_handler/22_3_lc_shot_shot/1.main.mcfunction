@@ -12,7 +12,7 @@
     execute if score @s 9F.AnimationTimer matches 1 run playsound entity.phantom.flap hostile @a ~ ~ ~ 2 1
 
 # 射撃
-    execute if score @s 9F.AnimationTimer matches 2 positioned ^ ^1 ^1 facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/5.1.shot
+    execute if score @s 9F.AnimationTimer matches 2 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/5.1.shot
 
 # 移動
     execute if score @s 9F.AnimationTimer matches 27 run function asset:mob/0339.twins_sapphiel/app/general/6.teleport_to_land

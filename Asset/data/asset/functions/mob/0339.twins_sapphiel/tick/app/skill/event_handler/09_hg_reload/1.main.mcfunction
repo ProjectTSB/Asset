@@ -28,5 +28,9 @@
     execute if score @s 9F.AnimationTimer matches 1 run tag @s add 9F.State.IsDamage
     execute if score @s 9F.AnimationTimer matches 56 run tag @s remove 9F.State.IsDamage
 
+# リロード中
+    execute if score @s 9F.AnimationTimer matches 1 run tag @s add 9F.State.IsReload
+    execute if score @s 9F.AnimationTimer matches 56 run tag @s remove 9F.State.IsReload
+
 # 終了
     execute if score @s 9F.AnimationTimer matches 56.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/09_hg_reload/2.end

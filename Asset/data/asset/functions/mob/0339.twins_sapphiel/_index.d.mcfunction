@@ -71,6 +71,7 @@
     # 状態
         #declare tag 9F.State.Await Rootからの指示待ち
         #declare tag 9F.State.IsGuard ガード受け付け
+        #declare tag 9F.State.IsReload リロード中
         #declare tag 9F.State.IsDamage 怯み受け付け
         #declare tag 9F.State.Weapon.Hg ハンドガン所持
         #declare tag 9F.State.Weapon.Sg ショットガン所持

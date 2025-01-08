@@ -4,6 +4,13 @@
 #
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/1.main
 
+# 攻撃位置表示
+    data modify storage api: Argument.ID set value 2063
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Color set value 54783
+    data modify storage api: Argument.FieldOverride.Scale set value [17f,17f,0.05f]
+    data modify storage api: Argument.FieldOverride.Tick set value 33
+    execute at @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] positioned ~ ~ ~ run function api:object/summon
 
 # 着地点
     data modify storage asset:temp 9G.Pos set from entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0,sort=nearest,limit=1] Pos

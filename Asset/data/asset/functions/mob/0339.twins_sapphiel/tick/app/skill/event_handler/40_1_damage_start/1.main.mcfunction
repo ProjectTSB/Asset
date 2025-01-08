@@ -18,5 +18,8 @@
     execute if score @s 9F.AnimationTimer matches 19..21 at @s positioned ^ ^ ^-0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 1..21 at @s positioned ^ ^-0.1 ^ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
 
+# 状態更新
+    execute if score @s 9F.AnimationTimer matches 1 run tag @s remove 9F.State.IsReload
+
 # 終了
     execute if score @s 9F.AnimationTimer matches 21.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_1_damage_start/2.end
