@@ -12,8 +12,8 @@
     execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
 
 # カベにぶつかった際の処理
-    execute at @s unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-    execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute at @s unless block ^ ^ ^0.5 #lib:no_collision run tp @s ~ ~ ~ ~45 ~-45
+    execute at @s unless block ^ ^ ^0.2 #lib:no_collision run tp @s ~ ~ ~ ~45 ~-45
 
 # 範囲内ならホーミングじみた移動
     execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.025 ~ ~
@@ -27,4 +27,3 @@
 
 # リセット
     scoreboard players reset $B3.Temp Temporary
-    scoreboard players reset $B3.Temp B3.UUID

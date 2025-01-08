@@ -12,4 +12,4 @@
     function api:object/summon
 
 # 時間リセット
-    execute store result score @s B6.Tick run random value 0..40
+    execute store result score @s General.Mob.Tick run random value 0..40

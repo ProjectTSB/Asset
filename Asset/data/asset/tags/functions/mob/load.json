@@ -2,10 +2,6 @@
     "values": [
         "asset:mob/0402.drown_spellbook/load",
         "asset:mob/0401.darkness_spellbook/load",
-        "asset:mob/0400.explosion_spellbook/load",
-        "asset:mob/0399.void_spellbook/load",
-        "asset:mob/0398.crystal_healer/load",
-        "asset:mob/0397.crystal_turret/load",
         "asset:mob/1004.tultaria/load",
         "asset:mob/0341.louvert/load",
         "asset:mob/0421.silver_turret/load",

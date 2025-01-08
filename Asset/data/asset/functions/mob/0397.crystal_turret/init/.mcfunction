@@ -12,6 +12,3 @@
 
 # タグ外し
     execute on passengers run tag @s remove B1.Temp
-
-# スコア
-    scoreboard players set @s B1.Tick 0
