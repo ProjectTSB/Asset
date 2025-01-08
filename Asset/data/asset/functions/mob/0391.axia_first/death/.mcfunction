@@ -8,10 +8,8 @@
 # @private
     #declare tag AU.AxiaDeath
 
-# マーカー削除
-    kill @e[tag=AV.Marker.Movement]
 # ディスプレイ削除
-    kill @e[tag=AV.AnnounceLine,distance=..100]
+    kill @e[type=item_display,tag=AV.AnnounceLine,distance=..200]
 
 # スケジュール起動
     tag @e[type=marker,tag=AV.Marker.SummonPoint,distance=..200] add AV.Death

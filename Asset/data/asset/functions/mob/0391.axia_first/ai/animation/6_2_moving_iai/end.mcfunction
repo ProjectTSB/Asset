@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/
 
-# マーカーキル
-    kill @e[tag=AV.Marker.Movement]
-
 # スコアをリセットする
     scoreboard players reset @s AV.AnimationNum
     scoreboard players set @s AV.AnimationTick 0

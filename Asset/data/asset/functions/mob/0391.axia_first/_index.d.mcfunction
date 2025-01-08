@@ -4,7 +4,6 @@
 #> tag
 # @within function asset:mob/0391.axia_first/**
     #declare tag AV.Marker.SummonPoint
-    #declare tag AV.Marker.Movement
     #declare tag AV.ModelRoot
     #declare tag AV.Root.This
     #declare tag AV.Temp.Target

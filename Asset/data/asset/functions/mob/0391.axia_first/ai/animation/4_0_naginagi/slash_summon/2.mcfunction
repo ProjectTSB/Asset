@@ -12,4 +12,4 @@
     execute positioned ^-0.5 ^1 ^1.5 run function api:object/summon
 
 # ディスプレイの位置調整
-    execute positioned ^-0.5 ^1 ^1.5 as @e[tag=2001.CustomEffect,distance=..0.1] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] feet rotated ~-100 0 positioned as @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] positioned ^ ^1.4 ^1.581 run tp @s ^ ^ ^ ~ ~
+    execute positioned ^-0.5 ^1 ^1.5 as @e[type=item_display,tag=2001.CustomEffect,distance=..0.1] at @s facing entity @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] feet rotated ~-100 0 positioned as @e[type=wither_skeleton,tag=this,distance=..64,sort=nearest,limit=1] positioned ^ ^1.4 ^1.581 run tp @s ^ ^ ^ ~ ~

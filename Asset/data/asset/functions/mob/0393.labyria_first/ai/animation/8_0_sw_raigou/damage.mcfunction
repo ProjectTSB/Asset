@@ -49,18 +49,18 @@
 
 # ダメージ設定
     # ダメージ
-        data modify storage lib: Argument.Damage set value 40.0f
+        data modify storage api: Argument.Damage set value 40.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # 死亡ログ
-        data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの斬撃によって切り裂かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの斬撃によって切り裂かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     # ダメージを与える
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 斬撃音
     function asset:mob/0393.labyria_first/ai/general/6.slash_sound

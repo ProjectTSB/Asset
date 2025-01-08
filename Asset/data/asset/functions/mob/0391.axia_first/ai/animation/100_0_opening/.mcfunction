@@ -32,7 +32,7 @@
 
 # クリティカルヒット 配置
     execute if score @s AV.AnimationTick matches 1 run function asset:mob/0391.axia_first/ai/projectile/critical/0.summon
-    execute if score @s AV.AnimationTick matches 1 run tag @e[tag=2016.Critical,distance=..64] add 2016.Opening
+    execute if score @s AV.AnimationTick matches 1 run tag @e[type=marker,tag=2016.Critical,distance=..64] add 2016.Opening
 
 # 衝撃波 配置
     execute if score @s AV.AnimationTick matches 81 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/1

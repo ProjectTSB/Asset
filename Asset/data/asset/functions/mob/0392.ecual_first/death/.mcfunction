@@ -9,8 +9,8 @@
     #declare tag AU.EcualDeath
 
 # ディスプレイ削除
-    kill @e[tag=AW.AnnounceLine]
-    kill @e[tag=AW.AnnounceLineEven]
+    kill @e[type=item_display,tag=AW.AnnounceLine,distance=..200]
+    kill @e[type=item_display,tag=AW.AnnounceLineEven,distance=..200]
 
 # スケジュール起動
     tag @e[type=marker,tag=AW.Marker.SummonPoint,distance=..200] add AW.Death

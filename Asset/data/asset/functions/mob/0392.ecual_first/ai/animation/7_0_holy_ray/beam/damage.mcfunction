@@ -6,18 +6,18 @@
 
 # ダメージ設定
     # ダメージ
-        data modify storage lib: Argument.Damage set value 20.0f
+        data modify storage api: Argument.Damage set value 35.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
     # 死亡ログ
-        data modify storage lib: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの光線により身を焼かれて息絶えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの光線により身を焼かれて息絶えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     # ダメージを与える
-        function lib:damage/modifier
-        execute as @a[tag=AW.Temp.Target,distance=..5] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=AW.Temp.Target,distance=..5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @a[tag=AW.Temp.Target,distance=..5] remove AW.Temp.Target
