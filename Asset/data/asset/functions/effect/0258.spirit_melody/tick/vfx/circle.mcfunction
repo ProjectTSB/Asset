@@ -1,4 +1,4 @@
-#> asset:effect/0258.spirit_melody/tick/vfx
+#> asset:effect/0258.spirit_melody/tick/vfx/circle
 #
 #
 #
