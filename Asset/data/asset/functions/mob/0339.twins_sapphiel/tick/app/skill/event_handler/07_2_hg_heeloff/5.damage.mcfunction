@@ -6,8 +6,8 @@
 #    function asset:mob/0339.twins_sapphiel/**
 
 # ヒット判定
-    execute positioned ^ ^ ^ run tag @a[distance=..1.4] add 9F.Temp.Target.Attack
-    execute positioned ^ ^ ^2.5 run tag @a[distance=..1.4] add 9F.Temp.Target.Attack
+    execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.4] add 9F.Temp.Target.Attack
+    execute positioned ^ ^ ^2.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.4] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

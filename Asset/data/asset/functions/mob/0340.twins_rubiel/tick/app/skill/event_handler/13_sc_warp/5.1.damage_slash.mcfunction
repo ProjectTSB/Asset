@@ -6,7 +6,7 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/1.main
 
 # ヒット判定
-    execute positioned ^ ^ ^ run tag @a[distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

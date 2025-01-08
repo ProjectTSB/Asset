@@ -6,7 +6,7 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/1.main
 
 # ヒット判定
-    tag @a[distance=..2.3] add 9G.Temp.Target.Attack
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2.3] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

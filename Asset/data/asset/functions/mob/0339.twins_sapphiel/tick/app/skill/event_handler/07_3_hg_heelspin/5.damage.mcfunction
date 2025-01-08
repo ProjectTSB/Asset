@@ -6,7 +6,7 @@
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_3_hg_heelspin/1.main
 
 # ヒット判定
-    tag @a[distance=..2.8] add 9F.Temp.Target.Attack
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2.8] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

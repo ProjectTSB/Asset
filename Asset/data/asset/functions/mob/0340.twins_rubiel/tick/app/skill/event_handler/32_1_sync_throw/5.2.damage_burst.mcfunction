@@ -6,8 +6,8 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/1.main
 
 # 演出兼ヒット判定
-    execute positioned ^ ^2.5 ^ run tag @a[distance=..3] add 9G.Temp.Target.Attack
-    execute positioned ^ ^5 ^ run tag @a[distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^2.5 ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^5 ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
     execute positioned ^ ^1 ^ rotated ~ ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.5.particle_line_burst
     execute positioned ^ ^1 ^ rotated ~120 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.5.particle_line_burst
     execute positioned ^ ^1 ^ rotated ~240 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.5.particle_line_burst

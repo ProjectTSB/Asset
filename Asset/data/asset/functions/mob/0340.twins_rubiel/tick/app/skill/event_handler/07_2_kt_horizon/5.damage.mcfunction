@@ -6,9 +6,9 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_2_kt_horizon/1.main
 
 # ヒット判定
-    execute positioned ^ ^ ^ run tag @a[distance=..2] add 9G.Temp.Target.Attack
-    execute positioned ^-2 ^ ^ run tag @a[distance=..2] add 9G.Temp.Target.Attack
-    execute positioned ^2 ^ ^ run tag @a[distance=..2] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9G.Temp.Target.Attack
+    execute positioned ^-2 ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9G.Temp.Target.Attack
+    execute positioned ^2 ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

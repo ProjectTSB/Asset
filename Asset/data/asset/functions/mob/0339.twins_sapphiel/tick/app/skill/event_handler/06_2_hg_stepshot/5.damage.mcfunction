@@ -6,7 +6,7 @@
 #    function asset:mob/0339.twins_sapphiel/**
 
 # ヒット判定
-    tag @a[distance=..2] add 9F.Temp.Target.Attack
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     # 与えるダメージ = 20

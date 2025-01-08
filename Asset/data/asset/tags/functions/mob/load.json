@@ -2,8 +2,6 @@
     "values": [
         "asset:mob/0355.sapphiel_missile/0.load",
         "asset:mob/0354.rubiel_scythe/0.load",
-        "asset:mob/0353.rubiel_knife/0.load",
-        "asset:mob/0352.down_dummy/0.load",
         "asset:mob/0340.twins_rubiel/0.load",
         "asset:mob/0339.twins_sapphiel/0.load",
         "asset:mob/0338.corundum_twins/0.load",
