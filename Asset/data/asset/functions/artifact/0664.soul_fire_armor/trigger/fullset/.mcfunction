@@ -16,19 +16,19 @@
     playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 0.6 1 0
     playsound ogg:mob.vex.idle1 player @a ~ ~ ~ 1 0 0
 
-# 火攻撃+10%
+# 火攻撃
     data modify storage api: Argument.UUID set value [I;1,1,664,0]
     data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/fire/add
 
-# MP回復量+8%
+# MP回復量
     data modify storage api: Argument.UUID set value [I;1,1,664,0]
-    data modify storage api: Argument.Amount set value 0.08
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/mp_regen/add
 
-# 最大体力-10%
+# 最大体力
     data modify storage api: Argument.UUID set value [I;1,1,664,0]
     data modify storage api: Argument.Amount set value -0.1
     data modify storage api: Argument.Operation set value "multiply_base"
