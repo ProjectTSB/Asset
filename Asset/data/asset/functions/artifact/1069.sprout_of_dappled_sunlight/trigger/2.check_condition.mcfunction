@@ -13,7 +13,7 @@
 # CanUsedなら使用回数スコアを加算
     execute if entity @s[tag=CanUsed] run scoreboard players add @s TP.UseCount 1
 
-# スコアが2以下ならCanUsedを削除
+# スコアが5以下ならCanUsedを削除
     execute if entity @s[scores={TP.UseCount=..5}] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
