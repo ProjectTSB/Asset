@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソーンアーマー","color":"#1D5923"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+5% ","color":"aqua"},{"text":"雷耐性+5%","color":"yellow"}]','[{"text":"荊の鎧を全て纒いし時、血吸いの荊が目を覚まし、","color":"#457341"}]','[{"text":"触れた者を突き刺し回復する。","color":"#457341"}]','[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+4% ","color":"aqua"},{"text":"雷耐性+4%","color":"yellow"}]','[{"text":"荊の鎧を全て纒いし時、血吸いの荊が目を覚まし、","color":"#457341"}]','[{"text":"触れた者を突き刺し回復する。","color":"#457341"}]','[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
