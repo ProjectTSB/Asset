@@ -5,7 +5,9 @@
 # @within function asset:artifact/0976.brave_sword/trigger/2.check_condition
 
 # 先にLatestUseTickを取っておく
-    execute store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
+# 使用スロットをチェックし、メインハンドかオフハンドかで分岐
+    execute if data storage asset:context Items{AutoSlot:"mainhand"} store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
+    execute if data storage asset:context Items{AutoSlot:"offhand"} store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.offhand.tag.TSB.LatestUseTick
 
 # 使用時に前回の使用時のTickとの差が開いていた場合、コンボカウントをリセットする
     execute unless score @s R4.Combo matches -2147483648..2147483647 run scoreboard players set @s R4.Combo 0
