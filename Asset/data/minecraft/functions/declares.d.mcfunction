@@ -831,8 +831,8 @@
 #   asset_manager:artifact/**
 #   asset:artifact/*/register
 #   asset:artifact/*/give/2.give
-#   asset:artifact/*/trigger/2.check_condition
-#   asset:artifact/*/trigger/3.main
+#   asset:artifact/*/*/2.check_condition
+#   asset:artifact/*/*/3.main
 #   asset:artifact/common/**
 #declare storage asset:artifact from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L12
 
@@ -932,23 +932,23 @@
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
 #   asset_manager:mob/triggers/hurt/foreach
 #   asset:mob/*/hurt/**
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L56
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L69
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L56
 #declare tag Attacker
 
 #> declare
 # @within
-#   asset_manager:artifact/triggers/**
-#   asset:artifact/**
 #   asset_manager:mob/triggers/attack/add_tag_each_victim
 #   asset_manager:mob/triggers/attack/foreach
 #   asset:mob/*/attack/**
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
+#   asset_manager:artifact/triggers/**
+#   asset:artifact/**
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L63
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L57
 #declare tag Victim
 
 #> declare
