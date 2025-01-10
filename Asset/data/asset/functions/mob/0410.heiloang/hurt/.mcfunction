@@ -7,7 +7,10 @@
 # 継承元の処理実行
     function asset:mob/super.hurt
 
-# TODO：ダメージ時処理
+# 効果音
+    playsound entity.generic.hurt hostile @a ~ ~ ~ 1 1
+
+# フェーズ処理
     # 残HP割合取得
         function api:mob/get_health_percent
         execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
