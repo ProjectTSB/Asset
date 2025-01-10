@@ -11,7 +11,7 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1.2
     execute positioned ~ ~1.5 ~ rotated ~-20 ~25 positioned ^ ^ ^1.5 run function asset:mob/0327.eclael/tick/app.skill_events/16_latter_momiji/5.1.particle_slash_0
     execute positioned ~ ~1 ~ rotated ~20 ~15 positioned ^ ^ ^1.5 run function asset:mob/0327.eclael/tick/app.skill_events/16_latter_momiji/5.1.particle_slash_0
-    
+
 # ターゲット取得
     execute positioned ^-4 ^-2 ^9 run tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add 93.Temp.AttackTarget
     execute positioned ^-2 ^-2 ^9 run tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add 93.Temp.AttackTarget
@@ -26,7 +26,7 @@
 
 # TODO：与えるダメージの調整
 # ダメージ
-    # 与えるダメージ = 20
+    # ダメージ量
         data modify storage lib: Argument.Damage set value 55f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Magic"
