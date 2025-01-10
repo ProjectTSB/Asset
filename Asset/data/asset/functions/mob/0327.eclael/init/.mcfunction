@@ -2,7 +2,7 @@
 # @within asset:mob/alias/327/init
 
 # 多重召喚対策
-    execute if entity @e[type=wither_skeleton,tag=93.EndInit] run return run function asset:mob/0327.eclael/init/remove
+    execute if entity @e[type=wither_skeleton,tag=93.EndInit] run return run function asset:mob/0327.eclael/remove/
 
 # 継承元の処理実行
     function asset:mob/super.init

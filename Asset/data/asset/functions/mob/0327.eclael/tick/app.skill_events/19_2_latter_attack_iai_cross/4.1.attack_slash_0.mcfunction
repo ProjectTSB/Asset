@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・居合斬り
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/19_2_latter_attack_iai_cross/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/19_2_latter_attack_iai_cross/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

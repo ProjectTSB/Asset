@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 前半・連続斬り 居合斬り攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/1.main
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/1.main
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

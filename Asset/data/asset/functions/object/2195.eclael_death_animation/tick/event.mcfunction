@@ -49,8 +49,8 @@
     execute if score @s General.Object.Tick matches 90 positioned ~ ~3.8 ~ run function asset:object/2195.eclael_death_animation/tick/particle/4
     execute if score @s General.Object.Tick matches 91 positioned ~ ~3.8 ~ run function asset:object/2195.eclael_death_animation/tick/particle/5
 
-# ボスドロップを実装する場合，以下で実行
-    # execute if score @s General.Object.Tick matches 86 positioned ~ ~1.8 ~ run ...
+# ボスドロップ
+    execute if score @s General.Object.Tick matches 86 positioned ~ ~ ~ run function asset:object/2195.eclael_death_animation/tick/drop
 
 # 終了
     execute if score @s General.Object.Tick matches 141.. run function animated_java:eclael/remove/this

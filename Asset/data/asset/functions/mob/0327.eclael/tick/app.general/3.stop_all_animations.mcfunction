@@ -2,7 +2,9 @@
 #
 # 汎用処理 全てのアニメーション再生停止
 #
-# @within function asset:mob/0327.eclael/tick/**
+# @within
+#   function asset:mob/0327.eclael/tick/**
+#   function asset:mob/0327.eclael/hurt/**
 
 # タイマーリセット
     scoreboard players set @s 93.AnimationTimer -1

@@ -1,8 +1,10 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.3.attack_slash_2
+#> asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.4.attack_slash_3
 #
 # アニメーションのイベントハンドラ 後半・鞭コンボ 1段目攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

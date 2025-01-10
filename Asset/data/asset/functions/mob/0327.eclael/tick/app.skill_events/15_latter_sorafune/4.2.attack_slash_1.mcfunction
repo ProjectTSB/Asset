@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・宙船
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/15_latter_sorafune/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/15_latter_sorafune/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

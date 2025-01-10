@@ -2,9 +2,10 @@
 #
 # アニメーションのイベントハンドラ 前半・居合斬り 2段目攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/1.main
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/1.main
+#   function asset:mob/0327.eclael/debug_damage
 
-# TODO：演出を練る
 # 演出
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.2

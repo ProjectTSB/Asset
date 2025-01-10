@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・鞭コンボ 2段目攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/4.5.attack_thunder_main
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/4.5.attack_thunder_main
+#   function asset:mob/0327.eclael/debug_damage
 
 # 演出
     particle flash ~ ~0.5 ~ 0 0 0 0 1

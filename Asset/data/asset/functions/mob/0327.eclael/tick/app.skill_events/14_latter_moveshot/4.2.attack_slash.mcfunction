@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・移動射撃 斬撃攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/14_latter_moveshot/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/14_latter_moveshot/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

@@ -2,7 +2,9 @@
 #
 # 汎用処理 落雷による追撃
 #
-# @within function asset:mob/0327.eclael/tick/**
+# @within
+#   function asset:mob/0327.eclael/tick/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # 演出
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 1

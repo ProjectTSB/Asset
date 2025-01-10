@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・鞭コンボ 2段目攻撃判定
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

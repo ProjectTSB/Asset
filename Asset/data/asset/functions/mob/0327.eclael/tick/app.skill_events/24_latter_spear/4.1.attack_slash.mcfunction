@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・突き
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

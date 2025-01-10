@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 前半・射撃 発射
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/4.4.1.attack_1
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/4.4.1.attack_1
+#   function asset:mob/0327.eclael/debug_damage
 
 # 演出
     particle flash ~ ~0.5 ~ 0 0 0 0 1

@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 前半・射撃 発射
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/1.main
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/1.main
+#   function asset:mob/0327.eclael/debug_damage
 
 # 演出
     playsound entity.arrow.hit hostile @a ~ ~ ~ 1 1

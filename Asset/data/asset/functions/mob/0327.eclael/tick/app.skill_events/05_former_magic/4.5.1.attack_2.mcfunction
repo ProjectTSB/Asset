@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 前半・射撃 発射
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/1.main
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/1.main
+#   function asset:mob/0327.eclael/debug_damage
 
 # 演出
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 2 1

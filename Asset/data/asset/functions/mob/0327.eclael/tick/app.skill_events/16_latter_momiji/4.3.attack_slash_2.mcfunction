@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・宙船
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/16_latter_momiji/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/16_latter_momiji/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

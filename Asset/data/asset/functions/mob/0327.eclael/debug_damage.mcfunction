@@ -1,3 +1,4 @@
+#> asset:mob/0327.eclael/debug_damage
 # 各攻撃のダメージ処理をまとめたもの（バランス調整用）
 # 実装完了後に削除する．
 
@@ -95,7 +96,7 @@
 # 2
     function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.2.attack_slash_1
 # 3
-    function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.1.attack_slash_0 
+    function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.1.attack_slash_0
 # 4
     function asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/4.3.attack_slash_2
 # 5

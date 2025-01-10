@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・回転斬り 追撃部分
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/**
+#   function asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出
