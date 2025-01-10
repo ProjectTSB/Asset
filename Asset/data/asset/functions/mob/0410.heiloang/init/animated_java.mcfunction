@@ -14,4 +14,4 @@
 
 # テスト
     # 待機モーション再生
-        execute as @e[type=item_display,tag=BE.ModelRoot] at @s run function animated_java:heiloang_aj/animations/1_idle/tween {duration:1, to_frame: 1}
+        # execute as @e[type=item_display,tag=BE.ModelRoot] at @s run function animated_java:heiloang_aj/animations/1_idle/tween {duration:1, to_frame: 1}

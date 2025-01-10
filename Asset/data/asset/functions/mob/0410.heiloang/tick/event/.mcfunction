@@ -4,6 +4,9 @@
 #
 # @within asset:mob/0410.heiloang/tick/
 
+# 暫定的登場
+    execute if entity @s[tag=BE.Skill.Start] run function asset:mob/0410.heiloang/tick/event/start_temp/
+
 # ヘルファイア
     execute if entity @s[tag=BE.Skill.Hellfire] run function asset:mob/0410.heiloang/tick/event/hellfire/
 

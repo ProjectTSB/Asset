@@ -82,6 +82,7 @@
     #declare tag BE.CenterPosition 中心点
     #
     # - スキル
+    #declare tag BE.Skill.Start 登場
     #declare tag BE.Skill.Hellfire ヘルファイア
     #declare tag BE.Skill.Adamant アダマントスパイク
     #declare tag BE.Skill.Blitz リヒトブリッツェン
