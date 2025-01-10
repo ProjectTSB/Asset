@@ -25,8 +25,4 @@
     execute if score @s General.Mob.Tick matches 120 at @s positioned ~ ~1.5 ~ facing entity @p[tag=!PlayerShouldInvulnerable,distance=..64] eyes run function asset:mob/0402.drown_spellbook/ai/bullet/0.summon
 
 # ランダムテレポート
-    execute store result score $B6.Temp General.Mob.Tick run random value 1..150
-    execute if score $B6.Temp General.Mob.Tick matches 1 run function asset:mob/0402.drown_spellbook/tick/teleport
-
-# リセット
-    scoreboard players reset $B6.Temp General.Mob.Tick
+    execute if predicate lib:random_pass_per/1 run function asset:mob/0402.drown_spellbook/tick/teleport

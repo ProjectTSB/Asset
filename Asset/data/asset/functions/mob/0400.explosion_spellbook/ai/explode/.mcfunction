@@ -28,4 +28,4 @@
         function lib:damage/reset
 
 # キル
-    kill @s
+    function api:mob/remove
