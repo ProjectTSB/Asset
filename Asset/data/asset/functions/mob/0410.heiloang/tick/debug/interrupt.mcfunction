@@ -12,5 +12,5 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Blitz
+    tag @s add BE.Skill.Ehd
     scoreboard players set @s BE.Pb.Count 3

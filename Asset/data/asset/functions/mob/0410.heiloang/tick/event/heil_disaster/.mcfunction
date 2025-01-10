@@ -40,7 +40,7 @@
 # なぎはらい火炎放射
     # アニメーション再生
         execute if score @s BE.EventTimer matches 215 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/6_sweep_breath
-    # ジャンプ増加
+    # ギミック用の跳躍力増加付与
         execute if score @s BE.EventTimer matches 215 run effect give @a[distance=..80] jump_boost 9 5
     # 予告
         execute if score @s BE.EventTimer matches 219 at @e[type=marker,tag=BE.CenterPosition] rotated ~-90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction

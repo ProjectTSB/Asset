@@ -18,7 +18,7 @@
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.5
     particle explosion ~ ~1 ~ 3 1 3 0.1 10 force
 
-# 浮遊エフェクト付与
+# 回避ギミック用跳躍エフェクト付与
     effect give @a[distance=..30] jump_boost 9 5
 
 # 竜巻演出開始
