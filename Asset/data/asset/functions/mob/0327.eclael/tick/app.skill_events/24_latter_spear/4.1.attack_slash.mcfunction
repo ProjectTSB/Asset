@@ -18,20 +18,20 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 50f
+        data modify storage api: Argument.Damage set value 50f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象にダメージ
     # ある程度高く飛んでいるプレイヤーにはダメージを与えない
         execute as @a[tag=93.Temp.AttackTarget] at @s unless block ~ ~-1.9 ~ #lib:no_collision_without_fluid if block ~ ~-0.9 ~ #lib:no_collision_without_fluid run tag @s add 93.Temp.ScheduleTargetPlayer
     execute if entity @a[tag=93.Temp.AttackTarget,tag=!93.Temp.ScheduleTargetPlayer] run tag @s add 93.Temp.AttackHit
-    execute as @a[tag=93.Temp.AttackTarget,tag=!93.Temp.ScheduleTargetPlayer] run function lib:damage/
+    execute as @a[tag=93.Temp.AttackTarget,tag=!93.Temp.ScheduleTargetPlayer] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @a remove 93.Temp.AttackTarget
 
 # ジャンプして回避したプレイヤーがいる場合，着地検知用のscheduleを実行

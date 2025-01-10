@@ -14,14 +14,14 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 40f
+        data modify storage api: Argument.Damage set value 40f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute positioned ~ ~-2 ~ as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function lib:damage/
+    execute positioned ~ ~-2 ~ as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

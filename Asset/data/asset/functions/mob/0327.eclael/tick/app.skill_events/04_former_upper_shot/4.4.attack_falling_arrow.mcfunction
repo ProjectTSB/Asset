@@ -86,17 +86,17 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 30f
+        data modify storage api: Argument.Damage set value 30f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute positioned ^ ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function lib:damage/
+    execute positioned ^ ^ ^ as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # エクレールに当たった場合
     execute if entity @e[type=wither_skeleton,tag=93.Temp.Me,distance=..2] as @e[type=wither_skeleton,tag=93.Temp.Me,distance=..2] run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/6.start_damage_animation
