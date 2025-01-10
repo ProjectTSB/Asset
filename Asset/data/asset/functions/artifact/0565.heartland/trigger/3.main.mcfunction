@@ -17,3 +17,6 @@
 
 # 移動速度
     attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-023500000003 "565.Speed" 0.3 multiply_base
+
+# フルセット処理
+    execute if data storage asset:context id.all{head:562,chest:563,legs:564,feet:565} run function asset:artifact/0563.heartland/trigger/fullset/equip/

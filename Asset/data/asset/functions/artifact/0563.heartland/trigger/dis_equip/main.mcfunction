@@ -1,11 +1,11 @@
-#> asset:artifact/0562.heartland/trigger/dis_equip/main
+#> asset:artifact/0563.heartland/trigger/dis_equip/main
 #
 # 装備を外した時のメイン処理
 #
-# @within function asset:artifact/0562.heartland/trigger/dis_equip/
+# @within function asset:artifact/0563.heartland/trigger/dis_equip/
 
 # 最大体力
-    data modify storage api: Argument.UUID set value [I;1,1,562,6]
+    data modify storage api: Argument.UUID set value [I;1,1,563,5]
     function api:modifier/max_health/remove
 
 # フルセット処理
