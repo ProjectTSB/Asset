@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:mob/0393.labyria_first/load",
+        "asset:mob/0392.ecual_first/load",
+        "asset:mob/0391.axia_first/load",
+        "asset:mob/0390.triple_rabbits/load",
         "asset:mob/1004.tultaria/load",
         "asset:mob/0341.louvert/load",
         "asset:mob/0421.silver_turret/load",
