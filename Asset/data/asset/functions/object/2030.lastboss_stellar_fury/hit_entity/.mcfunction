@@ -13,7 +13,7 @@
         execute if entity @s[tag=2030.Fire] run data modify storage api: Argument.ElementType set value "Fire"
         execute if entity @s[tag=2030.Water] run data modify storage api: Argument.ElementType set value "Water"
         execute if entity @s[tag=2030.Thunder] run data modify storage api: Argument.ElementType set value "Thunder"
-        
+
 # 補正functionを実行
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual

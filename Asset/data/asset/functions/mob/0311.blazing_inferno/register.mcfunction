@@ -23,15 +23,15 @@
     data modify storage asset:mob KnockBackResist set value 1.0d
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 1
+        data modify storage asset:mob Resist.Physical set value 1.0f
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 1
+        data modify storage asset:mob Resist.Magic set value 1.0f
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.5
+        data modify storage asset:mob Resist.Fire set value 0.7f
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 1
+        data modify storage asset:mob Resist.Water set value 1.4f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 1
+        data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
 # スキルのリスト。
     data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4]
