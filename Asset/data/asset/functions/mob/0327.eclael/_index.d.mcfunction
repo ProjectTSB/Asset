@@ -92,6 +92,8 @@
             #declare function animated_java:eclael/variants/blink/apply
             #declare function animated_java:eclael/variants/akubi/apply
             #declare function animated_java:eclael/variants/wink/apply
+            #declare function animated_java:eclael/animations/12_2_latter_warp_slash_0/resume
+            #declare function animated_java:eclael/animations/12_3_latter_warp_slash_1/resume
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
