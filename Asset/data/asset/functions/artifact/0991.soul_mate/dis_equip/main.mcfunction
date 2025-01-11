@@ -17,8 +17,6 @@
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "None"
-    # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か
-        data modify storage api: Argument.BypassResist set value true
     # 補正を無視
         data modify storage api: Argument.FixedDamage set value true
     # キルログ
@@ -38,5 +36,4 @@
     tellraw @a[tag=RJ.SoulMate] [{"selector":"@s","color":"dark_red"},{"text":"がソウルメイトを脱退しました。","color":"dark_red"}]
 
 # タグ付与
-
     tag @s remove RJ.SoulMate
