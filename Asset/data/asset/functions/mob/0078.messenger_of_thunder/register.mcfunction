@@ -42,7 +42,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 25000
+    data modify storage asset:mob Health set value 110000
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
@@ -52,25 +52,25 @@
 # 移動速度 (double) (オプション)
     data modify storage asset:mob Speed set value 0.4
 # 索敵範囲 (double) (オプション)
-    data modify storage asset:mob FollowRange set value 30
+    data modify storage asset:mob FollowRange set value 64
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 0.875
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 1
+        data modify storage asset:mob Resist.Magic set value 1.2
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0
+        data modify storage asset:mob Resist.Thunder set value 0.7
 
 # フィールド
 # 各スキルのダメージ設定
     data modify storage asset:mob Field.Damage.Vanilla set value {Normal:18.0f,HPLess50Per:25.0f}
     data modify storage asset:mob Field.Damage.Thunder set value 20.0f
-    data modify storage asset:mob Field.Damage.Return set value {Normal:16.0f,Hard:22.5f}
+    data modify storage asset:mob Field.Damage.Return set value {Normal:20.0f,Hard:25.0}
     data modify storage asset:mob Field.Damage.Curtain set value {Normal:15.0f,Hard:18.0f}
-    data modify storage asset:mob Field.Damage.Cross set value 25.0f
+    data modify storage asset:mob Field.Damage.Cross set value 22.0f
