@@ -42,7 +42,7 @@
 
 # リセット
     scoreboard players reset $OwnerID Temporary
-    tag @a[tag=1059.OwnerPlayer,distance=..80] add 1059.OwnerPlayer
+    tag @a[tag=1059.OwnerPlayer,distance=..80] remove 1059.OwnerPlayer
 
 # 離れ過ぎたら消える
     execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run kill @s
