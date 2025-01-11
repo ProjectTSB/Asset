@@ -23,7 +23,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 255
+    data modify storage asset:effect MaxStack set value 256
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
