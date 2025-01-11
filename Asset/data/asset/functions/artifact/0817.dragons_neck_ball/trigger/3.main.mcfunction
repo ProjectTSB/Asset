@@ -30,5 +30,5 @@
     function api:modifier/fall_damage/add
 
 # 音
-    playsound ogg:ambient.nether.crimson_forest.shine3 master @a ~ ~ ~ 1 1
-    playsound ogg:ambient.nether.crimson_forest.shine1 master @a ~ ~ ~ 1 2
+    playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 1 1
+    playsound ogg:ambient.nether.crimson_forest.shine1 player @a ~ ~ ~ 1 2
