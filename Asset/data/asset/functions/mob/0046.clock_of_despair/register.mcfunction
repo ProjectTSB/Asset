@@ -1,6 +1,13 @@
 #> asset:mob/0046.clock_of_despair/register
 # @within asset:mob/alias/46/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 46
 # Type (string) Wikiを参照
@@ -28,7 +35,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 2000
+    data modify storage asset:mob Health set value 1000000
 # 攻撃力 (double) (オプション)
     data modify storage asset:mob AttackDamage set value 0
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
