@@ -12,7 +12,7 @@
     execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @s ~ ~ ~ 2 2 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 10.0d
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Attack
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって桜の木の下に埋められた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
