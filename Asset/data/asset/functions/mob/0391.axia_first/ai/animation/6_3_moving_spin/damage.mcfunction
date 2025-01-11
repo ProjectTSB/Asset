@@ -10,7 +10,7 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 35.0f
+        data modify storage api: Argument.Damage set value 25.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
