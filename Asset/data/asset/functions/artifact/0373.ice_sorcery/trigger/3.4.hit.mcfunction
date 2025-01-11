@@ -11,16 +11,18 @@
 
 # ダメージ設定
     # 与えるダメージ = 10
-        data modify storage lib: Argument.Damage set value 100f
+        data modify storage api: Argument.Damage set value 35f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 水属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
+    # MP回復
+        data modify storage api: Argument.AdditionalMPHeal set value 4f
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] remove AD.HitTarget

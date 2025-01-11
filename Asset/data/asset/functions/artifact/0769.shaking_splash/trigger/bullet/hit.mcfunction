@@ -14,9 +14,10 @@
     particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 80
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 450.0f
+    data modify storage api: Argument.Damage set value 320.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AdditionalMPHeal set value 4f
     execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
     execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
 # リセット

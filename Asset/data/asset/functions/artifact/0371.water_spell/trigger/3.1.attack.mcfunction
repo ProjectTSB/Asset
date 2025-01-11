@@ -14,7 +14,7 @@
 
 # ダメージ
     # 与えるダメージ = 13
-        data modify storage lib: Argument.Damage set value 13f
+        data modify storage lib: Argument.Damage set value 24f
     # 魔法属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 水属性

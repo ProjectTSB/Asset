@@ -15,16 +15,11 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 0
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 1
 
-# 敵を狙う処理
-    execute anchored eyes positioned ^ ^ ^2 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4,sort=random,limit=1] add N9.Target
-# 弾を召喚（敵がいる場合）
-    execute anchored eyes positioned ^ ^ ^2 if entity @e[type=#lib:living,tag=N9.Target,distance=..4,limit=1] at @e[type=#lib:living,tag=N9.Target,distance=..4,limit=1] run function asset:artifact/0837.the_world_knife/trigger/knife/summon/surround
-# 弾を召喚 (敵がいない場合)
-    execute anchored eyes positioned ^ ^ ^2 unless entity @e[type=#lib:living,tag=N9.Target,distance=..4,limit=1] positioned ^ ^ ^-2 positioned ~ ~-0.7 ~ run function asset:artifact/0837.the_world_knife/trigger/knife/summon/forward
-# タグついたやつに鈍足
-    effect give @e[type=#lib:living,tag=N9.Target,distance=..30,limit=1] slowness 2 50 true
-# タグを消す
-    tag @e[type=#lib:living,tag=N9.Target,distance=..30,limit=1] remove N9.Target
-
-# Scheduleループ
-    schedule function asset:artifact/0837.the_world_knife/trigger/knife/1.tick 1t replace
+# 時間の束縛が付与されていないのであれば、ターゲットを探す
+    data modify storage api: Argument.ID set value 278
+    function api:entity/mob/effect/get/from_id
+    execute unless data storage api: Return.Effect run function asset:artifact/0837.the_world_knife/trigger/find_target/
+# 弾を召喚 (ターゲットがいない場合)
+    execute unless entity @e[type=#lib:living,tag=N9.Target,distance=..5] anchored eyes positioned ^ ^ ^0.25 positioned ~ ~-0.2 ~ run function asset:artifact/0837.the_world_knife/trigger/shot
+# 弾を召喚（ターゲットがいる場合）
+    execute as @e[type=#lib:living,tag=N9.Target,distance=..5] at @s run function asset:artifact/0837.the_world_knife/trigger/the_world/

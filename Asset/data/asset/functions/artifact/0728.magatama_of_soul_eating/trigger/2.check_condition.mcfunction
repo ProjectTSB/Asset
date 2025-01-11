@@ -10,5 +10,8 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
+# Victimが8m以内にいるか判定
+    execute if entity @s[tag=CanUsed] unless entity @e[type=#lib:living,tag=Victim,distance=..8] run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0728.magatama_of_soul_eating/trigger/3.main
