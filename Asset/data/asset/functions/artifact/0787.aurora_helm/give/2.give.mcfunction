@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーロラヘルム","color":"#00FFE2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% ","color":"dark_purple"},{"text":"雷耐性+10% 雷攻撃+5%","color":"yellow"}]','[{"text":"MP回復+5% ","color":"green"},{"text":"物理耐性-10%","color":"dark_red"}]','[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% ","color":"dark_purple"},{"text":"雷耐性+5% 雷攻撃+5%","color":"yellow"}]','[{"text":"MP回復+5% ","color":"green"},{"text":"物理耐性-7.5%","color":"dark_red"}]','[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

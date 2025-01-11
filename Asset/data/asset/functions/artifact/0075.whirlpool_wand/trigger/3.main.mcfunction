@@ -15,17 +15,17 @@
     execute at @e[type=#lib:living,tag=Enemy,predicate=!lib:is_in_water/include_flowing,distance=..5] run function asset:artifact/0075.whirlpool_wand/trigger/vfx/outside_water
 
 # ダメージ(水中)
-    data modify storage lib: Argument.Damage set value 200f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,predicate=lib:is_in_water/include_flowing,distance=..5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 25f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Enemy,predicate=lib:is_in_water/include_flowing,distance=..5] run function api:damage/
+    function api:damage/reset
 
 # ダメージ(水中ではない)
-    data modify storage lib: Argument.Damage set value 100f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,predicate=!lib:is_in_water/include_flowing,distance=..5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 12f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Enemy,predicate=!lib:is_in_water/include_flowing,distance=..5] run function api:damage/
+    function api:damage/reset

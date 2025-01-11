@@ -12,7 +12,7 @@
 # リセット処理
     function asset:artifact/1122.guardian_ironlump/trigger/removal
 
-    attribute @s minecraft:generic.armor modifier add 1-0-1-0-46200000007 "1122" 3 add
+    attribute @s minecraft:generic.armor modifier add 1-0-1-0-46200000007 "1122" 1 add
     attribute @s minecraft:generic.knockback_resistance modifier add 1-0-1-0-46200000007 "1122" 99 add
 
 # 防御力+5%

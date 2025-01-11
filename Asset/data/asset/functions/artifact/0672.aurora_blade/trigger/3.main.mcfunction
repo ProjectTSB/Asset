@@ -36,10 +36,10 @@
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~300の追加ダメージ
-            scoreboard players set $CalcRandom Temporary 301
+            scoreboard players set $CalcRandom Temporary 201
             scoreboard players operation $RandomDamage Temporary %= $CalcRandom Temporary
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 150
+            scoreboard players add $RandomDamage Temporary 200
 
 # Argument.Damageに代入 $MPPer >= 70 なら1.5倍
     execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary

@@ -11,6 +11,8 @@
 
 # 弾を進めるための再起開始
     execute positioned ~ ~1.5 ~ run function asset:artifact/0212.anti_materiel_rifle/trigger/3.1.bullet
+# タグを消す
+    tag @s remove Landing
 
 # 演出
     tp @s ~ ~ ~ ~ ~-5

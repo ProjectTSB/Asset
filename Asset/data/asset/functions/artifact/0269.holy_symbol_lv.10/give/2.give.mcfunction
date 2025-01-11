@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ホーリーシンボル レベル10"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"聖なる魔法陣を生成し"}','{"text":"発動者および味方の精神を浄化する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"1秒ごとにMPを","color":"white"},{"text":"19","color":"#6e99ff"},{"text":"回復する。","color":"white"}]','{"text":"22秒間、物理/魔法ダメージ、攻撃速度が","color":"white"}','[{"text":"19","color":"#6e99ff"},{"text":"%増加する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"聖なる魔法陣を生成し"}','{"text":"発動者および味方の精神を浄化する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"1秒ごとにMPを","color":"white"},{"text":"19%","color":"#6e99ff"},{"text":"回復する。","color":"white"}]','{"text":"22秒間、物理/魔法ダメージ、攻撃速度が","color":"white"}','[{"text":"19","color":"#6e99ff"},{"text":"%増加する。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     data modify storage asset:artifact SpecialCooldown set value 3600
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

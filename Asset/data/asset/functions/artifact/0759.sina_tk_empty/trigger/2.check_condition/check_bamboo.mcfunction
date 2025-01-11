@@ -10,6 +10,6 @@
 
 # 15個以下ならCanUsedを削除
     execute store result score $Count Temporary run clear @s bamboo 0
-    execute if score $Count Temporary matches ..15 run tag @s remove CanUsed
-    execute if score $Count Temporary matches ..15 run function lib:message/artifact/dont_have_require_items
+    execute if score $Count Temporary matches ..7 run tag @s remove CanUsed
+    execute if score $Count Temporary matches ..7 run function lib:message/artifact/dont_have_require_items
     scoreboard players reset $Count Temporary

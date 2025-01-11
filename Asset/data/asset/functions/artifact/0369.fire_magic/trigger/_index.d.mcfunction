@@ -8,4 +8,3 @@
     #declare tag A9.This
     #declare tag A9.Fire
     #declare tag A9.Landing
-    #declare tag A9.Target
