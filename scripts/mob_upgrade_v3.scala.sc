@@ -1,11 +1,3 @@
-//> using scala "3.5.1"
-//> using option -deprecation -feature -unchecked -Xfatal-warnings -no-indent -Xkind-projector:underscores
-//> using dep "org.scala-lang.modules::scala-parser-combinators:2.4.0"
-//> using dep "org.typelevel::cats-effect:3.5.4"
-//> using dep "org.typelevel::mouse:1.3.2"
-//> using dep "co.fs2::fs2-core:3.11.0"
-//> using dep "co.fs2::fs2-io:3.11.0"
-
 import fs2.*
 import fs2.io.file.*
 
