@@ -35,5 +35,8 @@
 # 足元が埋まっている間は上にちょっとずつ登る
     execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.1 ~
 
+# そこらのプレイヤーより下にいる場合、上昇する
+    execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s run tp @s ~ ~0.1 ~
+
 # AJモデルとの紐づけ解除
     execute at @s run tag @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] remove AC.AJLink
