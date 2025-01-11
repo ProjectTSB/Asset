@@ -10,8 +10,8 @@
     #declare tag HitTarget
 
 # 演出
-    execute at @e[type=#lib:living,tag=Enemy,distance=..2] run particle flame ~ ~1.4 ~ 0 0 0 0.3 3
-    execute at @e[type=#lib:living,tag=Enemy,distance=..2] run particle lava ~ ~1.4 ~ 0 0 0 0 0
+    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run particle flame ~ ~1.4 ~ 0 0 0 0.3 3
+    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run particle lava ~ ~1.4 ~ 0 0 0 0 0
     playsound entity.player.attack.knockback neutral @a ~ ~ ~ 1 1
 
 

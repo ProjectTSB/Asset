@@ -13,7 +13,7 @@
 # ボスの場合: $Damage(e2) = $Health(e-1) * (0.01 + 0.005 * $Count)(e3)
     function api:mob/get_health
     execute store result score $Damage Temporary run data get storage api: Return.Health 0.1
-    execute if entity @s[tag=!Enemy.Boss] run scoreboard players operation $Damage Temporary *= $Multi.Normal Temporary
+    execute if entity @s[tag=!Enemy.Boss,tag=!Uninterferable] run scoreboard players operation $Damage Temporary *= $Multi.Normal Temporary
     execute if entity @s[tag= Enemy.Boss] run scoreboard players operation $Damage Temporary *= $Multi.Angel Temporary
 # 攻撃
     execute store result storage api: Argument.Damage double 0.01 run scoreboard players get $Damage Temporary

@@ -13,4 +13,4 @@
     function asset:object/super.init
 
 # 向きをボスへ向ける
-    execute facing entity @e[tag=Enemy.Boss,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    execute facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~

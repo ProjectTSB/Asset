@@ -13,6 +13,6 @@
         data modify storage lib: Argument.ElementType set value "Thunder"
     # ダメージ
         function lib:damage/modifier
-        execute anchored eyes positioned ^ ^ ^ positioned ~-1 ~0.5 ~-1 as @e[type=#lib:living,tag=Enemy,dx=1,dy=1,dz=1] run function lib:damage/
+        execute anchored eyes positioned ^ ^ ^ positioned ~-1 ~0.5 ~-1 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] run function lib:damage/
 # リセット
     function lib:damage/reset

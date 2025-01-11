@@ -12,7 +12,7 @@
     particle minecraft:electric_spark ~ ~1 ~ 0.4 0.4 0.4 0 2
 
 # ターゲットにTagを付与
-    execute at @e[type=#lib:living,tag=Enemy,distance=..30] if score @s 603.TargetUUID = @e[type=#lib:living,tag=Enemy,distance=..0.01,sort=nearest,limit=1] MobUUID run tag @e[type=#lib:living,tag=Enemy,distance=..0.01,sort=nearest,limit=1] add FacingTarget
+    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] if score @s 603.TargetUUID = @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] MobUUID run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] add FacingTarget
 
 # ターゲットの方を向く
     execute at @s facing entity @e[type=#lib:living,tag=FacingTarget,distance=..30,limit=1] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
