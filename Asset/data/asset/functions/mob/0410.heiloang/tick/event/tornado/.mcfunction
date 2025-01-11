@@ -49,6 +49,8 @@
             execute if score @s BE.EventTimer matches 171 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/attack_wind_burst
     # 中心点回転
         execute if score @s BE.EventTimer matches 101 as @e[type=marker,tag=BE.CenterPosition] at @s facing entity @e[type=slime,tag=BE.EntityRoot,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    # 回避ギミック用跳躍エフェクト付与
+        execute if score @s BE.EventTimer matches 162 run effect give @a[distance=..80] jump_boost 9 5
 
 # 終了
     execute if score @s BE.EventTimer matches 175.. run function asset:mob/0410.heiloang/tick/event/tornado/end

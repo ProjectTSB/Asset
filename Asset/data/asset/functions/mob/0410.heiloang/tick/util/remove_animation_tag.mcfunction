@@ -5,6 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/**
 
 # アニメーションタグ
+    tag @s remove BE.Skill.Start
     tag @s remove BE.Skill.Hellfire
     tag @s remove BE.Skill.Adamant
     tag @s remove BE.Skill.Blitz
