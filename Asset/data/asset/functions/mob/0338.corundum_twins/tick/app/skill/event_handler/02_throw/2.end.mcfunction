@@ -12,5 +12,3 @@
 
 # タイマーリセット
     scoreboard players set @s 9E.SkillTimer 0
-
-say throw end

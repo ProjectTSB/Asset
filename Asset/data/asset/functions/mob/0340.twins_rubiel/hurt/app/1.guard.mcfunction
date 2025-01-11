@@ -27,5 +27,3 @@
 
 # 終了
     tag @s remove 9G.State.IsGuard
-
-say ガード

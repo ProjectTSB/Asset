@@ -5,13 +5,21 @@
 # @within function asset:mob/0338.corundum_twins/death/app/*
 
 # サフィの消去
-    execute as @e[tag=9F.Root,tag=9F.Target] run function api:mob/kill
-    # execute as @e[tag=9F.ModelRoot,tag=9F.Target] run function animated_java:twins_sapphiel/remove/this
-    # tag @e[tag=9F.Root,tag=9F.Target] add 9F.Remove
-    # kill @e[tag=9F.Root,tag=9F.Target]
+    # ボスドロ
+        data modify storage api: Argument.ID set value 1079
+        data modify storage api: Argument.Important set value true
+        execute as @e[tag=9F.Root,tag=9F.Target] at @s run function api:artifact/spawn/from_id
+    # 消去
+        execute as @e[tag=9F.ModelRoot,tag=9F.Target] run function animated_java:twins_sapphiel/remove/this
+        execute as @e[tag=9F.Root,tag=9F.Target] run function api:mob/kill
+        # function animated_java:twins_sapphiel/remove/all
 
 # ルビィの消去
-    execute as @e[tag=9G.Root,tag=9G.Target] run function api:mob/kill
-    # execute as @e[tag=9G.ModelRoot,tag=9G.Target] run function animated_java:twins_rubiel/remove/this
-    # tag @e[tag=9G.Root,tag=9G.Target] add 9G.Remove
-    # kill @e[tag=9G.Root,tag=9G.Target]
+    # ボスドロ
+        data modify storage api: Argument.ID set value 1078
+        data modify storage api: Argument.Important set value true
+        execute as @e[tag=9G.Root,tag=9G.Target] at @s run function api:artifact/spawn/from_id
+    # 消去
+        execute as @e[tag=9G.ModelRoot,tag=9G.Target] run function animated_java:twins_rubiel/remove/this
+        execute as @e[tag=9G.Root,tag=9G.Target] run function api:mob/kill
+        # function animated_java:twins_rubiel/remove/all

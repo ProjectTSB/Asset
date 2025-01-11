@@ -11,5 +11,3 @@
 # アニメーション再生
     function asset:mob/0340.twins_rubiel/app/general/1.cancel_animation
     tag @s add 9G.Skill.Kt.Sheathe.Counter
-
-say 納刀カウンター

@@ -24,5 +24,3 @@
 
 # 紐づけ終了
     execute if entity @s[tag=9E.TargetEnabled] run function asset:mob/0338.corundum_twins/app/general/4.end_link_target
-
-say ルビィ怯み開始

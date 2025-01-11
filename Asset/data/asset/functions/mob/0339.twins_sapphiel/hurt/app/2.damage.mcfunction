@@ -23,5 +23,3 @@
 
 # 終了
     tag @s remove 9F.State.IsDamage
-
-say 怯み

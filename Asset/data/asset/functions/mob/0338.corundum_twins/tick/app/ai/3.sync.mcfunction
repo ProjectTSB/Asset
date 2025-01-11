@@ -19,5 +19,3 @@
     scoreboard players set @s 9E.SyncTimer 0
     tag @s remove 9E.State.Phase.Sync.Reserve
     tag @s add 9E.State.Phase.Sync
-
-say sync start
