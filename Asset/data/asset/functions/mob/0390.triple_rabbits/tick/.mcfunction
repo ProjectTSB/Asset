@@ -24,7 +24,7 @@
     scoreboard players operation $IntervalTime Temporary = @s General.Mob.Tick
     scoreboard players operation $IntervalTime Temporary %= $40 Const
     execute if score $IntervalTime Temporary matches 0 run function asset:mob/0390.triple_rabbits/ai/general/break_block
-    execute if score $IntervalTime Temporary matches 0 positioned ~-15 ~3.2 ~-15 at @a[dx=29,dy=25,dz=29] positioned ~ ~1 ~ run function asset:mob/0390.triple_rabbits/ai/general/summon_bullet
+    execute if score $IntervalTime Temporary matches 0 positioned ~-15 ~3.75 ~-15 at @a[dx=29,dy=25,dz=29] positioned ~ ~1 ~ run function asset:mob/0390.triple_rabbits/ai/general/summon_bullet
     scoreboard players reset $IntervalTime Temporary
 
 # 戦闘中プレイヤーを引き寄せる
