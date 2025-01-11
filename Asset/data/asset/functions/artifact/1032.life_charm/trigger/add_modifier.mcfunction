@@ -15,6 +15,6 @@
 
 # 最大体力+(個数*10%)
     data modify storage api: Argument.UUID set value [I;1,1,1032,7]
-    execute store result storage api: Argument.Amount float 0.1 if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1032}}}]
+    execute store result storage api: Argument.Amount float 0.2 if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1032}}}]
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/max_health/add

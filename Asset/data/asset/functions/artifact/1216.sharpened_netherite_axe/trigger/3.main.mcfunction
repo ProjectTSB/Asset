@@ -8,9 +8,8 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-
 # ダメージ
-    data modify storage api: Argument.Damage set value 2000.0f
+    data modify storage api: Argument.Damage set value 2930.0f
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/

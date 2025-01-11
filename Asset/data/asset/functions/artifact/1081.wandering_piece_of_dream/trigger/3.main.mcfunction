@@ -9,7 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# Effect付与対象: 使用者 & 周囲の現在体力の最も低いプレイヤー3名
+# Effect付与対象: 使用者 & 周囲の現在体力の最も低いプレイヤー2名
 
 # 付与対象にTagを付与
     tag @s add U1.EffectTarget
@@ -18,7 +18,7 @@
 # 再帰でやるか迷ったけどこっちでやることにした
     execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
     execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
-    execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
+    # execute if entity @p[tag=!U1.EffectTarget,distance=..20] run function asset:artifact/1081.wandering_piece_of_dream/trigger/4.find_lowest_health_player
 
 # 演出
     execute at @a[tag=U1.EffectTarget,distance=..20] run particle dust 1000000000 0.5 1000000000 1.5 ~ ~1.2 ~ 0.8 0.4 0.8 0 5 normal @a

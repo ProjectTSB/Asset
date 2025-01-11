@@ -16,6 +16,3 @@
 # 前方に敵が居た場合
     execute positioned ^ ^ ^7 if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7] at @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7,sort=nearest,limit=1] run function asset:artifact/0375.thunder_magic/trigger/3.1.circle_particle
     execute positioned ^ ^ ^7 if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7] at @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7,sort=nearest,limit=1] run function asset:artifact/0375.thunder_magic/trigger/3.2.damage
-
-# リセット
-    scoreboard players reset $Rotate Temporary

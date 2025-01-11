@@ -15,13 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"急速充電バッテリー","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"MPを急速に50%分回復し、雷攻撃+15%を10秒間得る。","color":"white"}','{"text":"我が社の誇るこのバッテリーなら、","color":"gray"}','{"text":"充電切れ間近でもすぐに回復して差し上げます！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"MPを急速に50%分回復し、雷攻撃+15%を10秒間得る。","color":"white"}','{"text":"我が社の誇るこのバッテリーなら、","color":"gray"}','{"text":"充電切れ間近でもすぐに回復して差し上げます！","color":"gray"}','{"text":"※再充電の時間は必要となります。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 5
+    # data modify storage asset:artifact RemainingCount set value 5
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
@@ -45,7 +45,10 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 600
+    data modify storage asset:artifact LocalCooldown set value 6000
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

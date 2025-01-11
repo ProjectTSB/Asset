@@ -9,15 +9,15 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 水耐性+5%
+# 水耐性
     data modify storage api: Argument.UUID set value [I;1,1,649,3]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.03
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 
-# 雷耐性+5%
+# 雷耐性
     data modify storage api: Argument.UUID set value [I;1,1,649,3]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.03
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 

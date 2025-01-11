@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"炎魔","color":"#C71585","bold":true},{"text":"の兜","color":"#FF7F50","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]','[{"text":"火攻撃+10% ","color":"red"},{"text":"水攻撃-10% ","color":"dark_red"}]','[{"text":"魔法耐性+5% 魔法攻撃+5%","color":"dark_purple"},{"text":" MP回復量+2%","color":"green"}]','[{"text":"「力をやろう、全てを焼き払わんとする業火の力を」","color":"#C71585","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]','[{"text":"火攻撃+10% ","color":"red"},{"text":"水攻撃-7.5% ","color":"dark_red"}]','[{"text":"魔法攻撃+5%","color":"dark_purple"},{"text":" MP回復量+2%","color":"green"}]','[{"text":"「力をやろう、全てを焼き払わんとする業火の力を」","color":"#C71585","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

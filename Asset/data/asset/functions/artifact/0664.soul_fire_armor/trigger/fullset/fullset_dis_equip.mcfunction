@@ -20,8 +20,8 @@
     function api:modifier/mp_regen/remove
 
 # 最大体力
-    data modify storage api: Argument.UUID set value [I;1,1,664,0]
-    function api:modifier/max_health/remove
+    # data modify storage api: Argument.UUID set value [I;1,1,664,0]
+    # function api:modifier/max_health/remove
 
 # リセット
     tag @s remove IG.Fullset
