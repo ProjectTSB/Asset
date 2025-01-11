@@ -18,7 +18,7 @@
     # 第二属性
         # 属性をランダムに決定する
             # 疑似乱数取得
-                execute store result score @s Temporary run function api:random/
+                execute store result score @s Temporary run function lib:random/
             # ほしい範囲に剰余算
                 scoreboard players operation @s Temporary %= $3 Const
 

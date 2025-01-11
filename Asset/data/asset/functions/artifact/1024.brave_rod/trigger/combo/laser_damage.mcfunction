@@ -12,7 +12,7 @@
 # 引数の設定
     #ダメージブレのための処理
         # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function api:random/
+            execute store result score $RandomDamage Temporary run function lib:random
         # 剰余算する。追加ダメージ。
             scoreboard players operation $RandomDamage Temporary %= $51 Const
         # 最低ダメージ設定
