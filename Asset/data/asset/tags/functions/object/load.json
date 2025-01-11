@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:object/2198.rubiel_scythe/load",
+        "asset:object/2197.rubiel_knife/load",
         "asset:object/1066.knife/load",
         "asset:object/2130.heiloang_circle_vfx/load",
         "asset:object/2127.heiloang_ice_vfx/load",
