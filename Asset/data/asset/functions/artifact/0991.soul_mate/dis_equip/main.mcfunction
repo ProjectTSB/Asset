@@ -12,23 +12,23 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        execute store result storage lib: Argument.Damage float 0.30 run attribute @s generic.max_health get 1
+        execute store result storage api: Argument.Damage float 0.30 run attribute @s generic.max_health get 1
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か
-        data modify storage lib: Argument.BypassResist set value true
+        data modify storage api: Argument.BypassResist set value true
     # 補正を無視
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage api: Argument.FixedDamage set value true
     # キルログ
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは魂の接続が途絶えた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは魂の接続が途絶えた。","with":[{"selector":"@s"}]}]']
     # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 効果
     data modify storage api: Argument.ID set value 264
