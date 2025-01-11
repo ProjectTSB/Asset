@@ -25,7 +25,7 @@
 # つかみに成功した時
 
 # プレイヤー束縛
-    execute if score @s General.Mob.Tick matches 1000.. positioned ^ ^ ^0.7 positioned ~ ~1 ~ if entity @p[distance=..2] as @p at @s facing entity @e[type=wither_skeleton,tag=Enemy.Boss,sort=nearest,limit=1] feet run tp @s @s
+    execute if score @s General.Mob.Tick matches 1000.. positioned ^ ^ ^0.7 positioned ~ ~1 ~ if entity @p[distance=..2] as @p at @s facing entity @e[type=wither_skeleton,tag=Enemy.Boss,tag=!Uninterferable,sort=nearest,limit=1] feet run tp @s @s
 
 # 演出
     execute if score @s General.Mob.Tick matches 1020 run playsound ogg:block.sculk_sensor.sculk_clicking4 hostile @a ~ ~ ~ 1 0.6

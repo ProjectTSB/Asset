@@ -22,7 +22,7 @@
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Thunder"
     function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,distance=..2.2] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..2.2] run function lib:damage/
     function lib:damage/reset
 
 # 着弾タグを消す
