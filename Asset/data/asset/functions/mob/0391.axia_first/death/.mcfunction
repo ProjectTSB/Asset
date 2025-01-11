@@ -8,12 +8,16 @@
 # @private
     #declare tag AU.AxiaDeath
 
+# モデル削除
+    function animated_java:axia/remove/all
+
 # ディスプレイ削除
     kill @e[type=item_display,tag=AV.AnnounceLine,distance=..200]
+    kill @e[type=marker,tag=AV.Marker.SummonPoint,distance=..200]
 
-# スケジュール起動
-    tag @e[type=marker,tag=AV.Marker.SummonPoint,distance=..200] add AV.Death
-    schedule function asset:mob/0391.axia_first/ai/general/8.death/schedule 1t
+# 召喚
+    data modify storage api: Argument.ID set value 2192
+    function api:object/summon
 
 # 管理用スライムに情報を送る
     scoreboard players operation $AV.Temp AU.Dummy.UUID = @s AU.Dummy.UUID
