@@ -11,7 +11,6 @@
     #declare tag AX.Landing
     #declare tag AX.Predict
     #declare tag AX.SuperiorSkill
-    #declare tag AX.Death
 
 #> tag obj
 # @within function asset:mob/0393.labyria_first/**

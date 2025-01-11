@@ -16,7 +16,6 @@
     #declare tag AW.AnnounceLineEven
     #declare tag AW.Invisible
     #declare tag AW.AnnounceInit
-    #declare tag AW.Death
     #declare tag 2017.WaterMagic
 
 #> val
