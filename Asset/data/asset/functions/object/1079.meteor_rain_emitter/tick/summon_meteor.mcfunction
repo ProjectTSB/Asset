@@ -4,10 +4,11 @@
 #
 # @within function asset:object/1079.meteor_rain_emitter/tick/
 
-#> 拡散用マーカー
+#> このファイル内で使われるタグ
 #@private
 #declare tag SpreadMarker
 #declare tag SpreadFacingMarker
+#declare tag MeteorTarget
 
 # 拡散させる
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -15,7 +16,9 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
 
 # 付近のランダムな敵一体を対象とし、そいつの周辺に拡散
-    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..64,sort=random,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..64,sort=random,limit=1] add MeteorTarget
+    execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..64,sort=random,limit=1] MobUUID
+    execute at @e[type=#lib:living,tag=MeteorTarget,distance=..64,sort=random,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
     data modify storage lib: Argument.Bounds set value [[8d,8d],[0.0d,0.0d],[8d,8d]]
     execute as @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
 
@@ -27,3 +30,4 @@
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..128,limit=1]
     kill @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1]
+    tag @e[type=#lib:living,tag=MeteorTarget,distance=..64,sort=random,limit=1] remove MeteorTarget
