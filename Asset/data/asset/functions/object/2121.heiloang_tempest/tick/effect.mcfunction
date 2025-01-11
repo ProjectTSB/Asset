@@ -10,3 +10,4 @@
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Stack set value 40
     data modify storage api: Argument.Duration set value 5
     execute as @a[distance=..7] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
