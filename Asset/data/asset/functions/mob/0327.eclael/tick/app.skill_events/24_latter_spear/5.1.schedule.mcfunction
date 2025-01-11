@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・突き スケジュール
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/**
+# @within
+#   function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/**
+#   function asset:mob/0327.eclael/rejoin_process/
 
 # プレイヤー対象に実行
     execute as @a[tag=93.Temp.ScheduleTargetPlayer] at @s run function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/5.2.player_effect
