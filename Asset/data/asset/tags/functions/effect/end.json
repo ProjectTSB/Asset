@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0028.hunger/_/end",
         "asset:effect/0067.slowness/_/end",
         "asset:effect/0017.slowness/_/end",
         "asset:effect/0124.darkness/_/end",
