@@ -5,4 +5,4 @@
 # @within function asset:effect/0031.slow_falling/_/end
 
 # 低速落下を削除
-    effect clear @s levitation
+    effect clear @s slow_falling
