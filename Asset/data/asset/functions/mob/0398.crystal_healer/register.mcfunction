@@ -15,7 +15,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value 
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 3000
+    data modify storage asset:mob Health set value 1200
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
