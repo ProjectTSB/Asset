@@ -29,10 +29,10 @@
     function api:modifier/mp_regen/add
 
 # 最大体力
-    data modify storage api: Argument.UUID set value [I;1,1,664,0]
-    data modify storage api: Argument.Amount set value -0.1
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/max_health/add
+    # data modify storage api: Argument.UUID set value [I;1,1,664,0]
+    # data modify storage api: Argument.Amount set value -0.1
+    # data modify storage api: Argument.Operation set value "multiply_base"
+    # function api:modifier/max_health/add
 
 # フルセット用Tagを付与
     tag @s add IG.Fullset
