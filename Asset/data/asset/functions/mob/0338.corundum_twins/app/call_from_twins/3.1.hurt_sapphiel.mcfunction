@@ -3,7 +3,7 @@
 # 双子側から呼び出されるhurt処理
 #
 # @within
-#    function asset:mob/0339.twins_sapphiel/hurt/2.hurt
+#    function asset:mob/0339.twins_sapphiel/hurt/
 
 # テスト
     # say sapphiel hurt

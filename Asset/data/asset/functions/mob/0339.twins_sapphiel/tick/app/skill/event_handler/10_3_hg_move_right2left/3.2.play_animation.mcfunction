@@ -6,7 +6,4 @@
 
 # 再生
     execute as @e[type=item_display,tag=9F.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:twins_sapphiel/animations/pause_all
-    execute as @e[type=item_display,tag=9F.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:twins_sapphiel/animations/10_1_hg_move_left/tween {duration:1, to_frame: 0}
-# 再生開始時間を弄る
-    scoreboard players set @s aj.anim_time 5
-    scoreboard players set @s aj.twins_sapphiel.animation.10_1_hg_move_left.local_anim_time 5
+    execute as @e[type=item_display,tag=9F.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:twins_sapphiel/animations/10_1_hg_move_left/tween {duration:1, to_frame: 5}

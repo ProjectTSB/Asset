@@ -3,7 +3,9 @@
 
 #> tag
 # @within function asset:mob/0338.corundum_twins/**
-    #
+    # AJ自動生成
+        #declare function animated_java:twins_sapphiel/remove/this
+        #declare function animated_java:twins_rubiel/remove/this
     # Root用
         # 共通
             #declare tag 9E.Root 処理用entity
