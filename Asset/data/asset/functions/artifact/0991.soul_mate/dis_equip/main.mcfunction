@@ -22,7 +22,7 @@
     # 補正を無視
         data modify storage api: Argument.FixedDamage set value true
     # キルログ
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは魂の接続が途絶えた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは魂の接続が途絶えた","with":[{"selector":"@s"}]}]']
     # 補正functionを実行
     function api:damage/modifier
 # ダメージ
@@ -33,7 +33,7 @@
 # 効果
     data modify storage api: Argument.ID set value 264
     function api:entity/mob/effect/remove/from_id
-
+    function api:entity/mob/effect/reset
 # メッセージ
     tellraw @a[tag=RJ.SoulMate] [{"selector":"@s","color":"dark_red"},{"text":"がソウルメイトを脱退しました。","color":"dark_red"}]
 
