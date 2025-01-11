@@ -37,7 +37,7 @@
 # Targetの内最寄りの1体が対象
     data modify storage api: Argument.Damage set value 150
     data modify storage api: Argument.AttackType set value "Physical"
-    function api:damage/modifier
+    execute at @a if score @s TZ.OwnerID = @p UserID as @p run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Target,distance=..2.8,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
