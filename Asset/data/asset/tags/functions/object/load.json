@@ -2,6 +2,7 @@
     "values": [
         "asset:object/2198.rubiel_scythe/load",
         "asset:object/2197.rubiel_knife/load",
+        "asset:object/2011.hexa_laser_core/load",
         "asset:object/2168.general_long_laser/load",
         "asset:object/2092.ghost_bullet/load",
         "asset:object/2090.magic_square/load",
