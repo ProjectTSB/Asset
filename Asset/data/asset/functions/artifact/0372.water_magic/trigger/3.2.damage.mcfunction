@@ -13,7 +13,7 @@
     # MP回復
         data modify storage api: Argument.AdditionalMPHeal set value 5f
     # 補正function
-        execute at @a if score @s AC.UserID = @p UserID run function api:damage/modifier
+        execute at @a if score @s AC.UserID = @p UserID as @p run function api:damage/modifier
     # 対象に
         execute as @e[type=#lib:living,tag=Enemy,distance=..5] run function api:damage/
 
