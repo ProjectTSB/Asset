@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"大地の加護を得た衣"}]','[{"text":"我らみな"},{"text":"大地","bold":true},{"text":"に生きるもの。","bold":false}]']
+    data modify storage asset:artifact Lore set value ['{"text":"最大体力+4","color":"light_purple"}','{}','[{"text":"セット効果：","color":"white"},{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]','{"text":"自身と周囲のプレイヤーに再生を付与する","color":"white"}','{}','[{"text":"大地の加護を得た衣"}]','[{"text":"我らみな"},{"text":"大地","bold":true},{"text":"に生きるもの。","bold":false}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -25,9 +25,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "chest"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "passive"
+    data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"大地の衣で全身を覆う"}]'
+    # data modify storage asset:artifact Condition set value '[{"text":"大地の衣で全身を覆う"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -55,7 +55,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:64,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3},{id:protection,lvl:5},{id:mending,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,563,5],AttributeName:"generic.armor",Name:"armor",Slot:chest,Operation:0,Amount:3},{UUID:[I;1,1,563,5],AttributeName:"generic.max_health",Name:"max_health",Slot:chest,Operation:0,Amount:4}]}
+    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:69,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:1}],AttributeModifiers:[{UUID:[I;1,1,563,5],AttributeName:"generic.armor",Name:"armor",Slot:chest,Operation:0,Amount:3}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
