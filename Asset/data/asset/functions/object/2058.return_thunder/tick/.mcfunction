@@ -19,9 +19,9 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 途中で一時停止し、プレイヤーの方へ方向転
-    execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.Speed set value 0
+    execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.MovePerStep set value 0
     execute if entity @s[scores={General.Object.Tick=60}] facing entity @p[distance=..50] feet run tp @s ~ ~ ~ ~ ~
-    execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.Speed set value 1
+    execute if entity @s[scores={General.Object.Tick=60}] run data modify storage asset:context this.MovePerStep set value 1
 
 # 継承
     execute at @s run function asset:object/super.tick

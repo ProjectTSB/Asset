@@ -13,3 +13,4 @@
 # 破滅の騎士道バフ(ID:263)を得る
     data modify storage api: Argument.ID set value 263
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
