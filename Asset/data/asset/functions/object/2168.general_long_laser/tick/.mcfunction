@@ -52,4 +52,5 @@
     execute if score @s General.Object.Tick = @s 2168.DisppearTick run function asset:object/2168.general_long_laser/tick/transform/disappear
 
 # 消滅処理
+    execute if score @s General.Object.Tick > @s 2168.LifeTime on passengers run kill @s
     execute if score @s General.Object.Tick > @s 2168.LifeTime run kill @s

@@ -10,7 +10,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:chorus_fruit",
+                    "name": "minecraft:popped_chorus_fruit",
                     "weight": 15
                 },
                 {

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ブレイブソード","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む、強力な斬撃を放つ。"}','{"text":"\\"勇気を刃に込めて！\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む斬撃を放つ。"}','{"text":"コンボフィニッシュでは、敵を貫通する衝撃波を放つ。"}','{"text":"\\"勇気の刃\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -58,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value "ALL"
+    data modify storage asset:artifact CanUsedGod set value ["Rumor","Flora","Urban"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:6,Unbreakable:1b}
 
