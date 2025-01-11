@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0079.poison/_/register",
         "asset:effect/0029.poison/_/register",
         "asset:effect/0618.soaked/_/register",
         "asset:effect/0057.defense_base_debuff/_/register",
