@@ -17,19 +17,19 @@
 
 # 攻撃を与える
     # 与えるダメージ = 100
-        data modify storage lib: Argument.Damage set value 60f
+        data modify storage api: Argument.Damage set value 60f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # MP回復
         data modify storage api: Argument.AdditionalMPHeal set value 12f
 # 補正functionを実行
-    execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function lib:damage/modifier
+    execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function api:damage/modifier
 # 攻撃した対象に実行
-    execute positioned ~-1 ~0.5 ~-1 as @e[type=#lib:living,type=!player,tag=!A9.Fire,dx=1,dy=2.5,dz=1] run function lib:damage/
+    execute positioned ~-1 ~0.5 ~-1 as @e[type=#lib:living,type=!player,tag=!A9.Fire,dx=1,dy=2.5,dz=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 #自身を殺す
     kill @s
