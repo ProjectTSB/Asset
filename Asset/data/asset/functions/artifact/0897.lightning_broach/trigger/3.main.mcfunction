@@ -25,9 +25,9 @@
 
 # ダメージ係数の設定
     scoreboard players set $Base Temporary 60
-    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set $Base Temporary 15
+    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..10,limit=1] run scoreboard players set $Base Temporary 15
     scoreboard players set $CountMul Temporary 40
-    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,distance=..10,limit=1] run scoreboard players set $CountMul Temporary 5
+    execute if entity @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..10,limit=1] run scoreboard players set $CountMul Temporary 5
 
 # ダメージ/計算
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run function api:mob/get_health

@@ -1,6 +1,6 @@
 #> asset:object/2088.patriot_launcher/tick/tick_active
 #
-# 
+#
 #
 # @within function asset:object/2088.patriot_launcher/tick/
 
@@ -24,8 +24,8 @@
     execute if score $CurrentDurability Temporary matches ..0 run return run scoreboard players reset $CurrentDurability Temporary
 
 # 向きを敵の方へ向ける
-    execute facing entity @e[tag=Enemy.Boss,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
-    execute on passengers facing entity @e[tag=Enemy.Boss,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    execute facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    execute on passengers facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # 次の発射までのカウント
     execute store result score $MissileCooltime Temporary run data get storage asset:context this.MissileCooltime

@@ -17,11 +17,11 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=S9.Hit,tag=!Uninterferable,distance=..5] at @s run function api:damage/
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=S9.Hit,tag=!Uninterferable,distance=..5] at @s run function api:damage/
 
 # リセット
     function api:damage/reset
-    tag @e[type=#lib:living,tag=Enemy,tag=S9.Hit,tag=!Uninterferable,distance=..10] remove S9.Hit
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=S9.Hit,tag=!Uninterferable,distance=..10] remove S9.Hit
 
 # 地面にいるやつをうちあげ
 

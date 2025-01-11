@@ -25,7 +25,7 @@
     particle minecraft:campfire_cosy_smoke ~ ~-0.2 ~ 0.1 0.1 0.1 0 1 force
 
 # 前方にいる敵をターゲットする
-    execute positioned ^ ^ ^10 if entity @e[type=#lib:living,tag=Enemy,tag=!M1.Bee,distance=..10] run tag @e[type=#lib:living,tag=Enemy,tag=!M1.Bee,distance=..10,limit=1] add M1.Target
+    execute positioned ^ ^ ^10 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=!M1.Bee,distance=..10] run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,tag=!M1.Bee,distance=..10,limit=1] add M1.Target
     #tag @s[tag=M1.Target] remove M1.Target
 # 進ませる
     execute if entity @e[type=#lib:living,tag=M1.Target,distance=10..32] facing entity @e[type=#lib:living,tag=M1.Target,distance=..32,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1200 facing entity @s eyes positioned as @s run tp @s ^ ^ ^1 ~ ~

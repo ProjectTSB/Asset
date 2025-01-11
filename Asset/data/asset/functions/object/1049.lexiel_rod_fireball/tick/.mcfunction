@@ -11,7 +11,7 @@
     kill @s[scores={General.Object.Tick=1000..}]
 
 # ちょっと追尾
-   execute facing entity @e[type=#lib:living,tag=Enemy,distance=..10,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
+   execute facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
 
 
     execute at @s run function asset:object/super.tick

@@ -22,7 +22,7 @@
     # ダメージ
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
         execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,distance=..3] run function lib:damage/
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function lib:damage/
 # リセット
     function lib:damage/reset
     scoreboard players reset $OwnerID Temporary

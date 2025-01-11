@@ -22,7 +22,7 @@
     execute if entity @a[tag=1052.Owner,distance=..5] run effect give @s slowness 1 127 true
 
 # 敵が近くにいたら、射撃用意
-    execute if entity @a[tag=1052.Owner,distance=..5] if entity @e[type=#lib:hostile,tag=Enemy,distance=..14] run function asset:object/1052.maid/tick/action
+    execute if entity @a[tag=1052.Owner,distance=..5] if entity @e[type=#lib:hostile,tag=Enemy,tag=!Uninterferable,distance=..14] run function asset:object/1052.maid/tick/action
 
 # 召喚者が離れ過ぎたら死ぬ
     execute unless entity @a[tag=1052.Owner,distance=..30] run function asset:object/1052.maid/tick/kill

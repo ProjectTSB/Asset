@@ -32,10 +32,10 @@
     # ダメージ
         data modify storage lib: Argument.Damage set value 125
         execute as @p[tag=T1.Owner] run function lib:damage/modifier
-        execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function lib:damage/
+        execute as @e[tag=Enemy,tag=!Uninterferable,tag=T1.Landing,distance=..8] run function lib:damage/
 
 # 敵吸い込み
-    execute at @s as @e[tag=Enemy,tag=!Enemy.Boss,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction
+    execute at @s as @e[tag=Enemy,tag=!Uninterferable,tag=!Enemy.Boss,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction
 
 # 演出
     execute store result storage asset:temp T1.Num int 1 run scoreboard players get @s T1.LandingTick
@@ -53,5 +53,5 @@
     scoreboard players reset $T1.OwnerId Temporary
     scoreboard players reset $T1.LandingTick Temporary
     tag @a[tag=T1.Owner] remove T1.Owner
-    tag @e[tag=Enemy,tag=T1.Landing,distance=..8] remove T1.Landing
+    tag @e[tag=Enemy,tag=!Uninterferable,tag=T1.Landing,distance=..8] remove T1.Landing
     execute if score @s T1.LandingTick matches 80 run kill @s

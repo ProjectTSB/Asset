@@ -22,7 +22,7 @@
 # 対象を8体に絞る
     tag @e[type=#lib:living,tag=TargetCandidate,distance=..13,sort=nearest,limit=8] add Target
 # 処理
-    execute as @e[type=#lib:living,tag=Target,tag=Enemy,distance=..13] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Target,tag=Enemy,tag=!Uninterferable,distance=..13] run function lib:damage/
     execute as @e[type=#lib:living,tag=Target,tag=Friend,distance=..13] run function lib:heal/
 # リセット
     tag @e[type=#lib:living,tag=TargetCandidate] remove TargetCandidate

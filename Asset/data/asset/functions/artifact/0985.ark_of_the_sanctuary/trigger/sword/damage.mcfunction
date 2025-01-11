@@ -20,7 +20,7 @@
     # 補正function
         execute as @a if score @s UserID = @e[type=armor_stand,tag=RD.This,distance=..50,limit=1] RD.SwordUserID run function lib:damage/modifier
     # 対象に
-        execute as @e[type=#lib:living,tag=Enemy,distance=..4] run function lib:damage/
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function lib:damage/
 # リセット
     function lib:damage/reset
     tag @s remove RD.This

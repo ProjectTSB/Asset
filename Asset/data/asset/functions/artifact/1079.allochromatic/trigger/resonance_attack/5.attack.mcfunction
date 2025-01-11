@@ -30,7 +30,7 @@
 
 # 前方の敵のみをターゲットにする
 # ちょっとくらい後ろなら当たる
-    tag @e[type=#lib:living,tag=Enemy,distance=..2.8] add Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2.8] add Target
     execute positioned ^ ^ ^-1.4 run tag @e[type=#lib:living,tag=Target,distance=..1.2] remove Target
 
 # ダメージ

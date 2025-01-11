@@ -13,10 +13,10 @@
     # 補正function
         execute at @a if score @s AC.UserID = @p UserID run function lib:damage/modifier
     # 対象に
-        execute as @e[type=#lib:living,tag=Enemy,distance=..5] run function lib:damage/
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run function lib:damage/
 
 # 演出
-    execute at @e[type=#lib:living,tag=Enemy,distance=..5] run particle minecraft:block water ~ ~1 ~ 0.1 1.3 0.1 10 30
+    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run particle minecraft:block water ~ ~1 ~ 0.1 1.3 0.1 10 30
     playsound entity.dolphin.splash player @a ~ ~ ~ 1 2
     playsound entity.dolphin.splash player @a ~ ~ ~ 1 1
     playsound entity.dolphin.splash player @a ~ ~ ~ 1 0
