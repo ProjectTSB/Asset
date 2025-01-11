@@ -6,12 +6,15 @@
 
 # 最大体力と現在体力を取得
     function api:modifier/max_health/get
-    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 10
     function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health
+    execute store result score $Health Temporary run data get storage api: Health 10
 
 # (最大体力 - 現在体力) >= 10 か否かをチェックする
+    tellraw @a [{"text":"Return.MaxHealth: "},{"storage":"api:","nbt":"Return.MaxHealth"}]
+    tellraw @a [{"text":"Health: "},{"storage":"api:","nbt":"Health"}]
     execute store result score $LostHealth Temporary run scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    execute unless score $LostHealth Temporary matches 10.. run tag @s remove CanUsed
+    tellraw @a [{"text":"$LostHealth: "},{"score":{"objective":"Temporary","name":"$LostHealth"}}]
+    execute unless score $LostHealth Temporary matches 100.. run tag @s remove CanUsed
 
 # リセットは2.check_conditionで行う

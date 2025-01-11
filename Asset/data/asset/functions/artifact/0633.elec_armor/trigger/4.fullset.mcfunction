@@ -13,13 +13,13 @@
 
 # 雷耐性+3%
     data modify storage api: Argument.UUID set value [I;1,1,633,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 
 # 雷耐性+3%
     data modify storage api: Argument.UUID set value [I;1,1,633,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
 

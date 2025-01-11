@@ -30,7 +30,7 @@
     # 耐性貫通
         data modify storage lib: Argument.BypassModifier set value 1b
     # ダメージ
-        data modify storage lib: Argument.Damage set value 125
+        data modify storage lib: Argument.Damage set value 180
         execute as @p[tag=T1.Owner] run function lib:damage/modifier
         execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function lib:damage/
 

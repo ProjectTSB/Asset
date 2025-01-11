@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"盾雷のアクセサリー","color":"#FBFF80"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"近接攻撃をした対象に追加で雷魔法ダメージを与える"}','{"text":"祝福にて防御力を上げれば上げるほど"}','{"text":"与えるダメージが増える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象に防御力に比例したダメージを与える"}','{"text":"祝福の防御力バフに比例してダメージが上昇する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["§eダメージ=100+(防御力)×6"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["§e100+防御力×6"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

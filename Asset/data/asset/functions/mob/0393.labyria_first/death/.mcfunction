@@ -8,9 +8,15 @@
 # @private
     #declare tag AU.LabyriaDeath
 
-# スケジュール起動
-    tag @e[type=marker,tag=AX.Marker.SummonPoint,distance=..200] add AX.Death
-    schedule function asset:mob/0393.labyria_first/ai/general/5.death/schedule 1t
+# モデル削除
+    function animated_java:labyria/remove/all
+
+# マーカーキル
+    kill @e[type=marker,tag=AX.Marker.SummonPoint,distance=..200]
+
+# 召喚
+    data modify storage api: Argument.ID set value 2194
+    function api:object/summon
 
 # 管理用スライムに情報を送る
     scoreboard players operation $AX.Temp AU.Dummy.UUID = @s AU.Dummy.UUID

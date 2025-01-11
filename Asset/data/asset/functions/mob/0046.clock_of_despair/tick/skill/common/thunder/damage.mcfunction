@@ -14,18 +14,12 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0
 
 # ダメージ設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 60
-    # 魔法属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage api: Argument.ElementType set value "Thunder"
-    # 死亡ログ
-        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function api:damage/
-# リセット
+    data modify storage api: Argument.Damage set value 60
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    function api:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function api:damage/
     function api:damage/reset
 
 # キル

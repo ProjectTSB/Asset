@@ -8,13 +8,17 @@
 # @private
     #declare tag AU.EcualDeath
 
+# モデル削除
+    function animated_java:ecual/remove/all
+
 # ディスプレイ削除
     kill @e[type=item_display,tag=AW.AnnounceLine,distance=..200]
     kill @e[type=item_display,tag=AW.AnnounceLineEven,distance=..200]
+    kill @e[type=marker,tag=AW.Marker.SummonPoint,distance=..200]
 
-# スケジュール起動
-    tag @e[type=marker,tag=AW.Marker.SummonPoint,distance=..200] add AW.Death
-    schedule function asset:mob/0392.ecual_first/ai/general/8.death/schedule 1t
+# 召喚
+    data modify storage api: Argument.ID set value 2193
+    function api:object/summon
 
 # 管理用スライムに情報を送る
     scoreboard players operation $AW.Temp AU.Dummy.UUID = @s AU.Dummy.UUID

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスアーマー","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+3% 水攻撃+3%","color":"aqua"}]','[{"text":"一式揃えた場合、追加で","color":"white"}]','[{"text":"水耐性+3% 水攻撃+3%","color":"aqua"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+2% 水攻撃+1%","color":"aqua"}]','[{"text":"一式揃えた場合、追加で","color":"white"}]','[{"text":"水耐性+2% 水攻撃+2%","color":"aqua"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
