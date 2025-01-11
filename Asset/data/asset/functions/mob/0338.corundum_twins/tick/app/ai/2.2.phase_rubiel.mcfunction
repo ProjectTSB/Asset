@@ -10,5 +10,5 @@
 # フェーズ更新
     tag @s remove 9E.State.Phase.Rubiel
     tag @s add 9E.State.Phase.Sapphiel
-    tag @s remove 9E.State.GetAwait.Sappihel
+    tag @s remove 9E.State.GetAwait.Sapphiel
     tag @s remove 9E.State.GetAwait.Rubiel

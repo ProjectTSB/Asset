@@ -7,7 +7,7 @@
 # スキル判別用タグ消去
     tag @s remove 9E.Skill.Launcher
     tag @s remove 9E.State.Phase.Sync
-    tag @s add 9E.State.GetAwait.Sappihel
+    tag @s add 9E.State.GetAwait.Sapphiel
     tag @s add 9E.State.GetAwait.Rubiel
 
 # タイマーリセット

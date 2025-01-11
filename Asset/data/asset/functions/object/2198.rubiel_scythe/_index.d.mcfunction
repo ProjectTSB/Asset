@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2198.rubiel_scythe/**
-    #declare
+    #declare tag 9E.Object

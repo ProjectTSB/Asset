@@ -10,5 +10,5 @@
     # tag @s add 9E.Skill.GoAlong
     tag @s add 9E.Skill.Crossfire
     tag @s remove 9E.State.Await
-    tag @s remove 9E.State.GetAwait.Sappihel
+    tag @s remove 9E.State.GetAwait.Sapphiel
     tag @s remove 9E.State.GetAwait.Rubiel

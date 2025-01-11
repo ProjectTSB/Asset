@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2199.sapphiel_missile/**
-    #declare
+    #declare tag 9E.Object

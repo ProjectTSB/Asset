@@ -12,7 +12,7 @@
     function asset:mob/0338.corundum_twins/tick/app/skill/1.cancel
     scoreboard players set @s 9E.SkillTimer 0
     tag @s remove 9E.State.Await
-    tag @s remove 9E.State.GetAwait.Sappihel
+    tag @s remove 9E.State.GetAwait.Sapphiel
     tag @s remove 9E.State.GetAwait.Rubiel
     execute if entity @e[type=wither_skeleton,tag=9F.Target,tag=9F.Skill.Damage.Down] run tag @s add 9E.Skill.Damage
     execute unless entity @s[tag=9E.Skill.Damage] run tag @s add 9E.Skill.Sapphiel.Cover

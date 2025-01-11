@@ -10,7 +10,7 @@
     scoreboard players set @s 9E.SkillTimer 0
     tag @s add 9E.Skill.Stun
     tag @s remove 9E.State.Await
-    tag @s remove 9E.State.GetAwait.Sappihel
+    tag @s remove 9E.State.GetAwait.Sapphiel
     tag @s remove 9E.State.GetAwait.Rubiel
 
 # 演出

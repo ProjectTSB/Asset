@@ -10,6 +10,7 @@
         data modify storage api: Argument.Important set value true
         execute as @e[tag=9F.Root,tag=9F.Target] at @s run function api:artifact/spawn/from_id
     # 消去
+        # TODO：討伐演出再生
         execute as @e[tag=9F.ModelRoot,tag=9F.Target] run function animated_java:twins_sapphiel/remove/this
         execute as @e[tag=9F.Root,tag=9F.Target] run function api:mob/kill
         # function animated_java:twins_sapphiel/remove/all
@@ -20,6 +21,7 @@
         data modify storage api: Argument.Important set value true
         execute as @e[tag=9G.Root,tag=9G.Target] at @s run function api:artifact/spawn/from_id
     # 消去
+        # TODO：討伐演出再生
         execute as @e[tag=9G.ModelRoot,tag=9G.Target] run function animated_java:twins_rubiel/remove/this
         execute as @e[tag=9G.Root,tag=9G.Target] run function api:mob/kill
         # function animated_java:twins_rubiel/remove/all

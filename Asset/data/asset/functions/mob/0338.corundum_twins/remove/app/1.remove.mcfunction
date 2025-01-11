@@ -18,5 +18,8 @@
 # 中心点削除
     kill @e[type=marker,tag=9E.Marker.SpawnPoint,sort=nearest,limit=1]
 
+# オブジェクト消去
+    kill @e[tag=9E.Object]
+
 # 本来必要ないが、念のため紐づけ解除
     execute if entity @s[tag=9E.TargetEnabled] run function asset:mob/0338.corundum_twins/app/general/4.end_link_target

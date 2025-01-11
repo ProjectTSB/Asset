@@ -12,8 +12,8 @@
 # 移動
     execute if score @s 9G.AnimationTimer matches 1 facing entity @e[tag=9G.Temp.Target.Aec.1,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9G.AnimationTimer matches 20..32 run function asset:mob/0340.twins_rubiel/app/general/2.rotate
-    execute if score @s 9G.AnimationTimer matches 33..37 at @s positioned ^ ^0.2 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
-    execute if score @s 9G.AnimationTimer matches 38..42 at @s positioned ^ ^0.1 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 33..37 positioned ^ ^0.2 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    execute if score @s 9G.AnimationTimer matches 38..42 positioned ^ ^0.1 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
         execute if score @s 9G.AnimationTimer matches 25 positioned as @e[tag=9G.Temp.Target.Aec.1,sort=nearest,limit=1] positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^4 ^-3 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 26 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/41_cover/4.calc_vector_0

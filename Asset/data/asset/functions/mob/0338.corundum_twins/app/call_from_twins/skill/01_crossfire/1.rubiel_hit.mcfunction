@@ -7,7 +7,7 @@
 
 # 状態更新
     tag @s add 9E.Skill.Crossfire.Ruby.Hit
-    tag @s remove 9E.State.GetAwait.Sappihel
+    tag @s remove 9E.State.GetAwait.Sapphiel
 
 # 攻撃位置決定用
     summon area_effect_cloud ^ ^2 ^ {CustomNameVisible:0b,Particle:"block air",Duration:20,Tags:["Object","9E.Temp.Target.Aec.0"]}

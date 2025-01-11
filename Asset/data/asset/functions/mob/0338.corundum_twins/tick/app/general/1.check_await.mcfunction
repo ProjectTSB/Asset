@@ -5,8 +5,8 @@
 # @within function asset:mob/0338.corundum_twins/tick/**
 
 # タグ消去
-    execute if entity @s[tag=9E.State.GetAwait.Sappihel,tag=9E.State.GetAwait.Rubiel] run tag @s remove 9E.State.Await
-    execute unless entity @s[tag=9E.State.Await] run tag @s remove 9E.State.GetAwait.Sappihel
+    execute if entity @s[tag=9E.State.GetAwait.Sapphiel,tag=9E.State.GetAwait.Rubiel] run tag @s remove 9E.State.Await
+    execute unless entity @s[tag=9E.State.Await] run tag @s remove 9E.State.GetAwait.Sapphiel
     execute unless entity @s[tag=9E.State.Await] run tag @s remove 9E.State.GetAwait.Rubiel
 
 # タイマー増加

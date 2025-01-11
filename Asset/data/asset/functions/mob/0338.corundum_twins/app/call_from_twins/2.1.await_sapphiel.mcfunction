@@ -13,4 +13,4 @@
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_3_lc_shot_shot/2.end
 
 # 状態更新
-    tag @s add 9E.State.GetAwait.Sappihel
+    tag @s add 9E.State.GetAwait.Sapphiel
