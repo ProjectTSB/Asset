@@ -22,6 +22,8 @@
         data modify storage lib: Argument.AttackType set value "Magic"
     # 雷属性
         data modify storage lib: Argument.ElementType set value "Fire"
+    # MP回復
+        data modify storage api: Argument.AdditionalMPHeal set value 12f
 # 補正functionを実行
     execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=A9.This,limit=1] A9.UserID run function lib:damage/modifier
 # 攻撃した対象に実行
