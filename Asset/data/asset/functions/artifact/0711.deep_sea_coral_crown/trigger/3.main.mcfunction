@@ -22,21 +22,21 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 
-# 水攻撃+5%
+# 水攻撃
     data modify storage api: Argument.UUID set value [I;1,1,711,6]
     data modify storage api: Argument.Amount set value 0.07
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 体力回復量+5%
+# 体力回復量
     data modify storage api: Argument.UUID set value [I;1,1,711,6]
     data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/heal/add
 
-# 火耐性-10%
+# 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,711,6]
-    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Amount set value -0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/fire/add
 
