@@ -18,7 +18,7 @@
 # 付近のランダムな敵一体を対象とし、そいつの周辺に拡散
     tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..64,sort=random,limit=1] add MeteorTarget
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @e[type=#lib:living,tag=MeteorTarget,distance=..64,limit=1] MobUUID
-    execute at @e[type=#lib:living,tag=MeteorTarget,distance=..64,,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
+    execute at @e[type=#lib:living,tag=MeteorTarget,distance=..64,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
     data modify storage lib: Argument.Bounds set value [[8d,8d],[0.0d,0.0d],[8d,8d]]
     execute as @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
 
