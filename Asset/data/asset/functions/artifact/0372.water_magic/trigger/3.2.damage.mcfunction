@@ -24,4 +24,4 @@
     playsound entity.dolphin.splash player @a ~ ~ ~ 1 0
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
