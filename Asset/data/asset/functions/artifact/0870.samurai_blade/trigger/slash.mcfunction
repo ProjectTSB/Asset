@@ -9,7 +9,7 @@
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 30.0f
+    data modify storage api: Argument.Damage set value 35.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier

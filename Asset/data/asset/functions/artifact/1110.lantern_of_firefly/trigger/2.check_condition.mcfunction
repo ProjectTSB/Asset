@@ -16,10 +16,10 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players add @s UU.AttackCount 1
 
 # 回数が50未満ならCanUsedを削除
-    execute unless entity @s[scores={UU.AttackCount=50..}] run tag @s remove CanUsed
+    execute unless entity @s[scores={UU.AttackCount=25..}] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1110.lantern_of_firefly/trigger/3.main
 
 # 20以上ならカウントをリセット
-    execute if entity @s[scores={UU.AttackCount=50..}] run scoreboard players reset @s UU.AttackCount
+    execute if entity @s[scores={UU.AttackCount=25..}] run scoreboard players reset @s UU.AttackCount

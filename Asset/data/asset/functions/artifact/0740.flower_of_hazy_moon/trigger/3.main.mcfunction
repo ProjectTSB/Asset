@@ -17,15 +17,15 @@
     playsound minecraft:entity.allay.ambient_without_item player @a ~ ~ ~ 1 0.8
     playsound minecraft:entity.allay.ambient_with_item player @a ~ ~ ~ 1 0.5
 
-# 魔法攻撃+15%
+# 魔法攻撃
     data modify storage api: Argument.UUID set value [I;1,1,740,7]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/magic/add
 
-# 被回復量-25%
+# 被回復量
     data modify storage api: Argument.UUID set value [I;1,1,740,7]
-    data modify storage api: Argument.Amount set value -0.25
+    data modify storage api: Argument.Amount set value -0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/receive_heal/add
 
