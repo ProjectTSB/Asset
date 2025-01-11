@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0078.hunger/_/register",
         "asset:effect/0028.hunger/_/register",
         "asset:effect/0057.defense_base_debuff/_/register",
         "asset:effect/0067.slowness/_/register",
