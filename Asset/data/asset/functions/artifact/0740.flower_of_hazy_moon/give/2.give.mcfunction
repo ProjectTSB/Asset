@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"朧月の妖花","color":"#FFFFA3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法攻撃+15% ","color":"dark_purple"},{"text":"被回復量-25%","color":"dark_red"}]','[{"text":"微かに月光が射す時のみに咲く花。","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法攻撃+5% ","color":"dark_purple"},{"text":"被回復量-15%","color":"dark_red"}]','[{"text":"微かに月光が射す時のみに咲く花。","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

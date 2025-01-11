@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソーンブーツ","color":"#1D5923"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+5% ","color":"aqua"},{"text":"雷耐性+5%","color":"yellow"}]','[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+3% ","color":"aqua"},{"text":"雷耐性+3%","color":"yellow"}]','[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
