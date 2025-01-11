@@ -20,8 +20,8 @@
     execute unless score @s AC.Count.Attack matches 5 store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # カウント溜まってたら棺設置
-    execute if score @s AC.Count.Attack matches 5 run tag @s add AC.Coffin
-    execute if score @s AC.Count.Attack matches 5 run scoreboard players reset @s AC.Count.Attack
+    execute if score @s AC.Count.Attack matches 5.. run tag @s add AC.Coffin
+    execute if score @s AC.Count.Attack matches 5.. run scoreboard players reset @s AC.Count.Attack
 
 # デバッグのコマンド
 #    scoreboard players set $Random Temporary 1
