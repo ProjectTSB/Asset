@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1081.wandering_piece_of_dream/trigger/0.load",
         "asset:artifact/1029.conviction_bone/trigger/0.load",
         "asset:artifact/0566.great_sage_helmet/trigger/0.load",
         "asset:artifact/1017.cutlass_of_endless_silence/trigger/0.load",
@@ -45,7 +46,6 @@
         "asset:artifact/0172.icicle/trigger/0.load",
         "asset:artifact/0793.queen_bee_rocket/trigger/0.load",
         "asset:artifact/0870.samurai_blade/trigger/0.load",
-        "asset:artifact/0822.sound_of_a_star/trigger/0.load",
         "asset:artifact/0966.protection/trigger/0.load",
         "asset:artifact/0967.enhanced_protection/trigger/0.load",
         "asset:artifact/0005.musket_matchlock/trigger/0.load",

@@ -16,7 +16,7 @@
     # 補正function
         execute as @a if score @s UserID = @e[type=marker,tag=SL.This,limit=1] SL.UserID run function api:damage/modifier
     # 対象に
-        execute as @e[type=#lib:living,tag=Enemy,distance=..2,sort=nearest,limit=1] run function api:damage/
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2,sort=nearest,limit=1] run function api:damage/
 
 # リセット
     function api:damage/reset

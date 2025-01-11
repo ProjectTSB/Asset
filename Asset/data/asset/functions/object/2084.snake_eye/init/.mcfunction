@@ -14,4 +14,4 @@
 
 # 向きを発射母機と合わせる
     # tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
-    execute rotated as @e[tag=Enemy.Boss,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 80
+    execute rotated as @e[tag=Enemy.Boss,tag=!Uninterferable,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 80

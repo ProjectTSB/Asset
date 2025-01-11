@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"雷鳴","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷耐性+4%","color":"yellow"}','{"text":"セット効果で特殊な能力を得る"}','{"text":"セット効果発動時、雷耐性+9%","color":"yellow"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雷耐性+3% 雷攻撃+4%","color":"yellow"}','{"text":"セット効果で特殊な能力を得る"}','{"text":"セット効果発動時、雷耐性+5%","color":"yellow"}','{"text":"雷鳴が鳴り止むことはない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

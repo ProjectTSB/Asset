@@ -15,7 +15,7 @@
         execute positioned ~ ~1.5 ~ facing entity @e[type=#lib:living,tag=Attacker,distance=..50] eyes run function asset:artifact/0647.thorn_armor/trigger/8.exetend_thorn
 
 # 被ダメージ時体力回復
-    data modify storage lib: Argument.Heal set value 5.0f
+    data modify storage lib: Argument.Heal set value 4.0f
     function lib:heal/modifier
     function lib:heal/
     function lib:heal/reset

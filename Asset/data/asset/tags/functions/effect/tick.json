@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0205.convallatoxin/_/tick",
         "asset:effect/0618.soaked/_/tick",
         "asset:effect/0614.prominence_curse/_/tick",
         "asset:effect/0124.darkness/_/tick",
@@ -48,6 +49,7 @@
         "asset:effect/0203.secret_meat/_/tick",
         "asset:effect/0272.inspiration/_/tick",
         "asset:effect/0125.levitation/_/tick",
+        "asset:effect/0279.poison_of_vinderre/_/tick",
         "asset:effect/0258.spirit_melody/_/tick"
     ]
 }
