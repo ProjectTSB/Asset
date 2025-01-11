@@ -1,7 +1,7 @@
 #> asset:artifact/0787.aurora_helm/trigger/_index.d
-#> private
-#
-#
+# @private
+
+#> tag
 # @within function
 #   asset:artifact/0787.aurora_helm/trigger/fullset/**
 #   asset:artifact/0787.aurora_helm/trigger/dis_equip/main
