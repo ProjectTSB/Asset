@@ -22,7 +22,6 @@
     tag @s remove 9G.Skill.Damage.Stun.Start
     tag @s remove 9G.Skill.Damage.Stun
     tag @s remove 9G.Skill.Cover
-
     tag @s remove 9G.Skill.Kt.Start
     tag @s remove 9G.Skill.Kt.Idle
     tag @s remove 9G.Skill.Kt.Guard
@@ -44,11 +43,9 @@
     tag @s remove 9G.Skill.Kt.BackJump
     tag @s remove 9G.Skill.Kt.Throw.Start
     tag @s remove 9G.Skill.Kt.Throw
-
     tag @s remove 9G.Skill.Sc.Start
     tag @s remove 9G.Skill.Sc.Idle
     tag @s remove 9G.Skill.Sc.Warp
-
     tag @s remove 9G.Skill.Sync.Goalong
     tag @s remove 9G.Skill.Sync.Crossfire
     tag @s remove 9G.Skill.Sync.Crossfire.Upper

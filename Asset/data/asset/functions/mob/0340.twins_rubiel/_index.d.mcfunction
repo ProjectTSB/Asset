@@ -5,6 +5,7 @@
 # @within function asset:mob/0340.twins_rubiel/**
     # 自動生成ファンクション
         #declare function animated_java:twins_rubiel/animations/pause_all
+        #declare function animated_java:twins_rubiel/summon
         #declare function animated_java:twins_rubiel/animations/0_0_start/tween
         #declare function animated_java:twins_rubiel/animations/1_0_katana_start/tween
         #declare function animated_java:twins_rubiel/animations/2_0_0_idle_katana_normal/tween

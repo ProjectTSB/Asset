@@ -44,8 +44,8 @@
         #declare function animated_java:twins_sapphiel/animations/40_3_damage_stun_start/tween
         #declare function animated_java:twins_sapphiel/animations/40_4_damage_stun/tween
         #declare function animated_java:twins_sapphiel/animations/41_0_cover/tween
+        #declare function animated_java:twins_sapphiel/summon
         #declare function animated_java:twins_sapphiel/animations/pause_all
-    #
     # Root用
         # 共通
             #declare tag 9E.Root 処理用中心点

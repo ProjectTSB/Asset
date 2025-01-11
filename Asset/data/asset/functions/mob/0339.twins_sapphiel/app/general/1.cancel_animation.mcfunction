@@ -22,7 +22,6 @@
     tag @s remove 9F.Skill.Damage.Stun.Start
     tag @s remove 9F.Skill.Damage.Stun
     tag @s remove 9F.Skill.Cover
-
     tag @s remove 9F.Skill.Hg.Start
     tag @s remove 9F.Skill.Hg.Guard
     tag @s remove 9F.Skill.Hg.Idle
@@ -47,12 +46,10 @@
     tag @s remove 9F.Skill.Hg.Step.Right2Left
     tag @s remove 9F.Skill.Hg.Step.Left2Right
     tag @s remove 9F.Skill.Hg.Step.Back
-
     tag @s remove 9F.Skill.Lc.Start
     tag @s remove 9F.Skill.Lc.Jump
     tag @s remove 9F.Skill.Lc.Aim
     tag @s remove 9F.Skill.Lc.Shot
-
     tag @s remove 9F.Skill.Sync.Goalong
     tag @s remove 9F.Skill.Sync.Crossfire
     tag @s remove 9F.Skill.Sync.Crossfire.Pursuit
