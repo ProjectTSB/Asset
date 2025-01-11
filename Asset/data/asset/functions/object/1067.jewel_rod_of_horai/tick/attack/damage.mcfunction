@@ -6,11 +6,6 @@
 #
 # @within function asset:object/1067.jewel_rod_of_horai/tick/
 
-#>prv
-# @private
-    #declare score_holder $MS.OwnerID
-    #declare tag MS.Owner
-
 # 攻撃実行者のID取得
     execute store result score $MS.OwnerID Temporary run data get storage asset:context this.OwnerID
     execute as @a if score @s UserID = $MS.OwnerID Temporary run tag @s add MS.Owner
