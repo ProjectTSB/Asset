@@ -17,7 +17,6 @@
     execute if entity @s[tag= Enemy.Boss] run scoreboard players operation $Damage Temporary *= $Multi.Angel Temporary
 # 攻撃
     execute store result storage api: Argument.Damage double 0.01 run scoreboard players get $Damage Temporary
-    tellraw @a [{"score":{"name":"$Damage","objective":"Temporary"}}]
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.AttackType set value "Thunder"
     data modify storage api: Argument.FixedDamage set value true
