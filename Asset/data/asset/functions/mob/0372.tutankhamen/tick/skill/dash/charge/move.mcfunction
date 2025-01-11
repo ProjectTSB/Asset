@@ -31,13 +31,13 @@
     execute at @e[type=marker,tag=AC.ModelLocator.Weapon,distance=..16,limit=1] run particle dust 1 1 0 2 ~ ~1 ~ 0.1 0.1 0.1 0 5
 
 # ダメージ判定
-    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.Damage set value 30f
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
     function api:damage/modifier
 # 対象
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..1] run function api:damage/
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
 # リセット
     function api:damage/reset
