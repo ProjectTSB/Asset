@@ -1,4 +1,8 @@
 #> asset:mob/alias/214/register
-# @within asset_manager:mob/register/register.m
+#
+# Mobのデータ指定処理のエイリアス
+#
+# @within asset_manager:mob/triggers/summon/register.m
 
-function asset:mob/0214.water_magic/register
+# 元の登録処理を呼び出す
+   function asset:mob/0214.drone/register

@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"鋼","color":"gray"},{"text":"鬼","color":"red"},{"text":"針","color":"gray"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"鬼の伝承に語られる武器のひとつ","color":"white"}','{"text":"敵に微弱な貫通ダメージを与える。","color":"white"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

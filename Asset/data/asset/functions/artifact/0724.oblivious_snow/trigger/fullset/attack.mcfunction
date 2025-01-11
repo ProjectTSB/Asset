@@ -17,6 +17,6 @@
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
     function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64,sort=nearest,limit=1] run function lib:damage/
 # リセット
     function lib:damage/reset

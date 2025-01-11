@@ -1,4 +1,4 @@
 #> asset:mob/0202.hunters_dream/summon/
 # @within asset:mob/alias/202/summon
 
-summon skeleton ~ ~ ~ {Tags:["MobInit"],DeathLootTable:"asset:mob/death/0202.hunters_dream"}
+summon skeleton ~ ~ ~ {Tags:["MobInit"]}

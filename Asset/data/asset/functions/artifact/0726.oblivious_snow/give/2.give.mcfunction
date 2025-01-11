@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"白銀の面影","color":"#ABF4FF"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+10%","color":"aqua"}]','{"text":"被回復量-15%","color":"dark_red"}','[{"text":"「故郷の面影はなく、白銀の荒野が広がるのみ。","color":"gray","italic":true}]','[{"text":" ただ氷風と深雪だけの地と化していた。」","color":"gray","italic":true}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

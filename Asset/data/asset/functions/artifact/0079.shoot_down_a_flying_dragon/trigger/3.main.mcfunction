@@ -74,7 +74,10 @@
 # 効果
     # 通常Hit処理
         execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
-        effect clear @e[type=#lib:living,tag=Hit,distance=..10,limit=1] levitation
+
+    # 敵1体の浮遊を解除
+        data modify storage api: Argument.ID set value 125
+        execute as @e[type=#lib:living,tag=Hit,distance=..10,limit=1] run function api:entity/mob/effect/remove/from_id
 
 # リセット
     tag @e[type=#lib:living,type=!player,tag=Hit,distance=..10] remove Hit

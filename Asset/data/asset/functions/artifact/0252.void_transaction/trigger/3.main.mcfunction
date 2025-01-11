@@ -18,3 +18,4 @@
 # ないなら呼び出し
     execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 204
     execute unless data storage api: Return.Effect run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

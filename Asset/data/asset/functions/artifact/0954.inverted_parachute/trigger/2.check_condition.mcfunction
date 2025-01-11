@@ -9,8 +9,10 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
-    execute if entity @s[gamemode=!survival,tag=CanUsed] run function lib:message/artifact/can_not_use_here
-    execute if entity @s[gamemode=!survival] run tag @s remove CanUsed
+
+# tpbanエリアでは使用不可
+    execute if predicate lib:is_ban_tp_area run function lib:message/artifact/can_not_use_here
+    execute if predicate lib:is_ban_tp_area run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0954.inverted_parachute/trigger/3.main

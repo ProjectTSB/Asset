@@ -29,4 +29,7 @@
     function api:modifier/defense/physical/add
 
 # 最大体力+8
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-028000000004 "MaxHealth" 8 add
+    data modify storage api: Argument.UUID set value [I;1,1,640,4]
+    data modify storage api: Argument.Amount set value 8
+    data modify storage api: Argument.Operation set value "add"
+    function api:modifier/max_health/add

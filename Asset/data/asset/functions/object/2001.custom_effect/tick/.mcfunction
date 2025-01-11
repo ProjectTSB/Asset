@@ -18,7 +18,7 @@
     execute unless data storage asset:temp 2001.Frame run kill @s
 
 # データを削除
-    data remove storage asset:temp 2001.Frame
-
+    data remove storage asset:temp 2001
+    
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true

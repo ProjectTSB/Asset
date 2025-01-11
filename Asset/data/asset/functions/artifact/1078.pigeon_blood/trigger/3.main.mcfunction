@@ -39,6 +39,7 @@
 # 自身に共鳴・紅バフを付与
     data modify storage api: Argument.ID set value 228
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 周囲に共鳴・蒼バフを持っているプレイヤーがいないか探す
     execute as @a[distance=..20] run function asset:artifact/1078.pigeon_blood/trigger/4.search_resonance
@@ -64,7 +65,7 @@
     execute if predicate lib:random_pass_per/20 run tag @s add Critical
 
 # クリティカル演出
-    execute if entity @s[tag=Critical] anchored eyes positioned ^ ^ ^ run particle note ~ ~0.4 ~ 0 0 0 1 1 normal @a
+    execute if entity @s[tag=Critical] anchored eyes positioned ^ ^ ^ run particle note ~ ~0.4 ~ 0.22 0 0 1 0 normal @a
     execute if entity @s[tag=Critical] at @e[type=#lib:living,tag=Victim,distance=..10] run particle end_rod ~ ~1.2 ~ 0 0 0 0.25 30
 
 # ダメージ

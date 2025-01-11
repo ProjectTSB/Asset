@@ -55,7 +55,7 @@
         ]
     ],
     "datapack.lint.nameOfObjectives": [
-        "error",
+        "information",
         {
             "label": "ChainedPascalCase",
             "allowLessParts": true,
@@ -65,7 +65,7 @@
         }
     ],
     "datapack.lint.nameOfTags": [
-        "error",
+        "information",
         [
             {
                 "label": "ChainedPascalCase",
@@ -624,8 +624,10 @@
                         "    data modify storage asset:artifact Name set value ",
                         "# 神器の説明文 (TextComponentString[])",
                         "    data modify storage asset:artifact Lore set value []",
-                        "# MP以外の消費物 (TextComponentString) (オプション)",
-                        "    # data modify storage asset:artifact CostText set value ",
+                        "# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)",
+                        "    # data modify storage asset:artifact ConsumeItem.Item set value '{\"translate\":\"item.minecraft.stick\"}'",
+                        "    # data modify storage asset:artifact ConsumeItem.Count set value 1",
+                        "    # data modify storage asset:artifact ConsumeItem.Extra set value ",
                         "# 使用回数 (int) (オプション)",
                         "    # data modify storage asset:artifact RemainingCount set value ",
                         "# 神器を発動できるスロット (string) Wikiを参照",
@@ -1400,6 +1402,25 @@
             ]
         },
         {
+            "label": "神器/トリガー: 弓発射",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/shot.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
             "label": "神器/トリガー: tick",
             "generates": [
                 {
@@ -1643,47 +1664,6 @@
                         "   data modify storage api: Argument.ID set value %id%",
                         "   function api:mob/summon"
                     ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/loot_tables/mob/death/%namespace%.json",
-                    "content": {
-                        "type": "entity",
-                        "pools": [
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "asset:mob/death/abstract_detect_item",
-                                        "functions": [
-                                            {
-                                                "function": "set_nbt",
-                                                "tag": "{TSB:{ID:%id%}}"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "rolls": 1,
-                                "entries": [
-                                    {
-                                        "type": "loot_table",
-                                        "name": "entities/%entity%"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
                 }
             ]
         },
@@ -1701,7 +1681,7 @@
                         "# @within asset:mob/alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
-                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"],DeathLootTable:\"asset:mob/death/%namespace%\"}",
+                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
                         ""
                     ]
                 },
@@ -1792,7 +1772,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:mob/tick/tick.m",
+                        "# @within asset_manager:mob/triggers/call_method/run_method.m",
                         "",
                         "# 本来の処理を呼び出す",
                         "   function asset:mob/%namespace%/%method_name%/"
@@ -1815,7 +1795,7 @@
             ]
         },
         {
-            "label": "MOB/テンプレート: _index.d ",
+            "label": "Mob/テンプレート: _index.d ",
             "generates": [
                 {
                     "type": "file",
@@ -1832,7 +1812,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 攻撃",
+            "label": "Mob/トリガー: 攻撃",
             "generates": [
                 {
                     "type": "file",
@@ -1871,7 +1851,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 被ダメージ",
+            "label": "Mob/トリガー: 被ダメージ",
             "generates": [
                 {
                     "type": "file",
@@ -1910,7 +1890,7 @@
             ]
         },
         {
-            "label": "MOB/トリガー: 死亡",
+            "label": "Mob/トリガー: 死亡",
             "generates": [
                 {
                     "type": "file",
@@ -2027,7 +2007,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: 再Join",
+            "label": "Mob/特殊トリガー: 再Join",
             "generates": [
                 {
                     "type": "file",
@@ -2057,7 +2037,7 @@
             ]
         },
         {
-            "label": "MOB/特殊トリガー: remove",
+            "label": "Mob/特殊トリガー: remove",
             "generates": [
                 {
                     "type": "file",
@@ -2075,7 +2055,7 @@
                     "type": "file",
                     "rel": "data/asset/functions/mob/alias/%id%/remove.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/init",
+                        "#> asset:mob/alias/%id%/remove",
                         "#",
                         "# Remove処理のエイリアス",
                         "#",
@@ -2134,6 +2114,10 @@
                         "    # data modify storage asset:effect ProcessOnDied set value ",
                         "# 消すのに必要なレベル (int) (default = 1)",
                         "    # data modify storage asset:effect RequireClearLv set value ",
+                        "# エフェクトをUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect Visible set value ",
+                        "# エフェクトのスタックををUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect StackVisible set value",
                         "",
                         "# フィールド",
                         "    # data modify storage asset:effect Field set value {}"
@@ -2161,6 +2145,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2217,6 +2202,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2259,6 +2245,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/load"
                     }
@@ -2318,6 +2305,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/given"
                     }
@@ -2368,6 +2356,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/re-given"
                     }
@@ -2418,6 +2407,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/end"
                     }
@@ -2468,6 +2458,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/remove"
                     }
@@ -2518,6 +2509,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/tick"
                     }
@@ -2548,10 +2540,12 @@
                         "# 継承(オプション)",
                         "    # data modify storage asset:object Extends append value ",
                         "    # function asset:object/extends",
-                        "# 他のモブに継承されることを許可するか (boolean) (オプション)",
+                        "# 他のObjectに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:object ExtendsSafe set value ",
-                        "# 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)",
+                        "# 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)",
                         "    data modify storage asset:object IsAbstract set value false",
+                        "# Tickするかどうか(boolean) (オプション)",
+                        "    # data modify storage asset:object IsTicking set value ",
                         "",
                         "# ID (int)",
                         "    data modify storage asset:object ID set value %id%",
@@ -2600,7 +2594,7 @@
             ]
         },
         {
-            "label": "Object/ 召喚処理",
+            "label": "Object/召喚処理",
             "generates": [
                 {
                     "type": "file",
@@ -2642,7 +2636,7 @@
                 {
                     "name": "entity",
                     "question": "元となるentity",
-                    "pattern": "area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|boat|cat|cave_spider|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fox|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|iron_golem|item|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
+                    "pattern": "allay|area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|block_display|boat|breeze|camel|cat|cave_spider|chest_boat|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fishing_bobber|fox|frog|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|interaction|iron_golem|item|item_display|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|sniffer|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tadpole|text_display|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|warden|wind_charge|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
                     "patternErrorMessage": "Entityの名前のみが許されるよ"
                 }
             ]
@@ -2806,7 +2800,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
+                        "# @within asset_manager:object/call_method/run_method.m",
                         "",
                         "# 元のメソッド処理を呼び出す",
                         "    function asset:object/%namespace%/%method_name%/"

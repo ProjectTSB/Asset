@@ -1,4 +1,4 @@
 #> asset:mob/0182.skull_raven/summon/
 # @within asset:mob/alias/182/summon
 
-summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysSlowFall"],NoGravity:1b,DeathLootTable:"asset:mob/death/0182.skull_raven"}
+summon wither_skeleton ~ ~ ~ {Tags:["MobInit","AlwaysSlowFall"],NoGravity:1b}

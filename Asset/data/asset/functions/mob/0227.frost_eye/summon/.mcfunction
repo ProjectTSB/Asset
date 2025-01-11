@@ -5,4 +5,4 @@
 # @within asset:mob/alias/227/summon
 
 # 元となるMobを召喚する
-    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0227.frost_eye"}
+    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}

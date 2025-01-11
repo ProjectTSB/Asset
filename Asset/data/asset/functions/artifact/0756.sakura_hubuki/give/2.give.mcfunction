@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"冰刀 桜吹雪","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"攻撃時、確率で","color":"white"},{"text":"氷桜","color":"aqua"},{"text":"を展開する。","color":"white"}]','[{"text":"氷桜","color":"aqua"},{"text":"展開時","color":"white"}]','[{"text":"周囲のMobに本来の70%分のダメージを与える。","color":"white"}]','{"text":"氷桜を模った蒼い刀。","color":"gray"}','[{"text":"氷の様に冷酷に","color":"#BAF8FF"}]','[{"text":"桜の様に美しく敵を斬る。","color":"#FDBDFF"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

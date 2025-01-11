@@ -1,4 +1,8 @@
 #> asset:mob/alias/188/register
-# @within asset_manager:mob/register/register.m
+#
+# Mobのデータ指定処理のエイリアス
+#
+# @within asset_manager:mob/triggers/summon/register.m
 
-function asset:mob/0188.fireball/register
+# 元の登録処理を呼び出す
+   function asset:mob/0188.piglin_elite/register

@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"臆病者の魂","color":"dark_aqua"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"臆病な者の怯えた思いが込められた魂"}','{"text":"ダメージを受けると恐ろしくなり家へと逃げ帰る"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 5
 # 神器を発動できるスロット (string) Wikiを参照

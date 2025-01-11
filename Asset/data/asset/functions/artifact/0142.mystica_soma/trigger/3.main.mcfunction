@@ -15,9 +15,9 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # MP回復
-    execute store result storage asset:temp 3Y.Temp double 0.55 run function lib:mp/get_max
-    execute store result score $Fluctuation Lib run data get storage asset:temp 3Y.Temp
-    function lib:mp/fluctuation
+    function api:mp/get_max
+    execute store result storage api: Argument.Fluctuation double 0.55 run data get storage api: Return.MaxMP
+    function api:mp/fluctuation
 
 # HP回復
     function api:modifier/max_health/get
@@ -27,4 +27,4 @@
 
 # リセット
     function lib:heal/reset
-    data remove storage asset:temp 3Y.Temp
+    data remove storage asset:temp 3Y

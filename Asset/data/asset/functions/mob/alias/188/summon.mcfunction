@@ -1,4 +1,8 @@
 #> asset:mob/alias/188/summon
-# @within asset_manager:mob/summon/summon.m
+#
+# Mob召喚処理のエイリアス
+#
+# @within asset_manager:mob/triggers/summon/summon.m
 
-function asset:mob/0188.fireball/summon/
+# 本来の処理を呼び出す
+   function asset:mob/0188.piglin_elite/summon/

@@ -13,11 +13,13 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"蒼海のテレーム","color":"#3DFFF9"}'
+    data modify storage asset:artifact Name set value '{"text":"蒼海のテレーム","color":"#5fc5ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身の現在体力の100%分斬撃ダメージがアップする。"}','[{"text":"3段目の攻撃後、"},{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"による追撃を行う。"}]','[{"text":"蒼波の剣","color":"#3DFFF9"},{"text":"は自身の最大体力の160%分のダメージを与え","color":"white"}]','[{"text":"最大体力1列につき1本増加する。(最大10本)","color":"white"}]','{"text":"神の意志宿せし蒼海の剣。","color":"gray"}','{"text":"海の息吹に導かれ、祝福の光を灯す。","color":"gray"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"自身の現在体力の100%分斬撃ダメージがアップする。"}','[{"text":"3段目の攻撃後、"},{"text":"蒼波の剣","color":"#5fc5ff"},{"text":"による追撃を行う。"}]','[{"text":"蒼波の剣","color":"#5fc5ff"},{"text":"は自身の最大体力の160%分のダメージを与え","color":"white"}]','[{"text":"最大体力1列につき1本増加する。","color":"white"}]','{"text":"(各効果は最大体力10列の時に効果最大)","color":"white"}','{"text":"神の意志宿せし蒼海の剣。","color":"gray"}','{"text":"海の息吹に導かれ、祝福の光を灯す。","color":"gray"}']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
@@ -35,7 +37,7 @@
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "condition"
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)

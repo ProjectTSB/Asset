@@ -1,20 +1,56 @@
 {
-    "type": "entity",
+    "type": "minecraft:entity",
     "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "loot_table",
-                    "name": "asset:mob/death/abstract_detect_item",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{TSB:{ID:363}}"
-                        }
-                    ]
-                }
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 0.0,
+          "max": 1.0
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:book",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              }
             ]
-        }
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 5
+                },
+                "conditions": []
+              }
+            ],
+            "conditions": []
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:string",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            ]
+          }
+        ]
+      }
     ]
-}
+  }
