@@ -4,10 +4,11 @@
 #
 # @within asset:object/alias/2087/hit_entity
 
-# ダメージ
-data modify storage api: Argument.Damage set value 700f
+# 割合ダメージ
+execute as @e[type=#lib:living,tag=Enemy,distance=..7] run function api:modifier/max_health/get
+execute store result storage lib: Argument.Damage float 0.003 run data get storage api: Return.MaxHealth 10
 data modify storage api: Argument.AttackType set value "Physical"
-data modify storage api: Argument.ElementType set value "Fire"
+data modify storage api: Argument.ElementType set value "None"
 data modify storage api: Argument.FixedDamage set value true
 function api:damage/modifier
 execute as @e[type=#lib:living,tag=Enemy,distance=..7] run function api:damage/
