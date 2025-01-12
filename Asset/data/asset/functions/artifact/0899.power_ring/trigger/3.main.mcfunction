@@ -1,8 +1,8 @@
-#> asset:artifact/0899.flame_ring/trigger/3.main
+#> asset:artifact/0899.power_ring/trigger/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/0899.flame_ring/trigger/2.check_condition
+# @within function asset:artifact/0899.power_ring/trigger/2.check_condition
 
 #> 個数
 # @private
@@ -15,6 +15,6 @@
 
 # VFX
     playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.7
-    particle flame ~ ~1 ~ 0.5 0.8 0.5 0.1 100
+    particle trial_spawner_detection ~ ~1 ~ 0.8 0.4 0.8 0 20
 # 補正を追加
-    function asset:artifact/0899.flame_ring/trigger/add_modifier
+    function asset:artifact/0899.power_ring/trigger/add_modifier
