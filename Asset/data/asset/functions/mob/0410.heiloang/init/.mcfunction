@@ -11,7 +11,7 @@
     # 登場演出再生
         tag @s add BE.Skill.Start
     # 中心点設置
-        summon marker ~ ~ ~ {Tags:["BE.CenterPosition"]}
+        summon marker ~ ~0.5 ~ {Tags:["BE.CenterPosition"]}
         execute as @e[type=marker,tag=BE.CenterPosition] at @s run tp @s ~ ~ ~ 0 0
     # 移動
         execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
