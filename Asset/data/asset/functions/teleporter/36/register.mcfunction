@@ -5,14 +5,14 @@
 # @within function asset:teleporter/36/
 
 
-execute unless loaded -225 170 4 run return 1
+execute unless loaded 82 86 -230 run return 1
 
 # ID (int)
     data modify storage asset:teleporter ID set value 36
 # Dimension (string[minecraft:dimension])
     data modify storage asset:teleporter Dimension set value "minecraft:overworld"
 # Pos ([int] @ 3)
-    data modify storage asset:teleporter Pos set value [-225, 170, 4]
+    data modify storage asset:teleporter Pos set value [82, 86, -230]
 # GroupIDs ([string])
     data modify storage asset:teleporter GroupIDs set value ["islands"]
 # デフォルトの起動状態 ("InvisibleDeactivate" | "VisibleDeactivate" | "Activate")

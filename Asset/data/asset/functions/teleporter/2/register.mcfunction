@@ -1,14 +1,14 @@
-#> asset:teleporter/1/register
+#> asset:teleporter/2/register
 #
 # テレポーターの定義データ
 #
-# @within function asset:teleporter/1/
+# @within function asset:teleporter/2/
 
 
 execute unless loaded -16 21 -2 run return 1
 
 # ID (int)
-    data modify storage asset:teleporter ID set value 1
+    data modify storage asset:teleporter ID set value 2
 # Dimension (string[minecraft:dimension])
     data modify storage asset:teleporter Dimension set value "minecraft:overworld"
 # Pos ([int] @ 3)

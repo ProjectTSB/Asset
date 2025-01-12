@@ -14,7 +14,7 @@ execute unless loaded -3438 140 -897 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:teleporter Pos set value [-3438, 140, -897]
 # GroupIDs ([string])
-    data modify storage asset:teleporter GroupIDs set value ["arena-42"]
+    data modify storage asset:teleporter GroupIDs set value ["arena-43"]
 # デフォルトの起動状態 ("InvisibleDeactivate" | "VisibleDeactivate" | "Activate")
     data modify storage asset:teleporter ActivationState set value "Activate"
 # 色 ([int @ 0..255] @ 3)

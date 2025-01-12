@@ -1,18 +1,18 @@
-#> asset:teleporter/4/register
+#> asset:teleporter/63/register
 #
 # テレポーターの定義データ
 #
-# @within function asset:teleporter/4/
+# @within function asset:teleporter/63/
 
 
-execute unless loaded 23 10 53 run return 1
+execute unless loaded -454 177 58 run return 1
 
 # ID (int)
-    data modify storage asset:teleporter ID set value 4
+    data modify storage asset:teleporter ID set value 63
 # Dimension (string[minecraft:dimension])
     data modify storage asset:teleporter Dimension set value "minecraft:overworld"
 # Pos ([int] @ 3)
-    data modify storage asset:teleporter Pos set value [23, 10, 53]
+    data modify storage asset:teleporter Pos set value [-454, 177, 58]
 # GroupIDs ([string])
     data modify storage asset:teleporter GroupIDs set value ["islands"]
 # デフォルトの起動状態 ("InvisibleDeactivate" | "VisibleDeactivate" | "Activate")
