@@ -18,7 +18,7 @@
 # 効果
     data modify storage api: Argument.ID set value 264
     function api:entity/mob/effect/give
-
+    function api:entity/mob/effect/reset
 
 # タグ付与
     tag @s add RJ.SoulMate
