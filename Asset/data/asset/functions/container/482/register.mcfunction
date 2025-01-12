@@ -12,7 +12,7 @@ execute unless loaded 230 137 126 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [230, 137, 126]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:dropper[facing=east,type=null]"
+    data modify storage asset:container Block set value "minecraft:dropper[facing=east]"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

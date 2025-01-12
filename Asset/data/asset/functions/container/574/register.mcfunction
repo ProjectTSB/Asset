@@ -12,7 +12,7 @@ execute unless loaded 25 10 58 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [25, 10, 58]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:barrel[facing=north,type=null]"
+    data modify storage asset:container Block set value "minecraft:barrel[facing=north]"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

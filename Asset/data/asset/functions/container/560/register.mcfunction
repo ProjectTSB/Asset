@@ -12,7 +12,7 @@ execute unless loaded 182 43 -38 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [182, 43, -38]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:dispenser[facing=down,type=null]"
+    data modify storage asset:container Block set value "minecraft:dispenser[facing=down]"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

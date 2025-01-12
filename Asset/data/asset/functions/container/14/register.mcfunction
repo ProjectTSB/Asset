@@ -12,7 +12,7 @@ execute unless loaded 29 17 -31 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [29, 17, -31]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:hopper[facing=down,type=null]"
+    data modify storage asset:container Block set value "minecraft:hopper[facing=down]"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
