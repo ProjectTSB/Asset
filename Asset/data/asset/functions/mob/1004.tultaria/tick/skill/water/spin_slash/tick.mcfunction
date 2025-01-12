@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/1004.tultaria/tick/base_move/skill_active
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $Interval
+
 # 剣を召喚
     # アニメ
         execute if score @s General.Mob.Tick matches 17 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}
@@ -12,6 +16,13 @@
 
 # 幻影にも剣を召喚
     execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/water/sword_spin/
+
+# 実行時間を移す
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
+
+# 回転中のダメージ
+    scoreboard players operation $Interval Temporary %= $10 Const
+    execute if score @s General.Mob.Tick matches 20..100 if score $Interval Temporary matches 0 run function asset:mob/1004.tultaria/tick/skill/water/spin_slash/spin_damage
 
 # 剣を振りながら前進
     # 付近のプレイヤーの方を向く

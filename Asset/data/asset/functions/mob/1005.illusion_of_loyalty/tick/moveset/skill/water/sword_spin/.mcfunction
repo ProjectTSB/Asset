@@ -4,6 +4,17 @@
 #
 # @within function asset:mob/1005.illusion_of_loyalty/tick/
 
+#> インターバル用スコアホルダー
+# @private
+    #declare score_holder $Interval
+
+# 実行時間を移す
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
+
+# 回転中のダメージ
+    scoreboard players operation $Interval Temporary %= $10 Const
+    execute if score @s General.Mob.Tick matches 0..80 if score $Interval Temporary matches 0 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/sword_spin/spin_damage
+
 # プレイヤーのほうを向く
     execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ 0
 

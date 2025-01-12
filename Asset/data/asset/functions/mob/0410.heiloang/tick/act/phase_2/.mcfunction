@@ -28,8 +28,14 @@
 # 3属性技
     execute if score @s BE.ActCount matches 6 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:1}
 
-# 3属性技
-    execute if score @s BE.ActCount matches 7 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:2}
+# 待機
+    execute if score @s BE.ActCount matches 7 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
 
 # 3属性技
-    execute if score @s BE.ActCount matches 8 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:3}
+    execute if score @s BE.ActCount matches 8 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:2}
+
+# 待機
+    execute if score @s BE.ActCount matches 9 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
+
+# 3属性技
+    execute if score @s BE.ActCount matches 10 run function asset:mob/0410.heiloang/tick/act/phase_1/element.m {Count:3}
