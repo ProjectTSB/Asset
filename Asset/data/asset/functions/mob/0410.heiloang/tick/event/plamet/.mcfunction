@@ -30,7 +30,8 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 121 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_2_plamet_dive
     # 対象を向く
-        execute if score @s BE.EventTimer matches 121 at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
+        execute if score @s BE.EventTimer matches 114 if predicate api:global_vars/difficulty/max/normal at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
+        execute if score @s BE.EventTimer matches 121 if predicate api:global_vars/difficulty/min/hard at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
         execute if score @s BE.EventTimer matches 121..138 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target_aec
         execute if score @s BE.EventTimer matches 138 at @s positioned ~ ~-7 ~ run function asset:mob/0410.heiloang/tick/event/plamet/dive_prediction
     # 移動
