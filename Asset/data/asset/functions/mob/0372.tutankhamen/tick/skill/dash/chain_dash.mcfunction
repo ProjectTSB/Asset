@@ -8,7 +8,7 @@
     scoreboard players set @s General.Mob.Tick -1
 
 # 即座に付近のプレイヤーを見る
-    execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[type=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
 # Tagを削除
     tag @s remove AC.Dash.Left

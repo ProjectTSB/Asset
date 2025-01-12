@@ -38,6 +38,6 @@
 # 補正functionを実行
     function api:damage/modifier
 # 対象
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
+    execute as @p[gamemode=!spectator,tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
 # リセット
     function api:damage/reset
