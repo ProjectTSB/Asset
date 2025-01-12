@@ -13,9 +13,9 @@
     execute positioned ~ ~2 ~ facing entity @e[type=wither_skeleton,scores={MobID=392},distance=..25] eyes run function asset:mob/0398.crystal_healer/ai/heal/loop
  
 # 回復
-# 難易度値によって回復量が変動 150N
+# 難易度値によって回復量が変動 200N
     function api:global_vars/get_difficulty
-    execute store result storage api: Argument.Heal int 150 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Heal int 200 run data get storage api: Return.Difficulty
     function api:heal/modifier
     execute as @e[type=wither_skeleton,scores={MobID=392},distance=..25] run function api:heal/
     function api:heal/reset
