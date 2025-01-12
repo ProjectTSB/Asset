@@ -5,7 +5,7 @@
 # @within function asset:mob/0055.hetukedah/tick/skill_active
 
 # ゆっくりと狙う
-    execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ ~
 
 # 予備動作
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0055.hetukedah/tick/skill/otete_beam/windup
