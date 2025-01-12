@@ -16,8 +16,9 @@
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
-# 現状、複数攻撃判定が動作しないので暫定で干渉可能にしている。修正され次第、falseに戻す
-    data modify storage asset:mob Interferable set value true
+    data modify storage asset:mob Interferable set value false
+# Type (string) Wikiを参照
+    data modify storage asset:mob IsForwardTarget set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『黒龍』"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
