@@ -31,10 +31,10 @@
 
 # 追撃
     execute if entity @s[scores={General.Object.Tick=5}] run function asset:object/2128.heiloang_powerbreath/tick/prediction
-    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/2128.heiloang_powerbreath/tick/damage_pursuit
-    execute if entity @s[scores={General.Object.Tick=20}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:5}
-    execute if entity @s[scores={General.Object.Tick=22}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:10}
-    execute if entity @s[scores={General.Object.Tick=24}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:15}
+    execute if entity @s[scores={General.Object.Tick=28}] run function asset:object/2128.heiloang_powerbreath/tick/damage_pursuit
+    execute if entity @s[scores={General.Object.Tick=28}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:5}
+    execute if entity @s[scores={General.Object.Tick=30}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:10}
+    execute if entity @s[scores={General.Object.Tick=32}] run function asset:object/2128.heiloang_powerbreath/tick/effect_pursuit.m {Distance:15}
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=24..}]
+    kill @s[scores={General.Object.Tick=33..}]
