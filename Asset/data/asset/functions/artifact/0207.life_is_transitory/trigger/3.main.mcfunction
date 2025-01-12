@@ -9,10 +9,14 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# プレイヤーのHPを1に
-    scoreboard players set $Set Lib 1
-    function lib:score_to_health_wrapper/set
+# TODO：CBT後にエフェクトにする
+
+# 最大体力-99%
+    data modify storage api: Argument.UUID set value [I;1,1,207,2]
+    data modify storage api: Argument.Amount set value -0.99
+    data modify storage api: Argument.Operation set value "multiply"
+    function api:modifier/max_health/add
 
 # 効果・演出
-    effect give @s invisibility 1 1 true
-    particle minecraft:poof ~ ~ ~ 0 0 0 0.1 1
+    effect give @s invisibility infinite 1 true
+    # particle minecraft:poof ~ ~ ~ 0 0 0 0.1 1

@@ -6,11 +6,10 @@
 #   function asset:mob/alias/327/remove
 #   function asset:mob/0327.eclael/init/
 
-datapack disable "file/AJ_Eclael.zip"
+# 継承元の処理を実行
+    function asset:mob/super.remove
 
 # 死亡演出スキップ
-    tag @s add 93.SkipDeathFunc
+    execute as @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] run function animated_java:eclael/remove/this
 
-# 消去終了
-    tp @s ~ ~-100 ~
-    kill @s
+datapack disable "file/AJ_Eclael.zip"

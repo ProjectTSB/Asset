@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/alias/380/death
 
-datapack disable "file/AJ_Haruclaire.zip"
-
 # 継承元の処理実行
     function asset:mob/super.death
 

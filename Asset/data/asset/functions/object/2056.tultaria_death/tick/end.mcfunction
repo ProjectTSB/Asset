@@ -29,3 +29,6 @@
 
 # 消滅
     kill @s
+
+datapack disable "file/AJ_Tultaria.zip"
+datapack disable "file/AJ_IllusionOfLoyalty.zip"

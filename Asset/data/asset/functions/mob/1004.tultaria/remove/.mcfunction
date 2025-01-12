@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/alias/1004/remove
 
-datapack disable "file/AJ_Tultaria.zip"
-datapack disable "file/AJ_IllusionOfLoyalty.zip"
-
 # 第2形態だった場合、足場を片付けて最初の足場を出す
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
 
@@ -22,3 +19,5 @@ datapack disable "file/AJ_IllusionOfLoyalty.zip"
 
 # Super
     function asset:mob/super.remove
+
+schedule function asset:mob/1004.tultaria/remove/schedule 5t replace

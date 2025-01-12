@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/alias/123/death
 
-datapack disable "file/AJ_Lexiel.zip"
-
 function asset:mob/super.death
 
 # AJ殺す

@@ -18,4 +18,5 @@
 
 # 消滅処理
     execute if score @s General.Object.Tick matches 100 run data modify entity @s transformation.scale set value [0f, 0f, 0f]
+    execute if score @s General.Object.Tick matches 100 run datapack disable "file/AJ_Haruclaire.zip"
     kill @s[scores={General.Object.Tick=121..}]

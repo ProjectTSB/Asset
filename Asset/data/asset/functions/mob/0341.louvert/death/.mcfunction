@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/alias/341/death
 
-datapack disable "file/AJ_Louvert.zip"
-
 # モデルは先にキルすべし
     function animated_java:louvert/remove/all
 
