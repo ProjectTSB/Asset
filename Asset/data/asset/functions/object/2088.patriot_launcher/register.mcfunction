@@ -16,7 +16,8 @@
     data modify storage asset:object ID set value 2088
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
-    data modify storage asset:object Field.Durability set value 10
+    data modify storage asset:object Field.Durability set value 5
+    data modify storage asset:object Field.MaxDurability set value 5
     data modify storage asset:object Field.RepairTime set value 0
     data modify storage asset:object Field.MaxRepairTime set value 51200
     data modify storage asset:object Field.IsBroken set value 0b

@@ -36,7 +36,7 @@ tag @s remove PatriotLauncher.HitMissile
     #tellraw @a [{"text":"repair value "},{"score":{"objective":"Temporary","name":"$RepairValue"}}]
 
 # 修理時間0以下になったら修理完了
-execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.Durability set value 10
+execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.Durability set from storage asset:context this.MaxDurability
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.RepairTime set value 0
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 0b
 execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsActive set value 1b

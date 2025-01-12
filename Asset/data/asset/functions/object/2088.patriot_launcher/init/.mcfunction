@@ -17,7 +17,7 @@ ride @e[type=text_display,tag=PatriotLauncher.ObjectInit,tag=PatriotLauncher.Dis
 ride @e[type=text_display,tag=PatriotLauncher.ObjectInit,tag=PatriotLauncher.RepairGauge,limit=1] mount @s
 
 # データセット
-    data modify storage asset:context this.Durability set value 10
+    data modify storage asset:context this.Durability set from storage asset:context this.MaxDurability
     data modify storage asset:context this.RepairTime set value 0
     data modify storage asset:context this.IsBroken set value 0b
     data modify storage asset:context this.IsActive set value 1b

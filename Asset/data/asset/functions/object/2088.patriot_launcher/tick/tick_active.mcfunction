@@ -11,7 +11,7 @@
 
 # 耐久値の減少処理
     execute store result score $CurrentDurability Temporary run data get storage asset:context this.Durability
-    execute if entity @s[tag=PatriotLauncher.HitMissile] run scoreboard players set $CurrentDurability Temporary 0
+    execute if entity @s[tag=PatriotLauncher.HitMissile] store result storage asset:context this.Durability int 1 run scoreboard players remove $CurrentDurability Temporary 1
     tag @s remove PatriotLauncher.HitMissile
 
 # 耐久が0の場合死亡状態へ遷移して処理をキャンセル
