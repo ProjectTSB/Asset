@@ -16,6 +16,6 @@ execute unless loaded -66 71 -269 run return 1
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
-    # data modify storage asset:container LootTable set value 
+    # data modify storage asset:container LootTable set value "undefined"
 # アイテム ([id(minecraft:loot_table)] オプション)
     data modify storage asset:container Items set value [{Slot:3b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:4b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:5b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:10b,Item:{PresetItem:"sacred_shard/lv-3",Count:1b}},{Slot:12b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:13b,Item:900},{Slot:14b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:16b,Item:{PresetItem:"sacred_shard/lv-3",Count:1b}},{Slot:21b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:22b,Item:{id:"minecraft:bread",Count:1b,tag:{}}},{Slot:23b,Item:{id:"minecraft:bread",Count:1b,tag:{}}}]

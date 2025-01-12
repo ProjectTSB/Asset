@@ -16,6 +16,6 @@ execute unless loaded 92 15 79 run return 1
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
-    data modify storage asset:container LootTable set value common:island_rewards/lv-1
+    data modify storage asset:container LootTable set value "common:island_rewards/lv-1"
 # アイテム ([id(minecraft:loot_table)] オプション)
-    # data modify storage asset:container Items set value [undefined]
+    # data modify storage asset:container Items set value []

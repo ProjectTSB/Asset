@@ -16,6 +16,6 @@ execute unless loaded -201 164 4 run return 1
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
-    # data modify storage asset:container LootTable set value 
+    # data modify storage asset:container LootTable set value "undefined"
 # アイテム ([id(minecraft:loot_table)] オプション)
     data modify storage asset:container Items set value [{Slot:0b,Item:{id:"minecraft:gold_ingot",Count:3b,tag:{}}},{Slot:2b,Item:{id:"minecraft:gold_ingot",Count:3b,tag:{}}},{Slot:4b,Item:1056},{Slot:6b,Item:{id:"minecraft:gold_ingot",Count:3b,tag:{}}},{Slot:8b,Item:{id:"minecraft:gold_ingot",Count:3b,tag:{}}}]
