@@ -15,7 +15,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"エクレール"}'
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 10000
+    data modify storage asset:mob Health set value 200000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
