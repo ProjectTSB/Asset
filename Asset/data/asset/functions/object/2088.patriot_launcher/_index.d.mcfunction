@@ -6,7 +6,7 @@
 #    function asset:object/2088.patriot_launcher/**
     #declare tag PatriotLauncher.Body
     #declare tag PatriotLauncher.DisplayName
-    #declare tag PatriotLauncher.RepairGauge
+    #declare tag PatriotLauncher.Gauge
 
 
 #> suffer_damage

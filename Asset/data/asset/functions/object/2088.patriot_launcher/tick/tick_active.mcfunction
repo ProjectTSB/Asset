@@ -7,12 +7,20 @@
 #> prv
 # @private
     #declare score_holder $MissileCooltime
+
+#> within
+# @within
+#   function asset:object/2088.patriot_launcher/tick/tick_active
+#   function asset:object/2088.patriot_launcher/tick/set_hp_gauge
     #declare score_holder $CurrentDurability
 
 # 耐久値の減少処理
     execute store result score $CurrentDurability Temporary run data get storage asset:context this.Durability
-    execute if entity @s[tag=PatriotLauncher.HitMissile] run scoreboard players set $CurrentDurability Temporary 0
+    execute if entity @s[tag=PatriotLauncher.HitMissile] store result storage asset:context this.Durability int 1 run scoreboard players remove $CurrentDurability Temporary 1
+    execute unless predicate api:global_vars/difficulty/min/hard run function asset:object/2088.patriot_launcher/tick/set_hp_gauge
+    execute if predicate api:global_vars/difficulty/min/hard run function asset:object/2088.patriot_launcher/tick/set_hp_gauge_hard
     tag @s remove PatriotLauncher.HitMissile
+
 
 # 耐久が0の場合死亡状態へ遷移して処理をキャンセル
 # 回復までの時間は修理者無しで20秒想定(tickごとに128回復　128*20tick*20s)
