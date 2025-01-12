@@ -18,7 +18,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"インフェルノは体だけでなく気持ちも大きい。","color":"white"}','{"text":"強力なパンチで、頑強なブロックでさえ豆腐のように砕いてしまうぞ！","color":"white"}','{"text":"炎を素手で丸めてファイアボールにすることだってできるんだ。","color":"white"}']
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 60000d
+    data modify storage asset:mob Health set value 55000d
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1.0d
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
