@@ -11,9 +11,9 @@
 
 # TODO：CBT後にエフェクトにする
 
-# 最大体力-99.9%
+# 最大体力-99%
     data modify storage api: Argument.UUID set value [I;1,1,207,2]
-    data modify storage api: Argument.Amount set value -0.999
+    data modify storage api: Argument.Amount set value -0.99
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/max_health/add
 
