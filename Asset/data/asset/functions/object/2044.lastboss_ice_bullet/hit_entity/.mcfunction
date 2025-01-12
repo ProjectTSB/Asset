@@ -15,7 +15,7 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
 # ダメージを与える
-    execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    execute at @s positioned ~-0.25 ~-0.25 ~-0.25 as @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run function api:damage/
 
 # リセット
     function api:damage/reset
