@@ -30,5 +30,5 @@
     execute if score @s General.Mob.Tick matches 100 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
 
 # 攻撃スタート
-    execute if score @s General.Mob.Tick matches 100 run tag @s add RW.Transition.Phase3.Attack
-    execute if score @s General.Mob.Tick matches 100 run scoreboard players set @s General.Mob.Tick -1
+    execute if score @s General.Mob.Tick matches 150 run tag @s add RW.Transition.Phase3.Attack
+    execute if score @s General.Mob.Tick matches 150 run scoreboard players set @s General.Mob.Tick -1
