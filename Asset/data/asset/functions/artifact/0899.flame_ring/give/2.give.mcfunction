@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"火炎のリング","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火炎の力を蓄えた指輪"}','{"text":"付けると力が湧いてくる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃+3%"}','{"text":"火炎の力を蓄えた指輪"}','{"text":"付けると力が湧いてくる"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
