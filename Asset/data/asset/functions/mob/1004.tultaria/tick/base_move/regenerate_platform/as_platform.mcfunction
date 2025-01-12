@@ -14,7 +14,7 @@
     tag @s remove 2026.Disabled
 
 # 修復に巻き込まれたプレイヤーをテレポートさせる
-    execute at @s positioned ~-2.5 ~-5 ~-2.5 as @p[dx=4,dy=5,dz=4] positioned ~2.5 ~5 ~2.5 run function asset:mob/1004.tultaria/tick/base_move/regenerate_platform/teleport
+    execute at @s positioned ~-2.5 ~-5 ~-2.5 as @p[gamemode=!spectator,dx=4,dy=5,dz=4] positioned ~2.5 ~5 ~2.5 run function asset:mob/1004.tultaria/tick/base_move/regenerate_platform/teleport
 
 # 変形
     data modify entity @s start_interpolation set value 0

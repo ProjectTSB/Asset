@@ -17,7 +17,7 @@
 
 # こっちを向く
     execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
-    execute if score @s General.Mob.Tick matches 50 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 50 facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ ~
 
 # アニメーション
     execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}

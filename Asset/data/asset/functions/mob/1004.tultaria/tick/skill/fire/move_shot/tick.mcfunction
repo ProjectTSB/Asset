@@ -19,17 +19,17 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/first_move.m with storage asset:temp
 
 # モデルをプレイヤーに向ける
-    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ 0
 
 # 移動終了後こっちを向く
-    execute facing entity @p eyes run tp @s[scores={General.Mob.Tick=10}] ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s[scores={General.Mob.Tick=10}] ~ ~ ~ ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
 # 射撃
     scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 if score @s General.Mob.Tick matches 15..35 at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] facing entity @p eyes run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/shoot
+    execute if score $Interval Temporary matches 0 if score @s General.Mob.Tick matches 15..35 at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run function asset:mob/1004.tultaria/tick/skill/fire/move_shot/shoot
 
 # 幻影に攻撃させる
     execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 35 run function asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/fire/meteor_rain
