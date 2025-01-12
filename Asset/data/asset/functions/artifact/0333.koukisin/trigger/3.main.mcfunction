@@ -15,7 +15,7 @@
 
 # ダメージ
     # 与えるダメージ = 28
-        data modify storage lib: Argument.Damage set value 28f
+        data modify storage lib: Argument.Damage set value 20f
     # 物理属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か

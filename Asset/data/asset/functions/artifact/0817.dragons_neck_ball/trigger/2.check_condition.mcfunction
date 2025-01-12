@@ -10,6 +10,7 @@
 # かぐや姫装備がフルセットか確認
     function asset:artifact/0817.dragons_neck_ball/trigger/2.1.is_fullset
     execute if score $MP.Fullset Temporary matches 0 run tag @s remove CanUsed
+    scoreboard players reset $MP.Fullset Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0817.dragons_neck_ball/trigger/3.main

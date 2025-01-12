@@ -14,7 +14,7 @@
     playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 0.8 2
 
 # 撃つ
-    execute facing entity @e[type=#lib:hostile,tag=Enemy,distance=..14,sort=nearest,limit=1] feet positioned ~ ~-0.425 ~ anchored eyes positioned ^ ^ ^ run function asset:object/1052.maid/tick/shot/loop
+    execute facing entity @e[type=#lib:hostile,tag=Enemy,tag=!Uninterferable,distance=..14,sort=nearest,limit=1] feet positioned ~ ~-0.425 ~ anchored eyes positioned ^ ^ ^ run function asset:object/1052.maid/tick/shot/loop
 
 # リセット
     tag @s remove Landing
