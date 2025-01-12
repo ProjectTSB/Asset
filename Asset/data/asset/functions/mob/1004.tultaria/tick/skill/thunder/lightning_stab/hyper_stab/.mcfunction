@@ -13,8 +13,8 @@
 # 自身のモデルにモーションを再生させる
     execute as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_4_active/tween {to_frame:0,duration:1}
 
-# マーカーの方を向く
-    execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ ~
+# 付近のプレイヤーの方を向く
+    execute facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ ~
 
 # ループカウント加算
     scoreboard players add @s RW.LoopCount 1

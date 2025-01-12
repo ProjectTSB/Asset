@@ -11,8 +11,8 @@
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 
-# 6tickごとに攻撃判定とパーティクルが出現
-    scoreboard players operation $Interval Temporary %= $6 Const
+# 数tickごとに攻撃判定とパーティクルが出現
+    scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 run function asset:object/2137.blazing_aoe/tick/aoe
 
 # リセット

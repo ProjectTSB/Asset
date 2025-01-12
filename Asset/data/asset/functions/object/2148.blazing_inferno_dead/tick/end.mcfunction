@@ -17,5 +17,13 @@
 # モデルを消す
     execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/remove/this
 
+# ドロップ
+    data modify storage api: Argument.ID set value 1121
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+    data modify storage api: Argument.ID set value 1120
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # 消失
     kill @s

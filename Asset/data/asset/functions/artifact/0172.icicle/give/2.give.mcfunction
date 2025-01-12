@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"つらら","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"前方につららの雨を降らせ相手を串刺しにする"}']
+    data modify storage asset:artifact Lore set value ['{"text":"前方につららの雨を降らせ相手を串刺しにする"}','{"text":"この攻撃は大きな敵に対して大きく減衰する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

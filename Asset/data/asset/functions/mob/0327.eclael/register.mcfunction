@@ -15,17 +15,17 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"エクレール"}'
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 10000
+    data modify storage asset:mob Health set value 175000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 1.0f
+        data modify storage asset:mob Resist.Physical set value 1.2f
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 0.8f
+        data modify storage asset:mob Resist.Magic set value 0.9f
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1.0f
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 1.0f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.7f
+        data modify storage asset:mob Resist.Thunder set value 0.8f

@@ -5,3 +5,6 @@ summon armor_stand ~ ~ ~ {NoGravity:1b,Invisible:1b,Tags:["7A.ArmorStand","7A.Ar
 tp @e[type=armor_stand,tag=7A.ArmorStandThis,distance=..0.01] @s
 tag @e[type=armor_stand,tag=7A.ArmorStandThis,distance=..0.01] remove 7A.ArmorStandThis
 scoreboard players set @s 7A.Tick -30
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.init

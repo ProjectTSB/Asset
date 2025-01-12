@@ -18,7 +18,7 @@
     effect give @p[tag=Victim,distance=..6] slowness 3 2 true
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 22f
+    data modify storage lib: Argument.Damage set value 21f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
 # デスログ

@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/
 
 # こっち向く
-    execute if entity @s[tag=!RW.InAction] unless entity @s[scores={RW.FakeInertia=0..}] facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[tag=!RW.InAction] unless entity @s[scores={RW.FakeInertia=0..}] facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ ~
 
 # 属性チェンジ
     # アニメーション

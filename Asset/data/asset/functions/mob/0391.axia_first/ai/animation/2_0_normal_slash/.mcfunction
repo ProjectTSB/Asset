@@ -12,7 +12,7 @@
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/2_0_normal_slash/play
 
 # アニメーション終了処理
-    execute if score @s AV.AnimationTick matches 39 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/end
+    execute if score @s AV.AnimationTick matches 49 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/end
 
 # 斬撃エフェクト
     execute if score @s AV.AnimationTick matches 14 run function asset:mob/0391.axia_first/ai/animation/2_0_normal_slash/slash_summon

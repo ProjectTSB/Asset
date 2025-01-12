@@ -15,7 +15,7 @@
     function lib:rotatable_dxyz/m with storage lib: args
 
 # パラメータ設定
-    data modify storage api: Argument.Damage set value 32
+    data modify storage api: Argument.Damage set value 17
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの魔炎により灰一つ残さず焼き尽くされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'

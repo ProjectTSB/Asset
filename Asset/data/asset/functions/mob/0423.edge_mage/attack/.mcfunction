@@ -15,8 +15,9 @@
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5
 
 # 攻撃
+# 3属性を扱う仕様のためダメージを想定より落としている
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 40.0f
+        data modify storage lib: Argument.Damage set value 35.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Magic"
     # 第二属性を設定したり演出変えたり

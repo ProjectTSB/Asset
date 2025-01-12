@@ -7,7 +7,7 @@
 # @within function asset:mob/0236.ksitigarbha/death/
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 20f
+    data modify storage lib: Argument.Damage set value 11f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはお地蔵さんに祟られた。","with":[{"selector":"@s"}]}]']
 

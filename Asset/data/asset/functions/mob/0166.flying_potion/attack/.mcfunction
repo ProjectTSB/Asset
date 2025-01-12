@@ -34,5 +34,4 @@
     playsound entity.splash_potion.break hostile @a ~ ~ ~ 1 1
 
 # 自殺する
-    tp @s ~ ~-500 ~
-    kill @s
+    function api:mob/remove

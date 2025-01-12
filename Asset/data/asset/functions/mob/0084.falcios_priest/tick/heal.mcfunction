@@ -21,9 +21,9 @@
     execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,tag=!Uninterferable,distance=..10,sort=nearest,limit=5] at @s run particle heart ~ ~1.2 ~ 0.4 0.4 0.4 0 20 normal @a
 
 # 回復
-# 難易度値によって回復量が変動 150N
+# 難易度値によって回復量が変動
     function api:global_vars/get_difficulty
-    execute store result storage api: Argument.Heal int 150 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Heal int 400 run data get storage api: Return.Difficulty
     function api:heal/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!NotTarget,tag=!Uninterferable,distance=..10,sort=nearest,limit=5] run function api:heal/
     function api:heal/reset

@@ -22,5 +22,13 @@
     particle end_rod ~ ~1 ~ 0 0 0 0.2 30
     particle firework ~ ~3 ~ 3 3 3 0 50
 
+# ドロップ
+    data modify storage api: Argument.ID set value 983
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+    data modify storage api: Argument.ID set value 172
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # モデル削除
     function animated_java:haruclaire_aj/remove/this

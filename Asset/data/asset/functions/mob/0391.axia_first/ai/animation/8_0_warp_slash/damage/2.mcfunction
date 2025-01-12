@@ -17,6 +17,6 @@
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] at @s run function api:damage/
 # リセット
     function api:damage/reset
