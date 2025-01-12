@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/summon_circle
+#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/summon_circle.m
 #
 # エンハンスドディザスター
 #
