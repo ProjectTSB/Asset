@@ -4,6 +4,9 @@
 #
 # @within asset:mob/alias/1004/init
 
+datapack enable "file/AJ_Tultaria.zip"
+datapack enable "file/AJ_IllusionOfLoyalty.zip"
+
 #> ボスキャラのモデル
 # @private
 #declare tag aj.tultaria.bone

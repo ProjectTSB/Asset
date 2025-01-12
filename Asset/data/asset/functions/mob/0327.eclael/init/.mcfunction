@@ -1,6 +1,8 @@
 #> asset:mob/0327.eclael/init/
 # @within asset:mob/alias/327/init
 
+datapack enable "file/AJ_Eclael.zip"
+
 # 多重召喚対策
     execute if entity @e[type=wither_skeleton,tag=93.EndInit] run return run function asset:mob/0327.eclael/remove/
 

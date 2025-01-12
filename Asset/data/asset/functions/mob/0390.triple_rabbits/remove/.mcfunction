@@ -4,7 +4,11 @@
 #
 # @within asset:mob/alias/390/remove
 
-#> function 
+datapack disable "file/AJ_Axia.zip"
+datapack disable "file/AJ_Ecual.zip"
+datapack disable "file/AJ_Labyria.zip"
+
+#> function
 # @private
     #declare function animated_java:axia/remove/all
     #declare function animated_java:ecual/remove/all

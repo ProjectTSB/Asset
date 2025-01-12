@@ -6,6 +6,8 @@
 #   function asset:mob/alias/327/remove
 #   function asset:mob/0327.eclael/init/
 
+datapack disable "file/AJ_Eclael.zip"
+
 # 死亡演出スキップ
     tag @s add 93.SkipDeathFunc
 

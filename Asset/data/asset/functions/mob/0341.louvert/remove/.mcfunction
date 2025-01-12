@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/341/remove
 
+datapack disable "file/AJ_Louvert.zip"
+
 # キル処理
     kill @e[type=item_display,tag=9H.Final.Display]
     kill @e[type=item_display,tag=9H.Final.Display.Bullet]

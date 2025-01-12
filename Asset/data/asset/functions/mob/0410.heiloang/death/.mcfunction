@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/410/death
 
+datapack disable "file/AJ_Heiloang.zip"
+
 # 継承元の処理実行
     function asset:mob/super.death
 

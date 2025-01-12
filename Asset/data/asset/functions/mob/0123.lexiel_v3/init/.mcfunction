@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/123/init
 
+datapack enable "file/AJ_Lexiel.zip"
+
 function asset:mob/super.init
 
 # AJモデル召喚

@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/311/init
 
+datapack enable "file/AJ_BlazingInferno.zip"
+
 # プレイヤーの方を向く
     execute at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 

@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/377/death
 
+datapack disable "file/AJ_GreyGuardian.zip"
+
 function asset:mob/super.death
 
 # アニメーション変える

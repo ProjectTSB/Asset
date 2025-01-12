@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/380/remove
 
+datapack disable "file/AJ_Haruclaire.zip"
+
 # 継承元の処理実行
     function asset:mob/super.remove
 

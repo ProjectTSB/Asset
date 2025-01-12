@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/338/remove
 
+datapack disable "file/AJ_Rubiel.zip"
+datapack disable "file/AJ_Supphiel.zip"
+
 function asset:mob/super.remove
 
 # 独自remove処理に移譲

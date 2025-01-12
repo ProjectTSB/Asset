@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/372/death
 
+datapack disable "file/AJ_Tutankhamen.zip"
+
 # super.death呼び出し
     function asset:mob/super.death
 

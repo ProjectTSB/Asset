@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/378/remove
 
+datapack disable "file/AJ_RedKnight.zip"
+
 # 抽象
     function asset:mob/super.remove
 # 消す

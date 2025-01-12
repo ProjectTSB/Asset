@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/410/init
 
+datapack enable "file/AJ_Heiloang.zip"
+
 # 継承元の処理実行
     function asset:mob/super.init
 

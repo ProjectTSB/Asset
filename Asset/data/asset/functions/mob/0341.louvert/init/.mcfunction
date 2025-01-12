@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/341/init
 
+datapack enable "file/AJ_Louvert.zip"
+
 # 召喚位置を記録
     summon marker ~ ~1 ~ {Tags:["9H.Marker.SummonPoint"]}
 

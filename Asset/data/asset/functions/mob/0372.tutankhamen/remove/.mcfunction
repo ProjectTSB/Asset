@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/372/remove
 
+datapack disable "file/AJ_Tutankhamen.zip"
+
 # super.remove呼び出し
     function asset:mob/super.remove
 

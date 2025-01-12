@@ -3,6 +3,9 @@
 # Mobのinit時の処理
 #
 # @within asset:mob/alias/376/init
+
+datapack enable "file/AJ_Convict.zip"
+
 # super.init呼び出し
     function asset:mob/super.init
 

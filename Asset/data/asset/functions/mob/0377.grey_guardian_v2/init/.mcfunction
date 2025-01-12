@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/377/init
 
+datapack enable "file/AJ_GreyGuardian.zip"
+
 function asset:mob/super.init
 
 # AJモデル召喚
