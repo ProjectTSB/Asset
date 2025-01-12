@@ -16,12 +16,8 @@
     data modify storage lib: Args.max set value 3
     data modify storage lib: Args.scarcity_history_size set value 3
 
-# スキル選択、ただし棺設置カウントが溜まってないなら
-    execute unless score @s AC.Count.Attack matches 5 store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
-
-# カウント溜まってたら棺設置
-    execute if score @s AC.Count.Attack matches 5.. run tag @s add AC.Coffin
-    execute if score @s AC.Count.Attack matches 5.. run scoreboard players reset @s AC.Count.Attack
+# スキル選択
+    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグのコマンド
 #    scoreboard players set $Random Temporary 1
