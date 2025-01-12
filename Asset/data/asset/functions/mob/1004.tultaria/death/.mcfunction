@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/alias/1004/death
 
-datapack disable "file/AJ_Tultaria.zip"
-datapack disable "file/AJ_IllusionOfLoyalty.zip"
-
 # 演出
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.7
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 4 0.8

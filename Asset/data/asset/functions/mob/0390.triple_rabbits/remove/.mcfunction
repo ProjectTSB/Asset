@@ -4,10 +4,6 @@
 #
 # @within asset:mob/alias/390/remove
 
-datapack disable "file/AJ_Axia.zip"
-datapack disable "file/AJ_Ecual.zip"
-datapack disable "file/AJ_Labyria.zip"
-
 #> function
 # @private
     #declare function animated_java:axia/remove/all
@@ -29,3 +25,7 @@ datapack disable "file/AJ_Labyria.zip"
 
 # 継承元の処理
     function asset:mob/super.remove
+
+datapack disable "file/AJ_Axia.zip"
+datapack disable "file/AJ_Ecual.zip"
+datapack disable "file/AJ_Labyria.zip"

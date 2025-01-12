@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/alias/378/death
 
-datapack disable "file/AJ_RedKnight.zip"
-
 # 抽象
     function asset:mob/super.death
 

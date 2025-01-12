@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/alias/338/death
 
-datapack disable "file/AJ_Rubiel.zip"
-datapack disable "file/AJ_Supphiel.zip"
-
 function asset:mob/super.death
 
 # 独自処理に移譲

@@ -4,8 +4,6 @@
 #
 # @within asset:mob/alias/380/remove
 
-datapack disable "file/AJ_Haruclaire.zip"
-
 # 継承元の処理実行
     function asset:mob/super.remove
 
@@ -23,3 +21,5 @@ datapack disable "file/AJ_Haruclaire.zip"
 # オブジェクト消去
     execute as @e[tag=AK.Object] on passengers run kill @s
     kill @e[tag=AK.Object]
+
+datapack disable "file/AJ_Haruclaire.zip"
