@@ -17,26 +17,26 @@
 
 # こっちを向く
     execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
-    execute if score @s General.Mob.Tick matches 50 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 50 facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ ~
 
 # アニメーション
-    execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
 
 # モードチェンジ
-    execute if score @s General.Mob.Tick matches 75 run function asset:mob/1004.tultaria/tick/base_move/element_select/change/light
+    execute if score @s General.Mob.Tick matches 65 run function asset:mob/1004.tultaria/tick/base_move/element_select/change/light
 
 # 画面エフェクト
-    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] times 10 20 10
-    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] title {"text":""}
-    execute if score @s General.Mob.Tick matches 75 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
+    execute if score @s General.Mob.Tick matches 65 run title @a[distance=..100] times 10 20 10
+    execute if score @s General.Mob.Tick matches 65 run title @a[distance=..100] title {"text":""}
+    execute if score @s General.Mob.Tick matches 65 run title @a[distance=..100] subtitle {"text":"\uE010","font":"screen_effect","color":"#cccccc"}
 
 # アリーナ召喚
-    execute if score @s General.Mob.Tick matches 80 at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/summon_arena
+    execute if score @s General.Mob.Tick matches 70 at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/summon_arena
 
 # 自身のモデルにモーションを再生させる
-    execute if score @s General.Mob.Tick matches 100 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/tween {to_frame:0,duration:1}
-    execute if score @s General.Mob.Tick matches 130 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 80 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 110 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
 
 # 攻撃スタート
-    execute if score @s General.Mob.Tick matches 130 run tag @s add RW.Transition.Phase2.Attack
-    execute if score @s General.Mob.Tick matches 130 run scoreboard players set @s General.Mob.Tick -1
+    execute if score @s General.Mob.Tick matches 110 run tag @s add RW.Transition.Phase2.Attack
+    execute if score @s General.Mob.Tick matches 110 run scoreboard players set @s General.Mob.Tick -1
