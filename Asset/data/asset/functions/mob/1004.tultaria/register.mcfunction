@@ -24,7 +24,7 @@
 # 体力 (double) (オプション)
     #data modify storage asset:mob Health set value 140000d
 # デバッグ用体力
-    data modify storage asset:mob Health set value 570000d
+    data modify storage asset:mob Health set value 500000d
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     data modify storage asset:mob Defense set value 0.0d
 # 移動速度 (double) (オプション)
