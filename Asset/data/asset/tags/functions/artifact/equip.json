@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/0991.soul_mate/equip/1.trigger",
         "asset:artifact/0565.heartland/trigger/1.trigger",
         "asset:artifact/0564.heartland/trigger/1.trigger",
         "asset:artifact/0563.heartland/trigger/1.trigger",
@@ -79,7 +80,7 @@
         "asset:artifact/0979.water_charm/trigger/1.trigger",
         "asset:artifact/0978.fire_charm/trigger/1.trigger",
         "asset:artifact/0898.gale_pendant/trigger/1.trigger",
-        "asset:artifact/0899.flame_ring/trigger/1.trigger",
+        "asset:artifact/0899.power_ring/trigger/1.trigger",
         "asset:artifact/0918.flame_hunter_boots/trigger/1.trigger",
         "asset:artifact/0917.flame_hunter_clothes/trigger/1.trigger",
         "asset:artifact/0916.flame_hunter_clothes/trigger/1.trigger",

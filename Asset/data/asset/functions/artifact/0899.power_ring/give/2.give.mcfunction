@@ -1,22 +1,21 @@
-#> asset:artifact/0501.infinity/give/2.give
+#> asset:artifact/0899.power_ring/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0501.infinity/give/1.trigger
-# @within function asset:artifact/0501.infinity/3.main
+# @within function asset:artifact/0899.power_ring/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 501
+    data modify storage asset:artifact ID set value 899
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
+    data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"無限増殖","color":"yellow"}'
+    data modify storage asset:artifact Name set value '{"text":"パワーリング","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"世界を埋め尽くすことも不可能ではない。","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃+3%"}','{"text":"付けると力が湧いてくる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -24,9 +23,11 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onClick"
+    data modify storage asset:artifact Trigger set value "equipping"
+# 効果が重複可能か否か (boolean) (オプション)",
+    data modify storage asset:artifact EnableDuplication set value true
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -48,8 +49,8 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value "summon"
-    data modify storage asset:artifact TypeCooldown.Duration set value 60
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -57,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value "ALL"
+    data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

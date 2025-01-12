@@ -45,6 +45,8 @@
         "asset:effect/0617.twins_sight/_/register",
         "asset:effect/0615.wave_curse/_/register",
         "asset:effect/0613.white_curse/_/register",
+        "asset:effect/0264.soul_mate/_/register",
+        "asset:effect/0203.secret_meat/_/register"
         "asset:effect/0601.conviction/_/register",
         "asset:effect/0616.lightning_curse/_/register",
         "asset:effect/0262.catastrophe/_/register",
@@ -59,7 +61,6 @@
         "asset:effect/0261.gale_blessing/_/register",
         "asset:effect/0210.fading_speed/_/register",
         "asset:effect/0211.fading_speed/_/register",
-        "asset:effect/0203.secret_meat/_/register",
         "asset:effect/0273.spell_of_courage/_/register",
         "asset:effect/0272.inspiration/_/register",
         "asset:effect/0101.attack_base_debuff/_/register",

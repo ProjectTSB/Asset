@@ -1,33 +1,29 @@
-#> asset:artifact/0899.flame_ring/give/2.give
+#> asset:artifact/0991.soul_mate/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0899.flame_ring/give/1.trigger
+# @within function asset:artifact/0991.soul_mate/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 899
+    data modify storage asset:artifact ID set value 991
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"火炎のリング","color":"red"}'
+    data modify storage asset:artifact Name set value '{"text":"ソウルメイトチャーム","color":"#B8F8FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火炎の力を蓄えた指輪"}','{"text":"付けると力が湧いてくる"}']
-# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value
-    # data modify storage asset:artifact ConsumeItem.Count set value
-    # data modify storage asset:artifact ConsumeItem.Extra set value
+    data modify storage asset:artifact Lore set value ['{"text":"これをホットバーに装備することで、「ソウルメイト」になれる。"}','{"text":"この神器を手に持ってスニークを続けることで、"}','{"text":"他のソウルメイトを自分のもとに呼び出す。"}']
+# MP以外の消費物 (TextComponentString) (オプション)
+    # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "hotbar"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equipping"
-# 効果が重複可能か否か (boolean) (オプション)",
-    data modify storage asset:artifact EnableDuplication set value true
+    data modify storage asset:artifact Trigger set value "keepSneak3s"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -48,9 +44,6 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
-# 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    # data modify storage asset:artifact TypeCooldown.Type set value
-    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -58,7 +51,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

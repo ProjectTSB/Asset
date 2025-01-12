@@ -1,4 +1,4 @@
-#> asset:artifact/0899.flame_ring/register
+#> asset:artifact/0899.power_ring/register
 #
 # 神器プールへの登録処理
 #
