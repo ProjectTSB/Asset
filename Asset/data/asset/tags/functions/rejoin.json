@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:mob/0327.eclael/rejoin_process/",
+        "asset:mob/0340.twins_rubiel/rejoin_process/",
+        "asset:mob/0410.heiloang/rejoin_process/",
         "asset:artifact/1017.cutlass_of_endless_silence/trigger/rejoin_process",
         "asset:artifact/1065.magic_bullet/trigger/rejoin_process",
         "asset:artifact/1141.bell_of_courage/trigger/rejoin_process",
@@ -28,7 +31,6 @@
         "asset:artifact/1034.eiya/trigger/rejoin_process",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/rejoin_process",
         "asset:artifact/0647.thorn_armor/trigger/rejoin_process",
-        "asset:artifact/0953.meteor_rain/trigger/rejoin_process",
         "asset:artifact/0981.soulfire_burst/trigger/rejoin_process",
         "asset:mob/0120.convict/rejoin_process",
         "asset:artifact/0870.samurai_blade/trigger/rejoin_process",
