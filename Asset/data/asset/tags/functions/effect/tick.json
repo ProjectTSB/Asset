@@ -37,6 +37,8 @@
         "asset:effect/0263.chivalry_of_ruin/_/tick",
         "asset:effect/0201.magic_shield/_/tick",
         "asset:effect/0613.white_curse/_/tick",
+        "asset:effect/0203.secret_meat/_/tick",
+        "asset:effect/0264.soul_mate/_/tick"
         "asset:effect/0601.conviction/_/tick",
         "asset:effect/0616.lightning_curse/_/tick",
         "asset:effect/0269.pain_and_sweet/_/tick",
@@ -46,7 +48,6 @@
         "asset:effect/0261.gale_blessing/_/tick",
         "asset:effect/0210.fading_speed/_/tick",
         "asset:effect/0276.unending_thunder/_/tick",
-        "asset:effect/0203.secret_meat/_/tick",
         "asset:effect/0272.inspiration/_/tick",
         "asset:effect/0125.levitation/_/tick",
         "asset:effect/0279.poison_of_vinderre/_/tick",
