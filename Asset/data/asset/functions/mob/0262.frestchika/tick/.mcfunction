@@ -9,7 +9,7 @@
     #declare score_holder $4tInterval
 
 # オーバーヒートしていない限り常時耐性4がつく
-    effect give @s[tag=!7A.SkillOverHeat] resistance 1 3 true
+    effect give @s[tag=!7A.SkillOverHeat] resistance infinite 7 true
 
 # スコアを増やす
     scoreboard players add @s 7A.Tick 1
