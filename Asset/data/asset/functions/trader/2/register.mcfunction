@@ -59,3 +59,8 @@ execute unless loaded 19 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:bread",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value 162
+
+# 取引 英霊の書
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:2b}
+    data modify storage asset:trader Trades[-1].Sell set value 1142
