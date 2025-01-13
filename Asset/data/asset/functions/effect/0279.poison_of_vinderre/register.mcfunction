@@ -31,9 +31,9 @@
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 4
 # エフェクトをUIに表示するか (boolean) (default = true)
-    data modify storage asset:effect Visible set value false
+    # data modify storage asset:effect Visible set value
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect StackVisible set value false
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field.UserID set value
