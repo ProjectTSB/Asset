@@ -12,7 +12,7 @@
     ride @e[tag=6K.Snow,tag=6K.Temp,limit=1] mount @s
 
 # 判定召喚
-    summon interaction ~ ~ ~ {height:-0.2f,width:0.9f,Tags:["6K.Hitbox","6K.Temp","AllowProcessingCommonTag","AutoKillWhenDieVehicle"]}
+    summon interaction ~ ~ ~ {height:-0.3f,width:0.9f,Tags:["6K.Hitbox","6K.Temp","AllowProcessingCommonTag","AutoKillWhenDieVehicle"]}
     ride @e[tag=6K.Hitbox,tag=6K.Temp,limit=1] mount @s
 
 # reset
