@@ -15,7 +15,7 @@
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
-    # data modify storage asset:effect Stack set value 
+    # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
     data modify storage asset:effect DurationOperation set value "forceReplace"
 # スタックの操作方法 (default = API || "replace")
@@ -27,9 +27,13 @@
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
-    # data modify storage asset:effect ProcessOnDied set value 
+    # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 2
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect StackVisible set value
 
 # フィールド
     # data modify storage asset:effect Field set value {}
