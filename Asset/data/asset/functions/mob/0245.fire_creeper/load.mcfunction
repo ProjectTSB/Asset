@@ -1,4 +1,4 @@
-#> asset:mob/0245.fire_creeper/0.load
+#> asset:mob/0245.fire_creeper/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
