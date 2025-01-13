@@ -241,184 +241,6 @@ extension [A](v: NonEmptyVector[A]) {
   }
 }
 
-// MARK: fn: strPack
-def strPack[L](
-  leaves: NonEmptyVector[(BoundingBox, L)],
-  maxInternalDegree: Int
-): RLikeTree[L] = {
-  require(maxInternalDegree > 1)
-
-  def packLayer[L1](
-    children: NonEmptyVector[(BoundingBox, L1)]
-  ): NonEmptyVector[(BoundingBox, NonEmptyVector[(BoundingBox, L1)])] = {
-    import Math.*
-
-    val childrenWithCenter = children.map { case (mbr, data) => (mbr.center, mbr, data) }
-
-    // slab count in this layer
-    val P = ceil(children.size.toDouble / maxInternalDegree).toInt
-
-    val S_X = ceil(pow(P, 3.0 / 8.0)).toInt
-    val S_Z = ceil(pow(P, 3.0 / 8.0)).toInt
-
-    import scala.util.boundary, boundary.break
-    val slabs = boundary {
-      if (childrenWithCenter.size <= maxInternalDegree) {
-        boundary.break(NonEmptyVector.of(childrenWithCenter))
-      }
-
-      val slicedByX  = childrenWithCenter.sortBy(_._1.x).splitInto(S_X)
-      val slicedByXZ = slicedByX.flatMap(slab =>
-        if (slab.size <= maxInternalDegree) {
-          NonEmptyVector.of(slab)
-        } else {
-          slab.sortBy(_._1.z).splitInto(S_Z)
-        }
-      )
-
-      slicedByXZ.flatMap(_.sortBy(_._1.y).chunked(maxInternalDegree))
-    }
-
-    slabs.map { slab =>
-      val mbrOfSlab = slab.map(_._2).reduce(_.boxBoundingThisAnd(_))
-      (mbrOfSlab, slab.map { case (_, mbr, data) => (mbr, data) })
-    }
-  }
-
-  var topLayerNodes: NonEmptyVector[RLikeTree.Node[L]] = packLayer(leaves).map {
-    case (mbr, leavesTile) => RLikeTree.Node(mbr, leavesTile.map(RLikeTree.Leaf(_, _)))
-  }
-
-  while (topLayerNodes.size > 1) {
-    topLayerNodes = packLayer(topLayerNodes.map(n => (n.mbr, n.subtrees))).map {
-      case (mbr, children) => RLikeTree.Node(mbr, children.map(RLikeTree.Node(_, _)))
-    }
-  }
-
-  // topLayerNodes.size <= 1 so topLayerNodes is a singleton
-  topLayerNodes.head
-}.ensuring(r => r.isWellFormedRTree(maxInternalDegree))
-
-// MARK: fn: visualizeAsSvg
-def visualizeAsSvg[L](rtree: RLikeTree[L]): String = {
-  val intermediateRectStringBuilder = new StringBuilder()
-  val regionRectStringBuilder       = new StringBuilder()
-
-  val gutter  = 40
-  val xOffset = gutter + -rtree.mbr.min.x
-  val zOffset = gutter + -rtree.mbr.min.z
-
-  def traverse[L](tree: RLikeTree[L]): Unit = tree match {
-    case RLikeTree.Node(mbr, subtrees) =>
-      val rect =
-        s"""<rect x="${xOffset + mbr.min.x}" y="${zOffset + mbr.min.z}" width="${mbr.xWidth}" height="${mbr.zWidth}" fill-opacity="7%" fill="blue" stroke="black" stroke-width="1" />"""
-      intermediateRectStringBuilder.append(rect)
-      subtrees.toVector.foreach(traverse)
-    case RLikeTree.Leaf(mbr, data)     =>
-      val rect =
-        s"""<rect x="${xOffset + mbr.min.x}" y="${zOffset + mbr.min.z}" width="${mbr.xWidth}" height="${mbr.zWidth}" fill-opacity="40%" fill="red" stroke="black" stroke-width="1" />"""
-      regionRectStringBuilder.append(rect)
-  }
-  traverse(rtree)
-
-  s"""|<svg viewBox="0 0 ${gutter + xOffset + rtree.mbr.max.x} ${gutter + zOffset + rtree.mbr.max.z}" xmlns="http://www.w3.org/2000/svg">
-      |${intermediateRectStringBuilder.result()}
-      |${regionRectStringBuilder.result()}
-      |</svg>""".stripMargin
-}
-
-// MARK: fn: analyzeCosts
-def analyzeCosts[L](rtree: RLikeTree[L], f: L => XZInt2): Unit = {
-  def project(rtree: RLikeTree[L]): RLikeTree[XZInt2] = rtree match {
-    case RLikeTree.Node(mbr, subtrees) => RLikeTree.Node(
-        BoundingBox(
-          Int3(mbr.min.x, -1, mbr.min.z),
-          Int3(mbr.max.x, 1, mbr.max.z)
-        ),
-        subtrees.map(project)
-      )
-    case RLikeTree.Leaf(mbr, data)     => RLikeTree.Leaf(
-        BoundingBox(
-          Int3(mbr.min.x, -1, mbr.min.z),
-          Int3(mbr.max.x, 1, mbr.max.z)
-        ),
-        f(data)
-      )
-  }
-
-  val projected = project(rtree)
-
-  case class IntStatFromInt3(stat: Int, attainedAt: Int3)
-  case class Statistics(
-    dataPointCount: Int,
-    worstOverlappingIntermediateNodeCount: IntStatFromInt3,
-    worstRegionMembershipTestCount: IntStatFromInt3,
-    meanOverlappingIntermediateNodeCount: Double,
-    meanRegionMembershipTestCount: Double
-  ) {
-    require(dataPointCount > 0)
-  }
-  given Semigroup[Statistics] with {
-    def combine(x: Statistics, y: Statistics): Statistics = Statistics(
-      x.dataPointCount + y.dataPointCount,
-      if (x.worstOverlappingIntermediateNodeCount.stat > y.worstOverlappingIntermediateNodeCount.stat) then x.worstOverlappingIntermediateNodeCount
-      else y.worstOverlappingIntermediateNodeCount,
-      if (x.worstRegionMembershipTestCount.stat > y.worstRegionMembershipTestCount.stat) then x.worstRegionMembershipTestCount
-      else y.worstRegionMembershipTestCount,
-      (x.meanOverlappingIntermediateNodeCount * x.dataPointCount + y.meanOverlappingIntermediateNodeCount * y.dataPointCount) / (x.dataPointCount + y.dataPointCount),
-      (x.meanRegionMembershipTestCount * x.dataPointCount + y.meanRegionMembershipTestCount * y.dataPointCount) / (x.dataPointCount + y.dataPointCount)
-    )
-  }
-
-  def statsAtSinglePoint(p: Int3): Statistics = {
-    var overlappingIntermediateNodeCount: Int = 0
-    var regionMembershipTestCount: Int        = 0
-
-    def traverse[L](tree: RLikeTree[L]): Unit = tree match {
-      case RLikeTree.Node(_, subtrees) => subtrees.toVector.foreach { subtree =>
-          if (subtree.mbr.contains(p)) {
-            overlappingIntermediateNodeCount += 1
-            traverse(subtree)
-          }
-          regionMembershipTestCount += 1
-        }
-      case RLikeTree.Leaf(_, _)        =>
-    }
-    traverse(rtree)
-
-    Statistics(
-      dataPointCount = 1,
-      worstOverlappingIntermediateNodeCount = IntStatFromInt3(
-        stat = overlappingIntermediateNodeCount,
-        attainedAt = p
-      ),
-      worstRegionMembershipTestCount = IntStatFromInt3(
-        stat = regionMembershipTestCount,
-        attainedAt = p
-      ),
-      meanOverlappingIntermediateNodeCount = overlappingIntermediateNodeCount.toDouble,
-      meanRegionMembershipTestCount = regionMembershipTestCount.toDouble
-    )
-  }
-
-  println("Tree height: " + rtree.height)
-  val sampledStats = Semigroup.combineAllOption {
-    (rtree.mbr.min.x to rtree.mbr.max.x).iterator.flatMap { x =>
-      (rtree.mbr.min.z to rtree.mbr.max.z).iterator.flatMap { z =>
-        val regionsCotaniningXZWhenProjected = projected.findRegionsContaining(Int3(x, 0, z))
-        val bottomOfRegions                  = regionsCotaniningXZWhenProjected.map {
-          case RLikeTree.Leaf(regionMbr, data) => regionMbr.min.y
-        }.distinct
-
-        bottomOfRegions.iterator.map { y =>
-          statsAtSinglePoint(Int3(x, y, z))
-        }
-      }
-    }
-  }.get
-  println("Sampled stats: " + sampledStats)
-}
-
 // MARK: fn: regionsFromFile
 def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[Int] = None): Map[String, Vector[(BoundingBox, L)]] = {
   if (!os.exists(path)) {
@@ -447,45 +269,30 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
   }.toMap
 }
 
-// MARK: fn: commandFromTree
-def compoundTagFromTree[L](rtree: RLikeTree[L], f: L => NBTTag): NBTTag.NBTTagCompound = {
+// MARK: fn: regionCompoundTagFromMbr
+def regionCompoundTagFromMbr(mbr: BoundingBox): NBTTag.NBTTagCompound = {
   import NBTTag.*
-  def regionCompoundTagFromMbr(mbr: BoundingBox): NBTTagCompound = NBTTagCompound(
+  NBTTagCompound(
     Map(
       "X" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.x), NBTTagLong(mbr.max.x))),
       "Y" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.y), NBTTagLong(mbr.max.y))),
       "Z" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.z), NBTTagLong(mbr.max.z)))
     )
   )
-  def traverse(tree: RLikeTree[L]): NBTTagCompound               = tree match {
-    case RLikeTree.Node(mbr, subtrees) => NBTTagCompound(
-        Map(
-          "B" -> regionCompoundTagFromMbr(mbr),
-          "N" -> NBTTagList(Some(NBTNel.Compound(subtrees.map(traverse))))
-        )
-      )
-    case RLikeTree.Leaf(mbr, data)     => NBTTagCompound(
-        Map(
-          "B" -> regionCompoundTagFromMbr(mbr),
-          "R" -> f(data)
-        )
-      )
-  }
-  traverse(rtree)
 }
 
 // MARK: fn: main
 def main(): Unit = {
   val regions = {
-    val spawnerRegions    = regionsFromFile(os.pwd / "input" / "spawners.csv", (id, p) => (p, 1 -> id))
+    val spawnerRegions    = regionsFromFile(os.pwd / "input" / "spawner-outliers.csv", (id, p) => (p, 1 -> id))
     println(s"Spawners: (${spawnerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val containerRegions      = regionsFromFile(os.pwd / "input" / "containers.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
+    val containerRegions  = regionsFromFile(os.pwd / "input" / "container-outliers.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
     println(s"Containers: (${containerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val traderRegions     = regionsFromFile(os.pwd / "input" / "traders.csv", (id, p) => (p, 3 -> id), defaultSize = Some(32))
+    val traderRegions     = regionsFromFile(os.pwd / "input" / "trader-outliers.csv", (id, p) => (p, 3 -> id), defaultSize = Some(32))
     println(s"Traders: (${traderRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val islandRegions     = regionsFromFile(os.pwd / "input" / "islands.csv", (id, p) => (p, 4 -> id), defaultSize = Some(32))
+    val islandRegions     = regionsFromFile(os.pwd / "input" / "island-outliers.csv", (id, p) => (p, 4 -> id), defaultSize = Some(32))
     println(s"Islands: (${islandRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val teleporterRegions = regionsFromFile(os.pwd / "input" / "teleporters.csv", (id, p) => (p, 5 -> id), defaultSize = Some(16))
+    val teleporterRegions = regionsFromFile(os.pwd / "input" / "teleporter-outliers.csv", (id, p) => (p, 5 -> id), defaultSize = Some(16))
     println(s"Teleporters: (${teleporterRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
 
     List(spawnerRegions, containerRegions, traderRegions, islandRegions, teleporterRegions)
@@ -501,27 +308,16 @@ def main(): Unit = {
     println(s"Dimension: $dim")
     println(s"Regions: ${regions.size}")
 
-    val rtree = strPack(regions, maxInternalDegree = 4)
-
-    println(s"Tree width: 4, Tree height: ${rtree.height}")
-    os.write.over(os.pwd / "output" / s"strpack-rtree-$dim.svg", visualizeAsSvg(rtree))
-
-    val compoundTag = {
-      def dataToTag(data: (Int, Int)): NBTTag = NBTTag.NBTTagCompound(
-        Map("T" -> NBTTag.NBTTagByte(data._1.toByte), "I" -> NBTTag.NBTTagInt(data._2))
-      )
-      compoundTagFromTree(rtree, (_, data) => dataToTag(data))
-    }
-    os.write.over(os.pwd / "output" / s"strpack-rtree-nbttag-$dim.txt", compoundTag.toSNBT)
-
-    // analyze costs with varying maxInternalDegree
-    // List(2, 3, 4, 5, 6, 7, 8, 9, 10).foreach { maxInternalDegree =>
-    //   println("-----")
-    //   println(
-    //     s"Costs analysis for strPack(maxInternalDegree = ${maxInternalDegree}):"
-    //   )
-    //   analyzeCosts(strPack(regions, maxInternalDegree), (p, _) => XZInt2(p.x, p.z))
-    // }
+    import NBTTag.*
+    val compoundList = NBTTagList(Some(NBTNel.Compound(regions.map {
+      case (bb, (p, (t, id))) => NBTTagCompound(
+          Map(
+            "B" -> regionCompoundTagFromMbr(bb),
+            "R" -> NBTTagCompound(Map("T" -> NBTTagByte(t.toByte), "I" -> NBTTagInt(id)))
+          )
+        )
+    })))
+    os.write.over(os.pwd / "output" / s"strpack-rtree-nbttag-$dim-outliers.txt", compoundList.toSNBT)
   }
 }
 
