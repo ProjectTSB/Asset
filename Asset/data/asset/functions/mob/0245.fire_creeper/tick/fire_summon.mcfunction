@@ -1,8 +1,8 @@
-#> asset:mob/0245.fire_creeper/tick/4.fire_summon
+#> asset:mob/0245.fire_creeper/tick/fire_summon
 #
 #
 #
-# @within function asset:mob/0245.fire_creeper/tick/3.explosion
+# @within function asset:mob/0245.fire_creeper/tick/explosion
 
 # 火本体を召喚
     execute if predicate lib:random_pass_per/30 run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire"},Time:1,Motion:[0.11,0.23,0.15]}
