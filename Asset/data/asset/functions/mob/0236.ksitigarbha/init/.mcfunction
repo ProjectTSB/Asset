@@ -5,11 +5,6 @@
 # @private
     #declare tag 6K.Temp
 
-
-#data modify storage api: Argument.ID set value 276
-#execute positioned ~ ~0.5 ~ run function api:mob/summon
-#tag @e[type=zombie,tag=6K.LinkInit,distance=..0.01] remove 6K.LinkInit
-
 # 見た目召喚
     summon item_display ~ ~ ~ {Tags:["6K.Display","6K.Temp","AllowProcessingCommonTag","AutoKillWhenDieVehicle"],interpolation_duration:1,teleport_duration:30,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1.1f,0f],scale:[1.8f,1.8f,1.8f]},item:{id:"stick",Count:1b,tag:{CustomModelData:20180}}}
     summon block_display ~ ~ ~ {Tags:["6K.Snow","6K.Temp","AllowProcessingCommonTag","AutoKillWhenDieVehicle"],interpolation_duration:1,teleport_duration:30,brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.45f,-0.2f,-0.45f],scale:[0.9f,0.9f,0.9f]},block_state:{Name:"minecraft:snow",Properties:{layers:"1"}}}
