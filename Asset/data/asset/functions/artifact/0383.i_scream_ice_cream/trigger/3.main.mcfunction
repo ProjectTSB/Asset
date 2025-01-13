@@ -73,7 +73,9 @@
     fill ~-4 ~-4 ~-4 ~4 ~4 ~4 minecraft:frosted_ice replace minecraft:water[level=0]
 
 # 移動速度低下付与
-    effect give @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] slowness 30 4
+# 天使に対しては効果が落ちる
+    effect give @e[type=#lib:living,type=!player,tag=!Enemy.Boss,tag=!Uninterferable,distance=..5] slowness 30 4
+    effect give @e[type=#lib:living,type=!player,tag=Enemy.Boss,tag=!Uninterferable,distance=..5] slowness 4 1
 
 # ダメージ
     # 与えるダメージ = 113
