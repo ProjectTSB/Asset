@@ -21,17 +21,17 @@
     execute positioned ~ ~0.1 ~ rotated ~ 0 run function asset:mob/0424.icicle_leg/tick/icicle_rain/shape
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 20f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.Damage set value 20f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 
 # 補正実行
-    function lib:damage/modifier
+    function api:damage/modifier
 
 # 一定間隔でダメージ
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $5 Const
-    execute if score $Interval Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
+    execute if score $Interval Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
     scoreboard players reset $Interval Temporary
 
 # 吹き飛ばし
@@ -42,5 +42,5 @@
     function api:entity/mob/effect/reset
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     kill @e[type=marker,tag=SpreadMarker,distance=..8,limit=1]

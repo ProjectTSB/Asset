@@ -16,16 +16,16 @@
     effect give @p[tag=Victim,distance=..32] slowness 3 2 true
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 39f
+    data modify storage api: Argument.Damage set value 39f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって氷像にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって凍り付き、貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって氷像にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって凍り付き、貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[tag=Victim,distance=..32] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

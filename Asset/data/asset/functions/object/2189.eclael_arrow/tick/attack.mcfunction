@@ -7,17 +7,17 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 38f
+        data modify storage api: Argument.Damage set value 38f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 終了
     tag @a remove 2189.Hit

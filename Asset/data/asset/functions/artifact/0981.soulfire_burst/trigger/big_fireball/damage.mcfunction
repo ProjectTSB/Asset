@@ -20,17 +20,17 @@
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 400
     #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法、無属性のダメージをぶちかます
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set value 12f
 # マスターとして補正functionを実行
-    execute as @p[tag=R9.OwnerPlayer] run function lib:damage/modifier
+    execute as @p[tag=R9.OwnerPlayer] run function api:damage/modifier
 
 # ダメージ実行
-    function lib:damage/
+    function api:damage/
 
 # ノクバ耐性を考慮して吹っ飛ばす
     data modify storage lib: Argument.VectorMagnitude set value -1
@@ -38,6 +38,6 @@
     execute at @s facing entity @e[type=armor_stand,tag=R9.BigFireball,sort=nearest,limit=1] feet rotated ~ 15 run function lib:motion/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     data remove storage lib: Arugument

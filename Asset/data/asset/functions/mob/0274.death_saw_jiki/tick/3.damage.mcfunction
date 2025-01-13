@@ -15,19 +15,19 @@
 
 # 属性ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 36f
+        data modify storage api: Argument.Damage set value 36f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # 対象に
         tag @e[type=#lib:living,type=!player,tag=Friend,distance=..1] add DamageTarget
         tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add DamageTarget
-        execute as @e[type=#lib:living,tag=DamageTarget,distance=..1] run function lib:damage/
+        execute as @e[type=#lib:living,tag=DamageTarget,distance=..1] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset
         tag @e[type=#lib:living,tag=DamageTarget,distance=..2] remove DamageTarget
 
 # クールタイムを与える

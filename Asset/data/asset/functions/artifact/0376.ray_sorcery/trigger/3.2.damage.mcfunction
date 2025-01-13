@@ -18,12 +18,12 @@
     playsound entity.lightning_bolt.impact player @a ~ ~ ~ 1 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 90.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Thunder"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..2.2] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 90.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..2.2] run function api:damage/
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget

@@ -11,12 +11,12 @@
     execute facing entity @p[tag=!PlayerShouldInvulnerable,distance=..32] feet anchored eyes run function asset:mob/0174.burning_blaze/action/laser.shot.loop
 
 # ダメージ補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ヒット対象にダメージ
-    execute as @a[tag=Hit] run function lib:damage/
+    execute as @a[tag=Hit] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @a[tag=Hit] remove Hit
 
 # スコア戻す

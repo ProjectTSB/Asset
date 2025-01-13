@@ -18,20 +18,20 @@
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 50
     #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法、無属性のダメージをぶちかます
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
 
 # マスターとして補正functionを実行
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
+    execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
 
 # ダメージ実行
-    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $OwnerID Temporary

@@ -7,18 +7,18 @@
 # @within function asset:mob/0236.ksitigarbha/death/
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 11f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sはお地蔵さんに祟られた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.Damage set value 11f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはお地蔵さんに祟られた。","with":[{"selector":"@s"}]}]']
 
 # Killerがいた場合Killerとその周囲のFriendにデバフとダメージ
-    execute as @e[type=!player,tag=Friend,distance=..5] run function lib:damage/
-    execute as @a[gamemode=!creative,tag=Friend,distance=..5] run function lib:damage/
+    execute as @e[type=!player,tag=Friend,distance=..5] run function api:damage/
+    execute as @a[gamemode=!creative,tag=Friend,distance=..5] run function api:damage/
     effect give @e[type=!player,tag=Friend,distance=..5] poison 5 1
     effect give @a[gamemode=!creative,tag=Friend,distance=..5] poison 5 1
     effect give @e[type=!player,tag=Friend,distance=..5] slowness 10 3
     effect give @a[gamemode=!creative,tag=Friend,distance=..5] slowness 10 3
-    function lib:damage/reset
+    function api:damage/reset
 
 # 音
     playsound entity.elder_guardian.curse hostile @a[gamemode=!creative,tag=Friend,distance=..5] ~ ~ ~ 1 1 1

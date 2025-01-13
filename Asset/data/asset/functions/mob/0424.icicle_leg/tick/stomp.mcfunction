@@ -16,18 +16,18 @@
     item replace entity @s armor.head with stick{CustomModelData:20470}
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 40f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.Damage set value 40f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 
 # 補正実行
-    function lib:damage/modifier
+    function api:damage/modifier
 
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # パーティクル
     particle smoke ~ ~0.1 ~ 1 0.1 1 0.02 100
