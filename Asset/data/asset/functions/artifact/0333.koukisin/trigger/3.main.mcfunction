@@ -17,6 +17,6 @@
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
-    function api:damage/
+    function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10,limit=1] run function api:damage/
     function api:damage/reset
