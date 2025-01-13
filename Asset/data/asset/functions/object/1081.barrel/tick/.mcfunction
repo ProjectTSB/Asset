@@ -7,7 +7,7 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-#
+# super.tick
     function asset:object/super.tick
 
 # 消滅処理
