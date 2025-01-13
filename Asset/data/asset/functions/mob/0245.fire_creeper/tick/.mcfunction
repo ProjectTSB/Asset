@@ -22,4 +22,4 @@
     tag @s remove ScoreAdd
 
 # 一定時間で爆破
-    execute if score @s 6T.FuseTime matches 30.. run function asset:mob/0245.fire_creeper/tick/3.explosion
+    execute if score @s 6T.FuseTime matches 30.. run function asset:mob/0245.fire_creeper/tick/explosion

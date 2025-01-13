@@ -1,11 +1,11 @@
-#> asset:mob/0245.fire_creeper/tick/3.explosion
+#> asset:mob/0245.fire_creeper/tick/explosion
 #
 #
 #
 # @within function asset:mob/0245.fire_creeper/tick/
 
 # 火を撒く(サバイバルのみで発動。アドベンチャーで出さないこと前提)
-    execute if predicate api:area/is_breakable run function asset:mob/0245.fire_creeper/tick/4.fire_summon
+    execute if predicate api:area/is_breakable run function asset:mob/0245.fire_creeper/tick/fire_summon
 
 # 演出
     particle explosion_emitter ~ ~ ~ 0 0 0 1 2
