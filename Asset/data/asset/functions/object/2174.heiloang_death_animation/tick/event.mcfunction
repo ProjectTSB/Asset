@@ -17,8 +17,5 @@
     execute if score @s General.Object.Tick matches 66 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     execute if score @s General.Object.Tick matches 84 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
 
-# モブドロップ
-    execute if score @s General.Object.Tick matches 98 at @p run function asset:object/2174.heiloang_death_animation/tick/drop
-
 # モデル消去
     execute if score @s General.Object.Tick matches 98 run function animated_java:heiloang_aj/remove/all
