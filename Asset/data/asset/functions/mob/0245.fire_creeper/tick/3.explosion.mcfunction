@@ -21,7 +21,7 @@
     # 補正functionを実行
         function lib:damage/modifier
     # プレイヤー対象に
-        execute as @a[distance=..6] run function lib:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function lib:damage/
     # リセット
         function lib:damage/reset
 
