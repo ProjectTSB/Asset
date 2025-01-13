@@ -8,9 +8,9 @@
     #declare tag ScoreAdd
 
 # プレイヤーが周囲にいたら発動
-    execute if entity @p[distance=..3] run tag @s add ScoreAdd
+    execute if entity @p[gamemode=!spectator,distance=..3] run tag @s add ScoreAdd
 # プレイヤーが一度近づいてスコアを持っている状態だとして、視界内にプレイヤーがいたらそのままカウントをすすめる
-    execute if score @s 6T.FuseTime matches 1.. positioned ^ ^ ^6 if entity @p[distance=..6] run tag @s add ScoreAdd
+    execute if score @s 6T.FuseTime matches 1.. positioned ^ ^ ^6 if entity @p[gamemode=!spectator,distance=..6] run tag @s add ScoreAdd
 
 # プレイヤーを検知できたらスコアを上げる
     execute if entity @s[tag=ScoreAdd] run scoreboard players add @s 6T.FuseTime 1
@@ -22,4 +22,4 @@
     tag @s remove ScoreAdd
 
 # 一定時間で爆破
-    execute if score @s 6T.FuseTime matches 30.. run function asset:mob/0245.fire_creeper/tick/3.explosion
+    execute if score @s 6T.FuseTime matches 30.. run function asset:mob/0245.fire_creeper/tick/explosion
