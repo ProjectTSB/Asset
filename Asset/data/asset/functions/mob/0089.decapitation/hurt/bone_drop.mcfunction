@@ -1,4 +1,4 @@
-#> asset:mob/0089.decapitation/hurt/2.1.bone_drop
+#> asset:mob/0089.decapitation/hurt/bone_drop
 #
 # 骨を落とす
 #
