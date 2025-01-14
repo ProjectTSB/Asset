@@ -40,12 +40,14 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
+
+# 離れ過ぎたら消える
+    execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run kill @s
+
 # リセット
     scoreboard players reset $OwnerID Temporary
     tag @a[tag=1059.OwnerPlayer,distance=..80] remove 1059.OwnerPlayer
 
-# 離れ過ぎたら消える
-    execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run kill @s
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=300..}]
