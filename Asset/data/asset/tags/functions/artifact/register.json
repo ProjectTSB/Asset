@@ -1,9 +1,9 @@
 {
     "values": [
+        "asset:artifact/1141.bell_of_courage/register",
         "asset:artifact/1096.spirit_flute/register",
         "asset:artifact/1163.rail_shooter/register",
         "asset:artifact/0817.dragons_neck_ball/register",
-        "asset:artifact/0816.fur_coad_of_firerat/register",
         "asset:artifact/0566.great_sage_helmet/register",
         "asset:artifact/1021.brave_book/register",
         "asset:artifact/1065.magic_bullet/register",
@@ -138,7 +138,6 @@
         "asset:artifact/0125.storm_bow/register",
         "asset:artifact/0152.call_cat/register",
         "asset:artifact/0158.mp_extractor/register",
-        "asset:artifact/0162.rations/register",
         "asset:artifact/0164.blessing_boots/register",
         "asset:artifact/0183.answer_to_the_ultimate_question_of_life_the_universe_and_everything/register",
         "asset:artifact/0184.increasable_cookie/register",

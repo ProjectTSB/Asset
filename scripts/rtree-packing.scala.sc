@@ -429,7 +429,7 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
     .flatMap { line =>
       line.split(",").map(_.trim) match {
         case Array(id, dim, x, y, z)       => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), defaultSize.get)))
-        case Array(id, dim, x, y, z, size) => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), size.toInt)))
+        case Array(id, dim, x, y, z, size) => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), Math.max(size.toInt, 32))))
         case _                             => None
       }
     }
@@ -479,8 +479,8 @@ def main(): Unit = {
   val regions = {
     val spawnerRegions    = regionsFromFile(os.pwd / "input" / "spawners.csv", (id, p) => (p, 1 -> id))
     println(s"Spawners: (${spawnerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val chestRegions      = regionsFromFile(os.pwd / "input" / "chests.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
-    println(s"Chests: (${chestRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
+    val containerRegions      = regionsFromFile(os.pwd / "input" / "containers.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
+    println(s"Containers: (${containerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
     val traderRegions     = regionsFromFile(os.pwd / "input" / "traders.csv", (id, p) => (p, 3 -> id), defaultSize = Some(32))
     println(s"Traders: (${traderRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
     val islandRegions     = regionsFromFile(os.pwd / "input" / "islands.csv", (id, p) => (p, 4 -> id), defaultSize = Some(32))
@@ -488,7 +488,7 @@ def main(): Unit = {
     val teleporterRegions = regionsFromFile(os.pwd / "input" / "teleporters.csv", (id, p) => (p, 5 -> id), defaultSize = Some(16))
     println(s"Teleporters: (${teleporterRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
 
-    List(spawnerRegions, chestRegions, traderRegions, islandRegions, teleporterRegions)
+    List(spawnerRegions, containerRegions, traderRegions, islandRegions, teleporterRegions)
       .reduceLeft(_.alignCombine(_))
       .view
       .mapValues(NonEmptyVector.fromVectorUnsafe)
@@ -497,11 +497,13 @@ def main(): Unit = {
   println(s"Total regions: ${regions.values.map(_.size).sum}")
 
   for ((dim, regions) <- regions) {
+    println("---------------")
     println(s"Dimension: $dim")
     println(s"Regions: ${regions.size}")
 
     val rtree = strPack(regions, maxInternalDegree = 4)
 
+    println(s"Tree width: 4, Tree height: ${rtree.height}")
     os.write.over(os.pwd / "output" / s"strpack-rtree-$dim.svg", visualizeAsSvg(rtree))
 
     val compoundTag = {
@@ -513,13 +515,13 @@ def main(): Unit = {
     os.write.over(os.pwd / "output" / s"strpack-rtree-nbttag-$dim.txt", compoundTag.toSNBT)
 
     // analyze costs with varying maxInternalDegree
-    List(2, 3, 4, 5, 6, 7, 8, 9, 10).foreach { maxInternalDegree =>
-      println("-----")
-      println(
-        s"Costs analysis for strPack(maxInternalDegree = ${maxInternalDegree}):"
-      )
-      analyzeCosts(strPack(regions, maxInternalDegree), (p, _) => XZInt2(p.x, p.z))
-    }
+    // List(2, 3, 4, 5, 6, 7, 8, 9, 10).foreach { maxInternalDegree =>
+    //   println("-----")
+    //   println(
+    //     s"Costs analysis for strPack(maxInternalDegree = ${maxInternalDegree}):"
+    //   )
+    //   analyzeCosts(strPack(regions, maxInternalDegree), (p, _) => XZInt2(p.x, p.z))
+    // }
   }
 }
 
