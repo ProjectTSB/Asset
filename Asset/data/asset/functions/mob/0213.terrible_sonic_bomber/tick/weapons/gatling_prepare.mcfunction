@@ -14,7 +14,7 @@
    execute store result storage asset:context this.attack_end_time int 1 run scoreboard players add $attack_start_time Temporary 28
 
 # 本体の向きを変える
-   execute at @p positioned ~ ~10 ~ facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
+   execute facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 攻撃座標指定
    execute positioned as @p rotated as @s rotated ~ 0 positioned ^ ^ ^-20 run tp 0-0-0-0-0 ~ ~ ~ ~ ~
