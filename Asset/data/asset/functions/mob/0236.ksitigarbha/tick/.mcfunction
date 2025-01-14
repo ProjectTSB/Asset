@@ -15,8 +15,8 @@
     execute if entity @s[tag=AlwaysSlowFall] if data entity @s {OnGround:1b} run tag @s remove AlwaysSlowFall
 
 # 頭のinterractが右クリックがされていた場合雪を消して恩返しする
-    execute if entity @s[tag=!6K.Ongaeshied] on passengers if entity @e[type=interaction] on target run function asset:mob/0236.ksitigarbha/tick/ongaeshi
-    execute if score $6K.OngaeshiFlag Temporary matches 1 on passengers if entity @e[tag=6K.Snow] run data modify entity @s block_state.Name set value "minecraft:air"
+    execute if entity @s[tag=!6K.Ongaeshied] on passengers if entity @s[type=interaction] on target run function asset:mob/0236.ksitigarbha/tick/ongaeshi
+    execute if score $6K.OngaeshiFlag Temporary matches 1 on passengers if entity @s[tag=6K.Snow] run data modify entity @s block_state.Name set value "minecraft:air"
     execute if score $6K.OngaeshiFlag Temporary matches 1 run tag @s add 6K.Ongaeshied
     execute if score $6K.OngaeshiFlag Temporary matches 1 run function api:mob/kill
 
