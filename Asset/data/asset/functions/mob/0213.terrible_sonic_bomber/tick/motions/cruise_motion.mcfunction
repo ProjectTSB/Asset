@@ -9,7 +9,7 @@
     #declare score_holder $flare_time
 
 # 中心座標を中心に旋回
-    execute unless entity @e[tag=5X.Centre,distance=..50] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
+    execute positioned ^ ^ ^1.5 unless entity @e[tag=5X.Centre,distance=..50] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進
     execute rotated as @s run tp @s ^ ^ ^1.5
