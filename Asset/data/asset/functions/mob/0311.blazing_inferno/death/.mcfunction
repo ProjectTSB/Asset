@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/alias/311/death
 
-datapack disable "file/AJ_BlazingInferno.zip"
-
 # サウンド
     playsound minecraft:entity.item.break hostile @a ~ ~ ~ 2 0.5
     playsound minecraft:entity.item.break hostile @a ~ ~ ~ 2 0.7
