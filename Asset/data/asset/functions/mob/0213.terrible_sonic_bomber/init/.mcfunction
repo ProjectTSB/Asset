@@ -23,7 +23,7 @@ data modify entity @s Size set value 16
 #モブのデータに以下の情報を記録
    # 初期モーション終了時間を記録
    execute store result score $initial_motion_end_time Temporary run time query gametime
-   execute store result storage asset:context this.initial_motion_end_time int 1 run scoreboard players add $initial_motion_end_time Temporary 10
+   execute store result storage asset:context this.initial_motion_end_time int 1 run scoreboard players add $initial_motion_end_time Temporary 15
 
    # 次回攻撃時刻を記録
    execute store result storage asset:context this.next_attack_time int 1 run scoreboard players add $initial_motion_end_time Temporary 120
