@@ -34,8 +34,8 @@
 
 # 取引 レッドストーン
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
-    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:redstone",Count:1b}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:redstone",Count:8b}
 
 # 取引 ウサギの足
     data modify storage asset:trader Trades append value {}
