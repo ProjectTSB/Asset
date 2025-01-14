@@ -24,10 +24,10 @@
     execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
 
 # (乱数)番目のIDを配列から削除
-    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
-    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set from storage asset:temp Random[1]
-    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set from storage asset:temp Random[2]
-    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
+    execute if score $Random Temporary matches 0 run data remove storage asset:temp Random[0]
+    execute if score $Random Temporary matches 1 run data remove storage asset:temp Random[1]
+    execute if score $Random Temporary matches 2 run data remove storage asset:temp Random[2]
+    execute if score $Random Temporary matches 3 run data remove storage asset:temp Random[3]
 
 # 付与する
     function api:entity/mob/effect/give
