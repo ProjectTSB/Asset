@@ -10,9 +10,9 @@
     summon item ~ ~ ~ {Motion:[0.0,0.5,0.0],Item:{id:"minecraft:bone",Count:1b}}
 
 # 自爆ダメージ
-    data modify storage lib: Argument.Damage set value 4f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.FixedDamage set value true
-    function lib:damage/modifier
-    function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 4f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.FixedDamage set value true
+    function api:damage/modifier
+    function api:damage/
+    function api:damage/reset
