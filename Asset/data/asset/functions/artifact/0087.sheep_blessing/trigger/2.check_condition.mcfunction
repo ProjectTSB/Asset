@@ -17,6 +17,9 @@
     execute if score @s Temporary matches ..15 run tag @s remove CanUsed
     execute if score @s Temporary matches ..15 run function lib:message/artifact/dont_have_require_items
 
+# 羊毛が32個を切っていた場合警告
+    execute if score @s Temporary matches 15..64 run tellraw @s[tag=CanUsed] {"text":"注意：羊毛が残り少ないです！","color":"red","bold":true}
+
 # リセット
     scoreboard players reset @s Temporary
 
