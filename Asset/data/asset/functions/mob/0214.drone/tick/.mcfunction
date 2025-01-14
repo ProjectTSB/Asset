@@ -5,7 +5,7 @@
 # @within asset:mob/alias/214/tick
 
 # 攻撃実行中の同モブが近くにいなければ自分が実行中になる
-execute unless entity @e[tag=5Y.IsAttacking,distance=..30] run tag @s add 5Y.IsAttacking
+execute unless entity @e[tag=5Y.IsAttacking,distance=..15] run tag @s add 5Y.IsAttacking
 
 # 自分の状態に応じてモーション打ち分け
 execute if entity @s[tag=5Y.IsAttacking] run function asset:mob/0214.drone/tick/attack_motion

@@ -8,4 +8,4 @@
 execute unless entity @e[tag=5X.Centre,distance=..50] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~-80 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進
-tp @s ^ ^ ^0.5
+tp @s ^ ^ ^0.25
