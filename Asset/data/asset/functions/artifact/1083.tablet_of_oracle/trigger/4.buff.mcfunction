@@ -48,3 +48,4 @@
 
 # リセット
     data remove storage asset:temp Random
+    scoreboard players reset $Random Temporary
