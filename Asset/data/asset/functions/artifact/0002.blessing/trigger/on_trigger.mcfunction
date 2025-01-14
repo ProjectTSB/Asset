@@ -6,7 +6,7 @@
 
 # エラー値
     execute unless score @s 02.Trigger matches 1..5 run function lib:message/invalid_operation
-    execute if score @s 02.Trigger matches 5 run tellraw @a {"text":"既に上限に達しています","color":"red"}
+    execute if score @s 02.Trigger matches 5 run tellraw @s {"text":"既に上限に達しています","color":"red"}
     execute unless score @s 02.Trigger matches 1..4 run function asset:artifact/0002.blessing/trigger/show_trigger_chat
 # 体力
     execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealth Global 2
