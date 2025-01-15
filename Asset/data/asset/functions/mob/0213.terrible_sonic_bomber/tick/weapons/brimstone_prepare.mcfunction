@@ -21,9 +21,7 @@
    tag @a[distance=..256,sort=nearest,limit=6] add 5X.BrimstoneTarget
 
 # 攻撃箇所表示
-   data modify storage asset:temp args set value {Color:15453454,Tick:30,Scale:"[10f,10f,1f]"}
-   data modify storage asset:temp args.RotationX set value 0
-   execute at @p[tag=5X.BrimstoneTarget] positioned ~ ~0.01 ~-5 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/set_attack_position_display.m with storage asset:temp args 
+   execute at @a[tag=5X.BrimstoneTarget] run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display
 
 # reset
    scoreboard players reset $attack_start_time Temporary
