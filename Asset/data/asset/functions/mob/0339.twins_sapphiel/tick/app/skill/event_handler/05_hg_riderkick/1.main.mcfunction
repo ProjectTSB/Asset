@@ -15,7 +15,7 @@
     execute if score @s 9F.AnimationTimer matches 30..38 at @s positioned ^ ^ ^0.3 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     execute if score @s 9F.AnimationTimer matches 39..45 at @s positioned ^ ^ ^0.1 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9F.AnimationTimer matches 19 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
+        execute if score @s 9F.AnimationTimer matches 19 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
         execute if score @s 9F.AnimationTimer matches 20 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/4.calc_vector
         execute if score @s 9F.AnimationTimer matches 21..29 run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector
 
@@ -30,7 +30,7 @@
     execute if score @s 9F.AnimationTimer matches 30 run particle explosion ~ ~ ~ 0 0 0 0 1
     execute if score @s 9F.AnimationTimer matches 30 run particle campfire_cosy_smoke ~ ~ ~ 0.1 0.1 0.1 0.03 10
     execute if score @s 9F.AnimationTimer matches 30..35 run playsound block.grass.step hostile @a ~ ~ ~ 1 1
-    execute if score @s 9F.AnimationTimer matches 30..35 at @s run particle block sea_lantern ~ ~0.1 ~ 0.2 0 0.2 1 3 
+    execute if score @s 9F.AnimationTimer matches 30..35 at @s run particle block sea_lantern ~ ~0.1 ~ 0.2 0 0.2 1 3
     execute if score @s 9F.AnimationTimer matches 36 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
     execute if score @s 9F.AnimationTimer matches 30 rotated ~ -90 positioned ~ ~0.5 ~ run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/6.2.particle_circle_single
 

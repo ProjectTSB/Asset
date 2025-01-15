@@ -16,9 +16,9 @@
     execute if score @s 9G.AnimationTimer matches 30 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 1.2
     execute if score @s 9G.AnimationTimer matches 30 run particle flash ~ ~1 ~ 0 0 0 0 1
 # ワープポイント設置
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^2 ^0.2 ^3 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^-8 ^6 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^2 ^2 ^12 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^2 ^0.2 ^3 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^-8 ^6 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^2 ^2 ^12 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
 # 移動
     execute if score @s 9G.AnimationTimer matches 35 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.0] facing entity @p feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9G.AnimationTimer matches 35 run kill @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.0]
