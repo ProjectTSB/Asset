@@ -13,9 +13,9 @@
     execute if score @s 9F.AnimationTimer matches 6..20 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 15..23 at @s positioned ^ ^0.1 ^0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9F.AnimationTimer matches 15 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^4 ^-6 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9F.Temp.Target.Aec.0"]}
+        execute if score @s 9F.AnimationTimer matches 15 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^4 ^-6 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9F.Temp.Target.Aec.0"]}
         execute if score @s 9F.AnimationTimer matches 15 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] at @s run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/4.1.calc_vector_0
-        execute if score @s 9F.AnimationTimer matches 23 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
+        execute if score @s 9F.AnimationTimer matches 23 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:6,Tags:["Object","9F.Temp.Target.Aec.0"]}
         execute if score @s 9F.AnimationTimer matches 28 if entity @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0] at @s run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/4.2.calc_vector_1
         execute if score @s 9F.AnimationTimer matches 15..22 run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector
         execute if score @s 9F.AnimationTimer matches 28..33 run function asset:mob/0339.twins_sapphiel/app/general/4.teleport_using_vector

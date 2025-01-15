@@ -6,7 +6,7 @@
 # @within function asset:mob/0338.corundum_twins/tick/app/skill/event_handler/1.switch
 
 # 集合位置の決定
-    execute if score @s 9E.SkillTimer matches 1 at @a[tag=!PlayerShouldInvulnerable,sort=random,limit=1] rotated ~ 0 run summon area_effect_cloud ^ ^1 ^7 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9E.Temp.Target.Aec.0"]}
+    execute if score @s 9E.SkillTimer matches 1 at @a[tag=!PlayerShouldInvulnerable,distance=..60,sort=random,limit=1] rotated ~ 0 run summon area_effect_cloud ^ ^1 ^7 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9E.Temp.Target.Aec.0"]}
     execute if score @s 9E.SkillTimer matches 1 as @e[type=area_effect_cloud,tag=9E.Temp.Target.Aec.0] at @s facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9E.SkillTimer matches 1 at @e[type=area_effect_cloud,tag=9E.Temp.Target.Aec.0,limit=1] run summon area_effect_cloud ^-1.2 ^ ^-0.5 {CustomNameVisible:0b,Particle:"block air",Duration:17,Tags:["Object","9E.Temp.Target.Aec.0","9F.Temp.Target.Aec.0"]}
     execute if score @s 9E.SkillTimer matches 1 at @e[type=area_effect_cloud,tag=9E.Temp.Target.Aec.0,limit=1] run summon area_effect_cloud ^1.2 ^ ^0.5 {CustomNameVisible:0b,Particle:"block air",Duration:17,Tags:["Object","9E.Temp.Target.Aec.0","9G.Temp.Target.Aec.0"]}

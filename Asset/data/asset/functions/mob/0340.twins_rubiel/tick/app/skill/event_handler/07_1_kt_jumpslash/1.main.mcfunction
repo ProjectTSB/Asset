@@ -13,9 +13,9 @@
     execute if score @s 9G.AnimationTimer matches 14..18 at @s positioned ^ ^0.2 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 19..23 at @s positioned ^ ^0.1 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9G.AnimationTimer matches 12 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^4 ^-3 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
+        execute if score @s 9G.AnimationTimer matches 12 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^4 ^-3 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 13 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/4.calc_vector_0
-        execute if score @s 9G.AnimationTimer matches 28 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-2 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
+        execute if score @s 9G.AnimationTimer matches 28 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-2 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 29 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/4.calc_vector_1
         execute if score @s 9G.AnimationTimer matches 13..26 at @s run function asset:mob/0340.twins_rubiel/app/general/4.teleport_using_vector
         execute if score @s 9G.AnimationTimer matches 33..37 at @s run function asset:mob/0340.twins_rubiel/app/general/4.teleport_using_vector
@@ -29,7 +29,7 @@
     execute if score @s 9G.AnimationTimer matches 35 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.3
     execute if score @s 9G.AnimationTimer matches 37 run playsound entity.hoglin.step hostile @a ~ ~ ~ 2 0.7
     execute if score @s 9G.AnimationTimer matches 37 at @s run particle block quartz_block ~ ~0.1 ~ 0.5 0 0.5 0 30
- 
+
 # 斬撃演出
     execute if score @s 9G.AnimationTimer matches 33 at @s positioned ^ ^2.0 ^1 rotated ~0 -30 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/6.1.particle_slash
     execute if score @s 9G.AnimationTimer matches 34..37 at @s positioned ^ ^1.0 ^2 rotated ~0 -10 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/6.1.particle_slash
