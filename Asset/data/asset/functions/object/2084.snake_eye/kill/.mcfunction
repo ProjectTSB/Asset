@@ -6,7 +6,7 @@
 
 # hit entityとhit block両方で同じ処理書くのも冗長なのでここで書く
 # plausound
-playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.5 1
+playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 1 0.5 1
 
 # particle
 particle minecraft:large_smoke ~ ~ ~ 2 1 2 0.1 200 normal
