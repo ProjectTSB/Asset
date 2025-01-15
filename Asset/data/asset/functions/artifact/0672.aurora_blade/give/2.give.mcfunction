@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーロラブレード","color":"#00ffe2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"オーロラの刃を持つ剣。","color":"#00cedd"}','{"text":"現在MPが最大MPの70%以上の時","color":"#00acf6"}','{"text":"ダメージが1.5倍になる。","color":"#008bff"}']
+    data modify storage asset:artifact Lore set value ['{"text":"オーロラの刃を持つ剣。","color":"#00cedd"}','{"text":"MPが70%以上の時","color":"#00acf6"}','{"text":"ダメージが1.5倍になる。","color":"#008bff"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
