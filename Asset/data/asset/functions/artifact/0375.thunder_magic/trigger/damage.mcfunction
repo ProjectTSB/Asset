@@ -5,6 +5,7 @@
 # @within function asset:artifact/0375.thunder_magic/trigger/3.main
 
 # 演出
+    execute rotated ~ 0 run function asset:artifact/0375.thunder_magic/trigger/vfx
     particle dust 0.867 0.667 0.161 1 ~ ~2 ~ 0 2.5 0 0 100
     particle minecraft:explosion ~ ~ ~ 0.7 0.1 0.7 0 10
     playsound minecraft:entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
