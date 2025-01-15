@@ -12,8 +12,21 @@
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:block.glass.break hostile @a ~ ~ ~ 0.8 1.3 0
 
 # デバフ
-    execute if predicate api:global_vars/difficulty/min/hard run effect give @p[tag=Victim,distance=..32] slowness 3 1 true
-    execute if predicate api:global_vars/difficulty/min/hard run effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
+# TODO 採掘速度低下がEffectAssetにきたら置き換える
+# 難易度値だけ鈍足と採掘速度低下を付与
+
+# 難易度値取得
+    function api:global_vars/get_difficulty
+
+# 鈍足
+    data modify storage api: Argument.ID set value 17
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    data modify storage api: Argument.Duration set value 60
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 採掘速度低下
+    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
 
 # 引数の設定
     data modify storage api: Argument.Damage set value 5f
