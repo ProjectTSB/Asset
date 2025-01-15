@@ -15,7 +15,7 @@
     execute unless block ~ ~2.5 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
 
 # プレイヤーを追跡
-    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.2 ~ ~
+    execute facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.15 ~ ~
 
 # クールタイムを減らす 0以下にはならない
     scoreboard players remove @s[scores={6C.AttackCT=1..}] 6C.AttackCT 1
