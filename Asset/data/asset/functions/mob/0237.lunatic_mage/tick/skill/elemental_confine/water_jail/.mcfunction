@@ -11,8 +11,6 @@
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 1
 
-tellraw @a {"storage":"asset:context","nbt":"this.Damage"}
-
 # ダメージ設定
     # 与えるダメージ
         data modify storage api: Argument.Damage set from storage asset:context this.Damage.Confine.WaterJail
