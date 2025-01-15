@@ -11,7 +11,7 @@
     execute if predicate api:area/is_breakable anchored eyes positioned ^ ^ ^ run fill ~0.5 ~-1 ~0.5 ~-0.5 ~-2 ~-0.5 frosted_ice replace #asset:mob/0227.frost_eye/freezable
 
 # 接地で上を向く
-    execute at @s unless block ~ ~0.4 ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~-35
+    execute at @s unless block ~ ~0.2 ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~-35
     execute at @s unless block ~ ~2.5 ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~80
 
 # カベにぶつかった際の処理
