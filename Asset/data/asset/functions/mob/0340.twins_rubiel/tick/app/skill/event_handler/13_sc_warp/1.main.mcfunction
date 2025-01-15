@@ -15,12 +15,12 @@
     execute if score @s 9G.AnimationTimer matches 30 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 1.2
     execute if score @s 9G.AnimationTimer matches 30 run particle flash ~ ~1 ~ 0 0 0 0 1
 # ワープポイント設置
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~30 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~90 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~150 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~210 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~270 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
-    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] rotated ~330 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~30 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~90 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~150 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~210 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~270 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
+    execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~330 0 run summon area_effect_cloud ^ ^1.2 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:160,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.0"]}
 
 ## 攻撃
 # 移動

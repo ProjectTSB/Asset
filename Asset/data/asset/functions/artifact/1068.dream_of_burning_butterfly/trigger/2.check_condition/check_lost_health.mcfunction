@@ -11,10 +11,10 @@
     execute store result score $Health Temporary run data get storage api: Health 10
 
 # (最大体力 - 現在体力) >= 10 か否かをチェックする
-    tellraw @a [{"text":"Return.MaxHealth: "},{"storage":"api:","nbt":"Return.MaxHealth"}]
-    tellraw @a [{"text":"Health: "},{"storage":"api:","nbt":"Health"}]
+    #tellraw @a [{"text":"Return.MaxHealth: "},{"storage":"api:","nbt":"Return.MaxHealth"}]
+    #tellraw @a [{"text":"Health: "},{"storage":"api:","nbt":"Health"}]
     execute store result score $LostHealth Temporary run scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    tellraw @a [{"text":"$LostHealth: "},{"score":{"objective":"Temporary","name":"$LostHealth"}}]
+    #tellraw @a [{"text":"$LostHealth: "},{"score":{"objective":"Temporary","name":"$LostHealth"}}]
     execute unless score $LostHealth Temporary matches 100.. run tag @s remove CanUsed
 
 # リセットは2.check_conditionで行う
