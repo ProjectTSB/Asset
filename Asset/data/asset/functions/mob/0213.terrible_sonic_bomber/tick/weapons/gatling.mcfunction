@@ -6,7 +6,7 @@
 
 #> prv
 # @private
-   #declare score_holder $attack_start_time
+    #declare score_holder $attack_start_time
 
 # 攻撃座標指定
     data modify entity 0-0-0-0-0 Pos set from storage asset:context this.gatling.target_pos
