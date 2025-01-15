@@ -8,7 +8,7 @@
     execute anchored eyes positioned ^ ^ ^-0.5 run particle snowflake ~ ~ ~ 0.2 0.2 0.2 0 1 normal @a
 
 # 下の水を凍らせる
-    execute anchored eyes positioned ^ ^ ^ run fill ~0.5 ~-1 ~0.5 ~-0.5 ~-2 ~-0.5 frosted_ice replace #asset:mob/0227.frost_eye/freezable
+    execute if predicate api:area/is_breakable anchored eyes positioned ^ ^ ^ run fill ~0.5 ~-1 ~0.5 ~-0.5 ~-2 ~-0.5 frosted_ice replace #asset:mob/0227.frost_eye/freezable
 
 # 接地で上を向く
     execute unless block ~ ~0.4 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
