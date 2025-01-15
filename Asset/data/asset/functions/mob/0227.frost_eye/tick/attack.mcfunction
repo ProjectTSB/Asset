@@ -9,7 +9,7 @@
     playsound block.glass.break hostile @a ~ ~ ~ 1 2 0
 
 # ダメージ 鈍足が付与されてるならダメージ1.5倍
-    data modify storage api: Argument.Damage set from storage asset:context this
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     execute if entity @s[predicate=asset:mob/0227.frost_eye/slowness] store result storage api: Argument.Damage float 1.5 run data get storage asset:context this
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
