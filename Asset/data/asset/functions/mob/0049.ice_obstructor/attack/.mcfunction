@@ -38,5 +38,5 @@
     execute as @p[tag=Victim] run function api:damage/
     function api:damage/reset
 
-# 粉雪を設置
-    execute at @p[gamemode=survival,tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
+# ハード以上かつ破壊可能エリアなら粉雪を設置
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/normal at @p[gamemode=survival,tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
