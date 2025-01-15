@@ -14,9 +14,9 @@
     execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 67
     execute unless data storage api: Return.Effect run function api:entity/mob/effect/get/from_id
 
-# ダメージ 鈍足が付与されてるならダメージ1.5倍
+# ダメージ 鈍足が付与されてるならダメージ1.2倍
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    execute if data storage api: Return.Effect store result storage api: Argument.Damage float 1.5 run data get storage asset:context this
+    execute if data storage api: Return.Effect store result storage api: Argument.Damage float 1.2 run data get storage asset:context this
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって凍り付いた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
