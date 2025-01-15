@@ -30,3 +30,4 @@
 # reset
    scoreboard players reset $attack_start_time Temporary
    tag @a remove 5X.StormShadowTarget
+   data remove storage asset:temp args
