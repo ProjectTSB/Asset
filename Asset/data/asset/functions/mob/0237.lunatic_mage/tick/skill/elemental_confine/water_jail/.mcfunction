@@ -11,12 +11,10 @@
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 1
 
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Confine.WaterJail
-        data modify storage api: Argument.AttackType set value "Magic"
-        data modify storage api: Argument.ElementType set value "Water"
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=5.5..9] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Confine.WaterJail
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=5.5..9] run function api:damage/
     function api:damage/reset

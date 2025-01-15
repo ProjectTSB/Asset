@@ -10,7 +10,6 @@
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @e[type=zombie,tag=this,distance=..0.01,limit=1] run function api:damage/modifier
     function api:damage/
-# リセット
     function api:damage/reset
 
 # Tag削除

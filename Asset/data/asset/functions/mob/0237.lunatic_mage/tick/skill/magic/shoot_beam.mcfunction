@@ -21,12 +21,11 @@
 # 再帰
     function asset:mob/0237.lunatic_mage/tick/skill/magic/beam_recursive
 
-# ダメージ設定
+# ダメージ
     data modify storage lib: Argument.Damage set from storage asset:context this.Damage.Magic
     data modify storage lib: Argument.AttackType set value "Magic"
     function lib:damage/modifier
     execute as @a[tag=LandingTarget,distance=..60] run function lib:damage/
-# リセット
     function lib:damage/reset
 
 # Tag削除
