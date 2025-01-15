@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"呪いの藁人形","color":"#8826B3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。"}','{"text":"自身の体力が最大値の44%以下の場合"}','{"text":"与えるダメージが66.6%増加する。(最大4444)"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の失っている体力の13倍の"}','{"text":"ダメージを攻撃者に対して与える。"}','{"text":"自身の体力が44%以下の場合"}','{"text":"与えるダメージが66.6%増加する。(最大4444)"}','{"text":"誰かを呪うための、釘の刺された藁人形。","color":"gray"}','{"text":"込められた怨念は触れる者さえ蝕む。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
