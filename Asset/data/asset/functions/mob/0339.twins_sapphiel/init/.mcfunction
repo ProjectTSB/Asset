@@ -28,5 +28,10 @@
 # 移動
     execute at @s run tp @s ~ ~-100 ~
 
+# bossbar消去
+    execute store result storage asset:temp 9F.MobUUID int 1 run scoreboard players get @s MobUUID
+    function asset:mob/0339.twins_sapphiel/init/remove_bossbar.m with storage asset:temp 9F
+    data remove storage asset:temp 9F
+
 # HP共有
     scoreboard players operation @s ForwardTargetMobUUID = @e[type=slime,tag=9E.Root,sort=nearest,limit=1] MobUUID

@@ -10,6 +10,9 @@
 # アニメーション再生
     execute if score @s General.Object.Tick matches 1 run function animated_java:twins_rubiel/animations/42_escape/tween {duration:1, to_frame: 1}
 
+# 移動
+    execute if block ~ ~-0.5 ~ #lib:no_collision run tp @s ~ ~-0.5 ~
+
 # 演出
     execute if score @s General.Object.Tick matches 59 run playsound entity.phantom.flap hostile @a ~ ~ ~ 3 1.2
     execute if score @s General.Object.Tick matches 66 run playsound item.trident.return hostile @a ~ ~ ~ 1 0.7
