@@ -13,10 +13,10 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 45f
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "Water"
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=5.5..9] run function lib:damage/
+        data modify storage api: Argument.Damage set value 45f
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "Water"
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=5.5..9] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
