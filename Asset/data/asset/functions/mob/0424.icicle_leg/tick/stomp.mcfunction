@@ -10,7 +10,7 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0.5
 
 # スコアセット、着地後の行動が持続攻撃になる
-    scoreboard players set @s General.Mob.Tick 32
+    scoreboard players set @s General.Mob.Tick 2
 
 # モデル変更
     item replace entity @s armor.head with stick{CustomModelData:20470}
