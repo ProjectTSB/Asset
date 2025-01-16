@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onDamageFromEntity"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"属性攻撃で被ダメージ","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [0,3000]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

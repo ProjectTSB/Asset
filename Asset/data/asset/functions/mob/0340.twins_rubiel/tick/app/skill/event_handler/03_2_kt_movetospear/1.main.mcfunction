@@ -20,9 +20,9 @@
     execute if score @s 9G.AnimationTimer matches 39..42 at @s positioned ^ ^0.2 ^ run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 65..75 at @s positioned ^ ^0.05 ^-0.05 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     # ベクトル計算移動
-        execute if score @s 9G.AnimationTimer matches 34 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
+        execute if score @s 9G.AnimationTimer matches 34 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-1 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 34 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/4.calc_vector_0
-        execute if score @s 9G.AnimationTimer matches 45 positioned as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-2 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
+        execute if score @s 9G.AnimationTimer matches 45 positioned as @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] run summon area_effect_cloud ^ ^0.1 ^-2 {CustomNameVisible:0b,Particle:"block air",Duration:2,Tags:["Object","9G.Temp.Target.Aec.0"]}
         execute if score @s 9G.AnimationTimer matches 45 if entity @e[type=area_effect_cloud,tag=9G.Temp.Target.Aec.0] run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/4.calc_vector_1
         execute if score @s 9G.AnimationTimer matches 36..40 at @s run function asset:mob/0340.twins_rubiel/app/general/4.teleport_using_vector
         execute if score @s 9G.AnimationTimer matches 45..50 at @s run function asset:mob/0340.twins_rubiel/app/general/4.teleport_using_vector
