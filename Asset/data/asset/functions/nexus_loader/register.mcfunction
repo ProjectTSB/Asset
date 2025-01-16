@@ -4,15 +4,15 @@
 #
 # @within tag/function asset:nexus_loader/register
 
-data modify storage api: Argument set value {ID:100,Dimension:"minecraft:overworld",Pos:[-3969, 38,-909],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
+data modify storage api: Argument set value {ID:100,Dimension:"minecraft:overworld",Pos:[-3969d, 38d,-909d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:101,Dimension:"minecraft:overworld",Pos:[-3438,140,-897],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
+data modify storage api: Argument set value {ID:101,Dimension:"minecraft:overworld",Pos:[-3438d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:102,Dimension:"minecraft:overworld",Pos:[-2706,100,-897],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-56"]}
+data modify storage api: Argument set value {ID:102,Dimension:"minecraft:overworld",Pos:[-2706d,100d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-57"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:103,Dimension:"minecraft:overworld",Pos:[-2177,145,-917],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-57"]}
+data modify storage api: Argument set value {ID:103,Dimension:"minecraft:overworld",Pos:[-2177d,145d,-917d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-56"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:104,Dimension:"minecraft:overworld",Pos:[-3971,  2,-385],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-61"]}
+data modify storage api: Argument set value {ID:104,Dimension:"minecraft:overworld",Pos:[-3971d,  2d,-385d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-61"]}
 function api:teleporter/unsafe/register_manual
 
 #> Private
