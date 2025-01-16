@@ -8,9 +8,9 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/backstep
 
 # 後ろに下がる
-    execute if score @s General.Mob.Tick matches 0..5 rotated ~ 0 run tp @s ^ ^ ^-0.5
-    execute if score @s General.Mob.Tick matches 6..10 rotated ~ 0 run tp @s ^ ^ ^-0.3
-    execute if score @s General.Mob.Tick matches 11..15 rotated ~ 0 run tp @s ^ ^ ^-0.1
+    execute if score @s General.Mob.Tick matches 0..5 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.5
+    execute if score @s General.Mob.Tick matches 6..10 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.3
+    execute if score @s General.Mob.Tick matches 11..15 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.1
 
 # 突進開始アニメ
     execute if score @s General.Mob.Tick matches 15 run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/start
