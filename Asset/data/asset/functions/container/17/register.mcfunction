@@ -18,4 +18,4 @@ execute unless loaded 11 20 -51 run return 1
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
     # data modify storage asset:container LootTable set value "undefined"
 # アイテム ([id(minecraft:loot_table)] オプション)
-    data modify storage asset:container Items set value [{Slot:13b,Item:{id:"minecraft:apple",Count:16b,tag:{}}}]
+    data modify storage asset:container Items set value [{Slot:13b,Item:{id:"minecraft:apple",Count:16b}}]
