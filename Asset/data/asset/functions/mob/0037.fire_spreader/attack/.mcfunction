@@ -12,7 +12,7 @@
     execute at @p[gamemode=survival,tag=Victim,distance=..6] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
 
 # 延焼能力
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
+    execute if predicate api:area/is_breakable at @p[tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
 
 # 引数の設定
     # 与えるダメージ
