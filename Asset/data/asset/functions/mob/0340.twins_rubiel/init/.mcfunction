@@ -29,5 +29,10 @@ execute positioned ~ ~100 ~ rotated ~ 0 run function animated_java:twins_rubiel/
 # 移動
     execute at @s run tp @s ~ ~-100 ~
 
+# bossbar消去
+    execute store result storage asset:temp 9G.MobUUID int 1 run scoreboard players get @s MobUUID
+    function asset:mob/0340.twins_rubiel/init/remove_bossbar.m with storage asset:temp 9G
+    data remove storage asset:temp 9G
+
 # HP共有
     scoreboard players operation @s ForwardTargetMobUUID = @e[type=slime,tag=9E.Root,sort=nearest,limit=1] MobUUID

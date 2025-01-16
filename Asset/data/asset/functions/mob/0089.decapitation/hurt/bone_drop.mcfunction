@@ -1,4 +1,4 @@
-#> asset:mob/0089.decapitation/hurt/2.1.bone_drop
+#> asset:mob/0089.decapitation/hurt/bone_drop
 #
 # 骨を落とす
 #
@@ -11,11 +11,8 @@
 
 # 自爆ダメージ
     data modify storage api: Argument.Damage set value 4f
-# 第一属性
     data modify storage api: Argument.AttackType set value "Physical"
-# 耐性を無視する
     data modify storage api: Argument.FixedDamage set value true
-# 自爆する
+    function api:damage/modifier
     function api:damage/
-# リセット
     function api:damage/reset

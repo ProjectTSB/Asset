@@ -79,7 +79,7 @@
 
 # ダメージ
     # 与えるダメージ = 113
-        data modify storage api: Argument.Damage set value 113f
+        data modify storage api: Argument.Damage set value 42f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
