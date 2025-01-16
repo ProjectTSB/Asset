@@ -16,16 +16,16 @@ execute unless loaded 150 4 133 run return 1
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
     data modify storage asset:spawner SpawnPotentials set value [{Id:336,Weight:14},{Id:37,Weight:6}]
 # 一度に召喚する数 (int)
-    data modify storage asset:spawner SpawnCount set value 3
+    data modify storage asset:spawner SpawnCount set value 2
 # 動作範囲 (int) この範囲にプレイヤーが存在するとき、Mobの召喚を開始する
     data modify storage asset:spawner SpawnRange set value 4
 # 初回召喚時間 (int)
     data modify storage asset:spawner Delay set value 20
 # 最低召喚間隔 (int)
-    data modify storage asset:spawner MinSpawnDelay set value 100
+    data modify storage asset:spawner MinSpawnDelay set value 50
 # 最大召喚間隔 (int)
-    data modify storage asset:spawner MaxSpawnDelay set value 400
+    data modify storage asset:spawner MaxSpawnDelay set value 100
 # 近くのエンティティの最大数 (int)
-    data modify storage asset:spawner MaxNearbyEntities set value 3
+    data modify storage asset:spawner MaxNearbyEntities set value 2
 # この範囲にプレイヤーが存在するとき、Mobの召喚を開始する // distance <= 100
     data modify storage asset:spawner RequiredPlayerRange set value 10

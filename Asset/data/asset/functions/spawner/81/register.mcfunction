@@ -22,9 +22,9 @@ execute unless loaded 223 12 -25 run return 1
 # 初回召喚時間 (int)
     data modify storage asset:spawner Delay set value 20
 # 最低召喚間隔 (int)
-    data modify storage asset:spawner MinSpawnDelay set value 100
+    data modify storage asset:spawner MinSpawnDelay set value 50
 # 最大召喚間隔 (int)
-    data modify storage asset:spawner MaxSpawnDelay set value 400
+    data modify storage asset:spawner MaxSpawnDelay set value 100
 # 近くのエンティティの最大数 (int)
     data modify storage asset:spawner MaxNearbyEntities set value 1
 # この範囲にプレイヤーが存在するとき、Mobの召喚を開始する // distance <= 100

@@ -5,12 +5,12 @@
 # @within function asset_manager:spawner/register/register.m
 
 
-execute unless loaded -21 9 86 run return 1
+execute unless loaded -28 9 99 run return 1
 
 # ID (int)
     data modify storage asset:spawner ID set value 243
 # Pos ([int] @ 3)
-    data modify storage asset:spawner Pos set value [-21, 9, 86]
+    data modify storage asset:spawner Pos set value [-28, 9, 99]
 # 体力 (int) このスポナーから召喚されたMobがN体殺されると破壊されるか
     data modify storage asset:spawner HP set value 3
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
@@ -22,9 +22,9 @@ execute unless loaded -21 9 86 run return 1
 # 初回召喚時間 (int)
     data modify storage asset:spawner Delay set value 20
 # 最低召喚間隔 (int)
-    data modify storage asset:spawner MinSpawnDelay set value 100
+    data modify storage asset:spawner MinSpawnDelay set value 50
 # 最大召喚間隔 (int)
-    data modify storage asset:spawner MaxSpawnDelay set value 400
+    data modify storage asset:spawner MaxSpawnDelay set value 100
 # 近くのエンティティの最大数 (int)
     data modify storage asset:spawner MaxNearbyEntities set value 2
 # この範囲にプレイヤーが存在するとき、Mobの召喚を開始する // distance <= 100
