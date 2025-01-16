@@ -8,4 +8,8 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1172.cyfosio_v2
+
+# 召喚
+    data modify storage api: Argument.ID set value 1084
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    function api:object/summon
