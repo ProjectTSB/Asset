@@ -11,7 +11,7 @@
     # kill @s[scores={General.Object.Tick=1000..}]
 
 # 生きている場合の処理
-execute if data storage asset:context this{IsBroken:0b} run function asset:object/2088.patriot_launcher/tick/tick_active
+    execute if data storage asset:context this{IsBroken:0b} run function asset:object/2088.patriot_launcher/tick/tick_active
 
 # 死んでいる場合の処理
-execute if data storage asset:context this{IsBroken:1b} run function asset:object/2088.patriot_launcher/tick/tick_broken
+    execute if data storage asset:context this{IsBroken:1b} run function asset:object/2088.patriot_launcher/tick/tick_broken
