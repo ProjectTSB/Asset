@@ -7,7 +7,7 @@
 
 
 # 魔法、無属性のダメージをぶちかます
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set value 70.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.AdditionalMPHeal set value 9.0f

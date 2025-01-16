@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"血を喰らう恐怖","color":"dark_red","bold":true,"italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"赤い騎士の象徴","color":"dark_red"}','{"text":"被ダメ時、10秒間攻撃力が10%増加する","color":"dark_red"}','{"text":"ただし発動時、追加でダメージを受ける","color":"dark_red"}']
+    data modify storage asset:artifact Lore set value ['{"text":"赤い騎士の象徴","color":"dark_red"}','{"text":"被ダメ時、5秒間攻撃力が20%増加する","color":"dark_red"}','{"text":"ただし発動時、追加でダメージを受ける","color":"dark_red"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 200
+    data modify storage asset:artifact LocalCooldown set value 100
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
