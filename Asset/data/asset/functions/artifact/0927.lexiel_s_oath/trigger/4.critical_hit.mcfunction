@@ -9,4 +9,4 @@
         execute if entity @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..10] run data modify storage lib: Argument.Damage set value 3000f
         execute if entity @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable,distance=..10] run data modify storage lib: Argument.Damage set value 9999f
     # 防御無視
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage lib: Argument.BypassModifier set value true
