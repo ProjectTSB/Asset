@@ -11,7 +11,7 @@
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Water"
     # MP回復
-        data modify storage api: Argument.AdditionalMPHeal set value 5f
+        data modify storage api: Argument.AdditionalMPHeal set value 2.2f
     # 補正function
         execute at @a if score @s AC.UserID = @p UserID as @p run function api:damage/modifier
     # 対象に
