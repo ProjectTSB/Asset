@@ -6,3 +6,8 @@
 
 # 登場
     execute if entity @s[tag=BG.Skill.Start] run function asset:mob/0412.tiamat/tick/event/start/
+
+# 待機
+    execute if entity @s[tag=BG.Skill.Idle] run function asset:mob/0412.tiamat/tick/event/idle/
+# 移動
+    execute if entity @s[tag=BG.Skill.Move] run function asset:mob/0412.tiamat/tick/event/move/

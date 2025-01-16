@@ -12,6 +12,7 @@
     # - アニメーション再生
         #declare function animated_java:tiamat_aj/animations/0_start/tween
         #declare function animated_java:tiamat_aj/animations/1_idle/tween
+        #declare function animated_java:tiamat_aj/animations/2_move/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.tiamat_aj.animation.0_start.playing
@@ -26,12 +27,17 @@
     #
     # - スキル
     #declare tag BG.Skill.Start 登場
+    #declare tag BG.Skill.Idle 待機
+    #declare tag BG.Skill.Move 移動
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット
     #
     # - 一時
     #declare tag BG.Temp.Dummy
+    #declare tag BG.Temp.Ground 角度決定用
+    #declare tag BG.Temp.AttackRotation 角度決定用
+    #declare tag BG.Temp.AttackPosition 位置決定用
     #
     # - オブジェクト
     #declare tag BG.Object オブジェクト共通タグ

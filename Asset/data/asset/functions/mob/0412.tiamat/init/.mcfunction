@@ -19,3 +19,5 @@
         # scoreboard players set @s BG.Idle.Count 0
     # 登場モーション再生
         tag @s add BG.Skill.Start
+    # 最も近くのプレイヤーにヘイトを向ける
+        tag @p[distance=..80] add BG.MainTarget

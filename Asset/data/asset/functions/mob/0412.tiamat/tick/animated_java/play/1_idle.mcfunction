@@ -5,4 +5,4 @@
 # @within asset:mob/0412.tiamat/tick/**
 
 # 再生
-    function animated_java:tiamat_aj/animations/1_idle/tween {duration:1, to_frame: 0}
+    function animated_java:tiamat_aj/animations/1_idle/tween {duration:1, to_frame: 1}
