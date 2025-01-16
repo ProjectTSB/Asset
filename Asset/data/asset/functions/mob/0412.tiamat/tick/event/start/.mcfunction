@@ -12,7 +12,7 @@
         execute if score @s BG.EventTimer matches 1 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/0_start
 
 # 移動
-    execute if score @s BG.EventTimer matches 94..103 run tp @s ~ ~0.1 ~
+    execute if score @s BG.EventTimer matches 94..103 run tp @s ~ ~0.05 ~
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

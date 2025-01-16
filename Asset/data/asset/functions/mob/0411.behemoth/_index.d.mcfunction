@@ -12,13 +12,16 @@
     # - アニメーション再生
         #declare function animated_java:behemoth_aj/animations/0_start/tween
         #declare function animated_java:behemoth_aj/animations/1_idle/tween
+        #declare function animated_java:behemoth_aj/animations/2_move/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
         #declare tag aj.behemoth_aj.animation.1_idle.playing
+        #declare tag aj.behemoth_aj.animation.2_move.playing
     # - 自動生成スコア
         #declare objective aj.0_start.frame
         #declare objective aj.1_idle.frame
+        #declare objective aj.2_move.frame
     # - 共通
     #declare tag BF.EntityRoot 自分自身（当たり判定）
     #declare tag BF.ModelRoot AJモデルのRootEntity
@@ -26,6 +29,8 @@
     #
     # - スキル
     #declare tag BF.Skill.Start 登場
+    #declare tag BF.Skill.Idle 待機
+    #declare tag BF.Skill.Move 移動
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット
