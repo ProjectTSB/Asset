@@ -9,4 +9,4 @@
     playsound block.glass.break hostile @a ~ ~ ~ 1 2 0
 
 # 難易度がハード(ノーマル)以下なら鈍足を付与
-    execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0227.frost_eye/hurt/debuff
+    # execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0227.frost_eye/hurt/debuff
