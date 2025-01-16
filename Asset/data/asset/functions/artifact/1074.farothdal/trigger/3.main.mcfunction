@@ -14,6 +14,3 @@
     data modify storage api: Argument.ID set value 230
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
-
-# うるさいから音消す
-    stopsound @a[distance=..5] * item.armor.equip_leather
