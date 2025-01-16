@@ -25,7 +25,7 @@
     function api:damage/
     function api:damage/reset
 
-# ノーマル以上なら鈍足を付与する
+# ハード以上なら鈍足を付与する
     execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0227.frost_eye/tick/debuff
 
 # クールタイム設定
