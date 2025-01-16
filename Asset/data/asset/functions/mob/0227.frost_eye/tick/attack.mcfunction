@@ -16,7 +16,7 @@
 
 # ダメージ 鈍足が付与されてるならダメージ1.2倍
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    execute if data storage api: Return.Effect store result storage api: Argument.Damage float 1.2 run data get storage asset:context this
+    execute if data storage api: Return.Effect store result storage api: Argument.Damage float 1.2 run data get storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって凍り付いた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
