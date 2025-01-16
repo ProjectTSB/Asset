@@ -9,4 +9,3 @@
     scoreboard objectives add AC.TargetID dummy
     scoreboard objectives add AC.Count.Dash dummy
     scoreboard objectives add AC.Count.Attack dummy
-    scoreboard objectives add AC.Count.Stuck dummy

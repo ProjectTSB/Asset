@@ -25,4 +25,4 @@
     effect give @e[type=#lib:living,tag=Enemy,tag=!this,tag=!Uninterferable,distance=..5] speed 3 2 true
 
 # 奈落行き
-    function api:mob/kill
+    function api:mob/remove

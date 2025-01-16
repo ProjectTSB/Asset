@@ -23,4 +23,4 @@
     data modify storage asset:object Field.IsBroken set value 0b
     data modify storage asset:object Field.IsActive set value 1b
     data modify storage asset:object Field.MissileCooltime set value 0
-    data modify storage asset:object Field.MaxMissileCooltime set value 140
+    data modify storage asset:object Field.MaxMissileCooltime set value 220

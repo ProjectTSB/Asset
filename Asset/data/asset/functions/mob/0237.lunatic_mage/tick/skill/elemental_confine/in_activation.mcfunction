@@ -12,7 +12,7 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 # 6tickごとに水の檻を表示
     scoreboard players operation $Interval Temporary %= $6 Const
-    execute positioned ~ ~-2 ~ if score $Interval Temporary matches 0 rotated 0 0 run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail/
+    execute positioned ~ ~-2 ~ if score $Interval Temporary matches 0 rotated 0 0 run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail
 
 # もしもなんらかの理由で移動してMarkerから離れた場合戻る positioned asが入っているのは移動した際の向き保存のため
     execute positioned ~ ~-2 ~ unless entity @e[type=marker,tag=6L.SpawnPoint,distance=..0.01,sort=nearest,limit=1] positioned as @e[type=marker,tag=6L.SpawnPoint,distance=..50,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~

@@ -1,8 +1,22 @@
-#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail/vfx
+#> asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail
 #
+# 水の檻のダメージと演出の処理
 #
-#
-# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/water_jail/
+# @within function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/in_activation
+
+# 音
+    playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2
+    playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 1
+
+# ダメージ設定
+    # 与えるダメージ
+        data modify storage lib: Argument.Damage set value 70f
+        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage lib: Argument.ElementType set value "Water"
+        function lib:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=5.5..9] run function lib:damage/
+# リセット
+    function lib:damage/reset
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJyUoAMAZnAIYBMAtACwAcA7AMycARvUpsuKOAEY2KRoMml6klFz4swBAHZMAtgmSAwxQAEHDWBhMMugM5JwKAPaFNEJADZaBCS7gY7YADcmbEJ9cAAPJE8wKCiAXziCK1I0QltESgJrCEtXRGi4bGw0GGt9SVpojAcciH1otGsAUSKSsqaAR0Jg7CgAZQsJckR6YLKEvHBoeAoYB16AcwdNM2IyCm4WQTg4ejc2HkpSQU4mDgBWMUlJOE5KHjdZRUpaPnwwbT0KQCxNQCXIwCN9IzqAgWKw6dL2JwuJAsNxeOA+PyIcBBEJhMCRfIEWL5CZgZKpdKZMDZXJRAiFYqlcqVJI1Jh1cmoBwYTS+JAVAgAK0IOhgSA4BG2AC80OzEOcAHQ8AiNFpU9pdHr9QZwYajbBlWXWABCcFFvk63SKKqYQyQEAwoQSAF0gA_3
 # 多角形 2

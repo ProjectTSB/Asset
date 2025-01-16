@@ -1,8 +1,8 @@
-#> asset:artifact/0375.thunder_magic/trigger/vfx
+#> asset:artifact/0375.thunder_magic/trigger/3.1.circle_particle
 #
+# 神器のメイン処理部
 #
-#
-# @within function asset:artifact/0375.thunder_magic/trigger/damage
+# @within function asset:artifact/0375.thunder_magic/trigger/3.main
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIwAscAHHQOwCsAZgLQDMKzz71KUqXYAjAAxxq7RgCZKMzpVYTSnTmAIA7AIYBbBMkBhigAJKGsDG0Y9AZyTgUAe0KaISSmLEEUcV3Az2YABu2tiEBuAAHkheYFAxAL4JBNakaIR2iJQAdHQENhBWboixcNjYaDA2Bh6xGI6FEAaxaDYAouWV1W0AjoSh2FAAypY+5IisodVJALpAA_3
 # 円 1

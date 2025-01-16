@@ -6,7 +6,7 @@
 
 #> prv
 # @private
-    #declare score_holder $attack_start_time
+   #declare score_holder $attack_start_time
 
 # 攻撃座標指定
     data modify entity 0-0-0-0-0 Pos set from storage asset:context this.gatling.target_pos
@@ -17,21 +17,21 @@
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier
     execute at 0-0-0-0-0 positioned ^ ^ ^-0.5 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier_continuation
     execute at 0-0-0-0-0 positioned ^ ^ ^ positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier_continuation
     execute at 0-0-0-0-0 positioned ^ ^ ^0.5 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 

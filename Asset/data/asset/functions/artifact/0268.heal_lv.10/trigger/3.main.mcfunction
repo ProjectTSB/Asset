@@ -17,7 +17,7 @@
     summon minecraft:area_effect_cloud ~ ~0.0 ~ {Age:0,Duration:5,WaitTime:0,Radius:3.5f,Tags:[],Particle:"dust 1 1 0.5 1"}
     summon minecraft:area_effect_cloud ~ ~0.2 ~ {Age:0,Duration:1,WaitTime:0,Radius:3.5f,Tags:[],Particle:"totem_of_undying"}
 # 回復
-    data modify storage lib: Argument.Heal set value 4.2f
+    data modify storage lib: Argument.Heal set value 8.0f
     function lib:heal/modifier
     execute as @a[distance=..4.5,sort=nearest,limit=6] run function lib:heal/
 # リセット

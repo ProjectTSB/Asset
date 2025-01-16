@@ -10,10 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # プレイヤーを死亡させる
-    data modify storage api: Argument.Damage set value 9999
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.FixedDamage set value true
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは足をくじいたので帰った","with":[{"selector":"@s"}]}]']
-    function api:damage/modifier
-    function api:damage/
-    function api:damage/reset
+    kill @s

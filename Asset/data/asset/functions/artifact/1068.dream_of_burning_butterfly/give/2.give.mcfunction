@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"燃える蝶の夢","color":"#FF3705"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"失っている体力10につき","color":"white"}','[{"text":"火攻撃+5%","color":"red"},{"text":"を10秒間得る。(最大25%)","color":"white"}]','{"text":"灼炎の如く燃えている蝶。","color":"gray"}','{"text":"命を燃やすかのように紅く輝いている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、失っている体力10につき","color":"white"}','[{"text":"火攻撃+5%","color":"red"},{"text":"を10秒間得る。(最大25%)","color":"white"}]','{"text":"灼炎の如く燃えている蝶。","color":"gray"}','{"text":"命を燃やすかのように紅く輝いている。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
