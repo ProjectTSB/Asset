@@ -21,7 +21,7 @@
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
 # デバッグのコマンド
-#    scoreboard players set $Random Temporary 3
+    scoreboard players set $Random Temporary 3
 
 # スキル選択
     execute if score $Random Temporary matches 0..1 run tag @s add AC.Dash.Side
