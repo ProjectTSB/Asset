@@ -9,11 +9,13 @@
 
 # 独自init処理
     # 移動
-        tp @s ^ ^1.5 ^ ~ 0
+        tp @s ^ ^0.5 ^ ~ 0
     # NBT設定
     # Aj関連初期化
         function asset:mob/0412.tiamat/init/animated_java
     # スコア初期化
-        # scoreboard players set @s BG.Phase 0
+        scoreboard players set @s BG.EventTimer 0
         # scoreboard players set @s BG.ActCount 0
         # scoreboard players set @s BG.Idle.Count 0
+    # 登場モーション再生
+        tag @s add BG.Skill.Start

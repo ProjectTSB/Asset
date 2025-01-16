@@ -10,11 +10,14 @@
         #declare function animated_java:behemoth_aj/animations/pause_all
         #declare function animated_java:behemoth_aj/as_own_locator_entities
     # - アニメーション再生
+        #declare function animated_java:behemoth_aj/animations/0_start/tween
         #declare function animated_java:behemoth_aj/animations/1_idle/tween
     # - 自動生成タグ
         #declare tag aj.data
+        #declare tag aj.behemoth_aj.animation.0_start.playing
         #declare tag aj.behemoth_aj.animation.1_idle.playing
     # - 自動生成スコア
+        #declare objective aj.0_start.frame
         #declare objective aj.1_idle.frame
     # - 共通
     #declare tag BF.EntityRoot 自分自身（当たり判定）
@@ -22,7 +25,7 @@
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)
     #
     # - スキル
-    #declare tag BF.Skill.
+    #declare tag BF.Skill.Start 登場
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット

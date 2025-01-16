@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0412.tiamat/**
-    # scoreboard objectives add
+    scoreboard objectives add BG.EventTimer dummy

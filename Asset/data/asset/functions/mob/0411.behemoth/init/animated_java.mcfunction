@@ -12,6 +12,9 @@
     # Locatorの初期化
         # execute as @e[type=item_display,tag=BF.ModelRoot] run function animated_java:behemoth_aj/as_own_locator_entities {command:'function asset:mob/0410.behemoth/init/locator'}
 
-# テスト
-    # 待機モーション再生
-        execute as @e[type=item_display,tag=BF.ModelRoot] at @s run function animated_java:behemoth_aj/animations/1_idle/tween {duration:1, to_frame: 1}
+# 登場モーション再生
+    # execute as @e[type=item_display,tag=BF.ModelRoot] at @s run function animated_java:behemoth_aj/animations/0_start/tween {duration:1, to_frame: 1}
+
+# # テスト
+#     # 待機モーション再生
+#         execute as @e[type=item_display,tag=BF.ModelRoot] at @s run function animated_java:behemoth_aj/animations/1_idle/tween {duration:1, to_frame: 1}
