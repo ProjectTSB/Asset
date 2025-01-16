@@ -8,8 +8,8 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 演出
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run particle flame ~ ~1.5 ~ 0.5 0.5 0.5 0.1 40 normal @a
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
+    execute at @p[tag=Victim,distance=..6] run particle flame ~ ~1.5 ~ 0.5 0.5 0.5 0.1 40 normal @a
+    execute at @p[tag=Victim,distance=..6] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
 
 # 延焼能力
     execute if predicate api:area/is_breakable at @p[tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
