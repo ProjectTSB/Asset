@@ -5,6 +5,7 @@
 # @within function asset:mob/0372.tutankhamen/tick/skill/dash/side/
 
 # 壁があったら移動をやめる
+    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ~ ~ ~ ~ 0
     execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run scoreboard players set @s General.Mob.Tick 30
 
 # 横に移動
