@@ -10,4 +10,4 @@ function asset:mob/super.remove
     function asset:mob/0338.corundum_twins/remove/app/1.remove
 
 datapack disable "file/AJ_Rubiel.zip"
-datapack disable "file/AJ_Supphiel.zip"
+datapack disable "file/AJ_Sapphiel.zip"

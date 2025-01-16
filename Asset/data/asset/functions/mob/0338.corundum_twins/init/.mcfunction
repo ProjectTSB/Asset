@@ -2,7 +2,7 @@
 # @within asset:mob/alias/338/init
 
 datapack enable "file/AJ_Rubiel.zip"
-datapack enable "file/AJ_Supphiel.zip"
+datapack enable "file/AJ_Sapphiel.zip"
 
 function asset:mob/super.init
 

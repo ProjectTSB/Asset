@@ -15,5 +15,5 @@
 
 # 消滅処理
     execute if score @s General.Object.Tick matches 67 run datapack disable "file/AJ_Rubiel.zip"
-    execute if score @s General.Object.Tick matches 67 run datapack disable "file/AJ_Supphiel.zip"
+    execute if score @s General.Object.Tick matches 67 run datapack disable "file/AJ_Sapphiel.zip"
     kill @s[scores={General.Object.Tick=68..}]
