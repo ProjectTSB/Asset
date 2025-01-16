@@ -21,9 +21,9 @@
 # HealTargetのプレイヤーの位置で演出
     execute at @a[tag=HealTarget,distance=..12] run function asset:artifact/1051.blue_crystal_of_stardust/trigger/vfx
 
-# 使用者の最大体力の12%分、HealTargetが付与されたプレイヤーを回復
+# 使用者の最大体力の5%分、HealTargetが付与されたプレイヤーを回復
     function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.12 run data get storage api: Return.MaxHealth 1
+    execute store result storage api: Argument.Heal double 0.05 run data get storage api: Return.MaxHealth 1
     function api:heal/modifier
     execute as @a[tag=HealTarget,distance=..12] run function api:heal/
     function api:heal/reset
