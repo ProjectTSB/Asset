@@ -26,12 +26,5 @@
     execute if score $Interval Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0424.icicle_leg/tick/icicle_rain/damage
     scoreboard players reset $Interval Temporary
 
-# 吹き飛ばし
-    data modify storage api: Argument.ID set value 17
-    data modify storage api: Argument.Stack set value 5
-    data modify storage api: Argument.Duration set value 5
-    execute as @a[gamemode=!spectator,distance=..5] run function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
-
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..8,limit=1]
