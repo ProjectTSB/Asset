@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onDamageFromEntity"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"体力が最大値の66.6%以下"}'
+    data modify storage asset:artifact Condition set value '{"text":"体力が66.6%以下"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [0,4444]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
