@@ -37,6 +37,9 @@
     #
     # - 一時
     #declare tag BF.Temp.Dummy
+    #declare tag BF.Temp.Ground 角度決定用
+    #declare tag BF.Temp.AttackRotation 角度決定用
+    #declare tag BF.Temp.AttackPosition 位置決定用
     #
     # - オブジェクト
     #declare tag BF.Object オブジェクト共通タグ

@@ -16,5 +16,8 @@
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
+# 演出
+    execute if score @s BF.EventTimer matches 24 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+
 # 終了
-    execute if score @s BF.EventTimer matches 46.. run function asset:mob/0411.behemoth/tick/event/idle/end
+    execute if score @s BF.EventTimer matches 45.. run function asset:mob/0411.behemoth/tick/event/idle/end

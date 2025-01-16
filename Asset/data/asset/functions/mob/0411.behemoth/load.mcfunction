@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/0411.behemoth/**
     scoreboard objectives add BF.EventTimer dummy
+    scoreboard objectives add BF.Counter dummy

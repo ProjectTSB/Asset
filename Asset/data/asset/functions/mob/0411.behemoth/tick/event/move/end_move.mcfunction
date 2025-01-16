@@ -6,7 +6,7 @@
 
 # 遷移先タイマー設定
     scoreboard players add @s BF.EventTimer 5
-    execute if score @s BF.EventTimer matches 46.. run scoreboard players remove @s BF.EventTimer 45
+    execute if score @s BF.EventTimer matches 45.. run scoreboard players remove @s BF.EventTimer 45
     execute store result storage asset:temp BF.Time int 1 run scoreboard players get @s BF.EventTimer
 
 # 待機アニメーションに遷移
