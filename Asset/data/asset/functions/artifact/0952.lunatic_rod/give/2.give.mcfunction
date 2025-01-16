@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"狂月の杖","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"強力な魔法を放つと同時に、","color":"white"}]','[{"text":"ヒット時自身に","color":"white"},{"text":"魔法攻撃+10%","color":"dark_purple"},{"text":"を15秒間得る。","color":"white"}]','[{"text":"狂気の魔法使いの持っていた杖。","color":"gray"}]','[{"text":"この杖の持つ強大な魔力をもってしても、","color":"gray"}]','[{"text":"彼の者にとっては枷でしかなかった。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"強力な魔法を放つと同時に、","color":"white"}]','[{"text":"ヒット時","color":"white"},{"text":"魔法攻撃+10%","color":"dark_purple"},{"text":"を15秒間得る。","color":"white"}]','[{"text":"狂気の魔法使いの持っていた杖。","color":"gray"}]','[{"text":"この杖の持つ強大な魔力をもってしても、","color":"gray"}]','[{"text":"彼の者にとっては枷でしかなかった。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
