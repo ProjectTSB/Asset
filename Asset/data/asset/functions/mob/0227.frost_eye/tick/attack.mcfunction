@@ -8,10 +8,12 @@
     particle snowflake ~ ~1.6 ~ 0.5 0.3 0.5 0 30 normal @a
     playsound block.glass.break hostile @a ~ ~ ~ 1 2 0
 
-# 対象の鈍足デバフ(ID:17,67)を検知する
+# 対象の鈍足デバフ(ID:17,67,117)を検知する
     data modify storage api: Argument.ID set value 17
     function api:entity/mob/effect/get/from_id
     execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 67
+    execute unless data storage api: Return.Effect run function api:entity/mob/effect/get/from_id
+    execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 117
     execute unless data storage api: Return.Effect run function api:entity/mob/effect/get/from_id
 
 # ダメージ 鈍足が付与されてるならダメージ1.2倍
