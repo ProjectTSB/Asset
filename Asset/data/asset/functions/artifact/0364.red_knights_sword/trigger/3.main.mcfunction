@@ -15,7 +15,7 @@
 
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 365
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
     execute unless data storage asset:context Items.mainhand.id run tellraw @s {"text":"赤い騎士の剣は血を欲している","color":"dark_red","bold":true}
 
 # 演出
