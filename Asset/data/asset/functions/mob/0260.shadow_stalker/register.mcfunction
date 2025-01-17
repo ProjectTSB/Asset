@@ -13,5 +13,7 @@
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 260
+# 体力 (double) (オプション)
+    data modify storage asset:mob Health set value 3500
 # フィールド
     data modify storage asset:mob Field.Damage set value 36f
