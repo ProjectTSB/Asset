@@ -21,3 +21,6 @@
         tag @s add BG.Skill.Start
     # 最も近くのプレイヤーにヘイトを向ける
         tag @p[distance=..80] add BG.MainTarget
+
+# テスト
+    tag @s add BG.State.Wait

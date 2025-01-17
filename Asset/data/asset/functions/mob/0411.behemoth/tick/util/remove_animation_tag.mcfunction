@@ -6,4 +6,6 @@
 
 # アニメーションタグ
     tag @s remove BF.Skill.Start
+    tag @s remove BF.Skill.Idle
     tag @s remove BF.Skill.Move
+    tag @s remove BF.Skill.Flatten

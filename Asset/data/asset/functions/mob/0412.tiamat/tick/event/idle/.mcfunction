@@ -11,7 +11,7 @@
     function asset:mob/0412.tiamat/tick/util/rotate_to_target
 
 # ターゲットが遠い場合、移動
-    execute unless entity @p[tag=BG.MainTarget,distance=..12] run function asset:mob/0412.tiamat/tick/event/idle/start_move
+    execute unless entity @s[tag=BG.State.Wait] unless entity @p[tag=BG.MainTarget,distance=..12] run function asset:mob/0412.tiamat/tick/event/idle/start_move
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

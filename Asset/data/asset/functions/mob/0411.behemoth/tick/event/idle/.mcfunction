@@ -11,7 +11,7 @@
     function asset:mob/0411.behemoth/tick/util/rotate_to_target
 
 # ターゲットが遠い場合、移動
-    execute unless entity @p[tag=BF.MainTarget,distance=..10] run function asset:mob/0411.behemoth/tick/event/idle/start_move
+    execute unless entity @s[tag=BF.State.Wait] unless entity @p[tag=BF.MainTarget,distance=..10] run function asset:mob/0411.behemoth/tick/event/idle/start_move
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

@@ -13,6 +13,11 @@
         #declare function animated_java:behemoth_aj/animations/0_start/tween
         #declare function animated_java:behemoth_aj/animations/1_idle/tween
         #declare function animated_java:behemoth_aj/animations/2_move/tween
+        #declare function animated_java:behemoth_aj/animations/3_0_cast_start/tween
+        #declare function animated_java:behemoth_aj/animations/3_1_casting/tween
+        #declare function animated_java:behemoth_aj/animations/4_breath/tween
+        #declare function animated_java:behemoth_aj/animations/4_breath_continue/tween
+        #declare function animated_java:behemoth_aj/animations/5_flatten/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
@@ -31,11 +36,14 @@
     #declare tag BF.Skill.Start 登場
     #declare tag BF.Skill.Idle 待機
     #declare tag BF.Skill.Move 移動
+    #declare tag BF.Skill.FlareBreath フレアブレス
+    #declare tag BF.Skill.Flatten フラッテン
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット
     #
     # - 一時
+    #declare tag BF.State.Wait 待機
     #declare tag BF.Temp.Dummy
     #declare tag BF.Temp.Ground 角度決定用
     #declare tag BF.Temp.AttackRotation 角度決定用
