@@ -14,7 +14,7 @@
     scoreboard players operation $WM.Temp Temporary -= $WM.LatestUseTick Temporary
     execute unless score $WM.Temp Temporary matches ..30 run scoreboard players set @s WM.Combo 0
 
-# コンボフィニッシュを出したあとは、前回の使用時とのTickの差が13Tick以上でないと使用処理がキャンセルされる
+# コンボフィニッシュを出したあとは、コンボリセット。ブレイブソードと異なり、隠しCDは存在しない。
     execute if score @s WM.Combo matches 3.. run scoreboard players reset @s WM.Combo
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
