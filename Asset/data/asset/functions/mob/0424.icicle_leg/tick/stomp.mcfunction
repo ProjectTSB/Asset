@@ -10,7 +10,7 @@
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0.5
 
 # スコアセット、着地後の行動が持続攻撃になる
-    scoreboard players set @s General.Mob.Tick 32
+    scoreboard players set @s General.Mob.Tick 2
 
 # モデル変更
     item replace entity @s armor.head with stick{CustomModelData:20470}
@@ -19,14 +19,8 @@
     data modify storage api: Argument.Damage set value 40f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
-
-# 補正実行
     function api:damage/modifier
-
-# ダメージを与える
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
-
-# リセット
     function api:damage/reset
 
 # パーティクル

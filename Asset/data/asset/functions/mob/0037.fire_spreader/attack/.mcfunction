@@ -8,25 +8,21 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 演出
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run particle flame ~ ~1.5 ~ 0.5 0.5 0.5 0.1 40 normal @a
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
+    execute at @p[tag=Victim,distance=..6] run particle flame ~ ~1.5 ~ 0.5 0.5 0.5 0.1 40 normal @a
+    execute at @p[tag=Victim,distance=..6] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.4 1.2 0
 
 # 延焼能力
-    execute at @p[gamemode=survival,tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
+# 難易度によって燃やす能力を調整する
+# Normal：なし Hard：1x1x1ブロック Blessless：3x3x3ブロック
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/normal at @p[tag=Victim,distance=..6] run fill ~ ~ ~ ~ ~ ~ fire replace #lib:air
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/hard at @p[tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
 
-# 引数の設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 8.0
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "Fire"
-# デスログ
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって炎の中で燃え尽きた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの炎の延焼で灰となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-# 補正functionを実行
+# ダメージ
+    data modify storage api: Argument.Damage set value 8.0
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって炎の中で燃え尽きた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの炎の延焼で灰となった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
     function api:damage/modifier
-# 対象
-    execute at @p[tag=Victim,distance=..6] as @a[gamemode=!spectator,predicate=lib:is_burning,distance=..4.0] run function api:damage/
-# リセット
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
