@@ -11,5 +11,7 @@
     attribute @s minecraft:generic.attack_knockback modifier remove 1-0-1-0-46200000007
 
 # 防御力+5%
-    data modify storage api: Argument.UUID set value [I;1,1,1122,6]
+    data modify storage api: Argument.UUID set value [I;1,1,1122,7]
     function api:modifier/defense/base/remove
+
+say a
