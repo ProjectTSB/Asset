@@ -41,11 +41,11 @@
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # 離れ過ぎたら消える
-    execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run kill @s
+    execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run function asset:object/1059.book_of_hero/tick/kill
 
 # リセット
     scoreboard players reset $OwnerID Temporary
     tag @a[tag=1059.OwnerPlayer,distance=..80] remove 1059.OwnerPlayer
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=300..}]
+    execute if entity @s[scores={General.Object.Tick=300..}] run function asset:object/1059.book_of_hero/tick/kill
