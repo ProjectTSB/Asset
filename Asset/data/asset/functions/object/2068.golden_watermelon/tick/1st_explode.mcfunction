@@ -26,8 +26,8 @@
     particle explosion ~ ~ ~ 1 1 1 0 5 normal @a
     particle large_smoke ~ ~ ~ 0 0 0 0.3 40 normal @a
 
-# ノーマル以上で鈍化を付与
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
+# Slowness:trueなら鈍足を付与
+    execute if data storage asset:context this{Slowness:true} run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
 
 # 水属性ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.1st

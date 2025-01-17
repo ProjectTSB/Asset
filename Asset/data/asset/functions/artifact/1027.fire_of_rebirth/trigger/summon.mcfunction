@@ -20,7 +20,7 @@
         scoreboard players operation $Random Temporary %= $20 Const
         execute store result storage api: Argument.FieldOverride.ChargeTime short 1 run scoreboard players add $Random Temporary 5
     # ダメージ
-        data modify storage api: Argument.FieldOverride.Damage set value 750f
+        data modify storage api: Argument.FieldOverride.Damage set value 350f
 
 # 召喚
     data modify storage api: Argument.ID set value 1063
