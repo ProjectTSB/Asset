@@ -6,9 +6,9 @@
 
 # 引数の設定
     # ダメージ値設定
-        execute store result storage api: Argument.Damage float 1 run random value 125..175
+        execute store result storage api: Argument.Damage float 1 run random value 80..110
     # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行

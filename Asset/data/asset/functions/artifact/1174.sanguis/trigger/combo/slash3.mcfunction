@@ -15,11 +15,11 @@
     execute positioned ^ ^ ^2 positioned ~ ~-0.5 ~ rotated ~ ~-10 run function api:object/summon
 
 # 攻撃判定
-    execute at @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function asset:artifact/1174.sanguis/trigger/combo/damage
+    execute at @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function asset:artifact/1174.sanguis/trigger/combo/damage
 
 # 追撃用オブジェクトを配置
     data modify storage api: Argument.ID set value 1085
-    execute store result storage api: Argument.FieldOverride.Damage double 1 run random value 125..175
+    execute store result storage api: Argument.FieldOverride.Damage double 1 run random value 80..110
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute positioned as @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] run function api:object/summon

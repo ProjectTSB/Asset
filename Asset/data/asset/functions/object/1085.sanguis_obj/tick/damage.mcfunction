@@ -15,7 +15,7 @@
     scoreboard players reset $UserID Temporary
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     execute if data storage asset:context this.AdditionalMPHeal run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 # modifier をかける
