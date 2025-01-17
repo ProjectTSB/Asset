@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"サングイス","color":"#FF5555"}'
+    data modify storage asset:artifact Name set value '{"text":"サングイス","color":"#C2B3BE"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"目の前の敵をボッコボコにぶん殴る"}','{"text":"てめーはおれを怒らせた","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"3回攻撃するたびに連撃が発生する"}','{"text":"血は記憶を紡ぎ、魂は誓いを重ねる","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
