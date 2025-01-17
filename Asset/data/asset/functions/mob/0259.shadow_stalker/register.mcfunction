@@ -1,6 +1,8 @@
 #> asset:mob/0259.shadow_stalker/register
 # @within asset:mob/alias/259/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 259
 # Type (string) Wikiを参照
