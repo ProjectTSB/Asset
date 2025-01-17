@@ -21,16 +21,16 @@
 
 # ダメージ
     # 与えるダメージ
-        execute store result storage lib: Argument.Damage float -1 run scoreboard players get $T4.Temp Temporary
+        execute store result storage api: Argument.Damage float -1 run scoreboard players get $T4.Temp Temporary
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
-        execute as @p[tag=T4.Owner] run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..6] run function lib:damage/
+        execute as @p[tag=T4.Owner] run function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # リセット
     scoreboard players reset $T4.Temp Temporary

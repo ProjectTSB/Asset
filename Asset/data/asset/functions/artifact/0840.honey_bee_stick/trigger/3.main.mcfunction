@@ -23,12 +23,12 @@
     function lib:heal/reset
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 500.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 500.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..5] run function api:damage/
+    function api:damage/reset
 
 # 鈍足付与
     effect give @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..5] slowness 2 2 true

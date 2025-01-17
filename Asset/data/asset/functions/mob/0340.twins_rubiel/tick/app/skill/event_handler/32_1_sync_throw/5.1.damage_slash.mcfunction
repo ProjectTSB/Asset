@@ -9,33 +9,33 @@
     execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..5] add 9G.Temp.Target.Attack
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 62f
+        data modify storage api: Argument.Damage set value 62f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute as @a[tag=9G.Temp.Target.Attack] at @s run function lib:damage/
+    execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # ヒット判定
     execute positioned ^ ^ ^ run tag @a[distance=..8.5] add 9G.Temp.Target.Attack.Sub
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 50f
+        data modify storage api: Argument.Damage set value 50f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute as @a[tag=9G.Temp.Target.Attack.Sub,tag=!9G.Temp.Target.Attack] at @s run function lib:damage/
+    execute as @a[tag=9G.Temp.Target.Attack.Sub,tag=!9G.Temp.Target.Attack] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # かちあげ
     execute at @a[tag=9G.Temp.Target.Attack,distance=..3] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:50b,duration:3,show_particles:0b}]}

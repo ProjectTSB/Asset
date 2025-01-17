@@ -15,14 +15,14 @@
     execute at @p[tag=Victim,distance=..6] run playsound entity.ghast.hurt hostile @a ~ ~ ~ 0.5 0.8 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 14f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって蒼い森に取り込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって魂を伐り取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    function lib:damage/modifier
-    execute as @p[tag=Victim,distance=..6] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 14f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって蒼い森に取り込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって魂を伐り取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    function api:damage/modifier
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset
 
 # 難易度値を取得
     function api:global_vars/get_difficulty

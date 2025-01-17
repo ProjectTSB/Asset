@@ -8,14 +8,14 @@
     particle minecraft:soul ~ ~ ~ 0 0 0 0.2 10
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 28.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Fire"
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに精神を破壊された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに魂を撃ち抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    execute as @e[type=zombie,tag=this,distance=..25,sort=nearest,limit=1] run function lib:damage/modifier
-    execute unless entity @s[gamemode=creative] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 28.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに精神を破壊された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに魂を撃ち抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    execute as @e[type=zombie,tag=this,distance=..25,sort=nearest,limit=1] run function api:damage/modifier
+    execute unless entity @s[gamemode=creative] run function api:damage/
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @s remove LandingTarget

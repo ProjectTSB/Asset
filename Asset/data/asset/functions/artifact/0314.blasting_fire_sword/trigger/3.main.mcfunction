@@ -28,17 +28,17 @@
         # 最低ダメージ設定
             scoreboard players add $RandomDamage Temporary 45
     #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $Rotate Temporary

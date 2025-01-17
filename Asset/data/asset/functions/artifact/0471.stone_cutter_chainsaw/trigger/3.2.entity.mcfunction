@@ -14,17 +14,17 @@
 # ダメージ処理
     # 引数の設定
         # 与えるダメージ: 11
-            data modify storage lib: Argument.Damage set value 10.0f
+            data modify storage api: Argument.Damage set value 10.0f
         # クリティカル時のダメージ: 16
-            execute if entity @s[tag=D3.Critical] run data modify storage lib: Argument.Damage set value 21.0f
+            execute if entity @s[tag=D3.Critical] run data modify storage api: Argument.Damage set value 21.0f
         # 第一属性
-            data modify storage lib: Argument.AttackType set value "Physical"
+            data modify storage api: Argument.AttackType set value "Physical"
     # 補正
-        execute as @p[tag=this,distance=..5] run function lib:damage/modifier
+        execute as @p[tag=this,distance=..5] run function api:damage/modifier
     # 実行
-        function lib:damage/
+        function api:damage/
     # 開放
-        function lib:damage/reset
+        function api:damage/reset
 
 # タグの開放
     tag @s remove D3.Critical

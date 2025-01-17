@@ -19,14 +19,14 @@
     effect give @e[type=#lib:living,type=!player,tag=!Friend,tag=!Uninterferable,tag=!Object,distance=..3] slowness 1 3 true
 
 # 範囲でのダメージ(Victimに与えるダメージの0.7倍)
-    execute store result storage lib: Argument.Damage float 0.7 run scoreboard players get $RandomDamage Temporary
+    execute store result storage api: Argument.Damage float 0.7 run scoreboard players get $RandomDamage Temporary
 # 属性(正直3.mainで設定されてるため必要ないが、ないと違和感なので)
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 # 補正
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージ
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] as @e[type=#lib:living,type=!player,tag=!Victim,tag=!Friend,tag=!Uninterferable,tag=!Object,distance=..3] at @s run function lib:damage/
+    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] as @e[type=#lib:living,type=!player,tag=!Victim,tag=!Friend,tag=!Uninterferable,tag=!Object,distance=..3] at @s run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

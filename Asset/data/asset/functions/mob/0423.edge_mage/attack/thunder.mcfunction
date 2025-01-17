@@ -5,7 +5,7 @@
 # @within function asset:mob/0423.edge_mage/attack/
 
 # 属性セット
-    data modify storage lib: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.ElementType set value "Thunder"
 
 # 演出
     particle minecraft:electric_spark ~ ~1 ~ 0.1 0.5 0.1 1 10

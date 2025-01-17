@@ -33,16 +33,16 @@
 
 # ダメージ
     # 与えるダメージ
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $P2.MaxHP Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $P2.MaxHP Temporary
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 火属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function api:damage/
 
 # リセット
     scoreboard players reset $P2.MaxHP Temporary
     scoreboard players reset $P2.Count Temporary
-    function lib:damage/reset
+    function api:damage/reset

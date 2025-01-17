@@ -14,13 +14,13 @@
     function asset:artifact/0273.tonbo_gaeri/trigger/3.1.warp_effect
 
 # ぶん殴ったやつに物理、無属性のダメージをぶちかます
-    data modify storage lib: Argument.Damage set value 555.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run function lib:damage/
+    data modify storage api: Argument.Damage set value 555.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 低速落下を付与する
     effect give @s slow_falling 1 1

@@ -11,13 +11,13 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run playsound minecraft:block.sculk_sensor.clicking player @a ~ ~ ~ 0.6 0.4 0
 
 # ダメージ設定
-        data modify storage lib: Argument.Damage set value 80.0f
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "Fire"
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function lib:damage/
+        data modify storage api: Argument.Damage set value 80.0f
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "Fire"
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # クールタイム設定
     scoreboard players set @s IG.AttackCT 20

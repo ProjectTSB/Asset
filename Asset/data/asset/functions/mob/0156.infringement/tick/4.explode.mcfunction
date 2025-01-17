@@ -15,15 +15,15 @@
     playsound entity.generic.explode hostile @a ~ ~ ~
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 35f
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 45f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに存在を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに生命を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    function lib:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 35f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに存在を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに生命を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    function api:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
+    function api:damage/reset
 
 # ノーマル以上で侵害エフェクトを付与
     execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0156.infringement/tick/5.debuff

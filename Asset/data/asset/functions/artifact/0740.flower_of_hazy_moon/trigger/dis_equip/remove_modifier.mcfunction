@@ -6,7 +6,7 @@
 
 # MP消費
     data modify storage api: Argument.Fluctuation set value -150
-    data modify storage lib: Argument.DisableLog set value 1b
+    data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
 # 魔法攻撃

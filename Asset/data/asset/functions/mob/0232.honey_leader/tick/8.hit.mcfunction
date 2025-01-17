@@ -9,19 +9,19 @@
     playsound block.honey_block.hit hostile @a ~ ~ ~ 1 1 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 40f
+    data modify storage api: Argument.Damage set value 40f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
 # デスログ
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに全身べとべとにされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにハチの巣の材料にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに全身べとべとにされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにハチの巣の材料にされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正
-    execute as @e[type=skeleton,tag=this,distance=..32] run function lib:damage/modifier
+    execute as @e[type=skeleton,tag=this,distance=..32] run function api:damage/modifier
 # 実行
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 # デバフ
     effect give @s mining_fatigue 3 1 true
     execute if predicate api:global_vars/difficulty/max/normal run effect give @s poison 3 1 true

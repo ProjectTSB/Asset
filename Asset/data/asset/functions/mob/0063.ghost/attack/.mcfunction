@@ -15,8 +15,8 @@
     effect give @a[tag=Victim] blindness 1 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 2.5f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    function lib:damage/modifier
-    execute as @a[tag=Victim] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 2.5f
+    data modify storage api: Argument.AttackType set value "Magic"
+    function api:damage/modifier
+    execute as @a[tag=Victim] run function api:damage/
+    function api:damage/reset

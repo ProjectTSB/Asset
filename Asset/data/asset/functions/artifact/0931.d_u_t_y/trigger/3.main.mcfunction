@@ -15,14 +15,14 @@
 # ダメージ計算
     execute store result score $PV.EnemyNum Temporary if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5]
     execute if score $PV.EnemyNum Temporary matches 11.. run scoreboard players set $PV.EnemyNum Temporary 10
-    execute store result storage lib: Argument.Damage float 80 run scoreboard players get $PV.EnemyNum Temporary
+    execute store result storage api: Argument.Damage float 80 run scoreboard players get $PV.EnemyNum Temporary
 
 # 攻撃対象に追加ダメージ
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
-    function lib:damage/modifier
-    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..5] run function lib:damage/
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..5] run function api:damage/
 
 # reset
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $PV.EnemyNum Temporary

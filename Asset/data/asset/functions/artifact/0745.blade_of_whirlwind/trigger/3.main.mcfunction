@@ -28,11 +28,11 @@
     execute store result score $Damage Temporary run random value 420..500
     scoreboard players operation $Damage Temporary *= $Speed Temporary
 # ダメージ与える
-    execute store result storage lib: Argument.Damage float 0.01 run scoreboard players operation $Damage Temporary < $200000 Const
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+    execute store result storage api: Argument.Damage float 0.01 run scoreboard players operation $Damage Temporary < $200000 Const
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 # 自身の移動速度が 100% 以上の時に実行
     execute if score $Speed Temporary matches 1.. run function asset:artifact/0745.blade_of_whirlwind/trigger/5.knockback
 
@@ -41,7 +41,7 @@
     execute if score $Speed Temporary matches 600.. run tp @s ~ ~ ~
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     data remove storage lib: Argument
     scoreboard players reset $Speed Temporary
     scoreboard players reset $BaseSpeed Temporary

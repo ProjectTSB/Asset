@@ -17,17 +17,17 @@
 
 # ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 50f
+        data modify storage api: Argument.Damage set value 50f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 # あたったらAECkill
     execute if entity @a[gamemode=!spectator,distance=..2] run kill @e[type=area_effect_cloud,tag=3N.SkillPillarMaker,distance=0..1,sort=nearest,limit=1]
 # スコアが50なら死ぬ

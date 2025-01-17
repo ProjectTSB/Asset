@@ -16,14 +16,14 @@
 
 # ダメージ設定
     # 与えるダメージ = 90
-        data modify storage lib: Argument.Damage set value 15.0f
+        data modify storage api: Argument.Damage set value 15.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 引数の設定
     # 回復する量 = 2

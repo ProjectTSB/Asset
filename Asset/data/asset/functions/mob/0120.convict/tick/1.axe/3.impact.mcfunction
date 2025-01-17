@@ -10,9 +10,9 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.7 1 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 18f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..2.3] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 18f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,tag=!PlayerShouldInvulnerable,distance=..2.3] run function api:damage/
+    function api:damage/reset

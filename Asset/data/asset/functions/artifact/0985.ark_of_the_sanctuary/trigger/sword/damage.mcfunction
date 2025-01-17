@@ -13,14 +13,14 @@
 
 # ダメージを与える
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 65f
+        data modify storage api: Argument.Damage set value 65f
     # 属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "None"
     # 補正function
-        execute as @a if score @s UserID = @e[type=armor_stand,tag=RD.This,distance=..50,limit=1] RD.SwordUserID run function lib:damage/modifier
+        execute as @a if score @s UserID = @e[type=armor_stand,tag=RD.This,distance=..50,limit=1] RD.SwordUserID run function api:damage/modifier
     # 対象に
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function lib:damage/
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @s remove RD.This

@@ -9,15 +9,15 @@
     playsound block.amethyst_cluster.step neutral @a ~ ~ ~ 1.2 0.7 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 320f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.Damage set value 320f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Water"
 # 補正
-    execute at @a[distance=..160] if score @s KA.UserID = @p UserID as @p run function lib:damage/modifier
+    execute at @a[distance=..160] if score @s KA.UserID = @p UserID as @p run function api:damage/modifier
 # 実行
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 消滅
     kill @s

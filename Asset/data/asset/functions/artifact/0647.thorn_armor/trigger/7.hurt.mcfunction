@@ -21,8 +21,8 @@
     function lib:heal/reset
 
 # 被ダメージ時攻撃者にダメージ
-    data modify storage lib: Argument.Damage set value 75.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Attacker,distance=..50] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 75.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Attacker,distance=..50] run function api:damage/
+    function api:damage/reset

@@ -19,15 +19,15 @@
     execute store result score $KF.ArmorTough Temporary run attribute @s generic.armor_toughness get 1
 
 # 計算結果をArgument.Damageに代入
-    execute store result storage lib: Argument.Damage float 20.0 run scoreboard players operation $KF.Armor Temporary += $KF.ArmorTough Temporary
+    execute store result storage api: Argument.Damage float 20.0 run scoreboard players operation $KF.Armor Temporary += $KF.ArmorTough Temporary
 
 # ダメージ
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function lib:damage/
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
 
 # スコアとかストレージとかリセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $KF.Armor Temporary
     scoreboard players reset $KF.ArmorTough Temporary

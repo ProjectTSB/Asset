@@ -10,12 +10,12 @@
 
 # ダメージを受ける
     # 与えるダメージ = 3.5
-        data modify storage lib: Argument.Damage set value 3.5f
+        data modify storage api: Argument.Damage set value 3.5f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
 # 補正function
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象は自分
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

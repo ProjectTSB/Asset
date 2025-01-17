@@ -20,16 +20,16 @@
 
 # ダメージ
     # 与えるダメージ
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get @s Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get @s Temporary
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # 攻撃したモブ1体を対象に
-        execute as @e[type=#lib:living,type=!player,tag=Victim] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim] run function api:damage/
 
 # リセット
     scoreboard players reset @s Temporary
-    function lib:damage/reset
+    function api:damage/reset
