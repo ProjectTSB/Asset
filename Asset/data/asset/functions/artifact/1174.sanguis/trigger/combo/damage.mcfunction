@@ -1,5 +1,5 @@
 #> asset:artifact/1174.sanguis/trigger/combo/damage
 #
-# 
 #
-# @within function asset:artifact/1174.sanguis/trigger/combo/slash1
+#
+# @within function asset:artifact/1174.sanguis/trigger/combo/**
