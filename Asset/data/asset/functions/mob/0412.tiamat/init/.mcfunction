@@ -23,4 +23,4 @@
         tag @p[distance=..80] add BG.MainTarget
 
 # テスト
-    tag @s add BG.State.Wait
+    # tag @s add BG.State.Wait

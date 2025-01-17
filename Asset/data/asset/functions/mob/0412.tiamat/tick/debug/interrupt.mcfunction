@@ -5,11 +5,11 @@
 # @within asset:mob/alias/410/tick
 
 # メモ
-    # execute as @e[tag=BF.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/debug/interrupt
+    # execute as @e[tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/debug/interrupt
 
 # 全アニメーション停止
     function asset:mob/0412.tiamat/tick/debug/reset
 
 # イベント実行
-    scoreboard players set @s BF.EventTimer 0
-    tag @s add BF.Skill.Flatten
+    scoreboard players set @s BG.EventTimer 0
+    tag @s add BG.Skill.Flatten
