@@ -8,6 +8,9 @@
 # ちょっと上に向けておく
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~-5
 
+# ハード以上で鈍足を付与するようにする
+    execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Slowness set value true
+
 # スイカ召喚
     data modify storage api: Argument.ID set value 2068
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
