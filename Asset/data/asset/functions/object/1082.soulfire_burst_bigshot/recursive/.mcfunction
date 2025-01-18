@@ -6,5 +6,5 @@
 
 # パーティクル
     particle minecraft:smoke ~ ~ ~ 0.1 0.1 0.1 0 3
-    particle minecraft:dust 0 1 1 1 ~ ~ ~ 0.1 0.1 0.1 0 3
     particle minecraft:entity_effect ~ ~ ~ 0 1 1 1 0
+    execute if predicate lib:random_pass_per/50 run particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.01 1
