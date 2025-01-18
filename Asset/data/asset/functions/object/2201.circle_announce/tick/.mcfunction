@@ -16,3 +16,6 @@
 
 # 消滅処理
     execute if score @s General.Object.Tick > $2201.tick Temporary run kill @s
+
+# reset
+    scoreboard players reset $2201.tick Temporary
