@@ -21,11 +21,13 @@
         execute if score @s BF.EventTimer matches 100..115 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 移動
         execute if score @s BF.EventTimer matches 100..115 if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+        execute if score @s BF.EventTimer matches 100..105 at @s run tp @s ^ ^ ^0.2
+        execute if score @s BF.EventTimer matches 106..110 at @s run tp @s ^ ^ ^0.4
         execute if score @s BF.EventTimer matches 131..140 run tp @s ~ ~0.05 ~
     # 攻撃範囲表示
-        execute if score @s BF.EventTimer matches 105 positioned ^ ^ ^2 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
+        execute if score @s BF.EventTimer matches 105 positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
     # 攻撃
-        execute if score @s BF.EventTimer matches 115 positioned ^ ^1 ^2 run function asset:mob/0411.behemoth/tick/event/flatten/attack
+        execute if score @s BF.EventTimer matches 115 positioned ^ ^0.5 ^2 run function asset:mob/0411.behemoth/tick/event/flatten/attack
 
 # 演出
     execute if score @s BF.EventTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7

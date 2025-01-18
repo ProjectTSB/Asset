@@ -14,6 +14,7 @@
         #declare function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween
         #declare function animated_java:heiloang_aj/animations/2_1_common_casting/tween
         #declare function animated_java:heiloang_aj/animations/2_2_common_invoke/tween
+        #declare function animated_java:heiloang_aj/animations/2_3_common_order/tween
         #declare function animated_java:heiloang_aj/animations/3_0_hellfire_start/tween
         #declare function animated_java:heiloang_aj/animations/3_1_hellfire_shoot/tween
         #declare function animated_java:heiloang_aj/animations/3_2_hellfire_shoot_end/tween
@@ -37,6 +38,7 @@
         #declare tag aj.heiloang_aj.animation.2_0_common_cast_start.playing
         #declare tag aj.heiloang_aj.animation.2_1_common_casting.playing
         #declare tag aj.heiloang_aj.animation.2_2_common_invoke.playing
+        #declare tag aj.heiloang_aj.animation.2_3_common_order.playing
         #declare tag aj.heiloang_aj.animation.3_0_hellfire_start.playing
         #declare tag aj.heiloang_aj.animation.3_1_hellfire_shoot.playing
         #declare tag aj.heiloang_aj.animation.3_2_hellfire_shoot_end.playing
@@ -59,6 +61,7 @@
         #declare objective aj.2_0_common_cast_start.frame
         #declare objective aj.2_1_common_casting.frame
         #declare objective aj.2_2_common_invoke.frame
+        #declare objective aj.2_3_common_order.frame
         #declare objective aj.3_0_hellfire_start.frame
         #declare objective aj.3_1_hellfire_shoot.frame
         #declare objective aj.3_2_hellfire_shoot_end.frame
@@ -92,6 +95,7 @@
     #declare tag BE.Skill.Tornado 竜巻
     #declare tag BE.Skill.Sweep なぎはらいブレス
     #declare tag BE.Skill.Tempest テンペスト
+    #declare tag BE.Skill.CallServants コール：ドラゴンサーヴァント
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下

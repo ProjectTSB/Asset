@@ -9,7 +9,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10.5] run function api:damage/
     function api:damage/reset
 
 # 演出

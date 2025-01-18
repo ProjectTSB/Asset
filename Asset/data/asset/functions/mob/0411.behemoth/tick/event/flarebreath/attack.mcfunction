@@ -11,7 +11,7 @@
 
 # ヒット判定
     tag @a[tag=DXYZ] remove DXYZ
-    data modify storage lib: args.dx set value 3
+    data modify storage lib: args.dx set value 4
     data modify storage lib: args.dy set value 5
     data modify storage lib: args.dz set value 25
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
