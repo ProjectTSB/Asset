@@ -1,4 +1,4 @@
-#> asset:object/2176.tiamat_darkbreath/tick/damage_1
+#> asset:object/2176.tiamat_darkbreath/tick/damage
 #
 # Objectのtick時の処理
 #
@@ -10,11 +10,6 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
+    execute as @a[tag=2176.Hit] run function api:damage/
     function api:damage/reset
-
-# 演出
-    playsound block.glass.break hostile @a ~ ~ ~ 2 0.7
-    particle dragon_breath ~ ~1 ~ 3 1 3 0 20 force
-    particle cloud ~ ~1 ~ 3 1 3 0.2 30
-    particle end_rod ~ ~1 ~ 3 1 3 0.2 10
+    tag @a remove 2176.Hit

@@ -9,8 +9,8 @@
 
 # 攻撃
     data modify storage api: Argument.ID set value 2128
-    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
-    data modify storage api: Argument.FieldOverride.DamagePursuit set value 30.0f
+    data modify storage api: Argument.FieldOverride.Damage set value 56.0f
+    data modify storage api: Argument.FieldOverride.DamagePursuit set value 45.0f
     execute store result storage api: Argument.FieldOverride.Count int 1 run scoreboard players get @s BE.Pb.Count
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] run function api:object/summon

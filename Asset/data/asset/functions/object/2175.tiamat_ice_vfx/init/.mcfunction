@@ -15,7 +15,6 @@
     execute at @s as @e[type=item_display,tag=2175.Append,sort=nearest,limit=1] run tp @s ~ ~ ~ ~45 ~
     ride @e[type=item_display,tag=2175.Append,sort=nearest,limit=1] mount @s
 
-# KillTick設定
-    # execute store result score @s 2175.KillTick run random value 0..3
-    # scoreboard players add @s 2175.KillTick 12
-    # execute if data storage asset:context this.OverrideKillTick store result score @s 2175.KillTick run data get storage asset:context this.OverrideKillTick
+# scale設定
+    data modify storage asset:context this.Scale set value [8f,8f,8f]
+    execute if data storage asset:context this.OverrideScale on passengers run data modify storage asset:context this.Scale set from storage asset:context this.OverrideScale

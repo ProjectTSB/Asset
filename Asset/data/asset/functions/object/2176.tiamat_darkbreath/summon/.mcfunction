@@ -5,4 +5,4 @@
 # @within asset:object/alias/2176/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit","BE.Object"]}
+    summon marker ~ ~ ~ {Tags:["ObjectInit","BE.Object","2176.Root"]}
