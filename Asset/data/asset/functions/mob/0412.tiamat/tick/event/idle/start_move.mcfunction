@@ -12,7 +12,7 @@
 # 移動アニメーションに遷移
     tag @s remove BG.Skill.Idle
     tag @s add BG.Skill.Move
-    execute as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/2_move.m with storage asset:temp BF
+    execute as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/2_move.m with storage asset:temp BG
 
 # 終了
     data remove storage asset:temp BG

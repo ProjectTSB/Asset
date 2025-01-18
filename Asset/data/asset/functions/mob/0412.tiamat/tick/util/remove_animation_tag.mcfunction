@@ -6,4 +6,6 @@
 
 # アニメーションタグ
     tag @s remove BG.Skill.Start
+    tag @s remove BG.Skill.Idle
     tag @s remove BG.Skill.Move
+    tag @s remove BG.Skill.DarkBreath

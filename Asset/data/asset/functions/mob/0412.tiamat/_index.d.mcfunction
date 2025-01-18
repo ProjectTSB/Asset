@@ -15,7 +15,9 @@
         #declare function animated_java:tiamat_aj/animations/2_move/tween
         #declare function animated_java:tiamat_aj/animations/3_0_cast_start/tween
         #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
-        #declare function animated_java:tiamat_aj/animations/5_flatten/tween
+        #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
+        #declare function animated_java:tiamat_aj/animations/4_breath/tween
+        #declare function animated_java:tiamat_aj/animations/5_deathwing/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.tiamat_aj.animation.0_start.playing
@@ -32,7 +34,7 @@
     #declare tag BG.Skill.Start 登場
     #declare tag BG.Skill.Idle 待機
     #declare tag BG.Skill.Move 移動
-    #declare tag BG.Skill.Flatten フラッテン
+    #declare tag BG.Skill.DarkBreath ダークブレス
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット
