@@ -14,7 +14,7 @@
     execute at @s run tp @s ^ ^ ^0.3
 
 # ターゲットが近い場合、移動停止
-    execute if entity @p[tag=BG.MainTarget,distance=..8] run function asset:mob/0412.tiamat/tick/event/move/end_move
+    execute if entity @p[tag=BG.MainTarget,distance=..11] run function asset:mob/0412.tiamat/tick/event/move/end_move
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

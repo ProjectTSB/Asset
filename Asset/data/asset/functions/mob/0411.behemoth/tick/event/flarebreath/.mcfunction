@@ -12,7 +12,7 @@
         execute if score @s BF.EventTimer matches 1 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
         execute if score @s BF.EventTimer matches 20 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
     # ターゲットを向く
-        execute if score @s BF.EventTimer matches 1..60 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
+        execute if score @s BF.EventTimer matches 1..80 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 口元に炎の予兆
         execute if score @s BF.EventTimer matches 1..174 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_flame.m with entity @s data.locators.pos_head
 
@@ -23,12 +23,14 @@
         execute if score @s BF.EventTimer matches 170 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
     # ターゲットを向く
         execute if score @s BF.EventTimer matches 1..60 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
-        execute if score @s BF.EventTimer matches 135..140 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
-        execute if score @s BF.EventTimer matches 170..175 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
+        execute if score @s BF.EventTimer matches 125 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+        execute if score @s BF.EventTimer matches 135..150 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
+        execute if score @s BF.EventTimer matches 160 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+        execute if score @s BF.EventTimer matches 170..185 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
     # 攻撃範囲表示
         execute if score @s BF.EventTimer matches 105 positioned ^ ^-0.3 ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-        execute if score @s BF.EventTimer matches 140 positioned ^ ^-0.3 ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-        execute if score @s BF.EventTimer matches 175 positioned ^ ^-0.3 ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        execute if score @s BF.EventTimer matches 140 facing entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,sort=nearest,limit=1] feet rotated ~ 0 positioned ^ ^-0.3 ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        execute if score @s BF.EventTimer matches 175 facing entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,sort=nearest,limit=1] feet rotated ~ 0 positioned ^ ^-0.3 ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
     # 攻撃
         execute if score @s BF.EventTimer matches 115 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
         execute if score @s BF.EventTimer matches 150 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
