@@ -4,4 +4,6 @@
 #
 # @within function asset:object/alias/1083/recursive
 
-function asset:object/1083.soulfire_burst_smallshot/recursive/homing.m with storage asset:context this
+# 演出
+    particle minecraft:dust 0 1 1 1 ~ ~ ~ 0 0 0 0 1
+    execute if predicate lib:random_pass_per/25 run particle minecraft:soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.01 1
