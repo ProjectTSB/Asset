@@ -23,9 +23,9 @@
     function api:damage/reset
 
 # 吹っ飛び効果
-# 自身に浮遊を付与
+# 天使には無効
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 31
     data modify storage api: Argument.Duration set value 20
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Enemy.Boss,distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
