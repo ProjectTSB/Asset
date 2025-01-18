@@ -51,4 +51,4 @@
         execute if score @s BE.EventTimer matches 242..279 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
-    execute if score @s BE.EventTimer matches 380.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end
+    execute if score @s BE.EventTimer matches 450.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end

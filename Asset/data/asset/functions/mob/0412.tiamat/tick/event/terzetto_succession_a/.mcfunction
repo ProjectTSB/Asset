@@ -36,19 +36,12 @@
     # 攻撃
         execute if score @s BG.EventTimer matches 300 at @s positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/dive_prediction
         execute if score @s BG.EventTimer matches 315 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BG.EventTimer matches 319 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BG.EventTimer matches 323 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BG.EventTimer matches 327 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
-
-# 移動
-    # アニメーション再生
-        execute if score @s BG.EventTimer matches 400 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
-    # 中心点の右方向に移動
-        execute if score @s BG.EventTimer matches 25 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-13.5 ^-0.5 ^28 ~180 0
-        execute if score @s BG.EventTimer matches 25 at @s run tp @e[type=item_display,tag=BG.ModelRoot] ~ ~ ~ ~ 0
+        execute if score @s BG.EventTimer matches 318 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
+        execute if score @s BG.EventTimer matches 321 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
+        execute if score @s BG.EventTimer matches 324 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BG.EventTimer matches 380.. run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/end
+    execute if score @s BG.EventTimer matches 450.. run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/end

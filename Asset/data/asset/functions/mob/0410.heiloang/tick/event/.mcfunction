@@ -41,6 +41,7 @@
 # テルツェット・サクセッション
     execute if entity @s[tag=BE.Skill.Ter.Succ.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_start/
     execute if entity @s[tag=BE.Skill.Ter.Succ.A] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/
+    execute if entity @s[tag=BE.Skill.Ter.Succ.B] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/
 
 ## P4
 

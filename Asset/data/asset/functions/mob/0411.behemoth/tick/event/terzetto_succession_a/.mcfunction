@@ -35,12 +35,12 @@
     # 攻撃
         execute if score @s BF.EventTimer matches 300 at @s positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/dive_prediction
         execute if score @s BF.EventTimer matches 315 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BF.EventTimer matches 318 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BF.EventTimer matches 321 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
-        execute if score @s BF.EventTimer matches 324 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
+        execute if score @s BF.EventTimer matches 319 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
+        execute if score @s BF.EventTimer matches 323 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
+        execute if score @s BF.EventTimer matches 327 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BF.EventTimer matches 380.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/end
+    execute if score @s BF.EventTimer matches 450.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/end

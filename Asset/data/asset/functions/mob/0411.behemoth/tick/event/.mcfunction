@@ -20,4 +20,5 @@
 
 # テルツェット・サクセッション
     execute if entity @s[tag=BF.Skill.Ter.Succ.A] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/
+    execute if entity @s[tag=BF.Skill.Ter.Succ.B] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_b/
     execute if entity @s[tag=BF.Skill.Ter.Succ.Dive] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/
