@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:mob/0175.queen_bee/tick/skill_needle/3.skill_needle_shot
+
 # 演出
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
 
