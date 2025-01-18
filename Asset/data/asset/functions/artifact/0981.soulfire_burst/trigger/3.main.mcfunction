@@ -13,9 +13,8 @@
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 0.8
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 1.2
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.5
-    playsound minecraft:block.soul_sand.step player @a ~ ~ ~ 1.5 0.5
-    playsound minecraft:block.soul_sand.step player @a ~ ~ ~ 1.5 0.7
-
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.8
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 1.2
 
 # 火の玉オブジェクト召喚
     data modify storage api: Argument.ID set value 1082
