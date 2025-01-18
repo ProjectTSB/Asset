@@ -9,6 +9,8 @@
 #declare tag Hit
 
 # 演出
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.5
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.7
     playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1.5 1
     playsound minecraft:entity.ender_dragon.flap neutral @a ~ ~ ~ 2 0.8
     particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 1 0 force @a[distance=..32]
@@ -19,7 +21,6 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set value 12f
-    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
 
 # 直撃したやつと、そいつからの範囲内、更に着弾地点の位置の範囲内にタグを付与
     execute positioned ~-1 ~-1 ~-1 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] add Hit
