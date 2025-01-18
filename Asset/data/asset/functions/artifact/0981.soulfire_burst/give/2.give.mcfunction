@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソウルファイアバースト","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方に爆発する火の玉を放つ。","color":"white"}]','[{"text":"火の玉はしばらくすると、5つの小さな火球に分裂する。","color":"white"}]','{"text":"\\"魂の火は青いけど、とっても熱い。\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"大きな爆発を起こす火球を放つ。","color":"white"}]','[{"text":"火球はしばらくすると、5つの小さな火球に分裂する。","color":"white"}]','{"text":"\\"青いけど全然冷たくない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
