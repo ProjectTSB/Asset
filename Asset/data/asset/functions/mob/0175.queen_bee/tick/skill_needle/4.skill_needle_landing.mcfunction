@@ -7,16 +7,11 @@
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
 
 # ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 25.0f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 雷属性
-        data modify storage lib: Argument.ElementType set value "None"
-    # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] at @s run function lib:damage/
-# リセット
+    data modify storage lib: Argument.Damage set value 25.0f
+    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage lib: Argument.ElementType set value "None"
+    function lib:damage/modifier
+    execute as @a[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] at @s run function lib:damage/
     function lib:damage/reset
 
 # 毒を付与する
