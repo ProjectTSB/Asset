@@ -26,6 +26,13 @@
 # なぎはらい火炎放射
     execute if entity @s[tag=aj.heiloang_aj.animation.6_sweep_breath.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/6_sweep_breath
 
+# 移動
+    execute if entity @s[tag=aj.heiloang_aj.animation.12_0_flymove_start.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/12_0_flymove_start
+    execute if entity @s[tag=aj.heiloang_aj.animation.12_1_flymove_end.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/12_1_flymove_end
+
+# テンペストダイブ
+    execute if entity @s[tag=aj.heiloang_aj.animation.7_1_dive_start.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/7_1_dive_start
+
 # フレア
     execute if entity @s[tag=aj.heiloang_aj.animation.8_1_move_flare.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/8_1_move_flare
 

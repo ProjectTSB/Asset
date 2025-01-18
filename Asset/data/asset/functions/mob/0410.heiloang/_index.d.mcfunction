@@ -23,6 +23,7 @@
         #declare function animated_java:heiloang_aj/animations/5_2_move/tween
         #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
         #declare function animated_java:heiloang_aj/animations/6_1_sweep_breath_mirror/tween
+        #declare function animated_java:heiloang_aj/animations/7_1_dive_start/tween
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
         #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
         #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
@@ -30,6 +31,8 @@
         #declare function animated_java:heiloang_aj/animations/10_2_power_breath_continue_1/tween
         #declare function animated_java:heiloang_aj/animations/10_3_power_breath_continue_2/tween
         #declare function animated_java:heiloang_aj/animations/10_4_power_breath_continue_end/tween
+        #declare function animated_java:heiloang_aj/animations/12_0_flymove_start/tween
+        #declare function animated_java:heiloang_aj/animations/12_1_flymove_end/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # - 自動生成タグ
@@ -47,6 +50,7 @@
         #declare tag aj.heiloang_aj.animation.5_2_move.playing
         #declare tag aj.heiloang_aj.animation.6_sweep_breath.playing
         #declare tag aj.heiloang_aj.animation.6_1_sweep_breath_mirror.playing
+        #declare tag aj.heiloang_aj.animation.7_1_dive_start.playing
         #declare tag aj.heiloang_aj.animation.8_1_move_flare.playing
         #declare tag aj.heiloang_aj.animation.9_1_plamet.playing
         #declare tag aj.heiloang_aj.animation.9_2_plamet_dive.playing
@@ -54,6 +58,8 @@
         #declare tag aj.heiloang_aj.animation.10_2_power_breath_continue_1.playing
         #declare tag aj.heiloang_aj.animation.10_3_power_breath_continue_2.playing
         #declare tag aj.heiloang_aj.animation.10_4_power_breath_continue_end.playing
+        #declare tag aj.heiloang_aj.animation.12_0_flymove_start.playing
+        #declare tag aj.heiloang_aj.animation.12_1_flymove_end.playing
         #declare tag aj.heiloang_aj.animation.99_disaster_cast.playing
         #declare tag aj.heiloang_aj.animation.99_disaster.playing
     # - 自動生成スコア
@@ -70,6 +76,7 @@
         #declare objective aj.5_2_move.frame
         #declare objective aj.6_sweep_breath.frame
         #declare objective aj.6_1_sweep_breath_mirror.frame
+        #declare objective aj.7_1_dive_start.frame
         #declare objective aj.8_1_move_flare.frame
         #declare objective aj.9_1_plamet.frame
         #declare objective aj.9_2_plamet_dive.frame
@@ -77,6 +84,8 @@
         #declare objective aj.10_2_power_breath_continue_1.frame
         #declare objective aj.10_3_power_breath_continue_2.frame
         #declare objective aj.10_4_power_breath_continue_end.frame
+        #declare objective aj.12_0_flymove_start.frame
+        #declare objective aj.12_1_flymove_end.frame
         #declare objective aj.99_disaster_cast.frame
         #declare objective aj.99_disaster.frame
     # - 共通
@@ -96,6 +105,9 @@
     #declare tag BE.Skill.Sweep なぎはらいブレス
     #declare tag BE.Skill.Tempest テンペスト
     #declare tag BE.Skill.CallServants コール：ドラゴンサーヴァント
+    #declare tag BE.Skill.Ter.Succ.Start テルツェット・サクセッション開始
+    #declare tag BE.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行
+    #declare tag BE.Skill.Ter.Succ.B テルツェット・サクセッション 眷属先行
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下

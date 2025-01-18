@@ -38,6 +38,10 @@
 # コール：ドラゴンサーヴァント
     execute if entity @s[tag=BE.Skill.CallServants] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/
 
+# テルツェット・サクセッション
+    execute if entity @s[tag=BE.Skill.Ter.Succ.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_start/
+    execute if entity @s[tag=BE.Skill.Ter.Succ.A] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/
+
 ## P4
 
 # ヘイルディザスター
