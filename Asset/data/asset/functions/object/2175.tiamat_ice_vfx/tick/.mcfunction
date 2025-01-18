@@ -21,7 +21,7 @@
     execute if entity @s[scores={General.Object.Tick=8}] run playsound item.trident.hit neutral @a ~ ~ ~ 1 1
     execute if entity @s[scores={General.Object.Tick=8}] run playsound item.axe.scrape neutral @a ~ ~ ~ 1 1
     execute if entity @s[scores={General.Object.Tick=8}] run playsound block.anvil.break neutral @a ~ ~ ~ 1 0.5
-    execute if entity @s[scores={General.Object.Tick=8..30}] run particle firework ~ ~2 ~ 3 3 3 0.05 1
+    # execute if entity @s[scores={General.Object.Tick=8..15}] run particle firework ~ ~2 ~ 3 3 3 0.05 1
     execute if entity @s[scores={General.Object.Tick=8..30}] run function asset:object/2175.tiamat_ice_vfx/tick/particle
 
 # 消滅処理

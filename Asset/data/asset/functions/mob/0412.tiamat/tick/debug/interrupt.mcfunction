@@ -12,4 +12,4 @@
 
 # イベント実行
     scoreboard players set @s BG.EventTimer 0
-    tag @s add BG.Skill.DarkBreath
+    tag @s add BG.Skill.HellWing

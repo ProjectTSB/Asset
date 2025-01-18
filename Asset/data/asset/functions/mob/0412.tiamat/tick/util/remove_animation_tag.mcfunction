@@ -9,3 +9,4 @@
     tag @s remove BG.Skill.Idle
     tag @s remove BG.Skill.Move
     tag @s remove BG.Skill.DarkBreath
+    tag @s remove BG.Skill.HellWing

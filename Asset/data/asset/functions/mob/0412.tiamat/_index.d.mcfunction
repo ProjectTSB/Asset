@@ -35,6 +35,7 @@
     #declare tag BG.Skill.Idle 待機
     #declare tag BG.Skill.Move 移動
     #declare tag BG.Skill.DarkBreath ダークブレス
+    #declare tag BG.Skill.HellWing ヘルウィング
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット

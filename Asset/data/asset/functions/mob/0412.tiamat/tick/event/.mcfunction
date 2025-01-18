@@ -14,3 +14,6 @@
 
 # ダークブレス
     execute if entity @s[tag=BG.Skill.DarkBreath] run function asset:mob/0412.tiamat/tick/event/darkbreath/
+
+# ヘルウィング
+    execute if entity @s[tag=BG.Skill.HellWing] run function asset:mob/0412.tiamat/tick/event/hellwing/

@@ -5,4 +5,4 @@
 # @within asset:object/2175.tiamat_ice_vfx/tick/
 
 # 演出
-    particle firework ~ ~1 ~ 0.5 0.5 0.5 0.5 1
+    particle firework ~ ~1 ~ 0.5 0.5 0.5 0.2 1
