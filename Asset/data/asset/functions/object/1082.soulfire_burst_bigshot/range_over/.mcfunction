@@ -5,7 +5,7 @@
 # @within asset:object/alias/1082/range_over
 
 # 演出
-    playsound minecraft:entity.blaze.shoot neutral @a ~ ~ ~ 1.5 1
+    playsound minecraft:entity.blaze.shoot neutral @a ~ ~ ~ 1 1.5
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.9
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 1.1
 
