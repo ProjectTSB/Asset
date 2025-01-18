@@ -14,13 +14,13 @@
     playsound minecraft:entity.ender_dragon.flap player @a[distance=..15] ~ ~ ~ 1 1
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 45f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
-    data modify storage lib: Argument.FixedDamage set value false
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.FixedDamage set value false
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    function api:damage/reset
 
 # 吹っ飛び効果
 # 自身に浮遊を付与
