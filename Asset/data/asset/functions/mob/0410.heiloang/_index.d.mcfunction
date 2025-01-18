@@ -24,6 +24,7 @@
         #declare function animated_java:heiloang_aj/animations/6_sweep_breath/tween
         #declare function animated_java:heiloang_aj/animations/6_1_sweep_breath_mirror/tween
         #declare function animated_java:heiloang_aj/animations/7_1_dive_start/tween
+        #declare function animated_java:heiloang_aj/animations/7_2_dive/tween
         #declare function animated_java:heiloang_aj/animations/8_1_move_flare/tween
         #declare function animated_java:heiloang_aj/animations/9_1_plamet/tween
         #declare function animated_java:heiloang_aj/animations/9_2_plamet_dive/tween
@@ -133,10 +134,13 @@
     #declare tag BE.Temp.AttackPosition 位置決定用
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Blitz.SummonPosition リヒトブリッツェン召喚位置
-    #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターン
+    #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターンB
     #declare tag BE.Temp.Flare.SummonPosition フレア召喚位置
     #declare tag BE.Temp.Flare.SummonPosition.Hard 追加フレア召喚位置
     #declare tag BE.Temp.Plamet.SummonPosition 急降下の追撃召喚位置
+    #declare tag BE.Temp.Dive.PositionA 連続ダイブ位置A
+    #declare tag BE.Temp.Dive.PositionB 連続ダイブ位置B
+    #declare tag BE.Temp.Dive.PositionC 連続ダイブ位置C
     #declare tag BE.Temp.Hit 攻撃ヒット
     #declare tag BE.Temp.Dummy ダミー
     #declare tag BE.Temp.MoveEnd 処理終了

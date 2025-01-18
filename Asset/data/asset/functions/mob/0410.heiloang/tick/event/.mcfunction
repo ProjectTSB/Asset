@@ -8,7 +8,6 @@
     execute if entity @s[tag=BE.Skill.Start] run function asset:mob/0410.heiloang/tick/event/start_temp/
 
 ## P1 - 2
-
 # ヘルファイア
     execute if entity @s[tag=BE.Skill.Hellfire] run function asset:mob/0410.heiloang/tick/event/hellfire/
 
@@ -34,7 +33,6 @@
     execute if entity @s[tag=BE.Skill.Tempest] run function asset:mob/0410.heiloang/tick/event/tempest/
 
 ## P3
-
 # コール：ドラゴンサーヴァント
     execute if entity @s[tag=BE.Skill.CallServants] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/
 
@@ -42,9 +40,9 @@
     execute if entity @s[tag=BE.Skill.Ter.Succ.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_start/
     execute if entity @s[tag=BE.Skill.Ter.Succ.A] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/
     execute if entity @s[tag=BE.Skill.Ter.Succ.B] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/
+    execute if entity @s[tag=BE.Skill.Ter.Succ.Dive] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/
 
 ## P4
-
 # ヘイルディザスター
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/heil_disaster/
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/event/heil_disaster/hard

@@ -19,7 +19,6 @@
 
 # 詠唱：5回
     # アニメーション再生
-        # execute if score @s BE.EventTimer matches 65 run scoreboard players set @s BE.EventTimer 254
         execute if score @s BE.EventTimer matches 65 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 88 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
 
@@ -51,4 +50,4 @@
         execute if score @s BE.EventTimer matches 242..279 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
-    execute if score @s BE.EventTimer matches 450.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end
+    execute if score @s BE.EventTimer matches 360.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end

@@ -43,4 +43,4 @@
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BF.EventTimer matches 450.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/end
+    execute if score @s BF.EventTimer matches 360.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/end

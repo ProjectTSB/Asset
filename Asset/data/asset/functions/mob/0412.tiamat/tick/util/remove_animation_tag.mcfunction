@@ -12,3 +12,4 @@
     tag @s remove BG.Skill.HellWing
     tag @s remove BG.Skill.Ter.Succ.A
     tag @s remove BG.Skill.Ter.Succ.B
+    tag @s remove BG.Skill.Ter.Succ.Dive

@@ -28,7 +28,7 @@
     # 移動
         execute if score @s BE.EventTimer matches 304..314 at @s run tp @s ^ ^ ^3.5
         execute if score @s BE.EventTimer matches 315..321 at @s run tp @s ^ ^ ^2.7
-        execute if score @s BE.EventTimer matches 340..367 at @s run tp @s ^ ^ ^1.5
+        execute if score @s BE.EventTimer matches 322..347 at @s run tp @s ^ ^ ^1.5
     # 演出
         execute if score @s BE.EventTimer matches 304 run playsound entity.breeze.shoot hostile @a ^ ^ ^20 3 0.7
         execute if score @s BE.EventTimer matches 304..321 at @s run particle cloud ~ ~3 ~ 2 2 2 0.1 20
@@ -50,4 +50,4 @@
         execute if score @s BE.EventTimer matches 271..308 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
-    execute if score @s BE.EventTimer matches 450.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/end
+    execute if score @s BE.EventTimer matches 360.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/end
