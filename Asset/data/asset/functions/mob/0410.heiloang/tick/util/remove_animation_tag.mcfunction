@@ -17,6 +17,11 @@
     tag @s remove BE.Skill.Tempest
     tag @s remove BE.Skill.HeilDisaster
     tag @s remove BE.Skill.Flare
+    tag @s remove BE.Skill.CallServants
+    tag @s remove BE.Skill.Ter.Succ.Start
+    tag @s remove BE.Skill.Ter.Succ.A
+    tag @s remove BE.Skill.Ter.Succ.B
+    tag @s remove BE.Skill.Ter.Succ.Dive
     tag @s remove BE.Skill.Plamet
     tag @s remove BE.Skill.PowerBreath
     tag @s remove BE.Skill.PowerBreath.C1

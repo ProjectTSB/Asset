@@ -10,9 +10,7 @@
 # ヘイローン先行
     scoreboard players set @s BE.EventTimer 0
     tag @s add BE.Skill.Ter.Succ.A
+    execute if entity @s[tag=BE.Skill.Ter.Succ.A] as @e[type=slime,tag=BF.EntityRoot] at @s run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/start
+    execute if entity @s[tag=BE.Skill.Ter.Succ.A] as @e[type=slime,tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/start
 
-# # 待機モーション再生
-#     execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
-
-# # 行動
-#     function asset:mob/0410.heiloang/tick/act/
+# 眷属先行

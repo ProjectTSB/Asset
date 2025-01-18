@@ -17,3 +17,7 @@
 
 # ヘルウィング
     execute if entity @s[tag=BG.Skill.HellWing] run function asset:mob/0412.tiamat/tick/event/hellwing/
+
+# テルツェット・サクセッション
+    execute if entity @s[tag=BG.Skill.Ter.Succ.A] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/
+    execute if entity @s[tag=BG.Skill.Ter.Succ.Dive] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/

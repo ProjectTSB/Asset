@@ -18,15 +18,22 @@
         #declare function animated_java:behemoth_aj/animations/4_breath/tween
         #declare function animated_java:behemoth_aj/animations/4_breath_continue/tween
         #declare function animated_java:behemoth_aj/animations/5_flatten/tween
+        #declare function animated_java:behemoth_aj/animations/6_0_flymove_start/tween
+        #declare function animated_java:behemoth_aj/animations/6_1_flymove_end/tween
+        #declare function animated_java:behemoth_aj/animations/7_dive/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
         #declare tag aj.behemoth_aj.animation.1_idle.playing
         #declare tag aj.behemoth_aj.animation.2_move.playing
+        #declare tag aj.behemoth_aj.animation.6_0_flymove_start.playing
+        #declare tag aj.behemoth_aj.animation.6_1_flymove_end.playing
     # - 自動生成スコア
         #declare objective aj.0_start.frame
         #declare objective aj.1_idle.frame
         #declare objective aj.2_move.frame
+        #declare objective aj.6_0_flymove_start.frame
+        #declare objective aj.6_1_flymove_end.frame
     # - 共通
     #declare tag BF.EntityRoot 自分自身（当たり判定）
     #declare tag BF.ModelRoot AJモデルのRootEntity
@@ -38,6 +45,9 @@
     #declare tag BF.Skill.Move 移動
     #declare tag BF.Skill.FlareBreath フレアブレス
     #declare tag BF.Skill.Flatten フラッテン
+    #declare tag BF.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行
+    #declare tag BF.Skill.Ter.Succ.B テルツェット・サクセッション 眷属先行
+    #declare tag BF.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット

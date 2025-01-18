@@ -10,3 +10,5 @@
     tag @s remove BG.Skill.Move
     tag @s remove BG.Skill.DarkBreath
     tag @s remove BG.Skill.HellWing
+    tag @s remove BG.Skill.Ter.Succ.A
+    tag @s remove BG.Skill.Ter.Succ.B

@@ -19,7 +19,7 @@
 
 # 詠唱：5回
     # アニメーション再生
-        execute if score @s BE.EventTimer matches 65 run scoreboard players set @s BE.EventTimer 254
+        # execute if score @s BE.EventTimer matches 65 run scoreboard players set @s BE.EventTimer 254
         execute if score @s BE.EventTimer matches 65 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 88 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
 
@@ -44,6 +44,11 @@
         execute if score @s BE.EventTimer matches 331 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
     # モデルを自身の位置に移動
         execute if score @s BE.EventTimer matches 254..332 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
+    # テンペスト配置
+        execute if score @s BE.EventTimer matches 145 if predicate api:global_vars/difficulty/min/normal as @a[distance=..80,sort=random,limit=3] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 145 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
+        execute if score @s BE.EventTimer matches 242..279 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 242..279 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
-    execute if score @s BE.EventTimer matches 332.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end
+    execute if score @s BE.EventTimer matches 380.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/end

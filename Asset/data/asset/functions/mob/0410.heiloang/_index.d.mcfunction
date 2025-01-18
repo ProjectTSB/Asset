@@ -88,10 +88,15 @@
         #declare objective aj.12_1_flymove_end.frame
         #declare objective aj.99_disaster_cast.frame
         #declare objective aj.99_disaster.frame
+    #
     # - 共通
     #declare tag BE.EntityRoot 自分自身（当たり判定）
     #declare tag BE.ModelRoot AJモデルのRootEntity
     #declare tag BE.CenterPosition 中心点
+    #
+    # - 他Mob
+    #declare tag BF.EntityRoot ベヘモット
+    #declare tag BG.EntityRoot ティアマット
     #
     # - スキル
     #declare tag BE.Skill.Start 登場
@@ -108,6 +113,7 @@
     #declare tag BE.Skill.Ter.Succ.Start テルツェット・サクセッション開始
     #declare tag BE.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行
     #declare tag BE.Skill.Ter.Succ.B テルツェット・サクセッション 眷属先行
+    #declare tag BE.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
