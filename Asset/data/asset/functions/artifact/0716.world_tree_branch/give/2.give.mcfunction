@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"世界樹の枝","color":"#80FF9D"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大体力+5% ","color":"light_purple"},{"text":"MP回復量+7.5%","color":"green"}]','[{"text":"移動速度+5% ","color":"white"},{"text":"攻撃-5%","color":"dark_red"}]','[{"text":"世界を見据える大樹に祝福を。","color":"gray"}]','[{"text":"枝葉をも鳴らさぬ世界樹の枝。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"最大体力+5% ","color":"light_purple"},{"text":"MP回復量+7.5%","color":"green"}]','[{"text":"回復量+8% ","color":"light_purple"},{"text":"攻撃-5%","color":"dark_red"}]','[{"text":"世界を見据える大樹に祝福を。","color":"gray"}]','[{"text":"枝葉をも鳴らさぬ世界樹の枝。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

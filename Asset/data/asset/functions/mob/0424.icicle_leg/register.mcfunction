@@ -35,7 +35,7 @@
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.0f
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 1.2f
+        data modify storage asset:mob Resist.Fire set value 1.4f
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 0.8f
     # 雷倍率 (float) (オプション)

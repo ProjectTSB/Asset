@@ -5,11 +5,11 @@
 # @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/
 
 # 足場をランダムに5箇所選択
-    execute if score @s General.Mob.Tick matches 0 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 30 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 60 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 90 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 120 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 0 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 30 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 60 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 90 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 120 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
 
 # ライン攻撃その1
     # 1
@@ -70,11 +70,11 @@
         execute if score @s General.Mob.Tick matches 210 at @e[type=item_display,scores={ObjectID=2026,2026.ID=49},limit=1] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
 
 # 足場をランダムに5箇所選択
-    execute if score @s General.Mob.Tick matches 240 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 270 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 300 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 330 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
-    execute if score @s General.Mob.Tick matches 360 at @a[distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 240 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 270 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 300 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 330 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
+    execute if score @s General.Mob.Tick matches 360 at @r[gamemode=!spectator,distance=..64] at @e[type=item_display,scores={ObjectID=2026},distance=..10,sort=random,limit=5] run function asset:mob/1004.tultaria/tick/skill/platform_attack/red
 
 # ライン攻撃その2
     # 1

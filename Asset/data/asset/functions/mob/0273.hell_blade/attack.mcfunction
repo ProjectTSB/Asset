@@ -8,7 +8,7 @@
     playsound minecraft:block.wart_block.break hostile @a ~ ~ ~ 2 1
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 35f
+    data modify storage lib: Argument.Damage set value 45f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "None"
 

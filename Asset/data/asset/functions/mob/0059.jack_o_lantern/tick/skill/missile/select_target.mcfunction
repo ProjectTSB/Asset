@@ -9,10 +9,10 @@
     #declare tag Target
 
 # 前方のプレイヤーを優先的にターゲットにする
-    execute positioned ^ ^ ^15 run tag @r[distance=..16] add Target
+    execute positioned ^ ^ ^15 run tag @r[gamemode=!spectator,distance=..16] add Target
 
 # 前方にいなければ近くのプレイヤーを対象とする
-    execute unless entity @p[tag=Target] run tag @p[distance=..50] add Target
+    execute unless entity @p[tag=Target] run tag @p[gamemode=!spectator,distance=..50] add Target
 
 # ターゲットのUserIDをフィールドに突っ込む
     execute store result storage asset:context this.TargetID int 1 run scoreboard players get @p[tag=Target] UserID

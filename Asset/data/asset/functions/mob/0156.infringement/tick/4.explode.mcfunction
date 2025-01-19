@@ -15,8 +15,8 @@
     playsound entity.generic.explode hostile @a ~ ~ ~
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 30f
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 40f
+    data modify storage lib: Argument.Damage set value 35f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Argument.Damage set value 45f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Water"
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに存在を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
@@ -30,5 +30,5 @@
 
 # 自滅する
 # ノーマル以下でkill @s ハードで奈落
-    execute if predicate api:global_vars/difficulty/max/normal run kill @s
-    execute if predicate api:global_vars/difficulty/min/hard run tp @s ~ -1000 ~
+    execute if predicate api:global_vars/difficulty/max/normal run function api:mob/kill
+    execute if predicate api:global_vars/difficulty/min/hard run function api:mob/remove

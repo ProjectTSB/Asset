@@ -8,9 +8,9 @@
     execute if score @s AW.AnimationTick matches 1 run scoreboard players operation @s AW.UUID = @r[tag=!PlayerShouldInvulnerable,distance=..100] UserID
 
 # プレイヤーの方を向く
-# 移動中は対象プレイヤーの方を向く
+# 移動中は対象プレイヤーの方を向く（普段よりもゆっくりと）
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
-    execute as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
+    execute as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/beam/rotate
     scoreboard players reset $AW.Temp AW.UUID
 
 # アニメーション再生

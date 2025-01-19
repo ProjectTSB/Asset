@@ -7,7 +7,7 @@
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 48.0f
+        data modify storage api: Argument.Damage set value 45.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
@@ -17,6 +17,6 @@
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える
-    execute positioned ^ ^ ^1.5 as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function api:damage/
+    execute positioned ^ ^ ^1.5 as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function api:damage/
 # リセット
     function api:damage/reset

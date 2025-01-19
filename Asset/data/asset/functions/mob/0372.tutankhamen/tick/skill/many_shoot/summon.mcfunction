@@ -9,7 +9,7 @@
     #declare score_holder $StartDelay
 
 # プレイヤーの方を向く
-    tp @s ~ ~ ~ facing entity @p[distance=..100] eyes
+    tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..64] eyes
 
 # StartDelayを調整
     scoreboard players set $StartDelay Temporary 49

@@ -27,3 +27,6 @@
 
 # スケジュールループを開始する
     schedule function asset:mob/0262.frestchika/death/schedule 1t
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.death

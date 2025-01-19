@@ -9,9 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
 
-    # 矢が当たったエンティティに視線方向維持でテレポート
-    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run tp @a[tag=this] ~ ~ ~
-
-    execute at @s run particle minecraft:portal ~ ~ ~ 0.3 0.3 0.3 1 200
-
-    execute at @s run playsound minecraft:entity.shulker.teleport player @a ~ ~ ~ 2 1.5
+# 召喚する
+    data modify storage api: Argument.ID set value 1074
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute anchored eyes positioned ^ ^ ^ run function api:object/summon

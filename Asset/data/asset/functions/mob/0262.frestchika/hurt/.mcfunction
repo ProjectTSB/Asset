@@ -6,3 +6,6 @@
 
 # 演出
     playsound minecraft:entity.player.hurt hostile @a ~ ~ ~ 1 1
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.hurt

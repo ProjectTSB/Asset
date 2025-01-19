@@ -7,19 +7,29 @@
 #> private
 # @private
     #declare score_holder $Interval
+    #declare score_holder $UserID
+    #declare tag 1077.Player
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
 # ダメージ値設定
-    execute store result storage lib: Argument.Damage float 1 run random value 105..155
+    execute store result storage api: Argument.Damage float 1 run random value 105..155
+
+# ユーザー特定
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $UserID Temporary run tag @s add 1077.Player
+    scoreboard players reset $UserID Temporary
+
+# MP
+    data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 
 # ダメージの属性をセット
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
 
-# 実行時に受け取っているUserIDの持ち主として補正を実行
-    function asset:object/1077.brave_slash/hit_entity/modifier.m with storage asset:context this
+# modifier をかける
+    execute as @a[tag=1077.Player] run function api:damage/modifier
 
 # ダメージ、数Tickおきに実行
     # 実行時間を移す
@@ -27,8 +37,9 @@
     # 2tickおきに実行
         scoreboard players operation $Interval Temporary %= $3 Const
     # ダメージ実行
-        execute if score $Interval Temporary matches 0 positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function lib:damage/
+        execute if score $Interval Temporary matches 0 positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $Interval Temporary
+    tag @a[tag=1077.Player] remove 1077.Player
