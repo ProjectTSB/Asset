@@ -10,18 +10,12 @@
     execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^2 0 0 0 1 2 normal
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
-# 引数の設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 12.0f
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
-# 補正functionを実行
+# ダメージ
+    data modify storage lib: Argument.Damage set value 12.0f
+    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage lib: Argument.ElementType set value "None"
     function lib:damage/modifier
-# 前方にいたプレイヤーにダメージ
     execute positioned ^ ^ ^1 as @p[distance=..2.5] run function lib:damage/
-# リセット
     function lib:damage/reset
 
 # 演出
