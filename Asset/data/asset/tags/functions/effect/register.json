@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0081.slow_falling/_/register",
+        "asset:effect/0031.slow_falling/_/register",
         "asset:effect/0074.darkness/_/register",
         "asset:effect/0024.darkness/_/register",
         "asset:effect/0077.nausea/_/register",
