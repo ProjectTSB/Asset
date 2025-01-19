@@ -2,7 +2,9 @@
 #
 # フレアブレス
 #
-# @within asset:mob/0411.behemoth/tick/event/flarebreath/
+# @within
+#    function asset:mob/0411.behemoth/tick/event/flarebreath/
+#    function asset:mob/0411.behemoth/tick/event/terzetto_disaster/
 
 # 角度変更
     execute facing entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0

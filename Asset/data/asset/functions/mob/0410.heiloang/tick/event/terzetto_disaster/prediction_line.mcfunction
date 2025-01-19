@@ -10,7 +10,7 @@
     data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.Scale set value [12f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 15
-    data modify storage api: Argument.FieldOverride.Tick set value 165
+    data modify storage api: Argument.FieldOverride.Tick set value 175
     execute positioned ^15 ^0.2 ^-25 run function api:object/summon
 
 # 回転
@@ -20,7 +20,7 @@
     data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.Scale set value [12f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 15
-    data modify storage api: Argument.FieldOverride.Tick set value 165
+    data modify storage api: Argument.FieldOverride.Tick set value 175
     execute at @s positioned ^15 ^0.3 ^-25 run function api:object/summon
 
 # 回転
@@ -30,7 +30,7 @@
     data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.Scale set value [12f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 15
-    data modify storage api: Argument.FieldOverride.Tick set value 165
+    data modify storage api: Argument.FieldOverride.Tick set value 175
     execute at @s positioned ^15 ^0.2 ^-25 run function api:object/summon
 
 # 回転
@@ -40,7 +40,7 @@
     data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.Scale set value [12f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 15
-    data modify storage api: Argument.FieldOverride.Tick set value 165
+    data modify storage api: Argument.FieldOverride.Tick set value 175
     execute at @s positioned ^15 ^0.3 ^-25 run function api:object/summon
 
 # 回転戻す

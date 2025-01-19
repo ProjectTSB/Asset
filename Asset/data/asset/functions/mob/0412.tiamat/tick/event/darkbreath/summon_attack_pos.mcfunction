@@ -2,10 +2,12 @@
 #
 # ダークブレス
 #
-# @within asset:mob/0412.tiamat/tick/event/darkbreath/
+# @within
+#    function asset:mob/0412.tiamat/tick/event/darkbreath/
+#    function asset:mob/0412.tiamat/tick/event/terzetto_disaster/
 
 # 攻撃位置決定
-    summon area_effect_cloud ~ ~ ~ {Duration:26,Tags:["BG.Temp.AttackPosition"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:50,Tags:["BG.Temp.AttackPosition"]}
     execute as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] at @s run function asset:mob/0412.tiamat/tick/util/move_to_ground
 
 # 攻撃位置表示

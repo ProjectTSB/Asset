@@ -46,6 +46,7 @@
     #declare tag BG.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行
     #declare tag BG.Skill.Ter.Succ.B テルツェット・サクセッション 眷属先行
     #declare tag BG.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
+    #declare tag BG.Skill.Ter.Dis テルツェット・ディザスター
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット

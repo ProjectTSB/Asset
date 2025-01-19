@@ -1,6 +1,6 @@
 #> asset:mob/0411.behemoth/tick/event/terzetto_succession_b/
 #
-# テルツェット・サクセッション ヘイローン先行
+# テルツェット・サクセッション 眷属先行
 #
 # @within asset:mob/0411.behemoth/tick/event/
 

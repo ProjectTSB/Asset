@@ -22,3 +22,7 @@
     execute if entity @s[tag=BG.Skill.Ter.Succ.A] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/
     execute if entity @s[tag=BG.Skill.Ter.Succ.B] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_b/
     execute if entity @s[tag=BG.Skill.Ter.Succ.Dive] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/
+
+
+# テルツェット・ディザスター
+    execute if entity @s[tag=BG.Skill.Ter.Dis] run function asset:mob/0412.tiamat/tick/event/terzetto_disaster/

@@ -2,7 +2,9 @@
 #
 # フレアブレス
 #
-# @within asset:mob/0411.behemoth/tick/event/flarebreath/
+# @within
+#    function asset:mob/0411.behemoth/tick/event/flarebreath/
+#    function asset:mob/0411.behemoth/tick/event/terzetto_disaster/
 
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 3 0.7

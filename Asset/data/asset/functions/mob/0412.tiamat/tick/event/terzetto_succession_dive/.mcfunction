@@ -10,7 +10,7 @@
 # 移動
     # アニメーション再生
         execute if score @s BG.EventTimer matches 121 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
-    # 中心点の右方向に移動
+    # 中心点の左方向に移動
         execute if score @s BG.EventTimer matches 121 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-28 ^ ^ ~-90 0
         execute if score @s BG.EventTimer matches 121 at @s run tp @e[type=item_display,tag=BG.ModelRoot] ~ ~ ~ ~ 0
 

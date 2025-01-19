@@ -11,3 +11,5 @@
     tag @s remove BF.Skill.Flatten
     tag @s remove BF.Skill.Ter.Succ.A
     tag @s remove BF.Skill.Ter.Succ.B
+    tag @s remove BF.Skill.Ter.Succ.Dive
+    tag @s remove BF.Skill.Ter.Dis
