@@ -117,6 +117,8 @@
     #declare tag BE.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
     #declare tag BE.Skill.Ter.Dis.Start テルツェット・ディザスター開始
     #declare tag BE.Skill.Ter.Dis テルツェット・ディザスター
+    #declare tag BE.Skill.Ter.Alig.Start テルツェット・アライニング開始
+    #declare tag BE.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下

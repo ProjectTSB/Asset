@@ -25,3 +25,6 @@
 
 # テルツェット・ディザスター
     execute if entity @s[tag=BF.Skill.Ter.Dis] run function asset:mob/0411.behemoth/tick/event/terzetto_disaster/
+
+# テルツェット・アライニング
+    execute if entity @s[tag=BF.Skill.Ter.Alig] run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/

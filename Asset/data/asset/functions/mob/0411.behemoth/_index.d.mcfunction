@@ -37,6 +37,8 @@
     # - 共通
     #declare tag BF.EntityRoot 自分自身（当たり判定）
     #declare tag BF.ModelRoot AJモデルのRootEntity
+    #declare tag BE.ModelRoot ヘイローンのRootEntity
+    #declare tag BG.ModelRoot ティアマットのRootEntity
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)
     #
     # - スキル
@@ -49,6 +51,7 @@
     #declare tag BF.Skill.Ter.Succ.B テルツェット・サクセッション 眷属先行
     #declare tag BF.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
     #declare tag BF.Skill.Ter.Dis テルツェット・ディザスター
+    #declare tag BF.Skill.Ter.Alig テルツェット・アライニング
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット
