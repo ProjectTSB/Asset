@@ -19,7 +19,7 @@
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] run tp @s ~ ~ ~
 
 # モデルをプレイヤーに向ける
-    execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ 0
 
 # 開幕
     execute if entity @s[tag=RW.Opening] run function asset:mob/1004.tultaria/tick/intro/tick

@@ -9,7 +9,7 @@
 # 他にアイテム等確認する場合はここに書く
 
 # 戦闘中に使うべからず
-    execute if predicate lib:in_battle run tellraw @a {"text":"戦闘中は使用できません。","color":"red"}
+    execute if predicate lib:in_battle run tellraw @s {"text":"戦闘中は使用できません。","color":"red"}
     execute if predicate lib:in_battle run tag @s remove CanUsed
 
 # 愚か者を弾く機構

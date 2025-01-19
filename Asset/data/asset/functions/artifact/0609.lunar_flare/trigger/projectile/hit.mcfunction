@@ -23,7 +23,7 @@
         # 剰余算する。追加ダメージが発生。
           scoreboard players operation $RandomDamage Temporary %= $21 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 80
+            scoreboard players add $RandomDamage Temporary 75
 
     # 属性
         data modify storage lib: Argument.AttackType set value "Magic"

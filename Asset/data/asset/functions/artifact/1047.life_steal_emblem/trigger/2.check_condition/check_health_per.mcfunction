@@ -10,7 +10,7 @@
 
 # 体力割合を取得
     function api:entity/player/get_health_per
-    execute store result score $T3.HPPer Temporary run data get storage api: Return.HealthPer
+    execute store result score $T3.HPPer Temporary run data get storage api: Return.HealthPer 1000
 
 # 体力が25%以上か確認
     execute unless score $T3.HPPer Temporary matches 251.. run function asset:artifact/1047.life_steal_emblem/trigger/2.check_condition/error_message

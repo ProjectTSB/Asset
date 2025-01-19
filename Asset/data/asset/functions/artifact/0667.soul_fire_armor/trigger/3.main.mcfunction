@@ -16,27 +16,27 @@
     playsound block.sculk_sensor.clicking player @a ~ ~ ~ 0.8 0 0
     playsound ogg:mob.vex.idle1 player @a ~ ~ ~ 1 0 0
 
-# 物理攻撃+5%
+# 物理攻撃
     data modify storage api: Argument.UUID set value [I;1,1,667,3]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.025
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
-# 火耐性+10%
+# 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,667,3]
     data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/fire/add
 
-# 火攻撃+10%
+# 火攻撃
     data modify storage api: Argument.UUID set value [I;1,1,667,3]
-    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/fire/add
 
-# MP回復量+8%
+# MP回復量
     data modify storage api: Argument.UUID set value [I;1,1,667,3]
-    data modify storage api: Argument.Amount set value 0.08
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/mp_regen/add
 

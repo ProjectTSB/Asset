@@ -34,7 +34,7 @@
     execute at @s as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
 
 # モデルをプレイヤーに向ける
-    execute at @s[tag=!RX.InAction] as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute at @s[tag=!RX.InAction] as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ 0
 
 # リセット
     tag @e[type=item_display,tag=RX.ModelRoot.Target] remove RX.ModelRoot.Target

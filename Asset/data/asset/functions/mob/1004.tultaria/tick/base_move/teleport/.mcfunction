@@ -11,7 +11,7 @@
     execute at @r[distance=..60] positioned ~ ~1 ~ run function lib:spread_entity/
 
 # プレイヤーが近すぎたらバック
-    execute at @s if entity @p[distance=..5] rotated ~ 0 run tp @s ^ ^ ^-10
+    execute at @s if entity @p[gamemode=!spectator,distance=..128] rotated ~ 0 run tp @s ^ ^ ^-10
 
 # 演出
     execute at @s positioned ~ ~1 ~ run function asset:mob/1004.tultaria/tick/base_move/teleport/vfx

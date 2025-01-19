@@ -9,7 +9,7 @@
 # 基礎火力 + 現在MP×1.2
 
 # 基礎火力設定(本来の10倍の値を設定すること)
-    scoreboard players set $BaseDamage Temporary 3500
+    scoreboard players set $BaseDamage Temporary 2500
 
 # ダメージ設定
     execute store result storage lib: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary

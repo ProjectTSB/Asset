@@ -14,7 +14,7 @@
     item replace entity @s armor.head with stick{CustomModelData:20209}
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 45f
+    data modify storage lib: Argument.Damage set value 42.5f
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Fire"
 

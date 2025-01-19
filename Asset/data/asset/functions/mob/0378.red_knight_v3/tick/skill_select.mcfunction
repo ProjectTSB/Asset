@@ -15,7 +15,7 @@
     #scoreboard players set @s AI.Skill 7
 
 # 高HPでスキル6だとスキル戻す
-    execute if score @s AI.Skill matches 6 unless entity @s[tag=AI.HPless50per] run scoreboard players set @s AI.Skill 5
+    execute if score @s AI.Skill matches 6 unless entity @s[tag=AI.HPless50per] run scoreboard players set @s AI.Skill 1
 # 大技の頻度を下げる
     execute if score @s AI.Skill matches 6 if predicate lib:random_pass_per/20 run scoreboard players set @s AI.Skill 1
 # 近距離だと突進に変更
