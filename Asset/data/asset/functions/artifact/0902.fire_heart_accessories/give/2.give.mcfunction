@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"心炎のアクセサリー","color":"#FF87BB"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"対象へ自身の最大体力に比例したダメージを与える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象に自身の最大体力に比例したダメージを与える"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
