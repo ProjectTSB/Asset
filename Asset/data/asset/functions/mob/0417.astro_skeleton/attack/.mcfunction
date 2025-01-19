@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 演出
-    execute as @p[tag=Victim] run particle dust 0.925 0.975 0.2 1 ~ ~ ~ 0.5 1 0.5 0 30
+    execute at @p[tag=Victim] run particle dust 0.925 0.975 0.2 1 ~ ~ ~ 0.5 1 0.5 0 30
     playsound entity.blaze.hurt hostile @a ~ ~ ~ 1 0.65
 
 # ダメージ
