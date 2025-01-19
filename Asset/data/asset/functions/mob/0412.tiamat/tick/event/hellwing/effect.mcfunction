@@ -2,7 +2,9 @@
 #
 # ヘルウィング
 #
-# @within asset:mob/0412.tiamat/tick/event/hellwing/
+# @within
+#    function asset:mob/0412.tiamat/tick/event/hellwing/
+#    function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/
 
 # 地面が無ければ消す
     execute if block ~ ~ ~ #lib:no_collision run return run kill @s

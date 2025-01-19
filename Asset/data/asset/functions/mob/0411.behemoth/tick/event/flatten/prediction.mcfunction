@@ -3,6 +3,7 @@
 # フラッテン
 #
 # @within asset:mob/0411.behemoth/tick/event/flatten/
+# @within asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/
 
 # 攻撃位置表示
     data modify storage api: Argument.ID set value 2063

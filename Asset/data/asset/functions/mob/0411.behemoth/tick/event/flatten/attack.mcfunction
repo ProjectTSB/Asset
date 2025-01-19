@@ -3,6 +3,7 @@
 # フラッテン
 #
 # @within asset:mob/0411.behemoth/tick/event/flatten/
+# @within asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/
 
 # ダメージ
     data modify storage api: Argument.Damage set value 55.0f

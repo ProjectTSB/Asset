@@ -2,7 +2,9 @@
 #
 # ヘルウィング
 #
-# @within asset:mob/0412.tiamat/tick/event/hellwing/
+# @within
+#    function asset:mob/0412.tiamat/tick/event/hellwing/
+#    function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/
 
 # 予告
     data modify storage api: Argument.ID set value 2113
