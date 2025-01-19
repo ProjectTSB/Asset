@@ -5,9 +5,9 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot
 
 # 演出
-    execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @p ~ ~ ~ 0.7 1 1
-    #execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1
-    execute as @a[distance=..30] at @s facing entity @e[type=husk,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.5 1.8
+    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @p ~ ~ ~ 0.7 1 1
+    #execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1
+    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.5 1.8
 
 # 前方拡散
     execute rotated ~ 0 run summon marker ^ ^ ^0.1 {Tags:["SpreadMarker"]}
@@ -17,7 +17,7 @@
 
 # Markerに自分の方を向かせた上で反対を向かせる
 # これにより本体の向きを一切変えずに本体からMarkerへの方向がMarkerのRotationに入る
-    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s facing entity @e[type=husk,tag=this,distance=..5,sort=nearest,limit=1] eyes facing ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
+    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes facing ^ ^ ^-1 run tp @s ~ ~ ~ ~ ~
 
 # ミサイルを召喚
     data modify storage api: Argument.ID set value 2034

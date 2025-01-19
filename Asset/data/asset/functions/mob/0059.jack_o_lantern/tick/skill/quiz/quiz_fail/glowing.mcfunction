@@ -10,7 +10,7 @@
     execute if predicate lib:random_pass_per/5 run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
 # 偽物のカウントの数だけ、偽物カボチャを巨大カボチャに変身させる
-    execute if entity @s[scores={1N.FakeCount=1..}] as @e[type=husk,scores={MobID=224},distance=..30,sort=random,limit=1] at @s run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_fail/summon_giant_pumpkin
+    execute if entity @s[scores={1N.FakeCount=1..}] as @e[type=zombie,scores={MobID=224},distance=..30,sort=random,limit=1] at @s run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_fail/summon_giant_pumpkin
 
 # 残ったやつらを退場させる
     execute if entity @s[scores={1N.FakeCount=..0}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/kill_all_fake
