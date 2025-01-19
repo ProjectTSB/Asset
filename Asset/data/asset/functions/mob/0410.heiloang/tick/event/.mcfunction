@@ -42,6 +42,10 @@
     execute if entity @s[tag=BE.Skill.Ter.Succ.B] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/
     execute if entity @s[tag=BE.Skill.Ter.Succ.Dive] run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/
 
+# テルツェット・ディザスター
+    execute if entity @s[tag=BE.Skill.Ter.Dis.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_disaster_start/
+    execute if entity @s[tag=BE.Skill.Ter.Dis] run function asset:mob/0410.heiloang/tick/event/terzetto_disaster/
+
 ## P4
 # ヘイルディザスター
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/heil_disaster/

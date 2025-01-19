@@ -22,9 +22,9 @@
     # 攻撃
         execute if score @s BG.EventTimer matches 115 positioned ~ ~-0.7 ~ run function asset:mob/0412.tiamat/tick/event/hellwing/attack
     # 演出
-        execute if score @s BG.EventTimer matches 115 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=10] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
-        execute if score @s BG.EventTimer matches 117 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=10] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
-        execute if score @s BG.EventTimer matches 119 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=10] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
+        execute if score @s BG.EventTimer matches 115 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=7] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
+        execute if score @s BG.EventTimer matches 117 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=7] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
+        execute if score @s BG.EventTimer matches 119 positioned ^ ^ ^-6 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=7] at @s run function asset:mob/0412.tiamat/tick/event/hellwing/effect
 
 # 演出
     execute if score @s BG.EventTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65

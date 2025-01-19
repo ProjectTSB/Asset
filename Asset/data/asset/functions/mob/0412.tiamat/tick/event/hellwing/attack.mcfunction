@@ -63,23 +63,25 @@
     execute rotated ~340 0 positioned ^ ^3 ^1.8 run particle cloud ~ ~ ~ ^ ^ ^100000000 0.00000004 0
     execute rotated ~350 0 positioned ^ ^3 ^1.8 run particle cloud ~ ~ ~ ^ ^ ^100000000 0.00000004 0
 
-# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYcRAxgMwBsVATDQLQBGVAnBUwCwBmFXFr15Um7ehXoBWAAxEqADhlxeYXBgCGAWwTJAW74ACAIxqwMDQCdtAZyTgKAezwYISIwty8LDrXbAA3DRQ8XXAADyQZXCgkJnoZAF8E3AgHP0Dg0LAIxCNopG5E5LAHYWs4V0QosBY4AC80OAtI3DRrACF6xosAUQBHPCCUKABlcwpyJF4g8qSAXSA_3
+# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAbAMYUCcA7ACwAMFAtAEYBMR1L9HZZdgEYAZgFYWAZmr9GIgBzz61RmTC4MAQwC2CZIC3fAARD1YGJoBOOgM5JwFAPZ4MEJB0a4RFh9rtgAbpooeHrgAB5IHmBQSCzuAL7xuBAOfoHBoWARiFExiGSMibgOIiLWcK45uGxwAF5ocBaRuGjWAEJ1DRYAogCOeEEoUADK5hRwJIgiQeWJALpAA_3
 # 線 1
 execute positioned ^0 ^ ^-20 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.05882 ^ ^-16.47059 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.11765 ^ ^-12.94118 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.17647 ^ ^-9.41176 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.23529 ^ ^-5.88235 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.29412 ^ ^-2.35294 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.35294 ^ ^1.17647 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.41176 ^ ^4.70588 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.47059 ^ ^8.23529 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.52941 ^ ^11.76471 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.58824 ^ ^15.29412 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.64706 ^ ^18.82353 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.70588 ^ ^22.35294 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.76471 ^ ^25.88235 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.82353 ^ ^29.41176 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.88235 ^ ^32.94118 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^0.94118 ^ ^36.47059 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
-execute positioned ^1 ^ ^40 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^-15.78947 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^-11.57895 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^-7.36842 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^-3.15789 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^1.05263 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^5.26316 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^9.47368 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^13.68421 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^17.89474 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^22.10526 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^26.31579 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^30.52632 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^34.73684 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^38.94737 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^43.15789 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^47.36842 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^51.57895 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^55.78947 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}
+execute positioned ^0 ^ ^60 run summon area_effect_cloud ~ ~ ~ {Duration:20,Tags:["BG.Temp.AttackPosition"]}

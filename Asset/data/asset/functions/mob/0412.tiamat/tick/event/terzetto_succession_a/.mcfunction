@@ -42,9 +42,9 @@
 
 # アイシクルダイブ追撃
     # 2箇所に攻撃地点設置
-        execute if score @s BG.EventTimer matches 350 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
+        execute if score @s BG.EventTimer matches 350 if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
         execute if score @s BG.EventTimer matches 350 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
-        execute if score @s BG.EventTimer matches 355 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
+        execute if score @s BG.EventTimer matches 355 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] positioned ~ ~0.05 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
