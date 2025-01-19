@@ -51,7 +51,7 @@
 
 # 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=170..310}] run tp @s ~ ~ ~ facing entity @p feet
-    execute if entity @s[scores={General.Mob.Tick=170..310}] as @e[type=husk,scores={MobID=224},distance=..40] at @s run tp @s ~ ~ ~ facing entity @p feet
+    execute if entity @s[scores={General.Mob.Tick=170..310}] as @e[type=zombie,scores={MobID=224},distance=..40] at @s run tp @s ~ ~ ~ facing entity @p feet
 
 # クイズに失敗した場合、発光する
     execute if entity @s[scores={General.Mob.Tick=310}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_fail/glow

@@ -9,4 +9,4 @@
 
 # 自身と偽物で実行
     execute rotated ~ 0 run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move/move
-    execute as @e[type=husk,scores={MobID=224},distance=..40] at @s rotated ~ 0 run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move/move
+    execute as @e[type=zombie,scores={MobID=224},distance=..40] at @s rotated ~ 0 run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/random_move/move
