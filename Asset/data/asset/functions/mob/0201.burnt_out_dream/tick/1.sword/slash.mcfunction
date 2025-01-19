@@ -14,8 +14,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute positioned ^ ^ ^1 as @p[distance=..2.5] run function api:damage/
+    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
     function api:damage/reset
 
 # 演出
-    execute positioned ^ ^ ^1 as @p[distance=..2.5] at @s run function asset:mob/0201.burnt_out_dream/tick/1.sword/vfx
+    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function asset:mob/0201.burnt_out_dream/tick/1.sword/vfx
