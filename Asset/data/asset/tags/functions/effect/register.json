@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0076.mining_fatigue/_/register",
+        "asset:effect/0026.mining_fatigue/_/register",
         "asset:effect/0128.hunger/_/register",
         "asset:effect/0078.hunger/_/register",
         "asset:effect/0028.hunger/_/register",

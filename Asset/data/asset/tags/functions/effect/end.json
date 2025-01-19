@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0026.mining_fatigue/_/end",
         "asset:effect/0028.hunger/_/end",
         "asset:effect/0030.wither/_/end",
         "asset:effect/0029.poison/_/end",
