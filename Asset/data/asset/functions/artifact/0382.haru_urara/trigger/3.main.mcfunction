@@ -27,5 +27,5 @@
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 31
     data modify storage api: Argument.Duration set value 20
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Enemy.Boss,distance=..10] run function api:entity/mob/effect/give
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
