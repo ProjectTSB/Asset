@@ -21,5 +21,9 @@
     # 眷属召喚
         execute if score @s BE.EventTimer matches 150 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/summon_servants
 
+# 移動
+    execute if score @s BE.EventTimer matches 193..213 run tp @s ^ ^ ^-0.4 ~ 0
+    execute at @s run tp @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
+
 # 終了
     execute if score @s BE.EventTimer matches 257.. run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/end

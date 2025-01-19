@@ -14,4 +14,4 @@
     data modify storage api: Argument.FieldOverride.Scale set value [12f, 12f, 0.05f]
     execute if entity @s[tag=!2177.IsSlow] run data modify storage api: Argument.FieldOverride.Tick set value 55
     execute if entity @s[tag=2177.IsSlow] run data modify storage api: Argument.FieldOverride.Tick set value 75
-    execute positioned ~ ~ ~ run function api:object/summon
+    execute positioned ~ ~0.3 ~ run function api:object/summon

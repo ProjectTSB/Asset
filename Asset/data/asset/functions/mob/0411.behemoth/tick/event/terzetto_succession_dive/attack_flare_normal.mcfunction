@@ -11,7 +11,7 @@
     data modify storage api: Argument.FieldOverride.IsSlow set value false
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Damage set value 55.0f
-    execute positioned ~ ~0.5 ~ run function api:object/summon
+    execute positioned ~ ~0.1 ~ run function api:object/summon
 
 # 終了
     kill @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1]

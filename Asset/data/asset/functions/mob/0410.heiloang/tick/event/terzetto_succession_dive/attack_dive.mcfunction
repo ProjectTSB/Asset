@@ -13,7 +13,7 @@
     function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set value 56.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

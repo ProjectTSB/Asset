@@ -12,8 +12,8 @@
     execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function animated_java:heiloang_aj/animations/pause_all
 
 # 中心点の正面方向に移動し、中心点を向く
-        execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
-        execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+        # execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+        # execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 
 # タグ消去
     function asset:mob/0410.heiloang/tick/util/remove_all_tag

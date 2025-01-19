@@ -17,7 +17,7 @@
 # 現状、複数攻撃判定が動作しないので暫定で干渉可能にしている。修正され次第、falseに戻す
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"『闇竜』"}'
+    data modify storage asset:mob Name set value '{"text":"『闇竜』","color":"#CB8FFF"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 体力 (double) (オプション)

@@ -69,7 +69,7 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 340 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_1_flymove_end
     # 初期位置に戻る
-        execute if score @s BE.EventTimer matches 329 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+        execute if score @s BE.EventTimer matches 329 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^35 ~180 0
 
 # 終了
     execute if score @s BE.EventTimer matches 376.. run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/end

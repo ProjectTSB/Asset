@@ -17,8 +17,8 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.7
     particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
     particle flash ~ ~1 ~ 0.5 0.5 0.5 0 5 force
-    particle flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
-    particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30 force
+    particle soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
+    # particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30 force
 
 # 演出
     # 光の柱
@@ -64,39 +64,39 @@
         particle end_rod ^-1.58334 ^ ^-4.74268 0 0 0 0.05 1
         particle end_rod ^-0.80206 ^ ^-4.93525 0 0 0 0.05 1
     # 円型ベクトルパーティクル
-        execute rotated ~00 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~10 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~20 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~30 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~40 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~50 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~60 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~70 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~80 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~90 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~100 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~110 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~120 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~130 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~140 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~150 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~160 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~170 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~180 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~190 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~200 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~210 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~220 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~230 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~240 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~250 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~260 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~270 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~280 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~290 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~300 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~310 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~320 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~330 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~340 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
-        execute rotated ~350 0 positioned ^ ^ ^ run particle flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~00 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~10 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~20 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~30 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~40 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~50 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~60 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~70 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~80 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~90 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~100 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~110 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~120 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~130 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~140 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~150 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~160 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~170 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~180 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~190 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~200 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~210 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~220 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~230 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~240 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~250 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~260 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~270 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~280 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~290 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~300 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~310 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~320 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~330 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~340 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+        execute rotated ~350 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
