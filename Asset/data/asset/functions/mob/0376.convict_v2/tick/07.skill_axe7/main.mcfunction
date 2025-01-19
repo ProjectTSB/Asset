@@ -15,13 +15,14 @@
     execute if score @s General.Mob.Tick matches 9 run playsound item.trident.riptide_1 hostile @a ~ ~ ~ 1 2
     execute if score @s General.Mob.Tick matches 9 run playsound item.trident.riptide_1 hostile @a ~ ~ ~ 1 0
 
-    execute if score @s General.Mob.Tick matches 9..48 run function asset:mob/0376.convict_v2/tick/common/particle/particle_6
-    execute if score @s General.Mob.Tick matches 39..48 positioned ~ ~1 ~ run function asset:mob/0376.convict_v2/tick/common/particle/particle_5
+# 警告
+    execute if score @s General.Mob.Tick matches 9 run function asset:mob/0376.convict_v2/tick/07.skill_axe7/alert
 
-    execute if score @s General.Mob.Tick matches 40 positioned ~ ~1 ~ rotated ~ ~ positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
-    execute if score @s General.Mob.Tick matches 41 positioned ~ ~1 ~ rotated ~90 ~ positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
-    execute if score @s General.Mob.Tick matches 42 positioned ~ ~1 ~ rotated ~180 ~ positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
-    execute if score @s General.Mob.Tick matches 43 positioned ~ ~1 ~ rotated ~270 ~ positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
+    execute if score @s General.Mob.Tick matches 39..48 positioned ~ ~1 ~ rotated ~ 0 run function asset:mob/0376.convict_v2/tick/common/particle/particle_5
+    execute if score @s General.Mob.Tick matches 40 positioned ~ ~1 ~ rotated ~ 0 positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
+    execute if score @s General.Mob.Tick matches 41 positioned ~ ~1 ~ rotated ~90 0 positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
+    execute if score @s General.Mob.Tick matches 42 positioned ~ ~1 ~ rotated ~180 0 positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
+    execute if score @s General.Mob.Tick matches 43 positioned ~ ~1 ~ rotated ~270 0 positioned ^ ^ ^3 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
 
 # 2tickおきにダメージ実行
 # 実行時間を移す
