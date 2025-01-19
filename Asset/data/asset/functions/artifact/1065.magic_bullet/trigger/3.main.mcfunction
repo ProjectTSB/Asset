@@ -43,7 +43,7 @@
     execute unless data storage asset:context Items.mainhand.id run playsound block.iron_trapdoor.close player @a ~ ~ ~ 0.7 0.7
     execute unless data storage asset:context Items.mainhand.id run playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.7
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 1065
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
 
 # リセット
     tag @s[tag=TL.AimToPlayer] remove TL.AimToPlayer

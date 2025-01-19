@@ -11,7 +11,7 @@
 
 # 神器give
     data modify storage api: Argument.ID set value 245
-    function api:artifact/give/from_id
+    function api:artifact/replace/from_id
 
 # 演出
     particle minecraft:crit ~ ~1 ~ 0.25 0.5 0.25 0.1 20 force

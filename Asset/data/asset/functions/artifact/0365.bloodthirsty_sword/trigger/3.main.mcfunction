@@ -11,7 +11,7 @@
 
 # 神器もらうよ
     data modify storage api: Argument.ID set value 364
-    function api:artifact/give/from_id
+    function api:artifact/replace/from_id
 
 # 演出
     particle minecraft:block redstone_block ~ ~1 ~ 0.1 0.1 0.1 1 100
