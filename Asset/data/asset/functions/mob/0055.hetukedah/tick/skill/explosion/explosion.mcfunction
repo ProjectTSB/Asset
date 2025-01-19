@@ -26,7 +26,7 @@
     execute if predicate api:global_vars/difficulty/min/hard rotated ~180 ~ positioned ^ ^ ^7 run function asset:mob/0055.hetukedah/tick/skill/explosion/explosion_mini
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 12.0f
+    data modify storage api: Argument.Damage set value 7.5f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

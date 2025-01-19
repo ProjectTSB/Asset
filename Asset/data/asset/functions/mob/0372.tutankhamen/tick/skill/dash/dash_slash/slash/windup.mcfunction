@@ -8,7 +8,7 @@
     execute as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/attack_dash_1/tween {to_frame: 0, duration: 5}
 
 # プレイヤーのほうを向く
-    execute facing entity @p[distance=..16] feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
 # 演出
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2

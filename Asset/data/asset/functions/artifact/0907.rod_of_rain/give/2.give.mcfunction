@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"彩雨の杖","color":"blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用時、雨の降るエリアを設置する。","color":"#7A95FF"}','{"text":"エリアは定期的に敵にはダメージを与え","color":"#7A95FF"}','{"text":"プレイヤーの体力を自身の最大体力の10%分回復する。","color":"#7A95FF"}','{"text":"この回復には水攻撃補正が追加で乗る。","color":"#7A95FF"}','{"text":"鮮やかに彩られた雨乞いに使われた杖。","color":"#a0eafe"}','{"text":"ひとたび振るえば辺りに祝福の雨を降らすという。","color":"#a0eafe"}','{"text":"雨は癒やしをもたらし、時には罪を洗い流す。","color":"#a0eafe"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雨の降るエリアを設置する。","color":"#7A95FF"}','{"text":"エリアは定期的に敵にはダメージを与え","color":"#7A95FF"}','{"text":"プレイヤーの体力を自身の最大体力の10%分回復する。","color":"#7A95FF"}','{"text":"この回復には水攻撃補正が追加で乗る。","color":"#7A95FF"}','{"text":"鮮やかに彩られた雨乞いに使われた杖。","color":"#a0eafe"}','{"text":"ひとたび振るえば辺りに祝福の雨を降らすという。","color":"#a0eafe"}','{"text":"雨は癒やしをもたらし、時には罪を洗い流す。","color":"#a0eafe"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 9
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 180
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     data modify storage asset:artifact SpecialCooldown set value 2400
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -53,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

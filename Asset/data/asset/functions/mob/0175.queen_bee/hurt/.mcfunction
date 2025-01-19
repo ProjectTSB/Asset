@@ -6,3 +6,6 @@
 
 # 演出
     playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.hurt

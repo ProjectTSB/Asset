@@ -14,18 +14,10 @@
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.iron_golem.death player @a ~ ~ ~ 1 0
 
-# ダメージ設定
-    # 与えるダメージ = 50
-        data modify storage lib: Argument.Damage set value 360.0f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage lib: Argument.ElementType set value "Fire"
-    # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] run function lib:damage/
-# リセット
+# ダメージ
+    data modify storage lib: Argument.Damage set value 65.0f
+    data modify storage lib: Argument.AttackType set value "Magic"
+    data modify storage lib: Argument.ElementType set value "Fire"
+    function lib:damage/modifier
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3.5] run function lib:damage/
     function lib:damage/reset
-
-# 着弾タグを消す
-    tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget

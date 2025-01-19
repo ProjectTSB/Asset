@@ -17,7 +17,7 @@
     execute positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
 
 # パラメータ設定
-    data modify storage api: Argument.Damage set value 50
+    data modify storage api: Argument.Damage set value 60
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの広範囲光線により跡形も残らず蒸発した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正 (厳密な紐付けではない)

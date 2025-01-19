@@ -15,8 +15,8 @@
     data modify storage api: Argument.ID set value 2037
     execute positioned ~ ~1.5 ~ run function api:object/summon
 
-# 偽物を抹消する
-    kill @e[type=husk,scores={MobID=224},distance=..50]
+# "確実に"偽物を消し去る
+    execute as @e[type=husk,scores={MobID=224},distance=..128] run function api:mob/remove
 
 # カボチャが召喚するオブジェクトも抹消する
     kill @e[type=item_display,scores={ObjectID=2031..2036},distance=..50]
@@ -31,7 +31,7 @@
     data modify storage api: Argument.ID set value 950
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
-    
+
     data modify storage api: Argument.ID set value 1113
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id

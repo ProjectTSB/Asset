@@ -31,10 +31,10 @@
         scoreboard players operation $01.CurrentHP Temporary /= $100 Const
 
     # 表示する
-        execute if entity @s[tag=!Enemy.Boss] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.CurrentHP"},"color":"white","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=!Enemy.Boss,tag=!Uninterferable] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.CurrentHP"},"color":"white","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"score":{"objective":"Temporary","name":"$01.MaxHP"},"color":"white","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
     # 天使だったら今までのデータを気にせず秘匿
-        execute if entity @s[tag=Enemy.Boss] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
+        execute if entity @s[tag=Enemy.Boss,tag=!Uninterferable] run tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"text":"♡","font":"artifact/1/info"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":"\u0002","font":"space"},{"text":"/","font":"default"},{"text":"\u0002","font":"space"},{"text":"???","font":"default"},{"text":" (","font":"default"},{"score":{"objective":"Temporary","name":"$01.PercentHP"},"color":"white","font":"default"},{"text":"%)","font":"default"}]
 
 # 物理と魔法
     # 物理耐性取得

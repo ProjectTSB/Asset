@@ -7,14 +7,15 @@
 
 
 # 魔法、無属性のダメージをぶちかます
-    data modify storage lib: Argument.Damage set value 70.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
+    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.AdditionalMPHeal set value 9.0f
     tag @s add this
-    execute as @a if score @s UserID = @e[type=armor_stand,tag=this,distance=..1,limit=1] 5U.ID run function lib:damage/modifier
+    execute as @a if score @s UserID = @e[type=armor_stand,tag=this,distance=..1,limit=1] 5U.ID run function api:damage/modifier
     tag @s remove this
-    execute as @e[type=#lib:living,type=!player,sort=nearest,limit=1] run function lib:damage/
-    function lib:damage/reset
+    execute as @e[type=#lib:living,type=!player,sort=nearest,limit=1] run function api:damage/
+    function api:damage/reset
 
 # パーティクル
     particle minecraft:crit ~ ~ ~ 0 0 0 0.5 10

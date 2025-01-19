@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"浄藍の紫陽花","color":"#83aaf7"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、解除可能なデバフを1つ解除し","color":"white"}','[{"text":"自身と周囲の1名に","color":"white"},{"text":"水攻撃+10%","color":"aqua"},{"text":"を10秒間付与する。","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花。","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し","color":"white"}','[{"text":"自身と周囲の1名に","color":"white"},{"text":"水攻撃+10%","color":"aqua"},{"text":"を10秒間付与する。","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花。","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 16
+    data modify storage asset:artifact MPCost set value 20
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 200
+    data modify storage asset:artifact LocalCooldown set value 300
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
