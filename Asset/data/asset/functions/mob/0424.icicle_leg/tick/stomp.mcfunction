@@ -23,6 +23,19 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
     function api:damage/reset
 
+# ノーマルならreturn
+    execute if predicate api:global_vars/difficulty/easy run return 0
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# 鈍足を付与
+    data modify storage api: Argument.ID set value 17
+    data modify storage api: Argument.Stack set from storage api: Return.Difficulty
+    data modify storage api: Argument.Duration set value 10
+    execute as @a[gamemode=!spectator,distance=..5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # パーティクル
     particle smoke ~ ~0.1 ~ 1 0.1 1 0.02 100
     particle dust 0.4 0.8 1 1.5 ~ ~0.1 ~ 2 0.1 2 0.02 50
