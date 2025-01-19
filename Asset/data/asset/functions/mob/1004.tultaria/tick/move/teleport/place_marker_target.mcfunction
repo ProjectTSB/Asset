@@ -8,7 +8,7 @@
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 
 # 移動先を設置、プレイヤーを狙う
-    execute at @r run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
+    execute at @r[gamemode=!spectator,distance=..128] run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
 
 # 行動中タグ付与
     tag @s add RW.Move

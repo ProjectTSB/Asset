@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"守護者の鉄塊"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"守護者が遺した鎧の一部","color":"gray"}','{"text":"揺るぎ無き守護の意志が感じられる","color":"gray"}','{"text":"防御力+3 ノックバック耐性+99 全属性耐性+5%","color":"green"}']
+    data modify storage asset:artifact Lore set value ['{"text":"守護者が遺した鎧の一部","color":"gray"}','{"text":"揺るぎ無き守護の意志が感じられる","color":"gray"}','{"text":"防御力+1 ノックバック耐性+99 全属性耐性+5%","color":"green"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

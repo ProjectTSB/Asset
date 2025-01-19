@@ -21,7 +21,7 @@
 
 # 移動
     # TP
-        execute if score @s AV.AnimationTick matches 20..70 at @s positioned ^ ^ ^0.415 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 20..70 at @s positioned ^ ^ ^0.3 run function asset:mob/0391.axia_first/ai/general/1.teleport
     
 # ダメージ&サウンド
     execute if score @s AV.AnimationTick matches 20 at @s run function asset:mob/0391.axia_first/ai/animation/6_3_moving_spin/damage

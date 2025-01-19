@@ -9,7 +9,7 @@
     particle minecraft:explosion ~ ~ ~ 1 0 1 0 3 force @a[distance=..30]
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 6.0f
+    data modify storage api: Argument.Damage set value 5.5f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

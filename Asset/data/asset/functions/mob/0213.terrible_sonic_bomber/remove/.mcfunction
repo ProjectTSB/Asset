@@ -8,12 +8,12 @@
 # Todo: 対空砲を消す
 
 # super
-function asset:mob/super.remove
+    function asset:mob/super.remove
 
 # remove markers
-kill @e[tag=5X.Centre]
+    kill @e[tag=5X.Centre]
 
 # remove objects
-execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
-execute as @e[scores={MobID=214}] run function api:mob/remove
-kill @e[scores={ObjectID=2082..2088}]
+    execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
+    execute as @e[scores={MobID=214}] run function api:mob/remove
+    kill @e[scores={ObjectID=2082..2088}]

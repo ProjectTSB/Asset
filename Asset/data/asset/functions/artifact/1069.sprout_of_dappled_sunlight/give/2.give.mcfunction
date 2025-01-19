@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"木洩れ日の新芽","color":"#A2FF94"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、MP回復量+12%を10秒間得る。","color":"white"}','{"text":"暖かな日差しの下で萌え出る新芽。","color":"gray"}','{"text":"その芽吹きには確かな生命力を感じられる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"MP回復量+12%を10秒間得る。","color":"white"}','{"text":"暖かな日差しの下で萌え出る新芽。","color":"gray"}','{"text":"その芽吹きには確かな生命力を感じられる。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"3回回復を与える毎","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"6回回復を与える毎","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -48,6 +48,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 200
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

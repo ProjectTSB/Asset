@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['[{"text":"UNIは棘皮動物に属す、","bold":false},{"text":"ヒトデやなまこの仲間","bold":true}]','{"text":"コンブを主食とし、餌を食べて身を太らせる","bold":false}','{"text":"食べる速度は非常に遅い","color":"dark_purple","bold":false,"italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.kelp"}'
-    data modify storage asset:artifact ConsumeItem.Count set value 1
+    data modify storage asset:artifact ConsumeItem.Count set value 8
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 2
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 40
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

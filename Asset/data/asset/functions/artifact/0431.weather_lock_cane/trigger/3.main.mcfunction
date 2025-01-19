@@ -31,4 +31,4 @@
     function asset:artifact/0431.weather_lock_cane/trigger/weather/lock
 
 # リセット用ループ
-    schedule function asset:artifact/0431.weather_lock_cane/trigger/end 3600t replace
+    schedule function asset:artifact/0431.weather_lock_cane/trigger/end 2000t replace

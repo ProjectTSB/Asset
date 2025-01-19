@@ -15,7 +15,7 @@
     execute if score @s General.Mob.Tick matches 7 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/spread
 
 # プレイヤーの方を向く
-    execute if score @s General.Mob.Tick matches 7.. at @s facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute if score @s General.Mob.Tick matches 7.. at @s facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s General.Mob.Tick matches 7.. at @s rotated ~ 0 run tp @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # リセット

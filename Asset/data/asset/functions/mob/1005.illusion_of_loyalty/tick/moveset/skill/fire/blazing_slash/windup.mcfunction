@@ -5,7 +5,7 @@
 # @within function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/
 
 # こっちを向く
-    execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ 0
 
 # モデルを自分の向きに
     execute at @s rotated ~ 0 run tp @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] ~ ~ ~ ~ ~

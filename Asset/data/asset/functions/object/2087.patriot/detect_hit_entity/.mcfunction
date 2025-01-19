@@ -5,4 +5,4 @@
 # @within asset:object/alias/2087/detect_hit_entity
 
 # 判定
-    execute positioned ~-2 ~-2 ~-2 if entity @e[tag=Enemy.Boss,dx=3,dy=3,dz=3] run data modify storage asset:context IsHitEntity set value true
+    execute positioned ~-2 ~-2 ~-2 if entity @e[tag=Enemy.Boss,tag=!Uninterferable,dx=3,dy=3,dz=3] run data modify storage asset:context IsHitEntity set value true

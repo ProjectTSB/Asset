@@ -8,6 +8,9 @@
 # @private
     #declare function asset_manager:mob/bossbar/init
 
+# 位置を調整
+    tp @s ~ ~0.1 ~ ~ ~
+
 # ボスは重複しないはずだが一応UUIDを設定しておく
     execute store result score @s AU.Dummy.UUID run random value 0..2147483646
     scoreboard players operation $AU.Temp AU.Dummy.UUID = @s AU.Dummy.UUID

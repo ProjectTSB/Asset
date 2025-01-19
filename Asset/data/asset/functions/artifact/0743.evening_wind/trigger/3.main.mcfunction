@@ -22,18 +22,18 @@
     playsound block.fire.ambient player @a ~ ~ ~ 0.7 1.1 0
     playsound block.lava.extinguish player @a ~ ~ ~ 0.5 0.9
 
-# 火攻撃+15%
+# 火攻撃
     data modify storage api: Argument.UUID set value [I;1,1,743,7]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/fire/add
 
-# 移動速度+15%
-    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02e700000007 "Speed" 0.15 multiply_base
+# 移動速度
+    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02e700000007 "Speed" 0.05 multiply_base
 
-# 水攻撃-25%
+# 水攻撃
     data modify storage api: Argument.UUID set value [I;1,1,743,7]
-    data modify storage api: Argument.Amount set value -0.25
+    data modify storage api: Argument.Amount set value -0.10
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
