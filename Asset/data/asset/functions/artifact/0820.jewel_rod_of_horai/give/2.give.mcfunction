@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"蓬莱","color":"red"},{"text":"の","color":"yellow"},{"text":"玉","color":"green"},{"text":"の","color":"blue"},{"text":"枝","color":"dark_purple"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"龍の頸の玉、火鼠の皮衣、仏の御石の鉢、燕の子安貝を","color":"gray"}','{"text":"1つ以上装備しているときにダメージを与えられ、","color":"gray"}','{"text":"装備数が増えるごとに攻撃数が増加する。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"竹取の宝具を1つ以上装備しているときに敵へのダメージが発生する。","color":"gray"}','{"text":"装備数が増えるごとに攻撃数が増加する。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
