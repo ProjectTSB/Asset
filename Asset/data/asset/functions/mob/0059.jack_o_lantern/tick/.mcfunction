@@ -14,6 +14,9 @@
     particle dust 1 0.6 0 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
     particle dust 0.851 0 1 1 ~ ~1.8 ~ 0.4 0.4 0.4 0 1 normal @a
 
+# 浮遊を解除
+    effect clear @s levitation
+
 # クイズの時以外のみ表示する
     execute if entity @s[tag=!1N.DisableParticle] run particle falling_dust blue_terracotta ~ ~0.5 ~ 0.35 0 0.35 0 2 normal @a
 
