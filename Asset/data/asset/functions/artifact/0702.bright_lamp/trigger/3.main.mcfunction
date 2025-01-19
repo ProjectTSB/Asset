@@ -15,7 +15,7 @@
     scoreboard players reset $RecursiveLimit Temporary
 
 # 暗視を付与
-    effect give @a[distance=..8] night_vision 21 0 true
+    effect give @a[distance=..8] night_vision 26 0 true
 
 # 暗闇を解除
     data modify storage api: Argument.ID set value 124

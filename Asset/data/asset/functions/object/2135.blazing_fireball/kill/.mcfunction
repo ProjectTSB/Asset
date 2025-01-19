@@ -17,7 +17,7 @@
     playsound minecraft:block.basalt.break hostile @a ~ ~ ~ 1 0.5
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 18
+    data modify storage api: Argument.Damage set value 20
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID

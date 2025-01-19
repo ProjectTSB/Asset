@@ -11,11 +11,11 @@
 # 一定の距離から距離減衰するための距離(適正距離をメートル*2で指定)
     scoreboard players set $Appropriate_Distance Temporary 10
 # 最低ダメージ保証
-    scoreboard players set $MinDamage Temporary 20
+    scoreboard players set $MinDamage Temporary 40
 
 # ダメージ設定
     # ダメージ
-        scoreboard players add $Damage Temporary 50
+        scoreboard players add $Damage Temporary 80
     # 属性
         data modify storage lib: Argument.AttackType set value "Physical"
         data modify storage lib: Argument.ElementType set value "Water"

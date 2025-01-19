@@ -23,7 +23,7 @@
     function lib:heal/reset
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 800.0f
+    data modify storage lib: Argument.Damage set value 500.0f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Water"
     function lib:damage/modifier

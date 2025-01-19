@@ -12,14 +12,14 @@
 # 演出
     playsound minecraft:entity.firework_rocket.launch player @a ~ ~ ~ 1 1
 
-# タグ付け
+# スニークしてなければプレイヤーをライドさせる
     tag @s add 1054.Init
-
-# プレイヤーをライドさせる
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run ride @s mount @e[tag=1054.Init,distance=..2,sort=nearest,limit=1]
+    execute as @a if score @s UserID = $OwnerID Temporary unless predicate lib:is_sneaking run ride @s mount @e[type=item_display,tag=1054.Init,distance=..0.1,sort=nearest,limit=1]
 
-# タグ消す
-    tag @s remove 1054.Init
 # リセット
+    tag @s remove 1054.Init
     scoreboard players reset $OwnerID Temporary
+
+# super.init
+    function asset:object/super.init

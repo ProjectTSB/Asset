@@ -34,6 +34,10 @@
     # data modify storage asset:effect Visible set value
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     # data modify storage asset:effect StackVisible set value
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect StackVisible set value
 
 # フィールド
     # data modify storage asset:effect Field set value {}

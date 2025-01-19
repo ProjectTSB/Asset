@@ -10,3 +10,6 @@
 # パーティクル処理
     particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
+
+# キル
+    kill @s

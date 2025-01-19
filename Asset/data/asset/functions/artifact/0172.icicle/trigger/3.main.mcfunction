@@ -12,12 +12,10 @@
 # 演出
     playsound minecraft:block.glass.break player @a ~ ~ ~ 1 0
 
-
-# 着弾地点にマーカー召喚
-    execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0172.icicle/trigger/4.block_check
-
-# タグを消す
-    tag @s remove Landing
-
-# スケジュール開始
-    schedule function asset:artifact/0172.icicle/trigger/laser/schedule 1t replace
+# Icicle Manager を召喚する
+    data modify storage api: Argument.ID set value 1069
+    data modify storage api: Argument.FieldOverride.DamagePerHit set value 500
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    data modify storage api: Argument.FieldOverride.WaitingTick set value 8
+    data modify storage api: Argument.FieldOverride.Range set value 16
+    execute rotated ~ 0 positioned ^ ^6 ^1 if block ~ ~ ~ #lib:no_collision run function api:object/summon
