@@ -5,8 +5,7 @@
 # @within function asset:artifact/0002.blessing/trigger/listener
 
 # エラー値
-    execute unless score @s 02.Trigger matches 1..5 run function lib:message/invalid_operation
-    execute if score @s 02.Trigger matches 5 run tellraw @a {"text":"既に上限に達しています","color":"red"}
+    execute unless score @s 02.Trigger matches 1..4 run function lib:message/invalid_operation
     execute unless score @s 02.Trigger matches 1..4 run function asset:artifact/0002.blessing/trigger/show_trigger_chat
 # 体力
     execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealth Global 2
@@ -27,6 +26,4 @@
     execute if score @s 02.Trigger matches 4 run scoreboard players add $02.Defense 02.SelectCount 1
     execute if score @s 02.Trigger matches 4 as @a run function api:modifier/defense/base/update_bonus
 # リセット
-    execute unless score @s 02.Trigger matches 5 run scoreboard players reset @s 02.Trigger
-# 選択上限に達しているステータスを選択したなら再度トリガー可能にする
-    execute if score @s 02.Trigger matches 5 run scoreboard players enable @s 02.Trigger
+    scoreboard players reset @s 02.Trigger

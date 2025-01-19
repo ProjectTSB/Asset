@@ -15,13 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"シェイキングスプラッシュ","color":"#00F7FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用時、炭酸弾を発射する。","color":"#7AF6FF"}','{"text":"スニークしながら使うと炭酸激流を発射する。","color":"#7AF6FF"}','{"text":"また、炭酸弾の着弾地点及び、","color":"#7AF6FF"}','{"text":"炭酸激流の通過地点周辺を消火する。","color":"#7AF6FF"}','{"text":"弾切れになってもリロードできる。","color":"#7AF6FF"}','{"text":"泡立つ蒼い液体が詰まった水鉄砲。","color":"#96DCFF"}','{"text":"中の液体は飲んでみると存外美味である。","color":"#96DCFF"}']
+    data modify storage asset:artifact Lore set value ['{"text":"炭酸弾を発射する。","color":"#7AF6FF"}','{"text":"スニーク時は炭酸激流を発射する。","color":"#7AF6FF"}','{"text":"発射した弾は火を消火できる。","color":"#7AF6FF"}','{"text":"弾切れになってもリロードできる。","color":"#7AF6FF"}','{"text":"泡立つ蒼い液体が詰まった水鉄砲。","color":"#96DCFF"}','{"text":"中の液体は飲んでみると存外美味である。","color":"#96DCFF"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 25
+    data modify storage asset:artifact RemainingCount set value 12
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [360,450]
+    data modify storage asset:artifact AttackInfo.Damage set value [220,320]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -41,11 +41,16 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value "???"
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 12
+    # data modify storage asset:artifact MPCost set value
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
+# MP回復量
+    data modify storage asset:artifact MPHealWhenHit set value 4
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 10
+    # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "longRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 15
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -53,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

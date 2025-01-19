@@ -16,13 +16,13 @@
 # 立方体範囲内のプレイヤーにtag付け
     data modify storage lib: args.dx set value 0.5
     data modify storage lib: args.dy set value 1.5
-    data modify storage lib: args.dz set value 30.0
+    data modify storage lib: args.dz set value 15.0
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..64]"
     execute positioned ^ ^-1 ^15 run function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージを与える
     # データ設定
-        data modify storage api: Argument.Damage set value 20.0f
+        data modify storage api: Argument.Damage set value 30.0f
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "None"
     # tag付けされたプレイヤーにダメージを与える

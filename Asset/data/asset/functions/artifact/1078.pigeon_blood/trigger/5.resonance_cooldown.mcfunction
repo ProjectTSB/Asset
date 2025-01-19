@@ -14,11 +14,11 @@
 # 差分を計算
     scoreboard players operation $TY.Cooldown Temporary -= @s TY.LatestResonanceTick
 
-# 差が20以上なら共鳴攻撃が発動
-    execute if score $TY.Cooldown Temporary matches 20.. run function asset:artifact/1078.pigeon_blood/trigger/resonance_attack/1.summon_entity
+# 差が35以上なら共鳴攻撃が発動
+    execute if score $TY.Cooldown Temporary matches 35.. rotated ~ 0 run function asset:artifact/1078.pigeon_blood/trigger/resonance_attack/1.summon_entity
 
 # 成功時にその時のtickを保存
-    execute if score $TY.Cooldown Temporary matches 20.. store result score @s TY.LatestResonanceTick run time query gametime
+    execute if score $TY.Cooldown Temporary matches 35.. store result score @s TY.LatestResonanceTick run time query gametime
 
 # リセット
     scoreboard players reset $TY.Cooldown Temporary

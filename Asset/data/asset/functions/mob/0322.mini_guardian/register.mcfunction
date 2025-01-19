@@ -17,4 +17,4 @@
     data modify storage asset:mob Health set value 3000
 
 # フィールド
-    data modify storage asset:mob Field.Damage set value 18f
+    data modify storage asset:mob Field.Damage set value 10f

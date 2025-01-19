@@ -15,7 +15,7 @@
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/3_0_triple_slash/play
 
 # アニメーション終了処理
-    execute if score @s AV.AnimationTick matches 81 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/end
+    execute if score @s AV.AnimationTick matches 91 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/end
 
 # 斬撃エフェクト1
     execute if score @s AV.AnimationTick matches 17 run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/slash_summon/1

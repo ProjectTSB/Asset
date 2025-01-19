@@ -10,6 +10,7 @@
 # かぐや姫装備がフルセットか確認
     function asset:artifact/0818.bhuddas_bowl/trigger/2.1.is_fullset
     execute if score $MQ.Fullset Temporary matches 0 run tag @s remove CanUsed
+    scoreboard players reset $MQ.Fullset Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0818.bhuddas_bowl/trigger/3.main

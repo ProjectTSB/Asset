@@ -27,7 +27,9 @@
     execute as @a[distance=..20] run function asset:artifact/1079.allochromatic/trigger/4.search_resonance
 
 # 反動
-    tp @s ~ ~ ~ ~ ~-1.5
+# 共鳴時に反動軽減
+    execute if entity @s[tag=!Resonance] run tp @s ~ ~ ~ ~ ~-4.5
+    execute if entity @s[tag=Resonance] run tp @s ~ ~ ~ ~ ~-1.5
 
 # デバッグ用共鳴Tag
     #tag @s add Resonance
@@ -42,7 +44,6 @@
     execute if entity @s[tag=MainHand] unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
     execute if entity @s[tag=!MainHand] unless data storage asset:context Items.offhand.id run data modify storage api: Argument.ID set value 1080
     execute if entity @s[tag=!MainHand] unless data storage asset:context Items.offhand.id run function api:artifact/give/from_id
-
 
 # リセット
     tag @s[tag=Resonance] remove Resonance

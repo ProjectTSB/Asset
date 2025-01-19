@@ -15,7 +15,7 @@
 
 # 近接で殴った相手にダメ
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 1200.0f
+    data modify storage lib: Argument.Damage set value 1550.0f
 # 第一属性
     data modify storage lib: Argument.AttackType set value "Physical"
 # 第二属性

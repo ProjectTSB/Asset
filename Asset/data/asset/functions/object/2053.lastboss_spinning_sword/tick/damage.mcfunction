@@ -6,8 +6,7 @@
 
 # 引数の設定
     # 与えるダメージ、待機時と開放時でダメージが違う
-        execute if entity @s[tag=!2053.Release] run data modify storage api: Argument.Damage set value 5.0f
-        execute if entity @s[tag=2053.Release] run data modify storage api: Argument.Damage set value 40.0f
+        data modify storage api: Argument.Damage set value 50.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
