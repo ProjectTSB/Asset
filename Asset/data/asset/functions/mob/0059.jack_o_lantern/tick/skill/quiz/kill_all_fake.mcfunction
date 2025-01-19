@@ -12,4 +12,4 @@
     execute at @e[type=husk,scores={MobID=224},distance=..50] run playsound entity.witch.celebrate hostile @a ~ ~ ~ 0.4 2 0
 
 # "確実に"消し去る
-    execute as @e[type=husk,scores={MobID=224}] run function api:mob/remove
+    execute as @e[type=husk,scores={MobID=224},distance=..128] run function api:mob/remove

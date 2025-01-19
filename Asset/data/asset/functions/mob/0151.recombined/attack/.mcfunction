@@ -7,18 +7,17 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
-# 演出
-    playsound minecraft:entity.ghast.hurt hostile @a ~ ~ ~ 0.3 1.6
-    playsound minecraft:entity.enderman.scream hostile @a ~ ~ ~ 0.4 2
-
 # ダメージ
-    data modify storage api: Argument.Damage set value 25f
+    data modify storage api: Argument.Damage set value 36f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @p[tag=Victim] run function api:damage/
     function api:damage/reset
+
+# 演出
+    playsound minecraft:entity.ghast.hurt hostile @a ~ ~ ~ 0.3 1.6
+    playsound minecraft:entity.enderman.scream hostile @a ~ ~ ~ 0.4 2
 
 # デバフを付与
     function api:global_vars/get_difficulty

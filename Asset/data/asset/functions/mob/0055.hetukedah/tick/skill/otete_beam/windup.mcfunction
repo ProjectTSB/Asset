@@ -7,7 +7,7 @@
 #   asset:mob/0055.hetukedah/tick/skill/otete_beam/tick_hard
 
 # こっち見る
-    execute facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
 # 演出
     particle minecraft:dust 1 1 0 2 ~ ~1 ~ 0.5 0.5 0.5 0 100 force @a[distance=..30]

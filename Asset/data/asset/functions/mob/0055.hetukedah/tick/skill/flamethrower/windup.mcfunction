@@ -11,7 +11,7 @@
     playsound minecraft:entity.ravager.celebrate hostile @a ~ ~ ~ 2 2
 
 # こっち見る
-    execute facing entity @p eyes run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
 
 # 右か左をランダムで選択
     execute if predicate lib:random_pass_per/50 run tag @s add 1J.Turn.Left

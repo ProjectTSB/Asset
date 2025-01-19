@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"盾雷のアクセサリー","color":"#FBFF80"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"近接攻撃をした対象に追加で雷魔法ダメージを与える"}','{"text":"祝福にて防御力を上げれば上げるほど"}','{"text":"与えるダメージが増える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象に防御力に比例したダメージを与える"}','{"text":"祝福の防御力バフに比例してダメージが上昇する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -26,10 +26,12 @@
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
+# 効果が重複可能か否か (boolean) (オプション)",
+    data modify storage asset:artifact EnableDuplication set value true
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["§eダメージ=100+(防御力)×6"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["§e100+防御力×6"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -41,11 +43,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 10
+    data modify storage asset:artifact MPCost set value 12
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 100
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -53,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

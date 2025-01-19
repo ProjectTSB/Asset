@@ -9,7 +9,7 @@
     # Scale : エフェクトの大きさ。[5f,5f,0.01f]がデフォルト。
     # Tick : 何Tick後にダメージを与えるかを指定する。ただしこのオブジェクトはあくまでも見た目だけなのでダメージ処理は自前で。
 
-# 外円にmergeを行う  
+# 外円にmergeを行う
     data modify storage asset:temp 2063.item.tag.display.color set from storage asset:context this.Color
     data modify storage asset:temp 2063.transformation.scale set from storage asset:context this.Scale
     data modify entity @s {} merge from storage asset:temp 2063

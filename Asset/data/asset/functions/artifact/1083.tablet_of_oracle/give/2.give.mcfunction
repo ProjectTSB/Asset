@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"神託の刻まれた石板","color":"#F0E265"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲のランダムな2名に","color":"white"}','{"text":"物理攻撃、物理耐性、魔法攻撃、魔法耐性の","color":"white"}','{"text":"各効果+8%のうちランダムな2つを16秒間付与する。","color":"white"}','{"text":"神の御言葉の刻まれている石板。","color":"gray"}','{"text":"神託には来たるべき未来が書かれている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲のランダムな2名に","color":"white"}','{"text":"物理攻撃、物理耐性、魔法攻撃、魔法耐性の","color":"white"}','{"text":"各効果+8%のうちランダムな2つを16秒間付与する。","color":"white"}','{"text":"神の御言葉の刻まれている石板。","color":"gray"}','{"text":"神託には来たるべき未来が書かれている。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 12
+    data modify storage asset:artifact MPCost set value 26
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 160
+    data modify storage asset:artifact LocalCooldown set value 400
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
