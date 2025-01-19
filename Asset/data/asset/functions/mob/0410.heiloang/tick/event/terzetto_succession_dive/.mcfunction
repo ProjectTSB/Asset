@@ -10,8 +10,8 @@
 # 予兆
     execute if score @s BE.EventTimer matches 1 as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_attack_position
     execute if score @s BE.EventTimer matches 20 as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionA] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_circle_0
-    execute if score @s BE.EventTimer matches 60 as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_circle_0
-    execute if score @s BE.EventTimer matches 100 as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_circle_0
+    execute if score @s BE.EventTimer matches 60 as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_circle_1
+    execute if score @s BE.EventTimer matches 100 as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/summon_circle_2
 
 # 連続ダイブ
     # 移動
