@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0024.darkness/_/tick",
         "asset:effect/0027.nausea/_/tick",
         "asset:effect/0026.mining_fatigue/_/tick",
         "asset:effect/0028.hunger/_/tick",
@@ -8,7 +9,6 @@
         "asset:effect/0205.convallatoxin/_/tick",
         "asset:effect/0618.soaked/_/tick",
         "asset:effect/0614.prominence_curse/_/tick",
-        "asset:effect/0124.darkness/_/tick",
         "asset:effect/0202.sheep_blessing/_/tick",
         "asset:effect/0204.void_transaction/_/tick",
         "asset:effect/0212.lunatic_moon/_/tick",
