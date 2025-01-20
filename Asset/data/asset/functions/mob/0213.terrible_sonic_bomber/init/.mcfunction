@@ -38,5 +38,8 @@
 #タイトルで何をやるか説明
     title @a[distance=..128] title {"text":"対空砲を守り敵を迎撃せよ","color":"white","bold":true}
 
+# 対空砲について説明を表示
+    tellraw @a[distance=..128] [{"translate": "[TIPS]対空砲は自動で天使を攻撃します。破壊された場合自動で修理され、プレイヤーは%1$sで修理の支援をできます。","with":[{"keybind":"key.sneak"}],"color": "yellow"}]
+
 # reset
     scoreboard players reset $initial_motion_end_time Temporary
