@@ -24,7 +24,8 @@
     # ターゲットを向く
         execute if score @s BF.EventTimer matches 90..319 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 攻撃範囲予告
-        execute if score @s BF.EventTimer matches 90..206 at @p[tag=BF.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/particle_attack_area
+        execute if score @s BF.EventTimer matches 90..206 at @p[tag=BF.MainTarget] run particle soul_fire_flame ~ ~0.3 ~ 0.1 0.1 0.1 0.2 2
+        execute if score @s BF.EventTimer matches 90..305 at @p[tag=BF.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/particle_attack_area
     # 発動
         # 1
             execute if score @s BF.EventTimer matches 211 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath

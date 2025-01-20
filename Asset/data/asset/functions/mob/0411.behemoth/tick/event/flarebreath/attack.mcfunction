@@ -121,3 +121,70 @@ particle smoke ^0 ^ ^44.64286 0.5 0.3 0.5 0.1 15
 particle smoke ^0 ^ ^46.42857 0.5 0.3 0.5 0.1 15
 particle smoke ^0 ^ ^48.21429 0.5 0.3 0.5 0.1 15
 particle smoke ^0 ^ ^50 0.5 0.3 0.5 0.1 15
+# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgIxEBsAzGQAwAsAtGQGZkDGLTA7AE4+LAbQoBWERTJxxTCbS7smYXBgCGAWwTJAW74ACCqrAx1AJy0BnJOC4B7PBghIATANzszdzTbAA3dRQ8HXAADyQGXCgIgF8Y3Ag7XwCgkLBwxEiwaMRxBjjcO3Z2SzhnTNwZAC80ODMI3DRLACE4GrqAUQBHPECUKABlUy44EkR2QNK4gF0gA_3
+# 線 1
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^0 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^1.78571 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^3.57143 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^5.35714 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^7.14286 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^8.92857 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^10.71429 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^12.5 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^14.28571 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^16.07143 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^17.85714 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^19.64286 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^21.42857 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^23.21429 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^25 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^26.78571 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^28.57143 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^30.35714 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^32.14286 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^33.92857 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^35.71429 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^37.5 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^39.28571 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^41.07143 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^42.85714 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^44.64286 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^46.42857 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^48.21429 2 2 2 0 3
+particle dust 0.09 0.455 0.569 3 ^0 ^1 ^50 2 2 2 0 3
+# [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgIxEBsAzGQAwAsAtGQGZkDGLTA7AE4+LAbQoBWERTJxxTCbS7smYXBgCGAWwTJAW74ACCqrAx1AJy0BnJOC4B7PBghIATANzszdzTbAA3dRQ8HXAADyQGXCgIgF8Y3Ag7XwCgkLBwxEiwaMRxBjjcO3Z2SzhnTNwZAC80ODMI3DRLACE4GrqAUQBHPECUKABlUy44EkR2QNK4gF0gA_3
+# 線 1
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^0 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^1.78571 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^3.57143 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^5.35714 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^7.14286 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^8.92857 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^10.71429 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^12.5 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^14.28571 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^16.07143 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^17.85714 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^19.64286 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^21.42857 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^23.21429 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^25 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^26.78571 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^28.57143 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^30.35714 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^32.14286 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^33.92857 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^35.71429 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^37.5 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^39.28571 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^41.07143 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^42.85714 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^44.64286 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^46.42857 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^48.21429 1 1 1 0 3
+particle dust 0.278 0.612 0.694 3 ^0 ^1 ^50 1 1 1 0 3
+
+# 演出
+    data modify storage api: Argument.ID set value 2179
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    function api:object/summon

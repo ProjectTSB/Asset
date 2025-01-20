@@ -4,9 +4,6 @@
 #
 # @within asset:mob/0411.behemoth/tick/event/terzetto_aligning/
 
-# 中心
-    particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.2 2
-
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwCcAzLQAwMAcAtAEbtwOsAsATJTitqAdl4BDVrQCs-GQEZ+DFADNG+MADsJAWwTJAYYoACBWAIwJGPQGck4FAHtCWiElrUCKOK7gZ7YABuEtiEBuAAHkgMBFDRAL7xBNakaIR2iJQENhBWbogxYHDY2GgwNgYKTMmOuRAGhWg2AKIlZRXNAI6EIdhQAMqW3uSIqiEViQC6QA_3
 # 円 1
     particle dust 0.655 0.161 0.1611 1 ^0 ^ ^-6 0 0 0 0 1
