@@ -18,7 +18,7 @@
     execute unless entity @s[x_rotation=75..90] as @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] run function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/print_defense_messages
 
 # 自身のステータス表示処理
-    execute if entity @s[x_rotation=75..90] run say a
+    execute if entity @s[x_rotation=75..90] run function asset:artifact/0001.book_of_all-seeing/trigger/see_player/
 
 # リセット
     tag @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] remove 01.Target
