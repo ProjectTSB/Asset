@@ -1,4 +1,4 @@
-#> asset:artifact/0001.book_of_all-seeing/trigger/print_defense_messages
+#> asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/print_defense_messages
 #
 # 実行者の情報を表示
 #
@@ -40,14 +40,14 @@
     # 物理耐性取得
         function api:modifier/defense/physical/get
         data modify storage asset:temp 01.Def set from storage api: Return.Defense.Physical
-        function asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+        function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
         data modify storage asset:temp 01.PhysicalDefense set from storage asset:temp 01.Def
         data remove storage asset:temp 01.Def
 
     # 魔法耐性取得
         function api:modifier/defense/magic/get
         data modify storage asset:temp 01.Def set from storage api: Return.Defense.Magic
-        function asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+        function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
         data modify storage asset:temp 01.MagicDefense set from storage asset:temp 01.Def
         data remove storage asset:temp 01.Def
 
@@ -58,21 +58,21 @@
     # 炎耐性取得
         function api:modifier/defense/fire/get
         data modify storage asset:temp 01.Def set from storage api: Return.Defense.Fire
-        function asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+        function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
         data modify storage asset:temp 01.FireDefense set from storage asset:temp 01.Def
         data remove storage asset:temp 01.Def
 
     # 水耐性取得
         function api:modifier/defense/water/get
         data modify storage asset:temp 01.Def set from storage api: Return.Defense.Water
-        function asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+        function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
         data modify storage asset:temp 01.WaterDefense set from storage asset:temp 01.Def
         data remove storage asset:temp 01.Def
 
     # 雷耐性取得
         function api:modifier/defense/thunder/get
         data modify storage asset:temp 01.Def set from storage api: Return.Defense.Thunder
-        function asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+        function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
         data modify storage asset:temp 01.ThunderDefense set from storage asset:temp 01.Def
         data remove storage asset:temp 01.Def
 

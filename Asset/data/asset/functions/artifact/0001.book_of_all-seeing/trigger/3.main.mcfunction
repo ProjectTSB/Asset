@@ -15,7 +15,7 @@
 
 # 表示処理
     tellraw @s [{"text":"\n[ ","color":"white"},{"selector":"@e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1]"},{"text":" ]\n","color":"white"}]
-    execute as @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] run function asset:artifact/0001.book_of_all-seeing/trigger/print_defense_messages
+    execute as @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] run function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/print_defense_messages
 
 # リセット
     tag @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] remove 01.Target
