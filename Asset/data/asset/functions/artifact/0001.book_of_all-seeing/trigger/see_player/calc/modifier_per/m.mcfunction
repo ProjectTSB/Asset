@@ -1,4 +1,4 @@
-#> asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m
+#> asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m
 #
 #
 #

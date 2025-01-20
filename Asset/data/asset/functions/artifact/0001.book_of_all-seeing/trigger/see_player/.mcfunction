@@ -24,23 +24,23 @@
     function api:modifier/mp_regen/get
 
 # doubleから(int)%の形に直す
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Base"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Physical"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Magic"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Fire"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Water"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Attack.Thunder"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Base"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Physical"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Magic"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Fire"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Water"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Attack.Thunder"}
 
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Base"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Physical"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Magic"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Fire"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Water"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/reverse.m {Type:"Defense.Thunder"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Base"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Physical"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Magic"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Fire"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Water"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/reverse.m {Type:"Defense.Thunder"}
 
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"Heal"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"ReceiveHeal"}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc_modifier_per/m {Type:"MPRegen"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"Heal"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"ReceiveHeal"}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/modifier_per/m {Type:"MPRegen"}
 
 # メッセージ表示
     tellraw @s [{"text":"攻撃 ("},{"storage":"asset:temp","nbt":"01.Attack.Base"},{"text":")"}]
