@@ -254,7 +254,6 @@
     #declare function lib:score_to_health_wrapper/set                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_health_wrapper/set.mcfunction#L1
     #declare function lib:score_to_move/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/score_to_move/.mcfunction#L1
     #declare function lib:spread_entity/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/spread_entity/.mcfunction#L1
-    #declare function minecraft:test                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/functions/test.mcfunction#L1
     #declare function minecraft:test2                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/functions/test2.mcfunction#L1
     #declare function minecraft:tests/absorption_api/test                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/functions/tests/absorption_api/test.mcfunction#L1
     #declare function mob_manager:fix_health                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/fix_health.mcfunction#L1
