@@ -17,5 +17,4 @@
 # ID (int)
     data modify storage asset:object ID set value 2071
 # フィールド(オプション)
-    data modify storage asset:object Field.Rotation set value [0.0f,0.0f]
     data modify storage asset:object Field.Speed set value 2
