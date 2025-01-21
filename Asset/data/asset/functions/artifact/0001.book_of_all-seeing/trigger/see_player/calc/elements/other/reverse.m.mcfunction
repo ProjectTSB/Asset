@@ -1,7 +1,9 @@
 #> asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/elements/other/reverse.m
 #
-#
-#
+# @input args:
+#   Type : String (Attack | Defense)
+#   AttackType : String (Physical | Magic)
+#   ElementType : String (Fire | Water | Thunder)
 # @within function asset:artifact/0001.book_of_all-seeing/trigger/see_player/
 
 #> Private
