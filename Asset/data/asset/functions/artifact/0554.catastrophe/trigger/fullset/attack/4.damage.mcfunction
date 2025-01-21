@@ -1,8 +1,8 @@
-#> asset:artifact/0554.catastrophe/trigger/fullset/attack/3.damage
+#> asset:artifact/0554.catastrophe/trigger/fullset/attack/4.damage
 #
 # Victimにダメージを与える
 #
-# @within function asset:artifact/0554.catastrophe/trigger/fullset/attack/2.main
+# @within function asset:artifact/0554.catastrophe/trigger/fullset/attack/3.damage_cooldown
 
 # 演出
     execute at @e[type=#lib:living,tag=Victim,distance=..32,limit=1] run particle soul_fire_flame ~ ~1.2 ~ 0.4 0.6 0.4 0 100 force @a
