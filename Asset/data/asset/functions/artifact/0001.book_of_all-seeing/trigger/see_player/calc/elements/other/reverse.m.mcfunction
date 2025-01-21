@@ -10,29 +10,29 @@
     #declare score_holder $01.Calc2
     #declare score_holder $01.Calc3
 
-# Baseを取得
+# Baseを取得 (e2)
     $execute store result score $01.Calc1 Temporary run data get storage api: Return.$(Type).Base 100
 
-# AttackTypeを取得
+# AttackTypeを取得 (e2)
     $execute store result score $01.Calc2 Temporary run data get storage api: Return.$(Type).$(AttackType) 100
 
-# ElementTypeを取得
+# ElementTypeを取得 (e2)
     $execute store result score $01.Calc3 Temporary run data get storage api: Return.$(Type).$(ElementType) 100
 
 # 計算
-# (Base * ((AttackType + ElementType) - 200)) / 100
+# -1 *(Base * ((AttackType + ElementType) - 200)) / 100
 
-# (AttackType + ElementType) - 200
+# (AttackType + ElementType) - 200 (e2)
     scoreboard players operation $01.Calc2 Temporary += $01.Calc3 Temporary
     scoreboard players remove $01.Calc2 Temporary 200
 
-# Base * ()
+# Base * () (e4)
     scoreboard players operation $01.Calc1 Temporary *= $01.Calc2 Temporary
 
-# -1 * ()
+# -1 * () (e4)
     scoreboard players operation $01.Calc1 Temporary *= $-1 Const
 
-# () / 100してstorageに代入
+# () / 100してstorageに代入 (e2)
     execute store result storage asset:temp 01.Val int 0.01 run scoreboard players get $01.Calc1 Temporary
     $data modify storage asset:temp 01.Type set value "$(Type).$(AttackType).$(ElementType)"
 
