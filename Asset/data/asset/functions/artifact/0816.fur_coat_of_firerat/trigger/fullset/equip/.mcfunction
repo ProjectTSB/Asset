@@ -1,9 +1,9 @@
-#> asset:artifact/0816.fur_coad_of_firerat/trigger/fullset/equip/
+#> asset:artifact/0816.fur_coat_of_firerat/trigger/fullset/equip/
 #
 # フルセット装備時の処理
 #
 # @within function
-#   asset:artifact/0816.fur_coad_of_firerat/trigger/3.main
+#   asset:artifact/0816.fur_coat_of_firerat/trigger/3.main
 #   asset:artifact/0817.dragons_neck_ball/trigger/3.main
 #   asset:artifact/0818.bhuddas_bowl/trigger/3.main
 #   asset:artifact/0819.swallows_cowry/trigger/3.main

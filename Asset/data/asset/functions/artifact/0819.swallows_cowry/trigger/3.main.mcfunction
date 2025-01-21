@@ -10,4 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # フルセット
-    execute if data storage asset:context id.all{head:817,chest:816,legs:818,feet:819} run function asset:artifact/0816.fur_coad_of_firerat/trigger/fullset/equip/
+    execute if data storage asset:context id.all{head:817,chest:816,legs:818,feet:819} run function asset:artifact/0816.fur_coat_of_firerat/trigger/fullset/equip/
