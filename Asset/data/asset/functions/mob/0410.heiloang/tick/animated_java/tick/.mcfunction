@@ -49,3 +49,6 @@
 # ヘイルディザスター
     execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster_cast.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster_cast
     execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster
+
+# 召喚
+    execute if entity @s[tag=aj.heiloang_aj.animation.13_summon.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/13_summon

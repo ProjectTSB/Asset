@@ -19,9 +19,9 @@
         execute if score @s BE.EventTimer matches 250 at @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] run tp @s ~ ~ ~ ~ 0
         execute if score @s BE.EventTimer matches 290 at @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] run tp @s ~ ~ ~ ~ 0
     # 予兆
-        execute if score @s BE.EventTimer matches 210 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction
-        execute if score @s BE.EventTimer matches 250 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction
-        execute if score @s BE.EventTimer matches 290 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction
+        execute if score @s BE.EventTimer matches 210 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_0
+        execute if score @s BE.EventTimer matches 250 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_1
+        execute if score @s BE.EventTimer matches 290 at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_2
     # アニメーション再生
         execute if score @s BE.EventTimer matches 215 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/7_2_dive
         execute if score @s BE.EventTimer matches 255 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/7_2_dive
