@@ -22,4 +22,4 @@
     execute if score @s 29.SnowTick matches 60.. run function asset:mob/0081.snow_cloud/tick/snowing
 
 # 近くにプレイヤーがいない場合は奈落行き
-    execute unless entity @a[gamemode=!spectator,distance=..30] run tp @s ~ -999 ~
+    execute unless entity @a[gamemode=!spectator,distance=..30] run function api:mob/remove
