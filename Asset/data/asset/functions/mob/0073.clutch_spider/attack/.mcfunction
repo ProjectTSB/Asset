@@ -9,8 +9,6 @@
 
 # 演出
     execute at @p[tag=Victim] run particle poof ~ ~ ~ 0 0 0 0.2 10 normal
-# 効果
-    effect give @p[tag=Victim] slowness 7 0
 
 # ダメージ設定
     data modify storage api: Argument.Damage set value 20.0f
@@ -19,3 +17,10 @@
     function api:damage/modifier
     execute as @p[tag=Victim] run function api:damage/
     function api:damage/reset
+
+# 移動速度低下
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:17,Duration:140}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
