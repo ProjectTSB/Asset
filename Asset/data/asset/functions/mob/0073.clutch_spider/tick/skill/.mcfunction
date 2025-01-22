@@ -1,4 +1,4 @@
-#> asset:mob/0073.clutch_spider/tick/2.1.skill
+#> asset:mob/0073.clutch_spider/tick/skill/
 #
 # 発動時
 #
@@ -8,7 +8,7 @@
     playsound minecraft:entity.arrow.shoot hostile @a ~ ~ ~ 1 1
 
 # 発動する
-    function asset:mob/0073.clutch_spider/tick/2.3.shot
+    function asset:mob/0073.clutch_spider/tick/skill/shot
 
 # タグを消す
     tag @s remove Landing

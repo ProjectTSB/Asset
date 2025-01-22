@@ -1,10 +1,10 @@
-#> asset:mob/0073.clutch_spider/tick/2.3.shot
+#> asset:mob/0073.clutch_spider/tick/skill/shot
 #
 #
 #
 # @within function
-#   asset:mob/0073.clutch_spider/tick/2.1.skill
-#   asset:mob/0073.clutch_spider/tick/2.3.shot
+#   asset:mob/0073.clutch_spider/tick/skill/
+#   asset:mob/0073.clutch_spider/tick/skill/shot
 
 # 着弾検知
     execute unless block ^ ^ ^2 #lib:no_collision run tag @s add Landing
@@ -15,7 +15,7 @@
     particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0 6
 
 # 着弾
-    execute if entity @s[tag=Landing] run function asset:mob/0073.clutch_spider/tick/2.2.landing
+    execute if entity @s[tag=Landing] run function asset:mob/0073.clutch_spider/tick/skill/landing
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0073.clutch_spider/tick/2.3.shot
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0073.clutch_spider/tick/skill/shot

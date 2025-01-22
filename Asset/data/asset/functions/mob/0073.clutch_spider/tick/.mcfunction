@@ -8,4 +8,4 @@
     execute positioned ^ ^ ^10 if entity @p[gamemode=!spectator,distance=..10] run scoreboard players add @s General.Mob.Tick 1
 
 # 発動
-    execute if score @s General.Mob.Tick matches 80.. if entity @p[gamemode=!spectator,distance=..30] positioned ~ ~0.5 ~ run function asset:mob/0073.clutch_spider/tick/2.1.skill
+    execute if score @s General.Mob.Tick matches 80.. if entity @p[gamemode=!spectator,distance=..30] positioned ~ ~0.5 ~ run function asset:mob/0073.clutch_spider/tick/skill/
