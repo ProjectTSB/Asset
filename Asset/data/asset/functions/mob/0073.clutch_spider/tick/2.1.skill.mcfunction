@@ -15,4 +15,4 @@
     tag @s remove Landing
 
 # スコアを戻す
-    scoreboard players reset @s 21.Time
+    scoreboard players reset @s General.Mob.Tick
