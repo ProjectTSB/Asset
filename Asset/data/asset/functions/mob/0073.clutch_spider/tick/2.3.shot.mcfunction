@@ -11,7 +11,6 @@
     execute if entity @p[gamemode=!spectator,distance=..3] run tag @s add Landing
     execute if entity @p[gamemode=!spectator,distance=..3] at @p[gamemode=!spectator,distance=..3] run particle cloud ~ ~1.5 ~ 0.6 0.4 0.6 0 30 normal @a
 
-
 # 演出
     particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0 6
 

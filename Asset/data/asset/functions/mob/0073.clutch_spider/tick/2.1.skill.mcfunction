@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0073.clutch_spider/tick/
 
-
 # 演出
     playsound minecraft:entity.arrow.shoot hostile @a ~ ~ ~ 1 1
 

@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/alias/73/tick
 
-
 # スコアを増やす
     execute positioned ^ ^ ^10 if entity @p[distance=..10] run scoreboard players add @s General.Mob.Tick 1
 
