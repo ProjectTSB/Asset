@@ -1,6 +1,6 @@
 #> asset:mob/0166.flying_potion/attack/debuff/slowness
 #
-# 鈍足
+# 移動速度低下
 #
 # @within function asset:mob/0166.flying_potion/attack/
 
