@@ -1,8 +1,8 @@
 #> asset:mob/0081.snow_cloud/tick/snow_damage
 #
+# ダメージ処理
 #
-#
-# @within function asset:mob/0081.snow_cloud/tick/recursion
+# @within function asset:mob/0081.snow_cloud/tick/check_block
 
 # 粉雪が積もる
     execute if entity @s[gamemode=survival] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
