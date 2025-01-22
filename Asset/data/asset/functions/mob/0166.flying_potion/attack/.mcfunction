@@ -11,23 +11,21 @@
 # @private
     #declare score_holder $Random
 
-# 効果
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $8 Const
-    # 効果を与える
-        execute if score $Random Temporary matches 0 run function asset:mob/0166.flying_potion/attack/debuff/darkness
-        execute if score $Random Temporary matches 1 run function asset:mob/0166.flying_potion/attack/debuff/poison
-        execute if score $Random Temporary matches 2 run function asset:mob/0166.flying_potion/attack/debuff/slowness
-        execute if score $Random Temporary matches 3 run function asset:mob/0166.flying_potion/attack/debuff/attack_base_debuff
-        execute if score $Random Temporary matches 4 run function asset:mob/0166.flying_potion/attack/debuff/hunger
-        execute if score $Random Temporary matches 5 run function asset:mob/0166.flying_potion/attack/debuff/nausea
-        execute if score $Random Temporary matches 6 run function asset:mob/0166.flying_potion/attack/debuff/damage
-        execute if score $Random Temporary matches 7 run function asset:mob/0166.flying_potion/attack/debuff/mining_fatigue
-
-    # リセット
-        scoreboard players reset $Random Temporary
+# デバフ
+# スタックのあるものは難易度比例でスタックが伸びる
+# スタックのないものは難易度比例で効果時間が伸びる
+# ダメージはinstant_damageの再現
+    execute store result score $Random Temporary run function lib:random/
+    scoreboard players operation $Random Temporary %= $8 Const
+    execute if score $Random Temporary matches 0 run function asset:mob/0166.flying_potion/attack/debuff/darkness
+    execute if score $Random Temporary matches 1 run function asset:mob/0166.flying_potion/attack/debuff/poison
+    execute if score $Random Temporary matches 2 run function asset:mob/0166.flying_potion/attack/debuff/slowness
+    execute if score $Random Temporary matches 3 run function asset:mob/0166.flying_potion/attack/debuff/attack_base_debuff
+    execute if score $Random Temporary matches 4 run function asset:mob/0166.flying_potion/attack/debuff/hunger
+    execute if score $Random Temporary matches 5 run function asset:mob/0166.flying_potion/attack/debuff/nausea
+    execute if score $Random Temporary matches 6 run function asset:mob/0166.flying_potion/attack/debuff/damage
+    execute if score $Random Temporary matches 7 run function asset:mob/0166.flying_potion/attack/debuff/mining_fatigue
+    scoreboard players reset $Random Temporary
 
 # 演出
     particle minecraft:dragon_breath ~ ~ ~ 0 0 0 0.1 100
