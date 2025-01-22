@@ -39,4 +39,4 @@
     effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
 
 # ハード以上かつ破壊可能エリアなら粉雪を設置
-    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/normal at @p[gamemode=survival,tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/normal at @p[tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
