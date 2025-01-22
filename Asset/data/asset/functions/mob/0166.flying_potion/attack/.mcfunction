@@ -24,7 +24,7 @@
         execute if score $Random Temporary matches 4 run function asset:mob/0166.flying_potion/attack/debuff/hunger
         execute if score $Random Temporary matches 5 run function asset:mob/0166.flying_potion/attack/debuff/nausea
         execute if score $Random Temporary matches 6 run function asset:mob/0166.flying_potion/attack/debuff/damage
-        execute if score $Random Temporary matches 6 run function asset:mob/0166.flying_potion/attack/debuff/mining_fatigue
+        execute if score $Random Temporary matches 7 run function asset:mob/0166.flying_potion/attack/debuff/mining_fatigue
 
     # リセット
         scoreboard players reset $Random Temporary
