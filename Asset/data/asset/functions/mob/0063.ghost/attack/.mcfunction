@@ -15,7 +15,7 @@
     data modify storage api: Argument.Damage set value 2.5f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
-    execute as @a[tag=Victim] run function api:damage/
+    execute as @p[tag=Victim] run function api:damage/
     function api:damage/reset
 
 # 暗闇を1秒付与
