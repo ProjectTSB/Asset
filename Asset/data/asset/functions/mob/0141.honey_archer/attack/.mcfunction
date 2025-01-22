@@ -22,8 +22,23 @@
     execute as @p[tag=Victim,distance=..32] run function api:damage/
     function api:damage/reset
 
-# デバフ
-    effect give @p[tag=Victim,distance=..32] slowness 3 1 true
-    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @p[tag=Victim,distance=..32] poison 3 1 true
+# 移動速度低下
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:17,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
+# 採掘速度低下
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:26,Duration:60}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 毒
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:29,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
