@@ -12,11 +12,11 @@
     execute at @p[tag=Victim] run playsound entity.squid.death hostile @a ~ ~ ~
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 2.5f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    function lib:damage/modifier
-    execute as @p[tag=Victim] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 2.5f
+    data modify storage api: Argument.AttackType set value "Magic"
+    function api:damage/modifier
+    execute as @p[tag=Victim] run function api:damage/
+    function api:damage/reset
 
 # 暗闇を1秒付与
     data modify storage api: Argument set value {ID:24,Duration:20}
