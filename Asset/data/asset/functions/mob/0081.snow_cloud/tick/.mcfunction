@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/81/tick
 
 # プレイヤーが下にいる場合動くコマンド(スコア蓄積、雪が降るパーティクル)
-    execute positioned ~-0.75 ~-6 ~-0.75 if entity @a[gamemode=!spectator,dx=1.5,dy=6,dz=1.5] run function asset:mob/0081.snow_cloud/tick/3.near_player
+    execute positioned ~-0.75 ~-6 ~-0.75 if entity @a[gamemode=!spectator,dx=1.5,dy=6,dz=1.5] run function asset:mob/0081.snow_cloud/tick/near_player
 
 # パーティクル
     particle snowflake ~ ~ ~ 0.6 0.3 0.6 0 2 normal @a
@@ -21,7 +21,7 @@
     execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..3] run effect give @a[tag=!PlayerShouldInvulnerable,distance=..3] slowness 1 1 true
 
 # 一定周期の特殊能力(分岐functionに記載)
-    execute if score @s 29.SnowTick matches 60.. run function asset:mob/0081.snow_cloud/tick/5.snowing
+    execute if score @s 29.SnowTick matches 60.. run function asset:mob/0081.snow_cloud/tick/snowing
 
 # 近くにプレイヤーがいない場合は奈落行き
     execute unless entity @a[gamemode=!spectator,distance=..30] run tp @s ~ -999 ~
