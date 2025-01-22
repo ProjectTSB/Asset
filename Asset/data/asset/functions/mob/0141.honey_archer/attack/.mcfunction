@@ -12,11 +12,6 @@
     execute at @p[tag=Victim,distance=..32] run particle dust 1.000 0.741 0.141 1.3 ~ ~1.2 ~ 0.5 0.4 0.5 0 20 normal
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:block.honey_block.place hostile @a ~ ~ ~ 0.7 1 0
 
-# デバフ
-    effect give @p[tag=Victim,distance=..32] slowness 3 1 true
-    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @p[tag=Victim,distance=..32] poison 3 1 true
-
 # ダメージ
     data modify storage api: Argument.Damage set value 31.5f
     data modify storage api: Argument.AttackType set value "Magic"
@@ -26,3 +21,9 @@
     function api:damage/modifier
     execute as @p[tag=Victim,distance=..32] run function api:damage/
     function api:damage/reset
+
+# デバフ
+    effect give @p[tag=Victim,distance=..32] slowness 3 1 true
+    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
+    execute if predicate api:global_vars/difficulty/min/normal run effect give @p[tag=Victim,distance=..32] poison 3 1 true
+
