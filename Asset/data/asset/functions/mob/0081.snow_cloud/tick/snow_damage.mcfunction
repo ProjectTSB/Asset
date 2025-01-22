@@ -24,6 +24,7 @@
     execute if predicate api:global_vars/difficulty/easy run return 0
 
 # ハード以上でデバフ
+    function api:global_vars/get_difficulty
 # 鈍足
     data modify storage api: Argument set value {ID:17,Duration:60}
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
