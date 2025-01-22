@@ -10,10 +10,6 @@
 # 音
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 0.3 1.5 0
 
-# 重めのデバフ
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @s slowness 4 2 true
-    effect give @s mining_fatigue 4 2 true
-
 # ダメージ
     data modify storage api: Argument.Damage set value 14f
     data modify storage api: Argument.AttackType set value "Magic"
@@ -23,3 +19,20 @@
     execute as @e[type=polar_bear,tag=this,scores={MobID=81},distance=..8,limit=1] run function api:damage/modifier
     execute if entity @s[tag=!PlayerShouldInvulnerable] run function api:damage/
     function api:damage/reset
+
+# ノーマルならreturn
+    execute if predicate api:global_vars/difficulty/easy run return 0
+
+# デバフ
+
+# 鈍足
+    data modify storage api: Argument set value {ID:17,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 採掘速度低下
+    data modify storage api: Argument set value {ID:26,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
