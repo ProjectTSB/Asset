@@ -5,7 +5,7 @@
 # @within function asset:mob/0081.snow_cloud/tick/check_block
 
 # 粉雪が積もる
-    execute if entity @s[gamemode=survival] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
+    execute if predicate api:area/is_breakable run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
 
 # 音
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 0.3 1.5 0
