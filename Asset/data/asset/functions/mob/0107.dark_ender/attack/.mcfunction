@@ -18,5 +18,7 @@
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle portal ~ ~1.2 ~ 1 1 1 1 60 normal @a
 
-# 盲目付与
-    effect give @p[tag=Victim,distance=..6] blindness 3 0 true
+# 暗闇を3秒付与
+    data modify storage api: Argument set value {ID:24,Duration:60}
+    execute as @p[tag=Victim,distance=..6] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
