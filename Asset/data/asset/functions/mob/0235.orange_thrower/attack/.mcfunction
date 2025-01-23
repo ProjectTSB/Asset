@@ -12,10 +12,6 @@
     execute at @p[tag=Victim,distance=..6] run playsound entity.item.pickup hostile @a ~ ~ ~ 1 0.5 0
     execute at @p[tag=Victim,distance=..6] run playsound entity.generic.explode hostile @a ~ ~ ~ 0.3 1 0
 
-# 効果
-    effect give @p[tag=Victim,distance=..6] saturation 3 0 true
-    effect give @p[tag=Victim,distance=..6] slowness 3 2 true
-
 # ダメージ
     data modify storage api: Argument.Damage set value 21f
     data modify storage api: Argument.AttackType set value "Physical"
@@ -25,3 +21,14 @@
     function api:damage/modifier
     execute as @p[tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
+
+# バフデバフ
+# バフの扱いはどうするかは未来に託す
+    effect give @p[tag=Victim,distance=..6] saturation 3 0 true
+
+# 移動速度低下
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:17,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..6] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
