@@ -1,4 +1,4 @@
-#> asset:mob/0176.killer_bee/tick/3.damage
+#> asset:mob/0176.killer_bee/tick/damage
 #
 #
 #
