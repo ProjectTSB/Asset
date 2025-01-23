@@ -25,12 +25,6 @@
 # 難易度比例のデバフ
     function api:global_vars/get_difficulty
 
-# 移動速度低下
-    data modify storage api: Argument set value {ID:17,Duration:60}
-    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
-    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
-
 # 採掘速度低下
     data modify storage api: Argument set value {ID:26,Duration:60}
     execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
@@ -39,6 +33,12 @@
 
 # 毒
     data modify storage api: Argument set value {ID:29,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 移動速度低下
+    data modify storage api: Argument set value {ID:17,Duration:60}
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
