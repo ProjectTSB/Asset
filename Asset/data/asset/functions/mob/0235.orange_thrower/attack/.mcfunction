@@ -7,7 +7,6 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
 # 演出
     execute at @p[tag=Victim,distance=..6] run particle block orange_concrete ~ ~1.2 ~ 0.5 0.5 0.5 0 100 normal @a
     execute at @p[tag=Victim,distance=..6] run playsound entity.item.pickup hostile @a ~ ~ ~ 1 0.5 0
