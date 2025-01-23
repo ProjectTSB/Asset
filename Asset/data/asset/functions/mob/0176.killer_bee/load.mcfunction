@@ -1,4 +1,4 @@
-#> asset:mob/0176.killer_bee/0.load
+#> asset:mob/0176.killer_bee/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
