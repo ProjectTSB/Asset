@@ -12,11 +12,6 @@
     execute at @p[tag=Victim,distance=..32] run particle dust 1.000 0.741 0.141 1.3 ~ ~1.2 ~ 0.5 0.4 0.5 0 20 normal
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:block.honey_block.place hostile @a ~ ~ ~ 0.7 1 0
 
-# デバフ
-    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
-    effect give @p[tag=Victim,distance=..32] poison 3 1 true
-    effect give @p[tag=Victim,distance=..32] slow_falling 3 1 true
-
 # ダメージ
     data modify storage api: Argument.Damage set value 31f
     data modify storage api: Argument.AttackType set value "Magic"
@@ -26,3 +21,24 @@
     function api:damage/modifier
     execute as @p[tag=Victim,distance=..32] run function api:damage/
     function api:damage/reset
+
+# 難易度比例のデバフ
+    function api:global_vars/get_difficulty
+
+# 採掘速度低下
+    data modify storage api: Argument set value {ID:26,Duration:60}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 毒
+    data modify storage api: Argument set value {ID:29,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 低速落下
+# 低速落下はスタックがないため難易度による変動はなし
+    data modify storage api: Argument set value {ID:31,Duration:60}
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
