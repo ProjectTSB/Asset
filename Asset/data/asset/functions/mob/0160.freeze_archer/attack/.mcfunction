@@ -7,7 +7,6 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
 # 演出
     execute at @p[tag=Victim,distance=..32] run particle dust 1 1000000000 1000000000 1 ~ ~1.2 ~ 0.5 0.4 0.5 1 40 normal @a
     execute at @p[tag=Victim,distance=..32] run playsound block.glass.break hostile @a ~ ~ ~ 0.7 2
