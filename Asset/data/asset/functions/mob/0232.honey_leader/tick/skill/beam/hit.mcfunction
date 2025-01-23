@@ -18,6 +18,9 @@
     function api:damage/
     function api:damage/reset
 
+# 難易度比例のデバフ
+    function api:global_vars/get_difficulty
+
 # 採掘速度低下
     data modify storage api: Argument set value {ID:26,Duration:60}
     execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
