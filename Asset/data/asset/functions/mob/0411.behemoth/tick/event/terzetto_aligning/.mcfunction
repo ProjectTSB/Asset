@@ -52,7 +52,6 @@
 # 後半
     # 移動
         # アニメーション再生
-            execute if score @s BF.EventTimer matches 401 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
             execute if score @s BF.EventTimer matches 430 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
         # ヘイローン、ティアマットの対角に移動
             execute if score @s BF.EventTimer matches 426 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^ ~ 0
