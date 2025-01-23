@@ -16,8 +16,20 @@
     execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] run function api:damage/
     function api:damage/reset
 
-    effect give @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] poison 5 1
-    effect give @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] slowness 10 3
+# デバフ
+    function api:global_vars/get_difficulty
+
+# 移動速度低下
+    data modify storage api: Argument set value {ID:17,Duration:200}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 毒
+    data modify storage api: Argument set value {ID:29,Duration:100}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 音
     playsound entity.elder_guardian.curse hostile @a[tag=!PlayerShouldInvulnerable,distance=..5] ~ ~ ~ 1 1 1
