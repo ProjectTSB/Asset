@@ -9,6 +9,8 @@
 #    function asset:mob/0410.heiloang/tick/event/tempest/
 #    function asset:mob/0410.heiloang/tick/event/terzetto_disaster/
 #    function asset:mob/0410.heiloang/tick/event/terzetto_aligning_start/
+#   function asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/
+#   function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/
 #    function asset:mob/0410.heiloang/tick/event/terzetto_aligning/
 
 # 再生

@@ -121,6 +121,8 @@
     #declare tag BE.Skill.Ter.Dis.Start テルツェット・ディザスター開始
     #declare tag BE.Skill.Ter.Dis テルツェット・ディザスター
     #declare tag BE.Skill.Ter.Alig.Start テルツェット・アライニング開始
+    #declare tag BE.Skill.Ter.Alig.A テルツェット・アライニング前半 周囲先行
+    #declare tag BE.Skill.Ter.Alig.B テルツェット・アライニング前半 十字先行
     #declare tag BE.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
@@ -142,6 +144,8 @@
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Blitz.SummonPosition リヒトブリッツェン召喚位置
     #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターンB
+    #declare tag BE.Temp.Blitz.AligA リヒトブリッツェン アライニングAパターン
+    #declare tag BE.Temp.Blitz.AligB リヒトブリッツェン アライニングBパターン
     #declare tag BE.Temp.Flare.SummonPosition フレア召喚位置
     #declare tag BE.Temp.Flare.SummonPosition.Hard 追加フレア召喚位置
     #declare tag BE.Temp.Plamet.SummonPosition 急降下の追撃召喚位置

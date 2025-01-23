@@ -1,8 +1,8 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_aligning/prediction
+#> asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/prediction
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0410.heiloang/tick/event/terzetto_aligning/attack_main
+# @within asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/attack_main
 
 # 回転
     tp @s ~ ~ ~ ~ 0

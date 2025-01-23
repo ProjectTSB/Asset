@@ -48,6 +48,7 @@
 
 # テルツェット・アライニング
     execute if entity @s[tag=BE.Skill.Ter.Alig.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_start/
+    execute if entity @s[tag=BE.Skill.Ter.Alig.A] run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/
     execute if entity @s[tag=BE.Skill.Ter.Alig] run function asset:mob/0410.heiloang/tick/event/terzetto_aligning/
 
 ## P4
