@@ -1,4 +1,4 @@
-#> asset:mob/0186.ferocious_bee/0.load
+#> asset:mob/0186.ferocious_bee/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
