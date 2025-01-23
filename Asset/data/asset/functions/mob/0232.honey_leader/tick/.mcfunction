@@ -8,16 +8,13 @@
     effect give @s glowing infinite 0 true
 
 # スキルスコア
-    scoreboard players add @s 6G.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # スキルを選択
-    execute if entity @s[scores={6G.Tick=0}] run function asset:mob/0232.honey_leader/tick/3.skill_select
+    execute if entity @s[scores={General.Mob.Tick=0}] positioned ^ ^ ^16 if entity @p[gamemode=!spectator,distance=..16] if predicate lib:random_pass_per/70 run tag @s add 6G.Beam
 
 # 周囲にバフ&回復
-    execute if entity @s[scores={6G.SkillSelect=0}] run function asset:mob/0232.honey_leader/tick/4.buff_and_heal
+    execute if entity @s[tag=!6G.Beam,scores={General.Mob.Tick=0}] run function asset:mob/0232.honey_leader/tick/skill/buff_and_heal
 
-# ビームの予備動作演出
-    execute if entity @s[scores={6G.SkillSelect=1,6G.Tick=0}] anchored eyes positioned ^ ^ ^0.3 run function asset:mob/0232.honey_leader/tick/5.ready_beam
-
-# ビーム発射とリセット
-    execute if entity @s[scores={6G.SkillSelect=1,6G.Tick=10..}] run function asset:mob/0232.honey_leader/tick/6.shoot_and_reset
+# ビーム
+    execute if entity @s[tag=!6G.Beam,scores={General.Mob.Tick=0}] anchored eyes positioned ^ ^ ^0.3 run function asset:mob/0232.honey_leader/tick/skill/beam/
