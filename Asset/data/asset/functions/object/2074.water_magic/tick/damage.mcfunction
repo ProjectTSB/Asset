@@ -21,8 +21,8 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.25] positioned ~-2.25 ~-1.5 ~-2.25 if entity @s[dx=3.5,dy=2,dz=3.5] run function api:damage/
     function api:damage/reset
 
-# Slowness:falseならreturn
-    execute if data storage asset:context this{Slowness:false} run return 0
+# Slowness:trueでなければreturn
+    execute unless data storage asset:context this{Slowness:true} run return 0
 
 # Slowness:trueなら移動速度低下を付与
     data modify storage api: Argument set value {ID:17,Stack:9,Duration:15}
