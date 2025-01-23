@@ -4,8 +4,6 @@
 #
 # @within asset:object/alias/2071/hit_entity
 
-tellraw @a {"storage":"asset:context","nbt":"this"}
-
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
