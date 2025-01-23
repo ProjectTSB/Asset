@@ -1,4 +1,4 @@
-#> asset:mob/0233.honey_flyer/tick/3.motion
+#> asset:mob/0233.honey_flyer/tick/motion
 #
 #
 #
