@@ -18,10 +18,17 @@
     function api:damage/
     function api:damage/reset
 
-# デバフ
-    effect give @s mining_fatigue 3 1 true
-    execute if predicate api:global_vars/difficulty/max/normal run effect give @s poison 3 1 true
-    execute if predicate api:global_vars/difficulty/min/hard run effect give @s wither 3 1 true
+# 採掘速度低下
+    data modify storage api: Argument set value {ID:26,Duration:60}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 毒
+    data modify storage api: Argument set value {ID:29,Duration:60}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # リセット処理
     tag @s remove LandingTarget
