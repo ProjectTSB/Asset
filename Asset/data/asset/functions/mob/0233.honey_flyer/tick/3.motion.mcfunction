@@ -32,4 +32,4 @@
 # タグを消す
     tag @a remove Target
 # スコアを消す
-    scoreboard players reset @s 6H.Tick
+    scoreboard players reset @s General.Mob.Tick
