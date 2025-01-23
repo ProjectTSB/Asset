@@ -36,4 +36,4 @@
 # カベにぶつかった際の処理はない。壁は貫通するもの
 
 # デスポーン処理
-    execute unless entity @p[distance=..40] run function asset:mob/0176.killer_bee/tick/remove
+    execute unless entity @p[distance=..40] run function api:mob/remove
