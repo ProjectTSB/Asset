@@ -17,4 +17,4 @@
     execute if entity @s[tag=!6G.Beam,scores={General.Mob.Tick=0}] run function asset:mob/0232.honey_leader/tick/skill/buff_and_heal
 
 # ビーム
-    execute if entity @s[tag=!6G.Beam,scores={General.Mob.Tick=0}] anchored eyes positioned ^ ^ ^0.3 run function asset:mob/0232.honey_leader/tick/skill/beam/
+    execute if entity @s[tag=!6G.Beam,scores={General.Mob.Tick=0}] run function asset:mob/0232.honey_leader/tick/skill/beam/
