@@ -11,9 +11,6 @@
     execute at @p[tag=Victim,distance=..6] run particle dust 1 1000000000 1000000000 1 ~ ~1.2 ~ 0.5 0.4 0.5 1 40 normal @a
     execute at @p[tag=Victim,distance=..6] run playsound block.glass.break hostile @a ~ ~ ~ 0.7 2
 
-# 鈍足付与
-    effect give @p[tag=Victim,distance=..6] slowness 3 2 true
-
 # ダメージ
     data modify storage api: Argument.Damage set value 41f
     data modify storage api: Argument.AttackType set value "Physical"
@@ -23,3 +20,11 @@
     function api:damage/modifier
     execute as @p[tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
+
+# 移動速度低下
+# Stack = Difficulty * 3 - 1
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:17,Duration:60}
+    execute store result storage api: Argument.Stack int 0.9999999999 run data get storage api: Return.Difficulty 3
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
