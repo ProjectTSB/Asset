@@ -1,4 +1,4 @@
-#> asset:mob/0186.ferocious_bee/tick/3.damage
+#> asset:mob/0186.ferocious_bee/tick/damage
 #
 #
 #
