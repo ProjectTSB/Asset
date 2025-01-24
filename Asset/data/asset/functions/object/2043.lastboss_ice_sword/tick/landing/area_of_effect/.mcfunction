@@ -9,6 +9,10 @@
     #declare score_holder $ParticleInterval
     #declare score_holder $DamageInterval
 
+# 実行時間を移す
+    scoreboard players operation $ParticleInterval Temporary = @s General.Object.Tick
+    scoreboard players operation $DamageInterval Temporary = @s General.Object.Tick
+
 # パーティクル
     scoreboard players operation $ParticleInterval Temporary %= $9 Const
     execute positioned ~ ~ ~ rotated 0 0 if score $ParticleInterval Temporary matches 0 run function asset:object/2043.lastboss_ice_sword/tick/landing/area_of_effect/particle/
