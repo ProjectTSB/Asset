@@ -35,7 +35,7 @@
 
 
 # ダメージ設定
-    # 与えるダメージ = 900
+    # 与えるダメージ
         data modify storage lib: Argument.Damage set value 610f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
@@ -43,7 +43,7 @@
         function lib:damage/modifier
         execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
 
-# 自身に5の防御貫通ダメージを与える
+# 自身に防御貫通ダメージを与える
     # ダメージ量
         data modify storage lib: Argument.Damage set value 6.0f
     # 第一属性
