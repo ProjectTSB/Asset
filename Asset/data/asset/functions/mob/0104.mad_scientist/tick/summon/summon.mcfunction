@@ -12,19 +12,19 @@
     #declare score_holder $MPReduceVal
 
 # 属性ごとのダメージ
-    execute if data storage asset:context this{Element:Fire} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Fire
-    execute if data storage asset:context this{Element:Water} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Water
-    execute if data storage asset:context this{Element:Thunder} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Thunder
+    execute if data storage asset:context this{Element:"Fire"} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Fire
+    execute if data storage asset:context this{Element:"Water"} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Water
+    execute if data storage asset:context this{Element:"Thunder"} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Thunder
 
 # 雷ポーションなら難易度値に比例したMP減少量をフィールドに突っ込んでおく
 # MPReduceVal = (this.MPReduceVal * 難易度値)
-    execute if data storage asset:context this{Element:Thunder} run function api:global_vars/get_difficulty
-    execute if data storage asset:context this{Element:Thunder} store result score $Difficulty Temporary run data get storage api: Return.Difficulty
-    execute if data storage asset:context this{Element:Thunder} store result score $MPReduceVal Temporary run data get storage asset:context this.MPReduceVal
-    execute if data storage asset:context this{Element:Thunder} store result storage api: Argument.FieldOverride.MPReduceVal int 1 run scoreboard players operation $MPReduceVal Temporary *= $Difficulty Temporary
+    execute if data storage asset:context this{Element:"Thunder"} run function api:global_vars/get_difficulty
+    execute if data storage asset:context this{Element:"Thunder"} store result score $Difficulty Temporary run data get storage api: Return.Difficulty
+    execute if data storage asset:context this{Element:"Thunder"} store result score $MPReduceVal Temporary run data get storage asset:context this.MPReduceVal
+    execute if data storage asset:context this{Element:"Thunder"} store result storage api: Argument.FieldOverride.MPReduceVal int 1 run scoreboard players operation $MPReduceVal Temporary *= $Difficulty Temporary
 
 # 毒ポーションならデータを引き継がせる
-    execute if data storage asset:context this{Element:Poison} run data modify storage api: Argument.FieldOverride.Poison set from storage asset:context this.Poison
+    execute if data storage asset:context this{Element:"Poison"} run data modify storage api: Argument.FieldOverride.Poison set from storage asset:context this.Poison
 
 # 召喚する
     data modify storage api: Argument.ID set value 2070
