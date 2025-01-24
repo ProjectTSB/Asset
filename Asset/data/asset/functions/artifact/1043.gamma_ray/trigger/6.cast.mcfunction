@@ -18,7 +18,7 @@
 # (N ^ 2) / 6 + 200
     scoreboard players operation $SZ.Damage Temporary = @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary *= @s SZ.CastTick
-    scoreboard players operation $SZ.Damage Temporary /= $6 Const
+    scoreboard players operation $SZ.Damage Temporary /= $4 Const
     execute store result storage api: Argument.Damage float 1 run scoreboard players operation $SZ.Damage Temporary += $200 Const
 
 # ダメージ
