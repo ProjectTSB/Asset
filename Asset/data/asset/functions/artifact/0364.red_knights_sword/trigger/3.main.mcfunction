@@ -36,7 +36,7 @@
 
 # ダメージ設定
     # 与えるダメージ = 900
-        data modify storage lib: Argument.Damage set value 900f
+        data modify storage lib: Argument.Damage set value 610f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # ダメージ
@@ -45,7 +45,7 @@
 
 # 自身に5の防御貫通ダメージを与える
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 5.0f
+        data modify storage lib: Argument.Damage set value 6.0f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 補正をしない
