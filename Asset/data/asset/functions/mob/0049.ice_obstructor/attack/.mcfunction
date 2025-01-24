@@ -29,14 +29,16 @@
     function api:global_vars/get_difficulty
 
 # 鈍足
-    data modify storage api: Argument.ID set value 17
+    data modify storage api: Argument set value {ID:17,Duration:60}
     execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
-    data modify storage api: Argument.Duration set value 60
     execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 採掘速度低下
-    effect give @p[tag=Victim,distance=..32] mining_fatigue 3 1 true
+    data modify storage api: Argument set value {ID:26,Duration:60}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim,distance=..32] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # ハード以上かつ破壊可能エリアなら粉雪を設置
-    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/normal at @p[gamemode=survival,tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/normal at @p[tag=Victim,distance=..32] run fill ~ ~ ~ ~ ~ ~ powder_snow replace #lib:air
