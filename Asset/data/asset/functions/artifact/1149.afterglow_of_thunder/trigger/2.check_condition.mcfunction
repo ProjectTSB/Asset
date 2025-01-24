@@ -20,7 +20,7 @@
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players operation @s VX.DamageSum += $1149.Damage Temporary
 
 # バニラ殴りと雷属性以外ならスコアをリセット
-    execute if entity @s[tag=CanUsed] unless data storage asset:context Damage{IsVanilla:1b} unless data storage asset:context Attack{ElementType:Thunder} run scoreboard players reset @s VX.DamageSum
+    execute if entity @s[tag=CanUsed] unless data storage asset:context Attack{IsVanilla:1b} unless data storage asset:context Attack{ElementType:Thunder} run scoreboard players reset @s VX.DamageSum
 
 # 累計スコアが80000未満ならCanUsedを削除
     execute if entity @s[tag=CanUsed] unless entity @s[scores={VX.DamageSum=80000..}] run tag @s remove CanUsed
