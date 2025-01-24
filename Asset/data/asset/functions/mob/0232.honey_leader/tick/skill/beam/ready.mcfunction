@@ -1,8 +1,8 @@
-#> asset:mob/0232.honey_leader/tick/5.ready_beam
+#> asset:mob/0232.honey_leader/tick/skill/beam/ready
 #
 # 予備動作演出です
 #
-# @within function asset:mob/0232.honey_leader/tick/
+# @within function asset:mob/0232.honey_leader/tick/skill/beam/
 
 # 視点固定&NoAI
     data modify entity @s NoAI set value 1b
