@@ -16,3 +16,7 @@
 # 一定間隔でダメージ
     scoreboard players operation $DamageInterval Temporary %= $11 Const
     execute if score $DamageInterval Temporary matches 0 rotated 0 0 run function asset:object/2043.lastboss_ice_sword/tick/landing/area_of_effect/damage
+
+# リセット
+    scoreboard players reset $ParticleInterval Temporary
+    scoreboard players reset $DamageInterval Temporary
