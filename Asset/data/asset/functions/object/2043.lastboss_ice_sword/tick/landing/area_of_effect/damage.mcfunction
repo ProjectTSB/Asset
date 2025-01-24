@@ -11,6 +11,7 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
+    function api:damage/reset
 
 # デバフ
     effect give @a[tag=!PlayerShouldInvulnerable,distance=..4] slowness 1 0
@@ -20,5 +21,3 @@
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:entity.player.hurt_freeze player @p ~ ~ ~ 1 2
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:block.glass.break player @p ~ ~ ~ 1 2
 
-# リセット
-    function api:damage/reset
