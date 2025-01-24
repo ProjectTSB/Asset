@@ -15,7 +15,7 @@
 
 # 移動速度低下
     data modify storage api: Argument set value {ID:67,Stack:3,Duration:20}
-    execute as @a[gamemode=!spectator,distance=..4] run function api:entity/mob/effect/give
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 演出
