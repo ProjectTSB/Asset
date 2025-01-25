@@ -1,4 +1,4 @@
-#> asset:mob/0155.immorality/0.load
+#> asset:mob/0155.immorality/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
@@ -6,6 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/0155.immorality/**
-    scoreboard objectives add 4B.Tick dummy
     scoreboard objectives add 4B.ShotMax dummy
     scoreboard objectives add 4B.ShotCount dummy

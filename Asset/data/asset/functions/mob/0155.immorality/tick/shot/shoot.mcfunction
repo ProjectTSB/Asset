@@ -1,8 +1,8 @@
-#> asset:mob/0155.immorality/tick/5.shot
+#> asset:mob/0155.immorality/tick/shot/shoot
 #
 # 拡散して発射方向を決める
 #
-# @within function asset:mob/0155.immorality/tick/4.shot_interval
+# @within function asset:mob/0155.immorality/tick/shot/interval
 
 #> Private
 # @private
@@ -25,10 +25,10 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
 
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] eyes run function asset:mob/0155.immorality/tick/6.shot_recursive
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] eyes run function asset:mob/0155.immorality/tick/shot/recursive
 
 # ダメージ処理
-    execute as @a[tag=LandingTarget,distance=..25] at @s run function asset:mob/0155.immorality/tick/7.damage
+    execute as @a[tag=LandingTarget,distance=..25] at @s run function asset:mob/0155.immorality/tick/shot/damage
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,limit=1]
