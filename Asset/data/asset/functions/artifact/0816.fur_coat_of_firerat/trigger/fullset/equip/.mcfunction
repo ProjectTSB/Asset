@@ -1,31 +1,31 @@
-#> asset:artifact/0816.fur_coad_of_firerat/trigger/3.main
+#> asset:artifact/0816.fur_coat_of_firerat/trigger/fullset/equip/
 #
-# 神器のメイン処理部
+# フルセット装備時の処理
 #
-# @within function asset:artifact/0816.fur_coad_of_firerat/trigger/2.check_condition
+# @within function
+#   asset:artifact/0816.fur_coat_of_firerat/trigger/3.main
+#   asset:artifact/0817.dragons_neck_ball/trigger/3.main
+#   asset:artifact/0818.bhuddas_bowl/trigger/3.main
+#   asset:artifact/0819.swallows_cowry/trigger/3.main
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/chest
-
-# ここから先は神器側の効果の処理を書く
-# 炎耐性
-    data modify storage api: Argument.UUID set value [I;1,1,816,5]
+# 火耐性
+    data modify storage api: Argument.UUID set value [I;1,1,816,0]
     data modify storage api: Argument.Amount set value 0.2
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/fire/add
 # 水耐性
-    data modify storage api: Argument.UUID set value [I;1,1,817,6]
+    data modify storage api: Argument.UUID set value [I;1,1,816,0]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 # 物理耐性
-    data modify storage api: Argument.UUID set value [I;1,1,818,4]
+    data modify storage api: Argument.UUID set value [I;1,1,816,0]
     data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/physical/add
 # 落下耐性
-    data modify storage api: Argument.UUID set value [I;1,1,819,3]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.UUID set value [I;1,1,816,0]
+    data modify storage api: Argument.Amount set value -0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/fall_damage/add
 
