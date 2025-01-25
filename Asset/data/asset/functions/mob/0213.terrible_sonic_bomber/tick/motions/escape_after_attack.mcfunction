@@ -25,7 +25,7 @@
     execute rotated as @s on passengers if entity @s[tag=5X.ModelRoot] run tp @s ~ ~ ~ ~ ~
 
 # 旋回してた場合旋回アニメーション
-    execute if entity @s[tag=5X.ShouldTurn] on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_back/play
+    execute if entity @s[tag=5X.ShouldTurn] on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_straight/play
 
 # reset
     scoreboard players reset $use_weapon Temporary

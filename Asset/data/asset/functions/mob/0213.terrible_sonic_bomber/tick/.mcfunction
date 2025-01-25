@@ -37,6 +37,7 @@
 
    #tellraw @a [{"score":{"objective":"Temporary","name":"$next_attack_time"}}]
 
+    #execute if entity @s[tag=5X.WingStraight] run say straight
 
 # reset
     scoreboard players reset $initial_motion_end_time Temporary
