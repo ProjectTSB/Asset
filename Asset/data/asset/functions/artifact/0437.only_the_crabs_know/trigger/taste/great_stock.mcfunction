@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.2.great_stock
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/great_stock
 # 回復,リジェネ + 出汁美味
 #
 # @within function asset:artifact/0437.only_the_crabs_know/trigger/3.main

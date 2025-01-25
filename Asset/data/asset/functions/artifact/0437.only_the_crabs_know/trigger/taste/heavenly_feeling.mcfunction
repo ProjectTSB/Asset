@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.5.heavenly_feeling
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/heavenly_feeling
 #
 # 初期ワープ,HPMP全快 + 天国にのぼるような
 #

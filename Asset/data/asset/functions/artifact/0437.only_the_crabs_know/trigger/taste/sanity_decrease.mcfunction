@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.4.sanity_decrease
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/sanity_decrease
 #
 # HP減少MP回復 + 正気度減少
 #

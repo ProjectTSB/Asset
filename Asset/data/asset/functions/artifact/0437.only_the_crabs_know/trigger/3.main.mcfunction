@@ -13,15 +13,15 @@
     execute store result score $Random Temporary run random value 0..4
 
 # 賞賛
-    execute if score $Random Temporary matches 0 run function asset:artifact/0437.only_the_crabs_know/trigger/3.1.excellent_soup
+    execute if score $Random Temporary matches 0 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/excellent_soup
 # 絶賛
-    execute if score $Random Temporary matches 1 run function asset:artifact/0437.only_the_crabs_know/trigger/3.2.great_stock
+    execute if score $Random Temporary matches 1 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/great_stock
 # 酷評
-    execute if score $Random Temporary matches 2 run function asset:artifact/0437.only_the_crabs_know/trigger/3.3.awful_taste
+    execute if score $Random Temporary matches 2 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/awful_taste
 # 幻滅
-    execute if score $Random Temporary matches 3 run function asset:artifact/0437.only_the_crabs_know/trigger/3.4.sanity_decrease
+    execute if score $Random Temporary matches 3 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/sanity_decrease
 # 天国
-    execute if score $Random Temporary matches 4 run function asset:artifact/0437.only_the_crabs_know/trigger/3.5.heavenly_feeling
-    
+    execute if score $Random Temporary matches 4 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/heavenly_feeling
+
 # リセット
     scoreboard players reset $Random Temporary

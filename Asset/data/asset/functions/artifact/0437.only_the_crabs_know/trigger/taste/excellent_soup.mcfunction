@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.1.excellent_soup
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/excellent_soup
 #
 # HP,MP回復 + うまいっ！
 #
