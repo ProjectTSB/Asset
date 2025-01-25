@@ -16,7 +16,11 @@
     function api:damage/reset
 
 # 毒を付与する
-    effect give @a[gamemode=!spectator,tag=LandingTarget,distance=..50,limit=1] poison 6 2
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:29,Duration:120}
+    execute store result storage api: Argument.Stack int 3 run data get storage api: Return.Difficulty
+    execute as @a[gamemode=!spectator,tag=LandingTarget,distance=..50,limit=1] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 着弾タグを消す
     tag @a[gamemode=!spectator,tag=LandingTarget,distance=..50,limit=1] remove LandingTarget
