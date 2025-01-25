@@ -50,3 +50,26 @@ particle flame ^-3.89971 ^ ^0.89008 0.2 0 0.2 0.05 1
 particle flame ^-3.89971 ^ ^-0.89008 0.2 0 0.2 0.05 1
 particle flame ^-3.12733 ^ ^-2.49396 0.2 0 0.2 0.05 1
 particle flame ^-1.73553 ^ ^-3.60388 0.2 0 0.2 0.05 1
+
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGYAsARgEzUCMAzALQCcArCx23ZRRsAhtUr1+Adkn0UXWpS6SlYAgDthAWwTJAYYoACJqrAxhGLQGck4FAHtCaiEnoAGAijiO4Ga2ABuwtiEOuAAHkhuYFARAL4xBOakaIRWiABsBBYQZk6IkXDY2GgwFjpMLpEYttkQOpFoFgCihcWljQCOhIHYUADKph7kiJSBpXEAukA_3
+# 円 1
+particle dust 0.502 0.102 0.102 1 ^0 ^ ^-6 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^1.8541 ^ ^-5.70634 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^3.52671 ^ ^-4.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^4.8541 ^ ^-3.52671 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^5.70634 ^ ^-1.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^6 ^ ^0 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^5.70634 ^ ^1.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^4.8541 ^ ^3.52671 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^3.52671 ^ ^4.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^1.8541 ^ ^5.70634 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^0 ^ ^6 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-1.8541 ^ ^5.70634 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-3.52671 ^ ^4.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-4.8541 ^ ^3.52671 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-5.70634 ^ ^1.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-6 ^ ^0 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-5.70634 ^ ^-1.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-4.8541 ^ ^-3.52671 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-3.52671 ^ ^-4.8541 0 0 0 0 1
+particle dust 0.502 0.102 0.102 1 ^-1.8541 ^ ^-5.70634 0 0 0 0 1

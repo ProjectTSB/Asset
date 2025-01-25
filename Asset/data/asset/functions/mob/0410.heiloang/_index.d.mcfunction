@@ -101,6 +101,7 @@
     # - 他Mob
     #declare tag BF.EntityRoot ベヘモット
     #declare tag BG.EntityRoot ティアマット
+    #declare tag BF.MainTarget ベヘモットターゲット
     #
     # - スキル
     #declare tag BE.Skill.Start 登場
