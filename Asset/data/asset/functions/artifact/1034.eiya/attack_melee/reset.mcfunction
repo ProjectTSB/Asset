@@ -1,9 +1,7 @@
 #> asset:artifact/1034.eiya/attack_melee/reset
 #
+# 神器のリセット処理
 #
-#
-# @within function asset:artifact/1034.eiya/attack_melee/schedule
+# @within function asset:artifact/alias/1034/attack_melee/reset
 
-# リセット
-    scoreboard players reset @s SQ.WaitingTime
-    scoreboard players reset @s SQ.Count
+scoreboard players reset $MP Temporary

@@ -4,15 +4,12 @@
 #
 # @within function asset:artifact/alias/1034/attack_melee/
 
-# 現在MPの10×1.2倍を取得
-    function api:mp/get_current
-    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 12
-
-# 待機時間を設定 0以下になるとschedule.mcfでリセットされる
-    scoreboard players set @s SQ.WaitingTime 60
-
-# スケジュールを起動
-    schedule function asset:artifact/1034.eiya/attack_melee/schedule 1t replace
+# 次の段階までの待機時間のスコア
+# 差が60tick以上ならAttackCountをリセットする
+    execute store result score $SQ.Temp Temporary run time query gametime
+    scoreboard players operation $SQ.Temp Temporary -= @s SQ.LatestUseTick
+    execute if score $SQ.Temp Temporary matches 60.. run scoreboard players reset @s SQ.Count
+    scoreboard players reset $SQ.Temp Temporary
 
 # 1~9段目までの段階のスコア
     scoreboard players add @s SQ.Count 1
@@ -52,8 +49,8 @@
     execute if entity @s[scores={SQ.Count=9}] anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/1034.eiya/attack_melee/vfx/slash9.2
 
 # ダメージ
-    execute if entity @s[scores={SQ.Count=..8}] run function asset:artifact/1034.eiya/attack_melee/4.damage
-    execute if entity @s[scores={SQ.Count=9}] run function asset:artifact/1034.eiya/attack_melee/5.damage2
+    execute if entity @s[scores={SQ.Count=..8}] run function asset:artifact/1034.eiya/attack_melee/damage
+    execute if entity @s[scores={SQ.Count=9}] run function asset:artifact/1034.eiya/attack_melee/damage2
 
 # Countのリセット
     execute if entity @s[scores={SQ.Count=9..}] run scoreboard players reset @s SQ.Count

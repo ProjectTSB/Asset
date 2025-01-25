@@ -7,4 +7,4 @@
 #> 定義類はここに
 # @within function asset:artifact/1034.eiya/**
     scoreboard objectives add SQ.Count dummy
-    scoreboard objectives add SQ.WaitingTime dummy
+    scoreboard objectives add SQ.LatestUseTick dummy
