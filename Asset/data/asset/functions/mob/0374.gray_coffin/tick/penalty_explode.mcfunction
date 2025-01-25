@@ -14,7 +14,7 @@
     data modify storage api: Argument.Damage set value 50f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
-    #data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}'
+    #data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
     function api:damage/reset

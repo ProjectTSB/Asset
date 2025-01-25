@@ -12,7 +12,7 @@
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # 死亡ログ
-        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの魔弾によって貫かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの魔弾によって貫かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # ダメージを与える
         function api:damage/modifier
         execute as @a[tag=AX.Temp.Target,distance=..5] run function api:damage/
