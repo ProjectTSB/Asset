@@ -2,7 +2,9 @@
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+# @within
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/
 
 # 予告
     data modify storage api: Argument.ID set value 2063

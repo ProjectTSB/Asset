@@ -2,7 +2,9 @@
 #
 # テルツェット・プルガトリオ
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+# @within
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/
 
 # ダメージ
     data modify storage api: Argument.Damage set value 55.0f

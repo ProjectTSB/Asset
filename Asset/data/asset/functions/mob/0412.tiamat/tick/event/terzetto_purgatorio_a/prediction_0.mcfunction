@@ -2,7 +2,9 @@
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+# @within
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/
 
 # 予告
     execute rotated 0 0 positioned ~ ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_line

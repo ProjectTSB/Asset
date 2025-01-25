@@ -2,7 +2,9 @@
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+# @within
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+#   function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAMwCs1pA7AIwAsAHALSMCc1l7zzAEwAGdq2EBDAEacUpVgDYFwhYNLKwBAHYSAtgmSAwxQAEjTWBgSMegM5JwKAPaEtEJJS4EUcV3Az2wADcJbEIDcAAPJGECKGiAX3iCa1I0QjtERkECGwgrN0QYsDhsbDQYGwNGYSKMRzyIAyK0GwBRUvLK1oBHQhDsKABlS29yRAAzEMrEgF0gA_3
 # 円 1

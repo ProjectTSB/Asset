@@ -10,8 +10,8 @@
     # execute if block ~ ~ ~ #lib:no_collision run return run kill @s
 
 # 演出
-    particle cloud ~ ~1 ~ 2 2 2 0.1 6
-    particle explosion ~ ~1 ~ 2 0.5 2 0 4
+    particle cloud ~ ~1 ~ 1 1 1 0.1 6
+    particle explosion ~ ~1 ~ 1 0.5 1 0 4
     data modify storage api: Argument.ID set value 2175
     data modify storage api: Argument.FieldOverride.OverrideScale set value [7f, 5f, 7f]
     execute if predicate lib:random_pass_per/30 run data modify storage api: Argument.FieldOverride.OverrideScale set value [8f, 6f, 8f]

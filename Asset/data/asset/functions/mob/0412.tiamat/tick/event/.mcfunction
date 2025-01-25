@@ -31,3 +31,4 @@
 
 # テルツェット・プルガトリオ
     execute if entity @s[tag=BG.Skill.Ter.Purg.A] run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/
+    execute if entity @s[tag=BG.Skill.Ter.Purg.B] run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/
