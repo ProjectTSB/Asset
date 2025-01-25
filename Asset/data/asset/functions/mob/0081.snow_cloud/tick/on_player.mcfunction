@@ -1,6 +1,6 @@
-#> asset:mob/0081.snow_cloud/tick/3.near_player
+#> asset:mob/0081.snow_cloud/tick/on_player
 #
-#
+# プレイヤーの上にいる時の処理
 #
 # @within function asset:mob/0081.snow_cloud/tick/
 

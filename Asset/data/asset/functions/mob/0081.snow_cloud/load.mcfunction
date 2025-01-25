@@ -1,4 +1,4 @@
-#> asset:mob/0081.snow_cloud/0.load
+#> asset:mob/0081.snow_cloud/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
