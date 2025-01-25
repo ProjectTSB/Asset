@@ -15,7 +15,7 @@
     data modify storage api: Argument.Damage set value 37.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって射抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって射抜かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier
     execute as @p[tag=Victim] run function api:damage/
     function api:damage/reset
