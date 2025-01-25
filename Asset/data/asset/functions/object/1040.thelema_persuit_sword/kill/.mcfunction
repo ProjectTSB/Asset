@@ -24,6 +24,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    execute positioned ~-1 ~ ~-1 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=2,dz=1,sort=nearest,limit=1] store result storage api: Argument.Damage double 0.2 run data get storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     execute at @a if score @s 1040.UserID = @p UserID as @p run function api:damage/modifier
