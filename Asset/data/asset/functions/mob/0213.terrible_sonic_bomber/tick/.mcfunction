@@ -21,7 +21,7 @@
 
 # 初期モーション終了時間ぴったり
 #     モデルを表示
-#  TBD
+    execute if score $initial_motion_end_time Temporary = $current_gametime Temporary store result score $next_attack_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/summon_motion
 
 # それ以降
     execute if score $initial_motion_end_time Temporary < $current_gametime Temporary store result score $next_attack_time Temporary run data get storage asset:context this.next_attack_time
