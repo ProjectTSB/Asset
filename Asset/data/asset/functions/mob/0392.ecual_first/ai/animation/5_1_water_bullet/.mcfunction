@@ -24,7 +24,7 @@
 
 # 予告線表示
     execute if predicate api:global_vars/difficulty/max/normal if score @s AW.AnimationTick matches 52 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 72 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line
+    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 72 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line_hard
 
 # 弾幕発射
     execute if score @s AW.AnimationTick matches 82 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/summon
