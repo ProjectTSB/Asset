@@ -7,8 +7,11 @@
 # 中心座標を向く
     execute facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
+# 中心座標の高さにくるまで下降
+    execute at @e[tag=5X.Centre,distance=..128,limit=1] positioned ~-100 ~1 ~-100 if entity @s[dx=199,dy=100,dz=199] at @s run tp @s ~ ~ ~ ~ 60
+
 # 直進
     execute at @s run tp @s ^ ^ ^0.25
 
-# 中心座標の高さにくるまで下降
-    execute at @e[tag=5X.Centre,distance=..128,limit=1] positioned ~-100 ~1 ~-100 if entity @s[dx=199,dy=100,dz=199] at @s run tp @s ~ ~-0.5 ~
+# モデルの向きを合わせる
+    execute rotated as @s on passengers positioned as @s run tp @s ~ ~ ~ ~ ~
