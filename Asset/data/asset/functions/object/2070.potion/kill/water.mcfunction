@@ -12,7 +12,8 @@
 
 # 移動速度低下
     data modify storage api: Argument.ID set value 17
-    data modify storage api: Argument merge from storage asset:context this.Slowness
+    data modify storage api: Argument.Stack set from storage asset:context this.Slowness.Stack
+    data modify storage api: Argument.Duration set from storage asset:context this.Slowness.Duration
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

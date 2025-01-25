@@ -9,7 +9,8 @@
 
 # 毒
     data modify storage api: Argument.ID set value 29
-    data modify storage api: Argument merge from storage asset:context this.Poison
+    data modify storage api: Argument.Stack set from storage asset:context this.Poison.Stack
+    data modify storage api: Argument.Duration set from storage asset:context this.Poison.Duration
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
