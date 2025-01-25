@@ -31,7 +31,7 @@
     execute if data storage asset:context this{Element:"Thunder"} store result score $MPReduceVal Temporary run data get storage asset:context this.MPReduceVal
     execute if data storage asset:context this{Element:"Thunder"} store result storage api: Argument.FieldOverride.MPReduceVal int 1 run scoreboard players operation $MPReduceVal Temporary *= $Difficulty Temporary
 
-# 毒ポーションなら難易度に比例した鈍足のデータをフィールドに突っ込んでおく
+# 毒ポーションなら難易度に比例した毒のデータをフィールドに突っ込んでおく
 # Stack = (this.Poison.Stack * Difficulty)
     execute if data storage asset:context this{Element:"Poison"} run function api:global_vars/get_difficulty
     execute if data storage asset:context this{Element:"Poison"} store result score $Difficulty Temporary run data get storage api: Return.Difficulty
