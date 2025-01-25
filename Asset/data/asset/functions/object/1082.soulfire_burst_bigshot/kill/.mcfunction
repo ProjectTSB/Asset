@@ -17,7 +17,7 @@
     particle minecraft:soul_fire_flame ~ ~ ~ 0.5 0.5 0.5 0.2 50
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 500..700
+    execute store result storage api: Argument.Damage float 1 run random value 400..600
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
