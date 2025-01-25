@@ -13,6 +13,9 @@
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.5 2 0
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.5 0 0
 
+# 召喚地点記録Markerを破壊
+    kill @e[type=marker,tag=26.SpawnPoint,distance=..100]
+
 # ボスドロ
     data modify storage api: Argument.ID set value 1149
     data modify storage api: Argument.Important set value true

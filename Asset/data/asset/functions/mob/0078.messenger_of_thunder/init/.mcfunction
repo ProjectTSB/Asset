@@ -9,3 +9,6 @@
 
 # スポーン時スコア設定
     scoreboard players set @s General.Mob.Tick -80
+
+# 召喚地点記録Markerを召喚
+    summon marker ~ ~ ~ {Tags:["26.SpawnPoint"]}
