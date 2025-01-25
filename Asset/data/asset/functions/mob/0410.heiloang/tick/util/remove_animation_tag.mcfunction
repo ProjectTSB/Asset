@@ -22,6 +22,14 @@
     tag @s remove BE.Skill.Ter.Succ.A
     tag @s remove BE.Skill.Ter.Succ.B
     tag @s remove BE.Skill.Ter.Succ.Dive
+    tag @s remove BE.Skill.Ter.Dis.Start
+    tag @s remove BE.Skill.Ter.Dis
+    tag @s remove BE.Skill.Ter.Alig.Start
+    tag @s remove BE.Skill.Ter.Alig.A
+    tag @s remove BE.Skill.Ter.Alig.B
+    tag @s remove BE.Skill.Ter.Alig
+    tag @s remove BE.Skill.Ter.Purg.Start
+    tag @s remove BE.Skill.Ter.Purg
     tag @s remove BE.Skill.Plamet
     tag @s remove BE.Skill.PowerBreath
     tag @s remove BE.Skill.PowerBreath.C1

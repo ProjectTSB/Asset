@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/
 #
-# テルツェット・アライニング
+# テルツェット・アライニング 外周先パターン
 #
 # @within asset:mob/0410.heiloang/tick/event/
 

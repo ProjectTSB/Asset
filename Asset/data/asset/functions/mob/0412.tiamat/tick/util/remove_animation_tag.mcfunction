@@ -14,3 +14,6 @@
     tag @s remove BG.Skill.Ter.Succ.B
     tag @s remove BG.Skill.Ter.Succ.Dive
     tag @s remove BG.Skill.Ter.Dis
+    tag @s remove BG.Skill.Ter.Alig
+    tag @s remove BG.Skill.Ter.Purg.A
+    tag @s remove BG.Skill.Ter.Purg.B

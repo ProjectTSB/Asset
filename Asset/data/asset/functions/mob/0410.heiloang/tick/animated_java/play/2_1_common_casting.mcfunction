@@ -20,6 +20,7 @@
 #   function asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/
 #   function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/
 #   function asset:mob/0410.heiloang/tick/event/terzetto_aligning/
+#   function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio_start/
 
 # 再生
     function animated_java:heiloang_aj/animations/2_1_common_casting/tween {duration:1, to_frame: 0}

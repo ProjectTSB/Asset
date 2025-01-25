@@ -122,9 +122,11 @@
     #declare tag BE.Skill.Ter.Dis.Start テルツェット・ディザスター開始
     #declare tag BE.Skill.Ter.Dis テルツェット・ディザスター
     #declare tag BE.Skill.Ter.Alig.Start テルツェット・アライニング開始
-    #declare tag BE.Skill.Ter.Alig.A テルツェット・アライニング前半 周囲先行
-    #declare tag BE.Skill.Ter.Alig.B テルツェット・アライニング前半 十字先行
+    #declare tag BE.Skill.Ter.Alig.A テルツェット・アライニング前半 外周先パターン
+    #declare tag BE.Skill.Ter.Alig.B テルツェット・アライニング前半 交差先パターン
     #declare tag BE.Skill.Ter.Alig テルツェット・アライニング
+    #declare tag BE.Skill.Ter.Purg.Start テルツェット・プルガトリオ開始
+    #declare tag BE.Skill.Ter.Purg テルツェット・プルガトリオ
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下

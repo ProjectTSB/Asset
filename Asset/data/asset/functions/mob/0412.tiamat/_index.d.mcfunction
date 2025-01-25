@@ -21,6 +21,10 @@
         #declare function animated_java:tiamat_aj/animations/6_0_flymove_start/tween
         #declare function animated_java:tiamat_aj/animations/6_1_flymove_end/tween
         #declare function animated_java:tiamat_aj/animations/7_dive/tween
+        #declare function animated_java:tiamat_aj/animations/3_2_cast_land_start/tween
+        #declare function animated_java:tiamat_aj/animations/3_3_casting_land/tween
+        #declare function animated_java:tiamat_aj/animations/8_spin/tween
+        #declare function animated_java:tiamat_aj/animations/9_roar/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.tiamat_aj.animation.0_start.playing
@@ -48,6 +52,8 @@
     #declare tag BG.Skill.Ter.Succ.Dive テルツェット・サクセッション 連続ダイブ
     #declare tag BG.Skill.Ter.Dis テルツェット・ディザスター
     #declare tag BG.Skill.Ter.Alig テルツェット・アライニング
+    #declare tag BG.Skill.Ter.Purg.A テルツェット・プルガトリオ 外→内
+    #declare tag BG.Skill.Ter.Purg.B テルツェット・プルガトリオ 内→外
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット
