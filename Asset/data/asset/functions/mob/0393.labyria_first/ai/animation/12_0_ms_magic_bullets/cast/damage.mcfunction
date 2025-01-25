@@ -52,7 +52,7 @@
     # 与えるダメージ
         execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # 死亡ログ
