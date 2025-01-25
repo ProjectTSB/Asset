@@ -1,4 +1,4 @@
-#> asset:mob/0152.desire/attack/3.absorption
+#> asset:mob/0152.desire/attack/absorption
 #
 #
 #
@@ -24,15 +24,15 @@
 
 # ダメージ
 # 対象のMPが空な場合、与えるダメージが上昇
-    data modify storage lib: Argument.Damage set value 35f
-    execute if entity @p[tag=Victim,tag=EmptyMP] run data modify storage lib: Argument.Damage set value 50f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにあらゆる欲を押し付けられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに命までも吸い取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    function lib:damage/modifier
-    execute as @p[tag=Victim] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 35f
+    execute if entity @p[tag=Victim,tag=EmptyMP] run data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sにあらゆる欲を押し付けられた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに命までも吸い取られた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
+    function api:damage/modifier
+    execute as @p[tag=Victim] run function api:damage/
+    function api:damage/reset
 
 # マナを吸い取る 吸収量 = (40 × 難易度値)
     execute store result storage api: Argument.Fluctuation int -40 run data get storage api: Return.Difficulty

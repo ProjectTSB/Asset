@@ -1,4 +1,4 @@
-#> asset:mob/0154.ruin/0.load
+#> asset:mob/0154.ruin/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
