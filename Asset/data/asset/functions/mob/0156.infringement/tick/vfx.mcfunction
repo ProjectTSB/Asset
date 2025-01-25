@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0156.infringement/tick/explode
 
-
 # 演出
     playsound minecraft:block.anvil.land hostile @a ~ ~ ~ 1 1
     playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 1 1.4
