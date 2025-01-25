@@ -56,13 +56,18 @@
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット
+    #declare tag BF.FlareTarget ロックオンフレアターゲット
     #
     # - 一時
     #declare tag BF.State.Wait 待機
     #declare tag BF.Temp.Dummy
+    #declare tag BF.Temp.Hit
     #declare tag BF.Temp.Ground 角度決定用
     #declare tag BF.Temp.AttackRotation 角度決定用
     #declare tag BF.Temp.AttackPosition 位置決定用
     #
     # - オブジェクト
     #declare tag BF.Object オブジェクト共通タグ
+    #declare tag 2180.Pillar 氷柱
+    #declare tag 2181.Line ロックオンフレア予告線
+    #declare tag 2181.Line.End ロックオンフレア予告線

@@ -6,6 +6,7 @@
 
 # タグ消去
     tag @s remove BF.Skill.Ter.Purg
+    tag @a remove BF.FlareTarget
 
 # 待機モーション再生
     scoreboard players set @s BF.EventTimer 0

@@ -8,7 +8,7 @@
     execute if entity @a[tag=BE.MainTarget,distance=..80] run return 0
 
 # プレイヤーが2名以上ではない場合、スキップ
-    execute store result score $TargetCount Temporary if entity @a[tag=!PlayerShouldInvulnerable,distance=..20]
+    execute store result score $TargetCount Temporary if entity @a[distance=..80]
     execute if score $TargetCount Temporary matches ..1 run return run scoreboard players reset $TargetCount Temporary
 
 # ターゲット更新

@@ -29,6 +29,8 @@
     # 攻撃
         execute if score @s BG.EventTimer matches 70..200 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_circle
         execute if score @s BG.EventTimer matches 180 positioned ~ ~-0.3 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos
+        # 3箇所をランダムに選定
+            execute if score @s BG.EventTimer matches 181 run tag @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=3] add BG.Temp.Dummy
         execute if score @s BG.EventTimer matches 200 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
         execute if score @s BG.EventTimer matches 250 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
         execute if score @s BG.EventTimer matches 215 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_0
@@ -74,8 +76,14 @@
     # アニメーション再生
         execute if score @s BG.EventTimer matches 690 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
 
+# 移動
+    # アニメーション再生
+        execute if score @s BG.EventTimer matches 846 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
+    # 中心点の正面方向に移動
+        execute if score @s BG.EventTimer matches 845 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
+
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BG.EventTimer matches 1000.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/end
+    execute if score @s BG.EventTimer matches 886.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/end
