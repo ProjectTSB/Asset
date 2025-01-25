@@ -2,7 +2,7 @@
 #
 # 浮遊を付与
 #
-# @within function asset:artifact/0017.harmful_books/attack_melee/3.1.add_effect
+# @within function asset:artifact/0017.harmful_books/attack_melee/add_effect
 
 # 対象がImmovableならreturn
     execute if entity @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run return 0

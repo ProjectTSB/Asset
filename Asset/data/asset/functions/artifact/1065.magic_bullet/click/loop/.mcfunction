@@ -6,7 +6,7 @@
 #   asset:artifact/1065.magic_bullet/click/
 #   asset:artifact/1065.magic_bullet/click/loop/bullet/main
 #   asset:artifact/1065.magic_bullet/click/loop/square/main
-#   asset:artifact/1065.magic_bullet/click/rejoin_process
+#   asset:artifact/1065.magic_bullet/rejoin_process
 
 
 # ループ処理

@@ -22,7 +22,7 @@
         execute store result score $RandomDamage Temporary run random value 150..220
 
     # スコアが6ならVictimにダメージを与える前に範囲攻撃を行う
-        execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0756.sakura_hubuki/attack_melee/4.range_attack
+        execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0756.sakura_hubuki/attack_melee/range_attack
 
     # 数値を代入
         execute store result storage api: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary

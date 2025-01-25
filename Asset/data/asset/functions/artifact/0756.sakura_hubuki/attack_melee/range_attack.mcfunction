@@ -1,4 +1,4 @@
-#> asset:artifact/0756.sakura_hubuki/attack_melee/4.range_attack
+#> asset:artifact/0756.sakura_hubuki/attack_melee/range_attack
 #
 # 範囲ダメ
 #

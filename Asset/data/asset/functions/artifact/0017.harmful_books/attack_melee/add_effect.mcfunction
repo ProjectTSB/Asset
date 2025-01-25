@@ -1,4 +1,4 @@
-#> asset:artifact/0017.harmful_books/attack_melee/3.1.add_effect
+#> asset:artifact/0017.harmful_books/attack_melee/add_effect
 #
 # 効果の付与とParticle
 #

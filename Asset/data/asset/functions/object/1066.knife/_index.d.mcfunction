@@ -7,7 +7,7 @@
 
 #> API
 # @within function
+#   asset:artifact/0837.the_world_knife/click/*
 #   asset:effect/0277.the_world/end/*
-#   asset:artifact/0837.the_world_knife/trigger/*
     #declare tag 1066.API.TimeStop
     #declare objective 1066.API.UserID

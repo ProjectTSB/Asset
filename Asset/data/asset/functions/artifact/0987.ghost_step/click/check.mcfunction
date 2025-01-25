@@ -6,4 +6,4 @@
 
 # 既に発動している場合、テレポートはここで発動してしまう(MP消費したくないし)
     execute if entity @s[tag=CanUsed] as @e[type=item_display,tag=RF.Bullet,distance=..150] if score @s RF.UserID = @p[tag=this] UserID run tag @s remove CanUsed
-    execute as @e[type=item_display,tag=RF.Bullet,distance=..150] if score @s RF.UserID = @p[tag=this] UserID at @s run function asset:artifact/0987.ghost_step/trigger/teleport
+    execute as @e[type=item_display,tag=RF.Bullet,distance=..150] if score @s RF.UserID = @p[tag=this] UserID at @s run function asset:artifact/0987.ghost_step/click/teleport

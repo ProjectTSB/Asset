@@ -4,17 +4,13 @@
 #
 # @within function asset:artifact/alias/1149/attack/check
 
-#> Private
-# @private
-    #declare score_holder $1149.Damage
+# 攻撃属性をチェック
+# 火または雷属性ならカウントを1増加
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Fire} run scoreboard players add @s UU.AttackCount 1
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players add @s UU.AttackCount 1
 
-# 雷属性攻撃ならダメージを加算
-# 10倍として計算
-    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} store result score $1149.Damage Temporary run data get storage asset:context Attack.Amount 10
-    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} run scoreboard players operation @s VX.DamageSum += $1149.Damage Temporary
+# 回数が規定値未満ならCanUsedを削除
+    execute unless entity @s[scores={UU.AttackCount=25..}] run tag @s remove CanUsed
 
-# 累計スコアが80000未満ならCanUsedを削除
-    execute if entity @s[tag=CanUsed] unless entity @s[scores={VX.DamageSum=80000..}] run tag @s remove CanUsed
-
-# リセット
-    scoreboard players reset $1149.Damage Temporary
+# 規定値以上ならカウントをリセット
+    execute if entity @s[scores={UU.AttackCount=25..}] run scoreboard players reset @s UU.AttackCount
