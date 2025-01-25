@@ -1,4 +1,4 @@
-#> asset:mob/0156.infringement/0.load
+#> asset:mob/0156.infringement/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #

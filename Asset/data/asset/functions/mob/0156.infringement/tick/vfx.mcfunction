@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0156.infringement/tick/4.explode
+# @within function asset:mob/0156.infringement/tick/explode
 
 
 # 演出

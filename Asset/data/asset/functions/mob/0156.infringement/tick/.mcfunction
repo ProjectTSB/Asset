@@ -13,7 +13,7 @@
     execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4C.Alert] run effect clear @s slowness
 
 # 一定時間で発動
-    execute if score @s 4C.Tick matches 70 run function asset:mob/0156.infringement/tick/3.alert
+    execute if score @s 4C.Tick matches 70 run function asset:mob/0156.infringement/tick/alert
 
 # 自爆する
-    execute if score @s 4C.Tick matches 100 run function asset:mob/0156.infringement/tick/4.explode
+    execute if score @s 4C.Tick matches 100 run function asset:mob/0156.infringement/tick/explode
