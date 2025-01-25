@@ -8,7 +8,10 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 毒
-    effect give @a[tag=!PlayerShouldInvulnerable,distance=..3] poison 5 6 false
+    data modify storage api: Argument.ID set value 29
+    data modify storage api: Argument merge from storage asset:context this.Poison
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     particle dust 0 0.4 0 1.5 ~ ~1.2 ~ 1 0.4 1 0 4 normal @a

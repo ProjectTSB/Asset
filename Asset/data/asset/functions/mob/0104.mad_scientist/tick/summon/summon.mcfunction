@@ -31,8 +31,13 @@
     execute if data storage asset:context this{Element:"Thunder"} store result score $MPReduceVal Temporary run data get storage asset:context this.MPReduceVal
     execute if data storage asset:context this{Element:"Thunder"} store result storage api: Argument.FieldOverride.MPReduceVal int 1 run scoreboard players operation $MPReduceVal Temporary *= $Difficulty Temporary
 
-# 毒ポーションならデータを引き継がせる
-    execute if data storage asset:context this{Element:"Poison"} run data modify storage api: Argument.FieldOverride.Poison set from storage asset:context this.Poison
+# 毒ポーションなら難易度に比例した鈍足のデータをフィールドに突っ込んでおく
+# Stack = (this.Poison.Stack * Difficulty)
+    execute if data storage asset:context this{Element:"Poison"} run function api:global_vars/get_difficulty
+    execute if data storage asset:context this{Element:"Poison"} store result score $Difficulty Temporary run data get storage api: Return.Difficulty
+    execute if data storage asset:context this{Element:"Poison"} run data modify storage api: Argument.FieldOverride.Poison.Duration set from storage asset:context this.Poison.Duration
+    execute if data storage asset:context this{Element:"Poison"} store result score $Stack Temporary run data get storage asset:context this.Poison.Stack
+    execute if data storage asset:context this{Element:"Poison"} store result storage api: Argument.FieldOverride.Poison.Stack int 1 run scoreboard players operation $Stack Temporary *= $Difficulty Temporary
 
 # 召喚する
     data modify storage api: Argument.ID set value 2070
