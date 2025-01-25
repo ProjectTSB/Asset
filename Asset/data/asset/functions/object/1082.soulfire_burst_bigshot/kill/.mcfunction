@@ -30,7 +30,7 @@
 # 実行時に受け取っているUserIDの持ち主として補正を実行
     function asset:object/1082.soulfire_burst_bigshot/kill/modifier.m with storage asset:context this
 
-# Hittタグを与えた対象にダメージを与える
+# タグを与えた対象にダメージを与える
     execute as @e[type=#lib:living,tag=Hit,distance=..8] run function api:damage/
 
 # リセット
