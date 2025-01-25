@@ -24,10 +24,10 @@
     data remove storage asset:temp Args
 
 # ダメージ
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    execute as @p[tag=GU.Owner] run function lib:damage/modifier
-    function lib:damage/
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    execute as @p[tag=GU.Owner] run function api:damage/modifier
+    function api:damage/
 
 # パーティクル
     particle item anvil ~ ~0.1 ~ 1 0.5 1 0.1 15
@@ -35,4 +35,4 @@
 # リセット
     scoreboard players reset $Speed Temporary
     scoreboard players reset $BaseSpeed Temporary
-    function lib:damage/reset
+    function api:damage/reset

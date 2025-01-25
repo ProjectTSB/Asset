@@ -8,3 +8,4 @@
 # @within function asset:artifact/0606.traffic_sign/**
     scoreboard objectives add GU.Count dummy
     scoreboard objectives add GU.OwnerID dummy
+    scoreboard objectives add GU.LatestUseTick dummy

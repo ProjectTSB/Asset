@@ -3,7 +3,6 @@
 
 #> tag
 # @within function asset:artifact/0606.traffic_sign/**
-    #declare score_holder $GU.LatestUseTick
     #declare score_holder $GU.Temp
     #declare score_holder $GU.OwnerId
     #declare tag GU.Sign.Init
