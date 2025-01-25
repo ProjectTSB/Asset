@@ -1,4 +1,4 @@
-#> asset:mob/0156.infringement/tick/3.alert
+#> asset:mob/0156.infringement/tick/alert
 #
 # 形態変化する
 #
