@@ -8,4 +8,4 @@
     function asset:mob/super.remove
 
 # 召喚地点記録Markerを破壊
-    kill @e[type=marker,tag=26.SpawnPoint]
+    kill @e[type=marker,tag=26.SpawnPoint,distance=..100]
