@@ -1,11 +1,11 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire/
+#> asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire
 #
 #
 #
 # @within function asset:mob/0046.clock_of_despair/tick/skill/*_oclock
 
 # VFX
-    execute positioned ~ ~7 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire/vfx
+    execute positioned ~ ~7 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/vfx/fire
 
 # ヒット対象を探す
     data modify storage lib: args.dx set value 6.3
