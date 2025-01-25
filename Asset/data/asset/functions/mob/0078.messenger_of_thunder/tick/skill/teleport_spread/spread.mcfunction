@@ -12,7 +12,7 @@
 
 # 拡散
     data modify storage lib: Argument.Bounds set value [[10d,10d],[0d,0d],[10d,10d]]
-    execute as @e[type=marker,tag=SpreadMarker] at @s run function lib:spread_entity/
+    execute as @e[type=marker,tag=SpreadMarker,distance=..15] at @s run function lib:spread_entity/
 
 # 拡散後の位置に足場がなければMarkerを消してreturnする
     execute at @e[type=marker,tag=SpreadMarker,distance=..15] if block ~ ~-1 ~ #lib:no_collision_without_fluid run return run kill @e[type=marker,tag=SpreadMarker,distance=..0.01]
