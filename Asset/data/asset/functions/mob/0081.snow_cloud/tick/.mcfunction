@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/81/tick
 
 # プレイヤーが下にいる場合動くコマンド(スコア蓄積、雪が降るパーティクル)
-    execute positioned ~-0.75 ~-6 ~-0.75 if entity @a[gamemode=!spectator,dx=1.5,dy=6,dz=1.5] run function asset:mob/0081.snow_cloud/tick/on_player
+    execute positioned ~-0.75 ~-6 ~-0.75 if entity @a[gamemode=!spectator,dx=1.5,dy=5,dz=1.5] run function asset:mob/0081.snow_cloud/tick/on_player
 
 # パーティクル
     particle snowflake ~ ~ ~ 0.6 0.3 0.6 0 2 normal @a
