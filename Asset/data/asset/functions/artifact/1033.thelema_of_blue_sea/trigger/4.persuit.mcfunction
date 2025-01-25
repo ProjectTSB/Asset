@@ -19,7 +19,7 @@
 # 最大体力の160%、最大320
 # 一度200の10倍を取得し、200より大きいなら200にする
     execute store result score $Damage Temporary run data get storage api: Return.MaxHealth 10
-    execute store result storage api: Argument.FieldOverride.Damage double 0.16 run scoreboard players operation $Damage Temporary < $2000 Const
+    execute store result storage api: Argument.FieldOverride.Damage double 0.1 run scoreboard players operation $Damage Temporary < $2000 Const
 
 # 召喚
     data modify storage api: Argument.ID set value 1039
