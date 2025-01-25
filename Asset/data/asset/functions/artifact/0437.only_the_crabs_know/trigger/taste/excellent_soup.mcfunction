@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.1.excellent_soup
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/excellent_soup
 #
 # HP,MP回復 + うまいっ！
 #
@@ -7,10 +7,10 @@
 # HP回復
     # 回復する量 = 20
         data modify storage lib: Argument.Heal set value 20f
-        function lib:heal/modifier
-        function lib:heal/
+        function api:heal/modifier
+        function api:heal/
     # リセット
-        function lib:heal/reset
+        function api:heal/reset
 
 # MP回復
     # 回復する量 = 50

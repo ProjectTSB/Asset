@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.5.heavenly_feeling
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/heavenly_feeling
 #
 # 初期ワープ,HPMP全快 + 天国にのぼるような
 #
@@ -9,11 +9,11 @@
 
 # HP、MP全快
     # HP回復
-        data modify storage lib: Argument.Heal set value 10000f
-        function lib:heal/modifier
-        function lib:heal/
-    # リセット
-        function lib:heal/reset
+        data modify storage api: Argument.Heal set value 10000f
+        function api:heal/modifier
+        function api:heal/
+        function api:heal/reset
+
     # MP回復
         data modify storage api: Argument.Fluctuation set value 10000
         function api:mp/fluctuation
