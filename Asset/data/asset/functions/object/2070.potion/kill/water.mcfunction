@@ -14,7 +14,6 @@
     data modify storage api: Argument.ID set value 17
     data modify storage api: Argument merge from storage asset:context this.Slowness
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
-    tellraw @a {"storage":"api:","nbt":"Argument"}
     function api:entity/mob/effect/reset
 
 # ダメージ
