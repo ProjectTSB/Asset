@@ -1,8 +1,8 @@
-#> asset:mob/0155.immorality/tick/7.damage
+#> asset:mob/0155.immorality/tick/shot/damage
 #
 # ダメージ等を与える 実行者はプレイヤー
 #
-# @within function asset:mob/0155.immorality/tick/5.shot
+# @within function asset:mob/0155.immorality/tick/shot/shoot
 
 # 演出
     particle minecraft:soul ~ ~ ~ 0 0 0 0.2 10
