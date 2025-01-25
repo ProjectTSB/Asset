@@ -1,4 +1,4 @@
-#> asset:artifact/0672.aurora_blade/attack_melee/4.sweeping_particle
+#> asset:artifact/0672.aurora_blade/attack_melee/vfx
 #
 #
 #
