@@ -22,9 +22,8 @@
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set value 12f
 
-# 直撃したやつと、そいつからの範囲内、更に着弾地点の位置の範囲内にタグを付与
+# 直撃したやつと、着弾地点の位置の範囲内にタグを付与
     execute positioned ~-1 ~-1 ~-1 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] add Hit
-    execute positioned ~-1 ~-1 ~-1 at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] add Hit
     tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] add Hit
 
 # 実行時に受け取っているUserIDの持ち主として補正を実行
