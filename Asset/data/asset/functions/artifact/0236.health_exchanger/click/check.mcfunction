@@ -4,12 +4,6 @@
 #
 # @within function asset:artifact/alias/236/click/check
 
-#> private
-# @private
-    #declare score_holder $SCUserHealth
-    #declare score_holder $MaxHealth
-    #declare tag HasMaxHealth
-
 # //まず全員の体力をscoreに代入
     execute as @a run function asset:artifact/0236.health_exchanger/click/own_data_put
 # //自分の体力も比較用に代入
@@ -24,9 +18,3 @@
 # //そもそも他人がいるか
     execute unless entity @a[tag=!this] run tag @s remove CanUsed
     execute unless entity @a[tag=!this] run tellraw @s [{"text": "なんなら今はボッチです☆","color": "gray"}]
-
-# //リセット //3.mainでも使用するため最後に
-    scoreboard players reset @a Temporary
-    scoreboard players reset $SCUserHealth Temporary
-    scoreboard players reset $MaxHealth Temporary
-    tag @a[tag=HasMaxHealth] remove HasMaxHealth
