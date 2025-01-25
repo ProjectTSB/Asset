@@ -59,7 +59,7 @@
 # ダメージのブレ(0~300)
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $301 Temporary
-    scoreboard players add $RandomDamage Temporary 300
+    scoreboard players add $RandomDamage Temporary 350
 
 # クリティカル判定
     execute if predicate lib:random_pass_per/20 run tag @s add Critical

@@ -21,7 +21,7 @@
     # 帯電サウンド
         execute if entity @s[tag=2012.NormalElect] if score @s General.Object.Tick matches 1 run playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 1 2
     # 帯電エフェクト
-        execute if entity @s[tag=2012.NormalElect] if score @s General.Object.Tick matches 1 on passengers run data modify entity @s Glowing set value 1b
+        execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=2012.NormalElect] if score @s General.Object.Tick matches 1 on passengers run data modify entity @s Glowing set value 1b
         execute if entity @s[tag=2012.NormalElect] run function asset:object/2012.thunder_spear/tick/elect/normal_vfx
     # 発動
         execute if entity @s[tag=2012.NormalElectCast] if score @s General.Object.Tick matches 1 run function asset:object/2012.thunder_spear/tick/elect/normal_cast

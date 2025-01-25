@@ -14,7 +14,7 @@
 
 # Icicle Manager を召喚する
     data modify storage api: Argument.ID set value 1069
-    data modify storage api: Argument.FieldOverride.DamagePerHit set value 500
+    data modify storage api: Argument.FieldOverride.DamagePerHit set value 550
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.WaitingTick set value 8
     data modify storage api: Argument.FieldOverride.Range set value 16
