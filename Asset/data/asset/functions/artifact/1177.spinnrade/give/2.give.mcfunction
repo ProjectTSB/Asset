@@ -15,9 +15,10 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"糸を紡ぐ","color":"#ff69b4"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"あああ"color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"強力な追尾性能を持つ矢を放つ","color":"white"}','{"text":"クラスの皆には内緒だよ☆","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
@@ -27,11 +28,11 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [100,280]
+    data modify storage asset:artifact AttackInfo.Damage set value [620,780]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
+    data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value [Fire]
+    data modify storage asset:artifact AttackInfo.ElementType set value [None]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
