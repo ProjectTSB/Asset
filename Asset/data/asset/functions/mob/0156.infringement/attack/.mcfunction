@@ -24,5 +24,9 @@
     execute as @p[tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
 
-# 鈍足を与える
-    effect give @p[tag=Victim,distance=..6] slowness 1 3
+# 移動速度低下
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:67,Duration:40}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @p[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
