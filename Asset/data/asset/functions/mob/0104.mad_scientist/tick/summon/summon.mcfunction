@@ -16,7 +16,7 @@
     execute if data storage asset:context this{Element:"Water"} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Water
     execute if data storage asset:context this{Element:"Thunder"} run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Thunder
 
-# 水ポーションなら難易度に比例した鈍足のデータをフィールドに突っ込んでおく
+# 水ポーションなら難易度値に比例した鈍足のデータをフィールドに突っ込んでおく
 # Stack = (this.Slowness.Stack * Difficulty)
     execute if data storage asset:context this{Element:"Water"} run function api:global_vars/get_difficulty
     execute if data storage asset:context this{Element:"Water"} store result score $Difficulty Temporary run data get storage api: Return.Difficulty
