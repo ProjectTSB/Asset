@@ -12,6 +12,9 @@
 # 20%ずつの確率で各効果を得る
     execute store result score $Random Temporary run random value 0..4
 
+# degug
+    scoreboard players set $Random Temporary 3
+
 # 賞賛
     execute if score $Random Temporary matches 0 run function asset:artifact/0437.only_the_crabs_know/trigger/taste/excellent_soup
 # 絶賛
