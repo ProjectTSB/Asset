@@ -16,10 +16,10 @@
     scoreboard players reset $Random Temporary
 
 # ポーションの色合わせ
-    execute if data storage asset:context this{Element:Poison} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:26112}
-    execute if data storage asset:context this{Element:Fire} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:13369344}
-    execute if data storage asset:context this{Element:Water} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:8454143}
-    execute if data storage asset:context this{Element:Thunder} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:16776960}
+    execute if data storage asset:context this{Element:"Poison"} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:26112}
+    execute if data storage asset:context this{Element:"Fire"} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:13369344}
+    execute if data storage asset:context this{Element:"Water"} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:8454143}
+    execute if data storage asset:context this{Element:"Thunder"} run item replace entity @s weapon.mainhand with splash_potion{CustomPotionColor:16776960}
 
 # ポーションの色をフィールドに突っ込んでおく
     data modify storage asset:context this.PotionColor set from entity @s HandItems[0].tag.CustomPotionColor
