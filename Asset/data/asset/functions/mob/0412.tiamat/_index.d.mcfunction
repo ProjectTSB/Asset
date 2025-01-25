@@ -15,14 +15,14 @@
         #declare function animated_java:tiamat_aj/animations/2_move/tween
         #declare function animated_java:tiamat_aj/animations/3_0_cast_start/tween
         #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
-        #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
+        #declare function animated_java:tiamat_aj/animations/3_2_cast_land_start/tween
+        #declare function animated_java:tiamat_aj/animations/3_3_casting_land/tween
+        #declare function animated_java:tiamat_aj/animations/3_4_cast_fly2land_start/tween
         #declare function animated_java:tiamat_aj/animations/4_breath/tween
         #declare function animated_java:tiamat_aj/animations/5_deathwing/tween
         #declare function animated_java:tiamat_aj/animations/6_0_flymove_start/tween
         #declare function animated_java:tiamat_aj/animations/6_1_flymove_end/tween
         #declare function animated_java:tiamat_aj/animations/7_dive/tween
-        #declare function animated_java:tiamat_aj/animations/3_2_cast_land_start/tween
-        #declare function animated_java:tiamat_aj/animations/3_3_casting_land/tween
         #declare function animated_java:tiamat_aj/animations/8_spin/tween
         #declare function animated_java:tiamat_aj/animations/9_roar/tween
     # - 自動生成タグ

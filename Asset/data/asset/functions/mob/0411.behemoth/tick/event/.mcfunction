@@ -28,3 +28,6 @@
 
 # テルツェット・アライニング
     execute if entity @s[tag=BF.Skill.Ter.Alig] run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/
+
+# テルツェット・プルガトリオ
+    execute if entity @s[tag=BF.Skill.Ter.Purg] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/

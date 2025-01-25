@@ -42,12 +42,38 @@
         execute if score @s BG.EventTimer matches 70..200 run particle cloud ~ ~3 ~ 2 2 2 0.1 1
         execute if score @s BG.EventTimer matches 70..215 rotated ~ ~ positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/effect_particle
 
+# 待機
+    execute if score @s BG.EventTimer matches 290 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/1_idle
+
+# アイシクルフィールド
+    # 詠唱
+        execute if score @s BG.EventTimer matches 470 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_0_cast_start
+        execute if score @s BG.EventTimer matches 490 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_1_casting
+    # アニメーション再生
+        execute if score @s BG.EventTimer matches 600 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/8_spin
+    # 演出
+        execute if score @s BG.EventTimer matches 471 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
+        execute if score @s BG.EventTimer matches 600 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
+        execute if score @s BG.EventTimer matches 633 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
+        execute if score @s BG.EventTimer matches 620..635 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 620..635 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+    # 攻撃
+        execute if score @s BG.EventTimer matches 470..600 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_circle
+        execute if score @s BG.EventTimer matches 580 positioned ~ ~-0.3 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos
+        execute if score @s BG.EventTimer matches 600 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
+        execute if score @s BG.EventTimer matches 650 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
+        execute if score @s BG.EventTimer matches 615 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_0
+        execute if score @s BG.EventTimer matches 665 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_1
+    # 演出
+        execute if score @s BG.EventTimer matches 470..600 run particle cloud ~ ~3 ~ 2 2 2 0.1 1
+        execute if score @s BG.EventTimer matches 470..615 rotated ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/effect_particle
+
 # 移動
     # アニメーション再生
-        execute if score @s BG.EventTimer matches 290 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
+        execute if score @s BG.EventTimer matches 660 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BG.EventTimer matches 400.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/end
+    execute if score @s BG.EventTimer matches 1000.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/end
