@@ -29,13 +29,13 @@
 
 # 物理耐性-10%
     data modify storage api: Argument.UUID set value [I;1,1,566,6]
-    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Amount set value -0.075
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/physical/add
 
 # 物理攻撃-17.5%
     data modify storage api: Argument.UUID set value [I;1,1,566,6]
-    data modify storage api: Argument.Amount set value -0.175
+    data modify storage api: Argument.Amount set value -0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 

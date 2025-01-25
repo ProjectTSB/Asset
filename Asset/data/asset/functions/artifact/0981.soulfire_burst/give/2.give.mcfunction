@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["400-600 / 95-165x5"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["500-700 / 95-165x5"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -45,12 +45,12 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 12
+    data modify storage asset:artifact MPHealWhenHit set value 16.2
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 120
+    data modify storage asset:artifact LocalCooldown set value 180
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "longRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 40
+    data modify storage asset:artifact TypeCooldown.Duration set value 50
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
