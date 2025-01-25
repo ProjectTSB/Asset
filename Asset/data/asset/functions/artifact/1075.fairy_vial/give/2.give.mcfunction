@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"妖精の小瓶","color":"#FFC9F3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲の2名の体力を","color":"white"}','{"text":"自身の最大体力の5%分回復する。","color":"white"}','{"text":"(体力を最も失ったプレイヤーを優先)","color":"white"}','{"text":"小さな妖精が入っている小瓶。","color":"gray"}','{"text":"淡いピンク色の光に揺らめいている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲の2名の体力を","color":"white"}','{"text":"自身の最大体力の5%分回復する。","color":"white"}','{"text":"(体力を最も失ったプレイヤーを優先)","color":"white"}','{"text":"小さな妖精が入っている小瓶。","color":"gray"}','{"text":"淡いピンク色の光に揺らめいている。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 13
+    data modify storage asset:artifact MPCost set value 23
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)

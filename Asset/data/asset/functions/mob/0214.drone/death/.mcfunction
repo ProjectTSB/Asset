@@ -6,7 +6,7 @@
 
 # 周囲の敵と対空砲にダメージ
 # particle
-execute unless entity @s[tag=5Y.Suicide] run function asset:mob/0214.drone/damage
+    execute unless entity @s[tag=5Y.Suicide] run function asset:mob/0214.drone/damage
 
 # エンジン音停止
-stopsound @a[distance=..128] hostile minecraft:entity.bee.loop
+    stopsound @a[distance=..128] hostile minecraft:entity.bee.loop

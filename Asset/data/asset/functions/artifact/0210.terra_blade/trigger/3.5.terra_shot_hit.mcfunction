@@ -7,10 +7,10 @@
 
 
 # 魔法、無属性のダメージをぶちかます
-    data modify storage api: Argument.Damage set value 70.0f
+    data modify storage api: Argument.Damage set value 35.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.AdditionalMPHeal set value 9.0f
+    data modify storage api: Argument.AdditionalMPHeal set value 7.5f
     tag @s add this
     execute as @a if score @s UserID = @e[type=armor_stand,tag=this,distance=..1,limit=1] 5U.ID run function api:damage/modifier
     tag @s remove this

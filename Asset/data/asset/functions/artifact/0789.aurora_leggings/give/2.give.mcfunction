@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーロラレギンス","color":"#00acf6"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% ","color":"dark_purple"},{"text":"雷耐性+5% 雷攻撃+5%","color":"yellow"}]','[{"text":"MP回復+5% ","color":"green"},{"text":"物理耐性-7.5%","color":"dark_red"}]','[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+5% ","color":"dark_purple"},{"text":"雷耐性+5% 雷攻撃+5%","color":"yellow"}]','[{"text":"MP回復+5% ","color":"green"},{"text":"物理耐性-5%","color":"dark_red"}]','[{"text":"夜空に輝くオーロラを封じ込めた鎧。","color":"gray"}]','[{"text":"その蒼翠の光は進むべき道を照らす。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -56,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:44278},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,789,4],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,789,4],Slot:"legs"}]}
 

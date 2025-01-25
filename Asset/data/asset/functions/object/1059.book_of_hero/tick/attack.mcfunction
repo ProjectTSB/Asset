@@ -33,7 +33,7 @@
     # tellraw @a [{"text":"Progress: "},{"score":{"name":"$Progress","objective":"Temporary"}},{"text":" Level: "},{"score":{"name":"$Level","objective":"Temporary"}},{"text":" Damage: "},{"score":{"name":"$Damage","objective":"Temporary"}}]
 
 # 属性
-    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
 # ダメージ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
