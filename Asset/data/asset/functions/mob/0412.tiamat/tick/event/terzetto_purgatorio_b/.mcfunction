@@ -35,7 +35,7 @@
         execute if score @s BG.EventTimer matches 70..200 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_circle
         execute if score @s BG.EventTimer matches 180 positioned ~ ~0.2 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos
         # 3箇所をランダムに選定
-            execute if score @s BG.EventTimer matches 181 run tag @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=3] add BG.Temp.Dummy
+            execute if score @s BG.EventTimer matches 181 run tag @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,distance=12.1..60,sort=random,limit=3] add BG.Temp.Dummy
         execute if score @s BG.EventTimer matches 200 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
         execute if score @s BG.EventTimer matches 250 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
         execute if score @s BG.EventTimer matches 215 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_1
@@ -66,6 +66,7 @@
         execute if score @s BG.EventTimer matches 650 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
         execute if score @s BG.EventTimer matches 615 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_0
         execute if score @s BG.EventTimer matches 665 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_1
+        execute if score @s BG.EventTimer matches 665 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_pillar
     # 演出
         execute if score @s BG.EventTimer matches 470..600 run particle cloud ~ ~3 ~ 2 2 2 0.1 1
         execute if score @s BG.EventTimer matches 470..615 rotated ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/effect_particle

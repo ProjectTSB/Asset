@@ -20,14 +20,16 @@
 
 # ロックオンフレアブレス
     # アニメーション再生
-        execute if score @s BF.EventTimer matches 352 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath
+        execute if score @s BF.EventTimer matches 412 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath
     # ターゲット決定
-    # 予兆
         execute if score @s BF.EventTimer matches 190 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/set_target
-        execute if score @s BF.EventTimer matches 190..362 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/prediction_line.m with entity @s data.locators.pos_head
+    # 予兆
+        execute if score @s BF.EventTimer matches 190..428 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/prediction_line.m with entity @s data.locators.pos_head
+    # 攻撃
+        execute if score @s BF.EventTimer matches 428 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack.m with entity @s data.locators.pos_head
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BF.EventTimer matches 400.. run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/end
+    execute if score @s BF.EventTimer matches 800.. run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/end

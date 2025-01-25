@@ -62,6 +62,7 @@
     #declare tag BG.State.Wait 待機
     #declare tag BG.Temp.Dummy
     #declare tag BG.Temp.Ground 角度決定用
+    #declare tag BG.Temp.AttackHit 攻撃命中検知用
     #declare tag BG.Temp.AttackRotation 角度決定用
     #declare tag BG.Temp.AttackPosition 位置決定用
     #

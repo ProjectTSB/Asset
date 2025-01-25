@@ -69,5 +69,6 @@
     # - オブジェクト
     #declare tag BF.Object オブジェクト共通タグ
     #declare tag 2180.Pillar 氷柱
+    #declare tag 2180.Pillar.Death 氷柱
     #declare tag 2181.Line ロックオンフレア予告線
     #declare tag 2181.Line.End ロックオンフレア予告線

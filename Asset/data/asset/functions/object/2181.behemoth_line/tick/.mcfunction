@@ -8,4 +8,4 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=172..}]
+    kill @s[scores={General.Object.Tick=237..}]
