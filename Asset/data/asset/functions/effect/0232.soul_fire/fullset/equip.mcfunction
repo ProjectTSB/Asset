@@ -2,23 +2,23 @@
 # @within function asset:effect/0232.soul_fire/*given/
 
 # 補正
-    # 火攻撃+10%
+    # 火攻撃
         data modify storage api: Argument.UUID set value [I;1,3,232,0]
         data modify storage api: Argument.Amount set value 0.1
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/fire/add
 
-    # MP回復量+8%
+    # MP回復量
         data modify storage api: Argument.UUID set value [I;1,3,232,0]
-        data modify storage api: Argument.Amount set value 0.08
+        data modify storage api: Argument.Amount set value 0.02
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/mp_regen/add
 
-    # 最大体力-10%
-        data modify storage api: Argument.UUID set value [I;1,3,232,0]
-        data modify storage api: Argument.Amount set value -0.1
-        data modify storage api: Argument.Operation set value "multiply_base"
-        function api:modifier/max_health/add
+    # 最大体力
+        # data modify storage api: Argument.UUID set value [I;1,3,232,0]
+        # data modify storage api: Argument.Amount set value -0.1
+        # data modify storage api: Argument.Operation set value "multiply_base"
+        # function api:modifier/max_health/add
 
 # 演出
     # 1つ目の円
