@@ -25,4 +25,4 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
-# リセットはcheck_conditionで行っているので不要
+# リセットはcheckで行っているので不要

@@ -15,6 +15,8 @@
     #tellraw @a [{"text":"Health: "},{"storage":"api:","nbt":"Health"}]
     execute store result score $LostHealth Temporary run scoreboard players operation $MaxHealth Temporary -= $Health Temporary
     #tellraw @a [{"text":"$LostHealth: "},{"score":{"objective":"Temporary","name":"$LostHealth"}}]
-    execute unless score $LostHealth Temporary matches 100.. run tag @s remove CanUsed
+    execute unless score $LostHealth Temporary matches 100.. run return fail
+
+return 1
 
 # リセットはcheckで行う
