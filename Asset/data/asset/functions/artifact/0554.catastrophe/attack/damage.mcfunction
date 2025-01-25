@@ -1,13 +1,10 @@
-#> asset:artifact/0554.catastrophe/damage_entity/
-#
-# 神器のトリガー処理
-#
-# @within function asset:artifact/alias/554/damage_entity/
+#> asset:artifact/0554.catastrophe/attack/damage
+# @within function asset:artifact/0554.catastrophe/attack/
 
 # 演出
-    execute at @e[type=#lib:living,tag=Attacker,distance=..32,limit=1] run particle soul_fire_flame ~ ~1.2 ~ 0.4 0.6 0.4 0 100 force @a
-    execute at @e[type=#lib:living,tag=Attacker,distance=..32,limit=1] run playsound minecraft:entity.phantom.death player @a ~ ~ ~ 0.5 0.8
-    execute at @e[type=#lib:living,tag=Attacker,distance=..32,limit=1] run playsound minecraft:entity.vex.death player @a ~ ~ ~ 0.5 0.5
+    execute at @e[type=#lib:living,tag=Victim,distance=..32,limit=1] run particle soul_fire_flame ~ ~1.2 ~ 0.4 0.6 0.4 0 100 force @a
+    execute at @e[type=#lib:living,tag=Victim,distance=..32,limit=1] run playsound minecraft:entity.phantom.death player @a ~ ~ ~ 0.5 0.8
+    execute at @e[type=#lib:living,tag=Victim,distance=..32,limit=1] run playsound minecraft:entity.vex.death player @a ~ ~ ~ 0.5 0.5
 
 # 物理攻撃補正と魔法攻撃補正を取得
     function api:modifier/attack/physical/get
@@ -22,13 +19,8 @@
     execute if score $Physical Temporary >= $Magic Temporary run data modify storage api: Argument.AttackType set value "Physical"
     execute if score $Physical Temporary < $Magic Temporary run data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Attacker,distance=..32,limit=1] run function api:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..32,limit=1] run function api:damage/
     function api:damage/reset
-
-# 破滅の騎士道バフ(ID:263)を得る
-    data modify storage api: Argument.ID set value 263
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
 
 # CDスコアにgametimeを代入
     execute store result score @s FE.LatestUseTick run time query gametime
