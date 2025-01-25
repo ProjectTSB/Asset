@@ -7,10 +7,10 @@
 # HP回復
     # 回復する量 = 20
         data modify storage lib: Argument.Heal set value 20f
-        function lib:heal/modifier
-        function lib:heal/
+        function api:heal/modifier
+        function api:heal/
     # リセット
-        function lib:heal/reset
+        function api:heal/reset
 
 # MP回復
     # 回復する量 = 50

@@ -5,11 +5,11 @@
 
 # HP回復
     # 回復する量 = 10
-        data modify storage lib: Argument.Heal set value 10f
-        function lib:heal/modifier
-        function lib:heal/
+        data modify storage api: Argument.Heal set value 10f
+        function api:heal/modifier
+        function api:heal/
     # リセット
-        function lib:heal/reset
+        function api:heal/reset
 
 # リジェネ
     effect give @s regeneration 600 3 true
