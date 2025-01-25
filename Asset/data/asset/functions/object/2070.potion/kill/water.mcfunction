@@ -10,8 +10,12 @@
     playsound block.glass.break hostile @a ~ ~ ~ 1 2 0
     particle end_rod ~ ~ ~ 0 0 0 0.4 100
 
-# デバフ
-    effect give @a[tag=!PlayerShouldInvulnerable,distance=..3] slowness 5 2 true
+# 移動速度低下
+    data modify storage api: Argument.ID set value 17
+    data modify storage api: Argument merge from storage asset:context this.Slowness
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
+    tellraw @a {"storage":"api:","nbt":"Argument"}
+    function api:entity/mob/effect/reset
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage

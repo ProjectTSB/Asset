@@ -60,5 +60,8 @@
 # 毒ポーションの設定
     data modify storage asset:mob Field.Poison set value {Duration:5,Amplifier:6}
 
+# 鈍足の設定
+    data modify storage asset:mob Field.Slowness set value {Duration:100,Stack:2}
+
 # 基礎MP減少量設定
     data modify storage asset:mob Field.MPReduceVal set value -8
