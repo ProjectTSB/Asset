@@ -28,7 +28,7 @@
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの居合斬りによって真っ二つにされてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの居合斬りによって真っ二つにされてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える

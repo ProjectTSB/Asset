@@ -43,10 +43,10 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 300
+    data modify storage asset:artifact LocalCooldown set value 300
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "longRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 300
+    data modify storage asset:artifact TypeCooldown.Duration set value 100
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

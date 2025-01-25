@@ -25,7 +25,7 @@
         playsound entity.blaze.shoot hostile @a[distance=..32] ~ ~ ~ 1 1.3
         playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 0.35 2
         playsound entity.wither.shoot hostile @a[distance=..32] ~ ~ ~ 0.45 1.5
-    
+
 # 引数の設定
     # 与えるダメージ
         data modify storage api: Argument.Damage set value 45.0f
@@ -34,7 +34,7 @@
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの詠唱した火炎魔法に飲み込まれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの詠唱した火炎魔法に飲み込まれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual

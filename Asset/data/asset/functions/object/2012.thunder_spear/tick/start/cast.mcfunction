@@ -15,11 +15,11 @@
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが降らせた雷の槍に感電させられてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが降らせた雷の槍に感電させられてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
 # ダメージを与える
-    execute as @a[gamemode=!creative,distance=..10] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
 # リセット
     function api:damage/reset
