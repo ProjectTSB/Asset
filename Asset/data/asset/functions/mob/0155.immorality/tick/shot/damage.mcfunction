@@ -17,5 +17,12 @@
     execute unless entity @s[gamemode=creative] run function api:damage/
     function api:damage/reset
 
+# 衰弱Lv2
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:80,Duration:160}
+    execute store result storage api: Argument.Stack int 3 run data get storage api: Return.Difficulty
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # 着弾タグを消す
     tag @s remove LandingTarget
