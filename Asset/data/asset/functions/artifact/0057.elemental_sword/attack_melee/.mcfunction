@@ -10,7 +10,8 @@
 
 # 攻撃の度に属性を変えるヤツ
     # 使用回数を取る
-        execute store result score $ElementalSwordAttack Temporary run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
+        function api:data_get/selected_item
+        execute store result score $ElementalSwordAttack Temporary run data get storage api: SelectedItem.tag.TSB.RemainingCount
     # 使用回数を3で剰余算
         scoreboard players operation $ElementalSwordAttack Temporary %= $3 Const
 
