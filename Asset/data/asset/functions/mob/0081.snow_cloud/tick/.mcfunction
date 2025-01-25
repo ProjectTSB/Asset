@@ -12,7 +12,7 @@
     particle dust 1 1000000000 1000000000 2 ~ ~ ~ 0.6 0.3 0.6 0 2 normal @a
 
 # 最も近いプレイヤーの上に移動
-    execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 if block ^ ^ ^0.2 #lib:no_collision run tp @s ^ ^ ^0.1
+    execute facing entity @p[gamemode=!spectator,distance=..30] feet rotated ~ 0 if block ^ ^ ^0.2 #lib:no_collision run tp @s ^ ^ ^0.1
     execute if entity @a[gamemode=!spectator,distance=..4] if block ~ ~1 ~ #lib:no_collision run tp @s ~ ~1 ~
 
 # プレイヤーの上に移動しすぎたら降下(下30ブロック以内にプレイヤーがいて、下6ブロック以内にプレイヤーがいない場合降下)
