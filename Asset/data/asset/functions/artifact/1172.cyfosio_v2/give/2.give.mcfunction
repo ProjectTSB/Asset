@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"サイフォジオ","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"剣を地面に突き刺し、周囲のいプレイヤーを回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"剣を地面に突き刺し、周囲のプレイヤーを回復する"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
