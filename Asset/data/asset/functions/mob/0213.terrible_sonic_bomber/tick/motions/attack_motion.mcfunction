@@ -11,20 +11,29 @@
     #declare score_holder $attack_end_time
     #declare score_holder $use_weapon
     #declare score_holder $flare_time
+    #declare tag 5X.ShouldTurn
+
 
 # 現在時間を記録
     execute store result score $current_gametime_for_attack Temporary run time query gametime
 
 # 移動処理
 # 中心座標を中心に旋回
-    execute positioned ^ ^ ^1.5 unless entity @e[tag=5X.Centre,distance=..50] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~80 0 run tp @s ~ ~ ~ ~ ~
+    execute positioned ^ ^ ^1.5 unless entity @e[tag=5X.Centre,distance=..50] run tag @s add 5X.ShouldTurn
+    execute if entity @s[tag=5X.ShouldTurn] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~60 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進
     execute rotated as @s run tp @s ^ ^ ^1.5
 
-# 対空砲付近を飛ぶときはフレアを出す(3tickおき)
+# AJ modelの向き合わせ
+    execute rotated as @s on passengers if entity @s[tag=5X.ModelRoot] run tp @s ~ ~ ~ ~ ~
+
+# 旋回してた場合旋回アニメーション
+    execute if entity @s[tag=5X.ShouldTurn] on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_back/play
+
+# 対空砲付近を飛ぶときはフレアを出す(8tickおき)
     execute store result score $flare_time Temporary run time query gametime
-    scoreboard players operation $flare_time Temporary %= $3 Const
+    scoreboard players operation $flare_time Temporary %= $8 Const
     execute if entity @e[tag=5X.Centre,distance=..30] if score $flare_time Temporary matches 0 run particle minecraft:lava ^ ^-1 ^-2 1.5 0 1.5 1 24 force
 
 
@@ -52,3 +61,4 @@
     scoreboard players reset $attack_end_time Temporary
     scoreboard players reset $use_weapon Temporary
     scoreboard players reset $flare_time Temporary
+    tag @s remove 5X.ShouldTurn

@@ -16,6 +16,9 @@
 # 本体の向きを変える
     execute facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
+# 旋回アニメーション
+    execute on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_back/play
+
 # 攻撃座標指定
     execute positioned as @p rotated as @s rotated ~ 0 positioned ^ ^ ^-20 run tp 0-0-0-0-0 ~ ~ ~ ~ ~
     data modify storage asset:context this.gatling.target_pos set from entity 0-0-0-0-0 Pos

@@ -16,6 +16,9 @@
 # 本体の向きを変える
     execute facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
+# 旋回アニメーション
+    execute on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_back/play
+
 # 攻撃箇所表示
     data modify storage asset:temp args set value {Color:15453454,Tick:70,Scale:"[20f,60f,1f]"}
     data modify storage asset:temp args.RotationX set from entity @s Rotation[0]

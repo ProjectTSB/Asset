@@ -16,6 +16,9 @@
 # 本体の向きを変更
     execute facing entity @e[tag=5X.Centre,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
+# 旋回アニメーション
+    execute on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/animations/roll_back/play
+
 # 対象候補指定(最大6人)
     tag @a remove 5X.BrimstoneTarget
     tag @a[distance=..256,sort=nearest,limit=6] add 5X.BrimstoneTarget
