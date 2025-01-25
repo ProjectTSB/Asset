@@ -11,10 +11,10 @@
 # 難易度値を取得
     function api:global_vars/get_difficulty
 
-# ダメージ式：15N + 25
+# ダメージ式：12N + 28
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 15
-    scoreboard players add $DamageTemp Temporary 25
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 12
+    scoreboard players add $DamageTemp Temporary 28
 
 # ダメージ
     # 引数の設定
