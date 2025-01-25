@@ -1,4 +1,4 @@
-#> asset:mob/0155.immorality/0.load
+#> asset:mob/0155.immorality/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
