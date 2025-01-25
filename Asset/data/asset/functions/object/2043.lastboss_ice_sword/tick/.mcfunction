@@ -7,10 +7,6 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 実行時間を移す
-    scoreboard players operation $ParticleInterval Temporary = @s General.Object.Tick
-    scoreboard players operation $DamageInterval Temporary = @s General.Object.Tick
-
 # メイン処理
     # 落下前
         execute if entity @s[tag=!2043.Landed] run function asset:object/2043.lastboss_ice_sword/tick/unlanded/

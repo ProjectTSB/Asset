@@ -1,4 +1,4 @@
-#> asset:artifact/0437.only_the_crabs_know/trigger/3.3.awful_taste
+#> asset:artifact/0437.only_the_crabs_know/trigger/taste/awful_taste
 #
 # MP減少,毒 + 酷い味だ
 #

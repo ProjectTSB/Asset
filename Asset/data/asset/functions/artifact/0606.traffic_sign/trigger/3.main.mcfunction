@@ -17,7 +17,7 @@
     execute unless score @s GU.Count matches -2147483648..2147483647 run scoreboard players set @s GU.Count 0
     execute store result score $GU.Temp Temporary run time query gametime
     scoreboard players operation $GU.Temp Temporary -= $GU.LatestUseTick Temporary
-    execute unless score $GU.Temp Temporary matches ..30 run scoreboard players set @s GU.Count 0
+    execute unless score $GU.Temp Temporary matches ..50 run scoreboard players set @s GU.Count 0
     scoreboard players add @s GU.Count 1
 
 # カウントが4以上なら道路標識を召喚する

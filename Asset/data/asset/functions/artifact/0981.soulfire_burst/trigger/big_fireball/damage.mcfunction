@@ -16,16 +16,16 @@
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。追加ダメージ発生
-          scoreboard players operation $RandomDamage Temporary %= $200 Const
+          scoreboard players operation $RandomDamage Temporary %= $201 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 400
+            scoreboard players add $RandomDamage Temporary 500
     #ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
 # 魔法、無属性のダメージをぶちかます
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Fire"
-    data modify storage api: Argument.AdditionalMPHeal set value 12f
+    data modify storage api: Argument.AdditionalMPHeal set value 16.2f
 # マスターとして補正functionを実行
     execute as @p[tag=R9.OwnerPlayer] run function lib:damage/modifier
 

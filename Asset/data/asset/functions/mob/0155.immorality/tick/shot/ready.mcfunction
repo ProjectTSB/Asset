@@ -1,4 +1,4 @@
-#> asset:mob/0155.immorality/tick/3.ready
+#> asset:mob/0155.immorality/tick/shot/ready
 #
 # 発砲準備をします
 #

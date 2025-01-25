@@ -1,10 +1,10 @@
-#> asset:mob/0155.immorality/tick/6.shot_recursive
+#> asset:mob/0155.immorality/tick/shot/recursive
 #
 # 銃の再帰処理部
 #
 # @within function
-#   asset:mob/0155.immorality/tick/5.shot
-#   asset:mob/0155.immorality/tick/6.shot_recursive
+#   asset:mob/0155.immorality/tick/shot/shoot
+#   asset:mob/0155.immorality/tick/shot/recursive
 
 # 着弾検知
     execute unless block ^ ^ ^0.25 #lib:no_collision run tag @s add Landing
@@ -17,4 +17,4 @@
     particle dust 0.357 0 0 0.5 ~ ~ ~ 0.2 0.2 0.2 0 2
 
 # 再帰
-    execute positioned ^ ^ ^0.25 if entity @s[tag=!Landing,distance=..20] run function asset:mob/0155.immorality/tick/6.shot_recursive
+    execute positioned ^ ^ ^0.25 if entity @s[tag=!Landing,distance=..20] run function asset:mob/0155.immorality/tick/shot/recursive
