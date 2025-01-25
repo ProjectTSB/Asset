@@ -1,11 +1,11 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire/
+#> asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire
 #
 #
 #
 # @within function asset:mob/0046.clock_of_despair/tick/skill/*_oclock
 
 # VFX
-    execute positioned ~ ~7 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/fire/vfx
+    execute positioned ~ ~7 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/vfx/fire
 
 # ヒット対象を探す
     data modify storage lib: args.dx set value 6.3
@@ -15,7 +15,7 @@
     function lib:rotatable_dxyz/m with storage lib: args
 
 # パラメータ設定
-    data modify storage api: Argument.Damage set value 17
+    data modify storage api: Argument.Damage set value 21
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの魔炎により灰一つ残さず焼き尽くされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
