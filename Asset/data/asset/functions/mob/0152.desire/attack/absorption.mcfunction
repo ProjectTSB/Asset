@@ -1,4 +1,4 @@
-#> asset:mob/0152.desire/attack/3.absorption
+#> asset:mob/0152.desire/attack/absorption
 #
 #
 #

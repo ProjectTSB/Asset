@@ -1,4 +1,4 @@
-#> asset:mob/0152.desire/attack/4.release
+#> asset:mob/0152.desire/attack/release
 #
 #
 #
