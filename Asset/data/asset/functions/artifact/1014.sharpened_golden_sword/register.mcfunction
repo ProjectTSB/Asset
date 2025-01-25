@@ -56,5 +56,4 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:artifact CustomNBT set value {}
-
+    data modify storage asset:artifact CustomNBT set value {tag:{Sharpened:1b}}
