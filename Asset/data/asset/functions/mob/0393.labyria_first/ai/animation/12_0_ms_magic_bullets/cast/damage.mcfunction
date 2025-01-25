@@ -33,23 +33,39 @@
     execute positioned ^ ^ ^25 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
     execute positioned ^ ^ ^26 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
     execute positioned ^ ^ ^27 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
+    
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：8N + 40
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
+    scoreboard players add $DamageTemp Temporary 40
 
 # ダメージ
     # 引数の設定
-    # ダメージ
-        data modify storage api: Argument.Damage set value 54.0f
+    # 与えるダメージ
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
-        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # 死亡ログ
-        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの放った魔弾により、貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの放った魔弾により、貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行
         function api:damage/modifier
     # ダメージを与える
         execute as @a[tag=AX.Temp.Target,distance=..100] at @s run function api:damage/
-    # リセット
-        function api:damage/reset
+# リセット
+    function api:damage/reset
+
+# リセット
+    scoreboard players reset $DamageTemp Temporary
 
 # タグ外し
     tag @a[tag=AX.Temp.Target,distance=..100] remove AX.Temp.Target

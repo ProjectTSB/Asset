@@ -7,15 +7,29 @@
 # 演出
     function asset:object/2012.thunder_spear/tick/start/vfx_cast
 
-# 引数の設定
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：5N + 45
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 5
+    scoreboard players add $DamageTemp Temporary 45
+
+# ダメージ
+    # 引数の設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 50.0f
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが降らせた雷の槍に感電させられてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが降らせた雷の槍に感電させられてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
@@ -23,3 +37,6 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
 # リセット
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $DamageTemp Temporary
