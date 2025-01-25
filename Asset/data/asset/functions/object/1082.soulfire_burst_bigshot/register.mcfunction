@@ -19,3 +19,4 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Speed set value 2
     data modify storage asset:object Field.Range set value 14
+    # data modify storage asset:object Field.AdditionalMPHeal set value

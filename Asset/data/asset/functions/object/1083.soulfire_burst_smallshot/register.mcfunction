@@ -20,3 +20,4 @@
     data modify storage asset:object Field.Speed set value 1
     data modify storage asset:object Field.MoveTimesPerTick set value 0.2
     data modify storage asset:object Field.Range set value 40
+    # data modify storage asset:object Field.AdditionalMPHeal set value

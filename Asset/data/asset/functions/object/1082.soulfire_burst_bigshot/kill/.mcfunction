@@ -17,10 +17,10 @@
     particle minecraft:soul_fire_flame ~ ~ ~ 0.5 0.5 0.5 0.2 50
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 400..600
+    execute store result storage api: Argument.Damage float 1 run random value 500..700
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
-    data modify storage api: Argument.AdditionalMPHeal set value 12f
+    data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 
 # 直撃したやつと、着弾地点の位置の範囲内にタグを付与
     execute positioned ~-1 ~-1 ~-1 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] add Hit

@@ -19,4 +19,5 @@
 # 火の玉オブジェクト召喚
     data modify storage api: Argument.ID set value 1082
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute anchored eyes positioned ^ ^ ^1 run function api:object/summon
