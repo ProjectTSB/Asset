@@ -23,10 +23,10 @@
 # 剰余算する
     scoreboard players operation $Random Temporary %= $DivisionValue Temporary
 # スコアセット
-    scoreboard players operation @s 4B.Tick = $Random Temporary
-    scoreboard players remove @s 4B.Tick 80
-# この段階で4B.Tickが0以上なら-1にする
-    execute if entity @s[scores={4B.Tick=0..}] run scoreboard players set @s 4B.Tick -1
+    scoreboard players operation @s General.Mob.Tick = $Random Temporary
+    scoreboard players remove @s General.Mob.Tick 80
+# この段階でGeneral.Mob.Tickが0以上なら-1にする
+    execute if entity @s[scores={General.Mob.Tick=0..}] run scoreboard players set @s General.Mob.Tick -1
 
 # リセット処理
     scoreboard players reset $Random Temporary
