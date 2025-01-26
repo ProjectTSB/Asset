@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:artifact/0987.ghost_step/trigger/**
     scoreboard objectives add RF.UserID dummy
+    scoreboard objectives add RF.Age dummy

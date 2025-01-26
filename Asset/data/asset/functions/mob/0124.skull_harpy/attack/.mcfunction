@@ -12,10 +12,10 @@
     execute at @p[tag=Victim] run playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 1.5 0
 
 # ハード以上の場合、浮遊を付与
-    execute if predicate api:global_vars/difficulty/min/hard at @p[tag=Victim,distance=..60] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:10b,duration:5,show_particles:1b}]}
+    execute if predicate api:global_vars/difficulty/min/hard as @p[tag=Victim,distance=..60] run function asset:mob/0124.skull_harpy/attack/levitation
 
 # 引数の設定
-    data modify storage api: Argument.Damage set value 8.0d
+    data modify storage api: Argument.Damage set value 9.5d
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier

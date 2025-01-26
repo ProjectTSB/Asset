@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"芽吹き","color":"#A2FF94"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"MP回復量が上昇する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"MP回復量が大きく上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
@@ -29,7 +29,11 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 2
+    data modify storage asset:effect RequireClearLv set value 3
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field set value {}

@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"FT-139 RIFLE","color":"#00A3FF","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"エネルギー弾を発射するアサルトライフル"}','{"text":"命中精度は低いが、スニークをして発砲することで"}','{"text":"安定した精度を出すことができる"}','{"text":" "}','{"text":"リロード可能な神器だ"}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 30
 # 神器を発動できるスロット (string) Wikiを参照
@@ -27,9 +29,9 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [50,175]
+    data modify storage asset:artifact AttackInfo.Damage set value [50,120]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
+    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.ElementType set value [Thunder]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
@@ -43,7 +45,10 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 2
+    # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "longRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 2
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

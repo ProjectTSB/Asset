@@ -8,5 +8,12 @@
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    # 周囲5mのプレイヤーに既に自然回復エフェクトが付与されているかどうかを検知し、自然回復エフェクトを付与
-        execute as @a[distance=..5] if predicate asset:artifact/0563.heartland/regene_check run effect give @a[distance=..5] regeneration 15 1 false
+
+# 最大体力
+    data modify storage api: Argument.UUID set value [I;1,1,563,5]
+    data modify storage api: Argument.Amount set value 4
+    data modify storage api: Argument.Operation set value "add"
+    function api:modifier/max_health/add
+
+# フルセット処理
+    execute if data storage asset:context id.all{head:562,chest:563,legs:564,feet:565} run function asset:artifact/0563.heartland/trigger/fullset/equip/

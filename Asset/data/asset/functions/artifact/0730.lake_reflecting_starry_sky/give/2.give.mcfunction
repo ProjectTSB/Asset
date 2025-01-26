@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"湖鏡映天","color":"gold"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"使用時、","color":"#C4C4C4"},{"text":"星湖","color":"#3643FF"},{"text":"を設置する。","color":"#C4C4C4"}]','[{"text":"星湖","color":"#3643FF"},{"text":"は内部の敵に継続的にダメージを与え、","color":"#C4C4C4"}]','[{"text":"定期的に","color":"#C4C4C4"},{"text":"星波","color":"#3643FF"},{"text":"を発生させダメージを与える。","color":"#C4C4C4"}]','[{"text":"また、内部のプレイヤーに","color":"#C4C4C4"},{"text":"水攻撃+30%","color":"aqua"},{"text":"を付与する。","color":"#C4C4C4"}]','[{"text":"月無き湖畔の星空を取り込んだとされる鏡。","color":"blue"}]','[{"text":"星降る夜に響く波の音は夜の静寂を引き立てる。","color":"blue"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
@@ -39,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 15
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 200
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     data modify storage asset:artifact SpecialCooldown set value 3000
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -51,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

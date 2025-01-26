@@ -14,12 +14,8 @@
     playsound entity.blaze.shoot player @a ~ ~ ~ 1 0.5
 
 # 弾を召喚
-    summon area_effect_cloud ~ ~ ~ {Particle:"block air",Duration:20,Tags:["A9.First","A9.Fire","Projectile"]}
-    execute anchored eyes positioned ^ ^ ^ run tp @e[type=area_effect_cloud,tag=A9.First] ~ ~ ~ facing ^ ^ ^10
-# ユーザーID適応
-    scoreboard players operation @e[type=area_effect_cloud,tag=A9.First] A9.UserID = @s UserID
-# タグを消す
-    tag @e[tag=A9.First] remove A9.First
-
-# Scheduleループ
-    schedule function asset:artifact/0369.fire_magic/trigger/3.1.tick 1t replace
+    data modify storage api: Argument.ID set value 1010
+    data modify storage api: Argument.FieldOverride.Damage set value 60.0f
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute anchored eyes positioned ^ ^ ^ run function api:object/summon

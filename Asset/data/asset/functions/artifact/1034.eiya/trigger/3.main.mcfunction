@@ -14,7 +14,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 待機時間を設定 0以下になるとschedule.mcfでリセットされる
-    scoreboard players set @s SQ.WaitingTime 40
+    scoreboard players set @s SQ.WaitingTime 60
 
 # スケジュールを起動
     schedule function asset:artifact/1034.eiya/trigger/schedule 1t replace

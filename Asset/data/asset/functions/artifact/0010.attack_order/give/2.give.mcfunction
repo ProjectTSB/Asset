@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '{"text":"出撃命令","color":"dark_purple"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"全 軍 突 撃","bold":true}']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
@@ -41,9 +43,12 @@
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
-    # data modify storage asset:artifact MPRequire set value
+    data modify storage asset:artifact MPRequire set value 50
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "summon"
+    data modify storage asset:artifact TypeCooldown.Duration set value 1000
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

@@ -16,3 +16,6 @@
     data modify storage api: Argument.ID set value 793
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.death

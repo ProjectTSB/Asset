@@ -15,7 +15,7 @@
     execute at @p[tag=Victim,distance=..6] run playsound minecraft:entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.7 1
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 9f
+    data modify storage lib: Argument.Damage set value 11f
 # 属性
     data modify storage lib: Argument.AttackType set value "Physical"
     data modify storage lib: Argument.ElementType set value "Thunder"

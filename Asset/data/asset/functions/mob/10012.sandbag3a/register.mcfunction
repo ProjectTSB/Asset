@@ -1,10 +1,14 @@
 #> asset:mob/10012.sandbag3a/register
 # @within asset:mob/alias/10012/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
+
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 10012
-# Type (string) Wikiを参照
-    data modify storage asset:mob Type set value "Enemy.Boss"
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)

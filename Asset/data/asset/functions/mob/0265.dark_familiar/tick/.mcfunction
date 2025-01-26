@@ -27,13 +27,13 @@
     execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # スコア
-    scoreboard players add @s 7D.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # 消える
-    execute if entity @s[scores={7D.Tick=200..}] run function asset:mob/0265.dark_familiar/tick/kill
+    execute if entity @s[scores={General.Mob.Tick=200..}] run function asset:mob/0265.dark_familiar/tick/kill
 
 # 一定間隔で攻撃 召喚してすぐは攻撃しないようにしている
-    scoreboard players operation $Interval Temporary = @s 7D.Tick
+    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $40 Const
-    execute if score $Interval Temporary matches 0 run function asset:mob/0265.dark_familiar/tick/shoot
+    execute if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ summon marker run function asset:mob/0265.dark_familiar/tick/shoot
     scoreboard players reset $Interval Temporary

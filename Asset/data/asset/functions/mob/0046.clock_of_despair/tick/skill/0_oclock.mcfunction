@@ -2,7 +2,7 @@
 #
 # 揺れ -> 自機狙い雷 -> 自機外し雷
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 #> Val
 # @private
@@ -66,6 +66,10 @@
     execute if score @s 1A.LifeTime matches 170 at @a[tag=1A.Target,distance=..100] rotated 225 0 positioned ^ ^ ^4.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
     execute if score @s 1A.LifeTime matches 170 at @a[tag=1A.Target,distance=..100] rotated 270 0 positioned ^ ^ ^4.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
     execute if score @s 1A.LifeTime matches 170 at @a[tag=1A.Target,distance=..100] rotated 315 0 positioned ^ ^ ^4.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
+    execute if score @s 1A.LifeTime matches 170 if predicate api:global_vars/difficulty/min/hard at @a[tag=1A.Target,distance=..100] rotated 045 0 positioned ^ ^ ^2.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
+    execute if score @s 1A.LifeTime matches 170 if predicate api:global_vars/difficulty/min/hard at @a[tag=1A.Target,distance=..100] rotated 135 0 positioned ^ ^ ^2.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
+    execute if score @s 1A.LifeTime matches 170 if predicate api:global_vars/difficulty/min/hard at @a[tag=1A.Target,distance=..100] rotated 225 0 positioned ^ ^ ^2.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
+    execute if score @s 1A.LifeTime matches 170 if predicate api:global_vars/difficulty/min/hard at @a[tag=1A.Target,distance=..100] rotated 315 0 positioned ^ ^ ^2.5 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
 # サンダー攻撃
     execute if score @s 1A.LifeTime matches 190 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
     execute if score @s 1A.LifeTime matches 190 run tag @a[tag=1A.Target,distance=..100] remove 1A.Target

@@ -26,7 +26,7 @@
     # UUID(部位が不明なためanyにする)
         data modify storage api: Argument.UUID set value [I;1,1,643,0]
     # 補正値
-        data modify storage api: Argument.Amount set value 0.09
+        data modify storage api: Argument.Amount set value 0.05
     # 補正方法
         data modify storage api: Argument.Operation set value "multiply_base"
 # 補正の追加

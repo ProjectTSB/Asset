@@ -22,7 +22,7 @@
     item replace entity @s weapon.mainhand with stick{CustomModelData:20158}
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 37f
+    data modify storage lib: Argument.Damage set value 40f
     data modify storage lib: Argument.AttackType set value "Magic"
     data modify storage lib: Argument.ElementType set value "Thunder"
     data modify storage lib: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって斬り裂かれオーロラに消えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'

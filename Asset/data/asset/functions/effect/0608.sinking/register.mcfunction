@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"沈潜","color":"blue"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"与ダメージが大きく低下し、移動速度と採掘速度が低下する"}']
+    data modify storage asset:effect Description set value ['{"text":"与ダメージが低下し、移動速度と採掘速度が低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (int) (default = API || 1)
@@ -30,6 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     # data modify storage asset:effect RequireClearLv set value
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect StackVisible set value
 
 # フィールド
     # data modify storage asset:effect Field.myValue set value

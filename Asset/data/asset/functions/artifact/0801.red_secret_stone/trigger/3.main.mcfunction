@@ -22,7 +22,7 @@
     scoreboard players add $HealValue Temporary 1
 
 # 回復する
-    execute store result storage lib: Argument.Heal double 2.5 run scoreboard players get $HealValue Temporary
+    execute store result storage lib: Argument.Heal double 3 run scoreboard players get $HealValue Temporary
     function lib:heal/modifier
     function lib:heal/
     function lib:heal/reset

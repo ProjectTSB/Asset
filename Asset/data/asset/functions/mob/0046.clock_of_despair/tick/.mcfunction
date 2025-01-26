@@ -16,7 +16,7 @@
     execute if score @s 1A.LifeTime matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 1A.LifeTime -1
 
 # スキル発動
-    function asset:mob/0046.clock_of_despair/tick/3.skill_active
+    function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # 時計の針の回転
     execute as @e[type=armor_stand,tag=1A.ClockHand,distance=..0.1,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ ~0.15 ~
@@ -26,17 +26,14 @@
     scoreboard players operation $IntervalTime Temporary %= $2 Const
     execute if score $IntervalTime Temporary matches 0 run function asset:mob/0046.clock_of_despair/tick/2t_interval_vfx
     scoreboard players reset $IntervalTime Temporary
-# 40tick(2秒)毎の高高度ペナルティ
-    scoreboard players operation $IntervalTime Temporary = @s 1A.LifeTime
-    scoreboard players operation $IntervalTime Temporary %= $40 Const
-    execute if score $IntervalTime Temporary matches 0 positioned ~-15 ~3.2 ~-15 at @a[dx=29,dy=25,dz=29] positioned ~ ~1 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/penalty_thunder/summon
-    scoreboard players reset $IntervalTime Temporary
 # 200tick(10秒)毎のSE
     scoreboard players operation $IntervalTime Temporary = @s 1A.LifeTime
     scoreboard players operation $IntervalTime Temporary %= $200 Const
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.6 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.7 1
     scoreboard players reset $IntervalTime Temporary
 
 

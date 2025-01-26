@@ -17,8 +17,8 @@
     function api:modifier/attack/magic/remove
 
 # 魔法耐性+5%
-    data modify storage api: Argument.UUID set value [I;1,1,1040,4]
-    function api:modifier/defense/magic/remove
+    # data modify storage api: Argument.UUID set value [I;1,1,1040,4]
+    # function api:modifier/defense/magic/remove
 
 # MP回復量+2%
     data modify storage api: Argument.UUID set value [I;1,1,1040,4]

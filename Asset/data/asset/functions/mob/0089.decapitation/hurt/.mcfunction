@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/89/hurt
 
 # 一定確率でダメージを受けて骨を落とす
-    execute if predicate lib:random_pass_per/30 run function asset:mob/0089.decapitation/hurt/2.1.bone_drop
+    execute if predicate lib:random_pass_per/5 run function asset:mob/0089.decapitation/hurt/bone_drop
 
 # 被ダメ時に加速
     effect give @s speed 1 2 true

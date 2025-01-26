@@ -15,10 +15,10 @@
 
 # ダメージ計算
 # 溜め時間：N Tick 溜め時間が長いほど二次関数的にダメージが上がる
-# N ^ 2 / 5 + 200
+# (N ^ 2) / 4 + 200
     scoreboard players operation $SZ.Damage Temporary = @s SZ.CastTick
     scoreboard players operation $SZ.Damage Temporary *= @s SZ.CastTick
-    scoreboard players operation $SZ.Damage Temporary /= $5 Const
+    scoreboard players operation $SZ.Damage Temporary /= $4 Const
     execute store result storage api: Argument.Damage float 1 run scoreboard players operation $SZ.Damage Temporary += $200 Const
 
 # ダメージ

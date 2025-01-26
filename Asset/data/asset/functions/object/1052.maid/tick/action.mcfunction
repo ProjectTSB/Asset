@@ -5,7 +5,7 @@
 # @within function asset:object/1052.maid/tick/
 
 # 敵の方向を見る
-    tp @s ~ ~ ~ facing entity @e[type=#lib:hostile,tag=Enemy,distance=..14,sort=nearest,limit=1]
+    tp @s ~ ~ ~ facing entity @e[type=#lib:hostile,tag=Enemy,tag=!Uninterferable,distance=..14,sort=nearest,limit=1]
 
 # スコアを増やしていく
     scoreboard players add @s 1052.ActionTime 1

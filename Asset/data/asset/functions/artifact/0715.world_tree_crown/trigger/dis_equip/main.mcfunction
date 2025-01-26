@@ -11,11 +11,12 @@
 
 # 以下の補正を消す
 
-# 体力+5%
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-02cb00000006
-
 # 移動速度+5％
-    attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-02cb00000006
+    # attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-02cb00000006
+
+# 最大体力+5%
+    data modify storage api: Argument.UUID set value [I;1,1,715,6]
+    function api:modifier/max_health/remove
 
 # MP回復量+10％
     data modify storage api: Argument.UUID set value [I;1,1,715,6]
@@ -24,3 +25,7 @@
 # 攻撃力-5%
     data modify storage api: Argument.UUID set value [I;1,1,715,6]
     function api:modifier/attack/base/remove
+
+# 回復量
+    data modify storage api: Argument.UUID set value [I;1,1,715,6]
+    function api:modifier/heal/remove

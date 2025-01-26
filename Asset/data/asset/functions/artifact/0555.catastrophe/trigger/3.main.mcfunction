@@ -4,17 +4,22 @@
 #
 # @within function asset:artifact/0555.catastrophe/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
+# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        execute at @e[type=#lib:living,tag=Attacker,limit=1] run particle soul_fire_flame ~ ~0.5 ~ 0.4 0.6 0.4 0 100 force @a
 
-    # ダメージ
-        data modify storage lib: Argument set value {Damage:600,AttackType:Magic,ElementType:None,FixedDamage:false}
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Attacker,limit=1] run function lib:damage/
+# 演出
+    execute unless data storage asset:context id.all{head:554,chest:555,legs:556,feet:557} run function asset:artifact/0555.catastrophe/trigger/vfx
 
-    # リセット
-        function lib:damage/reset
+# フルセット処理
+    execute if data storage asset:context id.all{head:554,chest:555,legs:556,feet:557} run function asset:artifact/0554.catastrophe/trigger/fullset/equip
+
+# 最大体力-10%
+    data modify storage api: Argument.UUID set value [I;1,1,555,5]
+    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/max_health/add
+
+# ノクバ耐性+2
+    attribute @s generic.knockback_resistance modifier add 00000001-0000-0001-0000-022b00000005 "555.KBResist" 0.2 add

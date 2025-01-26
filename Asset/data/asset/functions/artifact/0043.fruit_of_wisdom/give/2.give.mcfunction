@@ -16,8 +16,10 @@
     data modify storage asset:artifact Name set value '[{"text":"叡智の果実","color":"aqua"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"大空の楽園に実る"},{"text":"禁断の果実","color":"light_purple"}]','[{"text":"口にすれば"},{"text":"膨大な魔力","color":"aqua"},{"text":"を得られるが、","color":"white"}]','[{"text":"代償として","color":"white"},{"text":"生命力","color":"light_purple"},{"text":"を失ってしまう。","color":"white"}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 10
 # 神器を発動できるスロット (string) Wikiを参照
@@ -44,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -53,7 +58,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {HideFlags:63,Enchantments:[{id:unbreaking,lvl:1s}]}
 

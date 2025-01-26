@@ -8,5 +8,5 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    scoreboard players set $Fluctuation Lib 5
-    function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value 5
+    function api:mp/fluctuation

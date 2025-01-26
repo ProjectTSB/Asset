@@ -17,12 +17,16 @@
 # 全消し
     data modify storage api: Argument.ID set value 207
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
     data modify storage api: Argument.ID set value 208
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
     data modify storage api: Argument.ID set value 209
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
     data modify storage api: Argument.ID set value 252
     function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
 
 # リセット
     scoreboard players reset @s BZ.Dimension

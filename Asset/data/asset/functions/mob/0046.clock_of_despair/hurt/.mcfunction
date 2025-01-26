@@ -10,3 +10,6 @@
     function lib:heal/
 # リセット
     function lib:heal/reset
+
+# super 呼び出し
+    function asset:mob/super.hurt

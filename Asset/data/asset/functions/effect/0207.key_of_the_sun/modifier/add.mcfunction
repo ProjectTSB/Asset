@@ -6,6 +6,6 @@
 
 # 火攻撃 +40%
     data modify storage api: Argument.UUID set value [I;1,3,207,0]
-    data modify storage api: Argument.Amount set value 0.40d
+    data modify storage api: Argument.Amount set value 0.30d
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/fire/add

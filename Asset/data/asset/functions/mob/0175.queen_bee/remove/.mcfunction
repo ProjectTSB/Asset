@@ -6,3 +6,6 @@
 
 # アマスタ削除
     kill @e[type=armor_stand,tag=4V.ArmorStand]
+
+# スーパーメソッド呼び出し
+    function asset:mob/super.remove

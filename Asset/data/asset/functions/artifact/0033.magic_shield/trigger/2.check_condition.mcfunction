@@ -8,9 +8,5 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-# 既に発動中の場合発動しない
-    execute if entity @s[tag=X.MagicShield] run tellraw @s {"text":"既に効果が発動しています","color":"gold"}
-    execute if entity @s[tag=X.MagicShield] run tag @s remove CanUsed
-
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0033.magic_shield/trigger/3.main

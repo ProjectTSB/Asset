@@ -27,8 +27,9 @@
     data modify storage api: Argument.UUID set value [I;1,1,666,4]
     function api:modifier/mp_regen/remove
 
-# 最大体力-10%
-    attribute @s generic.max_health modifier remove 00000001-0000-0001-0000-029a00000004
+# 最大体力
+    data modify storage api: Argument.UUID set value [I;1,1,666,4]
+    function api:modifier/max_health/remove
 
 # フルセット解除
     execute if entity @s[tag=IG.Fullset] run function asset:artifact/0664.soul_fire_armor/trigger/fullset/fullset_dis_equip

@@ -2,56 +2,62 @@
 #
 # Mobのtick時の処理
 #
-# @within function asset:mob/alias/1004/tick
+# @within asset:mob/alias/1004/tick
+
 #> private
 # @private
     #declare score_holder $Count
     #declare score_holder $4tInterval
 
-# スコアを増やす
-    scoreboard players add @s RW.Tick 1
+# スコア加算
+    scoreboard players add @s[tag=!RW.TickLock] General.Mob.Tick 1
 
-# テレポートさせる
-    execute if entity @p[gamemode=!spectator,distance=..100] if score @s RW.Tick matches -15 run function asset:mob/1004.tultaria/tick/5.tereport
+# モデルにタグ付与
+    tag @e[type=item_display,tag=RW.ModelRoot,distance=..64,sort=nearest,limit=1] add RW.ModelRoot.Target
 
-# プレイヤーを見る
-    execute if score @s RW.Tick matches 0 at @s facing entity @p[distance=..100] eyes run function asset:mob/1004.tultaria/tick/move/tereport
+# 最寄りのモデルのRootを自身の座標にもってくる
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] run tp @s ~ ~ ~
 
-# その後発動するスキル
-# プレイヤーが周囲にいたらスキル選択
-    execute if score @s RW.Tick matches 0 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/1004.tultaria/tick/3.skill_select
+# モデルをプレイヤーに向ける
+    execute if entity @s[tag=!RW.InAction] as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~ ~ ~ 0
 
-# プレイヤーが周囲にいないのに時間が着てしまった場合。スコアを戻す
-    execute if score @s RW.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s RW.Tick -60
+# 開幕
+    execute if entity @s[tag=RW.Opening] run function asset:mob/1004.tultaria/tick/intro/tick
 
-# 選択したスキル発動
-    execute if score @s RW.Tick matches 0.. run function asset:mob/1004.tultaria/tick/4.skill_active
+# ベース動作
+    execute if entity @s[tag=!RW.Opening] run function asset:mob/1004.tultaria/tick/base_move/
 
+# フェーズ2移行動作
+    execute if entity @s[tag=RW.Transition.Phase2] run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/
 
-# 4tickおきに実行するやつ
-# 実行時間を移す
-    scoreboard players operation $4tInterval Temporary = @s RW.Tick
-# 4tickおきに実行
-    scoreboard players operation $4tInterval Temporary %= $4 Const
-    execute if score $4tInterval Temporary matches 0 run function asset:mob/1004.tultaria/tick/interval
+# フェーズ3移行動作
+    execute if entity @s[tag=RW.Transition.Phase3] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/
+
+# 奈落落ちたときの処理
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/void/
+
+# 属性モードに応じたパーティクルを両手から出す
+    execute if entity @s[tag=RW.Mode.Fire] at @e[type=marker,tag=RW.ModelLocator.LeftHand,distance=..8,sort=nearest,limit=1] run particle dust 1 0.5 0 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Fire] at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] run particle dust 1 0.5 0 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Water] at @e[type=marker,tag=RW.ModelLocator.LeftHand,distance=..8,sort=nearest,limit=1] run particle dust 0.8 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Water] at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] run particle dust 0.8 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Thunder] at @e[type=marker,tag=RW.ModelLocator.LeftHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 0.5 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Thunder] at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 0.5 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.LeftHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+    execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
+
+# フェイズ3以降は、「忠誠の幻想」が一人でもいるなら無敵になる
+#    execute if score @s RW.Phase matches 3.. if entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s add RW.Shield
+#    execute if entity @s[tag=RW.Shield] run function asset:mob/1004.tultaria/tick/base_move/loyalty_shield/
+
+# フェイズ3以降、「忠誠の幻想」がいないなら
+#    execute if score @s RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s remove RW.Shield
+
+# 足元が埋まっている間は上にちょっとずつ登る
+    execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.2 ~
+
 # リセット
-    scoreboard players reset $4tInterval
+    tag @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,limit=1] remove RW.ModelRoot.Target
 
-# HP減少時、パーティクルをまとう
-    execute if entity @s[tag=RW.HPless75per] run particle smoke ~ ~0.7 ~ 0.3 0.5 0.3 0 3
-    execute if entity @s[tag=RW.HPless50per] run particle end_rod ~ ~0.7 ~ 0.3 0.5 0.3 0 1
-
-# 以下エラー時の処理
-# もし同一座標に2体存在した場合瞬時にteleportする
-    # 数のカウント
-        execute store result score $Count Temporary if entity @e[type=armor_stand,tag=RW.ArmorStand,distance=..0.01]
-    # もしいたらテレポ
-        execute if score $Count Temporary matches 2.. run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,0d],[8d,8d]]
-        execute if score $Count Temporary matches 2.. run function asset:mob/1004.tultaria/tick/move/spread
-    # スコアも一応戻す
-        execute if score $Count Temporary matches 2.. run scoreboard players reset @s RW.Tick
-    # リセット
-        scoreboard players reset $Count
-
-# もしアマスタがどっかいってしまったら(tpの関係でatが無いと死ぬ)
-    execute at @s unless entity @e[type=armor_stand,tag=RW.ArmorStand,distance=..0.01] run function asset:mob/1004.tultaria/tick/armorstand_respawn
+# Super!
+    function asset:mob/super.tick

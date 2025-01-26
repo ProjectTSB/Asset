@@ -4,7 +4,7 @@
     "predicate": {
         "equipment": {
             "mainhand": {
-                "tag": "lib:has_durability/tool/swords"
+                "tag": "asset:artifact/0958.whetstone_of_the_gods/weapons"
             }
         }
     }

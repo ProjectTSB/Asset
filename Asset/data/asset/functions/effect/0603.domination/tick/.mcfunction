@@ -6,23 +6,28 @@
 
 #> Private
 # @private
-    #declare score_holder $Random
+    #declare tag FacingTarget
+    #declare score_holder $Interval
 
 # 演出
     particle minecraft:electric_spark ~ ~1 ~ 0.4 0.4 0.4 0 2
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $8 Const
-# 向きを適当に変える
-    execute if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~2 ~2
-    execute if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~-2 ~-2
-    execute if score $Random Temporary matches 2 run tp @s ~ ~ ~ ~2 ~-2
-    execute if score $Random Temporary matches 3 run tp @s ~ ~ ~ ~-2 ~2
-    execute if score $Random Temporary matches 4 run tp @s ~ ~ ~ ~ ~4
-    execute if score $Random Temporary matches 5 run tp @s ~ ~ ~ ~ ~-4
-    execute if score $Random Temporary matches 6 run tp @s ~ ~ ~ ~-4 ~
-    execute if score $Random Temporary matches 7 run tp @s ~ ~ ~ ~4 ~
+# ターゲットにTagを付与
+    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] if score @s 603.TargetUUID = @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] MobUUID run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] add FacingTarget
+
+# 2tick毎に実行するようにする
+    scoreboard players add @s 603.Tick 1
+# 実行時間を移す
+    scoreboard players operation $Interval Temporary = @s 603.Tick
+# 2tickおきに実行
+    scoreboard players operation $Interval Temporary %= $2 Const
+    execute if score $Interval Temporary matches 0 facing entity @e[type=#lib:living,tag=FacingTarget,distance=..30,limit=1] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+# ターゲットの方を向く
 # リセット
-    scoreboard players reset $Random Temporary
+    scoreboard players reset $Interval 603.Tick
+
+# ターゲットが周囲にいなければデバフ解除
+    execute unless entity @e[type=#lib:living,tag=FacingTarget,distance=..30,limit=1] run function asset:effect/0603.domination/tick/remove_effect
+
+# ターゲットのTag削除
+    tag @e[type=#lib:living,tag=FacingTarget,distance=..30,limit=1] remove FacingTarget

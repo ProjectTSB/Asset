@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/363/init
 
 # スコアの初期化
-    scoreboard players set @s A3.Tick -80
+    scoreboard players set @s General.Mob.Tick -80

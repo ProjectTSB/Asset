@@ -8,7 +8,8 @@
     playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
 
 # 持ち替え
-    item replace entity @s weapon.mainhand with minecraft:stone_axe
+# 攻撃力のない石の斧に切り替える
+    item replace entity @s weapon.mainhand with minecraft:stone_axe{AttributeModifiers:[]}
 
 # リセット
     tag @s add 5P.Melee

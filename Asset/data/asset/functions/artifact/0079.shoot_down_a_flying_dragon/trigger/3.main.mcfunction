@@ -52,10 +52,10 @@
 
     # //ここ時点で$AttackStrengthは0..3をとる
     # AttackStrengthに従ってダメージを設定
-        execute if score $AttackStrength Temporary matches 0 run data modify storage api: Argument.Damage set value 160.0f
-        execute if score $AttackStrength Temporary matches 1 run data modify storage api: Argument.Damage set value 180.0f
-        execute if score $AttackStrength Temporary matches 2 run data modify storage api: Argument.Damage set value 220.0f
-        execute if score $AttackStrength Temporary matches 3 run data modify storage api: Argument.Damage set value 270.0f
+        execute if score $AttackStrength Temporary matches 0 run data modify storage api: Argument.Damage set value 200.0f
+        execute if score $AttackStrength Temporary matches 1 run data modify storage api: Argument.Damage set value 210.0f
+        execute if score $AttackStrength Temporary matches 2 run data modify storage api: Argument.Damage set value 230.0f
+        execute if score $AttackStrength Temporary matches 3 run data modify storage api: Argument.Damage set value 250.0f
     # 属性なのでModifierを実行
         function api:damage/modifier
 
@@ -74,7 +74,10 @@
 # 効果
     # 通常Hit処理
         execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
-        effect clear @e[type=#lib:living,tag=Hit,distance=..10,limit=1] levitation
+
+    # 敵1体の浮遊を解除
+        data modify storage api: Argument.ID set value 125
+        execute as @e[type=#lib:living,tag=Hit,distance=..10,limit=1] run function api:entity/mob/effect/remove/from_id
 
 # リセット
     tag @e[type=#lib:living,type=!player,tag=Hit,distance=..10] remove Hit

@@ -1,8 +1,37 @@
 #> asset:mob/1004.tultaria/init/
+#
+# Mobのinit時の処理
+#
 # @within asset:mob/alias/1004/init
 
-summon armor_stand ~ ~ ~ {Marker:1b,NoGravity:1b,Invisible:1b,Tags:["RW.ArmorStand","RW.ArmorStandThis","Object","Uninterferable"],Pose:{LeftArm:[15f,0f,-15f],RightArm:[15f,0f,15f]},HandItems:[{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20068}},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20068}}],ArmorItems:[{},{},{},{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20072}}]}
-tp @e[type=armor_stand,tag=RW.ArmorStandThis,distance=..0.01] @s
-tag @e[type=armor_stand,tag=RW.ArmorStandThis,distance=..0.01] remove RW.ArmorStandThis
-summon marker ~ ~ ~ {Tags:["RW.XYZ"]}
-scoreboard players set @s RW.Tick -100
+#> ボスキャラのモデル
+# @private
+#declare tag aj.tultaria.bone
+
+# DeathTime設定
+    data modify entity @s DeathTime set value 19
+
+# タグ管理
+    tag @s add RW.CanElementChange
+
+# 発光パーツを設定
+    data modify entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
+    data modify entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] brightness set value {sky:15,block:15}
+
+# 出現座標を記憶する
+    summon marker ~ ~ ~ {Tags:["RW.Marker.SpawnPoint"]}
+
+# 召喚地点のPos[1]を記録しておく
+    execute store result storage asset:context this.Pos.Y double 1 run data get entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
+
+# ちょっと上に移動
+    tp @s ~ ~0.5 ~
+
+# AJモデル召喚
+    execute at @s rotated ~ 0 run function animated_java:tultaria/summon {args:{animation:neutral_air,start_animation:1b}}
+
+# スコアをセットする
+    scoreboard players set @s General.Mob.Tick -1
+
+# Super!
+    function asset:mob/super.init

@@ -23,5 +23,5 @@
     execute anchored eyes rotated ~ 0 positioned ^ ^ ^0.2 run function asset:artifact/0253.holy_barrier/trigger/3.1.particle_barrier
     execute at @e[type=#lib:living,tag=71.Target] run function asset:artifact/0253.holy_barrier/trigger/3.2.particle_reflect
 
-# ダメージ
-    execute as @e[type=#lib:living,tag=71.Target] run function asset:artifact/0253.holy_barrier/trigger/3.3.damage
+# 敵を破壊する
+    execute as @e[type=#lib:living,tag=71.Target] run function api:mob/kill

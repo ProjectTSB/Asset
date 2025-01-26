@@ -2,7 +2,7 @@
 #
 # 乱発雷
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # 超ランダムで雷
     execute if score @s 1A.LifeTime matches 1010..1045 run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/spread_summon

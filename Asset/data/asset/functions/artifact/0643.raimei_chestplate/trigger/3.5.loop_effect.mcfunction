@@ -9,5 +9,5 @@
 
 # 効果
     effect give @s jump_boost 1 1 true
-    effect give @s speed 1 1 true
+    effect give @s speed 1 0 true
     effect give @s haste 1 0 true

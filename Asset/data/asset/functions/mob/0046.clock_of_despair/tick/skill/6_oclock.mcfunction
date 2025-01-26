@@ -2,7 +2,7 @@
 #
 # メイジ召喚
 #
-# @within function asset:mob/0046.clock_of_despair/tick/3.skill_active
+# @within function asset:mob/0046.clock_of_despair/tick/skill_active
 
 # メイジを召喚
     execute if score @s 1A.LifeTime matches 1210 run data modify storage api: Argument.ID set value 187

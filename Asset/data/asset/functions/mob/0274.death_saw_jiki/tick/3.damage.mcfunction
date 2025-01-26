@@ -3,6 +3,7 @@
 #
 #
 # @within function asset:mob/0274.death_saw_jiki/tick/
+
 #> private
 # @private
     #declare tag DamageTarget
@@ -14,7 +15,7 @@
 
 # 属性ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 28.4f
+        data modify storage lib: Argument.Damage set value 36f
     # 第一属性
         data modify storage lib: Argument.AttackType set value "Physical"
     # 第二属性

@@ -16,3 +16,9 @@
     data modify storage api: Argument.UUID set value [I;1,1,644,4]
 # 補正の削除
     function api:modifier/defense/thunder/remove
+
+    # 雷バフを削除するためのUUID指定
+    #UUID
+    data modify storage api: Argument.UUID set value [I;1,1,644,4]
+# 補正さよなら～
+    function api:modifier/attack/thunder/remove

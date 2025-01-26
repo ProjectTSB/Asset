@@ -15,19 +15,19 @@
     playsound entity.player.splash player @a ~ ~ ~ 0.8 1.7 0
     playsound block.amethyst_block.hit player @a ~ ~ ~ 0.7 1.5 0
 
-# 水耐性+5%
+# 水耐性
     data modify storage api: Argument.UUID set value [I;1,1,775,6]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.1
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 
-# 水攻撃+5%
+# 水攻撃
     data modify storage api: Argument.UUID set value [I;1,1,775,6]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.04
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 雷耐性-5%
+# 雷耐性
     data modify storage api: Argument.UUID set value [I;1,1,775,6]
     data modify storage api: Argument.Amount set value -0.05
     data modify storage api: Argument.Operation set value "multiply_base"

@@ -24,9 +24,9 @@
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~30の追加ダメージ
-            scoreboard players operation $RandomDamage Temporary %= $31 Const
+            scoreboard players operation $RandomDamage Temporary %= $16 Const
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 90
+            scoreboard players add $RandomDamage Temporary 12
     #ダメージセット
         execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     # 第一属性

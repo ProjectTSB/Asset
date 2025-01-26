@@ -12,8 +12,8 @@
 # ID (int)
     data modify storage asset:mob ID set value 83
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 2900
+    data modify storage asset:mob Health set value 3300
 
 # フィールド
 # [ダメージ量、MP減少量の計算に必要な値]
-    data modify storage asset:mob Field set value [25,6]
+    data modify storage asset:mob Field set value [28,10]

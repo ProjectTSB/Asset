@@ -13,7 +13,7 @@
 
 # スコアによって速度が変わる、最高速のときはダメージを受けても止まらない
     execute if entity @s[scores={5O.MoveTime=..39}] unless score @s 5O.HurtTime matches 0.. facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
-    execute if entity @s[scores={5O.MoveTime=40..}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.5 ~ ~
+    execute if entity @s[scores={5O.MoveTime=40..}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1200 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.5 ~ ~
 
 # サウンド
     execute if entity @s[scores={5O.MoveTime=40}] run function asset:mob/0204.infernal_watcher/tick/event/start_frenzy

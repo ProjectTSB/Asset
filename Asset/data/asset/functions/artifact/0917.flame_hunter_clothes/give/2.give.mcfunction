@@ -15,9 +15,11 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の狩猟服(下)","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+5%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','[{"text":"「その炎を辿り、緑が消えた場所を見つけ、","color":"gray","italic":true}]','[{"text":"そこで狩人は炎の原因を悟った。」","color":"gray","italic":true}]']
-# MP以外の消費物 (TextComponentString) (オプション)
-    # data modify storage asset:artifact CostText set value
+    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+4%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','[{"text":"「その炎を辿り、緑が消えた場所を見つけ、","color":"gray","italic":true}]','[{"text":"そこで狩人は炎の原因を悟った。」","color":"gray","italic":true}]']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    # data modify storage asset:artifact ConsumeItem.Item set value
+    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
@@ -44,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
