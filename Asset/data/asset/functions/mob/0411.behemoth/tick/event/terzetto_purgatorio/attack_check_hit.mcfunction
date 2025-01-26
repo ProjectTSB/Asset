@@ -4,8 +4,8 @@
 #
 # @within asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack
 
-# 距離測定
-    scoreboard players set @s BF.Counter 40
+# 氷柱確認
+    scoreboard players set @s BF.Counter 80
     function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack_check_hit_loop
     scoreboard players reset @s BF.Counter
 

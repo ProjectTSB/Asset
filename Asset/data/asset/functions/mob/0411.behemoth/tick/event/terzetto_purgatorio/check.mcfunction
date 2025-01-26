@@ -3,7 +3,7 @@
 # テルツェット・プルガトリオ
 #
 # @within
-#   function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/prediction_line_obj
+#   function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/hit_line
 #   function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/check
 
 # 氷柱がある場合、中断

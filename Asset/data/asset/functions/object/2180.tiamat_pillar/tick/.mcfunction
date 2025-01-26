@@ -19,4 +19,5 @@
     execute if entity @s[scores={General.Object.Tick=8..400}] run particle firework ~ ~4 ~ 2 4 2 0.05 1
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=500..}] run function asset:object/2180.tiamat_pillar/tick/kill
+    execute if entity @s[tag=2180.Pillar.Death] run function asset:object/2180.tiamat_pillar/tick/kill
+    execute if entity @s[scores={General.Object.Tick=400..}] run function asset:object/2180.tiamat_pillar/tick/kill

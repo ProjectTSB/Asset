@@ -68,3 +68,5 @@
     #
     # - オブジェクト
     #declare tag BG.Object オブジェクト共通タグ
+    #declare tag 2180.Pillar
+    #declare tag 2180.Pillar.Death

@@ -11,7 +11,7 @@
 # プレイヤーを向く
     execute facing entity @s eyes as @e[type=item_display,tag=2181.Line,tag=BF.Temp.Dummy,limit=1] rotated ~ ~1 run function lib:rotate_display/
 
-# 距離測定
+# 氷柱確認
     scoreboard players set @s BF.Counter 50
     execute positioned ~ ~ ~ facing entity @s feet run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/check
     scoreboard players reset @s BF.Counter
