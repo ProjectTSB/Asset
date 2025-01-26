@@ -56,7 +56,7 @@
     data modify storage asset:artifact EquipID set value 274
 # 装備時補正 (Compound[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
-    data modify storage asset:artifact Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.armor",Amount:9d,Operation:"add"}
     data modify storage asset:artifact Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
     data modify storage asset:artifact Modifiers append value {Type:"defense/physical",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Modifiers append value {Type:"defense/thunder",Amount:0.05d,Operation:"multiply_base"}
