@@ -6,3 +6,7 @@
     #declare tag BE.Object
     #declare tag 2180.Pillar
     #declare tag 2180.Pillar.Death
+    #declare tag 2180.Pillar.Kill
+    #declare tag 2180.Pillar.Thunder
+    #declare tag 2180.Pillar.Thunder.1
+    #declare tag 2180.Pillar.Thunder.2

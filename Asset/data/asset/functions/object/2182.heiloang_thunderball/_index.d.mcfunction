@@ -8,4 +8,4 @@
     #declare tag 2182.Append
     #declare tag 2182.Hit
     #declare tag 2180.Pillar
-    #declare tag 2180.Pillar.Death
+    #declare tag 2180.Pillar.Thunder

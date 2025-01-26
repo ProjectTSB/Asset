@@ -22,12 +22,13 @@
     function api:damage/reset
 
 # 演出
-    execute positioned ~ ~-50 ~ run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 2 0.7
+    execute positioned ~ ~-30 ~ run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 2 0.7
     data modify storage api: Argument.ID set value 2120
     execute if entity @s[tag=2182.Hit] positioned as @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] positioned ~ ~5 ~ run function api:object/summon
     execute if entity @s[tag=!2182.Hit] positioned as @p[tag=2182.TargetPlayer] run function api:object/summon
 
 # 終了
-    execute if entity @s[tag=2182.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] add 2180.Pillar.Death
+    execute if entity @s[tag=2182.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] add 2180.Pillar.Thunder
+    execute if entity @s[tag=2182.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] remove 2182.Hit
     execute on passengers run kill @s
     kill @s

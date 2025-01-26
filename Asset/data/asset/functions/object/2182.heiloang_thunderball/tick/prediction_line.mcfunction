@@ -9,8 +9,8 @@
     execute if entity @s[tag=2182.Hit] at @p[tag=2182.TargetPlayer] run tag @e[type=item_display,tag=2180.Pillar,sort=nearest,limit=1] add 2182.Hit
 
 # プレイヤーを向く
-    execute if entity @s[tag=!2182.Hit] facing entity @p[tag=2182.TargetPlayer] eyes rotated ~ ~ run function lib:rotate_display/
-    execute if entity @s[tag=2182.Hit] facing entity @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] eyes run function lib:rotate_display/
+    execute if entity @s[tag=!2182.Hit] facing entity @p[tag=2182.TargetPlayer] feet rotated ~ ~ run function lib:rotate_display/
+    execute if entity @s[tag=2182.Hit] facing entity @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] feet run function lib:rotate_display/
 
 # 距離測定
     execute if entity @s[tag=!2182.Hit] as @p[tag=2182.TargetPlayer] run function lib:distance/as_to_at
