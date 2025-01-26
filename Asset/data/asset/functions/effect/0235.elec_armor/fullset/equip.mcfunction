@@ -1,15 +1,15 @@
 #> asset:effect/0235.elec_armor/fullset/equip
 # @within function asset:effect/0235.elec_armor/*given/
 
-# 雷攻撃+3%
+# 雷攻撃
     data modify storage api: Argument.UUID set value [I;1,3,235,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
 
-# 雷耐性+3%
+# 雷耐性
     data modify storage api: Argument.UUID set value [I;1,3,235,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 

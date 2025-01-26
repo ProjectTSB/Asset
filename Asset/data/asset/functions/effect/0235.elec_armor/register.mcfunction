@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"エレキアーマー","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"雷攻撃 +3%","color":"green"}','{"text":"雷耐性 +3%","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"雷攻撃 +2%","color":"green"}','{"text":"雷耐性 +2%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147384647
 # スタック (int) (default = API || 1)

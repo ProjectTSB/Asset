@@ -1,15 +1,15 @@
 #> asset:effect/0234.ice_armor/fullset/equip
 # @within function asset:effect/0234.ice_armor/*given/
 
-# 水攻撃+3%
+# 水攻撃
     data modify storage api: Argument.UUID set value [I;1,3,234,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 水耐性+3%
+# 水耐性
     data modify storage api: Argument.UUID set value [I;1,3,234,0]
-    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Amount set value 0.02
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 
