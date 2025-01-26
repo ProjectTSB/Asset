@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "feet"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    # data modify storage asset:artifact SubTriggers set value
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -55,4 +57,3 @@
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.5,Operation:0,UUID:[I;1,1,723,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0.5,Operation:0,UUID:[I;1,1,723,3],Slot:"feet"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.05,Operation:1,UUID:[I;1,1,723,3],Slot:"feet"},{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.1,Operation:0,UUID:[I;1,1,723,3],Slot:"feet"}]}
-
