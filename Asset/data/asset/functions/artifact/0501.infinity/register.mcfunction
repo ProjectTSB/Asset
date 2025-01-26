@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/alias/501/register
 
-
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 501
 # 神器のベースアイテム
@@ -56,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

@@ -8,14 +8,11 @@
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 0.8
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.5 1.2
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.5
-    playsound minecraft:block.soul_sand.step player @a ~ ~ ~ 1.5 0.5
-    playsound minecraft:block.soul_sand.step player @a ~ ~ ~ 1.5 0.7
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.8
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 1.2
 
-# デカい火の玉を放つ
-    execute anchored eyes run summon armor_stand ^ ^ ^1 {Small:1b,Invisible:1b,Marker:1b,Tags:["R9.BigFireball","R9.Init","Projectile"],Passengers:[{id:"minecraft:snowball",Tags:["AllowProcessingCommonTag","AutoKillWhenDieVehicle","Uninterferable"],Item:{id:"minecraft:potion",Count:1b,tag:{CustomModelData:20233,CustomPotionColor:8639743}}}]}
-
-# 火の玉にInit処理
-    execute as @e[type=armor_stand,tag=R9.BigFireball,tag=R9.Init,distance=..3,sort=nearest,limit=1] run function asset:artifact/0981.soulfire_burst/click/big_fireball/1.init
-
-# 火の玉を動かすShcheduleループ開始
-    schedule function asset:artifact/0981.soulfire_burst/click/big_fireball/2.tick 1t
+# 火の玉オブジェクト召喚
+    data modify storage api: Argument.ID set value 1082
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    execute anchored eyes positioned ^ ^ ^1 run function api:object/summon

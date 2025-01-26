@@ -10,7 +10,7 @@
     execute if entity @s[tag=CanUsed] run scoreboard players add @s T7.UseCount 1
 
 # スコアが規定値以下ならCanUsedを削除
-    execute if entity @s[scores={T7.UseCount=..9}] run tag @s remove CanUsed
+    execute if entity @s[scores={T7.UseCount=..6}] run tag @s remove CanUsed
 
 # スコアが規定値になったらリセット
-    execute if entity @s[scores={T7.UseCount=10..}] run scoreboard players reset @s T7.UseCount
+    execute if entity @s[scores={T7.UseCount=7..}] run scoreboard players reset @s T7.UseCount

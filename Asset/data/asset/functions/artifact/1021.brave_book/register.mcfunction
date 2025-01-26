@@ -35,16 +35,16 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 380
+    data modify storage asset:artifact MPCost set value 240
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 250
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 600
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "summon"
+    data modify storage asset:artifact TypeCooldown.Duration set value 500
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
-    # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value "summon"
-    data modify storage asset:artifact TypeCooldown.Duration set value 600
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

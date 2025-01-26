@@ -37,8 +37,8 @@
     data modify storage asset:artifact AttackInfo.AttackRange set value 7
 # MP消費量 (int)
     # data modify storage asset:artifact MPCost set value
-#MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 10
+# MP回復量
+    data modify storage asset:artifact MPHealWhenHit set value 25
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
