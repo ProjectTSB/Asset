@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"炎魔","color":"#C71585","bold":true},{"text":"の兜","color":"#FF7F50","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]','[{"text":"火攻撃+10% ","color":"red"},{"text":"水攻撃-7.5% ","color":"dark_red"}]','[{"text":"魔法攻撃+5%","color":"dark_purple"},{"text":" MP回復量+2%","color":"green"}]','[{"text":"「力をやろう、全てを焼き払わんとする業火の力を」","color":"#C71585","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"「力をやろう、全てを焼き払わんとする業火の力を」","color":"#C71585","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    data modify storage asset:artifact Trigger set value "damage_entity"
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -41,7 +43,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 100
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
@@ -51,8 +53,15 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact EquipID set value 246
+# 装備時補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attack/fire",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attack/water",Amount:-0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attack/magic",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mp_regen",Amount:0.02d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:14423100},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,1038,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,1038,6],Slot:"head"}]}
-
