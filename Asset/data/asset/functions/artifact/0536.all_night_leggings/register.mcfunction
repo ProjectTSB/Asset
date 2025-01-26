@@ -51,6 +51,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備のID (int) (オプション)
+    data modify storage asset:artifact EquipID set value 241
+# 装備時補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value [{Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
