@@ -54,5 +54,4 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,display:{color:1050959},HideFlags:64,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}]}
-
+    data modify storage asset:artifact CustomNBT set value {HideFlags:196,Trim:{material:"gold",pattern:"tsb_armor:534"},Unbreakable:1b,display:{color:1050959},Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}]}
