@@ -1,9 +1,9 @@
 #> asset:effect/0238.raimei/fullset/equip
 # @within function asset:effect/0238.raimei/*given/
 
-# 雷耐性+9%
+# 雷耐性
     data modify storage api: Argument.UUID set value [I;1,3,238,0]
-    data modify storage api: Argument.Amount set value 0.09
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 
