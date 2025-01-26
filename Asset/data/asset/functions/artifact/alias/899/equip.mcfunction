@@ -5,4 +5,4 @@
 # @within asset_manager:artifact/triggers/equip/equip.m
 
 # 元の処理を呼び出す
-    function asset:artifact/0899.flame_ring/equip
+    function asset:artifact/0899.power_ring/equip

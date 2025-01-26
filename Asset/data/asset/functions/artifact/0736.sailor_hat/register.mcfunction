@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"水兵の帽子","color":"#3DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+7.5% ","color":"dark_green"},{"text":"水攻撃+7.5%","color":"aqua"}]','[{"text":"移動速度+7.5% ","color":"white"},{"text":"魔法攻撃-15%","color":"dark_red"}]','[{"text":"どこからか潮の香りと紅茶の香りがする。","color":"#A3F9FF"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"どこからか潮の香りと紅茶の香りがする。","color":"#A3F9FF"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -51,8 +53,13 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attack/physical",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attack/water",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attack/magic",Amount:-0.15d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:0.075d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:10746367},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,736,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,736,6],Slot:"head"}]}
-

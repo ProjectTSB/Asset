@@ -23,7 +23,7 @@
 # 神器のトリガー (string) Wikiを参照
     # data modify storage asset:artifact Trigger set value "tick"
 # 神器のサブトリガー (string) (オプション)
-    data modify storage asset:artifact SubTrigger set value ["equip"]
+    data modify storage asset:artifact SubTriggers set value ["equip"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

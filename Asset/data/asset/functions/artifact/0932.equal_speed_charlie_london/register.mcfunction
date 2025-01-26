@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip","tick"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -55,4 +57,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

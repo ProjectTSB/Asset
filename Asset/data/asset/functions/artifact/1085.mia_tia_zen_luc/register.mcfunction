@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ミアティアゼンルク","color":"dark_purple","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"魔力を増強する手"}','{"text":"移動速度を半減し、魔法攻撃力を+15%する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"魔力を増強する手"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "offhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -53,8 +55,11 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# 装備時補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attack/magic",Amount:0.15d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:-0.5d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

@@ -22,8 +22,8 @@
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "damage_entity"
-# 効果が重複可能か否か (boolean) (オプション)",
-    data modify storage asset:artifact EnableDuplication set value true
+# 一度に発動する回数の最大値 (boolean) (オプション)
+    data modify storage asset:artifact PartsMax set value 9
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -57,4 +57,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

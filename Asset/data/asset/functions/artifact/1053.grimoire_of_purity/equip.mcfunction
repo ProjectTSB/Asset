@@ -4,6 +4,11 @@
 #
 # @within function asset:artifact/alias/1053/equip
 
+# MPペナルティ
+    data modify storage api: Argument.Fluctuation set value -300
+    data modify storage api: Argument.DisableLog set value true
+    function api:mp/fluctuation
+
 # 演出
     execute positioned ~ ~1.3 ~ rotated ~ ~45 run function asset:artifact/1053.grimoire_of_purity/equip_vfx
     execute positioned ~ ~1.3 ~ rotated ~ ~-45 run function asset:artifact/1053.grimoire_of_purity/equip_vfx
