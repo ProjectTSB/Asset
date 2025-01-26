@@ -153,6 +153,9 @@
     #declare function api:modifier/defense/base/get                                   from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/base/get.mcfunction#L1
     #declare function api:modifier/defense/base/remove                                from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/base/remove.mcfunction#L1
     #declare function api:modifier/defense/base/update_bonus                          from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/base/update_bonus.mcfunction#L1
+    #declare function api:modifier/defense/fall/add                                   from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fall/add.mcfunction#L1
+    #declare function api:modifier/defense/fall/get                                   from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fall/get.mcfunction#L1
+    #declare function api:modifier/defense/fall/remove                                from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fall/remove.mcfunction#L1
     #declare function api:modifier/defense/fire/add                                   from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fire/add.mcfunction#L1
     #declare function api:modifier/defense/fire/get                                   from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fire/get.mcfunction#L1
     #declare function api:modifier/defense/fire/remove                                from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/fire/remove.mcfunction#L1
@@ -168,9 +171,6 @@
     #declare function api:modifier/defense/water/add                                  from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/water/add.mcfunction#L1
     #declare function api:modifier/defense/water/get                                  from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/water/get.mcfunction#L1
     #declare function api:modifier/defense/water/remove                               from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/defense/water/remove.mcfunction#L1
-    #declare function api:modifier/fall_damage/add                                    from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/fall_damage/add.mcfunction#L1
-    #declare function api:modifier/fall_damage/get                                    from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/fall_damage/get.mcfunction#L1
-    #declare function api:modifier/fall_damage/remove                                 from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/fall_damage/remove.mcfunction#L1
     #declare function api:modifier/heal/add                                           from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/heal/add.mcfunction#L1
     #declare function api:modifier/heal/get                                           from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/heal/get.mcfunction#L1
     #declare function api:modifier/heal/remove                                        from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/modifier/heal/remove.mcfunction#L1
@@ -884,20 +884,20 @@
 #   function asset_manager:mob/common_tag/anti_void_action/**
 #   core:tick/player/post
 #   player_manager:grave/build/*
+#   function asset_manager:island/dispel/boss/*
 #   asset:artifact/**
 #   asset_manager:artifact/triggers/trigger/
 #   asset_manager:artifact/triggers/vanilla/push_kill_and_death_event
 #   asset_manager:teleporter/tick/**
 #   core:handler/attack
 #   core:tick/player/
-#   function asset_manager:island/dispel/boss/*
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L27
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L35
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L48
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L98
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/functions/tick/player/post.mcfunction#L11
-# from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 # from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
+# from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L15
 #declare tag this
 
 #> declare
