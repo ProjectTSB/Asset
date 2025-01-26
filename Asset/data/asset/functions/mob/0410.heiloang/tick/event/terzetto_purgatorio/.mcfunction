@@ -66,13 +66,13 @@
         execute if score @s BE.EventTimer matches 694 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃
         execute if score @s BE.EventTimer matches 508 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos
-        execute if score @s BE.EventTimer matches 562 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos
+        execute if score @s BE.EventTimer matches 567 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos
         execute if score @s BE.EventTimer matches 508 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
         execute if score @s BE.EventTimer matches 510 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
         execute if score @s BE.EventTimer matches 512 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 562 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 564 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 566 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 567 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 569 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 571 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
 
 # 終了
     execute if score @s BE.EventTimer matches 773.. run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/end

@@ -10,5 +10,5 @@
     data modify storage api: Argument.FieldOverride.Color set value 16761175
     data modify storage api: Argument.FieldOverride.Scale set value [8f, 8f, 0.05f]
     data modify storage api: Argument.FieldOverride.Tick set value 3
-    execute if entity @e[type=item_display,tag=2180.Pillar,distance=..3] at @e[type=item_display,tag=2180.Pillar,distance=..3] run return run function api:object/summon
+    execute if entity @e[type=item_display,tag=2180.Pillar,distance=..4] at @e[type=item_display,tag=2180.Pillar,distance=..4] run return run function api:object/summon
     execute positioned ~ ~0.1 ~ run function api:object/summon

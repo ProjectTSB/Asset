@@ -5,7 +5,7 @@
 # @within asset:object/2182.heiloang_thunderball/tick/get_player
 
 # 氷柱ヒット判定
-    execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..3] run tag @s add 2182.Hit
+    execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..4] run tag @s add 2182.Hit
     execute if entity @s[tag=2182.Hit] at @p[tag=2182.TargetPlayer] run tag @e[type=item_display,tag=2180.Pillar,sort=nearest,limit=1] add 2182.Hit
 
 # プレイヤーを向く

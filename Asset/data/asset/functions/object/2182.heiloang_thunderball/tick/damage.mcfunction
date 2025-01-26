@@ -9,7 +9,7 @@
     execute as @a if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
 
 # 氷柱ヒット判定
-    execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..3] run tag @s add 2182.Hit
+    execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..4] run tag @s add 2182.Hit
     execute if entity @s[tag=2182.Hit] at @p[tag=2182.TargetPlayer] run tag @e[type=item_display,tag=2180.Pillar,sort=nearest,limit=1] add 2182.Hit
 
 # ダメージ
@@ -22,9 +22,9 @@
     function api:damage/reset
 
 # 演出
-    execute positioned ~ ~-30 ~ run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 2 0.7
+    execute positioned as @p[tag=2182.TargetPlayer] run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0.7
     data modify storage api: Argument.ID set value 2120
-    execute if entity @s[tag=2182.Hit] positioned as @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] positioned ~ ~5 ~ run function api:object/summon
+    execute if entity @s[tag=2182.Hit] positioned as @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] positioned ~ ~2 ~ run function api:object/summon
     execute if entity @s[tag=!2182.Hit] positioned as @p[tag=2182.TargetPlayer] run function api:object/summon
 
 # 終了

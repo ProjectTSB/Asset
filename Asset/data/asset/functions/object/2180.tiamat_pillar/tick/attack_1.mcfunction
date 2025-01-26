@@ -23,3 +23,18 @@
     data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -40f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ rotated ~ ~ run function api:object/summon
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute rotated ~ ~ positioned ^ ^ ^23 run function api:object/summon
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute rotated ~ ~72 positioned ^ ^ ^23 run function api:object/summon
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute rotated ~ ~144 positioned ^ ^ ^23 run function api:object/summon
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute rotated ~ ~216 positioned ^ ^ ^23 run function api:object/summon
+    data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute rotated ~ ~288 positioned ^ ^ ^23 run function api:object/summon
