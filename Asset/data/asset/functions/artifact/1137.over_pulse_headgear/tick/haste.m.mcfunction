@@ -6,4 +6,4 @@
 # @within function asset:artifact/1137.over_pulse_headgear/tick/
 
 effect clear @s haste
-$effect give @s haste 1 $(Level) false
+$effect give @s haste 1 $(Level) true
