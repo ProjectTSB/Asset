@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"大賢者の帽子","color":"#FED4FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"大賢者エリュサスの祈りが込められた帽子","color":"#FED4FF"}]','{"text":"この衣服はエリュサスの写し身そのものだ","color":"#FED4FF"}','[{"text":"魔法耐性+7.5% 魔法攻撃+7.5%","color":"dark_purple"}]','[{"text":"MP回復量+10%","color":"green"}]','[{"text":"物理耐性","color":"dark_green"},{"text":"-7.5% ","color":"dark_red"},{"text":"物理攻撃","color":"dark_green"},{"text":"-10%","color":"dark_red"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"大賢者エリュサスの祈りが込められた帽子","color":"#FED4FF"}]','{"text":"この衣服はエリュサスの写し身そのものだ","color":"#FED4FF"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip","damage","heal","kill","tick"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -46,8 +48,18 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
+    # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact EquipID set value 256
+# 装備時補正 (Component[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attack/magic",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defense/magic",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"attack/physical",Amount:-0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defense/physical",Amount:-0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"mp_regen",Amount:0.10d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:14598115},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,566,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,566,6],Slot:"head"}]}
-
