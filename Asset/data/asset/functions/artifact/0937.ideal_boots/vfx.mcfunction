@@ -1,8 +1,8 @@
-#> asset:artifact/0937.ideal_boots/equip/vfx
+#> asset:artifact/0937.ideal_boots/vfx
 #
 # vfx
 #
-# @within function asset:artifact/0937.ideal_boots/equip/
+# @within function asset:artifact/0937.ideal_boots/equip
 
 # [ImportKey]: NobwRALgngDgpmAXGGB7ANlA5qgdmAGjAFdiBLAEyTAHYAzOgVgGYBOVxgWgCYaBDAAycALHTg1OrZgDYu06XWZ9ujBgEYAHGsJhcfALYJkgLE1AS5GAjfQAE2ojD4AnAwGck4AMapiuCEjWMibnDecPauYABufOjERuAAHkgCRFCJAL6pRI4UZMQuiNxEThAOPohJYHDo6GQwTkZqAuX2qMUQRuUe9rghSNJEAFbE+jBIBWAARnAAXmQ9ZURkTgCiVTV1SwCOxFGYAMp2gVSIdFF1C04AQtOz9pvbVVD7fIdIJ+h16QC6QA_3
 # 多角形 1
