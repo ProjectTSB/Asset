@@ -80,6 +80,7 @@
 
 # 移動
     # アニメーション再生
+        execute if score @s BG.EventTimer matches 720 run tag @e[type=item_display,tag=2180.Pillar] add 2180.Pillar.Death
         execute if score @s BG.EventTimer matches 733 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
         execute if score @s BG.EventTimer matches 732 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
