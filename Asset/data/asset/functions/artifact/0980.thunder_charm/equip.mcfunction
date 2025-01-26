@@ -1,0 +1,11 @@
+#> asset:artifact/0980.thunder_charm/equip
+#
+# 装備時に実行される処理
+#
+# @within function asset:artifact/alias/980/equip
+
+# 演出
+    playsound ogg:block.smithing_table.smithing_table2 player @a ~ ~ ~ 1 1.3
+    playsound minecraft:item.armor.equip_iron player @a ~ ~ ~ 1 1
+    particle minecraft:dust 0.878 1 0.333 1 ~ ~1 ~ 0.2 0.2 0.2 0 20
+    particle crit ~ ~1 ~ 0 0 0 0.5 10

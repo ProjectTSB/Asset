@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 36f
+    data modify storage api: Argument.Damage set value 41f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

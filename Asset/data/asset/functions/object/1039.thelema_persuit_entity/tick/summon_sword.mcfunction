@@ -2,7 +2,7 @@
 #
 # テレームの剣を召喚する
 #
-# @within function asset:object/1039.thelema_persuit_entity/tick/
+# @within function asset:object/1039.thelema_persuit_entity/tick/set_summon_pos
 
 # 召喚
     data modify storage api: Argument.ID set value 1040

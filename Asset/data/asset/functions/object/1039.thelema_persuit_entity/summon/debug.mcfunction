@@ -5,6 +5,8 @@
 # @user
 # @private
 
+    data modify storage api: Argument.FieldOverride.SwordCount set value 10
+
 # 召喚
     data modify storage api: Argument.ID set value 1039
     function api:object/summon

@@ -11,7 +11,7 @@
     execute at @a[tag=Victim] run playsound block.anvil.land hostile @a ~ ~ ~ 1 1.3
 
 # 与えるダメージ
-    data modify storage api: Argument.Damage set value 33f
+    data modify storage api: Argument.Damage set value 38f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
