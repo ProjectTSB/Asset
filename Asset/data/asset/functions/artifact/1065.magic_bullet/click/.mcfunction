@@ -8,7 +8,7 @@
 # 何回目の弾丸かを計算する
 # (7 - 使用回数)
     scoreboard players set $7 Temporary 7
-    execute store result score $RemainCount Temporary run data get storage asset:context Items.mainhand.tag.TSB.RemainingCount
+    execute store result score $RemainCount Temporary run data get storage asset:context RemainingCount
     execute store result score $UseCount Temporary run scoreboard players operation $7 Temporary -= $RemainCount Temporary
 
 # 7回目なら確率でプレイヤーを狙うTagを付与
@@ -36,10 +36,10 @@
     schedule function asset:artifact/1065.magic_bullet/click/loop/ 1t replace
 
 # 使用回数が0になったら再度give
-    execute unless data storage asset:context Items.mainhand.id run playsound block.iron_trapdoor.close player @a ~ ~ ~ 0.7 0.7
-    execute unless data storage asset:context Items.mainhand.id run playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.7
-    execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 1065
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem: true} run playsound block.iron_trapdoor.close player @a ~ ~ ~ 0.7 0.7
+    execute if data storage asset:context {BrokeItem: true} run playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.7
+    execute if data storage asset:context {BrokeItem: true} run data modify storage api: Argument.ID set value 1065
+    execute if data storage asset:context {BrokeItem: true} run function api:artifact/give/from_id
 
 # リセット
     tag @s[tag=TL.AimToPlayer] remove TL.AimToPlayer

@@ -4,16 +4,12 @@
 #
 # @within function asset:artifact/alias/976/click/check
 
-# 先にLatestUseTickを取っておく
-# 使用スロットをチェックし、メインハンドかオフハンドかで分岐
-    execute if data storage asset:context Items{AutoSlot:"mainhand"} store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
-    execute if data storage asset:context Items{AutoSlot:"offhand"} store result score $R4.LatestUseTick Temporary run data get storage asset:context Items.offhand.tag.TSB.LatestUseTick
-
-# 使用時に前回の使用時のTickとの差が開いていた場合、コンボカウントをリセットする
-    execute unless score @s R4.Combo matches -2147483648..2147483647 run scoreboard players set @s R4.Combo 0
-    execute store result score $R4.Temp Temporary run time query gametime
-    scoreboard players operation $R4.Temp Temporary -= $R4.LatestUseTick Temporary
-    execute unless score $R4.Temp Temporary matches ..30 run scoreboard players set @s R4.Combo 0
+# 次の段階までの待機時間のスコア
+# 差が規定値以上ならAttackCountをリセットする
+    execute store result score $R4.Temp Temporary run data get storage global Time
+    scoreboard players operation $R4.Temp Temporary -= @s R4.LatestUseTick
+    execute unless score $R4.Temp Temporary matches ..30 run scoreboard players reset @s R4.Combo
+    scoreboard players reset $R4.Temp Temporary
 
 # コンボフィニッシュを出したあとは、前回の使用時とのTickの差が13Tick以上でないと使用処理がキャンセルされる
     execute if score @s R4.Combo matches 3.. unless score $R4.Temp Temporary matches 13.. run scoreboard players reset $R4.Temp Temporary

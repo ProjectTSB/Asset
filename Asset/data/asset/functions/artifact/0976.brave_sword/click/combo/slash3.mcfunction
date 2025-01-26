@@ -26,6 +26,3 @@
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute positioned ^ ^ ^1 positioned ~ ~-0.5 ~ run function api:object/summon
-
-# しばらく撃てなくなる
-    tag @s add R4.FinishCoolTime

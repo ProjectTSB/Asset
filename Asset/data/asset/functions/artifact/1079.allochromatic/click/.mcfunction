@@ -11,7 +11,7 @@
 # 使用スロットをチェックする
 # 残り使用回数が0になったタイミングでcommon処理を行うとデータが消えるためここでチェックしている
 # でもダメージとかをcommon処理の前に行うのは気持ち悪いからTagで判別している
-    execute if data storage asset:context {TargetSlot:"mainhand"} run tag @s add MainHand
+    execute if data storage asset:context {Slot:"mainhand"} run tag @s add MainHand
 
 # 自身に共鳴・蒼バフを付与
     data modify storage api: Argument.ID set value 229

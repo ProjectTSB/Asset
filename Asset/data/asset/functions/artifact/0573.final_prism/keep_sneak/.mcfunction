@@ -17,7 +17,7 @@
 
 # 精度をスニーク時間に
     scoreboard players set $Spread Temporary 45
-    execute store result score $SneakTime Temporary run data get storage asset:context SneakTime.mainhand 1
+    execute store result score $SneakTime Temporary run data get storage asset:context SneakTime 1
     scoreboard players operation $Spread Temporary -= $SneakTime Temporary
 
 # マイナスになるとやばいんだって
