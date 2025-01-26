@@ -78,12 +78,12 @@
 
 # 移動
     # アニメーション再生
-        execute if score @s BG.EventTimer matches 846 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BG.EventTimer matches 733 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
-        execute if score @s BG.EventTimer matches 845 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
+        execute if score @s BG.EventTimer matches 732 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BG.EventTimer matches 886.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/end
+    execute if score @s BG.EventTimer matches 773.. run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_b/end

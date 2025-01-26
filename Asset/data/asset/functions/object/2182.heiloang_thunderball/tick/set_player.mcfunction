@@ -8,6 +8,8 @@
 
 # 最も近くにいるプレイヤーを対象にする
     scoreboard players operation @s 2182.PlayerId = @p[tag=!PlayerShouldInvulnerable] UserID
+    scoreboard players operation $TempUserID Temporary = @s 2182.PlayerId
+    execute as @a if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
 
 # ロックオン線召喚
     data modify storage api: Argument.ID set value 2181
@@ -18,3 +20,14 @@
 
 # 移動
     tp @s ~ ~50 ~
+
+# 魔法陣召喚
+    execute at @s facing entity @p[tag=2182.TargetPlayer] feet run tp @s ~ ~ ~ ~ ~
+    data modify storage api: Argument.ID set value 2130
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    data modify storage api: Argument.FieldOverride.Color set value 16762434
+    data modify storage api: Argument.FieldOverride.RemoveTimer set value 120
+    execute at @s run function api:object/summon
+
+# 終了
+    tag @a remove 2182.TargetPlayer

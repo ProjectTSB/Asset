@@ -10,9 +10,5 @@
     data modify storage api: Argument.FieldOverride.Damage set value 65.0f
     execute positioned ~ ~ ~ run function api:object/summon
 
-# 演出
-    particle flash ~ ~ ~ 1 1 1 0 4 force
-    particle firework ~ ~ ~ 1 1 1 0.3 10 force
-
 # 終了
     tag @s remove BE.AttackTarget

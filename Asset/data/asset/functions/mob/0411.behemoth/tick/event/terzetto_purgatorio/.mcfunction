@@ -28,15 +28,46 @@
     # 攻撃
         execute if score @s BF.EventTimer matches 348 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack.m with entity @s data.locators.pos_head
 
+# フレアダイブ
+    # 中心点の横方向、左右どちらかに移動
+        execute if score @s BF.EventTimer matches 407 if predicate lib:random_pass_per/50 run tag @s add BF.Temp.Dummy
+        execute if entity @s[tag=!BF.Temp.Dummy] if score @s BF.EventTimer matches 407 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-32 ^ ^9 ~-90 0
+        execute if entity @s[tag=!BF.Temp.Dummy] if score @s BF.EventTimer matches 407 if predicate lib:random_pass_per/33 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-32 ^ ^-9 ~-90 0
+        execute if entity @s[tag=!BF.Temp.Dummy] if score @s BF.EventTimer matches 407 if predicate lib:random_pass_per/33 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-32 ^ ^ ~-90 0
+        execute if entity @s[tag=BF.Temp.Dummy] if score @s BF.EventTimer matches 407 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^32 ^ ^9 ~90 0
+        execute if entity @s[tag=BF.Temp.Dummy] if score @s BF.EventTimer matches 407 if predicate lib:random_pass_per/33 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^32 ^ ^-9 ~90 0
+        execute if entity @s[tag=BF.Temp.Dummy] if score @s BF.EventTimer matches 407 if predicate lib:random_pass_per/33 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^32 ^ ^ ~90 0
+        execute if score @s BF.EventTimer matches 407 run tag @s remove BF.Temp.Dummy
+    # アニメーション再生
+        execute if score @s BF.EventTimer matches 388 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
+        execute if score @s BF.EventTimer matches 408 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BF.EventTimer matches 448 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
+        execute if score @s BF.EventTimer matches 468 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
+        execute if score @s BF.EventTimer matches 472 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/7_dive
+    # 移動
+        execute if score @s BF.EventTimer matches 487..494 at @s run tp @s ^ ^ ^2.8
+        execute if score @s BF.EventTimer matches 495..508 at @s run tp @s ^ ^ ^2.1
+        execute if score @s BF.EventTimer matches 509..517 at @s run tp @s ^ ^ ^1.5
+    # 演出
+        execute if score @s BF.EventTimer matches 487 run playsound entity.breeze.shoot hostile @a ^ ^ ^20 3 0.7
+        execute if score @s BF.EventTimer matches 487..508 at @s run particle cloud ~ ~3 ~ 2 2 2 0.1 10
+        execute if score @s BF.EventTimer matches 487..508 at @s run particle soul_fire_flame ~ ~3 ~ 2 2 2 0.1 10
+        execute if score @s BF.EventTimer matches 487..508 at @s run particle explosion ~ ~ ~ 2 0 2 0.1 3
+    # 攻撃
+        execute if score @s BF.EventTimer matches 472 at @s positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/dive_prediction
+        execute if score @s BF.EventTimer matches 487 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack_dive
+        execute if score @s BF.EventTimer matches 491 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack_dive
+        execute if score @s BF.EventTimer matches 495 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack_dive
+        execute if score @s BF.EventTimer matches 499 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack_dive
+
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 移動
     # アニメーション再生
-        execute if score @s BF.EventTimer matches 388 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
-        execute if score @s BF.EventTimer matches 760 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BF.EventTimer matches 733 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
-        execute if score @s BF.EventTimer matches 759 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
+        execute if score @s BF.EventTimer matches 732 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
 
 # 終了
-    execute if score @s BF.EventTimer matches 800.. run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/end
+    execute if score @s BF.EventTimer matches 773.. run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/end
