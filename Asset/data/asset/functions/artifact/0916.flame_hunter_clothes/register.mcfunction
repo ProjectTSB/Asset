@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の狩猟服(上)","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+4%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','{"text":"フルセット時、","color":"white"}','[{"text":"火耐性+5% 火攻撃+5% ","color":"red"},{"text":"移動速度+10%","color":"white"}]','[{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}]','[{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}]','[{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -21,7 +21,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "chest"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equip"
+    # data modify storage asset:artifact Trigger set value
+# 神器のサブトリガー (string[]) (オプション)
+    data modify storage asset:artifact SubTriggers set value ["equip"]
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -51,8 +53,15 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact EquipID set value 245
+# 装備時補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Modifiers set value []
+    data modify storage asset:artifact Modifiers append value {Type:"attack/fire",Amount:0.04d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defense/fire",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"defense/water",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:10691106},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,916,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;1,1,916,5],Slot:"chest"}]}
-
