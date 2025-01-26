@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"忘却の白雪","color":"#ABF4FF"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"白雪で身を覆った時、"}','{"text":"攻撃に対して追撃が発生し、"}','{"text":"周囲の動きを鈍らせる。"}','{"text":"水攻撃 +25%","color":"green"}','{"text":"回復(受) -15%","color":"red"}']
+    data modify storage asset:effect Description set value ['{"text":"白雪で身を覆った時、"}','{"text":"攻撃に対して追撃が発生し、"}','{"text":"周囲の動きを鈍らせる。"}','{"text":"水攻撃 +20%","color":"green"}','{"text":"被回復量 -10%","color":"red"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

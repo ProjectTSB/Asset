@@ -2,15 +2,15 @@
 # @within function asset:effect/0243.oblivious_snow/*given/
 
 # 補正
-    # 水攻撃+25%
+    # 水攻撃
         data modify storage api: Argument.UUID set value [I;1,3,243,0]
-        data modify storage api: Argument.Amount set value 0.25
+        data modify storage api: Argument.Amount set value 0.2
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/water/add
 
-    # MP回復量-15%
+    # 被回復量
         data modify storage api: Argument.UUID set value [I;1,3,243,0]
-        data modify storage api: Argument.Amount set value -0.15
+        data modify storage api: Argument.Amount set value -0.1
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/receive_heal/add
 
