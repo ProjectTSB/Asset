@@ -1,4 +1,4 @@
-#> asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
+#> asset:artifact/1088.purifying_hydrangea/trigger/4.find_target
 #
 # 水攻撃補正が最も高いプレイヤーを検索する
 #
