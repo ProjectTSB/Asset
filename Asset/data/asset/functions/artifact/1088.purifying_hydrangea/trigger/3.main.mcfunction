@@ -9,19 +9,12 @@
 
 # ここから先は神器側の効果の処理を書く
 
-#> Private
-# @private
-    #declare score_holder $DebuffCount
-
 # デバフを1つ解除
     data modify storage api: Argument.ClearLv set value 2
     data modify storage api: Argument.ClearType set value "bad"
     data modify storage api: Argument.ClearCount set value 1
     function api:entity/mob/effect/remove/from_level
     function api:entity/mob/effect/reset
-
-# 自身のデバフの数をチェック
-    function api:entity/mob/effect/get/size/bad
 
 #> Private
 # @private
@@ -49,5 +42,4 @@
     tag @a[tag=BuffTarget] remove BuffTarget
 
 # リセット
-    scoreboard players reset $DebuffCount Temporary
     scoreboard players reset @s U8.Count
