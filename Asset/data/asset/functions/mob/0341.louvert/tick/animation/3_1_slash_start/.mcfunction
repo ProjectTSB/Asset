@@ -12,6 +12,10 @@
     execute if score @s 9H.AnimationTick matches 1 as @e[type=item_display,tag=9H.Root.This,distance=..100] run function animated_java:louvert/animations/03_1_fire_slash_charge_1/play
 # 範囲演出
     execute if score @s 9H.AnimationTick matches 11..80 positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/3_1_slash_start/vfx
+# 円予告を召喚
+    execute if score @s 9H.AnimationTick matches 11 run data modify storage api: Argument.ID set value 2063
+    execute if score @s 9H.AnimationTick matches 11 run data modify storage api: Argument.FieldOverride set value {Color:16757504,Scale:[30f,30f,0.01f],Tick:70}
+    execute if score @s 9H.AnimationTick matches 11 positioned ~ ~-1 ~ run function api:object/summon
 # スコア調整
     scoreboard players operation $9H.Temp 9H.AnimationTick = @s 9H.AnimationTick
     scoreboard players operation $9H.Temp 9H.AnimationTick %= $2 Const
