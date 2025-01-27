@@ -16,10 +16,6 @@
     function api:entity/mob/effect/remove/from_level
     function api:entity/mob/effect/reset
 
-#> Private
-# @private
-    #declare tag BuffTarget
-
 # 自身にバフ対象のTagを付与する
     tag @s add BuffTarget
 
