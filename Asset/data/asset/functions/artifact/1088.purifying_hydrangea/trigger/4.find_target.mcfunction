@@ -25,6 +25,6 @@
     execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=BuffTarget] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add BuffTarget
 
 # リセット
-    scoreboard players reset @a[tag=SearchTarget] Temporary
     tag @a[tag=SearchTarget] remove SearchTarget
+    scoreboard players reset @a[tag=SearchTarget] Temporary
     scoreboard players reset $HighestWaterAttack Temporary
