@@ -36,6 +36,10 @@
 # バフ対象に演出
     execute at @a[tag=BuffTarget,distance=..20] run function asset:artifact/1088.purifying_hydrangea/trigger/vfx
 
+# 天候が雨または雷雨ならバフのStackを2に設定
+    execute if predicate lib:weather/is_raining run data modify storage api: Argument.Stack set value 2
+    execute if predicate lib:weather/is_thundering run data modify storage api: Argument.Stack set value 2
+
 # バフを付与する
     data modify storage api: Argument.ID set value 253
     execute as @a[tag=BuffTarget] run function api:entity/mob/effect/give
@@ -46,3 +50,4 @@
 
 # リセット
     scoreboard players reset $DebuffCount Temporary
+    scoreboard players reset @s U8.Count
