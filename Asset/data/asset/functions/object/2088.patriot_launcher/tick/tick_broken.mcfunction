@@ -50,6 +50,7 @@
     scoreboard players reset $RepairValue Temporary
     scoreboard players reset $RepairTime Temporary
     scoreboard players reset $RepairPlayer Temporary
+    scoreboard players reset $MaxRepairTime Temporary
 
 #プレイヤーが修理中の場合修理値をn+m*p増加
 #修理値ｇはmaxになったら修理状態へ戻す
