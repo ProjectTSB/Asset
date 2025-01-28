@@ -1,6 +1,6 @@
 #> asset:mob/0213.terrible_sonic_bomber/tick/weapons/set_attack_position_display.m
 #
-#
+# 
 #
 # @within
 #   function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display
@@ -14,8 +14,8 @@
     $data modify storage api: Argument.FieldOverride set value {Color:$(Color),Interpolation:1,Tick:$(Tick),Scale:$(Scale)}
 
 # 見てる方向へRotationXを設定
-    #$data modify storage api: Argument.FieldOverride.RotationX set value $(RotationX)
+    $data modify storage api: Argument.FieldOverride.RotationX set value $(RotationX)
 
 # 召喚
     data modify storage api: Argument.ID set value 2113
-    $execute rotated ~$(RotationX) ~ run function api:object/summon
+    function api:object/summon
