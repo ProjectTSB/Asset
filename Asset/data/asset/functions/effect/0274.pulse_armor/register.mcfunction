@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"パルスアーマー","color":"#44bbff"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"装備した部位の数に応じて、MP回復量が増加する。"}','{"text":"すべて装備した時、最大稼動する。"}']
+    data modify storage asset:effect Description set value ['{"text":"すべて装備した時、最大稼動する。"}','{"text":"最大稼働時、攻撃対象とその周囲の敵に追撃を与える。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
@@ -34,3 +34,6 @@
     data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     # data modify storage asset:effect StackVisible set value false
+
+# フィールド
+    # data modify storage asset:effect Field set value {}
