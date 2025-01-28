@@ -8,27 +8,6 @@
     function asset:artifact/common/use/feet
 
 # ここから先は神器側の効果の処理を書く
-# 炎耐性+10%
-    data modify storage api: Argument.UUID set value [I;1,1,816,5]
-    data modify storage api: Argument.Amount set value 0.2
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/defense/fire/add
-# 水耐性+10%
-    data modify storage api: Argument.UUID set value [I;1,1,817,6]
-    data modify storage api: Argument.Amount set value 0.15
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/defense/water/add
-# 物理耐性+5%
-    data modify storage api: Argument.UUID set value [I;1,1,818,4]
-    data modify storage api: Argument.Amount set value 0.1
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/defense/physical/add
-# 落下耐性+10%
-    data modify storage api: Argument.UUID set value [I;1,1,819,3]
-    data modify storage api: Argument.Amount set value 0.15
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/fall_damage/add
 
-# 音
-    playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 1 1
-    playsound ogg:ambient.nether.crimson_forest.shine1 player @a ~ ~ ~ 1 2
+# フルセット
+    execute if data storage asset:context id.all{head:817,chest:816,legs:818,feet:819} run function asset:artifact/0816.fur_coat_of_firerat/trigger/fullset/equip/

@@ -19,4 +19,4 @@
     clear @s kelp 8
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 876
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id

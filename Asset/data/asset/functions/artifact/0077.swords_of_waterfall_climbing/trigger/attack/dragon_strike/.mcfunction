@@ -7,9 +7,6 @@
 # 演出
     function asset:artifact/0077.swords_of_waterfall_climbing/trigger/attack/vfx
 
-# 自分にマイナス浮遊を付ける
-    execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,effects:[{id:"levitation",amplifier:-50b,duration:2,show_particles:0b}]}
-
 # ダメージ
     data modify storage api: Argument.Damage set value 65f
     data modify storage api: Argument.AttackType set value "Physical"

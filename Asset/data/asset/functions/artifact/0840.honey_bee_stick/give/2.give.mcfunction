@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ハニービーステッキ","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖。","color":"yellow"}','{"text":"周囲のプレイヤーを回復し、","color":"#FFBD24"}','{"text":"周囲のMobにダメージと鈍足を付与する。","color":"yellow"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖。","color":"yellow"}','{"text":"周囲のプレイヤーを回復し、","color":"#FFBD24"}','{"text":"周囲の敵にダメージと鈍足を付与する。","color":"yellow"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 60
+    data modify storage asset:artifact MPCost set value 70
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
