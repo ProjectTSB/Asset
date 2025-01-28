@@ -5,6 +5,9 @@
 # @user
 # @private
 
+# 前方へ進まない設定
+    # data modify storage api: Argument.FieldOverride.ToForward set value false
+
 # 召喚
     data modify storage api: Argument.ID set value 2113
     function api:object/summon
