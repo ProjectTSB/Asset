@@ -52,10 +52,10 @@
 
         #パーティクル & 音
             particle totem_of_undying ~ ~ ~ 1 1 1 0 30 force @a
-            execute as @a[HasMaxHealthTarget] at @s run particle totem_of_undying ~ ~ ~ 1 1 1 0 30 force @a
+            execute as @a[tag=HasMaxHealthTarget] at @s run particle totem_of_undying ~ ~ ~ 1 1 1 0 30 force @a
 
             playsound ui.button.click player @s ~ ~ ~ 1 1 1
-            execute as @a[HasMaxHealthTarget] at @s run playsound ui.button.click player @s ~ ~ ~ 1 1 1
+            execute as @a[tag=HasMaxHealthTarget] at @s run playsound ui.button.click player @s ~ ~ ~ 1 1 1
 
     # リセット
         scoreboard players reset $UserHealthInt Temporary

@@ -21,7 +21,7 @@
 
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 608
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
 
 # 前方拡散設定
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

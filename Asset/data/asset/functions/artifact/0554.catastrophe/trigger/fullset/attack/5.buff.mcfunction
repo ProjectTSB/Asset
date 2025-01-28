@@ -1,8 +1,8 @@
-#> asset:artifact/0554.catastrophe/trigger/fullset/attack/4.give_buff
+#> asset:artifact/0554.catastrophe/trigger/fullset/attack/5.buff
 #
 # バフを得る
 #
-# @within function asset:artifact/0554.catastrophe/trigger/fullset/attack/2.main
+# @within function asset:artifact/0554.catastrophe/trigger/fullset/attack/2.check
 
 #> Private
 # @private
@@ -17,10 +17,6 @@
     data modify storage api: Argument.ID set value 263
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
-
-# スコアを10000で剰余算
-# 余剰分もリセットすると無駄が発生してしまうため
-    scoreboard players operation @s FE.DamageSum %= $10000 Const
 
 # リセット
     scoreboard players reset $Temp Temporary
