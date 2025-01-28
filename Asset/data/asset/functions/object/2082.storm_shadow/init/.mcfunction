@@ -15,10 +15,10 @@
 # 向きを指定座標へ向ける
     # tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
 
-    data modify storage asset:temp args.x set from storage asset:context this.target_pos[0]
-    data modify storage asset:temp args.y set from storage asset:context this.target_pos[1]
-    data modify storage asset:temp args.z set from storage asset:context this.target_pos[2]
-    function asset:object/2082.storm_shadow/init/facing_target_pos.m with storage asset:temp args
+    #data modify storage asset:temp args.x set from storage asset:context this.target_pos[0]
+    #data modify storage asset:temp args.y set from storage asset:context this.target_pos[1]
+    #data modify storage asset:temp args.z set from storage asset:context this.target_pos[2]
+    #function asset:object/2082.storm_shadow/init/facing_target_pos.m with storage asset:temp args
 
-    data remove storage asset:temp args
+    #data remove storage asset:temp args
  
