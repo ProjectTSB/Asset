@@ -18,8 +18,7 @@
     data modify storage asset:object ID set value 2113
 # フィールド(オプション)
     data modify storage asset:object Field.ToForward set value true
-    data modify storage asset:object Field.RotationX set value 0.0f
-    data modify storage asset:object Field.Color set value 16745239
-    data modify storage asset:object Field.Interpolation set value 10
-    data modify storage asset:object Field.Scale set value [2.5f,10f]
-    data modify storage asset:object Field.Tick set value 20
+    data modify storage asset:object Field.Color set value 10000
+    data modify storage asset:object Field.Interpolation set value 0
+    data modify storage asset:object Field.Scale set value [5f,10f]
+    data modify storage asset:object Field.Tick set value 50
