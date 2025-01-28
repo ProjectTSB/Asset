@@ -5,9 +5,6 @@
 # @user
 # @private
 
-# 見てる方向へRotationXを設定
-    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
-
 # 前方へ進まない設定
     # data modify storage api: Argument.FieldOverride.ToForward set value false
 
