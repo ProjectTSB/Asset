@@ -11,7 +11,7 @@
     data modify entity @s interpolation_duration set from storage asset:context this.Interpolation
 
 # translationZ
-    data modify entity @s transformation.translation[2] set from storage asset:context this.TranslationZ
+    execute if data storage asset:context this{ToForward:true} run data modify entity @s transformation.translation[2] set from storage asset:context this.TranslationZ
 
 # 指定されたScaleZに変化
 # 確かに奥行きではあるのだが、内部的にはyなのである、どうしようね

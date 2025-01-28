@@ -1,11 +1,14 @@
 #> asset:mob/0236.ksitigarbha/tick/ongaeshi
 #
-# 
+#
 #
 # @within function asset:mob/0236.ksitigarbha/tick/
 
 # 雪を払ったプレイヤーと周囲のプレイヤーにバフをかける
-    execute at @s run effect give @a[distance=..5] regeneration 5 1
+    data modify storage api: Argument.ID set value 620
+    execute at @s as @a[distance=..5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+    
     execute at @s run tellraw @a[distance=..5] [{"translate": "お地蔵さんは雪を払ってもらった恩返しをした","color": "yellow"}]
 
 # 音
