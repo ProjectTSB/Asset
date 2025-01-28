@@ -21,6 +21,7 @@
         #declare function animated_java:behemoth_aj/animations/6_0_flymove_start/tween
         #declare function animated_java:behemoth_aj/animations/6_1_flymove_end/tween
         #declare function animated_java:behemoth_aj/animations/7_dive/tween
+        #declare function animated_java:behemoth_aj/animations/8_attack/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
@@ -45,6 +46,7 @@
     #declare tag BF.Skill.Start 登場
     #declare tag BF.Skill.Idle 待機
     #declare tag BF.Skill.Move 移動
+    #declare tag BF.Skill.Attack 通常攻撃
     #declare tag BF.Skill.FlareBreath フレアブレス
     #declare tag BF.Skill.Flatten フラッテン
     #declare tag BF.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行

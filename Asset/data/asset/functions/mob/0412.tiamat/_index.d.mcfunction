@@ -25,6 +25,7 @@
         #declare function animated_java:tiamat_aj/animations/7_dive/tween
         #declare function animated_java:tiamat_aj/animations/8_spin/tween
         #declare function animated_java:tiamat_aj/animations/9_roar/tween
+        #declare function animated_java:tiamat_aj/animations/10_attack/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.tiamat_aj.animation.0_start.playing
@@ -45,6 +46,7 @@
     #declare tag BG.Skill.Start 登場
     #declare tag BG.Skill.Idle 待機
     #declare tag BG.Skill.Move 移動
+    #declare tag BG.Skill.Attack 通常攻撃
     #declare tag BG.Skill.DarkBreath ダークブレス
     #declare tag BG.Skill.HellWing ヘルウィング
     #declare tag BG.Skill.Ter.Succ.A テルツェット・サクセッション ヘイローン先行

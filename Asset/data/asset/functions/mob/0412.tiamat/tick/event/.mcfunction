@@ -12,6 +12,9 @@
 # 移動
     execute if entity @s[tag=BG.Skill.Move] run function asset:mob/0412.tiamat/tick/event/move/
 
+# 通常攻撃
+    execute if entity @s[tag=BG.Skill.Attack] run function asset:mob/0412.tiamat/tick/event/attack/
+
 # ダークブレス
     execute if entity @s[tag=BG.Skill.DarkBreath] run function asset:mob/0412.tiamat/tick/event/darkbreath/
 

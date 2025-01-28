@@ -12,6 +12,9 @@
 # 移動
     execute if entity @s[tag=BF.Skill.Move] run function asset:mob/0411.behemoth/tick/event/move/
 
+# 通常攻撃
+    execute if entity @s[tag=BF.Skill.Attack] run function asset:mob/0411.behemoth/tick/event/attack/
+
 # フレアブレス
     execute if entity @s[tag=BF.Skill.FlareBreath] run function asset:mob/0411.behemoth/tick/event/flarebreath/
 
