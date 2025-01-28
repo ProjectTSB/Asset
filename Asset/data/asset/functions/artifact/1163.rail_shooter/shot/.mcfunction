@@ -1,8 +1,8 @@
-#> asset:artifact/0248.bow_of_vinderre/shot/
+#> asset:artifact/1163.rail_shooter/shot/
 #
 # 神器のトリガー処理
 #
-# @within function asset:artifact/alias/248/shot/
+# @within function asset:artifact/alias/1163/shot/
 
 # 演出
     playsound entity.wither.shoot player @a ~ ~ ~ 0.3 1.6 0

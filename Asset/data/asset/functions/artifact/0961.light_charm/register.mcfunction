@@ -57,8 +57,8 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 装備時補正 (Compound[]) (オプション)
     data modify storage asset:artifact Modifiers set value []
-    data modify storage asset:artifact Modifiers append value {Type:"generic.armor",Amount:2d,Operation:"add"}
-    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:-0.02d,Operation:"add"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.armor",Amount:-1d,Operation:"add"}
+    data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:0.015d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
