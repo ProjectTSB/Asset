@@ -18,7 +18,7 @@
     playsound entity.wither.break_block hostile @a ~ ~ ~ 3 0.7
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 20
-    data modify storage api: Argument.Duration set value 3
+    data modify storage api: Argument.Duration set value 4
     execute as @a[nbt={OnGround:1b},distance=..60] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
     # execute at @a[nbt={OnGround:1b},distance=..60] run summon area_effect_cloud ~ ~0.5 ~ {Particle:"block air",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:20b,duration:3,show_particles:0b}]}

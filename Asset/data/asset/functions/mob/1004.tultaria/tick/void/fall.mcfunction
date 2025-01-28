@@ -14,7 +14,7 @@
 # 上に飛ばされる
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 20
-    data modify storage api: Argument.Duration set value 5
+    data modify storage api: Argument.Duration set value 6
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
