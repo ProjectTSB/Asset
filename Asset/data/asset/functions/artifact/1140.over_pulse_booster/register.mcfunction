@@ -64,6 +64,6 @@
     data modify storage asset:artifact Modifiers append value {Type:"defense/water",Amount:-0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Modifiers append value {Type:"generic.movement_speed",Amount:0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Urban","Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Urban","Wi-ki","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {display:{color:13421772},HideFlags:198,Unbreakable:1b,AttributeModifiers:[]}
