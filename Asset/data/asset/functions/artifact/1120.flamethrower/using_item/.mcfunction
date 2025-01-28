@@ -1,8 +1,8 @@
-#> asset:artifact/1120.flamethrower/click/
+#> asset:artifact/1120.flamethrower/using_item/
 #
 # 神器のトリガー処理
 #
-# @within function asset:artifact/alias/1120/click/
+# @within function asset:artifact/alias/1120/using_item/
 
 
 # 演出

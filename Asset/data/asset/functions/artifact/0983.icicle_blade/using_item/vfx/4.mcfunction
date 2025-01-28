@@ -1,8 +1,8 @@
-#> asset:artifact/0983.icicle_blade/click/vfx/4
+#> asset:artifact/0983.icicle_blade/using_item/vfx/4
 #
 #
 #
-# @within function asset:artifact/0983.icicle_blade/click/vfx/.m
+# @within function asset:artifact/0983.icicle_blade/using_item/vfx/.m
 
 ## slash4.obj
 # slash.001

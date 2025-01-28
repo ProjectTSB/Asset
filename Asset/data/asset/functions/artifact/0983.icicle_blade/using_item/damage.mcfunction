@@ -1,8 +1,8 @@
-#> asset:artifact/0983.icicle_blade/click/damage
+#> asset:artifact/0983.icicle_blade/using_item/damage
 #
 #
 #
-# @within function asset:artifact/0983.icicle_blade/click/
+# @within function asset:artifact/0983.icicle_blade/using_item/
 
 # ターゲット指定
     tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] add RB.Hit
