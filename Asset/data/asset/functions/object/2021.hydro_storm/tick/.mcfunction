@@ -27,7 +27,6 @@
     execute if score @s General.Object.Tick matches 1..110 run function asset:object/2021.hydro_storm/tick/direction/vfx/tick
 
 # 予告線
-    execute as @e[type=item_display,tag=2021.AnnounceLine,distance=..2] run data merge entity @s {teleport_duration:0,transformation:{scale:[3f,0.1f,60f]}}
     execute if entity @s[tag=!AW.HydroStormFirst] if entity @e[type=marker,tag=AW.Marker.SummonPoint,distance=24.25..25.75] run function asset:object/2021.hydro_storm/tick/direction/announce_line
 
 # サウンド

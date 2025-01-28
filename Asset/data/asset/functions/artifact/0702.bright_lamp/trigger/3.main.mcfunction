@@ -18,6 +18,14 @@
     effect give @a[distance=..8] night_vision 26 0 true
 
 # 暗闇を解除
+    data modify storage api: Argument.ID set value 24
+    execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
+
+    data modify storage api: Argument.ID set value 74
+    execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
+
     data modify storage api: Argument.ID set value 124
     execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset

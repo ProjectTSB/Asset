@@ -4,6 +4,7 @@
 #
 # @within function
 #   asset:effect/0253.purifying_indigo/end/
+#   asset:effect/0253.purifying_indigo/re-given/
 #   asset:effect/0253.purifying_indigo/remove/
 
 # 水攻撃
