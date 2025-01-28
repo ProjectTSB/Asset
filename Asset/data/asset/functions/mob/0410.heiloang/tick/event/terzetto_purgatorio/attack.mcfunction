@@ -8,7 +8,7 @@
     data modify storage api: Argument.ID set value 2182
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=slime,tag=BE.EntityRoot,limit=1] MobUUID
     data modify storage api: Argument.FieldOverride.Damage set value 60.0f
-    execute positioned ~ ~ ~ run function api:object/summon
+    function api:object/summon
 
 # 終了
     tag @s remove BE.AttackTarget

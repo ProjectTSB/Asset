@@ -67,12 +67,12 @@
     # 攻撃
         execute if score @s BE.EventTimer matches 508 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos
         execute if score @s BE.EventTimer matches 567 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos
-        execute if score @s BE.EventTimer matches 508 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 510 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 512 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 567 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 569 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
-        execute if score @s BE.EventTimer matches 571 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 508 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^40 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 510 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^40 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 512 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^40 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 567 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^3 ^45 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 569 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^3 ^45 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+        execute if score @s BE.EventTimer matches 571 as @a[tag=BE.AttackTarget,sort=random,limit=1] at @s rotated as @e[type=marker,tag=BE.CenterPosition] positioned ^ ^3 ^45 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
 
 # 終了
     execute if score @s BE.EventTimer matches 773.. run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/end

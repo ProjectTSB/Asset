@@ -15,7 +15,7 @@
     execute on passengers run function asset:object/2182.heiloang_thunderball/tick/prediction_line
 
 # 攻撃予告
-    execute if entity @s[scores={General.Object.Tick=115}] at @p[tag=2182.TargetPlayer] run function asset:object/2182.heiloang_thunderball/tick/prediction
+    execute if entity @s[scores={General.Object.Tick=115}] at @p[tag=2182.TargetPlayer] unless entity @e[type=item_display,tag=2180.Pillar,distance=..4] run function asset:object/2182.heiloang_thunderball/tick/prediction
 
 # 終了
     scoreboard players reset $TempUserID Temporary
