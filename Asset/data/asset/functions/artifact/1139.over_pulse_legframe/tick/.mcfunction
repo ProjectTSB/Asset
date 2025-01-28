@@ -15,11 +15,11 @@
         execute store result score $VL.Stack Temporary run data get storage api: Return.Effect.Stack
     # 軽減率を設定
         scoreboard players remove $VL.Stack Temporary 1
-        execute store result storage api: Argument.Amount double 0.01 run scoreboard players operation $VL.Stack Temporary *= $10 Const
+        execute store result storage api: Argument.Amount double 0.01 run scoreboard players operation $VL.Stack Temporary *= $15 Const
     # 補正を追加
         data modify storage api: Argument.UUID set value [I;1,1,1139,4]
         data modify storage api: Argument.Operation set value "multiply_base"
-        function api:modifier/fall_damage/add
+        function api:modifier/defense/fall/add
 
 # リセット
     scoreboard players reset $VL.Stack Temporary
