@@ -9,7 +9,7 @@
 # ダメージ
     data modify storage api: Argument.Damage set value 55.0f
     data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Ice"
+    data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..13] run function api:damage/
     function api:damage/reset
