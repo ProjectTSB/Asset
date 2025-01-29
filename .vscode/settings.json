@@ -4297,7 +4297,7 @@
                         "#",
                         "# プレイヤー再参加時の処理",
                         "#",
-                        "# @within tag/function asset:artifact/load"
+                        "# @within tag/function asset:rejoin"
                     ]
                 },
                 {
