@@ -8,6 +8,9 @@
 # @private
     #declare score_holder $1149.Damage
 
+# バニラ攻撃ならストップ
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsVanilla:1b} run return run tag @s remove CanUsed
+
 # 雷属性攻撃ならダメージを加算
 # 10倍として計算
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{ElementType:Thunder} store result score $1149.Damage Temporary run data get storage asset:context Attack.Amount 10

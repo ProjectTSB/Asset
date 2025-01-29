@@ -42,6 +42,7 @@
         "asset:artifact/0269.holy_symbol_lv.10/rejoin_process",
         "asset:artifact/0373.ice_sorcery/rejoin_process",
         "asset:artifact/0610.call_fish/rejoin_process",
-        "asset:mob/0131.haruclaire/rejoin_process"
+        "asset:mob/0131.haruclaire/rejoin_process",
+        "asset:artifact/1138.over_pulse_bodyarmor/rejoin_process"
     ]
 }
