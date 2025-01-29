@@ -13,7 +13,7 @@
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     # プレイヤー狙い
-        execute if score @s General.Mob.Tick matches 20 at @r[distance=..100] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
+        execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
 
 # メテオ落下2
     # サウンド
@@ -24,7 +24,7 @@
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     # プレイヤー狙い
-        execute if score @s General.Mob.Tick matches 20 at @r[distance=..100] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
+        execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
 
 # デバッグ用、この行動をループする
 #    execute if score @s General.Mob.Tick matches 100 run scoreboard players set @s General.Mob.Tick -10

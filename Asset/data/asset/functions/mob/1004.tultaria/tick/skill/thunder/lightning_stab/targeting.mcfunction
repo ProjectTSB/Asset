@@ -21,7 +21,7 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
 
 # 周囲のランダムなプレイヤーを対象に
-    tag @r[distance=..80,limit=1] add TargetPlayer
+    tag @r[gamemode=!spectator,distance=..80,limit=1] add TargetPlayer
 
 # プレイヤーの周囲に大雑把にマーカー設置
     # 残ってたらヤなのでマーカーを消す
