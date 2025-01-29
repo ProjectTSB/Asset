@@ -13,14 +13,14 @@
 
 # ダメージ
     # 与えるダメージ = 7
-        data modify storage lib: Argument.Damage set value 24f
+        data modify storage api: Argument.Damage set value 24f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

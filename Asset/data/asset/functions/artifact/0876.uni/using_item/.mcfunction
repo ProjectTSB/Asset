@@ -16,7 +16,7 @@
 
 # 残り回数が1回の時発動した場合
     execute if data storage asset:context {BrokeItem: true} run data modify storage api: Argument.ID set value 877
-    execute if data storage asset:context {BrokeItem: true} run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem: true} run function api:artifact/replace/from_id
 
 # 前方拡散設定
     execute anchored eyes positioned ^-0.35 ^-0.15 ^ run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

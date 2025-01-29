@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"深海珊瑚の羽衣","color":"#c3c9ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"全て装備した時、追加で","color":"white"},{"text":"水攻撃+5%","color":"aqua"},{"text":"を得て、","color":"white"}]','[{"text":"水に触れていると特殊な効果を得る。","color":"white"}]','{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

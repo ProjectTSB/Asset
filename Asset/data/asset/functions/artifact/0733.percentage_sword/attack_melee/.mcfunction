@@ -13,17 +13,17 @@
     playsound block.beacon.power_select player @a ~ ~ ~ 0.4 2.0 0
 
 # 4割の割合追加ダメージまでの処理
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "None"
-    data modify storage lib: Argument.FixedDamage set value 1b
-    execute as @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage lib: Argument.Damage float 0.40 run function api:mob/get_max_health
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.FixedDamage set value 1b
+    execute as @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage api: Argument.Damage float 0.40 run function api:mob/get_max_health
 
 # 天使の場合、1%にする
-    execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage lib: Argument.Damage float 0.01 run function api:mob/get_max_health
+    execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage api: Argument.Damage float 0.01 run function api:mob/get_max_health
 
 # ダメージ
-    function lib:damage/modifier
-    execute if data storage lib: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
+    function api:damage/modifier
+    execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
 
 # 色々リセット
-    function lib:damage/reset
+    function api:damage/reset

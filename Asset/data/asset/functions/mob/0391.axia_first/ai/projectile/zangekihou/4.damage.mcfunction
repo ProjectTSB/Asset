@@ -35,12 +35,12 @@
         data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの放った斬撃砲によって、この世から消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-# 補正functionを実行
-    function api:damage/modifier
-# ダメージを与える
-    execute as @a[tag=AV.Temp.Target,distance=..100] at @s run function api:damage/
-# リセット
-    function api:damage/reset
+    # 補正functionを実行
+        function api:damage/modifier
+    # ダメージを与える
+        execute as @a[tag=AV.Temp.Target,distance=..100] at @s run function api:damage/
+    # リセット
+        function api:damage/reset
 
 # タグ外し
     tag @a[tag=AV.Temp.Target,distance=..100] remove AV.Temp.Target

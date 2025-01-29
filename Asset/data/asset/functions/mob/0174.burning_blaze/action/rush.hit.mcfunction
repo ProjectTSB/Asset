@@ -6,9 +6,9 @@
 
 # ダメージ
     data modify storage lib: Argument set value {Damage:25,AttackType:Physical,AttackElement:Fire}
-    function lib:damage/modifier
-    execute as @a[tag=Hit] run function lib:damage/
-    function lib:damage/reset
+    function api:damage/modifier
+    execute as @a[tag=Hit] run function api:damage/
+    function api:damage/reset
 
 # スコア設定
     scoreboard players set @s 4U.NowAction 0

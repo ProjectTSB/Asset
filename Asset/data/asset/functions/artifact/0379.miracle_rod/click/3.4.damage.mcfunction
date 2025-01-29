@@ -15,16 +15,16 @@
 
 # ダメージ設定
     # 与えるダメージ = 580
-        data modify storage lib: Argument.Damage set value 680.0f
+        data modify storage api: Argument.Damage set value 680.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 無属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
-        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=AJ.Magic,scores={AJ.CoolTime=0},sort=nearest,limit=1] AJ.UserID run function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] run function lib:damage/
+        execute as @a if score @s UserID = @e[type=area_effect_cloud,tag=AJ.Magic,scores={AJ.CoolTime=0},sort=nearest,limit=1] AJ.UserID run function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget

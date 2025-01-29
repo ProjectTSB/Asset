@@ -39,7 +39,7 @@
     execute if data storage asset:context {BrokeItem: true} run playsound block.iron_trapdoor.close player @a ~ ~ ~ 0.7 0.7
     execute if data storage asset:context {BrokeItem: true} run playsound entity.horse.armor player @p ~ ~ ~ 0.6 0.7
     execute if data storage asset:context {BrokeItem: true} run data modify storage api: Argument.ID set value 1065
-    execute if data storage asset:context {BrokeItem: true} run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem: true} run function api:artifact/replace/from_id
 
 # リセット
     tag @s[tag=TL.AimToPlayer] remove TL.AimToPlayer

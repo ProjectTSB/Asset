@@ -5,10 +5,10 @@
 # @within function asset:artifact/alias/245/use_item/
 
 # 回復
-    data modify storage lib: Argument.Heal set value 30f
-    function lib:heal/modifier
-    function lib:heal/
-    function lib:heal/reset
+    data modify storage api: Argument.Heal set value 30f
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
 
 # 演出
     tellraw @s {"text":"─── んまいっ！","bold":true}

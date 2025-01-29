@@ -20,22 +20,22 @@
     # ダメージセット
         execute store result storage lib: Argument.Damage float 1 run random value 720..820
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
 
 # 確率で相手に9999ダメージ
     execute if predicate lib:random_pass_per/5 run function asset:artifact/0927.lexiel_s_oath/attack_melee/4.critical_hit
 
 # 対象がトゥルタリアなら2ダメージ
-    execute if entity @e[type=#lib:living,tag=Victim,scores={MobID=1004},distance=..10] run data modify storage lib: Argument.Damage set value 2f
+    execute if entity @e[type=#lib:living,tag=Victim,scores={MobID=1004},distance=..10] run data modify storage api: Argument.Damage set value 2f
 
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $Rotate Temporary

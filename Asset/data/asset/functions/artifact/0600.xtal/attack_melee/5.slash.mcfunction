@@ -21,15 +21,15 @@
 
 # ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 150.0f
+        data modify storage api: Argument.Damage set value 150.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 無属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute positioned ^ ^ ^3 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function lib:damage/
+        function api:damage/modifier
+        execute positioned ^ ^ ^3 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 # スコアもリセットする
     scoreboard players reset @s GO.Time

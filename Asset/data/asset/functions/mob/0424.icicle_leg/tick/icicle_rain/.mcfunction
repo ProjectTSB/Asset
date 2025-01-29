@@ -23,7 +23,7 @@
 # 一定間隔でダメージ
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $5 Const
-    execute if score $Interval Temporary matches 0 as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0424.icicle_leg/tick/icicle_rain/damage
+    execute if score $Interval Temporary matches 0 run function asset:mob/0424.icicle_leg/tick/icicle_rain/damage
     scoreboard players reset $Interval Temporary
 
 # リセット

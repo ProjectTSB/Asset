@@ -9,12 +9,19 @@
     playsound minecraft:entity.ender_dragon.flap player @a[distance=..15] ~ ~ ~ 1 1
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 45f
-    data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.FixedDamage set value false
+    # 与えるダメージ = 42
+        data modify storage api: Argument.Damage set value 45f
+    # 魔法属性
+        data modify storage api: Argument.AttackType set value "Magic"
+    # 無属性
+        data modify storage api: Argument.ElementType set value "None"
+    # 耐性エフェクトを無視するか否か
+        data modify storage api: Argument.FixedDamage set value false
+# 補正functionを実行
     function api:damage/modifier
+# 攻撃した対象に実行
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+# リセット
     function api:damage/reset
 
 # 吹っ飛び効果

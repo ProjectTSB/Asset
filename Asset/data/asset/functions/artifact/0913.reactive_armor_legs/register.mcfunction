@@ -55,4 +55,4 @@
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {AttributeModifiers:[{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:4.0,Operation:0,UUID:[I;1,1,913,4],Slot:"legs"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:6.0,Operation:0,UUID:[I;1,1,913,4],Slot:"legs"}]}
-
+

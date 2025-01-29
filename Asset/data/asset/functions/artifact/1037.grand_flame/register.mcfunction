@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"グランド・フレイム","color":"#e23724","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}','{"text":"自身のHPが多いほど相手に与えるダメージが増える","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の体力割合に比例して与えるダメージが増加する","color":"white"}','{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

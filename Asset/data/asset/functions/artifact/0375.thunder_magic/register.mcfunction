@@ -39,7 +39,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 10
+    data modify storage asset:artifact MPHealWhenHit set value 11.5
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

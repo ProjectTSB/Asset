@@ -32,13 +32,13 @@
 # 非収束ビーム
     execute if score $Spread Temporary matches 2.. facing entity @e[type=marker,tag=SpreadMarker,limit=1] eyes anchored eyes positioned ^ ^-0.25 ^ run function asset:artifact/0573.final_prism/keep_sneak/laser
     # ダメージ設定
-        execute if score $Spread Temporary matches 2.. run data modify storage lib: Argument.Damage set value 45f
+        execute if score $Spread Temporary matches 2.. run data modify storage api: Argument.Damage set value 45f
 
 # 完全収束ビーム
     execute if score $Spread Temporary matches ..1 facing entity @e[type=marker,tag=SpreadMarker,limit=1] eyes anchored eyes positioned ^ ^-0.25 ^ run function asset:artifact/0573.final_prism/keep_sneak/final_laser
     execute if score $Spread Temporary matches 2 anchored eyes positioned ^ ^ ^1 run function asset:artifact/0573.final_prism/keep_sneak/vfx/final_start
     # ダメージ設定
-        execute if score $Spread Temporary matches ..1 run data modify storage lib: Argument.Damage set value 65f
+        execute if score $Spread Temporary matches ..1 run data modify storage api: Argument.Damage set value 65f
 
 # サウンド
     execute if score $Spread Temporary matches 2.. run function asset:artifact/0573.final_prism/keep_sneak/vfx/normal_laser

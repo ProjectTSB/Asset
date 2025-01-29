@@ -6,7 +6,7 @@
 
 # 残り回数が1回の時発動した場合
     execute if data storage asset:context {BrokeItem:true} run data modify storage api: Argument.ID set value 759
-    execute if data storage asset:context {BrokeItem:true} run function api:artifact/give/from_id
+    execute if data storage asset:context {BrokeItem:true} run function api:artifact/replace/from_id
 
 # 演出
     playsound block.bamboo.place player @a ~ ~ ~ 0.4 0.7 0

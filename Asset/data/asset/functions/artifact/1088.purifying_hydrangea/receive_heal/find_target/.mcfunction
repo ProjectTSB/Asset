@@ -1,4 +1,4 @@
-#> asset:artifact/1088.purifying_hydrangea/receive_heal/4.find_highest_water_attack_player
+#> asset:artifact/1088.purifying_hydrangea/receive_heal/find_target/
 #
 # 水攻撃補正が最も高いプレイヤーを検索する
 #
@@ -15,7 +15,7 @@
     tag @a[tag=!BuffTarget,distance=..20] add SearchTarget
 
 # 各プレイヤーの水攻撃補正をスコアへ代入
-    execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/receive_heal/5.get_water_attack_modifier
+    execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/receive_heal/find_target/get_modifier
 
 # 全員の水攻撃補正と比較する
     execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
@@ -25,6 +25,6 @@
     execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=BuffTarget] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add BuffTarget
 
 # リセット
-    scoreboard players reset @a[tag=SearchTarget] Temporary
     tag @a[tag=SearchTarget] remove SearchTarget
+    scoreboard players reset @a[tag=SearchTarget] Temporary
     scoreboard players reset $HighestWaterAttack Temporary

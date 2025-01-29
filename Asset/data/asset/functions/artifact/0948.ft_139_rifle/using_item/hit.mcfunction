@@ -15,17 +15,17 @@
     # ダメージ
         scoreboard players add $Damage Temporary 145
     # 属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # もし、適正距離じゃなかった場合、距離-適正距離=減少ダメージにする
         execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/0948.ft_139_rifle/using_item/damage_attenuation
     # ダメージ量確定
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $Damage Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[tag=LandingTarget] run function lib:damage/
+        function api:damage/modifier
+        execute as @e[tag=LandingTarget] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[tag=LandingTarget] remove LandingTarget
