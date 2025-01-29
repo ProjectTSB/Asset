@@ -3,7 +3,6 @@
 # 
 #
 # @within
-#   function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display
 #   function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare
 #   function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
 #   function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare

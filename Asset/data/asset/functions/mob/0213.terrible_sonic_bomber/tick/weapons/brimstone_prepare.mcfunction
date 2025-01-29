@@ -27,7 +27,7 @@
     tag @a[distance=..256,sort=nearest,limit=6] add 5X.BrimstoneTarget
 
 # 攻撃箇所表示
-    execute at @a[tag=5X.BrimstoneTarget] run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display
+    execute as @a[tag=5X.BrimstoneTarget] at @s run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display
 
 # reset
     scoreboard players reset $attack_start_time Temporary
