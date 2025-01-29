@@ -17,7 +17,7 @@
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 
 # プレイヤーの足元に召喚
-    execute at @r run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
+    execute at @r[distance=..64] run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
 
 # マーカーが回る
     $execute as @e[type=marker,tag=RW.RotateMarker,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12
