@@ -17,8 +17,8 @@
 # TP
     execute positioned ^ ^1.2 ^ run tp @s ^ ^ ^ ~ ~
 
-# スコアが1以下ならキル
-    execute if score @s AV.ProjectileTick matches 1 run kill @s
-
 # スコア減少
     scoreboard players remove @s AV.ProjectileTick 1
+
+# スコアが0以下ならキル
+    execute if score @s AV.ProjectileTick matches 0 run kill @s
