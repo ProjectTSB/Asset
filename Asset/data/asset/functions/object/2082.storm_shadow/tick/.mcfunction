@@ -16,6 +16,16 @@
 # super
     execute at @s run function asset:object/super.tick
 
+# 噴煙のパーティクル
+    execute at @s run particle cloud ^ ^0.2 ^-2.7 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-2.9 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-3.1 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-3.3 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-3.5 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-3.7 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-3.9 0 0 0 0.01 2 force
+    execute at @s run particle cloud ^ ^0.2 ^-4.1 0 0 0 0.01 2 force
+
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
 
