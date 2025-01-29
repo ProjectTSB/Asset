@@ -11,7 +11,7 @@
 
 # 攻撃開始と終了時間指定
     execute store result score $attack_start_time Temporary run time query gametime
-    execute store result storage asset:context this.attack_start_time int 1 run scoreboard players add $attack_start_time Temporary 20
+    execute store result storage asset:context this.attack_start_time int 1 run scoreboard players add $attack_start_time Temporary 10
     execute store result storage asset:context this.attack_end_time int 1 run scoreboard players add $attack_start_time Temporary 1
 
 # 本体の向きを変える
@@ -28,9 +28,13 @@
     data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
 
 # 攻撃箇所表示
-    data modify storage asset:temp args set value {Color:15453454,Tick:50,Scale:"[10f,10f,1f]"}
-    data modify storage asset:temp args.RotationX set value 0
-    execute at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~-5 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/set_attack_position_display.m with storage asset:temp args 
+    #data modify storage asset:temp args set value {Color:15453454,Tick:50,Scale:"[10f,10f,1f]"}
+    #data modify storage asset:temp args.RotationX set value 0
+    #execute at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~-5 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/set_attack_position_display.m with storage asset:temp args 
+# 攻撃箇所表示
+    data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:10f}
+    data modify storage api: Argument.ID set value 2201
+    execute at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~ run function api:object/summon
 
 
 # reset
