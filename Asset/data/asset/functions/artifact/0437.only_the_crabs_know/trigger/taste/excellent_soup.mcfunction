@@ -6,7 +6,7 @@
 
 # HP回復
     # 回復する量 = 20
-        data modify storage lib: Argument.Heal set value 20f
+        data modify storage api: Argument.Heal set value 20f
         function api:heal/modifier
         function api:heal/
     # リセット

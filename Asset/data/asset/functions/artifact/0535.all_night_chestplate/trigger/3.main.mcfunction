@@ -27,10 +27,10 @@
 
 # 引数の設定
     # 回復する量 = 2
-        data modify storage lib: Argument.Heal set value 2f
+        data modify storage api: Argument.Heal set value 2f
 # 補正function
-    function lib:heal/modifier
+    function api:heal/modifier
 # 自分を対象に
-    function lib:heal/
+    function api:heal/
 # リセット
-    function lib:heal/reset
+    function api:heal/reset
