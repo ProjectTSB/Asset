@@ -18,10 +18,23 @@
     playsound block.respawn_anchor.deplete hostile @a[distance=..32] ~ ~ ~ 2 2 0.0
     playsound block.respawn_anchor.deplete hostile @a[distance=..32] ~ ~ ~ 2 1.95 0.0
 
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：8N + 55
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
+    scoreboard players add $DamageTemp Temporary 55
+
 # ダメージ
     # 引数の設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 60.0f
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -36,6 +49,8 @@
 # リセット
     function api:damage/reset
 
+# リセット
+    scoreboard players reset $DamageTemp Temporary
 
 # 消滅処理
     kill @e[type=item_display,tag=2007.Nova,distance=..0.001,sort=nearest,limit=1]

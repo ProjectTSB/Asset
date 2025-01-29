@@ -17,7 +17,6 @@
     execute if entity @s[distance=..1] run data modify storage api: Argument.Damage set value 77.03f
 # ダメージ
     execute as @e[type=zombie,tag=this,distance=..10,sort=nearest,limit=1] run function api:damage/modifier
-    execute as @e[type=zombie,tag=this,distance=..10,sort=nearest,limit=1] run say a
     function api:damage/
 # 引数リセット
     function api:damage/reset

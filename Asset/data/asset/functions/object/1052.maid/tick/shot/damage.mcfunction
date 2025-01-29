@@ -6,7 +6,7 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 4
+        data modify storage api: Argument.Damage set value 7.5
     # 属性
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "None"

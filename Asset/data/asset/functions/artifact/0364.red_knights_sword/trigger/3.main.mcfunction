@@ -15,7 +15,7 @@
 
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 365
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
     execute unless data storage asset:context Items.mainhand.id run tellraw @s {"text":"赤い騎士の剣は血を欲している","color":"dark_red","bold":true}
 
 # 演出
@@ -35,17 +35,17 @@
 
 
 # ダメージ設定
-    # 与えるダメージ = 900
-        data modify storage api: Argument.Damage set value 900f
+    # 与えるダメージ
+        data modify storage api: Argument.Damage set value 610f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # ダメージ
         function api:damage/modifier
         execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
 
-# 自身に5の防御貫通ダメージを与える
+# 自身に防御貫通ダメージを与える
     # ダメージ量
-        data modify storage api: Argument.Damage set value 5.0f
+        data modify storage api: Argument.Damage set value 6.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 補正をしない

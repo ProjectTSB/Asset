@@ -5,4 +5,8 @@
 # @within asset:object/alias/2070/summon
 
 # 元となるEntityを召喚する
-    function asset:object/2070.potion/summon/.m with storage asset:context this
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.PotionColor set from storage asset:context this.PotionColor
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/2070.potion/summon/.m with storage asset:temp Args
+    data remove storage asset:temp Args

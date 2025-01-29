@@ -84,9 +84,23 @@
     playsound entity.blaze.shoot hostile @a[distance=..32] ~ ~ ~ 1 1.3
     playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 0.35 2
 
-# 引数の設定
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：8N + 24
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
+    scoreboard players add $DamageTemp Temporary 24
+
+# ダメージ
+    # 引数の設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 40.0f
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
@@ -100,6 +114,9 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function api:damage/
 # リセット
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $DamageTemp Temporary
 
 # キル
     kill @s
