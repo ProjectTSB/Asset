@@ -79,14 +79,14 @@
 
 # ダメージ
     # 与えるダメージ = 113
-        data modify storage lib: Argument.Damage set value 42f
+        data modify storage api: Argument.Damage set value 42f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 範囲5m以内のエンティティを対象に
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

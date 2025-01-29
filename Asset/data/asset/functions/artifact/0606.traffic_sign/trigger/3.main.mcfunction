@@ -24,15 +24,15 @@
     execute if score @s GU.Count matches 4.. at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/3.2.sign_summon
 
 # ダメージ
-    execute store result storage lib: Argument.Damage float 1 run random value 300..500
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function lib:damage/
+    execute store result storage api: Argument.Damage float 1 run random value 300..500
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
 
 # 鈍足
     # execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run effect give @s slowness 10 0 true
 
 # スコアとかストレージとかリセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $GU.Temp Temporary

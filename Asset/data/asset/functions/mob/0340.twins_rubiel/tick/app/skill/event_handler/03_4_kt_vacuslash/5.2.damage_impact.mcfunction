@@ -12,17 +12,17 @@
 
 # TODO:ダメージ
     # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 70f
+        data modify storage api: Argument.Damage set value 70f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象に
-    execute as @a[tag=9G.Temp.Target.Attack] at @s run function lib:damage/
+    execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
