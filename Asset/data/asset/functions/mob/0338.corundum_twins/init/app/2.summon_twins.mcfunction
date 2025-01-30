@@ -13,7 +13,7 @@
 # 双子とRootの紐づけを行う
     execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
     function asset:mob/0338.corundum_twins/app/general/1.start_link.m with storage asset:temp 9E
-    data remove storage asset:temp 9E.Uid
+    data remove storage asset:temp 9E
 
 # 完了
     tag @s remove 9E.Init
