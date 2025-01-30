@@ -15,9 +15,14 @@
     execute positioned ~ ~4 ~ run function asset:artifact/0190.amor_wand/trigger/vfx/
 
 # 回復
-    data modify storage api: Argument.Heal set value 8.4
+    data modify storage api: Argument.Heal set value 7.0f
     function api:heal/modifier
     execute as @a[distance=..8] run function api:heal/
-
-# リセット
     function api:heal/reset
+
+# 再生
+    data modify storage api: Argument.ID set value 301
+    data modify storage api: Argument.Stack set value 1
+    data modify storage api: Argument.FieldOverride.Heal set value 1.5
+    execute as @a[distance=..8] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
