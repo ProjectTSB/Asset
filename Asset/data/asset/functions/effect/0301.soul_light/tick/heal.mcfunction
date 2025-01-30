@@ -1,0 +1,18 @@
+#> asset:effect/0301.soul_light/tick/heal
+#
+#
+#
+# @within function asset:effect/0301.soul_light/tick/
+
+#> Private
+# @private
+    #declare score_holder $UserID
+
+# 回復
+    data modify storage api: Argument.Heal set from storage asset:context this.Heal
+    execute as @a if score @s UserID = $UserID Temporary run function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
+
+# リセット
+    scoreboard players reset $UserID Temporary
