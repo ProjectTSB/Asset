@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute positioned ^ ^1.2 ^0.5 rotated ~ ~-4 run function asset:artifact/0733.percentage_sword/trigger/4.sweeping_particle
+    execute positioned ^ ^1.2 ^0.5 rotated ~ ~-4 run function asset:artifact/0733.percentage_sword/trigger/vfx
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1 0
     playsound block.beacon.activate player @a ~ ~ ~ 0.6 1.7 0
     playsound block.beacon.activate player @a ~ ~ ~ 0.6 1.8 0
