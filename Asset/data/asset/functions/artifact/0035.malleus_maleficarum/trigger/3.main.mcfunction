@@ -31,3 +31,6 @@
 
 # 初期設定用タグ削除
     execute positioned as @s run tag @e[tag=MalleusMaleficarumInit,distance=..3] remove MalleusMaleficarumInit
+
+# リセット
+    data remove storage asset:temp 0035
