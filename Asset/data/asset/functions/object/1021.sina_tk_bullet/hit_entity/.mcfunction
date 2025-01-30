@@ -16,8 +16,8 @@
     execute as @e[type=#lib:living,type=!player,dx=0,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
-# 消滅
-    kill @s
-
 # リセット
     scoreboard players reset $UserID Temporary
+
+# 消滅
+    kill @s
