@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ボルテージストライカー","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方に5発の高電圧弾を放つ。","color":"white"}]','[{"text":"高電圧弾は直進後、近くの敵を狙い撃つ。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"前方に5発の高電圧弾を放つ","color":"white"}]','[{"text":"高電圧弾は直進後、近くの敵を狙い撃つ","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
