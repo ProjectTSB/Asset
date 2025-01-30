@@ -8,4 +8,4 @@
 # ..5 MovePerStepを0に
 # 14.. 消滅
     execute if score @s General.Object.Tick matches ..5 run data modify storage asset:context this.MovePerStep set value 0
-    execute if score @s General.Object.Tick matches 14.. run kill @s
+    execute if score @s General.Object.Tick matches 14.. run function asset:object/call.m {method:kill}
