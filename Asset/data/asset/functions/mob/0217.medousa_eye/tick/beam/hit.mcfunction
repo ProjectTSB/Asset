@@ -2,7 +2,7 @@
 #
 # 石化ビームの着弾判定
 #
-# @within function asset:mob/0217.medousa_eye/tick/beam/shoot
+# @within function asset:mob/0217.medousa_eye/tick/beam/
 
 #> Private
 # @private

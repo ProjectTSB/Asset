@@ -1,4 +1,4 @@
-#> asset:mob/0217.medousa_eye/tick/beam/shoot
+#> asset:mob/0217.medousa_eye/tick/beam/
 #
 # ビーム発射
 #

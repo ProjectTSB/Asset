@@ -4,7 +4,7 @@
 #
 # @within function
 #   asset:mob/0217.medousa_eye/tick/fix_direction
-#   asset:mob/0217.medousa_eye/tick/beam/shoot
+#   asset:mob/0217.medousa_eye/tick/beam/
 
 # リセット
     data modify entity @s NoAI set value 0b

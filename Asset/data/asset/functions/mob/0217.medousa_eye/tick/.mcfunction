@@ -19,4 +19,4 @@
     execute if entity @s[scores={General.Mob.Tick=1..14}] run function asset:mob/0217.medousa_eye/tick/announce/
 
 # 石化ビーム発射
-    execute if entity @s[scores={General.Mob.Tick=15..}] run function asset:mob/0217.medousa_eye/tick/beam/shoot
+    execute if entity @s[scores={General.Mob.Tick=15..}] run function asset:mob/0217.medousa_eye/tick/beam/
