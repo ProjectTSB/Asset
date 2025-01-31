@@ -9,7 +9,7 @@
 
 # スコア管理
     execute if entity @s[scores={General.Mob.Tick=0..}] run scoreboard players add @s General.Mob.Tick 1
-    execute unless entity @s[scores={General.Mob.Tick=0..}] positioned ^ ^ ^10 if entity @p[distance=..10] at @s run scoreboard players add @s General.Mob.Tick 1
+    execute unless entity @s[scores={General.Mob.Tick=0..}] positioned ^ ^ ^10 if entity @p[gamemode=!spectator,distance=..10] at @s run scoreboard players add @s General.Mob.Tick 1
 
 # 向きを固定する
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0217.medousa_eye/tick/fix_direction
