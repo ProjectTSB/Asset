@@ -8,8 +8,8 @@
 # @private
     #declare score_holder $BM.Temp
 
-# スコアを増やす
-    scoreboard players add @s General.Mob.Tick 1
+# プレイヤーが周囲にいる時スコアを増やす
+    execute if entity @p[gamemode=!spectator,distance=..16] run scoreboard players add @s General.Mob.Tick 1
 
 # スコアによって移動速度を増加
     execute if score @s General.Mob.Tick matches 501 run effect give @s speed infinite 0 true

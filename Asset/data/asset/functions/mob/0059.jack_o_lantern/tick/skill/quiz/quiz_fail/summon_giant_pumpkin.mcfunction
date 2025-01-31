@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/quiz/quiz_fail/glowing
 
 # 本体のカウントを1減らす
-    scoreboard players remove @e[type=husk,tag=this,distance=..30,sort=nearest,limit=1] 1N.FakeCount 1
+    scoreboard players remove @e[type=zombie,tag=this,distance=..30,sort=nearest,limit=1] 1N.FakeCount 1
 
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/
@@ -31,7 +31,7 @@
 # 召喚する
     data modify storage api: Argument.ID set value 2031
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Giant
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=husk,tag=this,distance=..30,limit=1] MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..30,limit=1] MobUUID
     execute positioned ~ ~1.5 ~ run function api:object/summon
 
 # 消滅

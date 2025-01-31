@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"精霊の詩衣","color":"#B0FFD7"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"体力回復量+6% 最大体力+8","color":"light_purple"}]','[{"text":"物理耐性-5%","color":"dark_red"}]','[{"text":"精霊への詩を紡ぐ者が纏う衣。","color":"gray"}]','[{"text":"その衣を纏う者は癒しの力を得る。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"回復量+7% 最大体力+4","color":"light_purple"}]','[{"text":"物理耐性-5%","color":"dark_red"}]','[{"text":"精霊への詩を紡ぐ者が纏う衣。","color":"gray"}]','[{"text":"その衣を纏う者は癒しの力を得る。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

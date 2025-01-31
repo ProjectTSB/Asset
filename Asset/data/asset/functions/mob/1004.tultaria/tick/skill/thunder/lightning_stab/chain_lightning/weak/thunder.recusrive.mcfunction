@@ -11,7 +11,7 @@
     particle minecraft:dust 0.878 1 0.333 0.8 ~ ~ ~ 0.2 0.2 0.2 0 2 force @a[distance=..30]
 
 # ダメージ判定
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/damage
 
 # 再帰
     execute if entity @s[tag=RW.ChainLightning1,distance=..60] unless entity @e[type=marker,tag=RW.ChainLightning2,distance=..0.5] positioned ^ ^ ^1 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/weak/thunder.recusrive

@@ -19,7 +19,7 @@
 # 突き開始
     execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/active
     # 突き部分のダメージ
-        execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 21 positioned ^ ^ ^1 as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
+        execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 21 positioned ^ ^ ^1 if entity @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
 # ハイパー突き
     execute if score @s[scores={RW.Phase=3}] General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/hyper_stab/
 
@@ -36,8 +36,8 @@
     execute if score @s[scores={RW.Phase=2..}] General.Mob.Tick matches 25 run summon marker ~ ~1 ~ {Tags:["RW.ChainLightning.Common","RW.ChainLightning6"]}
 
 # 設置と同時にこっちを向く
-    execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p eyes run tp @s ~ ~0.5 ~ ~ 0
-    execute if score @s General.Mob.Tick matches 25 facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..128] eyes run tp @s ~ ~0.5 ~ ~ 0
+    execute if score @s General.Mob.Tick matches 25 facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ ~
 
 # 雷撃発動アニメ
     execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/tween {to_frame:0,duration:1}

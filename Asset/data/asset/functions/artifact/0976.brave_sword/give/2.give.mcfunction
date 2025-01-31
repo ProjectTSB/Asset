@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 100
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 4
+    data modify storage asset:artifact MPHealWhenHit set value 4.6
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 5
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
@@ -58,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Rumor","Flora","Urban"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:6,Unbreakable:1b}
 

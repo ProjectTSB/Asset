@@ -14,7 +14,7 @@
 
 # ここから先は神器側の効果の処理を書く
 # 火薬消費
-    clear @s gunpowder 1
+    execute if predicate lib:random_pass_per/25 run clear @s gunpowder 1
 
 # エンダーパールwithアーマースタンド召喚
     execute anchored eyes run summon snowball ^ ^ ^1 {Tags:["5.MatchlockInit","5.MatchlockEntity"],Item:{Count:1b,id:"minecraft:blackstone"},Passengers:[{id:"minecraft:marker",Tags:["5.MatchlockIndicator","5.MatchlockInit"]}]}
@@ -42,7 +42,7 @@
     tp @s ~ ~ ~ ~ ~-10
 
 # 飛翔時間スコアセット
-    scoreboard players set @e[type=marker,tag=5.MatchlockInit,distance=..3,limit=1] 5.FlyingDuration 10
+    scoreboard players set @e[type=marker,tag=5.MatchlockInit,distance=..3,limit=1] 5.FlyingDuration 11
 
 # 音/particle
     playsound minecraft:entity.zombie.break_wooden_door player @a ~ ~ ~ 1

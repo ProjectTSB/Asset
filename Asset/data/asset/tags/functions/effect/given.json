@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0296.soul_disconnection/_/given",
         "asset:effect/0618.soaked/_/given",
         "asset:effect/0067.slowness/_/given",
         "asset:effect/0017.slowness/_/given",
@@ -34,6 +35,7 @@
         "asset:effect/0608.sinking/_/given",
         "asset:effect/0612.infringement/_/given",
         "asset:effect/0613.white_curse/_/given",
+        "asset:effect/0617.twins_sight/_/given",
         "asset:effect/0601.conviction/_/given",
         "asset:effect/0263.chivalry_of_ruin/_/given",
         "asset:effect/0268.macaron_barrier/_/given",
@@ -49,7 +51,6 @@
         "asset:effect/0272.inspiration/_/given",
         "asset:effect/0201.magic_shield/_/given",
         "asset:effect/0101.attack_base_debuff/_/given",
-        "asset:effect/0107.defense_base_debuff/_/given",
         "asset:effect/0276.unending_thunder/_/given",
         "asset:effect/0001.attack_base_debuff/_/given",
         "asset:effect/0051.attack_base_debuff/_/given",

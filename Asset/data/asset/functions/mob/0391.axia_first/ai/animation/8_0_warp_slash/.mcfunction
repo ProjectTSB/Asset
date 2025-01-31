@@ -21,7 +21,7 @@
     execute if score @s AV.AnimationTick matches 121 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/10_3_warp_slash_2/play
 
 # アニメーション終了処理
-    execute if score @s AV.AnimationTick matches 187 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/end
+    execute if score @s AV.AnimationTick matches 197 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/end
 
 # 斬撃エフェクト
     execute if score @s AV.AnimationTick matches 45 run function asset:mob/0391.axia_first/ai/animation/8_0_warp_slash/slash_summon/1

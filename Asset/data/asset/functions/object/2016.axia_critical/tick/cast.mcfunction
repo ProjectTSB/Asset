@@ -82,20 +82,29 @@
     playsound item.trident.thunder hostile @a[distance=..32] ~ ~ ~ 0.35 2
     playsound entity.wither.shoot hostile @a[distance=..32] ~ ~ ~ 0.45 1.5
 
-# 引数の設定
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：50N + 50
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 50
+    scoreboard players add $DamageTemp Temporary 50
+
+# ダメージ
+    # 引数の設定
     # 与えるダメージ
-        # ノーマルなら 100f
-            execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.Damage set value 100f
-        # ハードなら 9999f
-            execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 9999f
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
-    # 悪いがこれにあたったら死んでね☆
-        execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FixedDamage set value true
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
@@ -103,6 +112,9 @@
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] at @s run function api:damage/
 # リセット
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $DamageTemp Temporary
 
 # キル
     kill @s

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"豪鬼","color":"#A6A6A6","bold":true},{"text":"の兜","color":"white","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"豪鬼","color":"#A6A6A6"},{"text":"の力が全て揃いし時、超回復力を手に入れるだろう","color":"white"}]','[{"text":"物理攻撃+5% 物理耐性+7.5%","color":"dark_green"}]','[{"text":"魔法攻撃-5% 魔法耐性-5%","color":"dark_red"}]','[{"text":"その鬼はかつて村を滅ぼした","color":"#A6A6A6","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"豪鬼","color":"#A6A6A6"},{"text":"の力が全て揃いし時、回復力を手に入れるだろう","color":"white"}]','[{"text":"物理攻撃+5% 物理耐性+7.5%","color":"dark_green"}]','[{"text":"魔法攻撃-10% 魔法耐性-5%","color":"dark_red"}]','[{"text":"その鬼はかつて村を滅ぼした","color":"#A6A6A6","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

@@ -12,16 +12,16 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 22.5f
+        data modify storage api: Argument.Damage set value 22.5f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute as @p[gamemode=!creative,tag=LandingTarget,distance=..50] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @p[gamemode=!creative,tag=LandingTarget,distance=..50] at @s run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @p[tag=LandingTarget,distance=..50] remove LandingTarget

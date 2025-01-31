@@ -10,21 +10,21 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 260.0f
+        data modify storage api: Argument.Damage set value 260.0f
     # 属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # 補正を無視する
-        data modify storage lib: Argument.BypassModifier set value true
+        # data modify storage api: Argument.BypassModifier set value true
     # ダメージ
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
-        data modify storage lib: Argument.BypassModifier set value false
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run function lib:damage/
+        execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
+        # data modify storage api: Argument.BypassModifier set value false
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run function api:damage/
 # リセット
     scoreboard players reset $OwnerID Temporary
-    function lib:damage/reset
+    function api:damage/reset
 
 # 演出
     playsound minecraft:item.trident.return neutral @a ~ ~ ~ 1 2

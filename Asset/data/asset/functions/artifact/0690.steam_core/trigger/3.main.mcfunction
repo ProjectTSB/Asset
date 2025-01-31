@@ -16,20 +16,20 @@
     playsound block.fire.extinguish player @a ~ ~ ~ 0.5 0.9 0
     playsound block.fire.extinguish player @a ~ ~ ~ 0.5 1.1 0
 
-# 火攻撃+15%
+# 火攻撃
     data modify storage api: Argument.UUID set value [I;1,1,690,5]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/fire/add
 
-# 水攻撃+15%
+# 水攻撃
     data modify storage api: Argument.UUID set value [I;1,1,690,5]
     data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
 
-# 被回復量-15%
+# 被回復量
     data modify storage api: Argument.UUID set value [I;1,1,690,5]
-    data modify storage api: Argument.Amount set value -0.15
+    data modify storage api: Argument.Amount set value -0.20
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/receive_heal/add

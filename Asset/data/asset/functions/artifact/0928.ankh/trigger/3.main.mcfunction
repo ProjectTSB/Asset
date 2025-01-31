@@ -14,4 +14,4 @@
     execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/0928.ankh/vfx
 
 # 範囲内のプレイヤーの最大体力の5%を回復
-    execute as @a[distance=..10] at @s run function asset:artifact/0928.ankh/trigger/4.heal
+    execute as @a[distance=..6] at @s run function asset:artifact/0928.ankh/trigger/4.heal

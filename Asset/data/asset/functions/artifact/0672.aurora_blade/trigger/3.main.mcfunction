@@ -36,25 +36,25 @@
         # 疑似乱数取得
             execute store result score $RandomDamage Temporary run function lib:random/
         # 剰余算する。0~300の追加ダメージ
-            scoreboard players set $CalcRandom Temporary 301
+            scoreboard players set $CalcRandom Temporary 201
             scoreboard players operation $RandomDamage Temporary %= $CalcRandom Temporary
         # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 150
+            scoreboard players add $RandomDamage Temporary 200
 
 # Argument.Damageに代入 $MPPer >= 70 なら1.5倍
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
-    execute if score $MPPer Temporary matches 70.. store result storage lib: Argument.Damage float 1.5 run scoreboard players get $RandomDamage Temporary
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
+    execute if score $MPPer Temporary matches 70.. store result storage api: Argument.Damage float 1.5 run scoreboard players get $RandomDamage Temporary
 
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
 
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $CalcRandom Temporary
     scoreboard players reset $RandomDamage Temporary
     scoreboard players reset $MP Temporary

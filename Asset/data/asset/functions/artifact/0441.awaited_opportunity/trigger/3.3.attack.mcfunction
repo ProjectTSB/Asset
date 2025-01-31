@@ -9,12 +9,12 @@
 
 # ダメージを与える
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 39.5f
+        data modify storage api: Argument.Damage set value 9.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
 # 補正function
-    execute as @p[tag=this] run function lib:damage/modifier
+    execute as @p[tag=this] run function api:damage/modifier
 # 対象に
-    function lib:damage/
+    function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

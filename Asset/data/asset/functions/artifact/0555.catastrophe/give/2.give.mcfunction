@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"破滅の騎士のための装備"}]','[{"text":"傷付く度に、快楽を求めた"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+2","color":"white"}','{"text":"最大体力-10%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]','{"text":"計1000ダメージ与える、または被ダメージ時","color":"white"}','{"text":"対象または攻撃者に無属性ダメージを与え","color":"white"}','{"text":"攻撃+1%、耐性-1%を10秒間得る(最大20スタック)","color":"white"}','[{"text":"破滅の騎士のための装備","color":"gray"}]','[{"text":"傷付く度に、快楽を求めた","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

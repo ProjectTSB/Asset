@@ -14,13 +14,13 @@
     execute at @p[tag=Victim,distance=..6] run playsound minecraft:entity.dolphin.splash hostile @a ~ ~ ~ 0.6 1 0
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 9f
+    data modify storage api: Argument.Damage set value 13f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[tag=Victim,distance=..6] run function lib:damage/
+    execute as @p[tag=Victim,distance=..6] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

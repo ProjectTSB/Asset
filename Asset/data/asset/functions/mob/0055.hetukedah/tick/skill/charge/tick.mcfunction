@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0055.hetukedah/tick/skill/charge/windup
 
 # しばらくこっち見る
-    execute if score @s General.Mob.Tick matches 0..40 facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 0..40 facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
 # 突進
     execute if score @s General.Mob.Tick matches 40..50 run function asset:mob/0055.hetukedah/tick/skill/charge/move_forward

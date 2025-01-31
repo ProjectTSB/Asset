@@ -16,9 +16,10 @@
     execute anchored eyes positioned ^-0.35 ^-0.25 ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam_recursive
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 360.0f
+    data modify storage api: Argument.Damage set value 220.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.AdditionalMPHeal set value 6.5f
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
     function api:damage/reset

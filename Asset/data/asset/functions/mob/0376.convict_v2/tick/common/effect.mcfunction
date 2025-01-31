@@ -10,3 +10,4 @@
     execute if predicate api:global_vars/difficulty/normal run data modify storage api: Argument.Stack set value 5
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Stack set value 9
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

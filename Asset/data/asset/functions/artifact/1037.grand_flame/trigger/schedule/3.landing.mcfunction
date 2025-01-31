@@ -15,20 +15,20 @@
     execute as @a if score @s UserID = $ST.OwnerId Temporary run tag @s add ST.Owner
 
 # ダメージ計算
-# 計算式 ： 660 + (現在HP%) * 2
-    scoreboard players set $ST.Damage Temporary 660
+# 計算式 ： 520 + (現在HP%) * 2
+    scoreboard players set $ST.Damage Temporary 520
     scoreboard players operation $ST.PercentHP Temporary = @s ST.PercentHP
     scoreboard players operation $ST.PercentHP Temporary *= $2 Const
-    execute store result storage lib: Argument.Damage float 1 run scoreboard players operation $ST.Damage Temporary += $ST.PercentHP Temporary
+    execute store result storage api: Argument.Damage float 1 run scoreboard players operation $ST.Damage Temporary += $ST.PercentHP Temporary
 
 # ダメージ付与
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
-        execute as @p[tag=ST.Owner] run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run function lib:damage/
+        execute as @p[tag=ST.Owner] run function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run function api:damage/
 
 # 球体演出
     function asset:artifact/1037.grand_flame/trigger/schedule/3.1.vfx
@@ -59,7 +59,7 @@
     playsound entity.generic.explode player @a[distance=..32] ~ ~ ~ 2 1
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $ST.OwnerId Temporary
     scoreboard players reset $ST.Damage Temporary
     scoreboard players reset $ST.PercentHP Temporary

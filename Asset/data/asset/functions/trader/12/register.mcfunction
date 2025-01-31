@@ -7,7 +7,7 @@
 execute unless loaded 21 3 -25 run return 1
 
 # ID (int)
-    data modify storage asset:trader ID set value 11
+    data modify storage asset:trader ID set value 12
 # Pos ([int] @ 3)
     data modify storage asset:trader Pos set value [21,3,-25]
 # 名前 (TextComponent) (オプション)

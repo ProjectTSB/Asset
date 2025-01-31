@@ -9,13 +9,13 @@
 
 
 # 与えるダメージ
-    data modify storage lib: Argument.Damage set value 28f
+    data modify storage api: Argument.Damage set value 28f
 # 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # 対象
-    execute as @p[gamemode=!spectator,tag=Victim,distance=..32] run function lib:damage/
+    execute as @p[gamemode=!spectator,tag=Victim,distance=..32] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

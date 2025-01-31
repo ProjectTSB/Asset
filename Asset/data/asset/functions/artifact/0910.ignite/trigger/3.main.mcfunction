@@ -22,15 +22,15 @@
 
 # 近接で殴った相手に800ダメ
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 800.0f
+    data modify storage api: Argument.Damage set value 880.0f
 # 第一属性
-    data modify storage lib: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.AttackType set value "Physical"
 # 第二属性
-    data modify storage lib: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
-    function lib:damage/modifier
+    function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,tag=Victim,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
 
 # 衝撃波演出
     execute positioned ~ ~1 ~ positioned ^ ^ ^0.5 run function asset:artifact/0910.ignite/trigger/particle
@@ -41,12 +41,12 @@
     execute positioned ^ ^ ^1.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
     execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
 # ダメージセット
-    data modify storage lib: Argument.Damage set value 500.0f
+    data modify storage api: Argument.Damage set value 250.0f
 # 補正functionを実行
-    function lib:damage/modifier_continuation
+    function api:damage/modifier_continuation
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function lib:damage/
+    execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function api:damage/
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     tag @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] remove PA.SlashHit

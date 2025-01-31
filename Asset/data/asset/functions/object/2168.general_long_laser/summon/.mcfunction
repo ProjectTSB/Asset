@@ -5,7 +5,7 @@
 # @within asset:object/alias/2168/summon
 
 # 元となるエンティティを召喚
-    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
     data modify storage asset:temp Args.CustomModelData set from storage asset:context this.CustomModelData
     data modify storage asset:temp Args.Color set from storage asset:context this.Color
     data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation

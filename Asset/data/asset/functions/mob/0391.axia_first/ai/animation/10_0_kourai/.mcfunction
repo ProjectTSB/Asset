@@ -15,7 +15,7 @@
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/12_0_kourai/play
 
 # アニメーション終了処理
-    execute if score @s AV.AnimationTick matches 191 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/end
+    execute if score @s AV.AnimationTick matches 201 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/end
 
 # 斬撃エフェクト
     execute if score @s AV.AnimationTick matches 55 run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/slash_summon/1
@@ -84,11 +84,11 @@
     # TP
         execute if score @s AV.AnimationTick matches 12 at @s positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 13 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 14 at @s positioned ^ ^ ^0.4 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 15 at @s positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 16..36 at @s positioned ^ ^ ^0.7 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 37 at @s positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 38 at @s positioned ^ ^ ^0.4 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 14 at @s positioned ^ ^ ^0.3 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 15 at @s positioned ^ ^ ^0.4 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 16..36 at @s positioned ^ ^ ^0.4 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 37 at @s positioned ^ ^ ^0.4 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 38 at @s positioned ^ ^ ^0.3 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 39 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 40 at @s positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
         execute if score @s AV.AnimationTick matches 53..57 at @s positioned ^ ^ ^0.2 run function asset:mob/0391.axia_first/ai/general/1.teleport

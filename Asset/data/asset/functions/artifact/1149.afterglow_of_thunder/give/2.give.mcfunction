@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"雷鳴の余光","color":"#D9B111"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷攻撃+10%を20秒間得る","color":"white"}','{"text":"雷鳴の化身が残した残滓","color":"gray"}','{"text":"主が消えようと雷鳴が鳴り止むことはない","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雷攻撃+15%を20秒間得る","color":"white"}','{"text":"雷鳴の化身が残した残滓","color":"gray"}','{"text":"主が消えようと雷鳴が鳴り止むことはない","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -25,7 +25,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttack"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"雷属性だけで連続で計8000ダメージ","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"雷属性で計8000ダメージ","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -44,6 +44,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 400
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
