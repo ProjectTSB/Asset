@@ -22,6 +22,3 @@
 # 6..13でなければ演出とsuper.tick
     execute unless score @s General.Object.Tick matches 6..13 run particle dust 5 20000000 3 1 ~ ~ ~ 0 0 0 0 1
     execute unless score @s General.Object.Tick matches 6..13 at @s run function asset:object/super.tick
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
