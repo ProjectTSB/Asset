@@ -6,8 +6,6 @@
 
 #> Private
 # @private
-    #declare score_holder $CurrentHealth
-    #declare score_holder $MaxHealth
 
 # 現在体力を取得
     function api:data_get/health
@@ -19,7 +17,3 @@
 
 # 失った体力の10倍を返り値として返す
     return run scoreboard players operation $MaxHealth Temporary -= $CurrentHealth Temporary
-
-# リセット
-    scoreboard players reset $CurrentHealth Temporary
-    scoreboard players reset $MaxHealth Temporary

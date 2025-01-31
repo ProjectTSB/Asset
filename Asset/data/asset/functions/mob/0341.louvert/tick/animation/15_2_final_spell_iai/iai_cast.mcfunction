@@ -38,4 +38,4 @@
 
 # リセット
     tag @a[tag=9H.Landing,distance=..32] remove 9H.Landing
-    scoreboard players reset $9H.Temp
+    scoreboard players reset $9H.Temp Temporary

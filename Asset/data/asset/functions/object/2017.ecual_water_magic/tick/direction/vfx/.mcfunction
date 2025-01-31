@@ -26,6 +26,6 @@
     execute if score $2017.VFX Temporary matches 0 run playsound entity.player.swim hostile @a[distance=..16] ~ ~ ~ 0.5 1 0
 
 # リセット
-    data remove storage asset:temp 2017.X
+    data remove storage asset:temp 2017
     scoreboard players reset $2017.Temp Temporary
     scoreboard players reset $2017.VFX Temporary

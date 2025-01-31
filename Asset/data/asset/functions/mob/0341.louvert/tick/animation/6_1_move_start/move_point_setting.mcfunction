@@ -15,3 +15,6 @@
     execute facing entity 0-0-0-0-0 feet run tp @s ^ ^ ^ ~ ~
 # Makerを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
+
+# リセット
+    scoreboard players reset $9H.Temp Temporary

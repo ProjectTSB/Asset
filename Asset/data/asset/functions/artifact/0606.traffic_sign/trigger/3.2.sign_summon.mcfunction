@@ -16,7 +16,7 @@
     data modify entity @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] transformation set from storage asset:temp GU.Temp
 
 # スコアセット
-    scoreboard players operation $GU.OwnerId Temporary = @s UserID 
+    scoreboard players operation $GU.OwnerId Temporary = @s UserID
     execute as @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] run scoreboard players operation @s GU.OwnerID = $GU.OwnerId Temporary
     execute as @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] run scoreboard players set @s GU.Count 0
 
@@ -27,7 +27,7 @@
     scoreboard players reset @s GU.Count
     scoreboard players reset $GU.Temp Temporary
     scoreboard players reset $GU.OwnerId Temporary
-    data remove storage asset:temp GU.Temp
+    data remove storage asset:temp GU
 
 # タグ外し
     tag @e[type=item_display,tag=GU.Sign.Init,distance=..0.01,limit=1] remove GU.Sign.Init

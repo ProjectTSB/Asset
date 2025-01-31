@@ -31,6 +31,7 @@
 
 # リセット
     tag @p[tag=Target] remove Target
+    data remove storage asset:temp Predict
 
 # タグつけておいて雷多重することを防ぐ
     tag @s add UsedThunder
