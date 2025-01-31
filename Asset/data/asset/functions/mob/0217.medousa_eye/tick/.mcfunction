@@ -17,5 +17,8 @@
 # スコアが61のとき、予備動作
     execute if entity @s[scores={General.Mob.Tick=1}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
 
+# 予告線
+    execute if entity @s[scores={General.Mob.Tick=1..9}] run function asset:mob/0217.medousa_eye/tick/announce/
+
 # スコアが70以上で石化ビーム発射
     execute if entity @s[scores={General.Mob.Tick=10..}] run function asset:mob/0217.medousa_eye/tick/beam/shoot
