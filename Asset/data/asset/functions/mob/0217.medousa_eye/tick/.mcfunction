@@ -11,14 +11,12 @@
     execute if entity @s[scores={General.Mob.Tick=0..}] run scoreboard players add @s General.Mob.Tick 1
     execute unless entity @s[scores={General.Mob.Tick=0..}] positioned ^ ^ ^10 if entity @p[distance=..10] at @s run scoreboard players add @s General.Mob.Tick 1
 
-# スコアが60の時、向きを固定する
+# 向きを固定する
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0217.medousa_eye/tick/fix_direction
 
-# スコアが61のとき、予備動作
+# 予備動作
     execute if entity @s[scores={General.Mob.Tick=1}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
+    execute if entity @s[scores={General.Mob.Tick=1..14}] run function asset:mob/0217.medousa_eye/tick/announce/
 
-# 予告線
-    execute if entity @s[scores={General.Mob.Tick=1..9}] run function asset:mob/0217.medousa_eye/tick/announce/
-
-# スコアが70以上で石化ビーム発射
-    execute if entity @s[scores={General.Mob.Tick=10..}] run function asset:mob/0217.medousa_eye/tick/beam/shoot
+# 石化ビーム発射
+    execute if entity @s[scores={General.Mob.Tick=15..}] run function asset:mob/0217.medousa_eye/tick/beam/shoot
