@@ -13,7 +13,7 @@
 # 説明文
     data modify storage asset:effect Description set value '{"text":"水属性与ダメージが大きく上昇する"}'
 # 残り時間 (default = API || error)
-    data modify storage asset:effect Duration set value 20
+    data modify storage asset:effect Duration set value 100
 # スタック (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 残り時間の操作方法 (default = API || "replace")
@@ -30,5 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
+
 # フィールド (本当はこういうのはスタックでやったほうがいい)
     # data modify storage asset:effect Field

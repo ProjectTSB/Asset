@@ -26,22 +26,23 @@
     scoreboard players add $P3.Count Temporary 10
 
 # 与えるダメージ = 最大MP × {(個数 - 1) × 0.5 + 1 }
-    execute store result score $P3.MaxMP Temporary run function lib:mp/get_max
+    function api:mp/get_max
+    execute store result score $P3.MaxMP Temporary run data get storage api: Return.MaxMP
     scoreboard players operation $P3.MaxMP Temporary *= $P3.Count Temporary
     scoreboard players operation $P3.MaxMP Temporary /= $10 Const
 
 # ダメージ
     # 与えるダメージ
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $P3.MaxMP Temporary
+        execute store result storage api: Argument.Damage float 1 run scoreboard players get $P3.MaxMP Temporary
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 水属性
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.ElementType set value "Water"
     # ダメージ
-        function lib:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function lib:damage/
+        function api:damage/modifier
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function api:damage/
 
 # リセット
     scoreboard players reset $P3.MaxMP Temporary
     scoreboard players reset $P3.Count Temporary
-    function lib:damage/reset
+    function api:damage/reset

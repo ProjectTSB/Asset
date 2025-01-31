@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"光照のランプ","color":"gold"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲を明るく照らすランプ。","color":"white"}','{"text":"自身と周囲のプレイヤーに対して","color":"white"}','{"text":"暗視を付与し、盲目と暗闇を解除する。","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲を明るく照らすランプ。","color":"white"}','{"text":"自身と周囲のプレイヤーに対して","color":"white"}','{"text":"暗視を付与し、暗闇を解除する。","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,11 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 0
+    data modify storage asset:artifact MPCost set value 5
 # MP必要量 (int) (オプション)
-    # data modify storage asset:artifact MPRequire set value
+    # data modify storage asset:artifact MPRequire set value 5
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 200
+    data modify storage asset:artifact LocalCooldown set value 300
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

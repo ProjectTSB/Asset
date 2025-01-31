@@ -6,13 +6,13 @@
 
 # ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 600.0f
+        data modify storage api: Argument.Damage set value 450.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 無属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute positioned ~-1 ~2 ~-1 as @e[type=#lib:living,tag=Enemy,dx=1,dy=1,dz=1] run function lib:damage/
+        function api:damage/modifier
+        execute anchored eyes positioned ^ ^ ^ positioned ~-1 ~0.5 ~-1 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

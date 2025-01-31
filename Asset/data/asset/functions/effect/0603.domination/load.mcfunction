@@ -1,0 +1,11 @@
+#> asset:effect/0603.domination/load
+#
+# Effectに利用するスコアボード等の初期化処理
+# ※ExtendsSafeを有効化した状態での使用は非推奨です
+#
+# @within tag/function asset:effect/load
+
+#> 定義類はここに
+# @within function asset:effect/0603.domination/**
+    scoreboard objectives add 603.TargetUUID dummy
+    scoreboard objectives add 603.Tick dummy

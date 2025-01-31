@@ -11,14 +11,9 @@
 
 # TODO : APIで任意の個数消せるようになったら処理を変える
 
-# デバフを1つ解除
+# デバフを2つ解除
     data modify storage api: Argument.ClearLv set value 2
+    data modify storage api: Argument.ClearCount set value 2
     data modify storage api: Argument.ClearType set value "bad"
-    data modify storage api: Argument.IsSingle set value true
     function api:entity/mob/effect/remove/from_level
-
-# デバフを1つ解除
-    data modify storage api: Argument.ClearLv set value 2
-    data modify storage api: Argument.ClearType set value "bad"
-    data modify storage api: Argument.IsSingle set value true
-    function api:entity/mob/effect/remove/from_level
+    function api:entity/mob/effect/reset

@@ -25,4 +25,3 @@
 # リセット
     function lib:array/session/close
     scoreboard players reset $CandidatesLength
-    data remove storage asset:temp 02

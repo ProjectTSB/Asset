@@ -5,9 +5,9 @@
 # @within function asset:artifact/0743.evening_wind/trigger/dis_equip/main
 
 # MP消費
-    scoreboard players set $Fluctuation Lib -150
-    data modify storage lib: Argument.DisableLog set value true
-    function lib:mp/fluctuation
+    data modify storage api: Argument.Fluctuation set value -150
+    data modify storage api: Argument.DisableLog set value true
+    function api:mp/fluctuation
 
 # 火攻撃
     data modify storage api: Argument.UUID set value [I;1,1,743,7]

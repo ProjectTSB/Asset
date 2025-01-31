@@ -6,7 +6,7 @@
 
 # ダメージ
 # HurtTime:0sならダメージを与える
-    data modify storage api: Argument.Damage set value 8.0f
+    data modify storage api: Argument.Damage set value 7.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:data_get/hurt_time

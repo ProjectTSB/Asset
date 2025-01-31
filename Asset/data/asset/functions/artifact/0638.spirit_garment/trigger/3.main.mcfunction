@@ -16,7 +16,7 @@
     playsound entity.allay.ambient_without_item player @a ~ ~ ~ 1 1.7
     playsound block.amethyst_block.break player @a ~ ~ ~ 1 0.8
 
-# 回復量+6%
+# 回復量
     data modify storage api: Argument.UUID set value [I;1,1,638,6]
     data modify storage api: Argument.Amount set value 0.06
     data modify storage api: Argument.Operation set value "multiply_base"
@@ -29,4 +29,7 @@
     function api:modifier/defense/physical/add
 
 # 最大体力+8
-    attribute @s generic.max_health modifier add 00000001-0000-0001-0000-027e00000006 "MaxHealth" 8 add
+    data modify storage api: Argument.UUID set value [I;1,1,638,6]
+    data modify storage api: Argument.Amount set value 4
+    data modify storage api: Argument.Operation set value "add"
+    function api:modifier/max_health/add

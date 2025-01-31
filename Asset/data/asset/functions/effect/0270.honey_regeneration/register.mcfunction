@@ -7,7 +7,7 @@
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 269
+    data modify storage asset:effect ID set value 270
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ハニーリジェネレーション"}'
 # 説明文 (TextComponentString[])
@@ -30,6 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field set value {}

@@ -26,10 +26,10 @@
     execute if predicate api:global_vars/difficulty/min/hard rotated ~180 ~ positioned ^ ^ ^7 run function asset:mob/0055.hetukedah/tick/skill/explosion/explosion_mini
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 12.0f
+    data modify storage api: Argument.Damage set value 7.5f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
-    execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run summon area_effect_cloud ~ ~ ~ {Particle:"poof",Radius:0.5f,Duration:6,Age:4,effects:[{id:"minecraft:levitation",amplifier:30b,duration:5,show_particles:1b}]}
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function asset:mob/0055.hetukedah/tick/skill/explosion/levitation/normal
     function api:damage/reset

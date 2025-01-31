@@ -18,9 +18,9 @@
     data modify storage api: Argument.Damage set value 5.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは虫歯が急激に進行した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは歯が砕け散った","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはチョコが突き刺さった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは虫歯が急激に進行した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは歯が砕け散った","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはチョコが突き刺さった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier
     function api:damage/
     function api:damage/reset
@@ -28,3 +28,4 @@
 # エフェクトを付与する
     data modify storage api: Argument.ID set value 269
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

@@ -461,8 +461,10 @@
                         "    data modify storage asset:artifact Name set value ",
                         "# 神器の説明文 (TextComponentString[])",
                         "    data modify storage asset:artifact Lore set value []",
-                        "# MP以外の消費物 (TextComponentString) (オプション)",
-                        "    # data modify storage asset:artifact CostText set value ",
+                        "# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)",
+                        "    # data modify storage asset:artifact ConsumeItem.Item set value '{\"translate\":\"item.minecraft.stick\"}'",
+                        "    # data modify storage asset:artifact ConsumeItem.Count set value 1",
+                        "    # data modify storage asset:artifact ConsumeItem.Extra set value ",
                         "# 使用回数 (int) (オプション)",
                         "    # data modify storage asset:artifact RemainingCount set value ",
                         "# 神器を発動できるスロット (string) Wikiを参照",
@@ -484,11 +486,16 @@
                         "# 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)",
                         "    # data modify storage asset:artifact AttackInfo.AttackRange set value ",
                         "# MP消費量 (int) ",
-                        "    data modify storage asset:artifact MPCost set value ",
+                        "    # data modify storage asset:artifact MPCost set value ",
                         "# MP必要量 (int) (オプション)",
                         "    # data modify storage asset:artifact MPRequire set value ",
+                        "# MP回復量 (int) ",
+                        "    # data modify storage asset:artifact MPHealWhenHit set value ",
                         "# 神器のクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact LocalCooldown set value ",
+                        "# 種別クールダウン ({Type: string, Duration: int}) (オプション)",
+                        "   # data modify storage asset:artifact TypeCooldown.Type set value ",
+                        "   # data modify storage asset:artifact TypeCooldown.Duration set value",
                         "# グローバルクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact SpecialCooldown set value ",
                         "# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
@@ -654,8 +661,13 @@
                         "    data modify storage asset:artifact MPCost set value ",
                         "# MP必要量 (int) (オプション)",
                         "    # data modify storage asset:artifact MPRequire set value ",
+                        "# MP回復量 (int) ",
+                        "    # data modify storage asset:artifact MPHealWhenHit set value ",
                         "# 神器のクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact LocalCooldown set value ",
+                        "# 種別クールダウン ({Type: string, Duration: int}) (オプション)",
+                        "   # data modify storage asset:artifact TypeCooldown.Type set value ",
+                        "   # data modify storage asset:artifact TypeCooldown.Duration set value",
                         "# グローバルクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact SpecialCooldown set value ",
                         "# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
@@ -1402,6 +1414,25 @@
             ]
         },
         {
+            "label": "神器/トリガー: 弓発射",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/shot.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
             "label": "神器/トリガー: tick",
             "generates": [
                 {
@@ -1753,7 +1784,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:mob/tick/tick.m",
+                        "# @within asset_manager:mob/triggers/call_method/run_method.m",
                         "",
                         "# 本来の処理を呼び出す",
                         "   function asset:mob/%namespace%/%method_name%/"
@@ -2036,7 +2067,7 @@
                     "type": "file",
                     "rel": "data/asset/functions/mob/alias/%id%/remove.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/init",
+                        "#> asset:mob/alias/%id%/remove",
                         "#",
                         "# Remove処理のエイリアス",
                         "#",
@@ -2095,6 +2126,10 @@
                         "    # data modify storage asset:effect ProcessOnDied set value ",
                         "# 消すのに必要なレベル (int) (default = 1)",
                         "    # data modify storage asset:effect RequireClearLv set value ",
+                        "# エフェクトをUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect Visible set value ",
+                        "# エフェクトのスタックををUIに表示するか (boolean) (default = true)",
+                        "    # data modify storage asset:effect StackVisible set value",
                         "",
                         "# フィールド",
                         "    # data modify storage asset:effect Field set value {}"
@@ -2122,6 +2157,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2178,6 +2214,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/register"
                     }
@@ -2220,6 +2257,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/load"
                     }
@@ -2279,6 +2317,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/given"
                     }
@@ -2329,6 +2368,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/re-given"
                     }
@@ -2379,6 +2419,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/end"
                     }
@@ -2429,6 +2470,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/remove"
                     }
@@ -2479,6 +2521,7 @@
                         ]
                     },
                     "append": {
+                        "addFirst": true,
                         "key": "values",
                         "elem": "asset:effect/%namespace%/_/tick"
                     }
@@ -2605,7 +2648,7 @@
                 {
                     "name": "entity",
                     "question": "元となるentity",
-                    "pattern": "area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|boat|cat|cave_spider|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fox|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|iron_golem|item|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
+                    "pattern": "allay|area_effect_cloud|armor_stand|arrow|axolotl|bat|bee|blaze|block_display|boat|breeze|camel|cat|cave_spider|chest_boat|chest_minecart|chicken|cod|command_block_minecart|cow|creeper|dolphin|donkey|dragon_fireball|drowned|egg|elder_guardian|end_crystal|ender_dragon|ender_pearl|enderman|endermite|evoker|evoker_fangs|experience_bottle|experience_orb|eye_of_ender|falling_block|fireball|firework_rocket|fishing_bobber|fox|frog|furnace_minecart|ghast|giant|glow_item_frame|glow_squid|goat|guardian|hoglin|hopper_minecart|horse|husk|illusioner|interaction|iron_golem|item|item_display|item_frame|leash_knot|lightning_bolt|llama|llama_spit|magma_cube|marker|minecart|mooshroom|mule|ocelot|painting|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|potion|pufferfish|rabbit|ravager|salmon|sheep|shulker|shulker_bullet|silverfish|skeleton|skeleton_horse|slime|small_fireball|sniffer|snow_golem|snowball|spawner_minecart|spectral_arrow|spider|squid|stray|strider|tadpole|text_display|tnt|tnt_minecart|trader_llama|trident|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|warden|wind_charge|witch|wither|wither_skeleton|wither_skull|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin",
                     "patternErrorMessage": "Entityの名前のみが許されるよ"
                 }
             ]
@@ -2769,7 +2812,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
+                        "# @within asset_manager:object/call_method/run_method.m",
                         "",
                         "# 元のメソッド処理を呼び出す",
                         "    function asset:object/%namespace%/%method_name%/"

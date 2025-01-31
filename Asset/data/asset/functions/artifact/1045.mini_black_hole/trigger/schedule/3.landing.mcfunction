@@ -26,16 +26,16 @@
 
 # ダメージ付与
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 耐性貫通
-        data modify storage lib: Argument.BypassModifier set value 1b
+        data modify storage api: Argument.BypassModifier set value 1b
     # ダメージ
-        data modify storage lib: Argument.Damage set value 125
-        execute as @p[tag=T1.Owner] run function lib:damage/modifier
-        execute as @e[tag=Enemy,tag=T1.Landing,distance=..8] run function lib:damage/
+        data modify storage api: Argument.Damage set value 180
+        execute as @p[tag=T1.Owner] run function api:damage/modifier
+        execute as @e[tag=Enemy,tag=T1.Landing,tag=!Uninterferable,distance=..8] run function api:damage/
 
 # 敵吸い込み
-    execute at @s as @e[tag=Enemy,tag=!Enemy.Boss,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction
+    execute at @s as @e[tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..15] run function asset:artifact/1045.mini_black_hole/trigger/schedule/4.enemy_suction
 
 # 演出
     execute store result storage asset:temp T1.Num int 1 run scoreboard players get @s T1.LandingTick
@@ -49,9 +49,9 @@
     execute if score $T1.LandingTick Temporary matches 0 run playsound entity.enderman.teleport master @a[distance=..32] ~ ~ ~ 1 0
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $T1.OwnerId Temporary
     scoreboard players reset $T1.LandingTick Temporary
     tag @a[tag=T1.Owner] remove T1.Owner
-    tag @e[tag=Enemy,tag=T1.Landing,distance=..8] remove T1.Landing
+    tag @e[tag=Enemy,tag=T1.Landing,tag=!Uninterferable,distance=..8] remove T1.Landing
     execute if score @s T1.LandingTick matches 80 run kill @s

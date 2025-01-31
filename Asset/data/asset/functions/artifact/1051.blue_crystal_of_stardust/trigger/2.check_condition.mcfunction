@@ -16,10 +16,10 @@
     execute if entity @s[tag=CanUsed] run scoreboard players add @s T7.UseCount 1
 
 # スコアが2以下ならCanUsedを削除
-    execute if entity @s[scores={T7.UseCount=..2}] run tag @s remove CanUsed
+    execute if entity @s[scores={T7.UseCount=..6}] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1051.blue_crystal_of_stardust/trigger/3.main
 
 # スコアが3以上になったらリセット
-    execute if entity @s[scores={T7.UseCount=3..}] run scoreboard players reset @s T7.UseCount
+    execute if entity @s[scores={T7.UseCount=7..}] run scoreboard players reset @s T7.UseCount

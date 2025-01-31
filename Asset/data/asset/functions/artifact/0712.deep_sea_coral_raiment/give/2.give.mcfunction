@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"深海珊瑚の羽衣","color":"#c3c9ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+5% ","color":"aqua"}]','[{"text":"回復量+5% ","color":"light_purple"},{"text":"火耐性-10%","color":"dark_red"}]','[{"text":"全て装備した時、追加で","color":"white"},{"text":"水攻撃+5%","color":"aqua"},{"text":"を得て、","color":"white"}]','[{"text":"水に触れていると特殊な効果を得る。","color":"white"}]','{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+7% 水攻撃+7% ","color":"aqua"}]','[{"text":"回復量+5% ","color":"light_purple"},{"text":"火耐性-3.5%","color":"dark_red"}]','{"text":""}','[{"text":"セット効果："},{"text":"深","color":"#c6e3ff"},{"text":"海","color":"#c3c9ff"},{"text":"珊","color":"#dfccfe"},{"text":"瑚","color":"#fecffe"}]','{"text":"水攻撃+5%","color":"aqua"}','{"text":"雨が降っている、または水に触れている時","color":"white"}','{"text":"暗視、イルカの好意、コンジットパワーを得る","color":"white"}','{"text":"暗き底の水圧に耐えていたとされる","color":"gray"}','{"text":"自然から賜った神秘の珊瑚の羽衣。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

@@ -4,16 +4,12 @@
 #
 # @within function asset:artifact/0822.sound_of_a_star/trigger/2.check_condition
 
-# 最初にMP割合を求める
-# 最大MPを取得する
-    execute store result score $MPMaxValue Temporary run function lib:mp/get_max
-# 使用直前のMPを取得する
-    execute store result score $MPValue Temporary run function lib:mp/get
-
-# MP現在量を100倍する
+# MP消費前のMP割合を求める
+    function api:mp/get_max
+    execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
+    function api:mp/get_current
+    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP
     scoreboard players operation $MPValue Temporary *= $100 Const
-
-# 割る
     scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
@@ -26,26 +22,14 @@
     playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.4 0.5 0
     playsound minecraft:block.bell.resonate player @a ~ ~ ~ 0.8 0.5
 
-# 星を召喚 MP割合によって個数変化
-    summon marker ~ ~1.8 ~ {Tags:["MU.Star","Projectile"]}
-
-# UseIDをコピー
-    execute positioned ~ ~1.8 ~ run scoreboard players operation @e[type=marker,tag=MU.Star,tag=!MU.Already,distance=..0.01,sort=nearest,limit=1] MU.UserID = @s UserID
-
-# 所定の位置に移動させる
-    execute positioned ~ ~1.8 ~ run tp @e[type=marker,tag=MU.Star,tag=!MU.Already,distance=..0.01,sort=nearest,limit=1] ^ ^ ^0.5 ~ ~
-
-# 誤動作しないようにTagを付与
-    execute positioned ~ ~1.8 ~ positioned ^ ^ ^0.5 run tag @e[type=marker,tag=MU.Star,distance=..0.01,sort=nearest,limit=1] add MU.Already
+# 1個目
+    execute anchored eyes positioned ^ ^0.2 ^0.6 run function asset:artifact/0822.sound_of_a_star/trigger/summon_star.m {Damage:600,StartDelay:10}
 
 # MP割合が34%以上なら2個目
-    execute if score $MPValue Temporary matches 34.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/4.summon_2nd
+    execute if score $MPValue Temporary matches 34.. anchored eyes positioned ^0.4 ^-0.3 ^0.6 run function asset:artifact/0822.sound_of_a_star/trigger/summon_star.m {Damage:800,StartDelay:15}
 
 # MP割合が67%以上なら3個目
-    execute if score $MPValue Temporary matches 67.. positioned ~ ~1.3 ~ run function asset:artifact/0822.sound_of_a_star/trigger/5.summon_3rd
-
-# 星の処理開始
-    schedule function asset:artifact/0822.sound_of_a_star/trigger/star/01.schedule 1t replace
+    execute if score $MPValue Temporary matches 67.. anchored eyes positioned ^-0.4 ^-0.3 ^0.6 run function asset:artifact/0822.sound_of_a_star/trigger/summon_star.m {Damage:1000,StartDelay:20}
 
 # リセット
     scoreboard players reset $MPMaxValue Temporary

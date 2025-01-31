@@ -16,7 +16,7 @@
     execute anchored eyes run particle item kelp ^ ^ ^0.2 0 0 0 0.05 10
     playsound minecraft:entity.generic.eat player @a ~ ~ ~ 1 0.6
 # コンブへらす
-    clear @s kelp 1
+    clear @s kelp 8
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 876
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id

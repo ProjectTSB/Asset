@@ -12,8 +12,6 @@
     #declare tag SpreadMarker
 
 # 演出
-
-# 演出
     execute at @p[tag=Victim] run particle minecraft:lava ~ ~0.5 ~ 0 0.5 0 0.1 40
     execute at @p[tag=Victim] run particle witch ~ ~ ~ 0 1 0 0 20
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 1 0.6
@@ -22,17 +20,13 @@
 # 何故かこうするとプレイヤーと同じ剣の降り方をする
     item replace entity @s weapon with stick{CustomModelData:20029}
 
-# 与えるダメージ
-    data modify storage lib: Argument.Damage set value 10f
-# 属性
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Fire"
-# 補正functionを実行
-    function lib:damage/modifier
-# 対象
-    execute as @p[tag=Victim] run function lib:damage/
-# リセット
-    function lib:damage/reset
+# ダメージ
+    data modify storage api: Argument.Damage set value 21f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @p[tag=Victim] run function api:damage/
+    function api:damage/reset
 
 # 以下自分がテレポートする処理
 # 演出

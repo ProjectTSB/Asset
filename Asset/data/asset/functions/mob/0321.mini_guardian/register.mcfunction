@@ -1,6 +1,8 @@
 #> asset:mob/0321.mini_guardian/register
 # @within asset:mob/alias/321/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 321
 # Type (string) Wikiを参照
@@ -28,7 +30,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 800.0d
+    data modify storage asset:mob Health set value 1200.0d
 # 攻撃力 (double) (オプション)
     data modify storage asset:mob AttackDamage set value 0.0d
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
@@ -49,6 +51,9 @@
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1.0f
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.8f
+        data modify storage asset:mob Resist.Water set value 0.7f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 1.0f
+        data modify storage asset:mob Resist.Thunder set value 1.4f
+
+# フィールド
+    data modify storage asset:mob Field.Damage set value 5.5f

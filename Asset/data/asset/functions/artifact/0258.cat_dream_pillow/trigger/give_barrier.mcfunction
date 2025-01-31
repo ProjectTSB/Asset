@@ -24,7 +24,7 @@
 
 # 現在のバリアの数値を取得
     data modify storage api: Argument.UUID set value [I;1,3,267,0]
-    function api:entity/player/absorption/get
+    execute as @p[tag=BarrierTarget] run function api:entity/player/absorption/get
     execute store result score $CurrentBarrier Temporary run data get storage api: Return.Absorption.Amount 10
 
 # 付与するバリア数値 < 現在バリア数値ならTagを削除
@@ -36,6 +36,7 @@
 # バリア用エフェクトを付与
     data modify storage api: Argument.ID set value 267
     execute as @p[tag=BarrierTarget] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # Tagを削除
     tag @p[tag=BarrierTarget] remove BarrierTarget

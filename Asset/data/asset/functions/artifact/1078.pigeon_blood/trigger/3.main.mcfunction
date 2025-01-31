@@ -39,6 +39,7 @@
 # 自身に共鳴・紅バフを付与
     data modify storage api: Argument.ID set value 228
     function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 周囲に共鳴・蒼バフを持っているプレイヤーがいないか探す
     execute as @a[distance=..20] run function asset:artifact/1078.pigeon_blood/trigger/4.search_resonance
@@ -58,7 +59,7 @@
 # ダメージのブレ(0~300)
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $301 Temporary
-    scoreboard players add $RandomDamage Temporary 450
+    scoreboard players add $RandomDamage Temporary 350
 
 # クリティカル判定
     execute if predicate lib:random_pass_per/20 run tag @s add Critical
