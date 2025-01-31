@@ -27,7 +27,7 @@
 # 吹き飛ばし
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 21
-    data modify storage api: Argument.Duration set value 7
+    data modify storage api: Argument.Duration set value 8
     execute as @a[gamemode=!spectator,distance=..2] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
