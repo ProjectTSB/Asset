@@ -24,5 +24,6 @@
     data modify storage api: Argument.ID set value 301
     data modify storage api: Argument.Stack set value 3
     data modify storage api: Argument.FieldOverride.Heal set value 3.0
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute as @a[distance=..8] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
