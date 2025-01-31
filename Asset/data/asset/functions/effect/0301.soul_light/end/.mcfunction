@@ -5,4 +5,4 @@
 # @within function asset:effect/0301.soul_light/_/end
 
 # リセット
-    scoreboard players reset @s 301.LatestHeal
+    function asset:effect/0301.soul_light/reset/

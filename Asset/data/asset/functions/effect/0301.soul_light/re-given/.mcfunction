@@ -12,8 +12,9 @@
     execute store result score $Heal Temporary run data get storage asset:context this.Heal 10
 
 # $Healの方が大きいならそのまま
-# LatestHealの方が大きいならthis.Healへ
+# LatestHealの方が大きいなら、スコアのデータをフィールドへ代入
     execute if score $Heal Temporary < @s 301.LatestHeal store result storage asset:context this.Heal float 0.1 run scoreboard players get @s 301.LatestHeal
+    execute if score $Heal Temporary < @s 301.LatestHeal store result storage asset:context this.UserID float 0.1 run scoreboard players get @s 301.LatestUserID
 
 # リセット
     scoreboard players reset $Heal Temporary

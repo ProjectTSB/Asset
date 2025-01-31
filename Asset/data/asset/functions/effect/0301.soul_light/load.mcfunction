@@ -8,3 +8,4 @@
 #> 定義類はここに
 # @within function asset:effect/0301.soul_light/**
     scoreboard objectives add 301.LatestHeal dummy
+    scoreboard objectives add 301.LatestUserID dummy
