@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ファルシオスの杖","color":"white","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲8mのプレイヤーの体力を28.0回復し"}','{"text":"その後継続的に3.0ずつ回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲8mのプレイヤーの体力を28.0回復し"}','{"text":"その後10秒間かけてに0.0回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
