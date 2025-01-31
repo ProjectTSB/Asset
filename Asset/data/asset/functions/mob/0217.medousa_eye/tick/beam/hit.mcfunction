@@ -1,12 +1,8 @@
-#> asset:mob/0217.medousa_eye/tick/beam_hit
+#> asset:mob/0217.medousa_eye/tick/beam/hit
 #
 # 石化ビームの着弾判定
 #
-# @within function asset:mob/0217.medousa_eye/tick/beam_shoot
-
-#> Private
-# @private
-    #declare score_holder $Difficulty
+# @within function asset:mob/0217.medousa_eye/tick/beam/
 
 # 演出
     particle block stone ~ ~1.2 ~ 0.3 0.4 0.3 0 100 normal @a
@@ -33,14 +29,10 @@
     function api:entity/mob/effect/reset
 
 # MP吸収
-# Value = -30 * (難易度値- 1)
+# Fluctuation = -30 * (難易度値- 1)
 # イージーの場合は実行されない
-    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
-    execute store result storage api: Argument.Fluctuation int -30 run scoreboard players remove $Difficulty Temporary 1
+    execute store result storage api: Argument.Fluctuation int -30 run data get storage api: Return.Difficulty 0.9999999999
     execute unless predicate api:global_vars/difficulty/easy run function api:mp/fluctuation
-
-# リセット
-    scoreboard players reset $Difficulty Temporary
 
 # ヒットTag削除
     tag @s remove LandingTarget
