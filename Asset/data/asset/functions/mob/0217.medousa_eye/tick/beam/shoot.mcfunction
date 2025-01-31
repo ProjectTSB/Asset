@@ -11,7 +11,7 @@
     execute as @a[tag=LandingTarget,distance=..20] at @s run function asset:mob/0217.medousa_eye/tick/beam/hit
 
 # 音
-    playsound minecraft:entity.elder_guardian.death hostile @a[distance=..25] ~ ~ ~ 0.6 2 0.1
+    execute as @a[distance=..25] at @s facing entity @e[type=zombie,tag=this,distance=..25] eyes positioned ^ ^ ^0.3 run playsound minecraft:entity.elder_guardian.death hostile @s ~ ~ ~ 0.4 2 0
 
 # リセット
     function asset:mob/0217.medousa_eye/tick/reset
