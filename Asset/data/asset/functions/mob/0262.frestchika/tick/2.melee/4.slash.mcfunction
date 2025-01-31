@@ -6,16 +6,16 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 27.0f
+        data modify storage .Damage set value 27.0f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage .AttackType set value "Physical"
     # 無属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
+        data modify storage .ElementType set value "Thunder"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function lib:damage/
+        function modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] at @s run function
 # リセット
-    function lib:damage/reset
+    function reset
 
 # 演出
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
