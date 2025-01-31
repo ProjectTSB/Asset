@@ -10,6 +10,7 @@
 
 # 最大体力の1%を取得
     execute store result score $Damage Temporary run function api:mob/get_max_health
+    scoreboard players operation $Damage Temporary /= $100 Const
 
 # 上限
     scoreboard players operation $Damage Temporary < $5000 Const
