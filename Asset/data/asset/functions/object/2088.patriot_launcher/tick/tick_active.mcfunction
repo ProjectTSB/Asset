@@ -24,8 +24,7 @@
 
 # 耐久が0の場合死亡状態へ遷移して処理をキャンセル
 # 回復までの時間は修理者無しで20秒想定(tickごとに128回復　128*20tick*20s)
-    execute if score $CurrentDurability Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:black_concrete"
-    execute if score $CurrentDurability Temporary matches ..0 on passengers run tag @s add PatriotLauncher.IsBroken
+    execute if score $CurrentDurability Temporary matches ..0 run tag @s add PatriotLauncher.IsBroken
     execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 1b
     execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.RepairTime set from storage asset:context this.MaxRepairTime
     execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.DisplayName] run data modify entity @s text set value '[{"bold":true,"color":"#FFFFFF","text":"PRESS "},{"color":"#FFFFFF","keybind":"key.sneak"},{"bold":true,"color":"#FFFFFF","text":": 修理支援"}]'
@@ -33,7 +32,7 @@
 
 # 向きを敵の方へ向ける
     execute facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
-    execute on passengers facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    function asset:object/2088.patriot_launcher/tick/turn_turret
 
 # 次の発射までのカウント
     execute store result score $MissileCooltime Temporary run data get storage asset:context this.MissileCooltime
