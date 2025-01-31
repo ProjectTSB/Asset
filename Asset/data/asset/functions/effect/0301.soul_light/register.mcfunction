@@ -37,4 +37,5 @@
 
 # フィールド
     data modify storage asset:effect Field.Tick set value 20
+    data modify storage asset:effect Field.Heal set value 1
     data modify storage asset:effect Field.UserID set value -1
