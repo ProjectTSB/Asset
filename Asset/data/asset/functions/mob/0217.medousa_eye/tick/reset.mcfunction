@@ -8,4 +8,4 @@
 
 # リセット
     data modify entity @s NoAI set value 0b
-    scoreboard players reset @s General.Mob.Tick
+    scoreboard players set @s General.Mob.Tick -70
