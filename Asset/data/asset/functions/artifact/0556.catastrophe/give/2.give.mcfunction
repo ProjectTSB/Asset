@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 556
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:netherite_leggings"
+    data modify storage asset:artifact Item set value "minecraft:chainmail_leggings"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
@@ -58,7 +58,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;1,1,556,4],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,556,4],Slot:"legs"}]}
+    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;1,1,556,4],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,556,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:554"}}
 
 # 神器の入手用function
     function asset:artifact/common/give

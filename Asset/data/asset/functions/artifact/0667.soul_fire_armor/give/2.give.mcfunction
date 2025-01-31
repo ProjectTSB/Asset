@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 667
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:leather_boots"
+    data modify storage asset:artifact Item set value "minecraft:chainmail_boots"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂炎纏","color":"#01A7AC","bold":true}'
 # 神器の説明文 (TextComponentString[])
@@ -58,7 +58,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:3071974},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,667,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,667,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,667,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,667,3],Slot:"feet"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:664"}}
 
 # 神器の入手用function
     function asset:artifact/common/give
