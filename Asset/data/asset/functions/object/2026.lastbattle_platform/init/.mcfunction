@@ -6,8 +6,8 @@
 
 #> ここでだけ使うInitタグ
 # @private
-#declare tag 2026.Init
-#declare tag 2026.Layer
+    #declare tag 2026.Init
+    #declare tag 2026.Layer
 
 
 # 上に自分そっくりのやつを召喚してのっける
