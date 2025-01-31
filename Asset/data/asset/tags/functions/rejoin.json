@@ -34,6 +34,7 @@
         "asset:artifact/0870.samurai_blade/trigger/rejoin_process",
         "asset:artifact/0920.dal_i_thalion/trigger/rejoin_process",
         "asset:artifact/0431.weather_lock_cane/trigger/rejoin_process",
+        "asset:mob/0262.frestchika/rejoin_process",
         "asset:artifact/0905.book_of_metastasis/trigger/rejoin_process",
         "asset:artifact/0907.rod_of_rain/trigger/rejoin_process",
         "asset:artifact/0609.lunar_flare/trigger/rejoin_process",
