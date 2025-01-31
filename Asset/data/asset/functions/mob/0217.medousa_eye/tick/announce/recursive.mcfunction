@@ -8,7 +8,6 @@
 
 # 演出
     particle electric_spark ^ ^ ^ 0 0 0 0 1 force @a[distance=..30]
-    #particle electric_spark ^ ^ ^0.25 0 0 0 0 1 force @a[distance=..30]
 
 # プレイヤーに接触したか判定
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run tag @s add Landing
