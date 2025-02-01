@@ -3,6 +3,8 @@
 
 #> tag
 # @within function asset:mob/0339.twins_sapphiel/**
+    #declare
+    #
     # 自動生成ファンクション
         #declare function animated_java:twins_sapphiel/animations/0_0_start/tween
         #declare function animated_java:twins_sapphiel/animations/1_0_hg_start/tween
