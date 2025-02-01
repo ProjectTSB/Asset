@@ -3,6 +3,7 @@
 
 #> tag
 # @within function asset:mob/1004.tultaria/**
+    #declare
     # ボスのモードに関するタグ
     #declare tag RW.Mode.Fire
     #declare tag RW.Mode.Water
