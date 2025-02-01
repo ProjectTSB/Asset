@@ -2,7 +2,7 @@
 #
 # ダメージ処理
 #
-# @within function asset:object/2008.disaster_divine/tick/cast/
+# @within function asset:object/2009.magic_bullet/tick/cast/
 
 #> score_holder
 # @private
