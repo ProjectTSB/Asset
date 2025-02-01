@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/6.1.particle_slash_red
 #
 # アニメーションのイベントハンドラ Scワープ連撃 演出
 #
