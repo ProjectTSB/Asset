@@ -1,4 +1,4 @@
-#> asset:mob/0372.tutankhamen/tick/
+#> asset:mob/0372.tutankhamen/tick/summon_coffin
 #
 #
 #
