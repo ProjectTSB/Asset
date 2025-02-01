@@ -1,4 +1,4 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/01_crossfire/2.end
+#> asset:mob/0338.corundum_twins/tick/app/skill/event_handler/01_crossfire/2.end
 #
 # スキルイベントハンドラ 交差攻撃
 #
