@@ -1,6 +1,6 @@
 #> asset:object/2139.louvert_fire_magic/vfx/fc_22
 #
-# @within function asset:object/2139.louvert_fire_magic/tick/
+# @within function asset:object/2139.louvert_fire_magic/vfx/m
 
 # frame 22 / 40
 # コレクション 1--円.008
