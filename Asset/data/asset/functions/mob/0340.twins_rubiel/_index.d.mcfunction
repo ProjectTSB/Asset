@@ -3,6 +3,8 @@
 
 #> tag
 # @within function asset:mob/0340.twins_rubiel/**
+    #declare
+    #
     # 自動生成ファンクション
         #declare function animated_java:twins_rubiel/animations/pause_all
         #declare function animated_java:twins_rubiel/summon
