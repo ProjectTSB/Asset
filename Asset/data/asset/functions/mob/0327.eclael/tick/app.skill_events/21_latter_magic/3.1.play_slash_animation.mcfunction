@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/3_1.play_upper_start_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/21_latter_magic/3.1.play_slash_animation
 #
 # アニメーションのイベントハンドラ 前半・射撃 アニメーション再生
 #

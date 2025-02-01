@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/3_2.play_attack_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/01_1_former_iai_damage/3_2.play_attack_animation
 #
 # アニメーションのイベントハンドラ 前半・待機 アニメーション再生
 #

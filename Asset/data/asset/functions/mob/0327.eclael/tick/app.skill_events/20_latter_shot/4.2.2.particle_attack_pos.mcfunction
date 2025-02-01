@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.2.1.particle_attack_pos
+#> asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/4.2.2.particle_attack_pos
 #
 # アニメーションのイベントハンドラ 前半・射撃 発射
 #

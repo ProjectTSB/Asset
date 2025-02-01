@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/21_latter_magic/3_0.play_shot_move_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/21_latter_magic/3.0.play_magic_move_animation
 #
 # アニメーションのイベントハンドラ 前半・射撃 アニメーション再生
 #
