@@ -3,6 +3,7 @@
 
 #> tag
 # @within function asset:mob/0380.haruclaire_v3/**
+    #declare
     # - AJ自動生成ファンクション
     #declare function animated_java:haruclaire_aj/summon
     #declare function animated_java:haruclaire_aj/variants/default/apply
