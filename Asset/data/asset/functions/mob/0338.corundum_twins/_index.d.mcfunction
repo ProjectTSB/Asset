@@ -3,6 +3,7 @@
 
 #> tag
 # @within function asset:mob/0338.corundum_twins/**
+    #declare
     # AJ自動生成
         #declare function animated_java:twins_sapphiel/remove/this
         #declare function animated_java:twins_rubiel/remove/this
