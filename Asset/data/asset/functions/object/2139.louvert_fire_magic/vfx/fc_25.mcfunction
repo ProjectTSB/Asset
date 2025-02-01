@@ -1,3 +1,7 @@
+#> asset:object/2139.louvert_fire_magic/vfx/fc_25
+#
+# @within function asset:object/2139.louvert_fire_magic/tick/
+
 # frame 25 / 40
 # コレクション 1--円.008
 particle dust 100000000 1 0 0.5 ^-1.816 ^0.25 ^-0.689 0.0 0.0 0.0 0.0 1 normal
