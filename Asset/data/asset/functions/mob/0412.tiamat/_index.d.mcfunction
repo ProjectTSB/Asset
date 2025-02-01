@@ -3,6 +3,7 @@
 
 #> tag
 # @within function asset:mob/0412.tiamat/**
+    #declare
     # AnimatedJava処理(エラー対策)
     # - 処理
         #declare function animated_java:tiamat_aj/summon
