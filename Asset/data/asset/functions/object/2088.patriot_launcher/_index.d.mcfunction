@@ -19,6 +19,7 @@
     #declare function animated_java:patriot_launcher/animations/reload/play
     #declare function animated_java:patriot_launcher/animations/rotation_no_missile/tween 
     #declare function animated_java:patriot_launcher/animations/rotation_no_missile/stop 
+    #declare function animated_java:patriot_launcher/animations/launch/play
     #declare tag PatriotLauncherRoot
 
 #> suffer_damage
