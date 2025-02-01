@@ -1,4 +1,4 @@
-#> asset:object/2009.magic_bullet/tick/announce_line
+#> asset:object/2064.black_penalty_bullet/tick/announce_line
 #
 # 予告線表示
 #
