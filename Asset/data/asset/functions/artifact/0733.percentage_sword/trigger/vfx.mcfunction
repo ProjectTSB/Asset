@@ -1,4 +1,4 @@
-#> asset:artifact/0733.percentage_sword/trigger/4.sweeping_particle
+#> asset:artifact/0733.percentage_sword/trigger/vfx
 #
 #
 #

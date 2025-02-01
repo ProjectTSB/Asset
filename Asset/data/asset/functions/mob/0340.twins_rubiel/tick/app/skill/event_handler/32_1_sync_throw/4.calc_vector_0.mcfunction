@@ -1,8 +1,8 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/4.calc_vector_0
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/4.calc_vector_0
 #
 # アニメーションのイベントハンドラ Kt飛び込み斬り 移動ベクトル計算
 #
-# @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/1.main
+# @within function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/1.main
 
 # 攻撃位置表示
     data modify storage api: Argument.ID set value 2063

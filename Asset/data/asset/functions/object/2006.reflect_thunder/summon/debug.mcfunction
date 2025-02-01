@@ -1,4 +1,4 @@
-#> asset:mob/2006.reflect_thunder/summon/debug
+#> asset:object/2006.reflect_thunder/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

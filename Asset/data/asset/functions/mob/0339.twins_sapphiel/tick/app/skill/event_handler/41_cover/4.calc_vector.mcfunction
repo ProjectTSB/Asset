@@ -1,9 +1,8 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/4.calc_vector
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/4.calc_vector
 #
 # アニメーションのイベントハンドラ Hgライダーキック 移動ベクトル計算
 #
-# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/1.main
-
+# @within function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/1.main
 
 # 着地点
     execute as @e[type=area_effect_cloud,tag=9F.Temp.Target.Aec.0,sort=nearest,limit=1] at @s align y run function asset:mob/0339.twins_sapphiel/app/general/6.teleport_to_land
