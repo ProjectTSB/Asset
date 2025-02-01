@@ -1,4 +1,4 @@
-#> asset:mob/0329.eclael_swordbeam/tick/hit
+#> asset:object/2190.eclael_slashbeam/tick/hit
 #
 # Mobのtick時の処理
 #
