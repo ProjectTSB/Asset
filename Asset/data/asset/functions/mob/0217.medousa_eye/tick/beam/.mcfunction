@@ -5,7 +5,7 @@
 # @within function asset:mob/0217.medousa_eye/tick/
 
 # 石化ビーム発射
-    execute positioned ^ ^1.7 ^ run function asset:mob/0217.medousa_eye/tick/beam/recursive
+    execute positioned ^ ^1.8 ^ run function asset:mob/0217.medousa_eye/tick/beam/recursive
 
 # ビームのヒット処理
     execute as @a[tag=LandingTarget,distance=..20] at @s run function asset:mob/0217.medousa_eye/tick/beam/hit

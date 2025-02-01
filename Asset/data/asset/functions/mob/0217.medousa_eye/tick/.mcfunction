@@ -15,7 +15,7 @@
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0217.medousa_eye/tick/fix_direction
 
 # 予備動作
-    execute if entity @s[scores={General.Mob.Tick=1}] positioned ^ ^1.7 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
+    execute if entity @s[scores={General.Mob.Tick=1}] positioned ^ ^1.8 ^0.4 run function asset:mob/0217.medousa_eye/tick/vfx
     execute if entity @s[scores={General.Mob.Tick=1..19}] run function asset:mob/0217.medousa_eye/tick/announce/
 
 # 石化ビーム発射

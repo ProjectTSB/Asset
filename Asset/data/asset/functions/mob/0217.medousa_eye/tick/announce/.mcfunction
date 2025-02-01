@@ -11,7 +11,7 @@
 # 2tick毎に予告用再帰
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 positioned ^ ^1.7 ^ run function asset:mob/0217.medousa_eye/tick/announce/recursive
+    execute if score $Interval Temporary matches 0 positioned ^ ^1.8 ^ run function asset:mob/0217.medousa_eye/tick/announce/recursive
     scoreboard players reset $Interval Temporary
 
 # リセット
