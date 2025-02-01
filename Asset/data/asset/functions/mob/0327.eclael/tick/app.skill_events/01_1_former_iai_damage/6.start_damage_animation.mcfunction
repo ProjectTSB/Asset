@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/6.start_damage_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/01_1_former_iai_damage/6.start_damage_animation
 #
 # 汎用処理 怯みアニメーションを再生開始する
 #

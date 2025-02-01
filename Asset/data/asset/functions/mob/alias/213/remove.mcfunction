@@ -1,4 +1,4 @@
-#> asset:mob/alias/213/init
+#> asset:mob/alias/213/remove
 #
 # Remove処理のエイリアス
 #
