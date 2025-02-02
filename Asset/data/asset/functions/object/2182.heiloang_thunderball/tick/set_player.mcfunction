@@ -19,7 +19,7 @@
     execute on passengers run tag @s add 2182.Append
 
 # 移動
-    tp @s ~ ~30 ~
+    execute rotated as @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^30 ^40
 
 # 魔法陣召喚
     execute at @s facing entity @p[tag=2182.TargetPlayer] feet run tp @s ~ ~ ~ ~ ~

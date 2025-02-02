@@ -13,11 +13,15 @@
 
 # Ajモデル消去
     execute as @e[type=item_display,tag=BG.ModelRoot] run function animated_java:tiamat_aj/as_own_locator_entities {command:'function asset:mob/0412.tiamat/death/kill_hitbox'}
-    function animated_java:tiamat_aj/remove/all
+    # function animated_java:tiamat_aj/remove/all
 
 # その他リセット
     tag @a remove BG.MainTarget
     # function asset:mob/0410.tiamat/tick/util/remove_all_tag
+
+# 死亡演出
+    data modify storage api: Argument.ID set value 2184
+    function api:object/summon
 
 # オブジェクト消去
     execute as @e[tag=BG.Object] on passengers run kill @s
