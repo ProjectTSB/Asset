@@ -33,6 +33,8 @@
     execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 1b
     execute if score $CurrentDurability Temporary matches ..0 run data modify storage asset:context this.RepairTime set from storage asset:context this.MaxRepairTime
     execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.DisplayName] run data modify entity @s text set value '[{"bold":true,"color":"#FFFFFF","text":"PRESS "},{"color":"#FFFFFF","keybind":"key.sneak"},{"bold":true,"color":"#FFFFFF","text":": 修理支援"}]'
+    execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/animations/destroy/tween {to_frame: 0, duration: 1}
+    execute if score $CurrentDurability Temporary matches ..0 on passengers if entity @s[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/variants/destroyed/apply
     execute if score $CurrentDurability Temporary matches ..0 run return run scoreboard players reset $CurrentDurability Temporary
 
 # 生存している場合のtick処理
