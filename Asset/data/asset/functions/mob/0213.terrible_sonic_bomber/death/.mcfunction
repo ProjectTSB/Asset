@@ -10,8 +10,9 @@
 # super
     function asset:mob/super.death
 
-# remove markers
-    kill @e[tag=5X.Centre]
+# 死亡演出オブジェクト召喚
+    data modify storage api: Argument.ID set value 2203
+    function api:object/summon
 
 # remove objects and mobs
     execute as @e[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/remove/this 

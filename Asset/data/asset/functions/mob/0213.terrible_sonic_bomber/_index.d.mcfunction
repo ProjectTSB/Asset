@@ -5,6 +5,7 @@
 # @within
 #   function asset:mob/0213.terrible_sonic_bomber/**
 #   function asset:mob/0214.drone/**
+#   function asset:object/2204.sonicbomber_leftwing/**
     #declare tag 5X.Centre #旋回中心座標を示す、基本的には呪われた剣の位置と一致する。イギリス綴りなので誤字ではない
     #declare tag 5X.StartAction #初期モーションが終わって行動開始している意味
     #declare tag 5X.WingStraight #直線翼になっているかどうか
@@ -18,6 +19,7 @@
 #> aj
 # @within
 #   function asset:mob/0213.terrible_sonic_bomber/**
+#   function asset:object/2203.sonicbomber_destroyed/**
     #declare tag 5X.ModelRoot
     #declare function animated_java:terrible_sonic_bomber/remove/this
     #declare function animated_java:terrible_sonic_bomber/summon
