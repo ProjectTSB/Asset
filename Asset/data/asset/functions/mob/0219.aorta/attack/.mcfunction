@@ -24,7 +24,7 @@
 
 # 自身を回復
 # 難易度値に比例して回復量を増加させる
-    execute store result storage api: Argument.Heal int 250 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Heal int 120 run data get storage api: Return.Difficulty
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
