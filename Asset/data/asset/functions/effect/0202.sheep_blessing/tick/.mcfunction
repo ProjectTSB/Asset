@@ -1,5 +1,5 @@
 #> asset:effect/0202.sheep_blessing/tick/
 # @within function asset:effect/0202.sheep_blessing/_/tick
 
-# 羊毛の床を設置
-    execute unless entity @s[gamemode=!survival,gamemode=!creative] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 white_wool keep
+# 破壊可能エリアかつスペクテイターでなければ羊毛の床を設置
+    execute if predicate api:area/is_breakable if entity @s[gamemode=!spectator] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 white_wool keep
