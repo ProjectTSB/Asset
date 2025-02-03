@@ -13,11 +13,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 待機時間を設定 0以下になるとschedule.mcfでリセットされる
-    scoreboard players set @s SQ.WaitingTime 60
-
-# スケジュールを起動
-    schedule function asset:artifact/1034.eiya/trigger/schedule 1t replace
+# 次の段までの猶予
+    execute store result score $WaitingTime Temporary run time query gametime
+    scoreboard players operation $WaitingTime Temporary -= $LatestUseTick Temporary
+    execute if score $WaitingTime Temporary matches 60.. run scoreboard players reset @s SQ.Count
+    scoreboard players reset $WaitingTime Temporary
 
 # 1~9段目までの段階のスコア
     scoreboard players add @s SQ.Count 1
