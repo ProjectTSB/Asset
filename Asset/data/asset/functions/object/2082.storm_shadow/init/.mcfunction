@@ -5,9 +5,10 @@
 # @within asset:object/alias/2082/init
 
 # スピード設定
-    data modify storage asset:context this.Speed set value 5
-    data modify storage asset:context this.Range set value 256
+    data modify storage asset:context this.Speed set value 7
+    data modify storage asset:context this.Range set value 2048
     data modify storage asset:context this.MovePerStep set value 0.5
+    
 
 # super.init呼び出し
     function asset:object/super.init

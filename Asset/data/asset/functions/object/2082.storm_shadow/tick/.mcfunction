@@ -7,11 +7,11 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 目標座標へ向け旋回
+# 目標座標へ向け旋回(旋回する距離を取るため最初は直進させる)
     data modify storage asset:temp args.x set from storage asset:context this.target_pos[0]
     data modify storage asset:temp args.y set from storage asset:context this.target_pos[1]
     data modify storage asset:temp args.z set from storage asset:context this.target_pos[2]
-    function asset:object/2082.storm_shadow/tick/turn with storage asset:temp args
+    execute if score @s General.Object.Tick matches 15.. run function asset:object/2082.storm_shadow/tick/turn with storage asset:temp args
 
 # super
     execute at @s run function asset:object/super.tick
