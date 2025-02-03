@@ -56,6 +56,10 @@
     execute if entity @s[tag=BE.Skill.Ter.Purg.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio_start/
     execute if entity @s[tag=BE.Skill.Ter.Purg] run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/
 
+# テルツェット・ラグナレク
+    execute if entity @s[tag=BE.Skill.Ter.Rag.Start] run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok_start/
+    execute if entity @s[tag=BE.Skill.Ter.Rag] run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/
+
 ## P4
 # ヘイルディザスター
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/heil_disaster/

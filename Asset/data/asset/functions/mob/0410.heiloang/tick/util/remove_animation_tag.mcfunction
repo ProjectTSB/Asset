@@ -30,6 +30,8 @@
     tag @s remove BE.Skill.Ter.Alig
     tag @s remove BE.Skill.Ter.Purg.Start
     tag @s remove BE.Skill.Ter.Purg
+    tag @s remove BE.Skill.Ter.Rag.Start
+    tag @s remove BE.Skill.Ter.Rag
     tag @s remove BE.Skill.Plamet
     tag @s remove BE.Skill.PowerBreath
     tag @s remove BE.Skill.PowerBreath.C1

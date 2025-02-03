@@ -127,6 +127,8 @@
     #declare tag BE.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BE.Skill.Ter.Purg.Start テルツェット・プルガトリオ開始
     #declare tag BE.Skill.Ter.Purg テルツェット・プルガトリオ
+    #declare tag BE.Skill.Ter.Rag.Start テルツェット・ラグナレク開始
+    #declare tag BE.Skill.Ter.Rag テルツェット・ラグナレク
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
