@@ -8,14 +8,10 @@
     tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"があああああッ･･！！"}]
     effect give @s unluck 30 1
 
-# ダメージを受ける
-    # 与えるダメージ = 3.5
-        data modify storage api: Argument.Damage set value 3.5f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-# 補正function
+# 自傷
+    data modify storage api: Argument.Damage set value 3.5f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは“不運”と“踊”ってしまった","with":[{"selector":"@s"}]}]'
     function api:damage/modifier
-# 対象は自分
     function api:damage/
-# リセット
     function api:damage/reset
