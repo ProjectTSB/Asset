@@ -5,12 +5,6 @@
 # @within function
 #   asset:mob/0104.mad_scientist/tick/summon/
 
-#> Private
-# @private
-    #declare score_holder $Difficulty
-    #declare score_holder $Stack
-    #declare score_holder $MPReduceVal
-
 # 毒ポーション
     execute if data storage asset:context this{Element:"Poison"} run function asset:mob/0104.mad_scientist/tick/summon/poison
 
