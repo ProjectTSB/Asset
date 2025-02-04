@@ -1,4 +1,4 @@
-#> asset:mob/0021.demon_eye/0.load
+#> asset:mob/0021.demon_eye/load
 #
 # 神器に利用するスコアボード等の初期化処理
 #
