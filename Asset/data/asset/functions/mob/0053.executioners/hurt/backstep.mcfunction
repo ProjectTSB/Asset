@@ -1,4 +1,4 @@
-#> asset:mob/0053.executioners/hurt/2.1.backstep
+#> asset:mob/0053.executioners/hurt/backstep
 #
 # バックステップ（ほとんどチェーンソーゾンビと一緒）
 #
