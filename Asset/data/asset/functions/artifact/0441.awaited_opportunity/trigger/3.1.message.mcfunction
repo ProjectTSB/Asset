@@ -15,6 +15,10 @@
 # ランダムでメッセージを垂れ流す
     # 疑似乱数取得
         execute store result score $Random Temporary run random value 0..18
+
+    # debug
+        scoreboard players set $Random Temporary 11
+
     # メッセージ出力
         execute if score $Random Temporary matches 0 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"あんまチョーシくれてっとひき肉にしちまうよ！"}]
         execute if score $Random Temporary matches 1 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"おまえも････ うるさい蟲だ････"}]
