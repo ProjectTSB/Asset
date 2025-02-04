@@ -1,4 +1,4 @@
-#> asset:artifact/0441.awaited_opportunity/trigger/3.1.message
+#> asset:artifact/0441.awaited_opportunity/trigger/message/
 #
 # メッセージを流す
 #
@@ -41,7 +41,7 @@
         execute if score $Random Temporary matches 18 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"めんどくせーから全部殺すか？あ？"}]
 
     # プレイヤーが"不運"と"踊"っちまった時
-        execute if score $Random Temporary matches 11 run function asset:artifact/0441.awaited_opportunity/trigger/3.2.hardluck
+        execute if score $Random Temporary matches 11 run function asset:artifact/0441.awaited_opportunity/trigger/message/hardluck
 
     # スピードの向こう側
         execute if score $Random Temporary matches 13 run effect give @s speed 30 10 true

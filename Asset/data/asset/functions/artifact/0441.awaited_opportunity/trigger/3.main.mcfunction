@@ -13,7 +13,7 @@
     effect give @s speed 10 2 true
 
 # 30%の確率でメッセージを流す
-    execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/3.1.message
+    execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/message/
 
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run particle minecraft:block redstone_block ~ ~1 ~ 0.1 0.1 0.1 1 10
