@@ -17,8 +17,8 @@
 # 水ポーション
     execute if data storage asset:context this{Element:"Water"} run function asset:mob/0104.mad_scientist/tick/summon/water
 
-# 雷ポーション 
-    execute if data storage asset:context this{Element:"Thunder"} run function asset:mob/0104.mad_scientist/tick/summon/water
+# 雷ポーション
+    execute if data storage asset:context this{Element:"Thunder"} run function asset:mob/0104.mad_scientist/tick/summon/thunder
 
 # 毒ポーション
     execute if data storage asset:context this{Element:"Poison"} run function asset:mob/0104.mad_scientist/tick/summon/poison
