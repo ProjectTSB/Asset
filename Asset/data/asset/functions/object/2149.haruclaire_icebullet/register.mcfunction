@@ -17,5 +17,6 @@
 # ID (int)
     data modify storage asset:object ID set value 2149
 # フィールド(オプション)
-    data modify storage asset:object Field.Rotation set value [0.0f,0.0f]
     data modify storage asset:object Field.Speed set value 1
+    data modify storage asset:object Field.Damage set value 0.01
+    data modify storage asset:object Field.MobUUID set value -1
