@@ -11,7 +11,6 @@
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a[distance=..100] if score @s UserID = $UserID Temporary run tag @s add Owner
 
-
 # 回転のInterval
     execute store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
     execute if data storage asset:context this{SpinInterval:0} on passengers run function asset:object/1091.flame_boomerang/tick/spin
