@@ -14,4 +14,3 @@
     execute if data storage asset:context this{Spin:1} run data modify entity @s transformation.left_rotation set value [0.499f,0.499f,-0.499f,0.499f]
     execute if data storage asset:context this{Spin:0} run data modify entity @s transformation.left_rotation set value [0.7071f,0.0f,0.0f,0.7071f]
     execute if data storage asset:context this{Spin:0} run data modify storage asset:context this.Spin set value 4
-

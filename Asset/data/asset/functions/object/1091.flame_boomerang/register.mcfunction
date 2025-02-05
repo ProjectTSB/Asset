@@ -20,6 +20,7 @@
     data modify storage asset:object Field.Speed set value 3
     data modify storage asset:object Field.Range set value 500
     data modify storage asset:object Field.MovePerStep set value 0.25
+    data modify storage asset:object Field.SavedMPS set from storage asset:object Field.MovePerStep
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.SpinInterval set value 3
     data modify storage asset:object Field.HitList set value {}
