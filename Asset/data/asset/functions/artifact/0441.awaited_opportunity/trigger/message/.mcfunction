@@ -3,6 +3,7 @@
 # メッセージを流す
 #
 # @within function asset:artifact/0441.awaited_opportunity/trigger/3.main
+
 #> Private
 # @private
     #declare score_holder $Random
