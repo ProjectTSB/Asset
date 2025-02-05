@@ -1,4 +1,4 @@
-#> asset:mob/0053.executioners/hurt/2.1.backstep
+#> asset:mob/0053.executioners/hurt/backstep
 #
 # バックステップ（ほとんどチェーンソーゾンビと一緒）
 #
@@ -12,7 +12,7 @@
     execute facing entity @p[tag=Attacker,distance=..100] feet rotated ~180 -10 run function lib:motion/
 
 # エフェクト
-    effect give @s speed 1 6
+    effect give @s speed 1 6 true
 
 # リセット
     data remove storage lib: Argument
