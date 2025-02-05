@@ -9,7 +9,7 @@
 
 # Ownerを特定しておく
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
-    execute as @a[distance=..100] if score @s UserID = $UserID Temporary run tag @s add Owner
+    execute as @a if score @s UserID = $UserID Temporary run tag @s add Owner
 
 # 回転のInterval
     execute store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
