@@ -8,3 +8,4 @@
     #declare tag ReturnToOwner
     #declare tag Break
     #declare tag 1091.TargetEntity
+    #declare tag 1091.Collided
