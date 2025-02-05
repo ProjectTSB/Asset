@@ -19,7 +19,8 @@
     execute if entity @s[tag=!HitGround] if score @s General.Object.Tick matches ..23 run data modify storage asset:context this.MovePerStep set value 0
     execute if entity @s[tag=!HitGround] if score @s General.Object.Tick matches ..23 run scoreboard players set @s General.Object.Tick 24
 
-# 26..なら壁にヒットしたら消滅
+# 反転後、壁にヒットしたら消滅
+    execute if score @s General.Object.Tick matches 37.. run tag @s add Break
     execute if score @s General.Object.Tick matches 37.. run function asset:object/call.m {method:"kill"}
 
 # リセット

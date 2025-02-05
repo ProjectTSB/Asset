@@ -6,4 +6,5 @@
     #declare score_holder $UserID
     #declare tag Owner
     #declare tag ReturnToOwner
+    #declare tag Break
     #declare tag 1091.TargetEntity
