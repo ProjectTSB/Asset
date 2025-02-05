@@ -1,4 +1,4 @@
-#> asset:object/1091.flame_boomerang/tick/returning
+#> asset:object/1091.flame_boomerang/tick/return_to_hand
 #
 # 使用者の手元を目標として戻る
 #

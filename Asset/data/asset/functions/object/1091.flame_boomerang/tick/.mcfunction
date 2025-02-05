@@ -26,7 +26,7 @@
 
 # 戻ってくる処理
     execute if score @s General.Object.Tick matches 20..25 facing entity @p[tag=Owner,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if score @s General.Object.Tick matches 26.. run function asset:object/1091.flame_boomerang/tick/returning
+    execute if score @s General.Object.Tick matches 26.. run function asset:object/1091.flame_boomerang/tick/return_to_hand
 
 # MovePerStepが0なら戻しておく
     execute if score @s General.Object.Tick matches 36.. if data storage asset:context this{MovePerStep:0} run data modify storage asset:context this.MovePerStep set from storage asset:context this.SavedMPS
