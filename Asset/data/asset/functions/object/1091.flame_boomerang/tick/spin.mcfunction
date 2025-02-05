@@ -4,6 +4,9 @@
 #
 # @within function asset:object/1091.flame_boomerang/tick/
 
+# sfx
+    playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 0.6 0.8
+
 # start_interpolation
     data modify entity @s start_interpolation set value 0
 

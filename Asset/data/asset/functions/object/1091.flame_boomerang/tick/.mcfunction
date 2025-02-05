@@ -11,8 +11,6 @@
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a[distance=..100] if score @s UserID = $UserID Temporary run tag @s add Owner
 
-    execute on passengers at @s run particle flame ~ ~ ~ 0 0 0 0 1
-    execute run particle soul_fire_flame ^ ^ ^1 0 0 0 0 1
 
 # 回転のInterval
     execute store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
@@ -23,7 +21,6 @@
     execute if score @s General.Object.Tick matches 18 run data modify storage asset:context this.Speed set value 2
     execute if score @s General.Object.Tick matches 22 run data modify storage asset:context this.Speed set value 1
     execute if score @s General.Object.Tick matches 26 run data modify storage asset:context this.Speed set value 2
-    #execute if score @s General.Object.Tick matches 30 run data modify storage asset:context this.Speed set value 3
 
 # 戻り始めるタイミングでHitListを空に
     execute if score @s General.Object.Tick matches 25 run data modify storage asset:context this.HitList set value {}
@@ -43,4 +40,4 @@
     tag @p[tag=Owner] remove Owner
 
 # 消滅処理
-    execute if score @s General.Object.Tick matches 200.. run function asset:object/call.m {method:"kill"}
+    #execute if score @s General.Object.Tick matches 200.. run function asset:object/call.m {method:"kill"}
