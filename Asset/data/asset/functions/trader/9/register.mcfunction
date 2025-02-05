@@ -53,7 +53,7 @@ execute unless loaded 39 21 -70 run return 1
 # 取引 下位通貨を深層岩に
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
-    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:deepslate",Count:8b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:cobbled_deepslate",Count:8b}
 
 # 取引 下位通貨をブラックストーンに
     data modify storage asset:trader Trades append value {}
@@ -204,6 +204,11 @@ execute unless loaded 39 21 -70 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:warped_nylium",Count:4b}
+
+# 取引 下位通貨を光るイカスミに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:glow_ink_sac",Count:8b}
 
 # 取引 下位通貨を白色の染料に
     data modify storage asset:trader Trades append value {}
