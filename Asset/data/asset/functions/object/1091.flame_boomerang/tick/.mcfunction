@@ -37,6 +37,3 @@
 # リセット
     scoreboard players reset $UserID Temporary
     tag @p[tag=Owner] remove Owner
-
-# 消滅処理
-    #execute if score @s General.Object.Tick matches 200.. run function asset:object/call.m {method:"kill"}
