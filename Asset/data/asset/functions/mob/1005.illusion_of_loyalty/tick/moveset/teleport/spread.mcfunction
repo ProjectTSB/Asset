@@ -9,6 +9,7 @@
 #> トゥルの出現地点
 # @private
     #declare tag RW.Marker.SpawnPoint
+    #declare tag SpreadMarker
 
 # 飛ぶ前の演出
     function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/vfx
