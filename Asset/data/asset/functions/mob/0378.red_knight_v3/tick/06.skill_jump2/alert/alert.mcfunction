@@ -25,3 +25,7 @@
     execute if score @s AI.Tick matches 40..79 run scoreboard players operation $SoundInterval Temporary %= $3 Const
     execute if score @s AI.Tick matches 80..100 run scoreboard players operation $SoundInterval Temporary %= $2 Const
     execute if score $SoundInterval Temporary matches 0 at @a[distance=..16] run playsound minecraft:block.note_block.pling neutral @p ~ ~ ~ 0.8 2
+
+# リセット
+    scoreboard players reset $SoundInterval Temporary
+    scoreboard players reset $ParticleInterval Temporary

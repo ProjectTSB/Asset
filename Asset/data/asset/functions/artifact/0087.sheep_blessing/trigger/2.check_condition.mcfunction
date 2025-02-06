@@ -8,9 +8,9 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-# プレイヤーのゲームモードがサバイバル・クリエイティブの時にのみ使用可能
-    execute if entity @s[gamemode=!survival,gamemode=!creative] run tag @s remove CanUsed
-    execute if entity @s[gamemode=!survival,gamemode=!creative] run function lib:message/artifact/can_not_use_here
+# 破壊可能エリアでのみ使用可能
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
 
 # 16個以上羊毛を持ってるかチェック
     execute store result score @s Temporary run clear @s #wool 0
