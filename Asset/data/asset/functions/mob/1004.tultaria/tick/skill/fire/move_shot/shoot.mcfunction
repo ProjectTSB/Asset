@@ -6,7 +6,7 @@
 
 #> 行き先マーカー
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 拡散させるEntityを召喚する
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
