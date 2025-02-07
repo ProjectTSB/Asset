@@ -21,8 +21,6 @@
     execute as @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
-say @e[tag=Victim]
-
 # ダメージ
     data modify storage api: Argument.Damage set value 45f
     data modify storage api: Argument.AttackType set value "Physical"
