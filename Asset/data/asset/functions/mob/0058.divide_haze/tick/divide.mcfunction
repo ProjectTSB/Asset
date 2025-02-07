@@ -1,8 +1,8 @@
-#> asset:mob/0058.divide_haze/tick/4.divide
+#> asset:mob/0058.divide_haze/tick/divide
 #
 #
 #
-# @within function asset:mob/0058.divide_haze/tick/3.mob_count
+# @within function asset:mob/0058.divide_haze/tick/mob_count
 
 # 増殖
     data modify storage api: Argument.ID set value 58
