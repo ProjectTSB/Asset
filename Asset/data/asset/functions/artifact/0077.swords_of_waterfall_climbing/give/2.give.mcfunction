@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"刀剣","color":"dark_aqua","italic":false},{"text":"『滝登り』","italic":false,"underlined":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"滝を登るかの如く"}','{"text":"自身が上昇中には互いを打ち上げ"}','{"text":"落下中には敵を叩き落とし、範囲ダメージを与える"}','{"text":"叩き落としてから5秒間は落下ダメージを無効化する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"滝を登るかの如く"}','{"text":"自身が上昇中には互いを打ち上げ"}','{"text":"落下中には敵を叩き落とし、範囲ダメージを与える"}','{"text":"叩き落としてから3秒間は落下ダメージを無効化する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
