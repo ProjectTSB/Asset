@@ -55,6 +55,7 @@
     #declare tag BF.Skill.Ter.Dis テルツェット・ディザスター
     #declare tag BF.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BF.Skill.Ter.Purg テルツェット・プルガトリオ
+    #declare tag BF.Skill.Ter.Rag テルツェット・ラグナレク
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット

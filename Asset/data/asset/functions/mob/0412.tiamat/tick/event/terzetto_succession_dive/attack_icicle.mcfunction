@@ -6,6 +6,7 @@
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_b/
 #    function asset:mob/0412.tiamat/tick/event/terzetto_aligning/
+#    function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # アイシクル召喚
     data modify storage api: Argument.ID set value 2178

@@ -6,6 +6,7 @@
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_b/
 #    function asset:mob/0412.tiamat/tick/event/terzetto_aligning/
+#    function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # 攻撃位置決定
     summon area_effect_cloud ~ ~ ~ {Duration:8,Tags:["BG.Temp.AttackPosition"]}

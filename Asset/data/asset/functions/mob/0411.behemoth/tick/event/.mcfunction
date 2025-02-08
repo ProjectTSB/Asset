@@ -34,3 +34,6 @@
 
 # テルツェット・プルガトリオ
     execute if entity @s[tag=BF.Skill.Ter.Purg] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/
+
+# テルツェット・ラグナレク
+    execute if entity @s[tag=BF.Skill.Ter.Rag] run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/

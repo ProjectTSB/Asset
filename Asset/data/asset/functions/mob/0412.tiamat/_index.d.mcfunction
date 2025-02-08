@@ -56,6 +56,7 @@
     #declare tag BG.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BG.Skill.Ter.Purg.A テルツェット・プルガトリオ 外→内
     #declare tag BG.Skill.Ter.Purg.B テルツェット・プルガトリオ 内→外
+    #declare tag BG.Skill.Ter.Rag テルツェット・ラグナレク
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット

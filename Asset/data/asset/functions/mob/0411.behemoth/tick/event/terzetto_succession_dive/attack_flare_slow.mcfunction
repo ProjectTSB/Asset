@@ -7,6 +7,7 @@
 #    function asset:mob/0411.behemoth/tick/event/terzetto_succession_b/
 #    function asset:mob/0411.behemoth/tick/event/terzetto_aligning/
 #    function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/
+#    function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/
 
 # フレア召喚
     data modify storage api: Argument.ID set value 2177
