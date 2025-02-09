@@ -11,10 +11,8 @@
 #    execute if score @s RW.Phase matches 3.. run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/break_platform
 
 # 行動をランダムに選択
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
     # フェイズ1
-        scoreboard players operation $Random Temporary %= $2 Const
+        execute store result score $Random Temporary run random value 0..1
 
 # デバッグ用、実行する技を確定させる
 #    scoreboard players set $Random Temporary 1
