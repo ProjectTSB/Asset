@@ -15,11 +15,11 @@
     execute if score @s General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_melee_2/tween {to_frame:0,duration:1}
 
 # 警告
-    execute if score @s General.Mob.Tick matches 0 positioned ~ ~-0.5 ~ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
-    execute if score @s[scores={RW.Phase=2..}] General.Mob.Tick matches 10 positioned ^5 ^-0.5 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
-    execute if score @s[scores={RW.Phase=2..}] General.Mob.Tick matches 10 positioned ^-5 ^-0.5 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
-    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 20 positioned ^11 ^-0.5 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
-    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 20 positioned ^-11 ^-0.5 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
+    execute if score @s General.Mob.Tick matches 0 positioned ~ ~-0.3 ~ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
+    execute if score @s[scores={RW.Phase=2..}] General.Mob.Tick matches 10 positioned ^5 ^-0.3 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
+    execute if score @s[scores={RW.Phase=2..}] General.Mob.Tick matches 10 positioned ^-5 ^-0.3 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
+    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 20 positioned ^11 ^-0.3 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
+    execute if score @s[scores={RW.Phase=3..}] General.Mob.Tick matches 20 positioned ^-11 ^-0.3 ^ run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
 
 # 斬撃エフェクト
     execute if score @s General.Mob.Tick matches 20 at @s run function asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/slash
