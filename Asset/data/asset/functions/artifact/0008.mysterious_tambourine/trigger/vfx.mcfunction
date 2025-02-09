@@ -5,13 +5,13 @@
 # @within function asset:artifact/0008.mysterious_tambourine/trigger/3.main
 
 # sound
-    playsound minecraft:block.chain.place player @a ~ ~ ~ 1 1
-    playsound minecraft:block.chain.place player @a ~ ~ ~ 1 0.6
-    playsound minecraft:block.iron_door.open player @a ~ ~ ~ 0.7 1.5
-    playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 0.8 0.8
-    playsound ogg:random.levelup player @a ~ ~ ~ 0.5 1.2
-    playsound ogg:random.levelup player @a ~ ~ ~ 0.7 1.5
-    playsound ogg:random.levelup player @a ~ ~ ~ 0.7 2
+    playsound minecraft:block.chain.place player @s ~ ~ ~ 1 1
+    playsound minecraft:block.chain.place player @s ~ ~ ~ 1 0.6
+    playsound minecraft:block.iron_door.open player @s ~ ~ ~ 0.7 1.5
+    playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 0.8 0.8
+    playsound ogg:random.levelup player @s ~ ~ ~ 0.5 1.2
+    playsound ogg:random.levelup player @s ~ ~ ~ 0.7 1.5
+    playsound ogg:random.levelup player @s ~ ~ ~ 0.7 2
     particle minecraft:crit ~ ~1 ~ 0.25 0.1 0.25 0.7 20
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgKyUCGpAjAEYBmAtAOw2MBsrALDWalWNAEwpGHFHwCcADnb0mLbmAIA7GgFsEyQGGKAAnpqwMGhm0BnJOBQB7QuohJKABgIo4TuBhtgAbjTYhLrgAB5I7mBQkQC+sQQWpGiE1oiiAHSUBJYQ5s6IUXDY2Ggwlrr0rlEYdnkQulFolgCiJWUVLQCOhEHYUADKZp7kiMxBFfF44NDwFOhYuCbEZPOkKBt8jADMrDL0pDT82zK7O5RyrHKkjJQoNJT72-R8Jpo6FIaiJmYWWmm2BxOJDcKKeby+RDgQLBUJgCKFAgxQpTMBJFJpbY5PIYApFdrlSrVRJ1GgNSIEZptUqE7q9EqDYZwUbjbCTBIzWC6VCYHD4IgkUZgOiuGSUdikGQiVyUYSyURSxgyJUiSVCB6PNwyN7abmGVw-cxWPz2RwFPhgrwNSHQoIhPwIqLI1yo9GpJCibH5ClgYo0ipIKo1UnkxFgKkEzo9PqMmgjJCs9kAXSAA_3
