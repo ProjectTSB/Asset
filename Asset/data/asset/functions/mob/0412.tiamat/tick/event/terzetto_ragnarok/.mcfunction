@@ -24,7 +24,7 @@
     # ターゲットを向く
         execute if score @s BG.EventTimer matches 71..210 run function asset:mob/0412.tiamat/tick/util/rotate_to_target
     # 線予兆
-        execute if score @s BG.EventTimer matches 71 positioned ^ ^2.5 ^6 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_line
+        execute if score @s BG.EventTimer matches 70 positioned ^ ^2.5 ^6 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_line
         execute if score @s BG.EventTimer matches 71..210 positioned ^ ^2.5 ^6 as @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_line
         # 線を消去
             execute if score @s BG.EventTimer matches 210 positioned ^ ^2.5 ^6 run kill @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1]
@@ -52,7 +52,6 @@
 
 # 移動
     # アニメーション再生
-        execute if score @s BG.EventTimer matches 331 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
         execute if score @s BG.EventTimer matches 360 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
     # 中心点前に移動
         execute if score @s BG.EventTimer matches 355 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^16 ~180 0
@@ -62,30 +61,35 @@
         execute if score @s BG.EventTimer matches 400 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_0_cast_start
         execute if score @s BG.EventTimer matches 420 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_1_casting
     # アニメーション再生
-        execute if score @s BG.EventTimer matches 480 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/8_spin
+        execute if score @s BG.EventTimer matches 500 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/8_spin
     # 演出
         execute if score @s BG.EventTimer matches 401 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
-        execute if score @s BG.EventTimer matches 480 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
-        execute if score @s BG.EventTimer matches 513 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
-        execute if score @s BG.EventTimer matches 500..515 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
-        execute if score @s BG.EventTimer matches 500..515 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 500 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
+        execute if score @s BG.EventTimer matches 533 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
+        execute if score @s BG.EventTimer matches 520..535 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 520..535 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
     # 攻撃
-        execute if score @s BG.EventTimer matches 400..480 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_circle_icicle
-        execute if score @s BG.EventTimer matches 470 positioned ^ ^-0.3 ^ run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_attack_pos_icicle
-        execute if score @s BG.EventTimer matches 480 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_0_icicle
-        execute if score @s BG.EventTimer matches 530 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_1_icicle
-        execute if score @s BG.EventTimer matches 495 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_0_icicle
-        execute if score @s BG.EventTimer matches 545 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_1_icicle
+        execute if score @s BG.EventTimer matches 400..500 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_circle_icicle
+        execute if score @s BG.EventTimer matches 490 positioned ^ ^-0.3 ^ run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_attack_pos_icicle
+        execute if score @s BG.EventTimer matches 500 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_0_icicle
+        execute if score @s BG.EventTimer matches 550 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_1_icicle
+        execute if score @s BG.EventTimer matches 515 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_0_icicle
+        execute if score @s BG.EventTimer matches 565 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_1_icicle
     # 演出
-        execute if score @s BG.EventTimer matches 400..480 run particle cloud ~ ~3 ~ 2 2 2 0.1 1
-        execute if score @s BG.EventTimer matches 400..495 rotated ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/effect_particle_icicle
-
+        execute if score @s BG.EventTimer matches 400..500 run particle cloud ~ ~3 ~ 2 2 2 0.1 1
+        execute if score @s BG.EventTimer matches 400..515 rotated ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/effect_particle_icicle
+    # 氷柱設置
+        # 周囲のプレイヤー数と同じだけ設置、最大6
+            execute if score @s BG.EventTimer matches 514 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_pillar_position
+            execute if score @s BG.EventTimer matches 515 as @a[distance=..80] as @e[type=area_effect_cloud,tag=BG.Temp.PillarPosition,sort=random,limit=1] at @s run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_pillar
+        # 破壊
+            execute if score @s BG.EventTimer matches 800 run tag @e[type=item_display,tag=2180.Pillar] add 2180.Pillar.Death
 # 移動
     # アニメーション再生
-        execute if score @s BG.EventTimer matches 540 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
+        execute if score @s BG.EventTimer matches 560 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s BG.EventTimer matches 886.. run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/end
+    execute if score @s BG.EventTimer matches 880.. run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/end

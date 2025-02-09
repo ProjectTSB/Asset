@@ -25,7 +25,7 @@
     # ターゲットを向く
         execute if score @s BF.EventTimer matches 71..210 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 線予兆
-        execute if score @s BF.EventTimer matches 71 positioned ^ ^4 ^4 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/summon_line
+        execute if score @s BF.EventTimer matches 70 positioned ^ ^4 ^4 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/summon_line
         execute if score @s BF.EventTimer matches 71..210 positioned ^ ^4 ^4 as @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/prediction_line
         # 線を消去
             execute if score @s BF.EventTimer matches 210 positioned ^ ^4 ^4 run kill @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1]
@@ -52,46 +52,54 @@
         execute if score @s BF.EventTimer matches 288 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/attack_flare_normal
         execute if score @s BF.EventTimer matches 288 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/attack_flare_slow
 
-# # 後半
-#     # 移動
-#         # アニメーション再生
-#             execute if score @s BF.EventTimer matches 430 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
-#         # ヘイローン、ティアマットの対角に移動
-#             execute if score @s BF.EventTimer matches 426 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^ ~ 0
-#             execute if score @s BF.EventTimer matches 426 at @s facing entity @e[type=slime,tag=BE.EntityRoot] feet positioned ^ ^ ^-0.01 facing entity @e[type=slime,tag=BG.EntityRoot] feet positioned ^ ^ ^-0.01 facing entity @s feet rotated ~ 0 positioned ^ ^ ^-32 run tp @s ~ ~ ~ ~ 0
-#     # ヘルファイア
-#         # 詠唱
-#             execute if score @s BF.EventTimer matches 470 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
-#             execute if score @s BF.EventTimer matches 490 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
-#         # ターゲット決定
-#             execute if score @s BF.EventTimer matches 490..719 run function asset:mob/0411.behemoth/tick/util/check_target
-#         # ターゲットを向く
-#             execute if score @s BF.EventTimer matches 490..719 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
-#         # 攻撃範囲予告
-#             execute if score @s BF.EventTimer matches 490..606 at @p[tag=BF.MainTarget] run particle soul_fire_flame ~ ~0.3 ~ 0.1 0.1 0.1 0.2 2
-#             execute if score @s BF.EventTimer matches 490..705 at @p[tag=BF.MainTarget] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/particle_attack_area
-#         # 発動
-#             # 1
-#                 execute if score @s BF.EventTimer matches 611 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath
-#                 execute if score @s BF.EventTimer matches 626 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack
-#             # 2
-#                 execute if score @s BF.EventTimer matches 642 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
-#                 execute if score @s BF.EventTimer matches 657 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack
-#             # 3
-#                 execute if score @s BF.EventTimer matches 673 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
-#                 execute if score @s BF.EventTimer matches 688 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack
-#             # 4
-#                 execute if score @s BF.EventTimer matches 704 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
-#                 execute if score @s BF.EventTimer matches 719 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack
-#     # 移動
-#         # アニメーション再生
-#             execute if score @s BF.EventTimer matches 760 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
-#             execute if score @s BF.EventTimer matches 846 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
-#         # 中心点の正面方向に移動
-#             execute if score @s BF.EventTimer matches 845 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
+# 移動
+    # アニメーション再生
+        # execute if score @s BF.EventTimer matches 331 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
+        execute if score @s BF.EventTimer matches 315 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+    # 中心点の後ろに移動
+        execute if score @s BF.EventTimer matches 310 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^-32 ~0 0
 
+# フレアブレス
+    # 詠唱
+        # アニメーション再生
+            execute if score @s BF.EventTimer matches 351 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
+            execute if score @s BF.EventTimer matches 370 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
+        # ターゲットを向く
+            execute if score @s BF.EventTimer matches 351..450 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
+        # 口元に炎の予兆
+            execute if score @s BF.EventTimer matches 351..554 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_flame.m with entity @s data.locators.pos_head
+    # 攻撃
+        # アニメーション再生
+            execute if score @s BF.EventTimer matches 480 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath
+            execute if score @s BF.EventTimer matches 515 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
+            execute if score @s BF.EventTimer matches 550 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
+        # ターゲットを向く
+            execute if score @s BF.EventTimer matches 505 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 515..540 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
+            execute if score @s BF.EventTimer matches 540 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 550..565 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
+        # 攻撃範囲表示
+            execute if score @s BF.EventTimer matches 450 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 510 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 545 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        # 攻撃
+            execute if score @s BF.EventTimer matches 495 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
+            execute if score @s BF.EventTimer matches 530 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
+            execute if score @s BF.EventTimer matches 565 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
+    # 演出
+        execute if score @s BF.EventTimer matches 351 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+        execute if score @s BF.EventTimer matches 480 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+        execute if score @s BF.EventTimer matches 515 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+        execute if score @s BF.EventTimer matches 550 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
+
+# 移動
+    # アニメーション再生
+        execute if score @s BF.EventTimer matches 606 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
+        # execute if score @s BF.EventTimer matches 315 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+    # 中心点の後ろに移動
+        # execute if score @s BF.EventTimer matches 310 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^-32 ~0 0
 
 # 終了
     execute if score @s BF.EventTimer matches 886.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end

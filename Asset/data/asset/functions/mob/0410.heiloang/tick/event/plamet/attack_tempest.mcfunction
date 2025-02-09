@@ -7,6 +7,7 @@
 #    function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/
 #    function asset:mob/0410.heiloang/tick/event/terzetto_succession_b/
 #    function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/
+#    function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2121

@@ -1,10 +1,8 @@
-#> asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+#> asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
 #
 # フレアブレス
 #
 # @within
-#    function asset:mob/0411.behemoth/tick/event/flarebreath/
-#    function asset:mob/0411.behemoth/tick/event/terzetto_disaster/
 #    function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/
 
 # 角度変更
@@ -16,7 +14,7 @@
     data modify storage api: Argument.FieldOverride.Color set value 16727040
     data modify storage api: Argument.FieldOverride.Scale set value [8f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 10
-    data modify storage api: Argument.FieldOverride.Tick set value 25
+    data modify storage api: Argument.FieldOverride.Tick set value 45
     execute positioned ^ ^-0.3 ^ run function api:object/summon
 
 # 終了

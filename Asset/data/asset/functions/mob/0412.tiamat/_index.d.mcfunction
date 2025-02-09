@@ -68,6 +68,7 @@
     #declare tag BG.Temp.AttackHit 攻撃命中検知用
     #declare tag BG.Temp.AttackRotation 角度決定用
     #declare tag BG.Temp.AttackPosition 位置決定用
+    #declare tag BG.Temp.PillarPosition 氷柱召喚位置決定用
     #
     # - オブジェクト
     #declare tag BG.Object オブジェクト共通タグ

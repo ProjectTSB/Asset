@@ -58,8 +58,8 @@
     # ターゲット決定
         execute if score @s BE.EventTimer matches 200 as @a[distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
     # 攻撃範囲予告
-        execute if score @s BE.EventTimer matches 200 at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
-        execute if score @s BE.EventTimer matches 200..330 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 200 at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
+        execute if score @s BE.EventTimer matches 200..330 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 200..330 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # リヒトブリッツェン

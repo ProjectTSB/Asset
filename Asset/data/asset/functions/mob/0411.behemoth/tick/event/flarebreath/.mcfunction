@@ -28,9 +28,9 @@
         execute if score @s BF.EventTimer matches 160 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
         execute if score @s BF.EventTimer matches 170..185 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
     # 攻撃範囲表示
-        execute if score @s BF.EventTimer matches 105 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-        execute if score @s BF.EventTimer matches 140 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-        execute if score @s BF.EventTimer matches 175 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        execute if score @s BF.EventTimer matches 95 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        execute if score @s BF.EventTimer matches 130 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+        execute if score @s BF.EventTimer matches 165 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
     # 攻撃
         execute if score @s BF.EventTimer matches 115 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
         execute if score @s BF.EventTimer matches 150 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
