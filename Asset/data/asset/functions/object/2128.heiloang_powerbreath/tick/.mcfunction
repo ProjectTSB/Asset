@@ -17,9 +17,7 @@
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2128.heiloang_powerbreath/tick/damage
     execute if entity @s[scores={General.Object.Tick=3..15}] run particle explosion ~ ~0.5 ~ 2.5 0.3 2.5 0 2
     execute if entity @s[scores={General.Object.Tick=3..15}] run particle explosion ~ ~10 ~ 2.5 5 2.5 0 3
-    # execute if entity @s[scores={General.Object.Tick=3}] positioned ~ ~0.4 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:4}
-    # execute if entity @s[scores={General.Object.Tick=6}] positioned ~ ~0.4 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:6}
-    # execute if entity @s[scores={General.Object.Tick=9}] positioned ~ ~0.4 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:8}
+    execute if entity @s[scores={General.Object.Tick=3..15}] run particle flash ~ ~2 ~ 2.5 0 2.5 0 6
     execute if entity @s[scores={General.Object.Tick=12}] positioned ~ ~20 ~ run particle dust 1 0.941 0.612 4 ~ ~ ~ 1 8 1 0 30
     execute if entity @s[scores={General.Object.Tick=4}] positioned ~ ~1.5 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:6}
     execute if entity @s[scores={General.Object.Tick=5}] positioned ~ ~2 ~ run function asset:object/2128.heiloang_powerbreath/tick/particle.m {Distance:8}

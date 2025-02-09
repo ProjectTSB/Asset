@@ -22,6 +22,10 @@
     # 眷属召喚
         execute if score @s BE.EventTimer matches 150 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/summon_servants
 
+# バイオーム変更
+    # execute if score @s BE.EventTimer matches 150 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-19 ~-10 ~-19 ~19 ~ ~19 minecraft:crimson_forest
+    # execute if score @s BE.EventTimer matches 150 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-19 ~-1 ~-19 ~19 ~10 ~19 minecraft:the_end
+
 # 移動
     execute if score @s BE.EventTimer matches 154..169 run tp @s ^ ^ ^-0.3 ~ 0
     execute if score @s BE.EventTimer matches 170..184 run tp @s ^ ^ ^-0.1 ~ 0
