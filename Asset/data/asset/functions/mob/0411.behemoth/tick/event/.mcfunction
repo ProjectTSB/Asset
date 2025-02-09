@@ -37,3 +37,6 @@
 
 # テルツェット・ラグナレク
     execute if entity @s[tag=BF.Skill.Ter.Rag] run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/
+
+# ブレイジングエンド
+    execute if entity @s[tag=BF.Skill.Blaze] run function asset:mob/0411.behemoth/tick/event/blazing_end/

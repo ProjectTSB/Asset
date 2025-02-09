@@ -22,6 +22,9 @@
         #declare function animated_java:behemoth_aj/animations/6_1_flymove_end/tween
         #declare function animated_java:behemoth_aj/animations/7_dive/tween
         #declare function animated_java:behemoth_aj/animations/8_attack/tween
+        #declare function animated_java:behemoth_aj/animations/10_0_blazing_start/tween
+        #declare function animated_java:behemoth_aj/animations/10_1_blazing_cast/tween
+        #declare function animated_java:behemoth_aj/animations/10_2_blazing_end/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
@@ -56,6 +59,7 @@
     #declare tag BF.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BF.Skill.Ter.Purg テルツェット・プルガトリオ
     #declare tag BF.Skill.Ter.Rag テルツェット・ラグナレク
+    #declare tag BF.Skill.Blaze ブレイジングエンド
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット

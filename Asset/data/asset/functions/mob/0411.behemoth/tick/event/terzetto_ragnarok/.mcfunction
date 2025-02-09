@@ -102,4 +102,4 @@
         # execute if score @s BF.EventTimer matches 310 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^-32 ~0 0
 
 # 終了
-    execute if score @s BF.EventTimer matches 886.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end
+    execute if score @s BF.EventTimer matches 880.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end

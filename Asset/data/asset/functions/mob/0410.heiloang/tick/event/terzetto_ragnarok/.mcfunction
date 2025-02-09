@@ -48,7 +48,7 @@
         execute if score @s BE.EventTimer matches 660 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_2_common_invoke
         execute if score @s BE.EventTimer matches 744 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃
-        execute if score @s BE.EventTimer matches 545 run tag @a[distance=..80,sort=random,limit=6] add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 541 run tag @a[distance=..80,sort=random,limit=6] add BE.AttackTarget
         execute if score @s BE.EventTimer matches 560 as @a[tag=BE.AttackTarget] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/attack_thunder
 
 # リヒトブリッツェン(回転)
@@ -58,9 +58,9 @@
 
 # テンペスト
     # 攻撃
-        execute if score @s BE.EventTimer matches 552 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
-        execute if score @s BE.EventTimer matches 552..682 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
-        execute if score @s BE.EventTimer matches 552..682 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
+        execute if score @s BE.EventTimer matches 542 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
+        execute if score @s BE.EventTimer matches 542..672 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 542..672 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
     execute if score @s BE.EventTimer matches 773.. run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/end

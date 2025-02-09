@@ -7,7 +7,6 @@
 # タグ消去
     tag @s remove BF.Skill.Ter.Succ.A
 
-
 # 連続ダイブに移行
     scoreboard players set @s BF.EventTimer 0
     tag @s add BF.Skill.Ter.Succ.Dive

@@ -17,3 +17,4 @@
     tag @s remove BF.Skill.Ter.Alig
     tag @s remove BF.Skill.Ter.Purg
     tag @s remove BF.Skill.Ter.Rag
+    tag @s remove BF.Skill.Blaze

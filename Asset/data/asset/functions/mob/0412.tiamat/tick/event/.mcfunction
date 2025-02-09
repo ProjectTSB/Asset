@@ -38,3 +38,6 @@
 
 # テルツェット・ラグナレク
     execute if entity @s[tag=BG.Skill.Ter.Rag] run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
+
+# フリージングエンド
+    execute if entity @s[tag=BG.Skill.Freeze] run function asset:mob/0412.tiamat/tick/event/freezing_end/
