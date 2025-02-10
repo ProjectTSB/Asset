@@ -63,4 +63,4 @@
         execute if score @s BE.EventTimer matches 542..672 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了
-    execute if score @s BE.EventTimer matches 773.. run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/end
+    execute if score @s BE.EventTimer matches 783.. run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/end

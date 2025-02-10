@@ -12,8 +12,8 @@
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     data modify storage api: Argument.FieldOverride.Color set value 2702228
     $data modify storage api: Argument.FieldOverride.RemoveTimer set value $(Tick)
-    $execute rotated ~$(Rotate) 0 positioned ^ ^ ^8 run function api:object/summon
-    $execute rotated ~$(Rotate) 0 positioned ^ ^ ^8 run particle flash ~ ~0.5 ~ 1 1 1 0 10
+    $execute rotated ~$(Rotate) 0 positioned ^ ^0.5 ^8 run function api:object/summon
+    $execute rotated ~$(Rotate) 0 positioned ^ ^0.5 ^8 run particle flash ~ ~ ~ 1 1 1 0 10
 
 # 戻す
     tp @s ~ ~ ~ ~ ~

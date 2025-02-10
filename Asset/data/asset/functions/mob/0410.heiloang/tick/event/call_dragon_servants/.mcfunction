@@ -29,7 +29,7 @@
 # 移動
     execute if score @s BE.EventTimer matches 154..169 run tp @s ^ ^ ^-0.3 ~ 0
     execute if score @s BE.EventTimer matches 170..184 run tp @s ^ ^ ^-0.1 ~ 0
-    execute at @s run tp @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
+    execute if score @s BE.EventTimer matches 154..184 at @s run tp @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 終了
     execute if score @s BE.EventTimer matches 257.. run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/end

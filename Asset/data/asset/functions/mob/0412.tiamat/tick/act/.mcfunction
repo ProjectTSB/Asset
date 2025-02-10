@@ -10,7 +10,7 @@
     # return 0
 
 # 待機モード
-    execute if entity @s[tag=BF.State.Wait] run return 0
+    execute if entity @s[tag=BG.State.Wait] run return 0
 
 # 最初に戻る
     scoreboard players add @s BG.ActCount 1
@@ -25,10 +25,13 @@
     execute if score @s BG.ActCount matches 3 run function asset:mob/0412.tiamat/tick/act/attack
 
 # 待機
-    execute if score @s BG.ActCount matches 4..5 run return 0
+    execute if score @s BG.ActCount matches 4 run return 0
 
 # 通常攻撃
-    execute if score @s BG.ActCount matches 6 run function asset:mob/0412.tiamat/tick/act/attack
+    execute if score @s BG.ActCount matches 5 run function asset:mob/0412.tiamat/tick/act/attack
+
+# 待機
+    execute if score @s BG.ActCount matches 6 run return 0
 
 # 詠唱攻撃
     execute if score @s BG.ActCount matches 7 run function asset:mob/0412.tiamat/tick/act/skill

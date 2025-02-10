@@ -36,8 +36,8 @@
     # 演出
         execute if score @s BG.EventTimer matches 451..455 run tp @s ~ ~0.1 ~
         execute if score @s BG.EventTimer matches 80..391 rotated ~ ~ positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/effect_ring
-        execute if score @s BG.EventTimer matches 416..436 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
-        execute if score @s BG.EventTimer matches 416..436 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 412..432 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 412..432 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
         execute if score @s BG.EventTimer matches 391 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
         execute if score @s BG.EventTimer matches 456 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     # 魔法陣

@@ -21,6 +21,7 @@
     particle block ice ~ ~1 ~ 10 1 10 0.1 100 force
     particle explosion ~ ~1 ~ 10 1 10 0.1 100 force
     particle flash ~ ~1 ~ 10 1 10 0.1 30 force
+
     data modify storage api: Argument.ID set value 2175
     data modify storage api: Argument.FieldOverride.OverrideScale set value [22f,22f,22f]
     data modify storage api: Argument.FieldOverride.OverrideKillTick set value 24
@@ -45,9 +46,6 @@
     spreadplayers ~ ~ 6 15 false @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition]
 
 # 演出
-    particle explosion ~ ~ ~ 5 0.1 5 0 30
-    particle block stone_bricks ~ ~ ~ 5 0.5 5 0 100
-    playsound entity.wither.break_block hostile @a ~ ~ ~ 3 0.7
     # 円型ベクトルパーティクル
         execute rotated ~00 0 positioned ^ ^-0.3 ^ run particle cloud ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~10 0 positioned ^ ^-0.3 ^ run particle cloud ~ ~ ~ ^ ^ ^100000000 0.000000015 0
