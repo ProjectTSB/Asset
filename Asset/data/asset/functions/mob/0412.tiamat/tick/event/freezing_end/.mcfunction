@@ -26,7 +26,7 @@
         execute if score @s BG.EventTimer matches 391 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/9_roar
     # 攻撃
         execute if score @s BG.EventTimer matches 406 positioned ~ ~0.6 ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/prediction
-        execute if score @s BG.EventTimer matches 416 positioned ~ ~0.6 ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/attack
+        execute if score @s BG.EventTimer matches 418 positioned ~ ~0.6 ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/attack
         execute if score @s BG.EventTimer matches 421 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/effect
         execute if score @s BG.EventTimer matches 426 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/effect
         execute if score @s BG.EventTimer matches 431 as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] at @s positioned ~ ~ ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/effect
@@ -40,6 +40,14 @@
         execute if score @s BG.EventTimer matches 416..436 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
         execute if score @s BG.EventTimer matches 391 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
         execute if score @s BG.EventTimer matches 456 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+    # 魔法陣
+        execute if score @s BG.EventTimer matches 60..416 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/freezing_end/particle_circle
+        execute if score @s BG.EventTimer matches 80 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:0,Tick:330}
+        execute if score @s BG.EventTimer matches 140 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:60,Tick:270}
+        execute if score @s BG.EventTimer matches 200 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:120,Tick:210}
+        execute if score @s BG.EventTimer matches 260 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:180,Tick:150}
+        execute if score @s BG.EventTimer matches 320 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:240,Tick:90}
+        execute if score @s BG.EventTimer matches 380 run function asset:mob/0412.tiamat/tick/event/freezing_end/summon_circle.m {Rotate:300,Tick:30}
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

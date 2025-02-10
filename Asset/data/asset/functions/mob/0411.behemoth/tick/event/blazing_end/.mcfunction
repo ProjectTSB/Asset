@@ -40,6 +40,14 @@
         execute if score @s BF.EventTimer matches 416..421 positioned ~ ~32 ~ run playsound entity.polar_bear.warning hostile @a[distance=..80] ~ ~ ~ 0.1 0.7 0.5
         execute if score @s BF.EventTimer matches 416..421 positioned ~ ~32 ~ run playsound entity.zombie_horse.death hostile @a[distance=..80] ~ ~ ~ 0.1 0.6 0.5
         execute if score @s BF.EventTimer matches 392 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
+    # 魔法陣
+        execute if score @s BF.EventTimer matches 60..416 positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/blazing_end/particle_circle
+        execute if score @s BF.EventTimer matches 80 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:0,Tick:330}
+        execute if score @s BF.EventTimer matches 140 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:60,Tick:270}
+        execute if score @s BF.EventTimer matches 200 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:120,Tick:210}
+        execute if score @s BF.EventTimer matches 260 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:180,Tick:150}
+        execute if score @s BF.EventTimer matches 320 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:240,Tick:90}
+        execute if score @s BF.EventTimer matches 380 run function asset:mob/0411.behemoth/tick/event/blazing_end/summon_circle.m {Rotate:300,Tick:30}
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
