@@ -67,6 +67,7 @@
     #
     # - 一時
     #declare tag BF.State.Wait 待機
+    #declare tag BF.State.UseFlare フレアブレス使用
     #declare tag BF.Temp.Dummy
     #declare tag BF.Temp.Hit
     #declare tag BF.Temp.Ground 角度決定用

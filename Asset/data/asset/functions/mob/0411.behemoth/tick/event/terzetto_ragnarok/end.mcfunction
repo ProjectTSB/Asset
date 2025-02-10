@@ -7,6 +7,8 @@
 # タグ消去
     tag @s remove BF.Skill.Ter.Rag
 
-# 連続ダイブに移行
+# ブレイジングエンドに移行
     scoreboard players set @s BF.EventTimer 0
+    scoreboard players set @s BF.ActCount 0
     tag @s add BF.Skill.Blaze
+    tag @s add BF.State.Wait

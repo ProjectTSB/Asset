@@ -9,6 +9,7 @@
 
 # 連続ダイブに移行
     scoreboard players set @s BG.EventTimer 0
+    scoreboard players set @s BG.ActCount 0
     tag @s add BG.Skill.Ter.Succ.Dive
 
 # # 待機モーション再生

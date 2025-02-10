@@ -10,6 +10,7 @@
 
 # 連続ダイブに移行
     scoreboard players set @s BF.EventTimer 0
+    scoreboard players set @s BF.ActCount 0
     tag @s add BF.Skill.Ter.Succ.Dive
 
 # # 待機モーション再生

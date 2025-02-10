@@ -64,6 +64,7 @@
     #
     # - 一時
     #declare tag BG.State.Wait 待機
+    #declare tag BG.State.UseDark ダークブレス使用
     #declare tag BG.Temp.Dummy
     #declare tag BG.Temp.Ground 角度決定用
     #declare tag BG.Temp.AttackHit 攻撃命中検知用

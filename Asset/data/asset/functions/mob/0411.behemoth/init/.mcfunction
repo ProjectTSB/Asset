@@ -15,11 +15,11 @@
         function asset:mob/0411.behemoth/init/animated_java
     # スコア初期化
         scoreboard players set @s BF.EventTimer 0
-        # scoreboard players set @s BE.Idle.Count 0
+        scoreboard players set @s BF.ActCount 0
     # 登場モーション再生
         tag @s add BF.Skill.Start
     # 最も近くのプレイヤーにヘイトを向ける
         tag @p[distance=..80] add BF.MainTarget
 
 # テスト
-    tag @s add BF.State.Wait
+    # tag @s add BF.State.Wait

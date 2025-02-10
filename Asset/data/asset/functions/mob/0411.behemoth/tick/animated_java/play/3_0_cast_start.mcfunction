@@ -5,4 +5,4 @@
 # @within asset:mob/0411.behemoth/tick/**
 
 # 再生
-    function animated_java:behemoth_aj/animations/3_0_cast_start/tween {duration:1, to_frame: 1}
+    function animated_java:behemoth_aj/animations/3_0_cast_start/tween {duration:6, to_frame: 6}
