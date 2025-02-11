@@ -16,10 +16,10 @@
     scoreboard players operation @s Temporary *= $11 Const
 
 # 最大値をきめる
-    execute if score @s Temporary matches 4400.. run scoreboard players set @s Temporary 4400
+    scoreboard players set $MaxDamage Temporary 4400
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run scoreboard players get @s Temporary
+    execute store result storage api: Argument.Damage float 1 run scoreboard players operation @s Temporary < $MaxDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
@@ -28,3 +28,4 @@
 
 # リセット
     scoreboard players reset @s Temporary
+    scoreboard players reset $MaxDamage Temporary
