@@ -24,7 +24,7 @@
 
 # 移動
     execute if score @s BF.EventTimer matches 60.. facing entity @e[type=slime,tag=BE.EntityRoot,limit=1] feet run tp @s ~ ~ ~ ~ ~
-    execute if score @s BF.EventTimer matches 60.. run tp @s ^ ^ ^0.5
+    execute if score @s BF.EventTimer matches 60.. run tp @s ^ ^ ^0.8
     execute if score @s BF.EventTimer matches 60.. if entity @e[type=slime,tag=BE.EntityRoot,distance=..3] run function asset:mob/0411.behemoth/tick/event/offering/end
 
 # モデルを自身の位置に合わせる

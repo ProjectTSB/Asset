@@ -15,9 +15,9 @@
         execute if score @s BE.EventTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
         execute if score @s BE.EventTimer matches 35 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..80] ~ ~ ~ 1 0.7 0.7
         execute if score @s BE.EventTimer matches 35 positioned ~ ~30 ~ run playsound entity.wither.ambient hostile @a[distance=..80] ~ ~ ~ 1 0.5 0.2
-        execute if score @s BE.EventTimer matches 35 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..80] ~ ~ ~ 1 0.5 0.2
+        execute if score @s BE.EventTimer matches 35 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..80] ~ ~ ~ 2 0.5 0.7
     # モデル変更
         execute if score @s BE.EventTimer matches 32 run function asset:mob/0410.heiloang/tick/event/rage/start_raging
 
 # 終了
-    execute if score @s BE.EventTimer matches 91.. run function asset:mob/0410.heiloang/tick/event/rage/end
+    execute if score @s BE.EventTimer matches 92.. run function asset:mob/0410.heiloang/tick/event/rage/end

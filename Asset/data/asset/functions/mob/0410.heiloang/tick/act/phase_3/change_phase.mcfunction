@@ -2,7 +2,9 @@
 #
 # フェーズ3
 #
-# @within function asset:mob/0410.heiloang/tick/act/phase_3/
+# @within
+#    function asset:mob/0410.heiloang/tick/act/phase_3/
+#    function asset:mob/0410.heiloang/tick/event/rage/end
 
 # フェーズ移行
     scoreboard players add @s BE.Phase 1
