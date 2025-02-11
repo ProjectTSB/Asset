@@ -16,7 +16,7 @@
     scoreboard players operation $Per Temporary /= $MaxDamage Temporary
 
 # debug
-    scoreboard players set $Per Temporary 100
+    # scoreboard players set $Per Temporary 100
 
 # 割合に比例して$Countを設定
     execute if score $Per Temporary matches 67..99 run scoreboard players set $Count Temporary 1
