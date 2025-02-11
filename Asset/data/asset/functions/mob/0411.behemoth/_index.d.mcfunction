@@ -65,6 +65,7 @@
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット
     #declare tag BF.FlareTarget ロックオンフレアターゲット
+    #declare tag BE.State.BehemothDeath ヘイローンに自身が倒れたことを教える
     #
     # - 一時
     #declare tag BF.State.Wait 待機

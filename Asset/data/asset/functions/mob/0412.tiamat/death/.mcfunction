@@ -26,4 +26,5 @@
 # 死亡演出
     data modify storage api: Argument.ID set value 2184
     function api:object/summon
+    tag @e[type=slime,tag=BE.EntityRoot] add BE.State.TiamatDeath
     execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/util/servants_death

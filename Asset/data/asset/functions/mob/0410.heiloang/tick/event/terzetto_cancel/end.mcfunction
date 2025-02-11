@@ -13,3 +13,7 @@
 
 # 行動
     function asset:mob/0410.heiloang/tick/act/
+
+# 眷属が両方倒されている場合、覚醒開始
+    scoreboard players set @s BE.EventTimer 0
+    execute if entity @s[tag=BE.State.BehemothDeath,tag=BE.State.TiamatDeath] run tag @s add BE.Skill.Rage

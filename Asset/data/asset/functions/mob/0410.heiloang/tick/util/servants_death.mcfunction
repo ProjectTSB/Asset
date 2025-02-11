@@ -6,6 +6,13 @@
 #    function asset:mob/0411.behemoth/death/
 #    function asset:mob/0412.tiamat/death/
 
+# 眷属が両方倒された場合、怯み
+# 連携技の最中は優先してキャンセルを使用する
+    execute if entity @s[tag=BE.State.BehemothDeath,tag=BE.State.TiamatDeath] run function asset:mob/0410.heiloang/tick/util/servants_death_damage
+
+# フェーズ3かつ時間切れ以外の場合、ソウルオファリング開始
+    execute if score @s BE.Phase matches 2 if score @s BE.ActCount matches ..11 run scoreboard players set @s BE.ActCount 20
+
 # 連携技の最中の場合、行動をキャンセル
     execute if entity @s[tag=BE.Skill.Ter.Succ.Start] run return run function asset:mob/0410.heiloang/tick/util/servants_death_interrupt
     execute if entity @s[tag=BE.Skill.Ter.Succ.A] run return run function asset:mob/0410.heiloang/tick/util/servants_death_interrupt

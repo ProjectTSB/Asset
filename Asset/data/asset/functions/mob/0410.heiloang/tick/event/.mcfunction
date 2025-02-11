@@ -63,6 +63,9 @@
 # 行動キャンセル
     execute if entity @s[tag=BE.Skill.Ter.Cancel] run function asset:mob/0410.heiloang/tick/event/terzetto_cancel/
 
+# 怯み
+    execute if entity @s[tag=BE.Skill.Damage] run function asset:mob/0410.heiloang/tick/event/damage/
+
 ## P4
 # ヘイルディザスター
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/heil_disaster/

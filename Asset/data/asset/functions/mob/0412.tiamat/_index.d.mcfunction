@@ -62,6 +62,7 @@
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット
+    #declare tag BE.State.TiamatDeath ヘイローンに自身が倒れたことを教える
     #
     # - 一時
     #declare tag BG.State.Wait 待機

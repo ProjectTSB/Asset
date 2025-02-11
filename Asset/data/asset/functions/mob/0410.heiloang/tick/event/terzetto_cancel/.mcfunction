@@ -21,8 +21,5 @@
         execute if score @s BE.EventTimer matches 25 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^3 ^35 ~180 0
         execute if score @s BE.EventTimer matches 25 at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 
-# 待機
-    execute if score @s BE.EventTimer matches 65 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
-
 # 終了
     execute if score @s BE.EventTimer matches 65.. run function asset:mob/0410.heiloang/tick/event/terzetto_cancel/end

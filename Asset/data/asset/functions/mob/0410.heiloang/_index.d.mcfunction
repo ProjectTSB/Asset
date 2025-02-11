@@ -33,6 +33,7 @@
         #declare function animated_java:heiloang_aj/animations/10_2_power_breath_continue_1/tween
         #declare function animated_java:heiloang_aj/animations/10_3_power_breath_continue_2/tween
         #declare function animated_java:heiloang_aj/animations/10_4_power_breath_continue_end/tween
+        #declare function animated_java:heiloang_aj/animations/11_damage/tween
         #declare function animated_java:heiloang_aj/animations/12_0_flymove_start/tween
         #declare function animated_java:heiloang_aj/animations/12_1_flymove_end/tween
         #declare function animated_java:heiloang_aj/animations/13_summon/tween
@@ -131,6 +132,9 @@
     #declare tag BE.Skill.Ter.Rag.Start テルツェット・ラグナレク開始
     #declare tag BE.Skill.Ter.Rag テルツェット・ラグナレク
     #declare tag BE.Skill.Ter.Cancel 行動キャンセル
+    #declare tag BE.Skill.Damage 怯み
+    #declare tag BE.Skill.Rage 覚醒
+    #declare tag BE.Skill.Offering ソウルオファリング
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
@@ -144,6 +148,8 @@
     #declare tag BE.AttackTarget 攻撃ターゲット
     #declare tag BE.HateTarget P4攻撃ターゲット
     #declare tag BE.State.Raging 形態変化
+    #declare tag BE.State.BehemothDeath ベヘモット討伐
+    #declare tag BE.State.TiamatDeath ティアマット討伐
     #
     # - 一時
     #declare tag BE.Temp.Ground 角度決定用
