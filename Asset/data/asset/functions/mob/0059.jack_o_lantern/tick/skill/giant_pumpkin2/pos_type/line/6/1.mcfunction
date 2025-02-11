@@ -4,21 +4,14 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
 
-# Rotationを設定して召喚
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^7.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^7.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^4.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^4.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^1.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^1.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^-1.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^-1.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^-4.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^-4.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 0.0
-    execute positioned ^-7.5 ^0 ^-9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^-7.5 ^0 ^-9 rotated 0 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/
