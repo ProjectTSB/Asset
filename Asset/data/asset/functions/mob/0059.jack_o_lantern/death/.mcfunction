@@ -8,7 +8,7 @@
     function asset:mob/super.death
 
 # プレイヤーの方を見る
-    tp @s ~ ~ ~ facing entity @p eyes
+    tp @s ~ ~ ~ facing entity @p[gamemode=!spectator] eyes
 
 # 死亡演出用オブジェクトを召喚
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]

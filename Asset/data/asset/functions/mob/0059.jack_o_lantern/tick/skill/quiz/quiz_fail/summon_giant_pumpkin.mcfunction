@@ -13,11 +13,11 @@
     scoreboard players operation $Random Temporary %= $5 Const
 
 # ランダムでブレ
-    execute if score $Random Temporary matches 0 facing entity @p eyes run tp @s ~ ~ ~ ~ ~
-    execute if score $Random Temporary matches 1 facing entity @p eyes run tp @s ~ ~ ~ ~15 ~
-    execute if score $Random Temporary matches 2 facing entity @p eyes run tp @s ~ ~ ~ ~-15 ~
-    execute if score $Random Temporary matches 3 facing entity @p eyes run tp @s ~ ~ ~ ~30 ~
-    execute if score $Random Temporary matches 4 facing entity @p eyes run tp @s ~ ~ ~ ~-30 ~
+    execute if score $Random Temporary matches 0 facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~ ~
+    execute if score $Random Temporary matches 1 facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~15 ~
+    execute if score $Random Temporary matches 2 facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~-15 ~
+    execute if score $Random Temporary matches 3 facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~30 ~
+    execute if score $Random Temporary matches 4 facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~-30 ~
 
 # リセット
     scoreboard players reset $Random Temporary

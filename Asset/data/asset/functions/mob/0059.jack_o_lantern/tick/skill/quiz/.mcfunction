@@ -11,7 +11,7 @@
     execute if entity @s[scores={General.Mob.Tick=0..19}] run tp @s ~ ~ ~ ~20 0
     execute if entity @s[scores={General.Mob.Tick=20..39}] run tp @s ~ ~ ~ ~40 0
     execute if entity @s[scores={General.Mob.Tick=40..49}] run tp @s ~ ~ ~ ~20 0
-    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p[gamemode=!spectator] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 回転演出
     execute if entity @s[scores={General.Mob.Tick=0..19}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.1 3 normal @a

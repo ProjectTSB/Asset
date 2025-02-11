@@ -6,7 +6,7 @@
 
 # 最初に鈍足を自身に付与し、プレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/first_tick
-    execute if entity @s[scores={General.Mob.Tick=0..19}] facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Mob.Tick=0..19}] facing entity @p[gamemode=!spectator] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 前方に巨大カボチャを召喚
 
