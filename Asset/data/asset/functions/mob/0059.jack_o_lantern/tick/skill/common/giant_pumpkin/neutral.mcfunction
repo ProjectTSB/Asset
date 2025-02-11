@@ -5,7 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/**
 
 # 低確率で他の顔を混ぜる
-    execute if predicate lib:random_pass_per/10 store result storage api: Argument.FieldOverride.FaceID int 1 run function asset:mob/0059.jack_o_lantern/tick/skill/common/return_random_face
+    execute if predicate lib:random_pass_per/10 run function asset:mob/0059.jack_o_lantern/tick/skill/common/set_face_id
 
 # 召喚
     data modify storage api: Argument.ID set value 2031
