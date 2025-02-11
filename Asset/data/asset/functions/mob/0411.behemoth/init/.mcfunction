@@ -21,5 +21,5 @@
     # 最も近くのプレイヤーにヘイトを向ける
         tag @p[distance=..80] add BF.MainTarget
 
-# テスト
-    # tag @s add BF.State.Wait
+# デバッグ用
+    tag @s add BF.State.Wait
