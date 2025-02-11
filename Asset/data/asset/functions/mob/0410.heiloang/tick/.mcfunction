@@ -4,6 +4,9 @@
 #
 # @within asset:mob/alias/410/tick
 
+# 演出
+    execute if entity @s[tag=BE.State.Raging] run particle crimson_spore ~ ~3 ~ 3 3 3 1 3
+
 # スキル用イベントハンドラ
     function asset:mob/0410.heiloang/tick/event/
 

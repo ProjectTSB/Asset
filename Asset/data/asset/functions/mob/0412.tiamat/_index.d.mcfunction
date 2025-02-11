@@ -57,6 +57,7 @@
     #declare tag BG.Skill.Ter.Purg.A テルツェット・プルガトリオ 外→内
     #declare tag BG.Skill.Ter.Purg.B テルツェット・プルガトリオ 内→外
     #declare tag BG.Skill.Ter.Rag テルツェット・ラグナレク
+    #declare tag BG.Skill.Ter.Cancel 行動キャンセル
     #declare tag BG.Skill.Freeze フリージングエンド
     #
     # - 処理用

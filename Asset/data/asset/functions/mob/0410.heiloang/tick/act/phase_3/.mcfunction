@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/act/phase_3/
 #
-# フェーズ2
+# フェーズ3
 #
 # @within asset:mob/0410.heiloang/tick/act/
 
@@ -39,6 +39,9 @@
 
 # テルツェット・ラグナレク
     execute if score @s BE.ActCount matches 11 run tag @s add BE.Skill.Ter.Rag.Start
+
+# フェーズ4に移行
+    execute if score @s BE.ActCount matches 12 run function asset:mob/0410.heiloang/tick/act/phase_3/change_phase
 
 # 待機
     # execute if score @s BE.ActCount matches 2 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 12

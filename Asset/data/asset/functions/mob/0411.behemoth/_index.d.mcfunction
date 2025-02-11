@@ -59,6 +59,7 @@
     #declare tag BF.Skill.Ter.Alig テルツェット・アライニング
     #declare tag BF.Skill.Ter.Purg テルツェット・プルガトリオ
     #declare tag BF.Skill.Ter.Rag テルツェット・ラグナレク
+    #declare tag BF.Skill.Ter.Cancel 行動キャンセル
     #declare tag BF.Skill.Blaze ブレイジングエンド
     #
     # - 処理用

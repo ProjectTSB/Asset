@@ -11,9 +11,13 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/99_disaster_cast
     # 演出
-        execute if score @s BE.EventTimer matches 10..118 run particle flame ~ ~1 ~ 4 4 4 0.1 1 force
-        execute if score @s BE.EventTimer matches 10..118 run particle cloud ~ ~1 ~ 4 4 4 0.1 1 force
-        execute if score @s BE.EventTimer matches 10..118 run particle dust 1 0.855 0.376 4 ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle enchant ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle dust 1 0.647 0.62 4 ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle dust 0.525 0.89 1 4 ~ ~1 ~ 4 4 4 0.1 1 force
+        execute if score @s BE.EventTimer matches 10..118 run particle dust 1 0.91 0.616 4 ~ ~1 ~ 4 4 4 0.1 1 force
+
+# 形態変化
+    execute unless entity @s[tag=BE.State.Raging] if score @s BE.EventTimer matches 119 run function asset:mob/0410.heiloang/tick/event/heil_disaster/start_raging
 
 # 全属性攻撃
     # アニメーション再生

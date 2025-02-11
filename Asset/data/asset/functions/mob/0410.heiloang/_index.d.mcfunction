@@ -9,6 +9,7 @@
         #declare function animated_java:heiloang_aj/remove/all
         #declare function animated_java:heiloang_aj/animations/pause_all
         #declare function animated_java:heiloang_aj/as_own_locator_entities
+        #declare function animated_java:heiloang_aj/variants/rage/apply
     # - アニメーション再生
         #declare function animated_java:heiloang_aj/animations/1_idle/tween
         #declare function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween
@@ -129,6 +130,7 @@
     #declare tag BE.Skill.Ter.Purg テルツェット・プルガトリオ
     #declare tag BE.Skill.Ter.Rag.Start テルツェット・ラグナレク開始
     #declare tag BE.Skill.Ter.Rag テルツェット・ラグナレク
+    #declare tag BE.Skill.Ter.Cancel 行動キャンセル
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下
@@ -141,6 +143,7 @@
     #declare tag BE.MainTarget 主ターゲット
     #declare tag BE.AttackTarget 攻撃ターゲット
     #declare tag BE.HateTarget P4攻撃ターゲット
+    #declare tag BE.State.Raging 形態変化
     #
     # - 一時
     #declare tag BE.Temp.Ground 角度決定用
