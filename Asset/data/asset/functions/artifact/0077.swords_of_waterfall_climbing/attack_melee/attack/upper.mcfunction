@@ -10,14 +10,14 @@
 # 自身に浮遊を付与
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 100
-    data modify storage api: Argument.Duration set value 3
+    data modify storage api: Argument.Duration set value 2
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 敵に浮遊を付与
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 127
-    data modify storage api: Argument.Duration set value 3
+    data modify storage api: Argument.Duration set value 2
     execute as @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

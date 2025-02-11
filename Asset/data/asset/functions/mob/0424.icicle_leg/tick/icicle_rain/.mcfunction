@@ -9,6 +9,10 @@
 #declare tag SpreadMarker
 #declare score_holder $Interval
 
+# Motionを固定
+    data modify entity @s Motion[0] set value 0d
+    data modify entity @s Motion[2] set value 0d
+
 # マーカーを召喚して拡散させる
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Bounds set value [[5d,5d],[0.0d,0.0d],[5d,5d]]

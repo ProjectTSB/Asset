@@ -4,7 +4,8 @@
 #
 # @within function asset:mob/0392.ecual_first/ai/animation/
 
-#>function
+#> function
+# @private
     #declare function asset:object/2021.hydro_storm/tick/kill
 
 # アニメーション再生

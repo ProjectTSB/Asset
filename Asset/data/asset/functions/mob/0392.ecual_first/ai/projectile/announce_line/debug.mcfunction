@@ -1,4 +1,4 @@
-#> asset:mob/0391.axia_first/ai/projectile/announce_line/debug
+#> asset:mob/0392.ecual_first/ai/projectile/announce_line/debug
 #
 # デバッグ用
 #

@@ -1,4 +1,4 @@
-#> asset:mob/0380.haruclaire_v3/tick/util/move_to_roof
+#> asset:mob/0380.haruclaire_v3/tick/util/move_to_roof_loop
 #
 # 汎用処理 接地
 #

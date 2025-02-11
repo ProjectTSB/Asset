@@ -29,4 +29,4 @@
 
 # 終了
     scoreboard players reset @s Temporary
-    data remove storage asset:temp 9F.Pos
+    data remove storage asset:temp 9F

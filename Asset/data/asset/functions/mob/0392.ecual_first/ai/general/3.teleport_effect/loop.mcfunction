@@ -1,4 +1,4 @@
-#> asset:mob/0391.axia_first/ai/general/3.teleport_effect/loop
+#> asset:mob/0392.ecual_first/ai/general/3.teleport_effect/loop
 #
 # テレポート演出ループコマンド
 #

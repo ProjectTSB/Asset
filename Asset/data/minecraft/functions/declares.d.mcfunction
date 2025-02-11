@@ -12,8 +12,8 @@
     #declare advancement core:handler/inventory_change                                from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/advancements/handler/inventory_change.json#L1
     #declare advancement core:handler/killed                                          from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/advancements/handler/killed.json#L1
     #declare advancement core:handler/using_item                                      from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/core/advancements/handler/using_item.json#L1
+    #declare advancement mob_manager:entity_finder/check_entity_hurt_player           from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/mob_manager/advancements/entity_finder/check_entity_hurt_player.json#L1
     #declare advancement mob_manager:entity_finder/check_player_hurt_entity           from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/mob_manager/advancements/entity_finder/check_player_hurt_entity.json#L1
-    #declare advancement mob_manager:entity_finder/entity_hurt_player                 from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/mob_manager/advancements/entity_finder/entity_hurt_player.json#L1
     #declare advancement score_to_health:player_tick                                  from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/ScoreToHealth/data/score_to_health/advancements/player_tick.json#L1
     #declare function api:artifact/box/from_id                                        from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/artifact/box/from_id.mcfunction#L1
     #declare function api:artifact/box/from_rarity                                    from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/functions/artifact/box/from_rarity.mcfunction#L1
@@ -378,6 +378,8 @@
     #declare predicate api:global_vars/difficulty/min/over_difficulty                 from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/predicates/global_vars/difficulty/min/over_difficulty.json#L1
     #declare predicate api:global_vars/difficulty/normal                              from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/predicates/global_vars/difficulty/normal.json#L1
     #declare predicate api:mob/has_forward_target                                     from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/api/predicates/mob/has_forward_target.json#L1
+    #declare predicate asset_manager:is_use_mainhand/bow                              from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/predicates/is_use_mainhand/bow.json#L1
+    #declare predicate asset_manager:is_use_mainhand/carrot_on_a_stick                from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/predicates/is_use_mainhand/carrot_on_a_stick.json#L1
     #declare predicate lib:dimension/is_end                                           from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/lib/predicates/dimension/is_end.json#L1
     #declare predicate lib:dimension/is_nether                                        from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/lib/predicates/dimension/is_nether.json#L1
     #declare predicate lib:dimension/is_overworld                                     from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/lib/predicates/dimension/is_overworld.json#L1
@@ -787,7 +789,7 @@
 # @within
 #   asset_manager:trader/**
 #   asset:trader/*/register
-#declare storage asset:trader from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L18
+#declare storage asset:trader from c%3A/DataStorage/GitHub/mcsrvctl/server/event/tsb_dev/world/tsb-core/TheSkyBlessing/data/asset_manager/functions/trader/_index.d.mcfunction#L19
 
 #> declare
 # @within

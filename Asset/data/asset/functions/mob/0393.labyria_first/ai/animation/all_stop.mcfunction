@@ -1,4 +1,4 @@
-#> asset:mob/0391.axia_first/ai/animation/all_stop
+#> asset:mob/0393.labyria_first/ai/animation/all_stop
 #
 # 全アニメーション 停止
 #

@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"待望の瞬間","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"”待”ってたぜェ!!この”瞬間”をよぉ!!","bold":true}','{"text":" "}','{"text":"（“事故”る奴は…“不運”と”踊”っちまったんだよ…）","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"“待”ってたぜェ!!この“瞬間”をよぉ!!","bold":true}','{"text":" "}','{"text":"（“事故”る奴は…“不運”と“踊”っちまったんだよ…）","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -57,4 +57,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

@@ -24,7 +24,7 @@
     # 脚 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Legs set value {id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:11795711}}}
     # 足 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Feet set value
+        data modify storage asset:mob Armor.Feet set value {id:"minecraft:leather_boots",Count:1b,tag:{display:{color:11795711},Enchantments:[{id:"minecraft:frost_walker",lvl:1s}]}}
 # 防具ドロップ率 ([float, float]) (オプション)
     data modify storage asset:mob ArmorDropChances set value [0.0f,0.0f,0.0f,0.0f]
 # 体力 (double) (オプション)

@@ -34,3 +34,4 @@
 
 # リセット
     tag @p[tag=26.TargetPlayer] remove 26.TargetPlayer
+    data remove storage asset:temp Predict

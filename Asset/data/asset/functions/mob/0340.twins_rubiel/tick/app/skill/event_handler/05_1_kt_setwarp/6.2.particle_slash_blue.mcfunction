@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.2.particle_slash_blue
 #
 # アニメーションのイベントハンドラ Kt斬り下がり 演出
 #

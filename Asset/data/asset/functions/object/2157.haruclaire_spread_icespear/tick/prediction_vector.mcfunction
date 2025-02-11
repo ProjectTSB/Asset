@@ -1,4 +1,4 @@
-#>> asset:object/2157.haruclaire_spread_icespear/tick/prediction_vector
+#> asset:object/2157.haruclaire_spread_icespear/tick/prediction_vector
 #
 # Objectのtick時の処理
 #

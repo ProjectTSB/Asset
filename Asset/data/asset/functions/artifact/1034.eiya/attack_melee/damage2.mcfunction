@@ -12,7 +12,7 @@
     #declare tag Target
 
 # 基礎火力設定(本来の10倍の値)
-    scoreboard players set $BaseDamage Temporary 7000
+    scoreboard players set $Damage Temporary 7000
 
 # ターゲット設定
     tag @e[type=#lib:living,tag=Victim,distance=..6] add Target
@@ -21,7 +21,7 @@
     execute positioned ^-2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2.5] add Target
 
 # ダメージ設定
-    execute store result storage api: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary
+    execute store result storage api: Argument.Damage double 0.1 run scoreboard players operation $Damage Temporary += $MP Temporary
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
@@ -30,5 +30,5 @@
 
 # リセット
     scoreboard players reset $MP Temporary
-    scoreboard players reset $BaseDamage Temporary
+    scoreboard players reset $Damage Temporary
     tag @e[type=#lib:living,tag=Target,distance=..10] remove Target

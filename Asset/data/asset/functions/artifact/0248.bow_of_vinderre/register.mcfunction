@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"異形の森の弓","color":"dark_green","bold":true,"italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵に毒を付与させる弓。"}','{"text":"25%の確率で敵を引き寄せる。 "}','{"text":" "}','{"text":"誰かがニヤリと笑ったのを感じる。","color":"dark_green"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵に毒を付与する弓。"}','{"text":"25%の確率で敵を引き寄せる。 "}','{"text":" "}','{"text":"誰かがニヤリと笑ったのを感じる。","color":"dark_green"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

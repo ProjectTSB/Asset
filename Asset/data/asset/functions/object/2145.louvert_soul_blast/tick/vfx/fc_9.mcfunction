@@ -1,3 +1,7 @@
+#> asset:object/2145.louvert_soul_blast/tick/vfx/fc_9
+#
+# @within function asset:object/2145.louvert_soul_blast/tick/vfx/m
+
 # frame 9 / 40
 # コレクション 1--平面
 playsound minecraft:entity.evoker.prepare_summon hostile @a[distance=..16] ~ ~ ~ 0.5 1.0350000000000001 0

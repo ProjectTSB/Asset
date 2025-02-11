@@ -1,4 +1,4 @@
-#> waitasset:mob/0106.mini_shulker/tick/wait
+#> asset:mob/0106.mini_shulker/tick/wait
 #
 # 待機処理
 #

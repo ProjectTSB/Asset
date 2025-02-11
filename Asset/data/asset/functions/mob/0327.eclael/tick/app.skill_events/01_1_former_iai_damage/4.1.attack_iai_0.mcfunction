@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/4.1.attack_iai_0
+#> asset:mob/0327.eclael/tick/app.skill_events/01_1_former_iai_damage/4.1.attack_iai_0
 #
 # アニメーションのイベントハンドラ 前半・居合
 #

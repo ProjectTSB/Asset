@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/5.1.particle_warppoint
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/6.3.particle_warppoint
 #
 # アニメーションのイベントハンドラ Ktワープ連撃 ワープポイント演出
 #

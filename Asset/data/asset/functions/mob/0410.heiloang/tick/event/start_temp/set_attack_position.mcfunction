@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+#> asset:mob/0410.heiloang/tick/event/start_temp/set_attack_position
 #
 # アニヒレートフレア
 #

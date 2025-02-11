@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/53/hurt
 
 # 確立でバックステップする
-    execute if predicate lib:random_pass_per/50 run function asset:mob/0053.executioners/hurt/2.1.backstep
+    execute if predicate lib:random_pass_per/50 run function asset:mob/0053.executioners/hurt/backstep

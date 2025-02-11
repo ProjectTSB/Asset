@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/alert
+#> asset:mob/1004.tultaria/tick/skill/fire/blazing_slash/explosion/alert
 #
 # 予告
 #

@@ -9,7 +9,7 @@
     #declare tag 2030.Start
 
 # プレイヤーの向きを向かせる
-    tp @s ~ ~ ~ facing entity @r[distance=..100]
+    tp @s ~ ~ ~ facing entity @r[gamemode=!spectator,distance=..64]
 # タグを消す
     tag @s add 2030.Start
 # 演出

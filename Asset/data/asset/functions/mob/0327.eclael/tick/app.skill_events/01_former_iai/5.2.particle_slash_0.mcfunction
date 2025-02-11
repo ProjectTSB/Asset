@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/5.2.particle_slash
+#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/5.2.particle_slash_0
 #
 # アニメーションのイベントハンドラ 前半・居合斬り
 #

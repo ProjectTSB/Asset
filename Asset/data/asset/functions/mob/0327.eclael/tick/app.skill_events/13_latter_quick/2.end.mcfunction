@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/18_latter_attack_moveslash/2.end
+#> asset:mob/0327.eclael/tick/app.skill_events/13_latter_quick/2.end
 #
 # アニメーションのイベントハンドラ 後半・七連斬り 終了
 #

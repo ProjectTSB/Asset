@@ -1,4 +1,4 @@
-#> asset:mob/0317.haruclaire/tick/app.skill_events/03_hg_shot/3.play_animation
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_hg_shot/3.play_animation
 #
 # アニメーションのイベントハンドラ Hg待機 アニメーション再生
 #

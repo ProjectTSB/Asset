@@ -1,8 +1,10 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/6.start_damage_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/6.start_damage_animation
 #
 # 汎用処理 怯みアニメーションを再生開始する
 #
-# @within function asset:mob/0327.eclael/hurt/
+# @within function
+#   asset:mob/0327.eclael/hurt/
+#   asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.4.attack_falling_arrow
 
 # アニメーション再生停止
     function asset:mob/0327.eclael/tick/app.general/3.stop_all_animations

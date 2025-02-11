@@ -13,7 +13,7 @@
 # 待機処理
     execute if score @s General.Mob.Tick matches 0..50 run function asset:mob/0106.mini_shulker/tick/wait
 # 攻撃処理
-    execute if score @s General.Mob.Tick matches 500..530 run function asset:mob/0106.mini_shulker/tick/attack/
+    execute if score @s General.Mob.Tick matches 500..550 run function asset:mob/0106.mini_shulker/tick/attack/
 # テレポート
     execute if score @s General.Mob.Tick matches 1000 summon marker run function asset:mob/0106.mini_shulker/tick/teleport/
 

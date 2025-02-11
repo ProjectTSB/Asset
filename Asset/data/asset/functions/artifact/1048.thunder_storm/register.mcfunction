@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"サンダーストーム","color":"gold","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷雲を呼び出し、広範囲の敵を雷で攻撃する"}','{"text":"現在MPが少なければ少ないほど威力が増す"}','{"text":"まばゆい煌めきとともに稲妻が空を裂く","color":"gold"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雷雲を呼び出し、広範囲の敵を雷で攻撃する"}','{"text":"現在MP割合が少ないほどダメージが増加する"}','{"text":"まばゆい煌めきとともに稲妻が空を裂く","color":"gold"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

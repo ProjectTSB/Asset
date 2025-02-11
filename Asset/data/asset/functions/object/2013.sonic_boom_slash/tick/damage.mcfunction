@@ -47,5 +47,5 @@
 
 # リセット
     scoreboard players reset $DamageTemp Temporary
-    data remove storage asset:temp 2013.Temp
+    data remove storage asset:temp 2013
     function api:damage/reset

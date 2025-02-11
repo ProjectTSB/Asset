@@ -1,4 +1,4 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/6.1.particle_circle
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/6.2.particle_circle
 #
 # アニメーションのイベントハンドラ Hgライダーキック 演出
 #

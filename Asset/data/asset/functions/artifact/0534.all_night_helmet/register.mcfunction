@@ -7,7 +7,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 534
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:leather_helmet"
+    data modify storage asset:artifact Item set value "minecraft:chainmail_helmet"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"終夜","color":"dark_purple","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
@@ -56,4 +56,4 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:196,Trim:{material:"gold",pattern:"tsb_armor:534"},Unbreakable:1b,display:{color:1050959},Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}]}
+    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:projectile_protection",lvl:3s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,534,6],Slot:"head"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}

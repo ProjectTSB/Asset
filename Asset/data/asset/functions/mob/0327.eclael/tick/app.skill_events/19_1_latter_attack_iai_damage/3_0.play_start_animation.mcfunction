@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/19_1_latter_attack_iai_damage/1.main
+#> asset:mob/0327.eclael/tick/app.skill_events/19_1_latter_attack_iai_damage/3_0.play_start_animation
 #
 # アニメーションのイベントハンドラ 前半・居合斬り・怯み アニメーション再生
 #

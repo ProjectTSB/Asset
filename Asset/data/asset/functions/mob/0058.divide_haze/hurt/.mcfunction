@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/58/hurt
 
 # 増殖カウント減少
-    scoreboard players remove @s 1M.Tick 10
+    scoreboard players remove @s General.Mob.Tick 10

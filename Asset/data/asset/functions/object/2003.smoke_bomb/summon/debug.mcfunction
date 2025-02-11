@@ -1,4 +1,4 @@
-#> asset:mob/2003.smoke_bomb/summon/debug
+#> asset:object/2003.smoke_bomb/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

@@ -1,4 +1,4 @@
-#> asset:mob/0317.haruclaire/tick/app.skill_events/03_1_hg_shot_move_left/3.play_animation
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/03_1_hg_shot_move_left/3.play_animation
 #
 # アニメーションのイベントハンドラ Hg側転射撃 アニメーション再生
 #

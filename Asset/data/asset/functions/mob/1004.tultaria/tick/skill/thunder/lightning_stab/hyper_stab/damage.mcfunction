@@ -14,6 +14,6 @@
     # ダメージ補正
         function api:damage/modifier
     # ダメージ与える
-        function api:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
 # リセット
     function api:damage/reset

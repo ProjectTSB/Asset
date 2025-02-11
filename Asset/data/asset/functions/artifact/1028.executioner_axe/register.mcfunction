@@ -57,4 +57,4 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-
+

@@ -28,5 +28,6 @@
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
-# ストレージを消去する
-    data remove storage asset:temp AZ
+# リセット
+    scoreboard players reset $AX.Temp Temporary
+    data remove storage asset:temp AX

@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/flare/attack_hard
+#> asset:mob/0410.heiloang/tick/event/start_temp/attack_hard
 #
 # フレア
 #

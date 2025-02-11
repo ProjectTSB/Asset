@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/19_latter_attack_iai/6.start_damage_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/19_2_latter_attack_iai_cross/6.start_damage_animation
 #
 # 汎用処理 怯みアニメーションを再生開始する
 #
@@ -19,4 +19,4 @@
     playsound entity.item.break hostile @a ~ ~ ~ 1 0.6
     playsound item.trident.return hostile @a ~ ~ ~ 1 1.5
     playsound item.trident.return hostile @a ~ ~ ~ 1 1.8
-    particle flash ^ ^1 ^1 0 0 0 0 1 
+    particle flash ^ ^1 ^1 0 0 0 0 1

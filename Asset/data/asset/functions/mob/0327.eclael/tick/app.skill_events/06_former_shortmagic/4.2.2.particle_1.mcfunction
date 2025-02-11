@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/06_former_shortmagic/4.2.1.particle_0
+#> asset:mob/0327.eclael/tick/app.skill_events/06_former_shortmagic/4.2.2.particle_1
 #
 # アニメーションのイベントハンドラ 前半・曲射 攻撃地点決定 プレイヤー狙い
 #

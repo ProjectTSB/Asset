@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/04_1_kt_doubleslash/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/6.1.particle_slash_red
 #
 # アニメーションのイベントハンドラ Kt斬り下がり 演出
 #
