@@ -19,7 +19,7 @@
     execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run tag @s add 1N.AlreadySpecial
 
 # デバッグ用
-    #scoreboard players set $Random Temporary 2
+    scoreboard players set $Random Temporary 0
 
 # スキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 1N.Quiz
