@@ -16,12 +16,12 @@
 # 処理
     clear @s bone_meal 8
 
-execute positioned ~ ~-4 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~-3 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~-2 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~-1 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~ ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~1 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~2 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~3 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
-execute positioned ~ ~4 ~ run function asset:artifact/0088.fertility_hoe/click/3.1.layer_fill
+execute positioned ~ ~-4 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~-3 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~-2 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~-1 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~ ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~1 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~2 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~3 ~ run function asset:artifact/0088.fertility_hoe/click/fill
+execute positioned ~ ~4 ~ run function asset:artifact/0088.fertility_hoe/click/fill

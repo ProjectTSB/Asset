@@ -1,0 +1,10 @@
+#> asset:artifact/0088.fertility_hoe/click/check_layer
+#
+#
+#
+# @within function asset:artifact/0088.fertility_hoe/click/check
+
+scoreboard players set $LayerCrops Temporary 0
+execute store result score $LayerCrops Temporary run clone ~-4 ~ ~-4 ~4 ~ ~4 ~-4 ~ ~-4 filtered #asset:artifact/0088.fertility_hoe/grow_target force
+scoreboard players operation $AroundCrops Temporary += $LayerCrops Temporary
+scoreboard players reset $LayerCrops Temporary

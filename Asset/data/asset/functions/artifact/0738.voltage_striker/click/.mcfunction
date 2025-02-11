@@ -11,11 +11,8 @@
     playsound entity.illusioner.prepare_mirror player @a ~ ~ ~ 0.5 1.6 0
 
 # 弾を5回召喚する
-    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/4.summon_bullet
-    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/4.summon_bullet
-    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/4.summon_bullet
-    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/4.summon_bullet
-    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/4.summon_bullet
-
-# ループ開始
-    schedule function asset:artifact/0738.voltage_striker/click/bullet/loop 1t replace
+    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/summon
+    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/summon
+    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/summon
+    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/summon
+    execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/click/summon

@@ -6,18 +6,18 @@
 
 # 次の段階までの待機時間のスコア
 # 差が60tick以上ならAttackCountをリセットする
-    execute store result score $SQ.Temp Temporary run time query gametime
-    scoreboard players operation $SQ.Temp Temporary -= @s SQ.LatestUseTick
-    execute if score $SQ.Temp Temporary matches 60.. run scoreboard players reset @s SQ.Count
-    scoreboard players reset $SQ.Temp Temporary
+    execute store result score $LatestUseTick Temporary run data get storage global Time
+    scoreboard players operation $LatestUseTick Temporary -= @s SQ.LatestUseTick
+    execute if score $LatestUseTick Temporary matches 60.. run scoreboard players reset @s SQ.Count
+    scoreboard players reset $LatestUseTick Temporary
 
 # 1~9段目までの段階のスコア
     scoreboard players add @s SQ.Count 1
 
 # playsound
-    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1.5
-    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1.2
-    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.return player @a ~ ~ ~ 1 1.2
+    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.6 1.5
+    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.6 1.2
+    execute if entity @s[scores={SQ.Count=..8}] run playsound minecraft:item.trident.return player @a ~ ~ ~ 0.6 1.2
 
 # 1段目
     execute if entity @s[scores={SQ.Count=1}] anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/1034.eiya/attack_melee/vfx/slash1

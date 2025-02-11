@@ -11,7 +11,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ハニービーステッキ","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖。","color":"yellow"}','{"text":"周囲のプレイヤーを回復し、","color":"#FFBD24"}','{"text":"周囲の敵にダメージと鈍足を付与する。","color":"yellow"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ハチミツを大量に内包した杖","color":"yellow"}','{"text":"周囲のプレイヤーを回復し","color":"#FFBD24"}','{"text":"周囲の敵にダメージと鈍足を付与する","color":"yellow"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,4 +55,3 @@
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
-

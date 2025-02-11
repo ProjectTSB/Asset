@@ -24,10 +24,10 @@
 
 # 自身を回復
 # 難易度値に比例して回復量を増加させる
-    execute store result storage api: Argument.Heal int 250 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Heal int 120 run data get storage api: Return.Difficulty
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
 
 # ノーマル以上なら周囲に移動速度上昇を付与
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] speed 3 1 true
+    execute if predicate api:global_vars/difficulty/min/normal run effect give @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] speed 3 0 true

@@ -1,7 +1,5 @@
 {
     "values": [
-        "asset:artifact/0991.soul_mate/load",
-        "asset:artifact/1088.purifying_hydrangea/load",
         "asset:artifact/0002.blessing/load",
         "asset:artifact/0005.musket_matchlock/load",
         "asset:artifact/0078.self_destruct_order/load",
@@ -33,8 +31,6 @@
         "asset:artifact/0610.call_fish/load",
         "asset:artifact/0730.lake_reflecting_starry_sky/load",
         "asset:artifact/0737.summer_festival_of_remembrance/load",
-        "asset:artifact/0738.voltage_striker/load",
-        "asset:artifact/0758.sina_tk/load",
         "asset:artifact/0769.shaking_splash/load",
         "asset:artifact/0770.shaking_splash_empty/load",
         "asset:artifact/0793.queen_bee_rocket/load",
@@ -47,6 +43,7 @@
         "asset:artifact/0976.brave_sword/load",
         "asset:artifact/0985.ark_of_the_sanctuary/load",
         "asset:artifact/0987.ghost_step/load",
+        "asset:artifact/0991.soul_mate/load",
         "asset:artifact/1017.cutlass_of_endless_silence/load",
         "asset:artifact/1024.brave_rod/load",
         "asset:artifact/1029.conviction_bone/load",
@@ -63,6 +60,7 @@
         "asset:artifact/1078.pigeon_blood/load",
         "asset:artifact/1079.allochromatic/load",
         "asset:artifact/1081.wandering_piece_of_dream/load",
+        "asset:artifact/1088.purifying_hydrangea/load",
         "asset:artifact/1110.lantern_of_firefly/load",
         "asset:artifact/1149.afterglow_of_thunder/load"
     ]

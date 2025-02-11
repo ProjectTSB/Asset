@@ -5,7 +5,7 @@
 # @within function asset:artifact/alias/105/use_item/
 
 # 体力を全回復
-    data modify storage api: Argument.Heal set value 6666f
+    data modify storage api: Argument.Heal set value 66.6f
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/

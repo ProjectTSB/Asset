@@ -4,6 +4,6 @@
 #
 # @within function asset:artifact/alias/107/click/check
 
-# アドベンチャーなら発動しない
-    execute if entity @s[gamemode=adventure] run function lib:message/artifact/can_not_use_here
-    execute if entity @s[gamemode=adventure] run tag @s remove CanUsed
+# 破壊可能エリアでのみ使用可能
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here

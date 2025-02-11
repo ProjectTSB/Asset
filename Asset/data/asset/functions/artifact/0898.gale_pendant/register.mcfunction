@@ -9,7 +9,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"疾風のペンダント","color":"aqua"}'
+    data modify storage asset:artifact Name set value '{"text":"疾風のペンダント","color":"#8ff0dc"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"非戦闘時、移動速度が大きく上昇する。","color":"white"}','{"text":"風の力を蓄えたペンダント。","color":"gray"}','{"text":"付けると体が軽くなる。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -58,6 +58,6 @@
 # 装備時効果 (int) (オプション)
     data modify storage asset:artifact EquipID set value 261
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov"]
+    data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {Enchantments:[{}]}

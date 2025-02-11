@@ -9,10 +9,10 @@
 # 基礎火力 + 現在MP×1.2
 
 # 基礎火力設定(本来の10倍の値を設定すること)
-    scoreboard players set $BaseDamage Temporary 2500
+    scoreboard players set $Damage Temporary 2500
 
 # ダメージ設定
-    execute store result storage api: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary
+    execute store result storage api: Argument.Damage double 0.1 run scoreboard players operation $Damage Temporary += $MP Temporary
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
@@ -21,4 +21,4 @@
 
 # リセット
     scoreboard players reset $MP Temporary
-    scoreboard players reset $BaseDamage Temporary
+    scoreboard players reset $Damage Temporary
