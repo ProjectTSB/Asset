@@ -15,5 +15,8 @@
     $execute rotated ~$(Rotate) 0 positioned ^ ^0.5 ^8 run function api:object/summon
     $execute rotated ~$(Rotate) 0 positioned ^ ^0.5 ^8 run particle flash ~ ~ ~ 1 1 1 0 10
 
+# タグ付与
+    $execute rotated ~$(Rotate) 0 positioned ^ ^0.5 ^8 run tag @e[tag=BE.Circle,sort=nearest,limit=1] add BF.Object
+
 # 戻す
     tp @s ~ ~ ~ ~ ~

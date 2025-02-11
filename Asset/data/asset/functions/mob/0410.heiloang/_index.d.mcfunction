@@ -163,6 +163,7 @@
     #
     # - オブジェクト
     #declare tag BE.Object オブジェクト共通タグ
+    #declare tag 2181.Line 線
     #declare tag 2121.Main テンペスト
     #declare tag 2121.StartAttack テンペスト移動終了
     #declare tag 2122.Main 火炎放射演出

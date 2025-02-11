@@ -2,10 +2,10 @@
 #
 # 汎用処理 ターゲット更新
 #
-# @within asset:mob/0412.tiamat/tick/event/**
+# @within asset:mob/0412.tiamat/tick/**
 
 # ターゲットがいる場合、スキップ
-    execute if entity @a[tag=BF.MainTarget,distance=..80] run return 0
+    execute if entity @a[tag=BG.MainTarget,distance=..80] run return 0
 
 # ターゲット更新
     tag @a remove BG.MainTarget

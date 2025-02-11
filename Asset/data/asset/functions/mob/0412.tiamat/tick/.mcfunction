@@ -4,6 +4,9 @@
 #
 # @within asset:mob/alias/412/tick
 
+# ターゲットは常に確認
+    function asset:mob/0412.tiamat/tick/util/check_target
+
 # イベント処理
     function asset:mob/0412.tiamat/tick/event/
 

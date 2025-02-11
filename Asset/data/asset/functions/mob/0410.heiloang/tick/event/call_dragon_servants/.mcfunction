@@ -14,6 +14,10 @@
     # 召喚位置予告
         execute if score @s BE.EventTimer matches 10 as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/summon_circle
         execute if score @s BE.EventTimer matches 10..145 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/particle
+    # ターゲット予告
+        execute if score @s BE.EventTimer matches 10 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/summon_line
+        execute if score @s BE.EventTimer matches 10..150 as @e[type=item_display,tag=2181.Line,tag=BE.Object] at @s run function asset:mob/0410.heiloang/tick/event/call_dragon_servants/prediction_line
+        execute if score @s BE.EventTimer matches 150 run kill @e[type=item_display,tag=2181.Line,tag=BE.Object]
 
 # 発動
     # アニメーション再生

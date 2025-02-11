@@ -74,5 +74,6 @@
     #
     # - オブジェクト
     #declare tag BG.Object オブジェクト共通タグ
+    #declare tag BE.Circle 魔法陣
     #declare tag 2180.Pillar
     #declare tag 2180.Pillar.Death
