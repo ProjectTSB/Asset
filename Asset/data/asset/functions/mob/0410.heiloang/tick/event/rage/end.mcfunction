@@ -13,3 +13,4 @@
 
 # フェーズ移行
     function asset:mob/0410.heiloang/tick/act/phase_3/change_phase
+    function asset:mob/0410.heiloang/tick/act/
