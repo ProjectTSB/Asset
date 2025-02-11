@@ -5,15 +5,15 @@
 # @within function asset:effect/0230.farothdal/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    data modify storage asset:effect ExtendsSafe set value true
+    # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 230
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"狩人の足"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"与ダメージと移動速度が上昇し、被ダメージが大きく上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"走っている間"}','{"translate":"%s +30%%","color":"green","with":[{"translate":"attribute.name.generic.movement_speed"}]}','{"text":"攻撃 +10%","color":"green"}','{"text":"耐性 -10%","color":"red"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 2
+    data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -23,7 +23,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    # data modify storage asset:effect MaxStack set value
+    data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
@@ -36,4 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    # data modify storage asset:effect Field.myValue set value
+    data modify storage asset:effect Field.Sprint set value false

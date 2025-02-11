@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:effect/0255.kaguya_s_difficulties/_/remove",
+        "asset:effect/0256.the_great_sage_s_attire/_/remove",
+        "asset:effect/0256.the_great_sage_s_attire/_/remove",
+        "asset:effect/0032.invisibility/_/remove",
+        "asset:effect/0297.life_is_transitory/_/remove",
+        "asset:effect/0262.catastrophe/_/remove",
         "asset:effect/0190.fall_damage_immunity/_/remove",
         "asset:effect/0296.soul_disconnection/_/remove",
         "asset:effect/0031.slow_falling/_/remove",
@@ -25,7 +31,6 @@
         "asset:effect/0219.blood_eater/_/remove",
         "asset:effect/0220.dream_of_burning_butterfly/_/remove",
         "asset:effect/0221.hunters_run/_/remove",
-        "asset:effect/0230.farothdal/_/remove",
         "asset:effect/0231.wandering_dream/_/remove",
         "asset:effect/0248.oracle_physical_attack/_/remove",
         "asset:effect/0249.oracle_physical_defense/_/remove",
