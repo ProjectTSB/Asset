@@ -19,10 +19,11 @@
     tag @a remove BG.MainTarget
     # function asset:mob/0410.tiamat/tick/util/remove_all_tag
 
-# 死亡演出
-    data modify storage api: Argument.ID set value 2184
-    function api:object/summon
-
 # オブジェクト消去
     execute as @e[tag=BG.Object] on passengers run kill @s
     kill @e[tag=BG.Object]
+
+# 死亡演出
+    data modify storage api: Argument.ID set value 2184
+    function api:object/summon
+    execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/util/servants_death

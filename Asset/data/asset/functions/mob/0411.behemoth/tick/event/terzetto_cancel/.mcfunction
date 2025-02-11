@@ -7,6 +7,10 @@
 # タイマー増加
     scoreboard players add @s BF.EventTimer 1
 
+# オブジェクト消去
+    execute if score @s BF.EventTimer matches 1 as @e[tag=BF.Object] on passengers run kill @s
+    execute if score @s BF.EventTimer matches 1 run kill @e[tag=BF.Object]
+
 # 移動
     # アニメーション再生
         execute if score @s BF.EventTimer matches 1 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start

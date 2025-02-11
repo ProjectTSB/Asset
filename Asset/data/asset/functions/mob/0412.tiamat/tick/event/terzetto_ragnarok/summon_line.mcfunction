@@ -9,3 +9,6 @@
     data modify storage api: Argument.ID set value 2181
     data modify storage api: Argument.FieldOverride.OverrideCmd set value 20497
     function api:object/summon
+
+# タグ付与
+    tag @e[tag=2181.Line,sort=nearest,limit=1] add BG.Object

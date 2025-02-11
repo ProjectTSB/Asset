@@ -15,8 +15,6 @@
     tag @s remove BE.Skill.Tornado
     tag @s remove BE.Skill.Sweep
     tag @s remove BE.Skill.Tempest
-    tag @s remove BE.Skill.HeilDisaster
-    tag @s remove BE.Skill.Flare
     tag @s remove BE.Skill.CallServants
     tag @s remove BE.Skill.Ter.Succ.Start
     tag @s remove BE.Skill.Ter.Succ.A
@@ -32,6 +30,9 @@
     tag @s remove BE.Skill.Ter.Purg
     tag @s remove BE.Skill.Ter.Rag.Start
     tag @s remove BE.Skill.Ter.Rag
+    tag @s remove BE.Skill.Ter.Cancel
+    tag @s remove BE.Skill.HeilDisaster
+    tag @s remove BE.Skill.Flare
     tag @s remove BE.Skill.Plamet
     tag @s remove BE.Skill.PowerBreath
     tag @s remove BE.Skill.PowerBreath.C1

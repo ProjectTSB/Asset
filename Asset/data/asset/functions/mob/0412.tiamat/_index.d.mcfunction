@@ -76,5 +76,6 @@
     # - オブジェクト
     #declare tag BG.Object オブジェクト共通タグ
     #declare tag BE.Circle 魔法陣
-    #declare tag 2180.Pillar
-    #declare tag 2180.Pillar.Death
+    #declare tag 2181.Line 線
+    #declare tag 2180.Pillar 氷柱
+    #declare tag 2180.Pillar.Death 氷柱破壊

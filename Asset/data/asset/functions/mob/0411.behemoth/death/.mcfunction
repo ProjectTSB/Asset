@@ -18,10 +18,11 @@
 # その他リセット
     function asset:mob/0411.behemoth/tick/util/remove_all_tag
 
-# 死亡演出
-    data modify storage api: Argument.ID set value 2183
-    function api:object/summon
-
 # オブジェクト消去
     execute as @e[tag=BF.Object] on passengers run kill @s
     kill @e[tag=BF.Object]
+
+# 死亡演出
+    data modify storage api: Argument.ID set value 2183
+    function api:object/summon
+    execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/util/servants_death
