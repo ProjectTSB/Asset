@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/**/**
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/**
 
 # 召喚
     data modify storage api: Argument.ID set value 2031
