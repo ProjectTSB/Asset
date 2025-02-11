@@ -5,9 +5,9 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot
 
 # 演出
-    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @s ~ ~ ~ 0.7 1 1
-    #execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1
-    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.blaze.shoot hostile @s ~ ~ ~ 0.5 1.8
+    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..32,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.firework_rocket.launch hostile @s ~ ~ ~ 0.7 1 1
+    #execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..32,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound entity.chicken.egg hostile @p ~ ~ ~ 0.5 1 1
+    execute as @a[distance=..30] at @s facing entity @e[type=zombie,tag=this,distance=..32,sort=nearest,limit=1] eyes positioned ^ ^ ^1 run playsound minecraft:entity.blaze.shoot hostile @s ~ ~ ~ 0.5 1.8
 
 # 前方拡散
     summon marker ^ ^ ^0.1 {Tags:["SpreadMarker"]}
