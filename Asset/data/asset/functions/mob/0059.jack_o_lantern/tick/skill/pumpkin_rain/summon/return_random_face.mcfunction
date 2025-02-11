@@ -9,8 +9,7 @@
     #declare score_holder $Temp
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $9 Const
+    execute store result score $Random Temporary run random value 0..8
 
 # ID選択
     execute if score $Random Temporary matches 0 run scoreboard players set $Temp Temporary 20201
