@@ -20,3 +20,5 @@
     tag @s remove BG.Skill.Ter.Purg.B
     tag @s remove BG.Skill.Ter.Rag
     tag @s remove BG.Skill.Freeze
+    tag @s remove BG.Skill.Ter.Cancel
+    tag @s remove BG.Skill.Offering

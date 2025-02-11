@@ -44,3 +44,6 @@
 
 # フリージングエンド
     execute if entity @s[tag=BG.Skill.Freeze] run function asset:mob/0412.tiamat/tick/event/freezing_end/
+
+# ソウルオファリング
+    execute if entity @s[tag=BG.Skill.Offering] run function asset:mob/0412.tiamat/tick/event/offering/

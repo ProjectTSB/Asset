@@ -19,3 +19,5 @@
     tag @s remove BF.Skill.Ter.Purg
     tag @s remove BF.Skill.Ter.Rag
     tag @s remove BF.Skill.Blaze
+    tag @s remove BF.Skill.Ter.Cancel
+    tag @s remove BF.Skill.Offering

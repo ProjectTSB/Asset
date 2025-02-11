@@ -8,3 +8,4 @@
 
 # ターゲット用タグ
     tag @a remove BF.MainTarget
+    tag @a remove BF.FlareTarget

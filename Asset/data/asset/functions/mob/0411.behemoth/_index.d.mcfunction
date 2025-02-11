@@ -25,6 +25,7 @@
         #declare function animated_java:behemoth_aj/animations/10_0_blazing_start/tween
         #declare function animated_java:behemoth_aj/animations/10_1_blazing_cast/tween
         #declare function animated_java:behemoth_aj/animations/10_2_blazing_end/tween
+        #declare function animated_java:behemoth_aj/animations/11_offering/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.behemoth_aj.animation.0_start.playing
@@ -61,6 +62,7 @@
     #declare tag BF.Skill.Ter.Rag テルツェット・ラグナレク
     #declare tag BF.Skill.Ter.Cancel 行動キャンセル
     #declare tag BF.Skill.Blaze ブレイジングエンド
+    #declare tag BF.Skill.Offering ソウルオファリング
     #
     # - 処理用
     #declare tag BF.MainTarget 主ターゲット

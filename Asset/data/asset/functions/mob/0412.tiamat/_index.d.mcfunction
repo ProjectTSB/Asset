@@ -26,6 +26,7 @@
         #declare function animated_java:tiamat_aj/animations/8_spin/tween
         #declare function animated_java:tiamat_aj/animations/9_roar/tween
         #declare function animated_java:tiamat_aj/animations/10_attack/tween
+        #declare function animated_java:tiamat_aj/animations/12_offering/tween
     # - 自動生成タグ
         #declare tag aj.data
         #declare tag aj.tiamat_aj.animation.0_start.playing
@@ -59,6 +60,7 @@
     #declare tag BG.Skill.Ter.Rag テルツェット・ラグナレク
     #declare tag BG.Skill.Ter.Cancel 行動キャンセル
     #declare tag BG.Skill.Freeze フリージングエンド
+    #declare tag BG.Skill.Offering ソウルオファリング
     #
     # - 処理用
     #declare tag BG.MainTarget 主ターゲット

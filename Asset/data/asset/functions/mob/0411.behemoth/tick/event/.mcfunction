@@ -43,3 +43,6 @@
 
 # ブレイジングエンド
     execute if entity @s[tag=BF.Skill.Blaze] run function asset:mob/0411.behemoth/tick/event/blazing_end/
+
+# ソウルオファリング
+    execute if entity @s[tag=BF.Skill.Offering] run function asset:mob/0411.behemoth/tick/event/offering/

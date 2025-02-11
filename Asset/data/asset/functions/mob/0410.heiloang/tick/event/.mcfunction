@@ -63,8 +63,14 @@
 # 行動キャンセル
     execute if entity @s[tag=BE.Skill.Ter.Cancel] run function asset:mob/0410.heiloang/tick/event/terzetto_cancel/
 
+# ソウルオファリング
+    execute if entity @s[tag=BE.Skill.Offering] run function asset:mob/0410.heiloang/tick/event/offering/
+
 # 怯み
     execute if entity @s[tag=BE.Skill.Damage] run function asset:mob/0410.heiloang/tick/event/damage/
+
+# 覚醒
+    execute if entity @s[tag=BE.Skill.Rage] run function asset:mob/0410.heiloang/tick/event/rage/
 
 ## P4
 # ヘイルディザスター
