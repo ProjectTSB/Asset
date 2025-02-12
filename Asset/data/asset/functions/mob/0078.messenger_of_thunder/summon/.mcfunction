@@ -4,4 +4,4 @@
 #
 # @within asset:mob/alias/78/summon
 
-    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible","AntiVoid","AntiFallDamage"],DeathLootTable:"empty"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AllowProcessingCommonTag","AlwaysInvisible","AntiVoid","AntiFallDamage"],DeathLootTable:"empty"}

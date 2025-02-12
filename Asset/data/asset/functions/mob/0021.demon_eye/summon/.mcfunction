@@ -1,4 +1,4 @@
 #> asset:mob/0021.demon_eye/summon/
 # @within asset:mob/alias/21/summon
 
-summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","Enemy","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"empty",Passengers:[{id:"minecraft:area_effect_cloud",Duration:-1,Age:-2147483648,WaitTime:-2147483648,Tags:["21.Rotater","AutoKillWhenDieVehicle","AssetMob"]}]}
+summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","Enemy","AllowProcessingCommonTag","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"empty",Passengers:[{id:"minecraft:area_effect_cloud",Duration:-1,Age:-2147483648,WaitTime:-2147483648,Tags:["21.Rotater","AllowProcessingCommonTag","AutoKillWhenDieVehicle"]}]}

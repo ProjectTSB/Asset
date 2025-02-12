@@ -8,4 +8,4 @@
     # execute if entity @e[tag=BG.EntityRoot] run return 0
 
 # 元となるEntityを召喚する
-    summon slime ~ ~ ~ {Tags:["MobInit","AlwaysInvisible","BG.EntityRoot"],Size:3,NoAI:1b,Silent:1b,DeathLootTable:"empty"}
+    summon slime ~ ~ ~ {Tags:["MobInit","AllowProcessingCommonTag","AlwaysInvisible","BG.EntityRoot"],Size:3,NoAI:1b,Silent:1b,DeathLootTable:"empty"}

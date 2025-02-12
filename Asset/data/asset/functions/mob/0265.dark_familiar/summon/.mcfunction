@@ -5,4 +5,4 @@
 # @within asset:mob/alias/265/summon
 
 # 元となるMobを召喚する
-summon husk ~ ~ ~ {NoAI:1b,Team:"NoCollision",Tags:["MobInit","AlwaysInvisible","AlwaysSlowFall"],DeathTime:19s,IsBaby:1b,Silent:1b,DeathLootTable:"empty"}
+summon husk ~ ~ ~ {NoAI:1b,Team:"NoCollision",Tags:["MobInit","AllowProcessingCommonTag","AlwaysInvisible","AlwaysSlowFall"],DeathTime:19s,IsBaby:1b,Silent:1b,DeathLootTable:"empty"}
