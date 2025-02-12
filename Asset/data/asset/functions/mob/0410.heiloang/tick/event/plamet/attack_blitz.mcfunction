@@ -7,7 +7,9 @@
 # 弾召喚
     data modify storage api: Argument.ID set value 2111
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    execute if score @s BE.Charge.Count matches ..0 run data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    execute if score @s BE.Charge.Count matches 1 run data modify storage api: Argument.FieldOverride.Damage set value 50.0f
+    execute if score @s BE.Charge.Count matches 2.. run data modify storage api: Argument.FieldOverride.Damage set value 55.0f
     function api:object/summon
 
 # 演出
