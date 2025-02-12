@@ -14,4 +14,4 @@
     execute unless predicate lib:is_vehicle at @s run function asset:object/1002.malleus_maleficarum/tick/hit
 
 # セーフティ
-    execute if score @s General.Object.Tick matches 80.. run function asset:object/1002.malleus_maleficarum/tick/hit
+    execute if score @s General.Object.Tick matches 60.. run function asset:object/1002.malleus_maleficarum/tick/hit
