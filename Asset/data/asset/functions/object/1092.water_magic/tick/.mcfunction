@@ -4,18 +4,25 @@
 #
 # @within asset:object/alias/1092/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+#> Private
+# @private
+    #declare score_holder $Interval
 
 # vfx
-    function asset:object/1092.water_magic/tick/vfx
+    scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    scoreboard players operation $Interval Temporary %= $3 Const
+    execute if score $Interval Temporary matches 0 run function asset:object/1092.water_magic/tick/vfx
 
-# ダメージ
-    execute if score @s General.Object.Tick matches 1 run function asset:object/1092.water_magic/tick/damage
-    execute if score @s General.Object.Tick matches 6 run function asset:object/1092.water_magic/tick/damage
-    execute if score @s General.Object.Tick matches 11 run function asset:object/1092.water_magic/tick/damage
-    execute if score @s General.Object.Tick matches 16 run function asset:object/1092.water_magic/tick/damage
-    execute if score @s General.Object.Tick matches 21 run function asset:object/1092.water_magic/tick/damage
+# vfx
+    scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    scoreboard players operation $Interval Temporary %= $5 Const
+    execute if score $Interval Temporary matches 0 run function asset:object/1092.water_magic/tick/damage
+
+# リセット
+    scoreboard players reset $Interval Temporary
+
+# Tick加算
+    scoreboard players add @s General.Object.Tick 1
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=21..}]
