@@ -5,4 +5,4 @@
 # @within asset:mob/alias/214/summon
 
 # 元となるEntityを召喚する
-    summon phantom ~ ~ ~ {Tags:["MobInit","AllowProcessingCommonTag","AntiBurn"],DeathLootTable:"empty",NoAI:1b}
+    summon phantom ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiBurn"],DeathLootTable:"empty",NoAI:1b}

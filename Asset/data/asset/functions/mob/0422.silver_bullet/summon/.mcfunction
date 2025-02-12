@@ -5,4 +5,4 @@
 # @within asset:mob/alias/422/summon
 
 # 元となるEntityを召喚する
-    summon silverfish ~ ~ ~ {Tags:["MobInit","AllowProcessingCommonTag","AntiBurn","AlwaysSlowFall"]}
+    summon silverfish ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiBurn","AlwaysSlowFall"]}

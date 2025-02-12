@@ -1008,7 +1008,7 @@
 # @within
 #   function core:tick/
 #   function asset:**
-#declare tag AllowProcessingCommonTag from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L41
+#declare tag ProcessCommonTag from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L41
 
 #> declare
 # @within

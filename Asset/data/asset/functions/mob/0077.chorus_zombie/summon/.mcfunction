@@ -5,4 +5,4 @@
 # @within asset:mob/alias/77/summon
 
 # 元となるEntityを召喚する
-    summon zombie ~ ~ ~ {Tags:["MobInit","AllowProcessingCommonTag","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0077.chorus_zombie"}
+    summon zombie ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0077.chorus_zombie"}
