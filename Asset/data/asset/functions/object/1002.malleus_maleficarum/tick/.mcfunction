@@ -13,5 +13,5 @@
 # Vehicleがいなければヒット処理
     execute unless predicate lib:is_vehicle at @s run function asset:object/1002.malleus_maleficarum/tick/hit
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+# セーフティ
+    execute if score @s General.Object.Tick matches 80.. run function asset:object/1002.malleus_maleficarum/tick/hit
