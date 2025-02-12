@@ -143,6 +143,7 @@
     #declare tag BE.Skill.PowerBreath.C1 パワーブレス連発
     #declare tag BE.Skill.PowerBreath.C2 パワーブレス連発
     #declare tag BE.Skill.PowerBreath.End パワーブレス終了
+    #declare tag BE.Skill.PowerCharge パワーチャージ
     #
     # - 処理用
     #declare tag BE.MainTarget 主ターゲット

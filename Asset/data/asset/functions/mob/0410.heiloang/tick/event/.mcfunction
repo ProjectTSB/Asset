@@ -88,3 +88,6 @@
     execute if entity @s[tag=BE.Skill.PowerBreath.C1] run function asset:mob/0410.heiloang/tick/event/power_breath_continue_1/
     execute if entity @s[tag=BE.Skill.PowerBreath.C2] run function asset:mob/0410.heiloang/tick/event/power_breath_continue_2/
     execute if entity @s[tag=BE.Skill.PowerBreath.End] run function asset:mob/0410.heiloang/tick/event/power_breath_end/
+
+# パワーチャージ
+    execute if entity @s[tag=BE.Skill.PowerCharge] run function asset:mob/0410.heiloang/tick/event/power_charge/

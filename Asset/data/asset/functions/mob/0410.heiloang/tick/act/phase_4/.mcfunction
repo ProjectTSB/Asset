@@ -31,7 +31,7 @@
     execute if score @s BE.ActCount matches 6 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
 
 # パワーチャージ
-
+    execute if score @s BE.ActCount matches 7 run tag @s add BE.Skill.PowerCharge
 
 # # フレア
 #     execute if score @s BE.ActCount matches 2 run tag @s add BE.Skill.Flare
