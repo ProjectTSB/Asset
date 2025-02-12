@@ -11,6 +11,9 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/auto
 
+# 演出
+    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1 0.6
+
 # 弾を召喚
     data modify storage api: Argument.ID set value 1002
     execute anchored eyes positioned ^ ^ ^1 run function api:object/summon
