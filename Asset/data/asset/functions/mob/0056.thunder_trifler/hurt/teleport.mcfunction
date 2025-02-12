@@ -8,6 +8,9 @@
 # @private
     #declare tag SpreadMarker
 
+# Tickを記録
+    execute store result storage asset:context this.LatestTPTick int 1 run time query gametime
+
 # マーカーをワープさせて、そこが安全地帯ならワープする
     execute at @p[tag=Attacker,distance=..50] run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     execute at @p[tag=Attacker,distance=..50] run data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,0d],[5d,5d]]
