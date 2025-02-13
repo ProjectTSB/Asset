@@ -8,7 +8,7 @@
 #    function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/
 
 # 角度変更
-    execute facing entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,sort=furthest,limit=1] feet run tp @s ~ ~ ~ ~ 0
 
 # 予告
     data modify storage api: Argument.ID set value 2113

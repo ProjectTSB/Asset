@@ -12,4 +12,4 @@
 
 # イベント実行
     scoreboard players set @s BF.EventTimer 0
-    tag @s add BF.Skill.FlareBreath
+    tag @s add BF.Skill.Flatten

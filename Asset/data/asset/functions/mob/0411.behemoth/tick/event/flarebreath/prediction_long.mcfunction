@@ -3,6 +3,7 @@
 # フレアブレス
 #
 # @within
+#    function asset:mob/0411.behemoth/tick/event/flarebreath/
 #    function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/
 
 # 角度変更

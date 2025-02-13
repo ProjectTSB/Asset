@@ -15,7 +15,7 @@
         execute if score @s BF.EventTimer matches 81 at @s run tp @e[type=item_display,tag=BF.ModelRoot] ~ ~ ~ ~ 0
 
 # フラッテン
-        # 詠唱
+    # 詠唱
         # アニメーション再生
             execute if score @s BF.EventTimer matches 121 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
             execute if score @s BF.EventTimer matches 140 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
@@ -32,7 +32,9 @@
             execute if score @s BF.EventTimer matches 226..230 at @s run tp @s ^ ^ ^0.4
             execute if score @s BF.EventTimer matches 251..260 run tp @s ~ ~0.05 ~
         # 攻撃範囲表示
-            execute if score @s BF.EventTimer matches 225 positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
+            # execute if score @s BF.EventTimer matches 225 positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
+            execute if score @s BF.EventTimer matches 205 if predicate api:global_vars/difficulty/max/normal at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction_long
+            execute if score @s BF.EventTimer matches 225 if predicate api:global_vars/difficulty/min/hard at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
         # 攻撃
             execute if score @s BF.EventTimer matches 235 positioned ^ ^0.5 ^2 run function asset:mob/0411.behemoth/tick/event/flatten/attack
     # 演出

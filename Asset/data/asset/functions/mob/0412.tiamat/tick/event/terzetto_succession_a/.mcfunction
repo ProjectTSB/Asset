@@ -34,7 +34,8 @@
         execute if score @s BG.EventTimer matches 308..336 at @s run particle dragon_breath ~ ~3 ~ 2 2 2 0.1 10
         execute if score @s BG.EventTimer matches 308..336 at @s run particle explosion ~ ~ ~ 2 0 2 0.1 3
     # 攻撃
-        execute if score @s BG.EventTimer matches 300 at @s positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/dive_prediction
+        execute if score @s BG.EventTimer matches 154 if predicate api:global_vars/difficulty/max/normal at @s positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/dive_prediction_long
+        execute if score @s BG.EventTimer matches 300 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/dive_prediction
         execute if score @s BG.EventTimer matches 315 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BG.EventTimer matches 318 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BG.EventTimer matches 321 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0412.tiamat/tick/event/terzetto_succession_a/attack_dive
