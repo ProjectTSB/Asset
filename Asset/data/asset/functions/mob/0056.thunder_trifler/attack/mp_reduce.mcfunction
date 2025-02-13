@@ -10,7 +10,7 @@
     #declare score_holder $Base
 
 # Field[1]の値を取得
-    execute store result score $Base Temporary run data get storage asset:context this[1]
+    execute store result score $Base Temporary run data get storage asset:context this.MPReduce
 
 # 難易度値を取得し、1減らす
     function api:global_vars/get_difficulty
