@@ -29,7 +29,7 @@
     attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02e000000006 "KG.Speed" 0.075 multiply_base
 
 # 魔法攻撃-15%
-    data modify storage api: Argument.UUID set value [I;1,1,736,5]
+    data modify storage api: Argument.UUID set value [I;1,1,736,6]
     data modify storage api: Argument.Amount set value -0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/magic/add
