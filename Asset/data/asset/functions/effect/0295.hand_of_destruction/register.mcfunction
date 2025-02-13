@@ -1,13 +1,13 @@
-#> asset:effect/0619.hand_of_destruction/register
+#> asset:effect/0295.hand_of_destruction/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0619.hand_of_destruction/_/register
+# @within function asset:effect/0295.hand_of_destruction/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 619
+    data modify storage asset:effect ID set value 295
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"破壊の手"}'
 # 説明文 (TextComponentString[])
