@@ -11,7 +11,7 @@
     execute if entity @s[scores={General.Mob.Tick=0..19}] run tp @s ~ ~ ~ ~20 0
     execute if entity @s[scores={General.Mob.Tick=20..39}] run tp @s ~ ~ ~ ~40 0
     execute if entity @s[scores={General.Mob.Tick=40..49}] run tp @s ~ ~ ~ ~20 0
-    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p[gamemode=!spectator] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 回転演出
     execute if entity @s[scores={General.Mob.Tick=0..19}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.1 3 normal @a
@@ -26,7 +26,7 @@
 
 # 回転途中で頭を取り換える
     execute if entity @s[scores={General.Mob.Tick=35}] run particle explosion ~ ~1.8 ~ 0 0 0 0 1
-    execute if entity @s[scores={General.Mob.Tick=40}] run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
+    execute if entity @s[scores={General.Mob.Tick=40}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/change_head
 
 # 自分と偽物を拡散し、発光を解除
 # 自身にparticle非表示Tagを付与
