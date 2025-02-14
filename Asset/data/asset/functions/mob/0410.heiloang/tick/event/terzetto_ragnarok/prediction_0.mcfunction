@@ -14,5 +14,8 @@
     data modify storage api: Argument.FieldOverride.RemoveTimer set value 229
     function api:object/summon
 
+# 直線範囲予告
+    execute if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/prediction_line
+
 # 次の攻撃用に回転
     tp @s ~ ~ ~ ~180 ~

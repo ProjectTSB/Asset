@@ -74,14 +74,19 @@
             execute if score @s BF.EventTimer matches 515 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
             execute if score @s BF.EventTimer matches 550 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
         # ターゲットを向く
-            execute if score @s BF.EventTimer matches 505 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
-            execute if score @s BF.EventTimer matches 515..540 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
-            execute if score @s BF.EventTimer matches 540 at @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 520 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 505 if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 540 if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 515..530 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
             execute if score @s BF.EventTimer matches 550..565 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
         # 攻撃範囲表示
-            execute if score @s BF.EventTimer matches 450 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 510 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-            execute if score @s BF.EventTimer matches 545 at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 455 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 530 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 475 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 510 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 545 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
         # 攻撃
             execute if score @s BF.EventTimer matches 495 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
             execute if score @s BF.EventTimer matches 530 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
@@ -97,9 +102,6 @@
 # 移動
     # アニメーション再生
         execute if score @s BF.EventTimer matches 606 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
-        # execute if score @s BF.EventTimer matches 315 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
-    # 中心点の後ろに移動
-        # execute if score @s BF.EventTimer matches 310 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^-32 ~0 0
 
 # 終了
     execute if score @s BF.EventTimer matches 880.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end
