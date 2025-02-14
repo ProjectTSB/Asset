@@ -1,6 +1,6 @@
 #> asset:artifact/0822.sound_of_a_star/trigger/summon_star.m
 #
-# 神器のメイン処理部
+# 星を召喚する
 #
 # @input args
 #   Damage: int
@@ -13,8 +13,3 @@
     $data modify storage api: Argument.FieldOverride.StartDelay set value $(StartDelay)
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
-
-
-
-
-#

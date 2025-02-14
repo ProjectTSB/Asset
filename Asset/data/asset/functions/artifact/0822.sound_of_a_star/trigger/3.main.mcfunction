@@ -4,12 +4,16 @@
 #
 # @within function asset:artifact/0822.sound_of_a_star/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare score_holder $MPMaxValue
+    #declare score_holder $MPValue
+
 # MP消費前のMP割合を求める
     function api:mp/get_max
     execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
     function api:mp/get_current
-    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP
-    scoreboard players operation $MPValue Temporary *= $100 Const
+    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP 100
     scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
