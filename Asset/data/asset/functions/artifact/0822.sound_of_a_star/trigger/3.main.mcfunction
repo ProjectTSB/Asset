@@ -8,8 +8,7 @@
     function api:mp/get_max
     execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
     function api:mp/get_current
-    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP
-    scoreboard players operation $MPValue Temporary *= $100 Const
+    execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP 100
     scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
