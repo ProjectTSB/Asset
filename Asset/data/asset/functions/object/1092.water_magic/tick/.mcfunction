@@ -13,7 +13,7 @@
     scoreboard players operation $Interval Temporary %= $3 Const
     execute if score $Interval Temporary matches 0 run function asset:object/1092.water_magic/tick/vfx
 
-# vfx
+# ダメージ
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $5 Const
     execute if score $Interval Temporary matches 0 run function asset:object/1092.water_magic/tick/damage
