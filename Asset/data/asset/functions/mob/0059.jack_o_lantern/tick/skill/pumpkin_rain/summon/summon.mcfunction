@@ -18,7 +18,3 @@
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Rain
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute positioned ~ ~8 ~ run function api:object/summon
-
-# リセット
-    scoreboard players reset $Random Temporary
-    scoreboard players reset $Temp Temporary
