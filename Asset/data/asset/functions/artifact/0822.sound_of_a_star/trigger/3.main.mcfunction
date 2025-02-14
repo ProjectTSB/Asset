@@ -4,6 +4,11 @@
 #
 # @within function asset:artifact/0822.sound_of_a_star/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare score_holder $MPMaxValue
+    #declare score_holder $MPValue
+
 # MP消費前のMP割合を求める
     function api:mp/get_max
     execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
