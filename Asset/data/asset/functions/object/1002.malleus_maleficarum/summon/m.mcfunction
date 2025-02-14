@@ -1,6 +1,6 @@
 #> asset:object/1002.malleus_maleficarum/summon/m
 #
-#   args:
+# @input args
 #   Rotation : float @ 2
 # @within function asset:object/1002.malleus_maleficarum/summon/
 
