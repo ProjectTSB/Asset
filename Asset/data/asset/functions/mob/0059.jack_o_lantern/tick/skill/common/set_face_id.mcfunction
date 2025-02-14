@@ -24,5 +24,5 @@
     execute if score $RandomFaceID Temporary matches 7 run data modify storage api: Argument.FieldOverride.FaceID set value 20283
     execute if score $RandomFaceID Temporary matches 8 run data modify storage api: Argument.FieldOverride.FaceID set value 20284
 
-# IDを返す
+# リセット
     scoreboard players reset $RandomFaceID Temporary
