@@ -19,3 +19,4 @@
 
 # reset 
     scoreboard players reset $next_attack_time Temporary
+    scoreboard players reset $current_next_attack_time Temporary

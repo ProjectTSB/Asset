@@ -29,3 +29,7 @@
     execute if score $RepairRatioE1 Temporary matches 8 on passengers if entity @s[type=text_display,tag=PatriotLauncher.Gauge] run data modify entity @s text set value '{"color":"#ffffff","text":"修理：■■■■■■■■□□"}'
     execute if score $RepairRatioE1 Temporary matches 9 on passengers if entity @s[type=text_display,tag=PatriotLauncher.Gauge] run data modify entity @s text set value '{"color":"#ffffff","text":"修理：■■■■■■■■■□"}'
     execute if score $RepairRatioE1 Temporary matches 10 on passengers if entity @s[type=text_display,tag=PatriotLauncher.Gauge] run data modify entity @s text set value '{"color":"#ffffff","text":"修理：■■■■■■■■■■"}'
+
+# reset
+    scoreboard players reset $RepairRatioE1 Temporary
+    scoreboard players reset $MaxRepairTimeE1 Temporary

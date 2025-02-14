@@ -11,6 +11,9 @@
     particle minecraft:large_smoke ~ ~ ~ 1.2 0.8 1.2 0.1 100 normal
     particle minecraft:flame ~ ~ ~ 0.6 0.3 0.6 0.05 50 normal
 
+# sound
+    playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 1 1 1
+
 # damage
     data modify storage api: Argument.Damage set value 10f
     data modify storage api: Argument.AttackType set value "Physical"

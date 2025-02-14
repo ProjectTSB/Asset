@@ -9,3 +9,6 @@
 
 # 直進
     tp @s ^ ^ ^0.25
+
+# モデルの向きを合わせる
+    execute rotated as @s on passengers positioned as @s run tp @s ~ ~ ~ ~ ~

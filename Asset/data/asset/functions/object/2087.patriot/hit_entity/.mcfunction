@@ -19,7 +19,9 @@
     playsound minecraft:entity.firework_rocket.large_blast_far master @a[distance=..128] ~ ~ ~ 1.0 0.61 1
 
 # particle
-    particle minecraft:large_smoke ~ ~ ~ 1.5 0.8 1.5 0.1 200 force
+    particle minecraft:large_smoke ~ ~ ~ 2 1 2 0.1 200 force
+    particle minecraft:flame ~ ~ ~ 1.5 0.8 1.5 0.3 200 force
+    particle minecraft:lava ~ ~-1 ~ 2 0 2 1 24 force
 
 # super呼び出し
     function asset:object/super.method
