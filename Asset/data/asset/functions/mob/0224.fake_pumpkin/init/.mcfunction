@@ -27,7 +27,7 @@
     execute store result storage lib: Picks[0] int 1 run scoreboard players operation $Random Temporary %= $CandidatesLength Temporary
 # 抜き取り
     function lib:array/picks
-# 配列最後尾のIDの頭を被る
+# 抜き取ったIDの頭を被る
     data modify entity @s ArmorItems[3].tag.CustomModelData set from storage lib: Elements[0]
 
 # リセット
