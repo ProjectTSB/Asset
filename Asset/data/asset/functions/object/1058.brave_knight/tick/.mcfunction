@@ -38,8 +38,8 @@
     execute unless entity @e[type=marker,tag=1058.MoveMarker,distance=..40,limit=1] run function asset:object/1058.brave_knight/tick/event/disappear
 
 # ヘルス
-   scoreboard players remove @s 1058.LifeTime 1
-   execute if score @s 1058.LifeTime matches 0 run function asset:object/1058.brave_knight/tick/event/disappear
+    scoreboard players remove @s 1058.LifeTime 1
+    execute if score @s 1058.LifeTime matches 0 run function asset:object/1058.brave_knight/tick/event/disappear
 
 # リセット
     kill @e[type=marker,tag=1058.MoveMarker]

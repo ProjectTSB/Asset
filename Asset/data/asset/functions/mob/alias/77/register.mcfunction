@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/summon/register.m
 
 # 元の登録処理を呼び出す
-   function asset:mob/0077.chorus_zombie/register
+    function asset:mob/0077.chorus_zombie/register

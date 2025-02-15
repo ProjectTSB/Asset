@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-   function asset:object/2003.smoke_bomb/init/
+    function asset:object/2003.smoke_bomb/init/

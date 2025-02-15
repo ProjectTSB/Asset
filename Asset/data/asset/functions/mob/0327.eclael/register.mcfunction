@@ -1,7 +1,7 @@
 #> asset:mob/0327.eclael/register
 # @within asset:mob/alias/327/register
 
- #継承 (int) (オプション)
+# 継承 (int) (オプション)
     data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)

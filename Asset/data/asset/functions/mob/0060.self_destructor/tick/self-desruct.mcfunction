@@ -17,5 +17,5 @@
     scoreboard players set @e[type=zombie,scores={MobID=60},distance=..7.5] 1O.ExplodeFuse 36
     scoreboard players set @e[type=zombie,scores={MobID=60},distance=..7.5] 1O.ExplodeCnt 8
 
-  # 消滅
+# 消滅
     function api:mob/remove

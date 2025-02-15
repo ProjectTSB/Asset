@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int)
- # data modify storage asset:artifact MPCost set value 0
+    # data modify storage asset:artifact MPCost set value 0
 # MP回復量 (int
     data modify storage asset:artifact MPHealWhenHit set value 3
 # MP必要量 (int) (オプション)

@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/death/death.m
 
 # 本来の処理を呼び出す
-   function asset:mob/0376.convict_v2/death/
+    function asset:mob/0376.convict_v2/death/
