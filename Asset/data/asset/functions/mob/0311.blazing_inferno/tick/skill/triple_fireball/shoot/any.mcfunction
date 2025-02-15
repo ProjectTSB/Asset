@@ -8,7 +8,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 拡散弾
     # ID指定

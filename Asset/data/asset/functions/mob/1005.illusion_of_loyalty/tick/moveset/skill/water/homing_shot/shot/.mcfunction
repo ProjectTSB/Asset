@@ -6,8 +6,8 @@
 
 #> 行き先マーカー
 # @private
-#declare tag FacingMarker
-#declare tag SpreadMarker
+    #declare tag FacingMarker
+    #declare tag SpreadMarker
 
 # 拡散させて実行
     # 拡散させるEntityを召喚する

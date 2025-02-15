@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 拡散させるEntityを召喚する
     execute anchored eyes positioned ^-0.4 ^-0.3 ^0.5 run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
