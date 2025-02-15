@@ -1,4 +1,4 @@
-#> asset:mob/0023.chainsaw_zombie/tick/2.1.attack
+#> asset:mob/0023.chainsaw_zombie/tick/moition
 #
 #
 #
