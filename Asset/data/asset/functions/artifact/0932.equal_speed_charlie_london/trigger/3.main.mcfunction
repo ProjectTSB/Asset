@@ -8,4 +8,6 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
-    effect give @s speed 1000000 0 true
+
+# 移動速度
+    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-03a400000007 "PW.Speed" 0.2 multiply_base
