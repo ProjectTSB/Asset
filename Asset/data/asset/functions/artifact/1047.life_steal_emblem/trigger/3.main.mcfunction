@@ -26,6 +26,9 @@
     function api:damage/reset
 
 # 魂命バフを付与する
+# Amount = 最大HPの8%
+# 100の時に8%
     data modify storage api: Argument.ID set value 260
+    execute store result storage api: Argument.FieldOverride.Amount double 0.0008 run data get storage api: Return.MaxHealth
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
