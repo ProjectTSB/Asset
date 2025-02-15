@@ -157,6 +157,7 @@
     #declare tag BE.Temp.Ground 角度決定用
     #declare tag BE.Temp.AttackRotation 角度決定用
     #declare tag BE.Temp.AttackPosition 位置決定用
+    #declare tag BE.Temp.GroundPosition 位置決定用
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Blitz.SummonPosition リヒトブリッツェン召喚位置
     #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターンB
@@ -169,6 +170,7 @@
     #declare tag BE.Temp.Dive.PositionB 連続ダイブ位置B
     #declare tag BE.Temp.Dive.PositionC 連続ダイブ位置C
     #declare tag BE.Temp.Hit 攻撃ヒット
+    #declare tag BE.Temp.HitFlame 火炎放射ヒット
     #declare tag BE.Temp.Dummy ダミー
     #declare tag BE.Temp.MoveEnd 処理終了
     #

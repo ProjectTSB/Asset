@@ -12,8 +12,8 @@
     data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
     data modify storage api: Argument.FieldOverride.Color set value 16727040
     data modify storage api: Argument.FieldOverride.Scale set value [39f,39f]
-    data modify storage api: Argument.FieldOverride.Interpolation set value 30
-    data modify storage api: Argument.FieldOverride.Tick set value 90
+    data modify storage api: Argument.FieldOverride.Interpolation set value 15
+    data modify storage api: Argument.FieldOverride.Tick set value 50
     execute positioned ~ ~ ~ run function api:object/summon
 
 # 終了

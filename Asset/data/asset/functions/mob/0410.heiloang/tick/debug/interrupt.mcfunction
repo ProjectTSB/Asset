@@ -12,6 +12,6 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Ter.Rag.Start
-    # tag @s add BE.Skill.Offering
+    # tag @s add BE.Skill.Ter.Rag.Start
+    tag @s add BE.Skill.HeilDisaster
     scoreboard players set @s BE.Pb.Count 3
