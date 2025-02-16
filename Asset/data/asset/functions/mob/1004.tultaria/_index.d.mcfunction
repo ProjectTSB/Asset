@@ -11,6 +11,8 @@
     # ボスの状態に関するタグ
     #declare tag RW.CanElementChange
     #declare tag RW.SkillSelected
+    #declare tag RW.Shield
+    #declare tag RW.Break
     # ボスの体と移動に関連するタグ
     #declare tag RW.Opening
     #declare tag RW.PlayerFacing
