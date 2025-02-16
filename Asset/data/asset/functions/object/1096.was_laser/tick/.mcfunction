@@ -32,4 +32,4 @@
     execute if score @s General.Object.Tick matches 42 anchored eyes positioned ^ ^ ^ run function asset:object/1096.was_laser/tick/shoot/
 
 # 消滅処理
-    execute if score @s General.Object.Tick matches 42 run kill @s
+    execute if score @s General.Object.Tick matches 42.. run kill @s
