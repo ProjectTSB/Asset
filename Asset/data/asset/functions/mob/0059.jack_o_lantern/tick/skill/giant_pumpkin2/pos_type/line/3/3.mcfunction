@@ -4,12 +4,8 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
 
-# Rotationを設定して召喚
-    data modify storage api: Argument.FieldOverride.RotationX set value 180
-    execute positioned ^0 ^0 ^9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^0 ^0 ^9 rotated 180 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 180
-    execute positioned ^3 ^0 ^9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^3 ^0 ^9 rotated 180 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 180
-    execute positioned ^-3 ^0 ^9 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^-3 ^0 ^9 rotated 180 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
