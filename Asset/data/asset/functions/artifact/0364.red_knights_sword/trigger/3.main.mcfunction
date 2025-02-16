@@ -51,7 +51,7 @@
     # 補正をしない
         data modify storage api: Argument.FixedDamage set value true
     # 死亡メッセージ
-        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた。","with":[{"selector":"@s"}]}]']
+        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた","with":[{"selector":"@s"}]}]']
     # ダメージ
         function api:damage/modifier_continuation
         execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
