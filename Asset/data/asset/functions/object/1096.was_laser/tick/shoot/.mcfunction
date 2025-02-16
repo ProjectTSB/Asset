@@ -32,7 +32,7 @@
     function api:object/summon
 
 # 立方体範囲内のプレイヤーにtag付け
-# Scale[1]を計測したレイから代入
+# dzを計測したレイから代入
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 2.5
     execute store result storage lib: args.dz int 0.5 run scoreboard players get $Range Temporary
