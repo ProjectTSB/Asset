@@ -24,6 +24,8 @@
     # function animated_java:heiloang_aj/remove/all
 
 # 死亡演出
+    title @a[distance=..80] times 1 4 3
+    title @a[distance=..80] title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
     data modify storage api: Argument.ID set value 2174
     function api:object/summon
 
