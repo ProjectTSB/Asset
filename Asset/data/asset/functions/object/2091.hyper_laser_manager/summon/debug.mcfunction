@@ -5,6 +5,8 @@
 # @user
 # @private
 
+data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+
 # 召喚
     data modify storage api: Argument.ID set value 2091
     function api:object/summon
