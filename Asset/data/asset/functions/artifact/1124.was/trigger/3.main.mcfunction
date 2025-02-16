@@ -9,13 +9,8 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 仮として敵のやつそのまま召喚
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    data modify storage api: Argument.ID set value 2091
-    function api:object/summon
-
-
-
-
-
-#
+# Object召喚
+    data modify storage api: Argument.ID set value 1096
+    data modify storage api: Argument.FieldOverride.Damage set value 1000
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute positioned ^ ^1.5 ^1.5 run function api:object/summon
