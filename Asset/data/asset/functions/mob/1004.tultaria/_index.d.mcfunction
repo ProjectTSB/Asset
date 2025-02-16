@@ -96,6 +96,8 @@
     #declare function animated_java:tultaria/animations/attack_melee_4_active/tween
     #declare function animated_java:tultaria/animations/dodge_back/tween
     #declare function animated_java:tultaria/animations/dodge_side/tween
+    #declare function animated_java:tultaria/animations/break/tween
+    #declare function animated_java:tultaria/animations/break_loop/tween
     #declare function animated_java:tultaria/animations/pause_all
     #declare function animated_java:tultaria/apply_default_pose
     #declare function animated_java:tultaria/remove/this

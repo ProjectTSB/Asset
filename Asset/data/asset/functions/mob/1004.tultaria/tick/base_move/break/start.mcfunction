@@ -21,6 +21,9 @@
 # タグリセット
     function asset:mob/1004.tultaria/tick/reset/skill_tag
 
+# アニメ再生
+    execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/break/tween {to_frame:0,duration:1}
+
 # タグ付与
     tag @s add RW.Break
     tag @s add RW.InAction
