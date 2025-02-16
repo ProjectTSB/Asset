@@ -13,4 +13,4 @@
     data modify storage api: Argument.ID set value 1096
     data modify storage api: Argument.FieldOverride.Damage set value 1000
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute positioned ^ ^1.5 ^1.5 run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^1.5 run function api:object/summon
