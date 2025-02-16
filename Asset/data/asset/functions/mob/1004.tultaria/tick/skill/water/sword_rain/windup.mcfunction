@@ -14,15 +14,17 @@
     execute as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_2_left/tween {to_frame:0,duration:1}
 
 # 行動をランダムに選択
-    # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
     # フェイズ1
-        execute if score @s RW.Phase matches 1 run scoreboard players operation $Random Temporary %= $2 Const
-    # フェイズ2..
-        execute if score @s RW.Phase matches 2.. run scoreboard players operation $Random Temporary %= $3 Const
+        execute if score @s RW.Phase matches 1 store result score $Random Temporary run random value 0..1
+    # フェイズ2
+        execute if score @s RW.Phase matches 2 store result score $Random Temporary run random value 0..2
+    # フェイズ3、ハード以下
+        execute if predicate api:global_vars/difficulty/max/normal if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..2
+    # フェイズ3かつBlesslessだとスゲー置き方解禁する
+        execute if predicate api:global_vars/difficulty/min/hard if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..3
 
 # デバッグ用、実行する技を確定させる
-#    scoreboard players set $Random Temporary 3
+#    scoreboard players set $Random Temporary 0
 
 # タグ付与
     # 1
