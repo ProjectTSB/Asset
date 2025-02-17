@@ -88,6 +88,7 @@
             #declare function animated_java:eclael/animations/25_2_guard_2/tween
             #declare function animated_java:eclael/animations/26_0_phase_change/tween
             #declare function animated_java:eclael/animations/27_0_latter_thunderstorm/tween
+            #declare function animated_java:eclael/animations/31_0_field_thunder/tween
             #declare function animated_java:eclael/variants/default/apply
             #declare function animated_java:eclael/variants/blink/apply
             #declare function animated_java:eclael/variants/akubi/apply
@@ -165,6 +166,10 @@
     #declare tag 93.Skill.Latter.Momiji 紅葉舞
     #declare tag 93.Skill.Latter.SpinSlash 回転斬り
     #declare tag 93.Skill.Latter.Thunderstorm 雷雨
-    #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発
-    ## オブジェクト
+    #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発]
+    ## スキル：追加分
+    #declare tag 93.Skill.FieldThunder 全体落雷
+    ## その他、オブジェクト
+    #declare tag 93.Temp.Ground
+    #declare tag 93.Temp.AttackPosition
     #declare tag 93.Object
