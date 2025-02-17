@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2206.eclael_thunder/**
-    #declare
+    #declare tag 93.Object

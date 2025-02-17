@@ -30,14 +30,14 @@
     execute if score @s 93.AnimationTimer matches 60 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 0.7
 
 # 追撃
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~ ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~45 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~90 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~135 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~180 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~225 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~270 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
-    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 70 rotated ~315 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~ ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~45 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~90 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~135 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~180 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~225 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~270 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
+    execute if entity @s[tag=93.Temp.IsThunder] if score @s 93.AnimationTimer matches 40 rotated ~315 ~ positioned ^ ^ ^13 run function asset:mob/0327.eclael/tick/app.general/16.thunderstorm_attack
 
 # 表情
     execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
