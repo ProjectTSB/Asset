@@ -29,10 +29,5 @@
 # animated javaアニメーション再生 (長さ：30tick)
     execute if score @s 93.AnimationTimer matches 71 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/3_1.play_idle_animation
 
-# 表情
-    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
-    execute if score @s 93.AnimationTimer matches 30 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
-    execute if score @s 93.AnimationTimer matches 35 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
-
 # 終了
     execute if score @s 93.AnimationTimer matches 101.. run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/2.end

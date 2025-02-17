@@ -61,9 +61,5 @@
     execute if score @s 93.AnimationTimer matches 103 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:20,Tags:["Object","93.Aec.AttackPos"]}
     execute if score @s 93.AnimationTimer matches 106 at @s run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/4.1.attack_shot
 
-# 表情
-    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/wink/apply
-    execute if score @s 93.AnimationTimer matches 110 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
-
 # 終了
     execute if score @s 93.AnimationTimer matches 161.. run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/2.end
