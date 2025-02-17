@@ -15,7 +15,7 @@
     # tp @s 187 210 14
 
 # 前半
-    execute unless entity @s[tag=93.Phase.Latter] run function asset:mob/0327.eclael/tick/app.1_2.select_skill_former
+    # execute unless entity @s[tag=93.Phase.Latter] run function asset:mob/0327.eclael/tick/app.1_2.select_skill_former
 
 # 後半
-    execute if entity @s[tag=93.Phase.Latter] run function asset:mob/0327.eclael/tick/app.1_3.select_skill_latter
+    # execute if entity @s[tag=93.Phase.Latter] run function asset:mob/0327.eclael/tick/app.1_3.select_skill_latter
