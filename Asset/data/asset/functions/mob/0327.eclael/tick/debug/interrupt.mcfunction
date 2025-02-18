@@ -9,6 +9,6 @@
 
 # デバッグ用強制再生
     scoreboard players set @s 93.AnimationTimer 0
-    tag @s add 93.Skill.FieldThunder
+    tag @s add 93.Skill.Former.Magic
     # tag @s add 93.Phase.HardLatter
     # tag @s add 93.Temp.MoveToLeft

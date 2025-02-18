@@ -6,37 +6,44 @@
 #   function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/4.5.1.attack_2
 #   function asset:mob/0327.eclael/debug_damage
 
-# 演出
-    particle flash ~ ~0.5 ~ 0 0 0 0 1
+# 攻撃
+    data modify storage api: Argument.ID set value 2206
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    execute positioned ~ ~ ~ run function api:object/summon
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $8 Const
+# # 演出
+#     particle flash ~ ~0.5 ~ 0 0 0 0 1
 
-    execute if score $Random Temporary matches 0 rotated ~ 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
-    execute if score $Random Temporary matches 1 rotated ~90 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
-    execute if score $Random Temporary matches 2 rotated ~180 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
-    execute if score $Random Temporary matches 3 rotated ~270 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
-    execute if score $Random Temporary matches 4 rotated ~45 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
-    execute if score $Random Temporary matches 5 rotated ~135 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
-    execute if score $Random Temporary matches 6 rotated ~225 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
-    execute if score $Random Temporary matches 7 rotated ~315 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
+# # 疑似乱数取得
+#     execute store result score $Random Temporary run function lib:random/
+# # ほしい範囲に剰余算
+#     scoreboard players operation $Random Temporary %= $8 Const
 
-# リセット
-    scoreboard players reset $Random Temporary
+#     execute if score $Random Temporary matches 0 rotated ~ 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
+#     execute if score $Random Temporary matches 1 rotated ~90 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
+#     execute if score $Random Temporary matches 2 rotated ~180 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
+#     execute if score $Random Temporary matches 3 rotated ~270 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
+#     execute if score $Random Temporary matches 4 rotated ~45 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
+#     execute if score $Random Temporary matches 5 rotated ~135 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
+#     execute if score $Random Temporary matches 6 rotated ~225 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
+#     execute if score $Random Temporary matches 7 rotated ~315 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.2.particle_blue_1
 
-# TODO：与えるダメージの調整
-# ダメージ
-    # ダメージ量
-        data modify storage api: Argument.Damage set value 42f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "Thunder"
-# 補正functionを実行
-    function api:damage/modifier
-# 対象に
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
-# リセット
-    function api:damage/reset
+# # リセット
+#     scoreboard players reset $Random Temporary
+
+# # TODO：与えるダメージの調整
+# # ダメージ
+#     # ダメージ量
+#         data modify storage api: Argument.Damage set value 42f
+#     # 第一属性
+#         data modify storage api: Argument.AttackType set value "Magic"
+#     # 第二属性
+#         data modify storage api: Argument.ElementType set value "Thunder"
+# # 補正functionを実行
+#     function api:damage/modifier
+# # 対象に
+#     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
+# # リセット
+#     function api:damage/reset
