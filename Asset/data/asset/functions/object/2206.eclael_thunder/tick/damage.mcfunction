@@ -4,14 +4,33 @@
 #
 # @within asset:object/2206.eclael_thunder/tick/
 
+# ヒット判定
+    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run tag @s add 2206.Hit
+    execute if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..5] run tag @s add 2206.Hit
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
+    execute as @a[tag=2206.Hit] run function api:damage/
     function api:damage/reset
+
+# 難易度に応じたMP減少
+    # 難易度値を取得し1減らす
+        function api:global_vars/get_difficulty
+        execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
+        scoreboard players remove $Difficulty Temporary 1
+    # Effectを付与
+        data modify storage api: Argument.ID set value 605
+        execute store result storage api: Argument.Stack int 1 run scoreboard players get $Difficulty Temporary
+        data modify storage api: Argument.Duration set value 100
+        execute as @a[tag=2206.Hit] run function api:entity/mob/effect/give
+        function api:entity/mob/effect/reset
+    # リセット
+        scoreboard players reset $Difficulty Temporary
+        tag @a remove 2206.Hit
 
 # 演出
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0.7

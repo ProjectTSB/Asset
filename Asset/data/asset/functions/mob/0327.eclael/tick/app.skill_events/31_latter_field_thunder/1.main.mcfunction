@@ -15,6 +15,7 @@
     execute if score @s 93.AnimationTimer matches 57 run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.2
     execute if score @s 93.AnimationTimer matches 57 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1.2
     execute if score @s 93.AnimationTimer matches 59 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 0.7
+    execute if score @s 93.AnimationTimer matches 57 run particle firework ~ ~4 ~ 0 0 0 0.3 50
     execute if score @s 93.AnimationTimer matches 137 run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.2
 
 # 攻撃
