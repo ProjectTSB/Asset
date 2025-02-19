@@ -25,14 +25,14 @@
     execute if score $Range Temporary matches 25.. run function asset:object/1096.was_laser/tick/shoot/vfx/5
 
 # レーザー演出用Object召喚
-# Scale[1]を計測したレイから代入する
+# Scale[1]に$Rangeからそのまま代入する
     data modify storage api: Argument.ID set value 2168
     data modify storage api: Argument.FieldOverride set value {Scale:[7f,0f,7f],Color:9763071,DisappearInterpolation:3,LifeTime:15}
     execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get $Range Temporary
     function api:object/summon
 
 # 立方体範囲内のプレイヤーにtag付け
-# dzを計測したレイから代入
+# dzに$Rangeの半分を代入
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 2.5
     execute store result storage lib: args.dz int 0.5 run scoreboard players get $Range Temporary
