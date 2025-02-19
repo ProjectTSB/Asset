@@ -14,7 +14,4 @@
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get $WO.TargetID Temporary
     function api:object/summon
 
-# reset
-#    scoreboard players reset $WO.TargetID
-
     tellraw @p [{"score":{"name": "$WO.TargetID","objective": "Temporary"}}]

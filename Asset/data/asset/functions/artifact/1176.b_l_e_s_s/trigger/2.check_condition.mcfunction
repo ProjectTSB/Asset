@@ -14,3 +14,6 @@
     
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1176.b_l_e_s_s/trigger/3.main
+
+# reset
+    scoreboard players reset $WO.TargetID Temporary
