@@ -12,6 +12,6 @@
     execute if predicate lib:is_sneaking run data modify storage api: Argument.ID set value 1094
 #    execute unless predicate lib:is_sneaking run data modify storage api: Argument.ID set value 1095
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get $WO.TargetID Temporary
-    function api:object/summon
+    execute anchored eyes positioned ^-0.1 ^ ^ run function api:object/summon
 
     tellraw @p [{"score":{"name": "$WO.TargetID","objective": "Temporary"}}]
