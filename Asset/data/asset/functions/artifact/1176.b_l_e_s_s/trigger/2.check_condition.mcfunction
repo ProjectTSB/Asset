@@ -5,7 +5,7 @@
 # @within function asset:artifact/1176.b_l_e_s_s/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/auto
+    function asset:artifact/common/check_condition/mainhand
 
 # ターゲット選定
     scoreboard players set $WO.TargetID Temporary 0
