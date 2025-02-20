@@ -8,7 +8,7 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-        #tellraw @p [{"nbt":"this.TargetID","storage": "asset:context"}]
+        #tellraw @p [{"nbt":"this","storage": "asset:context"}]
 
 # 発射音
     execute if score @s General.Object.Tick matches 1 run playsound minecraft:entity.breeze.hurt player @a[distance=..16] ~ ~ ~ 2 1.5 1

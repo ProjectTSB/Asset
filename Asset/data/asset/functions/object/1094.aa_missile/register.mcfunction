@@ -19,3 +19,4 @@
     data modify storage asset:object ID set value 1094
 # フィールド(オプション)
     data modify storage asset:object Field.TargetID set value 0
+    data modify storage asset:object Field.UserID set value 0
