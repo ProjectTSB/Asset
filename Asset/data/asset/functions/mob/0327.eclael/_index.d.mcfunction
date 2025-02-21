@@ -13,6 +13,7 @@
             #declare function animated_java:eclael/animations/pause_all
             #declare function animated_java:eclael/animations/0_1_former_idle_akubi/tween
             #declare function animated_java:eclael/animations/0_2_former_idle_sleep/tween
+            #declare function animated_java:eclael/animations/0_2_former_idle_sleep_rare/tween
             #declare function animated_java:eclael/animations/30_0_phase_death/tween
             #declare function animated_java:eclael/animations/0_3_former_idle_bikkuri/tween
             #declare function animated_java:eclael/animations/0_0_former_idle_normal/tween
@@ -100,6 +101,7 @@
     #declare tag Attacker
     #
     ## 処理用
+    #declare tag 93.EntityRoot
     #declare tag 93.EndInit
     #declare tag 93.SkipDeathFunc
     #declare tag 93.ModelRoot animated_javaモデルにつける処理簡略化用のタグ
@@ -169,6 +171,7 @@
     #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発]
     ## スキル：追加分
     #declare tag 93.Skill.FieldThunder 全体落雷
+    #declare tag 93.Skill.Fall 天泣
     ## その他、オブジェクト
     #declare tag 93.Temp.Ground
     #declare tag 93.Temp.AttackPosition

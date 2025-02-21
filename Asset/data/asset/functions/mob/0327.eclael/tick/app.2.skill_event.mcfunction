@@ -125,3 +125,6 @@
 ## 追加技
 # 全体落雷
     execute if entity @s[tag=93.Skill.FieldThunder] run function asset:mob/0327.eclael/tick/app.skill_events/31_latter_field_thunder/1.main
+
+# 天泣
+    execute if entity @s[tag=93.Skill.Fall] run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/main
