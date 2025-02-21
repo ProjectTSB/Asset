@@ -31,8 +31,8 @@
     execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get $Range Temporary
     function api:object/summon
 
-# 立方体範囲内のプレイヤーにtag付け
-# dzに$Rangeの半分を代入
+# 立方体範囲内の敵にtag付け
+# dzに$Rangeの半分を代入する
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 2.5
     execute store result storage lib: args.dz int 0.5 run scoreboard players get $Range Temporary
