@@ -9,7 +9,8 @@
     playsound minecraft:entity.arrow.hit_player hostile @a ~ ~ ~ 1 1
 
 # 回復
-    data modify storage api: Argument.Heal set value 100f
+    function api:global_vars/get_difficulty
+    execute store result storage api: Argument.Heal int 50 run data get storage api: Return.Difficulty
     function api:heal/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=5] run function api:heal/
     function api:heal/reset
