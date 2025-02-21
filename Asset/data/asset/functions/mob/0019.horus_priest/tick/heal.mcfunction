@@ -1,16 +1,18 @@
 #> asset:mob/0019.horus_priest/tick/heal
 #
-# Mobのtick時の処理
+# 回復
 #
 # @within function asset:mob/0019.horus_priest/tick/
 
-# 効果を発動する
-    data modify storage api: Argument.Heal set value 100f
-    function api:heal/modifier
-    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..10] run function api:heal/
+# 演出
     execute as @e[tag=Enemy,tag=!Uninterferable,distance=..10] at @s run particle heart ~ ~1 ~ 0.3 0.3 0.3 0 10
     playsound minecraft:entity.arrow.hit_player hostile @a ~ ~ ~ 1 1
 
-# リセット
+# 回復
+    data modify storage api: Argument.Heal set value 100f
+    function api:heal/modifier
+    execute as @e[tag=Enemy,tag=!Uninterferable,distance=..10] run function api:heal/
     function api:heal/reset
-    scoreboard players set @s General.Mob.Tick 0
+
+# リセット
+    scoreboard players reset @s General.Mob.Tick
