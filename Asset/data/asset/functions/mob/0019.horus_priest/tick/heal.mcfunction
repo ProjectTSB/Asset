@@ -1,4 +1,4 @@
-#> asset:mob/0019.horus_priest/tick/2.1.heal
+#> asset:mob/0019.horus_priest/tick/heal
 #
 # Mobのtick時の処理
 #
