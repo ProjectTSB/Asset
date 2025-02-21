@@ -11,7 +11,7 @@
 # チェック方向とチェック結果初期化
     scoreboard players set $WO.BlockDetect Temporary 0
     scoreboard players set $WO.LoopEnd Temporary 0
-    tp 0-0-0-0-0 0.0 0.0 0.0 ~ ~
+    execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0 ~ ~
 
 # まだ対象が見つかってないならチェック
         # say start check
