@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 0.5f

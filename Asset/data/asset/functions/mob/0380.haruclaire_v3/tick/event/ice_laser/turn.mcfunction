@@ -8,12 +8,12 @@
     execute facing entity @p[tag=AK.MainTarget] feet rotated ~ 0 positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add AK.Temp.Right
 
 # 回転
-    execute unless entity @s[tag=AK.Temp.Right] run tp @s ~ ~ ~ ~-0.3 ~
-    execute if entity @s[tag=AK.Temp.Right] run tp @s ~ ~ ~ ~0.3 ~
+    execute if entity @s[tag=!AK.Temp.Right] run tp @s ~ ~ ~ ~-.3 ~
+    execute if entity @s[tag= AK.Temp.Right] run tp @s ~ ~ ~ ~0.3 ~
 
 # レーザーの角度と位置変更
-    execute unless entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object,sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~-0.3 ~
-    execute if entity @s[tag=AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,tag=2155.Object,sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~0.3 ~
+    execute if entity @s[tag=!AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,scores={ObjectID=2155},sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~-.3 ~
+    execute if entity @s[tag= AK.Temp.Right] positioned ^ ^0.8 ^1.6 as @e[type=item_display,scores={ObjectID=2155},sort=nearest,limit=1] rotated as @s run tp @s ~ ~ ~ ~0.3 ~
 
 # 終了
     tag @s remove AK.Temp.Right
