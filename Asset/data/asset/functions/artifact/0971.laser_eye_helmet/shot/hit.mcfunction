@@ -25,7 +25,7 @@
         execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
     # ダメージ
         function api:damage/modifier
-        execute as @e[tag=LandingTarget] run function api:damage/
+        execute as @e[type=#lib:living,tag=LandingTarget,distance=..35,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
 
