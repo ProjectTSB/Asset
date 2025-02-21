@@ -1,4 +1,4 @@
-#> asset:mob/0023.chainsaw_zombie/tick/moition
+#> asset:mob/0023.chainsaw_zombie/tick/motion
 #
 #
 #
