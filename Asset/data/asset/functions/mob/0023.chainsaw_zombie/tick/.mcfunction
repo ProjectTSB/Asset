@@ -8,7 +8,7 @@
     execute if entity @p[gamemode=!spectator,distance=..10] run scoreboard players add @s General.Mob.Tick 1
 
 # 突進時になんかケツアタックするのを防止する
-    execute if entity @s[scores={General.Mob.Tick=102}] run tp @s ~ ~ ~ facing entity @p
+    execute if entity @s[scores={General.Mob.Tick=102}] run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 
 # アタックする
     execute if entity @s[scores={General.Mob.Tick=100}] run function asset:mob/0023.chainsaw_zombie/tick/motion
