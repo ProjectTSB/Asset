@@ -13,4 +13,4 @@
 
 # リセット
     function api:heal/reset
-    scoreboard players set @s J.HealCool 0
+    scoreboard players set @s General.Mob.Tick 0
