@@ -16,4 +16,4 @@
     function api:heal/reset
 
 # リセット
-    scoreboard players reset @s General.Mob.Tick
+    scoreboard players set @s General.Mob.Tick -160
