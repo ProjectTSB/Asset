@@ -16,3 +16,5 @@
     execute anchored eyes positioned ^-0.1 ^ ^ run function api:object/summon
 
         #tellraw @p [{"score":{"name": "$WO.TargetID","objective": "Temporary"}}]
+# 発射音
+    playsound minecraft:entity.breeze.hurt neutral @a[distance=..16] ~ ~ ~ 2 1.5 1
