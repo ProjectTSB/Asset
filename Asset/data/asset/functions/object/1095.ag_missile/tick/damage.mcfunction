@@ -5,8 +5,8 @@
 # @within function asset:object/1095.ag_missile/tick/hit
 
 # ダメージ
-    execute if score @s General.Object.Tick matches ..6 run data modify storage api: Argument.Damage set value 1100.0f
-    execute if score @s General.Object.Tick matches 7.. run data modify storage api: Argument.Damage set value 5500.0f
+    execute if score @s General.Object.Tick matches ..6 run data modify storage api: Argument.Damage set from storage asset:context this.InitMotionDamage
+    execute if score @s General.Object.Tick matches 7.. run data modify storage api: Argument.Damage set from storage asset:context this.MaxDamage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     $execute as @p[scores={UserID=$(UserID)}] run function api:damage/modifier

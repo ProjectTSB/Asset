@@ -19,3 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.TargetID set value 0
     data modify storage asset:object Field.UserID set value 0
+    data modify storage asset:object Field.MaxDamage set value 5500f
+    data modify storage asset:object Field.InitMotionDamage set value 1100f
