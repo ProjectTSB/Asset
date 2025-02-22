@@ -12,7 +12,7 @@
         #execute unless entity @e[type=#lib:living,tag=Enemy,tag=WO.Candidate,tag=!Uninterferable] run say nodetect
 
 # 候補と発動者の間に遮蔽ブロックがあるか確認、近くにいる候補を優先して対象にしたいので近くからやる
-    execute anchored eyes as @e[type=#lib:living,tag=Enemy,tag=WO.Candidate,tag=!Uninterferable,sort=nearest] at @s anchored eyes facing entity @p[tag=this] eyes run function asset:artifact/1176.b_l_e_s_s/trigger/block_check
+    execute as @e[type=#lib:living,tag=Enemy,tag=WO.Candidate,tag=!Uninterferable,sort=nearest] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes run function asset:artifact/1176.b_l_e_s_s/trigger/block_check
 
 # 選択した対象のID取得
     scoreboard players operation $WO.TargetID Temporary = @e[tag=WO.Target] MobUUID
