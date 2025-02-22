@@ -30,3 +30,4 @@
 
 # リセット
     scoreboard players reset $WM.Temp Temporary
+    scoreboard players reset $WM.LatestUseTick Temporary
