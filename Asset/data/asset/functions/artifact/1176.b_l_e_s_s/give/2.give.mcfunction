@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"B.L.E.S.S","color":"aqua"}'
+    data modify storage asset:artifact Name set value '{"text":"B.L.E.S.S.","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"クロスヘアに捉えた敵に向かってミサイルを発射する。","color":"white"}','{"text":"発射時の姿勢によってミサイルの性質が変化する。","color":"white"}','{"text":" スニーク：火属性の範囲ダメージ","color":"white"}','{"text":" 直立：耐性貫通の無属性単体ダメージ","color":"white"}','{"text":"ミサイルが一定距離飛翔すると最大火力となる。","color":"white"}','{"text":"?「正式名称は両用支援打撃弾","color":"dark_aqua","italic":true}','{"text":"(Bipurpose Launching Equipment for Support Strike)","color":"dark_aqua","italic":true}','{"text":"撃つも殴るもよし、対地対空両用の万能な兵器。","color":"dark_aqua","italic":true}','{"text":"魔力と適正さえあれば人でも天使でも、誰でも簡単に扱える。」","color":"dark_aqua","italic":true}']
 
