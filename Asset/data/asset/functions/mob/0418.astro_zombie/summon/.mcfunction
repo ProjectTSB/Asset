@@ -5,4 +5,4 @@
 # @within asset:mob/alias/418/summon
 
 # 元となるEntityを召喚する
-    summon zombie ~ ~ ~ {Tags:["MobInit","AntiBurn","AlwaysSlowFall"]}
+    summon zombie ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiBurn","AlwaysSlowFall"]}

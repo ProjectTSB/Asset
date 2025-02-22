@@ -65,4 +65,4 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
-    # data modify storage asset:mob Field set value {}
+    data modify storage asset:mob Field.FaceList set value [20201,20202,20203,20204,20205,20206,20282,20283,20284]

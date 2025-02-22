@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.5.particle_chargeelectric_spark
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_4_kt_vacuslash/6.5.particle_charge
 #
 # アニメーションのイベントハンドラ Kt斬り下がり 演出
 #
