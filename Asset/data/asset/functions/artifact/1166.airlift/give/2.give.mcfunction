@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ルフトブリュッケ","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"輸送機が飛来し敵と対峙したプレイヤーに支援を与える。"}','{"text":"着陸地点周囲のプレイヤーのHPを回復し、"}','{"text":"さらに支援物資をドロップする。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"輸送機が敵と対峙したプレイヤーに支援を与える。"}','{"text":"着陸地点周囲のプレイヤーのHPを回復し、"}','{"text":"さらに支援物資をドロップする。"}','{"text":"時が立ち、その翼は死の代わりに生を運んだ。","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"半径30ブロック以内にスポナーから召喚された敵か天使がいる場合"}'
+    data modify storage asset:artifact Condition set value '{"text":"半径30ブロック以内に敵がいる場合"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -47,10 +47,10 @@
 # MP回復量 (int) 
     # data modify storage asset:artifact MPHealWhenHit set value 
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 
+    data modify storage asset:artifact LocalCooldown set value 600
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "heal"
-    data modify storage asset:artifact TypeCooldown.Duration set value 600
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value 
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
