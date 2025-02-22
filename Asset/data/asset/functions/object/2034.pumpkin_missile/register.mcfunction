@@ -16,6 +16,5 @@
     data modify storage asset:object ID set value 2034
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1
-    data modify storage asset:object Field.Rotation set value [0.0f,0.0f]
     data modify storage asset:object Field.TargetID set value -1
     data modify storage asset:object Field.MobUUID set value -1

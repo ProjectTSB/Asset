@@ -22,10 +22,10 @@
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/receive_heal/add
 
-# TODO：1.20.5以降になったらattributeにする
 # 移動速度+20%
     attribute @s generic.movement_speed modifier add 00000001-0000-0003-0000-00cb00000000 "203.Speed" 0.2 multiply
 
+# TODO：1.20.5以降になったらattributeにする
 # ジャンプ力
     effect give @s jump_boost 30 0 true
 

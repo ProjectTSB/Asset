@@ -1,5 +1,7 @@
 #> asset:mob/0106.mini_shulker/tick/select/
-# @within function asset:mob/0106.mini_shulker/tick/
+# @within function
+#   asset:mob/0106.mini_shulker/tick/
+#   asset:mob/0106.mini_shulker/tick/attack/reset
 
 # プレイヤーを1名ターゲットする
 # ただし間に壁がないプレイヤーに限定する

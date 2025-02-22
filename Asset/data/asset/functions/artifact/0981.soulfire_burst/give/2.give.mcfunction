@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ソウルファイアバースト","color":"red"}'
+    data modify storage asset:artifact Name set value '{"text":"ソウルファイアバースト","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方に爆発する火の玉を放つ。","color":"white"}]','[{"text":"火の玉はしばらくすると、5つの小さな火球に分裂する。","color":"white"}]','{"text":"\\"行けぇッ！\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"大きな爆発を起こす火球を放つ。","color":"white"}]','[{"text":"火球はしばらくすると、5つの小さな火球に分裂する。","color":"white"}]','{"text":"\\"青いけど全然冷たくない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,12 +45,12 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 12
+    data modify storage asset:artifact MPHealWhenHit set value 13
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 120
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "longRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 40
+    data modify storage asset:artifact TypeCooldown.Duration set value 50
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

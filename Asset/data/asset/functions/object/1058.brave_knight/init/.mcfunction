@@ -38,7 +38,7 @@
     scoreboard players set @s General.Object.Tick -20
 
 # ライフタイム設定
-    scoreboard players set @s 1058.LifeTime 400
+    scoreboard players set @s 1058.LifeTime 300
 
 # リセット
     scoreboard players reset $Random Temporary

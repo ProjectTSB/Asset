@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"精霊の奏笛","color":"#B0FFD7"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"癒しの調べを奏で","color":"white"}','{"text":"自身と周囲のプレイヤーの体力を","color":"white"}','{"text":"継続的に自身の最大体力の1.25%ずつ回復する","color":"white"}','{"text":"安らぎの音色を奏でる精霊の笛","color":"gray"}','{"text":"精霊の旋律が傷を癒やし、命を紡ぐ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"癒しの調べを奏で","color":"white"}','{"text":"自身と周囲8mのプレイヤーの体力を","color":"white"}','{"text":"20秒間かけて自身の最大体力の25%分回復する","color":"white"}','{"text":"安らぎの音色を奏でる精霊の笛","color":"gray"}','{"text":"精霊の旋律が傷を癒やし、命を紡ぐ","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

@@ -24,20 +24,3 @@
 # 発砲
     function asset:artifact/1089.antimatter_gatling_rifle/trigger/shot
     function asset:artifact/1089.antimatter_gatling_rifle/trigger/shot
-
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
-# 向きを適当に変える
-    execute if score $Random Temporary matches 0 unless predicate lib:is_sneaking run tp @s ~ ~ ~ ~ ~-1
-    execute if score $Random Temporary matches 1 unless predicate lib:is_sneaking run tp @s ~ ~ ~ ~-2 ~-1
-    execute if score $Random Temporary matches 2 unless predicate lib:is_sneaking run tp @s ~ ~ ~ ~2 ~-1
-# スニークしてる場合
-    execute if score $Random Temporary matches 0 if predicate lib:is_sneaking run tp @s ~ ~ ~ ~ ~-0.4
-    execute if score $Random Temporary matches 1 if predicate lib:is_sneaking run tp @s ~ ~ ~ ~-0.4 ~-0.4
-    execute if score $Random Temporary matches 2 if predicate lib:is_sneaking run tp @s ~ ~ ~ ~0.4 ~-0.4
-    scoreboard players reset $Random Temporary
-
-# リセット
-    scoreboard players reset $Random Temporary

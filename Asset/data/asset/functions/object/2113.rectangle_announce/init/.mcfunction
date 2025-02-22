@@ -7,5 +7,5 @@
 # KillするTickを指定
     execute store result score @s 2113.Tick run data get storage asset:context this.Tick
 
-# this.Scale[1]の半分をthis.translationZへ
-    execute store result storage asset:context this.TranslationZ float 0.05 run data get storage asset:context this.Scale[1] 10
+# ToForward:trueなら、this.Scale[1]の半分をthis.translationZへ
+    execute if data storage asset:context this{ToForward:true} store result storage asset:context this.TranslationZ float 0.05 run data get storage asset:context this.Scale[1] 10
