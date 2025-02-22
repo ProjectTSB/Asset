@@ -6,7 +6,7 @@
 
 # 対象がもういるなら終了
     # execute if entity @e[tag=WO.Target] run say skip check
-    execute if entity @e[tag=WO.Target] run return 0
+    execute if entity @e[type=#lib:living,tag=WO.Target,distance=..50] run return 0
 
 # チェック方向とチェック結果初期化
     scoreboard players set $WO.BlockDetect Temporary 0

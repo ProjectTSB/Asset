@@ -10,7 +10,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     $execute as @p[scores={UserID=$(UserID)}] run function api:damage/modifier
-    $execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[scores={MobUUID=$(TargetID)},dx=0] run function api:damage/
+    $execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,scores={MobUUID=$(TargetID)},dx=0] run function api:damage/
     function api:damage/reset
 
 # particle
