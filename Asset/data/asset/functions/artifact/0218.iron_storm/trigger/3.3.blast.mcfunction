@@ -31,7 +31,7 @@
 # 味方へのダメージ(最大100)
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $DamageCoefficient Temporary
     data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは鉄の雨に巻き込まれた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは鉄の雨に巻き込まれた","with":[{"selector":"@s"}]}]']
     execute as @p[tag=DA.Owner] run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Friend,distance=..5] run function api:damage/
     function api:damage/reset
