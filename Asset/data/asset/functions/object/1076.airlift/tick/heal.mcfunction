@@ -10,3 +10,4 @@
     execute store result storage api: Argument.Heal double 0.0050 run data get storage api: Return.MaxHealth 100
     $execute as @p[scores={UserID=$(OwnerID)}] run function api:heal/modifier
     function api:heal/
+    function api:heal/reset
