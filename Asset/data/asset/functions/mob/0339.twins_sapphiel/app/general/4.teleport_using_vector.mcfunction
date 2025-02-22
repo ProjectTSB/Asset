@@ -13,4 +13,4 @@
     function asset:mob/0339.twins_sapphiel/app/general/5.teleport_using_vector_macro.m with storage asset:temp 9F.Pos
 
 # 終了
-    data remove storage asset:temp 9F.Pos
+    data remove storage asset:temp 9F

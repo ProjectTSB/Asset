@@ -11,9 +11,11 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
-    # ゲームモード確認
-        execute if entity @s[gamemode=!survival,gamemode=!creative] run tag @s remove CanUsed
-        execute if entity @s[gamemode=!survival,gamemode=!creative] run function lib:message/artifact/can_not_use_here
+
+# 破壊可能エリアでのみ使用可能
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
+
     # アイテム確認
         execute store result score $BoneMeal Temporary run clear @s bone_meal 0
         execute if score $BoneMeal Temporary matches ..7 run tag @s remove CanUsed

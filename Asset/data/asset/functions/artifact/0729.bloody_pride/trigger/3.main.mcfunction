@@ -35,12 +35,12 @@
     execute store result score $HealValue Temporary run scoreboard players operation $MaxHP1.5Per Temporary *= $Count Temporary
 
 # 最低値の1のために$HealValueに100を足して、Argument.Healに代入する
-    execute store result storage lib: Argument.Heal float 0.01 run scoreboard players operation $HealValue Temporary += $100 Const
+    execute store result storage api: Argument.Heal float 0.01 run scoreboard players operation $HealValue Temporary += $100 Const
 
 # 回復の処理
-    function lib:heal/modifier
-    function lib:heal/
-    function lib:heal/reset
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
 
 # リセット
     scoreboard players reset $Count Temporary

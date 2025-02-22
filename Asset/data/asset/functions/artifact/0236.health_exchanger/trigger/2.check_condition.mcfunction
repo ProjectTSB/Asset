@@ -9,6 +9,7 @@
     #declare score_holder $SCUserHealth
     #declare score_holder $MaxHealth
     #declare tag HasMaxHealth
+    #declare tag HasMaxHealthTarget
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/check_condition/auto
@@ -37,3 +38,4 @@
     scoreboard players reset $SCUserHealth Temporary
     scoreboard players reset $MaxHealth Temporary
     tag @a[tag=HasMaxHealth] remove HasMaxHealth
+    tag @a[tag=HasMaxHealthTarget] remove HasMaxHealthTarget

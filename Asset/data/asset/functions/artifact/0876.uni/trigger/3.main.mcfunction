@@ -20,7 +20,7 @@
 
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 877
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
 
 # 前方拡散設定
     execute anchored eyes positioned ^-0.35 ^-0.15 ^ run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -51,5 +51,3 @@
     scoreboard players reset $Distance_Damping Temporary
     scoreboard players reset $MinDamage Temporary
     scoreboard players reset $Damage Temporary
-
-
