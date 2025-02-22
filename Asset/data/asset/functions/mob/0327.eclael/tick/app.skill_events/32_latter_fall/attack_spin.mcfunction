@@ -6,7 +6,7 @@
 
 # TODO：演出を練る
 # 演出
-    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.8
+    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.2
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
     execute positioned ~ ~1 ~ rotated ~60 ~5 run function asset:mob/0327.eclael/tick/app.skill_events/17_latter_spinslash/5.2.particle_slash_0

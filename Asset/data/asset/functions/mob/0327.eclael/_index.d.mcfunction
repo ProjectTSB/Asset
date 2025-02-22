@@ -96,6 +96,9 @@
             #declare function animated_java:eclael/variants/wink/apply
             #declare function animated_java:eclael/animations/12_2_latter_warp_slash_0/resume
             #declare function animated_java:eclael/animations/12_3_latter_warp_slash_1/resume
+            #declare function animated_java:eclael/animations/32_0_jump_start/tween
+            #declare function animated_java:eclael/animations/32_1_jump_fall/tween
+            #declare function animated_java:eclael/animations/32_1_jump_spin/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker

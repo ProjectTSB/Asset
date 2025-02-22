@@ -9,7 +9,7 @@
     execute as @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,sort=nearest,limit=1] at @s run function asset:mob/0327.eclael/tick/app.general/move_to_ground
 
 # 移動
-    execute at @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,sort=nearest,limit=1] run tp @s ~ ~0.5 ~ ~ 0
+    execute at @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,sort=nearest,limit=1] run tp @s ~ ~3.5 ~ ~ 0
 
 # 終了
     kill @e[type=area_effect_cloud,tag=93.Temp.AttackPosition]
