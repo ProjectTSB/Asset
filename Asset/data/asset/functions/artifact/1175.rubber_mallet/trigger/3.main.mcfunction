@@ -17,7 +17,7 @@
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 1.56
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 900f
+    data modify storage api: Argument.Damage set value 1310f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
