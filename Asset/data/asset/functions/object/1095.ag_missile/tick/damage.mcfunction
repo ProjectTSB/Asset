@@ -8,8 +8,10 @@
     execute if score @s General.Object.Tick matches ..6 run data modify storage api: Argument.Damage set from storage asset:context this.InitMotionDamage
     execute if score @s General.Object.Tick matches 7.. run data modify storage api: Argument.Damage set from storage asset:context this.MaxDamage
     data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.FixedDamage set value true
     $execute as @p[scores={UserID=$(UserID)}] run function api:damage/modifier
+
+    #敵の耐性だけ貫通するためだけにここでBypassModifierをONにする
+    data modify storage api: Argument.BypassModifier set value true
     $execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,scores={MobUUID=$(TargetID)},dx=0] run function api:damage/
     function api:damage/reset
 
