@@ -6,7 +6,7 @@
 
 # 移動
     tp @s ~ ~ ~ ~ ~0.25
-    execute rotated ~ 0 run tp @s ^ ^ ^0.1
+    execute at @s rotated ~ 0 run tp @s ^ ^ ^0.1
 
 # vfx
 # particle
