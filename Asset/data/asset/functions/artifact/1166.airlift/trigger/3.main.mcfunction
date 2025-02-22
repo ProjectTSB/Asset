@@ -17,4 +17,4 @@
     execute positioned as 0-0-0-0-0 run function api:object/summon
 
 # reset
-    tp 0-0-0-0-0 0.0 0.0 0.0
+    execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
