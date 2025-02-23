@@ -18,4 +18,4 @@
     effect give @s speed 2 0 true
 
 # CTをセット
-    scoreboard players set @s 96.MotionCT 20
+    data modify storage asset:context this.MotionCT set value 20

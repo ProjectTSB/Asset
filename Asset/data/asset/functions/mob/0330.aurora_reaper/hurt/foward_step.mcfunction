@@ -18,4 +18,4 @@
     scoreboard players reset $Random Temporary
 
 # CTをセット
-    scoreboard players set @s 96.MotionCT 20
+    data modify storage asset:context this.MotionCT set value 20
