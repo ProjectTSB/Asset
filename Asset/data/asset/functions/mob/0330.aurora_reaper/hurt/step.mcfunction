@@ -1,4 +1,4 @@
-#> asset:mob/0330.aurora_reaper/hurt/3.step
+#> asset:mob/0330.aurora_reaper/hurt/step
 #
 # ステップ&移動速度バフ
 #

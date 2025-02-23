@@ -9,7 +9,7 @@
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.3 1.4 0
 
 # プレイヤーが近くにいるとき、確率でバックステップする
-    execute unless entity @s[scores={96.MotionCT=1..}] if entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/40 run function asset:mob/0330.aurora_reaper/hurt/3.step
+    execute unless entity @s[scores={96.MotionCT=1..}] if entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/40 run function asset:mob/0330.aurora_reaper/hurt/step
 
 # プレイヤーが離れている時、確率で前進する
-    execute unless entity @s[scores={96.MotionCT=1..}] unless entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/70 run function asset:mob/0330.aurora_reaper/hurt/4.foward_step
+    execute unless entity @s[scores={96.MotionCT=1..}] unless entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/70 run function asset:mob/0330.aurora_reaper/hurt/foward_step
