@@ -181,4 +181,5 @@
     ## その他、オブジェクト
     #declare tag 93.Temp.Ground
     #declare tag 93.Temp.AttackPosition
+    #declare tag 93.Temp.AttackRotation
     #declare tag 93.Object
