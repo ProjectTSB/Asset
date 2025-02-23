@@ -128,3 +128,6 @@
 
 # 天泣
     execute if entity @s[tag=93.Skill.Fall] run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/main
+
+# 移動斬り
+    execute if entity @s[tag=93.Skill.MoveSlash] run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/main

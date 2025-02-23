@@ -34,6 +34,8 @@
         execute if score @s 93.AnimationTimer matches 69 positioned ~ ~6 ~ run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/particle_jump
         # 演出
             execute if score @s 93.AnimationTimer matches 67 run particle flash ~ ~6 ~ 0.3 10 0.3 0.1 50
+            execute if score @s 93.AnimationTimer matches 67 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
+            execute if score @s 93.AnimationTimer matches 67 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
             execute if score @s 93.AnimationTimer matches 75 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
 
 # 回転斬り
@@ -44,8 +46,8 @@
     # 攻撃
         execute if score @s 93.AnimationTimer matches 129 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/prediction
         execute if score @s 93.AnimationTimer matches 174 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_spin
-        execute if score @s 93.AnimationTimer matches 176 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
-        execute if score @s 93.AnimationTimer matches 177 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 0.7
+        execute if score @s 93.AnimationTimer matches 176 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
+        execute if score @s 93.AnimationTimer matches 177 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 0.7
     # 落雷
         execute if score @s 93.AnimationTimer matches 170 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/summon_attack_pos
         execute if score @s 93.AnimationTimer matches 172 as @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,distance=..11] at @s run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_check

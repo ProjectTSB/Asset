@@ -99,6 +99,8 @@
             #declare function animated_java:eclael/animations/32_0_jump_start/tween
             #declare function animated_java:eclael/animations/32_1_jump_fall/tween
             #declare function animated_java:eclael/animations/32_1_jump_spin/tween
+            #declare function animated_java:eclael/animations/33_0_moveslash_start/tween
+            #declare function animated_java:eclael/animations/33_1_moveslash_1/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
@@ -171,7 +173,8 @@
     #declare tag 93.Skill.Latter.Momiji 紅葉舞
     #declare tag 93.Skill.Latter.SpinSlash 回転斬り
     #declare tag 93.Skill.Latter.Thunderstorm 雷雨
-    #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発]
+    #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発
+    #declare tag 93.Skill.MoveSlash 移動斬り
     ## スキル：追加分
     #declare tag 93.Skill.FieldThunder 全体落雷
     #declare tag 93.Skill.Fall 天泣
