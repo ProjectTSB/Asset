@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2207.eclael_slash_line/**
-    scoreboard objectives add 
+    # scoreboard objectives add

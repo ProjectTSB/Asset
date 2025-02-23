@@ -61,9 +61,9 @@
         execute if score @s 93.AnimationTimer matches 110 at @s positioned ^-2 ^2 ^6 rotated ~30 ~20 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/particle_jump
         execute if score @s 93.AnimationTimer matches 111 at @s positioned ^0 ^2 ^3 rotated ~30 ~-24 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/particle_jump
     # 攻撃
-        # execute if score @s 93.AnimationTimer matches 102 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_1
-        # execute if score @s 93.AnimationTimer matches 107 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_1
-        # execute if score @s 93.AnimationTimer matches 111 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_1
+        execute if score @s 93.AnimationTimer matches 102 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_1
+        execute if score @s 93.AnimationTimer matches 107 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_2
+        execute if score @s 93.AnimationTimer matches 111 at @s positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/attack_3
         execute if score @s 93.AnimationTimer matches 103 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
         execute if score @s 93.AnimationTimer matches 108 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
         execute if score @s 93.AnimationTimer matches 112 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2

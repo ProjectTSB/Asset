@@ -31,5 +31,18 @@
     execute if entity @s[scores={General.Object.Tick=27}] positioned ^ ^ ^20 run function asset:object/2207.eclael_slash_line/tick/effect_check
     execute if entity @s[scores={General.Object.Tick=28}] positioned ^ ^ ^23 run function asset:object/2207.eclael_slash_line/tick/effect_check
 
+
+# モデル変更
+    execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0.1f,0f],scale:[3f,40f,3f]}}
+    execute if entity @s[scores={General.Object.Tick=24}] run data modify entity @s text set value '{"text":"1","font":"object/2208/0"}'
+    execute if entity @s[scores={General.Object.Tick=25}] run data modify entity @s text set value '{"text":"2","font":"object/2208/0"}'
+    execute if entity @s[scores={General.Object.Tick=26}] run data modify entity @s text set value '{"text":"3","font":"object/2208/0"}'
+    execute if entity @s[scores={General.Object.Tick=29}] run data modify entity @s text set value '{"text":"4","font":"object/2208/0"}'
+    execute if entity @s[scores={General.Object.Tick=31}] run data modify entity @s text set value '{"text":"5","font":"object/2208/0"}'
+    execute if entity @s[scores={General.Object.Tick=33}] run data merge entity @s {interpolation_duration:8,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0.1f,20f],scale:[0f,40f,0f]}}
+    execute if entity @s[scores={General.Object.Tick=23}] on passengers run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[15f,300f,15f]}}
+    execute if entity @s[scores={General.Object.Tick=26}] on passengers run data merge entity @s {interpolation_duration:12,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,30f],scale:[0f,100f,0f]}}
+
 # 消滅処理
-    kill @s[scores={General.Object.Tick=29..}]
+    execute if entity @s[scores={General.Object.Tick=40..}] on passengers run kill @s
+    kill @s[scores={General.Object.Tick=41..}]
