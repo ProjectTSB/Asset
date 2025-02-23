@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-   function asset:object/2001.custom_effect/tick/
+    function asset:object/2001.custom_effect/tick/

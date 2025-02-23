@@ -38,7 +38,7 @@
 # 移動速度 (double) (オプション)
     data modify storage asset:mob Speed set value 0.25
 # 索敵範囲 (double) (オプション)
-    data modify storage asset:mob FollowRange set value 100
+    data modify storage asset:mob FollowRange set value 32
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 0.875
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

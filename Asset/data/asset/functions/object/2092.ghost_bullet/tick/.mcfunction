@@ -13,7 +13,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-   #
+    #
 
 # 最初は少し上昇する
 # 上向き移動の際はobjectを上に向かせる必要があり、プレイヤーの方を見ていてほしく

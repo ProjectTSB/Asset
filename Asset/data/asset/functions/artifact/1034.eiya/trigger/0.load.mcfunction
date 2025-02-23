@@ -7,4 +7,3 @@
 #> 定義類はここに
 # @within function asset:artifact/1034.eiya/trigger/**
     scoreboard objectives add SQ.Count dummy
-    scoreboard objectives add SQ.WaitingTime dummy

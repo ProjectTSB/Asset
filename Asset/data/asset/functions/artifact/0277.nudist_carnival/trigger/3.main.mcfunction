@@ -11,10 +11,10 @@
 
 # 回復処理
     # 全回復
-        data modify storage lib: Argument.Heal set value 10000f
+        data modify storage api: Argument.Heal set value 10000f
     # 補正function
-        function lib:heal/modifier
+        function api:heal/modifier
     # プレイヤーを回復
-        function lib:heal/
+        function api:heal/
     # リセット
-        function lib:heal/reset
+        function api:heal/reset

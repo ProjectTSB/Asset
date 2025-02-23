@@ -1,3 +1,7 @@
+#> asset:object/2139.louvert_fire_magic/vfx/fc_22
+#
+# @within function asset:object/2139.louvert_fire_magic/vfx/m
+
 # frame 22 / 40
 # コレクション 1--円.008
 particle dust 100000000 1 0 0.5 ^-1.718 ^0.25 ^-0.209 0.0 0.0 0.0 0.0 1 normal

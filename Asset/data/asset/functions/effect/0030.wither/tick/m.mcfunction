@@ -6,4 +6,4 @@
 #   Stack : int
 # @within function asset:effect/0030.wither/tick/
 
-$effect give @s wither 1 $(Stack) true
+$effect give @s wither 6 $(Stack) true

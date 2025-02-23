@@ -26,4 +26,5 @@
     execute if score $PU.ItemNumber Temporary matches 2.. run data remove storage api: Argument.Amount
     execute if score $PU.ItemNumber Temporary matches 2.. run data remove storage api: Argument.Operation
 
-
+# リセット
+    scoreboard players reset $PU.ItemNumber Temporary

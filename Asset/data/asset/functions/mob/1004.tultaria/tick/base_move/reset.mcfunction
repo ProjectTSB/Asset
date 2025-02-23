@@ -53,4 +53,4 @@
     scoreboard players set @s RW.Speed 5
 
 # ランダム移動
-    execute at @r[distance=..64] run function asset:mob/1004.tultaria/tick/move/teleport/place_marker.m with storage asset:context this.Pos
+    execute at @r[gamemode=!spectator,distance=..64] run function asset:mob/1004.tultaria/tick/move/teleport/place_marker.m with storage asset:context this.Pos

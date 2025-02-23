@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:artifact/1176.b_l_e_s_s/give/1.trigger",
+        "asset:artifact/1175.rubber_mallet/give/1.trigger",
+        "asset:artifact/1192.celestial_harmony/give/1.trigger",
         "asset:artifact/0991.soul_mate/give/1.trigger",
         "asset:artifact/0565.heartland/give/1.trigger",
         "asset:artifact/0564.heartland/give/1.trigger",
@@ -12,7 +15,7 @@
         "asset:artifact/0819.swallows_cowry/give/1.trigger",
         "asset:artifact/0818.bhuddas_bowl/give/1.trigger",
         "asset:artifact/0817.dragons_neck_ball/give/1.trigger",
-        "asset:artifact/0816.fur_coad_of_firerat/give/1.trigger",
+        "asset:artifact/0816.fur_coat_of_firerat/give/1.trigger",
         "asset:artifact/1122.guardian_ironlump/give/1.trigger",
         "asset:artifact/0569.great_sage_boots/give/1.trigger",
         "asset:artifact/0568.great_sage_leggings/give/1.trigger",

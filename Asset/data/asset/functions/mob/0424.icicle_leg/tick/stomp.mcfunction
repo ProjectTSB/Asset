@@ -18,10 +18,6 @@
 # モデル変更
     item replace entity @s armor.head with stick{CustomModelData:20470}
 
-# Motionを固定
-    data modify entity @s Motion[0] set value 0f
-    data modify entity @s Motion[2] set value 0f
-
 # ダメージ設定
     data modify storage api: Argument.Damage set value 40f
     data modify storage api: Argument.AttackType set value "Physical"
