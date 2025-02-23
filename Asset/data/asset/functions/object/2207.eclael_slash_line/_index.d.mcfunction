@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2207.eclael_slash_line/**
-    #declare
+    #declare tag 2207.IsGreen

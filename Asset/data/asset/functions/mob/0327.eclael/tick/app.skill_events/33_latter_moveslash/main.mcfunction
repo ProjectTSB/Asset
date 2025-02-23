@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
-
 # 開始
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/animation_0
     # プレイヤーの方を向く
@@ -72,4 +71,4 @@
         execute if score @s 93.AnimationTimer matches 113 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 0.7
 
 # 終了
-    execute if score @s 93.AnimationTimer matches 254.. run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/end
+    execute if score @s 93.AnimationTimer matches 155.. run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/end

@@ -8,7 +8,10 @@
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 0.4 0.8
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 0.4 0.7
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 0.4 0.9
-    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 0.7 1.2
+    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
+    playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
+    playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.1 0.7 0.1
+    playsound entity.guardian.attack hostile @a ~ ~ ~ 1 1.8
 
 # ヒット判定
     tag @a[tag=DXYZ] remove DXYZ
