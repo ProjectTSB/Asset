@@ -1,4 +1,4 @@
-#> asset:mob/0330.aurora_reaper/0.load
+#> asset:mob/0330.aurora_reaper/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
