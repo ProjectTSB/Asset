@@ -18,4 +18,8 @@
     scoreboard players reset $Random Temporary
 
 # CTをセット
-    data modify storage asset:context this.MotionCT set value 20
+    data modify storage asset:context this.MotionCT set value 10
+
+# 空中ジャンプ可能な回数をセット
+    function api:global_vars/get_difficulty
+    execute store result storage asset:context this.AirJumpCount int 2 run data get storage api: Return.Difficulty
