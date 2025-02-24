@@ -28,7 +28,7 @@
     execute store result score $Count Temporary positioned ~-8 ~-105 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=16,dy=200,dz=16]
     execute store result score $Damage Temporary run data get storage asset:context this.Damage
     scoreboard players operation $Damage Temporary /= $Count Temporary
-    tellraw @a {"score":{"name":"$Damage","objective":"Temporary"}}
+    # debug tellraw @a {"score":{"name":"$Damage","objective":"Temporary"}}
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
 # 属性とか
     data modify storage api: Argument.AttackType set value "Physical"
