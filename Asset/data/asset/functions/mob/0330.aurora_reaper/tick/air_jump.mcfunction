@@ -19,4 +19,4 @@
     data modify storage asset:context this.MotionCT set value 15
 
 # カウントを減らす
-    execute store result storage asset:context this.AirJumpCount int 0.9999999999 run data get storage asset:context this.AirJumpCount
+    # execute store result storage asset:context this.AirJumpCount int 0.9999999999 run data get storage asset:context this.AirJumpCount
