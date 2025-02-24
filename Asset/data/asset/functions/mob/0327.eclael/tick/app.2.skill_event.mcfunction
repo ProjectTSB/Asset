@@ -134,3 +134,6 @@
 
 # 桜花剣乱
     execute if entity @s[tag=93.Skill.FieldSlash] run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/main
+
+# 残心
+    execute if entity @s[tag=93.Skill.Beam] run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/main

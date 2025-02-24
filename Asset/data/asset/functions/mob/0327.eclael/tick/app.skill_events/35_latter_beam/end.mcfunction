@@ -1,0 +1,11 @@
+#> asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/end
+#
+# アニメーションのイベントハンドラ 桜花剣乱
+#
+# @within function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/main
+
+# スキル判別用タグ消去
+    tag @s remove 93.Skill.Beam
+
+# タイマーリセット
+    scoreboard players set @s 93.AnimationTimer -1

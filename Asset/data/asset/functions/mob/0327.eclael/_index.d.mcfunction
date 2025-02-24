@@ -104,6 +104,8 @@
             #declare function animated_java:eclael/animations/34_field_slash/tween
             #declare function animated_java:eclael/animations/34_field_slash_end/tween
             #declare function animated_java:eclael/animations/35_move/tween
+            #declare function animated_java:eclael/animations/35_0_slash_beam_start/tween
+            #declare function animated_java:eclael/animations/35_1_slash_beam/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
@@ -177,12 +179,13 @@
     #declare tag 93.Skill.Latter.SpinSlash 回転斬り
     #declare tag 93.Skill.Latter.Thunderstorm 雷雨
     #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発
-    #declare tag 93.Skill.MoveSlash 移動斬り
-    #declare tag 93.Skill.FieldSlash 全体斬り
-    #declare tag 93.Skill.FieldSlash.A 全体斬りパターンA
     ## スキル：追加分
     #declare tag 93.Skill.FieldThunder 全体落雷
     #declare tag 93.Skill.Fall 天泣
+    #declare tag 93.Skill.MoveSlash 移動斬り
+    #declare tag 93.Skill.FieldSlash 全体斬り
+    #declare tag 93.Skill.FieldSlash.A 全体斬りパターンA
+    #declare tag 93.Skill.Beam 残心
     ## その他、オブジェクト
     #declare tag 93.Temp.Ground
     #declare tag 93.Temp.AttackPosition

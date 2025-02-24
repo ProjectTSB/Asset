@@ -13,7 +13,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"エクレール"}'
+    data modify storage asset:mob Name set value '{"text":"エクレール","color":"#91f9ab"}'
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 175000
 # ノックバック耐性 (double) (オプション)
