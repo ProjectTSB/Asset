@@ -11,13 +11,11 @@
     playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 2 1.7
 
-# 防御ダウン
-#    data modify storage api: Argument.ID set value 125
-#    data modify storage api: Argument.Stack set value 20
-#    data modify storage api: Argument.Duration set value
-#    function api:entity/mob/effect/give
-#    function api:entity/mob/effect/reset
-
+# エフェクト消去
+    data modify storage api: Argument.ID set value 621
+    function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
+    
 # タグリセット
     function asset:mob/1004.tultaria/tick/reset/skill_tag
 
