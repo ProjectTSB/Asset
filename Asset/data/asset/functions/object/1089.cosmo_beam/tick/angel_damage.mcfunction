@@ -6,9 +6,9 @@
 
 #> Private
 # @private
-#declare score_holder $UserID
-#declare score_holder $Count
-#declare score_holder $Damage
+    #declare score_holder $UserID
+    #declare score_holder $Count
+    #declare score_holder $Damage
 
 # 数をカウントして、ダメージを割る
     execute store result score $Count Temporary positioned ~-8 ~-105 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=16,dy=200,dz=16]

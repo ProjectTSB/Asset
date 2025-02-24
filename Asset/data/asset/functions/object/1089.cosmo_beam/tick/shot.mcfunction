@@ -6,20 +6,20 @@
 
 #> Private
 # @private
-#declare score_holder $UserID
-#declare score_holder $Count
-#declare score_holder $Damage
+    #declare score_holder $UserID
+    #declare score_holder $Count
+    #declare score_holder $Damage
 
 
 # 演出
-    execute positioned ~-8 ~-105 ~-8 run playsound minecraft:entity.generic.explode player @a[dx=16,dy=200,dz=16] ~ ~ ~ 1 2 1
+    execute positioned ~-8 ~-105 ~-8 run playsound minecraft:entity.generic.explode player @a[dx=15,dy=200,dz=15] ~ ~ ~ 1 2 1
     particle explosion ~ ~4 ~ 3 4 3 0 5
     particle flash ~ ~4 ~ 3 4 3 0 5
     particle wax_off ~ ~5 ~ 4 10 4 0 100
 
 # 画面エフェクト
-    execute positioned ~-8 ~-105 ~-8 as @a[dx=16,dy=200,dz=16] run title @s times 0 8 20
-    execute positioned ~-8 ~-105 ~-8 as @a[dx=16,dy=200,dz=16] run title @s title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
+    execute positioned ~-8 ~-105 ~-8 as @a[dx=15,dy=200,dz=15] run title @s times 0 8 20
+    execute positioned ~-8 ~-105 ~-8 as @a[dx=15,dy=200,dz=15] run title @s title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
 
 # ダメージ設定
 

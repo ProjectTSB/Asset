@@ -14,7 +14,7 @@
     execute if score @s General.Object.Tick matches 50 run data modify entity @s interpolation_duration set value 3
     execute if score @s General.Object.Tick matches 50 run data modify entity @s start_interpolation set value 0
     execute if score @s General.Object.Tick matches 50 run data modify entity @s transformation.scale set value [19f,400f,19f]
-    execute if score @s General.Object.Tick matches 50 positioned ~-8 ~-105 ~-8 run playsound minecraft:block.end_portal.spawn player @a[dx=16,dy=200,dz=16] ~ ~ ~ 1 1 1
+    execute if score @s General.Object.Tick matches 50 positioned ~-8 ~-105 ~-8 run playsound minecraft:block.end_portal.spawn player @a[dx=15,dy=200,dz=15] ~ ~ ~ 1 1 1
     execute if score @s General.Object.Tick matches 50..60 run function asset:object/1089.cosmo_beam/tick/shot
 
     execute if score @s General.Object.Tick matches 65 run data modify entity @s interpolation_duration set value 30
