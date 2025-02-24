@@ -13,6 +13,3 @@
 # motionCTが0かつ、AirJumpCountが0でないかつ、空中ならプレイヤーの方へmotionする
     # execute if data storage asset:context this{MotionCT:0} unless data storage asset:context this{AirJumpCount:0} if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0330.aurora_reaper/tick/air_jump
     execute if data storage asset:context this{MotionCT:0} if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0330.aurora_reaper/tick/air_jump
-
-# ハード以上で鈍足の無効化 (コメントアウトだけ)
-    # execute if predicate api:global_vars/difficulty/min/hard run effect clear @s slowness
