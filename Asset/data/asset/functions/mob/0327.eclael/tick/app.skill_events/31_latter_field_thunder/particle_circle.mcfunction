@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.skill_events/31_latter_field_thunder/1.main
 
-# 演出
-    playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.5
-
 # 円型ベクトルパーティクル
 # 円 1
     execute rotated ~00 0 run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0

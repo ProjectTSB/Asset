@@ -1,6 +1,6 @@
 #> asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/main
 #
-# アニメーションのイベントハンドラ 移動斬り
+# アニメーションのイベントハンドラ 桜花剣乱
 #
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
@@ -24,6 +24,9 @@
         execute if score @s 93.AnimationTimer matches 119 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 119 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
         execute if score @s 93.AnimationTimer matches 119 run particle flash ~ ~1 ~ 0 0 0 0 1
+        execute if score @s 93.AnimationTimer matches 120 positioned ^ ^1 ^3 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/particle_jump
+        execute if score @s 93.AnimationTimer matches 121 positioned ^ ^1 ^7 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/particle_jump
+        execute if score @s 93.AnimationTimer matches 122 positioned ^ ^1 ^11 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/particle_jump
 
 # 攻撃
     execute if score @s 93.AnimationTimer matches 121 if predicate lib:random_pass_per/50 run tag @s add 93.Skill.FieldSlash.A

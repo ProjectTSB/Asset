@@ -1,6 +1,6 @@
 #> asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/end
 #
-# アニメーションのイベントハンドラ 移動斬り
+# アニメーションのイベントハンドラ 桜花剣乱
 #
 # @within function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/main
 

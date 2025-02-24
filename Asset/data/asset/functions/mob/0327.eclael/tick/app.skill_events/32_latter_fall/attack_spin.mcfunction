@@ -31,3 +31,16 @@
 # リセット
     function api:damage/reset
     tag @a remove 93.Temp.AttackTarget
+
+# 演出
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20502,20503,20504,20505],Scale:[8f,1f,6f],Transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^2 ^2 run function api:object/summon
+
+    # data modify storage api: Argument.ID set value 2001
+    # data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20502,20503,20504,20505],Scale:[8f,1f,6f],Transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    # execute rotated ~120 ~ positioned ^ ^2 ^2 run function api:object/summon
+
+    # data modify storage api: Argument.ID set value 2001
+    # data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20502,20503,20504,20505],Scale:[8f,1f,6f],Transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    # execute rotated ~240 ~ positioned ^ ^2 ^2 run function api:object/summon

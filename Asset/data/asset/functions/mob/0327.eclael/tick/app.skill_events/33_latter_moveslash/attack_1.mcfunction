@@ -38,3 +38,8 @@
     data modify storage api: Argument.FieldOverride.Damage set value 45.0f
     data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
     execute positioned ^ ^-1 ^-1 run function api:object/summon
+
+# 演出
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504],Scale:[5f,1f,5f],Transformation:{left_rotation:{axis:[0,0,1],angle:-0.2f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute rotated ~30 ~-40 positioned ^ ^0 ^2 run function api:object/summon
