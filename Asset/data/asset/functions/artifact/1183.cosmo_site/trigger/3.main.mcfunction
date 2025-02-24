@@ -8,11 +8,7 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    data modify storage api: Argument.ID set value 1089
-    data modify storage api: Argument.FieldOverride.Damage set value 2500
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    function api:object/summon
 
-# 召喚
-    data modify storage api: Argument.ID set value 1090
-    function api:object/summon
+# 発砲
+    execute positioned ~ ~ ~ anchored eyes run function asset:artifact/1183.cosmo_site/trigger/shot
+    tag @s remove Landing
