@@ -11,7 +11,7 @@
 #declare score_holder $Damage
 
 # 数をカウントして、ダメージを割る
-    execute store result score $Count Temporary positioned ~-8 ~-5 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=16,dy=100,dz=16]
+    execute store result score $Count Temporary positioned ~-8 ~-105 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=16,dy=200,dz=16]
     execute store result score $Damage Temporary run data get storage asset:context this.Damage
     scoreboard players operation $Damage Temporary /= $Count Temporary
 # 更に10で割る
@@ -22,7 +22,7 @@
     data modify storage api: Argument.ElementType set value "Tunder"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 # ダメージ
-    execute positioned ~-8 ~-5 ~-8 as @e[type=#lib:living,tag=Enemy,tag=Enemy.Boss,tag=!Uninterferable,dx=16,dy=100,dz=16] run function api:damage/
+    execute positioned ~-8 ~-105 ~-8 as @e[type=#lib:living,tag=Enemy,tag=Enemy.Boss,tag=!Uninterferable,dx=16,dy=200,dz=16] run function api:damage/
 # リセット
     function api:damage/reset
     scoreboard players reset $Count
