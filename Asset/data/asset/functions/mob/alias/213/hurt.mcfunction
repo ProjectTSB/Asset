@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/hurt/hurt.m
 
 # 本来の処理を呼び出す
-   function asset:mob/0213.terrible_sonic_bomber/hurt/
+    function asset:mob/0213.terrible_sonic_bomber/hurt/

@@ -1,10 +1,9 @@
 {
     "replace": false,
     "values": [
-
-      "#lib:no_collision",
-      "#lib:glasses",
-      "#lib:glass_panes",
-      "minecraft:barrier"
+        "#lib:no_collision",
+        "#lib:glasses",
+        "#lib:glass_panes",
+        "minecraft:barrier"
     ]
-  }
+}

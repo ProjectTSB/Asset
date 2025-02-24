@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/alias/410/register
 
- #継承 (int) (オプション)
+# 継承 (int) (オプション)
     data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)

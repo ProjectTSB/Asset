@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/init/init.m
 
 # 元のInit処理を呼び出す
-   function asset:mob/0104.mad_scientist/init/
+    function asset:mob/0104.mad_scientist/init/

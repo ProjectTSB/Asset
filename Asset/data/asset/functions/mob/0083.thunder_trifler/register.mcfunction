@@ -15,5 +15,5 @@
     data modify storage asset:mob Health set value 3300
 
 # フィールド
-# [ダメージ量、MP減少量の計算に必要な値]
-    data modify storage asset:mob Field set value [28,10]
+    data modify storage asset:mob Field.Damage set value 28
+    data modify storage asset:mob Field.MPReduce set value 10
