@@ -10,6 +10,5 @@
 # 前方にいる敵にたいしてダメージfunction実行
     execute as @e[type=#lib:living,tag=M5.Victim,distance=..5] run function asset:artifact/0797.heartbleed/trigger/bleed
 
-# 発動音
-    playsound ogg:block.mud.step3 hostile @a[distance=..16] ~ ~ ~ 1.0 0.625 1.0
-    playsound ogg:mob.slime.big3 hostile @a[distance=..16] ~ ~ ~ 1 0.5 1
+# 演出
+    function asset:artifact/0797.heartbleed/trigger/vfx
