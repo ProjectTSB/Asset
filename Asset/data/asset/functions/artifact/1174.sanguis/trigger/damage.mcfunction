@@ -1,8 +1,8 @@
-#> asset:artifact/1174.sanguis/trigger/combo/damage
+#> asset:artifact/1174.sanguis/trigger/damage
 #
 #
 #
-# @within function asset:artifact/1174.sanguis/trigger/combo/**
+# @within function asset:artifact/1174.sanguis/trigger/3.main
 
 # 引数の設定
     # ダメージ値設定

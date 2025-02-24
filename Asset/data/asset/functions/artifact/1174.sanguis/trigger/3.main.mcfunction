@@ -28,6 +28,9 @@
     execute if score @s WM.Combo matches 2 anchored eyes run function asset:artifact/1174.sanguis/trigger/combo/slash2
     execute if score @s WM.Combo matches 3 anchored eyes run function asset:artifact/1174.sanguis/trigger/combo/slash3
 
+# 攻撃判定
+    execute at @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function asset:artifact/1174.sanguis/trigger/damage
+
 # リセット
     scoreboard players reset $WM.Temp Temporary
     scoreboard players reset $WM.LatestUseTick Temporary

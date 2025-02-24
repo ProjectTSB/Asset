@@ -15,6 +15,3 @@
 
 
     execute positioned ^ ^ ^2 positioned ~ ~-0.5 ~ rotated ~ ~-10 run function api:object/summon
-
-# 攻撃判定
-    execute at @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function asset:artifact/1174.sanguis/trigger/combo/damage
