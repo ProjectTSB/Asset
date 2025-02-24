@@ -64,16 +64,16 @@
         execute if score @s General.Mob.Tick matches 330 at @e[type=item_display,tag=!2026.Disabled,scores={ObjectID=2026,2026.ID=41},limit=1] run function asset:mob/1004.tultaria/tick/skill/platform_attack/purple
 
 # 3 誘導する光の柱を置く
-    execute if score @s General.Mob.Tick matches 370 at @r rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
+    execute if score @s General.Mob.Tick matches 370 at @r[gamemode=!spectator,distance=..64] rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
     execute if score @s General.Mob.Tick matches 390 at @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/summon
 
-    execute if score @s General.Mob.Tick matches 430 at @r rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
+    execute if score @s General.Mob.Tick matches 430 at @r[gamemode=!spectator,distance=..64] rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
     execute if score @s General.Mob.Tick matches 450 at @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/summon
 
-    execute if score @s General.Mob.Tick matches 490 at @r rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
+    execute if score @s General.Mob.Tick matches 490 at @r[gamemode=!spectator,distance=..64] rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
     execute if score @s General.Mob.Tick matches 510 at @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/summon
 
-    execute if score @s General.Mob.Tick matches 550 at @r rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
+    execute if score @s General.Mob.Tick matches 550 at @r[gamemode=!spectator,distance=..64] rotated 0 0 run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/alert
     execute if score @s General.Mob.Tick matches 570 at @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] run function asset:mob/1004.tultaria/tick/skill/transition/phase_2_to_3/tick/attack/pillar/summon
 
 # TODO: デバッグ用につき後で消すこと

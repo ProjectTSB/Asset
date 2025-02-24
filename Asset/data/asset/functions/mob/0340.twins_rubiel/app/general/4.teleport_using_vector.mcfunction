@@ -13,4 +13,4 @@
     function asset:mob/0340.twins_rubiel/app/general/5.teleport_using_vector_macro.m with storage asset:temp 9G.Pos
 
 # 終了
-    data remove storage asset:temp 9G.Pos
+    data remove storage asset:temp 9G

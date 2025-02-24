@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/07_1_kt_jumpslash/4.calc_vector_1
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/4.calc_vector_1
 #
 # アニメーションのイベントハンドラ Kt飛び込み斬り 移動ベクトル計算
 #
@@ -29,4 +29,4 @@
 
 # 終了
     scoreboard players reset @s Temporary
-    data remove storage asset:temp 9G.Pos
+    data remove storage asset:temp 9G

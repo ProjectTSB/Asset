@@ -29,5 +29,7 @@
 
 # リセット
     scoreboard players reset @a[tag=SearchTarget] Temporary
-    tag @a[tag=SearchTarget] remove SearchTarget
     scoreboard players reset $MostLostHealth Temporary
+    scoreboard players reset $CurrentHealth Temporary
+    scoreboard players reset $MaxHealth Temporary
+    tag @a[tag=SearchTarget] remove SearchTarget

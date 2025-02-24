@@ -5,8 +5,8 @@
 # @within function asset:mob/0421.silver_turret/tick/
 
 # 召喚
-   data modify storage api: Argument.ID set value 422
-   execute positioned ^ ^0.75 ^1 run function api:mob/summon
+    data modify storage api: Argument.ID set value 422
+    execute positioned ^ ^0.75 ^1 run function api:mob/summon
 
 # 演出
     playsound item.trident.return hostile @a ~ ~ ~ 1.0 1.75

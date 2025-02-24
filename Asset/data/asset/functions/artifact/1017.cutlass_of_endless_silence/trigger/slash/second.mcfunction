@@ -32,7 +32,7 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,nbt={OnGround:1b},distance=..8] run function api:damage/
 # 上空へ飛ばす
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,nbt={OnGround:1b},distance=..8] run function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/levitation
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Immovable,tag=!Uninterferable,nbt={OnGround:1b},distance=..8] run function asset:artifact/1017.cutlass_of_endless_silence/trigger/slash/levitation
 
 # リセット
     function api:damage/reset

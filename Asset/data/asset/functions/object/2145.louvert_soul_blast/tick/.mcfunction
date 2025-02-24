@@ -17,6 +17,9 @@
     execute store result storage asset:temp 9K.Num int 1 run scoreboard players get @s General.Object.Tick
     function asset:object/2145.louvert_soul_blast/tick/vfx/m with storage asset:temp 9K
 
+# 予告召喚
+    execute if score @s General.Object.Tick matches 2 at @s run function asset:object/2145.louvert_soul_blast/tick/warning/announce
+
 # 警告音
     execute if score @s General.Object.Tick matches ..40 run function asset:object/2145.louvert_soul_blast/tick/warning/
 
@@ -24,4 +27,4 @@
     execute if score @s General.Object.Tick matches 41 run function asset:object/2145.louvert_soul_blast/tick/cast/
 
 # リセット
-    data remove storage asset:temp 9K.Num
+    data remove storage asset:temp 9K
