@@ -10,7 +10,7 @@
 # 発動
     execute if score @s General.Object.Tick matches 10 run function asset:object/1098.alchemy_laser/tick/shot
 
-# 回転させよう
+# 消える演出
     execute if score @s General.Object.Tick matches 15 run data merge entity @s {interpolation_duration:5,start_interpolation:0,transformation:{left_rotation:[0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,20f]}}
 
 # 消滅処理

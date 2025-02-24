@@ -8,6 +8,7 @@
     playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2
     particle flash ~ ~ ~ 0 0 0 0 1
 
+# 演出
     data merge entity @s {start_interpolation:0,transformation:{left_rotation:[0.707f,0f,0f,0.707f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,20f]}}
 
 # ダメージ適用
@@ -22,6 +23,3 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-
-# 消滅
-    kill @s
