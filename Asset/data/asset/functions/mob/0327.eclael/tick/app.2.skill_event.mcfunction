@@ -132,5 +132,5 @@
 # 移動斬り
     execute if entity @s[tag=93.Skill.MoveSlash] run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/main
 
-# 移動斬り
+# 全体斬り
     execute if entity @s[tag=93.Skill.FieldSlash] run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/main

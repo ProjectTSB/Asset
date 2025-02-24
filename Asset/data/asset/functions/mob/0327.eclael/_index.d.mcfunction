@@ -103,6 +103,7 @@
             #declare function animated_java:eclael/animations/33_1_moveslash_1/tween
             #declare function animated_java:eclael/animations/34_field_slash/tween
             #declare function animated_java:eclael/animations/34_field_slash_end/tween
+            #declare function animated_java:eclael/animations/35_move/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
