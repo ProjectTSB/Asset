@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"CSL-V8 コズモサイト","color":"#FFDEAD"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"びーむ"}']
+    data modify storage asset:artifact Lore set value ['{"text":"座標指定型軌道攻撃システムのリモコン"}','{"text":"地上管制から送信された標的座標を受信すると"}','{"text":"量子増幅型パルスレーザーが即座に起動し"}','{"text":"大気圏を貫通する白い光線を放射します"}','[{"text":"大体殺せます"},{"text":"(天使相手には威力が減衰する)","color":"dark_gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
