@@ -17,3 +17,6 @@
     execute rotated ~225 0 positioned ^ ^1.3 ^2 run function asset:object/1099.conviction_sword/tick/shot_summon
     execute rotated ~270 0 positioned ^ ^1.3 ^2 run function asset:object/1099.conviction_sword/tick/shot_summon
     execute rotated ~315 0 positioned ^ ^1.3 ^2 run function asset:object/1099.conviction_sword/tick/shot_summon
+
+# 消滅
+    kill @s
