@@ -13,3 +13,6 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0797.heartbleed/trigger/3.main
+
+# reset
+    execute as @e[type=#lib:living,tag=M5.Victim,distance=..5] run tag @s remove M5.Victim
