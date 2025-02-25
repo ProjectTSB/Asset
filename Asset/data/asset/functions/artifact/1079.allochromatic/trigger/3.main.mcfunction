@@ -14,7 +14,7 @@
     execute if data storage asset:context id{mainhand:1079} run tag @s add MainHand
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
