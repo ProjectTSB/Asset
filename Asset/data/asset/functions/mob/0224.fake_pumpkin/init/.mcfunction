@@ -4,24 +4,36 @@
 #
 # @within function asset:mob/alias/224/init
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算する
-    scoreboard players operation $Random Temporary %= $9 Const
+#> Private
+# @private
+    #declare score_holder $CandidatesLength
+    #declare score_holder $Random
 
-# 顔選択
-    execute if score $Random Temporary matches 0 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20201}
-    execute if score $Random Temporary matches 1 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20202}
-    execute if score $Random Temporary matches 2 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20203}
-    execute if score $Random Temporary matches 3 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20204}
-    execute if score $Random Temporary matches 4 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20205}
-    execute if score $Random Temporary matches 5 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20206}
-    execute if score $Random Temporary matches 6 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20282}
-    execute if score $Random Temporary matches 7 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20283}
-    execute if score $Random Temporary matches 8 run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20284}
+# 初期値としてのっぺらぼう頭を被る
+    item replace entity @s armor.head with carved_pumpkin{CustomModelData:20283}
+
+# lib:arrayを用いて、ランダムなCMDの顔を被る
+
+# セッション開ける
+    function lib:array/session/open
+
+# 定義
+    data modify storage lib: Array set from storage asset:context this.FaceList
+    data modify storage lib: Picks set value [0]
+# 候補リストの長さを取得
+    execute store result score $CandidatesLength Temporary if data storage lib: Array[]
+# 乱数
+    execute store result score $Random Temporary run random value 0..65535
+    execute store result storage lib: Picks[0] int 1 run scoreboard players operation $Random Temporary %= $CandidatesLength Temporary
+# 抜き取り
+    function lib:array/picks
+# 抜き取ったIDの頭を被る
+    data modify entity @s ArmorItems[3].tag.CustomModelData set from storage lib: Elements[0]
 
 # リセット
+    function lib:array/session/close
     scoreboard players reset $Random Temporary
+    scoreboard players reset $CandidatesLength
 
 # 最寄りのプレイヤーを見る
     execute facing entity @p[gamemode=!spectator,distance=..64] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~

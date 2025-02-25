@@ -11,14 +11,14 @@
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
+    function api:damage/reset
 
-# デバフ
-    effect give @a[tag=!PlayerShouldInvulnerable,distance=..4] slowness 1 0
+# 移動速度低下
+    data modify storage api: Argument set value {ID:67,Stack:3,Duration:20}
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run particle block ice ~ ~1 ~ 0.2 0.5 0.2 0 10
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:entity.player.hurt_freeze player @p ~ ~ ~ 1 2
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:block.glass.break player @p ~ ~ ~ 1 2
-
-# リセット
-    function api:damage/reset

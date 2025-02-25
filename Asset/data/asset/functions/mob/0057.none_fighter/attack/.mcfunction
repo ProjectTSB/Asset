@@ -12,11 +12,11 @@
     execute at @p[tag=Victim] run playsound minecraft:block.stone.break hostile @a ~ ~ ~ 1 1.2 0
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 8.0
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sとの闘いに敗北した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより殺された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function lib:damage/modifier
-    execute as @p[tag=Victim,distance=..2.5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 8.0
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sとの闘いに敗北した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにより殺された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    function api:damage/modifier
+    execute as @p[tag=Victim,distance=..2.5] run function api:damage/
+    function api:damage/reset

@@ -1,4 +1,4 @@
-#> asset:mob/0341.louvert/tick/animation/12_1_opening/first_attack_effect
+#> asset:mob/0341.louvert/tick/animation/12_1_opening/first_attack_vfx
 #
 # 先制攻撃_VFX
 #

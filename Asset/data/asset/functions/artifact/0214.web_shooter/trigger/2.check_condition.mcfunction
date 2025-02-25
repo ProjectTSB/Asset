@@ -8,8 +8,9 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-    execute if entity @s[gamemode=adventure] run function lib:message/artifact/can_not_use_here
-    execute if entity @s[gamemode=adventure] run tag @s remove CanUsed
+# 破壊可能エリアでのみ使用可能
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0214.web_shooter/trigger/3.main

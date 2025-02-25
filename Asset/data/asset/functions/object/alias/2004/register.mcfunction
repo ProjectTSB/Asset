@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元の登録処理を呼び出す
-   function asset:object/2004.labyria_thunder/register
+    function asset:object/2004.labyria_thunder/register

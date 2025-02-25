@@ -5,4 +5,4 @@
 # @within tag/function asset:artifact/attack
 
 # フルセット状態でのみ発動
-    execute if entity @s[tag=FE.Fullset] run function asset:artifact/0554.catastrophe/trigger/fullset/attack/2.main
+    execute if entity @s[tag=FE.Fullset] run function asset:artifact/0554.catastrophe/trigger/fullset/attack/2.check

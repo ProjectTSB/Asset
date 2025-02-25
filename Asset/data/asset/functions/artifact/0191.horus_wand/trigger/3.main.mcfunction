@@ -15,10 +15,10 @@
     execute positioned ~ ~4 ~ run function asset:artifact/0191.horus_wand/trigger/vfx/
 
 # 回復
-    data modify storage lib: Argument.Heal set value 15
-    function lib:heal/modifier
-    execute as @a[distance=..8] run function lib:heal/
+    data modify storage api: Argument.Heal set value 15
+    function api:heal/modifier
+    execute as @a[distance=..8] run function api:heal/
     effect give @a[distance=..8] regeneration 15 2 true
 
 # リセット
-    function lib:heal/reset
+    function api:heal/reset

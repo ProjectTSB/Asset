@@ -1,3 +1,7 @@
+#> asset:object/2145.louvert_soul_blast/tick/vfx/fc_26
+#
+# @within function asset:object/2145.louvert_soul_blast/tick/vfx/m
+
 # frame 26 / 40
 # コレクション 1--平面.001
 particle dust 0.05 1.0 1.0 0.4 ^-0.0 ^0.0 ^0.0 0.0 0.0 0.0 0.0 1 normal

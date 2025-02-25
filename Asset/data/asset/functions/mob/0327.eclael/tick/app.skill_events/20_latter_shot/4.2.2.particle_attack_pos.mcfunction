@@ -1,9 +1,10 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.2.1.particle_attack_pos
+#> asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/4.2.2.particle_attack_pos
 #
 # アニメーションのイベントハンドラ 前半・射撃 発射
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/**
-
+# @within function
+#   asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/**
+#   asset:mob/0327.eclael/tick/app.skill_events/20_latter_shot/4.2.3.spread_attack_pos
 
 # 予兆
     particle electric_spark ~ ~ ~ 0 0 0 1 50

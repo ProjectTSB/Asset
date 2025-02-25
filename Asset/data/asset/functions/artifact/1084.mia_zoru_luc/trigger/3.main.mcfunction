@@ -14,6 +14,6 @@
     particle block redstone_block ~ ~1.3 ~ 0 0 0 1 20
 
 # エフェクトを付与
-    data modify storage api: Argument.ID set value 619
+    data modify storage api: Argument.ID set value 295
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

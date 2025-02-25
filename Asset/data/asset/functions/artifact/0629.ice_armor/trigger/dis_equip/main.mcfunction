@@ -12,7 +12,7 @@
     data modify storage api: Argument.UUID set value [I;1,1,629,5]
     function api:modifier/attack/water/remove
 
- # 演出
+# 演出
     playsound block.glass.break player @a ~ ~ ~ 0.4 0.8 0
 
 # フルセット効果削除

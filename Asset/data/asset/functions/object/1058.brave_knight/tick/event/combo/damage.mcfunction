@@ -13,7 +13,7 @@
 # ダメージ
     execute store result score $RandomDamage Temporary run function lib:random/
     scoreboard players operation $RandomDamage Temporary %= $51 Const
-    scoreboard players add $RandomDamage Temporary 150
+    scoreboard players add $RandomDamage Temporary 100
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
