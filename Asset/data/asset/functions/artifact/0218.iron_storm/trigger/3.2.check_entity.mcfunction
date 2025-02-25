@@ -20,3 +20,6 @@
 
 # 着地していたら爆風function実行
     execute if score $IsOnGround Temporary matches 1 at @s if entity @s[y=256,dy=-256] run function asset:artifact/0218.iron_storm/trigger/3.3.blast
+
+# リセット
+    scoreboard players reset $IsOnGround Temporary

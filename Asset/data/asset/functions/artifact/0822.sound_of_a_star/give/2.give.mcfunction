@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"星の音","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方に敵に誘導する星を発射する。","color":"white"}]','[{"text":"使用時のMPの割合により、","color":"white"}]','[{"text":"発射する星の数が変化する。","color":"white"}]','[{"text":"「やがて星となって再会しよう。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"前方に敵に誘導する星を発射する","color":"white"}]','[{"text":"使用時のMP割合により","color":"white"}]','[{"text":"発射する星の数が変化する","color":"white"}]','[{"text":"「やがて星となって再会しよう。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

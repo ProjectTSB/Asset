@@ -15,7 +15,7 @@
     data modify storage api: Argument.Damage set value 11f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはお地蔵さんに祟られた。","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはお地蔵さんに祟られた","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] run function api:damage/
     function api:damage/reset

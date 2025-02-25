@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/alias/380/register
 
- #継承 (int) (オプション)
+# 継承 (int) (オプション)
     data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
@@ -33,6 +33,6 @@
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 0.7f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.8f
+        data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
     # data modify storage asset:mob Field.myValue set value

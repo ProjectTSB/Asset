@@ -14,11 +14,11 @@
 
 # 体力割合を取得
     function api:entity/player/get_health_per
-    execute store result score $6H.HealthPer Temporary run data get storage api: Return.HealthPer 100
+    execute store result score $6H.HealthPer Temporary run data get storage api: Return.HealthPer 1000
 
 # 体力が30%以下か確認
-    execute if score $6H.HealthPer Temporary matches 301.. run function asset:artifact/0233.reversal/trigger/error_message
-    execute if score $6H.HealthPer Temporary matches 301.. run tag @s remove CanUsed
+    execute unless score $6H.HealthPer Temporary matches ..300 run function asset:artifact/0233.reversal/trigger/error_message
+    execute unless score $6H.HealthPer Temporary matches ..300 run tag @s remove CanUsed
     scoreboard players reset $6H.HealthPer Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する

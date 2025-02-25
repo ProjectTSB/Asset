@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/4.2.attack_iai_1
+#> asset:mob/0327.eclael/tick/app.skill_events/01_1_former_iai_damage/4.2.attack_iai_1
 #
 # アニメーションのイベントハンドラ 杖モード・杖殴り なぎ払い攻撃判定
 #
