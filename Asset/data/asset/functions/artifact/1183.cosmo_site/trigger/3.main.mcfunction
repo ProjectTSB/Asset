@@ -10,5 +10,5 @@
 # ここから先は神器側の効果の処理を書く
 
 # 発砲
-    execute positioned ~ ~ ~ anchored eyes run function asset:artifact/1183.cosmo_site/trigger/shot
+    execute anchored eyes positioned ^ ^ ^ run function asset:artifact/1183.cosmo_site/trigger/shot
     tag @s remove Landing
