@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-   function asset:object/2002.lighting_fast/tick/
+    function asset:object/2002.lighting_fast/tick/

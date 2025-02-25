@@ -34,5 +34,7 @@
     data modify entity @s Rotation set from storage asset:temp Rotation
 
 # リセット
+    scoreboard players reset $L.RotX Temporary
+    scoreboard players reset $L.RotY Temporary
     scoreboard players reset $L.AngleX Temporary
     scoreboard players reset $L.AngleY Temporary

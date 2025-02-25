@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0303.celestial_target/_/tick",
         "asset:effect/0620.ongaeshi/_/tick",
         "asset:effect/0031.slow_falling/_/tick",
         "asset:effect/0024.darkness/_/tick",
@@ -51,7 +52,7 @@
         "asset:effect/0269.pain_and_sweet/_/tick",
         "asset:effect/0270.honey_regeneration/_/tick",
         "asset:effect/0265.light_of_firefly/_/tick",
-        "asset:effect/0619.hand_of_destruction/_/tick",
+        "asset:effect/0295.hand_of_destruction/_/tick",
         "asset:effect/0261.gale_blessing/_/tick",
         "asset:effect/0210.fading_speed/_/tick",
         "asset:effect/0276.unending_thunder/_/tick",

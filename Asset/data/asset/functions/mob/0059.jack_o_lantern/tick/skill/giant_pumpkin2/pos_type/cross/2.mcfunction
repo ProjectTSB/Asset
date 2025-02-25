@@ -4,11 +4,8 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^0 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^0 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^6 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^6 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^-6 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^-6 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral

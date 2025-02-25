@@ -19,7 +19,7 @@
     tp @s ~ ~ ~
 
 # プレイヤーをみる
-    tp @s ~ ~ ~ facing entity @p
+    tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -30

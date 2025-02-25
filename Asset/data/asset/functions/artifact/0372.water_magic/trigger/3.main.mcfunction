@@ -9,17 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# ダメージ用AECを召喚
-    execute rotated ~ 0 positioned ~ ~0.3 ~ run summon area_effect_cloud ^ ^ ^5 {Radius:0f,Duration:21,Tags:["Uninterferable","AC.Water","AC.First"]}
-
-# スコアセット
-    scoreboard players set @e[type=area_effect_cloud,tag=AC.First] AC.Time 0
-
-# ユーザーID適応
-    scoreboard players operation @e[type=area_effect_cloud,tag=AC.First] AC.UserID = @s UserID
-
-# タグを消す
-    tag @e[type=area_effect_cloud,tag=AC.First] remove AC.First
-
-# Scheduleセット
-    schedule function asset:artifact/0372.water_magic/trigger/3.1.loop 1t replace
+# Objectを召喚
+    data modify storage api: Argument.ID set value 1092
+    data modify storage api: Argument.FieldOverride.Damage set value 5.0f
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute rotated ~ 0 positioned ~ ~0.3 ~ positioned ^ ^ ^5 run function api:object/summon
