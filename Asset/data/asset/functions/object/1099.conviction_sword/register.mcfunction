@@ -17,5 +17,5 @@
 # ID (int)
     data modify storage asset:object ID set value 1099
 # フィールド(オプション)
-    data modify storage asset:object Field.Damage set value {Sword:1f,Shot1f}
+    data modify storage asset:object Field.Damage set value {Sword:1f,Shot:1f}
     data modify storage asset:object Field.UserID set value -1
