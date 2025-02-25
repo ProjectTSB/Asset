@@ -13,7 +13,7 @@
     scoreboard players operation $Random Temporary %= $3 Const
 
 # ダメージ設定
-    data modify storage api: Argument.FieldOverride.Damage set value 55.0f
+    data modify storage api: Argument.FieldOverride.Damage set value 65.0f
 
 # 属性を決める
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.FieldOverride.Element set value "Fire"
