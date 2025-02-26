@@ -8,7 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # vfx
-    particle dust 0.455 0.027 0.027 2.5 ~ ~ ~ 0.1 0.1 0.1 5 2 force
+    particle dust 0.455 0.027 0.027 2 ~ ~ ~ 0.1 0.1 0.1 5 2 force
 
 # 周囲に敵がいなければ、MovePerStepを0.25に戻す
     execute unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run data modify storage asset:context this.MovePerStep set value 0.25
