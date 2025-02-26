@@ -7,5 +7,5 @@
 # vfx
     particle minecraft:soul ~ ~ ~ 0 0 0 0.05 20 normal
 
-# super.tick
+# super.init
     function asset:object/super.init
