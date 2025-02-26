@@ -8,9 +8,10 @@
 # @private
     #declare score_holder $Interval
 
-# UserIDをスコアへ、Tagで紐づける
+# 使用者とTagで紐付け
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run tag @s add Owner
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
