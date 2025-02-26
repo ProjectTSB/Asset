@@ -5,8 +5,8 @@
 # @user
 # @within function asset:artifact/0907.rod_of_rain/give/1.trigger
 
-# 神器の説明や消費MPなどをここで設定する
-# 最後にasset:artifact/common/giveを実行することで入手可能
+# 神器の説明や消費MPなどをここで設定する。
+# 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 907
