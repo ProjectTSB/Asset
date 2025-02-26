@@ -11,4 +11,4 @@
     execute on vehicle at @s run function asset:object/1101.tnt/tick/on_vehicle
 
 # vehicleがいなくなったら = TNTが爆破したらダメージを与えて消滅
-    execute unless predicate lib:is_vehicle at @s run function asset:object/1101.tnt/tick/damage
+    execute unless predicate lib:is_vehicle at @s run function asset:object/1101.tnt/tick/damage/
