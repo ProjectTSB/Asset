@@ -5,6 +5,7 @@
 # @within function
 #   asset:mob/1005.illusion_of_loyalty/**
 #   asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/**
+    #declare
     # 移動関連
     #declare tag RX.Move.Teleport
     # スキルリスト

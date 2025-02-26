@@ -21,7 +21,7 @@
     title @a[distance=..64] subtitle {"text":"\uE010","font":"screen_effect","color":"#CCCCCC"}
 
 # 足場を元に戻す
-    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset/arena/
 
 # オブジェクト類のキル
     function asset:mob/1004.tultaria/tick/reset/remove_objects
