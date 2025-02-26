@@ -15,8 +15,8 @@
     playsound entity.dolphin.swim neutral @a ~ ~ ~ 0.7 1.5 0
     playsound entity.dolphin.swim neutral @a ~ ~ ~ 0.7 1.8 0
     playsound ogg:ambient.underwater.additions.bubbles6 neutral @a ~ ~ ~ 0.5 1.5 0
-    execute positioned ~ ~0.25 ~ run function asset:object/1027.rain_area/tick/vfx
-    execute positioned ~ ~0.8 ~ run function asset:object/1027.rain_area/tick/vfx
+    execute positioned ~ ~0.25 ~ run function asset:object/1027.rain_area/tick/vfx/2
+    execute positioned ~ ~0.8 ~ run function asset:object/1027.rain_area/tick/vfx/2
 
 # 使用者にTagを付与
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
