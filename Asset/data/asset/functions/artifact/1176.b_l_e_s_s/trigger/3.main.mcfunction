@@ -10,12 +10,12 @@
 
 # 発射
     execute if predicate lib:is_sneaking run data modify storage api: Argument.ID set value 1094
-    execute if predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.InitMotionDamage set value 600f
-    execute if predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.MaxDamage set value 3000f
+    execute if predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.InitMotionDamage set value 520f
+    execute if predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.MaxDamage set value 2600
 
     execute unless predicate lib:is_sneaking run data modify storage api: Argument.ID set value 1095
-    execute unless predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.InitMotionDamage set value 800f
-    execute unless predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.MaxDamage set value 4000f
+    execute unless predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.InitMotionDamage set value 820f
+    execute unless predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.MaxDamage set value 4200f
 
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get $WO.TargetID Temporary
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
