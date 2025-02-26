@@ -7,7 +7,6 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
 # 演出
     particle minecraft:dust 1 1 0 2 ~ ~ ~ 0.8 0.8 0.8 0.1 20 normal @a
     particle minecraft:firework ~ ~1 ~ 0.5 0.5 0.5 0 10 normal @a
