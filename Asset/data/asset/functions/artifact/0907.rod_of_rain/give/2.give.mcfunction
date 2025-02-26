@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"彩雨の杖","color":"blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雨の降るエリアを設置する。","color":"#7A95FF"}','{"text":"エリアは定期的に敵にはダメージを与え","color":"#7A95FF"}','{"text":"プレイヤーの体力を自身の最大体力の10%分回復する。","color":"#7A95FF"}','{"text":"この回復には水攻撃補正が追加で乗る。","color":"#7A95FF"}','{"text":"鮮やかに彩られた雨乞いに使われた杖。","color":"#a0eafe"}','{"text":"ひとたび振るえば辺りに祝福の雨を降らすという。","color":"#a0eafe"}','{"text":"雨は癒やしをもたらし、時には罪を洗い流す。","color":"#a0eafe"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雨の降るエリアを設置する","color":"#7A95FF"}','{"text":"エリアは定期的に敵にはダメージを与え","color":"#7A95FF"}','{"text":"プレイヤーの体力を自身の最大体力の10%分回復する","color":"#7A95FF"}','{"text":"この回復には水攻撃補正が追加で乗る","color":"#7A95FF"}','{"text":"鮮やかに彩られた雨乞いに使われた杖","color":"#a0eafe"}','{"text":"ひとたび振るえば辺りに祝福の雨を降らすという","color":"#a0eafe"}','{"text":"雨は癒やしをもたらし、時には罪を洗い流す","color":"#a0eafe"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 9
+    data modify storage asset:artifact AttackInfo.AttackRange set value 7
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
