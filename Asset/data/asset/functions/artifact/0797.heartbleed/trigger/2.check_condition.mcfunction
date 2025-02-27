@@ -5,7 +5,7 @@
 # @within function asset:artifact/0797.heartbleed/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/auto
+    function asset:artifact/common/check_condition/mainhand
 
 # ターゲットがいるかチェック
     execute as @e[type=#lib:living,tag=Enemy,distance=..5] facing entity @s feet positioned ^ ^ ^4 rotated as @p[tag=this] positioned ^ ^ ^-3 if entity @p[tag=this,distance=..5] run tag @s add M5.Victim
