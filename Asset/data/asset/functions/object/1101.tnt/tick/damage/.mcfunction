@@ -17,8 +17,8 @@
 # ダメージ
     function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:1.0,Distance:"0.0..1.5"}
     function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:0.7,Distance:"1.5..2.5"}
-    function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:0.2,Distance:"2.5..5"}
-    function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:0.1,Distance:"5..8"}
+    function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:0.2,Distance:"2.5..5.0"}
+    function asset:object/1101.tnt/tick/damage/deal_damage.m {DamagePer:0.1,Distance:"5.0..8.0"}
 
 # リセット
     scoreboard players reset $UserID Temporary
