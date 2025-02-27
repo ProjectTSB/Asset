@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0306.reactivearmor_lock/_/register",
+        "asset:effect/0303.celestial_target/_/register",
         "asset:effect/0190.fall_damage_immunity/_/register",
         "asset:effect/0620.ongaeshi/_/register",
         "asset:effect/0296.soul_disconnection/_/register",
