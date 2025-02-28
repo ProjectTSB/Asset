@@ -24,7 +24,7 @@
     # attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02cd00000004 "0717.Speed" 0.05 multiply_base
 
 # 回復量
-    data modify storage api: Argument.UUID set value [I;1,1,638,6]
+    data modify storage api: Argument.UUID set value [I;1,1,717,4]
     data modify storage api: Argument.Amount set value 0.08
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/heal/add

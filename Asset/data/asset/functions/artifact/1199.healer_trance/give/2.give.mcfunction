@@ -1,31 +1,31 @@
-#> asset:artifact/0201.cowardly_soul/give/2.give
+#> asset:artifact/1199.healer_trance/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0201.cowardly_soul/give/1.trigger
+# @within function asset:artifact/1199.healer_trance/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 201
+    data modify storage asset:artifact ID set value 1199
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"臆病者の魂","color":"dark_aqua"}'
+    data modify storage asset:artifact Name set value '[{"text":"ヒーラ","color":"green"},{"text":"ー","color":"#E1FCB1"},{"text":"ト","color":"#FCD0B1"},{"text":"ランス","color":"red"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"臆病な者の怯えた思いが込められた魂"}','{"text":"ダメージを受けると恐ろしくなり家へと逃げ帰る"}']
+    data modify storage asset:artifact Lore set value ['{"text":"与回復量と被回復量の補正について"}','{"text":"20秒の間50%減少させる代わりに"}','{"text":"10秒の間合計の70%分与ダメージが上昇する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value
-    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
+    # data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 5
+    # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "offhand"
+    data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onDamage"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -44,8 +44,10 @@
     data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
+# MP回復量 (int)
+    # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 600
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
@@ -55,8 +57,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)
+    # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

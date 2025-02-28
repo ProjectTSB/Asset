@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0286.dont_hit_me/_/register",
+        "asset:effect/0308.healer_trance/_/register",
+        "asset:effect/0309.healer_trance/_/register",
         "asset:effect/0306.reactivearmor_lock/_/register",
         "asset:effect/0303.celestial_target/_/register",
         "asset:effect/0190.fall_damage_immunity/_/register",
