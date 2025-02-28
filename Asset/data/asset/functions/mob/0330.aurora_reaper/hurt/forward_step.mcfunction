@@ -1,4 +1,4 @@
-#> asset:mob/0330.aurora_reaper/hurt/foward_step
+#> asset:mob/0330.aurora_reaper/hurt/forward_step
 #
 # 前進する
 #
