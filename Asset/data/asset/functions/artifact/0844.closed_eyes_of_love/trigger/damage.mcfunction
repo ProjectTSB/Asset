@@ -1,4 +1,4 @@
-#> asset:artifact/0844.closed_eyes_of_love/trigger/3.1.damage
+#> asset:artifact/0844.closed_eyes_of_love/trigger/damage
 #
 #
 #

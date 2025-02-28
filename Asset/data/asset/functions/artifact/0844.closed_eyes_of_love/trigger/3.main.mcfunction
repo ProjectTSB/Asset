@@ -9,7 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
 # vfx
-    function asset:artifact/0844.closed_eyes_of_love/trigger/3.1.vfx
+    function asset:artifact/0844.closed_eyes_of_love/trigger/vfx
 
 # damage
-    function asset:artifact/0844.closed_eyes_of_love/trigger/3.1.damage
+    function asset:artifact/0844.closed_eyes_of_love/trigger/damage

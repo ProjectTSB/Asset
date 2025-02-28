@@ -1,4 +1,4 @@
-#> asset:artifact/0844.closed_eyes_of_love/trigger/3.1.vfx
+#> asset:artifact/0844.closed_eyes_of_love/trigger/vfx
 #
 # vfx
 #
