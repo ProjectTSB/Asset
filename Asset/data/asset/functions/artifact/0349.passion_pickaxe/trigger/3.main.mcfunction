@@ -17,8 +17,10 @@
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
 
-# 自身にエフェクト付与
-    effect give @s minecraft:haste 60 3 true
+# 自身にマインソウル(ID:291)を付与
+    data modify storage api: Argument.ID set value 291
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     particle minecraft:lava ~ ~ ~ 0.5 1 0.5 1 100 force @a[distance=..20]
