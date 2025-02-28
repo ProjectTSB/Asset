@@ -10,6 +10,6 @@
 # motionCTの処理
     execute store result storage asset:context this.MotionCT int 0.9999999999 run data get storage asset:context this.MotionCT
 
-# motionCTが0かつ、AirJumpCountが0でないかつ、空中ならプレイヤーの方へmotionする
+# motionCTが0かつ、周囲64mにプレイヤーがいるかつ、空中ならプレイヤーの方へmotionする
     # execute if data storage asset:context this{MotionCT:0} unless data storage asset:context this{AirJumpCount:0} if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0330.aurora_reaper/tick/air_jump
-    execute if data storage asset:context this{MotionCT:0} if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0330.aurora_reaper/tick/air_jump
+    execute if data storage asset:context this{MotionCT:0} if entity @p[gamemode=!spectator,distance=..64] if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0330.aurora_reaper/tick/air_jump
