@@ -18,7 +18,7 @@
     execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run data modify storage asset:context this.MovePerStep set value 0.5
 
 # 前方に壁があればMovePerStepを0に変更
-    execute at @s run function asset:object/1100.conviction_shot/tick/check_foward_block with storage asset:context this
+    execute at @s run function asset:object/1100.conviction_shot/tick/check_forward_block with storage asset:context this
 
 # 4Tickごとにダメージ間隔用Tagを付与
     scoreboard players operation $Interval Temporary = @s General.Object.Tick

@@ -1,4 +1,4 @@
-#> asset:object/1100.conviction_shot/tick/check_foward_block
+#> asset:object/1100.conviction_shot/tick/check_forward_block
 #
 #
 #
