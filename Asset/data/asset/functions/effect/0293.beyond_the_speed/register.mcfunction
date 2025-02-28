@@ -12,7 +12,8 @@
     data modify storage asset:effect Name set value '{"text":"スピードの向こう側",}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"移動速度が極端に上昇するが"}','{"text":"待望の瞬間が付与されなくなる"}']
-# 効果時間 (int) '{"text":"移動速度が極端に上昇するが"}'ge asset:effect Duration set value 600
+# 効果時間 (int) (default = API || error)
+    data modify storage asset:effect Duration set value 600
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
