@@ -10,19 +10,11 @@
 # ここから先は神器側の効果の処理を書く
 
 # ダメージ
-    # 与えるダメージ = 550
-        data modify storage api: Argument.Damage set value 50f
-    # 物理属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 炎属性
-        data modify storage api: Argument.ElementType set value "Fire"
-    # 耐性エフェクトを無視するか否か
-        data modify storage api: Argument.FixedDamage set value false
-# 補正functionを実行
+    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-# 攻撃した対象に実行
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
-# リセット
     function api:damage/reset
 
 # 自身にエフェクト付与
