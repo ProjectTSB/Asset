@@ -6,9 +6,7 @@
 
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 # デバッグのコマンド
     #scoreboard players set $Random Temporary 2
 # スキル選択
