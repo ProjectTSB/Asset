@@ -10,7 +10,7 @@
 
 # 演出
     playsound entity.blaze.hurt player @a ~ ~ ~ 1.2 0.1
-    playsound block.sand.step player @p ~ ~ ~ 1.0 0.8
+    playsound block.sand.step player @a ~ ~ ~ 1.0 0.8
     particle block stone ~ ~1 ~ 0.2 1 0.2 0 10
     particle block redstone_block ~ ~1 ~ 0.2 1 0.2 0 2
     particle crit ~ ~1 ~ 0.2 1 0.2 0.1 3
