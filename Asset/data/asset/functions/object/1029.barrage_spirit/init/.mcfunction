@@ -20,10 +20,7 @@
     execute as @e[type=armor_stand,scores={ObjectID=1029}] at @s if score @p[tag=1029.OwnerPlayer] UserID = @e[type=armor_stand,scores={ObjectID=1029},distance=..0.01,sort=nearest,limit=1] 1029.UserID run kill @s[tag=!1029.SpiritInit]
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $6 Const
+    execute store result score $Random Temporary run random value 0..5
 
 # メッセージ
     execute if score $Random Temporary matches 0 run tellraw @p[tag=1029.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Spirit","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"Hello!","font":"illageralt"}]
