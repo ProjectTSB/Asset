@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"スクラップメイカー"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"継続的に物理無属性ダメージを受ける"}'
+    data modify storage asset:effect Description set value ['{"text":"継続的に物理無属性ダメージを受ける"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 20
 # スタック (int) (default = API || 1)
