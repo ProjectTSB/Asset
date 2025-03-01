@@ -11,6 +11,17 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
+# ダメージ
+# 夜の時はデスログを1パターン追加
+    data modify storage api: Argument.Damage set value 10.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって闇に引きずり込まれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    execute if predicate lib:is_night run data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって夜の闇に消えた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    function api:damage/modifier
+    execute as @p[tag=Victim] run function api:damage/
+    function api:damage/reset
+
 # 暗闇を難易度比例で付与
 # Duration = 10(Difficulty + 1)
     function api:global_vars/get_difficulty

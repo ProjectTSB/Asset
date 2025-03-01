@@ -9,8 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# スピードバフ
-    effect give @s speed 3 1 true
-
 # 演出
     playsound entity.bat.ambient player @a ~ ~ ~ 0.8 2 0
+
+# バフ
+    data modify storage api: Argument.ID set value 286
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

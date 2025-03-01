@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1202.scrap_maker/register",
+        "asset:artifact/1199.healer_trance/register",
+        "asset:artifact/1183.cosmo_site/register",
+        "asset:artifact/1174.sanguis/register",
+        "asset:artifact/1200.alchemy_hammer/register",
+        "asset:artifact/1192.celestial_harmony/register",
         "asset:artifact/0715.world_tree_crown/register",
         "asset:artifact/1141.bell_of_courage/register",
         "asset:artifact/1096.spirit_flute/register",

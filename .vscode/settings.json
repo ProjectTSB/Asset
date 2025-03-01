@@ -494,8 +494,8 @@
                         "# 神器のクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact LocalCooldown set value ",
                         "# 種別クールダウン ({Type: string, Duration: int}) (オプション)",
-                        "   # data modify storage asset:artifact TypeCooldown.Type set value ",
-                        "   # data modify storage asset:artifact TypeCooldown.Duration set value",
+                        "    # data modify storage asset:artifact TypeCooldown.Type set value ",
+                        "    # data modify storage asset:artifact TypeCooldown.Duration set value",
                         "# グローバルクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact SpecialCooldown set value ",
                         "# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
@@ -666,8 +666,8 @@
                         "# 神器のクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact LocalCooldown set value ",
                         "# 種別クールダウン ({Type: string, Duration: int}) (オプション)",
-                        "   # data modify storage asset:artifact TypeCooldown.Type set value ",
-                        "   # data modify storage asset:artifact TypeCooldown.Duration set value",
+                        "    # data modify storage asset:artifact TypeCooldown.Type set value ",
+                        "    # data modify storage asset:artifact TypeCooldown.Duration set value",
                         "# グローバルクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact SpecialCooldown set value ",
                         "# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
@@ -1673,8 +1673,8 @@
                         "# @private",
                         "",
                         "# 召喚",
-                        "   data modify storage api: Argument.ID set value %id%",
-                        "   function api:mob/summon"
+                        "    data modify storage api: Argument.ID set value %id%",
+                        "    function api:mob/summon"
                     ]
                 }
             ]
@@ -1708,7 +1708,7 @@
                         "# @within asset_manager:mob/triggers/summon/summon.m",
                         "",
                         "# 本来の処理を呼び出す",
-                        "   function asset:mob/%namespace%/summon/"
+                        "    function asset:mob/%namespace%/summon/"
                     ]
                 }
             ],
@@ -1787,7 +1787,7 @@
                         "# @within asset_manager:mob/triggers/call_method/run_method.m",
                         "",
                         "# 本来の処理を呼び出す",
-                        "   function asset:mob/%namespace%/%method_name%/"
+                        "    function asset:mob/%namespace%/%method_name%/"
                     ]
                 }
             ],
@@ -1849,7 +1849,7 @@
                         "# @within asset_manager:mob/triggers/attack/attack.m",
                         "",
                         "# 本来の処理を呼び出す",
-                        "   function asset:mob/%namespace%/attack/",
+                        "    function asset:mob/%namespace%/attack/",
                     ]
                 }
             ],
@@ -1888,7 +1888,7 @@
                         "# @within asset_manager:mob/triggers/hurt/hurt.m",
                         "",
                         "# 本来の処理を呼び出す",
-                        "   function asset:mob/%namespace%/hurt/",
+                        "    function asset:mob/%namespace%/hurt/",
                     ]
                 }
             ],
@@ -1927,7 +1927,7 @@
                         "# @within asset_manager:mob/triggers/death/death.m",
                         "",
                         "# 本来の処理を呼び出す",
-                        "   function asset:mob/%namespace%/death/",
+                        "    function asset:mob/%namespace%/death/",
                     ]
                 }
             ],
@@ -1966,7 +1966,7 @@
                         "# @within asset_manager:mob/triggers/tick/tick.m",
                         "",
                         "# 元のTick処理を呼び出す",
-                        "   function asset:mob/%namespace%/tick/"
+                        "    function asset:mob/%namespace%/tick/"
                     ]
                 }
             ],
@@ -2005,7 +2005,7 @@
                         "# @within asset_manager:mob/triggers/init/init.m",
                         "",
                         "# 元のInit処理を呼び出す",
-                        "   function asset:mob/%namespace%/init/"
+                        "    function asset:mob/%namespace%/init/"
                     ]
                 }
             ],
@@ -2074,7 +2074,7 @@
                         "# @within asset_manager:mob/remove/remove.m",
                         "",
                         "# 元のInit処理を呼び出す",
-                        "   function asset:mob/%namespace%/remove/"
+                        "    function asset:mob/%namespace%/remove/"
                     ]
                 }
             ],
@@ -2107,7 +2107,7 @@
                         "# 名前 (TextComponentString)",
                         "    data modify storage asset:effect Name set value ",
                         "# 説明文 (TextComponentString[])",
-                        "    data modify storage asset:effect Description set value ",
+                        "    data modify storage asset:effect Description set value []",
                         "# 効果時間 (int) (default = API || error)",
                         "    data modify storage asset:effect Duration set value ",
                         "# スタック (int) (default = API || 1)",
