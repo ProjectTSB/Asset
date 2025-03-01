@@ -15,7 +15,9 @@
     scoreboard players reset $RecursiveLimit Temporary
 
 # 暗視を付与
-    effect give @a[distance=..8] night_vision 26 0 true
+    data modify storage api: Argument set value {ID:191,Duration:420}
+    execute as @a[distance=..8] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 暗闇を解除
     data modify storage api: Argument.ID set value 24
