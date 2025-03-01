@@ -9,7 +9,7 @@
 
 # バックステップ
     data modify storage lib: Argument.VectorMagnitude set value 1
-    execute facing entity @p[gamemode=!spectator] feet rotated ~180 ~-10 run function lib:motion/
+    execute facing entity @p[gamemode=!spectator,distance=..32] feet rotated ~180 ~-10 run function lib:motion/
     data remove storage lib: Argument
 
 # 薬品投げ

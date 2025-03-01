@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/22_latter_pursuit/3.0.play_start_animation
+#> asset:mob/0327.eclael/tick/app.skill_events/22_latter_pursuit/3.0.play_animation
 #
 # アニメーションのイベントハンドラ 後半・鞭コンボ アニメーション再生
 #

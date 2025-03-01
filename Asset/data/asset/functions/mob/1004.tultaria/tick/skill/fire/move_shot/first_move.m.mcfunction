@@ -17,7 +17,7 @@
     kill @e[type=marker,tag=RW.TeleportMarker,distance=..128,sort=nearest,limit=1]
 
 # プレイヤーの足元に召喚
-    execute at @r run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
+    execute at @r[gamemode=!spectator,distance=..64] run summon marker ~ ~ ~ {Tags:["RW.RotateMarker"]}
 
 # プレイヤーから12ブロック離れた、ランダムな角度の位置にマーカーを置く
     $execute as @e[type=marker,tag=RW.RotateMarker,distance=..128,limit=1] at @s rotated $(Rotation) 0 run tp @s ^ ^ ^12

@@ -5,4 +5,8 @@
 # @within asset:mob/alias/213/summon
 
 # 元となるEntityを召喚する
+<<<<<<< HEAD
     summon phantom ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiBurn","AlwaysInvisible"],DeathLootTable:"empty",NoAI:1b}
+=======
+    summon phantom ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiBurn"],DeathLootTable:"empty",NoAI:1b}
+>>>>>>> master

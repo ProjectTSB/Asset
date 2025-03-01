@@ -18,13 +18,13 @@
 # 判定
     # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 45.0f
+        data modify storage api: Argument.Damage set value 45.0f
     # 第1属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第2属性
         data modify storage api: Argument.ElementType set value "None"
     # ダメージ
-        function lib:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function lib:damage/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset

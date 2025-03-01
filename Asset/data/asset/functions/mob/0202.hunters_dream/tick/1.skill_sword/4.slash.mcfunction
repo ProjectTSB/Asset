@@ -11,12 +11,12 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
 # ダメージ
-    data modify storage lib: Argument.Damage set value 12.0f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "None"
-    function lib:damage/modifier
-    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 12.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+    function api:damage/reset
 
 # 演出
     execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function asset:mob/0202.hunters_dream/tick/1.skill_sword/5.vfx

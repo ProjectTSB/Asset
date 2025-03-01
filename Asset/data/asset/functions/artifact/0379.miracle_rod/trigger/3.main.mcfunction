@@ -12,12 +12,8 @@
 # 演出
     playsound minecraft:entity.puffer_fish.death player @a ~ ~ ~ 1 0
 
-# 魔法陣展開
-    summon area_effect_cloud ~ ~ ~ {Duration:2147483647,Tags:["AJ.Magic","AJ.MagicSet","Uninterferable"]}
-    execute as @e[type=area_effect_cloud,tag=AJ.MagicSet,sort=nearest,limit=1] run tp @s @p
-    scoreboard players set @e[type=area_effect_cloud,tag=AJ.MagicSet,sort=nearest,limit=1] AJ.CoolTime 10
-    scoreboard players operation @e[type=area_effect_cloud,tag=AJ.MagicSet,sort=nearest,limit=1] AJ.UserID = @s UserID
-    tag @e[type=area_effect_cloud,tag=AJ.MagicSet,sort=nearest,limit=1] remove AJ.MagicSet
-
-# 魔法陣実行
-    function asset:artifact/0379.miracle_rod/trigger/3.2.magic_circle
+# Object召喚
+    data modify storage api: Argument.ID set value 1093
+    data modify storage api: Argument.FieldOverride.Damage set value 680f
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function api:object/summon

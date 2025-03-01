@@ -33,16 +33,16 @@
         execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0756.sakura_hubuki/trigger/4.range_attack
 
     # 数値を代入
-        execute store result storage lib: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
+        execute store result storage api: Argument.Damage float 1.0 run scoreboard players get $RandomDamage Temporary
     # 属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "Water"
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "Water"
     # 補正
-        function lib:damage/modifier
+        function api:damage/modifier
     # ダメージを与える
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function lib:damage/
+        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
 
 # リセット
     scoreboard players reset $Random Temporary
     scoreboard players reset $RandomDamage Temporary
-    function lib:damage/reset
+    function api:damage/reset
