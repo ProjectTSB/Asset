@@ -859,7 +859,7 @@
 #   function asset:effect/extends
 #   function asset:effect/super.*
 #   function asset:effect/*/register
-#   function asset:effect/*/
+#   function asset:effect/*/*/
 #   function asset_manager:effect/**
 #declare storage asset:effect from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L12
 
