@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0310.angel_wing/_/remove",
+        "asset:effect/0291.mine_soul/_/remove",
+        "asset:effect/0286.dont_hit_me/_/remove",
         "asset:effect/0308.healer_trance/_/remove",
         "asset:effect/0309.healer_trance/_/remove",
         "asset:effect/0190.fall_damage_immunity/_/remove",

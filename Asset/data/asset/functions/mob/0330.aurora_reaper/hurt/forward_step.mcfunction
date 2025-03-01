@@ -1,4 +1,4 @@
-#> asset:mob/0330.aurora_reaper/hurt/4.foward_step
+#> asset:mob/0330.aurora_reaper/hurt/forward_step
 #
 # 前進する
 #
@@ -18,4 +18,7 @@
     scoreboard players reset $Random Temporary
 
 # CTをセット
-    scoreboard players set @s 96.MotionCT 20
+    data modify storage asset:context this.MotionCT set value 10
+
+# 空中ジャンプ可能な回数をセット
+    # data modify storage asset:context this.AirJumpCount set value 5
