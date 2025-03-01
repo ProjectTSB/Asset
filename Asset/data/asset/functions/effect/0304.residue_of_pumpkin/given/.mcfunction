@@ -9,3 +9,6 @@
 
 # 補正を付与する
     function asset:effect/0304.residue_of_pumpkin/modifier/add
+
+# Implement
+    data modify storage asset:effect Implement set value true
