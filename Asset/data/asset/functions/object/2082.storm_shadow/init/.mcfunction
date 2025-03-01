@@ -1,4 +1,4 @@
-#> asset:object/2082.storm_shadow/init/
+102#> asset:object/2082.storm_shadow/init/
 #
 # Objectのinit時の処理
 #
@@ -6,7 +6,7 @@
 
 # スピード設定
     data modify storage asset:context this.Speed set value 7
-    data modify storage asset:context this.Range set value 2048
+    data modify storage asset:context this.Range set value 1024
     data modify storage asset:context this.MovePerStep set value 0.5
     
 
