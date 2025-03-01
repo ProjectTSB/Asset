@@ -18,7 +18,7 @@
 # 攻撃
     execute store result storage api: Argument.Damage double 0.01 run scoreboard players get $Damage Temporary
     data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.AttackType set value "Thunder"
+    data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.FixedDamage set value true
     execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
