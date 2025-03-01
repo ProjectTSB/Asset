@@ -12,7 +12,6 @@
 # 演出
     #playsound ogg:block.respawn_anchor.charge3 player @a ~ ~ ~ 0.25 2
     execute positioned ~ ~1 ~ run function asset:artifact/0702.bright_lamp/trigger/vfx
-    scoreboard players reset $RecursiveLimit Temporary
 
 # 暗視を付与
     data modify storage api: Argument set value {ID:191,Duration:420}
