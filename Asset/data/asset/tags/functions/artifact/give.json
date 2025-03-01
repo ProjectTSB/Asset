@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:artifact/1199.healer_trance/give/1.trigger",
+        "asset:artifact/1183.cosmo_site/give/1.trigger",
+        "asset:artifact/1174.sanguis/give/1.trigger",
+        "asset:artifact/1200.alchemy_hammer/give/1.trigger",
+        "asset:artifact/1176.b_l_e_s_s/give/1.trigger",
+        "asset:artifact/1175.rubber_mallet/give/1.trigger",
+        "asset:artifact/1192.celestial_harmony/give/1.trigger",
         "asset:artifact/0991.soul_mate/give/1.trigger",
         "asset:artifact/0565.heartland/give/1.trigger",
         "asset:artifact/0564.heartland/give/1.trigger",

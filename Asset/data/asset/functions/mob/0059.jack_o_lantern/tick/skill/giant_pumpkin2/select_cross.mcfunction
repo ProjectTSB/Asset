@@ -12,7 +12,7 @@
     execute store result score $Temp Temporary if data storage asset:context this.List
 
 # 乱数
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score $Random Temporary run random value 0..65535
     scoreboard players operation $Random Temporary %= $Temp Temporary
 
 # 要素を代入

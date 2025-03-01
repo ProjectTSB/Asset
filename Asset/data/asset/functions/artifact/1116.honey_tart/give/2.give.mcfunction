@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ハニーハニータルト","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"HPを10秒間継続的に1.5ずつ回復する。","color":"white"}','{"text":"ハチミツがたっぷりとかかったタルト。","color":"gray"}','{"text":"一口でも蜜の甘さがじんわり染み渡る。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を10秒間かけて15.0回復する","color":"white"}','{"text":"ハチミツがたっぷりとかかったタルト","color":"gray"}','{"text":"一口でも蜜の甘さがじんわり染み渡る","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

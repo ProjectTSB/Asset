@@ -6,7 +6,7 @@
 #   asset:mob/0104.mad_scientist/init/
 #   asset:mob/0104.mad_scientist/tick/reset
 
- # 25%ずつの確率で4つに分岐 それぞれ毒、火、水、雷
+# 25%ずつの確率で4つに分岐 それぞれ毒、火、水、雷
     execute store result score $Random Temporary run random value 0..3
     execute if score $Random Temporary matches 0 run data modify storage asset:context this.Element set value "Poison"
     execute if score $Random Temporary matches 1 run data modify storage asset:context this.Element set value "Fire"

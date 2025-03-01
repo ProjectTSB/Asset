@@ -4,21 +4,14 @@
 #
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
 
-# Rotationを設定して召喚
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^7.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^7.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^4.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^4.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^1.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^1.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^-1.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^-1.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^-4.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^-4.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
 
-    data modify storage api: Argument.FieldOverride.RotationX set value 90.0
-    execute positioned ^9 ^0 ^-7.5 run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/summon
+    execute positioned ^9 ^0 ^-7.5 rotated 90 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral
