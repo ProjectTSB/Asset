@@ -34,8 +34,8 @@
     # 10%で発動
         execute if score $Random Temporary matches 0 run data modify storage lib: Argument.Spread set value 2
     # 50%で発動
-        execute if score $Random Temporary matches 1..6 run data modify storage lib: Argument.Distance set value 5.0
-        execute if score $Random Temporary matches 1..6 run data modify storage lib: Argument.Spread set value 0.1
+        execute if score $Random Temporary matches 1..5 run data modify storage lib: Argument.Distance set value 5.0
+        execute if score $Random Temporary matches 1..5 run data modify storage lib: Argument.Spread set value 0.1
 
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
