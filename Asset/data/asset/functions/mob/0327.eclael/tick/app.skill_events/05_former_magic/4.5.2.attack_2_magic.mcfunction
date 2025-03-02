@@ -10,9 +10,7 @@
     particle flash ~ ~0.5 ~ 0 0 0 0 1
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $8 Const
+    execute store result score $Random Temporary run random value 0..7
 
     execute if score $Random Temporary matches 0 rotated ~ 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0
     execute if score $Random Temporary matches 1 rotated ~90 90 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/5.3.1.particle_blue_0

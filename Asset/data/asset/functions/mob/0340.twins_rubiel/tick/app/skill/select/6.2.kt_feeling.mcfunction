@@ -6,8 +6,7 @@
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/select/5.1.interrupt_kt
 
 # ランダム
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 # カウンター増加
     scoreboard players operation @s 9G.ActionCount.Feeling += $Random Temporary
 
