@@ -15,7 +15,7 @@
     execute if entity @s[tag=Random] if entity @p[distance=..15] run function asset:mob/0190.thunder_mage/tick/predict_attack
 
 # 次に攻撃するタイミングをランダムにする
-    execute store result score @s General.Mob.Tick run random value -110..-80
+    execute store result score @s General.Mob.Tick run random value -80..-50
 
 # リセット
     tag @s[tag=Random] remove Random
