@@ -45,7 +45,7 @@
         execute if score $Random Temporary matches 11 run function asset:artifact/0441.awaited_opportunity/trigger/message/hardluck
 
     # スピードの向こう側
-        execute if score $Random Temporary matches 13 run effect give @s speed 30 10 true
+        execute if score $Random Temporary matches 13 run function asset:artifact/0441.awaited_opportunity/trigger/message/beyond_the_speed
 
     # リセット
         scoreboard players reset $Random Temporary
