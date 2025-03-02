@@ -22,7 +22,6 @@
     execute if predicate lib:random_pass_per/50 run tag @s add 9E.State.Phase.Sapphiel
     execute unless entity @s[tag=9E.State.Phase.Sapphiel] run tag @s add 9E.State.Phase.Rubiel
     execute store result score @s 9E.ActionCount run random value 0..2
-    scoreboard players reset $Random Temporary
 
 # リセット
     scoreboard players reset $Random Temporary
