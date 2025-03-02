@@ -28,3 +28,6 @@
 # リセット
     function api:damage/reset
     tag @a remove 93.Temp.AttackTarget
+
+# 全プレイヤー位置に攻撃地点を設定
+    execute as @a[distance=..40] at @s run summon area_effect_cloud ^ ^ ^ {Duration:25,Tags:["93.Temp.AttackPosition"]}

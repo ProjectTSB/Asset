@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/animation_2
+#> asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/animation_1
 #
 # アニメーションのイベントハンドラ
 #
