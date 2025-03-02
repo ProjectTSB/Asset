@@ -5,8 +5,7 @@
 # @within function asset:mob/0330.aurora_reaper/hurt/
 
 # 乱数取得
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # motionする
     data modify storage lib: Argument.VectorMagnitude set value 1.5
