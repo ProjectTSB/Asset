@@ -107,6 +107,7 @@
             #declare function animated_java:eclael/animations/35_0_slash_beam_start/tween
             #declare function animated_java:eclael/animations/35_1_slash_beam/tween
             #declare function animated_java:eclael/animations/36_quick_iai/tween
+            #declare function animated_java:eclael/animations/37_fall_spear/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
@@ -189,6 +190,7 @@
     #declare tag 93.Skill.Beam 残心
     #declare tag 93.Skill.IaiMove 居合
     #declare tag 93.Skill.IaiMove.Hit 居合ヒット
+    #declare tag 93.Skill.Tensei 点睛
     ## その他、オブジェクト
     #declare tag 93.Temp.Ground
     #declare tag 93.Temp.AttackPosition

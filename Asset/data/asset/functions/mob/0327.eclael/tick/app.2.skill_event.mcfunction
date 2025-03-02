@@ -132,7 +132,7 @@
 # 移動斬り
     execute if entity @s[tag=93.Skill.MoveSlash] run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/main
 
-# 桜花剣乱
+# 雷斗星刃・当流
     execute if entity @s[tag=93.Skill.FieldSlash] run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/main
 
 # 残心
@@ -140,3 +140,6 @@
 
 # 居合
     execute if entity @s[tag=93.Skill.IaiMove] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+
+# 点睛
+    execute if entity @s[tag=93.Skill.Tensei] run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/main

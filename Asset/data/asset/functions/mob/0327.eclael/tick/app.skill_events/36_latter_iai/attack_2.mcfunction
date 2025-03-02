@@ -11,7 +11,7 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
 
 # ターゲット取得
-    execute positioned ~ ~ ~ run tag @a[tag=!PlayerShouldInvulnerable,distance=..2.5] add 93.Temp.AttackTarget
+    execute positioned ~ ~ ~ run tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add 93.Temp.AttackTarget
 
 # TODO：与えるダメージの調整
 # ダメージ
@@ -36,3 +36,4 @@
     data modify storage api: Argument.ID set value 2001
     data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504],Scale:[8f,4f,3f],Transformation:{left_rotation:{axis:[0,0,1],angle:-0.2f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     execute rotated ~-40 ~-60 positioned ^ ^0.5 ^1.6 run function api:object/summon
+    execute rotated ~240 ~-40 positioned ^ ^1 ^1.5 rotated ~-30 ~ run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/particle_jump

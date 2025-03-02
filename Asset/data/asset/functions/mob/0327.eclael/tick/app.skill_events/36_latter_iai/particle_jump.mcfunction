@@ -2,7 +2,7 @@
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+# @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/**
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGwDMArKQOwrUoC0KlALAJyueelqrABwBGWgDNWDCdUoNq1UQEMATKXxgAdsoC2CZIDDFAASiwBGMox6AzknAoA9oS0Qk1AAwEUcV3Az2YABuytiEBuAAHkheYFAxAL4JBNakaIR2iKIeObk5BDYQVm6IsXDY2GgwNgbZsRiORRAGsWg2AKIVVTXtAI6EodhQAMqWPuSIEqE1SQC6QA_3
 # 円 1

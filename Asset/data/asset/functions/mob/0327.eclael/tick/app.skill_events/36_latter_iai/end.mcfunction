@@ -1,6 +1,6 @@
 #> asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/end
 #
-# アニメーションのイベントハンドラ 桜花剣乱
+# アニメーションのイベントハンドラ 雷斗星刃・当流
 #
 # @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
 
