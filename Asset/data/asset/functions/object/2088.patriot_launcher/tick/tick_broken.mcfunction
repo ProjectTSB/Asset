@@ -41,15 +41,17 @@
     execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsBroken set value 0b
     execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.IsActive set value 1b
     execute if score $RepairTime Temporary matches ..0 run data modify storage asset:context this.MissileCooltime set from storage asset:context this.MaxMissileCooltime
-    execute if score $RepairTime Temporary matches ..0 on passengers run data modify entity @s block_state.Name set value "minecraft:white_concrete"
-    execute if score $RepairTime Temporary matches ..0 on passengers run tag @s remove PatriotLauncher.IsBroken
+    execute if score $RepairTime Temporary matches ..0 run tag @s remove PatriotLauncher.IsBroken
     execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.DisplayName] run data modify entity @s text set value '{"color":"#ffffff","text":"対空砲"}'
     execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[type=text_display,tag=PatriotLauncher.Gauge] run data modify entity @s text set value '{"color":"#ffffff","text":""}'
+    execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/animations/default/play
+    execute if score $RepairTime Temporary matches ..0 on passengers if entity @s[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/variants/default/apply
 
 # reset
     scoreboard players reset $RepairValue Temporary
     scoreboard players reset $RepairTime Temporary
     scoreboard players reset $RepairPlayer Temporary
+    scoreboard players reset $MaxRepairTime Temporary
 
 #プレイヤーが修理中の場合修理値をn+m*p増加
 #修理値ｇはmaxになったら修理状態へ戻す
