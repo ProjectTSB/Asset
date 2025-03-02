@@ -34,22 +34,22 @@
 
 # ライン斬撃
     summon area_effect_cloud ^ ^ ^ {Duration:1,Tags:["93.Temp.AttackRotation"]}
-    execute as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] run tp @s ~ ~ ~ ~25 0
-    data modify storage api: Argument.ID set value 2207
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.IsGreen set value true
-    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
-    execute positioned ^-2 ^ ^ run function api:object/summon
-    execute as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] at @s run tp @s ~ ~ ~ ~-50 0
-    data modify storage api: Argument.ID set value 2207
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.IsGreen set value false
-    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
-    execute positioned ^2 ^ ^ run function api:object/summon
+    execute if predicate api:global_vars/difficulty/min/hard as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] run tp @s ~ ~ ~ ~25 0
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.ID set value 2207
+    execute if predicate api:global_vars/difficulty/min/hard store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.IsGreen set value true
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
+    execute if predicate api:global_vars/difficulty/min/hard positioned ^-2 ^ ^ run function api:object/summon
+    execute if predicate api:global_vars/difficulty/min/hard as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] at @s run tp @s ~ ~ ~ ~-50 0
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.ID set value 2207
+    execute if predicate api:global_vars/difficulty/min/hard store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.IsGreen set value false
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
+    execute if predicate api:global_vars/difficulty/min/hard positioned ^2 ^ ^ run function api:object/summon
 
 # 演出
     data modify storage api: Argument.ID set value 2001
-    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504],Scale:[18f,1f,20f],Transformation:{left_rotation:{axis:[0,0,1],angle:-0.3f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504,20505],Scale:[18f,1f,20f],Transformation:{left_rotation:{axis:[0,0,1],angle:-0.3f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     execute positioned ^ ^1.8 ^-3 run function api:object/summon

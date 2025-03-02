@@ -8,4 +8,7 @@
     tag @s remove 93.Skill.Beam
 
 # タイマーリセット
-    scoreboard players set @s 93.AnimationTimer -1
+    scoreboard players set @s 93.AnimationTimer 0
+
+# 居合に移行
+    tag @s add 93.Skill.IaiMove

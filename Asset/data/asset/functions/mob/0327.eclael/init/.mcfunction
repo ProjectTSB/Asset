@@ -13,7 +13,7 @@
     scoreboard players set @s 93.DamageIntervalTimer 0
 
 # 中心点召喚
-    summon marker ~ ~2 ~ {Tags:["93.Marker.SpawnPoint"]}
+    summon marker ~ ~2.5 ~ {Tags:["93.Marker.SpawnPoint"]}
 
 # animated javaモデル召喚
     execute positioned ~ ~-100 ~ rotated ~ 0 run function animated_java:eclael/summon {args:{animation: '29_0_phase_start', frame: 1}}
