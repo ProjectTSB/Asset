@@ -1,4 +1,4 @@
-#> asset:artifact/0383.i_scream_ice_cream/trigger/3.1.message
+#> asset:artifact/0383.i_scream_ice_cream/trigger/message/place_froze
 #
 # 数秒遅れての処理
 #
