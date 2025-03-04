@@ -9,5 +9,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
     function api:damage/reset
