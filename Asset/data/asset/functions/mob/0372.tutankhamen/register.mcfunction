@@ -79,4 +79,4 @@
 # 突進
     data modify storage asset:mob Field.Damage.Dash.Charge set value 30f
 # ダッシュからの斬撃
-    data modify storage asset:mob Field.Damage.Dash.Charge set value 45f
+    data modify storage asset:mob Field.Damage.Dash.Slash set value 45f
