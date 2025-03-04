@@ -1,6 +1,6 @@
 #> asset:mob/0372.tutankhamen/tick/skill/many_shoot/summon
 #
-# 魔法陣を召喚
+# 怨霊弾を召喚
 #
 # @within function asset:mob/0372.tutankhamen/tick/skill/many_shoot/spread
 
