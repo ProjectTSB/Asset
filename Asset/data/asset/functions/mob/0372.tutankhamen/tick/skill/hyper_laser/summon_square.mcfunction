@@ -7,7 +7,6 @@
 # データ指定
     execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.HyperLaser
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
 
 # 召喚
     data modify storage api: Argument.ID set value 2091
