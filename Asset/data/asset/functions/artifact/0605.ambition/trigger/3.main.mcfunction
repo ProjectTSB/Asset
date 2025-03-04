@@ -17,12 +17,13 @@
 
 # ダメージ最大値設定
     scoreboard players set $MaxDamage Temporary 4400
+    scoreboard players operation @s Temporary < $MaxDamage Temporary
 
 # 演出
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] positioned ~ ~1 ~ summon marker run function asset:artifact/0605.ambition/trigger/vfx/
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run scoreboard players operation @s Temporary < $MaxDamage Temporary
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get @s Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
