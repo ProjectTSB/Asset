@@ -78,3 +78,5 @@
     data modify storage asset:mob Field.Damage.HyperLaser set value 55f
 # 突進
     data modify storage asset:mob Field.Damage.Dash.Charge set value 30f
+# ダッシュからの斬撃
+    data modify storage asset:mob Field.Damage.Dash.Charge set value 45f
