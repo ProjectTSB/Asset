@@ -19,7 +19,7 @@
     item replace entity @s armor.head with stick{CustomModelData:20470}
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 40f
+    data modify storage api: Argument.Damage set value 30f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
