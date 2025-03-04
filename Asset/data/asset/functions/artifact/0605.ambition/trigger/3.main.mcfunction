@@ -15,7 +15,7 @@
 # 没収されたアイテム * 11の値を設定
     scoreboard players operation @s Temporary *= $11 Const
 
-# 最大値をきめる
+# ダメージ最大値設定
     scoreboard players set $MaxDamage Temporary 4400
 
 # 演出
