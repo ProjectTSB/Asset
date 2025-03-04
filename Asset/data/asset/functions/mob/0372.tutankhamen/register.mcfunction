@@ -72,7 +72,7 @@
 
 # 怨霊弾
     data modify storage asset:mob Field.Damage.ManyShoot set value 30f
-# ハイパーレーザー
+# レーザー
     data modify storage asset:mob Field.Damage.Laser set value 30f
 # ハイパーレーザー
     data modify storage asset:mob Field.Damage.HyperLaser set value 55f
