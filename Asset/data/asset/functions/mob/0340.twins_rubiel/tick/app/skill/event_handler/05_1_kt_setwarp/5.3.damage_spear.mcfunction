@@ -12,7 +12,7 @@
     tag @a[tag=9G.Temp.Target.JumpAvoid] remove 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    # 与えるダメージ = 20
+    # 20
         data modify storage api: Argument.Damage set value 50f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
