@@ -67,7 +67,6 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 
 # フィールド
-
 # ダメージ
 
 # 怨霊弾
