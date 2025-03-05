@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Heartbleed","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"前方半径5m以内の敵の内部を魔力で","color":"white"}','{"text":"切断しダメージと出血スタック3を与える。","color":"white"}','{"text":"出血の効果時間は自分の現在HPが少ないほど長くなる。","color":"white"}','{"text":"出血は敵に0.3秒ごとにNダメージを与え他の出血と重複しない。","color":"white"}','{"text":"Nはスタック数に等しい。","color":"white"}','[{"text":"Message: ","color":"red"},{"text":"0x18 0x0302 0x0003 0x01 0x4000","color":"red","italic":true}]']
+    data modify storage asset:artifact Lore set value ['{"text":"前方半径5m以内の敵の内部を魔力で","color":"white"}','{"text":"切断しダメージと出血スタック3を与える。","color":"white"}','{"text":"出血の効果時間は自分の現在HPが少ないほど長くなる。","color":"white"}','{"text":"出血は敵に0.3秒ごとにNダメージを与える。","color":"white"}','{"text":"Nはスタック数に等しい。","color":"white"}','[{"text":"Message: ","color":"red"},{"text":"0x18 0x0302 0x0003 0x01 0x4000","color":"red","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
