@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0305.poison_of_flowgun/_/register",
         "asset:effect/0114.receive_heal_debuff/_/register",
         "asset:effect/0064.receive_heal_debuff/_/register",
         "asset:effect/0014.receive_heal_debuff/_/register",
