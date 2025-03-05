@@ -9,10 +9,8 @@
     playsound item.trident.throw player @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
 
-# ほしい範囲に剰余算
-    execute store result score $Random Temporary run function lib:random/
-# 疑似乱数取得
-    scoreboard players operation $Random Temporary %= $3 Const
+# 乱数取得
+    execute store result score $Random Temporary run random value 0..2
 # パーティクル
     execute if score $Random Temporary matches 0 anchored eyes positioned ^ ^ ^1 run function asset:artifact/0600.xtal/trigger/particle/particle_1
     execute if score $Random Temporary matches 1 anchored eyes positioned ^ ^ ^1 run function asset:artifact/0600.xtal/trigger/particle/particle_2
