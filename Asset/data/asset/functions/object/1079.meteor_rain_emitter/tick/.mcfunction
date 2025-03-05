@@ -18,9 +18,9 @@
 # 10tick毎にメテオを召喚する
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $10 Const
-    execute if score $Interval Temporary matches 0 positioned ~ ~40 ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
-    execute if score $Interval Temporary matches 0 positioned ~ ~40 ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
-    execute if score $Interval Temporary matches 0 positioned ~ ~40 ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
+    execute if score $Interval Temporary matches 0 positioned ~ ~ ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
+    execute if score $Interval Temporary matches 0 positioned ~ ~ ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
+    execute if score $Interval Temporary matches 0 positioned ~ ~ ~ run function asset:object/1079.meteor_rain_emitter/tick/summon_meteor
     scoreboard players reset $Interval Temporary
 
 # 消滅処理
