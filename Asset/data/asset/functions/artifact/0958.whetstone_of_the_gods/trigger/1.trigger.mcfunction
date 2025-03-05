@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:artifact/**
 
-# storage asset:idのoffhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
-    execute if data storage asset:context id{offhand:958} run function asset:artifact/0958.whetstone_of_the_gods/trigger/2.check_condition
+# storage asset:idのmainhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
+    execute if data storage asset:context id{mainhand:958} run function asset:artifact/0958.whetstone_of_the_gods/trigger/2.check_condition

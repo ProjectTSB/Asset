@@ -3,7 +3,7 @@
     "entity": "this",
     "predicate": {
         "equipment": {
-            "mainhand": {
+            "offhand": {
                 "tag": "asset:artifact/0958.whetstone_of_the_gods/weapons"
             }
         }
