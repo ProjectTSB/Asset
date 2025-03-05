@@ -34,6 +34,6 @@
     scoreboard players reset $Interval
     tag @s remove 1102.Even
 # ターゲットのタグを消す
-    tag @e[type=#lib:living,tag=Enemy,tag=1102.Target,tag=!Uninterferable,distance=..20] remove 1102.Target
+    tag @e[type=#lib:living,tag=Enemy,tag=1102.Target,tag=!Uninterferable,distance=..40] remove 1102.Target
 # 消滅処理
     kill @s[scores={General.Object.Tick=120..}]
