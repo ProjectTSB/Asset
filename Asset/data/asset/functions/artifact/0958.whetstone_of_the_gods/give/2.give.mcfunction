@@ -23,11 +23,11 @@
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 4
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "offhand"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"メインハンドに剣または斧を持っている"}'
+    data modify storage asset:artifact Condition set value '{"text":"オフハンドに剣または斧を持っている"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
