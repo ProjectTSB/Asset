@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"あやしいハッパ","color":"dark_green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"不思議な草だ。とても怪しい匂いがする"}','{"text":"「キマってきた？」"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃+10%、耐性+10%、MP回復量+10%を30秒間得るが","color":"white"}','{"text":"使用し続けないとデバフを得てしまう","color":"white"}','{"text":"不思議な草だ。とても怪しい匂いがする","color":"gray"}','{"text":"「キマってきた？」","color":"#222222"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
