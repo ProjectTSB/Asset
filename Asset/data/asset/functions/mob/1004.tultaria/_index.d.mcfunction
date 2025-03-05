@@ -104,5 +104,6 @@
     #declare function animated_java:tultaria/variants/winged/apply
     #declare function animated_java:tultaria/variants/face_eyehalf/apply
     #declare function animated_java:tultaria/variants/face_eyeclose/apply
+    #declare function animated_java:tultaria/variants/face_eyeopen/apply
     #declare tag aj.tultaria.bone.right_ring
     #declare tag aj.tultaria.bone.left_ring
