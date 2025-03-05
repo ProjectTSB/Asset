@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:bow"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"糸を紡ぐ","color":"#ff69b4"}'
+    data modify storage asset:artifact Name set value '{"text":"救済の弓","color":"#ff69b4"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"強力な追尾性能を持つ矢を放つ","color":"white"}','{"text":"クラスの皆には内緒だよ☆","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
