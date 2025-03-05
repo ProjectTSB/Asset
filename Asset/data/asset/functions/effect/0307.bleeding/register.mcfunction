@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"出血"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"継続的に耐性を無視するスタック数に等しいダメージを受ける"}']
+    data modify storage asset:effect Description set value ['{"text":"継続的に耐性を無視する3ダメージを受ける"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value 
 # スタック (int) (default = API || 1)
@@ -37,4 +37,5 @@
 
 # フィールド
     data modify storage asset:effect Field.Tick set value 6
+    data modify storage asset:effect Field.Damage set value 3
     data modify storage asset:effect Field.InflicterID set value -1
