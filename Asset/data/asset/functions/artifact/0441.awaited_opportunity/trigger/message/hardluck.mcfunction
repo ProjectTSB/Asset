@@ -6,7 +6,11 @@
 
 # プレイヤーが"不運"と"踊"っちまった時
     tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"があああああッ･･！！"}]
-    effect give @s unluck 30 1
+
+# “不運”と“踊”る(ID:294)を付与
+    data modify storage api: Argument.ID set value 294
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 自傷
     data modify storage api: Argument.Damage set value 3.5f

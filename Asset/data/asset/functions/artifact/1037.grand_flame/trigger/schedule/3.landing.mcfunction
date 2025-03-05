@@ -34,22 +34,22 @@
     function asset:artifact/1037.grand_flame/trigger/schedule/3.1.vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx

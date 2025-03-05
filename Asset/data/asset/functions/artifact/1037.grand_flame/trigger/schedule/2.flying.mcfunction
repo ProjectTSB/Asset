@@ -6,8 +6,8 @@
 
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/2.1.vfx

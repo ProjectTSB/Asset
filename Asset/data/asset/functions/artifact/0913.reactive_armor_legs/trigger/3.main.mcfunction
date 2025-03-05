@@ -11,5 +11,7 @@
 # 爆発で周囲にダメージを与える
     function asset:artifact/0913.reactive_armor_legs/trigger/3.1.explosion
 
-# アーマータフネスと耐久値を減らす
-    item modify entity @s armor.legs asset:artifact/0913.reactive_armor_legs/decrease_toughness
+# 同一tickで1回しか爆発させないためにeffectをつけてもう発動したことをマーク
+    data modify storage api: Argument.ID set value 306
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

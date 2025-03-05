@@ -38,7 +38,7 @@
     execute store result score $Length Temporary if data storage asset:temp Element[]
 
 # 乱数取得
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score $Random Temporary run random value 0..65535
 
 # 要素数で余剰算
     scoreboard players operation $Random Temporary %= $Length Temporary

@@ -9,9 +9,7 @@
     #declare score_holder $Random
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算する
-    scoreboard players operation $Random Temporary %= $2 Const
+    execute store result score $Random Temporary run random value 0..1
 
 # デバッグのコマンド
     # scoreboard players set $Random Temporary 1

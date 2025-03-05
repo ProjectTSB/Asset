@@ -25,3 +25,6 @@
         execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Meteor.3
     # 4
         execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Meteor.4
+
+# リセット
+    scoreboard players reset $Random Temporary
