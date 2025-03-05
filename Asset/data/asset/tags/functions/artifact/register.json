@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:artifact/0464.lightning_exploit/register",
+        "asset:artifact/1202.scrap_maker/register",
+        "asset:artifact/1199.healer_trance/register",
         "asset:artifact/1183.cosmo_site/register",
         "asset:artifact/1174.sanguis/register",
         "asset:artifact/1200.alchemy_hammer/register",

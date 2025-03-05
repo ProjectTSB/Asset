@@ -5,8 +5,7 @@
 # @within function asset:mob/0339.twins_sapphiel/tick/app/skill/select/5.1.interrupt_hg
 
 # ランダム
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $6 Const
+    execute store result score $Random Temporary run random value 0..5
 
 # 射撃 * 2
     execute if score $Random Temporary matches 0 run tag @s add 9F.Skill.Hg.Shot

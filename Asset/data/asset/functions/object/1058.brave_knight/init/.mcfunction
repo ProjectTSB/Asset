@@ -14,11 +14,8 @@
 # 自身にもIDをいれる
     scoreboard players operation @s 1058.OwnerID = @p[tag=1058.OwnerPlayer] UserID
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $4 Const
+# 乱数取得
+    execute store result score $Random Temporary run random value 0..3
 
 # メッセージ
     execute if score $Random Temporary matches 0 run tellraw @p[tag=1058.OwnerPlayer] [{"text":"<","color":"white"},{"text":"Brave Knight","color":"#a9b9ca"},{"text":"> ","color":"white"},{"text":"With courage in my heart","font":"illageralt"}]

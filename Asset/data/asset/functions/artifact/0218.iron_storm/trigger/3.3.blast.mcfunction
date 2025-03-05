@@ -7,7 +7,6 @@
 #> private
 #
 # @private
-    #declare score_holder $70
     #declare score_holder $DamageCoefficient
     #declare score_holder $DA.OwnerID
     #declare tag DA.Owner
@@ -17,8 +16,7 @@
     execute as @a if score @s UserID = $DA.OwnerID Temporary run tag @s add DA.Owner
 
 # ダメージ係数計算(最大ダメージの30%~100%),計算結果: 係数[%]
-    execute store result score $DamageCoefficient Temporary run function lib:random/
-    scoreboard players operation $DamageCoefficient Temporary %= $70 Const
+    execute store result score $DamageCoefficient Temporary run random value 0..69
     scoreboard players add $DamageCoefficient Temporary 30
 
 # 敵へのダメージ(最大500)

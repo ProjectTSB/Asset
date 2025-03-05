@@ -10,6 +10,7 @@
 # ターゲット選定
     scoreboard players set $WO.TargetID Temporary 0
     function asset:artifact/1176.b_l_e_s_s/trigger/select_target
+    execute if score $WO.TargetID Temporary matches 0 run tellraw @s [{"text": "ターゲットがいません","color": "red"}]
     execute if score $WO.TargetID Temporary matches 0 run tag @s remove CanUsed
     
 # CanUsedタグをチェックして3.main.mcfunctionを実行する

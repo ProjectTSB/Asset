@@ -18,9 +18,7 @@
     scoreboard players operation $StartDelay Temporary -= @s General.Mob.Tick
 
 # 発射タイミングのランダム性
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $10 Const
-    scoreboard players remove $Random Temporary 20
+    execute store result score $Random Temporary run random value -20..-11
     scoreboard players operation $StartDelay Temporary += $Random Temporary
 
 # 召喚
