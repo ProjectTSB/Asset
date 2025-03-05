@@ -1,8 +1,8 @@
-#> asset:effect/0307.blleding/register
+#> asset:effect/0307.bleeding/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0307.blleding/_/register
+# @within function asset:effect/0307.bleeding/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

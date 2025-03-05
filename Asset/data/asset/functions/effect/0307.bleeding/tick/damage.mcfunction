@@ -1,8 +1,8 @@
-#> asset:effect/0307.blleding/tick/damage
+#> asset:effect/0307.bleeding/tick/damage
 #
 # 
 #
-# @within function asset:effect/0307.blleding/tick/
+# @within function asset:effect/0307.bleeding/tick/
 
 #> Private
 # @private
