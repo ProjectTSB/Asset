@@ -20,7 +20,7 @@
 
 # effect 付与
     data modify storage api: Argument.ID set value 307
-    data modify storage api: Argument.Stack set value 3
+    data modify storage api: Argument.FieldOverride.Damage set value 3
     execute store result storage api: Argument.Duration int 0.01 run scoreboard players get $M5.EffectTime Temporary
     execute store result storage api: Argument.FieldOverride.InflicterID int 1 run scoreboard players get @p[tag=this] UserID
     execute as @e[type=#lib:living,tag=M5.Victim,distance=..5] run function api:entity/mob/effect/give
