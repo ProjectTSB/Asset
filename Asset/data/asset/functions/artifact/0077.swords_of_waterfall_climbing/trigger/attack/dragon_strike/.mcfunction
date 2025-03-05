@@ -18,6 +18,11 @@
 # 敵が空中にいなかったらreturn
     execute at @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] unless block ~ ~-1 ~ #lib:no_collision run return 0
 
+# 落下ダメージ無効化
+    data modify storage api: Argument set value {ID:190,Duration:60}
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # 敵を叩き落とす
     execute as @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] at @s run function asset:artifact/0077.swords_of_waterfall_climbing/trigger/attack/dragon_strike/fall_enemy
 

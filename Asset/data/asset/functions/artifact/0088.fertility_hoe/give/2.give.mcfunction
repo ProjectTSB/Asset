@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"豊穣の鍬","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"周囲5mの範囲の作物を最大まで成長させる"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"使用者を中心とした9x9の範囲の作物を最大まで成長させる"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.bone_meal"}'
     data modify storage asset:artifact ConsumeItem.Count set value 8

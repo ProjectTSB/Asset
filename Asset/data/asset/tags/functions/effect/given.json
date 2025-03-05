@@ -1,5 +1,15 @@
 {
     "values": [
+        "asset:effect/0014.receive_heal_debuff/_/given",
+        "asset:effect/0293.beyond_the_speed/_/given",
+        "asset:effect/0292.awaited_opportunity/_/given",
+        "asset:effect/0304.residue_of_pumpkin/_/given",
+        "asset:effect/0191.night_vision/_/given",
+        "asset:effect/0310.angel_wing/_/given",
+        "asset:effect/0286.dont_hit_me/_/given",
+        "asset:effect/0308.healer_trance/_/given",
+        "asset:effect/0309.healer_trance/_/given",
+        "asset:effect/0190.fall_damage_immunity/_/given",
         "asset:effect/0296.soul_disconnection/_/given",
         "asset:effect/0618.soaked/_/given",
         "asset:effect/0067.slowness/_/given",

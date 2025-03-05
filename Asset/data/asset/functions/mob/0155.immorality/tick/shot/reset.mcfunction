@@ -19,7 +19,7 @@
     scoreboard players add $DivisionValue Temporary 1
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score $Random Temporary run random value 0..65535
 # 剰余算する
     scoreboard players operation $Random Temporary %= $DivisionValue Temporary
 # スコアセット

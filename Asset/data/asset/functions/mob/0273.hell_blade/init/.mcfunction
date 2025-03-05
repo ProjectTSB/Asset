@@ -3,9 +3,7 @@
 
 # 向きを90°刻みのランダムに
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $4 Const
+        execute store result score $Random Temporary run random value 0..3
     # 角度を出す
         scoreboard players set @s 7L.FallingRotation 90
         scoreboard players operation @s 7L.FallingRotation *= $Random Temporary

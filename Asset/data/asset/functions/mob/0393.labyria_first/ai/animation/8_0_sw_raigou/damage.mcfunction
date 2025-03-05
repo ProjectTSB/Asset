@@ -47,9 +47,23 @@
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
-# ダメージ設定
-    # ダメージ
-        data modify storage api: Argument.Damage set value 35.0f
+
+#> score_holder
+# @private
+    #declare score_holder $DamageTemp
+
+# 難易度値を取得
+    function api:global_vars/get_difficulty
+
+# ダメージ式：5N + 30
+# Nは難易度値を示します
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 5
+    scoreboard players add $DamageTemp Temporary 30
+
+# ダメージ
+    # 引数の設定
+    # 与えるダメージ
+        execute store result storage api: Argument.Damage int 1 run scoreboard players get $DamageTemp Temporary
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
@@ -61,6 +75,9 @@
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
 # リセット
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $DamageTemp Temporary
 
 # 斬撃音
     function asset:mob/0393.labyria_first/ai/general/6.slash_sound

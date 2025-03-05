@@ -4,5 +4,9 @@
 #
 # @within function asset:object/2021.hydro_storm/tick/
 
-summon item_display ^ ^ ^ {interpolation_duration:0,teleport_duration:0,Tags:["2021.AnnounceLine","AllowProcessingCommonTag","AutoKillWhenDiePassenger"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1.2f,30f],scale:[0f,0f,60f]},item:{id:"purple_stained_glass",Count:1b},Passengers:[{id:"area_effect_cloud",Particle:"block air",Radius:0f,Duration:10}]}
-tp @e[tag=2021.AnnounceLine,distance=..0.001] ~ ~ ~ ~ ~
+data modify storage api: Argument.ID set value 2113
+data modify storage api: Argument.FieldOverride.Color set value 1710847
+data modify storage api: Argument.FieldOverride.Scale set value [6f,60f]
+data modify storage api: Argument.FieldOverride.Interpolation set value 10
+data modify storage api: Argument.FieldOverride.Tick set value 10
+execute positioned ~ ~-1.25 ~ run function api:object/summon

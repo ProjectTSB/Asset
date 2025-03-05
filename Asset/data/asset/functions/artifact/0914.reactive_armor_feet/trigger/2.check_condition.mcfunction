@@ -6,7 +6,13 @@
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/feet
-# 他にアイテム等確認する場合はここに書く
+
+# 発動ロックエフェクトがついてるか確認
+    execute if entity @s[tag=CanUsed] run data modify storage api: Argument.ID set value 306
+    execute if entity @s[tag=CanUsed] run function api:entity/mob/effect/get/from_id
+
+# 付与されていたらCanUsedを削除
+    execute if entity @s[tag=CanUsed] if data storage api: Return.Effect run tag @s remove CanUsed
     
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0914.reactive_armor_feet/trigger/3.main

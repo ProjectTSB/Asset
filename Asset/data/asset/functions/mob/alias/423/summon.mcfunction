@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/summon/summon.m
 
 # 本来の処理を呼び出す
-   function asset:mob/0423.edge_mage/summon/
+    function asset:mob/0423.edge_mage/summon/

@@ -12,7 +12,7 @@
     execute store result storage api: Argument.Damage double 0.5 run attribute @s generic.max_health get
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
-    data modify storage lib: Argument.DeathMessage append value '[{"translate": "%1$sは速度の代償を払った","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは速度の代償を払った","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/
     function api:damage/reset
 

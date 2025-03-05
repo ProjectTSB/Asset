@@ -4,5 +4,9 @@
 #
 # @within asset:object/alias/2032/summon
 
-# 召喚する
-    function asset:object/2032.pumpkin_mirage/summon/.m with storage asset:context this
+# 元となるEntityを召喚する
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ 0
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    data modify storage asset:temp Args.Color set from storage asset:context this.Color
+    function asset:object/2032.pumpkin_mirage/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args

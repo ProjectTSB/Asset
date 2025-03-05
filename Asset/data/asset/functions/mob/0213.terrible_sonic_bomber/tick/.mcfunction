@@ -15,28 +15,29 @@
 
 # 初期モーション終了時間前の場合
 #     上へゆっくり昇っていく
-    execute store result score $initial_motion_end_time Temporary run data get storage asset:context this.initial_motion_end_time 
+    execute store result score $initial_motion_end_time Temporary run data get storage asset:context this.initial_motion_end_time
     execute if score $initial_motion_end_time Temporary > $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/initial_motion
 
 
 # 初期モーション終了時間ぴったり
-#     モデルを表示
-#  TBD
+#     行動開始処理
+    execute if score $initial_motion_end_time Temporary = $current_gametime Temporary store result score $next_attack_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/start_action
 
 # それ以降
-    execute if score $initial_motion_end_time Temporary < $current_gametime Temporary store result score $next_attack_time Temporary run data get storage asset:context this.next_attack_time
+    execute if entity @e[tag=5X.StartAction] store result score $next_attack_time Temporary run data get storage asset:context this.next_attack_time
 
 # 巡行移動モーション
-    execute if score $initial_motion_end_time Temporary < $current_gametime Temporary if score $next_attack_time Temporary >= $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/cruise_motion
+    execute if entity @e[tag=5X.StartAction] if score $next_attack_time Temporary >= $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/cruise_motion
 
 # 攻撃モーション準備
-    execute if score $initial_motion_end_time Temporary < $current_gametime Temporary if score $next_attack_time Temporary = $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
+    execute if entity @e[tag=5X.StartAction] if score $next_attack_time Temporary = $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
 
 # 攻撃モーション実行
-    execute if score $initial_motion_end_time Temporary < $current_gametime Temporary if score $next_attack_time Temporary < $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion
+    execute if entity @e[tag=5X.StartAction] if score $next_attack_time Temporary < $current_gametime Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion
 
-   #tellraw @a [{"score":{"objective":"Temporary","name":"$next_attack_time"}}]
+    # tellraw @a [{"score":{"objective":"Temporary","name":"$next_attack_time"}}]
 
+    #execute if entity @s[tag=5X.WingStraight] run say straight
 
 # reset
     scoreboard players reset $initial_motion_end_time Temporary

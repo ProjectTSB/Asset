@@ -1,4 +1,4 @@
-#> asset:artifact/0077.swords_of_waterfall_climbing/trigger/attack/fall_enemy
+#> asset:artifact/0077.swords_of_waterfall_climbing/trigger/attack/dragon_strike/fall_enemy
 #
 # 敵を再帰で叩き落す
 #

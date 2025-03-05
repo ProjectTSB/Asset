@@ -8,9 +8,7 @@
     #declare score_holder $Random
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $11 Const
+    execute store result score $Random Temporary run random value 0..10
 # メッセージ出力
     execute if score $Random Temporary matches 0 run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:1b,Particle:"block air",Duration:40,Tags:["Object"],CustomName:'{"text":"Crime?","color":"dark_red","bold":true,"underlined":true}'}
     execute if score $Random Temporary matches 1 run summon area_effect_cloud ~ ~0.5 ~ {CustomNameVisible:1b,Particle:"block air",Duration:40,Tags:["Object"],CustomName:'{"text":"Wickedness?","color":"dark_red","bold":true,"underlined":true}'}

@@ -1,6 +1,14 @@
 {
     "values": [
         "asset:artifact/1177.spinnrade/register",
+        "asset:artifact/1193.firebrand/register",
+        "asset:artifact/0464.lightning_exploit/register",
+        "asset:artifact/1202.scrap_maker/register",
+        "asset:artifact/1199.healer_trance/register",
+        "asset:artifact/1183.cosmo_site/register",
+        "asset:artifact/1174.sanguis/register",
+        "asset:artifact/1200.alchemy_hammer/register",
+        "asset:artifact/1192.celestial_harmony/register",
         "asset:artifact/0715.world_tree_crown/register",
         "asset:artifact/1141.bell_of_courage/register",
         "asset:artifact/1096.spirit_flute/register",
@@ -150,7 +158,6 @@
         "asset:artifact/0191.horus_wand/register",
         "asset:artifact/0192.falcios_wand/register",
         "asset:artifact/0201.cowardly_soul/register",
-        "asset:artifact/0207.life_is_transitory/register",
         "asset:artifact/0210.terra_blade/register",
         "asset:artifact/0212.anti_materiel_rifle/register",
         "asset:artifact/0214.web_shooter/register",
