@@ -19,10 +19,18 @@
     execute positioned ~-40 ~-8 ~-40 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=79,dy=24,dz=79,sort=random,limit=1] add MeteorTarget
     execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] MobUUID
 
-# ターゲットの位置で拡散
-    execute at @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
-    data modify storage lib: Argument.Bounds set value [[8d,8d],[0.0d,0.0d],[8d,8d]]
-    execute as @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
+# メテオのブレ用の拡散
+
+    # ターゲットがいる場合
+        execute at @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
+        data modify storage lib: Argument.Bounds set value [[8d,8d],[0.0d,0.0d],[8d,8d]]
+
+    # ターゲットがいない場合
+        execute unless entity @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] run summon marker ~ ~ ~ {Tags:["SpreadFacingMarker"]}
+        execute unless entity @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] run data modify storage lib: Argument.Bounds set value [[16d,16d],[0.0d,0.0d],[16d,16d]]
+
+    # 拡散
+        execute as @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
 
 # 40m上からターゲットに向けてメテオを召喚
     data modify storage api: Argument.ID set value 1080
