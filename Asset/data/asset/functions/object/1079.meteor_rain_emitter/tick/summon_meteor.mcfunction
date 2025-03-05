@@ -34,6 +34,7 @@
 
 # 40m上からターゲットに向けてメテオを召喚
     data modify storage api: Argument.ID set value 1080
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     execute at @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] positioned ~ ~40 ~ facing entity @e[type=marker,tag=SpreadFacingMarker,distance=..128,limit=1] feet run function api:object/summon
 
