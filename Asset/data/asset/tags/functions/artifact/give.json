@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:artifact/0797.heartbleed/give/1.trigger",
+        "asset:artifact/1177.spinnrade/give/1.trigger",
         "asset:artifact/0294.turret/give/1.trigger",
         "asset:artifact/1193.firebrand/give/1.trigger",
         "asset:artifact/0464.lightning_exploit/give/1.trigger",
