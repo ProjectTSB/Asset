@@ -7,7 +7,7 @@
 
 
 # クロスヘア中心15度以内のエンティティにタグ付け
-    execute anchored eyes positioned ^ ^ ^25 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] positioned as @s facing entity @p[tag=this] eyes positioned ^ ^ ^1000 rotated as @p[tag=this] positioned ^ ^ ^1000 if entity @s[distance=..261.1] run tag @s add WO.Candidate
+    execute anchored eyes positioned ^ ^ ^25 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] positioned as @s facing entity @p[tag=this] feet positioned ^ ^ ^1000 rotated as @p[tag=this] positioned ^ ^ ^1000 if entity @s[distance=..261.1] run tag @s add WO.Candidate
         #execute if entity @e[type=#lib:living,tag=Enemy,tag=WO.Candidate,tag=!Uninterferable] run say detect
         #execute unless entity @e[type=#lib:living,tag=Enemy,tag=WO.Candidate,tag=!Uninterferable] run say nodetect
 

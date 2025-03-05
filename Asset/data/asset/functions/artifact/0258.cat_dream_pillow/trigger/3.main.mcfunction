@@ -17,8 +17,7 @@
     particle dust 1000000000 -0.3 -0.2 1 ~ ~1.2 ~ 0.8 0.4 0.8 0 50
 
 # 乱数生成
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # playsound
     execute if score $Random Temporary matches 0 run playsound entity.cat.ambient player @a ~ ~ ~ 1 1 0

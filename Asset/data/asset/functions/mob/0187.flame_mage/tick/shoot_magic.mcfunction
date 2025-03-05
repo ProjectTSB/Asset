@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0187.flame_mage/tick/
 
-#> Private
-# @private
-    #declare score_holder $Random
-
 # 演出
     playsound entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:block.fire.ambient hostile @a ~ ~ ~ 2 1.5
@@ -18,10 +14,4 @@
     execute anchored eyes facing entity @p[gamemode=!spectator,distance=..20] eyes positioned ^ ^ ^-0.25 run function asset:mob/0187.flame_mage/tick/summon
 
 # 次に攻撃するタイミングをランダムにする
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $31 Const
-    scoreboard players operation @s General.Mob.Tick = $Random Temporary
-    scoreboard players remove @s General.Mob.Tick 120
-
-# リセット
-    scoreboard players reset $Random Temporary
+    execute store result score @s General.Mob.Tick run random value -120..-90

@@ -1,6 +1,14 @@
 {
     "values": [
         "asset:artifact/0797.heartbleed/give/1.trigger",
+        "asset:artifact/0294.turret/give/1.trigger",
+        "asset:artifact/1193.firebrand/give/1.trigger",
+        "asset:artifact/0464.lightning_exploit/give/1.trigger",
+        "asset:artifact/1202.scrap_maker/give/1.trigger",
+        "asset:artifact/1199.healer_trance/give/1.trigger",
+        "asset:artifact/1183.cosmo_site/give/1.trigger",
+        "asset:artifact/1174.sanguis/give/1.trigger",
+        "asset:artifact/1200.alchemy_hammer/give/1.trigger",
         "asset:artifact/1176.b_l_e_s_s/give/1.trigger",
         "asset:artifact/1175.rubber_mallet/give/1.trigger",
         "asset:artifact/1192.celestial_harmony/give/1.trigger",

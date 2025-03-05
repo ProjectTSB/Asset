@@ -5,7 +5,7 @@
 # @within asset:object/alias/2087/init
 
 # スピード設定
-    data modify storage asset:context this.Speed set value 8
+    data modify storage asset:context this.Speed set value 1
     data modify storage asset:context this.Range set value 1024
     data modify storage asset:context this.MovePerStep set value 0.5
 
@@ -13,4 +13,4 @@
     function asset:object/super.init
 
 # 向きをボスへ向ける
-    execute facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    #execute facing entity @e[tag=Enemy.Boss,tag=!Uninterferable,distance=..128,limit=1] eyes run tp @s ~ ~ ~ ~ ~
