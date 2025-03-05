@@ -9,6 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
+#> Private
+# @private
+    #declare tag Target
+    #declare tag NearestTarget
+
 # 演出
     execute positioned ^ ^ ^1 run particle dust 1 1 0 1 ~ ~1 ~ 0.1 0 0.1 0 5
     execute positioned ^ ^ ^1.5 run particle dust 1 1 0 1 ~ ~1 ~ 0.1 0 0.1 0 5
@@ -20,8 +25,15 @@
     playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 2
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.4 2
 
-# 弾丸飛ばす
-    execute positioned ~ ~1 ~ positioned ^ ^ ^4 if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4] facing entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4,sort=nearest,limit=1] feet run function asset:artifact/0374.thunder_spell/trigger/line
+# ターゲット選定 使用者の前方にいる かつ 最も近い敵
+    execute positioned ^ ^ ^4 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4] add Target
+    tag @e[type=#lib:living,type=!player,tag=Target,distance=..8,sort=nearest,limit=1] add NearestTarget
 
-# タグ消し
+# 最も近い敵を狙って方向転換
+    execute positioned ~ ~1 ~ positioned ^ ^ ^4 if entity @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..4] facing entity @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..4,sort=nearest,limit=1] eyes run function asset:artifact/0374.thunder_spell/trigger/line
+
+# リセット
     tag @s remove AE.Check
+    tag @e[type=#lib:living,type=!player,tag=Target,distance=..8] remove Target
+    tag @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..8] remove NearestTarget
+    scoreboard players reset $RecursiveCount Temporary
