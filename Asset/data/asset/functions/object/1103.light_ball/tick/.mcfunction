@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1103/tick
 
-# 演出
-    # function asset:object/1103.light_ball/tick/vfx
-
 # 敵追従
     execute if data storage asset:context this{Track:true} run function asset:object/1103.light_ball/tick/track.m with storage asset:context this
     execute unless entity @s run return 0
