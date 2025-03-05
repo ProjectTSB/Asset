@@ -20,9 +20,9 @@
     execute positioned ^ ^ ^ run tag @a[distance=..8.5] add 9G.Temp.Target.Attack.Sub
 
 # TODO:ダメージ
-        data modify storage api: Argument.Damage set value 50f
-        data modify storage api: Argument.AttackType set value "Physical"
-        data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @a[tag=9G.Temp.Target.Attack.Sub,tag=!9G.Temp.Target.Attack] at @s run function api:damage/
     function api:damage/reset
