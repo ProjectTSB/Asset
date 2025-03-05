@@ -5,10 +5,10 @@
 # @within function asset:object/1079.meteor_rain_emitter/tick/
 
 #> このファイル内で使われるタグ
-#@private
-#declare tag SpreadMarker
-#declare tag SpreadFacingMarker
-#declare tag MeteorTarget
+# @private
+    #declare tag SpreadMarker
+    #declare tag SpreadFacingMarker
+    #declare tag MeteorTarget
 
 # 拡散させる
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
