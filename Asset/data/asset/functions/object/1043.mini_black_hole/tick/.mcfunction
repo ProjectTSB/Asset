@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1043.mini_black_hole/tick/
+# @within function asset:object/alias/1043/tick
 
 #> Val
 # @private
