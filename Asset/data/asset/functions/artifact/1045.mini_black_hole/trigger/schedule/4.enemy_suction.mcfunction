@@ -46,7 +46,7 @@
     execute if score $T1.Distance Temporary matches 15 run data modify storage lib: Argument.VectorMagnitude set value 0.05
 
 # 雪玉にMotionをセットする
-    execute facing entity @s feet facing ^ ^ ^-1 run function lib:motion/
+    #execute facing entity @s feet facing ^ ^ ^-1 run function lib:motion/
 
 # リセット処理
     data remove storage lib: Argument
