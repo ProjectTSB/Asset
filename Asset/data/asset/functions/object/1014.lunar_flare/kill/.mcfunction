@@ -18,7 +18,7 @@
 
 # ダメージ
 # 着弾地点周辺に敵がいる場合、その敵を中心として範囲攻撃する
-    execute store result storage api: Argument.Damage float 1 run function asset:object/1014.lunar_flare/kill/get_damage.m with storage asset:context this
+    execute store result storage api: Argument.Damage float 1 run function asset:object/1014.lunar_flare/kill/get_damage.m with storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
