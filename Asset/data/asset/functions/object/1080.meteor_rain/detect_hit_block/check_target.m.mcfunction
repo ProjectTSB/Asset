@@ -1,7 +1,8 @@
 #> asset:object/1080.meteor_rain/detect_hit_block/check_target.m
 #
-#
-#
+# @input args:
+#   MobUUID : int
+#   MovePerStep : float
 # @within function asset:object/1080.meteor_rain/detect_hit_block/
 
 # 判定
