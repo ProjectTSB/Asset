@@ -4,14 +4,15 @@
 #
 # @within asset:object/alias/1042/tick
 
-# RemainingRangeが1ならLandingを付与
-    execute if data storage asset:context this{RemainingRange:1} run tag @s add 1042.Landing
+# 演出のためにランダムな方向を向かせる
+    execute store result storage asset:temp Args.Yaw float 0.01 run random value 0..35999
+    execute store result storage asset:temp Args.Pitch float 0.01 run random value 0..35999
 
-# 非着弾前の処理
-    execute unless entity @s[tag=1042.Landing] run function asset:object/1042.mini_black_hole/tick/flying/
+# 演出
+    function asset:object/1042.mini_black_hole/tick/vfx/m with storage asset:temp Args
 
-# 着弾後の処理
-    execute if entity @s[tag=1042.Landing] run function asset:object/1042.mini_black_hole/tick/landing/
+# リセット
+    data remove storage asset:temp Args
 
-# 着弾してなければsuper.tick
-    execute unless entity @s[tag=1042.Landing] at @s run function asset:object/super.tick
+# super.tick
+    execute at @s run function asset:object/super.tick

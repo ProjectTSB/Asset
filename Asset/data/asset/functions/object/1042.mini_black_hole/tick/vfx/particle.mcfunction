@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/tick/flying/vfx/vfx
+#> asset:object/1042.mini_black_hole/tick/vfx/particle
 #
 # vfx
 #
