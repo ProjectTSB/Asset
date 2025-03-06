@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/register
+#> asset:object/1042.mini_black_hole_flying/register
 #
 # Objectのデータを指定
 #

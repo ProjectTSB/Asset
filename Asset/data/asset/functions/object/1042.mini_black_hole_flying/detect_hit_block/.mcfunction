@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/detect_hit_block/
+#> asset:object/1042.mini_black_hole_flying/detect_hit_block/
 #
 # 継承先などから実行される処理
 #

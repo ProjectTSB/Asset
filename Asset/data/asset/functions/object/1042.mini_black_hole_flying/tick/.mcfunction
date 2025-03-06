@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/tick/
+#> asset:object/1042.mini_black_hole_flying/tick/
 #
 # Objectのtick時の処理
 #
@@ -9,7 +9,7 @@
     execute store result storage asset:temp Args.Pitch float 0.01 run random value 0..35999
 
 # 演出
-    function asset:object/1042.mini_black_hole/tick/vfx/m with storage asset:temp Args
+    function asset:object/1042.mini_black_hole_flying/tick/vfx/m with storage asset:temp Args
 
 # リセット
     data remove storage asset:temp Args

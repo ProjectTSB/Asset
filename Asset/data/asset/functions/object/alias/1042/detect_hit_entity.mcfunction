@@ -5,4 +5,4 @@
 # @within asset_manager:object/call_method/run_method.m
 
 # 元のメソッド処理を呼び出す
-    function asset:object/1042.mini_black_hole/detect_hit_entity/
+    function asset:object/1042.mini_black_hole_flying/detect_hit_entity/

@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/summon/debug
+#> asset:object/1042.mini_black_hole_flying/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #

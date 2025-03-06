@@ -1,4 +1,4 @@
-#> asset:object/1042.mini_black_hole/kill/
+#> asset:object/1042.mini_black_hole_flying/kill/
 #
 # 継承先などから実行される処理
 #
