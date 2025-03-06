@@ -8,8 +8,6 @@
 # @private
     #declare score_holder $Random
 
-# マガジンマーク召喚
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] at @s positioned ~ ~1 ~ run summon area_effect_cloud ^0.5 ^ ^ {CustomNameVisible:1b,Radius:0f,Duration:20,CustomName:'{"text":"！？","bold":true}'}
 # 効果音
     playsound minecraft:item.trident.return player @a ~ ~ ~ 1 0
 
@@ -43,6 +41,9 @@
 
     # プレイヤーが"不運"と"踊"っちまった時
         execute if score $Random Temporary matches 11 run function asset:artifact/0441.awaited_opportunity/trigger/message/hardluck
+
+    # "不運"と"踊"ってないときは敵の位置にマガジンマーク召喚
+        execute unless score $Random Temporary matches 11 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] anchored eyes positioned ^1.0 ^ ^ run function asset:artifact/0441.awaited_opportunity/trigger/message/magazine_mark
 
     # スピードの向こう側
         execute if score $Random Temporary matches 13 run function asset:artifact/0441.awaited_opportunity/trigger/message/beyond_the_speed

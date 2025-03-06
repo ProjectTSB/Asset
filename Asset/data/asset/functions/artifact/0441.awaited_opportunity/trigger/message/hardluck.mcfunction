@@ -7,6 +7,9 @@
 # プレイヤーが"不運"と"踊"っちまった時
     tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"があああああッ･･！！"}]
 
+# マガジンマーク召喚
+        execute anchored eyes positioned ^1.0 ^ ^ run function asset:artifact/0441.awaited_opportunity/trigger/message/magazine_mark
+
 # “不運”と“踊”る(ID:294)を付与
     data modify storage api: Argument.ID set value 294
     function api:entity/mob/effect/give
