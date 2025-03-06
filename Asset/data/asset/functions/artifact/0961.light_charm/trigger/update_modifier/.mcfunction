@@ -1,4 +1,4 @@
-#> asset:artifact/0961.light_charm/trigger/add_modifier/
+#> asset:artifact/0961.light_charm/trigger/update_modifier/
 #
 #
 #
@@ -19,7 +19,7 @@
         execute store result storage asset:temp Args.Speed double 0.015 run data get storage asset:temp Args.Count
 
 # 適用
-    execute unless data storage asset:temp Args{Count:0} run function asset:artifact/0961.light_charm/trigger/add_modifier/apply.m with storage asset:temp Args
+    execute unless data storage asset:temp Args{Count:0} run function asset:artifact/0961.light_charm/trigger/update_modifier/apply.m with storage asset:temp Args
 
 # リセット
     data remove storage asset:temp Args

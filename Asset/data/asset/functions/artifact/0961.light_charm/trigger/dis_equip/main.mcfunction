@@ -8,4 +8,4 @@
     playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8
 
 # 補正を更新
-    function asset:artifact/0961.light_charm/trigger/add_modifier/
+    function asset:artifact/0961.light_charm/trigger/update_modifier/
