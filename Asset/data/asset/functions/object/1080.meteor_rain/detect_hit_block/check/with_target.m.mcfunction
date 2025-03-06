@@ -1,4 +1,4 @@
-#> asset:object/1080.meteor_rain/detect_hit_block/check_target.m
+#> asset:object/1080.meteor_rain/detect_hit_block/check/with_target.m
 #
 # @input args:
 #   MobUUID : int
