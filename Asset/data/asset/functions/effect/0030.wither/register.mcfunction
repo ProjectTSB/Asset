@@ -37,3 +37,4 @@
 
 # フィールド
     data modify storage asset:effect Field.Tick set value 20
+    data modify storage asset:effect Field.DamagePer set value 0.01
