@@ -1,17 +1,17 @@
-#> asset:effect/0029.poison/register
+#> asset:effect/0034.regeneration/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0029.poison/_/register
+# @within function asset:effect/0034.regeneration/_/register
 
 # ExtendsSafe (boolean) (default = false)
     data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 29
+    data modify storage asset:effect ID set value 34
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"毒"}'
+    data modify storage asset:effect Name set value "再生"
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"継続的にダメージを受ける"}'
+    data modify storage asset:effect Description set value ['{"text":"継続的に体力を回復する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
@@ -25,7 +25,7 @@
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 100
 # 悪い効果か否か (boolean)
-    data modify storage asset:effect IsBadEffect set value true
+    data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
@@ -37,4 +37,4 @@
 
 # フィールド
     data modify storage asset:effect Field.Tick set value 20
-    data modify storage asset:effect Field.DamagePer set value 0.01
+    data modify storage asset:effect Field.HealPer set value 0.01

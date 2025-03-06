@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:effect/0301.soul_light/_/register",
+        "asset:effect/0266.grace_of_the_earth/_/register",
+        "asset:effect/0134.regeneration/_/register",
+        "asset:effect/0084.regeneration/_/register",
+        "asset:effect/0034.regeneration/_/register",
         "asset:effect/0620.ongaeshi/_/register",
         "asset:effect/0296.soul_disconnection/_/register",
         "asset:effect/0081.slow_falling/_/register",

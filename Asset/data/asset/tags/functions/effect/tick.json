@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:effect/0301.soul_light/_/tick",
+        "asset:effect/0034.regeneration/_/tick",
         "asset:effect/0620.ongaeshi/_/tick",
         "asset:effect/0031.slow_falling/_/tick",
         "asset:effect/0024.darkness/_/tick",
