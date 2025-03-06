@@ -20,4 +20,5 @@
     data modify storage asset:object Field.Speed set value 2
     data modify storage asset:object Field.Range set value 128
     data modify storage asset:object Field.Damage set value 1
+    # data modify storage asset:object Field.TargetID set value -1
     data modify storage asset:object Field.UserID set value -1
