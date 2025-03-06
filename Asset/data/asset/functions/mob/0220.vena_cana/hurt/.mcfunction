@@ -14,4 +14,4 @@
     effect clear @a[gamemode=!spectator,distance=..5] strength
     effect clear @a[gamemode=!spectator,distance=..5] haste
     effect clear @a[gamemode=!spectator,distance=..5] saturation
-    effect clear @a[gamemode=!spectator,distance=..5] regeneration
+    execute as @a[gamemode=!spectator,distance=..5] run function asset:mob/0220.vena_cana/hurt/clear_regen
