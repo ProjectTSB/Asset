@@ -1,5 +1,10 @@
 {
     "values": [
+        "asset:artifact/1221.hardened_leather_armor/give/1.trigger",
+        "asset:artifact/1222.hardened_iron_armor/give/1.trigger",
+        "asset:artifact/1223.hardened_golden_armor/give/1.trigger",
+        "asset:artifact/1224.hardened_diamond_armor/give/1.trigger",
+        "asset:artifact/1225.hardened_netherite_armor/give/1.trigger",
         "asset:artifact/1220.sacred_hardener/give/1.trigger",
         "asset:artifact/0464.lightning_exploit/give/1.trigger",
         "asset:artifact/1202.scrap_maker/give/1.trigger",
