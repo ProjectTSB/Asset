@@ -12,6 +12,9 @@
 # 回転
     execute if entity @s[scores={General.Mob.Tick=..280}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/rotate
 
+# 14x4x14より外のプレイヤーを吸い込む
+    execute as @a[gamemode=!spectator,distance=..20] positioned ~-7 ~ ~-7 unless entity @s[dx=13,dy=3,dz=13] at @s facing entity @e[type=marker,tag=1N.SpawnMarker] eyes run tp @s ^ ^ ^0.5
+
 # スポーンマーカーを中心として巨大カボチャを召喚
 
 # 網目状にカボチャを転がす
