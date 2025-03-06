@@ -13,6 +13,7 @@
     data modify storage api: Argument.Damage set value 25.0f
     data modify storage api: Argument.AttackType set value "Physical"
     execute as @a if score @s UserID = $AppliedFrom Temporary run function api:damage/modifier
+    data modify storage api: Argument.ActivateTrigger set value false
     function api:damage/
     function api:damage/reset
 # リセット
