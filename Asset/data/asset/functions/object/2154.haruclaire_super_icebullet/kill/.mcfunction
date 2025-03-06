@@ -60,7 +60,7 @@
         execute rotated ~330 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000004 0
         execute rotated ~340 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000004 0
         execute rotated ~350 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000004 0
-            # 円 1
+    # 円 1
         execute rotated ~00 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0
         execute rotated ~10 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0
         execute rotated ~20 0 positioned ^ ^1 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000006 0

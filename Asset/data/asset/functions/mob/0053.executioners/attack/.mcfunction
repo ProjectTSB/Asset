@@ -7,8 +7,8 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-#> tag
-# @within function asset:mob/0053.executioners/attack/
+#> Private
+# @private
     #declare tag SpreadMarker
 
 # 演出
