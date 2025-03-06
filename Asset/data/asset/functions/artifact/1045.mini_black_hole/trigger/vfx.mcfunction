@@ -1,4 +1,4 @@
-#> asset:artifact/1045.mini_black_hole/trigger/3.1.vfx
+#> asset:artifact/1045.mini_black_hole/trigger/vfx
 #
 # 発動時演出
 #
