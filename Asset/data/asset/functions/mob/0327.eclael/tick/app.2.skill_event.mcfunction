@@ -137,9 +137,8 @@
 
 # 残心
     execute if entity @s[tag=93.Skill.Beam] run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/main
-
-# 居合
-    execute if entity @s[tag=93.Skill.IaiMove] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+    # 居合
+        execute if entity @s[tag=93.Skill.IaiMove] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
 
 # 点睛
     execute if entity @s[tag=93.Skill.Tensei] run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/main

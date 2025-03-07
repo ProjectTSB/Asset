@@ -9,10 +9,10 @@
     # 中心点を挟んで反対側に移動
         execute if score @s 93.AnimationTimer matches 1 facing entity @p feet run tp @s ~ ~ ~ ~ 0
         execute if score @s 93.AnimationTimer matches 1 at @s as @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1] positioned as @s run tp @s ~ ~ ~ ~0 0
-        execute if score @s 93.AnimationTimer matches 5 at @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1] run tp @s ^ ^-2.3 ^-16 ~ 0
+        execute if score @s 93.AnimationTimer matches 5 at @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1] run tp @s ^ ^-2.3 ^-10 ~ 0
     # プレイヤーの方を向く
-        execute if score @s 93.AnimationTimer matches 6..25 run tag @s add 93.Temp.Me
-        execute if score @s 93.AnimationTimer matches 6..25 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+        execute if score @s 93.AnimationTimer matches 6..101 run tag @s add 93.Temp.Me
+        execute if score @s 93.AnimationTimer matches 6..101 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # 演出
         execute if score @s 93.AnimationTimer matches 1 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 1 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
