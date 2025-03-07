@@ -12,9 +12,9 @@
     execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 攻撃
-    execute if score @s General.Mob.Tick matches 18 run say shot
-    execute if score @s General.Mob.Tick matches 20 run say shot
-    execute if score @s General.Mob.Tick matches 24 run say shot
+    execute if score @s General.Mob.Tick matches 18 positioned ~ ~1.3 ~ positioned ^ ^ ^0.5 run function asset:mob/0301.karmic/tick/common/shot/main
+    execute if score @s General.Mob.Tick matches 20 positioned ~ ~1.3 ~ positioned ^ ^ ^0.5 run function asset:mob/0301.karmic/tick/common/shot/main
+    execute if score @s General.Mob.Tick matches 24 positioned ~ ~1.3 ~ positioned ^ ^ ^0.5 run function asset:mob/0301.karmic/tick/common/shot/main
 
 # 次の攻撃に移行する
     execute if score @s General.Mob.Tick matches 45 run function asset:mob/0301.karmic/tick/03_0.gun/end

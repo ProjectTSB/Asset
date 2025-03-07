@@ -13,7 +13,6 @@
     execute if score @s 8D.Skill matches 7.. run scoreboard players set @s 8D.Skill 1
 
 # デバッグスキル固定
-    #scoreboard players set @s 8D.Skill 6
 
 # スキル選択
     execute if score @s 8D.Skill matches 1 run tag @s add 8D.SkillDash

@@ -11,7 +11,7 @@
 # 拡散設定
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 # 実行前に拡散値がされていない場合、デフォルト値を入れる
-    execute unless data storage lib: Argument.Bounds run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,3d],[8d,8d]]
+    execute unless data storage lib: Argument.Bounds run data modify storage lib: Argument.Bounds set value [[8d,8d],[0d,2d],[8d,8d]]
 
 # 実行
     execute at @p[gamemode=!spectator,distance=..100] as @e[type=marker,tag=SpreadMarker,distance=..80,sort=nearest,limit=1] run function lib:spread_entity/

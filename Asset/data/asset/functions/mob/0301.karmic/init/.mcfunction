@@ -10,7 +10,8 @@
 
 # AJモデル召喚
     execute rotated ~ 0 run function animated_java:karmic/summon {args:{}}
-
+# ノーマル限定でフードを取る
+    execute if predicate api:global_vars/difficulty/easy as @e[type=item_display,tag=8D.AJ,sort=nearest,limit=1] run function animated_java:karmic/variants/girl/apply
 # tpさせる
     execute at @s as @e[type=item_display,tag=8D.AJ,sort=nearest,limit=1] run tp @s ~ ~ ~
 # スコア設定

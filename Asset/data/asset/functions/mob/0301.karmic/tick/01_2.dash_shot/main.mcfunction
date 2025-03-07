@@ -8,12 +8,15 @@
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function animated_java:karmic/animations/run_loop/stop
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function animated_java:karmic/animations/run_end_sliding/play
 
+# プレイヤーを見る
+    execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
+
 # 突っ込む
     execute if score @s General.Mob.Tick matches 0..28 rotated ~ 0 positioned ^ ^ ^0.2 run function asset:mob/0301.karmic/tick/common/tp
 # 撃つ
-    execute if score @s General.Mob.Tick matches 9 run say slash
-    execute if score @s General.Mob.Tick matches 12 run say slash
-    execute if score @s General.Mob.Tick matches 15 run say slash
+    execute if score @s General.Mob.Tick matches 9 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main
+    execute if score @s General.Mob.Tick matches 12 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main
+    execute if score @s General.Mob.Tick matches 15 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main
 
     execute if score @s General.Mob.Tick matches 28..36 rotated ~ -20 positioned ^ ^ ^0.4 run function asset:mob/0301.karmic/tick/common/tp
 

@@ -10,7 +10,7 @@
 
 # ダメージ設定
     data modify storage api: Argument.Damage set value 40.0f
-    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function api:damage/
