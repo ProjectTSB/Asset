@@ -18,3 +18,5 @@
     data modify storage asset:object Field.Speed set value 2
     data modify storage asset:object Field.Range set value 60
     data modify storage asset:object Field.MovePerStep set value 0.5
+    data modify storage asset:object Field.Damage set value {Min:1,Max:10}
+    data modify storage asset:object Field.UserID set value -1
