@@ -7,7 +7,11 @@
 #> Private
 # @private
     #declare score_holder $Random
-    #declare tag 1029.SpiritInit
+    #declare tag 1029.SpiriInit
+
+# playsound
+    playsound minecraft:block.amethyst_cluster.break neutral @a ~ ~ ~ 1.5 1.5
+    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 2
 
 # 自分に一時的なタグ付け
     tag @s add 1029.SpiritInit
