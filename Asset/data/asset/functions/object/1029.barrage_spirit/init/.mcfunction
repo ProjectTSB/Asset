@@ -14,7 +14,7 @@
 
 # 同IDのプレイヤーを特定
     execute store result score @s 1029.UserID run data get storage asset:context this.UserID
-    execute as @a[distance=..60] if score @s UserID = @e[type=item_display,tag=1029.SpiritInit,distance=..0.01,limit=1] 1029.UserID run tag @s add 1029.OwnerPlayer
+    execute as @a[distance=..60] if score @s UserID = @e[type=armor_stand,tag=1029.SpiritInit,distance=..0.01,limit=1] 1029.UserID run tag @s add 1029.OwnerPlayer
 
 # もし仮に、他に召喚してるバラージュがいるならぶっ殺す（こういう処理しか思いつかんかった）
     execute as @e[type=armor_stand,scores={ObjectID=1029}] at @s if score @p[tag=1029.OwnerPlayer] UserID = @e[type=armor_stand,scores={ObjectID=1029},distance=..0.01,sort=nearest,limit=1] 1029.UserID run kill @s[tag=!1029.SpiritInit]
