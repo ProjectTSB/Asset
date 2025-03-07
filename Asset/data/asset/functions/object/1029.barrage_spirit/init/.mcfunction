@@ -7,7 +7,7 @@
 #> Private
 # @private
     #declare score_holder $Random
-    #declare tag 1029.SpiriInit
+    #declare tag 1029.SpiritInit
 
 # playsound
     playsound minecraft:block.amethyst_cluster.break neutral @a ~ ~ ~ 1.5 1.5
