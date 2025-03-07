@@ -11,6 +11,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1029
+    data modify storage api: Argument.FieldOverride.Damage set value {Min:95,Max:135}
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
 # 音とパーティクル neutralになってるのは妖精側の音だから

@@ -16,6 +16,7 @@
 
 # 弾を召喚する
     data modify storage api: Argument.ID set value 1030
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..20,sort=nearest,limit=1] feet rotated ~ ~5 run function api:object/summon
 
