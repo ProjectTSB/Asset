@@ -21,7 +21,7 @@
     data modify storage api: Argument.BypassArmorToughness set value true
     data modify storage api: Argument.BypassEnchantments set value true
     data modify storage api: Argument.BypassDifficulty set value true
-    data modify storage api: Argument.ActivateTrigger set value false
+    data modify storage api: Argument.ApplyTrigger set value false
     data modify storage api: Argument.DeathMessage set value ['{"translate":"%s は衰弱死した","with":[{"selector":"@s"}]}','{"translate":"%s は干からびた","with":[{"selector":"@s"}]}','{"translate":"%s の生命は枯れ果てた","with":[{"selector":"@s"}]}']
     function api:damage/
     function api:damage/reset

@@ -23,7 +23,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    data modify storage api: Argument.ActivateTrigger set value false
+    data modify storage api: Argument.ApplyTrigger set value false
     function api:damage/
     function api:damage/reset
 

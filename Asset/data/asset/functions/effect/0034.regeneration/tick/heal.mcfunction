@@ -22,7 +22,7 @@
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     data modify storage api: Argument.FixedHeal set value false
-    data modify storage api: Argument.ActivateTrigger set value false
+    data modify storage api: Argument.ApplyTrigger set value false
     function api:heal/
     function api:heal/reset
 
