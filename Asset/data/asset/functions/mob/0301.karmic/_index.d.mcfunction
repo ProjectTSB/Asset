@@ -50,3 +50,5 @@
     #declare function animated_java:karmic/animations/fall/stop
     #declare function animated_java:karmic/animations/guntpstart/stop
     #declare function animated_java:karmic/animations/guntp/stop
+    #declare function animated_java:karmic/pause_all
+    #declare function animated_java:karmic/animations/dead/play
