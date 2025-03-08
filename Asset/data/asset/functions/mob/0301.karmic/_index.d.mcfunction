@@ -4,9 +4,7 @@
 #> tag
 # @within function asset:mob/0301.karmic/**
     #declare tag 8D.AJ
-    #declare tag 8D.SwordMode
     #declare tag 8D.AJLink
-    #declare tag 8D.TPConfirmed
     #declare tag 8D.SkipSkillSelect
     #
     #declare tag 8D.Opening

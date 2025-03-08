@@ -8,8 +8,6 @@
     execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -40
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -55
-# ノーマル以上で低HPだと、加速する
-    execute if entity @s[tag=8D.HPless50per] if predicate api:global_vars/difficulty/min/normal run scoreboard players add @s General.Mob.Tick 10
 
 # アニメーション戻す
     execute as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function asset:mob/0301.karmic/tick/common/reset_animation
