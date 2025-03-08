@@ -16,16 +16,14 @@
 # 攻撃
     execute if score @s General.Mob.Tick matches 18 rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 18 run function asset:mob/0301.karmic/tick/02.slash/attack1
-
     execute if score @s General.Mob.Tick matches 25 rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 25 run function asset:mob/0301.karmic/tick/02.slash/attack1
 
     execute if score @s General.Mob.Tick matches 34..50 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
 
-# 打つ
+# 撃つ
     execute if score @s General.Mob.Tick matches 58 rotated ~ 0 positioned ^ ^ ^-2 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 58 positioned ~ ~1.3 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot_strong/main
-
 
 # リセット
     execute if score @s General.Mob.Tick matches 73 run function asset:mob/0301.karmic/tick/skill_reset

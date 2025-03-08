@@ -19,8 +19,8 @@
     execute if score @s General.Mob.Tick matches 12 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main
     execute if score @s General.Mob.Tick matches 15 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main
 
+# 慣性
     execute if score @s General.Mob.Tick matches 28..36 rotated ~ -20 positioned ^ ^ ^0.4 run function asset:mob/0301.karmic/tick/common/tp
-
     execute if score @s General.Mob.Tick matches 38..46 rotated ~ 10 positioned ^ ^ ^0.4 run function asset:mob/0301.karmic/tick/common/tp
 
 # リセット

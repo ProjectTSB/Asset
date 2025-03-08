@@ -19,7 +19,7 @@
     execute if score @s General.Mob.Tick matches 9 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/thunder
     execute if score @s General.Mob.Tick matches 10 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/thunder
 
-
+# 慣性
     execute if score @s General.Mob.Tick matches 9..16 rotated ~ 0 positioned ^ ^ ^0.2 run function asset:mob/0301.karmic/tick/common/tp
 # リセット
     execute if score @s General.Mob.Tick matches 34 run function asset:mob/0301.karmic/tick/skill_reset

@@ -12,6 +12,7 @@
     execute if score @s General.Mob.Tick matches 0 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 0 at @s positioned ~ ~0.1 ~ run function asset:mob/0301.karmic/tick/05.sword_slash/alart
 
+# 攻撃
     execute if score @s General.Mob.Tick matches 19 run data modify storage api: Argument.FieldOverride set value {Color:16720932,Frames:[20335,20336,20337],Scale:[17f,17f,0.1f],Transformation:{left_rotation:[0.696f,0.123f,0.123f,0.696f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     execute if score @s General.Mob.Tick matches 19 positioned ^ ^ ^2 positioned ~ ~1 ~ rotated ~ 0 run function asset:mob/0301.karmic/tick/common/slash_obj_summon
     execute if score @s General.Mob.Tick matches 19 run function asset:mob/0301.karmic/tick/05.sword_slash/slash

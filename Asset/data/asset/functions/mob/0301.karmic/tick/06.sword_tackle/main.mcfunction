@@ -29,11 +29,11 @@
 # プレイヤーを見る
     execute if score @s General.Mob.Tick matches 60 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
 
+# 攻撃
+    execute if score @s General.Mob.Tick matches 78 positioned ~ ~1.3 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot_strong/main
+# 移動
     execute if score @s General.Mob.Tick matches 78..80 rotated ~ 0 positioned ^ ^ ^-1 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 81..83 rotated ~ 0 positioned ^ ^ ^-0.25 run function asset:mob/0301.karmic/tick/common/tp
 
-# 攻撃
-    execute if score @s General.Mob.Tick matches 78 positioned ~ ~1.3 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot_strong/main
-
-
+# リセット
     execute if score @s General.Mob.Tick matches 103 run function asset:mob/0301.karmic/tick/06.sword_tackle/end
