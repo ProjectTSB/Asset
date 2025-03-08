@@ -48,3 +48,5 @@
     #declare function animated_java:karmic/animations/sword_attack2/play
     #declare function animated_java:karmic/animations/fall/play
     #declare function animated_java:karmic/animations/fall/stop
+    #declare function animated_java:karmic/animations/guntpstart/stop
+    #declare function animated_java:karmic/animations/guntp/stop
