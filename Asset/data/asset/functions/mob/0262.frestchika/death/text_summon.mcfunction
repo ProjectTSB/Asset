@@ -12,9 +12,7 @@
     execute as @e[type=marker,tag=7A.This,distance=..10] at @s run function lib:spread_entity/
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $9 Const
+    execute store result score $Random Temporary run random value 0..8
 # メッセージ
     execute if score $Random Temporary matches 0 at @e[type=marker,tag=7A.This,distance=..3.5] run summon area_effect_cloud ^ ^ ^ {CustomNameVisible:1b,Particle:"block air",Duration:40,Tags:["Object"],CustomName:'[{"text":"0110110","font":"mob/262/01"},{"text":"#","font":"invisible_bg"}]'}
     execute if score $Random Temporary matches 1 at @e[type=marker,tag=7A.This,distance=..3.5] run summon area_effect_cloud ^ ^ ^ {CustomNameVisible:1b,Particle:"block air",Duration:40,Tags:["Object"],CustomName:'[{"text":"0110001","font":"mob/262/01"},{"text":"#","font":"invisible_bg"}]'}

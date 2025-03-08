@@ -9,8 +9,7 @@
     #declare score_holder $Random
 
 # 乱数
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # ダメージ設定
     data modify storage api: Argument.FieldOverride.Damage set value 65.0f

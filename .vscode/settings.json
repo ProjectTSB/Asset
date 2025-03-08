@@ -1677,6 +1677,14 @@
                         "    function api:mob/summon"
                     ]
                 }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "MobのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
             ]
         },
         {
@@ -2107,7 +2115,7 @@
                         "# 名前 (TextComponentString)",
                         "    data modify storage asset:effect Name set value ",
                         "# 説明文 (TextComponentString[])",
-                        "    data modify storage asset:effect Description set value ",
+                        "    data modify storage asset:effect Description set value []",
                         "# 効果時間 (int) (default = API || error)",
                         "    data modify storage asset:effect Duration set value ",
                         "# スタック (int) (default = API || 1)",

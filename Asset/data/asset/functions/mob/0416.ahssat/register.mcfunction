@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/416/register
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value
+    data modify storage asset:mob ExtendsSafe set value true
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
@@ -62,4 +62,4 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
 # フィールド
-    data modify storage asset:mob Field set value {DeathCount:0}
+    data modify storage asset:mob Field.Split set value 2

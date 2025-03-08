@@ -9,8 +9,7 @@
     #declare score_holder $Random
 
 # 攻撃時に火、水、雷のどれかに分岐
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
     execute if score $Random Temporary matches 0 run function asset:mob/0181.magic_bookshelf/attack/elements/fire
     execute if score $Random Temporary matches 1 run function asset:mob/0181.magic_bookshelf/attack/elements/water
     execute if score $Random Temporary matches 2 run function asset:mob/0181.magic_bookshelf/attack/elements/thunder

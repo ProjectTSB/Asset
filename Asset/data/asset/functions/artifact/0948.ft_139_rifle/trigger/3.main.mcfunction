@@ -35,9 +35,7 @@
     tag @s remove Landing
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 # 向きを適当に変える
     execute unless predicate lib:is_sneaking if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-1
     execute unless predicate lib:is_sneaking if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~-1 ~-1

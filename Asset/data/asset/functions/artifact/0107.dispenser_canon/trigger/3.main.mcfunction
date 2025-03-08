@@ -3,9 +3,6 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0107.dispenser_canon/trigger/2.check_condition
-#> private
-# @private
-    #declare tag TNTStick
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う mainhand/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/mainhand
@@ -16,11 +13,7 @@
     playsound minecraft:entity.tnt.primed player @a
 
 # TNT召喚
-    summon endermite ~ ~1.5 ~ {Silent:1b,Team:"NoCollision",FallDistance:99f,DeathTime:15s,Tags:["TNTStick"],Passengers:[{id:"minecraft:tnt",fuse:40s}],active_effects:[{id:"invisibility",amplifier:1b,duration:2147483647}]}
-
-# TNTを飛ばす
-    data modify storage lib: Argument.VectorMagnitude set value 2
-    execute as @e[type=endermite,tag=TNTStick,distance=..2] facing ^ ^ ^10 run function lib:motion/
-    data remove storage lib: Argument
-# スケジュール
-    schedule function asset:artifact/0107.dispenser_canon/trigger/3.1.sticky 1t
+    data modify storage api: Argument.ID set value 1101
+    data modify storage api: Argument.FieldOverride.Damage set value 50
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    execute anchored eyes positioned ^ ^-0.2 ^ run function api:object/summon

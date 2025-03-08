@@ -17,20 +17,11 @@
     tag @s add GX.This
 
 # ダメージ設定
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。追加ダメージが発生。
-          scoreboard players operation $RandomDamage Temporary %= $21 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 75
+        execute store result storage api: Argument.Damage float 1 run random value 75..95
 
     # 属性
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "None"
-
-    #ダメージセット
-        execute store result storage api: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
 
     # ダメージ 原作再現と他のエイム武器との差別化を兼ねて範囲攻撃
         execute as @a if score @s UserID = @e[type=armor_stand,tag=GX.This,distance=..1,limit=1] GX.UserID run function api:damage/modifier
@@ -39,5 +30,4 @@
 
 # リセット
     function api:damage/reset
-    scoreboard players reset $RandomDamage Temporary
     kill @s
