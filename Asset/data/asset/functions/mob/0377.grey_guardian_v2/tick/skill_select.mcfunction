@@ -5,9 +5,7 @@
 # @within function asset:mob/0377.grey_guardian_v2/tick/
 
 # ランダム
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $5 Const
+    execute store result score $Random Temporary run random value 0..4
 
 # デバッグスキル固定
     #scoreboard players set $Random Temporary 3
@@ -18,8 +16,6 @@
     execute if score $Random Temporary matches 2 run tag @s add AH.Skill03
     execute if score $Random Temporary matches 3 run tag @s add AH.Skill04
     execute if score $Random Temporary matches 4 run tag @s add AH.Skill05
-
-
 
 # リセット
     scoreboard players reset $Random Temporary

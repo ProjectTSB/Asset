@@ -34,10 +34,8 @@
     execute anchored eyes positioned ^-0.35 ^-0.15 ^ facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:artifact/0876.uni/trigger/bullet
     tag @s remove Landing
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+# 乱数取得
+    execute store result score $Random Temporary run random value 0..2
 # 向きを適当に変える
     execute if score $Random Temporary matches 0 run tp @s ~ ~ ~ ~ ~-0.5
     execute if score $Random Temporary matches 1 run tp @s ~ ~ ~ ~-0.5 ~-0.5

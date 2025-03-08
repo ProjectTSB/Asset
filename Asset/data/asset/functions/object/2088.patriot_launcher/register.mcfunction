@@ -24,3 +24,7 @@
     data modify storage asset:object Field.IsActive set value 1b
     data modify storage asset:object Field.MissileCooltime set value 0
     data modify storage asset:object Field.MaxMissileCooltime set value 140
+    data modify storage asset:object Field.ReloadStartTime set value 120
+    data modify storage asset:object Field.ReloadEndTime set value 35
+    data modify storage asset:object Field.TurretResetStartTime set value 125
+    data modify storage asset:object Field.TurretResetEndTime set value 120

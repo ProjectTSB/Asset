@@ -1,5 +1,10 @@
 {
     "values": [
+        "asset:artifact/0797.heartbleed/register",
+        "asset:artifact/1177.spinnrade/register",
+        "asset:artifact/0294.turret/register",
+        "asset:artifact/1193.firebrand/register",
+        "asset:artifact/0464.lightning_exploit/register",
         "asset:artifact/1202.scrap_maker/register",
         "asset:artifact/1199.healer_trance/register",
         "asset:artifact/1183.cosmo_site/register",

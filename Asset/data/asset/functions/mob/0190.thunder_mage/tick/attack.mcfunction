@@ -6,7 +6,6 @@
 
 #> Private
 # @private
-    #declare score_holder $Random
     #declare tag Random
 
 # ノーマル以下なら、周囲のランダムなプレイヤーの位置に召喚（範囲内にいないなら不発）
@@ -16,11 +15,7 @@
     execute if entity @s[tag=Random] if entity @p[distance=..15] run function asset:mob/0190.thunder_mage/tick/predict_attack
 
 # 次に攻撃するタイミングをランダムにする
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $31 Const
-    scoreboard players operation @s General.Mob.Tick = $Random Temporary
-    scoreboard players remove @s General.Mob.Tick 80
+    execute store result score @s General.Mob.Tick run random value -80..-50
 
 # リセット
-    scoreboard players reset $Random Temporary
     tag @s[tag=Random] remove Random

@@ -13,17 +13,11 @@
     execute positioned ^ ^1 ^ rotated ~240 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.5.particle_line_burst
 
 # TODO:ダメージ
-    # 与えるダメージ = 20
-        data modify storage api: Argument.Damage set value 55f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "None"
-# 補正functionを実行
+    data modify storage api: Argument.Damage set value 55f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-# 対象に
     execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:damage/
-# リセット
     function api:damage/reset
 
 # 演出

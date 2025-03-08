@@ -5,9 +5,7 @@
 # @within function asset:mob/0327.eclael/tick/app.1_7.select_skill_latter_attack_switch
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # 居合斬り
     execute if score $Random Temporary matches 0 run tag @s add 93.Skill.Latter.Iai
