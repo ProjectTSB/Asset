@@ -11,6 +11,6 @@
     data modify storage api: Argument.ID set value 2063
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Color set value 54783
-    data modify storage api: Argument.FieldOverride.Scale set value [15f, 15f, 0.05f]
+    data modify storage api: Argument.FieldOverride.Scale set value [11f, 11f, 0.05f]
     data modify storage api: Argument.FieldOverride.Tick set value 22
     execute positioned ~ ~ ~ run function api:object/summon

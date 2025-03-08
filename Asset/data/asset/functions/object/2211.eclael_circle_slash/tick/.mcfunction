@@ -8,7 +8,10 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 攻撃
-    execute if entity @s[scores={General.Object.Tick=26}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
+    execute if entity @s[scores={General.Object.Tick=26}] run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.7 0.7
+    execute if entity @s[scores={General.Object.Tick=26}] run playsound entity.guardian.attack hostile @a ~ ~ ~ 1 1.8
+    execute if entity @s[scores={General.Object.Tick=28}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
+    execute if entity @s[scores={General.Object.Tick=31}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
 
 # 演出
     execute if entity @s[scores={General.Object.Tick=23}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
@@ -17,7 +20,7 @@
     execute if entity @s[scores={General.Object.Tick=29}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
 
 # モデル変更
-    execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:18,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,1.5f],scale:[21.5f,21.5f,0f]},text:'[{"text":"1","font":"object/2211/0"}]'}
+    execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:18,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,1.5f],scale:[18.5f,18.5f,0f]},text:'[{"text":"1","font":"object/2211/0"}]'}
     execute if entity @s[scores={General.Object.Tick=31}] run data modify entity @s text set value '[{"text":"0","font":"object/2211/0"}]'
     execute if entity @s[scores={General.Object.Tick=23}] run data modify entity @s text_opacity set value 255
     execute if entity @s[scores={General.Object.Tick=29}] run data modify entity @s text_opacity set value 180

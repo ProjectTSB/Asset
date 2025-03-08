@@ -142,3 +142,6 @@
 
 # 点睛
     execute if entity @s[tag=93.Skill.Tensei] run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/main
+
+# 雷斗星刃・至円
+    execute if entity @s[tag=93.Skill.Circle] run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/main

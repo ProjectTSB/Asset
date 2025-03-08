@@ -6,12 +6,10 @@
 
 # 演出
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 1 0.8
-    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 0.5 0.7
-    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 0.5 0.9
+    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 0.7
+    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 0.9
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1.2
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1.5
-    playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.7 0.7
-    playsound entity.guardian.attack hostile @a ~ ~ ~ 1 1.8
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -19,7 +17,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..7.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5.5] run function api:damage/
     function api:damage/reset
 
 # 終了
