@@ -14,5 +14,6 @@
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function asset:mob/0301.karmic/tick/common/effect
 # リセット
     function api:damage/reset

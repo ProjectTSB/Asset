@@ -14,6 +14,7 @@
     # ダメージ
         function api:damage/modifier
         execute as @p[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run function api:damage/
+        execute as @p[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run function asset:mob/0301.karmic/tick/common/effect
 # リセット
     function api:damage/reset
 

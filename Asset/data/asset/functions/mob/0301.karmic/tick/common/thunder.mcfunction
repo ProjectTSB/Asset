@@ -23,5 +23,6 @@
     # ダメージ
         function api:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0301.karmic/tick/common/effect
 # リセット
     function api:damage/reset
