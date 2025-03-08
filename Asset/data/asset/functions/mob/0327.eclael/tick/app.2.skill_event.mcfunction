@@ -145,3 +145,6 @@
 
 # 雷斗星刃・至円
     execute if entity @s[tag=93.Skill.Circle] run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/main
+
+# 曲射
+    execute if entity @s[tag=93.Skill.UpperShot] run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main
