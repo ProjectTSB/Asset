@@ -21,7 +21,7 @@
     # 無属性
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
-        function api:damage/modifier/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/modifier/
+        function api:damage/modifier
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
 # リセット
-    function api:damage/modifier/reset
+    function api:damage/reset
