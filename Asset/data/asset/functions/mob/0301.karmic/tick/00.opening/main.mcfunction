@@ -11,8 +11,5 @@
 # プレイヤーを見る
     execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
 
-# 演出
-    execute if score @s General.Mob.Tick matches 17 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1
-    execute if score @s General.Mob.Tick matches 47 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 1
 # リセット
-    execute if score @s General.Mob.Tick matches 64 run function asset:mob/0301.karmic/tick/skill_reset
+    execute if score @s General.Mob.Tick matches 60 run function asset:mob/0301.karmic/tick/skill_reset

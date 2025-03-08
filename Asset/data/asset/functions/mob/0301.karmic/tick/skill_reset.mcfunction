@@ -4,10 +4,22 @@
 #
 # @within function asset:mob/0301.karmic/tick/**/**
 
+#> private
+# @private
+    #declare score_holder $Count
+
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -40
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -55
+
+# プレイヤー人数で加速する。4人まで考慮する
+    execute store result score $Count Temporary if entity @a[distance=..60]
+    scoreboard players set $Count Temporary 4
+    execute if score $Count Temporary matches 2 run scoreboard players remove @s General.Mob.Tick 5
+    execute if score $Count Temporary matches 3 run scoreboard players remove @s General.Mob.Tick 7
+    execute if score $Count Temporary matches 4.. run scoreboard players remove @s General.Mob.Tick 15
+    scoreboard players reset $Count Temporary
 
 # アニメーション戻す
     execute as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function asset:mob/0301.karmic/tick/common/reset_animation
