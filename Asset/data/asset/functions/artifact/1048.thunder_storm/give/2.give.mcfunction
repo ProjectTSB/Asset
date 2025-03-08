@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"サンダーストーム","color":"gold","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"雷雲を呼び出し、広範囲の敵を雷で攻撃する"}','{"text":"現在MP割合が少ないほどダメージが増加する"}','{"text":"まばゆい煌めきとともに稲妻が空を裂く","color":"gold"}']
+    data modify storage asset:artifact Lore set value ['{"text":"雷雲を呼び出し、広範囲の敵を雷で攻撃する"}','{"text":"減少したMP割合に比例してダメージが増加する(最大300)"}','{"text":"まばゆい煌めきとともに稲妻が空を裂く","color":"gold"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [340,640]
+    data modify storage asset:artifact AttackInfo.Damage set value [340]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
