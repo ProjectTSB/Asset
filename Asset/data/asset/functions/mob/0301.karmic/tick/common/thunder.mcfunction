@@ -15,11 +15,11 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 28f
+        data modify storage api: Argument.Damage set value 28f
     # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.AttackType set value "Magic"
     # 無属性
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
         function api:damage/modifier
         execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
