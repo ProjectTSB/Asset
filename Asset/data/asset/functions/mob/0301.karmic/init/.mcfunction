@@ -19,3 +19,4 @@
 
 # タグつけるやつ。スキルアクティベート内で動く
     tag @s add 8D.Opening
+    tag @s add 8D.SkipSkillSelect

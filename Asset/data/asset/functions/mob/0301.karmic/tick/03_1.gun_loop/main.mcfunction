@@ -19,5 +19,4 @@
 
 
 # 次の攻撃に移行する
-    execute if score @s General.Mob.Tick matches 29 run say aaa
     execute if score @s General.Mob.Tick matches 29 run function asset:mob/0301.karmic/tick/03_1.gun_loop/skill_select

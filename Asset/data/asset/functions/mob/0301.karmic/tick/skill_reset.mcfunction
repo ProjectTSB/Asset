@@ -15,6 +15,9 @@
     execute as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function asset:mob/0301.karmic/tick/common/reset_animation
     execute as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function animated_java:karmic/animations/wait/play
 
+# テレポートするべきならする
+    function asset:mob/0301.karmic/tick/common/teleport_check/main
+
 # リセット処理
     tag @s remove 8D.SkillDash
     tag @s remove 8D.SkillSlash

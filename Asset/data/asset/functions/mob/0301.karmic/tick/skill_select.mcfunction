@@ -11,7 +11,8 @@
 
 # スキルが超えたら戻す
     execute if score @s 8D.Skill matches 7.. run scoreboard players set @s 8D.Skill 1
-
+# 難易度が足りないとスキルが減る
+    execute if predicate api:global_vars/difficulty/easy if score @s 8D.Skill matches 6.. run scoreboard players set @s 8D.Skill 1
 # デバッグスキル固定
 
 # スキル選択

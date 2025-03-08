@@ -18,6 +18,9 @@
 # スキップタグ付与(ついてるからいらない)
     #tag @s add 8D.SkipSkillSelect
 
+# テレポートするべきならする
+    function asset:mob/0301.karmic/tick/common/teleport_check/main
+
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -40

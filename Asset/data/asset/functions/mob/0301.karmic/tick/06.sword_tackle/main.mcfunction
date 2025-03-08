@@ -12,8 +12,6 @@
     execute if score @s General.Mob.Tick matches 0..20 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 演出
-    execute if score @s General.Mob.Tick matches 26 run say dash
-
     execute if score @s General.Mob.Tick matches 26..33 rotated ~ 0 positioned ^ ^ ^1.4 run function asset:mob/0301.karmic/tick/common/tp
 # プレイヤー近づいたらスコアぶっ飛ばす
     execute if score @s General.Mob.Tick matches 26..33 if entity @a[gamemode=!spectator,distance=..6] run scoreboard players set @s General.Mob.Tick 33

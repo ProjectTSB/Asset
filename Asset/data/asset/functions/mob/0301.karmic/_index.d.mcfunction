@@ -23,3 +23,5 @@
     #declare tag 8D.SkillSword1
     #declare tag 8D.SkillSword2
     #declare tag 8D.SkillSword3
+    #
+    #declare tag TeleportCheck
