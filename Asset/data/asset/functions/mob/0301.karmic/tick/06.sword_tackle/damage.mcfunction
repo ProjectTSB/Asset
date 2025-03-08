@@ -20,8 +20,9 @@
     tag @a[gamemode=!spectator,distance=..5] add Hit
     execute positioned ^ ^ ^100 run tag @a[tag=Hit,distance=..99] remove Hit
     execute positioned ^ ^ ^-100 run tag @a[tag=Hit,distance=..99] remove Hit
+    say @a[tag=Hit,distance=..99]
 # ダメージ
-    data modify storage api: Argument.Damage set value 10.0f
+    data modify storage api: Argument.Damage set value 14.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

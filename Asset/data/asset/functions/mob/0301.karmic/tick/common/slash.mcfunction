@@ -9,7 +9,7 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 40.0f
+    data modify storage api: Argument.Damage set value 32.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

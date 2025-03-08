@@ -15,7 +15,7 @@
 
 # プレイヤー人数で加速する。4人まで考慮する
     execute store result score $Count Temporary if entity @a[distance=..60]
-    scoreboard players set $Count Temporary 4
+    #scoreboard players set $Count Temporary 4
     execute if score $Count Temporary matches 2 run scoreboard players remove @s General.Mob.Tick 5
     execute if score $Count Temporary matches 3 run scoreboard players remove @s General.Mob.Tick 7
     execute if score $Count Temporary matches 4.. run scoreboard players remove @s General.Mob.Tick 15

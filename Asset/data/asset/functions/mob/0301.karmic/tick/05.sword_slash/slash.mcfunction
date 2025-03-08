@@ -25,7 +25,7 @@
     execute positioned ^ ^ ^-100 run tag @a[tag=Hit,distance=..100] remove Hit
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 40.0f
+    data modify storage api: Argument.Damage set value 33.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
