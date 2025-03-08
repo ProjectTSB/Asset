@@ -12,3 +12,6 @@
 # 召喚
     data modify storage api: Argument.ID set value 2219
     execute at @s run function api:object/summon
+
+# Super
+    function asset:mob/super.death

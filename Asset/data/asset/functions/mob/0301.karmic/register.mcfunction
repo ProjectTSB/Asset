@@ -4,8 +4,9 @@
 #
 # @within function asset:mob/alias/301/register
 
-# 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2000
+    function asset:mob/extends
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
@@ -15,7 +16,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"断罪者"}'
+    data modify storage asset:mob Name set value '{"text":"業深き想い"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
@@ -52,9 +53,9 @@
     # data modify storage asset:mob KnockBackResist set value
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 0.85
+        data modify storage asset:mob Resist.Physical set value 1.2
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 1.2
+        data modify storage asset:mob Resist.Magic set value 0.85
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 0.85
     # 水倍率 (float) (オプション)
