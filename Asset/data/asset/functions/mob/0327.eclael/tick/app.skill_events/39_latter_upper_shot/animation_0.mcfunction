@@ -5,4 +5,5 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main
 
 # 再生
-    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/38_upper_shot_combo/tween {duration:1, to_frame: 1}
+    execute if predicate api:global_vars/difficulty/max/normal as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/38_upper_shot_combo/tween {duration:1, to_frame: 1}
+    execute if predicate api:global_vars/difficulty/min/hard as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/38_upper_shot_combo_hard/tween {duration:1, to_frame: 1}

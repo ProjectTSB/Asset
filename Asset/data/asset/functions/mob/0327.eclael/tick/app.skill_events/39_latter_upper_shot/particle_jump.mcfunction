@@ -2,7 +2,10 @@
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main
+# @within
+#    function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main
+#    function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_normal
+#    function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_hard
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGwDMArKQOwrUoC0KlALAJyueelqrABwBGWgDNWDCdUoNq1UQEMATKXxgAdsoC2CZIDDFAASiwBGMox6AzknAoA9oS0Qk1AAwEUcV3Az2YABuytiEBuAAHkheYFAxAL4JBNakaIR2iKIeObk5BDYQVm6IsXDY2GgwNgbZsRiORRAGsWg2AKIVVTXtAI6EodhQAMqWPuSIEqE1SQC6QA_3
 # 円 1

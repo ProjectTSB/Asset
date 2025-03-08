@@ -20,17 +20,12 @@
         execute if score @s 93.AnimationTimer matches 6 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 6 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
         execute if score @s 93.AnimationTimer matches 6 run particle flash ^ ^1 ^5 0 0 0 0 1
-        execute if score @s 93.AnimationTimer matches 147 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
-        execute if score @s 93.AnimationTimer matches 147 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
-        execute if score @s 93.AnimationTimer matches 147 run particle flash ^ ^1 ^5 0 0 0 0 1
         execute if score @s 93.AnimationTimer matches 26 run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 2 1.3
         execute if score @s 93.AnimationTimer matches 27..35 run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 2 1.3
         execute if score @s 93.AnimationTimer matches 78 run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 2 1.3
         execute if score @s 93.AnimationTimer matches 79..100 run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 2 1.3
         execute if score @s 93.AnimationTimer matches 1 positioned ^ ^1 ^-3 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_jump
         execute if score @s 93.AnimationTimer matches 6 positioned ^ ^1 ^5 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_jump
-        execute if score @s 93.AnimationTimer matches 147 positioned ^ ^3 ^ rotated ~ ~-90 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_jump
-        execute if score @s 93.AnimationTimer matches 148 positioned ^ ^6 ^ rotated ~ ~-90 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_jump
 
 # 攻撃
     execute if score @s 93.AnimationTimer matches 10 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/attack_0
@@ -38,10 +33,13 @@
     execute if score @s 93.AnimationTimer matches 105 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/prediction
     execute if score @s 93.AnimationTimer matches 120 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/attack_1
 
+# 難易度分岐
+    execute if predicate api:global_vars/difficulty/max/normal run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_normal
+    execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_hard
+
 # 終了
     execute if score @s 93.AnimationTimer matches 200 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/animation_1
     # 移動
-        execute if score @s 93.AnimationTimer matches 150 run tp @s ~ ~2 ~ ~ 0
         execute if score @s 93.AnimationTimer matches 195 positioned as @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1] run tp @s ~ ~-2 ~ ~ 0
     # 演出
         execute if score @s 93.AnimationTimer matches 200 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
