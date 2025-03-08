@@ -6,6 +6,7 @@
 
 
 # 演出
+    playsound minecraft:entity.player.hurt hostile @a ~ ~ ~ 1 1
 
 # Super
     function asset:mob/super.hurt
