@@ -12,5 +12,5 @@
     data modify storage api: Argument.ID set value 2211
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=wither_skeleton,tag=93.EntityRoot,limit=1] MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Damage set value 35.0f
     execute at @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,sort=nearest,limit=1] positioned ~ ~0.4 ~ run function api:object/summon

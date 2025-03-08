@@ -107,6 +107,7 @@
             #declare function animated_java:eclael/animations/35_0_slash_beam_start/tween
             #declare function animated_java:eclael/animations/35_1_slash_beam/tween
             #declare function animated_java:eclael/animations/36_quick_iai/tween
+            #declare function animated_java:eclael/animations/36_quick_iai_turn/tween
             #declare function animated_java:eclael/animations/37_fall_spear/tween
             #declare function animated_java:eclael/animations/38_upper_shot_combo/tween
             #declare function animated_java:eclael/animations/39_circle_slash/tween
@@ -191,6 +192,7 @@
     #declare tag 93.Skill.FieldSlash.A 全体斬りパターンA
     #declare tag 93.Skill.Beam 残心
     #declare tag 93.Skill.IaiMove 居合
+    #declare tag 93.Skill.IaiMove.Turn 居合2連
     #declare tag 93.Skill.IaiMove.Hit 居合ヒット
     #declare tag 93.Skill.Tensei 落下突き
     #declare tag 93.Skill.Circle 円範囲斬撃

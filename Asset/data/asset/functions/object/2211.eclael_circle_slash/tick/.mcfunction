@@ -12,12 +12,13 @@
     execute if entity @s[scores={General.Object.Tick=26}] run playsound entity.guardian.attack hostile @a ~ ~ ~ 1 1.8
     execute if entity @s[scores={General.Object.Tick=28}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
     execute if entity @s[scores={General.Object.Tick=31}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
+    execute if entity @s[scores={General.Object.Tick=33}] positioned ^ ^ ^0 run function asset:object/2211.eclael_circle_slash/tick/attack
 
 # 演出
     execute if entity @s[scores={General.Object.Tick=23}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
     execute if entity @s[scores={General.Object.Tick=25}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
     execute if entity @s[scores={General.Object.Tick=27}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
-    execute if entity @s[scores={General.Object.Tick=29}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
+    # execute if entity @s[scores={General.Object.Tick=29}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
 
 # モデル変更
     execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:18,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,1.5f],scale:[18.5f,18.5f,0f]},text:'[{"text":"1","font":"object/2211/0"}]'}

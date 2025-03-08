@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+# @within
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main_turn
 
 # ヒット判定
     tag @a[tag=DXYZ] remove DXYZ

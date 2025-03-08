@@ -41,13 +41,6 @@
     execute if entity @s[scores={General.Object.Tick=228}] run function asset:object/2212.eclael_upper_shot/tick/effect_start
     execute if entity @s[scores={General.Object.Tick=268}] run function asset:object/2212.eclael_upper_shot/tick/effect_start
     execute if entity @s[scores={General.Object.Tick=308}] run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=73}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=113}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=153}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=193}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=233}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=273}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
-    # execute if entity @s[scores={General.Object.Tick=313}] rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/2212.eclael_upper_shot/tick/effect_start
 
     execute if entity @s[scores={General.Object.Tick=68..85}] as @e[type=area_effect_cloud,tag=2212.EffectPos,distance=..50,sort=random,limit=3] at @s rotated ~ ~-90 run function asset:object/2212.eclael_upper_shot/tick/effect
     execute if entity @s[scores={General.Object.Tick=108..125}] as @e[type=area_effect_cloud,tag=2212.EffectPos,distance=..50,sort=random,limit=3] at @s rotated ~ ~-90 run function asset:object/2212.eclael_upper_shot/tick/effect

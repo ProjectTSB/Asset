@@ -2,7 +2,9 @@
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+# @within
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main_turn
 
 # 移動位置決定
     summon area_effect_cloud ^ ^2 ^2 {Duration:30,Tags:["93.Temp.AttackPosition"]}

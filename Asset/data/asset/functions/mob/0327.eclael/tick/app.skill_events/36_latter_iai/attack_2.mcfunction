@@ -2,9 +2,10 @@
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+# @within
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main
+#    function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/main_turn
 
-# TODO：演出を練る
 # 演出
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.2
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.5
