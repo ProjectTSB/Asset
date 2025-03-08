@@ -21,6 +21,7 @@
 # スキルダッシュから発生するやつ
     execute if entity @s[tag=8D.SkillDash1] run function asset:mob/0301.karmic/tick/01_1.dash_slash1/main
     execute if entity @s[tag=8D.SkillDash2] run function asset:mob/0301.karmic/tick/01_2.dash_shot/main
+# 未使用
     execute if entity @s[tag=8D.SkillDash3] run function asset:mob/0301.karmic/tick/01_3.dash_slash2/main
 
 # スキル銃の続き

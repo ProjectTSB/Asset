@@ -3,3 +3,5 @@
 # いつか作りたい
 #
 # @within function asset:mob/0301.karmic/tick/skill_active
+
+# 未使用領域

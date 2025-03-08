@@ -13,7 +13,7 @@
     execute if score $Random Temporary matches 0 run tag @s add 8D.SkillDash1
     execute if score $Random Temporary matches 1 run tag @s add 8D.SkillDash2
 
-
+# 未使用
     execute if score $Random Temporary matches 2 run tag @s add 8D.SkillDash3
 
 # リセット
