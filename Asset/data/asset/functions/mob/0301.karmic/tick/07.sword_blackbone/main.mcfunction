@@ -15,7 +15,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0301.karmic/tick/07.sword_blackbone/alart
 
 # 攻撃
-    execute if score @s General.Mob.Tick matches 16 run playsound minecraft:block.end_portal.spawn player @a ~ ~ ~ 1 0.8
+    execute if score @s General.Mob.Tick matches 16 run playsound minecraft:block.end_portal.spawn hostile @a ~ ~ ~ 1 0.8
     execute if score @s General.Mob.Tick matches 16 run function asset:mob/0301.karmic/tick/07.sword_blackbone/summon
 
     execute if score @s General.Mob.Tick matches 46 positioned ~ ~1.3 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot_strong/main
