@@ -25,3 +25,28 @@
     #declare tag 8D.SkillSword3
     #
     #declare tag TeleportCheck
+    #
+    #declare function animated_java:karmic/summon
+    #declare function animated_java:karmic/variants/girl/apply
+    #declare function animated_java:karmic/animations/wait/play
+    #declare function animated_java:karmic/animations/wait/stop
+    #declare function animated_java:karmic/animations/summon/play
+    #declare function animated_java:karmic/animations/run_start/play
+    #declare function animated_java:karmic/animations/run_start/stop
+    #declare function animated_java:karmic/animations/run_loop/play
+    #declare function animated_java:karmic/animations/run_loop/stop
+    #declare function animated_java:karmic/animations/run_end_slash/play
+    #declare function animated_java:karmic/animations/run_end_sliding/play
+    #declare function animated_java:karmic/animations/attack/play
+    #declare function animated_java:karmic/animations/guntpstart/play
+    #declare function animated_java:karmic/animations/guntp/play
+    #declare function animated_java:karmic/animations/guntpend/play
+    #declare function animated_java:karmic/animations/sword_wait/play
+    #declare function animated_java:karmic/animations/sword_wait/stop
+    #declare function animated_java:karmic/animations/sword_change/play
+    #declare function animated_java:karmic/animations/sword_attack1/play
+    #declare function animated_java:karmic/animations/sword_run/play
+    #declare function animated_java:karmic/animations/sword_run_slash/play
+    #declare function animated_java:karmic/animations/sword_attack2/play
+    #declare function animated_java:karmic/animations/fall/play
+    #declare function animated_java:karmic/animations/fall/stop
