@@ -13,7 +13,7 @@
         data modify storage lib: Argument.ElementType set value "None"
     # ダメージ
         function api:damage/modifier
-        execute as @p[tag=LandingTaret,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run function api:damage/
+        execute as @p[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..50,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
 
