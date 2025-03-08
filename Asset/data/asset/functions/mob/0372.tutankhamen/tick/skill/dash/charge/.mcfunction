@@ -8,9 +8,9 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/backstep
 
 # 後ろに下がる
-    execute if score @s General.Mob.Tick matches 0..5 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.5
-    execute if score @s General.Mob.Tick matches 6..10 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.3
-    execute if score @s General.Mob.Tick matches 11..15 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/dash/charge/check_collide_back run tp @s ^ ^ ^-0.1
+    execute if score @s General.Mob.Tick matches 0..5 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/back/0.5 run tp @s ^ ^ ^-0.5
+    execute if score @s General.Mob.Tick matches 6..10 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/back/0.5 run tp @s ^ ^ ^-0.3
+    execute if score @s General.Mob.Tick matches 11..15 rotated ~ 0 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/back/0.5 run tp @s ^ ^ ^-0.1
 
 # 突進開始アニメ
     execute if score @s General.Mob.Tick matches 15 run function asset:mob/0372.tutankhamen/tick/skill/dash/charge/start
@@ -28,9 +28,9 @@
         execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 40 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
 
 # ウソ慣性
-    execute if score @s General.Mob.Tick matches 30..40 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.5
-    execute if score @s General.Mob.Tick matches 40..45 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.3
-    execute if score @s General.Mob.Tick matches 45..50 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.1
+    execute if score @s General.Mob.Tick matches 30..40 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.5
+    execute if score @s General.Mob.Tick matches 40..45 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.3
+    execute if score @s General.Mob.Tick matches 45..50 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.1
 
 # 終わり際のパーティクル
     execute if score @s General.Mob.Tick matches 30..50 run particle dust 0 0.318 0.318 1 ~ ~1 ~ 0.5 0.5 0.5 0 10
