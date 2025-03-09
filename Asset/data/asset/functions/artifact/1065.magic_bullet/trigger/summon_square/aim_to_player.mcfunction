@@ -9,7 +9,7 @@
     #declare tag TL.TargetPlayer
 
 # ランダムなプレイヤーを指定
-    tag @r[distance=..100] add TL.TargetPlayer
+    tag @r[tag=!PlayerShouldInvulnerable,distance=..100] add TL.TargetPlayer
 
 # 1個目の魔法陣にIDを持たせる
     execute store result storage api: Argument.FieldOverride.ID int 1 run scoreboard players get $Random Temporary

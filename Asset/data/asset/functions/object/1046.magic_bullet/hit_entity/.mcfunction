@@ -30,11 +30,11 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @p[tag=Owner] run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=player,tag=1046.TargetEntity,tag=!Owner,dx=0] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=player,tag=1046.TargetEntity,tag=!PlayerShouldInvulnerable,tag=!Owner,dx=0] run function api:damage/
     function api:damage/reset
 
 # プレイヤーを狙った弾かつOwnerがいればOwnerにダメージ
-    execute if data storage asset:context this{AimToPlayer:true} positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=Owner,tag=1046.TargetEntity,dx=0] run function asset:object/1046.magic_bullet/hit_entity/self_damage
+    execute if data storage asset:context this{AimToPlayer:true} positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=Owner,tag=1046.TargetEntity,tag=!PlayerShouldInvulnerable,dx=0] run function asset:object/1046.magic_bullet/hit_entity/self_damage
 
 # リセット
     tag @p[tag=Owner] remove Owner
