@@ -10,7 +10,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 266
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value "大地の恵み"
+    data modify storage asset:effect Name set value '{"text":"大地の恵み","color":"green"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 300
 # スタック (int) (default = API || 1)
