@@ -10,8 +10,5 @@
 # スポーンマーカーをkill
     kill @e[type=marker,tag=1N.SpawnMarker]
 
-# TextDisplayをkill
-    kill @e[type=text_display,tag=1N.TextDisplay]
-
 # "確実に"偽物を消し去る
     execute as @e[type=zombie,scores={MobID=224},distance=..128] run function api:mob/remove

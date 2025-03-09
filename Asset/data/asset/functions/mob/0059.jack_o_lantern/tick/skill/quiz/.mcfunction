@@ -21,8 +21,8 @@
 
 # 煽りメッセージ
     execute if entity @s[scores={General.Mob.Tick=50}] run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 1 1.5
-    execute if entity @s[scores={General.Mob.Tick=50}] run summon text_display ~ ~3 ~ {Tags:["1N.TextDisplay"],billboard:"center",shadow:1b,text:'[{"text":"探してみな！"},{"text":"\\n↓","color":"white"}]',background:16711680,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f]}}
-    execute if entity @s[scores={General.Mob.Tick=70}] positioned ~ ~3 ~ run kill @e[type=text_display,tag=1N.TextDisplay,distance=..0.01,sort=nearest,limit=1]
+    execute if entity @s[scores={General.Mob.Tick=50}] run data modify storage api: Argument.ID set value 2033
+    execute if entity @s[scores={General.Mob.Tick=50}] positioned ~ ~3 ~ run function api:object/summon
 
 # 回転途中で頭を取り換える
     execute if entity @s[scores={General.Mob.Tick=35}] run particle explosion ~ ~1.8 ~ 0 0 0 0 1
