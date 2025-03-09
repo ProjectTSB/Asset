@@ -29,7 +29,7 @@
 
 # 攻撃
     execute if score @s 93.AnimationTimer matches 10 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/attack_0
-    execute if score @s 93.AnimationTimer matches 50 positioned ^ ^3 ^1 rotated ~ -60 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_shot
+    execute if score @s 93.AnimationTimer matches 52 positioned ^ ^3 ^1 rotated ~ -60 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/particle_shot
     execute if score @s 93.AnimationTimer matches 105 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/prediction
     execute if score @s 93.AnimationTimer matches 120 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/attack_1
 
