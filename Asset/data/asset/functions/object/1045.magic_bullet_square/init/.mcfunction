@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/1045/init
 
-# this.IDをスコアへ代入しておく
-    execute store result score @s 1045.ID run data get storage asset:context this.ID
+# this.IDがあればスコアへ代入しておく
+    execute if data storage asset:context this.ID store result score @s 1045.ID run data get storage asset:context this.ID
