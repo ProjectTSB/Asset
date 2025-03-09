@@ -1,6 +1,6 @@
 #> asset:object/1091.flame_boomerang/hit_entity/check_target/m
 #
-#   args:
+# @input args:
 #   ID : int
 # @within function asset:object/1091.flame_boomerang/hit_entity/check_target/
 
