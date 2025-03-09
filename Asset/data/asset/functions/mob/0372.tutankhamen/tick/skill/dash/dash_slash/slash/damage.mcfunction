@@ -13,14 +13,10 @@
     data modify storage api: Argument.ID set value 2001
     execute rotated ~ ~ positioned ~ ~1.5 ~ positioned ^ ^ ^1.5 run function api:object/summon
 
-# ダメージ判定
-    data modify storage api: Argument.Damage set value 45f
-# 属性
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Dash.Slash
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-# 補正functionを実行
     function api:damage/modifier
-# 対象
     execute positioned ^ ^ ^1.5 as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
-# リセット
     function api:damage/reset

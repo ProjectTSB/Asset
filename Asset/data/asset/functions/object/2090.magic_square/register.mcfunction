@@ -17,7 +17,6 @@
 # ID (int)
     data modify storage asset:object ID set value 2090
 # フィールド(オプション)
-    data modify storage asset:object Field.Rotation set value [0.0f,0.0f]
     data modify storage asset:object Field.Color set value 16777215
     data modify storage asset:object Field.Scale set value [1.0f,1.0f,1.0f]
     data modify storage asset:object Field.CMD set value 20443
