@@ -7,11 +7,7 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
-# ここから先は神器側の効果の処理を書く
-
-#> Private
-# @private
-    #declare score_holder $Random
+# ここから先は神器側の効果の処理
 
 # 演出
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] at @s run function asset:artifact/1205.electric_fly_swatter/trigger/vfx
