@@ -14,7 +14,7 @@
     execute positioned ^ ^1.6 ^6 rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/5.2.particle_slash_0
 
 # ターゲット取得
-    execute positioned ~ ~ ~ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3.5] add 93.Temp.AttackTarget
+    execute positioned ^ ^ ^-3 run tag @a[tag=!PlayerShouldInvulnerable,distance=..6] add 93.Temp.AttackTarget
 
 # TODO：与えるダメージの調整
 # ダメージ
@@ -32,6 +32,19 @@
     function api:damage/reset
     tag @a remove 93.Temp.AttackTarget
 
+# 演出
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504,20505],Scale:[18f,1f,20f],Transformation:{left_rotation:{axis:[0,0,1],angle:3.31613f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^1.8 ^-3 run function api:object/summon
+
+# 弾召喚
+    data modify storage api: Argument.ID set value 2190
+    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    data modify storage api: Argument.FieldOverride.IsInverse set value true
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute positioned ^ ^1 ^1 run function api:object/summon
+
 # ライン斬撃
     summon area_effect_cloud ^ ^ ^ {Duration:1,Tags:["93.Temp.AttackRotation"]}
     execute if predicate api:global_vars/difficulty/min/hard as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] run tp @s ~ ~ ~ ~ 0
@@ -41,8 +54,3 @@
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 45.0f
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
     execute if predicate api:global_vars/difficulty/min/hard positioned ^ ^ ^ run function api:object/summon
-
-# 演出
-    data modify storage api: Argument.ID set value 2001
-    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504,20505],Scale:[18f,1f,20f],Transformation:{left_rotation:{axis:[0,0,1],angle:3.31613f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
-    execute positioned ^ ^1.8 ^-3 run function api:object/summon

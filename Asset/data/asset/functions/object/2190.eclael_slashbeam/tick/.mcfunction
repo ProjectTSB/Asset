@@ -8,7 +8,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-    execute rotated ~90 ~-40 run function asset:object/2190.eclael_slashbeam/tick/particle
+    execute unless entity @s[tag=2190.IsInverse] rotated ~90 ~-40 run function asset:object/2190.eclael_slashbeam/tick/particle
+    execute if entity @s[tag=2190.IsInverse] rotated ~90 ~40 run function asset:object/2190.eclael_slashbeam/tick/particle
 
 # 移動・攻撃処理
     execute positioned ^ ^ ^1 run function asset:object/2190.eclael_slashbeam/tick/hit
