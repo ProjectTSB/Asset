@@ -9,7 +9,7 @@
     function lib:reflection_bullet/
 
 # 敵がいるならそっちを向く
-    execute if entity @e[type=#lib:living,tag=Enemy,distance=..20] run tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,distance=..20,sort=nearest,limit=1] eyes
+    execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20] run tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] eyes
 
 # ヒット判定復活
     tag @s remove 1107.CannotHit
