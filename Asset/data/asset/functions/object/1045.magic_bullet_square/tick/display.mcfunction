@@ -10,5 +10,8 @@
 # transformation.scale
     data modify entity @s transformation.scale set from storage asset:context this.Scale
 
+# interpolation_duration
+    data modify entity @s interpolation_duration set from storage asset:context this.Interpolation
+
 # Delayを-1にして何度も表示されないようにする
     data modify storage asset:context this.Delay set value -1

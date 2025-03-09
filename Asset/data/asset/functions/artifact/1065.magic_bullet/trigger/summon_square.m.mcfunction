@@ -13,4 +13,5 @@
     data modify storage api: Argument.ID set value 1045
     $data modify storage api: Argument.FieldOverride.Scale set value $(Scale)
     $data modify storage api: Argument.FieldOverride.Delay set value $(Delay)
+    $data modify storage api: Argument.FieldOverride.Interpolation set value $(Interpolation)
     function api:object/summon
