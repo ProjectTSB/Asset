@@ -6,3 +6,6 @@
 
 # 消滅
     kill @s
+
+# 演出
+    playsound minecraft:block.amethyst_cluster.break neutral @a ~ ~ ~ 1 1.4
