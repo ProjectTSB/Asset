@@ -41,5 +41,10 @@
 # 対空砲について説明を表示
     tellraw @a[distance=..128] [{"translate": "[TIPS]対空砲は自動で天使を攻撃します。破壊された場合自動で修理され、プレイヤーは%1$sで修理の支援をできます。","with":[{"keybind":"key.sneak"}],"color": "yellow"}]
 
+# 地面の座標を覚ええておく
+    data modify storage asset:context this.GroundPos set from entity @e[tag=5X.Centre,distance=..128,limit=1] Pos[1]
+        #tellraw @a[distance=..128] [{"nbt": "this.GroundPos", "storage": "asset:context"}]
+
+
 # reset
     scoreboard players reset $initial_motion_end_time Temporary
