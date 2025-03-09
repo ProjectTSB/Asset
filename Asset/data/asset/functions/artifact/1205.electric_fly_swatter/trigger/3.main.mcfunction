@@ -27,7 +27,7 @@
     function api:damage/reset
 
 # 敵が浮いてるなら叩き落とす
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] at @s if block ~ ~-1 ~ #lib:no_collision_without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,tag=!Uninterferable,distance=..6] at @s if block ~ ~-1 ~ #lib:no_collision_without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
 
 # リセット
     scoreboard players reset $Recursive Temporary
