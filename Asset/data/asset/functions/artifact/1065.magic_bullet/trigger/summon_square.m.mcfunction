@@ -3,8 +3,9 @@
 # 魔法陣の召喚処理
 #
 # @input args:
-#
-#
+#   Scale : double @ 3
+#   Delay : int
+#   Interpolation : int
 # @within function
 #   asset:artifact/1065.magic_bullet/trigger/3.main
 #   asset:artifact/1065.magic_bullet/trigger/aim_to_player
