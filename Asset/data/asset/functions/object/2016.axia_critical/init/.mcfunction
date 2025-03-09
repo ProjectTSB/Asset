@@ -6,9 +6,9 @@
 
 # マーカーを呼ぶ
     tp 0-0-0-0-0 ^ ^ ^ ~ ~
-    
+
 # 演出のためにランダムな方向を向かせる
-    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
+    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
 
 # TP
     execute at 0-0-0-0-0 run tp @s ~ ~ ~ ~ 0

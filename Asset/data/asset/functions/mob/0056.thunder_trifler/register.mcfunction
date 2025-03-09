@@ -18,7 +18,7 @@
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:2s}]}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)
@@ -61,5 +61,5 @@
         data modify storage asset:mob Resist.Thunder set value 0.7
 
 # フィールド
-# [ダメージ量、MP減少量の計算に必要な値]
-    data modify storage asset:mob Field set value [7,4]
+    data modify storage asset:mob Field.Damage set value 7
+    data modify storage asset:mob Field.MPReduce set value 4

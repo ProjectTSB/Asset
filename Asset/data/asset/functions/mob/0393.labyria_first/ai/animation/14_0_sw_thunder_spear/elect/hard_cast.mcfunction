@@ -1,4 +1,4 @@
-#> asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/normal_cast
+#> asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/elect/hard_cast
 #
 # ハード帯電
 #

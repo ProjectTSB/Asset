@@ -5,8 +5,7 @@
 # @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/
 
 # ランダムな方向から召喚する
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $4 Const
+    execute store result score $Random Temporary run random value 0..3
 
 # ノーマル以下
     execute if score $Random Temporary matches 0 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/3/1

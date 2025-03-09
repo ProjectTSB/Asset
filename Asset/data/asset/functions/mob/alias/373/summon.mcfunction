@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/summon/summon.m
 
 # 本来の処理を呼び出す
-   function asset:mob/0373.gold_coffin/summon/
+    function asset:mob/0373.gold_coffin/summon/

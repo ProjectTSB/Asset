@@ -22,10 +22,8 @@
     playsound minecraft:item.trident.return player @a ~ ~ ~ 1 2
 
 
-# ほしい範囲に剰余算
-    execute store result score $Random Temporary run function lib:random/
-# 疑似乱数取得
-    scoreboard players operation $Random Temporary %= $3 Const
+# 乱数取得
+    execute store result score $Random Temporary run random value 0..2
 # メッセージ出力
     execute if score $Random Temporary matches 0 anchored eyes positioned ^ ^ ^1 run function asset:artifact/0364.red_knights_sword/trigger/particle/particle_1
     execute if score $Random Temporary matches 1 anchored eyes positioned ^ ^ ^1 run function asset:artifact/0364.red_knights_sword/trigger/particle/particle_2
@@ -51,7 +49,7 @@
     # 補正をしない
         data modify storage api: Argument.FixedDamage set value true
     # 死亡メッセージ
-        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた。","with":[{"selector":"@s"}]}]']
+        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた","with":[{"selector":"@s"}]}]']
     # ダメージ
         function api:damage/modifier_continuation
         execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/

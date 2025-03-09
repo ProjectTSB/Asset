@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 201
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:heart_of_the_sea"
+    data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"臆病者の魂","color":"dark_aqua"}'
 # 神器の説明文 (TextComponentString[])

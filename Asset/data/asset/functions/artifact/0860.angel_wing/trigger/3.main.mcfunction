@@ -5,9 +5,11 @@
 # @within function asset:artifact/0860.angel_wing/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    data modify storage asset:artifact IgnoreItemUpdate set value true
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    effect give @s minecraft:jump_boost 2 2 true
-    effect give @s minecraft:speed 2 1 true
+
+# バフを付与
+    data modify storage api: Argument.ID set value 310
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

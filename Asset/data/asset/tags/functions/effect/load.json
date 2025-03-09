@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:effect/0301.soul_light/load",
+        "asset:effect/0191.night_vision/load",
         "asset:effect/0605.aurora_corrosion/load",
         "asset:effect/0601.conviction/load",
         "asset:effect/0210.fading_speed/load",

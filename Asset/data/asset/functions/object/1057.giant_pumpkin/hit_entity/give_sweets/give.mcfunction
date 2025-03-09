@@ -9,8 +9,7 @@
     #declare score_holder $Random
 
 # ランダムにIDを設定
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $5 Const
+    execute store result score $Random Temporary run random value 0..4
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set value 1106
     execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set value 1114
     execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set value 1115

@@ -1,11 +1,12 @@
 #> asset:mob/0058.divide_haze/tick/wither
 #
-#
+# ウィザーを付与
 #
 # @within function asset:mob/0058.divide_haze/tick/
 
-data modify storage api: Argument.ID set value 30
-data modify storage api: Argument.Stack set value 3
-data modify storage api: Argument.Duration set value 20
-function api:entity/mob/effect/give
-function api:entity/mob/effect/reset
+# ウィザー
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:30,Duration:100}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

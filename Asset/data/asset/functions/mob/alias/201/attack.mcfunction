@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/attack/attack.m
 
 # 本来の処理を呼び出す
-   function asset:mob/0201.burnt_out_dream/attack/
+    function asset:mob/0201.burnt_out_dream/attack/

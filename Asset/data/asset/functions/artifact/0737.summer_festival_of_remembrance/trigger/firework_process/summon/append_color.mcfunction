@@ -7,8 +7,7 @@
 #   asset:artifact/0737.summer_festival_of_remembrance/trigger/firework_process/summon/append_color
 
 # ランダムに色を指定する
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $11 Const
+    execute store result score $Random Temporary run random value 0..10
 
 # 再帰の回数を計測するスコア
     scoreboard players add $RecursiveCount Temporary 1

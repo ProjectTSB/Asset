@@ -5,4 +5,4 @@
 # @within asset:mob/alias/377/summon
 
 # 元となるEntityを召喚する
-    summon iron_golem ~ ~ ~ {Tags:["MobInit","AlwaysInvisible"],Silent:1b,NoAI:1b,DeathLootTable:"empty"}
+    summon iron_golem ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible"],Silent:1b,NoAI:1b,DeathLootTable:"empty"}

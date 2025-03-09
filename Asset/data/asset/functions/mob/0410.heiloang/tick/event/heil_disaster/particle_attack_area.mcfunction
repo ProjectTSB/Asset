@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/tornado/particle_attack_area
+#> asset:mob/0410.heiloang/tick/event/heil_disaster/particle_attack_area
 #
 # 竜巻
 #
