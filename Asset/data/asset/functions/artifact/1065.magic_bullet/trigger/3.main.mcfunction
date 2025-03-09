@@ -17,10 +17,13 @@
 
 # 7回目なら確率でプレイヤーを狙うTagを付与
     execute if score $UseCount Temporary matches 7 if predicate lib:random_pass_per/50 run tag @s add TL.AimToPlayer
-    # execute if score $UseCount Temporary matches 7 run tag @s add TL.AimToPlayer
+
+# debug
+    # tag @s add TL.AimToPlayer
+    # scoreboard players set $UseCount Temporary 7
 
 # プレイヤーを狙う状態なら、ランダムなIDを用意する
-    execute if entity @s[tag=TL.AimToPlayer] store result score $Random Temporary run random value -2147483648..2147483647
+    execute if entity @s[tag=TL.AimToPlayer] store result score $Random Temporary run random value 0..65535
 
 # 魔法陣を召喚
 # 使用回数に応じて魔法陣の召喚数を増やす
@@ -60,7 +63,6 @@
         execute if entity @s[tag=TL.AimToPlayer] run data modify storage api: Argument.FieldOverride.AimToPlayer set value true
 
     # 魔弾を召喚
-    # プレイヤーを狙う状態を弾に引き継ぐ
         data modify storage api: Argument.ID set value 1046
         execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
         execute anchored eyes positioned ^-0.4 ^-0.1 ^0.6 run function api:object/summon
