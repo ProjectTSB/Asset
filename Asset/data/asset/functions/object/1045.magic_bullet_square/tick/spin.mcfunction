@@ -2,9 +2,7 @@
 #
 # 回転させる
 #
-# @within function
-#   asset:object/1045.magic_bullet_square/tick/
-#   asset:object/1045.magic_bullet_square/tick/display
+# @within function asset:object/1045.magic_bullet_square/tick/
 
 # start_interpolation
     data modify entity @s start_interpolation set value 0
