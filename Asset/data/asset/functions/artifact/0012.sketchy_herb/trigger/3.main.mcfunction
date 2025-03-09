@@ -29,6 +29,7 @@
     data modify storage api: Argument.BypassArmorToughness set value true
     data modify storage api: Argument.BypassEnchantments set value true
     data modify storage api: Argument.BypassDifficulty set value true
+    data modify storage api: Argument.DeathMessage set value ['{"translate":"%1$s はハッパの中毒性に耐えられなかった","with":[{"selector":"@s"}]}']
     function api:damage/
     function api:damage/reset
 
