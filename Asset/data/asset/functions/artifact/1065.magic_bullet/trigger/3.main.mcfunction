@@ -35,27 +35,26 @@
 
 # 魔弾を召喚する
 
-    # ダメージ計算
+    # ダメージ定義
         # 非プレイヤー
-        # Damage = 350 + 150 * N
         # 7発目なら強制的に2000
-            scoreboard players set $Damage Temporary 150
-            scoreboard players operation $Damage Temporary *= $UseCount Temporary
-            scoreboard players add $Damage Temporary 350
-            execute if score $UseCount Temporary matches 7 run scoreboard players set $Damage Temporary 2000
-        # storageへ
-            execute store result storage api: Argument.FieldOverride.Damage.ToNonPlayer int 1 run scoreboard players get $Damage Temporary
+            execute if score $UseCount Temporary matches 1 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 500f
+            execute if score $UseCount Temporary matches 2 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 650f
+            execute if score $UseCount Temporary matches 3 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 800f
+            execute if score $UseCount Temporary matches 4 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 950f
+            execute if score $UseCount Temporary matches 5 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1050f
+            execute if score $UseCount Temporary matches 6 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1350f
+            execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2000f
 
         # プレイヤー
-        # Damage = 2.5(N + 9)
         # 7発目なら強制的に50
-            scoreboard players operation $Damage Temporary = $UseCount Temporary
-            scoreboard players add $Damage Temporary 9
-            scoreboard players operation $Damage Temporary *= $5 Const
-            scoreboard players operation $Damage Temporary /= $2 Const
-            execute if score $UseCount Temporary matches 7 run scoreboard players set $Damage Temporary 50
-        # storageへ
-            execute store result storage api: Argument.FieldOverride.Damage.ToPlayer int 1 run scoreboard players get $Damage Temporary
+            execute if score $UseCount Temporary matches 1 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 25.0f
+            execute if score $UseCount Temporary matches 2 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 27.5f
+            execute if score $UseCount Temporary matches 3 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 30.0f
+            execute if score $UseCount Temporary matches 4 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 32.5f
+            execute if score $UseCount Temporary matches 5 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 35.0f
+            execute if score $UseCount Temporary matches 6 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 37.5f
+            execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 50.0f
 
     # プレイヤーを狙う状態に弾に渡すデータ
     # $RandomをIDとして渡す
