@@ -1,4 +1,4 @@
-#> asset:object/2090.magic_square/tick/transdorm
+#> asset:object/2090.magic_square/tick/transform
 #
 # 消える
 #
