@@ -10,5 +10,5 @@
 # transformation.scale
     data modify entity @s transformation.scale set from storage asset:context this.Scale
 
-# DisplayDelayを-1にして何度も表示されないようにする
-    data modify storage asset:context this.DisplayDelay set value -1
+# Delayを-1にして何度も表示されないようにする
+    data modify storage asset:context this.Delay set value -1

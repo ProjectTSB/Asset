@@ -12,5 +12,5 @@
 # 魔法陣を召喚
     data modify storage api: Argument.ID set value 1045
     $data modify storage api: Argument.FieldOverride.Scale set value $(Scale)
-    $data modify storage api: Argument.FieldOverride.DisplayDelay set value $(Delay)
+    $data modify storage api: Argument.FieldOverride.Delay set value $(Delay)
     function api:object/summon

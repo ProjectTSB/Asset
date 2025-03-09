@@ -18,4 +18,4 @@
     data modify storage asset:object ID set value 1045
 # フィールド(オプション)
     data modify storage asset:object Field.Scale set value [1d,1d,0.01d]
-    data modify storage asset:object Field.DisplayDelay set value 20
+    data modify storage asset:object Field.Delay set value 20
