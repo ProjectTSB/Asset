@@ -9,3 +9,6 @@
 # 1 秒おきに回復
     execute if data storage asset:context this{Tick:0} run function asset:effect/0301.soul_light/tick/heal
     execute if data storage asset:context this{Tick:0} run data modify storage asset:context this.Tick set value 20
+
+# Duration を保存しておく
+    data modify storage asset:context this.Duration set from storage asset:context Duration

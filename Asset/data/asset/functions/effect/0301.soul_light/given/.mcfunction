@@ -4,8 +4,6 @@
 #
 # @within function asset:effect/0301.soul_light/_/given
 
-# this.Healをスコアへ移して保存(e1)
-    execute store result score @s 301.LatestHeal run data get storage asset:context this.Heal 10
-
-# this.UserIDをスコアへ移して保存
-    execute store result score @s 301.LatestUserID run data get storage asset:context this.UserID
+# Stack と Duration を保存しておく
+    data modify storage asset:context this.Stack set from storage asset:context Stack
+    data modify storage asset:context this.Duration set from storage asset:context Duration
