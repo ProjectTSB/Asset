@@ -24,8 +24,8 @@
 # プレイヤーを狙う状態の際は魔方陣を1つ追加
     execute anchored eyes positioned ^-0.4 ^-0.1 ^0.9 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[0.9d,0.9d,0.01d],Delay:2,Interpolation:2}
     execute if score $UseCount Temporary matches 3.. anchored eyes positioned ^-0.4 ^-0.1 ^1.05 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[1.8d,1.8d,0.01d],Delay:4,Interpolation:4}
-    execute if score $UseCount Temporary matches 7 anchored eyes positioned ^-0.4 ^-0.1 ^1.2 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[1.2d,1.2d,1.2d],Delay:8,Interpolation:2}
-    execute if score $UseCount Temporary matches 7 if entity @s[tag=TL.AimToPlayer] anchored eyes positioned ^-0.4 ^-0.1 ^1.35 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[0.7d,0.7d,0.7d],Delay:10,Interpolation:2}
+    execute if score $UseCount Temporary matches 7 anchored eyes positioned ^-0.4 ^-0.1 ^1.2 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[1.2d,1.2d,0.01d],Delay:8,Interpolation:2}
+    execute if score $UseCount Temporary matches 7 if entity @s[tag=TL.AimToPlayer] anchored eyes positioned ^-0.4 ^-0.1 ^1.35 run function asset:artifact/1065.magic_bullet/trigger/summon_square.m {Scale:[0.7d,0.7d,0.01d],Delay:10,Interpolation:2}
 
 # ダメージ
 
