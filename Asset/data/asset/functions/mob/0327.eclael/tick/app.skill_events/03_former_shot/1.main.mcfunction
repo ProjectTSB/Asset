@@ -11,9 +11,12 @@
 ## 移動・射撃
 # animated javaアニメーション再生 (長さ：65tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/03_former_shot/3_0.play_shot_move_animation
+# 中心点に近い場合はプレイヤー逆方面、遠い場合は中心点方面に移動
+    execute if score @s 93.AnimationTimer matches 1 facing entity @e[type=marker,tag=93.Marker.SpawnPoint,limit=1] feet run tp @s ~ ~ ~ ~180 0
+    execute if score @s 93.AnimationTimer matches 1 if entity @e[type=marker,tag=93.Marker.SpawnPoint,distance=..10] facing entity @p[tag=!PlayerShouldInvulnerable] feet run tp @s ~ ~ ~ ~ 0
 # プレイヤーの方を向く
-    execute if score @s 93.AnimationTimer matches 1..40 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 1..40 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+    execute if score @s 93.AnimationTimer matches 26..40 run tag @s add 93.Temp.Me
+    execute if score @s 93.AnimationTimer matches 26..40 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
 # 移動
     execute if score @s 93.AnimationTimer matches 1..5 at @s positioned ^ ^ ^0.1 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 11..15 at @s positioned ^ ^0.5 ^-1 run function asset:mob/0327.eclael/tick/app.general/2.teleport
