@@ -1,4 +1,4 @@
-#> asset:artifact/1065.magic_bullet/trigger/summon_square.m
+#> asset:artifact/1065.magic_bullet/trigger/summon_square/m
 #
 # 魔法陣の召喚処理
 #
@@ -8,7 +8,7 @@
 #   Interpolation : int
 # @within function
 #   asset:artifact/1065.magic_bullet/trigger/3.main
-#   asset:artifact/1065.magic_bullet/trigger/aim_to_player
+#   asset:artifact/1065.magic_bullet/trigger/summon_square/aim_to_player
 
 # 魔法陣を召喚
     data modify storage api: Argument.ID set value 1045

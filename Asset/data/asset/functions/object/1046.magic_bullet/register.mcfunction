@@ -22,4 +22,5 @@
     data modify storage asset:object Field.MovePerStep set value 0.5
     data modify storage asset:object Field.Damage set value {ToNonPlayer:1,ToPlayer:1,Self:7}
     data modify storage asset:object Field.AimToPlayer set value false
+    # data modify storage asset:object Field.ID set value -1
     data modify storage asset:object Field.UserID set value -1

@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:object/1046.magic_bullet/tick/
+# @within function
+#   asset:object/1046.magic_bullet/tick/
+#   asset:object/1046.magic_bullet/tick/teleport
 
 #> Private
 # @private

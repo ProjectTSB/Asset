@@ -14,5 +14,8 @@
     execute if score @s General.Object.Tick matches ..9 run playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 0.5 2
     execute if score @s General.Object.Tick matches 20 run function asset:object/1046.magic_bullet/tick/vfx
 
+# AimToPlayer:trueなら魔法陣へテレポートする
+    execute if score @s General.Object.Tick matches 20 if data storage asset:context this{AimToPlayer:true} run function asset:object/1046.magic_bullet/tick/teleport
+
 # 20tick目からsuper.tick
     execute if score @s General.Object.Tick matches 20.. at @s run function asset:object/super.tick
