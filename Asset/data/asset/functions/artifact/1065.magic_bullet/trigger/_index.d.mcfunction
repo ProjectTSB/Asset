@@ -7,4 +7,5 @@
     #declare score_holder $UseCount
     #declare score_holder $RemainCount
     #declare score_holder $7
-    #declare score_holder $Damage
+    #declare score_holder $DamageToNonPlayer
+    #declare score_holder $DamageToPlayer

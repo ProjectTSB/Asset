@@ -32,20 +32,20 @@
     # 非プレイヤー
     # Damage = 350 + 150 * N
     # 7発目なら強制的に2000
-        scoreboard players set $Damage Temporary 150
-        scoreboard players operation $Damage Temporary *= $UseCount Temporary
-        scoreboard players add $Damage Temporary 350
+        scoreboard players set $DamageToNonPlayer Temporary 150
+        scoreboard players operation $DamageToNonPlayer Temporary *= $UseCount Temporary
+        scoreboard players add $DamageToNonPlayer Temporary 350
     # storageへ
-        execute store result storage api: Argument.FieldOverride.Damage.ToNonPlayer int 1 run scoreboard players get $Damage Temporary
+        execute store result storage api: Argument.FieldOverride.Damage.ToNonPlayer int 1 run scoreboard players get $DamageToNonPlayer Temporary
         execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2000f
 
     # プレイヤー
     # Damage = 2.5(N + 9)
     # 7発目なら強制的に50
-        scoreboard players operation $Damage Temporary = $UseCount Temporary
-        scoreboard players add $Damage Temporary 9
+        scoreboard players operation $DamageToPlayer Temporary = $UseCount Temporary
+        scoreboard players add $DamageToPlayer Temporary 9
     # storageへ
-        execute store result storage api: Argument.FieldOverride.Damage.ToPlayer int 2.5 run scoreboard players get $Damage Temporary
+        execute store result storage api: Argument.FieldOverride.Damage.ToPlayer int 2.5 run scoreboard players get $DamageToPlayer Temporary
         execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 50f
 
     # 制御不能な7発目の際の自身へのダメージ
@@ -71,3 +71,5 @@
     scoreboard players reset $7 Temporary
     scoreboard players reset $UseCount Temporary
     scoreboard players reset $RemainCount Temporary
+    scoreboard players reset $DamageToNonPlayer Temporary
+    scoreboard players reset $DamageToPlayer Temporary
