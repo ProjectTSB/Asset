@@ -4,7 +4,6 @@
 #> tag
 # @within function asset:artifact/1065.magic_bullet/trigger/**
     #declare tag TL.AimToPlayer
-    #declare tag TL.TargetPlayer
     #declare score_holder $UseCount
     #declare score_holder $RemainCount
     #declare score_holder $7
