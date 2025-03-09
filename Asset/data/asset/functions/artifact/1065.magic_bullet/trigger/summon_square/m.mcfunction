@@ -15,4 +15,5 @@
     $data modify storage api: Argument.FieldOverride.Scale set value $(Scale)
     $data modify storage api: Argument.FieldOverride.Delay set value $(Delay)
     $data modify storage api: Argument.FieldOverride.Interpolation set value $(Interpolation)
+    $data modify storage api: Argument.FieldOverride.LeftRotate set value $(LeftRotate)b
     function api:object/summon

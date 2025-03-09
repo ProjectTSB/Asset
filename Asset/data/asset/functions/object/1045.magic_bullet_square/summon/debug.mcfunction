@@ -5,6 +5,8 @@
 # @user
 # @private
 
+    data modify storage api: Argument.FieldOverride.LeftRotate set value false
+
 # 召喚
     data modify storage api: Argument.ID set value 1045
     function api:object/summon
