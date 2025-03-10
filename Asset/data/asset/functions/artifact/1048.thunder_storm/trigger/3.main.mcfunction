@@ -10,25 +10,18 @@
 # ここから先は神器側の効果の処理を書く
 
 # MP減少割合を計算
-    # 最大MPを取得する
-        function api:mp/get_max
-        execute store result score $MPMaxValue Temporary run data get storage api: Return.MaxMP
-    # 使用直前のMPを取得する
-        function api:mp/get_current
-        execute store result score $MPValue Temporary run data get storage api: Return.CurrentMP
-
-    # 現MPの割合算出
-        scoreboard players operation $MPValue Temporary *= $100 Const
-        scoreboard players operation $MPValue Temporary /= $MPMaxValue Temporary
+    # MP割合を取得
+        function api:entity/player/get_mp_per
+        execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
     # 反転させる
-        scoreboard players operation $MPValue Temporary -= $100 Const
-        scoreboard players operation $MPValue Temporary *= $-1 Const
+        scoreboard players operation $MPPer Temporary -= $100 Const
+        scoreboard players operation $MPPer Temporary *= $-1 Const
 
 # ダメージ計算 Damage = 340 + (1 - MP割合) * 3
     scoreboard players add $Damage Temporary 340
-    scoreboard players operation $MPValue Temporary *= $3 Const
-    scoreboard players operation $Damage Temporary += $MPValue Temporary
+    scoreboard players operation $MPPer Temporary *= $3 Const
+    scoreboard players operation $Damage Temporary += $MPPer Temporary
 
 # 再帰でMarkerを視点先のブロックの位置まで移動させる
     execute anchored eyes run tp 0-0-0-0-0 ^ ^ ^ ~ ~
@@ -45,5 +38,4 @@
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
     scoreboard players reset $T4.Temp Temporary
     scoreboard players reset $Damage Temporary
-    scoreboard players reset $MPValue Temporary
-    scoreboard players reset $MPMaxValue Temporary
+    scoreboard players reset $MPPer Temporary
