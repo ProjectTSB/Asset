@@ -23,9 +23,9 @@
 # リセット
     scoreboard players reset $UserID Temporary
 
-# ヒット回数が3なら死
-    scoreboard players add @s 1107.HitCount 1
-    execute if score @s 1107.HitCount matches 3.. run function asset:object/call.m {method:kill}
+# 反射回数が6なら死
+    execute store result storage asset:context this.EntityHit int 0.9999999999 run data get storage asset:context this.EntityHit 1
+    execute if data storage asset:context this{EntityHit:0} run function asset:object/call.m {method:kill}
 
 
 # タグ付与

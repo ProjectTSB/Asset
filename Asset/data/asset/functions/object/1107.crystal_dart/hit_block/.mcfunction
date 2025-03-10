@@ -14,5 +14,5 @@
 # ヒット判定復活
     tag @s remove 1107.CannotHit
 # 反射回数が6なら死
-    scoreboard players add @s 1107.ReflectionCount 1
-    execute if score @s 1107.ReflectionCount matches 6.. run function asset:object/call.m {method:kill}
+    execute store result storage asset:context this.Refrection int 0.9999999999 run data get storage asset:context this.Refrection 1
+    execute if data storage asset:context this{Refrection:0} run function asset:object/call.m {method:kill}
