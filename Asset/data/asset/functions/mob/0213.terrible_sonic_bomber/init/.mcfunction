@@ -35,6 +35,9 @@
     data modify storage api: Argument.ID set value 2088
     function api:object/summon
 
+# 対空砲が埋まっても暗くならないようにする
+    execute as @e[tag=PatriotLauncherRoot,distance=..1] on passengers run data modify entity @s brightness set value {sky:15,block:15}
+
 #タイトルで何をやるか説明
     title @a[distance=..128] title {"text":"対空砲を守り敵を迎撃せよ","color":"white","bold":true}
 
