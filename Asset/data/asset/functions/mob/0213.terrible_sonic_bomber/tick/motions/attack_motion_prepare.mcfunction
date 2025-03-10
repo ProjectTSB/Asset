@@ -17,7 +17,7 @@
 # 乱数によるスキル選択
     data modify storage lib: Args.key set value "5XWeapon"
     execute if score $health_per Temporary matches 50.. run data modify storage lib: Args.max set value 3
-    execute if score $health_per Temporary matches ..49 run data modify storage lib: Args.max set value 4
+    execute if score $health_per Temporary matches ..49 run data modify storage lib: Args.max set value 5
     data modify storage lib: Args.scarcity_history_size set value 2
     execute store result score $weapon_num Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     scoreboard players add $weapon_num Temporary 1
@@ -39,6 +39,7 @@
     execute if score $weapon_num Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
     execute if score $weapon_num Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
     execute if score $weapon_num Temporary matches -4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling_prepare
+    execute if score $weapon_num Temporary matches 5 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/landmine_prepare
 
 # reset
     scoreboard players reset $attack_start_time Temporary
