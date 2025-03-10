@@ -23,7 +23,7 @@
     scoreboard players add $weapon_num Temporary 1
         #tellraw @a [{"score":{"name":"$health_per","objective":"Temporary"},"color":"blue"}]
 
-    # 対空砲が破壊されていた場合武器が変化する攻撃はIDを変更、将来的にも乱数の範囲に入らない負の値にしておく
+    # 条件によって武器が変化する攻撃はIDを変更、将来的にも乱数の範囲に入らない負の値にしておく
     execute if entity @e[tag=PatriotLauncher.IsBroken,distance=..128] if score $weapon_num Temporary matches 4 run scoreboard players set $weapon_num Temporary -4
         #scoreboard players set $weapon_num Temporary 1
     execute store result storage asset:context this.use_weapon int 1 run scoreboard players get $weapon_num Temporary
