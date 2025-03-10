@@ -18,5 +18,6 @@
     data modify storage asset:object ID set value 1106
 # フィールド(オプション)
     data modify storage asset:object Field.Motion set value 1.2
+    data modify storage asset:object Field.LeftRotate set value false
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1
