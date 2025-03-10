@@ -10,21 +10,14 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
-# 最大体力、現在体力の1000倍を取得
-    function api:modifier/max_health/get
-    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 1
-    function api:data_get/health
-    execute store result score $CurrentHealth Temporary run data get storage api: Health 1000
-
-# 現在体力割合を求める
-    scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
-
+# 体力割合の1000倍を取得
+    function api:entity/player/get_health_per
+    execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 1000
 # 66.6%以下でないならCanUsedを削除
-    execute if score $CurrentHealth Temporary matches 667.. run tag @s remove CanUsed
+    execute unless score $HealthPer Temporary matches ..666 run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1082.cursed_straw_doll/trigger/3.main
 
 # リセット
-    scoreboard players reset $CurrentHealth Temporary
-    scoreboard players reset $MaxHealth Temporary
+    scoreboard players reset $HealthPer Temporary
