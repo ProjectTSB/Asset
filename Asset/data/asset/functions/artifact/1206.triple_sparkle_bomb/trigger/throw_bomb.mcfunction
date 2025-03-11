@@ -6,9 +6,6 @@
 #   asset:artifact/1206.triple_sparkle_bomb/trigger/3.main
 #   asset:artifact/1206.triple_sparkle_bomb/trigger/loop/main
 
-# playsound
-    playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 0.8 0.55
-
 # Motionをランダムにする
     execute store result storage api: Argument.FieldOverride.Motion float 0.01 run random value 110..120
 

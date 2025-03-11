@@ -7,8 +7,12 @@
 # スコア
     scoreboard players add @s XI.Tick 1
 
-# 2,5tickに投げる
+# 2個目
+    execute if score @s XI.Tick matches 2 run playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 0.8 0.55
     execute if score @s XI.Tick matches 2 anchored eyes positioned ^ ^-0.2 ^0.5 run function asset:artifact/1206.triple_sparkle_bomb/trigger/throw_bomb
+
+# 3個目
+    execute if score @s XI.Tick matches 5 run playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 0.8 0.575
     execute if score @s XI.Tick matches 5 anchored eyes positioned ^ ^-0.2 ^0.5 run function asset:artifact/1206.triple_sparkle_bomb/trigger/throw_bomb
 
 # ループ
