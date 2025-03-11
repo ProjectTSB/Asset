@@ -19,4 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.ShotInterval set value 1
     data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.AdditionalMPHeal set value 1
     data modify storage asset:object Field.UserID set value -1
