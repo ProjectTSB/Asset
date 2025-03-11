@@ -26,7 +26,6 @@
 
 # 持ち主にTP
     execute at @p[tag=Owner] positioned ~ ~1.5 ~ positioned ^ ^ ^1.2 run tp @s ~ ~ ~ ~ ~
-    execute as @p[tag=Owner] run function api:data_get/rotation
 
 # 射撃攻撃
     execute store result storage asset:context this.ShotInterval int 0.9999999999 run data get storage asset:context this.ShotInterval
