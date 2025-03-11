@@ -27,6 +27,9 @@
 
 # SpreadMarker1の座標で、SpreadMarker2を向き、弾を召喚
     data modify storage api: Argument.ID set value 1006
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
+    data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     execute at @e[type=marker,tag=SpreadMarker1,distance=..10,sort=nearest,limit=1] facing entity @e[type=marker,tag=SpreadMarker2,distance=..40,sort=nearest,limit=1] feet run function api:object/summon
 
 # リセット
