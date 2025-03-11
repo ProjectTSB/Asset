@@ -12,7 +12,7 @@
     particle firework ~ ~ ~ 0 0 0 0.3 45 force @a[distance=..48]
     particle dust 0.2 1 1 1.5 ~ ~ ~ 1 1 1 0 40 force @a[distance=..48]
     particle scrape ~ ~ ~ 0 0 0 10 70 force @a[distance=..48]
-    particle gust ~ ~ ~ 1 1 1 0 8 force @a[distance=..48]
+    particle flash ~ ~ ~ 0 0 0 0 1 force @a[distance=..48]
     playsound ogg:mob.breeze.death1 neutral @a ~ ~ ~ 0.6 1.6
     playsound ogg:mob.breeze.death1 neutral @a ~ ~ ~ 0.6 1.5
     playsound entity.firework_rocket.twinkle neutral @a ~ ~ ~ 0.5 1.6
