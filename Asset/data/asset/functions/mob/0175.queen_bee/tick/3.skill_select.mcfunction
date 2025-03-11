@@ -8,10 +8,11 @@
 # 疑似乱数取得
     execute store result score $Random Temporary run random value 0..2
 # デバッグのコマンド
-    #scoreboard players set $Random Temporary 2
+    scoreboard players set $Random Temporary 3
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add 4V.SkillTackle
     execute if score $Random Temporary matches 1 run tag @s add 4V.SkillSummon
     execute if score $Random Temporary matches 2 run tag @s add 4V.SkillNeedle
+    execute if score $Random Temporary matches 3 run tag @s add 4V.SkillGrandSlam
 # リセット
     scoreboard players reset $Random Temporary

@@ -14,5 +14,6 @@
     #declare tag 4V.SkillTackleDamageHit
     #declare tag 4V.SkillSummon
     #declare tag 4V.SkillNeedle
+    #declare tag 4V.SkillGrandSlam
     #declare score_holder $Count
     #declare score_holder $Random
