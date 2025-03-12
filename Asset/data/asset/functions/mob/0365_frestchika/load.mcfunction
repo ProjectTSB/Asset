@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0365_frestchika/**
-    scoreboard objectives add 
+#    scoreboard objectives add
