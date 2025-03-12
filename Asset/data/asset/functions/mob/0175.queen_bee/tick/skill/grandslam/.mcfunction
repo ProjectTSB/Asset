@@ -32,4 +32,4 @@
     execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-3 ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
 
 # 戻る処理
-    execute if score @s General.Mob.Tick matches 90.. run function asset:mob/0175.queen_bee/tick/skill/grandslam/return
+    execute if score @s General.Mob.Tick matches 90.. run function asset:mob/0175.queen_bee/tick/skill/grandslam/reset
