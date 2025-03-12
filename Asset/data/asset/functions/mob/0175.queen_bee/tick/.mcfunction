@@ -5,20 +5,20 @@
 # @within function asset:mob/alias/175/tick
 
 # スコアを増やす
-    scoreboard players add @s 4V.Tick 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # teleportするやつ
-    execute if score @s 4V.Tick matches -59 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/0175.queen_bee/tick/teleport
+    execute if score @s General.Mob.Tick matches -59 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/0175.queen_bee/tick/teleport
 
 # その後発動するスキル
 # プレイヤーが周囲にいたらスキル選択
-    execute if score @s 4V.Tick matches 0 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/0175.queen_bee/tick/3.skill_select
+    execute if score @s General.Mob.Tick matches 0 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/0175.queen_bee/tick/3.skill_select
 
 # プレイヤーが周囲にいないのに時間が着てしまった場合。スコアを戻す
-    execute if score @s 4V.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s 4V.Tick -60
+    execute if score @s General.Mob.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s General.Mob.Tick -60
 
 # 選択したスキル発動
-    execute if score @s 4V.Tick matches 0.. run function asset:mob/0175.queen_bee/tick/4.skill_active
+    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0175.queen_bee/tick/4.skill_active
 
 # 以下エラー時の処理
 # もし同一座標に2体存在した場合瞬時にteleportする
@@ -27,7 +27,7 @@
     # もしいたらテレポ
         execute if score $Count Temporary matches 2.. run function asset:mob/0175.queen_bee/tick/teleport
     # スコアも一応戻す
-        execute if score $Count Temporary matches 2.. run scoreboard players reset @s 4V.Tick
+        execute if score $Count Temporary matches 2.. run scoreboard players reset @s General.Mob.Tick
     # リセット
         scoreboard players reset $Count
 

@@ -14,7 +14,7 @@
 # タグを消す
     tag @e[type=armor_stand,tag=4V.ArmorStandThis,distance=..0.01] remove 4V.ArmorStandThis
 # スコアも一応戻す
-    scoreboard players set @s 4V.Tick -30
+    scoreboard players set @s General.Mob.Tick -30
 
 # スキル発動中に移動した場合困るので消す
     tag @s remove 4V.SkillTackle

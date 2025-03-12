@@ -11,4 +11,4 @@
     data modify entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] Pose.Head set value [0f,0f,0f]
 # リセット処理
     tag @s remove 4V.SkillGrandSlam
-    scoreboard players set @s 4V.Tick -50
+    scoreboard players set @s General.Mob.Tick -50
