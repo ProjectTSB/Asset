@@ -12,20 +12,20 @@
     execute if score @s General.Mob.Tick matches 10 run data modify entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] Pose.Head set value [-70f,0f,0f]
 
 # 一定時間突進し続ける
-    execute if score @s General.Mob.Tick matches 10..15 rotated ~ -90 positioned ^ ^ ^0.5 run function asset:mob/0175.queen_bee/tick/skill/common/tp
-    execute if score @s General.Mob.Tick matches 15..25 rotated ~ -90 positioned ^ ^ ^1 run function asset:mob/0175.queen_bee/tick/skill/common/tp
+    execute if score @s General.Mob.Tick matches 10..15 rotated ~ -90 positioned ^ ^ ^0.5 run function asset:mob/0175.queen_bee/tick/common/tp
+    execute if score @s General.Mob.Tick matches 15..25 rotated ~ -90 positioned ^ ^ ^1 run function asset:mob/0175.queen_bee/tick/common/tp
 
 # 一定時間追尾する
     execute if score @s General.Mob.Tick matches 25 at @s run data modify entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] Pose.Head set value [0f,0f,0f]
-    execute if score @s General.Mob.Tick matches 25..60 if entity @p[gamemode=!spectator,distance=..100] facing entity @p[gamemode=!spectator,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s rotated ~ 0 positioned ^ ^ ^0.6 run function asset:mob/0175.queen_bee/tick/skill/common/tp
+    execute if score @s General.Mob.Tick matches 25..60 if entity @p[gamemode=!spectator,distance=..100] facing entity @p[gamemode=!spectator,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s rotated ~ 0 positioned ^ ^ ^0.6 run function asset:mob/0175.queen_bee/tick/common/tp
 
 # 落下
     execute if score @s General.Mob.Tick matches 60 at @s run data modify entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] Pose.Head set value [70f,0f,0f]
 # すこしバック
-    execute if score @s General.Mob.Tick matches 60..70 rotated ~ 90 positioned ^ ^ ^-0.2 run function asset:mob/0175.queen_bee/tick/skill/common/tp
+    execute if score @s General.Mob.Tick matches 60..70 rotated ~ 90 positioned ^ ^ ^-0.2 run function asset:mob/0175.queen_bee/tick/common/tp
 # 一定時間突進し続ける.
-    execute if score @s General.Mob.Tick matches 70..85 rotated ~ 90 positioned ^ ^ ^1 run function asset:mob/0175.queen_bee/tick/skill/common/tp
-    execute if score @s General.Mob.Tick matches 75..85 at @s rotated ~ 90 positioned ^ ^ ^2 run function asset:mob/0175.queen_bee/tick/skill/common/tp
+    execute if score @s General.Mob.Tick matches 70..85 rotated ~ 90 positioned ^ ^ ^1 run function asset:mob/0175.queen_bee/tick/common/tp
+    execute if score @s General.Mob.Tick matches 75..85 at @s rotated ~ 90 positioned ^ ^ ^2 run function asset:mob/0175.queen_bee/tick/common/tp
 
 # 一定距離落下したあと、地面にぶつかると爆発する
     execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-1 ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
