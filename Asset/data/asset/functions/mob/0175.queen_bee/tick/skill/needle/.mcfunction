@@ -5,7 +5,7 @@
 # @within function asset:mob/0175.queen_bee/tick/skill_active
 
 # プレイヤーをみる
-    execute if score @s General.Mob.Tick matches 15 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 15 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # 発砲
     execute if score @s General.Mob.Tick matches 25..30 positioned ~ ~-1.5 ~ positioned ^ ^ ^1 run function asset:mob/0175.queen_bee/tick/skill/needle/ready

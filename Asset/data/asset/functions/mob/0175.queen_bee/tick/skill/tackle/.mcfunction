@@ -6,7 +6,7 @@
 
 # 突進前の挙動
 # プレイヤーをみる
-    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 # 突進用モデルに変える
     execute if score @s General.Mob.Tick matches 10 on passengers run data modify entity @s item.tag.CustomModelData set value 20053
 # 一定時間後ずさり
@@ -14,7 +14,7 @@
 
 # 突進1回目
 # プレイヤーを見る
-    execute if score @s General.Mob.Tick matches 25 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 25 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 # 一定時間突進し続ける.
     execute if score @s General.Mob.Tick matches 25..35 at @s run function asset:mob/0175.queen_bee/tick/skill/tackle/tp
     execute if entity @s[tag=!4V.SkillTackleDamageHit] if score @s General.Mob.Tick matches 25..35 at @s run function asset:mob/0175.queen_bee/tick/skill/tackle/damage
@@ -25,9 +25,9 @@
 
 # 突進2回目
 # プレイヤーを見る
-    execute if score @s General.Mob.Tick matches 36 at @s facing entity @p[gamemode=!spectator] eyes rotated ~180 ~ run function asset:mob/0175.queen_bee/tick/rotated
-    execute if score @s General.Mob.Tick matches 36..53 at @s rotated ~10 ~ run function asset:mob/0175.queen_bee/tick/rotated
-    execute if score @s General.Mob.Tick matches 53 at @s facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 36 at @s facing entity @p[gamemode=!spectator] eyes rotated ~180 ~ run function asset:mob/0175.queen_bee/tick/common/tp/
+    execute if score @s General.Mob.Tick matches 36..53 at @s rotated ~10 ~ run function asset:mob/0175.queen_bee/tick/common/tp/
+    execute if score @s General.Mob.Tick matches 53 at @s facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 # 突進
     execute if score @s General.Mob.Tick matches 36..68 at @s run function asset:mob/0175.queen_bee/tick/skill/tackle/tp
     execute if entity @s[tag=!4V.SkillTackleDamageHit] if score @s General.Mob.Tick matches 36..68 at @s run function asset:mob/0175.queen_bee/tick/skill/tackle/damage

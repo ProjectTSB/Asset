@@ -6,7 +6,7 @@
 
 # 突進前の挙動
 # プレイヤーをみる
-    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 # 突進用モデルに変える
     execute if score @s General.Mob.Tick matches 10 on passengers run data modify entity @s item.tag.CustomModelData set value 20053
     execute if score @s General.Mob.Tick matches 10 on passengers positioned as @s run tp @s ~ ~ ~ ~ -70

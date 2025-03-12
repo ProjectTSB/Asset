@@ -6,7 +6,7 @@
 
 # 突進前の挙動
 # プレイヤーをみる
-    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
+    execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # 召喚する
     execute if score @s General.Mob.Tick matches 15 run function asset:mob/0175.queen_bee/tick/skill/summon/summon
