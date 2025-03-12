@@ -5,11 +5,12 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/
 
 # 壁があったら移動をやめる
-    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ~ ~ ~ ~ 0
-    execute at @s if function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run scoreboard players set @s General.Mob.Tick 30
+    execute at @s if function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ~ ~ ~ ~ 0
+    execute at @s if function asset:mob/0365.frestchika/tick/base_move/common/check_collide run scoreboard players set @s General.Mob.Tick 30
 
 # 横に移動
-    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^1 ~ ~
+    execute if entity @s[tag=A5.Dash.Left] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^1.5 ^ ^ ~ ~
+    execute if entity @s[tag=A5.Dash.Right] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^-1.5 ^ ^ ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

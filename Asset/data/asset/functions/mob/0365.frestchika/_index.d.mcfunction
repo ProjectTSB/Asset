@@ -6,6 +6,8 @@
     # ボスのモデルに関するタグ
     #declare tag A5.ModelLocator.LeftFoot
     #declare tag A5.ModelLocator.RightFoot
+    #declare tag A5.ModelLocator.LeftWing
+    #declare tag A5.ModelLocator.RightWing
     #declare tag A5.ModelRoot
     #declare tag A5.ModelRoot.Target
     # ボスのマーカーに関するタグ
@@ -21,6 +23,8 @@
     #declare tag A5.Moveset.Transition
     # ボスのスキル
     #declare tag A5.Skill.SideDashShot
+    #declare tag A5.Dash.Left
+    #declare tag A5.Dash.Right
     #declare tag A5.Skill.FrontDashSlash
     #declare tag A5.Skill.BackDashBomb
     #declare tag A5.Skill.HoloBlockThunder
@@ -39,3 +43,4 @@
     #declare function animated_java:frestchika/animations/attack_2_right/tween
     #declare function animated_java:frestchika/animations/attack_2_left/tween
     #declare function animated_java:frestchika/animations/attack_3/tween
+    #declare function animated_java:frestchika/remove/this

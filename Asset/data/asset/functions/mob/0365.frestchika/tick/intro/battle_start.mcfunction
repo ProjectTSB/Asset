@@ -14,3 +14,6 @@
 # 無敵解除
     tag @s remove Uninterferable
     data modify entity @s Invulnerable set value 0b
+
+# アニメーション
+    execute as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 5}

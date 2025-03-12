@@ -11,7 +11,7 @@
     execute at @s run tag @e[type=item_display,tag=A5.ModelRoot,distance=..16,sort=nearest,limit=1] add A5.ModelRoot.Target
 
 # モデルを追従
-    execute at @s run tp @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] ~ ~ ~ ~ ~
+    execute at @s run tp @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
 # 足元が埋まっていて、上にブロックがないなら上に移動
     execute unless block ~ ~ ~ #lib:no_collision if block ~ ~2.5 ~ #lib:no_collision run tp @s ~ ~0.1 ~

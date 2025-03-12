@@ -13,4 +13,7 @@
     tag @s remove A5.Skill.HoloBlockThunder
     tag @s remove A5.Skill.SideDashShot
 
+    tag @s remove A5.Dash.Left
+    tag @s remove A5.Dash.Right
+
     tag @s remove A5.InAction
