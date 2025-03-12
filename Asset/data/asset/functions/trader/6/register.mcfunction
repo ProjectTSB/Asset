@@ -25,6 +25,11 @@ execute unless loaded -29 21 -44 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:3b}
     data modify storage asset:trader Trades[-1].Sell set value 1220
 
+# 取引 プロテクション
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:2b}
+    data modify storage asset:trader Trades[-1].Sell set value 966
+
 # 取引 革防具
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
