@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/alias/175/tick
 
+#return 0
+
 # スコアを増やす
     scoreboard players add @s General.Mob.Tick 1
 
