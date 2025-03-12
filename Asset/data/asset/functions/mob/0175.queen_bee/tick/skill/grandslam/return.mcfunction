@@ -11,5 +11,4 @@
     execute rotated ~ 0 run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # リセット処理
-    tag @s remove 4V.SkillGrandSlam
-    scoreboard players set @s General.Mob.Tick -50
+    function asset:mob/0175.queen_bee/tick/skill/reset

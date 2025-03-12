@@ -13,6 +13,5 @@
 # 確率で繰り返す
     execute if score @s General.Mob.Tick matches 30 if predicate lib:random_pass_per/30 run scoreboard players set @s General.Mob.Tick 14
 
-# 終了処理
-    execute if score @s General.Mob.Tick matches 30.. run tag @s remove 4V.SkillNeedle
-    execute if score @s General.Mob.Tick matches 30.. run scoreboard players set @s General.Mob.Tick -50
+# リセット処理
+    execute if score @s General.Mob.Tick matches 30.. run function asset:mob/0175.queen_bee/tick/skill/reset

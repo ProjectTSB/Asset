@@ -44,5 +44,4 @@
 # モデル戻す
     execute if score @s General.Mob.Tick matches 70.. on passengers run data modify entity @s item.tag.CustomModelData set value 20052
 # リセット処理
-    execute if score @s General.Mob.Tick matches 70.. run tag @s remove 4V.SkillTackle
-    execute if score @s General.Mob.Tick matches 70.. run scoreboard players set @s General.Mob.Tick -60
+    execute if score @s General.Mob.Tick matches 70.. run function asset:mob/0175.queen_bee/tick/skill/reset
