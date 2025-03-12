@@ -1,8 +1,8 @@
-#> asset:mob/0175.queen_bee/tick/skill_summon/2.skill_summon_bee
+#> asset:mob/0175.queen_bee/tick/skill/summon/summon
 #
 #
 #
-# @within function asset:mob/0175.queen_bee/tick/skill_summon/1.skill_summon
+# @within function asset:mob/0175.queen_bee/tick/skill/summon/
 
 # 演出
     playsound entity.bee.death hostile @a ~ ~ ~ 1 1

@@ -1,8 +1,8 @@
-#> asset:mob/0175.queen_bee/tick/skill_tackle/3.skill_tackle_damage
+#> asset:mob/0175.queen_bee/tick/skill/tackle/damage
 #
 #
 #
-# @within function asset:mob/0175.queen_bee/tick/skill_tackle/1.skill_tackle
+# @within function asset:mob/0175.queen_bee/tick/skill/tackle/
 
 # ダメージ判定
 # 与えるダメージ

@@ -1,8 +1,8 @@
-#> asset:mob/0175.queen_bee/tick/skill_tackle/2.skill_tackle_tp
+#> asset:mob/0175.queen_bee/tick/skill/tackle/tp
 #
 # tpさせる
 #
-# @within function asset:mob/0175.queen_bee/tick/skill_tackle/1.skill_tackle
+# @within function asset:mob/0175.queen_bee/tick/skill/tackle/
 
 # 演出
     playsound minecraft:entity.bee.hurt hostile @a ~ ~ ~ 1 1.4

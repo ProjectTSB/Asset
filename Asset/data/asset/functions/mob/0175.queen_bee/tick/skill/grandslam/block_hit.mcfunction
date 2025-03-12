@@ -1,8 +1,8 @@
-#> asset:mob/0175.queen_bee/tick/skill_grandslam/block_hit
+#> asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
 #
 #
 #
-# @within function asset:mob/0175.queen_bee/tick/skill_grandslam/main
+# @within function asset:mob/0175.queen_bee/tick/skill/grandslam/
 
 # 演出
     particle explosion_emitter ~ ~ ~ 8 4 8 1 20
