@@ -15,7 +15,7 @@
     playsound entity.blaze.burn neutral @a ~ ~ ~ 1 1
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 33.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.GrandSlam
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

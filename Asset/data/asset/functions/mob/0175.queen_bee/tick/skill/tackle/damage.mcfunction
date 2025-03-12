@@ -6,7 +6,7 @@
 
 # ダメージ判定
 # 与えるダメージ
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Tackle
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"

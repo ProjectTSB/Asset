@@ -8,7 +8,7 @@
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 25.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Needle
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
