@@ -1,4 +1,4 @@
-#> asset:mob/0175.queen_bee/0.load
+#> asset:mob/0175.queen_bee/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #

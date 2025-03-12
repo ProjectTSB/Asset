@@ -1,4 +1,4 @@
-#> asset:mob/0175.queen_bee/tick/4.skill_active
+#> asset:mob/0175.queen_bee/tick/skill_active
 #
 #
 #

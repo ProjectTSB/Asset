@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0175.queen_bee/tick/4.skill_active
+# @within function asset:mob/0175.queen_bee/tick/skill_active
 
 # プレイヤーをみる
     execute if score @s General.Mob.Tick matches 15 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
