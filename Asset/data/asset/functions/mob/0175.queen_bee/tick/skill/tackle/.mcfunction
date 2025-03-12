@@ -8,7 +8,7 @@
 # プレイヤーをみる
     execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/rotated
 # 突進用モデルに変える
-    execute if score @s General.Mob.Tick matches 10 run item replace entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] armor.head with stone{CustomModelData:20053}
+    execute if score @s General.Mob.Tick matches 10 on passengers run data modify entity @s item.tag.CustomModelData set value 20053
 # 一定時間後ずさり
     execute if score @s General.Mob.Tick matches 10..24 at @s rotated ~180 0 run function asset:mob/0175.queen_bee/tick/skill/tackle/tp_back
 
@@ -42,7 +42,7 @@
 
 # 終了処理
 # モデル戻す
-    execute if score @s General.Mob.Tick matches 70.. run item replace entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] armor.head with stone{CustomModelData:20052}
+    execute if score @s General.Mob.Tick matches 70.. on passengers run data modify entity @s item.tag.CustomModelData set value 20052
 # リセット処理
     execute if score @s General.Mob.Tick matches 70.. run tag @s remove 4V.SkillTackle
     execute if score @s General.Mob.Tick matches 70.. run scoreboard players set @s General.Mob.Tick -60

@@ -25,8 +25,8 @@
 
 
 # 見た目戻す
-    item replace entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] armor.head with stone{CustomModelData:20052}
-    data modify entity @e[type=armor_stand,tag=4V.ArmorStand,distance=..0.01,sort=nearest,limit=1] Pose.Head set value [0f,0f,0f]
+    data modify entity @s item.tag.CustomModelData set value 20052
+    execute rotated ~ 0 run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # スコア設定
     scoreboard players set @s General.Mob.Tick 86

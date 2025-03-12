@@ -7,9 +7,6 @@
     #declare tag SpreadMarker
     #declare tag Landing
     #declare tag LandingTarget
-    #declare tag 4V.ArmorStand
-    #declare tag 4V.ArmorStandThis
-    #declare tag 4V.Angel
     #declare tag 4V.SkillTackle
     #declare tag 4V.SkillTackleDamageHit
     #declare tag 4V.SkillSummon
