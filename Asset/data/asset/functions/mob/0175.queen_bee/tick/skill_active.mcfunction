@@ -13,3 +13,6 @@
 
 # 地面ぶっ叩く
     execute if entity @s[tag=4V.SkillGrandSlam] run function asset:mob/0175.queen_bee/tick/skill/grandslam/
+
+# 地面ぶっ叩く
+    execute if entity @s[tag=4V.SkillBeeBomb] run function asset:mob/0175.queen_bee/tick/skill/beebomb/

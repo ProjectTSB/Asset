@@ -12,5 +12,6 @@
     #declare tag 4V.SkillSummon
     #declare tag 4V.SkillNeedle
     #declare tag 4V.SkillGrandSlam
+    #declare tag 4V.SkillBeeBomb
     #declare score_holder $Count
     #declare score_holder $Random
