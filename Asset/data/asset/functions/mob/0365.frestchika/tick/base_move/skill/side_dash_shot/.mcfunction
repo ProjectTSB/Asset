@@ -8,13 +8,18 @@
 # @private
     #declare score_holder $AttackInterval
 
-# 実行時間を移す
-    scoreboard players operation $AttackInterval Temporary = @s General.Mob.Tick
 
-# 数Tickごとにサウンド
-    scoreboard players operation $AttackInterval Temporary %= $4 Const
-    execute if score @s General.Mob.Tick matches 10..30 if score $AttackInterval Temporary matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/laser/shoot
-    scoreboard players reset $AttackInterval Temporary
+# 移動中の攻撃
+    # 実行時間を移す
+        scoreboard players operation $AttackInterval Temporary = @s General.Mob.Tick
+    # 移動終了後にレーザー
+        execute if entity @s[tag=A5.DashSkill.RapidLaser] run scoreboard players operation $AttackInterval Temporary %= $2 Const
+        execute if score @s[tag=A5.DashSkill.RapidLaser] General.Mob.Tick matches 26..30 if score $AttackInterval Temporary matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/laser/shoot
+    # 移動中に遅延レーザー
+        execute if entity @s[tag=A5.DashSkill.DelayLaser] run scoreboard players operation $AttackInterval Temporary %= $3 Const
+        execute if score @s[tag=A5.DashSkill.DelayLaser] General.Mob.Tick matches ..15 if score $AttackInterval Temporary matches 0 positioned ~ ~1.5 ~ run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/delay_laser_summon
+    # インターバルリセット
+        scoreboard players reset $AttackInterval Temporary
 
 # ダッシュ開始
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/start
@@ -23,7 +28,7 @@
     execute if score @s General.Mob.Tick matches ..15 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/move
 
 # ブレーキかけつつプレイヤーの方を向く
-    execute if score @s General.Mob.Tick matches 15..30 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^ ~ ~
+#    execute if score @s General.Mob.Tick matches 15..30 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^ ~ ~
 
 # ブレーキ
     execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 5}

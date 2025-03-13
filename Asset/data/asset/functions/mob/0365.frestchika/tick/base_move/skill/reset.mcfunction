@@ -16,4 +16,8 @@
     tag @s remove A5.Dash.Left
     tag @s remove A5.Dash.Right
 
+    tag @s remove A5.DashSkill.DelayLaser
+    tag @s remove A5.DashSkill.RapidLaser
+    tag @s remove A5.DashSkill.SlowShot
+
     tag @s remove A5.InAction

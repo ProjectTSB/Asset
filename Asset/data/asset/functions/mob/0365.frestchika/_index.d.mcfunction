@@ -28,6 +28,11 @@
     #declare tag A5.Skill.FrontDashSlash
     #declare tag A5.Skill.BackDashBomb
     #declare tag A5.Skill.HoloBlockThunder
+    # ボスのダッシュ中の攻撃に関すること
+    #declare tag A5.DashSkill.RapidLaser
+    #declare tag A5.DashSkill.DelayLaser
+    #declare tag A5.DashSkill.SlowShot
+
     # ボスの状態
     #declare tag A5.InAction
     # Animated Java

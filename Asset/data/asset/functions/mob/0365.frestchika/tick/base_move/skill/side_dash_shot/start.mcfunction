@@ -10,6 +10,15 @@
     execute if score @s Temporary matches 1 run tag @s add A5.Dash.Right
     scoreboard players reset @s Temporary
 
+# 移動中に何するか選択
+    execute store result score @s Temporary run random value 0..1
+    execute if score @s Temporary matches 0 run tag @s add A5.DashSkill.DelayLaser
+    execute if score @s Temporary matches 1 run tag @s add A5.DashSkill.RapidLaser
+    execute if score @s Temporary matches 2 run tag @s add A5.DashSkill.SlowShot
+
+    #tag @s add A5.DashSkill.DelayLaser
+    scoreboard players reset @s Temporary
+
 # アニメーション
     execute if entity @s[tag=A5.Dash.Left] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_left/tween {to_frame: 0, duration: 2}
     execute if entity @s[tag=A5.Dash.Right] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_right/tween {to_frame: 0, duration: 2}

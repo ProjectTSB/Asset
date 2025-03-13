@@ -11,6 +11,10 @@
 # 横に移動
     execute if entity @s[tag=A5.Dash.Left] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^1.0 ^ ^ ~ ~
     execute if entity @s[tag=A5.Dash.Right] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^-1.0 ^ ^ ~ ~
+#    execute if entity @s[tag=A5.Dash.Left,tag=!A5.DashSkill.DelayLaser] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^1.0 ^ ^ ~ ~
+#    execute if entity @s[tag=A5.Dash.Right,tag=!A5.DashSkill.DelayLaser] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^-1.0 ^ ^ ~ ~
+#    execute if entity @s[tag=A5.Dash.Left,tag=A5.DashSkill.DelayLaser] run tp @s ^1.0 ^ ^ ~ ~
+#    execute if entity @s[tag=A5.Dash.Right,tag=A5.DashSkill.DelayLaser] run tp @s ^-1.0 ^ ^ ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
