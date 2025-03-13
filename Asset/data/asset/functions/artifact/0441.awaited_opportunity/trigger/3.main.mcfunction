@@ -9,8 +9,12 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# エフェクト付与
-    effect give @s speed 10 2 true
+# スピードの向こう側(ID:293)がなければ、待望の瞬間(ID:292)を付与
+    data modify storage api: Argument.ID set value 293
+    function api:entity/mob/effect/get/from_id
+    execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 292
+    execute unless data storage api: Return.Effect run function api:entity/mob/effect/give
+    execute unless data storage api: Return.Effect run function api:entity/mob/effect/reset
 
 # 30%の確率でメッセージを流す
     execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/message/
