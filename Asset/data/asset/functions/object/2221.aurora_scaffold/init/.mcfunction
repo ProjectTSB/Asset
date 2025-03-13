@@ -17,11 +17,14 @@
 # 強制的にブロックの中心へと移動
     execute align xyz run tp @s ~0.5 ~0.5 ~0.5
 
+# 現座標が#no_collision_without_fluidでなければreturnして消滅
+    execute at @s unless block ~ ~ ~ #lib:no_collision_without_fluid run return run kill @s
+
 # 同座標に同Objectがいればreturnして消滅
     execute at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=item_display,tag=!2221.This,scores={ObjectID=2221},dx=0,limit=1] run return run kill @s
 
-# 現座標がairなら水色のステンドグラスを設置
-    execute if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
+# 水色のステンドグラスを設置
+    setblock ~ ~ ~ cyan_stained_glass
 
 # リセット
     tag @s remove 2221.This
