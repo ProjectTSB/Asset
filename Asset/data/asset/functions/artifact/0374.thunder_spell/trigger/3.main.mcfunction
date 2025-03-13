@@ -25,12 +25,8 @@
     playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 2
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.4 2
 
-# ターゲット選定 使用者の前方にいる かつ 最も近い敵
-    execute positioned ^ ^ ^4 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4] add Target
-    tag @e[type=#lib:living,type=!player,tag=Target,distance=..8,sort=nearest,limit=1] add NearestTarget
-
-# 最も近い敵を狙って方向転換
-    execute positioned ~ ~1 ~ positioned ^ ^ ^4 if entity @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..4] facing entity @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..4,sort=nearest,limit=1] eyes run function asset:artifact/0374.thunder_spell/trigger/line
+# 敵が周囲にいるなら方向転換
+    execute if entity @e[type=#lib:living,type=!player,tag=Enemy,distance=..8] run function asset:artifact/0374.thunder_spell/trigger/turn_to_enemy
 
 # リセット
     tag @s remove AE.Check

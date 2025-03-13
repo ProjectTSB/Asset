@@ -3,7 +3,7 @@
 # 神器のメイン処理部
 #
 # @within function
-#   asset:artifact/0374.thunder_spell/trigger/3.main
+#   asset:artifact/0374.thunder_spell/trigger/turn_to_enemy
 #   asset:artifact/0374.thunder_spell/trigger/line
 
 # 演出
