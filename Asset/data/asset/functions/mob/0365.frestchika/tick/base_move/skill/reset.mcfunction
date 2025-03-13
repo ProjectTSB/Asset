@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/
+# @within function asset:mob/0365.frestchika/tick/base_move/skill/**
 
 # スコアをセット
     scoreboard players set @s General.Mob.Tick -10
