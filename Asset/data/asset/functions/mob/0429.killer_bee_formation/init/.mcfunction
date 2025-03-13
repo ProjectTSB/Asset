@@ -10,3 +10,9 @@
 
 # General.Mob.Tick初期化
     scoreboard players set @s General.Mob.Tick -2
+
+# 100ブロック下にtp
+    tp @s ~ ~-100 ~
+
+# モデル装着
+    # item replace entity @s armor.head with stone{CustomModelData:20054}

@@ -27,7 +27,7 @@
     # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20054}}
+        # data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20054}}
     # 胴 (Compound(Item)) (オプション)
         # data modify storage asset:mob Armor.Chest set value
     # 脚 (Compound(Item)) (オプション)
@@ -64,3 +64,4 @@
 # フィールド
     data modify storage asset:mob Field.Damage set value 50f
     data modify storage asset:mob Field.Speed set value 2
+    data modify storage asset:mob Field.ModelSetDelay set value 10
