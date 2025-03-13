@@ -23,7 +23,7 @@
 
 # バフを解除
     effect clear @p[tag=Victim,distance=..6] water_breathing
-    effect clear @p[tag=Victim,distance=..6] regeneration
+    execute as @p[tag=Victim,distance=..6] run function asset:mob/0147.prismarine_slayer/attack/clear_regen
     effect clear @p[tag=Victim,distance=..6] dolphins_grace
 
 # 与えるダメージ

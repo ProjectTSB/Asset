@@ -4,5 +4,13 @@
 #
 # @within function asset:artifact/0563.heartland/trigger/fullset/tick/trigger
 
-# 周囲5mのプレイヤーに既に自然回復エフェクトが付与されているかどうかを検知し、自然回復エフェクトを付与
-    execute as @a[distance=..5] if predicate asset:artifact/0563.heartland/regene_check run effect give @a[distance=..5] regeneration 15 1 false
+#> private
+# @private
+    #declare score_holder $FN.Temp
+
+# 1秒に1回
+    execute store result score $FN.Temp Temporary run data get storage global Time
+    scoreboard players operation $FN.Temp Temporary -= @s FN.LatestFullEffect
+    execute if score $FN.Temp Temporary matches 20.. as @a[distance=..5] run function asset:artifact/0563.heartland/trigger/fullset/tick/foreach
+    execute if score $FN.Temp Temporary matches 20.. store result score @s FN.LatestFullEffect run data get storage global Time
+    scoreboard players reset $FN.Temp Temporary
