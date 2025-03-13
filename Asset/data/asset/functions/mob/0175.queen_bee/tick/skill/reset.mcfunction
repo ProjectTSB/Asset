@@ -9,5 +9,7 @@
     tag @s remove 4V.SkillGrandSlam
     tag @s remove 4V.SkillSummon
     tag @s remove 4V.SkillNeedle
+    tag @s remove 4V.SkillTackleFormation
 
     scoreboard players set @s General.Mob.Tick -60
+    scoreboard players reset @s 4V.Count

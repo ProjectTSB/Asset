@@ -14,5 +14,7 @@
 # 地面ぶっ叩く
     execute if entity @s[tag=4V.SkillGrandSlam] run function asset:mob/0175.queen_bee/tick/skill/grandslam/
 
-# 地面ぶっ叩く
+# ハチ爆弾
     execute if entity @s[tag=4V.SkillBeeBomb] run function asset:mob/0175.queen_bee/tick/skill/beebomb/
+# 隊列突進
+    execute if entity @s[tag=4V.SkillTackleFormation] run function asset:mob/0175.queen_bee/tick/skill/tackle_formation/
