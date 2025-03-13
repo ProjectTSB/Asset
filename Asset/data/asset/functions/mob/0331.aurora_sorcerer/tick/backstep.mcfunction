@@ -11,5 +11,8 @@
 # motionのクールタイム設定
     scoreboard players set @s 97.MotionCT 30
 
+# 足場生成不可Tickを設定
+    data modify storage asset:context this.CannotMakeScaffoldTick set value 8
+
 # リセット
     scoreboard players reset @s 97.MotionCount
