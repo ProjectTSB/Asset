@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/0078.messenger_of_thunder/tick/skill/teleport_spread/
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # Markerを先に拡散させ、拡散後の位置が安全ならテレポートする
 # 安全でなければ演出もキャンセルさせるためにreturnする
 
