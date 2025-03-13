@@ -20,6 +20,7 @@
 
 # 敵にコンバラトキシンを付与
     data modify storage api: Argument.ID set value 205
+    data modify storage api: Argument.FieldOverride.Damage set value 25
     execute store result storage api: Argument.FieldOverride.AppliedFrom int 1 run scoreboard players get @s UserID
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
