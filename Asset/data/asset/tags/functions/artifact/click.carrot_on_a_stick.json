@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/0469.crystal_shotgun/trigger/1.trigger",
+        "asset:artifact/0470.crystal_pistol/trigger/1.trigger",
+        "asset:artifact/1166.airlift/trigger/1.trigger",
+        "asset:artifact/0797.heartbleed/trigger/1.trigger",
+        "asset:artifact/0294.turret/trigger/1.trigger",
+        "asset:artifact/0464.lightning_exploit/trigger/1.trigger",
         "asset:artifact/1199.healer_trance/trigger/1.trigger",
         "asset:artifact/1183.cosmo_site/trigger/1.trigger",
         "asset:artifact/1176.b_l_e_s_s/trigger/1.trigger",

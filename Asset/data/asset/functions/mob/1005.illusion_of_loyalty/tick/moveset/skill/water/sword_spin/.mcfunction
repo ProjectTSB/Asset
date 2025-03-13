@@ -23,11 +23,18 @@
     execute if score @s General.Mob.Tick matches 70..75 run tp @s ^ ^ ^0.1
     execute if score @s General.Mob.Tick matches 75..80 run tp @s ^ ^ ^0.05
 
+# 剣を開放するアニメ
+    execute if score @s General.Mob.Tick matches 74 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
+
 # 剣を解放
     execute if score @s General.Mob.Tick matches 80 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/water/sword_spin/release_swords
 
+# 元の体勢へ
+    execute if score @s General.Mob.Tick matches 140 as @e[type=item_display,tag=RX.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:illusion_of_loyalty/animations/neutral_air/tween {to_frame:0,duration:10}
+
 # 剣を破壊
     execute if score @s General.Mob.Tick matches 160 run kill @e[type=item_display,scores={ObjectID=2053},distance=..64]
+
 
 # ワープ
     execute if score @s General.Mob.Tick matches 160 run function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/start

@@ -7,9 +7,5 @@
 # 音
     playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8
 
-# 補正を削除
-    attribute @s minecraft:generic.armor modifier remove 1-0-1-0-03c100000007
-    attribute @s minecraft:generic.movement_speed modifier remove 1-0-1-0-03c100000007
-
-# 補正を追加
-    execute unless entity @s[tag=!DevPrivilege,predicate=player_manager:is_believe/null] run function asset:artifact/0961.light_charm/trigger/add_modifier
+# 補正を更新
+    function asset:artifact/0961.light_charm/trigger/update_modifier/
