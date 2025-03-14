@@ -6,6 +6,10 @@
 #   asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/tick
 #   asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/laser/shoot
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # サウンド
     execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 1 1.5
     execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 player @a ~ ~ ~ 1 1.5
