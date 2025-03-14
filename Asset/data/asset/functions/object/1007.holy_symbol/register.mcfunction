@@ -17,7 +17,6 @@
 # ID (int)
     data modify storage asset:object ID set value 1007
 # フィールド(オプション)
-    data modify storage asset:object Field.Tick set value 200
     data modify storage asset:object Field.Interval set value 0
     data modify storage asset:object Field.MPHealPer set value 0.01
     data modify storage asset:object Field.Effect.Stack set value 1

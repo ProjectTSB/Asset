@@ -11,9 +11,7 @@
 
 # Objectを召喚
     data modify storage api: Argument.ID set value 1007
-    data modify storage api: Argument.FieldOverride.Tick set value 200
     data modify storage api: Argument.FieldOverride.MPHealPer set value 0.01
     data modify storage api: Argument.FieldOverride.Effect.Stack set value 1
     data modify storage api: Argument.FieldOverride.Effect.Duration set value 200
     function api:object/summon
-
