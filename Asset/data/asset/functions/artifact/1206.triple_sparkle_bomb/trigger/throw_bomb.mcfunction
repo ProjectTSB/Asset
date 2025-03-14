@@ -6,6 +6,10 @@
 #   asset:artifact/1206.triple_sparkle_bomb/trigger/3.main
 #   asset:artifact/1206.triple_sparkle_bomb/trigger/loop/main
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # Motionをランダムにする
     execute store result storage api: Argument.FieldOverride.Motion float 0.01 run random value 110..120
 
