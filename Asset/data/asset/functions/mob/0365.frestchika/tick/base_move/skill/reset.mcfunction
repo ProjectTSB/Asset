@@ -7,6 +7,10 @@
 # スコアをセット
     scoreboard players set @s General.Mob.Tick -10
 
+# 両手を空にする
+#    item replace entity @e[type=item_display,tag=aj.frestchika.bone.right_item.child,sort=nearest,limit=1] container.0 with minecraft:air
+#    item replace entity @e[type=item_display,tag=aj.frestchika.bone.left_item.child,sort=nearest,limit=1] container.0 with minecraft:air
+
 # Tagを削除
     tag @s remove A5.Skill.BackDashBomb
     tag @s remove A5.Skill.FrontDashSlash

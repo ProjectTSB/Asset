@@ -28,11 +28,11 @@
     #declare tag A5.Skill.FrontDashSlash
     #declare tag A5.Skill.BackDashBomb
     #declare tag A5.Skill.HoloBlockThunder
+    #declare tag A5.Skill.ChargeSlash
     # ボスのダッシュ中の攻撃に関すること
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
     #declare tag A5.DashSkill.SlowShot
-
     # ボスの状態
     #declare tag A5.InAction
     # Animated Java
@@ -49,3 +49,5 @@
     #declare function animated_java:frestchika/animations/attack_2_left/tween
     #declare function animated_java:frestchika/animations/attack_3/tween
     #declare function animated_java:frestchika/remove/this
+    #declare tag aj.frestchika.bone.right_item.child
+    #declare tag aj.frestchika.bone.left_item.child
