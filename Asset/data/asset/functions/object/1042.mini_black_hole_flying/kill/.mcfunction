@@ -8,7 +8,7 @@
     data modify storage api: Argument.ID set value 1043
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
-    execute anchored eyes positioned ^ ^ ^0.5 run function api:object/summon
+    function api:object/summon
 
 # 消滅
     kill @s

@@ -6,8 +6,8 @@
 
 #> 行き先マーカー
 # @private
-#declare tag FacingMarker
-#declare tag SpreadMarker
+    #declare tag FacingMarker
+    #declare tag SpreadMarker
 
 # 弾を出す
     # 中心

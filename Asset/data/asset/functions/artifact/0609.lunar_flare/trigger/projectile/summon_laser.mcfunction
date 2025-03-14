@@ -7,7 +7,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 前方拡散設定
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

@@ -27,11 +27,8 @@
     function api:data_get/health
     execute store result score $CurrentHealth Temporary run data get storage api: Health 100
 
-# 現在体力割合を求める
-    scoreboard players operation $CurrentHealth Temporary /= $MaxHealth Temporary
-
 # 44%以下ならダメージ量+66.6%
-    execute if score $CurrentHealth Temporary matches ..44 run function asset:artifact/1082.cursed_straw_doll/trigger/4.damage_up
+    execute if score $HealthPer Temporary matches ..44 run function asset:artifact/1082.cursed_straw_doll/trigger/4.damage_up
 
 # ダメージ上限(4444)
     execute if score $DamageValue Temporary matches 4444.. run scoreboard players set $DamageValue Temporary 4444
