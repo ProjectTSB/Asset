@@ -16,7 +16,7 @@
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     function asset:artifact/1207.quadrainbow_icequality/trigger/solve_inequality
-    execute if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tellraw @s [{"text": "発動条件を満たしていません: ","color":"red"},{"score":{"name": "$XJ.MPPer","objective": "Temporary"},"color":"red"},{"text":"^2 * -0.012 + 130 ≯ ","color":"red"},{"score":{"name": "$XJ.HealthPer","objective": "Temporary"},"color":"red"}]
+    execute if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tellraw @s [{"text": "発動条件を満たしていません: ","color":"red"},{"score":{"name": "$XJ.HealthPer","objective": "Temporary"},"color":"red"},{"text": " ≰ ","color":"red"},{"score":{"name": "$XJ.MPPer","objective": "Temporary"},"color":"red"},{"text":"^2 * -0.012 + 130","color":"red"}]
     execute if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tag @s remove CanUsed
     
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
