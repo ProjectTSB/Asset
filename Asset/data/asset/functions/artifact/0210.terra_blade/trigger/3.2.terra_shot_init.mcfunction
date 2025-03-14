@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # パーティクル
     particle minecraft:dust 0 1 0 1 ~ ~ ~ 0.1 0.1 0.1 0 2
