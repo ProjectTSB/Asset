@@ -23,13 +23,13 @@
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 300
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"敵が範囲内にいる時"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [100]
+    data modify storage asset:artifact AttackInfo.Damage set value [110]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

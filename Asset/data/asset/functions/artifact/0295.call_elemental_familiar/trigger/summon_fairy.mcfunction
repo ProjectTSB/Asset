@@ -12,7 +12,7 @@
     execute store result score $Random Temporary run random value 0..2
 
 # ダメージ設定
-    data modify storage api: Argument.FieldOverride.Damage set value 55.0f
+    data modify storage api: Argument.FieldOverride.Damage set value 65.0f
 
 # 属性を決める
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.FieldOverride.Element set value "Fire"

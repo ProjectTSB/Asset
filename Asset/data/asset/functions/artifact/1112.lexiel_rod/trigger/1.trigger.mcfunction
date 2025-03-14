@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:artifact/**
 
-# storage asset:idのautoに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
-    execute if data storage asset:context id{auto:1112} run function asset:artifact/1112.lexiel_rod/trigger/2.check_condition
+# storage asset:idのmainhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
+    execute if data storage asset:context id{mainhand:1112} run function asset:artifact/1112.lexiel_rod/trigger/2.check_condition
