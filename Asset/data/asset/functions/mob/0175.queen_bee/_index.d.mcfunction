@@ -18,3 +18,5 @@
     #declare tag 4V.Target
     #declare score_holder $Count
     #declare score_holder $Random
+    #
+    #declare objective General.Object.Tick
