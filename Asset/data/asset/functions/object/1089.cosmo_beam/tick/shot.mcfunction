@@ -10,7 +10,6 @@
     #declare score_holder $Count
     #declare score_holder $Damage
 
-
 # 演出
     execute positioned ~-8 ~-105 ~-8 run playsound minecraft:entity.generic.explode player @a[dx=15,dy=199,dz=15] ~ ~ ~ 1 2 1
     particle explosion ~ ~4 ~ 3 4 3 0 5
@@ -22,7 +21,6 @@
     execute positioned ~-8 ~-105 ~-8 as @a[dx=15,dy=199,dz=15] run title @s title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
 
 # ダメージ設定
-
 
 # 数をカウントして、ダメージを割る
     execute store result score $Count Temporary positioned ~-8 ~-105 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=15,dy=199,dz=15]
