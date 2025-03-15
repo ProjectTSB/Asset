@@ -5,7 +5,7 @@
 # @within function asset:object/1098.alchemy_laser/tick/
 
 # 演出
-    playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2
+    playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 2
     particle flash ~ ~ ~ 0 0 0 0 1
 
 # 演出
