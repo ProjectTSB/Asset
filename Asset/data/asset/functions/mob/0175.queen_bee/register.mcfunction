@@ -64,4 +64,4 @@
     data modify storage asset:mob Field.Damage.GrandSlam set value 33.0f
     data modify storage asset:mob Field.Damage.Needle set value 25.0f
     data modify storage asset:mob Field.Damage.Tackle set value 50.0f
-    # data modify storage asset:mob Field.Damage.GrandSlam set value 33.0f
+    data modify storage asset:mob Field.Damage.BeeBomb set value 33.0f

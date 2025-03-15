@@ -10,11 +10,11 @@
     particle explosion ~ ~ ~ 1 1 1 0 5 normal @a
     particle large_smoke ~ ~ ~ 0 0 0 0.3 40 normal @a
 
-# 水属性ダメージ
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage.1st
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function api:damage/
     function api:damage/reset

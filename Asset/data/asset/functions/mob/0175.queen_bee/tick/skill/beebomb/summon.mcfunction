@@ -15,6 +15,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] at @s run function lib:spread_entity/
     data modify storage api: Argument.ID set value 2224
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.BeeBomb
     execute at @e[type=marker,tag=SpreadMarker,distance=..50,sort=nearest,limit=1] run execute rotated ~ 90 run function api:object/summon
 
 
