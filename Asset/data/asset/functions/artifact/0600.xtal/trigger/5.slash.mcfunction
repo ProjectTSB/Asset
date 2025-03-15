@@ -7,6 +7,7 @@
 #> Private
 # @private
     #declare tag Target
+    #declare score_holder $Random
 
 # 演出
     playsound item.trident.throw player @a ~ ~ ~ 1 0.6
