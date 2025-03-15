@@ -19,5 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Rotation0 set value 0
     data modify storage asset:object Field.Angle set value 0
-    data modify storage asset:object Field.Damage set value {Min:250,Max:350}
+    data modify storage asset:object Field.Damage set value {Min:100,Max:200}
     data modify storage asset:object Field.UserID set value -1
