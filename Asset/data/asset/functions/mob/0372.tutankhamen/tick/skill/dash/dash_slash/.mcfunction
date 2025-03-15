@@ -32,9 +32,9 @@
     execute if score @s General.Mob.Tick matches 140 as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/neutral/tween {to_frame: 0, duration: 5}
     execute if score @s General.Mob.Tick matches 140 run tp @s ~ ~ ~ ~ 0
 # ウソ慣性
-    execute if score @s General.Mob.Tick matches 100..105 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.5
-    execute if score @s General.Mob.Tick matches 106 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.3
-    execute if score @s General.Mob.Tick matches 107..110 unless function asset:mob/0372.tutankhamen/tick/skill/dash/check_collide run tp @s ^ ^ ^0.1
+    execute if score @s General.Mob.Tick matches 100..105 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.5
+    execute if score @s General.Mob.Tick matches 106 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.3
+    execute if score @s General.Mob.Tick matches 107..110 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.1
 
 # リセット
     execute if score @s General.Mob.Tick matches 140.. run function asset:mob/0372.tutankhamen/tick/skill/reset
