@@ -29,4 +29,4 @@
     execute if score @s General.Object.Tick matches 1000.. run function asset:object/1110.heavy_lava_bomb/tick/before_boom
 
 # 爆発
-    execute if score @s General.Object.Tick matches 1020.. run function asset:object/1110.heavy_lava_bomb/tick/boom
+    execute if score @s General.Object.Tick matches 1024.. run function asset:object/1110.heavy_lava_bomb/tick/boom
