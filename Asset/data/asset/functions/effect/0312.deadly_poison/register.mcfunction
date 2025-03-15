@@ -37,4 +37,6 @@
 
 # フィールド
     data modify storage asset:effect Field.Tick set value 20
+    data modify storage asset:effect Field.Damage set value 1
+    data modify storage asset:effect Field.AdditionalMPHeal set value 1
     data modify storage asset:effect Field.AppliedFrom set value -1
