@@ -12,8 +12,8 @@
 
 # 引き継がれたMP消費を取り出す
     scoreboard players operation $T4.Temp Temporary = @s T4.MPPer
-    scoreboard players operation $T4.Temp Temporary *= $3 Const
-    scoreboard players remove $T4.Temp Temporary 340
+    scoreboard players operation $T4.Temp Temporary *= $4 Const
+    scoreboard players remove $T4.Temp Temporary 440
 
 # 使用者取得
     scoreboard players operation $T4.OwnerId Temporary = @s T4.OwnerID
