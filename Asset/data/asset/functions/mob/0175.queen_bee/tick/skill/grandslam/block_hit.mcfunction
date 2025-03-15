@@ -19,13 +19,13 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..9] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..13] run function api:damage/
 # リセット
     function api:damage/reset
 
 
 # 見た目戻す
-    data modify entity @s item.tag.CustomModelData set value 20052
+    execute on passengers run data modify entity @s item.tag.CustomModelData set value 20052
     execute rotated ~ 0 run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # スコア設定
