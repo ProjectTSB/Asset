@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/0600.xtal/trigger/4.wait_time
 
+#> Private
+# @private
+    #declare tag Target
 
 # 演出
     playsound item.trident.throw player @a ~ ~ ~ 1 0.6
@@ -18,13 +21,17 @@
 # リセット
     scoreboard players reset $Random Temporary
 
+# ターゲット選定
+    execute positioned ^ ^ ^3 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] add Target
+
 # ダメージ
     data modify storage api: Argument.Damage set value 150.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute positioned ^ ^ ^3 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function api:damage/
+    execute positioned ^ ^ ^3 as @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
-# スコアもリセットする
+# リセットする
     scoreboard players reset @s GO.Time
+    tag @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6] add Target
