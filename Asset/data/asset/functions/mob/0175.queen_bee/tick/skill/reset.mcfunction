@@ -14,3 +14,11 @@
 
     scoreboard players set @s General.Mob.Tick -60
     scoreboard players reset @s 4V.Count
+
+# モデルを戻しておく
+    execute on passengers run data modify entity @s item.tag.CustomModelData set value 20052
+    execute on passengers positioned as @s run tp @s ~ ~ ~ ~ 0
+
+# ブロックに埋まってたり、距離が遠すぎたらしたらテレポートする
+    execute unless block ~ ~ ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/common/tp/spread_teleport
+    execute unless entity @p[gamemode=!spectator,distance=..15] run function asset:mob/0175.queen_bee/tick/common/tp/spread_teleport

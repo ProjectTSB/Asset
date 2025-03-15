@@ -1,4 +1,4 @@
-#> asset:mob/0175.queen_bee/tick/teleport
+#> asset:mob/0175.queen_bee/tick/common/tp/spread_teleport
 #
 #
 #
