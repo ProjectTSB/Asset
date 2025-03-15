@@ -17,6 +17,9 @@
     data modify storage lib: Argument.Spread set value 0.5
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] run function lib:forward_spreader/circle
 
+# 50%の確率で左回転にする
+    execute if predicate lib:random_pass_per/50 run data modify storage api: Argument.FieldOverride.LeftRotate set value true
+    
 # Object召喚
     data modify storage api: Argument.ID set value 1110
     data modify storage api: Argument.FieldOverride.Damage set value 500
