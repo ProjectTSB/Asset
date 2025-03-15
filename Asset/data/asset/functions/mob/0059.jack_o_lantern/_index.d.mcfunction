@@ -26,4 +26,3 @@
     #declare tag 1N.HealthLess40Per
     #declare tag 1N.AlreadySpecial
     #declare tag 1N.DisableParticle
-    #declare tag 1N.TextDisplay
