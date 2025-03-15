@@ -4,6 +4,10 @@
 #
 # @within function asset:artifact/0469.crystal_shotgun/trigger/3.main
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # 前方拡散設定
     execute anchored eyes positioned ^-0.35 ^-0.15 ^0.5 run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 2.0

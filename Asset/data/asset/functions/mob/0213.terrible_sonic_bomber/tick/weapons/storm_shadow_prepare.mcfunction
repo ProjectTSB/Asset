@@ -26,6 +26,7 @@
 # 攻撃座標指定 対空砲の1番近くにいるプレイヤーの座標が攻撃目標
     execute at @e[tag=5X.Centre,limit=1] run tag @p add 5X.StormShadowTarget
     data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
+    data modify storage asset:context this.storm_shadow.target_pos[1] set from storage asset:context this.GroundPos
 
 # 攻撃箇所表示
     #data modify storage asset:temp args set value {Color:15453454,Tick:50,Scale:"[10f,10f,1f]"}
