@@ -18,7 +18,7 @@ execute positioned ^0 ^0.5 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 
 execute positioned ^-0.1 ^0.395 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.2 ^0.28 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.3 ^0.155 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
-execute positioned ^-0.4 ^0.0200000000000001 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
+execute positioned ^-0.4 ^0.02 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.5 ^-0.125 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.6 ^-0.28 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.7 ^-0.445 ^ run particle minecraft:dust 0.4 1 0.4 0.75 ~ ~ ~ 0 0 0 0 2
@@ -38,7 +38,7 @@ execute positioned ^0.2 ^0.44416 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ 
 execute positioned ^0.1 ^0.34964 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0 ^0.244 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.1 ^0.12724 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
-execute positioned ^-0.2 ^-0.000639999999999974 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
+execute positioned ^-0.2 ^-0.00064 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.3 ^-0.13964 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.4 ^-0.28976 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^-0.5 ^-0.451 ^ run particle minecraft:dust 0.4 1 1 0.75 ~ ~ ~ 0 0 0 0 2
@@ -71,7 +71,7 @@ execute positioned ^0.7 ^0.33574 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 
 execute positioned ^0.6 ^0.28576 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0.5 ^0.2215 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0.4 ^0.14296 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
-execute positioned ^0.3 ^0.0501400000000001 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
+execute positioned ^0.3 ^0.05014 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0.2 ^-0.05696 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0.1 ^-0.17834 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
 execute positioned ^0 ^-0.314 ^ run particle minecraft:dust 0.5 0.2 0.5 0.75 ~ ~ ~ 0 0 0 0 2
