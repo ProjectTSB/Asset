@@ -26,5 +26,4 @@
 
     execute if entity @s[scores={General.Object.Tick=1016}] run data modify entity @s start_interpolation set value 0
     execute if entity @s[scores={General.Object.Tick=1016}] run data modify entity @s interpolation_duration set value 3
-    #execute if entity @s[scores={General.Object.Tick=1016}] run data modify entity @s transformation.translation set value [0f,0.5f,0f]
     execute if entity @s[scores={General.Object.Tick=1016}] run data modify entity @s transformation.scale set value [3.2f,3.2f,3.2f]
