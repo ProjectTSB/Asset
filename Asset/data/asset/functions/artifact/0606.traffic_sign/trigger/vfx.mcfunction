@@ -1,9 +1,9 @@
-#> asset:artifact/0606.traffic_sign/trigger/3.1.vfx
+#> asset:artifact/0606.traffic_sign/trigger/vfx
 #
 # VFX
 #
 # @within function asset:artifact/0606.traffic_sign/trigger/3.main
-    
+
 playsound block.anvil.place player @a ~ ~ ~ 0.5 0 0
 playsound item.trident.return player @a ~ ~ ~ 1 2
 playsound item.trident.throw player @a ~ ~ ~ 1 0.5
