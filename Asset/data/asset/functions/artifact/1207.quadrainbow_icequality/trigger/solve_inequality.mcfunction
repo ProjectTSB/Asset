@@ -9,7 +9,7 @@
     #declare score_holder $XJ.Eval
 
 # 初期値設定
-scoreboard players set $XJ.Eval Temporary 0
+    scoreboard players set $XJ.Eval Temporary 0
 
 # 体力割合を取得
     function api:entity/player/get_health_per
