@@ -9,8 +9,7 @@
     #declare tag MoveMarker
 
 # 同IDのプレイヤーを特定
-    execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a[distance=..60] if score $OwnerID Temporary = @p UserID as @p run tag @s add 1029.OwnerPlayer
+    execute as @a[distance=..60] if score @s UserID = @e[type=armor_stand,tag=this,distance=..0.01,limit=1] 1029.UserID run tag @s add 1029.OwnerPlayer
 
 # マスターにMarkerを召喚する
     execute at @p[tag=1029.OwnerPlayer,distance=..60] rotated ~ 0 run summon marker ^-1 ^1 ^-1 {Tags:[MoveMarker]}
