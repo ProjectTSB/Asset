@@ -17,7 +17,7 @@
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.GrandSlam
     data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..13] run function api:damage/
 # リセット
