@@ -14,6 +14,3 @@
 
 # スコアが一定以上なら発動
     execute if score @s General.Object.Tick matches 21.. run function asset:object/1044.thunder_storm/tick/cast
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
