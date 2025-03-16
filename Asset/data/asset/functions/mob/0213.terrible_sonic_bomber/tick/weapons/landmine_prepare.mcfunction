@@ -7,6 +7,7 @@
 #> prv
 # @private
     #declare score_holder $attack_start_time
+    #declare score_holder $C4.MineCount
 
 # 攻撃開始と終了時間指定
     execute store result score $attack_start_time Temporary run time query gametime
@@ -47,5 +48,9 @@
         #tellraw @a [{"nbt":"this.Minefield_Pos","storage": "asset:context"}]
 
 # 地雷の数が多すぎる場合削除
+    execute store result score $C4.MineCount Temporary if entity @e[type=slime,scores={MobID=436}]
+    execute if score $C4.MineCount Temporary matches 81.. as @e[type=slime,scores={MobID=436},limit=40] run function api:mob/kill 
+
 # reset
     scoreboard players reset $attack_start_time Temporary
+    scoreboard players reset $C4.MineCount Temporary
