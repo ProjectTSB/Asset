@@ -30,7 +30,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute positioned ^ ^ ^3 as @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..3,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
 # リセットする
