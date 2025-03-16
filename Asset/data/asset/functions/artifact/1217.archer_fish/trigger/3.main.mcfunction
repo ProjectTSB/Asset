@@ -29,7 +29,7 @@
     execute if score $XT.TargetMobUUID Temporary matches -2147483648..2147483647 store result storage api: Argument.FieldOverride.TargetMobUUID int 1 run scoreboard players get $XT.TargetMobUUID Temporary
 
 # サケクリティカル
-    execute if predicate lib:random_pass_per/1 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
+    execute if predicate lib:random_pass_per/2 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
     execute if data storage api: Argument.FieldOverride{SalmonCrit:true} run data modify storage api: Argument.FieldOverride.CMD set value 20514
 
 # Object召喚
