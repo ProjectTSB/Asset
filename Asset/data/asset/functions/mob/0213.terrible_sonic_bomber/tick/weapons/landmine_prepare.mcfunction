@@ -49,7 +49,7 @@
 
 # 地雷の数が多すぎる場合削除
     execute store result score $C4.MineCount Temporary if entity @e[type=slime,scores={MobID=436}]
-    execute if score $C4.MineCount Temporary matches 181.. as @e[type=slime,scores={MobID=436},limit=60] run function api:mob/kill 
+    execute if score $C4.MineCount Temporary matches 1.. as @e[type=slime,scores={MobID=436}] run function api:mob/kill 
 
 # reset
     scoreboard players reset $attack_start_time Temporary

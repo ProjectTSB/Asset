@@ -25,6 +25,11 @@
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
 
 # 拡散中心へ移動
     data modify storage asset:temp Args.X set from storage asset:context this.Minefield_Pos[0]
