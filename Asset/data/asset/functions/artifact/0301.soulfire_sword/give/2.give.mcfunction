@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"魂炎の剣","color":"#872A2A","underlined":true}'
+    data modify storage asset:artifact Name set value '{"text":"魂炎の剣","color":"#48d1cc","underlined":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"魂の残り火を解放し、周囲を燃やし尽くす剣"}','{"text":"周囲に物理炎属性ダメージを与える"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
