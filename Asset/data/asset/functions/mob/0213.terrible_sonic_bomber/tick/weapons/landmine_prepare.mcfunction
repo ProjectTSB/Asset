@@ -23,22 +23,21 @@
     tag @s add 5X.WingStraight
 
 # 攻撃箇所表示
-# 攻撃箇所表示
     data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:25f}
     data modify storage api: Argument.ID set value 2201
-    execute rotated as @s positioned as @e[tag=5X.Centre] positioned ^12.5 ^ ^12.5 positioned ~ ~0.01 ~ run function api:object/summon
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^12.5 ^ ^12.5 positioned ~ ~0.01 ~ run function api:object/summon
 
     data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:25f}
     data modify storage api: Argument.ID set value 2201
-    execute rotated as @s positioned as @e[tag=5X.Centre] positioned ^12.5 ^ ^-12.5 positioned ~ ~0.01 ~ run function api:object/summon
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^12.5 positioned ~ ~0.01 ~ run function api:object/summon
 
     data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:25f}
     data modify storage api: Argument.ID set value 2201
-    execute rotated as @s positioned as @e[tag=5X.Centre] positioned ^-12.5 ^ ^12.5 positioned ~ ~0.01 ~ run function api:object/summon
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^12.5 ^ ^-12.5 positioned ~ ~0.01 ~ run function api:object/summon
 
     data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:25f}
     data modify storage api: Argument.ID set value 2201
-    execute rotated as @s positioned as @e[tag=5X.Centre] positioned ^-12.5 ^ ^-12.5 positioned ~ ~0.01 ~ run function api:object/summon
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^-12.5 positioned ~ ~0.01 ~ run function api:object/summon
 
 # reset
     scoreboard players reset $attack_start_time Temporary
