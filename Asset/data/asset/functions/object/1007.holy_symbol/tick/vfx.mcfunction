@@ -1,8 +1,8 @@
-#> asset:artifact/0265.holy_symbol_lv.5/trigger/symbol/vfx
+#> asset:object/1007.holy_symbol/tick/vfx
 #
-# 魔法陣のparticleとSE
 #
-# @within function asset:artifact/0265.holy_symbol_lv.5/trigger/symbol/
+#
+# @within function asset:object/1007.holy_symbol/tick/
 
 # SE
     playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 0.6 0.8
