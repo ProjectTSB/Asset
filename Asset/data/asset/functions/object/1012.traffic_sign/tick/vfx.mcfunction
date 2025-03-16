@@ -1,8 +1,8 @@
-#> asset:artifact/0606.traffic_sign/trigger/4.2.vfx
+#> asset:object/1012.traffic_sign/tick/vfx
 #
 #
 #
-# @within function asset:artifact/0606.traffic_sign/trigger/4.1.schedule_tick
+# @within function asset:object/1012.traffic_sign/tick/
 
 particle electric_spark ^-0.0 ^0.10 ^4.0 0.0 0.0 0.0 0 1 normal
 particle electric_spark ^0.78 ^0.10 ^3.923 0.0 0.0 0.0 0 1 normal
