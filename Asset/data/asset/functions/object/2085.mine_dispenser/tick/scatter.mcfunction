@@ -20,6 +20,11 @@
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
     summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
+    summon marker ~ ~ ~ {Tags:["C4.SummonPoint"]}
 
 # 拡散中心へ移動
     data modify storage asset:temp Args.X set from storage asset:context this.Minefield_Pos[0]
@@ -31,6 +36,9 @@
 
 # 召喚
     execute at @e[type=marker,tag=C4.SummonPoint] run function asset:object/2085.mine_dispenser/tick/summon_mine
+
+# 音
+    playsound minecraft:entity.firework_rocket.twinkle_far hostile @a[distance=..64] ~ ~ ~ 1 1 1
 
 # reset
     kill @e[type=marker,tag=C4.SummonPoint]
