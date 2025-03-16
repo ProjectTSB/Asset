@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:artifact/1206.triple_sparkle_bomb/trigger/1.trigger",
+        "asset:artifact/1197.heavy_lava_bomb/trigger/1.trigger",
+        "asset:artifact/1201.deadly_poison_flowgun/trigger/1.trigger",
+        "asset:artifact/1208.secret_art_waterfall/trigger/1.trigger",
         "asset:artifact/1150.poison_flowgun/trigger/1.trigger",
         "asset:artifact/0469.crystal_shotgun/trigger/1.trigger",
         "asset:artifact/0470.crystal_pistol/trigger/1.trigger",
