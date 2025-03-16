@@ -39,5 +39,13 @@
     data modify storage api: Argument.ID set value 2201
     execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^-12.5 positioned ~ ~0.01 ~ run function api:object/summon
 
+# ディスペンサーに与える地雷配布地点のリストを作成
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^12.5 ^ ^12.5 run data modify storage asset:context this.Minefield_Pos append from entity @e[type=item_display,scores={ObjectID=2201},distance=..1,limit=1] Pos
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^12.5 run data modify storage asset:context this.Minefield_Pos append from entity @e[type=item_display,scores={ObjectID=2201},distance=..1,limit=1] Pos
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^12.5 ^ ^-12.5 run data modify storage asset:context this.Minefield_Pos append from entity @e[type=item_display,scores={ObjectID=2201},distance=..1,limit=1] Pos
+    execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^-12.5 run data modify storage asset:context this.Minefield_Pos append from entity @e[type=item_display,scores={ObjectID=2201},distance=..1,limit=1] Pos
+        #tellraw @a [{"nbt":"this.Minefield_Pos","storage": "asset:context"}]
+
+# 地雷の数が多すぎる場合削除
 # reset
     scoreboard players reset $attack_start_time Temporary
