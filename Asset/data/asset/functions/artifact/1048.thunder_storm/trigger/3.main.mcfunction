@@ -18,9 +18,9 @@
         scoreboard players operation $MPPer Temporary -= $100 Const
         scoreboard players operation $MPPer Temporary *= $-1 Const
 
-# ダメージ計算 Damage = 340 + (1 - MP割合) * 3
-    scoreboard players add $Damage Temporary 340
-    scoreboard players operation $MPPer Temporary *= $3 Const
+# ダメージ計算 Damage = 440 + (1 - MP割合) * 4
+    scoreboard players add $Damage Temporary 440
+    scoreboard players operation $MPPer Temporary *= $4 Const
     scoreboard players operation $Damage Temporary += $MPPer Temporary
 
 # 再帰でMarkerを視点先のブロックの位置まで移動させる
