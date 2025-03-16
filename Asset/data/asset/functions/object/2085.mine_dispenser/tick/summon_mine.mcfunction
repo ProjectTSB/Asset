@@ -6,5 +6,3 @@
 
     data modify storage api: Argument.ID set value 436
     function api:mob/summon
-
-    say summon

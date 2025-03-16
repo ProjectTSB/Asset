@@ -12,7 +12,6 @@
 
 # 地雷散布
     execute if score @s General.Object.Tick matches 10 run function asset:object/2085.mine_dispenser/tick/scatter
-    execute if score @s General.Object.Tick matches 10 run say sc
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=200..}]
