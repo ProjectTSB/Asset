@@ -2,7 +2,7 @@
 #
 # @input args:
 #   Rotation0 : float
-#   LRAngle : float
+#   Angle : float
 # @within function asset:object/1012.traffic_sign/summon/
 
 # 元となるEntityを召喚する
