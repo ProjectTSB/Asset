@@ -6,7 +6,7 @@
 
 #> 行き先マーカー
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 拡散させて実行
     # 拡散させるEntityを召喚する
