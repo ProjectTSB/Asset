@@ -20,6 +20,8 @@
     data modify storage asset:object Field.Speed set value 2
     data modify storage asset:object Field.Range set value 40
     data modify storage asset:object Field.MovePerStep set value 0.5
+    data modify storage asset:object Field.CMD set value 20513
+    data modify storage asset:object Field.SalmonCrit set value false
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.AdditionalMPHeal set value 1
     data modify storage asset:object Field.UserID set value -1

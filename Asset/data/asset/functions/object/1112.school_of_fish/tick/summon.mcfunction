@@ -16,6 +16,10 @@
     execute if data storage asset:context this.TargetMobUUID store result score $1112.TargetMobUUID Temporary run data get storage asset:context this.TargetMobUUID
     execute if data storage asset:context this.TargetMobUUID as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..25] if score @s MobUUID = $1112.TargetMobUUID Temporary run data modify storage asset:temp Check set value true
 
+# サケクリティカル
+    execute if predicate lib:random_pass_per/1 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
+    execute if data storage api: Argument.FieldOverride{SalmonCrit:true} run data modify storage api: Argument.FieldOverride.CMD set value 20514
+
 # 魚を召喚
 # ターゲットがいれば引き継いでおく
     data modify storage api: Argument.ID set value 1111

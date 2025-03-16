@@ -28,6 +28,10 @@
 # ターゲットのIDがあれば入れておく
     execute if score $XT.TargetMobUUID Temporary matches -2147483648..2147483647 store result storage api: Argument.FieldOverride.TargetMobUUID int 1 run scoreboard players get $XT.TargetMobUUID Temporary
 
+# サケクリティカル
+    execute if predicate lib:random_pass_per/1 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
+    execute if data storage api: Argument.FieldOverride{SalmonCrit:true} run data modify storage api: Argument.FieldOverride.CMD set value 20514
+
 # Object召喚
     data modify storage api: Argument.ID set value 1111
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

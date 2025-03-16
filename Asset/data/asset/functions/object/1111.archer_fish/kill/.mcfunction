@@ -14,7 +14,9 @@
     playsound minecraft:entity.player.splash.high_speed neutral @a ~ ~ ~ 0.3 2
 
 # ダメージ　
+# サケクリティカルならダメージ2倍
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    execute if data storage asset:context this{SalmonCrit:true} store result storage api: Argument.Damage float 2 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
