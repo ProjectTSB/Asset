@@ -18,7 +18,7 @@
         scoreboard players operation $MPPer Temporary -= $100 Const
         scoreboard players operation $MPPer Temporary *= $-1 Const
 
-# ダメージ計算 Damage = 440 + (1 - MP割合) * 4
+# ダメージ計算 Damage = 440 + (減少したMP%) * 4
     scoreboard players add $Damage Temporary 440
     scoreboard players operation $MPPer Temporary *= $4 Const
     scoreboard players operation $Damage Temporary += $MPPer Temporary
