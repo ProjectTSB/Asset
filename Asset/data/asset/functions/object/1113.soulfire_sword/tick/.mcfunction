@@ -8,8 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-    function asset:object/1113.soulfire_sword/tick/vfx2
-    function asset:object/1113.soulfire_sword/tick/vfx2
+    particle soul_fire_flame ~ ~3.5 ~ 7 3.5 7 0 10
     particle soul_fire_flame ~ ~ ~ 0 0 0 1 1
 
 
