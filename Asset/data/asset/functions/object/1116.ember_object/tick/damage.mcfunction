@@ -22,7 +22,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..6] run function api:damage/
