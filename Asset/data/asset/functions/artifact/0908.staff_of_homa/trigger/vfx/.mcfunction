@@ -15,7 +15,7 @@
     scoreboard players add @s P8.AttackCount 1
 
 # debug
-    scoreboard players set @s P8.AttackCount 1
+    # scoreboard players set @s P8.AttackCount 2
 
 # AttackCountをFieldOverrideに入れて演出用Object召喚
     data modify storage api: Argument.ID set value 1114
@@ -24,7 +24,7 @@
 
 
 # 6回でリセット
-    execute if score @s P8.AttackCount matches 6.. run scoreboard players reset @s P8.AttackCount
+    execute if score @s P8.AttackCount matches 2.. run scoreboard players reset @s P8.AttackCount
 
 # リセット
     scoreboard players reset $Diff Temporary
