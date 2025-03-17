@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/**
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 

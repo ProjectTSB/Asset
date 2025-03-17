@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"最大体力+4","color":"light_purple"}','{}','[{"text":"セット効果：","color":"white"},{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]','{"text":"自身と周囲のプレイヤーに再生を付与する","color":"white"}','{}','[{"text":"大地の加護を得た衣"}]','[{"text":"我らみな"},{"text":"大地","bold":true},{"text":"に生きるもの。","bold":false}]']
+    data modify storage asset:artifact Lore set value ['{"text":"最大体力+4","color":"light_purple"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]','{"text":"自身と周囲のプレイヤーに再生を付与する","color":"white"}','{"text":""}','[{"text":"大地の加護を得た衣"}]','[{"text":"我らみな"},{"text":"大地","bold":true},{"text":"に生きるもの。","bold":false}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
