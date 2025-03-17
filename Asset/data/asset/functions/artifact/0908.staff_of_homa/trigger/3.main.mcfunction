@@ -14,7 +14,7 @@
     #declare score_holder $HealthPer
     #declare score_holder $Damage
 
-# 最大体力の値と割合を取得
+# 体力割合を取得
     function api:entity/player/get_health_per
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
 
@@ -27,4 +27,3 @@
 # リセット
     scoreboard players reset $HealthPer Temporary
     tag @s remove HPLess50Per
-
