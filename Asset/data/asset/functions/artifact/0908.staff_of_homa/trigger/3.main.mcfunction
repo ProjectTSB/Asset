@@ -12,7 +12,6 @@
 #> Private
 # @private
     #declare score_holder $HealthPer
-    #declare score_holder $Damage
 
 # 体力割合を取得
     function api:entity/player/get_health_per
@@ -20,6 +19,9 @@
 
 # 50%以下ならTagをつけておく
     execute if score $HealthPer Temporary matches ..50 run tag @s add HPLess50Per
+
+# 演出
+    function asset:artifact/0908.staff_of_homa/trigger/vfx/
 
 # ダメージ関連
     function asset:artifact/0908.staff_of_homa/trigger/damage
