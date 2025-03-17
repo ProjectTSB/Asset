@@ -21,7 +21,7 @@
 
 # 魔法陣召喚
     data modify storage api: Argument.ID set value 1117
-    data modify storage api: Argument.FieldOverride.Scale set value [12d,12d,0.01d]
+    data modify storage api: Argument.FieldOverride.Scale set value [10d,10d,0.01d]
     data modify storage api: Argument.FieldOverride.Delay set value 5
     data modify storage api: Argument.FieldOverride.Interpolation set value 2
     data modify storage api: Argument.FieldOverride.LeftRotate set value true
