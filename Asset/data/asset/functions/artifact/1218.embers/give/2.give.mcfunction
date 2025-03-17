@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"残り火","color":"#FF9933"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"微かな残り火でしかない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"微かな残り火でしかない"}','{"text":"ただ弱々しい熱と小さな火花だけが放たれる"}' ]
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 20
+    data modify storage asset:artifact AttackInfo.AttackRange set value 13
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 250
 # MP必要量 (int) (オプション)
