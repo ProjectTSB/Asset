@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"護摩の杖","color":"dark_red"}'
+    data modify storage asset:artifact Name set value '{"text":"護摩の杖","color":"#C4302A"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"自身の最大体力の","color":"white"},{"text":"80%","color":"dark_aqua"},{"text":"分ダメージがアップする。","color":"white"}]','{"text":"自身の体力が50%未満の時、","color":"white"}','[{"text":"ダメージが更に最大体力の","color":"white"},{"text":"100%","color":"dark_aqua"},{"text":"分アップする。","color":"white"}]','[{"text":"既に廃れた過去の祭儀で使われていた朱色の杖。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
