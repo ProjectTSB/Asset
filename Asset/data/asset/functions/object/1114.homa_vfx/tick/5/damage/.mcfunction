@@ -9,6 +9,14 @@
     #declare tag Owner
     #declare score_holder $UserID
 
+# 演出
+    playsound block.fire.ambient player @a ~ ~ ~ 0.3 1.3 0
+    playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.4 0.8
+    playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.4 1.2
+    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 0.4 0.5
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 0.3 0.8
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 0.3 1.2
+
 # OwnerへTagを付与
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run tag @s add Owner
