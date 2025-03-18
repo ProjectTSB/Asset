@@ -11,11 +11,9 @@
     #declare tag A5.ModelRoot
     #declare tag A5.ModelRoot.Target
     # ボスのマーカーに関するタグ
-    #declare tag A5.RotateMarker
+    #declare tag A5.Marker
     #declare tag A5.Marker.SpawnPoint
-    #declare tag A5.MarkerInit
-    #declare tag A5.TeleportMarker
-    #declare tag A5.BodyMarker
+    #declare tag A5.Marker.Common
     #declare tag A5.Marker.Aim
     # ボスのムーブセット
     #declare tag A5.Moveset.Intro
@@ -29,6 +27,7 @@
     #declare tag A5.Skill.BackDashBomb
     #declare tag A5.Skill.HoloBlockThunder
     #declare tag A5.Skill.ChargeSlash
+    #declare tag A5.Skill.CordinateLaser
     # ボスのダッシュ中の攻撃に関すること
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
