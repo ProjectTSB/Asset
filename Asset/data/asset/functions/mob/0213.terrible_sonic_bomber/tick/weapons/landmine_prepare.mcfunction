@@ -47,9 +47,8 @@
     execute rotated as @s positioned as @e[type=marker,tag=5X.Centre,distance=..128] positioned ^-12.5 ^ ^-12.5 run data modify storage asset:context this.Minefield_Pos append from entity @e[type=item_display,scores={ObjectID=2201},distance=..1,limit=1] Pos
         #tellraw @a [{"nbt":"this.Minefield_Pos","storage": "asset:context"}]
 
-# 地雷の数が多すぎる場合削除
-    execute store result score $C4.MineCount Temporary if entity @e[type=slime,scores={MobID=436}]
-    execute if score $C4.MineCount Temporary matches 1.. as @e[type=slime,scores={MobID=436}] run function api:mob/kill 
+# 既存の地雷を削除
+    execute as @e[type=slime,scores={MobID=436}] run function api:mob/kill 
 
 # reset
     scoreboard players reset $attack_start_time Temporary
