@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-    function asset:object/1114.homa_vfx/tick/
+    function asset:object/1114.homa_attack/tick/

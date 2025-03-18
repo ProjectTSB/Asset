@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:object/1114.homa_vfx/register
+    function asset:object/1114.homa_attack/register
