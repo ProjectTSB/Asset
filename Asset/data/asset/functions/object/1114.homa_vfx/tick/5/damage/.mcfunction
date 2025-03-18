@@ -27,8 +27,6 @@
     execute as @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
-tellraw @a {"storage":"asset:context","nbt":"this"}
-
 # リセット
     tag @p[tag=Owner] remove Owner
     tag @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10] remove 1114.Target

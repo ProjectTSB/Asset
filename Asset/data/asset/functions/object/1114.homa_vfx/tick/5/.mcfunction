@@ -16,6 +16,6 @@
     execute if score @s General.Object.Tick matches 4 at @s run function asset:object/1114.homa_vfx/tick/5/damage/
 
 # 5の2段目
-    execute if score @s General.Object.Tick matches 4 at @s positioned ^0.1 ^ ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/1
-    execute if score @s General.Object.Tick matches 5 positioned ^0.1 ^ ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/2
-    execute if score @s General.Object.Tick matches 6 positioned ^0.1 ^ ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/3
+    execute if score @s General.Object.Tick matches 4 at @s positioned ^0.1 ^-0.2 ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/1
+    execute if score @s General.Object.Tick matches 5 positioned ^0.1 ^-0.2 ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/2
+    execute if score @s General.Object.Tick matches 6 positioned ^0.1 ^-0.2 ^ rotated ~15 ~ run function asset:object/1114.homa_vfx/tick/5/2/3
