@@ -14,4 +14,4 @@
 # AttackCountをFieldOverrideに入れて演出用Object召喚
     data modify storage api: Argument.ID set value 1114
     execute store result storage api: Argument.FieldOverride.Count int 1 run scoreboard players get @s P8.AttackCount
-    execute anchored eyes positioned ^ ^-0.6 ^ run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^ run function api:object/summon
