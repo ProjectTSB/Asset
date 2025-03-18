@@ -27,6 +27,14 @@
 # 50%以下ならTagをつけておく
     execute if score $HealthPer Temporary matches ..50 run tag @s add HPLess50Per
 
+# 演出
+    playsound block.fire.ambient player @a ~ ~ ~ 0.4 1.3 0
+    playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 0.8
+    playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 1.2
+    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 0.5 0.5
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 0.4 0.8
+    playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 0.4 1.2
+
 # ダメージ関連
     function asset:artifact/0908.staff_of_homa/trigger/damage
 
