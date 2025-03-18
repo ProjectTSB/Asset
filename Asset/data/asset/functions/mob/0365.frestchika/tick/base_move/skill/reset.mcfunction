@@ -17,7 +17,8 @@
     tag @s remove A5.Skill.HoloBlockThunder
     tag @s remove A5.Skill.SideDashShot
     tag @s remove A5.Skill.ChargeSlash
-
+    tag @s remove A5.Skill.CordinateLaser
+    tag @s remove A5.Skill.RandomTeleportSlash
 
     tag @s remove A5.Dash.Left
     tag @s remove A5.Dash.Right
