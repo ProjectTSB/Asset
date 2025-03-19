@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1218.embers/register",
+        "asset:artifact/0301.soulfire_sword/register",
+        "asset:artifact/1197.heavy_lava_bomb/register",
+        "asset:artifact/1201.deadly_poison_flowgun/register",
+        "asset:artifact/1208.secret_art_waterfall/register",
+        "asset:artifact/1205.electric_fly_swatter/register",
         "asset:artifact/1150.poison_flowgun/register",
         "asset:artifact/0470.crystal_pistol/register",
         "asset:artifact/0797.heartbleed/register",
