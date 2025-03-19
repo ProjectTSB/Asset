@@ -4,15 +4,25 @@
 #
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/
 
-# ちょっと上に移動
-    execute at @s run tp @s ~ ~0.2 ~ ~ ~-2.5
-
 # アニメーション
     execute as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_1_active/tween {to_frame: 4, duration: 1}
 
-# 居合の移動を開始
-    execute at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
+# ダメージ設定(ダッシュ部分)
+    # 与えるダメージ
+        data modify storage api: Argument.Damage set value 40.0f
+    # 属性1
+        data modify storage api: Argument.AttackType set value "Physical"
+    # 属性2
+        data modify storage api: Argument.ElementType set value "Thunder"
+    # ダメージ
+        function api:damage/modifier
+        execute as @a[tag=Hit,distance=..64] run function api:damage/
+# リセット
+    function api:damage/reset
+    tag @a[tag=Hit,distance=..64] remove Hit
 
-# サウンド
-    playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 2 0.5
-    playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 2 0.6
+# 演出
+    playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1.2 0.7
+    playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1.2 0.7
+    playsound minecraft:item.axe.scrape hostile @a ~ ~ ~ 1 2
+    playsound minecraft:entity.glow_squid.squirt hostile @a ~ ~ ~ 1 1.5

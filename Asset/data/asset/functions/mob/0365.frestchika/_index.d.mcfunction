@@ -35,6 +35,8 @@
     #declare tag A5.DashSkill.SlowShot
     # ボスの状態
     #declare tag A5.InAction
+    # その他
+    #declare tag Hit
     # Animated Java
     #declare function animated_java:frestchika/summon
     #declare function animated_java:frestchika/animations/intro/tween
@@ -51,5 +53,6 @@
     #declare function animated_java:frestchika/remove/this
     #declare function animated_java:frestchika/animations/attack_slash_2_windup/tween
     #declare function animated_java:frestchika/animations/attack_slash_2_active/tween
+    #declare function animated_java:frestchika/animations/attack_slash_3/tween
     #declare tag aj.frestchika.bone.right_item.child
     #declare tag aj.frestchika.bone.left_item.child

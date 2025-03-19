@@ -6,7 +6,7 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add A5.Skill.RandomTeleportSlash
+    tag @s add A5.Skill.FrontDashSlash
     return fail
 
 # 技を選択

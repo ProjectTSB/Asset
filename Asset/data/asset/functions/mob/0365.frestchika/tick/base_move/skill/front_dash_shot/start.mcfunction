@@ -12,3 +12,7 @@
     playsound minecraft:entity.breeze.shoot hostile @a ~ ~ ~ 2 1
     particle minecraft:crit ~ ~ ~ 0 0 0 1 25
     particle minecraft:poof ~ ~ ~ 0 0 0 0.3 50
+
+# 両手のアイテムを変更
+    item replace entity @e[type=item_display,tag=aj.frestchika.bone.right_item.child,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20507}
+    item replace entity @e[type=item_display,tag=aj.frestchika.bone.left_item.child,sort=nearest,limit=1] container.0 with minecraft:air

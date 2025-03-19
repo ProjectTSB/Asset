@@ -19,8 +19,11 @@
 #    execute if score @s General.Mob.Tick matches 20..25 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.3
 #    execute if score @s General.Mob.Tick matches 25..30 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.1
 
+# 居合の移動を開始
+    execute if score @s General.Mob.Tick matches 30 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
+
 # 振り抜く
-    execute if score @s General.Mob.Tick matches 30 run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
+    execute if score @s General.Mob.Tick matches 30 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
 
 # ニュートラルポーズへ
     execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 10}

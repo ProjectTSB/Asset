@@ -21,6 +21,9 @@
 # 床でも移動
     execute unless block ~ ~-0.1 ~ #lib:no_collision run return run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/active
 
+# 通り道にいたプレイヤーにタグを付与
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run tag @s add Hit
+
 # 周囲の壊せるブロックをぶっ壊す
     execute rotated ~ 0 positioned ^ ^ ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
     execute rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
