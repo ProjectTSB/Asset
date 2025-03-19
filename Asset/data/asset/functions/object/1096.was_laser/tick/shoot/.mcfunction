@@ -37,7 +37,10 @@
     data modify storage lib: args.dy set value 2.5
     execute store result storage lib: args.dz int 0.5 run scoreboard players get $Range Temporary
     data modify storage lib: args.selector set value "@e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..40]"
-    execute positioned ^ ^ ^15 run function lib:rotatable_dxyz/m with storage lib: args
+
+# マクロでRotatableDXYZの実行位置を調整する
+    execute store result storage asset:temp Args.Pos float 0.5 run scoreboard players get $Range Temporary
+    function asset:object/1096.was_laser/tick/shoot/hit_check_pos.m with storage asset:temp Args
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -52,3 +55,4 @@
     tag @e[type=#lib:living,type=!player,tag=Enemy,tag=DXYZ,distance=..40] remove DXYZ
     scoreboard players reset $Range Temporary
     scoreboard players reset $UserID Temporary
+    data remove storage asset:temp Args
