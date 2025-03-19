@@ -9,6 +9,7 @@
 
 # 5段目に限りDamageとUserIDを入れておく
     execute if score @s P8.AttackCount matches 5 store result storage api: Argument.FieldOverride.Damage int 1 run scoreboard players get $P8.Damage Temporary
+    execute if score @s P8.AttackCount matches 5 store result storage api: Argument.FieldOverride.AdditionalMPHeal int 1 run data get storage api: PersistentArgument.AdditionalMPHeal
     execute if score @s P8.AttackCount matches 5 store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
 
 # AttackCountをFieldOverrideに入れて演出用Object召喚

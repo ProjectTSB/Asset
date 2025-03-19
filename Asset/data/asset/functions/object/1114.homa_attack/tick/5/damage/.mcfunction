@@ -31,6 +31,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @p[tag=Owner] run function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
