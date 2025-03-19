@@ -12,7 +12,6 @@
 #> Private
 # @private
     #declare score_holder $Diff
-    #declare score_holder $HealthPer
 
 # 攻撃回数カウント
     execute store result score $Diff Temporary run time query gametime
@@ -23,9 +22,6 @@
 # 体力割合を取得
     function api:entity/player/get_health_per
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
-
-# 50%以下ならTagをつけておく
-    execute if score $HealthPer Temporary matches ..50 run tag @s add HPLess50Per
 
 # 演出
     playsound block.fire.ambient player @a ~ ~ ~ 0.4 1.3 0
@@ -47,4 +43,3 @@
 # リセット
     scoreboard players reset $HealthPer Temporary
     scoreboard players reset $P8.Damage Temporary
-    tag @s remove HPLess50Per

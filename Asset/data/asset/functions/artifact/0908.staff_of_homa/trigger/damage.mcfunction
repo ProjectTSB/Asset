@@ -8,8 +8,8 @@
     function api:modifier/max_health/get
 
 # 体力が50%以下か否かで最大体力によるダメージボーナスを調整する
-    execute if entity @s[tag=!HPLess50Per] store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 0.8
-    execute if entity @s[tag=HPLess50Per] store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 1.8
+    execute if score $HealthPer Temporary matches ..50 store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 0.8
+    execute unless score $HealthPer Temporary matches ..50 store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 1.8
 
 # 基礎ダメージ
     scoreboard players add $P8.Damage Temporary 200
