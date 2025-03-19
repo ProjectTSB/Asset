@@ -22,12 +22,12 @@
 
 # 攻撃補正を付与（水-1000%)
     data modify storage api: Argument.UUID set value [I;1,3,313,0]
-    data modify storage api: Argument.Amount set value -10
+    data modify storage api: Argument.Amount set value -1
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/water/add
 
 # 攻撃補正を付与（雷-1000%)
     data modify storage api: Argument.UUID set value [I;1,3,313,0]
-    data modify storage api: Argument.Amount set value -10
+    data modify storage api: Argument.Amount set value -1
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/thunder/add
