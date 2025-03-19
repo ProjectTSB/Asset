@@ -18,7 +18,7 @@
     function api:damage/reset
 
 # データ設定
-    data modify storage api: Argument.FieldOverride set value {Item:{id:"minecraft:leather_boots",Count:1b},Color:8251903,Frames:[20335,20336,20337],Scale:[15f,15f,0.1f],Transformation:{left_rotation:[-0.5f,-0.5f,-0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"minecraft:leather_boots",Count:1b},Color:3058687,Frames:[20335,20336,20337],Scale:[15f,15f,0.1f],Transformation:{left_rotation:[-0.5f,-0.5f,-0.5f,0.5f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
