@@ -4,7 +4,7 @@
 #
 # @within function asset:object/1113.soulfire_sword/tick/
 
-# 音とか
+# 演出
     particle explosion_emitter ~ ~ ~ 1 4 1 1 1
     particle soul_fire_flame ~ ~10 ~ 8 10 8 1 20
     particle lava ~ ~10 ~ 8 10 8 1 20

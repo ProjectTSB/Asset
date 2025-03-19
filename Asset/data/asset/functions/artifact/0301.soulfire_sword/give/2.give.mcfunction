@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂炎の剣","color":"#48d1cc","underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"魂の残り火を解放し、周囲を燃やし尽くす剣"}','{"text":"周囲に物理炎属性ダメージを与える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"魂の残り火を解放し、周囲を燃やし尽くす剣"}','{"text":"周囲に物理火属性ダメージを与える"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
