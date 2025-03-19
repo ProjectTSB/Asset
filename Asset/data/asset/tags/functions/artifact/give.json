@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:artifact/1218.embers/give/1.trigger",
+        "asset:artifact/0301.soulfire_sword/give/1.trigger",
+        "asset:artifact/1219.firesprint/give/1.trigger",
         "asset:artifact/1207.quadrainbow_icequality/give/1.trigger",
         "asset:artifact/1197.heavy_lava_bomb/give/1.trigger",
         "asset:artifact/1201.deadly_poison_flowgun/give/1.trigger",
