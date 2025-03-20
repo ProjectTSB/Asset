@@ -9,7 +9,7 @@
     #declare score_holder $OwnerID
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 23
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
