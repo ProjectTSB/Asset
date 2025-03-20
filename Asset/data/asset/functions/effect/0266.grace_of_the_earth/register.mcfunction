@@ -17,4 +17,4 @@
     data modify storage asset:effect Stack set value 1
 
 # フィールド
-    data modify storage asset:effect Field.HealPer set value 2d
+    data modify storage asset:effect Field.HealPerStack set value 2d
