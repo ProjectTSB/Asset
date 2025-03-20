@@ -11,7 +11,7 @@
     data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0d],[16d,16d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..32,limit=1] at @e[type=marker,tag=A5.Marker.SpawnPoint,distance=..64] run function lib:spread_entity/
 
-# 付近にオブジェクトがいなければ、マーカーの位置にオブジェクト召喚
+# マーカーの位置にオブジェクト召喚
     execute at @e[type=marker,tag=SpreadMarker,distance=..32,limit=1] align xyz positioned ~0.5 ~ ~0.5 run function asset:mob/0365.frestchika/tick/base_move/skill/holo_block/block/summon_2
 
 # マーカーキル

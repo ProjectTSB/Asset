@@ -12,9 +12,8 @@
 #    item replace entity @e[type=item_display,tag=aj.frestchika.bone.left_item.child,sort=nearest,limit=1] container.0 with minecraft:air
 
 # Tagを削除
-    tag @s remove A5.Skill.BackDashBomb
     tag @s remove A5.Skill.FrontDashSlash
-    tag @s remove A5.Skill.HoloBlockThunder
+    tag @s remove A5.Skill.HoloBlock
     tag @s remove A5.Skill.SideDashShot
     tag @s remove A5.Skill.ChargeSlash
     tag @s remove A5.Skill.CordinateLaser

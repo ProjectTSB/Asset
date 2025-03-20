@@ -25,7 +25,6 @@
     #declare tag A5.Dash.Right
     #declare tag A5.Skill.FrontDashSlash
     #declare tag A5.Skill.BackDashBomb
-    #declare tag A5.Skill.HoloBlockThunder
     #declare tag A5.Skill.ChargeSlash
     #declare tag A5.Skill.CordinateLaser
     #declare tag A5.Skill.RandomTeleportSlash
@@ -40,6 +39,7 @@
     #declare tag A5.HoloBlock.3
     # ボスの状態
     #declare tag A5.InAction
+    #declare tag A5.CycleReset
     # その他
     #declare tag Hit
     # Animated Java

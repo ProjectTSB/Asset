@@ -37,4 +37,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.7
 # フィールド
 # スキルのリスト
-    data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4]
+    data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
