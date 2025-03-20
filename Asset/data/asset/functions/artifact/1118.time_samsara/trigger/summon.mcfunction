@@ -8,8 +8,6 @@
     execute as @e[type=#lib:living,distance=..30,sort=nearest,limit=1] anchored eyes run summon marker ^ ^ ^ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Bounds set value [[3d,3d],[1d,1d],[3d,3d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..30] at @s run function lib:spread_entity/
-# 拡散用マーカーが敵を見る
-    execute as @e[type=marker,tag=SpreadMarker,distance=..30] at @s run tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] eyes
 
 # 召喚
     data modify storage api: Argument.ID set value 1051
