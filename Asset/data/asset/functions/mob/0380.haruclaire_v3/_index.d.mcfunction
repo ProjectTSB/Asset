@@ -23,6 +23,7 @@
     #declare function animated_java:haruclaire_aj/animations/9_0_rod_laser/tween
     #declare function animated_java:haruclaire_aj/animations/20_second_start/tween
     #declare function animated_java:haruclaire_aj/animations/21_0_second_idle/tween
+    #declare function animated_java:haruclaire_aj/animations/25_0_second_icebullet_duo/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -65,6 +66,7 @@
     #declare tag AK.Skill.IceLaser アイスレーザー
     #declare tag AK.Skill.IcePillar アイスピラー
     #declare tag AK.Skill.SummonHato ハトクレア召喚
+    #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置
