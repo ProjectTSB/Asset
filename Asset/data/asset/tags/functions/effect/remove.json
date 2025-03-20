@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:effect/0034.regeneration/_/remove",
+        "asset:effect/0313.firesprint/_/remove",
         "asset:effect/0014.receive_heal_debuff/_/remove",
         "asset:effect/0294.dance_with_hardluck/_/remove",
         "asset:effect/0293.beyond_the_speed/_/remove",

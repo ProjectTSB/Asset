@@ -6,7 +6,7 @@
 
 #> 行き先マーカー
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 発射体のステータス設定
     data modify storage api: Argument.FieldOverride set value {Speed:1,Range:100,MovePerStep:0.1}
