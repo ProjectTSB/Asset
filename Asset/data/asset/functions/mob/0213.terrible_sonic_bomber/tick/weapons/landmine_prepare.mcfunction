@@ -7,7 +7,6 @@
 #> prv
 # @private
     #declare score_holder $attack_start_time
-    #declare score_holder $C4.MineCount
 
 # 攻撃開始と終了時間指定
     execute store result score $attack_start_time Temporary run time query gametime
@@ -52,4 +51,3 @@
 
 # reset
     scoreboard players reset $attack_start_time Temporary
-    scoreboard players reset $C4.MineCount Temporary
