@@ -13,7 +13,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは ちかづきすぎた","with":[{"selector":"@s"}]}]'
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
 
 # 弾召喚

@@ -24,6 +24,7 @@
     #declare function animated_java:haruclaire_aj/animations/20_second_start/tween
     #declare function animated_java:haruclaire_aj/animations/21_0_second_idle/tween
     #declare function animated_java:haruclaire_aj/animations/25_0_second_icebullet_duo/tween
+    #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -67,6 +68,7 @@
     #declare tag AK.Skill.IcePillar アイスピラー
     #declare tag AK.Skill.SummonHato ハトクレア召喚
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
+    #declare tag AK.Skill.IceWallDuo アイスウォール
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置
@@ -79,6 +81,7 @@
     #declare tag AK.Temp.AttackPosition 攻撃位置保持用
     #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用
+    #declare tag AK.Temp.Start 初期化処理の重複防止
     #
     # - 他オブジェクト
     #declare tag AK.Object ハルクレアオブジェクト共通タグ

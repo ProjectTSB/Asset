@@ -40,3 +40,9 @@
 
 # アイスバレット・デュオ
     execute if entity @s[tag=AK.Skill.IceBulletDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet_duo/
+
+# アイスウォール
+    execute if entity @s[tag=AK.Skill.IceWallDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/
+
+## アイスクリメーション
+# アイスクリメーション・オーバーチュア
