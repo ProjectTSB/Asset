@@ -27,4 +27,8 @@
     tag @s remove A5.DashSkill.RapidLaser
     tag @s remove A5.DashSkill.SlowShot
 
+    tag @s remove A5.HoloBlock.1
+    tag @s remove A5.HoloBlock.2
+    tag @s remove A5.HoloBlock.3
+
     tag @s remove A5.InAction

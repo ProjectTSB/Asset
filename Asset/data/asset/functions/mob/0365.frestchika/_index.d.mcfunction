@@ -34,6 +34,10 @@
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
     #declare tag A5.DashSkill.SlowShot
+    # ホロブロックの設置パターン
+    #declare tag A5.HoloBlock.1
+    #declare tag A5.HoloBlock.2
+    #declare tag A5.HoloBlock.3
     # ボスの状態
     #declare tag A5.InAction
     # その他
