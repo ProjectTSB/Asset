@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:effect/0301.soul_light/_/register",
+        "asset:effect/0266.grace_of_the_earth/_/register",
+        "asset:effect/0134.regeneration/_/register",
+        "asset:effect/0084.regeneration/_/register",
+        "asset:effect/0034.regeneration/_/register",
+        "asset:effect/0313.firesprint/_/register",
+        "asset:effect/0312.deadly_poison/_/register",
         "asset:effect/0305.poison_of_flowgun/_/register",
         "asset:effect/0307.bleeding/_/register",
         "asset:effect/0114.receive_heal_debuff/_/register",

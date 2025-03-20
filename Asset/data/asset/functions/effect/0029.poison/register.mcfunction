@@ -17,13 +17,13 @@
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
-    # data modify storage asset:effect DurationOperation set value
+    data modify storage asset:effect DurationOperation set value "forceReplace"
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 256
+    data modify storage asset:effect MaxStack set value 99
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value true
 # 死亡時のエフェクトの処理 (default = "remove")
@@ -36,4 +36,5 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.Tick set value 20
+    data modify storage asset:effect Field.DamagePer set value 0.01

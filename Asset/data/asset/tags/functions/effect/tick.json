@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:effect/0301.soul_light/_/tick",
+        "asset:effect/0034.regeneration/_/tick",
+        "asset:effect/0313.firesprint/_/tick",
+        "asset:effect/0312.deadly_poison/_/tick",
         "asset:effect/0305.poison_of_flowgun/_/tick",
         "asset:effect/0307.bleeding/_/tick",
         "asset:effect/0294.dance_with_hardluck/_/tick",
