@@ -29,6 +29,7 @@
     #declare tag A5.Skill.ChargeSlash
     #declare tag A5.Skill.CordinateLaser
     #declare tag A5.Skill.RandomTeleportSlash
+    #declare tag A5.Skill.HoloBlock
     # ボスのダッシュ中の攻撃に関すること
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
@@ -54,5 +55,6 @@
     #declare function animated_java:frestchika/animations/attack_slash_2_windup/tween
     #declare function animated_java:frestchika/animations/attack_slash_2_active/tween
     #declare function animated_java:frestchika/animations/attack_slash_3/tween
+    #declare function animated_java:frestchika/animations/attack_ranged_1/tween
     #declare tag aj.frestchika.bone.right_item.child
     #declare tag aj.frestchika.bone.left_item.child

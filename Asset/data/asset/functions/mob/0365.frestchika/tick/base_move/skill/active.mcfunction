@@ -10,3 +10,4 @@
     execute if entity @e[tag=A5.Skill.ChargeSlash] run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/
     execute if entity @e[tag=A5.Skill.CordinateLaser] run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
     execute if entity @e[tag=A5.Skill.RandomTeleportSlash] run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+    execute if entity @e[tag=A5.Skill.HoloBlock] run function asset:mob/0365.frestchika/tick/base_move/skill/holo_block/
