@@ -15,6 +15,7 @@
     scoreboard players operation $Damage Temporary *= $Per Temporary
     scoreboard players operation $Damage Temporary *= $Stack Temporary
     execute store result storage api: Argument.Damage double 0.0001 run scoreboard players get $Damage Temporary
+    data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.BypassModifier set value true
     function api:damage/modifier
     data modify storage api: Argument.BypassArmorDefense set value true
