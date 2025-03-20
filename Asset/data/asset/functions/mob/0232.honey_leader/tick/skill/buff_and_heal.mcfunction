@@ -23,10 +23,10 @@
     #effect give @e[type=skeleton,tag=6G.HoneyMob,distance=..15] speed 2 1 true
 
 # 回復
-    data modify storage lib: Argument.Heal set value 900f
-    function lib:heal/modifier
-    execute as @e[type=skeleton,tag=6G.HoneyMob,distance=..15] run function lib:heal/
-    function lib:heal/reset
+    data modify storage api: Argument.Heal set value 900f
+    function api:heal/modifier
+    execute as @e[type=skeleton,tag=6G.HoneyMob,distance=..15] run function api:heal/
+    function api:heal/reset
 
 # タグを消しておく
     tag @e[type=skeleton,tag=6G.HoneyMob,distance=..15] remove 6G.HoneyMob

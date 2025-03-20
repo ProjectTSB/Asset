@@ -17,6 +17,7 @@
     data modify storage api: Argument.Fluctuation set value 30
     function api:mp/fluctuation
 
-# 低速落下と透明化
-    effect give @s slow_falling 15 0 true
-    effect give @s invisibility 15 0 true
+# エフェクトを付与
+    data modify storage api: Argument.ID set value 271
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

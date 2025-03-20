@@ -8,7 +8,7 @@
 # 対象のanimated javaモデルを紐づけ
     execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
     function asset:mob/0339.twins_sapphiel/tick/app/1.start_link_model.m with storage asset:temp 9E
-    data remove storage asset:temp 9E.Uid
+    data remove storage asset:temp 9E
 
 # 再生停止
     execute as @e[type=item_display,tag=9F.ModelRoot.Target] run function animated_java:twins_sapphiel/animations/pause_all

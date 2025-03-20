@@ -5,7 +5,7 @@
 # @within function asset:mob/0217.medousa_eye/tick/
 
 # ターゲット設定
-    execute positioned ^ ^ ^10 as @a[distance=..10] run function asset:mob/0217.medousa_eye/tick/find_target
+    execute positioned ^ ^ ^10 as @a[gamemode=!spectator,distance=..10] run function asset:mob/0217.medousa_eye/tick/find_target
 
 # NoAI
     execute if entity @p[tag=Target] run data modify entity @s NoAI set value 1b

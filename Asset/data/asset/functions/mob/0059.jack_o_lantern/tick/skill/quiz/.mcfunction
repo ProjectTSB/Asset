@@ -11,7 +11,7 @@
     execute if entity @s[scores={General.Mob.Tick=0..19}] run tp @s ~ ~ ~ ~20 0
     execute if entity @s[scores={General.Mob.Tick=20..39}] run tp @s ~ ~ ~ ~40 0
     execute if entity @s[scores={General.Mob.Tick=40..49}] run tp @s ~ ~ ~ ~20 0
-    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Mob.Tick=50..69}] facing entity @p[gamemode=!spectator] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 回転演出
     execute if entity @s[scores={General.Mob.Tick=0..19}] run particle cloud ~ ~1.2 ~ 0 0.5 0 0.1 3 normal @a
@@ -21,12 +21,12 @@
 
 # 煽りメッセージ
     execute if entity @s[scores={General.Mob.Tick=50}] run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 1 1.5
-    execute if entity @s[scores={General.Mob.Tick=50}] run summon text_display ~ ~3 ~ {Tags:["1N.TextDisplay"],billboard:"center",shadow:1b,text:'[{"text":"探してみな！"},{"text":"\\n↓","color":"white"}]',background:16711680,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[2.0f,2.0f,2.0f]}}
-    execute if entity @s[scores={General.Mob.Tick=70}] positioned ~ ~3 ~ run kill @e[type=text_display,tag=1N.TextDisplay,distance=..0.01,sort=nearest,limit=1]
+    execute if entity @s[scores={General.Mob.Tick=50}] run data modify storage api: Argument.ID set value 2033
+    execute if entity @s[scores={General.Mob.Tick=50}] positioned ~ ~3 ~ run function api:object/summon
 
 # 回転途中で頭を取り換える
     execute if entity @s[scores={General.Mob.Tick=35}] run particle explosion ~ ~1.8 ~ 0 0 0 0 1
-    execute if entity @s[scores={General.Mob.Tick=40}] run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
+    execute if entity @s[scores={General.Mob.Tick=40}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/change_head
 
 # 自分と偽物を拡散し、発光を解除
 # 自身にparticle非表示Tagを付与

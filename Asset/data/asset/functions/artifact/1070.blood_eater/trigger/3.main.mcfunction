@@ -19,18 +19,18 @@
 
 # 自身に5の防御貫通ダメージを与える
     # ダメージ量
-        data modify storage lib: Argument.Damage set value 5.0f
+        data modify storage api: Argument.Damage set value 5.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 補正をしない
-        data modify storage lib: Argument.FixedDamage set value true
+        data modify storage api: Argument.FixedDamage set value true
     # 死亡メッセージ
-        data modify storage lib: Argument.DeathMessage set value ['[{"translate": "%1$sは血を喰らう恐怖に殺された。","with":[{"selector":"@s"}]}]']
+        data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは血を喰らう恐怖に殺された","with":[{"selector":"@s"}]}]']
     # ダメージ
-        function lib:damage/modifier
-        execute as @s[tag=!PlayerShouldInvulnerable] run function lib:damage/
+        function api:damage/modifier
+        execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # エフェクトを付与
     data modify storage api: Argument.ID set value 219

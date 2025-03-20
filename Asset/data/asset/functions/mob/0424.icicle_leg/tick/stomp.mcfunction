@@ -18,16 +18,12 @@
 # モデル変更
     item replace entity @s armor.head with stick{CustomModelData:20470}
 
-# Motionを固定
-    data modify entity @s Motion[0] set value 0f
-    data modify entity @s Motion[2] set value 0f
-
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 40f
+    data modify storage api: Argument.Damage set value 30f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
     function api:damage/reset
 
 # ノーマルならreturn
@@ -40,5 +36,5 @@
     data modify storage api: Argument.ID set value 17
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     data modify storage api: Argument.Duration set value 30
-    execute as @a[gamemode=!spectator,distance=..5] run function api:entity/mob/effect/give
+    execute as @a[gamemode=!spectator,distance=..3.5] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

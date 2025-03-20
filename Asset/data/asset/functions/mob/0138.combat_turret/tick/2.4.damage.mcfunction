@@ -7,18 +7,13 @@
 # 演出
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
 
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 9.7f
-    # 魔法属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 雷属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
-    # ダメージ
-        function lib:damage/modifier
-        execute as @p[gamemode=!creative,tag=LandingTarget,distance=..30] at @s run function lib:damage/
-# リセット
-    function lib:damage/reset
+# ダメージ
+    data modify storage api: Argument.Damage set value 9.7f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @p[gamemode=!creative,tag=LandingTarget,distance=..30] at @s run function api:damage/
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @p[tag=LandingTarget,distance=..50] remove LandingTarget

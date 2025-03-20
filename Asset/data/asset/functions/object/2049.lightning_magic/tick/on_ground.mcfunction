@@ -4,7 +4,7 @@
 #
 # @within function asset:object/2049.lightning_magic/tick/
 
- #> Private
+#> Private
 # @private
     #declare score_holder $Interval
 

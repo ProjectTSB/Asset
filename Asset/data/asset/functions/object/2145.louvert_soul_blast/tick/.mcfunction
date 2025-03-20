@@ -27,4 +27,4 @@
     execute if score @s General.Object.Tick matches 41 run function asset:object/2145.louvert_soul_blast/tick/cast/
 
 # リセット
-    data remove storage asset:temp 9K.Num
+    data remove storage asset:temp 9K

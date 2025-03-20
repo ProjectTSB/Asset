@@ -7,7 +7,7 @@
 # 対象のanimated javaモデルを紐づけ
     execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
     function asset:mob/0340.twins_rubiel/tick/app/1.start_link_model.m with storage asset:temp 9E
-    data remove storage asset:temp 9E.Uid
+    data remove storage asset:temp 9E
 
 # 耐性付与
     execute if entity @s[tag=9G.State.IsGuard] run effect give @s resistance 1 5 true

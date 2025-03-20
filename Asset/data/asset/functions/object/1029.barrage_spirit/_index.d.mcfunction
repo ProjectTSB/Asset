@@ -6,4 +6,3 @@
     #declare tag 1029.Spirit
     #declare tag 1029.AttackMode
     #declare tag 1029.OwnerPlayer
-    #declare score_holder $OwnerID
