@@ -41,5 +41,6 @@
     execute if score @s P8.AttackCount matches 6.. run scoreboard players reset @s P8.AttackCount
 
 # リセット
+    scoreboard players reset $Diff Temporary
     scoreboard players reset $HealthPer Temporary
     scoreboard players reset $P8.Damage Temporary
