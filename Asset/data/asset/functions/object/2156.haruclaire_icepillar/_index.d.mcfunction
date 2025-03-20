@@ -8,4 +8,6 @@
     #declare tag 2156.Append
     #declare tag 2156.Ride
     #declare tag 2156.Right
+    #declare tag 2156.Prediction
+    #declare tag 2156.Prediction.Turn
     #declare tag 2156.AttackRotation

@@ -4,14 +4,6 @@
 #
 # @within asset:object/2155.haruclaire_icelaser/tick/
 
-# ヒット判定
-    data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 2
-    data modify storage lib: args.dz set value 35
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-    execute positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-    tag @a[tag=DXYZ] add 2155.Hit
-    tag @a[tag=DXYZ] remove DXYZ
     # 旧
         # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgAwBsAhgCwDsRAxgLQDMAnGUa3WQCY6rGuyIAzVoMrimAVipUG4sLgw0AtgmSAt3wAEARlVgYNAE6aAzknDMA9ngwQkAubnFm7Gm2ABuNFDxtcAAPJApcKHCAX2jcCDsff0DgsDDECLAoxHYKWNw7cXFLOGcM3DI4AC80ODNw3DRLACFq2rMAUQBHPACUKABlU2Y4EkRxAJLYgF0gA_3
         # 線 1
@@ -45,6 +37,15 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $7 Const
     execute unless score $Interval Temporary matches 0 run return run scoreboard players reset $Interval Temporary
+
+# ヒット判定
+    data modify storage lib: args.dx set value 2
+    data modify storage lib: args.dy set value 2
+    data modify storage lib: args.dz set value 35
+    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+    execute positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+    tag @a[tag=DXYZ] add 2155.Hit
+    tag @a[tag=DXYZ] remove DXYZ
 
 # 演出
     playsound block.beacon.ambient hostile @a ~ ~ ~ 2 1
