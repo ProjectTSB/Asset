@@ -17,7 +17,7 @@
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
-    data modify storage asset:effect DurationOperation set value "forceReplace"
+    data modify storage asset:effect DurationOperation set value "replace"
 # スタックの操作方法 (default = API || "replace")
     data modify storage asset:effect StackOperation set value "forceReplace"
 # 最大効果時間 (int) (default = 2147483647)
