@@ -4,6 +4,10 @@
 #
 # @within function asset:artifact/1118.time_samsara/trigger/3.main
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # 拡散用marker召喚
     execute as @e[type=#lib:living,distance=..30,sort=nearest,limit=1] anchored eyes run summon marker ^ ^ ^ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Bounds set value [[3d,3d],[1d,1d],[3d,3d]]
