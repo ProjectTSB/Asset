@@ -15,7 +15,7 @@
 
 # MP割合を取得
     function api:entity/player/get_mp_per
-    execute store result score $MPPer Temporary run data get storage api: Return.MPPer
+    execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
 # 演出
     playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.5 1.4
