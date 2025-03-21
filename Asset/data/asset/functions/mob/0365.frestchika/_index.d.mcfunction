@@ -60,5 +60,8 @@
     #declare function animated_java:frestchika/animations/attack_slash_2_active/tween
     #declare function animated_java:frestchika/animations/attack_slash_3/tween
     #declare function animated_java:frestchika/animations/attack_ranged_1/tween
+    #declare function animated_java:frestchika/animations/break/tween
+    #declare function animated_java:frestchika/animations/break_loop/tween
+    #declare function animated_java:frestchika/animations/recovery/tween
     #declare tag aj.frestchika.bone.right_item.child
     #declare tag aj.frestchika.bone.left_item.child

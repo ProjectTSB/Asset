@@ -11,6 +11,9 @@
 # スコアリセット
     scoreboard players reset @s General.Mob.Tick
 
+# フェイズ進める
+    scoreboard players set @s A5.Phase 1
+
 # 無敵解除
     tag @s remove Uninterferable
     data modify entity @s Invulnerable set value 0b

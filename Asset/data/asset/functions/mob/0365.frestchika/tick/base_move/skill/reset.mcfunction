@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/**
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/**
+#   asset:mob/0365.frestchika/hurt/active_50per
 
 # スコアをセット
     scoreboard players set @s General.Mob.Tick -10
