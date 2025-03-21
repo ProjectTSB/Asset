@@ -19,7 +19,7 @@
     execute unless entity @s[distance=..16] run return run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/active
 
 # 床でも移動
-    execute unless block ~ ~-0.1 ~ #lib:no_collision run return run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/active
+    execute unless block ~ ~-0.1 ~ #asset:mob/0365.frestchika/no_collision run return run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/active
 
 # 通り道にいたプレイヤーにタグを付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run tag @s add Hit

@@ -19,7 +19,7 @@
     execute as @e[type=marker,tag=SpreadMarker,limit=1] at @r[gamemode=!spectator,distance=..64] run function lib:spread_entity/
 
 # その座標にブロックがなければテレポートを確定
-    execute at @e[type=marker,tag=SpreadMarker,limit=1] if block ~ ~ ~ #lib:no_collision run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/teleport/confirm
+    execute at @e[type=marker,tag=SpreadMarker,limit=1] if block ~ ~ ~ #asset:mob/0365.frestchika/no_collision run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/teleport/confirm
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,limit=1]
