@@ -18,7 +18,7 @@
     execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
 # 演出
-    playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.5 1.4
+    playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.3 1.4
 
 # チャージ用Effectを付与
 # MPが40%以下でダメージ1.5倍

@@ -17,9 +17,9 @@
     execute store result storage api: Argument.FieldOverride.Charge int 1 run scoreboard players add $Charge Temporary 1
 
 # チャージ段階に比例してplaysoundとスタックを変える
-    execute if score $Charge Temporary matches 12 run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.5 1.6
+    execute if score $Charge Temporary matches 12 run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.35 1.6
     execute if score $Charge Temporary matches 12 run data modify storage api: Argument.Stack set value 2
-    execute if score $Charge Temporary matches 24 run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.6 1.8
+    execute if score $Charge Temporary matches 24 run playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.4 1.8
     execute if score $Charge Temporary matches 24 run data modify storage api: Argument.Stack set value 3
 
 # チャージ用Effectを付与
