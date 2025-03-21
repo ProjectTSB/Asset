@@ -29,6 +29,7 @@
     #declare tag A5.Skill.CordinateLaser
     #declare tag A5.Skill.RandomTeleportSlash
     #declare tag A5.Skill.HoloBlock
+    #declare tag A5.Skill.OverHeat
     # ボスのダッシュ中の攻撃に関すること
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser

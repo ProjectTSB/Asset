@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/hurt/
+# @within function asset:mob/0365.frestchika/hurt/health_check
 
 # フェイズ移行動作を実行
     tag @s add A5.Moveset.Transition
