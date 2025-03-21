@@ -14,5 +14,7 @@
 
 # チャージ用Effectを付与
     data modify storage api: Argument.ID set value 315
+    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:200,Slash2:300,Slash3:400}
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

@@ -9,8 +9,8 @@
     #declare score_holder $Charge
 
 # ダメージとMP回復のデータ
-    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:200,Slash2:300,Slash3:400}
-    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    data modify storage api: Argument.FieldOverride.Damage set from storage api: Return.Effect.Field.Damage
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: Return.Effect.Field.AdditionalMPHeal
 
 # チャージ段階を取得し、+1して再度付与
     execute store result score $Charge Temporary run data get storage api: Return.Effect.Field.Charge
