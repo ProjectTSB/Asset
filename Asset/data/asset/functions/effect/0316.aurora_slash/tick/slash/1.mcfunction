@@ -9,6 +9,11 @@
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.4 0.8
     execute anchored eyes positioned ^ ^-0.2 ^1.5 run function asset:effect/0316.aurora_slash/tick/vfx/slash1
 
+# 演出用Object召喚
+    data modify storage api: Argument.ID set value 1128
+    data modify storage api: Argument.FieldOverride.Count set value 1
+    execute anchored eyes positioned ^ ^-0.2 ^1.5 run function api:object/summon
+
 # ダメージ判定
 # 前方に強めの判定
     execute positioned ^ ^ ^8 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..8] add 316.Target

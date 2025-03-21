@@ -1,8 +1,8 @@
-#> asset:effect/0316.aurora_slash/tick/vfx/slash3
+#> asset:object/1128.aurora_scythe_slash/tick/3/base
 #
 #
 #
-# @within function asset:effect/0316.aurora_slash/tick/slash/3
+# @private
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAKymmUoCMDAtAEwDsAhgJxMAs9pAMxMAHADMuABiYc47AS1JwRXNmAIA7DgFsEyQGGKAAnrqwMDhh0BnJOBQB7QhohIuANgIo4zuBltgANw5sQj1wAA8kSQIoKIBfOIJLUjRCG0RBADpBAisICxdEaLA4bGw0GCs9EREk+3yIPWK0KwBRMoqq1oBHQmDsKABlcy9yRDFgqoS8cGh4CnQsXFNiMgpBNylJETd6Jho3Nj4WL1FSCdZDtl4AIw4blBRJLlMtXQojFlNzS210u0cziQNU83kafkQ4CCITCYEiRRi8USYGSqXSOTAeQKUQIpXKlWqtRR9Q4jRxYBa7XxXV6-SGIzgYwm2CmiVmsD0qEwOHwRBIYzA4kENzE9DgPBEkjofEEIhuog4pDcTAmvA4bEZUsoHEErx0nKMuoIP2s-gcTkKktBPghUOCoX88OKsSK0xRirRSBYmTYuXyGEKxTxnUJdQaTQIlI6BJ6fTK9I4oyQzNZAF0gA_3
 # 円 3
@@ -19,6 +19,7 @@ particle dust 0.000 0.545 1.000 1.3 ^2.30213 ^ ^1.24146 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^2.18435 ^ ^1.39658 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^2.0531 ^ ^1.54309 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^1.90919 ^ ^1.68009 0 0 0 0 1
+
 particle dust 0.000 0.545 1.000 1.3 ^1.75351 ^ ^1.80672 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^1.58702 ^ ^1.92222 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^1.41075 ^ ^2.02587 0 0 0 0 1
@@ -38,6 +39,7 @@ particle dust 0.000 0.545 1.000 1.3 ^-1.22577 ^ ^2.11703 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^-1.41075 ^ ^2.02587 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^-1.58702 ^ ^1.92222 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^-1.75351 ^ ^1.80672 0 0 0 0 1
+
 particle dust 0.000 0.545 1.000 1.3 ^-1.90919 ^ ^1.68009 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^-2.0531 ^ ^1.54309 0 0 0 0 1
 particle dust 0.000 0.545 1.000 1.3 ^-2.18435 ^ ^1.39658 0 0 0 0 1
@@ -66,6 +68,7 @@ particle dust 0.000 0.773 0.976 1.3 ^2.52376 ^ ^1.42729 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^2.40162 ^ ^1.58209 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^2.26725 ^ ^1.72883 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^2.12132 ^ ^1.86676 0 0 0 0 1
+
 particle dust 0.000 0.773 0.976 1.3 ^1.96458 ^ ^1.99518 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^1.79783 ^ ^2.11343 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^1.62192 ^ ^2.22091 0 0 0 0 1
@@ -87,6 +90,7 @@ particle dust 0.000 0.773 0.976 1.3 ^-1.43775 ^ ^2.31707 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^-1.62192 ^ ^2.22091 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^-1.79783 ^ ^2.11343 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^-1.96458 ^ ^1.99518 0 0 0 0 1
+
 particle dust 0.000 0.773 0.976 1.3 ^-2.12132 ^ ^1.86676 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^-2.26725 ^ ^1.72883 0 0 0 0 1
 particle dust 0.000 0.773 0.976 1.3 ^-2.40162 ^ ^1.58209 0 0 0 0 1
@@ -117,6 +121,7 @@ particle dust 0.000 1.000 0.949 1.3 ^2.74385 ^ ^1.61338 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^2.61807 ^ ^1.76784 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^2.48107 ^ ^1.91474 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^2.33345 ^ ^2.05344 0 0 0 0 1
+
 particle dust 0.000 1.000 0.949 1.3 ^2.17584 ^ ^2.18334 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^2.00891 ^ ^2.3039 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^1.83338 ^ ^2.41459 0 0 0 0 1
@@ -140,6 +145,7 @@ particle dust 0.000 1.000 0.949 1.3 ^-1.65 ^ ^2.51494 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^-1.83338 ^ ^2.41459 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^-2.00891 ^ ^2.3039 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^-2.17584 ^ ^2.18334 0 0 0 0 1
+
 particle dust 0.000 1.000 0.949 1.3 ^-2.33345 ^ ^2.05344 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^-2.48107 ^ ^1.91474 0 0 0 0 1
 particle dust 0.000 1.000 0.949 1.3 ^-2.61807 ^ ^1.76784 0 0 0 0 1
