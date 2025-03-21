@@ -65,5 +65,17 @@
         data modify storage asset:mob Resist.Water set value 1.0f
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
+
 # フィールド
+# ダメージ
+
+# 怨霊弾
     data modify storage asset:mob Field.Damage.ManyShoot set value 30f
+# レーザー
+    data modify storage asset:mob Field.Damage.Laser set value 30f
+# ハイパーレーザー
+    data modify storage asset:mob Field.Damage.HyperLaser set value 55f
+# 突進
+    data modify storage asset:mob Field.Damage.Dash.Charge set value 30f
+# ダッシュからの斬撃
+    data modify storage asset:mob Field.Damage.Dash.Slash set value 45f
