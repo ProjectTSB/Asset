@@ -14,3 +14,8 @@
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# スタックが3なら移動速度上昇を付与
+    execute if data storage asset:context {Stack:3} run data modify storage api: Argument.ID set value 317
+    execute if data storage asset:context {Stack:3} run function api:entity/mob/effect/give
+    execute if data storage asset:context {Stack:3} run function api:entity/mob/effect/reset
