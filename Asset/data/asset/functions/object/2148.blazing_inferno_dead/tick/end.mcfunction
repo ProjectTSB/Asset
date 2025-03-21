@@ -25,8 +25,5 @@
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
 
-# AJのデータパックを無効化
-    datapack disable "file/AJ_BlazingInferno.zip"
-
 # 消失
     kill @s

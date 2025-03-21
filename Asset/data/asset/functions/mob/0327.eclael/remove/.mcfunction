@@ -11,5 +11,3 @@
 
 # 死亡演出スキップ
     execute as @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] run function animated_java:eclael/remove/this
-
-datapack disable "file/AJ_Eclael.zip"

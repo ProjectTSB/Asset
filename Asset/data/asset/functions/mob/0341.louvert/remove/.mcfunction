@@ -14,5 +14,3 @@
 
 # 継承元の処理
     function asset:mob/super.remove
-
-datapack disable "file/AJ_Louvert.zip"

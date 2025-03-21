@@ -7,5 +7,3 @@
 function asset:mob/super.remove
 
 execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run function animated_java:lexiel/remove/this
-
-datapack disable "file/AJ_Lexiel.zip"

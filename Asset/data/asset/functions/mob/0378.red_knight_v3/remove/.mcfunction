@@ -8,5 +8,3 @@
     function asset:mob/super.remove
 # 消す
     execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/remove/this
-
-datapack disable "file/AJ_RedKnight.zip"

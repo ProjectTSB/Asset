@@ -27,5 +27,3 @@
 # オブジェクト消去
     execute as @e[tag=BE.Object] on passengers run kill @s
     kill @e[tag=BE.Object]
-
-datapack disable "file/AJ_Heiloang.zip"

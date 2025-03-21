@@ -8,6 +8,3 @@ function asset:mob/super.remove
 
 # 独自remove処理に移譲
     function asset:mob/0338.corundum_twins/remove/app/1.remove
-
-datapack disable "file/AJ_Rubiel.zip"
-datapack disable "file/AJ_Sapphiel.zip"

@@ -19,5 +19,3 @@
 
 # Super
     function asset:mob/super.remove
-
-schedule function asset:mob/1004.tultaria/remove/schedule 5t replace

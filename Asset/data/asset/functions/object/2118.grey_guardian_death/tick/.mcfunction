@@ -21,5 +21,4 @@
 # 消滅処理
     execute if score @s General.Object.Tick matches 96 as @e[type=item_display,distance=..0.1,sort=nearest,limit=1] run function animated_java:grey_guardian/remove/this
     execute if score @s General.Object.Tick matches 96 run function asset:object/2118.grey_guardian_death/tick/drop
-    execute if score @s General.Object.Tick matches 96 run datapack disable "file/AJ_GreyGuardian.zip"
     kill @s[scores={General.Object.Tick=96..}]

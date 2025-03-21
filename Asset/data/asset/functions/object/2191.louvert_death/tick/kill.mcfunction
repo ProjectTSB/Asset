@@ -13,5 +13,3 @@
 
 # キル
     kill @s
-
-datapack disable "file/AJ_Louvert.zip"

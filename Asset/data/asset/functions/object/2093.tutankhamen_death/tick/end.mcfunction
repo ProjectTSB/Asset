@@ -20,5 +20,3 @@
 
 # 消失
     kill @s
-
-datapack disable "file/AJ_Tutankhamen.zip"

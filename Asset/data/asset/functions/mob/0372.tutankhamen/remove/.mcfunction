@@ -15,5 +15,3 @@
 
 # AJ削除
     execute at @s as @e[type=item_display,tag=AC.AJ,distance=..100,sort=nearest,limit=1] run function animated_java:tutankhamen/remove/this
-
-datapack disable "file/AJ_Tutankhamen.zip"

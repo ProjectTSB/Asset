@@ -4,3 +4,5 @@
 data modify storage api: Argument.ID set value 57
 data modify storage api: Argument.GroupID set value "islands"
 function api:teleporter/modify_groups/add
+
+datapack disable "file/AJ_Heiloang.zip"
