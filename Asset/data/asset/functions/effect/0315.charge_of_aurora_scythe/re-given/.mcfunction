@@ -23,8 +23,6 @@
     execute if score $Charge Temporary matches 23 run particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1.3 ~ ~0.4 ~ 0.25 0.25 0.25 0 25 normal
     execute if score $Charge Temporary matches 23 run data modify storage asset:context Stack set value 3
 
-
-
 # Field.Chargeを+1
     execute store result storage asset:context this.Charge int 1 run scoreboard players add $Charge Temporary 1
 
