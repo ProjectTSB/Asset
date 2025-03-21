@@ -17,4 +17,4 @@
     data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
 
 # スコアを0に戻す
-    scoreboard players set @s General.Mob.Tick -20
+    scoreboard players set @s General.Mob.Tick -10

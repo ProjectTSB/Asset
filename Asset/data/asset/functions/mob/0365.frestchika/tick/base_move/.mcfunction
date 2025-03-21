@@ -5,7 +5,8 @@
 # @within function asset:mob/0365.frestchika/tick/
 
 # プレイヤーが周囲にいたらスキル選択
-    execute if score @s[tag=!A5.CycleReset,tag=!A5.InAction] General.Mob.Tick matches 0.. if entity @p[distance=..64] run function asset:mob/0365.frestchika/tick/base_move/skill/select/
+    execute if score @s[tag=!A5.CycleReset,tag=!A5.InAction,scores={A5.Phase=1}] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0365.frestchika/tick/base_move/skill/select/
+    execute if score @s[tag=!A5.CycleReset,tag=!A5.InAction,scores={A5.Phase=2..}] General.Mob.Tick matches 0.. if entity @p[distance=..64] run function asset:mob/0365.frestchika/tick/base_move/skill/select/
 
 # 技が一瞬してたら確定で動作を選択
     execute if score @s[tag=A5.CycleReset,tag=!A5.InAction] General.Mob.Tick matches 0.. run function asset:mob/0365.frestchika/tick/base_move/skill/select/cycle_reset
