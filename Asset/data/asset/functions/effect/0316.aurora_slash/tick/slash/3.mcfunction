@@ -7,7 +7,6 @@
 # 演出
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.9 0
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.4 0.8
-    execute anchored eyes positioned ^ ^-0.2 ^1.5 run function asset:effect/0316.aurora_slash/tick/vfx/slash3
 
 # 演出用Object召喚
     data modify storage api: Argument.ID set value 1128
