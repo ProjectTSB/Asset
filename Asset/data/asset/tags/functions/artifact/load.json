@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:artifact/0908.staff_of_homa/trigger/0.load",
+        "asset:artifact/0563.heartland/trigger/0.load",
         "asset:artifact/1174.sanguis/trigger/0.load",
         "asset:artifact/1088.purifying_hydrangea/trigger/0.load",
         "asset:artifact/1081.wandering_piece_of_dream/trigger/0.load",
@@ -14,7 +15,6 @@
         "asset:artifact/0837.the_world_knife/trigger/0.load",
         "asset:artifact/0600.xtal/trigger/0.load",
         "asset:artifact/0664.soul_fire_armor/trigger/0.load",
-        "asset:artifact/1048.thunder_storm/trigger/0.load",
         "asset:artifact/1057.great_demon_head/trigger/0.load",
         "asset:artifact/1069.sprout_of_dappled_sunlight/trigger/0.load",
         "asset:artifact/1079.allochromatic/trigger/0.load",
@@ -50,9 +50,7 @@
         "asset:artifact/0278.reveille/trigger/0.load",
         "asset:artifact/0078.self_destruct_order/trigger/0.load",
         "asset:artifact/0573.final_prism/trigger/0.load",
-        "asset:artifact/0210.terra_blade/trigger/0.load",
         "asset:artifact/0373.ice_sorcery/trigger/0.load",
-        "asset:artifact/0609.lunar_flare/trigger/0.load",
         "asset:artifact/0610.call_fish/trigger/0.load",
         "asset:artifact/0647.thorn_armor/trigger/0.load",
         "asset:artifact/0262.angel_ray_lv.1/trigger/0.load",

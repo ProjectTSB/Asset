@@ -69,4 +69,4 @@
     data modify storage asset:mob Field.UsingWeapon set value ""
     data modify storage asset:mob Field.AttackDistance set value 50
     data modify storage asset:mob Field.InitialMotionTime set value 200
-    data modify storage asset:mob Field.GroundPos set value 128
+    data modify storage asset:mob Field.Minefield_Pos set value []
