@@ -9,6 +9,12 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 演出
+    particle dust 0.9 0.6 0.1 1.3 ~ ~1 ~ 0.3 0.3 0.3 0 30 normal @a
+    playsound minecraft:block.bell.use player @a ~ ~ ~ 1 0.5 0
+    playsound minecraft:block.bell.resonate player @a ~ ~ ~ 0.8 1.4
+    playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 1.2 0
+
 # 固定ダメージ
     data modify storage api: Argument.Damage set value 10
     data modify storage api: Argument.AttackType set value "Magic"
@@ -17,8 +23,8 @@
     function api:damage/
     function api:damage/reset
 
-# バリアバフを得る
-    data modify storage api: Argument.ID set value 318
-    data modify storage api: Argument.FieldOverride.Barrier set value 20
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+# schedule用tag
+    tag @s add YR.Schedule
+
+# 1tick後にバリアを得る
+    schedule function asset:artifact/1251.scale_of_arbit/trigger/loop 1t replace
