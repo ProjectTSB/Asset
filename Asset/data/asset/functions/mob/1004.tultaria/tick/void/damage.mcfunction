@@ -22,3 +22,14 @@
     execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 # リセット
     function api:damage/reset
+
+# 慣性リセット
+    tp @s 0 0 0
+    tp @s ~ ~ ~ ~ ~
+
+# 上に飛ばされる
+    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.Stack set value 20
+    data modify storage api: Argument.Duration set value 8
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
