@@ -5,4 +5,4 @@
 # @within asset:object/alias/1125/init
 
 # 音
-    playsound tsb_sounds:censored player @a ~ ~ ~ 1 1
+    playsound tsb_sounds:censored player @a ~ ~ ~ 0.5 1
