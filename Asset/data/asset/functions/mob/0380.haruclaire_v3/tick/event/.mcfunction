@@ -48,4 +48,4 @@
     execute if entity @s[tag=AK.Skill.IcePillarDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_pillar_duo/
 
 ## アイスクリメーション
-# オーバーチュア
+# 初回
