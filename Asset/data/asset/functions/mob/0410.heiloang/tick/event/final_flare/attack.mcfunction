@@ -7,4 +7,4 @@
 # 弾召喚
     data modify storage api: Argument.ID set value 2187
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute positioned ^ ^23 ^-10 run function api:object/summon
+    execute positioned ^ ^21 ^-10 run function api:object/summon

@@ -26,6 +26,15 @@
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:crimson_forest
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:crimson_forest
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:crimson_forest
+    # モデル変更
+        execute if score @s BE.EventTimer matches 90 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/black/apply
+        execute if score @s BE.EventTimer matches 190 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/default/apply
+    # 演出
+        execute if score @s BE.EventTimer matches 60 run summon area_effect_cloud ^ ^-6 ^30 {Duration:110,Tags:["BE.Temp.AttackPosition"]}
+        execute if score @s BE.EventTimer matches 60..170 as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_before
+        execute if score @s BE.EventTimer matches 200 at @e[type=marker,tag=BE.CenterPosition] run particle campfire_cosy_smoke ~ ~ ~ 6 1 6 0.05 200
+        execute if score @s BE.EventTimer matches 200..206 at @e[type=marker,tag=BE.CenterPosition] run particle lava ~ ~ ~ 6 1 6 0 10
+        execute if score @s BE.EventTimer matches 200..206 at @e[type=marker,tag=BE.CenterPosition] run particle explosion ~ ~ ~ 6 1 6 0 10
 
 # モデルの移動
     execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0

@@ -9,7 +9,9 @@
         #declare function animated_java:heiloang_aj/remove/all
         #declare function animated_java:heiloang_aj/animations/pause_all
         #declare function animated_java:heiloang_aj/as_own_locator_entities
+        #declare function animated_java:heiloang_aj/variants/default/apply
         #declare function animated_java:heiloang_aj/variants/rage/apply
+        #declare function animated_java:heiloang_aj/variants/black/apply
         #declare function animated_java:heiloang_flare_aj/remove/all
     # - アニメーション再生
         #declare function animated_java:heiloang_aj/animations/1_idle/tween
