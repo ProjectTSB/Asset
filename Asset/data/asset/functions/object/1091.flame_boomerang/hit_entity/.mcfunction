@@ -21,4 +21,4 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=1091.TargetEntity,distance=..3] remove 1091.TargetEntity
+    tag @e[type=#lib:living,type=!player,tag=1091.TargetEntity,distance=..5] remove 1091.TargetEntity
