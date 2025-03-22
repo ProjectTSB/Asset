@@ -15,6 +15,11 @@
     playsound minecraft:block.bell.resonate player @a ~ ~ ~ 0.8 1.4
     playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 1.2 0
 
+# 先にバリアバフを解除
+    data modify storage api: Argument.ID set value 318
+    function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
+
 # 固定ダメージ
     data modify storage api: Argument.Damage set value 10
     data modify storage api: Argument.AttackType set value "Magic"
