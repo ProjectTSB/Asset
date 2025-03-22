@@ -6,4 +6,5 @@
     #declare function animated_java:heiloang_flare_aj/summon
     #declare function animated_java:heiloang_flare_aj/remove/all
     #declare tag BE.Object
+    #declare tag BE.CenterPosition
     #declare tag 2187.BackGround

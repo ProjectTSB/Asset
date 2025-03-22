@@ -39,6 +39,7 @@
         #declare function animated_java:heiloang_aj/animations/12_1_flymove_end/tween
         #declare function animated_java:heiloang_aj/animations/13_summon/tween
         #declare function animated_java:heiloang_aj/animations/14_awaken/tween
+        #declare function animated_java:heiloang_aj/animations/16_final_flare/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # - 自動生成タグ
@@ -145,6 +146,7 @@
     #declare tag BE.Skill.PowerBreath.C2 パワーブレス連発
     #declare tag BE.Skill.PowerBreath.End パワーブレス終了
     #declare tag BE.Skill.PowerCharge パワーチャージ
+    #declare tag BE.Skill.FinalFlare 究極幻想
     #
     # - 処理用
     #declare tag BE.MainTarget 主ターゲット

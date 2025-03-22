@@ -10,8 +10,12 @@
 # 全アニメーション停止
     function asset:mob/0410.heiloang/tick/debug/reset
 
+# 位置リセット
+    execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+    execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
     # tag @s add BE.Skill.Ter.Rag.Start
-    tag @s add BE.Skill.PowerBreath
+    tag @s add BE.Skill.FinalFlare
     scoreboard players set @s BE.Pb.Count 6

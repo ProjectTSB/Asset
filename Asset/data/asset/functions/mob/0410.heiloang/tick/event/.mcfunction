@@ -73,6 +73,9 @@
     execute if entity @s[tag=BE.Skill.Rage] run function asset:mob/0410.heiloang/tick/event/rage/
 
 ## P4
+# 究極幻想
+    execute if entity @s[tag=BE.Skill.FinalFlare] run function asset:mob/0410.heiloang/tick/event/final_flare/
+
 # ヘイルディザスター
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/heil_disaster/
     execute if entity @s[tag=BE.Skill.HeilDisaster] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/event/heil_disaster/hard
