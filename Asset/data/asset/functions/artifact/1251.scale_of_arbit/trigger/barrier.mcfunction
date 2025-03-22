@@ -9,3 +9,6 @@
     data modify storage api: Argument.FieldOverride.Barrier set value 20
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# リセット
+    tag @s remove YR.Schedule
