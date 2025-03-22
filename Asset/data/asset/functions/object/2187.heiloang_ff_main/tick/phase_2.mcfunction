@@ -6,7 +6,8 @@
 
 # Scale
     execute if entity @s[scores={General.Object.Tick=31}] run data merge entity @s {interpolation_duration:0,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[15f,15f,1f]}}
-    execute if entity @s[scores={General.Object.Tick=80}] run data merge entity @s {interpolation_duration:5,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
+    execute if entity @s[scores={General.Object.Tick=79}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[10f,10f,0f]}}
+    execute if entity @s[scores={General.Object.Tick=82}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
 
 # アニメーション
     scoreboard players operation $Interval Temporary = @s General.Object.Tick

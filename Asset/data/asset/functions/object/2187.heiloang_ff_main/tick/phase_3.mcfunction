@@ -8,7 +8,8 @@
     execute if entity @s[scores={General.Object.Tick=110..}] at @s run tp @s ^ ^-0.3 ^0.7
 
 # Scale
-    execute if entity @s[scores={General.Object.Tick=85}] run data merge entity @s {interpolation_duration:5,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[14f,14f,1f]}}
+    execute if entity @s[scores={General.Object.Tick=85}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[6f,6f,1f]}}
+    execute if entity @s[scores={General.Object.Tick=88}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[14f,14f,1f]}}
     execute if entity @s[scores={General.Object.Tick=110}] run data merge entity @s {interpolation_duration:100,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[50f,50f,100f]}}
     # 画面エフェクト
         execute if entity @s[scores={General.Object.Tick=115}] run title @a[distance=..160] times 10 20 40
