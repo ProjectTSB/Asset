@@ -1,8 +1,8 @@
-#> asset:artifact/0908.staff_of_homa/trigger/3.main
+#> asset:artifact/0908.spear_of_butterfly/trigger/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/0908.staff_of_homa/trigger/2.check_condition
+# @within function asset:artifact/0908.spear_of_butterfly/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
@@ -32,10 +32,10 @@
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 0.4 1.2
 
 # ダメージ関連
-    function asset:artifact/0908.staff_of_homa/trigger/damage
+    function asset:artifact/0908.spear_of_butterfly/trigger/damage
 
 # 演出等用Object召喚
-    function asset:artifact/0908.staff_of_homa/trigger/summon_object
+    function asset:artifact/0908.spear_of_butterfly/trigger/summon_object
 
 # 6段目なら攻撃回数をリセット
     execute if score @s P8.AttackCount matches 6.. run scoreboard players reset @s P8.AttackCount

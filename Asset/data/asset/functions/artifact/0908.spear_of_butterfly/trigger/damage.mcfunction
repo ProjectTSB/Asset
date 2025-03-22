@@ -1,8 +1,8 @@
-#> asset:artifact/0908.staff_of_homa/trigger/damage
+#> asset:artifact/0908.spear_of_butterfly/trigger/damage
 #
 #
 #
-# @within function asset:artifact/0908.staff_of_homa/trigger/3.main
+# @within function asset:artifact/0908.spear_of_butterfly/trigger/3.main
 
 # 最大体力を取得
     function api:modifier/max_health/get

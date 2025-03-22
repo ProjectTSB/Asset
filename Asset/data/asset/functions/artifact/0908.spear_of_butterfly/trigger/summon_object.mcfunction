@@ -1,8 +1,8 @@
-#> asset:artifact/0908.staff_of_homa/trigger/summon_object
+#> asset:artifact/0908.spear_of_butterfly/trigger/summon_object
 #
 #
 #
-# @within function asset:artifact/0908.staff_of_homa/trigger/3.main
+# @within function asset:artifact/0908.spear_of_butterfly/trigger/3.main
 
 # debug
     # scoreboard players set @s P8.AttackCount 5
