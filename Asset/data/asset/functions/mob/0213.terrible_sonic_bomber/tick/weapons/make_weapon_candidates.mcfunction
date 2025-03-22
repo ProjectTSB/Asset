@@ -28,6 +28,13 @@
     execute if entity @s[tag=5X.CannotUseDrone] run data remove storage asset:temp action.Candidates[{Cand:"drone"}]
     execute unless entity @e[type=phantom,scores={MobID=214},distance=..128] run tag @s remove 5X.CannotUseDrone
 
+# 1回前に使用した武器を候補から削除
+    execute if data storage asset:context Action{LastUse:"storm_shadow"} run data remove storage asset:temp action.Candidates[{Cand:"storm_shadow"}]
+    execute if data storage asset:context Action{LastUse:"brimstone"} run data remove storage asset:temp action.Candidates[{Cand:"brimstone"}]
+    execute if data storage asset:context Action{LastUse:"snake_eye"} run data remove storage asset:temp action.Candidates[{Cand:"snake_eye"}]
+    execute if data storage asset:context Action{LastUse:"gatling"} run data remove storage asset:temp action.Candidates[{Cand:"gatling"}]
+
+
 # 空中散布地雷の強制発動をするか確認
     execute if score $health_per Temporary matches ..75 unless entity @s[tag=5X.Mine75Per] run data modify storage asset:temp action.Candidates set value [{Cand:"landmine"}]
     execute if score $health_per Temporary matches ..75 unless entity @s[tag=5X.Mine75Per] run tag @s add 5X.Mine75Per

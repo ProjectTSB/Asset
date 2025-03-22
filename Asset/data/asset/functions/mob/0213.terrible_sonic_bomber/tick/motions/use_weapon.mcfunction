@@ -24,5 +24,8 @@
     execute if data storage asset:context Action{Selected:"gatling"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling
     execute if data storage asset:context Action{Selected:"landmine"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/landmine
 
+# 最終使用武器更新
+    data modify storage asset:context Action.LastUse set from storage asset:context Action.Selected
+
 # reset
     #scoreboard players reset $use_weapon Temporary
