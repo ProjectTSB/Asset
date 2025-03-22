@@ -16,7 +16,6 @@
 
 # 乱数によるスキル選択
     function asset:mob/0213.terrible_sonic_bomber/tick/weapons/select_weapon
-    tellraw @p [{"nbt":"action.Selected","storage":"asset:temp"}]
 
     #data modify storage lib: Args.key set value "5XWeapon"
     #execute if score $health_per Temporary matches 50.. run data modify storage lib: Args.max set value 3

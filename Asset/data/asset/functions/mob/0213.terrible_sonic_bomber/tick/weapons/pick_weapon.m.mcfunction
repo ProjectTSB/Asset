@@ -20,8 +20,9 @@
     data modify storage lib: Array set from storage asset:temp action.Candidates
     function lib:array/picks
     data modify storage asset:context Action.Selected set from storage lib: Elements[0].Cand
-        tellraw @p [{"nbt":"action.Candidates","storage":"asset:temp"}]
-        tellraw @p [{"nbt":"Action.Selected","storage":"asset:context"}]
+        #tellraw @p [{"nbt":"action.Candidates","storage":"asset:temp"}]
+        #tellraw @p [{"nbt":"Action.Selected","storage":"asset:context"}]
+        #tellraw @p [{"nbt":"Action.LastUse","storage":"asset:context"}]
 
 # リセット
     function lib:array/session/close
