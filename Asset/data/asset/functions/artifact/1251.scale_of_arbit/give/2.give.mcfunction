@@ -15,8 +15,8 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"調律の天秤","color":"#DBAC00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を10消耗し、バリアを20を得る","color":"white"}']
-# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
+    data modify storage asset:artifact Lore set value ['{"text":"体力を10消耗し、バリアを20を得る","color":"white"}','{"text":"全ての物の価値を等しく秤る天秤","color":"gray"}','{"text":"その秤量は公正無比で、何者にも欺くことはできない","color":"gray"}']
+# 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション),'{"text":"全ての物の価値を等しく測る天秤","color":"gray"}'
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
