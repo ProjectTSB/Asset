@@ -1,4 +1,4 @@
-#> asset:artifact/0615.censored/trigger/3.6.attack
+#> asset:artifact/0615.censored/trigger/attack
 #
 # 通常攻撃
 #
