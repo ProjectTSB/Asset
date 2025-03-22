@@ -15,6 +15,7 @@
 # 体力が11以上かチェック
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health
+    execute unless score $Health Temporary matches 11.. run function lib:message/artifact/condition_not_met
     execute unless score $Health Temporary matches 11.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
