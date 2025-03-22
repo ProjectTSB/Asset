@@ -13,6 +13,7 @@
 # 位置リセット
     execute at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
     execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+    time set 6000
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0

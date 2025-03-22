@@ -17,8 +17,10 @@
         execute if score @s BE.EventTimer matches 59 run title @a[distance=..160] title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
     # 攻撃
         execute if score @s BE.EventTimer matches 60 run function asset:mob/0410.heiloang/tick/event/final_flare/attack
+        execute if score @s BE.EventTimer matches 185 as @a[tag=!PlayerShouldInvulnerable,distance=..160] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/damage
     # バイオーム変更
         # 遠くにいる人に時間変更を通知
+            execute if score @s BE.EventTimer matches 130 run playsound entity.ender_dragon.growl hostile @a[distance=160..] ~ ~ ~ 0.3 0.7 0.3
         execute if score @s BE.EventTimer matches 190 run time set 15000
         execute if score @s BE.EventTimer matches 190 run effect give @a[distance=..160] night_vision 80 0 true
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:crimson_forest
@@ -29,4 +31,4 @@
     execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 
 # 終了
-    execute if score @s BE.EventTimer matches 200.. run function asset:mob/0410.heiloang/tick/event/final_flare/end
+    execute if score @s BE.EventTimer matches 206.. run function asset:mob/0410.heiloang/tick/event/final_flare/end

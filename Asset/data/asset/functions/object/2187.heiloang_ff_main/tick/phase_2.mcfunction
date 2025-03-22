@@ -5,7 +5,7 @@
 # @within asset:object/2187.heiloang_ff_main/tick/
 
 # Scale
-    execute if entity @s[scores={General.Object.Tick=21}] run data merge entity @s {interpolation_duration:0,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[15f,15f,1f]}}
+    execute if entity @s[scores={General.Object.Tick=31}] run data merge entity @s {interpolation_duration:0,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[15f,15f,1f]}}
     execute if entity @s[scores={General.Object.Tick=80}] run data merge entity @s {interpolation_duration:5,start_interpolation:0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
 
 # アニメーション

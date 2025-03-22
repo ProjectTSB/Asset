@@ -8,10 +8,10 @@
     scoreboard players add @s General.Object.Tick 1
 
 # フェーズ1
-    execute if entity @s[scores={General.Object.Tick=..20}] run function asset:object/2187.heiloang_ff_main/tick/phase_1
+    execute if entity @s[scores={General.Object.Tick=..30}] run function asset:object/2187.heiloang_ff_main/tick/phase_1
 
 # フェーズ2
-    execute if entity @s[scores={General.Object.Tick=21..84}] run function asset:object/2187.heiloang_ff_main/tick/phase_2
+    execute if entity @s[scores={General.Object.Tick=31..84}] run function asset:object/2187.heiloang_ff_main/tick/phase_2
 
 # フェーズ3
     execute if entity @s[scores={General.Object.Tick=85..}] run function asset:object/2187.heiloang_ff_main/tick/phase_3
