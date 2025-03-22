@@ -14,11 +14,11 @@
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -55
 
 # プレイヤー人数で加速する。4人まで考慮する
-    execute store result score $Count Temporary if entity @a[distance=..60]
+    execute store result score $Count Temporary if entity @a
     #scoreboard players set $Count Temporary 4
-    execute if score $Count Temporary matches 2 run scoreboard players remove @s General.Mob.Tick 5
-    execute if score $Count Temporary matches 3 run scoreboard players remove @s General.Mob.Tick 7
-    execute if score $Count Temporary matches 4.. run scoreboard players remove @s General.Mob.Tick 15
+    execute if score $Count Temporary matches 2 run scoreboard players add @s General.Mob.Tick 5
+    execute if score $Count Temporary matches 3 run scoreboard players add @s General.Mob.Tick 7
+    execute if score $Count Temporary matches 4.. run scoreboard players add @s General.Mob.Tick 15
     scoreboard players reset $Count Temporary
 
 # アニメーション戻す
