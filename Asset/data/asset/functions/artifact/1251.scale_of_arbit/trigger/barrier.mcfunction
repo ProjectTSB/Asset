@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1251.scale_of_arbit/trigger/loop
+# @within function asset:artifact/1251.scale_of_arbit/trigger/schedule
 
 # バリアバフを得る
     data modify storage api: Argument.ID set value 318

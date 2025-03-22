@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # ループ再開
-    execute if entity @p[tag=YR.Schedule] run schedule function asset:artifact/1251.scale_of_arbit/trigger/loop 1t replace
+    execute if entity @p[tag=YR.Schedule] run schedule function asset:artifact/1251.scale_of_arbit/trigger/schedule 1t replace

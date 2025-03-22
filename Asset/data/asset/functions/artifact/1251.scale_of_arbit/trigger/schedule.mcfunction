@@ -1,4 +1,4 @@
-#> asset:artifact/1251.scale_of_arbit/trigger/loop
+#> asset:artifact/1251.scale_of_arbit/trigger/schedule
 #
 #
 #

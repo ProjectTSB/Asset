@@ -32,4 +32,4 @@
     tag @s add YR.Schedule
 
 # 1tick後にバリアを得る
-    schedule function asset:artifact/1251.scale_of_arbit/trigger/loop 1t replace
+    schedule function asset:artifact/1251.scale_of_arbit/trigger/schedule 1t replace
