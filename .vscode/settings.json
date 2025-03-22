@@ -1677,6 +1677,14 @@
                         "    function api:mob/summon"
                     ]
                 }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "MobのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
             ]
         },
         {
@@ -1758,6 +1766,52 @@
                         "key": "values",
                         "elem": "asset:mob/%namespace%/load"
                     }
+                }
+            ]
+        },
+        {
+            "label": "Mob/テンプレート: 暗所湧き登録処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/mob/%namespace%/enroll_pool.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/enroll_pool",
+                        "#",
+                        "# 暗所に湧くMobの登録処理",
+                        "#",
+                        "# @within tag/function asset:mob/enroll_pool",
+                        "",
+                        "data modify storage asset:mob SpawnPool[%level%] append value %id%"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/mob/enroll_pool.json",
+                    "content": {
+                        "values": [
+                            "asset:mob/%namespace%/enroll_pool"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:mob/%namespace%/enroll_pool"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "MobのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                },
+                {
+                    "name": "level",
+                    "question": "Mobの強さ",
+                    "pattern": "[1-4]",
+                    "patternErrorMessage": "1 ~ 4の整数のみが許されるよ"
                 }
             ]
         },
@@ -2107,7 +2161,7 @@
                         "# 名前 (TextComponentString)",
                         "    data modify storage asset:effect Name set value ",
                         "# 説明文 (TextComponentString[])",
-                        "    data modify storage asset:effect Description set value ",
+                        "    data modify storage asset:effect Description set value []",
                         "# 効果時間 (int) (default = API || error)",
                         "    data modify storage asset:effect Duration set value ",
                         "# スタック (int) (default = API || 1)",

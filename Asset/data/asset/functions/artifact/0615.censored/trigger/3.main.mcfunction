@@ -15,9 +15,7 @@
 
 # 確率で処刑する
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $5 Const
+        execute store result score $Random Temporary run random value 0..4
     # 処刑
         execute if score $Random Temporary matches 0 at @e[type=#lib:living,type=!player,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable] run function asset:artifact/0615.censored/trigger/3.4.execution
     # ボス級の処刑

@@ -5,6 +5,6 @@
 # @within asset:object/alias/2042/recursive
 
 # パーティクル
-    execute if predicate lib:random_pass_per/25 run particle minecraft:flame ^ ^ ^-0.5 0 0 0 0.01 1
-    particle minecraft:smoke ^ ^ ^-0.5 0 0 0 0.01 1
-#    particle minecraft:dust 1 0.4 0.1 1 ^ ^ ^-0.5 0 0 0 0 1
+    execute if predicate lib:random_pass_per/50 run particle minecraft:flame ^ ^ ^-0.5 0.25 0.25 0.25 0.01 3
+    particle minecraft:smoke ^ ^ ^-0.5 0.25 0.25 0.25 0.01 3
+    particle minecraft:dust 1 0.3 0.0 1.5 ^ ^ ^-0.5 0.25 0.25 0.25 0 2
