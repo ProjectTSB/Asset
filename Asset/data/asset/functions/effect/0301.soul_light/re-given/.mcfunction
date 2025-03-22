@@ -15,7 +15,7 @@
         execute store result score $8D.Temp2 Temporary run data get storage asset:context Stack
     # より大きい方を残す
         execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context Stack set from storage asset:context PreviousField.Stack
-        execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context Duration set from storage asset:context PreviousField.Duration
+        # execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context Duration set from storage asset:context PreviousField.Duration
         execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context this.UserID set from storage asset:context PreviousField.UserID
         execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context this.Heal set from storage asset:context PreviousField.Heal
         # execute if score $8D.Temp1 Temporary >= $8D.Temp2 Temporary run data modify storage asset:context this.Tick set value 20
@@ -25,7 +25,7 @@
 
 # Stack と Duration を保存する
     data modify storage asset:context this.Stack set from storage asset:context Stack
-    data modify storage asset:context this.Duration set from storage asset:context Duration
+    # data modify storage asset:context this.Duration set from storage asset:context Duration
 
 # リセット
     scoreboard players reset $8D.Temp1 Temporary

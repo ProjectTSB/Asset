@@ -1,11 +1,11 @@
 #> asset:artifact/0797.heartbleed/trigger/damage
 #
-# 
+#
 #
 # @within function asset:artifact/0797.heartbleed/trigger/bleed
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 300.0f
+    data modify storage api: Argument.Damage set value 220.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"レールシューター","color":"#FFFFFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"超高出力で矢をぶっ飛ばす装置"}','{"text":"溜めないと威力が激減する"}','{"text":"矢が発射の衝撃に耐えきれず、射程は短い","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"超高出力で矢をぶっ飛ばす装置"}','{"text":"溜めないと威力が激減する"}','{"text":"高出力すぎて矢が耐えきれず一定距離で消滅する","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -28,7 +28,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [100,280]
+    data modify storage asset:artifact AttackInfo.Damage set value [50,370]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -38,7 +38,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 7
+    data modify storage asset:artifact AttackInfo.AttackRange set value 15
 # MP消費量 (int)
     # data modify storage asset:artifact MPCost set value
 #MP回復量
@@ -48,8 +48,8 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 20
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 20
+    data modify storage asset:artifact TypeCooldown.Type set value "longRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 22
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -59,7 +59,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Urban", "Rumor", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:6,Unbreakable:1b}
 

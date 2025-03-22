@@ -16,7 +16,7 @@
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 # modifier をかける
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier

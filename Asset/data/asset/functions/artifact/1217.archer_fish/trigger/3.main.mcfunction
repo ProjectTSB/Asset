@@ -19,17 +19,17 @@
 # Objectのデータ設定
     # 非フルチャ時
         execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 1
-        execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 40
+        execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 50
 
     # フルチャ時
         execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 2
-        execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 80
+        execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 90
 
 # ターゲットのIDがあれば入れておく
     execute if score $XT.TargetMobUUID Temporary matches -2147483648..2147483647 store result storage api: Argument.FieldOverride.TargetMobUUID int 1 run scoreboard players get $XT.TargetMobUUID Temporary
 
 # サケクリティカル
-    execute if predicate lib:random_pass_per/2 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
+    execute if predicate lib:random_pass_per/4 run data modify storage api: Argument.FieldOverride.SalmonCrit set value true
     execute if data storage api: Argument.FieldOverride{SalmonCrit:true} run data modify storage api: Argument.FieldOverride.CMD set value 20514
 
 # Object召喚
