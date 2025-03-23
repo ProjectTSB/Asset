@@ -7,7 +7,8 @@
 # 演出
     particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
     particle flash ~ ~1 ~ 0.5 0.5 0.5 0 5 force
-    particle soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
+    execute unless entity @s[tag=2177.IsVfx] run particle soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
+    execute if entity @s[tag=2177.IsVfx] run particle flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
     # particle lava ~ ~1 ~ 0.5 0.5 0.5 0.5 30 force
 
 # 演出
@@ -92,7 +93,7 @@
         execute rotated ~350 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
 
 # 演出のみの場合、終了
-    execute if entity @s[tag=2177.IsSlow] run return 0
+    execute if entity @s[tag=2177.IsVfx] run return 0
 
 # 効果音
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.7

@@ -39,6 +39,7 @@
             execute if score @s BE.EventTimer matches 200..206 at @e[type=marker,tag=BE.CenterPosition] run particle lava ~ ~ ~ 6 1 6 0 10
             execute if score @s BE.EventTimer matches 206..216 at @e[type=marker,tag=BE.CenterPosition] run particle block stone ~ ~6 ~ 8 0 8 0 30
             execute if score @s BE.EventTimer matches 206..216 at @e[type=marker,tag=BE.CenterPosition] run particle falling_dust stone ~ ~6 ~ 8 3 8 0 30
+            execute if score @s BE.EventTimer matches 200..313 at @e[type=marker,tag=BE.CenterPosition] run particle lava ~ ~ ~ 8 0 8 0 1
         # 効果音
             execute if score @s BE.EventTimer matches 15 positioned ^ ^ ^30 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 0.7
             execute if score @s BE.EventTimer matches 40 positioned ^ ^ ^50 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 0.7
@@ -56,6 +57,8 @@
         # フレア
             execute if score @s BE.EventTimer matches 146 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare_start
             execute if score @s BE.EventTimer matches 146..170 as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare
+        # 床
+            execute if score @s BE.EventTimer matches 200 at @e[type=marker,tag=BE.CenterPosition] positioned ~-0.3 ~ ~0.2 run return run function asset:mob/0410.heiloang/tick/event/final_flare/particle_floor
 
 # モデルの移動
     execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
@@ -68,4 +71,4 @@
         execute if score @s BE.EventTimer matches 270 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
 
 # 終了
-    execute if score @s BE.EventTimer matches 311.. run function asset:mob/0410.heiloang/tick/event/final_flare/end
+    execute if score @s BE.EventTimer matches 313.. run function asset:mob/0410.heiloang/tick/event/final_flare/end

@@ -7,6 +7,9 @@
 # メモ
     # execute as @e[tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/interrupt
 
+# テスト
+    # execute at @e[type=marker,tag=BE.CenterPosition] positioned ~-0.3 ~ ~0.2 run return run function asset:mob/0410.heiloang/tick/event/final_flare/particle_floor
+
 # 全アニメーション停止
     function asset:mob/0410.heiloang/tick/debug/reset
 
