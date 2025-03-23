@@ -18,7 +18,7 @@
 # 毒を付与する
     function api:global_vars/get_difficulty
     data modify storage api: Argument set value {ID:79,Duration:120}
-    execute store result storage api: Argument.Stack int 3 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     execute as @a[gamemode=!spectator,tag=LandingTarget,distance=..50,limit=1] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

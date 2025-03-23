@@ -1,11 +1,11 @@
 {
     "values": [
         "asset:artifact/1206.triple_sparkle_bomb/trigger/rejoin_process",
+        "asset:artifact/1251.scale_of_arbit/trigger/rejoin_process",
         "asset:mob/0327.eclael/rejoin_process/",
         "asset:mob/0340.twins_rubiel/rejoin_process/",
         "asset:mob/0410.heiloang/rejoin_process/",
         "asset:artifact/1017.cutlass_of_endless_silence/trigger/rejoin_process",
-        "asset:artifact/1065.magic_bullet/trigger/rejoin_process",
         "asset:artifact/1141.bell_of_courage/trigger/rejoin_process",
         "asset:artifact/1110.lantern_of_firefly/trigger/rejoin_process",
         "asset:artifact/0002.blessing/trigger/rejoin_process",
@@ -13,7 +13,6 @@
         "asset:artifact/0600.xtal/trigger/rejoin_process",
         "asset:artifact/0664.soul_fire_armor/trigger/rejoin_process",
         "asset:artifact/0643.raimei_chestplate/trigger/rejoin_process",
-        "asset:artifact/1048.thunder_storm/trigger/rejoin_process",
         "asset:artifact/1079.allochromatic/trigger/rejoin_process",
         "asset:artifact/1078.pigeon_blood/trigger/rejoin_process",
         "asset:artifact/0987.ghost_step/trigger/rejoin_process",
@@ -32,8 +31,6 @@
         "asset:artifact/0431.weather_lock_cane/trigger/rejoin_process",
         "asset:mob/0262.frestchika/rejoin_process",
         "asset:artifact/0905.book_of_metastasis/trigger/rejoin_process",
-        "asset:artifact/0609.lunar_flare/trigger/rejoin_process",
-        "asset:artifact/0210.terra_blade/trigger/rejoin_process",
         "asset:artifact/0078.self_destruct_order/trigger/rejoin_process",
         "asset:artifact/0373.ice_sorcery/trigger/rejoin_process",
         "asset:artifact/0610.call_fish/trigger/rejoin_process"
