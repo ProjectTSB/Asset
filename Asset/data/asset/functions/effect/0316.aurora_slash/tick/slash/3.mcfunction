@@ -5,7 +5,7 @@
 # @within function asset:effect/0316.aurora_slash/tick/
 
 # 演出
-    playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.9 0
+    playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.8 1.9 0
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.4 0.8
 
 # 演出用Object召喚
