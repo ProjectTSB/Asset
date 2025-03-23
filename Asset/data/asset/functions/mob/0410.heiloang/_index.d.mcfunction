@@ -42,6 +42,7 @@
         #declare function animated_java:heiloang_aj/animations/13_summon/tween
         #declare function animated_java:heiloang_aj/animations/14_awaken/tween
         #declare function animated_java:heiloang_aj/animations/16_final_flare/tween
+        #declare function animated_java:heiloang_aj/animations/16_final_start/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
         #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # - 自動生成タグ
