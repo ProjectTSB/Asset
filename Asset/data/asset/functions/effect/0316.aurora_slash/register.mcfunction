@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 316
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"連撃・},{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00ecf4"},{"text":"ロ","color":"#00d9f6"},{"text":"ラ","color":"#00c6f8"},{"text":"サ","color":"#00b2fb"},{"text":"イ","color":"#009ffd"},{"text":"ス","color":"#008bff"}]'
+    data modify storage asset:effect Name set value '[{"text":"連撃・"},{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00ecf4"},{"text":"ロ","color":"#00d9f6"},{"text":"ラ","color":"#00c6f8"},{"text":"サ","color":"#00b2fb"},{"text":"イ","color":"#009ffd"},{"text":"ス","color":"#008bff"}]'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value []
 # 効果時間 (int) (default = API || error)
