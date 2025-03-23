@@ -45,13 +45,27 @@
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.7
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.6
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.5
-            execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.7
+            # execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.7
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.ambient hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.2
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.4
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.4
+            execute if score @s BE.EventTimer matches 169..175 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 0.5 0.2
+            execute if score @s BE.EventTimer matches 169..175 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 0.6 0.2
+            execute if score @s BE.EventTimer matches 169..175 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 0.7 0.2
+            execute if score @s BE.EventTimer matches 176..200 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 1.3 0.2
+        # フレア
+            execute if score @s BE.EventTimer matches 146 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare_start
+            execute if score @s BE.EventTimer matches 146..170 as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare
 
 # モデルの移動
     execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
 
+# 移動
+    # アニメーション再生
+        execute if score @s BE.EventTimer matches 246 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_0_flymove_start
+        execute if score @s BE.EventTimer matches 275 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_1_flymove_end
+    # 中心点の正面方向に移動
+        execute if score @s BE.EventTimer matches 270 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+
 # 終了
-    execute if score @s BE.EventTimer matches 226.. run function asset:mob/0410.heiloang/tick/event/final_flare/end
+    execute if score @s BE.EventTimer matches 311.. run function asset:mob/0410.heiloang/tick/event/final_flare/end

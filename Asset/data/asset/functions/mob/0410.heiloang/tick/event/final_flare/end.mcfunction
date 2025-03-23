@@ -13,3 +13,7 @@
 
 # 行動
     function asset:mob/0410.heiloang/tick/act/
+
+# # 覚醒開始
+#     scoreboard players set @s BE.EventTimer 0
+#     tag @s add BE.Skill.Rage

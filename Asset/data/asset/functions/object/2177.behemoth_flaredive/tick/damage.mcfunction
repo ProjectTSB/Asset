@@ -4,17 +4,7 @@
 #
 # @within asset:object/2177.behemoth_flaredive/tick/
 
-# ダメージ
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Fire"
-    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
-    function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
-    function api:damage/reset
-
 # 演出
-    playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.7
     particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
     particle flash ~ ~1 ~ 0.5 0.5 0.5 0 5 force
     particle soul_fire_flame ~ ~1 ~ 0.1 0.1 0.1 0.5 30 force
@@ -100,3 +90,18 @@
         execute rotated ~330 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~340 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
         execute rotated ~350 0 positioned ^ ^ ^ run particle soul_fire_flame ~ ~ ~ ^ ^ ^100000000 0.000000015 0
+
+# 演出のみの場合、終了
+    execute if entity @s[tag=2177.IsSlow] run return 0
+
+# 効果音
+    playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.7
+
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
+    function api:damage/reset

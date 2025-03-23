@@ -4,6 +4,10 @@
 #
 # @within asset:object/alias/2177/init
 
+# 演出用
+    execute if data storage asset:context {this:{IsVfx:true}} run tag @s add 2177.IsSlow
+    execute if entity @s[tag=2177.IsSlow] run return run scoreboard players set @s General.Object.Tick 58
+
 # 時間設定
     execute if data storage asset:context {this:{IsSlow:true}} run tag @s add 2177.IsSlow
 

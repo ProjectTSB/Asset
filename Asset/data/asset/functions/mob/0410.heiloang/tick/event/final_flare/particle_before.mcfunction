@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/final_flare/particle_before
 #
-# 竜巻
+# 究極幻想
 #
 # @within asset:mob/0410.heiloang/tick/event/final_flare/
 
