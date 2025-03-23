@@ -15,7 +15,7 @@
     execute at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:the_void
     execute at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:the_void
     execute at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:the_void
-    effect clear @a[distance=..160] night_vision
+    # effect clear @a[distance=..160] night_vision
 
 # 中心点消去
     kill @e[type=marker,tag=BE.CenterPosition]

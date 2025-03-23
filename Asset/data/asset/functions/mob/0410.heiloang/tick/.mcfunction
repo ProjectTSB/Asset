@@ -6,6 +6,7 @@
 
 # 演出
     execute if entity @s[tag=BE.State.Raging] run particle crimson_spore ~ ~3 ~ 3 3 3 1 3
+    execute if entity @s[tag=BE.State.Raging] run effect give @a[distance=..80] night_vision 15 0 true
 
 # スキル用イベントハンドラ
     function asset:mob/0410.heiloang/tick/event/
