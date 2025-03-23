@@ -46,7 +46,7 @@
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.7
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.6
             execute if score @s BE.EventTimer matches 55 positioned ^ ^ ^50 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 2 0.5
-            # execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.7
+            execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.7
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.ambient hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.2
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.4
             execute if score @s BE.EventTimer matches 169 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.4
