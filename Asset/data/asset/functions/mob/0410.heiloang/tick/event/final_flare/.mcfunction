@@ -27,7 +27,7 @@
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:crimson_forest
         execute if score @s BE.EventTimer matches 190 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:crimson_forest
     # モデル変更
-        execute if score @s BE.EventTimer matches 90 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/black/apply
+        execute if score @s BE.EventTimer matches 87 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/black/apply
         execute if score @s BE.EventTimer matches 190 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/default/apply
     # 演出
         # パーティクル

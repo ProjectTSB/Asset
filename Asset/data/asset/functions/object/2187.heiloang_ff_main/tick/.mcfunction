@@ -17,5 +17,4 @@
     execute if entity @s[scores={General.Object.Tick=85..}] run function asset:object/2187.heiloang_ff_main/tick/phase_3
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=135..}] run function animated_java:heiloang_flare_aj/remove/all
-    kill @s[scores={General.Object.Tick=135..}]
+    execute if entity @s[scores={General.Object.Tick=135..}] run function asset:object/2187.heiloang_ff_main/tick/kill
