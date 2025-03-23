@@ -15,11 +15,11 @@
     execute store result score $8C.Temp1 Temporary run data get storage asset:context this.Barrier 100
     scoreboard players operation $8C.Temp1 Temporary -= $8C.Temp2 Temporary
 
-# バリアを削除
+# $BC.Temp1 <= 0: 削除
     data modify storage api: Argument.UUID set value [I;1,3,300,0]
     function api:entity/player/absorption/remove
-
-# 残っていればバリアを付与
+    execute if score $8C.Temp1 Temporary matches ..0 run data modify storage asset:context Duration set value -1
+# $BC.Temp1 > 0: 再付与
     execute if score $8C.Temp1 Temporary matches 1.. run function asset:effect/0300.aigis_vitae/re-given/add
 
 # リセット

@@ -9,6 +9,7 @@
     execute store result storage api: Argument.FieldOverride.Barrier double 0.01 run scoreboard players operation $38.Temp2 Temporary *= $38.Temp1 Temporary
 # エフェクトを付与
     data modify storage api: Argument.ID set value 300
+    execute store result storage api: Argument.FieldOverride.OwnerID int 1 run scoreboard players get @a[tag=38.Owner,limit=1] UserID
     execute as @a[distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 # リセット

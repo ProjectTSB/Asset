@@ -37,3 +37,4 @@
 
 # フィールド
     data modify storage asset:effect Field.Barrier set value 0.01
+    # data modify storage asset:effect Field.OwnerID set value -1
