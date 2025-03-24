@@ -16,6 +16,10 @@
 # リカバリーアニメ
     execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/recovery/tween {duration:1, to_frame:0}
 
+
+# バフ付与
+    execute if score @s General.Mob.Tick matches 45 run function asset:mob/0365.frestchika/tick/base_move/active_overdrive
+
 # ニュートラルアニメ
     execute if score @s General.Mob.Tick matches 65 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {duration:1, to_frame:0}
 

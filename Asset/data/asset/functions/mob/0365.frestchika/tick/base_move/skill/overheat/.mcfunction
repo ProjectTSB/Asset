@@ -26,6 +26,7 @@
     execute if score @s General.Mob.Tick matches 105 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5
     execute if score @s General.Mob.Tick matches 110 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 1
     execute if score @s General.Mob.Tick matches 120 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 2 1.5
+    execute if score @s General.Mob.Tick matches 120 run function asset:mob/0365.frestchika/tick/base_move/active_overdrive
 
 # 復帰
     execute if score @s General.Mob.Tick matches 140 run function asset:mob/0365.frestchika/tick/base_move/skill/reset
