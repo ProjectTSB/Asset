@@ -15,7 +15,7 @@
     execute store result score $HealthPercent Temporary run data get storage api: Return.HealthPer 100
 
 # HP50%以下時
-    execute if entity @s[scores] if score $HealthPercent Temporary matches ..50 run function asset:mob/0365.frestchika/hurt/active_50per
+    execute if score $HealthPercent Temporary matches ..50 run function asset:mob/0365.frestchika/hurt/active_50per
 
 # リセット
     scoreboard players reset $HealthPercent Temporary
