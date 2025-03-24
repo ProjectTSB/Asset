@@ -1,4 +1,4 @@
-#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_hg_riderkick/6.2.particle_circle_single
+#> asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/6.2.particle_circle_single
 #
 # アニメーションのイベントハンドラ Hgライダーキック 演出
 #

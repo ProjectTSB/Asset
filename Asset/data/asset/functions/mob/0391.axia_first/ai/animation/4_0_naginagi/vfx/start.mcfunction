@@ -8,20 +8,20 @@
     # マーカーを呼ぶ
         tp 0-0-0-0-0 ^ ^ ^ ~ ~
     # 演出のためにランダムな方向を向かせる
-        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
-        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run function lib:random/
+        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
+        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value 0..35999
     # 球体演出
         execute at 0-0-0-0-0 positioned ~ ~1 ~ run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/vfx/
     # マーカーを呼ぶ
         tp 0-0-0-0-0 ^ ^ ^ ~ ~
     # 演出のためにランダムな方向を向かせる
-        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
-        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run function lib:random/
+        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
+        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value 0..35999
     # 球体演出
         execute at 0-0-0-0-0 positioned ~ ~1 ~ run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/vfx/
     # 演出のためにランダムな方向を向かせる
-        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
-        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run function lib:random/
+        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
+        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value 0..35999
     # 球体演出
         execute at 0-0-0-0-0 positioned ~ ~1 ~ run function asset:mob/0391.axia_first/ai/animation/4_0_naginagi/vfx/
     # マーカーを戻してあげる

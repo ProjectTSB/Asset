@@ -8,8 +8,8 @@
     # マーカーを呼ぶ
         tp 0-0-0-0-0 ^ ^ ^ ~ ~
     # 演出のためにランダムな方向を向かせる
-        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
-        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run function lib:random/
+        execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
+        execute store result entity 0-0-0-0-0 Rotation[1] float 0.01 run random value 0..35999
     # 球体演出
         execute at 0-0-0-0-0 positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/6_4_moving_attack/slash_vfx
     # Makerを戻してあげる
@@ -24,7 +24,7 @@
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって無惨に切り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"api:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって無惨に切り裂かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える

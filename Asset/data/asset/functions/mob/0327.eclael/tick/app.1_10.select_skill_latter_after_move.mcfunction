@@ -5,9 +5,7 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/**
 
 # 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # 袈裟斬り
     execute if score $Random Temporary matches 0 run tag @s add 93.Skill.Latter.MoveSlash

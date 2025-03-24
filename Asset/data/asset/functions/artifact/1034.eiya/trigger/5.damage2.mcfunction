@@ -21,12 +21,12 @@
     execute positioned ^-2 ^ ^0.5 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2.5] add Target
 
 # ダメージ設定
-    execute store result storage lib: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary
-    data modify storage lib: Argument.AttackType set value "Magic"
-    data modify storage lib: Argument.ElementType set value "Thunder"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Target,distance=..10] run function lib:damage/
-    function lib:damage/reset
+    execute store result storage api: Argument.Damage double 0.1 run scoreboard players operation $BaseDamage Temporary += $MP Temporary
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Target,distance=..10] run function api:damage/
+    function api:damage/reset
 
 # リセット
     scoreboard players reset $MP Temporary

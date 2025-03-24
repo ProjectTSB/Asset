@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/alias/213/register
 
- #継承 (int) (オプション)
+# 継承 (int) (オプション)
     data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
@@ -69,3 +69,4 @@
     data modify storage asset:mob Field.UsingWeapon set value ""
     data modify storage asset:mob Field.AttackDistance set value 50
     data modify storage asset:mob Field.InitialMotionTime set value 200
+    data modify storage asset:mob Field.Minefield_Pos set value []

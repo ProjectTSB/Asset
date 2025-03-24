@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アロクロマティック<Empty>","color":"#a1faf5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用時、リロードする。","color":"white"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"魔力を凝縮し、弾丸へと変換する。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"リロードする。","color":"white"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"魔力を凝縮し、弾丸へと変換する。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "mainhand"
+    data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "sneak2s"
 # 神器の発動条件 (TextComponentString) (オプション)

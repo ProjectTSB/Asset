@@ -17,8 +17,8 @@
             data remove storage lib: Argument
         # Damage
             data modify storage lib: Argument set value {Damage:60,AttackType:Physical,ElementType:None}
-            function lib:damage/modifier
-            execute as @e[type=#lib:living,tag=Victim] run function lib:damage/
+            function api:damage/modifier
+            execute as @e[type=#lib:living,tag=Victim] run function api:damage/
 
     # リセット
-        function lib:damage/reset
+        function api:damage/reset

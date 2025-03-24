@@ -15,7 +15,7 @@
     effect give @e[type=#lib:living,tag=1068.Hit,distance=..10] slowness 10 2
 # ダメージ与える
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    execute if entity @e[type=#lib:living,tag=1068.Hit,tag=ExtendedCollision,distance=..10] store result storage api: Argument.Damage double 0.008 run data get storage asset:context this.Damage 10
+    execute if entity @e[type=#lib:living,tag=1068.Hit,tag=ExtendedCollision,distance=..10] store result storage api: Argument.Damage double 0.009 run data get storage asset:context this.Damage 10
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID

@@ -20,12 +20,13 @@
 # ワープのクールダウン処理(0以下ならワープ可能になる)
     execute if entity @s[scores={26.TPCool=0..}] run scoreboard players remove @s 26.TPCool 1
 
-# ハメ、落下対策でのtp処理
+# 召喚地点から一定以上離れたならスキル中であろうと強制的に戻す
+    execute unless entity @e[type=marker,tag=26.SpawnPoint,distance=..50] run tp @s @e[type=marker,tag=26.SpawnPoint,distance=..100,limit=1]
+
+# ハメ対策でのtp処理
 # スキル中は使用不可
 # ハメ対策
     execute if entity @s[scores={General.Mob.Tick=..-1,26.TPCool=..0}] unless block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~ ~ #walls run tag @s add 26.Teleport
-# 落下対策
-    execute if entity @s[scores={General.Mob.Tick=..-1,26.TPCool=..0}] if block ~ ~-0.5 ~ #lib:no_collision if block ~ ~-1.5 ~ #lib:no_collision if block ~ ~-2.5 ~ #lib:no_collision if block ~ ~-3.5 ~ #lib:no_collision run tag @s add 26.Teleport
 
 # tpする
     execute if entity @s[tag=26.Teleport] run function asset:mob/0078.messenger_of_thunder/tick/teleport

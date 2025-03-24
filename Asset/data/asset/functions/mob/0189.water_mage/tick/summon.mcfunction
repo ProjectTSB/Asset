@@ -34,10 +34,7 @@
     execute if predicate api:global_vars/difficulty/min/hard if data storage api: Argument.ID if entity @p[gamemode=!spectator,distance=6..30] facing entity @p[gamemode=!spectator,distance=6..30] feet positioned ^ ^ ^7 run function api:object/summon
 
 # 次に攻撃するタイミングをランダムにする
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $31 Const
-    scoreboard players operation @s General.Mob.Tick = $Random Temporary
-    scoreboard players remove @s General.Mob.Tick 120
+    execute store result score @s General.Mob.Tick run random value -120..-90
 
 # リセット
     scoreboard players reset $Random Temporary

@@ -7,5 +7,6 @@
 # 回復
     data modify storage api: Argument.Heal set value 1.5f
     function api:heal/modifier
+    data modify storage api: Argument.ApplyTrigger set value false
     function api:heal/
     function api:heal/reset

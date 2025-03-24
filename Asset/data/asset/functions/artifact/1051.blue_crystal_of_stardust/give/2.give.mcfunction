@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"星屑の蒼結晶","color":"#78C2FA"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、自身と周囲の2名の体力を","color":"white"}','{"text":"自身の最大体力の12%分回復する。","color":"white"}','{"text":"(現在体力割合の最も低いプレイヤーを優先)","color":"white"}','{"text":"かつて空から降ってきた流れ星の一部。","color":"gray"}','{"text":"青空のように澄んだ蒼色をしている。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を自身の最大体力の12%分回復する。","color":"white"}','{"text":"かつて空から降ってきた流れ星の一部。","color":"gray"}','{"text":"青空のように澄んだ蒼色をしている。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onDamage"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"3回被ダメージする毎"}'
+    data modify storage asset:artifact Condition set value '{"text":"7回被ダメージする毎"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 35
+    data modify storage asset:artifact MPCost set value 25
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)

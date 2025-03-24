@@ -21,6 +21,3 @@
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
-
-# ループ開始
-    schedule function asset:artifact/0738.voltage_striker/trigger/bullet/loop 1t replace

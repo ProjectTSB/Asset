@@ -9,11 +9,22 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# エフェクト付与
-    effect give @s speed 10 2 true
+# スピードの向こう側(ID:293)がなければ、待望の瞬間(ID:292)を付与
+    data modify storage api: Argument.ID set value 293
+    function api:entity/mob/effect/get/from_id
+    execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 292
+    execute unless data storage api: Return.Effect run function api:entity/mob/effect/give
+    execute unless data storage api: Return.Effect run function api:entity/mob/effect/reset
 
 # 30%の確率でメッセージを流す
-    execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/3.1.message
+    execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/message/
 
-# 攻撃対象にダメージ
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] at @s run function asset:artifact/0441.awaited_opportunity/trigger/3.3.attack
+# 演出
+    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run particle minecraft:block redstone_block ~ ~1 ~ 0.1 0.1 0.1 1 10
+
+# ダメージ
+    data modify storage api: Argument.Damage set value 9.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset

@@ -21,8 +21,7 @@
     scoreboard players add @s TY.Count 1
 
 # 0~2の乱数を求める
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # 使用回数とランダムで斬撃演出を変える
 # 斬撃パターンは2種類で交互に変わる
@@ -50,16 +49,6 @@
 #> Private
 # @private
     #declare tag Critical
-    #declare score_holder $RandomDamage
-    #declare score_holder $301
-
-# 301を定義
-    scoreboard players set $301 Temporary 301
-
-# ダメージのブレ(0~300)
-    execute store result score $RandomDamage Temporary run function lib:random/
-    scoreboard players operation $RandomDamage Temporary %= $301 Temporary
-    scoreboard players add $RandomDamage Temporary 300
 
 # クリティカル判定
     execute if predicate lib:random_pass_per/20 run tag @s add Critical
@@ -70,7 +59,7 @@
 
 # ダメージ
 # クリティカルでダメージ上昇、共鳴時にダメージ上昇
-    execute store result storage api: Argument.Damage int 1 run scoreboard players get $RandomDamage Temporary
+    execute store result storage api: Argument.Damage int 1 run random value 350..650
     execute if entity @s[tag=Critical] store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
     execute if entity @s[tag=Resonance] store result storage api: Argument.Damage float 1.2 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"
@@ -85,5 +74,3 @@
     tag @s[tag=Resonance] remove Resonance
     tag @s[tag=Critical] remove Critical
     scoreboard players reset $Random Temporary
-    scoreboard players reset $301 Temporary
-    scoreboard players reset $RandomDamage Temporary

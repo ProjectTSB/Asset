@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"カボチャの怨念の残滓","color":"#FFAA00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、満腹度を回復し","color":"white"}','[{"text":"移動速度上昇と暗視を30秒間得る。","color":"white"}]','[{"text":"僅かに残ったジャック・オ・ランタンの魂。","color":"gray"}]','[{"text":"魂を吸収することで妖しく幽かに輝く。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"満腹度を回復し","color":"white"}','[{"text":"移動速度+20%と暗視を30秒間得る。","color":"white"}]','[{"text":"僅かに残ったジャック・オ・ランタンの魂。","color":"gray"}]','[{"text":"魂を吸収することで妖しく幽かに輝く。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

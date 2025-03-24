@@ -5,7 +5,7 @@
 # @within asset:object/alias/2056/summon
 
 # 元となるEntityを召喚する
-    execute as 0-0-0-0-0 positioned as @s run tp @s ~ ~ ~ ~ 0
+    execute as 0-0-0-0-0 in overworld positioned as @s run tp @s ~ ~ ~ ~ 0
     data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
     function asset:object/2056.tultaria_death/summon/m with storage asset:temp Args
     data remove storage asset:temp Args

@@ -9,18 +9,12 @@
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1.2] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    # 与えるダメージ = 20
-        data modify storage lib: Argument.Damage set value 45f
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
-# 補正functionを実行
-    function lib:damage/modifier
-# 対象に
-    execute as @a[tag=9G.Temp.Target.Attack] at @s run function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:damage/
+    function api:damage/reset
 
 # 演出
     playsound ogg:item.trident.throw1 hostile @a ~ ~ ~ 1 1.1

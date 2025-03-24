@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ボルテージストライカー","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"前方に5発の高電圧弾を放つ。","color":"white"}]','[{"text":"高電圧弾は直進後、近くの敵を狙い撃つ。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"前方に5発の高電圧弾を放つ","color":"white"}]','[{"text":"高電圧弾は直進後、近くの敵を狙い撃つ","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 11
+    data modify storage asset:artifact MPHealWhenHit set value 9
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 90
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
@@ -54,7 +54,7 @@
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisableCooldownMessage set value true
+    # data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照

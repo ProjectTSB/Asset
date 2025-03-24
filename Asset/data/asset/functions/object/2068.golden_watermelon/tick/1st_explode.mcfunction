@@ -26,9 +26,6 @@
     particle explosion ~ ~ ~ 1 1 1 0 5 normal @a
     particle large_smoke ~ ~ ~ 0 0 0 0.3 40 normal @a
 
-# ノーマル以上で鈍化を付与
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @a[tag=!PlayerShouldInvulnerable,distance=..2.5] slowness 1 1 true
-
 # 水属性ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.1st
     data modify storage api: Argument.AttackType set value "Physical"
@@ -39,3 +36,11 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
     function api:damage/reset
+
+# Slowness:trueでなければreturn
+    execute unless data storage asset:context this{Slowness:true} run return 0
+
+# Slowness:trueなら移動速度低下を付与
+    data modify storage api: Argument set value {ID:17,Stack:6,Duration:20}
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
