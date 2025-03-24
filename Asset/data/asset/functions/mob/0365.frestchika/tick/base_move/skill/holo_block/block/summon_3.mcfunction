@@ -9,7 +9,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2238
-    execute if block ~ ~-1 ~ #asset:mob/0365.frestchika/no_collision run function api:object/summon
+    execute positioned ~ ~-1 ~ if block ~ ~ ~ #asset:mob/0365.frestchika/no_collision run function api:object/summon
 
 # 召喚
     data modify storage api: Argument.ID set value 2238
