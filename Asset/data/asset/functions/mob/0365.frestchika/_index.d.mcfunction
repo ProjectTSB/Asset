@@ -13,8 +13,8 @@
     # ボスのマーカーに関するタグ
     #declare tag A5.Marker
     #declare tag A5.Marker.SpawnPoint
-    #declare tag A5.Marker.Common
     #declare tag A5.Marker.Aim
+    #declare tag A5.Marker.Thunder
     # ボスのムーブセット
     #declare tag A5.Moveset.Intro
     #declare tag A5.Moveset.BaseMove
@@ -51,6 +51,8 @@
     #declare function animated_java:frestchika/animations/dash_end/tween
     #declare function animated_java:frestchika/animations/dash_left/tween
     #declare function animated_java:frestchika/animations/dash_right/tween
+    #declare function animated_java:frestchika/animations/dash_left_gun/tween
+    #declare function animated_java:frestchika/animations/dash_right_gun/tween
     #declare function animated_java:frestchika/animations/attack_slash_1_windup/tween
     #declare function animated_java:frestchika/animations/attack_slash_1_active/tween
     #declare function animated_java:frestchika/animations/attack_2_right/tween
