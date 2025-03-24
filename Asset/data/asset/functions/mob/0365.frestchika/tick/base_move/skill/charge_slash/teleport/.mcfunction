@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/
+#   asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/phase2
 
 # ちょっと上に移動
     tp @s ~ ~0.2 ~ ~ ~-2.5

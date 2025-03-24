@@ -14,11 +14,6 @@
     execute if score @s General.Mob.Tick matches ..20 at @e[type=marker,tag=A5.ModelLocator.LeftWing,sort=nearest,limit=1] run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ~ ~ ~ 0.1 0.1 0.1 0 2 force @a[distance=..32]
     execute if score @s General.Mob.Tick matches ..20 at @e[type=marker,tag=A5.ModelLocator.RightWing,sort=nearest,limit=1] run particle dust_color_transition 0 0.75 1 1 0.3 1 1 ~ ~ ~ 0.1 0.1 0.1 0 2 force @a[distance=..32]
 
-# ウソ慣性
-#    execute if score @s General.Mob.Tick matches 15..20 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.5
-#    execute if score @s General.Mob.Tick matches 20..25 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.3
-#    execute if score @s General.Mob.Tick matches 25..30 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.1
-
 # 居合の移動を開始
     execute if score @s General.Mob.Tick matches 30 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
 
