@@ -5,7 +5,7 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/holo_block/
 
 # パターン決定
-    execute store result score @s Temporary run random value 0..1
+    execute store result score @s Temporary run random value 0..2
     execute if score @s Temporary matches 0 run tag @s add A5.HoloBlock.1
     execute if score @s Temporary matches 1 run tag @s add A5.HoloBlock.2
     execute if score @s Temporary matches 2 run tag @s add A5.HoloBlock.3
