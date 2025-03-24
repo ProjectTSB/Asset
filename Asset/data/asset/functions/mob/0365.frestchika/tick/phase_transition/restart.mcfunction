@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0365.frestchika/tick/phase_transition/
 
+# マーカー片付けておく
+    kill @e[type=marker,tag=A5.Marker.Aim,distance=..64]
+
 # ベース動作を実行
     tag @s remove A5.Moveset.Transition
     tag @s add A5.Moveset.BaseMove
