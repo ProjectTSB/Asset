@@ -11,3 +11,6 @@
     execute facing entity @r[gamemode=!spectator,distance=..64] eyes run function api:object/summon
 
 # 音
+    playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 2 1
+    playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 2 1.5
+    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2

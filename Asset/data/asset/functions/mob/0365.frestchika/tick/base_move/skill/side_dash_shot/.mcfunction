@@ -17,7 +17,7 @@
         execute if score @s[tag=A5.DashSkill.RapidLaser] General.Mob.Tick matches 26..30 if score $AttackInterval Temporary matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/laser/shoot
     # 移動中に遅延レーザー
         execute if entity @s[tag=A5.DashSkill.DelayLaser] run scoreboard players operation $AttackInterval Temporary %= $3 Const
-        execute if score @s[tag=A5.DashSkill.DelayLaser] General.Mob.Tick matches ..15 if score $AttackInterval Temporary matches 0 positioned ~ ~1.5 ~ run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/delay_laser_summon
+        execute if score @s[tag=A5.DashSkill.DelayLaser] General.Mob.Tick matches 0..15 if score $AttackInterval Temporary matches 0 positioned ~ ~1.5 ~ run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/delay_laser_summon
     # インターバルリセット
         scoreboard players reset $AttackInterval Temporary
 
@@ -25,10 +25,13 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/start
 
 # プレイヤーの方へ誘導する
-    execute if score @s General.Mob.Tick matches ..15 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/move
+    execute if score @s General.Mob.Tick matches 0..15 run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/move
 
 # ブレーキかけつつプレイヤーの方を向く
     execute if score @s General.Mob.Tick matches 15..30 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^ ~ ~
+
+# ブレーキ
+    execute if score @s[tag=A5.DashSkill.DelayLaser] General.Mob.Tick matches 20 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 5}
 
 # ブレーキ
     execute if score @s General.Mob.Tick matches 40 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 5}
@@ -39,13 +42,13 @@
 
 # ウソ慣性
     # 左
-        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 15..20 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^0.5 ^ ^
-        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 20..25 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^0.3 ^ ^
-        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 25..30 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^0.1 ^ ^
+        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 15..20 rotated ~-90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.5
+        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 20..25 rotated ~-90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.3
+        execute if score @s[tag=A5.Dash.Left] General.Mob.Tick matches 25..30 rotated ~-90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.1
     # 右
-        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 15..20 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^-0.5 ^ ^
-        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 20..25 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^-0.3 ^ ^
-        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 25..30 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^-0.1 ^ ^
+        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 15..20 rotated ~90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.5
+        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 20..25 rotated ~90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.3
+        execute if score @s[tag=A5.Dash.Right] General.Mob.Tick matches 25..30 rotated ~90 ~ unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.1
 
 # リセット
     execute if score @s General.Mob.Tick matches 40.. run function asset:mob/0365.frestchika/tick/base_move/skill/reset

@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/
 
+# 両手のアイテムを変更
+    item replace entity @e[type=item_display,tag=aj.frestchika.bone.right_item.child,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20509}
+    item replace entity @e[type=item_display,tag=aj.frestchika.bone.left_item.child,sort=nearest,limit=1] container.0 with minecraft:air
+
 # 左右のどっちか選択
     execute store result score @s Temporary run random value 0..1
     execute if score @s Temporary matches 0 run tag @s add A5.Dash.Left
@@ -15,13 +19,13 @@
     execute if score @s Temporary matches 0 run tag @s add A5.DashSkill.DelayLaser
     execute if score @s Temporary matches 1 run tag @s add A5.DashSkill.RapidLaser
     execute if score @s Temporary matches 2 run tag @s add A5.DashSkill.SlowShot
-
-    #tag @s add A5.DashSkill.DelayLaser
     scoreboard players reset @s Temporary
 
 # アニメーション
-    execute if entity @s[tag=A5.Dash.Left] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_left/tween {to_frame: 0, duration: 2}
-    execute if entity @s[tag=A5.Dash.Right] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_right/tween {to_frame: 0, duration: 2}
+    execute if entity @s[tag=A5.Dash.Left,tag=A5.DashSkill.DelayLaser] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_left_gun/tween {to_frame: 0, duration: 2}
+    execute if entity @s[tag=A5.Dash.Right,tag=A5.DashSkill.DelayLaser] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_right_gun/tween {to_frame: 0, duration: 2}
+    execute if entity @s[tag=A5.Dash.Left,tag=A5.DashSkill.RapidLaser] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_left/tween {to_frame: 0, duration: 2}
+    execute if entity @s[tag=A5.Dash.Right,tag=A5.DashSkill.RapidLaser] as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_right/tween {to_frame: 0, duration: 2}
 
 # 演出
     playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 1.7
