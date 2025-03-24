@@ -9,7 +9,7 @@
     #declare score_holder $Interval
 
 # アニメーション
-    execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_2_right/tween {to_frame: 0, duration: 1}
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/windup
 
 # 適当なターゲットを狙ってマーカー設置
     execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] run summon marker ~ ~ ~ {Tags:["A5.Marker.Aim","A5.Marker"]}
