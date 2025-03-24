@@ -9,10 +9,10 @@
     #declare score_holder $OwnerID
 
 # HP回復量
-    data modify storage api: Argument.Heal set value 16.0f
+    data modify storage api: Argument.Heal set from storage asset:context this.Heal
 # 補正
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:heal/modifier
+    execute as @a if score @s UserID = $OwnerID Temporary run function api:heal/modifier
 # 実行
     execute as @a[distance=..3] run function api:heal/
 

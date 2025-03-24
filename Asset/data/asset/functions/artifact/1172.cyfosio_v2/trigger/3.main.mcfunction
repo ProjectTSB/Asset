@@ -11,5 +11,6 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1084
+    data modify storage api: Argument.FieldOverride.Heal set value 16
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
