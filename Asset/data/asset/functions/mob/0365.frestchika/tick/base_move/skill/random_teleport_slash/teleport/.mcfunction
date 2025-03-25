@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
 
 # 適当なプレイヤー狙いでワープ
     function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/teleport/spread

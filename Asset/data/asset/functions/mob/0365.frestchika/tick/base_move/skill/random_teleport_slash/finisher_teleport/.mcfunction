@@ -2,7 +2,9 @@
 #
 # 最後は確定で一定の距離に現れる
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
 
 # 向き指定
     execute store result storage asset:context this.Rotation int 1 run random value -180..180

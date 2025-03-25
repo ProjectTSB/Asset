@@ -8,10 +8,13 @@
 # @private
     #declare score_holder $Interval
 
-# 発動地点への演出
+# インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
+
+# レーザー攻撃
     scoreboard players operation $Interval Temporary %= $3 Const
     execute if score @s General.Mob.Tick matches 0..12 if score $Interval Temporary matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/teleport/
+    scoreboard players reset $Interval Temporary
 
 # 最後の一回は必ず近くに出てくる
     execute if score @s General.Mob.Tick matches 15 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/finisher_teleport/

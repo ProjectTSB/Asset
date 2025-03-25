@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
+#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
 
 # アニメーション
     execute as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_2_windup/tween {to_frame: 0, duration: 1}

@@ -1,10 +1,8 @@
-#> asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/active
+#> asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/slash_2
 #
 #
 #
-# @within function
-#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/
-#   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
+# @within function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
 
 # ダメージ設定
     # 与えるダメージ
@@ -24,7 +22,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
-    execute anchored eyes positioned ^ ^-1 ^ rotated ~ ~ run function api:object/summon
+    execute anchored eyes positioned ^ ^-1 ^ rotated ~ 0 run function api:object/summon
 
 # 演出
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1.2 0.7
