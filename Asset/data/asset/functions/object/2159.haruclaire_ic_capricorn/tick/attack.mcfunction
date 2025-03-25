@@ -13,8 +13,11 @@
 # 移動
     execute if entity @s[scores={General.Object.Tick=20..}] run tp @s ^ ^ ^2
     execute if entity @s[scores={General.Object.Tick=20..}] run particle block blue_ice ~ ~0.1 ~ 0.1 0 0.1 0 3
-    execute if entity @s[scores={General.Object.Tick=20..}] if predicate lib:random_pass_per/50 run particle explosion ~ ~0.1 ~ 1 0 1 0 1
+    execute if entity @s[scores={General.Object.Tick=20..}] run particle explosion ~ ~0.1 ~ 2 0 2 0 1
 
 # 演出
     execute if entity @s[scores={General.Object.Tick=20}] run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.8
     execute if entity @s[scores={General.Object.Tick=20}] run playsound entity.goat.screaming.ambient hostile @a ~ ~ ~ 4 1
+
+# 攻撃
+    execute if entity @s[scores={General.Object.Tick=20..}] run function asset:object/2159.haruclaire_ic_capricorn/tick/damage
