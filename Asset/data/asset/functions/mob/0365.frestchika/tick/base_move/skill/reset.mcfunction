@@ -7,13 +7,10 @@
 #   asset:mob/0365.frestchika/hurt/active_50per
 
 # スコアをセット
-    scoreboard players set @s General.Mob.Tick -10
+    scoreboard players set @s General.Mob.Tick -1
 
 # アニメ再生しておく
     execute as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function animated_java:frestchika/animations/neutral/tween {to_frame: 0, duration: 10}
-
-# 第2形態でテレポート
-    execute if entity @s[scores={A5.Phase=2..}] run function asset:mob/0365.frestchika/tick/base_move/teleport/
 
 # 両手を空にする
 #    item replace entity @e[type=item_display,tag=aj.frestchika.bone.right_item.child,sort=nearest,limit=1] container.0 with minecraft:air
