@@ -11,3 +11,6 @@
     execute store result storage api: Argument.FieldOverride.Rotation0 float 1 run random value 0..359
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
+
+# リセット
+    scoreboard players reset @s GU.Count 
