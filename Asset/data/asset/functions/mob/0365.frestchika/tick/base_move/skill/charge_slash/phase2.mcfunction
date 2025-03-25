@@ -6,6 +6,7 @@
 
 # 1回目
     # 構え
+        execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_4_windup/tween {to_frame: 0, duration: 1}
         execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/windup
     # ゆっくり向く
         execute if score @s General.Mob.Tick matches ..20 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
@@ -16,16 +17,18 @@
         execute if score @s General.Mob.Tick matches 30 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
     # 振り抜く
         execute if score @s General.Mob.Tick matches 30 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
+        execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_4_active/tween {to_frame: 4, duration: 1}
 
 # 2回目
     # ゆっくり向く
         execute if score @s General.Mob.Tick matches 30..40 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-30 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
     # アニメーション
-        execute if score @s General.Mob.Tick matches 30 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_1_windup/tween {to_frame: 0, duration: 1}
+        execute if score @s General.Mob.Tick matches 35 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_4_windup/tween {to_frame: 10, duration: 1}
     # 居合の移動を開始
         execute if score @s General.Mob.Tick matches 40 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
     # 振り抜く
         execute if score @s General.Mob.Tick matches 40 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
+        execute if score @s General.Mob.Tick matches 40 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_4_active/tween {to_frame: 4, duration: 1}
 
 # 3回目
     # ゆっくり向く
@@ -36,6 +39,7 @@
         execute if score @s General.Mob.Tick matches 70 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/finisher
     # 振り抜く
         execute if score @s General.Mob.Tick matches 70 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
+        execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_1_active/tween {to_frame: 4, duration: 1}
     # 追撃
         execute if score @s General.Mob.Tick matches 90 at @e[type=marker,tag=A5.Marker.Thunder,distance=..128] run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/final_thunder
         execute if score @s General.Mob.Tick matches 90 run kill @e[type=marker,tag=A5.Marker.Thunder,distance=..128]

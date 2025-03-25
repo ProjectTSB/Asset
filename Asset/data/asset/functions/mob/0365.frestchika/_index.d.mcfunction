@@ -62,6 +62,10 @@
     #declare function animated_java:frestchika/animations/attack_slash_2_windup/tween
     #declare function animated_java:frestchika/animations/attack_slash_2_active/tween
     #declare function animated_java:frestchika/animations/attack_slash_3/tween
+    #declare function animated_java:frestchika/animations/attack_slash_4_windup/tween
+    #declare function animated_java:frestchika/animations/attack_slash_4_active/tween
+    #declare function animated_java:frestchika/animations/attack_slash_5_windup/tween
+    #declare function animated_java:frestchika/animations/attack_slash_5_active/tween
     #declare function animated_java:frestchika/animations/attack_ranged_1/tween
     #declare function animated_java:frestchika/animations/break/tween
     #declare function animated_java:frestchika/animations/break_loop/tween
