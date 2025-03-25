@@ -88,3 +88,6 @@
     # - 他オブジェクト
     #declare tag AK.Object ハルクレアオブジェクト共通タグ
     #declare tag 2155.Object アイスレーザー
+    #declare tag AK.IceCreature.Root アイスクリーチャーオブジェクト
+    #declare tag AK.IceCreature.Model アイスクリーチャーモデル
+    #declare tag AK.IceCreature.Remove アイスクリーチャー消去
