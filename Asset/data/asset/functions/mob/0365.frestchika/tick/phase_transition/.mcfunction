@@ -13,9 +13,13 @@
 # 立て直すまで煙を吹く
     execute if score @s General.Mob.Tick matches 0..20 run particle large_smoke ~ ~1.5 ~ 0.1 0.1 0.1 0.1 2
 
-# リカバリーアニメ
+# 復帰アニメ
+    execute if score @s General.Mob.Tick matches 25..35 run tp @s ~ ~0.1 ~
     execute if score @s General.Mob.Tick matches 25 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/recovery/tween {duration:1, to_frame:0}
-
+    execute if score @s General.Mob.Tick matches 30 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5
+    execute if score @s General.Mob.Tick matches 35 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 1
+    execute if score @s General.Mob.Tick matches 45 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 2 1.5
+    execute if score @s General.Mob.Tick matches 45 run function asset:mob/0365.frestchika/tick/base_move/active_overdrive
 
 # バフ付与
     execute if score @s General.Mob.Tick matches 45 run function asset:mob/0365.frestchika/tick/base_move/active_overdrive
