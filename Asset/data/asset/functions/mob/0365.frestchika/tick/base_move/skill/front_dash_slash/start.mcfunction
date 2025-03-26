@@ -1,8 +1,8 @@
-#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/start
+#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/start
 #
 # 共通ダッシュ開始モーション
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/
+# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/
 
 # アニメーション
     execute as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/dash_start/tween {to_frame: 0, duration: 2}

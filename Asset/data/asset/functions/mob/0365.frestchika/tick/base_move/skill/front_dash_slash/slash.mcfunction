@@ -1,8 +1,8 @@
-#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/slash
+#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/slash
 #
 # 斬撃部分
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/
+# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/
 
 # ダメージ設定
     # 与えるダメージ

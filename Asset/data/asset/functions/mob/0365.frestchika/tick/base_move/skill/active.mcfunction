@@ -6,7 +6,7 @@
 
 # 技リスト
     execute if entity @s[tag=A5.Skill.SideDashShot] run function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/
-    execute if entity @s[tag=A5.Skill.FrontDashSlash] run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/
+    execute if entity @s[tag=A5.Skill.FrontDashSlash] run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/
     execute if entity @s[tag=A5.Skill.HoloBlock] run function asset:mob/0365.frestchika/tick/base_move/skill/holo_block/
     execute if entity @s[tag=A5.Skill.OverHeat] run function asset:mob/0365.frestchika/tick/base_move/skill/overheat/
 

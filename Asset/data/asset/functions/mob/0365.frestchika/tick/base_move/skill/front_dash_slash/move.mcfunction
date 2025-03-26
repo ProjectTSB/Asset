@@ -1,8 +1,8 @@
-#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/move
+#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/move
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/
+# @within function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/
 
 # 壁があったら移動をやめる
     execute at @s if function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ~ ~ ~ ~ 0

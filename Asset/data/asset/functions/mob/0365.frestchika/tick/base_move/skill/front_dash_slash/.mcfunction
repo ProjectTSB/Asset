@@ -1,14 +1,14 @@
-#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/
+#> asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/
 #
 #
 #
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/active
 
 # ダッシュ開始
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/start
+    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/start
 
 # プレイヤーの方へ誘導する
-    execute if score @s General.Mob.Tick matches 0..30 run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/move
+    execute if score @s General.Mob.Tick matches 0..30 run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/move
 
 # ブレーキかけつつプレイヤーの方を向く
     execute if score @s General.Mob.Tick matches 30..45 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^ ~ ~
@@ -27,7 +27,7 @@
     execute if score @s General.Mob.Tick matches 30 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5
     execute if score @s General.Mob.Tick matches 35 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 1
     execute if score @s General.Mob.Tick matches 40 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 1.5
-    execute if score @s General.Mob.Tick matches 45 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_shot/slash
+    execute if score @s General.Mob.Tick matches 45 as @e[type=item_display,tag=A5.ModelRoot.Target,distance=..16,sort=nearest,limit=1] run function asset:mob/0365.frestchika/tick/base_move/skill/front_dash_slash/slash
 
 # ウソ慣性
     execute if score @s General.Mob.Tick matches 30..35 unless function asset:mob/0365.frestchika/tick/base_move/common/check_collide run tp @s ^ ^ ^0.5
