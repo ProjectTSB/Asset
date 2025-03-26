@@ -21,10 +21,10 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"C.D. フレストチカ"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"高性能マナ駆動の身体を持つサイボーグ。","color":"white"}','{"text":"攻撃性能、防御性能、運動性能、どれをとっても優れているが、","color":"white"}','{"text":"身体を無茶に使いがちで、しばしばオーバーヒートを起こす。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"高性能なマナ駆動の身体を持つ、機械の天使。","color":"white"}','{"text":"元々高い性能を持つが、「アブソリュートドライブ」を発動することで、","color":"white"}','{"text":"限界を超えた性能を発揮することができる。","color":"white"}']
 # 体力 (double) (オプション)
     #data modify storage asset:mob Health set value 100000
-    data modify storage asset:mob Health set value 550
+    data modify storage asset:mob Health set value 200000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0
