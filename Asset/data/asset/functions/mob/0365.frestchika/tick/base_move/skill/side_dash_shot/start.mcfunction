@@ -18,7 +18,6 @@
     execute store result score @s Temporary run random value 0..1
     execute if score @s Temporary matches 0 run tag @s add A5.DashSkill.DelayLaser
     execute if score @s Temporary matches 1 run tag @s add A5.DashSkill.RapidLaser
-    execute if score @s Temporary matches 2 run tag @s add A5.DashSkill.SlowShot
     scoreboard players reset @s Temporary
 
 # アニメーション

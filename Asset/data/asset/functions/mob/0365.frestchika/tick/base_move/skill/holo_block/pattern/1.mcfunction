@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/holo_block/
 
+#> SpreadLib
+# @private
+#declare tag SpreadMarker
+
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
