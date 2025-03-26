@@ -21,7 +21,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"C.D. フレストチカ"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"高性能なマナ駆動の身体を持つ、機械の天使。","color":"white"}','{"text":"元々高い性能を持つが、「アブソリュートドライブ」を発動することで、","color":"white"}','{"text":"限界を超えた性能を発揮することができる。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"高性能な機械の身体を持つ天使。","color":"white"}','{"text":"テレポートやブーストを駆使した動きで敵を翻弄する。","color":"white"}','{"text":"「アブソリュートドライブ」により、限界を超えた性能を発揮することができる。","color":"white"}']
 # 体力 (double) (オプション)
     #data modify storage asset:mob Health set value 100000
     data modify storage asset:mob Health set value 200000
