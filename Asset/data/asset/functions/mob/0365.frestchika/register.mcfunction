@@ -19,7 +19,7 @@
 # ただし冒頭のみで、すぐに無敵でなくなる
     data modify storage asset:mob Interferable set value false
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"C.D. フレストチカ","color":"#37CDFF"}'
+    data modify storage asset:mob Name set value '{"text":"C.D.フレストチカ","color":"#37CDFF"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"高性能な機械の身体を持つ天使。","color":"white"}','{"text":"テレポートやブーストを駆使した動きで敵を翻弄する。","color":"white"}','{"text":"「アブソリュートドライブ」により、限界を超えた性能を発揮することができる。","color":"white"}']
 # 体力 (double) (オプション)
