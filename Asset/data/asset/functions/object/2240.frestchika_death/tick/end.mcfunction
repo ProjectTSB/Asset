@@ -7,7 +7,7 @@
 # 演出
     particle minecraft:poof ~ ~ ~ 0 0 0 0.5 100
     particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 normal
-    playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
+    playsound entity.generic.explode hostile @a ~ ~ ~ 3 1
 
 # モデルを消す
     execute as @e[type=item_display,tag=2240.ModelRoot.Target,distance=..8,limit=1] run function animated_java:frestchika/remove/this
