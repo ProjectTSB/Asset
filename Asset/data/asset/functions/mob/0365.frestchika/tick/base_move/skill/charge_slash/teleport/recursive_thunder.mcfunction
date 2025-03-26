@@ -24,9 +24,9 @@
 # 通り道にいたプレイヤーにタグを付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run tag @s add Hit
 
-# 周囲の壊せるブロックをぶっ壊す
-    execute rotated ~ 0 positioned ^ ^0.2 ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
-    execute rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
+# 周囲の壊せるブロックをぶっ壊す、ただしエリアによる
+    execute if predicate api:area/is_breakable rotated ~ 0 positioned ^ ^0.2 ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
+    execute if predicate api:area/is_breakable rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #lib:unbreakable run setblock ~ ~ ~ air destroy
 
 # 再帰、ただし床が近くない場合
     execute if block ~ ~-0.5 ~ #asset:mob/0365.frestchika/no_collision positioned ^ ^ ^1 run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/recursive_thunder
