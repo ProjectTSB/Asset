@@ -47,7 +47,7 @@
     #declare function animated_java:frestchika/animations/intro/tween
     #declare function animated_java:frestchika/animations/neutral/tween
     #declare function animated_java:frestchika/animations/dash_start/tween
-    #declare function animated_java:frestchika/animations/dash_end/tween
+    #declare function animated_java:frestchika/animations/dash_windup/tween
     #declare function animated_java:frestchika/animations/dash_left/tween
     #declare function animated_java:frestchika/animations/dash_right/tween
     #declare function animated_java:frestchika/animations/dash_left_gun/tween
