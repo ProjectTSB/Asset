@@ -10,7 +10,7 @@
     playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1 1.5
 
 # ダメージ数値設置
-    data modify storage api: Argument.Damage set value 15.0f
+    data modify storage api: Argument.Damage set value 25.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
 # 補正functionを実行
