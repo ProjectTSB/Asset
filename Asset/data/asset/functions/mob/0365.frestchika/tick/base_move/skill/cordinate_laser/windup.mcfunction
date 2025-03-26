@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/phase2
 
 # 両手のアイテムを変更
     item replace entity @e[type=item_display,tag=aj.frestchika.bone.right_item.child,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20508}

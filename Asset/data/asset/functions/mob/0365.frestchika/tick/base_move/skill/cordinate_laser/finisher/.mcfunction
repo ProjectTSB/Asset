@@ -2,7 +2,9 @@
 #
 # フィニッシャー大爆発
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/phase2
 
 # 演出
     particle end_rod ~ ~5 ~ 0.1 3 0.1 0.05 10

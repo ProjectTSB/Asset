@@ -2,7 +2,9 @@
 #
 # フレストチカの象徴な図形
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/phase2
 
 # [ImportKey]: NobwRALgngDgpmAXGGB7ANlA5qgdmAGjAFdiBLAEyTADYBOAIwDMKBjVugWgEYBmVgAycALAwrDOADgBMcSZ14MGAgbxrdWAdk0IiuAIYBbBMkBYmoCXIwEb6AAm6EU+gE5GAzknCtUxXBCTcBRKxwPnCO7mAAbvroxCbgAB5IAWBQSQC+aUTOFGTEbojSAHQArEQuEE6+iMlw6OhkMC4m-smOqBUQJsmejrihSJJEAFbEhjB+RAxwAF5k-dVEZC4AonUNTcsAjsTRmADKMPpBVIhM0U2LLgBCM3OOWzt1UAdHcCdn6E0ZALpAA_3
 # 多角形 1

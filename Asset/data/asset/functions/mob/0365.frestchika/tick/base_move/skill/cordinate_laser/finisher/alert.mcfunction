@@ -2,8 +2,9 @@
 #
 # 警告。今までのよりデカい。
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
-
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/phase2
 # 攻撃予告
     data modify storage api: Argument.FieldOverride.Color set value 6209279
     data modify storage api: Argument.FieldOverride.Scale set value [8f,8f,0.01f]

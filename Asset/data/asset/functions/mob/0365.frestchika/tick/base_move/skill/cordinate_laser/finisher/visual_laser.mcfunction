@@ -2,8 +2,9 @@
 #
 # 例によってちょっと速く発動する見た目
 #
-# @within function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
-
+# @within function
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/
+#   asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/phase2
 # 演出
     playsound ogg:block.respawn_anchor.deplete2 player @p ~ ~ ~ 2 1
     playsound tsb_sounds:blaster1 player @p ~ ~ ~ 2 1
