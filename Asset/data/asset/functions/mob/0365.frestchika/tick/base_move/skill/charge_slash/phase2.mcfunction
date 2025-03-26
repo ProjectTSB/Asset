@@ -36,7 +36,9 @@
     # アニメーション
         execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_1_windup/tween {to_frame: 0, duration: 1}
     # 居合の移動を開始
-        execute if score @s General.Mob.Tick matches 70 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/finisher
+        execute if score @s General.Mob.Tick matches 70 run tag @s add A5.Skill.ChargeSlashThunder
+        execute if score @s General.Mob.Tick matches 70 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/
+        execute if score @s General.Mob.Tick matches 70 run tag @s remove A5.Skill.ChargeSlashThunder
     # 振り抜く
         execute if score @s General.Mob.Tick matches 70 at @s run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/active
         execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=A5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:frestchika/animations/attack_slash_1_active/tween {to_frame: 4, duration: 1}

@@ -20,12 +20,12 @@
     #declare tag A5.Moveset.BaseMove
     #declare tag A5.Moveset.Transition
     # ボスのスキル
-    #declare tag A5.Skill.SideDashShot
     #declare tag A5.Dash.Left
     #declare tag A5.Dash.Right
+    #declare tag A5.Skill.SideDashShot
     #declare tag A5.Skill.FrontDashSlash
-    #declare tag A5.Skill.BackDashBomb
     #declare tag A5.Skill.ChargeSlash
+    #declare tag A5.Skill.ChargeSlashThunder
     #declare tag A5.Skill.CordinateLaser
     #declare tag A5.Skill.RandomTeleportSlash
     #declare tag A5.Skill.HoloBlock
@@ -33,7 +33,6 @@
     # ボスのダッシュ中の攻撃に関すること
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
-    #declare tag A5.DashSkill.SlowShot
     # ホロブロックの設置パターン
     #declare tag A5.HoloBlock.1
     #declare tag A5.HoloBlock.2

@@ -18,6 +18,9 @@
 # 距離限界でも移動
     execute unless entity @s[distance=..16] run return run function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/active
 
+# マーカー設置、"A5.Skill.ChargeSlashThunder"がついてるときだけ実行
+    execute if entity @s[tag=A5.Skill.ChargeSlashThunder] unless entity @e[type=marker,tag=A5.Marker.Thunder,distance=..4] run summon marker ~ ~ ~ {Tags:["A5.Marker.Thunder","A5.Marker"]}
+
 # 通り道にいたプレイヤーにタグを付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run tag @s add Hit
 
