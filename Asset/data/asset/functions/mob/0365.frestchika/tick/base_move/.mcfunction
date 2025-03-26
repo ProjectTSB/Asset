@@ -19,3 +19,6 @@
 
 # 選択したスキル発動
     execute if entity @s[tag=A5.InAction] run function asset:mob/0365.frestchika/tick/base_move/skill/active
+
+# スタック回避
+    execute if predicate api:area/is_breakable run function asset:mob/0365.frestchika/tick/base_move/stuck_revenge/
