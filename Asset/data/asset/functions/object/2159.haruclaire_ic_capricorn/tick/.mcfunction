@@ -17,5 +17,5 @@
     execute if entity @s[tag=2159.Attack] run function asset:object/2159.haruclaire_ic_capricorn/tick/attack
 
 # 消滅処理
-    execute if entity @s[tag=2159.Attack,scores={General.Object.Tick=45..}] run tag @s add AK.IceCreature.Remove
+    execute if entity @s[tag=2159.Attack,scores={General.Object.Tick=50..}] run tag @s add AK.IceCreature.Remove
     execute if entity @s[tag=AK.IceCreature.Remove] run function asset:object/2159.haruclaire_ic_capricorn/tick/kill

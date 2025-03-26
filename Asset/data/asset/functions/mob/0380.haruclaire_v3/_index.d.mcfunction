@@ -26,6 +26,8 @@
     #declare function animated_java:haruclaire_aj/animations/25_0_second_icebullet_duo/tween
     #declare function animated_java:haruclaire_aj/animations/27_0_second_icepillar/tween
     #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
+    #declare function animated_java:haruclaire_aj/animations/26_0_second_ice_cremation_first/tween
+    #declare function animated_java:haruclaire_aj/animations/26_1_second_ice_cremation_short/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -71,10 +73,14 @@
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #declare tag AK.Skill.IceWallDuo アイスウォール
     #declare tag AK.Skill.IcePillarDuo アイスピラー
+    #declare tag AK.Skill.IceCremation.Dash アイスクリメーション・連続突進
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置
     #declare tag AK.IceSpear.Spread アイススピア召喚位置
+    #declare tag AK.IceCrepation.Pos アイスクリメーション召喚位置
+    #declare tag AK.IceCrepation.Pos.A アイスクリメーション召喚位置
+    #declare tag AK.IceCrepation.Pos.B アイスクリメーション召喚位置
     #
     # - 一時タグ
     #declare tag AK.Temp.Ground 接地用
