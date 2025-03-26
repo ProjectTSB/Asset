@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:effect/0317.aurora_speed/_/end",
+        "asset:effect/0316.aurora_slash/_/end",
+        "asset:effect/0315.charge_of_aurora_scythe/_/end",
+        "asset:effect/0318.arbit/_/end",
+        "asset:effect/0034.regeneration/_/end",
+        "asset:effect/0313.firesprint/_/end",
         "asset:effect/0014.receive_heal_debuff/_/end",
         "asset:effect/0294.dance_with_hardluck/_/end",
         "asset:effect/0293.beyond_the_speed/_/end",
