@@ -1,4 +1,4 @@
-#> asset:mob/1004.tultaria/tick/void/damage
+#> asset:mob/1004.tultaria/tick/void/damaging_levitation
 #
 # 奈落落下時のダメージや演出
 #
