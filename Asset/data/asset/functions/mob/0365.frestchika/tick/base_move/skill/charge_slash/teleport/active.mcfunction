@@ -4,7 +4,7 @@
 #
 # @within function
 #   asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/recursive
-#   asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/recursive_thunder
+#   asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/teleport/recursive_unless_breakable
 
 # 自分の位置にマーカーを召喚
     execute at @s run summon marker ~ ~ ~ {Tags:["A5.Marker","A5.Marker.Aim"]}
