@@ -1,11 +1,11 @@
-#> asset:object/2159.haruclaire_ic_capricorn/tick/kill
+#> asset:object/2160.haruclaire_ic_taurus/tick/kill
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2159.haruclaire_ic_capricorn/tick/
+# @within asset:object/2160.haruclaire_ic_taurus/tick/
 
 # ajモデル消去
-    execute on passengers run function animated_java:ic_capri_aj/remove/this
+    execute on passengers run function animated_java:ic_tau_aj/remove/this
 
 # 自身を消去
     kill @s

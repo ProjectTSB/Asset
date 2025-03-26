@@ -1,16 +1,11 @@
-#> asset:object/2159.haruclaire_ic_capricorn/tick/kill
+#> asset:object/2160.haruclaire_ic_taurus/tick/effect_break
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2159.haruclaire_ic_capricorn/tick/
-
-# ajモデル消去
-    execute on passengers run function animated_java:ic_capri_aj/remove/this
-
-# 自身を消去
-    kill @s
+# @within asset:object/2160.haruclaire_ic_taurus/tick/idle
 
 # 演出
+    data modify entity @s item set value {id:"minecraft:air",Count:1b}
     particle block ice ~ ~1 ~ 1 1 1 0 40
     particle end_rod ~ ~1 ~ 1 1 1 0.3 10
     particle firework ~ ~1 ~ 1 1 1 0.3 10
