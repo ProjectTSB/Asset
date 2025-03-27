@@ -14,15 +14,15 @@
     item replace entity @s armor.head with stick{CustomModelData:20211}
 
 # ダメージ設定
-    data modify storage lib: Argument.Damage set value 35f
-    data modify storage lib: Argument.AttackType set value "Physical"
-    data modify storage lib: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.Damage set value 38f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
 
 # 補正実行
-    function lib:damage/modifier
+    function api:damage/modifier
 
 # ダメージを与える
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function lib:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
 
 # 吹き飛ばし
     data modify storage api: Argument.ID set value 125
@@ -32,7 +32,7 @@
     function api:entity/mob/effect/reset
 
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
 
 # パーティクル
     particle smoke ~ ~0.1 ~ 1 0.1 1 0.02 100

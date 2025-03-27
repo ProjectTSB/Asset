@@ -18,20 +18,17 @@
 # 立方体範囲内のプレイヤーにtag付け
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 2.5
-    data modify storage lib: args.dz set value 30.0
+    data modify storage lib: args.dz set value 15.0
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..64]"
     execute positioned ^ ^ ^15 run function lib:rotatable_dxyz/m with storage lib: args
 
-# ダメージを与える
-    # データ設定
-        data modify storage api: Argument.Damage set value 55.0f
-        data modify storage api: Argument.AttackType set value "Magic"
-        data modify storage api: Argument.ElementType set value "Fire"
-    # tag付けされたプレイヤーにダメージを与える
-        function api:damage/modifier
-        execute as @a[tag=DXYZ,distance=..64] run function api:damage/
-
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
+    execute as @a[tag=DXYZ,distance=..64] run function api:damage/
     function api:damage/reset
 
 # tagリセット

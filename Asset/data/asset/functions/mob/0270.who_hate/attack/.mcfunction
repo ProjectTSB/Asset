@@ -14,14 +14,14 @@
 
 # 属性ダメージ
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 10.4f
+        data modify storage api: Argument.Damage set value 11.0f
     # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # 補正functionを実行
-        function lib:damage/modifier
+        function api:damage/modifier
     # プレイヤー対象に
-        execute as @p[tag=Victim] run function lib:damage/
+        execute as @p[tag=Victim] run function api:damage/
     # リセット
-        function lib:damage/reset
+        function api:damage/reset

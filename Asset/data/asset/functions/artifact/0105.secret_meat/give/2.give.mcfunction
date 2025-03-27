@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"謎肉","color":"light_purple"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"謎に包まれた肉。なんの動物かもわからない。"}]','[{"text":"食べると全回復し、攻撃力とMP回復量が上昇するが"}]','[{"text":"回復を拒むようになる。"}]','[{"text":"また、効果が終わった時には反動を受ける。"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"食べると体力を66.6回復し"}','{"text":"攻撃+20%とMP回復量+50%を30秒間得るが"}','{"text":"その間は回復を拒むようになる"}','{"text":"また、効果が終わった時には反動を受ける"}','{"text":"謎に包まれた肉。なんの動物かもわからない。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     data modify storage asset:artifact SpecialCooldown set value 1200
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

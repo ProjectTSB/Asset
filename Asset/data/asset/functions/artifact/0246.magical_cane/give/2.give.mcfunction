@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"マジカルステッキ","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"MPを全て消費","color":"red"},{"text":"し、","color":"white"},{"text":"超強力","color":"gold"},{"text":"な攻撃をぶちかます。","color":"white"}]','[{"text":"天使に対してはダメージが","color":"white"},{"text":"半減","color":"red"},{"text":"する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"MPを全て消費","color":"red"},{"text":"し、","color":"white"},{"text":"超強力","color":"gold"},{"text":"な攻撃をぶちかます。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,11 +29,11 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value "{消費MP×10}"
+    data modify storage asset:artifact AttackInfo.Damage set value "{消費MP×12}"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.ElementType set value [None]
+    data modify storage asset:artifact AttackInfo.ElementType set value [None]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
@@ -46,8 +46,11 @@
     data modify storage asset:artifact MPRequire set value 0
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 1200
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 100
 # グローバルクールダウン (int) (オプション)
-    data modify storage asset:artifact SpecialCooldown set value 600
+    # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)

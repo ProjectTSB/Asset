@@ -14,8 +14,7 @@
     data modify storage asset:temp Random set value [248,249,250,251]
 
 # 0~3の乱数を取得する
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $4 Const
+    execute store result score $Random Temporary run random value 0..3
 
 # (乱数)番目のIDのEffectのIDを代入する
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
@@ -24,18 +23,17 @@
     execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
 
 # (乱数)番目のIDを配列から削除
-    execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
-    execute if score $Random Temporary matches 1 run data modify storage api: Argument.ID set from storage asset:temp Random[1]
-    execute if score $Random Temporary matches 2 run data modify storage api: Argument.ID set from storage asset:temp Random[2]
-    execute if score $Random Temporary matches 3 run data modify storage api: Argument.ID set from storage asset:temp Random[3]
+    execute if score $Random Temporary matches 0 run data remove storage asset:temp Random[0]
+    execute if score $Random Temporary matches 1 run data remove storage asset:temp Random[1]
+    execute if score $Random Temporary matches 2 run data remove storage asset:temp Random[2]
+    execute if score $Random Temporary matches 3 run data remove storage asset:temp Random[3]
 
 # 付与する
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 0~2の乱数を取得する
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # (乱数)番目のIDのEffectのIDを代入する
     execute if score $Random Temporary matches 0 run data modify storage api: Argument.ID set from storage asset:temp Random[0]
@@ -48,3 +46,4 @@
 
 # リセット
     data remove storage asset:temp Random
+    scoreboard players reset $Random Temporary

@@ -9,11 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 発光を付与
-    effect give @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..30] minecraft:glowing 60 0 true
-
-# パーティクル
-    execute at @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..30] run particle end_rod ~ ~ ~ 1 1 1 0.1 100 force @a[distance=..30]
-
-# SE
-    playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 20 1
+# 光玉を召喚
+    execute if predicate lib:is_sneaking as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..15] at @s anchored eyes positioned ^ ^ ^ run function asset:artifact/0022.amen_ra_rod/trigger/summon_1
+    execute unless predicate lib:is_sneaking at @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..15] anchored eyes positioned ^ ^ ^ run function asset:artifact/0022.amen_ra_rod/trigger/summon_2

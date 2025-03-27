@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/371/summon
 
 # 元となるMobを召喚する
-    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}
+    summon zombie ~ ~ ~ {NoAI:1b,Silent:1b,Tags:["MobInit","ProcessCommonTag","AlwaysInvisible"],DeathLootTable:"asset:mob/death/0371.lightning_spellbook"}

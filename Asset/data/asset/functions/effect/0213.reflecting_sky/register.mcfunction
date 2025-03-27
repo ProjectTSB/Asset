@@ -30,5 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # エフェクトを消す際に必要なLv (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
+
 # フィールド (本当はこういうのはスタックでやったほうがいい)
     # data modify storage asset:effect Field

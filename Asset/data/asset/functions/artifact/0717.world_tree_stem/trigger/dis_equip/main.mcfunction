@@ -12,7 +12,11 @@
 # 以下の補正を消す
 
 # 移動速度+5％
-    attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-02cd00000004
+    # attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-02cd00000004
+
+# 回復量
+    data modify storage api: Argument.UUID set value [I;1,1,717,4]
+    function api:modifier/heal/remove
 
 # 最大体力+5%
     data modify storage api: Argument.UUID set value [I;1,1,717,4]

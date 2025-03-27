@@ -42,11 +42,11 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 5000
+    data modify storage asset:mob Health set value 32000
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 1
+    # data modify storage asset:mob AttackDamage set value 1
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
-    data modify storage asset:mob Defense set value 0
+    # data modify storage asset:mob Defense set value 0
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
@@ -57,11 +57,11 @@
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Physical set value
+        data modify storage asset:mob Resist.Physical set value 1.2
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 0.7
+        data modify storage asset:mob Resist.Magic set value 0.85
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.7
+        data modify storage asset:mob Resist.Fire set value 0.85
     # 水倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Water set value
     # 雷倍率 (float) (オプション)
@@ -70,6 +70,7 @@
 # フィールド
 # 各スキルのダメージ設定
     data modify storage asset:mob Field.Damage.Vanilla set value 14.0f
-    data modify storage asset:mob Field.Damage.Giant set value {Beginning:8f,Clash:15f}
+    data modify storage asset:mob Field.Damage.Giant.Neutral set value {Beginning:8f,Clash:15f}
+    data modify storage asset:mob Field.Damage.Giant.Penalty set value {Beginning:8f,Clash:22.5f}
     data modify storage asset:mob Field.Damage.Missile set value 8.0f
-    data modify storage asset:mob Field.Damage.Rain set value 14.0f
+    data modify storage asset:mob Field.Damage.Rain set value 12.0f

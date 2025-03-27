@@ -6,7 +6,7 @@
 
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 2168
-    data modify storage api: Argument.FieldOverride set value {Scale:[0.25f,60f,0.25f],Color:65535,DisappearInterpolation:2,LifeTime:10}
+    data modify storage api: Argument.FieldOverride set value {Scale:[0.25f,30f,0.25f],Color:65535,DisappearInterpolation:2,LifeTime:10}
     function api:object/summon
 
 # パーティクル
@@ -16,13 +16,13 @@
 # 立方体範囲内のプレイヤーにtag付け
     data modify storage lib: args.dx set value 0.5
     data modify storage lib: args.dy set value 1.5
-    data modify storage lib: args.dz set value 60.0
+    data modify storage lib: args.dz set value 15.0
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..64]"
-    execute positioned ^ ^-1 ^30 run function lib:rotatable_dxyz/m with storage lib: args
+    execute positioned ^ ^-1 ^15 run function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージを与える
     # データ設定
-        data modify storage api: Argument.Damage set value 20.0f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Laser
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "None"
     # tag付けされたプレイヤーにダメージを与える

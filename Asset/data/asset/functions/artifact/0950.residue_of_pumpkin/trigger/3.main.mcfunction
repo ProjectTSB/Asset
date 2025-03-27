@@ -14,7 +14,10 @@
     particle dust 0.851 0 1 1 ~ ~1.2 ~ 0.6 0.4 0.6 0 100 normal @a
     playsound entity.witch.celebrate player @a ~ ~ ~ 0.8 1.8 0
 
-# 効果
-    effect give @s speed 30 0 true
-    effect give @s night_vision 30 0 true
-    effect give @s saturation 5 0 true
+# 満腹度回復
+    effect give @s saturation 2 0 true
+
+# バフ
+    data modify storage api: Argument.ID set value 304
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

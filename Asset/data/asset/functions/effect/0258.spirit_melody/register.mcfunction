@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text:":"精霊の旋律","color":"#B0FFD7"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text:":"継続的に周囲のプレイヤーの体力を回復する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
@@ -30,6 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field set value {}

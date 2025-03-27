@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"支配"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"視界が揺れる"}'
+    data modify storage asset:effect Description set value '{"text":"敵に釘付けになる"}'
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value 20
 # スタック (int) (default = API || 1)
@@ -30,6 +30,10 @@
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 2
+# エフェクトをUIに表示するか (boolean) (default = true)
+    # data modify storage asset:effect Visible set value
+# エフェクトのスタックををUIに表示するか (boolean) (default = true)
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field.myValue set value

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"血塗られた矜持","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"発動時、体力を最大体力の値に応じて回復する。","color":"white"}]','[{"text":"かつて誇り高き戦士がつけていた花。","color":"gray"}]','[{"text":"今はもう","color":"gray"},{"text":"鮮血","color":"dark_red"},{"text":"に染まり、無垢だった色の面影はない。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"体力を最大体力の1.5%","color":"white"},{"text":"\\u0002","font":"space"},{"text":"+","color":"white"},{"text":"\\u0002","font":"space"},{"text":"1回復する","color":"white"}]','[{"text":"かつて誇り高き戦士がつけていた花","color":"gray"}]','[{"text":"今はもう","color":"gray"},{"text":"鮮血","color":"dark_red"},{"text":"に染まり、無垢だった色の面影はない","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -48,6 +48,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 60
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -55,7 +58,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

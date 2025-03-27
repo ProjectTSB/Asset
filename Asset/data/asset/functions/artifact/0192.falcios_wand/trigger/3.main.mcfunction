@@ -10,15 +10,20 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @a[distance=..15] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..30]
-    playsound minecraft:entity.arrow.hit_player player @a[distance=..15] ~ ~ ~ 20 1
+    execute at @a[distance=..8] run particle minecraft:heart ~ ~0.5 ~ 0.3 0.5 0.3 1 5 force @a[distance=..16]
+    playsound minecraft:entity.arrow.hit_player player @a[distance=..8] ~ ~ ~ 20 1
     execute positioned ~ ~4 ~ run function asset:artifact/0192.falcios_wand/trigger/vfx/
 
 # 回復
-    data modify storage lib: Argument.Heal set value 16
-    function lib:heal/modifier
-    execute as @a[distance=..15] run function lib:heal/
-    effect give @a[distance=..15] regeneration 8 2 true
+    data modify storage api: Argument.Heal set value 28.0f
+    function api:heal/modifier
+    execute as @a[distance=..8] run function api:heal/
+    function api:heal/reset
 
-# リセット
-    function lib:heal/reset
+# 再生
+    data modify storage api: Argument.ID set value 301
+    data modify storage api: Argument.Stack set value 3
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    data modify storage api: Argument.FieldOverride.Heal set value 3.0
+    execute as @a[distance=..8] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

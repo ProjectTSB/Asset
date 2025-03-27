@@ -35,7 +35,7 @@
 # 元の地点に戻る
     # ハード未満
         execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 140 at @s run function asset:mob/0311.blazing_inferno/tick/base_move/return_to_rail
-   # ハード以上
+    # ハード以上
         execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 120 at @s run function asset:mob/0311.blazing_inferno/tick/base_move/return_to_rail
 
 # リセット

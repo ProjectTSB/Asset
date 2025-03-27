@@ -22,16 +22,16 @@
         execute as @a run function asset:artifact/0522.humanism/trigger/heal
 
 # MP回復処理
-    execute as @a[tag=!this] run function asset:artifact/0522.humanism/trigger/mp_heal
+    execute as @a run function asset:artifact/0522.humanism/trigger/mp_heal
 # ダメージ処理
-    # 全プレイヤーの周囲50Mの敵に魔法・水属性ダメージ
-        data modify storage lib: Argument.Damage set value 1700f
-        data modify storage lib: Argument.AttackType set value "Magic"
-        data modify storage lib: Argument.ElementType set value "Water"
-        function lib:damage/modifier
+    # 全プレイヤーの周囲50Mの敵に魔法ダメージ
+        data modify storage api: Argument.Damage set value 1900f
+        data modify storage api: Argument.AttackType set value "Magic"
+        data modify storage api: Argument.ElementType set value "None"
+        function api:damage/modifier
         execute at @a run tag @e[tag=Enemy,tag=!Uninterferable,distance=..50] add EI.Target
-        execute as @e[tag=EI.Target] run function lib:damage/
-        function lib:damage/reset
+        execute as @e[tag=EI.Target] run function api:damage/
+        function api:damage/reset
 
 # タグリセット
     execute at @a run tag @e[tag=EI.Target,tag=!Uninterferable,distance=..50] remove EI.Target

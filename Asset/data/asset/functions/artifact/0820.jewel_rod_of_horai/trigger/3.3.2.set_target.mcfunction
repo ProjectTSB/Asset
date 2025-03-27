@@ -8,8 +8,8 @@
 
 #> prv
 # @private
-  #declare tag MS.BlockChecker
-  #declare tag MS.TargetCandidate
+    #declare tag MS.BlockChecker
+    #declare tag MS.TargetCandidate
 
 # ブロック検知用のdummyエンティティと攻撃発生地点のエンティティセット
     execute rotated as @s run tp 0-0-0-0-0 0.0 0.0 0.0 ~ ~

@@ -1,5 +1,13 @@
 {
     "values": [
+        "asset:artifact/0908.spear_of_butterfly/trigger/1.trigger",
+        "asset:artifact/1205.electric_fly_swatter/trigger/1.trigger",
+        "asset:artifact/1193.firebrand/trigger/1.trigger",
+        "asset:artifact/1202.scrap_maker/trigger/1.trigger",
+        "asset:artifact/1174.sanguis/trigger/1.trigger",
+        "asset:artifact/1200.alchemy_hammer/trigger/1.trigger",
+        "asset:artifact/1175.rubber_mallet/trigger/1.trigger",
+        "asset:artifact/1192.celestial_harmony/trigger/1.trigger",
         "asset:artifact/1216.sharpened_netherite_axe/trigger/1.trigger",
         "asset:artifact/1215.sharpened_diamond_axe/trigger/1.trigger",
         "asset:artifact/1214.sharpened_golden_axe/trigger/1.trigger",
@@ -27,7 +35,6 @@
         "asset:artifact/0959.whirlwind_scabbard/trigger/1.trigger",
         "asset:artifact/0927.lexiel_s_oath/trigger/1.trigger",
         "asset:artifact/0931.d_u_t_y/trigger/1.trigger",
-        "asset:artifact/0897.lightning_broach/trigger/1.trigger",
         "asset:artifact/0756.sakura_hubuki/trigger/1.trigger",
         "asset:artifact/0910.ignite/trigger/1.trigger",
         "asset:artifact/0077.swords_of_waterfall_climbing/trigger/1.trigger",

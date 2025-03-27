@@ -11,7 +11,7 @@
     execute unless entity @s[distance=..2] if predicate lib:random_pass_per/25 run particle minecraft:glow ~ ~ ~ 0.15 0.15 0.15 0 1 force
 
 # 接触時判定
-    execute if entity @s[distance=..45] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[tag=Enemy,dx=0] add PrismDamage
+    execute if entity @s[distance=..45] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[tag=Enemy,tag=!Uninterferable,dx=0] add PrismDamage
 
 # 前進
     execute if entity @s[distance=..45] if block ~ ~ ~ #lib:no_collision positioned ^ ^ ^0.5 run function asset:artifact/0573.final_prism/trigger/final_laser

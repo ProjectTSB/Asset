@@ -12,24 +12,24 @@
 # 没収されたアイテムの個数を取得
     execute store result score @s Temporary run function api:lost_items/get_length
 
-# 没収されたアイテム * 4の値を設定
-    scoreboard players operation @s Temporary *= $4 Const
+# 没収されたアイテム * 11の値を設定
+    scoreboard players operation @s Temporary *= $11 Const
 
-# 最大値をきめる
-    execute if score @s Temporary matches 2300.. run scoreboard players set @s Temporary 2300
+# ダメージ最大値設定
+    scoreboard players set $MaxDamage Temporary 4400
+    scoreboard players operation @s Temporary < $MaxDamage Temporary
+
+# 演出
+    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] positioned ~ ~1 ~ summon marker run function asset:artifact/0605.ambition/trigger/vfx/
 
 # ダメージ
-    # 与えるダメージ
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get @s Temporary
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "None"
-    # 補正functionを実行
-        function lib:damage/modifier
-    # 攻撃したモブ1体を対象に
-        execute as @e[type=#lib:living,type=!player,tag=Victim] run function lib:damage/
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get @s Temporary
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim] run function api:damage/
+    function api:damage/reset
 
 # リセット
     scoreboard players reset @s Temporary
-    function lib:damage/reset
+    scoreboard players reset $MaxDamage Temporary

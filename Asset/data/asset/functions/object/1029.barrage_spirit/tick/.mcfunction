@@ -9,8 +9,7 @@
     #declare tag MoveMarker
 
 # 同IDのプレイヤーを特定
-    execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a[distance=..60] if score $OwnerID Temporary = @p UserID as @p run tag @s add 1029.OwnerPlayer
+    execute as @a[distance=..60] if score @s UserID = @e[type=armor_stand,tag=this,distance=..0.01,limit=1] 1029.UserID run tag @s add 1029.OwnerPlayer
 
 # マスターにMarkerを召喚する
     execute at @p[tag=1029.OwnerPlayer,distance=..60] rotated ~ 0 run summon marker ^-1 ^1 ^-1 {Tags:[MoveMarker]}
@@ -22,10 +21,10 @@
     execute facing entity @e[type=marker,tag=MoveMarker,distance=0.5..1,limit=1] eyes run tp @s ^ ^ ^0.1
 
 # 付近に敵がいたら攻撃モードへと移行
-    execute if entity @e[type=#lib:living,tag=Enemy,distance=..15] run tag @s add 1029.AttackMode
+    execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15] run tag @s add 1029.AttackMode
 
 # 付近に敵がいたらそっちへの攻撃を優先
-    execute facing entity @e[type=#lib:living,tag=Enemy,distance=..15,sort=nearest,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.05 ~ ~
+    execute facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15,sort=nearest,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.05 ~ ~
 
 # ポーズ
     # (待機)
@@ -58,7 +57,7 @@
 
 # ヘルス
     scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches 400 run function asset:object/1029.barrage_spirit/tick/disapper
+    execute if score @s General.Object.Tick matches 300 run function asset:object/1029.barrage_spirit/tick/disapper
 
 # リセット
     kill @e[type=marker,tag=MoveMarker]

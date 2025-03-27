@@ -14,14 +14,16 @@
 
 # 演出
     execute anchored eyes run particle dust 1 0.31 0.91 0.3 ^ ^ ^ 0.4 0.4 0.4 0 20 normal @s
-# MP回復
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $6 Const
+# MP回復量を計算
+    execute store result score $Random Temporary run random value 0..5
     scoreboard players set $Fluctuation Temporary 30
     execute store result storage api: Argument.Fluctuation int 1 run scoreboard players operation $Fluctuation Temporary -= $Random Temporary
-    function api:mp/fluctuation
+
 # 通知
-    tellraw @s ["[ ",{"score": {"name": "$Random","objective": "Temporary"},"color": "light_purple"},{"text": " ] MPが天使の取り分となり、[ ","color": "white"},{"score": {"name": "$Fluctuation","objective": "Temporary"},"color": "green"},{"text": " ] MPが回復した！","color": "white"}]
+    tellraw @s ["[ ",{"score": {"name": "$Random","objective": "Temporary"},"color": "light_purple"},{"text": " ] MPが天使の取り分となり、[ ","color": "white"},{"storage":"api:","nbt":"Argument.Fluctuation","color": "green"},{"text": " ] MPが回復した！","color": "white"}]
+
+# 回復
+    function api:mp/fluctuation
 
 # リセット
     scoreboard players reset $Random

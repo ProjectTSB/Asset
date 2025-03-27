@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Z旗","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃力が25%上がり、防御力が35%下がる。"}','{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":true}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":true}']
+    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+25% ","color":"dark_green"},{"text":"耐性-35%","color":"dark_red"}]','{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":true}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -46,6 +46,9 @@
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

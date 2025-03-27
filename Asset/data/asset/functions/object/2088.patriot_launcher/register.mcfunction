@@ -16,10 +16,15 @@
     data modify storage asset:object ID set value 2088
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
-    data modify storage asset:object Field.Durability set value 10
+    data modify storage asset:object Field.Durability set value 5
+    data modify storage asset:object Field.MaxDurability set value 5
     data modify storage asset:object Field.RepairTime set value 0
     data modify storage asset:object Field.MaxRepairTime set value 51200
     data modify storage asset:object Field.IsBroken set value 0b
     data modify storage asset:object Field.IsActive set value 1b
     data modify storage asset:object Field.MissileCooltime set value 0
-    data modify storage asset:object Field.MaxMissileCooltime set value 220
+    data modify storage asset:object Field.MaxMissileCooltime set value 140
+    data modify storage asset:object Field.ReloadStartTime set value 120
+    data modify storage asset:object Field.ReloadEndTime set value 35
+    data modify storage asset:object Field.TurretResetStartTime set value 125
+    data modify storage asset:object Field.TurretResetEndTime set value 120

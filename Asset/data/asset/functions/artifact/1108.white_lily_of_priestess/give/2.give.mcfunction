@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"巫女の白百合","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲の2名の解除可能なデバフを2つ解除する。","color":"white"}','{"text":"(自身を除くデバフが最も多いプレイヤーを優先)","color":"white"}','{"text":"純白の巫女にも喩えられる白き花。","color":"gray"}','{"text":"穢れた世界でも優しい白い光を放つ。 ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲20mの2名の解除可能なデバフを2つ解除する","color":"white"}','{"text":"(自身を除くデバフが最も多いプレイヤーを優先)","color":"white"}','{"text":"純白の巫女にも喩えられる白き花","color":"gray"}','{"text":"穢れた世界でも優しい白い光を放つ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -43,11 +43,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 16
+    data modify storage asset:artifact MPCost set value 20
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 280
+    data modify storage asset:artifact LocalCooldown set value 160
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    # data modify storage asset:artifact TypeCooldown.Type set value
+    # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

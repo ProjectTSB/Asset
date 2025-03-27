@@ -22,7 +22,7 @@
     execute if predicate api:global_vars/difficulty/min/hard if score $CurrentTick Temporary matches 5.. run tag @s add CanReflect
 
 # 反射攻撃実行
-    execute if entity @s[tag=CanReflect] anchored eyes facing entity @p[tag=Attacker,distance=..32] eyes anchored feet positioned ^ ^1 ^ summon marker run function asset:mob/0114.jewel_hunter/hurt/reflect
+    execute if entity @s[tag=CanReflect] run function asset:mob/0114.jewel_hunter/hurt/reflect
 
 # 反射したTickを記録
     execute if entity @s[tag=CanReflect] store result storage asset:context this.LatestReflectTick int 1 run time query gametime
