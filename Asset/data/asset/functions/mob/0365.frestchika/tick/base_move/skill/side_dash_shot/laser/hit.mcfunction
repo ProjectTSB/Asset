@@ -5,9 +5,8 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/laser/recursive
 
 # 演出
-    particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 0
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 20
-    playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1 1.5
+    playsound minecraft:block.fire.extinguish neutral @a ~ ~ ~ 1 2
 
 # ダメージ
     data modify storage api: Argument.Damage set value 20.0f

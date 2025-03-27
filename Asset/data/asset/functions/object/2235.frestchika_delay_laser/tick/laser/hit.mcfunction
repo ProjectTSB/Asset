@@ -5,9 +5,8 @@
 # @within function asset:object/2235.frestchika_delay_laser/tick/laser/recursive
 
 # 演出
-    particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 0
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 20
-    playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 1 1.5
+    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
+    playsound minecraft:block.fire.extinguish neutral @a ~ ~ ~ 1 2
 
 # ダメージ数値設置
     data modify storage api: Argument.Damage set value 25.0f
