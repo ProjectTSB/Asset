@@ -1,7 +1,7 @@
 {
     "values": [
         "asset:artifact/0728.magatama_of_soul_eating/trigger/1.trigger",
-        "asset:artifact/0566.great_sage_helmet/trigger/fullset/kill/check",
+        "asset:artifact/0566.great_sage_helmet/kill/1.trigger",
         "asset:artifact/0950.residue_of_pumpkin/trigger/1.trigger",
         "asset:artifact/1083.tablet_of_oracle/trigger/1.trigger"
     ]
