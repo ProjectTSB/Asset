@@ -5,7 +5,7 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/side_dash_shot/laser/recursive
 
 # 演出
-    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 20
+    particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
     playsound minecraft:block.fire.extinguish neutral @a ~ ~ ~ 1 2
 
 # ダメージ
