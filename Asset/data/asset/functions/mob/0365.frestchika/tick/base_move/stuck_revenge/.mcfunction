@@ -14,6 +14,7 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $5 Const
     execute if score $Interval Temporary matches 0 if score @s A5.Count.Stuck matches 20.. run playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 1 0.5
+    scoreboard players reset $Interval
 
 # カウントが更に貯まると出現地点を中心にワープする
     execute if score @s A5.Count.Stuck matches 40.. run function asset:mob/0365.frestchika/tick/base_move/stuck_revenge/explosion
