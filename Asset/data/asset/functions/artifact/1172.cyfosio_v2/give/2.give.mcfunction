@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"サイフォジオ","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"剣を地面に突き刺し、周囲3mのプレイヤーの体力を16回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"剣を地面に突き刺し、周囲3mのプレイヤーの体力を15回復する"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -46,7 +46,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "heal"
-    data modify storage asset:artifact TypeCooldown.Duration set value 300
+    data modify storage asset:artifact TypeCooldown.Duration set value 80
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
