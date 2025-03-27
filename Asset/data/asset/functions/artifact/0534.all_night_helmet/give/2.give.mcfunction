@@ -1,9 +1,9 @@
-#> asset:artifact/0534.all_night_hellmet/give/2.give
+#> asset:artifact/0534.all_night_helmet/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0534.all_night_hellmet/give/1.trigger
+# @within function asset:artifact/0534.all_night_helmet/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -55,6 +55,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equip.SetID set value 241
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

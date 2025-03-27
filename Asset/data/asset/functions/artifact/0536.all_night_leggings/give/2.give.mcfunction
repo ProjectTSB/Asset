@@ -55,10 +55,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equip.SetID set value 241
+# 装備時ステータス補正 (Component[]) (オプション)
+    data modify storage asset:artifact Equip.Modifiers set value [{Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,536,4],Slot:"legs"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.2,Operation:1,UUID:[I;1,1,536,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
+    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,536,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
 
 # 神器の入手用function
     function asset:artifact/common/give
