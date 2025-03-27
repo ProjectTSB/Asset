@@ -1,8 +1,8 @@
-#> asset:artifact/0563.heartland/trigger/fullset/tick/foreach
+#> asset:artifact/0562.heartland/trigger/foreach
 #
 #
 #
-# @within function asset:artifact/0563.heartland/trigger/fullset/tick/main
+# @within function asset:artifact/0562.heartland/trigger/3.main
 
 data modify storage api: Argument.ID set value 266
 function api:entity/mob/effect/get/from_id
