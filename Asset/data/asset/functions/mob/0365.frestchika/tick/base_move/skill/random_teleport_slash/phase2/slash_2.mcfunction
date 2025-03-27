@@ -6,7 +6,7 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.RandomTeleportSlash
     # 属性1
         data modify storage api: Argument.AttackType set value "Physical"
     # 属性2

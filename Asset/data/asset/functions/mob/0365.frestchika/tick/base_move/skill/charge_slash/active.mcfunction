@@ -8,7 +8,7 @@
 
 # ダメージ設定(ダッシュ部分)
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 40.0f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.ChargeSlash
     # 属性1
         data modify storage api: Argument.AttackType set value "Physical"
     # 属性2

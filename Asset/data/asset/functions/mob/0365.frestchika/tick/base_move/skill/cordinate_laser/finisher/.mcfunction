@@ -16,7 +16,7 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 60.0f
+        from storage asset:context this.Damage.SuperCordinateLaser
     # 魔法属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性

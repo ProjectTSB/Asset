@@ -5,7 +5,7 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/charge_slash/phase2
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.ChargeSlashThunder
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier

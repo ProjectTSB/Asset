@@ -37,5 +37,22 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.7
 # フィールド
-# スキルのリスト
-    data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
+    # スキルのリスト
+        data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
+    # ダメージ
+        # ダッシュ斬り
+            data modify storage asset:mob Field.Damage.FrontDashSlash set value 40f
+        # 居合
+            data modify storage asset:mob Field.Damage.ChargeSlash set value 50f
+        # ワープ斬り
+            data modify storage asset:mob Field.Damage.RandomTeleportSlash set value 50f
+        # 直接発射レーザー
+            data modify storage asset:mob Field.Damage.RapidLaser set value 25f
+        # ディレイレーザー
+            data modify storage asset:mob Field.Damage.DelayLaser set value 25f
+        # 座標レーザー(小)
+            data modify storage asset:mob Field.Damage.CordinateLaser set value 40f
+        # 座標レーザー(大)
+            data modify storage asset:mob Field.Damage.SuperCordinateLaser set value 60f
+        # 居合サンダー
+            data modify storage asset:mob Field.Damage.ChargeSlashThunder set value 50f

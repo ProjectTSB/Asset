@@ -1,5 +1,4 @@
 #> asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/slash_1
-
 #
 #
 #
@@ -7,7 +6,7 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.RandomTeleportSlash
     # 属性1
         data modify storage api: Argument.AttackType set value "Physical"
     # 属性2

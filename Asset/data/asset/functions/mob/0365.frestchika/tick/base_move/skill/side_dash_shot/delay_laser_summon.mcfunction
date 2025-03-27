@@ -6,6 +6,7 @@
 
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 2235
+    execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.DelayLaser
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get @s Temporary
     execute facing entity @r[gamemode=!spectator,distance=..64] eyes run function api:object/summon
