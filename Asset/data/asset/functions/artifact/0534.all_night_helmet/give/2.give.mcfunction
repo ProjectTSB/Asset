@@ -1,9 +1,9 @@
-#> asset:artifact/0534.all_night_hellmet/give/2.give
+#> asset:artifact/0534.all_night_helmet/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0534.all_night_hellmet/give/1.trigger
+# @within function asset:artifact/0534.all_night_helmet/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"夜の間、終夜をすべて着ている状態"}'
+    # data modify storage asset:artifact Condition set value '{"text":"夜の間、終夜をすべて着ている状態"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [15]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -45,16 +45,18 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 50
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:241,Visible:true}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

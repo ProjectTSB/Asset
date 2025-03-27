@@ -1,4 +1,4 @@
-#> asset:artifact/0534.all_night_hellmet/register
+#> asset:artifact/0534.all_night_helmet/register
 #
 # 神器プールへの登録処理
 #
