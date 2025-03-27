@@ -1,8 +1,8 @@
-#> asset:artifact/0364.red_knights_sword/trigger/combo/damage
+#> asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/weak/damage
 #
 #
 #
-# @within function asset:artifact/0364.red_knights_sword/trigger/combo/**
+# @within function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/**
 
 # 引数の設定
     # ダメージ値設定

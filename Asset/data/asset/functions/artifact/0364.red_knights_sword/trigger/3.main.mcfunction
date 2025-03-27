@@ -23,16 +23,11 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/auto
 
-# コンボカウント加算
-    scoreboard players add @s A4.Combo 1
-
 # 攻撃
-    execute if score @s A4.Combo matches 1 anchored eyes run function asset:artifact/0364.red_knights_sword/trigger/combo/slash1
-    execute if score @s A4.Combo matches 2 anchored eyes run function asset:artifact/0364.red_knights_sword/trigger/combo/slash2
-    execute if score @s A4.Combo matches 3 anchored eyes run function asset:artifact/0364.red_knights_sword/trigger/combo/slash3
-
-# リセット
-    scoreboard players reset $A4.Temp Temporary
+    # スニークなし: メイン攻撃
+        execute unless predicate lib:is_sneaking run function asset:artifact/0364.red_knights_sword/trigger/main_attack/
+    # スニークあり: サブ攻撃
+        execute if predicate lib:is_sneaking run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/
 
 ## 乱数取得
 #    execute store result score $Random Temporary run random value 0..2
