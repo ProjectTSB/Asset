@@ -4,9 +4,6 @@
 #
 # @within asset:mob/alias/365/init
 
-# DeathTime設定
-    data modify entity @s DeathTime set value 19
-
 # 出現座標を記憶する
     summon marker ~ ~ ~ {Tags:["A5.Marker.SpawnPoint","A5.Marker"]}
 
