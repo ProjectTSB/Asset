@@ -53,6 +53,12 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equip.SetID set value 236
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equip.Modifiers set value []
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"generic.movement_speed",Amount:0.30d,Operation:"multiply_base"}
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
