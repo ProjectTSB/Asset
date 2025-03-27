@@ -50,6 +50,15 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# 装備時効果 (Component[]) (オプション)
+    data modify storage asset:artifact Equip.SetID set value 256
+# 装備時ステータス補正 (int) (オプション)
+    data modify storage asset:artifact Equip.Modifiers set value []
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"attack/magic",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"defense/magic",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"attack/physical",Amount:-0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"defense/physical",Amount:-0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"mp_regen",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
