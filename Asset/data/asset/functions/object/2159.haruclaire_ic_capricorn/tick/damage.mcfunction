@@ -22,7 +22,7 @@
         data modify storage api: Argument.Damage set from storage asset:context this.Damage
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Water"
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは やぎに おなかを つらぬかれた","with":[{"selector":"@s"}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは はしるやぎに ひかれた","with":[{"selector":"@s"}]}]'
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
         execute as @a[tag=DXYZ,tag=!PlayerShouldInvulnerable] run function api:damage/

@@ -25,7 +25,8 @@
 
 # 演出
     execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
-    execute if score @s AK.EventTimer matches 30 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
+    execute if score @s AK.EventTimer matches 27 at @s positioned ~ ~4 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/particle
+    execute if score @s AK.EventTimer matches 27 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
 
 # 終了
     execute if score @s AK.EventTimer matches 62.. run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/end

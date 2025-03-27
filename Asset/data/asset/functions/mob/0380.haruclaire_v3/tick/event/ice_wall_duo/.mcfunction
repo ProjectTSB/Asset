@@ -22,7 +22,7 @@
         execute if score @s AK.EventTimer matches 37 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 37 at @s run particle electric_spark ^-0.6 ^3 ^ 0 0 0 0.5 30
     # 攻撃
-        execute if score @s AK.EventTimer matches 15 at @s positioned as @p[tag=AK.MainTarget,distance=..100] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/summon_attack_pos_start
+        execute if score @s AK.EventTimer matches 15 at @s rotated ~ 0 run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/summon_attack_pos_start
         execute if score @s AK.EventTimer matches 15 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=2] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/attack
         execute if score @s AK.EventTimer matches 18 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=2] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/attack
         execute if score @s AK.EventTimer matches 21 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=random,limit=2] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/attack

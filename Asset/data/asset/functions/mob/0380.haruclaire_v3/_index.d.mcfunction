@@ -78,6 +78,9 @@
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置
     #declare tag AK.IceSpear.Spread アイススピア召喚位置
+    #declare tag AK.IceWall.A アイスウォールタイプ
+    #declare tag AK.IceWall.B アイスウォールタイプ
+    #declare tag AK.IceWall.C アイスウォールタイプ
     #declare tag AK.IceCrepation.Pos アイスクリメーション召喚位置
     #declare tag AK.IceCrepation.Pos.A アイスクリメーション召喚位置
     #declare tag AK.IceCrepation.Pos.B アイスクリメーション召喚位置

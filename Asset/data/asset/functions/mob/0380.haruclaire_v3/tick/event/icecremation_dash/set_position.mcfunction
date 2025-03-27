@@ -5,11 +5,11 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/
 
 # 召喚位置決定
-    summon area_effect_cloud ^-16 ^-0.4 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^-8 ^-0.4 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^ ^-0.4 ^22 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^8 ^-0.4 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^16 ^-0.4 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^-16 ^0.1 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^-8 ^0.1 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^ ^0.1 ^22 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^8 ^0.1 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^16 ^0.1 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
 
 # ランダムで1か所を牛に変更
     tag @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos,sort=random,limit=1] add AK.IceCrepation.Pos.B

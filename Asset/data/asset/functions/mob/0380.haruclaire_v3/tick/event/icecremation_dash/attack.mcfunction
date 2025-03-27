@@ -1,6 +1,6 @@
 #> asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/attack
 #
-# アイスバレット・デュオ
+# アイスクリメーション・連続突進
 #
 # @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/
 
