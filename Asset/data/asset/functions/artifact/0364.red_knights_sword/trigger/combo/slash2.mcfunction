@@ -5,7 +5,6 @@
 # @within function asset:artifact/0364.red_knights_sword/trigger/3.main
 
 # 演出
-# 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.7
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.7
     execute unless score @s A4.Charge matches 0.. run playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1.2 1

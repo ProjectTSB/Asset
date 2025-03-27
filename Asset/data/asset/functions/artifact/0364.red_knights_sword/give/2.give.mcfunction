@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を剣に与え、"}','{"text":"この剣の攻撃を、しばらくの間強化する。"}','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を犠牲に範囲攻撃を放つ。"}','{"text":"この剣の攻撃は、使用者の体力が低ければ低いほど、強化される。"}','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -48,7 +48,7 @@
     # data modify storage asset:artifact LocalCooldown set value 8
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 8
+    data modify storage asset:artifact TypeCooldown.Duration set value 7
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
