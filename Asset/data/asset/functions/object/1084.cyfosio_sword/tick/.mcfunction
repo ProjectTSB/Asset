@@ -19,4 +19,4 @@
     execute if score @s General.Object.Tick matches 50.. run particle end_rod ~ ~ ~ 0 0 0 1 6
 
 
-    execute if score @s General.Object.Tick matches 80 run function asset:object/1084.cyfosio_sword/tick/heal
+    execute if score @s General.Object.Tick matches 80.. run function asset:object/1084.cyfosio_sword/tick/heal
