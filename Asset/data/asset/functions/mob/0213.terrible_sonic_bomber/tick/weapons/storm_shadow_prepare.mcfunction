@@ -23,9 +23,10 @@
 # 直線翼になったことを記録
 #    tag @s add 5X.WingStraight
 
-# 攻撃座標指定 対空砲の1番近くにいるプレイヤーの座標が攻撃目標
-    execute at @e[tag=5X.Centre,limit=1] run tag @p add 5X.StormShadowTarget
-    data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
+# 攻撃座標指定 対空砲の1番近くにいるプレイヤーの座標が攻撃目標、いないなら中心座標を狙う
+    execute at @e[tag=5X.Centre,limit=1] run tag @p[tag=!PlayerShouldInvulnerable,distance=..128] add 5X.StormShadowTarget
+    execute if entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
+    execute unless entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @e[tag=5X.Centre,limit=1] Pos
     data modify storage asset:context this.storm_shadow.target_pos[1] set from storage asset:context this.GroundPos
 
 # 攻撃箇所表示
