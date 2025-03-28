@@ -4,8 +4,8 @@
 #
 # @within function asset:mob/0365.frestchika/tick/
 
-# なんとな～くプレイヤーの方を見る
-    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+# 近くのプレイヤーの方にゆっくりと向き直る
+    execute if entity @s[tag=!A5.InAction] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
 # プレイヤーが周囲にいたらスキル選択
     execute if score @s[tag=!A5.CycleReset,tag=!A5.InAction,scores={A5.Phase=1}] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0365.frestchika/tick/base_move/skill/select/
