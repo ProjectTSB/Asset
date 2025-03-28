@@ -8,7 +8,7 @@
     execute store result score @s SU.CoolDown run time query gametime
 
 # MP回復
-    data modify storage api: Argument.Fluctuation set value 20
+    data modify storage api: Argument.Fluctuation set value 10
     function api:mp/fluctuation
 
 # 演出

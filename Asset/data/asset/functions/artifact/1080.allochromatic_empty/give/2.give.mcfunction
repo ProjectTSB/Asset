@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     data modify storage asset:artifact RemainingCount set value 1
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "sneak2s"
 # 神器の発動条件 (TextComponentString) (オプション)

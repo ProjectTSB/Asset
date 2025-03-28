@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヒール レベル5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"治癒の祈りを通じて"}','{"text":"発動者および味方を回復する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"体力を","color":"white"},{"text":"5.5","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"治癒の祈りを通じて"}','{"text":"発動者および味方を回復する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"体力を","color":"white"},{"text":"5.7","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

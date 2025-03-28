@@ -9,7 +9,7 @@
     #declare tag M4.SpreadMarker
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 # 原木を消費

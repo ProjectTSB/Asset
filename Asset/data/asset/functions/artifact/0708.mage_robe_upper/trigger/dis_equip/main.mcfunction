@@ -20,13 +20,3 @@
     data modify storage api: Argument.UUID set value [I;1,1,708,5]
 # 補正の削除
     function api:modifier/mp_regen/remove
-
-# UUID
-    data modify storage api: Argument.UUID set value [I;1,1,708,5]
-# 補正の削除
-    function api:modifier/defense/physical/remove
-
-# UUID
-    data modify storage api: Argument.UUID set value [I;1,1,708,5]
-# 補正の削除
-    function api:modifier/attack/physical/remove

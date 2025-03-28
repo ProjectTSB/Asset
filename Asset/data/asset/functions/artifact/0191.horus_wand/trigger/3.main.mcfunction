@@ -15,7 +15,7 @@
     execute positioned ~ ~4 ~ run function asset:artifact/0191.horus_wand/trigger/vfx/
 
 # 回復
-    data modify storage api: Argument.Heal set value 17.0f
+    data modify storage api: Argument.Heal set value 11.0f
     function api:heal/modifier
     execute as @a[distance=..8] run function api:heal/
     function api:heal/reset
@@ -24,6 +24,6 @@
     data modify storage api: Argument.ID set value 301
     data modify storage api: Argument.Stack set value 2
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    data modify storage api: Argument.FieldOverride.Heal set value 2.4
+    data modify storage api: Argument.FieldOverride.Heal set value 2.0f
     execute as @a[distance=..8] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

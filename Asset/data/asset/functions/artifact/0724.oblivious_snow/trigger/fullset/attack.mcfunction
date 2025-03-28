@@ -10,10 +10,10 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..64] run playsound minecraft:block.powder_snow.step player @a ~ ~ ~ 1 0.25 0
 
 # CDスコアをセット
-    scoreboard players set @s K4.AttackCD 20
+    scoreboard players set @s K4.AttackCD 40
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 200.0f
+    data modify storage api: Argument.Damage set value 100.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
