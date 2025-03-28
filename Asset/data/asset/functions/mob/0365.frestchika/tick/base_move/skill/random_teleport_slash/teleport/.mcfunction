@@ -18,3 +18,8 @@
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get @s Temporary
     execute positioned ~ ~1.5 ~ run function api:object/summon
+
+# 音
+    playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 2 1
+    playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 2 1.5
+    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2
