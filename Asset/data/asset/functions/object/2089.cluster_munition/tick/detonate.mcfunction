@@ -9,7 +9,7 @@
     particle explosion ~ ~ ~ 1 0.5 1 0 10 normal
 
 # damage
-    data modify storage api: Argument.Damage set value 10f
+    data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの巡航ミサイルよって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
