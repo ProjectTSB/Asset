@@ -18,6 +18,9 @@
 # HPが半分以下の場合無誘導爆弾追加
     execute if score $health_per Temporary matches ..49 run data modify storage asset:temp action.Candidates append value {Cand:"snake_eye"}
 
+# HPが25%以下の場合ストームシャドウをクラスター版に置き換え
+    execute if score $health_per Temporary matches ..25 run data modify storage asset:temp action.Candidates[{Cand:"storm_shadow"}] set value {Cand:"storm_shadow_cluster"}
+
 # 対空砲が壊れていた場合機銃掃射を候補に追加し、爆弾とドローンは削除
     execute if entity @e[tag=PatriotLauncher.IsBroken,distance=..128] run data remove storage asset:temp action.Candidates[{Cand:"snake_eye"}]
     execute if entity @e[tag=PatriotLauncher.IsBroken,distance=..128] run data remove storage asset:temp action.Candidates[{Cand:"drone"}]
@@ -30,6 +33,7 @@
 
 # 1回前に使用した武器を候補から削除
     execute if data storage asset:context Action{LastUse:"storm_shadow"} run data remove storage asset:temp action.Candidates[{Cand:"storm_shadow"}]
+    execute if data storage asset:context Action{LastUse:"storm_shadow_cluster"} run data remove storage asset:temp action.Candidates[{Cand:"storm_shadow_cluster"}]
     execute if data storage asset:context Action{LastUse:"brimstone"} run data remove storage asset:temp action.Candidates[{Cand:"brimstone"}]
     execute if data storage asset:context Action{LastUse:"snake_eye"} run data remove storage asset:temp action.Candidates[{Cand:"snake_eye"}]
     execute if data storage asset:context Action{LastUse:"gatling"} run data remove storage asset:temp action.Candidates[{Cand:"gatling"}]

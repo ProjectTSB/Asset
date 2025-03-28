@@ -6,6 +6,7 @@
 
 #発射
     execute if data storage asset:context Action{Selected:"storm_shadow"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow
+    execute if data storage asset:context Action{Selected:"storm_shadow_cluster"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_cluster
     execute if data storage asset:context Action{Selected:"brimstone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone
     execute if data storage asset:context Action{Selected:"drone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone
     execute if data storage asset:context Action{Selected:"snake_eye"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye

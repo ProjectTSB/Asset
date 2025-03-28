@@ -16,6 +16,8 @@
 
 # 乱数によるスキル選択
     function asset:mob/0213.terrible_sonic_bomber/tick/weapons/select_weapon
+        #data modify storage asset:context Action.Selected set value "storm_shadow_cluster"
+
 
 # 攻撃開始と終了時間指定(デフォルト値)
     execute store result score $attack_start_time Temporary run time query gametime
@@ -24,6 +26,7 @@
 
 # 武器ごとの処理
     execute if data storage asset:context Action{Selected:"storm_shadow"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare
+    execute if data storage asset:context Action{Selected:"storm_shadow_cluster"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_cluster_prepare
     execute if data storage asset:context Action{Selected:"brimstone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_prepare
     execute if data storage asset:context Action{Selected:"drone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
     execute if data storage asset:context Action{Selected:"snake_eye"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
