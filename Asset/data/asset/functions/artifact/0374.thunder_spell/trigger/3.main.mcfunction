@@ -20,8 +20,11 @@
     playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 2
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.4 2
 
-# 弾丸飛ばす
-    execute positioned ~ ~1 ~ positioned ^ ^ ^4 if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4] facing entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4,sort=nearest,limit=1] feet run function asset:artifact/0374.thunder_spell/trigger/line
+# 敵が周囲にいるなら方向転換
+    execute if entity @e[type=#lib:living,type=!player,tag=Enemy,distance=..8] run function asset:artifact/0374.thunder_spell/trigger/turn_to_enemy
 
-# タグ消し
+# リセット
     tag @s remove AE.Check
+    tag @e[type=#lib:living,type=!player,tag=Target,distance=..8] remove Target
+    tag @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..8] remove NearestTarget
+    scoreboard players reset $RecursiveCount Temporary
