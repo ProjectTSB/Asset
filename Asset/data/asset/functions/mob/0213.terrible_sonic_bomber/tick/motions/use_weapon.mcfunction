@@ -16,6 +16,7 @@
     execute if score $use_weapon Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone
     execute if score $use_weapon Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye
     execute if score $use_weapon Temporary matches -4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling
+    execute if score $use_weapon Temporary matches 5 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/landmine
 
 # reset
     scoreboard players reset $use_weapon Temporary
