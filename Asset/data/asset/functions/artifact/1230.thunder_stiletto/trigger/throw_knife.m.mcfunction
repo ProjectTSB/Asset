@@ -1,7 +1,7 @@
 #> asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m
 #
-#
-#
+# @input args:
+#   Damage : float
 # @within function asset:artifact/1230.thunder_stiletto/trigger/3.main
 
 #> Private
