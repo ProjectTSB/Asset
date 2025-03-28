@@ -20,3 +20,7 @@
     data modify storage asset:object Field.Speed set value 5
     data modify storage asset:object Field.Range set value 32
     data modify storage asset:object Field.MovePerStep set value 0.5
+    data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.AdditionalMPHeal set value 1
+    data modify storage asset:object Field.JumpBoost set value false
+    data modify storage asset:object Field.UserID set value -1
