@@ -55,6 +55,11 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equip.SetID set value 237
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equip.Modifiers set value []
+    data modify storage asset:artifact Equip.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
