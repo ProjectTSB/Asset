@@ -1,17 +1,17 @@
-#> asset:effect/0237.heartland/register
+#> asset:effect/0233.flame_armor/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0237.heartland/_/register
+# @within function asset:effect/0233.flame_armor/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 237
+    data modify storage asset:effect ID set value 233
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"ハート","color":"light_purple","bold":true},{"text":"ランド","color":"green","bold":true}]'
+    data modify storage asset:effect Name set value '{"text":"フレイムアーマー","color":"red"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"全身を大地の衣で覆ったとき、自身と周囲に再生の力を与える。"}']
+    data modify storage asset:effect Description set value ['{"text":"火攻撃 +2%","color":"green"}','{"text":"火耐性 +2%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
