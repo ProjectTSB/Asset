@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"サンダー・スティレット","color":"#FFD952"}'
+    data modify storage asset:artifact Name set value '{"text":"サンダースティレット","color":"#FFD952"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"電気を纏った高速の投げナイフを放つ"}','{"text":"空中で使用すると2本追加で放つ"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
