@@ -6,7 +6,7 @@
 
 # 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.7
-    playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.7
+    playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.6
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
