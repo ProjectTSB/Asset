@@ -17,4 +17,5 @@
 # ID (int)
     data modify storage asset:object ID set value 1131
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+#    data modify storage asset:object Field.Speed set value 3
+#    data modify storage asset:object Field.Range set value 25
