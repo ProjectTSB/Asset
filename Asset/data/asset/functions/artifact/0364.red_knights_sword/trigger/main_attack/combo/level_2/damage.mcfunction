@@ -1,4 +1,4 @@
-#> asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/weak/damage
+#> asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_2/damage
 #
 #
 #
