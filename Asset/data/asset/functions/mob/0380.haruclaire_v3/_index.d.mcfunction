@@ -73,6 +73,7 @@
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #declare tag AK.Skill.IceWallDuo アイスウォール
     #declare tag AK.Skill.IcePillarDuo アイスピラー
+    #declare tag AK.Skill.IceCremation.First アイスクリメーション・初回
     #declare tag AK.Skill.IceCremation.Dash アイスクリメーション・連続突進
     #
     # - 他Entity

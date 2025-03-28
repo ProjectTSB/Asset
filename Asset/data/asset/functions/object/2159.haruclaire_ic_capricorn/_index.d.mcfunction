@@ -13,3 +13,4 @@
     #declare tag 2159.Attack
     #declare tag 2159.Model
     #declare tag 2159.Model.Ride
+    #declare tag 2159.IsSkipSummon
