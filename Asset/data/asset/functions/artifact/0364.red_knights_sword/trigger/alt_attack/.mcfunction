@@ -10,6 +10,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     execute if entity @s[tag=!PlayerShouldInvulnerable] run function api:damage/
     function api:damage/reset
