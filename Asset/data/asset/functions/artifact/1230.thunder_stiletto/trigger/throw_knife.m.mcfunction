@@ -1,4 +1,4 @@
-#> asset:artifact/1230.thunder_stiletto/trigger/throw_knife
+#> asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m
 #
 #
 #
@@ -16,7 +16,7 @@
 
 # 弾を召喚
     data modify storage api: Argument.ID set value 1130
-    data modify storage api: Argument.FieldOverride.Damage set value 160f
+    $data modify storage api: Argument.FieldOverride.Damage set value $(Damage)
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet run function api:object/summon

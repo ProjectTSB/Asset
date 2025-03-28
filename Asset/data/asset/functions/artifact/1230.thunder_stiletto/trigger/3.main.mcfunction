@@ -15,7 +15,7 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 0.7 1
 
 # 投げる
-    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife
+    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:160}
 
 # OnGroundを判定
     function api:data_get/on_ground
@@ -24,5 +24,5 @@
     execute if data storage api: {OnGround:1b} run return fail
 
 # 2ブロック以上浮いてたら2本追加
-    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife
-    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~-10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife
+    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:100}
+    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~-10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:100}
