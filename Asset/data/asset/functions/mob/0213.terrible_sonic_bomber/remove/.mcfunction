@@ -11,7 +11,7 @@
     function asset:mob/super.remove
 
 # remove markers
-    kill @e[tag=5X.Centre]
+    kill @e[type=marker,tag=5X.Centre,distance=..128]
 
 # remove objects
     execute as @e[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/remove/this 

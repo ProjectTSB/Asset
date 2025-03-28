@@ -15,9 +15,9 @@
     execute store result storage asset:context this.attack_end_time int 1 run scoreboard players add $attack_start_time Temporary 1
 
 # 攻撃座標指定 対空砲の1番近くにいるプレイヤーの座標が攻撃目標、いないなら中心座標を狙う
-    execute at @e[tag=5X.Centre,limit=1] run tag @p[tag=!PlayerShouldInvulnerable,distance=..128] add 5X.StormShadowTarget
+    execute at @e[type=marker,tag=5X.Centre,distance=..128,limit=1] run tag @p[tag=!PlayerShouldInvulnerable,distance=..128] add 5X.StormShadowTarget
     execute if entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
-    execute unless entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @e[tag=5X.Centre,limit=1] Pos
+    execute unless entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @e[type=marker,tag=5X.Centre,distance=..128,limit=1] Pos
     data modify storage asset:context this.storm_shadow.target_pos[1] set from entity @s Pos[1]
 
 # 攻撃箇所表示
