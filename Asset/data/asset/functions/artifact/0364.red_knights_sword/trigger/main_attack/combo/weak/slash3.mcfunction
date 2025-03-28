@@ -6,9 +6,7 @@
 
 # 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.8
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.5 0.8
-    execute unless score @s A4.Charge matches 0.. run playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1.2 1
-    execute if score @s A4.Charge matches 0.. run playsound minecraft:item.trident.return player @a ~ ~ ~ 1.5 1.5
+    playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.8
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
