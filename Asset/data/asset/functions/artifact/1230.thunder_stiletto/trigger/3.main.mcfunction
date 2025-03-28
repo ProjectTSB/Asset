@@ -14,11 +14,13 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 0.7 0.75
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 0.7 1
 
-# 投げる
-    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:160}
-
 # OnGroundを判定
     function api:data_get/on_ground
+
+# 投げる
+# OnGround:1bなら20%の確率でJumpBoostをtrueに
+    execute if data storage api: {OnGround:1b} if predicate lib:random_pass_per/33 run data modify storage api: Argument.FieldOverride.JumpBoost set value true
+    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:160}
 
 # OnGround:1bならreturn
     execute if data storage api: {OnGround:1b} run return fail

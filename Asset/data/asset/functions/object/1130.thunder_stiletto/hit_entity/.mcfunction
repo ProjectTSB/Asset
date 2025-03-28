@@ -20,6 +20,9 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,limit=1] run function api:damage/
     function api:damage/reset
 
+# JumpBoost:trueなら跳躍力上昇を付与
+    execute if data storage asset:context this{JumpBoost:true} as @a if score @s UserID = $UserID Temporary run function asset:object/1130.thunder_stiletto/hit_entity/jump_boost
+
 # リセット
     scoreboard players reset $UserID Temporary
 
