@@ -18,6 +18,7 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] positioned ~ ~0.1 ~ run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/shape
+    scoreboard players reset $Interval Temporary
 
 # レーザー攻撃！
     # 1
