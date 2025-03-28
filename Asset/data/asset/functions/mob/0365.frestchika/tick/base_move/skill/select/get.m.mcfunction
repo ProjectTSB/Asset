@@ -1,7 +1,7 @@
 #> asset:mob/0365.frestchika/tick/base_move/skill/select/get.m
 #
-#
-#
+# @input args:
+#    Roll : int
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/select/roll.m
 
 # Skill.Listの要素を番号で指定
