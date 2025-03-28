@@ -18,7 +18,7 @@
     function api:data_get/on_ground
 
 # 投げる
-# OnGround:1bなら20%の確率でJumpBoostをtrueに
+# OnGround:1bなら確率でJumpBoostをtrueに
     execute if data storage api: {OnGround:1b} if predicate lib:random_pass_per/33 run data modify storage api: Argument.FieldOverride.JumpBoost set value true
     execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:160}
 
