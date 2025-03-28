@@ -5,7 +5,7 @@
 # @within function asset:object/alias/1131/init
 
 # これを放つ斬撃が毎回方向が違うので、ここで向きを適用
-#    data modify entity @s transformation.left_rotation set from storage api: this.transformation.left_rotation
+    data modify entity @s transformation.left_rotation set from storage asset:context this.transformation.left_rotation
 
 # Super
     function asset:object/super.init

@@ -5,9 +5,9 @@
 # @within function asset:artifact/0364.red_knights_sword/trigger/main_attack/
 
 # 演出
-    playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.7
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.6
-    playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1 1.5
+    playsound ogg:item.trident.return2 player @a ~ ~ ~ 1.5 1.4
+    playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 1.5 1.4
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
@@ -23,3 +23,7 @@
         execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..100] remove A4.Hit
     # ダメージ処理へ
         execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3] run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/damage
+
+# 衝撃波を飛ばす
+    data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[-0.271f,-0.653f,-0.271f,0.653f]}
+    function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/slash_shot
