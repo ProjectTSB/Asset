@@ -15,7 +15,8 @@
     execute if entity @s[scores={General.Object.Tick=50}] on passengers run function animated_java:ic_capri_aj/animations/1_idle/tween {duration:1, to_frame: 1}
     execute if entity @s[scores={General.Object.Tick=33}] run playsound entity.goat.step hostile @a ~ ~ ~ 2 1
     execute if entity @s[scores={General.Object.Tick=21}] if predicate lib:random_pass_per/80 run return run playsound entity.goat.ambient hostile @a ~ ~ ~ 2 1
-    execute if entity @s[scores={General.Object.Tick=21}] run playsound entity.goat.screaming.ambient hostile @a ~ ~ ~ 2 1
+    execute if entity @s[scores={General.Object.Tick=21}] run playsound entity.goat.ambient hostile @a ~ ~ ~ 2 1
 
 # 状態遷移
-    execute if entity @s[scores={General.Object.Tick=150}] run function asset:object/2159.haruclaire_ic_capricorn/tick/start_attack
+    execute if entity @s[tag=!2159.IsSkipSummon,scores={General.Object.Tick=150}] run function asset:object/2159.haruclaire_ic_capricorn/tick/start_attack
+    execute if entity @s[tag=2159.IsSkipSummon,scores={General.Object.Tick=223}] run function asset:object/2159.haruclaire_ic_capricorn/tick/start_attack

@@ -1,19 +1,13 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/set_position
+#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/set_position
 #
-# アイスクリメーション・連続突進
+# アイスクリメーション・初回
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/
+# @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/
 
 # 召喚位置決定
-    summon area_effect_cloud ^-16 ^0.1 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^-8 ^0.1 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^ ^0.1 ^22 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^8 ^0.1 ^19 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-    summon area_effect_cloud ^16 ^0.1 ^15 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
-
-# ランダムで1か所を牛に変更
-    tag @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos,sort=random,limit=1] add AK.IceCrepation.Pos.B
-    tag @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos,tag=AK.IceCrepation.Pos.B] remove AK.IceCrepation.Pos.A
+    summon area_effect_cloud ^12 ^0.1 ^12 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.A"],Duration:70}
+    summon area_effect_cloud ^-12 ^0.1 ^12 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.B"],Duration:70}
 
 # 角度設定
-    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos] positioned as @s run tp @s ~ ~ ~ ~180 0
+    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.A] positioned as @s run tp @s ~ ~ ~ ~90 0
+    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.B] positioned as @s run tp @s ~ ~ ~ ~-90 0
