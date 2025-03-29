@@ -8,7 +8,7 @@
     execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.ManyShoot
     data modify storage api: Argument.FieldOverride.StartDelay set value 40
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @r[distance=..64] UserID
+    execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @r[gamemode=!spectator,distance=..64] UserID
 
 # 召喚
     data modify storage api: Argument.ID set value 2092

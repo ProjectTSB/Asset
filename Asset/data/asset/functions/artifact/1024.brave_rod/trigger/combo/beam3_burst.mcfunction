@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 演出
     execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 1 2
@@ -25,4 +25,3 @@
         execute at @e[type=marker,tag=SpreadMarker,limit=1] rotated as @s run function asset:artifact/1024.brave_rod/trigger/combo/beam3_shot
     # リセット
         kill @e[type=marker,tag=SpreadMarker]
-

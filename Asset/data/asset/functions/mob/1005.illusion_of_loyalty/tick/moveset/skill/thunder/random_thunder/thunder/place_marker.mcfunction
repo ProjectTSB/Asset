@@ -6,6 +6,10 @@
 #   asset:mob/1004.tultaria/tick/skill/thunder/random_thunder/**
 #   asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/random_thunder/pattern/2
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
