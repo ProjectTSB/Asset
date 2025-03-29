@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"蓬莱","color":"red"},{"text":"の","color":"yellow"},{"text":"玉","color":"green"},{"text":"の","color":"blue"},{"text":"枝","color":"dark_purple"}]'
+    data modify storage asset:artifact Name set value '[{"text":"蓬莱の玉の枝","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"竹取の宝具を1つ以上装備しているときに敵へのダメージが発生する。","color":"gray"}','{"text":"装備数が増えるごとに攻撃数が増加する。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
