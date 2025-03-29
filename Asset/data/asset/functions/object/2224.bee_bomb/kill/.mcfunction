@@ -18,3 +18,6 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function api:damage/
     function api:damage/reset
+
+# 死ぬ
+    kill @s
