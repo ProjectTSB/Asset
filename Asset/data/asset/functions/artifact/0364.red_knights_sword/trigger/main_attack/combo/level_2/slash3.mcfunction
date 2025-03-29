@@ -7,6 +7,7 @@
 # 演出
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.8
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.7
+    playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1.5 1
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
@@ -18,7 +19,7 @@
 
 # 攻撃判定
     # ターゲット指定
-        execute positioned ^ ^ ^1 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..3] add A4.Hit
-        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..100] remove A4.Hit
+        execute positioned ^ ^ ^1 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..3.5] add A4.Hit
+        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3.5] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..100] remove A4.Hit
     # ダメージ処理へ
-        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3] run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_2/damage
+        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3.5] run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_2/damage
