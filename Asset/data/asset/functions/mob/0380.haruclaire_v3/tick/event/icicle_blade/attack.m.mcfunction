@@ -7,7 +7,7 @@
 
 # 演出
     playsound item.trident.throw hostile @a ~ ~ ~ 2 0.9
-    playsound item.trident.throw hostile @a ~ ~ ~ 2 0.7
+    playsound item.trident.throw hostile @a ~ ~ ~ 2 1.1
     playsound item.trident.return hostile @a ~ ~ ~ 2 1.4
 
 # ヒット判定

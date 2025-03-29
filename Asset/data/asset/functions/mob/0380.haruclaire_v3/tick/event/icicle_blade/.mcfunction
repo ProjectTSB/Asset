@@ -34,14 +34,14 @@
         execute if score @s AK.EventTimer matches 90 rotated ~90 ~25 positioned ~ ~1.8 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/particle
         execute if score @s AK.EventTimer matches 90 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/attack.m {Rotate:90}
     # 2回目
-        execute if score @s AK.EventTimer matches 80 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/prediction.m {Rotate:45}
-        execute if score @s AK.EventTimer matches 83 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/prediction.m {Rotate:-45}
+        execute if score @s AK.EventTimer matches 80 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/prediction.m {Rotate:30}
+        execute if score @s AK.EventTimer matches 85 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/prediction.m {Rotate:-30}
         execute if score @s AK.EventTimer matches 103 run playsound item.trident.throw hostile @a ~ ~ ~ 2 1.2
-        execute if score @s AK.EventTimer matches 107 run playsound item.trident.throw hostile @a ~ ~ ~ 2 1.2
+        execute if score @s AK.EventTimer matches 108 run playsound item.trident.throw hostile @a ~ ~ ~ 2 1.2
         execute if score @s AK.EventTimer matches 105 rotated ~90 ~-35 positioned ~ ~1.8 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/particle
-        execute if score @s AK.EventTimer matches 109 rotated ~90 ~35 positioned ~ ~1.8 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/particle
-        execute if score @s AK.EventTimer matches 105 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/attack.m {Rotate:45}
-        execute if score @s AK.EventTimer matches 109 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/attack.m {Rotate:-45}
+        execute if score @s AK.EventTimer matches 110 rotated ~90 ~35 positioned ~ ~1.8 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/particle
+        execute if score @s AK.EventTimer matches 105 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/attack.m {Rotate:30}
+        execute if score @s AK.EventTimer matches 110 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,tag=!AK.Temp.Start] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/attack.m {Rotate:-30}
 
 # 終了
     execute if score @s AK.EventTimer matches 162.. run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/end
