@@ -2,7 +2,9 @@
 #
 # ジャイアントブレード
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/giant_blade/
+# @within
+#    function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/
+#    function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/short
 
 # 地面に合わせる
     summon area_effect_cloud ^ ^ ^ {Tags:["AK.Temp.AttackPosition"],Duration:1}

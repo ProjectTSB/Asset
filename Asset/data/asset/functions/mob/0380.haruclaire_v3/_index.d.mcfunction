@@ -24,6 +24,7 @@
     #declare function animated_java:haruclaire_aj/animations/20_second_start/tween
     #declare function animated_java:haruclaire_aj/animations/21_0_second_idle/tween
     #declare function animated_java:haruclaire_aj/animations/24_0_second_sword_line_first/tween
+    #declare function animated_java:haruclaire_aj/animations/24_0_second_sword_line_short/tween
     #declare function animated_java:haruclaire_aj/animations/25_0_second_icebullet_duo/tween
     #declare function animated_java:haruclaire_aj/animations/27_0_second_icepillar/tween
     #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
@@ -72,6 +73,7 @@
     #declare tag AK.Skill.IcePillar アイスピラー
     #declare tag AK.Skill.SummonHato ハトクレア召喚
     #declare tag AK.Skill.Giant ジャイアントブレード
+    #declare tag AK.Skill.Giant.Short ジャイアントブレード時短版
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #declare tag AK.Skill.IceWallDuo アイスウォール
     #declare tag AK.Skill.IcePillarDuo アイスピラー

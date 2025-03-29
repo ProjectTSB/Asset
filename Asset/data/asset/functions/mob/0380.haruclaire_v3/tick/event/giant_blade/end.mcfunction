@@ -2,10 +2,13 @@
 #
 # ジャイアントブレード
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/giant_blade/
+# @within
+#    function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/
+#    function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/short
 
 # タグ消去
     tag @s remove AK.Skill.Giant
+    tag @s add AK.Skill.Giant.Short
     tag @a remove AK.MainTarget
 
 # 待機モーション再生
