@@ -1,4 +1,4 @@
-#> asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.3.set_attack_data
+#> asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.3.get_attack_level
 #
 # セット装備の装備数をカウントして攻撃レベルを決定
 #
