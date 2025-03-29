@@ -23,7 +23,7 @@
 
 # 演出
     execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
-    execute if score @s AK.EventTimer matches 2 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 1 1
+    execute if score @s AK.EventTimer matches 20 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
     execute if score @s AK.EventTimer matches 37 at @s run playsound item.trident.return hostile @a ~ ~ ~ 2 1.5
     execute if score @s AK.EventTimer matches 54 at @s run playsound item.trident.return hostile @a ~ ~ ~ 2 1.5
     execute if score @s AK.EventTimer matches 66 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 3 1.3

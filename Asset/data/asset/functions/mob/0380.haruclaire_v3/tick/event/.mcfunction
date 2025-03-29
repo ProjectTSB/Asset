@@ -38,6 +38,9 @@
 # ハトクレア召喚
     execute if entity @s[tag=AK.Skill.SummonHato] run function asset:mob/0380.haruclaire_v3/tick/event/summon_hatoclaire/
 
+# アイシクルブレード
+    execute if entity @s[tag=AK.Skill.Blade] run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/
+
 # ジャイアントブレード
     execute if entity @s[tag=AK.Skill.Giant,tag=!AK.Skill.Giant.Short] run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/
     execute if entity @s[tag=AK.Skill.Giant,tag=AK.Skill.Giant.Short] run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/short

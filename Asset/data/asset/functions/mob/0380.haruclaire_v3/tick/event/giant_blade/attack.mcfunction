@@ -19,6 +19,7 @@
     data modify storage api: Argument.Damage set value 50.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは かたいこおりに まっぷたつにされた","with":[{"selector":"@s"}]}]'
     function api:damage/modifier
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset
