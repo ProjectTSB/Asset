@@ -6,7 +6,6 @@
 
 # 自身のIDがなければ自身にTargetTagを付与
     $execute unless data storage asset:context this.HitList.$(ID) run tag @s add 1131.TargetEntity
-    $execute unless data storage asset:context this.HitList.$(ID) run say yoho
 
 # データがなければ追加しておく
     $execute unless data storage asset:context this.HitList.$(ID) run data modify storage asset:context this.HitList.$(ID) set value 0b
