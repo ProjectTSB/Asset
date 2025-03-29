@@ -71,3 +71,7 @@
     data modify storage api: Argument.ID set value 2164
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ^ ^-0.6 ^28 run function api:object/summon
+
+    data modify storage api: Argument.FieldOverride set value {Color:10942975,Scale:[12f,12f,7f],Transformation:{left_rotation:[0f,-0.7068252f,0f,0.7073883f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    data modify storage api: Argument.ID set value 2001
+    execute positioned ^ ^2 ^2 run function api:object/summon
