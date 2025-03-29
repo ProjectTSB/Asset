@@ -10,6 +10,9 @@
     #declare score_holder $UserID
     #declare tag 1131.Player
 
+# 多重ヒット防止判定
+    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function asset:object/1131.red_knight_slash_shot/hit_entity/check_target/
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
@@ -31,15 +34,11 @@
 # modifier をかける
     execute as @p[tag=1131.Player,distance=..64] run function api:damage/modifier
 
-# ダメージ、数Tickおきに実行
-    # 実行時間を移す
-        scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    # 2tickおきに実行
-        scoreboard players operation $Interval Temporary %= $3 Const
-    # ダメージ実行
-        execute if score $Interval Temporary matches 0 positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function api:damage/
+# 多重ヒット防止判定部分でタグを付与した対象にダメージを与える
+    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=1131.TargetEntity,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function api:damage/
 
 # リセット
     function api:damage/reset
     scoreboard players reset $Interval Temporary
     tag @p[tag=1131.Player,distance=..64] remove 1131.Player
+    tag @e[type=#lib:living,tag=Enemy,tag=1131.TargetEntity,distance=..16] remove 1131.TargetEntity
