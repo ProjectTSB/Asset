@@ -22,6 +22,5 @@
     scoreboard players operation $Interval Temporary %= $2 Const
     execute if entity @s[scores={General.Object.Tick=20..}] if score $Interval Temporary matches 0 run playsound entity.goat.step hostile @a ~ ~ ~ 2 1
     scoreboard players reset $Interval Temporary
-
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=20..}] run function asset:object/2159.haruclaire_ic_capricorn/tick/damage

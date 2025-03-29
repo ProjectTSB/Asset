@@ -11,5 +11,6 @@
     #declare tag AK.IceCreature.Root
     #declare tag AK.IceCreature.Remove
     #declare tag 2161.Attack
+    #declare tag 2161.Attack.Hit
     #declare tag 2161.Model
     #declare tag 2161.Model.Ride

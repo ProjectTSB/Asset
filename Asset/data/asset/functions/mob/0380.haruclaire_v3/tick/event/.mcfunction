@@ -53,3 +53,5 @@
 
 # 連続突進
     execute if entity @s[tag=AK.Skill.IceCremation.Dash] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_dash/
+
+# 円範囲
