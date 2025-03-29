@@ -13,7 +13,7 @@
     clear @s white_wool 16
 
 # 発射する
-    function asset:artifact/1253.deteriorated_sheep_blessing/trigger/shoot
+    execute positioned ^ ^ ^1 run function asset:artifact/1253.deteriorated_sheep_blessing/trigger/shoot
 
 # タグ消す
     tag @s remove Landing

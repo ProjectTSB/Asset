@@ -12,7 +12,7 @@
     execute if block ^ ^ ^1 #wool run tag @s remove Landing
 
 # 羊毛設置
-    execute if predicate api:area/is_breakable run setblock ^ ^ ^1 white_wool keep
+    execute if predicate api:area/is_breakable run setblock ~ ~ ~ white_wool keep
 
 
 # 再帰
