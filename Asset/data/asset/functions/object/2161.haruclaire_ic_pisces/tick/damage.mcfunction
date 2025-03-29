@@ -11,7 +11,7 @@
         data modify storage lib: args.dy set value 4
         data modify storage lib: args.dz set value 5
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,tag=!2161.Attack.Hit,distance=..30]"
-        execute rotated 0 0 positioned ^ ^2 ^2.5 run function lib:rotatable_dxyz/m with storage lib: args
+        execute positioned ^ ^2 ^5 run function lib:rotatable_dxyz/m with storage lib: args
         execute unless entity @a[tag=DXYZ] run return 0
     # ダメージ
         data modify storage api: Argument.Damage set from storage asset:context this.Damage

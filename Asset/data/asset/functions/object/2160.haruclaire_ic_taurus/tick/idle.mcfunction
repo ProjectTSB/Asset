@@ -14,7 +14,7 @@
     execute if entity @s[scores={General.Object.Tick=18}] on passengers run function animated_java:ic_tau_aj/animations/0_start/tween {duration:1, to_frame: 1}
     execute if entity @s[scores={General.Object.Tick=74}] on passengers run function animated_java:ic_tau_aj/animations/1_idle/tween {duration:1, to_frame: 1}
     execute if entity @s[scores={General.Object.Tick=30}] run playsound entity.hoglin.step hostile @a ~ ~ ~ 3 1
-    execute if entity @s[scores={General.Object.Tick=42..50}] run playsound entity.cow.death hostile @a ~ ~ ~ 3 0.6
+    execute if entity @s[scores={General.Object.Tick=42..50}] run playsound entity.cow.death hostile @a ~ ~ ~ 2 0.6
 
 # 状態遷移
     execute if entity @s[scores={General.Object.Tick=150}] run function asset:object/2160.haruclaire_ic_taurus/tick/start_attack
