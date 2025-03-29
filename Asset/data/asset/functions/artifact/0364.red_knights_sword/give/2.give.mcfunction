@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身の体力の減少量に応じて強力になる斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を犠牲に範囲攻撃を放つ。"}','[{"text":"発動後は被回復量が","color":"white"},{"text":"70%","color":"red"},{"text":"減少するほか、しばらくは範囲攻撃が発動できない。","color":"white"}]','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の体力の減少量に応じて強力になる斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を犠牲に強力な攻撃を放つ。"}','[{"text":"発動後は被回復量が","color":"white"},{"text":"70%","color":"red"},{"text":"減少するほか、しばらくは再発動できない。","color":"white"}]','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
