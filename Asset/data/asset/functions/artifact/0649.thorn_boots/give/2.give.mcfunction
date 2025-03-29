@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソーンブーツ","color":"#1D5923"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+3% ","color":"aqua"},{"text":"雷耐性+3%","color":"yellow"}]','[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"全てを貫くような鋭い荊で覆われた鎧。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -57,6 +57,12 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equipment.SetEffectID set value 239
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.03d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/thunder",Amount:0.03d,Operation:"multiply_base"}
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:2454317},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.5,Operation:0,UUID:[I;1,1,649,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,649,3],Slot:"feet"}]}
 
