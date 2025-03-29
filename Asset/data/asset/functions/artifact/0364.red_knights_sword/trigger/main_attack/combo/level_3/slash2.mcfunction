@@ -8,6 +8,7 @@
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.6
     playsound ogg:item.trident.return2 player @a ~ ~ ~ 1.5 1.4
     playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 0.7 1.4
+    playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1.5 1.2
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
