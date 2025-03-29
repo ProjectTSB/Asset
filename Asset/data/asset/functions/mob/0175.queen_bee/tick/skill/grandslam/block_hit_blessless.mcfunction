@@ -1,4 +1,4 @@
-#> asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
+#> asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit_blessless
 #
 #
 #
@@ -19,7 +19,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..8] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
 # リセット
     function api:damage/reset
 
