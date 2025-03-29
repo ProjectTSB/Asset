@@ -31,13 +31,8 @@
 # modifier をかける
     execute as @p[tag=1132.Player,distance=..64] run function api:damage/modifier
 
-# ダメージ、数Tickおきに実行
-    # 実行時間を移す
-        scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    # 2tickおきに実行
-        scoreboard players operation $Interval Temporary %= $3 Const
-    # ダメージ実行
-        execute if score $Interval Temporary matches 0 positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run function api:damage/
+# ダメージ実行
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run function api:damage/
 
 # リセット
     function api:damage/reset

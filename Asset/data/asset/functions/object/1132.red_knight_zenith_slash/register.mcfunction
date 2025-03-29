@@ -13,10 +13,5 @@
     data modify storage asset:object IsAbstract set value false
 # Tickするかどうか(boolean) (オプション)
     # data modify storage asset:object IsTicking set value
-
 # ID (int)
     data modify storage asset:object ID set value 1132
-# フィールド(オプション)
-    data modify storage asset:object Field.Range set value 300
-    data modify storage asset:object Field.Speed set value 5
-    data modify storage asset:object Field.MovePerStep set value 0.5
