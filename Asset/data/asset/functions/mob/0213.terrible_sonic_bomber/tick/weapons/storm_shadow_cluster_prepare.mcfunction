@@ -1,4 +1,4 @@
-#> asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare
+#> asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_cluster_prepare
 #
 # 
 #
@@ -18,10 +18,10 @@
     execute at @e[type=marker,tag=5X.Centre,distance=..128,limit=1] run tag @p[tag=!PlayerShouldInvulnerable,distance=..128] add 5X.StormShadowTarget
     execute if entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @p[tag=5X.StormShadowTarget] Pos
     execute unless entity @p[tag=5X.StormShadowTarget] run data modify storage asset:context this.storm_shadow.target_pos set from entity @e[type=marker,tag=5X.Centre,distance=..128,limit=1] Pos
-    data modify storage asset:context this.storm_shadow.target_pos[1] set from storage asset:context this.GroundPos
+    data modify storage asset:context this.storm_shadow.target_pos[1] set from entity @s Pos[1]
 
 # 攻撃箇所表示
-    data modify storage api: Argument.FieldOverride set value {Color:15453454,Tick:50,Scale:10f}
+    data modify storage api: Argument.FieldOverride set value {Color:16737792,Tick:50,Scale:40f}
     data modify storage api: Argument.ID set value 2201
     execute at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~ run function api:object/summon
 

@@ -5,4 +5,4 @@
 # @within asset:object/alias/2204/init
 
 # 目標位置へ移動
-    execute positioned as @e[tag=5X.Centre] run tp @s ~ ~ ~ ~ 0
+    execute positioned as @e[type=marker,tag=5X.Centre,distance=..192,limit=1] run tp @s ~ ~ ~ ~ 0
