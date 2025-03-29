@@ -38,3 +38,6 @@
     function api:damage/reset
     scoreboard players reset $Interval Temporary
     tag @p[tag=1132.Player,distance=..64] remove 1132.Player
+
+# Super
+    function asset:object/super.method
