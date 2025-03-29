@@ -7,7 +7,7 @@
 # 演出
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.5
     playsound ogg:item.trident.return1 player @a ~ ~ ~ 1.5 1.3
-    playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 1.5 1.3
+    playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 0.7 1.3
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001

@@ -10,6 +10,10 @@
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.5
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 0.6
 
+# パーティクル
+    particle flame ~ ~1 ~ 0.5 0.5 0.5 0.05 10
+    particle block redstone_wire ~ ~1 ~ 0.2 0.5 0.2 0.05 50
+
 # 剣発射バフを付与
     data modify storage api: Argument.ID set value 322
     data modify storage api: Argument.Stack set value 1

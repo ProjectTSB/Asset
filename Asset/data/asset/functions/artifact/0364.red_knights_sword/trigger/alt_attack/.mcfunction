@@ -20,7 +20,7 @@
 # Alt攻撃のクールタイムを兼ねたデバフを付与
     data modify storage api: Argument.ID set value 321
     data modify storage api: Argument.Stack set value 1
-    data modify storage api: Argument.Duration set value 3
+    data modify storage api: Argument.Duration set value 300
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

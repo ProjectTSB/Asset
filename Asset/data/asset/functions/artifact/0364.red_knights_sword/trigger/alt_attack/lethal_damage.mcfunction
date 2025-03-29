@@ -7,3 +7,6 @@
 # 体力を変更
     scoreboard players set $Set Lib 200
     function lib:score_to_health_wrapper/set
+
+# 強制体力変更だとダメージ音が鳴らないので、コマンドで鳴らす
+    playsound minecraft:entity.generic.hurt player @a ~ ~ ~ 1 1
