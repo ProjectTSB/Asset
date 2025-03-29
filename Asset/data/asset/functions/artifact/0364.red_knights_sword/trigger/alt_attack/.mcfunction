@@ -4,13 +4,22 @@
 #
 # @within function asset:artifact/0364.red_knights_sword/trigger/3.main
 
-# 自身に最大HPの33%のダメージを与える
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage double 0.33 run data get storage api: Return.MaxHealth
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.FixedDamage set value 1b
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは赤い騎士の剣に呑まれた","with":[{"selector":"@s"}]}]']
-    function api:damage/modifier
-    execute if entity @s[tag=!PlayerShouldInvulnerable] run function api:damage/
-    function api:damage/reset
+# 自身のヘルス割合をチェックし、それで攻撃を分岐させる
+    function api:entity/player/get_health_per
+    execute store result score @s Temporary run data get storage api: Return.HealthPer 100
+
+# ヘルスが最大ヘルスの50%以上あれば、普通に最大ヘルス50%のダメージを受ける
+    execute if score @s Temporary matches 51.. run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/half_health_damage
+
+# ヘルスが最大ヘルスの49%以下である場合は、体力が1になってしまうぞ！
+    execute if score @s Temporary matches ..50 run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/lethal_damage
+
+# Alt攻撃のクールタイムを兼ねたデバフを付与
+    data modify storage api: Argument.ID set value 321
+    data modify storage api: Argument.Stack set value 1
+    data modify storage api: Argument.Duration set value 3
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 全部終わったのでリセット
+    scoreboard players reset @s Temporary

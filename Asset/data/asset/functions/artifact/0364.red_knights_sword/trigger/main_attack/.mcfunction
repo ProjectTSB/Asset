@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/0364.red_knights_sword/trigger/3.main
 
-# 自身にヘルス割合をチェックし、それで攻撃を分岐させる
+# 自身のヘルス割合をチェックし、それで攻撃を分岐させる
     function api:entity/player/get_health_per
     execute store result score @s Temporary run data get storage api: Return.HealthPer 100
 
