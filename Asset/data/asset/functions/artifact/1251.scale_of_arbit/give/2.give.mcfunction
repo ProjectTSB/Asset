@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"調律の天秤","color":"#DBAC00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を10消耗し、バリアを20を得る","color":"white"}','{"text":"全ての物の価値を等しく秤る天秤","color":"gray"}','{"text":"その秤量は公正無比で、何者にも欺くことはできない","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を20消耗し、バリアを40得る","color":"white"}','{"text":"全ての物の価値を等しく秤る天秤","color":"gray"}','{"text":"その秤量は公正無比で、何者にも欺くことはできない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション),'{"text":"全ての物の価値を等しく測る天秤","color":"gray"}'
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"体力が11以上","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"体力が21以上","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -41,16 +41,16 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 50
+    data modify storage asset:artifact MPCost set value 15
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 100
+    data modify storage asset:artifact LocalCooldown set value 600
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    # data modify storage asset:artifact TypeCooldown.Type set value
-    # data modify storage asset:artifact TypeCooldown.Duration set value
+    data modify storage asset:artifact TypeCooldown.Type set value "heal"
+    data modify storage asset:artifact TypeCooldown.Duration set value 100
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
