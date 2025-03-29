@@ -21,6 +21,10 @@
         execute if score @s AK.EventTimer matches 155..165 positioned ^ ^ ^-0.2 run function asset:mob/0380.haruclaire_v3/tick/util/tp
     # 演出
         execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 31 at @s run playsound entity.phantom.flap hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 45 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 70 at @s run playsound entity.arrow.hit_player hostile @a ~ ~ ~ 2 1.7
+        execute if score @s AK.EventTimer matches 154 at @s run playsound entity.phantom.flap hostile @a ~ ~ ~ 2 1.3
         execute if score @s AK.EventTimer matches 13 at @s positioned ~ ~3 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/particle
         execute if score @s AK.EventTimer matches 13 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
         execute if score @s AK.EventTimer matches 84 at @s run playsound block.grindstone.use hostile @a ~ ~ ~ 2 1.8
@@ -32,8 +36,8 @@
         execute if score @s AK.EventTimer matches 130 at @s run playsound block.glass.place hostile @a ~ ~ ~ 2 1
         execute if score @s AK.EventTimer matches 84 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
         execute if score @s AK.EventTimer matches 90 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
-        execute if score @s AK.EventTimer matches 96 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
-        execute if score @s AK.EventTimer matches 102 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
+        execute if score @s AK.EventTimer matches 96 at @s run particle block ice ^ ^1 ^ 0.5 0.5 0.5 0 5
+        execute if score @s AK.EventTimer matches 102 at @s run particle block ice ^ ^1 ^ 0.5 0.5 0.5 0 5
         execute if score @s AK.EventTimer matches 108 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
         execute if score @s AK.EventTimer matches 114 at @s run particle block ice ^ ^3 ^ 0.5 0.5 0.5 0 5
 # 2
