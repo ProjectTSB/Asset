@@ -26,5 +26,5 @@
         execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..4] run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/damage
 
 # 衝撃波を飛ばす
-    data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[0.561f,-0.43f,0.43f,0.561f]}
+    data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[-0.5f,-0.5f,-0.5f,0.5f]}
     function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/slash_shot
