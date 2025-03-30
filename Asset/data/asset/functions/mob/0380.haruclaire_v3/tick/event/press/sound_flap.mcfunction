@@ -10,7 +10,7 @@
     execute unless score $Interval Temporary matches 0 run return run scoreboard players reset $Interval
 
 # 効果音
-    playsound entity.phantom.flap hostile @a ~ ~ ~ 1 2
+    playsound entity.phantom.flap hostile @a ~ ~ ~ 2 2
 
 # リセット
     scoreboard players reset $Interval

@@ -26,7 +26,7 @@
     execute if score @s AK.EventTimer matches 129 run function asset:mob/0380.haruclaire_v3/tick/util/calc_vector.m {Tick:11}
     execute if score @s AK.EventTimer matches 134..144 run function asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
 
-    execute if score @s AK.EventTimer matches 154..165 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
+    execute if score @s AK.EventTimer matches 150..171 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
     execute if score @s AK.EventTimer matches 167 positioned as @p[tag=AK.MainTarget] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
     execute if score @s AK.EventTimer matches 167 run function asset:mob/0380.haruclaire_v3/tick/util/calc_vector.m {Tick:11}
     execute if score @s AK.EventTimer matches 172..182 run function asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
