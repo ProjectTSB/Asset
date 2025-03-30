@@ -1,7 +1,10 @@
 #> asset:mob/0327.eclael/init/
 # @within asset:mob/alias/327/init
 
-datapack enable "file/AJ_Eclael.zip"
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Eclael",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 多重召喚対策
     execute if entity @e[type=wither_skeleton,tag=93.EndInit] run return run function asset:mob/0327.eclael/remove/
