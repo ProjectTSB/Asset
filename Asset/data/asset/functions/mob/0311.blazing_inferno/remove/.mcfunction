@@ -12,7 +12,8 @@
     execute as @e[type=blaze,scores={MobID=313},distance=..64] run function api:mob/remove
 
 # AJのデータパックを無効化
-    datapack disable "file/AJ_BlazingInferno.zip"
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_BlazingInferno",Active:false}]
+    function asset:datapack/set_activation_state
 
 # Super!
     function asset:mob/super.remove
