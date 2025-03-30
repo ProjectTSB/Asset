@@ -8,9 +8,9 @@
 # @private
     #declare function asset_manager:mob/bossbar/init
 
-datapack enable "file/AJ_Axia.zip"
-datapack enable "file/AJ_Ecual.zip"
-datapack enable "file/AJ_Labyria.zip"
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Axia",Active:true},{Datapack:"AJ_Ecual",Active:true},{Datapack:"AJ_Labyria",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 位置を調整
     tp @s ~ ~0.1 ~ ~ ~
