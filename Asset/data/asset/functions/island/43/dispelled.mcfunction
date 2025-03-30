@@ -4,6 +4,3 @@
 data modify storage api: Argument.ID set value 43
 data modify storage api: Argument.GroupID set value "islands"
 function api:teleporter/modify_groups/add
-
-datapack disable "file/AJ_TerribleSonicBomber.zip"
-datapack disable "file/AJ_PatriotLauncher.zip"

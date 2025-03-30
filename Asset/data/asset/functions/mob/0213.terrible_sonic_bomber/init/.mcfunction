@@ -4,9 +4,6 @@
 #
 # @within asset:mob/alias/213/init
 
-datapack enable "AJ_TerribleSonicBomber.zip"
-datapack enable "AJ_PatriotLauncher.zip"
-
 #> prv
 # @private
     #declare score_holder $initial_motion_end_time
