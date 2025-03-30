@@ -20,6 +20,7 @@
 # ダメージ
     data modify storage api: Argument.Damage set value 600f
     data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:damage/
     function api:damage/reset

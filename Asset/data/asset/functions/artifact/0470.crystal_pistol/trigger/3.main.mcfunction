@@ -15,7 +15,7 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1107
-    data modify storage api: Argument.FieldOverride.Damage set value 8
+    data modify storage api: Argument.FieldOverride.Damage set value 23
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute anchored eyes positioned ^-0.35 ^-0.15 ^0.5 run function api:object/summon
