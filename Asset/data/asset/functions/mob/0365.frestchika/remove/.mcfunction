@@ -4,5 +4,8 @@
 #
 # @within asset:mob/alias/365/remove
 
+# Super!
+    function asset:mob/super.remove
+
 # マーカーを片付ける
     kill @e[type=marker,tag=A5.Marker,distance=..64]
