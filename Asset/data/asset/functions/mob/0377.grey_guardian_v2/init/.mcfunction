@@ -6,6 +6,10 @@
 
 datapack enable "file/AJ_GreyGuardian.zip"
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_GreyGuardian",Active:true}]
+    function asset:datapack/set_activation_state
+
 function asset:mob/super.init
 
 # AJモデル召喚
