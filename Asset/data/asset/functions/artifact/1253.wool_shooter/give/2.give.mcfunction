@@ -1,9 +1,9 @@
-#> asset:artifact/1253.deteriorated_sheep_blessing/give/2.give
+#> asset:artifact/1253.wool_shooter/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1253.deteriorated_sheep_blessing/give/1.trigger
+# @within function asset:artifact/1253.wool_shooter/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:bow"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"劣化した羊の加護","color":"green"}]'
+    data modify storage asset:artifact Name set value '[{"text":"ウールシューター","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text": "視点先に羊毛の橋を設置する"}','{"text": "最大までチャージすると距離が伸びる"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
