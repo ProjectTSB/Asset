@@ -11,7 +11,7 @@
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは うしの きはくに あっとうされた","with":[{"selector":"@s"}]}]'
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..12] run function api:damage/
     function api:damage/reset
     tag @a remove DXYZ
 

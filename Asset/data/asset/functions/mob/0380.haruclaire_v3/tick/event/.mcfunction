@@ -5,7 +5,6 @@
 # @within asset:mob/0380.haruclaire_v3/tick/
 
 # 後半戦移動
-# 登場
     execute if entity @s[tag=AK.Skill.MoveS] run return run function asset:mob/0380.haruclaire_v3/tick/event/second_move/
 
 # 登場
@@ -70,3 +69,6 @@
 
 # 円範囲4体
     execute if entity @s[tag=AK.Skill.IceCremation.FourCircle] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_four_circle/
+
+# 交差
+    execute if entity @s[tag=AK.Skill.IceCremation.Cross] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_cross/
