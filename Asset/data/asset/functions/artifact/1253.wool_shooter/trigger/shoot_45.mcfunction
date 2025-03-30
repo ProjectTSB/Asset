@@ -14,7 +14,7 @@
     execute if entity @s[distance=..1] unless block ~ ~ ~ #lib:unbreakable run tag @s remove Landing
 
 # 羊毛設置
-    execute if predicate api:area/is_breakable run setblock ~ ~ ~ white_wool keep
+    execute if predicate api:area/is_breakable run setblock ^ ^ ^ white_wool keep
 
 
 # 再帰
