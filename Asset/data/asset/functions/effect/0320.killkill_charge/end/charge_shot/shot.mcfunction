@@ -9,7 +9,7 @@
     #declare tag SpreadMarker
 
 # 演出
-    playsound entity.firework_rocket.blast player @a ~ ~ ~ 0.7 0.5
+    execute at @s anchored eyes positioned ~ ~ ~ run playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.2
     playsound entity.firework_rocket.blast player @a ~ ~ ~ 0.7 0.7
     particle block gold_block ^ ^ ^-0.8 0 0 0 1 1
     particle electric_spark ~ ~ ~ 0 0 0 0.2 5
