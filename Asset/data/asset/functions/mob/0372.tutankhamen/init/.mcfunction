@@ -4,7 +4,9 @@
 #
 # @within asset:mob/alias/372/init
 
-datapack enable "file/AJ_Tutankhamen.zip"
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Tutankhamen",Active:true}]
+    function asset:datapack/set_activation_state
 
 # super.init呼び出し
     function asset:mob/super.init
