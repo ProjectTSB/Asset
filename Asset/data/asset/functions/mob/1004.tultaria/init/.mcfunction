@@ -4,8 +4,10 @@
 #
 # @within asset:mob/alias/1004/init
 
-datapack enable "file/AJ_Tultaria.zip"
-datapack enable "file/AJ_IllusionOfLoyalty.zip"
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Tultaria",Active:true},{Datapack:"AJ_IllusionOfLoyalty",Active:true}]
+    function asset:datapack/set_activation_state
 
 #> ボスキャラのモデル
 # @private
