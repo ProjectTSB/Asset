@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
+        "asset:mob/0047.the_heretic/enroll_pool",
+        "asset:mob/0271.indomitable_warrior/enroll_pool",
+        "asset:mob/0053.executioners/enroll_pool",
         "asset:mob/0242.poltergeist_subspecies_bow/enroll_pool",
         "asset:mob/0057.none_fighter/enroll_pool",
         "asset:mob/0259.shadow_stalker/enroll_pool",
