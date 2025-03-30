@@ -5,12 +5,12 @@
 # @within function asset_manager:spawner/register/register.m
 
 
-execute unless loaded 23 10 55 run return 1
+execute unless loaded 23 5 52 run return 1
 
 # ID (int)
     data modify storage asset:spawner ID set value 8
 # Pos ([int] @ 3)
-    data modify storage asset:spawner Pos set value [23, 10, 55]
+    data modify storage asset:spawner Pos set value [23, 5, 52]
 # 体力 (int) このスポナーから召喚されたMobがN体殺されると破壊されるか
     data modify storage asset:spawner HP set value 2
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する

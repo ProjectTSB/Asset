@@ -18,4 +18,4 @@ execute unless loaded 100 49 -17 run return 1
 # デフォルトの起動状態 ("InvisibleDeactivate" | "VisibleDeactivate" | "Activate")
     data modify storage asset:teleporter ActivationState set value "VisibleDeactivate"
 # 色 ([int @ 0..255] @ 3)
-    data modify storage asset:teleporter Color set value [255, 128, 255]
+    data modify storage asset:teleporter Color set value [128, 255, 255]
