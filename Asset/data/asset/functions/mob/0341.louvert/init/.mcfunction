@@ -4,7 +4,9 @@
 #
 # @within asset:mob/alias/341/init
 
-datapack enable "file/AJ_Louvert.zip"
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Louvert",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 召喚位置を記録
     summon marker ~ ~1 ~ {Tags:["9H.Marker.SummonPoint"]}
