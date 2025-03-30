@@ -4,7 +4,9 @@
 #
 # @within asset:mob/alias/380/init
 
-datapack enable "file/AJ_Haruclaire.zip"
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Haruclaire",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 継承元の処理実行
     function asset:mob/super.init

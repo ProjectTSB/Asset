@@ -26,6 +26,6 @@
 # 継承元の処理
     function asset:mob/super.remove
 
-datapack disable "file/AJ_Axia.zip"
-datapack disable "file/AJ_Ecual.zip"
-datapack disable "file/AJ_Labyria.zip"
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Axia",Active:false},{Datapack:"AJ_Ecual",Active:false},{Datapack:"AJ_Labyria",Active:false}]
+    function asset:datapack/set_activation_state

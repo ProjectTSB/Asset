@@ -4,7 +4,9 @@
 #
 # @within asset:mob/alias/378/init
 
-datapack enable "file/AJ_RedKnight.zip"
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_RedKnight",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 抽象
     function asset:mob/super.init
