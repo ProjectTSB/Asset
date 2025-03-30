@@ -16,8 +16,8 @@
     execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
 # 失った体力(100倍)を計算する
     scoreboard players operation $MaxHealth Temporary -= $CurHealth Temporary
-# 失った体力(100倍)の0.01倍*75%を回復量にする
-    execute store result storage api: Argument.Heal double 0.0075 run scoreboard players get $MaxHealth Temporary
+# 失った体力(100倍)の0.01倍*X%を回復量にする
+    execute store result storage api: Argument.Heal double 0.004 run scoreboard players get $MaxHealth Temporary
 # 回復量を固定する
     data modify storage api: Argument.FixedHeal set value true
 # 回復

@@ -5,7 +5,11 @@
 # @within function asset:artifact/0609.lunar_flare/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
+
+# 視点先検知
+    execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0609.lunar_flare/trigger/find_target_entity
+
 # ここから先は神器側の効果の処理を書く
 
 # playsound

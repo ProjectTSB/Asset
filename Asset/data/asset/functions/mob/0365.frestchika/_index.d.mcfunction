@@ -70,5 +70,5 @@
     #declare function animated_java:frestchika/animations/break_loop/tween
     #declare function animated_java:frestchika/animations/recovery/tween
     #declare function animated_java:frestchika/animations/teleport/tween
-    #declare tag aj.frestchika.bone.right_item.child
-    #declare tag aj.frestchika.bone.left_item.child
+    #declare tag aj.frestchika.bone.right_item_display
+    #declare tag aj.frestchika.bone.left_item_display
