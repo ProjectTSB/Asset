@@ -33,4 +33,6 @@
     execute as @e[type=item_display,distance=..0.1,sort=nearest,limit=1] run function animated_java:red_knight/remove/this
     kill @s
 
-datapack disable "file/AJ_RedKnight.zip"
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_RedKnight",Active:false}]
+    function asset:datapack/set_activation_state
