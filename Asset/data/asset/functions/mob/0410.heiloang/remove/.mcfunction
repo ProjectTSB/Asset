@@ -28,4 +28,6 @@
     execute as @e[tag=BE.Object] on passengers run kill @s
     kill @e[tag=BE.Object]
 
-datapack disable "file/AJ_Heiloang.zip"
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Heiloang",Active:false}]
+    function asset:datapack/set_activation_state

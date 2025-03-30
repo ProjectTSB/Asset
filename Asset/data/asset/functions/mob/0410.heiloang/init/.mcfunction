@@ -4,7 +4,11 @@
 #
 # @within asset:mob/alias/410/init
 
-datapack enable "file/AJ_Heiloang.zip"
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Heiloang",Active:true}]
+    function asset:datapack/set_activation_state
+
 
 # 継承元の処理実行
     function asset:mob/super.init
