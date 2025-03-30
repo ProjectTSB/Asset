@@ -22,4 +22,6 @@
     execute as @e[tag=AK.Object] on passengers run kill @s
     kill @e[tag=AK.Object]
 
-datapack disable "file/AJ_Haruclaire.zip"
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Haruclaire",Active:false}]
+    function asset:datapack/set_activation_state
