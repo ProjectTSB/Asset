@@ -1,6 +1,20 @@
 {
     "replace": false,
     "values": [
-        
+        "asset:mob/0219.aorta/enroll_pool",
+        "asset:mob/0220.vena_cana/enroll_pool",
+        "asset:mob/0260.shadow_stalker/enroll_pool",
+        "asset:mob/0423.edge_mage/enroll_pool",
+        "asset:mob/0047.the_heretic/enroll_pool",
+        "asset:mob/0271.indomitable_warrior/enroll_pool",
+        "asset:mob/0053.executioners/enroll_pool",
+        "asset:mob/0242.poltergeist_subspecies_bow/enroll_pool",
+        "asset:mob/0057.none_fighter/enroll_pool",
+        "asset:mob/0259.shadow_stalker/enroll_pool",
+        "asset:mob/0089.decapitation/enroll_pool",
+        "asset:mob/0063.ghost/enroll_pool",
+        "asset:mob/0031.tomb_robbing/enroll_pool",
+        "asset:mob/0029.skeleton_archer/enroll_pool",
+        "asset:mob/0023.chainsaw_zombie/enroll_pool"
     ]
 }
