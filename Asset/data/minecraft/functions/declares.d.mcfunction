@@ -204,6 +204,7 @@
     #declare function api:teleporter/set_activation_state/from_id                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_id.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_nearest                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
     #declare function api:teleporter/unsafe/register_manual                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/unsafe/register_manual.mcfunction#L1
+    #declare function asset:datapack/set_activation_state                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/datapack/set_activation_state.mcfunction#L1
     #declare function lib:array/compare                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/compare.mcfunction#L1
     #declare function lib:array/compare_single                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/compare_single.mcfunction#L1
     #declare function lib:array/mask                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/mask.mcfunction#L1
