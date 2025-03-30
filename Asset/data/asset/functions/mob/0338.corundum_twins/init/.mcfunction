@@ -4,6 +4,10 @@
 datapack enable "file/AJ_Rubiel.zip"
 datapack enable "file/AJ_Sapphiel.zip"
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Rubiel",Active:true},{Datapack:"AJ_Sapphiel",Active:true}]
+    function asset:datapack/set_activation_state
+
 function asset:mob/super.init
 
 function asset:mob/0338.corundum_twins/init/app/1.init
