@@ -11,5 +11,8 @@
 # 付近のしもべを削除
     execute as @e[type=blaze,scores={MobID=313},distance=..64] run function api:mob/remove
 
+# AJのデータパックを無効化
+    datapack disable "file/AJ_BlazingInferno.zip"
+
 # Super!
     function asset:mob/super.remove

@@ -35,4 +35,5 @@
 # 消失
     execute if score @s General.Object.Tick matches 350 run particle minecraft:cloud ~ ~1.3 ~ 0 0 0 0.3 100
     execute if score @s General.Object.Tick matches 350 as @e[type=item_display,distance=..0.1,sort=nearest,limit=1] run function animated_java:lexiel/remove/this
+    execute if score @s General.Object.Tick matches 350 run datapack disable "file/AJ_Lexiel.zip"
     execute if score @s General.Object.Tick matches 350 run kill @s

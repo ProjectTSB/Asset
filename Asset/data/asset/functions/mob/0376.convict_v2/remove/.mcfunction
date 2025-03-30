@@ -8,3 +8,5 @@
     function asset:mob/super.remove
 
     execute as @e[type=item_display,tag=AG.AJ,distance=..100,sort=nearest,limit=1] run function animated_java:convict/remove/this
+
+datapack disable "file/AJ_Convict.zip"

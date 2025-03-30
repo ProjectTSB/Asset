@@ -21,3 +21,5 @@
 # オブジェクト消去
     execute as @e[tag=AK.Object] on passengers run kill @s
     kill @e[tag=AK.Object]
+
+datapack disable "file/AJ_Haruclaire.zip"
