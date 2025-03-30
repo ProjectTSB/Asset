@@ -1,8 +1,8 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/press/sound_flap
+#> asset:mob/0380.haruclaire_v3/tick/event/second_move/sound_flap
 #
 # 押しつぶし
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/press/
+# @within asset:mob/0380.haruclaire_v3/tick/event/second_move/
 
 # 3tickおきに実行
     scoreboard players operation $Interval Temporary = @s AK.EventTimer

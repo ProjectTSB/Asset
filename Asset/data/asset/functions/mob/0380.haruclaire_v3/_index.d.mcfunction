@@ -33,6 +33,9 @@
     #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
     #declare function animated_java:haruclaire_aj/animations/29_0_second_press/tween
     #declare function animated_java:haruclaire_aj/animations/30_0_move_back/tween
+    #declare function animated_java:haruclaire_aj/animations/30_0_move_forward/tween
+    #declare function animated_java:haruclaire_aj/animations/30_0_move_right/tween
+    #declare function animated_java:haruclaire_aj/animations/30_0_move_left/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
