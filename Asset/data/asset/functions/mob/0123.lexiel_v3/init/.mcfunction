@@ -4,7 +4,8 @@
 #
 # @within asset:mob/alias/123/init
 
-datapack enable "file/AJ_Lexiel.zip"
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Lexiel",Active:true}]
+    function asset:datapack/set_activation_state
 
 function asset:mob/super.init
 
