@@ -6,6 +6,7 @@
 
 # タグ消去
     tag @s remove AK.Skill.IceCremation.First
+    tag @s remove AK.Temp.FixedRotation
     tag @a remove AK.MainTarget
 
 # 待機モーション再生

@@ -32,6 +32,7 @@
     #declare function animated_java:haruclaire_aj/animations/27_0_second_icepillar/tween
     #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
     #declare function animated_java:haruclaire_aj/animations/29_0_second_press/tween
+    #declare function animated_java:haruclaire_aj/animations/30_0_move_back/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -65,6 +66,7 @@
     # - スキル
     #declare tag AK.Skill.Start 登場
     #declare tag AK.Skill.Move 移動
+    #declare tag AK.Skill.MoveS 移動・後半戦
     #declare tag AK.Skill.IceBullet アイスバレット・エトワール
     #declare tag AK.Skill.IceWall アイスウォール
     #declare tag AK.Skill.IceSiege アイスシージ
@@ -100,6 +102,7 @@
     #declare tag AK.Temp.Ground 接地用
     #declare tag AK.Temp.Hit ヒット確認用
     #declare tag AK.Temp.Right 角度変更用
+    #declare tag AK.Temp.FixedRotation 角度固定
     #declare tag AK.Temp.AttackPosition 攻撃位置保持用
     #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用

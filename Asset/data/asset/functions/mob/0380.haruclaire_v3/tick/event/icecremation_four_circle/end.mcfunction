@@ -8,12 +8,10 @@
     tag @s remove AK.Skill.IceCremation.FourCircle
     tag @a remove AK.MainTarget
 
-# アイスウォールに移行
+# 中央に移動
     scoreboard players set @s AK.EventTimer 0
+    tag @s add AK.Skill.MoveS
+    execute positioned as @e[type=marker,tag=AK.CenterPosition] run summon area_effect_cloud ^ ^0.3 ^ {Tags:["AK.Temp.AttackPosition"],Duration:3}
+
+# 移動後、アイスウォールに移行
     tag @s add AK.Skill.IceWallDuo
-
-# # 待機モーション再生
-#     execute as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/21_0_second_idle
-
-# # 行動
-#     function asset:mob/0380.haruclaire_v3/tick/act/

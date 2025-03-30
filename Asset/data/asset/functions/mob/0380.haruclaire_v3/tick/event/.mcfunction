@@ -4,6 +4,10 @@
 #
 # @within asset:mob/0380.haruclaire_v3/tick/
 
+# 後半戦移動
+# 登場
+    execute if entity @s[tag=AK.Skill.MoveS] run return run function asset:mob/0380.haruclaire_v3/tick/event/second_move/
+
 # 登場
     execute if entity @s[tag=AK.Skill.Start] run function asset:mob/0380.haruclaire_v3/tick/event/start/
 
