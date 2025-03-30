@@ -13,12 +13,12 @@
     execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
 
 # 8個以上羊毛を持ってるかチェック
-    execute store result score @s Temporary run clear @s #wool 0
-    execute if score @s Temporary matches ..7 run tag @s remove CanUsed
-    execute if score @s Temporary matches ..7 run function lib:message/artifact/dont_have_require_items
+    execute store result score @s[tag=CanUsed] Temporary run clear @s #wool 0
+    execute if score @s[tag=CanUsed] Temporary matches ..7 run tag @s remove CanUsed
+    execute if score @s[tag=CanUsed] Temporary matches ..7 run function lib:message/artifact/dont_have_require_items
 
 # 羊毛が24個を切っていた場合警告
-    execute if score @s Temporary matches 7..24 run tellraw @s[tag=CanUsed] {"text":"注意：羊毛が残り少ないです！","color":"red","bold":true}
+    execute if score @s[tag=CanUsed] Temporary matches 7..24 run tellraw @s[tag=CanUsed] {"text":"注意：羊毛が残り少ないです！","color":"red","bold":true}
 
 # リセット
     scoreboard players reset @s Temporary
