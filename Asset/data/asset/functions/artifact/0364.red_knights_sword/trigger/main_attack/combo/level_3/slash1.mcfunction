@@ -1,8 +1,12 @@
 #> asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/slash1
 #
-#
+# 斬撃のダメージ:レベル3
 #
 # @within function asset:artifact/0364.red_knights_sword/trigger/main_attack/
+
+# 調整担当へのメモ:
+# レベル3斬撃は強い！…
+# レベル3~4の強神器くらいのダメージは出てもいいのかな？
 
 # 演出
     playsound ogg:item.trident.throw1 player @a ~ ~ ~ 1.5 0.5

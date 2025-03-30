@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/0364.red_knights_sword/trigger/3.main
 
+# 調整担当へのメモ:
+# ここではクールタイムの時間を調整できます。今は15秒です。
+
 # 攻撃や演出など。ヘルスダメージ以外の処理。
     function asset:artifact/0364.red_knights_sword/trigger/alt_attack/attack
 
@@ -18,6 +21,7 @@
     execute if score @s Temporary matches ..50 run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/lethal_damage
 
 # Alt攻撃のクールタイムを兼ねたデバフを付与
+# Argument.Durationを変更するとデバフの時間が変わる。1秒＝20です。
     data modify storage api: Argument.ID set value 321
     data modify storage api: Argument.Stack set value 1
     data modify storage api: Argument.Duration set value 300

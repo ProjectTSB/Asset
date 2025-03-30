@@ -1,12 +1,16 @@
 #> asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_2/damage
 #
-#
+# 斬撃のダメージ: レベル2
 #
 # @within function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/**
 
+# 調整担当へのメモ:
+# HPが34%~66%のときの性能です。ちょっとリーチが伸びました。レベル3の強神器くらいのダメージは出ると嬉しいかも。レベル4だと強すぎるかも。
+# ただ、MP消費がないのでそこら辺は要調整かも。強神器とかよか、少し弱めでもいいかも。
+
 # 引数の設定
     # ダメージ値設定
-        execute store result storage api: Argument.Damage float 1 run random value 125..175
+        execute store result storage api: Argument.Damage float 1 run random value 300..370
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
