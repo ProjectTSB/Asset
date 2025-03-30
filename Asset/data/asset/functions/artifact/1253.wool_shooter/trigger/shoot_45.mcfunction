@@ -4,7 +4,7 @@
 #
 # @within function
 #   asset:artifact/1253.wool_shooter/trigger/3.main
-#   asset:artifact/1253.wool_shooter/trigger/shoot
+#   asset:artifact/1253.wool_shooter/trigger/shoot_45
 
 # 着弾検知
     execute unless block ^ ^ ^ #lib:no_collision run tag @s add Landing
@@ -18,5 +18,5 @@
 
 
 # 再帰
-    execute positioned ^ ^ ^1 if entity @s[tag=YT.FullCharge,tag=!Landing,distance=..16] run function asset:artifact/1253.wool_shooter/trigger/shoot
-    execute positioned ^ ^ ^1 if entity @s[tag=!YT.FullCharge,tag=!Landing,distance=..8] run function asset:artifact/1253.wool_shooter/trigger/shoot
+    execute positioned ^ ^ ^1.414 if entity @s[tag=YT.FullCharge,tag=!Landing,distance=..16] run function asset:artifact/1253.wool_shooter/trigger/shoot_45
+    execute positioned ^ ^ ^1.414 if entity @s[tag=!YT.FullCharge,tag=!Landing,distance=..8] run function asset:artifact/1253.wool_shooter/trigger/shoot_45

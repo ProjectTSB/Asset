@@ -18,7 +18,7 @@
     data modify storage asset:artifact Lore set value ['{"text": "視点先に羊毛の橋を設置する"}','{"text": "最大までチャージすると距離が伸びる"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.white_wool"}'
-    data modify storage asset:artifact ConsumeItem.Count set value 16
+    data modify storage asset:artifact ConsumeItem.Count set value 8
     data modify storage asset:artifact ConsumeItem.Extra set value '"矢 × 1"'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
