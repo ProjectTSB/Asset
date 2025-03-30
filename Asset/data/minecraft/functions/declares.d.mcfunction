@@ -931,6 +931,12 @@
 
 #> declare
 # @within
+#   function asset:**
+#   function asset_manager:**
+#declare storage asset:datapack from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/datapack/_index.d.mcfunction#L8
+
+#> declare
+# @within
 #   function asset_manager:island/dispel/boss/*
 #   function asset_manager:object/triggers/tick
 #   function asset:object/**
