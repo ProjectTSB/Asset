@@ -9,5 +9,4 @@
 # @within asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
 
 # 移動
-    $execute positioned ~$(X) ~$(Y) ~$(Z) if block ~ ~ ~ #lib:no_collision run return run tp @s ~ ~ ~
-    $execute positioned ~$(X) ~ ~$(Z) run function asset:mob/0380.haruclaire_v3/tick/util/tp
+    $execute positioned ~$(X) ~$(Y) ~$(Z) run tp @s ~ ~ ~

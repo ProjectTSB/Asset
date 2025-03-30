@@ -90,6 +90,7 @@
     #declare tag AK.Skill.IceCremation.Dash アイスクリメーション・連続突進
     #declare tag AK.Skill.IceCremation.FourCircle アイスクリメーション・円範囲4体
     #declare tag AK.Skill.IceCremation.Cross アイスクリメーション・交差
+    #declare tag AK.Skill.IceCremation.CircleLine アイスクリメーション・円+直線
     #
     # - 他Entity
     #declare tag AK.CenterPosition 召喚位置

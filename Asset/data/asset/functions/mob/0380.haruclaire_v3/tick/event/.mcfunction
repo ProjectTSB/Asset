@@ -72,3 +72,6 @@
 
 # 交差
     execute if entity @s[tag=AK.Skill.IceCremation.Cross] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_cross/
+
+# 円+直線
+    execute if entity @s[tag=AK.Skill.IceCremation.CircleLine] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_circle_line/
