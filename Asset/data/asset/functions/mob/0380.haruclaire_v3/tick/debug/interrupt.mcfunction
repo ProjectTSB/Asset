@@ -12,4 +12,4 @@
 
 # イベント実行
     scoreboard players set @s AK.EventTimer 0
-    tag @s add AK.Skill.IceCremation.FourCircle
+    tag @s add AK.Skill.Press

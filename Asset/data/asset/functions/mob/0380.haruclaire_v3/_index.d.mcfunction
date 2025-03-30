@@ -27,10 +27,11 @@
     #declare function animated_java:haruclaire_aj/animations/24_0_second_sword_line_first/tween
     #declare function animated_java:haruclaire_aj/animations/24_0_second_sword_line_short/tween
     #declare function animated_java:haruclaire_aj/animations/25_0_second_icebullet_duo/tween
-    #declare function animated_java:haruclaire_aj/animations/27_0_second_icepillar/tween
-    #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
     #declare function animated_java:haruclaire_aj/animations/26_0_second_ice_cremation_first/tween
     #declare function animated_java:haruclaire_aj/animations/26_1_second_ice_cremation_short/tween
+    #declare function animated_java:haruclaire_aj/animations/27_0_second_icepillar/tween
+    #declare function animated_java:haruclaire_aj/animations/28_0_second_icewall/tween
+    #declare function animated_java:haruclaire_aj/animations/29_0_second_press/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -79,6 +80,7 @@
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #declare tag AK.Skill.IceWallDuo アイスウォール
     #declare tag AK.Skill.IcePillarDuo アイスピラー
+    #declare tag AK.Skill.Press 押しつぶし
     #declare tag AK.Skill.IceCremation.First アイスクリメーション・初回
     #declare tag AK.Skill.IceCremation.Dash アイスクリメーション・連続突進
     #declare tag AK.Skill.IceCremation.FourCircle アイスクリメーション・円範囲4体

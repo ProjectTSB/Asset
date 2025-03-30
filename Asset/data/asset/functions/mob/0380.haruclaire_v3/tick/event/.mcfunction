@@ -54,6 +54,9 @@
 # アイスピラー
     execute if entity @s[tag=AK.Skill.IcePillarDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_pillar_duo/
 
+# 押しつぶし
+    execute if entity @s[tag=AK.Skill.Press] run function asset:mob/0380.haruclaire_v3/tick/event/press/
+
 ## アイスクリメーション
 # お披露目
     execute if entity @s[tag=AK.Skill.IceCremation.First] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/
