@@ -19,8 +19,8 @@
 
 # 移動処理
 # 中心座標を中心に旋回
-    execute positioned ^ ^ ^1.5 unless entity @e[tag=5X.Centre,distance=..50] run tag @s add 5X.ShouldTurn
-    execute if entity @s[tag=5X.ShouldTurn] facing entity @e[tag=5X.Centre,distance=..128,limit=1] eyes rotated ~60 0 run tp @s ~ ~ ~ ~ ~
+    execute positioned ^ ^ ^1.5 unless entity @e[type=marker,tag=5X.Centre,distance=..50] run tag @s add 5X.ShouldTurn
+    execute if entity @s[tag=5X.ShouldTurn] facing entity @e[type=marker,tag=5X.Centre,distance=..128,limit=1] eyes rotated ~60 0 run tp @s ~ ~ ~ ~ ~
 
 # 直進(直線翼になるのでちょい遅い)
     execute rotated as @s run tp @s ^ ^ ^1.3
@@ -35,7 +35,7 @@
 # 対空砲付近を飛ぶときはフレアを出す(8tickおき)
     execute store result score $flare_time Temporary run time query gametime
     scoreboard players operation $flare_time Temporary %= $8 Const
-    execute if entity @e[tag=5X.Centre,distance=..30] if score $flare_time Temporary matches 0 run particle minecraft:lava ^ ^-1 ^-2 1.5 0 1.5 1 24 force
+    execute if entity @e[type=marker,tag=5X.Centre,distance=..30] if score $flare_time Temporary matches 0 run particle minecraft:lava ^ ^-1 ^-2 1.5 0 1.5 1 24 force
 
 # 攻撃処理
 # 使用武器を取得
@@ -50,7 +50,7 @@
 
 # 攻撃終了後の処理
     execute if score $current_gametime_for_attack Temporary >= $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/set_next_attack_time
-    execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/escape_after_attack
+    execute if score $current_gametime_for_attack Temporary = $attack_end_time Temporary run function asset:mob/0213.terrible_sonic_bomber/tick/motions/after_attack
 
         #tellraw @a [{"text": "use_weapon"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]
         #tellraw @a [{"text": "attack_start_time"},{"score":{"objective":"Temporary","name":"$use_weapon"}}]

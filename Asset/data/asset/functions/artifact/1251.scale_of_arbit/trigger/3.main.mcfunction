@@ -21,7 +21,7 @@
     function api:entity/mob/effect/reset
 
 # 固定ダメージ
-    data modify storage api: Argument.Damage set value 10
+    data modify storage api: Argument.Damage set value 20
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.FixedDamage set value true
     function api:damage/modifier
