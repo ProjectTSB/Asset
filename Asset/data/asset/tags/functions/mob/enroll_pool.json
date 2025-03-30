@@ -1,6 +1,9 @@
 {
     "replace": false,
     "values": [
-        
+        "asset:mob/0063.ghost/enroll_pool",
+        "asset:mob/0031.tomb_robbing/enroll_pool",
+        "asset:mob/0029.skeleton_archer/enroll_pool",
+        "asset:mob/0023.chainsaw_zombie/enroll_pool"
     ]
 }
