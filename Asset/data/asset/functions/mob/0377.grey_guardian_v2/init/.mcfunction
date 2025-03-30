@@ -4,7 +4,6 @@
 #
 # @within asset:mob/alias/377/init
 
-datapack enable "file/AJ_GreyGuardian.zip"
 
 # AJロード
     data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_GreyGuardian",Active:true}]
