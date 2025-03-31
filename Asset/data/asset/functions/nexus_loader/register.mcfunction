@@ -4,7 +4,7 @@
 #
 # @within tag/function asset:nexus_loader/register
 
-data modify storage api: Argument set value {ID:100,Dimension: "minecraft:overworld",Pos:[-3480d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
+data modify storage api: Argument set value {ID:100,Dimension: "minecraft:overworld",Pos:[-3981d,38d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
 function api:teleporter/unsafe/register_manual
 data modify storage api: Argument set value {ID:101,Dimension: "minecraft:overworld",Pos:[-3480d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
 function api:teleporter/unsafe/register_manual
