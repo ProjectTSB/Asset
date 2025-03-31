@@ -13,7 +13,7 @@ execute unless loaded 40 21 -69 run return 1
 # 名前 (TextComponent) (オプション)
     data modify storage asset:trader Name set value '{"text":"染料商人"}'
 # 方向 (float) (オプション)
-    data modify storage asset:trader Rotation set value 0f
+    data modify storage asset:trader Rotation set value 45f
 
 # 取引 下位通貨を光るイカスミに
     data modify storage asset:trader Trades append value {}
