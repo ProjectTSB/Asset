@@ -428,8 +428,15 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
   val dataPoints = lines
     .flatMap { line =>
       line.split(",").map(_.trim) match {
-        case Array(id, dim, x, y, z)       => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), defaultSize.get)))
-        case Array(id, dim, x, y, z, size) => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), Math.max(size.toInt, 32))))
+        case Array(id, dim, x, y, z)       =>
+          val s = defaultSize.get
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s, s, s, s, s, s))))
+        case Array(id, dim, x, y, z, size) =>
+          val s = Math.max(size.toInt, 32)
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s, s, s, s, s, s))))
+        case Array(id, dim, x, y, z, minX, maxX, minZ, maxZ) =>
+          val s = defaultSize.get
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (minX.toInt, maxX.toInt, s, s, minZ.toInt, maxZ.toInt))))
         case _                             => None
       }
     }
@@ -437,10 +444,10 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
     .groupMap(_._1)(_._2)
   dataPoints.view.mapValues { regions =>
     regions.map {
-      case (id, (p, size)) =>
+      case (id, (p, (minX, maxX, minY, maxY, minZ, maxZ))) =>
         val bb = BoundingBox(
-          Int3(p.x - size, p.y - size, p.z - size),
-          Int3(p.x + size, p.y + size, p.z + size)
+          Int3(p.x - minX, p.y - minY, p.z - minZ),
+          Int3(p.x + maxX, p.y + maxY, p.z + maxZ)
         )
         bb -> f(id, p)
     }
