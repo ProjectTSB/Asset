@@ -4,17 +4,17 @@
 #
 # @within tag/function asset:nexus_loader/register
 
-data modify storage api: Argument set value {ID:100,Dimension: "minecraft:overworld",Pos:[-3969d, 38d,-909d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
+data modify storage api: Argument set value {ID:100,Dimension: "minecraft:overworld",Pos:[-3480d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:101,Dimension: "minecraft:overworld",Pos:[-3438d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
+data modify storage api: Argument set value {ID:101,Dimension: "minecraft:overworld",Pos:[-3480d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
 function api:teleporter/unsafe/register_manual
 data modify storage api: Argument set value {ID:102,Dimension: "minecraft:overworld",Pos:[-2706d,100d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-57"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:103,Dimension: "minecraft:overworld",Pos:[-2177d,145d,-917d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-56"]}
+data modify storage api: Argument set value {ID:103,Dimension: "minecraft:overworld",Pos:[-2197d,145d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-56"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:104,Dimension: "minecraft:overworld",Pos:[-3971d,  2d,-385d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-61"]}
+data modify storage api: Argument set value {ID:104,Dimension: "minecraft:overworld",Pos:[-3990d,2d,-385d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-61"]}
 function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:200,Dimension:"minecraft:the_nether",Pos:[    3d, 84d,  15d],ActivationState:"Activate",Color:[255,255,255],GroupIDs:["islands-nether"]}
+data modify storage api: Argument set value {ID:200,Dimension:"minecraft:the_nether",Pos:[3d,84d,15d],ActivationState:"Activate",Color:[255,255,255],GroupIDs:["islands-nether"]}
 function api:teleporter/unsafe/register_manual
 
 #> Private
