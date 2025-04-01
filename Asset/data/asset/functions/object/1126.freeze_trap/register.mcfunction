@@ -18,3 +18,5 @@
     data modify storage asset:object ID set value 1126
 # フィールド(オプション)
     data modify storage asset:object Field.Interval set value 0
+    data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.UserID set value -1
