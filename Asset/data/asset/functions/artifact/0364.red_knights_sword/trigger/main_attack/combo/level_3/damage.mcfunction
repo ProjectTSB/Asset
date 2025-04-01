@@ -25,7 +25,7 @@
 # ノクバ耐性を考慮して吹っ飛ばす
     data modify storage lib: Argument.VectorMagnitude set value -2
     data modify storage lib: Argument.KnockbackResist set value true
-    execute as @s at @s facing entity @p[tag=this] feet rotated ~ ~5 run function lib:motion/
+    execute at @s facing entity @p[tag=this] feet rotated ~ ~5 run function lib:motion/
 
 # リセット
     tag @s remove A4.Hit
