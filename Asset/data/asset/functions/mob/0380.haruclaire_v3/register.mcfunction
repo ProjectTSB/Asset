@@ -22,7 +22,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 175000
+    data modify storage asset:mob Health set value 1750
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0f

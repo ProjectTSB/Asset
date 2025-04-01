@@ -55,6 +55,5 @@
         execute if score @s AK.EventTimer matches 210 at @s positioned ~ ~4 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/particle
         execute if score @s AK.EventTimer matches 210 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
 
-
 # 終了
     execute if score @s AK.EventTimer matches 247.. run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/end

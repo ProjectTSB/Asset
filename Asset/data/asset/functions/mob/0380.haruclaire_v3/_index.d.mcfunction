@@ -48,6 +48,7 @@
     #declare tag aj.haruclaire_aj.animation.6_1_rod_super_icebullet.playing
     #declare tag aj.haruclaire_aj.animation.8_0_rod_punch.playing
     #declare tag aj.haruclaire_aj.animation.9_0_rod_laser.playing
+    #declare tag aj.haruclaire_aj.animation.21_0_second_idle.playing
     #
     # - AJ自動生成スコア
     #declare objective aj.0_0_start.frame
@@ -59,12 +60,14 @@
     #declare objective aj.6_1_rod_super_icebullet.frame
     #declare objective aj.8_0_rod_punch.frame
     #declare objective aj.9_0_rod_laser.frame
+    #declare objective aj.21_0_second_idle.frame
     #
     # - 汎用
     #declare tag AK.EntityRoot 本体
     #declare tag AK.ModelRoot かわいいハルクレアのガワ
     #declare tag AK.MainTarget 狙っている対象
     #declare tag AK.Debug デバッグ中
+    #declare tag AK.Stat.Latter 後半戦
     #
     # - スキル
     #declare tag AK.Skill.Start 登場
@@ -87,6 +90,7 @@
     #declare tag AK.Skill.IcePillarDuo アイスピラー
     #declare tag AK.Skill.Press 押しつぶし
     #declare tag AK.Skill.IceCremation.First アイスクリメーション・初回
+    #declare tag AK.Skill.IceCremation.First.Used アイスクリメーション・初回
     #declare tag AK.Skill.IceCremation.Dash アイスクリメーション・連続突進
     #declare tag AK.Skill.IceCremation.FourCircle アイスクリメーション・円範囲4体
     #declare tag AK.Skill.IceCremation.Cross アイスクリメーション・交差

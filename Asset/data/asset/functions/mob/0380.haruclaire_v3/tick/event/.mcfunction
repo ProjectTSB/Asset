@@ -38,9 +38,6 @@
     execute if entity @s[tag=AK.Skill.IcePillar] run function asset:mob/0380.haruclaire_v3/tick/event/ice_pillar/
 
 ## 後半戦
-# ハトクレア召喚
-    execute if entity @s[tag=AK.Skill.SummonHato] run function asset:mob/0380.haruclaire_v3/tick/event/summon_hatoclaire/
-
 # アイシクルブレード
     execute if entity @s[tag=AK.Skill.Blade] run function asset:mob/0380.haruclaire_v3/tick/event/icicle_blade/
 
@@ -75,3 +72,6 @@
 
 # 円+直線
     execute if entity @s[tag=AK.Skill.IceCremation.CircleLine] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_circle_line/
+
+# ハトクレア召喚
+    execute if entity @s[tag=AK.Skill.SummonHato] run function asset:mob/0380.haruclaire_v3/tick/event/summon_hatoclaire/

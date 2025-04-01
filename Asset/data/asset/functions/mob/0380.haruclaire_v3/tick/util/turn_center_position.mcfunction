@@ -2,7 +2,9 @@
 #
 # 汎用処理 中心点のランダム回転
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/**
+# @within
+#     function asset:mob/0380.haruclaire_v3/tick/event/**
+#     function asset:mob/0380.haruclaire_v3/tick/act/**
 
 # ランダム方向に回転
     execute store result score @s AK.Dummy run random value 1..4
