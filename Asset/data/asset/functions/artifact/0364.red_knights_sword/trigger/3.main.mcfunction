@@ -21,7 +21,7 @@
     execute if score @s A4.Combo matches 3.. if score $A4.Temp Temporary matches 13.. run scoreboard players reset @s A4.Combo
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # 攻撃動作
     # デバフID321、「渇望の反動」の付与を確認する。サブ攻撃のクールタイムを兼ねている。
