@@ -10,7 +10,7 @@
     execute if predicate lib:random_pass_per/40 run scoreboard players add @s 4V.Skill 1
 
 # スキルが超えたら戻す
-    execute if score @s 4V.Skill matches 6.. run scoreboard players set @s 4V.Skill 1
+    execute if score @s 4V.Skill matches 7.. run scoreboard players set @s 4V.Skill 1
 
 # デバッグスキル固定
     #scoreboard players set @s 4V.Skill 7
