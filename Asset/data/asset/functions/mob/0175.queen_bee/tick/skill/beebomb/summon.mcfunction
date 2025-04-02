@@ -9,7 +9,7 @@
 # @private
     #declare tag SpreadMarker
 
-# マーカーを拡散させ、その位置で花火召喚処理を実行する
+# マーカーを拡散させ、その位置で召喚処理を実行する
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Bounds set value [[5d,5d],[0d,5d],[5d,5d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] at @s run function lib:spread_entity/
