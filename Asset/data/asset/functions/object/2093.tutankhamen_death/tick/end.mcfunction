@@ -18,5 +18,9 @@
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
 
+    data modify storage api: Argument.ID set value 1124
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # 消失
     kill @s

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の帽子","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+4%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','[{"text":"「森で緑を纏い、狩りをする者がいた。","color":"gray","italic":true}]','[{"text":"その者は獣を必要な数だけ狩り暮らしていた。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['{"text":"火耐性+3.5% 火攻撃+3.5%","color":"red"}','[{"text":"移動速度+2% ","color":"white"}]','[{"text":"「森で緑を纏い、狩りをする者がいた。","color":"gray","italic":true}]','[{"text":"その者は獣を必要な数だけ狩り暮らしていた。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

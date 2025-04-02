@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"えんじぇるうぃんぐ","color":"#FFFFFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"まだ未熟な羽のため、飛べないが、跳ぶことはできる","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"移動速度+40% 跳躍力上昇3","color":"white"}','{"text":"まだ未熟な羽のため、飛べないが、跳ぶことはできる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "chest"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "passive"
+    data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

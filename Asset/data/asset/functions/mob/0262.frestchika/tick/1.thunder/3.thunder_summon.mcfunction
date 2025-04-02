@@ -15,17 +15,12 @@
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.7 2
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.7 0
 
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 50f
-    # 魔法属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 雷属性
-        data modify storage api: Argument.ElementType set value "Thunder"
-    # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] at @s run function api:damage/
     function api:damage/reset
 
 

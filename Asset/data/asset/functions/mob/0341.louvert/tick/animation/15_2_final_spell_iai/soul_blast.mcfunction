@@ -11,7 +11,7 @@
 # 拡散する
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 # 演出のためにランダムな方向を向かせる
-    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run function lib:random/
+    execute store result entity 0-0-0-0-0 Rotation[0] float 0.01 run random value 0..35999
 # ソウルブラスト召喚
     execute at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
 # ソウルブラストを90度回転

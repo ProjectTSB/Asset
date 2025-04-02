@@ -13,8 +13,7 @@
     scoreboard players add @s TZ.Count 1
 
 # 0~2の乱数を求める
-    execute store result score $Random Temporary run function lib:random/
-    scoreboard players operation $Random Temporary %= $3 Const
+    execute store result score $Random Temporary run random value 0..2
 
 # 演出
     execute positioned ^ ^ ^-0.3 run function asset:artifact/1079.allochromatic/trigger/resonance_attack/vfx/square

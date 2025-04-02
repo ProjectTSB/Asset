@@ -13,9 +13,10 @@
     function api:damage/reset
 
 # プレイヤーへのダメージ
-    data modify storage api: Argument.Damage set value 20f
+    data modify storage api: Argument.Damage set value 10f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.FixedDamage set value true
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sはリアクティブアーマーの爆発に巻き込まれた","with":[{"selector":"@s"}]}]']
     function api:damage/modifier
     execute as @a[tag=!this,distance=..3] run function api:damage/

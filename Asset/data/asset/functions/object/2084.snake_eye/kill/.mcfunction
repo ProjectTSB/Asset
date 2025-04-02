@@ -6,14 +6,14 @@
 
 # hit entityとhit block両方で同じ処理書くのも冗長なのでここで書く
 # plausound
-    playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 1 0.5 1
+    playsound entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 0.5 1
 
 # particle
     particle minecraft:large_smoke ~ ~ ~ 2 1 2 0.1 200 normal
     particle minecraft:flame ~ ~ ~ 1 0.6 1 0.05 100 normal
 
 # damage
-    data modify storage api: Argument.Damage set value 60f
+    data modify storage api: Argument.Damage set value 30f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの無誘導爆弾によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'

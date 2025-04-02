@@ -16,7 +16,7 @@
 
 # ダメージ計算
 # 計算式 ： 520 + (現在HP%) * 2
-    scoreboard players set $ST.Damage Temporary 520
+    scoreboard players set $ST.Damage Temporary 660
     scoreboard players operation $ST.PercentHP Temporary = @s ST.PercentHP
     scoreboard players operation $ST.PercentHP Temporary *= $2 Const
     execute store result storage api: Argument.Damage float 1 run scoreboard players operation $ST.Damage Temporary += $ST.PercentHP Temporary
@@ -34,22 +34,22 @@
     function asset:artifact/1037.grand_flame/trigger/schedule/3.1.vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx
 
 # 演出のためにランダムな方向を向かせる
-    execute store result entity @s Rotation[0] float 0.01 run function lib:random/
-    execute store result entity @s Rotation[1] float 0.01 run function lib:random/
+    execute store result entity @s Rotation[0] float 0.01 run random value 0..35999
+    execute store result entity @s Rotation[1] float 0.01 run random value 0..35999
 
 # 動的パーティクル演出
     execute at @s run function asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx

@@ -4,10 +4,8 @@
 #
 # @within function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/lightning
 
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Temporary %= $9 Const
+# 乱数取得
+    execute store result score $Random Temporary run random value 0..8
 
 # 値に応じて角度を変えて再帰 x_rotationが入っている部分は雷の向きが水平になりすぎるのを防ぐため
     execute if score $Random Temporary matches 0 if entity @s run tp @s ~ ~ ~ ~ ~0
