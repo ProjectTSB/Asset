@@ -7,6 +7,7 @@
 #> 定義類はここに
 # @within function asset:mob/0175.queen_bee/**
     scoreboard objectives add 4V.TargetID dummy
+    scoreboard objectives add 4V.Skill dummy
 
 #> 眷属のハチとのID紐付け
 # @within function
