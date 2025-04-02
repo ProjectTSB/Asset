@@ -36,6 +36,7 @@
     #declare function animated_java:haruclaire_aj/animations/30_0_move_forward/tween
     #declare function animated_java:haruclaire_aj/animations/30_0_move_right/tween
     #declare function animated_java:haruclaire_aj/animations/30_0_move_left/tween
+    #declare function animated_java:haruclaire_aj/animations/31_0_second_icespear/tween
     #declare function animated_java:haruclaire_aj/remove/all
     #
     # - AJ自動生成タグ
@@ -88,6 +89,7 @@
     #declare tag AK.Skill.IceBulletDuo アイスバレット・デュオ
     #declare tag AK.Skill.IceWallDuo アイスウォール
     #declare tag AK.Skill.IcePillarDuo アイスピラー
+    #declare tag AK.Skill.IceSpearDuo アイススピア
     #declare tag AK.Skill.Press 押しつぶし
     #declare tag AK.Skill.IceCremation.First アイスクリメーション・初回
     #declare tag AK.Skill.IceCremation.First.Used アイスクリメーション・初回

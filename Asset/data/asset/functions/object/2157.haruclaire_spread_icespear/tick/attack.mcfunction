@@ -6,22 +6,22 @@
 
 # 攻撃
     # ヒット判定
-        data modify storage lib: args.dx set value 2
+        data modify storage lib: args.dx set value 1.5
         data modify storage lib: args.dy set value 2
         data modify storage lib: args.dz set value 15
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
         execute rotated 0 0 positioned ^ ^1 ^ run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 2
+        data modify storage lib: args.dx set value 1.5
         data modify storage lib: args.dy set value 2
         data modify storage lib: args.dz set value 30
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
         execute rotated 45 0 positioned ^ ^1 ^ run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 2
+        data modify storage lib: args.dx set value 1.5
         data modify storage lib: args.dy set value 2
         data modify storage lib: args.dz set value 30
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
         execute rotated 90 0 positioned ^ ^1 ^ run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 2
+        data modify storage lib: args.dx set value 1.5
         data modify storage lib: args.dy set value 2
         data modify storage lib: args.dz set value 30
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
@@ -264,20 +264,20 @@
         particle explosion ^-19.96537 ^1 ^-19.96537 0.3 0.3 0.3 0.1 1
         particle explosion ^-21.2132 ^1 ^-21.2132 0.3 0.3 0.3 0.1 1
 
-# 演出召喚
-    tp @s ~ ~ ~ 0 ~
-    data modify storage api: Argument.ID set value 2164
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute positioned ^ ^ ^ run function api:object/summon
-    tp @s ~ ~ ~ 45 ~
-    data modify storage api: Argument.ID set value 2164
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute positioned ^ ^ ^ run function api:object/summon
-    tp @s ~ ~ ~ 90 ~
-    data modify storage api: Argument.ID set value 2164
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute positioned ^ ^ ^ run function api:object/summon
-    tp @s ~ ~ ~ 135 ~
-    data modify storage api: Argument.ID set value 2164
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    execute positioned ^ ^ ^ run function api:object/summon
+# # 演出召喚
+#     tp @s ~ ~ ~ 0 ~
+#     data modify storage api: Argument.ID set value 2164
+#     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+#     execute positioned ^ ^ ^ run function api:object/summon
+#     tp @s ~ ~ ~ 45 ~
+#     data modify storage api: Argument.ID set value 2164
+#     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+#     execute positioned ^ ^ ^ run function api:object/summon
+#     tp @s ~ ~ ~ 90 ~
+#     data modify storage api: Argument.ID set value 2164
+#     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+#     execute positioned ^ ^ ^ run function api:object/summon
+#     tp @s ~ ~ ~ 135 ~
+#     data modify storage api: Argument.ID set value 2164
+#     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+#     execute positioned ^ ^ ^ run function api:object/summon

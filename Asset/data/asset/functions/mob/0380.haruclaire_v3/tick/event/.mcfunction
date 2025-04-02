@@ -48,14 +48,17 @@
 # アイスバレット・デュオ
     execute if entity @s[tag=AK.Skill.IceBulletDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet_duo/
 
+# 押しつぶし
+    execute if entity @s[tag=AK.Skill.Press] run function asset:mob/0380.haruclaire_v3/tick/event/press/
+
 # アイスウォール
     execute if entity @s[tag=AK.Skill.IceWallDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/
 
 # アイスピラー
     execute if entity @s[tag=AK.Skill.IcePillarDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_pillar_duo/
 
-# 押しつぶし
-    execute if entity @s[tag=AK.Skill.Press] run function asset:mob/0380.haruclaire_v3/tick/event/press/
+# アイススピア
+    execute if entity @s[tag=AK.Skill.IceSpearDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear_duo/
 
 ## アイスクリメーション
 # お披露目

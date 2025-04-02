@@ -7,3 +7,4 @@
     #declare tag 2157.Text
     #declare tag 2157.Ride
     #declare tag 2157.Hit
+    #declare tag 2157.IsLong
