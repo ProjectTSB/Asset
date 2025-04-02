@@ -13,5 +13,13 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
     function api:damage/reset
 
+# 毒を付与する
+    function api:global_vars/get_difficulty
+    data modify storage api: Argument set value {ID:79,Duration:120}
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+
 # 消滅
     kill @s
