@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0175.queen_bee/tick/skill_active
 
+# 中心マーカーから遠い場合はテレポートする
+    execute if score @s General.Mob.Tick matches 0 unless entity @e[type=marker,tag=4V.SpawnMarker,distance=..14] at @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] run function asset:mob/0175.queen_bee/tick/common/tp/
+
 # 突進前の挙動
 # プレイヤーをみる
     execute if score @s General.Mob.Tick matches 10 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0175.queen_bee/tick/common/tp/
