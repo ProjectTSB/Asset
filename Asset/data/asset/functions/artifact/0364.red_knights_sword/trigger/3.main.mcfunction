@@ -5,9 +5,7 @@
 # @within function asset:artifact/0364.red_knights_sword/trigger/2.check_condition
 
 # 先にLatestUseTickを取っておく
-# 使用スロットをチェックし、メインハンドかオフハンドかで分岐
-    execute if data storage asset:context Items{AutoSlot:"mainhand"} store result score $A4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
-    execute if data storage asset:context Items{AutoSlot:"offhand"} store result score $A4.LatestUseTick Temporary run data get storage asset:context Items.offhand.tag.TSB.LatestUseTick
+    execute store result score $A4.LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
 
 # 使用時に前回の使用時のTickとの差が開いていた場合、コンボカウントをリセットする
     execute unless score @s A4.Combo matches -2147483648..2147483647 run scoreboard players set @s A4.Combo 0
