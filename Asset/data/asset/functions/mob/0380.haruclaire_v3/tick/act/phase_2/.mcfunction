@@ -24,20 +24,14 @@
     execute if score @s AK.ActionCount matches 15 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/icecremation
     execute if score @s AK.ActionCount matches 20 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/icecremation
 
-# バイアス付き乱数でスキル選択
-    data modify storage lib: Args.key set value "380.HaruclaireV3"
-    data modify storage lib: Args.max set value 6
-    data modify storage lib: Args.scarcity_history_size set value 5
-# 疑似乱数取得
-    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
-# スコアに応じたスキルTagを付与
-    execute if score $Random Temporary matches 0 run tag @s add AK.Skill.Blade
-    execute if score $Random Temporary matches 1 run tag @s add AK.Skill.Giant
-    execute if score $Random Temporary matches 2 run tag @s add AK.Skill.IceBulletDuo
-    execute if score $Random Temporary matches 3 run tag @s add AK.Skill.IceWallDuo
-    execute if score $Random Temporary matches 4 run tag @s add AK.Skill.IcePillarDuo
-    execute if score $Random Temporary matches 5 run tag @s add AK.Skill.Press
+# 通常攻撃・ディレイ系
+    execute if score @s AK.ActionCount matches 3 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
+    execute if score @s AK.ActionCount matches 6 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
+    execute if score @s AK.ActionCount matches 12 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
+    execute if score @s AK.ActionCount matches 16 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
+    execute if score @s AK.ActionCount matches 17 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
+    execute if score @s AK.ActionCount matches 18 run return run function asset:mob/0380.haruclaire_v3/tick/act/phase_2/delay
 
-# リセット
-    scoreboard players reset $Random Temporary
+# 通常攻撃・直接攻撃系
+    function asset:mob/0380.haruclaire_v3/tick/act/phase_2/normal
