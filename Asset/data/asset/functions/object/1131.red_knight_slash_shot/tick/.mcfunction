@@ -12,7 +12,6 @@
     execute if score @s General.Object.Tick matches 1 run item replace entity @s container.0 with minecraft:leather_horse_armor{display:{color:8388608},CustomModelData:20069}
     execute if score @s General.Object.Tick matches 2 run item replace entity @s container.0 with minecraft:leather_horse_armor{display:{color:8388608},CustomModelData:20070}
 
-
 # 消滅処理
     kill @s[scores={General.Object.Tick=5..}]
 
