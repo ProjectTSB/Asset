@@ -4,17 +4,15 @@
 #
 # @within function asset:artifact/1068.dream_of_burning_butterfly/trigger/2.check_condition
 
-# 最大体力と現在体力を取得
-    function api:modifier/max_health/get
-    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 10
-    function api:data_get/health
-    execute store result score $Health Temporary run data get storage api: Health 10
+# 体力割合を取得
+    function api:entity/player/get_health_per
+    execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
 
-# (最大体力 - 現在体力) >= 10 か否かをチェックする
-    #tellraw @a [{"text":"Return.MaxHealth: "},{"storage":"api:","nbt":"Return.MaxHealth"}]
-    #tellraw @a [{"text":"Health: "},{"storage":"api:","nbt":"Health"}]
-    execute store result score $LostHealth Temporary run scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    #tellraw @a [{"text":"$LostHealth: "},{"score":{"objective":"Temporary","name":"$LostHealth"}}]
-    execute unless score $LostHealth Temporary matches 100.. run tag @s remove CanUsed
+# 失った体力割合取得
+    scoreboard players set $LostHealthPer Temporary 100
+    scoreboard players operation $LostHealthPer Temporary -= $HealthPer Temporary
+
+# 失った体力がX%以上でないなら使用できない
+    execute if score $LostHealthPer Temporary matches ..9 run tag @s remove CanUsed
 
 # リセットは2.check_conditionで行う

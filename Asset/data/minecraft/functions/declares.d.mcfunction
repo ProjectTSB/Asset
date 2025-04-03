@@ -204,6 +204,7 @@
     #declare function api:teleporter/set_activation_state/from_id                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_id.mcfunction#L1
     #declare function api:teleporter/set_activation_state/from_nearest                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/set_activation_state/from_nearest.mcfunction#L1
     #declare function api:teleporter/unsafe/register_manual                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/teleporter/unsafe/register_manual.mcfunction#L1
+    #declare function asset:datapack/set_activation_state                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/datapack/set_activation_state.mcfunction#L1
     #declare function lib:array/compare                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/compare.mcfunction#L1
     #declare function lib:array/compare_single                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/compare_single.mcfunction#L1
     #declare function lib:array/mask                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/mask.mcfunction#L1
@@ -227,6 +228,7 @@
     #declare function lib:array/sort_ascend                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort_ascend.mcfunction#L1
     #declare function lib:array/sort_descend                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort_descend.mcfunction#L1
     #declare function lib:bit_array_to_integer/                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bit_array_to_integer/.mcfunction#L1
+    #declare function lib:bounding_fan/                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bounding_fan/.mcfunction#L1
     #declare function lib:dimension/get                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/dimension/get.mcfunction#L1
     #declare function lib:distance/as_to_at                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/as_to_at.mcfunction#L1
     #declare function lib:distance/core/abs/x.m                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/distance/core/abs/x.m.mcfunction#L1
@@ -286,6 +288,7 @@
     #declare function score_to_health:restore                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/score_to_health/functions/restore.mcfunction#L1
     #declare function world_manager:gimmick/ending_portal/open                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/open.mcfunction#L1
     #declare item_modifier lib:break_item                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/item_modifiers/break_item.json#L1
+    #declare item_modifier minecraft:identity                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/item_modifiers/identity.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/0.trigger                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/0.trigger.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/1.condition              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/1.condition.json#L1
     #declare loot_table asset_manager:artifact/generate_lore/2.attack_info            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/generate_lore/2.attack_info.json#L1
@@ -301,6 +304,10 @@
     #declare loot_table asset_manager:artifact/get_name/has_remain                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/loot_tables/artifact/get_name/has_remain.json#L1
     #declare loot_table common:currency/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/currency/.json#L1
     #declare loot_table common:currency/high                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/currency/high.json#L1
+    #declare loot_table common:island_rewards/artifact_seed/lv-1                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/artifact_seed/lv-1.json#L1
+    #declare loot_table common:island_rewards/artifact_seed/lv-2                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/artifact_seed/lv-2.json#L1
+    #declare loot_table common:island_rewards/artifact_seed/lv-3                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/artifact_seed/lv-3.json#L1
+    #declare loot_table common:island_rewards/artifact_seed/lv-4                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/artifact_seed/lv-4.json#L1
     #declare loot_table common:island_rewards/lv-1                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/lv-1.json#L1
     #declare loot_table common:island_rewards/lv-2                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/lv-2.json#L1
     #declare loot_table common:island_rewards/lv-3                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/island_rewards/lv-3.json#L1
@@ -309,6 +316,10 @@
     #declare loot_table common:sacred_shard/lv-2                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/sacred_shard/lv-2.json#L1
     #declare loot_table common:sacred_shard/lv-3                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/sacred_shard/lv-3.json#L1
     #declare loot_table common:sacred_shard/lv-4                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/sacred_shard/lv-4.json#L1
+    #declare loot_table common:supplies/lv-1                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/supplies/lv-1.json#L1
+    #declare loot_table common:supplies/lv-2                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/supplies/lv-2.json#L1
+    #declare loot_table common:supplies/lv-3                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/supplies/lv-3.json#L1
+    #declare loot_table common:supplies/lv-4                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/common/loot_tables/supplies/lv-4.json#L1
     #declare loot_table lib:get_name                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/get_name.json#L1
     #declare loot_table lib:status_log/damage                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/status_log/damage.json#L1
     #declare loot_table lib:status_log/damage_with_icon                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/loot_tables/status_log/damage_with_icon.json#L1
@@ -569,9 +580,10 @@
     #declare storage metric:                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/metric/functions/_index.d.mcfunction#L6
     #declare storage minecraft:global                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L56
     #declare tag BetaEndingPortal                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/world_manager/functions/gimmick/ending_portal/_index.d.mcfunction#L7
+    #declare tag BoundingFan                                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bounding_fan/.mcfunction#L25
     #declare tag Death                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/_index.d.mcfunction#L35
     #declare tag DevPrivilege                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/load_once.mcfunction#L55
-    #declare tag DXYZ                                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L22
+    #declare tag DXYZ                                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/rotatable_dxyz/m.mcfunction#L26
     #declare tag Enemy                                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L7
     #declare tag Enemy.Boss                                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L8
     #declare tag Enemy.EndGameBoss                                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/_index.d.mcfunction#L9
@@ -917,6 +929,12 @@
 #   function asset:container/**
 #   function asset_manager:container/**
 #declare storage asset:container from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/container/_index.d.mcfunction#L9
+
+#> declare
+# @within
+#   function asset:**
+#   function asset_manager:**
+#declare storage asset:datapack from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/functions/datapack/_index.d.mcfunction#L8
 
 #> declare
 # @within
