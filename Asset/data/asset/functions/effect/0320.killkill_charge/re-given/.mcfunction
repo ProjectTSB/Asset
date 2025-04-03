@@ -24,7 +24,7 @@
 
 # チャージ時音
     execute if score $Charge Temporary matches 4..31 anchored eyes positioned ^-0.35 ^-0.15 ^1.5 rotated ~ ~90 run function asset:effect/0320.killkill_charge/re-given/particle
-    execute if score $Charge Temporary matches 31.. anchored eyes positioned ^-0.35 ^-0.15 ^1.5 rotated ~ ~90 run particle sneeze ~ ~ ~ 0 0 0 0 0
+    execute if score $Charge Temporary matches 31.. anchored eyes positioned ^-0.35 ^-0.15 ^1 rotated ~ ~90 run particle electric_spark ~ ~ ~ 0 0 0 0.5 1
 
 
 # リセット
