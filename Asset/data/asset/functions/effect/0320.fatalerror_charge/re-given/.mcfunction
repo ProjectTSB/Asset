@@ -1,8 +1,8 @@
-#> asset:effect/0320.killkill_charge/re-given/
+#> asset:effect/0320.fatalerror_charge/re-given/
 #
 # Effectが上書きされた時の処理
 #
-# @within function asset:effect/0320.killkill_charge/_/re-given
+# @within function asset:effect/0320.fatalerror_charge/_/re-given
 
 #> Private
 # @private
@@ -23,7 +23,7 @@
     execute if score $Charge Temporary matches 31 run data modify storage asset:context Stack set value 2
 
 # チャージ時音
-    execute if score $Charge Temporary matches 4..31 anchored eyes positioned ^-0.35 ^-0.15 ^1.5 rotated ~ ~90 run function asset:effect/0320.killkill_charge/re-given/particle
+    execute if score $Charge Temporary matches 4..31 anchored eyes positioned ^-0.35 ^-0.15 ^1.5 rotated ~ ~90 run function asset:effect/0320.fatalerror_charge/re-given/particle
     execute if score $Charge Temporary matches 31.. anchored eyes positioned ^-0.35 ^-0.15 ^1 rotated ~ ~90 run particle electric_spark ~ ~ ~ 0 0 0 0.5 1
 
 

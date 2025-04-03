@@ -1,9 +1,9 @@
-#> asset:artifact/1228.killkillkillkill_laser/give/2.give
+#> asset:artifact/1228.fatalerror/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1228.killkillkillkill_laser/give/1.trigger
+# @within function asset:artifact/1228.fatalerror/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。

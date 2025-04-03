@@ -1,8 +1,8 @@
-#> asset:effect/0320.killkill_charge/end/shot/landing
+#> asset:effect/0320.fatalerror_charge/end/shot/landing
 #
 #
 #
-# @within function asset:effect/0320.killkill_charge/end/shot/loop
+# @within function asset:effect/0320.fatalerror_charge/end/shot/loop
 
 # 演出
     particle dust 0.824 0.918 0.98 0.7 ~ ~0.5 ~ 0.1 0.3 0.1 0 20

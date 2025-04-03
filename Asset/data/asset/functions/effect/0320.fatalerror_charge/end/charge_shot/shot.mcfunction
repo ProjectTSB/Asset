@@ -1,8 +1,8 @@
-#> asset:effect/0320.killkill_charge/end/shot/shot
+#> asset:effect/0320.fatalerror_charge/end/charge_shot/shot
 #
 #
 #
-# @within function asset:effect/0320.killkill_charge/end/
+# @within function asset:effect/0320.fatalerror_charge/end/
 
 #> Private
 # @private
@@ -22,7 +22,7 @@
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:effect/0320.killkill_charge/end/shot/loop
+    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:effect/0320.fatalerror_charge/end/charge_shot/loop
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10]

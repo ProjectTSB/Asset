@@ -1,10 +1,10 @@
-#> asset:effect/0320.killkill_charge/end/charge_shot/loop
+#> asset:effect/0320.fatalerror_charge/end/charge_shot/loop
 #
 #
 #
 # @within function
-#    asset:effect/0320.killkill_charge/end/charge_shot/shot
-#    asset:effect/0320.killkill_charge/end/charge_shot/loop
+#    asset:effect/0320.fatalerror_charge/end/charge_shot/shot
+#    asset:effect/0320.fatalerror_charge/end/charge_shot/loop
 
 # 演出
     particle dust 0.824 0.918 0.98 0.7 ^ ^ ^ 0.1 0.1 0.1 0 10
@@ -17,7 +17,7 @@
     execute unless entity @s[distance=..7] run tag @s add Landing
 
 # ダメージを与える
-    execute if entity @s[tag=Landing] run function asset:effect/0320.killkill_charge/end/charge_shot/landing
+    execute if entity @s[tag=Landing] run function asset:effect/0320.fatalerror_charge/end/charge_shot/landing
 
 # 再帰
-    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..8] if block ^ ^ ^ #lib:no_collision run function asset:effect/0320.killkill_charge/end/charge_shot/loop
+    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..8] if block ^ ^ ^ #lib:no_collision run function asset:effect/0320.fatalerror_charge/end/charge_shot/loop

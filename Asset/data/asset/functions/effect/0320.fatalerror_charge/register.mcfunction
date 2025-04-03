@@ -1,8 +1,8 @@
-#> asset:effect/0320.killkill_charge/register
+#> asset:effect/0320.fatalerror_charge/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0320.killkill_charge/_/register
+# @within function asset:effect/0320.fatalerror_charge/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

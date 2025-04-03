@@ -1,8 +1,8 @@
-#> asset:artifact/1228.killkillkillkill_laser/trigger/3.main
+#> asset:artifact/1228.fatalerror/trigger/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/1228.killkillkillkill_laser/trigger/2.check_condition
+# @within function asset:artifact/1228.fatalerror/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand

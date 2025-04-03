@@ -1,8 +1,8 @@
-#> asset:effect/0320.killkill_charge/re-given/particle
+#> asset:effect/0320.fatalerror_charge/re-given/particle
 #
 #
 #
-# @within function asset:effect/0320.killkill_charge/re-given/
+# @within function asset:effect/0320.fatalerror_charge/re-given/
 
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAGZwAsAHCgGwCMlAtMygAwBGbNlZnTZ0eAZgCsbSjwBMsiXAl1GAdhZgCAOwCGAWwTJAYYoACZprAwdGfQGck4FAHtCWiEllcCKOG7gYHMAA3HWxCQ3AADyQvMCgYgF8EghtSNEJ7RGYCWwhrd0RYuGxsNBhbQ2YuWIwnPIhDWLRbAFESsoqWgEdCUOwoAGUrH3JESlCKpIBdIA_3
