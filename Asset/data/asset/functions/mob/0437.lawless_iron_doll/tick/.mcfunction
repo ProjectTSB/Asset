@@ -11,10 +11,10 @@
     execute at @s run function asset:mob/0437.lawless_iron_doll/tick/model_operate
 
 # 足元が埋まっていて、上にブロックがないなら上に移動
-#    execute unless block ~ ~ ~ #asset:mob/0365.frestchika/no_collision if block ~ ~2.5 ~ #asset:mob/0365.frestchika/no_collision run tp @s ~ ~0.1 ~
+    execute unless block ~ ~ ~ #lib:no_collision if block ~ ~2.5 ~ #lib:no_collision run tp @s ~ ~0.1 ~
 
 # 頭上にブロックがあって、下にブロックがないなら下に移動
-#    execute unless block ~ ~2.5 ~ #asset:mob/0365.frestchika/no_collision if block ~ ~-1 ~ #asset:mob/0365.frestchika/no_collision run tp @s ~ ~-0.1 ~
+    execute unless block ~ ~2.5 ~ #lib:no_collision if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
 
 # そこらのプレイヤーより下にいる場合、上昇する
 #    execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~

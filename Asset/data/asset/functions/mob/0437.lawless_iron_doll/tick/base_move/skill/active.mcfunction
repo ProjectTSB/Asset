@@ -6,6 +6,7 @@
 
 # 技リスト
     execute if entity @s[tag=C5.Skill.HorizontalSlashShot] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/tick
+    execute if entity @s[tag=C5.Skill.Charge] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/charge/tick
 
 # フェイズ2でTick処理変わるやつ
 #    execute if entity @s[tag=C5.Skill.ChargeSlash,scores={C5.Phase=1}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/charge_slash/

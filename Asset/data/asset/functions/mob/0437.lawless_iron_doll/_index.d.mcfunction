@@ -36,6 +36,7 @@
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_2_windup/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_2_activate/tween
     #declare function animated_java:lawless_iron_doll/animations/neutral/tween
+    #declare function animated_java:lawless_iron_doll/animations/jump/tween
     #declare function animated_java:lawless_iron_doll/remove/this
     #declare tag aj.lawless_iron_doll.bone.right_item_display
     #declare tag aj.lawless_iron_doll.bone.left_item_display
