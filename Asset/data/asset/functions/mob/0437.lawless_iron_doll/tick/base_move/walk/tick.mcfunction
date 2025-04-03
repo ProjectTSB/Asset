@@ -13,8 +13,8 @@
 
 # レーザー攻撃
     scoreboard players operation $Interval Temporary %= $10 Const
-    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 1.5 0.5
-    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 1.5 0.5
+    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
+    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
     scoreboard players reset $Interval Temporary
 
 # まっすぐ前に歩く

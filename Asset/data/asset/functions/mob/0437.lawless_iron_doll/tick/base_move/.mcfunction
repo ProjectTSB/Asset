@@ -18,7 +18,7 @@
     execute if score @s[tag=C5.CycleReset,tag=!C5.InAction] General.Mob.Tick matches 10.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/cycle_reset
 
 # そこらのプレイヤーより上にいて、行動中じゃない場合、ゆっくりと落ちていく
-    execute if entity @s[tag=!C5.InAction] positioned ~-50 ~2 ~-50 unless entity @a[dx=99,dy=50,dz=99] at @s if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+#    execute if entity @s[tag=!C5.InAction] positioned ~-50 ~2 ~-50 unless entity @a[dx=99,dy=50,dz=99] at @s if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
 
 # 選択したスキル発動
     execute if entity @s[tag=C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/active

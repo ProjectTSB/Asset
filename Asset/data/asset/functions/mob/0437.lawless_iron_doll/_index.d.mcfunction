@@ -33,30 +33,9 @@
     #declare function animated_java:lawless_iron_doll/animations/walk/tween
     #declare function animated_java:lawless_iron_doll/animations/run/tween
     #declare function animated_java:lawless_iron_doll/animations/run4/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_melee_2_windup/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_melee_2_activate/tween
     #declare function animated_java:lawless_iron_doll/animations/neutral/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_start/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_windup/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_left/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_right/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_left_gun/tween
-    #declare function animated_java:lawless_iron_doll/animations/dash_right_gun/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_1_windup/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_1_active/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_2_right/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_2_left/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_3/tween
     #declare function animated_java:lawless_iron_doll/remove/this
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_2_windup/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_2_active/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_3/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_4_windup/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_4_active/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_5_windup/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_slash_5_active/tween
-    #declare function animated_java:lawless_iron_doll/animations/attack_ranged_1/tween
-    #declare function animated_java:lawless_iron_doll/animations/break/tween
-    #declare function animated_java:lawless_iron_doll/animations/break_loop/tween
-    #declare function animated_java:lawless_iron_doll/animations/recovery/tween
-    #declare function animated_java:lawless_iron_doll/animations/teleport/tween
     #declare tag aj.lawless_iron_doll.bone.right_item_display
     #declare tag aj.lawless_iron_doll.bone.left_item_display
