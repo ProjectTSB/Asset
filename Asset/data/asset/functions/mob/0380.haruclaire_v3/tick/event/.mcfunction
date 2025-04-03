@@ -60,6 +60,10 @@
 # アイススピア
     execute if entity @s[tag=AK.Skill.IceSpearDuo] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear_duo/
 
+# アイススピナー
+    execute if entity @s[tag=AK.Skill.IceSpinner] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/
+
+
 ## アイスクリメーション
 # お披露目
     execute if entity @s[tag=AK.Skill.IceCremation.First] run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/
