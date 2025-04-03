@@ -10,7 +10,7 @@
 # スピード関連の設定
     data modify storage asset:context this.Range set value 40
     execute unless entity @s[tag=2149.IsPiece] run data modify storage asset:context this.MovePerStep set value 1
-    execute if entity @s[tag=2149.IsPiece] store result storage asset:context this.MovePerStep float 0.1 run random value 5..10
+    execute if entity @s[tag=2149.IsPiece] store result storage asset:context this.MovePerStep float 0.07 run random value 5..10
     # run data modify storage asset:context this.MovePerStep set value 0.6
 
 # Tick初期値
