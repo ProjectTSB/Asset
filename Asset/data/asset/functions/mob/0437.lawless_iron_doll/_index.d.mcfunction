@@ -14,14 +14,14 @@
     #declare tag C5.Moveset.BaseMove
     #declare tag C5.Moveset.Transition
     # ボスのスキル
-    #declare tag C5.Skill.SideDashShot
-    #declare tag C5.Skill.FrontDashSlash
-    #declare tag C5.Skill.ChargeSlash
-    #declare tag C5.Skill.ChargeSlashThunder
-    #declare tag C5.Skill.CordinateLaser
-    #declare tag C5.Skill.RandomTeleportSlash
-    #declare tag C5.Skill.HoloBlock
-    #declare tag C5.Skill.OverHeat
+    #declare tag C5.Skill.HorizontalSlashShot
+    #declare tag C5.Skill.VerticalSlashShot
+    #declare tag C5.Skill.Charge
+    #declare tag C5.Skill.
+    #declare tag C5.Skill.
+    #declare tag C5.Skill.
+    #declare tag C5.Skill.
+    #declare tag C5.Skill.
     # ボスの状態
     #declare tag C5.InAction
     #declare tag C5.CycleReset
@@ -30,6 +30,9 @@
     # Animated Java
     #declare function animated_java:lawless_iron_doll/summon
     #declare function animated_java:lawless_iron_doll/animations/intro/tween
+    #declare function animated_java:lawless_iron_doll/animations/walk/tween
+    #declare function animated_java:lawless_iron_doll/animations/run/tween
+    #declare function animated_java:lawless_iron_doll/animations/run4/tween
     #declare function animated_java:lawless_iron_doll/animations/neutral/tween
     #declare function animated_java:lawless_iron_doll/animations/dash_start/tween
     #declare function animated_java:lawless_iron_doll/animations/dash_windup/tween

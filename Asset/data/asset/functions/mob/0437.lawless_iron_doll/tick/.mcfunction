@@ -23,7 +23,7 @@
     # イントロ
         execute if entity @s[tag=C5.Moveset.Intro] run function asset:mob/0437.lawless_iron_doll/tick/intro/
     # 通常動作
-        #execute if entity @s[tag=C5.Moveset.BaseMove] run function asset:mob/0437.lawless_iron_doll/tick/base_move/
+        execute if entity @s[tag=C5.Moveset.BaseMove] run function asset:mob/0437.lawless_iron_doll/tick/base_move/
 #    # フェイズ移行
 #        execute if entity @s[tag=C5.Moveset.Transition] run function asset:mob/0365.frestchika/tick/phase_transition/
 

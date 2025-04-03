@@ -38,14 +38,28 @@
 # フィールド
     # スキルのリスト
         data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
-    # ダメージ
-        # 薙ぎ払い
-            data modify storage asset:mob Field.Damage.Slash1 set value 40f
-        # 薙ぎ払いの発射体
-            data modify storage asset:mob Field.Damage.SlashShot1 set value 40f
-        # 袈裟斬り
-            data modify storage asset:mob Field.Damage.Slash2 set value 50f
-        # 袈裟斬りの発射体
-            data modify storage asset:mob Field.Damage.SlashShot2 set value 50f
-        # 突進
-            data modify storage asset:mob Field.Damage.Charge set value 50f
+
+    # ダメージ設定
+        # 騎士の頭
+            # 薙ぎ払い
+                data modify storage asset:mob Field.Damage.Slash1 set value 40f
+            # 薙ぎ払いの発射体
+                data modify storage asset:mob Field.Damage.SlashShot1 set value 40f
+            # 袈裟斬り
+                data modify storage asset:mob Field.Damage.Slash2 set value 50f
+            # 袈裟斬りの発射体
+                data modify storage asset:mob Field.Damage.SlashShot2 set value 50f
+            # 突進
+                data modify storage asset:mob Field.Damage.Charge set value 50f
+            # スーパー叩きつけ攻撃
+                data modify storage asset:mob Field.Damage.SuperShockSlam set value 70f
+
+        # 魔法使いの頭
+            # 低速誘導弾
+                data modify storage asset:mob Field.Damage.ChaseBullet set value 40f
+            # 持続大型弾
+                data modify storage asset:mob Field.Damage.ChaseBullet set value 20f
+            # 拡散小型弾
+                data modify storage asset:mob Field.Damage.ChaseBullet set value 30f
+            # スーパーレーザー攻撃
+                data modify storage asset:mob Field.Damage.ChaseBullet set value 70f
