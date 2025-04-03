@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"トールの戦杖","color":"yellow"}'
+    data modify storage asset:artifact Name set value '{"text":"雷鎚の戦杖","color":"#FFD857"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"視点先へ鉄槌の雷を5本降らせダメージを与える","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"視点先へ鉄槌の雷を5本降らせダメージを与える","color":"white"}','{"text":"かの雷神の如き力を秘めている杖","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
