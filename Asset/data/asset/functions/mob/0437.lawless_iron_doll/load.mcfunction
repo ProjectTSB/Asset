@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/0437.lawless_iron_doll/**
-    scoreboard objectives add 
+    scoreboard objectives add C5.Phase dummy

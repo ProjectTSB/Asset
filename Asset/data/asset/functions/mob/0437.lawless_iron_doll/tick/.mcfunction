@@ -20,10 +20,10 @@
 #    execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~
 
 # 動作
-#    # イントロ
-#        execute if entity @s[tag=C5.Moveset.Intro] run function asset:mob/0365.frestchika/tick/intro/
-#    # 通常動作
-#        execute if entity @s[tag=C5.Moveset.BaseMove] run function asset:mob/0365.frestchika/tick/base_move/
+    # イントロ
+        execute if entity @s[tag=C5.Moveset.Intro] run function asset:mob/0437.lawless_iron_doll/tick/intro/
+    # 通常動作
+        #execute if entity @s[tag=C5.Moveset.BaseMove] run function asset:mob/0437.lawless_iron_doll/tick/base_move/
 #    # フェイズ移行
 #        execute if entity @s[tag=C5.Moveset.Transition] run function asset:mob/0365.frestchika/tick/phase_transition/
 
