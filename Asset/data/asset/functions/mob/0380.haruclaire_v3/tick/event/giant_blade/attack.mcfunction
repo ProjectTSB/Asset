@@ -76,3 +76,19 @@
     data modify storage api: Argument.FieldOverride set value {Color:10942975,Scale:[12f,12f,7f],Transformation:{left_rotation:[0f,-0.7068252f,0f,0.7073883f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     data modify storage api: Argument.ID set value 2001
     execute positioned ^ ^2 ^2 run function api:object/summon
+
+# 攻撃位置召喚
+    # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYAhgOwDMArAGYBGNAjALQDGAHJwEysAsVBgDZWZMpwCcrZiwAMkiu1l0aDMLgxkAtgmSAt3wAEzDWBhkATjoDOScOwD2eDBCTMquOhYfa7YAG5kKHh64AAeSHK4UJEAvrG4EA5+gcGhYBGIUWAxiDRy8bgOdHTWcK5ZuAxwAF5ocBaRuGjWAEK19RYAogCOeEEoUADK5uxwJIh0QWXxALpAA_3
+    # 線 1
+    summon area_effect_cloud ^0 ^2 ^0 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^4.16667 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^8.33333 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^12.5 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^16.66667 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^20.83333 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^25 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^29.16667 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    summon area_effect_cloud ^0 ^2 ^33.33333 {Tags:["AK.Temp.AttackRotation"],Duration:1}
+    scoreboard players operation @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation] MobUUID = @s MobUUID
+# 弾召喚
+    execute if predicate api:global_vars/difficulty/min/normal as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation] at @s run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/attack_piece

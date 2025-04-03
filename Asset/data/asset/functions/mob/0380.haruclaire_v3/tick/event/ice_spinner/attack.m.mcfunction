@@ -14,5 +14,5 @@
     data modify storage api: Argument.FieldOverride.Damage set value 40.0f
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     $data modify storage api: Argument.FieldOverride.IsLong set value $(IsLong)
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=wither_skeleton,tag=AK.EntityRoot,limit=1] MobUUID
     function api:object/summon
