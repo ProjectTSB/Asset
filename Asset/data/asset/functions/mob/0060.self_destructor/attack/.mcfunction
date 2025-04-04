@@ -7,7 +7,6 @@
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
-
 # ダメージ
     data modify storage api: Argument.Damage set value 8.0
     data modify storage api: Argument.AttackType set value "Physical"
