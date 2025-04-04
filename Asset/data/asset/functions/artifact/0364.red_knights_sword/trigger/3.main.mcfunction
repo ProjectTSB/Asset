@@ -33,3 +33,6 @@
             execute if predicate lib:is_sneaking unless data storage api: Return.Effect run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/
         # スニークありだが、エフェクトが付与されていれば: メイン攻撃
             execute if predicate lib:is_sneaking if data storage api: Return.Effect run function asset:artifact/0364.red_knights_sword/trigger/main_attack/
+
+# リセット
+    scoreboard players reset $A4.Temp Temporary

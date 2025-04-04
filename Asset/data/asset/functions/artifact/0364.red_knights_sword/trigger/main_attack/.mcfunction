@@ -26,5 +26,4 @@
         execute if score @s[scores={Temporary=0..33}] A4.Combo matches 3 anchored eyes run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/slash3
 
 # リセット
-    scoreboard players reset $A4.Temp Temporary
     scoreboard players reset @s Temporary
