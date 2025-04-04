@@ -2,6 +2,7 @@
     "values": [
         "asset:effect/0322.zenith_slash_emitter/_/register",
         "asset:effect/0321.craving_recoil/_/register",
+        "asset:effect/0621.loyalty_shield/_/register",
         "asset:effect/0192.jump_boost/_/register",
         "asset:effect/0622.absolute_overdrive/_/register",
         "asset:effect/0317.aurora_speed/_/register",
