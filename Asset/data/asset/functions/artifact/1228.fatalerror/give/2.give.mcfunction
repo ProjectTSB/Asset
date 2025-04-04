@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"FATAL","font":"artifact/1228/font"},{"text":"E","font":"artifact/1228/e","obfuscated":true},{"text":"RROR","font":"artifact/1228/font","obfuscated":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"特殊波長レーザーが対象の電子機器と生体組織に"}','[{"text":"「致命的エラー」","color":"aqua","bold":true,"italic":true},{"text":"を引き起こす。","color":"white","bold":false,"italic":false}]','{"text":"長押しすることでチャージを行う"}','{"text":"チャージをすると短射程貫通レーザーで相手を破壊する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"特殊波長レーザーが対象の電子機器と生体組織に"}','[{"text":"「致命的エラー」","color":"aqua","bold":true,"italic":true},{"text":"を引き起こす。","color":"white","bold":false,"italic":false}]','{"text":"長押しすることでチャージを行う"}','{"text":"チャージをすると貫通レーザーで相手を破壊する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
