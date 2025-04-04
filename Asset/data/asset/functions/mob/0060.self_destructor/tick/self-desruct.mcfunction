@@ -18,4 +18,6 @@
     scoreboard players set @e[type=zombie,scores={MobID=60},distance=..7.5] 1O.ExplodeCnt 8
 
 # 消滅
-    function api:mob/kill
+# 一度でも戦闘したかどうかでremoveかkillか変える
+    execute unless data storage asset:context this{Fought:true} run function api:mob/remove
+    execute if data storage asset:context this{Fought:true} run function api:mob/kill

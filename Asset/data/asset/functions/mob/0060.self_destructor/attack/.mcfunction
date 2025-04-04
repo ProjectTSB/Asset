@@ -25,3 +25,6 @@
 # 自爆カウント ノーマル以下なら2、ハード以上で4進む
     execute if predicate api:global_vars/difficulty/max/normal unless block ~ ~ ~ water run scoreboard players add @s 1O.ExplodeCnt 2
     execute if predicate api:global_vars/difficulty/min/hard unless block ~ ~ ~ water run scoreboard players add @s 1O.ExplodeCnt 4
+
+# 一度でも戦闘したかどうかをフィールドで記録
+    data modify storage asset:context this.Fought set value true
