@@ -14,7 +14,7 @@
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
-# レーザー攻撃
+# 足音
     scoreboard players operation $Interval Temporary %= $6 Const
     execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
     execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
