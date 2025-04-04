@@ -26,5 +26,9 @@
     execute if score @s AK.EventTimer matches 101 at @s run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 2
     execute if score @s AK.EventTimer matches 108 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
 
+# 無敵化
+    execute if score @s AK.EventTimer matches 1 run effect give @s resistance 1 10 true
+    execute if score @s AK.EventTimer matches 126 run effect clear @s resistance
+
 # 終了
     execute if score @s AK.EventTimer matches 126.. run function asset:mob/0380.haruclaire_v3/tick/event/summon_hatoclaire/end

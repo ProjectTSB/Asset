@@ -9,7 +9,7 @@
     execute if entity @a[tag=AK.Temp.Hit] run playsound entity.player.hurt_sweet_berry_bush hostile @a ~ ~ ~ 1 0.7
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 42.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Punch1
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは かたいこおりで なぐられた","with":[{"selector":"@s"}]}]'

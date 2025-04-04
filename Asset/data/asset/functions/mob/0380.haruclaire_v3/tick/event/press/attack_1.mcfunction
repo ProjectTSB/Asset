@@ -5,7 +5,7 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/press/
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 55.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Press2
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは ハトクレアに おしつぶされた","with":[{"selector":"@s"}]}]'

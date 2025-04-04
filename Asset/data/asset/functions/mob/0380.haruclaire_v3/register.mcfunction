@@ -35,4 +35,44 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
-    # data modify storage asset:mob Field.myValue set value
+# 各スキルのダメージ設定
+    # アイスバレット・エトワール
+        data modify storage asset:mob Field.Damage.IceBullet set value 40.0f
+    # アイスバレット・ソレイユ
+        data modify storage asset:mob Field.Damage.SuperIceBullet set value 70.0f
+    # アイスバレット・破片
+        data modify storage asset:mob Field.Damage.IceBulletPiece set value 35.0f
+    # アイスウォール
+        data modify storage asset:mob Field.Damage.IceWall set value 45.0f
+    # アイススピア
+        data modify storage asset:mob Field.Damage.IceSpear set value 35.0f
+        data modify storage asset:mob Field.Damage.SpreadIceSpear set value 35.0f
+    # ぶんぶんぶん殴り
+        data modify storage asset:mob Field.Damage.Punch1 set value 42.0f
+        data modify storage asset:mob Field.Damage.Punch2 set value 30.0f
+        # 投げ杖
+        data modify storage asset:mob Field.Damage.Punch3 set value 40.0f
+    # アイスレーザー
+        data modify storage asset:mob Field.Damage.Laser set value 40.0f
+    # アイスピラー
+        data modify storage asset:mob Field.Damage.Pillar set value 35.0f
+    # アイシクルブレード
+        data modify storage asset:mob Field.Damage.Blade set value 42.0f
+    # ジャイアントブレード
+        data modify storage asset:mob Field.Damage.Giant set value 50.0f
+    # アイスバレット・デュオ
+        data modify storage asset:mob Field.Damage.IceBulletDuo set value 50.0f
+        # 密着ダメージ
+            data modify storage asset:mob Field.Damage.IceBulletDuoNear set value 60.0f
+    # 押しつぶし
+        data modify storage asset:mob Field.Damage.Press1 set value 42.0f
+        data modify storage asset:mob Field.Damage.Press2 set value 55.0f
+    # アイスウォール後半
+        data modify storage asset:mob Field.Damage.IceWallDuo set value 52.0f
+    # アイススピナー
+        data modify storage asset:mob Field.Damage.IceSpinner set value 42.0f
+    # アイスクリメーション
+        # 初回
+            data modify storage asset:mob Field.Damage.ICFirst set value 42.0f
+        # 2回目以降
+            data modify storage asset:mob Field.Damage.IC set value 60.0f
