@@ -14,7 +14,7 @@
 
 # 矢を召喚する
     data modify storage api: Argument.ID set value 1070
-    execute if data storage asset:temp {Crit: true} run data modify storage api: Argument.FieldOverride.Damage set value 20
+    execute if data storage asset:temp {Crit: true} run data modify storage api: Argument.FieldOverride.Damage set value 30
     execute if data storage asset:temp {Crit:false} run data modify storage api: Argument.FieldOverride.Damage set value 10
     execute if data storage asset:temp {Crit: true} run data modify storage api: Argument.FieldOverride.Speed set value 8
     execute if data storage asset:temp {Crit:false} run data modify storage api: Argument.FieldOverride.Speed set value 3
