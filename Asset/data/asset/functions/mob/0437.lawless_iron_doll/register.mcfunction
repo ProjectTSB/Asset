@@ -52,7 +52,7 @@
             # 突進
                 data modify storage asset:mob Field.Damage.Charge set value 50f
             # スーパー叩きつけ攻撃
-                data modify storage asset:mob Field.Damage.SuperSlam set value 70f
+                data modify storage asset:mob Field.Damage.SuperSlam set value 60f
 
         # 魔法使いの頭
             # 低速誘導弾
