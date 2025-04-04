@@ -57,9 +57,10 @@
             execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 50.0f
 
     # プレイヤーを狙う状態に弾に渡すデータ
-    # $RandomをIDとして渡す
+    # 自分を貫いた際のダメージと、$RandomをIDとして渡す
         execute if entity @s[tag=TL.AimToPlayer] store result storage api: Argument.FieldOverride.ID int 1 run scoreboard players get $Random Temporary
         execute if entity @s[tag=TL.AimToPlayer] run data modify storage api: Argument.FieldOverride.AimToPlayer set value true
+        execute if entity @s[tag=TL.AimToPlayer] run data modify storage api: Argument.FieldOverride.Damage.Self set value 70
 
     # 魔弾を召喚
         data modify storage api: Argument.ID set value 1046
