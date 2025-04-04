@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    playsound item.trident.throw player @a ~ ~ ~ 0.7 0.5 0
-    playsound entity.glow_squid.squirt player @a ~ ~ ~ 0.7 2 0
+    playsound item.trident.throw player @a ~ ~ ~ 0.55 0.5 0
+    playsound entity.glow_squid.squirt player @a ~ ~ ~ 0.55 2 0
 
 # 演出用Objectを召喚
     data modify storage api: Argument.ID set value 1127
