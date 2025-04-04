@@ -56,7 +56,7 @@
         execute if score @s AK.EventTimer matches 210 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
 
 # 無敵化
-    execute if score @s AK.EventTimer matches 1 run effect give @s resistance 1 10 true
+    execute if score @s AK.EventTimer matches 1..246 run effect give @s resistance 1 10 true
     execute if score @s AK.EventTimer matches 247 run effect clear @s resistance
 
 # 終了

@@ -27,7 +27,7 @@
     execute if score @s AK.EventTimer matches 108 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
 
 # 無敵化
-    execute if score @s AK.EventTimer matches 1 run effect give @s resistance 1 10 true
+    execute if score @s AK.EventTimer matches 1..125 run effect give @s resistance 1 10 true
     execute if score @s AK.EventTimer matches 126 run effect clear @s resistance
 
 # 終了
