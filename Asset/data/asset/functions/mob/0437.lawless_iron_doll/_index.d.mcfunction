@@ -40,6 +40,10 @@
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_3_activate/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_4_windup/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_4_activate/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_ranged_1_windup/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_ranged_1_activate/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_ranged_2_windup/tween
+    #declare function animated_java:lawless_iron_doll/animations/attack_ranged_2_activate/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_slam/tween
     #declare function animated_java:lawless_iron_doll/animations/neutral/tween
     #declare function animated_java:lawless_iron_doll/animations/jump/tween

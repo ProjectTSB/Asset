@@ -5,7 +5,7 @@
 # @within function asset:mob/0437.lawless_iron_doll/tick/
 
 # 行動中じゃないなら、歩行周りの処理を行う
-#    execute if entity @s[tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/walk/tick
+    execute if entity @s[tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/walk/tick
 
 # プレイヤーが周囲にいたらスキル選択
     execute if score @s[tag=!C5.CycleReset,tag=!C5.InAction,scores={C5.Phase=1}] General.Mob.Tick matches 60.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/
