@@ -1,8 +1,8 @@
-#> asset:artifact/1255.blade_of_dawn/trigger/damage
+#> asset:artifact/1258.blade_of_dawn/trigger/damage
 #
 #
 #
-# @within function asset:artifact/1255.blade_of_dawn/trigger/3.main
+# @within function asset:artifact/1258.blade_of_dawn/trigger/3.main
 
 # ダメージ
     execute store result storage api: Argument.Damage float 1 run random value 300..400

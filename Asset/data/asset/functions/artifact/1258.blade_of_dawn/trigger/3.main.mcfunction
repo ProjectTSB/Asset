@@ -1,8 +1,8 @@
-#> asset:artifact/1255.blade_of_dawn/trigger/3.main
+#> asset:artifact/1258.blade_of_dawn/trigger/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/1255.blade_of_dawn/trigger/2.check_condition
+# @within function asset:artifact/1258.blade_of_dawn/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
@@ -19,4 +19,4 @@
     execute anchored eyes positioned ^ ^-0.4 ^1 run function api:object/summon
 
 # ダメージ
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/1255.blade_of_dawn/trigger/damage
+    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/1258.blade_of_dawn/trigger/damage
