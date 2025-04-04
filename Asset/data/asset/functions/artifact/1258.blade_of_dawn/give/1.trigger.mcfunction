@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:artifact/give
 
-execute if data storage asset:context {id:1255} run function asset:artifact/1258.blade_of_dawn/give/2.give
+execute if data storage asset:context {id:1258} run function asset:artifact/1258.blade_of_dawn/give/2.give
