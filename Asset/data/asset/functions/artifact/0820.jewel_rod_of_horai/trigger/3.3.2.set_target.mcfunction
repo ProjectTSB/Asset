@@ -19,7 +19,6 @@
 
 # 四角錐の範囲外の敵を除外
     execute as @e[type=#lib:living,tag=MS.TargetCandidate,distance=..12] run function asset:artifact/0820.jewel_rod_of_horai/trigger/search_target
-    say @e[tag=MS.TargetCandidate]
 
 # 物陰に隠れた状態の敵を除外
     execute as @e[type=#lib:living,tag=MS.TargetCandidate,distance=..12,sort=nearest] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this] eyes run function asset:artifact/0820.jewel_rod_of_horai/trigger/check_block
