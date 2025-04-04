@@ -18,4 +18,6 @@
 
 # Tagを削除
     tag @s remove C5.Skill.HorizontalSlashShot
+    tag @s remove C5.Skill.VerticalSlashShot
+    tag @s remove C5.Skill.Charge
     tag @s remove C5.InAction

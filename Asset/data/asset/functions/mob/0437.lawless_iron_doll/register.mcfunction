@@ -56,7 +56,7 @@
 
         # 魔法使いの頭
             # 低速誘導弾
-                data modify storage asset:mob Field.Damage.ChaseBullet set value 40f
+                data modify storage asset:mob Field.Damage.ChaserShot set value 35f
             # 持続大型弾
                 data modify storage asset:mob Field.Damage.ChaseBullet set value 20f
             # 拡散小型弾
