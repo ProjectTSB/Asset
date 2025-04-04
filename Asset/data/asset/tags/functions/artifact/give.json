@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:artifact/1258.blade_of_dawn/give/1.trigger",
+        "asset:artifact/1257.thor_staff/give/1.trigger",
+        "asset:artifact/1254.freeze_trap/give/1.trigger",
         "asset:artifact/1253.wool_shooter/give/1.trigger",
         "asset:artifact/1230.thunder_stiletto/give/1.trigger",
         "asset:artifact/1172.cyfosio_v2/give/1.trigger",
