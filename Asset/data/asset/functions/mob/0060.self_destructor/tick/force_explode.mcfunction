@@ -9,7 +9,7 @@
     #declare score_holder $Interval
 
 # カウントダウンが0以下ならreturn
-    execute if score @s 1O.ExplodeCnt matches ..0 run return fail
+    execute if data storage asset:context this{Countdown:0} run return fail
 
 # 一定間隔でカウントダウン進行
     scoreboard players operation $Interval Temporary = @s 1O.ForceExplodeCnt

@@ -7,12 +7,12 @@
 #   asset:mob/0060.self_destructor/tick/force_explode
 
 # カウントダウン
-    scoreboard players remove @s 1O.ExplodeCnt 1
+    execute store result storage asset:context this.Countdown int 0.9999999999 run data get storage asset:context this.Countdown
 
 # playsound
     playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 1 1
 
 # 自爆カウント表示を更新
-    execute if score @s 1O.ExplodeCnt matches 2 on passengers run data modify entity @s text set value '{"text":"2","font":"damage"}'
-    execute if score @s 1O.ExplodeCnt matches 1 on passengers run data modify entity @s text set value '{"text":"1","font":"damage"}'
-    execute if score @s 1O.ExplodeCnt matches 0 on passengers run data modify entity @s text set value '{"text":"0","font":"damage"}'
+    execute if data storage asset:context this{Countdown:2} on passengers run data modify entity @s text set value '{"text":"2","font":"damage"}'
+    execute if data storage asset:context this{Countdown:1} on passengers run data modify entity @s text set value '{"text":"1","font":"damage"}'
+    execute if data storage asset:context this{Countdown:0} on passengers run data modify entity @s text set value '{"text":"0","font":"damage"}'
