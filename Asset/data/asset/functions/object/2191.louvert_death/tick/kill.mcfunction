@@ -12,7 +12,7 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
 
 # ボスドロ
-    data modify storage api: Argument.ID set value 1255
+    data modify storage api: Argument.ID set value 1258
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
 
