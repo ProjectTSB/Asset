@@ -52,14 +52,14 @@
             # 突進
                 data modify storage asset:mob Field.Damage.Charge set value 50f
             # スーパー叩きつけ攻撃
-                data modify storage asset:mob Field.Damage.SuperShockSlam set value 70f
+                data modify storage asset:mob Field.Damage.SuperSlam set value 70f
 
         # 魔法使いの頭
             # 低速誘導弾
                 data modify storage asset:mob Field.Damage.ChaserShot set value 35f
-            # 持続大型弾
-                data modify storage asset:mob Field.Damage.ChaseBullet set value 20f
+            # 持続大型弾(防御貫通)
+                data modify storage asset:mob Field.Damage.MistShot set value 5f
             # 拡散小型弾
-                data modify storage asset:mob Field.Damage.ChaseBullet set value 30f
+                data modify storage asset:mob Field.Damage.SpreadShot set value 30f
             # スーパーレーザー攻撃
-                data modify storage asset:mob Field.Damage.ChaseBullet set value 70f
+                data modify storage asset:mob Field.Damage.SuperLaser set value 70f
