@@ -1,4 +1,4 @@
-#> asset:mob/0060.self_destructor/0.load
+#> asset:mob/0060.self_destructor/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
