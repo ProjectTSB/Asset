@@ -22,13 +22,8 @@
     execute unless block ~ ~ ~ water run particle smoke ~ ~1.8 ~ 0.3 0.25 0.3 0 15 normal @a
     execute unless block ~ ~ ~ water run particle flame ~ ~1.8 ~ 0.3 0.25 0.3 0 5 normal @a
 
-# 自爆カウント
-    scoreboard players add @s 1O.ExplodeCnt 1
-
-# 自爆カウント表示を更新
-    execute if score @s 1O.ExplodeCnt matches 1 on passengers run data modify entity @s text set value '{"text":"2","font":"damage"}'
-    execute if score @s 1O.ExplodeCnt matches 2 on passengers run data modify entity @s text set value '{"text":"1","font":"damage"}'
-    execute if score @s 1O.ExplodeCnt matches 3 on passengers run data modify entity @s text set value '{"text":"0","font":"damage"}'
+# カウントダウン
+    function asset:mob/0060.self_destructor/count_down/
 
 # 一度でも戦闘したかどうかをフィールドで記録
     data modify storage asset:context this.Fought set value true

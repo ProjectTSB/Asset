@@ -25,3 +25,9 @@
     execute if score $Interval Temporary matches 0 rotated ~ 0 run function asset:mob/0060.self_destructor/tick/vfx
     execute if score $Interval Temporary matches 3 rotated ~4.5 0 run function asset:mob/0060.self_destructor/tick/vfx
     scoreboard players reset $Interval Temporary
+
+# SE
+    scoreboard players operation $Interval Temporary = @s 1O.ExplodeFuse
+    scoreboard players operation $Interval Temporary %= $4 Const
+    execute if score $Interval Temporary matches 0 run playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 1 1
+    scoreboard players reset $Interval Temporary
