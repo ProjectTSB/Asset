@@ -6,7 +6,7 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add C5.Skill.Charge
+    tag @s add C5.Skill.SuperLaser
     return fail
 
 # 技を選択

@@ -61,5 +61,7 @@
                 data modify storage asset:mob Field.Damage.MistShot set value 5f
             # 拡散小型弾
                 data modify storage asset:mob Field.Damage.SpreadShot set value 30f
-            # スーパーレーザー攻撃
-                data modify storage asset:mob Field.Damage.SuperLaser set value 70f
+            # スーパーレーザー攻撃(オマケ)
+                data modify storage asset:mob Field.Damage.SuperLaserSub set value 30f
+            # スーパーレーザー攻撃(メイン)
+                data modify storage asset:mob Field.Damage.SuperLaserMain set value 50f
