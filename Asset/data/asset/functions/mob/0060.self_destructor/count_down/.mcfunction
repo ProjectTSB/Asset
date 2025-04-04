@@ -10,11 +10,6 @@
     scoreboard players remove @s 1O.ExplodeCnt 1
 
 # playsound
-    #execute if score @s 1O.ExplodeCnt matches 2 run playsound block.note
-    #execute if score @s 1O.ExplodeCnt matches 1
-    #execute if score @s 1O.ExplodeCnt matches 0
-
-# playsound
     playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 1 1
 
 # 自爆カウント表示を更新
