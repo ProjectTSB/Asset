@@ -11,6 +11,7 @@
 # 演出用
     particle firework ~ ~ ~ 0 0 0 0.2 20 normal @a
     particle wax_off ~ ~6 ~ 0.4 5 0.4 0 20 normal @a
+    particle flash ~ ~ ~ 0 0 0 0 1 normal @a
     playsound block.respawn_anchor.deplete player @a ~ ~ ~ 0.3 0.95
     function asset:object/1136.thor_thunder/tick/summon_laser
 
