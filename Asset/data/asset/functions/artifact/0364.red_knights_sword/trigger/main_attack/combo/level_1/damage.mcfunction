@@ -29,4 +29,3 @@
 # リセット
     tag @s remove A4.Hit
     function api:damage/reset
-    data remove storage api: Argument
