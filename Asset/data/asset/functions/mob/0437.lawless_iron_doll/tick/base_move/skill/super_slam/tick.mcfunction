@@ -24,9 +24,9 @@
     execute if score @s General.Mob.Tick matches 25 run playsound minecraft:entity.iron_golem.attack hostile @a ~ ~ ~ 2 1
 
 # ふわ～
-    execute if score @s General.Mob.Tick matches 25..30 rotated ~ 0 run tp @s ^ ^0.5 ^0.5
-    execute if score @s General.Mob.Tick matches 31..35 rotated ~ 0 run tp @s ^ ^0.3 ^0.3
-    execute if score @s General.Mob.Tick matches 36..50 rotated ~ 0 run tp @s ^ ^0.2 ^0.1
+    execute if score @s General.Mob.Tick matches 25..30 run tp @s ~ ~0.5 ~
+    execute if score @s General.Mob.Tick matches 31..35 run tp @s ~ ~0.3 ~
+    execute if score @s General.Mob.Tick matches 36..50 run tp @s ~ ~0.2 ~
 
 # チャージ音的な
     execute if score @s General.Mob.Tick matches 30 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 3 1.5
@@ -35,14 +35,14 @@
     execute if score @s General.Mob.Tick matches 40 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 3 2
 
 # ひゅーん
-    execute if score @s General.Mob.Tick matches 50..90 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/fall
-    execute if score @s General.Mob.Tick matches 50..90 at @s unless block ~ ~-1 ~ #lib:no_collision run scoreboard players set @s General.Mob.Tick 90
+    execute if score @s General.Mob.Tick matches 50..52 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/fall
+    execute if score @s General.Mob.Tick matches 50..52 at @s unless block ~ ~-1 ~ #lib:no_collision run scoreboard players set @s General.Mob.Tick 52
 
 # 爆発
-    execute if score @s General.Mob.Tick matches 90 at @s run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/explosion
+    execute if score @s General.Mob.Tick matches 52 at @s run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/explosion
 
 # ニュートラルポーズに戻る
-    execute if score @s General.Mob.Tick matches 120 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 10}
+    execute if score @s General.Mob.Tick matches 90 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 10}
 
 # リセット
-    execute if score @s General.Mob.Tick matches 120.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+    execute if score @s General.Mob.Tick matches 90.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
