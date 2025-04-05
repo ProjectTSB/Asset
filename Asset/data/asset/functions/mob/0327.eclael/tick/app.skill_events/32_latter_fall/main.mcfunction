@@ -38,6 +38,10 @@
             execute if score @s 93.AnimationTimer matches 67 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
             execute if score @s 93.AnimationTimer matches 75 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
 
+# 無敵
+    execute if score @s 93.AnimationTimer matches 3..60 run effect give @s resistance 1 10 true
+    execute if score @s 93.AnimationTimer matches 61 run effect clear @s resistance
+
 # 回転斬り
     execute if score @s 93.AnimationTimer matches 119 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/animation_2
     # プレイヤーの方を向く

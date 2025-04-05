@@ -40,20 +40,24 @@
         execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/normal rotated ~144 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if score @s 93.AnimationTimer matches 124 if predicate api:global_vars/difficulty/normal rotated ~216 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/normal rotated ~288 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-    # トライフォース 外→中
+    # 二重三角形 外→中
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/min/hard rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/min/hard rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/min/hard rotated ~240 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 171 if predicate api:global_vars/difficulty/min/hard rotated ~60 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 173 if predicate api:global_vars/difficulty/min/hard rotated ~180 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 175 if predicate api:global_vars/difficulty/min/hard rotated ~300 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
-    # トライフォース 中→外
+    # 二重三角形 中→外
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/min/hard rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/min/hard rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/min/hard rotated ~240 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_1
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 171 if predicate api:global_vars/difficulty/min/hard rotated ~60 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 173 if predicate api:global_vars/difficulty/min/hard rotated ~180 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 175 if predicate api:global_vars/difficulty/min/hard rotated ~300 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+
+# 無敵
+    execute if score @s 93.AnimationTimer matches 34..600 run effect give @s resistance 1 10 true
+    execute if score @s 93.AnimationTimer matches 601 run effect clear @s resistance
 
 # 終了
     execute if score @s 93.AnimationTimer matches 600 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/animation_1
