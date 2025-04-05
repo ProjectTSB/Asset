@@ -24,6 +24,8 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
 
+# 移動速度
+    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-028300000005 "HV.Raimei" 0.05 multiply_base
 
 #セット効果用のファンクション実行（実行はチェストプレートの方へ）
     execute if data storage asset:context id.all{head:642,chest:643,legs:644,feet:645} run function asset:artifact/0643.raimei_chestplate/trigger/fullset/equip/

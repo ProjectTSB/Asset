@@ -14,3 +14,6 @@
 # 雷攻撃
     data modify storage api: Argument.UUID set value [I;1,1,643,5]
     function api:modifier/attack/thunder/remove
+
+# 移動速度
+    attribute @s generic.movement_speed modifier remove 00000001-0000-0001-0000-028300000005
