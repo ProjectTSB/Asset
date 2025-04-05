@@ -9,9 +9,9 @@
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.2
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.2
-    execute positioned ^ ^1.6 ^ rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/5.2.particle_slash_0
-    execute positioned ^ ^1.6 ^3 rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/5.2.particle_slash_0
-    execute positioned ^ ^1.6 ^6 rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/12_latter_whip/5.2.particle_slash_0
+    execute positioned ^ ^1.6 ^ rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/particle_slash
+    execute positioned ^ ^1.6 ^3 rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/particle_slash
+    execute positioned ^ ^1.6 ^6 rotated ~-90 ~-10 run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/particle_slash
 
 # ターゲット取得
     execute positioned ^ ^ ^-3 run tag @a[tag=!PlayerShouldInvulnerable,distance=..6] add 93.Temp.AttackTarget
