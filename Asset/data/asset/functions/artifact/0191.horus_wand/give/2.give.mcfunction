@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ホルスの杖","color":"gold"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲のプレイヤーの体力をそこそこ回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲8mのプレイヤーの体力を11.0回復し"}','{"text":"その後20秒間かけて40.0回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,14 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 72
+    data modify storage asset:artifact MPCost set value 65
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 100
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "heal"
-    data modify storage asset:artifact TypeCooldown.Duration set value 90
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

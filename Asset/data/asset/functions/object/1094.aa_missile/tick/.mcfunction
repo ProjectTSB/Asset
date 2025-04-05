@@ -19,6 +19,9 @@
 # 加速時の移動
     execute if score @s General.Object.Tick matches 7..26 run function asset:object/1094.aa_missile/tick/accel_motion with storage asset:context this
 
+# 対象不在なら消す
+    function asset:object/1094.aa_missile/tick/death_check with storage asset:context this
+
 # 加速後の移動
     execute if score @s General.Object.Tick matches 27.. run function asset:object/1094.aa_missile/tick/inertia_motion with storage asset:context this
 

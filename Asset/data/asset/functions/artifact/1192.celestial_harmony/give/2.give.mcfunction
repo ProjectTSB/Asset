@@ -33,7 +33,7 @@
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value ["Magic"]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value ["None"]
+    data modify storage asset:artifact AttackInfo.ElementType set value ["Thunder"]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 70
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

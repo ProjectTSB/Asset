@@ -18,15 +18,16 @@
 
 # ダメージ
     # ダメージの数値設定（ブレあり）
-        execute store result score $Damage Temporary run random value 1100..1200
+        execute store result score $Damage Temporary run random value 870..1180
 
 # 乱数調整
         execute store result score $Random Temporary run random value 1..6
     # 条件を満たしたなら光の柱を召喚
-    # 現状２本召喚しているがここの調整はバランス班に任せます
+    # 現状２本召喚しているがここの調整はバランス班に任せます ということで3本
         execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/1200.alchemy_hammer/trigger/summon_laser
         execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/1200.alchemy_hammer/trigger/summon_laser
-    
+        execute if score $Random Temporary matches 6 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/1200.alchemy_hammer/trigger/summon_laser
+
     # ダメージ代入
         execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
     # 属性
