@@ -8,8 +8,28 @@
 # @private
     #declare score_holder $Interval
 
+# 多重ヒット防止判定
+    execute positioned ~-1 ~-2 ~-1 as @a[tag=!PlayerShouldInvulnerable,distance=..16,dx=2,dy=4,dz=2] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/charge/check_player/
+
+# ブロックの破壊
+    execute if predicate api:area/is_breakable positioned ~ ~0.5 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/charge/block_break
+
+# ダメージ
+    # ダメージ値設定
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Charge
+    # ダメージの属性をセット
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "None"
+    # 補正functionを実行
+        function api:damage/modifier
+    # 多重ヒット防止判定部分でタグを付与した対象にダメージを与える
+        execute as @a[tag=C5.TargetEntity,distance=..16] run function api:damage/
+    # リセット
+        function api:damage/reset
+        tag @a[distance=..16] remove C5.TargetEntity
+
 # 近くのプレイヤーの方にゆっくりと向き直る
-    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
 
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
