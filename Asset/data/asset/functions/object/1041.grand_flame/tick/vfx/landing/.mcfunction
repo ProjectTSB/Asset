@@ -1,8 +1,8 @@
-#> asset:artifact/1037.grand_flame/trigger/schedule/3.1.vfx
+#> asset:object/1041.grand_flame/tick/vfx/landing/
 #
-# 着弾時演出（球体）
 #
-# @within function asset:artifact/1037.grand_flame/trigger/schedule/3.landing
+#
+# @within function asset:object/1041.grand_flame/tick/landing
 
 # 球
     particle dust 100000000 1 0 4 ~-0.0 ~1.294 ~4.83 0.0 0.0 0.0 0.0 1 force @a[distance=..64]
