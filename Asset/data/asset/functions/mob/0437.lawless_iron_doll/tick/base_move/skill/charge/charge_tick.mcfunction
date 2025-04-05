@@ -14,11 +14,22 @@
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
-# 足音
+# 6tickごとに足音
     scoreboard players operation $Interval Temporary %= $6 Const
-    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
-    execute if score $Interval Temporary matches 0 run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
+# 下に何かあるなら、ゴツンゴツン
+    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
+    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
+# 下に何もないなら、キラキラ
+    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:block.amethyst_block.place hostile @a ~ ~ ~ 2 0.5
+    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:block.amethyst_block.chime hostile @a ~ ~ ~ 2 1
+# リセット
     scoreboard players reset $Interval Temporary
 
+# そこらのプレイヤーより上にいる場合、下にTP。下にブロックがあったら止まるよ。
+    execute positioned ~-50 ~2 ~-50 unless entity @p[dx=99,dy=50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+
+# 足元が埋まっていて、上にブロックがないなら上に移動
+    execute unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
+
 # まっすぐ前に歩く
-    execute rotated ~ 0 run tp @s ^ ^ ^1
+    execute at @s run tp @s ^ ^ ^1 ~ 0

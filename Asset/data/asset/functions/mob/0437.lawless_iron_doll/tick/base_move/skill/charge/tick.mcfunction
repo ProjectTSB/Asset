@@ -5,7 +5,7 @@
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/active
 
 # 付近に誰もいない場合は、突進の開始までスコアを進める
-   execute if score @s General.Mob.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..10] run scoreboard players set @s General.Mob.Tick 12
+   execute if score @s General.Mob.Tick matches 0 unless entity @p[gamemode=!spectator,distance=..24] run scoreboard players set @s General.Mob.Tick 12
 
 # ジャンプスタート動作
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/charge/start
