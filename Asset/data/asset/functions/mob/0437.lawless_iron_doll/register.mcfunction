@@ -19,9 +19,9 @@
 # ただし冒頭のみで、すぐに無敵でなくなる
     data modify storage asset:mob Interferable set value false
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"無法の鉄塊人形","color":"white"}'
+    data modify storage asset:mob Name set value '{"text":"無法の鉄巨人","color":"white"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-#    data modify storage asset:mob Lore set value ['{"text":"大きな身体と大きな","color":"white"}','{"text":"テレポートやブーストを駆使した動きで敵を翻弄する。","color":"white"}','{"text":"「アブソリュートドライブ」により、限界を超えた性能を発揮することができる。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"既存のルールに縛られない、巨大な鉄製の人形。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 140000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
