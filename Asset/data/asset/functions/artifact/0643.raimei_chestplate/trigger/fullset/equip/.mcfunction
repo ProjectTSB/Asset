@@ -1,4 +1,4 @@
-#> asset:artifact/0643.raimei_chestplate/trigger/3.1.armorfullset
+#> asset:artifact/0643.raimei_chestplate/trigger/fullset/equip/
 #
 # セット効果
 #
@@ -22,15 +22,13 @@
 # タグを付与する
     tag @s add HV.Full
 
-# 耐性を強化する
-    # UUID(部位が不明なためanyにする)
-        data modify storage api: Argument.UUID set value [I;1,1,643,0]
-    # 補正値
-        data modify storage api: Argument.Amount set value 0.05
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply_base"
-# 補正の追加
+# 雷耐性
+    data modify storage api: Argument.UUID set value [I;1,1,643,0]
+    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 
-# Scheduleループ
-    schedule function asset:artifact/0643.raimei_chestplate/trigger/3.4.loop 1t replace
+# フルセット用バフ
+    data modify storage api: Argument.ID set value 238
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
