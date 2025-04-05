@@ -27,7 +27,7 @@
 
 # 魔法陣を召喚
 # 使用回数に応じて魔法陣の召喚数を増やす
-# プレイヤーを狙う状態の際は魔方陣を1つ追加
+# プレイヤーを狙う状態の際は魔法陣を1つ追加
     execute anchored eyes positioned ^-0.4 ^-0.1 ^0.9 run function asset:artifact/1065.magic_bullet/trigger/summon_square/m {Scale:[0.9d,0.9d,0.01d],Delay:2,Interpolation:2,LeftRotate:false}
     execute if score $UseCount Temporary matches 3.. anchored eyes positioned ^-0.4 ^-0.1 ^1.05 run function asset:artifact/1065.magic_bullet/trigger/summon_square/m {Scale:[1.8d,1.8d,0.01d],Delay:4,Interpolation:4,LeftRotate:true}
     execute if score $UseCount Temporary matches 7 anchored eyes positioned ^-0.4 ^-0.1 ^1.2 run function asset:artifact/1065.magic_bullet/trigger/summon_square/m {Scale:[1.2d,1.2d,0.01d],Delay:8,Interpolation:2,LeftRotate:false}
@@ -57,9 +57,10 @@
             execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToPlayer set value 50.0f
 
     # プレイヤーを狙う状態に弾に渡すデータ
-    # $RandomをIDとして渡す
+    # 自分を貫いた際のダメージと、$RandomをIDとして渡す
         execute if entity @s[tag=TL.AimToPlayer] store result storage api: Argument.FieldOverride.ID int 1 run scoreboard players get $Random Temporary
         execute if entity @s[tag=TL.AimToPlayer] run data modify storage api: Argument.FieldOverride.AimToPlayer set value true
+        execute if entity @s[tag=TL.AimToPlayer] run data modify storage api: Argument.FieldOverride.Damage.Self set value 70
 
     # 魔弾を召喚
         data modify storage api: Argument.ID set value 1046
