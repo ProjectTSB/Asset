@@ -10,3 +10,4 @@
     scoreboard objectives add AK.Dummy dummy
     scoreboard objectives add AK.ActionCount dummy
     scoreboard objectives add AK.Counter dummy
+    scoreboard objectives add AK.IcecremationCount dummy

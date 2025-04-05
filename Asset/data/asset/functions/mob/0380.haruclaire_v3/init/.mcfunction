@@ -14,6 +14,9 @@
     # AJ関連初期化
         function asset:mob/0380.haruclaire_v3/init/animated_java
 
+# 移動
+    tp @s ~ ~0.5 ~
+
 # スコア初期化
     scoreboard players set @s AK.ActionCount 0
 
