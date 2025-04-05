@@ -1,4 +1,4 @@
-#> asset:artifact/0643.raimei_chestplate/trigger/3.1.armorfullset
+#> asset:artifact/0643.raimei_chestplate/trigger/fullset/equip/
 #
 # セット効果
 #
@@ -33,4 +33,4 @@
     function api:modifier/defense/thunder/add
 
 # Scheduleループ
-    schedule function asset:artifact/0643.raimei_chestplate/trigger/3.4.loop 1t replace
+    schedule function asset:artifact/0643.raimei_chestplate/trigger/fullset/loop/schedule 1t replace

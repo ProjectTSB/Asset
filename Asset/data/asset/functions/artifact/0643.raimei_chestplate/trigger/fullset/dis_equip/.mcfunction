@@ -1,4 +1,4 @@
-#> asset:artifact/0643.raimei_chestplate/trigger/3.3.tag_delete
+#> asset:artifact/0643.raimei_chestplate/trigger/fullset/dis_equip/
 #
 # フルセット効果を消す
 #
