@@ -12,7 +12,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0437.lawless_iron_doll/tick/base_move/walk/start
 
 # 近くのプレイヤーの方にゆっくりと向き直る
-    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
 
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
@@ -32,7 +32,7 @@
     execute positioned ~-50 ~2 ~-50 unless entity @p[dx=99,dy=50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
 
 # 足元が埋まっていて、上にブロックがないなら上に移動
-    execute unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
+    execute rotated ~ 0 unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
 
 # まっすぐ前に歩く
     execute at @s run tp @s ^ ^ ^0.2 ~ 0
