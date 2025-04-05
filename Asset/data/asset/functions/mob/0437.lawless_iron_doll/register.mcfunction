@@ -42,7 +42,7 @@
     # ダメージ設定
         # 騎士の頭
             # 薙ぎ払い
-                data modify storage asset:mob Field.Damage.Slash1 set value 40f
+                data modify storage asset:mob Field.Damage.Slash1 set value 50f
             # 薙ぎ払いの発射体
                 data modify storage asset:mob Field.Damage.SlashShot1 set value 40f
             # 袈裟斬り
