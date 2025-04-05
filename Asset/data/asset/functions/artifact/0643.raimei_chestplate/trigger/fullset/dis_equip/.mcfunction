@@ -11,3 +11,4 @@
     data modify storage api: Argument.UUID set value [I;1,1,643,0]
 # 補正の追加
     function api:modifier/defense/thunder/remove
+
