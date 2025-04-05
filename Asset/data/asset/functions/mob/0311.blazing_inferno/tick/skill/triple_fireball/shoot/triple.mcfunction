@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # サウンド
     function asset:mob/0311.blazing_inferno/tick/skill/triple_fireball/shoot/vfx

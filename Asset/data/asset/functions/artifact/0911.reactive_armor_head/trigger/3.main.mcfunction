@@ -11,5 +11,7 @@
 # 爆発で周囲にダメージを与える
     function asset:artifact/0911.reactive_armor_head/trigger/3.1.explosion
 
-# アーマータフネスと耐久値を減らす
-    item modify entity @s armor.head asset:artifact/0911.reactive_armor_head/decrease_toughness
+# 同一tickで1回しか爆発させないためにeffectをつけてもう発動したことをマーク
+    data modify storage api: Argument.ID set value 306
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

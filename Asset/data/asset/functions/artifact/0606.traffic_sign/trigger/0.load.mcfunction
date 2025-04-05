@@ -7,4 +7,3 @@
 #> 定義類はここに
 # @within function asset:artifact/0606.traffic_sign/trigger/**
     scoreboard objectives add GU.Count dummy
-    scoreboard objectives add GU.OwnerID dummy

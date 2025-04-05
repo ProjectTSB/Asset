@@ -5,4 +5,4 @@
 # @within asset_manager:mob/remove/remove.m
 
 # 元のInit処理を呼び出す
-   function asset:mob/0341.louvert/remove/
+    function asset:mob/0341.louvert/remove/
