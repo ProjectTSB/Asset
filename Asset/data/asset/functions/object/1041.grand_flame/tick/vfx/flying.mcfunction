@@ -1,8 +1,8 @@
-#> asset:artifact/1037.grand_flame/trigger/schedule/2.1.vfx
+#> asset:object/1041.grand_flame/tick/vfx/flying
 #
-# 球状演出
 #
-# @within function asset:artifact/1037.grand_flame/trigger/schedule/2.flying
+#
+# @within function asset:object/1041.grand_flame/tick/
 
 # 円
     particle dust 100000000 1 0 1.25 ^-0.0 ^0.0 ^0.5 0.0 0.0 0.0 0.0 1 force @a[distance=..64]

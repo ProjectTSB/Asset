@@ -1,8 +1,8 @@
-#> asset:artifact/1037.grand_flame/trigger/schedule/3.2.random_vfx
+#> asset:object/1041.grand_flame/tick/vfx/landing/random
 #
-# 着弾時演出（ランダム動的パーティクル）
 #
-# @within function asset:artifact/1037.grand_flame/trigger/schedule/3.landing
+#
+# @within function asset:object/1041.grand_flame/tick/vfx/landing/random.m
 
 # 円.004
     particle flame ^-0.0 ^0.0 ^0.2 ^-16.298 ^0.0 ^1000000000.0 0.00000000076 0 force @a[distance=..64]

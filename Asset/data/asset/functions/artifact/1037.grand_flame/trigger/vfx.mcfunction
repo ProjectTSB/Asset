@@ -1,4 +1,4 @@
-#> asset:artifact/1037.grand_flame/trigger/3.1.vfx
+#> asset:artifact/1037.grand_flame/trigger/vfx
 #
 # 発動時演出
 #
