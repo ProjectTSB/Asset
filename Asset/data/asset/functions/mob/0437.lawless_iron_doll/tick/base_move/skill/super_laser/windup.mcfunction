@@ -9,9 +9,9 @@
 
 # サウンド
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.0
-    playsound minecraft:block.portal.trigger hostile @a ~ ~ ~ 3 2
-    playsound minecraft:block.respawn_anchor.set_spawn hostile @a ~ ~ ~ 3 1
-    playsound minecraft:block.respawn_anchor.set_spawn hostile @a ~ ~ ~ 3 1.2
+    playsound minecraft:block.portal.trigger hostile @a ~ ~ ~ 1 2
+    playsound minecraft:block.respawn_anchor.set_spawn hostile @a ~ ~ ~ 2 1
+    playsound minecraft:block.respawn_anchor.set_spawn hostile @a ~ ~ ~ 2 1.2
 
 # パーティクル
     particle minecraft:portal ~ ~1.5 ~ 0 0 0 5 1000 force @a[distance=..64]
