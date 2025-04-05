@@ -17,7 +17,7 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 55f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash2
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -37,7 +37,7 @@
 # 弾召喚
     # 弾召喚
         data modify storage api: Argument.ID set value 2190
-        data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+        data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Beam
         data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
         data modify storage api: Argument.FieldOverride.Angle set value -0.698132f
         execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID

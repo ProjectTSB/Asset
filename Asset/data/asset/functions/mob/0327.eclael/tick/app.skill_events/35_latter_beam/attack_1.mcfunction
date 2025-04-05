@@ -19,7 +19,7 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 60f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.BeamWhip
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -39,7 +39,7 @@
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2190
-    data modify storage api: Argument.FieldOverride.Damage set value 40.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Beam
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     data modify storage api: Argument.FieldOverride.Angle set value 3.31613f
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
@@ -51,6 +51,6 @@
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.ID set value 2207
     execute if predicate api:global_vars/difficulty/min/hard store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.IsGreen set value false
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.BeamSlash
     execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
     execute if predicate api:global_vars/difficulty/min/hard positioned ^ ^ ^ run function api:object/summon

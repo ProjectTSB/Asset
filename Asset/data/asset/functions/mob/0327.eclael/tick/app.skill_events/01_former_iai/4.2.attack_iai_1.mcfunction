@@ -14,7 +14,7 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 42f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Iai
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性

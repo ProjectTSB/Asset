@@ -16,7 +16,7 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 36f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Move1
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -34,7 +34,7 @@
     execute as @e[type=area_effect_cloud,tag=93.Temp.AttackRotation] run tp @s ~ ~ ~ ~30 0
     data modify storage api: Argument.ID set value 2207
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Move2
     data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=93.Temp.AttackRotation,limit=1] Rotation[0]
     execute positioned ^ ^-1 ^-1 run function api:object/summon
 
