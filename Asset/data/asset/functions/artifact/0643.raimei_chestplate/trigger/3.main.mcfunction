@@ -12,25 +12,17 @@
 # 演出
     playsound minecraft:block.respawn_anchor.charge player @s ~ ~ ~ 1 2
 
-# 引数の設定
-    # UUID
-        data modify storage api: Argument.UUID set value [I;1,1,643,5]
-    # 補正値
-        data modify storage api: Argument.Amount set value 0.03
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply_base"
-    # 補正の追加
-        function api:modifier/defense/thunder/add
+# 雷耐性
+    data modify storage api: Argument.UUID set value [I;1,1,643,5]
+    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/defense/thunder/add
 
-# 雷バフ
-    # UUID
-        data modify storage api: Argument.UUID set value [I;1,1,643,5]
-    # 補正値
-        data modify storage api: Argument.Amount set value 0.04
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply_base"
-    # 補正の追加
-        function api:modifier/attack/thunder/add
+# 雷攻撃
+    data modify storage api: Argument.UUID set value [I;1,1,643,5]
+    data modify storage api: Argument.Amount set value 0.04
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/attack/thunder/add
 
 
 #セット効果用のファンクション実行（実行はチェストプレートの方へ）
