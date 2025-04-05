@@ -37,7 +37,7 @@
         data modify storage asset:mob Resist.Thunder set value 0.7
 # フィールド
     # スキルのリスト
-        data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
+        data modify storage asset:mob Field.Skill.List set value [0,1,2,3]
 
     # ダメージ設定
         # 騎士の頭
@@ -62,6 +62,6 @@
             # 拡散小型弾
                 data modify storage asset:mob Field.Damage.SpreadShot set value 30f
             # スーパーレーザー攻撃(オマケ)
-                data modify storage asset:mob Field.Damage.SuperLaserSub set value 30f
+                data modify storage asset:mob Field.Damage.SuperLaserSub set value 20f
             # スーパーレーザー攻撃(メイン)
-                data modify storage asset:mob Field.Damage.SuperLaserMain set value 50f
+                data modify storage asset:mob Field.Damage.SuperLaserMain set value 30f
