@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"雷鳴","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度・ジャンプ力・ブロックを掘る速度が上昇する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"移動速度・ジャンプ力・ブロックを掘る速度が上昇し","color":"white"}','{"text":"近接攻撃時に物理雷属性ダメージを与える","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
