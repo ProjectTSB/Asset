@@ -292,7 +292,7 @@ object TextComponent {
           .get("extra")
           .flatMap(_.downcastOrNone[NBTTagList])
           .traverse(_.value.toList.flatMap(_.values.toList).traverse(s => TextComponent.parse(s)))
-          .map(_.map(_.mkString))
+          .map(_.map(_.map(CellEncoder[TextComponent].apply).mkString))
 
         val filledTranslate = withs.map { withs =>
           translate.flatMap { t =>
