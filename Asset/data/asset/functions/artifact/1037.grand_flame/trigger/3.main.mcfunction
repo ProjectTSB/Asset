@@ -38,7 +38,7 @@
     playsound entity.wither.shoot player @a[distance=..16] ~ ~ ~ 0.5 1.5
 
 # 演出
-    execute anchored eyes positioned ^ ^ ^0.5 run function asset:artifact/1037.grand_flame/trigger/3.1.vfx
+    execute anchored eyes positioned ^ ^ ^0.5 run function asset:artifact/1037.grand_flame/trigger/vfx
 
 # リセット処理
     tag @e[type=snowball,tag=ST.SnowBallInit,distance=..3] remove ST.SnowBallInit
