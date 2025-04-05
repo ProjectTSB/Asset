@@ -27,3 +27,8 @@
     data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
+
+# フルセット用バフ
+    data modify storage api: Argument.ID set value 238
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

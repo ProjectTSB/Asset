@@ -12,3 +12,7 @@
 # 補正の追加
     function api:modifier/defense/thunder/remove
 
+# フルセット用バフ解除
+    data modify storage api: Argument.ID set value 238
+    function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset
