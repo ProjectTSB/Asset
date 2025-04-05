@@ -12,7 +12,7 @@
 
 # 引数の設定
     # ダメージ値設定
-        execute store result storage api: Argument.Damage float 1 run random value 200..235
+        execute store result storage api: Argument.Damage float 1 run random value 250..340
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
