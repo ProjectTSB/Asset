@@ -10,23 +10,17 @@
 # ここから先は神器側の効果の処理を書く
 
 # ダメージ
-    # 与えるダメージ = 550
-        data modify storage lib: Argument.Damage set value 50f
-    # 物理属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 炎属性
-        data modify storage lib: Argument.ElementType set value "Fire"
-    # 耐性エフェクトを無視するか否か
-        data modify storage lib: Argument.FixedDamage set value false
-# 補正functionを実行
-    function lib:damage/modifier
-# 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
-# リセット
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    function api:damage/reset
 
-# 自身にエフェクト付与
-    effect give @s minecraft:haste 60 3 true
+# 自身にマインソウル(ID:291)を付与
+    data modify storage api: Argument.ID set value 291
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     particle minecraft:lava ~ ~ ~ 0.5 1 0.5 1 100 force @a[distance=..20]

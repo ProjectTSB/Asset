@@ -6,6 +6,14 @@
     #declare tag 26.HPLess50Per
     #declare tag 26.Teleport
 
+#> 召喚地点記録Marker
+# @within function
+#   asset:mob/0078.messenger_of_thunder/death/
+#   asset:mob/0078.messenger_of_thunder/init/
+#   asset:mob/0078.messenger_of_thunder/remove/
+#   asset:mob/0078.messenger_of_thunder/tick/
+    #declare tag 26.SpawnPoint
+
 #> スキル用
 # @within function
 #   asset:mob/0078.messenger_of_thunder/tick/**

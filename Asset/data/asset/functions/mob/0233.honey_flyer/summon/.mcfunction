@@ -1,4 +1,4 @@
 #> asset:mob/0233.honey_flyer/summon/
 # @within asset:mob/alias/233/summon
 
-summon skeleton ~ ~ ~ {Silent:1b,NoGravity:1b,Tags:["MobInit","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"empty"}
+summon skeleton ~ ~ ~ {Silent:1b,NoGravity:1b,Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"empty"}

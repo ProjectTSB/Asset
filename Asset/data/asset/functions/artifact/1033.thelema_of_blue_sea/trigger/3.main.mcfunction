@@ -18,10 +18,10 @@
     #scoreboard players set @s SP.AttackCount 1
 
 # 次の段階までの待機時間のスコア
-# 差が40tick以上ならAttackCountをリセットする
+# 差が60tick以上ならAttackCountをリセットする
     execute store result score $WaitingTime Temporary run time query gametime
     scoreboard players operation $WaitingTime Temporary -= @s SP.LatestUseTick
-    execute if score $WaitingTime Temporary matches 40.. run scoreboard players reset @s SP.AttackCount
+    execute if score $WaitingTime Temporary matches 60.. run scoreboard players reset @s SP.AttackCount
     scoreboard players reset $WaitingTime Temporary
 
 # 使用tickをスコアで残しておく
@@ -36,11 +36,11 @@
 # 3回目の攻撃の時、追撃用オブジェクトを召喚
     execute if entity @s[scores={SP.AttackCount=3}] run function asset:artifact/1033.thelema_of_blue_sea/trigger/4.persuit
 
-# ダメージ 基礎火力+現在体力の100%(最大200まで)
+# ダメージ 基礎火力+現在体力の100%
     function api:data_get/health
     execute store result score $Damage Temporary run data get storage api: Health 1.0
     scoreboard players operation $Damage Temporary < $200 Const
-    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 220
+    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 250
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

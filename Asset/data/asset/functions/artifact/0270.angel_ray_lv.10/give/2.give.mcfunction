@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"エンジェルレイ レベル10"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"聖霊のオーラに満ちた強烈な光芒を前方に放ち、"}','{"text":"対象にダメージを与え、味方は回復させる。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"対象:攻撃が命中すると","color":"white"},{"text":"1171.3","color":"#6e99ff"},{"text":"の魔法ダメージを与える。","color":"white"}]','[{"text":"味方:体力を","color":"white"},{"text":"53.1","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"聖霊のオーラに満ちた強烈な光芒を前方に放ち、"}','{"text":"対象にダメージを与え、味方は回復させる。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"対象:攻撃が命中すると","color":"white"},{"text":"1750","color":"#6e99ff"},{"text":"の魔法ダメージを与える。","color":"white"}]','[{"text":"味方:体力を","color":"white"},{"text":"53.1","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)

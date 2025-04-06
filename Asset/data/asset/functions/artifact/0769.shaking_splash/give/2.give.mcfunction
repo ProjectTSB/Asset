@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"シェイキングスプラッシュ","color":"#00F7FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用時、炭酸弾を発射する。","color":"#7AF6FF"}','{"text":"スニークしながら使うと炭酸激流を発射する。","color":"#7AF6FF"}','{"text":"また、炭酸弾の着弾地点及び、","color":"#7AF6FF"}','{"text":"炭酸激流の通過地点周辺を消火する。","color":"#7AF6FF"}','{"text":"弾切れになってもリロードできる。","color":"#7AF6FF"}','{"text":"泡立つ蒼い液体が詰まった水鉄砲。","color":"#96DCFF"}','{"text":"中の液体は飲んでみると存外美味である。","color":"#96DCFF"}']
+    data modify storage asset:artifact Lore set value ['{"text":"炭酸弾を発射する。","color":"#7AF6FF"}','{"text":"スニーク時は炭酸激流を発射する。","color":"#7AF6FF"}','{"text":"発射した弾は火を消火できる。","color":"#7AF6FF"}','{"text":"弾切れになってもリロードできる。","color":"#7AF6FF"}','{"text":"泡立つ蒼い液体が詰まった水鉄砲。","color":"#96DCFF"}','{"text":"中の液体は飲んでみると存外美味である。","color":"#96DCFF"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 4
+    data modify storage asset:artifact MPHealWhenHit set value 6.5
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)

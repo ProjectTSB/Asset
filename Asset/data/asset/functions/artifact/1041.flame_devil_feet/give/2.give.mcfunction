@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"炎魔","color":"#C71585","bold":true},{"text":"の靴","color":"#FF7F50","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]','[{"text":"火攻撃+10% ","color":"red"},{"text":"水攻撃-7.5% ","color":"dark_red"}]','[{"text":"魔法攻撃+5%","color":"dark_purple"},{"text":" MP回復量+2%","color":"green"}]','[{"text":"「さぁゆけ。私をもっと楽しませてくれ」","color":"#C71585","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]','[{"text":"火攻撃+7.5% ","color":"red"},{"text":"水攻撃-2.5% ","color":"dark_red"}]','[{"text":"魔法攻撃+2.5%","color":"dark_purple"},{"text":" MP回復量+5%","color":"green"}]','[{"text":"「さぁゆけ。私をもっと楽しませてくれ」","color":"#C71585","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

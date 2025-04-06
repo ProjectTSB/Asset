@@ -66,3 +66,4 @@
     data modify storage asset:mob Field.Damage.Water set value 28f
     data modify storage asset:mob Field.Damage.Thunder set value 45f
     data modify storage asset:mob Field.Damage.Magic set value 50f
+    data modify storage asset:mob Field.Damage.Confine set value {WaterJail:50f,Fire:32f}

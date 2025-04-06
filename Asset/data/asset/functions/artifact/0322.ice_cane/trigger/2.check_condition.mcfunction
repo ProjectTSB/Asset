@@ -8,9 +8,9 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-# プレイヤーのゲームモードがサバイバル・クリエイティブの時にのみ使用可能
-    execute if entity @s[gamemode=!survival,gamemode=!creative] run tag @s remove CanUsed
-    execute if entity @s[gamemode=!survival,gamemode=!creative] run function lib:message/artifact/can_not_use_here
+# ブロック破壊可能エリアでのみ使用可能
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0322.ice_cane/trigger/3.main

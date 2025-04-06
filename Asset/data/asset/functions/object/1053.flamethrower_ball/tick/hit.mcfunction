@@ -15,17 +15,17 @@
 # ダメージを与える
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 88.0f
+        data modify storage api: Argument.Damage set value 112.0f
     # 物理属性
-        data modify storage lib: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.AttackType set value "Physical"
     # 属性
-        data modify storage lib: Argument.ElementType set value "Fire"
+        data modify storage api: Argument.ElementType set value "Fire"
     # ダメージ
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-        execute at @a if score $OwnerID Temporary = @p UserID as @p run function lib:damage/modifier
+        execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
         execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
 # リセット
-    function lib:damage/reset
+    function api:damage/reset
     scoreboard players reset $OwnerID Temporary
 
 kill @s

@@ -19,9 +19,9 @@
     function api:mp/fluctuation
 
 # HP回復
-    data modify storage lib: Argument.Heal set value 6
-    function lib:heal/modifier
-    function lib:heal/
+    data modify storage api: Argument.Heal set value 6
+    function api:heal/modifier
+    function api:heal/
 
 # リセット
-    function lib:heal/reset
+    function api:heal/reset

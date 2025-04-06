@@ -5,7 +5,7 @@
 # @within function asset:artifact/0738.voltage_striker/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -21,6 +21,3 @@
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
     execute anchored eyes positioned ^ ^-0.35 ^0.3 run function asset:artifact/0738.voltage_striker/trigger/4.summon_bullet
-
-# ループ開始
-    schedule function asset:artifact/0738.voltage_striker/trigger/bullet/loop 1t replace

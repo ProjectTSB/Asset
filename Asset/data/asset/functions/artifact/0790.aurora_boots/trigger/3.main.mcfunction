@@ -15,33 +15,33 @@
     execute unless data storage asset:context id.all{head:787,chest:788,legs:789,feet:790} run playsound block.beacon.activate player @a ~ ~ ~ 0.5 2 0
 
 
-# 魔法耐性+5%
+# 魔法耐性
     data modify storage api: Argument.UUID set value [I;1,1,790,3]
     data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/magic/add
 
-# 雷耐性+10%
+# 雷耐性+
     data modify storage api: Argument.UUID set value [I;1,1,790,3]
     data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/thunder/add
 
-# 雷攻撃+5%
+# 雷攻撃
     data modify storage api: Argument.UUID set value [I;1,1,790,3]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.075
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
 
-# MP回復+5%
+# MP回復
     data modify storage api: Argument.UUID set value [I;1,1,790,3]
-    data modify storage api: Argument.Amount set value 0.05
+    data modify storage api: Argument.Amount set value 0.025
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/mp_regen/add
 
-# 物理耐性-10%
+# 物理耐性
     data modify storage api: Argument.UUID set value [I;1,1,790,3]
-    data modify storage api: Argument.Amount set value -0.075
+    data modify storage api: Argument.Amount set value -0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/physical/add
 

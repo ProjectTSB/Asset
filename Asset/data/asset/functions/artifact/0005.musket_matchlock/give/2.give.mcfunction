@@ -19,15 +19,15 @@
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.gunpowder"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
-    data modify storage asset:artifact ConsumeItem.Extra set value "25%"
+    data modify storage asset:artifact ConsumeItem.Extra set value '"25%"'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"右クリック"}'
+    # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [40,80]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

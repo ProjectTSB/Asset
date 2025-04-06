@@ -16,11 +16,9 @@
     # 魔法陣の召喚番号
         execute store result storage api: Argument.FieldOverride.MagicID int 1 run scoreboard players get $SJ.MagicID Temporary
     # チャージタイム (乱数アリ)
-        execute store result score $Random Temporary run function lib:random/
-        scoreboard players operation $Random Temporary %= $20 Const
-        execute store result storage api: Argument.FieldOverride.ChargeTime short 1 run scoreboard players add $Random Temporary 5
+        execute store result storage api: Argument.FieldOverride.ChargeTime short 1 run random value 5..24
     # ダメージ
-        data modify storage api: Argument.FieldOverride.Damage set value 750f
+        data modify storage api: Argument.FieldOverride.Damage set value 350f
 
 # 召喚
     data modify storage api: Argument.ID set value 1063

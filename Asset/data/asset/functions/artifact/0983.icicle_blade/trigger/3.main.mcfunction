@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0983.icicle_blade/trigger/2.check_condition
 
-#> private
-# @private
-    #declare score_holder $Random
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
@@ -20,9 +16,7 @@
 
 # パーティクル
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-        scoreboard players operation $Random Temporary %= $11 Const
-        execute store result storage asset:temp RB.Particle int 1 run scoreboard players add $Random Temporary 1
+        execute store result storage asset:temp RB.Particle int 1 run random value 1..11
     # 処理を呼び出す
         function asset:artifact/0983.icicle_blade/trigger/vfx/.m with storage asset:temp RB
 
@@ -30,5 +24,4 @@
     function asset:artifact/0983.icicle_blade/trigger/damage
 
 # リセット
-    scoreboard players reset $Random Temporary
     data remove storage asset:temp RB

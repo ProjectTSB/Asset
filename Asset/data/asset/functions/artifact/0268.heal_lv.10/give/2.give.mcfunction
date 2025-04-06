@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヒール レベル10"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"治癒の祈りを通じて"}','{"text":"発動者および味方を回復する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"体力を","color":"white"},{"text":"4.1","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"治癒の祈りを通じて"}','{"text":"発動者および味方を回復する。"}','""','{"text":"[詳細]","color":"#ffde6e"}','[{"text":"体力を","color":"white"},{"text":"7.5","color":"#6e99ff"},{"text":"回復する。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 8
+    data modify storage asset:artifact MPCost set value 9
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
@@ -56,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki"]
+    data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Wi-ki","Flora"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

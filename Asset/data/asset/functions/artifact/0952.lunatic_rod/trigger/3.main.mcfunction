@@ -5,7 +5,7 @@
 # @within function asset:artifact/0952.lunatic_rod/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -21,11 +21,11 @@
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0952.lunatic_rod/trigger/4.recursive
 
 # ヒットした対象にダメージ distance=..40なのは広めに判定をとっているため
-    data modify storage lib: Argument.Damage set value 300.0f
-    data modify storage lib: Argument.AttackType set value "Magic"
-    function lib:damage/modifier
-    execute as @e[type=#lib:living,tag=Hit,distance=..15] run function lib:damage/
-    function lib:damage/reset
+    data modify storage api: Argument.Damage set value 300.0f
+    data modify storage api: Argument.AttackType set value "Magic"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,tag=Hit,distance=..15] run function api:damage/
+    function api:damage/reset
 
 # ヒットしたら魔法攻撃バフ
     execute if entity @s[tag=Landing] run data modify storage api: Argument.ID set value 212

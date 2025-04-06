@@ -1,4 +1,4 @@
-#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/6.1.particle_slash
+#> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/03_2_kt_movetospear/6.3.particle_spear
 #
 # アニメーションのイベントハンドラ Kt移動突き 演出
 #

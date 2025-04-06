@@ -52,3 +52,6 @@
         data modify storage asset:mob Resist.Water set value 0.5
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
+
+# フィールド
+    data modify storage asset:mob Field.Countdown set value 3

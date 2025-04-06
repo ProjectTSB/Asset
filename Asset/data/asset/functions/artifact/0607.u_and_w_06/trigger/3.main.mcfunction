@@ -3,6 +3,7 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0607.u_and_w_06/trigger/2.check_condition
+
 #> Private
 # @private
     #declare score_holder $UseCount
@@ -21,7 +22,7 @@
 
 # 残り回数が1回の時発動した場合
     execute unless data storage asset:context Items.mainhand.id run data modify storage api: Argument.ID set value 608
-    execute unless data storage asset:context Items.mainhand.id run function api:artifact/give/from_id
+    execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
 
 # 前方拡散設定
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -30,14 +31,12 @@
 
 # ランダムで拡散率がひどいことになる
     # 疑似乱数取得
-        execute store result score $Random Temporary run function lib:random/
-    # ほしい範囲に剰余算
-        scoreboard players operation $Random Temporary %= $100 Const
+        execute store result score $Random Temporary run random value 0..9
     # 10%で発動
-        execute if score $Random Temporary matches 0..9 run data modify storage lib: Argument.Spread set value 2
+        execute if score $Random Temporary matches 0 run data modify storage lib: Argument.Spread set value 2
     # 50%で発動
-        execute if score $Random Temporary matches 10..69 run data modify storage lib: Argument.Distance set value 5.0
-        execute if score $Random Temporary matches 10..69 run data modify storage lib: Argument.Spread set value 0.1
+        execute if score $Random Temporary matches 1..5 run data modify storage lib: Argument.Distance set value 5.0
+        execute if score $Random Temporary matches 1..5 run data modify storage lib: Argument.Spread set value 0.1
 
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle

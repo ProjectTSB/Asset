@@ -9,9 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 雨雲を召喚
-    summon marker ~ ~6 ~ {Tags:["P8.RainCloud","Object","Uninterferable"]}
-    execute positioned ~ ~6 ~ run scoreboard players operation @e[type=marker,tag=P8.RainCloud,distance=..0.01] P8.UserID = @s UserID
-
-# スケジュールループスタート
-    schedule function asset:artifact/0907.rod_of_rain/trigger/rain_cloud/1.loop 1t replace
+# Objectを召喚
+    data modify storage api: Argument.ID set value 1027
+    data modify storage api: Argument.FieldOverride.Damage set value 1200f
+    data modify storage api: Argument.FieldOverride.HealPer set value 10
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+    function api:object/summon

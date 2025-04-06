@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂命の徽章","color":"dark_aqua","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大HPの25%を失うかわりに","color":"white"},{"text":"物理攻撃","color":"dark_green"},{"text":"を大幅に強化する","color":"white"}]','[{"text":"失うHPが多ければ多いほど","color":"white"},{"text":"物理攻撃","color":"dark_green"},{"text":"が上がる","color":"white"}]','{"text":"命を燃やせば燃やすほど人は輝くものだ","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['[{"text":"最大HPの25%分のダメージを受ける代わりに","color":"white"}]','[{"text":"最大HPの8%分の","color":"white"},{"text":"物理攻撃","color":"dark_green"},{"text":"バフを20秒間得る","color":"white"}]','{"text":"命を燃やせば燃やすほど人は輝くものだ","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"現在HPが最大HPの25%以上、残っている時"}]'
+    data modify storage asset:artifact Condition set value '[{"text":"HPが25%以上"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

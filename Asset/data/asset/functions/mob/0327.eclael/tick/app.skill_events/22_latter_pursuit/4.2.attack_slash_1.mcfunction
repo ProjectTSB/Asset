@@ -2,9 +2,9 @@
 #
 # アニメーションのイベントハンドラ 後半・袈裟斬り
 #
-# @within
-#   function asset:mob/0327.eclael/tick/app.skill_events/22_latter_pursuit/**
-#   function asset:mob/0327.eclael/debug_damage
+# @within function
+#   asset:mob/0327.eclael/tick/app.skill_events/22_latter_pursuit/**
+#   asset:mob/0327.eclael/debug_damage
 
 # TODO：演出を練る
 # 演出

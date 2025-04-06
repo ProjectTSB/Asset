@@ -21,9 +21,9 @@
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 5
+    data modify storage asset:artifact RemainingCount set value 20
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
@@ -41,9 +41,9 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 30
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 99999
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 0
+    # data modify storage asset:artifact MPRequire set value 0
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)

@@ -2,7 +2,7 @@
 #
 # 実行者の水攻撃補正を返す
 #
-# @within function asset:artifact/1088.purifying_hydrangea/trigger/4.find_highest_water_attack_player
+# @within function asset:artifact/1088.purifying_hydrangea/trigger/4.find_target
 
 # 水攻撃補正を取得
     function api:modifier/attack/water/get

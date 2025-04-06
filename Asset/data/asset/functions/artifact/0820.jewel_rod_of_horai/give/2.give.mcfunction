@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"蓬莱","color":"red"},{"text":"の","color":"yellow"},{"text":"玉","color":"green"},{"text":"の","color":"blue"},{"text":"枝","color":"dark_purple"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備していほど力を発揮する。","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"竹取の宝具を1つ以上装備しているときに敵へのダメージが発生する。","color":"gray"}','{"text":"装備数が増えるごとに攻撃数が増加する。","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [220]
+    data modify storage asset:artifact AttackInfo.Damage set value ["220x0","220x5"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -35,9 +35,9 @@
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value never
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
+    data modify storage asset:artifact AttackInfo.AttackRange set value 12
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 69
 # MP必要量 (int) (オプション)

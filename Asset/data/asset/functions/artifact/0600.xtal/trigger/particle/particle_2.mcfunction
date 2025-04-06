@@ -4,8 +4,7 @@
 #
 # @within function asset:artifact/0600.xtal/trigger/5.slash
 
-
-## 外4
+# 外4
 particle dust 1 1 1 1.3 ^1.96457 ^1.96457 ^0.12107 0 0 0 0 1
 particle dust 1 1 1 1.3 ^1.90211 ^1.90211 ^0.30353 0 0 0 0 1
 particle dust 1 1 1 1.3 ^1.80965 ^1.80965 ^0.47867 0 0 0 0 1

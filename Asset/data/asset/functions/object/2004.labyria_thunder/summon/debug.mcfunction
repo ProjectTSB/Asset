@@ -1,4 +1,4 @@
-#> asset:mob/2004.labyria_thunder/summon/debug
+#> asset:object/2004.labyria_thunder/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #
@@ -6,5 +6,5 @@
 # @private
 
 # 召喚
-   data modify storage api: Argument.ID set value 2004
-   function api:object/summon
+    data modify storage api: Argument.ID set value 2004
+    function api:object/summon

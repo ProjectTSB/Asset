@@ -10,5 +10,4 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2032
-    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
     execute at @s run function api:object/summon

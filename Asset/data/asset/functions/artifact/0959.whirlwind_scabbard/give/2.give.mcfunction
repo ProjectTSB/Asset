@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"旋風の鞘","color":"#7DFF9B"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、前を塞ぐ者を吹き飛ばす。","color":"white"}','{"text":"抜いた刀に旋風を纏わせる鞘。","color":"gray"}','{"text":"その旋風は何にも止めることはできない。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"前にいる敵を吹き飛ばす","color":"white"}','{"text":"抜いた刀に旋風を纏わせる鞘","color":"gray"}','{"text":"その旋風は何にも止めることはできない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 5
+    data modify storage asset:artifact LocalCooldown set value 10
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value

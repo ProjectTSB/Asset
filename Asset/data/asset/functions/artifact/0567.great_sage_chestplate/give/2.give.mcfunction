@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 567
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:leather_chestplate"
+    data modify storage asset:artifact Item set value "minecraft:chainmail_chestplate"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"大賢者のローブ(上)","color":"#FED4FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"大賢者エリュサスの祈りが込められたローブ","color":"#FED4FF"}]','{"text":"この衣服はエリュサスの写し身そのものだ","color":"#FED4FF"}','[{"text":"魔法耐性+7.5% 魔法攻撃+7.5%","color":"dark_purple"}]','[{"text":"MP回復量+10%","color":"green"}]','[{"text":"物理耐性","color":"dark_green"},{"text":"-10% ","color":"dark_red"},{"text":"物理攻撃","color":"dark_green"},{"text":"-17.5%","color":"dark_red"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"大賢者エリュサスの祈りが込められたローブ","color":"#FED4FF"}]','{"text":"この衣服はエリュサスの写し身そのものだ","color":"#FED4FF"}','[{"text":"魔法耐性+5% 魔法攻撃+7.5%","color":"dark_purple"}]','[{"text":"MP回復量+5%","color":"green"}]','[{"text":"物理耐性","color":"dark_green"},{"text":"-2.5% ","color":"dark_red"},{"text":"物理攻撃","color":"dark_green"},{"text":"-2.5%","color":"dark_red"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -53,7 +53,6 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:14598115},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;1,1,567,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,567,5],Slot:"chest"}]}
-
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:8,Operation:0,UUID:[I;1,1,567,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,567,5],Slot:"chest"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:566"}}
 # 神器の入手用function
     function asset:artifact/common/give

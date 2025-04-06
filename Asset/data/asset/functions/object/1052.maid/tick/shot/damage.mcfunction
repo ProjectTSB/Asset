@@ -6,16 +6,16 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage lib: Argument.Damage set value 4
+        data modify storage api: Argument.Damage set value 7.5
     # 属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-        data modify storage lib: Argument.ElementType set value "None"
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.ElementType set value "None"
     # ダメージ
-        execute as @p[tag=1052.Owner] run function lib:damage/modifier
-        execute as @e[type=#lib:living,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,distance=..60,sort=nearest,limit=1] run function lib:damage/
+        execute as @p[tag=1052.Owner] run function api:damage/modifier
+        execute as @e[type=#lib:living,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,distance=..60,sort=nearest,limit=1] run function api:damage/
 # リセット
     scoreboard players reset $OwnerID Temporary
-    function lib:damage/reset
+    function api:damage/reset
 
 # 着弾タグを消す
     tag @e[type=#lib:living,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,distance=..60,sort=nearest,limit=1] remove LandingTarget

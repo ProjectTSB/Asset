@@ -4,26 +4,15 @@
 #
 # @within function asset:mob/alias/416/death
 
-# DeathCountを取り出す
-    execute store result score $BK.Temp Temporary run data get storage asset:context this.DeathCount
+# Split を 1 以上持っていないなら打ち切り
+    execute if data storage asset:context this{Split:0} run return fail
 
-# DeathCountが2以上なら打ち切り
-    execute if score $BK.Temp Temporary matches 2.. run return run scoreboard players reset $BK.Temp Temporary
-
-# DeathCountを+1
-    scoreboard players add $BK.Temp Temporary 1
-
-# DeathCountを引き継いで召喚させる
-    execute store result storage api: Argument.FieldOverride.DeathCount int 1 run scoreboard players get $BK.Temp Temporary
-# 召喚
-    data modify storage api: Argument.ID set value 416
-    function api:mob/summon
-
-# DeathCountを引き継いで召喚させる
-    execute store result storage api: Argument.FieldOverride.DeathCount int 1 run scoreboard players get $BK.Temp Temporary
-# 召喚
-    data modify storage api: Argument.ID set value 416
-    function api:mob/summon
-
-# リセット
-    scoreboard players reset $BK.Temp Temporary
+# Split を 1 減算して分裂
+    # 召喚
+        execute store result storage api: Argument.FieldOverride.Split int 0.9999999999 run data get storage asset:context this.Split
+        data modify storage api: Argument.ID set value 416
+        function api:mob/summon
+    # 召喚
+        execute store result storage api: Argument.FieldOverride.Split int 0.9999999999 run data get storage asset:context this.Split
+        data modify storage api: Argument.ID set value 416
+        function api:mob/summon

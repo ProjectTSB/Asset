@@ -3,9 +3,6 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0318.thunder_sword/trigger/2.check_condition
-#> private
-# @private
-    #declare score_holder $RandomDamage
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/mainhand
@@ -17,24 +14,9 @@
     playsound minecraft:entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
 
 # ダメージ
-    #ダメージブレのための処理
-        # 疑似乱数取得
-            execute store result score $RandomDamage Temporary run function lib:random/
-        # 剰余算する。0~5の追加ダメージ
-          scoreboard players operation $RandomDamage Temporary %= $6 Const
-        # 最低ダメージ設定
-            scoreboard players add $RandomDamage Temporary 4
-    #ダメージセット
-        execute store result storage lib: Argument.Damage float 1 run scoreboard players get $RandomDamage Temporary
-    # 第一属性
-        data modify storage lib: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage lib: Argument.ElementType set value "Thunder"
-# 補正functionを実行
-    function lib:damage/modifier
-# ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function lib:damage/
-
-# リセット
-    function lib:damage/reset
-    scoreboard players reset $RandomDamage Temporary
+    execute store result storage api: Argument.Damage float 1 run random value 6..12
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    function api:damage/reset

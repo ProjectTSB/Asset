@@ -23,7 +23,8 @@
     execute if score @s AW.AnimationTick matches 161 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/end
 
 # 予告線表示
-    execute if score @s AW.AnimationTick matches 52 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/announce_line
+    execute if predicate api:global_vars/difficulty/max/normal if score @s AW.AnimationTick matches 52 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/announce_line
+    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 72 run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/announce_line_hard
 
 # レーザー発射
     execute if score @s AW.AnimationTick matches 82 positioned ^ ^1.25 ^ run function asset:mob/0392.ecual_first/ai/projectile/shining_ray/1.start

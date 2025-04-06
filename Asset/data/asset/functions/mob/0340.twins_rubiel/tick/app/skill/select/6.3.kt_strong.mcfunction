@@ -5,11 +5,11 @@
 # @within function asset:mob/0340.twins_rubiel/tick/app/skill/select/5.1.interrupt_kt
 
 # ランダム
-    execute store result score $Random Temporary run function lib:random/
+    execute store result score $Random Temporary run random value 0..2
 
 # プレイヤーが近くにいない場合は掴みを使用しない
-    execute if entity @a[distance=..10] run scoreboard players operation $Random Temporary %= $3 Const
-    execute unless entity @a[distance=..10] run scoreboard players operation $Random Temporary %= $2 Const
+    execute if entity @a[distance=..10] store result score $Random Temporary run random value 0..2
+    execute unless entity @a[distance=..10] store result score $Random Temporary run random value 0..1
 
 # 納刀
     execute if score $Random Temporary matches 0 run tag @s add 9G.Skill.Kt.Sheathe
