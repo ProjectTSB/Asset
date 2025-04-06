@@ -9,7 +9,7 @@
     tag @s add C5.Moveset.BaseMove
 
 # スコアリセット
-    scoreboard players set @s General.Mob.Tick -10
+    scoreboard players set @s General.Mob.Tick -1
 
 # フェイズ進める
     scoreboard players set @s C5.Phase 1
