@@ -87,5 +87,8 @@
     # 中心点の正面方向に移動
         execute if score @s BE.EventTimer matches 370 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
 
+# 無敵化
+    execute if score @s BE.EventTimer matches 413 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+
 # 終了
     execute if score @s BE.EventTimer matches 413.. run function asset:mob/0410.heiloang/tick/event/final_flare/end

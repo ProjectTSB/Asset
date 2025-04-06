@@ -74,5 +74,11 @@
     execute if score @s BE.EventTimer matches 201 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     execute if score @s BE.EventTimer matches 201 at @s run tp @s ^ ^ ^6 ~ ~
 
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 72 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+    execute if score @s BE.EventTimer matches 191 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 201 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+
 # 終了
     execute if score @s BE.EventTimer matches 237.. run function asset:mob/0410.heiloang/tick/event/plamet/end

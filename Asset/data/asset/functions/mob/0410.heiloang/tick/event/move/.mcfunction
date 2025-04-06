@@ -25,5 +25,9 @@
         execute if score @s BE.EventTimer matches 194 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move/prediction
         execute if score @s BE.EventTimer matches 224 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move/attack
 
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 151 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+
 # 終了
     execute if score @s BE.EventTimer matches 275.. run function asset:mob/0410.heiloang/tick/event/move/end

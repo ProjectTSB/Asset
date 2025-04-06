@@ -42,5 +42,9 @@
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
 
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 101 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+
 # 終了
     execute if score @s BE.EventTimer matches 308.. run function asset:mob/0410.heiloang/tick/event/flare/end

@@ -13,3 +13,6 @@
     tag @s add AlwaysInvisible
     tag @s add ProcessCommonTag
     # effect give @s instant_health infinite 0 true
+
+# 常に耐性付与
+    effect give @s resistance infinite 2 true
