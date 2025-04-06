@@ -15,8 +15,8 @@
     tag @s add 1139.Already
 
 # 演出　
-    particle flame ~ ~ ~ 0 0 0 0.15 60 normal @a
-    particle flame ~ ~ ~ 0 0 0 0.30 60 normal @a
+    particle flame ~ ~ ~ 0.5 0.5 0.5 0.05 60 normal @a
+    particle flame ~ ~ ~ 0.5 0.5 0.5 0.10 60 normal @a
     particle smoke ~ ~ ~ 0 0 0 0.15 40 normal @a
     particle smoke ~ ~ ~ 0 0 0 0.30 40 normal @a
     particle explosion ~ ~ ~ 1.8 1.8 1.8 0 15 normal @a
