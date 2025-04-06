@@ -7,11 +7,6 @@
 # 召喚済みかチェック
     tag @s add Check
 
-# レーザーObject召喚
-    #data modify storage api: Argument.ID set value 2168
-    #data modify storage api: Argument.FieldOverride set value {Scale:[1f,15f,1f],Color:16775792,DisappearTick:10,AppearInterpolation:4,DisappearInterpolation:5,LifeTime:15}
-    #execute rotated ~ -90 run function api:object/summon
-
 # 演出用
     particle dust 1 1 0.4 1.3 ~ ~4 ~ 0.25 3 0.25 0 200 normal @a
     particle firework ~ ~ ~ 0 0 0 0.3 80 normal @a

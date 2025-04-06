@@ -9,8 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# playsound
-
 # 視点先に召喚する
     execute anchored eyes positioned ^ ^ ^0.25 run function asset:artifact/1265.thunder_ray/trigger/recursive
 
