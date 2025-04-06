@@ -20,7 +20,7 @@
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.4 2
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 70f
+    data modify storage api: Argument.Damage set value 60f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
