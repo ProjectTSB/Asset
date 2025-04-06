@@ -7,6 +7,8 @@
 # スコア
     scoreboard players add @s General.Mob.Tick 1
 
+# ジャンプブースト付与
+    function asset:mob/0437.lawless_iron_doll/tick/give_jump_boost/tick
 # Animated Javaモデルを操作する。再帰移動とかで実行座標がズレがちなので、常にat @sしておく
     execute at @s run function asset:mob/0437.lawless_iron_doll/tick/model_operate
 
