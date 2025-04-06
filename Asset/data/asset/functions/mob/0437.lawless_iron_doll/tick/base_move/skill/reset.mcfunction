@@ -19,12 +19,16 @@
 # Tagを削除
     tag @s remove C5.Skill.HorizontalSlashShot
     tag @s remove C5.Skill.VerticalSlashShot
+    tag @s remove C5.Skill.ChaserShot
+    tag @s remove C5.Skill.ShockWave
+    tag @s remove C5.Skill.MistShot
     tag @s remove C5.Skill.Charge
+    tag @s remove C5.Skill.Walk
+
+    tag @s remove C5.Skill.SuperLaser
     tag @s remove C5.Skill.SuperSlam
 
-    tag @s remove C5.Skill.ChaserShot
-    tag @s remove C5.Skill.MistShot
-    tag @s remove C5.Skill.SuperLaser
-
-
     tag @s remove C5.InAction
+
+# ヒットリストを削除
+    data remove storage asset:context this.HitList
