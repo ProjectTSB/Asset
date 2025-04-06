@@ -22,4 +22,4 @@
         tag @p[distance=..80] add BG.MainTarget
 
 # デバッグ用
-    tag @s add BG.State.Wait
+    # tag @s add BG.State.Wait
