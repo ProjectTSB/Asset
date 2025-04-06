@@ -15,7 +15,7 @@
     # 死亡メッセージ
         data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは臆病風に吹かれて、どこかに飛んでいってしまった","with":[{"selector":"@s"}]}]']
     # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か
-        data modify storage api: Argument.BypassResist set value true
+        data modify storage api: Argument.FixedDamage set value true
 # ダメージ補正
     function api:damage/modifier
 # ダメージを与える。
