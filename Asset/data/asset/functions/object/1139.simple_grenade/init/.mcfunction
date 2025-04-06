@@ -1,4 +1,4 @@
-#> asset:object/1139.simple_granade/init/
+#> asset:object/1139.simple_grenade/init/
 #
 # Objectのinit時の処理
 #

@@ -1,4 +1,4 @@
-#> asset:object/1139.simple_granade/summon/
+#> asset:object/1139.simple_grenade/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
@@ -8,5 +8,5 @@
     execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
     data modify storage asset:temp Args.Rotation0 set from entity 0-0-0-0-0 Rotation[0]
     data modify storage asset:temp Args.Rotation1 set from entity 0-0-0-0-0 Rotation[1]
-    function asset:object/1139.simple_granade/summon/m with storage asset:temp Args
+    function asset:object/1139.simple_grenade/summon/m with storage asset:temp Args
     data remove storage asset:temp Args

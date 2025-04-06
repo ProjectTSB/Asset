@@ -1,4 +1,4 @@
-#> asset:object/1139.simple_granade/register
+#> asset:object/1139.simple_grenade/register
 #
 # Objectのデータを指定
 #

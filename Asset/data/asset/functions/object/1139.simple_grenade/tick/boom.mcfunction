@@ -1,8 +1,8 @@
-#> asset:object/1139.simple_granade/tick/boom
+#> asset:object/1139.simple_grenade/tick/boom
 #
 #
 #
-# @within function asset:object/1139.simple_granade/tick/
+# @within function asset:object/1139.simple_grenade/tick/
 
 #> Private
 # @private
@@ -14,7 +14,7 @@
     execute if entity @s[tag=1139.Already] run return fail
     tag @s add 1139.Already
 
-# 演出　
+# 演出
     particle flame ~ ~ ~ 0.5 0.5 0.5 0.05 60 normal @a
     particle flame ~ ~ ~ 0.5 0.5 0.5 0.10 60 normal @a
     particle smoke ~ ~ ~ 0 0 0 0.15 40 normal @a

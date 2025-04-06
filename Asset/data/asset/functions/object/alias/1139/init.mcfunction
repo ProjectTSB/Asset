@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/1139.simple_granade/init/
+    function asset:object/1139.simple_grenade/init/
