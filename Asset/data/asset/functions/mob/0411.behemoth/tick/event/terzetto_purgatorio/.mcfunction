@@ -77,5 +77,13 @@
     # 中心点の正面方向に移動
         execute if score @s BF.EventTimer matches 732 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
 
+# 無敵化
+    execute if score @s BF.EventTimer matches 1 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 100 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+    execute if score @s BF.EventTimer matches 368 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 388 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+    execute if score @s BF.EventTimer matches 498 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 733 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+
 # 終了
     execute if score @s BF.EventTimer matches 773.. run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/end

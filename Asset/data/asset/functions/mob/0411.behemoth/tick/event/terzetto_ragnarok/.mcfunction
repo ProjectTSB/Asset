@@ -103,5 +103,12 @@
     # アニメーション再生
         execute if score @s BF.EventTimer matches 606 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
 
+# 無敵化
+    execute if score @s BF.EventTimer matches 1 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 30 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+    execute if score @s BF.EventTimer matches 300 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 315 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+    execute if score @s BF.EventTimer matches 606 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+
 # 終了
     execute if score @s BF.EventTimer matches 880.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end

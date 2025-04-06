@@ -6,3 +6,4 @@
 
 # 無敵化解除
     effect clear @s resistance
+    effect give @s resistance infinite 2 true

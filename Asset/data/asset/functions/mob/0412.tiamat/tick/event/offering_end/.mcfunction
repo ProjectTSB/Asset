@@ -43,7 +43,7 @@
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 耐性解除
-    execute if score @s BG.EventTimer matches 31 run function asset:mob/0412.tiamat/tick/util/end_invulnerable
+    execute if score @s BG.EventTimer matches 31 run function asset:mob/0412.tiamat/tick/util/end_armor
 
 # 終了
     execute if score @s BG.EventTimer matches 900.. run function asset:mob/0412.tiamat/tick/event/offering_end/end

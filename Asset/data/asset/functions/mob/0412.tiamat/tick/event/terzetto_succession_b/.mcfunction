@@ -50,5 +50,10 @@
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
+# 無敵化
+    execute if score @s BG.EventTimer matches 1 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
+    execute if score @s BG.EventTimer matches 20 run function asset:mob/0412.tiamat/tick/util/end_invulnerable
+    execute if score @s BG.EventTimer matches 277 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
+
 # 終了
     execute if score @s BG.EventTimer matches 360.. run function asset:mob/0412.tiamat/tick/event/terzetto_succession_b/end
