@@ -17,7 +17,7 @@
     data modify storage api: Argument.FieldOverride.Scale set value [8f,50f]
     data modify storage api: Argument.FieldOverride.Interpolation set value 10
     data modify storage api: Argument.FieldOverride.Tick set value 25
-    execute positioned ^ ^-0.3 ^ run function api:object/summon
+    execute positioned ^ ^-0.3 ^ rotated as @s run function api:object/summon
 
 # 終了
     tp @s ~ ~ ~ ~ ~
