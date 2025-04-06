@@ -12,9 +12,10 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] run particle dust 1.000 0.741 0.141 0.8 ~ ~1.2 ~ 0.5 0.5 0.5 0 50 normal
     execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] run particle minecraft:falling_honey ~ ~1.2 ~ 0.5 0.5 0.5 0 20
 
-# フルチャージか否かで付与する鈍足の時間を変える
-    execute unless data storage asset:context this{FullCharge:true} positioned ~-0.5 ~-0.5 ~-0.5 run effect give @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] slowness 4 0 true
-    execute if data storage asset:context this{FullCharge:true} positioned ~-0.5 ~-0.5 ~-0.5 run effect give @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] slowness 8 0 true
+# 鈍足をTickから秒に変換しマクロで付与
+    execute store result storage asset:temp Args.Duration int 0.05 run data get storage asset:context this.Duration
+    execute as @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] run function asset:object/1140.arrow_of_honey_bee/pre_hit/slowness.m with storage asset:temp Args
+    data remove storage asset:temp Args
 
 # エフェクト付与
     data modify storage api: Argument.ID set value 327
