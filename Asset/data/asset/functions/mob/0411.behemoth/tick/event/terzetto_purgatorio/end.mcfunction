@@ -8,6 +8,12 @@
     tag @s remove BF.Skill.Ter.Purg
     tag @a remove BF.FlareTarget
 
+# ハード：ソウルオファリング開始
+    execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s BF.EventTimer 0
+    execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s BF.ActCount 0
+    execute if predicate api:global_vars/difficulty/normal run tag @s add BF.Skill.Blaze
+    execute if predicate api:global_vars/difficulty/normal run return run tag @s add BF.State.Wait
+
 # 待機モーション再生
     scoreboard players set @s BF.EventTimer 0
     scoreboard players set @s BF.ActCount 0

@@ -64,6 +64,7 @@
         execute if score @s BE.EventTimer matches 485 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 508 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
         execute if score @s BE.EventTimer matches 610 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_2_common_invoke
+        execute if score @s BE.EventTimer matches 694 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 10
         execute if score @s BE.EventTimer matches 694 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃
         execute if score @s BE.EventTimer matches 508 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos

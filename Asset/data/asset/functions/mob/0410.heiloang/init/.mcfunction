@@ -29,4 +29,4 @@
         execute at @s run tp @s ^ ^ ^3 ~ 0
 
 # デバッグ
-    # scoreboard players set @s BE.Phase 2
+    scoreboard players set @s BE.Phase 2
