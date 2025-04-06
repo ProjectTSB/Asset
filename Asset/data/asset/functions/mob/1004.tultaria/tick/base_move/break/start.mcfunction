@@ -18,7 +18,7 @@
 
 # 被ダメージアップエフェクト付与
     data modify storage api: Argument.ID set value 107
-    data modify storage api: Argument.Stack set value 20
+    data modify storage api: Argument.Stack set value 10
     data modify storage api: Argument.Duration set value 240
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
