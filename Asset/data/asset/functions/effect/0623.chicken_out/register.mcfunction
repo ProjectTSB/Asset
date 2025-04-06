@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"このままだと、何か良くないことが起こりそうだ","color":"white"}','{"text":正々堂々戦うしかないだろう","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 2147483647
+    data modify storage asset:effect Duration set value 40
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
