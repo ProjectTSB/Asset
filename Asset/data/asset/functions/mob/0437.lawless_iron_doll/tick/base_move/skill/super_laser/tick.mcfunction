@@ -16,6 +16,11 @@
     execute if score @s General.Mob.Tick matches 10 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
     execute if score @s General.Mob.Tick matches 15 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
     execute if score @s General.Mob.Tick matches 20 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
+    execute if score @s General.Mob.Tick matches 25 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
+    execute if score @s General.Mob.Tick matches 30 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
+    execute if score @s General.Mob.Tick matches 35 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
+    execute if score @s General.Mob.Tick matches 40 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
+    execute if score @s General.Mob.Tick matches 45 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/alert_laser/shoot
 
 # Tickまたいで鳴らしたい音
     execute if score @s General.Mob.Tick matches 25 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5
