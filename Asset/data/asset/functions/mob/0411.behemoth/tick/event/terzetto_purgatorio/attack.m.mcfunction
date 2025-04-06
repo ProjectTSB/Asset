@@ -16,7 +16,7 @@
     playsound entity.wither.hurt hostile @a ~ ~ ~ 4 0.5
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 65.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.LockonFlare
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=item_display,tag=BF.EntityRoot,limit=1] MobUUID

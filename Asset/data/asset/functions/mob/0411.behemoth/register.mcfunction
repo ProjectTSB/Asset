@@ -35,4 +35,20 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
-    # data modify storage asset:mob Field.myValue set value
+
+# ダメージ
+    # 直接攻撃：2ヒット
+        data modify storage asset:mob Field.Damage.Attack set value 24.0f
+        data modify storage asset:mob Field.Damage.AttackHard set value 35.0f
+    # フレアブレス：直線範囲、3連続
+        data modify storage asset:mob Field.Damage.FlareBreath set value 24.0f
+    # フラッテン：円範囲
+        data modify storage asset:mob Field.Damage.Flatten set value 60.0f
+    # ダイブ：突進
+        data modify storage asset:mob Field.Damage.Dive set value 55.0f
+    # ダイブ追撃
+        data modify storage asset:mob Field.Damage.DiveFlare set value 52.0f
+    # ヘルファイア：スリップダメージ
+        data modify storage asset:mob Field.Damage.Hellfire set value 20.0f
+    # ロックオンフレアブレス：テルツェットプルガトリオで使用
+        data modify storage asset:mob Field.Damage.LockonFlare set value 62.0f

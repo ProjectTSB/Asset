@@ -20,7 +20,7 @@
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
     execute positioned ^ ^ ^25 run function lib:rotatable_dxyz/m with storage lib: args
 # ダメージ
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.FlareBreath
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

@@ -11,6 +11,7 @@
     data modify storage api: Argument.ID set value 2107
     data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,limit=1] Rotation
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Hellfire
     data modify storage api: Argument.FieldOverride.IsDark set value true
     execute at @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @e[type=area_effect_cloud,tag=BF.Temp.AttackRotation,limit=1] run function api:object/summon
 

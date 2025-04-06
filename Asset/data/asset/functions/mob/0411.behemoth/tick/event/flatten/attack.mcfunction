@@ -6,7 +6,7 @@
 # @within asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 55.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Flatten
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

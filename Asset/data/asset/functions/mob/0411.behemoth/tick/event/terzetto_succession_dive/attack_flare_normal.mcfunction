@@ -13,7 +13,7 @@
     data modify storage api: Argument.ID set value 2177
     data modify storage api: Argument.FieldOverride.IsSlow set value false
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 55.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.DiveFlare
     execute positioned ~ ~0.1 ~ run function api:object/summon
 
 # 終了
