@@ -11,8 +11,6 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "None"
-    # 属性耐性・防御力/防具強度・耐性エフェクトを無視するか否か
-        data modify storage api: Argument.BypassResist set value false
     # ダメージ補正
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
