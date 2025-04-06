@@ -46,7 +46,7 @@
             execute if score @s BE.EventTimer matches 558 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # 発動
         execute if score @s BE.EventTimer matches 660 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_2_common_invoke
-        execute if score @s BE.EventTimer matches 744 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 8
+        execute if score @s BE.EventTimer matches 744 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 20
         execute if score @s BE.EventTimer matches 744 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
     # 攻撃
         execute if score @s BE.EventTimer matches 541 run tag @a[distance=..80,sort=random,limit=6] add BE.AttackTarget

@@ -31,6 +31,10 @@
     tag @s remove BE.Skill.Ter.Rag.Start
     tag @s remove BE.Skill.Ter.Rag
     tag @s remove BE.Skill.Ter.Cancel
+    tag @s remove BE.Skill.Damage
+    tag @s remove BE.Skill.Rage
+    tag @s remove BE.Skill.Offering
+    tag @s remove BE.Skill.OfferingEnd
     tag @s remove BE.Skill.HeilDisaster
     tag @s remove BE.Skill.Flare
     tag @s remove BE.Skill.Plamet
@@ -38,6 +42,8 @@
     tag @s remove BE.Skill.PowerBreath.C1
     tag @s remove BE.Skill.PowerBreath.C2
     tag @s remove BE.Skill.PowerBreath.End
+    tag @s remove BE.Skill.PowerCharge
+    tag @s remove BE.Skill.FinalFlare
 
 # その他一時タグ
     tag @s remove BE.Temp.Blitz.PatternB

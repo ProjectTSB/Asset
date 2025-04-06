@@ -36,3 +36,5 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
     # data modify storage asset:mob Field.myValue set value
+    # 究極幻想については特殊なダメージ計算のため、以下を参照
+        # asset:mob/0410.heiloang/tick/event/final_flare/damage

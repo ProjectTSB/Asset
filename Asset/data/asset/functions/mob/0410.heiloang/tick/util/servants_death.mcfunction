@@ -8,7 +8,7 @@
 
 # 眷属が両方倒された場合、怯み
 # 連携技の最中は優先してキャンセルを使用する
-    execute if entity @s[tag=BE.State.BehemothDeath,tag=BE.State.TiamatDeath] run function asset:mob/0410.heiloang/tick/util/servants_death_damage
+    execute if entity @s[tag=BE.State.BehemothDeath,tag=BE.State.TiamatDeath,tag=!BE.Skill.OfferingEnd] run function asset:mob/0410.heiloang/tick/util/servants_death_damage
 
 # フェーズ3かつ時間切れ以外の場合、ソウルオファリング開始
     execute if score @s BE.Phase matches 2 if score @s BE.ActCount matches ..11 run function asset:mob/0410.heiloang/tick/util/servants_death_offering
