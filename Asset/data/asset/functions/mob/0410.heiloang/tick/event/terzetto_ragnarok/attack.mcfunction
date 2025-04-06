@@ -7,7 +7,7 @@
 # 弾召喚
     data modify storage api: Argument.ID set value 2111
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=slime,tag=BE.EntityRoot,limit=1] MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 52.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.BlitzSpin
     function api:object/summon
 
 # 演出

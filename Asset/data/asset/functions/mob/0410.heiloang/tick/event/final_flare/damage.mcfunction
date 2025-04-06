@@ -6,7 +6,6 @@
 
 # 割合ダメージ
     # ChargeCount取得
-
         scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot] BE.Charge.Count
     # 最大HP取得
         function api:modifier/max_health/get
@@ -25,6 +24,7 @@
     # 計算
         execute store result storage api: Argument.Damage double 0.0001 run scoreboard players operation $FlareDamage Temporary *= $MaxHealth Temporary
     # 終了
+        scoreboard players reset $ChargeCount Temporary
         scoreboard players reset $FlareDamage Temporary
         scoreboard players reset $MaxHealth Temporary
     data modify storage api: Argument.AttackType set value "Magic"

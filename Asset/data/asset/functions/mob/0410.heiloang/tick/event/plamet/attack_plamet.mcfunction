@@ -5,9 +5,9 @@
 # @within asset:mob/0410.heiloang/tick/event/plamet/
 
 # ダメージ
-    execute if score @s BE.Charge.Count matches ..0 run data modify storage api: Argument.Damage set value 65.0f
-    execute if score @s BE.Charge.Count matches 1 run data modify storage api: Argument.Damage set value 70.0f
-    execute if score @s BE.Charge.Count matches 2.. run data modify storage api: Argument.Damage set value 80.0f
+    execute if score @s BE.Charge.Count matches ..0 run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Plamet0
+    execute if score @s BE.Charge.Count matches 1 run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Plamet1
+    execute if score @s BE.Charge.Count matches 2.. run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Plamet2
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

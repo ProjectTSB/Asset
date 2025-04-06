@@ -10,6 +10,7 @@
 # 攻撃
     data modify storage api: Argument.ID set value 2107
     data modify storage api: Argument.FieldOverride.Rotation set from entity @e[type=area_effect_cloud,tag=BE.Temp.AttackRotation,limit=1] Rotation
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Hellfire
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @e[type=area_effect_cloud,tag=BE.Temp.AttackRotation,limit=1] run function api:object/summon
 

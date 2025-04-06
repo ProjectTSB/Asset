@@ -17,7 +17,7 @@
     execute if score @s BE.Dummy matches 1.. run return run scoreboard players reset @s BE.Dummy
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Sweep
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
