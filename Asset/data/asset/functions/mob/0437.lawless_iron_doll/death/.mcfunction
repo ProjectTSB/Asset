@@ -16,6 +16,11 @@
 # こっちを向く
     execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
 
+# 演出
+    particle explosion_emitter ~ ~1.5 ~ 0 0 0 0 1 force @a[distance=..64]
+    playsound entity.generic.explode hostile @a ~ ~ ~ 2 1.5
+    playsound entity.iron_golem.death hostile @a ~ ~ ~ 2 1
+
 # 撃破演出用オブジェクトを召喚
     data modify storage api: Argument.ID set value 2247
     execute at @s run function api:object/summon
