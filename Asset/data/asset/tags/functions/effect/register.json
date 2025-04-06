@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/275.moon_blessing/_/register",
+        "asset:effect/0238.raimei/_/register",
         "asset:effect/0322.zenith_slash_emitter/_/register",
         "asset:effect/0321.craving_recoil/_/register",
         "asset:effect/0621.loyalty_shield/_/register",
