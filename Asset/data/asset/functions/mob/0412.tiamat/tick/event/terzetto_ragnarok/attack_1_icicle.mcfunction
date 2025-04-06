@@ -6,7 +6,7 @@
 #   function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 55.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Field
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

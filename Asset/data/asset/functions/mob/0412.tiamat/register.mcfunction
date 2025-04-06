@@ -35,4 +35,19 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
-    # data modify storage asset:mob Field.myValue set value
+
+# ダメージ
+    # 直接攻撃
+        data modify storage asset:mob Field.Damage.Attack set value 50.0f
+    # ダークブレス：ドーナツ範囲に広がるやつ
+        data modify storage asset:mob Field.Damage.DarkBreath set value 52.0f
+    # ヘルウィング：直線範囲
+        data modify storage asset:mob Field.Damage.HellWing set value 52.0f
+    # ダイブ：突進
+        data modify storage asset:mob Field.Damage.Dive set value 55.0f
+    # ダイブ追撃
+        data modify storage asset:mob Field.Damage.DiveIcicle set value 52.0f
+    # アダマントスパイク：テルツェットアライニングで使用
+        data modify storage asset:mob Field.Damage.Adamant set value 60.0f
+    # アイシクルフィールド・オーラ：テルツェットプルガトリオで使用
+        data modify storage asset:mob Field.Damage.Field set value 55.0f

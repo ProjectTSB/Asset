@@ -8,7 +8,7 @@
 
 # 攻撃
     data modify storage api: Argument.ID set value 2176
-    data modify storage api: Argument.FieldOverride.Damage set value 52.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.DarkBreath
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,limit=1] run function api:object/summon
 
