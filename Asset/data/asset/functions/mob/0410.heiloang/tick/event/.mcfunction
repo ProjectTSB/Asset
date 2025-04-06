@@ -65,6 +65,8 @@
 
 # ソウルオファリング
     execute if entity @s[tag=BE.Skill.Offering] run function asset:mob/0410.heiloang/tick/event/offering/
+    # 時間切れ版
+        execute if entity @s[tag=BE.Skill.OfferingEnd] run function asset:mob/0410.heiloang/tick/event/offering_end/
 
 # 怯み
     execute if entity @s[tag=BE.Skill.Damage] run function asset:mob/0410.heiloang/tick/event/damage/

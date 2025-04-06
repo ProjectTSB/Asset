@@ -2,7 +2,9 @@
 #
 # ソウルオファリング
 #
-# @within asset:mob/0412.tiamat/tick/event/offering/
+# @within
+#    function asset:mob/0412.tiamat/tick/event/offering/
+#    function asset:mob/0412.tiamat/tick/event/offering_end/
 
 # 演出
     particle flash ~ ~5 ~ 2 2 2 0 50 force

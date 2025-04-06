@@ -63,7 +63,6 @@
             execute if score @s BE.EventTimer matches 251..265 positioned ^ ^ ^30 run playsound minecraft:entity.breeze.inhale hostile @a ~ ~ ~ 4 0.85
             execute if score @s BE.EventTimer matches 269 positioned ^ ^ ^30 run playsound minecraft:entity.breeze.shoot hostile @a ~ ~ ~ 4 0.5
             execute if score @s BE.EventTimer matches 269 positioned ^ ^ ^30 run playsound minecraft:entity.breeze.shoot hostile @a ~ ~ ~ 4 0.6
-            # execute if score @s BE.EventTimer matches 182 positioned ^ ^30 ^ run playsound entity.wither.break_block hostile @a[distance=..160] ~ ~ ~ 0.5 0.5 0.5
             execute if score @s BE.EventTimer matches 269 positioned ~ ~30 ~ run playsound entity.ender_dragon.growl hostile @a[distance=..160] ~ ~ ~ 1 0.7 0.7
             execute if score @s BE.EventTimer matches 269 positioned ~ ~30 ~ run playsound entity.wither.ambient hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.2
             execute if score @s BE.EventTimer matches 269 positioned ~ ~30 ~ run playsound entity.wither.death hostile @a[distance=..160] ~ ~ ~ 1 0.5 0.4

@@ -20,9 +20,5 @@
         execute if score @s BE.EventTimer matches 140 as @e[type=slime,tag=BF.EntityRoot] at @s run function asset:mob/0411.behemoth/tick/event/offering/start
         execute if score @s BE.EventTimer matches 140 as @e[type=slime,tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/event/offering/start
 
-# 待機
-    execute if score @s BE.EventTimer matches 189 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 5
-    execute if score @s BE.EventTimer matches 189 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/1_idle
-
 # 終了
-    execute if score @s BE.EventTimer matches 267.. run function asset:mob/0410.heiloang/tick/event/offering/end
+    execute if score @s BE.EventTimer matches 189.. run function asset:mob/0410.heiloang/tick/event/offering/end

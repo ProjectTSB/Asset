@@ -141,6 +141,7 @@
     #declare tag BE.Skill.Damage 怯み
     #declare tag BE.Skill.Rage 覚醒
     #declare tag BE.Skill.Offering ソウルオファリング
+    #declare tag BE.Skill.OfferingEnd ソウルオファリング時間切れ版
     #declare tag BE.Skill.HeilDisaster ヘイルディザスター
     #declare tag BE.Skill.Flare フレア
     #declare tag BE.Skill.Plamet 急降下

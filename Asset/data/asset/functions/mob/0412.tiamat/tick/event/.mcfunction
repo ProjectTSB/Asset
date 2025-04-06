@@ -43,7 +43,9 @@
     execute if entity @s[tag=BG.Skill.Ter.Cancel] run function asset:mob/0412.tiamat/tick/event/terzetto_cancel/
 
 # フリージングエンド
-    execute if entity @s[tag=BG.Skill.Freeze] run function asset:mob/0412.tiamat/tick/event/freezing_end/
+    # execute if entity @s[tag=BG.Skill.Freeze] run function asset:mob/0412.tiamat/tick/event/freezing_end/
 
 # ソウルオファリング
     execute if entity @s[tag=BG.Skill.Offering] run function asset:mob/0412.tiamat/tick/event/offering/
+    # 時間切れ版
+        execute if entity @s[tag=BG.Skill.Freeze] run function asset:mob/0412.tiamat/tick/event/offering_end/

@@ -25,6 +25,7 @@
 #   function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok_start/
 #   function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/
 #   function asset:mob/0410.heiloang/tick/event/offering/
+#   function asset:mob/0410.heiloang/tick/event/offering_end/
 
 # 再生
     function animated_java:heiloang_aj/animations/2_0_common_cast_start/tween {duration:1, to_frame: 0}

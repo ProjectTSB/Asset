@@ -11,5 +11,5 @@
     tag @s add Enemy.Boss
     tag @s add ExtendedCollision
     tag @s add AlwaysInvisible
-    tag @s add AllowProcessingCommonTag
+    tag @s add ProcessCommonTag
     # effect give @s instant_health infinite 0 true
