@@ -1,8 +1,10 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/projectile/summon
 #
-# 召喚処理
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/activate
+#
+# @within function
+#   asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/projectile/3
+#   asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/projectile/5
 
 # オブジェクト2241番をデータ指定した上で召喚する
     data modify storage api: Argument.ID set value 2245

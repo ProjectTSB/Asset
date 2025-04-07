@@ -4,12 +4,8 @@
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/tick
 
-# オブジェクト召喚
-    execute rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
-    execute rotated ~45 0 positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
-    execute rotated ~-45 0 positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
-    execute rotated ~90 0 positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
-    execute rotated ~-90 0 positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/slash_shot/summon
+# 衝撃波を放つ！
+    function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/projectile/
 
 # 斬撃の演出も召喚する
     data modify storage api: Argument.ID set value 2001

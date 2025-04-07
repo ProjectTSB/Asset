@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/alert/start
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/shockwave/alert/**
 
 # データ設定
     data modify storage api: Argument.FieldOverride set value {Color:16732754,Interpolation:5,Tick:25,Scale:[2.5f,30.0f]}
