@@ -1,8 +1,8 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/start
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/5
 #
+# 5-way。ジャンプじゃないと回避はキツイぞ。
 #
-#
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/tick
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/
 
 # 警告
     execute rotated ~ 0 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/summon

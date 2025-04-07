@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/start
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/**
 
 # データ設定
     data modify storage api: Argument.FieldOverride set value {Color:16732754,Interpolation:5,Tick:10,Scale:[5f,30.0f]}

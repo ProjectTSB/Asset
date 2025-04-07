@@ -4,12 +4,8 @@
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/tick
 
-# オブジェクト召喚
-    execute rotated ~ 0 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/summon
-    execute rotated ~45 0 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/summon
-    execute rotated ~-45 0 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/summon
-    execute rotated ~22.5 0 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/summon
-    execute rotated ~-22.5 0 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/summon
+# 発射体を飛ばす。スラッシュショット。
+    function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/slash_shot/
 
 # 斬撃の演出も召喚する
     data modify storage api: Argument.ID set value 2001
