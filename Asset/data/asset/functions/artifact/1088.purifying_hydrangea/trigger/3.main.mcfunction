@@ -9,9 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# デバフを1つ解除
-    execute if predicate lib:weather/is_sunny if predicate lib:random_pass_per/30 run function asset:artifact/1088.purifying_hydrangea/trigger/remove_debuff
-    execute unless predicate lib:weather/is_sunny if predicate lib:random_pass_per/50 run function asset:artifact/1088.purifying_hydrangea/trigger/remove_debuff
+# 確率でデバフを1つ解除
+    execute unless predicate lib:weather/is_raining unless predicate lib:weather/is_thundering if predicate lib:random_pass_per/30 run function asset:artifact/1088.purifying_hydrangea/trigger/remove_debuff
+    execute if predicate lib:weather/is_raining if predicate lib:random_pass_per/50 run function asset:artifact/1088.purifying_hydrangea/trigger/remove_debuff
+    execute if predicate lib:weather/is_thundering if predicate lib:random_pass_per/50 run function asset:artifact/1088.purifying_hydrangea/trigger/remove_debuff
 
 # 自身にバフ対象のTagを付与する
     tag @s add BuffTarget
