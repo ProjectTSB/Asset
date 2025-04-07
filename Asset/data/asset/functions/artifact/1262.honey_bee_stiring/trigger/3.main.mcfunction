@@ -16,14 +16,17 @@
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 200
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 5
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Range set value 40
-    execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Duration set value 160
+    execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.PoisonDamageInterval set value 10
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.FullCharge set value true
 
 # 非フルチャージ
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 100
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 1
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Range set value 16
-    execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Duration set value 80
+    execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.PoisonDamageInterval set value 20
+
+# 鈍足と毒の効果時間(共通)
+    data modify storage api: Argument.FieldOverride.Duration set value 80
 
 # 毒ダメージ(チャージ関係なく共通)
     data modify storage api: Argument.FieldOverride.PoisonDamage set value 50

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ハニービースティリング","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ハチミツで構成された矢を発射し","color":"white"}','{"text":"対象に毒と鈍足を4秒間付与する","color":"white"}','{"text":"フルチャージ時は毒と鈍足の効果時間が2倍になる","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ハチミツで構成された矢を発射し","color":"white"}','{"text":"対象に毒と鈍足を4秒間付与する","color":"white"}','{"text":"フルチャージ時は毒のダメージ頻度が2倍になる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
