@@ -11,6 +11,6 @@
 
 # ボスドロ
 # (本質的にはウサギの管理entityが行うべきだが、ユーザー的に違和感がないようにこっちで召喚する)
-    data modify storage api: Argument.ID set value 983
+    data modify storage api: Argument.ID set value 1125
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
