@@ -18,13 +18,13 @@
 # 上が壁ならスコアスキップ
     execute if score @s General.Mob.Tick matches 10..25 unless block ~ ~2 ~ #lib:no_collision run scoreboard players set @s General.Mob.Tick 25
 
-# 一定時間追尾する
+# 回転しながら進む
     execute if score @s General.Mob.Tick matches 25..125 at @s rotated ~6 0 positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/common/tp/
     execute if score @s General.Mob.Tick matches 25..125 at @s rotated ~6 0 positioned ^ ^ ^1 unless block ~ ~ ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/skill/beebomb/wall_hit
 # 一定時間追尾する
     execute if score @s General.Mob.Tick matches 25..125 at @s if entity @p[gamemode=!spectator,distance=10..100] facing entity @p[gamemode=!spectator,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s rotated ~ 0 positioned ^ ^ ^0.6 run function asset:mob/0175.queen_bee/tick/common/tp/
-# プレイヤーが離れ過ぎたら向きを変える
-    execute if score @s General.Mob.Tick matches 25..125 at @s if entity @p[gamemode=!spectator,distance=30..100] facing entity @p[gamemode=!spectator,distance=..100] eyes rotated ~ 0 run function asset:mob/0175.queen_bee/tick/common/tp/
+# 中央マーカーから離れ過ぎたら向きを変える
+    execute if score @s General.Mob.Tick matches 25..125 at @s if entity @e[type=marker,tag=4V.SpawnMarker,distance=30..100,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..100] eyes rotated ~ 0 run function asset:mob/0175.queen_bee/tick/common/tp/
     execute if score @s General.Mob.Tick matches 25..125 run particle minecraft:poof ~ ~1.5 ~ 0.3 0.3 0.3 0 10 force
 # Ntickおきに実行するやつ
 # 実行時間を移す
