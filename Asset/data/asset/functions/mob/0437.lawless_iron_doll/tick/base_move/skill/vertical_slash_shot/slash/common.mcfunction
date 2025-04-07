@@ -7,10 +7,6 @@
 #   asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/2
 
 # 眼の前の判定。ショット部分は出始めに判定がないので。
-    # 判定のデータ
-        data modify storage lib: Argument.BoundingFan set value {Angle:160,Radius:5,Height:5,Selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
-    # 扇型の判定を出す
-        function lib:bounding_fan/
     # 与えるダメージ
         data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash1
     # 属性1
