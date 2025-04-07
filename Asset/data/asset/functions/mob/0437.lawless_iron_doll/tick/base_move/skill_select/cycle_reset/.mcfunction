@@ -15,7 +15,16 @@
     execute if entity @s[scores={C5.Phase=2..}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/activate_deadly_attack
 
 # スキルリストを再生
-    data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
+    # ノーマル前半戦
+        execute if predicate api:global_vars/difficulty/easy if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3]
+    # ノーマル後半戦
+        execute if predicate api:global_vars/difficulty/easy if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+    # ハード前半戦
+        execute if predicate api:global_vars/difficulty/normal if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+    # ハード後半戦
+        execute if predicate api:global_vars/difficulty/normal if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
+    # Blesslessでは常に全部再生だ！
+        execute if predicate api:global_vars/difficulty/hard if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
 
 # スコアを戻す
     scoreboard players set @s General.Mob.Tick -1

@@ -10,9 +10,13 @@
 # モデルを召喚
     execute at @s rotated ~ 0 run function animated_java:lawless_iron_doll/summon {args:{animation:intro,start_animation:1b}}
 
-# AJモデルのアイテムスロットのデータ設定(Animated Javaのツール側ではまともに反映されないので)
-#    data merge entity @e[type=item_display,tag=aj.frestchika.bone.right_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
-#    data merge entity @e[type=item_display,tag=aj.frestchika.bone.left_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
+# 技のリストの初期値
+    # ノーマル
+        execute if predicate api:global_vars/difficulty/easy run data modify storage asset:context this.Skill.List set value [0,1,2,3]
+    # ハード
+        execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+    # Blessless。最初から全行動を使う。
+        execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1
