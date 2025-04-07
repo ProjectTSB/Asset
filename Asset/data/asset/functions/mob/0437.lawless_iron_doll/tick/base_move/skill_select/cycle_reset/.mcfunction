@@ -1,4 +1,4 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/cycle_reset/
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/
 #
 #
 #
@@ -12,7 +12,7 @@
     tag @s[scores={C5.Phase=1}] add C5.Skill.Walk
 
 # 第2形態だと必殺技をパナしてくる
-    execute if entity @s[scores={C5.Phase=2..}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/cycle_reset/deadly_select
+    execute if entity @s[scores={C5.Phase=2..}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/deadly_select
 
 # スキルリストを再生
     data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]

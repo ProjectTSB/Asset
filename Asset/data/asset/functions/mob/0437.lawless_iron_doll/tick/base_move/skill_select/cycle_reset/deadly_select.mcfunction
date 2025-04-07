@@ -1,8 +1,8 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/cycle_reset/deadly_select
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/deadly_select
 #
 # 必殺！
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/cycle_reset/
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/
 
 #> private
 # @private

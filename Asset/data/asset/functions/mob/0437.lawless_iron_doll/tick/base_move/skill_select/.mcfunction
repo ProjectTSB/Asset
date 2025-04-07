@@ -1,4 +1,4 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
 #
 #
 #
@@ -16,4 +16,4 @@
     # ストレージの要素数を取得
         execute store result storage asset:context this.Skill.Count int 1 run data get storage asset:context this.Skill.List
     # 取得した要素数を使ってランダムに技を選ぶ
-        function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/select/roll.m with storage asset:context this.Skill
+        function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/roll.m with storage asset:context this.Skill
