@@ -1,9 +1,9 @@
-#> asset:artifact/1262.honey_bee_string/give/2.give
+#> asset:artifact/1262.honey_bee_stiring/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1262.honey_bee_string/give/1.trigger
+# @within function asset:artifact/1262.honey_bee_stiring/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:bow"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ハニービーストリング","color":"#FFBD24"}'
+    data modify storage asset:artifact Name set value '{"text":"ハニービースティリング","color":"#FFBD24"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"ハチミツで構成された矢を発射し","color":"white"}','{"text":"ヒット時に対象へ毒と鈍足を4秒間付与する","color":"white"}','{"text":"フルチャージ時は毒と鈍足の効果時間が2倍になる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
