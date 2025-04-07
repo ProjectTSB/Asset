@@ -14,5 +14,8 @@
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
 
+# スポーンマーカー削除
+    kill @e[type=marker,tag=4V.SpawnMarker,distance=..100]
+
 # スーパーメソッド呼び出し
     function asset:mob/super.death
