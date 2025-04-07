@@ -9,10 +9,13 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 矢を消費
+    clear @s #arrows 1
+
 # 演出
     playsound minecraft:block.honey_block.step player @a ~ ~ ~ 0.7 1.5
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 0.6 1.4
-    
+
 # フルチャージ
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 200
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 5
