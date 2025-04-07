@@ -1,12 +1,12 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/tags
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/from_list/tags
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/get.m
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/from_list/get.m
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add C5.Skill.VerticalSlashShot
+    tag @s add C5.Skill.ShockWave
     return fail
 
 # 技を選択

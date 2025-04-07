@@ -10,14 +10,13 @@
 # 臆病風エリア！
     function asset:mob/0437.lawless_iron_doll/tick/base_move/chicken_out/boarder
 
-# プレイヤーが周囲にいたらスキル選択
-    execute if score @s[tag=!C5.CycleReset,tag=!C5.InAction] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
-
-# 技が一周していたら、確定で動作を選択
-    execute if score @s[tag=C5.CycleReset,tag=!C5.InAction] General.Mob.Tick matches 20.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/
-
-# 行動中じゃないかつ、足元になにもないときは、足元にパーティクルが出てくる
-    execute if entity @s[tag=!C5.InAction] if block ~ ~-0.25 ~ #lib:no_collision run particle minecraft:enchant ~ ~ ~ 0.7 0 0.7 0 30 force @a[distance=..32]
+# 一定のTickになったら技の発動
+    # Normal
+        execute if predicate api:global_vars/difficulty/easy if score @s[tag=!C5.InAction] General.Mob.Tick matches 30.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+    # Hard
+        execute if predicate api:global_vars/difficulty/normal if score @s[tag=!C5.InAction] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+    # Blessless: 技を撃ち終わったら即座に次を撃つ。
+        execute if predicate api:global_vars/difficulty/hard if score @s[tag=!C5.InAction] General.Mob.Tick matches 0.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
 
 # 接触ダメージの処理
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0437.lawless_iron_doll/tick/base_move/contact_damage/

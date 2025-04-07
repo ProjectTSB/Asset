@@ -1,19 +1,14 @@
 #> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
 #
-#
+# これを呼び出し元で"C5.InAction"のチェックを行っているのにもう一度行う理由は、コレしないと全部一気に実行されるからです
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/
 
-# 通常行動停止タグ付与
-    tag @s add C5.InAction
+# ダッシュ回数溜まってたら突進。
+    execute if score @s[tag=!C5.CycleReset,tag=!C5.InAction] C5.Count.Move matches 3 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/force_dash
 
-# スコアを0に戻す
-    scoreboard players set @s General.Mob.Tick 0
+# 前回の発動で技のリストが空になってないなら、普通に技を出す。
+    execute if entity @s[tag=!C5.CycleReset,tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/from_list/
 
-# デバッグ用、常にリストを満タンにする
-#    data modify storage asset:context this.Skill.List set value [0,1,2]
-# 技をランダムに選択
-    # ストレージの要素数を取得
-        execute store result storage asset:context this.Skill.Count int 1 run data get storage asset:context this.Skill.List
-    # 取得した要素数を使ってランダムに技を選ぶ
-        function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/roll.m with storage asset:context this.Skill
+# リストが空だったら、サイクル再開の処理をスタート
+    execute if entity @s[tag=C5.CycleReset,tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/

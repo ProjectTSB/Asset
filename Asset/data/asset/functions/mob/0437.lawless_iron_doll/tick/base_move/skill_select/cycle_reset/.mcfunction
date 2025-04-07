@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
 
 # タグ削除
     tag @s remove C5.CycleReset
