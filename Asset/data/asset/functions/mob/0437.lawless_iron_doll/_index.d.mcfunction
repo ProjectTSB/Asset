@@ -23,7 +23,6 @@
     #declare tag C5.Skill.ChaserShot
     #declare tag C5.Skill.TeleportSlam
     #declare tag C5.Skill.MistShot
-    #declare tag C5.Skill.SpreadShot
     #declare tag C5.Skill.SuperSlam
     #declare tag C5.Skill.SuperLaser
     #declare tag C5.Skill.Walk
@@ -38,7 +37,8 @@
     #declare function animated_java:lawless_iron_doll/animations/intro/tween
     #declare function animated_java:lawless_iron_doll/animations/walk/tween
     #declare function animated_java:lawless_iron_doll/animations/run/tween
-    #declare function animated_java:lawless_iron_doll/animations/run4/tween
+    #declare function animated_java:lawless_iron_doll/animations/run2/tween
+    #declare function animated_java:lawless_iron_doll/animations/run2_stop/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_1_windup/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_1_activate/tween
     #declare function animated_java:lawless_iron_doll/animations/attack_melee_2_windup/tween
