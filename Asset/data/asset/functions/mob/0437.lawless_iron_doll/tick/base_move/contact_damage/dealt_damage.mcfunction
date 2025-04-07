@@ -5,7 +5,7 @@
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/contact_damage/
 
 # データ指定
-    data modify storage lib: args set value {dx:2,dy:4,dz:2,selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
+    data modify storage lib: args set value {dx:1.8,dy:4,dz:1.8,selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
 # 判定を発生
     function lib:rotatable_dxyz/m with storage lib: args
 # ダメージ値設定
