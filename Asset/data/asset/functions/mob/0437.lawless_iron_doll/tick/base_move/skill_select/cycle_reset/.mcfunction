@@ -11,8 +11,8 @@
 # 第1形態だとしばらく隙を晒す
     tag @s[scores={C5.Phase=1}] add C5.Skill.Walk
 
-# 第2形態だと必殺技をパナしてくる
-    execute if entity @s[scores={C5.Phase=2..}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/deadly_select
+# 第2形態だと必殺技を使う
+    execute if entity @s[scores={C5.Phase=2..}] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/activate_deadly_attack
 
 # スキルリストを再生
     data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]

@@ -1,8 +1,8 @@
 #> asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/deadly_select
 #
-# 必殺！
+# 必殺技を選んで使う。Blesslessで怖いレーザー使うための処理。
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/cycle_reset/activate_deadly_attack
 
 #> private
 # @private
