@@ -16,9 +16,9 @@
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
-# 数tickごとに処理を実行
+# 数tickごとに処理を実行し、付近にいてかつ臆病風エリアの外なら付与
     scoreboard players operation $Interval Temporary %= $40 Const
-    execute if score $Interval Temporary matches 0 as @a[distance=..64] run function api:entity/mob/effect/give
+    execute if score $Interval Temporary matches 0 as @a[distance=..64] positioned ~-64 ~5 ~-64 unless entity @s[dx=127,dy=64,dz=127] run function api:entity/mob/effect/give
 # リセット
     scoreboard players reset $Interval Temporary
     function api:entity/mob/effect/reset
