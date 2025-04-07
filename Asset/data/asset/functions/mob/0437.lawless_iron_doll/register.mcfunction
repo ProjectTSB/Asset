@@ -55,6 +55,8 @@
                 data modify storage asset:mob Field.Damage.ShockWave set value 40f
             # スーパー叩きつけ攻撃
                 data modify storage asset:mob Field.Damage.SuperSlam set value 60f
+            # 接触ダメージ
+                data modify storage asset:mob Field.Damage.Contact set value 30f
 
         # 魔法攻撃
             # 低速誘導弾

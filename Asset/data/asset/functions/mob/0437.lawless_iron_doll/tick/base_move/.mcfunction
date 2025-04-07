@@ -19,5 +19,8 @@
 # 行動中じゃないかつ、足元になにもないときは、足元にパーティクルが出てくる
     execute if entity @s[tag=!C5.InAction] if block ~ ~-0.25 ~ #lib:no_collision run particle minecraft:enchant ~ ~ ~ 0.7 0 0.7 0 30 force @a[distance=..32]
 
+# 接触ダメージの処理
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0437.lawless_iron_doll/tick/base_move/contact_damage/
+
 # 選択したスキル発動
     execute if entity @s[tag=C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/active
