@@ -21,6 +21,3 @@
 
 # 選択したスキル発動
     execute if entity @s[tag=C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/active
-
-# スタック回避
-    execute if predicate api:area/is_breakable run function asset:mob/0437.lawless_iron_doll/tick/base_move/stuck_revenge/
