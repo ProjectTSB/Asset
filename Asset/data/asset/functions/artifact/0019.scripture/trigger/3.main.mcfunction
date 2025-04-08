@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute rotated ~ 0 anchored eyes positioned ^ ^-0.4 ^ rotated ~90 15 run function asset:artifact/0019.scripture/trigger/vfx
-    execute rotated ~ 0 anchored eyes positioned ^ ^-0.4 ^ rotated ~90 -15 run function asset:artifact/0019.scripture/trigger/vfx
+    execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 15 run function asset:artifact/0019.scripture/trigger/vfx
+    execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 -15 run function asset:artifact/0019.scripture/trigger/vfx
     playsound block.bell.resonate player @a ~ ~ ~ 1 2
     playsound ogg:random.levelup player @a ~ ~ ~ 1 1.8
 
