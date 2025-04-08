@@ -4,145 +4,145 @@
 #
 # @within function asset:artifact/1268.axe_of_wrath_fire/trigger/vfx/
 
-# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwAclAzHQOwAMAtJQIxwBMrALKWoBWVgCNuAQ14SAnDNHNGAM0YyUdPmAIA7CQFsEyQGGKAAg5awMCRn0BnJOBQB7QtohIOfZgRRw3cDAcwADcJbEJDcAAPJG8wKFiAX0SCG1I0QntEDgJbCGt3RDi4bGw0GFtDDmY4jCd8iEM4tFsAUVLyytaAR0Iw7CgAZStfckQlMMrkgF0gA_3
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJwCsATNQCzUDMzAtAOw0NsMBsAMw5sAHHwAMfNsxEo4ARmaVZShmAIA7AIYBbBMkBhigAJ56sDC0ZdAZyTgUAe0IaISeQ3EE5LuBjtgANy1sQn1wAA8kTzAoKIBfOIIrUjRCW0R5cSzs6OsIS1dEaLhsbDQYa31M6IwHfIh9aLRrAFFS8sqWgEdCYOwoAGULOXJEAWDKhIBdIA_3
 # 円 1
-execute facing ^0 ^ ^-1 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.04486 ^ ^-0.99899 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.08964 ^ ^-0.99597 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.13423 ^ ^-0.99095 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.17856 ^ ^-0.98393 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.22252 ^ ^-0.97493 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.26604 ^ ^-0.96396 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.30902 ^ ^-0.95106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.35137 ^ ^-0.93623 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.39303 ^ ^-0.91953 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.43388 ^ ^-0.90097 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.47387 ^ ^-0.8806 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.5129 ^ ^-0.85845 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.5509 ^ ^-0.83457 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.58779 ^ ^-0.80902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.62349 ^ ^-0.78183 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.65794 ^ ^-0.75307 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.69106 ^ ^-0.72279 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.72279 ^ ^-0.69106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.75307 ^ ^-0.65794 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.78183 ^ ^-0.62349 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.80902 ^ ^-0.58779 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.83457 ^ ^-0.5509 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.85845 ^ ^-0.5129 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.8806 ^ ^-0.47387 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.90097 ^ ^-0.43388 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.91953 ^ ^-0.39303 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.93623 ^ ^-0.35137 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.95106 ^ ^-0.30902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.96396 ^ ^-0.26604 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.97493 ^ ^-0.22252 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.98393 ^ ^-0.17856 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99095 ^ ^-0.13423 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99597 ^ ^-0.08964 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99899 ^ ^-0.04486 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^1 ^ ^0 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99899 ^ ^0.04486 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99597 ^ ^0.08964 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.99095 ^ ^0.13423 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.98393 ^ ^0.17856 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.97493 ^ ^0.22252 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.96396 ^ ^0.26604 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.95106 ^ ^0.30902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.93623 ^ ^0.35137 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.91953 ^ ^0.39303 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.90097 ^ ^0.43388 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.8806 ^ ^0.47387 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.85845 ^ ^0.5129 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.83457 ^ ^0.5509 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.80902 ^ ^0.58779 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.78183 ^ ^0.62349 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.75307 ^ ^0.65794 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.72279 ^ ^0.69106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.69106 ^ ^0.72279 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.65794 ^ ^0.75307 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.62349 ^ ^0.78183 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.58779 ^ ^0.80902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.5509 ^ ^0.83457 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.5129 ^ ^0.85845 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.47387 ^ ^0.8806 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.43388 ^ ^0.90097 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.39303 ^ ^0.91953 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.35137 ^ ^0.93623 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.30902 ^ ^0.95106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.26604 ^ ^0.96396 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.22252 ^ ^0.97493 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.17856 ^ ^0.98393 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.13423 ^ ^0.99095 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.08964 ^ ^0.99597 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0.04486 ^ ^0.99899 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^0 ^ ^1 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.04486 ^ ^0.99899 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.08964 ^ ^0.99597 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.13423 ^ ^0.99095 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.17856 ^ ^0.98393 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.22252 ^ ^0.97493 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.26604 ^ ^0.96396 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.30902 ^ ^0.95106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.35137 ^ ^0.93623 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.39303 ^ ^0.91953 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.43388 ^ ^0.90097 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.47387 ^ ^0.8806 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.5129 ^ ^0.85845 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.5509 ^ ^0.83457 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.58779 ^ ^0.80902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.62349 ^ ^0.78183 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.65794 ^ ^0.75307 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.69106 ^ ^0.72279 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.72279 ^ ^0.69106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.75307 ^ ^0.65794 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.78183 ^ ^0.62349 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.80902 ^ ^0.58779 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.83457 ^ ^0.5509 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.85845 ^ ^0.5129 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.8806 ^ ^0.47387 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.90097 ^ ^0.43388 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.91953 ^ ^0.39303 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.93623 ^ ^0.35137 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.95106 ^ ^0.30902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.96396 ^ ^0.26604 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.97493 ^ ^0.22252 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.98393 ^ ^0.17856 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99095 ^ ^0.13423 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99597 ^ ^0.08964 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99899 ^ ^0.04486 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-1 ^ ^0 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99899 ^ ^-0.04486 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99597 ^ ^-0.08964 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.99095 ^ ^-0.13423 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.98393 ^ ^-0.17856 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.97493 ^ ^-0.22252 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.96396 ^ ^-0.26604 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.95106 ^ ^-0.30902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.93623 ^ ^-0.35137 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.91953 ^ ^-0.39303 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.90097 ^ ^-0.43388 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.8806 ^ ^-0.47387 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.85845 ^ ^-0.5129 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.83457 ^ ^-0.5509 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.80902 ^ ^-0.58779 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.78183 ^ ^-0.62349 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.75307 ^ ^-0.65794 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.72279 ^ ^-0.69106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.69106 ^ ^-0.72279 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.65794 ^ ^-0.75307 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.62349 ^ ^-0.78183 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.58779 ^ ^-0.80902 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.5509 ^ ^-0.83457 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.5129 ^ ^-0.85845 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.47387 ^ ^-0.8806 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.43388 ^ ^-0.90097 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.39303 ^ ^-0.91953 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.35137 ^ ^-0.93623 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.30902 ^ ^-0.95106 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.26604 ^ ^-0.96396 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.22252 ^ ^-0.97493 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.17856 ^ ^-0.98393 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.13423 ^ ^-0.99095 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.08964 ^ ^-0.99597 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
-execute facing ^-0.04486 ^ ^-0.99899 run particle flame ~ ~ ~ ^ ^ ^10000000 0.0000002 0
+particle flame ~ ~ ~ ^0 ^ ^-10000000 0.0000002 0
+particle flame ~ ~ ~ ^448648.30351 ^ ^-9989930.66541 0.0000002 0
+particle flame ~ ~ ~ ^896393.08903 ^ ^-9959742.93995 0.0000002 0
+particle flame ~ ~ ~ ^1342332.65818 ^ ^-9909497.61768 0.0000002 0
+particle flame ~ ~ ~ ^1785568.94799 ^ ^-9839295.88599 0.0000002 0
+particle flame ~ ~ ~ ^2225209.33956 ^ ^-9749279.12182 0.0000002 0
+particle flame ~ ~ ~ ^2660368.45567 ^ ^-9639628.60696 0.0000002 0
+particle flame ~ ~ ~ ^3090169.94375 ^ ^-9510565.16295 0.0000002 0
+particle flame ~ ~ ~ ^3513748.24081 ^ ^-9362348.7064 0.0000002 0
+particle flame ~ ~ ~ ^3930250.31654 ^ ^-9195277.72551 0.0000002 0
+particle flame ~ ~ ~ ^4338837.39118 ^ ^-9009688.67902 0.0000002 0
+particle flame ~ ~ ~ ^4738686.62473 ^ ^-8805955.31857 0.0000002 0
+particle flame ~ ~ ~ ^5128992.77406 ^ ^-8584487.93602 0.0000002 0
+particle flame ~ ~ ~ ^5508969.81452 ^ ^-8345732.53721 0.0000002 0
+particle flame ~ ~ ~ ^5877852.52292 ^ ^-8090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^6234898.01859 ^ ^-7818314.82468 0.0000002 0
+particle flame ~ ~ ~ ^6579387.2594 ^ ^-7530714.66004 0.0000002 0
+particle flame ~ ~ ~ ^6910626.48987 ^ ^-7227948.63827 0.0000002 0
+particle flame ~ ~ ~ ^7227948.63827 ^ ^-6910626.48987 0.0000002 0
+particle flame ~ ~ ~ ^7530714.66004 ^ ^-6579387.2594 0.0000002 0
+particle flame ~ ~ ~ ^7818314.82468 ^ ^-6234898.01859 0.0000002 0
+particle flame ~ ~ ~ ^8090169.94375 ^ ^-5877852.52292 0.0000002 0
+particle flame ~ ~ ~ ^8345732.53721 ^ ^-5508969.81452 0.0000002 0
+particle flame ~ ~ ~ ^8584487.93602 ^ ^-5128992.77406 0.0000002 0
+particle flame ~ ~ ~ ^8805955.31857 ^ ^-4738686.62473 0.0000002 0
+particle flame ~ ~ ~ ^9009688.67902 ^ ^-4338837.39118 0.0000002 0
+particle flame ~ ~ ~ ^9195277.72551 ^ ^-3930250.31654 0.0000002 0
+particle flame ~ ~ ~ ^9362348.7064 ^ ^-3513748.24081 0.0000002 0
+particle flame ~ ~ ~ ^9510565.16295 ^ ^-3090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^9639628.60696 ^ ^-2660368.45567 0.0000002 0
+particle flame ~ ~ ~ ^9749279.12182 ^ ^-2225209.33956 0.0000002 0
+particle flame ~ ~ ~ ^9839295.88599 ^ ^-1785568.94799 0.0000002 0
+particle flame ~ ~ ~ ^9909497.61768 ^ ^-1342332.65818 0.0000002 0
+particle flame ~ ~ ~ ^9959742.93995 ^ ^-896393.08903 0.0000002 0
+particle flame ~ ~ ~ ^9989930.66541 ^ ^-448648.30351 0.0000002 0
+particle flame ~ ~ ~ ^10000000 ^ ^0 0.0000002 0
+particle flame ~ ~ ~ ^9989930.66541 ^ ^448648.30351 0.0000002 0
+particle flame ~ ~ ~ ^9959742.93995 ^ ^896393.08903 0.0000002 0
+particle flame ~ ~ ~ ^9909497.61768 ^ ^1342332.65818 0.0000002 0
+particle flame ~ ~ ~ ^9839295.88599 ^ ^1785568.94799 0.0000002 0
+particle flame ~ ~ ~ ^9749279.12182 ^ ^2225209.33956 0.0000002 0
+particle flame ~ ~ ~ ^9639628.60696 ^ ^2660368.45567 0.0000002 0
+particle flame ~ ~ ~ ^9510565.16295 ^ ^3090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^9362348.7064 ^ ^3513748.24081 0.0000002 0
+particle flame ~ ~ ~ ^9195277.72551 ^ ^3930250.31654 0.0000002 0
+particle flame ~ ~ ~ ^9009688.67902 ^ ^4338837.39118 0.0000002 0
+particle flame ~ ~ ~ ^8805955.31857 ^ ^4738686.62473 0.0000002 0
+particle flame ~ ~ ~ ^8584487.93602 ^ ^5128992.77406 0.0000002 0
+particle flame ~ ~ ~ ^8345732.53721 ^ ^5508969.81452 0.0000002 0
+particle flame ~ ~ ~ ^8090169.94375 ^ ^5877852.52292 0.0000002 0
+particle flame ~ ~ ~ ^7818314.82468 ^ ^6234898.01859 0.0000002 0
+particle flame ~ ~ ~ ^7530714.66004 ^ ^6579387.2594 0.0000002 0
+particle flame ~ ~ ~ ^7227948.63827 ^ ^6910626.48987 0.0000002 0
+particle flame ~ ~ ~ ^6910626.48987 ^ ^7227948.63827 0.0000002 0
+particle flame ~ ~ ~ ^6579387.2594 ^ ^7530714.66004 0.0000002 0
+particle flame ~ ~ ~ ^6234898.01859 ^ ^7818314.82468 0.0000002 0
+particle flame ~ ~ ~ ^5877852.52292 ^ ^8090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^5508969.81452 ^ ^8345732.53721 0.0000002 0
+particle flame ~ ~ ~ ^5128992.77406 ^ ^8584487.93602 0.0000002 0
+particle flame ~ ~ ~ ^4738686.62473 ^ ^8805955.31857 0.0000002 0
+particle flame ~ ~ ~ ^4338837.39118 ^ ^9009688.67902 0.0000002 0
+particle flame ~ ~ ~ ^3930250.31654 ^ ^9195277.72551 0.0000002 0
+particle flame ~ ~ ~ ^3513748.24081 ^ ^9362348.7064 0.0000002 0
+particle flame ~ ~ ~ ^3090169.94375 ^ ^9510565.16295 0.0000002 0
+particle flame ~ ~ ~ ^2660368.45567 ^ ^9639628.60696 0.0000002 0
+particle flame ~ ~ ~ ^2225209.33956 ^ ^9749279.12182 0.0000002 0
+particle flame ~ ~ ~ ^1785568.94799 ^ ^9839295.88599 0.0000002 0
+particle flame ~ ~ ~ ^1342332.65818 ^ ^9909497.61768 0.0000002 0
+particle flame ~ ~ ~ ^896393.08903 ^ ^9959742.93995 0.0000002 0
+particle flame ~ ~ ~ ^448648.30351 ^ ^9989930.66541 0.0000002 0
+particle flame ~ ~ ~ ^0 ^ ^10000000 0.0000002 0
+particle flame ~ ~ ~ ^-448648.30351 ^ ^9989930.66541 0.0000002 0
+particle flame ~ ~ ~ ^-896393.08903 ^ ^9959742.93995 0.0000002 0
+particle flame ~ ~ ~ ^-1342332.65818 ^ ^9909497.61768 0.0000002 0
+particle flame ~ ~ ~ ^-1785568.94799 ^ ^9839295.88599 0.0000002 0
+particle flame ~ ~ ~ ^-2225209.33956 ^ ^9749279.12182 0.0000002 0
+particle flame ~ ~ ~ ^-2660368.45567 ^ ^9639628.60696 0.0000002 0
+particle flame ~ ~ ~ ^-3090169.94375 ^ ^9510565.16295 0.0000002 0
+particle flame ~ ~ ~ ^-3513748.24081 ^ ^9362348.7064 0.0000002 0
+particle flame ~ ~ ~ ^-3930250.31654 ^ ^9195277.72551 0.0000002 0
+particle flame ~ ~ ~ ^-4338837.39118 ^ ^9009688.67902 0.0000002 0
+particle flame ~ ~ ~ ^-4738686.62473 ^ ^8805955.31857 0.0000002 0
+particle flame ~ ~ ~ ^-5128992.77406 ^ ^8584487.93602 0.0000002 0
+particle flame ~ ~ ~ ^-5508969.81452 ^ ^8345732.53721 0.0000002 0
+particle flame ~ ~ ~ ^-5877852.52292 ^ ^8090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^-6234898.01859 ^ ^7818314.82468 0.0000002 0
+particle flame ~ ~ ~ ^-6579387.2594 ^ ^7530714.66004 0.0000002 0
+particle flame ~ ~ ~ ^-6910626.48987 ^ ^7227948.63827 0.0000002 0
+particle flame ~ ~ ~ ^-7227948.63827 ^ ^6910626.48987 0.0000002 0
+particle flame ~ ~ ~ ^-7530714.66004 ^ ^6579387.2594 0.0000002 0
+particle flame ~ ~ ~ ^-7818314.82468 ^ ^6234898.01859 0.0000002 0
+particle flame ~ ~ ~ ^-8090169.94375 ^ ^5877852.52292 0.0000002 0
+particle flame ~ ~ ~ ^-8345732.53721 ^ ^5508969.81452 0.0000002 0
+particle flame ~ ~ ~ ^-8584487.93602 ^ ^5128992.77406 0.0000002 0
+particle flame ~ ~ ~ ^-8805955.31857 ^ ^4738686.62473 0.0000002 0
+particle flame ~ ~ ~ ^-9009688.67902 ^ ^4338837.39118 0.0000002 0
+particle flame ~ ~ ~ ^-9195277.72551 ^ ^3930250.31654 0.0000002 0
+particle flame ~ ~ ~ ^-9362348.7064 ^ ^3513748.24081 0.0000002 0
+particle flame ~ ~ ~ ^-9510565.16295 ^ ^3090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^-9639628.60696 ^ ^2660368.45567 0.0000002 0
+particle flame ~ ~ ~ ^-9749279.12182 ^ ^2225209.33956 0.0000002 0
+particle flame ~ ~ ~ ^-9839295.88599 ^ ^1785568.94799 0.0000002 0
+particle flame ~ ~ ~ ^-9909497.61768 ^ ^1342332.65818 0.0000002 0
+particle flame ~ ~ ~ ^-9959742.93995 ^ ^896393.08903 0.0000002 0
+particle flame ~ ~ ~ ^-9989930.66541 ^ ^448648.30351 0.0000002 0
+particle flame ~ ~ ~ ^-10000000 ^ ^0 0.0000002 0
+particle flame ~ ~ ~ ^-9989930.66541 ^ ^-448648.30351 0.0000002 0
+particle flame ~ ~ ~ ^-9959742.93995 ^ ^-896393.08903 0.0000002 0
+particle flame ~ ~ ~ ^-9909497.61768 ^ ^-1342332.65818 0.0000002 0
+particle flame ~ ~ ~ ^-9839295.88599 ^ ^-1785568.94799 0.0000002 0
+particle flame ~ ~ ~ ^-9749279.12182 ^ ^-2225209.33956 0.0000002 0
+particle flame ~ ~ ~ ^-9639628.60696 ^ ^-2660368.45567 0.0000002 0
+particle flame ~ ~ ~ ^-9510565.16295 ^ ^-3090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^-9362348.7064 ^ ^-3513748.24081 0.0000002 0
+particle flame ~ ~ ~ ^-9195277.72551 ^ ^-3930250.31654 0.0000002 0
+particle flame ~ ~ ~ ^-9009688.67902 ^ ^-4338837.39118 0.0000002 0
+particle flame ~ ~ ~ ^-8805955.31857 ^ ^-4738686.62473 0.0000002 0
+particle flame ~ ~ ~ ^-8584487.93602 ^ ^-5128992.77406 0.0000002 0
+particle flame ~ ~ ~ ^-8345732.53721 ^ ^-5508969.81452 0.0000002 0
+particle flame ~ ~ ~ ^-8090169.94375 ^ ^-5877852.52292 0.0000002 0
+particle flame ~ ~ ~ ^-7818314.82468 ^ ^-6234898.01859 0.0000002 0
+particle flame ~ ~ ~ ^-7530714.66004 ^ ^-6579387.2594 0.0000002 0
+particle flame ~ ~ ~ ^-7227948.63827 ^ ^-6910626.48987 0.0000002 0
+particle flame ~ ~ ~ ^-6910626.48987 ^ ^-7227948.63827 0.0000002 0
+particle flame ~ ~ ~ ^-6579387.2594 ^ ^-7530714.66004 0.0000002 0
+particle flame ~ ~ ~ ^-6234898.01859 ^ ^-7818314.82468 0.0000002 0
+particle flame ~ ~ ~ ^-5877852.52292 ^ ^-8090169.94375 0.0000002 0
+particle flame ~ ~ ~ ^-5508969.81452 ^ ^-8345732.53721 0.0000002 0
+particle flame ~ ~ ~ ^-5128992.77406 ^ ^-8584487.93602 0.0000002 0
+particle flame ~ ~ ~ ^-4738686.62473 ^ ^-8805955.31857 0.0000002 0
+particle flame ~ ~ ~ ^-4338837.39118 ^ ^-9009688.67902 0.0000002 0
+particle flame ~ ~ ~ ^-3930250.31654 ^ ^-9195277.72551 0.0000002 0
+particle flame ~ ~ ~ ^-3513748.24081 ^ ^-9362348.7064 0.0000002 0
+particle flame ~ ~ ~ ^-3090169.94375 ^ ^-9510565.16295 0.0000002 0
+particle flame ~ ~ ~ ^-2660368.45567 ^ ^-9639628.60696 0.0000002 0
+particle flame ~ ~ ~ ^-2225209.33956 ^ ^-9749279.12182 0.0000002 0
+particle flame ~ ~ ~ ^-1785568.94799 ^ ^-9839295.88599 0.0000002 0
+particle flame ~ ~ ~ ^-1342332.65818 ^ ^-9909497.61768 0.0000002 0
+particle flame ~ ~ ~ ^-896393.08903 ^ ^-9959742.93995 0.0000002 0
+particle flame ~ ~ ~ ^-448648.30351 ^ ^-9989930.66541 0.0000002 0
