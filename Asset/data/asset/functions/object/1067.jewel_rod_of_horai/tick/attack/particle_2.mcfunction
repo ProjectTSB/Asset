@@ -46,9 +46,11 @@
     particle dust 0 0 0 0.5 ^-0.20791 ^-0.97815 ^ 0 0 0 0 1
 
 # 三日月パーティクル
+    execute positioned ^0 ^1 ^ run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_crescent_blue
     execute positioned ^0.95106 ^0.30902 ^ run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_crescent_red
     execute positioned ^0.58779 ^-0.80902 ^ run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_crescent_yellow
 
 # 攻撃対象への攻撃予告パーティクル
+    execute positioned ^0 ^1 ^ as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1] facing entity @s eyes run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_beam_white
     execute positioned ^0.95106 ^0.30902 ^ as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1] facing entity @s eyes run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_beam_white
     execute positioned ^0.58779 ^-0.80902 ^ as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25,limit=1] facing entity @s eyes run function asset:object/1067.jewel_rod_of_horai/tick/attack/particle_beam_white
