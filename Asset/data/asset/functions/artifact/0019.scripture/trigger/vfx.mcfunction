@@ -4,55 +4,85 @@
 #
 # @within function asset:artifact/0019.scripture/trigger/3.main
 
-# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIYBMKArAGYAMDAjALSkDMdAnOwBZqAIwDs7ABxdhANnZcUXVjIZLqDXlzAEAdpQC2CZIDDFAASttYGJQwGAzknAoA9oR0QkdJgRRx3cDEcwADdKbEIjcAAPJG8wKFiAX0SCW1I0QgdEViZcgjsIGw9EOLhsbDQYOyMcuIxnQogjOLQ7AFFyyuq2gEdCMOwoAGVrX3JEBjDq5IBdIA_3
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwAclAzHQOwAMAtJQIxwBMrALKWoBWVgCNuAQ14SAnDNHNGAM0YyUdPmAIA7CQFsEyQGGKAAg5awMCRn0BnJOBQB7QtohJqzAijhu4GBzAANwlsQkNwAA8kLzAoGIBfBIIbUjRCe0QOAlsIa3dEWLhsbDQYW0MOZliMJzyIQ1i0WwBRErKKloBHQlDsKABlKx9yRCVQiqSAXSA_3
 # 円 1
-particle end_rod ~ ~ ~ ^0 ^0 ^-1000 0.0004 0
-particle end_rod ~ ~ ~ ^125.33323 ^0 ^-992.1147 0.0004 0
-particle end_rod ~ ~ ~ ^248.68989 ^0 ^-968.58316 0.0004 0
-particle end_rod ~ ~ ~ ^368.12455 ^0 ^-929.77649 0.0004 0
-particle end_rod ~ ~ ~ ^481.75367 ^0 ^-876.30668 0.0004 0
-particle end_rod ~ ~ ~ ^587.78525 ^0 ^-809.01699 0.0004 0
-particle end_rod ~ ~ ~ ^684.54711 ^0 ^-728.96863 0.0004 0
-particle end_rod ~ ~ ~ ^770.51324 ^0 ^-637.42399 0.0004 0
-particle end_rod ~ ~ ~ ^844.32793 ^0 ^-535.82679 0.0004 0
-particle end_rod ~ ~ ~ ^904.82705 ^0 ^-425.77929 0.0004 0
-particle end_rod ~ ~ ~ ^951.05652 ^0 ^-309.01699 0.0004 0
-particle end_rod ~ ~ ~ ^982.28725 ^0 ^-187.38131 0.0004 0
-particle end_rod ~ ~ ~ ^998.02673 ^0 ^-62.79052 0.0004 0
-particle end_rod ~ ~ ~ ^998.02673 ^0 ^62.79052 0.0004 0
-particle end_rod ~ ~ ~ ^982.28725 ^0 ^187.38131 0.0004 0
-particle end_rod ~ ~ ~ ^951.05652 ^0 ^309.01699 0.0004 0
-particle end_rod ~ ~ ~ ^904.82705 ^0 ^425.77929 0.0004 0
-particle end_rod ~ ~ ~ ^844.32793 ^0 ^535.82679 0.0004 0
-particle end_rod ~ ~ ~ ^770.51324 ^0 ^637.42399 0.0004 0
-particle end_rod ~ ~ ~ ^684.54711 ^0 ^728.96863 0.0004 0
-particle end_rod ~ ~ ~ ^587.78525 ^0 ^809.01699 0.0004 0
-particle end_rod ~ ~ ~ ^481.75367 ^0 ^876.30668 0.0004 0
-particle end_rod ~ ~ ~ ^368.12455 ^0 ^929.77649 0.0004 0
-particle end_rod ~ ~ ~ ^248.68989 ^0 ^968.58316 0.0004 0
-particle end_rod ~ ~ ~ ^125.33323 ^0 ^992.1147 0.0004 0
-particle end_rod ~ ~ ~ ^0 ^0 ^1000 0.0004 0
-particle end_rod ~ ~ ~ ^-125.33323 ^0 ^992.1147 0.0004 0
-particle end_rod ~ ~ ~ ^-248.68989 ^0 ^968.58316 0.0004 0
-particle end_rod ~ ~ ~ ^-368.12455 ^0 ^929.77649 0.0004 0
-particle end_rod ~ ~ ~ ^-481.75367 ^0 ^876.30668 0.0004 0
-particle end_rod ~ ~ ~ ^-587.78525 ^0 ^809.01699 0.0004 0
-particle end_rod ~ ~ ~ ^-684.54711 ^0 ^728.96863 0.0004 0
-particle end_rod ~ ~ ~ ^-770.51324 ^0 ^637.42399 0.0004 0
-particle end_rod ~ ~ ~ ^-844.32793 ^0 ^535.82679 0.0004 0
-particle end_rod ~ ~ ~ ^-904.82705 ^0 ^425.77929 0.0004 0
-particle end_rod ~ ~ ~ ^-951.05652 ^0 ^309.01699 0.0004 0
-particle end_rod ~ ~ ~ ^-982.28725 ^0 ^187.38131 0.0004 0
-particle end_rod ~ ~ ~ ^-998.02673 ^0 ^62.79052 0.0004 0
-particle end_rod ~ ~ ~ ^-998.02673 ^0 ^-62.79052 0.0004 0
-particle end_rod ~ ~ ~ ^-982.28725 ^0 ^-187.38131 0.0004 0
-particle end_rod ~ ~ ~ ^-951.05652 ^0 ^-309.01699 0.0004 0
-particle end_rod ~ ~ ~ ^-904.82705 ^0 ^-425.77929 0.0004 0
-particle end_rod ~ ~ ~ ^-844.32793 ^0 ^-535.82679 0.0004 0
-particle end_rod ~ ~ ~ ^-770.51324 ^0 ^-637.42399 0.0004 0
-particle end_rod ~ ~ ~ ^-684.54711 ^0 ^-728.96863 0.0004 0
-particle end_rod ~ ~ ~ ^-587.78525 ^0 ^-809.01699 0.0004 0
-particle end_rod ~ ~ ~ ^-481.75367 ^0 ^-876.30668 0.0004 0
-particle end_rod ~ ~ ~ ^-368.12455 ^0 ^-929.77649 0.0004 0
-particle end_rod ~ ~ ~ ^-248.68989 ^0 ^-968.58316 0.0004 0
-particle end_rod ~ ~ ~ ^-125.33323 ^0 ^-992.1147 0.0004 0
+execute facing ^0 ^ ^-1 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.07846 ^ ^-0.99692 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.15643 ^ ^-0.98769 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.23345 ^ ^-0.97237 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.30902 ^ ^-0.95106 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.38268 ^ ^-0.92388 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.45399 ^ ^-0.89101 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.5225 ^ ^-0.85264 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.58779 ^ ^-0.80902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.64945 ^ ^-0.76041 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.70711 ^ ^-0.70711 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.76041 ^ ^-0.64945 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.80902 ^ ^-0.58779 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.85264 ^ ^-0.5225 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.89101 ^ ^-0.45399 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.92388 ^ ^-0.38268 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.95106 ^ ^-0.30902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.97237 ^ ^-0.23345 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.98769 ^ ^-0.15643 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.99692 ^ ^-0.07846 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^1 ^ ^0 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.99692 ^ ^0.07846 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.98769 ^ ^0.15643 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.97237 ^ ^0.23345 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.95106 ^ ^0.30902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.92388 ^ ^0.38268 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.89101 ^ ^0.45399 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.85264 ^ ^0.5225 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.80902 ^ ^0.58779 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.76041 ^ ^0.64945 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.70711 ^ ^0.70711 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.64945 ^ ^0.76041 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.58779 ^ ^0.80902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.5225 ^ ^0.85264 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.45399 ^ ^0.89101 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.38268 ^ ^0.92388 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.30902 ^ ^0.95106 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.23345 ^ ^0.97237 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.15643 ^ ^0.98769 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0.07846 ^ ^0.99692 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^0 ^ ^1 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.07846 ^ ^0.99692 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.15643 ^ ^0.98769 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.23345 ^ ^0.97237 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.30902 ^ ^0.95106 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.38268 ^ ^0.92388 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.45399 ^ ^0.89101 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.5225 ^ ^0.85264 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.58779 ^ ^0.80902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.64945 ^ ^0.76041 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.70711 ^ ^0.70711 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.76041 ^ ^0.64945 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.80902 ^ ^0.58779 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.85264 ^ ^0.5225 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.89101 ^ ^0.45399 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.92388 ^ ^0.38268 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.95106 ^ ^0.30902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.97237 ^ ^0.23345 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.98769 ^ ^0.15643 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.99692 ^ ^0.07846 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-1 ^ ^0 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.99692 ^ ^-0.07846 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.98769 ^ ^-0.15643 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.97237 ^ ^-0.23345 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.95106 ^ ^-0.30902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.92388 ^ ^-0.38268 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.89101 ^ ^-0.45399 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.85264 ^ ^-0.5225 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.80902 ^ ^-0.58779 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.76041 ^ ^-0.64945 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.70711 ^ ^-0.70711 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.64945 ^ ^-0.76041 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.58779 ^ ^-0.80902 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.5225 ^ ^-0.85264 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.45399 ^ ^-0.89101 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.38268 ^ ^-0.92388 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.30902 ^ ^-0.95106 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.23345 ^ ^-0.97237 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.15643 ^ ^-0.98769 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
+execute facing ^-0.07846 ^ ^-0.99692 run particle end_rod ~ ~ ~ ^ ^ ^10000000 0.0000001 0
