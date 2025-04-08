@@ -12,7 +12,7 @@
     execute store result score $AppliedFrom Temporary run data get storage asset:context this.AppliedFrom
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Water"
+    data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @a if score @s UserID = $AppliedFrom Temporary run function api:damage/modifier
     data modify storage api: Argument.ApplyTrigger set value false
