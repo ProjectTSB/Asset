@@ -15,7 +15,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
+    function api:damage/reset
 
 # リセット
-    function api:damage/reset
     tag @s remove CZ.HitEntity
