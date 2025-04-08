@@ -3,6 +3,11 @@
 # 汎用処理 移動ベクトル計算
 #
 # @within asset:mob/0380.haruclaire_v3/tick/**
+#> Val
+# @private
+    #declare score_holder $TempPos.X
+    #declare score_holder $TempPos.Y
+    #declare score_holder $TempPos.Z
 
 # 着地点
     data modify storage asset:temp AK.Pos set from entity @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=nearest,limit=1] Pos
