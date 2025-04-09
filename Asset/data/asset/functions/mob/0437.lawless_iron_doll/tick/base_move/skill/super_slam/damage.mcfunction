@@ -8,7 +8,7 @@
     function api:damage/
 
 # 浮遊を付与
-    data modify storage api: Argument.Stack set value 80
+    data modify storage api: Argument.Stack set value 60
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Duration set value 3
     function api:entity/mob/effect/give
