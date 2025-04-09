@@ -9,11 +9,11 @@
 
 # 近くのプレイヤーの方にそこそこの速度で向き直る
     # ノーマルなど
-        execute if score @s General.Mob.Tick matches 0..30 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+        execute if score @s General.Mob.Tick matches 0..30 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
     # ハード
-        execute if predicate api:global_vars/difficulty/normal if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..50 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+        execute if predicate api:global_vars/difficulty/normal if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..50 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
     # Blessless
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..70 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+        execute if predicate api:global_vars/difficulty/min/hard if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..70 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
 # Tickまたいで鳴らしたい音
     execute if score @s General.Mob.Tick matches 15 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5

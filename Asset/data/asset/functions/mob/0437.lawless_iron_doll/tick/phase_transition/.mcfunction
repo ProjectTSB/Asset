@@ -11,7 +11,7 @@
     execute if score @s General.Mob.Tick matches 0..35 run particle large_smoke ~ ~1.5 ~ 0.1 0.1 0.1 0.1 2
 
 # 近くのプレイヤーの方にそこそこの速度で向き直る
-    execute if score @s General.Mob.Tick matches 35..57 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-5 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 35..57 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-5 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
 # 復帰アニメ
     execute if score @s General.Mob.Tick matches 35 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/recovery/tween {duration:1, to_frame:0}

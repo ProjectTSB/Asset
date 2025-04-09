@@ -8,10 +8,10 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/windup
 
 # 予備動作のときに置いたマーカーがもくもくする
-    execute at @e[type=marker,tag=C5.Marker.SummonPoint,distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/marker_particle
+    execute at @e[type=marker,tag=C5.Marker.SummonPoint,distance=..256] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/marker_particle
 
 # 近くのプレイヤーの方にそこそこの速度で向き直る
-    execute if score @s General.Mob.Tick matches 0..20 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Mob.Tick matches 0..20 facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
 # Tickまたいで鳴らしたい音
     execute if score @s General.Mob.Tick matches 15 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5

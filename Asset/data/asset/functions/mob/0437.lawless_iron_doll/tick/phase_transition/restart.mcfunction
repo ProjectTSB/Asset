@@ -5,7 +5,7 @@
 # @within function asset:mob/0437.lawless_iron_doll/tick/phase_transition/
 
 # マーカー片付けておく
-    kill @e[type=marker,tag=C5.Marker,tag=!C5.Marker.SpawnPoint,distance=..64]
+    kill @e[type=marker,tag=C5.Marker,tag=!C5.Marker.SpawnPoint,distance=..256]
 
 # ベース動作を実行
     tag @s remove C5.Moveset.Transition

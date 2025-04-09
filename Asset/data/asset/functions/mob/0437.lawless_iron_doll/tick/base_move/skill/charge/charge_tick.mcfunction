@@ -29,7 +29,7 @@
         tag @a[distance=..16] remove C5.TargetEntity
 
 # 近くのプレイヤーの方にゆっくりと向き直る
-    execute facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
 
 # インターバル用
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

@@ -8,13 +8,13 @@
     execute as @e[type=item_display,tag=C5.ModelRoot,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/remove/this
 
 # 付近のプレイヤーのほうを向く。万が一付近に誰もいなかった場合も、後続の召喚は成功する
-    execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..256] eyes run tp @s ~ ~ ~ ~ 0
 
 # マーカーを片付ける。このモブが召喚するマーカーは、すべて"C5.Marker"というタグを持っている
     kill @e[type=marker,tag=C5.Marker,distance=..256]
 
 # こっちを向く
-    execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..256] eyes run tp @s ~ ~ ~ ~ 0
 
 # 演出
     particle explosion_emitter ~ ~1.5 ~ 0 0 0 0 1 force @a[distance=..64]
