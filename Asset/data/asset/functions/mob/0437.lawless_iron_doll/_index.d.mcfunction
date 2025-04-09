@@ -10,6 +10,7 @@
     #declare tag C5.Marker
     #declare tag C5.Marker.SpawnPoint
     #declare tag C5.Marker.SummonPoint
+    #declare tag C5.Marker.SlamPoint
     #declare tag C5.Marker.Target
     # ボスのムーブセット
     #declare tag C5.Moveset.Intro
