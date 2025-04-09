@@ -6,18 +6,11 @@
 
 #> Private
 # @private
-    #declare score_holder $MP
-    #declare score_holder $MPMax
     #declare score_holder $MPPer
 
-# 現在MPの100倍と最大MPを取得
-    function api:mp/get_current
-    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 100
-    function api:mp/get_max
-    execute store result score $MPMax Temporary run data get storage api: Return.MaxMP
-
-# 現在のMP割合を算出
-    execute store result score $MPPer Temporary run scoreboard players operation $MP Temporary /= $MPMax Temporary
+# MP割合を取得
+    function api:entity/player/get_mp_per
+    execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
@@ -39,6 +32,4 @@
     function api:damage/reset
 
 # リセット
-    scoreboard players reset $MP Temporary
-    scoreboard players reset $MPMax Temporary
     scoreboard players reset $MPPer Temporary

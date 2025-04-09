@@ -19,6 +19,9 @@
 # 加速開始音
     execute if score @s General.Object.Tick matches 7 run playsound minecraft:entity.breeze.death neutral @a[distance=..16] ~ ~ ~ 2 0.5 1
 
+# 対象不在なら消す
+    function asset:object/1095.ag_missile/tick/death_check with storage asset:context this
+
 # 上昇モーションを終了させるべきかどうかのチェック
     function asset:object/1095.ag_missile/tick/target_check with storage asset:context this
 
