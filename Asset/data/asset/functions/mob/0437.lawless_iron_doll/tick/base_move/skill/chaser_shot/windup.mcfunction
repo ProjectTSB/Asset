@@ -17,3 +17,9 @@
     execute at @p[gamemode=!spectator,distance=..32,sort=random] positioned ~ ~1 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/summon/marker
     execute at @p[gamemode=!spectator,distance=..32,sort=random] positioned ~ ~1 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/summon/marker
     execute at @p[gamemode=!spectator,distance=..32,sort=random] positioned ~ ~1 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/summon/marker
+
+# 難易度による追加など
+    # ハード
+        execute if predicate api:global_vars/difficulty/min/normal positioned ~ ~1 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/summon/marker
+    # Blessless
+        execute if predicate api:global_vars/difficulty/min/hard positioned ~ ~1 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/chaser_shot/summon/marker
