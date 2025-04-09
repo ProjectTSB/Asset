@@ -1,6 +1,6 @@
 #> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/breathing_walk/tick
 #
-# のんびり歩く。呼吸を整える。
+# のんびり歩く。接触ダメージ以外は隙を晒すだけの行動。
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/active
 
