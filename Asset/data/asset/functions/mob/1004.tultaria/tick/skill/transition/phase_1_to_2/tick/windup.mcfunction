@@ -40,3 +40,6 @@
 # 攻撃スタート
     execute if score @s General.Mob.Tick matches 160 run tag @s add RW.Transition.Phase2.Attack
     execute if score @s General.Mob.Tick matches 160 run scoreboard players set @s General.Mob.Tick -1
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}
