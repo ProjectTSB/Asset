@@ -9,9 +9,9 @@
     #declare tag SpreadMarker
 
 # 桜吹雪を召喚する
-# ノーマル以下では50% ハード以上で確定
+# ハード以下では50% Blessless以上で確定
 
-# ノーマル以下なら50%でreturn
+# ハード以下なら50%でreturn
     execute if predicate api:global_vars/difficulty/max/normal if predicate lib:random_pass_per/50 run return 0
 
 # SpreadMarkerを召喚
