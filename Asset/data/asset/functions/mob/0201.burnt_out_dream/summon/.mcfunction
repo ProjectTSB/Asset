@@ -5,4 +5,4 @@
 # @within asset:mob/alias/201/summon
 
 # 元となるEntityを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit"]}
+    summon skeleton ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AntiFallDamage"]}

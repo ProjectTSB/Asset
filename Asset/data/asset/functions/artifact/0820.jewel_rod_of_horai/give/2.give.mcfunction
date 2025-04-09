@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"蓬莱","color":"red"},{"text":"の","color":"yellow"},{"text":"玉","color":"green"},{"text":"の","color":"blue"},{"text":"枝","color":"dark_purple"}]'
+    data modify storage asset:artifact Name set value '[{"text":"蓬莱の玉の枝","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"竹取の宝具を1つ以上装備しているときに敵へのダメージが発生する。","color":"gray"}','{"text":"装備数が増えるごとに攻撃数が増加する。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"美しい実をつけた枝。","color":"white"}','{"text":"同種の宝を装備しているほど力を発揮する。","color":"white"}','{"text":"インベントリにある竹取の宝具1種類につき攻撃回数が1増え、","color":"white"}','{"text":"MP回復量が5%上昇する。","color":"white"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["220x0","220x5"]
+    data modify storage asset:artifact AttackInfo.Damage set value ["100x1","100x5"]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -39,11 +39,16 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 12
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 69
+    #data modify storage asset:artifact MPCost set value 69
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
+# MP回復量
+    data modify storage asset:artifact MPHealWhenHit set value 25
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 26
+    #data modify storage asset:artifact LocalCooldown set value 25
+# 種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact TypeCooldown.Type set value "longRange"
+    data modify storage asset:artifact TypeCooldown.Duration set value 25
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
