@@ -11,7 +11,7 @@
     # ノーマルなど
         execute if score @s General.Mob.Tick matches 0..30 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
     # ハード
-        execute if predicate api:global_vars/difficulty/min/normal if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..50 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+        execute if predicate api:global_vars/difficulty/normal if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..50 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
     # Blessless
         execute if predicate api:global_vars/difficulty/min/hard if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 0..70 facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
