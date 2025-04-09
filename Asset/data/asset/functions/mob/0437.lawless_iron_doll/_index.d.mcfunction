@@ -23,7 +23,7 @@
     #declare tag C5.Skill.ShockWave
     #declare tag C5.Skill.ChaserShot
     #declare tag C5.Skill.TeleportSlam
-    #declare tag C5.Skill.MistShot
+    #declare tag C5.Skill.LingeringLaser
     #declare tag C5.Skill.SuperSlam
     #declare tag C5.Skill.SuperLaser
     #declare tag C5.Skill.Walk

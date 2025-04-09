@@ -21,7 +21,7 @@
     tag @s remove C5.Skill.VerticalSlashShot
     tag @s remove C5.Skill.ChaserShot
     tag @s remove C5.Skill.ShockWave
-    tag @s remove C5.Skill.MistShot
+    tag @s remove C5.Skill.LingeringLaser
     tag @s remove C5.Skill.Charge
     tag @s remove C5.Skill.Walk
 
