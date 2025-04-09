@@ -6,7 +6,7 @@
 
 # 演出
     particle end_rod ~ ~5 ~ 0.1 3 0.1 0.05 10
-    particle dust 0 0.75 1 0.7 ~ ~5 ~ 0.1 3 0.1 0 150
+    particle minecraft:dust_color_transition 0.5 0 0 1 0.5 0.5 0.5 ~ ~5 ~ 0.1 3 0.1 0 150 force @a[distance=..32]
     particle minecraft:explosion ~ ~ ~ 1 0.5 1 0.5 5
 
 # 演出
