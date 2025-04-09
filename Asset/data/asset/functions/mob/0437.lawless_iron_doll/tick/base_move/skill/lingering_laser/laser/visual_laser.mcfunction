@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/mist_shot/laser/shoot
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/lingering_laser/laser/shoot
 
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 2168

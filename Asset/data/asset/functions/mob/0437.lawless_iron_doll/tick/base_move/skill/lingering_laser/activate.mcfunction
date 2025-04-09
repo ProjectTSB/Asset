@@ -1,8 +1,8 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/mist_shot/activate
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/lingering_laser/activate
 #
 #
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/mist_shot/tick
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/lingering_laser/tick
 
 # オブジェクトをデータ指定した上で召喚する
     data modify storage api: Argument.ID set value 2246
@@ -11,7 +11,7 @@
     function api:object/summon
 
 # レーザー部分
-    function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/mist_shot/laser/shoot
+    function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/lingering_laser/laser/shoot
 
 # サウンド
     playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 2 1.8

@@ -59,7 +59,7 @@
             # 低速誘導弾
                 data modify storage asset:mob Field.Damage.ChaserShot set value 35f
             # 持続大型弾(防御貫通)
-                data modify storage asset:mob Field.Damage.MistShot set value 2.5f
+                data modify storage asset:mob Field.Damage.LingeringLaser set value 2.5f
             # スーパーレーザー攻撃(オマケ)
                 data modify storage asset:mob Field.Damage.SuperLaserSub set value 20f
             # スーパーレーザー攻撃(メイン)
