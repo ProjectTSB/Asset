@@ -4,9 +4,8 @@
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/tick
 
-# ちょっと下に落ちる
-    tp @s ~ ~-0.5 ~
-
+# マーカーを削除
+    kill @e[type=marker,tag=C5.Marker.SlamPoint,distance=..64,limit=1]
 
 # サウンド
     playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 2 0.5

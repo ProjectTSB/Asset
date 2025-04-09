@@ -7,7 +7,7 @@
 # 行動中じゃないなら、歩行周りの処理を行う
     execute if entity @s[tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/walk/tick
 
-# 臆病風エリア！
+# 臆病風エリアを展開する処理
     function asset:mob/0437.lawless_iron_doll/tick/base_move/chicken_out/boarder
 
 # 一定のTickになったら技の発動
