@@ -8,9 +8,6 @@
     playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 1 0.5
     playsound minecraft:block.amethyst_block.resonate hostile @a ~ ~ ~ 1 1
 
-# 地面を探す
-    function asset:object/2054.lastboss_white_pillar/init/search_ground
-
 # 攻撃予告
     data modify storage api: Argument.FieldOverride.Color set value 7673623
     data modify storage api: Argument.FieldOverride.Scale set value [4f,4f,0.01f]
