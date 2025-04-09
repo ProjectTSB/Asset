@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:netherite_helmet"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"リアクティブアーマー(頭)","color":"red","bold":true}'
+    data modify storage asset:artifact Name set value '{"text":"リアクティブアーマー","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"爆発によりダメージを軽減する鎧","color":"white"}','{"text":"ただし爆発は自分以外の周囲を巻き込む","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)

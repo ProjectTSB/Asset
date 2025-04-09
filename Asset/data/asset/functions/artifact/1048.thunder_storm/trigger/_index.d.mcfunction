@@ -6,3 +6,4 @@
     #declare score_holder $T4.Temp
     #declare score_holder $Damage
     #declare score_holder $MPPer
+    #declare tag T4.Marker
