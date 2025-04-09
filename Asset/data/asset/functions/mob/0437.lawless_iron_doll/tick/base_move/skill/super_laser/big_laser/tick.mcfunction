@@ -21,4 +21,4 @@
     particle minecraft:reverse_portal ~ ~ ~ 0 0 0 5 20
 
 # サウンド
-    playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 1 2
+    playsound ogg:block.respawn_anchor.deplete2 hostile @a ~ ~ ~ 1 2
