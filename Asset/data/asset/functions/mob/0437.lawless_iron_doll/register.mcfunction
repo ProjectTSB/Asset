@@ -35,9 +35,6 @@
         data modify storage asset:mob Resist.Water set value 1.0
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.2
-# フィールド
-    # スキルのリスト
-        data modify storage asset:mob Field.Skill.List set value [0,1,2,3,4,5]
 
     # ダメージ設定
         # 物理攻撃
@@ -48,7 +45,7 @@
             # 斬り上げ
                 data modify storage asset:mob Field.Damage.Slash2 set value 55f
             # 斬り上げの発射体
-                data modify storage asset:mob Field.Damage.SlashShot2 set value 50f
+                data modify storage asset:mob Field.Damage.SlashShot2 set value 40f
             # 突進
                 data modify storage asset:mob Field.Damage.Charge set value 50f
             # 衝撃波
