@@ -11,5 +11,5 @@
 
 # レーザー召喚
     data modify storage api: Argument.ID set value 2168
-    data modify storage api: Argument.FieldOverride set value {Scale:[3.0f,20f,3.0f],Color:7673623,DisappearInterpolation:3,LifeTime:15}
+    data modify storage api: Argument.FieldOverride set value {Scale:[3.0f,20f,3.0f],Color:7673623,DisappearInterpolation:3,LifeTime:10}
     execute positioned ~ ~20 ~ rotated ~ 90 run function api:object/summon
