@@ -45,11 +45,14 @@
 # リセット
     scoreboard players reset $Interval Temporary
 
-# そこらのプレイヤーより上にいる場合、下にTP。下にブロックがあったら止まるよ。
-    execute positioned ~-50 ~2 ~-50 unless entity @p[dx=99,dy=50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+# 空中歩行に説得力もたせるパーティクル
+    execute if block ~ ~-0.25 ~ #lib:no_collision run particle minecraft:enchant ~ ~ ~ 0.7 0 0.7 0 30 force @a[distance=..32]
 
-# 足元が埋まっていて、上にブロックがないなら上に移動
-    execute unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
+# そこらのプレイヤーより上にいる場合、下にTP。下にブロックがあったら止まるよ。
+    execute positioned ~-50 ~1.5 ~-50 unless entity @p[dx=99,dy=50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+
+# 足元の先が埋まっているなら、上に移動
+    execute rotated ~ 0 unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
 
 # まっすぐ前に歩く
     execute at @s run tp @s ^ ^ ^1 ~ 0

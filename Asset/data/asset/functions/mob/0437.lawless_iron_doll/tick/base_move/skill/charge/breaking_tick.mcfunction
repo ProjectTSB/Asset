@@ -19,4 +19,4 @@
     execute if score @s General.Mob.Tick matches 44..45 run tp @s ^ ^ ^0.1 ~ 0
 
 # パーティクル
-    execute rotated ~ 0 positioned ^ ^ ^2 run particle crit ~ ~ ~ 0 0 0 0.5 5
+    execute rotated ~ 0 positioned ^ ^ ^1 run particle crit ~ ~ ~ 0 0 0 0.5 5
