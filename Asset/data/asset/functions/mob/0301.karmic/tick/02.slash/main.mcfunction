@@ -11,7 +11,7 @@
 # tp
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0301.karmic/tick/common/spread_tp/main
 # プレイヤーを見る
-    execute if score @s General.Mob.Tick matches 0 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
+    execute if score @s General.Mob.Tick matches 0 at @s facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 攻撃
     execute if score @s General.Mob.Tick matches 18 rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/tp
@@ -19,7 +19,7 @@
     execute if score @s General.Mob.Tick matches 25 rotated ~ 0 positioned ^ ^ ^2 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 25 run function asset:mob/0301.karmic/tick/02.slash/attack1
 
-    execute if score @s General.Mob.Tick matches 34..50 at @s facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
+    execute if score @s General.Mob.Tick matches 34..50 at @s facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 撃つ
     execute if score @s General.Mob.Tick matches 58 rotated ~ 0 positioned ^ ^ ^-2 run function asset:mob/0301.karmic/tick/common/tp

@@ -9,7 +9,7 @@
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function animated_java:karmic/animations/sword_attack2/play
 
 # プレイヤーを見る
-    execute if score @s General.Mob.Tick matches 0 at @s facing entity @p[gamemode=!spectator] feet rotated ~ 0 run function asset:mob/0301.karmic/tick/common/tp
+    execute if score @s General.Mob.Tick matches 0 at @s facing entity @p[gamemode=!spectator,distance=..100] feet rotated ~ 0 run function asset:mob/0301.karmic/tick/common/tp
 
 # 警告
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0301.karmic/tick/07.sword_blackbone/alart

@@ -9,7 +9,7 @@
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=8D.AJ,tag=8D.AJLink,sort=nearest,limit=1] run function animated_java:karmic/animations/run_start/play
 
 # プレイヤーを見る
-    execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator] feet run function asset:mob/0301.karmic/tick/common/tp
+    execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 突っ込む
     execute if score @s General.Mob.Tick matches 23..33 rotated ~ 0 positioned ^ ^ ^1 run function asset:mob/0301.karmic/tick/common/tp
