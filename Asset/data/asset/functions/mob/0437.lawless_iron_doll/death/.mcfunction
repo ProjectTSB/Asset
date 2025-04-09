@@ -11,7 +11,7 @@
     execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
 
 # マーカーを片付ける。このモブが召喚するマーカーは、すべて"C5.Marker"というタグを持っている
-    kill @e[type=marker,tag=C5.Marker,distance=..64]
+    kill @e[type=marker,tag=C5.Marker,distance=..256]
 
 # こっちを向く
     execute facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ 0
@@ -26,7 +26,7 @@
     execute at @s run function api:object/summon
 
 # 臆病風が吹かなくなる
-    execute as @a[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/chicken_out/remove
+    execute as @a[distance=..256] run function asset:mob/0437.lawless_iron_doll/tick/base_move/chicken_out/remove
 
 # Super!
     function asset:mob/super.death
