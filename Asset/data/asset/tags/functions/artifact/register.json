@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:artifact/1256.deep_azure/register",
+        "asset:artifact/1268.axe_of_wrath_fire/register",
+        "asset:artifact/1262.honey_bee_stiring/register",
+        "asset:artifact/1265.thunder_ray/register",
+        "asset:artifact/1264.simple_grenade/register",
         "asset:artifact/1260.rod_of_light_orb/register",
         "asset:artifact/1257.thor_staff/register",
         "asset:artifact/1254.freeze_trap/register",

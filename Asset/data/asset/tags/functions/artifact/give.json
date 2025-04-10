@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:artifact/1256.deep_azure/give/1.trigger",
+        "asset:artifact/1268.axe_of_wrath_fire/give/1.trigger",
+        "asset:artifact/1262.honey_bee_stiring/give/1.trigger",
+        "asset:artifact/1265.thunder_ray/give/1.trigger",
+        "asset:artifact/1264.simple_grenade/give/1.trigger",
         "asset:artifact/1260.rod_of_light_orb/give/1.trigger",
         "asset:artifact/1258.blade_of_dawn/give/1.trigger",
         "asset:artifact/1257.thor_staff/give/1.trigger",
@@ -97,6 +101,7 @@
         "asset:artifact/1142.book_of_hero/give/1.trigger",
         "asset:artifact/1145.nurse_call/give/1.trigger",
         "asset:artifact/0730.lake_reflecting_starry_sky/give/1.trigger",
+        "asset:artifact/1125.moon_accessory/give/1.trigger",
         "asset:artifact/0002.blessing/give/1.trigger",
         "asset:artifact/1108.white_lily_of_priestess/give/1.trigger",
         "asset:artifact/1106.rainbow_candy/give/1.trigger",
