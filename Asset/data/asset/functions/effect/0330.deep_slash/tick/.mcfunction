@@ -12,4 +12,4 @@
     execute if score @s 330.Tick matches 4 run function asset:effect/0330.deep_slash/tick/slash/2
     execute if score @s 330.Tick matches 7 run function asset:effect/0330.deep_slash/tick/slash/3
     execute if score @s 330.Tick matches 10 run function asset:effect/0330.deep_slash/tick/slash/4
-    execute if score @s 330.Tick matches 16 run function asset:effect/0330.deep_slash/tick/slash/5
+    execute if score @s 330.Tick matches 20 run function asset:effect/0330.deep_slash/tick/slash/5

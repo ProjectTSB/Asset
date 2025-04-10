@@ -8,8 +8,8 @@
 # スタック段階に比例して攻撃用Effectの効果時間を変える
     data modify storage api: Argument.ID set value 330
     execute if data storage asset:context {Stack:1} run data modify storage api: Argument.Duration set value 4
-    execute if data storage asset:context {Stack:2} run data modify storage api: Argument.Duration set value 8
-    execute if data storage asset:context {Stack:3} run data modify storage api: Argument.Duration set value 16
+    execute if data storage asset:context {Stack:2} run data modify storage api: Argument.Duration set value 10
+    execute if data storage asset:context {Stack:3} run data modify storage api: Argument.Duration set value 20
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

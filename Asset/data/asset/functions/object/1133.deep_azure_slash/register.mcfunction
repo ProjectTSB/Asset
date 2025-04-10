@@ -17,4 +17,4 @@
 # ID (int)
     data modify storage asset:object ID set value 1133
 # フィールド(オプション)
-    data modify storage asset:object Field.Count set value 5
+    data modify storage asset:object Field.Count set value 1
