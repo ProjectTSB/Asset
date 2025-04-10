@@ -4,8 +4,12 @@
 #
 # @within function asset:effect/0329.charge_of_deep_azure/_/end
 
-# バフを付与
-    data modify storage api: Argument.ID set value 326
-    data modify storage api: Argument.Stack set from storage asset:context Stack
+# 攻撃用Effectを付与
+# スタック段階に比例して攻撃用Effectの効果時間を変える
+    data modify storage api: Argument.ID set value 330
+    execute if data storage asset:context {Stack:1} run data modify storage api: Argument.Duration set value 4
+    execute if data storage asset:context {Stack:2} run data modify storage api: Argument.Duration set value 8
+    execute if data storage asset:context {Stack:3} run data modify storage api: Argument.Duration set value 16
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
