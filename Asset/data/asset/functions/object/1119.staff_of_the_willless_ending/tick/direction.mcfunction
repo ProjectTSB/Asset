@@ -6,7 +6,7 @@
 
 # タイトルコマンド
     title @a times 10 60 30
-    title @a title [{"text":"SKY PURIFIED","bold":true,"color":"yellow"}]
+    title @a title [{"text":"WORLD PURIFIED","bold":true,"color":"yellow"}]
 
 # Particle
     execute at @a run particle end_rod ~ ~1.1 ~ 0.15 0.15 0.15 2 150 force @a

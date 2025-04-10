@@ -51,7 +51,7 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 # 40tickおきに実行
     scoreboard players operation $Interval Temporary %= $40 Const
-    execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 160..320 run function asset:object/1119.staff_of_the_willless_ending/tick/vfx/2
+    execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 160..319 run function asset:object/1119.staff_of_the_willless_ending/tick/vfx/2
 # リセット
     scoreboard players reset $Interval
 
