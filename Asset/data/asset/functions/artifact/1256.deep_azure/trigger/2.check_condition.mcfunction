@@ -9,7 +9,7 @@
 # 他にアイテム等確認する場合はここに書く
 
 # チャージ用EffectがあればCanUsed関係なしにチャージ続行
-    data modify storage api: Argument.ID set value 325
+    data modify storage api: Argument.ID set value 329
     function api:entity/mob/effect/get/from_id
     execute if data storage api: Return.Effect run function asset:artifact/1256.deep_azure/trigger/charge
 
