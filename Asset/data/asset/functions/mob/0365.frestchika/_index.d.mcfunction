@@ -14,6 +14,7 @@
     #declare tag A5.Marker
     #declare tag A5.Marker.SpawnPoint
     #declare tag A5.Marker.Aim
+    #declare tag A5.Marker.Teleport
     #declare tag A5.Marker.Thunder
     # ボスのムーブセット
     #declare tag A5.Moveset.Intro
