@@ -16,6 +16,7 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.5
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.8
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 1.2
+    playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 1.5 2
 
 # 拡散値
     data modify storage lib: Argument.Distance set value 1
