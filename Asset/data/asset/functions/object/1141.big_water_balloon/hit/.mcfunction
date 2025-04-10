@@ -9,7 +9,7 @@
     #declare score_holder $UserID
 
 # サウンド
-    playsound minecraft:entity.generic.splash neutral @a ~ ~ ~ 1 1.5
+    playsound minecraft:entity.generic.splash neutral @a ~ ~ ~ 1.5 1.5
     playsound minecraft:block.bubble_column.upwards_inside neutral @a ~ ~ ~ 1 2
     playsound minecraft:block.bubble_column.whirlpool_inside neutral @a ~ ~ ~ 1 2
     playsound ogg:block.bubble_column.upwards_ambient1 neutral @a ~ ~ ~ 1.5 0.5
