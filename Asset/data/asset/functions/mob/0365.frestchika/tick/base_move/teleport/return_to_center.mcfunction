@@ -12,7 +12,7 @@
     execute at @s run function asset:mob/0365.frestchika/tick/base_move/teleport/vfx
 
 # 自分の位置にマーカーを召喚
-    summon marker ~ ~ ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
+    summon marker ~ ~1 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
 
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

@@ -7,7 +7,7 @@
 #   asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/phase2/
 
 # 自分の位置にマーカーを召喚
-    summon marker ~ ~ ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
+    summon marker ~ ~1 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
 
 # 向き指定
     execute store result storage asset:context this.Rotation int 1 run random value -180..180
@@ -21,7 +21,7 @@
     function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/finisher_teleport/m with storage asset:context this
 
 # これの呼び出し元にて召喚したマーカーに向けて、見た目レーザーが伸びる
-    execute at @s positioned ~ ~1 ~ facing entity @e[type=marker,tag=A5.Marker.Teleport,distance=..64,sort=nearest,limit=1] feet run function asset:mob/0365.frestchika/tick/base_move/teleport/laser/summon
+    execute at @s positioned ~ ~1.5 ~ facing entity @e[type=marker,tag=A5.Marker.Teleport,distance=..64,sort=nearest,limit=1] feet run function asset:mob/0365.frestchika/tick/base_move/teleport/laser/summon
 
 # ワープ後近くにいるやつの方を向く
     execute at @s facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
