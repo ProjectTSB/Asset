@@ -19,7 +19,7 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Speed set value 1
     data modify storage asset:object Field.Range set value 125
-    data modify storage asset:object Field.MovePerStep set value 0.12
+    data modify storage asset:object Field.MovePerStep set value 0.16
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.SpinInterval set value 4
     data modify storage asset:object Field.DamageInterval set value 2
