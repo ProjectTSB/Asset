@@ -19,10 +19,10 @@
 
 # 50%の確率で左回転にする
     execute if predicate lib:random_pass_per/50 run data modify storage api: Argument.FieldOverride.LeftRotate set value true
-    
+
 # Object召喚
     data modify storage api: Argument.ID set value 1110
-    data modify storage api: Argument.FieldOverride.Damage set value 500
+    data modify storage api: Argument.FieldOverride.Damage set value 450
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] eyes run function api:object/summon
 

@@ -21,11 +21,6 @@
     execute at @p[tag=Victim,distance=..6] run playsound entity.player.splash.high_speed hostile @a ~ ~ ~ 0.4 1.7 0
     execute at @p[tag=Victim,distance=..6] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 0.4 1.4 0
 
-# バフを解除
-    effect clear @p[tag=Victim,distance=..6] water_breathing
-    effect clear @p[tag=Victim,distance=..6] regeneration
-    effect clear @p[tag=Victim,distance=..6] dolphins_grace
-
 # 与えるダメージ
     data modify storage api: Argument.Damage set value 41f
 # 属性
