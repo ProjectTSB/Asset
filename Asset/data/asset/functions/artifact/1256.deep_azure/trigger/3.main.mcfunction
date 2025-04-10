@@ -14,8 +14,7 @@
     particle dust 0.2 0.2 1 1 ~ ~0.4 ~ 0.25 0.25 0.25 0 15 normal
 
 # チャージ用Effectを付与
-# MPが40%以下でダメージ1.5倍
-    data modify storage api: Argument.ID set value 325
+    data modify storage api: Argument.ID set value 329
     data modify storage api: Argument.FieldOverride.Damage set value {Slash1:250,Slash2:350,Slash3:500}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

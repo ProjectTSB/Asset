@@ -1,8 +1,8 @@
-#> asset:effect/0325.charge_of_deep_azure/end/
+#> asset:effect/0329.charge_of_deep_azure/end/
 #
 # Effectの効果が切れた時の処理
 #
-# @within function asset:effect/0325.charge_of_deep_azure/_/end
+# @within function asset:effect/0329.charge_of_deep_azure/_/end
 
 # バフを付与
     data modify storage api: Argument.ID set value 326

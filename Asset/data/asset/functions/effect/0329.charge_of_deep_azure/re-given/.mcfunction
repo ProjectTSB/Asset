@@ -1,8 +1,8 @@
-#> asset:effect/0325.charge_of_deep_azure/re-given/
+#> asset:effect/0329.charge_of_deep_azure/re-given/
 #
 # Effectが上書きされた時の処理
 #
-# @within function asset:effect/0325.charge_of_deep_azure/_/re-given
+# @within function asset:effect/0329.charge_of_deep_azure/_/re-given
 
 #> Private
 # @private

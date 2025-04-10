@@ -1,13 +1,13 @@
-#> asset:effect/0325.charge_of_deep_azure/register
+#> asset:effect/0329.charge_of_deep_azure/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0325.charge_of_deep_azure/_/register
+# @within function asset:effect/0329.charge_of_deep_azure/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 325
+    data modify storage asset:effect ID set value 329
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"チャージ・"},{"text":"デ","color":"#197af0"},{"text":"ィ","color":"#176eea"},{"text":"ー","color":"#1562e4"},{"text":"プ","color":"#1356de"},{"text":"ア","color":"#114ad8"},{"text":"ズ","color":"#0f3ed2"},{"text":"ー","color":"#0d32cb"},{"text":"ル","color":"#0a25c6"}]'
 # 説明文 (TextComponentString[])
