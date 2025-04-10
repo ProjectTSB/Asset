@@ -10,11 +10,15 @@
 # 演出
     playsound tsb_sounds:launcher_shot player @a ~ ~ ~ 1.5 1.0
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.5
-    playsound minecraft:block.bubble_column.upwards_ambient hostile @a ~ ~ ~ 2 1
-    playsound minecraft:block.bubble_column.whirlpool_inside hostile @a ~ ~ ~ 2 2
+    playsound ogg:block.bubble_column.upwards_ambient1 player @a ~ ~ ~ 2 0.5
+    playsound ogg:block.bubble_column.upwards_ambient1 player @a ~ ~ ~ 2 1
 
-# 火の玉オブジェクト召喚
-    data modify storage api: Argument.ID set value 1082
+# オブジェクト召喚
+    data modify storage api: Argument.ID set value 1141
+# ダメージ設定
+    execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 600..800
+# 飛距離設定
+    data modify storage api: Argument.FieldOverride.Speed set value 1
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute anchored eyes positioned ^ ^ ^1 run function api:object/summon
