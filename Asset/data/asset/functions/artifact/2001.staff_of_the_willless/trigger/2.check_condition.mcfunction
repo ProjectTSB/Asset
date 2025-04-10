@@ -17,9 +17,10 @@
     execute store result score $Progress Temporary run data get storage api: Return.Progress 100
 # チェック
     execute unless score $Progress Temporary matches 99.. run tellraw @s {"text":"まだ全ての浄化が済んでいないようだ","color":"red"}
-    execute unless score $Progress Temporary matches 99.. run tag @s remove CanUsed
 # タグ消す
-    tellraw @a [{"text":"Progress: "},{"score":{"name":"$Progress","objective":"Temporary"}}]
+    execute unless score $Progress Temporary matches 99.. run tag @s remove CanUsed
+#　デバッグメッセージ
+    #tellraw @a [{"text":"Progress: "},{"score":{"name":"$Progress","objective":"Temporary"}}]
 # リセット
     scoreboard players reset $Progress Temporary
 
