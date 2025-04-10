@@ -9,6 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 自身にマインソウル(ID:291)を付与
+    data modify storage api: Argument.ID set value 291
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # Object召喚x3
     execute anchored eyes positioned ^ ^-0.5 ^0.3 run function asset:artifact/1270.raging_passion_pickaxe/trigger/summon_object
     execute anchored eyes positioned ^1.5 ^-0.5 ^0.3 run function asset:artifact/1270.raging_passion_pickaxe/trigger/summon_object
