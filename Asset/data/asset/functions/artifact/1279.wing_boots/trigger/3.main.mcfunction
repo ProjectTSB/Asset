@@ -11,7 +11,8 @@
 
 # 演出
     particle cloud ~ ~0.1 ~ 0.3 0.05 0.3 0.1 20 normal @a
-
+    playsound minecraft:item.armor.equip_elytra player @a ~ ~ ~ 0.7 0.8
+    
 # 落下耐性
     data modify storage api: Argument.UUID set value [I;1,1,1279,3]
     data modify storage api: Argument.Amount set value -0.3
