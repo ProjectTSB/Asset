@@ -39,7 +39,7 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 # 10tickおきに実行
     scoreboard players operation $Interval Temporary %= $10 Const
-    execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 320..600 run function asset:object/1119.staff_of_the_willless_ending/tick/vfx/2
+    execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 320..599 run function asset:object/1119.staff_of_the_willless_ending/tick/vfx/2
     execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 420..600 run particle explosion ~ ~7 ~ 7 7 7 0 4
     execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches 420..640 run particle flash ~ ~1.5 ~ 0 0 0 1 1 force
     execute if score $Interval Temporary matches 0 if score @s General.Object.Tick matches ..640 positioned ~ ~-2 ~ run function asset:object/1119.staff_of_the_willless_ending/tick/vfx/1
@@ -60,7 +60,6 @@
 # 一気に上昇
     execute if score @s General.Object.Tick matches 660..690 run execute at @s run tp @s ~ ~0.8 ~
     execute if score @s General.Object.Tick matches 660..690 run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0 1
-    execute if score @s General.Object.Tick matches 660 run playsound minecraft:entity.firework_rocket.launch neutral @a ~ ~ ~ 1 0.6
 # 豪華な演出
     execute if score @s General.Object.Tick matches 690 run function asset:object/1119.staff_of_the_willless_ending/tick/direction
 
