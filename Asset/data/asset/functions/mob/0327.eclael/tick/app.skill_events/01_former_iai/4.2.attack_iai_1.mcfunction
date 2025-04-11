@@ -9,12 +9,12 @@
 # 演出
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 1 1.2
-    execute positioned ^ ^1 ^2 rotated ~90 ~-30 run function asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/5.3.particle_slash_1
+    # execute positioned ^ ^1 ^2 rotated ~90 ~-30 run function asset:mob/0327.eclael/tick/app.skill_events/01_former_iai/5.3.particle_slash_1
 
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 42f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Iai
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -25,3 +25,8 @@
     execute positioned ^ ^ ^2 as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
     function api:damage/reset
+
+# 演出
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504],Scale:[10f,2f,10f],Transformation:{left_rotation:{axis:[0,0,1],angle:2.61799f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^1.8 ^1 run function api:object/summon

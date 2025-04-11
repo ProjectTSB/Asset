@@ -21,7 +21,7 @@
 # TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 40f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash1
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -33,3 +33,8 @@
     tag @a[tag=93.Temp.AttackTarget] remove 93.Temp.AttackTarget
 # リセット
     function api:damage/reset
+
+# 演出
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504,20505],Scale:[8f,2f,8f],Transformation:{left_rotation:{axis:[0,0,1],angle:1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^1.8 ^2 run function api:object/summon
