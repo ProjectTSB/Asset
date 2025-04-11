@@ -1,13 +1,13 @@
-#> asset:effect/0622.absolute_overdrive/register
+#> asset:effect/0653.absolute_drive/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0622.absolute_overdrive/_/register
+# @within function asset:effect/0653.absolute_drive/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 622
+    data modify storage asset:effect ID set value 653
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"C.D.アブソリュートドライブ"}'
 # 説明文 (TextComponentString[])
