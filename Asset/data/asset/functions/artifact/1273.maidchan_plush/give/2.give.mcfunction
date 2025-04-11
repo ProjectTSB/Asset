@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"MP50%以上"}'
+    data modify storage asset:artifact Condition set value '{"text":"MPが50%以上"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [90]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
