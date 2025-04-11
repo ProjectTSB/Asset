@@ -10,6 +10,8 @@
     #declare tag A5.ModelLocator.RightWing
     #declare tag A5.ModelRoot
     #declare tag A5.ModelRoot.Target
+    #declare tag A5.Model.LeftHandItem
+    #declare tag A5.Model.RightHandItem
     # ボスのマーカーに関するタグ
     #declare tag A5.Marker
     #declare tag A5.Marker.SpawnPoint
@@ -71,5 +73,5 @@
     #declare function animated_java:frestchika/animations/break_loop/tween
     #declare function animated_java:frestchika/animations/recovery/tween
     #declare function animated_java:frestchika/animations/teleport/tween
-    #declare tag aj.frestchika.bone.right_item_display
-    #declare tag aj.frestchika.bone.left_item_display
+    #declare tag aj.frestchika.node.right_item_display
+    #declare tag aj.frestchika.node.left_item_display
