@@ -4,8 +4,8 @@
 #
 # @within function asset:mob/alias/175/remove
 
-# アマスタ削除
-    kill @e[type=armor_stand,tag=4V.ArmorStand]
+# スポーンマーカー削除
+    kill @e[type=marker,tag=4V.SpawnMarker,distance=..100]
 
 # スーパーメソッド呼び出し
     function asset:mob/super.remove
