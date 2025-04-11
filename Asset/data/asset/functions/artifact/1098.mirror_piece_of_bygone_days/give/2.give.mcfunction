@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"在りし日の鏡片","color":"#BCDCE8"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し"}','{"text":"最大体力+16%を20秒間得る。"}','{"text":"過去に砕け散った手鏡。","color":"gray"}','{"text":"割れた今でも過ぎ去った日々の風景を映している。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"デバフ"},{"text":"[弱]","color":"#FFDD66"},{"text":"を全て解除し"}]','{"text":"最大体力+16%を20秒間得る。"}','{"text":"過去に砕け散った手鏡。","color":"gray"}','{"text":"割れた今でも過ぎ去った日々の風景を映している。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

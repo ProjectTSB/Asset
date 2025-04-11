@@ -1,4 +1,4 @@
-#> asset:artifact/1253.wool_shooter/trigger/shoot
+#> asset:artifact/1253.wool_shooter/trigger/shoot_45
 #
 #
 #

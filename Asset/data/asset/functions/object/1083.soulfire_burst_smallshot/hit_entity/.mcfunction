@@ -5,7 +5,7 @@
 # @within function asset:object/alias/1083/hit_entity
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 95..165
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
