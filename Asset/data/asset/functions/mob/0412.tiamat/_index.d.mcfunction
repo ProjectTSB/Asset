@@ -3,42 +3,42 @@
 
 #> tag
 # @within function asset:mob/0412.tiamat/**
-    # AnimatedJava処理(エラー対策)
+# AnimatedJava処理(エラー対策)
     # - 処理
-        #declare function animated_java:tiamat_aj/summon
-        #declare function animated_java:tiamat_aj/remove/all
-        #declare function animated_java:tiamat_aj/animations/pause_all
-        #declare function animated_java:tiamat_aj/as_own_locator_entities
+    #declare function animated_java:tiamat_aj/summon
+    #declare function animated_java:tiamat_aj/remove/all
+    #declare function animated_java:tiamat_aj/animations/pause_all
+    #declare function animated_java:tiamat_aj/as_own_locator_entities
     # - アニメーション再生
-        #declare function animated_java:tiamat_aj/animations/0_start/tween
-        #declare function animated_java:tiamat_aj/animations/1_idle/tween
-        #declare function animated_java:tiamat_aj/animations/2_move/tween
-        #declare function animated_java:tiamat_aj/animations/3_0_cast_start/tween
-        #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
-        #declare function animated_java:tiamat_aj/animations/3_2_cast_land_start/tween
-        #declare function animated_java:tiamat_aj/animations/3_3_casting_land/tween
-        #declare function animated_java:tiamat_aj/animations/3_4_cast_fly2land_start/tween
-        #declare function animated_java:tiamat_aj/animations/4_breath/tween
-        #declare function animated_java:tiamat_aj/animations/5_deathwing/tween
-        #declare function animated_java:tiamat_aj/animations/6_0_flymove_start/tween
-        #declare function animated_java:tiamat_aj/animations/6_1_flymove_end/tween
-        #declare function animated_java:tiamat_aj/animations/7_dive/tween
-        #declare function animated_java:tiamat_aj/animations/8_spin/tween
-        #declare function animated_java:tiamat_aj/animations/9_roar/tween
-        #declare function animated_java:tiamat_aj/animations/10_attack/tween
-        #declare function animated_java:tiamat_aj/animations/12_offering/tween
-        #declare function animated_java:tiamat_aj/animations/13_offering_end/tween
+    #declare function animated_java:tiamat_aj/animations/0_start/tween
+    #declare function animated_java:tiamat_aj/animations/1_idle/tween
+    #declare function animated_java:tiamat_aj/animations/2_move/tween
+    #declare function animated_java:tiamat_aj/animations/3_0_cast_start/tween
+    #declare function animated_java:tiamat_aj/animations/3_1_casting/tween
+    #declare function animated_java:tiamat_aj/animations/3_2_cast_land_start/tween
+    #declare function animated_java:tiamat_aj/animations/3_3_casting_land/tween
+    #declare function animated_java:tiamat_aj/animations/3_4_cast_fly2land_start/tween
+    #declare function animated_java:tiamat_aj/animations/4_breath/tween
+    #declare function animated_java:tiamat_aj/animations/5_deathwing/tween
+    #declare function animated_java:tiamat_aj/animations/6_0_flymove_start/tween
+    #declare function animated_java:tiamat_aj/animations/6_1_flymove_end/tween
+    #declare function animated_java:tiamat_aj/animations/7_dive/tween
+    #declare function animated_java:tiamat_aj/animations/8_spin/tween
+    #declare function animated_java:tiamat_aj/animations/9_roar/tween
+    #declare function animated_java:tiamat_aj/animations/10_attack/tween
+    #declare function animated_java:tiamat_aj/animations/12_offering/tween
+    #declare function animated_java:tiamat_aj/animations/13_offering_end/tween
     # - 自動生成タグ
-        #declare tag aj.data
-        #declare tag aj.tiamat_aj.animation.0_start.playing
-        #declare tag aj.tiamat_aj.animation.1_idle.playing
-        #declare tag aj.tiamat_aj.animation.6_0_flymove_start.playing
-        #declare tag aj.tiamat_aj.animation.6_1_flymove_end.playing
+    #declare tag aj.data
+    #declare tag aj.tiamat_aj.animation.0_start.playing
+    #declare tag aj.tiamat_aj.animation.1_idle.playing
+    #declare tag aj.tiamat_aj.animation.6_0_flymove_start.playing
+    #declare tag aj.tiamat_aj.animation.6_1_flymove_end.playing
     # - 自動生成スコア
-        #declare objective aj.0_start.frame
-        #declare objective aj.1_idle.frame
-        #declare objective aj.6_0_flymove_start.frame
-        #declare objective aj.6_1_flymove_end.frame
+    #declare objective aj.0_start.frame
+    #declare objective aj.1_idle.frame
+    #declare objective aj.6_0_flymove_start.frame
+    #declare objective aj.6_1_flymove_end.frame
     # - 共通
     #declare tag BG.EntityRoot 自分自身（当たり判定）
     #declare tag BG.ModelRoot AJモデルのRootEntity
