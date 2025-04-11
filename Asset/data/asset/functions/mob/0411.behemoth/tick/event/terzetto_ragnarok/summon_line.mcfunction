@@ -11,4 +11,4 @@
     function api:object/summon
 
 # タグ付与
-    tag @e[tag=2181.Line,sort=nearest,limit=1] add BF.Object
+    tag @e[type=item_display,tag=2181.Line,sort=nearest,limit=1] add BF.Object

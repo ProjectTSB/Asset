@@ -8,8 +8,8 @@
     scoreboard players add @s BF.EventTimer 1
 
 # オブジェクト消去
-    execute if score @s BF.EventTimer matches 1 as @e[tag=BF.Object] on passengers run kill @s
-    execute if score @s BF.EventTimer matches 1 run kill @e[tag=BF.Object]
+    execute if score @s BF.EventTimer matches 1 as @e[tag=BF.Object,distance=..160] on passengers run kill @s
+    execute if score @s BF.EventTimer matches 1 run kill @e[tag=BF.Object,distance=..160]
 
 # 移動
     # アニメーション再生

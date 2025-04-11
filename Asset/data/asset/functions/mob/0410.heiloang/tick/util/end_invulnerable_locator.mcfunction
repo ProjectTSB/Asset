@@ -6,3 +6,5 @@
 
 # 無敵化解除
     effect clear @s resistance
+    data modify entity @s Invulnerable set value false
+    tag @s remove Uninterferable

@@ -6,7 +6,7 @@
 
 # Locatorに以下処理を実行する
     data merge entity @s {CustomName:'{"text":"『闇竜』","color":"#CB8FFF","italic":false}',Silent:1b,NoAI:1b,DeathLootTable:"minecraft:empty",PersistenceRequired :1b,Attributes:[{Name:"generic.max_health",Base:1024d}]}
-    scoreboard players operation @s ForwardTargetMobUUID = @e[tag=BG.EntityRoot,limit=1] MobUUID
+    scoreboard players operation @s ForwardTargetMobUUID = @e[type=slime,tag=BG.EntityRoot,limit=1] MobUUID
     tag @s add Enemy
     tag @s add Enemy.Boss
     tag @s add ExtendedCollision

@@ -19,7 +19,8 @@
     # 登場モーション再生
         tag @s add BF.Skill.Start
     # 最も近くのプレイヤーにヘイトを向ける
-        tag @p[distance=..80] add BF.MainTarget
+        tag @p[tag=!PlayerShouldInvulnerable,distance=..80] add BF.MainTarget
+        execute unless entity @p[tag=BF.MainTarget,distance=..80] run tag @p[distance=..80] add BF.MainTarget
 
 # デバッグ用
     # tag @s add BF.State.Wait

@@ -42,6 +42,7 @@
     # - 共通
     #declare tag BG.EntityRoot 自分自身（当たり判定）
     #declare tag BG.ModelRoot AJモデルのRootEntity
+    #declare tag BE.ModelRoot ヘイローンのRootEntity
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)
     #
     # - スキル

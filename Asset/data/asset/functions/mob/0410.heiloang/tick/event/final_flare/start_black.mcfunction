@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/final_flare/damage
+#> asset:mob/0410.heiloang/tick/event/final_flare/start_black
 #
 # 究極幻想
 #

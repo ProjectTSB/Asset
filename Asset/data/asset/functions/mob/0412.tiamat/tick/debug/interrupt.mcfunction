@@ -5,7 +5,7 @@
 # @within asset:mob/alias/410/tick
 
 # メモ
-    # execute as @e[tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/debug/interrupt
+    # execute as @e[type=slime,tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/debug/interrupt
 
 # 全アニメーション停止
     function asset:mob/0412.tiamat/tick/debug/reset

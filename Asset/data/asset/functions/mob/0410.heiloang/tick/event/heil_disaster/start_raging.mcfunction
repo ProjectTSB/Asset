@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/heil_disaster/**
 
 # モデル変更
-    execute as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/rage/apply
+    execute as @e[type=item_display,tag=BE.ModelRoot,distance=..160] run function animated_java:heiloang_aj/variants/rage/apply
 
 # 演出
     particle flash ~ ~2 ~ 5 5 5 0 100 force

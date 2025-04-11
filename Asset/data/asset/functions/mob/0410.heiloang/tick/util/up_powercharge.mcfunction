@@ -8,6 +8,6 @@
     scoreboard players add @s BE.Charge.Count 1
 
 # 通知
-    execute if score @s BE.Charge.Count matches 1 run tellraw @a [{"text":"【黒龍の光輪が輝きを増した！】"}]
-    execute if score @s BE.Charge.Count matches 2 run tellraw @a [{"text":"【黒龍の光輪が強く輝き始めた！】"}]
-    execute if score @s BE.Charge.Count matches 3.. run tellraw @a [{"text":"【黒龍の光輪が激しく輝き始めた！】"}]
+    execute if score @s BE.Charge.Count matches 1 run tellraw @a[distance=..100] [{"text":"【黒龍の光輪が輝きを増した！】"}]
+    execute if score @s BE.Charge.Count matches 2 run tellraw @a[distance=..100] [{"text":"【黒龍の光輪が強く輝き始めた！】"}]
+    execute if score @s BE.Charge.Count matches 3.. run tellraw @a[distance=..100] [{"text":"【黒龍の光輪が激しく輝き始めた！】"}]

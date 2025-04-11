@@ -9,9 +9,9 @@
 #     tp @e[type=item_display,tag=2181.Line,tag=BF.Temp.Dummy,limit=1] ~ ~ ~ 0 0
 
 # プレイヤーを向く
-    execute facing entity @p eyes rotated ~ ~1 run function lib:rotate_display/
+    execute facing entity @p[tag=!PlayerShouldInvulnerable,distance=..80] eyes rotated ~ ~1 run function lib:rotate_display/
 
 # 距離測定
-    execute as @p run function lib:distance/as_to_at
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..80] run function lib:distance/as_to_at
     execute store result entity @s transformation.scale[2] float 0.001 run data get storage lib: Return.Distance 1000
     data remove storage lib: Return

@@ -8,7 +8,7 @@
     scoreboard players add @s BE.EventTimer 1
 
 # 予兆
-    execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/16_final_start
+    execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,distance=..160,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/16_final_start
     # 通知
         # execute if score @s BE.EventTimer matches 1 run tellraw @a[distance=..160] [{"text":"【割合ダメージなので、回復して備えよう的なメッセージ】"}]
     # 演出
@@ -19,7 +19,7 @@
 
 # 発動
     # アニメーション再生
-        execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/16_final_flare
+        execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,distance=..160,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/16_final_flare
     # 移動
         execute if score @s BE.EventTimer matches 101..120 at @s run tp @s ^ ^0.2 ^-1.5 ~ ~
     # 画面エフェクト
@@ -32,23 +32,24 @@
         # 遠くにいる人に時間変更を通知
             execute if score @s BE.EventTimer matches 230 run playsound entity.ender_dragon.growl hostile @a[distance=160..] ~ ~ ~ 0.3 0.7 0.3
         execute if score @s BE.EventTimer matches 290 run time set 15000
-        execute if score @s BE.EventTimer matches 290 run effect give @a[distance=..160] night_vision 30 0 true
-        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:crimson_forest
-        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:crimson_forest
-        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:crimson_forest
+        execute if score @s BE.EventTimer matches 290 run function asset:mob/0410.heiloang/tick/util/give_nightvision
+        execute if score @s BE.EventTimer matches 315 run function asset:mob/0410.heiloang/tick/util/give_nightvision
+        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:crimson_forest
+        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:crimson_forest
+        execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:crimson_forest
     # モデル変更
-        execute if score @s BE.EventTimer matches 187 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/black/apply
-        execute if score @s BE.EventTimer matches 290 as @e[tag=BE.ModelRoot] run function animated_java:heiloang_aj/variants/default/apply
+        execute if score @s BE.EventTimer matches 187 as @e[type=item_display,tag=BE.ModelRoot,distance=..160] run function animated_java:heiloang_aj/variants/black/apply
+        execute if score @s BE.EventTimer matches 290 as @e[type=item_display,tag=BE.ModelRoot,distance=..160] run function animated_java:heiloang_aj/variants/default/apply
     # 演出
         # パーティクル
             execute if score @s BE.EventTimer matches 160 run summon area_effect_cloud ^ ^-6 ^30 {Duration:110,Tags:["BE.Temp.AttackPosition"]}
-            execute if score @s BE.EventTimer matches 160..270 as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_before
-            execute if score @s BE.EventTimer matches 160..290 at @e[type=marker,tag=BE.CenterPosition] run particle block stone ~ ~ ~ 8 0 8 0 10
-            execute if score @s BE.EventTimer matches 270..290 at @e[type=marker,tag=BE.CenterPosition] run particle explosion ~ ~ ~ 6 0.5 6 0 10
-            execute if score @s BE.EventTimer matches 300..306 at @e[type=marker,tag=BE.CenterPosition] run particle lava ~ ~ ~ 6 1 6 0 10
-            execute if score @s BE.EventTimer matches 306..316 at @e[type=marker,tag=BE.CenterPosition] run particle block stone ~ ~6 ~ 8 0 8 0 30
-            execute if score @s BE.EventTimer matches 306..316 at @e[type=marker,tag=BE.CenterPosition] run particle falling_dust stone ~ ~6 ~ 8 3 8 0 30
-            execute if score @s BE.EventTimer matches 300..413 at @e[type=marker,tag=BE.CenterPosition] run particle lava ~ ~ ~ 8 0 8 0 1
+            execute if score @s BE.EventTimer matches 160..270 as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,distance=..160] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_before
+            execute if score @s BE.EventTimer matches 160..290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle block stone ~ ~ ~ 8 0 8 0 10
+            execute if score @s BE.EventTimer matches 270..290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle explosion ~ ~ ~ 6 0.5 6 0 10
+            execute if score @s BE.EventTimer matches 300..306 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle lava ~ ~ ~ 6 1 6 0 10
+            execute if score @s BE.EventTimer matches 306..316 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle block stone ~ ~6 ~ 8 0 8 0 30
+            execute if score @s BE.EventTimer matches 306..316 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle falling_dust stone ~ ~6 ~ 8 3 8 0 30
+            execute if score @s BE.EventTimer matches 300..413 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run particle lava ~ ~ ~ 8 0 8 0 1
         # 効果音
             execute if score @s BE.EventTimer matches 115 positioned ^ ^ ^30 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 4 0.7
             execute if score @s BE.EventTimer matches 140 positioned ^ ^ ^30 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 4 0.7
@@ -72,20 +73,20 @@
             execute if score @s BE.EventTimer matches 269..275 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 0.7 0.2
             execute if score @s BE.EventTimer matches 276..300 positioned ~ ~30 ~ run playsound entity.skeleton_horse.death hostile @a[distance=..80] ~ ~ ~ 1 1.3 0.2
         # フレア
-            execute if score @s BE.EventTimer matches 246 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare_start
-            execute if score @s BE.EventTimer matches 246..270 as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare
+            execute if score @s BE.EventTimer matches 246 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare_start
+            execute if score @s BE.EventTimer matches 246..270 as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,distance=..160,sort=random,limit=1] at @s run function asset:mob/0410.heiloang/tick/event/final_flare/particle_flare
         # 床
-            execute if score @s BE.EventTimer matches 300 at @e[type=marker,tag=BE.CenterPosition] positioned ~-0.3 ~ ~0.2 run return run function asset:mob/0410.heiloang/tick/event/final_flare/particle_floor
+            execute if score @s BE.EventTimer matches 300 at @e[type=marker,tag=BE.CenterPosition,distance=..160] positioned ~-0.3 ~ ~0.2 run return run function asset:mob/0410.heiloang/tick/event/final_flare/particle_floor
 
 # モデルの移動
-    execute at @s run tp @e[type=item_display,tag=BE.ModelRoot] ~ ~ ~ ~ 0
+    execute at @s run tp @e[type=item_display,tag=BE.ModelRoot,distance=..160] ~ ~ ~ ~ 0
 
 # 移動
     # アニメーション再生
-        execute if score @s BE.EventTimer matches 346 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_0_flymove_start
-        execute if score @s BE.EventTimer matches 375 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_1_flymove_end
+        execute if score @s BE.EventTimer matches 346 as @e[type=item_display,tag=BE.ModelRoot,distance=..160,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_0_flymove_start
+        execute if score @s BE.EventTimer matches 375 as @e[type=item_display,tag=BE.ModelRoot,distance=..160,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/12_1_flymove_end
     # 中心点の正面方向に移動
-        execute if score @s BE.EventTimer matches 370 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
+        execute if score @s BE.EventTimer matches 370 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run tp @s ^ ^2 ^28 ~180 0
 
 # 無敵化
     execute if score @s BE.EventTimer matches 413 run function asset:mob/0410.heiloang/tick/util/end_invulnerable

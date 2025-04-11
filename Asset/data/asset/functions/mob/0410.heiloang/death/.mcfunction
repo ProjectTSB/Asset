@@ -34,6 +34,6 @@
     function asset:mob/0410.heiloang/tick/util/remove_all_tag
 
 # オブジェクト消去
-    execute as @e[tag=BE.Object] on passengers run kill @s
-    kill @e[tag=BE.Object]
+    execute as @e[tag=BE.Object,distance=..160] on passengers run kill @s
+    kill @e[tag=BE.Object,distance=..160]
     function animated_java:heiloang_flare_aj/remove/all
