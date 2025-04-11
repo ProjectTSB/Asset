@@ -1,8 +1,8 @@
-#> asset:effect/0623.chicken_out/tick/
+#> asset:effect/0654.chicken_out/tick/
 #
 # Effectのtick処理
 #
-# @within function asset:effect/0623.chicken_out/_/tick
+# @within function asset:effect/0654.chicken_out/_/tick
 
 #> インターバルのスコアホルダー
 # @private
@@ -12,10 +12,10 @@
     scoreboard players add @s 0623.Tick 1
 
 # 臆病風がひゅるる
-    execute if score @s 0623.Tick matches 40 run function asset:effect/0623.chicken_out/tick/start
+    execute if score @s 0623.Tick matches 40 run function asset:effect/0654.chicken_out/tick/start
 
 # このデバフが付与されたままで60tick経つと、インターバルの処理を開始する
-    execute if score @s 0623.Tick matches 60.. run function asset:effect/0623.chicken_out/tick/interval
+    execute if score @s 0623.Tick matches 60.. run function asset:effect/0654.chicken_out/tick/interval
 
 # リセット
     scoreboard players reset $Interval Temporary

@@ -1,13 +1,13 @@
-#> asset:effect/0623.chicken_out/register
+#> asset:effect/0654.chicken_out/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0623.chicken_out/_/register
+# @within function asset:effect/0654.chicken_out/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 623
+    data modify storage asset:effect ID set value 654
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"臆病風"}'
 # 説明文 (TextComponentString[])

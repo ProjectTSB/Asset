@@ -1,8 +1,8 @@
-#> asset:effect/0623.chicken_out/tick/damage
+#> asset:effect/0654.chicken_out/tick/damage
 #
 # 風のダメージだ！
 #
-# @within function asset:effect/0623.chicken_out/tick/interval
+# @within function asset:effect/0654.chicken_out/tick/interval
 
 # 引数の設定
     # 与えるダメージは自身のHPの20%
