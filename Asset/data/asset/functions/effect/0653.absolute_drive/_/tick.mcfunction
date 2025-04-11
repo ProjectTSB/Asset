@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:effect/tick
 
-execute if data storage asset:context {id:622} run function asset:effect/0653.absolute_drive/tick/
+execute if data storage asset:context {id:653} run function asset:effect/0653.absolute_drive/tick/
