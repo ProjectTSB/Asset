@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:artifact/1274.spring_boots/give/1.trigger",
+        "asset:artifact/1278.apprentice_knight_boots/give/1.trigger",
+        "asset:artifact/1277.apprentice_knight_armor/give/1.trigger",
+        "asset:artifact/1276.apprentice_knight_armor/give/1.trigger",
+        "asset:artifact/1275.apprentice_knight_helm/give/1.trigger",
         "asset:artifact/1272_big_water_launcher/give/1.trigger",
         "asset:artifact/1279.wing_boots/give/1.trigger",
         "asset:artifact/1268.axe_of_wrath_fire/give/1.trigger",
