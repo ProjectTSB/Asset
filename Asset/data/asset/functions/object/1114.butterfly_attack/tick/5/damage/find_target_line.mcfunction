@@ -11,4 +11,4 @@
 
 # 再帰
     scoreboard players add $RecursiveCount Temporary 1
-    execute if score $RecursiveCount Temporary matches ..11 positioned ^ ^ ^0.5 unless block ~ ~ ~ #lib:no_collision run function asset:object/1114.butterfly_attack/tick/5/damage/find_target_line
+    execute if score $RecursiveCount Temporary matches ..11 positioned ^ ^ ^0.5 if block ~ ~ ~ #lib:no_collision run function asset:object/1114.butterfly_attack/tick/5/damage/find_target_line
