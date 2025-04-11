@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"連撃・"},{"text":"デ","color":"#197af0"},{"text":"ィ","color":"#176eea"},{"text":"ー","color":"#1562e4"},{"text":"プ","color":"#1356de"},{"text":"ア","color":"#114ad8"},{"text":"ズ","color":"#0f3ed2"},{"text":"ー","color":"#0d32cb"},{"text":"ル","color":"#0a25c6"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text":"深淵の連撃を放つ"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)

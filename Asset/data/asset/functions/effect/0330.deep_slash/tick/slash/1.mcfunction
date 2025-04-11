@@ -5,9 +5,12 @@
 # @within function asset:effect/0330.deep_slash/tick/
 
 # 演出
-    playsound block.conduit.activate player @a ~ ~ ~ 0.7 1.2
-    playsound block.conduit.activate player @a ~ ~ ~ 0.7 1.25
-    #playsound item.trident.throw player @a ~ ~ ~ 0.7 0.7
+    playsound item.trident.throw player @a ~ ~ ~ 0.4 0.675
+    playsound block.bubble_column.whirlpool_inside player @a ~ ~ ~ 0.7 0.95
+
+# ダメージだけ設定しておいて攻撃判定は別関数に任せる
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash1
+    function asset:effect/0330.deep_slash/tick/slash/damage/1_4
 
 # 演出用Object召喚
     data modify storage api: Argument.ID set value 1133
