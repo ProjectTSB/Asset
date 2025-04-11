@@ -9,7 +9,7 @@
     #declare tag SearchTarget
     #declare score_holder $HighestWaterAttack
 
-# 検索対象：回復対象ではなく最も現在体力割合の低いプレイヤー
+# 検索対象：BuffTargetではなく水攻撃補正が最も高いプレイヤー
 
 # 検索対象にTagを付与
     tag @a[tag=!BuffTarget,distance=..20] add SearchTarget
