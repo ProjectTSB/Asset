@@ -26,6 +26,9 @@
     item replace entity @e[type=item_display,tag=aj.tultaria.bone.right_ring,sort=nearest,limit=1] container.0 with air
     item replace entity @e[type=item_display,tag=aj.tultaria.bone.left_ring,sort=nearest,limit=1] container.0 with air
 
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}
+
 # マーカーも消す
     kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
 

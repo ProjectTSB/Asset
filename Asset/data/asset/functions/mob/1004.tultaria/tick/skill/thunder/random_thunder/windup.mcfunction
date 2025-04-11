@@ -15,7 +15,6 @@
     # フェイズ 3
         execute if entity @s[scores={RW.Phase=3}] store result score $Random Temporary run random value 2..3
 
-
 # タグ付与
     # 1
         execute if score $Random Temporary matches 0 run tag @s add RW.Skill.Thunder.1
@@ -25,3 +24,6 @@
         execute if score $Random Temporary matches 2 run tag @s add RW.Skill.Thunder.3
     # 4
         execute if score $Random Temporary matches 3 run tag @s add RW.Skill.Thunder.4
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}

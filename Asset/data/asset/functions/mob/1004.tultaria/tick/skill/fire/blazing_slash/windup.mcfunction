@@ -19,3 +19,6 @@
     playsound minecraft:item.axe.scrape hostile @a ~ ~ ~ 2 2
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 2
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20074}

@@ -26,6 +26,7 @@
     #declare tag RW.ModelLocator.RightHand
     #declare tag RW.ModelRoot
     #declare tag RW.ModelRoot.Target
+    #declare tag RW.Model.RightHandItem
     # ボスのマーカーに関するタグ
     #declare tag RW.RotateMarker
     #declare tag RW.Marker.SpawnPoint
@@ -107,3 +108,4 @@
     #declare function animated_java:tultaria/variants/face_eyeopen/apply
     #declare tag aj.tultaria.bone.right_ring
     #declare tag aj.tultaria.bone.left_ring
+    #declare tag aj.tultaria.node.right_item_display

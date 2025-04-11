@@ -35,3 +35,6 @@
         execute if score $Random Temporary matches 2 run tag @s add RW.Skill.SwordRain.3
     # 4
         execute if score $Random Temporary matches 3 run tag @s add RW.Skill.SwordRain.4
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}
