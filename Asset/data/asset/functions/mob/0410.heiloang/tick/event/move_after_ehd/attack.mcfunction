@@ -27,7 +27,7 @@
     execute positioned ^-15 ^ ^-4 run particle block stone ~ ~1 ~ 3 0.2 3 0.1 10
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 50.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Move
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

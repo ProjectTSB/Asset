@@ -50,7 +50,8 @@
     # 中心点回転
         execute if score @s BE.EventTimer matches 101 as @e[type=marker,tag=BE.CenterPosition] at @s facing entity @e[type=slime,tag=BE.EntityRoot,limit=1] feet run tp @s ~ ~ ~ ~ 0
     # 回避ギミック用跳躍エフェクト付与
-        execute if score @s BE.EventTimer matches 162 run effect give @a[distance=..80] jump_boost 9 5
+        execute if score @s BE.EventTimer matches 162 run function asset:mob/0410.heiloang/tick/event/tornado/effect_jumpboost
+        # execute if score @s BE.EventTimer matches 162 run effect give @a[distance=..80] jump_boost 9 5
 
 # 終了
     execute if score @s BE.EventTimer matches 175.. run function asset:mob/0410.heiloang/tick/event/tornado/end

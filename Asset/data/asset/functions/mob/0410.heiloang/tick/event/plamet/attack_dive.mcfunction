@@ -13,7 +13,9 @@
     function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 40.0f
+    execute if score @s BE.Charge.Count matches ..0 run data modify storage api: Argument.Damage set from storage asset:context this.Damage.TDive0
+    execute if score @s BE.Charge.Count matches 1 run data modify storage api: Argument.Damage set from storage asset:context this.Damage.TDive1
+    execute if score @s BE.Charge.Count matches 2.. run data modify storage api: Argument.Damage set from storage asset:context this.Damage.TDive2
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

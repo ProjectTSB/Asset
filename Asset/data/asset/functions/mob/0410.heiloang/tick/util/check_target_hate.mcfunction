@@ -10,4 +10,4 @@
 # ターゲット更新
     tag @a remove BE.HateTarget
     execute as @a[distance=..80,sort=random,limit=1] run tag @s add BE.HateTarget
-    execute as @a[tag=BE.HateTarget] run tellraw @a [{"text":"黒龍は <","color":"white"},{"selector":"@s"},{"text":"> に狙いを定めた"}]
+    execute as @a[tag=BE.HateTarget,distance=..160] run tellraw @a[distance=..160] [{"text":"【黒龍は <","color":"white"},{"selector":"@s"},{"text":"> に狙いを定めた！】"}]

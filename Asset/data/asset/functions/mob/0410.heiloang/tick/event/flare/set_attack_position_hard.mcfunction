@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/set_attack_position_hard
 #
-# アニヒレートフレア
+# フレアレイ
 #
 # @within asset:mob/0410.heiloang/tick/event/flare/
 

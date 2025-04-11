@@ -57,8 +57,8 @@
         execute if score @s BE.EventTimer matches 220 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run data modify entity @s teleport_duration set value 1
     # テンペスト配置
         execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/normal as @a[distance=..60,sort=random,limit=3] run tag @s add BE.AttackTarget
-        execute if score @s BE.EventTimer matches 25 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
-        execute if score @s BE.EventTimer matches 130..157 as @a[tag=BE.AttackTarget] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 25 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
+        execute if score @s BE.EventTimer matches 130..157 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 130..157 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 # リヒトブリッツェン
     # 攻撃位置決定
@@ -73,6 +73,12 @@
     execute if score @s BE.EventTimer matches 35..191 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     execute if score @s BE.EventTimer matches 201 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     execute if score @s BE.EventTimer matches 201 at @s run tp @s ^ ^ ^6 ~ ~
+
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 72 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
+    execute if score @s BE.EventTimer matches 191 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 201 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
 
 # 終了
     execute if score @s BE.EventTimer matches 237.. run function asset:mob/0410.heiloang/tick/event/plamet/end

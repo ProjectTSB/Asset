@@ -22,7 +22,11 @@
         scoreboard players set @s BE.Phase 0
         scoreboard players set @s BE.ActCount 0
         scoreboard players set @s BE.Idle.Count 0
+        scoreboard players set @s BE.Charge.Count -1
     # エンハンスドディザスターの順番決定
         function asset:mob/0410.heiloang/tick/util/set_ehd_order
     # 移動
         execute at @s run tp @s ^ ^ ^3 ~ 0
+
+# デバッグ
+    # scoreboard players set @s BE.Phase 2

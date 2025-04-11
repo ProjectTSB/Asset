@@ -22,7 +22,7 @@
 
 # 演出
     # 光の柱
-        data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[5f,50f,5f]}}
+        data merge entity @s {start_interpolation:0,interpolation_duration:3,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.2f,0f],scale:[0f,50f,0f]}}
     # 円 1
         particle end_rod ^0 ^ ^-5 0 0 0 0.05 1
         particle end_rod ^0.80206 ^ ^-4.93525 0 0 0 0.05 1

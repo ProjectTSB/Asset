@@ -22,8 +22,7 @@
     execute if score @s BE.Phase matches 1 run function asset:mob/0410.heiloang/tick/act/phase_2/
 
 # フェーズ3
-    # 現状はスキップ
-        execute if score @s BE.Phase matches 2 run scoreboard players add @s BE.Phase 1
+    execute if score @s BE.Phase matches 2 run function asset:mob/0410.heiloang/tick/act/phase_3/
 
 # フェーズ4
     execute if score @s BE.Phase matches 3.. run function asset:mob/0410.heiloang/tick/act/phase_4/

@@ -16,8 +16,9 @@
     function animated_java:tiamat_aj/remove/all
 
 # その他リセット
+    tag @a remove BG.MainTarget
     # function asset:mob/0412.tiamat/tick/util/remove_all_tag
 
 # オブジェクト消去
-    execute as @e[tag=BG.Object] on passengers run kill @s
-    kill @e[tag=BG.Object]
+    execute as @e[tag=BG.Object,distance=..160] on passengers run kill @s
+    kill @e[tag=BG.Object,distance=..160]

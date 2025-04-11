@@ -17,13 +17,13 @@
     execute if score @s BE.Dummy matches 1.. run return run scoreboard players reset @s BE.Dummy
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 10
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Sweep
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @a[tag=BE.Temp.Hit] run function api:damage/
+    execute as @a[tag=BE.Temp.HitFlame] run function api:damage/
     function api:damage/reset
 
 # 終了
     scoreboard players reset @s BE.Dummy
-    tag @a remove BE.Temp.Hit
+    tag @a remove BE.Temp.HitFlame
