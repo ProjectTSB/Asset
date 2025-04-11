@@ -15,11 +15,6 @@
     execute at @p[tag=Victim,distance=..32] run playsound entity.player.splash.high_speed hostile @a ~ ~ ~ 0.4 1.7 0
     execute at @p[tag=Victim,distance=..32] run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 0.5 0 0
 
-# バフを解除
-    effect clear @p[tag=Victim,distance=..32] water_breathing
-    effect clear @p[tag=Victim,distance=..32] night_vision
-    effect clear @p[tag=Victim,distance=..32] dolphins_grace
-
 # 与えるダメージ
     data modify storage api: Argument.Damage set value 34f
 # 属性

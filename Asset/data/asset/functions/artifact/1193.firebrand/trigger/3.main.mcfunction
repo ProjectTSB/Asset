@@ -13,7 +13,7 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1193.firebrand/trigger/vfx
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 1100..1300
+    execute store result storage api: Argument.Damage float 1 run random value 1010..1200
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

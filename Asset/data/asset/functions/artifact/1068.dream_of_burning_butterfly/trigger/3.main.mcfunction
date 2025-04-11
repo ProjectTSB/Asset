@@ -19,14 +19,14 @@
     playsound block.fire.ambient player @a ~ ~ ~ 0.8 1.4
     playsound block.fire.extinguish player @a ~ ~ ~ 0.3 1.4
 
-# 失った体力10につき、火攻撃+5%(最大25%)
+# 失った体力X%につき、火攻撃+P%(最大A%)
 # 補正はEffectAsset側で実装する
 
-# $LostHealthは2.check_conditionで計算済み
+# $LostHealthPerは2.check_conditionで計算済み
 
-# $LostHealthの0.1倍の数値をStackとして燃える蝶の夢エフェクトを付与
+# $LostHealthPerの0.1倍の数値をStackとして燃える蝶の夢エフェクトを付与
     data modify storage api: Argument.ID set value 220
-    execute store result storage api: Argument.Stack int 0.01 run scoreboard players get $LostHealth Temporary
+    execute store result storage api: Argument.Stack int 0.1 run scoreboard players get $LostHealthPer Temporary
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

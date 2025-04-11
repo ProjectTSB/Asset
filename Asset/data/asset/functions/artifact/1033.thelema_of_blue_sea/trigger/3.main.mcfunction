@@ -36,11 +36,11 @@
 # 3回目の攻撃の時、追撃用オブジェクトを召喚
     execute if entity @s[scores={SP.AttackCount=3}] run function asset:artifact/1033.thelema_of_blue_sea/trigger/4.persuit
 
-# ダメージ 基礎火力+現在体力の100%(最大200まで)
+# ダメージ 基礎火力+現在体力の100%
     function api:data_get/health
     execute store result score $Damage Temporary run data get storage api: Health 1.0
     scoreboard players operation $Damage Temporary < $200 Const
-    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 200
+    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 250
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
