@@ -4,6 +4,7 @@
 #
 # @within function asset:artifact/0981.soulfire_burst/trigger/2.check_condition
 
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
@@ -15,9 +16,11 @@
     playsound minecraft:entity.witch.throw player @a ~ ~ ~ 1.5 0.5
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 0.8
     playsound minecraft:block.sculk_shrieker.break player @a ~ ~ ~ 1 1.2
+    playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 1.5 2
 
-# 火の玉オブジェクト召喚
-    data modify storage api: Argument.ID set value 1082
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
-    execute anchored eyes positioned ^ ^ ^1 run function api:object/summon
+# 拡散値
+    data modify storage lib: Argument.Distance set value 1
+    data modify storage lib: Argument.Spread set value 4
+
+# オブジェクトを放つ。ホーミングの都合で、ちょっと上向きに撃つ。
+    execute anchored eyes positioned ^ ^ ^1 rotated ~ ~-5 run function asset:artifact/0981.soulfire_burst/trigger/shoot
