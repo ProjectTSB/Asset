@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0328.poison_of_book/_/tick",
+        "asset:effect/0331.deep_speed/_/tick",
+        "asset:effect/0330.deep_slash/_/tick",
         "asset:effect/0327.honey_poison/_/tick",
         "asset:effect/275.moon_blessing/_/tick",
         "asset:effect/0238.raimei/_/tick",
