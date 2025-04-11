@@ -17,8 +17,10 @@
     execute at @s rotated ~ 0 run function animated_java:frestchika/summon {args:{animation:intro,start_animation:1b}}
 
 # AJモデルのアイテムスロットのデータ設定(Animated Javaのツール側ではまともに反映されないので)
-    data merge entity @e[type=item_display,tag=aj.frestchika.bone.right_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
-    data merge entity @e[type=item_display,tag=aj.frestchika.bone.left_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
+    data merge entity @e[type=item_display,tag=aj.frestchika.node.right_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
+    data merge entity @e[type=item_display,tag=aj.frestchika.node.left_item_display,sort=nearest,limit=1] {interpolation_duration:1,teleport_duration:1,item_display:"thirdperson_righthand"}
+    tag @e[type=item_display,tag=aj.frestchika.node.right_item_display,sort=nearest,limit=1] add A5.Model.RightHandItem
+    tag @e[type=item_display,tag=aj.frestchika.node.left_item_display,sort=nearest,limit=1] add A5.Model.LeftHandItem
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1

@@ -6,3 +6,4 @@
 
 # プレイヤーから数ブロック離れた位置にワープしてくる
     $execute at @r[gamemode=!spectator,distance=..64] rotated $(Rotation) 0 run tp @s ^ ^ ^5
+
