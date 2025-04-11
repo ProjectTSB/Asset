@@ -6,7 +6,7 @@
 # @within asset:mob/0410.heiloang/tick/debug/interrupt.m
 
 # メモ
-    # execute as @e[tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/reset
+    # execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/reset
 
 # 全アニメーション停止
     execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function animated_java:heiloang_aj/animations/pause_all
