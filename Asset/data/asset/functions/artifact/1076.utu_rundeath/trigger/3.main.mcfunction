@@ -21,12 +21,15 @@
     scoreboard players set $TW.Count Temporary 6
 
 # 前方にいるモブにタグをつける
+    execute positioned ^ ^ ^5 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] add TW.Target
+    execute positioned ^ ^ ^10 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..8] add TW.Target
     execute positioned ^ ^ ^30 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] add TW.Target
 
+
 # 前方にいるモブ"が"不可視の即着弾飛ばす
-    execute as @e[type=#lib:living,tag=Enemy,tag=TW.Target,tag=!Uninterferable,distance=..25,sort=random] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this,distance=..25] eyes run function asset:artifact/1076.utu_rundeath/trigger/shot
+    execute as @e[type=#lib:living,tag=Enemy,tag=TW.Target,tag=!Uninterferable,distance=..40,sort=random] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this,distance=..50] eyes run function asset:artifact/1076.utu_rundeath/trigger/shot
 
 # リセット
-    execute positioned ^ ^ ^30 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] remove TW.Target
-    execute positioned ^ ^ ^30 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] remove Landing
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..50] remove TW.Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..50] remove Landing
     scoreboard players reset $TW.Count Temporary
