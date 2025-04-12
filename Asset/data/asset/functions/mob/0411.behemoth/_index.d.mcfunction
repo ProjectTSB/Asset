@@ -15,6 +15,8 @@
     #declare function animated_java:behemoth_aj/animations/2_move/tween
     #declare function animated_java:behemoth_aj/animations/3_0_cast_start/tween
     #declare function animated_java:behemoth_aj/animations/3_1_casting/tween
+    #declare function animated_java:behemoth_aj/animations/3_2_cast_start_dive/tween
+    #declare function animated_java:behemoth_aj/animations/3_3_casting_dive/tween
     #declare function animated_java:behemoth_aj/animations/4_breath/tween
     #declare function animated_java:behemoth_aj/animations/4_breath_continue/tween
     #declare function animated_java:behemoth_aj/animations/5_flatten/tween
@@ -27,7 +29,7 @@
     #declare function animated_java:behemoth_aj/animations/10_2_blazing_end/tween
     #declare function animated_java:behemoth_aj/animations/11_offering/tween
     # - 自動生成タグ
-    #declare tag aj.data
+    #declare tag aj.global.data
     #declare tag aj.behemoth_aj.animation.0_start.playing
     #declare tag aj.behemoth_aj.animation.1_idle.playing
     #declare tag aj.behemoth_aj.animation.2_move.playing
@@ -42,6 +44,7 @@
     # - 共通
     #declare tag BF.EntityRoot 自分自身（当たり判定）
     #declare tag BF.ModelRoot AJモデルのRootEntity
+    #declare tag BE.EntityRoot ヘイローンのRootEntity
     #declare tag BE.ModelRoot ヘイローンのRootEntity
     #declare tag BG.ModelRoot ティアマットのRootEntity
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)

@@ -14,7 +14,7 @@
     # ターゲットを向く
         execute if score @s BG.EventTimer matches 1..95 run function asset:mob/0412.tiamat/tick/util/rotate_to_target
     # 口元に氷の予兆
-        execute if score @s BG.EventTimer matches 1..110 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] on passengers if entity @s[tag=aj.data] run function asset:mob/0412.tiamat/tick/event/darkbreath/prediction_ice.m with entity @s data.locators.pos_head
+        execute if score @s BG.EventTimer matches 1..110 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] on passengers if entity @s[tag=aj.global.data] run function asset:mob/0412.tiamat/tick/event/darkbreath/prediction_ice.m with entity @s data.locators.pos_head
 
 # 攻撃
     # アニメーション再生

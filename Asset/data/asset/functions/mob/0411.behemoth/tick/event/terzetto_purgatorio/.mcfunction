@@ -24,9 +24,9 @@
     # ターゲット決定
         execute if score @s BF.EventTimer matches 140 run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/set_target
     # 予兆
-        execute if score @s BF.EventTimer matches 140..348 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/prediction_line.m with entity @s data.locators.pos_head
+        execute if score @s BF.EventTimer matches 140..348 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/prediction_line.m with entity @s data.locators.pos_head
     # 攻撃
-        execute if score @s BF.EventTimer matches 348 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack.m with entity @s data.locators.pos_head
+        execute if score @s BF.EventTimer matches 348 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack.m with entity @s data.locators.pos_head
 
 # フレアダイブ
     # 中心点の横方向、左右どちらかに移動
@@ -41,8 +41,8 @@
     # アニメーション再生
         execute if score @s BF.EventTimer matches 368 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
         execute if score @s BF.EventTimer matches 388 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
-        execute if score @s BF.EventTimer matches 428 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
-        execute if score @s BF.EventTimer matches 448 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
+        execute if score @s BF.EventTimer matches 428 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_2_cast_start_dive
+        execute if score @s BF.EventTimer matches 448 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_3_casting_dive
         execute if score @s BF.EventTimer matches 462 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/7_dive
     # 移動
         execute if score @s BF.EventTimer matches 477..484 at @s run tp @s ^ ^ ^2.8

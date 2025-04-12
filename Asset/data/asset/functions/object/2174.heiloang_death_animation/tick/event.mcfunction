@@ -17,8 +17,8 @@
     execute if score @s General.Object.Tick matches 35 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     execute if score @s General.Object.Tick matches 54 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
     execute on passengers run scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches 1..84 on passengers if entity @s[tag=aj.data] run function asset:object/2174.heiloang_death_animation/tick/particle.m with entity @s data.locators.locator_root
-    execute if score @s General.Object.Tick matches 70..118 on passengers if entity @s[tag=aj.data] run function asset:object/2174.heiloang_death_animation/tick/particle_end.m with entity @s data.locators.locator_root
+    execute if score @s General.Object.Tick matches 1..84 on passengers if entity @s[tag=aj.global.data] run function asset:object/2174.heiloang_death_animation/tick/particle.m with entity @s data.locators.locator_root
+    execute if score @s General.Object.Tick matches 70..118 on passengers if entity @s[tag=aj.global.data] run function asset:object/2174.heiloang_death_animation/tick/particle_end.m with entity @s data.locators.locator_root
 
 # モデル消去
     execute if score @s General.Object.Tick matches 119.. run function animated_java:heiloang_aj/remove/all

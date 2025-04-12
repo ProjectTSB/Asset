@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/hellfire/
 
 # 攻撃位置決定
-    execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0410.heiloang/tick/event/hellfire/set_attack_position.m with entity @s data.locators.locator_head
+    execute as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0410.heiloang/tick/event/hellfire/set_attack_position.m with entity @s data.locators.locator_head
 
 # 攻撃
     data modify storage api: Argument.ID set value 2107

@@ -46,7 +46,7 @@
     #declare function animated_java:heiloang_aj/animations/99_disaster_cast/tween
     #declare function animated_java:heiloang_aj/animations/99_disaster/tween
     # - 自動生成タグ
-    #declare tag aj.data
+    #declare tag aj.global.data
     #declare tag aj.heiloang_aj.animation.1_idle.playing
     #declare tag aj.heiloang_aj.animation.2_0_common_cast_start.playing
     #declare tag aj.heiloang_aj.animation.2_1_common_casting.playing

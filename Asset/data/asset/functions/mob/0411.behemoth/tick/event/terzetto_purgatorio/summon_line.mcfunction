@@ -9,7 +9,6 @@
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 2181
     function api:object/summon
-
 # タグ付与
     tag @e[type=item_display,tag=2181.Line,sort=nearest,limit=1] add BF.Object
 

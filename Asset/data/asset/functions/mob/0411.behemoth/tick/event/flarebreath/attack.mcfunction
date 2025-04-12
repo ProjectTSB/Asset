@@ -29,7 +29,7 @@
     tag @a remove DXYZ
 
 # 口元
-    execute as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/flarebreath/effect_flame.m with entity @s data.locators.pos_head
+    execute as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0411.behemoth/tick/event/flarebreath/effect_flame.m with entity @s data.locators.pos_head
 
 # 着弾
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgIxEBsAzGQAwAsAtGQGZkDGLTA7AE4+LAbQoBWERTJxxTCbS7smYXBgCGAWwTJAW74ACCqrAx1AJy0BnJOC4B7PBghIATANzszdzTbAA3dRQ8HXAADyQGXCgIgF8Y3Ag7XwCgkLBwxEiwaMRxBjjcO3Z2SzhnTNwZAC80ODMI3DRLACE4GrqAUQBHPECUKABlUy44EkR2QNK4gF0gA_3

@@ -5,7 +5,7 @@
 # @within asset:mob/0411.behemoth/tick/event/terzetto_aligning/
 
 # 攻撃位置決定
-    execute as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.data] run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/set_attack_position.m with entity @s data.locators.pos_head
+    execute as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0411.behemoth/tick/event/terzetto_aligning/set_attack_position.m with entity @s data.locators.pos_head
 
 # 攻撃
     data modify storage api: Argument.ID set value 2107
