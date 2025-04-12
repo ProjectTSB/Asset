@@ -27,9 +27,9 @@
 
 
 # 前方にいるモブ"が"不可視の即着弾飛ばす
-    execute as @e[type=#lib:living,tag=Enemy,tag=TW.Target,tag=!Uninterferable,distance=..40,sort=random] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this,distance=..50] eyes run function asset:artifact/1076.utu_rundeath/trigger/shot
+    execute as @e[type=#lib:living,tag=Enemy,tag=TW.Target,tag=!Uninterferable,distance=..100,sort=random] at @s anchored eyes positioned ^ ^ ^ facing entity @p[tag=this,distance=..100] eyes run function asset:artifact/1076.utu_rundeath/trigger/shot
 
 # リセット
-    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..50] remove TW.Target
-    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..50] remove Landing
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..100] remove TW.Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..100] remove Landing
     scoreboard players reset $TW.Count Temporary
