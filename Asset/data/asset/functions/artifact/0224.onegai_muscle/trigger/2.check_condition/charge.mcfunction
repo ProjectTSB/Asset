@@ -6,28 +6,30 @@
 
 #> Private
 # @private
-    #declare score_holder $Charge
+    #declare score_holder $Diff
 
 # 演出
     particle minecraft:trial_spawner_detection ~ ~ ~ 1 0.4 1 0 1
 
-# チャージ用エフェクトを検知
-    data modify storage api: Argument.ID set value 332
-    function api:entity/mob/effect/get/from_id
+# gametimeと最後に使用したTickの差を求める
+    execute store result score $Diff Temporary run time query gametime
+    scoreboard players operation $Diff Temporary -= @s 68.LatestChargeTick
 
-# チャージの数値を取得
-    execute store result score $Charge Temporary run data get storage api: Return.Effect.Field.Charge
+# LatestChargeTickを更新
+    execute store result score @s 68.LatestChargeTick run time query gametime
 
-# 初期化
-    execute unless score $Charge Temporary matches -2147483648..2147483647 run scoreboard players set $Charge Temporary 0
+# $Diffの差が1以下なら、チャージを+1
+    execute if score $Diff Temporary matches ..1 run scoreboard players add @s 68.Charge 1
+
+# $Diffの差が2以上なら、チャージをリセット
+    execute if score $Diff Temporary matches 2.. run scoreboard players reset @s 68.Charge
 
 # チャージが20以上でなければCanUsedを削除
-    execute if score $Charge Temporary matches ..20 run tag @s remove CanUsed
+    execute unless score @s 68.Charge matches 20.. run tag @s remove CanUsed
 
-# チャージ用エフェクトをgive
-    data modify storage api: Argument.ID set value 332
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+# チャージが20以上溜まったならスコアをリセット
+    execute if score @s 68.Charge matches 20.. run scoreboard players reset @s 68.LatestChargeTick
+    execute if score @s 68.Charge matches 20.. run scoreboard players reset @s 68.Charge
 
 # リセット
-    scoreboard players reset $Charge Temporary
+    scoreboard players reset $Diff Temporary
