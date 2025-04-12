@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+2","color":"white"}','{"text":"最大体力-10%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]','{"text":"計1000ダメージ与える、または被ダメージ時","color":"white"}','{"text":"対象または攻撃者に無属性ダメージを与え","color":"white"}','{"text":"攻撃+1%、耐性-1%を10秒間得る(最大20スタック)","color":"white"}','[{"text":"破滅の騎士のための装備","color":"gray"}]','[{"text":"傷付く度に、快楽を求めた","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"破滅の騎士のための装備","color":"gray"}]','[{"text":"傷付く度に、快楽を求めた","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,12 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備効果 (int) (オプション)
+    data modify storage asset:artifact Equipment.SetEffectID set value 262
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:-0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.knockback_resistance",Amount:0.2d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
