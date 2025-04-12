@@ -11,7 +11,7 @@
 
 # 演出
     particle minecraft:trial_spawner_detection ~ ~ ~ 2 0.4 2 0 120
-    particle angry_villager ~ ~1 ~ 0.5 0.5 0.5 0 10 normal @a
+    particle angry_villager ~ ~1 ~ 1.2 0.5 1.2 0 10 normal @a
     playsound minecraft:entity.zombie_villager.cure player @a ~ ~ ~ 0.7 2
 
 # バリアバフ
