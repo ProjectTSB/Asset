@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0262.catastrophe/_/tick",
         "asset:effect/0239.thorn_armor/_/tick",
         "asset:effect/0238.raimei/_/tick",
         "asset:effect/0297.life_is_transitory/_/tick",
@@ -57,7 +58,6 @@
         "asset:effect/0612.infringement/_/tick",
         "asset:effect/0617.twins_sight/_/tick",
         "asset:effect/0615.wave_curse/_/tick",
-        "asset:effect/0262.catastrophe/_/tick",
         "asset:effect/0263.chivalry_of_ruin/_/tick",
         "asset:effect/0201.magic_shield/_/tick",
         "asset:effect/0613.white_curse/_/tick",
