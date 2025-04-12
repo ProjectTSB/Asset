@@ -14,4 +14,5 @@
 # リセット
     function api:damage/reset
 
+# カウント減らす
     scoreboard players remove $TW.Count Temporary 1

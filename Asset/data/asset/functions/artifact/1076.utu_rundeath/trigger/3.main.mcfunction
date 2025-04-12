@@ -13,9 +13,9 @@
     title @s times 0 2 2t
     title @s title {"text":"\uE010","font":"screen_effect","color":"#00000"}
 # 音
-    playsound minecraft:block.piston.extend player @a ~ ~ ~ 1 2
-    playsound minecraft:block.piston.extend player @a ~ ~ ~ 1 2
-    playsound minecraft:block.piston.extend player @a ~ ~ ~ 1 2
+    playsound minecraft:block.piston.extend player @a[distance=..10] ~ ~ ~ 1 2
+    playsound minecraft:block.piston.extend player @a[distance=..10] ~ ~ ~ 1 2
+    playsound minecraft:block.piston.extend player @a[distance=..10] ~ ~ ~ 1 2
 
 # 最大ヒット数
     scoreboard players set $TW.Count Temporary 6
