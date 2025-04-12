@@ -5,4 +5,4 @@
 # @within asset:mob/alias/439/summon
 
 # 元となるEntityを召喚する
-    summon skeleton ~ ~ ~ {Silent:1b,NoAI:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}
+    summon skeleton ~ ~ ~ {Silent:1b,Tags:["MobInit","AlwaysInvisible"],DeathLootTable:"empty"}
