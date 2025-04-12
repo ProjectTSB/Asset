@@ -31,5 +31,5 @@
 
 # リセット
     tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..100] remove TW.Target
-    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..100] remove Landing
+    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..100] remove TW.Landing
     scoreboard players reset $TW.Count Temporary
