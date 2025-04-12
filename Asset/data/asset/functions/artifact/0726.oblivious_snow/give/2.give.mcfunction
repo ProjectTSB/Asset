@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"白銀の面影","color":"#ABF4FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+10%","color":"aqua"}]','{"text":"被回復量-15%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"忘却の白雪","color":"#ABF4FF"}]','[{"text":"水攻撃+20% ","color":"aqua"},{"text":"被回復量-10%","color":"dark_red"}]','{"text":"攻撃時、対象に物理水属性ダメージを与え","color":"white"}','{"text":"常に周囲の敵へ鈍足を付与する","color":"white"}','[{"text":"「故郷の面影はなく、白銀の荒野が広がるのみ。","color":"gray","italic":true}]','[{"text":" ただ氷風と深雪だけの地と化していた。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"「故郷の面影はなく、白銀の荒野が広がるのみ。","color":"gray","italic":true}]','[{"text":" ただ氷風と深雪だけの地と化していた。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,13 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 (int) (オプション)
+    data modify storage asset:artifact Equipment.SetEffectID set value 243
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"receive_heal",Amount:-0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
