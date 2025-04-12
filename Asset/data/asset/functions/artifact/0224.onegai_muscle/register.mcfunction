@@ -1,4 +1,4 @@
-#> asset:artifact/0224.onegai_muscle_1/register
+#> asset:artifact/0224.onegai_muscle/register
 #
 # 神器プールへの登録処理
 #
