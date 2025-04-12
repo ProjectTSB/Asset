@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"セレスティアル・ハーモニー","color":"#5577FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃時、対象に星を降らせ追撃を行う"}','{"text":"追撃する星はMPが少ないほど増加する"}','{"text":"星の調べを奏でる天上の剣。","color":"gray"}','{"text":"剣の響きに応じて、夜空は星を返す。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃時、対象に星を降らせ追撃を行う"}','{"text":"追撃する星の数はMP割合が少ないほど増加する"}','{"text":"星の調べを奏でる天上の剣。","color":"gray"}','{"text":"剣の響きに応じて、夜空は星を返す。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

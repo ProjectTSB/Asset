@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1279.wing_boots/trigger/dis_equip/",
+        "asset:artifact/1125.moon_accessory/trigger/dis_equip/",
         "asset:artifact/0860.angel_wing/trigger/dis_equip/",
         "asset:artifact/0207.life_is_transitory/trigger/dis_equip/",
         "asset:artifact/0561.solitariness/trigger/dis_equip/",

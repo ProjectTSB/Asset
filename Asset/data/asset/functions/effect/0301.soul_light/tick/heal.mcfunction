@@ -14,8 +14,8 @@
 # 回復
     data modify storage api: Argument.Heal set from storage asset:context this.Heal
     execute as @a if score @s UserID = $UserID Temporary run function api:heal/modifier
-    function api:heal/
     data modify storage api: Argument.ApplyTrigger set value false
+    function api:heal/
     function api:heal/reset
 
 # リセット
