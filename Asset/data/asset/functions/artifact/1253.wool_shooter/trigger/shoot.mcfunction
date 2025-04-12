@@ -14,8 +14,7 @@
     execute if entity @s[distance=..1] unless block ~ ~ ~ #lib:unbreakable run tag @s remove Landing
 
 # 羊毛設置
-    execute if predicate api:area/is_breakable run setblock ~ ~ ~ white_wool keep
-
+    execute if predicate api:area/is_breakable if block ~ ~ ~ #lib:air run setblock ^ ^ ^ white_wool replace
 
 # 再帰
     execute positioned ^ ^ ^1 if entity @s[tag=YT.FullCharge,tag=!Landing,distance=..16] run function asset:artifact/1253.wool_shooter/trigger/shoot
