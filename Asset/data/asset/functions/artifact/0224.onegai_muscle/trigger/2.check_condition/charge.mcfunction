@@ -1,8 +1,8 @@
-#> asset:artifact/0224.onegai_muscle_1/trigger/2.check_condition/charge
+#> asset:artifact/0224.onegai_muscle/trigger/2.check_condition/charge
 #
 #
 #
-# @within function asset:artifact/0224.onegai_muscle_1/trigger/2.check_condition
+# @within function asset:artifact/0224.onegai_muscle/trigger/2.check_condition
 
 #> Private
 # @private
