@@ -15,6 +15,9 @@
     scoreboard players set @s General.Mob.Tick -60
     scoreboard players reset @s 4V.Count
 
+# HitList初期化
+    data modify storage asset:context this.HitList set value {}
+
 # モデルを戻しておく
     execute on passengers run data modify entity @s item.tag.CustomModelData set value 20052
     execute on passengers positioned as @s run tp @s ~ ~ ~ ~ 0

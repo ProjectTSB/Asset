@@ -15,6 +15,7 @@
     #declare tag 4V.SkillBeeBomb
     #declare tag 4V.SkillTackleFormation
     #declare tag 4V.SpawnMarker
+    #declare tag 4V.Hit
     #declare tag 4V.Target
     #declare score_holder $Count
     #declare score_holder $Random

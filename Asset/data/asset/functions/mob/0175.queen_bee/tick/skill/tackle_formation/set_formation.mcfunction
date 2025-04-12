@@ -26,6 +26,3 @@
 
 # リセット
     tag @e[type=zombie,tag=TargetBee,distance=..30] remove TargetBee
-
-
-#
