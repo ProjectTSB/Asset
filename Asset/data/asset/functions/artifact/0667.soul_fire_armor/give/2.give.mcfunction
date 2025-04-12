@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂炎纏","color":"#01A7AC","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+2.5% ","color":"dark_green"},{"text":"火耐性+10% 火攻撃+5% ","color":"red"}]','[{"text":"MP回復量+2% ","color":"green"},{"text":"最大体力-10%","color":"dark_red"}]','{"text":"魂炎を纏う者に代償を。","color":"#017C80","italic":true}','{"text":"代償背負いし者へ力を。","color":"#017C80","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"魂炎を纏う者に代償を。","color":"#017C80","italic":true}','{"text":"代償背負いし者へ力を。","color":"#017C80","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,15 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# セット装備効果 (int) (オプション)
+    data modify storage asset:artifact Equipment.SetEffectID set value 232
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/physical",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/fire",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.02d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:-0.10d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
