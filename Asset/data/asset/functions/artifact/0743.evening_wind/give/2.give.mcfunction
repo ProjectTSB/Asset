@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"夕焼けの風","color":"#FF8000"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+7.5% ","color":"red"},{"text":"移動速度+5%","color":"white"}]','[{"text":"水攻撃-5%","color":"dark_red"}]','[{"text":"黄昏の輝きを秘めた羽。","color":"gray"}]','[{"text":"淡い茜色の光を放っている。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"黄昏の輝きを秘めた羽。","color":"gray"}]','[{"text":"淡い茜色の光を放っている。","color":"gray"}]','{"text":"装備時、MPを150消費する。","color":"dark_purple"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -51,10 +51,11 @@
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
-# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
-# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+# 装備時補正 (Component[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
