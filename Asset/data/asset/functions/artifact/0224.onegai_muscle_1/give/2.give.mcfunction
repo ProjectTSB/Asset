@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 224
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
+    data modify storage asset:artifact Item set value "minecraft:ender_eye"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"お願いマッスル","color":"green"},{"text":" [I類]","color":"red"}]'
+    data modify storage asset:artifact Name set value '[{"text":"お願いマッスル","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"ザッツアグレート大胸筋！"}]','[{"text":"腕力","color":"red"},{"text":"が10秒間上昇する","color":"white"}]','[{"text":"体を限界まで追い込むので注意！"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"バリアを10得る"}]','{"text":"ハイ！ハイ！ハイ！ハイ！","color":"gray"}','{"text":"ワン！ツー！ワン！ツー！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -23,11 +23,11 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"1秒間長押し"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -45,14 +45,14 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 50
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
