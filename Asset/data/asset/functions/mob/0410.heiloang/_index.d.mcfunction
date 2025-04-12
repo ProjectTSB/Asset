@@ -166,6 +166,10 @@
     #declare tag BE.Temp.AttackRotation 角度決定用
     #declare tag BE.Temp.AttackPosition 位置決定用
     #declare tag BE.Temp.GroundPosition 位置決定用
+    #declare tag BE.Temp.EhdPosition エンハンスドディザスター攻撃位置
+    #declare tag BE.Temp.EhdPosition.Fire エンハンスドディザスター攻撃位置
+    #declare tag BE.Temp.EhdPosition.Ice エンハンスドディザスター攻撃位置
+    #declare tag BE.Temp.EhdPosition.Thunder エンハンスドディザスター攻撃位置
     #declare tag BE.Temp.Adamant.SummonPosition アダマントスパイク召喚位置
     #declare tag BE.Temp.Blitz.SummonPosition リヒトブリッツェン召喚位置
     #declare tag BE.Temp.Blitz.PatternB リヒトブリッツェンパターンB

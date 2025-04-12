@@ -46,5 +46,8 @@
 # 耐性解除
     execute if score @s BF.EventTimer matches 31 run function asset:mob/0411.behemoth/tick/util/end_armor
 
+# 無敵化
+    execute if score @s BF.EventTimer matches 420 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+
 # 終了
     execute if score @s BF.EventTimer matches 900.. run function asset:mob/0411.behemoth/tick/event/offering_end/end

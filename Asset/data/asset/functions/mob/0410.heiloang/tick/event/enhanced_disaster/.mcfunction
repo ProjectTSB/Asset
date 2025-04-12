@@ -12,7 +12,8 @@
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 23 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # 属性予告
-        execute if score @s BE.EventTimer matches 25 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:1}
+        execute if score @s BE.EventTimer matches 25.. as @e[type=area_effect_cloud,tag=BE.Temp.EhdPosition,distance=..100] at @s run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element
+        # execute if score @s BE.EventTimer matches 25 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:1}
         # execute if score @s BE.EventTimer matches 45 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:2}
         # execute if score @s BE.EventTimer matches 65 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:3}
     # 中心点回転

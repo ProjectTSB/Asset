@@ -13,7 +13,7 @@
     particle explosion ~ ~1 ~ 3 1 3 0.1 10 force
     particle flash ~ ~1 ~ 3 1 3 0.1 5 force
     data modify storage api: Argument.ID set value 2127
-    execute positioned ~ ~0.3 ~ run function api:object/summon
+    execute positioned ~ ~1 ~ run function api:object/summon
 
 # 終了
     kill @s
