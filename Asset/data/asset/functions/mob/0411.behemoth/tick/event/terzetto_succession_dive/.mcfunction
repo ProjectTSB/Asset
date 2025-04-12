@@ -9,6 +9,26 @@
 
 # 移動
     # アニメーション再生
+        execute if score @s BF.EventTimer matches 336 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+    # 中心点の正面方向に移動
+        execute if score @s BF.EventTimer matches 335 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
+
+# 無敵化
+    execute if score @s BF.EventTimer matches 336 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
+
+# モデルを自身の位置に合わせる
+    execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
+
+# 終了
+    execute if score @s BF.EventTimer matches 376.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/end
+
+
+# 以下、normal以上のみ
+# 中心に移動し、フラッテン実行
+    execute if predicate api:global_vars/difficulty/easy run return 0
+
+# 移動
+    # アニメーション再生
         execute if score @s BF.EventTimer matches 81 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
     # 中心点に移動
         execute if score @s BF.EventTimer matches 81 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^ ^ ~ 0
@@ -45,17 +65,7 @@
 # 移動
     # アニメーション再生
         execute if score @s BF.EventTimer matches 278 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
-        execute if score @s BF.EventTimer matches 336 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
-    # 中心点の正面方向に移動
-        execute if score @s BF.EventTimer matches 335 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
-
-# モデルを自身の位置に合わせる
-    execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 無敵化
     execute if score @s BF.EventTimer matches 81 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
     execute if score @s BF.EventTimer matches 278 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
-    execute if score @s BF.EventTimer matches 336 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
-
-# 終了
-    execute if score @s BF.EventTimer matches 376.. run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/end
