@@ -77,10 +77,6 @@
         "asset:artifact/0932.equal_speed_charlie_london/trigger/dis_equip/",
         "asset:artifact/0961.light_charm/trigger/dis_equip/",
         "asset:artifact/0960.heavy_charm/trigger/dis_equip/",
-        "asset:artifact/0930.z_flag/trigger/dis_equip/",
-        "asset:artifact/0778.jade_armor/trigger/dis_equip/",
-        "asset:artifact/0777.jade_armor/trigger/dis_equip/",
-        "asset:artifact/0776.jade_armor/trigger/dis_equip/",
-        "asset:artifact/0775.jade_armor/trigger/dis_equip/"
+        "asset:artifact/0930.z_flag/trigger/dis_equip/"
     ]
 }
