@@ -10,8 +10,9 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
+    particle minecraft:trial_spawner_detection ~ ~ ~ 2 0.4 2 0 120
+    particle angry_villager ~ ~1 ~ 0.5 0.5 0.5 0 10 normal @a
     playsound minecraft:entity.zombie_villager.cure player @a ~ ~ ~ 0.7 2
-    particle angry_villager ~ ~1 ~ 0.5 0.5 0.5 0 30 normal @a
 
 # バリアバフ
     data modify storage api: Argument.ID set value 333

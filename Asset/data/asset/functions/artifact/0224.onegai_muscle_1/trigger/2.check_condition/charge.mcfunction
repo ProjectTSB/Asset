@@ -8,6 +8,9 @@
 # @private
     #declare score_holder $Charge
 
+# 演出
+    particle minecraft:trial_spawner_detection ~ ~ ~ 1 0.4 1 0 1
+
 # チャージ用エフェクトを検知
     data modify storage api: Argument.ID set value 332
     function api:entity/mob/effect/get/from_id
