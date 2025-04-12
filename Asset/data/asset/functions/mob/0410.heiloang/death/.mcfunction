@@ -29,6 +29,9 @@
     title @a[distance=..80] title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
     data modify storage api: Argument.ID set value 2174
     function api:object/summon
+    data modify storage api: Argument set value {ID:655,Duration:300,Stack:5}
+    execute as @a[distance=..160] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # その他リセット
     function asset:mob/0410.heiloang/tick/util/remove_all_tag

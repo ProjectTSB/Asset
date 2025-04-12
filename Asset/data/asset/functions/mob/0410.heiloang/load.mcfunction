@@ -17,3 +17,4 @@
         scoreboard objectives add BE.Pb.Count dummy
         scoreboard objectives add BE.Idle.Count dummy
         scoreboard objectives add BE.Charge.Count dummy
+        scoreboard objectives add BE.NvTimer dummy

@@ -32,8 +32,9 @@
         # 遠くにいる人に時間変更を通知
             execute if score @s BE.EventTimer matches 230 run playsound entity.ender_dragon.growl hostile @a[distance=160..] ~ ~ ~ 0.3 0.7 0.3
         execute if score @s BE.EventTimer matches 290 run time set 15000
-        execute if score @s BE.EventTimer matches 290 run function asset:mob/0410.heiloang/tick/util/give_nightvision
-        execute if score @s BE.EventTimer matches 315 run function asset:mob/0410.heiloang/tick/util/give_nightvision
+        execute if score @s BE.EventTimer matches 290 run data modify storage api: Argument set value {ID:655,Duration:500,Stack:5}
+        execute if score @s BE.EventTimer matches 290 as @a[distance=..160] run function api:entity/mob/effect/give
+        execute if score @s BE.EventTimer matches 290 run function api:entity/mob/effect/reset
         execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~-5 ~-25 ~25 ~ ~25 minecraft:crimson_forest
         execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~ ~-25 ~25 ~5 ~25 minecraft:crimson_forest
         execute if score @s BE.EventTimer matches 290 at @e[type=marker,tag=BE.CenterPosition,distance=..160] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:crimson_forest
