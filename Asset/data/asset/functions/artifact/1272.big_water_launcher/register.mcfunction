@@ -1,4 +1,4 @@
-#> asset:artifact/1272_big_water_launcher/register
+#> asset:artifact/1272.big_water_launcher/register
 #
 # 神器プールへの登録処理
 #
