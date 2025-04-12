@@ -102,8 +102,9 @@
     #declare objective aj.99_disaster.frame
     #
     # - 共通
-    #declare tag BE.EntityRoot 自分自身（当たり判定）
+    #declare tag BE.EntityRoot 自分自身
     #declare tag BE.ModelRoot AJモデルのRootEntity
+    #declare tag BE.Hitbox 当たり判定
     #declare tag BE.CenterPosition 中心点
     #
     # - 他Mob

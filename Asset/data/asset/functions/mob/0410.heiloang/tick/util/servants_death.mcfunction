@@ -6,6 +6,15 @@
 #    function asset:mob/0411.behemoth/death/
 #    function asset:mob/0412.tiamat/death/
 
+# 一時的に無敵解除
+    function asset:mob/0410.heiloang/tick/util/end_invulnerable
+
+# 割合ダメージ
+    function asset:mob/0410.heiloang/tick/util/servants_death_selfdamage
+
+# 無敵再開
+    function asset:mob/0410.heiloang/tick/util/start_invulnerable
+
 # 眷属が両方倒された場合、怯み
 # 連携技の最中は優先してキャンセルを使用する
     execute if entity @s[tag=BE.State.BehemothDeath,tag=BE.State.TiamatDeath,tag=!BE.Skill.OfferingEnd] run function asset:mob/0410.heiloang/tick/util/servants_death_damage

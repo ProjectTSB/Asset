@@ -12,4 +12,5 @@
     tag @s add ExtendedCollision
     tag @s add AlwaysInvisible
     tag @s add ProcessCommonTag
+    tag @s add BE.Hitbox
     # effect give @s instant_health infinite 0 true
