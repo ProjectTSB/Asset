@@ -7,6 +7,7 @@
 # 演出
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0.7
     data modify storage api: Argument.ID set value 2120
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -1f]
     execute positioned ~ ~ ~ run function api:object/summon
 
 # ダメージ

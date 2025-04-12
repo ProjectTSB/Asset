@@ -20,7 +20,6 @@
     data modify storage api: Argument.FieldOverride.OverrideTransform set value [48.0000f,0.0000f,0.0000f,0.0000f,0.0000f,48.0000f,0.0000f,-3.6250f,0.0000f,0.0000f,48.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]
     data modify storage api: Argument.FieldOverride.OverrideBillboard set value "vertical"
     data modify storage api: Argument.FieldOverride.OverrideSubScale set value [32f, 32f, 32f]
-    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -64f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ rotated ~ ~ run function api:object/summon
     data modify storage api: Argument.ID set value 2120

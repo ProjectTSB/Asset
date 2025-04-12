@@ -11,7 +11,7 @@
     data modify storage api: Argument.FieldOverride.OverrideBillboard set value "fixed"
     data modify storage api: Argument.FieldOverride.OverrideSubScale set value [4f, 4f, 4f]
     data modify storage api: Argument.FieldOverride.OverrideSubRotation set value [0f, 1f, 0f, 0f]
-    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, -7f, 0f]
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -1f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ rotated ~ ~ run function api:object/summon
     data modify storage api: Argument.ID set value 2120
@@ -19,7 +19,7 @@
     data modify storage api: Argument.FieldOverride.OverrideBillboard set value "fixed"
     data modify storage api: Argument.FieldOverride.OverrideSubScale set value [4f, 4f, 4f]
     data modify storage api: Argument.FieldOverride.OverrideSubRotation set value [0f, 1f, 0f, 0f]
-    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, -7f, 0f]
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -1f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ run function api:object/summon
     data modify storage api: Argument.ID set value 2120
@@ -27,7 +27,7 @@
     data modify storage api: Argument.FieldOverride.OverrideBillboard set value "fixed"
     data modify storage api: Argument.FieldOverride.OverrideSubScale set value [4f, 4f, 4f]
     data modify storage api: Argument.FieldOverride.OverrideSubRotation set value [0f, 1f, 0f, 0f]
-    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, -7f, 0f]
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -1f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ run function api:object/summon
     data modify storage api: Argument.ID set value 2120
@@ -35,7 +35,7 @@
     data modify storage api: Argument.FieldOverride.OverrideBillboard set value "fixed"
     data modify storage api: Argument.FieldOverride.OverrideSubScale set value [4f, 4f, 4f]
     data modify storage api: Argument.FieldOverride.OverrideSubRotation set value [0f, 1f, 0f, 0f]
-    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, -7f, 0f]
+    data modify storage api: Argument.FieldOverride.OverrideSubTranslation set value [0f, 0f, -1f]
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute positioned ~ ~ ~ run function api:object/summon
 
