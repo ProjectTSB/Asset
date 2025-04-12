@@ -84,10 +84,6 @@
         "asset:artifact/0778.jade_armor/trigger/dis_equip/",
         "asset:artifact/0777.jade_armor/trigger/dis_equip/",
         "asset:artifact/0776.jade_armor/trigger/dis_equip/",
-        "asset:artifact/0775.jade_armor/trigger/dis_equip/",
-        "asset:artifact/0707.mage_hat/trigger/dis_equip/",
-        "asset:artifact/0708.mage_robe_upper/trigger/dis_equip/",
-        "asset:artifact/0709.mage_robe_lower/trigger/dis_equip/",
-        "asset:artifact/0710.mage_boots/trigger/dis_equip/"
+        "asset:artifact/0775.jade_armor/trigger/dis_equip/"
     ]
 }
