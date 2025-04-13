@@ -17,21 +17,22 @@
     execute at @e[type=marker,tag=BE.CenterPosition] run fillbiome ~-25 ~5 ~-25 ~25 ~10 ~25 minecraft:the_void
     # effect clear @a[distance=..160] night_vision
 
+# 死亡演出
+    title @a[distance=..80] times 1 4 3
+    title @a[distance=..80] title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
+    data modify storage api: Argument.ID set value 2174
+    data modify storage api: Argument.FieldOverride.Pos set from entity @e[type=marker,tag=BE.CenterPosition,distance=160,limit=1] Pos
+    function api:object/summon
+    data modify storage api: Argument set value {ID:655,Duration:300,Stack:5}
+    execute as @a[distance=..160] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # 中心点消去
     kill @e[type=marker,tag=BE.CenterPosition]
 
 # 当たり判定消去
     execute as @e[type=item_display,tag=BE.ModelRoot] run function animated_java:heiloang_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/death/kill_hitbox'}
     # function animated_java:heiloang_aj/remove/all
-
-# 死亡演出
-    title @a[distance=..80] times 1 4 3
-    title @a[distance=..80] title {"text":"\uE010","font":"screen_effect","color":"#E8E8E8"}
-    data modify storage api: Argument.ID set value 2174
-    function api:object/summon
-    data modify storage api: Argument set value {ID:655,Duration:300,Stack:5}
-    execute as @a[distance=..160] run function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
 
 # その他リセット
     function asset:mob/0410.heiloang/tick/util/remove_all_tag
