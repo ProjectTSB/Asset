@@ -2,7 +2,7 @@
 #
 # 警告音
 #
-# @within function asset:object/2141.louvert_soul_bomb/tick/
+# @within function asset:object/2141.louvert_soul_bomb/tick/process
 
 execute if score @s General.Object.Tick matches 20 run function asset:object/2141.louvert_soul_bomb/tick/warning/sound
 execute if score @s General.Object.Tick matches 40 run function asset:object/2141.louvert_soul_bomb/tick/warning/sound
