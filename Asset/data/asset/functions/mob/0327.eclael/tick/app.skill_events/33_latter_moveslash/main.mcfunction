@@ -8,7 +8,7 @@
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/animation_0
     # プレイヤーの方を向く
         execute if score @s 93.AnimationTimer matches 1..65 run tag @s add 93.Temp.Me
-        execute if score @s 93.AnimationTimer matches 1..65 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+        execute if score @s 93.AnimationTimer matches 1..65 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # プレイヤー位置に移動
         execute if score @s 93.AnimationTimer matches 65 at @p[distance=..40] facing entity @s feet rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/set_move_position
         execute if score @s 93.AnimationTimer matches 69 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/move_to_player
@@ -36,7 +36,7 @@
     execute if score @s 93.AnimationTimer matches 90 run function asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/animation_1
     # プレイヤーの方を向く
         execute if score @s 93.AnimationTimer matches 90..100 run tag @s add 93.Temp.Me
-        execute if score @s 93.AnimationTimer matches 90..100 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+        execute if score @s 93.AnimationTimer matches 90..100 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # 移動
         execute if score @s 93.AnimationTimer matches 95..105 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..3] positioned ^ ^ ^0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
         execute if score @s 93.AnimationTimer matches 110..125 at @s positioned ^ ^ ^-0.3 run function asset:mob/0327.eclael/tick/app.general/2.teleport

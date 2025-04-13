@@ -17,7 +17,7 @@
     execute if score @s 93.AnimationTimer matches 10 run tag @s add 93.Temp.PrepareGuard
 
 # 表情
-    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,distance=..80,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
 
 # 終了
     execute if score @s 93.AnimationTimer matches 21.. run function asset:mob/0327.eclael/tick/app.skill_events/25_latter_guard/2.end

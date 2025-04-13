@@ -10,7 +10,7 @@
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/3_0.play_magic_animation
 # プレイヤーの方を向く
     execute if score @s 93.AnimationTimer matches 1..8 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 1..8 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+    execute if score @s 93.AnimationTimer matches 1..8 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     execute if score @s 93.AnimationTimer matches 1..8 run tag @s remove 93.Temp.Me
 # 予兆
     # execute if score @s 93.AnimationTimer matches 8 run function asset:mob/0327.eclael/tick/app.skill_events/05_former_magic/4.2.1.particle_0

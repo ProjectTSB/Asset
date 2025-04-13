@@ -11,7 +11,7 @@
     particle flash ~ ~ ~ 0 0 0 0 1 force
 
 # 角度変更
-    execute facing entity @e[type=area_effect_cloud,tag=93.Aec.AttackPos,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
 
 # 弾召喚
     execute at @s run tp @s ~ ~ ~ ~10 ~

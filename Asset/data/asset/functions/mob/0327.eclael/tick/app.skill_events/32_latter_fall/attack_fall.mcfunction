@@ -1,8 +1,8 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_thunder
+#> asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_fall
 #
 # アニメーションのイベントハンドラ
 #
-# @within function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_check
+# @within function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/main
 
 # 攻撃
     data modify storage api: Argument.ID set value 2206

@@ -8,7 +8,7 @@
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/animation_0
     # プレイヤーの方を向く
         execute if score @s 93.AnimationTimer matches 1..15 run tag @s add 93.Temp.Me
-        execute if score @s 93.AnimationTimer matches 1..15 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+        execute if score @s 93.AnimationTimer matches 1..15 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # プレイヤー位置に移動
         execute if score @s 93.AnimationTimer matches 29 at @r[distance=..40] run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/move_to_player
         execute if score @s 93.AnimationTimer matches 59 run tp @s ~ ~-3 ~
@@ -46,7 +46,7 @@
     execute if score @s 93.AnimationTimer matches 119 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/animation_2
     # プレイヤーの方を向く
         execute if score @s 93.AnimationTimer matches 105..146 run tag @s add 93.Temp.Me
-        execute if score @s 93.AnimationTimer matches 105..146 as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
+        execute if score @s 93.AnimationTimer matches 105..146 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # 攻撃
         execute if score @s 93.AnimationTimer matches 129 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/prediction
         execute if score @s 93.AnimationTimer matches 174 run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_spin

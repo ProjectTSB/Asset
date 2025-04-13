@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/main
 
-# TODO：演出を練る
 # 演出
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.2
