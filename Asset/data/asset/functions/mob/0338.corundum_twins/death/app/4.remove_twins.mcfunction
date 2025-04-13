@@ -16,7 +16,7 @@
     # 消去
         # execute as @e[tag=9F.ModelRoot,tag=9F.Target] run function animated_java:twins_sapphiel/remove/this
         execute as @e[tag=9F.Root,tag=9F.Target] run tag @s add 9E.Remove
-        execute as @e[tag=9F.Root,tag=9F.Target] run function api:mob/kill
+        execute as @e[tag=9F.Root,tag=9F.Target] run function api:mob/kill_child_entity
         # function animated_java:twins_sapphiel/remove/all
 
 # ルビィの消去
@@ -28,5 +28,5 @@
         # TODO：討伐演出再生
         # execute as @e[tag=9G.ModelRoot,tag=9G.Target] run function animated_java:twins_rubiel/remove/this
         execute as @e[tag=9G.Root,tag=9G.Target] run tag @s add 9E.Remove
-        execute as @e[tag=9G.Root,tag=9G.Target] run function api:mob/kill
+        execute as @e[tag=9G.Root,tag=9G.Target] run function api:mob/kill_child_entity
         # function animated_java:twins_rubiel/remove/all
