@@ -25,48 +25,54 @@
     data modify storage api: Argument.ElementTypeNone set value "None"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Fire"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Water"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Thunder"
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
 # 魔法
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "None"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Fire"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Water"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Thunder"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
-
-# リセット
     function api:damage/reset
