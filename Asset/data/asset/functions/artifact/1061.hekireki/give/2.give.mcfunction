@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"霹靂","color":"#D9B111"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"弓を引き絞り続けることで最大3段階のチャージを行う","color":"white"}','{"text":"チャージ段階に応じてダメージが上昇し","color":"white"}','{"text":"フルチャージした矢は十字の雷を落とす","color":"white"}','{"text":"雷鳴の化身が持っていた弓","color":"gray"}','{"text":"破滅の如き雷鳴を呼び、全てを焼き焦がせ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -27,9 +27,9 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "shot"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"最大まで引き絞る"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
+    data modify storage asset:artifact AttackInfo.Damage set value [300,800]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "condition"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 20
+    data modify storage asset:artifact AttackInfo.AttackRange set value 25
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 100
 # MP必要量 (int) (オプション)
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "longRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 80
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

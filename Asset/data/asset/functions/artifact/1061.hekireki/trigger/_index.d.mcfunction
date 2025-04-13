@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/1061.hekireki/trigger/**
-    #declare
+    #declare tag TH.FullCharge
