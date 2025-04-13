@@ -11,4 +11,4 @@
 
 # 近くに敵がいるか否かで召喚位置を変える
     execute positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] at @s positioned ~ ~0.2 ~ run function api:object/summon
-    execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] positioned ~ ~0.2 ~ run function api:object/summon
+    execute positioned ~-0.5 ~-0.5 ~-0.5 positioned as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] positioned ~ ~0.2 ~ run function api:object/summon
