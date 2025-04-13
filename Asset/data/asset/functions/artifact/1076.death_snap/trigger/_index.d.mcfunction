@@ -1,8 +1,8 @@
-#> asset:artifact/1076.utu_rundeath/trigger/_index.d
+#> asset:artifact/1076.death_snap/trigger/_index.d
 # @private
 
 #> tag
-# @within function asset:artifact/1076.utu_rundeath/trigger/**
+# @within function asset:artifact/1076.death_snap/trigger/**
     #declare tag TW.Target
     #declare tag TW.Hit
     #declare tag TW.Landing

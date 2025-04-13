@@ -1,9 +1,9 @@
-#> asset:artifact/1076.utu_rundeath/give/2.give
+#> asset:artifact/1076.death_snap/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1076.utu_rundeath/give/1.trigger
+# @within function asset:artifact/1076.death_snap/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"鬱ルンDeath","color":"dark_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"デ・スナップ","color":"dark_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"最大6体の視界内の敵にダメージを与える"}','{"text":"今どきは珍しいフィルムカメラ","color":"gray"}','{"text":"魂が吸い取られるし、なんかすげー嫌","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"最大6体の視界内の敵にダメージを与える"}','{"text":"今どきは珍しいレンズ付きフィルム","color":"gray"}','{"text":"魂が吸い取られるし、なんかすげー嫌","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
