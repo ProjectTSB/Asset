@@ -1,8 +1,8 @@
-#> asset:artifact/1076.utu_rundeath/trigger/damage
+#> asset:artifact/1076.death_snap/trigger/damage
 #
 #
 #
-# @within function asset:artifact/1076.utu_rundeath/trigger/shot
+# @within function asset:artifact/1076.death_snap/trigger/shot
 
 
 # ダメージ
