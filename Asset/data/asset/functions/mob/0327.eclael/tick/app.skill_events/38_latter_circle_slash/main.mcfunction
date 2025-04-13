@@ -11,8 +11,8 @@
         execute if score @s 93.AnimationTimer matches 1..12 as @a[tag=!PlayerShouldInvulnerable,distance=..40,distance=..80,sort=furthest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # 中心点を挟んで反対側に移動
         execute if score @s 93.AnimationTimer matches 30 facing entity @p feet run tp @s ~ ~ ~ ~ 0
-        execute if score @s 93.AnimationTimer matches 30 at @s as @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,distance=..80,limit=1] positioned as @s run tp @s ~ ~ ~ ~0 0
-        execute if score @s 93.AnimationTimer matches 30 at @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,distance=..80,limit=1] run tp @s ^ ^-2.3 ^-3 ~ 0
+        execute if score @s 93.AnimationTimer matches 30 at @s as @e[type=marker,tag=93.Marker.SpawnPoint,distance=..80,sort=nearest,limit=1] positioned as @s run tp @s ~ ~ ~ ~0 0
+        execute if score @s 93.AnimationTimer matches 30 at @e[type=marker,tag=93.Marker.SpawnPoint,distance=..80,sort=nearest,limit=1] run tp @s ^ ^-2.3 ^-3 ~ 0
     # 移動
         execute if score @s 93.AnimationTimer matches 37..40 at @s positioned ^ ^0.3 ^-0.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
         execute if score @s 93.AnimationTimer matches 41..50 at @s positioned ^ ^-0.3 ^-0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
