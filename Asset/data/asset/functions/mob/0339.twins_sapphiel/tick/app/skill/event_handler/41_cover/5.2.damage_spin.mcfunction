@@ -9,7 +9,7 @@
     tag @a[distance=..2.8] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.CoverSpin
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

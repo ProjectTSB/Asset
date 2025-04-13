@@ -11,7 +11,7 @@
     execute positioned ^ ^ ^1.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..2.5] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 30f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.DualSpin
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

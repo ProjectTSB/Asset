@@ -9,7 +9,7 @@
     execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..5] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 62f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SyncThrowNear
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
@@ -20,7 +20,7 @@
     execute positioned ^ ^ ^ run tag @a[distance=..8.5] add 9G.Temp.Target.Attack.Sub
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SyncThrowFar
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

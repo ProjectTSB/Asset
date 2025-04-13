@@ -9,7 +9,7 @@
     tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 55f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Punch
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
@@ -26,7 +26,11 @@
     execute if entity @a[tag=9F.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback2 hostile @a ~ ~ ~ 2 0.8
 
 # 鈍足付与
-    effect give @a[tag=9F.Temp.Target.Attack] slowness 5 3
+    data modify storage api: Argument.ID set value 17
+    data modify storage api: Argument.Stack set value 2
+    data modify storage api: Argument.Duration set value 100
+    execute as @a[tag=9F.Temp.Target.Attack,distance=..30] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 終了
     tag @a[tag=9F.Temp.Target.Attack] remove 9F.Temp.Target.Attack

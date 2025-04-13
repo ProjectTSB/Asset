@@ -1,6 +1,6 @@
 #> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_5_kt_sheathe_counter/5.damage
 #
-# アニメーションのイベントハンドラ Kt斬り下がり ダメージ判定
+# アニメーションのイベントハンドラ Kt居合斬り カウンター ダメージ判定
 #
 # @within
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/06_5_kt_sheathe_counter/1.main
@@ -9,7 +9,7 @@
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1.2] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.IaiCounter
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

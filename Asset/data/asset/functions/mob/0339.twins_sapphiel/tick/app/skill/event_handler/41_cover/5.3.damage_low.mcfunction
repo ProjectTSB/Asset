@@ -10,7 +10,7 @@
     execute as @a[tag=9F.Temp.Target.Attack] at @s if block ~ ~-1 ~ #lib:no_collision run tag @s remove 9F.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 52f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.CoverLow
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
