@@ -8,10 +8,10 @@
 # @private
     #declare score_holder $Temp
 
-# (ダメージ合計 / 1000)をStackへ
-# ダメージ合計は10倍で計算しているので10000で割る
+# (ダメージ合計 / 2000)をStackへ
+# ダメージ合計は10倍で計算しているので20000で割る
     scoreboard players operation $Temp Temporary = @s FE.DamageSum
-    execute store result storage api: Argument.Stack int 1 run scoreboard players operation $Temp Temporary /= $10000 Const
+    execute store result storage api: Argument.Stack int 1 run scoreboard players operation $Temp Temporary /= $20000 Const
 
 # 破滅の騎士道(ID:263)を得る
     data modify storage api: Argument.ID set value 263
