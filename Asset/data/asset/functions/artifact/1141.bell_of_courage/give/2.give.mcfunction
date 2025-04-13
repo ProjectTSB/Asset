@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"勇気の鈴","color":"#FFFF7A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し、バリアを得る","color":"white"}','{"text":"「おしえたでしょ、勇気がでる方法」","color":"gray","italic":true}','{"text":"「手の中の鈴をならすんだ」","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['[{"text":"デバフ"},{"text":"[弱]","color":"#FFDD66"},{"text":"を全て解除し、バリアを10得る","color":"white"}]','{"text":"「おしえたでしょ、勇気がでる方法」","color":"gray","italic":true}','{"text":"「手の中の鈴をならすんだ」","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

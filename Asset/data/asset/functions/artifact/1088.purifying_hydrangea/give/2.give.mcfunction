@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"浄藍の紫陽花","color":"#83aaf7"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"解除可能なデバフを1つ解除し","color":"white"}','[{"text":"自身と周囲20mの1名に","color":"white"},{"text":"水攻撃+7.5%","color":"aqua"},{"text":"を15秒間付与する","color":"white"}]','[{"text":"雨が降っているなら追加で","color":"white"},{"text":"水攻撃+7.5%","color":"aqua"},{"text":"を付与する","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"30%の確率でデバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を1つ解除し","color":"white"}]','[{"text":"自身と周囲20mの1名に","color":"white"},{"text":"水攻撃+7.5%","color":"aqua"},{"text":"を15秒間付与する","color":"white"}]','{"text":"雨の場合、デバフ解除確率が50%になり"}','[{"text":"追加で","color":"white"},{"text":"水攻撃+7.5%","color":"aqua"},{"text":"を付与する","color":"white"}]','{"text":"(水攻撃補正の最も高いプレイヤーを優先)","color":"white"}','{"text":"雨の中にだけ咲く、深い藍色の紫陽花","color":"gray"}','{"text":"穢れを浄化し、雨に還す力を持つ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onReceiveHeal"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"3回回復を受ける毎","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"累計で20回復","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

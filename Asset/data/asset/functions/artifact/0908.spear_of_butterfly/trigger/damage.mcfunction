@@ -12,7 +12,7 @@
     execute unless score $HealthPer Temporary matches 50.. store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 1.8
 
 # 基礎ダメージ
-    scoreboard players add $P8.Damage Temporary 200
+    scoreboard players add $P8.Damage Temporary 160
 
 # 5段目はダメージを半分にする
     execute if score @s P8.AttackCount matches 5 run scoreboard players operation $P8.Damage Temporary /= $2 Const

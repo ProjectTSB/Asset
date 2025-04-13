@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"火走り","color":"#DB1212","bold":true,"italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"移動速度が上がり、火属性攻撃力と火属性耐性を50%得る"}','{"text":"代わりに、水属性攻撃と雷属性攻撃を-1000%する"}','{"text":"ついでに足元が燃える。効果時間30秒"}','{"text":"もう止まらんよ、流れ出したエネルギーと同じだ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"使用時、足元が燃え、30秒の間"}','{"text":"移動速度+10%、火攻撃+20%、火耐性+20%を得るが"}','{"text":"水攻撃と雷攻撃を-100%する"}','{"text":"もう止まらんよ、流れ出したエネルギーと同じだ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -41,13 +41,13 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 100
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 6000
+    data modify storage asset:artifact LocalCooldown set value 3600
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
