@@ -22,8 +22,8 @@
     execute if score @s AK.EventTimer matches 13..20 at @s positioned ~ ~-0.2 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
     execute if entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 21.. at @s run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_center
     execute unless entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 21.. at @s run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-    execute if entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 30.. at @s facing entity @e[type=marker,tag=AK.CenterPosition,limit=1] feet run tp @s ~ ~ ~ ~ 0
-    execute unless entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 30.. at @s facing entity @p[tag=AK.MainTarget] feet run tp @s ~ ~ ~ ~ 0
+    execute if entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 30.. at @s facing entity @e[type=marker,tag=AK.CenterPosition,distance=..80,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    execute unless entity @s[tag=AK.Temp.FixedRotation] if score @s AK.EventTimer matches 30.. at @s facing entity @p[tag=AK.MainTarget,distance=..80] feet run tp @s ~ ~ ~ ~ 0
 
 # 演出
     execute if score @s AK.EventTimer matches 2 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 1.3

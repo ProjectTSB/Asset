@@ -14,4 +14,4 @@
     summon area_effect_cloud ^13 ^0.5 ^13 {Tags:["AK.Temp.AttackPosition"],Duration:80}
 
 # 角度設定
-    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos] positioned as @s facing entity @e[type=marker,tag=AK.CenterPosition,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos,distance=..80] positioned as @s facing entity @e[type=marker,tag=AK.CenterPosition,distance=..80,limit=1] feet run tp @s ~ ~ ~ ~ 0

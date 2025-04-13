@@ -39,6 +39,9 @@
     #declare function animated_java:haruclaire_aj/animations/31_0_second_icespear/tween
     #declare function animated_java:haruclaire_aj/animations/32_0_second_icespinner/tween
     #declare function animated_java:haruclaire_aj/remove/all
+    #declare function animated_java:ic_capri_aj/remove/all
+    #declare function animated_java:ic_tau_aj/remove/all
+    #declare function animated_java:ic_pisce_aj/remove/all
     #
     # - AJ自動生成タグ
     #declare tag aj.haruclaire_aj.animation.0_0_start.playing

@@ -9,5 +9,5 @@
     summon area_effect_cloud ^-12 ^0.1 ^12 {Tags:["AK.IceCrepation.Pos","AK.IceCrepation.Pos.B"],Duration:70}
 
 # 角度設定
-    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.A] positioned as @s run tp @s ~ ~ ~ ~90 0
-    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.B] positioned as @s run tp @s ~ ~ ~ ~-90 0
+    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.A,distance=..80] positioned as @s run tp @s ~ ~ ~ ~90 0
+    execute as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.B,distance=..80] positioned as @s run tp @s ~ ~ ~ ~-90 0

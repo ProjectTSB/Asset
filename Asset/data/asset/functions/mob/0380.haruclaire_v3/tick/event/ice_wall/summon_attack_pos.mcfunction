@@ -12,5 +12,5 @@
     summon area_effect_cloud ^5 ^ ^1.5 {Tags:["AK.Temp.AttackPosition"],Duration:200}
     execute if predicate api:global_vars/difficulty/min/normal run summon area_effect_cloud ^10 ^ ^3 {Tags:["AK.Temp.AttackPosition"],Duration:200}
     execute if predicate api:global_vars/difficulty/min/hard run summon area_effect_cloud ^15 ^ ^3 {Tags:["AK.Temp.AttackPosition"],Duration:200}
-    execute as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition] at @s run function asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor
-    execute as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition] positioned as @s run tp @s ~ ~ ~ ~ 0
+    execute as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80] at @s run function asset:mob/0380.haruclaire_v3/tick/util/setup_to_floor
+    execute as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80] positioned as @s run tp @s ~ ~ ~ ~ 0

@@ -11,4 +11,4 @@
     execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 終了
-    kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=nearest,limit=1]
+    kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=nearest,limit=1]

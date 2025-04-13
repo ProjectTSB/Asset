@@ -8,7 +8,7 @@
     playsound item.trident.return hostile @a ~ ~ ~ 2 2
 
 # 攻撃対象を見る
-    execute facing entity @p[tag=AK.MainTarget] feet run tp @s ~ ~ ~ ~-7 ~-8
+    execute facing entity @p[tag=AK.MainTarget,distance=..80] feet run tp @s ~ ~ ~ ~-7 ~-8
 
 # 回転
     execute if predicate api:global_vars/difficulty/max/normal at @s run tp @s ~ ~ ~ ~4 ~

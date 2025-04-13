@@ -10,7 +10,7 @@
     #declare score_holder $TempPos.Z
 
 # 着地点
-    data modify storage asset:temp AK.Pos set from entity @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=nearest,limit=1] Pos
+    data modify storage asset:temp AK.Pos set from entity @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=nearest,limit=1] Pos
     execute store result score $TempPos.X Temporary run data get storage asset:temp AK.Pos[0] 1000
     execute store result score $TempPos.Y Temporary run data get storage asset:temp AK.Pos[1] 1000
     execute store result score $TempPos.Z Temporary run data get storage asset:temp AK.Pos[2] 1000

@@ -8,7 +8,7 @@
     playsound item.trident.return hostile @a ~ ~ ~ 2 2
 
 # 攻撃対象を見る
-    execute facing entity @p[tag=AK.MainTarget] feet run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[tag=AK.MainTarget,distance=..80] feet run tp @s ~ ~ ~ ~ ~
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2149

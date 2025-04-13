@@ -19,5 +19,5 @@
 # 攻撃位置召喚
     summon area_effect_cloud ~ ~2 ~ {Tags:["AK.Temp.AttackRotation"],Duration:1}
 # 弾召喚
-    scoreboard players operation @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,sort=nearest,limit=1] MobUUID = @s MobUUID
-    execute if predicate api:global_vars/difficulty/min/normal as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,sort=nearest,limit=1] at @s run function asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece_1
+    scoreboard players operation @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80,sort=nearest,limit=1] MobUUID = @s MobUUID
+    execute if predicate api:global_vars/difficulty/min/normal as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80,sort=nearest,limit=1] at @s run function asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece_1

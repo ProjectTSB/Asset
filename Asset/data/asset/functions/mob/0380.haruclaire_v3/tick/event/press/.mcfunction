@@ -12,22 +12,22 @@
     function asset:mob/0380.haruclaire_v3/tick/util/check_target
 
 # アニメーション再生
-    execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/29_0_second_press
+    execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,distance=..80,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/29_0_second_press
 
 # 移動
     execute if score @s AK.EventTimer matches 65..90 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-    execute if score @s AK.EventTimer matches 90 positioned as @p[tag=AK.MainTarget] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
+    execute if score @s AK.EventTimer matches 90 positioned as @p[tag=AK.MainTarget,distance=..80] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
     execute if score @s AK.EventTimer matches 90 run function asset:mob/0380.haruclaire_v3/tick/util/calc_vector.m {Tick:11}
     execute if score @s AK.EventTimer matches 95..105 run function asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
     execute if score @s AK.EventTimer matches 106..182 at @s if block ~ ~-0.1 ~ #lib:no_collision positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
     execute if score @s AK.EventTimer matches 110..129 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-    execute if score @s AK.EventTimer matches 129 positioned as @p[tag=AK.MainTarget] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
+    execute if score @s AK.EventTimer matches 129 positioned as @p[tag=AK.MainTarget,distance=..80] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
     execute if score @s AK.EventTimer matches 129 run function asset:mob/0380.haruclaire_v3/tick/util/calc_vector.m {Tick:11}
     execute if score @s AK.EventTimer matches 134..144 run function asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
 
     execute if score @s AK.EventTimer matches 150..171 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-    execute if score @s AK.EventTimer matches 167 positioned as @p[tag=AK.MainTarget] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
+    execute if score @s AK.EventTimer matches 167 positioned as @p[tag=AK.MainTarget,distance=..80] run function asset:mob/0380.haruclaire_v3/tick/event/press/set_position
     execute if score @s AK.EventTimer matches 167 run function asset:mob/0380.haruclaire_v3/tick/util/calc_vector.m {Tick:11}
     execute if score @s AK.EventTimer matches 172..182 run function asset:mob/0380.haruclaire_v3/tick/util/tp_using_vector
 

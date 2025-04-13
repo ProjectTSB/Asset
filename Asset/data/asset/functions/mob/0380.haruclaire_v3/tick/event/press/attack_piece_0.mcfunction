@@ -1,4 +1,4 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece
+#> asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece_0
 #
 # 押しつぶし
 #

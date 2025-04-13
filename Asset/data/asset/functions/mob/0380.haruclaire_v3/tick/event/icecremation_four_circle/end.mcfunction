@@ -11,7 +11,7 @@
 # 中央に移動
     scoreboard players set @s AK.EventTimer 0
     tag @s add AK.Skill.MoveS
-    execute positioned as @e[type=marker,tag=AK.CenterPosition] run summon area_effect_cloud ^ ^0.3 ^ {Tags:["AK.Temp.AttackPosition"],Duration:3}
+    execute positioned as @e[type=marker,tag=AK.CenterPosition,distance=..80] run summon area_effect_cloud ^ ^0.3 ^ {Tags:["AK.Temp.AttackPosition"],Duration:3}
 
 # 移動後、アイスウォールに移行
     tag @s add AK.Skill.IceWallDuo
