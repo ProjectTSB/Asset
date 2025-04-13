@@ -36,4 +36,4 @@
     tag @a[tag=BuffTarget] remove BuffTarget
 
 # リセット
-    scoreboard players reset @s U8.Count
+    scoreboard players reset @s U8.HealSum
