@@ -1,6 +1,6 @@
 #> asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling
 #
-# 
+#
 #
 # @within function asset:mob/0213.terrible_sonic_bomber/tick/motions/use_weapon
 
@@ -25,16 +25,16 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute at 0-0-0-0-0 positioned ^ ^ ^ positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute at 0-0-0-0-0 positioned ^ ^ ^0.5 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
-
     function api:damage/reset
 
     #say attack
