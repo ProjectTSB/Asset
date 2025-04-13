@@ -30,6 +30,7 @@
     # ボスの状態
     #declare tag C5.InAction
     #declare tag C5.CycleReset
+    #declare tag C5.Exhausted
     # その他
     #declare tag Hit
     #declare tag C5.TargetEntity

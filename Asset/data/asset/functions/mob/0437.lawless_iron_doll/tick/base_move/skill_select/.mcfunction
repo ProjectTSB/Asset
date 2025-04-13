@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/
 
+# お疲れタグが付いていたら歩行。
+    execute if entity @s[tag=C5.Exhausted,tag=!C5.InAction] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/force_walk
+
 # ダッシュ回数溜まってたら突進。
     execute if score @s[tag=!C5.CycleReset,tag=!C5.InAction] C5.Count.Move matches 3 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/force_dash
 

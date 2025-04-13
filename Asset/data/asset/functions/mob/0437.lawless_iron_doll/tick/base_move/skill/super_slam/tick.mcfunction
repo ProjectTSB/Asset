@@ -42,5 +42,8 @@
     execute if score @s General.Mob.Tick matches 53 at @s align y run tp @s ~ ~ ~
     execute if score @s General.Mob.Tick matches 53 at @s run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/explosion
 
+# おつかれタグを付与する。次の行動は絶対歩行になる。
+    execute if score @s General.Mob.Tick matches 90.. run tag @s add C5.Exhausted
+
 # リセット
     execute if score @s General.Mob.Tick matches 90.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
