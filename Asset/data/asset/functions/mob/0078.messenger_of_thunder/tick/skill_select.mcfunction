@@ -24,7 +24,7 @@
     execute if entity @s[scores={26.ConsecutiveCool=0..}] run scoreboard players remove @s 26.ConsecutiveCool 1
 
 # debug2
-    #scoreboard players set $Random Temporary 5
+    # scoreboard players set $Random Temporary 0
 
 # スコアに応じたスキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 26.Thunder
