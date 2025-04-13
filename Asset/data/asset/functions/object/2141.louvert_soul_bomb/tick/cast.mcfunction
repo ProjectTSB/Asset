@@ -2,7 +2,7 @@
 #
 # 発動処理
 #
-# @within function asset:object/2141.louvert_soul_bomb/tick/
+# @within function asset:object/2141.louvert_soul_bomb/tick/process
 
 # 演出
     function asset:object/2141.louvert_soul_bomb/tick/cast_vfx
