@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_disaster/prediction
+#> asset:mob/0410.heiloang/tick/event/terzetto_disaster/prediction_1
 #
 # テルツェット・ディザスター
 #

@@ -1,8 +1,8 @@
-#> asset:mob/0412.tiamat/tick/event/terzetto_aligning/summon_attack_position
+#> asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_attack_position
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_aligning/
+# @within asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # 攻撃位置召喚
     execute positioned ^10 ^2 ^25 run summon area_effect_cloud ~ ~ ~ {Duration:290,Tags:["BG.Temp.AttackPosition"]}

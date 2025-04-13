@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/prediction
+#> asset:mob/0410.heiloang/tick/event/terzetto_aligning_a/prediction_a
 #
 # テルツェット・アライニング
 #

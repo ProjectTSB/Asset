@@ -1,8 +1,8 @@
-#> asset:mob/0412.tiamat/tick/event/terzetto_aligning/attack_dive
+#> asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_dive
 #
 # テルツェット・サクセッション
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_aligning/
+# @within asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # ヒット判定
     tag @a[tag=DXYZ] remove DXYZ

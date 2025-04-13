@@ -1,8 +1,8 @@
-#> asset:mob/0412.tiamat/tick/event/terzetto_aligning/prediction
+#> asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction
 #
 # テルツェット・アライニング
 #
-# @within asset:mob/0412.tiamat/tick/event/terzetto_aligning/
+# @within asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/
 
 # 回転
     tp @s ~ ~ ~ ~ 0

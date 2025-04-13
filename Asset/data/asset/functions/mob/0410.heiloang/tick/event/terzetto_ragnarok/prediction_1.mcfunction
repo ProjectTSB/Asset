@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/prediction
+#> asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/prediction_1
 #
 # テルツェット・ラグナレク
 #

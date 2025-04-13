@@ -1,4 +1,4 @@
-#> asset:mob/0411.behemoth/tick/event/terzetto_aligning/particle_attack_area
+#> asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/particle_attack_area
 #
 # テルツェット・ディザスター
 #

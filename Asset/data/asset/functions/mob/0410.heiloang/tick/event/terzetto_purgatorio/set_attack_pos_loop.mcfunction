@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack
+#> asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/set_attack_pos_loop
 #
 # テルツェット・プルガトリオ
 #

@@ -1,4 +1,4 @@
-#> asset:mob/0411.behemoth/tick/event/terzetto_aligning/particle_shoot
+#> asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/particle_shoot
 #
 # テルツェット・ディザスター
 #

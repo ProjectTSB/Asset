@@ -1,8 +1,8 @@
-#> asset:mob/0411.behemoth/tick/event/terzetto_aligning/set_attack_position.m
+#> asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/set_attack_position.m
 #
 # テルツェット・ディザスター
 #
-# @within asset:mob/0411.behemoth/tick/event/terzetto_aligning/attack
+# @within asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack
 
 # 攻撃位置決定
     execute positioned as @p[tag=BF.MainTarget] run summon area_effect_cloud ~ ~ ~ {Duration:1,Tags:["BF.Temp.AttackPosition"]}

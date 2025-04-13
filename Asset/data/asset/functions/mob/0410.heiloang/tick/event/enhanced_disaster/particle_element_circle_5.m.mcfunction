@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element_circle_4.m
+#> asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element_circle_5.m
 #
 # エンハンスドディザスター
 #
