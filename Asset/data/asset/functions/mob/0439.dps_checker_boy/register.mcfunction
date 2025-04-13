@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/439/register
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:mob ExtendsSafe set value
+    data modify storage asset:mob ExtendsSafe set value true
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
@@ -18,32 +18,11 @@
     data modify storage asset:mob Name set value '[{"text":"訓練用の人形","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"攻撃されてから10秒間のDPSを計測する","color":"white"}']
-# 武器
-    # メインハンド (Compound(Item)) (オプション)
-        # data modify storage asset:mob Weapon.Mainhand set value
-    # オフハンド (Compound(Item)) (オプション)
-        # data modify storage asset:mob Weapon.Offhand set value
-# 武器ドロップ率 ([float, float]) (オプション)
-    # data modify storage asset:mob WeaponDropChances set value
 # 防具
     # 頭 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Head set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20561}}
-    # 胴 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Chest set value
-    # 脚 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Legs set value
-    # 足 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Feet set value
-# 防具ドロップ率 ([float, float]) (オプション)
-    # data modify storage asset:mob ArmorDropChances set value
+        data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20019}}
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 10000000
-# 攻撃力 (double) (オプション)
-    # data modify storage asset:mob AttackDamage set value
-# 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
-    # data modify storage asset:mob Defense set value
-# 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
-    # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
     data modify storage asset:mob Speed set value 0
 # 索敵範囲 (double) (オプション)
@@ -52,15 +31,9 @@
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Physical set value
+        data modify storage asset:mob Resist.Physical set value 1.0
     # 魔法倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Magic set value
-    # 火倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Fire set value
-    # 水倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Water set value
-    # 雷倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Thunder set value
+        data modify storage asset:mob Resist.Magic set value 1.0
 # フィールド
     data modify storage asset:mob Field.Color set value "aqua"
     data modify storage asset:mob Field.Sum set value 0
