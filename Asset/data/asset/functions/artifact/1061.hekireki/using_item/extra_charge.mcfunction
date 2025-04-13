@@ -20,7 +20,7 @@
     execute if score @s TH.Charge matches 50 anchored eyes positioned ^ ^ ^1 run function asset:artifact/1061.hekireki/using_item/vfx/charge
 
 # 最大チャージ演出
-    execute if score @s TH.Charge matches 55.. run function asset:artifact/1061.hekireki/using_item/full_charge_vfx
+    execute if score @s TH.Charge matches 54.. run function asset:artifact/1061.hekireki/using_item/full_charge_vfx
 
 # スタック表示用Effect
     data modify storage api: Argument.ID set value 323
