@@ -16,7 +16,7 @@
     function api:modifier/defense/thunder/remove
 
 # 雷攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,644,4]
+    data modify storage api: Argument.UUID set value [I;1,1,645,3]
     function api:modifier/attack/thunder/remove
 
 # 移動速度
