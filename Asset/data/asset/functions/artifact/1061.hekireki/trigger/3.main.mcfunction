@@ -35,7 +35,3 @@
     data modify storage api: Argument.ID set value 1143
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon
-
-# リセット
-    scoreboard players reset @s TH.Charge
-    scoreboard players reset @s TH.LatestChargeTick
