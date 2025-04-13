@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:object/1133.deep_azure_slash/load",
+        "asset:object/1045.magic_bullet_square/load",
+        "asset:object/1102.turret/load",
         "asset:object/2026.lastbattle_platform/load",
         "asset:object/2198.rubiel_scythe/load",
         "asset:object/2197.rubiel_knife/load",

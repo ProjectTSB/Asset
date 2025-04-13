@@ -668,6 +668,9 @@
                         "# 種別クールダウン ({Type: string, Duration: int}) (オプション)",
                         "    # data modify storage asset:artifact TypeCooldown.Type set value ",
                         "    # data modify storage asset:artifact TypeCooldown.Duration set value",
+                        "# 第二種別クールダウン ({Type: string, Duration: int}) (オプション)",
+                        "    # data modify storage asset:artifact SecondaryTypeCooldown.Type set value ",
+                        "    # data modify storage asset:artifact SecondaryTypeCooldown.Duration set value",
                         "# グローバルクールダウン (int) (オプション)",
                         "    # data modify storage asset:artifact SpecialCooldown set value ",
                         "# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)",
@@ -1677,6 +1680,14 @@
                         "    function api:mob/summon"
                     ]
                 }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "MobのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                }
             ]
         },
         {
@@ -1758,6 +1769,52 @@
                         "key": "values",
                         "elem": "asset:mob/%namespace%/load"
                     }
+                }
+            ]
+        },
+        {
+            "label": "Mob/テンプレート: 暗所湧き登録処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/functions/mob/%namespace%/enroll_pool.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/enroll_pool",
+                        "#",
+                        "# 暗所に湧くMobの登録処理",
+                        "#",
+                        "# @within tag/function asset:mob/enroll_pool",
+                        "",
+                        "data modify storage asset:mob SpawnPool[%level%] append value %id%"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/mob/enroll_pool.json",
+                    "content": {
+                        "values": [
+                            "asset:mob/%namespace%/enroll_pool"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:mob/%namespace%/enroll_pool"
+                    }
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "id",
+                    "question": "MobのID",
+                    "pattern": "[1-9][0-9]*",
+                    "patternErrorMessage": "数値のみが許されるよ"
+                },
+                {
+                    "name": "level",
+                    "question": "Mobの強さ",
+                    "pattern": "[1-4]",
+                    "patternErrorMessage": "1 ~ 4の整数のみが許されるよ"
                 }
             ]
         },

@@ -16,8 +16,9 @@
 
 # remove objects and mobs
     execute as @e[tag=PatriotLauncherRoot] run function animated_java:patriot_launcher/remove/this 
-    execute as @e[scores={ObjectID=2082..2088}] on passengers run kill @s
+    execute as @e[scores={ObjectID=2082..2089}] on passengers run kill @s
     execute as @e[scores={MobID=214}] run function api:mob/remove
-    kill @e[scores={ObjectID=2082..2088}]
+    execute as @e[scores={MobID=436}] run function api:mob/remove
+    kill @e[scores={ObjectID=2082..2089}]
 
     

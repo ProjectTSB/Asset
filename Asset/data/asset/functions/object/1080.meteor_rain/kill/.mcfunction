@@ -14,7 +14,7 @@
     particle flame ~ ~ ~ 1.5 1.5 1.5 0 20
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 580.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
 # 実行時に受け取っているUserIDの持ち主として補正を実行

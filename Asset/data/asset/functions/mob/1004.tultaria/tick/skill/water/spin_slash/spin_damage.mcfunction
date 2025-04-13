@@ -13,6 +13,6 @@
         data modify storage api: Argument.ElementType set value "Water"
     # ダメージ
         function api:damage/modifier
-        execute as @p[distance=..3] run function api:damage/
+        execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
 # リセット
     function api:damage/reset

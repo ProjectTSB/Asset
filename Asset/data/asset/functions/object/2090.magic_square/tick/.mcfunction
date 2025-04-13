@@ -23,7 +23,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 消失時にはぬるりと消えていく
-    execute if score @s General.Object.Tick matches 95 run function asset:object/2090.magic_square/tick/transdorm
+    execute if score @s General.Object.Tick matches 95 run function asset:object/2090.magic_square/tick/transform
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=100..}]

@@ -21,9 +21,6 @@
 # カボチャが召喚するオブジェクトも抹消する
     kill @e[type=item_display,scores={ObjectID=2031..2036},distance=..50]
 
-# TextDisplayをkill
-    kill @e[type=text_display,tag=1N.TextDisplay]
-
 # スポーンマーカーをkill
     kill @e[type=marker,tag=1N.SpawnMarker]
 
