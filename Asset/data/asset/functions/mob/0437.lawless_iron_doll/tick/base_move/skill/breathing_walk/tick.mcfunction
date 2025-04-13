@@ -12,7 +12,10 @@
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/walk/tween {to_frame: 0, duration: 5}
 
 # しばらく歩く
-    execute if score @s General.Mob.Tick matches 5..60 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/breathing_walk/walk_tick
+    execute if score @s General.Mob.Tick matches 5.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/breathing_walk/walk_tick
 
 # リセット
-    execute if score @s General.Mob.Tick matches 60.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+    # ハード以下
+        execute if predicate api:global_vars/difficulty/max/normal if score @s General.Mob.Tick matches 60.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+    # Blessless以上
+        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 100.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
