@@ -37,3 +37,5 @@
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon
 
 # リセット
+    scoreboard players reset @s TH.Charge
+    scoreboard players reset @s TH.LatestChargeTick
