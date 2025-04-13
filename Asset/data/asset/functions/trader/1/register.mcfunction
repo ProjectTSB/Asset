@@ -20,6 +20,11 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:torch",Count:16b}
 
+# 取引 松明袋
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:5b}
+    data modify storage asset:trader Trades[-1].Sell set value 1285
+
 # 取引 はしご
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
