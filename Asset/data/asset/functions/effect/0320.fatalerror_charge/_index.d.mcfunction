@@ -5,3 +5,4 @@
 # @within function asset:effect/0320.fatalerror_charge/**
     #declare tag Landing
     #declare tag Target
+    #declare tag SpreadMarker

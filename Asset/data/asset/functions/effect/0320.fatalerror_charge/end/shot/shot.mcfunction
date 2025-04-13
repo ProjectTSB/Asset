@@ -4,10 +4,6 @@
 #
 # @within function asset:effect/0320.fatalerror_charge/end/
 
-#> Private
-# @private
-    #declare tag SpreadMarker
-
 # 演出
     execute at @s anchored eyes positioned ~ ~ ~ run playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.2
     playsound entity.firework_rocket.blast player @a ~ ~ ~ 0.7 0.7
@@ -23,8 +19,3 @@
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 # 発砲
     execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:effect/0320.fatalerror_charge/end/shot/loop
-
-# リセット
-    kill @e[type=marker,tag=SpreadMarker,distance=..10]
-    tag @s[tag=Landing] remove Landing
-    tag @e[type=#lib:living,tag=Target,distance=..40] remove Target
