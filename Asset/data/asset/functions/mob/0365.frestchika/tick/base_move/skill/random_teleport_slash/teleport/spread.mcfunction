@@ -9,7 +9,7 @@
 #declare tag SpreadMarker
 
 # 自分の位置にマーカーを召喚
-    execute at @s run summon marker ~ ~1 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
+    execute at @s run summon marker ~ ~1.2 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
 
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

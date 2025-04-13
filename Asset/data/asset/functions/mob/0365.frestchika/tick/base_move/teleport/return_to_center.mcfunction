@@ -12,7 +12,7 @@
     execute at @s run function asset:mob/0365.frestchika/tick/base_move/teleport/vfx
 
 # 自分の位置にマーカーを召喚
-    summon marker ~ ~1 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
+    summon marker ~ ~1.2 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
 
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
@@ -25,7 +25,7 @@
     execute at @e[type=marker,tag=SpreadMarker,limit=1] run tp @s ~ ~ ~
 
 # これの呼び出し元にて召喚したマーカーに向けて、見た目レーザーが伸びる
-    execute at @s positioned ~ ~1 ~ facing entity @e[type=marker,tag=A5.Marker.Teleport,distance=..64,sort=nearest,limit=1] feet run function asset:mob/0365.frestchika/tick/base_move/teleport/laser/summon
+    execute at @s positioned ~ ~1.2 ~ facing entity @e[type=marker,tag=A5.Marker.Teleport,distance=..64,sort=nearest,limit=1] feet run function asset:mob/0365.frestchika/tick/base_move/teleport/laser/summon
 
 # 演出
     execute at @s run function asset:mob/0365.frestchika/tick/base_move/teleport/vfx
