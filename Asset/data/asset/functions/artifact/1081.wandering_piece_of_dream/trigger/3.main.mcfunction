@@ -34,3 +34,4 @@
 
 # リセット
     tag @a[tag=U1.EffectTarget] remove U1.EffectTarget
+    scoreboard players reset @s U1.HealSum
