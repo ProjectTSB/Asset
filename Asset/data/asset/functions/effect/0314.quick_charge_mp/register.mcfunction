@@ -1,17 +1,17 @@
-#> asset:effect/0214.quick_charge/register
+#> asset:effect/0314.quick_charge_mp/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0214.quick_charge/_/register
+# @within function asset:effect/0314.quick_charge_mp/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    data modify storage asset:effect ExtendsSafe set value true
+    # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 214
+    data modify storage asset:effect ID set value 314
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"急速充電","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"雷属性与ダメージが上昇する"}'
+    data modify storage asset:effect Description set value '{"text":"継続的にMPを回復する"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
