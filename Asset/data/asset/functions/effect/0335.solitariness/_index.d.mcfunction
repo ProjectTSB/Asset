@@ -3,4 +3,4 @@
 
 #> 0335.solitariness
 # @within function asset:effect/0335.solitariness/**
-    #declare
+    #declare tag 335.Loneliness

@@ -11,9 +11,9 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"孤独","color":"#468581"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度が上昇し、MP回復速度が上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"孤独な時、移動速度が上昇し、MP回復速度が上昇する"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 360
+    data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")

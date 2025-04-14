@@ -1,0 +1,25 @@
+#> asset:effect/0336.self_loathing/given/message
+#
+#
+#
+# @within function asset:effect/0336.self_loathing/given/
+
+# ランダムでメッセージを垂れ流す
+# 疑似乱数取得
+    data modify storage lib: Args.key set value "335.Message"
+    data modify storage lib: Args.max set value 10
+    data modify storage lib: Args.scarcity_history_size set value 3
+    execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
+    # メッセージ出力
+        execute if score $Random Temporary matches 0 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"君の不在に誰も気づかない。\\nそれが最も痛い真実。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 1 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"後に誰かに名前で呼ばれたのはいつだっけ？\\n覚えていない。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 2 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"部屋の鏡に映るのは\\n誰からも見られなくなっていく顔。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 3 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"隣の部屋から聞こえる笑い声。\\n君を除いた楽しい会話。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 4 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"お気に入りの場所も\\n好きな食べ物も\\n誰にも共有されない喜び\\n良かったね。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 5 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"誰かと会話をしていても、ふと気づく。\\nこれは社交の儀式に過ぎないと。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 6 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"誰かがあなたの名前を呼んだ？\\n誰もいない。幻聴は孤独の最初の兆候。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 7 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"人々の笑い声。かつてはその一部だったはず。\\n今はただの騒音。\\nあなたはいつから変わってしまったのか。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 8 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"話しかけても見向きもされない日々。\\nそれはもう慣れてしまった。","color":"black"}]',background:-65536}]}
+        execute if score $Random Temporary matches 9 run summon area_effect_cloud ~ ~ ~ {Duration:80,Passengers:[{id:"minecraft:text_display",billboard:"center",default_background:0b,alignment:"center",Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},text:'[{"text":"「また今度」と言われて実現したことは\\n一度もなかった。","color":"black"}]',background:-65536}]}
+# リセット
+    scoreboard players reset $Random Temporary
