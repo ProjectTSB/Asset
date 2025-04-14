@@ -12,7 +12,7 @@
     particle dust 0.7 0.7 0 1 ^ ^ ^-0.3 0.3 0.3 0.3 0 10
 
 # ダメージ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 run function asset:mob/0055.hetukedah/tick/skill/otete_beam/big_beam/hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 run function asset:mob/0055.hetukedah/tick/skill/otete_beam/big_beam/hit
 
 # 壁ヒットで炸裂
     execute unless block ^ ^ ^1 #lib:no_collision run function asset:mob/0055.hetukedah/tick/skill/otete_beam/big_beam/hit
