@@ -15,3 +15,6 @@
 # ランダムな角度を指定して、そのデータを元に移動
     execute store result storage asset:temp Rotation int 1 run random value -180..180
     function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/move.m with storage asset:temp
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}

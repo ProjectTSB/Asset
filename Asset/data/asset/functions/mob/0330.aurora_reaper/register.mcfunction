@@ -11,7 +11,7 @@
     data modify storage asset:mob Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f0e5"},{"text":"ロ","color":"#00e1e9"},{"text":"ラ","color":"#00d3ec"},{"text":"リ","color":"#00c4f0"},{"text":"ー","color":"#00b6f4"},{"text":"パ","color":"#00a7f7"},{"text":"ー","color":"#008bff"}]'
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20158}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:ender_eye",Count:1b,tag:{CustomModelData:1227}}
     # オフハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Offhand set value
 # 武器ドロップ率 ([float, float]) (オプション)

@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/1081.wandering_piece_of_dream/trigger/**
-    scoreboard objectives add U1.Count dummy
+    scoreboard objectives add U1.HealSum dummy
