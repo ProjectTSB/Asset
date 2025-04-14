@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:chainmail_leggings"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ソリタリネス","color":"gray"}'
+    data modify storage asset:artifact Name set value '{"text":"ソリタリネス","color":"#468581"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"孤独が唯一の友人だった","color":"dark_gray"}','{"text":"欲しかった物は常に過去にある","color":"dark_gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"ソリタリネスをすべて装備し、周囲に友好モブも、友人もいない状態"}]'
+    data modify storage asset:artifact Condition set value '[{"text":"ソリタリネスをすべて装備し、孤独な状態"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value 10
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

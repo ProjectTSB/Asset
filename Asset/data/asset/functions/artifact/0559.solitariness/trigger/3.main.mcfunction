@@ -9,4 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# バフ
+# バフ付与
+    data modify storage api: Argument.ID set value 335
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+    say 付与
