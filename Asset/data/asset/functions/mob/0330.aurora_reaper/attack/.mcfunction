@@ -19,7 +19,7 @@
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.2 2 0
 
 # プレイヤーと同じ剣(鎌)の振り方
-    item replace entity @s weapon.mainhand with stick{CustomModelData:20158}
+    item replace entity @s weapon.mainhand with ender_eye{CustomModelData:1227}
 
 # ダメージ
     data modify storage api: Argument.Damage set value 40f
