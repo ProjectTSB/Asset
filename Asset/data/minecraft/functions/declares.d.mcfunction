@@ -28,7 +28,6 @@
     #declare function api:common/arguments/stash                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/common/arguments/stash.mcfunction#L1
     #declare function api:damage/                                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/.mcfunction#L1
     #declare function api:damage/modifier                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier.mcfunction#L1
-    #declare function api:damage/modifier_continuation                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier_continuation.mcfunction#L1
     #declare function api:damage/modifier_manual                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/modifier_manual.mcfunction#L1
     #declare function api:damage/reset                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/reset.mcfunction#L1
     #declare function api:damage/single_damage_session/close                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/damage/single_damage_session/close.mcfunction#L1
