@@ -35,8 +35,8 @@
 
 # 自身のモデルにモーションを再生させる
     execute if score @s General.Mob.Tick matches 80 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right/tween {to_frame:0,duration:1}
-    execute if score @s General.Mob.Tick matches 110 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
+    execute if score @s General.Mob.Tick matches 140 unless score @s RW.LoopCount matches 1.. as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_3_right_loop/tween {to_frame:0,duration:1}
 
 # 攻撃スタート
-    execute if score @s General.Mob.Tick matches 160 run tag @s add RW.Transition.Phase2.Attack
-    execute if score @s General.Mob.Tick matches 160 run scoreboard players set @s General.Mob.Tick -1
+    execute if score @s General.Mob.Tick matches 140 run tag @s add RW.Transition.Phase2.Attack
+    execute if score @s General.Mob.Tick matches 140 run scoreboard players set @s General.Mob.Tick -1
