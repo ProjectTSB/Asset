@@ -12,7 +12,7 @@
 # TODO : APIで任意の個数消せるようになったら処理を変える
 
 # デバフを2つ解除
-    data modify storage api: Argument.ClearLv set value 2
+    data modify storage api: Argument.ClearLv set value 1
     data modify storage api: Argument.ClearCount set value 2
     data modify storage api: Argument.ClearType set value "bad"
     function api:entity/mob/effect/remove/from_level

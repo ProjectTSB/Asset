@@ -13,7 +13,12 @@
     playsound minecraft:entity.illusioner.prepare_blindness player @a ~ ~ ~ 1 0.8
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1054.quick_charging_battery/trigger/vfx
 
-# 急速充電を付与
+# 急速充電(雷攻撃)
     data modify storage api: Argument.ID set value 214
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
+# 急速充電(MP回復)
+    data modify storage api: Argument.ID set value 314
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
