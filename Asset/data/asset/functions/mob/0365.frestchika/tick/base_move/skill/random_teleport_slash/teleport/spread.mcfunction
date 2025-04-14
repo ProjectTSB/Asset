@@ -8,8 +8,8 @@
 # @private
 #declare tag SpreadMarker
 
-# 飛ぶ前の演出
-#    function asset:mob/1005.illusion_of_loyalty/tick/moveset/teleport/vfx
+# 自分の位置にマーカーを召喚
+    execute at @s run summon marker ~ ~1.2 ~ {Tags:["A5.Marker","A5.Marker.Teleport"]}
 
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
