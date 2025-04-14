@@ -17,7 +17,6 @@
     execute if entity @s[tag=335.Loneliness] if entity @e[type=!player,tag=Friend,distance=..30] run function asset:effect/0335.solitariness/modifier/remove
     execute if entity @s[tag=335.Loneliness] if entity @a[distance=0.1..30] run tag @s remove 335.Loneliness
     execute if entity @s[tag=335.Loneliness] if entity @e[type=!player,tag=Friend,distance=..30] run tag @s remove 335.Loneliness
-    execute if entity @s[tag=335.Loneliness] if entity @e[type=!player,tag=Friend,distance=..30] run say a
 
 # 周囲にモブがいないかつ、周囲にプレイヤーがいないなら付与
     execute if entity @s[tag=!335.Loneliness] unless entity @a[distance=0.1..30] unless entity @e[type=!player,tag=Friend,distance=..30] run function asset:effect/0335.solitariness/modifier/add
