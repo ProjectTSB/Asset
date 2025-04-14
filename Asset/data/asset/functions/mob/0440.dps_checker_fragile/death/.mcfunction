@@ -14,4 +14,4 @@
 # 上から新しいのが降ってくる
     particle explosion ~ ~10 ~ 0 0 0 0 1 force @a[distance=..32]
     data modify storage api: Argument.ID set value 440
-    execute positioned ~ ~10 ~ run function api:mob/summon
+    execute positioned ~ ~10 ~ facing entity @p feet rotated ~ 0 run function api:mob/summon
