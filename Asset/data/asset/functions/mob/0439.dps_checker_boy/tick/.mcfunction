@@ -8,7 +8,7 @@ execute if data storage asset:context this{Cooldown:0,IsAttacked:true} run funct
 execute unless data storage asset:context this{Cooldown:0} run function asset:mob/0439.dps_checker_boy/tick/cooldown/
 
 # 付近に誰もいなかったら消える
-    execute unless entity @a[distance=..24] run function api:mob/remove
+    execute unless entity @a[distance=..128] run function api:mob/remove
 
 # 角度を固定してしまう
     data modify entity @s Rotation[1] set value 0.0f
