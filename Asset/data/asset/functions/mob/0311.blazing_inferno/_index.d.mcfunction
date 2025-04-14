@@ -12,6 +12,7 @@
 #declare tag 8N.Moveset.BaseMove
 #declare tag 8N.Moveset.Transition
 #> マーカーリスト
+#declare tag 8N.Marker
 #declare tag 8N.Marker.SpawnPoint
 #declare tag 8N.Marker.Target
 #declare tag 8N.Marker.GroundSlamBeam

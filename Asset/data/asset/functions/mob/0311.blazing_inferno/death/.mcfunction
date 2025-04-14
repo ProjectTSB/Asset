@@ -14,7 +14,7 @@
     execute as @e[type=blaze,scores={MobID=313},distance=..64] run function api:mob/kill
 
 # 自分のマーカーを削除
-    kill @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1]
+    kill @e[type=marker,tag=8N.Marker,distance=..64,sort=nearest,limit=1]
 
 # 残るタイプのオブジェクトを削除
     kill @e[type=marker,scores={ObjectID=2137}]
