@@ -7,4 +7,4 @@
 #   asset:effect/0654.chicken_out/end/
 
 # スコアリセット
-    scoreboard players reset @s 0623.Tick
+    scoreboard players reset @s 0654.Tick

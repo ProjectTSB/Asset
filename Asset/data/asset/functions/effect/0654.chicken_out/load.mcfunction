@@ -7,4 +7,4 @@
 
 #> 定義類はここに
 # @within function asset:effect/0654.chicken_out/**
-    scoreboard objectives add 0623.Tick dummy
+    scoreboard objectives add 0654.Tick dummy

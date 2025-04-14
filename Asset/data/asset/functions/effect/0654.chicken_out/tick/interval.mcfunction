@@ -5,7 +5,7 @@
 # @within function asset:effect/0654.chicken_out/tick/
 
 # 実行時間を移す
-    scoreboard players operation $Interval Temporary = @s 0623.Tick
+    scoreboard players operation $Interval Temporary = @s 0654.Tick
 
 # 10tickごとに処理を実行
     scoreboard players operation $Interval Temporary %= $10 Const
