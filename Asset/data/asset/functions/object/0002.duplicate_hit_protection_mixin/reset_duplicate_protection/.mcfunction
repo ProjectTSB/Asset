@@ -4,4 +4,5 @@
 #
 # @within asset:object/alias/2/reset_duplicate_protection
 
-data modify storage asset:context this.DuplicateHitProtect set value {}
+data modify storage asset:context this.DuplicateHitProtectForPlayer set value {}
+data modify storage asset:context this.DuplicateHitProtectForNonPlayer set value {}

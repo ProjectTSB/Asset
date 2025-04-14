@@ -12,7 +12,8 @@
     data modify storage asset:object ID set value 2
 
 # フィールド(オプション)
-    data modify storage asset:object Field.DuplicateHitProtect set value {}
+    data modify storage asset:object Field.DuplicateHitProtectForPlayer set value {}
+    data modify storage asset:object Field.DuplicateHitProtectForNonPlayer set value {}
 
 # How to use
 # data modify storage api: Argument.Damage set value ...
