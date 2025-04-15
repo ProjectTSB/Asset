@@ -16,7 +16,7 @@
     function api:global_vars/game_progress
     execute store result score $Progress Temporary run data get storage api: Return.Progress 100
 # チェック
-    execute unless score $Progress Temporary matches 99.. run tellraw @s {"text":"まだ全ての浄化が済んでいないようだ","color":"red"}
+    execute unless score $Progress Temporary matches 99.. run tellraw @s {"text":"まだ全ての島の浄化が済んでいないようだ","color":"red"}
 # タグ消す
     execute unless score $Progress Temporary matches 99.. run tag @s remove CanUsed
 #　デバッグメッセージ
