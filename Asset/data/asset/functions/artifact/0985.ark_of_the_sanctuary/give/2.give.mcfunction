@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"Ark of the Sanctuary","color":"gold","bold":true,"underlined":true}'
+    data modify storage asset:artifact Name set value '{"text":"Ark of the Sanctuary","color":"gold"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"慈しみを象徴する剣"}','{"text":"憐れみ深い神への賛歌を奏でる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む素早い斬撃を放つ。"}','{"text":"コンボフィニッシュで剣を投げ放つ。"}','{"text":"\\"神への賛歌を奏でよ\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -45,10 +45,10 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 8
+    data modify storage asset:artifact LocalCooldown set value 8
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 8
+    data modify storage asset:artifact TypeCooldown.Duration set value 4
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
