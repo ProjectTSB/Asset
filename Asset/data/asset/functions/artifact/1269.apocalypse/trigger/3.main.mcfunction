@@ -26,9 +26,9 @@
     execute if score $Z9.Stack Temporary matches 3 run scoreboard players set $Damage Temporary 1500
     execute if score $Z9.Stack Temporary matches 4 run scoreboard players set $Damage Temporary 2000
     execute if score $Z9.Stack Temporary matches 5 run scoreboard players set $Damage Temporary 2500
-    execute if score $Z9.Stack Temporary matches 6 run scoreboard players set $Damage Temporary 3000
-    execute if score $Z9.Stack Temporary matches 7 run scoreboard players set $Damage Temporary 3500
-    execute if score $Z9.Stack Temporary matches 8 run scoreboard players set $Damage Temporary 4000
+    execute if score $Z9.Stack Temporary matches 6 run scoreboard players set $Damage Temporary 3500
+    execute if score $Z9.Stack Temporary matches 7 run scoreboard players set $Damage Temporary 5000
+    execute if score $Z9.Stack Temporary matches 8 run scoreboard players set $Damage Temporary 6000
 
 # ダメージ
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
