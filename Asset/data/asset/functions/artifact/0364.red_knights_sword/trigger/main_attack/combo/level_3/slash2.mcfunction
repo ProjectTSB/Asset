@@ -19,11 +19,7 @@
     execute positioned ^ ^ ^2 positioned ~ ~-0.5 ~ run function asset:artifact/0364.red_knights_sword/trigger/main_attack/shape/level_3/2
 
 # 攻撃判定
-    # ターゲット指定
-        execute positioned ^ ^ ^1 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..4] add A4.Hit
-        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..4] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..100] remove A4.Hit
-    # ダメージ処理へ
-        execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..4] run function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/damage
+    function asset:artifact/0364.red_knights_sword/trigger/main_attack/combo/level_3/damage
 
 # 衝撃波を飛ばす
     data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[-0.271f,-0.653f,-0.271f,0.653f]}

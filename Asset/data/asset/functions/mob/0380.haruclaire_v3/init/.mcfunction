@@ -10,9 +10,12 @@
 # 独自init処理
     # 中心点設置
         summon marker ~ ~ ~ {Tags:["AK.CenterPosition"]}
-        execute as @e[type=marker,tag=AK.CenterPosition] at @s run tp @s ~ ~ ~ 0 0
+        execute as @e[type=marker,tag=AK.CenterPosition,distance=..60] at @s run tp @s ~ ~ ~ 0 0
     # AJ関連初期化
         function asset:mob/0380.haruclaire_v3/init/animated_java
+
+# 移動
+    tp @s ~ ~0.5 ~
 
 # スコア初期化
     scoreboard players set @s AK.ActionCount 0
