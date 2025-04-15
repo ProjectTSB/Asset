@@ -13,7 +13,7 @@
     execute if score @s 4V.Skill matches 7.. run scoreboard players set @s 4V.Skill 1
 
 # デバッグスキル固定
-    scoreboard players set @s 4V.Skill 5
+    # scoreboard players set @s 4V.Skill 5
 
     execute if score @s 4V.Skill matches 1 run tag @s add 4V.SkillTackle
     execute if score @s 4V.Skill matches 2 run tag @s add 4V.SkillSummon
