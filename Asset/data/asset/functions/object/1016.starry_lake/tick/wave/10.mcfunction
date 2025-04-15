@@ -5,7 +5,7 @@
 # @within function asset:object/1016.starry_lake/tick/
 
 # ドーナツ状の当たり判定にentityがいた場合Tagを付与
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=4.01..4.5] positioned ~-7.5 ~-1 ~-7.5 if entity @s[dx=14,dy=1,dz=14] run tag @s add Target
+    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=4.01..4.5] positioned ~-7.5 ~-1 ~-7.5 if entity @s[dx=14,dy=1,dz=14] run tag @s add 1016.Target
 
 # 円 10
 particle dust 0.2 0.2 0.65 4 ^0 ^ ^-4.5 0 0 0 0 1
