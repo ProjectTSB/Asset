@@ -9,5 +9,6 @@
     data modify storage api: Argument.Heal set value 1.2
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
+    data modify storage api: Argument.ApplyTrigger set value false
     function api:heal/
     function api:heal/reset

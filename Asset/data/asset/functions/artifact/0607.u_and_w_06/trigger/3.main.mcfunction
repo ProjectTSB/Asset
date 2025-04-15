@@ -3,6 +3,7 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/0607.u_and_w_06/trigger/2.check_condition
+
 #> Private
 # @private
     #declare score_holder $UseCount

@@ -13,4 +13,4 @@
     particle crit ~ ~1 ~ 0 0 0 0.5 10
 
 # 補正を追加
-    function asset:artifact/0961.light_charm/trigger/add_modifier
+    function asset:artifact/0961.light_charm/trigger/update_modifier/

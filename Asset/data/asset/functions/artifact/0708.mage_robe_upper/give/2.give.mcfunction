@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魔導士のローブ(上)","color":"#621B9E"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+3.5% 魔法攻撃+3.5%","color":"dark_purple"}]','[{"text":"MP回復量+2.5%","color":"green"}]','[{"text":"物理耐性-2.5% 物理攻撃-5%","color":"dark_red"}]','[{"text":"魔導士が普段身に着けているローブ。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"魔法耐性+3.5% 魔法攻撃+3.5%","color":"dark_purple"}]','[{"text":"MP回復量+2.5%","color":"green"}]','[{"text":"魔導士が普段身に着けているローブ。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

@@ -17,21 +17,15 @@
 
 # 水耐性
     data modify storage api: Argument.UUID set value [I;1,1,775,6]
-    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/water/add
 
 # 水攻撃
     data modify storage api: Argument.UUID set value [I;1,1,775,6]
-    data modify storage api: Argument.Amount set value 0.04
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/water/add
-
-# 雷耐性
-    data modify storage api: Argument.UUID set value [I;1,1,775,6]
-    data modify storage api: Argument.Amount set value -0.05
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/defense/thunder/add
 
 # MP回復量+4%
     data modify storage api: Argument.UUID set value [I;1,1,775,6]

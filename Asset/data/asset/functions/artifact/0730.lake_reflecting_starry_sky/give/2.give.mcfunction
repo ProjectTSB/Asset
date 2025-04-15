@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"夜","color":"white"}'
+    # data modify storage asset:artifact Condition set value '{"text":"夜","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [250,500]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

@@ -8,5 +8,9 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
+# 猫の場合死ぬ
+# 現状だとCTがないので特に条件を考えずに実装している
+    execute if predicate player_manager:is_believe/nyaptov run function asset:artifact/0003.humanity/trigger/nyaptov
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0003.humanity/trigger/3.main

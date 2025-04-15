@@ -7,34 +7,24 @@
 
 # ヒット判定
     execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..5] add 9G.Temp.Target.Attack
+
 # TODO:ダメージ
-    # 与えるダメージ = 20
-        data modify storage api: Argument.Damage set value 62f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "None"
-# 補正functionを実行
+    data modify storage api: Argument.Damage set value 62f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-# 対象に
     execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:damage/
-# リセット
     function api:damage/reset
 
 # ヒット判定
     execute positioned ^ ^ ^ run tag @a[distance=..8.5] add 9G.Temp.Target.Attack.Sub
+
 # TODO:ダメージ
-    # 与えるダメージ = 20
-        data modify storage api: Argument.Damage set value 50f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "None"
-# 補正functionを実行
+    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-# 対象に
     execute as @a[tag=9G.Temp.Target.Attack.Sub,tag=!9G.Temp.Target.Attack] at @s run function api:damage/
-# リセット
     function api:damage/reset
 
 # かちあげ

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ファロスダル","color":"light_purple","italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"狩人の足を意味する靴"}','{"text":"並外れた走りの力を与える"}','{}','{"text":"走っている間"}','{"text":"移動速度+30% 攻撃力+10% 防御力-10%"}']
+    data modify storage asset:artifact Lore set value ['{"text":"狩人の足を意味する靴"}','{"text":"並外れた走りの力を与える"}','{"text":""}','{"text":"走っている間"}','{"text":"移動速度+10% 攻撃力+10% 防御力-5%"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/light/stellar_fury_1/tick
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # マーカー召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 

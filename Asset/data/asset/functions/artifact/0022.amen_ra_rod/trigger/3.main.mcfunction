@@ -9,11 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 発光を付与
-    effect give @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] minecraft:glowing 3 0 true
-
-# パーティクル
-    execute at @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] run particle end_rod ~ ~ ~ 1 1 1 0.1 100 force @a[distance=..30]
-
-# SE
-    playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 20 1
+# 光玉を召喚
+    execute if predicate lib:is_sneaking as @e[type=#lib:living,type=!player,tag=!ExtendedCollision,tag=!Uninterferable,distance=..15] run function asset:artifact/0022.amen_ra_rod/trigger/summon_1
+    execute if predicate lib:is_sneaking as @e[type=#lib:living,type=!player,tag= ExtendedCollision,distance=..15] run function api:mob/apply_to_forward_target/with_non-idempotent.m {CB:"asset:artifact/0022.amen_ra_rod/trigger/summon_1",Key:"asset:artifact/0022.amen_ra_rod/trigger/3.main",IsForwardedOnly:true}
+    execute unless predicate lib:is_sneaking as @e[type=#lib:living,type=!player,tag=!ExtendedCollision,tag=!Uninterferable,distance=..15] run function asset:artifact/0022.amen_ra_rod/trigger/summon_2
+    execute unless predicate lib:is_sneaking as @e[type=#lib:living,type=!player,tag= ExtendedCollision,distance=..15] run function api:mob/apply_to_forward_target/with_non-idempotent.m {CB:"asset:artifact/0022.amen_ra_rod/trigger/summon_2",Key:"asset:artifact/0022.amen_ra_rod/trigger/3.main",IsForwardedOnly:true}
+    function api:mob/apply_to_forward_target/reset_initial_apply.m {Key:"asset:artifact/0022.amen_ra_rod/trigger/3.main"}

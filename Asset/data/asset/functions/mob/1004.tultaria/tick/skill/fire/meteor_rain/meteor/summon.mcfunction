@@ -6,6 +6,10 @@
 #   asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
 #   asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"炎を追う狩人の狩猟服(上)","color":"#C92A2A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火耐性+5% 火攻撃+4%","color":"red"}','[{"text":"移動速度+5% ","color":"white"},{"text":"水耐性-5% ","color":"dark_red"}]','{"text":"フルセット時、","color":"white"}','[{"text":"火耐性+5% 火攻撃+5% ","color":"red"},{"text":"移動速度+10%","color":"white"}]','[{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}]','[{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['{"text":"火耐性+3.5% 火攻撃+3.5%","color":"red"}','[{"text":"移動速度+2% ","color":"white"}]','{"text":"フルセット時、","color":"white"}','[{"text":"火耐性+3% 火攻撃+3% ","color":"red"},{"text":"移動速度+2%","color":"white"}]','[{"text":"「ある時、その者は森が燃えているのを見た。","color":"gray","italic":true}]','[{"text":"その炎を追い、狩人は獣を炎から守った。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

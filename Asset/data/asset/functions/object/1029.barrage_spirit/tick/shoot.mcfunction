@@ -4,10 +4,21 @@
 #
 # @within asset:object/1029.barrage_spirit/tick/
 
+#> private
+# @private
+    #declare tag SpreadMarker
+
+# 前方拡散
+    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    data modify storage lib: Argument.Distance set value 15
+    data modify storage lib: Argument.Spread set value 3
+    execute facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] eyes as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+
 # 弾を召喚する
     data modify storage api: Argument.ID set value 1030
-    execute as @p[tag=1029.OwnerPlayer] store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute as @p[tag=1029.OwnerPlayer] run function api:object/summon
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..20,sort=nearest,limit=1] feet rotated ~ ~5 run function api:object/summon
 
 # カウントを増やす
     scoreboard players add @s 1029.ShotCount 1
@@ -19,3 +30,4 @@
 
 # リセット
     scoreboard players reset @s 1029.ActionTime
+    kill @e[type=marker,tag=SpreadMarker,distance=..20]

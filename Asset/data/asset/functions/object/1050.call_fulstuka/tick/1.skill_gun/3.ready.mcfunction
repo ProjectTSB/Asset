@@ -3,6 +3,7 @@
 # 発砲準備をします
 #
 # @within function asset:object/1050.call_fulstuka/tick/1.skill_gun/1.skill_gun
+
 #> tag
 # @private
     #declare tag SpreadMarker

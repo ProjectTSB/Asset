@@ -5,7 +5,7 @@
 # @within function asset:artifact/0870.samurai_blade/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/auto
+    function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
 # コマンド実行中（Timeをもっている）なら実行できない

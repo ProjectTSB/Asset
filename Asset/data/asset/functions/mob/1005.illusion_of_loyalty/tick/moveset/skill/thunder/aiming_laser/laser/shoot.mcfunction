@@ -6,6 +6,10 @@
 #   asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/**
 #   asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/thunder/aiming_laser/laser/shoot
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # サウンド
     execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 0.5 2
     execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.5 2

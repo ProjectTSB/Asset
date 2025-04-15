@@ -34,7 +34,7 @@
 # 毒
 # Stack = Difficulty
     data modify storage api: Argument set value {ID:29,Duration:100}
-    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Stack int 3 run data get storage api: Return.Difficulty
     execute as @e[type=#lib:living,tag=Friend,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

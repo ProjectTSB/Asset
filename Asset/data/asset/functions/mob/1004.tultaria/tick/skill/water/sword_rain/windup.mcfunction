@@ -16,11 +16,15 @@
 # 行動をランダムに選択
     # フェイズ1
         execute if score @s RW.Phase matches 1 store result score $Random Temporary run random value 0..1
-    # フェイズ2..
-        execute if score @s RW.Phase matches 2.. store result score $Random Temporary run random value 0..2
+    # フェイズ2
+        execute if score @s RW.Phase matches 2 store result score $Random Temporary run random value 0..2
+    # フェイズ3、ハード以下
+        execute if predicate api:global_vars/difficulty/max/normal if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..2
+    # フェイズ3かつBlesslessだとスゲー置き方解禁する
+        execute if predicate api:global_vars/difficulty/min/hard if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..3
 
 # デバッグ用、実行する技を確定させる
-#    scoreboard players set $Random Temporary 3
+#    scoreboard players set $Random Temporary 0
 
 # タグ付与
     # 1
@@ -31,3 +35,6 @@
         execute if score $Random Temporary matches 2 run tag @s add RW.Skill.SwordRain.3
     # 4
         execute if score $Random Temporary matches 3 run tag @s add RW.Skill.SwordRain.4
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}

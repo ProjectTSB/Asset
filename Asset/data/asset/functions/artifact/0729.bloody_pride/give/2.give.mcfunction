@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"血塗られた矜持","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"体力を最大体力に比例して回復する。","color":"white"}]','[{"text":"かつて誇り高き戦士がつけていた花。","color":"gray"}]','[{"text":"今はもう","color":"gray"},{"text":"鮮血","color":"dark_red"},{"text":"に染まり、無垢だった色の面影はない。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"体力を最大体力の1.5%","color":"white"},{"text":"\\u0002","font":"space"},{"text":"+","color":"white"},{"text":"\\u0002","font":"space"},{"text":"1回復する","color":"white"}]','[{"text":"かつて誇り高き戦士がつけていた花","color":"gray"}]','[{"text":"今はもう","color":"gray"},{"text":"鮮血","color":"dark_red"},{"text":"に染まり、無垢だった色の面影はない","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

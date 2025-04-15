@@ -18,4 +18,3 @@
 # フィールド
 # 与えるダメージ
     data modify storage asset:mob Field.Damage set value 35f
-    data modify storage asset:mob Field.EffectID set value 67

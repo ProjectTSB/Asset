@@ -9,7 +9,7 @@
 
 # (難易度値 * 2)のスタックだけ鈍足を付与する
 # フィールドで付与する鈍足を変えるようにする
-    data modify storage api: Argument.ID set from storage asset:context this.EffectID
+    data modify storage api: Argument.ID set value 17
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     data modify storage api: Argument.Duration set value 80
     function api:entity/mob/effect/give

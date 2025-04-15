@@ -15,18 +15,9 @@
     execute store result score $health_per Temporary run data get storage api: Return.HealthPer 100
 
 # 乱数によるスキル選択
-    data modify storage lib: Args.key set value "5XWeapon"
-    execute if score $health_per Temporary matches 50.. run data modify storage lib: Args.max set value 3
-    execute if score $health_per Temporary matches ..49 run data modify storage lib: Args.max set value 4
-    data modify storage lib: Args.scarcity_history_size set value 2
-    execute store result score $weapon_num Temporary run function lib:random/with_biased/manual.m with storage lib: Args
-    scoreboard players add $weapon_num Temporary 1
-        #tellraw @a [{"score":{"name":"$health_per","objective":"Temporary"},"color":"blue"}]
+    function asset:mob/0213.terrible_sonic_bomber/tick/weapons/select_weapon
+        #data modify storage asset:context Action.Selected set value "storm_shadow_cluster"
 
-    # 対空砲が破壊されていた場合武器が変化する攻撃はIDを変更、将来的にも乱数の範囲に入らない負の値にしておく
-    execute if entity @e[tag=PatriotLauncher.IsBroken,distance=..128] if score $weapon_num Temporary matches 4 run scoreboard players set $weapon_num Temporary -4
-        #scoreboard players set $weapon_num Temporary 1
-    execute store result storage asset:context this.use_weapon int 1 run scoreboard players get $weapon_num Temporary
 
 # 攻撃開始と終了時間指定(デフォルト値)
     execute store result score $attack_start_time Temporary run time query gametime
@@ -34,13 +25,16 @@
     execute store result storage asset:context this.attack_end_time int 1 run scoreboard players add $attack_start_time Temporary 20
 
 # 武器ごとの処理
-    execute if score $weapon_num Temporary matches 1 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare
-    execute if score $weapon_num Temporary matches 2 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_prepare
-    execute if score $weapon_num Temporary matches 3 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
-    execute if score $weapon_num Temporary matches 4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
-    execute if score $weapon_num Temporary matches -4 run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling_prepare
+    execute if data storage asset:context Action{Selected:"storm_shadow"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_prepare
+    execute if data storage asset:context Action{Selected:"storm_shadow_cluster"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/storm_shadow_cluster_prepare
+    execute if data storage asset:context Action{Selected:"brimstone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_prepare
+    execute if data storage asset:context Action{Selected:"drone"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/drone_prepare
+    execute if data storage asset:context Action{Selected:"snake_eye"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/snakeeye_prepare
+    execute if data storage asset:context Action{Selected:"gatling"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/gatling_prepare
+    execute if data storage asset:context Action{Selected:"landmine"} run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/landmine_prepare
 
 # reset
     scoreboard players reset $attack_start_time Temporary
     scoreboard players reset $weapon_num Temporary
     scoreboard players reset $health_per Temporary
+    data remove storage asset:temp action

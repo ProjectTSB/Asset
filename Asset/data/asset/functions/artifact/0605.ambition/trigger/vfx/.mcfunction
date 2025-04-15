@@ -18,7 +18,7 @@
 # debug
     # scoreboard players set $Per Temporary 100
 
-# 割合に比例して$Countを設定
+# 割合に応じて$Countを設定
     execute if score $Per Temporary matches 50..99 run scoreboard players set $Count Temporary 1
     execute if score $Per Temporary matches 100 run scoreboard players set $Count Temporary 2
 
