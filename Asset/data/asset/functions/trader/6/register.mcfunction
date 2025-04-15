@@ -34,33 +34,39 @@ execute unless loaded -29 21 -44 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value 90
+    # data modify storage asset:trader Trades[-1].RequiredProgress set value 0
 
 # 取引 鉄防具
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:1b}
     data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:iron_ingot",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value 91
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 25
 
 # 取引 金防具
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:2b}
     data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:gold_ingot",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value 92
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 25
 
 # 取引 ダイヤ防具
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:6b}
     data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:diamond",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value 93
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 50
 
 # 取引 ネザライト防具 - 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:8b}
     data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:netherite_ingot",Count:4b}
     data modify storage asset:trader Trades[-1].Sell set value 94
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 70
 
 # 取引 ネザライト防具 - 2
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value 93
     data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:netherite_ingot",Count:4b}
     data modify storage asset:trader Trades[-1].Sell set value 94
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 70
