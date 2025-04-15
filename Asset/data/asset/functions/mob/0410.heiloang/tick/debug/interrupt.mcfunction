@@ -20,6 +20,6 @@
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
-    tag @s add BE.Skill.Ter.Purg.Start
-    # tag @s add BE.Skill.Hellfire
+    # tag @s add BE.Skill.Ter.Purg.Start
+    tag @s add BE.Skill.FinalFlare
     scoreboard players set @s BE.Pb.Count 5

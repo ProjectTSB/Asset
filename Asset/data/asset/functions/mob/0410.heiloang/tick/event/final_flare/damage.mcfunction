@@ -6,7 +6,7 @@
 
 # 割合ダメージ
     # ChargeCount取得
-        scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot] BE.Charge.Count
+        scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot,distance=..160] BE.Charge.Count
     # 最大HP取得
         function api:modifier/max_health/get
         execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
@@ -31,6 +31,7 @@
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.FixedDamage set value 1b
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは 駄目でした","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.Metadata set value "FinalFlare"
     execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=slime,tag=BE.EntityRoot,limit=1] MobUUID
     function api:damage/modifier_manual
     function api:damage/
