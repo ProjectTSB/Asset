@@ -14,11 +14,16 @@
 # 移動
     execute if score @s General.Object.Tick matches 2 run data modify storage asset:context this.Speed set value 2
     execute if score @s General.Object.Tick matches 5 run data modify storage asset:context this.Speed set value 1
+    execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.MovePerStep set value 0.25
+
+# パーティクル
+    particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.05 1 force @a[distance=..32]
+    particle minecraft:crit ~ ~ ~ 0 0 0 1 1 force @a[distance=..32]
 
 # 一定Tickでサウンド
     # 実行時間を移す
         scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    # 2tickおきに実行
+    # 数tickおきに実行
         scoreboard players operation $Interval Temporary %= $5 Const
     # ダメージ実行
         execute if score $Interval Temporary matches 0 run playsound minecraft:item.trident.throw neutral @a ~ ~ ~ 1 0.7
