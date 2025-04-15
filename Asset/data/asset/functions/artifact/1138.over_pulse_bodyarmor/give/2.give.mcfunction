@@ -67,7 +67,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban","Wi-ki","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {display:{color:13421772},HideFlags:198,Unbreakable:1b,AttributeModifiers:[]}
+    data modify storage asset:artifact CustomNBT set value {display:{color:13421772},HideFlags:198,Unbreakable:1b,AttributeModifiers:[],Trim:{material:"diamond",pattern:"host"}}
 
 # 神器の入手用function
     function asset:artifact/common/give
