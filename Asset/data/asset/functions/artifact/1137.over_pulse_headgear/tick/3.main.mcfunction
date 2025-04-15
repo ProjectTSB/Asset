@@ -8,13 +8,9 @@
     data modify storage asset:artifact IgnoreItemUpdate set value true
     function asset:artifact/common/use/head
 
-# 暗所なら暗視を付ける
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark if entity @s[tag=!VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/sfx
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark run tag @s add VL.NightVision
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_bright if entity @s[tag=VL.NightVision] run playsound block.conduit.deactivate player @s ~ ~ ~ 0.3 1.5
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_bright run tag @s remove VL.NightVision
-    execute if entity @s[tag= VL.NightVision] run effect give @s night_vision 11 0 true
-    execute if entity @s[tag=!VL.NightVision] run effect clear @s night_vision
+# 暗所チェック
+    execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark if entity @s[tag=!VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/give
+    execute if predicate asset:artifact/1137.over_pulse_headgear/in_bright if entity @s[tag=VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/remove
 
 # 採掘速度上昇をつける
 # Haste = $VL.Stack - 1

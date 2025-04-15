@@ -12,5 +12,6 @@
 #> tag - night vision
 # @within function
 #   asset:artifact/1137.over_pulse_headgear/tick/3.main
+#   asset:artifact/1137.over_pulse_headgear/tick/night_vision/**
 #   asset:artifact/1137.over_pulse_headgear/dis_equip/main
     #declare tag VL.NightVision
