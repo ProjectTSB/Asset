@@ -25,7 +25,7 @@
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:20188,Enchantments:[{id:"punch",lvl:1s}]}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:1061,Enchantments:[{id:"punch",lvl:1s}]}}
     # オフハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Offhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:376}}
 # 武器ドロップ率 ([float, float]) (オプション)
