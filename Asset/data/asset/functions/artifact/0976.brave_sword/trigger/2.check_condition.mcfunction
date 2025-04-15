@@ -9,10 +9,8 @@
 # 他にアイテム等確認する場合はここに書く
 
 # 前回の使用時のTickとの差を計算する
-    execute store result score $LatestUseTick Temporary run data get storage asset:context Items.mainhand.tag.TSB.LatestUseTick
     execute store result score $TickSinceLastUse Temporary run time query gametime
-    scoreboard players operation $TickSinceLastUse Temporary -= $LatestUseTick Temporary
-    scoreboard players reset $LatestUseTick Temporary
+    scoreboard players operation $TickSinceLastUse Temporary -= @s R4.LatestUseTick
 
 # コンボフィニッシュを出したあとは、前回の使用時とのTickの差が13Tick以上でないと使用処理がキャンセルされる
     execute if score @s R4.Combo matches 3.. unless score $TickSinceLastUse Temporary matches 13.. run tag @s remove CanUsed
