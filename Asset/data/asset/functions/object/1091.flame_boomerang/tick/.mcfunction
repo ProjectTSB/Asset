@@ -22,7 +22,7 @@
     execute if score @s General.Object.Tick matches 26 run data modify storage asset:context this.Speed set value 2
 
 # 戻り始めるタイミングでHitListを空に
-    execute if score @s General.Object.Tick matches 25 run data modify storage asset:context this.HitList set value {}
+    execute if score @s General.Object.Tick matches 25 run function asset:object/call.m {method:"reset_duplicate_protection"}
 
 # 戻ってくる処理
     execute if score @s General.Object.Tick matches 20..25 facing entity @p[tag=Owner,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~

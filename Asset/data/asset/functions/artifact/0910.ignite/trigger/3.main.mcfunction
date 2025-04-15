@@ -20,6 +20,9 @@
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
 
+# SDS open
+    function api:damage/single_damage_session/open
+
 # 近接で殴った相手に800ダメ
     data modify storage api: Argument.Damage set value 880.0f
     data modify storage api: Argument.AttackType set value "Physical"
@@ -43,6 +46,9 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function api:damage/
     function api:damage/reset
+
+# SDS close
+    function api:damage/single_damage_session/close
 
 # リセット
     tag @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] remove PA.SlashHit
