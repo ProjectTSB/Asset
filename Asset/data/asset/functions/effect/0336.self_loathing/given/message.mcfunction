@@ -1,6 +1,6 @@
 #> asset:effect/0336.self_loathing/given/message
 #
-#
+# 保留
 #
 # @within function asset:effect/0336.self_loathing/given/
 
