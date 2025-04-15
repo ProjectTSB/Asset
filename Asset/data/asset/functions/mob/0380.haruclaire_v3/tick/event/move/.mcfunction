@@ -16,7 +16,7 @@
         execute if score @s AK.EventTimer matches 194 as @e[type=item_display,tag=AK.ModelRoot,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/1_0_rod_idle_tween
     # 移動
         function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-        execute if score @s AK.EventTimer matches ..192 at @s facing entity @p[tag=AK.MainTarget] feet positioned ^ ^ ^0.4 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches ..192 at @s facing entity @p[tag=AK.MainTarget,distance=..80] feet positioned ^ ^ ^0.4 run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches ..192 at @s unless block ~ ~-1 ~ #lib:no_collision positioned ~ ~0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 十分近づくか、一定時間後に終了
