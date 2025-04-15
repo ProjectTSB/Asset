@@ -46,12 +46,15 @@
     execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.LeftHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
     execute if entity @s[tag=RW.Mode.Light] at @e[type=marker,tag=RW.ModelLocator.RightHand,distance=..8,sort=nearest,limit=1] run particle dust 1 1 1 1 ~ ~ ~ 0.1 0.1 0.1 1 1
 
-# フェイズ3以降は、「忠誠の幻想」が一人でもいるなら無敵になる
-#    execute if score @s RW.Phase matches 3.. if entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s add RW.Shield
-#    execute if entity @s[tag=RW.Shield] run function asset:mob/1004.tultaria/tick/base_move/loyalty_shield/
+# フェイズ3以降は、「忠誠の幻想」が一人でもいるならカッチカチになる
+    execute if score @s RW.Phase matches 3.. if entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s add RW.Shield
+    execute if entity @s[tag=RW.Shield] run function asset:mob/1004.tultaria/tick/base_move/loyalty_shield/
 
-# フェイズ3以降、「忠誠の幻想」がいないなら
-#    execute if score @s RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run tag @s remove RW.Shield
+# フェイズ3以降、「忠誠の幻想」がいない場合はシールドが割れる
+    execute if score @s[tag=!RW.Break] RW.Phase matches 3.. unless entity @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run function asset:mob/1004.tultaria/tick/base_move/break/start
+
+# ブレイク状態の時のTick処理
+    execute if entity @s[tag=RW.Break] run function asset:mob/1004.tultaria/tick/base_move/break/tick
 
 # 足元が埋まっている間は上にちょっとずつ登る
     execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.2 ~

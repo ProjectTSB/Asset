@@ -9,6 +9,10 @@
     #declare tag 5X.Centre #旋回中心座標を示す、基本的には呪われた剣の位置と一致する。イギリス綴りなので誤字ではない
     #declare tag 5X.StartAction #初期モーションが終わって行動開始している意味
     #declare tag 5X.WingStraight #直線翼になっているかどうか
+    #declare tag 5X.CannotUseDrone #ドローンを使用可能かどうか ドローン発動中は使用不可、ドローン発動後別の攻撃を1回した後使用可能になる
+    #declare tag 5X.Mine75Per #空中散布地雷のHP75%以下発動を実行したかどうか
+    #declare tag 5X.Mine50Per #空中散布地雷のHP50%以下発動を実行したかどうか
+    #declare tag 5X.Mine25Per #空中散布地雷のHP25%以下発動を実行したかどうか
 
 #> tag_inter_object
 # @within

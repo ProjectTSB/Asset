@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 
 # ちょ～っとずつ進む、ただしプレイヤーを捕捉していない場合

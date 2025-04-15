@@ -17,9 +17,9 @@
     playsound minecraft:block.sculk_sensor.clicking player @a ~ ~ ~ 0.8 0
     playsound ogg:mob.vex.idle1 player @a ~ ~ ~ 1 0 0
 
-# 物理耐性
+# 物理
     data modify storage api: Argument.UUID set value [I;1,1,666,4]
-    data modify storage api: Argument.Amount set value 0.025
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
@@ -43,7 +43,7 @@
 
 # 最大体力
     data modify storage api: Argument.UUID set value [I;1,1,666,4]
-    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Amount set value -0.025
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/max_health/add
 

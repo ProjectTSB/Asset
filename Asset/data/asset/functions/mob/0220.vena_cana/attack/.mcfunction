@@ -11,9 +11,6 @@
     execute at @p[tag=Victim,distance=..6] run playsound minecraft:block.conduit.ambient hostile @a ~ ~ ~ 0.7 0.8 0
     execute at @p[tag=Victim,distance=..6] run particle dust 0.149 0.682 0.741 1 ~ ~1.2 ~ 0.6 0.3 0.6 0 30 normal @a
 
-# 第一に攻撃対象の全effectをclear
-    # effect clear @s
-
 # ダメージ
     data modify storage api: Argument.Damage set value 41f
     data modify storage api: Argument.AttackType set value "Physical"

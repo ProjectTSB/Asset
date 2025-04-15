@@ -6,7 +6,7 @@
 
 #> SpreadLib
 # @private
-#declare tag SpreadMarker
+    #declare tag SpreadMarker
 
 # 拡散用marker召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

@@ -66,6 +66,7 @@
         data modify storage asset:mob Resist.Thunder set value 0.25
 # フィールド
     data modify storage asset:mob Field.TargetCoordinates set value []
-    data modify storage asset:mob Field.UsingWeapon set value ""
     data modify storage asset:mob Field.AttackDistance set value 50
     data modify storage asset:mob Field.InitialMotionTime set value 200
+    data modify storage asset:mob Field.Minefield_Pos set value []
+    data modify storage asset:mob Field.Action set value {}

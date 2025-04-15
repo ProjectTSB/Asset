@@ -18,8 +18,9 @@
 
 # 突き開始
     execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/active
-    # 突き部分のダメージ
-        execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 21 positioned ^ ^ ^1 if entity @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
+# 突き部分のダメージ
+    execute if score @s[scores={RW.Phase=1..2}] General.Mob.Tick matches 21 positioned ^ ^ ^1 if entity @a[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stab/damage
+
 # ハイパー突き
     execute if score @s[scores={RW.Phase=3}] General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/hyper_stab/
 

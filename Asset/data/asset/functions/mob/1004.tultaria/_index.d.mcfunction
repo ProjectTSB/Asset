@@ -11,6 +11,8 @@
     # ボスの状態に関するタグ
     #declare tag RW.CanElementChange
     #declare tag RW.SkillSelected
+    #declare tag RW.Shield
+    #declare tag RW.Break
     # ボスの体と移動に関連するタグ
     #declare tag RW.Opening
     #declare tag RW.PlayerFacing
@@ -24,6 +26,7 @@
     #declare tag RW.ModelLocator.RightHand
     #declare tag RW.ModelRoot
     #declare tag RW.ModelRoot.Target
+    #declare tag RW.Model.RightHandItem
     # ボスのマーカーに関するタグ
     #declare tag RW.RotateMarker
     #declare tag RW.Marker.SpawnPoint
@@ -94,11 +97,15 @@
     #declare function animated_java:tultaria/animations/attack_melee_4_active/tween
     #declare function animated_java:tultaria/animations/dodge_back/tween
     #declare function animated_java:tultaria/animations/dodge_side/tween
+    #declare function animated_java:tultaria/animations/break/tween
+    #declare function animated_java:tultaria/animations/break_loop/tween
     #declare function animated_java:tultaria/animations/pause_all
     #declare function animated_java:tultaria/apply_default_pose
     #declare function animated_java:tultaria/remove/this
     #declare function animated_java:tultaria/variants/winged/apply
     #declare function animated_java:tultaria/variants/face_eyehalf/apply
     #declare function animated_java:tultaria/variants/face_eyeclose/apply
+    #declare function animated_java:tultaria/variants/face_eyeopen/apply
     #declare tag aj.tultaria.bone.right_ring
     #declare tag aj.tultaria.bone.left_ring
+    #declare tag aj.tultaria.node.right_item_display

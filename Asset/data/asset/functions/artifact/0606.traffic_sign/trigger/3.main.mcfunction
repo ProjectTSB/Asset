@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/3.1.vfx
+    execute at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/vfx
 
 # カウントを増やす
 # 一定時間内に攻撃しないとカウントは増えない
@@ -21,18 +21,18 @@
     scoreboard players add @s GU.Count 1
 
 # カウントが4以上なら道路標識を召喚する
-    execute if score @s GU.Count matches 4.. at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/3.2.sign_summon
+    execute if score @s GU.Count matches 4.. at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/sign_summon
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 300..500
+    execute store result storage api: Argument.Damage float 1 run random value 550..680
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
+    function api:damage/reset
 
 # 鈍足
     # execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run effect give @s slowness 10 0 true
 
-# スコアとかストレージとかリセット
-    function api:damage/reset
+# リセット
     scoreboard players reset $GU.Temp Temporary

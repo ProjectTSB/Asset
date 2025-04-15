@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/water/sword_rain/pattern/**
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # マーカーを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 

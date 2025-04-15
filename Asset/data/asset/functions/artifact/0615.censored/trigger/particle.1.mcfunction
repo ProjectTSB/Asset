@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/0615.censored/trigger/3.6.attack
+# @within function asset:artifact/0615.censored/trigger/attack
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgB2AhgLYLKBhigAQCMAzGATMRmQM5LgoD2AroQhJ6ABgIo4guBi5gAHkjFgoigL4E2AEzR9OiEQDoArAXYRWQ-QTjZsaGOwq0RSjD3MQKI1aoC6QA
 # 円 13

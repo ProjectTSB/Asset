@@ -21,7 +21,7 @@
     execute if score @s R4.Combo matches 3.. if score $R4.Temp Temporary matches 13.. run scoreboard players reset @s R4.Combo
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # コンボカウント加算
     scoreboard players add @s R4.Combo 1

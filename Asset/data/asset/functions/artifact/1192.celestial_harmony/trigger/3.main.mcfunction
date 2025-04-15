@@ -6,25 +6,21 @@
 
 #> Private
 # @private
-    #declare score_holder $MPMax
-    #declare score_holder $MP
-
+    #declare score_holder $MPPer
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
-# MP 割合計算
-    function api:mp/get_max
-    function api:mp/get_current
-    execute store result score $MPMax Temporary run data get storage api: Return.MaxMP
-    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 100
-    scoreboard players operation $MP Temporary /= $MPMax Temporary
+# MP割合を計算
+    function api:entity/player/get_mp_per
+    execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
 # ダメージ
     data modify storage api: Argument.Damage set value 600f
     data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:damage/
     function api:damage/reset
@@ -36,15 +32,14 @@
     data modify storage api: Argument.FieldOverride.Interval set value 2
     execute store result storage api: Argument.FieldOverride.AppliedFrom int 1 run scoreboard players get @s UserID
 
-    execute if score $MP Temporary matches 00..10 run data modify storage api: Argument.Duration set value 15
-    execute if score $MP Temporary matches 11..20 run data modify storage api: Argument.Duration set value 13
-    execute if score $MP Temporary matches 21..30 run data modify storage api: Argument.Duration set value 11
-    execute if score $MP Temporary matches 31..40 run data modify storage api: Argument.Duration set value 7
-    execute if score $MP Temporary matches 41..50 run data modify storage api: Argument.Duration set value 5
-    execute if score $MP Temporary matches 51.. run data modify storage api: Argument.Duration set value 3
+    execute if score $MPPer Temporary matches 00..10 run data modify storage api: Argument.Duration set value 15
+    execute if score $MPPer Temporary matches 11..20 run data modify storage api: Argument.Duration set value 13
+    execute if score $MPPer Temporary matches 21..30 run data modify storage api: Argument.Duration set value 11
+    execute if score $MPPer Temporary matches 31..40 run data modify storage api: Argument.Duration set value 7
+    execute if score $MPPer Temporary matches 41..50 run data modify storage api: Argument.Duration set value 5
+    execute if score $MPPer Temporary matches 51.. run data modify storage api: Argument.Duration set value 3
     execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット
-    scoreboard players reset $MPMax Temporary
-    scoreboard players reset $MP Temporary
+    scoreboard players reset $MPPer Temporary

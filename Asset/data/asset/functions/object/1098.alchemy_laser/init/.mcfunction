@@ -11,4 +11,4 @@
     execute at @s positioned ~ ~0.5 ~ run function asset:object/1098.alchemy_laser/init/area
 
 # サウンド
-    playsound entity.zombie_villager.converted hostile @a[distance=..32] ~ ~ ~ 1 2 0
+    playsound entity.zombie_villager.converted player @a[distance=..32] ~ ~ ~ 1 2 0

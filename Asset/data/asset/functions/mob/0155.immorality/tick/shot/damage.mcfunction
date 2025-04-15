@@ -20,7 +20,7 @@
 # 衰弱Lv2
     function api:global_vars/get_difficulty
     data modify storage api: Argument set value {ID:80,Duration:160}
-    execute store result storage api: Argument.Stack int 3 run data get storage api: Return.Difficulty
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

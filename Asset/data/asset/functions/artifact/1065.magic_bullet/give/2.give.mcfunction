@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魔弾","color":"#4F5BFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵味方を無差別に貫く弾丸を放つ。","color":"white"}','{"text":"残り弾数が減るほど与えるダメージが上昇する。","color":"white"}','{"text":"7つ目の弾丸は50%の確率でランダムなプレイヤーを狙う。","color":"white"}','{"text":"弾が切れても自動でリロードされる。","color":"white"}','{"text":"「最後の弾丸は愛する人の頭を貫くだろう。」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵味方を無差別に貫く弾丸を放つ","color":"white"}','{"text":"残り弾数が減るほど与えるダメージが上昇する","color":"white"}','{"text":"7つ目の弾丸は50%の確率でランダムなプレイヤーを狙う","color":"white"}','{"text":"弾が切れても自動でリロードされる","color":"white"}','{"text":"「最後の弾丸は愛する人の頭を貫くだろう。」","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"セレスティアル・ハーモニー","color":"#5577FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃時、対象に星を降らせ追撃を行う"}','{"text":"追撃する星はMPが少ないほど増加する"}','{"text":"星の調べを奏でる天上の剣。","color":"gray"}','{"text":"剣の響きに応じて、夜空は星を返す。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃時、対象に星を降らせ追撃を行う"}','{"text":"追撃する星の数はMP割合が少ないほど増加する"}','{"text":"星の調べを奏でる天上の剣。","color":"gray"}','{"text":"剣の響きに応じて、夜空は星を返す。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -33,7 +33,7 @@
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value ["Magic"]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value ["None"]
+    data modify storage asset:artifact AttackInfo.ElementType set value ["Thunder"]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 70
+    data modify storage asset:artifact TypeCooldown.Duration set value 60
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

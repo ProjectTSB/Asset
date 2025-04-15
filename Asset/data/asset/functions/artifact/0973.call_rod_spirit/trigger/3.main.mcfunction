@@ -11,10 +11,10 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1029
+    data modify storage api: Argument.FieldOverride.Damage set value {Min:95,Max:135}
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
-# 音とパーティクル neutralになってるのは妖精側の音だから
+
+# 音とパーティクル
     playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 2 1.75
     playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 2 1
-    playsound minecraft:block.amethyst_cluster.break neutral @a ~ ~ ~ 1.5 1.5
-    playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 2

@@ -4,5 +4,8 @@
 #
 # @within asset:object/alias/1030/summon
 
-# 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],teleport_duration:1,billboard:"center",item:{id:"minecraft:potion",Count:1b,tag:{CustomModelData:20234,CustomPotionColor:10274303}}}
+# 召喚
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/1030.barrage_spirit_bullet/summon/m with storage asset:temp Args
+    data remove storage asset:temp Args

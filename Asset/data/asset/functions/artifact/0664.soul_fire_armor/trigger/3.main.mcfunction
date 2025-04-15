@@ -18,7 +18,7 @@
 
 # 物理攻撃
     data modify storage api: Argument.UUID set value [I;1,1,664,6]
-    data modify storage api: Argument.Amount set value 0.025
+    data modify storage api: Argument.Amount set value 0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
@@ -42,7 +42,7 @@
 
 # 最大体力
     data modify storage api: Argument.UUID set value [I;1,1,664,6]
-    data modify storage api: Argument.Amount set value -0.1
+    data modify storage api: Argument.Amount set value -0.025
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/max_health/add
 
