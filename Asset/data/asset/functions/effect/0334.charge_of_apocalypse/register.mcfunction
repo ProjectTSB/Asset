@@ -1,17 +1,17 @@
-#> asset:effect/0334.charge_of_dragon_sword/register
+#> asset:effect/0334.charge_of_apocalypse/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0334.charge_of_dragon_sword/_/register
+# @within function asset:effect/0334.charge_of_apocalypse/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 334
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"チャージ・"},{"text":"龍殺しの大剣","color":"#ad0000"}]'
+    data modify storage asset:effect Name set value '[{"text":"黙示録ノ紡ギ手","color":"#ad0000"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text":"チャージ段階に応じてアポカリプスのダメージが増加する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 20
 # スタック (int) (default = API || 1)
@@ -23,7 +23,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 3
+    data modify storage asset:effect MaxStack set value 8
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")

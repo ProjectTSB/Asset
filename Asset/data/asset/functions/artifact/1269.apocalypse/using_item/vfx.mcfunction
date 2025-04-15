@@ -1,8 +1,8 @@
-#> asset:artifact/1269.dragon_slayer_sword/using_item/vfx
+#> asset:artifact/1269.apocalypse/using_item/vfx
 #
 #
 #
-# @within function asset:artifact/1269.dragon_slayer_sword/using_item/3.main
+# @within function asset:artifact/1269.apocalypse/using_item/3.main
 
 execute if predicate lib:random_pass_per/10 positioned ~-3.24871685327494 ~2.76505857986373 ~14.3805524878973 run particle cloud ~ ~ ~ 0.216581123551662 -0.184337238657582 -0.958703499193154 0.75 0
 execute if predicate lib:random_pass_per/10 positioned ~14.0996855312424 ~-2.94910374883769 ~4.18349793816927 run particle cloud ~ ~ ~ -0.939979035416157 0.196606916589179 -0.278899862544618 0.75 0
