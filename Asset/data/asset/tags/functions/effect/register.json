@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0274.pulse_armor/_/register",
         "asset:effect/0314.quick_charge_mp/_/register",
         "asset:effect/0150.resistance/_/register",
         "asset:effect/0323.charge_of_hekireki/_/register",
