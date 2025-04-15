@@ -5,6 +5,7 @@
 # @within function asset:artifact/0002.blessing/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
+    data modify storage asset:artifact DisabledCheckFlag.Believe set value true
     function asset:artifact/common/check_condition/auto
 # すでに選択待機中ならキャンセル
     execute if score @s 02.Trigger matches 0 run tag @s remove CanUsed
