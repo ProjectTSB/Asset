@@ -13,8 +13,8 @@
     function api:modifier/heal/remove
 
 # 物理耐性
-    data modify storage api: Argument.UUID set value [I;1,1,638,6]
-    function api:modifier/defense/physical/remove
+    # data modify storage api: Argument.UUID set value [I;1,1,638,6]
+    # function api:modifier/defense/physical/remove
 
 # 最大体力+8
     data modify storage api: Argument.UUID set value [I;1,1,638,6]

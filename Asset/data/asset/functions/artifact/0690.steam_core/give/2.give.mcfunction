@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"スチームコア","color":"#BF675A","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+15% ","color":"red"},{"text":"水攻撃+15% ","color":"aqua"},{"text":"被回復量-20%","color":"dark_red"}]','[{"text":"凄まじい効率を誇る蒸気機関の鎧。","color":"gray"}]','[{"text":"着用すると蒸気が体中から溢れてくる。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+15% ","color":"red"},{"text":"水攻撃+15% ","color":"aqua"},{"text":"被回復量-10%","color":"dark_red"}]','[{"text":"凄まじい効率を誇る蒸気機関の鎧。","color":"gray"}]','[{"text":"着用すると蒸気が体中から溢れてくる。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

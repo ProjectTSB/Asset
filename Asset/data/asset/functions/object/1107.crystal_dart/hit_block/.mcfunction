@@ -17,3 +17,6 @@
 # 反射回数が6なら死
     execute store result storage asset:context this.Refrection int 0.9999999999 run data get storage asset:context this.Refrection 1
     execute if data storage asset:context this{Refrection:0} run function asset:object/call.m {method:kill}
+
+# 射程復活
+    execute store result storage asset:context this.RemainingRange int 1 run data get storage asset:context this.Range 1

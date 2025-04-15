@@ -2,7 +2,7 @@
 #
 # カウントダウン処理
 #
-# @within function asset:object/2141.louvert_soul_bomb/tick/
+# @within function asset:object/2141.louvert_soul_bomb/tick/process
 
 execute if score @s General.Object.Tick matches 20 on passengers run data modify entity @s text set value '{"text":"9","font":"magic"}'
 execute if score @s General.Object.Tick matches 40 on passengers run data modify entity @s text set value '{"text":"8","font":"magic"}'

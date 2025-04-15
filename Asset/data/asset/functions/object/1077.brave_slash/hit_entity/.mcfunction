@@ -14,7 +14,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # ダメージ値設定
-    execute store result storage api: Argument.Damage float 1 run random value 105..155
+    execute store result storage api: Argument.Damage float 1 run random value 160..205
 
 # ユーザー特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID

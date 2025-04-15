@@ -17,7 +17,7 @@
         summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
         data modify storage lib: Argument.Bounds set value [[16d,16d],[0.0d,0.0d],[16d,16d]]
     # スポーン地点のマーカーがちょっと浮いてる関係で調整している
-        execute as @e[type=marker,tag=SpreadMarker,distance=..64] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,limit=1] positioned ~ ~-0.5 ~ run function lib:spread_entity/
+        execute as @e[type=marker,tag=SpreadMarker,distance=..64] at @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,limit=1] run function lib:spread_entity/
     # 召喚
         execute at @e[type=marker,tag=SpreadMarker,distance=..64] run function api:object/summon
     # 片付け

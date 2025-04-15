@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"白霜に覆われた心","color":"#ABF4FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+10%","color":"aqua"}]','{"text":"被回復量-15%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"忘却の白雪","color":"#ABF4FF"}]','[{"text":"水攻撃+20% ","color":"aqua"},{"text":"被回復量-10%","color":"dark_red"}]','{"text":"攻撃時、対象に物理水属性ダメージを与え","color":"white"}','{"text":"常に周囲の敵へ鈍足を付与する","color":"white"}','[{"text":"「その者は凍りついた心を抱えて彷徨っていた。","color":"gray","italic":true}]','[{"text":" しかし心を覆う白霜はその心すら砕こうとした。」","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"水耐性+10% 水攻撃+10%","color":"aqua"}]','{"text":"被回復量-15%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"忘却の白雪","color":"#ABF4FF"}]','[{"text":"水攻撃+20% ","color":"aqua"}]','{"text":"攻撃時、対象に物理水属性ダメージを与え","color":"white"}','{"text":"常に周囲の敵へ鈍足を付与する","color":"white"}','[{"text":"「その者は凍りついた心を抱えて彷徨っていた。","color":"gray","italic":true}]','[{"text":" しかし心を覆う白霜はその心すら砕こうとした。」","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

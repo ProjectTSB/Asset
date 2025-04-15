@@ -26,7 +26,3 @@
     data modify storage api: Argument.ID set value 74
     execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
-
-    data modify storage api: Argument.ID set value 124
-    execute as @a[distance=..8] run function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset

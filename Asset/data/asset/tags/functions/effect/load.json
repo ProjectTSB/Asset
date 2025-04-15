@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0330.deep_slash/load",
+        "asset:effect/0316.aurora_slash/load",
         "asset:effect/0191.night_vision/load",
         "asset:effect/0605.aurora_corrosion/load",
         "asset:effect/0601.conviction/load",

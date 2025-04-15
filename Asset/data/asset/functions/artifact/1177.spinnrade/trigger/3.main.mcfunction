@@ -15,8 +15,8 @@
     playsound minecraft:entity.puffer_fish.death player @a ~ ~ ~ 1 1.4
 # 矢を召喚する
     data modify storage api: Argument.ID set value 1087
-    execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 780
-    execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 620
+    execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 740
+    execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 550
     execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 8
     execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 4
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

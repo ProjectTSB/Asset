@@ -12,5 +12,5 @@
     scoreboard players remove @s SU.EquipCount 1
 
 # リセット処理
-    scoreboard players reset @s SU.CoolDown
+    # scoreboard players reset @s SU.CoolDown
     scoreboard players reset @s[scores={SU.EquipCount=0}] SU.EquipCount

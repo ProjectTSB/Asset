@@ -11,25 +11,25 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 364
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red","bold":true,"italic":true}'
+    data modify storage asset:artifact Name set value '{"text":"赤い騎士の剣","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"渇きは収まることを知らない。","color":"dark_red"}','[{"text":"血の欲望は","color":"dark_red"},{"text":"貴方","color":"dark_red","underlined":true},{"text":"の身体まで求める。","color":"dark_red"}]','{"text":"壊れたとしても血を与えれば再生する。","color":"dark_red","underlined":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の体力の減少量に応じて強力になる斬撃を放つ。"}','{"text":"スニーク中に使用することで、自らの体力を犠牲に強力な攻撃を放つ。"}','[{"text":"発動後の15秒間は被回復量が","color":"white"},{"text":"70%","color":"red"},{"text":"減少するほか、その間は再発動できない。","color":"white"}]','{"text":"\\"血への渇望は、収まる事を知らない\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 13
+    # data modify storage asset:artifact RemainingCount set value 13
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [610]
+    data modify storage asset:artifact AttackInfo.Damage set value [100-1000]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -48,13 +48,13 @@
     # data modify storage asset:artifact LocalCooldown set value 8
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 8
+    data modify storage asset:artifact TypeCooldown.Duration set value 7
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+    # data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

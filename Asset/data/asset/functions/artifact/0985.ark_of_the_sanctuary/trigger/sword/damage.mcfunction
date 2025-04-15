@@ -13,7 +13,7 @@
 
 # ダメージを与える
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 115f
+        data modify storage api: Argument.Damage set value 155f
     # 属性
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "None"

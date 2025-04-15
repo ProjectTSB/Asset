@@ -24,7 +24,7 @@
     execute if score @s GU.Count matches 4.. at @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..6] run function asset:artifact/0606.traffic_sign/trigger/sign_summon
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 300..500
+    execute store result storage api: Argument.Damage float 1 run random value 550..680
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

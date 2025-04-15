@@ -17,7 +17,7 @@
 
 # 矢を発射
     data modify storage api: Argument.ID set value 1104
-    data modify storage api: Argument.FieldOverride.Damage set value 20f
+    data modify storage api: Argument.FieldOverride.Damage set value 15f
     data modify storage api: Argument.FieldOverride.PoisonDamage set value 10f
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

@@ -15,7 +15,7 @@
     kill @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..128,limit=1]
 
 # 「忠誠の幻影」がいたら消す
-    execute as @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run function api:mob/kill
+    execute as @e[type=wither_skeleton,scores={MobID=1005},distance=..64] run function api:mob/remove
 
 # Super
     function asset:mob/super.remove
