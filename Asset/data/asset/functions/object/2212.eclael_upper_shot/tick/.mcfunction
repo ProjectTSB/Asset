@@ -9,7 +9,7 @@
 
 # 演出
     execute if entity @s[scores={General.Object.Tick=1..60}] run function asset:object/2212.eclael_upper_shot/tick/prediction_text
-    execute if entity @s[scores={General.Object.Tick=60}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[10f,200f,10f]},text:'[{"text":""}]'}
+    execute if entity @s[scores={General.Object.Tick=60}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1f,0f,0f],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[10f,200f,10f]},text:'[{"text":""}]'}
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=90}] run tp @s ^8 ^ ^ ~ ~

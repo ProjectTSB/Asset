@@ -21,7 +21,7 @@
     # execute if entity @s[scores={General.Object.Tick=29}] run function asset:object/2211.eclael_circle_slash/tick/effect_start
 
 # モデル変更
-    execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:18,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,1.5f],scale:[18.5f,18.5f,0f]},text:'[{"text":"1","font":"object/2211/0"}]'}
+    execute if entity @s[scores={General.Object.Tick=23}] run data merge entity @s {interpolation_duration:18,start_interpolation:0,transformation:{left_rotation:{axis:[1f,0f,0f],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,1.5f],scale:[18.5f,18.5f,0f]},text:'[{"text":"1","font":"object/2211/0"}]'}
     execute if entity @s[scores={General.Object.Tick=31}] run data modify entity @s text set value '[{"text":"0","font":"object/2211/0"}]'
     execute if entity @s[scores={General.Object.Tick=23}] run data modify entity @s text_opacity set value 255
     execute if entity @s[scores={General.Object.Tick=29}] run data modify entity @s text_opacity set value 180

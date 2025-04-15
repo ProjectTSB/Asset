@@ -13,7 +13,7 @@
     execute if entity @s[scores={General.Object.Tick=6}] positioned ^ ^ ^25 run function asset:object/2210.eclael_land_slash/tick/attack
 
 # モデル変更
-    execute if entity @s[scores={General.Object.Tick=3}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1,0,0],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,20f],scale:[5f,12f,5f]}}
+    execute if entity @s[scores={General.Object.Tick=3}] run data merge entity @s {interpolation_duration:3,start_interpolation:0,transformation:{left_rotation:{axis:[1f,0f,0f],angle:-1.5708f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,20f],scale:[5f,12f,5f]}}
     execute if entity @s[scores={General.Object.Tick=4}] run data modify entity @s text set value '{"text":"1","font":"object/2208/0"}'
     execute if entity @s[scores={General.Object.Tick=5}] run data modify entity @s text set value '{"text":"2","font":"object/2208/0"}'
     execute if entity @s[scores={General.Object.Tick=6}] run data modify entity @s text_opacity set value 255
