@@ -7,6 +7,7 @@
 # フラグ削除
     tag @s remove VM.NotDamaged
     tag @s remove VM.HasBarrier
+    tag @s remove VM.Equipped
 # バリアを削除
     data modify storage api: Argument.UUID set value [I;1,1,1138,5]
     function api:entity/player/absorption/remove
