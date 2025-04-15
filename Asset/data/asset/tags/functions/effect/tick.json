@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0338.jump_spring/_/tick",
         "asset:effect/0314.quick_charge_mp/_/tick",
         "asset:effect/0328.poison_of_book/_/tick",
         "asset:effect/0331.deep_speed/_/tick",

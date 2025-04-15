@@ -9,7 +9,9 @@
     function asset:artifact/common/use/legs
 
 # 跳躍力上昇
-    effect give @s jump_boost 1 1 true
+    data modify storage api: Argument.ID set value 338
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 部位数に応じて落下ダメージ軽減
 # FallDamageReduction = ($VL.Stack - 1) * 0.10
@@ -21,7 +23,7 @@
         scoreboard players remove $VL.Stack Temporary 1
         execute store result storage api: Argument.Amount double 0.01 run scoreboard players operation $VL.Stack Temporary *= $15 Const
     # 補正を追加
-        data modify storage api: Argument.UUID set value [I;1,1,1139,4]
+        data modify storage api: Argument.UUID set value [I; 1, 1, 1139, 4]
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/fall_resistance/add
 
