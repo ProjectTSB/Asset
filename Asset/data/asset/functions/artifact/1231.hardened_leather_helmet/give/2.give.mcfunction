@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value "硬化革の帽子"
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"防具 +1.5","color":"green"}']
+    data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -59,10 +59,12 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"generic.armor",Amount:1.5d,Operation:"add"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Hardened:true}
+    data modify storage asset:artifact CustomNBT set value {Hardened:true,AttributeModifiers:[]}
 
 # 神器の入手用function
     function asset:artifact/common/give

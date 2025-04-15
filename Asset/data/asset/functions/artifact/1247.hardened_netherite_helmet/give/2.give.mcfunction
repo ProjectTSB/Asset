@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value "神聖ネザライトのヘルメット"
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"防具 +4  防具強度 +4","color":"green"}','{"text":"ノックバック耐性 +0.15","color":"green"}','{"text":"耐性 +3%","color":"green"}']
+    data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -59,10 +59,16 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# 装備時ステータス補正 (Compound[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:4d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:4d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.knockback_resistance",Amount:0.15d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:0.03d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Hardened:true,Enchantments:[{}]}
+    data modify storage asset:artifact CustomNBT set value {Hardened:true,Enchantments:[{}],AttributeModifiers:[]}
 
 # 神器の入手用function
     function asset:artifact/common/give
