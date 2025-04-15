@@ -1,8 +1,10 @@
 #> asset:artifact/0985.ark_of_the_sanctuary/trigger/damage
 #
-# 扇形判定をヒットさせる
 #
-# @within function asset:artifact/0985.ark_of_the_sanctuary/trigger/3.main
+#
+# @within function
+#   asset:artifact/0985.ark_of_the_sanctuary/trigger/3.main
+#   asset:artifact/0985.ark_of_the_sanctuary/trigger/rapid_slash
 
 # タグ付与
     execute positioned ^ ^ ^1 run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..3] add RD.Hit

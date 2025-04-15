@@ -2896,10 +2896,17 @@
     "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
     "mcdutil.createDatapackTemplate.defaultVanillaData": false,
     "files.exclude": {
-        ".idea": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": false,
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
+        "**/.factorypath": true,
+        "Asset/data/asset/functions/object/2204.sonicbomber_leftwing": true,
+        ".idea": true,
         "desktop.ini": true
     },
     "files.eol": "\n",
@@ -2933,4 +2940,5 @@
     "files.watcherExclude": {
         "**/target": true
     },
+    "explorerExclude.backup": {},
 }

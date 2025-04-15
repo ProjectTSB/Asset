@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:artifact/0985.ark_of_the_sanctuary/trigger/3.main
+# @within function
+#   asset:artifact/0985.ark_of_the_sanctuary/trigger/3.main
+#   asset:artifact/0985.ark_of_the_sanctuary/trigger/rapid_slash
 
 # 演出
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.8

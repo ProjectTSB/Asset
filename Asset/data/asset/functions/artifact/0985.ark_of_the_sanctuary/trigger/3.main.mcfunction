@@ -17,7 +17,7 @@
     execute if score @s RD.Combo matches 1 anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/vfx/slash1
     execute if score @s RD.Combo matches 2 anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/vfx/slash2
     execute if score @s RD.Combo matches 3 anchored eyes run scoreboard players set @s RD.BurstCount 8
-    execute if score @s RD.Combo matches 4 anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/vfx/slash_finish
+    execute if score @s RD.Combo matches 4 anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/vfx/slash5
 
 # ダメージ
     execute anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/damage
