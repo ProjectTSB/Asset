@@ -16,7 +16,7 @@
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・ヘッドギア","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"暗所でよく見えるようになる。"}','{"text":"他部位を装備すると採掘速度が上昇する。"}']
-    function asset:artifact/1137.over_pulse_headgear/model_num/
+    function asset:artifact/1137.over_pulse_headgear/give/model_num/
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
