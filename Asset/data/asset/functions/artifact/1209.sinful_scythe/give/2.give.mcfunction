@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"罪深き鎌","color":"#FFFFFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"相手に罪を与える"}','{"text":"周囲のモブが2体にも同様に罪を与える"}','{"text":"周囲にモブがいない場合、同じ相手に罪を重ねる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象とその周囲の敵2体へ罪の雷で攻撃する"}','{"text":"対象以外に敵がいない場合、対象に罪の雷で追撃する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
