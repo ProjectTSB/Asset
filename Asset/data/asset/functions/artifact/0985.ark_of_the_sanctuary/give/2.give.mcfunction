@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Ark of the Sanctuary","color":"gold"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む素早い斬撃を放つ。"}','{"text":"コンボフィニッシュで剣を投げ放つ。"}','{"text":"\\"神への賛歌を奏でよ\\"","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む素早い斬撃を放つ。"}','{"text":"コンボフィニッシュで剣を投げ放つ。"}','{"text":"放った剣による攻撃は、大きな敵に対して大きく減衰する。"}','{"text":"\\"神への賛歌を奏でよ\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
