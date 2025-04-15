@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:artifact/0976.brave_sword/trigger/**
+    scoreboard objectives add R4.LatestUseTick dummy
     scoreboard objectives add R4.Combo dummy
