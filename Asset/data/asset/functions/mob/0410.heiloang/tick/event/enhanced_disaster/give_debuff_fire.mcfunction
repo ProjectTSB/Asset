@@ -10,4 +10,4 @@
     function api:entity/mob/effect/reset
 
 # 演出
-    particle dust 0.541 0.184 0.184 2 ~ ~1 ~ 0.5 1 0.5 0 10
+    particle dust 0.541 0.184 0.184 2 ~ ~1 ~ 1.5 1.5 1.5 0 30

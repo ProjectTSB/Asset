@@ -30,7 +30,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.FixedDamage set value 1b
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは 駄目でした","with":[{"selector":"@s"}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは 黒龍に滅せられた","with":[{"selector":"@s"}]}]']
     data modify storage api: Argument.Metadata set value "FinalFlare"
     execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=slime,tag=BE.EntityRoot,limit=1] MobUUID
     function api:damage/modifier_manual

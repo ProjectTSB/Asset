@@ -10,9 +10,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 658
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"雷属性耐性低下"}'
+    data modify storage asset:effect Name set value '{"text":"雷の浸食"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"黄ピクミンは電化製品を使いこなせない"}']
+    data modify storage asset:effect Description set value ['{"text":"龍の力により、雷属性耐性が低下"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
