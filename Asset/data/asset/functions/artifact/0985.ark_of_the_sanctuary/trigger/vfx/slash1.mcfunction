@@ -7,10 +7,7 @@
 #   asset:artifact/0985.ark_of_the_sanctuary/trigger/rapid_slash
 
 # 演出
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.8
-    playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1 1.5
-    playsound item.trident.throw player @a ~ ~ ~ 1 0.6
-    playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
+    function asset:artifact/0985.ark_of_the_sanctuary/trigger/vfx/sound
 
 # 斬撃
     data modify storage api: Argument.ID set value 2001
