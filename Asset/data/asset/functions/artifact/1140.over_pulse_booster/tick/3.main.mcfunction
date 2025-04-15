@@ -15,9 +15,10 @@
         function api:entity/mob/effect/get/from_id
         execute store result score $VL.Stack Temporary run data get storage api: Return.Effect.Stack
     # 移動速度上昇を付与
-        execute store result storage asset:temp VO.Level int 1 run scoreboard players remove $VL.Stack Temporary 3
-        execute if score $VL.Stack Temporary matches ..-1 run effect clear @s speed
-        execute if score $VL.Stack Temporary matches 0.. run function asset:artifact/1140.over_pulse_booster/tick/speed.m with storage asset:temp VO
+        scoreboard players remove $VL.Stack Temporary 1
+        execute store result storage asset:temp VO.Amount double 0.10 run scoreboard players operation $VL.Stack Temporary > $0 Const
+        function asset:artifact/1140.over_pulse_booster/tick/speed/remove
+        execute unless data storage asset:temp VO{Amount:0d} run function asset:artifact/1140.over_pulse_booster/tick/speed/add.m with storage asset:temp VO
 
 # リセット
     scoreboard players reset $VL.Stack Temporary
