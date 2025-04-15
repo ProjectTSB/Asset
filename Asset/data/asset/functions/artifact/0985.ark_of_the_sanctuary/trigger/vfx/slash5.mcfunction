@@ -5,8 +5,8 @@
 # @within function asset:artifact/0985.ark_of_the_sanctuary/trigger/3.main
 
 # 演出
-    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 1 0.6
-    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 1 0.7
+    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.7 0.6
+    playsound ogg:item.trident.throw2 player @a ~ ~ ~ 0.7 0.7
     playsound minecraft:item.trident.riptide_3 player @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.breeze.death player @a ~ ~ ~ 1 2
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
