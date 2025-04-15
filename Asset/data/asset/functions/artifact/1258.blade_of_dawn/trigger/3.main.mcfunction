@@ -19,4 +19,6 @@
     execute anchored eyes positioned ^ ^-0.4 ^1 run function api:object/summon
 
 # ダメージ
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/1258.blade_of_dawn/trigger/damage
+    function api:damage/single_damage_session/open
+    execute as @e[type=#lib:living,tag=Victim,distance=..6,sort=random] run function asset:artifact/1258.blade_of_dawn/trigger/damage
+    function api:damage/single_damage_session/close
