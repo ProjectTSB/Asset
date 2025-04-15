@@ -12,26 +12,20 @@
 # 演出
     playsound minecraft:block.respawn_anchor.charge player @s ~ ~ ~ 1 2
 
-# 引数の設定
-    # UUID
-        data modify storage api: Argument.UUID set value [I;1,1,643,5]
-    # 補正値
-        data modify storage api: Argument.Amount set value 0.03
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply_base"
-    # 補正の追加
-        function api:modifier/defense/thunder/add
+# 雷耐性
+    data modify storage api: Argument.UUID set value [I;1,1,643,5]
+    data modify storage api: Argument.Amount set value 0.03
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/defense/thunder/add
 
-# 雷バフ
-    # UUID
-        data modify storage api: Argument.UUID set value [I;1,1,643,5]
-    # 補正値
-        data modify storage api: Argument.Amount set value 0.04
-    # 補正方法
-        data modify storage api: Argument.Operation set value "multiply_base"
-    # 補正の追加
-        function api:modifier/attack/thunder/add
+# 雷攻撃
+    data modify storage api: Argument.UUID set value [I;1,1,643,5]
+    data modify storage api: Argument.Amount set value 0.04
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/attack/thunder/add
 
+# 移動速度
+    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-028300000005 "HV.Raimei" 0.05 multiply_base
 
 #セット効果用のファンクション実行（実行はチェストプレートの方へ）
-    execute if data storage asset:context id.all{head:642,chest:643,legs:644,feet:645} run function asset:artifact/0643.raimei_chestplate/trigger/3.1.armorfullset
+    execute if data storage asset:context id.all{head:642,chest:643,legs:644,feet:645} run function asset:artifact/0643.raimei_chestplate/trigger/fullset/equip/

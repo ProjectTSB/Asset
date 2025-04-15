@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:effect/0150.resistance/_/given",
+        "asset:effect/0333.muscle_never_betray/_/given",
+        "asset:effect/0331.deep_speed/_/given",
+        "asset:effect/0327.honey_poison/_/given",
+        "asset:effect/0238.raimei/_/given",
+        "asset:effect/0321.craving_recoil/_/given",
         "asset:effect/0317.aurora_speed/_/given",
         "asset:effect/0318.arbit/_/given",
         "asset:effect/0301.soul_light/_/given",
@@ -64,7 +70,6 @@
         "asset:effect/0273.spell_of_courage/_/given",
         "asset:effect/0272.inspiration/_/given",
         "asset:effect/0201.magic_shield/_/given",
-        "asset:effect/0101.attack_base_debuff/_/given",
         "asset:effect/0276.unending_thunder/_/given",
         "asset:effect/0001.attack_base_debuff/_/given",
         "asset:effect/0051.attack_base_debuff/_/given",

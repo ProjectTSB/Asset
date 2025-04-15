@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1061.hekireki/trigger/0.load",
+        "asset:artifact/0224.onegai_muscle/trigger/0.load",
+        "asset:artifact/0643.raimei_chestplate/trigger/0.load",
+        "asset:artifact/0364.red_knights_sword/trigger/0.load",
         "asset:artifact/1206.triple_sparkle_bomb/trigger/0.load",
         "asset:artifact/0908.spear_of_butterfly/trigger/0.load",
         "asset:artifact/0563.heartland/trigger/0.load",
@@ -31,7 +35,6 @@
         "asset:artifact/1033.thelema_of_blue_sea/trigger/0.load",
         "asset:artifact/1043.gamma_ray/trigger/0.load",
         "asset:artifact/1038.flame_devil_head/trigger/0.load",
-        "asset:artifact/1037.grand_flame/trigger/0.load",
         "asset:artifact/1034.eiya/trigger/0.load",
         "asset:artifact/0985.ark_of_the_sanctuary/trigger/0.load",
         "asset:artifact/0192.falcios_wand/trigger/0.load",

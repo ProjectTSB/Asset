@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"グランド・フレイム","color":"#e23724","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身の体力割合に比例して与えるダメージが増加する","color":"white"}','{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の体力割合に比例してダメージが増加する(最大200)","color":"white"}','{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [660,860]
+    data modify storage asset:artifact AttackInfo.Damage set value [660]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

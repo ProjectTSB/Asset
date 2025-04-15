@@ -18,3 +18,4 @@
     data modify storage asset:object ID set value 2089
 # フィールド(オプション)
     data modify storage asset:object Field.DetonateTime set value 20
+    data modify storage asset:object Field.MobUUID set value 0

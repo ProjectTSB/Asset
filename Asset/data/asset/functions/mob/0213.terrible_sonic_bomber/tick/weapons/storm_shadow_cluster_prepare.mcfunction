@@ -23,7 +23,8 @@
 # 攻撃箇所表示
     data modify storage api: Argument.FieldOverride set value {Color:16737792,Tick:50,Scale:40f}
     data modify storage api: Argument.ID set value 2201
-    execute at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~ run function api:object/summon
+    execute if entity @p[tag=5X.StormShadowTarget] at @p[tag=5X.StormShadowTarget] positioned ~ ~0.01 ~ run function api:object/summon
+    execute unless entity @p[tag=5X.StormShadowTarget] at @e[type=marker,tag=5X.Centre,distance=..128,limit=1] positioned ~ ~0.01 ~ run function api:object/summon
 
 # reset
     scoreboard players reset $attack_start_time Temporary

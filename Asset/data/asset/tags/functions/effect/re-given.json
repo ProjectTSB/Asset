@@ -1,5 +1,10 @@
 {
     "values": [
+        "asset:effect/0150.resistance/_/re-given",
+        "asset:effect/0333.muscle_never_betray/_/re-given",
+        "asset:effect/0330.deep_slash/_/re-given",
+        "asset:effect/0329.charge_of_deep_azure/_/re-given",
+        "asset:effect/0327.honey_poison/_/re-given",
         "asset:effect/0315.charge_of_aurora_scythe/_/re-given",
         "asset:effect/0316.aurora_slash/_/re-given",
         "asset:effect/0318.arbit/_/re-given",
@@ -29,7 +34,6 @@
         "asset:effect/0211.fading_speed/_/re-given",
         "asset:effect/0210.fading_speed/_/re-given",
         "asset:effect/0201.magic_shield/_/re-given",
-        "asset:effect/0101.attack_base_debuff/_/re-given",
         "asset:effect/0001.attack_base_debuff/_/re-given",
         "asset:effect/0051.attack_base_debuff/_/re-given",
         "asset:effect/0125.levitation/_/re-given",

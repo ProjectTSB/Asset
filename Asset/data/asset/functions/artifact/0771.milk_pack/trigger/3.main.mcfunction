@@ -12,7 +12,8 @@
 # エフェクト消す
     effect clear @s
 # Assetのバフ/デバフを消去する
-    data modify storage api: Argument.ClearLv set value 3
+    data modify storage api: Argument.ClearLv set value 2
+    data modify storage api: Argument.ClearType set value "bad"
     function api:entity/mob/effect/remove/from_level
     function api:entity/mob/effect/reset
 

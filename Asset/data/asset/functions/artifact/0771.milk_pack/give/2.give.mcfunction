@@ -11,17 +11,17 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 771
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:potion"
+    data modify storage asset:artifact Item set value "minecraft:honey_bottle"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"牛乳パック","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"おいしい牛乳"}]','[{"text":"何回かに分けて使える"}]','[{"text":"デバフとバフを解除し、少しお腹が膨れる"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"何回かに分けて使えるおいしい牛乳"}]','[{"text":"デバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除し、それなりにお腹も膨れる"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 10
+    data modify storage asset:artifact RemainingCount set value 3
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -47,8 +47,8 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    # data modify storage asset:artifact TypeCooldown.Type set value
-    # data modify storage asset:artifact TypeCooldown.Duration set value
+    data modify storage asset:artifact TypeCooldown.Type set value "heal"
+    data modify storage asset:artifact TypeCooldown.Duration set value 300
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
