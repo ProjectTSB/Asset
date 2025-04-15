@@ -7,6 +7,9 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
+# 使用時間の記録
+    execute store result score @s R4.LatestUseTick run time query gametime
+
 # 最後に使用してから時間が開いていた場合、コンボカウントをリセットする
     execute if score @s R4.Combo matches 3.. run scoreboard players reset @s R4.Combo
     execute unless score $TickSinceLastUse Temporary matches ..30 run scoreboard players reset @s R4.Combo
