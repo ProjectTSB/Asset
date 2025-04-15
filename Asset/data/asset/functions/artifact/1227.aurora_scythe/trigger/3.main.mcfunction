@@ -24,8 +24,8 @@
 # チャージ用Effectを付与
 # MPが40%以下でダメージ1.5倍
     data modify storage api: Argument.ID set value 315
-    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:250,Slash2:350,Slash3:500}
-    execute if score $MPPer Temporary matches ..40 run data modify storage api: Argument.FieldOverride.Damage set value {Slash1:375,Slash2:525,Slash3:750}
+    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:200,Slash2:300,Slash3:450}
+    execute if score $MPPer Temporary matches ..30 run data modify storage api: Argument.FieldOverride.Damage set value {Slash1:300,Slash2:450,Slash3:625}
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
