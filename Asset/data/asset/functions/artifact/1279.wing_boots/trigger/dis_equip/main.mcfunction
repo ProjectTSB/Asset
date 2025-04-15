@@ -6,4 +6,4 @@
 
 # 落下耐性
     data modify storage api: Argument.UUID set value [I;1,1,1279,3]
-    function api:modifier/fall_damage/remove
+    function api:modifier/fall_resistance/remove

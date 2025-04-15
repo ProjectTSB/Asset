@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"火走り","color":"#DB1212","bold":true,"italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"移動速度が上がり、火属性攻撃力と火属性耐性を20%得る"}','{"text":"代わりに、水属性攻撃と雷属性攻撃を-100%する"}','{"text":"ついでに足元が燃える。効果時間30秒"}','{"text":"もう止まらんよ、流れ出したエネルギーと同じだ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"使用時、足元が燃え、30秒の間"}','{"text":"移動速度+10%、火攻撃+20%、火耐性+20%を得るが"}','{"text":"水攻撃と雷攻撃を-100%する"}','{"text":"もう止まらんよ、流れ出したエネルギーと同じだ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

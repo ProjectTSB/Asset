@@ -66,4 +66,4 @@
 
 # フィールド
 # ダメージ設定
-    data modify storage asset:mob Field.Damage set value 30f
+    data modify storage asset:mob Field.Damage set value 28f

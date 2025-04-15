@@ -8,4 +8,4 @@ data modify storage api: Argument.ID set value 1103
 data modify storage api: Argument.FieldOverride.Track set value true
 execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @s MobUUID
 data modify storage api: Argument.FieldOverride.Duration set value 100
-function api:object/summon
+execute at @s anchored eyes positioned ^ ^ ^ run function api:object/summon

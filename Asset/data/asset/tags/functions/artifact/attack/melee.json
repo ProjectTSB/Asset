@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1282.ice_axe/trigger/1.trigger",
         "asset:artifact/0292.craving_sword/melee/1.trigger",
         "asset:artifact/1268.axe_of_wrath_fire/trigger/1.trigger",
         "asset:artifact/1258.blade_of_dawn/trigger/1.trigger",
@@ -41,7 +42,6 @@
         "asset:artifact/0756.sakura_hubuki/trigger/1.trigger",
         "asset:artifact/0910.ignite/trigger/1.trigger",
         "asset:artifact/0077.swords_of_waterfall_climbing/trigger/1.trigger",
-        "asset:artifact/0017.harmful_books/trigger/1.trigger",
         "asset:artifact/0273.tonbo_gaeri/trigger/1.trigger",
         "asset:artifact/0288.lamentation_sword/trigger/1.trigger",
         "asset:artifact/0073.suzuran_charm/trigger/1.trigger",

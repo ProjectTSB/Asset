@@ -10,14 +10,19 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
-# 使用回数スコア
-    execute if entity @s[tag=CanUsed] run scoreboard players add @s U8.Count 1
+#> Private
+# @private
+    #declare score_holder $U8.HealVal
 
-# 使用回数が3以上でなければCanUsedを削除
-    execute if entity @s[tag=CanUsed] unless score @s U8.Count matches 3.. run tag @s remove CanUsed
+# CanUsedなら回復量を取得し、累計回復量に加算しておく
+    execute if entity @s[tag=CanUsed] store result score $U8.HealVal Temporary run data get storage asset:context ReceiveHeal.Amount 10
+    execute if entity @s[tag=CanUsed] run scoreboard players operation @s U8.HealSum += $U8.HealVal Temporary
 
-# 天候が(雨or雷雨でなければ) = 晴れならCanUsedを削除
-    # execute unless predicate lib:weather/is_raining unless predicate lib:weather/is_thundering run tag @s remove CanUsed
+# 累計回復量が20以下ならCanUsedを削除
+    execute unless score @s U8.HealSum matches 200.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] if score @s U8.Count matches 3.. run function asset:artifact/1088.purifying_hydrangea/trigger/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1088.purifying_hydrangea/trigger/3.main
+
+# リセット
+    scoreboard players reset $U8.HealVal Temporary

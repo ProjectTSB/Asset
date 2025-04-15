@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"たる","color":"aqua","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"周囲の敵にたるを落下させる"}]','{"text":""}','[{"text":"た〜る！","color":"dark_purple","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"周囲の敵にたるを落下させる"}]','{"text":"この攻撃は大きな敵に対して大きく減衰する"}','{"text":""}','[{"text":"た〜る！","color":"dark_purple","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
