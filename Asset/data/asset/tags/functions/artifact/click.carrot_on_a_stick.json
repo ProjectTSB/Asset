@@ -1,8 +1,9 @@
 {
     "values": [
+        "asset:artifact/2001.staff_of_the_willless/trigger/1.trigger",
         "asset:artifact/1285.torch_bag/trigger/1.trigger",
         "asset:artifact/1284.quiver/trigger/1.trigger",
-        "asset:artifact/1076.utu_rundeath/trigger/1.trigger",
+        "asset:artifact/1076.death_snap/trigger/1.trigger",
         "asset:artifact/0017.harmful_books/trigger/1.trigger",
         "asset:artifact/1270.raging_passion_pickaxe/trigger/1.trigger",
         "asset:artifact/1272.big_water_launcher/trigger/1.trigger",

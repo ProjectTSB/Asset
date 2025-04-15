@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"天鍵杖","color":"aqua"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"天候を固定し、その力を授かる。"}','{"text":"時雨 驟雨 零雨 五月","color":"gray"}','{"text":"淡雪 霙 野分に唄え","color":"gray"}','{"text":"東風 南風 北風 西風","color":"gray"}','{"text":"夜風を散らし 晴嵐に舞え","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"100秒の間天候を固定し"}','{"text":"その力を全てのプレイヤーに付与する"}','[{"text":"晴れ:"},{"text":"\\u0002","font":"space"},{"text":"火攻撃+30% 雨:","color":"white"},{"text":"\\u0002","font":"space"},{"text":"水攻撃+30% "},{"text":"雷雨:"},{"text":"\\u0002","font":"space"},{"text":"雷攻撃+30%"}]','[{"text":"ネザー:"},{"text":"\\u0002","font":"space"},{"text":"火攻撃+30% エンド:"},{"text":"\\u0002","font":"space"},{"text":"火・水・雷攻撃+15%"}]','{"text":"時雨 驟雨 零雨 五月","color":"gray"}','{"text":"淡雪 霙 野分に唄え","color":"gray"}','{"text":"東風 南風 北風 西風","color":"gray"}','{"text":"夜風を散らし 晴嵐に舞え","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

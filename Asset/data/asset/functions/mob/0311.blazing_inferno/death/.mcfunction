@@ -14,10 +14,10 @@
     execute as @e[type=blaze,scores={MobID=313},distance=..64] run function api:mob/kill
 
 # 自分のマーカーを削除
-    kill @e[type=marker,tag=8N.Marker.SpawnPoint,distance=..64,sort=nearest,limit=1]
+    kill @e[type=marker,tag=8N.Marker,distance=..256,sort=nearest,limit=1]
 
 # 残るタイプのオブジェクトを削除
-    kill @e[type=marker,scores={ObjectID=2137}]
+    kill @e[type=marker,scores={ObjectID=2137},distance=..256]
 
 # モデルを削除
     execute as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/remove/this

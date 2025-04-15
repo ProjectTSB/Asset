@@ -6,9 +6,9 @@
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2157
-    data modify storage api: Argument.FieldOverride.Damage set value 35.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.SpreadIceSpear
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    function api:object/summon
+    execute positioned ~ ~0.5 ~ run function api:object/summon
 
 # 終了
-    kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,sort=nearest,limit=1]
+    kill @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=nearest,limit=1]

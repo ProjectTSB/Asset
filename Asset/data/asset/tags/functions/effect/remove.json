@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0654.chicken_out/_/remove",
+        "asset:effect/0150.resistance/_/remove",
         "asset:effect/0333.muscle_never_betray/_/remove",
         "asset:effect/0331.deep_speed/_/remove",
         "asset:effect/0330.deep_slash/_/remove",
@@ -8,7 +10,7 @@
         "asset:effect/0321.craving_recoil/_/remove",
         "asset:effect/0621.loyalty_shield/_/remove",
         "asset:effect/0192.jump_boost/_/remove",
-        "asset:effect/0622.absolute_overdrive/_/remove",
+        "asset:effect/0653.absolute_drive/_/remove",
         "asset:effect/0317.aurora_speed/_/remove",
         "asset:effect/0316.aurora_slash/_/remove",
         "asset:effect/0318.arbit/_/remove",
