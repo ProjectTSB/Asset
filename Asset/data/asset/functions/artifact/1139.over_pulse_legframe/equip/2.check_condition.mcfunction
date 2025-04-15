@@ -11,3 +11,5 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1139.over_pulse_legframe/equip/3.main
+# リセット
+    tag @s remove CanUsed

@@ -23,7 +23,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "chest"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "attack_melee"
+    data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"最大稼働時"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -55,7 +55,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisabledFlag.Use.BreakSound set value
 # 装備時効果 (int) (オプション)
-    data modify storage asset:artifact Equipment.SetEffectID set value 274
+    data modify storage asset:artifact Equipment.Effects set value [{ID:274,Visible:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:10d,Operation:"add"}

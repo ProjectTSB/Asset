@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/1137.over_pulse_headgear/tick/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    data modify storage asset:artifact IgnoreItemUpdate set value true
-    function asset:artifact/common/use/head
-
 # 暗所チェック
     execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark if entity @s[tag=!VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/give
     execute if predicate asset:artifact/1137.over_pulse_headgear/in_bright if entity @s[tag=VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/remove

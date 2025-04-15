@@ -7,4 +7,4 @@
 execute if predicate lib:is_sneaking if entity @s[tag=!9E.Sneak] run function asset:effect/0338.jump_spring/tick/sneak
 execute unless predicate lib:is_sneaking if entity @s[tag=9E.Sneak] run function asset:effect/0338.jump_spring/tick/unsneak
 
-function asset:effect/super.tick
+function asset:effect/0338.jump_spring/tick/update_effect.m with storage asset:context this

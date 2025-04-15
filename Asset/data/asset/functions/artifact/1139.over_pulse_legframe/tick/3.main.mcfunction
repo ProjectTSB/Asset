@@ -4,15 +4,6 @@
 #
 # @within function asset:artifact/1139.over_pulse_legframe/tick/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    data modify storage asset:artifact IgnoreItemUpdate set value true
-    function asset:artifact/common/use/legs
-
-# 跳躍力上昇
-    data modify storage api: Argument.ID set value 338
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
-
 # 部位数に応じて落下ダメージ軽減
 # FallDamageReduction = ($VL.Stack - 1) * 0.10
     # 装備数を取得

@@ -56,7 +56,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisabledFlag.Use.BreakSound set value
 # 装備時効果 (int) (オプション)
-    data modify storage asset:artifact Equipment.SetEffectID set value 274
+    data modify storage asset:artifact Equipment.Effects set value [{ID:274,Visible:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:6d,Operation:"add"}

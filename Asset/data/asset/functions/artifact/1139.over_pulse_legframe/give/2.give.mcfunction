@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・レッグフレーム","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。しゃがむことで機能が強化される。"}','{"text":"また、他部位を装備すると落下の衝撃を軽減する。"}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"text":"しゃがむことで機能が強化される。"}','{"text":"また、他部位を装備すると落下の衝撃を軽減する。"}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -23,9 +23,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "legs"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "attack_melee"
-# 神器のサブトリガー (string[]) (オプション)
-    data modify storage asset:artifact SubTriggers set value ["tick","equip"]
+    data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"最大稼働時"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -57,7 +55,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisabledFlag.Use.BreakSound set value
 # 装備時効果 (int) (オプション)
-    data modify storage asset:artifact Equipment.SetEffectID set value 274
+    data modify storage asset:artifact Equipment.Effects set value [{ID:274,Visible:true},{ID:338,Visible:false}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:9d,Operation:"add"}

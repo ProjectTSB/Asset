@@ -11,3 +11,5 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1137.over_pulse_headgear/tick/3.main
+# リセット
+    tag @s remove CanUsed
