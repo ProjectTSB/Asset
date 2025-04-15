@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:effect/658.heiloang_weak_thunder/_/register",
+        "asset:effect/657.heiloang_weak_water/_/register",
+        "asset:effect/0656.heiloang_weak_fire/_/register",
         "asset:effect/0655.night_vision/_/register",
         "asset:effect/0621.loyalty_shield/_/register",
         "asset:effect/0192.jump_boost/_/register",

@@ -26,6 +26,8 @@
 # 発動
     # アニメーション再生
         execute if score @s BE.EventTimer matches 90 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_2_common_invoke
+    # デバフ付与
+        execute if score @s BE.EventTimer matches 40 as @a[tag=!PlayerShouldInvulnerable,distance=..160] at @s run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/give_debuff
     # 攻撃
         execute if score @s BE.EventTimer matches 110 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/attack
     # 中心点回転

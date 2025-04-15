@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『黒龍』"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"そのグルガン族の男は静かに語った―――"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 130000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

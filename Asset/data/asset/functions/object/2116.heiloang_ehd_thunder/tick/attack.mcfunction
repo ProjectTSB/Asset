@@ -10,7 +10,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..25] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..25] run function asset:object/2116.heiloang_ehd_thunder/tick/attack_player
     function api:damage/reset
 
 # 演出
