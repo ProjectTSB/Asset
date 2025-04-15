@@ -17,6 +17,10 @@
     kill @e[type=marker,tag=26.SpawnPoint,distance=..100]
 
 # ボスドロ
+    data modify storage api: Argument.ID set value 1061
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
     data modify storage api: Argument.ID set value 1149
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id

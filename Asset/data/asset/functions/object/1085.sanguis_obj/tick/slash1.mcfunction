@@ -15,4 +15,4 @@
     execute positioned ~ ~1 ~ run function api:object/summon
 
 # 攻撃判定
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function asset:object/1085.sanguis_obj/tick/damage
+    function asset:object/1085.sanguis_obj/tick/damage

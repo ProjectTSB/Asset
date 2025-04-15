@@ -19,24 +19,24 @@
     scoreboard players operation $Interval Temporary %= $10 Const
     execute if score $Interval Temporary matches 0 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] positioned ~ ~0.1 ~ run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/shape
 
-# レーザー攻撃！
+# レーザー攻撃！ ノーマルだと低密度に
     # 1
         execute if score @s General.Mob.Tick matches 20 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~ ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 21 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~45 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 21 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~45 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 22 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~90 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 23 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~135 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 23 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~135 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 24 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~180 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 25 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~225 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 25 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~225 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 26 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~270 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 27 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~315 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 27 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~315 ~ positioned ^ ^ ^8 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
     # 2
-        execute if score @s General.Mob.Tick matches 40 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~ ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 40 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~ ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 41 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~45 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 42 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~90 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 42 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~90 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 43 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~135 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 44 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~180 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 44 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~180 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 45 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~225 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
-        execute if score @s General.Mob.Tick matches 46 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~270 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
+        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 46 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~270 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
         execute if score @s General.Mob.Tick matches 47 at @e[type=marker,tag=A5.Marker.Aim,distance=..128,limit=1] rotated ~315 ~ positioned ^ ^ ^5 run function asset:mob/0365.frestchika/tick/base_move/skill/cordinate_laser/summon
 
     # 3、トドメレーザー

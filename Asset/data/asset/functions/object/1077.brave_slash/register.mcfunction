@@ -6,6 +6,7 @@
 
 # 継承(オプション)
     data modify storage asset:object Extends append value 1
+    data modify storage asset:object Extends append value 2
     function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:object ExtendsSafe set value

@@ -1,6 +1,11 @@
 {
     "values": [
         "asset:effect/0334.charge_of_dragon_sword/_/register",
+        "asset:effect/0320.fatalerror_charge/_/register",
+        "asset:effect/0654.chicken_out/_/register",
+        "asset:effect/0314.quick_charge_mp/_/register",
+        "asset:effect/0150.resistance/_/register",
+        "asset:effect/0323.charge_of_hekireki/_/register",
         "asset:effect/0333.muscle_never_betray/_/register",
         "asset:effect/0328.poison_of_book/_/register",
         "asset:effect/0331.deep_speed/_/register",
@@ -13,7 +18,7 @@
         "asset:effect/0321.craving_recoil/_/register",
         "asset:effect/0621.loyalty_shield/_/register",
         "asset:effect/0192.jump_boost/_/register",
-        "asset:effect/0622.absolute_overdrive/_/register",
+        "asset:effect/0653.absolute_drive/_/register",
         "asset:effect/0317.aurora_speed/_/register",
         "asset:effect/0316.aurora_slash/_/register",
         "asset:effect/0315.charge_of_aurora_scythe/_/register",
