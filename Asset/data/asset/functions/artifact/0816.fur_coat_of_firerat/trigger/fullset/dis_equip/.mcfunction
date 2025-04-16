@@ -19,4 +19,4 @@
     function api:modifier/defense/physical/remove
 # 落下耐性
     data modify storage api: Argument.UUID set value [I;1,1,816,0]
-    function api:modifier/fall_resistance/add
+    function api:modifier/fall_resistance/remove
