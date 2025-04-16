@@ -27,7 +27,7 @@
 
 # ダメージ式：5N + 50
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 5
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 15
     scoreboard players add $DamageTemp Temporary 50
 
 # ダメージ
@@ -38,6 +38,8 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはスモークボムによって目の前が真っ暗になった","with":[{"selector":"@s"}]}]'
 # 補正functionを実行
@@ -52,7 +54,7 @@
     scoreboard players reset $DamageTemp Temporary
 
 # 暗闇エフェクト付与
-    data modify storage api: Argument set value {ID:124,Duration:150}
+    data modify storage api: Argument set value {ID:74,Duration:150}
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
