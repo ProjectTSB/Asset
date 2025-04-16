@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ヘトゥケダゥ","color":"dark_red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"大きな手を持つ下級天使。","color":"white"}','{"text":"奴がオーラをまとった時には注意が必要だ。","color":"white"}','{"text":"膨大な魔力があなたを肉片に変えるだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20013}}
