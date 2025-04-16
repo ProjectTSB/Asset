@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ポルターガイスト亜種","color":"black"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"防具が勝手に歩いて攻撃してくる？","color":"white"}','{"text":"きっとそれはポルターガイストの仕業だ。","color":"white"}','{"text":"しかも、ちょっと強い。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

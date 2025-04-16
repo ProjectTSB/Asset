@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"イグニッションスパイダー","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"殴られると身体が燃え上がってしまう。","color":"white"}','{"text":"ブロックを燃やす能力はないので多少安心していい。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stone",Count:1b,tag:{Enchantments:[{id:"fire_aspect",lvl:2}]}}

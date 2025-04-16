@@ -17,6 +17,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ルナティックメイジ","color":"white"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"様々な魔法を使いこなす上級天使。","color":"white"}','{"text":"彼の使う全ての魔法は、他のメイジとは一線を画す。","color":"white"}','{"text":"追いつめられると、あらゆる属性を使った必殺技を使う。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
