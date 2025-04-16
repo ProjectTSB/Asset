@@ -37,4 +37,4 @@ execute unless loaded -36 21 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"sacred_shard/lv-4",Count:1b}
-    data modify storage asset:trader Trades[-1].RequiredProgress set value 80
+    data modify storage asset:trader Trades[-1].RequiredProgress set value 75
