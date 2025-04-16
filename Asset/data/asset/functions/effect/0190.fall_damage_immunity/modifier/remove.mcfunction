@@ -8,4 +8,4 @@
 
 # 落下ダメージ無効化
     data modify storage api: Argument.UUID set value [I;1,3,190,0]
-    function api:modifier/fall_damage/remove
+    function api:modifier/fall_resistance/remove

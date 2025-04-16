@@ -22,7 +22,10 @@
         execute anchored eyes positioned ^ ^ ^0.1 run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.1.check_critical
 
     # ヒット
-        execute positioned ^ ^ ^2 as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
+        function api:damage/single_damage_session/open
+        execute positioned ^ ^ ^2 as @e[type=#lib:living,type=!player,tag= D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
+        execute positioned ^ ^ ^2 as @e[type=#lib:living,type=!player,tag=!D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
+        function api:damage/single_damage_session/close
 
     # 開放
         scoreboard players reset $7n.Count Temporary

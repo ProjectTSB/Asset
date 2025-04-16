@@ -5,7 +5,7 @@
 # @within function asset:mob/0365.frestchika/tick/base_move/skill/overheat/
 
 # エフェクト消去
-    data modify storage api: Argument.ID set value 622
+    data modify storage api: Argument.ID set value 653
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
 

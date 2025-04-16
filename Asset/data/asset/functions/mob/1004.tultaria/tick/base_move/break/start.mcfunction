@@ -18,7 +18,7 @@
 
 # 被ダメージアップエフェクト付与
     data modify storage api: Argument.ID set value 107
-    data modify storage api: Argument.Stack set value 20
+    data modify storage api: Argument.Stack set value 10
     data modify storage api: Argument.Duration set value 240
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
@@ -36,3 +36,6 @@
 
 # スコアセット
     scoreboard players set @s General.Mob.Tick -1
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:air

@@ -428,8 +428,15 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
   val dataPoints = lines
     .flatMap { line =>
       line.split(",").map(_.trim) match {
-        case Array(id, dim, x, y, z)       => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), defaultSize.get)))
-        case Array(id, dim, x, y, z, size) => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), Math.max(size.toInt, 32))))
+        case Array(id, dim, x, y, z)       =>
+          val s = defaultSize.get
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s, s, s, s, s, s))))
+        case Array(id, dim, x, y, z, size) =>
+          val s = Math.max(size.toInt, 32)
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s, s, s, s, s, s))))
+        case Array(id, dim, x, y, z, minX, maxX, minZ, maxZ) =>
+          val s = defaultSize.get
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (minX.toInt, maxX.toInt, s, s, minZ.toInt, maxZ.toInt))))
         case _                             => None
       }
     }
@@ -437,10 +444,10 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
     .groupMap(_._1)(_._2)
   dataPoints.view.mapValues { regions =>
     regions.map {
-      case (id, (p, size)) =>
+      case (id, (p, (minX, maxX, minY, maxY, minZ, maxZ))) =>
         val bb = BoundingBox(
-          Int3(p.x - size, p.y - size, p.z - size),
-          Int3(p.x + size, p.y + size, p.z + size)
+          Int3(p.x - minX, p.y - minY, p.z - minZ),
+          Int3(p.x + maxX, p.y + maxY, p.z + maxZ)
         )
         bb -> f(id, p)
     }
@@ -448,16 +455,16 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
 }
 
 // MARK: fn: commandFromTree
-def compoundTagFromTree[L](rtree: RLikeTree[L], f: L => NBTTag): NBTTag.NBTTagCompound = {
+def compoundTagFromTree[L](rtree: RLikeTree[L], f: L => NBTTag, fixedHeight: Option[Int]): NBTTag.NBTTagCompound = {
   import NBTTag.*
-  def regionCompoundTagFromMbr(mbr: BoundingBox): NBTTagCompound = NBTTagCompound(
+  def regionCompoundTagFromMbr(mbr: BoundingBox): NBTTagCompound                           = NBTTagCompound(
     Map(
       "X" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.x), NBTTagLong(mbr.max.x))),
       "Y" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.y), NBTTagLong(mbr.max.y))),
       "Z" -> NBTTagLongArray(Vector(NBTTagLong(mbr.min.z), NBTTagLong(mbr.max.z)))
     )
   )
-  def traverse(tree: RLikeTree[L]): NBTTagCompound               = tree match {
+  def traverse(tree: RLikeTree[L]): NBTTagCompound                                         = tree match {
     case RLikeTree.Node(mbr, subtrees) => NBTTagCompound(
         Map(
           "B" -> regionCompoundTagFromMbr(mbr),
@@ -471,15 +478,34 @@ def compoundTagFromTree[L](rtree: RLikeTree[L], f: L => NBTTag): NBTTag.NBTTagCo
         )
       )
   }
-  traverse(rtree)
+  def wrapTag(tag: NBTTagCompound): NBTTagCompound                                         = NBTTagCompound(
+    Map(
+      "B" -> tag.value("B"),
+      "N" -> NBTTagList(Some(NBTNel.Compound(NonEmptyVector.one(tag))))
+    )
+  )
+  def coerceHeight(tag: NBTTagCompound, tagHeight: Int, targetHeight: Int): NBTTagCompound = (tagHeight, targetHeight) match {
+    case (h, t) if h == t => tag
+    case (h, t) if h < t  => coerceHeight(wrapTag(tag), h + 1, targetHeight)
+    case (h, t) if h > t  => throw new Exception(s"Cannot coerce height from $h to $t")
+  }
+
+  val tag =  traverse(rtree)
+  fixedHeight match {
+    case Some(targetHeight) => coerceHeight(tag, rtree.height, targetHeight)
+    case None               => tag
+  }
 }
 
 // MARK: fn: main
 def main(): Unit = {
+  val MAX_INTERNAL_DEGREE = 4
+  val HEIGHT              = 8
+
   val regions = {
     val spawnerRegions    = regionsFromFile(os.pwd / "input" / "spawners.csv", (id, p) => (p, 1 -> id))
     println(s"Spawners: (${spawnerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
-    val containerRegions      = regionsFromFile(os.pwd / "input" / "containers.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
+    val containerRegions  = regionsFromFile(os.pwd / "input" / "containers.csv", (id, p) => (p, 2 -> id), defaultSize = Some(16))
     println(s"Containers: (${containerRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
     val traderRegions     = regionsFromFile(os.pwd / "input" / "traders.csv", (id, p) => (p, 3 -> id), defaultSize = Some(32))
     println(s"Traders: (${traderRegions.map((d, r) => s"$d: ${r.size}").mkString(", ")})")
@@ -501,7 +527,7 @@ def main(): Unit = {
     println(s"Dimension: $dim")
     println(s"Regions: ${regions.size}")
 
-    val rtree = strPack(regions, maxInternalDegree = 4)
+    val rtree = strPack(regions, MAX_INTERNAL_DEGREE)
 
     println(s"Tree width: 4, Tree height: ${rtree.height}")
     os.write.over(os.pwd / "output" / s"strpack-rtree-$dim.svg", visualizeAsSvg(rtree))
@@ -510,8 +536,9 @@ def main(): Unit = {
       def dataToTag(data: (Int, Int)): NBTTag = NBTTag.NBTTagCompound(
         Map("T" -> NBTTag.NBTTagByte(data._1.toByte), "I" -> NBTTag.NBTTagInt(data._2))
       )
-      compoundTagFromTree(rtree, (_, data) => dataToTag(data))
+      compoundTagFromTree(rtree, (_, data) => dataToTag(data), fixedHeight = Some(HEIGHT))
     }
+
     os.write.over(os.pwd / "output" / s"strpack-rtree-nbttag-$dim.txt", compoundTag.toSNBT)
 
     // analyze costs with varying maxInternalDegree

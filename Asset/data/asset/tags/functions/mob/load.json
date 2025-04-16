@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/0437.lawless_iron_doll/load",
+        "asset:mob/0301.karmic/load",
         "asset:mob/0365.frestchika/load",
         "asset:mob/0327.eclael/load",
         "asset:mob/0340.twins_rubiel/0.load",
@@ -31,7 +33,7 @@
         "asset:mob/0363.white_spellbook/load",
         "asset:mob/0227.frost_eye/load",
         "asset:mob/0237.lunatic_mage/load",
-        "asset:mob/0060.self_destructor/0.load",
+        "asset:mob/0060.self_destructor/load",
         "asset:mob/0055.hetukedah/load",
         "asset:mob/0046.clock_of_despair/0.load",
         "asset:mob/0331.aurora_sorcerer/load",

@@ -10,14 +10,19 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
-# CanUsedなら使用回数スコアを加算
-    execute if entity @s[tag=CanUsed] run scoreboard players add @s U1.Count 1
+#> Private
+# @private
+    #declare score_holder $U1.HealVal
 
-# スコアが4以下ならCanUsedを削除
-    execute if entity @s[scores={U1.Count=..4}] run tag @s remove CanUsed
+# CanUsedなら回復量を取得し、累計回復量に加算しておく
+    execute if entity @s[tag=CanUsed] store result score $U1.HealVal Temporary run data get storage asset:context ReceiveHeal.Amount 10
+    execute if entity @s[tag=CanUsed] run scoreboard players operation @s U1.HealSum += $U1.HealVal Temporary
+
+# 累計回復量が20以下ならCanUsedを削除
+    execute unless score @s U1.HealSum matches 200.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1081.wandering_piece_of_dream/trigger/3.main
 
-# 値が5以上ならリセット
-    execute if entity @s[scores={U1.Count=5..}] run scoreboard players reset @s U1.Count
+# リセット
+    scoreboard players reset $U1.HealVal Temporary

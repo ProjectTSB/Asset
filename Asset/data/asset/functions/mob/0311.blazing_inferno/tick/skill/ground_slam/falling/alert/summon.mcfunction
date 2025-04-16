@@ -5,7 +5,7 @@
 # @within function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/falling/alert/recursive
 
 # ついでに後で使うマーカーも召喚
-    summon marker ~ ~ ~ {Tags:["8N.Marker.Target"]}
+    summon marker ~ ~ ~ {Tags:["8N.Marker.Target","8N.Marker"]}
 
 # 自機狙い
     # ID指定

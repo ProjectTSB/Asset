@@ -5,7 +5,7 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/ice_laser/
 
 # ターゲットが左右どちらにいるか確認
-    execute facing entity @p[tag=AK.MainTarget] feet rotated ~ 0 positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add AK.Temp.Right
+    execute facing entity @p[tag=AK.MainTarget,distance=..80] feet rotated ~ 0 positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add AK.Temp.Right
 
 # 回転
     execute unless entity @s[tag=AK.Temp.Right] run tp @s ~ ~ ~ ~-0.3 ~
