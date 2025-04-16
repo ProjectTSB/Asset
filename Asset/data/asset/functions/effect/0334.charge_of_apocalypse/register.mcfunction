@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 334
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"黙示録ノ紡ギ手","color":"#ad0000"}]'
+    data modify storage asset:effect Name set value '{"text":"黙示録ノ紡ギ手","color":"#ad0000"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"チャージ段階に応じてアポカリプスのダメージが増加する"}']
 # 効果時間 (int) (default = API || error)
