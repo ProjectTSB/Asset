@@ -33,7 +33,7 @@
     execute positioned ^ ^ ^25 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
     execute positioned ^ ^ ^26 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
     execute positioned ^ ^ ^27 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0,dy=0,dz=0] run tag @s add AX.Temp.Target
-    
+
 
 #> score_holder
 # @private
@@ -42,9 +42,9 @@
 # 難易度値を取得
     function api:global_vars/get_difficulty
 
-# ダメージ式：8N + 40
+# ダメージ式：# 難易度数値 × 補正値 + 基礎
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 15
     scoreboard players add $DamageTemp Temporary 40
 
 # ダメージ
@@ -55,6 +55,8 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # 死亡ログ
         data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの放った魔弾により、貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行
