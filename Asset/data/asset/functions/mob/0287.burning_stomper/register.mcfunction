@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value True
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"バーニングストンパー","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"強靭な足での大ジャンプが得意なスケルトン。","color":"white"}','{"text":"地面を思いっきり踏みつけ、燃え盛るような衝撃波で攻撃してくる。","color":"white"}','{"text":"また、かなり重く、ちょっとやそっとの攻撃では吹き飛ばない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
