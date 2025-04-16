@@ -22,7 +22,7 @@
     execute store result score $ZR.Progress Temporary run data get storage api: Return.Progress 100
 # 殴る $Damage(e2)
     # 基礎値: 5
-        scoreboard players set $ZR.Damage Temporary 400
+        scoreboard players set $ZR.Damage Temporary 500
     # Lv1: 5-40
         scoreboard players operation $ZR.Calc1 Temporary = $ZR.Progress Temporary
         scoreboard players operation $ZR.Calc1 Temporary < $25 Const
