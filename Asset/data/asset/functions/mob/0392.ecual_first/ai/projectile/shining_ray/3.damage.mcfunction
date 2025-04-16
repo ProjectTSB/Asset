@@ -44,8 +44,8 @@
 
 # ダメージ式：8N + 36
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
-    scoreboard players add $DamageTemp Temporary 36
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 15
+    scoreboard players add $DamageTemp Temporary 30
 
 # ダメージ
     # 引数の設定
