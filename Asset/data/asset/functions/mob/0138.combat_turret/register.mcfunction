@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"戦闘用タレット","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"軍用に開発されたであろうロボット。","color":"white"}','{"text":"あなたに風穴を開けるには十分な三点バーストの銃を装備している。","color":"white"}','{"text":"一応テーザー銃と呼ばれる電気式の非殺傷兵器らしいが、絶対嘘である。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
