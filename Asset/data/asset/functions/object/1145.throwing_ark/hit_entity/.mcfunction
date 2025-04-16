@@ -16,7 +16,7 @@
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 # ダメージ実行
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=4,dy=1,dz=4] run function api:damage/
+    execute positioned ~-1.5 ~-1.5 ~-1.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=2,dy=2,dz=2] run function api:damage/
 # リセット
     function api:damage/reset
     scoreboard players reset $UserID Temporary
