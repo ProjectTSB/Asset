@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"クイーンビー"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"巨大な女王蜂の上級天使。","color":"white"}','{"text":"巣に侵入し、神器を解放しようとする者には容赦しない。","color":"white"}','{"text":"その巨大からは想像できない素早さで敵を翻弄する。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
