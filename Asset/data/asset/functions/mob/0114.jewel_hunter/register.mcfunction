@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"ジ","color":"aqua"},{"text":"ュ","color":"green"},{"text":"エ","color":"yellow"},{"text":"ル","color":"light_purple"},{"text":"ハ","color":"aqua"},{"text":"ン","color":"green"},{"text":"タ","color":"yellow"},{"text":"ー","color":"light_purple"}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"きらびやかな宝石の魔物。","color":"white"}','{"text":"遠くからの攻撃に対し、魔法弾で反撃を行う。","color":"white"}','{"text":"近接戦に持ち込めば、反撃を封じることができるだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20246}}
