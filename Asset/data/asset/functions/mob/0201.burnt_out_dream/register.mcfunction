@@ -17,6 +17,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"燃え尽きた夢","color":"dark_red"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"右手に剣、左手にクロスボウを持った狩人。","color":"white"}','{"text":"すべて、長い夜の夢だったよ","color":"white"}']
+# Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
