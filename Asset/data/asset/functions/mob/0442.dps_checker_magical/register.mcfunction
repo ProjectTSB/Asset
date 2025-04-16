@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"魔法耐性の人形","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"攻撃されてから10秒間のDPSを計測する","color":"white"}','{"text":"魔法耐性が高く、物理耐性が低い。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"攻撃されてから15秒間のDPSを計測する","color":"white"}','{"text":"魔法耐性が高く、物理耐性が低い。","color":"white"}']
 # 防具
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20019}}
