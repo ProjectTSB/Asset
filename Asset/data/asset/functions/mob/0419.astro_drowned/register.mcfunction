@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"アストロドラウンド","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"宇宙で活動するドラウンド","color":"white"}','{"text":"時空を切り裂いて攻撃をしてくる。","color":"white"}','{"text":"ゾンビも宇宙で溺死するとこうなるらしい。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"宇宙で活動するドラウンド。","color":"white"}','{"text":"時空を切り裂いて攻撃をしてくる。","color":"white"}','{"text":"ゾンビも宇宙で溺死するとこうなるらしい。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:trident",Count:1b}
