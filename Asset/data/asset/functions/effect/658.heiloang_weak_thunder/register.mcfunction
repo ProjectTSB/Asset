@@ -12,7 +12,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"雷の浸食"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"龍の力により、雷属性耐性が低下"}']
+    data modify storage asset:effect Description set value ['{"text":"黒龍の呪いが、雷への守りを妨げる"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
