@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルバッシャー"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"戦闘に特化したスケルトン。","color":"white"}','{"text":"遠距離攻撃も、近距離攻撃もお手の物。","color":"white"}','{"text":"ステップの動きには注意が必要だ。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"素早いステップを使いこなすようになったスカルソルジャー。","color":"white"}','{"text":"遠くからは弓を放ちながら接近し、近接戦闘に持ち込まれれば距離を取ろうとする。","color":"white"}','{"text":"鉄の防具も装備して、気分は一級の戦士だ！","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:iron_axe",Count:1b}
