@@ -104,6 +104,8 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Water"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%2$sの攻撃が200回転した！ %1$sは死んだ！","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
