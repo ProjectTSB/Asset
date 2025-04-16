@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ジッャク・オ・ランタン","color":"#FFAA00"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"頭がカチボャな奇跡な天使。","color":"white"}','{"text":"下級天使ではあるが、微妙で独自な技を使う。","color":"white"}','{"text":"ただ攻撃しているだけでは、勝てないだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
