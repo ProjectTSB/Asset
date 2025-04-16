@@ -14,6 +14,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"エクレール","color":"#91f9ab"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"オーロラは滅多にみられるものではない。"}','{"text":"たとえ姿を見せたとしても、いつも眠そうにフラフラしている。"}','{"text":"元気に活動している姿を見られたら超ラッキー。"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 175000
 # ノックバック耐性 (double) (オプション)
