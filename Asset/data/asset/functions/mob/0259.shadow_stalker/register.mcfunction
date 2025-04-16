@@ -11,6 +11,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"シャドウストーカー","color":"gray"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"影と一体化している生物。","color":"white"}','{"text":"暗い場所では闇と一体化し、視認することができないが、","color":"white"}','{"text":"明るくすればその姿を見ることができるようになる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
