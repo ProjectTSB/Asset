@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"侵","color":"#1D2ECC"},{"text":"害","color":"#10256B"}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"これは罪だ。","color":"white"}','{"text":"有害な毒ガスをばらまく。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20066,Enchantments:[{}]}}
