@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルアーチャー","color":"gray"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"ただのスケルトンのよう見えるが","color":"white"}','{"text":"普通のスケルトンより体力が多く","color":"white"}','{"text":"そして矢に当たると大きく吹き飛ぶ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1}]}}
