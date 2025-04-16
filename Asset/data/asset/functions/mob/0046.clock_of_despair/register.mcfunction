@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"絶望の時計"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"朽ちることも、壊れることもなく時を刻む時計。","color":"white"}','{"text":"その性質上、普通の方法では倒すことはできない。","color":"white"}','{"text":"『時』が来るまで耐え続けるしかない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
