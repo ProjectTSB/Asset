@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: Test
-        uses: ChenCMD/datapack-linter@v2
+        uses: ChenCMD/datapack-linter@dist
         with:
           GITHUB_TOKEN: ${{ github.token }}
           muteSuccessResult: true
