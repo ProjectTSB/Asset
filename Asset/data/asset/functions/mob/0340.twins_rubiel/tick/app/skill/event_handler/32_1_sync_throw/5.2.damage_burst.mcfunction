@@ -13,7 +13,7 @@
     execute positioned ^ ^1 ^ rotated ~240 ~ run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/32_1_sync_throw/6.5.particle_line_burst
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 55f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SyncThrowImpact
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

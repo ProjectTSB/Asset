@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1220.sacred_hardener/trigger/1.trigger",
+        "asset:artifact/1269.apocalypse/using_item/1.trigger",
         "asset:artifact/1228.fatalerror/trigger/1.trigger",
         "asset:artifact/1061.hekireki/using_item/1.trigger",
         "asset:artifact/0224.onegai_muscle/trigger/1.trigger",
