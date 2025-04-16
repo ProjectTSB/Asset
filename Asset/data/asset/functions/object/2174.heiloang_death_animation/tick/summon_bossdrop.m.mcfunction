@@ -5,4 +5,6 @@
 # @within asset:object/2174.heiloang_death_animation/tick/summon_bossdrop
 
 # ボスドロップ配置
-    # $execute positioned $(X) $(Y) $(Z) run particle flame ~ ~ ~ 0.1 0.1 0.1 0.1 100
+    data modify storage api: Argument.ID set value 1269
+    data modify storage api: Argument.Important set value true
+    $execute positioned $(X) $(Y) $(Z) run function api:artifact/spawn/from_id
