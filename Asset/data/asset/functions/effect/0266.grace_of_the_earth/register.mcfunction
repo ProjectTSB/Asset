@@ -5,7 +5,7 @@
 # @within function asset:effect/0266.grace_of_the_earth/_/register
 
 # 継承 (int)
-    data modify storage asset:effect Extends append value 84
+    data modify storage asset:effect Extends append value 134
     function asset:effect/extends
 # ID (int)
     data modify storage asset:effect ID set value 266

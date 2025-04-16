@@ -11,5 +11,6 @@
 
 # クラスター弾召喚
     execute store result storage api: Argument.FieldOverride.DetonateTime int 1 run random value 20..30
+    data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
     data modify storage api: Argument.ID set value 2089
     execute positioned ~ ~0.01 ~ run function api:object/summon

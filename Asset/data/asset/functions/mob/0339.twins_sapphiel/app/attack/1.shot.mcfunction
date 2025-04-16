@@ -21,7 +21,7 @@
     scoreboard players add @s 9F.BulletCount.Hg 1
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 35f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Shot
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

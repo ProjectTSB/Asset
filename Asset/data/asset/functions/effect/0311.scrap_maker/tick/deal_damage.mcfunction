@@ -21,6 +21,7 @@
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     data modify storage api: Argument.AttackType set value "Magic"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
+    data modify storage api: Argument.ApplyTrigger set value false
     function api:damage/
     function api:damage/reset
 # リセット

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ロッドオリディーム","color":"#A1FFE9"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲2.5mのプレイヤーのデバフを全て解除する","color":"white"}','{"text":"古の賢者達が作り上げた奇跡の杖","color":"gray"}','{"text":"呪いを祓う力を持つ水晶が使われている","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"自身と周囲2.5mのプレイヤーのデバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除する","color":"white"}]','{"text":"古の賢者達が作り上げた奇跡の杖","color":"gray"}','{"text":"呪いを祓う力を持つ水晶が使われている","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -39,14 +39,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 25
+    data modify storage asset:artifact MPCost set value 80
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 500
+    # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    # data modify storage asset:artifact TypeCooldown.Type set value
-    # data modify storage asset:artifact TypeCooldown.Duration set value
+    data modify storage asset:artifact TypeCooldown.Type set value "heal"
+    data modify storage asset:artifact TypeCooldown.Duration set value 300
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
