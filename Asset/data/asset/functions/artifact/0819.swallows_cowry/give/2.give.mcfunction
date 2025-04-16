@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"燕の子安貝","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ツバメの産んだ子安貝"}','{"text":"竹取の宝具の一つで落下への耐性を与えてくれる"}','{"text":"竹取の宝具を全て装備した時各部位は以下の効果を与える","color":"gray"}','{"text":"頭: 水耐性+15%","color":"gray"}','{"text":"胴: 炎耐性+20%","color":"gray"}','{"text":"脚: 物理耐性+10%","color":"gray"}','{"text":"靴: 落下耐性+15%","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ツバメの産んだ子安貝"}','{"text":"竹取の宝具の一つで落下への耐性を与えてくれる"}','{"text":"竹取の宝具を全て装備した時各部位は以下の効果を与える","color":"gray"}','{"text":"頭: 水耐性+15%","color":"gray"}','{"text":"胴: 炎耐性+15%","color":"gray"}','{"text":"脚: 物理耐性+20%","color":"gray"}','{"text":"靴: 落下耐性+25%","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
