@@ -14,7 +14,7 @@
 # 移動
     execute if score @s General.Object.Tick matches 2 run data modify storage asset:context this.Speed set value 2
     execute if score @s General.Object.Tick matches 5 run data modify storage asset:context this.Speed set value 1
-    execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.MovePerStep set value 0.8
+    execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.MovePerStep set value 0.08
 
 # パーティクル
     particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.05 1 force @a[distance=..32]
