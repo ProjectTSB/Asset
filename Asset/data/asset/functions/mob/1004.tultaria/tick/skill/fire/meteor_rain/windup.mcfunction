@@ -28,3 +28,6 @@
 
 # リセット
     scoreboard players reset $Random Temporary
+
+# アイテム指定
+    item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20075}
