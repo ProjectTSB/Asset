@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.Damage set value 320f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
