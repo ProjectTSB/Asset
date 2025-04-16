@@ -14,7 +14,6 @@
     playsound minecraft:entity.ender_eye.death player @a ~ ~ ~ 2 1
 
 # 敵のステータス表示処理
-    execute unless entity @s[x_rotation=75..90] run tellraw @s [{"text":"\n[ ","color":"white"},{"selector":"@e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1]"},{"text":" ]\n","color":"white"}]
     execute unless entity @s[x_rotation=75..90] as @e[type=#lib:living,type=!player,tag=01.Target,distance=..30,limit=1] run function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/print_defense_messages
 
 # 自身のステータス表示処理

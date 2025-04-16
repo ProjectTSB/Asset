@@ -14,6 +14,9 @@
     execute at @s run particle minecraft:enchant ~ ~1 ~ 0.2 0.5 0.2 0 100
     execute at @s run particle minecraft:instant_effect ~ ~1 ~ 0.2 0.5 0.2 0 5
 
+# 名前
+    tellraw @p[tag=this] [{"text":"\n[ ","color":"white"},{"selector":"@s"},{"text":" ]\n","color":"white"}]
+
 # 体力
     # 最大体力を取得
         execute store result score $01.MaxHP Temporary run function api:mob/get_max_health
