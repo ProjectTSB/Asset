@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:artifact/1269.apocalypse/trigger/0.load",
+        "asset:artifact/1061.hekireki/trigger/0.load",
+        "asset:artifact/0224.onegai_muscle/trigger/0.load",
         "asset:artifact/0643.raimei_chestplate/trigger/0.load",
         "asset:artifact/0364.red_knights_sword/trigger/0.load",
         "asset:artifact/1206.triple_sparkle_bomb/trigger/0.load",
@@ -28,7 +31,6 @@
         "asset:artifact/0769.shaking_splash/trigger/0.load",
         "asset:artifact/0737.summer_festival_of_remembrance/trigger/0.load",
         "asset:artifact/0724.oblivious_snow/trigger/0.load",
-        "asset:artifact/0730.lake_reflecting_starry_sky/trigger/0.load",
         "asset:artifact/0606.traffic_sign/trigger/0.load",
         "asset:artifact/1033.thelema_of_blue_sea/trigger/0.load",
         "asset:artifact/1043.gamma_ray/trigger/0.load",

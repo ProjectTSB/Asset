@@ -21,11 +21,13 @@
 # プレイヤー特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
 # ダメージ
+    function api:damage/single_damage_session/open
     function asset:object/1065.hex_sting/kill/deal_damage.m {DamagePer:100,RangeMax:0.5,RangeMaxD:0,RangeMinSubCommand:""}
     function asset:object/1065.hex_sting/kill/deal_damage.m {DamagePer: 75,RangeMax:1.0,RangeMaxD:1,RangeMinSubCommand:"positioned ~-0.5 ~-0.5 ~-0.5 unless entity @s[dx=0,dy=0,dz=0] "}
     function asset:object/1065.hex_sting/kill/deal_damage.m {DamagePer: 55,RangeMax:1.5,RangeMaxD:2,RangeMinSubCommand:"positioned ~-1.0 ~-1.0 ~-1.0 unless entity @s[dx=1,dy=1,dz=1] "}
     function asset:object/1065.hex_sting/kill/deal_damage.m {DamagePer: 30,RangeMax:2.0,RangeMaxD:3,RangeMinSubCommand:"positioned ~-1.5 ~-1.5 ~-1.5 unless entity @s[dx=2,dy=2,dz=2] "}
     function asset:object/1065.hex_sting/kill/deal_damage.m {DamagePer: 20,RangeMax:2.5,RangeMaxD:4,RangeMinSubCommand:"positioned ~-2.0 ~-2.0 ~-2.0 unless entity @s[dx=3,dy=3,dz=3] "}
+    function api:damage/single_damage_session/close
 # リセット
     scoreboard players reset $UserID Temporary
 

@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/1088.purifying_hydrangea/trigger/**
-    scoreboard objectives add U8.Count dummy
+    scoreboard objectives add U8.HealSum dummy

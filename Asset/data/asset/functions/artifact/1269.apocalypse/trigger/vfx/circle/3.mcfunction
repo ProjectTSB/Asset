@@ -1,0 +1,92 @@
+#> asset:artifact/1269.apocalypse/trigger/vfx/circle/3
+#
+#
+#
+# @within function asset:artifact/1269.apocalypse/trigger/vfx/
+
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJwAslcARqQBwCGAtAEwBs9AZm9QCMABmpt6LJhzaUucOCiaVhKAMwBWFGAIA7FgFsEyQGGKAAkHawMFhgMBnJOBQB7QjohIm1Aijju4GI5gAG4s2IRG4AAeSMIEULEAvokEtqRohA6I6sK5ebkEdhA2HohxYHDY2GgwdkYi5RjOxRBG5Wh2AKJVNXWdAI6EYdhQAMrWvuSIvGF1yQC6QA_3
+# 円 1
+particle cloud ~ ~ ~ ^0 ^ ^-500000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^37365046.79321 ^ ^-498601898.59059 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^74521133.08809 ^ ^-494415413.11256 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^111260466.97816 ^ ^-487463956.09091 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^147377587.20545 ^ ^-477786402.89307 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^182670512.1832 ^ ^-465436874.3221 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^216941869.55878 ^ ^-450484433.95121 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^250000000 ^ ^-433012701.89222 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^281660029.03181 ^ ^-413119387.158 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^311744900.92937 ^ ^-390915741.23401 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^340086368.88546 ^ ^-366525935.91491 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^366525935.91491 ^ ^-340086368.88546 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^390915741.23401 ^ ^-311744900.92937 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^413119387.158 ^ ^-281660029.03181 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^433012701.89222 ^ ^-250000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^450484433.95121 ^ ^-216941869.55878 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^465436874.3221 ^ ^-182670512.1832 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^477786402.89307 ^ ^-147377587.20545 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^487463956.09091 ^ ^-111260466.97816 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^494415413.11256 ^ ^-74521133.08809 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^498601898.59059 ^ ^-37365046.79321 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^500000000 ^ ^0 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^498601898.59059 ^ ^37365046.79321 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^494415413.11256 ^ ^74521133.08809 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^487463956.09091 ^ ^111260466.97816 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^477786402.89307 ^ ^147377587.20545 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^465436874.3221 ^ ^182670512.1832 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^450484433.95121 ^ ^216941869.55878 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^433012701.89222 ^ ^250000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^413119387.158 ^ ^281660029.03181 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^390915741.23402 ^ ^311744900.92937 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^366525935.91491 ^ ^340086368.88546 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^340086368.88546 ^ ^366525935.91491 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^311744900.92937 ^ ^390915741.23401 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^281660029.03181 ^ ^413119387.158 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^250000000 ^ ^433012701.89222 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^216941869.55878 ^ ^450484433.95121 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^182670512.1832 ^ ^465436874.3221 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^147377587.20545 ^ ^477786402.89307 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^111260466.97816 ^ ^487463956.09091 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^74521133.08809 ^ ^494415413.11256 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^37365046.79321 ^ ^498601898.59059 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^0 ^ ^500000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-37365046.79321 ^ ^498601898.59059 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-74521133.08809 ^ ^494415413.11256 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-111260466.97816 ^ ^487463956.09091 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-147377587.20545 ^ ^477786402.89307 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-182670512.1832 ^ ^465436874.3221 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-216941869.55878 ^ ^450484433.95121 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-250000000 ^ ^433012701.89222 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-281660029.03181 ^ ^413119387.158 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-311744900.92937 ^ ^390915741.23402 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-340086368.88546 ^ ^366525935.91491 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-366525935.91491 ^ ^340086368.88546 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-390915741.23401 ^ ^311744900.92937 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-413119387.158 ^ ^281660029.03181 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-433012701.89222 ^ ^250000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-450484433.95121 ^ ^216941869.55878 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-465436874.3221 ^ ^182670512.1832 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-477786402.89307 ^ ^147377587.20545 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-487463956.09091 ^ ^111260466.97816 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-494415413.11256 ^ ^74521133.08809 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-498601898.59059 ^ ^37365046.79321 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-500000000 ^ ^0 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-498601898.59059 ^ ^-37365046.79321 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-494415413.11256 ^ ^-74521133.08809 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-487463956.09091 ^ ^-111260466.97816 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-477786402.89307 ^ ^-147377587.20545 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-465436874.3221 ^ ^-182670512.1832 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-450484433.95121 ^ ^-216941869.55878 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-433012701.89222 ^ ^-250000000 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-413119387.158 ^ ^-281660029.03181 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-390915741.23401 ^ ^-311744900.92937 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-366525935.91491 ^ ^-340086368.88546 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-340086368.88546 ^ ^-366525935.91491 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-311744900.92937 ^ ^-390915741.23401 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-281660029.03181 ^ ^-413119387.158 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-250000000 ^ ^-433012701.89222 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-216941869.55878 ^ ^-450484433.95121 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-182670512.1832 ^ ^-465436874.3221 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-147377587.20545 ^ ^-477786402.89307 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-111260466.97816 ^ ^-487463956.09091 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-74521133.08809 ^ ^-494415413.11256 0.000000005 0 normal @a
+particle cloud ~ ~ ~ ^-37365046.79321 ^ ^-498601898.59059 0.000000005 0 normal @a
