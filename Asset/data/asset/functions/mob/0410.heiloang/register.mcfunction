@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『黒龍』"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"そのグルガン族の男は静かに語った―――"}']
+    data modify storage asset:mob Lore set value ['{"text":"蘇りし黒き天災の権化、真名はヘイローン。"}','{"text":"汝、見てはならぬ、聞いてはならぬ、知ってはならぬ。"}','{"text":"禁忌に触れることこそが最も愚かなる禁忌なり。"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 130000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

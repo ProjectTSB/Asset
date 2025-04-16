@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『闇竜』","color":"#CB8FFF"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"冥暗司る絶零の主、真名はティアマット。"}','{"text":"闇竜の名を以て、王に仇名す愚者共に"}','{"text":"凍てつく闇の恐怖を与えん。"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 100
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
