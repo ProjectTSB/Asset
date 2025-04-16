@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ヘルズウォッチャー","color":"red","italic":false}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"地獄を見つめる者。","color":"white"}','{"text":"普段はゆっくりとこちらを追いかけてくるが、","color":"white"}','{"text":"時折恐ろしい姿に変貌し、物凄い速度で飛び回る。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
