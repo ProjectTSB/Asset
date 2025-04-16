@@ -14,6 +14,10 @@
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
 
+# 眷属をkill
+    execute as @e[type=zombie,scores={MobID=176},distance=..50] run function api:mob/kill
+    execute as @e[type=zombie,scores={MobID=429},distance=..50] run function api:mob/kill
+
 # スポーンマーカー削除
     kill @e[type=marker,tag=4V.SpawnMarker,distance=..100]
 
