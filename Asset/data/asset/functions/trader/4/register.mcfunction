@@ -4,12 +4,12 @@
 #
 # @within function asset_manager:trader/register/register.m
 
-execute unless loaded -36 21 -29 run return 1
+execute unless loaded -36 21 -28 run return 1
 
 # ID (int)
     data modify storage asset:trader ID set value 4
 # Pos ([int] @ 3)
-    data modify storage asset:trader Pos set value [-36,21,-29]
+    data modify storage asset:trader Pos set value [-36,21,-28]
 # 名前 (TextComponent) (オプション)
     data modify storage asset:trader Name set value '{"text":"シャード商人"}'
 # 方向 (float) (オプション)
