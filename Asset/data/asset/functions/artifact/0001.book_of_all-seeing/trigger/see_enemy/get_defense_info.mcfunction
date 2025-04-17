@@ -1,8 +1,8 @@
-#> asset:artifact/0001.book_of_all-seeing/trigger/get_defense_info
+#> asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/get_defense_info
 #
 #
 #
-# @within function asset:artifact/0001.book_of_all-seeing/trigger/print_defense_messages
+# @within function asset:artifact/0001.book_of_all-seeing/trigger/see_enemy/
 
 #> Val
 # @private
