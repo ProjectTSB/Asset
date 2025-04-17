@@ -9,7 +9,7 @@
     #declare score_holder $UserID
 
 # ダメージ情報設定
-    execute store result storage api: Argument.Damage float 1 run random value 160..205
+    execute store result storage api: Argument.Damage float 1 run random value 150..180
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
