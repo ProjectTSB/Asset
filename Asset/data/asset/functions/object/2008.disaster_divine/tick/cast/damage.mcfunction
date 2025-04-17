@@ -11,10 +11,10 @@
 # 難易度値を取得
     function api:global_vars/get_difficulty
 
-# ダメージ式：5N + 35
+# ダメージ式：難易度数値 × 補正値 + 基礎
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 5
-    scoreboard players add $DamageTemp Temporary 35
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
+    scoreboard players add $DamageTemp Temporary 38
 
 # ダメージ
     # 引数の設定
@@ -24,6 +24,8 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Thunder"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # 死亡ログ
         data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの裁きにより地獄へと落ちた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行
