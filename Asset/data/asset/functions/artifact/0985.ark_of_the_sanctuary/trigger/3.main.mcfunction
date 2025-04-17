@@ -22,7 +22,7 @@
 # ダメージ
     execute anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/damage
 
-# コンボフィニッシュならば斬撃を飛ばす
+# コンボフィニッシュならば剣を投げる
     execute if score @s RD.Combo matches 4 anchored eyes run function asset:artifact/0985.ark_of_the_sanctuary/trigger/shot_spin_blade
 
 # スケジュールで実行させる
