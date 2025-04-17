@@ -1,8 +1,8 @@
-#> asset:artifact/0019.scripture/trigger/vfx
+#> asset:effect/0324.scripture_gambling/end/vfx
 #
 #
 #
-# @within function asset:artifact/0019.scripture/trigger/3.main
+# @within function asset:effect/0324.scripture_gambling/end/success
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGwAclAzHQOwAMAtJQIxwBMrALKWoBWVgCNuAQ14SAnDNHNGAM0YyUdPmAIA7CQFsEyQGGKAAg5awMCRn0BnJOBQB7QtohJqzAijhu4GBzAANwlsQkNwAA8kLzAoGIBfBIIbUjRCe0QOZhzc2NsIa3dEWLhsbDQYW0Ns2IwnQohDWLRbAFFyyuq2gEdCUOwoAGUrH3JEJVDqpIBdIA_3
 # 円 1
