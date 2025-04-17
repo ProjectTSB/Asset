@@ -18,7 +18,7 @@
     playsound entity.blaze.shoot player @a ~ ~ ~ 0.8 0.60
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 2600..3000
+    execute store result storage api: Argument.Damage float 1 run random value 3100..3500
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
