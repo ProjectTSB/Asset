@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 293
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"スピードの向こう側",}'
+    data modify storage asset:effect Name set value '{"text":"スピードの向こう側"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"移動速度が極端に上昇する"}']
 # 効果時間 (int) (default = API || error)

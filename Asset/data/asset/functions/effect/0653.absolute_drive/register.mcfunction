@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"C.D.アブソリュートドライブ"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":""ダメージを大きく軽減するが、","color":"white"}','{"text":"しばらくするとオーバーヒートし、","color":"white"}','{"text":このバフが解除される","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"ダメージを大きく軽減するが、","color":"white"}','{"text":"しばらくするとオーバーヒートし、","color":"white"}','{"text":"このバフが解除される","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
