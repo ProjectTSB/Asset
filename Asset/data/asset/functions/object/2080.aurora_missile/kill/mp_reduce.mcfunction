@@ -2,7 +2,7 @@
 #
 # MPを割合で減らす
 #
-# @within function asset:object/2080.aurora_missile/kill/
+# @within function asset:object/2080.aurora_missile/kill/main
 
 #> Private
 # @private
