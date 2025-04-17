@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/0331.aurora_sorcerer/tick/
 
-# 近くに足場Objectがあればreturn
-    execute if entity @e[type=marker,scores={ObjectID=2221},distance=..2] run return fail
-
 # バックステップ
     data modify storage lib: Argument.VectorMagnitude set value 1.6
     execute facing entity @p[gamemode=!spectator,distance=..32] eyes rotated ~-180 -13 run function lib:motion/
