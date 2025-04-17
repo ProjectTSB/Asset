@@ -16,11 +16,12 @@
 # MotionCountが一定以上でバックステップ
     execute if entity @s[scores={97.MotionCount=60..}] run function asset:mob/0331.aurora_sorcerer/tick/backstep
 
-# 足場生成不可Tickを制御
-    execute store result storage asset:context this.CannotMakeScaffoldTick int 0.9999999999 run data get storage asset:context this.CannotMakeScaffoldTick
+# 足場生成関連
+    # 足場生成不可Tickを制御
+        execute store result storage asset:context this.CannotMakeScaffoldTick int 0.9999999999 run data get storage asset:context this.CannotMakeScaffoldTick
 
-# 破壊可能エリアかつCannotMakeScaffoldTick:0かつ空中なら、足場を生成
-    execute if predicate api:area/is_breakable if data storage asset:context this{CannotMakeScaffoldTick:0} if block ~ ~-1 ~ #lib:no_collision_without_fluid if block ~ ~-2 ~ #lib:no_collision_without_fluid if block ~ ~-3 ~ #lib:no_collision_without_fluid run function asset:mob/0331.aurora_sorcerer/tick/make_scaffold/
+    # 条件を満たしたのなら、足場を生成
+        execute if function asset:mob/0331.aurora_sorcerer/tick/make_scaffold/check run function asset:mob/0331.aurora_sorcerer/tick/make_scaffold/
 
 # スコア制御
     scoreboard players add @s General.Mob.Tick 1

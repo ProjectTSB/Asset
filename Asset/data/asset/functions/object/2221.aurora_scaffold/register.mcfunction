@@ -20,3 +20,4 @@
     data modify storage asset:object Field.MobUUID set value -1
     data modify storage asset:object Field.Tick set value 200
     data modify storage asset:object Field.Interval set value 40
+    data modify storage asset:object Field.CMDList set value [20167,20168,20169,20170,20171,20172,20173,20174,20175]
