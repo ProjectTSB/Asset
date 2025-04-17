@@ -5,4 +5,5 @@
 # @within function asset:effect/0324.scripture_gambling/_/given
 
 # 演出
-    playsound block.portal.ambient player @s ~ ~ ~ 1 1 1
+    playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 2
+    playsound minecraft:block.amethyst_block.break player @a ~ ~ ~ 1 2

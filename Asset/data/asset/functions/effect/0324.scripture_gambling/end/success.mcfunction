@@ -7,8 +7,8 @@
 # 演出
     execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 15 run function asset:effect/0324.scripture_gambling/end/vfx
     execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 -15 run function asset:effect/0324.scripture_gambling/end/vfx
-    playsound block.bell.resonate player @a ~ ~ ~ 1 2
-    playsound ogg:random.levelup player @a ~ ~ ~ 1 1.8
+    playsound ogg:block.amethyst.resonate1 player @a ~ ~ ~ 1 1.5
+    playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 1 2
 
 # 体力回復
     data modify storage api: Argument.Heal set from storage asset:context this.Heal
