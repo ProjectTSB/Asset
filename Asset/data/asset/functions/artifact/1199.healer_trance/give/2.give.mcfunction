@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"ヒーラ","color":"green"},{"text":"ー","color":"#E1FCB1"},{"text":"ト","color":"#FCD0B1"},{"text":"ランス","color":"red"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"与回復量と被回復量の補正について"}','{"text":"20秒の間50%減少させる代わりに"}','{"text":"10秒の間合計の70%分与ダメージが上昇する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"与回復量と被回復量の補正について"}','{"text":"20秒の間50%減少させる代わりに"}','{"text":"10秒の間合計の60%分与ダメージが上昇する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
