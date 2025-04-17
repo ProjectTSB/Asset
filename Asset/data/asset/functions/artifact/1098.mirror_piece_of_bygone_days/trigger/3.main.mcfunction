@@ -20,9 +20,8 @@
     playsound ogg:block.amethyst.shimmer player @a ~ ~ ~ 2 0.6
 
 # デバフを1つ解除
-    data modify storage api: Argument.ClearLv set value 2
+    data modify storage api: Argument.ClearLv set value 1
     data modify storage api: Argument.ClearType set value "bad"
-    data modify storage api: Argument.ClearCount set value 1
     function api:entity/mob/effect/remove/from_level
     function api:entity/mob/effect/reset
 

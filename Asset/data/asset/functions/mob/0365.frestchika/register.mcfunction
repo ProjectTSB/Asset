@@ -23,8 +23,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"高性能な機械の身体を持つ天使。","color":"white"}','{"text":"テレポートやブーストを駆使した動きで敵を翻弄する。","color":"white"}','{"text":"「アブソリュートドライブ」により、限界を超えた性能を発揮することができる。","color":"white"}']
 # 体力 (double) (オプション)
-    #data modify storage asset:mob Health set value 100000
-    data modify storage asset:mob Health set value 200000
+    data modify storage asset:mob Health set value 140000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0

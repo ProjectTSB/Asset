@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"過ぎし日の虚像","color":"#BCDCE8"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"最大体力が上昇する","color":"white"}'
+    data modify storage asset:effect Description set value ['{"text":"最大体力が上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)

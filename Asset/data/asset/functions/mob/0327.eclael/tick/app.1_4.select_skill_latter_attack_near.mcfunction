@@ -6,8 +6,8 @@
 
 # 疑似乱数取得
 # プレイヤーが単体の場合は電光石火は選択しない
-    execute unless score $PlayerCount Global matches 2.. run random value 0..3
-    execute if score $PlayerCount Global matches 2.. run random value 0..4
+    execute unless score $PlayerCount Global matches 2.. store result score $Random Temporary run random value 0..3
+    execute if score $PlayerCount Global matches 2.. store result score $Random Temporary run random value 0..4
 
 # 袈裟斬り
     execute if score $Random Temporary matches 0 run tag @s add 93.Skill.Latter.MoveSlash
