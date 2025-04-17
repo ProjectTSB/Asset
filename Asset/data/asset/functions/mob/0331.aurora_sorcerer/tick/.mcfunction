@@ -10,11 +10,15 @@
 # プレイヤーが近くにいる場合、自身に鈍足を付与
     execute if entity @p[gamemode=!spectator,distance=..12] run effect give @s slowness 1 3 true
 
-# プレイヤーと非常に近い場合、かつ、Objectの足場が下にない場合、MotionCountスコアを増加
-    execute unless entity @s[scores={97.MotionCT=1..}] if entity @p[gamemode=!spectator,distance=..5] align y positioned ~ ~-3 ~ unless entity @e[type=item_display,scores={ObjectID=2221},dx=0,dy=2,dz=0] run scoreboard players add @s 97.MotionCount 1
+# バックステップ関連
+    # プレイヤーと非常に近い場合、かつ、Objectの足場が下にない場合、MotionCountスコアを増加
+        execute if function asset:mob/0331.aurora_sorcerer/tick/backstep/check run scoreboard players add @s 97.MotionCount 1
 
-# MotionCountが一定以上でバックステップ
-    execute if entity @s[scores={97.MotionCount=60..}] run function asset:mob/0331.aurora_sorcerer/tick/backstep
+    # バックステップのCD
+        execute if entity @s[scores={97.MotionCT=1..}] run scoreboard players remove @s 97.MotionCT 1
+
+    # MotionCountが一定以上でバックステップ
+        execute if entity @s[scores={97.MotionCount=60..}] run function asset:mob/0331.aurora_sorcerer/tick/backstep/
 
 # 足場生成関連
     # 足場生成不可Tickを制御
@@ -25,7 +29,6 @@
 
 # スコア制御
     scoreboard players add @s General.Mob.Tick 1
-    execute if entity @s[scores={97.MotionCT=1..}] run scoreboard players remove @s 97.MotionCT 1
 
 # ノクバ耐性を最大にする
     execute if entity @s[scores={General.Mob.Tick=0}] run attribute @s generic.knockback_resistance base set 10

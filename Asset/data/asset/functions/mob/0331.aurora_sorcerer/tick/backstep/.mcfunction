@@ -1,4 +1,4 @@
-#> asset:mob/0331.aurora_sorcerer/tick/backstep
+#> asset:mob/0331.aurora_sorcerer/tick/backstep/
 #
 # バックステップする
 #
