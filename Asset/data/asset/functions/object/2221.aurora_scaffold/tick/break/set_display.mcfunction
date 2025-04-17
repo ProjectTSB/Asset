@@ -14,5 +14,3 @@
     execute unless data storage asset:context this.CheckBreak{7:true} positioned ~-1 ~ ~-1 summon item_display run function asset:object/2221.aurora_scaffold/tick/break/display_init
     execute unless data storage asset:context this.CheckBreak{8:true} positioned ~ ~ ~1 summon item_display run function asset:object/2221.aurora_scaffold/tick/break/display_init
     execute unless data storage asset:context this.CheckBreak{9:true} positioned ~ ~ ~-1 summon item_display run function asset:object/2221.aurora_scaffold/tick/break/display_init
-
-say b
