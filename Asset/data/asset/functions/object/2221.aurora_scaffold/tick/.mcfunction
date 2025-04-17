@@ -5,7 +5,7 @@
 # @within asset:object/alias/2221/tick
 
 # vfx
-    execute if predicate lib:random_pass_per/10 run particle dust_color_transition 0.000 1.000 0.886 0.7 0 0.235 1 ~ ~ ~ 0.4 0.4 0.4 0 1 normal @a
+    execute if predicate lib:random_pass_per/10 run particle dust_color_transition 0.000 1.000 0.886 0.7 0 0.235 1 ~ ~ ~ 1.4 0.4 1.4 0 5 normal @a
 
 # Tick
     scoreboard players remove @s General.Object.Tick 1
