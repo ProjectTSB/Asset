@@ -16,7 +16,7 @@
     execute as @a if score @s UserID = $MS.OwnerID Temporary run tag @s add MS.Owner
 
 # 1発目ダメージデータ
-    execute if score $MS.AttackLevel Temporary matches 0.. run data modify storage api: Argument.Damage set value 100f
+    execute if score $MS.AttackLevel Temporary matches 0.. run data modify storage api: Argument.Damage set value 130f
     execute if score $MS.AttackLevel Temporary matches 0.. run data modify storage api: Argument.AttackType set value "Magic"
     execute if score $MS.AttackLevel Temporary matches 0.. run data modify storage api: Argument.ElementType set value "Fire"
     execute if score $MS.AttackLevel Temporary matches 0.. run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal

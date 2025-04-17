@@ -13,7 +13,7 @@
     execute at @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1282.ice_axe/trigger/vfx
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 200..250
+    execute store result storage api: Argument.Damage float 1 run random value 220..270
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

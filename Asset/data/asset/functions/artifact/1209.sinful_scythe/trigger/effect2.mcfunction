@@ -7,7 +7,7 @@
 
 # エフェクト付与 単体のときはデバフの威力が下がる
     data modify storage api: Argument.ID set value 319
-    data modify storage api: Argument.FieldOverride.Damage set value 100
+    data modify storage api: Argument.FieldOverride.Damage set value 150
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] run function api:entity/mob/effect/give

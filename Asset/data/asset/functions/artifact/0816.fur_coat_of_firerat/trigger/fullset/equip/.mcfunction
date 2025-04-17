@@ -10,7 +10,7 @@
 
 # 火耐性
     data modify storage api: Argument.UUID set value [I;1,1,816,0]
-    data modify storage api: Argument.Amount set value 0.2
+    data modify storage api: Argument.Amount set value 0.15
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/fire/add
 # 水耐性
@@ -20,12 +20,12 @@
     function api:modifier/defense/water/add
 # 物理耐性
     data modify storage api: Argument.UUID set value [I;1,1,816,0]
-    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Amount set value 0.20
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/physical/add
 # 落下耐性
     data modify storage api: Argument.UUID set value [I;1,1,816,0]
-    data modify storage api: Argument.Amount set value 0.15
+    data modify storage api: Argument.Amount set value 0.25
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/fall_resistance/add
 
