@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・レッグフレーム","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"text":"しゃがむことで機能が強化される。"}','{"text":"また、他部位を装備すると落下の衝撃を軽減する。"}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"text":"しゃがむことで機能が強化される。"}','{"translate":"また、他部位を装備すると落下の衝撃を %s 軽減する。","with":[{"text":"10%","color":"aqua"}]}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
