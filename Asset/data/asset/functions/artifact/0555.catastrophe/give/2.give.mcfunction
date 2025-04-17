@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+2","color":"white"}','{"text":"最大体力-5%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]','{"text":"計2000ダメージ与える、または被ダメージ時","color":"white"}','{"text":"対象または攻撃者に無属性ダメージ80を与え","color":"white"}','{"text":"攻撃+6%、耐性-2%を10秒間得る(最大10スタック)","color":"white"}','[{"text":"破滅の騎士のための装備","color":"gray"}]','[{"text":"傷付く度に、快楽を求めた","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+2","color":"white"}','{"text":"最大体力-5%","color":"dark_red"}','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]','{"text":"計2000ダメージ与える、または被ダメージ時","color":"white"}','{"text":"対象または攻撃者に無属性ダメージ80を与え","color":"white"}','{"text":"攻撃+4%、耐性-2%を10秒間得る(最大10スタック)","color":"white"}','[{"text":"破滅の騎士のための装備","color":"gray"}]','[{"text":"傷付く度に、快楽を求めた","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
