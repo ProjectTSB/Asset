@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:rotten_flesh"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"謎肉","color":"light_purple"}]'
+    data modify storage asset:artifact Name set value '[{"text":"ナゾの肉","color":"light_purple"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"食べると体力を66.6回復し"}','{"text":"攻撃+20%とMP回復量+50%を30秒間得るが"}','{"text":"その間は回復を拒むようになる"}','{"text":"また、効果が終わった時には反動を受ける"}','{"text":"謎に包まれた肉。なんの動物かもわからない。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
