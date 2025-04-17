@@ -8,4 +8,4 @@
     data modify storage api: Argument.ID set value 1145
     execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 160..205
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute positioned ^ ^ ^1 positioned ~ ~-0.5 ~ run function api:object/summon
+    execute positioned ^ ^ ^ positioned ~ ~-0.5 ~ run function api:object/summon
