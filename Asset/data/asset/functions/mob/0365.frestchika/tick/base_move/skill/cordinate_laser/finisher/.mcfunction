@@ -22,7 +22,13 @@
     # 雷属性
         data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
-        function api:damage/modifier
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..4] run function api:damage/
+        data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+        function api:damage/modifier_manual
+        tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add Hit
+        execute positioned ~-1.5 ~0 ~-1.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=2,dy=19,dz=2] add Hit
+        execute as @a[tag=Hit,distance=..64] run function api:damage/
 # リセット
     function api:damage/reset
+    tag @a[tag=Hit,distance=..64] remove Hit
+# キル
+    kill @s
