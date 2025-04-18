@@ -58,7 +58,6 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:64,AttributeModifiers:[{UUID:[I;1,1,558,6],AttributeName:"generic.armor",Name:"armor",Amount:3,Operation:0,Slot:head}]}
-
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,AttributeModifiers:[{UUID:[I;1,1,558,6],AttributeName:"generic.armor",Name:"armor",Amount:3,Operation:0,Slot:head}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:558"}}
 # 神器の入手用function
     function asset:artifact/common/give
