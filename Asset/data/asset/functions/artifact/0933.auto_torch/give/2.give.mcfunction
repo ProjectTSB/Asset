@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"オートトーチVer1.2"}'
+    data modify storage asset:artifact Name set value '{"text":"オートトーチ ver2.0","color":"#08B0FF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"暗い場所で自動で松明を置くぞ！"}','{"text":"めんどくさい作業からはおさらば！"}','{"text":"A型の人をより破壊するためのアップデート","color":"gray","strikethrough":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"暗所に自動で松明を置くぞ！"}','{"text":"面倒な作業からおさらば！"}','{"text":"⚠A型発狂注意","color":"#222C42"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.torch"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
