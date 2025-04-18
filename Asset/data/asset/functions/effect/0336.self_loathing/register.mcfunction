@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"自己嫌悪","color":"#000001"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度が上昇し、MP回復速度が上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"移動速度が低下し、MP回復量が低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 300
 # スタック (int) (default = API || 1)
