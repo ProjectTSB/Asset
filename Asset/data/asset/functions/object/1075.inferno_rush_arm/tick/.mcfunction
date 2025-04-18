@@ -13,7 +13,7 @@
 
 # プレイヤーを紐づけ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run tag @s add 1075.Owner
+    execute as @a if score @s UserID = $OwnerID Temporary run tag @s add 1075.Owner
 
 # プレイヤーに追尾
     execute at @p[tag=1075.Owner] positioned ~ ~1.3 ~ positioned ^ ^ ^1.6 run tp @s ~ ~ ~ ~ ~
