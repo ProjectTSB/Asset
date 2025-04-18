@@ -9,7 +9,7 @@
     tag @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 5f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Catch
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

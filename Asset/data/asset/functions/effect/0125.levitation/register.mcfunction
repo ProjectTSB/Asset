@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"浮遊"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"浮遊する"}'
+    data modify storage asset:effect Description set value ['{"text":"浮遊する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)

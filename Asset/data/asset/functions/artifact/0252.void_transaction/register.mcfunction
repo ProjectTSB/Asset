@@ -4,5 +4,4 @@
 #
 # @within tag/function asset:artifact/register
 
-# 一時的な封印指定
-# data modify storage asset:artifact RarityRegistry[3] append value [252]
+data modify storage asset:artifact RarityRegistry[3] append value [252]
