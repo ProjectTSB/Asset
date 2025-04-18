@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アポカリプス","color":"#ad0000"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"事前に長押しすることで最大8段階のチャージを行い","color":"white"}','{"text":"チャージ段階に応じてダメージが上昇する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"事前に長押しすることで最大8段階のチャージを行い","color":"white"}','{"text":"チャージ段階に応じてダメージが上昇する","color":"white"}','{"text":"散逸せし言葉の欠片","color":"gray"}','{"text":"白雲、紅血、我が手に集い","color":"gray"}','{"text":"黒炎、灰燼、奏でるは終焉の詩","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
