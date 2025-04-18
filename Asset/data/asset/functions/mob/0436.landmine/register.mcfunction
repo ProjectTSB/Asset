@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"空中散布地雷"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"踏むと爆発し、足に負傷を負う。極力踏まないほうがいい。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"空中散布式の対人地雷。","color":"white"}','{"text":"着地後に信管が作動し起爆可能になる。","color":"white"}','{"text":"領域への侵入拒否を目的とするため威力は必要最低限になっている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
