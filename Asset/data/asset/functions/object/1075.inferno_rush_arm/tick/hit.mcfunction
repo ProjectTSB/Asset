@@ -16,7 +16,7 @@
 
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 25..35
+    execute store result storage api: Argument.Damage float 1 run function asset:object/1075.inferno_rush_arm/tick/get_damage.m
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @p[tag=1075.Owner] run function api:damage/modifier
