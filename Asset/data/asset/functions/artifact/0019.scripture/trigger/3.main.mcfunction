@@ -9,21 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 演出
-    execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 15 run function asset:artifact/0019.scripture/trigger/vfx
-    execute rotated ~ 0 anchored eyes positioned ^ ^-0.5 ^ rotated ~90 -15 run function asset:artifact/0019.scripture/trigger/vfx
-    playsound block.bell.resonate player @a ~ ~ ~ 1 2
-    playsound ogg:random.levelup player @a ~ ~ ~ 1 1.8
-
-# 体力回復
-    data modify storage api: Argument.Heal set value 20f
-    function api:heal/modifier
-    function api:heal/
-    function api:heal/reset
-
-# デバフを1つ解除(解除Lv2)
-    data modify storage api: Argument.ClearLv set value 2
-    data modify storage api: Argument.ClearType set value "bad"
-    data modify storage api: Argument.ClearCount set value 1
-    function api:entity/mob/effect/remove/from_level
-    function api:entity/mob/effect/reset
+# 聖典ギャンブル(ID:324)を付与
+    data modify storage api: Argument.FieldOverride.Heal set value 15
+    data modify storage api: Argument.ID set value 324
+    function api:entity/mob/effect/give
