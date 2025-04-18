@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 258
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text:":"精霊の旋律","color":"#B0FFD7"}'
+    data modify storage asset:effect Name set value '{"text":"精霊の旋律","color":"#B0FFD7"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text:":"継続的に周囲のプレイヤーの体力を回復する","color":"white"}']
 # 効果時間 (int) (default = API || error)

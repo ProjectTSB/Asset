@@ -14,7 +14,7 @@
     execute if entity @s[scores={General.Mob.Tick=1..9}] run playsound block.beacon.activate hostile @a ~ ~ ~ 0.7 1.9 0
 
 # 召喚
-    execute if entity @s[scores={General.Mob.Tick=10}] anchored eyes facing entity @p[gamemode=!spectator,distance=..32] eyes positioned ^ ^ ^0.4 summon marker run function asset:mob/0331.aurora_sorcerer/tick/summon
+    execute if entity @s[scores={General.Mob.Tick=10}] anchored eyes facing entity @p[gamemode=!spectator,distance=..32] eyes positioned ^ ^ ^0.4 run function asset:mob/0331.aurora_sorcerer/tick/summon
 
 # リセット
     execute if entity @s[scores={General.Mob.Tick=25..}] run function asset:mob/0331.aurora_sorcerer/tick/reset

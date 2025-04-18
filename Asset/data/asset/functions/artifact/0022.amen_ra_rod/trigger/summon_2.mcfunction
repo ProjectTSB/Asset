@@ -7,4 +7,4 @@
 data modify storage api: Argument.ID set value 1103
 # data modify storage api: Argument.FieldOverride.Track set value false
 data modify storage api: Argument.FieldOverride.Duration set value 200
-function api:object/summon
+execute at @s anchored eyes positioned ^ ^ ^ run function api:object/summon
