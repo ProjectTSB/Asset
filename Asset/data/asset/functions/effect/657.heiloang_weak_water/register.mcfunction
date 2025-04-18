@@ -12,7 +12,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"氷の浸食"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"黒龍の呪いが、氷への守りを妨げる"}']
+    data modify storage asset:effect Description set value ['{"text":"黒龍の呪いが、氷の破滅を誘う"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
