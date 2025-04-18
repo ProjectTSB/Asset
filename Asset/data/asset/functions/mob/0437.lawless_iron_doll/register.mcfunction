@@ -21,7 +21,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"無法の鉄巨人","color":"white"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"既存のルールに縛られない、巨大な鉄製の人形。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"既存のルールに縛られない、丈夫な人形。","color":"white"}','{"text":"広範囲に強烈な攻撃を放つが、","color":"white"}','{"text":"一部の攻撃は飛び越えることでも回避ができそうだ。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 175000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
