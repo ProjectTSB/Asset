@@ -19,21 +19,15 @@
     execute at @p[tag=1075.Owner] positioned ~ ~1.3 ~ positioned ^ ^ ^1.6 run tp @s ~ ~ ~ ~ ~
 
 # ntickおきに実行するやつ
-# 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-# ntickおきに実行
     scoreboard players operation $Interval Temporary %= $3 Const
     execute if score $Interval Temporary matches 0 at @s positioned ^ ^ ^0.4 run function asset:object/1075.inferno_rush_arm/tick/hit
-# リセット
     scoreboard players reset $Interval
 
 # ntickおきに実行するやつ
-# 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-# ntickおきに実行
     scoreboard players operation $Interval Temporary %= $2 Const
     execute if score $Interval Temporary matches 0 run playsound entity.player.attack.nodamage neutral @a ~ ~ ~ 1 2
-# リセット
     scoreboard players reset $Interval
 
 # タグ消す
