@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f2e5"},{"text":"ロ","color":"#00e5e8"},{"text":"ラ","color":"#00d8eb"},{"text":"ソ","color":"#00cbee"},{"text":"ー","color":"#00bef2"},{"text":"サ","color":"#00b1f5"},{"text":"ラ","color":"#00a4f8"},{"text":"ー","color":"#00a2f9"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"オーロラの魔法使い。","color":"white"}','{"text":"バックステップをしながらオーロラ弾を放つ。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"オーロラの魔法使い。","color":"white"}','{"text":"バックステップをしながらオーロラ弾を放つ。","color":"white"}','{"text":"落ちそうになっても足場を生成してくる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20159}}
