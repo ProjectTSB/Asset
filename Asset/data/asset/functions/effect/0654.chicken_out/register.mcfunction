@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"臆病風"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"このままだと、何か良くないことが起こりそうだ","color":"white"}','{"text":正々堂々戦うしかないだろう","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"このままだと、何か良くないことが起こりそうだ","color":"white"}','{"text":"正々堂々戦うしかないだろう","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # 最大スタック (int) (default = 2147483647)

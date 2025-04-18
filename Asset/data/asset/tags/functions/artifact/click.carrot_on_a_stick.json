@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1221.hardened_leather_armor/trigger/1.trigger",
+        "asset:artifact/1222.hardened_iron_armor/trigger/1.trigger",
+        "asset:artifact/1223.hardened_golden_armor/trigger/1.trigger",
+        "asset:artifact/1224.hardened_diamond_armor/trigger/1.trigger",
+        "asset:artifact/1225.hardened_netherite_armor/trigger/1.trigger",
+        "asset:artifact/1220.sacred_hardener/trigger/1.trigger",
         "asset:artifact/2001.staff_of_the_willless/trigger/1.trigger",
         "asset:artifact/1285.torch_bag/trigger/1.trigger",
         "asset:artifact/1284.quiver/trigger/1.trigger",
