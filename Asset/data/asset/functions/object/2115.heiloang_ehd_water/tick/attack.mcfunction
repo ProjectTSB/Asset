@@ -10,7 +10,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..25] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..25] run function asset:object/2115.heiloang_ehd_water/tick/attack_player
     function api:damage/reset
 
 # 演出
@@ -26,7 +26,7 @@
     data modify storage api: Argument.ID set value 2127
     data modify storage api: Argument.FieldOverride.OverrideScale set value [22f,22f,22f]
     data modify storage api: Argument.FieldOverride.OverrideKillTick set value 24
-    function api:object/summon
+    execute positioned ^ ^1.1 ^ run function api:object/summon
     data modify storage api: Argument.ID set value 2127
     execute rotated ~ ~ positioned ^ ^ ^8 run function api:object/summon
     data modify storage api: Argument.ID set value 2127
