@@ -11,3 +11,6 @@
     playsound minecraft:block.amethyst_block.break hostile @a ~ ~ ~ 1 0.5
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 0.7
     particle minecraft:end_rod ~ ~1 ~ 0.2 0.5 0.2 0.1 25
+
+# super
+    function asset:mob/super.death
