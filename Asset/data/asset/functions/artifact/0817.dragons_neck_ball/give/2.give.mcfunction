@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"龍の頸の玉","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"龍の首元にある珠"}','{"text":"竹取の宝具の一つで水への耐性を与えてくれる"}','{"text":"竹取の宝具を全て装備した時各部位は以下の効果を与える","color":"gray"}','{"text":"頭: 水耐性+15%","color":"gray"}','{"text":"胴: 炎耐性+20%","color":"gray"}','{"text":"脚: 物理耐性+10%","color":"gray"}','{"text":"靴: 落下耐性+15%","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"龍の首元にある珠"}','{"text":"竹取の宝具の一つで水への耐性を与えてくれる"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -48,6 +48,8 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:255,Visible:true}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
