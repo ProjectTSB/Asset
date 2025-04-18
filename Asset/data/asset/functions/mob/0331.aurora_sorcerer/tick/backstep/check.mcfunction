@@ -11,7 +11,7 @@
     execute unless entity @p[gamemode=!spectator,distance=..5] run return fail
 
 # 足場Objectが近くにいるなら失敗
-    execute align xyz positioned ~ ~-3 ~ if entity @e[type=item_display,scores={ObjectID=2221},dx=2,dy=2,dz=2] run return fail
+    execute align xyz positioned ~-3 ~-3 ~-3 if entity @e[type=item_display,scores={ObjectID=2221},dx=2,dy=2,dz=2] run return fail
 
 # 成功
     return 1
