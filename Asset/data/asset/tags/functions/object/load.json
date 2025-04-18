@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:object/2187.heiloang_ff_main/load",
+        "asset:object/2182.heiloang_thunderball/load",
         "asset:object/2221.aurora_scaffold/load",
         "asset:object/0002.duplicate_hit_protection_mixin/load",
         "asset:object/2241.lawless_slashshot/load",

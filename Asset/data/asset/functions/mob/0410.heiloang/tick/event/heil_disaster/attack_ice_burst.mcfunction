@@ -8,7 +8,7 @@
     data modify storage api: Argument.ID set value 2125
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 45.0f
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.IceBurst
     function api:object/summon
 
 # 終了
