@@ -29,5 +29,3 @@
 # リセット
     function api:damage/reset
     tag @a[tag=Hit,distance=..64] remove Hit
-# キル
-    kill @s
