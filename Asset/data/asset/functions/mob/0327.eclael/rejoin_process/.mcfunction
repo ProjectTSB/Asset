@@ -3,3 +3,6 @@
 # 使い方は必ずwikiを見ること
 #
 # @within tag/function asset:rejoin
+
+# タグ消去
+    tag @a remove 93.Skill.IaiMove.Hit

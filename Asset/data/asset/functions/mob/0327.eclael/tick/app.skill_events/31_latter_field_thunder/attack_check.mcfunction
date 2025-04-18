@@ -11,4 +11,4 @@
     scoreboard players reset $Temp Temporary
 
 # 攻撃
-    execute at @a[distance=..40] run function asset:mob/0327.eclael/tick/app.skill_events/31_latter_field_thunder/attack
+    execute at @a[tag=!PlayerShouldInvulnerable,distance=..40] run function asset:mob/0327.eclael/tick/app.skill_events/31_latter_field_thunder/attack

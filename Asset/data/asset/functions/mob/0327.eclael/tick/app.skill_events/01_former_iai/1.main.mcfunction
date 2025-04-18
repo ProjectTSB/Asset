@@ -44,8 +44,8 @@
     execute if score @s 93.AnimationTimer matches 61..67 run tag @s add 93.Temp.Me
     execute if score @s 93.AnimationTimer matches 61..67 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
 # 移動
-    execute if score @s 93.AnimationTimer matches 61..68 at @s unless entity @a[distance=..3] positioned ^ ^ ^1.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
-    execute if score @s 93.AnimationTimer matches 69..70 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.3 run function asset:mob/0327.eclael/tick/app.general/2.teleport
+    execute if score @s 93.AnimationTimer matches 61..68 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..3] positioned ^ ^ ^1.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
+    execute if score @s 93.AnimationTimer matches 69..70 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.3 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 71..75 at @s positioned ^ ^ ^0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 81..85 at @s positioned ^ ^ ^-0.05 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 61..70 run function asset:mob/0327.eclael/tick/app.general/15.update_altitude

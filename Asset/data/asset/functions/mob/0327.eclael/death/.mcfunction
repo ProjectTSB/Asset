@@ -15,7 +15,7 @@
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] remove 93.ModelRoot
 
-# 一定以上離れている場合、忠臣に戻る
+# 一定以上離れている場合、中心に戻る
     execute unless entity @e[type=marker,tag=93.Marker.SpawnPoint,distance=20..] positioned as @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1] run tp @s ~ ~ ~
 
 # 中心点削除

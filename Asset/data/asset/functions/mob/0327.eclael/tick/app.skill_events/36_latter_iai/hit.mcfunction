@@ -17,8 +17,8 @@
     tag @a[tag=DXYZ] remove DXYZ
 
 # 移動速度低下
-    data modify storage api: Argument.ID set value 17
-    data modify storage api: Argument.Stack set value 126
+    data modify storage api: Argument.ID set value 67
+    data modify storage api: Argument.Stack set value 20
     data modify storage api: Argument.Duration set value 25
     execute as @a[tag=93.Skill.IaiMove.Hit] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

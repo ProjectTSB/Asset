@@ -5,7 +5,7 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack
 
 # 攻撃位置の偏差
-    execute as @p run function api:player_vector/get
+    execute as @p[tag=!PlayerShouldInvulnerable] run function api:player_vector/get
     function lib:array/session/open
     data modify storage lib: Array set from storage api: Return.Vector
     data modify storage lib: Mul set value 25

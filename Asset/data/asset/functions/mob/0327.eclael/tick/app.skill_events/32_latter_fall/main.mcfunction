@@ -10,7 +10,7 @@
         execute if score @s 93.AnimationTimer matches 1..15 run tag @s add 93.Temp.Me
         execute if score @s 93.AnimationTimer matches 1..15 as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] run function asset:mob/0327.eclael/tick/app.general/1.rotate
     # プレイヤー位置に移動
-        execute if score @s 93.AnimationTimer matches 29 at @r[distance=..40] run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/move_to_player
+        execute if score @s 93.AnimationTimer matches 29 at @r[tag=!PlayerShouldInvulnerable,distance=..40] run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/move_to_player
         execute if score @s 93.AnimationTimer matches 59 run tp @s ~ ~-3 ~
      # 演出
         execute if score @s 93.AnimationTimer matches 10 run particle end_rod ~ ~6 ~ 0.3 10 0.3 0.1 50
