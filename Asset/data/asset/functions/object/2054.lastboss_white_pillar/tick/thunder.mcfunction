@@ -25,6 +25,7 @@
         data modify storage api: Argument.ElementType set value "None"
     # ダメージ
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+        function api:damage/modifier_manual
         tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add Hit
         execute positioned ~-1 ~0 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=19,dz=1] add Hit
         execute as @a[tag=Hit,distance=..64] run function api:damage/
