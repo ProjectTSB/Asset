@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ブレイブロッド","color":"light_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"ブレイブロッド","color":"#26baff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"魔法の光線を前方に連続で放つ。","color":"white"}]','[{"text":"コンボフィニッシュの光線は、射程が少し伸びる。","color":"white"}]','[{"text":"\\"勇気の魔法\\"","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
