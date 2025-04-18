@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"リアクティブアーマー"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ''
+    data modify storage asset:effect Description set value []
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 1
 # スタック (int) (default = API || 1)

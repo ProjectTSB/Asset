@@ -10,6 +10,7 @@
 # 汎用詠唱
     execute if entity @s[tag=aj.heiloang_aj.animation.2_1_common_casting.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/2_1_common_casting
     execute if entity @s[tag=aj.heiloang_aj.animation.2_2_common_invoke.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/2_2_common_invoke
+    execute if entity @s[tag=aj.heiloang_aj.animation.2_3_common_order.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/2_3_common_order
 
 # ヘルファイア
     execute if entity @s[tag=aj.heiloang_aj.animation.3_0_hellfire_start.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/3_0_hellfire_start
@@ -24,6 +25,13 @@
 
 # なぎはらい火炎放射
     execute if entity @s[tag=aj.heiloang_aj.animation.6_sweep_breath.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/6_sweep_breath
+
+# 移動
+    execute if entity @s[tag=aj.heiloang_aj.animation.12_0_flymove_start.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/12_0_flymove_start
+    execute if entity @s[tag=aj.heiloang_aj.animation.12_1_flymove_end.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/12_1_flymove_end
+
+# テンペストダイブ
+    execute if entity @s[tag=aj.heiloang_aj.animation.7_1_dive_start.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/7_1_dive_start
 
 # フレア
     execute if entity @s[tag=aj.heiloang_aj.animation.8_1_move_flare.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/8_1_move_flare
@@ -41,3 +49,6 @@
 # ヘイルディザスター
     execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster_cast.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster_cast
     execute if entity @s[tag=aj.heiloang_aj.animation.99_disaster.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/99_disaster
+
+# 召喚
+    execute if entity @s[tag=aj.heiloang_aj.animation.13_summon.playing] run function asset:mob/0410.heiloang/tick/animated_java/tick/13_summon

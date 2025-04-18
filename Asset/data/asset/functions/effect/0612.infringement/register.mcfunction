@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"侵害"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"被ダメージが大きく上昇し、移動不可になる"}'
+    data modify storage asset:effect Description set value ['{"text":"被ダメージが大きく上昇し、移動不可になる"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 60
 # スタック (int) (default = API || 1)
