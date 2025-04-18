@@ -6,8 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:artifact/0985.ark_of_the_sanctuary/trigger/**
-    scoreboard objectives add RD.Time dummy
-    scoreboard objectives add RD.WaitingTime dummy
-    scoreboard objectives add RD.Turn dummy
-    scoreboard objectives add RD.SwordTime dummy
-    scoreboard objectives add RD.SwordUserID dummy
+    scoreboard objectives add RD.Combo dummy
+    scoreboard objectives add RD.BurstCount dummy

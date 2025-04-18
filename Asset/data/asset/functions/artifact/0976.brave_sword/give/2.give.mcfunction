@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ブレイブソード","color":"light_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"ブレイブソード","color":"#26baff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"複数の敵を巻き込む斬撃を放つ。"}','{"text":"コンボフィニッシュでは、敵を貫通する衝撃波を放つ。"}','{"text":"\\"勇気の刃\\"","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
