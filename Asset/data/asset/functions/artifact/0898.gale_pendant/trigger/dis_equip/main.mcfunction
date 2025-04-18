@@ -4,5 +4,5 @@
 #
 # @within function asset:artifact/0898.gale_pendant/trigger/dis_equip/
 
-# バフを付与
-    execute unless entity @s[tag=!DevPrivilege,predicate=!player_manager:is_believe/flora,predicate=!player_manager:is_believe/nyaptov] run function asset:artifact/0898.gale_pendant/trigger/buff
+# 演出
+    playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8

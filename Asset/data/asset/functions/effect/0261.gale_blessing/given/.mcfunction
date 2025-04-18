@@ -5,4 +5,4 @@
 # @within function asset:effect/0261.gale_blessing/_/given
 
 # 補正を付与する
-    function asset:effect/0261.gale_blessing/modfier/add
+    execute unless predicate lib:in_battle run function asset:effect/0261.gale_blessing/modfier/add

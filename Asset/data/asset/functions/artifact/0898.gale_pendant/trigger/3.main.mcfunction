@@ -7,11 +7,8 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
 
-# ここから先は神器側の効果の処理を書く
-
-# VFX
-    playsound block.beacon.activate player @a ~ ~ ~ 1 1.3
-    particle dust 0.2 0.9 10000000 0.7 ~ ~1 ~ 0.5 0.8 0.5 1 100
-
-# バフを付与
-    function asset:artifact/0898.gale_pendant/trigger/buff
+# 演出
+    playsound ogg:block.smithing_table.smithing_table2 player @a ~ ~ ~ 1 1.3
+    playsound minecraft:item.armor.equip_iron player @a ~ ~ ~ 1 1
+    particle minecraft:dust 1 0.451 0 1 ~ ~1 ~ 0.2 0.2 0.2 0 20
+    particle crit ~ ~1 ~ 0 0 0 0.5 10
