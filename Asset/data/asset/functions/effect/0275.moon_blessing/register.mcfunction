@@ -1,15 +1,15 @@
-#> asset:effect/275.moon_blessing/register
+#> asset:effect/0275.moon_blessing/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/275.moon_blessing/_/register
+# @within function asset:effect/0275.moon_blessing/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 275
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"月のお守り","color":"#FFFFAA"}'
+    data modify storage asset:effect Name set value '{"text":"月の祝福","color":"#FFFFAA"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"自動回復するバリアを得る"}']
 # 効果時間 (int) (default = API || error)

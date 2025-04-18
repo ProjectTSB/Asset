@@ -7,3 +7,6 @@
 # 演出
     playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 2
     playsound minecraft:entity.breeze.slide hostile @a ~ ~ ~ 1 2
+
+# super
+    function asset:mob/super.hurt
