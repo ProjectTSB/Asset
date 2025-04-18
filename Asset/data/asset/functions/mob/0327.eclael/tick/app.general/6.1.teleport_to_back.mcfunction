@@ -12,4 +12,4 @@
     execute positioned ^ ^ ^-5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute positioned ^ ^ ^-6 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute positioned ^ ^ ^-7 run function asset:mob/0327.eclael/tick/app.general/2.teleport
-    execute at @s facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute at @s facing entity @p[distance=..80] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
