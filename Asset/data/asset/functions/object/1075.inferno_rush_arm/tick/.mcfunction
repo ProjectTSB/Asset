@@ -23,7 +23,7 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
 # ntickおきに実行
     scoreboard players operation $Interval Temporary %= $3 Const
-    execute if score $Interval Temporary matches 0 at @s if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function asset:object/1075.inferno_rush_arm/tick/hit
+    execute if score $Interval Temporary matches 0 at @s positioned ^ ^ ^0.4 run function asset:object/1075.inferno_rush_arm/tick/hit
 # リセット
     scoreboard players reset $Interval
 
