@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ブレイブブック","color":"light_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"ブレイブブック","color":"#26baff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"付近の敵に近接攻撃を行う騎士を召喚する。","color":"white"}','{"text":"\\"勇気の物語\\"","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)

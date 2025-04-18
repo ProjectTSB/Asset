@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"金装備セット","italic":false}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"エンチャント不可の金装備を装着する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"金装備を装着する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -43,7 +43,7 @@
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 150
+    # data modify storage asset:artifact MPRequire set value 150
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
