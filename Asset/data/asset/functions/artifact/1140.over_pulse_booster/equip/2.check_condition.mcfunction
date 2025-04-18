@@ -5,7 +5,6 @@
 # @within function asset:artifact/1140.over_pulse_booster/equip/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {MPRequire:true,LocalCooldown:true}
     function asset:artifact/common/check_condition/feet
 # 他にアイテム等確認する場合はここに書く
 

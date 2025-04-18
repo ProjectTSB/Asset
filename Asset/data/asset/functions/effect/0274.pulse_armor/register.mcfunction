@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"パルスアーマー","color":"#44bbff"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"すべて装備した時、最大稼動する。"}','{"text":"最大稼働時、攻撃対象とその周囲の敵に追撃を与える。"}']
+    data modify storage asset:effect Description set value ['{"text":"すべて装備した時、最大稼動する。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
@@ -29,7 +29,7 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 4
+    data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
     data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)

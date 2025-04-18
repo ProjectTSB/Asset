@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・レッグフレーム","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"text":"しゃがむことで機能が強化される。"}','{"translate":"また、他部位を装備すると落下の衝撃を %s 軽減する。","with":[{"text":"10%","color":"aqua"}]}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"translate":"また、他部位を装備すると落下の衝撃を %s 軽減する。","with":[{"text":"15%","color":"aqua"}]}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -23,39 +23,39 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "legs"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+    data modify storage asset:artifact Trigger set value "passive"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"最大稼働時"}'
+    # data modify storage asset:artifact Condition set value '{"text":"最大稼働時"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [300-1000]
+    # data modify storage asset:artifact AttackInfo.Damage set value [300-1000]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
+    # data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value [Thunder]
+    # data modify storage asset:artifact AttackInfo.ElementType set value [Thunder]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.IsRangeAttack set value every
+    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value every
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 3
+    # data modify storage asset:artifact AttackInfo.AttackRange set value 3
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 20
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 60
+    # data modify storage asset:artifact LocalCooldown set value 10
 # 種別クールダウン (Compound) (オプション)
     # data modify storage asset:artifact TypeCooldown set value {Type:"",Value:0}
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisabledFlag.Check.CDMessage set value true
+    # data modify storage asset:artifact DisabledFlag.Check.CDMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisabledFlag.Check.MPMessage set value true
+    # data modify storage asset:artifact DisabledFlag.Check.MPMessage set value true
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisabledFlag.Use.BreakSound set value
 # 装備時効果 (int) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:274,Visible:true},{ID:338,Visible:false}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:274,Visible:false},{ID:338,Visible:false}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:0.075d,Operation:"multiply_base"}
