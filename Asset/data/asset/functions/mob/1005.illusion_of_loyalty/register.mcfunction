@@ -16,4 +16,4 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"とある天使の意志なき幻影","color":"white"}']
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 50000d
+    data modify storage asset:mob Health set value 30000d
