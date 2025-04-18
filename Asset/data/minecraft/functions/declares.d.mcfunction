@@ -25,6 +25,7 @@
     #declare function api:artifact/storage/from_id                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/artifact/storage/from_id.mcfunction#L1
     #declare function api:artifact/storage/from_rarity                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/artifact/storage/from_rarity.mcfunction#L1
     #declare function api:button/create_text_component                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/button/create_text_component.mcfunction#L1
+    #declare function api:button/disable                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/button/disable.mcfunction#L1
     #declare function api:button/send                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/button/send.mcfunction#L1
     #declare function api:common/arguments/pop                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/common/arguments/pop.mcfunction#L1
     #declare function api:common/arguments/stash                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/api/functions/common/arguments/stash.mcfunction#L1
@@ -249,6 +250,7 @@
     #declare function lib:get_name/                                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/get_name/.mcfunction#L1
     #declare function lib:integer_to_bit_array/                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/integer_to_bit_array/.mcfunction#L1
     #declare function lib:macro/call.m                                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/macro/call.m.mcfunction#L1
+    #declare function lib:macro/get_and_remove.m                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/macro/get_and_remove.m.mcfunction#L1
     #declare function lib:macro/run.m                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/macro/run.m.mcfunction#L1
     #declare function lib:message/artifact/can_not_use_here                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/artifact/can_not_use_here.mcfunction#L1
     #declare function lib:message/artifact/condition_not_met                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/message/artifact/condition_not_met.mcfunction#L1
