@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"雷鳴","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"雷耐性+3% 雷攻撃+4% ","color":"yellow"},{"text":"移動速度+5%","color":"white"}]','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"雷鳴","color":"yellow"}]','{"text":"移動速度+40% 跳躍力上昇1 採掘速度上昇1","color":"white"}','{"text":"近接攻撃時、対象へ物理雷属性ダメージ40を与える","color":"white"}','{"text":"雷鳴が鳴り止むことはない","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"雷耐性+3% 雷攻撃+4% ","color":"yellow"},{"text":"移動速度+5%","color":"white"}]','{"text":""}','[{"text":"セット効果：","color":"white"},{"text":"雷鳴","color":"yellow"}]','{"text":"移動速度+15% 跳躍力上昇1 採掘速度上昇1","color":"white"}','{"text":"近接攻撃時、対象へ物理雷属性ダメージ40を与える","color":"white"}','{"text":"雷鳴が鳴り止むことはない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
