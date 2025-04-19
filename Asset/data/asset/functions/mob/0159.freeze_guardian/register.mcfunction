@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"氷結ノ守護","color":"#B3FCFF"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"氷ノ剣ヲ持ッタ守護者","color":"white"}','{"text":"侵入者ヲ徹底的ニ追イ詰メ、殺ス。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"氷ノ剣ヲ持ッタ守護者","color":"white"}','{"text":"侵入者ヲ徹底的ニ追イ詰メル。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"stick",Count:1b,tag:{CustomModelData:20051}}
