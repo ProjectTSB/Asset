@@ -15,6 +15,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"サフィエル","color":"#a1faf5"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"冷静沈着な双子の片割れ。","color":"white"}','{"text":"銃火器により正確無比に弱点を射抜く。","color":"white"}','{"text":"食べることが好きで甘いものに目が無い。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 100000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

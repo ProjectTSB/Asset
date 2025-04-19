@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"translate":"entity.minecraft.drowned","color":"gray"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"トライデントを持った普通のドラウンド。","color":"white"}','{"text":"普通に痛いので速やかに倒してしまおう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:trident",Count:1b}

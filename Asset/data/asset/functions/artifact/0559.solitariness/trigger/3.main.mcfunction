@@ -4,21 +4,10 @@
 #
 # @within function asset:artifact/0559.solitariness/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
+# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/chest
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        execute at @e[type=#lib:living,tag=Victim] run particle end_rod ~ ~0.5 ~ 0.3 0.5 0.3 0 50 force @a
-    # 効果
-        # ノックバック
-            data modify storage lib: Argument.VectorMagnitude set value 1
-            execute as @e[type=#lib:living,tag=Victim] at @s facing entity @a[tag=this] feet rotated ~180 -15 run function lib:motion/
-            data remove storage lib: Argument
-        # Damage
-            data modify storage lib: Argument set value {Damage:60,AttackType:Physical,ElementType:None}
-            function api:damage/modifier
-            execute as @e[type=#lib:living,tag=Victim] run function api:damage/
 
-    # リセット
-        function api:damage/reset
+# フルセット処理
+    execute if data storage asset:context id.all{head:558,chest:559,legs:560,feet:561} run function asset:artifact/0559.solitariness/trigger/fullset/equip

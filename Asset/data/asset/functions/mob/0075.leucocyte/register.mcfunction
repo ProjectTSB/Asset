@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"白血球","color":"white"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"白血球が異物を攻撃するかのように","color":"white"}','{"text":"この敵はあなたを攻撃し、あなたの防御を脆くするだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b}

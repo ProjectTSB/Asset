@@ -11,6 +11,8 @@
     data modify storage asset:mob Interferable set value True
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ミニガーディアン","color":"white","italic":false}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"ちっさいガーディアン。","color":"white"}','{"text":"小さくても火力は高い。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

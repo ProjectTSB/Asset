@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value 1b
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルバッシャー"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"素早いステップを使いこなすようになったスカルソルジャー。","color":"white"}','{"text":"遠くからは弓を放ちながら接近し、近接戦闘に持ち込まれれば距離を取ろうとする。","color":"white"}','{"text":"鉄の防具も装備して、気分は一級の戦士だ！","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:iron_axe",Count:1b}

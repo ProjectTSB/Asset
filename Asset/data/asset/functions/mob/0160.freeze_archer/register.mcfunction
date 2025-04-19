@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"氷結ノ弓兵","color":"#B3FCFF"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"氷ノ弓デ氷像ヲ作ル弓兵。","color":"white"}','{"text":"アナタハイイ素材ニナルダロウ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b}

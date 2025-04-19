@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"アサット","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"夏毛狼のアサットは弾幕攻撃と分裂する力を持っている。","color":"white"}','{"text":"増えて、増えて、更に増える。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:292}}
