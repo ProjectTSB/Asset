@@ -4,6 +4,10 @@
 #
 # @within asset:mob/alias/437/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_lawless_iron_doll",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 出現座標を記憶する
     summon marker ~ ~ ~ {Tags:["C5.Marker.SpawnPoint","C5.Marker"]}
 
