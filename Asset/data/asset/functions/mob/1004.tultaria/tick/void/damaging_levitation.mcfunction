@@ -11,7 +11,7 @@
 
 # 割合ダメージ
     function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage float 0.02 run data get storage api: Return.MaxHealth 10
+    execute store result storage api: Argument.Damage float 0.30 run data get storage api: Return.MaxHealth 10
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
