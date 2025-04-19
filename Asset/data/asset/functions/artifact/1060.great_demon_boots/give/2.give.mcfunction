@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"豪鬼","color":"#A6A6A6","bold":true},{"text":"の靴","color":"white","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+7.5% 物理耐性+5%","color":"dark_green"}]','[{"text":"魔法攻撃-2.5% 魔法耐性-2.5%","color":"dark_red"}]','[{"text":"朽ち果てた鬼の怨念はそなたの破滅を望む","color":"#A6A6A6","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+10% 物理耐性+5%","color":"dark_green"}]','[{"text":"魔法攻撃-5% 魔法耐性-5%","color":"dark_red"}]','[{"text":"朽ち果てた鬼の怨念はそなたの破滅を望む","color":"#A6A6A6","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
