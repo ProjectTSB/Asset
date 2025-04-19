@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"レーザーアイMk-Ⅱ","color":"green"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"強化されてしまったレーザーアイ。","color":"white"}','{"text":"超高出力のプラズマ光線を放つ。","color":"white"}','{"text":"前に引き続き壁をすり抜ける能力もある。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"強化されてしまったレーザーアイ。","color":"white"}','{"text":"超高出力のプラズマ光線を放つ。","color":"white"}','{"text":"前バージョンに引き続き壁をすり抜ける能力もある。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
