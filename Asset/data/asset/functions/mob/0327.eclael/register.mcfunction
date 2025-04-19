@@ -83,7 +83,7 @@
         # 地面
             data modify storage asset:mob Field.Damage.Tensei set value 55.0f
     # 雷斗星刃・至円・3ヒット
-            data modify storage asset:mob Field.Damage.Circle set value 55.0f
+            data modify storage asset:mob Field.Damage.Circle set value 48.0f
     # 曲射
         # 曲射
             data modify storage asset:mob Field.Damage.UpperLatter set value 62.0f
