@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイディアル","color":"#E6FFF4","underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"最も理想的な装備","color":"#FF78ED"}','{"text":"全ての耐性を持ちあらゆる状況に","color":"#FF78ED"}','{"text":"対応出来る万能な防具","color":"#FF78ED"}','{"text":"全耐性+5%","color":"white"}','{"text":"物理攻撃+2.5% 魔法攻撃+2.5%","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"最も理想的な装備","color":"#FF78ED"}','{"text":"全ての耐性を持ちあらゆる状況に","color":"#FF78ED"}','{"text":"対応出来る万能な防具","color":"#FF78ED"}','{"text":"全耐性+5%","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"attack/physical",Amount:0.025d,Operation:"multiply_base"}]
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"attack/magic",Amount:0.025d,Operation:"multiply_base"}]
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"defense/base",Amount:0.05d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
