@@ -18,7 +18,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"業深き想い"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"罪を背負いし者。","color":"white"}','{"text":"罪人として彼女が与えるもの、それは死である。","color":"white"}','{"text":"被弾時に回復力が低下するので注意。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

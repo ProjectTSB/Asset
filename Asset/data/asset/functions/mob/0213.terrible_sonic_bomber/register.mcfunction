@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"Terrible Sonic Bomber"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"TBD"}']
+    data modify storage asset:mob Lore set value ['{"text":"可変翼を備えた戦闘爆撃機。","color":"white"}','{"text":"各種ミサイルに加えて無誘導爆弾や領域拒否兵器の運用をできる。","color":"white"}','{"text":"近年ではさらにドローンの運用能力を追加されている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

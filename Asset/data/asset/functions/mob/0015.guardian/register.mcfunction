@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"監視者","color":"blue"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"あなたを見つめる目。","color":"white"}','{"text":"悪いことをしなければ問題ない、そう思うかもしれないが、","color":"white"}','{"text":"彼らは最初からあなたを悪として認識している。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

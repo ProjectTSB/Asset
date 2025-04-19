@@ -1,10 +1,17 @@
 {
     "values": [
+        "asset:artifact/1139.over_pulse_legframe/dis_equip/",
+        "asset:artifact/1140.over_pulse_booster/dis_equip/",
+        "asset:artifact/1138.over_pulse_bodyarmor/dis_equip/",
+        "asset:artifact/1137.over_pulse_headgear/dis_equip/",
+        "asset:artifact/0561.solitariness/trigger/dis_equip/",
+        "asset:artifact/0560.solitariness/trigger/dis_equip/",
+        "asset:artifact/0559.solitariness/trigger/dis_equip/",
+        "asset:artifact/0558.solitariness/trigger/dis_equip/",
         "asset:artifact/1279.wing_boots/trigger/dis_equip/",
         "asset:artifact/1125.moon_accessory/trigger/dis_equip/",
         "asset:artifact/0860.angel_wing/trigger/dis_equip/",
         "asset:artifact/0207.life_is_transitory/trigger/dis_equip/",
-        "asset:artifact/0561.solitariness/trigger/dis_equip/",
         "asset:artifact/0991.soul_mate/dis_equip/",
         "asset:artifact/0565.heartland/trigger/dis_equip/",
         "asset:artifact/0564.heartland/trigger/dis_equip/",

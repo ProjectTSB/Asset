@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"憑物の兵","color":"#531E57","italic":true}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"大きな目玉に寄生された兵士。","color":"white"}','{"text":"しかし兵士はまだ自我を保った上で寄生されている。","color":"white"}','{"text":"ほとんど共生状態にあるだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:292}}

@@ -9,11 +9,5 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 最大体力
-    data modify storage api: Argument.UUID set value [I;1,1,561,3]
-    data modify storage api: Argument.Amount set value 4
-    data modify storage api: Argument.Operation set value "add"
-    function api:modifier/max_health/add
-
-# 移動速度
-    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-023100000003 "561.Speed" 0.3 multiply_base
+# フルセット処理
+    execute if data storage asset:context id.all{head:558,chest:559,legs:560,feet:561} run function asset:artifact/0559.solitariness/trigger/fullset/equip

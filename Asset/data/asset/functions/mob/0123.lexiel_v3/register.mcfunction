@@ -20,6 +20,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"レクシエル","color":"white"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"忠誠の天使。愛する主のためなら、その命すら喜んで捧げる。","color":"white"}','{"text":"可憐な見た目とは裏腹に、その戦い方は実に荒々しい。","color":"white"}','{"text":"剣術だけでなく魔法にも長けている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

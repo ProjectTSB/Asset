@@ -7,11 +7,14 @@
 # 自身のクールタイムが1以上でなら失敗
     execute if entity @s[scores={97.MotionCT=1..}] run return fail
 
+# 浮いてたら失敗
+    execute if block ~ ~-0.1 ~ #lib:no_collision_without_fluid run return fail
+
 # 周囲にプレイヤーがいない
     execute unless entity @p[gamemode=!spectator,distance=..5] run return fail
 
 # 足場Objectが近くにいるなら失敗
-    execute align xyz positioned ~-3 ~-3 ~-3 if entity @e[type=item_display,scores={ObjectID=2221},dx=2,dy=2,dz=2] run return fail
+    execute align xyz positioned ~-2 ~-2 ~-2 if entity @e[type=marker,scores={ObjectID=2221},dx=3,dy=3,dz=3] run return fail
 
 # 成功
     return 1
