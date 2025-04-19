@@ -38,54 +38,54 @@
     # 落雷
         data modify storage asset:mob Field.Damage.Thunder set value 45.0f
     # 剣ビーム
-        data modify storage asset:mob Field.Damage.Beam set value 40.0f
+        data modify storage asset:mob Field.Damage.Beam set value 50.0f
     # 居合・2ヒット
         data modify storage asset:mob Field.Damage.Iai set value 47.0f
     # 3連攻撃
-        data modify storage asset:mob Field.Damage.Slash0 set value 40.0f
-        data modify storage asset:mob Field.Damage.Slash1 set value 35.0f
-        data modify storage asset:mob Field.Damage.Slash2 set value 55.0f
+        data modify storage asset:mob Field.Damage.Slash0 set value 50.0f
+        data modify storage asset:mob Field.Damage.Slash1 set value 40.0f
+        data modify storage asset:mob Field.Damage.Slash2 set value 60.0f
     # 射撃
-        data modify storage asset:mob Field.Damage.Shot set value 40.0f
+        data modify storage asset:mob Field.Damage.Shot set value 47.0f
     # 曲射・たくさんヒット
-        data modify storage asset:mob Field.Damage.UpperShot set value 30.0f
+        data modify storage asset:mob Field.Damage.UpperShot set value 37.0f
     # 魔法
-        data modify storage asset:mob Field.Damage.Magic set value 40.0f
+        data modify storage asset:mob Field.Damage.Magic set value 52.0f
 # 後半戦
     # 全体落雷
-        data modify storage asset:mob Field.Damage.FieldThunder set value 55.0f
+        data modify storage asset:mob Field.Damage.FieldThunder set value 58.0f
     # 天泣
         # 落下突き
-            data modify storage asset:mob Field.Damage.Fall0 set value 65.0f
+            data modify storage asset:mob Field.Damage.Fall0 set value 66.0f
         # 回転斬り
-            data modify storage asset:mob Field.Damage.Fall1 set value 62.0f
+            data modify storage asset:mob Field.Damage.Fall1 set value 60.0f
         # 落雷
-            data modify storage asset:mob Field.Damage.Fall2 set value 52.0f
+            data modify storage asset:mob Field.Damage.Fall2 set value 55.0f
     # 移動斬り
         # 直接攻撃
-            data modify storage asset:mob Field.Damage.Move0 set value 40.0f
+            data modify storage asset:mob Field.Damage.Move0 set value 50.0f
         # 移動・3ヒット
-            data modify storage asset:mob Field.Damage.Move1 set value 32.0f
+            data modify storage asset:mob Field.Damage.Move1 set value 35.0f
         # 次元斬
-            data modify storage asset:mob Field.Damage.Move2 set value 50.0f
+            data modify storage asset:mob Field.Damage.Move2 set value 49.0f
         # 雷斗星刃・当流
-            data modify storage asset:mob Field.Damage.FieldSlash set value 60.0f
+            data modify storage asset:mob Field.Damage.FieldSlash set value 70.0f
     # 残心
         # 直接攻撃
-            data modify storage asset:mob Field.Damage.BeamWhip set value 55.0f
+            data modify storage asset:mob Field.Damage.BeamWhip set value 60.0f
         # Blessless次元斬
-            data modify storage asset:mob Field.Damage.BeamSlash set value 50.0f
+            data modify storage asset:mob Field.Damage.BeamSlash set value 52.0f
     # 居合・4ヒット
-            data modify storage asset:mob Field.Damage.IaiLatter set value 30.0f
+            data modify storage asset:mob Field.Damage.IaiLatter set value 50.0f
     # 点睛
         # 直撃
-            data modify storage asset:mob Field.Damage.TenseiSpear set value 60.0f
+            data modify storage asset:mob Field.Damage.TenseiSpear set value 62.0f
         # 地面
-            data modify storage asset:mob Field.Damage.Tensei set value 50.0f
-    # 雷斗星刃・至円・2ヒット
-            data modify storage asset:mob Field.Damage.Circle set value 35.0f
+            data modify storage asset:mob Field.Damage.Tensei set value 55.0f
+    # 雷斗星刃・至円・3ヒット
+            data modify storage asset:mob Field.Damage.Circle set value 55.0f
     # 曲射
         # 曲射
-            data modify storage asset:mob Field.Damage.UpperLatter set value 60.0f
+            data modify storage asset:mob Field.Damage.UpperLatter set value 62.0f
         # 射撃
             data modify storage asset:mob Field.Damage.ShotLatter set value 50.0f
