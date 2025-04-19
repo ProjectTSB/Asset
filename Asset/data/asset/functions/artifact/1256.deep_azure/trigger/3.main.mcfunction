@@ -15,6 +15,6 @@
 
 # チャージ用Effectを付与
     data modify storage api: Argument.ID set value 329
-    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:200,Slash2:250,Slash3:550,Slash4:650,Slash5:1350}
+    data modify storage api: Argument.FieldOverride.Damage set value {Slash1:400,Slash2:450,Slash3:750,Slash4:850,Slash5:1350}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
