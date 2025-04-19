@@ -5,7 +5,7 @@
 # @within asset:object/2180.tiamat_pillar/tick/kill
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 65.0f
+    data modify storage api: Argument.Damage set value 70.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
