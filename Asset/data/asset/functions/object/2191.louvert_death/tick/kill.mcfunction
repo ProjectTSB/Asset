@@ -20,5 +20,5 @@
     kill @s
 
 # AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Louvert",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_louvert",Active:false}]
     function asset:datapack/set_activation_state

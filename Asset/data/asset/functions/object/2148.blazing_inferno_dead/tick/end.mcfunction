@@ -26,7 +26,7 @@
     function api:artifact/spawn/from_id
 
 # AJのデータパックを無効化
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_BlazingInferno",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_blazing_inferno",Active:false}]
     function asset:datapack/set_activation_state
 
 # 消失
