@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/2103.lexiel_exprode/tick/
+# @within function asset:object/2103.lexiel_explode/tick/
 
 # 演出
     particle explosion_emitter ~ ~ ~ 2 4 2 1 20
