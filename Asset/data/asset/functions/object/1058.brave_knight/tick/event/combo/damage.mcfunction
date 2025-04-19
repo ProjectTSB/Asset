@@ -7,7 +7,7 @@
 #   asset:object/1058.brave_knight/tick/event/combo/1
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 100..150
+    execute store result storage api: Argument.Damage float 1 run random value 85..135
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     execute as @p[tag=1058.OwnerPlayer] run function api:damage/modifier

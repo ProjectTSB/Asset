@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"天雷の魔導書","color":"yellow"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"ぴりぴりする本。","color":"white"}','{"text":"頭上に陣取り、雷を落とし攻撃する。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -66,4 +66,4 @@
 
 # フィールド
 # ダメージ設定
-    data modify storage asset:mob Field.Damage set value 32
+    data modify storage asset:mob Field.Damage set value 28

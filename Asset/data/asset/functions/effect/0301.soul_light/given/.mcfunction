@@ -6,4 +6,4 @@
 
 # Stack と Duration を保存しておく
     data modify storage asset:context this.Stack set from storage asset:context Stack
-    data modify storage asset:context this.Duration set from storage asset:context Duration
+    # data modify storage asset:context this.Duration set from storage asset:context Duration

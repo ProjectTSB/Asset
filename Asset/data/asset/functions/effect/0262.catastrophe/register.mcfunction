@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"†","color":"white"},{"text":"カタストロフィ","color":"gray"},{"text":"†","color":"white"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"敵に計1000ダメージ与えた時、または敵からダメージを受けた時、"}','{"text":"相手に無属性のダメージを与え、"}','{"text":"自身に与ダメージと被ダメージが上昇するバフを付与する"}']
+    data modify storage asset:effect Description set value ['{"translate":"敵に %s 与えた時、または敵からダメージを受けた時、","with":[{"text":"計2000ダメージ","color":"aqua"}]}','{"text":"相手に無属性のダメージを与え、"}','{"translate":"%s %s を得る。","with":[{"text":"攻撃 +4%","color":"green"},{"text":"耐性 -2%","color":"red"}]','{"translate":"この効果は最大 %s 重複する。","with":[{"text":"10回","color":"aqua"}]}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
@@ -29,7 +29,7 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 4
+    data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
     data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)

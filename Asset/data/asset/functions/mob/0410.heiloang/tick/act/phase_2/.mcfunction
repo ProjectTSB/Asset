@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/act/
 
 # 最初に戻る
-    execute if score @s BE.ActCount matches 9.. run scoreboard players set @s BE.ActCount 1
+    execute if score @s BE.ActCount matches 9.. run scoreboard players set @s BE.ActCount 2
 
 # エンハンスドディザスター・移動
     execute if score @s BE.ActCount matches ..1 run tag @s add BE.Skill.Ehd

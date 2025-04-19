@@ -60,7 +60,6 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.075d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"heal",Amount:0.08d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/base",Amount:-0.025d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

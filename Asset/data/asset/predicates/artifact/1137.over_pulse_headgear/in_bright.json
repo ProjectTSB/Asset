@@ -1,0 +1,14 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "location": {
+            "light": {
+                "light": {
+                    "min": 10,
+                    "max": 15
+                }
+            }
+        }
+    }
+}

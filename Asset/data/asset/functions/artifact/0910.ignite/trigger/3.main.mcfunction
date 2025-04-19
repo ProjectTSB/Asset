@@ -20,33 +20,35 @@
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 1 0.6
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 2
 
+# SDS open
+    function api:damage/single_damage_session/open
+
 # 近接で殴った相手に800ダメ
-# ダメージセット
-    data modify storage api: Argument.Damage set value 880.0f
-# 第一属性
+    data modify storage api: Argument.Damage set value 980.0f
     data modify storage api: Argument.AttackType set value "Physical"
-# 第二属性
     data modify storage api: Argument.ElementType set value "Fire"
-# 補正functionを実行
     function api:damage/modifier
-# ダメージを与える
     execute as @e[type=#lib:living,tag=Victim,distance=..10] run function api:damage/
+    function api:damage/reset
 
 # 衝撃波演出
     execute positioned ~ ~1 ~ positioned ^ ^ ^0.5 run function asset:artifact/0910.ignite/trigger/particle
     execute positioned ~ ~1 ~ positioned ^ ^ ^2.5 run function asset:artifact/0910.ignite/trigger/particle
 
-# 近接で殴った相手以外に500ダメ
 # 殴った相手以外にタグを付ける
     execute positioned ^ ^ ^1.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
     execute positioned ^ ^ ^2.5 run tag @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..3] add PA.SlashHit
-# ダメージセット
+
+# 近接で殴った相手以外に500ダメ
     data modify storage api: Argument.Damage set value 250.0f
-# 補正functionを実行
-    function api:damage/modifier_continuation
-# ダメージを与える
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] run function api:damage/
+    function api:damage/reset
+
+# SDS close
+    function api:damage/single_damage_session/close
 
 # リセット
-    function api:damage/reset
     tag @e[type=#lib:living,type=!player,tag=PA.SlashHit,distance=..10] remove PA.SlashHit

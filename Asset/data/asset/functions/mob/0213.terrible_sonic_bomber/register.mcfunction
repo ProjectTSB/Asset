@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"Terrible Sonic Bomber"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"TBD"}']
+    data modify storage asset:mob Lore set value ['{"text":"可変翼を備えた戦闘爆撃機。","color":"white"}','{"text":"各種ミサイルに加えて無誘導爆弾や領域拒否兵器の運用をできる。","color":"white"}','{"text":"近年ではさらにドローンの運用能力を追加されている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -66,7 +66,7 @@
         data modify storage asset:mob Resist.Thunder set value 0.25
 # フィールド
     data modify storage asset:mob Field.TargetCoordinates set value []
-    data modify storage asset:mob Field.UsingWeapon set value ""
     data modify storage asset:mob Field.AttackDistance set value 50
     data modify storage asset:mob Field.InitialMotionTime set value 200
     data modify storage asset:mob Field.Minefield_Pos set value []
+    data modify storage asset:mob Field.Action set value {}

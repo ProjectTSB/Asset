@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"レーザーアイ","color":"green"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"機械でできた目玉の怪物。","color":"white"}','{"text":"高出力のプラズマ光線を放つので注意！","color":"white"}','{"text":"壁をすり抜ける能力もあるため、逃げ切れるとは思わない方がいい。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

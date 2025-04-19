@@ -21,7 +21,7 @@
 # ダメージ
 # 物理魔法の強い方で攻撃する
 # 同値の場合は物理優先
-    data modify storage api: Argument.Damage set value 250f
+    data modify storage api: Argument.Damage set value 80f
     execute if score $Physical Temporary >= $Magic Temporary run data modify storage api: Argument.AttackType set value "Physical"
     execute if score $Physical Temporary < $Magic Temporary run data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier

@@ -4,10 +4,8 @@
 #
 # @within function asset:artifact/0568.great_sage_leggings/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
+# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/use/legs
-
-# ここから先は神器側の効果の処理を書く
 
 # 演出
     particle end_rod ~ ~0.4 ~ 0.3 0.1 0.3 0.1 10 normal @a

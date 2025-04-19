@@ -14,9 +14,6 @@
     scoreboard players operation $Temp Temporary = @s General.Object.Tick
     execute if entity @s[scores={General.Object.Tick=..29}] run scoreboard players operation $Temp Temporary %= $2 Const
 
-# 最初の数tickだけ当たり判定の円を表示
-    execute if entity @s[scores={General.Object.Tick=..5}] positioned ~ ~0.2 ~ run function asset:object/2074.water_magic/tick/vfx/circe
-
 # 発動前にパーティクル
     execute if entity @s[scores={General.Object.Tick=..29}] if score $Temp Temporary matches 0 run function asset:object/2074.water_magic/tick/ready
 

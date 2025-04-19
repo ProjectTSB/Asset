@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"羊の加護","color":"green"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"足元に羊毛の床を生み出す"}'
+    data modify storage asset:effect Description set value ['{"text":"足元に羊毛の床を生み出す"}']
 # 残り時間 (default = API || error)
     data modify storage asset:effect Duration set value 40
 # スタック (default = API || 1)

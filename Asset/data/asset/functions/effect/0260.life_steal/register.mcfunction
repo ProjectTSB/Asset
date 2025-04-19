@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"魂命","color":"dark_aqua"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"最大体力に比例して物理与ダメージが上昇する","color":"white"}'
+    data modify storage asset:effect Description set value ['{"text":"最大体力に比例して物理属性与ダメージが上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)

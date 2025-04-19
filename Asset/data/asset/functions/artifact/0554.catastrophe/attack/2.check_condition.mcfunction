@@ -19,7 +19,7 @@
     execute store result score $FE.Temp Temporary run data get storage asset:context Attack.Amount 10
     scoreboard players operation @s FE.DamageSum += $FE.Temp Temporary
     scoreboard players reset $FE.Temp Temporary
-    execute if entity @s[scores={FE.DamageSum=10000..}] run function asset:artifact/0554.catastrophe/attack/buff
+    execute if entity @s[scores={FE.DamageSum=20000..}] run function asset:artifact/0554.catastrophe/attack/buff
 
 # 再度チェック
     tag @s remove CanUsed

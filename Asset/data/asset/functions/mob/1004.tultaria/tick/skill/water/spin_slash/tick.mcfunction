@@ -8,6 +8,9 @@
 # @private
     #declare score_holder $Interval
 
+# アイテム指定
+    execute if score @s General.Mob.Tick matches 17 run item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20074}
+
 # 剣を召喚
     # アニメ
         execute if score @s General.Mob.Tick matches 17 as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_right/tween {to_frame:0,duration:1}

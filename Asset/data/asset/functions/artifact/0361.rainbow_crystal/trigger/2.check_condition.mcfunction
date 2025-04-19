@@ -4,8 +4,8 @@
 #
 # @within function asset:artifact/0361.rainbow_crystal/trigger/1.trigger
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/check_condition/auto
+# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く mainhand/feet/legs/chest/head/mainhand/offhandを記載してね
+    function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     execute unless entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..30] run tag @s remove CanUsed
 # CanUsedタグをチェックして3.main.mcfunctionを実行する

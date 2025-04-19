@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"ゴー","color":"#59FF75"},{"text":"ルデンスイカボ","color":"#F0FF1F"},{"text":"マー","color":"#59FF75"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"黄金爆発性のゴールデンスイカを投げつけてくる。","color":"white"}','{"text":"黄金爆発をするため、雷が落ちる上に通常のスイカとくらべて遥かに威力が黄金高い。","color":"white"}','{"text":"味はおいしくないらしい。黄金だから。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:melon",Count:1b,tag:{Enchantments:[{}],CustomModelData:20023}}

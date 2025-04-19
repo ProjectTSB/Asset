@@ -5,7 +5,7 @@
 # @within function asset:artifact/1043.gamma_ray/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/auto
+    function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     execute if entity @s[tag=CanUsed,predicate=!lib:is_sneaking] run tellraw @s {"text":"スニーク時以外は発動できません。","color":"red"}
     execute unless entity @s[predicate=lib:is_sneaking] run tag @s remove CanUsed

@@ -7,9 +7,6 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# レーザー前演出
-    execute if score @s General.Object.Tick matches ..20 run function asset:object/2104.lexiel_laser/tick/vfx
-
 # レーザー出る
     execute if score @s General.Object.Tick matches 20 run function asset:object/2104.lexiel_laser/tick/shot
 

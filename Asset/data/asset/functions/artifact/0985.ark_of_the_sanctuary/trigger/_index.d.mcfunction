@@ -3,6 +3,6 @@
 
 #> tag
 # @within function asset:artifact/0985.ark_of_the_sanctuary/trigger/**
-    #declare tag RD.SlashSweep
-    #declare tag RD.SlashInit
-    #declare tag RD.Sword
+    #declare tag RD.Hit
+    #declare score_holder $TickSinceLastUse
+    #declare score_holder $LatestUseTick

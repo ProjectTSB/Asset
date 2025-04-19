@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 34
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value "再生"
+    data modify storage asset:effect Name set value '{"text":"再生"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"継続的に体力を回復する"}']
 # 効果時間 (int) (default = API || error)

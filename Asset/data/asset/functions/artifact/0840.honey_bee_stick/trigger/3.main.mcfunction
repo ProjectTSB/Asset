@@ -5,7 +5,7 @@
 # @within function asset:artifact/0840.honey_bee_stick/trigger/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -23,7 +23,7 @@
     function api:heal/reset
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 500.0f
+    data modify storage api: Argument.Damage set value 760.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

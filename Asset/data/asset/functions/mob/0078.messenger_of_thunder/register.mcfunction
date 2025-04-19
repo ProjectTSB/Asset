@@ -22,10 +22,10 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"雷鳴之使","color":"#D9B111"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"強烈な雷を操る雷鳴の化身。","color":"white"}','{"text":"雷の如く高速で移動し、強烈な矢と雷で敵を圧倒する。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:20188,Enchantments:[{id:"punch",lvl:1s}]}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:1061,Enchantments:[{id:"punch",lvl:1s}]}}
     # オフハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Offhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:376}}
 # 武器ドロップ率 ([float, float]) (オプション)
@@ -34,11 +34,11 @@
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20019}}
     # 胴 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Chest set value {id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14408481}}}
+        data modify storage asset:mob Armor.Chest set value {id:"minecraft:chainmail_chestplate",Count:1b,tag:{Trim:{material:"minecraft:iron",pattern:"tsb_armor:642"}}}
     # 脚 (Compound(Item)) (オプション)
-        data modify storage asset:mob Armor.Legs set value {id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:14408481}}}
+        data modify storage asset:mob Armor.Legs set value {id:"minecraft:chainmail_leggings",Count:1b,tag:{Trim:{material:"minecraft:iron",pattern:"tsb_armor:642"}}}
     # 足 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Feet set value
+        data modify storage asset:mob Armor.Feet set value {id:"minecraft:chainmail_boots",Count:1b,tag:{Trim:{material:"minecraft:iron",pattern:"tsb_armor:642"}}}
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)

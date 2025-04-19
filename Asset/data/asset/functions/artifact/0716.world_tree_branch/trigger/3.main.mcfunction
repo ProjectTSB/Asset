@@ -19,3 +19,39 @@
     playsound ogg:block.amethyst.step2 player @a ~ ~ ~ 0.5 1.6 0
     playsound ogg:block.amethyst.step2 player @a ~ ~ ~ 0.5 1.4 0
     playsound ogg:block.amethyst.step2 player @a ~ ~ ~ 0.5 1.2 0
+<<<<<<< HEAD
+=======
+
+# 移動速度
+    # attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-02cc00000005 "0716.Speed" 0.05 multiply_base
+
+# 回復量
+    data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    data modify storage api: Argument.Amount set value 0.08
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/heal/add
+
+# 最大体力
+    data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    data modify storage api: Argument.Amount set value 0.08
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/max_health/add
+
+# MP回復量
+    data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    data modify storage api: Argument.Amount set value 0.075
+    data modify storage api: Argument.Operation set value "multiply_base"
+    function api:modifier/mp_regen/add
+
+    # 魔法攻撃
+    # data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    # data modify storage api: Argument.Amount set value 0.025
+    # data modify storage api: Argument.Operation set value "multiply_base"
+    # function api:modifier/attack/magic/add
+
+# 攻撃力
+    # data modify storage api: Argument.UUID set value [I;1,1,716,5]
+    # data modify storage api: Argument.Amount set value -0.025
+    # data modify storage api: Argument.Operation set value "multiply_base"
+    # function api:modifier/attack/base/add
+>>>>>>> master

@@ -25,7 +25,7 @@
     execute if score $ElementalSwordAttack Temporary matches 2 at @e[type=#lib:living,tag=Victim,distance=..10] run function asset:artifact/0057.elemental_sword/trigger/vfx/thunder
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 95.0f
+    data modify storage api: Argument.Damage set value 75.0f
     data modify storage api: Argument.AttackType set value "Physical"
     execute if score $ElementalSwordAttack Temporary matches 0 run data modify storage api: Argument.ElementType set value "Fire"
     execute if score $ElementalSwordAttack Temporary matches 1 run data modify storage api: Argument.ElementType set value "Water"

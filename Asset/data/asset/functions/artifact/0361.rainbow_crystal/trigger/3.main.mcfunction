@@ -4,8 +4,8 @@
 #
 # @within function asset:artifact/0361.rainbow_crystal/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う mainhand/feet/legs/chest/head/mainhand/offhandを記載してね
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -25,48 +25,54 @@
     data modify storage api: Argument.ElementTypeNone set value "None"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Fire"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Water"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementTypeNone set value "Thunder"
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
 # 魔法
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "None"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Fire"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Water"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 210f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementTypeNone set value "Thunder"
-    function api:damage/modifier_continuation
+    function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run function api:damage/
-
-# リセット
     function api:damage/reset

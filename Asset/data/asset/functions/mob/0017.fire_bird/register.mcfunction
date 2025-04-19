@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"火の鳥","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"火をまとって飛び回る魔物。","color":"white"}','{"text":"攻撃によって敵を炎上させることができる。","color":"white"}','{"text":"別に不老不死ではないし、おそらく鳥でもない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stone",Count:1b,tag:{Enchantments:[{id:"fire_aspect",lvl:3}]}}

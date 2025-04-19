@@ -7,8 +7,6 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/feet
 
-# ここから先は神器側の効果の処理を書く
-
 # 演出
     particle end_rod ~ ~ ~ 0.3 0.1 0.3 0.1 10 normal @a
     playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 0.8 1

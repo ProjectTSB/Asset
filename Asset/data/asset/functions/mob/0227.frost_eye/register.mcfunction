@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"フロストアイ","color":"#C9FFF8"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"霜から構成された目玉の怪物。","color":"white"}','{"text":"非常に冷たく、触れると凍り付いてしまう。","color":"white"}','{"text":"移動速度が低下した状態で攻撃を受けるともっと痛い。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

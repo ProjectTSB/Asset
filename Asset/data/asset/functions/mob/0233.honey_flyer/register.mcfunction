@@ -9,9 +9,11 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ハニーフライヤー","color":"#FFBD24"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"べっとべとな上に、空を飛んでくる。","color":"white"}','{"text":"その矢は低速落下を付与してくる。","color":"white"}','{"text":"周辺の空気すらもべっとべとにするのだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
-        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{CustomModelData:20186}}
+        data modify storage asset:mob Weapon.Mainhand set value {id:"bow",Count:1b,tag:{CustomModelData:1262}}
     # オフハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Offhand set value {id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:16760100}}
 # 武器ドロップ率 ([float, float]) (オプション)

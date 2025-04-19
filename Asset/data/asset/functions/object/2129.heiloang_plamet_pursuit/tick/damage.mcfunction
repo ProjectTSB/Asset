@@ -4,7 +4,6 @@
 #
 # @within asset:object/2129.heiloang_plamet_pursuit/tick/
 
-
 # ダメージ
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 10

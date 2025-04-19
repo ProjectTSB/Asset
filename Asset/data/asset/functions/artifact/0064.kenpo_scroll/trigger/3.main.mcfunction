@@ -15,7 +15,7 @@
 
 # 軽減貫通ダメージを与える
     # 与えるダメージ = 6
-        data modify storage api: Argument.Damage set value 6f
+        data modify storage api: Argument.Damage set value 7f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
