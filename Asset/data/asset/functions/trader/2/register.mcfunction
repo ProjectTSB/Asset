@@ -15,16 +15,6 @@ execute unless loaded 19 15 -29 run return 1
 # 方向 (float) (オプション)
     data modify storage asset:trader Rotation set value 0f
 
-# 取引 鉄剣
-    data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:4b}
-    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:iron_sword",Count:1b}
-
-# 取引 プロテクション
-    data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:2b}
-    data modify storage asset:trader Trades[-1].Sell set value 966
-
 # 取引 望遠鏡
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
@@ -44,6 +34,11 @@ execute unless loaded 19 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:arrow",Count:16b}
+
+# 取引 矢筒
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:5b}
+    data modify storage asset:trader Trades[-1].Sell set value 1284
 
 # 取引 見通しの書
     data modify storage asset:trader Trades append value {}

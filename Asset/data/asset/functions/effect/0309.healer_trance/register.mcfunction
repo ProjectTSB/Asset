@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ヒーラートランス"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"与回復量・被回復量が半減する"}'
+    data modify storage asset:effect Description set value ['{"text":"与回復量・被回復量が半減する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
@@ -29,7 +29,7 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 4
+    data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
     data modify storage asset:effect Visible set value true
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)

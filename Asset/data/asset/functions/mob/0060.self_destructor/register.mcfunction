@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"自爆者","color":"dark_red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"クリーパー顔負けの爆発を起こす。","color":"white"}','{"text":"ブロックを破壊はしないのでそこだけは良心的。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:tnt",Count:1b}
@@ -52,3 +54,6 @@
         data modify storage asset:mob Resist.Water set value 0.5
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
+
+# フィールド
+    data modify storage asset:mob Field.Countdown set value 3

@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"盗賊"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"シャードや神器を狙う盗賊。","color":"white"}','{"text":"だが、神器でなくとも倒せるくらいには弱い。","color":"white"}','{"text":"これはほんの序の口。あなたの旅は始まったばかりだ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stone_sword",Count:1b}

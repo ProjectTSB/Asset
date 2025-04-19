@@ -19,6 +19,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"魔法の本棚","color":"dark_purple"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"生きた本棚。","color":"white"}','{"text":"ランダムな魔法攻撃を繰り出してくる。","color":"white"}','{"text":"ただし、遠距離魔法は何も使えないようだ。","color":"white"}']
+# Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)

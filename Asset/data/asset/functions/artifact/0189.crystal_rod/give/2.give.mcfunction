@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"クリスタルロッド","color":"white","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"透明度の高いクリスタルが使用された杖。","color":"white"}','{"text":"周囲のプレイヤーのデバフを解除する。","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"透明度の高いクリスタルが使用された杖。","color":"white"}','[{"text":"自身と周囲8mのプレイヤーのデバフ"},{"text":"[弱]","color":"#FFDD66"},{"text":"を1つ解除する。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 20
+    data modify storage asset:artifact MPCost set value 25
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)

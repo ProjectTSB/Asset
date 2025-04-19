@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"異端ナ者","color":"dark_purple"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"異形そのものとしか言い表せない何か。","color":"white"}','{"text":"こいつの矢には注意が必要だ。","color":"white"}','{"text":"瞬時にテレポートで飛びかかり、その後は剣で戦いを挑む。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{display:{Name:'{"text":"異端の弓","color":"dark_purple","underlined":true}'}}}

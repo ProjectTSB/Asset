@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ファイヤクリーパー","color":"red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"全てを燃やすことに命を燃やしているクリーパー。","color":"white"}','{"text":"自爆時に火を撒き散らすことができる。","color":"white"}','{"text":"ただし、地形破壊能力は失われてしまった。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

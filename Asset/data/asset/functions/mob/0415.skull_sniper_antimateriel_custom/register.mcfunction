@@ -13,6 +13,8 @@
     data modify storage asset:mob ID set value 415
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"","color":"white","extra":[{"text":"スカルスナイパー"},{"text":" "},{"text":"対物カスタム","color":"gray","bold":true}]}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"スカルスナイパーが対物ライフルを持ってしまった。","color":"white"}','{"text":"もう壁なんて信用できない。","color":"white"}','{"text":"信用できるのは己の身のみ。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1200
 # フィールド

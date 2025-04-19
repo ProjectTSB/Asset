@@ -12,4 +12,4 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 3900
 # フィールド
-    data modify storage asset:mob Field.Damage set value {Attack:40d,Shower:12d}
+    data modify storage asset:mob Field.Damage set value {Attack:28d,Shower:12d}

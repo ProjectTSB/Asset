@@ -11,6 +11,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"桜の精霊","color":"light_purple"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"花見をしているところに現れては","color":"white"}','{"text":"桜吹雪を巻き起こす精霊。","color":"white"}','{"text":"なぜか結構な犠牲者が出ているらしい。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b}}
@@ -30,7 +32,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 360
+    data modify storage asset:mob Health set value 300
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
@@ -55,4 +57,4 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0
 # フィールド
-    data modify storage asset:mob Field.Damage set value {Attack:10d,Shower:1.5d}
+    data modify storage asset:mob Field.Damage set value {Attack:6d,Shower:1.5d}

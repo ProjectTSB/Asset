@@ -12,7 +12,7 @@
     tag @a[tag=9G.Temp.Target.JumpAvoid] remove 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 50f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.MoveSpear
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

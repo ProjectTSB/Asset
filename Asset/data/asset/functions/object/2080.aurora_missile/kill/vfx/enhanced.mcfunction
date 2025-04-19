@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/2080.aurora_missile/kill/
+# @within function asset:object/2080.aurora_missile/kill/main
 
 # 円 1
 particle dust 0.000 1.000 0.949 3 ^0 ^ ^-3 0 0 0 0 1

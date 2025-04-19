@@ -7,7 +7,7 @@
 #   asset:mob/0365.frestchika/tick/phase_transition/
 
 # エフェクト付与
-    data modify storage api: Argument.ID set value 622
+    data modify storage api: Argument.ID set value 653
     data modify storage api: Argument.Stack set value 1
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

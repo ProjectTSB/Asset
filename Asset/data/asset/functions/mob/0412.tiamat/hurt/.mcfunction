@@ -6,3 +6,6 @@
 
 # 継承元の処理実行
     function asset:mob/super.hurt
+
+# 効果音
+    playsound entity.generic.hurt hostile @a ~ ~ ~ 1 1

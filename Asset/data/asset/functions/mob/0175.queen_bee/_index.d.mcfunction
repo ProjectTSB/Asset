@@ -7,12 +7,17 @@
     #declare tag SpreadMarker
     #declare tag Landing
     #declare tag LandingTarget
-    #declare tag 4V.ArmorStand
-    #declare tag 4V.ArmorStandThis
-    #declare tag 4V.Angel
     #declare tag 4V.SkillTackle
     #declare tag 4V.SkillTackleDamageHit
     #declare tag 4V.SkillSummon
     #declare tag 4V.SkillNeedle
+    #declare tag 4V.SkillGrandSlam
+    #declare tag 4V.SkillBeeBomb
+    #declare tag 4V.SkillTackleFormation
+    #declare tag 4V.SpawnMarker
+    #declare tag 4V.Hit
+    #declare tag 4V.Target
     #declare score_holder $Count
     #declare score_holder $Random
+    #
+    #declare objective General.Object.Tick

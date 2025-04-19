@@ -6,12 +6,15 @@
 #   function asset:mob/alias/327/remove
 #   function asset:mob/0327.eclael/init/
 
-# 継承元の処理を実行
+# 継承元の処理実行
     function asset:mob/super.remove
 
-# 死亡演出スキップ
-    execute as @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] run function animated_java:eclael/remove/this
+# タグ更新
+    tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
+    tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] remove 93.ModelRoot
 
-# AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Eclael",Active:false}]
-    function asset:datapack/set_activation_state
+# 中心点削除
+    kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
+
+# モデル削除
+    function animated_java:eclael/remove/all

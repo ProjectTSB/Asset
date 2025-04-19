@@ -17,6 +17,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ピグリンエリート","color":"gold"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"容赦のないピグリン。","color":"white"}','{"text":"賄賂が通じない。","color":"white"}']
+# Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)
