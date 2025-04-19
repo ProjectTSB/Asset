@@ -6,9 +6,8 @@
 
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang_aj",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang_aj",Active:true},{Datapack:"AJ_behemoth_aj",Active:true},{Datapack:"AJ_tiamat_aj",Active:true},{Datapack:"AJ_heiloang_flare_aj",Active:true}]
     function asset:datapack/set_activation_state
-
 
 # 継承元の処理実行
     function asset:mob/super.init
