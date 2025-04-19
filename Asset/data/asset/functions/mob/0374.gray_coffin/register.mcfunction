@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"灰の棺","color":"gray"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"邪悪な霊を感じる棺。","color":"white"}','{"text":"早いところ破壊してしまおう。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"邪悪な気配を感じる棺。","color":"white"}','{"text":"早いところ破壊してしまおう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
