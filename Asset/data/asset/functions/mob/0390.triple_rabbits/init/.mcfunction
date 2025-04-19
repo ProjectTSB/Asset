@@ -9,7 +9,7 @@
     #declare function asset_manager:mob/bossbar/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Axia",Active:true},{Datapack:"AJ_Ecual",Active:true},{Datapack:"AJ_Labyria",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_axia",Active:true},{Datapack:"AJ_ecual",Active:true},{Datapack:"AJ_labyria",Active:true}]
     function asset:datapack/set_activation_state
 
 # 位置を調整

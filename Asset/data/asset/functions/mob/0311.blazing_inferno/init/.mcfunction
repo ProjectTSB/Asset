@@ -4,7 +4,7 @@
 #
 # @within asset:mob/alias/311/init
 
-data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_BlazingInferno",Active:true}]
+data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_blazing_inferno",Active:true}]
 function asset:datapack/set_activation_state
 
 

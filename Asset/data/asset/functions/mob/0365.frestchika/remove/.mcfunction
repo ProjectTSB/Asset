@@ -14,5 +14,5 @@
     kill @e[type=marker,tag=A5.Marker,distance=..64]
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Frestchika",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_frestchika",Active:false}]
     function asset:datapack/set_activation_state

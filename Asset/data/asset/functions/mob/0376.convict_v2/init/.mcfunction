@@ -5,7 +5,7 @@
 # @within asset:mob/alias/376/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Convict",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_convict",Active:true}]
     function asset:datapack/set_activation_state
 
 # super.init呼び出し

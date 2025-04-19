@@ -5,7 +5,7 @@
 # @within asset:mob/alias/341/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Louvert",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_louvert",Active:true}]
     function asset:datapack/set_activation_state
 
 # 召喚位置を記録

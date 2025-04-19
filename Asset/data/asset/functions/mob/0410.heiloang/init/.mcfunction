@@ -6,7 +6,7 @@
 
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Heiloang",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang_aj",Active:true}]
     function asset:datapack/set_activation_state
 
 

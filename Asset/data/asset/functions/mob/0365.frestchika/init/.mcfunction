@@ -5,7 +5,7 @@
 # @within asset:mob/alias/365/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Frestchika",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_frestchika",Active:true}]
     function asset:datapack/set_activation_state
 
 # 出現座標を記憶する

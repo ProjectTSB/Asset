@@ -21,5 +21,5 @@
     kill @e[scores={ObjectID=2082..2089}]
 
 # AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_TerribleSonicBomber",Active:false},{Datapack:"AJ_PatriotLauncher",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_terrible_sonic_bomber",Active:false},{Datapack:"AJ_patriot_launcher",Active:false}]
     function asset:datapack/set_activation_state

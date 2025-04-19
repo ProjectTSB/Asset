@@ -3,7 +3,7 @@
 
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_Eclael",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_eclael",Active:true}]
     function asset:datapack/set_activation_state
 
 # 多重召喚対策
