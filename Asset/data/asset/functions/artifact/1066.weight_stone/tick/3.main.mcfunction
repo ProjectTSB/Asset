@@ -1,8 +1,8 @@
-#> asset:effect/0218.heavy_weight/tick/
+#> asset:artifact/1066.weight_stone/tick/3.main
 #
-# Effectのtick処理
+# 神器のメイン処理部
 #
-# @within function asset:effect/0218.heavy_weight/_/tick
+# @within function asset:artifact/1066.weight_stone/tick/2.check_condition
 
 # 低速落下を解除
     data modify storage api: Argument.ID set value 31
