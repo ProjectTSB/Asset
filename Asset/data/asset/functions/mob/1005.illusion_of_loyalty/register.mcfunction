@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/1005/register
 
 # 継承
-    data modify storage asset:mob Extends append value 106
+    data modify storage asset:mob Extends append value 2000
     function asset:mob/extends
 # ID (int)
     data modify storage asset:mob ID set value 1005
