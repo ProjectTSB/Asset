@@ -22,18 +22,18 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"劫火操りし煉獄の主、真名はベヘモット。"}','{"text":"焔竜の名を以て、王に仇名す愚者共に"}','{"text":"蒼き炎の鉄槌を下さん。"}']
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 100
+    data modify storage asset:mob Health set value 40000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 0.8f
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.0f
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.5f
+        data modify storage asset:mob Resist.Fire set value 0.7f
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.7f
+        data modify storage asset:mob Resist.Water set value 0.9f
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 1.0f
+        data modify storage asset:mob Resist.Thunder set value 1.1f
 # フィールド
 
 # ダメージ
@@ -49,6 +49,6 @@
     # ダイブ追撃
         data modify storage asset:mob Field.Damage.DiveFlare set value 48.0f
     # ヘルファイア：スリップダメージ
-        data modify storage asset:mob Field.Damage.Hellfire set value 23.0f
+        data modify storage asset:mob Field.Damage.Hellfire set value 36.0f
     # ロックオンフレアブレス：テルツェットプルガトリオで使用
         data modify storage asset:mob Field.Damage.LockonFlare set value 60.0f
