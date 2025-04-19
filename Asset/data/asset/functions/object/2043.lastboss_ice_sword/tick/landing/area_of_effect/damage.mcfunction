@@ -5,7 +5,7 @@
 # @within function asset:object/2043.lastboss_ice_sword/tick/landing/area_of_effect/
 
 # 魔法水ダメージ
-    data modify storage api: Argument.Damage set value 25f
+    data modify storage api: Argument.Damage set value 50f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
