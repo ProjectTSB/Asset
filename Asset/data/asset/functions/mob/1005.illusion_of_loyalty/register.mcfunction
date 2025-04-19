@@ -11,6 +11,8 @@
     data modify storage asset:mob ID set value 1005
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"忠誠の幻想","color":"white"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
