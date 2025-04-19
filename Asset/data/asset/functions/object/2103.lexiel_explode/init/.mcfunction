@@ -1,4 +1,4 @@
-#> asset:object/2103.lexiel_exprode/init/
+#> asset:object/2103.lexiel_explode/init/
 #
 # Objectのinit時の処理
 #

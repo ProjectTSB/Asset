@@ -1,4 +1,4 @@
-#> asset:object/2103.lexiel_exprode/summon/
+#> asset:object/2103.lexiel_explode/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
