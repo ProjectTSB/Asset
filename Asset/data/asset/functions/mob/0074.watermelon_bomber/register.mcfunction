@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"ス","color":"#59FF75"},{"text":"イカボマ","color":"#FF3838"},{"text":"ー","color":"#59FF75"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"爆発性のスイカを投げつけてくる。","color":"white"}','{"text":"なぜスイカが爆発するのかはいささか不明だが、そういうものなのだ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:melon",Count:1b,tag:{CustomModelData:20023}}

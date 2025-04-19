@@ -35,8 +35,8 @@
     execute if score @s General.Mob.Tick matches 40 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 3 2
 
 # マーカーがあるところ、つまり召喚地点まで落ちる
-    execute if score @s General.Mob.Tick matches 50..52 at @s if entity @e[type=marker,tag=C5.Marker.SlamPoint,distance=..0.5,limit=1] run scoreboard players set @s General.Mob.Tick 53
-    execute if score @s General.Mob.Tick matches 50..52 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/fall
+    execute if score @s General.Mob.Tick matches 50..52 at @s positioned ~-5 ~ ~-5 if entity @e[type=marker,dx=9,dy=-1,dz=9,limit=1] at @s run scoreboard players set @s General.Mob.Tick 53
+    execute if score @s General.Mob.Tick matches 50..52 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/fall_stacked
 
 # 爆発
     execute if score @s General.Mob.Tick matches 53 at @s align y run tp @s ~ ~ ~

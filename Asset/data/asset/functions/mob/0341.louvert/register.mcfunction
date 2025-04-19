@@ -17,6 +17,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ルヴェルト","color":"#FF9C45"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"炎の双剣を扱う上級天使。","color":"white"}','{"text":"その者が生み出す爆炎は、すべてを飲み込み、焼き尽くすと言われている。","color":"white"}','{"text":"ちなみに男性でも女性でもない。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 175000
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち

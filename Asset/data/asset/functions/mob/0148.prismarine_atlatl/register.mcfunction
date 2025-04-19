@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"プリズマリンアトラトル","color":"#48DAD6"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"深海に潜む怪物。","color":"white"}','{"text":"投げつけてくるトライデントには要注意。","color":"white"}','{"text":"並大抵の防御では手も足も出ない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"trident",Count:1b}

@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ヘルブレード"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"何かを斬り刻むことに特化した、どう見ても危険なガードボット。","color":"white"}','{"text":"床や壁、そして天井を走り回り、こちらをしつこく追いかけてくる。","color":"white"}','{"text":"その独特な挙動は、かなり複雑なシステムによって実現されているようだ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

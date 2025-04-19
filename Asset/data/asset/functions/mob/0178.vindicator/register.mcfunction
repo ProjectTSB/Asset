@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"translate":"entity.minecraft.vindicator","color":"gray"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"雷の剣を持ったヴィンティケーター。","color":"white"}','{"text":"どこかで神器を略奪したのだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"stick",Count:1b,tag:{CustomModelData:319}}

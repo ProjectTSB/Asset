@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"チェーンソーゾンビ","color":"dark_green"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"恐怖を知らずに突進してくるゾンビ。","color":"white"}','{"text":"かなり物騒なものを装備しているが、","color":"white"}','{"text":"それで神をバラバラにすることはできないだろう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:471}}

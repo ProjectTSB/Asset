@@ -20,10 +20,14 @@
         execute if score @s BE.EventTimer matches 80 at @s run tp @s ^ ^ ^6 ~ ~
 # 出現、攻撃
     # アニメーション再生
-        execute if score @s BE.EventTimer matches 451 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/5_2_move
+        execute if score @s BE.EventTimer matches 251 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/5_2_move
     # 攻撃
-        execute if score @s BE.EventTimer matches 494 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move_after_ehd/prediction
-        execute if score @s BE.EventTimer matches 524 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move_after_ehd/attack
+        execute if score @s BE.EventTimer matches 294 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move_after_ehd/prediction
+        execute if score @s BE.EventTimer matches 324 at @e[type=marker,tag=BE.CenterPosition] positioned ^ ^ ^19.5 rotated ~180 0 run function asset:mob/0410.heiloang/tick/event/move_after_ehd/attack
+
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+    execute if score @s BE.EventTimer matches 251 run function asset:mob/0410.heiloang/tick/util/end_invulnerable
 
 # 終了
-    execute if score @s BE.EventTimer matches 575.. run function asset:mob/0410.heiloang/tick/event/move_after_ehd/end
+    execute if score @s BE.EventTimer matches 375.. run function asset:mob/0410.heiloang/tick/event/move_after_ehd/end

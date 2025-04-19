@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"デスソージキ"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"デスソージキは殺戮している部屋の地図を作成しない。","color":"white"}','{"text":"その代わりに「何かにぶつかったら角度を変える」「穴は避ける」「貴様を殺す」","color":"white"}','{"text":"など、いくつかの単純なヒューリスティックスで動作している。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

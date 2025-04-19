@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ファルシオスの神官","color":"gold"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"ツタンカーメンに仕えるエリート神官。","color":"white"}','{"text":"強力な魂の炎の魔法を唱えるほか、","color":"white"}','{"text":"周囲の味方への回復支援も行う。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"carrot_on_a_stick",Count:1b,tag:{CustomModelData:192}}

@@ -18,7 +18,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"ラビリア","color":"#FF87EB","bold":true}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value 
+    data modify storage asset:mob Lore set value ['{"text":"ウサギの上級天使。","color":"white"}','{"text":"銃剣の扱いを得意としており、様々な武器で敵を翻弄する。","color":"white"}','{"text":"大体アキシャと一緒にやんちゃをしてエクアルを困らせているらしい。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 57500
 #    execute if predicate api:global_vars/difficulty/max/normal run data modify storage asset:mob Health set value 20000

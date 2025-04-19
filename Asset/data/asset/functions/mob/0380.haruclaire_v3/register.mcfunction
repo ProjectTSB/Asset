@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ハルクレア","color":"aqua"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"自称・絶対零度のエンターテイナー。","color":"white"}','{"text":"激しき戦いの中にも「魅せ」は大事。","color":"white"}','{"text":"相棒のハトクレアとともに、今日も技を磨く。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1750
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:rejoin
 
-# 突き怯みのスケジュール再開
-    execute if entity @a[tag=93.Temp.ScheduleTargetPlayer,limit=1] run schedule function asset:mob/0327.eclael/tick/app.skill_events/24_latter_spear/5.1.schedule 1t replace
+# タグ消去
+    tag @a remove 93.Skill.IaiMove.Hit

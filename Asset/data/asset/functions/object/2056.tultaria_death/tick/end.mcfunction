@@ -17,6 +17,11 @@
     particle minecraft:poof ~ ~1 ~ 1 1 1 0.1 50
     particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.6 200
 
+# ドロップ
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # 画面エフェクト
     title @a[distance=..64] times 5 15 20
     title @a[distance=..64] title {"text":""}

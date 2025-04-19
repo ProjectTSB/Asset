@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0338.jump_spring/_/tick",
+        "asset:effect/0336.self_loathing/_/tick",
+        "asset:effect/0335.solitariness/_/tick",
         "asset:effect/0324.scripture_gambling/_/tick",
         "asset:effect/0281.addiction/_/tick",
         "asset:effect/0280.awaking_power/_/tick",

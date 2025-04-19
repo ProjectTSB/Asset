@@ -18,7 +18,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"アキシャ","color":"#FF8A8A","bold":true}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value 
+    data modify storage asset:mob Lore set value ['{"text":"ウサギの上級天使。","color":"white"}','{"text":"大剣を振り回し、力試しと言わんばかりに襲いかかってくる。","color":"white"}','{"text":"彼女が望むのは戦いなのか、あるいは……","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 57500
 #    execute if predicate api:global_vars/difficulty/max/normal run data modify storage asset:mob Health set value 20000

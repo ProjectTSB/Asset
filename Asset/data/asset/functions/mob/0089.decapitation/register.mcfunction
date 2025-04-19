@@ -11,6 +11,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"断切者","color":"dark_red"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"数多の骨の継ぎ接ぎから産まれたスケルトン。","color":"white"}','{"text":"しかし、攻撃を受けるとたまに骨が外れてしまう。","color":"white"}','{"text":"強靭そうな斧もそこまで研がれていない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20022}}

@@ -11,6 +11,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"桜の精霊","color":"light_purple"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"花見をしているところに現れては","color":"white"}','{"text":"桜吹雪を巻き起こす精霊。","color":"white"}','{"text":"なぜか結構な犠牲者が出ているらしい。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b}}
