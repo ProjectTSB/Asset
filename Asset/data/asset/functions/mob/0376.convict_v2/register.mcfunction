@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"断罪者"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"彼は罪を裁く者。","color":"white"}','{"text":"罪人に対して彼が課す償い、それは死である。","color":"white"}','{"text":"被弾時に回復力が低下するので注意。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"罪を裁く者。","color":"white"}','{"text":"罪人に対して彼が課す償い、それは死である。","color":"white"}','{"text":"被弾時に回復力が低下するので注意。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
