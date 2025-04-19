@@ -26,3 +26,6 @@
 
 # アイテム指定
     item replace entity @e[type=item_display,tag=RW.Model.RightHandItem,sort=nearest,limit=1] container.0 with minecraft:stick{CustomModelData:20074}
+
+# ヒットリストを削除
+    data remove storage asset:context this.HitList
