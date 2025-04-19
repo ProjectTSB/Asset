@@ -41,10 +41,10 @@
     execute if entity @s[tag=2053.Release] positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:object/2053.lastboss_spinning_sword/tick/damage
 
 # 召喚者がいないと死ぬ
-    execute unless entity @e[type=#lib:living,tag=2053.Owner,limit=1] run kill @s
+    execute unless entity @e[type=#lib:living,tag=2053.Owner,distance=..100,limit=1] run kill @s
 
 # リセット
-    tag @e[type=#lib:living,tag=2053.Owner,limit=1] remove 2053.Owner
+    tag @e[type=#lib:living,tag=2053.Owner,distance=..100,limit=1] remove 2053.Owner
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=160..}]
