@@ -20,12 +20,14 @@
 # ラビリア to Death
     execute if score @s General.Mob.Tick matches 510 if entity @s[tag=AU.LabyriaDeath] run function api:mob/kill
 
-# ズル対策
+# ブロック設置対策
     scoreboard players operation $IntervalTime Temporary = @s General.Mob.Tick
     scoreboard players operation $IntervalTime Temporary %= $40 Const
     execute if score $IntervalTime Temporary matches 0 run function asset:mob/0390.triple_rabbits/ai/general/break_block
-    execute if score $IntervalTime Temporary matches 0 positioned ~-25 ~3.75 ~-25 at @a[tag=!PlayerShouldInvulnerable,dx=50,dy=25,dz=50] positioned ~ ~1 ~ run function asset:mob/0390.triple_rabbits/ai/general/summon_bullet
     scoreboard players reset $IntervalTime Temporary
+
+# 上に行ったプレイヤーを対策
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..50] run function asset:mob/0390.triple_rabbits/ai/general/penalty/check
 
 # 戦闘中プレイヤーを引き寄せる
     tag @s add AU.Target
