@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"墓荒らし"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"墓を掘り起こし、共に埋められた宝を奪う悪党。","color":"white"}','{"text":"掘り起こすためのシャベルで攻撃してくる。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"墓を掘り起こし、埋められた宝を奪う悪党。","color":"white"}','{"text":"掘り起こすためのシャベルで攻撃してくる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stone_shovel",Count:1b}
