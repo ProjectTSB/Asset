@@ -15,7 +15,7 @@
 
 # 攻撃対象にタグ付け
     tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry,distance=..128] add 71.Target
-    tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,distance=..16] add 71.Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..16] add 71.Target
 
 #音
     playsound minecraft:block.respawn_anchor.deplete player @a[distance=..16] ~ ~ ~ 1 1 1
