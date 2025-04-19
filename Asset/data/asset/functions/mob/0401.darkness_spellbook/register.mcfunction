@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"暗闇の魔導書","color":"#000350"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"エクアルが生み出した生きた魔導書。","color":"white"}','{"text":"放置していると、目が見えなくなりますね","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"エクアルが生み出した生きた魔導書。","color":"white"}','{"text":"放置していると、目が見えなくなりますね。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
