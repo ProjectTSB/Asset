@@ -9,6 +9,9 @@
 # 加算
     scoreboard players add $397_Count Temporary 1
 
+# 現座標が破壊不可能ブロックならreturnして終了
+    execute if block ~ ~ ~ #lib:unbreakable run return fail
+
 # 実行位置に条件を満たすブロックがあれば $397_Stat を1に
     execute unless block ~ ~ ~ #lib:no_collision if block ~ ~1 ~ #lib:no_collision if block ~ ~2 ~ #lib:no_collision run scoreboard players set $397_Stat Temporary 1
 

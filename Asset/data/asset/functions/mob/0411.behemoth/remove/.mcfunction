@@ -16,8 +16,8 @@
     function animated_java:behemoth_aj/remove/all
 
 # その他リセット
-    # function asset:mob/0411.behemoth/tick/util/remove_all_tag
+    function asset:mob/0411.behemoth/tick/util/remove_all_tag
 
 # オブジェクト消去
-    execute as @e[tag=BF.Object] on passengers run kill @s
-    kill @e[tag=BF.Object]
+    execute as @e[tag=BF.Object,distance=..160] on passengers run kill @s
+    kill @e[tag=BF.Object,distance=..160]

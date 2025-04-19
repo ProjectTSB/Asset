@@ -4,6 +4,10 @@
 #
 # @within function asset:object/2075.thunder_magic/tick/
 
+#> ヒットタグ
+# @private
+    #declare tag Hit
+
 # 演出
     particle dust 1 1 0 1 ~ ~3 ~ 0.7 3 0.7 0 150
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 150
@@ -20,8 +24,11 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] at @s run function api:damage/
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add Hit
+    execute positioned ~-0.5 ~0 ~-0.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=0,dy=9,dz=0] add Hit
+    execute as @a[tag=Hit,distance=..64] run function api:damage/
+# リセット
     function api:damage/reset
-
-# 自害
+    tag @a[tag=Hit,distance=..64] remove Hit
+# キル
     kill @s

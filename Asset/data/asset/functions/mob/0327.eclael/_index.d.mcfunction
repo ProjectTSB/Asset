@@ -13,6 +13,7 @@
             #declare function animated_java:eclael/animations/pause_all
             #declare function animated_java:eclael/animations/0_1_former_idle_akubi/tween
             #declare function animated_java:eclael/animations/0_2_former_idle_sleep/tween
+            #declare function animated_java:eclael/animations/0_2_former_idle_sleep_rare/tween
             #declare function animated_java:eclael/animations/30_0_phase_death/tween
             #declare function animated_java:eclael/animations/0_3_former_idle_bikkuri/tween
             #declare function animated_java:eclael/animations/0_0_former_idle_normal/tween
@@ -88,17 +89,35 @@
             #declare function animated_java:eclael/animations/25_2_guard_2/tween
             #declare function animated_java:eclael/animations/26_0_phase_change/tween
             #declare function animated_java:eclael/animations/27_0_latter_thunderstorm/tween
+            #declare function animated_java:eclael/animations/31_0_field_thunder/tween
             #declare function animated_java:eclael/variants/default/apply
             #declare function animated_java:eclael/variants/blink/apply
             #declare function animated_java:eclael/variants/akubi/apply
             #declare function animated_java:eclael/variants/wink/apply
             #declare function animated_java:eclael/animations/12_2_latter_warp_slash_0/resume
             #declare function animated_java:eclael/animations/12_3_latter_warp_slash_1/resume
+            #declare function animated_java:eclael/animations/32_0_jump_start/tween
+            #declare function animated_java:eclael/animations/32_1_jump_fall/tween
+            #declare function animated_java:eclael/animations/32_1_jump_spin/tween
+            #declare function animated_java:eclael/animations/33_0_moveslash_start/tween
+            #declare function animated_java:eclael/animations/33_1_moveslash_1/tween
+            #declare function animated_java:eclael/animations/34_field_slash/tween
+            #declare function animated_java:eclael/animations/34_field_slash_end/tween
+            #declare function animated_java:eclael/animations/35_move/tween
+            #declare function animated_java:eclael/animations/35_0_slash_beam_start/tween
+            #declare function animated_java:eclael/animations/35_1_slash_beam/tween
+            #declare function animated_java:eclael/animations/36_quick_iai/tween
+            #declare function animated_java:eclael/animations/36_quick_iai_turn/tween
+            #declare function animated_java:eclael/animations/37_fall_spear/tween
+            #declare function animated_java:eclael/animations/38_upper_shot_combo/tween
+            #declare function animated_java:eclael/animations/38_upper_shot_combo_hard/tween
+            #declare function animated_java:eclael/animations/39_circle_slash/tween
     ## API用
     #declare tag SpreadMarker
     #declare tag Attacker
     #
     ## 処理用
+    #declare tag 93.EntityRoot
     #declare tag 93.EndInit
     #declare tag 93.SkipDeathFunc
     #declare tag 93.ModelRoot animated_javaモデルにつける処理簡略化用のタグ
@@ -166,3 +185,21 @@
     #declare tag 93.Skill.Latter.SpinSlash 回転斬り
     #declare tag 93.Skill.Latter.Thunderstorm 雷雨
     #declare tag 93.Skill.Latter.Sorafune.Start 宙船・単発
+    ## スキル：追加分
+    #declare tag 93.Skill.FieldThunder 全体落雷
+    #declare tag 93.Skill.Fall 天泣
+    #declare tag 93.Skill.MoveSlash 移動斬り
+    #declare tag 93.Skill.FieldSlash 全体斬り
+    #declare tag 93.Skill.FieldSlash.A 全体斬りパターンA
+    #declare tag 93.Skill.Beam 残心
+    #declare tag 93.Skill.IaiMove 居合
+    #declare tag 93.Skill.IaiMove.Turn 折り返し居合
+    #declare tag 93.Skill.IaiMove.Hit 居合ヒット
+    #declare tag 93.Skill.Tensei 落下突き
+    #declare tag 93.Skill.Circle 円範囲斬撃
+    #declare tag 93.Skill.UpperShot 曲射
+    ## その他、オブジェクト
+    #declare tag 93.Temp.Ground
+    #declare tag 93.Temp.AttackPosition
+    #declare tag 93.Temp.AttackRotation
+    #declare tag 93.Object

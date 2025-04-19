@@ -1,6 +1,6 @@
 #> asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/5.damage
 #
-# アニメーションのイベントハンドラ Kt斬り下がり ダメージ判定
+# アニメーションのイベントハンドラ Sync交差攻撃・斬り上げ ダメージ判定
 #
 # @within
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/1.main
@@ -10,7 +10,7 @@
     execute positioned ^ ^ ^1.6 run tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
-    data modify storage api: Argument.Damage set value 45f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SyncUpper
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

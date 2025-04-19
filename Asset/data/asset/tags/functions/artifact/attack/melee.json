@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1269.apocalypse/trigger/1.trigger",
+        "asset:artifact/1209.sinful_scythe/trigger/1.trigger",
         "asset:artifact/1282.ice_axe/trigger/1.trigger",
         "asset:artifact/0292.craving_sword/melee/1.trigger",
         "asset:artifact/1268.axe_of_wrath_fire/trigger/1.trigger",
@@ -64,7 +66,6 @@
         "asset:artifact/0319.thunderbolt_sword/trigger/1.trigger",
         "asset:artifact/0535.all_night_chestplate/trigger/1.trigger",
         "asset:artifact/0320.divine_thunder_sword/trigger/1.trigger",
-        "asset:artifact/0559.solitariness/trigger/1.trigger",
         "asset:artifact/0615.censored/trigger/1.trigger",
         "asset:artifact/0605.ambition/trigger/1.trigger",
         "asset:artifact/0735.collision_plate/trigger/1.trigger",

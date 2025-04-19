@@ -20,6 +20,8 @@
     data modify storage asset:object Field.Color set value 16766720
     data modify storage asset:object Field.ShowCritParticle set value false
     data modify storage asset:object Field.Range set value 48
+    data modify storage asset:object Field.AttackType set value "Magic"
+    data modify storage asset:object Field.ElementType set value "None"
     # data modify storage asset:object Field.Speed set value 4
     # data modify storage asset:object Field.Damage set value 1
     # data modify storage asset:object Field.Enhanced set value true

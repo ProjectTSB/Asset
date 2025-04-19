@@ -61,3 +61,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.6
 # フィールド
     data modify storage asset:mob Field.Damage set value 36f
+    data modify storage asset:mob Field.CannotMakeScaffoldTick set value 6

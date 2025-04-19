@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ずぶ濡れ"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"水耐性が大きく減少し、移動速度が低下する"}'
+    data modify storage asset:effect Description set value ['{"text":"水耐性が大きく減少し、移動速度が低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
