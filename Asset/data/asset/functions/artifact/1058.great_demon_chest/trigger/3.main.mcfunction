@@ -14,7 +14,7 @@
 
 # 物理攻撃+5%
     data modify storage api: Argument.UUID set value [I;1,1,1058,5]
-    data modify storage api: Argument.Amount set value 0.075
+    data modify storage api: Argument.Amount set value 0.10
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
 
@@ -26,13 +26,13 @@
 
 # 魔法攻撃-5%
     data modify storage api: Argument.UUID set value [I;1,1,1058,5]
-    data modify storage api: Argument.Amount set value -0.025
+    data modify storage api: Argument.Amount set value -0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/magic/add
 
 # 魔法耐性-5%
     data modify storage api: Argument.UUID set value [I;1,1,1058,5]
-    data modify storage api: Argument.Amount set value -0.025
+    data modify storage api: Argument.Amount set value -0.05
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/defense/magic/add
 

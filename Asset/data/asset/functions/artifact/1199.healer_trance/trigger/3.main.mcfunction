@@ -33,7 +33,7 @@
 
 # バフ
     data modify storage api: Argument.ID set value 308
-    execute store result storage api: Argument.Stack int 0.7 run scoreboard players get $Sum Temporary
+    execute store result storage api: Argument.Stack int 0.6 run scoreboard players get $Sum Temporary
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

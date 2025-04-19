@@ -26,7 +26,7 @@
     execute positioned ^ ^ ^3 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] add Target
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 150.0f
+    data modify storage api: Argument.Damage set value 300.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

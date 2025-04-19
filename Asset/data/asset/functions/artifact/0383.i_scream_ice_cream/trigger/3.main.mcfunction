@@ -28,7 +28,7 @@
     effect give @e[type=#lib:living,type=!player,tag=Enemy.Boss,tag=!Uninterferable,distance=..5] slowness 4 1
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 42f
+    data modify storage api: Argument.Damage set value 32f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

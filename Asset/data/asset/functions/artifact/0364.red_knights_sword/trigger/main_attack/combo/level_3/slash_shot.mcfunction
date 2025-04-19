@@ -12,7 +12,7 @@
     # オブジェクトのID指定
         data modify storage api: Argument.ID set value 1131
     # 発射体の設定: ダメージ
-        execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 300..400
+        execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 180..240
     # 発射体の設定: 飛距離(飛距離1につき0.5進みます)
         data modify storage api: Argument.FieldOverride.Range set value 35
     # 発射体の設定: 弾速(0.5にここの数値を掛けたぶんの距離を1tickで進みます)

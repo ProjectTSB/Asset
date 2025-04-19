@@ -10,7 +10,7 @@
     particle minecraft:scrape ~ ~1 ~ 0 0 0 10 100
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 1250f
+    data modify storage api: Argument.Damage set value 1700f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     execute as @p[tag=this] run function api:damage/modifier

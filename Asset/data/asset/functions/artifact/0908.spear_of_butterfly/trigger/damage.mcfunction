@@ -8,11 +8,11 @@
     function api:modifier/max_health/get
 
 # 体力が50%未満か否かで最大体力によるダメージボーナスを調整する
-    execute if score $HealthPer Temporary matches 50.. store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 0.8
-    execute unless score $HealthPer Temporary matches 50.. store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 1.8
+    execute if score $HealthPer Temporary matches 50.. store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 0.6
+    execute unless score $HealthPer Temporary matches 50.. store result score $P8.Damage Temporary run data get storage api: Return.MaxHealth 1.6
 
 # 基礎ダメージ
-    scoreboard players add $P8.Damage Temporary 160
+    scoreboard players add $P8.Damage Temporary 110
 
 # 5段目はダメージを半分にする
     execute if score @s P8.AttackCount matches 5 run scoreboard players operation $P8.Damage Temporary /= $2 Const

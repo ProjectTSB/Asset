@@ -38,13 +38,13 @@
     # ダメージ定義
         # 非プレイヤー
         # 7発目なら強制的に2000
-            execute if score $UseCount Temporary matches 1 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 500f
-            execute if score $UseCount Temporary matches 2 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 650f
-            execute if score $UseCount Temporary matches 3 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 800f
-            execute if score $UseCount Temporary matches 4 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 950f
-            execute if score $UseCount Temporary matches 5 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1050f
-            execute if score $UseCount Temporary matches 6 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1350f
-            execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2000f
+            execute if score $UseCount Temporary matches 1 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1100f
+            execute if score $UseCount Temporary matches 2 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1250f
+            execute if score $UseCount Temporary matches 3 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1450f
+            execute if score $UseCount Temporary matches 4 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 1650f
+            execute if score $UseCount Temporary matches 5 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2050f
+            execute if score $UseCount Temporary matches 6 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2350f
+            execute if score $UseCount Temporary matches 7 run data modify storage api: Argument.FieldOverride.Damage.ToNonPlayer set value 2700f
 
         # プレイヤー
         # 7発目なら強制的に50

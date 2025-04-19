@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 65
+    data modify storage asset:artifact MPCost set value 42
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
@@ -51,6 +51,9 @@
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "summon"
     data modify storage asset:artifact TypeCooldown.Duration set value 240
+# 第二種別クールダウン ({Type: string, Duration: int}) (オプション)
+    data modify storage asset:artifact SecondaryTypeCooldown.Type set value "longRange"
+    data modify storage asset:artifact SecondaryTypeCooldown.Duration set value 40
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

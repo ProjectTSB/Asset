@@ -9,7 +9,7 @@
     execute as @e[type=#lib:living,type=!player,tag=R4.Hit,tag=!Uninterferable,distance=..3] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=R4.Hit,tag=!Uninterferable,distance=..100] remove R4.Hit
 
 # 引数の設定
-    execute store result storage api: Argument.Damage float 1 run random value 180..215
+    execute store result storage api: Argument.Damage float 1 run random value 145..195
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
