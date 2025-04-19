@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソリタリネス","color":"#468581"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"セット効果：孤独"}','{"text":"孤独な時、移動速度+20%、MP回復量+35%"}','{"text":"時々自己嫌悪に陥る"}','{"text":"孤独が唯一の友人だった","color":"dark_gray"}','{"text":"誰もあなたの為に泣かないさ","color":"dark_gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"セット効果：孤独"}','{"text":"孤独な時、移動速度+40%、MP回復量+35%"}','{"text":"時々自己嫌悪に陥る"}','{"text":"孤独が唯一の友人だった","color":"dark_gray"}','{"text":"誰もあなたの為に泣かないさ","color":"dark_gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
