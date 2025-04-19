@@ -13,5 +13,10 @@
     data modify storage api: Argument.ID set value 2219
     execute at @s run function api:object/summon
 
+# ボスドロ
+    data modify storage api: Argument.ID set value 1209
+    data modify storage api: Argument.Important set value true
+    function api:artifact/spawn/from_id
+
 # Super
     function asset:mob/super.death
