@@ -32,7 +32,7 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 10
+    # data modify storage asset:mob AttackDamage set value 10
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
