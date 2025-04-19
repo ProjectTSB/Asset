@@ -13,5 +13,5 @@
     function api:mp/set
 
 # 音を鳴らす
-    playsound block.chain.step player @s ~ ~ ~ 0.2 0
-    playsound entity.illusioner.prepare_blindness player @s ~ ~ ~ 0.6 1.5
+    playsound block.chain.step player @a ~ ~ ~ 0.2 0
+    playsound entity.illusioner.prepare_blindness player @a ~ ~ ~ 0.6 1.5
