@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ゴブリン"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"いかにも序盤に出てくる敵。","color":"white"}','{"text":"まあ、敵ですねって感じ。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"いかにも序盤に出てくる敵って感じ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
