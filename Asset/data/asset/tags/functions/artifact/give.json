@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1140.over_pulse_booster/give/1.trigger",
+        "asset:artifact/1139.over_pulse_legframe/give/1.trigger",
+        "asset:artifact/1138.over_pulse_bodyarmor/give/1.trigger",
+        "asset:artifact/1137.over_pulse_headgear/give/1.trigger",
         "asset:artifact/1231.hardened_leather_helmet/give/1.trigger",
         "asset:artifact/1232.hardened_leather_chestplate/give/1.trigger",
         "asset:artifact/1233.hardened_leather_leggings/give/1.trigger",
