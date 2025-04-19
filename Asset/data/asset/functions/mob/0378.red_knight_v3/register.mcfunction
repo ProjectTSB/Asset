@@ -22,7 +22,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"赤い騎士","color":"dark_red"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"血に染まった赤い騎士。","color":"white"}','{"text":"(掠れていて何も読めない...)","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"(掠れていて何も読めない...)","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
