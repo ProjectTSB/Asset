@@ -84,6 +84,11 @@
         data modify storage asset:mob Field.Damage.SyncThrowFar set value 55f
     # 追撃
         data modify storage asset:mob Field.Damage.SyncThrowImpact set value 50f
+# シンクロ・鎌
+    # 斬撃
+        data modify storage asset:mob Field.Damage.SyncScSlash set value 40f
+    # 鎌投げ
+        data modify storage asset:mob Field.Damage.SyncScThrow set value 40f
 # 怯み庇い
     # 飛び込み斬り
         data modify storage asset:mob Field.Damage.CoverJump set value 50f
