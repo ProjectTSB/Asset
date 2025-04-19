@@ -79,11 +79,11 @@
         data modify storage asset:mob Field.Damage.SyncUpper set value 5f
 # シンクロ・ルビィぶん投げ
     # 直撃
-        data modify storage asset:mob Field.Damage.SyncThrowNear set value 65f
+        data modify storage asset:mob Field.Damage.SyncThrowNear set value 70f
     # 外側
         data modify storage asset:mob Field.Damage.SyncThrowFar set value 55f
     # 追撃
-        data modify storage asset:mob Field.Damage.SyncThrowImpact set value 50f
+        data modify storage asset:mob Field.Damage.SyncThrowImpact set value 47f
 # シンクロ・鎌
     # 斬撃
         data modify storage asset:mob Field.Damage.SyncScSlash set value 40f
