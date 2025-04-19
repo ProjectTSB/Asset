@@ -40,7 +40,7 @@
     # 剣ビーム
         data modify storage asset:mob Field.Damage.Beam set value 40.0f
     # 居合・2ヒット
-        data modify storage asset:mob Field.Damage.Iai set value 42.0f
+        data modify storage asset:mob Field.Damage.Iai set value 47.0f
     # 3連攻撃
         data modify storage asset:mob Field.Damage.Slash0 set value 40.0f
         data modify storage asset:mob Field.Damage.Slash1 set value 35.0f
