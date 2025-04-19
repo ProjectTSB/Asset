@@ -16,7 +16,7 @@
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 1141
 # ダメージ設定
-    execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 600..800
+    execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 1150..1650
 # 飛距離設定
     data modify storage api: Argument.FieldOverride.Speed set value 1
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

@@ -14,8 +14,10 @@
     execute if score @s AW.AnimationTick matches 121 run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/end
 
 # 魔導書召喚
+    execute if score @s AW.AnimationTick matches 41 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/normal
     execute if score @s AW.AnimationTick matches 61 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/normal
     execute if score @s AW.AnimationTick matches 41 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
+    execute if score @s AW.AnimationTick matches 51 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
     execute if score @s AW.AnimationTick matches 61 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
 
 # バリアント

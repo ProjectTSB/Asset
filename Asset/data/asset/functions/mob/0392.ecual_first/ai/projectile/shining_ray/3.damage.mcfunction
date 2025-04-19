@@ -44,8 +44,8 @@
 
 # ダメージ式：8N + 36
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
-    scoreboard players add $DamageTemp Temporary 36
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 15
+    scoreboard players add $DamageTemp Temporary 30
 
 # ダメージ
     # 引数の設定
@@ -55,6 +55,8 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Water"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの放った光条によって、焼き払われた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     # 補正functionを実行

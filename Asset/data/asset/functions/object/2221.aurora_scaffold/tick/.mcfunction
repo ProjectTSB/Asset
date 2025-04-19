@@ -11,9 +11,10 @@
     scoreboard players remove @s General.Object.Tick 1
 
 # 40tick毎にOwnerが近くにいるかチェックする
+# 壊れ始めているならチェックしない
     execute store result storage asset:context this.Interval int 0.9999999999 run data get storage asset:context this.Interval
-    execute if data storage asset:context this{Interval:0} run function asset:object/2221.aurora_scaffold/tick/check_owner
-    execute if data storage asset:context this{Interval:0} run data modify storage asset:context this.Interval set value 40
+    execute unless score @s General.Object.Tick matches ..30 if data storage asset:context this{Interval:0} run function asset:object/2221.aurora_scaffold/tick/check_owner
+    execute unless score @s General.Object.Tick matches ..30 if data storage asset:context this{Interval:0} run data modify storage asset:context this.Interval set value 40
 
 # 3x3のそれぞれが水色のステンドグラスではないかをチェック
     execute unless block ~ ~ ~ cyan_stained_glass run data modify storage asset:context this.CheckBreak.1 set value true

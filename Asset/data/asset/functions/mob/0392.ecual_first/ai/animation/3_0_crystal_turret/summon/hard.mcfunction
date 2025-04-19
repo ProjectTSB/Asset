@@ -22,9 +22,10 @@
     scoreboard players operation $AW.Crystal Temporary += $AW.Temp Temporary
 
 # クリスタル召喚
-    execute if score $AW.Crystal Temporary matches ..3 at 0-0-0-0-0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
-    execute if score $AW.Crystal Temporary matches ..3 at 0-0-0-0-0 rotated ~120 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
-    execute if score $AW.Crystal Temporary matches ..3 at 0-0-0-0-0 rotated ~240 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/5.summon_healer
+    execute if score $AW.Crystal Temporary matches ..4 at 0-0-0-0-0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
+    execute if score $AW.Crystal Temporary matches ..4 at 0-0-0-0-0 rotated ~90 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
+    execute if score $AW.Crystal Temporary matches ..4 at 0-0-0-0-0 rotated ~180 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/5.summon_healer
+    execute if score $AW.Crystal Temporary matches ..4 at 0-0-0-0-0 rotated ~270 0 positioned ^ ^ ^15 run function asset:mob/0392.ecual_first/ai/general/4.summon_turret
 
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

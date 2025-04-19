@@ -13,9 +13,12 @@
     execute as @e[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..3.5] positioned ^ ^ ^-100 run tag @s[type=#lib:living,type=!player,tag=A4.Hit,tag=!Uninterferable,distance=..100] remove A4.Hit
 
 # 引数の設定
-    execute store result storage api: Argument.Damage float 1 run random value 300..370
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "None"
+    # ダメージ値設定
+        execute store result storage api: Argument.Damage float 1 run random value 240..340
+    # 第一属性
+        data modify storage api: Argument.AttackType set value "Physical"
+    # 第二属性
+        data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
     execute as @p[tag=this] run function api:damage/modifier
 # ダメージ実行

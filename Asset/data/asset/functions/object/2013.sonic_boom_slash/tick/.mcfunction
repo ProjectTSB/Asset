@@ -31,3 +31,6 @@
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]
+
+# リセット
+    data remove storage asset:temp 2013

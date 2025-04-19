@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:effect/0338.jump_spring/_/register",
+        "asset:effect/0337.night_vision_goggle/_/register",
+        "asset:effect/0274.pulse_armor/_/register",
         "asset:effect/0336.self_loathing/_/register",
         "asset:effect/0335.solitariness/_/register",
         "asset:effect/658.heiloang_weak_thunder/_/register",

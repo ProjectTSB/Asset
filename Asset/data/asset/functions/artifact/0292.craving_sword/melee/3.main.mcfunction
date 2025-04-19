@@ -19,7 +19,7 @@
     data modify storage api: Argument.Metadata set value "84.CravingSword"
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 30..40
+    execute store result storage api: Argument.Damage float 1 run random value 35..50
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
