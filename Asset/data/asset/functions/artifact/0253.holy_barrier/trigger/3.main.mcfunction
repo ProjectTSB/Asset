@@ -14,7 +14,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 攻撃対象にタグ付け
-    tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry] add 71.Target
+    tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry,distance=..128] add 71.Target
     tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,distance=..16] add 71.Target
 
 #音
