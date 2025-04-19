@@ -2,7 +2,7 @@
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/2025/register
+# @within function asset:object/alias/2035/register
 
 # 継承(オプション)
     # data modify storage asset:object Extends append value
