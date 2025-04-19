@@ -42,10 +42,10 @@
     function api:modifier/mp_regen/add
 
 # 魔法攻撃
-    data modify storage api: Argument.UUID set value [I;1,1,715,6]
-    data modify storage api: Argument.Amount set value 0.025
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/attack/magic/add
+    # data modify storage api: Argument.UUID set value [I;1,1,715,6]
+    # data modify storage api: Argument.Amount set value 0.025
+    # data modify storage api: Argument.Operation set value "multiply_base"
+    # function api:modifier/attack/magic/add
 
 # 攻撃力-5%
     # data modify storage api: Argument.UUID set value [I;1,1,715,6]

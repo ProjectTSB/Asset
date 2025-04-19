@@ -20,7 +20,6 @@
             scoreboard players add $ChargeCount Temporary 1
             scoreboard players operation $FlareDamage Temporary *= $ChargeCount Temporary
         scoreboard players add $FlareDamage Temporary 50
-        tellraw @a {"score":{"name":"$FlareDamage","objective":"Temporary"}}
     # 計算
         execute store result storage api: Argument.Damage double 0.0001 run scoreboard players operation $FlareDamage Temporary *= $MaxHealth Temporary
     # 終了

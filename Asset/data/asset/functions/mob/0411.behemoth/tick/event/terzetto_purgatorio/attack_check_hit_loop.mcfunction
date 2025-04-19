@@ -17,7 +17,7 @@
     execute if entity @s[tag=BF.Temp.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=!2180.Pillar.Death,sort=nearest,limit=1] add 2180.Pillar.Death
 
 # ヒット判定
-    tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add BG.Temp.AttackHit
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add BF.Temp.AttackHit
     execute if entity @a[distance=..1] run particle explosion ~ ~ ~ 1 1 1 0 5
 
 # ループ

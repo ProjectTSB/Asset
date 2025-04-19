@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 203
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"ナゾの肉","color":"light_purple"}'
+    data modify storage asset:effect Name set value '{"text":"謎肉","color":"light_purple"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"与ダメージとMP回復量、機動力が大きく上昇するが、回復することができない","color":"white"}','{"text":"効果終了時、最大体力に比例したダメージを受け、MPが0になる","color":"white"}']
 # 効果時間 (int) (default = API || error)

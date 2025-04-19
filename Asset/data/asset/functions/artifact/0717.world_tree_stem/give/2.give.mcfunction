@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"世界樹の幹","color":"#80FF9D"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大体力+5% ","color":"light_purple"},{"text":"MP回復量+7.5%","color":"green"}]','[{"text":"回復量+8% ","color":"light_purple"},{"text":"魔法攻撃+2.5% ","color":"white"}]','[{"text":"世界を見据える大樹に祝福を。","color":"gray"}]','[{"text":"骨幹を模した世界樹の幹。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"最大体力+5% ","color":"light_purple"},{"text":"MP回復量+7.5%","color":"green"}]','[{"text":"回復量+8% ","color":"light_purple"}]','[{"text":"世界を見据える大樹に祝福を。","color":"gray"}]','[{"text":"骨幹を模した世界樹の幹。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

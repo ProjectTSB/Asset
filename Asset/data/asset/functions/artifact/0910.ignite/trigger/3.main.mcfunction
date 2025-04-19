@@ -24,7 +24,7 @@
     function api:damage/single_damage_session/open
 
 # 近接で殴った相手に800ダメ
-    data modify storage api: Argument.Damage set value 880.0f
+    data modify storage api: Argument.Damage set value 980.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
