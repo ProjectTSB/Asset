@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "asset:mob/0005.thief/enroll_pool",
         "asset:mob/0219.aorta/enroll_pool",
         "asset:mob/0220.vena_cana/enroll_pool",
         "asset:mob/0260.shadow_stalker/enroll_pool",
