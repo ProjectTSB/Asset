@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"歪みの魔導書","color":"dark_purple","underlined":true}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"生きた魔導書。","color":"white"}','{"text":"どこかにいる敵を移動させる能力をもつ。","color":"white"}','{"text":"気づかぬうちに囲まれていないよう、注意しよう。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"生きた魔導書。","color":"white"}','{"text":"どこかにいる敵を移動させる能力をもつ。","color":"white"}','{"text":"気づかぬうちに囲まれないよう、注意しよう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
