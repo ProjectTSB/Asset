@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ハニーリーダー","color":"#FFBD24"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"べっとべとな上に、べっとべとな奴らのリーダー","color":"white"}','{"text":"ビームを打つし、敵を回復もしてくる。","color":"white"}','{"text":"べとべとしすぎるとどうやら光るらしい。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"べっとべとな上に、べっとべとな奴らのリーダー","color":"white"}','{"text":"ビームを打つし、敵を回復もしてくる。","color":"white"}','{"text":"回復される前に真っ先に倒してしまおう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"carrot_on_a_stick",Count:1b,tag:{CustomModelData:840}}
