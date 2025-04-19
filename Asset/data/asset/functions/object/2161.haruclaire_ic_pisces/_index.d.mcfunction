@@ -15,3 +15,4 @@
     #declare tag 2161.Attack.Hit
     #declare tag 2161.Model
     #declare tag 2161.Model.Ride
+    #declare tag aj.data
