@@ -9,9 +9,9 @@
 # animated javaアニメーション再生 (長さ：31tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/3_0.play_start_animation
 # プレイヤーの方を向く
-    execute if score @s 93.AnimationTimer matches 1 facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if score @s 93.AnimationTimer matches 1 facing entity @p[distance=..80] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
     execute if score @s 93.AnimationTimer matches 2..31 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 2..31 as @p run function asset:mob/0327.eclael/tick/app.general/1.rotate
+    execute if score @s 93.AnimationTimer matches 2..31 as @p[distance=..80] run function asset:mob/0327.eclael/tick/app.general/1.rotate
 # 移動
     execute if score @s 93.AnimationTimer matches 5 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
     execute if score @s 93.AnimationTimer matches 2..10 at @s unless entity @a[distance=..3] positioned ^ ^ ^0.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
@@ -30,7 +30,7 @@
     execute if score @s 93.AnimationTimer matches 32 run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/3_1.play_slash_0_animation
 # プレイヤーの方を向く
     execute if score @s 93.AnimationTimer matches 45..51 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 45..51 as @p run function asset:mob/0327.eclael/tick/app.general/1.rotate
+    execute if score @s 93.AnimationTimer matches 45..51 as @p[distance=..80] run function asset:mob/0327.eclael/tick/app.general/1.rotate
 # 移動
     execute if score @s 93.AnimationTimer matches 32..36 at @s positioned ^ ^ ^0.3 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 37..45 at @s positioned ^ ^ ^0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
@@ -51,7 +51,7 @@
     execute if score @s 93.AnimationTimer matches 63 run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/3_3.play_start_iai_animation
 # プレイヤーの方を向く
     execute if score @s 93.AnimationTimer matches 63..83 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 63..83 as @p run function asset:mob/0327.eclael/tick/app.general/1.rotate
+    execute if score @s 93.AnimationTimer matches 63..83 as @p[distance=..80] run function asset:mob/0327.eclael/tick/app.general/1.rotate
 # 移動
     execute if score @s 93.AnimationTimer matches 63..73 at @s unless entity @a[distance=..3] positioned ^ ^ ^0.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 63..65 at @s positioned ~ ~-0.4 ~ run function asset:mob/0327.eclael/tick/app.general/2.teleport
@@ -77,13 +77,6 @@
     execute if score @s 93.AnimationTimer matches 157 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
     execute if score @s 93.AnimationTimer matches 162 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
     execute if score @s 93.AnimationTimer matches 170 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
-
-# 表情
-    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
-    execute if score @s 93.AnimationTimer matches 5 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
-    execute if score @s 93.AnimationTimer matches 32 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
-    execute if score @s 93.AnimationTimer matches 63 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
-    execute if score @s 93.AnimationTimer matches 91 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
 
 # 終了
     execute if score @s 93.AnimationTimer matches 200.. run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/2.end

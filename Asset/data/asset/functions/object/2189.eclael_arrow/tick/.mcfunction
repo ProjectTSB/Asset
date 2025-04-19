@@ -19,7 +19,7 @@
     execute positioned ^ ^ ^3 run function asset:object/2189.eclael_arrow/tick/move
     execute positioned ^ ^ ^4 run function asset:object/2189.eclael_arrow/tick/move
     tp @s ^ ^ ^5
-    execute if entity @a[tag=2189.Hit] as @a[tag=2189.Hit] at @s run function asset:object/2189.eclael_arrow/tick/attack
+    execute if entity @a[tag=2189.Hit] run function asset:object/2189.eclael_arrow/tick/attack
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=8..}]

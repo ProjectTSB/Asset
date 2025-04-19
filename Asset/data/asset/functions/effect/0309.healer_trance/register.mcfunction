@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ヒーラートランス"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"与回復量・被回復量が半減する"}'
+    data modify storage asset:effect Description set value ['{"text":"与回復量・被回復量が半減する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)

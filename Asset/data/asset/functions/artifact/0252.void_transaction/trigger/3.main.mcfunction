@@ -9,13 +9,20 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# エフェクトがあるか見る
-    data modify storage api: Argument.ID set value 204
-    function api:entity/mob/effect/get/from_id
-# あるなら演出
-    execute if data storage api: Return.Effect run tellraw @s [{"text":"［","color":"dark_purple","bold":true},{"text":"奈"},{"text":"落","obfuscated":true},{"text":"の主"},{"text":"］ "},{"text":"二","color":"dark_red","obfuscated":true},{"text":"重取引","color":"dark_red"},{"text":"とは何事だ","color":"dark_red"}]
-    execute if data storage api: Return.Effect run playsound minecraft:entity.lightning_bolt.thunder player @s ~ ~ ~ 1 1.5
-# ないなら呼び出し
-    execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 204
-    execute unless data storage api: Return.Effect run function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+# # エフェクトがあるか見る
+#     data modify storage api: Argument.ID set value 204
+#     function api:entity/mob/effect/get/from_id
+# # あるなら演出
+#     execute if data storage api: Return.Effect run tellraw @s [{"text":"［","color":"dark_purple","bold":true},{"text":"奈"},{"text":"落","obfuscated":true},{"text":"の主"},{"text":"］ "},{"text":"二","color":"dark_red","obfuscated":true},{"text":"重取引","color":"dark_red"},{"text":"とは何事だ","color":"dark_red"}]
+#     execute if data storage api: Return.Effect run playsound minecraft:entity.lightning_bolt.thunder player @s ~ ~ ~ 1 1.5
+# # ないなら呼び出し
+#     execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 204
+#     execute unless data storage api: Return.Effect run function api:entity/mob/effect/give
+#     function api:entity/mob/effect/reset
+
+# 一旦、クソ神器にする
+# 周囲のモブ(天使を除く）をremoveする
+    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..30] run function api:mob/remove
+    execute as @e[type=#lib:living,type=!player,tag=Friend,tag=!Uninterferable,distance=..30] run function api:mob/remove
+# プレイヤーを奈落に突き落とす
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..30] run tp ~ ~-9999 ~

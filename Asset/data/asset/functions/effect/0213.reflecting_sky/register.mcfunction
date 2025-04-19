@@ -11,7 +11,7 @@
 # 名前
     data modify storage asset:effect Name set value '{"text":"映天","color":"#3643FF"}'
 # 説明文
-    data modify storage asset:effect Description set value '{"text":"水属性与ダメージが大きく上昇する"}'
+    data modify storage asset:effect Description set value ['{"text":"水属性与ダメージが大きく上昇する"}']
 # 残り時間 (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (default = API || 1)

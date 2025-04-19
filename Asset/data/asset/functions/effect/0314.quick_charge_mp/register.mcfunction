@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"急速充電","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value '{"text":"継続的にMPを回復する"}'
+    data modify storage asset:effect Description set value ['{"text":"継続的にMPを回復する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)

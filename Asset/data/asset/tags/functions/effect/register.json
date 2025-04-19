@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:effect/658.heiloang_weak_thunder/_/register",
+        "asset:effect/657.heiloang_weak_water/_/register",
+        "asset:effect/0656.heiloang_weak_fire/_/register",
+        "asset:effect/0655.night_vision/_/register",
+        "asset:effect/0324.scripture_gambling/_/register",
+        "asset:effect/0281.addiction/_/register",
+        "asset:effect/0280.awaking_power/_/register",
         "asset:effect/0334.charge_of_apocalypse/_/register",
         "asset:effect/0319.karma/_/register",
         "asset:effect/0320.fatalerror_charge/_/register",
@@ -13,7 +20,7 @@
         "asset:effect/0330.deep_slash/_/register",
         "asset:effect/0329.charge_of_deep_azure/_/register",
         "asset:effect/0327.honey_poison/_/register",
-        "asset:effect/275.moon_blessing/_/register",
+        "asset:effect/0275.moon_blessing/_/register",
         "asset:effect/0238.raimei/_/register",
         "asset:effect/0322.zenith_slash_emitter/_/register",
         "asset:effect/0321.craving_recoil/_/register",

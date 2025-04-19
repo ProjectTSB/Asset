@@ -15,13 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"奈","color":"dark_purple","bold":true},{"text":"落","obfuscated":true},{"text":"との取引","obfuscated":false}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"絶大な力を得る代償に"}','[{"text":"奈","obfuscated":true},{"text":"落へ引きずり込まれる。","obfuscated":false}]']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲の生物を奈落に突き落とす"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 1
+    data modify storage asset:artifact RemainingCount set value 6
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
-    # data modify storage asset:artifact SpecialCooldown set value
+    data modify storage asset:artifact SpecialCooldown set value 3600
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)

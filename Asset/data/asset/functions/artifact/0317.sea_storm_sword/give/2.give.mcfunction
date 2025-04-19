@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"荒波の剣","color":"dark_blue"}'
+    data modify storage asset:artifact Name set value '{"text":"氷晶の剣","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"水流を纏った剣。 "}','{"text":"敵に強力な物理水属性ダメージを与える"}']
+    data modify storage asset:artifact Lore set value ['{"text":"凍てつく刀身を持つ大剣。 "}','{"text":"敵に強力な物理水属性ダメージを与える"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

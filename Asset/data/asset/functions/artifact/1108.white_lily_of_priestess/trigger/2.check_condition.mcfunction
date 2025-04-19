@@ -19,5 +19,6 @@
     execute if entity @s[tag=CanUsed] run function asset:artifact/1108.white_lily_of_priestess/trigger/3.main
 
 # リセット
+    data remove storage asset:temp Check
     scoreboard players reset $DebuffTotal Temporary
     scoreboard players reset @a[distance=..20] Temporary

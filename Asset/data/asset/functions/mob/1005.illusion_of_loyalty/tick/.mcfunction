@@ -38,3 +38,6 @@
 
 # リセット
     tag @e[type=item_display,tag=RX.ModelRoot.Target] remove RX.ModelRoot.Target
+
+# super
+    function asset:mob/super.tick
