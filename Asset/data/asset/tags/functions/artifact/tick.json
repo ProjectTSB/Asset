@@ -1,11 +1,12 @@
 {
     "values": [
+        "asset:artifact/1057.great_demon_head/tick/1.trigger",
+        "asset:artifact/1066.weight_stone/tick/1.trigger",
         "asset:artifact/0562.heartland/trigger/1.trigger",
         "asset:artifact/0566.great_sage_helmet/tick/1.trigger",
         "asset:artifact/0954.inverted_parachute/trigger/1.trigger",
         "asset:artifact/1118.time_samsara/trigger/1.trigger",
         "asset:artifact/0928.ankh/trigger/1.trigger",
-        "asset:artifact/1057.great_demon_head/trigger/tick/",
         "asset:artifact/1074.farothdal/trigger/1.trigger",
         "asset:artifact/0963.hunters_amulet/trigger/1.trigger",
         "asset:artifact/1054.quick_charging_battery/trigger/1.trigger",
