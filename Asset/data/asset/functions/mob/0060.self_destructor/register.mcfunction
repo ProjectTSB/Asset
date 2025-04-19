@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"自爆者","color":"dark_red"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"クリーパー顔負けの爆発を起こす。","color":"white"}','{"text":"地形破壊はしないのでそこだけは良心的。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"クリーパー顔負けの爆発を起こす。","color":"white"}','{"text":"ブロックを破壊はしないのでそこだけは良心的。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:tnt",Count:1b}
