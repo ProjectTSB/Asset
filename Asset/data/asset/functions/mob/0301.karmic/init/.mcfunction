@@ -4,6 +4,8 @@
 #
 # @within asset:mob/alias/301/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_karmic",Active:true}]
 
 # super.init呼び出し
     function asset:mob/super.init
