@@ -12,8 +12,10 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
+
 # 攻撃対象にタグ付け
-    tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry] add 71.Target
+    tag @e[type=#lib:living,tag=!Enemy.Boss,tag=!Uninterferable,predicate=asset:artifact/0253.holy_barrier/is_angry,distance=..128] add 71.Target
+    tag @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..16] add 71.Target
 
 #音
     playsound minecraft:block.respawn_anchor.deplete player @a[distance=..16] ~ ~ ~ 1 1 1
@@ -21,7 +23,7 @@
 
 # particle
     execute anchored eyes rotated ~ 0 positioned ^ ^ ^0.2 run function asset:artifact/0253.holy_barrier/trigger/3.1.particle_barrier
-    execute at @e[type=#lib:living,tag=71.Target] run function asset:artifact/0253.holy_barrier/trigger/3.2.particle_reflect
+    execute at @e[type=#lib:living,tag=71.Target,distance=..128] run function asset:artifact/0253.holy_barrier/trigger/3.2.particle_reflect
 
 # 敵を破壊する
-    execute as @e[type=#lib:living,tag=71.Target] run function api:mob/kill
+    execute as @e[type=#lib:living,tag=71.Target,distance=..128] run function api:mob/kill

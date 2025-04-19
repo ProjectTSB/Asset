@@ -32,15 +32,15 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1
 # 攻撃力 (double) (オプション)
-    data modify storage asset:mob AttackDamage set value 10
+    # data modify storage asset:mob AttackDamage set value 10
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    data modify storage asset:mob Speed set value 0
+    data modify storage asset:mob Speed set value 0.03
 # 索敵範囲 (double) (オプション)
-    data modify storage asset:mob FollowRange set value 2
+    data modify storage asset:mob FollowRange set value 16
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1.0
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
