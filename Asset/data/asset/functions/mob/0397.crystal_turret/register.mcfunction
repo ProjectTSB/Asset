@@ -13,7 +13,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"クリスタルタレット"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value 
+    data modify storage asset:mob Lore set value ['{"text":"エクアルが生み出した水晶型射撃装置。","color":"white"}','{"text":"壊さないと大変なことになりそうな予感がする。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 1200
 # ノックバック耐性 (double) (オプション)

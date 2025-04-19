@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"破","color":"#520000","bold":true},{"text":"滅","color":"#330000","italic":true}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"これは罪だ。","color":"white"}','{"text":"時間経過で発狂し、全てを破壊する。それに例外はない。","color":"white"}','{"text":"たとえ自身であったとしても。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"stick",Count:1b,tag:{CustomModelData:20064}}

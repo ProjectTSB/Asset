@@ -22,7 +22,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"雷鳴之使","color":"#D9B111"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"強烈な雷を操る雷鳴の化身。","color":"white"}','{"text":"雷の如く高速で移動し、強烈な矢と雷で敵を圧倒する。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:1061,Enchantments:[{id:"punch",lvl:1s}]}}

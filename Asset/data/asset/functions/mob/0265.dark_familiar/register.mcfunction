@@ -17,7 +17,9 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set from entity @s CustomName
+    data modify storage asset:mob Name set value '{"text":"ダークファミリア","color":"#B638FF","italic":false}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"闇の力で呼び出された眷属。","color":"white"}','{"text":"ふわふわと主人の近くを飛び回りながら、","color":"white"}','{"text":"敵に向かって魔法による攻撃を行う。","color":"white"}']
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
