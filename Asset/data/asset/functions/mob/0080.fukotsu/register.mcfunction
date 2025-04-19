@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"富骨","color":"yellow"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-data modify storage asset:mob Lore set value ['{"text":"全身黄金で染まったスケルトン。","color":"white"}','{"text":"しかし金メッキとの噂がある。","color":"white"}']
+data modify storage asset:mob Lore set value ['{"text":"全身が黄金で染まったスケルトン。","color":"white"}','{"text":"しかし実は金メッキとの噂がある。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:318}}
