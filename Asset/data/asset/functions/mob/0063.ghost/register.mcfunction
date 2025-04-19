@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"死霊","color":"black"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"死後もなお、その場にとどまり続ける霊的存在。","color":"white"}','{"text":"さほど気にするものではないが、彼の矢には一瞬目をくらます効果がある。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"死後もなお、その場にとどまり続ける霊的存在。","color":"white"}','{"text":"さほど気にするものではないが、その矢には一瞬目をくらます効果がある。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b}
