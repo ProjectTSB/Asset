@@ -1,4 +1,4 @@
-#> asset:effect/0236.solitariness/fullset/remove
+#> asset:effect/0236.solitariness/fullset/modifier/remove
 #
 #
 #

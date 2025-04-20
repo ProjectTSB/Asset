@@ -6,4 +6,4 @@
 
 # 解除
     tag @s remove 236.Loneliness
-    function asset:effect/0236.solitariness/fullset/remove
+    function asset:effect/0236.solitariness/fullset/modifier/remove

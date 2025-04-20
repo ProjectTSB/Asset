@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "chest"
+    data modify storage asset:artifact Slot set value "feet"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
@@ -55,10 +55,6 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
     data modify storage asset:artifact Equipment.Effects set value [{ID:236,Visible:true}]
-# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
-    data modify storage asset:artifact Equipment.Modifiers set value []
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.30d,Operation:"multiply_base"}
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
