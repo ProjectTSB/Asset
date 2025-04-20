@@ -5,4 +5,4 @@
 # @within function asset:effect/0264.soul_mate/_/end
 
 # 発光削除
-     effect clear @s glowing
+    effect clear @s glowing

@@ -15,7 +15,7 @@
     $execute store result score $Modifier Temporary run data get storage api: Return.$(Type).Base 1000
     $execute store result score $Type1 Temporary run data get storage api: Return.$(Type).$(AttackType) 1000
 
-# 計算する Modifier * (AttackType + ElementType - 2)
+# 計算する Modifier * (AttackType + ElementType - 1)
 
 # Modifier(e3) = Modifier(e3) * AttackType(e3) / 1(e3)
     scoreboard players operation $Modifier Temporary *= $Type1 Temporary

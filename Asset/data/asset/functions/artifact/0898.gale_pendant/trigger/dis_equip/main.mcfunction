@@ -4,5 +4,5 @@
 #
 # @within function asset:artifact/0898.gale_pendant/trigger/dis_equip/
 
-# バフを付与
-    function asset:artifact/0898.gale_pendant/trigger/buff/update
+# 演出
+    playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8

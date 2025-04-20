@@ -1,11 +1,11 @@
 {
     "values": [
         "asset:artifact/0897.lightning_broach/trigger/1.trigger",
-        "asset:artifact/0554.catastrophe/trigger/fullset/attack/1.trigger",
+        "asset:artifact/0554.catastrophe/attack/1.trigger",
         "asset:artifact/1110.lantern_of_firefly/trigger/1.trigger",
         "asset:artifact/1149.afterglow_of_thunder/trigger/1.trigger",
         "asset:artifact/1098.mirror_piece_of_bygone_days/trigger/1.trigger",
-        "asset:artifact/0664.soul_fire_armor/trigger/fullset/attack_trigger",
-        "asset:artifact/0724.oblivious_snow/trigger/fullset/trigger"
+        "asset:artifact/0664.soul_fire_armor/attack/1.trigger",
+        "asset:artifact/0724.oblivious_snow/attack/1.trigger"
     ]
 }

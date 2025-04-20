@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"純化の呪書","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"","extra":[{"text":"攻撃力 +10%","color":"dark_green"},{"text":" "},{"text":"属性攻撃力 -25%","color":"dark_red"}]}','{"text":"魂を漂白し、何も持たぬ命へと","color":"gray"}','{"text":"変える力を持つ呪書。","color":"gray"}','{"text":"強固な意志を以てすれば、","color":"gray"}','{"text":"力の一端を引き出し","color":"gray"}','{"text":"純然たる破壊の力を高めることができる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"魂を漂白し、何も持たぬ命へと","color":"gray"}','{"text":"変える力を持つ呪書。","color":"gray"}','{"text":"強固な意志を以てすれば、","color":"gray"}','{"text":"力の一端を引き出し","color":"gray"}','{"text":"純然たる破壊の力を高めることができる。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,12 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/base",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:-0.25d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
