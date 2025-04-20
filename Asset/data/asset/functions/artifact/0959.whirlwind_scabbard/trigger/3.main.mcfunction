@@ -16,7 +16,7 @@
     execute at @e[type=#lib:living,tag=Victim,distance=..6] run function asset:artifact/0959.whirlwind_scabbard/trigger/vfx
 
 # モーション 対象が天使の場合無効
-    data modify storage lib: Argument.VectorMagnitude set value 5
+    data modify storage lib: Argument.VectorMagnitude set value 10
     data modify storage lib: Argument.KnockbackResist set value 1b
 
 # ターゲット指定 Victimと前方を対象にする
