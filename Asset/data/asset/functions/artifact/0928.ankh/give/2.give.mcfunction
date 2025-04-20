@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アンク","color":"gold","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲のプレイヤーを最大体力の7.5%分回復する。"}','{"text":"生命を象ったお守り。","color":"gray"}','{"text":"触れた生命を治癒する力を持つ。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲6mのプレイヤーを最大体力の7.5%分回復する。"}','{"text":"生命を象ったお守り。","color":"gray"}','{"text":"触れた生命を治癒する力を持つ。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -56,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     data modify storage asset:artifact DisableMPMessage set value true
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Rumor", "Nyaptov", "Wi-ki"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora","Nyaptov", "Wi-ki","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
