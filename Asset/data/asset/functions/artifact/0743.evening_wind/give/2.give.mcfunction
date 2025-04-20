@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"夕焼けの風","color":"#FF8000"}'
+    data modify storage asset:artifact Name set value '{"text":"夕焼けの風","color":"#FF9F30"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"火攻撃+7.5% ","color":"red"},{"text":"移動速度+5%","color":"white"}]','[{"text":"水攻撃-5%","color":"dark_red"}]','[{"text":"黄昏の輝きを秘めた羽。","color":"gray"}]','[{"text":"淡い茜色の光を放っている。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
