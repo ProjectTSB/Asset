@@ -16,7 +16,7 @@ execute unless loaded 78 19 642 run return 1
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
     data modify storage asset:spawner SpawnPotentials set value [80]
 # 一度に召喚する数 (int)
-    data modify storage asset:spawner SpawnCount set value 6
+    data modify storage asset:spawner SpawnCount set value 8
 # 動作範囲 (int) この範囲にプレイヤーが存在するとき、Mobの召喚を開始する
     data modify storage asset:spawner SpawnRange set value 16
 # 初回召喚時間 (int)

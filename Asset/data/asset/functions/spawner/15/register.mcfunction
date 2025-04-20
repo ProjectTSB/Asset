@@ -14,7 +14,7 @@ execute unless loaded 94 21 81 run return 1
 # 体力 (int) このスポナーから召喚されたMobがN体殺されると破壊されるか
     data modify storage asset:spawner HP set value 3
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
-    data modify storage asset:spawner SpawnPotentials set value [{Id:63,Weight:10},{Id:61,Weight:10}]
+    data modify storage asset:spawner SpawnPotentials set value [{Id:63,Weight:15},{Id:26,Weight:5}]
 # 一度に召喚する数 (int)
     data modify storage asset:spawner SpawnCount set value 2
 # 動作範囲 (int) この範囲にプレイヤーが存在するとき、Mobの召喚を開始する

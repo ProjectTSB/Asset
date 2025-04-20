@@ -22,7 +22,7 @@ execute unless loaded 82 -12 39 run return 1
 # 初回召喚時間 (int)
     data modify storage asset:spawner Delay set value 20
 # 最低召喚間隔 (int)
-    data modify storage asset:spawner MinSpawnDelay set value 80
+    data modify storage asset:spawner MinSpawnDelay set value 100
 # 最大召喚間隔 (int)
     data modify storage asset:spawner MaxSpawnDelay set value 120
 # 近くのエンティティの最大数 (int)
