@@ -12,7 +12,7 @@
         execute store result score $VL.Stack Temporary run data get storage api: Return.Effect.Stack
     # 移動速度上昇を付与
         scoreboard players remove $VL.Stack Temporary 1
-        execute store result storage asset:temp VO.Amount double 0.10 run scoreboard players operation $VL.Stack Temporary > $0 Const
+        execute store result storage asset:temp VO.Amount double 0.025 run scoreboard players operation $VL.Stack Temporary > $0 Const
         function asset:artifact/1140.over_pulse_booster/tick/speed/remove
         execute unless data storage asset:temp VO{Amount:0d} run function asset:artifact/1140.over_pulse_booster/tick/speed/add.m with storage asset:temp VO
 
