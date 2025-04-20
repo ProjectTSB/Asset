@@ -18,9 +18,7 @@
     particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.6 200
 
 # ドロップ
-    data modify storage api: Argument.ID set value 2001
-    data modify storage api: Argument.Important set value true
-    function api:artifact/spawn/from_id
+    function asset:object/2056.tultaria_death/tick/drop.m with storage asset:context this.Pos
 
 # 画面エフェクト
     title @a[distance=..64] times 5 15 20

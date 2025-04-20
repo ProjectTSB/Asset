@@ -23,6 +23,14 @@
 # 足場を元に戻す
     execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] run function asset:mob/1004.tultaria/tick/reset_arena
 
+
+# 撃破演出用オブジェクトを召喚
+    data modify storage api: Argument.ID set value 2056
+    data modify storage api: Argument.FieldOverride.Pos.X set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[0]
+    data modify storage api: Argument.FieldOverride.Pos.Y set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[1]
+    data modify storage api: Argument.FieldOverride.Pos.Z set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[2]
+    execute facing entity @p[distance=..64] eyes run function api:object/summon
+
 # オブジェクト類のキル
     function asset:mob/1004.tultaria/tick/reset/remove_objects
     kill @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1]
@@ -32,10 +40,6 @@
 
 # モデルを消す
     execute as @e[type=item_display,tag=RW.ModelRoot,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/remove/this
-
-# 撃破演出用オブジェクトを召喚
-    data modify storage api: Argument.ID set value 2056
-    execute facing entity @p[distance=..64] eyes run function api:object/summon
 
 # Super!
     function asset:mob/super.death
