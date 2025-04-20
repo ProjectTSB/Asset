@@ -4,5 +4,8 @@
 #
 # @within function asset:effect/0238.raimei/_/given
 
-# 補正を付与
-    function asset:effect/0238.raimei/modifier/add
+# フルセット効果を付与
+    execute if data storage asset:context {Stack:4} run function asset:effect/0238.raimei/fullset/equip
+
+# スタックを記録
+    data modify storage asset:context this.PrevStack set from storage asset:context Stack

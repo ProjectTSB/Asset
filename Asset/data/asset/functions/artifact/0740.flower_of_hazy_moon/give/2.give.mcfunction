@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"朧月の妖花","color":"#FFFFA3"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"魔法攻撃+7.5% ","color":"dark_purple"},{"text":"被回復量-15%","color":"dark_red"}]','[{"text":"微かに月光が射す時のみに咲く花。","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"微かに月光が射す時のみに咲く花。","color":"gray"}]','[{"text":"見た者の心を惑わし、狂わせる。","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -51,10 +51,10 @@
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
-# クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
-# MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableMPMessage set value
+# 装備時補正 (Component[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:0.075d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"receive_heal",Amount:-0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

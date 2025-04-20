@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"Z旗","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"物理攻撃+15% ","color":"dark_green"},{"text":"耐性-25%","color":"dark_red"}]','{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":true}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"皇國ノ興廢此ノ一戰ニ在リ、","color":"dark_purple","italic":true}','{"text":"各員一層奮勵努力セヨ","color":"dark_purple","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -55,6 +55,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/physical",Amount:0.15d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:-0.25d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
