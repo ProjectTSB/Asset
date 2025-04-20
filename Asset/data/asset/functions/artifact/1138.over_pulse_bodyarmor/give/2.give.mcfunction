@@ -49,7 +49,7 @@
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisabledFlag.Check.CDMessage set value true
+    # data modify storage asset:artifact DisabledFlag.Check.CDMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisabledFlag.Check.MPMessage set value true
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)

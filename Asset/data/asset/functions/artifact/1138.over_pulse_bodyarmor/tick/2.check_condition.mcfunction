@@ -7,7 +7,7 @@
 # 展開中ならパーティクル
     execute if entity @s[tag=VM.HasBarrier] run particle dolphin ~ ~1.2 ~ 0.4 0.5 0.4 1 2 normal
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {CDMessage:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {CDMessage:true,MPMessage:true}
     function asset:artifact/common/check_condition/chest
 # ダメージを受けていない場合先に進まない
     execute if entity @s[tag=VM.NotDamaged] run tag @s remove CanUsed
