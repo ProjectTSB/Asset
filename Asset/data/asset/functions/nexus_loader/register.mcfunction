@@ -4,19 +4,6 @@
 #
 # @within tag/function asset:nexus_loader/register
 
-data modify storage api: Argument set value {ID:100,Dimension: "minecraft:overworld",Pos:[-3957d,38d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-25"]}
-function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:101,Dimension: "minecraft:overworld",Pos:[-3434d,140d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-43"]}
-function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:102,Dimension: "minecraft:overworld",Pos:[-2672d,100d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-57"]}
-function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:103,Dimension: "minecraft:overworld",Pos:[-2157d,145d,-897d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-56"]}
-function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:104,Dimension: "minecraft:overworld",Pos:[-3948d,2d,-385d],ActivationState:"Activate",Color:[255,128,128],GroupIDs:["arena-61"]}
-function api:teleporter/unsafe/register_manual
-data modify storage api: Argument set value {ID:200,Dimension:"minecraft:the_nether",Pos:[3d,84d,15d],ActivationState:"Activate",Color:[255,255,255],GroupIDs:["islands-nether"]}
-function api:teleporter/unsafe/register_manual
-
 #> Private
 # @private
 #declare storage world_manager:nexus_loader
