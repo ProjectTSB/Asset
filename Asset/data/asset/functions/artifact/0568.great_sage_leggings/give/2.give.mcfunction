@@ -54,8 +54,8 @@
     data modify storage asset:artifact Equipment.Effects set value [{ID:256,Visible:false}]
 # 装備時ステータス補正 (int) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:0.10d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:0.08d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.065d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/physical",Amount:-0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/physical",Amount:-0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.05d,Operation:"multiply_base"}
