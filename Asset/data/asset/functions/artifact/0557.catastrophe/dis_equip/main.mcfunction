@@ -10,5 +10,4 @@
     function api:entity/mob/effect/reset
 
 # スコアリセット
-    scoreboard players reset @s FE.LatestUseTick
     scoreboard players reset @s FE.DamageSum
