@@ -24,7 +24,6 @@
 
 # リセット
     function api:damage/reset
-    tag @e[type=#lib:living,tag=Enemy,tag=S9.Hit,tag=!Uninterferable,distance=..10] remove S9.Hit
 
 # 地面にいるやつをうちあげ
 
@@ -39,6 +38,7 @@
 
 # リセット
     function api:damage/reset
+    tag @e[type=#lib:living,tag=Enemy,tag=S9.Hit,tag=!Uninterferable,distance=..10] remove S9.Hit
 
 # SDS close
     function api:damage/single_damage_session/close
