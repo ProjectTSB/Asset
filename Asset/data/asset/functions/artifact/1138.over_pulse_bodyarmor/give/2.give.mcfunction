@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・ボディアーマー","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"暫くダメージを受けていない場合、"}','{"translate":"衝撃を吸収する電磁バリアを最大体力の %s 分生成する。","with":[{"text":"2.5%","color":"aqua"}]}','{"translate":"他部位を装備するとその数だけバリアの生成量が %s 増加する。","with":[{"text":"100%","color":"aqua"}]}','{"text":"─ 電磁バリア 展開。","color":"gray","italic":true}','{"text":"─ 魔術干渉ニ 注意シテクダサイ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"暫くダメージを受けていない場合、"}','{"translate":"衝撃を吸収する電磁バリアを最大体力の %s 分生成する。","with":[{"text":"2.5%","color":"aqua"}]}','{"translate":"他部位を装備する毎にバリアの生成量が %s 増加する。","with":[{"text":"100%","color":"aqua"}]}','{"text":"─ 電磁バリア 展開。","color":"gray","italic":true}','{"text":"─ 魔術干渉ニ 注意シテクダサイ。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
