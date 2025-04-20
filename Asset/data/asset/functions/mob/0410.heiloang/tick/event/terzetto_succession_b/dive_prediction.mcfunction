@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/terzetto_succession_b/
 
 # 攻撃判定用AEC召喚
-    summon area_effect_cloud ~ ~ ~ {Duration:30,Tags:["BE.Temp.AttackPosition"]}
+    summon area_effect_cloud ~ ~ ~ {Duration:44,Tags:["BE.Temp.AttackPosition"]}
     execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
 
 # 予告

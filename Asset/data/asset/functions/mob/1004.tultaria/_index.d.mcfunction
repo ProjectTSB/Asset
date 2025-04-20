@@ -39,6 +39,8 @@
     #declare tag RW.Transition.Phase2.Attack
     #declare tag RW.Transition.Phase3
     #declare tag RW.Transition.Phase3.Attack
+    # 多段ヒット防止
+    #declare tag RW.TargetEntity
     # ボスの使う技のタグ
     # 火属性
     #declare tag RW.Skill.Meteor

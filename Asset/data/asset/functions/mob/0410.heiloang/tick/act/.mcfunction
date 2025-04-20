@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/**
 
 # デバッグ用
-    return 0
+    # return 0
 
 # 行動リセット
     function asset:mob/0410.heiloang/tick/util/remove_animation_tag

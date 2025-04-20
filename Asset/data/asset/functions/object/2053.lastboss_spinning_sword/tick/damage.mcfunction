@@ -5,8 +5,8 @@
 # @within function asset:object/2053.lastboss_spinning_sword/tick/
 
 # 引数の設定
-    # 与えるダメージ、待機時と開放時でダメージが違う
-        data modify storage api: Argument.Damage set value 50.0f
+    # 与えるダメージ
+        data modify storage api: Argument.Damage set value 63.0f
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
