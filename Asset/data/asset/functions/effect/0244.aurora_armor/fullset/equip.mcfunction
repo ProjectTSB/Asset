@@ -9,7 +9,7 @@
 
 # 雷攻撃
     data modify storage api: Argument.UUID set value [I;1,3,244,0]
-    data modify storage api: Argument.Amount set value 0.1
+    data modify storage api: Argument.Amount set value 0.075
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
 

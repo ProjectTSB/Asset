@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"オー","color":"#00FFE2"},{"text":"ロラ","color":"#00CEDD"},{"text":"アー","color":"#00ACF6"},{"text":"マー","color":"#008BFF"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"雷攻撃 +10%","color":"green"}','{"text":"MP回復量 +5%","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"雷攻撃 +7.5%","color":"green"}','{"text":"MP回復量 +5%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
