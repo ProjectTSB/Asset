@@ -15,7 +15,7 @@
 # 圧縮防具
     # それぞれチェック
         execute if data storage asset:context id{offhand:90} run tag @s add XW.SetArmor
-        execute if data storage asset:context id{offhand:90} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/check_progress.m {Threshold:05}
+        execute if data storage asset:context id{offhand:90} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/check_progress.m {Threshold: 5}
         execute if data storage asset:context id{offhand:91} run tag @s add XW.SetArmor
         execute if data storage asset:context id{offhand:91} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/check_progress.m {Threshold:30}
         execute if data storage asset:context id{offhand:92} run tag @s add XW.SetArmor
