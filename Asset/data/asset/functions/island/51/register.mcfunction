@@ -14,4 +14,4 @@ execute unless loaded -202 204 614 run return 1
 # Rotation (string)
     data modify storage asset:island Rotation set value 180f
 # BossID (string)
-    data modify storage asset:island BossID set value 377
+    data modify storage asset:island BossID set value 437
