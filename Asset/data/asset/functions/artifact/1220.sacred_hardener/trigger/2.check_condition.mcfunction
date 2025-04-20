@@ -19,11 +19,10 @@
     execute if data storage asset:context id{offhand:-2} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/non-artifact
     execute unless data storage asset:context id{offhand:-2} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/artifact
 # エラーログをロックする
-    execute if entity @s[tag=!CanUsed] unless score @s XW.ErrorCooldown matches 1.. run scoreboard players set @s XW.ErrorCooldown 20
     execute if entity @s[tag=!CanUsed] unless score @s XW.ErrorCooldown matches 1.. run schedule function asset:artifact/1220.sacred_hardener/trigger/schedule_loop 1t replace
+    execute if entity @s[tag=!CanUsed] unless score @s XW.ErrorCooldown matches 1.. run scoreboard players set @s XW.ErrorCooldown 20
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1220.sacred_hardener/trigger/3.main
-
 # リセット
     tag @s remove XW.SetArmor
