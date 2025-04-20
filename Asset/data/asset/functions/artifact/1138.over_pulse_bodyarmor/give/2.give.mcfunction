@@ -39,11 +39,11 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value 3
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 30
+    data modify storage asset:artifact MPCost set value 40
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 600
+    data modify storage asset:artifact LocalCooldown set value 400
 # 種別クールダウン (Compound) (オプション)
     # data modify storage asset:artifact TypeCooldown set value {Type:"",Value:0}
 # グローバルクールダウン (int) (オプション)
