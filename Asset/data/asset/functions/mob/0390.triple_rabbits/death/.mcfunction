@@ -19,5 +19,5 @@
     function asset:mob/super.death
 
 # AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_axia",Active:false},{Datapack:"AJ_ecual",Active:false},{Datapack:"AJ_labyria",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_triple_rabbits",Active:false}]
     function asset:datapack/set_activation_state

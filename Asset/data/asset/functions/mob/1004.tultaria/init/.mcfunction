@@ -6,7 +6,7 @@
 
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_tultaria",Active:true},{Datapack:"AJ_illusion_of_loyalty",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_tultaria",Active:true}]
     function asset:datapack/set_activation_state
 
 #> ボスキャラのモデル

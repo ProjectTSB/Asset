@@ -36,5 +36,5 @@
     function animated_java:heiloang_flare_aj/remove/all
 
 # AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang_aj",Active:false},{Datapack:"AJ_behemoth_aj",Active:false},{Datapack:"AJ_tiamat_aj",Active:false},{Datapack:"AJ_heiloang_flare_aj",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang",Active:false}]
     function asset:datapack/set_activation_state
