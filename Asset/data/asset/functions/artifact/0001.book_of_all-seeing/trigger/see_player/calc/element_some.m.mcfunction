@@ -18,14 +18,15 @@
     $execute store result score $Type1 Temporary run data get storage api: Return.$(Type).$(AttackType) 1000
     $execute store result score $Type2 Temporary run data get storage api: Return.$(Type).$(ElementType) 1000
 
-# 計算する Base * (AttackType + ElementType - 2)
+# 計算する Base * (AttackType + ElementType - 1)
 
-# X(e3) = (AttackType(e3) + ElementType(e3) - 2(e3))
+# X(e3) = (AttackType(e3) + ElementType(e3) - 1(e3))
     scoreboard players operation $Type1 Temporary += $Type2 Temporary
-    scoreboard players remove $Type1 Temporary 2000
+    scoreboard players remove $Type1 Temporary 1000
 # X(e3) = Base(e3) * X(e3) / 1(e3)
     scoreboard players operation $Modifier Temporary *= $Type1 Temporary
     scoreboard players operation $Modifier Temporary /= $1000 Const
+    scoreboard players remove $Modifier Temporary 1000
 
 # IsReverse が true なら反転する
     $execute if data storage global Boolean.$(IsReverse) run scoreboard players operation $Modifier Temporary *= $-1 Const
