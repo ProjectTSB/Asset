@@ -27,4 +27,4 @@
     execute if data storage asset:context Items.offhand{id:     "minecraft:netherite_boots"} run return run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/check_progress.m {Threshold:80}
 
 # エラー
-    execute if entity @s[tag=!CanUsed] run tellraw @s [{"text":"その防具を加工することは出来ないようだ…"}]
+    execute if entity @s[tag=!CanUsed] unless score @s XW.ErrorCooldown matches 1.. run tellraw @s [{"text":"その防具を加工することは出来ないようだ…"}]
