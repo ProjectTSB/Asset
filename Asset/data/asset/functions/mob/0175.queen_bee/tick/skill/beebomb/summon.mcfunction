@@ -18,6 +18,8 @@
     execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.BeeBomb
     execute at @e[type=marker,tag=SpreadMarker,distance=..50,sort=nearest,limit=1] run execute rotated ~ 90 run function api:object/summon
 
+# マーカーキル
+    kill @e[type=marker,tag=SpreadMarker,distance=..100]
 
 # 演出
     playsound entity.bee.death hostile @a ~ ~ ~ 1 1
