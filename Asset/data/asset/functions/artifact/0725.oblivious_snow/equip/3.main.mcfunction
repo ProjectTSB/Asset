@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/0725.oblivious_snow/equip/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/chest
-# ここから先は神器側の効果の処理を書く
-
 # 部位数チェック
     data modify storage api: Argument.ID set value 243
     function api:entity/mob/effect/get/from_id
