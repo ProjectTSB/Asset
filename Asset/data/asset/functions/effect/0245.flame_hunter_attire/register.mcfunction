@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"炎を追う狩人の装束","color":"#C92A2A"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"火攻撃 +5%","color":"green"}','{"text":"火耐性 +5%","color":"green"}','{"text":"移動速度 +10%","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"火攻撃 +3%","color":"green"}','{"text":"火耐性 +3%","color":"green"}','{"text":"移動速度 +2%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

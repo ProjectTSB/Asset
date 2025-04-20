@@ -9,17 +9,15 @@
     playsound block.fire.ambient player @a ~ ~ ~ 0.8 1 0
 
 # 補正
-    # 火攻撃+10%
+    # 火攻撃
         data modify storage api: Argument.UUID set value [I;1,3,245,0]
-        data modify storage api: Argument.Amount set value 0.1
+        data modify storage api: Argument.Amount set value 0.03
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/attack/fire/add
-
-    # 火耐性+10%
+    # 火耐性
         data modify storage api: Argument.UUID set value [I;1,3,245,0]
-        data modify storage api: Argument.Amount set value 0.1
+        data modify storage api: Argument.Amount set value 0.03
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/defense/fire/add
-
-    # 移動速度+10%
-        attribute @s generic.movement_speed modifier add 1-0-3-0-f500000000 "245.FullsetSpeed" 0.1 multiply_base
+    # 移動速度
+        attribute @s generic.movement_speed modifier add 1-0-3-0-f500000000 "245.FullsetSpeed" 0.02 multiply_base
