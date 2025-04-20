@@ -17,3 +17,5 @@
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
     data modify storage asset:effect Visible set value false
+# 死亡時のエフェクトの処理 (default = "remove")
+    data modify storage asset:effect ProcessOnDied set value "keep"
