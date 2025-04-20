@@ -14,7 +14,7 @@
     #declare score_holder $IntervalTime
 
 # 時計レーザーの順序指定
-    execute if score @s 1A.LifeTime matches 2205 run random value 0..3
+    execute if score @s 1A.LifeTime matches 2205 store result score $LaserDirection Temporary run random value 0..3
     execute if score @s 1A.LifeTime matches 2205 if score $LaserDirection Temporary matches 0 run tag @s add 1A.LaserDirection1
     execute if score @s 1A.LifeTime matches 2205 if score $LaserDirection Temporary matches 1 run tag @s add 1A.LaserDirection2
     execute if score @s 1A.LifeTime matches 2205 if score $LaserDirection Temporary matches 2 run tag @s add 1A.LaserDirection3

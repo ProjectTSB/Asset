@@ -9,6 +9,9 @@
     #declare score_holder $CurrentBarrierAmount
     #declare score_holder $MaxBarrierAmount
 
+# 開始1tick目の処理、
+    execute unless data storage asset:context this.RegenTick run data modify storage asset:context this.RegenTick set from storage asset:context this.RegenInterval
+
 # 諸々取得
     execute store result score $CurrentBarrierAmount Temporary run function asset:effect/0275.moon_blessing/barrier/get
     execute store result score $MaxBarrierAmount Temporary run data get storage asset:context this.MaxBarrierAmount 10

@@ -18,15 +18,15 @@
     execute store result score $Z9.Stack Temporary run data get storage api: Return.Effect.Stack
 
 # 演出
-    execute if score $Z9.Stack Temporary matches 2.. positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
+    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
 
 # スタック毎のダメージ設定
-    execute if score $Z9.Stack Temporary matches 1 run scoreboard players set $Damage Temporary 3000
-    execute if score $Z9.Stack Temporary matches 2 run scoreboard players set $Damage Temporary 3500
-    execute if score $Z9.Stack Temporary matches 3 run scoreboard players set $Damage Temporary 4100
-    execute if score $Z9.Stack Temporary matches 4 run scoreboard players set $Damage Temporary 4500
-    execute if score $Z9.Stack Temporary matches 5 run scoreboard players set $Damage Temporary 5000
-    execute if score $Z9.Stack Temporary matches 6 run scoreboard players set $Damage Temporary 5500
+    execute if score $Z9.Stack Temporary matches 1 run scoreboard players set $Damage Temporary 2200
+    execute if score $Z9.Stack Temporary matches 2 run scoreboard players set $Damage Temporary 2800
+    execute if score $Z9.Stack Temporary matches 3 run scoreboard players set $Damage Temporary 3500
+    execute if score $Z9.Stack Temporary matches 4 run scoreboard players set $Damage Temporary 4100
+    execute if score $Z9.Stack Temporary matches 5 run scoreboard players set $Damage Temporary 4700
+    execute if score $Z9.Stack Temporary matches 6 run scoreboard players set $Damage Temporary 5300
     execute if score $Z9.Stack Temporary matches 7 run scoreboard players set $Damage Temporary 6000
     execute if score $Z9.Stack Temporary matches 8 run scoreboard players set $Damage Temporary 6800
 

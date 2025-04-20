@@ -15,15 +15,3 @@
     playsound entity.allay.ambient_without_item player @a ~ ~ ~ 1 2
     playsound entity.allay.ambient_without_item player @a ~ ~ ~ 1 1.7
     playsound block.amethyst_block.break player @a ~ ~ ~ 1 0.8
-
-# 回復量+6%
-    data modify storage api: Argument.UUID set value [I;1,1,639,5]
-    data modify storage api: Argument.Amount set value 0.07
-    data modify storage api: Argument.Operation set value "multiply_base"
-    function api:modifier/heal/add
-
-# 最大体力+8
-    data modify storage api: Argument.UUID set value [I;1,1,639,5]
-    data modify storage api: Argument.Amount set value 4
-    data modify storage api: Argument.Operation set value "add"
-    function api:modifier/max_health/add

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"守護者の鉄塊"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"守護者が遺した鎧の一部","color":"gray"}','{"text":"揺るぎ無き守護の意志が感じられる","color":"gray"}','{"text":"防御力+1 ノックバック耐性+99 全属性耐性+5%","color":"green"}']
+    data modify storage asset:artifact Lore set value ['{"text":"守護者が遺した鎧の一部","color":"gray"}','{"text":"揺るぎ無き守護の意志が感じられる","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -54,6 +54,11 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:1,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.knockback_resistance",Amount:1,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

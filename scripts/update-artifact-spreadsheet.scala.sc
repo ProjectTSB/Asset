@@ -174,7 +174,7 @@ class NBTTagParser extends RegexParsers {
     val f: ((=> Parser[String]) => Parser[List[String]]) = if (allowEmpty) rep else rep1
     for {
       quote <- "'" | "\""
-      str   <- f(s"[^$quote\\\\]".r | s"\\$quote" | "\\\\")
+      str   <- f(s"[^$quote\\\\]".r | s"\\$quote" | "\\\\u[0-9a-fA-F]{4}".r | "\\\\")
       _     <- quote
     } yield s"\\\\(\\\\|$quote)".r.replaceAllIn(str.mkString, s => Regex.quoteReplacement(s.group(1)))
   }
@@ -282,6 +282,8 @@ object TextComponent {
   def resolve(components: NonEmptyVector[NBTTagCompound])(using translateMap: TranslateMap): Either[String, String] = {
     val texts = components.traverse {
       case NBTTagCompound(component) =>
+        val font = component.get("font").flatMap(_.downcastOrNone[NBTTagString]).map(_.value)
+
         val text      = component.get("text").flatMap(_.downcastOrNone[NBTTagString]).map(_.value)
         val translate = component.get("translate").flatMap(_.downcastOrNone[NBTTagString]).map(_.value)
         val withs     = component
@@ -306,7 +308,10 @@ object TextComponent {
             }
           }
         }
-        (filledTranslate, extra).parMapN { (ft, ex) => text.orEmpty + ft.orEmpty + ex.orEmpty }
+        (filledTranslate, extra).parMapN { (ft, ex) =>
+          if (!font.contains("space")) text.orEmpty + ft.orEmpty + ex.orEmpty
+          else ""
+        }
     }
 
     texts.map(_.toList.mkString)

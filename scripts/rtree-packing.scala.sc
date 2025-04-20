@@ -436,7 +436,7 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
           Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s, s, s, s, s, s))))
         case Array(id, dim, x, y, z, minX, maxX, minZ, maxZ) =>
           val s = defaultSize.get
-          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (minX.toInt, maxX.toInt, s, s, minZ.toInt, maxZ.toInt))))
+          Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), (s + minX.toInt, s + maxX.toInt, s, s, s + minZ.toInt, s + maxZ.toInt))))
         case _                             => None
       }
     }
