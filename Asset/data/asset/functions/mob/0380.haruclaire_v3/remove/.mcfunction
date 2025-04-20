@@ -22,13 +22,11 @@
     execute as @e[tag=AK.Object] on passengers run kill @s
     kill @e[tag=AK.Object]
 
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_aj",Active:false},{Datapack:"AJ_ic_capri_aj",Active:false},{Datapack:"AJ_ic_tau_aj",Active:false},{Datapack:"AJ_ic_pisce_aj",Active:false}]
-
 # オブジェクト用AJモデル消去
     function animated_java:ic_capri_aj/remove/all
     function animated_java:ic_tau_aj/remove/all
     function animated_java:ic_pisce_aj/remove/all
 
 # AJアンロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_aj",Active:false},{Datapack:"AJ_ic_capri_aj",Active:false},{Datapack:"AJ_ic_tau_aj",Active:false},{Datapack:"AJ_ic_pisce_aj",Active:false}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:false}]
     function asset:datapack/set_activation_state

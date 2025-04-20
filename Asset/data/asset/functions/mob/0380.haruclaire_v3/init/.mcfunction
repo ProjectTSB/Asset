@@ -5,7 +5,7 @@
 # @within asset:mob/alias/380/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_aj",Active:true},{Datapack:"AJ_ic_capri_aj",Active:true},{Datapack:"AJ_ic_tau_aj",Active:true},{Datapack:"AJ_ic_pisce_aj",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:true}]
     function asset:datapack/set_activation_state
 
 # 継承元の処理実行

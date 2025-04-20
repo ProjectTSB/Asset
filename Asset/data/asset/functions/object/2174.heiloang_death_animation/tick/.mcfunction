@@ -14,7 +14,7 @@
     execute if entity @s[scores={General.Object.Tick=120}] run function asset:object/2174.heiloang_death_animation/tick/summon_bossdrop
 
 # AJアンロード
-    execute if entity @s[scores={General.Object.Tick=120}] run data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang_aj",Active:false},{Datapack:"AJ_behemoth_aj",Active:false},{Datapack:"AJ_tiamat_aj",Active:false},{Datapack:"AJ_heiloang_flare_aj",Active:false}]
+    execute if entity @s[scores={General.Object.Tick=120}] run data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang",Active:false}]
     execute if entity @s[scores={General.Object.Tick=120}] run function asset:datapack/set_activation_state
 
 # 消滅処理

@@ -13,6 +13,7 @@
 
 # AJアンロード
     data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_karmic",Active:false}]
+    function asset:datapack/set_activation_state
 
 # Super!
     function asset:mob/super.remove

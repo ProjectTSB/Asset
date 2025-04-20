@@ -5,7 +5,7 @@
 # @within asset:mob/alias/213/init
 
 # AJロード
-    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_terrible_sonic_bomber",Active:true},{Datapack:"AJ_patriot_launcher",Active:true}]
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_terrible_sonic_bomber",Active:true}]
     function asset:datapack/set_activation_state
 
 
