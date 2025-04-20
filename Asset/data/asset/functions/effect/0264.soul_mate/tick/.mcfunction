@@ -5,4 +5,4 @@
 # @within function asset:effect/0264.soul_mate/_/tick
 
 # 発光付与
-     effect give @s glowing infinite 0 true
+    effect give @s glowing infinite 0 true

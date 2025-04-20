@@ -1,18 +1,18 @@
 {
     "values": [
-        "asset:artifact/0554.catastrophe/trigger/fullset/hurt/1.trigger",
+        "asset:artifact/0554.catastrophe/damage_entity/1.trigger",
         "asset:artifact/1141.bell_of_courage/trigger/1.trigger",
         "asset:artifact/1082.cursed_straw_doll/trigger/1.trigger",
         "asset:artifact/1068.dream_of_burning_butterfly/trigger/1.trigger",
         "asset:artifact/1055.compass_of_sea_abyss/trigger/1.trigger",
-        "asset:artifact/1038.flame_devil_head/trigger/hurt/1.trigger",
+        "asset:artifact/1038.flame_devil_head/damage_entity/1.trigger",
         "asset:artifact/0801.red_secret_stone/trigger/1.trigger",
         "asset:artifact/0914.reactive_armor_feet/trigger/1.trigger",
         "asset:artifact/0913.reactive_armor_legs/trigger/1.trigger",
         "asset:artifact/0912.reactive_armor_chest/trigger/1.trigger",
         "asset:artifact/0911.reactive_armor_head/trigger/1.trigger",
         "asset:artifact/0253.holy_barrier/trigger/1.trigger",
-        "asset:artifact/0647.thorn_armor/trigger/6.hurt_trigger",
+        "asset:artifact/0646.thorn_helm/damage_entity/1.trigger",
         "asset:artifact/0731.mouse_feet/trigger/1.trigger"
     ]
 }

@@ -6,7 +6,7 @@
 
 # ランダムでメッセージを垂れ流す
 # 疑似乱数取得
-    data modify storage lib: Args.key set value "335.Message"
+    data modify storage lib: Args.key set value "236.Message"
     data modify storage lib: Args.max set value 10
     data modify storage lib: Args.scarcity_history_size set value 3
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
