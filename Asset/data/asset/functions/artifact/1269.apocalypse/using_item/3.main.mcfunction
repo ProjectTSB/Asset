@@ -9,7 +9,7 @@
 
 # 演出
     particle minecraft:trial_spawner_detection ~ ~ ~ 1 0.4 1 0 1
-    function asset:artifact/1269.apocalypse/using_item/vfx
+    execute positioned ~ ~1 ~ run function asset:artifact/1269.apocalypse/using_item/vfx
 
 
 # エフェクトのスタック更新など

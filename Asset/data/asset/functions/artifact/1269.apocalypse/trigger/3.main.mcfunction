@@ -18,7 +18,7 @@
     execute store result score $Z9.Stack Temporary run data get storage api: Return.Effect.Stack
 
 # 演出
-    execute if score $Z9.Stack Temporary matches 2.. positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
+    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
 
 # スタック毎のダメージ設定
     execute if score $Z9.Stack Temporary matches 1 run scoreboard players set $Damage Temporary 3000
