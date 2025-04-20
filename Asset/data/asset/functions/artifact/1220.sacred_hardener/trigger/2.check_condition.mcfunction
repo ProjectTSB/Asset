@@ -16,7 +16,7 @@
 # 神器 (圧縮防具) / 非神器 (バニラ防具) で場合分けする
     execute if data storage asset:context id{offhand:-2} unless predicate asset:artifact/1220.sacred_hardener/has_armor unless score @s XW.ErrorCooldown matches 1.. run tellraw @s [{"text":"防具以外を加工することは出来ないようだ…"}]
     execute if data storage asset:context id{offhand:-2} unless predicate asset:artifact/1220.sacred_hardener/has_armor run tag @s remove CanUsed
-    execute if data storage asset:context id{offhand:-2} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/non-artifact
+    execute if data storage asset:context id{offhand:-2} if predicate asset:artifact/1220.sacred_hardener/has_armor run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/non-artifact
     execute unless data storage asset:context id{offhand:-2} run function asset:artifact/1220.sacred_hardener/trigger/2.check_condition/artifact
 # エラーログをロックする
     execute if entity @s[tag=!CanUsed] unless score @s XW.ErrorCooldown matches 1.. run schedule function asset:artifact/1220.sacred_hardener/trigger/schedule_loop 1t replace
