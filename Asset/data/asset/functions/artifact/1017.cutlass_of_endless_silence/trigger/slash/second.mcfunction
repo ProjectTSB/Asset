@@ -12,9 +12,6 @@
     execute positioned ^ ^ ^1 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] add S9.Hit
     execute positioned ^ ^ ^2 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] add S9.Hit
 
-# SDS open
-    function api:damage/single_damage_session/open
-
 # ダメージ
     data modify storage api: Argument.Damage set value 600.0f
     data modify storage api: Argument.AttackType set value "Physical"
