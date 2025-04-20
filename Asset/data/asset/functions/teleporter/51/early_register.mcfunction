@@ -12,7 +12,7 @@
 # Dimension (string[minecraft:dimension])
     data modify storage asset:teleporter Teleporters[-1].Data.Dimension set value "minecraft:overworld"
 # Pos ([int] @ 3)
-    data modify storage asset:teleporter Teleporters[-1].Data.Pos set value [-202, 206, 612]
+    data modify storage asset:teleporter Teleporters[-1].Data.Pos set value [-202, 204, 612]
 # GroupIDs ([string])
     data modify storage asset:teleporter Teleporters[-1].Data.GroupIDs set value ["islands"]
 # デフォルトの起動状態 ("InvisibleDeactivate" | "VisibleDeactivate" | "Activate")
