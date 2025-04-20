@@ -72,38 +72,35 @@ execute unless loaded 25 21 -74 run return 1
 
 # 取引 小麦->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:wheat",Count:32b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:wheat",Count:8b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 ビートルート->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:beetroot",Count:32b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:beetroot",Count:8b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 人参->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:carrot",Count:64b}
-    data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:carrot",Count:32b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:carrot",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 ジャガイモ->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:potato",Count:64b}
-    data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:potato",Count:32b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:potato",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 カボチャ->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:pumpkin",Count:10b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:pumpkin",Count:4b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 スイカ->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:melon",Count:6b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:melon",Count:4b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
 
 # 取引 サトウキビ->かけら
     data modify storage asset:trader Trades append value {}
-    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:sugar_cane",Count:64b}
-    data modify storage asset:trader Trades[-1].BuyB set value {id:"minecraft:sugar_cane",Count:64b}
+    data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:sugar_cane",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {PresetItem:"currency/",Count:1b}
