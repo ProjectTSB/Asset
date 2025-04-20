@@ -20,7 +20,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"『焔竜』","color":"#8AB9FF"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"劫火操りし煉獄の主、真名はベヘモット。"}','{"text":"焔竜の名を以て、王に仇名す愚者共に"}','{"text":"蒼き炎の鉄槌を下さん。"}']
+    data modify storage asset:mob Lore set value ['{"text":"劫火操りし煉獄の主、真名はベヘモット。"}','{"text":"王に仇名す愚者共に蒼き炎の鉄槌を下さん。"}','{"text":"来たる破滅を阻止するため、闇竜との同時撃破を狙え。"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 40000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
