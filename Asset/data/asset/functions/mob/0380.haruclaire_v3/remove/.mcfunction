@@ -26,3 +26,7 @@
     function animated_java:ic_capri_aj/remove/all
     function animated_java:ic_tau_aj/remove/all
     function animated_java:ic_pisce_aj/remove/all
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:false}]
+    function asset:datapack/set_activation_state

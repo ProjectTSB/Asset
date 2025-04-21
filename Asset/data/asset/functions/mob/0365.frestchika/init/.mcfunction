@@ -4,6 +4,10 @@
 #
 # @within asset:mob/alias/365/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_frestchika",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 出現座標を記憶する
     summon marker ~ ~ ~ {Tags:["A5.Marker.SpawnPoint","A5.Marker"]}
 

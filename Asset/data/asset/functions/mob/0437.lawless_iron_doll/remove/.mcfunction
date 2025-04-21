@@ -15,3 +15,7 @@
 
 # マーカーを片付ける
     kill @e[type=marker,tag=C5.Marker,distance=..256]
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_lawless_iron_doll",Active:false}]
+    function asset:datapack/set_activation_state

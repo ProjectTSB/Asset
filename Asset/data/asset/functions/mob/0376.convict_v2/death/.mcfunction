@@ -3,6 +3,7 @@
 # Mobの死亡時の処理
 #
 # @within function asset:mob/alias/376/death
+
 # super.death呼び出し
     function asset:mob/super.death
 

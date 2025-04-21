@@ -119,7 +119,6 @@
     ## 処理用
     #declare tag 93.EntityRoot
     #declare tag 93.EndInit
-    #declare tag 93.SkipDeathFunc
     #declare tag 93.ModelRoot animated_javaモデルにつける処理簡略化用のタグ
     #declare tag 93.ModelRoot.Target animated_javaモデルにつける処理簡略化用のタグ(紐付け)
     #declare tag 93.ModelRoot.Death animated_javaモデルにつける処理簡略化用のタグ(死亡処理用)

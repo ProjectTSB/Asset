@@ -4,6 +4,10 @@
 #
 # @within asset:mob/alias/378/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_redknight",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 抽象
     function asset:mob/super.init
 

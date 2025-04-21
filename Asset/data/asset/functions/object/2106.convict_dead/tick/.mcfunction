@@ -19,7 +19,12 @@
 # 演出
     execute if score @s General.Object.Tick matches 64 run function asset:object/2106.convict_dead/tick/vfx
 
-# AJremove
+# AJ削除
     execute if score @s General.Object.Tick matches 64 as @e[type=item_display,distance=..0.1,sort=nearest,limit=1] run function animated_java:convict/remove/this
+
+# AJアンロード
+    execute if score @s General.Object.Tick matches 64 run data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_convict",Active:false}]
+    execute if score @s General.Object.Tick matches 64 run function asset:datapack/set_activation_state
+
 # 消滅処理
     kill @s[scores={General.Object.Tick=64..}]

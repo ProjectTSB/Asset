@@ -7,10 +7,6 @@
 # 継承元の処理実行
     function asset:mob/super.death
 
-# 死亡演出スキップ
-    execute if entity @s[tag=93.SkipDeathFunc] as @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] run function animated_java:eclael/remove/this
-    execute if entity @s[tag=93.SkipDeathFunc] run return 0
-
 # タグ更新
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] remove 93.ModelRoot

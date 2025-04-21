@@ -34,3 +34,7 @@
     execute as @e[tag=BE.Object,distance=..160] on passengers run kill @s
     kill @e[tag=BE.Object,distance=..160]
     function animated_java:heiloang_flare_aj/remove/all
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang",Active:false}]
+    function asset:datapack/set_activation_state

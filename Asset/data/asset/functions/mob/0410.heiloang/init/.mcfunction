@@ -4,6 +4,11 @@
 #
 # @within asset:mob/alias/410/init
 
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 継承元の処理実行
     function asset:mob/super.init
 
