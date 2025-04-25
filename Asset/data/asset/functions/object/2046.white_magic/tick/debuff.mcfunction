@@ -19,5 +19,5 @@
     data modify storage api: Argument.ID set value 613
     data modify storage api: Argument.Stack set from storage asset:context this.Stack
     data modify storage api: Argument.Duration set from storage asset:context this.Duration
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:entity/mob/effect/give
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
