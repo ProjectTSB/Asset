@@ -10,6 +10,7 @@
 # @within function
 #   asset:mob/0078.messenger_of_thunder/death/
 #   asset:mob/0078.messenger_of_thunder/init/
+#   asset:mob/0078.messenger_of_thunder/tick/
 #   asset:mob/0078.messenger_of_thunder/kill_objects
     #declare tag 26.SpawnPoint
 
