@@ -21,7 +21,7 @@
     execute if entity @s[scores={26.TPCool=0..}] run scoreboard players remove @s 26.TPCool 1
 
 # 召喚地点から一定以上離れたならスキル中であろうと強制的に戻す
-    execute unless entity @e[type=marker,tag=26.SpawnPoint,distance=..50] run tp @s @e[type=marker,tag=26.SpawnPoint,distance=..100,limit=1]
+    execute unless entity @e[type=marker,tag=26.SpawnPoint,distance=..32] run tp @s @e[type=marker,tag=26.SpawnPoint,distance=..100,limit=1]
 
 # ハメ対策でのtp処理
 # スキル中は使用不可
