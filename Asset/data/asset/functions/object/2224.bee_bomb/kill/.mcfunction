@@ -1,4 +1,4 @@
-    #> asset:object/2224.bee_bomb/kill/
+#> asset:object/2224.bee_bomb/kill/
 #
 # 継承先などから実行される処理
 #
