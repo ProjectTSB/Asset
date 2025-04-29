@@ -4,6 +4,14 @@
 #
 # @within function asset:artifact/0908.spear_of_butterfly/trigger/3.main
 
+#> Private
+# @private
+    #declare score_holder $HealthPer
+
+# 体力割合を取得
+    function api:entity/player/get_health_per
+    execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
+
 # 最大体力を取得
     function api:modifier/max_health/get
 
@@ -24,3 +32,6 @@
     function api:damage/modifier
     execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $HealthPer Temporary
