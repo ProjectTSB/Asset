@@ -4,13 +4,14 @@
 #
 # @within function asset:object/2070.potion/tick/poison/tick
 
-# 毒があるかチェック
+# 毒Lv1があるかチェック
     data modify storage api: Argument.ID set value 29
     function api:entity/mob/effect/get/from_id
 
 # 毒があればreturn
     execute if data storage api: Return.Effect run return fail
 
+# 毒Lv2があるかチェック
     data modify storage api: Argument.ID set value 79
     function api:entity/mob/effect/get/from_id
 
