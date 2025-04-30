@@ -60,7 +60,7 @@
     data modify storage asset:mob Field.Damage set value {Fire:23.0f,Water:16.0f,Thunder:16.0f}
 
 # 毒ポーションの設定
-    data modify storage asset:mob Field.Poison set value {Duration:100,Stack:4}
+    data modify storage asset:mob Field.Poison set value {Duration:100,Stack:2}
 
 # 鈍足の設定
     data modify storage asset:mob Field.Slowness set value {Duration:100,Stack:2}
