@@ -4,3 +4,4 @@
 #> tag
 # @within function asset:object/2208.eclael_slash_vfx/**
     #declare tag 2208.IsLand
+    #declare tag 93.Object
