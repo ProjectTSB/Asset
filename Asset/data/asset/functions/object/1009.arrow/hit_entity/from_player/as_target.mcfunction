@@ -14,7 +14,7 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1009.Player
     scoreboard players reset $UserID Temporary
 # PreHit メソッド呼び出し
-    execute as @e[type=item_display,tag=this,distance=..0.1] positioned ~-0.1 ~-0.1 ~-0.1 at @e[type=#lib:living,tag=1009.Target,dx=0] run function asset:object/call.m {method:pre_hit}
+    execute as @e[type=item_display,tag=this,distance=..0.1] positioned ~-0.2 ~-0.2 ~-0.2 at @e[type=#lib:living,tag=1009.Target,dx=0] run function asset:object/call.m {method:pre_hit}
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
