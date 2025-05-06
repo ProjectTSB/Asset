@@ -23,7 +23,22 @@ execute unless loaded 19 15 -29 run return 1
 # 取引 釣り竿
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:8b}
-    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:fishing_rod",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:fishing_rod",tag:{Enchantments:[{id:"minecraft:lure",lvl:3s}]},Count:1b}
+
+# 取引 金ピッケル
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:golden_pickaxe",tag:{Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:5s}]},Count:1b}
+
+# 取引 金斧
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:golden_axe",tag:{Enchantments:[{id:"minecraft:efficiency",lvl:2s},{id:"minecraft:unbreaking",lvl:5s}]},Count:1b}
+
+# 取引 金シャベル
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:golden_shovel",tag:{Enchantments:[{id:"minecraft:unbreaking",lvl:5s}]},Count:1b}
 
 # 取引 弓
     data modify storage asset:trader Trades append value {}
