@@ -37,7 +37,7 @@
 # 攻撃
     execute if score @s 93.AnimationTimer matches 81 positioned ^ ^3 ^1 rotated ~ -60 run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.3.attack_shot
     execute if score @s 93.AnimationTimer matches 91..120 run tag @s add 93.Temp.Me
-    execute if score @s 93.AnimationTimer matches 91..120 as @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=random,limit=1] at @s rotated ~ -90 run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.4.attack_falling_arrow
+    execute if score @s 93.AnimationTimer matches 91..120 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=random,limit=1] rotated ~ -90 run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/4.4.attack_falling_arrow
     execute if score @s 93.AnimationTimer matches 91..120 run tag @s remove 93.Temp.Me
 
 ## 終了
