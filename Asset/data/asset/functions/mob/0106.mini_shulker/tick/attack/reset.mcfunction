@@ -3,6 +3,6 @@
 
 tag @a[distance=..50] remove 2Y.Target
 data remove storage asset:context this.Target
-function asset:mob/0106.mini_shulker/tick/select/
+execute if function asset:mob/0106.mini_shulker/tick/select/ run return run scoreboard players set @s General.Mob.Tick 450
 
-execute unless score @s General.Mob.Tick matches 500 run function asset:mob/0106.mini_shulker/tick/reset
+function asset:mob/0106.mini_shulker/tick/reset
