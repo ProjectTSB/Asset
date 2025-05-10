@@ -18,7 +18,9 @@
 
 # 1~4を選択
     execute store result score @s RW.LineAttack run random value 1..4
-    #scoreboard players set @s RW.LineAttack 1
+
+# デバッグ用:
+#    scoreboard players set @s RW.LineAttack 1
 
 # 移動先を設置
     execute if score @s RW.LineAttack matches 1 at @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] positioned ~20 ~5 ~ run summon marker ~ ~ ~ {Tags:[RW.TeleportMarker,RW.MarkerInit]}
