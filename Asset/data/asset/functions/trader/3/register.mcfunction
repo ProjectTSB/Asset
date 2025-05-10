@@ -62,6 +62,11 @@
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:blaze_powder",Count:1b}
 
+# 取引 フグ
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:minecraft:pufferfish",Count:1b}
+
 # 取引 ガラス瓶
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:2b}
