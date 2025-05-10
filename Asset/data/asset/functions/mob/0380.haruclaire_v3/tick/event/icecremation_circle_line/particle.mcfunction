@@ -1,4 +1,4 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_cross/particle
+#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_circle_line/particle
 #
 # アイスクリメーション・円+直線
 #
