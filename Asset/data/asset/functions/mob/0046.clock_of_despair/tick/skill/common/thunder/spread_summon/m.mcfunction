@@ -1,4 +1,4 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/thunder/spread_summon
+#> asset:mob/0046.clock_of_despair/tick/skill/common/thunder/spread_summon/m
 #
 #
 #
@@ -12,7 +12,7 @@
     execute as @e[type=marker,tag=1A.This,distance=..100,limit=1] run function lib:spread_entity/
 
 # モブを出す
-    execute at @e[type=marker,tag=1A.This,distance=..100,limit=1] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon
+    $execute at @e[type=marker,tag=1A.This,distance=..100,limit=1] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:$(Delay)}
 
 # キル
     kill @e[type=marker,tag=1A.This,distance=..100]

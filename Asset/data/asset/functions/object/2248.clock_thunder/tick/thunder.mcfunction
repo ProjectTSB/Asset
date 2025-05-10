@@ -1,8 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
+#> asset:object/2248.clock_thunder/tick/thunder
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/skill/**
+# @within function asset:object/2248.clock_thunder/tick/
 
 # 演出
     particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 100
@@ -17,9 +17,10 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    function api:damage/modifier
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] at @s run function api:damage/
     function api:damage/reset
 
 # キル
-    kill @e[type=marker,tag=1A.SkillThunderMaker,distance=..0.01,sort=nearest,limit=1]
+    kill @s
