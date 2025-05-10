@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/animation_2
+#> asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/animation_2
 #
 # アニメーションのイベントハンドラ
 #
