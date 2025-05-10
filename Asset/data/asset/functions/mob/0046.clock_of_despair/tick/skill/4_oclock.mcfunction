@@ -31,33 +31,21 @@
 
 # 雷召喚
     execute if score @s 1A.LifeTime matches 850 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 865 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
 
 # 雷召喚
     execute if score @s 1A.LifeTime matches 875 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 890 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
 
 # 雷召喚
     execute if score @s 1A.LifeTime matches 900 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 915 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
 
-# 雷召喚
+# 雷召喚(940Tickに攻撃)
     execute if score @s 1A.LifeTime matches 925 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
     execute if score @s 1A.LifeTime matches 930 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:10}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 940 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
 
-# 雷召喚
+# 雷召喚(965Tickに攻撃)
     execute if score @s 1A.LifeTime matches 950 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
     execute if score @s 1A.LifeTime matches 955 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:10}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 965 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
 
-# 雷召喚
+# 雷召喚(990Tickに攻撃)
     execute if score @s 1A.LifeTime matches 975 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:15}
     execute if score @s 1A.LifeTime matches 980 at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:10}
-# 雷攻撃
-    # execute if score @s 1A.LifeTime matches 990 at @e[type=marker,tag=1A.SkillThunderMaker,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/damage
