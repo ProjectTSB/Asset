@@ -13,7 +13,7 @@
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.2 0.5
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 75
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの雷により丸焦げになった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'

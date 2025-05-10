@@ -18,3 +18,5 @@
     data modify storage asset:object ID set value 2248
 # フィールド(オプション)
     data modify storage asset:object Field.Delay set value 20
+    data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.MobUUID set value -1
