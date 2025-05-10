@@ -1,4 +1,4 @@
-#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/visual_laser
+#> asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/big_laser/visual_laser
 #
 #
 #
