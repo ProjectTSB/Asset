@@ -1,4 +1,4 @@
-#> asset:object/2212.eclael_upper_shot/tick/attack
+#> asset:object/2212.eclael_upper_shot/tick/effect_hit
 #
 # Objectのtick時の処理
 #
