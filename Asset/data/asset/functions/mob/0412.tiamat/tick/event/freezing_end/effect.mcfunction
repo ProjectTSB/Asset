@@ -1,8 +1,8 @@
-#> asset:mob/0411.behemoth/tick/event/blazing_end/effect
+#> asset:mob/0412.tiamat/tick/event/freezing_end/effect
 #
-# ブレイジングエンド
+# フリージングエンド
 #
-# @within asset:mob/0411.behemoth/tick/event/blazing_end/
+# @within asset:mob/0412.tiamat/tick/event/freezing_end/
 
 # 演出
     playsound block.amethyst_block.break hostile @a ~ ~ ~ 3 0.7
