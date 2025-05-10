@@ -11,4 +11,6 @@
 
 # ループしてもダメだったらキル / 中断
     execute if score $2020.Temp Temporary matches 0 run kill @s
-    execute if score $2020.Temp Temporary matches 0 run scoreboard players reset $2020.Temp Temporary
+
+# リセット
+    scoreboard players reset $2020.Temp Temporary
