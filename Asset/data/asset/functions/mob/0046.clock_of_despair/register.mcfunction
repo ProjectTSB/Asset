@@ -66,3 +66,6 @@
 
 # 雷ダメージ
     data modify storage asset:mob Field.Damage.Thunder set value 75f
+
+# 炎ダメージ
+    data modify storage asset:mob Field.Damage.Fire set value 70f

@@ -1,10 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/fire/blast_vfx
+#> asset:object/2250.clock_fire/tick/vfx
 #
 #
 #
-# @within function
-#   asset:mob/0046.clock_of_despair/tick/skill/common/fire/damage
-#   asset:mob/0046.clock_of_despair/tick/skill/11_oclock
+# @within function asset:object/2250.clock_fire/tick/blast
 
 particle minecraft:explosion ~ ~ ~ 1.5 1.5 1.5 0 10
 particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 30
