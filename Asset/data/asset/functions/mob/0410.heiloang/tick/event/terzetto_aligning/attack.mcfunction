@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_disaster/attack
+#> asset:mob/0410.heiloang/tick/event/terzetto_aligning/attack
 #
 # リヒトブリッツェン
 #
