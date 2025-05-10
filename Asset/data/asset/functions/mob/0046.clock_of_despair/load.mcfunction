@@ -1,4 +1,4 @@
-#> asset:mob/0046.clock_of_despair/0.load
+#> asset:mob/0046.clock_of_despair/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
