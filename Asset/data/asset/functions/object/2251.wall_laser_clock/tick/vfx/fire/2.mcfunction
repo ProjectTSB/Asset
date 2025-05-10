@@ -1,8 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/vfx2
+#> asset:object/2251.wall_laser_clock/tick/vfx/fire/2
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/
+# @within function asset:object/2251.wall_laser_clock/tick/vfx/fire/
 
 particle end_rod ^00.29264 ^-1.47118 ^ ^-77988448 ^62592347 ^ 0.0000000073 0
 particle end_rod ^00.83336 ^-1.24720 ^ ^-96004985 ^27982901 ^ 0.0000000073 0

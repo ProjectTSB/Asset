@@ -1,8 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/vfx
+#> asset:object/2251.wall_laser_clock/tick/vfx/fire/1
 #
 #
 #
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/
+# @within function asset:object/2251.wall_laser_clock/tick/vfx/fire/
 
 playsound minecraft:block.enchantment_table.use hostile @s ~ ~ ~ 1 1.35
 

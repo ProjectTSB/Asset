@@ -4,10 +4,8 @@
 #
 # @within function asset:mob/0046.clock_of_despair/tick/skill/*_oclock
 
-#> Val
-# @private
-#declare tag ClockInit
-
-summon marker ~ ~ ~ {Tags:["1A.SkillMarker","1A.WallLaserClock","ClockInit","Object","Uninterferable"]}
-tp @e[type=marker,tag=ClockInit,distance=..0.01] ~ ~ ~ ~-90 ~
-tag @e[type=marker,tag=ClockInit,distance=..0.01] remove ClockInit
+# 召喚
+    data modify storage api: Argument.ID set value 2251
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.WallLaserClock
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute rotated ~-90 ~ run function api:object/summon

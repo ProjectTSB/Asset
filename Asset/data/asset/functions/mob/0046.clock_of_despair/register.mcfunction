@@ -69,3 +69,6 @@
 
 # 炎ダメージ
     data modify storage asset:mob Field.Damage.Fire set value 70f
+
+# 時計レーザー
+    data modify storage asset:mob Field.Damage.WallLaserClock set value 75f

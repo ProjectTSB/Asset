@@ -1,13 +1,11 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/fire
+#> asset:object/2251.wall_laser_clock/tick/fire
 #
 #
 #
-# @within function
-#   asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/tick
-#   asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/fire
+# @within function asset:object/2251.wall_laser_clock/tick/
 
 # VFX
-    function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/vfx/fire/
+    function asset:object/2251.wall_laser_clock/tick/vfx/fire/
 
 # ヒット対象を探す
     data modify storage lib: args.dx set value 6.3
@@ -17,16 +15,15 @@
     execute positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
 
 # パラメータ設定
-    data modify storage api: Argument.Damage set value 75
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.DeathMessage set value '[{"translate": "%1$sは%2$sの広範囲光線により跡形も残らず蒸発した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-# 補正 (厳密な紐付けではない)
-    execute as @e[type=zombie,scores={MobID=46},distance=..14,limit=1] run function api:damage/modifier
-# 与える
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=DXYZ] at @s run function api:damage/
+    function api:damage/reset
 
 # リセット
-    function api:damage/reset
     tag @a[tag=DXYZ] remove DXYZ
     data remove storage lib: args
     scoreboard players reset $LaserDistance Temporary

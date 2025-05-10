@@ -1,8 +1,8 @@
-#> asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/pre_fire_aoe.m
-# @input args
-#   InterpolationTime: int
-#   VisibleTime: int
-# @within function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/tick
+#> asset:object/2251.wall_laser_clock/tick/pre_fire_aoe.m
+#
+#
+#
+# @within function asset:object/2251.wall_laser_clock/tick/
 
 data modify storage api: Argument.ID set value 2113
 data modify storage api: Argument.FieldOverride.Color set value 16777215
