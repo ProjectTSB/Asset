@@ -10,4 +10,4 @@
 # いなければ待機形態に移行
     execute unless data storage asset:context this.Target.ID run return fail
 # ターゲットがいれば攻撃形態に移行
-    scoreboard players set @s General.Mob.Tick 500
+    return 1
