@@ -64,3 +64,4 @@
 # フィールド
     data modify storage asset:mob Field.Damage set value 5
     data modify storage asset:mob Field.Model set value {Close:20456,Half:20457,Open:20458}
+    # data modify storage asset:mob Field.UnlockTurnLimit set value false
