@@ -10,12 +10,12 @@
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
-    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/min/hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
-    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/min/hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
+    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/max/2_hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/min/3_blessless as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
+    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/max/2_hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/min/3_blessless as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
     execute if score @s AV.AnimationTick matches 230..243 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 244..253 if predicate api:global_vars/difficulty/min/hard if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
+    execute if score @s AV.AnimationTick matches 244..253 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     scoreboard players reset $AV.Temp AV.UUID
 
 # アニメーション再生
@@ -35,11 +35,11 @@
     execute if score @s AV.AnimationTick matches 1 run tag @e[type=marker,tag=2016.Critical,distance=..64] add 2016.Opening
 
 # 衝撃波 配置
-    execute if score @s AV.AnimationTick matches 81 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/1
+    execute if score @s AV.AnimationTick matches 81 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/1
     execute if score @s AV.AnimationTick matches 85 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/2
-    execute if score @s AV.AnimationTick matches 89 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/3
+    execute if score @s AV.AnimationTick matches 89 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/3
     execute if score @s AV.AnimationTick matches 105 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/4
-    execute if score @s AV.AnimationTick matches 109 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/5
+    execute if score @s AV.AnimationTick matches 109 at @e[type=marker,tag=AV.Marker.SummonPoint,distance=..100,limit=1] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/100_0_opening/wave/5
 
 # 斬撃砲
     execute positioned ^ ^1.25 ^ if score @s AV.AnimationTick matches 168 run function asset:mob/0391.axia_first/ai/projectile/zangekihou/1.start
@@ -80,21 +80,21 @@
 # 自機狙い
     execute if score @s AV.AnimationTick matches 253 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
     execute if score @s AV.AnimationTick matches 268 as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
-    execute if score @s AV.AnimationTick matches 281 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
+    execute if score @s AV.AnimationTick matches 281 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=4] at @s run function asset:mob/0391.axia_first/ai/projectile/sword/0.summon
 
 # ランダム撃ち
-    execute if score @s AV.AnimationTick matches 256 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 256 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 253 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 253 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 259 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 259 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 262 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 262 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 265 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 265 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
-    execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/hard as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 256 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 256 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 253 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 253 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 259 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 259 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 262 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 262 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 265 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 265 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
+    execute if score @s AV.AnimationTick matches 268 if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=2] at @s run function asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/sword/normal
 
 # バリアント
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/variants/mazime/apply

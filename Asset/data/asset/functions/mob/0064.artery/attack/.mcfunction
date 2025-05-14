@@ -18,7 +18,7 @@
     function api:damage/reset
 
 # ハード以上で自身に移動速度上昇を付与
-    execute if predicate api:global_vars/difficulty/min/normal run effect give @s speed 3 0 true
+    execute if predicate api:global_vars/difficulty/min/2_hard run effect give @s speed 3 0 true
 
 # 演出
     playsound block.note_block.basedrum hostile @a ~ ~ ~ 1.3 0.5 0

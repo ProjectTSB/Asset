@@ -19,11 +19,11 @@
 
 # 技のリストの初期値
     # ノーマル
-        execute if predicate api:global_vars/difficulty/easy run data modify storage asset:context this.Skill.List set value [0,1,2,3]
+        execute if predicate api:global_vars/difficulty/1_normal run data modify storage asset:context this.Skill.List set value [0,1,2,3]
     # ハード
-        execute if predicate api:global_vars/difficulty/min/normal run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+        execute if predicate api:global_vars/difficulty/min/2_hard run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
     # Blessless。最初から全行動を使う。
-        execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
+        execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
 
 # スコアをセットする
     scoreboard players set @s General.Mob.Tick -1

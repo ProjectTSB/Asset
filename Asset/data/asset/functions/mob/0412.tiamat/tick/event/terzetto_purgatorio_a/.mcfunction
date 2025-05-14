@@ -31,10 +31,10 @@
         execute if score @s BG.EventTimer matches 130 positioned ~ ~-0.3 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos
         # 3箇所をランダムに選定
             execute if score @s BG.EventTimer matches 131 run tag @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,distance=..12,sort=random,limit=3] add BG.Temp.Dummy
-        execute if score @s BG.EventTimer matches 90 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0_long
-        execute if score @s BG.EventTimer matches 140 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1_long
-        execute if score @s BG.EventTimer matches 150 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
-        execute if score @s BG.EventTimer matches 200 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
+        execute if score @s BG.EventTimer matches 90 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0_long
+        execute if score @s BG.EventTimer matches 140 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1_long
+        execute if score @s BG.EventTimer matches 150 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
+        execute if score @s BG.EventTimer matches 200 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
         execute if score @s BG.EventTimer matches 165 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_0
         execute if score @s BG.EventTimer matches 215 run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_1
     # 演出
@@ -66,10 +66,10 @@
     # 攻撃
         execute if score @s BG.EventTimer matches 350..450 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_circle
         execute if score @s BG.EventTimer matches 430 positioned ~ ~0.2 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos
-        execute if score @s BG.EventTimer matches 390 if predicate api:global_vars/difficulty/max/normal positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1_long
-        execute if score @s BG.EventTimer matches 440 if predicate api:global_vars/difficulty/max/normal positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0_long
-        execute if score @s BG.EventTimer matches 450 if predicate api:global_vars/difficulty/min/hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
-        execute if score @s BG.EventTimer matches 500 if predicate api:global_vars/difficulty/min/hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
+        execute if score @s BG.EventTimer matches 390 if predicate api:global_vars/difficulty/max/2_hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1_long
+        execute if score @s BG.EventTimer matches 440 if predicate api:global_vars/difficulty/max/2_hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0_long
+        execute if score @s BG.EventTimer matches 450 if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_1
+        execute if score @s BG.EventTimer matches 500 if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_0
         execute if score @s BG.EventTimer matches 465 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_1
         execute if score @s BG.EventTimer matches 515 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/attack_0
         execute if score @s BG.EventTimer matches 515 positioned ~ ~ ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_pillar
@@ -85,7 +85,7 @@
 # 移動
     # アニメーション再生
         execute if score @s BG.EventTimer matches 720 run tag @e[type=item_display,tag=2180.Pillar] add 2180.Pillar.Death
-        execute if score @s BG.EventTimer matches 733 unless predicate api:global_vars/difficulty/normal as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BG.EventTimer matches 733 unless predicate api:global_vars/difficulty/2_hard as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
         execute if score @s BG.EventTimer matches 732 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
 

@@ -22,8 +22,8 @@
     function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
 
 # ハードかつ体力半分以下で追加で2本召喚する
-    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Tick set value 27
-    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Tick set value 27
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
 
-    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Tick set value 29
-    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Tick set value 29
+    execute if entity @s[tag=26.HPLess50Per] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point3

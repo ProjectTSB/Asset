@@ -23,9 +23,9 @@
 
 # 本気時は謎キャンセルでダッシュにチェインする
     # ノーマルモード
-        execute unless predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 50 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute unless predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 50 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
     # ハードモード
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 40 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 40 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
 
 # ウソ慣性
     execute if score @s General.Mob.Tick matches 30..40 unless function asset:mob/0372.tutankhamen/tick/skill/common/check_collide/forward/1.0 run tp @s ^ ^ ^0.5

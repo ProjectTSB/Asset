@@ -15,7 +15,7 @@
     execute store result storage api: Argument.FieldOverride.AttackCount int 1 run scoreboard players add $AttackCount Temporary 1
 
 # ハード以上なら的中時に鈍足を付与する設定を追加
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Slowness set value true
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Slowness set value true
 
 # 召喚の設定
     data modify storage api: Argument.ID set value 2074

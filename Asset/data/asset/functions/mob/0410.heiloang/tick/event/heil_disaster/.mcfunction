@@ -40,8 +40,8 @@
             execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 130 if predicate api:global_vars/difficulty/min/normal at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
-            execute if score @s BE.EventTimer matches 180 if predicate api:global_vars/difficulty/min/normal at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
+            execute if score @s BE.EventTimer matches 130 if predicate api:global_vars/difficulty/min/2_hard at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
+            execute if score @s BE.EventTimer matches 180 if predicate api:global_vars/difficulty/min/2_hard at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
 
 # なぎはらい火炎放射
     # アニメーション再生

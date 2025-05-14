@@ -15,8 +15,8 @@
     scoreboard players add @s 9F.GuardCount 1
 
 # カウンター一定以上の場合、強制反撃
-    execute if predicate api:global_vars/difficulty/max/normal if score @s 9F.GuardCount matches 6.. run function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
-    execute if predicate api:global_vars/difficulty/min/hard if score @s 9F.GuardCount matches 3.. run function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
+    execute if predicate api:global_vars/difficulty/max/2_hard if score @s 9F.GuardCount matches 6.. run function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s 9F.GuardCount matches 3.. run function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
 
 # 演出
     particle crit ^ ^1.2 ^1 0 0 0 0.5 10
