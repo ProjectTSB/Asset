@@ -204,3 +204,8 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:warped_nylium",Count:4b}
+
+# 取引 下位通貨をハスの葉に
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:lily_pad",Count:8b}

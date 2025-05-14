@@ -64,3 +64,8 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:16b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:shulker_box",Count:1b}
+
+# 取引 名札
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:name_tag",Count:1b}
