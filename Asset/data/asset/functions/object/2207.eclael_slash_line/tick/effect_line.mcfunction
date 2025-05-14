@@ -1,4 +1,4 @@
-#> asset:object/2207.eclael_slash_line/tick/effect_check
+#> asset:object/2207.eclael_slash_line/tick/effect_line
 #
 # Objectのtick時の処理
 #

@@ -70,4 +70,5 @@
     scoreboard players reset $ReloadStartTime Temporary
     scoreboard players reset $ReloadEndTime Temporary
     scoreboard players reset $TurretResetStartTime Temporary
+    scoreboard players reset $TurretResetEndTime Temporary
     scoreboard players reset $MaxMissileCooltime Temporary

@@ -1,8 +1,8 @@
-#> asset:object/2212.eclael_upper_shot/tick/attack
+#> asset:object/2212.eclael_upper_shot/tick/effect_hit
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2212.eclael_upper_shot/tick/
+# @within asset:object/2212.eclael_upper_shot/tick/attack
 
 # 演出
     playsound entity.arrow.hit hostile @a ~ ~ ~ 1 1

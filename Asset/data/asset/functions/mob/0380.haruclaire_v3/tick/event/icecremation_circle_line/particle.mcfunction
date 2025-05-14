@@ -1,8 +1,8 @@
-#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_cross/particle
+#> asset:mob/0380.haruclaire_v3/tick/event/icecremation_circle_line/particle
 #
 # アイスクリメーション・円+直線
 #
-# @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_cross/
+# @within asset:mob/0380.haruclaire_v3/tick/event/icecremation_circle_line/
 
 # 円 1
     execute rotated ~00 0 positioned ^ ^0.2 ^ run particle end_rod ~ ~ ~ ^ ^ ^100000000 0.000000005 0

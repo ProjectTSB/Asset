@@ -16,5 +16,9 @@
 # 中心点削除
     kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
 
+# オブジェクト消去
+    execute as @e[tag=93.Object] on passengers run kill @s
+    kill @e[tag=93.Object]
+
 # モデル削除
     function animated_java:eclael/remove/all

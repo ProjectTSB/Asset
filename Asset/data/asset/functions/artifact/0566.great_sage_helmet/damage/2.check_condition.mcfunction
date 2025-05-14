@@ -21,7 +21,7 @@
     function api:entity/player/get_health_per
     execute store result score $FQ.HealthPer Temporary run data get storage api: Return.HealthPer 1000
 # 体力が20%以下
-    execute if score $FQ.HealthPer Temporary matches ..200 run tag @s remove CanUsed
+    execute unless score $FQ.HealthPer Temporary matches ..200 run tag @s remove CanUsed
 # リセット
     scoreboard players reset $FQ.HealthPer Temporary
 
