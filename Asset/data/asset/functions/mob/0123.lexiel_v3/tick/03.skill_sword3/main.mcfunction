@@ -10,7 +10,7 @@
     execute if score @s General.Mob.Tick matches 0 as @e[type=item_display,tag=3F.AJ,tag=3F.AJLink,sort=nearest,limit=1] at @s run function animated_java:lexiel/animations/attack3_1/play
 
 # ハードの場合、確率でジャンプ、特殊行動へ
-    execute if score @s General.Mob.Tick matches 0 if predicate api:global_vars/difficulty/min/hard if predicate lib:random_pass_per/30 run scoreboard players set @s General.Mob.Tick 1000
+    execute if score @s General.Mob.Tick matches 0 if predicate api:global_vars/difficulty/min/3_blessless if predicate lib:random_pass_per/30 run scoreboard players set @s General.Mob.Tick 1000
 
 # 音鳴らす
     execute if score @s General.Mob.Tick matches 20 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2

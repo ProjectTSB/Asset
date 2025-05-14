@@ -12,7 +12,7 @@
     execute if score @s General.Mob.Tick matches 0 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0301.karmic/tick/common/tp
 
 # 突っ込む
-    execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 0..15 facing entity @p[gamemode=!spectator,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s rotated ~ 0 run function asset:mob/0301.karmic/tick/common/tp
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 0..15 facing entity @p[gamemode=!spectator,distance=..100] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s rotated ~ 0 run function asset:mob/0301.karmic/tick/common/tp
     execute if score @s General.Mob.Tick matches 0..28 at @s rotated ~ 0 positioned ^ ^ ^0.2 run function asset:mob/0301.karmic/tick/common/tp
 # 撃つ
     execute if score @s General.Mob.Tick matches 9 rotated ~ -6 positioned ~ ~0.7 ~ positioned ^ ^ ^0.3 run function asset:mob/0301.karmic/tick/common/shot/main

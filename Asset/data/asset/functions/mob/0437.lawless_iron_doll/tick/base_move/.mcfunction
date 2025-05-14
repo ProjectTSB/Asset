@@ -12,13 +12,13 @@
 
 # 一定のTickになったら技の発動
     # Normal
-        execute if predicate api:global_vars/difficulty/easy if score @s[tag=!C5.InAction] General.Mob.Tick matches 40.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+        execute if predicate api:global_vars/difficulty/1_normal if score @s[tag=!C5.InAction] General.Mob.Tick matches 40.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
     # Hard
-        execute if predicate api:global_vars/difficulty/normal if score @s[tag=!C5.InAction] General.Mob.Tick matches 30.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+        execute if predicate api:global_vars/difficulty/2_hard if score @s[tag=!C5.InAction] General.Mob.Tick matches 30.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
     # Blessless前半戦
-        execute if predicate api:global_vars/difficulty/hard if score @s[tag=!C5.InAction,scores={C5.Phase=1}] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+        execute if predicate api:global_vars/difficulty/3_blessless if score @s[tag=!C5.InAction,scores={C5.Phase=1}] General.Mob.Tick matches 20.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
     # Blessless後半戦、技終わった直後に次を放つ
-        execute if predicate api:global_vars/difficulty/hard if score @s[tag=!C5.InAction,scores={C5.Phase=2}] General.Mob.Tick matches 0.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
+        execute if predicate api:global_vars/difficulty/3_blessless if score @s[tag=!C5.InAction,scores={C5.Phase=2}] General.Mob.Tick matches 0.. if entity @p[distance=..64] run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill_select/
 
 # 接触ダメージの処理
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:mob/0437.lawless_iron_doll/tick/base_move/contact_damage/

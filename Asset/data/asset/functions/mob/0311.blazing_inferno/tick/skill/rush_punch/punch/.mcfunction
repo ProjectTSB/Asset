@@ -47,6 +47,6 @@
 
 # 攻撃終了
     # ハード未満
-        execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
+        execute unless predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
     # ハード以上
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/end

@@ -24,7 +24,7 @@
 
 # 以下、normal以上のみ
 # 外周に移動し、ヘルウィング実行
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
 
 # 移動
     # アニメーション再生
@@ -44,8 +44,8 @@
         # アニメーション再生
             execute if score @s BG.EventTimer matches 260 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/5_deathwing
         # 攻撃位置決定
-            execute if score @s BG.EventTimer matches 230 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/hellwing/prediction_long
-            execute if score @s BG.EventTimer matches 250 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0412.tiamat/tick/event/hellwing/prediction
+            execute if score @s BG.EventTimer matches 230 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/hellwing/prediction_long
+            execute if score @s BG.EventTimer matches 250 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/hellwing/prediction
         # 攻撃
             execute if score @s BG.EventTimer matches 275 positioned ~ ~-0.7 ~ run function asset:mob/0412.tiamat/tick/event/hellwing/attack
         # 演出

@@ -18,8 +18,8 @@
     # アニメーション再生
         execute if score @s BG.EventTimer matches 100 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/5_deathwing
     # 攻撃位置決定
-        execute if score @s BG.EventTimer matches 70 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/hellwing/prediction_long
-        execute if score @s BG.EventTimer matches 90 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0412.tiamat/tick/event/hellwing/prediction
+        execute if score @s BG.EventTimer matches 70 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/hellwing/prediction_long
+        execute if score @s BG.EventTimer matches 90 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/hellwing/prediction
     # 攻撃
         execute if score @s BG.EventTimer matches 115 positioned ~ ~-0.7 ~ run function asset:mob/0412.tiamat/tick/event/hellwing/attack
     # 演出

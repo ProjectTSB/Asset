@@ -29,20 +29,20 @@
 # ソウルブラストの位置調整
     execute at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^ ^ ^-7.5 ~ ~
 # ソウルブラスト召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
 # ソウルブラストの位置調整
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^7.5 ^ ^ ~90 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^7.5 ^ ^ ~90 ~
 # ソウルブラスト召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
 # ソウルブラストの位置調整
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^2.5 ^ ^ ~90 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^2.5 ^ ^ ~90 ~
 # ソウルブラスト召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
 # ソウルブラストの位置調整
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^-2.5 ^ ^ ~90 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^-2.5 ^ ^ ~90 ~
 # ソウルブラスト召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0341.louvert/tick/general/5.soul_blast
 # ソウルブラストの位置調整
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^-7.5 ^ ^ ~90 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 as @e[tag=2145.SoulBlast,distance=..0.01,limit=1] run tp @s ^-7.5 ^ ^ ~90 ~
 # Makerを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

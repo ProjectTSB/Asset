@@ -11,5 +11,5 @@
     execute if entity @s[tag=1J.Skill.FlameThrower] run function asset:mob/0055.hetukedah/tick/skill/flamethrower/tick
 
 # おててビームはハードかどうかで分岐
-    execute unless predicate api:global_vars/difficulty/min/hard if entity @s[tag=1J.Skill.OteteBeam] run function asset:mob/0055.hetukedah/tick/skill/otete_beam/tick
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=1J.Skill.OteteBeam] run function asset:mob/0055.hetukedah/tick/skill/otete_beam/tick_hard
+    execute unless predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=1J.Skill.OteteBeam] run function asset:mob/0055.hetukedah/tick/skill/otete_beam/tick
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=1J.Skill.OteteBeam] run function asset:mob/0055.hetukedah/tick/skill/otete_beam/tick_hard

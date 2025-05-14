@@ -12,7 +12,7 @@
     execute at @p[tag=Victim] run playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 1.5 0
 
 # ハード以上の場合、浮遊を付与
-    execute if predicate api:global_vars/difficulty/min/hard as @p[tag=Victim,distance=..60] run function asset:mob/0124.skull_harpy/attack/levitation
+    execute if predicate api:global_vars/difficulty/min/3_blessless as @p[tag=Victim,distance=..60] run function asset:mob/0124.skull_harpy/attack/levitation
 
 # 引数の設定
     data modify storage api: Argument.Damage set value 9.5d

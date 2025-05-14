@@ -21,7 +21,7 @@
         data modify storage lib: Args.scarcity_history_size set value 3
         execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
     # ハードだったら動作カウント増やす
-        execute if predicate api:global_vars/difficulty/min/hard run scoreboard players add @s 1J.MoveCount 1
+        execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players add @s 1J.MoveCount 1
     # デバッグ
         #scoreboard players set $Random Temporary 0
         #scoreboard players set @s 1J.MoveCount 5
