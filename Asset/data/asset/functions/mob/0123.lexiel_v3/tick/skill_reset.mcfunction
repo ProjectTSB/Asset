@@ -6,7 +6,7 @@
 
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick -20
-    execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -30
+    execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -45
 
 # ハード限定の行動。スキル2の特殊リセット

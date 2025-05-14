@@ -9,7 +9,7 @@
 
 # 効果
 # ノーマル以下(speed2)、ハード以上(speed3、被ダメージ70%軽減)
-    execute if predicate api:global_vars/difficulty/max/normal run effect give @s speed 1 1 true
+    execute if predicate api:global_vars/difficulty/max/2_hard run effect give @s speed 1 1 true
     execute if predicate api:global_vars/difficulty/min/3_blessless run effect give @s speed 1 2 true
     execute if predicate api:global_vars/difficulty/min/3_blessless run effect give @s resistance 1 6 true
 

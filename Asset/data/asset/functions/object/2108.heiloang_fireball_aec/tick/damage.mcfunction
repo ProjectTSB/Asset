@@ -14,7 +14,7 @@
     function api:damage/reset
 
 # ノーマル以下では、消滅時間を早める
-    execute if predicate api:global_vars/difficulty/max/normal run scoreboard players add @s General.Object.Tick 50
+    execute if predicate api:global_vars/difficulty/max/2_hard run scoreboard players add @s General.Object.Tick 50
 
 # インターバル設定
     scoreboard players set @s 2108.DamageInterval 10

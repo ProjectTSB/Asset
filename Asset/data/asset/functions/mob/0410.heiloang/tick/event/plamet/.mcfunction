@@ -30,7 +30,7 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 121 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/9_2_plamet_dive
     # 対象を向く
-        execute if score @s BE.EventTimer matches 114 if predicate api:global_vars/difficulty/max/normal at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
+        execute if score @s BE.EventTimer matches 114 if predicate api:global_vars/difficulty/max/2_hard at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
         execute if score @s BE.EventTimer matches 121 if predicate api:global_vars/difficulty/min/3_blessless at @p[tag=BE.HateTarget] run function asset:mob/0410.heiloang/tick/event/plamet/set_dive_target
         execute if score @s BE.EventTimer matches 121..138 at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_target_aec
         execute if score @s BE.EventTimer matches 138 at @s positioned ~ ~-7 ~ run function asset:mob/0410.heiloang/tick/event/plamet/dive_prediction
@@ -56,7 +56,7 @@
         execute if score @s BE.EventTimer matches 201 at @e[type=marker,tag=BE.CenterPosition] run tp @s ^ ^2 ^28 ~180 0
         execute if score @s BE.EventTimer matches 220 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run data modify entity @s teleport_duration set value 1
     # テンペスト配置
-        execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/normal as @a[distance=..60,sort=random,limit=3] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 25 if predicate api:global_vars/difficulty/min/2_hard as @a[distance=..60,sort=random,limit=3] run tag @s add BE.AttackTarget
         execute if score @s BE.EventTimer matches 25 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
         execute if score @s BE.EventTimer matches 130..157 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 130..157 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd

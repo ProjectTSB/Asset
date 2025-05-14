@@ -15,7 +15,7 @@
     execute if predicate api:global_vars/difficulty/easy if predicate lib:random_pass_per/75 run return 0
 
 # ハードなら50%でreturn
-    execute if predicate api:global_vars/difficulty/normal if predicate lib:random_pass_per/50 run return 0
+    execute if predicate api:global_vars/difficulty/2_hard if predicate lib:random_pass_per/50 run return 0
 
 # SpreadMarkerを召喚
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}

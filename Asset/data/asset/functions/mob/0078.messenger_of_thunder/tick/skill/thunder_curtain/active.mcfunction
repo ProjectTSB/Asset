@@ -12,7 +12,7 @@
     data modify storage api: Argument.FieldOverride.RotationX set from entity @e[type=marker,tag=26.RotationMarker,distance=..0.01,sort=nearest,limit=1] Rotation[0]
 
 # 雷のダメージを設定
-    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Normal
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Normal
     execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Hard
 
 # サンダーカーテンを召喚

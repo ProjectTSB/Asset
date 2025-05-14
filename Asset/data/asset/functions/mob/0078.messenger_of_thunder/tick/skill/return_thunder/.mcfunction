@@ -13,7 +13,7 @@
 
 # ノーマルでかつ、HP半分以下で少し遅れて追加で2本召喚
 # ハード以上なら関係なく2本追加
-    execute if entity @s[tag=26.HPLess50Per,scores={General.Mob.Tick=30}] if predicate api:global_vars/difficulty/normal run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/addition_thunder
+    execute if entity @s[tag=26.HPLess50Per,scores={General.Mob.Tick=30}] if predicate api:global_vars/difficulty/2_hard run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/addition_thunder
     execute if entity @s[scores={General.Mob.Tick=30}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/addition_thunder
 
 # リセット

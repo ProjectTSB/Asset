@@ -5,7 +5,7 @@
 # @within asset:object/2206.eclael_thunder/tick/
 
 # ヒット判定
-    execute if predicate api:global_vars/difficulty/max/normal as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run tag @s add 2206.Hit
+    execute if predicate api:global_vars/difficulty/max/2_hard as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run tag @s add 2206.Hit
     execute if predicate api:global_vars/difficulty/min/3_blessless as @a[tag=!PlayerShouldInvulnerable,distance=..4.9] run tag @s add 2206.Hit
 
 # ダメージ

@@ -26,9 +26,9 @@
     function api:damage/reset
 
 # ノーマル以上で侵害エフェクトを付与
-    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0156.infringement/tick/debuff
+    execute if predicate api:global_vars/difficulty/min/2_hard run function asset:mob/0156.infringement/tick/debuff
 
 # 自滅する
 # ノーマル以下でkill @s ハードで奈落
-    execute if predicate api:global_vars/difficulty/max/normal run function api:mob/kill
+    execute if predicate api:global_vars/difficulty/max/2_hard run function api:mob/kill
     execute if predicate api:global_vars/difficulty/min/3_blessless run function api:mob/remove

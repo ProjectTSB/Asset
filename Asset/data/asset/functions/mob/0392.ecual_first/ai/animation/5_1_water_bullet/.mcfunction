@@ -9,7 +9,7 @@
 
 # 近くのプレイヤーの方を向く
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
-    execute if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
+    execute if predicate api:global_vars/difficulty/max/2_hard as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/general/2.rotate
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 1..78 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/rotate
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 87..98 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/rotate
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 107..118 as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/5_0_shining_ray/rotate
@@ -23,7 +23,7 @@
     execute if score @s AW.AnimationTick matches 161 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/end
 
 # 予告線表示
-    execute if predicate api:global_vars/difficulty/max/normal if score @s AW.AnimationTick matches 52 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line
+    execute if predicate api:global_vars/difficulty/max/2_hard if score @s AW.AnimationTick matches 52 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 72 run function asset:mob/0392.ecual_first/ai/animation/5_1_water_bullet/announce_line_hard
 
 # 弾幕発射

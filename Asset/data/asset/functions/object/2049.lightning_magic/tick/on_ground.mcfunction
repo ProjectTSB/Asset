@@ -18,5 +18,5 @@
     execute if entity @s[tag=2049.Interval] run function asset:object/2049.lightning_magic/tick/thunder
 
 # プレイヤーの方向へ誘導する
-    execute if predicate api:global_vars/difficulty/max/normal facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute if predicate api:global_vars/difficulty/max/2_hard facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
     execute if predicate api:global_vars/difficulty/min/3_blessless facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~

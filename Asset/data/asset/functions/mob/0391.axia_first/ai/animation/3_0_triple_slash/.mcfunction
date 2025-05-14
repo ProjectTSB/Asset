@@ -8,7 +8,7 @@
 # 一部の時間のみ向く処理を入れる
     execute if score @s AV.AnimationTick matches 1..11 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 22..31 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 41..50 if predicate api:global_vars/difficulty/max/normal as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 41..50 if predicate api:global_vars/difficulty/max/2_hard as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 41..50 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
 
 # アニメーション再生

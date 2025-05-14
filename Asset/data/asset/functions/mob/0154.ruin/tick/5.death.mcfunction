@@ -11,5 +11,5 @@
     particle explosion ~ ~1 ~ 0.2 0.1 0.2 0 4 normal @a
 
 # ノーマル以下でkill、ハード以上なら奈落へGoodBye
-    execute if predicate api:global_vars/difficulty/max/normal run function api:mob/kill
+    execute if predicate api:global_vars/difficulty/max/2_hard run function api:mob/kill
     execute if predicate api:global_vars/difficulty/min/3_blessless run function api:mob/remove

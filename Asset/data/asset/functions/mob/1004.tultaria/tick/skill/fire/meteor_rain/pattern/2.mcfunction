@@ -12,8 +12,8 @@
     execute if score @s General.Mob.Tick matches 35 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
     execute if score @s General.Mob.Tick matches 40 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
     execute if score @s General.Mob.Tick matches 45 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-    execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 50 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-    execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 55 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
+    execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 50 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
+    execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 55 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 60 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 65 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
 
@@ -24,8 +24,8 @@
     execute if score @s General.Mob.Tick matches 35 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     execute if score @s General.Mob.Tick matches 45 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-    execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 50 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-    execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 55 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+    execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 50 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+    execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 55 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 60 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 65 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
 

@@ -35,11 +35,11 @@
         execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/easy rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/easy rotated ~240 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
     # 星
-        execute if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/normal rotated ~ 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 122 if predicate api:global_vars/difficulty/normal rotated ~72 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/normal rotated ~144 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 124 if predicate api:global_vars/difficulty/normal rotated ~216 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/normal rotated ~288 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/2_hard rotated ~ 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 122 if predicate api:global_vars/difficulty/2_hard rotated ~72 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/2_hard rotated ~144 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 124 if predicate api:global_vars/difficulty/2_hard rotated ~216 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/2_hard rotated ~288 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
     # 二重三角形 外→中
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/min/3_blessless rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute unless entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/min/3_blessless rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0

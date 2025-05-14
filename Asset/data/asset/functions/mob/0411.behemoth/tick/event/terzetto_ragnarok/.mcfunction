@@ -46,7 +46,7 @@
         execute if score @s BF.EventTimer matches 279 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/attack_dive
 # フレアダイブ追撃
     # 4箇所に攻撃地点設置
-        execute if score @s BF.EventTimer matches 282 if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/summon_flare
+        execute if score @s BF.EventTimer matches 282 if predicate api:global_vars/difficulty/min/2_hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/summon_flare
         execute if score @s BF.EventTimer matches 282 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/attack_flare_normal
         execute if score @s BF.EventTimer matches 282 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/attack_flare_slow
         execute if score @s BF.EventTimer matches 288 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_succession_dive/attack_flare_normal
@@ -74,16 +74,16 @@
             execute if score @s BF.EventTimer matches 515 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
             execute if score @s BF.EventTimer matches 550 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
         # ターゲットを向く
-            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
-            execute if score @s BF.EventTimer matches 520 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/2_hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 520 if predicate api:global_vars/difficulty/max/2_hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
             execute if score @s BF.EventTimer matches 505 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
             execute if score @s BF.EventTimer matches 540 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
             execute if score @s BF.EventTimer matches 515..530 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
             execute if score @s BF.EventTimer matches 550..565 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
         # 攻撃範囲表示
-            execute if score @s BF.EventTimer matches 455 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 530 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 455 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 495 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 530 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
             execute if score @s BF.EventTimer matches 475 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
             execute if score @s BF.EventTimer matches 510 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
             execute if score @s BF.EventTimer matches 545 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction

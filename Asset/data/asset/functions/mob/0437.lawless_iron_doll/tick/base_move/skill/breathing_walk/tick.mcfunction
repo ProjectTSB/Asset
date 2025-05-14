@@ -16,6 +16,6 @@
 
 # リセット
     # ハード以下
-        execute if predicate api:global_vars/difficulty/max/normal if score @s General.Mob.Tick matches 60.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+        execute if predicate api:global_vars/difficulty/max/2_hard if score @s General.Mob.Tick matches 60.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
     # Blessless以上
         execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 100.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset

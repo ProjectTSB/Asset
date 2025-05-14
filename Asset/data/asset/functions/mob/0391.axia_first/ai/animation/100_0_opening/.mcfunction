@@ -10,9 +10,9 @@
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
-    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/max/2_hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 153..159 if predicate api:global_vars/difficulty/min/3_blessless as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
-    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/max/normal as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/max/2_hard as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 178..185 if predicate api:global_vars/difficulty/min/3_blessless as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/animation/7_0_zangekihou/rotate
     execute if score @s AV.AnimationTick matches 230..243 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 244..253 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/

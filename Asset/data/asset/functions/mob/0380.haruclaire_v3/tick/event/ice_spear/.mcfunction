@@ -34,7 +34,7 @@
         execute if score @s AK.EventTimer matches 70..73 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
         execute if score @s AK.EventTimer matches 80..83 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
         execute if score @s AK.EventTimer matches 85..104 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
-        execute if score @s AK.EventTimer matches 105 if predicate api:global_vars/difficulty/normal as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=random,limit=1] run tag @s add AK.IceSpear.Spread
+        execute if score @s AK.EventTimer matches 105 if predicate api:global_vars/difficulty/2_hard as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=random,limit=1] run tag @s add AK.IceSpear.Spread
         execute if score @s AK.EventTimer matches 105 if predicate api:global_vars/difficulty/min/3_blessless as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=random,limit=2] run tag @s add AK.IceSpear.Spread
 
     # 攻撃

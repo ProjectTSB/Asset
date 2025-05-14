@@ -28,8 +28,8 @@
     function api:damage/reset
 
 # ハード以上なら鈍足を付与する
-    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0227.frost_eye/tick/debuff
+    execute if predicate api:global_vars/difficulty/min/2_hard run function asset:mob/0227.frost_eye/tick/debuff
 
 # クールタイム設定
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] 6C.AttackCT 40
-    execute if predicate api:global_vars/difficulty/min/normal run scoreboard players set @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] 6C.AttackCT 20
+    execute if predicate api:global_vars/difficulty/min/2_hard run scoreboard players set @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] 6C.AttackCT 20

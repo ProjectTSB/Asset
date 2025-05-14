@@ -31,7 +31,7 @@
     execute if predicate api:global_vars/difficulty/min/3_blessless if score @s[scores={C5.Phase=2..}] General.Mob.Tick matches 30 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/activate_second_slash
 
 # ニュートラルポーズに戻る、ただしBlesslessでは、直前のアニメの都合でやらない。
-    execute if predicate api:global_vars/difficulty/max/normal if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
+    execute if predicate api:global_vars/difficulty/max/2_hard if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
 
 # リセット
     execute if score @s General.Mob.Tick matches 55.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset

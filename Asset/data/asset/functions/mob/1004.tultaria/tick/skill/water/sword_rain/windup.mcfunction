@@ -19,7 +19,7 @@
     # フェイズ2
         execute if score @s RW.Phase matches 2 store result score $Random Temporary run random value 0..2
     # フェイズ3、ハード以下
-        execute if predicate api:global_vars/difficulty/max/normal if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..2
+        execute if predicate api:global_vars/difficulty/max/2_hard if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..2
     # フェイズ3かつBlesslessだとスゲー置き方解禁する
         execute if predicate api:global_vars/difficulty/min/3_blessless if score @s RW.Phase matches 3 store result score $Random Temporary run random value 0..3
 

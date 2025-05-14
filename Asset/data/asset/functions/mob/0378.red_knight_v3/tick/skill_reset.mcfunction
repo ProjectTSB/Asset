@@ -6,10 +6,10 @@
 
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s AI.Tick -30
-    execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s AI.Tick -40
+    execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s AI.Tick -40
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s AI.Tick -55
 # ノーマル以上で低HPだと、加速する
-    execute if entity @s[tag=AI.HPless50per] if predicate api:global_vars/difficulty/min/normal run scoreboard players add @s AI.Tick 10
+    execute if entity @s[tag=AI.HPless50per] if predicate api:global_vars/difficulty/min/2_hard run scoreboard players add @s AI.Tick 10
 
 # アニメーション戻す
     execute as @e[type=item_display,tag=AI.AJ,tag=AI.AJLink,sort=nearest,limit=1] run function asset:mob/0378.red_knight_v3/tick/common/reset_animation

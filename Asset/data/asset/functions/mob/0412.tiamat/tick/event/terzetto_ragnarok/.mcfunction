@@ -46,7 +46,7 @@
         execute if score @s BG.EventTimer matches 279 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_dive
 # アイシクルダイブ追撃
     # 2箇所に攻撃地点設置
-        execute if score @s BG.EventTimer matches 282 if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
+        execute if score @s BG.EventTimer matches 282 if predicate api:global_vars/difficulty/min/2_hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
         execute if score @s BG.EventTimer matches 282 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
         execute if score @s BG.EventTimer matches 287 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
 
@@ -71,8 +71,8 @@
     # 攻撃
         execute if score @s BG.EventTimer matches 400..500 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_circle_icicle
         execute if score @s BG.EventTimer matches 490 positioned ^ ^-0.3 ^ run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_attack_pos_icicle
-        execute if score @s BG.EventTimer matches 440 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_0_icicle_long
-        execute if score @s BG.EventTimer matches 490 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_1_icicle_long
+        execute if score @s BG.EventTimer matches 440 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_0_icicle_long
+        execute if score @s BG.EventTimer matches 490 if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_1_icicle_long
         execute if score @s BG.EventTimer matches 500 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_0_icicle
         execute if score @s BG.EventTimer matches 550 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/prediction_1_icicle
         execute if score @s BG.EventTimer matches 515 run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/attack_0_icicle

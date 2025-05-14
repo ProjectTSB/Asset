@@ -17,5 +17,5 @@
 
 # 終了
     execute if score @s BE.EventTimer matches 499.. if predicate api:global_vars/difficulty/easy run function asset:mob/0410.heiloang/tick/event/offering_end/end
-    execute if score @s BE.EventTimer matches 465.. if predicate api:global_vars/difficulty/normal run function asset:mob/0410.heiloang/tick/event/offering_end/end
+    execute if score @s BE.EventTimer matches 465.. if predicate api:global_vars/difficulty/2_hard run function asset:mob/0410.heiloang/tick/event/offering_end/end
     execute if score @s BE.EventTimer matches 567.. if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0410.heiloang/tick/event/offering_end/end

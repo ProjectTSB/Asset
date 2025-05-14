@@ -5,7 +5,7 @@
 # @within function asset:mob/0237.lunatic_mage/tick/skill/**
 
 # スピード設定
-    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Speed set value 3
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Speed set value 3
     execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Speed set value 4
 
 # 召喚

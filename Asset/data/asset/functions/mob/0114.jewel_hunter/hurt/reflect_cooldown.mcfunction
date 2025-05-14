@@ -18,7 +18,7 @@
 # イージーで50Tick,ノーマルで20Tick、ハード以上で5Tick
     scoreboard players operation $CurrentTick Temporary -= $LatestReflectTick Temporary
     execute if predicate api:global_vars/difficulty/easy if score $CurrentTick Temporary matches 50.. run tag @s add CanReflect
-    execute if predicate api:global_vars/difficulty/normal if score $CurrentTick Temporary matches 20.. run tag @s add CanReflect
+    execute if predicate api:global_vars/difficulty/2_hard if score $CurrentTick Temporary matches 20.. run tag @s add CanReflect
     execute if predicate api:global_vars/difficulty/min/3_blessless if score $CurrentTick Temporary matches 5.. run tag @s add CanReflect
 
 # 反射攻撃実行

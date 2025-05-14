@@ -12,7 +12,7 @@
 
 # 吸引
     execute if entity @s[scores={General.Object.Tick=..38}] run function asset:object/2117.heiloang_tornado/tick/move_0
-    execute if entity @s[scores={General.Object.Tick=39..60}] if predicate api:global_vars/difficulty/max/normal run function asset:object/2117.heiloang_tornado/tick/move_0
+    execute if entity @s[scores={General.Object.Tick=39..60}] if predicate api:global_vars/difficulty/max/2_hard run function asset:object/2117.heiloang_tornado/tick/move_0
     execute if entity @s[scores={General.Object.Tick=39..60}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2117.heiloang_tornado/tick/move_1
 # ダメージ
     execute if entity @s[scores={General.Object.Tick=61}] run function asset:object/2117.heiloang_tornado/tick/attack

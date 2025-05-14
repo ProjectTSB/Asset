@@ -25,7 +25,7 @@
         execute if score @s AK.EventTimer matches 14..71 positioned ^ ^0.8 ^1.6 facing entity @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,limit=1] feet run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/prediction
     # 攻撃
         execute if score @s AK.EventTimer matches 71 positioned ^ ^0.8 ^1.6 run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/attack
-        execute if score @s AK.EventTimer matches 72..121 if predicate api:global_vars/difficulty/min/normal at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/turn
+        execute if score @s AK.EventTimer matches 72..121 if predicate api:global_vars/difficulty/min/2_hard at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/turn
         execute if score @s AK.EventTimer matches 72..121 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/turn
     # 地面に戻る
         execute if score @s AK.EventTimer matches 155.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.12 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp

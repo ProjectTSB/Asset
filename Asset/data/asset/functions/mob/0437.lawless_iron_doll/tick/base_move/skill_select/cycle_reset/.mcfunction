@@ -20,9 +20,9 @@
     # ノーマル後半戦
         execute if predicate api:global_vars/difficulty/easy if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
     # ハード前半戦
-        execute if predicate api:global_vars/difficulty/normal if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+        execute if predicate api:global_vars/difficulty/2_hard if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
     # ハード後半戦
-        execute if predicate api:global_vars/difficulty/normal if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
+        execute if predicate api:global_vars/difficulty/2_hard if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
     # Blesslessでは常に全部再生だ！
         execute if predicate api:global_vars/difficulty/3_blessless run data modify storage asset:context this.Skill.List set value [0,1,2,3,4,5]
 

@@ -7,7 +7,7 @@
 # ビーム
     execute if score @s 1A.LifeTime matches 401 positioned ~ ~10 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/summon
 # ビーム追尾
-    execute if score @s 1A.LifeTime matches 421..590 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=1A.SkillBeam,scores={1A.Cooldown=0},distance=..100] at @s facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~ 0 run tp @s ^ ^ ^0.2 0 90
+    execute if score @s 1A.LifeTime matches 421..590 if predicate api:global_vars/difficulty/max/2_hard as @e[type=marker,tag=1A.SkillBeam,scores={1A.Cooldown=0},distance=..100] at @s facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~ 0 run tp @s ^ ^ ^0.2 0 90
     execute if score @s 1A.LifeTime matches 421..590 if predicate api:global_vars/difficulty/min/3_blessless as @e[type=marker,tag=1A.SkillBeam,scores={1A.Cooldown=0},distance=..100] at @s facing entity @p[tag=!PlayerShouldInvulnerable] feet rotated ~ 0 run tp @s ^ ^ ^0.25 0 90
     execute if score @s 1A.LifeTime matches 591 run kill @e[type=marker,tag=1A.SkillBeam,distance=..100]
 

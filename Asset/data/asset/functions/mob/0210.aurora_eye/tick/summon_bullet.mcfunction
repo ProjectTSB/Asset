@@ -10,7 +10,7 @@
 # RotationをFieldOvrrideへ
 
 # ノーマル以上ならデバフを付与するように
-    execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
+    execute if predicate api:global_vars/difficulty/min/2_hard run data modify storage api: Argument.FieldOverride.Debuff set value true
 
 # (難易度値 - 1)だけ付与するスタックを設定
     function api:global_vars/get_difficulty
