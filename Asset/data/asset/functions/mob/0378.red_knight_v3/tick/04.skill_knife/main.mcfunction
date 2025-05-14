@@ -29,7 +29,7 @@
     execute if score @s AI.Tick matches 16 positioned ~ ~1 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
     execute if score @s AI.Tick matches 16 positioned ~ ~1 ~ rotated ~45 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
     execute if score @s AI.Tick matches 16 positioned ~ ~1 ~ rotated ~-45 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
-    execute if score @s AI.Tick matches 16 if predicate api:global_vars/difficulty/min/hard positioned ~ ~1 ~ rotated ~90 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
-    execute if score @s AI.Tick matches 16 if predicate api:global_vars/difficulty/min/hard positioned ~ ~1 ~ rotated ~-90 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
+    execute if score @s AI.Tick matches 16 if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~1 ~ rotated ~90 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
+    execute if score @s AI.Tick matches 16 if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~1 ~ rotated ~-90 ~ run function asset:mob/0378.red_knight_v3/tick/common/summon_knife
 
     execute if score @s AI.Tick matches 54 run function asset:mob/0378.red_knight_v3/tick/skill_reset

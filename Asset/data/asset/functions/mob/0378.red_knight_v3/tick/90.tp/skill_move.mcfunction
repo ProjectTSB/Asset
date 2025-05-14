@@ -23,7 +23,7 @@
     scoreboard players reset $Random Temporary
 
 # その後動くようにする
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s AI.Tick -1
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s AI.Tick -1
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s AI.Tick -5
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s AI.Tick -15
     tag @s remove AI.Skill90

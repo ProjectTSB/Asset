@@ -17,7 +17,7 @@
     # 偏差:ただしHard以下だと普通に狙ってくる
         # マーカー設置
             execute if predicate api:global_vars/difficulty/max/normal if score @s General.Mob.Tick matches 20 at @p[gamemode=!spectator,distance=..128] run summon marker ~ ~1.7 ~ {Tags:["RW.Marker.Aim"]}
-            execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/
+            execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/thunder/aiming_laser/aim/
             execute if score @s General.Mob.Tick matches 20 anchored eyes facing entity @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
             execute if score @s General.Mob.Tick matches 20 run kill @e[type=marker,tag=RW.Marker.Aim,sort=nearest,limit=1]
         # 警告

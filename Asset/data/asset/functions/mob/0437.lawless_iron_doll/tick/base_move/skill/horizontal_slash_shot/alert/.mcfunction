@@ -16,4 +16,4 @@
 
 # 祝福なき者よ(Blessless)
     # 常時5-way。後半ではモーションが強化される。
-        execute if predicate api:global_vars/difficulty/hard run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/5
+        execute if predicate api:global_vars/difficulty/3_blessless run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/5

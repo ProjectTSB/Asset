@@ -19,7 +19,7 @@
 
 # 武器が剣の場合弓に切替
     execute if entity @s[tag=1K.Sword] if predicate api:global_vars/difficulty/max/normal run item replace entity @s weapon.mainhand with bow
-    execute if entity @s[tag=1K.Sword] if predicate api:global_vars/difficulty/min/hard run item replace entity @s weapon.mainhand with bow{Enchantments:[{id:"punch",lvl:1s}]}
+    execute if entity @s[tag=1K.Sword] if predicate api:global_vars/difficulty/min/3_blessless run item replace entity @s weapon.mainhand with bow{Enchantments:[{id:"punch",lvl:1s}]}
 
 # 剣Tag削除
     execute if entity @s[tag=1K.Sword] run tag @s remove 1K.Sword

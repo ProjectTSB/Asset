@@ -13,6 +13,6 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     execute if predicate api:global_vars/difficulty/max/normal run scoreboard players operation $Interval Temporary -= $2 Const
     execute if predicate api:global_vars/difficulty/max/normal run scoreboard players operation $Interval Temporary %= $6 Const
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players operation $Interval Temporary %= $4 Const
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players operation $Interval Temporary %= $4 Const
     execute if score $Interval Temporary matches 0 run tag @s add 1N.PumpkinRain.Interval
     scoreboard players reset $Interval Temporary

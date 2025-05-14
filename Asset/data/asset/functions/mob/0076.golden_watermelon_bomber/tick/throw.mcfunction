@@ -9,7 +9,7 @@
 
 # 難易度で弾速を変える
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Speed set value 2
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Speed set value 3
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Speed set value 3
 
 # スイカ召喚
     data modify storage api: Argument.ID set value 2068

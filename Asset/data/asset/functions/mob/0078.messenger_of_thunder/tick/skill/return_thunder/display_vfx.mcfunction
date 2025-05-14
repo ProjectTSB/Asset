@@ -9,5 +9,5 @@
     execute if entity @s[scores={General.Mob.Tick=..19}] run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
     execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=26.HPLess50Per] rotated ~30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
     execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=26.HPLess50Per] rotated ~-30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~-30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
+    execute if predicate api:global_vars/difficulty/min/3_blessless rotated ~30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx
+    execute if predicate api:global_vars/difficulty/min/3_blessless rotated ~-30 ~ run function asset:mob/0078.messenger_of_thunder/tick/skill/return_thunder/vfx

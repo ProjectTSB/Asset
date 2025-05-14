@@ -12,4 +12,4 @@
 
 # ノーマル以下でkill、ハード以上なら奈落へGoodBye
     execute if predicate api:global_vars/difficulty/max/normal run function api:mob/kill
-    execute if predicate api:global_vars/difficulty/min/hard run function api:mob/remove
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function api:mob/remove

@@ -12,4 +12,4 @@
 # 難易度別で次の発射までの間隔を変える
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -100
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -85
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick -70
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick -70

@@ -22,7 +22,7 @@
     scoreboard players operation $CurrentTick Temporary -= $LatestTPTick Temporary
     execute if predicate api:global_vars/difficulty/easy if score $CurrentTick Temporary matches 70.. run tag @s add CanTP
     execute if predicate api:global_vars/difficulty/normal if score $CurrentTick Temporary matches 50.. run tag @s add CanTP
-    execute if predicate api:global_vars/difficulty/min/hard if score $CurrentTick Temporary matches 30.. run tag @s add CanTP
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $CurrentTick Temporary matches 30.. run tag @s add CanTP
 
 # 確率tp
     execute if entity @s[tag=CanTP] if predicate lib:random_pass_per/30 run function asset:mob/0056.thunder_trifler/hurt/teleport

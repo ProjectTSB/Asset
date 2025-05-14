@@ -32,8 +32,8 @@
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
     execute if score $IntervalTime Temporary matches 0 run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.5 1
-    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.6 1
-    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.7 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/3_blessless run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.6 1
+    execute if score $IntervalTime Temporary matches 0 if predicate api:global_vars/difficulty/min/3_blessless run playsound minecraft:block.bell.use hostile @a ~ ~ ~ 2 0.7 1
     scoreboard players reset $IntervalTime Temporary
 
 

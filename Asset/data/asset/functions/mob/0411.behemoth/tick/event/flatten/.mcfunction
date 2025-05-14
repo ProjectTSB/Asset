@@ -26,7 +26,7 @@
         execute if score @s BF.EventTimer matches 131..140 run tp @s ~ ~0.05 ~
     # 攻撃範囲表示
         execute if score @s BF.EventTimer matches 85 if predicate api:global_vars/difficulty/max/normal at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction_long
-        execute if score @s BF.EventTimer matches 105 if predicate api:global_vars/difficulty/min/hard at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
+        execute if score @s BF.EventTimer matches 105 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
     # 攻撃
         execute if score @s BF.EventTimer matches 115 positioned ^ ^0.5 ^1 run function asset:mob/0411.behemoth/tick/event/flatten/attack
 

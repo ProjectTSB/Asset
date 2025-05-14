@@ -14,10 +14,10 @@
     execute if score $Random Temporary matches 3 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/3/4
 
 # ハード以上
-    execute if score $Random Temporary matches 0 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/1
-    execute if score $Random Temporary matches 1 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/2
-    execute if score $Random Temporary matches 2 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/3
-    execute if score $Random Temporary matches 3 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/4
+    execute if score $Random Temporary matches 0 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/1
+    execute if score $Random Temporary matches 1 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/2
+    execute if score $Random Temporary matches 2 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/3
+    execute if score $Random Temporary matches 3 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/pos_type/line/4/4
 
 # リセット
     scoreboard players reset $Random Temporary

@@ -16,9 +16,9 @@
 # 魔導書召喚
     execute if score @s AW.AnimationTick matches 41 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/normal
     execute if score @s AW.AnimationTick matches 61 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/normal
-    execute if score @s AW.AnimationTick matches 41 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
-    execute if score @s AW.AnimationTick matches 51 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
-    execute if score @s AW.AnimationTick matches 61 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
+    execute if score @s AW.AnimationTick matches 41 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
+    execute if score @s AW.AnimationTick matches 51 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
+    execute if score @s AW.AnimationTick matches 61 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0392.ecual_first/ai/animation/4_0_summon_book/summon/hard
 
 # バリアント
     execute if score @s AW.AnimationTick matches 55 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/mabataki/apply

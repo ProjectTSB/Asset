@@ -10,11 +10,11 @@
 
 # ダメージ設定
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Return.Normal
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Return.Hard
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Return.Hard
 
 # 速度設定
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.MovePerStep set value 0.5
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.MovePerStep set value 0.75
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.MovePerStep set value 0.75
 
 # ノーマル以下ならヒット時消滅するようにする
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.KillWhenHit set value true

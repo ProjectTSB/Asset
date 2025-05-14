@@ -22,8 +22,8 @@
 # 耐久値の減少処理
     execute store result score $CurrentDurability Temporary run data get storage asset:context this.Durability
     execute if entity @s[tag=PatriotLauncher.HitMissile] store result storage asset:context this.Durability int 1 run scoreboard players remove $CurrentDurability Temporary 1
-    execute unless predicate api:global_vars/difficulty/min/hard run function asset:object/2088.patriot_launcher/tick/set_hp_gauge
-    execute if predicate api:global_vars/difficulty/min/hard run function asset:object/2088.patriot_launcher/tick/set_hp_gauge_hard
+    execute unless predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2088.patriot_launcher/tick/set_hp_gauge
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2088.patriot_launcher/tick/set_hp_gauge_hard
     tag @s remove PatriotLauncher.HitMissile
 
 

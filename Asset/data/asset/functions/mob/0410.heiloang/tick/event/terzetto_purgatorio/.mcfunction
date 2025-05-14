@@ -39,7 +39,7 @@
         execute if score @s BE.EventTimer matches 173..190 at @s run particle explosion ~ ~-1.5 ~ 2 0 2 0.1 3
     # 攻撃
         execute if score @s BE.EventTimer matches 102 if predicate api:global_vars/difficulty/max/normal at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/dive_prediction_long
-        execute if score @s BE.EventTimer matches 152 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/dive_prediction
+        execute if score @s BE.EventTimer matches 152 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/dive_prediction
         execute if score @s BE.EventTimer matches 173 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack_dive
         execute if score @s BE.EventTimer matches 177 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack_dive
         execute if score @s BE.EventTimer matches 181 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0410.heiloang/tick/event/terzetto_purgatorio/attack_dive

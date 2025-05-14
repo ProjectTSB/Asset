@@ -6,7 +6,7 @@
 
 # スピード設定
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Speed set value 3
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Speed set value 4
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Speed set value 4
 
 # 召喚
     data modify storage api: Argument.ID set value 2073

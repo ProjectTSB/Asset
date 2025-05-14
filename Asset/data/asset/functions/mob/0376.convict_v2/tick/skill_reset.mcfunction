@@ -5,7 +5,7 @@
 # @within function asset:mob/0376.convict_v2/tick/**/**
 
 # CDいれる
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick -20
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick -20
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -45
 

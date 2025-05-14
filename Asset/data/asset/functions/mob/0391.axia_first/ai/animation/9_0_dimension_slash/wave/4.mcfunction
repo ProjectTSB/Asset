@@ -1,6 +1,6 @@
 #> asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/wave/4
 #
-# 衝撃波召喚 4段階 
+# 衝撃波召喚 4段階
 #
 # @within function
 #   asset:mob/0391.axia_first/ai/animation/9_0_dimension_slash/
@@ -13,11 +13,11 @@
 # Markerを動かす
     execute rotated ~30 ~ run tp 0-0-0-0-0 ^ ^ ^22 ~ ~
 # 衝撃波召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
 # Markerを動かす
     execute rotated ~-30 ~ run tp 0-0-0-0-0 ^ ^ ^22 ~ ~
 # 衝撃波召喚
-    execute if predicate api:global_vars/difficulty/min/hard at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
+    execute if predicate api:global_vars/difficulty/min/3_blessless at 0-0-0-0-0 run function asset:mob/0391.axia_first/ai/projectile/shock_wave/0.summon
 # Markerを動かす
     execute rotated ~60 ~ run tp 0-0-0-0-0 ^ ^ ^22 ~ ~
 # 衝撃波召喚

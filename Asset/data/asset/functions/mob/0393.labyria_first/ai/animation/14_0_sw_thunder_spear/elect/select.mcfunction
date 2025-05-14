@@ -13,9 +13,9 @@
 # ノーマルの場合
     execute if predicate api:global_vars/difficulty/max/normal if score $AX.Temp Temporary matches 0..2 run scoreboard players set @s AX.ThunderSpear 10
     execute if predicate api:global_vars/difficulty/max/normal if score $AX.Temp Temporary matches 3..5 run scoreboard players set @s AX.ThunderSpear 20
-    execute if predicate api:global_vars/difficulty/min/hard if score $AX.Temp Temporary matches 0..1 run scoreboard players set @s AX.ThunderSpear 30
-    execute if predicate api:global_vars/difficulty/min/hard if score $AX.Temp Temporary matches 2..3 run scoreboard players set @s AX.ThunderSpear 40
-    execute if predicate api:global_vars/difficulty/min/hard if score $AX.Temp Temporary matches 4..5 run scoreboard players set @s AX.ThunderSpear 50
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $AX.Temp Temporary matches 0..1 run scoreboard players set @s AX.ThunderSpear 30
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $AX.Temp Temporary matches 2..3 run scoreboard players set @s AX.ThunderSpear 40
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $AX.Temp Temporary matches 4..5 run scoreboard players set @s AX.ThunderSpear 50
 
 # スコアリセット
     scoreboard players reset $AX.Temp Temporary

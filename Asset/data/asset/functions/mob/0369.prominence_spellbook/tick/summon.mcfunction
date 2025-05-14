@@ -12,7 +12,7 @@
     tp @s ~ ~ ~ facing entity @p eyes
 
 # ハード以上なら追加でAddBlastをtrueへ
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.AddBlast set value true
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.AddBlast set value true
 
 # ノーマル以上ならDebuffをtrueに
     execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true

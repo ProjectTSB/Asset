@@ -13,7 +13,7 @@
 
 # 雷のダメージを設定
     execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Normal
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Hard
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Curtain.Hard
 
 # サンダーカーテンを召喚
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID

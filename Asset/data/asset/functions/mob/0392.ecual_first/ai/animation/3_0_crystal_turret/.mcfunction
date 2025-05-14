@@ -15,7 +15,7 @@
 
 # クリスタルタレット召喚
     execute if score @s AW.AnimationTick matches 49 if predicate api:global_vars/difficulty/max/normal run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/summon/normal
-    execute if score @s AW.AnimationTick matches 49 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/summon/hard
+    execute if score @s AW.AnimationTick matches 49 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0392.ecual_first/ai/animation/3_0_crystal_turret/summon/hard
 
 # バリアント
     execute if score @s AW.AnimationTick matches 10 as @e[type=item_display,tag=AW.Root.This,distance=..100] run function animated_java:ecual/variants/majime/apply

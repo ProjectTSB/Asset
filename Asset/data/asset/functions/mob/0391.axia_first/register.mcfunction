@@ -22,7 +22,7 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 57500
 #    execute if predicate api:global_vars/difficulty/max/normal run data modify storage asset:mob Health set value 20000
-#    execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:mob Health set value 22000
+#    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:mob Health set value 22000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る

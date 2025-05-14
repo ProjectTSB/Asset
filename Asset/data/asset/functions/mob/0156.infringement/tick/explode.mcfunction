@@ -16,7 +16,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set value 35f
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 45f
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.Damage set value 45f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに存在を侵害された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
@@ -31,4 +31,4 @@
 # 自滅する
 # ノーマル以下でkill @s ハードで奈落
     execute if predicate api:global_vars/difficulty/max/normal run function api:mob/kill
-    execute if predicate api:global_vars/difficulty/min/hard run function api:mob/remove
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function api:mob/remove

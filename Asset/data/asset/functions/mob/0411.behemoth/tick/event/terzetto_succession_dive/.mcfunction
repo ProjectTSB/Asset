@@ -54,7 +54,7 @@
         # 攻撃範囲表示
             # execute if score @s BF.EventTimer matches 225 positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
             execute if score @s BF.EventTimer matches 205 if predicate api:global_vars/difficulty/max/normal at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction_long
-            execute if score @s BF.EventTimer matches 225 if predicate api:global_vars/difficulty/min/hard at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
+            execute if score @s BF.EventTimer matches 225 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ^ ^ ^4 run function asset:mob/0411.behemoth/tick/event/flatten/prediction
         # 攻撃
             execute if score @s BF.EventTimer matches 235 positioned ^ ^0.5 ^2 run function asset:mob/0411.behemoth/tick/event/flatten/attack
     # 演出

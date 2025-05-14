@@ -5,7 +5,7 @@
 # @within function asset:mob/0378.red_knight_v3/tick/**/**
 
 # CDいれる
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s AI.Tick -30
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s AI.Tick -30
     execute if predicate api:global_vars/difficulty/normal run scoreboard players set @s AI.Tick -40
     execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s AI.Tick -55
 # ノーマル以上で低HPだと、加速する

@@ -25,8 +25,8 @@
             execute if score @s BE.EventTimer matches 137 if predicate api:global_vars/difficulty/min/normal positioned as @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_point
             execute if score @s BE.EventTimer matches 162 if predicate api:global_vars/difficulty/min/normal positioned as @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_point
         # ハード以上：回転する雷を設置
-            execute if score @s BE.EventTimer matches 23 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_circle_spin
-            execute if score @s BE.EventTimer matches 90 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_spin
+            execute if score @s BE.EventTimer matches 23 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_circle_spin
+            execute if score @s BE.EventTimer matches 90 if predicate api:global_vars/difficulty/min/3_blessless at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/richt_blitzen/summon_spin
 
 # 待機
     execute if score @s BE.EventTimer matches 175 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 6
@@ -34,4 +34,4 @@
 
 # 終了
     execute if score @s BE.EventTimer matches 215.. if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end
-    execute if score @s BE.EventTimer matches 254.. if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end
+    execute if score @s BE.EventTimer matches 254.. if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0410.heiloang/tick/event/richt_blitzen/end

@@ -35,7 +35,7 @@
         execute if score @s BF.EventTimer matches 315..336 at @s run particle explosion ~ ~ ~ 2 0 2 0.1 3
     # 攻撃
         execute if score @s BF.EventTimer matches 154 if predicate api:global_vars/difficulty/max/normal at @s positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/dive_prediction_long
-        execute if score @s BF.EventTimer matches 300 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/dive_prediction
+        execute if score @s BF.EventTimer matches 300 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~0.5 ~ run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/dive_prediction
         execute if score @s BF.EventTimer matches 315 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BF.EventTimer matches 319 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BF.EventTimer matches 323 at @e[type=area_effect_cloud,tag=BF.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0411.behemoth/tick/event/terzetto_succession_a/attack_dive

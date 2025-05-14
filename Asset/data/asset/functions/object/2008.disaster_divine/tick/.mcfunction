@@ -19,4 +19,4 @@
 
 # 消滅処理
     execute if predicate api:global_vars/difficulty/max/normal if entity @s[tag=2008.ShotReady,scores={General.Object.Tick=7..}] run function asset:object/2008.disaster_divine/tick/cast/
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=2008.ShotReady,scores={General.Object.Tick=5..}] run function asset:object/2008.disaster_divine/tick/cast/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2008.ShotReady,scores={General.Object.Tick=5..}] run function asset:object/2008.disaster_divine/tick/cast/

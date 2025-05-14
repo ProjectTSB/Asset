@@ -22,7 +22,7 @@
         execute if score @s BE.EventTimer matches 79..106 run tp @s ~ ~ ~ ~-8 ~
         execute if score @s BE.EventTimer matches 130 facing entity @e[type=marker,tag=BE.CenterPosition] feet run tp @s ~ ~ ~ ~ 0
     # 位置決定
-            execute if score @s BE.EventTimer matches 10 if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=BE.CenterPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/tornado/summon_attack_pos
+            execute if score @s BE.EventTimer matches 10 if predicate api:global_vars/difficulty/min/3_blessless at @e[type=marker,tag=BE.CenterPosition] positioned ~ ~0.5 ~ run function asset:mob/0410.heiloang/tick/event/tornado/summon_attack_pos
         # 攻撃
             execute if score @s BE.EventTimer matches 11 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/attack_wind_burst
             execute if score @s BE.EventTimer matches 13 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0410.heiloang/tick/event/tornado/attack_wind_burst

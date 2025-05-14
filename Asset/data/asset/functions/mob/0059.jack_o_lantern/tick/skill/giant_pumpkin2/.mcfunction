@@ -35,17 +35,17 @@
         execute if entity @s[scores={General.Mob.Tick=50}] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_cross
 
     # ハード
-        execute if entity @s[scores={General.Mob.Tick=0..25}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_cross_hard
+        execute if entity @s[scores={General.Mob.Tick=0..25}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_cross_hard
 
 # ハード以上なら70tickまで飛ばす
-    execute if entity @s[scores={General.Mob.Tick=50}] if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick 70
+    execute if entity @s[scores={General.Mob.Tick=50}] if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick 70
 
 # 直線に並んだやつを転がす
     execute if entity @s[scores={General.Mob.Tick=130}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line
 
 # ハード以上で直線に並んでるけど、1つだけ空いてるやつを転がす
-    execute if entity @s[scores={General.Mob.Tick=200}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line_with_space
+    execute if entity @s[scores={General.Mob.Tick=200}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/select_line_with_space
 
 # リセット
     execute if entity @s[scores={General.Mob.Tick=240..}] if predicate api:global_vars/difficulty/max/normal run function asset:mob/0059.jack_o_lantern/tick/skill/reset
-    execute if entity @s[scores={General.Mob.Tick=300..}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={General.Mob.Tick=300..}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0059.jack_o_lantern/tick/skill/reset

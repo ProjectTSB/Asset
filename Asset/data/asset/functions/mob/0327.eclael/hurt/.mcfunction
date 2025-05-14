@@ -16,7 +16,7 @@
 
 # フェーズ変更
     execute if entity @s[tag=!93.Phase.Latter] run function asset:mob/0327.eclael/hurt/app.1.change_phase
-    # execute if entity @s[tag=93.Phase.Latter,tag=!93.Phase.HardLatter] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0327.eclael/hurt/app.2.change_phase_hard
+    # execute if entity @s[tag=93.Phase.Latter,tag=!93.Phase.HardLatter] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0327.eclael/hurt/app.2.change_phase_hard
 
 # # ガード処理
 #     # ガード継続
