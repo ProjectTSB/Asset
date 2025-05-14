@@ -27,7 +27,7 @@
     execute if score @s General.Mob.Tick matches 30 positioned ~ ~1.5 ~ positioned ^ ^ ^2 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/lingering_laser/activate
 
 # 追撃しない場合のリセット
-    execute if predicate api:global_vars/difficulty/easy if score @s General.Mob.Tick matches 65.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+    execute if predicate api:global_vars/difficulty/1_normal if score @s General.Mob.Tick matches 65.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
     execute if score @s[scores={C5.Phase=1}] General.Mob.Tick matches 65.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
 
 # 追撃のレーザー

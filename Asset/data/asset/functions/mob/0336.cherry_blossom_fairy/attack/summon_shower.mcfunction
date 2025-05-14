@@ -12,7 +12,7 @@
 # ノーマルでは25%、ハード以下では50% Blessless以上で確定
 
 # ノーマルなら75%でreturn
-    execute if predicate api:global_vars/difficulty/easy if predicate lib:random_pass_per/75 run return 0
+    execute if predicate api:global_vars/difficulty/1_normal if predicate lib:random_pass_per/75 run return 0
 
 # ハードなら50%でreturn
     execute if predicate api:global_vars/difficulty/2_hard if predicate lib:random_pass_per/50 run return 0

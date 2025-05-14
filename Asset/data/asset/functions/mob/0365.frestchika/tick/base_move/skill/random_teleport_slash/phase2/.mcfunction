@@ -12,7 +12,7 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
 # 最初のレーザー攻撃
-    execute if predicate api:global_vars/difficulty/easy if score @s General.Mob.Tick matches 0..8 run scoreboard players operation $Interval Temporary %= $3 Const
+    execute if predicate api:global_vars/difficulty/1_normal if score @s General.Mob.Tick matches 0..8 run scoreboard players operation $Interval Temporary %= $3 Const
     execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 0..8 run scoreboard players operation $Interval Temporary %= $2 Const
     execute if score @s General.Mob.Tick matches 0..8 if score $Interval Temporary matches 0 run function asset:mob/0365.frestchika/tick/base_move/skill/random_teleport_slash/teleport/
 

@@ -16,9 +16,9 @@
 
 # スキルリストを再生
     # ノーマル前半戦
-        execute if predicate api:global_vars/difficulty/easy if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3]
+        execute if predicate api:global_vars/difficulty/1_normal if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3]
     # ノーマル後半戦
-        execute if predicate api:global_vars/difficulty/easy if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
+        execute if predicate api:global_vars/difficulty/1_normal if score @s C5.Phase matches 2 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
     # ハード前半戦
         execute if predicate api:global_vars/difficulty/2_hard if score @s C5.Phase matches 1 run data modify storage asset:context this.Skill.List set value [0,1,2,3,4]
     # ハード後半戦

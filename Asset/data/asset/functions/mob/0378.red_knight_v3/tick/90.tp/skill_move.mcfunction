@@ -25,6 +25,6 @@
 # その後動くようにする
     execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s AI.Tick -1
     execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s AI.Tick -5
-    execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s AI.Tick -15
+    execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s AI.Tick -15
     tag @s remove AI.Skill90
     tag @s add AI.Skill90Used

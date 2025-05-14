@@ -14,5 +14,5 @@
     execute if predicate api:global_vars/difficulty/2_hard rotated ~120 ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}
     execute if predicate api:global_vars/difficulty/2_hard rotated ~240 ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}
 
-    execute if predicate api:global_vars/difficulty/easy rotated ~ ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}
-    execute if predicate api:global_vars/difficulty/easy rotated ~180 ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}
+    execute if predicate api:global_vars/difficulty/1_normal rotated ~ ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}
+    execute if predicate api:global_vars/difficulty/1_normal rotated ~180 ~ run summon area_effect_cloud ^ ^-0.5 ^15 {Tags:["AK.Temp.AttackPosition"],Duration:200}

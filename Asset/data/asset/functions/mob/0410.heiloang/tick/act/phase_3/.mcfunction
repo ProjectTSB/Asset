@@ -5,7 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/act/
 
 # ノーマル
-    execute if predicate api:global_vars/difficulty/easy run function asset:mob/0410.heiloang/tick/act/phase_3/normal
+    execute if predicate api:global_vars/difficulty/1_normal run function asset:mob/0410.heiloang/tick/act/phase_3/normal
 
 # ハード
     execute if predicate api:global_vars/difficulty/2_hard run function asset:mob/0410.heiloang/tick/act/phase_3/hard

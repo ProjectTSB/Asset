@@ -20,7 +20,7 @@
     execute store result score $LatestTPTick Temporary run data get storage asset:context this.LatestTPTick
     execute store result score $CurrentTick Temporary run time query gametime
     scoreboard players operation $CurrentTick Temporary -= $LatestTPTick Temporary
-    execute if predicate api:global_vars/difficulty/easy if score $CurrentTick Temporary matches 70.. run tag @s add CanTP
+    execute if predicate api:global_vars/difficulty/1_normal if score $CurrentTick Temporary matches 70.. run tag @s add CanTP
     execute if predicate api:global_vars/difficulty/2_hard if score $CurrentTick Temporary matches 50.. run tag @s add CanTP
     execute if predicate api:global_vars/difficulty/min/3_blessless if score $CurrentTick Temporary matches 30.. run tag @s add CanTP
 

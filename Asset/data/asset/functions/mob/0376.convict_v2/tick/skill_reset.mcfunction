@@ -7,7 +7,7 @@
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick -20
     execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s General.Mob.Tick -30
-    execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -45
+    execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s General.Mob.Tick -45
 
 # 足元空気なら下にいく
     execute at @s if block ~ ~-0.5 ~ #lib:no_collision positioned ~ ~-0.5 ~ run function asset:mob/0376.convict_v2/tick/common/tp

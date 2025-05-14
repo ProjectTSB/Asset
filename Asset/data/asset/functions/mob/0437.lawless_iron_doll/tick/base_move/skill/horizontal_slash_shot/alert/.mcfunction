@@ -6,7 +6,7 @@
 
 # ノーマル
     # フェイズ2: 常時3-way。ちょっと厳しい気もする。
-        execute if predicate api:global_vars/difficulty/easy run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/3
+        execute if predicate api:global_vars/difficulty/1_normal run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/horizontal_slash_shot/alert/3
 
 # ハード
     # フェイズ1: 3-way

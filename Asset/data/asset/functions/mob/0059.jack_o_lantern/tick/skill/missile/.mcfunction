@@ -28,5 +28,5 @@
     execute if entity @s[scores={General.Mob.Tick=48}] run function asset:mob/0059.jack_o_lantern/tick/skill/missile/shoot
 
 # リセット
-    execute if entity @s[scores={General.Mob.Tick=39..}] if predicate api:global_vars/difficulty/easy run function asset:mob/0059.jack_o_lantern/tick/skill/reset
+    execute if entity @s[scores={General.Mob.Tick=39..}] if predicate api:global_vars/difficulty/1_normal run function asset:mob/0059.jack_o_lantern/tick/skill/reset
     execute if entity @s[scores={General.Mob.Tick=60..}] run function asset:mob/0059.jack_o_lantern/tick/skill/reset

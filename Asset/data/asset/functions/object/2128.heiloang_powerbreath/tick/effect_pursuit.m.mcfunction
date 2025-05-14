@@ -24,7 +24,7 @@
     $execute rotated ~270 ~ positioned ^ ^ ^$(Distance) positioned ^ ^ ^2.5 run particle explosion ~ ~0.5 ~ 2 2 2 0 20
 
 # ノーマル以上では8Way
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
     $execute rotated ~45 ~ positioned ^ ^ ^$(Distance) run particle flash ~ ~0.5 ~ 1 1 1 0 4
     $execute rotated ~45 ~ positioned ^ ^ ^$(Distance) run particle explosion ~ ~0.5 ~ 2 2 2 0 20
     $execute rotated ~45 ~ positioned ^ ^ ^$(Distance) positioned ^ ^ ^2.5 run particle flash ~ ~0.5 ~ 1 1 1 0 4

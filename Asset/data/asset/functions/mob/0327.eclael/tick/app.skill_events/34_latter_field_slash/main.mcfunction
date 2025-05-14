@@ -31,9 +31,9 @@
 # 攻撃
     execute if score @s 93.AnimationTimer matches 121 if predicate lib:random_pass_per/50 run tag @s add 93.Skill.FieldSlash.A
     # 三角形
-        execute if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/easy rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/easy rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
-        execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/easy rotated ~240 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/1_normal rotated ~ 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 123 if predicate api:global_vars/difficulty/1_normal rotated ~120 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
+        execute if score @s 93.AnimationTimer matches 125 if predicate api:global_vars/difficulty/1_normal rotated ~240 0 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
     # 星
         execute if score @s 93.AnimationTimer matches 121 if predicate api:global_vars/difficulty/2_hard rotated ~ 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
         execute if score @s 93.AnimationTimer matches 122 if predicate api:global_vars/difficulty/2_hard rotated ~72 0 positioned ~ ~ ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0

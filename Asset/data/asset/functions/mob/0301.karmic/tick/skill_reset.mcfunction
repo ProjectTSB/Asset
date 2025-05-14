@@ -11,7 +11,7 @@
 # CDいれる
     execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick -30
     execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s General.Mob.Tick -40
-    execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s General.Mob.Tick -55
+    execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s General.Mob.Tick -55
 
 # プレイヤー人数で加速する。4人まで考慮する
     execute store result score $Count Temporary if entity @a

@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 最低難易度なら何もしない
-    execute if predicate api:global_vars/difficulty/easy run return fail
+    execute if predicate api:global_vars/difficulty/1_normal run return fail
 
 # 難易度値 - 1 の被ダメージ上昇を付与する
     function api:global_vars/get_difficulty

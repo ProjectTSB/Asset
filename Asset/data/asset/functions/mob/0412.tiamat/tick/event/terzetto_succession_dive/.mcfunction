@@ -24,7 +24,7 @@
 
 # 以下、normal以上のみ
 # 外周に移動し、ヘルウィング実行
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
 
 # 移動
     # アニメーション再生

@@ -22,7 +22,7 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/8_1_move_flare
     # 設置位置決定
-        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/easy run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/1_normal run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
         execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/2_hard rotated ~90 ~ run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
         execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position_hard
     # 演出
