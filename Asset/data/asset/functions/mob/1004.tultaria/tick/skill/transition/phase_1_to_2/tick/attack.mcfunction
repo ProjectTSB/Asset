@@ -36,15 +36,15 @@
     # 移動
         execute if score @s General.Mob.Tick matches 360 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/start
     # 攻撃開始前に真ん中を向く
-        execute at @s if score @s General.Mob.Tick matches 390 facing entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..128,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
+        execute if score @s General.Mob.Tick matches 390 at @s facing entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..128,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     # 攻撃
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 390 positioned ^ ^ ^5 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 400 positioned ^ ^ ^10 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 410 positioned ^ ^ ^15 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 420 positioned ^ ^ ^20 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 430 positioned ^ ^ ^25 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 440 positioned ^ ^ ^30 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
-        execute at @s align xyz positioned ~0.5 ~0.5 ~0.5 if score @s General.Mob.Tick matches 450 positioned ^ ^ ^35 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 390 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^5 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 400 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^10 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 410 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^15 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 420 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^20 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 430 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^25 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 440 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^30 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
+        execute if score @s General.Mob.Tick matches 450 at @s align xyz positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^35 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/summon
 
 # TODO: デバッグ用につき後で消すこと
 #    execute if score @s General.Mob.Tick matches 500.. run scoreboard players set @s General.Mob.Tick -10
