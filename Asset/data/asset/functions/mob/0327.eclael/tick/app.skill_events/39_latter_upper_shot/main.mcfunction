@@ -34,8 +34,8 @@
     execute if score @s 93.AnimationTimer matches 120 at @s run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/attack_1
 
 # 難易度分岐
-    execute if predicate api:global_vars/difficulty/max/normal run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_normal
-    execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_hard
+    execute if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_normal
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/main_hard
 
 # 終了
     execute if score @s 93.AnimationTimer matches 200 run function asset:mob/0327.eclael/tick/app.skill_events/39_latter_upper_shot/animation_1

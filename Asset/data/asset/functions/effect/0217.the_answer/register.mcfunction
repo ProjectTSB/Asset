@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 217
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"「答え」","color":"purple"}'
+    data modify storage asset:effect Name set value '{"text":"「答え」","color":"light_purple"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"MPに究極の疑問の答えを代入し続ける","color":"white"}']
 # 効果時間 (int) (default = API || error)

@@ -22,21 +22,21 @@
     # アニメーション再生
         execute if score @s BE.EventTimer matches 101 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/8_1_move_flare
     # 設置位置決定
-        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/easy run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
-        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/normal rotated ~90 ~ run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
-        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position_hard
+        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/1_normal run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/2_hard rotated ~90 ~ run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position
+        execute if score @s BE.EventTimer matches 61 at @e[type=marker,tag=BE.CenterPosition] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0410.heiloang/tick/event/flare/set_attack_position_hard
     # 演出
         execute if score @s BE.EventTimer matches 172..192 run particle end_rod ~ ~5 ~ 2 2 2 1 30 force
     # 攻撃
-        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/max/normal positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/max/normal positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/max/normal positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
-        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
-        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
-        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/min/hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
+        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/max/2_hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/max/2_hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/max/2_hard positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack
+        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
+        execute if score @s BE.EventTimer matches 170 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
+        execute if score @s BE.EventTimer matches 230 if predicate api:global_vars/difficulty/min/3_blessless positioned as @e[type=area_effect_cloud,tag=BE.Temp.Flare.SummonPosition.Hard,sort=random,limit=2] run function asset:mob/0410.heiloang/tick/event/flare/attack_hard
 
 # 待機
     execute if score @s BE.EventTimer matches 229 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s BE.Idle.Count 3

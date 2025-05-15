@@ -7,7 +7,7 @@
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "78.MessengerOfThunder"
     data modify storage lib: Args.max set value 4
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage lib: Args.max set value 6
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage lib: Args.max set value 6
     data modify storage lib: Args.scarcity_history_size set value 2
 # 疑似乱数取得
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
@@ -17,7 +17,7 @@
 
 # ハード以上 & 体力が半分以下 & 連続攻撃のCD中でない を満たすなら
 # 乱数とは別口で低確率で連続攻撃へ移行
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=26.HPLess50Per] unless entity @s[scores={26.ConsecutiveCool=1..}] if predicate lib:random_pass_per/40 run tag @s add 26.ConsecutiveAttack
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=26.HPLess50Per] unless entity @s[scores={26.ConsecutiveCool=1..}] if predicate lib:random_pass_per/40 run tag @s add 26.ConsecutiveAttack
     execute if entity @s[tag=26.ConsecutiveAttack] run function asset:mob/0078.messenger_of_thunder/tick/skill/consective/skill_select
 
 # 連続攻撃のクールタイムを減らす

@@ -151,4 +151,4 @@
     function api:damage/reset
 
 # ハード用
-    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0341.louvert/tick/animation/9_2_triple_slash_slash/hard_soul
+    execute at @s rotated ~ ~0 positioned ^ ^1 ^1 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0341.louvert/tick/animation/9_2_triple_slash_slash/hard_soul

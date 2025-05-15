@@ -23,7 +23,7 @@
     # ハードでは角度変更
         execute store result score $Interval Temporary run scoreboard players get @s BE.Pb.Count
         scoreboard players operation $Interval Temporary %= $2 Const
-        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:0}
-        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/min/hard if score $Interval Temporary matches 0 run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:22.5}
-        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/min/hard if score $Interval Temporary matches 1 run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:0}
+        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:0}
+        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/min/3_blessless if score $Interval Temporary matches 0 run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:22.5}
+        execute as @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,limit=1] at @s positioned ~ ~0.5 ~ if predicate api:global_vars/difficulty/min/3_blessless if score $Interval Temporary matches 1 run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line.m {Offset:0}
         scoreboard players reset $Interval Temporary

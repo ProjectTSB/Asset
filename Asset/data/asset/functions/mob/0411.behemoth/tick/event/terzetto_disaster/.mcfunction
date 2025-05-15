@@ -30,19 +30,19 @@
             execute if score @s BF.EventTimer matches 335 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
             execute if score @s BF.EventTimer matches 370 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/4_breath_continue
         # ターゲットを向く
-            execute if score @s BF.EventTimer matches 315 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
-            execute if score @s BF.EventTimer matches 350 if predicate api:global_vars/difficulty/max/normal facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
-            execute if score @s BF.EventTimer matches 325 if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
-            execute if score @s BF.EventTimer matches 360 if predicate api:global_vars/difficulty/min/hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 315 if predicate api:global_vars/difficulty/max/2_hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 350 if predicate api:global_vars/difficulty/max/2_hard facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:34,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 325 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^5 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
+            execute if score @s BF.EventTimer matches 360 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[tag=BF.MainTarget] feet rotated ~ 0 run summon area_effect_cloud ^ ^ ^10 {Duration:30,Tags:["BF.Temp.AttackRotation"]}
             execute if score @s BF.EventTimer matches 335..350 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
             execute if score @s BF.EventTimer matches 370..385 run function asset:mob/0411.behemoth/tick/util/rotate_to_target_aec
         # 攻撃範囲表示
-            execute if score @s BF.EventTimer matches 275 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 315 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 350 if predicate api:global_vars/difficulty/max/normal at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
-            execute if score @s BF.EventTimer matches 295 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-            execute if score @s BF.EventTimer matches 330 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
-            execute if score @s BF.EventTimer matches 365 if predicate api:global_vars/difficulty/min/hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 275 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 315 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 350 if predicate api:global_vars/difficulty/max/2_hard at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction_long
+            execute if score @s BF.EventTimer matches 295 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 330 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+            execute if score @s BF.EventTimer matches 365 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0411.behemoth/tick/event/flarebreath/prediction
         # 攻撃
             execute if score @s BF.EventTimer matches 315 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
             execute if score @s BF.EventTimer matches 350 positioned ^ ^ ^ run function asset:mob/0411.behemoth/tick/event/flarebreath/attack
@@ -56,9 +56,9 @@
 # 移動
     # アニメーション再生
         execute if score @s BF.EventTimer matches 426 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_0_flymove_start
-        execute if score @s BF.EventTimer matches 446 unless predicate api:global_vars/difficulty/easy as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BF.EventTimer matches 446 unless predicate api:global_vars/difficulty/1_normal as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
-        execute if score @s BF.EventTimer matches 445 unless predicate api:global_vars/difficulty/easy at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
+        execute if score @s BF.EventTimer matches 445 unless predicate api:global_vars/difficulty/1_normal at @e[type=marker,tag=BE.CenterPosition] run tp @s ^12.5 ^ ^15.5 ~180 0
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

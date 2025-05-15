@@ -13,9 +13,9 @@
     # ChargeCount（残った眷属の数）に応じてダメージを増加
     # 難易度によって倍率は変わる
     # 基本値50%、Normal：最大70%、Hard：最大90%、Blessless：最大120%
-        execute if predicate api:global_vars/difficulty/easy run scoreboard players set $FlareDamage Temporary 10
-        execute if predicate api:global_vars/difficulty/normal run scoreboard players set $FlareDamage Temporary 20
-        execute if predicate api:global_vars/difficulty/min/hard run scoreboard players set $FlareDamage Temporary 35
+        execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set $FlareDamage Temporary 10
+        execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set $FlareDamage Temporary 20
+        execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set $FlareDamage Temporary 35
         # ChargeCountの初期値は-1のため、一時的に1加算する
             scoreboard players add $ChargeCount Temporary 1
             scoreboard players operation $FlareDamage Temporary *= $ChargeCount Temporary

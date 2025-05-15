@@ -16,14 +16,14 @@
     execute if score @s General.Mob.Tick matches 13 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/slash1
 
 # 斬撃（ハードだとプレイヤー追尾）
-    execute if score @s General.Mob.Tick matches 24 if predicate api:global_vars/difficulty/min/hard facing entity @p[] feet rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
-    execute if score @s General.Mob.Tick matches 24 unless predicate api:global_vars/difficulty/min/hard rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
+    execute if score @s General.Mob.Tick matches 24 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[] feet rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
+    execute if score @s General.Mob.Tick matches 24 unless predicate api:global_vars/difficulty/min/3_blessless rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
     execute if score @s General.Mob.Tick matches 24 at @s positioned ~ ~1 ~ rotated ~ ~-20 run function asset:mob/0376.convict_v2/tick/common/particle/particle_1
     execute if score @s General.Mob.Tick matches 24 at @s positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/slash1
 
 # 斬撃（同上）
-    execute if score @s General.Mob.Tick matches 32 if predicate api:global_vars/difficulty/min/hard facing entity @p[] feet rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
-    execute if score @s General.Mob.Tick matches 32 unless predicate api:global_vars/difficulty/min/hard rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
+    execute if score @s General.Mob.Tick matches 32 if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[] feet rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
+    execute if score @s General.Mob.Tick matches 32 unless predicate api:global_vars/difficulty/min/3_blessless rotated ~ 0 positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/tp
     execute if score @s General.Mob.Tick matches 32 at @s positioned ~ ~1.4 ~ positioned ^ ^ ^2 run function asset:mob/0376.convict_v2/tick/common/particle/particle_3
     execute if score @s General.Mob.Tick matches 32 at @s positioned ^ ^ ^1.5 run function asset:mob/0376.convict_v2/tick/common/slash1
 

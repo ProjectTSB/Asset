@@ -1,4 +1,4 @@
-#> asset:mob/0410.heiloang/tick/animated_java/tick/1_idle
+#> asset:mob/0411.behemoth/tick/animated_java/tick/1_idle
 #
 # アニメーション用のイベントへの振り分け
 #

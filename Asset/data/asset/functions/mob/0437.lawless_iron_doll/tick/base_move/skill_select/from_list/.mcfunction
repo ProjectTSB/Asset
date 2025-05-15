@@ -11,10 +11,10 @@
     scoreboard players set @s General.Mob.Tick 0
 
 # Blesless時、動作回数をカウント
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players add @s C5.Count.Move 1
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players add @s C5.Count.Move 1
 
 # Blesless後半戦時、即座に近くのランダムなプレイヤーに向き直る
-    execute if predicate api:global_vars/difficulty/min/hard if score @s C5.Phase matches 2.. facing entity @r[gamemode=!spectator,distance=..256] feet run tp @s ~ ~ ~ ~ ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s C5.Phase matches 2.. facing entity @r[gamemode=!spectator,distance=..256] feet run tp @s ~ ~ ~ ~ ~
 
 # デバッグ用、常にリストを満タンにする
 #    data modify storage asset:context this.Skill.List set value [0,1,2]

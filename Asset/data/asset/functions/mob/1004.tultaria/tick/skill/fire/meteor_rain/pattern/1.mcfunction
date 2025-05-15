@@ -10,8 +10,8 @@
     # 拡散設置: ハード以上だと数が増える
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+        execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     # プレイヤー狙い
         execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
 
@@ -21,8 +21,8 @@
     # 拡散設置: ハード以上で増える
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-        execute if predicate api:global_vars/difficulty/min/normal if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+        execute if predicate api:global_vars/difficulty/min/2_hard if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
     # プレイヤー狙い
         execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/aim
 

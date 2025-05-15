@@ -24,7 +24,7 @@
     function api:damage/reset
 
 # ノーマル以上でMPを減らす
-    execute if predicate api:global_vars/difficulty/min/normal run function asset:mob/0056.thunder_trifler/attack/mp_reduce
+    execute if predicate api:global_vars/difficulty/min/2_hard run function asset:mob/0056.thunder_trifler/attack/mp_reduce
 
 # 弓から剣に切り替えた場合speedを得る
     execute if entity @s[tag=!1K.Sword] run effect give @s speed infinite 0 true

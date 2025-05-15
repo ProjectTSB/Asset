@@ -15,7 +15,7 @@
     execute as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80] at @s facing entity @p[tag=AK.MainTarget,distance=..80] feet run tp @s ~ ~ ~ ~ 0
 
 # ハードではさらに設置
-    execute if predicate api:global_vars/difficulty/max/normal run return 0
+    execute if predicate api:global_vars/difficulty/max/2_hard run return 0
     execute rotated ~30 ~ run summon area_effect_cloud ^ ^ ^12 {Tags:["AK.Temp.AttackPosition","AK.Temp.AttackPosition.Hard"],Duration:200}
     execute rotated ~90 ~ run summon area_effect_cloud ^ ^ ^12 {Tags:["AK.Temp.AttackPosition","AK.Temp.AttackPosition.Hard"],Duration:200}
     execute rotated ~150 ~ run summon area_effect_cloud ^ ^ ^12 {Tags:["AK.Temp.AttackPosition","AK.Temp.AttackPosition.Hard"],Duration:200}

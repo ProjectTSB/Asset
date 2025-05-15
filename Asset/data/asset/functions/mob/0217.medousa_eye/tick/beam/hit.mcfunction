@@ -32,7 +32,7 @@
 # Fluctuation = -30 * (難易度値- 1)
 # イージーの場合は実行されない
     execute store result storage api: Argument.Fluctuation int -30 run data get storage api: Return.Difficulty 0.9999999999
-    execute unless predicate api:global_vars/difficulty/easy run function api:mp/fluctuation
+    execute unless predicate api:global_vars/difficulty/1_normal run function api:mp/fluctuation
 
 # ヒットTag削除
     tag @s remove LandingTarget
