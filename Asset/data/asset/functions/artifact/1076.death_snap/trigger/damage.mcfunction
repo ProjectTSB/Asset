@@ -5,7 +5,7 @@
 # @within function asset:artifact/1076.death_snap/trigger/3.main
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 175.0f
+    data modify storage api: Argument.Damage set value 155.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
