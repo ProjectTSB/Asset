@@ -15,7 +15,7 @@
     execute if score @s General.Mob.Tick matches 22..46 if entity @p[distance=..80] run function asset:mob/0123.lexiel_v3/tick/common/thunder/main
 
 # ハード限定で二倍にする
-    execute if score @s General.Mob.Tick matches 22..46 if entity @p[distance=..80] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0123.lexiel_v3/tick/common/thunder/main
+    execute if score @s General.Mob.Tick matches 22..46 if entity @p[distance=..80] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0123.lexiel_v3/tick/common/thunder/main
 
 # リセット
     execute if score @s General.Mob.Tick matches 64 run function asset:mob/0123.lexiel_v3/tick/skill_reset

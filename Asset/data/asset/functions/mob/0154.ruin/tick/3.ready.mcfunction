@@ -11,7 +11,7 @@
     tag @s add 4A.Madness
 
 # ハード以上で、自身にノクバ耐性を付与
-    execute if predicate api:global_vars/difficulty/min/hard run attribute @s generic.knockback_resistance base set 10
+    execute if predicate api:global_vars/difficulty/min/3_blessless run attribute @s generic.knockback_resistance base set 10
 
 # 演出
     particle dragon_breath ~ ~1 ~ 0.4 0.4 0.4 0.1 100

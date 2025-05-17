@@ -17,4 +17,4 @@
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0
 
 # ハードなら更に
-    execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0341.louvert/tick/animation/4_1_meteor/meteor_summon_point_hard
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0341.louvert/tick/animation/4_1_meteor/meteor_summon_point_hard

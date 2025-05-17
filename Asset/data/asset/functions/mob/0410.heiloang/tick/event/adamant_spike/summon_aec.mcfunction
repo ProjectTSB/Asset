@@ -48,7 +48,7 @@
     execute positioned ^-16.5 ^2 ^25 run function api:object/summon
 
 # ハード以上の場合、多重召喚
-    execute if predicate api:global_vars/difficulty/max/normal run return 0
+    execute if predicate api:global_vars/difficulty/max/2_hard run return 0
 
 # 攻撃位置召喚
     execute positioned ^16.5 ^2 ^25 run summon area_effect_cloud ~ ~ ~ {Duration:320,Tags:["BE.Temp.Adamant.SummonPosition"]}

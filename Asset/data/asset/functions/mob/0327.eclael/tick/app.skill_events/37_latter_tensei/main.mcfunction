@@ -34,7 +34,7 @@
 # 攻撃
     execute if score @s 93.AnimationTimer matches 66 run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/attack_0
     execute if score @s 93.AnimationTimer matches 73 run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/attack_1
-    execute if score @s 93.AnimationTimer matches 83 if predicate api:global_vars/difficulty/min/normal run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/attack_2
+    execute if score @s 93.AnimationTimer matches 83 if predicate api:global_vars/difficulty/min/2_hard run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/attack_2
 
 # 終了
     execute if score @s 93.AnimationTimer matches 142.. run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/end

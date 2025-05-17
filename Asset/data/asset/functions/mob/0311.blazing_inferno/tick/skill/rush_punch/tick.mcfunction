@@ -15,9 +15,9 @@
 
 # 攻撃判定
     # ハード未満
-        execute unless predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20..30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
+        execute unless predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 20..30 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
     # ハード以上
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 20..40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 20..40 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/
 
 # 待機アニメを再生
     execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neutral_fighting/play

@@ -8,10 +8,10 @@
     tag @s remove BF.Skill.Ter.Dis
 
 # イージー：ソウルオファリング開始
-    execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s BF.EventTimer 0
-    execute if predicate api:global_vars/difficulty/easy run scoreboard players set @s BF.ActCount 0
-    execute if predicate api:global_vars/difficulty/easy run tag @s add BF.Skill.Blaze
-    execute if predicate api:global_vars/difficulty/easy run return run tag @s add BF.State.Wait
+    execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s BF.EventTimer 0
+    execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s BF.ActCount 0
+    execute if predicate api:global_vars/difficulty/1_normal run tag @s add BF.Skill.Blaze
+    execute if predicate api:global_vars/difficulty/1_normal run return run tag @s add BF.State.Wait
 
 # 待機モーション再生
     scoreboard players set @s BF.EventTimer 0

@@ -8,7 +8,7 @@
     effect give @s slowness 1 2 true
 
 # ハード以上なら回復も実行
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0084.falcios_priest/tick/heal
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0084.falcios_priest/tick/heal
 
 # 予備動作
     execute if entity @s[scores={General.Mob.Tick=1..2}] anchored eyes facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^0.2 run function asset:mob/0084.falcios_priest/tick/vfx/1
