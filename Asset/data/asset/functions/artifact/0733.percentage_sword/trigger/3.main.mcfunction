@@ -21,14 +21,14 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
-    execute as @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable,distance=..6] store result storage api: Argument.Damage float 0.99 run function api:mob/get_max_health
+    execute as @e[type=#lib:living,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable,distance=..20] store result storage api: Argument.Damage float 0.99 run function api:mob/get_max_health
 
 # 天使の場合、1%にする
-    execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..6] run function asset:artifact/0733.percentage_sword/trigger/angel_damage_calc
+    execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..20] run function asset:artifact/0733.percentage_sword/trigger/angel_damage_calc
 
 # ダメージ
     function api:damage/modifier
-    execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Victim,distance=..20] run function api:damage/
 
 # 色々リセット
     function api:damage/reset
