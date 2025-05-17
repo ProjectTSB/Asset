@@ -8,6 +8,11 @@
     tellraw @a [{"selector":"@s","bold":true},{"text":"は天国に上るような錯覚がした"}]
     playsound ui.toast.challenge_complete player @a 23 3 24 1.0 1.2
 
+# 落下ダメージ無効化
+    data modify storage api: Argument set value {ID:190,Duration:60}
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # 初期地点ワープ
     execute in minecraft:overworld run tp @s 23 3 24
 
