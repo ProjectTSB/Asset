@@ -1,4 +1,4 @@
-#> asset:artifact/0610.call_fish/trigger/particle.1
+#> asset:artifact/0610.call_fish/trigger/vfx
 #
 #
 #
