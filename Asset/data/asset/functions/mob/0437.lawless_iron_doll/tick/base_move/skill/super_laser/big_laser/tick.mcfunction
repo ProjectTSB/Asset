@@ -13,7 +13,7 @@
 
 # 付近の対象全てに、定期的にレーザーを放つ
     scoreboard players operation $Interval Temporary %= $5 Const
-    execute if score $Interval Temporary matches 0 facing entity @a[gamemode=!spectator,distance=..32] feet run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/big_laser/shoot
+    execute if score $Interval Temporary matches 0 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/big_laser/shoot
     scoreboard players reset $Interval Temporary
 
 # パーティクル
