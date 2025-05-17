@@ -18,7 +18,7 @@
 # 死亡メッセージ
     data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは虚空へと消えていった…","with":[{"selector":"@s"}]}]']
 # 補正functionを実行
-    execute as @e[type=wither_skeleton,tag=RW.This,distance=..128,sort=nearest,limit=1] run function api:damage/modifier
+    execute as @e[type=wither_skeleton,tag=this,distance=..128,sort=nearest,limit=1] run function api:damage/modifier
 # 対象
     execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 # リセット

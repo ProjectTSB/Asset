@@ -17,7 +17,7 @@
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
 # 補正functionを実行
-    execute as @e[type=wither_skeleton,tag=RW.This,distance=..128,sort=nearest,limit=1] run function api:damage/modifier
+    execute as @e[type=wither_skeleton,tag=this,distance=..128,sort=nearest,limit=1] run function api:damage/modifier
 # 対象
     execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 # リセット
