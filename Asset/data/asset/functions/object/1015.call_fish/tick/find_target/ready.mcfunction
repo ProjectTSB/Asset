@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1015.call_fish/tick/attack
+# @within function asset:object/1015.call_fish/tick/find_target/
 
 # 既にターゲットがいたならreturn (範囲が広いため、@eが少なくなるようにstorageで判定する)
     execute if data storage asset:temp 1015{Hit:1b} run return fail
