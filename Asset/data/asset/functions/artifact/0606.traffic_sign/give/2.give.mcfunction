@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"交通標識","color":"yellow","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"どこにでもありそうな交通標識","color":"white"}','{"text":"とても手に馴染んで振り回しやすい","color":"white"}','{"text":"ちなみに4連続で殴ることで地面にぶっ刺すこともでき","color":"white"}','{"text":"相手の速度変化量に応じたダメージを与える","color":"white"}','{"text":"「うわっ、前から車が！！」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"どこにでもありそうな交通標識","color":"white"}','{"text":"とても手に馴染んで振り回しやすい","color":"white"}','{"text":"ちなみに4連続で殴ることで地面にぶっ刺すこともでき","color":"white"}','{"text":"相手の速度変化量に応じた範囲ダメージを与える","color":"white"}','{"text":"「うわっ、前から車が！！」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "condition"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value
+    data modify storage asset:artifact AttackInfo.AttackRange set value 4
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 60
 # MP必要量 (int) (オプション)
