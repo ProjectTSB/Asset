@@ -4,15 +4,6 @@
 #
 # @within function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/attack
 
-# TickLock
-    tag @s add RW.TickLock
-
-# これをループされると困るのでTickを1増やす
-    scoreboard players add @s General.Mob.Tick 1
-
-# 速度設定
-    scoreboard players set @s RW.Speed 8
-
 # 残ってたらヤなのでマーカーを消す
     kill @e[type=marker,tag=RW.TeleportMarker,distance=..128,sort=nearest,limit=1]
 
@@ -30,6 +21,19 @@
 
 # リセット
     scoreboard players reset @s RW.LineAttack
+
+# もし実行時点で移動先が範囲内にあったら、マーカーを消して、以降の処理をやめちゃう
+    execute at @s if entity @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1] run say yo
+    execute at @s if entity @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1] run return fail
+
+# Tick加算を停止
+    tag @s add RW.TickLock
+
+# これをループされると困るのでTickを1増やす
+    scoreboard players add @s General.Mob.Tick 1
+
+# 速度設定
+    scoreboard players set @s RW.Speed 8
 
 # 行動中タグ付与
     tag @s add RW.Move

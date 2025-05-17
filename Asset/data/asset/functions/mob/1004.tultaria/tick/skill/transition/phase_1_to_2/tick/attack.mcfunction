@@ -14,6 +14,8 @@
 # ライン攻撃その1
     # 移動
         execute if score @s General.Mob.Tick matches 120 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/start
+    # この処理の実行時点で近くにマーカーがあったら消す
+        execute if score @s General.Mob.Tick matches 120 run kill @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1]
     # 攻撃開始前に真ん中を向く
         execute if score @s General.Mob.Tick matches 150 facing entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..128,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     # 攻撃
@@ -35,6 +37,8 @@
 # ライン攻撃その2
     # 移動
         execute if score @s General.Mob.Tick matches 360 run function asset:mob/1004.tultaria/tick/skill/transition/phase_1_to_2/tick/line_attack/start
+    # この処理の実行時点で近くにマーカーがあったら消す
+        execute if score @s General.Mob.Tick matches 360 run kill @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1]
     # 攻撃開始前に真ん中を向く
         execute if score @s General.Mob.Tick matches 390 at @s facing entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..128,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     # 攻撃
