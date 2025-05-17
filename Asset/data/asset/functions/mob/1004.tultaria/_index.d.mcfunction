@@ -21,7 +21,6 @@
     #declare tag RW.TickLock
     #declare tag RW.InAction
     #declare tag RW.DisableInertia
-    #declare tag RW.This
     # ボスのモデルに関するタグ
     #declare tag RW.ModelLocator.LeftHand
     #declare tag RW.ModelLocator.RightHand
@@ -42,8 +41,6 @@
     #declare tag RW.Transition.Phase3.Attack
     # 多段ヒット防止
     #declare tag RW.TargetEntity
-    # プレイヤーに付与されるもの:
-    #declare tag RW.Player.Void
     # ボスの使う技のタグ
     # 火属性
     #declare tag RW.Skill.Meteor
