@@ -14,7 +14,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.BypassModifier set value true
-    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは%2$sのミサイルによって塵と化した。","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]']
+    data modify storage api: Argument.DeathMessage set value ['[{"translate": "%1$sは%2$sのミサイルによって塵と化した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]']
     execute as @p[tag=1054.Owner] run function api:damage/modifier
     data modify storage api: Argument.BypassModifier set value false
     execute positioned ~-3 ~-3 ~-3 as @a[tag=!PlayerShouldInvulnerable,dx=5,dy=5,dz=5] run function api:damage/
