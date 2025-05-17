@@ -28,7 +28,6 @@
 # 慣性ONに
     tag @s remove RW.DisableInertia
 
-
 # 無敵解除
     data modify entity @s Invulnerable set value 0b
     tag @s remove Uninterferable

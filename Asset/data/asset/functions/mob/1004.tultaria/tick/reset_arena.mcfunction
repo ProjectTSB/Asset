@@ -6,6 +6,9 @@
 #   asset:mob/1004.tultaria/remove/
 #   asset:mob/1004.tultaria/death/
 
+# 危ないので離れているプレイヤーを中央に送る
+    tp @a[gamemode=!spectator,distance=20..128] ~ ~ ~
+
 # バリアの足場を片付ける
     fill ~-15 ~-5 ~-15 ~15 ~-1 ~15 stone
 
