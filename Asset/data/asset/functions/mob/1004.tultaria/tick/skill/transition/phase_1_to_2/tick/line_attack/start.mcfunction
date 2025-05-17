@@ -23,7 +23,6 @@
     scoreboard players reset @s RW.LineAttack
 
 # もし実行時点で移動先が範囲内にあったら、マーカーを消して、以降の処理をやめちゃう
-    execute at @s if entity @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1] run say yo
     execute at @s if entity @e[type=marker,tag=RW.TeleportMarker,distance=..3,limit=1] run return fail
 
 # Tick加算を停止
