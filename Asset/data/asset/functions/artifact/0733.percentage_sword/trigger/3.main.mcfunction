@@ -24,6 +24,9 @@
     # 天使の場合は1%にする
         execute as @e[type=#lib:living,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable,distance=..20] run function asset:artifact/0733.percentage_sword/trigger/angel_damage_calc
 
+    # 起こり得ないはずだが、ダメージが設定されていなければ1を設定しておく
+        execute unless data storage api: Argument.Damage run data modify storage api: Argument.Damage set value 1
+
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
