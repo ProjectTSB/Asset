@@ -9,4 +9,4 @@
 
 # デスログと共に即死
     tellraw @a[distance=..16] {"translate": "%1$sは天使の威圧感に圧倒された","with":[{"selector":"@s"}]}
-    execute if entity @s[tag=!Death] run function api:mob/kill
+    function api:mob/kill
