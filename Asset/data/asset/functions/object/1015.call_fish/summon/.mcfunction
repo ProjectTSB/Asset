@@ -5,4 +5,4 @@
 # @within asset:object/alias/1015/summon
 
 # 元となるEntityを召喚する
-    summon cod ~ ~ ~ {Tags:["ObjectInit","Friend","Uninterferable"]}
+    summon cod ~ ~ ~ {Tags:["ObjectInit","Friend","Uninterferable"],Invulnerable:1b}
