@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"訓練用の人形","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"攻撃されてから15秒間のDPSを計測する","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"攻撃されてから15秒間のDPSを計測する","color":"white"}','{"text":"近づきすぎると、小突いてくるぞ","color":"white"}']
 # 防具
     # 頭 (Compound(Item)) (オプション)
         data modify storage asset:mob Armor.Head set value {id:"minecraft:stone",Count:1b,tag:{CustomModelData:20019}}
