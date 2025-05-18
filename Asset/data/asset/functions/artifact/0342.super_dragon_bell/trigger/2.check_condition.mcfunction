@@ -8,5 +8,9 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
+# tpbanでは使用不可
+    execute if predicate lib:is_ban_tp_area run function lib:message/artifact/can_not_use_here
+    execute if predicate lib:is_ban_tp_area run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0342.super_dragon_bell/trigger/3.main
