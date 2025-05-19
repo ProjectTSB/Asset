@@ -26,3 +26,4 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
+    tag @e[type=#lib:living,tag=1015.Target,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] remove 1015.Target
