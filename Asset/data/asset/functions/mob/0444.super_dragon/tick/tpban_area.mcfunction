@@ -1,4 +1,4 @@
-#> asset:mob/0444.super_dragon/tick/unbreakable_area
+#> asset:mob/0444.super_dragon/tick/tpban_area
 #
 #
 #
