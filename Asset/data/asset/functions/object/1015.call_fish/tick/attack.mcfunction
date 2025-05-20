@@ -21,8 +21,9 @@
     data modify storage api: Argument.ElementType set value "Water"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute as @e[tag=Enemy,tag=!Uninterferable,sort=nearest,limit=1] run function api:damage/
+    execute at @s as @e[type=#lib:living,tag=1015.Target,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
 # リセット
     scoreboard players reset $UserID Temporary
+    tag @e[type=#lib:living,tag=1015.Target,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] remove 1015.Target
