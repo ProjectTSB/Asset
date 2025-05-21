@@ -8,7 +8,7 @@
     data modify entity @s NoAI set value 0b
 
 # 次に攻撃するタイミングをランダムにする
-    execute store result score @s General.Mob.Tick run random value 80..130
+    execute store result score @s General.Mob.Tick run random value -130..-80
 
 # リセット処理
     scoreboard players reset @s 4B.ShotCount
