@@ -54,3 +54,9 @@ data modify storage asset:mob Lore set value ['{"text":"これは罪だ。","col
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# 通常時ダメージ
+    data modify storage asset:mob Field.Damage.Neutral set value 45
+
+# 破滅状態でのダメージ
+    data modify storage asset:mob Field.Damage.Neutral set value 60

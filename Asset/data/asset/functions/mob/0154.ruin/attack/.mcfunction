@@ -23,8 +23,8 @@
     playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 2 2
 
 # 形態変化の前か後かで異なるダメージにする
-    execute unless entity @s[tag=4A.Madness] run data modify storage api: Argument.Damage set value 45
-    execute if entity @s[tag=4A.Madness] run data modify storage api: Argument.Damage set value 60
+    execute unless entity @s[tag=4A.Madness] run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Normal
+    execute if entity @s[tag=4A.Madness] run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Madness
 
 # ダメージ
     data modify storage api: Argument.AttackType set value "Physical"
