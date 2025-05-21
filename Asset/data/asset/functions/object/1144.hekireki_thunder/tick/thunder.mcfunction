@@ -24,3 +24,6 @@
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
     execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function asset:object/1144.hekireki_thunder/tick/check_duplicate
     function api:damage/reset
+
+# リセット
+    scoreboard players reset $UserID Temporary
