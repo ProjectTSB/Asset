@@ -1,4 +1,4 @@
-#> asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/
+#> asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff
 #
 #
 #
@@ -16,7 +16,7 @@
 
     execute store result score $Tick Temporary run time query gametime
     scoreboard players operation $LatestTick Temporary -= $Tick Temporary
-    execute if score $LatestTick Temporary <= $InflictDebuffCooldown Temporary run function asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/add
+    execute if score $LatestTick Temporary <= $InflictDebuffCooldown Temporary run function asset:mob/call.m {method:"inflict_debuff_when_high_difficulty"}
     execute if score $LatestTick Temporary <= $InflictDebuffCooldown Temporary run scoreboard players operation @s 1JK.LatestDamageIncreaseDebuffAddTick = $Tick Temporary
 # リセット
     scoreboard players reset $Tick Temporary

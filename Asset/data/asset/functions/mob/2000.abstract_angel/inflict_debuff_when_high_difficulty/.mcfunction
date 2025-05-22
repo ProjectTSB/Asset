@@ -1,8 +1,8 @@
-#> asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/add
+#> asset:mob/2000.abstract_angel/inflict_debuff_when_high_difficulty/
 #
+# 継承先などから実行される処理
 #
-#
-# @within function asset:mob/2000.abstract_angel/attack/add_damage_increase_debuff/
+# @within asset:mob/alias/2000/inflict_debuff_when_high_difficulty
 
 data modify storage api: Argument.ID set value 57
 data modify storage api: Argument.Duration set value 600
