@@ -61,3 +61,5 @@
         data modify storage asset:mob Resist.Water set value 0
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
+# フィールド
+    data modify storage asset:mob Field.InflictDebuffCooldown set value 5
