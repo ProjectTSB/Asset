@@ -9,8 +9,8 @@
 # 他にアイテム等確認する場合はここに書く
 
 # tpbanでは使用不可
-    execute if predicate lib:is_ban_tp_area run function lib:message/artifact/can_not_use_here
-    execute if predicate lib:is_ban_tp_area run tag @s remove CanUsed
+    execute if entity @s[tag=CanUsed] if predicate lib:is_ban_tp_area run function lib:message/artifact/can_not_use_here
+    execute if entity @s[tag=CanUsed] if predicate lib:is_ban_tp_area run tag @s remove CanUsed
 
 # 天使が近くにいたら使用不可
     execute if entity @s[tag=CanUsed] if entity @e[type=#lib:living,tag=Enemy.Boss,distance=..32] run tellraw @a {"text":"スーパードラゴンは怯えて呼び出しに応じなかった","color":"red"}
