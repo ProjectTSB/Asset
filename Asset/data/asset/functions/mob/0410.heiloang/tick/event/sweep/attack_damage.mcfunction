@@ -10,7 +10,7 @@
 # ヒット判定
     tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 2
-    data modify storage lib: args.dy set value 3
+    data modify storage lib: args.dy set value 2
     data modify storage lib: args.dz set value 20
     data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..60]"
     execute positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
