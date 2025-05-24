@@ -20,8 +20,11 @@
 # 中心点召喚
     summon marker ~ ~2.5 ~ {Tags:["93.Marker.SpawnPoint"]}
 
+# モデルが見えやすいように前に移動
+    tp @s ^ ^ ^2
+
 # animated javaモデル召喚
-    execute positioned ~ ~-20 ~ rotated ~ 0 run function animated_java:eclael/summon {args:{animation: '29_0_phase_start', start_animation: true}}
+    execute at @s positioned ~ ~-20 ~ rotated ~ 0 run function animated_java:eclael/summon {args:{animation: '29_0_phase_start', start_animation: true}}
 
 # 登場演出再生
     tag @s add 93.Skill.Former.Start
