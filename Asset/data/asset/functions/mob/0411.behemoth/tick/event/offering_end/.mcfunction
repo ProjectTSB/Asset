@@ -1,6 +1,6 @@
 #> asset:mob/0411.behemoth/tick/event/offering_end/
 #
-# ブレイジングエンド
+# ソウルオファリング
 #
 # @within asset:mob/0411.behemoth/tick/event/
 
