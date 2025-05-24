@@ -18,4 +18,4 @@
 
 # イベント実行
     scoreboard players set @s AK.EventTimer 0
-    tag @s add AK.Skill.IceSpear
+    tag @s add AK.Skill.IcePillar
