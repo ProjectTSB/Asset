@@ -14,8 +14,9 @@
 # 移動
     execute if score @s 9G.AnimationTimer matches 17 run function asset:mob/0340.twins_rubiel/app/general/6.teleport_to_land
     execute if score @s 9G.AnimationTimer matches 18 facing entity @p feet run tp @s ~ ~ ~ ~ 0
-    execute if score @s 9G.AnimationTimer matches 18 at @s run tp @s ^ ^0.5 ^-6
-    execute if score @s 9G.AnimationTimer matches 18 at @s positioned ^ ^ ^-6 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+    # 中心点から遠い場合は、中心に向かって移動
+        execute if score @s 9G.AnimationTimer matches 18 if entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..17] at @s positioned ^ ^ ^-6 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
+        execute if score @s 9G.AnimationTimer matches 18 unless entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..17] at @s facing entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..17,limit=1] feet rotated ~ 0 positioned ^ ^ ^6 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
 # 移動演出
     execute if score @s 9G.AnimationTimer matches 18 run playsound item.trident.return hostile @a ~ ~ ~ 1 1.2
     execute if score @s 9G.AnimationTimer matches 18 run particle flash ~ ~1 ~ 0 0 0 0 1
