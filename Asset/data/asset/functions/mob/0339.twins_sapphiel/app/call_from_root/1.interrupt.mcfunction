@@ -11,8 +11,11 @@
 # 状態リセット
     function asset:mob/0339.twins_sapphiel/app/general/7.reset_state
 
+# 中心点からあまりにも離れている場合、中心に戻る
+    execute if entity @s[tag=!9F.Temp.Animated] unless entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..30] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/7.return
+
 # なにも武器を持っていない場合、装備する
-    execute if entity @s[tag=!9F.State.Weapon.Hg,tag=!9F.State.Weapon.Sg] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/3.equip
+    execute if entity @s[tag=!9F.Temp.Animated,tag=!9F.State.Weapon.Hg,tag=!9F.State.Weapon.Sg] run function asset:mob/0339.twins_sapphiel/tick/app/skill/select/3.equip
 
 # ガード回数リセット
     scoreboard players set @s 9F.GuardCount 0
