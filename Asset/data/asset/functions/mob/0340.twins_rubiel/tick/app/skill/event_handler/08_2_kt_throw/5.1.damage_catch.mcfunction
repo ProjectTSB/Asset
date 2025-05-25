@@ -18,7 +18,10 @@
 
 # 演出
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
-    effect give @a[tag=9G.Temp.Target.Attack] slowness 2 20 true
+    data modify storage api: Argument set value {ID:67,Duration:40,Stack:20}
+    execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+    # effect give @a[tag=9G.Temp.Target.Attack] slowness 2 20 true
     execute as @a[tag=9G.Temp.Target.Attack] at @s run tp @s @s
 
 # 気分を上昇
