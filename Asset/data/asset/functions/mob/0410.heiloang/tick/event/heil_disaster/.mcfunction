@@ -52,6 +52,17 @@
         execute if score @s BE.EventTimer matches 259 at @e[type=marker,tag=BE.CenterPosition] rotated ~-90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
     # 攻撃
         execute if score @s BE.EventTimer matches 261..319 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0410.heiloang/tick/event/sweep/get_attack_position.m with entity @s data.locators.locator_head
+        # ヒット判定、ダメージ
+            execute if score @s BE.EventTimer matches 299 at @e[type=marker,tag=BE.CenterPosition] positioned ^18 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 300 at @e[type=marker,tag=BE.CenterPosition] positioned ^14 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 301 at @e[type=marker,tag=BE.CenterPosition] positioned ^10 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 302 at @e[type=marker,tag=BE.CenterPosition] positioned ^6 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 303 at @e[type=marker,tag=BE.CenterPosition] positioned ^2 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 304 at @e[type=marker,tag=BE.CenterPosition] positioned ^-2 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 305 at @e[type=marker,tag=BE.CenterPosition] positioned ^-6 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 306 at @e[type=marker,tag=BE.CenterPosition] positioned ^-10 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 307 at @e[type=marker,tag=BE.CenterPosition] positioned ^-14 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
+            execute if score @s BE.EventTimer matches 308 at @e[type=marker,tag=BE.CenterPosition] positioned ^-18 ^1 ^ run function asset:mob/0410.heiloang/tick/event/sweep/attack_damage
     # 演出
         execute if score @s BE.EventTimer matches 259 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0410.heiloang/tick/event/sweep/text_start with entity @s data.locators.beam_start
         execute if score @s BE.EventTimer matches 259..319 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0410.heiloang/tick/event/sweep/text with entity @s data.locators.beam_start
