@@ -17,7 +17,7 @@
     # 水属性
         data modify storage api: Argument.ElementType set value "Water"
     # MP回復
-        data modify storage api: Argument.AdditionalMPHeal set value 4f
+        data modify storage api: Argument.AdditionalMPHeal set value 4.8f
     # ダメージ
         function api:damage/modifier
         execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
