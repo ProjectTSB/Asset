@@ -123,6 +123,7 @@
     #declare tag AK.Temp.AttackPosition.Hard 攻撃位置保持用
     #declare tag AK.Temp.AttackRotation 攻撃角度保持用
     #declare tag AK.Temp.Start 初期化処理の重複防止
+    #declare tag AK.Temp.IsRight アイスピラー回転方向
     #
     # - 他オブジェクト
     #declare tag AK.Object ハルクレアオブジェクト共通タグ
