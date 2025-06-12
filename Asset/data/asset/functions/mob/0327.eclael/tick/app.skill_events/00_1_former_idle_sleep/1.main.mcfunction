@@ -5,6 +5,9 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
+# 中心点から離れすぎている場合、中心に戻る
+    execute if score @s 93.AnimationTimer matches 1 unless entity @e[type=marker,tag=93.Marker.SpawnPoint,distance=..23] positioned as @e[type=marker,tag=93.Marker.SpawnPoint,distance=..30,sort=nearest,limit=1] run tp @s ~ ~-2 ~ ~ 0
+
 ## あくび
 # animated javaアニメーション再生 (長さ：94tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/00_1_former_idle_sleep/3.1.play_start_animation
