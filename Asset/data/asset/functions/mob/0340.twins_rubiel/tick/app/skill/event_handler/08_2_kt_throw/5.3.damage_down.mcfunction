@@ -13,7 +13,10 @@
     function asset:mob/0340.twins_rubiel/app/general/6.teleport_to_land
 
 # 移動速度低下
-    effect give @s slowness 3 10 true
+    # effect give @s slowness 3 10 true
+    data modify storage api: Argument set value {ID:67,Duration:60,Stack:20}
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     execute at @s anchored eyes run particle explosion ~ ~0.5 ~ 0 0 0 0 1

@@ -25,7 +25,15 @@
     execute if entity @a[tag=9G.Temp.Target.Attack] run playsound ogg:entity.player.attack.knockback4 hostile @a ~ ~ ~ 2 1.3
 
 # かちあげ
-    execute at @a[tag=9G.Temp.Target.Attack] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:30b,duration:5,show_particles:0b},{id:"minecraft:slow_falling",amplifier:0b,duration:60,show_particles:0b}]}
+    # 浮遊
+        data modify storage api: Argument set value {ID:125,Duration:5,Stack:30}
+        execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:entity/mob/effect/give
+        function api:entity/mob/effect/reset
+    # 低速落下
+        data modify storage api: Argument set value {ID:81,Duration:60,Stack:1}
+        execute as @a[tag=9G.Temp.Target.Attack] at @s run function api:entity/mob/effect/give
+        function api:entity/mob/effect/reset
+    # execute at @a[tag=9G.Temp.Target.Attack] run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:0.5f,Duration:6,Age:4,effects:[{id:"levitation",amplifier:30b,duration:5,show_particles:0b},{id:"minecraft:slow_falling",amplifier:0b,duration:60,show_particles:0b}]}
 
 # Rootにヒット通知
     scoreboard players operation $Uid Temporary = @s 9E.Uid

@@ -6,9 +6,9 @@
 
 # 双子を召喚
     data modify storage api: Argument.ID set value 339
-    execute positioned ~-0.7 ~100.5 ~ rotated ~-6 ~ run function api:mob/summon
+    execute positioned ~-0.7 ~101.5 ~2 rotated ~-6 ~ run function api:mob/summon
     data modify storage api: Argument.ID set value 340
-    execute positioned ~0.7 ~100.5 ~ rotated ~6 ~ run function api:mob/summon
+    execute positioned ~0.7 ~101.5 ~2 rotated ~6 ~ run function api:mob/summon
 
 # 双子とRootの紐づけを行う
     execute store result storage asset:temp 9E.Uid int 1 run scoreboard players get @s 9E.Uid
