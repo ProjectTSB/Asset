@@ -21,7 +21,7 @@
     data modify storage api: Argument.ElementType set value "Fire"
     execute store result storage api: Argument.MobUUID int 1 run scoreboard players get @e[type=item_display,tag=BF.EntityRoot,limit=1] MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=BF.Temp.AttackHit] run function api:damage/
+    execute as @a[tag=BF.Temp.AttackHit,distance=..80] run function api:damage/
     function api:damage/reset
     tag @a remove BF.FlareTarget
     tag @a remove BF.Temp.AttackHit
