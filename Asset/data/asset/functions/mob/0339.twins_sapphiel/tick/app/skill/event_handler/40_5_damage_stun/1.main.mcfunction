@@ -9,7 +9,7 @@
     execute if score @s 9F.AnimationTimer matches 1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/40_5_damage_stun/3.play_animation
 
 # 移動
-    execute if score @s 9F.AnimationTimer matches 1..31 at @s positioned ^ ^-0.1 ^ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
+    # execute if score @s 9F.AnimationTimer matches 1..31 at @s positioned ^ ^-0.1 ^ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
 
 # 演出
     execute if score @s 9F.AnimationTimer matches 5 run particle crit ^ ^1.6 ^-0.1 0.2 0 0.2 0.1 3
