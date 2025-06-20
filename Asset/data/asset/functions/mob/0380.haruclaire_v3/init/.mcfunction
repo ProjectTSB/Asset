@@ -19,7 +19,7 @@
         function asset:mob/0380.haruclaire_v3/init/animated_java
 
 # 移動
-    tp @s ^ ^1 ^2
+    execute rotated ~ 0 run tp @s ^ ^1 ^2
 
 # スコア初期化
     scoreboard players set @s AK.ActionCount 0

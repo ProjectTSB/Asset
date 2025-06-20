@@ -28,5 +28,5 @@
     function animated_java:ic_pisce_aj/remove/all
 
 # オブジェクト消去
-    execute as @e[tag=AK.Object] on passengers run kill @s
-    kill @e[tag=AK.Object]
+    execute as @e[tag=AK.Object,distance=..120] on passengers run kill @s
+    kill @e[tag=AK.Object,distance=..120]
