@@ -23,7 +23,7 @@
     # 計算
         execute store result storage api: Argument.Damage double 0.0001 run scoreboard players operation $FlareDamage Temporary *= $MaxHealth Temporary
         # 即死ラインを超えている場合はダメージを9999に固定
-            execute if score $FlareDamage Temporary matches 100.. run data modify storage api: Argument.Damage set value 9999.0
+            execute if score $FlareDamage Temporary matches 100.. run data modify storage api: Argument.Damage set value 9999.9
     # 終了
         scoreboard players reset $ChargeCount Temporary
         scoreboard players reset $FlareDamage Temporary
