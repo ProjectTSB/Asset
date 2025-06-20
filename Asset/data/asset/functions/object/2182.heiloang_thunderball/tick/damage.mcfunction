@@ -12,6 +12,9 @@
     execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..4] run tag @s add 2182.Hit
     execute if entity @s[tag=2182.Hit] at @p[tag=2182.TargetPlayer] run tag @e[type=item_display,tag=2180.Pillar,sort=nearest,limit=1] add 2182.Hit
 
+# プレイヤーが一定範囲内に居ない場合、そのまま消去
+    execute unless entity @p[tag=2182.TargetPlayer,distance=..80] run function asset:object/2182.heiloang_thunderball/tick/kill
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
@@ -28,7 +31,4 @@
     execute if entity @s[tag=!2182.Hit] positioned as @p[tag=2182.TargetPlayer] run function api:object/summon
 
 # 終了
-    execute if entity @s[tag=2182.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] add 2180.Pillar.Thunder
-    execute if entity @s[tag=2182.Hit] run tag @e[type=item_display,tag=2180.Pillar,tag=2182.Hit] remove 2182.Hit
-    execute on passengers run kill @s
-    kill @s
+    function asset:object/2182.heiloang_thunderball/tick/kill
