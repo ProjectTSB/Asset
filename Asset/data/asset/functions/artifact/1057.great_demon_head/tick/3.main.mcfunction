@@ -6,6 +6,8 @@
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/head
+# 音消し
+    stopsound @s player item.armor.equip_leather
 
 # 回復
     function api:modifier/max_health/get
