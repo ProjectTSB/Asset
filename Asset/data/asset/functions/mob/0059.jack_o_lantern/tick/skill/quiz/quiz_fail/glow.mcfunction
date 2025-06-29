@@ -33,4 +33,4 @@
 # イージー:3 ノーマル:6 ハード:12
     execute if predicate api:global_vars/difficulty/1_normal run scoreboard players set @s 1N.FakeCount 3
     execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s 1N.FakeCount 6
-    execute if predicate api:global_vars/difficulty/3_blessless run scoreboard players set @s 1N.FakeCount 12
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s 1N.FakeCount 12

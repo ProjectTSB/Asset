@@ -1,4 +1,4 @@
-#> asset:mob/0154.ruin/tick/3.ready
+#> asset:mob/0154.ruin/tick/ready
 #
 # 形態変化する
 #

@@ -22,8 +22,10 @@
 # リセット
     function api:damage/reset
 
-# 低速落下を付与する
-    effect give @s slow_falling 1 1
+# 落下ダメージ無効化
+    data modify storage api: Argument set value {ID:190,Duration:60}
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 初期島に行くぞ！
     execute in minecraft:overworld run tp @s 23 3 24

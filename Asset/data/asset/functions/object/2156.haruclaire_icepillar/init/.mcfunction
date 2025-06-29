@@ -14,4 +14,5 @@
     execute on passengers run tp @s ~ ~ ~ ~ 0
 
 # 回転方向決定
-    execute if predicate lib:random_pass_per/50 run tag @s add 2156.Right
+    execute if data storage asset:context this.IsRight run tag @s add 2156.Right
+    # execute if predicate lib:random_pass_per/50 run tag @s add 2156.Right
