@@ -23,6 +23,9 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
+# お星さまを削除
+    kill @e[type=item_display,scores={ObjectID=2030},distance=..128]
+
 # タグリセット
     function asset:mob/1004.tultaria/tick/reset/skill_tag
 

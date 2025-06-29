@@ -13,7 +13,7 @@
     execute store result storage api: Argument.Damage float 1 run random value 90..155
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
-    data modify storage api: Argument.AdditionalMPHeal set value 6.5f
+    data modify storage api: Argument.AdditionalMPHeal set value 6.0f
 # 補正functionを実行
     execute as @p[tag=SG.Used] run function api:damage/modifier
 # ダメージ実行

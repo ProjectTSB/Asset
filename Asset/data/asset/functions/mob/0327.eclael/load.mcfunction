@@ -16,3 +16,5 @@
     scoreboard objectives add 93.DamageTimer dummy
     # 処理用カウンター
     scoreboard objectives add 93.TempCount dummy
+    # ターゲット
+    scoreboard objectives add 93.TargetUserId dummy

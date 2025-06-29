@@ -1,8 +1,8 @@
-#> asset:mob/0154.ruin/tick/5.death
+#> asset:mob/0154.ruin/tick/death
 #
 # 奈落に行く際の演出
 #
-# @within function asset:mob/0154.ruin/tick/4.madness
+# @within function asset:mob/0154.ruin/tick/madness
 
 # 演出
     playsound entity.warden.hurt hostile @a ~ ~ ~ 1 0.5 0

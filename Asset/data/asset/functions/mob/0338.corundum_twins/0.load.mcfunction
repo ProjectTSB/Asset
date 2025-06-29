@@ -11,3 +11,4 @@
     scoreboard objectives add 9E.SkillTimer dummy
     scoreboard objectives add 9E.ActionCount dummy
     scoreboard objectives add 9E.ForceCounterCount dummy
+    scoreboard objectives add 9E.IdleTimer dummy
