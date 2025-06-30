@@ -51,6 +51,7 @@
             #declare tag 9E.Root 処理用中心点
             #declare tag 9E.Remove 死亡処理を行わずに消去する
             #declare tag 9E.Temp.Target.Aec.0 中心点が召喚する位置取得用AEC
+            #declare tag 9E.Marker.SpawnPoint 中心点
     #
     # 共通
         #declare tag 9F.Root 処理用wither_skeleton

@@ -143,6 +143,7 @@
     #declare tag 93.Temp.PrepareGuard ガード可能状態，この間に攻撃されるとガードに移行する
     #declare tag 93.Temp.Guard ガード中判別用
     #declare tag 93.Temp.IsThunder 天候が雷雨である
+    #declare tag 93.Temp.Target 一部攻撃に使用、避けやすいよう特定のプレイヤーのみを狙う
     #
     ## スキル：前半
     #declare tag 93.Skill.Former.Start 登場演出
