@@ -6,7 +6,7 @@
 
 # 割合ダメージ
     # ChargeCount取得
-        scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot,distance=..160] BE.Charge.Count
+        scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot,distance=..160,sort=nearest,limit=1] BE.Charge.Count
     # 最大HP取得
         function api:modifier/max_health/get
         execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
@@ -21,7 +21,7 @@
             scoreboard players operation $FlareDamage Temporary *= $ChargeCount Temporary
         scoreboard players add $FlareDamage Temporary 50
     # 計算
-        execute store result storage api: Argument.Damage double 0.0001 run scoreboard players operation $FlareDamage Temporary *= $MaxHealth Temporary
+        execute store result storage api: Argument.Damage double 0.0001 run scoreboard players operation $MaxHealth Temporary *= $FlareDamage Temporary
         # 即死ラインを超えている場合はダメージを9999に固定
             execute if score $FlareDamage Temporary matches 100.. run data modify storage api: Argument.Damage set value 9999.9
     # 終了
