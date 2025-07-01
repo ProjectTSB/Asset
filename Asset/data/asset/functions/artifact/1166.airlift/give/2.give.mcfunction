@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ルフトブリュッケ","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"輸送機が敵と対峙したプレイヤーに支援を与える。"}','{"text":"着陸地点周囲のプレイヤーのHPを最大HPの50%回復し、"}','{"text":"さらに支援物資をドロップする。"}','{"text":"時が立ち、その翼は死の代わりに生を運んだ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"輸送機が敵と対峙したプレイヤーに支援を与える。"}','{"text":"着陸地点周囲のプレイヤーのHPを最大HPの50%回復し、"}','{"text":"さらに支援物資をドロップする。"}','{"text":"時が経ち、その翼は死の代わりに生を運んだ。","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
