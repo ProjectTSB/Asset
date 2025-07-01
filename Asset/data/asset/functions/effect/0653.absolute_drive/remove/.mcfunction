@@ -4,4 +4,4 @@
 #
 # @within function asset:effect/0653.absolute_drive/_/remove
 
-effect clear @s resistance
+function asset:effect/0653.absolute_drive/modifier/remove
