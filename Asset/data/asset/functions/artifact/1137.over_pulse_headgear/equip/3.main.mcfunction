@@ -7,3 +7,8 @@
 # 音を鳴らす
     playsound block.chain.step player @a ~ ~ ~ 0.2 0
     playsound entity.illusioner.prepare_blindness player @a ~ ~ ~ 0.6 1.5
+
+# 暗視を付与
+    data modify storage api: Argument.ID set value 337
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
