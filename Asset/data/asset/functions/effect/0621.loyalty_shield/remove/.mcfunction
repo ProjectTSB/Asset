@@ -4,4 +4,4 @@
 #
 # @within function asset:effect/0621.loyalty_shield/_/remove
 
-effect clear @s resistance
+function asset:effect/0621.loyalty_shield/modifier/remove

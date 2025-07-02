@@ -15,5 +15,10 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/base/add
 
+# (-15xLv)%分移動速度デバフを付与
+    execute store result storage asset:temp GW.SlownessAmount double -0.15 run scoreboard players get $Lv Temporary
+    function asset:effect/0608.sinking/modifier/add_slowness.m with storage asset:temp GW
+
 # リセット
+    data remove storage asset:temp GW
     scoreboard players reset $Lv Temporary
