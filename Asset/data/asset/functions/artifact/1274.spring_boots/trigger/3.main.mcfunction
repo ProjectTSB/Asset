@@ -22,6 +22,7 @@ function api:data_get/on_ground
 execute if data storage api: {OnGround:false} run return 0
 
 data modify storage api: Argument.ID set value 190
+data modify storage api: Argument.Stack set value 10
 data modify storage api: Argument.Duration set value 40
 function api:entity/mob/effect/give
 function api:entity/mob/effect/reset
