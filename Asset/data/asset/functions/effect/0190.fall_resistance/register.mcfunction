@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"落下ダメージ減少"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"落下ダメージを減少させる"}']
+    data modify storage asset:effect Description set value ['{"text":"落下ダメージが減少する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
