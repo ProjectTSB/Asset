@@ -18,12 +18,6 @@
     execute if score @s AV.AnimationTick matches 244..253 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     scoreboard players reset $AV.Temp AV.UUID
 
-# アニメーション再生
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/14_0_opening_attack/play
-
-# アニメーション停止
-    execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/14_0_opening_attack/pause
-
 # アニメーション再開
     execute if score @s AV.AnimationTick matches 71 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/14_0_opening_attack/resume
 
