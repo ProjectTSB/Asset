@@ -64,16 +64,17 @@
 
 # フィールド
 
+# レーザーは将来的にObjectへ移行するものとする
+# asset:mob/0046.clock_of_despair/tick/skill/common/beam/damage
+
 # 雷ダメージ
     data modify storage asset:mob Field.Damage.Thunder set value 75f
-
 # 炎ダメージ
     data modify storage asset:mob Field.Damage.Fire set value 70f
-
 # 時計レーザー
     data modify storage asset:mob Field.Damage.WallLaserClock set value 75f
-
 # 魔炎
     data modify storage asset:mob Field.Damage.FallingFire set value 21f
-# フィールド
+
+# デバフ付与のクールダウン
     data modify storage asset:mob Field.InflictDebuffCooldown set value 5
