@@ -21,7 +21,7 @@
     function api:damage/reset
 
 # 浮遊
-    data modify storage api: Argument.ID set value 125
+    data modify storage api: Argument.ID set value 25
     data modify storage api: Argument.Duration set value 60
     data modify storage api: Argument.Stack set value 2
     execute positioned ~-0.4 ~-0.4 ~-0.4 as @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~-0.2 ~-0.2 ~-0.2 if entity @s[dx=0] run function api:entity/mob/effect/give
