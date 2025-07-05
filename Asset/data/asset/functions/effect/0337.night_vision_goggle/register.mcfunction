@@ -9,10 +9,12 @@
     function asset:effect/extends
 # ID (int)
     data modify storage asset:effect ID set value 337
+# 名前 (TextComponentString)
+    data modify storage asset:effect Name set value '{"text":"暗視 - パルスアーマー","color":"light_purple"}'
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
-# スタック (int) (default = API || 1)
-    data modify storage asset:effect Stack set value 1
+# 最大スタック (int) (default = 2147483647)
+    data modify storage asset:effect MaxStack set value 1
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)

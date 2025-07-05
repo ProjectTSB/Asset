@@ -6,8 +6,3 @@
 
 # エフェクトを解除
     effect clear @s haste
-
-# 暗視を削除
-    data modify storage api: Argument.ID set value 337
-    function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset
