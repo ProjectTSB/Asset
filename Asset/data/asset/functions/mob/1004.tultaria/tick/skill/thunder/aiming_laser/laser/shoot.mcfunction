@@ -11,8 +11,8 @@
     #declare tag SpreadMarker
 
 # サウンド
-    execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 1 1.5
-    execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 player @a ~ ~ ~ 1 1.5
+    execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete2 hostile @a ~ ~ ~ 0.7 1.5
+    execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 hostile @a ~ ~ ~ 0.7 1.5
 
 # 拡散させて実行
     # 拡散させるEntityを召喚する

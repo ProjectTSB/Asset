@@ -17,6 +17,10 @@
 # 中心点削除
     kill @e[type=marker,tag=93.Marker.SpawnPoint,sort=nearest,limit=1]
 
+# オブジェクト消去
+    execute as @e[tag=93.Object] on passengers run kill @s
+    kill @e[tag=93.Object]
+
 # 討伐演出再生
     tag @e[type=item_display,tag=93.ModelRoot,sort=nearest,limit=1] add 93.ModelRoot.Death
     data modify storage api: Argument.ID set value 2195

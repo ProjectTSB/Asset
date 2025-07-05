@@ -92,7 +92,7 @@
 
 # ダメージ式：難易度数値 × 補正値 + 基礎
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 35
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 40
     scoreboard players add $DamageTemp Temporary 60
 
 # ダメージ

@@ -12,3 +12,6 @@ execute unless data storage asset:context this{Cooldown:0} run function asset:mo
 
 # 角度を固定してしまう
     data modify entity @s Rotation[1] set value 0.0f
+
+# ゆっくりとこっちを向く
+    execute on passengers if entity @s[type=item_display] facing entity @p[gamemode=!spectator,distance=..8] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-3 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0

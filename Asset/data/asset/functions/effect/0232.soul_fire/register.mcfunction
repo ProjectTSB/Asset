@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"魂炎纏","color":"#01A7AC"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"全てを身に纏ったとき、魂炎による追撃が発生する。"}','{"text":"火攻撃 +10%","color":"green"}','{"text":"MP回復量 +2%","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"全てを身に纏ったとき、全ての攻撃に魂炎による追撃が発生する。"}','{"text":"火攻撃 +10%","color":"green"}','{"text":"MP回復量 +2%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0 if predicate lib:random_pass_per/20 run scoreboard players set @s General.Mob.Tick 1000
 
 # 状態制御
-    execute if score @s General.Mob.Tick matches 0 run function asset:mob/0106.mini_shulker/tick/select/
+    execute if score @s General.Mob.Tick matches 0 if function asset:mob/0106.mini_shulker/tick/select/ run scoreboard players set @s General.Mob.Tick 500
 
 # 待機処理
     execute if score @s General.Mob.Tick matches 0..50 run function asset:mob/0106.mini_shulker/tick/wait

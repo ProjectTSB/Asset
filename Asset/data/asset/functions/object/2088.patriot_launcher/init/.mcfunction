@@ -21,7 +21,7 @@
     ride @e[type=text_display,tag=PatriotLauncher.ObjectInit,tag=PatriotLauncher.Gauge,limit=1] mount @s
 
 # 難易度で対空砲の耐久値変更
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.MaxDurability set value 3
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.MaxDurability set value 3
 
 # データセット
     data modify storage asset:context this.Durability set from storage asset:context this.MaxDurability

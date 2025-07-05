@@ -6,9 +6,9 @@
 
 # 攻撃位置設置
     execute if score @s BE.EventTimer matches 40 as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/summon_attack_position
-    execute if score @s BE.EventTimer matches 40 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line_0
-    execute if score @s BE.EventTimer matches 120 if predicate api:global_vars/difficulty/max/normal as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line_1
-    execute if score @s BE.EventTimer matches 120 if predicate api:global_vars/difficulty/min/hard as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line
+    execute if score @s BE.EventTimer matches 40 if predicate api:global_vars/difficulty/max/2_hard as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line_0
+    execute if score @s BE.EventTimer matches 120 if predicate api:global_vars/difficulty/max/2_hard as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line_1
+    execute if score @s BE.EventTimer matches 120 if predicate api:global_vars/difficulty/min/3_blessless as @e[type=marker,tag=BE.CenterPosition] at @s run function asset:mob/0410.heiloang/tick/event/terzetto_aligning_b/prediction_line
 
 # 十字
     # 予告魔法陣

@@ -7,7 +7,7 @@
 # 攻撃位置決定
     summon area_effect_cloud ^ ^ ^ {Duration:1,Tags:["93.Temp.AttackPosition"]}
     # 偏差
-        execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack_predict
+        execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack_predict
 # 地上に合わせる
     execute as @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,distance=..80,sort=nearest,limit=1] at @s run function asset:mob/0327.eclael/tick/app.general/move_to_ground
 

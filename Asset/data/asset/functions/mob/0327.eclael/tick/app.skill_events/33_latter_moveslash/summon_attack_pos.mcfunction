@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/summon_attack_pos
+#> asset:mob/0327.eclael/tick/app.skill_events/33_latter_moveslash/summon_attack_pos
 #
 # アニメーションのイベントハンドラ
 #

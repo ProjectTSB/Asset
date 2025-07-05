@@ -4,7 +4,7 @@
 # 最大射程
     data modify storage asset:temp TZ.Const.DistanceMax set value 15
 # ダメージ計算用
-    data modify storage asset:temp TZ.Const.Damage.Base set value 420
+    data modify storage asset:temp TZ.Const.Damage.Base set value 455
     data modify storage asset:temp TZ.Const.Damage.Min set value 110
     data modify storage asset:temp TZ.Const.Damage.MultiplierResonance set value 1.2
     data modify storage asset:temp TZ.Const.Damage.DistanceAppropriate set value 6

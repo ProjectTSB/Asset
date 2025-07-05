@@ -12,7 +12,7 @@
     execute unless data storage asset:context this{MotionCT:0} run return 0
 
 # プレイヤーが近くにいるとき、確率でバックステップする
-    execute if entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/40 run function asset:mob/0330.aurora_reaper/hurt/step
+    execute if data storage asset:context Hurt{IsDoT:false} if entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/40 run function asset:mob/0330.aurora_reaper/hurt/step
 
 # プレイヤーが離れている時、確率で前進する
-    execute unless entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/70 run function asset:mob/0330.aurora_reaper/hurt/forward_step
+    execute if data storage asset:context Hurt{IsDoT:false} unless entity @p[tag=Attacker,distance=..6] if predicate lib:random_pass_per/70 run function asset:mob/0330.aurora_reaper/hurt/forward_step

@@ -17,7 +17,7 @@
     execute if score @s AX.AnimationTick matches 120 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
     execute if score @s AX.AnimationTick matches 135 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
     execute if score @s AX.AnimationTick matches 148 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    
+
 # 一定間隔
     execute if score @s AX.AnimationTick matches 159 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
     execute if score @s AX.AnimationTick matches 167 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
@@ -32,14 +32,14 @@
 
 # Hard用
 
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 171 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 179 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 187 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 195 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 203 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 211 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 219 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 227 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 171 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 179 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 187 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 195 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 203 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 211 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 219 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 227 run function asset:mob/0393.labyria_first/ai/animation/9_0_sw_lighting_fast/summon/
 
 
 # 範囲外からワープして戻って来る

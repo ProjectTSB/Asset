@@ -8,7 +8,7 @@
 #    function asset:mob/0339.twins_sapphiel/hurt/app/3.counter
 
 # ハードの場合、ランダムで武器を装備
-    # execute if predicate api:global_vars/difficulty/min/hard
+    # execute if predicate api:global_vars/difficulty/min/3_blessless
 
 # ノーマルの場合、強制でハンドガン装備
     tag @s add 9F.Skill.Hg.Start

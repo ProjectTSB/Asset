@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [40,80]
+    data modify storage asset:artifact AttackInfo.Damage set value [15,50]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 30
+    data modify storage asset:artifact AttackInfo.AttackRange set value 15
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 10
 # MP必要量 (int) (オプション)
@@ -58,7 +58,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:253,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,971,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,971,6],Slot:"head"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:971"}}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2.5,Operation:0,UUID:[I;1,1,971,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0.5,Operation:0,UUID:[I;1,1,971,6],Slot:"head"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:971"}}
 
 # 神器の入手用function
     function asset:artifact/common/give

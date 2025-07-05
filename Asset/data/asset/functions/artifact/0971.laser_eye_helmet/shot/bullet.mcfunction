@@ -26,4 +26,4 @@
     execute if entity @s[tag=Landing] run function asset:artifact/0971.laser_eye_helmet/shot/hit
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:artifact/0971.laser_eye_helmet/shot/bullet
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..15] run function asset:artifact/0971.laser_eye_helmet/shot/bullet

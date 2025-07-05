@@ -21,13 +21,13 @@
     data modify storage asset:mob Lore set value ['{"text":"ウサギの上級天使。","color":"white"}','{"text":"大剣を振り回し、力試しと言わんばかりに襲いかかってくる。","color":"white"}','{"text":"彼女が望むのは戦いなのか、あるいは……","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 57500
-#    execute if predicate api:global_vars/difficulty/max/normal run data modify storage asset:mob Health set value 20000
-#    execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:mob Health set value 22000
+#    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage asset:mob Health set value 20000
+#    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:mob Health set value 22000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 0.7
+        data modify storage asset:mob Resist.Physical set value 0.85
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.2
     # 火倍率 (float) (オプション)

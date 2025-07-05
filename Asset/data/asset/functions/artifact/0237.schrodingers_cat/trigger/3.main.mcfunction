@@ -5,25 +5,18 @@
 # @within function asset:artifact/0237.schrodingers_cat/trigger/2.check_condition
 
 #> Private
-# @private
-    #declare tag CatSpawn
+# @within function
+#   asset:artifact/0237.schrodingers_cat/trigger/3.main
+#   asset:artifact/0237.schrodingers_cat/trigger/give_fall_resistance
+#declare score_holder $HasTropicalFish
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/offhand
 
 # ここから先は神器側の効果の処理を書く
-    #ネコか魚か
-        execute if predicate lib:random_pass_per/50 run tag @s add CatSpawn
+execute store result score $HasTropicalFish Temporary run clear @s tropical_fish 1
+execute if score $HasTropicalFish Temporary matches 0 if predicate lib:random_pass_per/25 run return run function asset:artifact/0237.schrodingers_cat/trigger/give_fall_resistance
+execute if score $HasTropicalFish Temporary matches 1 if predicate lib:random_pass_per/50 run return run function asset:artifact/0237.schrodingers_cat/trigger/give_fall_resistance
 
-    #ネコが出た場合
-        execute as @s[tag=CatSpawn] run summon cat ~ ~ ~
-        playsound entity.cat.ambient neutral @s[tag=CatSpawn] ~ ~ ~ 3 1
-        particle heart ~ ~ ~ 1 1 1 1 100 normal @s[tag=CatSpawn]
-
-    #ネコが出なかった場合
-        execute as @s[tag=!CatSpawn] run summon cod ~ ~ ~
-        playsound entity.cod.flop player @s[tag=!CatSpawn] ~ ~ ~ 3 1
-        particle falling_water ~ ~ ~ 1 1 1 1 300 normal @s[tag=!CatSpawn]
-
-    #タグ消し
-        tag @s remove CatSpawn
+tellraw @s {"text":"猫いなかった……。","color":"gray"}
+scoreboard players reset $HasTropicalFish Temporary

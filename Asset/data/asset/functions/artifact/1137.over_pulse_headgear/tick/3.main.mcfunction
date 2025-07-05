@@ -4,11 +4,6 @@
 #
 # @within function asset:artifact/1137.over_pulse_headgear/tick/2.check_condition
 
-# 暗所チェック
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark if entity @s[tag=!VL.NightVision] run function asset:artifact/common/use/head
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_dark if entity @s[tag=!VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/give
-    execute if predicate asset:artifact/1137.over_pulse_headgear/in_bright if entity @s[tag=VL.NightVision] run function asset:artifact/1137.over_pulse_headgear/tick/night_vision/remove
-
 # 採掘速度上昇をつける
 # Haste = $VL.Stack - 1
     data modify storage api: Argument.ID set value 274

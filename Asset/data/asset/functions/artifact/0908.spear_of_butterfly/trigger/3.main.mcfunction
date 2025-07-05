@@ -19,10 +19,6 @@
     execute unless score $Diff Temporary matches ..50 run scoreboard players reset @s P8.AttackCount
     scoreboard players add @s P8.AttackCount 1
 
-# 体力割合を取得
-    function api:entity/player/get_health_per
-    execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
-
 # 演出
     playsound block.fire.ambient player @a ~ ~ ~ 0.4 1.3 0
     playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.5 0.8
@@ -42,5 +38,4 @@
 
 # リセット
     scoreboard players reset $Diff Temporary
-    scoreboard players reset $HealthPer Temporary
     scoreboard players reset $P8.Damage Temporary

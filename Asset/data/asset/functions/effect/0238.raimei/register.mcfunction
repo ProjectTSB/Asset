@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"雷鳴","color":"yellow"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"全ての部位を装備すると機敏になり、"}','{"text":"近接攻撃に対して追撃が発生する。"}']
+    data modify storage asset:effect Description set value ['{"text":"全ての部位を装備すると機敏になり、"}','{"text":"近接攻撃に対して追撃が発生する。"}','{"text":"移動速度+15%","color":"green"}','{"text":"跳躍力上昇1","color":"green"}','{"text":"採掘速度上昇1","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

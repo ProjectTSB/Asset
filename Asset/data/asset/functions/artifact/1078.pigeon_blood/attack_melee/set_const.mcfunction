@@ -7,8 +7,8 @@
 # クリティカル率
     data modify storage asset:temp TY.Const.CriticalPercentage set value 20
 # ダメージ
-    data modify storage asset:temp TY.Const.Damage.Min set value 350
-    data modify storage asset:temp TY.Const.Damage.Max set value 650
+    data modify storage asset:temp TY.Const.Damage.Min set value 380
+    data modify storage asset:temp TY.Const.Damage.Max set value 700
     data modify storage asset:temp TY.Const.Damage.MultiplierResonance set value 1.2
     data modify storage asset:temp TY.Const.Damage.MultiplierCritical set value 1.5
 # 共鳴攻撃

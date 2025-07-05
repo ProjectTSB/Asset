@@ -37,6 +37,10 @@
 # その他リセット
     function asset:mob/0410.heiloang/tick/util/remove_all_tag
 
+# 眷属消去
+    execute as @e[type=slime,tag=BF.EntityRoot] run function api:mob/remove
+    execute as @e[type=slime,tag=BG.EntityRoot] run function api:mob/remove
+
 # オブジェクト消去
     execute as @e[tag=BE.Object,distance=..160] on passengers run kill @s
     kill @e[tag=BE.Object,distance=..160]

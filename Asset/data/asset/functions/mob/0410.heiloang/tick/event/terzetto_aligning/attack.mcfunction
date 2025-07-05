@@ -1,8 +1,8 @@
-#> asset:mob/0410.heiloang/tick/event/terzetto_disaster/attack
+#> asset:mob/0410.heiloang/tick/event/terzetto_aligning/attack
 #
 # リヒトブリッツェン
 #
-# @within asset:mob/0410.heiloang/tick/event/terzetto_disaster/attack_main
+# @within asset:mob/0410.heiloang/tick/event/terzetto_aligning/attack_main
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2111

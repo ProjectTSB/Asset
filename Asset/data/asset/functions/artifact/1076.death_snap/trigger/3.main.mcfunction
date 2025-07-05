@@ -18,7 +18,7 @@
     playsound minecraft:block.piston.extend player @a[distance=..10] ~ ~ ~ 1 2
 
 # 最大ヒット数
-    scoreboard players set $TW.Count Temporary 6
+    scoreboard players set $TW.Count Temporary 4
 
 # 前方にいるモブにタグをつける
     execute anchored eyes positioned ^ ^ ^7 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..7] add TW.Target

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・レッグフレーム","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"translate":"また、他部位を装備するごとに落下の衝撃を %s 軽減する。","with":[{"text":"15%","color":"aqua"}]}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"垂直方向の移動力が向上する。"}','{"text":"膝を曲げている間、さらに垂直方向の移動力が向上する。"}','{"text":"─ 対落下衝撃フレーム 活性化。","color":"gray","italic":true}','{"text":"─ 生体ノ破損ニ 注意シテクダサイ。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -63,7 +63,7 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/thunder",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:-0.025d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:-0.05d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:8d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:6d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban","Wi-ki","Rumor"]

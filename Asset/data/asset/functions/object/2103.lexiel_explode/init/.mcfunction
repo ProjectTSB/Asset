@@ -8,6 +8,6 @@
 # 難易度で予告のサイズを変える
     data modify storage api: Argument.ID set value 2063
     data modify storage api: Argument.FieldOverride set value {Tick:34,Color:16720418}
-    execute unless predicate api:global_vars/difficulty/hard run data modify storage api: Argument.FieldOverride.Scale set value [8f,8f,0.01f]
-    execute if predicate api:global_vars/difficulty/hard run data modify storage api: Argument.FieldOverride.Scale set value [12f,12f,0.01f]
+    execute unless predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Scale set value [8f,8f,0.01f]
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Scale set value [12f,12f,0.01f]
     function api:object/summon

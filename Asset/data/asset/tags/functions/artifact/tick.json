@@ -1,11 +1,11 @@
 {
     "values": [
+        "asset:artifact/0237.schrodingers_cat/trigger/1.trigger",
         "asset:artifact/1057.great_demon_head/tick/1.trigger",
         "asset:artifact/1066.weight_stone/tick/1.trigger",
         "asset:artifact/0562.heartland/trigger/1.trigger",
         "asset:artifact/0566.great_sage_helmet/tick/1.trigger",
         "asset:artifact/1140.over_pulse_booster/tick/1.trigger",
-        "asset:artifact/1139.over_pulse_legframe/tick/1.trigger",
         "asset:artifact/1138.over_pulse_bodyarmor/tick/1.trigger",
         "asset:artifact/1137.over_pulse_headgear/tick/1.trigger",
         "asset:artifact/1273.maidchan_plush/trigger/1.trigger",

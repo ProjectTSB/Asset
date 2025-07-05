@@ -9,8 +9,8 @@
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
 
 # 難易度に応じて後半戦に遷移
-    execute if predicate api:global_vars/difficulty/max/normal if score $HealthPer Temporary matches ..60 run function asset:mob/0380.haruclaire_v3/hurt/latter_start
-    execute if predicate api:global_vars/difficulty/min/hard if score $HealthPer Temporary matches ..70 run function asset:mob/0380.haruclaire_v3/hurt/latter_start
+    execute if predicate api:global_vars/difficulty/max/2_hard if score $HealthPer Temporary matches ..60 run function asset:mob/0380.haruclaire_v3/hurt/latter_start
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $HealthPer Temporary matches ..70 run function asset:mob/0380.haruclaire_v3/hurt/latter_start
 
 # 終了
     scoreboard players reset $HealthPer Temporary

@@ -1,4 +1,4 @@
-#> asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/prediction
+#> asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/prediction
 #
 # アニメーションのイベントハンドラ
 #

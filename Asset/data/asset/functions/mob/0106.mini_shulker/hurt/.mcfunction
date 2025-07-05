@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/106/hurt
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 # バニラ攻撃は受け付けないものとする
     execute unless data storage asset:context Hurt{IsVanilla:false} run return fail
 

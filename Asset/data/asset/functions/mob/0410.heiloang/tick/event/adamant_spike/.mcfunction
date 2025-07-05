@@ -12,7 +12,7 @@
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 23 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # ハード以上：ターゲット決定
-        execute if score @s BE.EventTimer matches 1..265 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0410.heiloang/tick/util/check_target
+        execute if score @s BE.EventTimer matches 1..265 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0410.heiloang/tick/util/check_target
     # 氷設置位置予告
         execute if score @s BE.EventTimer matches 23 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/adamant_spike/summon_aec
         execute if score @s BE.EventTimer matches 23..180 at @e[type=area_effect_cloud,tag=BE.Temp.Adamant.SummonPosition] run function asset:mob/0410.heiloang/tick/event/adamant_spike/particle_before
