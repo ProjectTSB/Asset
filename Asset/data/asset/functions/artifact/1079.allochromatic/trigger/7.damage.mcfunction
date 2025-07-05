@@ -16,7 +16,7 @@
     scoreboard players set $MinDamage Temporary 110
 
 # 基礎ダメージを設定
-    scoreboard players set $Damage Temporary 420
+    scoreboard players set $Damage Temporary 455
 
 # デバッグ用減衰確認コマンド1
     #tellraw @a {"text":"-----"}
