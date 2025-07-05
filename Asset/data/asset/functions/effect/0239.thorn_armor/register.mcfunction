@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ソーンアーマー","color":"#1D5923"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['[{"text":"全て纒いし時、血吸いの荊が目を覚まし、","color":"#457341"}]','[{"text":"触れた者を突き刺し回復する。","color":"#457341"}]']
+    data modify storage asset:effect Description set value ['[{"text":"全ての部位を装備すると","color":"white"}]','[{"text":"被ダメージ時に攻撃者にダメージを与え、体力を5.0回復する。","color":"white"}]']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
