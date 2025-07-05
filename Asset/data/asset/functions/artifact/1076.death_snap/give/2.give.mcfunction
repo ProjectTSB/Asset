@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"デ・スナップ","color":"dark_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"最大6体の視界内の敵にダメージを与える"}','{"text":"今どきは珍しいレンズ付きフィルム","color":"gray"}','{"text":"魂が吸い取られるし、なんかすげー嫌","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"最大4体の視界内の敵にダメージを与える"}','{"text":"今どきは珍しいレンズ付きフィルム","color":"gray"}','{"text":"魂が吸い取られるし、なんかすげー嫌","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [175]
+    data modify storage asset:artifact AttackInfo.Damage set value [155]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

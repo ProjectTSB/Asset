@@ -56,7 +56,7 @@
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:244,Visible:true}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:244,Visible:true,IsSetEffect:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:0.075d,Operation:"multiply_base"}

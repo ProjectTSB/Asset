@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"竹取の宝具","color":"#ffffe0","bold":true}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"火耐性 +15%","color":"green"}','{"text":"水耐性 +15%","color":"green"}','{"text":"物理耐性 +20%","color":"green"}','{"text":"落下耐性 +25%","color":"green"}']
+    data modify storage asset:effect Description set value ['{"text":"竹取の宝具を全て装備した時","color":"white"}','{"text":"火耐性 +15%","color":"green"}','{"text":"水耐性 +15%","color":"green"}','{"text":"物理耐性 +20%","color":"green"}','{"text":"落下耐性 +25%","color":"green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

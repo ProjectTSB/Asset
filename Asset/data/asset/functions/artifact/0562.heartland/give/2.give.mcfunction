@@ -58,7 +58,7 @@
 # アイテム更新を無効化する (boolean) (オプション)
     data modify storage asset:artifact DisabledFlag.Use.ItemUpdate set value true
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:237,Visible:true}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:237,Visible:true,IsSetEffect:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}

@@ -21,7 +21,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
@@ -43,7 +43,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量
-    data modify storage asset:artifact MPHealWhenHit set value 12
+    data modify storage asset:artifact MPHealWhenHit set value 10
 # 神器のクールダウン (int) (オプション)
     #data modify storage asset:artifact LocalCooldown set value 25
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
