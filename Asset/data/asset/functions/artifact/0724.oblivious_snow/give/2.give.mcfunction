@@ -52,7 +52,7 @@
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:243,Visible:true}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:243,Visible:true,IsSetEffect:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:0.125d,Operation:"multiply_base"}

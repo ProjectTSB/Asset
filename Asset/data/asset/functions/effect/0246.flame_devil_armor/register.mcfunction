@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"炎魔","color":"#C71585","bold":true},{"text":"の鎧","color":"#FF7F50","bold":true}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力が全て揃いし時、痛みを力に変えられるだろう","color":"#FF7F50"}]']
+    data modify storage asset:effect Description set value ['[{"text":"炎魔","color":"#C71585"},{"text":"の力","color":"#FF7F50"},{"text":"が全て揃いし時、","color":"white"}]','[{"text":"被攻撃ダメージ時にMPを20回復する。","color":"white"}]']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

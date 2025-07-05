@@ -54,7 +54,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:239,Visible:true}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:239,Visible:true,IsSetEffect:true}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.03d,Operation:"multiply_base"}
