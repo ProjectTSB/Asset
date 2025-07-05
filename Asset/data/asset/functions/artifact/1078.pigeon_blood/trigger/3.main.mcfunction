@@ -59,7 +59,7 @@
 
 # ダメージ
 # クリティカルでダメージ上昇、共鳴時にダメージ上昇
-    execute store result storage api: Argument.Damage int 1 run random value 350..650
+    execute store result storage api: Argument.Damage int 1 run random value 380..700
     execute if entity @s[tag=Critical] store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
     execute if entity @s[tag=Resonance] store result storage api: Argument.Damage float 1.2 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"

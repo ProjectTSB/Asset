@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 100
+    data modify storage asset:artifact LocalCooldown set value 120
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "heal"
     data modify storage asset:artifact TypeCooldown.Duration set value 60
