@@ -15,3 +15,5 @@ execute unless loaded -202 204 614 run return 1
     data modify storage asset:island Rotation set value 180f
 # BossID (string)
     data modify storage asset:island BossID set value 437
+# BossDatapack (string)
+    data modify storage asset:island BossDatapack set value "AJ_lawless_iron_doll"

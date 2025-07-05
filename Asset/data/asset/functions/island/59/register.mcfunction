@@ -15,3 +15,5 @@ execute unless loaded 100 107 2920 run return 1
     data modify storage asset:island Rotation set value 0f
 # BossID (string)
     data modify storage asset:island BossID set value 1004
+# BossDatapack (string)
+    data modify storage asset:island BossDatapack set value "AJ_tultaria"

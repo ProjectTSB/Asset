@@ -15,3 +15,5 @@ execute unless loaded -282 258 -174 run return 1
     data modify storage asset:island Rotation set value 90f
 # BossID (string)
     data modify storage asset:island BossID set value 341
+# BossDatapack (string)
+    data modify storage asset:island BossDatapack set value "AJ_louvert"

@@ -15,3 +15,5 @@ execute unless loaded -275 23 170 run return 1
     data modify storage asset:island Rotation set value 0f
 # BossID (string)
     data modify storage asset:island BossID set value 376
+# BossDatapack (string)
+    data modify storage asset:island BossDatapack set value "AJ_convict"

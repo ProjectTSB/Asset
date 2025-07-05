@@ -15,3 +15,5 @@ execute unless loaded 151 108 268 run return 1
     data modify storage asset:island Rotation set value 180f
 # BossID (string)
     # data modify storage asset:island BossID set value 
+# BossDatapack (string)
+    # data modify storage asset:island BossDatapack set value ""
