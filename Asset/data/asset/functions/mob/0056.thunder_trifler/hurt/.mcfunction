@@ -16,6 +16,9 @@
     playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 1.4 0
     playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 0.9 0
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 # TP間隔
     execute store result score $LatestTPTick Temporary run data get storage asset:context this.LatestTPTick
     execute store result score $CurrentTick Temporary run time query gametime

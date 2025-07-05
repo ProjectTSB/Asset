@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/339/hurt
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 function asset:mob/super.hurt
 
 # TODO:被ダメージ量の計算

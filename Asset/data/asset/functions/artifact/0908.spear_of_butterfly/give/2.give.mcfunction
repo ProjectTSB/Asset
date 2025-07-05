@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"冥蝶の槍","color":"#C4302A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"自身の最大体力の","color":"white"},{"text":"60%","color":"dark_aqua"},{"text":"分ダメージがアップする","color":"white"}]','{"text":"自身の体力が50%未満の時","color":"white"}','[{"text":"ダメージが更に最大体力の","color":"white"},{"text":"100%","color":"dark_aqua"},{"text":"分アップする","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"自身の最大体力の","color":"white"},{"text":"60%","color":"dark_aqua"},{"text":"分ダメージがアップする","color":"white"}]','{"text":"自身の体力が50%未満の時","color":"white"}','[{"text":"ダメージが更に最大体力の","color":"white"},{"text":"100%","color":"dark_aqua"},{"text":"分アップする","color":"white"}]','[{"text":"最大体力によるダメージアップは","color":"white"},{"text":"200","color":"dark_aqua"},{"text":"を上限とする","color":"white"}]',]
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

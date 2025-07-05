@@ -15,11 +15,11 @@
     function asset:mob/0341.louvert/hurt/store_hpper
 
 # 待機時 稀にカウンターをする
-    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s 9H.AnimationNum matches 11 if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/counter_start
+    execute if data storage asset:context Hurt{IsDoT:false} if predicate api:global_vars/difficulty/min/3_blessless if score @s 9H.AnimationNum matches 11 if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/counter_start
 
 # 待機時 稀に怯む
-    execute if predicate api:global_vars/difficulty/max/2_hard if score @s 9H.AnimationNum matches 11 unless score @s 9H.FalterCount matches 2.. if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/falter_start
-    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s 9H.AnimationNum matches 11 unless score @s 9H.FalterCount matches 1.. if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/falter_start
+    execute if data storage asset:context Hurt{IsDoT:false} if predicate api:global_vars/difficulty/max/2_hard if score @s 9H.AnimationNum matches 11 unless score @s 9H.FalterCount matches 2.. if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/falter_start
+    execute if data storage asset:context Hurt{IsDoT:false} if predicate api:global_vars/difficulty/min/3_blessless if score @s 9H.AnimationNum matches 11 unless score @s 9H.FalterCount matches 1.. if predicate lib:random_pass_per/15 run function asset:mob/0341.louvert/hurt/falter_start
 
 # 紐づけ終了
     tag @e[type=item_display,tag=9H.Root.This,distance=..100] remove 9H.Root.This

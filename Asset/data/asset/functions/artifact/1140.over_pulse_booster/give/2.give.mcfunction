@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーパルス・ブースター","color":"#44bbff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"水平方向の移動力が向上する。"}','{"translate":"他部位を装備するごとに移動力が %s 上昇する。","with":[{"text":"2.5%","color":"aqua"}]}','{"text":"─ 浮上装置ノ 破損ヲ 確認。","color":"gray","italic":true}','{"text":"─ 代替トシテ 移動補助ヲ 実行シマス。","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"水平方向の移動力が向上する。"}','{"translate":"また、他部位を装備するごとに落下の衝撃を %s 軽減する。","with":[{"text":"10%","color":"aqua"}]}','{"text":"─ 浮上装置ノ 破損ヲ 確認。","color":"gray","italic":true}','{"text":"─ 代替トシテ 移動補助ヲ 実行シマス。","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -63,9 +63,9 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/thunder",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:-0.025d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:-0.05d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:4d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.10d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban","Wi-ki","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

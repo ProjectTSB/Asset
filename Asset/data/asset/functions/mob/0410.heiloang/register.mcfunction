@@ -27,7 +27,7 @@
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.2f
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 0.7f
+        data modify storage asset:mob Resist.Magic set value 0.85f
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1.0f
     # 水倍率 (float) (オプション)
@@ -50,7 +50,7 @@
         # 回転雷
             data modify storage asset:mob Field.Damage.BlitzSpin set value 45.0f
     # エンハンスドディザスター：全属性共通
-        data modify storage asset:mob Field.Damage.Ehd set value 65.0f
+        data modify storage asset:mob Field.Damage.Ehd set value 140.0f
     # 移動
         data modify storage asset:mob Field.Damage.Move set value 45.0f
     # 竜巻

@@ -4,10 +4,8 @@
 # @within function asset:mob/0046.clock_of_despair/tick/skill/**
 
 # 召喚
-    data modify storage api: Argument.ID set value 2063
-    data modify storage api: Argument.FieldOverride.Color set value 16764108
-    data modify storage api: Argument.FieldOverride.Scale set value [8f,8f,0.01f]
-    $data modify storage api: Argument.FieldOverride.Tick set value $(PrepareTime)
+    data modify storage api: Argument.ID set value 2250
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Fire
+    $data modify storage api: Argument.FieldOverride.Delay set value $(Delay)
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     function api:object/summon
-# 演出
-    playsound item.firecharge.use hostile @a ~ ~ ~ 1 1.4
