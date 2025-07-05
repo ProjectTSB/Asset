@@ -9,6 +9,7 @@
     #
     #declare tag 1A.SkillMarker
     #declare tag 1A.SkillBeam
+    #declare tag 1A.SkillFallingFire
     #declare tag 1A.SkillFF1
     #declare tag 1A.SkillFF2
     #declare tag 1A.SkillFF3
