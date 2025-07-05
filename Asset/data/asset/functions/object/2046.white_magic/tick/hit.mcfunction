@@ -4,6 +4,9 @@
 #
 # @within function asset:object/2046.white_magic/tick/
 
+# MobのAttackトリガー起動用Metadata
+    data modify storage api: Argument.Metadata set value "363.Debuff"
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
@@ -13,6 +16,3 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
     function api:damage/reset
-
-# ノーマル以上なら範囲内のプレイヤーにデバフを付与
-    execute if data storage asset:context this{Debuff:true} run function asset:object/2046.white_magic/tick/debuff
