@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アロクロマティック<Empty>","color":"#a1faf5"}'
+    data modify storage asset:artifact Name set value '{"text":"","extra":[{"text":"アロクロマティック","color":"#a1faf5"},{"text":"\\u0002","font":"space"},{"text":"<Empty>","color":"#a1faf5"}]}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"リロードする。","color":"white"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"魔力を凝縮し、弾丸へと変換する。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"弾を生成して装填する。","color":"white"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"魔力を凝縮し、弾丸へと変換する。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
