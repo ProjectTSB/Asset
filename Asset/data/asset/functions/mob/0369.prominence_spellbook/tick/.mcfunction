@@ -12,11 +12,11 @@
     execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
 
 # 移動
-    execute unless entity @s[scores={A9.StepBack=0..}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
+    execute unless entity @s[scores={A9.StepBack=0..}] facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
 
 # 後退モード時は速度が下がる
 # 幾何学の処理をしてかつ、後ろがブロックじゃないかつ、足元がブロックじゃなければ後退
-    execute if entity @s[scores={A9.StepBack=0..}] facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ~ ~1.8 ~ if block ^ ^ ^-0.1 #lib:no_collision positioned ~ ~-1.8 ~ if block ~ ~0 ~ #lib:no_collision if block ~ ~1.5 ~ #lib:no_collision run tp @s ^ ^ ^-0.1 ~ ~
+    execute if entity @s[scores={A9.StepBack=0..}] facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ~ ~1.8 ~ if block ^ ^ ^-0.1 #lib:no_collision positioned ~ ~-1.8 ~ if block ~ ~0 ~ #lib:no_collision if block ~ ~1.5 ~ #lib:no_collision run tp @s ^ ^ ^-0.1 ~ ~
 
 # もし後退モードで足元がブロックなら下を向いて脱出
     execute if entity @s[scores={A9.StepBack=0..}] at @s unless block ~ ~0 ~ #lib:no_collision run tp @s ~ ~0.3 ~ ~ 90
