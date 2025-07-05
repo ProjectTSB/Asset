@@ -26,7 +26,7 @@
 
 # 生存時間加算
     scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches 108 if predicate api:global_vars/difficulty/max/normal rotated ~90 0 run function asset:object/2251.wall_laser_clock/tick/pre_fire_aoe.m {InterpolationTime:9,VisibleTime:12}
-    execute if score @s General.Object.Tick matches 114 if predicate api:global_vars/difficulty/min/hard rotated ~90 0 run function asset:object/2251.wall_laser_clock/tick/pre_fire_aoe.m {InterpolationTime:3,VisibleTime:6}
+    execute if score @s General.Object.Tick matches 108 if predicate api:global_vars/difficulty/max/2_hard rotated ~90 0 run function asset:object/2251.wall_laser_clock/tick/pre_fire_aoe.m {InterpolationTime:9,VisibleTime:12}
+    execute if score @s General.Object.Tick matches 114 if predicate api:global_vars/difficulty/min/3_blessless rotated ~90 0 run function asset:object/2251.wall_laser_clock/tick/pre_fire_aoe.m {InterpolationTime:3,VisibleTime:6}
     execute if score @s General.Object.Tick matches 120.. rotated ~90 0 run function asset:object/2251.wall_laser_clock/tick/fire
     execute if score @s General.Object.Tick matches 120.. run kill @s
