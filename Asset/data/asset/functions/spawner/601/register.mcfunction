@@ -12,7 +12,7 @@ execute unless loaded 162 167 -171 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:spawner Pos set value [162, 167, -171]
 # 体力 (int) このスポナーから召喚されたMobがN体殺されると破壊されるか
-    data modify storage asset:spawner HP set value 6
+    data modify storage asset:spawner HP set value 4
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
     data modify storage asset:spawner SpawnPotentials set value [204,219,220]
 # 一度に召喚する数 (int)

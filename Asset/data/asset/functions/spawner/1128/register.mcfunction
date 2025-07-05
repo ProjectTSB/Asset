@@ -12,7 +12,7 @@ execute unless loaded -188 214 378 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:spawner Pos set value [-188, 214, 378]
 # 体力 (int) このスポナーから召喚されたMobがN体殺されると破壊されるか
-    data modify storage asset:spawner HP set value 6
+    data modify storage asset:spawner HP set value 5
 # SpawnPotentials(int | int[] | ({ Weight: int, Id: int })[]) MobAssetのIDを指定する
     data modify storage asset:spawner SpawnPotentials set value [182,414]
 # 一度に召喚する数 (int)
@@ -26,6 +26,6 @@ execute unless loaded -188 214 378 run return 1
 # 最大召喚間隔 (int)
     data modify storage asset:spawner MaxSpawnDelay set value 120
 # 近くのエンティティの最大数 (int)
-    data modify storage asset:spawner MaxNearbyEntities set value 4
+    data modify storage asset:spawner MaxNearbyEntities set value 3
 # この範囲にプレイヤーが存在するとき、Mobの召喚を開始する // distance <= 100
     data modify storage asset:spawner RequiredPlayerRange set value 24
