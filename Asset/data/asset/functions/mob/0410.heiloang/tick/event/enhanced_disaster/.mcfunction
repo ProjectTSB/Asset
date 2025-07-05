@@ -33,5 +33,8 @@
     # 中心点回転
         execute if score @s BE.EventTimer matches 111 as @e[type=marker,tag=BE.CenterPosition] at @s facing entity @e[type=slime,tag=BE.EntityRoot,limit=1] feet run tp @s ~ ~ ~ ~ 0
 
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
+
 # 終了
     execute if score @s BE.EventTimer matches 175.. run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/end
