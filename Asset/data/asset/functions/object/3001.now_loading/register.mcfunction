@@ -15,6 +15,6 @@
     # data modify storage asset:object IsTicking set value
 
 # ID (int)
-    data modify storage asset:object ID set value 2255
+    data modify storage asset:object ID set value 3001
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
