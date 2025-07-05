@@ -3,6 +3,7 @@
 # 継承先などから実行される処理
 #
 # @within asset:object/alias/2084/kill
+# @within asset:object/2084.snake_eye/tick/detonation_check
 
 # hit entityとhit block両方で同じ処理書くのも冗長なのでここで書く
 # plausound

@@ -16,7 +16,7 @@
 
 # 乱数によるスキル選択
     function asset:mob/0213.terrible_sonic_bomber/tick/weapons/select_weapon
-        #data modify storage asset:context Action.Selected set value "storm_shadow_cluster"
+        #data modify storage asset:context Action.Selected set value "snake_eye"
 
 
 # 攻撃開始と終了時間指定(デフォルト値)

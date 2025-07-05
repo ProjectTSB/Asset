@@ -11,10 +11,12 @@
 # オブジェクト召喚
     data modify storage api: Argument.ID set value 2084
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.detonation_safe_time set from storage asset:context this.detonation_safe_time
     execute positioned ^2 ^ ^ run function api:object/summon
 
     data modify storage api: Argument.ID set value 2084
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.detonation_safe_time set from storage asset:context this.detonation_safe_time
     execute positioned ^-2 ^ ^ run function api:object/summon
 
 # 次回攻撃開始時間指定
