@@ -10,7 +10,7 @@
     execute if entity @s[tag=4C.Alert] run scoreboard players add @s General.Mob.Tick 1
 
 # ハード以上でAlertTagがついてるなら鈍足を無効化
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=4C.Alert] run effect clear @s slowness
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=4C.Alert] run effect clear @s slowness
 
 # 一定時間で発動
     execute if score @s General.Mob.Tick matches 70 run function asset:mob/0156.infringement/tick/alert

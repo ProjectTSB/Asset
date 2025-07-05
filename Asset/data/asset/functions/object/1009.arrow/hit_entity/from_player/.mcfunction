@@ -13,7 +13,7 @@
 #declare tag 1009.Target
 
 # 攻撃対象特定
-    execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] positioned ~-0.8 ~-0.8 ~-0.8 if entity @s[dx=0] run tag @s add 1009.Hit
-    execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,type=!player,tag=1009.Hit,dx=0,sort=random,limit=1] run tag @s add 1009.Target
-    execute positioned ~-0.1 ~-0.1 ~-0.1 run tag @e[type=#lib:living,type=!player,tag=1009.Hit,dx=0] remove 1009.Hit
-    execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] positioned ~0.1 ~0.1 ~0.1 run function asset:object/1009.arrow/hit_entity/from_player/as_target
+    execute positioned ~-0.3 ~-0.3 ~-0.3 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] positioned ~-0.4 ~-0.4 ~-0.4 if entity @s[dx=0] run tag @s add 1009.Hit
+    execute positioned ~-0.3 ~-0.3 ~-0.3 as @e[type=#lib:living,type=!player,tag=1009.Hit,dx=0,sort=random,limit=1] run tag @s add 1009.Target
+    execute positioned ~-0.3 ~-0.3 ~-0.3 run tag @e[type=#lib:living,type=!player,tag=1009.Hit,dx=0] remove 1009.Hit
+    execute positioned ~-0.3 ~-0.3 ~-0.3 as @e[type=#lib:living,type=!player,tag=1009.Target,dx=0] positioned ~0.3 ~0.3 ~0.3 run function asset:object/1009.arrow/hit_entity/from_player/as_target

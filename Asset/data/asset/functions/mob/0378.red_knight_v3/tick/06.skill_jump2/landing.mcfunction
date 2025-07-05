@@ -30,8 +30,8 @@
 # 判定
     # ダメージ設定
     # 与えるダメージ
-        execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 9999.9f
-        execute unless predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.Damage set value 80.0f
+        execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.Damage set value 9999.9f
+        execute unless predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.Damage set value 80.0f
     # 第1属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第2属性

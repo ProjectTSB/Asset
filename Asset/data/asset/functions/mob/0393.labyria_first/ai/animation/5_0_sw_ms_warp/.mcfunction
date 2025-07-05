@@ -7,7 +7,7 @@
 # 近くのプレイヤーの方を向く
     execute if score @s AX.AnimationTick matches 1..53 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AX.AnimationTick matches 80..92 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 93..124 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 93..124 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AX.AnimationTick matches 125..130 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
     execute if score @s AX.AnimationTick matches 160..175 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0393.labyria_first/ai/general/2.rotate
 

@@ -13,7 +13,7 @@
     $execute rotated $(Offset) 0 rotated ~270 ~ run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line_summon
 
 # ノーマル以上では8Way
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
     $execute rotated $(Offset) 0 rotated ~45 ~ run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line_summon
     $execute rotated $(Offset) 0 rotated ~135 ~ run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line_summon
     $execute rotated $(Offset) 0 rotated ~225 ~ run function asset:mob/0410.heiloang/tick/event/power_breath/prediction_line_summon

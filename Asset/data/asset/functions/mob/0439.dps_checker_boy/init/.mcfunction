@@ -14,7 +14,7 @@
     tag @e[type=text_display,tag=Init,limit=1] remove Init
 
 # モデルを召喚、自分の向きにしたあと自分の上に乗せる
-    summon item_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1.12f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20561}}}
+    summon item_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],teleport_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-1.12f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20561}}}
     tp @e[type=item_display,tag=Init,limit=1] ~ ~ ~ ~ ~
     ride @e[type=item_display,tag=Init,limit=1] mount @s
     tag @e[type=item_display,tag=Init,limit=1] remove Init

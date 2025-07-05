@@ -1,4 +1,4 @@
-#> asset:object/alias/2184/summon
+#> asset:object/alias/2183/summon
 #
 # Object召喚処理のエイリアス
 #

@@ -18,7 +18,7 @@
 # キルする
     scoreboard players operation $AU.Temp AU.Dummy.UUID = @s AU.Dummy.UUID
     execute as @e[type=wither_skeleton,tag=AU.Target,distance=..100] if score @s AU.Dummy.UUID = $AU.Temp AU.Dummy.UUID run data modify entity @s DeathLootTable set value "empty"
-    execute as @e[type=wither_skeleton,tag=AU.Target,distance=..100] if score @s AU.Dummy.UUID = $AU.Temp AU.Dummy.UUID run function api:mob/kill
+    execute as @e[type=wither_skeleton,tag=AU.Target,distance=..100] if score @s AU.Dummy.UUID = $AU.Temp AU.Dummy.UUID run function api:mob/remove
 
 # リセット
     scoreboard players reset $AU.Temp AU.Dummy.UUID

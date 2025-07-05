@@ -9,8 +9,8 @@
     #declare tag SpreadMarker
 
 # 演出
-    execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 1 2
-    execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.6 2
+    execute positioned ^ ^ ^1 run playsound ogg:block.respawn_anchor.deplete1 player @a ~ ~ ~ 0.7 2
+    execute positioned ^ ^ ^1 run playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.3 2
     #execute positioned ^ ^ ^1 run playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 1 2
 
 # 拡散させて実行

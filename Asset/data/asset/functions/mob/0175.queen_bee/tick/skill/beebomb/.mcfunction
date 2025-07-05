@@ -30,8 +30,8 @@
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 # Ntickおきに実行
-    execute if predicate api:global_vars/difficulty/max/normal run scoreboard players operation $Interval Temporary %= $4 Const
-    execute if predicate api:global_vars/difficulty/min/hard run scoreboard players operation $Interval Temporary %= $2 Const
+    execute if predicate api:global_vars/difficulty/max/2_hard run scoreboard players operation $Interval Temporary %= $4 Const
+    execute if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players operation $Interval Temporary %= $2 Const
     execute if score @s General.Mob.Tick matches 25..105 if score $Interval Temporary matches 0 run function asset:mob/0175.queen_bee/tick/skill/beebomb/summon
 # リセット
     scoreboard players reset $Interval

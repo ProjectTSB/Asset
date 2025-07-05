@@ -26,7 +26,7 @@
 
 # 生存時間加算
     scoreboard players add @s 1A.LifeTime 1
-    execute if score @s 1A.LifeTime matches 108 if predicate api:global_vars/difficulty/max/normal rotated ~90 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/pre_fire_aoe.m {InterpolationTime:9,VisibleTime:12}
-    execute if score @s 1A.LifeTime matches 114 if predicate api:global_vars/difficulty/min/hard rotated ~90 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/pre_fire_aoe.m {InterpolationTime:3,VisibleTime:6}
+    execute if score @s 1A.LifeTime matches 108 if predicate api:global_vars/difficulty/max/2_hard rotated ~90 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/pre_fire_aoe.m {InterpolationTime:9,VisibleTime:12}
+    execute if score @s 1A.LifeTime matches 114 if predicate api:global_vars/difficulty/min/3_blessless rotated ~90 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/pre_fire_aoe.m {InterpolationTime:3,VisibleTime:6}
     execute if score @s 1A.LifeTime matches 120.. rotated ~90 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/fire
     execute if score @s 1A.LifeTime matches 120.. run kill @s

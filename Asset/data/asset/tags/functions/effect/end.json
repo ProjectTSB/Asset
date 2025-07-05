@@ -1,6 +1,7 @@
 {
     "values": [
-        "asset:effect/0297.life_is_transitory/_/end",
+        "asset:effect/0621.loyalty_shield/_/end",
+        "asset:effect/0653.absolute_drive/_/end",
         "asset:effect/0336.self_loathing/_/end",
         "asset:effect/0324.scripture_gambling/_/end",
         "asset:effect/0281.addiction/_/end",
@@ -35,7 +36,7 @@
         "asset:effect/0286.dont_hit_me/_/end",
         "asset:effect/0308.healer_trance/_/end",
         "asset:effect/0309.healer_trance/_/end",
-        "asset:effect/0190.fall_damage_immunity/_/end",
+        "asset:effect/0190.fall_resistance/_/end",
         "asset:effect/0296.soul_disconnection/_/end",
         "asset:effect/0031.slow_falling/_/end",
         "asset:effect/0024.darkness/_/end",

@@ -52,4 +52,4 @@
     summon area_effect_cloud ^0 ^2 ^33.33333 {Tags:["AK.Temp.AttackRotation"],Duration:1}
     scoreboard players operation @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80] MobUUID = @s MobUUID
 # 弾召喚
-    execute if predicate api:global_vars/difficulty/min/normal as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80] at @s run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/attack_piece
+    execute if predicate api:global_vars/difficulty/min/2_hard as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80] at @s run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/attack_piece

@@ -30,11 +30,11 @@
         execute if entity @s[scores={2156.AttackTimer=121}] rotated as @e[type=area_effect_cloud,tag=2156.AttackRotation,sort=nearest,limit=1] positioned ~ ~ ~ positioned ^ ^ ^1.5 run function asset:object/2156.haruclaire_icepillar/tick/prediction
         execute if entity @s[scores={2156.AttackTimer=122}] on passengers if entity @s[tag=2156.Prediction] run data modify entity @s start_interpolation set value 0
         execute if entity @s[scores={2156.AttackTimer=122}] on passengers if entity @s[tag=2156.Prediction] run data modify entity @s transformation.scale set value [1f,1f,30f]
-        execute if entity @s[scores={2156.AttackTimer=122..157}] if predicate api:global_vars/difficulty/min/hard run function asset:object/2156.haruclaire_icepillar/tick/turn_prediction
+        execute if entity @s[scores={2156.AttackTimer=122..157}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2156.haruclaire_icepillar/tick/turn_prediction
         execute if entity @s[scores={2156.AttackTimer=152}] on passengers if entity @s[tag=2156.Prediction] run data modify entity @s start_interpolation set value 0
         execute if entity @s[scores={2156.AttackTimer=152}] on passengers if entity @s[tag=2156.Prediction] run data modify entity @s transformation.scale set value [0f,0f,30f]
     execute if entity @s[scores={2156.AttackTimer=170}] run function asset:object/2156.haruclaire_icepillar/tick/attack
-    execute if entity @s[scores={2156.AttackTimer=173..230}] if predicate api:global_vars/difficulty/min/hard run function asset:object/2156.haruclaire_icepillar/tick/turn_laser
+    execute if entity @s[scores={2156.AttackTimer=173..230}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2156.haruclaire_icepillar/tick/turn_laser
 
 # 消去
     execute if entity @s[scores={2156.AttackTimer=170}] on passengers if entity @s[tag=2156.Prediction] run kill @s

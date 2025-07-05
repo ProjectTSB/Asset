@@ -32,5 +32,5 @@
 # クールタイム
     #ノーマルは120Tick
     #ハードは60Tick
-        execute if score @s General.Mob.Tick matches 360 if predicate api:global_vars/difficulty/min/hard run scoreboard players set @s General.Mob.Tick 300
-        execute if score @s General.Mob.Tick matches 420 if predicate api:global_vars/difficulty/max/normal run scoreboard players set @s General.Mob.Tick 300
+        execute if score @s General.Mob.Tick matches 360 if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players set @s General.Mob.Tick 300
+        execute if score @s General.Mob.Tick matches 420 if predicate api:global_vars/difficulty/max/2_hard run scoreboard players set @s General.Mob.Tick 300

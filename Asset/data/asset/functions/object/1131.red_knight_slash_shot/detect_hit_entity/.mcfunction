@@ -5,4 +5,4 @@
 # @within function asset:object/alias/1131/detect_hit_entity
 
 # 判定
-    execute positioned ~-1 ~-1 ~-1 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.75,dy=0.75,dz=0.75] run data modify storage asset:context IsHitEntity set value true
+    execute positioned ~-0.75 ~-0.75 ~-0.75 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run data modify storage asset:context IsHitEntity set value true
