@@ -17,6 +17,4 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.KillTick set value 120
-    data modify storage asset:object Field.Stack set value 1
-    data modify storage asset:object Field.Duration set value 100
     data modify storage asset:object Field.MobUUID set value -1
