@@ -10,7 +10,7 @@
 
 # プレイヤーの方を見る
 # Rotation[1]は45で固定
-    execute facing entity @p eyes run tp @s ~ ~ ~ ~ 45
+    execute facing entity @p[gamemode=!spectator] eyes run tp @s ~ ~ ~ ~ 45
 
 # 難易度値を取得する
     function api:global_vars/get_difficulty
