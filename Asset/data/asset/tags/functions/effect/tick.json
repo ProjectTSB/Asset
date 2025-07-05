@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0025.levitation/_/tick",
         "asset:effect/0244.aurora_armor/_/tick",
         "asset:effect/0243.oblivious_snow/_/tick",
         "asset:effect/0240.bless_of_deep_sea_coral/_/tick",
@@ -23,9 +24,7 @@
         "asset:effect/0275.moon_blessing/_/tick",
         "asset:effect/0322.zenith_slash_emitter/_/tick",
         "asset:effect/0321.craving_recoil/_/tick",
-        "asset:effect/0621.loyalty_shield/_/tick",
         "asset:effect/0192.jump_boost/_/tick",
-        "asset:effect/0653.absolute_drive/_/tick",
         "asset:effect/0316.aurora_slash/_/tick",
         "asset:effect/0301.soul_light/_/tick",
         "asset:effect/0034.regeneration/_/tick",

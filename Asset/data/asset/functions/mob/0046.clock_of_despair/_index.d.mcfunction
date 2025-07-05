@@ -8,12 +8,7 @@
     #declare tag 1A.Clock
     #
     #declare tag 1A.SkillMarker
-    #declare tag 1A.SkillThunderMaker
-    #declare tag 1A.SkillFireMaker
-    #declare tag 1A.SkillBallAEC
     #declare tag 1A.SkillBeam
-    #declare tag 1A.WallLaserClock
-    #declare tag 1A.SkillFallingFire
     #declare tag 1A.SkillFF1
     #declare tag 1A.SkillFF2
     #declare tag 1A.SkillFF3

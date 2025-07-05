@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0025.levitation/_/register",
         "asset:effect/0247.great_demon_armor/_/register",
         "asset:effect/0246.flame_devil_armor/_/register",
         "asset:effect/0245.flame_hunter_attire/_/register",
@@ -77,7 +78,7 @@
         "asset:effect/0309.healer_trance/_/register",
         "asset:effect/0306.reactivearmor_lock/_/register",
         "asset:effect/0303.celestial_target/_/register",
-        "asset:effect/0190.fall_damage_immunity/_/register",
+        "asset:effect/0190.fall_resistance/_/register",
         "asset:effect/0620.ongaeshi/_/register",
         "asset:effect/0296.soul_disconnection/_/register",
         "asset:effect/0081.slow_falling/_/register",
