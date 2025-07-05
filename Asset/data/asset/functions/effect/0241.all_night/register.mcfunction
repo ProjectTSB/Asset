@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"終夜","color":"dark_purple","bold":true,"underlined":true}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"夜の間に全てを装備しているとき、"}','{"text":"近接攻撃に追撃が発生し、わずかに体力が回復する。"}']
+    data modify storage asset:effect Description set value ['{"text":"夜の間に全てを装備しているとき、"}','{"text":"近接攻撃に追撃が発生し、体力を2.0回復する。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
