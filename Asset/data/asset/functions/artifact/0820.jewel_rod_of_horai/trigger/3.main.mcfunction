@@ -20,6 +20,7 @@
 
 # 攻撃発生位置記録用オブジェクト設置
     data modify storage api: Argument.ID set value 1067
+    data modify storage api: Argument.FieldOverride.Damage set value 130f
     execute store result storage api: Argument.FieldOverride.TargetUUID int 1 run scoreboard players get $MS.TargetUUID Temporary
     execute store result storage api: Argument.FieldOverride.AttackLevel int 1 run scoreboard players get $MS.AttackLevel Temporary
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage asset:temp Data.MPHeal
