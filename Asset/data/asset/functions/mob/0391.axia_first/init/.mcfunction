@@ -14,7 +14,7 @@
     scoreboard players set @s AV.FalterCount 0
 
 # animated javaモデル召喚
-    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:axia/summon {args:{}}
+    execute positioned ~ ~99 ~ rotated ~ 0 run function animated_java:axia/summon {args: {animation: '14_0_opening_attack', start_animation: false}}
 
 # 登場演出時は干渉付加
     data modify entity @s Invulnerable set value 1b
