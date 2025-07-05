@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"虚空の魔導書","color":"#370040"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"エクアルが生み出した生きた魔導書。","color":"white"}','{"text":"なんか無茶苦茶、弾を発射してくるけどなんでだろう？","color":"white"}','{"text":"もしかして飛んでるから……？","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"エクアルが生み出した生きた魔導書。","color":"white"}','{"text":"なんか無茶苦茶、弾を発射してくるけどなんでだろう？","color":"white"}','{"text":"もしかして跳んでるから……？","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -39,7 +39,7 @@
 # 防具ドロップ率 ([float, float]) (オプション)
     # data modify storage asset:mob ArmorDropChances set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 1900
+    data modify storage asset:mob Health set value 2500
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
@@ -56,7 +56,7 @@
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.2
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 0.7
+        data modify storage asset:mob Resist.Magic set value 0.85
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1
     # 水倍率 (float) (オプション)
