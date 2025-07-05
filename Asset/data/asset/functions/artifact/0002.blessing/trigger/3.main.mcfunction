@@ -22,5 +22,3 @@
     scoreboard players enable @s 02.Trigger
 # チャット
     function asset:artifact/0002.blessing/trigger/show_trigger_chat
-# リスナー
-    schedule function asset:artifact/0002.blessing/trigger/listener 1t
