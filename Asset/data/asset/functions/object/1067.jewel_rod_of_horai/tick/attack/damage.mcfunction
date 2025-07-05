@@ -25,12 +25,13 @@
     execute if score $MS.AttackLevel Temporary matches 0.. run function api:damage/reset
 
 # これ以降MP回復させないためストレージ除去
-    data remove storage api: Argument.AdditionalMPHeal
+    # data remove storage api: Argument.AdditionalMPHeal
 
 # 2発目ダメージデータ
     execute if score $MS.AttackLevel Temporary matches 1.. run data modify storage api: Argument.Damage set value 130f
     execute if score $MS.AttackLevel Temporary matches 1.. run data modify storage api: Argument.AttackType set value "Magic"
     execute if score $MS.AttackLevel Temporary matches 1.. run data modify storage api: Argument.ElementType set value "Thunder"
+    execute if score $MS.AttackLevel Temporary matches 1.. run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute if score $MS.AttackLevel Temporary matches 1.. as @p[tag=MS.Owner] run function api:damage/modifier
     execute if score $MS.AttackLevel Temporary matches 1.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function api:damage/
     execute if score $MS.AttackLevel Temporary matches 1.. run function api:damage/reset
@@ -39,6 +40,7 @@
     execute if score $MS.AttackLevel Temporary matches 2.. run data modify storage api: Argument.Damage set value 130f
     execute if score $MS.AttackLevel Temporary matches 2.. run data modify storage api: Argument.AttackType set value "Magic"
     execute if score $MS.AttackLevel Temporary matches 2.. run data modify storage api: Argument.ElementType set value "Water"
+    execute if score $MS.AttackLevel Temporary matches 2.. run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute if score $MS.AttackLevel Temporary matches 2.. as @p[tag=MS.Owner] run function api:damage/modifier
     execute if score $MS.AttackLevel Temporary matches 2.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function api:damage/
     execute if score $MS.AttackLevel Temporary matches 2.. run function api:damage/reset
@@ -47,6 +49,7 @@
     execute if score $MS.AttackLevel Temporary matches 3.. run data modify storage api: Argument.Damage set value 130f
     execute if score $MS.AttackLevel Temporary matches 3.. run data modify storage api: Argument.AttackType set value "Magic"
     execute if score $MS.AttackLevel Temporary matches 3.. run data modify storage api: Argument.ElementType set value "None"
+    execute if score $MS.AttackLevel Temporary matches 3.. run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute if score $MS.AttackLevel Temporary matches 3.. as @p[tag=MS.Owner] run function api:damage/modifier
     execute if score $MS.AttackLevel Temporary matches 3.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function api:damage/
     execute if score $MS.AttackLevel Temporary matches 3.. run function api:damage/reset
@@ -55,6 +58,7 @@
     execute if score $MS.AttackLevel Temporary matches 4.. run data modify storage api: Argument.Damage set value 130f
     execute if score $MS.AttackLevel Temporary matches 4.. run data modify storage api: Argument.AttackType set value "Magic"
     execute if score $MS.AttackLevel Temporary matches 4.. run data modify storage api: Argument.ElementType set value "None"
+    execute if score $MS.AttackLevel Temporary matches 4.. run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute if score $MS.AttackLevel Temporary matches 4.. as @p[tag=MS.Owner] run function api:damage/modifier
     execute if score $MS.AttackLevel Temporary matches 4.. as @e[type=#lib:living,tag=MS.AttackTarget,distance=..25] run function api:damage/
     execute if score $MS.AttackLevel Temporary matches 4.. run function api:damage/reset
