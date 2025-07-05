@@ -6,7 +6,7 @@
 
 # 近くのプレイヤーの方を向く
 # 一部の時間のみ向く処理を入れる
-    execute if score @s AV.AnimationTick matches 1..130 if predicate api:global_vars/difficulty/min/hard as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 1..130 if predicate api:global_vars/difficulty/min/3_blessless as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 1..45 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 56..59 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 70..85 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
@@ -69,16 +69,16 @@
 
 
 # ディメンションソード ハード
-    execute if score @s AV.AnimationTick matches 144 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 150 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 156 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 162 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 168 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 144 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 150 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 156 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 162 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
-    execute if score @s AV.AnimationTick matches 168 if predicate api:global_vars/difficulty/min/hard run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 144 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 150 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 156 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 162 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 168 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 144 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 150 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 156 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 162 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
+    execute if score @s AV.AnimationTick matches 168 if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0391.axia_first/ai/animation/10_0_kourai/sword/spread_loop
 
 # 移動
     # TP

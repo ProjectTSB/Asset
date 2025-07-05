@@ -19,8 +19,8 @@
 # 棺召喚
 # 難易度比例で召喚数を変える
     execute if entity @s[scores={General.Mob.Tick=30}] at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
-    execute if entity @s[scores={General.Mob.Tick=38}] if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
-    execute if entity @s[scores={General.Mob.Tick=46}] if predicate api:global_vars/difficulty/min/hard at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
+    execute if entity @s[scores={General.Mob.Tick=38}] if predicate api:global_vars/difficulty/min/2_hard at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
+    execute if entity @s[scores={General.Mob.Tick=46}] if predicate api:global_vars/difficulty/min/3_blessless at @e[type=marker,tag=AC.SpawnMarker,distance=..100] run function asset:mob/0372.tutankhamen/tick/skill/coffin/summon
 
 # アニメ再生
     execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/rod_ground_end/tween {to_frame:0 ,duration:1}

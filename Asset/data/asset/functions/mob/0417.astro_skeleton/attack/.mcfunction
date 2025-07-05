@@ -21,11 +21,11 @@
     function api:damage/reset
 
 # ノーマルならreturn
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
 
-# 耐性低下エフェクトを(難易度値 - 1)*2スタック付与
-    data modify storage api: Argument set value {ID:57,Duration:200}
+# 耐性低下エフェクトを(難易度値 - 1)スタック付与
     function api:global_vars/get_difficulty
-    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty 0.9999999999
+    data modify storage api: Argument set value {ID:7,Duration:200}
+    execute store result storage api: Argument.Stack int 1 run data get storage api: Return.Difficulty 0.9999999999
     execute as @p[tag=Victim] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

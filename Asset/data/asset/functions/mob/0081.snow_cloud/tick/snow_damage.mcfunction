@@ -21,7 +21,7 @@
     function api:damage/reset
 
 # ノーマルならreturn
-    execute if predicate api:global_vars/difficulty/easy run return 0
+    execute if predicate api:global_vars/difficulty/1_normal run return 0
 
 # ハード以上でデバフ
     function api:global_vars/get_difficulty

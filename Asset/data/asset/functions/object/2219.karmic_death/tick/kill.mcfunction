@@ -15,6 +15,7 @@
     data modify storage api: Argument.ID set value 1209
     data modify storage api: Argument.Important set value true
     function api:artifact/spawn/from_id
+    execute as @e[type=item,distance=..1] run data modify entity @s NoGravity set value false
 
 # AJアンロード
     data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_karmic",Active:false}]

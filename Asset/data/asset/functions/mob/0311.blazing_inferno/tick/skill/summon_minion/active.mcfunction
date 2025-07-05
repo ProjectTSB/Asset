@@ -27,4 +27,4 @@
     # 体力低下時
         execute if entity @s[tag=8N.Health.50Per] run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/spread
     # ハードだと常に+1
-        execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/spread
+        execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0311.blazing_inferno/tick/skill/summon_minion/spread

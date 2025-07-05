@@ -20,4 +20,4 @@
     summon area_effect_cloud ~ ~2 ~ {Tags:["AK.Temp.AttackRotation"],Duration:1}
 # 弾召喚
     scoreboard players operation @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80,sort=nearest,limit=1] MobUUID = @s MobUUID
-    execute if predicate api:global_vars/difficulty/min/hard as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80,sort=nearest,limit=1] at @s run function asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece_0
+    execute if predicate api:global_vars/difficulty/min/3_blessless as @e[type=area_effect_cloud,tag=AK.Temp.AttackRotation,distance=..80,sort=nearest,limit=1] at @s run function asset:mob/0380.haruclaire_v3/tick/event/press/attack_piece_0

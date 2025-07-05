@@ -26,6 +26,9 @@
 # 消える前に警告音
     execute if score @s General.Object.Tick matches 44.. run playsound minecraft:block.note_block.harp neutral @a ~ ~ ~ 1 2
 
+# 破壊不可能エリアに入ったなら即刻爆発
+    execute unless predicate api:area/is_breakable run data modify storage asset:context this.RemainingRange set value 1
+
 # super.tick
     execute at @s run function asset:object/super.tick
 

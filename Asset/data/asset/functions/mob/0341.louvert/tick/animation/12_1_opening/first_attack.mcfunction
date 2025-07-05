@@ -11,4 +11,4 @@
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..32,sort=nearest,limit=4] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/general/6.fire_magic
 
 # ハードなら火炎陣が増える
-    execute if predicate api:global_vars/difficulty/min/hard at @a[tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=3] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/12_1_opening/hard_first_attack
+    execute if predicate api:global_vars/difficulty/min/3_blessless at @a[tag=!PlayerShouldInvulnerable,distance=..32,sort=random,limit=3] positioned ~ ~1 ~ run function asset:mob/0341.louvert/tick/animation/12_1_opening/hard_first_attack

@@ -20,9 +20,9 @@
 
 # 本気時は謎キャンセルでダッシュにチェインする
     # ノーマルモード
-        execute unless predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 25 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute unless predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 25 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
     # ハードモード
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 15 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 15 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
 
 # ブレーキかけつつプレイヤーの方を向く
     execute if score @s General.Mob.Tick matches 15..30 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^ ~ ~

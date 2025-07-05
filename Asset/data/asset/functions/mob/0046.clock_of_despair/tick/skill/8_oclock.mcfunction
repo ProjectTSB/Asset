@@ -19,15 +19,15 @@ execute if score @s 1A.LifeTime matches 1660 at @e[type=marker,tag=1A.SkillFF4,d
 execute if score @s 1A.LifeTime matches 1660.. as @e[type=marker,tag=1A.SkillFF4,distance=..6.1] at @s positioned ~ ~2.0 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/falling_fire/show_order_vfx
 execute if score @s 1A.LifeTime matches 1660..1675 at @e[type=marker,tag=1A.SkillFF4,distance=..6.1] positioned ~ ~2.0 ~ run playsound minecraft:block.note_block.bell hostile @a ~ ~ ~ 1 1.8
 
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/normal positioned ~010 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/normal positioned ~016 ~6 ~010 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/normal positioned ~-10 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/normal positioned ~-16 ~6 ~-10 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/2_hard positioned ~010 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/2_hard positioned ~016 ~6 ~010 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/2_hard positioned ~-10 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/2_hard positioned ~-16 ~6 ~-10 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/hard positioned ~08 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/hard positioned ~016 ~6 ~08 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/hard positioned ~-8 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/hard positioned ~-16 ~6 ~-8 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/3_blessless positioned ~08 ~6 ~-16 rotated 000 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/3_blessless positioned ~016 ~6 ~08 rotated 090 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/3_blessless positioned ~-8 ~6 ~016 rotated 180 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/3_blessless positioned ~-16 ~6 ~-8 rotated 270 0 run function asset:mob/0046.clock_of_despair/tick/skill/common/wall_laser_clock/summon
 
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/normal positioned ~ ~0.03 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/fire/summon.m {Delay:85}
-execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/hard positioned ~ ~0.03 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/fire/summon.m {Delay:100}
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/max/2_hard positioned ~ ~0.03 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/fire/summon.m {Delay:85}
+execute if score @s 1A.LifeTime matches 1680 if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~0.03 ~ run function asset:mob/0046.clock_of_despair/tick/skill/common/fire/summon.m {Delay:100}

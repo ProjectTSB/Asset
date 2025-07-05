@@ -11,7 +11,7 @@
     #declare score_holder $Difficulty
 
 # ノーマル以上ならDebuffをtrueに
-    execute if predicate api:global_vars/difficulty/min/normal run data modify storage api: Argument.FieldOverride.Debuff set value true
+    execute if predicate api:global_vars/difficulty/min/2_hard run data modify storage api: Argument.FieldOverride.Debuff set value true
 
 # 難易度値を取得する
     function api:global_vars/get_difficulty

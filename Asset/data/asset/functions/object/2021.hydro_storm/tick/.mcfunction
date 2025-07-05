@@ -46,7 +46,7 @@
 
 # TP
     execute at @s run tp @s ^ ^ ^1
-    execute if predicate api:global_vars/difficulty/min/hard at @s run tp @s ^ ^ ^0.25
+    execute if predicate api:global_vars/difficulty/min/3_blessless at @s run tp @s ^ ^ ^0.25
 
 # キル
     execute if score @s General.Object.Tick matches 111.. run function asset:object/2021.hydro_storm/tick/kill

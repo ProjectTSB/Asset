@@ -14,8 +14,12 @@
 # 状態リセット
     function asset:mob/0340.twins_rubiel/app/general/8.reset_state
 
+# 中心点からあまりにも離れている場合、中心に戻る
+    execute if entity @s[tag=!9G.Temp.Animated] unless entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..30] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/7.return
+    # execute if entity @s[tag=!9G.Temp.Animated] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/7.return
+
 # なにも武器を持っていない場合、装備する
-    execute if entity @s[tag=!9G.State.Weapon.Kt,tag=!9G.State.Weapon.Sc] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/3.equip
+    execute if entity @s[tag=!9G.Temp.Animated,tag=!9G.State.Weapon.Kt,tag=!9G.State.Weapon.Sc] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/3.equip
 
 # ガード回数リセット
     scoreboard players set @s 9G.GuardCount 0
@@ -25,7 +29,7 @@
     execute if entity @s[tag=9G.Skill.Kt.Draw.Jumonji] run tag @s remove 9G.Skill.Kt.Sheathe.Wait.Jumonji
 
 # ランダムで行動させる
-    execute unless entity @s[tag=9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/5.1.interrupt_kt
+    execute if entity @s[tag=!9G.Temp.Animated,tag=!9G.Skill.Kt.Draw.Jumonji] run function asset:mob/0340.twins_rubiel/tick/app/skill/select/5.1.interrupt_kt
 
 # 終了
     tag @s remove 9G.Temp.Animated.Draw

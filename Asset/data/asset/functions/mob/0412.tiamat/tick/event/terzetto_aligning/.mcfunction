@@ -36,15 +36,15 @@
         execute if score @s BG.EventTimer matches 260..288 at @s run particle dragon_breath ~ ~3 ~ 2 2 2 0.1 10
         execute if score @s BG.EventTimer matches 260..288 at @s run particle explosion ~ ~ ~ 2 0 2 0.1 3
     # 攻撃
-        execute if score @s BG.EventTimer matches 152 at @s if predicate api:global_vars/difficulty/max/normal positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/dive_prediction_long
-        execute if score @s BG.EventTimer matches 252 at @s if predicate api:global_vars/difficulty/min/hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/dive_prediction
+        execute if score @s BG.EventTimer matches 152 at @s if predicate api:global_vars/difficulty/max/2_hard positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/dive_prediction_long
+        execute if score @s BG.EventTimer matches 252 at @s if predicate api:global_vars/difficulty/min/3_blessless positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/dive_prediction
         execute if score @s BG.EventTimer matches 267 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/attack_dive
         execute if score @s BG.EventTimer matches 271 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/attack_dive
         execute if score @s BG.EventTimer matches 275 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/attack_dive
         execute if score @s BG.EventTimer matches 279 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^52.5 run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/attack_dive
 # アイシクルダイブ追撃
     # 2箇所に攻撃地点設置
-        execute if score @s BG.EventTimer matches 282 if predicate api:global_vars/difficulty/min/normal at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
+        execute if score @s BG.EventTimer matches 282 if predicate api:global_vars/difficulty/min/2_hard at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/summon_icicle
         execute if score @s BG.EventTimer matches 282 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
         execute if score @s BG.EventTimer matches 287 at @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition,sort=random,limit=1] run function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/attack_icicle
 

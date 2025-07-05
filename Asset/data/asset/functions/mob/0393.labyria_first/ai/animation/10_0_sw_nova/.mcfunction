@@ -21,13 +21,13 @@
     execute if score @s AX.AnimationTick matches 105 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
 
 # ノヴァ配置 ハード
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 40 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 50 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 60 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 70 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 80 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 90 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AX.AnimationTick matches 100 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 40 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 50 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 60 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 70 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 80 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 90 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AX.AnimationTick matches 100 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/nova/
 
 # ワープ
     execute if score @s AX.AnimationTick matches 166 run function asset:mob/0393.labyria_first/ai/animation/10_0_sw_nova/warp/adj

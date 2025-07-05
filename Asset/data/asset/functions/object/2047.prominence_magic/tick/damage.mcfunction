@@ -14,6 +14,9 @@
     particle dust_color_transition 0.922 0.318 0.133 2 0.51 0.067 0.051 ~ ~0.8 ~ 0.7 0.6 0.7 0 35 normal @a
     playsound entity.generic.explode hostile @a ~ ~ ~ 0.2 0.9 0
 
+# MobのAttackトリガー起動用Metadata
+    data modify storage api: Argument.Metadata set value "369.Debuff"
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
@@ -22,6 +25,3 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.6] run function api:damage/
     function api:damage/reset
-
-# Debuff:trueならデバフを付与
-    execute if data storage asset:context this{Debuff:true} run function asset:object/2047.prominence_magic/tick/debuff

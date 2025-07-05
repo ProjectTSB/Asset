@@ -33,7 +33,7 @@
     execute positioned ^ ^1 ^1 run function api:object/summon
 
 # イージーでは3Way
-    execute if predicate api:global_vars/difficulty/easy run return run tp @s ~ ~ ~ ~ ~
+    execute if predicate api:global_vars/difficulty/1_normal run return run tp @s ~ ~ ~ ~ ~
 
     execute at @s run tp @s ~ ~ ~ ~-60 ~
     data modify storage api: Argument.ID set value 2189

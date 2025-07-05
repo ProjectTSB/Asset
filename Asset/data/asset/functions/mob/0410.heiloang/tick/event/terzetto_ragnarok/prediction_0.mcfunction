@@ -15,7 +15,7 @@
     function api:object/summon
 
 # 直線範囲予告
-    execute if predicate api:global_vars/difficulty/max/normal run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/prediction_line
+    execute if predicate api:global_vars/difficulty/max/2_hard run function asset:mob/0410.heiloang/tick/event/terzetto_ragnarok/prediction_line
 
 # 次の攻撃用に回転
     tp @s ~ ~ ~ ~180 ~

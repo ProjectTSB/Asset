@@ -15,4 +15,4 @@
 # 体力半分以下で強化の処理
 # ノーマル以上でのみチェック
 # イージーでは強化状態に移行しないため
-    execute if predicate api:global_vars/difficulty/min/normal if entity @s[tag=!26.HPLess50Per] run function asset:mob/0078.messenger_of_thunder/hurt/check_health
+    execute if predicate api:global_vars/difficulty/min/2_hard if entity @s[tag=!26.HPLess50Per] run function asset:mob/0078.messenger_of_thunder/hurt/check_health

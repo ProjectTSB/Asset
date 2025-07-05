@@ -14,8 +14,8 @@
 # 延焼能力
 # 難易度によって燃やす能力を調整する
 # Normal：なし Hard：1x1x1ブロック Blessless：3x3x3ブロック
-    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/normal at @p[tag=Victim,distance=..6] run fill ~ ~ ~ ~ ~ ~ fire replace #lib:air
-    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/hard at @p[tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/2_hard at @p[tag=Victim,distance=..6] run fill ~ ~ ~ ~ ~ ~ fire replace #lib:air
+    execute if predicate api:area/is_breakable if predicate api:global_vars/difficulty/min/3_blessless at @p[tag=Victim,distance=..6] run fill ~1.5 ~1.5 ~1.5 ~-1.5 ~-1.5 ~-1.5 fire replace #lib:air
 
 # ダメージ
     data modify storage api: Argument.Damage set value 8.0

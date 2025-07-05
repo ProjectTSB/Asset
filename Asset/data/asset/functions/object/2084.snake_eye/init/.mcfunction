@@ -5,8 +5,8 @@
 # @within asset:object/alias/2084/init
 
 # スピード設定
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.Speed set value 2
-    execute unless predicate api:global_vars/difficulty/min/hard run data modify storage asset:context this.Speed set value 1.5
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.Speed set value 2
+    execute unless predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.Speed set value 1.5
     data modify storage asset:context this.Range set value 256
     data modify storage asset:context this.MovePerStep set value 0.5
 

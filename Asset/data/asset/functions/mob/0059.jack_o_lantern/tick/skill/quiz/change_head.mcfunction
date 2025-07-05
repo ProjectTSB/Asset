@@ -16,7 +16,7 @@
     data modify storage asset:context this.HeadCMD set value 20016
 
 # ハード以下ならreturn
-    execute if predicate api:global_vars/difficulty/max/normal run return 0
+    execute if predicate api:global_vars/difficulty/max/2_hard run return 0
 
 # ランダムな顔にする のっぺらぼう(ID:20283)だけは除外する
 # lib:array/picksを用いて、ランダムなIDを取得する

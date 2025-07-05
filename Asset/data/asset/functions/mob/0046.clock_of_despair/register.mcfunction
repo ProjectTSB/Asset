@@ -75,3 +75,5 @@
 
 # 魔炎
     data modify storage asset:mob Field.Damage.FallingFire set value 21f
+# フィールド
+    data modify storage asset:mob Field.InflictDebuffCooldown set value 5
