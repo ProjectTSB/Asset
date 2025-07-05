@@ -1,8 +1,8 @@
-#> asset:object/2255.now_loading/tick/
+#> asset:object/3001.now_loading/tick/
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2255/tick
+# @within asset:object/alias/3001/tick
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
