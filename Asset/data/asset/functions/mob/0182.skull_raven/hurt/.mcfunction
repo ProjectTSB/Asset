@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/alias/182/hurt
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 #> Private
 # @private
     #declare score_holder $Cooldown
