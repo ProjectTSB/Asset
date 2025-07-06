@@ -6,7 +6,7 @@
 
 # エラー値
     execute unless score @s 02.Trigger matches 1..4 run function lib:message/invalid_operation
-    execute unless score @s 02.Trigger matches 1..4 run function asset:artifact/0002.blessing/trigger/show_trigger_chat
+    execute unless score @s 02.Trigger matches 1..4 run return run function asset:artifact/0002.blessing/trigger/show_trigger_chat
 # 体力
     execute if score @s 02.Trigger matches 1 run scoreboard players add $BonusHealth Global 2
     execute if score @s 02.Trigger matches 1 run scoreboard players add $02.MaxHealth 02.SelectBonusSum 2
