@@ -18,7 +18,5 @@
     execute as @a run function api:modifier/max_health/update_bonus
     scoreboard players add $BonusMP Global 5
     execute as @a run function api:modifier/max_mp/update_bonus
-# 選択トリガー
-    scoreboard players enable @s 02.Trigger
 # チャット
     function asset:artifact/0002.blessing/trigger/show_trigger_chat

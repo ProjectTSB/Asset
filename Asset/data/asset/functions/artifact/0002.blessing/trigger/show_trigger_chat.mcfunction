@@ -7,6 +7,9 @@
 # 出力
     tellraw @s {"text":"能力ボーナスを一つ選んでください"}
 
+# 選択トリガー
+    scoreboard players reset @s 02.Trigger
+    scoreboard players enable @s 02.Trigger
 # 出力
 # 選択回数が30以上なら選択不能になる
     execute if score $02.MaxHealth 02.SelectCount matches 30.. run tellraw @s [{"text":"[選ぶ]","color":"gray"},{"text":" 体力","color":"white"},{"text":"\u0002","font":"space"},{"text":"+","color":"white"},{"text":"0","color":"yellow"},{"text":" (合計","color":"white"},{"text":"\u0002","font":"space"},{"text":"+","color":"white"},{"score":{"name": "$02.MaxHealth","objective":"02.SelectBonusSum"},"color":"yellow"},{"text":"\u0002","font":"space"},{"text":"/","color":"white"},{"text":"\u0002","font":"space"},{"text":"60)","color":"white"}]
