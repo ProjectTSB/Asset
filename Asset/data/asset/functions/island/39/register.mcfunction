@@ -12,8 +12,8 @@ execute unless loaded -141 78 144 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:island Pos set value [-141, 78, 144]
 # Rotation (string)
-    data modify storage asset:island Rotation set value -90f
+    data modify storage asset:island Rotation set value 0f
 # BossID (string)
-    # data modify storage asset:island BossID set value 
+    # data modify storage asset:island BossID set value
 # BossDatapack (string)
     # data modify storage asset:island BossDatapack set value ""
