@@ -22,5 +22,11 @@
         tag @p[tag=!PlayerShouldInvulnerable,distance=..80] add BF.MainTarget
         execute unless entity @p[tag=BF.MainTarget,distance=..80] run tag @p[distance=..80] add BF.MainTarget
 
+# 終盤まで耐性付与
+    # data modify storage api: Argument set value {ID:150,Duration:2147483647,Stack:2}
+    # function api:entity/mob/effect/give
+    # function api:entity/mob/effect/reset
+    # effect give @s resistance infinite 2 true
+
 # デバッグ用
     # tag @s add BF.State.Wait
