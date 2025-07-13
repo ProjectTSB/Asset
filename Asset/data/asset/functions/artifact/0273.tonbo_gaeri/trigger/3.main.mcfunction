@@ -23,7 +23,7 @@
     function api:damage/reset
 
 # 落下ダメージ無効化
-    data modify storage api: Argument set value {ID:190,Duration:60}
+    data modify storage api: Argument set value {ID:190,Duration:60,Stack:10}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
