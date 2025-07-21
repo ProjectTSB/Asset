@@ -14,3 +14,4 @@
 
 # リセット
     scoreboard players set @s General.Object.Tick 0
+    scoreboard players reset $Phase Temporary
