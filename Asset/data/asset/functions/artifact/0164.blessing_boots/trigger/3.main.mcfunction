@@ -9,8 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 落下速度低下付与
-    effect give @s minecraft:slow_falling 1 1
+# 落下ダメージ無効化
+    data modify storage api: Argument set value {ID:190,Duration:60,Stack:10}
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # テレポート
     execute in minecraft:overworld run tp @s 23 3 24

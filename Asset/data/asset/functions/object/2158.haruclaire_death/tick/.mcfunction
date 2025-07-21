@@ -18,4 +18,9 @@
 
 # 消滅処理
     execute if score @s General.Object.Tick matches 100 run data modify entity @s transformation.scale set value [0f, 0f, 0f]
+
+# AJアンロード
+    execute if score @s General.Object.Tick matches 100 run data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:false}]
+    execute if score @s General.Object.Tick matches 100 run function asset:datapack/set_activation_state
+
     kill @s[scores={General.Object.Tick=121..}]

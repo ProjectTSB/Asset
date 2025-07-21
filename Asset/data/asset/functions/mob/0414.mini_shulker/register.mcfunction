@@ -13,3 +13,4 @@
     data modify storage asset:mob Health set value 1950
 # フィールド
     data modify storage asset:mob Field.Damage set value 40
+    data modify storage asset:mob Field.UnlockTurnLimit set value true

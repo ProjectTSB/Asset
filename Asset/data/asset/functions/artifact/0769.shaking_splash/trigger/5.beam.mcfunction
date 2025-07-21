@@ -19,7 +19,7 @@
     data modify storage api: Argument.Damage set value 220.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
-    data modify storage api: Argument.AdditionalMPHeal set value 6.5f
+    data modify storage api: Argument.AdditionalMPHeal set value 11.5f
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
     function api:damage/reset

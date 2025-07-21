@@ -9,6 +9,9 @@
     playsound minecraft:entity.guardian.hurt hostile @a ~ ~ ~ 0.6 1 0
     playsound minecraft:entity.generic.swim hostile @a ~ ~ ~ 0.5 0.7 0
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 # バフ
     effect give @s speed 2 1 true
     effect give @s jump_boost 2 1 true

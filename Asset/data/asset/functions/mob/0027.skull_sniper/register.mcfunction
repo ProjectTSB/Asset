@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルスナイパー","color":"white"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"元々スケルトンは狙いを付けることを得意とする魔物だが、","color":"white"}','{"text":"この魔物はその中でも卓越した技術を持ち、弓矢ではなく狙撃銃を使う。","color":"white"}','{"text":"狙われてしまったら、壁に隠れて弾丸を防ごう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:212}}

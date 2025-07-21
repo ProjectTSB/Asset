@@ -15,46 +15,86 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ルビエル","color":"#ffbfd4"}'
-# 武器
-    # メインハンド (Compound(Item)) (オプション)
-        # data modify storage asset:mob Weapon.Mainhand set value
-    # オフハンド (Compound(Item)) (オプション)
-        # data modify storage asset:mob Weapon.Offhand set value
-# 武器ドロップ率 ([float, float]) (オプション)
-    # data modify storage asset:mob WeaponDropChances set value
-# 防具
-    # 頭 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Head set value
-    # 胴 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Chest set value
-    # 脚 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Legs set value
-    # 足 (Compound(Item)) (オプション)
-        # data modify storage asset:mob Armor.Feet set value
-# 防具ドロップ率 ([float, float]) (オプション)
-    # data modify storage asset:mob ArmorDropChances set value
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"感情豊かな双子の片割れ。","color":"white"}','{"text":"刀剣により、華麗に勢い任せに戦う。","color":"white"}','{"text":"服やアクセサリーを作るのが大好き。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 100000
-# 攻撃力 (double) (オプション)
-    # data modify storage asset:mob AttackDamage set value
-# 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
-    # data modify storage asset:mob Defense set value
-# 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
-    # data modify storage asset:mob SpecialDefense set value
-# 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
-# 索敵範囲 (double) (オプション)
-    # data modify storage asset:mob FollowRange set value
-# ノックバック耐性 (double) (オプション)
-    # data modify storage asset:mob KnockBackResist set value
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Physical set value 1.0f
+        data modify storage asset:mob Resist.Physical set value 1.2f
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 0.5f
+        data modify storage asset:mob Resist.Magic set value 0.7f
     # 火倍率 (float) (オプション)
         data modify storage asset:mob Resist.Fire set value 1.0f
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 1.0f
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
+
+# ダメージ
+# 移動斬り
+    # 移動斬り
+        data modify storage asset:mob Field.Damage.MoveSlash set value 50f
+    # 突き
+        data modify storage asset:mob Field.Damage.MoveSpear set value 60f
+    # 真空斬り
+        data modify storage asset:mob Field.Damage.VacuSlash set value 65f
+    # 真空斬り追撃
+        data modify storage asset:mob Field.Damage.VacuSlashImpact set value 72f
+# 斬り下がり
+    # 斬り下がり・最大2ヒット
+        data modify storage asset:mob Field.Damage.DoubleSlash set value 42f
+# ワープ
+    # 攻撃・最大2ヒット
+        data modify storage asset:mob Field.Damage.WarpSlash set value 46f
+    # 投げナイフ
+        data modify storage asset:mob Field.Damage.WarpKnife set value 50f
+    # 突き
+        data modify storage asset:mob Field.Damage.WarpSpear set value 56f
+# 納刀
+    # カウンター
+        data modify storage asset:mob Field.Damage.IaiCounter set value 55f
+    # 十文字・最大2ヒット
+        data modify storage asset:mob Field.Damage.Iai set value 53f
+# 飛び込み
+    # 飛び込み斬り
+        data modify storage asset:mob Field.Damage.JumpSlash set value 62f
+    # 水平斬り
+        data modify storage asset:mob Field.Damage.Horizon set value 55f
+    # 二刀流水平斬り・最大2ヒット
+        data modify storage asset:mob Field.Damage.DualHorison set value 47f
+    # 二刀流回転斬り・ヒット数不安定
+        data modify storage asset:mob Field.Damage.DualSpin set value 53f
+    # 二刀流交差斬り
+        data modify storage asset:mob Field.Damage.DualCross set value 65f
+    # キャンセル投げナイフ
+        data modify storage asset:mob Field.Damage.CancelKnife set value 50f
+# 大外刈り
+    # 掴み・ダメージはほぼ演出用
+        data modify storage asset:mob Field.Damage.Catch set value 5f
+    # 投げ・ダメージはほぼ演出用
+        data modify storage asset:mob Field.Damage.Throw set value 10f
+    # 追撃
+        data modify storage asset:mob Field.Damage.ThrowSlash set value 60f
+# シンクロ・交差攻撃
+    # 斬り上げ
+        data modify storage asset:mob Field.Damage.SyncUpper set value 35f
+# シンクロ・ルビィぶん投げ
+    # 直撃
+        data modify storage asset:mob Field.Damage.SyncThrowNear set value 70f
+    # 外側
+        data modify storage asset:mob Field.Damage.SyncThrowFar set value 65.0f
+    # 追撃
+        data modify storage asset:mob Field.Damage.SyncThrowImpact set value 47f
+# シンクロ・鎌
+    # 斬撃
+        data modify storage asset:mob Field.Damage.SyncScSlash set value 70f
+    # 鎌投げ
+        data modify storage asset:mob Field.Damage.SyncScThrow set value 55f
+# 怯み庇い
+    # 飛び込み斬り
+        data modify storage asset:mob Field.Damage.CoverJump set value 50f
+    # 二刀流水平斬り・最大2ヒット
+        data modify storage asset:mob Field.Damage.CoverHorizon set value 42f
+    # 二刀流交差斬り
+        data modify storage asset:mob Field.Damage.CoverDual set value 58f

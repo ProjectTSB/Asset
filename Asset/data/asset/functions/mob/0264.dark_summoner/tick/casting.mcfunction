@@ -10,8 +10,8 @@
 
 # ノーマルで確率テレポート
 # ハード以上なら確定でテレポート
-    execute if entity @s[scores={7C.Attack=35}] if predicate api:global_vars/difficulty/normal if predicate lib:random_pass_per/50 run function asset:mob/0264.dark_summoner/tick/teleport
-    execute if entity @s[scores={7C.Attack=35}] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0264.dark_summoner/tick/teleport
+    execute if entity @s[scores={7C.Attack=35}] if predicate api:global_vars/difficulty/2_hard if predicate lib:random_pass_per/50 run function asset:mob/0264.dark_summoner/tick/teleport
+    execute if entity @s[scores={7C.Attack=35}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0264.dark_summoner/tick/teleport
 
 # テレポートの透明化を解除
     execute if entity @s[tag=7C.Teleported,scores={7C.Attack=40}] run item replace entity @s armor.head with stick{CustomModelData:20215}

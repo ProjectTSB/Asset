@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/0986.order_of_healing/trigger/**
-    #declare tag RE.Modifier
+    #declare tag RE.Equipped

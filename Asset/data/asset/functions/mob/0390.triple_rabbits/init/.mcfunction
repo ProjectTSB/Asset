@@ -8,6 +8,10 @@
 # @private
     #declare function asset_manager:mob/bossbar/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_triple_rabbits",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 位置を調整
     tp @s ~ ~0.1 ~ ~ ~
 

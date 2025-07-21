@@ -9,9 +9,6 @@
     #declare score_holder $UserID
     #declare tag 1131.Player
 
-# 多重ヒット防止判定
-    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function asset:object/1131.red_knight_slash_shot/hit_entity/check_target/
-
 # ダメージ値設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
 
@@ -31,9 +28,9 @@
     execute as @p[tag=1131.Player,distance=..64] run function api:damage/modifier
 
 # 多重ヒット防止判定部分でタグを付与した対象にダメージを与える
-    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=1131.TargetEntity,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function api:damage/
+    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function asset:object/1131.red_knight_slash_shot/hit_entity/damage
 
 # リセット
     function api:damage/reset
     tag @p[tag=1131.Player,distance=..64] remove 1131.Player
-    tag @e[type=#lib:living,tag=Enemy,tag=1131.TargetEntity,distance=..16] remove 1131.TargetEntity
+    #tag @e[type=#lib:living,tag=Enemy,tag=1131.TargetEntity,distance=..16] remove 1131.TargetEntity

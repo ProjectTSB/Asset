@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00e7e7"},{"text":"ロ","color":"#00D0ED"},{"text":"ラ","color":"#00B9F3"},{"text":"ア","color":"#00a2f9"},{"text":"イ","color":"#008bff"}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"不気味な目玉と美しい彩色。","color":"white"}','{"text":"飛び回りながら魔法弾で攻撃してくる厄介な魔物。","color":"white"}','{"text":"意外と生息域が広いという特徴も持っている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

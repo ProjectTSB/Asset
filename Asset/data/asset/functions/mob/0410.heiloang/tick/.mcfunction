@@ -4,7 +4,9 @@
 #
 # @within asset:mob/alias/410/tick
 
-# TODO:メイン処理
+# 演出
+    execute if entity @s[tag=BE.State.Raging] run particle crimson_spore ~ ~3 ~ 3 3 3 1 3
+    execute if entity @s[tag=BE.State.Raging] run function asset:mob/0410.heiloang/tick/util/give_nightvision
 
 # スキル用イベントハンドラ
     function asset:mob/0410.heiloang/tick/event/

@@ -4,6 +4,11 @@
 #
 # @within asset:mob/alias/213/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_terrible_sonic_bomber",Active:true}]
+    function asset:datapack/set_activation_state
+
+
 #> prv
 # @private
     #declare score_holder $initial_motion_end_time

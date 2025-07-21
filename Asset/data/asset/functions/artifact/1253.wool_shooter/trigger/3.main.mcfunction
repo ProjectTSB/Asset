@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 羊毛消費
-    clear @s white_wool 8
+    clear @s #wool 8
 
 # プレイヤーが上を向いている場合、45度上向きに発射
     execute if entity @s[x_rotation=-90..-20] rotated ~ -45 positioned ~ ~-0.5 ~ run function asset:artifact/1253.wool_shooter/trigger/shoot_45

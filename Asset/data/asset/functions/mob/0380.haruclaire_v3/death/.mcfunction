@@ -8,7 +8,7 @@
     function asset:mob/super.death
 
 # 中心点消去
-    kill @e[type=marker,tag=AK.CenterPosition]
+    kill @e[type=marker,tag=AK.CenterPosition,distance=..120]
 
 # その他消去処理
     function asset:mob/0380.haruclaire_v3/tick/util/remove_all_tag
@@ -22,6 +22,11 @@
     data modify storage api: Argument.ID set value 2158
     function api:object/summon
 
+# オブジェクト用AJモデル消去
+    function animated_java:ic_capri_aj/remove/all
+    function animated_java:ic_tau_aj/remove/all
+    function animated_java:ic_pisce_aj/remove/all
+
 # オブジェクト消去
-    execute as @e[tag=AK.Object] on passengers run kill @s
-    kill @e[tag=AK.Object]
+    execute as @e[tag=AK.Object,distance=..120] on passengers run kill @s
+    kill @e[tag=AK.Object,distance=..120]

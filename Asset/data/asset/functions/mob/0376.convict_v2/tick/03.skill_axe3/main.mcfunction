@@ -17,16 +17,16 @@
     execute if score @s General.Mob.Tick matches 42 rotated ~ 0 positioned ^ ^ ^11.5 run function asset:mob/0376.convict_v2/tick/common/explode
 
 # ハード行動、3way
-    execute if score @s General.Mob.Tick matches 38 if predicate api:global_vars/difficulty/min/hard rotated ~25 0 positioned ^ ^ ^2.3 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 39 if predicate api:global_vars/difficulty/min/hard rotated ~25 0 positioned ^ ^ ^4.6 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 40 if predicate api:global_vars/difficulty/min/hard rotated ~25 0 positioned ^ ^ ^6.9 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 41 if predicate api:global_vars/difficulty/min/hard rotated ~25 0 positioned ^ ^ ^9.2 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 42 if predicate api:global_vars/difficulty/min/hard rotated ~25 0 positioned ^ ^ ^11.5 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 38 if predicate api:global_vars/difficulty/min/hard rotated ~-25 0 positioned ^ ^ ^2.3 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 39 if predicate api:global_vars/difficulty/min/hard rotated ~-25 0 positioned ^ ^ ^4.6 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 40 if predicate api:global_vars/difficulty/min/hard rotated ~-25 0 positioned ^ ^ ^6.9 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 41 if predicate api:global_vars/difficulty/min/hard rotated ~-25 0 positioned ^ ^ ^9.2 run function asset:mob/0376.convict_v2/tick/common/explode
-    execute if score @s General.Mob.Tick matches 42 if predicate api:global_vars/difficulty/min/hard rotated ~-25 0 positioned ^ ^ ^11.5 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 38 if predicate api:global_vars/difficulty/min/3_blessless rotated ~25 0 positioned ^ ^ ^2.3 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 39 if predicate api:global_vars/difficulty/min/3_blessless rotated ~25 0 positioned ^ ^ ^4.6 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 40 if predicate api:global_vars/difficulty/min/3_blessless rotated ~25 0 positioned ^ ^ ^6.9 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 41 if predicate api:global_vars/difficulty/min/3_blessless rotated ~25 0 positioned ^ ^ ^9.2 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 42 if predicate api:global_vars/difficulty/min/3_blessless rotated ~25 0 positioned ^ ^ ^11.5 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 38 if predicate api:global_vars/difficulty/min/3_blessless rotated ~-25 0 positioned ^ ^ ^2.3 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 39 if predicate api:global_vars/difficulty/min/3_blessless rotated ~-25 0 positioned ^ ^ ^4.6 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 40 if predicate api:global_vars/difficulty/min/3_blessless rotated ~-25 0 positioned ^ ^ ^6.9 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 41 if predicate api:global_vars/difficulty/min/3_blessless rotated ~-25 0 positioned ^ ^ ^9.2 run function asset:mob/0376.convict_v2/tick/common/explode
+    execute if score @s General.Mob.Tick matches 42 if predicate api:global_vars/difficulty/min/3_blessless rotated ~-25 0 positioned ^ ^ ^11.5 run function asset:mob/0376.convict_v2/tick/common/explode
 
 
     execute if score @s General.Mob.Tick matches 58 run function asset:mob/0376.convict_v2/tick/skill_reset

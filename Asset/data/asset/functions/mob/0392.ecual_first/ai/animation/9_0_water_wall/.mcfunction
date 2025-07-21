@@ -5,8 +5,8 @@
 # @within function asset:mob/0392.ecual_first/ai/animation/
 
 # 近くのプレイヤーの方を向く
-    execute if predicate api:global_vars/difficulty/max/normal if score @s AW.AnimationTick matches 1..36 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/general/2.rotate
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 1..36 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/predict/
+    execute if predicate api:global_vars/difficulty/max/2_hard if score @s AW.AnimationTick matches 1..36 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/general/2.rotate
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 1..36 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/9_0_water_wall/predict/
     execute if score @s AW.AnimationTick matches 71..96 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0392.ecual_first/ai/general/2.rotate
 
 # アニメーション再生

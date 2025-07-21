@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:artifact/0002.blessing/trigger/3.main
+#   asset:artifact/0002.blessing/trigger/show_trigger_chat
 #   asset:artifact/0002.blessing/trigger/listener
 
 # チェック

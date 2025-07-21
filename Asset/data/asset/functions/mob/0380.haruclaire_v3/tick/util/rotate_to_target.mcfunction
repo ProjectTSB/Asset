@@ -5,4 +5,4 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/**
 
 # 対象の方を向く
-    execute rotated ~ 0 positioned ^ ^ ^-1 facing entity @p[tag=AK.MainTarget] feet rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s positioned ^ ^ ^-1 rotated as @s rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ 0
+    execute rotated ~ 0 positioned ^ ^ ^-1 facing entity @p[tag=AK.MainTarget,distance=..80] feet rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s positioned ^ ^ ^-1 rotated as @s rotated ~ 0 positioned ^ ^ ^-1 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ 0

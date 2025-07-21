@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ミニシュルカー","color":"#916591"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"ちっちゃいシュルカー。","color":"white"}','{"text":"しかし威力も能力も劣っていない。","color":"white"}','{"text":"むしろ小さくなった分より凶悪になっている。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -64,3 +64,4 @@
 # フィールド
     data modify storage asset:mob Field.Damage set value 5
     data modify storage asset:mob Field.Model set value {Close:20456,Half:20457,Open:20458}
+    # data modify storage asset:mob Field.UnlockTurnLimit set value false

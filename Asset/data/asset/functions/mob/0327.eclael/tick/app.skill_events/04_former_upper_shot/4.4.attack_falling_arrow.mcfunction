@@ -85,10 +85,9 @@
     particle dust 100000000 1 100000000 2 ~-1.17557 ~ ~-1.61803 0 0 0 0 1
     particle dust 100000000 1 100000000 2 ~-0.61803 ~ ~-1.90211 0 0 0 0 1
 
-# TODO：与えるダメージの調整
 # ダメージ
     # ダメージ量
-        data modify storage api: Argument.Damage set value 30f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage.UpperShot
     # 第一属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 第二属性
@@ -101,7 +100,7 @@
     function api:damage/reset
 
 # エクレールに当たった場合
-    execute if entity @e[type=wither_skeleton,tag=93.Temp.Me,distance=..2] as @e[type=wither_skeleton,tag=93.Temp.Me,distance=..2] run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/6.start_damage_animation
+    execute if entity @s[distance=..2] run function asset:mob/0327.eclael/tick/app.skill_events/04_former_upper_shot/6.start_damage_animation
 
-# 自身をkill
-    kill @s
+# kill
+    kill @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..5,sort=nearest,limit=1]

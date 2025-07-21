@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f2e5"},{"text":"ロ","color":"#00e5e8"},{"text":"ラ","color":"#00d8eb"},{"text":"ソ","color":"#00cbee"},{"text":"ー","color":"#00bef2"},{"text":"サ","color":"#00b1f5"},{"text":"ラ","color":"#00a4f8"},{"text":"ー","color":"#00a2f9"}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"オーロラの魔法使い。","color":"white"}','{"text":"バックステップをしながらオーロラの魔法を放つ。","color":"white"}','{"text":"落ちそうになっても足場を作り出して空中に陣取ってくる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stick",Count:1b,tag:{CustomModelData:20159}}
@@ -61,3 +63,4 @@
         data modify storage asset:mob Resist.Thunder set value 0.6
 # フィールド
     data modify storage asset:mob Field.Damage set value 36f
+    data modify storage asset:mob Field.CannotMakeScaffoldTick set value 6

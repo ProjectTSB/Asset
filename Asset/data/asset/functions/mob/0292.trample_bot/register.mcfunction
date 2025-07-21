@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value True
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"トランプルボット","color":"yellow"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"研究所を守るガードボット。電撃を放つ踏みつけで攻撃する。","color":"white"}','{"text":"歩行システムが省略されており、ジャンプで移動する。","color":"white"}','{"text":"冷静に考えると、研究所に配備するには少々危険すぎるかもしれない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

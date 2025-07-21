@@ -24,9 +24,9 @@
 
 # 攻撃の演出
 # 攻撃は1tickだが演出は数tick持続させる
-    execute if entity @s[scores={General.Object.Tick=40..}] run particle end_rod ~ ~1.5 ~ 0 0 0 0.25 10 normal @a
-    execute if entity @s[scores={General.Object.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.18 1.65
-    execute if entity @s[scores={General.Object.Tick=40..}] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 0.18 1.5
+    execute if entity @s[scores={General.Object.Tick=40..}] run particle end_rod ~ ~1.5 ~ 0 0 0 0.3 10 normal @a
+    execute if entity @s[scores={General.Object.Tick=40..}] run playsound minecraft:block.beacon.power_select hostile @a ~ ~ ~ 0.18 1.65
+    execute if entity @s[scores={General.Object.Tick=40..}] run playsound minecraft:block.beacon.power_select hostile @a ~ ~ ~ 0.18 1.5
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=45..}]

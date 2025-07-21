@@ -6,7 +6,9 @@
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
 # 無敵
-    execute if score @s 93.AnimationTimer matches 1 run effect give @s resistance infinite 10 true
+    execute if score @s 93.AnimationTimer matches 1 run data modify entity @s Invulnerable set value true
+    execute if score @s 93.AnimationTimer matches 1 run tag @s add Uninterferable
+    # execute if score @s 93.AnimationTimer matches 1 run effect give @s resistance infinite 10 true
 
 # animated javaアニメーション再生 (長さ：75tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/26_latter_start/3.play_animation
@@ -16,11 +18,13 @@
     execute if score @s 93.AnimationTimer matches 43 run particle firework ~ ~1 ~ 0.5 0.5 0.5 0.3 20
 
 # 無敵解除
-    execute if score @s 93.AnimationTimer matches 75 run effect clear @s resistance
+    execute if score @s 93.AnimationTimer matches 75 run data modify entity @s Invulnerable set value false
+    execute if score @s 93.AnimationTimer matches 75 run tag @s remove Uninterferable
+    # execute if score @s 93.AnimationTimer matches 75 run effect clear @s resistance
 
 # 表情
-    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
-    execute if score @s 93.AnimationTimer matches 43 as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
+    execute if score @s 93.AnimationTimer matches 1 as @e[type=item_display,tag=93.ModelRoot.Target,distance=..80,sort=nearest,limit=1] run function animated_java:eclael/variants/blink/apply
+    execute if score @s 93.AnimationTimer matches 43 as @e[type=item_display,tag=93.ModelRoot.Target,distance=..80,sort=nearest,limit=1] run function animated_java:eclael/variants/default/apply
 
 # 終了
     execute if score @s 93.AnimationTimer matches 76.. run function asset:mob/0327.eclael/tick/app.skill_events/26_latter_start/2.end

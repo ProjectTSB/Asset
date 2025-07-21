@@ -92,10 +92,10 @@
 # 難易度値を取得
     function api:global_vars/get_difficulty
 
-# ダメージ式：8N + 24
+# ダメージ式：難易度数値 × 補正値 + 基礎
 # Nは難易度値を示します
-    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 8
-    scoreboard players add $DamageTemp Temporary 24
+    execute store result score $DamageTemp Temporary run data get storage api: Return.Difficulty 7
+    scoreboard players add $DamageTemp Temporary 35
 
 # ダメージ
     # 引数の設定
@@ -105,6 +105,8 @@
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sが召喚した剣に身体を貫かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行

@@ -8,6 +8,9 @@
 # @private
     #declare score_holder $Difficulty
 
+# まだ持ってるか確認する
+    execute if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:991}}}] run return fail
+
 # 演出
     playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.8
     execute anchored eyes positioned ^ ^ ^ run particle soul ~ ~0.5 ~ 0 0 0 0.01 5
@@ -15,10 +18,6 @@
 # メッセージ
     tellraw @a[tag=RJ.SoulMate] [{"selector":"@s","color":"dark_red"},{"text":"がソウルメイトを脱退しました。","color":"dark_red"}]
 
-# 効果
-    data modify storage api: Argument.ID set value 264
-    function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset
 # タグ付与
     tag @s remove RJ.SoulMate
 

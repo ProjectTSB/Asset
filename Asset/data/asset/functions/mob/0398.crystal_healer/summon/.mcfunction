@@ -5,4 +5,4 @@
 # @within asset:mob/alias/398/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible"],NoAI:1b,Silent:1b,DeathTime:19s,DeathLootTable:"empty"}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","Immovable"],NoAI:1b,Silent:1b,DeathTime:19s,DeathLootTable:"empty"}

@@ -1,6 +1,6 @@
 #> asset:mob/0410.heiloang/tick/event/flare/attack_hard
 #
-# フレア
+# フレアレイ
 #
 # @within asset:mob/0410.heiloang/tick/event/flare/
 
@@ -14,7 +14,9 @@
     data modify storage api: Argument.ID set value 2123
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    data modify storage api: Argument.FieldOverride.Damage set value 60.0f
+    execute if score @s BE.Charge.Count matches ..0 run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.FlareRay0
+    execute if score @s BE.Charge.Count matches 1 run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.FlareRay1
+    execute if score @s BE.Charge.Count matches 2.. run data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.FlareRay2
     function api:object/summon
 
 # 終了

@@ -4,6 +4,11 @@
 #
 # @within asset:mob/alias/1004/init
 
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_tultaria",Active:true}]
+    function asset:datapack/set_activation_state
+
 #> ボスキャラのモデル
 # @private
 #declare tag aj.tultaria.bone

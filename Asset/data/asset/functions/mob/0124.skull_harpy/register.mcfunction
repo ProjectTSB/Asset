@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルハーピィ","color":"gray"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"翼を身に着けたスケルトン。","color":"white"}','{"text":"独特な動きでこちらの攻撃を避け、","color":"white"}','{"text":"空中から弓を放ってくる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b}
@@ -52,3 +54,6 @@
         data modify storage asset:mob Resist.Water set value 1.2
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.9
+
+# ダメージ
+    data modify storage asset:mob Field.Damage set value 9.5

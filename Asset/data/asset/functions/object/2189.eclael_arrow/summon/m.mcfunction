@@ -5,4 +5,4 @@
 # @within asset:object/2189.eclael_arrow/summon/
 
 # 元となるEntityを召喚する
-    $summon marker ~ ~ ~ {Tags:["ObjectInit"],Rotation:$(Rotation)}
+    $summon marker ~ ~ ~ {Tags:["93.Object","ObjectInit"],Rotation:$(Rotation)}

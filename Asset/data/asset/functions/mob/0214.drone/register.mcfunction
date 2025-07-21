@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"自爆ドローン"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"TBD"}']
+    data modify storage asset:mob Lore set value ['{"text":"レーダー攻撃用の徘徊型兵器。","color":"white"}','{"text":"レーダー波を探知しそこに向かって突撃していく。","color":"white"}','{"text":"弾頭は25kgの高性能火薬。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

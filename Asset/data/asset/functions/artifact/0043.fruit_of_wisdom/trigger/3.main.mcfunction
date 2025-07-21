@@ -16,8 +16,9 @@
         function api:data_get/health
 
     # 体力減
-        data modify storage lib: Argument set value {AttackType:Physical,FixedDamage:1b}
         execute store result storage api: Argument.Damage float 0.01 run data get storage api: Health 75
+        data modify storage api: Argument.AttackType set value "Physical"
+        data modify storage api: Argument.FixedDamage set value true
         function api:damage/
         function api:damage/reset
         playsound entity.player.hurt player @a ~ ~ ~ 1 1

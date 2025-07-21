@@ -19,7 +19,7 @@
     execute if entity @s[tag=CanUsed] run scoreboard players operation @s U8.HealSum += $U8.HealVal Temporary
 
 # 累計回復量が20以下ならCanUsedを削除
-    execute unless score @s U8.HealSum matches 200.. run tag @s remove CanUsed
+    execute unless score @s U8.HealSum matches 500.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1088.purifying_hydrangea/trigger/3.main

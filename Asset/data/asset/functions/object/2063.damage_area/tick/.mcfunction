@@ -24,6 +24,7 @@
 
 # 拡大し終わった後、2Tick後に消滅
     scoreboard players add $2063.Temp General.Object.Tick 2
+    execute if score $2063.Temp General.Object.Tick <= @s General.Object.Tick on passengers run kill @s
     execute if score $2063.Temp General.Object.Tick <= @s General.Object.Tick run kill @s
 
 # $2063.Tempのリセット

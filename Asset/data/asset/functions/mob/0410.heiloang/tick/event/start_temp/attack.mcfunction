@@ -18,7 +18,7 @@
     function api:object/summon
 
 # ノーマルでは対角にも召喚
-    execute unless predicate api:global_vars/difficulty/normal run return run execute positioned as @s run tp @s ~ ~ ~ ~ 0
+    execute unless predicate api:global_vars/difficulty/2_hard run return run execute positioned as @s run tp @s ~ ~ ~ ~ 0
     execute at @s run tp @s ~ ~ ~ ~180 ~
     data modify storage api: Argument.ID set value 2123
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

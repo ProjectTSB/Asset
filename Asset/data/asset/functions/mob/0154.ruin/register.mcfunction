@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"破","color":"#520000","bold":true},{"text":"滅","color":"#330000","italic":true}]'
+# Mobの説明文 (TextComponentString[]) (オプション)
+data modify storage asset:mob Lore set value ['{"text":"これは罪だ。","color":"white"}','{"text":"時間経過で発狂し、全てを破壊する。それに例外はない。","color":"white"}','{"text":"たとえ自身であったとしても。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"stick",Count:1b,tag:{CustomModelData:20064}}
@@ -52,3 +54,9 @@
         data modify storage asset:mob Resist.Water set value 1
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# 通常時ダメージ
+    data modify storage asset:mob Field.Damage.Normal set value 45
+
+# 破滅状態でのダメージ
+    data modify storage asset:mob Field.Damage.Madness set value 60

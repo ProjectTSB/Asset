@@ -23,7 +23,7 @@
     execute if score $Level Temporary matches 21.. run scoreboard players set $Level Temporary 20
 
 # ダメージ計算 (20 * 1.2^(レベル-1))
-    scoreboard players set $Damage Temporary 20
+    scoreboard players set $Damage Temporary 30
     execute if score $Level Temporary matches 1.. run function asset:object/1059.book_of_hero/tick/calc_damage
 
 # ダメージを適用
