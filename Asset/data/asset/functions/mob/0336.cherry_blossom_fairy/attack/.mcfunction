@@ -8,8 +8,8 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 演出
-    execute at @p[tag=Victim,distance=..60] run particle cherry_leaves ~ ~1 ~ 0.5 1 0.5 0 20 normal @p
-    execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @s ~ ~ ~ 2 2 0
+    execute at @p[tag=Victim,distance=..60] run particle cherry_leaves ~ ~1 ~ 0.5 1 0.5 0 20 normal @a
+    execute at @p[tag=Victim,distance=..60] run playsound ogg:ambient.nether.crimson_forest.shine3 hostile @a ~ ~ ~ 2 2 0
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.Attack
