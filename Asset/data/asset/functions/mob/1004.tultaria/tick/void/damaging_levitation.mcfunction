@@ -11,13 +11,13 @@
 
 # 割合ダメージ
     function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage float 0.02 run data get storage api: Return.MaxHealth 10
+    execute store result storage api: Argument.Damage float 0.30 run data get storage api: Return.MaxHealth 1
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
 # 補正functionを実行
-    function api:damage/modifier
+    execute as @e[type=wither_skeleton,tag=this,distance=..128,sort=nearest,limit=1] run function api:damage/modifier
 # 対象
     execute as @s[tag=!PlayerShouldInvulnerable] run function api:damage/
 # リセット

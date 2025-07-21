@@ -18,7 +18,7 @@
         execute if score @s 93.AnimationTimer matches 41..50 at @s positioned ^ ^-0.3 ^-0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     # 攻撃
         execute if score @s 93.AnimationTimer matches 12 at @a[tag=!PlayerShouldInvulnerable,distance=..40,sort=furthest,limit=1] run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack
-        # execute if score @s 93.AnimationTimer matches 20 if predicate api:global_vars/difficulty/min/normal at @a[tag=!PlayerShouldInvulnerable,distance=..40,sort=random,limit=1] run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack
+        # execute if score @s 93.AnimationTimer matches 20 if predicate api:global_vars/difficulty/min/2_hard at @a[tag=!PlayerShouldInvulnerable,distance=..40,sort=random,limit=1] run function asset:mob/0327.eclael/tick/app.skill_events/38_latter_circle_slash/attack
     # 演出
         execute if score @s 93.AnimationTimer matches 9 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 27 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5

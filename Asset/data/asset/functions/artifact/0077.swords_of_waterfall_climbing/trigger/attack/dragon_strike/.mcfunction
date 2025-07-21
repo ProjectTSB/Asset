@@ -19,7 +19,7 @@
     execute at @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] unless block ~ ~-1 ~ #lib:no_collision run return 0
 
 # 落下ダメージ無効化
-    data modify storage api: Argument set value {ID:190,Duration:60}
+    data modify storage api: Argument set value {ID:190,Duration:60,Stack:10}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

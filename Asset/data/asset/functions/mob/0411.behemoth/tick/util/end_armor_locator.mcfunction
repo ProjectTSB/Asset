@@ -4,5 +4,7 @@
 #
 # @within asset:mob/0411.behemoth/tick/util/end_armor
 
-# 無敵化解除
-    effect clear @s resistance
+# エフェクト消去
+    data modify storage api: Argument.ID set value 150
+    function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/reset

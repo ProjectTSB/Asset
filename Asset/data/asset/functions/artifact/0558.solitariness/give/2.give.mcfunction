@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ソリタリネス","color":"#468581"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"セット効果：孤独"}','{"text":"孤独な時、移動速度+200%、MP回復量+50%"}','{"text":"時々自己嫌悪に陥る"}','{"text":"孤独が唯一の友人だった","color":"dark_gray"}','{"text":"誰もあなたの為に泣かないさ","color":"dark_gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"孤独が唯一の友人だった","color":"dark_gray"}','{"text":"誰もあなたの為に泣かないさ","color":"dark_gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"ソリタリネスをすべて装備し、孤独な状態"}]'
+    # data modify storage asset:artifact Condition set value '[{"text":"ソリタリネスをすべて装備し、孤独な状態"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     #data modify storage asset:artifact AttackInfo.Damage set value
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -55,6 +55,8 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:236,Visible:true,IsSetEffect:true}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

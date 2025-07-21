@@ -18,11 +18,15 @@
         # execute as @e[type=item_display,tag=AK.ModelRoot] run function animated_java:haruclaire_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/death/kill_hitbox'}
     function animated_java:haruclaire_aj/remove/all
 
-# オブジェクト消去
-    execute as @e[tag=AK.Object] on passengers run kill @s
-    kill @e[tag=AK.Object]
-
 # オブジェクト用AJモデル消去
     function animated_java:ic_capri_aj/remove/all
     function animated_java:ic_tau_aj/remove/all
     function animated_java:ic_pisce_aj/remove/all
+
+# オブジェクト消去
+    execute as @e[tag=AK.Object] on passengers run kill @s
+    kill @e[tag=AK.Object]
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:false}]
+    function asset:datapack/set_activation_state

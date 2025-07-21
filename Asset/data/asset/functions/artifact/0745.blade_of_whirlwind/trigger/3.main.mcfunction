@@ -28,7 +28,7 @@
     execute store result score $Damage Temporary run random value 420..500
     scoreboard players operation $Damage Temporary *= $Speed Temporary
 # ダメージ与える
-    execute store result storage api: Argument.Damage float 0.01 run scoreboard players operation $Damage Temporary < $200000 Const
+    execute store result storage api: Argument.Damage float 0.01 run scoreboard players operation $Damage Temporary < $150000 Const
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

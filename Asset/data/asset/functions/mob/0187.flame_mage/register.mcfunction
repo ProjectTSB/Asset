@@ -19,6 +19,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"フレイムメイジ","color":"red"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"炎の魔法を使う魔術師。","color":"white"}','{"text":"唱える魔法は火の玉を飛ばすだけの、至ってシンプルなものだが、","color":"white"}','{"text":"それ故に強力な魔法なのである。","color":"white"}']
+# Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)

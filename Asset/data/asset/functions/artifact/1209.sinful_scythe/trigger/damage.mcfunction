@@ -18,7 +18,7 @@
     playsound entity.lightning_bolt.impact player @a ~ ~ ~ 0.4 0
 
 # ダメージを与える
-    data modify storage api: Argument.Damage set value 200.0f
+    data modify storage api: Argument.Damage set value 410.0f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Victim,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run function api:damage/

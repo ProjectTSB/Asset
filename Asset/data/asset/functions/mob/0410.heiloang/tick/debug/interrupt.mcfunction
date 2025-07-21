@@ -21,5 +21,5 @@
 # イベント実行
     scoreboard players set @s BE.EventTimer 0
     # tag @s add BE.Skill.Ter.Purg.Start
-    tag @s add BE.Skill.Ehd
+    tag @s add BE.Skill.HeilDisaster
     scoreboard players set @s BE.Pb.Count 5

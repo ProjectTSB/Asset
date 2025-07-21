@@ -31,5 +31,5 @@
     execute as @a[tag=LandingTarget,distance=..25] at @s run function asset:mob/0155.immorality/tick/shot/damage
 
 # リセット
-    kill @e[type=marker,tag=SpreadMarker,limit=1]
+    kill @e[type=marker,tag=SpreadMarker,distance=..10,limit=1]
     tag @s remove Landing

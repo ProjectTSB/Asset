@@ -5,7 +5,7 @@
 # @within function asset:mob/0311.blazing_inferno/tick/base_move/skill_active
 
 # ハードモードなら謎の加速をかます
-    execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 0 run tag @s add 8N.Turn.HighSpeed
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 0 run tag @s add 8N.Turn.HighSpeed
 
 # 攻撃 1
     # アニメ再生

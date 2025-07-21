@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"つけもの石","color":"gray"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ノックバック耐性+6","color":"green"}','{"translate":"%s %s","with":[{"text":"移動速度-15%","color":"red"},{"text":"低速落下無効","color":"gray"}]}','{"text":"漬物を漬ける時に使うとても大きくて重い石。"}','{"text":"身動きが重くなるがノックバックしにくくなる。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"漬物を漬ける時に使うとても大きくて重い石。"}','{"text":"身動きが重くなるがノックバックしにくくなる。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -28,6 +28,8 @@
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
+# 最大発動回数 (int) (オプション)
+    data modify storage asset:artifact PartsMax set value 2
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -55,6 +57,10 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.knockback_resistance",Amount:0.6d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:-0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

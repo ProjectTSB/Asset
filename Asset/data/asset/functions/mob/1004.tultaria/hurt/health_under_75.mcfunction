@@ -12,5 +12,8 @@
 # タグ付与
     tag @s add RW.Transition.Phase2
 
+# お星さまを削除
+    kill @e[type=item_display,scores={ObjectID=2030},distance=..128]
+
 # リセット
     function asset:mob/1004.tultaria/tick/reset/skill_tag

@@ -19,6 +19,8 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ダークサモナー","color":"#B638FF","italic":false}'
 # Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"闇の魔法を使う魔術師。","color":"white"}','{"text":"闇の力で模倣した神器の力を使い、","color":"white"}','{"text":"眷属たちを召喚して戦わせる。","color":"white"}']
+# Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
     # メインハンド (Compound(Item)) (オプション)

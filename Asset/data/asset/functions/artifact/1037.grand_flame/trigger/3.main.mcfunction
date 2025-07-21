@@ -22,8 +22,8 @@
 # 体力割合を取得
     function api:entity/player/get_health_per
 
-# ダメージ計算 (660 + HealthPer *2)
-    execute store result score $Damage Temporary run data get storage api: Return.HealthPer 2
+# ダメージ計算 (660 + HealthPer *3)
+    execute store result score $Damage Temporary run data get storage api: Return.HealthPer 300
     scoreboard players add $Damage Temporary 660
 
 # Object召喚

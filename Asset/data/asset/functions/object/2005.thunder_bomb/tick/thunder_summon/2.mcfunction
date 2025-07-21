@@ -10,6 +10,6 @@
     execute rotated ~240 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
 
 # ハードは60度ずつ回転させてサンダーを召喚する
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~60 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~180 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
-    execute if predicate api:global_vars/difficulty/min/hard rotated ~300 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
+    execute if predicate api:global_vars/difficulty/min/3_blessless rotated ~60 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
+    execute if predicate api:global_vars/difficulty/min/3_blessless rotated ~180 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon
+    execute if predicate api:global_vars/difficulty/min/3_blessless rotated ~300 0 positioned ^ ^ ^9 run function asset:object/2005.thunder_bomb/tick/thunder_summon/summon

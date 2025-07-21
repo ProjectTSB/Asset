@@ -16,6 +16,4 @@
     data modify storage asset:object ID set value 2046
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1f
-    data modify storage asset:object Field.Debuff set value false
-    data modify storage asset:object Field.Stack set value 1
-    data modify storage asset:object Field.Duration set value 60
+    data modify storage asset:object Field.MobUUID set value -1

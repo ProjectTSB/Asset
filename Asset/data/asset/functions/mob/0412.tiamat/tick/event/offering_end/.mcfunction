@@ -1,6 +1,6 @@
 #> asset:mob/0412.tiamat/tick/event/offering_end/
 #
-# フリージングエンド
+# ソウルオファリング
 #
 # @within asset:mob/0412.tiamat/tick/event/
 
@@ -19,7 +19,7 @@
         execute if score @s BG.EventTimer matches 43 run particle explosion ~ ~1 ~ 2 0 2 0 20 force
         execute if score @s BG.EventTimer matches 66 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.7
 
-# フリージングエンド
+# ソウルオファリング
     # 詠唱
         execute if score @s BG.EventTimer matches 80 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_3_casting_land
     # アニメーション再生

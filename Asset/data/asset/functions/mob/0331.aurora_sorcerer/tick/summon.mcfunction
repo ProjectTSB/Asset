@@ -9,7 +9,7 @@
     execute store result storage api: Argument.FieldOverride.MPReducePer float 2.5 run data get storage api: Return.Difficulty
 
 # ハードなら強化設定をtrueに
-    execute if predicate api:global_vars/difficulty/min/hard run data modify storage api: Argument.FieldOverride.Enhanced set value true
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Enhanced set value true
 
 # 召喚
     data modify storage api: Argument.ID set value 2080

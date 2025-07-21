@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"生命","color":"#ff6c6a"},{"text":"のチャーム","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大体力","color":"#ff6c6a"},{"text":"が10%上昇する。","color":"white"}]']
+    data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -26,8 +26,8 @@
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
-# 効果が重複可能か否か (boolean) (オプション)
-    data modify storage asset:artifact EnableDuplication set value true
+# 効果の最大発動回数 (int) (オプション)
+    data modify storage asset:artifact PartsMax set value 9
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
@@ -59,6 +59,8 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"max_health",Amount:0.10d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

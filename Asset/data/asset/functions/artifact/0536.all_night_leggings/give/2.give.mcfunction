@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"夜の間、終夜をすべて着ている状態"}'
+    # data modify storage asset:artifact Condition set value '{"text":"夜の間、終夜をすべて着ている状態"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [15]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value
+    data modify storage asset:artifact LocalCooldown set value 50
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
@@ -55,10 +55,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:241,Visible:true,IsSetEffect:true}]
+# 装備時ステータス補正 (Component[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,536,4],Slot:"legs"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.2,Operation:1,UUID:[I;1,1,536,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
+    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,536,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
 
 # 神器の入手用function
     function asset:artifact/common/give

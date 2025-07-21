@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"アストロスケルトン","color":"white"}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value
+    data modify storage asset:mob Lore set value ['{"text":"宇宙で活動するスケルトン。","color":"white"}','{"text":"優れた身体能力を持っている上に、","color":"white"}','{"text":"時空間を飛び越えてやってくる。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"punch",lvl:1s}]}}

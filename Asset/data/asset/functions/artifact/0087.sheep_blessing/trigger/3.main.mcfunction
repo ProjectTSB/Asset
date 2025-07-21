@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 羊毛消費
-    clear @s white_wool 16
+    clear @s #wool 16
 
 # 羊の加護エフェクトを付与
     data modify storage api: Argument.ID set value 202

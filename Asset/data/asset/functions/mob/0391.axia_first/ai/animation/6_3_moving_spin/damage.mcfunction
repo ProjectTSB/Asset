@@ -28,6 +28,8 @@
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性
         data modify storage api: Argument.ElementType set value "Fire"
+    # 難易度補正削除
+        data modify storage api: Argument.BypassDifficulty set value true
     # デスログ
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってみじん切りにされてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
 # 補正functionを実行

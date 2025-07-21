@@ -21,7 +21,6 @@
     tag @s remove AK.Skill.SummonHato
     tag @s remove AK.Skill.Blade
     tag @s remove AK.Skill.Giant
-    tag @s remove AK.Skill.Giant.Short
     tag @s remove AK.Skill.IceBulletDuo
     tag @s remove AK.Skill.IceWallDuo
     tag @s remove AK.Skill.IcePillarDuo
@@ -29,7 +28,6 @@
     tag @s remove AK.Skill.IceSpinner
     tag @s remove AK.Skill.Press
     tag @s remove AK.Skill.IceCremation.First
-    tag @s remove AK.Skill.IceCremation.First.Used
     tag @s remove AK.Skill.IceCremation.Dash
     tag @s remove AK.Skill.IceCremation.FourCircle
     tag @s remove AK.Skill.IceCremation.Cross

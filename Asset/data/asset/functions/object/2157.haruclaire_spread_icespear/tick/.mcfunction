@@ -14,10 +14,10 @@
 # 予告
     execute if entity @s[scores={General.Object.Tick=3}] run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_vector
     execute if entity @s[scores={General.Object.Tick=3..203}] at @s on passengers run function asset:object/2157.haruclaire_spread_icespear/tick/effect_vector
-    execute if entity @s[tag=!2157.IsLong,scores={General.Object.Tick=13}] if predicate api:global_vars/difficulty/max/normal run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line
-    execute if entity @s[tag=!2157.IsLong,scores={General.Object.Tick=43}] if predicate api:global_vars/difficulty/min/hard run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line_hard
-    execute if entity @s[tag=2157.IsLong,scores={General.Object.Tick=153}] if predicate api:global_vars/difficulty/max/normal run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line
-    execute if entity @s[tag=2157.IsLong,scores={General.Object.Tick=183}] if predicate api:global_vars/difficulty/min/hard run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line_hard
+    execute if entity @s[tag=!2157.IsLong,scores={General.Object.Tick=13}] if predicate api:global_vars/difficulty/max/2_hard run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line
+    execute if entity @s[tag=!2157.IsLong,scores={General.Object.Tick=43}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line_hard
+    execute if entity @s[tag=2157.IsLong,scores={General.Object.Tick=153}] if predicate api:global_vars/difficulty/max/2_hard run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line
+    execute if entity @s[tag=2157.IsLong,scores={General.Object.Tick=183}] if predicate api:global_vars/difficulty/min/3_blessless run function asset:object/2157.haruclaire_spread_icespear/tick/prediction_line_hard
 
 # 攻撃
     execute if entity @s[tag=!2157.IsLong,scores={General.Object.Tick=63}] run function asset:object/2157.haruclaire_spread_icespear/tick/attack

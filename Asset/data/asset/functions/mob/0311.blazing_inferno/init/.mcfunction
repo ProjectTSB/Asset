@@ -4,6 +4,10 @@
 #
 # @within asset:mob/alias/311/init
 
+data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_blazing_inferno",Active:true}]
+function asset:datapack/set_activation_state
+
+
 # プレイヤーの方を向く
     execute at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 

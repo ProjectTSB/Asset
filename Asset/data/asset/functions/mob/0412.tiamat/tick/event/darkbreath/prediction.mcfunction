@@ -1,4 +1,4 @@
-#> asset:mob/0411.behemoth/tick/event/flarebreath/prediction
+#> asset:mob/0412.tiamat/tick/event/darkbreath/prediction
 #
 # フレアブレス
 #

@@ -3,5 +3,4 @@
 #
 #
 # @within function asset:object/1131.red_knight_slash_shot/**
-    #declare tag 1131.TargetEntity
     #declare tag 1131.RangeOver

@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"マッドサイエンティスト","color":"white"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"異様な薬学に目覚めたスケルトン。","color":"white"}','{"text":"様々なポーションを投げて攻撃してくる。","color":"white"}','{"text":"そこそこワケアリなやつ。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"splash_potion",Count:1b}
@@ -58,7 +60,7 @@
     data modify storage asset:mob Field.Damage set value {Fire:23.0f,Water:16.0f,Thunder:16.0f}
 
 # 毒ポーションの設定
-    data modify storage asset:mob Field.Poison set value {Duration:100,Stack:4}
+    data modify storage asset:mob Field.Poison set value {Duration:100,Stack:2}
 
 # 鈍足の設定
     data modify storage asset:mob Field.Slowness set value {Duration:100,Stack:2}

@@ -34,8 +34,8 @@
         execute if score @s BE.EventTimer matches 275..292 at @s run particle cloud ~ ~3 ~ 2 2 2 0.1 20
         execute if score @s BE.EventTimer matches 275..292 at @s run particle explosion ~ ~-1.5 ~ 2 0 2 0.1 3
     # 攻撃
-        execute if score @s BE.EventTimer matches 154 if predicate api:global_vars/difficulty/max/normal at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/dive_prediction_long
-        execute if score @s BE.EventTimer matches 254 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/dive_prediction
+        execute if score @s BE.EventTimer matches 154 if predicate api:global_vars/difficulty/max/2_hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/dive_prediction_long
+        execute if score @s BE.EventTimer matches 254 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/dive_prediction
         execute if score @s BE.EventTimer matches 275 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^7.5 run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BE.EventTimer matches 279 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^22.5 run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/attack_dive
         execute if score @s BE.EventTimer matches 283 at @e[type=area_effect_cloud,tag=BE.Temp.AttackPosition,sort=nearest,limit=1] positioned ^ ^ ^37.5 run function asset:mob/0410.heiloang/tick/event/terzetto_succession_a/attack_dive
@@ -45,7 +45,7 @@
     # モデルを自身の位置に移動
         execute if score @s BE.EventTimer matches 254..332 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     # テンペスト配置
-        execute if score @s BE.EventTimer matches 145 if predicate api:global_vars/difficulty/min/normal as @a[distance=..80,sort=random,limit=3] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 145 if predicate api:global_vars/difficulty/min/2_hard as @a[distance=..80,sort=random,limit=3] run tag @s add BE.AttackTarget
         execute if score @s BE.EventTimer matches 145 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
         execute if score @s BE.EventTimer matches 242..279 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 242..279 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd

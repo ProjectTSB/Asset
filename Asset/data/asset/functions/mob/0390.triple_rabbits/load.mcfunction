@@ -11,3 +11,4 @@
 #   asset:mob/0392.ecual_first/**
 #   asset:mob/0393.labyria_first/**
     scoreboard objectives add AU.Dummy.UUID dummy
+    scoreboard objectives add AU.PenaltyTick dummy

@@ -27,11 +27,11 @@
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
-    # data modify storage asset:effect ProcessOnDied set value
+    data modify storage asset:effect ProcessOnDied set value "keep"
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect Visible set value
+    data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     # data modify storage asset:effect StackVisible set value
 

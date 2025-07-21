@@ -19,12 +19,12 @@
         execute if score @s BE.EventTimer matches 250 at @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] run tp @s ~ ~ ~ ~ 0
         execute if score @s BE.EventTimer matches 290 at @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] run tp @s ~ ~ ~ ~ 0
     # 予兆
-        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/max/normal as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionA] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_0_long
-        execute if score @s BE.EventTimer matches 150 if predicate api:global_vars/difficulty/max/normal as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_1_long
-        execute if score @s BE.EventTimer matches 190 if predicate api:global_vars/difficulty/max/normal as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_2_long
-        execute if score @s BE.EventTimer matches 210 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_0
-        execute if score @s BE.EventTimer matches 250 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_1
-        execute if score @s BE.EventTimer matches 290 if predicate api:global_vars/difficulty/min/hard at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_2
+        execute if score @s BE.EventTimer matches 110 if predicate api:global_vars/difficulty/max/2_hard as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionA] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_0_long
+        execute if score @s BE.EventTimer matches 150 if predicate api:global_vars/difficulty/max/2_hard as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionB] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_1_long
+        execute if score @s BE.EventTimer matches 190 if predicate api:global_vars/difficulty/max/2_hard as @e[type=area_effect_cloud,tag=BE.Temp.Dive.PositionC] at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_2_long
+        execute if score @s BE.EventTimer matches 210 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_0
+        execute if score @s BE.EventTimer matches 250 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_1
+        execute if score @s BE.EventTimer matches 290 if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ~ ~-3 ~ run function asset:mob/0410.heiloang/tick/event/terzetto_succession_dive/dive_prediction_2
     # アニメーション再生
         execute if score @s BE.EventTimer matches 215 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/7_2_dive
         execute if score @s BE.EventTimer matches 255 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/7_2_dive

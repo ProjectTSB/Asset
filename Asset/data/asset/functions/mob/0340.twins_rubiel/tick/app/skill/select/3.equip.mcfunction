@@ -8,7 +8,7 @@
 #    function asset:mob/0340.twins_rubiel/hurt/app/5.counter
 
 # ハードの場合、ランダムで武器を装備
-    # execute if predicate api:global_vars/difficulty/min/hard
+    # execute if predicate api:global_vars/difficulty/min/3_blessless
 
 # ノーマルの場合、強制で刀装備
     tag @s add 9G.Skill.Kt.Start

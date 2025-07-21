@@ -59,6 +59,8 @@
     # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:295,Visible:false}]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:4}
 

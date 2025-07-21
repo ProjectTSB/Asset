@@ -6,6 +6,9 @@
 
 function asset:mob/super.hurt
 
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 # TODO:被ダメージ量の計算
 
 # 紐づけられたRootにhurt処理を移譲

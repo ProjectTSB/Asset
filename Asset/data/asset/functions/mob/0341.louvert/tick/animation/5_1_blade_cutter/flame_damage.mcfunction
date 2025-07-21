@@ -14,7 +14,7 @@
     scoreboard players operation $9H.Temp 9H.AnimationTick %= $6 Const
 
 # ソウルクエイク召喚処理
-    execute if predicate api:global_vars/difficulty/min/hard if score $9H.Temp 9H.AnimationTick matches 1 run function asset:mob/0341.louvert/tick/animation/5_1_blade_cutter/hard
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score $9H.Temp 9H.AnimationTick matches 1 run function asset:mob/0341.louvert/tick/animation/5_1_blade_cutter/hard
 
 # ダメージ
     # 引数の設定

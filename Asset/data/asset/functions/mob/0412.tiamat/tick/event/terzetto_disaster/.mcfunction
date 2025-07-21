@@ -39,9 +39,9 @@
     # アニメーション再生
         execute if score @s BG.EventTimer matches 356 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/1_idle
         execute if score @s BG.EventTimer matches 416 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_0_flymove_start
-        execute if score @s BG.EventTimer matches 446 unless predicate api:global_vars/difficulty/easy as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
+        execute if score @s BG.EventTimer matches 446 unless predicate api:global_vars/difficulty/1_normal as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/6_1_flymove_end
     # 中心点の正面方向に移動
-        execute if score @s BG.EventTimer matches 445 unless predicate api:global_vars/difficulty/easy at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
+        execute if score @s BG.EventTimer matches 445 unless predicate api:global_vars/difficulty/1_normal at @e[type=marker,tag=BE.CenterPosition] run tp @s ^-12.5 ^ ^15.5 ~180 0
 
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~

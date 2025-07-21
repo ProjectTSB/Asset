@@ -12,6 +12,9 @@
     execute if entity @s[scores={General.Mob.Tick=..20}] run particle dust 1 0 0 1.5 ~ ~1 ~ 0.4 0.5 0.4 0.3 3 force @a[distance=..20]
     execute if entity @s[scores={General.Mob.Tick=..20}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 run particle flame ~ ~ ~ 0 0 0 0.02 1
 
+# 線の予備動作
+    execute if entity @s[scores={General.Mob.Tick=..20}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/line/
+
 # 軽く炎弾を連射
     execute if entity @s[scores={General.Mob.Tick=25}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot
     execute if entity @s[scores={General.Mob.Tick=35}] positioned ~ ~1.21 ~ positioned ^-0.5 ^ ^1.3 facing entity @p[gamemode=!spectator,distance=..40] eyes run function asset:mob/0237.lunatic_mage/tick/skill/fire2/shoot

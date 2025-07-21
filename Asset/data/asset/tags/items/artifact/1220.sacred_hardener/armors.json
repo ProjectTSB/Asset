@@ -24,7 +24,6 @@
         "minecraft:netherite_helmet",
         "minecraft:netherite_chestplate",
         "minecraft:netherite_leggings",
-        "minecraft:netherite_boots",
-        "minecraft:turtle_helmet"
+        "minecraft:netherite_boots"
     ]
 }

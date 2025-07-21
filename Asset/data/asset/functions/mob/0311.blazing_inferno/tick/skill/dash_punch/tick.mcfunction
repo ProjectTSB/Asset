@@ -26,9 +26,9 @@
     # 爆発1
         execute if score @s General.Mob.Tick matches 40 anchored eyes rotated ~ 0 positioned ^ ^-1 ^3 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/explosion
     # ハードだと爆発2
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 45 anchored eyes rotated ~ 0 positioned ^ ^-1 ^6 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/explosion
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 45 anchored eyes rotated ~ 0 positioned ^ ^-1 ^6 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/explosion
     # ハードだと爆発3
-        execute if predicate api:global_vars/difficulty/min/hard if score @s General.Mob.Tick matches 50 anchored eyes rotated ~ 0 positioned ^ ^-1 ^9 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/explosion
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 50 anchored eyes rotated ~ 0 positioned ^ ^-1 ^9 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/explosion
 
 # 待機アニメを再生
     execute if score @s General.Mob.Tick matches 50 as @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/neutral_fighting/play

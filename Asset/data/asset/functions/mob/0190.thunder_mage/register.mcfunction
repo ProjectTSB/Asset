@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"サンダーメイジ","color":"yellow"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"雷の魔法を使う魔術師。","color":"white"}','{"text":"的確にこちらの位置に雷を落としてくる。","color":"white"}','{"text":"どこから狙っているかわからないため、探し出して倒そう。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:375}}

@@ -12,8 +12,11 @@
 # 通常頭
     item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
 
+# 頭のCMDをフィールドに入れておく
+    data modify storage asset:context this.HeadCMD set value 20016
+
 # ハード以下ならreturn
-    execute if predicate api:global_vars/difficulty/max/normal run return 0
+    execute if predicate api:global_vars/difficulty/max/2_hard run return 0
 
 # ランダムな顔にする のっぺらぼう(ID:20283)だけは除外する
 # lib:array/picksを用いて、ランダムなIDを取得する
@@ -34,6 +37,9 @@
     data modify storage asset:context this.FaceList set from storage lib: Array
 # 顔を置き換え
     data modify entity @s ArmorItems[3].tag.CustomModelData set from storage lib: Elements[0]
+
+# 再度頭のCMDをフィールドに入れておく
+    data modify storage asset:context this.HeadCMD set from storage lib: Elements[0]
 
 # リセット
     function lib:array/session/close

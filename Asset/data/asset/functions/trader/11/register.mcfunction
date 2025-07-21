@@ -9,7 +9,7 @@ execute unless loaded -16 21 -57 run return 1
 # ID (int)
     data modify storage asset:trader ID set value 11
 # Pos ([int] @ 3)
-    data modify storage asset:trader Pos set value [-16,21,-57]
+    data modify storage asset:trader Pos set value [-17,21,-58]
 # 名前 (TextComponent) (オプション)
     data modify storage asset:trader Name set value '{"text":"赤石商人"}'
 # 方向 (float) (オプション)

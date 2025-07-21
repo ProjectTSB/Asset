@@ -1,4 +1,4 @@
-#> asset:object/alias/2184/register
+#> asset:object/alias/2183/register
 #
 # Objectのデータ指定処理のエイリアス
 #
