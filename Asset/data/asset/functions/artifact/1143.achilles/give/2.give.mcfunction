@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アキレウス","color":"#ffffff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"背後からダメージを受けると耐性と移動速度が大幅に低下する"}','{"text":"かのトロイアの英雄のように","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"背後からダメージを受けると、耐性と移動速度が大幅に低下する"}','{"text":"かのトロイアの英雄のように","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -61,8 +61,8 @@
     # data modify storage asset:artifact DisableMPMessage set value true
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value true
-# 装備時効果 (int) (オプション)
-    # data modify storage asset:artifact Equipment.SetEffectID set value
+# 装備時効果 ({id: int, Visible: boolean}[]) (オプション)
+    # data modify storage asset:artifact Equipment.Effects set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value [{Type:"defense/base",Amount:0.20d,Operation:"multiply_base"},{Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
