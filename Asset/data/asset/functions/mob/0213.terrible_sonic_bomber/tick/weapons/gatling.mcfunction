@@ -20,6 +20,7 @@
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sの機銃掃射によって撃破された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier
     execute at 0-0-0-0-0 positioned ^ ^ ^-0.5 positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    function api:damage/reset
 
     data modify storage api: Argument.Damage set value 20f
     data modify storage api: Argument.AttackType set value "Physical"

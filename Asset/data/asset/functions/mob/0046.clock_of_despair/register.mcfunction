@@ -16,6 +16,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"絶望の時計"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"朽ちることも、壊れることもなく時を刻む時計。","color":"white"}','{"text":"その性質上、普通の方法では倒すことはできない。","color":"white"}','{"text":"『時』が来るまで耐え続けるしかない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -59,3 +61,20 @@
         data modify storage asset:mob Resist.Water set value 0
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0
+
+# フィールド
+
+# レーザーは将来的にObjectへ移行するものとする
+# asset:mob/0046.clock_of_despair/tick/skill/common/beam/damage
+
+# 雷ダメージ
+    data modify storage asset:mob Field.Damage.Thunder set value 75f
+# 炎ダメージ
+    data modify storage asset:mob Field.Damage.Fire set value 70f
+# 時計レーザー
+    data modify storage asset:mob Field.Damage.WallLaserClock set value 75f
+# 魔炎
+    data modify storage asset:mob Field.Damage.FallingFire set value 21f
+
+# デバフ付与のクールダウン
+    data modify storage asset:mob Field.InflictDebuffCooldown set value 5

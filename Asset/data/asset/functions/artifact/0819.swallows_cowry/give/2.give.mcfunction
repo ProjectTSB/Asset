@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"燕の子安貝","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ツバメの産んだ子安貝"}','{"text":"竹取の宝具の一つで落下への耐性を与えてくれる"}','{"text":"竹取の宝具を全て装備した時各部位は以下の効果を与える","color":"gray"}','{"text":"頭: 水耐性+15%","color":"gray"}','{"text":"胴: 炎耐性+20%","color":"gray"}','{"text":"脚: 物理耐性+10%","color":"gray"}','{"text":"靴: 落下耐性+15%","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ツバメの産んだ子安貝"}','{"text":"竹取の宝具の一つで落下への耐性を与えてくれる"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -25,7 +25,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"竹取の宝具全てを装備している"}'
+    # data modify storage asset:artifact Condition set value '{"text":"竹取の宝具全てを装備している"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -48,10 +48,12 @@
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
+# 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
+    data modify storage asset:artifact Equipment.Effects set value [{ID:255,Visible:true,IsSetEffect:true}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:fortune",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:4,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:fortune",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

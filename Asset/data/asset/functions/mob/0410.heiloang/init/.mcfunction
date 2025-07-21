@@ -4,6 +4,11 @@
 #
 # @within asset:mob/alias/410/init
 
+
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_heiloang",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 継承元の処理実行
     function asset:mob/super.init
 
@@ -22,7 +27,11 @@
         scoreboard players set @s BE.Phase 0
         scoreboard players set @s BE.ActCount 0
         scoreboard players set @s BE.Idle.Count 0
+        scoreboard players set @s BE.Charge.Count -1
     # エンハンスドディザスターの順番決定
         function asset:mob/0410.heiloang/tick/util/set_ehd_order
     # 移動
         execute at @s run tp @s ^ ^ ^3 ~ 0
+
+# デバッグ
+    # scoreboard players set @s BE.Phase 2

@@ -18,11 +18,11 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '[{"text":"ラビリア","color":"#FF87EB","bold":true}]'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    # data modify storage asset:mob Lore set value 
+    data modify storage asset:mob Lore set value ['{"text":"ウサギの上級天使。","color":"white"}','{"text":"銃剣の扱いを得意としており、様々な武器で敵を翻弄する。","color":"white"}','{"text":"大体アキシャと一緒にやんちゃをしてエクアルを困らせているらしい。","color":"white"}']
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 57500
-#    execute if predicate api:global_vars/difficulty/max/normal run data modify storage asset:mob Health set value 20000
-#    execute if predicate api:global_vars/difficulty/min/hard run data modify storage asset:mob Health set value 22000
+#    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage asset:mob Health set value 20000
+#    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:mob Health set value 22000
 # ノックバック耐性 (double) (オプション)
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
@@ -31,8 +31,8 @@
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.2
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.5
+        data modify storage asset:mob Resist.Fire set value 0.7
     # 水倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Water set value 0.5
+        data modify storage asset:mob Resist.Water set value 0.7
     # 雷倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Thunder set value 0.5
+        data modify storage asset:mob Resist.Thunder set value 0.7

@@ -14,3 +14,7 @@
 
 # 継承元の処理
     function asset:mob/super.remove
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_louvert",Active:false}]
+    function asset:datapack/set_activation_state

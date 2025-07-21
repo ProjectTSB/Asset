@@ -5,3 +5,4 @@
 # @within tag/function asset:artifact/register
 
 data modify storage asset:artifact RarityRegistry[1] append value [1275,1276,1277,1278]
+data modify storage asset:artifact RarityRegistryWithColor.Blue[1] append value [1275,1276,1277,1278]

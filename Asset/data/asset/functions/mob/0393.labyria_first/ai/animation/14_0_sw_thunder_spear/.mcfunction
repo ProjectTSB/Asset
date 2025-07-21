@@ -5,7 +5,7 @@
 # @within function asset:mob/0393.labyria_first/ai/animation/
 
 # 耐性を掛ける
-    execute if score @s AX.AnimationTick matches 1 run effect give @s resistance 19 7 true
+    execute if score @s AX.AnimationTick matches 1 run function asset:mob/0393.labyria_first/ai/animation/14_0_sw_thunder_spear/give_resistance
 
 # アニメーション再生
     execute if score @s AX.AnimationTick matches 1 as @e[type=item_display,tag=AX.Root.This,distance=..100] run function animated_java:labyria/animations/14_0_sw_thunder_spear/play

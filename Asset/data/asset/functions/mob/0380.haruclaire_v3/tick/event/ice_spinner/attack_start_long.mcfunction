@@ -9,13 +9,13 @@
 
 # 難易度に応じて数を増やす
     tp @s ~ ~ ~ ~90 ~
-    execute if predicate api:global_vars/difficulty/min/hard at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
+    execute if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
     execute at @s run tp @s ~ ~ ~ ~90 ~
     execute at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
     execute at @s run tp @s ~ ~ ~ ~90 ~
-    execute if predicate api:global_vars/difficulty/min/hard at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
+    execute if predicate api:global_vars/difficulty/min/3_blessless at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
     execute at @s run tp @s ~ ~ ~ ~90 ~
-    execute if predicate api:global_vars/difficulty/min/normal at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
+    execute if predicate api:global_vars/difficulty/min/2_hard at @s positioned ^ ^1 ^10 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spinner/attack.m {IsLong:"true"}
 
 # 終了
     kill @s

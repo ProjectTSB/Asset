@@ -12,6 +12,7 @@
 # タグ消去
     tag @s remove 93.Skill.Former.Start
     tag @s remove 93.Skill.Former.Idle
+    tag @s remove 93.Skill.Former.Idle.Sleep
     tag @s remove 93.Skill.Former.Iai
     tag @s remove 93.Skill.Former.Iai.Damage
     tag @s remove 93.Skill.Former.Slash
@@ -20,6 +21,7 @@
     tag @s remove 93.Skill.Former.UpperShot.Damage
     tag @s remove 93.Skill.Former.Magic
     tag @s remove 93.Skill.Former.ShortMagic
+
     tag @s remove 93.Skill.Latter.Start
     tag @s remove 93.Skill.Latter.Idle
     tag @s remove 93.Skill.Latter.Damage
@@ -47,8 +49,21 @@
     tag @s remove 93.Skill.Latter.Thunderstorm
     tag @s remove 93.Skill.Latter.Sorafune.Start
 
+    tag @s remove 93.Skill.FieldThunder
+    tag @s remove 93.Skill.Fall
+    tag @s remove 93.Skill.MoveSlash
+    tag @s remove 93.Skill.FieldSlash
+    tag @s remove 93.Skill.FieldSlash.A
+    tag @s remove 93.Skill.Beam
+    tag @s remove 93.Skill.IaiMove
+    tag @s remove 93.Skill.IaiMove.Turn
+    tag @s remove 93.Skill.IaiMove.Hit
+    tag @s remove 93.Skill.Tensei
+    tag @s remove 93.Skill.Circle
+    tag @s remove 93.Skill.UpperShot
+
 # 分岐用一時タグ消去
     tag @s remove 93.Temp.MoveToLeft
 
 # animated java再生停止
-    execute as @e[type=item_display,tag=93.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:eclael/animations/pause_all
+    execute as @e[type=item_display,tag=93.ModelRoot.Target,distance=..80,sort=nearest,limit=1] run function animated_java:eclael/animations/pause_all

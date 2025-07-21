@@ -2,9 +2,10 @@
 #
 # 落下。
 #
-# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/tick
+# @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/fall_stacked
 
-execute at @s unless entity @e[type=marker,tag=C5.Marker.SlamPoint,distance=..0.5,limit=1] if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-1 ~
-execute at @s unless entity @e[type=marker,tag=C5.Marker.SlamPoint,distance=..0.5,limit=1] if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-1 ~
-execute at @s unless entity @e[type=marker,tag=C5.Marker.SlamPoint,distance=..0.5,limit=1] if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-1 ~
-execute at @s unless entity @e[type=marker,tag=C5.Marker.SlamPoint,distance=..0.5,limit=1] if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-1 ~
+# ブロック破壊
+    execute if predicate api:area/is_breakable run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/break
+
+# 下にマーカーがいなければTPする
+    execute positioned ~-5 ~ ~-5 unless entity @e[type=marker,tag=C5.Marker.SlamPoint,dx=9,dy=-1,dz=9,limit=1] at @s run tp @s ~ ~-1 ~

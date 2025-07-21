@@ -10,7 +10,7 @@
     data remove storage asset:temp 9E
 
 # 耐性付与
-    execute if entity @s[tag=9F.State.IsGuard] run effect give @s resistance 1 5 true
+    execute if entity @s[tag=9F.State.IsGuard] run function asset:mob/0339.twins_sapphiel/tick/give_resistance
 
 # タイマー処理
     # アニメーション用タイマー増加

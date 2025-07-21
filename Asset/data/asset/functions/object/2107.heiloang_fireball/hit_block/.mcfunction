@@ -6,7 +6,8 @@
 
 # 攻撃用AEC召喚
     data modify storage api: Argument.ID set value 2108
-    data modify storage api: Argument.FieldOverride.Damage set value 20.0f
+    execute if entity @s[tag=2107.IsDark] run data modify storage api: Argument.FieldOverride.IsDark set value true
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     # 攻撃元の特定用にUUIDを引き継ぎ
         data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
     execute positioned ~ ~0.3 ~ run function api:object/summon

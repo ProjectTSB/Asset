@@ -1,6 +1,6 @@
 #> asset:object/2203.sonicbomber_destroyed/tick/explode
 #
-# 
+#
 #
 # @within function asset:object/2203.sonicbomber_destroyed/tick/
 
@@ -18,6 +18,10 @@
 
 # remove aj
     execute on passengers if entity @s[tag=5X.ModelRoot] run function animated_java:terrible_sonic_bomber/remove/this
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_terrible_sonic_bomber",Active:false}]
+    function asset:datapack/set_activation_state
 
 # kill
     kill @s

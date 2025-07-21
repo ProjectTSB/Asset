@@ -13,7 +13,7 @@
 # それ以上なら難易度値だけ弾速が上がる
     function api:global_vars/get_difficulty
     data modify storage api: Argument.FieldOverride.Speed set from storage api: Return.Difficulty
-    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Speed set value 2
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Speed set value 2
 
 # ダメージ設定
 # ノーマルまではダメージを3に固定
@@ -21,7 +21,7 @@
     function api:global_vars/get_difficulty
     execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
     execute store result storage api: Argument.FieldOverride.Damage int 5 run scoreboard players remove $Difficulty Temporary 1
-    execute if predicate api:global_vars/difficulty/max/normal run data modify storage api: Argument.FieldOverride.Damage set value 3
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Damage set value 3
 
 # Object召喚
     data modify storage api: Argument.ID set value 2071

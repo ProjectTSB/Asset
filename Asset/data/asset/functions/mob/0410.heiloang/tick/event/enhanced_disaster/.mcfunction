@@ -12,7 +12,8 @@
         execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_0_common_cast_start
         execute if score @s BE.EventTimer matches 23 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_1_common_casting
     # 属性予告
-        execute if score @s BE.EventTimer matches 25 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:1}
+        execute if score @s BE.EventTimer matches 25.. as @e[type=area_effect_cloud,tag=BE.Temp.EhdPosition,distance=..100] at @s run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element
+        # execute if score @s BE.EventTimer matches 25 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:1}
         # execute if score @s BE.EventTimer matches 45 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:2}
         # execute if score @s BE.EventTimer matches 65 run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/particle_element.m {Count:3}
     # 中心点回転
@@ -25,10 +26,15 @@
 # 発動
     # アニメーション再生
         execute if score @s BE.EventTimer matches 90 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_2_common_invoke
+    # デバフ付与
+        execute if score @s BE.EventTimer matches 40 as @a[tag=!PlayerShouldInvulnerable,distance=..160] at @s run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/give_debuff
     # 攻撃
         execute if score @s BE.EventTimer matches 110 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/attack
     # 中心点回転
         execute if score @s BE.EventTimer matches 111 as @e[type=marker,tag=BE.CenterPosition] at @s facing entity @e[type=slime,tag=BE.EntityRoot,limit=1] feet run tp @s ~ ~ ~ ~ 0
+
+# 無敵化
+    execute if score @s BE.EventTimer matches 1 run function asset:mob/0410.heiloang/tick/util/start_invulnerable
 
 # 終了
     execute if score @s BE.EventTimer matches 175.. run function asset:mob/0410.heiloang/tick/event/enhanced_disaster/end

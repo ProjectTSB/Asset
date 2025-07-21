@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1137.over_pulse_headgear/register",
         "asset:artifact/1228.fatalerror/register",
         "asset:artifact/1273.maidchan_plush/register",
         "asset:artifact/1282.ice_axe/register",
@@ -267,7 +268,7 @@
         "asset:artifact/0471.stone_cutter_chainsaw/register",
         "asset:artifact/0522.humanism/register",
         "asset:artifact/0529.safety_helmet/register",
-        "asset:artifact/0534.all_night_hellmet/register",
+        "asset:artifact/0534.all_night_helmet/register",
         "asset:artifact/0554.catastrophe/register",
         "asset:artifact/0558.solitariness/register",
         "asset:artifact/0562.heartland/register",

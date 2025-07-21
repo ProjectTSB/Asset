@@ -24,9 +24,21 @@
     execute if entity @s[scores={General.Mob.Tick=50}] run data modify storage api: Argument.ID set value 2033
     execute if entity @s[scores={General.Mob.Tick=50}] positioned ~ ~3 ~ run function api:object/summon
 
+# 表示用Objectを召喚し、頭を一時的に外す
+    execute if entity @s[scores={General.Mob.Tick=50}] run item replace entity @s armor.head with stone{CustomModelData:20019}
+    execute if entity @s[scores={General.Mob.Tick=50}] run data modify storage api: Argument.ID set value 2035
+    execute if entity @s[scores={General.Mob.Tick=50}] run data modify storage api: Argument.FieldOverride.CMD set from storage asset:context this.HeadCMD
+    execute if entity @s[scores={General.Mob.Tick=50}] anchored eyes positioned ^ ^ ^ run function api:object/summon
+
+# 頭を再度装着
+    execute if entity @s[scores={General.Mob.Tick=70}] run item replace entity @s armor.head with carved_pumpkin{CustomModelData:20016}
+    execute if entity @s[scores={General.Mob.Tick=70}] run data modify entity @s ArmorItems[3].tag.CustomModelData set from storage asset:context this.HeadCMD
+
 # 回転途中で頭を取り換える
     execute if entity @s[scores={General.Mob.Tick=35}] run particle explosion ~ ~1.8 ~ 0 0 0 0 1
     execute if entity @s[scores={General.Mob.Tick=40}] run function asset:mob/0059.jack_o_lantern/tick/skill/quiz/change_head
+
+
 
 # 自分と偽物を拡散し、発光を解除
 # 自身にparticle非表示Tagを付与
@@ -47,7 +59,7 @@
     execute if entity @s[scores={General.Mob.Tick=170}] as @a[distance=..50] at @s run playsound minecraft:item.goat_horn.sound.1 hostile @s ~ ~ ~ 1 1.5 0
 
 # ハード以上の場合、クイズの時間を2秒飛ばす
-    execute if entity @s[scores={General.Mob.Tick=170}] if predicate api:global_vars/difficulty/min/hard run scoreboard players add @s General.Mob.Tick 40
+    execute if entity @s[scores={General.Mob.Tick=170}] if predicate api:global_vars/difficulty/min/3_blessless run scoreboard players add @s General.Mob.Tick 40
 
 # 自身と偽物は、走り回った後は最寄りのプレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=170..310}] run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator] feet

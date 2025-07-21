@@ -4,29 +4,29 @@
 #
 # @within function asset:object/2046.white_magic/tick/
 
-# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAIYBGA7CgCzUCczAtHKQKzVsMAMAJgBmbSigDMlNhOFwJDLimalaE8gQB2lALYJkgMMUABAEYwBGJQy6AzknAoA9oU0QkghgRRxXcDPbAAN0psQn1wAA8kfgIoaIBfeIJrUjRCO0RBAhsIKzdEGLA4bGw0GBt9E35CjEdciH1CtBsAURKyipaAR0IQ7CgAZUtvckRhEIrEgF0gA_3
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAKwCMlAhgCwBsTlAtAOxyXsMCcDUmwAcAIzii2AZmoM61Dkz4AzKco5gCAOzoBbBMkBhigAJqmsDDoY9AZyTgUAe0JaISAEwMCKOK7gZ7MAA3OmxCA3AADyQABgIoWIBfRIJrUjRCO0QpADpKAhsIKzdEOLA4bGw0GBsDahiyjEciiAMytBsAUUrq2s6AR0JQ7CgAZUsfckRlUNrkgF0gA_3
 # 円 1
-particle end_rod ^0 ^ ^-2 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^0.51764 ^ ^-1.93185 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1 ^ ^-1.73205 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.41421 ^ ^-1.41421 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.73205 ^ ^-1 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.93185 ^ ^-0.51764 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^2 ^ ^0 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.93185 ^ ^0.51764 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.73205 ^ ^1 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1.41421 ^ ^1.41421 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^1 ^ ^1.73205 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^0.51764 ^ ^1.93185 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^0 ^ ^2 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-0.51764 ^ ^1.93185 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1 ^ ^1.73205 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.41421 ^ ^1.41421 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.73205 ^ ^1 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.93185 ^ ^0.51764 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-2 ^ ^0 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.93185 ^ ^-0.51764 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.73205 ^ ^-1 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1.41421 ^ ^-1.41421 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-1 ^ ^-1.73205 ~ ~1000000 ~ 0.00000035 0
-particle end_rod ^-0.51764 ^ ^-1.93185 ~ ~1000000 ~ 0.00000035 0
+particle end_rod ~0 ~ ~-3.5 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~0.90587 ~ ~-3.38074 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~1.75 ~ ~-3.03109 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~2.47487 ~ ~-2.47487 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~3.03109 ~ ~-1.75 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~3.38074 ~ ~-0.90587 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~3.5 ~ ~0 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~3.38074 ~ ~0.90587 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~3.03109 ~ ~1.75 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~2.47487 ~ ~2.47487 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~1.75 ~ ~3.03109 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~0.90587 ~ ~3.38074 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~0 ~ ~3.5 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-0.90587 ~ ~3.38074 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-1.75 ~ ~3.03109 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-2.47487 ~ ~2.47487 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-3.03109 ~ ~1.75 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-3.38074 ~ ~0.90587 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-3.5 ~ ~0 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-3.38074 ~ ~-0.90587 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-3.03109 ~ ~-1.75 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-2.47487 ~ ~-2.47487 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-1.75 ~ ~-3.03109 ~ ~100000000 ~ 0.000000005 0
+particle end_rod ~-0.90587 ~ ~-3.38074 ~ ~100000000 ~ 0.000000005 0

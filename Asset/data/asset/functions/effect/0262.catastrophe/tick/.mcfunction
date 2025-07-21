@@ -5,5 +5,4 @@
 # @within function asset:effect/0262.catastrophe/_/tick
 
 # 演出
-    particle ash ~ ~1.4 ~ 1 0.6 1 0 1 normal @a
-
+    execute if data storage asset:context {Stack:4} run function asset:effect/0262.catastrophe/fullset/passive

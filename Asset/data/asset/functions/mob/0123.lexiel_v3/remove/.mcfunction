@@ -7,3 +7,6 @@
 function asset:mob/super.remove
 
 execute as @e[type=item_display,tag=3F.AJ,sort=nearest,limit=1] run function animated_java:lexiel/remove/this
+
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_lexiel",Active:false}]
+    function asset:datapack/set_activation_state

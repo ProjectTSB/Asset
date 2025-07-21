@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ホーリー・バリア","color":"white"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"罠カード","color":"light_purple"}','{"text":"(1)相手モンスターの攻撃時に発動する。"}','{"text":"発動プレイヤーを攻撃対象に"}','{"text":"しているモンスターを全て破壊する。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"罠カード","color":"light_purple"}','{"text":"(1)相手モンスターの攻撃時に発動する。"}','{"text":"発動プレイヤーを攻撃対象にしているモンスター及び"}','{"text":"半径16ブロック以内のモンスターをすべて破壊する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

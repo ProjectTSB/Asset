@@ -13,27 +13,21 @@
 
 # プレイヤーを紐づけ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute at @a if score $OwnerID Temporary = @p UserID as @p run tag @s add 1075.Owner
+    execute as @a if score @s UserID = $OwnerID Temporary run tag @s add 1075.Owner
 
 # プレイヤーに追尾
     execute at @p[tag=1075.Owner] positioned ~ ~1.3 ~ positioned ^ ^ ^1.6 run tp @s ~ ~ ~ ~ ~
 
 # ntickおきに実行するやつ
-# 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-# ntickおきに実行
     scoreboard players operation $Interval Temporary %= $3 Const
-    execute if score $Interval Temporary matches 0 at @s if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function asset:object/1075.inferno_rush_arm/tick/hit
-# リセット
+    execute if score $Interval Temporary matches 0 at @s positioned ^ ^ ^0.4 run function asset:object/1075.inferno_rush_arm/tick/hit
     scoreboard players reset $Interval
 
 # ntickおきに実行するやつ
-# 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
-# ntickおきに実行
     scoreboard players operation $Interval Temporary %= $2 Const
     execute if score $Interval Temporary matches 0 run playsound entity.player.attack.nodamage neutral @a ~ ~ ~ 1 2
-# リセット
     scoreboard players reset $Interval
 
 # タグ消す

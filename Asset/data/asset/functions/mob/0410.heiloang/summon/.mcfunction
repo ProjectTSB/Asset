@@ -5,7 +5,7 @@
 # @within asset:mob/alias/410/summon
 
 # 既に召喚されている場合は中断する（TODO）
-    # execute if entity @e[tag=BE.EntityRoot] run return 0
+    # execute if entity @e[type=slime,tag=BE.EntityRoot] run return 0
 
 # 元となるEntityを召喚する
     summon slime ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","BE.EntityRoot"],Size:7,NoAI:1b,Silent:1b,DeathLootTable:"empty"}

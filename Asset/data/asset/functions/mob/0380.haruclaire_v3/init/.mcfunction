@@ -4,6 +4,10 @@
 #
 # @within asset:mob/alias/380/init
 
+# AJロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_haruclaire_v3",Active:true}]
+    function asset:datapack/set_activation_state
+
 # 継承元の処理実行
     function asset:mob/super.init
 
@@ -15,7 +19,7 @@
         function asset:mob/0380.haruclaire_v3/init/animated_java
 
 # 移動
-    tp @s ~ ~0.5 ~
+    execute rotated ~ 0 run tp @s ^ ^1 ^2
 
 # スコア初期化
     scoreboard players set @s AK.ActionCount 0

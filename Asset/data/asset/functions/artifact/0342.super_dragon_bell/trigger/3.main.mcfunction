@@ -8,9 +8,12 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        playsound entity.horse.gallop player @a ~ ~ ~ 1.0 0.5
-        playsound block.bell.use player @a ~ ~ ~ 1.0 1.5
-        particle cloud ~ ~1 ~ 0.5 0.5 0.5 0.1 30
-    # スーパードラゴン召喚
-        summon horse ~ ~0.1 ~ {Health:0.1f,CustomName:'[{"text":"スーパードラゴン","color":"aqua"}]',CustomNameVisible:1b,Tame:1b,Variant:0,SaddleItem:{id:"minecraft:saddle",Count:1b,tag:{TSB:{ItemMetaData:["BanEntityConditionItem","BanPossession"]}}},DeathLootTable:"minecraft:empty",active_effects:[{id:"jump_boost",amplifier:18b,duration:999999,show_particles:0b}],Attributes:[{Name:"generic.max_health",Base:0.1d},{Name:"horse.jump_strength",Base:2.0d},{Name:"generic.movement_speed",Base:0.6d}],Tags:["Friend"]}
+
+# 演出
+    playsound entity.horse.gallop player @a ~ ~ ~ 1.0 0.5
+    playsound block.bell.use player @a ~ ~ ~ 1.0 1.5
+    particle cloud ~ ~1 ~ 0.5 0.5 0.5 0.1 30
+
+# スーパードラゴン召喚
+    data modify storage api: Argument.ID set value 444
+    execute positioned ~ ~0.1 ~ run function api:mob/summon

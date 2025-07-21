@@ -9,6 +9,8 @@
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"灼炎の願望者","color":"#AB0000"}'
+# Mobの説明文 (TextComponentString[]) (オプション)
+    data modify storage asset:mob Lore set value ['{"text":"もっと燃えるがいいや！","color":"white"}','{"text":"島を燃やしたいという意思が具現化したもの。","color":"white"}','{"text":"攻撃を受けると、素早く不規則に飛び回る。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value

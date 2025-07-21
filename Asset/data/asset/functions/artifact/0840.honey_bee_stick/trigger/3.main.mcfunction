@@ -23,7 +23,7 @@
     function api:heal/reset
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 500.0f
+    data modify storage api: Argument.Damage set value 760.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier

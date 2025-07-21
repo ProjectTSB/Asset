@@ -12,7 +12,7 @@
     # 悪いがこれにあたったら死んでね☆
         data modify storage api: Argument.FixedDamage set value true
     # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはズルしようとしたが、ウサギたちに咎められてしまった","with":[{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sはズルしようとしたが、ウサギたちに咎められてしまった","with":[{"selector":"@s"}]}]'
 # 補正functionを実行
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual

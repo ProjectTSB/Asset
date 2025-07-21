@@ -24,9 +24,9 @@
 
 # 本気時は謎キャンセルでダッシュにチェインする
     # ノーマルモード
-        execute unless predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 140 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute unless predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 140 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
     # ハードモード
-        execute if predicate api:global_vars/difficulty/min/hard if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 120 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s[tag=AC.Health.50Per] General.Mob.Tick matches 120 unless score @s AC.Count.Dash matches 0.. run function asset:mob/0372.tutankhamen/tick/skill/dash/chain_dash
 
 # ニュートラルに戻る
     execute if score @s General.Mob.Tick matches 140 as @e[type=item_display,tag=AC.AJLink,distance=..16,sort=nearest,limit=1] run function animated_java:tutankhamen/animations/neutral/tween {to_frame: 0, duration: 5}

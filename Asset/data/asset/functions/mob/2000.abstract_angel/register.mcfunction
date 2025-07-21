@@ -14,3 +14,4 @@
     data modify storage asset:mob Type set value "Enemy.Boss"
 # フィールド
     data modify storage asset:mob Field.BossbarName set value '{"selector":"@s"}'
+    data modify storage asset:mob Field.InflictDebuffCooldown set value 20

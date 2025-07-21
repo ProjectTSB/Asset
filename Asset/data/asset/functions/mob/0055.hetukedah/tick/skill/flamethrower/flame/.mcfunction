@@ -23,7 +23,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/hit
 
 # 再帰(ノーマル)
-    execute unless predicate api:global_vars/difficulty/min/hard if entity @s[distance=..12] positioned ^ ^ ^1 run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/
+    execute unless predicate api:global_vars/difficulty/min/3_blessless if entity @s[distance=..12] positioned ^ ^ ^1 run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/
 
 # 再帰(ハード、長い)
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[distance=..24] positioned ^ ^ ^1 run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[distance=..24] positioned ^ ^ ^1 run function asset:mob/0055.hetukedah/tick/skill/flamethrower/flame/

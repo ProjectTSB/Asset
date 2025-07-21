@@ -43,3 +43,6 @@
 
 # プレイヤーのタグを外す
     tag @a[tag=TargetPlayer] remove TargetPlayer
+
+# ヒットリストを削除
+    data remove storage asset:context this.HitList

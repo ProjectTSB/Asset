@@ -3,6 +3,10 @@
 # Mobの被ダメージ時の処理
 #
 # @within function asset:mob/alias/280/hurt
+
+# DoT は受け付けないものとする
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
 #> private
 # @private
     #declare tag 7S.This

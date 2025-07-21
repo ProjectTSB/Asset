@@ -7,5 +7,5 @@
 # super.remove
     function asset:mob/super.remove
 
-# 召喚地点記録Markerを破壊
-    kill @e[type=marker,tag=26.SpawnPoint,distance=..100]
+# 色々消し飛ばす
+    function asset:mob/0078.messenger_of_thunder/kill_objects

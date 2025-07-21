@@ -1,8 +1,8 @@
-#> asset:object/2160.haruclaire_ic_taurus/tick/effect_break
+#> asset:object/2161.haruclaire_ic_pisces/tick/effect_break
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2160.haruclaire_ic_taurus/tick/idle
+# @within asset:object/2161.haruclaire_ic_pisces/tick/idle
 
 # 演出
     data modify entity @s item set value {id:"minecraft:air",Count:1b}

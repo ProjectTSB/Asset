@@ -13,7 +13,7 @@
 
 # ダメージを与える
     # データ設定
-        data modify storage api: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set value 65.0f
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "Fire"
     # tag付けされたプレイヤーにダメージを与える

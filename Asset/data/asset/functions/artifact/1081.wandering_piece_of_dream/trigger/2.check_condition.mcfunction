@@ -19,7 +19,7 @@
     execute if entity @s[tag=CanUsed] run scoreboard players operation @s U1.HealSum += $U1.HealVal Temporary
 
 # 累計回復量が20以下ならCanUsedを削除
-    execute unless score @s U1.HealSum matches 200.. run tag @s remove CanUsed
+    execute unless score @s U1.HealSum matches 650.. run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1081.wandering_piece_of_dream/trigger/3.main

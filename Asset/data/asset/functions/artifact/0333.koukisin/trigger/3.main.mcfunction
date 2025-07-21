@@ -14,7 +14,7 @@
     playsound minecraft:block.anvil.place player @a ~ ~ ~ 0.8 2
 
 # 耐性貫通ダメージ
-    data modify storage api: Argument.Damage set value 20f
+    data modify storage api: Argument.Damage set value 12f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     function api:damage/modifier

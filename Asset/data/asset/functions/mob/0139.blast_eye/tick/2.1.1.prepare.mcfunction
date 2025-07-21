@@ -13,4 +13,4 @@
     particle minecraft:dust_color_transition 1.0 0.75 0.0 1.0 0.0 0.0 0.0 ^ ^ ^0.25 0.1 0.1 0.1 1 2
 
 # ハード以上の場合の処理
-    execute if predicate api:global_vars/difficulty/min/hard run function asset:mob/0139.blast_eye/tick/hard_effects
+    execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0139.blast_eye/tick/hard_effects

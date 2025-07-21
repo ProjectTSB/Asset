@@ -4,6 +4,10 @@
 #
 # @within function asset:object/2041.lastboss_thunder/tick/
 
+#> ヒットタグ
+# @private
+    #declare tag Hit
+
 # 演出
     particle explosion ~ ~20 ~ 0 0 0 0 1 force @a[distance=..16]
     particle end_rod ~ ~5 ~ 0.1 3 0.1 0.05 10
@@ -19,7 +23,7 @@
 
 # ダメージ設定
     # 与えるダメージ
-        data modify storage api: Argument.Damage set value 50.0f
+        data modify storage api: Argument.Damage set value 70.0f
     # 魔法属性
         data modify storage api: Argument.AttackType set value "Magic"
     # 雷属性
@@ -27,6 +31,9 @@
     # ダメージ
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
-        execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
+        tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add Hit
+        execute positioned ~-1 ~0 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=19,dz=1] add Hit
+        execute as @a[tag=Hit,distance=..64] run function api:damage/
 # リセット
     function api:damage/reset
+    tag @a[tag=Hit,distance=..64] remove Hit

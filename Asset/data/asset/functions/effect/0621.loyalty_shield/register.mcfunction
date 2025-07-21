@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"忠誠の盾"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"「忠誠の幻影」が存在している限り、ダメージを大きく軽減する"}']
+    data modify storage asset:effect Description set value ['{"text":"「忠誠の幻想」が存在している限り、ダメージを大きく軽減する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)

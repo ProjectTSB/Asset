@@ -19,7 +19,7 @@
 
 # ハードモード時、本気になると、あろうことかレーザー攻撃が定期的にオートで発動する。
 # ただし、見栄えと画面のごちゃつきを考慮して、同じレーザーが降ってくるスラム攻撃のときは止まる
-    execute if predicate api:global_vars/difficulty/min/hard if entity @s[tag=8N.Health.50Per,tag=!8N.Skill.GroundSlam] run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=8N.Health.50Per,tag=!8N.Skill.GroundSlam] run function asset:mob/0311.blazing_inferno/tick/base_move/passive_laser/
 
 # マーカーを中心に回る
     # 本気前

@@ -37,8 +37,8 @@
 # プレイヤー追従ハイドロ
     execute if score @s AW.AnimationTick matches 122 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
     execute if score @s AW.AnimationTick matches 147 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 157 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
-    execute if predicate api:global_vars/difficulty/min/hard if score @s AW.AnimationTick matches 167 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 157 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
+    execute if predicate api:global_vars/difficulty/min/3_blessless if score @s AW.AnimationTick matches 167 at @e[type=marker,tag=AW.Marker.SummonPoint,distance=..100] run function asset:mob/0392.ecual_first/ai/animation/10_0_hydro_storm/summon/2
 
 # クワイタスレイン
     execute if score @s AW.AnimationTick matches 151 run function asset:mob/0392.ecual_first/ai/projectile/quietus_rain/0.summon

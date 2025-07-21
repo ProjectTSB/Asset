@@ -12,7 +12,7 @@
     execute if entity @s[tag=AG.SkillAxe4] run function asset:mob/0376.convict_v2/tick/04.skill_axe4/main
     execute if entity @s[tag=AG.SkillAxe5] run function asset:mob/0376.convict_v2/tick/05.skill_axe5/main
     execute if entity @s[tag=AG.SkillAxe6] run function asset:mob/0376.convict_v2/tick/06.skill_axe6/main
-    execute if entity @s[tag=AG.SkillAxe7] if predicate api:global_vars/difficulty/min/hard run function asset:mob/0376.convict_v2/tick/07.skill_axe7/main_hard
-    execute if entity @s[tag=AG.SkillAxe7] unless predicate api:global_vars/difficulty/min/hard run function asset:mob/0376.convict_v2/tick/07.skill_axe7/main
+    execute if entity @s[tag=AG.SkillAxe7] if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0376.convict_v2/tick/07.skill_axe7/main_hard
+    execute if entity @s[tag=AG.SkillAxe7] unless predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0376.convict_v2/tick/07.skill_axe7/main
 
     execute if entity @s[tag=AG.Opening] run function asset:mob/0376.convict_v2/tick/00.opening/main

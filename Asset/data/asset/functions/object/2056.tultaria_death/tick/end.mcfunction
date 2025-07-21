@@ -17,6 +17,9 @@
     particle minecraft:poof ~ ~1 ~ 1 1 1 0.1 50
     particle minecraft:end_rod ~ ~1 ~ 0.2 0.2 0.2 0.6 200
 
+# ドロップ
+    function asset:object/2056.tultaria_death/tick/drop.m with storage asset:context this.Pos
+
 # 画面エフェクト
     title @a[distance=..64] times 5 15 20
     title @a[distance=..64] title {"text":""}
@@ -29,3 +32,7 @@
 
 # 消滅
     kill @s
+
+# AJアンロード
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_tultaria",Active:false}]
+    function asset:datapack/set_activation_state
