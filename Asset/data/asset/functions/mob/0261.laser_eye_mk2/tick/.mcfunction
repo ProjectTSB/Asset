@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/261/tick
 
 # プレイヤーが一定の距離にいたらReadyタグを付与
-    execute if entity @p[gamemode=!spectator,distance=..8] run tag @s add 79.Ready
+    execute unless entity @s[tag=79.Ready] if entity @p[gamemode=!spectator,distance=..8] run tag @s add 79.Ready
 
 # Readyタグがないとき
     # @pを追尾
