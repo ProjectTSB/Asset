@@ -1,4 +1,4 @@
-#> asset:mob/0261.laser_eye_mk2/tick/end
+#> asset:mob/0261.laser_eye_mk2/tick/reset
 #
 #
 #

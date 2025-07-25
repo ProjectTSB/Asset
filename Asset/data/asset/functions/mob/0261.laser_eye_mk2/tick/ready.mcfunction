@@ -13,10 +13,10 @@
 # 音を鳴らす
     execute if score @s General.Mob.Tick matches 1 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 1 2
 # 一定スコアで射撃準備
-    execute if score @s General.Mob.Tick matches ..20 anchored eyes positioned ^ ^ ^1.6 rotated ~ ~90 run function asset:mob/0261.laser_eye_mk2/tick/particle
+    execute if score @s General.Mob.Tick matches ..20 anchored eyes positioned ^ ^ ^1.6 rotated ~ ~90 run function asset:mob/0261.laser_eye_mk2/tick/vfx
 
 # 一定スコアで射撃
     execute if score @s General.Mob.Tick matches 20 run function asset:mob/0261.laser_eye_mk2/tick/shoot
 
 # 一定スコアで終了
-    execute if score @s General.Mob.Tick matches 70.. run function asset:mob/0261.laser_eye_mk2/tick/end
+    execute if score @s General.Mob.Tick matches 70.. run function asset:mob/0261.laser_eye_mk2/tick/reset
