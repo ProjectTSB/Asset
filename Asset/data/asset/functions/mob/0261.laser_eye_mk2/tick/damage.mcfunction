@@ -1,9 +1,9 @@
-#> asset:mob/0261.laser_eye_mk2/tick/5.damage
+#> asset:mob/0261.laser_eye_mk2/tick/damage
 #
 # ダメージ与える所
 #
 # @within function
-#   asset:mob/0261.laser_eye_mk2/tick/4.shoot
+#   asset:mob/0261.laser_eye_mk2/tick/shoot
 
 # 演出
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1

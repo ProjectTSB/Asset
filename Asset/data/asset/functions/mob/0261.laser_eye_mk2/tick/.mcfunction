@@ -14,4 +14,4 @@
     execute if entity @p[gamemode=!spectator,distance=..8] unless score @s General.Mob.Tick matches -2147483648..2147483647 run scoreboard players set @s General.Mob.Tick 0
 
 # スコアを持っているなら実行
-    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0261.laser_eye_mk2/tick/3.ready
+    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0261.laser_eye_mk2/tick/ready

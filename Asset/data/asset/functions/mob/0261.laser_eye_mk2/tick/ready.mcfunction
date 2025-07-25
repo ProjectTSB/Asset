@@ -1,4 +1,4 @@
-#> asset:mob/0261.laser_eye_mk2/tick/3.ready
+#> asset:mob/0261.laser_eye_mk2/tick/ready
 #
 #
 #
@@ -16,11 +16,11 @@
     execute if score @s General.Mob.Tick matches ..20 anchored eyes positioned ^ ^ ^1.6 rotated ~ ~90 run function asset:mob/0261.laser_eye_mk2/tick/particle
 
 # 一定スコアで射撃
-    execute if score @s General.Mob.Tick matches 20 anchored eyes positioned ^ ^ ^1.6 run function asset:mob/0261.laser_eye_mk2/tick/4.shoot
+    execute if score @s General.Mob.Tick matches 20 anchored eyes positioned ^ ^ ^1.6 run function asset:mob/0261.laser_eye_mk2/tick/shoot
     execute if score @s General.Mob.Tick matches 20 run tag @s remove Landing
     execute if score @s General.Mob.Tick matches 20 run tag @s remove 79.Ready
 # 発砲演出
     execute if score @s General.Mob.Tick matches 20 run playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 1
 
 # 一定スコアで終了
-    execute if score @s General.Mob.Tick matches 70 run function asset:mob/0261.laser_eye_mk2/tick/6.end
+    execute if score @s General.Mob.Tick matches 70 run function asset:mob/0261.laser_eye_mk2/tick/end

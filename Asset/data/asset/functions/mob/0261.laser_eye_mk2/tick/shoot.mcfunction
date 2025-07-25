@@ -1,10 +1,10 @@
-#> asset:mob/0261.laser_eye_mk2/tick/4.shoot
+#> asset:mob/0261.laser_eye_mk2/tick/shoot
 #
 # ビーム処理
 #
 # @within function
-#   asset:mob/0261.laser_eye_mk2/tick/3.ready
-#   asset:mob/0261.laser_eye_mk2/tick/4.shoot
+#   asset:mob/0261.laser_eye_mk2/tick/ready
+#   asset:mob/0261.laser_eye_mk2/tick/shoot
 
 # ここから先は神器側の効果の処理を書く
 # 着弾検知
@@ -21,7 +21,7 @@
     particle minecraft:dust 0.075 0.604 0.063 0.7 ~ ~ ~ 0.3 0.3 0.3 0 9
 
 # 着弾
-    execute if entity @s[tag=Landing] run function asset:mob/0261.laser_eye_mk2/tick/5.damage
+    execute if entity @s[tag=Landing] run function asset:mob/0261.laser_eye_mk2/tick/damage
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0261.laser_eye_mk2/tick/4.shoot
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0261.laser_eye_mk2/tick/shoot
