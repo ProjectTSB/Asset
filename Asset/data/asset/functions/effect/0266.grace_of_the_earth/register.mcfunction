@@ -16,7 +16,7 @@
 # スタック (int) (default = API || 1)
     data modify storage asset:effect Stack set value 1
 # 消すのに必要なレベル (int) (default = 1)
-    data modify storage asset:effect RequireClearLv set value 2
+    data modify storage asset:effect RequireClearLv set value 3
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     data modify storage asset:effect StackVisible set value false
 
