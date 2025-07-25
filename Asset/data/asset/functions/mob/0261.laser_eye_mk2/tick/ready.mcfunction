@@ -23,4 +23,4 @@
     execute if score @s General.Mob.Tick matches 20 run playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 1
 
 # 一定スコアで終了
-    execute if score @s General.Mob.Tick matches 70 run function asset:mob/0261.laser_eye_mk2/tick/end
+    execute if score @s General.Mob.Tick matches 70.. run function asset:mob/0261.laser_eye_mk2/tick/end
