@@ -6,4 +6,4 @@
 
 # リセット
     tag @s remove 79.Ready
-    scoreboard players reset @s 79.Time
+    scoreboard players reset @s General.Mob.Tick
