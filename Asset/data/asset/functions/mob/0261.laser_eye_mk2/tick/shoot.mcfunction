@@ -12,7 +12,7 @@
 
 # レーザー演出オブジェクト
     data modify storage api: Argument.ID set value 2168
-    data modify storage api: Argument.FieldOverride set value {Scale:[1f,0f,1f],Color:5701450,DisappearInterpolation:2,LifeTime:7}
+    data modify storage api: Argument.FieldOverride set value {Scale:[1f,0f,1f],Color:7733114,DisappearInterpolation:2,LifeTime:7}
     execute store result storage api: Argument.FieldOverride.Scale[1] float 0.5 run scoreboard players get $79.Range Temporary
     execute anchored eyes positioned ^ ^ ^1.6 run function api:object/summon
 
