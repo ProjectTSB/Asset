@@ -3,7 +3,7 @@
 # ダメージ与える所
 #
 # @within function
-#   asset:mob/0261.laser_eye_mk2/tick/shoot
+#   asset:mob/0261.laser_eye_mk2/tick/shoot_recursive
 
 # 演出
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1

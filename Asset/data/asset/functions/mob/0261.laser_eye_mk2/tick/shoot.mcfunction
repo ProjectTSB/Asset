@@ -1,27 +1,22 @@
 #> asset:mob/0261.laser_eye_mk2/tick/shoot
 #
-# ビーム処理
 #
-# @within function
-#   asset:mob/0261.laser_eye_mk2/tick/ready
-#   asset:mob/0261.laser_eye_mk2/tick/shoot
+#
+# @within function asset:mob/0261.laser_eye_mk2/tick/ready
 
-# ここから先は神器側の効果の処理を書く
-# 着弾検知
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=player,dx=0] run tag @s add Landing
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing
-
-# ターゲットにタグ付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=player,dx=0] run tag @e[type=#lib:living,type=player,gamemode=!spectator,dx=0,limit=1] add LandingTarget
+# 発射
+    execute anchored eyes positioned ^ ^ ^1.6 run function asset:mob/0261.laser_eye_mk2/tick/shoot_recursive
 
 # 演出
-    particle minecraft:composter ~ ~ ~ 0.1 0.1 0.1 0 1
-    particle minecraft:composter ~ ~ ~ 0.3 0.3 0.3 0 9
-    particle minecraft:dust 0.075 0.604 0.063 0.7 ~ ~ ~ 0 0 0 0 0
-    particle minecraft:dust 0.075 0.604 0.063 0.7 ~ ~ ~ 0.3 0.3 0.3 0 9
+    playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 1
 
-# 着弾
-    execute if entity @s[tag=Landing] run function asset:mob/0261.laser_eye_mk2/tick/damage
+# レーザー演出オブジェクト
+    data modify storage api: Argument.ID set value 2168
+    data modify storage api: Argument.FieldOverride set value {Scale:[1f,0f,1f],Color:5701450,DisappearInterpolation:2,LifeTime:7}
+    execute store result storage api: Argument.FieldOverride.Scale[1] float 0.5 run scoreboard players get $79.Range Temporary
+    execute anchored eyes positioned ^ ^ ^1.6 run function api:object/summon
 
-# 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0261.laser_eye_mk2/tick/shoot
+# リセット
+    tag @s remove Landing
+    tag @s remove 79.Ready
+    scoreboard players reset $79.Range Temporary
