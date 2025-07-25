@@ -9,17 +9,12 @@
     playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
     particle explosion ~ ~ ~ 0 0 0 0 0
 
-# ダメージ設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 24f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Magic"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "Thunder"
-    # ダメージ
-        function api:damage/modifier
-        execute as @p[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..20,limit=1] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    function api:damage/modifier
+    execute as @p[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..20,limit=1] run function api:damage/
     function api:damage/reset
 
 # 着弾タグを消す
