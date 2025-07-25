@@ -17,8 +17,8 @@
 # タグを持っているならその場でプレイヤー追尾
     execute if entity @s[tag=79.Ready] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-600 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ ~
 
-# プレイヤーが一定の距離にいたらスコアを付与
-    execute if entity @p[gamemode=!spectator,distance=..8] unless score @s General.Mob.Tick matches -2147483648..2147483647 run scoreboard players set @s General.Mob.Tick 0
+# プレイヤーが一定の距離にいたらReadyタグを付与
+    execute if entity @p[gamemode=!spectator,distance=..8] run tag @s add 79.Ready
 
-# スコアを持っているなら実行
-    execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0261.laser_eye_mk2/tick/ready
+# Readyを持っているなら実行
+    execute if entity @s[tag=79.Ready] run function asset:mob/0261.laser_eye_mk2/tick/ready

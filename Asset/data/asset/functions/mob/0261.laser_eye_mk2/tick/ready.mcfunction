@@ -8,8 +8,6 @@
 # スコアを増やす
     scoreboard players add @s General.Mob.Tick 1
 
-# タグを与える
-    execute if score @s General.Mob.Tick matches 1 run tag @s add 79.Ready
 # 音を鳴らす
     execute if score @s General.Mob.Tick matches 1 run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 1 2
 # 一定スコアで射撃準備
