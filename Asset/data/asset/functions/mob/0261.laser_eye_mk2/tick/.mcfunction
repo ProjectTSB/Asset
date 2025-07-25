@@ -4,8 +4,13 @@
 #
 # @within function asset:mob/alias/261/tick
 
-# タグを持たないならホーミングじみた移動
-    execute if entity @s[tag=!79.Ready] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.1 ~ ~
+# Readyタグがないとき
+    # @pを追尾
+        execute if entity @s[tag=!79.Ready] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    # プレイヤーが近くにいないなら前進
+        execute if entity @s[tag=!79.Ready] at @s unless entity @p[gamemode=!spectator,distance=..8] run tp @s ^ ^ ^0.1 ~ ~
+    # プレイヤーがすごく近ければ後退
+        execute if entity @s[tag=!79.Ready] at @s if entity @p[gamemode=!spectator,distance=..5] run tp @s ^ ^ ^-0.08 ~ ~
 
 # タグを持っているならその場でプレイヤー追尾
     execute if entity @s[tag=79.Ready] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-600 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ ~
