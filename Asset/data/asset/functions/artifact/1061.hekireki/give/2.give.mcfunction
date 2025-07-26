@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"霹靂","color":"#D9B111"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"弓を引き絞り続けることで最大3段階のチャージを行う","color":"white"}','{"text":"チャージ段階に応じてダメージが上昇し","color":"white"}','{"text":"フルチャージした矢は十字の雷を落とす","color":"white"}','{"text":"雷鳴の化身が持っていた弓","color":"gray"}','{"text":"破滅の如き雷鳴を呼び、晴天を裂け","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"弓を引き絞り続けることで最大3段階のチャージを行う","color":"white"}','{"text":"チャージ段階に応じてダメージが上昇し","color":"white"}','{"text":"フルチャージした矢は十字の雷を落とす","color":"white"}','{"text":"雷鳴の化身が持っていた弓","color":"gray"}','{"text":"破滅の如き雷鳴を呼び、青天を裂け","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
