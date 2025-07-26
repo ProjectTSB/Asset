@@ -6,4 +6,4 @@
 
 # 無敵化
     data modify entity @s Invulnerable set value 1b
-    execute if score @s 93.AnimationTimer matches 1 run tag @s add Uninterferable
+    tag @s add Uninterferable
