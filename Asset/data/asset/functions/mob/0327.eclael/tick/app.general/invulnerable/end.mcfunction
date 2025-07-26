@@ -5,5 +5,5 @@
 # @within function asset:mob/0327.eclael/tick/app.skill_events/**
 
 # 無敵化終了
-    data modify entity @s Invulnerable set value false
+    data modify entity @s Invulnerable set value 0b
     execute if score @s 93.AnimationTimer matches 1 run tag @s remove Uninterferable
