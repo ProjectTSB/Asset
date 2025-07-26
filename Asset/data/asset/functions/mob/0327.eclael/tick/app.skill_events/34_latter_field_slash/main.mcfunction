@@ -56,12 +56,8 @@
         execute if entity @s[tag=93.Skill.FieldSlash.A] if score @s 93.AnimationTimer matches 175 if predicate api:global_vars/difficulty/min/3_blessless rotated ~300 0 positioned ~ ~-2 ~ run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/attack_0
 
 # 無敵
-    execute if score @s 93.AnimationTimer matches 34 run data modify entity @s Invulnerable set value true
-    execute if score @s 93.AnimationTimer matches 34 run tag @s add Uninterferable
-    execute if score @s 93.AnimationTimer matches 601 run data modify entity @s Invulnerable set value false
-    execute if score @s 93.AnimationTimer matches 601 run tag @s remove Uninterferable
-    # execute if score @s 93.AnimationTimer matches 34..600 run effect give @s resistance 1 10 true
-    # execute if score @s 93.AnimationTimer matches 601 run effect clear @s resistance
+    execute if score @s 93.AnimationTimer matches 34 run function asset:mob/0327.eclael/tick/app.general/invulnerable/start
+    execute if score @s 93.AnimationTimer matches 601 run function asset:mob/0327.eclael/tick/app.general/invulnerable/end
 
 # 終了
     execute if score @s 93.AnimationTimer matches 600 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/animation_1
