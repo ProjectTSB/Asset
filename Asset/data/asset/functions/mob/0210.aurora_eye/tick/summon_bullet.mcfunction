@@ -18,7 +18,7 @@
     execute store result storage api: Argument.FieldOverride.Stack int 1 run scoreboard players remove $Difficulty Temporary 1
 
 # MobUUID設定
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players remove $Difficulty Temporary 1
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] MobUUID
 
 # 発射
     data modify storage api: Argument.ID set value 2076
