@@ -5,7 +5,7 @@
 # @within function asset:mob/0327.eclael/tick/
 
 # 耐性のリセット
-    function asset:mob/0327.eclael/tick/app.general/12.end_guard_prepare
+    # function asset:mob/0327.eclael/tick/app.general/12.end_guard_prepare
 
 # デバッグ用強制再生
     # tag @s add 93.Skill.Latter.SpinSlash
