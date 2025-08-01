@@ -654,6 +654,8 @@
     #declare tag/block lib:glasses                                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/glasses.json#L1
     #declare tag/block lib:has_inventory                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/has_inventory.json#L1
     #declare tag/block lib:no_collision                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/no_collision.json#L1
+    #declare tag/block lib:no_collision_corals                                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/no_collision_corals.json#L1
+    #declare tag/block lib:no_collision_flowers                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/no_collision_flowers.json#L1
     #declare tag/block lib:no_collision_without_fluid                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/no_collision_without_fluid.json#L1
     #declare tag/block lib:ores                                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/ores.json#L1
     #declare tag/block lib:torches                                                    from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/blocks/torches.json#L1
