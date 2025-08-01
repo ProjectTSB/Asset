@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ナースコール","color":"#FFFFFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"一定時間回復をしてくれるメディックを召喚する"}','{"text":"彼女はあなたのためにその身を削る","color":"gray"}','{"text":"自己犠牲のもとに、彼女の治癒は成り立つ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"一定時間回復をしてくれるメディックを召喚する"}','{"text":"メディックは周囲5mのプレイヤーを20秒間かけて65回復する"}','{"text":"彼女はあなたのためにその身を削る","color":"gray"}','{"text":"自己犠牲のもとに、彼女の治癒は成り立つ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
