@@ -15,8 +15,8 @@
         execute at @s unless entity @p[gamemode=!spectator,distance=..8] run tp @s ^ ^ ^0.1 ~ ~
 
 
-# プレイヤーがすごく近いかつ、後ろが壁でなければゆっくり後退
-    execute if entity @p[gamemode=!spectator,distance=..5] anchored eyes if block ^ ^ ^-1 #lib:no_collision anchored feet run tp @s ^ ^ ^-0.08 ~ ~
+# プレイヤーがすごく近いかつ、後ろが床でなく、後ろが壁でもなければゆっくり後退
+    execute if entity @p[gamemode=!spectator,distance=..5] anchored eyes positioned ^ ^ ^ if block ^ ^ ^-1 #lib:no_collision if block ~ ~-0.25 ~ #lib:no_collision anchored feet at @s run tp @s ^ ^ ^-0.08 ~ ~
 
 # Readyタグがあるときは発射準備
     execute if entity @s[tag=79.Ready] run function asset:mob/0261.laser_eye_mk2/tick/ready
