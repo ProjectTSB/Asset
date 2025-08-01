@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"ブロックを掘る速度が大きく上昇する","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 1200
+    # data modify storage asset:effect Duration set value 1200
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
