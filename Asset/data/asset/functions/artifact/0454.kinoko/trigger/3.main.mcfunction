@@ -8,11 +8,29 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    # 演出
-        tellraw @s [{"text": "<"},{"selector":"@s"},{"text": "> き の こ 万 歳 ！"}]
-    # 処理
-        function api:modifier/max_health/get
-        execute store result storage api: Argument.Heal double 0.01 run data get storage api: Return.MaxHealth 20
-        function api:heal/modifier
-        function api:heal/
-        function api:heal/reset
+
+#> Val
+# @private
+    #declare score_holder $MaxHealth
+    #declare score_holder $CurHealth
+
+# 演出
+    tellraw @s [{"text": "<"},{"selector":"@s"},{"text": "> き の こ 万 歳 ！"}]
+
+# 失った体力の20%を回復する
+
+# 現在/最大体力を取得する(100倍)
+    function api:data_get/health
+    execute store result score $CurHealth Temporary run data get storage api: Health 100
+    function api:modifier/max_health/get
+    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
+
+# 失った体力(100倍)を計算し回復する
+    execute store result storage api: Argument.Heal double 0.002 run scoreboard players operation $MaxHealth Temporary -= $CurHealth Temporary
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset
+
+# リセット
+    scoreboard players reset $MaxHealth Temporary
+    scoreboard players reset $CurHealth Temporary
