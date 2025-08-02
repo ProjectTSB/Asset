@@ -34,8 +34,8 @@
             execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
         # as Mob：@s のTemporaryが1..ならHitする
             execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
-        # プレイヤーへの誤Hit処理 HitしたMobの0.05m以内にいると自分にもあたる やっぱPKしたいじゃぁん？
-            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.05] run tag @s add Hit
+        # プレイヤーへの誤Hit処理 HitしたMobの近くにいると自分にもあたる やっぱPKしたいじゃぁん？
+            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.10] run tag @s add Hit
 
 
 # ダメージを設定
@@ -73,7 +73,7 @@
 
 # 効果
     # 通常Hit処理
-        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
+        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function asset:artifact/0079.shoot_down_a_flying_dragon/trigger/damage_foreach
 
     # 敵1体の浮遊を解除
         data modify storage api: Argument.ID set value 125
