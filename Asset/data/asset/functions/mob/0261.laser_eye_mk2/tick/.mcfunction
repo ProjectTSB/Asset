@@ -12,7 +12,7 @@
         execute if entity @s[tag=!79.Ready] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
     # プレイヤーが近くにいないなら前進
-        execute at @s unless entity @p[gamemode=!spectator,distance=..8] run tp @s ^ ^ ^0.1 ~ ~
+        execute if entity @s[tag=!79.Ready] at @s unless entity @p[gamemode=!spectator,distance=..8] run tp @s ^ ^ ^0.1 ~ ~
 
 
 # プレイヤーがすごく近いかつ、後ろが床でなく、後ろが壁でもなければゆっくり後退
