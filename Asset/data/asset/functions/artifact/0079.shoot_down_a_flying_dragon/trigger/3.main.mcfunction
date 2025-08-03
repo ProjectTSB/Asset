@@ -73,7 +73,9 @@
 
 # 効果
     # 通常Hit処理
+        function api:damage/single_damage_session/open
         execute as @e[type=#lib:living,tag=Hit,distance=..10] run function asset:artifact/0079.shoot_down_a_flying_dragon/trigger/damage_foreach
+        function api:damage/single_damage_session/close
 
     # 敵1体の浮遊を解除
         data modify storage api: Argument.ID set value 125
