@@ -34,8 +34,8 @@
             execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
         # as Mob：@s のTemporaryが1..ならHitする
             execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
-        # プレイヤーへの誤Hit処理 HitしたMobの0.05m以内にいると自分にもあたる やっぱPKしたいじゃぁん？
-            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.05] run tag @s add Hit
+        # プレイヤーへの誤Hit処理 HitしたMobの近くにいると自分にもあたる やっぱPKしたいじゃぁん？
+            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.10] run tag @s add Hit
 
 
 # ダメージを設定
@@ -61,7 +61,7 @@
 
 # 演出
     # Particle
-        execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] run particle enchanted_hit ~ ~2 ~ 0.02 5 0.02 0 75 force @a
+        execute at @e[type=#lib:living,tag=Hit,distance=..10] run particle enchanted_hit ~ ~2 ~ 0.02 5 0.02 0 75 force @a
         execute if score $AttackStrength Temporary matches 0 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 0.941 1 0.11 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
         execute if score $AttackStrength Temporary matches 1 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 1 0.69 0.11 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
         execute if score $AttackStrength Temporary matches 2 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 1 0.176 0.176 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
@@ -73,14 +73,16 @@
 
 # 効果
     # 通常Hit処理
-        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
+        function api:damage/single_damage_session/open
+        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function asset:artifact/0079.shoot_down_a_flying_dragon/trigger/damage_foreach
+        function api:damage/single_damage_session/close
 
     # 敵1体の浮遊を解除
         data modify storage api: Argument.ID set value 125
         execute as @e[type=#lib:living,tag=Hit,distance=..10,limit=1] run function api:entity/mob/effect/remove/from_id
 
 # リセット
-    tag @e[type=#lib:living,type=!player,tag=Hit,distance=..10] remove Hit
+    tag @e[type=#lib:living,tag=Hit,distance=..10] remove Hit
     scoreboard players reset @e[type=#lib:living,tag=!Uninterferable,distance=..10] Temporary
     scoreboard players reset $Weather Temporary
     scoreboard players reset $AroundWater Temporary
