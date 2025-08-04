@@ -33,6 +33,7 @@
     execute rotated ~250 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
     execute rotated ~260 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
     execute rotated ~270 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
+    execute rotated ~280 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
     execute rotated ~290 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
     execute rotated ~300 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
     execute rotated ~310 0 positioned ^ ^ ^0.8 run particle wax_off ~ ~ ~ ^ ^ ^100000000 0.0000001 0
