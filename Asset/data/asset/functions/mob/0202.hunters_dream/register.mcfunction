@@ -1,6 +1,9 @@
 #> asset:mob/0202.hunters_dream/register
 # @within asset:mob/alias/202/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
+
 # ID (int)
     data modify storage asset:mob ID set value 202
 # Type (string) Wikiを参照
