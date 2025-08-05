@@ -57,6 +57,9 @@
 
 # フィールド
 
+# サイドステップをするか否か
+    data modify storage asset:mob Field.SideStep set value false
+
 # バニラ近接ダメージ
     data modify storage asset:mob Field.Vanilla.Damage set value 8f
 
