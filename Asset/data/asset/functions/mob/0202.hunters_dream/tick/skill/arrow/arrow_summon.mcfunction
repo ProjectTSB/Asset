@@ -4,10 +4,6 @@
 #
 # @within function asset:mob/0202.hunters_dream/tick/skill/arrow/
 
-#> private
-# @private
-    #declare tag 5M.ArrowThis
-
 # 演出
     playsound entity.arrow.shoot hostile @a ~ ~ ~ 1 1
 # 矢を召喚する
