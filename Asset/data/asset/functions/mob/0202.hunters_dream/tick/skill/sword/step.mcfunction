@@ -4,11 +4,9 @@
 #
 # @within function asset:mob/0202.hunters_dream/tick/skill/sword/
 
-# 数値
-    data modify storage lib: Argument.VectorMagnitude set value 1.6
-# 飛ぶ方向
-    execute facing entity @p[gamemode=!spectator] eyes rotated ~-10 ~ run function lib:motion/
-# リセット
+# Motion
+    data modify storage lib: Argument.VectorMagnitude set value 2.3
+    execute facing entity @p[gamemode=!spectator] feet rotated ~ ~-12.5 run function lib:motion/
     data remove storage lib: Argument
 
 # ステップ中に攻撃をしないように弱体化を付与
