@@ -1,8 +1,8 @@
-#> asset:mob/0202.hunters_dream/tick/2.skill_arrow/3.arrow_summon
+#> asset:mob/0202.hunters_dream/tick/skill/arrow/arrow_summon
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/2.skill_arrow/1.skill_arrow
+# @within function asset:mob/0202.hunters_dream/tick/skill/arrow/
 
 #> private
 # @private

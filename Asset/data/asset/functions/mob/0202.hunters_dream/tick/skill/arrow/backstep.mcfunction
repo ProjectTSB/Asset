@@ -1,8 +1,8 @@
-#> asset:mob/0202.hunters_dream/tick/2.skill_arrow/2.backstep
+#> asset:mob/0202.hunters_dream/tick/skill/arrow/backstep
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/2.skill_arrow/1.skill_arrow
+# @within function asset:mob/0202.hunters_dream/tick/skill/arrow/
 
 # 数値
     data modify storage lib: Argument.VectorMagnitude set value 1

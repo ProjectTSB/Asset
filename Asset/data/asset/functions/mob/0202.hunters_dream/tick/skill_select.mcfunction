@@ -1,4 +1,4 @@
-#> asset:mob/0202.hunters_dream/tick/3.skill_select
+#> asset:mob/0202.hunters_dream/tick/skill_select
 #
 #
 #

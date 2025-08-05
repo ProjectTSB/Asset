@@ -1,8 +1,8 @@
-#> asset:mob/0202.hunters_dream/tick/1.skill_sword/4.slash
+#> asset:mob/0202.hunters_dream/tick/skill/sword/attack
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/1.skill_sword/1.skill_sword
+# @within function asset:mob/0202.hunters_dream/tick/skill/sword/
 
 
 # 演出
@@ -19,4 +19,4 @@
     function api:damage/reset
 
 # 演出
-    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function asset:mob/0202.hunters_dream/tick/1.skill_sword/5.vfx
+    execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] at @s run function asset:mob/0202.hunters_dream/tick/skill/sword/vfx
