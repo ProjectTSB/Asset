@@ -13,4 +13,4 @@
     execute if score @s General.Mob.Tick matches 8 run function asset:mob/0202.hunters_dream/tick/skill/arrow/arrow_summon
 
 # リセット
-    execute if score @s General.Mob.Tick matches 8 run function asset:mob/0202.hunters_dream/tick/reset
+    execute if score @s General.Mob.Tick matches 8.. run function asset:mob/0202.hunters_dream/tick/reset
