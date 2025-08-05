@@ -11,9 +11,9 @@
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 12.0f
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.Damage set from storage asset:context this.Sword.Damage
+    data modify storage api: Argument.AttackType set from storage asset:context this.Sword.AttackType
+    data modify storage api: Argument.ElementType set from storage asset:context this.Sword.ElementType
     function api:damage/modifier
     execute positioned ^ ^ ^1 as @p[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
     function api:damage/reset

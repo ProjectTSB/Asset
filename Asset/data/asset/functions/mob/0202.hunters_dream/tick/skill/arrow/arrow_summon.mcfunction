@@ -11,8 +11,8 @@
 # 演出
     playsound entity.arrow.shoot hostile @a ~ ~ ~ 1 1
 # 矢を召喚する
-    data modify storage api: Argument.ID set value 2169
-    data modify storage api: Argument.FieldOverride.Damage set value 7
-    data modify storage api: Argument.FieldOverride.Speed set value 3
+    data modify storage api: Argument.ID set from storage asset:context this.Arrow.ID
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Arrow.Damage
+    data modify storage api: Argument.FieldOverride.Speed set from storage asset:context this.Arrow.Speed
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon
