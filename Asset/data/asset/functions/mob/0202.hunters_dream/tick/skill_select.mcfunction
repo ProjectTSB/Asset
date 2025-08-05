@@ -14,7 +14,7 @@
     #scoreboard players set $Random Temporary 0
 
 # SideStep:true でかつ、プレイヤーが近いなら確率でサイドステップに移行
-    execute if data storage asset:context this{SideStep:true} if entity @p[distance=..6] if predicate lib:random_pass_per/40 run scoreboard players set $Random Temporary 10
+    execute if data storage asset:context this{SideStep:true} if entity @p[gamemode=!spectator,distance=..6] if predicate lib:random_pass_per/40 run scoreboard players set $Random Temporary 10
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add 5M.SkillSword
