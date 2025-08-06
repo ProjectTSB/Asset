@@ -17,6 +17,6 @@
 # エフェクト付与
     data modify storage api: Argument.ID set value 275
     data modify storage api: Argument.FieldOverride.RegenInterval set value 120
-    data modify storage api: Argument.FieldOverride.MaxBarrierAmount set value 12
+    data modify storage api: Argument.FieldOverride.MaxBarrierAmount set value 20
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
