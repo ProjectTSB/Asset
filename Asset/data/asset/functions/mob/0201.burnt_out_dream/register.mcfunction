@@ -4,6 +4,10 @@
 #
 # @within function asset:mob/alias/201/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 202
+    function asset:mob/extends
+
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
@@ -63,5 +67,19 @@
         data modify storage asset:mob Resist.Water set value 1.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
-# フィールド
-    # data modify storage asset:mob Field.myValue set value
+
+# サイドステップをするか否か
+    data modify storage asset:mob Field.SideStep set value true
+
+# バニラ近接ダメージ
+    data modify storage asset:mob Field.Vanilla.Damage set value 41f
+
+# 斬撃
+    data modify storage asset:mob Field.Sword.Damage set value 41f
+    data modify storage asset:mob Field.Sword.AttackType set value "Physical"
+    data modify storage asset:mob Field.Sword.ElementType set value "Fire"
+
+# 矢
+    data modify storage asset:mob Field.Arrow.ID set value 2172
+    data modify storage asset:mob Field.Arrow.Damage set value 23f
+    data modify storage asset:mob Field.Arrow.Speed set value 3

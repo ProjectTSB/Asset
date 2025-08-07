@@ -1,8 +1,8 @@
-#> asset:mob/0202.hunters_dream/tick/1.skill_sword/5.vfx
+#> asset:mob/0202.hunters_dream/tick/skill/sword/vfx
 #
 #
 #
-# @within function asset:mob/0202.hunters_dream/tick/1.skill_sword/4.slash
+# @within function asset:mob/0202.hunters_dream/tick/skill/sword/attack
 
 # 演出
     particle witch ~ ~1 ~ 0 1 0 0 20 normal
