@@ -1,8 +1,8 @@
-#> asset:object/2072.contamination_gus/tick/debuff
+#> asset:object/2072.contamination_gas/tick/debuff
 #
 #
 #
-# @within function asset:object/2072.contamination_gus/tick/
+# @within function asset:object/2072.contamination_gas/tick/
 
 # 移動速度低下、暗闇、採掘速度低下、吐き気
 
