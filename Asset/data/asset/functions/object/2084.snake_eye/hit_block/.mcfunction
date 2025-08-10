@@ -9,5 +9,5 @@
 
 # 爆発してよくなかった場合動きを止め、tickで爆発できるようにtagをつけておく
     data modify storage asset:temp MoveCount set value 0
-    data modify storage asset:context this.Speed set value 0
+    data modify storage asset:context this.StepPerTick set value 0
     tag @s add 2084.Grounded

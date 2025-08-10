@@ -11,9 +11,9 @@
     kill @s[scores={General.Object.Tick=400..}]
 
 # 加速処理
-    execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.Speed set value 1
+    execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.StepPerTick set value 1
     execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.MovePerStep set value 0.5
-    execute if score @s General.Object.Tick matches 20 run data modify storage asset:context this.Speed set value 2
+    execute if score @s General.Object.Tick matches 20 run data modify storage asset:context this.StepPerTick set value 2
 
 # Super!
     function asset:object/super.tick

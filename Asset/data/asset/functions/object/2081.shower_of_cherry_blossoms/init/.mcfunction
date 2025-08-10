@@ -5,7 +5,7 @@
 # @within asset:object/alias/2081/init
 
 # スピード関連の設定
-    data modify storage asset:context this.Speed set value 1
+    data modify storage asset:context this.StepPerTick set value 1
     data modify storage asset:context this.Range set value 100
     data modify storage asset:context this.MovePerStep set value 0.05
 

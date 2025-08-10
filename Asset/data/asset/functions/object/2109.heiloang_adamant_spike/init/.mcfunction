@@ -9,10 +9,10 @@
     execute if entity @s[tag=2109.IsDark] run data modify entity @s item.tag.CustomModelData set value 20482
 
 # スピード関連の設定
-    data modify storage asset:context this.Speed set value 2
+    data modify storage asset:context this.StepPerTick set value 2
     data modify storage asset:context this.Range set value 90
     data modify storage asset:context this.MovePerStep set value 0.7
-    execute if entity @s[tag=2109.IsDark] run data modify storage asset:context this.Speed set value 4
+    execute if entity @s[tag=2109.IsDark] run data modify storage asset:context this.StepPerTick set value 4
 # 初期化
     scoreboard players set @s 2109.DamageInterval 0
 

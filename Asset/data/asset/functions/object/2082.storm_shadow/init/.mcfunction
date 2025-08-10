@@ -5,7 +5,7 @@
 # @within asset:object/alias/2082/init
 
 # スピード設定
-    data modify storage asset:context this.Speed set value 7
+    data modify storage asset:context this.StepPerTick set value 7
     data modify storage asset:context this.Range set value 1024
     data modify storage asset:context this.MovePerStep set value 0.5
 
@@ -21,4 +21,3 @@
     #function asset:object/2082.storm_shadow/init/facing_target_pos.m with storage asset:temp args
 
     #data remove storage asset:temp args
- 

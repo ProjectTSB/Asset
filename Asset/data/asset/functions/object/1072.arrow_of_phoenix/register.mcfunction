@@ -18,7 +18,7 @@
     data modify storage asset:object ID set value 1072
 # フィールド(オプション)
     data modify storage asset:object Field.Color set value 10027008
-    data modify storage asset:object Field.Speed set value 8
+    data modify storage asset:object Field.StepPerTick set value 8
     data modify storage asset:object Field.ShowCritParticle set value false
     data modify storage asset:object Field.Range set value 32
     data modify storage asset:object Field.AttackType set value "Magic"

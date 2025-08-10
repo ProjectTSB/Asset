@@ -10,7 +10,7 @@
     #declare tag SpreadMarker
 
 # 発射体のステータス設定
-    data modify storage api: Argument.FieldOverride set value {Speed:1,Range:100,MovePerStep:0.1}
+    data modify storage api: Argument.FieldOverride set value {StepPerTick:1,Range:100,MovePerStep:0.1}
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
 
 # 召喚

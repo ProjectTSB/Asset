@@ -17,7 +17,7 @@
     data modify storage api: Argument.ID set value 1087
     execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 740
     execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 550
-    execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 8
-    execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 4
+    execute if entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 8
+    execute unless entity @s[tag=WP.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 4
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon

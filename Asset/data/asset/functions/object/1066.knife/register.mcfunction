@@ -20,5 +20,5 @@
     data modify storage asset:object Field.Damage set value -1
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.TheWorld set value false
-    data modify storage asset:object Field.Speed set value 6
+    data modify storage asset:object Field.StepPerTick set value 6
     data modify storage asset:object Field.Range set value 24

@@ -5,8 +5,8 @@
 # @within function asset:mob/0187.flame_mage/tick/shoot_magic
 
 # スピード設定
-    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Speed set value 2
-    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.Speed set value 3
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.StepPerTick set value 2
+    execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage api: Argument.FieldOverride.StepPerTick set value 3
 
 # 召喚
     data modify storage api: Argument.ID set value 2073

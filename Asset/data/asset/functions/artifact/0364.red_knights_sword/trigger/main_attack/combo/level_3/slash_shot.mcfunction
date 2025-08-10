@@ -16,7 +16,7 @@
     # 発射体の設定: 飛距離(飛距離1につき0.5進みます)
         data modify storage api: Argument.FieldOverride.Range set value 35
     # 発射体の設定: 弾速(0.5にここの数値を掛けたぶんの距離を1tickで進みます)
-        data modify storage api: Argument.FieldOverride.Speed set value 5
+        data modify storage api: Argument.FieldOverride.StepPerTick set value 5
     # 発射体の設定: 持ち主のID
         execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     # 召喚を確定

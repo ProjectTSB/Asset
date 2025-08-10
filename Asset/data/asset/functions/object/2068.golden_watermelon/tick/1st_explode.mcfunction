@@ -16,8 +16,8 @@
 # スコアの値を変更
     scoreboard players set @s General.Object.Tick 20
 
-# Speedを0へ
-    data modify storage asset:context this.MovePerStep set value 0
+# StepPerTickを0へ
+    data modify storage asset:context this.StepPerTick set value 0
 
 # 演出
     playsound entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.8 1 0

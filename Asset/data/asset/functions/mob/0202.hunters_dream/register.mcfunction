@@ -74,4 +74,4 @@
 # 矢
     data modify storage asset:mob Field.Arrow.ID set value 2169
     data modify storage asset:mob Field.Arrow.Damage set value 7f
-    data modify storage asset:mob Field.Arrow.Speed set value 3
+    data modify storage asset:mob Field.Arrow.StepPerTick set value 3

@@ -21,7 +21,7 @@
     tag @p[tag=Target] remove Target
 
 # ハード以上で速度を変える
-    execute if entity @s[scores={General.Object.Tick=20}] if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.Speed set value 3
+    execute if entity @s[scores={General.Object.Tick=20}] if predicate api:global_vars/difficulty/min/3_blessless run data modify storage asset:context this.StepPerTick set value 3
 
 # 継承して動かす
     execute at @s run function asset:object/super.tick

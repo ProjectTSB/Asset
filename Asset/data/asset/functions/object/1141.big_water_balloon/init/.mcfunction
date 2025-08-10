@@ -23,7 +23,7 @@
     tag @e[type=item_display,tag=Init,sort=nearest,limit=1] remove Init
 
 # Motionで射出
-    #data modify storage lib: Argument.VectorMagnitude set from storage asset:context this.Speed
+    #data modify storage lib: Argument.VectorMagnitude set from storage asset:context this.StepPerTick
     #execute on vehicle at @s run function lib:motion/
 
 # Super

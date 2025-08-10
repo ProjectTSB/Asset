@@ -6,7 +6,7 @@
 # @private
 
 # 発射体のステータス設定
-    data modify storage api: Argument.FieldOverride set value {Speed:2,Range:100,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride set value {StepPerTick:2,Range:100,MovePerStep:0.5}
 
 # 召喚
     data modify storage api: Argument.ID set value 2044
