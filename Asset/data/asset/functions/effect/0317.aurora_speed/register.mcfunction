@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 317
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f0e5"},{"text":"ロ","color":"#00e1e9"},{"text":"ラ","color":"#00d3ec"},{"text":"リ","color":"#00c4f0"},{"text":"ー","color":"#00b6f4"},{"text":"パ","color":"#00a7f7"},{"text":"ー","color":"#008bff"}]'
+    data modify storage asset:effect Name set value '[{"text":"オ","color":"#00FFE2"},{"text":"ー","color":"#00f0e5"},{"text":"ロ","color":"#00e1e9"},{"text":"ラ","color":"#00d3ec"},{"text":"ス","color":"#00c4f0"},{"text":"ピ","color":"#00b6f4"},{"text":"ー","color":"#00a7f7"},{"text":"ド","color":"#008bff"}]'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"移動速度が上昇する"}']
 # 効果時間 (int) (default = API || error)
