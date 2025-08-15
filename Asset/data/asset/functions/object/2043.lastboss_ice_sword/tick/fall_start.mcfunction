@@ -9,4 +9,4 @@
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 2 1
 
 # データ設定
-    data modify storage asset:context this.Speed set value 4
+    data modify storage asset:context this.StepPerTick set value 4

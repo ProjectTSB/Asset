@@ -32,8 +32,8 @@
 
 # 速度設定
 # ハード以上なら確率で低速になる
-    data modify storage api: Argument.FieldOverride.Speed set value 2
-    execute if predicate api:global_vars/difficulty/min/3_blessless if predicate lib:random_pass_per/50 run data modify storage api: Argument.FieldOverride.Speed set value 1
+    data modify storage api: Argument.FieldOverride.StepPerTick set value 2
+    execute if predicate api:global_vars/difficulty/min/3_blessless if predicate lib:random_pass_per/50 run data modify storage api: Argument.FieldOverride.StepPerTick set value 1
 
 # 召喚
     data modify storage api: Argument.ID set value 2078
