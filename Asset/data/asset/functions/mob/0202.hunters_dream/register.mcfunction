@@ -1,6 +1,9 @@
 #> asset:mob/0202.hunters_dream/register
 # @within asset:mob/alias/202/register
 
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
+
 # ID (int)
     data modify storage asset:mob ID set value 202
 # Type (string) Wikiを参照
@@ -54,3 +57,21 @@
         data modify storage asset:mob Resist.Water set value 1.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# フィールド
+
+# サイドステップをするか否か
+    data modify storage asset:mob Field.SideStep set value false
+
+# バニラ近接ダメージ
+    data modify storage asset:mob Field.Vanilla.Damage set value 8f
+
+# 斬撃
+    data modify storage asset:mob Field.Sword.Damage set value 12f
+    data modify storage asset:mob Field.Sword.AttackType set value "Physical"
+    data modify storage asset:mob Field.Sword.ElementType set value "None"
+
+# 矢
+    data modify storage asset:mob Field.Arrow.ID set value 2169
+    data modify storage asset:mob Field.Arrow.Damage set value 7f
+    data modify storage asset:mob Field.Arrow.Speed set value 3

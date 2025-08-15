@@ -22,6 +22,9 @@
 
 # ダメージ設定
 
+# Owner取得
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+
 # 数をカウントして、ダメージを割る
     execute store result score $Count Temporary positioned ~-8 ~-105 ~-8 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,scores={MobID=0..},dx=15,dy=199,dz=15]
     execute store result score $Damage Temporary run data get storage asset:context this.Damage
