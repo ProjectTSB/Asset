@@ -1,8 +1,7 @@
-#> asset:mob/0204.infernal_watcher/tick/event/start_frenzy
-#
-# テンション上がって加速する時の演出
-#
-# @within function asset:mob/0204.infernal_watcher/tick/
+#> asset:mob/0204.infernal_watcher/tick/update_state/start_frenzy
+# @within function asset:mob/0204.infernal_watcher/tick/update_state/
+
+tag @s add 5O.InFrenzy
 
 item replace entity @s armor.head with minecraft:stick{CustomModelData:20208}
 playsound minecraft:block.respawn_anchor.set_spawn hostile @a ~ ~ ~ 1.5 1.5

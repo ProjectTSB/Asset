@@ -1,8 +1,7 @@
-#> asset:mob/0204.infernal_watcher/tick/event/end_frenzy
-#
-# つかれちゃった時の演出
-#
-# @within function asset:mob/0204.infernal_watcher/tick/
+#> asset:mob/0204.infernal_watcher/tick/update_state/end_frenzy
+# @within function asset:mob/0204.infernal_watcher/tick/update_state/
+
+tag @s remove 5O.InFrenzy
 
 item replace entity @s armor.head with minecraft:stick{CustomModelData:20207}
 playsound minecraft:block.soul_sand.break hostile @a ~ ~ ~ 1.5 0.75
