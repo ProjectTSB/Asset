@@ -18,7 +18,7 @@
         execute if entity @s[tag=!79.Ready] at @s if entity @p[gamemode=!spectator,distance=..7] anchored eyes positioned ^ ^ ^ if block ^ ^ ^-1 #lib:no_collision if block ~ ~-0.25 ~ #lib:no_collision anchored feet at @s run tp @s ^ ^ ^-0.08 ~ ~
 
     # 壁が後ろにあってこれ以上後退できない場合は発射準備に移る
-        execute if entity @s[tag=!79.Ready] at @s if entity @p[gamemode=!spectator,distance=..7] anchored eyes positioned ^ ^ ^ unless block ^ ^ ^-1 #lib:no_collision if block ~ ~-0.25 ~ #lib:no_collision anchored feet at @s run tag @s add 79.Ready
+        execute if entity @s[tag=!79.Ready] at @s if entity @p[gamemode=!spectator,distance=..7] anchored eyes positioned ^ ^ ^ unless block ^ ^ ^-1 #lib:no_collision anchored feet at @s run tag @s add 79.Ready
 
 # Readyタグがあるときは発射準備
     execute if entity @s[tag=79.Ready] run function asset:mob/0261.laser_eye_mk2/tick/ready
