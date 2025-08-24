@@ -6,7 +6,7 @@
 
 # 移動キャンセル
     data modify storage asset:context this.MovePerStep set value 0
-    data modify storage asset:context this.Speed set value 0
+    data modify storage asset:context this.StepPerTick set value 0
 
 # 位置調整
     tp @s ~ ~2 ~ ~ ~

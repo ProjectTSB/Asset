@@ -20,6 +20,6 @@
     data modify storage asset:object Field.Color set value 26112
     data modify storage asset:object Field.ShowCritParticle set value false
     data modify storage asset:object Field.Range set value 48
-    # data modify storage asset:object Field.Speed set value 4
+    # data modify storage asset:object Field.StepPerTick set value 4
     # data modify storage asset:object Field.Damage set value 1
     # data modify storage asset:object Field.Enhanced set value true
