@@ -15,8 +15,8 @@
     execute if entity @s[tag=!5O.InFrenzy] run function asset:mob/0204.infernal_watcher/tick/attack/sfx
     execute if entity @s[tag= 5O.InFrenzy] run function asset:mob/0204.infernal_watcher/tick/attack/sfx_rage
 # ダメージ
-    data modify storage api: Argument.Damage set value 28f
-    execute if entity @s[tag=5O.InFrenzy] run data modify storage api: Argument.Damage set value 42f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage._
+    execute if entity @s[tag=5O.InFrenzy] run data modify storage api: Argument.Damage set from storage asset:context this.Damage.InFrenzy
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier

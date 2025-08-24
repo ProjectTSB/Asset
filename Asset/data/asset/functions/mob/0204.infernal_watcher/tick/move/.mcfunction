@@ -14,8 +14,8 @@
     particle dust 0.792 0 0 1 ~ ~1.74 ~ 0.25 0.25 0.25 0 1 force @a[distance=..40]
     execute if entity @s[tag= 5O.InFrenzy] run particle flame ~ ~1.74 ~ 0.25 0.25 0.25 0 1
 # 定数設定
-    execute if entity @s[tag=!5O.InFrenzy] run data modify storage asset:temp 5O set value {Speed:0.2d,Range: 800}
-    execute if entity @s[tag= 5O.InFrenzy] run data modify storage asset:temp 5O set value {Speed:0.5d,Range:1200}
+    execute if entity @s[tag=!5O.InFrenzy] run data modify storage asset:temp 5O set from storage asset:context this.Move._
+    execute if entity @s[tag= 5O.InFrenzy] run data modify storage asset:temp 5O set from storage asset:context this.Move.InFrenzy
 # 実処理
     function asset:mob/0204.infernal_watcher/tick/move/do.m with storage asset:temp 5O
 # リセット
