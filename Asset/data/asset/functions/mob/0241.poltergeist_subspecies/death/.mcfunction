@@ -5,5 +5,4 @@
 # @within function asset:mob/alias/241/death
 
 # 演出
-
     playsound minecraft:entity.vex.death hostile @a ~ ~ ~ 1 0.5
