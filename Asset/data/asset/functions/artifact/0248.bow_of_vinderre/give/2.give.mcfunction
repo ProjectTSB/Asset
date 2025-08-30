@@ -60,7 +60,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:4,Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:6s}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:5,Enchantments:[{id:"minecraft:power",lvl:6s}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
