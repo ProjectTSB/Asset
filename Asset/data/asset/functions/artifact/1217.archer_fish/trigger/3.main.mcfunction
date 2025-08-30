@@ -18,11 +18,11 @@
 
 # Objectのデータ設定
     # 非フルチャ時
-        execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 1
+        execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 1
         execute if entity @s[tag=!XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 50
 
     # フルチャ時
-        execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 2
+        execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 2
         execute if entity @s[tag=XT.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 90
 
 # ターゲットのIDがあれば入れておく

@@ -17,9 +17,9 @@
     execute if data storage asset:context this{SpinInterval:0} run data modify storage asset:context this.SpinInterval set value 3
 
 # 速度制御
-    execute if score @s General.Object.Tick matches 18 run data modify storage asset:context this.Speed set value 2
-    execute if score @s General.Object.Tick matches 22 run data modify storage asset:context this.Speed set value 1
-    execute if score @s General.Object.Tick matches 26 run data modify storage asset:context this.Speed set value 2
+    execute if score @s General.Object.Tick matches 18 run data modify storage asset:context this.StepPerTick set value 2
+    execute if score @s General.Object.Tick matches 22 run data modify storage asset:context this.StepPerTick set value 1
+    execute if score @s General.Object.Tick matches 26 run data modify storage asset:context this.StepPerTick set value 2
 
 # 戻り始めるタイミングでHitListを空に
     execute if score @s General.Object.Tick matches 25 run function asset:object/call.m {method:"reset_duplicate_protection"}
