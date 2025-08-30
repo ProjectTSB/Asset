@@ -18,3 +18,13 @@
     function api:damage/modifier
     execute as @a[tag=Victim] run function api:damage/
     function api:damage/reset
+
+# 難易度値取得
+    function api:global_vars/get_difficulty
+
+# ウィザー
+    data modify storage api: Argument.ID set value 30
+    data modify storage api: Argument.Duration set value 100
+    execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
+    execute as @a[tag=Victim] run function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
