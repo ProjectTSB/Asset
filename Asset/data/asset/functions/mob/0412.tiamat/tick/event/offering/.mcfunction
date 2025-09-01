@@ -31,7 +31,7 @@
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
 # 無敵化
-    execute if score @s BG.EventTimer matches 40 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
+    execute if score @s BG.EventTimer matches 1 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
 
 # 終了
     execute if score @s BG.EventTimer matches 900.. run function asset:mob/0412.tiamat/tick/event/offering/end
