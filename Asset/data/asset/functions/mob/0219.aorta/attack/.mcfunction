@@ -13,8 +13,10 @@
     execute at @p[tag=Victim,distance=..6] run playsound block.conduit.ambient hostile @a ~ ~ ~ 0.8 1.5 0
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 41f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって心臓が600BPMを目指してしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによって脈が限界を超えてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier
     execute as @p[tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
