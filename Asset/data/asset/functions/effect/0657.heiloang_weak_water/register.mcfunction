@@ -1,8 +1,8 @@
-#> asset:effect/657.heiloang_weak_water/register
+#> asset:effect/0657.heiloang_weak_water/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/657.heiloang_weak_water/_/register
+# @within function asset:effect/0657.heiloang_weak_water/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
