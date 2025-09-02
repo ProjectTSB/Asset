@@ -19,8 +19,8 @@
     execute if entity @e[type=#lib:living,tag=1065.Target,distance=00..10] facing entity @e[type=#lib:living,tag=1065.Target,distance=..10,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-0400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
     execute if entity @e[type=#lib:living,tag=1065.Target,distance=10..30] facing entity @e[type=#lib:living,tag=1065.Target,distance=..30,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1500 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
 # 速度を変える
-    execute if entity @e[type=#lib:living,tag=1065.Target,distance=00..10] run data modify storage asset:context this.Speed set value 3
-    execute if entity @e[type=#lib:living,tag=1065.Target,distance=10..30] run data modify storage asset:context this.Speed set value 2
+    execute if entity @e[type=#lib:living,tag=1065.Target,distance=00..10] run data modify storage asset:context this.StepPerTick set value 3
+    execute if entity @e[type=#lib:living,tag=1065.Target,distance=10..30] run data modify storage asset:context this.StepPerTick set value 2
 # リセット
     tag @e[type=#lib:living,tag=1065.Target,distance=..30] remove 1065.Target
     tag @e[type=#lib:living,tag=1065.TargetCandidate,distance=..30] remove 1065.TargetCandidate

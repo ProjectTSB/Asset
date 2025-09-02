@@ -11,7 +11,7 @@
     execute rotated ~ 90 run function asset:object/2224.bee_bomb/tick/line
 
 # 一定時間後動く
-    execute if score @s General.Object.Tick matches 10.. run data modify storage asset:context this.Speed set value 2
+    execute if score @s General.Object.Tick matches 10.. run data modify storage asset:context this.StepPerTick set value 2
 
 # 継承して動かす
     execute at @s run function asset:object/super.tick

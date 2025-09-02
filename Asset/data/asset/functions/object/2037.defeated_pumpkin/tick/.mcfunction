@@ -22,7 +22,7 @@
 
 # 浮遊状態の終わり
     execute if entity @s[scores={General.Object.Tick=100}] run tag @s remove 2037.FirstLevitation
-    execute if entity @s[scores={General.Object.Tick=100}] run data modify storage asset:context this.Speed set value 2
+    execute if entity @s[scores={General.Object.Tick=100}] run data modify storage asset:context this.StepPerTick set value 2
     execute if entity @s[scores={General.Object.Tick=100}] run data modify storage asset:context this.MovePerStep set value -1
 
 # 花火を召喚

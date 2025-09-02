@@ -13,7 +13,7 @@
     execute if predicate lib:random_pass_per/50 run tag @s add 2037.LeftRotate
 
 # スピード関連の設定
-    data modify storage asset:context this.Speed set value 1
+    data modify storage asset:context this.StepPerTick set value 1
     data modify storage asset:context this.Range set value 9999
     data modify storage asset:context this.MovePerStep set value 0.1
 

@@ -7,7 +7,7 @@
 # オブジェクト2241番をデータ指定した上で召喚する
     data modify storage api: Argument.ID set value 2241
     data modify storage api: Argument.FieldOverride.Range set value 70
-    data modify storage api: Argument.FieldOverride.Speed set value 2
+    data modify storage api: Argument.FieldOverride.StepPerTick set value 2
     execute store result storage api: Argument.FieldOverride.Damage int 1 run data get storage asset:context this.Damage.SlashShot1
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[-0.455f,-0.455f,-0.542f,0.542f]}

@@ -5,7 +5,7 @@
 # @within asset:object/alias/2154/init
 
 # スピード関連の設定
-    # data modify storage asset:context this.Speed set value 2
+    # data modify storage asset:context this.StepPerTick set value 2
     data modify storage asset:context this.Range set value 200
     execute if predicate api:global_vars/difficulty/1_normal run data modify storage asset:context this.MovePerStep set value 0.2
     execute if predicate api:global_vars/difficulty/2_hard run data modify storage asset:context this.MovePerStep set value 0.3
