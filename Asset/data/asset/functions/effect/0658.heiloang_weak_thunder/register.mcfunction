@@ -1,8 +1,8 @@
-#> asset:effect/658.heiloang_weak_thunder/register
+#> asset:effect/0658.heiloang_weak_thunder/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/658.heiloang_weak_thunder/_/register
+# @within function asset:effect/0658.heiloang_weak_thunder/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
