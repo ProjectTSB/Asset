@@ -8,11 +8,11 @@
     # 判定その1、狭いが高い。
         data modify storage lib: Argument.BoundingFan set value {Angle:180,Radius:4,Height:5,Selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
     # 扇型の判定を出す
-        function lib:bounding_fan/
+        execute positioned ~ ~-2.5 ~ run function lib:bounding_fan/
     # 判定その2、広いけど薄いので飛び越えれる
         data modify storage lib: Argument.BoundingFan set value {Angle:160,Radius:6,Height:2,Selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
     # 扇型の判定を出す
-        function lib:bounding_fan/
+        execute positioned ~ ~-1 ~ run function lib:bounding_fan/
 
 # オブジェクト召喚
     data modify storage api: Argument.FieldOverride.transformation set value {left_rotation:[0.271f,-0.653f,0.271f,0.653f]}
