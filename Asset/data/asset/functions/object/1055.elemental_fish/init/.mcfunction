@@ -10,7 +10,7 @@
     playsound minecraft:entity.vex.ambient neutral @a ~ ~ ~ 1 2
 
 # スピード設定
-    data modify storage asset:context this.Speed set value 1
+    data modify storage asset:context this.StepPerTick set value 1
     data modify storage asset:context this.Range set value 1000
     data modify storage asset:context this.MovePerStep set value 0.2
 

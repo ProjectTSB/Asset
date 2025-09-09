@@ -16,5 +16,5 @@
     data modify storage asset:object ID set value 2073
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 1f
-    data modify storage asset:object Field.Speed set value 1
+    data modify storage asset:object Field.StepPerTick set value 1
     data modify storage asset:object Field.MobUUID set value -1
