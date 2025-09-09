@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元の召喚処理を呼び出す
-    function asset:object/2072.contamination_gus/summon/
+    function asset:object/2072.contamination_gas/summon/
