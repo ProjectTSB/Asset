@@ -1004,6 +1004,14 @@
 
 #> declare
 # @within
+#   function debug:catalog_container/artifact/core/give
+#   **
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/functions/catalog_container/_index.d.mcfunction#L15
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/debug/loot_tables/catalog_container/artifact_give.json#L1
+#declare loot_table debug:catalog_container/artifact_give
+
+#> declare
+# @within
 #   core:tick/player/post
 #   player_manager:grave/build/*
 #   function asset_manager:object/triggers/tick
