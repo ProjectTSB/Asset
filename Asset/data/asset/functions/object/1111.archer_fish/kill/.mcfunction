@@ -10,7 +10,7 @@
 
 # 演出
     particle rain ^ ^-0.3 ^ 0.3 0.3 0.3 0 50 normal @a
-    particle dust 0.365 0.733 1 1.4 ^ ^-0.3 ^ 0.3 0.3 0.3 0 10 normal @a
+    particle dust 0.365 0.733 1 1.2 ^ ^-0.3 ^ 0.3 0.3 0.3 0 10 normal @a
     playsound minecraft:entity.player.splash.high_speed neutral @a ~ ~ ~ 0.3 2
 
 # ダメージ　
