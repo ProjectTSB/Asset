@@ -16,7 +16,7 @@
     data modify storage asset:object ID set value 2068
 # フィールド(オプション)
     data modify storage asset:object Field.Rotation set value [0.0f,0.0f]
-    data modify storage asset:object Field.Speed set value 3
+    data modify storage asset:object Field.StepPerTick set value 3
     data modify storage asset:object Field.Range set value 120
     data modify storage asset:object Field.Slowness set value false
     data modify storage asset:object Field.MovePerStep set value 0.5

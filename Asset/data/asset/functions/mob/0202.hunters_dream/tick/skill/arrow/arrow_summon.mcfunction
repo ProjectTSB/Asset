@@ -9,7 +9,7 @@
 # 矢を召喚する
     data modify storage api: Argument.ID set from storage asset:context this.Arrow.ID
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Arrow.Damage
-    data modify storage api: Argument.FieldOverride.Speed set from storage asset:context this.Arrow.Speed
+    data modify storage api: Argument.FieldOverride.StepPerTick set from storage asset:context this.Arrow.StepPerTick
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
 
 # Hard以下で視点先へ発射、Blessless以上でプレイヤーの方向へ発射
