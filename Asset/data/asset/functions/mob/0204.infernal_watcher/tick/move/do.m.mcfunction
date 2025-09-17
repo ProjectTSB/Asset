@@ -19,7 +19,7 @@
     execute store result score $5O.Pitch Temporary run data get entity @s Rotation[1]
 # 移動先の取得
     $execute anchored eyes run summon marker ^ ^ ^$(Speed) {Tags:["5O.Marker"]}
-    execute as @e[type=marker,tag=5O.Marker,limit=1] run data modify storage asset:temp 5O.TargetPos set from entity @s Pos
+    execute as @e[type=marker,tag=5O.Marker,distance=..3,limit=1] run data modify storage asset:temp 5O.TargetPos set from entity @s Pos
 # ヨーとピッチに分けて回転角計算
     function asset:mob/0204.infernal_watcher/tick/move/yaw
     function asset:mob/0204.infernal_watcher/tick/move/pitch
@@ -30,4 +30,4 @@
 # リセット
     scoreboard players reset $5O.Yaw Temporary
     scoreboard players reset $5O.Pitch Temporary
-    kill @e[type=marker,tag=5O.Marker,limit=1]
+    kill @e[type=marker,tag=5O.Marker,distance=..3,limit=1]
