@@ -1,4 +1,4 @@
-#> asset:mob/0204.infernal_watcher/0.load
+#> asset:mob/0204.infernal_watcher/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
@@ -7,6 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/0204.infernal_watcher/**
     scoreboard objectives add 5O.HurtTime dummy
-    scoreboard objectives add 5O.MoveTime dummy
     scoreboard objectives add 5O.AttackCT dummy
-    scoreboard objectives add 5O.LifeTime dummy
