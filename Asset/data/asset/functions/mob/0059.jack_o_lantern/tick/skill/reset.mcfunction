@@ -29,4 +29,4 @@
     data remove storage asset:context this.FaceList
 
 # 確率でテレポ
-    #execute if predicate lib:random_pass_per/20 at @p run function asset:mob/0059.jack_o_lantern/tick/spread_tp
+    #execute if predicate lib:random_pass_per/20 at @p[gamemode=!spectator] run function asset:mob/0059.jack_o_lantern/tick/spread_tp
