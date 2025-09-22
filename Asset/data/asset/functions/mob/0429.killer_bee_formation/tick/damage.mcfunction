@@ -12,8 +12,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=BX.Hit,dx=0] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[gamemode=!spectator,tag=BX.Hit,dx=0] run function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @a[tag=BX.Hit] remove BX.Hit
+    tag @a[gamemode=!spectator,tag=BX.Hit] remove BX.Hit
