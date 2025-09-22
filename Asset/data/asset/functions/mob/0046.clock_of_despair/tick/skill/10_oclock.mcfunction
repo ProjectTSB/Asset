@@ -10,4 +10,4 @@
     execute if score @s 1A.LifeTime matches 2060 run function asset:mob/0046.clock_of_despair/tick/skill/common/summon_gears/8-0
 
 # サンダー召喚
-    execute if score @s 1A.LifeTime matches 2080 if predicate api:global_vars/difficulty/min/2_hard at @a[distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:40}
+    execute if score @s 1A.LifeTime matches 2080 if predicate api:global_vars/difficulty/min/2_hard at @a[gamemode=!spectator,distance=..100] run function asset:mob/0046.clock_of_despair/tick/skill/common/thunder/summon.m {Delay:40}
