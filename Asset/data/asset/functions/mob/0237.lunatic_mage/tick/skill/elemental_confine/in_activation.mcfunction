@@ -21,12 +21,12 @@
     execute if entity @e[type=ender_pearl,tag=!Projectile,distance=5.5..9] run kill @e[type=ender_pearl,tag=!Projectile,distance=5.5..9]
 
 # 水の檻の範囲内のプレイヤーを中心へと吸い込む
-    execute as @a[distance=5.5..9] at @s facing entity @e[type=marker,tag=6L.SpawnPoint,distance=..9,limit=1] feet rotated ~ 0 run tp @s ^ ^ ^0.5
+    execute as @a[gamemode=!spectator,distance=5.5..9] at @s facing entity @e[type=marker,tag=6L.SpawnPoint,distance=..9,limit=1] feet rotated ~ 0 run tp @s ^ ^ ^0.5
 
 # 技の範囲外にいる最大5人を対象とし、ペナルティとして雷撃をくらわせる
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $10 Const
-    execute positioned ~-9 ~-2 ~-9 run tag @a[dx=17,dy=0,dz=17] add 6L.InSafeArea
+    execute positioned ~-9 ~-2 ~-9 run tag @a[gamemode=!spectator,dx=17,dy=0,dz=17] add 6L.InSafeArea
     execute if score $Interval Temporary matches 0 at @a[gamemode=!spectator,tag=!6L.InSafeArea,distance=..50,sort=random,limit=5] positioned ~ ~0.2 ~ run function asset:mob/0237.lunatic_mage/tick/skill/magic_summon/thunder
 
 # リセット
