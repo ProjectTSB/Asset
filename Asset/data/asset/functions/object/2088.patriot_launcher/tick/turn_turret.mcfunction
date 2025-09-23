@@ -1,6 +1,6 @@
 #> asset:object/2088.patriot_launcher/tick/turn_turret
 #
-# 
+#
 #
 # @within function asset:object/2088.patriot_launcher/tick/tick_active
 
