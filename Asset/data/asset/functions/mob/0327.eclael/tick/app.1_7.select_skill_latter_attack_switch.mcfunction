@@ -5,6 +5,6 @@
 # @within function asset:mob/0327.eclael/tick/**
 
 # ある程度近くにプレイヤーがいる場合，近距離用
-    execute if entity @a[distance=..12] run function asset:mob/0327.eclael/tick/app.1_4.select_skill_latter_attack_near
+    execute if entity @a[gamemode=!spectator,distance=..12] run function asset:mob/0327.eclael/tick/app.1_4.select_skill_latter_attack_near
 # プレイヤーがいない場合，遠距離用
-    execute unless entity @a[distance=..12] run function asset:mob/0327.eclael/tick/app.1_5.select_skill_latter_attack_far
+    execute unless entity @a[gamemode=!spectator,distance=..12] run function asset:mob/0327.eclael/tick/app.1_5.select_skill_latter_attack_far

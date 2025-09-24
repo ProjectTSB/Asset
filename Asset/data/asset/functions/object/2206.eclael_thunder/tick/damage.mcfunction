@@ -30,7 +30,7 @@
         function api:entity/mob/effect/reset
     # リセット
         scoreboard players reset $Difficulty Temporary
-        tag @a remove 2206.Hit
+        tag @a[tag=2206.Hit] remove 2206.Hit
 
 # 演出
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 0.7
