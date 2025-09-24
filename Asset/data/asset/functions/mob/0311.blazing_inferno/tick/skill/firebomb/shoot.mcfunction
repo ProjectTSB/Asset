@@ -9,7 +9,7 @@
         data modify storage api: Argument.ID set value 2136
     # データ設定
         execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-        execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @p[distance=..64] UserID
+        execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @p[gamemode=!spectator,distance=..64] UserID
     # 召喚
         function api:object/summon
 

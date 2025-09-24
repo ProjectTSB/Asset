@@ -10,7 +10,7 @@
 
 
 # ちょ～っとずつ進む、ただしプレイヤーを捕捉していない場合
-    execute at @s positioned ^ ^ ^1.5 unless entity @p[distance=..1.5] at @s rotated ~ 0 run tp @s ^ ^ ^0.5
+    execute at @s positioned ^ ^ ^1.5 unless entity @p[gamemode=!spectator,distance=..1.5] at @s rotated ~ 0 run tp @s ^ ^ ^0.5
 
 # 常時壁破壊
     execute if predicate api:area/is_breakable run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/break_block
@@ -28,7 +28,7 @@
     # ダメージを与える
         execute positioned ^ ^ ^1.5 as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
     # プレイヤーを捕捉してフルヒットさせる！
-        execute at @s positioned ^ ^ ^1.5 as @a[distance=..1.5] positioned ~ ~0.5 ~ rotated ~180 ~ run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/hold
+        execute at @s positioned ^ ^ ^1.5 as @a[gamemode=!spectator,distance=..1.5] positioned ~ ~0.5 ~ rotated ~180 ~ run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/punch/hold
     # リセット
         function api:damage/reset
 

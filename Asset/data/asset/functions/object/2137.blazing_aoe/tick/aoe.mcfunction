@@ -12,4 +12,4 @@
     execute positioned ~ ~0.1 ~ run function asset:object/2137.blazing_aoe/tick/shape
 
 # ダメージ判定
-    execute positioned ~-9 ~0 ~-9 if entity @a[tag=!PlayerShouldInvulnerable,dx=17,dy=0,dz=17] at @s as @a[distance=..5] run function asset:object/2137.blazing_aoe/tick/damage
+    execute positioned ~-9 ~0 ~-9 if entity @a[tag=!PlayerShouldInvulnerable,dx=17,dy=0,dz=17] at @s as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:object/2137.blazing_aoe/tick/damage

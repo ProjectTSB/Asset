@@ -25,8 +25,8 @@
 
 # 直撃したやつと、そこからの範囲内にダメージ
     execute positioned ~-1 ~-1 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=1,dz=1] add Hit
-    tag @a[distance=..5] add Hit
-    execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable,distance=..5] run function api:damage/
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..5] add Hit
+    execute as @a[tag=Hit] run function api:damage/
 
 # リセット
     tag @a[tag=Hit,distance=..64] remove Hit

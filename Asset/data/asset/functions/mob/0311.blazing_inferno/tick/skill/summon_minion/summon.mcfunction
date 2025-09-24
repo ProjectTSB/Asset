@@ -10,7 +10,7 @@
 
 # ブレイズが飛びかかってくる
     data modify storage lib: Argument.VectorMagnitude set value 1
-    execute as @e[type=blaze,distance=..0.1,sort=nearest,limit=1] facing entity @r[distance=..64] feet run function lib:motion/
+    execute as @e[type=blaze,distance=..0.1,sort=nearest,limit=1] facing entity @r[gamemode=!spectator,distance=..64] feet run function lib:motion/
     data remove storage lib: Argument
 
 # テレポート演出を流用

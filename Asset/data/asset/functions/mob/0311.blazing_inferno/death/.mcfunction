@@ -24,7 +24,7 @@
 
 # 撃破演出用オブジェクトを召喚
     data modify storage api: Argument.ID set value 2148
-    execute facing entity @p[distance=..64] eyes run function api:object/summon
+    execute facing entity @p[gamemode=!spectator,distance=..64] eyes run function api:object/summon
 
 # Super!
     function asset:mob/super.death
