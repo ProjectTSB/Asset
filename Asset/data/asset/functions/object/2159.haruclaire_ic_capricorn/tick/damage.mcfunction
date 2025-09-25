@@ -11,7 +11,6 @@
 
 # 攻撃
     # ヒット判定
-        tag @a remove DXYZ
         data modify storage lib: args.dx set value 5
         data modify storage lib: args.dy set value 3
         data modify storage lib: args.dz set value 4
@@ -25,9 +24,9 @@
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは はしるやぎに ひかれた","with":[{"selector":"@s"}]}]'
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
-        execute as @a[tag=DXYZ,tag=!PlayerShouldInvulnerable] run function api:damage/
+        execute as @a[tag=DXYZ] run function api:damage/
         function api:damage/reset
-        tag @a remove DXYZ
+        tag @a[tag=DXYZ] remove DXYZ
 
 # 終了
     scoreboard players reset $Interval Temporary

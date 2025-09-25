@@ -35,9 +35,9 @@
         data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは つめたいひかりに つらぬかれた","with":[{"selector":"@s"}]}]'
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
-        execute as @a[tag=2157.Hit,tag=!PlayerShouldInvulnerable] run function api:damage/
+        execute as @a[tag=2157.Hit] run function api:damage/
         function api:damage/reset
-        tag @a remove 2157.Hit
+        tag @a[tag=2157.Hit] remove 2157.Hit
     # 演出
         playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 1 2
         playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 1 2

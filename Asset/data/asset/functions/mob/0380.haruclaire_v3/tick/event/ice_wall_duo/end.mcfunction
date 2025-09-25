@@ -6,7 +6,7 @@
 
 # タグ消去
     tag @s remove AK.Skill.IceWallDuo
-    tag @a remove AK.MainTarget
+    tag @a[tag=AK.MainTarget,distance=..80,limit=1] remove AK.MainTarget
     tag @s remove AK.Temp.FixedRotation
 
 # 待機モーション再生

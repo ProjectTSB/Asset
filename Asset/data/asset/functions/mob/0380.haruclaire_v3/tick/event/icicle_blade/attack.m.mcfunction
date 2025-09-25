@@ -12,7 +12,6 @@
 
 # ヒット判定
     $tp @s ~ ~ ~ ~$(Rotate) 0
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 2
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 25
