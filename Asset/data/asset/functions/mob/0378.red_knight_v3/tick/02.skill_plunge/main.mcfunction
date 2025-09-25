@@ -12,7 +12,7 @@
     execute if score @s AI.Tick matches 0..7 facing entity @p[gamemode=!spectator] eyes run function asset:mob/0378.red_knight_v3/tick/common/tp
 
 # 発動
-    execute if score @s AI.Tick matches 20 facing entity @p[distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/02.skill_plunge/loop_tp
+    execute if score @s AI.Tick matches 20 facing entity @p[gamemode=!spectator,distance=..100] feet run function asset:mob/0378.red_knight_v3/tick/02.skill_plunge/loop_tp
 # ハード加速
     execute if score @s AI.Tick matches 20 if entity @s[tag=AI.HPless50per] run scoreboard players set @s AI.Tick 24
 # フィールド設定

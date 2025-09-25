@@ -16,11 +16,11 @@
     execute positioned ~-16 ~-8 ~-16 run function asset:mob/0378.red_knight_v3/tick/06.skill_jump2/particle
 
 # 演出 音は普通に音量を上げるとやかましいので、範囲内のヤツに対して直接鳴らす
-    execute at @a[distance=..40] run playsound minecraft:entity.wither.ambient hostile @p ~ ~ ~ 1 1.5
-    execute at @a[distance=..40] run playsound minecraft:entity.generic.explode hostile @p ~ ~ ~ 1 1
-    execute at @a[distance=..40] run playsound minecraft:entity.generic.explode hostile @p ~ ~ ~ 1 1.2
-    execute at @a[distance=..40] run playsound minecraft:item.trident.thunder hostile @p ~ ~ ~ 1 1.5
-    execute at @a[distance=..40] run playsound minecraft:item.trident.thunder hostile @p ~ ~ ~ 1 1.7
+    execute as @a[distance=..40] at @s run playsound minecraft:entity.wither.ambient hostile @s ~ ~ ~ 1 1.5
+    execute as @a[distance=..40] at @s run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 1 1
+    execute as @a[distance=..40] at @s run playsound minecraft:entity.generic.explode hostile @s ~ ~ ~ 1 1.2
+    execute as @a[distance=..40] at @s run playsound minecraft:item.trident.thunder hostile @s ~ ~ ~ 1 1.5
+    execute as @a[distance=..40] at @s run playsound minecraft:item.trident.thunder hostile @s ~ ~ ~ 1 1.7
     particle explosion_emitter ~ ~0.5 ~ 10 0 10 0 20 force @a[distance=..30]
     particle dust 0.5 0 0 2 ~ ~3 ~ 10 10 10 0 500
     particle dust 0.8 0 0 2 ~ ~3 ~ 10 10 10 0 500
