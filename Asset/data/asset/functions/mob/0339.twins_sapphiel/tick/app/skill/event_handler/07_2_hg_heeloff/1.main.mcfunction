@@ -9,7 +9,7 @@
     execute if score @s 9F.AnimationTimer matches 1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_2_hg_heeloff/3.play_animation
 
 # 移動
-    execute if score @s 9F.AnimationTimer matches 6 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] at @e[type=area_effect_cloud,tag=9F.Temp.Target.Warp,sort=nearest,limit=1] facing entity @p feet run tp @s ~ ~-0.5 ~ ~ 0
+    execute if score @s 9F.AnimationTimer matches 6 at @e[type=area_effect_cloud,tag=9F.Temp.Target.Warp,sort=nearest,limit=1] facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~-0.5 ~ ~ 0
     execute if score @s 9F.AnimationTimer matches 6..20 run function asset:mob/0339.twins_sapphiel/app/general/2.rotate
     execute if score @s 9F.AnimationTimer matches 15..23 at @s positioned ^ ^0.1 ^0.4 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
     # ベクトル計算移動

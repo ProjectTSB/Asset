@@ -53,20 +53,20 @@ particle cloud ^0 ^ ^16.2 0.2 0.2 0.2 0.2 3
 particle cloud ^0 ^ ^18 0.2 0.2 0.2 0.2 3
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYArAGYAsARgMZECcADALQBsATAOzetVEAzGwAcjMayKd2ZOjJHt23HGAwBDALYJkgLd8ABAEYwuGGoBOmgM5JwdAPZ4MEJAe64KZuxptgAbmpQ8bXAADyRmXCgkVgMRAF843Ag7H39A4LAwxAiwKMRYhNw7CgpLOGds3Bo4AC80ODNw3DRLACFa+rMAUQBHPACUKABlUzo4EkQKALKEgF0gA_3
 # 線 1
-execute positioned ^0 ^ ^-18 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-15.75 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-13.5 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-11.25 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-9 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-6.75 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-4.5 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^-2.25 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^0 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^2.25 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^4.5 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^6.75 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^9 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^11.25 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^13.5 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^15.75 run tag @a[distance=..3] add 9G.Temp.Target.Attack
-execute positioned ^0 ^ ^18 run tag @a[distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-18 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-15.75 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-13.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-11.25 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-9 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-6.75 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-4.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^-2.25 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^0 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^2.25 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^4.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^6.75 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^9 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^11.25 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^13.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^15.75 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
+execute positioned ^0 ^ ^18 run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
