@@ -32,7 +32,7 @@
     execute if score @s General.Object.Tick matches 56 run function asset:object/2007.nova/tick/move/7
     execute if score @s General.Object.Tick matches 58 run function asset:object/2007.nova/tick/move/8
 
-# ノヴァを小さくする    
+# ノヴァを小さくする
     execute if score @s General.Object.Tick matches 60 run function asset:object/2007.nova/tick/move/9
 
 # 爆発処理
