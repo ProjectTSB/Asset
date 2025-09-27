@@ -15,7 +15,7 @@
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=DXYZ,tag=!PlayerShouldInvulnerable] run function api:damage/
+    execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset
     tag @a[tag=DXYZ] remove DXYZ
 

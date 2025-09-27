@@ -5,7 +5,6 @@
 # @within asset:mob/0412.tiamat/tick/event/terzetto_aligning/
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 11
     data modify storage lib: args.dy set value 11
     data modify storage lib: args.dz set value 7.5

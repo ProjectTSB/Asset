@@ -6,7 +6,7 @@
 
 # 対象プレイヤーにタグを付与
     scoreboard players operation $TempUserID Temporary = @s 2182.PlayerId
-    execute as @a if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..80] if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
 
 # 氷柱ヒット判定
     execute at @p[tag=2182.TargetPlayer] if entity @e[type=item_display,tag=2180.Pillar,distance=..4] run tag @s add 2182.Hit

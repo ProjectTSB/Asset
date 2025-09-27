@@ -5,7 +5,6 @@
 # @within asset:object/2178.tiamat_icicledive/tick/
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 3.5
     data modify storage lib: args.dy set value 5
     data modify storage lib: args.dz set value 20
@@ -19,7 +18,7 @@
     function api:damage/modifier_manual
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset
-    tag @a remove DXYZ
+    tag @a[tag=DXYZ] remove DXYZ
 
 # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYARgAwCMAHAMxwCcNAtAKwCGAxlywCwA2WizJU+HFgCY4lRhwEcmHCmFwYOAWwTJAW74ACKqrAwOAJ00BnJOC4B7PBghI+uAGanbG62ABuHFHja4AAeSBS4UGEAvlG4ELbefgFBYKGI4WCRiFRsMbi2rq4WcE7puGRwAF5ocKZhuGgWAEJVNaYAogCOeP4oUADKJlxwJIiu-sUxALpAA_3
 # 線 1

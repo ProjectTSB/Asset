@@ -16,7 +16,7 @@
     # function animated_java:tiamat_aj/remove/all
 
 # その他リセット
-    tag @a remove BG.MainTarget
+    tag @a[tag=BG.MainTarget] remove BG.MainTarget
     # function asset:mob/0410.tiamat/tick/util/remove_all_tag
 
 # オブジェクト消去
