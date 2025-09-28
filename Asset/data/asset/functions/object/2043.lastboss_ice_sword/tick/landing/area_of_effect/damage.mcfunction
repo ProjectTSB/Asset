@@ -19,6 +19,6 @@
     function api:entity/mob/effect/reset
 
 # 演出
-    execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run particle block ice ~ ~1 ~ 0.2 0.5 0.2 0 10
-    execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:entity.player.hurt_freeze player @p ~ ~ ~ 1 2
-    execute at @a[tag=!PlayerShouldInvulnerable,distance=..4] run playsound minecraft:block.glass.break player @p ~ ~ ~ 1 2
+    execute at @a[gamemode=!spectator,distance=..4] run particle block ice ~ ~1 ~ 0.2 0.5 0.2 0 10
+    execute as @a[gamemode=!spectator,distance=..4] at @s run playsound minecraft:entity.player.hurt_freeze player @s ~ ~ ~ 1 2
+    execute as @a[gamemode=!spectator,distance=..4] at @s run playsound minecraft:block.glass.break player @s ~ ~ ~ 1 2

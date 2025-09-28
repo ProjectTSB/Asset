@@ -27,7 +27,7 @@
     # 残ってたらヤなのでマーカーを消す
         kill @e[type=marker,tag=RW.TeleportMarker,sort=nearest,limit=1]
     # 移動先を設置
-        execute if entity @s[scores={RW.Phase=1..2}] facing entity @p[gamemode=!spectator,tag=TargetPlayer] feet run summon marker ^ ^ ^20 {Tags:[RW.TeleportMarker,RW.MarkerInit]}
+        execute if entity @s[scores={RW.Phase=1..2}] facing entity @p[tag=TargetPlayer] feet run summon marker ^ ^ ^20 {Tags:[RW.TeleportMarker,RW.MarkerInit]}
         execute if entity @s[scores={RW.Phase=3..}] facing entity @p[gamemode=!spectator,distance=..32] feet run tp @s ~ ~ ~ ~ ~
     # 拡散設定
         #data modify storage lib: Argument.Bounds set value [[2d,2d],[0d,0d],[2d,2d]]

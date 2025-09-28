@@ -14,7 +14,7 @@
     particle minecraft:explosion ~ ~ ~ 1 0.5 1 0.5 5
 
 # 演出
-    playsound entity.lightning_bolt.impact hostile @p ~ ~ ~ 0.3 0 0
+    playsound entity.lightning_bolt.impact hostile @a[distance=..32] ~ ~ ~ 0.3 0 0
 
 # ダメージ設定
     # 与えるダメージ

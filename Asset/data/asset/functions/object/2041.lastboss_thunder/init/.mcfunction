@@ -16,7 +16,7 @@
     execute rotated 0 0 run function asset:object/2041.lastboss_thunder/init/shape
 
 # 毎回同じ向きってのも味気ないので、向きを変えておく
-    execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ 0
 
 # サウンド
     playsound minecraft:entity.ender_eye.death hostile @a ~ ~ ~ 1 1
