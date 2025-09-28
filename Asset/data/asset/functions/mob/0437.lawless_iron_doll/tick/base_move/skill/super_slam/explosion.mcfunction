@@ -18,7 +18,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute if entity @a[distance=..30] positioned ~-30 ~-1 ~-30 as @a[tag=!PlayerShouldInvulnerable,dx=60,dy=1,dz=60] at @s run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/damage
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..30] positioned ~-30 ~-1 ~-30 as @a[tag=!PlayerShouldInvulnerable,dx=60,dy=1,dz=60] at @s run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_slam/damage
     function api:damage/reset
 
 # パーティクル

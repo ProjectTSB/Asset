@@ -29,5 +29,5 @@
 # リセット
     function api:damage/reset
     tag @p[tag=2241.Player,distance=..64] remove 2241.Player
-    tag @a[tag=!PlayerShouldInvulnerable,distance=..16] remove 2241.TargetEntity
+    tag @a[tag=2241.TargetEntity,distance=..16] remove 2241.TargetEntity
     tag @a[tag=BoundingFan,distance=..16] remove BoundingFan

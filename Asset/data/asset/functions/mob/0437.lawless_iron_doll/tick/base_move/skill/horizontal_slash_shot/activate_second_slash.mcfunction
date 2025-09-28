@@ -31,7 +31,7 @@
         execute as @a[tag=BoundingFan,distance=..16] run function api:damage/
     # リセット
         function api:damage/reset
-        tag @a[tag=BoundingFan,distance=..16] remove BoundingFan
+        tag @a[tag=BoundingFan] remove BoundingFan
 
 # 演出
     playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 0.5
