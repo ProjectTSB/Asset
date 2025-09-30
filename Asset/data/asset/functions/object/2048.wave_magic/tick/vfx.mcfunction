@@ -6,7 +6,7 @@
 
 # 演出用Obj召喚
     data modify storage api: Argument.ID set value 2256
-    execute positioned ~ ~2 ~ run function api:object/summon
+    execute positioned ~ ~ ~ run function api:object/summon
 
 # 演出
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.4 1 0
