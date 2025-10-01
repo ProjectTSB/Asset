@@ -5,7 +5,7 @@
 # @within function asset:object/2048.wave_magic/hit_block/
 
 # プレイヤーの方を見る
-    execute facing entity @p feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..32] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 速度を変更
     data modify storage asset:context this.MovePerStep set value 0.4
