@@ -25,8 +25,8 @@
     execute if score @s 9F.AnimationTimer matches 55 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
 
 # 攻撃
-    execute if score @s 9F.AnimationTimer matches 30 at @s positioned ^-0.1 ^0.6 ^0.9 facing entity @a[distance=..3,sort=nearest,limit=1] eyes run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
-    execute if score @s 9F.AnimationTimer matches 34 at @s positioned ^-0.1 ^0.6 ^0.9 facing entity @a[distance=..3,sort=nearest,limit=1] eyes run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
+    execute if score @s 9F.AnimationTimer matches 30 at @s positioned ^-0.1 ^0.6 ^0.9 facing entity @a[tag=!PlayerShouldInvulnerable,distance=..3,sort=nearest,limit=1] eyes run function asset:mob/0339.twins_sapphiel/app/attack/1.shot_weak
+    execute if score @s 9F.AnimationTimer matches 34 at @s positioned ^-0.1 ^0.6 ^0.9 facing entity @a[tag=!PlayerShouldInvulnerable,distance=..3,sort=nearest,limit=1] eyes run function asset:mob/0339.twins_sapphiel/app/attack/1.shot
 
 # 終了
     execute if score @s 9F.AnimationTimer matches 86.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_2_hg_stepshot/2.end

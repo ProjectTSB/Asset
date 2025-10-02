@@ -6,7 +6,7 @@
 
 # タグ消去
     tag @s remove BF.Skill.Ter.Purg
-    tag @a remove BF.FlareTarget
+    tag @a[tag=BF.FlareTarget] remove BF.FlareTarget
 
 # ハード：ソウルオファリング開始
     execute if predicate api:global_vars/difficulty/2_hard run scoreboard players set @s BF.EventTimer 0

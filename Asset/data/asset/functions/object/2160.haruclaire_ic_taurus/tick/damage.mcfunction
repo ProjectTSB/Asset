@@ -13,7 +13,6 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..12] run function api:damage/
     function api:damage/reset
-    tag @a remove DXYZ
 
 # 演出
     particle block packed_ice ~ ~0.2 ~ 5 0 5 0 100

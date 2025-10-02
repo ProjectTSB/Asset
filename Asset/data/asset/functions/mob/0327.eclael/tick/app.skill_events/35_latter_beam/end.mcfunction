@@ -12,7 +12,7 @@
 
 # ターゲット解放
     scoreboard players reset @s 93.TargetUserId
-    tag @a remove 93.Temp.Target
+    tag @a[tag=93.Temp.Target] remove 93.Temp.Target
 
 # 居合に移行
     tag @s add 93.Skill.IaiMove

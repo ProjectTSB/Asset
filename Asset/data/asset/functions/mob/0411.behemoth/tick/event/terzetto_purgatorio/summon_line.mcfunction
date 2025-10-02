@@ -10,7 +10,7 @@
     data modify storage api: Argument.ID set value 2181
     function api:object/summon
 # タグ付与
-    tag @e[type=item_display,tag=2181.Line,sort=nearest,limit=1] add BF.Object
+    tag @e[type=item_display,tag=2181.Line,tag=!BF.Object,sort=nearest,limit=1] add BF.Object
 
 # ループ
     scoreboard players remove $Temp Temporary 1

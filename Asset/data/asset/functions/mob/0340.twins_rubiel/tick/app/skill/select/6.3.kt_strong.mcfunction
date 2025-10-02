@@ -8,8 +8,8 @@
     execute store result score $Random Temporary run random value 0..2
 
 # プレイヤーが近くにいない場合は掴みを使用しない
-    execute if entity @a[distance=..10] store result score $Random Temporary run random value 0..2
-    execute unless entity @a[distance=..10] store result score $Random Temporary run random value 0..1
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..10] store result score $Random Temporary run random value 0..2
+    execute unless entity @a[tag=!PlayerShouldInvulnerable,distance=..10] store result score $Random Temporary run random value 0..1
 
 # 納刀
     execute if score $Random Temporary matches 0 run tag @s add 9G.Skill.Kt.Sheathe

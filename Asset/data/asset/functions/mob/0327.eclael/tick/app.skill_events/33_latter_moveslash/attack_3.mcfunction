@@ -27,7 +27,7 @@
     execute as @a[tag=93.Temp.AttackTarget] run function api:damage/
 # リセット
     function api:damage/reset
-    tag @a remove 93.Temp.AttackTarget
+    tag @a[tag=93.Temp.AttackTarget] remove 93.Temp.AttackTarget
 
 # ライン斬撃
     summon area_effect_cloud ^ ^ ^ {Duration:1,Tags:["93.Temp.AttackRotation"]}

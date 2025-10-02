@@ -21,14 +21,14 @@
     execute if entity @s[scores={General.Object.Tick=..0}] run tp @s ~ ~0.05 ~
 
 # ターゲットの方を見る
-    execute at @a if score @s 2092.TargetID = @p UserID run tag @p add Target
-    execute if entity @s[scores={General.Object.Tick=..0}] at @s facing entity @p[tag=Target] eyes run tp @s ~ ~ ~ ~ ~
+    execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=..100] if score @e[type=item_display,tag=this,distance=..0.01,limit=1] 2092.TargetID = @s UserID run tag @s add Target
+    execute if entity @s[scores={General.Object.Tick=..0}] at @s facing entity @a[tag=Target,distance=..100,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # スコアが0の時に演出
     execute if entity @s[scores={General.Object.Tick=0}] run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1 0.8 0
 
 # 発射してすぐまでは誘導
-    execute if entity @s[scores={General.Object.Tick=0..10}] at @s facing entity @p[tag=Target] eyes positioned ^ ^ ^-120 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Object.Tick=0..10}] at @s facing entity @a[tag=Target,distance=..100,limit=1] eyes positioned ^ ^ ^-120 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # 定期的に追加で演出
     scoreboard players operation $Interval Temporary = @s General.Object.Tick

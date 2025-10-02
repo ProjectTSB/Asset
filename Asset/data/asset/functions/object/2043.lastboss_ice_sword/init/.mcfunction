@@ -5,7 +5,7 @@
 # @within asset:object/alias/2043/init
 
 # プレイヤーのほう向く
-    execute facing entity @p[distance=..64] feet run tp @s ~ ~ ~ ~ 90
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ 90
 
 # ゆっくり回るようになる
     data modify entity @s teleport_duration set value 1

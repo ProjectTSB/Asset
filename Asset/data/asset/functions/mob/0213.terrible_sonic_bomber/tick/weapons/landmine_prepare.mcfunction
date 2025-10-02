@@ -1,6 +1,6 @@
 #> asset:mob/0213.terrible_sonic_bomber/tick/weapons/landmine_prepare
 #
-# 
+#
 #
 # @within function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
 
@@ -47,7 +47,7 @@
         #tellraw @a [{"nbt":"this.Minefield_Pos","storage": "asset:context"}]
 
 # 既存の地雷を削除
-    execute as @e[type=slime,scores={MobID=436}] run function api:mob/kill 
+    execute as @e[type=slime,scores={MobID=436}] run function api:mob/kill
 
 # reset
     scoreboard players reset $attack_start_time Temporary

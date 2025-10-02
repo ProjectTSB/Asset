@@ -24,7 +24,7 @@
 
 # 数tickごとに攻撃判定が発生
     scoreboard players operation $Interval Temporary %= $10 Const
-    execute if score $Interval Temporary matches 0 if entity @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s as @a[distance=..5] run function asset:object/2243.lawless_mist_shot/tick/aoe/damage
+    execute if score $Interval Temporary matches 0 if entity @a[tag=!PlayerShouldInvulnerable,distance=..5] at @s as @a[tag=!PlayerShouldInvulnerable,distance=..5] run function asset:object/2243.lawless_mist_shot/tick/aoe/damage
 
 # リセット
     scoreboard players reset $Interval Temporary

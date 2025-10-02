@@ -8,7 +8,7 @@
     execute if entity @a[distance=..5] run tag @s add 9G.Skill.Kt.Doubleslash
 
 # 中くらいの距離にプレイヤーがいる場合は移動斬り
-    execute unless entity @s[tag=9G.Skill.Kt.Doubleslash] if entity @a[distance=..10] run tag @s add 9G.Skill.Kt.Moveslash
+    execute unless entity @s[tag=9G.Skill.Kt.Doubleslash] if entity @a[tag=!PlayerShouldInvulnerable,distance=..10] run tag @s add 9G.Skill.Kt.Moveslash
 
 # それ以外は飛び込み斬り
     execute unless entity @s[tag=9G.Skill.Kt.Doubleslash] unless entity @s[tag=9G.Skill.Kt.Moveslash] run tag @s add 9G.Skill.Kt.JumpSlash

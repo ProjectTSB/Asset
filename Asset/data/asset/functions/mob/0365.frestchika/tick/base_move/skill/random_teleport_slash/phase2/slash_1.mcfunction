@@ -13,7 +13,7 @@
         data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
         function api:damage/modifier
-        execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..7] positioned ^ ^ ^100 as @p[distance=..100] run function api:damage/
+        execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..7] positioned ^ ^ ^100 as @p[gamemode=!spectator,distance=..100] run function api:damage/
 # リセット
     function api:damage/reset
 
