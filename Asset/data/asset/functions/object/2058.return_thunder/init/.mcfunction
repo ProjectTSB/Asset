@@ -5,7 +5,7 @@
 # @within asset:object/alias/2058/init
 
 # スピード設定
-    data modify storage asset:context this.Speed set value 1
+    data modify storage asset:context this.StepPerTick set value 1
     data modify storage asset:context this.Range set value 255
 
 # MovePerStepはFieldOverrideから取得する

@@ -8,7 +8,7 @@
     execute unless data storage asset:context this.MovePerStep run data modify storage asset:context this.MovePerStep set value 0.5
 
 # エラー
-    execute unless data storage asset:context this.Speed run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"速度が設定されていない！"}]
+    execute unless data storage asset:context this.StepPerTick run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"再帰回数が設定されていない！"}]
     execute unless data storage asset:context this.Range run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"飛距離が設定されていない！"}]
 
 # Range を移しておく
