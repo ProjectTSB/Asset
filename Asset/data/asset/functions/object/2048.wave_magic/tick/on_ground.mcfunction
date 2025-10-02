@@ -15,14 +15,7 @@
     scoreboard players reset $Interval Temporary
 
 # 段差を超える処理
+    function asset:object/2048.wave_magic/tick/go_up_and_down
 
-# 段差下に落ちる
-    execute at @s if block ^ ^ ^ #lib:no_collision_without_fluid if block ^ ^-0.5 ^ #lib:no_collision_without_fluid run tp @s ^ ^-0.5 ^
-# 段差上に上る
-    execute at @s unless block ^ ^ ^ #lib:no_collision_without_fluid if block ^ ^1 ^ #lib:no_collision_without_fluid run tp @s ^ ^1 ^
-
-# 完全に阻まれたら消滅
-    execute at @s unless block ^ ^ ^ #lib:no_collision_without_fluid unless block ^ ^1 ^ #lib:no_collision_without_fluid unless block ^ ^-0.5 ^ #lib:no_collision_without_fluid run kill @s
-
-# Tagがあれば実行
-    execute at @s if entity @s[tag=2048.Interval] run function asset:object/2048.wave_magic/tick/vfx
+# Tagがあるかつ生きていれば実行
+    execute if entity @s[tag=2048.Interval] at @s if score @s ObjectID matches -2147483648..2147483647 run function asset:object/2048.wave_magic/tick/vfx
