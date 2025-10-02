@@ -22,7 +22,7 @@
     execute at @s unless block ^ ^ ^ #lib:no_collision_without_fluid if block ^ ^1 ^ #lib:no_collision_without_fluid run tp @s ^ ^1 ^
 
 # 完全に阻まれたら消滅
-    execute at @s unless block ^ ^ ^ #lib:no_collision_without_fluid unless block ^ ^0.4 ^ #lib:no_collision_without_fluid unless block ^ ^-0.4 ^ #lib:no_collision_without_fluid run kill @s
+    execute at @s unless block ^ ^ ^ #lib:no_collision_without_fluid unless block ^ ^1 ^ #lib:no_collision_without_fluid unless block ^ ^-0.5 ^ #lib:no_collision_without_fluid run kill @s
 
 # Tagがあれば実行
     execute at @s if entity @s[tag=2048.Interval] run function asset:object/2048.wave_magic/tick/vfx
