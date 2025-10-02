@@ -19,3 +19,6 @@
 
 # Tagがあるかつ生きていれば実行
     execute if entity @s[tag=2048.Interval] at @s if score @s ObjectID matches -2147483648..2147483647 run function asset:object/2048.wave_magic/tick/vfx
+
+# リセット
+    tag @s[tag=2048.Interval] remove 2048.Interval
