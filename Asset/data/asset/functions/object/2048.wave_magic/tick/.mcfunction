@@ -16,9 +16,6 @@
 # 継承
     execute at @s run function asset:object/super.tick
 
-# リセット
-    tag @s[tag=2048.Interval] remove 2048.Interval
-
 # 消滅
 # 80..99 着陸前で4秒以上経過で消滅
 # 100.. 汎用Tick > KillTickなら消滅
