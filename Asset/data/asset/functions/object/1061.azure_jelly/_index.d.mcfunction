@@ -4,3 +4,4 @@
 #> tag
 # @within function asset:object/1061.azure_jelly/**
     #declare tag 1061.Owner
+    #declare score_holder $Interval
