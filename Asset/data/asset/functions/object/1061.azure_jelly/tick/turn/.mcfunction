@@ -23,7 +23,7 @@
 
 # 敵がいるなら
     # Ownerが近くなら敵の方へ
-        execute if function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/near_player run function asset:object/1061.azure_jelly/tick/turn/far_player_no_enemy
+        #execute if function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/near_player run function asset:object/1061.azure_jelly/tick/turn/far_player_no_enemy
 
     # Ownerが遠いならOwnerの方へ
         execute if function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/near_player facing entity @p[tag=1061.Owner] feet run tp @s ~ ~ ~ ~ ~
