@@ -32,6 +32,9 @@
 # 移動方向設定
     execute if score $Interval Temporary matches 0 run function asset:object/1061.azure_jelly/tick/turn/
 
+# 追跡
+    execute at @s run function asset:object/1061.azure_jelly/tick/chase/
+
 # 角度
     execute if score $Interval Temporary matches 0 at @s run function asset:object/1061.azure_jelly/tick/angle/init
     execute at @s run function asset:object/1061.azure_jelly/tick/angle/
@@ -39,7 +42,7 @@
 # 移動
     execute at @s run function asset:object/1061.azure_jelly/tick/move/
 
-    #execute at @s run particle flame ^ ^ ^1 0 0 0 0 1
+    execute at @s run particle flame ^ ^ ^ 0 0 0 0 1
 
 # リセット
     scoreboard players reset $UserID Temporary
