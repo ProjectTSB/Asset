@@ -5,7 +5,7 @@
 # @within function asset:object/1061.azure_jelly/tick/move/
 
 # 前方が問題ないか判定
-    $execute positioned ^ ^ ^$(Speed) if block ~ ~-1.5 ~ #lib:no_collision if block ~ ~-0.5 ~ #lib:no_collision run data modify storage asset:temp 1061.Success set value true
+    $execute positioned ^ ^ ^$(Speed) if block ~ ~-1.5 ~ #lib:no_collision/ if block ~ ~-0.5 ~ #lib:no_collision/ run data modify storage asset:temp 1061.Success set value true
 
 # 前方が問題ないならそのままtp、そうでないなら移動先と現在位置を比較して色々する
     $execute if data storage asset:temp 1061{Success:true} run tp @s ^ ^ ^$(Speed)
