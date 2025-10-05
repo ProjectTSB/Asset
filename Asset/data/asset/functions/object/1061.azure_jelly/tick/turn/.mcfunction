@@ -21,7 +21,6 @@
     # Ownerが遠いならOwnerの方へ
         execute unless function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/near_player facing entity @p[tag=1061.Owner] eyes run tp @s ~ ~ ~ ~ ~
 
-
 # 敵がいるなら
     # Ownerが遠くなければ敵の方へ
         execute if function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/far_player run function asset:object/1061.azure_jelly/tick/turn/chase_enemy

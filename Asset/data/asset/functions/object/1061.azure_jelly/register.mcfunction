@@ -17,7 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 1061
 # フィールド(オプション)
-    data modify storage asset:object Field.First set value true
-    data modify storage asset:object Field.IsUpper set value false
+    data modify storage asset:object Field.IsFirst set value true
+    data modify storage asset:object Field.IsUpper set value true
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1

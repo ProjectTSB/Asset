@@ -8,6 +8,10 @@
     execute unless block ~ ~ ~ #lib:no_collision/ run return fail
     execute unless block ~ ~0.5 ~ #lib:no_collision/ run return fail
     execute unless block ~ ~1.0 ~ #lib:no_collision/ run return fail
+    execute unless block ~0.25 ~1.0 ~0.25 #lib:no_collision/ run return fail
+    execute unless block ~0.25 ~1.0 ~-0.25 #lib:no_collision/ run return fail
+    execute unless block ~-0.25 ~1.0 ~0.25 #lib:no_collision/ run return fail
+    execute unless block ~-0.25 ~1.0 ~-0.25 #lib:no_collision/ run return fail
 
 # 成功
     return 1

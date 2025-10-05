@@ -1,8 +1,11 @@
 #> asset:object/1061.azure_jelly/tick/move/check_collision.m
 #
+# args:
+#   Speed : float
 #
-#
-# @within function asset:object/1061.azure_jelly/tick/move/
+# @within function
+#   asset:object/1061.azure_jelly/tick/move/
+#   asset:object/1061.azure_jelly/tick/summon_effect/
 
 # 前方が問題ないか判定
     $execute positioned ^ ^ ^$(Speed) if function asset:object/1061.azure_jelly/predicate/collision run data modify storage asset:temp 1061.Success set value true
