@@ -5,7 +5,11 @@
 # @within function asset:object/1061.azure_jelly/tick/
 
 # 演出
-    execute rotated ~ 0 run function asset:object/1061.azure_jelly/tick/attack/vfx/circle
+    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/attack/vfx/circle
+    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/attack/vfx/circle2
+
+    data modify storage api: Argument.ID set value 1062
+    execute positioned ~ ~-0.3 ~ run function api:object/summon
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
