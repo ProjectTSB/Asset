@@ -6,3 +6,4 @@
 
 # 継承元の処理実行
     function asset:mob/super.death
+    function animated_java:sharkboss/remove/all

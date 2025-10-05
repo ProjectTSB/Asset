@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/0445.sharkboss/**
-    #scoreboard objectives add CD.test dummy
+    scoreboard objectives add CD.Timer dummy
+    scoreboard objectives add CD.AnimationTimer dummy

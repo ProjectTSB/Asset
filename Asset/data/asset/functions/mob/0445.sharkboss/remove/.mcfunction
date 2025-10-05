@@ -5,3 +5,4 @@
 # @within asset:mob/alias/445/remove
 # 継承元の処理実行
     function asset:mob/super.remove
+    function animated_java:sharkboss/remove/all
