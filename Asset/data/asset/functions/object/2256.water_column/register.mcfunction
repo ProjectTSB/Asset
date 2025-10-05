@@ -5,8 +5,8 @@
 # @within function asset:object/alias/2256/register
 
 # 継承(オプション)
-    # data modify storage asset:object Extends append value
-    # function asset:object/extends
+    data modify storage asset:object Extends append value 2001
+    function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:object ExtendsSafe set value true
 # 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)
@@ -17,8 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 2256
 # フィールド(オプション)
+    data modify storage asset:object Field.Item set value {id:"minecraft:stick",Count:1b}
     data modify storage asset:object Field.Scale set value 4f
-
-# フィールドとして設定しているが、ここは継承でも変えない想定
-# 継承で変えるのはScaleだけの想定
-    data modify storage asset:object Field.Anime set value [20577,20576,20575,20574,20573,20572,20571,20570]
+    data modify storage asset:object Field.Frames set value [20570,20571,20572,20573,20574,20575,20576,20577]
+    data modify storage asset:object Field.LockRotation set value true
