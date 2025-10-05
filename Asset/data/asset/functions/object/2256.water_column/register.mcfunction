@@ -17,7 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 2256
 # フィールド(オプション)
-    data modify storage asset:object Field.Scale set value [4f,4f,4f]
+    data modify storage asset:object Field.Scale set value 4f
 
 # フィールドとして設定しているが、ここは継承でも変えない想定
 # 継承で変えるのはScaleだけの想定
