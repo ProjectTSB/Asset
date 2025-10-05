@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/2256/init
 
-# tp
-    tp @s ~ ~ ~ 90 ~
-
 # Translationを設定
 # Object2001はTransformationを纏めて適用するため、Transformationを初期化してから設定する
     data modify storage asset:context this.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0f,0f,0f],translation:[0f,0f,0f]}
