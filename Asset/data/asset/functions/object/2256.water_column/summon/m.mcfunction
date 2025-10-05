@@ -4,4 +4,5 @@
 #
 # @within function asset:object/2256.water_column/summon/
 
-    $summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[90f,0f],item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20570}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:$(Scale),translation:[0f,2f,0f]}}
+# TODO: 見た目のために角度を変えているが、マイクラのverが上がったら角度を変える必要あり(シェーディングの仕様が変わるため)
+    $summon item_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[90f,0f],interpolation_duration:0,item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20583}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:$(Scale),translation:[0f,2f,0f]}}
