@@ -8,6 +8,15 @@
 # @private
     #declare score_holder $UserID
 
+# 常時演出
+    particle dust 0.267 0.729 0.945 0.9 ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
+    execute if predicate lib:random_pass_per/40 run particle scrape ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
+
+# 召喚演出
+
+# 召喚演出中はreturn
+    execute if data storage asset:context this{IsFirst:true} run return fail
+
 # OwnerにTag付与
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1061.Owner
@@ -18,10 +27,6 @@
 # インターバル
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $50 Const
-
-# 常時演出
-    particle dust 0.267 0.729 0.945 0.9 ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
-    execute if predicate lib:random_pass_per/40 run particle scrape ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
 
 # 攻撃
     execute if score $Interval Temporary matches 0 run function asset:object/1061.azure_jelly/tick/attack/

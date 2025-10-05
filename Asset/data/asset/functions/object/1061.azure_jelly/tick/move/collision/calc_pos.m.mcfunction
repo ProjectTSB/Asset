@@ -38,7 +38,7 @@
 # Speedをstorageに入れておく
     # $data modify storage asset:temp 1061.Speed $(Speed)
 
-# マクロでstorageに突っ込んだxyzでそれぞれ現座標に+したとき、そこが埋まってるなら0とする、埋まってないならそのまま移動
+# マクロでstorageに突っ込んだxyzでそれぞれ現座標に+したとき、埋まってないならそのまま移動
     function asset:object/1061.azure_jelly/tick/move/collision/move with storage asset:temp 1061
 
 # リセット
