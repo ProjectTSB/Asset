@@ -17,12 +17,13 @@
     data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..7]"
     execute positioned ~ ~-5 ~ run function lib:bounding_cylinder/
 
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     execute as @p[tag=1061.Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable,distance=..7] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable,distance=..7] if function asset:object/1061.azure_jelly/tick/attack/check_block/ run function api:damage/
     function api:damage/reset
 
 # リセット

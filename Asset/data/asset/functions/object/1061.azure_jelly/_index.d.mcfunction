@@ -6,4 +6,4 @@
     #declare tag 1061.Owner
     #declare tag 1061.Target
     #declare score_holder $Interval
-    #declare score_holder
+    #declare score_holder $Recursive
