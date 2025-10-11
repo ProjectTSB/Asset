@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"蒼き月の揺籠","color":"blue"}'
+    data modify storage asset:artifact Name set value '[{"text":"蒼","color":"#6a9cff"},{"text":"き","color":"#69a1ff"},{"text":"月","color":"#68a7ff"},{"text":"の","color":"#66acff"},{"text":"揺","color":"#65b2ff"},{"text":"り","color":"#64b7ff"},{"text":"籠","color":"#63bdff"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
