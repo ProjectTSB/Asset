@@ -15,11 +15,8 @@
     particle dust 0.267 0.729 0.945 0.9 ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
     execute if predicate lib:random_pass_per/40 run particle scrape ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
 
-# 召喚演出
-    execute if data storage asset:context this{IsFirst:true} run function asset:object/1061.azure_jelly/tick/summon_effect/
-
-# 召喚演出中はreturn
-    execute if data storage asset:context this{IsFirst:true} run return fail
+# 召喚演出 その間はreturnする
+    execute if data storage asset:context this{IsFirst:true} run return run function asset:object/1061.azure_jelly/tick/summon_effect/
 
 # OwnerにTag付与
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
