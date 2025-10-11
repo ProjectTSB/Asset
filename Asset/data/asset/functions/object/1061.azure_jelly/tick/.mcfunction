@@ -29,9 +29,6 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $50 Const
 
-# 攻撃
-    execute if score $Interval Temporary matches 0 run function asset:object/1061.azure_jelly/tick/attack/
-
 # playsound
     execute if score $Interval Temporary matches 0..3 run function asset:object/1061.azure_jelly/tick/sound
 
@@ -44,6 +41,9 @@
 
 # 移動
     execute at @s run function asset:object/1061.azure_jelly/tick/move/
+
+# 攻撃関連の処理
+    execute at @s run function asset:object/1061.azure_jelly/tick/attack/
 
     #execute at @s run particle flame ^ ^ ^ 0 0 0 0 1
 

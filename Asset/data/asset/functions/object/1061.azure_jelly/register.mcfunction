@@ -19,5 +19,7 @@
 # フィールド(オプション)
     data modify storage asset:object Field.IsFirst set value true
     data modify storage asset:object Field.IsUpper set value true
+    data modify storage asset:object Field.AttackCD set value 50
+    data modify storage asset:object Field.SpeedMultiplier set value 1
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1

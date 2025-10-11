@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"蒼","color":"#6a9cff"},{"text":"き","color":"#69a1ff"},{"text":"月","color":"#68a7ff"},{"text":"の","color":"#66acff"},{"text":"揺","color":"#65b2ff"},{"text":"り","color":"#64b7ff"},{"text":"籠","color":"#63bdff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"蒼く光を放つ海月を抱いた水の揺り籠","color":"gray"}','{"text":"深海の静寂に、ひとつの夢がゆらめく","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

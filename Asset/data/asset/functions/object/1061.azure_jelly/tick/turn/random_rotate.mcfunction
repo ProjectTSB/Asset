@@ -1,4 +1,4 @@
-#> asset:object/1061.azure_jelly/tick/turn/near_player_no_enemy
+#> asset:object/1061.azure_jelly/tick/turn/random_rotate
 #
 #
 #
@@ -11,3 +11,7 @@
 
 # リセット
     data remove storage asset:temp 1061
+
+# プレイヤーとの距離に応じて速度倍率を設定する
+# この関数が呼び出されてる時点で近いはずだが、一応共通処理として、ね
+    function asset:object/1061.azure_jelly/tick/turn/set_speed_multiplier/player

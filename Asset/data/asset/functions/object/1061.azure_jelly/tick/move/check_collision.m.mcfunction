@@ -4,7 +4,7 @@
 #   Speed : float
 #
 # @within function
-#   asset:object/1061.azure_jelly/tick/move/
+#   asset:object/1061.azure_jelly/tick/move/speed_multiplier.m
 #   asset:object/1061.azure_jelly/tick/summon_effect/
 
 # 前方が問題ないか判定

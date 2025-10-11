@@ -1,20 +1,14 @@
 #> asset:object/1061.azure_jelly/tick/attack/
 #
-#
+# 攻撃関連の処理
 #
 # @within function asset:object/1061.azure_jelly/tick/
 
-# 演出
-    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/attack/vfx/circle
-    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/attack/vfx/circle2
+# クールダウンをデクリメント
+    execute store result storage asset:context this.AttackCD int 0.9999999999 run data get storage asset:context this.AttackCD
 
-    #data modify storage api: Argument.ID set value 1062
-    #execute positioned ~ ~-0.3 ~ run function api:object/summon
+# CDが0でなければreturn
+    execute unless data storage asset:context this{AttackCD:0} run return fail
 
-# ダメージ
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.AttackType set value "Magic"
-    data modify storage api: Argument.ElementType set value "Water"
-    execute as @p[tag=1061.Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..5] run function api:damage/
-    function api:damage/reset
+# 敵が近くにいたら攻撃
+    execute positioned ~-3 ~-3 ~-3 if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=5,dy=5,dz=5] at @s run function asset:object/1061.azure_jelly/tick/attack/attack
