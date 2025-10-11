@@ -18,13 +18,13 @@
 
 # 敵がいないなら
     # Ownerが近くならテキトーな方向へ
-        execute unless function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/near_player run function asset:object/1061.azure_jelly/tick/turn/random_rotate
+        execute unless function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/near_player run return run function asset:object/1061.azure_jelly/tick/turn/random_rotate
 
     # Ownerが遠いならOwnerの方へ
-        execute unless function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/near_player run function asset:object/1061.azure_jelly/tick/turn/chase_player/
+        execute unless function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/near_player run return run function asset:object/1061.azure_jelly/tick/turn/chase_player/
 
 # 敵がいるなら
     # Ownerが遠くなければ敵の方へ
-        execute if function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/far_player run function asset:object/1061.azure_jelly/tick/turn/chase_enemy
+        execute if function asset:object/1061.azure_jelly/predicate/near_enemy unless function asset:object/1061.azure_jelly/predicate/far_player run return run function asset:object/1061.azure_jelly/tick/turn/chase_enemy
     # Ownerが遠いならOwnerの方へ
-        execute if function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/far_player run function asset:object/1061.azure_jelly/tick/turn/chase_player/
+        execute if function asset:object/1061.azure_jelly/predicate/near_enemy if function asset:object/1061.azure_jelly/predicate/far_player run return run function asset:object/1061.azure_jelly/tick/turn/chase_player/
