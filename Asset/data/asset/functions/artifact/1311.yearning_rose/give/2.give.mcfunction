@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"渇望する薔薇","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s被ダメージ量の30倍のダメージを攻撃者に与える(最大2000)","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s被ダメージ量の%2$s分体力を回復する(最大20)","with":[{"text":"\\u0002","font":"space"},{"text":"30%"}]}','{"translate":"-%1$sこの回復効果で累計50回復するたび","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s%2$sと%3$sを15秒間得る","with":[{"text":"\\u0008","font":"space"},{"text":"攻撃+10%","color":"green"},{"text":"与回復量+10%","color":"green"}]}','{"text":"血を吸い深紅に咲いた薔薇の一輪","color":"gray"}','{"text":"尽きぬ渇きのままに血を求め根を伸ばす","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s被ダメージ量の30倍のダメージを攻撃者に与える(最大2000)","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s被ダメージ量の%2$s分体力を回復する(最大20)","with":[{"text":"\\u0002","font":"space"},{"text":"30%"}]}','{"translate":"-%1$sこの回復効果で累計50回復するたび","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s%2$sと%3$sを15秒間得る","with":[{"text":"\\u0008","font":"space"},{"text":"攻撃+10%","color":"green"},{"text":"与回復量+10%","color":"green"}]}','{"text":"血を吸い深紅に咲いた薔薇の一輪","color":"gray"}','{"text":"尽きぬ渇きのまま、更なる血を求め根を伸ばす","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
