@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"蒼","color":"#6a9cff"},{"text":"き","color":"#69a1ff"},{"text":"月","color":"#68a7ff"},{"text":"の","color":"#66acff"},{"text":"揺","color":"#65b2ff"},{"text":"り","color":"#64b7ff"},{"text":"籠","color":"#63bdff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"蒼く光を放つ海月を抱いた水の揺り籠","color":"gray"}','{"text":"深海の静寂に、ひとつの夢がゆらめく","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲の敵に攻撃するクラゲを召喚する","color":"white"}','{"text":"蒼く光を放つ海月を抱いた水の揺り籠","color":"gray"}','{"text":"静寂に揺らめき、月光の下に漂う","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 4.5
+    data modify storage asset:artifact AttackInfo.AttackRange set value "4.5"
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 100
 # MP必要量 (int) (オプション)
