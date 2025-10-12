@@ -1,8 +1,8 @@
 #> asset:mob/0445.sharkboss/tick/select_action/ground_close
 #
-# Mobのtick時の処理
+# 潜って近距離
 #
-# @within function asset:mob/alias/445/tick/
+# @within function asset:mob/0445.sharkboss/tick/select_action/
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "CD.SharkbossGC"

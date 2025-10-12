@@ -1,8 +1,8 @@
-#> asset:mob/0445.sharkboss/tick/action/bite
+#> asset:mob/0445.sharkboss/tick/action/rush1
 #
 # Mobの行動(噛み付き)
 #
-# @within asset:mob/alias/445/tick/
+# @within function asset:mob/0445.sharkboss/tick/
 
 execute if score @s CD.AnimationTimer matches 1 run tag @s add CD.Reserving
 execute if score @s CD.AnimationTimer matches 1 run tag @s add CD.Action.Reserve.Rush2

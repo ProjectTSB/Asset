@@ -21,8 +21,8 @@
   execute if entity @s[tag=CD.Action.Bite] at @s run function asset:mob/0445.sharkboss/tick/action/bite
   execute if entity @s[tag=CD.Action.Tail] at @s run function asset:mob/0445.sharkboss/tick/action/tail
   execute if entity @s[tag=CD.Action.Spin] at @s run function asset:mob/0445.sharkboss/tick/action/spin
-  execute if entity @s[tag=CD.Action.Bite_Tail] at @s run function asset:mob/0445.sharkboss/tick/action/bite_tail
-  execute if entity @s[tag=CD.Action.Sky_to_Ground] at @s run function asset:mob/0445.sharkboss/tick/action/sky_to_ground
+  execute if entity @s[tag=CD.Action.BiteTail] at @s run function asset:mob/0445.sharkboss/tick/action/bite_tail
+  execute if entity @s[tag=CD.Action.SkyToGround] at @s run function asset:mob/0445.sharkboss/tick/action/sky_to_ground
   execute if entity @s[tag=CD.Action.Move] at @s run function asset:mob/0445.sharkboss/tick/action/move
 
   #地中のやつ
@@ -31,7 +31,7 @@
   execute if entity @s[tag=CD.Action.Rush] at @s run function asset:mob/0445.sharkboss/tick/action/rush1
   execute if entity @s[tag=CD.Action.Rush2] at @s run function asset:mob/0445.sharkboss/tick/action/rush2
 
-  execute if score @s CD.AnimationTimer matches 100.. run function asset:mob/0445.sharkboss/tick/action_end
+  #execute if score @s CD.AnimationTimer matches 100.. run function asset:mob/0445.sharkboss/tick/action/utility/end
 
 #タイマーに応じた処理↓試作用
   # execute if score @s CD.AnimationTimer matches 2 run playsound minecraft:entity.ender_dragon.growl ambient @a ~ ~ ~ 1 1.8

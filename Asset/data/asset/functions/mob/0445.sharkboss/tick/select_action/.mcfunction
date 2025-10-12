@@ -1,8 +1,8 @@
 #> asset:mob/0445.sharkboss/tick/select_action/
 #
-# Mobのtick時の処理
+# アクション選択
 #
-# @within asset:mob/alias/445/tick/
+# @within asset:mob/0445.sharkboss/tick/
 
 #行動可能タグを外す
     tag @s remove CD.CanAction

@@ -1,8 +1,8 @@
 #> asset:mob/0445.sharkboss/tick/select_action/sky_long
 #
-# Mobのtick時の処理
+# 潜らず遠距離
 #
-# @within asset:mob/alias/445/tickここよくわかってない
+# @within asset:mob/0445.sharkboss/tick/select_action/
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "CD.SharkbossSL"
@@ -19,7 +19,7 @@
     execute if score $Random Temporary matches 0 run tag @s add CD.Action.Tail
     execute if score $Random Temporary matches 1 run tag @s add CD.Action.Move
     execute if score $Random Temporary matches 2 run tag @s add CD.Action.Move
-    execute if score $Random Temporary matches 3 run tag @s add CD.Action.Sky_to_Ground
+    execute if score $Random Temporary matches 3 run tag @s add CD.Action.SkyToGround
 
 # 乱数リセット
     scoreboard players reset $Random Temporary

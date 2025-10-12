@@ -1,8 +1,8 @@
-#> asset:mob/0445.sharkboss/tick/action_end
+#> asset:mob/0445.sharkboss/tick/action/utility/end
 #
 # アクション終了処理
 #
-# @within asset:mob/alias/445/tick/
+# @within function asset:mob/0445.sharkboss/tick/action**
 
 #人力で全部のタグを消す　なんか美しくない気もする...
 
@@ -10,9 +10,9 @@
   execute if entity @s[tag=CD.Action.Bite] run tag @s remove CD.Action.Bite
   execute if entity @s[tag=CD.Action.Tail] run tag @s remove CD.Action.Tail
   execute if entity @s[tag=CD.Action.Spin] run tag @s remove CD.Action.Spin
-  execute if entity @s[tag=CD.Action.Bite_Tail] run tag @s remove CD.Action.Bite_Tail
-  execute if entity @s[tag=CD.Action.Sky_to_Ground] run tag @s remove CD.Action.Sky_to_Ground
-  execute if entity @s[tag=CD.Action.Move_Bite] run tag @s remove CD.Action.Move_Bite
+  execute if entity @s[tag=CD.Action.BiteTail] run tag @s remove CD.Action.BiteTail
+  execute if entity @s[tag=CD.Action.SkyToGround] run tag @s remove CD.Action.SkyToGround
+  #execute if entity @s[tag=CD.Action.Move_Bite] run tag @s remove CD.Action.Move_Bite
   execute if entity @s[tag=CD.Action.Move] run tag @s remove CD.Action.Move
 
   #地中のやつ

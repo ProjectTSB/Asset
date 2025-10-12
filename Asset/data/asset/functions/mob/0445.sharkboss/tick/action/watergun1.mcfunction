@@ -1,8 +1,8 @@
-#> asset:mob/0445.sharkboss/tick/action/bite
+#> asset:mob/0445.sharkboss/tick/action/watergun1
 #
 # Mobの行動(噛み付き)
 #
-# @within asset:mob/alias/445/tick/
+# @within function asset:mob/0445.sharkboss/tick/
 
 execute if score @s CD.AnimationTimer matches 0 as @e[tag=CD.ModelRoot] run function animated_java:sharkboss/animations/ground_watergun/tween {duration:1, to_frame: 0}
 execute if score @s CD.AnimationTimer matches 56 run function asset:mob/0445.sharkboss/tick/action/utility/end
