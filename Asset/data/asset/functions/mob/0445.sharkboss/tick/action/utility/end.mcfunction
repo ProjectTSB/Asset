@@ -23,4 +23,4 @@
 
 #次の行動いけますタグ
 tag @s add CD.CanAction
-scoreboard players set @s CD.AnimationTimer 0
+# scoreboard players set @s CD.AnimationTimer 0
