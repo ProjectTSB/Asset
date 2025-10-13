@@ -17,7 +17,7 @@
     particle scrape ~ ~ ~ 0 0 0 15 100 normal @a
     execute if score $BulletCount Temporary matches 4.. run particle scrape ~ ~ ~ 0 0 0 30 100 normal @a
     execute if score $BulletCount Temporary matches 7 run particle scrape ~ ~ ~ 0 0 0 45 100 normal @a
-    playsound tsb_sounds:rifle_shot neutral @a ~ ~ ~ 2 0.8
+    playsound tsb_sounds:rifle_shot neutral @a[distance=..16] ~ ~ ~ 2 0.8
     playsound block.fire.extinguish neutral @a ~ ~ ~ 1 1.2
     playsound block.fire.extinguish neutral @a ~ ~ ~ 1 1.3
     playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 0.3 2
