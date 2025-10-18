@@ -30,4 +30,4 @@
     tag @e[type=#lib:living_without_player,tag=BoundingCylinder,distance=..7] remove BoundingCylinder
 
 # AttackCD初期化
-    data modify storage asset:context this.AttackCD set value 50
+    data modify storage asset:context this.AttackCD.Current set from storage asset:context this.AttackCD._
