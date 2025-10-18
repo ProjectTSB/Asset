@@ -26,9 +26,6 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $50 Const
 
-# playsound
-    execute if score $Interval Temporary matches 0..3 run function asset:object/1061.azure_jelly/tick/sound
-
 # 移動方向設定
     execute if score $Interval Temporary matches 0 run function asset:object/1061.azure_jelly/tick/turn/
 
