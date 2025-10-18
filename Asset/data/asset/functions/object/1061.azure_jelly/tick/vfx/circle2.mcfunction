@@ -1,8 +1,8 @@
-#> asset:object/1061.azure_jelly/tick/turn/vfx/circle2
+#> asset:object/1061.azure_jelly/tick/vfx/circle2
 #
 #
 #
-# @within function asset:object/1061.azure_jelly/tick/turn/
+# @within function asset:object/1061.azure_jelly/tick/*/**
 
 particle scrape ~ ~ ~ ^0 ^ ^-1000000 0.00002 0
 particle scrape ~ ~ ~ ^78459.09573 ^ ^-996917.33373 0.00002 0

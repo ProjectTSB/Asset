@@ -13,8 +13,8 @@
 #  - プレイヤーから「離れているなら」プレイヤーの方へ戻る
 
 # 演出
-    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/turn/vfx/circle
-    execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/turn/vfx/circle2
+    #execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/turn/vfx/circle
+    #execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/turn/vfx/circle2
 
 # 敵がいないなら
     # Ownerが近くならテキトーな方向へ
