@@ -10,8 +10,8 @@
 # 上下どちらの移動をするかトグルで切り替える
     function asset:object/1061.azure_jelly/tick/angle/switch_up_down
 
-# trueなら-6000して保存しておく
+# trueなら少し減らして保存しておく
     execute if data storage asset:context this{IsUpper:true} run scoreboard players remove @s 1061.Pitch 6000
 
-# falseなら+3000
+# falseなら少し増やす
     execute if data storage asset:context this{IsUpper:false} run scoreboard players add @s 1061.Pitch 1500
