@@ -14,7 +14,7 @@
     execute if score @s General.Object.Tick matches 3 run function asset:object/1062.azure_wave/tick/expand
 
 # 見えなくなる
-    execute if score @s General.Object.Tick matches 30 run function asset:object/1062.azure_wave/tick/disappear
+    execute if score @s General.Object.Tick matches 29 run function asset:object/1062.azure_wave/tick/disappear
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=50..}]
+    kill @s[scores={General.Object.Tick=35..}]
