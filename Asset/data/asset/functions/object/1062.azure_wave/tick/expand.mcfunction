@@ -7,7 +7,7 @@
 # start_interpolation
     data modify entity @s start_interpolation set value 0
 
-# 回転
+# 拡大しながら回転
     execute if data storage asset:context this{LeftRotate:true} run data modify entity @s transformation.left_rotation set value [0f,0.7071f,0f,0.7071f]
     execute unless data storage asset:context this{LeftRotate:true} run data modify entity @s transformation.left_rotation set value [0f,-0.7071f,0f,0.7071f]
     data modify entity @s transformation.scale set value [9f,6f,9f]
