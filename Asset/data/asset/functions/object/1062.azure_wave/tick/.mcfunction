@@ -11,7 +11,10 @@
     function asset:object/1062.azure_wave/tick/sound
 
 # 拡大
-    execute if score @s General.Object.Tick matches 3 run function asset:object/1062.azure_wave/tick/transformation
+    execute if score @s General.Object.Tick matches 3 run function asset:object/1062.azure_wave/tick/expand
+
+# 見えなくなる
+    execute if score @s General.Object.Tick matches 28 run function asset:object/1062.azure_wave/tick/disappear
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=30..}]
+    kill @s[scores={General.Object.Tick=50..}]
