@@ -8,8 +8,8 @@
     execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/vfx/circle1
     execute rotated ~ 0 positioned ~ ~-0.3 ~ run function asset:object/1061.azure_jelly/tick/vfx/circle2
 
-    data modify storage api: Argument.ID set value 1062
-    execute positioned ~ ~-0.3 ~ run function api:object/summon
+# 波Objectの演出
+    function asset:object/1061.azure_jelly/tick/attack/summon_wave/
 
 # 円柱Libを用いて判定する
     data modify storage lib: Argument.BoundingCylinder.Radius set value 4.5d

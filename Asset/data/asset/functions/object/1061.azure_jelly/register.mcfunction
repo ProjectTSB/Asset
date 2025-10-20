@@ -19,6 +19,7 @@
 # フィールド(オプション)
     data modify storage asset:object Field.IsFirst set value true
     data modify storage asset:object Field.IsUpper set value true
+    data modify storage asset:object Field.WaveLeftRotate set value true
     data modify storage asset:object Field.AttackCD.Current set value 0
     data modify storage asset:object Field.AttackCD._ set value 50
     data modify storage asset:object Field.SpeedMultiplier set value 1
