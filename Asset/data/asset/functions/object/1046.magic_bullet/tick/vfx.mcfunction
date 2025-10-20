@@ -14,9 +14,9 @@
     execute store result score $BulletCount Temporary run data get storage asset:context this.BulletCount
 
 # 演出
-    particle scrape ~ ~ ~ 0 0 0 15 100 normal @a[distance=..16]
-    execute if score $BulletCount Temporary matches 4.. run particle scrape ~ ~ ~ 0 0 0 30 100 normal @a[distance=..16]
-    execute if score $BulletCount Temporary matches 7 run particle scrape ~ ~ ~ 0 0 0 45 100 normal @a[distance=..16]
+    particle scrape ~ ~ ~ 0 0 0 15 100 normal @a
+    execute if score $BulletCount Temporary matches 4.. run particle scrape ~ ~ ~ 0 0 0 30 100 normal @a
+    execute if score $BulletCount Temporary matches 7 run particle scrape ~ ~ ~ 0 0 0 45 100 normal @a
     playsound tsb_sounds:rifle_shot neutral @a[distance=..16] ~ ~ ~ 2 0.8
     playsound block.fire.extinguish neutral @a[distance=..16] ~ ~ ~ 1 1.2
     playsound block.fire.extinguish neutral @a[distance=..16] ~ ~ ~ 1 1.3
