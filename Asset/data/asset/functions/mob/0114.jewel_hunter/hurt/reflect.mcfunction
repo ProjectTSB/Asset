@@ -9,11 +9,11 @@
     #declare score_holder $Difficulty
 
 # 難易度値に比例した弾速にする
-# ノーマルまではSpeedは2固定
+# ノーマルまではStepPerTickは2固定
 # それ以上なら難易度値だけ弾速が上がる
     function api:global_vars/get_difficulty
-    data modify storage api: Argument.FieldOverride.Speed set from storage api: Return.Difficulty
-    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.Speed set value 2
+    data modify storage api: Argument.FieldOverride.StepPerTick set from storage api: Return.Difficulty
+    execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage api: Argument.FieldOverride.StepPerTick set value 2
 
 # ダメージ設定
 # ノーマルまではダメージを3に固定

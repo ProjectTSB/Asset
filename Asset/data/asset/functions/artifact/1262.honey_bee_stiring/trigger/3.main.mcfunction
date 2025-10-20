@@ -15,14 +15,14 @@
 
 # フルチャージ
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 400
-    execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 5
+    execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 5
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Range set value 50
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.PoisonDamageInterval set value 10
     execute if entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.FullCharge set value true
 
 # 非フルチャージ
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Damage set value 200
-    execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Speed set value 1
+    execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.StepPerTick set value 1
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.Range set value 20
     execute unless entity @s[tag=Z2.FullCharge] run data modify storage api: Argument.FieldOverride.PoisonDamageInterval set value 20
 

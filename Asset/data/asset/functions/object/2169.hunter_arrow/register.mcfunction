@@ -18,7 +18,7 @@
     data modify storage asset:object ID set value 2169
 # フィールド(オプション)
     data modify storage asset:object Field.Color set value 9311137
-    data modify storage asset:object Field.Speed set value 8
+    data modify storage asset:object Field.StepPerTick set value 8
     data modify storage asset:object Field.ShowCritParticle set value false
     data modify storage asset:object Field.Range set value 24
     data modify storage asset:object Field.AttackType set value "Physical"

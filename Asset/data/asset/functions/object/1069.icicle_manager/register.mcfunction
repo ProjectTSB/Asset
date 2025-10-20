@@ -21,5 +21,5 @@
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.WaitingTick set value 0
     data modify storage asset:object Field.MovePerStep set value 0.75d
-    data modify storage asset:object Field.Speed set value 1
+    data modify storage asset:object Field.StepPerTick set value 1
     data modify storage asset:object Field.Range set value 1

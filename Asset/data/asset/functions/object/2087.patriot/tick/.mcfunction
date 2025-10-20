@@ -12,8 +12,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 加速
-    execute store result score $Accelerate Temporary run data get storage asset:context this.Speed 10
-    execute if score $Accelerate Temporary matches ..75 store result storage asset:context this.Speed float 0.1 run scoreboard players add $Accelerate Temporary 5
+    execute store result score $Accelerate Temporary run data get storage asset:context this.StepPerTick 10
+    execute if score $Accelerate Temporary matches ..75 store result storage asset:context this.StepPerTick float 0.1 run scoreboard players add $Accelerate Temporary 5
 
 # particle
     particle minecraft:flame ^ ^0.1 ^-1.3 0.2 0.2 0.2 0 2 force
