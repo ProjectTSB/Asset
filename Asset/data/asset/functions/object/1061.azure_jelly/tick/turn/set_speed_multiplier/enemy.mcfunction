@@ -8,4 +8,4 @@
     execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..40] run data modify storage asset:context this.SpeedMultiplier set value 3
     execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..20] run data modify storage asset:context this.SpeedMultiplier set value 2
     execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] run data modify storage asset:context this.SpeedMultiplier set value 1
-    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..3] run data modify storage asset:context this.SpeedMultiplier set value 0.5
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..5] run data modify storage asset:context this.SpeedMultiplier set value 0.5
