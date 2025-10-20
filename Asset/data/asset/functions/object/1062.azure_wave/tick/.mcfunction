@@ -17,4 +17,4 @@
     execute if score @s General.Object.Tick matches 29 run function asset:object/1062.azure_wave/tick/disappear
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=35..}]
+    kill @s[scores={General.Object.Tick=38..}]
