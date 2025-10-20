@@ -8,7 +8,7 @@
     data modify entity @s start_interpolation set value 0
 
 # interpolation_duration
-    data modify entity @s interpolation_duration set value 6
+    data modify entity @s interpolation_duration set value 4
 
 # 回転
     data modify entity @s transformation.scale set value [9f,0f,9f]
