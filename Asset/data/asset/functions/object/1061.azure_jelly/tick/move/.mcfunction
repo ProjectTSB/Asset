@@ -5,7 +5,7 @@
 # @within function asset:object/1061.azure_jelly/tick/
 
 # そもそも: 完全に埋まってたら少しずつ上に行ってreturn
-    execute unless function asset:object/1061.azure_jelly/predicate/collision run return run tp @s ~ ~0.1 ~
+    execute unless function asset:object/1061.azure_jelly/predicate/no_collision run return run tp @s ~ ~0.1 ~
 
 # 速度付きで前方が安全か判定してから進む
 # ちょっとでも軽くしたいな～ってことでreturnで実行数がそんなに増えないようにする

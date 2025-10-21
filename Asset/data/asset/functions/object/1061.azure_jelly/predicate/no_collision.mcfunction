@@ -1,4 +1,4 @@
-#> asset:object/1061.azure_jelly/predicate/collision
+#> asset:object/1061.azure_jelly/predicate/no_collision
 #
 #
 #
