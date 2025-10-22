@@ -8,7 +8,7 @@
 #   asset:object/1061.azure_jelly/tick/summon_effect/
 
 # 前方が問題ないか判定
-    $execute positioned ^ ^ ^$(Speed) if function asset:object/1061.azure_jelly/predicate/collision run data modify storage asset:temp 1061.Success set value true
+    $execute positioned ^ ^ ^$(Speed) if function asset:object/1061.azure_jelly/predicate/no_collision run data modify storage asset:temp 1061.Success set value true
 
 # 前方が問題ないならそのままtp
     $execute if data storage asset:temp 1061{Success:true} run tp @s ^ ^ ^$(Speed)
