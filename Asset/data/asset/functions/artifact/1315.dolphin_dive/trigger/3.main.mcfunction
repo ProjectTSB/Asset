@@ -9,6 +9,12 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 一時的に定義してエラーを回避する
+#> Private
+# @private
+    #declare objective PlayerMotion.Api.Launch
+    #declare function lib:player_motion/launch_looking
+
 # 演出
     execute positioned ~ ~0.3 ~ rotated ~ 0 run function asset:artifact/1315.dolphin_dive/trigger/vfx
     playsound entity.dolphin.jump player @a ~ ~ ~ 0.8 1.1
