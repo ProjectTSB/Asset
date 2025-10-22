@@ -36,4 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Delay set value 3
+    data modify storage asset:effect Field.Delay set value 6
