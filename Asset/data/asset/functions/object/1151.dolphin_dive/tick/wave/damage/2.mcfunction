@@ -10,7 +10,7 @@
 
 # 円柱Libを用いて判定する
     data modify storage lib: Argument.BoundingCylinder.Radius set value 4d
-    data modify storage lib: Argument.BoundingCylinder.Height set value 4d
+    data modify storage lib: Argument.BoundingCylinder.Height set value 5d
     data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..7]"
     execute positioned ~ ~-1 ~ run function lib:bounding_cylinder/
 
