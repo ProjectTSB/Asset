@@ -16,4 +16,7 @@
     function api:data_get/on_ground
 
 # 着地
-    execute if data storage api: {OnGround:true} run function asset:effect/0341.dolphin_dive/tick/landing
+    execute if data storage api: {OnGround:1b} run function asset:effect/0341.dolphin_dive/tick/landing
+
+# OnGround:0bかつすぐ下が水なら水面とみなして発動
+    execute if data storage api: {OnGround:0b} if block ~ ~-1 ~ water align y run function asset:effect/0341.dolphin_dive/tick/landing
