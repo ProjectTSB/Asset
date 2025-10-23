@@ -21,3 +21,6 @@
 # 100.. 汎用Tick > KillTickなら消滅
     execute if entity @s[scores={General.Object.Tick=80..99}] run kill @s
     execute if score @s General.Object.Tick >= @s 2048.KillTick run kill @s
+
+# リセット
+    tag @s[tag=2048.Interval] remove 2048.Interval
