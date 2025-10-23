@@ -25,8 +25,8 @@
     function api:damage/reset
 
 
-# 周囲にモブが殴った対象を除いて２体以上いる場合、エフェクトを撒く。そうでない場合、殴った対象にエフェクトを与える
+# 周囲にモブが殴った対象を除いて1体以上いる場合、エフェクトを撒く。そうでない場合、殴った対象にエフェクトを与える
     execute store result score $Count Temporary if entity @e[type=#lib:living,type=!player,tag=!Victim,tag=!Uninterferable,distance=..5]
-    execute if score $Count Temporary matches 2.. run function asset:artifact/1209.sinful_scythe/trigger/effect
-    execute unless score $Count Temporary matches 2.. run function asset:artifact/1209.sinful_scythe/trigger/effect2
+    execute if score $Count Temporary matches 1.. run function asset:artifact/1209.sinful_scythe/trigger/effect
+    execute unless score $Count Temporary matches 1.. run function asset:artifact/1209.sinful_scythe/trigger/effect2
     scoreboard players reset $Count Temporary
