@@ -4,4 +4,4 @@
 #
 # @within tag/function asset:artifact/dis_equip
 
-execute if data storage asset:context id{mainhand:1318} run function asset:artifact/1318.blue_bouquet/trigger/dis_equip/main
+execute if data storage asset:context id{hotbar:[1318]} run function asset:artifact/1318.blue_bouquet/trigger/dis_equip/main

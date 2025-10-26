@@ -10,5 +10,8 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
+# 既に装備してるならCanUsedを削除
+    execute if entity @s[tag=CanUsed,tag=10M.Equip] run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1318.blue_bouquet/trigger/3.main

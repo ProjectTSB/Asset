@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/1318.blue_bouquet/trigger/**
-    #declare
+    #declare tag 10M.Equip
