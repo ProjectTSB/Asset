@@ -34,12 +34,12 @@
     scoreboard players operation $Interval Temporary = @s 258.Tick
     scoreboard players operation $Interval Temporary %= $18 Const
     execute if score $Interval Temporary matches 0 run function asset:effect/0258.spirit_melody/tick/heal
-    execute if score $Interval Temporary matches 0 rotated ~ 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
-    execute if score $Interval Temporary matches 3 rotated ~60 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
-    execute if score $Interval Temporary matches 6 rotated ~120 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
-    execute if score $Interval Temporary matches 9 rotated ~180 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
-    execute if score $Interval Temporary matches 12 rotated ~240 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
-    execute if score $Interval Temporary matches 15 rotated ~300 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 0 rotated 0 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 3 rotated 60 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 6 rotated 120 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 9 rotated 180 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 12 rotated 240 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
+    execute if score $Interval Temporary matches 15 rotated 300 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
     scoreboard players reset $Interval Temporary
 
 # スコア
