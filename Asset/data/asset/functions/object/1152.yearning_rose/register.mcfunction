@@ -18,4 +18,6 @@
     data modify storage asset:object ID set value 1152
 # フィールド(オプション)
     data modify storage asset:object Field.TargetMobUUID set value -1
-    data modify storage asset:object Field.Scale set value [0f,0f,0f]
+    data modify storage asset:object Field.Scale.Max set value [0f,0f,0f]
+    data modify storage asset:object Field.Scale.Min set value [0f,0f,0f]
+    data modify storage asset:object Field.Scale.NearMax set value [0f,0f,0f]

@@ -9,14 +9,14 @@
     #declare score_holder $Heal
     #declare score_holder $HealMax
 
-# 被ダメ比例回復量(e2)
-    execute store result score $Heal Temporary run data get storage asset:context Damage.Amount 300
+# 被ダメ比例回復量(e1)
+    execute store result score $Heal Temporary run data get storage asset:context Damage.Amount 30
 
-# 回復上限(e2)
-    scoreboard players set $HealMax Temporary 2000
+# 回復上限(e1)
+    scoreboard players set $HealMax Temporary 200
 
 # 回復
-    execute store result storage api: Argument.Heal float 0.001 run scoreboard players get $Heal Temporary
+    execute store result storage api: Argument.Heal float 0.01 run scoreboard players operation $Heal Temporary < $HealMax Temporary
     data modify storage api: Argument.Metadata set value "10F.Heal"
     function api:heal/modifier
     function api:heal/
