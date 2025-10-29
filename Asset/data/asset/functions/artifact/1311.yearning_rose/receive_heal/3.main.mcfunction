@@ -5,8 +5,13 @@
 # @within function asset:artifact/1311.yearning_rose/receive_heal/2.check_condition
 
 # 演出
-    
-
+    execute rotated ~ 0 positioned ~ ~0.25 ~ run function asset:artifact/1311.yearning_rose/receive_heal/vfx/1
+    execute rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1311.yearning_rose/receive_heal/vfx/2
+    playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.7
+    playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.6
+    playsound minecraft:entity.spider.step player @a
+    playsound ogg:random.levelup player @a ~ ~ ~ 0.6 1.7
+    #playsound ogg:random.levelup player @a ~ ~ ~ 0.6 1.6
 
 # 調整班用数値設定箇所
 # 効果時間は長めがいいな～とか

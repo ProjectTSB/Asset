@@ -10,8 +10,7 @@
 # playsound
     playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.7
     playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.6
-    playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.6
-    playsound entity.player.hurt_sweet_berry_bush player @a ~ ~ ~ 0.5 0.5
+    playsound minecraft:entity.spider.step player @a ~ ~ ~ 0.5 1
 
 # 演出用Object召喚
 # 使用者の方を向いて召喚する
