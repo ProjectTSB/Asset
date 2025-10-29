@@ -32,7 +32,7 @@
 
 # 一定間隔で回復とvfx表示
     scoreboard players operation $Interval Temporary = @s 258.Tick
-    scoreboard players operation $Interval Temporary %= $18 Const
+    scoreboard players operation $Interval Temporary %= $20 Const
     execute if score $Interval Temporary matches 0 run function asset:effect/0258.spirit_melody/tick/heal
     execute if score $Interval Temporary matches 0 rotated 0 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
     execute if score $Interval Temporary matches 3 rotated 60 0 positioned ~ ~0.2 ~ run function asset:effect/0258.spirit_melody/tick/vfx/circle
