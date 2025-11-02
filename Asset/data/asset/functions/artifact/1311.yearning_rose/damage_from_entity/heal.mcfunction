@@ -10,7 +10,7 @@
     #declare score_holder $HealMax
 
 # 被ダメ比例回復量(e1)
-    execute store result score $Heal Temporary run data get storage asset:context Damage.Amount 30
+    execute store result score $Heal Temporary run data get storage asset:context Damage.Amount 3
 
 # 回復上限(e1)
     scoreboard players set $HealMax Temporary 200
