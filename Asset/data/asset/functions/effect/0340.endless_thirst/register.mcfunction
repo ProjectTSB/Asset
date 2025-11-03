@@ -38,4 +38,4 @@
 # フィールド
     data modify storage asset:effect Field.UUID set value [I;1,3,340,0]
     data modify storage asset:effect Field.AttackModifier set value 0.1
-    data modify storage asset:effect Field.HealModofier set value 0.1
+    data modify storage asset:effect Field.HealModifier set value 0.1
