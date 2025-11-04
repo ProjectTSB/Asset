@@ -8,4 +8,3 @@
     tag @s remove BE.MainTarget
     tag @s remove BE.AttackTarget
     tag @s remove BE.HateTarget
-    tag @s remove BE.Temp.MoveEnd

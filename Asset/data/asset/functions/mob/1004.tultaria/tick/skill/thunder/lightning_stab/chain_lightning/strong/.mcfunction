@@ -19,5 +19,5 @@
     execute at @s run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/chain_lightning/strong/thunder.recursive
 
 # サウンド
-    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 2
-    playsound minecraft:entity.lightning_bolt.thunder hostile @p ~ ~ ~ 1 1.5 0
+    playsound minecraft:entity.wither.shoot hostile @a[distance=..32] ~ ~ ~ 1 2
+    playsound minecraft:entity.lightning_bolt.thunder hostile @a[distance=..32] ~ ~ ~ 1 1.5 0

@@ -6,7 +6,6 @@
 
 # ヒット判定
     # tag @a[tag=!PlayerShouldInvulnerable,distance=..4] add 2176.Hit
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 5
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 4

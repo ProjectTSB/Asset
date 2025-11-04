@@ -5,7 +5,7 @@
 # @within function asset:mob/0340.twins_rubiel/hurt/
 
 # 攻撃者を向く
-    execute facing entity @a[tag=Attacker,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @a[tag=Attacker,tag=!PlayerShouldInvulnerable,limit=1] feet run tp @s ~ ~ ~ ~ 0
 
 # アニメーション再生
     function asset:mob/0340.twins_rubiel/app/general/1.cancel_animation

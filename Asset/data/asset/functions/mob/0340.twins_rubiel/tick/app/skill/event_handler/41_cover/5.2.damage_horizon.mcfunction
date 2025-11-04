@@ -6,7 +6,7 @@
 #    function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/41_cover/1.main
 
 # ヒット判定
-    execute positioned ^ ^ ^ run tag @a[distance=..3] add 9G.Temp.Target.Attack
+    execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..3] add 9G.Temp.Target.Attack
 
 # TODO:ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.CoverHorizon
