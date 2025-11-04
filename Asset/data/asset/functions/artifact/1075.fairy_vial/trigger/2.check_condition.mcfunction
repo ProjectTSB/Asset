@@ -11,6 +11,7 @@
 # 他にアイテム等確認する場合はここに書く
 
 # IsHoT:trueならreturn
+    execute if entity @s[tag=CanUsed] if data storage asset:context ReceiveHeal{IsHoT:true} run tag @s remove CanUsed
     execute if entity @s[tag=CanUsed] if data storage asset:context ReceiveHeal{IsHoT:true} run return fail
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
