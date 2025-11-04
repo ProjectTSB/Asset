@@ -711,8 +711,7 @@
     #declare tag/function asset:artifact/killed/melee                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/killed/melee.json#L1
     #declare tag/function asset:artifact/killed/projectile                            from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/killed/projectile.json#L1
     #declare tag/function asset:artifact/load                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/load.json#L1
-    #declare tag/function asset:artifact/receive_heal/                                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/receive_heal/.json#L1
-    #declare tag/function asset:artifact/receive_heal/all                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/receive_heal/all.json#L1
+    #declare tag/function asset:artifact/receive_heal                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/receive_heal.json#L1
     #declare tag/function asset:artifact/register                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/register.json#L1
     #declare tag/function asset:artifact/shot                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/shot.json#L1
     #declare tag/function asset:artifact/sneak/                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset/tags/functions/artifact/sneak/.json#L1
