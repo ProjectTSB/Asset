@@ -9,8 +9,17 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 最も現在体力の高い/低いプレイヤーを検索
+# 最も現在MPの高い/低いプレイヤーを検索
     function asset:artifact/1324.oracle/trigger/find_target
 
+# 最も現在MPの多いプレイヤーのMPを減少
+    data modify storage api: Argument.Fluctuation set value -100
+    execute as @p[tag=10S.HighestMP] run function api:mp/fluctuation
+
+# 最も現在MPの少ないプレイヤーのMPを回復
+    data modify storage api: Argument.Fluctuation set value 100
+    execute as @p[tag=10S.LowestMP] run function api:mp/fluctuation
 
 # リセット
+    tag @p[tag=10S.HighestMP] remove 10S.HighestMP
+    tag @p[tag=10S.LowestMP] remove 10S.LowestMP

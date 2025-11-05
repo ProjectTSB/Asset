@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"オ","color":"#9e99fc"},{"text":"ラ","color":"#9bb3fd"},{"text":"ク","color":"#98cefe"},{"text":"ル","color":"#96e9ff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mのプレイヤーの中で"}','{"translate":"-%1$s最も現在体力の高い対象に20の固定ダメージを与える","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s最も現在体力の低い対象に20の固定回復を与える","with":[{"text":"\\u0002","font":"space"}]}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mのプレイヤーの中で"}','{"translate":"-%1$s最も現在MPの多い1名のMPを100減少させる","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s最も現在MPの少ない1名のMPを100回復する","with":[{"text":"\\u0002","font":"space"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -49,7 +49,7 @@
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 100
+    data modify storage asset:artifact LocalCooldown set value 140
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
