@@ -1,8 +1,8 @@
-#> asset:artifact/1324.oracle/trigger/2.check_condition
+#> asset:artifact/1324.mysterious_star/trigger/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:artifact/1324.oracle/trigger/1.trigger
+# @within function asset:artifact/1324.mysterious_star/trigger/1.trigger
 
 # ID指定する
     data modify storage asset:artifact TargetID set value 1324
@@ -14,4 +14,4 @@
     execute if entity @s[tag=CanUsed] unless entity @p[tag=!this,tag=!PlayerShouldInvulnerable,distance=..20] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1324.oracle/trigger/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1324.mysterious_star/trigger/3.main

@@ -1,9 +1,9 @@
-#> asset:artifact/1324.oracle/give/2.give
+#> asset:artifact/1324.mysterious_star/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1324.oracle/give/1.trigger
+# @within function asset:artifact/1324.mysterious_star/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"オ","color":"#9e99fc"},{"text":"ラ","color":"#9bb3fd"},{"text":"ク","color":"#98cefe"},{"text":"ル","color":"#96e9ff"}]'
+    data modify storage asset:artifact Name set value '[{"text":"神","color":"#9e99fc"},{"text":"秘","color":"#9bb3fd"},{"text":"の","color":"#98cefe"},{"text":"星","color":"#96e9ff"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mのプレイヤーの中で"}','{"translate":"-%1$s最も現在MPの多い1名のMPを100減少させる","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s最も現在MPの少ない1名のMPを100回復する","with":[{"text":"\\u0002","font":"space"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)

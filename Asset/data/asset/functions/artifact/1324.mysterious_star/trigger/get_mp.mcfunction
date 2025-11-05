@@ -1,8 +1,8 @@
-#> asset:artifact/1324.oracle/trigger/get_mp
+#> asset:artifact/1324.mysterious_star/trigger/get_mp
 #
 #
 #
-# @within function asset:artifact/1324.oracle/trigger/find_target
+# @within function asset:artifact/1324.mysterious_star/trigger/find_target
 
 # 現在体力を取得
     function api:mp/get_current

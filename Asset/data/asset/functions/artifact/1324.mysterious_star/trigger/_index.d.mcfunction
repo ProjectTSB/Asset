@@ -1,8 +1,8 @@
-#> asset:artifact/1324.oracle/trigger/_index.d
+#> asset:artifact/1324.mysterious_star/trigger/_index.d
 # @private
 
 #> tag
-# @within function asset:artifact/1324.oracle/trigger/**
+# @within function asset:artifact/1324.mysterious_star/trigger/**
     #declare tag 10S.SearchTarget
     #declare tag 10S.HighestMP
     #declare tag 10S.LowestMP
