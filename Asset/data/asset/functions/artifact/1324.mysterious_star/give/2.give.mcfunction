@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"神","color":"#9e99fc"},{"text":"秘","color":"#9bb3fd"},{"text":"の","color":"#98cefe"},{"text":"星","color":"#96e9ff"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mのプレイヤーの中で"}','{"text":"最も現在MPの多い1名のMPを10減少させ"}','{"text":"最も現在MPの少ない1名のMPを10回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mのプレイヤーの中で"}','{"text":"最も現在MPの多い1名のMPを2減少させ"}','{"text":"最も現在MPの少ない1名のMPを2回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

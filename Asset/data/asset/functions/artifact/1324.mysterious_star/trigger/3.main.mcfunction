@@ -13,11 +13,11 @@
     function asset:artifact/1324.mysterious_star/trigger/find_target
 
 # 最も現在MPの多いプレイヤーのMPを減少
-    data modify storage api: Argument.Fluctuation set value -10
+    data modify storage api: Argument.Fluctuation set value -2
     execute as @p[tag=10S.HighestMP] run function api:mp/fluctuation
 
 # 最も現在MPの少ないプレイヤーのMPを回復
-    data modify storage api: Argument.Fluctuation set value 10
+    data modify storage api: Argument.Fluctuation set value 2
     execute as @p[tag=10S.LowestMP] run function api:mp/fluctuation
 
 # リセット
