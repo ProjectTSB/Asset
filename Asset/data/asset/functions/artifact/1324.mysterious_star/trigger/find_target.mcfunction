@@ -19,12 +19,12 @@
 
 # 最も多い対象を探す
     execute as @a[tag=10S.SearchTarget] run scoreboard players operation $10S.HighestMP Temporary > @s Temporary
-    execute as @a[tag=10S.SearchTarget] if score @s Temporary = $10S.HighestMP Temporary run tag @s add 10S.HighestMP
+    execute as @a[tag=10S.SearchTarget] unless entity @p[tag=10S.HighestMP] if score @s Temporary = $10S.HighestMP Temporary run tag @s add 10S.HighestMP
 
 # 最も少ない対象を探す
 # 最も多い対象は検索から除外
     execute as @a[tag=10S.SearchTarget,tag=!10S.HighestMP] run scoreboard players operation $10S.LowestMP Temporary < @s Temporary
-    execute as @a[tag=10S.SearchTarget,tag=!10S.HighestMP] if score @s Temporary = $10S.LowestMP Temporary run tag @s add 10S.LowestMP
+    execute as @a[tag=10S.SearchTarget,tag=!10S.HighestMP] unless entity @p[tag=10S.LowestMP] if score @s Temporary = $10S.LowestMP Temporary run tag @s add 10S.LowestMP
 
 # リセット
     scoreboard players reset @a[tag=10S.SearchTarget] Temporary
