@@ -8,4 +8,4 @@
     function api:mp/get_current
 
 # 現在体力の10倍を返り値として返す
-    return run data get storage api: Health 10
+    return run data get storage api: Return.CurrentMP 10
