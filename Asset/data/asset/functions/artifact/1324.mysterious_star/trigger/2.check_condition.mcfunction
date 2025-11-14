@@ -16,8 +16,8 @@
 
 # tag=!PlayerShouldInvulnerableが二人以上範囲内にいなけれれば使用不可
     execute if entity @s[tag=CanUsed] store result score $10S.PlayerCount Temporary if entity @a[tag=!PlayerShouldInvulnerable,distance=..20]
+    execute if entity @s[tag=CanUsed] unless score $10S.PlayerCount Temporary matches 2.. run scoreboard players reset $10S.PlayerCount Temporary
     execute if entity @s[tag=CanUsed] unless score $10S.PlayerCount Temporary matches 2.. run tag @s remove CanUsed
-    execute if entity @s[tag=CanUsed] run scoreboard players reset $10S.PlayerCount Temporary
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1324.mysterious_star/trigger/3.main
