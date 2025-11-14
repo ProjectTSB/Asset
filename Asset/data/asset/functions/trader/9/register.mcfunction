@@ -60,6 +60,11 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:blackstone",Count:8b}
 
+# 取引 下位通貨をブラックストーンに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:calcite",Count:8b}
+
 # 取引 下位通貨をクォーツブロックに
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
