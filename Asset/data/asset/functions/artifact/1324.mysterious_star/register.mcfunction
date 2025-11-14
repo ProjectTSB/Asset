@@ -4,5 +4,4 @@
 #
 # @within tag/function asset:artifact/register
 
-# いつか実装される日替わり交換村人のプールに突っ込む予定
-# data modify storage asset:artifact RarityRegistry[4] append value [1324]
+    data modify storage asset:artifact HideRarityRegistry[2] append value [1324]
