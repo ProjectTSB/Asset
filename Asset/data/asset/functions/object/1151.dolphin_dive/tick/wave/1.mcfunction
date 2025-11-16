@@ -13,7 +13,7 @@
     playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.7 0.7
 
 # object
-    execute rotated ~000 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~090 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~270 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon
+    execute rotated ~000 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon/max_start
+    execute rotated ~090 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon/max_start
+    execute rotated ~180 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon/max_start
+    execute rotated ~270 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon/max_start

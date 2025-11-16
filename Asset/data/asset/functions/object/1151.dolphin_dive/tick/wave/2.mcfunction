@@ -13,11 +13,11 @@
     playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.7 0.8
 
 # object
-    execute rotated ~000 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~045 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~090 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~135 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~180 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~225 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~270 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
-    execute rotated ~315 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon
+    execute rotated ~000 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~045 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~090 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~135 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~180 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~225 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~270 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
+    execute rotated ~315 ~ positioned ^ ^ ^3 run function asset:object/1151.dolphin_dive/tick/wave/summon/
