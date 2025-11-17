@@ -69,3 +69,13 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:name_tag",Count:1b}
+
+# 取引 マグマブロック
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:magma_block",Count:8b}
+
+# 取引 ソウルサンド
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:soul_sand",Count:8b}
