@@ -62,4 +62,5 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.6
 # フィールド
-    # data modify storage asset:mob Field.myValue set value
+    data modify storage asset:mob Field.Damage.Vannila set value 40f
+    data modify storage asset:mob Field.Damage.Object set value 18f
