@@ -23,7 +23,7 @@
     execute if score @s General.Mob.Tick matches 140 run function asset:mob/0420.astro_blaze/tick/pre_bullet
 
 # 弾数をセット
-    execute if score @s General.Mob.Tick matches 140 run function asset:mob/0420.astro_blaze/tick/calc_bullet
+    execute if score @s General.Mob.Tick matches 140 run function asset:mob/0420.astro_blaze/tick/set_bullet
 
 # 弾数が0ならreturn
     execute if data storage asset:context this{Bullet:0} run return fail

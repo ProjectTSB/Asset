@@ -1,4 +1,4 @@
-#> asset:mob/0420.astro_blaze/tick/calc_bullet
+#> asset:mob/0420.astro_blaze/tick/set_bullet
 #
 # 弾数を設定する
 #
