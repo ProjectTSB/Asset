@@ -4,10 +4,6 @@
 #
 # @within asset:mob/alias/420/tick
 
-#> Private
-# @private
-    #declare score_holder $Interval
-
 # スコア上昇
     scoreboard players add @s General.Mob.Tick 1
 
@@ -25,14 +21,5 @@
 # 弾数をセット
     execute if score @s General.Mob.Tick matches 140 run function asset:mob/0420.astro_blaze/tick/set_bullet
 
-# 弾数が0ならreturn
-    execute if data storage asset:context this{Bullet:0} run return fail
-
-# 発射
-    scoreboard players operation $Interval Temporary = @s General.Mob.Tick
-    scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 run function asset:mob/0420.astro_blaze/tick/fire
-    scoreboard players reset $Interval Temporary
-
-# 弾数が0ならスコア初期化
-    execute if data storage asset:context this{Bullet:0} run scoreboard players set @s General.Mob.Tick 0
+# 弾数が0でなければ発射
+    execute unless data storage asset:context this{Bullet:0} run function asset:mob/0420.astro_blaze/tick/shoot/

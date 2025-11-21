@@ -1,8 +1,8 @@
-#> asset:mob/0420.astro_blaze/tick/fire
+#> asset:mob/0420.astro_blaze/tick/shoot/spread
 #
-# 発射！！！
 #
-# @within function asset:mob/0420.astro_blaze/tick/
+#
+# @within function asset:mob/0420.astro_blaze/tick/shoot/
 
 #> Tags
 # @private
@@ -22,7 +22,7 @@
     execute as @e[type=marker,tag=BO.Marker,distance=..3] at @s facing entity @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=1] eyes rotated ~ ~2.5 run function lib:forward_spreader/circle
 
 # 発射
-    execute positioned ~ ~1 ~ facing entity @e[type=marker,tag=BO.Marker,distance=..15,limit=1] feet run function asset:mob/0420.astro_blaze/tick/summon
+    execute positioned ~ ~1 ~ facing entity @e[type=marker,tag=BO.Marker,distance=..15,limit=1] feet run function asset:mob/0420.astro_blaze/tick/shoot/summon
 
 # マーカーを戻してあげる
     kill @e[type=marker,tag=BO.Marker,distance=..15,limit=1]
