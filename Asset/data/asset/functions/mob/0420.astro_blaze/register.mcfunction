@@ -64,3 +64,4 @@
 # フィールド
     data modify storage asset:mob Field.Damage.Vannila set value 40f
     data modify storage asset:mob Field.Damage.Object set value 18f
+    data modify storage asset:mob Field.Bullet set value 0

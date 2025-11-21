@@ -8,6 +8,9 @@
 # @private
     #declare tag BO.Marker
 
+# 弾数のデクリメント
+    execute store result storage asset:context this.Bullet int 0.9999999999 run data get storage asset:context this.Bullet
+
 # Markerを召喚
     execute positioned ~ ~1 ~ run summon marker ~ ~ ~ {Tags:["BO.Marker"]}
 
