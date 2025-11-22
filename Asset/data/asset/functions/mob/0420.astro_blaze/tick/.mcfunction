@@ -10,7 +10,7 @@
 # 移動
     execute if score @s General.Mob.Tick matches 40 run function asset:mob/0420.astro_blaze/tick/jump
 
-# 斜線上にプレイヤーが存在しない場合、スコアを戻す
+# 射線上にプレイヤーが存在しない場合、スコアを戻す
     execute if score @s General.Mob.Tick matches 100 unless function asset:mob/0420.astro_blaze/tick/check_through/ run scoreboard players set @s General.Mob.Tick 0
 
 # 発射合図
