@@ -8,6 +8,9 @@
 # @private
     #declare tag BO.Marker
 
+# まず、ターゲットがいなくなった場合、弾を0にしてreturnする
+    $execute unless entity @p[scores={UserID=$(TargetID)},distance=..100] run return run data modify storage asset:context this.Bullet set value 0
+
 # 弾数のデクリメント
     execute store result storage asset:context this.Bullet int 0.9999999999 run data get storage asset:context this.Bullet
 
