@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0420.astro_blaze/tick/shoot/spread
+# @within function asset:mob/0420.astro_blaze/tick/shoot/spread.m
 
 # オーバーライドを設定
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Object

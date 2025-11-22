@@ -11,7 +11,7 @@
 # 発射
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
     scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 run function asset:mob/0420.astro_blaze/tick/shoot/spread
+    execute if score $Interval Temporary matches 0 run function asset:mob/0420.astro_blaze/tick/shoot/spread.m with storage asset:context this
     scoreboard players reset $Interval Temporary
 
 # 弾数が0ならスコア初期化

@@ -1,4 +1,4 @@
-#> asset:mob/0420.astro_blaze/tick/shoot/spread
+#> asset:mob/0420.astro_blaze/tick/shoot/spread.m
 #
 #
 #
@@ -18,8 +18,8 @@
     data modify storage lib: Argument.Distance set value 8.0
     data modify storage lib: Argument.Spread set value 1.5
 
-# 前方拡散を実行する
-    execute as @e[type=marker,tag=BO.Marker,distance=..3] at @s facing entity @a[tag=!PlayerShouldInvulnerable,distance=..100,sort=random,limit=1] eyes rotated ~ ~2.5 run function lib:forward_spreader/circle
+# ターゲット方向に対して前方拡散を実行する
+    $execute as @e[type=marker,tag=BO.Marker,distance=..3] at @s facing entity @p[scores={UserID=$(TargetID)},distance=..100] eyes rotated ~ ~2.5 run function lib:forward_spreader/circle
 
 # 発射
     execute positioned ~ ~1 ~ facing entity @e[type=marker,tag=BO.Marker,distance=..15,limit=1] feet run function asset:mob/0420.astro_blaze/tick/shoot/summon
