@@ -18,9 +18,9 @@
     # 効果時間
         data modify storage api: Argument.Duration set value 200
     # 攻撃補正
-        execute store result storage api: Argument.FieldOverride.Modifier.Attack float 0.02 run scoreboard players get $UT.DebuffCount Temporary
+        execute store result storage api: Argument.FieldOverride.Modifier.Attack float 0.025 run scoreboard players get $UT.DebuffCount Temporary
     # 与回復補正
-        execute store result storage api: Argument.FieldOverride.Modifier.Heal float -0.04 run scoreboard players get $UT.DebuffCount Temporary
+        execute store result storage api: Argument.FieldOverride.Modifier.Heal float -0.05 run scoreboard players get $UT.DebuffCount Temporary
 
 # 付与
     data modify storage api: Argument.ID set value 342

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"巫女の黒百合","color":"#8e2c30"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身に付与されたデバフ1つにつき"}','[{"text":"攻撃+2%","color":"green"},{"text":"、","color":"white"},{"text":"与回復量-4%","color":"red"},{"text":"を10秒間得る","color":"white"}]','{"text":"(それぞれ最大10%、20%)"}','{"text":"穢れに染まってしまった黒い花","color":"gray"}','{"text":"沈みゆく世界で穢れを抱き、散りゆく時を待つ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身に付与されたデバフ1つにつき"}','[{"text":"攻撃+2.5%","color":"green"},{"text":"、","color":"white"},{"text":"与回復量-5%","color":"red"},{"text":"を10秒間得る","color":"white"}]','{"text":"(それぞれ最大12.5%、-25%)"}','{"text":"穢れに染まってしまった黒い花","color":"gray"}','{"text":"沈みゆく世界で穢れを抱き、散りゆく時を待つ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
