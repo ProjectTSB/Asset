@@ -9,28 +9,12 @@
 
 # ここから先は神器側の効果の処理を書く
 
-#> Private
-# @private
-    #declare score_holder $MaxStack 調整班用にここで設定しておく
+# 演出
+    #playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.4 2
+    particle minecraft:dust_color_transition 0.4 0 0 1 0. 0 0 ~ ~1.2 ~ 1.5 1 1.5 0 60
+    playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.2 1.4
+    playsound ogg:ambient.nether.crimson_forest.shine3 player @a ~ ~ ~ 0.2 1.2
+    playsound minecraft:weather.rain.above player @a ~ ~ ~ 0.2 0.8
 
-# スタック最大値
-    scoreboard players set $MaxStack Temporary 4
-
-# 調整班用効果量設定
-    # 効果時間
-        data modify storage api: Argument.Duration set value 200
-    # 攻撃補正
-        data modify storage api: Argument.FieldOverride.Modifier.Attack set value 0.025
-    # 被回復補正
-        data modify storage api: Argument.FieldOverride.Modifier.ReceiveHeal set value -0.05
-
-# Stackをデバフ数にしておく
-    execute store result storage api: Argument.Stack int 1 run scoreboard players operation $UT.DebuffCount Temporary < $MaxStack Temporary
-
-# 付与
-    data modify storage api: Argument.ID set value 342
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
-
-# リセット
-    scoreboard players reset $MaxStack Temporary
+# エフェクト
+    function asset:artifact/1109.black_lily_of_priestess/trigger/effect

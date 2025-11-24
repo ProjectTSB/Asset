@@ -10,6 +10,9 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
+# IsDoT:trueの際は発動しない
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+
 # 自身にデバフがあるかをチェック
     execute if entity @s[tag=CanUsed] run function api:entity/mob/effect/get/size/bad
     execute if entity @s[tag=CanUsed] store result score $UT.DebuffCount Temporary run data get storage api: Return.EffectSize.Bad
