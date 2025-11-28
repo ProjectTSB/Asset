@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"聖典","color":"white"}'
+    data modify storage asset:artifact Name set value '{"text":"聖典","color":"#FFDD66"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"30%の確率で以下の効果のうち1つを発動する"}','{"translate":"-%1$s体力を15回復する","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$sMPを20回復する","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$sデバフ%2$sを1つ解除する","with":[{"text":"\\u0002","font":"space"},{"text":"[弱/強]","color":"#FFDD66"}]}','{"text":"神の加護を受けた書物","color":"gray"}','{"text":"文章の内から微かに治癒の力を感じる","color":"gray"}','{"text":"どうやら有用な頁は少ないらしい","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
