@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"回復するかどうか、運次第だ。"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 10
+    data modify storage asset:effect Duration set value 7
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -36,4 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.Success set value false
