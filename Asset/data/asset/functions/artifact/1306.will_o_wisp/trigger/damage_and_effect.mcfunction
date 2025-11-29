@@ -27,6 +27,7 @@
 # エフェクト付与
     data modify storage api: Argument.ID set value 339
     data modify storage api: Argument.Duration set value 100
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @p[tag=this] UserID
     execute store result storage api: Argument.FieldOverride.Damage int 1 run scoreboard players get $10A.Damage Temporary
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:entity/mob/effect/give
