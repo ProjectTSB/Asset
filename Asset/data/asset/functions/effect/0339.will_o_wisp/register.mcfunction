@@ -36,6 +36,8 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
+    data modify storage asset:effect Field.Interval._ set value 20
+    data modify storage asset:effect Field.Interval.Max set value 20
     data modify storage asset:effect Field.Damage set value 1
     data modify storage asset:effect Field.AdditionalMPHeal set value 1
     data modify storage asset:effect Field.AppliedFrom set value -1

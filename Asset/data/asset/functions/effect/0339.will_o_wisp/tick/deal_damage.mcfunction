@@ -9,7 +9,7 @@
     #declare score_holder $UserID
 
 # 演出
-    playsound entity.blaze.shoot player @a ~ ~ ~ 0.5 1
+    playsound entity.blaze.shoot player @a ~ ~ ~ 0.3 1
     particle soul_fire_flame ~ ~1.2 ~ 0.4 0.4 0.4 0.05 12
     #particle minecraft:dust_color_transition 0.3 1 1 1.3 1 0.3 0.7 ~ ~1.2 ~ 0.4 0.4 0.4 0 10
 
