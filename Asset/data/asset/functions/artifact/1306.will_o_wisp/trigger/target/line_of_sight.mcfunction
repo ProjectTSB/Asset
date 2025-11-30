@@ -13,7 +13,7 @@
 
 # 再帰暴走防止スコア
     scoreboard players add $10A.Recursive Temporary 1
-    execute if score $10A.Recursive Temporary matches 14.. run return fail
+    execute if score $10A.Recursive Temporary matches 12.. run return fail
 
 # 再帰
     execute positioned ^ ^ ^0.5 if block ~ ~ ~ #lib:no_collision/ run function asset:artifact/1306.will_o_wisp/trigger/target/line_of_sight
