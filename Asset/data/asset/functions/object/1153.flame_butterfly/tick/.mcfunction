@@ -20,10 +20,13 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 移動
-    function asset:object/1153.flame_butterfly/tick/move
+    function asset:object/1153.flame_butterfly/tick/move/
+
+# 蝶の向きを調整
+    execute at @s on passengers run tp @s ~ ~ ~ ~ 0
 
 # リセット
     tag @p[tag=1153.Owner] remove 1153.Owner
 
 # 消滅処理
-    execute if score @s General.Object.Tick matches 200.. run function asset:object/1153.flame_butterfly/tick/kill
+    execute if score @s General.Object.Tick matches 400.. run function asset:object/1153.flame_butterfly/tick/kill

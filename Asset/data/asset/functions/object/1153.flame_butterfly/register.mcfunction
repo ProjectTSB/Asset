@@ -17,4 +17,5 @@
 # ID (int)
     data modify storage asset:object ID set value 1153
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+    data modify storage asset:object Field.ChaseSpeed set value 0.4
+    data modify storage asset:object Field.SearchInterval set value 0
