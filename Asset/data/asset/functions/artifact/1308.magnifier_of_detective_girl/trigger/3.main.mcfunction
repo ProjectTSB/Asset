@@ -10,3 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # ____ちゃん可愛い大好きえらいねすごいね天才
+
+# MPを減少
+    data modify storage api: Argument.Fluctuation set value -2
+    data modify storage api: Argument.DisableLog set value true
+    function api:mp/fluctuation

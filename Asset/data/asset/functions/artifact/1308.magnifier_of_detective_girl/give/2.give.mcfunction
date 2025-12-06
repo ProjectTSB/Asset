@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"少女探偵の虫眼鏡","color":"#94b9f9"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"物理攻撃が強化されるが、物理攻撃のたびにMPを消費する","color":"white"}','{"text":"密室殺人！ミステリーじゃないですか〜！","color":"gray"}','{"text":"高まりますね～！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"怪力を得るが、物理攻撃するたびにMPを2消費する","color":"white"}','{"text":"密室殺人！ミステリーじゃないですか〜！","color":"gray"}','{"text":"高まりますね～！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,9 +25,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "offhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttack"
+    data modify storage asset:artifact Trigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"物理属性で攻撃","color":"white"}'
+    # data modify storage asset:artifact Condition set value '{"text":"物理属性で攻撃","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
@@ -41,24 +41,26 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 0
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 0
+    # data modify storage asset:artifact LocalCooldown set value 0
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisableCooldownMessage set value true
+    # data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    data modify storage asset:artifact DisableMPMessage set value true
+    # data modify storage asset:artifact DisableMPMessage set value true
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
+# アイテム更新しないかどうか
+    data modify storage asset:artifact DisabledFlag.Use.ItemUpdate set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
