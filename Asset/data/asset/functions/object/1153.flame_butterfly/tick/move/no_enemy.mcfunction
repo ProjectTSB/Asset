@@ -20,7 +20,7 @@
     execute unless entity @e[type=marker,tag=1153.TempMarker,distance=..0.35,limit=1] facing entity @e[type=marker,tag=1153.TempMarker,distance=..64,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-120 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.3 ~ ~
 
 # マーカーが近い場合は、自身の向きを少しずつOwnerに合わせる
-    execute if entity @e[type=marker,tag=1153.TempMarker,distance=..0.35,limit=1] rotated as @p[tag=1153.Owner] positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^10 facing entity @s feet positioned as @s positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^-0.05 rotated as @s positioned ^ ^ ^-1 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute if entity @e[type=marker,tag=1153.TempMarker,distance=..0.35,limit=1] rotated as @p[tag=1153.Owner] positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^10 facing entity @s feet positioned as @s positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^-0.1 rotated as @s positioned ^ ^ ^-1 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # リセット
     execute at @p[tag=1153.Owner] run kill @e[type=marker,tag=1153.TempMarker,distance=..5]
