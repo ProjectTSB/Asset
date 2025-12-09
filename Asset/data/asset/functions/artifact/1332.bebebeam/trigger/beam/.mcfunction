@@ -6,6 +6,10 @@
 #   asset:artifact/1332.bebebeam/trigger/3.main
 #   asset:artifact/1332.bebebeam/trigger/loop/main
 
+#> Private
+# @private
+    #declare tag SpreadMarker
+
 # 演出
     playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.3 1.5
     playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 0.7 1.5
@@ -19,12 +23,10 @@
     scoreboard players add @s 110.Element 1
     execute if score @s 110.Element matches 3.. run scoreboard players set @s 110.Element 0
 
-# 再帰でヒット判定 兼 演出用に何ブロックまで視線が通っているかチェック
-    scoreboard players set $110.Range Temporary 0
-    execute anchored eyes positioned ^ ^ ^ run function asset:artifact/1332.bebebeam/trigger/beam/recursive
-
-# レーザー演出Object召喚
-    function asset:artifact/1332.bebebeam/trigger/beam/summon_object
-
-# リセット
-    scoreboard players reset $110.Range
+# 実行位置を拡散させランダムにする
+    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    data modify storage lib: Argument.Distance set value 0.5
+    data modify storage lib: Argument.Spread set value 0.5
+    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+    execute positioned as @e[type=marker,tag=SpreadMarker,limit=1] run function asset:artifact/1332.bebebeam/trigger/beam/shoot
+    kill @e[type=marker,tag=SpreadMarker,distance=..5]

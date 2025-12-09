@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1332.bebebeam/trigger/beam/
+# @within function asset:artifact/1332.bebebeam/trigger/beam/shoot
 
 #  データ設定
     data modify storage api: Argument.ID set value 2168

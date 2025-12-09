@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:artifact/1332.bebebeam/trigger/beam/
+#   asset:artifact/1332.bebebeam/trigger/beam/shoot
 #   asset:artifact/1332.bebebeam/trigger/beam/recursive
 
 # Rangeのインクリメント
