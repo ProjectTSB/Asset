@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ビビビーム","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"translate":"%1$s・%2$s・%3$s属性の順で3連続でビームを放つ","color":"white","with":[{"text":"火","color":"red"},{"text":"水","color":"aqua"},{"text":"雷","color":"yellow"}]}]','{"text":"ホットバーに追加で1本持つたびに、発射数が1本増加する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['[{"translate":"%1$s・%2$s・%3$s属性の順でに、連続でビームを放つ","color":"white","with":[{"text":"火","color":"red"},{"text":"水","color":"aqua"},{"text":"雷","color":"yellow"}]}]','{"text":"ホットバーに追加で1本持つたびに、発射数が1本増加する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

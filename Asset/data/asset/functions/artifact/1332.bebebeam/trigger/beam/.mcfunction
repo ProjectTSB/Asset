@@ -11,7 +11,7 @@
     #declare tag SpreadMarker
 
 # 演出
-    playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.3 1.5
+    playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.3 1.8
     playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 0.7 1.5
 
 # 発射数のデクリメント

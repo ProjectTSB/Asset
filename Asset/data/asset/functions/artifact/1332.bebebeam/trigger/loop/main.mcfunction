@@ -13,7 +13,7 @@
 
 # Ntickに1回発射
     scoreboard players operation $110.Interval Temporary = @s 110.Tick
-    scoreboard players operation $110.Interval Temporary %= $3 Const
+    scoreboard players operation $110.Interval Temporary %= $4 Const
     execute if score $110.Interval Temporary matches 0 run function asset:artifact/1332.bebebeam/trigger/beam/
     scoreboard players reset $110.Interval Temporary
 
