@@ -16,9 +16,7 @@
 # 使用不可なら終了
     execute if entity @s[tag=!CanUsed] run return fail
 # 与ダメージ1000毎(10倍で記録)に発動
-    execute store result score $FE.Temp Temporary run data get storage asset:context Attack.Amount 10
-    scoreboard players operation @s FE.DamageSum += $FE.Temp Temporary
-    scoreboard players reset $FE.Temp Temporary
+    function asset:artifact/0554.catastrophe/attack/damage_sum
     execute if entity @s[scores={FE.DamageSum=20000..}] run function asset:artifact/0554.catastrophe/attack/buff
 
 # 再度チェック
