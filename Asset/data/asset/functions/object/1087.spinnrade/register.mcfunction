@@ -26,3 +26,4 @@
     # data modify storage asset:object Field.Damage set value 1
     # data modify storage asset:object Field.Enhanced set value true
     data modify storage asset:object Field.HomingDelay set value 5
+    # data modify storage asset:object Field.TargetUUID set value
