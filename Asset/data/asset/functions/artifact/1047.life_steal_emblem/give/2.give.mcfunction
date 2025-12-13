@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魂命の徽章","color":"dark_aqua","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"最大体力の25%分のダメージを受ける代わりに","color":"white"}]','[{"text":"物理攻撃が","color":"white"},{"translate":"(最大体力%1$sx%1$s%2$s)%1$s%3$s","color":"green","with":[{"text":"\\u0002","font":"space"},{"text":"0.08"},{"text":"%"}]},{"text":"だけ、20秒間上昇する","color":"white"}]','{"text":"命を燃やせば燃やすほど人は輝くものだ","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['[{"text":"最大体力の25%分のダメージを受ける代わりに","color":"white"}]','[{"text":"物理属性与ダメージが20秒間","color":"white"},{"translate":"(最大体力%1$sx%1$s%2$s)%1$s%3$s","color":"green","with":[{"text":"\\u0002","font":"space"},{"text":"0.08"},{"text":"%"}]},{"text":"上昇する","color":"white"}]','{"text":"命を燃やせば燃やすほど人は輝くものだ","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"体力が25%以上"}]'
+    data modify storage asset:artifact Condition set value '[{"text":"体力が25%を超えている"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
