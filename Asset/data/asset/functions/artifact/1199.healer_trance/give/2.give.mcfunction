@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"ヒーラ","color":"green"},{"text":"ー","color":"#E1FCB1"},{"text":"ト","color":"#FCD0B1"},{"text":"ランス","color":"red"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"与ダメージが10秒間","color":"white"},{"translate":"((与回復量%1$s+%1$s被回復量)%1$sx%1$s0.6)%1$s%2$s","color":"green","with":[{"text":"\\u0002","font":"space"},{"text":"%"}]},{"text":"だけ上昇するが","color":"white"}]','[{"text":"与・被回復量が20秒間","color":"white"},{"text":"50%","color":"red"},{"text":"減少する","color":"white"}]','{"text":"(攻撃バフには与・被回復量が減少する前の値が適用される)"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"与ダメージが10秒間","color":"white"},{"translate":"((与回復量%1$s+%1$s被回復量)%1$sx%1$s0.6)%1$s%2$s","color":"green","with":[{"text":"\\u0002","font":"space"},{"text":"%"}]},{"text":"上昇するが","color":"white"}]','[{"text":"与・被回復量が20秒間","color":"white"},{"text":"50%","color":"red"},{"text":"減少する","color":"white"}]','{"text":"(与ダメージバフには与・被回復量が減少する前の値が適用される)"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
