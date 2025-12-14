@@ -18,5 +18,5 @@
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.DamageForPlayer set value -1
     data modify storage asset:object Field.DamageForEnemy set value -1
-    data modify storage asset:object Field.Speed set value 2
+    data modify storage asset:object Field.StepPerTick set value 2
     data modify storage asset:object Field.Range set value 128

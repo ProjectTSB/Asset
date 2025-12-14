@@ -20,7 +20,7 @@
     data modify storage asset:object Field.Color set value 16760100
     data modify storage asset:object Field.ShowCritParticle set value false
     data modify storage asset:object Field.Range set value 40
-    data modify storage asset:object Field.Speed set value 4
+    data modify storage asset:object Field.StepPerTick set value 4
     data modify storage asset:object Field.AttackType set value "Magic"
     data modify storage asset:object Field.ElementType set value "Water"
     data modify storage asset:object Field.FullCharge set value false

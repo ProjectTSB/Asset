@@ -18,7 +18,7 @@
     data modify storage asset:object ID set value 1107
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
-    data modify storage asset:context this.Speed set value 2
+    data modify storage asset:context this.StepPerTick set value 2
     data modify storage asset:context this.Range set value 40
     data modify storage asset:context this.MovePerStep set value 0.5
     data modify storage asset:context this.Refrection set value 6

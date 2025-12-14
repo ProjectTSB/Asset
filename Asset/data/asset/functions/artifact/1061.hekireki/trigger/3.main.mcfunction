@@ -20,15 +20,15 @@
 
     # 第1段階
         execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.Damage set value 2200
-        execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.Speed set value 5
+        execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.StepPerTick set value 5
 
     # 第2段階
         execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Damage set value 2750
-        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Speed set value 6
+        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.StepPerTick set value 6
 
     # 第3段階
         execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Damage set value 2750
-        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Speed set value 8
+        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.StepPerTick set value 8
         execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.ThunderDamage set value 560
 
 # Object召喚

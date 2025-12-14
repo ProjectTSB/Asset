@@ -18,7 +18,7 @@
     data modify storage asset:object ID set value 1097
 # フィールド(オプション)
     data modify storage asset:object Field.Range set value 48
-    data modify storage asset:object Field.Speed set value 3
+    data modify storage asset:object Field.StepPerTick set value 3
     # data modify storage asset:object Field.Damage
     # data modify storage asset:object Field.TargetMobUUID
     # data modify storage asset:object Field.AdditionalMPHeal

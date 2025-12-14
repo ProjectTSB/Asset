@@ -63,5 +63,5 @@
         data modify storage asset:mob Resist.Thunder set value 1
 # フィールド
     data modify storage asset:mob Field.Damage set value 50f
-    data modify storage asset:mob Field.Speed set value 2
+    data modify storage asset:mob Field.StepPerTick set value 2
     data modify storage asset:mob Field.ModelSetDelay set value 10

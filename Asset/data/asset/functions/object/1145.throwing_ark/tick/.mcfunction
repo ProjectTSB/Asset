@@ -12,8 +12,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 移動
-    execute if score @s General.Object.Tick matches 2 run data modify storage asset:context this.Speed set value 2
-    execute if score @s General.Object.Tick matches 5 run data modify storage asset:context this.Speed set value 1
+    execute if score @s General.Object.Tick matches 2 run data modify storage asset:context this.StepPerTick set value 2
+    execute if score @s General.Object.Tick matches 5 run data modify storage asset:context this.StepPerTick set value 1
     execute if score @s General.Object.Tick matches 10 run data modify storage asset:context this.MovePerStep set value 0.08
 
 # パーティクル

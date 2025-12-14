@@ -15,7 +15,7 @@
     execute if entity @s[scores={General.Object.Tick=6}] run data modify storage asset:context this.MovePerStep set value 0
 
 # 落ちる
-    execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.Speed set value 6
+    execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.StepPerTick set value 6
     execute if entity @s[scores={General.Object.Tick=15}] run data modify storage asset:context this.MovePerStep set value 0.2
 
 # 消滅

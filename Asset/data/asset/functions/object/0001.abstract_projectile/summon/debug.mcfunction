@@ -6,7 +6,7 @@
 # @private
 
 # データ指定
-    data modify storage api: Argument.FieldOverride set value {Speed:10,Range:30,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride set value {StepPerTick:10,Range:30,MovePerStep:0.5}
 
 # 召喚
     data modify storage api: Argument.ID set value 1

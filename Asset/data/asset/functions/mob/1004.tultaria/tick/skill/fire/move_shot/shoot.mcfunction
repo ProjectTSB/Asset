@@ -5,7 +5,7 @@
 # @within function asset:mob/1004.tultaria/tick/skill/fire/move_shot/tick
 
 # 発射体のステータス設定
-    data modify storage api: Argument.FieldOverride set value {Speed:1,Range:100,MovePerStep:0.5}
+    data modify storage api: Argument.FieldOverride set value {StepPerTick:1,Range:100,MovePerStep:0.5}
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
 
 # 召喚
