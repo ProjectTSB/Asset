@@ -105,6 +105,16 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:shroomlight",Count:2b}
 
+# 取引 マグマブロック
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:magma_block",Count:8b}
+
+# 取引 ソウルサンド
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:soul_sand",Count:8b}
+
 # 取引 オークの苗木をトウヒの苗木に
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {id:"oak_sapling",Count:1b}
