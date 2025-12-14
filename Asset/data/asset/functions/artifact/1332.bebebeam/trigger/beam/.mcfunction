@@ -27,6 +27,6 @@
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 0.5
     data modify storage lib: Argument.Spread set value 0.5
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
-    execute positioned as @e[type=marker,tag=SpreadMarker,limit=1] run function asset:artifact/1332.bebebeam/trigger/beam/shoot
+    execute as @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] run function lib:forward_spreader/circle
+    execute positioned as @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] run function asset:artifact/1332.bebebeam/trigger/beam/shoot
     kill @e[type=marker,tag=SpreadMarker,distance=..5]
