@@ -22,4 +22,4 @@
     execute if score @s General.Mob.Tick matches 140 run function asset:mob/0420.astro_blaze/tick/set_bullet
 
 # 弾数が0でなければ発射
-    execute unless data storage asset:context this{Bullet:0} run function asset:mob/0420.astro_blaze/tick/shoot/
+    execute if score @s General.Mob.Tick matches 162.. unless data storage asset:context this{Bullet:0} run function asset:mob/0420.astro_blaze/tick/shoot/
