@@ -1,4 +1,4 @@
-#> asset:artifact/1332.bebebeam/trigger/reset @s
+#> asset:artifact/1332.bebebeam/trigger/reset
 #
 #
 #
