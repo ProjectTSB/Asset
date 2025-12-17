@@ -16,6 +16,9 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1153.Owner
     scoreboard players reset $UserID Temporary
 
+# 攻撃のCD
+    execute store result storage asset:context this.AttackCD._ int 0.9999999999 run data get storage asset:context this.AttackCD._
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 

@@ -1,4 +1,4 @@
-#> asset:object/1153.flame_butterfly/tick/move/no_enemy
+#> asset:object/1153.flame_butterfly/tick/move/to_owner
 #
 #
 #
@@ -9,9 +9,6 @@
     #declare tag 1153.TempMarker
 
 # Ownerの位置基準でMarkerを召喚し、そこへ追尾する感じで移動する
-
-# 普段はプレイヤーの近くで飛んでいる
-# 壁越しではない敵を検知するとそっちに追尾して飛んでいき、爆発して範囲攻撃
 
 # 召喚
     execute as @p[tag=1153.Owner] at @s rotated ~ 0 anchored eyes positioned ^-1.8 ^ ^1.1 run summon marker ~ ~ ~ {Tags:["1153.TempMarker"]}

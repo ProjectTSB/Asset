@@ -9,8 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# ダメージ設定
+    data modify storage api: Argument.FieldOverride.Damage.Default set value 500
+    execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default
+
 # Object召喚
     data modify storage api: Argument.ID set value 1153
-    data modify storage api: Argument.FieldOverride.Damage set value 1000
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes rotated ~ 0 positioned ^ ^-1 ^1.5 run function api:object/summon
