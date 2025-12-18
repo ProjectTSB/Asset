@@ -1,8 +1,8 @@
-#> asset:object/1153.flame_butterfly/tick/move/attack/vfx/2
+#> asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
 #
 #
 #
-# @within function asset:object/1153.flame_butterfly/tick/move/attack/attack
+# @within function asset:object/1153.flame_butterfly/tick/attack/attack
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgBxwBmAhgJwDsNAtDQEYdOsAslABl6sGANhQpWEjjUoBGSqQCsQ-GAB2dALYJkgMMUABHLAEYdDNoDOScCgD2hdRCQAmSgRRwncDDbAA3OmxCXXAADyQBAihIgF9YggtSNEJrRDkBTKyCSwhzZ0QosDhsbDQYS10Moow7PIhdIrRLAFFS8sqWgEdCIOwoAGUzT3JEemxK+IBdIA_3
 # 円 1

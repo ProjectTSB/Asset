@@ -1,8 +1,8 @@
-#> asset:object/1153.flame_butterfly/tick/move/attack/attack
+#> asset:object/1153.flame_butterfly/tick/attack/attack
 #
 #
 #
-# @within function asset:object/1153.flame_butterfly/tick/move/attack/
+# @within function asset:object/1153.flame_butterfly/tick/attack/
 
 #> Private
 # @private
@@ -11,8 +11,8 @@
     #declare score_holder $HealthPer
 
 # 演出
-    execute rotated ~90 25 run function asset:object/1153.flame_butterfly/tick/move/attack/vfx/2
-    execute rotated ~90 -25 run function asset:object/1153.flame_butterfly/tick/move/attack/vfx/2
+    execute rotated ~90 25 run function asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
+    execute rotated ~90 -25 run function asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
 
 # 自身の体力割合を取得
     execute as @p[tag=1153.Owner] run function api:entity/player/get_health_per
@@ -35,5 +35,5 @@
     scoreboard players reset $UserID Temporary
     scoreboard players reset $HealthPer Temporary
     tag @e[type=#lib:living_without_player,tag=Target,distance=..10] remove Target
-        data modify storage asset:context this.AttackCD._ set from storage asset:context this.AttackCD.Max
+    function asset:object/1153.flame_butterfly/tick/attack/cooldown/reset
     function asset:object/1153.flame_butterfly/tick/move/common/reset

@@ -1,8 +1,8 @@
-#> asset:object/1153.flame_butterfly/tick/move/attack/vfx/1
+#> asset:object/1153.flame_butterfly/tick/attack/attack/vfx/1
 #
 #
 #
-# @within function asset:object/1153.flame_butterfly/tick/move/attack/
+# @within function asset:object/1153.flame_butterfly/tick/attack/attack/
 
 particle flame ^2 ^ ^0 ^-20000000 ^ ^0 0.00000001 0
 particle flame ^1.9021 ^ ^0.618 ^-19021000 ^ ^-6180000 0.00000001 0

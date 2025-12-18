@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1153.flame_butterfly/tick/move/**
+# @within function asset:object/1153.flame_butterfly/tick/**
 
 # TargetMobUUIDを消す
     data remove storage asset:context this.TargetMobUUID

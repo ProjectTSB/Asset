@@ -17,7 +17,7 @@
     scoreboard players reset $UserID Temporary
 
 # 攻撃のCD
-    execute store result storage asset:context this.AttackCD._ int 0.9999999999 run data get storage asset:context this.AttackCD._
+    function asset:object/1153.flame_butterfly/tick/attack/cooldown/
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1

@@ -31,8 +31,8 @@
 
 # 攻撃発生までのディレイ
     data modify storage asset:object Field.AttackDelay._ set value 0
-    data modify storage asset:object Field.AttackDelay.Max set value 5
+    data modify storage asset:object Field.AttackDelay.Max set value 8
 
 # 攻撃のクールダウン
     data modify storage asset:object Field.AttackCD._ set value 0
-    data modify storage asset:object Field.AttackCD.Max set value 20
+    data modify storage asset:object Field.AttackCD.Max set value 25
