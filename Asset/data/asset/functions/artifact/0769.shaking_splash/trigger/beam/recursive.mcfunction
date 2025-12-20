@@ -7,9 +7,9 @@
 #   asset:artifact/0769.shaking_splash/trigger/beam/recursive
 
 # 演出
-    particle dust 0.6 100000000 50000000 1 ~ ~ ~ 0.1 0.1 0.1 0 3 normal @a
-    particle dust 0.6 100000000 50000000 1 ^ ^ ^0.25 0.1 0.1 0.1 0 3 normal @a
-    particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 1
+    particle dust 0.8 500000000 1000000000 0.8 ~ ~ ~ 0.1 0.1 0.1 0 3 normal @a
+    particle dust 0.8 500000000 1000000000 0.8 ^ ^ ^0.25 0.1 0.1 0.1 0 3 normal @a
+    execute if predicate lib:random_pass_per/50 run particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 1
     particle bubble ~ ~ ~ 0.1 0.1 0.1 0 2 normal @a
     particle bubble ^ ^ ^0.25 0.1 0.1 0.1 0 2 normal @a
 

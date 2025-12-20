@@ -13,9 +13,9 @@
     playsound block.bubble_column.upwards_ambient neutral @a ~ ~ ~ 0.8 2 0
     playsound block.bubble_column.upwards_ambient neutral @a ~ ~ ~ 0.8 0.5 0
     playsound block.bubble_column.upwards_ambient neutral @a ~ ~ ~ 0.8 1 0
-    particle dust 0.8 500000000 1000000000 1.6 ~ ~ ~ 1 1 1 0 100
+    particle dust 0.8 500000000 1000000000 2 ~ ~ ~ 1 1 1 0 20
     particle dolphin ~ ~ ~ 1 1 1 0 80
-    particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 80
+    particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 20
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
