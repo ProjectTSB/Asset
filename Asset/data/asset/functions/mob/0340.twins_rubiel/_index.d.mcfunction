@@ -140,4 +140,5 @@
 
 #> その他
 # @within function asset:mob/0340.twins_rubiel/**
+    #declare tag 9G.Remove
     #declare objective 9E.Uid

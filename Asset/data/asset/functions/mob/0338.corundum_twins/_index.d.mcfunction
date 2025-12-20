@@ -18,6 +18,10 @@
 #> Root用 - 一時タグ
 # @within function asset:mob/0338.corundum_twins/**
     #declare tag 9E.Temp.Target.Aec.0 位置取得用AEC
+    #declare tag 9F.Temp.Target.Aec.0 位置取得用AEC
+    #declare tag 9F.Temp.Target.Aec.1 位置取得用AEC
+    #declare tag 9G.Temp.Target.Aec.0 位置取得用AEC
+    #declare tag 9G.Temp.Target.Aec.1 位置取得用AEC
 
 #> Root用 - 状態
 # @within function asset:mob/0338.corundum_twins/**
@@ -43,6 +47,7 @@
 
 #> サフィ用 - 共通
 # @within function asset:mob/0338.corundum_twins/**
+    #declare tag 9F.Init 初期化処理用
     #declare tag 9F.Remove 死亡処理を行わずに消去する
     #declare tag 9F.Root 処理用wither_skeleton
     #declare tag 9F.ModelRoot 見た目用animated_javaモデル
@@ -53,9 +58,12 @@
     #declare tag 9F.State.Await 待機中
     #declare tag 9F.State.IsReload リロード中
     #declare tag 9F.Skill.Damage 怯み中
+    #declare tag 9F.Skill.Damage.Down 怯み・スタン
+    #declare tag 9F.Skill.Damage.End 怯み・終了
 
 #> ルビィ用 - 共通
 # @within function asset:mob/0338.corundum_twins/**
+    #declare tag 9G.Init 初期化処理用
     #declare tag 9G.Remove 死亡処理を行わずに消去する
     #declare tag 9G.Root 処理用wither_skeleton
     #declare tag 9G.ModelRoot 見た目用animated_javaモデル
@@ -65,3 +73,5 @@
 # @within function asset:mob/0338.corundum_twins/**
     #declare tag 9G.State.Await 待機中
     #declare tag 9G.Skill.Damage 怯み中
+    #declare tag 9G.Skill.Damage.Down 怯み・スタン
+    #declare tag 9G.Skill.Damage.End 怯み・終了
