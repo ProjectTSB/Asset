@@ -87,6 +87,10 @@
 # @within function asset:mob/1004.tultaria/**
     #declare tag RW.Skill.Starfury
 
+#> 足場のEntityのタグ
+# @within function asset:mob/1004.tultaria/tick/reset_arena
+    #declare tag 2026.Layer
+
 #> ボスの飛び道具に関するタグ
 # @within function asset:mob/1004.tultaria/**
     #declare tag RW.ChainLightning.Common
