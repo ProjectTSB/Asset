@@ -6,6 +6,7 @@
     #declare tag BG.EntityRoot 自分自身（当たり判定）
     #declare tag BG.ModelRoot AJモデルのRootEntity
     #declare tag BE.ModelRoot ヘイローンのRootEntity
+    #declare tag BE.EntityRoot ヘイローン本体
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)
 
 #> スキル
@@ -45,7 +46,7 @@
     #declare tag BG.Temp.PillarPosition 氷柱召喚位置決定用
 
 #> オブジェクト
-# @private
+# @within function asset:mob/0412.tiamat/**
     #declare tag BG.Object オブジェクト共通タグ
     #declare tag BE.Circle 魔法陣
     #declare tag 2181.Line 線
