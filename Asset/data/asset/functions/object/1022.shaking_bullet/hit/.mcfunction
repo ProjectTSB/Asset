@@ -1,8 +1,12 @@
-#> asset:artifact/0769.shaking_splash/trigger/bullet/hit
+#> asset:object/1022.shaking_bullet/hit/
 #
-# 弾が敵に当たったときの処理
+# 継承先などから実行される処理
 #
-# @within function asset:artifact/0769.shaking_splash/trigger/bullet/main
+# @within asset:object/alias/1022/hit
+
+#> Private
+# @private
+    #declare score_holder $UserID
 
 # 演出
     playsound block.fire.extinguish neutral @a ~ ~ ~ 0.3 1.5 0
@@ -14,17 +18,20 @@
     particle firework ~ ~ ~ 0.3 0.3 0.3 0.25 80
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 320.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
-    data modify storage api: Argument.AdditionalMPHeal set value 11.5f
-    execute at @a if score @s LD.UserID = @p UserID as @p run function api:damage/modifier
+    data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
     execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
-# リセット
     function api:damage/reset
 
 # ついでに火を消す
     execute if predicate api:area/is_breakable run fill ~2.5 ~2.5 ~2.5 ~-2.5 ~-2.5 ~-2.5 air replace fire
 
-# 消滅
-    kill @s
+# super
+    function asset:object/super.method
+
+# リセット
+    scoreboard players reset $UserID Temporary
