@@ -1,10 +1,10 @@
-#> asset:artifact/0769.shaking_splash/trigger/beam_recursive
+#> asset:artifact/0769.shaking_splash/trigger/beam/recursive
 #
 # ビームの再帰部分の処理
 #
 # @within function
-#   asset:artifact/0769.shaking_splash/trigger/5.beam
-#   asset:artifact/0769.shaking_splash/trigger/beam_recursive
+#   asset:artifact/0769.shaking_splash/trigger/beam/
+#   asset:artifact/0769.shaking_splash/trigger/beam/recursive
 
 # 演出
     particle dust 0.6 100000000 50000000 1 ~ ~ ~ 0.1 0.1 0.1 0 3 normal @a
@@ -20,4 +20,4 @@
     execute if predicate api:area/is_breakable run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace fire
 
 # 再帰
-    execute if entity @s[distance=..12] if block ^ ^ ^0.5 #lib:no_collision positioned ^ ^ ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam_recursive
+    execute if entity @s[distance=..12] if block ^ ^ ^0.5 #lib:no_collision positioned ^ ^ ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam/recursive

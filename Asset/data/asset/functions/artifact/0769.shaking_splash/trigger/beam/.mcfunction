@@ -1,4 +1,4 @@
-#> asset:artifact/0769.shaking_splash/trigger/5.beam
+#> asset:artifact/0769.shaking_splash/trigger/beam/
 #
 # スニーク時にビームを発射する処理
 #
@@ -13,13 +13,13 @@
     particle firework ~ ~0.6 ~ 0.3 0.3 0.3 0.25 20
 
 # 発射
-    execute anchored eyes positioned ^-0.35 ^-0.25 ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam_recursive
+    execute anchored eyes positioned ^-0.35 ^-0.25 ^0.5 run function asset:artifact/0769.shaking_splash/trigger/beam/recursive
 
 # ダメージ
     data modify storage api: Argument.Damage set value 220.0f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
-    data modify storage api: Argument.AdditionalMPHeal set value 11.5f
+    data modify storage api: Argument.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
     function api:damage/reset
