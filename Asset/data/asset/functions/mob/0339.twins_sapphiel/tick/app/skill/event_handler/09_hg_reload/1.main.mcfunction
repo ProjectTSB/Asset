@@ -17,11 +17,11 @@
     execute if score @s 9F.AnimationTimer matches 6 run particle block netherite_block ^0.7 ^1.2 ^ 0 0 0 1 1
     execute if score @s 9F.AnimationTimer matches 6 run particle block netherite_block ^-0.7 ^1.2 ^ 0 0 0 1 1
     execute if score @s 9F.AnimationTimer matches 6 run playsound ogg:item.armor.equip_netherite3 hostile @a ~ ~ ~ 1 1.2
-    execute if score @s 9F.AnimationTimer matches 14 run playsound item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
+    execute if score @s 9F.AnimationTimer matches 14 run playsound disabled_sounds:item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
     execute if score @s 9F.AnimationTimer matches 22 run playsound ogg:item.armor.equip_netherite3 hostile @a ~ ~ ~ 1 1.8
     execute if score @s 9F.AnimationTimer matches 28 run playsound ogg:item.armor.equip_netherite3 hostile @a ~ ~ ~ 1 1.8
-    execute if score @s 9F.AnimationTimer matches 31 run playsound item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
-    execute if score @s 9F.AnimationTimer matches 36 run playsound item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
+    execute if score @s 9F.AnimationTimer matches 31 run playsound disabled_sounds:item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
+    execute if score @s 9F.AnimationTimer matches 36 run playsound disabled_sounds:item.armor.equip_chain hostile @a ~ ~ ~ 1 1.0
     execute if score @s 9F.AnimationTimer matches 42 run playsound ogg:item.armor.equip_netherite3 hostile @a ~ ~ ~ 1 1.2
 
 # 怯み受け付け

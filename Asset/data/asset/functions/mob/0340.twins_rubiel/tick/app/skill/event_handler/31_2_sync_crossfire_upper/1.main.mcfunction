@@ -19,8 +19,8 @@
 # 演出
     execute if score @s 9G.AnimationTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 34 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
-    execute if score @s 9G.AnimationTimer matches 42 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 0.8
-    execute if score @s 9G.AnimationTimer matches 42 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 0.8
+    execute if score @s 9G.AnimationTimer matches 42 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 0.8
+    execute if score @s 9G.AnimationTimer matches 42 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 0.8
 
 # 斬撃演出
     execute if score @s 9G.AnimationTimer matches 9 at @s positioned ^ ^1 ^1.2 rotated ~90 ~-80 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_2_sync_crossfire_upper/6.2.particle_slash_blue

@@ -14,7 +14,7 @@
 
 # 演出
     execute if score @s 9G.AnimationTimer matches 1 run playsound entity.phantom.flap hostile @a ~ ~ ~ 1 1.2
-    execute if score @s 9G.AnimationTimer matches 4 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1.4
+    execute if score @s 9G.AnimationTimer matches 4 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1.4
     execute if score @s 9G.AnimationTimer matches 24 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
     execute if score @s 9G.AnimationTimer matches 55 run particle flash ^0.4 ^1.2 ^-0.2 0 0 0 0 1
     execute if score @s 9G.AnimationTimer matches 55 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2

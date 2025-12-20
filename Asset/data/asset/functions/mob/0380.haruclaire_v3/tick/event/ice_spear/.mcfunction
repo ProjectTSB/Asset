@@ -16,16 +16,16 @@
         execute if score @s AK.EventTimer matches 94..104 at @s positioned ~ ~-0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 105..110 at @s positioned ~ ~0.15 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 20 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 40 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 52 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 63 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 71 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 76 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 80 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 20 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 40 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 52 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 63 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 71 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 76 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 80 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 82 at @s run playsound entity.breeze.jump hostile @a ~ ~ ~ 1 0.5
         execute if score @s AK.EventTimer matches 112 at @s run playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1
-        execute if score @s AK.EventTimer matches 144 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 144 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 112 at @s run particle firework ^ ^2.5 ^0.5 0 0 0 0.5 30
     # 攻撃地点設置
         execute if score @s AK.EventTimer matches 15..18 at @r[gamemode=!spectator,distance=..50] run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear/spread_attack_pos
