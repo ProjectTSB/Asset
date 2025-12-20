@@ -35,5 +35,5 @@
 # 桃
     execute if score $Random Temporary matches 10 run data modify storage asset:temp Firework.Colors append value 15961002
 
-# $ColorCountが1以上なら $RecursiveCount = $ColorCountになるまで再帰
-    execute if score $ColorCount Temporary matches 1.. unless score $RecursiveCount Temporary = $ColorCount Temporary run function asset:object/1018.firework_manager/tick/summon/append_color
+# $RecursiveCount = $ColorCountになるまで再帰
+    execute if score $RecursiveCount Temporary < $ColorCount Temporary run function asset:object/1018.firework_manager/tick/summon/append_color
