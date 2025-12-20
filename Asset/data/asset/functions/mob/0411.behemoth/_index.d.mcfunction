@@ -7,6 +7,7 @@
     #declare tag BF.ModelRoot AJモデルのRootEntity
     #declare tag BE.EntityRoot ヘイローンのRootEntity
     #declare tag BE.ModelRoot ヘイローンのRootEntity
+    #declare tag BG.EntityRoot ティアマットのRootEntity
     #declare tag BG.ModelRoot ティアマットのRootEntity
     #declare tag BE.CenterPosition 中心点(ヘイローンのものを使用)
 
