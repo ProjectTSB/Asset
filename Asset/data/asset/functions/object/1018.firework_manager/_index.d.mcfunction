@@ -8,4 +8,6 @@
     #declare score_holder $ColorCount
     #declare score_holder $RecursiveCount
     #declare score_holder $Temp
+    #declare score_holder $CandidatesLength
+    #declare score_holder $Random
     #declare tag FireworkInit

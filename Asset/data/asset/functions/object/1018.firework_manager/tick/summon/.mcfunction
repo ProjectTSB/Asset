@@ -26,13 +26,12 @@
     data modify storage asset:temp Firework.Colors set value [I;]
 
 # storageに色のデータを突っ込む
-    function asset:object/1018.firework_manager/tick/summon/append_color
+    function asset:object/1018.firework_manager/tick/summon/append_color/
 
 # データ適用
     execute as @e[type=firework_rocket,tag=FireworkInit,distance=..0.01,limit=1] run function asset:object/1018.firework_manager/tick/summon/set_data
 
 # リセット
-    scoreboard players reset $Random Temporary
     scoreboard players reset $RandomShape Temporary
     scoreboard players reset $ColorCount Temporary
     scoreboard players reset $RecursiveCount Temporary

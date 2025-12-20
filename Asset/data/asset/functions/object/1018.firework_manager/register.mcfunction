@@ -18,3 +18,4 @@
     data modify storage asset:object ID set value 1018
 # フィールド(オプション)
     data modify storage asset:object Field.Tick set value 1200
+    data modify storage asset:object Field.ColorList set value [16383998,11546150,16351261,16701501,8439583,1481884,3847130,3949738,8991416,13061821,15961002]
