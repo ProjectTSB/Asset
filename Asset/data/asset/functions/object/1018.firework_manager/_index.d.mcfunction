@@ -1,12 +1,13 @@
-#> asset:artifact/0737.summer_festival_of_remembrance/trigger/_index.d
+#> asset:object/1018.firework_manager/_index.d
 # @private
 
 #> tag
-# @within function asset:artifact/0737.summer_festival_of_remembrance/trigger/**
+# @within function asset:object/1018.firework_manager/**
     #declare score_holder $Random
     #declare score_holder $RandomShape
     #declare score_holder $ColorCount
     #declare score_holder $RecursiveCount
     #declare score_holder $Temp
+    #declare score_holder $CandidatesLength
+    #declare score_holder $Random
     #declare tag FireworkInit
-    #declare tag KH.FireworkCore
