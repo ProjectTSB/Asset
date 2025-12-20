@@ -14,7 +14,7 @@
     particle bubble ^ ^ ^0.25 0.1 0.1 0.1 0 2 normal @a
 
 # 当たった敵にTagを付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] add LandingTarget
+    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] add LandingTarget
 
 # ついでに火を消す おまけで範囲を広くしておく
     execute if predicate api:area/is_breakable run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace fire

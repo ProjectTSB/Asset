@@ -21,7 +21,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=LandingTarget,distance=..15] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=LandingTarget,distance=..15] run function api:damage/
     function api:damage/reset
 
 # Tag消し

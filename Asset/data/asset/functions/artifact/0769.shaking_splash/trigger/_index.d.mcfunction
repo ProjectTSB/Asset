@@ -3,6 +3,5 @@
 
 #> ビームで使うTag
 # @within function
-#   asset:artifact/0769.shaking_splash/trigger/5.beam
-#   asset:artifact/0769.shaking_splash/trigger/beam_recursive
+#   asset:artifact/0769.shaking_splash/trigger/beam/*
     #declare tag LandingTarget
