@@ -22,7 +22,7 @@
     execute positioned ~-1 ~-1 ~-1 if entity @a[tag=!PlayerShouldInvulnerable,dx=1,dy=1,dz=1] run function asset:object/2242.lawless_chaser_shot/tick/explode
 
 # 地面と重なっても爆発する
-    execute unless block ~ ~ ~ #lib:no_collision run function asset:object/2242.lawless_chaser_shot/tick/explode
+    execute unless block ~ ~ ~ #lib:no_collision/ run function asset:object/2242.lawless_chaser_shot/tick/explode
 
 # 消滅処理(フェイルセーフ)
     kill @s[scores={General.Object.Tick=300..}]

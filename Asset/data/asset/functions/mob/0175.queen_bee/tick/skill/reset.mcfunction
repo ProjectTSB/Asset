@@ -23,5 +23,5 @@
     execute on passengers positioned as @s run tp @s ~ ~ ~ ~ 0
 
 # ブロックに埋まってたり、距離が遠すぎたらしたらテレポートする
-    execute unless block ~ ~ ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/common/tp/spread_teleport
+    execute unless block ~ ~ ~ #lib:no_collision/ run function asset:mob/0175.queen_bee/tick/common/tp/spread_teleport
     execute unless entity @p[gamemode=!spectator,distance=..15] run function asset:mob/0175.queen_bee/tick/common/tp/spread_teleport

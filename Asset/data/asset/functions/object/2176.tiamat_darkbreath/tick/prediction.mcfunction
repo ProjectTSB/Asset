@@ -5,7 +5,7 @@
 # @within asset:object/2176.tiamat_darkbreath/tick/
 
 # 地面が無ければ消す
-    execute if block ~ ~ ~ #lib:no_collision run return run kill @s
+    execute if block ~ ~ ~ #lib:no_collision/ run return run kill @s
 
 # 予告
     tp @s ~ ~ ~ ~ 0

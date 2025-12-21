@@ -17,4 +17,4 @@
     execute if entity @s[tag=Landing] run function asset:effect/0320.fatalerror_charge/end/shot/landing
 
 # 再帰
-    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..15] if block ^ ^ ^ #lib:no_collision run function asset:effect/0320.fatalerror_charge/end/shot/loop
+    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if entity @s[distance=..15] if block ^ ^ ^ #lib:no_collision/ run function asset:effect/0320.fatalerror_charge/end/shot/loop

@@ -20,8 +20,8 @@
 # ここより下は移動処理
 
 # 接地で上を向く
-    execute unless block ~ ~-0.1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
-    execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
+    execute unless block ~ ~-0.1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~-35
+    execute unless block ~ ~1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~80
 
 # 下にプレイヤーがいるか判定
     execute positioned ~-1.5 ~ ~-1.5 if entity @p[dx=2,dy=-2.5,dz=2] at @s run tag @s add OnTop
@@ -40,11 +40,11 @@
     tag @s[tag=OnTop] remove OnTop
 
 # プレイヤーが近くにいたら上に移動
-    execute at @s if entity @p[distance=..4] if block ~ ~2.2 ~ #lib:no_collision run tp @s ~ ~0.2 ~
+    execute at @s if entity @p[distance=..4] if block ~ ~2.2 ~ #lib:no_collision/ run tp @s ~ ~0.2 ~
 
 # 不定期に急加速
     execute if predicate lib:random_pass_per/1 at @s run tp @s ^ ^ ^0.5
 
 # カベにぶつかった際の処理
-    execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-    execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute at @s unless block ^ ^ ^0.2 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45

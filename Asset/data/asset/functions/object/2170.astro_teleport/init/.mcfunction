@@ -6,7 +6,7 @@
 
 # ブロックの直上に来るようにループ処理を行う
     scoreboard players set $2170.Temp Temporary 32
-    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.25 ~ #lib:no_collision run scoreboard players set $2170.Temp Temporary -100
+    execute if block ~ ~ ~ #lib:no_collision/ unless block ~ ~-0.25 ~ #lib:no_collision/ run scoreboard players set $2170.Temp Temporary -100
     execute if score $2170.Temp Temporary matches 1.. run function asset:object/2170.astro_teleport/init/loop
 
 # ループしてもダメだったらキル

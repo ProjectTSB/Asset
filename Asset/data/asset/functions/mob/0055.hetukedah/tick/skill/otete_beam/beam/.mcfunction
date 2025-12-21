@@ -15,7 +15,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 run function asset:mob/0055.hetukedah/tick/skill/otete_beam/beam/hit
 
 # 壁ヒットで炸裂
-    execute unless block ^ ^ ^1 #lib:no_collision run function asset:mob/0055.hetukedah/tick/skill/otete_beam/beam/hit
+    execute unless block ^ ^ ^1 #lib:no_collision/ run function asset:mob/0055.hetukedah/tick/skill/otete_beam/beam/hit
 
 # 壁がなかったり、プレイヤーにあたったりしなければ再帰
-    execute if entity @s[distance=..30] positioned ~-0.5 ~-0.5 ~-0.5 unless entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:mob/0055.hetukedah/tick/skill/otete_beam/beam/
+    execute if entity @s[distance=..30] positioned ~-0.5 ~-0.5 ~-0.5 unless entity @a[tag=!PlayerShouldInvulnerable,dx=0] positioned ~0.5 ~0.5 ~0.5 positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0055.hetukedah/tick/skill/otete_beam/beam/

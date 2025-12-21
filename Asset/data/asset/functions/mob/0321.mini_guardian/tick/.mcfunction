@@ -23,9 +23,9 @@
     data modify entity @s[scores={8X.HurtTime=..0}] NoAI set value 1b
 
 # 接地で上を向く
-    execute positioned ~ ~1.5 ~ unless block ~ ~-1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
-    execute positioned ~ ~1.5 ~ unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
+    execute positioned ~ ~1.5 ~ unless block ~ ~-1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~-35
+    execute positioned ~ ~1.5 ~ unless block ~ ~1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~80
 
 # カベにぶつかった際の処理
-    execute positioned ~ ~1.5 ~ unless block ^ ^ ^1 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-    execute positioned ~ ~1.5 ~ unless block ^ ^ ^0.4 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute positioned ~ ~1.5 ~ unless block ^ ^ ^1 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute positioned ~ ~1.5 ~ unless block ^ ^ ^0.4 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45

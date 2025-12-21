@@ -10,10 +10,10 @@
     function lib:spread_entity/
 
 # 埋まり対策（これで埋まってたら知らん）
-    execute at @s unless block ~ ~ ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,0d],[3d,3d]]
-    execute at @s unless block ~ ~ ~ #lib:no_collision run function lib:spread_entity/
-    execute at @s unless block ~ ~ ~ #lib:no_collision run data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,0d],[3d,3d]]
-    execute at @s unless block ~ ~ ~ #lib:no_collision run function lib:spread_entity/
+    execute at @s unless block ~ ~ ~ #lib:no_collision/ run data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,0d],[3d,3d]]
+    execute at @s unless block ~ ~ ~ #lib:no_collision/ run function lib:spread_entity/
+    execute at @s unless block ~ ~ ~ #lib:no_collision/ run data modify storage lib: Argument.Bounds set value [[3d,3d],[0d,0d],[3d,3d]]
+    execute at @s unless block ~ ~ ~ #lib:no_collision/ run function lib:spread_entity/
 
 # ディスプレイもってくる用
     execute at @s run function asset:mob/0376.convict_v2/tick/common/tp

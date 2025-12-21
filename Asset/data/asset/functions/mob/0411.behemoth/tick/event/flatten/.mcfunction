@@ -20,7 +20,7 @@
     # ターゲットを向く
         execute if score @s BF.EventTimer matches 100..104 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 移動
-        execute if score @s BF.EventTimer matches 100..115 if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+        execute if score @s BF.EventTimer matches 100..115 if block ~ ~-0.1 ~ #lib:no_collision/ run tp @s ~ ~-0.1 ~
         execute if score @s BF.EventTimer matches 100..105 at @s run tp @s ^ ^ ^0.2
         execute if score @s BF.EventTimer matches 106..110 at @s run tp @s ^ ^ ^0.4
         execute if score @s BF.EventTimer matches 131..140 run tp @s ~ ~0.05 ~
