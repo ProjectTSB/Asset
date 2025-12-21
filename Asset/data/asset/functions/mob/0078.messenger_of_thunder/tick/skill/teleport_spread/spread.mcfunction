@@ -19,10 +19,10 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..15] at @s run function lib:spread_entity/
 
 # 拡散後の位置に足場がなければMarkerを消してreturnする
-    execute at @e[type=marker,tag=SpreadMarker,distance=..15] if block ~ ~-1 ~ #lib:no_collision_without_fluid run return run kill @e[type=marker,tag=SpreadMarker,distance=..0.01]
+    execute at @e[type=marker,tag=SpreadMarker,distance=..15] if block ~ ~-1 ~ #lib:no_collision/without_fluid run return run kill @e[type=marker,tag=SpreadMarker,distance=..0.01]
 
 # 拡散後の位置に足場があればワープ
-    execute at @e[type=marker,tag=SpreadMarker,distance=..15] unless block ~ ~-1 ~ #lib:no_collision_without_fluid run tp @s ~ ~ ~
+    execute at @e[type=marker,tag=SpreadMarker,distance=..15] unless block ~ ~-1 ~ #lib:no_collision/without_fluid run tp @s ~ ~ ~
 
 # 演出
     playsound block.respawn_anchor.charge hostile @a ~ ~ ~ 0.5 2 0
