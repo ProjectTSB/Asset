@@ -25,7 +25,7 @@
     execute as @p[tag=Owner] at @s anchored eyes positioned ^ ^ ^ run function asset:object/1114.butterfly_attack/tick/5/damage/find_target_line
 
 # 1114.Targetがいなければ、前方かつ最も近い敵を狙う
-    execute at @p[tag=Owner] unless entity @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10] positioned ^ ^ ^3 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..3] add 1114.Target
+    execute at @p[tag=Owner] unless entity @e[type=#lib:living_without_player,tag=1114.Target,distance=..10] positioned ^ ^ ^3 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..3] add 1114.Target
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -33,11 +33,11 @@
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @p[tag=Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=1114.Target,distance=..10,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
 # リセット
     tag @p[tag=Owner] remove Owner
-    tag @e[type=#lib:living,type=!player,tag=1114.Target,distance=..10] remove 1114.Target
+    tag @e[type=#lib:living_without_player,tag=1114.Target,distance=..10] remove 1114.Target
     scoreboard players reset $UserID Temporary
     scoreboard players reset $RecursiveCount Temporary

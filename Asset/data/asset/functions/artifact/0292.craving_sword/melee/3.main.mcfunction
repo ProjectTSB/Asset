@@ -12,8 +12,8 @@
 # 演出
     playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 0.9
     playsound entity.spider.step player @a ~ ~ ~ 0.6 0.9
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle dust 0.65 0.1 0.3 1 ~ ~1.2 ~ 0.5 0.5 0.5 0 40
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle block redstone_block ~ ~1.2 ~ 0.2 0.2 0.2 0 30
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle dust 0.65 0.1 0.3 1 ~ ~1.2 ~ 0.5 0.5 0.5 0 40
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle block redstone_block ~ ~1.2 ~ 0.2 0.2 0.2 0 30
 
 # MetaData設定
     data modify storage api: Argument.Metadata set value "84.CravingSword"
@@ -23,5 +23,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset

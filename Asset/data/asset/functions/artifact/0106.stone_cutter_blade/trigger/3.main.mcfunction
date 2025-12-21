@@ -9,4 +9,4 @@
 
 # ここから先は神器側の効果の処理を書く
     # 攻撃先のエンティティで実行
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..15] at @s run function asset:artifact/0106.stone_cutter_blade/trigger/3.1.entity.main
+        execute as @e[type=#lib:living_without_player,tag=Victim,distance=..15] at @s run function asset:artifact/0106.stone_cutter_blade/trigger/3.1.entity.main

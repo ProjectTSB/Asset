@@ -11,4 +11,4 @@
     playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 2 0
 
 # 付近のヒットさせた敵によわそ～なパーティクルを出す
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle crit ~ ~1 ~ 0 0 0 0.5 10
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle crit ~ ~1 ~ 0 0 0 0.5 10

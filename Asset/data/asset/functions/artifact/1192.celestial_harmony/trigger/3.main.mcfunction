@@ -22,7 +22,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6,limit=1] run function api:damage/
     function api:damage/reset
 
 # 星を降らせるエフェクトを付与する <=10%: 8, <=20%: 7, <=30%: 6, <=40%: 4, <=50%: 3, >50%: 2 個
@@ -38,7 +38,7 @@
     execute if score $MPPer Temporary matches 31..40 run data modify storage api: Argument.Duration set value 7
     execute if score $MPPer Temporary matches 41..50 run data modify storage api: Argument.Duration set value 5
     execute if score $MPPer Temporary matches 51.. run data modify storage api: Argument.Duration set value 3
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:entity/mob/effect/give
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6,limit=1] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット

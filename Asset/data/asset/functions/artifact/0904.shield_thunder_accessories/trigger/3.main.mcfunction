@@ -15,10 +15,10 @@
     #declare score_holder $BonusDefense
 
 # VFX
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle electric_spark ~ ~1.2 ~ 0.3 0.3 0.3 0.05 30 normal @a[distance=..16]
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run particle dust 100000000 100000000 1 1 ~ ~1.5 ~ 0.5 0.5 0.5 0 50 normal @a[distance=..16]
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound entity.lightning_bolt.impact player @a[distance=..16] ~ ~ ~ 1 1.2 0
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] run playsound block.beacon.activate player @a[distance=..16] ~ ~ ~ 0.8 2 0
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10,limit=1] run particle electric_spark ~ ~1.2 ~ 0.3 0.3 0.3 0.05 30 normal @a[distance=..16]
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10,limit=1] run particle dust 100000000 100000000 1 1 ~ ~1.5 ~ 0.5 0.5 0.5 0 50 normal @a[distance=..16]
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10,limit=1] run playsound entity.lightning_bolt.impact player @a[distance=..16] ~ ~ ~ 1 1.2 0
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10,limit=1] run playsound block.beacon.activate player @a[distance=..16] ~ ~ ~ 0.8 2 0
 
 # 個数を取得
     execute store result score $P4.Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:904}}}]
@@ -42,7 +42,7 @@
         data modify storage api: Argument.ElementType set value "Thunder"
     # ダメージ
         function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,limit=1] at @s run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10,limit=1] at @s run function api:damage/
 
 # リセット
     scoreboard players reset $P4.Defense Temporary

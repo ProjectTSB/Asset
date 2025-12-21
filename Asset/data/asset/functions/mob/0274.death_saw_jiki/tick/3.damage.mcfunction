@@ -23,7 +23,7 @@
     # 補正functionを実行
         function api:damage/modifier
     # 対象に
-        tag @e[type=#lib:living,type=!player,tag=Friend,distance=..1] add DamageTarget
+        tag @e[type=#lib:living_without_player,tag=Friend,distance=..1] add DamageTarget
         tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add DamageTarget
         execute as @e[type=#lib:living,tag=DamageTarget,distance=..1] run function api:damage/
     # リセット

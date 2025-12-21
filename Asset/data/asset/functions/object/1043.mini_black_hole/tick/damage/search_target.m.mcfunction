@@ -5,4 +5,4 @@
 # @within function asset:object/1043.mini_black_hole/tick/damage/
 
 # 着弾タグを付ける
-    $tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..$(Num)] add 1043.Target
+    $tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..$(Num)] add 1043.Target
