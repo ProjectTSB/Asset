@@ -9,7 +9,7 @@
 
 # 着弾検知
     execute if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] run tag @s add AD.Hit
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add AD.Hit
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add AD.Hit
 
 # ターゲットにタグ付与
     execute if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2,limit=1] add AD.HitTarget

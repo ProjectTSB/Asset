@@ -16,4 +16,4 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=0] add 2246.Hit
 
 # 壁がなかったら再帰
-    execute if entity @s[distance=..32] positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:object/2246.lawless_trap_laser/common/recursive_laser
+    execute if entity @s[distance=..32] positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision/ run function asset:object/2246.lawless_trap_laser/common/recursive_laser

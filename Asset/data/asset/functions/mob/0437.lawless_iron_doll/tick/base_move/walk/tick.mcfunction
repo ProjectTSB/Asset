@@ -20,19 +20,19 @@
 # 10tickごとに処理を実行
     scoreboard players operation $Interval Temporary %= $10 Const
 # 下に何かあるなら、ゴツンゴツン
-    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
-    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
+    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision/ run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.5
+    execute if score $Interval Temporary matches 0 unless block ~ ~-0.25 ~ #lib:no_collision/ run playsound minecraft:entity.iron_golem.step hostile @a ~ ~ ~ 2.5 0.6
 # 下に何もないなら、キラキラ
-    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:block.amethyst_block.place hostile @a ~ ~ ~ 2 0.5
-    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision run playsound minecraft:block.amethyst_block.chime hostile @a ~ ~ ~ 2 1
+    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision/ run playsound minecraft:block.amethyst_block.place hostile @a ~ ~ ~ 2 0.5
+    execute if score $Interval Temporary matches 0 if block ~ ~-0.25 ~ #lib:no_collision/ run playsound minecraft:block.amethyst_block.chime hostile @a ~ ~ ~ 2 1
 # リセット
     scoreboard players reset $Interval Temporary
 
 # そこらのプレイヤーより上にいる場合、下にTP。下にブロックがあったら止まるよ。
-    execute at @p[gamemode=!spectator,distance=..256] positioned ~-50 ~-1 ~-50 unless entity @s[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+    execute at @p[gamemode=!spectator,distance=..256] positioned ~-50 ~-1 ~-50 unless entity @s[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] if block ~ ~-0.25 ~ #lib:no_collision/ run tp @s ~ ~-0.25 ~
 
 # 足元の先が埋まっているなら、上に移動
-    execute rotated ~ 0 unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
+    execute rotated ~ 0 unless block ^ ^ ^1 #lib:no_collision/ run tp @s ~ ~0.1 ~
 
 # まっすぐ前に歩く
     execute at @s run tp @s ^ ^ ^0.2 ~ 0

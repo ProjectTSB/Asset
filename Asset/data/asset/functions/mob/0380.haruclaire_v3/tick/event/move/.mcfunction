@@ -17,7 +17,7 @@
     # 移動
         function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if score @s AK.EventTimer matches ..192 at @s facing entity @p[tag=AK.MainTarget,distance=..80] feet positioned ^ ^ ^0.4 run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches ..192 at @s unless block ~ ~-1 ~ #lib:no_collision positioned ~ ~0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches ..192 at @s unless block ~ ~-1 ~ #lib:no_collision/ positioned ~ ~0.05 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 十分近づくか、一定時間後に終了
     execute if score @s AK.EventTimer matches ..192 if entity @p[tag=AK.MainTarget,distance=..5] run scoreboard players set @s AK.EventTimer 193
