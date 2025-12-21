@@ -132,5 +132,4 @@
 
 #> その他
 # @within function asset:mob/0339.twins_sapphiel/**
-    #declare tag 9F.Remove
     #declare objective 9E.Uid

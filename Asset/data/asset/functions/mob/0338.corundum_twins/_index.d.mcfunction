@@ -48,7 +48,6 @@
 #> サフィ用 - 共通
 # @within function asset:mob/0338.corundum_twins/**
     #declare tag 9F.Init 初期化処理用
-    #declare tag 9F.Remove 死亡処理を行わずに消去する
     #declare tag 9F.Root 処理用wither_skeleton
     #declare tag 9F.ModelRoot 見た目用animated_javaモデル
     #declare tag 9F.Target 紐づけ対象
@@ -64,7 +63,6 @@
 #> ルビィ用 - 共通
 # @within function asset:mob/0338.corundum_twins/**
     #declare tag 9G.Init 初期化処理用
-    #declare tag 9G.Remove 死亡処理を行わずに消去する
     #declare tag 9G.Root 処理用wither_skeleton
     #declare tag 9G.ModelRoot 見た目用animated_javaモデル
     #declare tag 9G.Target 紐づけ対象
