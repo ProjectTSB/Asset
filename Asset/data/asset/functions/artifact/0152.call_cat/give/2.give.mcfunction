@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"コール:イエネコ","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"回復してくれるネコを召喚する","color":"white"}','{"text":"ネコは周囲5mのプレイヤーを30秒間かけて40回復する","color":"white"}','{"text":"「可愛い猫ちゃんに癒されたい？」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"プレイヤーを癒やすネコを召喚する","color":"white"}','{"text":"ネコは周囲5mのプレイヤーを30秒間かけて40回復する","color":"white"}','{"text":"「可愛い猫ちゃんに癒されたい？」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
