@@ -10,6 +10,7 @@
 
 # 演出
     particle minecraft:heart ~ ~0.75 ~ 0.1 0.1 0.1 1 1
+    execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:object/1003.call_cat/tick/vfx
 
 # プレーヤーの場所に演出
     execute at @a[distance=..5] run particle minecraft:happy_villager ~ ~1 ~ 0.25 0.25 0.25 0 4
