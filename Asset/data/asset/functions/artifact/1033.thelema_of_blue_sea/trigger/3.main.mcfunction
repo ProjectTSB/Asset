@@ -40,7 +40,7 @@
     function api:data_get/health
     execute store result score $Damage Temporary run data get storage api: Health 1.0
     scoreboard players operation $Damage Temporary < $200 Const
-    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 250
+    execute store result storage api: Argument.Damage int 1.0 run scoreboard players add $Damage Temporary 340
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
