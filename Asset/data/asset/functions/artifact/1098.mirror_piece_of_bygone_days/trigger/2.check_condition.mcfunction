@@ -13,8 +13,12 @@
 # IsDoT:trueならCanUsedを削除
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
 
-# 確率でCanUsedを削除
-    execute if entity @s[tag=CanUsed] if predicate lib:random_pass_per/20 run tag @s remove CanUsed
+# CanUsedなら何体に攻撃したかの数を取得し、その回数だけ確率で判定
+    execute if entity @s[tag=CanUsed] store result score $AttackCount Temporary if data storage asset:context Attack.To[]
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1098.mirror_piece_of_bygone_days/trigger/2.check_condition/check_recursive
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1098.mirror_piece_of_bygone_days/trigger/3.main
+
+# リセット
+    scoreboard players reset $AttackCount Temporary
