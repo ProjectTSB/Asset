@@ -18,6 +18,6 @@
     data modify storage asset:object ID set value 2166
 # フィールド(オプション)
     data modify storage asset:object Field.Speed set value 2
-    data modify storage asset:object Field.Range set value 128
+    data modify storage asset:object Field.Range set value 64
     data modify storage asset:object Field.MovePerStep set value 0.25
     data modify storage asset:object Field.Damage set value 1
