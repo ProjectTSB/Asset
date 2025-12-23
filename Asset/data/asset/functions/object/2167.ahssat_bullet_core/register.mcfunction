@@ -17,6 +17,6 @@
 # ID (int)
     data modify storage asset:object ID set value 2167
 # フィールド(オプション)
-    data modify storage asset:object Field.Damage set value 3
+    data modify storage asset:object Field.Bullet set value 3
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.MobUUID set value -1
