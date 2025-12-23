@@ -4,6 +4,10 @@
 #
 # @within function asset:object/2167.ahssat_bullet_core/tick/
 
+#> Private
+# @private
+    #declare score_holder $Interval
+
 # 5tick毎に発射
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $5 Const
