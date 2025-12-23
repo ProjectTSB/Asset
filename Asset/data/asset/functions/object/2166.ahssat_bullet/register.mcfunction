@@ -21,3 +21,4 @@
     data modify storage asset:object Field.Range set value 64
     data modify storage asset:object Field.MovePerStep set value 0.25
     data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.MobUUID set value -1
