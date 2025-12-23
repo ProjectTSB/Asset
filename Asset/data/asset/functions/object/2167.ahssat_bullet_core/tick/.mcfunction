@@ -4,13 +4,15 @@
 #
 # @within asset:object/alias/2167/tick
 
+#> Private
+# @private
+    #declare score_holder $Interval
+
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 発射
-    execute if score @s General.Object.Tick matches 50 run function asset:object/2167.ahssat_bullet_core/tick/spread
-    execute if score @s General.Object.Tick matches 55 run function asset:object/2167.ahssat_bullet_core/tick/spread
-    execute if score @s General.Object.Tick matches 60 run function asset:object/2167.ahssat_bullet_core/tick/spread
+# 50tickから発射
+    execute if score @s General.Object.Tick matches 50.. run function asset:object/2167.ahssat_bullet_core/tick/shot_interval
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=65..}]
+# 残り弾数が0なら消滅
+    execute if data storage asset:context this{Bullet:0} run kill @s
