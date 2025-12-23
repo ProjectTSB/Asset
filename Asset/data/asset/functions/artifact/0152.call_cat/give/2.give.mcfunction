@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"コール:イエネコ","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"プレイヤーを癒やすネコを召喚する","color":"white"}','{"text":"ネコは周囲8mのプレイヤーを30秒間かけて40回復する","color":"white"}','{"text":"「可愛い猫ちゃんに癒されたい？」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"プレイヤーを癒やすネコを召喚する","color":"white"}','{"text":"ネコは周囲8mのプレイヤーを30秒間かけて45回復する","color":"white"}','{"text":"「可愛い猫ちゃんに癒されたい？」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -51,7 +51,7 @@
     data modify storage asset:artifact TypeCooldown.Duration set value 660
 # 第二種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact SecondaryTypeCooldown.Type set value "heal"
-    data modify storage asset:artifact SecondaryTypeCooldown.Duration set value 60
+    data modify storage asset:artifact SecondaryTypeCooldown.Duration set value 120
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
