@@ -24,8 +24,8 @@
 
 # 対象選定
 # 着弾時にdistanceだとワンチャンすぐ近くの対称に当たらない可能性があるのでdxyzでも判定しておく
-    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=0] add 1139.Target
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..4] add 1139.Target
+    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] add 1139.Target
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] add 1139.Target
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -38,7 +38,7 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] remove 1139.Target
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] remove 1139.Target
 
 # 消滅
     execute on vehicle run kill @s
