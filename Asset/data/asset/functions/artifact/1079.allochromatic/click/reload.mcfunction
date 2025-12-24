@@ -1,4 +1,4 @@
-#> asset:artifact/1079.allochromatic/click/reload.m
+#> asset:artifact/1079.allochromatic/click/reload
 #
 # リロード
 #

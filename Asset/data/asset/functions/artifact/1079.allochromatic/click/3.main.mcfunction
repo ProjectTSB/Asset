@@ -22,6 +22,6 @@
     # 共鳴・蒼を付与
         function asset:artifact/1079.allochromatic/click/give_effect
     # リロード確認
-        function asset:artifact/1079.allochromatic/click/reload.m with storage asset:temp TZ
+        function asset:artifact/1079.allochromatic/click/reload
     # リセット
         data remove storage asset:temp TZ
