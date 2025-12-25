@@ -32,3 +32,6 @@
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# リセット
+    scoreboard players reset $10A.Damage Temporary
