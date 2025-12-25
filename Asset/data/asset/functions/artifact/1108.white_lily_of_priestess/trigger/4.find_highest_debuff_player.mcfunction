@@ -13,18 +13,18 @@
 # 検索対象：使用者を除く、デバフ解除対象ではなく、最もデバフ数が多いプレイヤー
 
 # 使用者を除く、デバフ数が1以上のプレイヤーに検索対象Tagを付与
-    tag @a[tag=!ClearTarget,tag=!this,scores={Temporary=1..}] add SearchTarget
+    tag @a[tag=!ClearTarget,tag=!this,scores={Temporary=1..},distance=..20] add SearchTarget
 
 # 全員のデバフ数と比較する
-    execute as @a[tag=SearchTarget] run scoreboard players operation $HighestDebuffCount Temporary > @s Temporary
+    execute as @a[tag=SearchTarget,distance=..20] run scoreboard players operation $HighestDebuffCount Temporary > @s Temporary
 
 # 最大値のプレイヤーに仮ターゲットtagを付与
-    execute as @a[tag=SearchTarget] if score @s Temporary = $HighestDebuffCount Temporary run tag @s add TempTarget
+    execute as @a[tag=SearchTarget,distance=..20] if score @s Temporary = $HighestDebuffCount Temporary run tag @s add TempTarget
 
 # 仮ターゲットの中で近いプレイヤーにターゲットtagを付与
-    tag @p[tag=TempTarget] add ClearTarget
+    tag @p[tag=TempTarget,distance=..20] add ClearTarget
 
 # リセット
-    tag @a[tag=SearchTarget] remove SearchTarget
-    tag @a[tag=TempTarget] remove TempTarget
+    tag @a[tag=SearchTarget,distance=..20] remove SearchTarget
+    tag @a[tag=TempTarget,distance=..20] remove TempTarget
     scoreboard players reset $HighestDebuffCount Temporary
