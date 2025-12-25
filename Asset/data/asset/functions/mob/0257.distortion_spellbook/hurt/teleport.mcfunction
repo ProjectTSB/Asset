@@ -1,4 +1,4 @@
-#> asset:mob/0257.distortion_spellbook/hurt/3.teleport
+#> asset:mob/0257.distortion_spellbook/hurt/teleport
 #
 #
 #
