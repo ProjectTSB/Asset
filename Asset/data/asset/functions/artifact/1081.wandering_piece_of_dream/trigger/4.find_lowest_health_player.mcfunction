@@ -16,7 +16,7 @@
     scoreboard players set $LowestHealth Temporary 0
 
 # 全員の体力と比較する
-    execute as @a[tag=SearchTarget,distance=..20] run scoreboard players operation $LowestHealth Temporary < @s Temporary
+    execute as @a[tag=SearchTarget,distance=..20] run scoreboard players operation $LowestHealth Temporary > @s Temporary
 
 # 最大値のプレイヤーに仮ターゲットtagを付与
     execute as @a[tag=SearchTarget,distance=..20] if score @s Temporary = $LowestHealth Temporary run tag @s add TempTarget
