@@ -14,10 +14,10 @@
     function api:entity/player/get_health_per
     execute store result score @s Temporary run data get storage api: Return.HealthPer 100
 
-# ヘルスが最大ヘルスの36%以上あれば、普通に最大ヘルス35%のダメージを受ける
+# ヘルスが最大ヘルスの41%以上あれば、普通に最大ヘルス40%のダメージを受ける
     execute if score @s Temporary matches 41.. run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/half_health_damage
 
-# ヘルスが最大ヘルスの35%以下である場合は、体力が11になってしまう！致命傷！
+# ヘルスが最大ヘルスの40%以下である場合は、体力が11になってしまう！致命傷！
     execute if score @s Temporary matches ..40 run function asset:artifact/0364.red_knights_sword/trigger/alt_attack/lethal_damage
 
 # Alt攻撃のクールタイムを兼ねたデバフを付与
