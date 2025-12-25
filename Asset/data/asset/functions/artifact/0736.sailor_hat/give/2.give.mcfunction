@@ -61,7 +61,7 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/physical",Amount:0.075d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:0.075d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:-0.15d,Operation:"multiply_base"}
+    # data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:-0.15d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.075d,Operation:"multiply_base"}
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:10746367},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,736,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,736,6],Slot:"head"}]}
