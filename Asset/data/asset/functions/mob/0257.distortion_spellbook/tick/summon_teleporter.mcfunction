@@ -12,6 +12,3 @@
     data modify storage api: Argument.ID set value 2077
     data modify storage api: Argument.FieldOverride.Count set from storage api: Return.Difficulty
     execute at @p[gamemode=!spectator,distance=..20] run function api:object/summon
-
-# スコア戻す
-    scoreboard players set @s 75.CoolTime 0
