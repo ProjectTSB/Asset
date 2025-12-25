@@ -22,7 +22,8 @@
 # プレイヤーが周囲にいてスコア達したら実行
     execute if score @s 75.CoolTime matches 135.. if entity @p[gamemode=!spectator,distance=..20] run function asset:mob/0257.distortion_spellbook/tick/summon_teleporter
 # プレイヤーが周囲にいない状態でスコア達したらスコア戻す
-    execute if score @s 75.CoolTime matches 135.. unless entity @p[gamemode=!spectator,distance=..20] run scoreboard players set @s 75.CoolTime 0
+    execute if score @s 75.CoolTime matches 135.. run scoreboard players set @s 75.CoolTime 0
+# summon_teleporter内のスコアセットも消すこと
 
 # カベにぶつかった際の処理
     execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
