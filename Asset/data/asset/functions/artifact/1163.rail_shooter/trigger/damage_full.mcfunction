@@ -13,7 +13,7 @@
     playsound entity.lightning_bolt.impact player @a ~ ~ ~ 0.4 0
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set value 370.0f
+    data modify storage api: Argument.Damage set value 420.0f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
