@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アロクロマティック","color":"#a1faf5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"- 使用時、%2$s%1$s%2$sを得る。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"text":"- スニーク時、弾の集弾性が向上する。"}','{"translate":"- 自身または周囲のプレイヤーが%2$s%1$s%2$sを持っているとき、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"\\uE003\\uF006 ダメージが%1$s%2$s%1$s増加し、弾の集弾性が向上する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"}]}','{"translate":"- 周囲のプレイヤーが%2$s%1$s%2$sを持っているとき、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"text":"\\uE003\\uF006 追撃が発生する。"}','{"text":"- 魔力で弾を補充することができる。"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"正確無比かつ冷酷に、敵の急所を撃ち抜く。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"- 使用時、%2$s%1$s%2$sを得る。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"text":"- スニーク時、弾の集弾性が向上する。"}','{"translate":"- 自身または周囲20mのプレイヤーが%2$s%1$s%2$s状態なら、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"\\uE003\\uF006 ダメージが%1$s%2$s%1$s増加し、弾の集弾性が向上する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"}]}','{"text":"- 自身を除く周囲20mのプレイヤーが"}','{"translate":"\\uE003\\uF006 %2$s%1$s%2$s状態なら追撃が発生する。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"text":"- 魔力で弾を補充することができる。"}','{"text":"双星の輝きを秘める、蒼き少女の力の結晶。","color":"gray"}','{"text":"正確無比かつ冷酷に、敵の急所を撃ち抜く。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [110,455]
+    data modify storage asset:artifact AttackInfo.Damage set value "300-360 / 150x2"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -49,7 +49,7 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 8
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
+    data modify storage asset:artifact TypeCooldown.Type set value "longRange"
     data modify storage asset:artifact TypeCooldown.Duration set value 8
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
