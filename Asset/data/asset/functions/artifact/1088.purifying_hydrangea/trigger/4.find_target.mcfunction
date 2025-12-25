@@ -7,6 +7,7 @@
 #> Private
 # @private
     #declare tag SearchTarget
+    #declare tag TempTarget
     #declare score_holder $HighestWaterAttack
 
 # 検索対象：BuffTargetではなく水攻撃補正が最も高いプレイヤー
@@ -20,11 +21,14 @@
 # 全員の水攻撃補正と比較する
     execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
 
-# 特定したプレイヤーにTagを付与
-# SearchTargetとBuffTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
-    execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=BuffTarget] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add BuffTarget
+# 最大値のプレイヤーに仮ターゲットtagを付与
+    execute as @a[tag=SearchTarget] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add TempTarget
+
+# 仮ターゲットの中で近いプレイヤーにターゲットtagを付与
+    tag @p[tag=TempTarget] add BuffTarget
 
 # リセット
     tag @a[tag=SearchTarget] remove SearchTarget
+    tag @a[tag=TempTarget] remove SearchTarget
     scoreboard players reset @a[tag=SearchTarget] Temporary
     scoreboard players reset $HighestWaterAttack Temporary
