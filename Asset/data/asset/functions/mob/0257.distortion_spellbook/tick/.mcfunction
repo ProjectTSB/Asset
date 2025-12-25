@@ -20,7 +20,7 @@
 # スコア増やす
     scoreboard players add @s 75.CoolTime 1
 # プレイヤーが周囲にいてスコア達したら実行
-    execute if score @s 75.CoolTime matches 135.. if entity @p[gamemode=!spectator,distance=..20] run function asset:mob/0257.distortion_spellbook/tick/3.teleporter_set
+    execute if score @s 75.CoolTime matches 135.. if entity @p[gamemode=!spectator,distance=..20] run function asset:mob/0257.distortion_spellbook/tick/summon_teleporter
 # プレイヤーが周囲にいない状態でスコア達したらスコア戻す
     execute if score @s 75.CoolTime matches 135.. unless entity @p[gamemode=!spectator,distance=..20] run scoreboard players set @s 75.CoolTime 0
 

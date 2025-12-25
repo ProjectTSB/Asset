@@ -1,4 +1,4 @@
-#> asset:mob/0257.distortion_spellbook/tick/3.teleporter_set
+#> asset:mob/0257.distortion_spellbook/tick/summon_teleporter
 #
 #
 #

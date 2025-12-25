@@ -1,4 +1,4 @@
-#> asset:mob/0257.distortion_spellbook/0.load
+#> asset:mob/0257.distortion_spellbook/load
 #
 # MOBに利用するスコアボード等の初期化処理
 #
