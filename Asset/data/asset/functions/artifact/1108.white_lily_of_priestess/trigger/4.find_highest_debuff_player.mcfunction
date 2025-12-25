@@ -7,6 +7,7 @@
 #> Private
 # @private
     #declare tag SearchTarget
+    #declare tag TempTarget
     #declare score_holder $HighestDebuffCount
 
 # 検索対象：使用者を除く、デバフ解除対象ではなく、最もデバフ数が多いプレイヤー
@@ -17,10 +18,13 @@
 # 全員のデバフ数と比較する
     execute as @a[tag=SearchTarget] run scoreboard players operation $HighestDebuffCount Temporary > @s Temporary
 
-# 特定したプレイヤーにTagを付与
-# SearchTargetとBuffTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
-    execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=ClearTarget] if score @s Temporary = $HighestDebuffCount Temporary run tag @s add ClearTarget
+# 最大値のプレイヤーに仮ターゲットtagを付与
+    execute as @a[tag=SearchTarget] if score @s Temporary = $HighestDebuffCount Temporary run tag @s add TempTarget
+
+# 仮ターゲットの中で近いプレイヤーにターゲットtagを付与
+    tag @p[tag=TempTarget] add ClearTarget
 
 # リセット
     tag @a[tag=SearchTarget] remove SearchTarget
+    tag @a[tag=TempTarget] remove TempTarget
     scoreboard players reset $HighestDebuffCount Temporary
