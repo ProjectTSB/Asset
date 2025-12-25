@@ -16,7 +16,7 @@
     execute if score @s 9F.AnimationTimer matches 56..62 at @s rotated ~-12 ~ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
 
 # 演出
-    execute if score @s 9F.AnimationTimer matches 2 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 2 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 1
     execute if score @s 9F.AnimationTimer matches 25 run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 2 0.9
     execute if score @s 9F.AnimationTimer matches 36 run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 2 1.0
     execute if score @s 9F.AnimationTimer matches 42 run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 2 1.1
