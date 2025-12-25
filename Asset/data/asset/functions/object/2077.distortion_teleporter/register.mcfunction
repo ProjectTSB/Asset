@@ -20,3 +20,4 @@
     data modify storage asset:object Field.Delay set value 3
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.SpinInterval set value 1
+    data modify storage asset:object Field.Count set value 1
