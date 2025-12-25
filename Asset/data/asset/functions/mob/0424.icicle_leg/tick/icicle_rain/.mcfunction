@@ -6,8 +6,8 @@
 
 #> 拡散用エンティティのタグと、インターバルのスコアホルダー
 # @private
-#declare tag SpreadMarker
-#declare score_holder $Interval
+    #declare tag SpreadMarker
+    #declare score_holder $Interval
 
 # Motionを固定
     data modify entity @s Motion[0] set value 0d
