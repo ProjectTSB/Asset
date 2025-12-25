@@ -17,15 +17,17 @@
 # 各プレイヤーの現在体力をスコアへ代入
     execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1075.fairy_vial/trigger/5.get_lost_health
 
-# $MostLostHealthの初期値として対象プレイヤーの内1名の体力を代入
-    execute unless score $MostLostHealth Temporary matches 1.. as @p[tag=SearchTarget] store result score $MostLostHealth Temporary run scoreboard players get @s Temporary
+# $MostLostHealthの初期化
+    scoreboard players set $MostLostHealth Temporary 0
 
 # 近い順に全員の体力と比較する
     execute as @a[tag=SearchTarget,sort=nearest] run scoreboard players operation $MostLostHealth Temporary < @s Temporary
 
-# 特定したプレイヤーにTagを付与
-# SearchTargetとHealTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
-    execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=HealTarget] if score @s Temporary = $MostLostHealth Temporary run tag @s add HealTarget
+# $MostLostHealthと同値のプレイヤーにTagを付与
+    execute as @a[tag=SearchTarget] if score @s Temporary = $MostLostHealth Temporary run tag @s add TempTarget
+
+# 最大値の中で近いプレイヤー1名にtagを付与
+    tag @p[tag=TempTarget] add HealTarget
 
 # リセット
     scoreboard players reset @a[tag=SearchTarget] Temporary
@@ -33,3 +35,4 @@
     scoreboard players reset $CurrentHealth Temporary
     scoreboard players reset $MaxHealth Temporary
     tag @a[tag=SearchTarget] remove SearchTarget
+    tag @a[tag=TempTarget] remove TempTarget
