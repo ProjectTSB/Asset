@@ -18,6 +18,9 @@
 # 各プレイヤーの水攻撃補正をスコアへ代入
     execute as @a[tag=SearchTarget,distance=..20] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/5.get_water_attack_modifier
 
+# $HighestWaterAttackの初期化
+    scoreboard players set $HighestWaterAttack Temporary -2147483648
+
 # 全員の水攻撃補正と比較する
     execute as @a[tag=SearchTarget,distance=..20] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
 
