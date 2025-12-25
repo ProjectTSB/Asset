@@ -17,7 +17,7 @@
     execute if data storage asset:context this{SpinInterval:0} run data modify storage asset:context this.SpinInterval set value 16
 
 # 敵を引き寄せ
-    execute if score @s General.Object.Tick matches 20 run function asset:object/2077.distortion_teleporter/tick/teleport.m
+    execute if score @s General.Object.Tick matches 20 run function asset:object/2077.distortion_teleporter/tick/teleport.m with storage asset:context this
 
 # 魔法陣を見えなくする
     execute if score @s General.Object.Tick matches 30 run function asset:object/2077.distortion_teleporter/tick/disappear
