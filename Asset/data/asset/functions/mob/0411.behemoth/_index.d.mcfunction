@@ -89,6 +89,8 @@
     #declare function animated_java:behemoth_aj/animations/3_1_casting/tween
     #declare function animated_java:behemoth_aj/animations/3_2_cast_start_dive/tween
     #declare function animated_java:behemoth_aj/animations/3_3_casting_dive/tween
+    #declare function animated_java:behemoth_aj/animations/3_4_cast_start_flatten/tween
+    #declare function animated_java:behemoth_aj/animations/3_5_casting_flatten/tween
     #declare function animated_java:behemoth_aj/animations/4_breath/tween
     #declare function animated_java:behemoth_aj/animations/4_breath_continue/tween
     #declare function animated_java:behemoth_aj/animations/5_flatten/tween

@@ -87,6 +87,8 @@
     #declare function animated_java:tiamat_aj/animations/3_4_cast_fly2land_start/tween
     #declare function animated_java:tiamat_aj/animations/3_5_cast_start_dive/tween
     #declare function animated_java:tiamat_aj/animations/3_6_casting_dive/tween
+    #declare function animated_java:tiamat_aj/animations/3_7_cast_start_breath/tween
+    #declare function animated_java:tiamat_aj/animations/3_8_casting_breath/tween
     #declare function animated_java:tiamat_aj/animations/4_breath/tween
     #declare function animated_java:tiamat_aj/animations/5_deathwing/tween
     #declare function animated_java:tiamat_aj/animations/6_0_flymove_start/tween
