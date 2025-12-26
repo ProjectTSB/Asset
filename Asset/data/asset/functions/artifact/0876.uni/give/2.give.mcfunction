@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"UNI","color":"dark_gray","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"UNIは棘皮動物に属す、","bold":false},{"text":"ヒトデやなまこの仲間","bold":true}]','{"text":"コンブを主食とし、餌を食べて身を太らせる","bold":false}','{"text":"また、このUNIは棘を発射し、身を守る習性がある"}','{"text":"棘がなくなってもコンブを食べれば再生する。","bold":true,"underlined":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"生息地: 海中, 稀に汽水域"}','{"text":"主食: コンブ"}','{"text":"分類: 棘皮動物"}','{"text":"解説: 高い再生力を持つ、ヒトデやナマコの仲間で、"}','{"translate":"%1$s棘を発射し身を守る習性をもつ。","with":[{"text":"\\u0024","font":"space"}]}','[{"text":"\\u0024","font":"space"},{"text":"棘はコンブを摂取することで再生する","font":"default","underlined":true},{"text":"。","font":"default","underlined":false}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
