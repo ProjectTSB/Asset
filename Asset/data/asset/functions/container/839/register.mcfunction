@@ -12,7 +12,7 @@ execute unless loaded 214 88 -362 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [214, 88, -362]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:brewing_stand[]"
+    data modify storage asset:container Block set value "minecraft:brewing_stand"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

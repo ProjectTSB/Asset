@@ -12,7 +12,7 @@ execute unless loaded -456 95 51 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [-456, 95, 51]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:light_gray_shulker_box[facing=north]"
+    data modify storage asset:container Block set value "minecraft:light_gray_shulker_box[facing=north]{CustomName:\"§6§l月の秘宝\"}"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

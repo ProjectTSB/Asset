@@ -12,7 +12,7 @@ execute unless loaded -468 93 45 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [-468, 93, 45]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:barrel[facing=north]"
+    data modify storage asset:container Block set value "minecraft:barrel[facing=north]{CustomName:\"§c§lちゃんと明るくした？\"}"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)

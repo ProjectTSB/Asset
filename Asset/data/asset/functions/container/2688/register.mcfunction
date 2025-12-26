@@ -12,7 +12,7 @@ execute unless loaded -456 95 56 run return 1
 # Pos ([int] @ 3)
     data modify storage asset:container Pos set value [-456, 95, 56]
 # ブロック (id(minecraft:block))
-    data modify storage asset:container Block set value "minecraft:barrel[facing=north]"
+    data modify storage asset:container Block set value "minecraft:barrel[facing=north]{CustomName:\"§6§l本当の月の秘宝\"}"
 
 # 以下はどちらかしか設定できない
 # ルートテーブル (id(minecraft:loot_table)) (オプション)
