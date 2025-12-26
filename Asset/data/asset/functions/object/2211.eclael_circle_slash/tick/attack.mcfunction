@@ -19,6 +19,3 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
     function api:damage/reset
-
-# 終了
-    tag @a[tag=DXYZ] remove DXYZ

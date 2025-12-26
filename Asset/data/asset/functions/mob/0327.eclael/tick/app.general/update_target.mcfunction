@@ -9,13 +9,12 @@
     #declare objective UserId
 
 # ターゲットが近くにいるならスキップ
-    execute if entity @p[tag=93.Temp.Target,distance=..80] run return 0
+    execute if entity @p[gamemode=!spectator,tag=93.Temp.Target,distance=..80] run return 0
 
 # ターゲット解放
-    tag @a remove 93.Temp.Target
+    tag @a[tag=93.Temp.Target] remove 93.Temp.Target
 
 # 最も近くにいるプレイヤーをターゲットにする
-# サバイバルの対象が居ない場合、しょうがないのでそれ以外を狙う
-    tag @p[tag=!PlayerShouldInvulnerable,distance=..80] add 93.Temp.Target
-    execute unless entity @p[tag=93.Temp.Target,distance=..80] run tag @p add 93.Temp.Target
+# デバッグも想定してスペクテイター以外を対象に選ぶ
+    tag @p[gamemode=!spectator,distance=..80] add 93.Temp.Target
     scoreboard players operation @s 93.TargetUserId = @p[tag=93.Temp.Target,distance=..80] UserId

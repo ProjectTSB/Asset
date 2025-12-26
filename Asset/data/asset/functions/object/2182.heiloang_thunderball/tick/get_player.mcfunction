@@ -6,7 +6,7 @@
 
 # 対象プレイヤーにタグを付与
     scoreboard players operation $TempUserID Temporary = @s 2182.PlayerId
-    execute as @a if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..80] if score @s UserID = $TempUserID Temporary run tag @s add 2182.TargetPlayer
 
 # 対象が存在しない場合、再度プレイヤーを取得
     execute unless entity @a[tag=2182.TargetPlayer] run function asset:object/2182.heiloang_thunderball/tick/reset_player
@@ -19,4 +19,4 @@
 
 # 終了
     scoreboard players reset $TempUserID Temporary
-    tag @a remove 2182.TargetPlayer
+    tag @a[tag=2182.TargetPlayer] remove 2182.TargetPlayer

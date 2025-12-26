@@ -17,4 +17,4 @@
     # tellraw @p [{"storage":"asset:context","nbt":"this.target_pos"}]
 
     function asset:object/2083.brimstone/turn with storage asset:context this
-    #execute facing entity @p[tag=5X.BrimstoneTarget] eyes run tp @s ~ ~ ~ ~ ~
+    #execute facing entity @p[gamemode=!spectator,tag=5X.BrimstoneTarget] eyes run tp @s ~ ~ ~ ~ ~
