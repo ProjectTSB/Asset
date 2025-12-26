@@ -5,7 +5,7 @@
 # @within function asset:mob/0205.skull_soldier/tick/
 
 # VFX
-    playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
+    playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
 
 # 持ち替え
 # 攻撃力のない石の斧に切り替える

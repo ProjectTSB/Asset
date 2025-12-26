@@ -19,6 +19,3 @@
 
 # データを削除
     data remove storage asset:temp 2001
-    
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"精霊の旋律","color":"#B0FFD7"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text:":"継続的に周囲のプレイヤーの体力を回復する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"継続的に自身の最大体力に比例して","color":"white"}','{"text":"自身と周囲のプレイヤーの体力を回復する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
@@ -21,7 +21,7 @@
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
-    data modify storage asset:effect MaxDuration set value 360
+    data modify storage asset:effect MaxDuration set value 400
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
@@ -36,4 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.HealPer set value 0.01

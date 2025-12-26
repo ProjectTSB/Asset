@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value ["30 / 12x4"]
+    data modify storage asset:artifact AttackInfo.Damage set value "30+12x4"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -60,7 +60,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:4,Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:6s}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:5,Enchantments:[{id:"minecraft:power",lvl:6s}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
