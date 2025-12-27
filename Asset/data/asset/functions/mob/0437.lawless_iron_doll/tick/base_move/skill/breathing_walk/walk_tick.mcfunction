@@ -25,8 +25,13 @@
 # リセット
     scoreboard players reset $Interval Temporary
 
+#
+    execute if entity @s[tag=C5.Moveset.Intro] run say Moveset.Intro
+    execute if entity @s[tag=C5.InAction] run say InActio
+    say a
+
 # そこらのプレイヤーより上にいる場合、下にTP。下にブロックがあったら止まるよ。
-    execute at @p[gamemode=!spectator,distance=..256] positioned ~-50 ~-1 ~-50 unless entity @s[dx=99,dy=-50,dz=99] at @s[tag=!C5.Moveset.Intro,tag=!C5.InAction] if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+    execute if entity @s[tag=!C5.Moveset.Intro] at @p[gamemode=!spectator,distance=..256] positioned ~-50 ~-1 ~-50 unless entity @s[dx=99,dy=-50,dz=99] at @s if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
 
 # 足元が埋まっていて、上にブロックがないなら上に移動
     execute unless block ^ ^ ^1 #lib:no_collision run tp @s ~ ~0.1 ~
