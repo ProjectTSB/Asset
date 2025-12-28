@@ -19,17 +19,17 @@
 # チャージ段階に応じてダメージを変える
 
     # 第1段階
-        execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.Damage set value 2200
+        execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.Damage set value 2700
         execute if data storage api: Argument.FieldOverride{Charge:1} run data modify storage api: Argument.FieldOverride.Speed set value 5
 
     # 第2段階
-        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Damage set value 2750
-        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Speed set value 6
+        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Damage set value 3250
+        execute if data storage api: Argument.FieldOverride{Charge:2} run data modify storage api: Argument.FieldOverride.Speed set value 8
 
     # 第3段階
-        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Damage set value 2750
-        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Speed set value 8
-        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.ThunderDamage set value 560
+        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Damage set value 3250
+        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.Speed set value 15
+        execute if data storage api: Argument.FieldOverride{Charge:3} run data modify storage api: Argument.FieldOverride.ThunderDamage set value 720
 
 # Object召喚
     data modify storage api: Argument.ID set value 1143

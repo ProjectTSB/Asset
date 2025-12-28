@@ -1126,7 +1126,7 @@
 
 #> declare
 # @within asset:artifact/**
-#alias entity selectorTemplate @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..n] from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L68
+#alias entity selectorTemplate @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..n] from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/artifact/_index.d.mcfunction#L68
 
 #> declare
 # @within function asset:object/**

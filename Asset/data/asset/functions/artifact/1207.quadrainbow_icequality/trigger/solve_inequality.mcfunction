@@ -1,11 +1,11 @@
 #> asset:artifact/1207.quadrainbow_icequality/trigger/solve_inequality
 #
-# 
+#
 #
 # @within function asset:artifact/1207.quadrainbow_icequality/trigger/2.check_condition
 
 #> prv
-#> @private
+# @private
     #declare score_holder $XJ.Eval
 
 # 初期値設定

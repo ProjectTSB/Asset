@@ -9,7 +9,7 @@
     #declare tag BK.Marker
 
 # Markerを召喚する
-    execute anchored eyes run summon marker ~ ~ ~ {Tags:["BK.Marker"]}
+    execute anchored eyes run summon marker ^ ^ ^ {Tags:["BK.Marker"]}
 
 # 拡散する
     data modify storage lib: Argument.Bounds set value [[2d,2d],[0,0],[2d,2d]]

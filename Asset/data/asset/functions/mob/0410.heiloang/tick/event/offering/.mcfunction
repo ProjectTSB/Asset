@@ -17,8 +17,8 @@
         # execute if score @s BE.EventTimer matches 125 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/2_3_common_order
     # 眷属に指示
         execute if score @s BE.EventTimer matches 140 run function asset:mob/0410.heiloang/tick/event/offering/get_servants_count
-        execute if score @s BE.EventTimer matches 140 as @e[type=slime,tag=BF.EntityRoot] at @s run function asset:mob/0411.behemoth/tick/event/offering/start
-        execute if score @s BE.EventTimer matches 140 as @e[type=slime,tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/event/offering/start
+        execute if score @s BE.EventTimer matches 140 if entity @e[type=slime,tag=BF.EntityRoot] as @e[type=slime,tag=BF.EntityRoot] at @s run function asset:mob/0411.behemoth/tick/event/offering/start
+        execute if score @s BE.EventTimer matches 140 if entity @e[type=slime,tag=BG.EntityRoot] as @e[type=slime,tag=BG.EntityRoot] at @s run function asset:mob/0412.tiamat/tick/event/offering/start
 
 # 終了
     execute if score @s BE.EventTimer matches 193.. run function asset:mob/0410.heiloang/tick/event/offering/end
