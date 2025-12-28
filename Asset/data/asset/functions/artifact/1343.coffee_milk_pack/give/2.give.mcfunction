@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"コーヒー牛乳パック","color":"#914e17"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"何回かに分けて使えるおいしいコーヒー牛乳"}','[{"text":"デバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除し、それなりにお腹も膨れる"}]','{"text":"さらに、MPを20回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"何回かに分けて使えるおいしいコーヒー牛乳"}','[{"text":"デバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除し、それなりにお腹も膨れる"}]','{"text":"さらに、MPを30回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
