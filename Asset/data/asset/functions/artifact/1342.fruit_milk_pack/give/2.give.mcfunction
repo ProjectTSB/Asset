@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:honey_bottle"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"フルーツ牛乳パック","color":"#ffc466"}]'
+    data modify storage asset:artifact Name set value '[{"text":"フルーツ牛乳パック","color":"#FFF4B5"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"何回かに分けて使えるおいしいフルーツ牛乳"}','[{"text":"デバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除し、それなりにお腹も膨れる"}]','{"text":"さらに、体力を10回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
