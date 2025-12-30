@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"火炎放射器","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"液体燃料を圧縮ガスで点火させることで"}','{"text":"火炎を放射する兵器"}','{"text":"汚物は消毒だ～！！!","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"液体燃料を圧縮ガスで点火させることで"}','{"text":"火炎を放射する兵器"}','{"text":"汚物は消毒だ～！！","color":"gray"}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
