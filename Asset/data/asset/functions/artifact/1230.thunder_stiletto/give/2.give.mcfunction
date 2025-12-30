@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"サンダースティレット","color":"#FFD952"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"電気を纏った高速の投げナイフを放つ"}','{"text":"2ブロック以上浮いて使用すると2本追加で放つ"}','{"text":"追加のナイフは威力が30%、MP回復量が50%減少する"}','{"text":"地上で放ったナイフのヒット時"}','{"text":"33%の確率で跳躍力上昇を3秒得る"}']
+    data modify storage asset:artifact Lore set value ['{"text":"電気を纏った高速の投げナイフを放つ"}','{"translate":"-%1$s2ブロック以上浮いて使用すると2本追加で放つ","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s追加のナイフは威力が%2$s、MP回復量が%3$s減少する","with":[{"text":"\\u0008","font":"space"},{"text":"30%"},{"text":"50%"}]}','{"translate":"-%1$s地上で放ったナイフのヒット時","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s%2$sの確率で跳躍力上昇を3秒得る","with":[{"text":"\\u0008","font":"space"},{"text":"33%"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

@@ -63,3 +63,5 @@
         data modify storage asset:mob Resist.Thunder set value 1
 # フィールド
     data modify storage asset:mob Field.Split set value 2
+    data modify storage asset:mob Field.Damage.Vanilla set value 40f
+    data modify storage asset:mob Field.Damage.Bullet set value 30f

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"空腹のUNI","color":"dark_gray","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"UNIは棘皮動物に属す、","bold":false},{"text":"ヒトデやなまこの仲間","bold":true}]','{"text":"コンブを主食とし、餌を食べて身を太らせる","bold":false}','{"text":"食べる速度は非常に遅い","color":"dark_purple","bold":false,"italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"生息地: 海中、稀に汽水域"}','{"text":"主食: コンブ"}','{"text":"分類: 棘皮動物"}','{"text":"解説: 身を守るために発射した棘は、"}','{"translate":"%1$sコンブを摂取することで再生する。","with":[{"text":"\\u0024","font":"space"}]}','[{"text":"\\u0024","font":"space"},{"text":"食べる速度は非常に遅い","font":"default","underlined":true},{"text":"。","font":"default","underlined":false}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.kelp"}'
     data modify storage asset:artifact ConsumeItem.Count set value 8
@@ -52,9 +52,11 @@
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
-    # data modify storage asset:artifact DisableCooldownMessage set value
+    data modify storage asset:artifact DisableCooldownMessage set value true
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
+# 破壊時の音を鳴らさないかどうか (boolean) (オプション)"
+    data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
