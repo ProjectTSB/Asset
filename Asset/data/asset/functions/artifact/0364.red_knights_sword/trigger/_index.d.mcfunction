@@ -10,3 +10,4 @@
     #declare score_holder $A4.Current
     #declare score_holder $A4.MaxPer
     #declare score_holder $A4.Stopper
+    #declare score_holder $A4.Damage

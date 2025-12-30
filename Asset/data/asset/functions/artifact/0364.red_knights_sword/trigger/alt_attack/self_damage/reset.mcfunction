@@ -7,3 +7,4 @@
 # リセット
     scoreboard players reset $A4.Current Temporary
     scoreboard players reset $A4.MaxPer Temporary
+    scoreboard players reset $A4.Damage Temporary
