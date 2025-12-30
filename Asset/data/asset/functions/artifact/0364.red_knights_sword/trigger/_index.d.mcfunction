@@ -7,3 +7,6 @@
     #declare tag A4.Hit
     #declare score_holder $A4.Temp
     #declare score_holder $A4.LatestUseTick
+    #declare score_holder $A4.Current
+    #declare score_holder $A4.MaxPer
+    #declare score_holder $A4.Stopper
