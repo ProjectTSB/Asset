@@ -5,7 +5,7 @@
 # @within asset:object/alias/1056/init
 
 # 敵の方を向く
-    tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] eyes
+    tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] eyes
 
 # スピード設定
     data modify storage asset:context this.Speed set value 1

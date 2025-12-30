@@ -12,7 +12,7 @@
     execute at @p[tag=1058.OwnerPlayer,distance=..60] rotated ~ 0 run summon marker ^-1 ^1 ^-1 {Tags:[1058.MoveMarker]}
 
 # マスターの最寄りの敵を自身のターゲットとする
-    execute at @p[tag=1058.OwnerPlayer,distance=..60] run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,sort=nearest,limit=1] add 1058.TargetedEnemy
+    execute at @p[tag=1058.OwnerPlayer,distance=..60] run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,sort=nearest,limit=1] add 1058.TargetedEnemy
 
 # マスターのマーカーに誘導移動
     execute if entity @s[tag=!1058.AttackMode] facing entity @e[type=marker,tag=1058.MoveMarker,distance=1..60,sort=nearest,limit=1] eyes positioned ^ ^ ^-20 rotated as @s positioned ^ ^ ^-40 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.6 ~ ~
@@ -24,8 +24,8 @@
     execute if entity @e[type=marker,tag=1058.MoveMarker,distance=..3,limit=1] run tag @s[tag=1058.StopAttack] remove 1058.StopAttack
 
 # 付近に敵がいたら攻撃モードへと移行
-    execute if entity @s[tag=!1058.AttackMode,tag=!1058.StopAttack] if entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1058.brave_knight/tick/event/dash
-    execute if entity @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable,distance=..8] run tag @s[tag=!1058.StopAttack] add 1058.AttackMode
+    execute if entity @s[tag=!1058.AttackMode,tag=!1058.StopAttack] if entity @e[type=#lib:living_without_player,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1058.brave_knight/tick/event/dash
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable,distance=..8] run tag @s[tag=!1058.StopAttack] add 1058.AttackMode
 
 # 攻撃モード時の処理
     execute if entity @s[tag=1058.AttackMode] run function asset:object/1058.brave_knight/tick/event/attack_mode
@@ -44,4 +44,4 @@
 # リセット
     kill @e[type=marker,tag=1058.MoveMarker]
     tag @a[tag=1058.OwnerPlayer] remove 1058.OwnerPlayer
-    tag @e[type=#lib:living,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable] remove 1058.TargetedEnemy
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=1058.TargetedEnemy,tag=!Uninterferable] remove 1058.TargetedEnemy

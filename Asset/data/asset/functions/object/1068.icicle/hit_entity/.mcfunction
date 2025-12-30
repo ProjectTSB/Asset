@@ -10,7 +10,7 @@
     #declare tag 1068.Hit
 
 # 対象にタグを付ける
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run tag @s add 1068.Hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] run tag @s add 1068.Hit
 # 鈍足付与
     effect give @e[type=#lib:living,tag=1068.Hit,distance=..10] slowness 10 2
 # ダメージ与える

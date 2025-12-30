@@ -10,4 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # 近くのモブのうちランダムな野郎を狙って撃つ
-    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..12,sort=random,limit=1] positioned ~ ~1 ~ run function asset:artifact/1118.time_samsara/trigger/summon
+    execute at @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..12,sort=random,limit=1] positioned ~ ~1 ~ run function asset:artifact/1118.time_samsara/trigger/summon
