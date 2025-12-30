@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"空腹のUNI","color":"dark_gray","bold":true,"underlined":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"生息地: 海中、稀に汽水域"}','{"text":"主食: コンブ"}','{"text":"分類: 棘皮動物"}','{"text":"解説: 高い再生力を持つ、ヒトデやナマコの仲間で、"}','{"translate":"%1$s棘を発射し身を守る習性をもつ。","with":[{"text":"\\u0024","font":"space"}]}','[{"text":"\\u0024","font":"space"},{"text":"棘はコンブを摂取することで再生する","font":"default","underlined":true},{"text":"。","font":"default","underlined":false}]','[{"text":"\\u0024","font":"space"},{"text":"食べる速度は非常に遅い","font":"default","underlined":true},{"text":"。","font":"default","underlined":false}]']
+    data modify storage asset:artifact Lore set value ['{"text":"生息地: 海中、稀に汽水域"}','{"text":"主食: コンブ"}','{"text":"分類: 棘皮動物"}','{"text":"解説: 身を守るために発射した棘は、"}','{"translate":"%1$sコンブを摂取することで再生する。","with":[{"text":"\\u0024","font":"space"}]}','[{"text":"\\u0024","font":"space"},{"text":"食べる速度は非常に遅い","font":"default","underlined":true},{"text":"。","font":"default","underlined":false}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.kelp"}'
     data modify storage asset:artifact ConsumeItem.Count set value 8
