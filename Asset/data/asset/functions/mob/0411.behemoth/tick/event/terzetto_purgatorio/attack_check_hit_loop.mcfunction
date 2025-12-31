@@ -18,7 +18,7 @@
 
 # ヒット判定
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add BF.Temp.AttackHit
-    execute if entity @a[distance=..1] run particle explosion ~ ~ ~ 1 1 1 0 5
+    execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..1] run particle explosion ~ ~ ~ 1 1 1 0 5
 
 # ループ
     scoreboard players remove @s BF.Counter 1

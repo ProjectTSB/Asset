@@ -9,7 +9,7 @@
 
 # 暗視
     data modify storage api: Argument set value {ID:655,Duration:400,Stack:5}
-    execute as @a[distance=..160] run function api:entity/mob/effect/give
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..160] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 終了

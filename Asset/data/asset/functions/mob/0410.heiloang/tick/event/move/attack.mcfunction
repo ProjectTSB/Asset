@@ -5,7 +5,6 @@
 # @within asset:mob/0410.heiloang/tick/event/move/
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 20
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 9

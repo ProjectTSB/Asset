@@ -8,13 +8,13 @@
     tag @e[type=item_display,tag=8N.ModelRoot,sort=nearest,limit=1] add 8N.ModelRoot.Target
 
 # モデルをこっちに向かす
-    execute if entity @s[tag=8N.PlayerFacing] as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute if entity @s[tag=8N.PlayerFacing] as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ 0
 
 # 最寄りのモデルを自分と同じ向きにする
     execute as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
 
 # こっちを向く
-    execute if entity @s[tag=8N.PlayerFacing] facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[tag=8N.PlayerFacing] facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ ~
 
 # Tick加算
     scoreboard players add @s General.Mob.Tick 1

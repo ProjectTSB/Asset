@@ -20,7 +20,7 @@
 
 # 途中で一時停止し、プレイヤーの方へ方向転
     execute if entity @s[scores={General.Object.Tick=40}] run data modify storage asset:context this.MovePerStep set value 0
-    execute if entity @s[scores={General.Object.Tick=60}] facing entity @p[distance=..50] feet run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Object.Tick=60}] facing entity @p[gamemode=!spectator,distance=..50] feet run tp @s ~ ~ ~ ~ ~
     execute if entity @s[scores={General.Object.Tick=60}] run data modify storage asset:context this.MovePerStep set value 1
 
 # 継承

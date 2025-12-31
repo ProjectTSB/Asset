@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/warp
 
 # しばらくすると足元マーカーが出てくる！
-    execute if score @s General.Mob.Tick matches 20 at @r[distance=..64] align xyz positioned ~0.5 ~ ~0.5 run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/falling/alert/
+    execute if score @s General.Mob.Tick matches 20 at @r[gamemode=!spectator,distance=..64] align xyz positioned ~0.5 ~ ~0.5 run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/falling/alert/
 
 # 落下アニメしつつマーカーに瞬間移動する
     execute if score @s General.Mob.Tick matches 50 at @e[type=marker,tag=8N.Marker.Target,sort=nearest,limit=1] run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/falling/teleport
@@ -22,7 +22,7 @@
     # ハードでは最初からやるし数も多い、10本
         execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 55..65 run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/laser/
     # ハードだとプレイヤー全員の座標に置いてくる
-        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 66 at @a[distance=..32] run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/laser/aiming
+        execute if predicate api:global_vars/difficulty/min/3_blessless if score @s General.Mob.Tick matches 66 at @a[gamemode=!spectator,distance=..32] run function asset:mob/0311.blazing_inferno/tick/skill/ground_slam/laser/aiming
 
 # 待機アニメを再生
     # ハード未満、本気でないとき

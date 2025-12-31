@@ -20,10 +20,10 @@
     function asset:mob/0372.tutankhamen/tick/skill/common/select_target
 
 # ターゲットの方を向き続ける
-    execute at @a[distance=..100] if score @s AC.TargetID = @p UserID run tag @p add Target
-    execute facing entity @p[tag=Target] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute as @a[gamemode=!spectator,distance=..100] if score @e[type=wither_skeleton,tag=this,distance=..0.01,limit=1] AC.TargetID = @s UserID run tag @s add Target
+    execute facing entity @a[tag=Target,distance=..100,limit=1] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ ~
     tp @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] ~ ~ ~ ~ ~
-    tag @p[tag=Target] remove Target
+    tag @a[tag=Target,distance=..100,limit=1] remove Target
 
 # 一定間隔で拡散して召喚
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

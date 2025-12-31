@@ -181,7 +181,6 @@
     #declare tag BE.Temp.Dive.PositionA 連続ダイブ位置A
     #declare tag BE.Temp.Dive.PositionB 連続ダイブ位置B
     #declare tag BE.Temp.Dive.PositionC 連続ダイブ位置C
-    #declare tag BE.Temp.Hit 攻撃ヒット
     #declare tag BE.Temp.HitFlame 火炎放射ヒット
     #declare tag BE.Temp.Dummy ダミー
     #declare tag BE.Temp.MoveEnd 処理終了

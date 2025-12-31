@@ -8,7 +8,6 @@
 #         function asset:mob/0410.heiloang/tick/event/heil_disaster/hard
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 2
     data modify storage lib: args.dy set value 2
     data modify storage lib: args.dz set value 20
@@ -32,4 +31,4 @@
     # execute positioned ^ ^-0.8 ^-20 run function api:object/summon
 
 # 終了
-    tag @a remove DXYZ
+    tag @a[tag=DXYZ] remove DXYZ
