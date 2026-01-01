@@ -31,11 +31,15 @@
 # 消すのに必要なレベル (int) (default = 1)
     # data modify storage asset:effect RequireClearLv set value
 # エフェクトをUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect Visible set value
+    data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect StackVisible set value
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     data modify storage asset:effect Field.Bullet set value 1
     data modify storage asset:effect Field.MaxBullet set value 60
+    data modify storage asset:effect Field.IsFullCharge set value false
+    data modify storage asset:effect Field.IsShooting set value false
+    data modify storage asset:effect Field.Spread set value {Neutral:0.3,FullCharge:0.1}
+    data modify storage asset:effect Field.Motion set value {Neutral:0.7,FullCharge:1.5}
     data modify storage asset:effect Field.Damage set value 1
