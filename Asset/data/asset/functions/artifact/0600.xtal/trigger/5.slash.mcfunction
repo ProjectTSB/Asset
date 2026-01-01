@@ -35,4 +35,4 @@
 
 # リセットする
     scoreboard players reset @s GO.Time
-    tag @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6] add Target
+    tag @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6] remove Target
