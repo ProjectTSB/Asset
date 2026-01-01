@@ -6,16 +6,19 @@
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
+# 継承 (int)
+    data modify storage asset:effect Extends append value 192
+    function asset:effect/extends
 # ID (int)
     data modify storage asset:effect ID set value 310
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"えんじぇるうぃんぐ","color":"#FFFFFF"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度とジャンプ力が大きく上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"ジャンプ力が大きく上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
-    # data modify storage asset:effect Stack set value
+    # data modify storage asset:effect Stack set value 3
 # 効果時間の操作方法 (default = API || "replace")
     # data modify storage asset:effect DurationOperation set value
 # スタックの操作方法 (default = API || "replace")
@@ -23,7 +26,7 @@
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 1
+    # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
