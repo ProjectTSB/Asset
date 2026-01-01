@@ -14,7 +14,7 @@
 
 # ネコ召喚
     data modify storage api: Argument.ID set value 1003
-    data modify storage api: Argument.FieldOverride.Heal set value 4f
+    data modify storage api: Argument.FieldOverride.Heal set value 4.5f
     data modify storage api: Argument.FieldOverride.HealInterval.Max set value 60
     data modify storage api: Argument.FieldOverride.Tick set value 600
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
