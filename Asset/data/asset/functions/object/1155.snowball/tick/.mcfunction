@@ -7,9 +7,6 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 演出
-    particle dust 0.506 0.941 0.992 0.25 ~ ~ ~ 0.05 0.05 0.05 0 1
-
 # super
     function asset:object/super.tick
 
