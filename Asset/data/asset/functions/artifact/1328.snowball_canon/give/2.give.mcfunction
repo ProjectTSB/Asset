@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"スノーボールキャノン","color":"#baf5ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"長押しすることでチャージし、%1$sを離すことで","color":"white","with":[{"keybind":"key.use"}]}','{"text":"チャージ時間に比例した弾数の雪玉を発射する(最大60発)","color":"white"}','{"text":"フルチャージ時は弾の収束率・弾速・発射間隔が強化される","color":"white"}','{"text":"雪玉を大量に装填し発射する破壊兵器...かもしれない","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"長押しすることでチャージし、%1$sを離すことで","color":"white","with":[{"keybind":"key.use"}]}','{"text":"チャージ時間に比例した弾数の雪玉を発射する(最大60発)","color":"white"}','{"text":"フルチャージ時は弾の収束率・弾速・連射速度が強化される","color":"white"}','{"text":"雪玉を大量に装填し発射する破壊兵器...かもしれない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
