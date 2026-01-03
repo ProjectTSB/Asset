@@ -41,10 +41,10 @@
 # 演出
     execute if score @s AK.EventTimer matches 45..63 run function asset:mob/0380.haruclaire_v3/tick/event/press/sound_flap
     execute if score @s AK.EventTimer matches 226.. run function asset:mob/0380.haruclaire_v3/tick/event/press/sound_flap
-    execute if score @s AK.EventTimer matches 2 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 2 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
     execute if score @s AK.EventTimer matches 17 run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
     execute if score @s AK.EventTimer matches 37 run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 1.3
-    execute if score @s AK.EventTimer matches 66 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+    execute if score @s AK.EventTimer matches 66 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
     execute if score @s AK.EventTimer matches 95 run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 0.7
     execute if score @s AK.EventTimer matches 134 run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 0.7
     execute if score @s AK.EventTimer matches 172 run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 0.7
