@@ -1,18 +1,16 @@
-#> asset:object/1139.simple_grenade/tick/boom
+#> asset:object/1139.simple_grenade/hit/
 #
+# 継承先などから実行される処理
 #
-#
-# @within function asset:object/1139.simple_grenade/tick/
+# @within asset:object/alias/1139/hit
 
 #> Private
 # @private
     #declare tag 1139.Target
-    #declare tag 1139.Already
     #declare score_holder $UserID
 
-# 一度しか爆発しないように
-    execute if entity @s[tag=1139.Already] run return fail
-    tag @s add 1139.Already
+# super
+    function asset:object/super.method
 
 # 演出
     particle flame ~ ~ ~ 0.5 0.5 0.5 0.05 60 normal @a
@@ -38,8 +36,4 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] remove 1139.Target
-
-# 消滅
-    execute on vehicle run kill @s
-    kill @s
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] remove 1139.Target
