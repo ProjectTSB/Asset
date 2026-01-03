@@ -20,6 +20,5 @@
     data modify storage asset:object Field.Motion set value 1f
     data modify storage asset:object Field.Tick set value 60
     data modify storage asset:object Field.LeftRotate set value false
-    data modify storage asset:object Field.AlreadyHit set value false
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1

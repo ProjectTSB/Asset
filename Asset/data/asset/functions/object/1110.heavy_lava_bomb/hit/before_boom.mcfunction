@@ -1,8 +1,8 @@
-#> asset:object/1110.heavy_lava_bomb/tick/before_boom
+#> asset:object/1110.heavy_lava_bomb/hit/before_boom
 #
 # 爆発前の諸々
 #
-# @within function asset:object/1110.heavy_lava_bomb/tick/
+# @within function asset:object/1110.heavy_lava_bomb/hit/
 
 # 下に落ちていく
 # 水中の場合は減速する

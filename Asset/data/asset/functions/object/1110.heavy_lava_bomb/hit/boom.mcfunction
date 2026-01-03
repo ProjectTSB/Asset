@@ -1,8 +1,8 @@
-#> asset:object/1110.heavy_lava_bomb/tick/boom
+#> asset:object/1110.heavy_lava_bomb/hit/boom
 #
 #
 #
-# @within function asset:object/1110.heavy_lava_bomb/tick/
+# @within function asset:object/1110.heavy_lava_bomb/hit/
 
 #> Private
 # @private
