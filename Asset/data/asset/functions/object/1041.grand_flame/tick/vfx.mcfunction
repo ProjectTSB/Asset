@@ -1,4 +1,4 @@
-#> asset:object/1041.grand_flame/tick/vfx/flying
+#> asset:object/1041.grand_flame/tick/vfx
 #
 #
 #

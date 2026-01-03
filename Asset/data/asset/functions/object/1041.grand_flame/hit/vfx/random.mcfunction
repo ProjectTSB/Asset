@@ -1,8 +1,8 @@
-#> asset:object/1041.grand_flame/tick/vfx/landing/random
+#> asset:object/1041.grand_flame/hit/vfx/random
 #
 #
 #
-# @within function asset:object/1041.grand_flame/tick/vfx/landing/random.m
+# @within function asset:object/1041.grand_flame/hit/vfx/random.m
 
 # 円.004
     particle flame ^-0.0 ^0.0 ^0.2 ^-16.298 ^0.0 ^1000000000.0 0.00000000076 0 force @a[distance=..64]

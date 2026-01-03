@@ -1,8 +1,8 @@
-#> asset:object/1041.grand_flame/tick/vfx/landing/
+#> asset:object/1041.grand_flame/hit/vfx/
 #
 #
 #
-# @within function asset:object/1041.grand_flame/tick/landing
+# @within function asset:object/1041.grand_flame/hit/
 
 # 球
     particle dust 100000000 1 0 4 ~-0.0 ~1.294 ~4.83 0.0 0.0 0.0 0.0 1 force @a[distance=..64]
