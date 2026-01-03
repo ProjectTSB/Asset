@@ -1,12 +1,15 @@
-#> asset:object/1106.sparkle_bomb/tick/boom
+#> asset:object/1106.sparkle_bomb/hit/
 #
+# 継承先などから実行される処理
 #
-#
-# @within function asset:object/1106.sparkle_bomb/tick/
+# @within asset:object/alias/1106/hit
 
 #> Private
 # @private
     #declare score_holder $UserID
+
+# super
+    function asset:object/super.method
 
 # 演出　
     particle firework ~ ~ ~ 0 0 0 0.3 45 force @a[distance=..48]
@@ -28,7 +31,3 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-
-# 消滅
-    execute on vehicle run kill @s
-    kill @s
