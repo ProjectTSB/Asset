@@ -1,8 +1,8 @@
-#> asset:object/1002.malleus_maleficarum/tick/witchification
+#> asset:object/1002.malleus_maleficarum/hit/witchification
 #
 # 魔女化
 #
-# @within function asset:object/1002.malleus_maleficarum/tick/hit
+# @within function asset:object/1002.malleus_maleficarum/hit/
 
 # 効果音
     playsound entity.zombie_villager.converted neutral @a ~ ~ ~ 1 1
