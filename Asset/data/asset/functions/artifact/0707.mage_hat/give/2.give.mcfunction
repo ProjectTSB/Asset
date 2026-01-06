@@ -60,10 +60,12 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:0.035d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.035d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:3.5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:1d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:6429598},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.5,Operation:0,UUID:[I;1,1,707,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,707,6],Slot:"head"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:6429598},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give
