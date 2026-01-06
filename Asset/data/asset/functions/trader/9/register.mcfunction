@@ -95,6 +95,11 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:prismarine_shard",Count:16b}
 
+# 取引 下位通貨をエンドロッドに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:end_rod",Count:2b}
+
 # 取引 下位通貨をグロウストーンに
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
@@ -109,6 +114,21 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:shroomlight",Count:2b}
+
+# 取引 下位通貨を黄土色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:ochre_froglight",Count:2b}
+
+# 取引 下位通貨を新緑色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:verdant_froglight",Count:2b}
+
+# 取引 下位通貨を黄土色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:pearlescent_froglight",Count:2b}
 
 # 取引 マグマブロック
     data modify storage asset:trader Trades append value {}
