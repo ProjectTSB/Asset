@@ -19,12 +19,12 @@
     execute unless entity @e[type=zombie,scores={MobID=264},distance=..30] facing entity @p[distance=..30] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-2000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
 
 # 接地で上を向く
-    execute positioned ~ ~1.68 ~ unless block ~ ~-1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
-    execute positioned ~ ~1.68 ~ unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
+    execute positioned ~ ~1.68 ~ unless block ~ ~-1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~-35
+    execute positioned ~ ~1.68 ~ unless block ~ ~1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~80
 
 # カベにぶつかった際の処理
-    execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-    execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.5 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute positioned ~ ~1.68 ~ unless block ^ ^ ^0.2 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # スコア
     scoreboard players add @s General.Mob.Tick 1

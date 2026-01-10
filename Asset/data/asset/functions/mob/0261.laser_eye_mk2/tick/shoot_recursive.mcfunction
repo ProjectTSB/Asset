@@ -11,7 +11,7 @@
 
 # 着弾検知
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run tag @s add Landing
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add Landing
 
 # ターゲットにタグ付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] run tag @p[gamemode=!spectator,dx=0,sort=random,limit=1] add LandingTarget

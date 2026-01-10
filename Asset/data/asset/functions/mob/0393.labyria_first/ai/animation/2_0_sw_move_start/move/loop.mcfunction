@@ -20,4 +20,4 @@
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 
 # そこがブロックで埋まってないか否かでループさせる
-    execute at 0-0-0-0-0 if block ~ ~ ~ #lib:no_collision if score $AX.Temp Temporary matches ..4 run function asset:mob/0393.labyria_first/ai/animation/2_0_sw_move_start/move/loop
+    execute at 0-0-0-0-0 if block ~ ~ ~ #lib:no_collision/ if score $AX.Temp Temporary matches ..4 run function asset:mob/0393.labyria_first/ai/animation/2_0_sw_move_start/move/loop
