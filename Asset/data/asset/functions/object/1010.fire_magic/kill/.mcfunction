@@ -23,7 +23,7 @@
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-1 ~-0.5 ~-1 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=1,dy=2.5,dz=1] run function api:damage/
+    execute positioned ~-1 ~-0.5 ~-1 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=1,dy=2.5,dz=1] run function api:damage/
     function api:damage/reset
 
 # リセット

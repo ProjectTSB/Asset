@@ -10,8 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle sweep_attack ~ ~1 ~ 0 0 0 1 1
-    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function asset:artifact/1175.rubber_mallet/trigger/particle
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle sweep_attack ~ ~1 ~ 0 0 0 1 1
+    execute positioned as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function asset:artifact/1175.rubber_mallet/trigger/particle
     playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0
     playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1 0.5
     playsound minecraft:entity.glow_squid.squirt player @a ~ ~ ~ 1 1.56
