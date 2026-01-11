@@ -1,4 +1,4 @@
-#> asset:mob/0038.laser_eye/tick/2.1.attack
+#> asset:mob/0038.laser_eye/tick/charge
 #
 # 適正距離の処理
 #
@@ -16,8 +16,8 @@
 # 演出
     execute if entity @s[scores={C.LaserTime=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
     execute if entity @s[scores={C.LaserTime=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
-    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/particle.1
-    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1.4 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/particle.2
+    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/1
+    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1.4 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/2
 
 # 攻撃
-    execute if entity @s[scores={C.LaserTime=35}] run function asset:mob/0038.laser_eye/tick/2.4.attack2
+    execute if entity @s[scores={C.LaserTime=35}] run function asset:mob/0038.laser_eye/tick/shoot/

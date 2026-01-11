@@ -1,9 +1,8 @@
-#> asset:mob/0038.laser_eye/tick/2.3.damage
+#> asset:mob/0038.laser_eye/tick/shoot/damage
 #
 # ダメージ与える所
 #
-# @within function
-#   asset:mob/0038.laser_eye/tick/2.2.shoot
+# @within function asset:mob/0038.laser_eye/tick/shoot/recursive
 
 # ダメージ
     data modify storage api: Argument.Damage set value 3.5f

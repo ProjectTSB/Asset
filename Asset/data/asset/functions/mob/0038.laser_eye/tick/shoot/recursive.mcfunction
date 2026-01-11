@@ -1,10 +1,10 @@
-#> asset:mob/0038.laser_eye/tick/2.2.shoot
+#> asset:mob/0038.laser_eye/tick/shoot/recursive
 #
 # ビーム処理
 #
 # @within function
-#   asset:mob/0038.laser_eye/tick/2.4.attack2
-#   asset:mob/0038.laser_eye/tick/2.2.shoot
+#   asset:mob/0038.laser_eye/tick/shoot/
+#   asset:mob/0038.laser_eye/tick/shoot/recursive
 
 # ここから先は神器側の効果の処理を書く
 # 着弾検知
@@ -19,7 +19,7 @@
     particle minecraft:dust 0.075 0.604 0.063 0.7 ~ ~ ~ 0 0 0 0 0
 
 # 着弾
-    execute if entity @s[tag=Landing] run function asset:mob/0038.laser_eye/tick/2.3.damage
+    execute if entity @s[tag=Landing] run function asset:mob/0038.laser_eye/tick/shoot/damage
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0038.laser_eye/tick/2.2.shoot
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..30] run function asset:mob/0038.laser_eye/tick/shoot/recursive

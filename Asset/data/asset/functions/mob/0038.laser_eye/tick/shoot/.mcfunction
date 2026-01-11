@@ -1,8 +1,8 @@
-#> asset:mob/0038.laser_eye/tick/2.4.attack2
+#> asset:mob/0038.laser_eye/tick/shoot/
 #
 # ビームを撃っちゃう
 #
-# @within function asset:mob/0038.laser_eye/tick/2.1.attack
+# @within function asset:mob/0038.laser_eye/tick/charge
 
 #> Temp
 # @private
@@ -17,7 +17,7 @@
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:mob/0038.laser_eye/tick/2.2.shoot
+    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:mob/0038.laser_eye/tick/shoot/recursive
 
 # 演出
     playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2
