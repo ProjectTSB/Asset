@@ -17,11 +17,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
 
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:mob/0038.laser_eye/tick/shoot/recursive
-
-# 演出
-    playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 1 2
-    stopsound @a hostile minecraft:block.beacon.ambient
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:mob/0038.laser_eye/tick/shoot/shoot
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10,limit=1]
