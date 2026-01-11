@@ -5,7 +5,7 @@
 # @within function asset:mob/0038.laser_eye/tick/shoot/recursive
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 3.5f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
