@@ -18,8 +18,8 @@
     function api:damage/
     function api:damage/reset
 
-# スコアを初期化
-    scoreboard players reset @s 5U.Tick
+# 初期化
+    function asset:effect/0210.fading_speed/init/
 
 # 補正を削除
     function asset:effect/0210.fading_speed/modifier/remove

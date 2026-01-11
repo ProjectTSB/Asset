@@ -21,5 +21,6 @@
 # EffectAssetのendのタイミングでエフェクトをgiveしても上手くいかないため
 # TODO: 治り次第直す
     data modify storage api: Argument.ID set value 210
+    data modify storage api: Argument.Stack set value 5
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
