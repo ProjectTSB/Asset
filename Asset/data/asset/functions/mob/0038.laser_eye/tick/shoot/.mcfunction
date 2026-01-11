@@ -27,4 +27,4 @@
     kill @e[type=marker,tag=SpreadMarker,limit=1]
     tag @s remove Landing
     tag @s remove C.Charge
-    scoreboard players reset @s C.LaserTime
+    scoreboard players reset @s General.Mob.Tick

@@ -5,19 +5,19 @@
 # @within function asset:mob/0038.laser_eye/tick/
 
 # スコアを増やしていく
-    scoreboard players add @s C.LaserTime 1
+    scoreboard players add @s General.Mob.Tick 1
 
 # プレイヤーを見る
-    execute if entity @s[scores={C.LaserTime=..25}] run tp @s ~ ~ ~ facing entity @p
+    execute if entity @s[scores={General.Mob.Tick=..25}] run tp @s ~ ~ ~ facing entity @p
 
 # 一定スコアに達した場合視点固定タグ付与
-    execute if entity @s[scores={C.LaserTime=15}] run tag @s add C.Charge
+    execute if entity @s[scores={General.Mob.Tick=15}] run tag @s add C.Charge
 
 # 演出
-    execute if entity @s[scores={C.LaserTime=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
-    execute if entity @s[scores={C.LaserTime=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
-    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/1
-    execute if entity @s[scores={C.LaserTime=15..}] anchored eyes positioned ^ ^ ^1.4 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/2
+    execute if entity @s[scores={General.Mob.Tick=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
+    execute if entity @s[scores={General.Mob.Tick=15}] run playsound minecraft:block.beacon.ambient hostile @a ~ ~ ~ 2 2
+    execute if entity @s[scores={General.Mob.Tick=15..}] anchored eyes positioned ^ ^ ^1 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/1
+    execute if entity @s[scores={General.Mob.Tick=15..}] anchored eyes positioned ^ ^ ^1.4 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/2
 
 # 攻撃
-    execute if entity @s[scores={C.LaserTime=35}] run function asset:mob/0038.laser_eye/tick/shoot/
+    execute if entity @s[scores={General.Mob.Tick=35}] run function asset:mob/0038.laser_eye/tick/shoot/
