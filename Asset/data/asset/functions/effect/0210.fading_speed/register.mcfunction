@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"移動速度が極端に上昇するが、徐々に低下していく"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 200
+    # data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value 5
 # 効果時間の操作方法 (default = API || "replace")
@@ -37,5 +37,8 @@
 
 # フィールド
     data modify storage asset:effect Field.Amount set value 0.2
+    data modify storage asset:effect Field.Debuff.Duration set value 400
+    data modify storage asset:effect Field.Debuff.Amount set value -0.2
+
     # data modify storage asset:effect Field.UpdateInterval.Max set value 200
     # data modify storage asset:effect Field.UpdateInterval._ set value 200

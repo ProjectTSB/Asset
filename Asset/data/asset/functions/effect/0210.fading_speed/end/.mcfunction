@@ -9,5 +9,7 @@
 
 # 薄れゆく速さ(デバフ)を付与
     data modify storage api: Argument.ID set value 211
+    data modify storage api: Argument.Duration set from storage asset:context this.Debuff.Duration
+    data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Debuff.Amount
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

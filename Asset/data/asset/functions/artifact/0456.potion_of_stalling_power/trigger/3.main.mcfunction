@@ -21,7 +21,14 @@
     execute if data storage api: Return.Effect{ID:210} run function asset:artifact/0456.potion_of_stalling_power/trigger/reuse_damage
 
 # 薄れゆく速さバフを付与
+# 仕様書
+# ((Stack - 1) * Amount)%から始まり、Durationが切れるたびにスタックが1減少し、効果時間が元に戻る
+# スタックが1の状態で時間切れになるとデバフに変化する
     data modify storage api: Argument.ID set value 210
     data modify storage api: Argument.Stack set value 5
+    data modify storage api: Argument.Duration set value 200
+    data modify storage api: Argument.FieldOverride.Amount set value 0.2
+    data modify storage api: Argument.FieldOverride.Debuff.Duration set value 400
+    data modify storage api: Argument.FieldOverride.Debuff.Amount set value -0.2
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
