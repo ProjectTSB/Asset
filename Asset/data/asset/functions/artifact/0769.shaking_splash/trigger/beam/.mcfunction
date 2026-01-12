@@ -24,4 +24,4 @@
     function api:damage/reset
 
 # Tag消し
-    tag @e[type=#lib:living,tag=LandingTarget,distance=..15] remove LandingTarget
+    tag @e[type=#lib:living_without_player,tag=LandingTarget,distance=..15] remove LandingTarget
