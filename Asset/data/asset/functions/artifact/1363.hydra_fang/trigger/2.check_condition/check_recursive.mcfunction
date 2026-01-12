@@ -10,7 +10,7 @@
     scoreboard players remove $AttackCount Temporary 1
 
 # N%を引いたらreturn
-    execute if predicate lib:random_pass_per/10 run return fail
+    execute if predicate lib:random_pass_per/20 run return fail
 
 # まだ$AttackCountが残っているなら再帰
     execute if score $AttackCount Temporary matches 0.. run function asset:artifact/1363.hydra_fang/trigger/2.check_condition/check_recursive
