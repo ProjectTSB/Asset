@@ -29,7 +29,7 @@
     data modify storage api: Argument.Damage set value 1000f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
-    data modify storage api: Argument.BypassModifier set value false
+    data modify storage api: Argument.BypassModifier set value true
     execute as @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,tag=!Uninterferable,distance=..150,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
