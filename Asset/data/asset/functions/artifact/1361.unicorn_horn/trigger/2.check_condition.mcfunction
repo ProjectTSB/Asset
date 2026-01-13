@@ -10,9 +10,6 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
-#> Private
-# @private
-
 # 仕様書
 # 最大ダメージを取得し、攻撃対象の中で「ダメージ量が最大ダメージと一致する対象」をTempTargetとし
 # TempTargetの中で最も近い対象を攻撃対象とする。
