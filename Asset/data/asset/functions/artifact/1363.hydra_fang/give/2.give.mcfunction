@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヒドラの毒牙","color":"#0e8012"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の2%分回復する","color":"white"}','{"text":"猛毒が滴るヒドラの牙","color":"gray"}','{"text":"毒の雫が命を奪い、主を潤す","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の2%分回復する","color":"white"}','{"text":"猛毒が滴る魔獣の牙","color":"gray"}','{"text":"毒の雫が命を奪い、主を潤す","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
