@@ -15,6 +15,7 @@
 # ID (int)
     data modify storage asset:object ID set value 2049
 # フィールド(オプション)
+    data modify storage asset:object Field.Frame set value 5
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.KillTick set value 120
     data modify storage asset:object Field.MobUUID set value -1
