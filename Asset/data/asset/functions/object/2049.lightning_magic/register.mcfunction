@@ -15,7 +15,16 @@
 # ID (int)
     data modify storage asset:object ID set value 2049
 # フィールド(オプション)
+
+# 飛翔体抽象関連
+    data modify storage asset:object Field.Speed set value 1
+    data modify storage asset:object Field.Range set value 250
+    data modify storage asset:object Field.MovePerStep set value 0.3
+# text_displayのフレーム用
     data modify storage asset:object Field.Frame set value 5
+# 何tickで消滅するか？
+    data modify storage asset:object Field.InAirLimitTick set value 80
+    data modify storage asset:object Field.OnGroundTick set value 120
+# ダメージ
     data modify storage asset:object Field.Damage set value 1f
-    data modify storage asset:object Field.KillTick set value 120
     data modify storage asset:object Field.MobUUID set value -1

@@ -7,11 +7,11 @@
 # プレイヤーの方を向く
     tp @s ~ ~ ~ facing entity @p feet
 
-# Tickの値を変更
-    scoreboard players set @s General.Object.Tick 100
-
 # Tagを付与
     tag @s add 2049.OnGround
+
+# 着地判定
+    data modify storage asset:context this.InAirLimitTick set value -1
 
 # PassengersのScaleを変更
     execute on passengers if entity @s[type=text_display] run data modify entity @s transformation.scale set value [1.8f,1.8f,1.8f]
