@@ -18,12 +18,10 @@
     execute unless block ^ ^ ^0.3 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
-# クールタイムを減らす 0以下にはならない
-    scoreboard players remove @s[scores={5U.AttackCT=1..}] 5U.AttackCT 1
-
-# クールタイム中じゃないなら接触時に攻撃
-    execute unless score @s 5U.AttackCT matches 1.. anchored eyes positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[gamemode=!spectator,dx=0] as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/attack
+# 近接攻撃
+    execute store result storage asset:context this.AttackCT._ int 0.9999999999 run data get storage asset:context this.AttackCT._
+    execute if data storage asset:context this.AttackCT{_:0} anchored eyes positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/attack
 
 # 遠距離攻撃
-    execute unless entity @a[gamemode=!spectator,distance=..8] run scoreboard players add @s 5U.Shoot 1
-    execute if entity @s[scores={5U.Shoot=80..}] anchored eyes positioned ^ ^ ^0.25 summon marker run function asset:mob/0210.aurora_eye/tick/summon_bullet
+    execute unless entity @a[gamemode=!spectator,distance=..8] store result storage asset:context this.ShootCT._ int 0.9999999999 run data get storage asset:context this.ShootCT._
+    execute if data storage asset:context this.ShootCT{_:0} anchored eyes positioned ^ ^ ^0.25 summon marker run function asset:mob/0210.aurora_eye/tick/summon_bullet

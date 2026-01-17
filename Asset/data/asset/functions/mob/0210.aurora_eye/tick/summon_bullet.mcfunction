@@ -27,7 +27,7 @@
     function api:object/summon
 
 # リセット
-    scoreboard players reset @e[type=zombie,tag=this,distance=..3,limit=1] 5U.Shoot
+    data modify storage asset:context this.ShootCT._ set from storage asset:context this.ShootCT.Max
     scoreboard players reset $Difficulty Temporary
 
 # 弾召喚用markerを消滅
