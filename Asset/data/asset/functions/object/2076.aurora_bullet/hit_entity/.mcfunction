@@ -6,6 +6,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.Metadata set from storage asset:context this.Metadata
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってオーロラに包まれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'

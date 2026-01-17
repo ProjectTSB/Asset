@@ -11,6 +11,7 @@
 
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage._
+    data modify storage api: Argument.Metadata set from storage asset:context this.Metadata.Melee
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sによってオーロラに包まれ消滅した","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
@@ -18,9 +19,6 @@
     execute as @e[type=zombie,tag=this,distance=..5,sort=nearest,limit=1] run function api:damage/modifier
     function api:damage/
     function api:damage/reset
-
-# 難易度がノーマル以上ならデバフを付与
-    execute if predicate api:global_vars/difficulty/min/2_hard run function asset:mob/0210.aurora_eye/tick/debuff
 
 # クールタイム設定
     data modify storage asset:context this.AttackCT._ set from storage asset:context this.AttackCT.Max
