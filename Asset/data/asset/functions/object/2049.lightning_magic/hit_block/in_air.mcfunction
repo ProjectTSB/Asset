@@ -5,7 +5,7 @@
 # @within function asset:object/2049.lightning_magic/hit_block/
 
 # プレイヤーの方を向く
-    tp @s ~ ~ ~ facing entity @p feet
+    tp @s ~ ~ ~ facing entity @p[tag=!PlayerShouldInvulnerable] feet
 
 # Tagを付与
     tag @s add 2049.OnGround
