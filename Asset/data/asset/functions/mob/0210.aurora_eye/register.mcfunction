@@ -56,6 +56,6 @@
         data modify storage asset:mob Resist.Thunder set value 0.6
 
 # フィールド
-    data modify storage asset:mob Field.Damage._ set value {_:41f,Bullet:25f}
+    data modify storage asset:mob Field.Damage set value {_:41f,Bullet:25f}
     data modify storage asset:mob Field.AttackCT set value {_:20,Max:20}
     data modify storage asset:mob Field.BulletCT set value {_:80f,Max:80}
