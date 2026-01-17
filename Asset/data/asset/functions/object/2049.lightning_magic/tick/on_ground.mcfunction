@@ -27,8 +27,7 @@
     execute if entity @s[tag=2049.Interval] run function asset:object/2049.lightning_magic/tick/thunder
 
 # プレイヤーの方向へ誘導する
-    execute if predicate api:global_vars/difficulty/max/2_hard facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if predicate api:global_vars/difficulty/min/3_blessless facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-500 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # 現在座標がno_collisonかつ真下がブロックの場合、角度を0に固定する
     execute if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-0.15 ~ #lib:no_collision/without_fluid at @s run tp @s ~ ~ ~ ~ 0
