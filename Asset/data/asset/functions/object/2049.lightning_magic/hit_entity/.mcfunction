@@ -4,6 +4,12 @@
 #
 # @within asset:object/alias/2049/hit_entity
 
+# 円柱Libを用いて判定する
+    data modify storage lib: Argument.BoundingCylinder.Radius set value 1.2d
+    data modify storage lib: Argument.BoundingCylinder.Height set value 3.25d
+    data modify storage lib: Argument.BoundingCylinder.Selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..5]"
+    execute positioned ~ ~-0.25 ~ run function lib:bounding_cylinder/
+
 # MobのAttackトリガー起動用Metadata
     data modify storage api: Argument.Metadata set value "371.Debuff"
 
@@ -13,8 +19,11 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] run function api:damage/
+    execute as @a[tag=BoundingCylinder,distance=..5] run function api:damage/
     function api:damage/reset
+
+# リセット
+    tag @a[tag=BoundingCylinder,distance=..5] remove BoundingCylinder
 
 # 消滅
     function asset:object/call.m {method:"kill"}
