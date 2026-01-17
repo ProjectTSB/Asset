@@ -22,9 +22,13 @@
     data modify storage asset:object Field.MovePerStep set value 0.3
 # text_displayのフレーム用
     data modify storage asset:object Field.Frame set value 5
+    data modify storage asset:object Field.FrameInterval set value 2
 # 何tickで消滅するか？
     data modify storage asset:object Field.InAirLimitTick set value 80
-    data modify storage asset:object Field.OnGroundTick set value 120
+# 何回攻撃したら消滅するか？
+    data modify storage asset:object Field.AttackCount set value 4
+# 攻撃のインターバル
+    data modify storage asset:object Field.AttackInterval set value 0
 # ダメージ
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.MobUUID set value -1

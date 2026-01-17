@@ -8,23 +8,15 @@
 # @private
     #declare score_holder $Interval
 
-# 地上での存在時間のデクリメント
-    execute store result storage asset:context this.OnGroundTick int 0.9999999999 run data get storage asset:context this.OnGroundTick
-
 # 一定間隔で実行
-    execute store result score $Interval Temporary run data get storage asset:context this.OnGroundTick
-    scoreboard players operation $Interval Temporary %= $8 Const
-    execute if score $Interval Temporary matches 0 run tag @s add 2049.Interval
-    scoreboard players reset $Interval Temporary
+    execute store result storage asset:context this.AttackInterval int 0.9999999999 run data get storage asset:context this.AttackInterval
+    execute if data storage asset:context this{AttackInterval:0} run function asset:object/2049.lightning_magic/tick/thunder
+    execute if data storage asset:context this{AttackInterval:0} run data modify storage asset:context this.AttackInterval set value 8
 
 # 一定間隔でtext_displayのフレームを反映
-    execute store result score $Interval Temporary run data get storage asset:context this.OnGroundTick
-    scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 on passengers if entity @s[type=text_display] run function asset:object/2049.lightning_magic/tick/text_frame
-    scoreboard players reset $Interval Temporary
-
-# IntervalTagがある時のみ実行
-    execute if entity @s[tag=2049.Interval] run function asset:object/2049.lightning_magic/tick/thunder
+    execute store result storage asset:context this.FrameInterval int 0.9999999999 run data get storage asset:context this.FrameInterval
+    execute if data storage asset:context this{FrameInterval:0} on passengers if entity @s[type=text_display] run function asset:object/2049.lightning_magic/tick/text_frame
+    execute if data storage asset:context this{FrameInterval:0} run data modify storage asset:context this.FrameInterval set value 2
 
 # プレイヤーの方向へ誘導する
     execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~

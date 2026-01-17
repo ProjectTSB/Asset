@@ -17,6 +17,6 @@
     tag @s[tag=2049.Interval] remove 2049.Interval
 
 # 消滅
-# InAirLimitTick == 0 || Tick == 0
+# InAirLimitTick == 0 || AttackCount == 0
     execute if data storage asset:context this{InAirLimitTick:0} run function asset:object/call.m {method:"kill"}
-    execute if data storage asset:context this{OnGroundTick:0} run function asset:object/call.m {method:"kill"}
+    execute if data storage asset:context this{AttackCount:0} run function asset:object/call.m {method:"kill"}
