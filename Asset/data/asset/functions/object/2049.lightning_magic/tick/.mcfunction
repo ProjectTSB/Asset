@@ -18,5 +18,5 @@
 
 # 消滅
 # InAirLimitTick == 0 || Tick == 0
-    execute if data storage asset:context this{InAirLimitTick:0} run kill @s
-    execute if data storage asset:context this{OnGroundTick:0} run kill @s
+    execute if data storage asset:context this{InAirLimitTick:0} run function asset:object/call.m {method:"kill"}
+    execute if data storage asset:context this{OnGroundTick:0} run function asset:object/call.m {method:"kill"}

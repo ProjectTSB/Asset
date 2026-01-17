@@ -17,4 +17,4 @@
     function api:damage/reset
 
 # 消滅
-    function asset:object/call.m {method:kill}
+    function asset:object/call.m {method:"kill"}

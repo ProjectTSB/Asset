@@ -19,7 +19,7 @@
 
 # 一定間隔でtext_displayのフレームを反映
     execute store result score $Interval Temporary run data get storage asset:context this.OnGroundTick
-    scoreboard players operation $Interval Temporary %= $3 Const
+    scoreboard players operation $Interval Temporary %= $2 Const
     execute if score $Interval Temporary matches 0 on passengers if entity @s[type=text_display] run function asset:object/2049.lightning_magic/tick/text_frame
     scoreboard players reset $Interval Temporary
 
