@@ -21,5 +21,5 @@
 # プレイヤーの方向へ誘導する
     execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
 
-# 現在座標がno_collisonかつ真下がブロックの場合、角度を0に固定する
-    execute if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-0.15 ~ #lib:no_collision/without_fluid at @s run tp @s ~ ~ ~ ~ 0
+# 現在座標がno_collison && 真下がブロック && 自身が下を向いている なら角度を0に固定する
+    execute if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-0.15 ~ #lib:no_collision/without_fluid at @s if entity @s[x_rotation=0..90] run tp @s ~ ~ ~ ~ 0
