@@ -13,9 +13,9 @@
     execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
 
 # KillTickを設定 (116 + 難易度値 * 16)
-# ((KillTick - 100) / 8) 回だけ攻撃する
+# (KillTick / 8) 回だけ攻撃する
     scoreboard players operation $Difficulty Temporary *= $16 Const
-    execute store result storage api: Argument.FieldOverride.OnGroundTick int 1 run scoreboard players add $Difficulty Temporary 116
+    execute store result storage api: Argument.FieldOverride.OnGroundTick int 1 run scoreboard players add $Difficulty Temporary 16
 
 # 魔法を召喚
     data modify storage api: Argument.ID set value 2049
