@@ -9,7 +9,7 @@
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Bullet
     data modify storage api: Argument.FieldOverride.Metadata set from storage asset:context this.Metadata.Bullet
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute anchored eyes positioned ^ ^ ^ facing entity @p[gamemode=!spectator,distance=..64] eyes run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^0.25 facing entity @p[gamemode=!spectator,distance=..64] eyes run function api:object/summon
 
 # リセット
     data modify storage asset:context this.BulletCT._ set from storage asset:context this.BulletCT.Max
