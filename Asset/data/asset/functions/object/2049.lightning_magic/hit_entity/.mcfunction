@@ -22,8 +22,8 @@
     execute as @a[tag=BoundingCylinder,distance=..5] run function api:damage/
     function api:damage/reset
 
+# ヒットしたなら消滅
+    execute if entity @a[tag=BoundingCylinder,distance=..5,limit=1] run function asset:object/call.m {method:"kill"}
+
 # リセット
     tag @a[tag=BoundingCylinder,distance=..5] remove BoundingCylinder
-
-# 消滅
-    function asset:object/call.m {method:"kill"}
