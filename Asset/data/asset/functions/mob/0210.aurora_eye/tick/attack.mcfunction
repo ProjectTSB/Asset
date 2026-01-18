@@ -10,7 +10,7 @@
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.5 2 0
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage._
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Melee
     data modify storage api: Argument.Metadata set from storage asset:context this.Metadata.Melee
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
