@@ -25,7 +25,7 @@
     execute if score $Random Temporary matches 2 run data modify storage api: Argument.ElementType set value "Water"
     execute if score $Random Temporary matches 3 run data modify storage api: Argument.ElementType set value "Thunder"
 
-# 敵の耐性のみを貫通するダメージ
+# 敵の属性耐性のみを無視するダメージ
     data modify storage api: Argument.Damage set value 1000f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
