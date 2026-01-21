@@ -12,7 +12,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # ターゲット特定
-    execute at @a if score @s 2034.TargetID = @p UserID run tag @p add Target
+    execute at @a[gamemode=!spectator,distance=..64] if score @s 2034.TargetID = @p UserID run tag @p add Target
 
 # ターゲットに追尾する
     execute if entity @s[scores={General.Object.Tick=3..35}] facing entity @p[tag=Target] eyes positioned ^ ^ ^-120 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~

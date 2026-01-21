@@ -20,5 +20,5 @@
     execute if score @s General.Mob.Tick matches 0.. run function asset:mob/0175.queen_bee/tick/skill_active
 
 # 時計ライクの吸い込みを実装。これがないと外からハメられる
-    execute positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] as @a[distance=15.5..30] at @s facing entity @e[type=marker,tag=4V.SpawnMarker,distance=..30,sort=nearest,limit=1] eyes run tp @s ^ ^ ^2.0
-    execute positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] as @a[distance=30..100] at @s facing entity @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] eyes positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100] rotated ~ 0 run tp @s ^ ^ ^2
+    execute positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] as @a[gamemode=!spectator,distance=15.5..30] at @s facing entity @e[type=marker,tag=4V.SpawnMarker,distance=..30,sort=nearest,limit=1] eyes run tp @s ^ ^ ^2.0
+    execute positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] as @a[gamemode=!spectator,distance=30..100] at @s facing entity @e[type=marker,tag=4V.SpawnMarker,distance=..100,sort=nearest,limit=1] eyes positioned as @e[type=marker,tag=4V.SpawnMarker,distance=..100] rotated ~ 0 run tp @s ^ ^ ^2

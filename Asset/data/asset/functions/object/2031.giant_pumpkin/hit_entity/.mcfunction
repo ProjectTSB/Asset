@@ -9,3 +9,6 @@
 
 # 高速回転
     execute if entity @s[tag=2031.HighSpeedSpinning] run function asset:object/call.m {method:kill}
+
+# DXYZ タグを削除
+    tag @a[tag=DXYZ,distance=..5] remove DXYZ

@@ -7,5 +7,5 @@
 # @within asset:mob/0411.behemoth/remove/
 
 # ターゲット用タグ
-    tag @a remove BF.MainTarget
-    tag @a remove BF.FlareTarget
+    tag @a[tag=BF.MainTarget] remove BF.MainTarget
+    tag @a[tag=BF.FlareTarget] remove BF.FlareTarget

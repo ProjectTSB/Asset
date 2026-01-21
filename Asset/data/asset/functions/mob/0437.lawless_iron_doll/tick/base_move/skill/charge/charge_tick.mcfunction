@@ -26,7 +26,7 @@
         execute as @a[tag=C5.TargetEntity,distance=..16] run function api:damage/
     # リセット
         function api:damage/reset
-        tag @a[distance=..16] remove C5.TargetEntity
+        tag @a[tag=C5.TargetEntity] remove C5.TargetEntity
 
 # 近くのプレイヤーの方にゆっくりと向き直る
     execute facing entity @p[gamemode=!spectator,distance=..256] feet positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0

@@ -12,10 +12,10 @@
         execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/pause_all
         execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 15 as @e[type=item_display,tag=RW.ModelRoot.Target,distance=..8,sort=nearest,limit=1] run function animated_java:tultaria/animations/attack_magic_1_left/tween {to_frame:0,duration:1}
     # 属性チェンジ可能であれば属性を選択
-        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 20 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
+        execute if score @s[tag=RW.CanElementChange,tag=!RW.InAction] General.Mob.Tick matches 20 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/1004.tultaria/tick/base_move/element_select/
 
 # プレイヤーが周囲にいたらスキル選択
-    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 40 if entity @p[distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/
+    execute if score @s[tag=!RW.InAction] General.Mob.Tick matches 40 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/1004.tultaria/tick/base_move/skill_select/
 
 # プレイヤーが周囲にいないのに時間がきてしまった場合。スコアを戻す
     execute if score @s General.Mob.Tick matches 40.. unless entity @p[gamemode=!spectator,distance=..100] run scoreboard players set @s General.Mob.Tick 0

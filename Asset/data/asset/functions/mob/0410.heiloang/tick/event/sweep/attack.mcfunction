@@ -26,4 +26,4 @@
 
 # # 終了
 #     scoreboard players reset @s BE.Dummy
-#     tag @a remove BE.Temp.HitFlame
+#     tag @a[tag=BE.Temp.HitFlame] remove BE.Temp.HitFlame

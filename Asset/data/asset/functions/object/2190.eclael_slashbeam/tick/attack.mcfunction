@@ -14,4 +14,4 @@
     function api:damage/reset
 
 # 終了
-    tag @a remove 2190.Hit
+    tag @a[tag=2190.Hit] remove 2190.Hit
