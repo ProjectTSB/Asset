@@ -20,4 +20,4 @@
     execute unless data storage asset:context Items.mainhand.id run function api:artifact/replace/from_id
 
 # リセット
-    scoreboard players reset @s LE.OldRotationY
+    execute unless data storage asset:context Items.mainhand.id run scoreboard players reset @s LE.OldRotationY
