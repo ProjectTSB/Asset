@@ -20,7 +20,7 @@
 
 # 近接攻撃
     execute store result storage asset:context this.AttackCT._ int 0.9999999999 run data get storage asset:context this.AttackCT._
-    execute if data storage asset:context this.AttackCT{_:0} anchored eyes positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/attack
+    execute if data storage asset:context this.AttackCT{_:0} anchored eyes positioned ^ ^ ^ positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0210.aurora_eye/tick/attack
 
 # 遠距離攻撃
     execute unless entity @a[gamemode=!spectator,distance=..8] store result storage asset:context this.BulletCT._ int 0.9999999999 run data get storage asset:context this.BulletCT._
