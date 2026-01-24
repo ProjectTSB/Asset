@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"清涼感","color":"aqua"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"水属性与ダメージが上昇するが","color":"white"}','{"text":"スタックが一定値になるとバフ効果が解除され、移動速度が低下する。","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"水属性与ダメージが上昇するが","color":"white"}','{"text":"スタックが一定値になるとバフ効果が解除され、固定ダメージを受ける","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
