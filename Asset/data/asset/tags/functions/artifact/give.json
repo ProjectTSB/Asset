@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1366.shaved_ice_melon/give/1.trigger",
+        "asset:artifact/1365.shaved_ice_blue_hawaii/give/1.trigger",
         "asset:artifact/1364.shaved_ice_strawberry/give/1.trigger",
         "asset:artifact/1140.over_pulse_booster/give/1.trigger",
         "asset:artifact/1139.over_pulse_legframe/give/1.trigger",

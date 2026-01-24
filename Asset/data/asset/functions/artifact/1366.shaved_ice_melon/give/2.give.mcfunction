@@ -1,19 +1,19 @@
-#> asset:artifact/1364.shaved_ice_strawberry/give/2.give
+#> asset:artifact/1366.shaved_ice_melon/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1364.shaved_ice_strawberry/give/1.trigger
+# @within function asset:artifact/1366.shaved_ice_melon/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 1364
+    data modify storage asset:artifact ID set value 1366
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:cookie"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"かき氷(イチゴ)","color":"#ff457d"}'
+    data modify storage asset:artifact Name set value '{"text":"かき氷(メロン)","color":"#33ff52"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"translate":"体力を5回復し、%1$sを10秒間得る","color":"white","with":[{"text":"水攻撃+6%","color":"aqua"}]}','{"translate":"-%1$s水攻撃バフは最大2スタックまで重複する","color":"white","with":[{"text":"\\u0003","font":"space"}]}','{"translate":"-%1$s3スタックになるとバフが解除され、10の固定ダメージを受ける","color":"white","with":[{"text":"\\u0003","font":"space"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
