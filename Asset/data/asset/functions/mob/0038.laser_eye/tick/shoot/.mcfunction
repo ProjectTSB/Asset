@@ -17,7 +17,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
 
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:mob/0038.laser_eye/tick/shoot/shoot
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet anchored eyes positioned ^ ^ ^1.4 run function asset:mob/0038.laser_eye/tick/shoot/shoot
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10,limit=1]
