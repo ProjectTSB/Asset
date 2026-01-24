@@ -13,10 +13,6 @@
     data modify storage api: Argument.ID set value 210
     function api:entity/mob/effect/get/from_id
 
-# 薄れゆく速さデバフ(ID:211)があるかチェックする
-    execute unless data storage api: Return.Effect run data modify storage api: Argument.ID set value 211
-    execute unless data storage api: Return.Effect run function api:entity/mob/effect/get/from_id
-
 # バフがあるならダメージ
     execute if data storage api: Return.Effect{ID:210} run function asset:artifact/0456.potion_of_stalling_power/trigger/reuse_damage
 
