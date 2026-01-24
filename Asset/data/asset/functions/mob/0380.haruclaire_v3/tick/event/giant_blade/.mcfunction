@@ -17,11 +17,11 @@
         execute if score @s AK.EventTimer matches 1..10 at @s positioned ^ ^0.1 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if entity @s[tag=!AK.Temp.FixedRotation] if score @s AK.EventTimer matches 1..58 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if entity @s[tag=!AK.Temp.FixedRotation] if score @s AK.EventTimer matches 95..100 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
-        execute if score @s AK.EventTimer matches 121..126 at @s if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 123..126 at @s if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 125..126 at @s if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 121..126 at @s if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 123..126 at @s if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 125..126 at @s if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.2 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 128..135 at @s positioned ^ ^0.1 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 141.. at @s if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 141.. at @s if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 # 演出
     execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
     execute if score @s AK.EventTimer matches 20 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
