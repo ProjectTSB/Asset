@@ -20,4 +20,4 @@
     execute if entity @s[scores={General.Mob.Tick=15..}] anchored eyes positioned ^ ^ ^1.4 rotated ~ ~90 run function asset:mob/0038.laser_eye/tick/vfx/2
 
 # 攻撃
-    execute if entity @s[scores={General.Mob.Tick=35}] run function asset:mob/0038.laser_eye/tick/shoot/
+    execute if entity @s[scores={General.Mob.Tick=35..}] run function asset:mob/0038.laser_eye/tick/shoot/
