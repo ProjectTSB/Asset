@@ -8,7 +8,7 @@
     scoreboard players add @s General.Mob.Tick 1
 
 # プレイヤーを見る
-    execute if entity @s[scores={General.Mob.Tick=..25}] run tp @s ~ ~ ~ facing entity @p[tag=!PlayerShouldInvulnerable,distance=..9] eyes
+    execute if entity @s[scores={General.Mob.Tick=..25}] anchored eyes facing entity @p[tag=!PlayerShouldInvulnerable,distance=..9] eyes anchored feet run tp @s ~ ~ ~ ~ ~
 
 # 一定スコアに達した場合視点固定タグ付与
     execute if entity @s[scores={General.Mob.Tick=15}] run tag @s add C.Charge
