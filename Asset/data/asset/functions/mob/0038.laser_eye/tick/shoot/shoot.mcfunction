@@ -9,7 +9,7 @@
     stopsound @a hostile minecraft:block.beacon.ambient
 
 # レーザー発射
-    function asset:mob/0038.laser_eye/tick/shoot/recursive
+    execute positioned ^ ^ ^1.4 run function asset:mob/0038.laser_eye/tick/shoot/recursive
 
 # レーザー演出
     function asset:mob/0038.laser_eye/tick/shoot/summon_laser
