@@ -8,22 +8,33 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-    execute if entity @s[tag=CanUsed] unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
-    execute if entity @s[tag=CanUsed] unless predicate api:area/is_breakable run tag @s remove CanUsed
+# CanUsedでないならreturn
+    execute if entity @s[tag=!CanUsed] run return fail
 
-    execute if entity @s[tag=CanUsed] if block ~ ~ ~ chest run scoreboard players set @s Temporary 1
-    execute if entity @s[tag=CanUsed] if block ~ ~ ~ trapped_chest run scoreboard players set @s Temporary 1
-    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tellraw @s [{"text":"","italic":false,"color":"red"},{"text":"足元が"},{"translate":"block.minecraft.chest"},{"text":"か"},{"translate":"block.minecraft.trapped_chest"},{"text":"である必要があります。"}]
-    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tag @s remove CanUsed
-    scoreboard players reset @s Temporary
+# サバイバルエリアか？
+    execute unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
+    execute unless predicate api:area/is_breakable run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# 足元がチェスト・トラップチェストか？
+    execute unless block ~ ~ ~ chest unless block ~ ~ ~ trapped_chest run data modify storage asset:temp Fail set value true
+    execute if data storage asset:temp {Fail:true} run tellraw @s [{"text":"","italic":false,"color":"red"},{"text":"足元が"},{"translate":"block.minecraft.chest"},{"text":"か"},{"translate":"block.minecraft.trapped_chest"},{"text":"である必要があります。"}]
+    execute if data storage asset:temp {Fail:true} run tag @s remove CanUsed
+    data remove storage asset:temp Fail
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # チェストの中身を取得し、中にチェスト・シュルカーボックスがあれば回収できない
-    execute if entity @s[tag=CanUsed] run data modify storage asset:temp block set from block ~ ~ ~
-    execute if entity @s[tag=CanUsed] if function asset:artifact/0290.carefully_collector/trigger/2.check_condition/ban_items run tellraw @s [{"translate":"block.minecraft.chest","color":"red"},{"text":"または"},{"translate":"block.minecraft.shulker_box"},{"text":"が中に入っています"}]
-    execute if entity @s[tag=CanUsed] if function asset:artifact/0290.carefully_collector/trigger/2.check_condition/ban_items run tag @s remove CanUsed
+# 失敗時、asset:temp blockを削除
+    data modify storage asset:temp block set from block ~ ~ ~
+    execute if function asset:artifact/0290.carefully_collector/trigger/2.check_condition/ban_items run data modify storage asset:temp Fail set value true
+    execute if data storage asset:temp {Fail:true} run tellraw @s [{"translate":"block.minecraft.chest","color":"red"},{"text":"または"},{"translate":"block.minecraft.shulker_box"},{"text":"が中に入っています"}]
+    execute if data storage asset:temp {Fail:true} run data remove storage asset:temp block
+    execute if data storage asset:temp {Fail:true} run tag @s remove CanUsed
+    data remove storage asset:temp Fail
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0290.carefully_collector/trigger/3.main
+    function asset:artifact/0290.carefully_collector/trigger/3.main
 
 # リセット
     data remove storage asset:temp block
