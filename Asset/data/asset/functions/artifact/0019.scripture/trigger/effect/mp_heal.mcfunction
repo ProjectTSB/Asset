@@ -5,5 +5,5 @@
 # @within function asset:artifact/0019.scripture/trigger/3.main
 
 # MP回復
-    data modify storage api: Argument.Fluctuation set value 50
+    data modify storage api: Argument.Fluctuation set value 40
     function api:mp/fluctuation
