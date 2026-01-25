@@ -20,11 +20,11 @@
     execute if predicate lib:random_pass_per/30 run function asset:artifact/0441.awaited_opportunity/trigger/message/
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run particle minecraft:block redstone_block ~ ~1 ~ 0.1 0.1 0.1 1 10
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run particle minecraft:block redstone_block ~ ~1 ~ 0.1 0.1 0.1 1 10
 
 # ダメージ
     data modify storage api: Argument.Damage set value 9.0f
     data modify storage api: Argument.AttackType set value "Physical"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset

@@ -22,7 +22,7 @@
     execute if entity @a[tag=1052.Owner,distance=..3] run effect give @s slowness 1 127 true
 
 # 敵が近くにいたら、射撃用意、リロード中は無視する
-    execute unless score @s 1052.ActionTime matches ..-1 if entity @a[tag=1052.Owner,distance=..8] if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..14] run function asset:object/1052.maid/tick/action
+    execute unless score @s 1052.ActionTime matches ..-1 if entity @a[tag=1052.Owner,distance=..8] if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..14] run function asset:object/1052.maid/tick/action
 
 # クールダウン
     execute if score @s 1052.ActionTime matches ..-1 run scoreboard players add @s 1052.ActionTime 1
