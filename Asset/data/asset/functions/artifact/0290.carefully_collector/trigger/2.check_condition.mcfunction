@@ -8,13 +8,13 @@
     function asset:artifact/common/check_condition/auto
 # 他にアイテム等確認する場合はここに書く
 
-    tellraw @s[gamemode=!survival,gamemode=!creative] [{"text": "サバイバルエリアでのみ使用可能です"}]
-    tag @s[gamemode=!survival,gamemode=!creative] remove CanUsed
+    execute if entity @s[tag=CanUsed] unless predicate api:area/is_breakable run function lib:message/artifact/can_not_use_here
+    execute if entity @s[tag=CanUsed] unless predicate api:area/is_breakable run tag @s remove CanUsed
 
-    execute if block ~ ~ ~ chest run scoreboard players set @s Temporary 1
-    execute if block ~ ~ ~ trapped_chest run scoreboard players set @s Temporary 1
-    execute unless score @s Temporary matches 1 run tellraw @s ["足元が",{"translate":"block.minecraft.chest"},"か",{"translate":"block.minecraft.trapped_chest"},"である必要があります"]
-    execute unless score @s Temporary matches 1 run tag @s remove CanUsed
+    execute if entity @s[tag=CanUsed] if block ~ ~ ~ chest run scoreboard players set @s Temporary 1
+    execute if entity @s[tag=CanUsed] if block ~ ~ ~ trapped_chest run scoreboard players set @s Temporary 1
+    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tellraw @s ["足元が",{"translate":"block.minecraft.chest"},"か",{"translate":"block.minecraft.trapped_chest"},"である必要があります"]
+    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tag @s remove CanUsed
     scoreboard players reset @s Temporary
 
 # チェストの中身を取得し、中にチェスト・シュルカーボックスがあれば回収できない
