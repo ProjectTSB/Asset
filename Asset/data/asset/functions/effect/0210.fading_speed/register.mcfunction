@@ -39,6 +39,3 @@
     data modify storage asset:effect Field.Amount set value 0.2
     data modify storage asset:effect Field.Debuff.Duration set value 400
     data modify storage asset:effect Field.Debuff.Amount set value -0.2
-
-    # data modify storage asset:effect Field.UpdateInterval.Max set value 200
-    # data modify storage asset:effect Field.UpdateInterval._ set value 200
