@@ -13,7 +13,7 @@
 
     execute if entity @s[tag=CanUsed] if block ~ ~ ~ chest run scoreboard players set @s Temporary 1
     execute if entity @s[tag=CanUsed] if block ~ ~ ~ trapped_chest run scoreboard players set @s Temporary 1
-    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tellraw @s ["足元が",{"translate":"block.minecraft.chest"},"か",{"translate":"block.minecraft.trapped_chest"},"である必要があります"]
+    execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tellraw @s [{"text":"","italic":false,"color":"red"},{"text":"足元が"},{"translate":"block.minecraft.chest"},{"text":"か"},{"translate":"block.minecraft.trapped_chest"},{"text":"である必要があります。"}]
     execute if entity @s[tag=CanUsed] unless score @s Temporary matches 1 run tag @s remove CanUsed
     scoreboard players reset @s Temporary
 
