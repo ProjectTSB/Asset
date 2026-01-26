@@ -27,7 +27,7 @@
 # 失敗時、asset:temp blockを削除
     data modify storage asset:temp block set from block ~ ~ ~
     execute if function asset:artifact/0290.carefully_collector/trigger/2.check_condition/is_nested run data modify storage asset:temp Fail set value true
-    execute if data storage asset:temp {Fail:true} run tellraw @s [{"translate":"block.minecraft.chest","color":"red"},{"text":"または"},{"translate":"block.minecraft.shulker_box"},{"text":"が中に入っています"}]
+    execute if data storage asset:temp {Fail:true} run tellraw @s [{"text":"アイテムの入った","color":"red"},{"translate":"block.minecraft.chest"},{"text":"などが含まれています。"}]
     execute if data storage asset:temp {Fail:true} run data remove storage asset:temp block
     execute if data storage asset:temp {Fail:true} run tag @s remove CanUsed
     data remove storage asset:temp Fail
