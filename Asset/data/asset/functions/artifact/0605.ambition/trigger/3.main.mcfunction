@@ -20,7 +20,7 @@
     scoreboard players operation @s Temporary < $MaxDamage Temporary
 
 # 演出
-    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] positioned ~ ~1 ~ summon marker run function asset:artifact/0605.ambition/trigger/vfx/
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] positioned ~ ~1 ~ run function asset:artifact/0605.ambition/trigger/vfx/
 
 # ダメージ
     execute store result storage api: Argument.Damage float 1 run scoreboard players get @s Temporary
