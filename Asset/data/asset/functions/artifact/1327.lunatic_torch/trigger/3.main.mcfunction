@@ -15,6 +15,13 @@
 # 3. 自身と対象にバフ付与
 # 4. リセット
 
+# 演出
+    playsound entity.blaze.shoot player @a ~ ~ ~ 0.7 1
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 1.3
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 1.4
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 1.5
+    execute rotated ~ 0 anchored eyes positioned ^0.5 ^0.5 ^ run function asset:artifact/1327.lunatic_torch/trigger/vfx
+
 # 自身にtagを付与
     tag @s add 10V.BuffTarget
 
@@ -24,10 +31,6 @@
 # まだ対象になりうるプレイヤーがいれば、バフ対象を2人探す
     execute if entity @a[tag=10V.SearchTarget,tag=!10V.BuffTarget,distance=..20] run function asset:artifact/1327.lunatic_torch/trigger/find_target
     execute if entity @a[tag=10V.SearchTarget,tag=!10V.BuffTarget,distance=..20] run function asset:artifact/1327.lunatic_torch/trigger/find_target
-
-# 演出
-    playsound block.fire.ambient player @a ~ ~ ~ 1 1 0
-    execute as @a[tag=10V.BuffTarget,distance=..20] at @s run function asset:artifact/1327.lunatic_torch/trigger/vfx
 
 # バフを付与
     # 調整班用
