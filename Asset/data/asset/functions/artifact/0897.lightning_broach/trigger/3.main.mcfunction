@@ -20,7 +20,7 @@
     scoreboard players operation $Multi.Angel Temporary *= $Count Temporary
     scoreboard players add $Multi.Angel Temporary 10
 # 各自ダメージ
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10,sort=random,limit=3] run function asset:artifact/0897.lightning_broach/trigger/damage
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..160,sort=random,limit=3] run function asset:artifact/0897.lightning_broach/trigger/damage
 
 # リセット
     scoreboard players reset $Count Temporary

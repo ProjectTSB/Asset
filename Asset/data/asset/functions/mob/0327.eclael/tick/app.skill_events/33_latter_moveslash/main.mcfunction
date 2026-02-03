@@ -18,8 +18,8 @@
         execute if score @s 93.AnimationTimer matches 16..20 at @s positioned ^ ^ ^-0.2 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     # 演出
         execute if score @s 93.AnimationTimer matches 5 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
-        execute if score @s 93.AnimationTimer matches 20 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 0.7
-        execute if score @s 93.AnimationTimer matches 47 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 20 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 0.7
+        execute if score @s 93.AnimationTimer matches 47 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 68 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 68 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
         execute if score @s 93.AnimationTimer matches 68 run particle flash ~ ~1 ~ 0 0 0 0 1
@@ -43,7 +43,7 @@
         execute if score @s 93.AnimationTimer matches 126..135 at @s positioned ^ ^ ^-0.07 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     # 演出
         execute if score @s 93.AnimationTimer matches 95 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
-        execute if score @s 93.AnimationTimer matches 97 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 97 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 100 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 100 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
         execute if score @s 93.AnimationTimer matches 100 run particle flash ^ ^1 ^2 0 0 0 0 1

@@ -19,7 +19,7 @@
 # 開始
     execute if score @s 93.AnimationTimer matches 34 run function asset:mob/0327.eclael/tick/app.skill_events/34_latter_field_slash/animation_0
     # 演出
-        execute if score @s 93.AnimationTimer matches 38 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 38 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 100 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 119 run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 119 run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8

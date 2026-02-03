@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"百分一剣","color":"blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"生ける者全てを平等に斬ることが出来る剣","color":"blue"}','{"text":"攻撃時、対象に、","color":"blue"}','{"text":"最大体力の99%の割合ダメージを与える","color":"blue","bold":true}','{"text":"天使には1%分のダメージを与える(最大5000)","color":"blue"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象の最大体力に比例したダメージを与える","color":"white"}','{"translate":"-%1$s通常：最大体力の%2$s","with":[{"text":"\\u0002","font":"space"},{"text":"99%"}]}','{"translate":"-%1$s天使：最大体力の%2$s(最大5000)","with":[{"text":"\\u0002","font":"space"},{"text":"1%"}]}','{"text":"生ける者全てを平等に斬ることが出来る剣","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -50,13 +50,13 @@
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
 # グローバルクールダウン (int) (オプション)
-    data modify storage asset:artifact SpecialCooldown set value 800
+    data modify storage asset:artifact SpecialCooldown set value 700
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableCooldownMessage set value
 # MP不足による使用不可のメッセージを非表示にするか否か (boolean) (オプション)
     # data modify storage asset:artifact DisableMPMessage set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Rumor"]
+    data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value
 
