@@ -5,7 +5,7 @@
 # @within function asset:artifact/0003.humanity/trigger/2.check_condition
 
 # 演出
-    title @a title {"text":"YOU DIED","color":"red"}
+    title @s title {"text":"YOU DIED","color":"red"}
     playsound block.beacon.power_select player @s ~ ~ ~ 1 0 1
 
 # 致死量のダメージを受ける

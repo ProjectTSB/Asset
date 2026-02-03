@@ -5,11 +5,16 @@
 # @within function asset:artifact/0664.soul_fire_armor/attack/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {CDMessage:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {CDMessage:true,BelieveMessage:true}
     function asset:artifact/common/check_condition/head
+
+# IsDoT:trueならCanUsedを削除
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+
 # 装備をすべて身に着けているかチェックする
-    data modify storage api: Argument.ID set value 232
-    function api:entity/mob/effect/get/from_id
-    execute unless data storage api: Return.Effect{Stack:4} run tag @s remove CanUsed
+    execute if entity @s[tag=CanUsed] run data modify storage api: Argument.ID set value 232
+    execute if entity @s[tag=CanUsed] run function api:entity/mob/effect/get/from_id
+    execute if entity @s[tag=CanUsed] unless data storage api: Return.Effect{Stack:4} run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0664.soul_fire_armor/attack/3.main

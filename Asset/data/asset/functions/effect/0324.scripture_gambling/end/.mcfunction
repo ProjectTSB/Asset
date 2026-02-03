@@ -4,18 +4,8 @@
 #
 # @within function asset:effect/0324.scripture_gambling/_/end
 
-#> private
-# @private
-    #declare tag Success
-
-# N%の確率で成功する
-    execute if predicate lib:random_pass_per/10 run tag @s add Success
-
 # 成功した場合
-    execute if entity @s[tag=Success] run function asset:effect/0324.scripture_gambling/end/success
+    execute if data storage asset:context this{Success:true} run function asset:effect/0324.scripture_gambling/end/success
 
 # 失敗した場合
-    execute if entity @s[tag=!Success] run function asset:effect/0324.scripture_gambling/end/failure
-
-# リセット
-    tag @s remove Success
+    execute unless data storage asset:context this{Success:true} run function asset:effect/0324.scripture_gambling/end/failure
