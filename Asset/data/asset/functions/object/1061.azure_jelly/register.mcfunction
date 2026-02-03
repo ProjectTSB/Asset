@@ -23,5 +23,5 @@
     data modify storage asset:object Field.AttackCD.Current set value 0
     data modify storage asset:object Field.AttackCD._ set value 50
     data modify storage asset:object Field.SpeedMultiplier set value 1
-    data modify storage asset:object Field.Damage set value 1
+    data modify storage asset:object Field.Damage set value {Min:1,Max:10}
     data modify storage asset:object Field.UserID set value -1

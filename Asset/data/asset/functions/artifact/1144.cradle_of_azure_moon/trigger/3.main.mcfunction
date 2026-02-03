@@ -11,6 +11,6 @@
 
 # Object召喚
     data modify storage api: Argument.ID set value 1061
-    data modify storage api: Argument.FieldOverride.Damage set value 1000
+    data modify storage api: Argument.FieldOverride.Damage set value {Min:600,Max:800}
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes rotated ~ 0 positioned ^ ^-1 ^1.5 run function api:object/summon
