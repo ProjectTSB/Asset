@@ -9,9 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 没収されたアイテムの個数を取得
-    execute store result score @s Temporary run function api:lost_items/get_length
-
 # 没収されたアイテム * 11の値を設定
     scoreboard players operation @s Temporary *= $11 Const
 
