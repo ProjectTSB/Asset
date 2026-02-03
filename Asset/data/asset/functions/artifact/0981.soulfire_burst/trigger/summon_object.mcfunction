@@ -21,7 +21,7 @@
 # マーカーの方を向いて召喚
     data modify storage api: Argument.ID set value 1083
     execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 150..195
-    execute store result storage api: Argument.FieldOverride.TargetID int 1 positioned ^ ^ ^20 run scoreboard players get @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] MobUUID
+    execute store result storage api: Argument.FieldOverride.TargetID int 1 positioned ^ ^ ^10 run scoreboard players get @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] MobUUID
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..32,limit=1] eyes run function api:object/summon

@@ -6,4 +6,4 @@
 
 # 演出
     playsound minecraft:item.book.put player @a ~ ~ ~ 1 1
-    particle minecraft:squid_ink ~ ~1 ~ 0.7 0.5 0.7 0.1 10
+    particle minecraft:large_smoke ~ ~1 ~ 0.7 0.5 0.7 0.1 5

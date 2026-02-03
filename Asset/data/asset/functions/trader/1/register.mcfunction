@@ -60,6 +60,11 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {id:"minecraft:armor_stand",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:armor_stand",Count:1b,tag:{EntityTag:{ShowArms:1b},display:{Name:'{"text":"腕付き防具立て","color":"gold","italic":false}'}}}
 
+# 取引 エンダーチェスト
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:4b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:ender_chest",Count:1b}
+
 # 取引 シュルカーボックス
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/high",Count:16b}
@@ -69,3 +74,13 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:name_tag",Count:1b}
+
+# 取引 イカスミ
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:ink_sac",Count:8b}
+
+# 取引 アメジストの欠片
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:amethyst_shard",Count:8b}
