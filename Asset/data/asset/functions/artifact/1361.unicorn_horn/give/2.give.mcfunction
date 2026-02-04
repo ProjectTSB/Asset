@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ユニコーンのツノ","color":"#d787ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象の中で最もダメージを与えた1体に","color":"white"}','{"text":"属性耐性を貫通するランダムな属性のダメージを与える","color":"white"}','{"text":"聖域に棲まう一角の幻獣のツノ","color":"gray"}','{"text":"満ちた神秘の魔力が、敵の守りを容易く貫く","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象の中で最もダメージを与えた1体に","color":"white"}','{"text":"属性耐性を無視するランダムな属性のダメージを与える","color":"white"}','{"text":"聖域に棲まう一角の幻獣のツノ","color":"gray"}','{"text":"満ちた神秘の魔力が、敵の守りを容易く貫く","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
