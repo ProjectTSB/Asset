@@ -14,30 +14,30 @@
 # 最大ダメージを取得し、攻撃対象の中で「ダメージ量が最大ダメージと一致する対象」をTempTargetとし
 # TempTargetの中で最も近い対象を攻撃対象とする。
 
-# 要求ダメージ設定(10倍)
-    execute if entity @s[tag=CanUsed] run scoreboard players set $RequireDamage Temporary 16000
+# CanUsedじゃなければreturn
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# IsDoT:trueならreturn
+    execute if data storage asset:context Attack{IsDoT:true} run return run tag @s remove CanUsed
+
+# Victimがいなければreturn
+    execute unless entity @e[type=#lib:living_without_player,tag=Victim,distance=..150,limit=1] run return run tag @s remove CanUsed
 
 # 最大ダメージが要求ダメージ以上か？
-    execute if entity @s[tag=CanUsed] store result score $MaxDamage Temporary run data get storage asset:context Attack.Amount 10
-    execute if entity @s[tag=CanUsed] unless score $MaxDamage Temporary >= $RequireDamage Temporary run tag @s remove CanUsed
-
-    # execute if entity @s[tag=CanUsed] run say 要求ダメージok
+    scoreboard players set $RequireDamage Temporary 16000
+    execute store result score $MaxDamage Temporary run data get storage asset:context Attack.Amount 10
+    execute unless score $MaxDamage Temporary >= $RequireDamage Temporary run return run function asset:artifact/1361.unicorn_horn/trigger/2.check_condition/reset
 
 # 最大ダメージを与えた対象を探す
-    execute if entity @s[tag=CanUsed] run data modify storage asset:temp _.To set from storage asset:context Attack.To
-    execute if entity @s[tag=CanUsed] run data modify storage asset:temp _.Amounts set from storage asset:context Attack.Amounts
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1361.unicorn_horn/trigger/2.check_condition/search_max_damage_target
+    data modify storage asset:temp _.To set from storage asset:context Attack.To
+    data modify storage asset:temp _.Amounts set from storage asset:context Attack.Amounts
+    function asset:artifact/1361.unicorn_horn/trigger/2.check_condition/search_max_damage_target
 
-# この段階でTempTargetがいなければCanUsedを削除
-    execute if entity @s[tag=CanUsed] unless entity @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,distance=..150] run tag @s remove CanUsed
+# この段階でTempTargetがいなければreturn
+    execute unless entity @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,distance=..150,limit=1] run return run function asset:artifact/1361.unicorn_horn/trigger/2.check_condition/reset
 
-    # execute if entity @s[tag=CanUsed] run say TempTarget ok
-
-# CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1361.unicorn_horn/trigger/3.main
+# 3.main.mcfunctionを実行する
+    function asset:artifact/1361.unicorn_horn/trigger/3.main
 
 # リセット
-    data remove storage asset:temp _
-    scoreboard players reset $MaxDamage Temporary
-    scoreboard players reset $RequireDamage Temporary
-    tag @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,distance=..150] remove TempTarget
+    function asset:artifact/1361.unicorn_horn/trigger/2.check_condition/reset
