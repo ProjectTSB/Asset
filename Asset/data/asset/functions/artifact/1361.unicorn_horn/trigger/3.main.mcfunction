@@ -11,12 +11,16 @@
 
 #> Private
 # @private
+    #declare tag Target
     #declare score_holder $Random
 
 # check_conditionで判定したTempTargetの中で最も近い対象を攻撃対象とする
 
+# Victimのうちランダムな対象1体を指定
+    tag @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=random,limit=1] add Target
+
 # 演出
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,tag=!Uninterferable,distance=..150,sort=nearest,limit=1] at @s anchored eyes positioned ^ ^ ^ run function asset:artifact/1361.unicorn_horn/trigger/vfx
+    execute as @e[type=#lib:living_without_player,tag=Target,distance=..64,sort=nearest,limit=1] at @s anchored eyes positioned ^ ^ ^ run function asset:artifact/1361.unicorn_horn/trigger/vfx
 
 # 属性をランダムに指定する
     execute store result score $Random Temporary run random value 0..3
@@ -30,8 +34,9 @@
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
     data modify storage api: Argument.BypassModifier set value true
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=TempTarget,tag=!Uninterferable,distance=..150,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Target,distance=..64,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
 # リセット
     scoreboard players reset $Random Temporary
+    tag @e[type=#lib:living_without_player,tag=Target,distance=..64,sort=nearest,limit=1] remove Target
