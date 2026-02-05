@@ -12,14 +12,19 @@
 # @private
     #declare score_holder $MPPer
 
-# DoT:trueならCanUsedを削除
-    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+# CanUsedでないならreturn
+    execute if entity @s[tag=!CanUsed] run return fail
 
-# MPが90%未満ならCanUsedを削除
-    execute if entity @s[tag=CanUsed] run function api:entity/player/get_mp_per
-    execute if entity @s[tag=CanUsed] store result score $MPPer Temporary run data get storage api: Return.MPPer 100
-    execute if entity @s[tag=CanUsed] unless score $MPPer Temporary matches 90.. run tag @s remove CanUsed
+# DoT:trueならreturn
+    execute if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# MPが90%未満ならreturn
+    function api:entity/player/get_mp_per
+    execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
+    execute unless score $MPPer Temporary matches 90.. run tag @s remove CanUsed
     scoreboard players reset $MPPer Temporary
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1327.lunatic_torch/trigger/3.main
+    function asset:artifact/1327.lunatic_torch/trigger/3.main
