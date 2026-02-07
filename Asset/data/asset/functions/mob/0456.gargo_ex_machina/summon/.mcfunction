@@ -5,4 +5,4 @@
 # @within asset:mob/alias/456/summon
 
 # 元となるEntityを召喚する
-    summon slime ~ ~ ~{Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","BE.EntityRoot"],Size:7,NoAI:1b,Silent:1b,DeathLootTable:"empty"}
+    summon slime ~ ~ ~ {Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","CO.EntityRoot"],Size:0,NoAI:1b,Silent:1b,DeathLootTable:"empty"}
