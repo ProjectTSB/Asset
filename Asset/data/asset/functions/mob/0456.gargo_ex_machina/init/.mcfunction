@@ -23,9 +23,12 @@
     # じゃまにならないよう移動
         execute at @e[type=marker,tag=CO.CenterPosition] run tp @s ~ ~10 ~
     # スコア初期化
-        # scoreboard players set @s CO.Phase 0
+        scoreboard players set @s CO.EventTimer 0
     # 移動
         # execute at @s run tp @s ^ ^ ^ ~ 0
+
+# 登場モーション再生
+    tag @s add CO.Skill.Activate
 
 # デバッグ
     # scoreboard players set @s CO.Phase 1

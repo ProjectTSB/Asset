@@ -8,9 +8,14 @@
     #declare tag CO.ModelRoot AJモデルのRootEntity
     #declare tag CO.Hitbox 当たり判定
     #declare tag CO.CenterPosition 中心点
+    # - スキル
+    #declare tag CO.Skill.Activate 起動
     # - オブジェクト用
     #declare tag CO.Object
     # - 自動生成
     #declare function animated_java:gargo_ex_machina/summon
+    #declare function animated_java:gargo_ex_machina/animations/pause_all
     #declare function animated_java:gargo_ex_machina/animations/idle/tween
+    #declare function animated_java:gargo_ex_machina/animations/activation/tween
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween
     #declare function animated_java:gargo_ex_machina/remove/all

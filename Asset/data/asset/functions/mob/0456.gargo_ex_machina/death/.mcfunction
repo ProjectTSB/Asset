@@ -33,3 +33,6 @@
 # オブジェクト消去
     execute as @e[tag=CO.Object,distance=..160] on passengers run kill @s
     kill @e[tag=CO.Object,distance=..160]
+
+# 石像移動
+    function asset:mob/0456.gargo_ex_machina/death/clone_statue
