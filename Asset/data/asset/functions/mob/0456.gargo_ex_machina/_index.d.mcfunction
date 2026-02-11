@@ -12,6 +12,7 @@
     #declare tag CO.Skill.Activate 起動
     # - オブジェクト用
     #declare tag CO.Object
+    #declare tag CO.Shadow
     # - 自動生成
     #declare function animated_java:gargo_ex_machina/summon
     #declare function animated_java:gargo_ex_machina/animations/pause_all
