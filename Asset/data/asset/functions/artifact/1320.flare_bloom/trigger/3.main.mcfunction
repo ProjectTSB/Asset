@@ -16,4 +16,4 @@
 # Object召喚
     data modify storage api: Argument.ID set value 1153
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute anchored eyes rotated ~ 0 positioned ^ ^-1 ^1.5 run function api:object/summon
+    execute rotated ~ 0 anchored eyes positioned ^-1.8 ^ ^1.1 run function api:object/summon

@@ -1,4 +1,4 @@
-#> asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
+#> asset:object/1153.flame_butterfly/tick/attack/vfx
 #
 #
 #

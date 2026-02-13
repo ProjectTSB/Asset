@@ -10,8 +10,12 @@
     #declare score_holder $HealthPer
 
 # 演出
-    execute rotated ~90 25 run function asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
-    execute rotated ~90 -25 run function asset:object/1153.flame_butterfly/tick/attack/attack/vfx/2
+    playsound entity.blaze.shoot neutral @a ~ ~ ~ 0.6 1.5
+    playsound entity.blaze.shoot neutral @a ~ ~ ~ 0.6 1.6
+    playsound block.fire.ambient neutral @a ~ ~ ~ 0.8 1
+    playsound block.lava.extinguish neutral @a ~ ~ ~ 0.8 1.2
+    execute rotated ~90 25 run function asset:object/1153.flame_butterfly/tick/attack/vfx
+    execute rotated ~90 -25 run function asset:object/1153.flame_butterfly/tick/attack/vfx
 
 # 自身の体力割合を取得
     execute as @p[tag=1153.Owner] run function api:entity/player/get_health_per
