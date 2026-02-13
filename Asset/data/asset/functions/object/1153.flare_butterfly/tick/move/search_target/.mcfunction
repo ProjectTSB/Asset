@@ -10,4 +10,4 @@
     data modify storage asset:context this.SearchInterval._ set from storage asset:context this.SearchInterval.Max
 
 # 召喚者の位置を基準に、壁を貫通してない近くの敵を探す
-    execute positioned as @p[tag=1153.Owner] as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest] facing entity @s feet run function asset:object/1153.flare_butterfly/tick/move/search_target/recursive
+    execute as @p[tag=1153.Owner] at @s anchored eyes positioned ^ ^ ^ as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..12,sort=nearest] facing entity @s eyes run function asset:object/1153.flare_butterfly/tick/move/search_target/recursive
