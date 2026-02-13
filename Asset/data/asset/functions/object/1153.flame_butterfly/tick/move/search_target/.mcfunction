@@ -11,5 +11,3 @@
 
 # 壁を貫通してない近くの敵を探す
     execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest] facing entity @s feet run function asset:object/1153.flame_butterfly/tick/move/search_target/recursive
-
-# say SearchTarget

@@ -9,5 +9,3 @@
 
 # 攻撃
     execute if data storage asset:context this.AttackDelay{_:0} run function asset:object/1153.flame_butterfly/tick/attack/attack
-
-say a

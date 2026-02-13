@@ -19,7 +19,7 @@
 # フィールド(オプション)
 
 # 移動速度
-    data modify storage asset:object Field.ChaseSpeed set value 0.4
+    data modify storage asset:object Field.ChaseSpeed set value 0.6
 
 # 負荷軽減用のインターバル
     data modify storage asset:object Field.SearchInterval._ set value 0
@@ -36,3 +36,6 @@
 # 攻撃のクールダウン
     data modify storage asset:object Field.AttackCD._ set value 0
     data modify storage asset:object Field.AttackCD.Max set value 25
+
+# 攻撃モードか？
+    data modify storage asset:object Field.IsAttackMode set value false

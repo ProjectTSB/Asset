@@ -9,5 +9,3 @@
 
 # 攻撃前のディレイ設定
     data modify storage asset:context this.AttackDelay._ set from storage asset:context this.AttackDelay.Max
-
-say b

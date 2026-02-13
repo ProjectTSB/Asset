@@ -18,7 +18,7 @@
 # Speedの半分を引数とする
     $execute unless data storage asset:temp 1153{Success:true} run data modify storage asset:temp 1153.Speed set value $(ChaseSpeed)
     execute unless data storage asset:temp 1153{Success:true} store result storage asset:temp 1153.Speed float 0.005 run data get storage asset:temp 1061.Speed 100
-    $execute unless data storage asset:temp 1153{Success:true} at @s run function asset:object/1153.flame_butterfly/tick/move/with_collision.m {Speed:$(ChaseSpeed)}
+    execute unless data storage asset:temp 1153{Success:true} at @s run function asset:object/1153.flame_butterfly/tick/move/with_collision.m with storage asset:temp 1153
 
 # リセット
     data remove storage asset:temp 1153

@@ -16,6 +16,9 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1153.Owner
     scoreboard players reset $UserID Temporary
 
+# debug Ownerがいないなら消滅
+    execute unless entity @p[tag=1153.Owner] run function asset:object/1153.flame_butterfly/tick/kill
+
 # 攻撃のCD
     function asset:object/1153.flame_butterfly/tick/attack/cooldown/
 
@@ -32,4 +35,4 @@
     tag @p[tag=1153.Owner] remove 1153.Owner
 
 # 消滅処理
-    execute if score @s General.Object.Tick matches 400.. run function asset:object/1153.flame_butterfly/tick/kill
+    #execute if score @s General.Object.Tick matches 400.. run function asset:object/1153.flame_butterfly/tick/kill
