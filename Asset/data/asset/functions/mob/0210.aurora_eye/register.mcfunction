@@ -56,4 +56,8 @@
         data modify storage asset:mob Resist.Thunder set value 0.6
 
 # フィールド
-    data modify storage asset:mob Field.BulletDamage set value 25f
+    data modify storage asset:mob Field.Damage set value {Melee:41f,Bullet:25f}
+    data modify storage asset:mob Field.AttackCT set value {_:20,Max:20}
+    data modify storage asset:mob Field.BulletCT set value {_:80,Max:80}
+    data modify storage asset:mob Field.Metadata.Melee set value {AuroraEye:"Melee"}
+    data modify storage asset:mob Field.Metadata.Bullet set value {AuroraEye:"Bullet"}

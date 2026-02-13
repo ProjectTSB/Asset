@@ -99,6 +99,7 @@
     execute if score @s BG.EventTimer matches 297 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
     execute if score @s BG.EventTimer matches 360 run function asset:mob/0412.tiamat/tick/util/end_invulnerable
     execute if score @s BG.EventTimer matches 560 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
+    execute if score @s BG.EventTimer matches 880.. run function asset:mob/0412.tiamat/tick/util/end_invulnerable
 
 # 終了
     execute if score @s BG.EventTimer matches 880.. run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/end
