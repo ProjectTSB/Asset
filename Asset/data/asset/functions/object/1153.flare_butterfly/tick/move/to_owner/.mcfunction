@@ -2,11 +2,9 @@
 #
 #
 #
-# @within function asset:object/1153.flare_butterfly/tick/move/
-
-#> Private
-# @private
-    #declare tag 1153.TempMarker
+# @within function
+#   asset:object/1153.flare_butterfly/tick/move/
+#   asset:object/1153.flare_butterfly/tick/move/summon_move/
 
 # Ownerの位置基準でMarkerを召喚し、そこへ追尾する感じで移動する
 

@@ -16,8 +16,11 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1153.Owner
     scoreboard players reset $UserID Temporary
 
-# 移動
-    function asset:object/1153.flare_butterfly/tick/move/
+# 召喚時の演出
+    execute if data storage asset:context this{SummonMoveEnded:false} run function asset:object/1153.flare_butterfly/tick/move/summon_move/
+
+# 移動・追尾・攻撃
+    execute if data storage asset:context this{SummonMoveEnded:true} run function asset:object/1153.flare_butterfly/tick/move/
 
 # 攻撃のCD
     function asset:object/1153.flare_butterfly/tick/attack/cooldown/

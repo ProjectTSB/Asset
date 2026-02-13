@@ -9,6 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 演出
+    playsound entity.blaze.shoot player @a ~ ~ ~ 1.5 0.8
+    playsound entity.blaze.shoot player @a ~ ~ ~ 1.5 1.3
+    playsound entity.witch.throw player @a ~ ~ ~ 1.5 0.5
+
 # ダメージ設定
     data modify storage api: Argument.FieldOverride.Damage.Default set value 500
     execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default
@@ -16,4 +21,4 @@
 # Object召喚
     data modify storage api: Argument.ID set value 1153
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute rotated ~ 0 anchored eyes positioned ^-1.8 ^ ^1.1 run function api:object/summon
+    execute rotated ~ 0 anchored eyes positioned ^-1.8 ^8 ^-5 run function api:object/summon

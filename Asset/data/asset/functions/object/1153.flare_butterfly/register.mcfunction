@@ -29,6 +29,10 @@
     data modify storage asset:object Field.ChaseTick._ set value 0
     data modify storage asset:object Field.ChaseTick.Max set value 60
 
+# 召喚演出用
+    data modify storage asset:object Field.SummonMoveTick set value 30
+    data modify storage asset:object Field.SummonMoveEnded set value false
+
 # 攻撃発生までのディレイ
     data modify storage asset:object Field.AttackDelay._ set value 0
     data modify storage asset:object Field.AttackDelay.Max set value 8
