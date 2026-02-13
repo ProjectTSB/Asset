@@ -21,4 +21,4 @@
     execute if data storage asset:context this.TargetMobUUID run function asset:object/1153.flare_butterfly/tick/move/chase_enemy/m with storage asset:context this
 
 # TargetMobUUIDがなければOwnerの方へ移動
-    execute unless data storage asset:context this.TargetMobUUID run function asset:object/1153.flare_butterfly/tick/move/to_owner
+    execute unless data storage asset:context this.TargetMobUUID run function asset:object/1153.flare_butterfly/tick/move/to_owner/
