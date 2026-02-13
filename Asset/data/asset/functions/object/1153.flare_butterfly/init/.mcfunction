@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/1153/init
 
-# AttackDelay初期化
-    # data modify storage asset:context this.AttackDelay._ set from storage asset:context this.AttackDelay.Max
+# AttackCD初期化
+    data modify storage asset:context this.AttackCD._ set from storage asset:context this.AttackCD.Max
