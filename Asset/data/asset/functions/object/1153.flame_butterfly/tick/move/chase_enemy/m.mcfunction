@@ -8,10 +8,6 @@
 #  - 0になったらその敵への追跡を諦める
 #  - 0になる前に接触すれば攻撃する
 
-    #tellraw @a {"storage":"asset:context","nbt":"this.IsAttackMode"}
-    #tellraw @a {"storage":"asset:context","nbt":"this.TargetMobUUID"}
-   tellraw @a {"storage":"asset:context","nbt":"this.AttackDelay"}
-
 # 追跡時間
     execute store result storage asset:context this.ChaseTick._ int 0.9999999999 run data get storage asset:context this.ChaseTick._
     execute if data storage asset:context this.ChaseTick{_:0} run return run function asset:object/1153.flame_butterfly/tick/move/common/reset

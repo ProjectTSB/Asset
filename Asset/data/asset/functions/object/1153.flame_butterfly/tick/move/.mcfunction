@@ -16,7 +16,6 @@
 # TargetMobUUIDがある && Ownerの周囲にTargetがいない ならTargetMobUUIDを削除
     execute if data storage asset:context this.TargetMobUUID unless function asset:object/1153.flame_butterfly/predicate/near_target/neutral_near/ run function asset:object/1153.flame_butterfly/tick/move/common/reset
 
-# tellraw @a {"storage":"asset:context","nbt":"this.TargetMobUUID"}
 
 # TargetMobUUIDがあれば対象へ追尾する
     execute if data storage asset:context this.TargetMobUUID run function asset:object/1153.flame_butterfly/tick/move/chase_enemy/m with storage asset:context this

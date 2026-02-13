@@ -30,5 +30,4 @@
     scoreboard players reset $UserID Temporary
     scoreboard players reset $HealthPer Temporary
     function asset:object/1153.flame_butterfly/tick/attack/cooldown/reset
-    # function asset:object/1153.flame_butterfly/tick/move/common/reset
     data modify storage asset:context this.IsAttackMode set value false
