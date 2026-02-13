@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:object/1153.flame_butterfly/register
+    function asset:object/1153.flare_butterfly/register
