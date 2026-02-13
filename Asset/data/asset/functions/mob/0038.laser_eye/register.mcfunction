@@ -54,3 +54,9 @@
         data modify storage asset:mob Resist.Water set value 1.4
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.7
+
+# ダメージ
+    data modify storage asset:mob Field.Damage set value 3.5
+
+# 存在時間
+    data modify storage asset:mob Field.LifeTime set value 400

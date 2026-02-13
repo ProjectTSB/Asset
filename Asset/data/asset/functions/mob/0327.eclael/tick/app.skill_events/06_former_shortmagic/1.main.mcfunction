@@ -27,8 +27,8 @@
     execute if score @s 93.AnimationTimer matches 28 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=nearest,limit=1] positioned ^ ^ ^ run function asset:mob/0327.eclael/tick/app.skill_events/06_former_shortmagic/4.1.2.attack_1
     execute if score @s 93.AnimationTimer matches 31 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=nearest,limit=1] positioned ^5 ^ ^ run function asset:mob/0327.eclael/tick/app.skill_events/06_former_shortmagic/4.1.2.attack_1
 # 演出
-    execute if score @s 93.AnimationTimer matches 14 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
-    execute if score @s 93.AnimationTimer matches 45 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
+    execute if score @s 93.AnimationTimer matches 14 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
+    execute if score @s 93.AnimationTimer matches 45 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 0.7
     execute if score @s 93.AnimationTimer matches 55 at @e[type=area_effect_cloud,tag=93.Aec.AttackPos,distance=..80,sort=nearest,limit=1] run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 1 1
 
 # 終了

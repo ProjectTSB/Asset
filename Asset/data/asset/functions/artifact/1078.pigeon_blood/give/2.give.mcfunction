@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ピジョンブラッド","color":"#ffbfd4"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"- 使用時、%2$s%1$s%2$sを得る。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"- %2$s%1$sの確率で、ダメージが%1$s%3$s%1$s増加する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"},{"text":"50%","color":"aqua"}]}','{"translate":"- 自身または周囲のプレイヤーが%2$s%1$s%2$sを持っているとき、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"\\uE003\\uF006 ダメージが%1$s%2$s%1$s増加する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"}]}','{"translate":"- 周囲のプレイヤーが%2$s%1$s%2$sを持っているとき、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"text":"\\uE003\\uF006 追撃が発生する。"}','{"text":"深き血の如き光を放つ、紅き少女の力の結晶。","color":"gray"}','{"text":"主の心の赴くまま、気まぐれに敵を斬り裂く。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"- 使用時、%2$s%1$s%2$sを得る。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"紅","color":"#ffbfd4"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"- %2$s%1$sの確率で、ダメージが%1$s%3$s%1$s増加する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"},{"text":"50%","color":"aqua"}]}','{"translate":"- 自身か周囲20mのプレイヤーが%2$s%1$s%2$s状態なら、","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"translate":"\\uE003\\uF006 ダメージが%1$s%2$s%1$s増加する。","with":[{"text":"\\u0002","font":"space"},{"text":"20%","color":"aqua"}]}','{"text":"- 自身を除く周囲20mのプレイヤーが"}','{"translate":"\\uE003\\uF006 %2$s%1$s%2$s状態なら追撃が発生する。","with":[{"translate":"[共鳴・%s]","color":"#ffdd66","with":[{"text":"蒼","color":"#a1faf5"}]},{"text":"\\u0002","font":"space"}]}','{"text":"深き血の如き光を放つ、紅き少女の力の結晶。","color":"gray"}','{"text":"主の心の赴くまま、気まぐれに敵を斬り裂く。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [380,700]
+    data modify storage asset:artifact AttackInfo.Damage set value "380-700 / 100x3"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
