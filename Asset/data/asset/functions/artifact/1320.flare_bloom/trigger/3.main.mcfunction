@@ -10,6 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
+    execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ rotated ~90 25 run function asset:artifact/1320.flare_bloom/trigger/vfx
+    execute anchored eyes positioned ^ ^ ^ positioned ~ ~-0.3 ~ rotated ~90 -25 run function asset:artifact/1320.flare_bloom/trigger/vfx
     playsound entity.blaze.shoot player @a ~ ~ ~ 1.5 0.8
     playsound entity.blaze.shoot player @a ~ ~ ~ 1.5 1.3
     playsound entity.witch.throw player @a ~ ~ ~ 1.5 0.5
