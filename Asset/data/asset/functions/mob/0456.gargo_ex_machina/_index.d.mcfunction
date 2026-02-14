@@ -13,6 +13,10 @@
     #declare tag CO.Skill.SwordAttack 剣叩きつけ
     #declare tag CO.Skill.SwordAttack.Charge 剣叩きつけ
     #declare tag CO.Skill.SwordAttack.Attack 剣叩きつけ
+    #declare tag CO.Skill.HalfBeam 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.IsRight 半面焼きビーム
     # - オブジェクト用
     #declare tag CO.Object
     #declare tag CO.Shadow
@@ -44,4 +48,9 @@
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/pause
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/resume
+    #declare function animated_java:gargo_ex_machina/animations/beam_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_end/tween
     #declare function animated_java:gargo_ex_machina/remove/all

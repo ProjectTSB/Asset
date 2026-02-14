@@ -1,0 +1,25 @@
+#> asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
+#
+# 半面焼きビーム
+#
+# @within asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_attack
+
+# ヒット判定
+    # 直線範囲
+        tag @a[tag=DXYZ] remove DXYZ
+        data modify storage lib: args.dx set value 40
+        data modify storage lib: args.dy set value 5
+        data modify storage lib: args.dz set value 20
+        data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+        execute rotated ~ 0 positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
+
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.HalfBeam
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    function api:damage/modifier
+    execute as @a[tag=DXYZ] run function api:damage/
+    function api:damage/reset
+
+# 終了
+    tag @a[tag=DXYZ] remove DXYZ
