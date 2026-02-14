@@ -13,16 +13,17 @@
         execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/beam_attack_left/tween {duration:1, to_frame: 1}
         execute if score @s CO.EventTimer matches 60 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/beam_end/tween {duration:1, to_frame: 1}
     # 効果音
-        execute if score @s CO.EventTimer matches 1 run playsound block.piston.extend hostile @a ~ ~ ~ 2 0.7
-        execute if score @s CO.EventTimer matches 10 run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 15 run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 41 run playsound block.piston.extend hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 60 run playsound block.piston.extend hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 94 run playsound block.piston.extend hostile @a ~ ~ ~ 2 0.8
+        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 1 run playsound ui.stonecutter.take_result hostile @a ~ ~ ~ 2 0.5
+        execute if score @s CO.EventTimer matches 10 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 15 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 41 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 60 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     # 攻撃
-        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 rotated ~90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
-        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 rotated ~-90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
+        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^-25 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
+        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^25 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
     # 攻撃演出
+        execute if score @s CO.EventTimer matches 11 positioned ~ ~15 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/summon_laser_start
         execute if score @s CO.EventTimer matches 11..18 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.5
         execute if score @s CO.EventTimer matches 11..18 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.6
         execute if score @s CO.EventTimer matches 23 run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack_effect_start
