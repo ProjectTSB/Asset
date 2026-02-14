@@ -32,5 +32,5 @@
     tag @p[tag=1153.Owner] remove 1153.Owner
 
 # 消滅処理
-    scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches 400.. run function asset:object/1153.flare_butterfly/tick/kill
+    execute store result storage asset:context this.Tick int 0.9999999999 run data get storage asset:context this.Tick
+    execute if data storage asset:context this{Tick:0} run function asset:object/1153.flare_butterfly/tick/kill
