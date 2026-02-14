@@ -8,7 +8,7 @@
     # execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0410.heiloang/tick/debug/interrupt
 
 # 全アニメーション停止
-    function asset:mob/0410.heiloang/tick/debug/reset
+    # function asset:mob/0410.heiloang/tick/debug/reset
 
 # イベント実行
     scoreboard players set @s BE.EventTimer 0

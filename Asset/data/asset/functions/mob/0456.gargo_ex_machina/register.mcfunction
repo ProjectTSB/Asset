@@ -34,4 +34,7 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
-    # data modify storage asset:mob Field.myValue set value 
+    data modify storage asset:mob Field.FirstPos.X set value 527.5
+    data modify storage asset:mob Field.FirstPos.Y set value 91.0
+    data modify storage asset:mob Field.FirstPos.Z set value 836.0
+    data modify storage asset:mob Field.Damage.SwordAttack set value 50.0

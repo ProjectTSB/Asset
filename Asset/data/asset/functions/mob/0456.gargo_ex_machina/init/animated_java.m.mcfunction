@@ -5,7 +5,8 @@
 # @within asset:mob/0456.gargo_ex_machina/init/
 
 # AjModelの召喚
-    execute positioned 527.5 91.0 836.0 rotated 180 ~ run function animated_java:gargo_ex_machina/summon {args: {animation: 'activation'}}
+    # execute positioned 527.5 91.0 836.0 rotated 180 ~ run function animated_java:gargo_ex_machina/summon {args: {animation: 'activation'}}
+    $execute positioned $(X) $(Y) $(Z) rotated 180 ~ run function animated_java:gargo_ex_machina/summon {args: {animation: 'activation'}}
     # AjModelのパーツに以下処理を実行する
         execute as @e[type=item_display,tag=CO.ModelRoot] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
         execute as @e[type=item_display,tag=CO.ModelRoot] on passengers if entity @s[type=item_display] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}

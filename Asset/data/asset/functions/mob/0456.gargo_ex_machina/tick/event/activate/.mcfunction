@@ -31,6 +31,7 @@
         execute if score @s CO.EventTimer matches 212 as @e[type=item_display,tag=CO.Shadow] run function asset:mob/0456.gargo_ex_machina/tick/util/show_shadow
     # 演出
         execute if score @s CO.EventTimer matches 231 run particle explosion ~ ~1 ~ 4 0.1 4 0 30
+        execute if score @s CO.EventTimer matches 231 run particle campfire_cosy_smoke ~ ~1 ~ 4 0.1 4 0.05 100
     # 効果音
         execute if score @s CO.EventTimer matches 185 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
         execute if score @s CO.EventTimer matches 207 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.7

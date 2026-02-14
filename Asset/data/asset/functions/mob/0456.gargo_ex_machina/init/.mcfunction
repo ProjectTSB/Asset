@@ -19,7 +19,7 @@
         execute as @e[type=marker,tag=CO.CenterPosition] at @s run tp @s ~ ~ ~ 0 0
     # NBT設定
     # Aj関連初期化
-        function asset:mob/0456.gargo_ex_machina/init/animated_java
+        function asset:mob/0456.gargo_ex_machina/init/animated_java.m with storage asset:context this.FirstPos
     # じゃまにならないよう移動
         execute at @e[type=marker,tag=CO.CenterPosition] run tp @s ~ ~10 ~
     # スコア初期化
