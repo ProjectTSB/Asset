@@ -6,3 +6,6 @@
 
 # AttackCD初期化
     data modify storage asset:context this.AttackCD._ set from storage asset:context this.AttackCD.Max
+
+# 演出の関係で真下を向いておく
+    tp @s ~ ~ ~ ~ 90
