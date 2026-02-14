@@ -11,7 +11,12 @@
         data modify storage lib: args.dy set value 5
         data modify storage lib: args.dz set value 20
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-        execute rotated ~ 0 positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
+        execute rotated ~30 0 positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
+        data modify storage lib: args.dx set value 40
+        data modify storage lib: args.dy set value 5
+        data modify storage lib: args.dz set value 20
+        data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
+        execute rotated ~-30 0 positioned ^ ^ ^20 run function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.HalfBeam

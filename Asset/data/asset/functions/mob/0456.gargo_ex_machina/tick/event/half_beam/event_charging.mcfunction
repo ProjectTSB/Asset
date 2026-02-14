@@ -13,8 +13,8 @@
     # モデルを合わせる
         execute as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
     # 予告
-        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 5 rotated ~90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction
-        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 5 rotated ~-90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction
+        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 55 rotated ~90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction
+        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 55 rotated ~-90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction
     # 効果音
         execute if score @s CO.EventTimer matches 1..100 positioned ~ ~15 ~ run particle end_rod ~ ~ ~ 2 2 2 0.05 1
 
