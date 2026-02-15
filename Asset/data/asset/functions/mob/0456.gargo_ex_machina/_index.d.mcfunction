@@ -17,10 +17,15 @@
     #declare tag CO.Skill.HalfBeam.Charge 半面焼きビーム
     #declare tag CO.Skill.HalfBeam.Attack 半面焼きビーム
     #declare tag CO.Skill.HalfBeam.IsRight 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.IsRight 半面焼きビーム
     # - オブジェクト用
     #declare tag CO.Object
     #declare tag CO.Shadow
     # - 汎用
+    #declare tag CO.ScapeSheep
     #declare tag CO.MainTarget
     #declare tag CO.Aec.Target
     #declare tag 
@@ -42,7 +47,9 @@
     #declare function animated_java:gargo_ex_machina/animations/pause_all
     #declare function animated_java:gargo_ex_machina/animations/idle/tween
     #declare function animated_java:gargo_ex_machina/animations/activation/tween
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/resume
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/pause
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_start/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_charge/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/tween
@@ -53,4 +60,8 @@
     #declare function animated_java:gargo_ex_machina/animations/beam_attack_right/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_attack_left/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_end/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_left/tween
     #declare function animated_java:gargo_ex_machina/remove/all

@@ -26,9 +26,9 @@
         execute rotated ~120 0 run function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージ
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SwordAttack
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.SwordAttack.Amount
+    data modify storage api: Argument.AttackType set from storage asset:context this.Damage.SwordAttack.Type
+    data modify storage api: Argument.ElementType set from storage asset:context this.Damage.SwordAttack.Element
     function api:damage/modifier
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset

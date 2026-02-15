@@ -15,16 +15,28 @@
     # 影
         execute if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.Shadow] run function asset:mob/0456.gargo_ex_machina/tick/util/hide_shadow
     # 効果音
-        execute if score @s CO.EventTimer matches 60 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.contract hostile @a ~ ~ ~ 2 1.2
-        execute if score @s CO.EventTimer matches 118 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.extend hostile @a ~ ~ ~ 2 1.2
-        execute if score @s CO.EventTimer matches 125 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.extend hostile @a ~ ~ ~ 2 1.2
-        execute if score @s CO.EventTimer matches 155 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.beacon.activate hostile @a ~ ~ ~ 2 2.0
-        
-# 起動
+        execute if score @s CO.EventTimer matches 60 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 118 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 125 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 155 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+    # ひつじ演出
+        execute if score @s CO.EventTimer matches 40..80 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^0.3
+        execute if score @s CO.EventTimer matches 90..100 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^ ~9 ~
+        execute if score @s CO.EventTimer matches 90..100 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^ ~9 ~
+        execute if score @s CO.EventTimer matches 101..140 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle angry_villager ~ ~1 ~ 1 1 1 0.1 1
+        execute if score @s CO.EventTimer matches 145..230 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle firework ~ ~1 ~ 1 1 1 0.1 1
+        execute if score @s CO.EventTimer matches 145..180 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^0.06 ^
+        execute if score @s CO.EventTimer matches 195..230 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle trial_spawner_detection ~ ~1 ~ 1 1 1 0.0 3
+        execute if score @s CO.EventTimer matches 195 run playsound entity.goat.screaming.hurt hostile @a ~ ~ ~ 2 0.7
+        execute if score @s CO.EventTimer matches 231 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^-2.16 ^
+
+# 移動
     # アニメーション再生
         execute if score @s CO.EventTimer matches 185 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween {duration:1, to_frame: 1}
+        execute if score @s CO.EventTimer matches 245 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/move_to_field_fast/pause
+        execute if score @s CO.EventTimer matches 285 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/move_to_field_fast/resume
     # フィールドに移動
-        execute if score @s CO.EventTimer matches 210 positioned as @e[type=marker,tag=CO.CenterPosition,distance=..100,limit=1] run tp @s ~ ~-0.5 ~ 180 0 
+        execute if score @s CO.EventTimer matches 144 positioned as @e[type=sheep,tag=CO.ScapeSheep] run tp @s ~ ~ ~ 180 0 
     # モデルを合わせる
         execute if score @s CO.EventTimer matches 211.. as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
     # 影
@@ -33,13 +45,25 @@
         execute if score @s CO.EventTimer matches 231 run particle explosion ~ ~1 ~ 4 0.1 4 0 30
         execute if score @s CO.EventTimer matches 231 run particle campfire_cosy_smoke ~ ~1 ~ 4 0.1 4 0.05 100
     # 効果音
-        execute if score @s CO.EventTimer matches 185 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 207 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.7
+        execute if score @s CO.EventTimer matches 185 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 207 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 231 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.7
         execute if score @s CO.EventTimer matches 231 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.6
         execute if score @s CO.EventTimer matches 231 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.5
-        execute if score @s CO.EventTimer matches 261 run playsound block.piston.extend hostile @a ~ ~ ~ 2 0.8
-        execute if score @s CO.EventTimer matches 285 run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
+        execute if score @s CO.EventTimer matches 231 run playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.8
+        execute if score @s CO.EventTimer matches 231 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~2
+        execute if score @s CO.EventTimer matches 232 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-4
+        execute if score @s CO.EventTimer matches 233 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~4
+        execute if score @s CO.EventTimer matches 234 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-4
+        execute if score @s CO.EventTimer matches 235 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~3
+        execute if score @s CO.EventTimer matches 236 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-3
+        execute if score @s CO.EventTimer matches 237 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~3
+        execute if score @s CO.EventTimer matches 238 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-1
+        execute if score @s CO.EventTimer matches 301 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if score @s CO.EventTimer matches 325 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+    # ボス名変更
+        execute if score @s CO.EventTimer matches 231 run kill @e[type=sheep,tag=CO.ScapeSheep]
+        execute if score @s CO.EventTimer matches 231 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name
 
 # 終了
-    execute if score @s CO.EventTimer matches 291.. run function asset:mob/0456.gargo_ex_machina/tick/event/activate/end
+    execute if score @s CO.EventTimer matches 331.. run function asset:mob/0456.gargo_ex_machina/tick/event/activate/end

@@ -1,22 +1,22 @@
-#> asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack
+#> asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack
 #
 # 半面焼きビーム
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_attack
+# @within asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_attack
 
 # ヒット判定
     # 直線範囲
         tag @a[tag=DXYZ] remove DXYZ
-        data modify storage lib: args.dx set value 30
+        data modify storage lib: args.dx set value 20
         data modify storage lib: args.dy set value 5
-        data modify storage lib: args.dz set value 50
+        data modify storage lib: args.dz set value 40
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-        execute rotated ~20 0 positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 30
+        execute rotated ~30 0 positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+        data modify storage lib: args.dx set value 20
         data modify storage lib: args.dy set value 5
-        data modify storage lib: args.dz set value 50
+        data modify storage lib: args.dz set value 40
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
-        execute rotated ~-20 0 positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
+        execute rotated ~-30 0 positioned ^ ^ ^ run function lib:rotatable_dxyz/m with storage lib: args
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.HalfBeam.Amount

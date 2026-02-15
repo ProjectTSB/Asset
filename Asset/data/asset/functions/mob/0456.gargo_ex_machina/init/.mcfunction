@@ -27,6 +27,10 @@
     # 移動
         # execute at @s run tp @s ^ ^ ^ ~ 0
 
+# ダミー用ひつじ召喚
+    summon sheep ~ ~ ~ {Tags:["CO.ScapeSheep","Uninterferable"],NoAI:1b,Invulnerable:1b}
+    playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
+
 # 登場モーション再生
     tag @s add CO.Skill.Activate
 

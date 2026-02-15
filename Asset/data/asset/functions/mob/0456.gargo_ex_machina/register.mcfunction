@@ -17,7 +17,7 @@
     data modify storage asset:mob Interferable set value false
     data modify storage asset:mob IsForwardTarget set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"セキゾー"}'
+    data modify storage asset:mob Name set value '{"text":"逆襲のひつじしゃん"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"ほげ"}']
 # 体力 (double) (オプション)
@@ -34,10 +34,11 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
-    data modify storage asset:mob Field.FirstPos.X set value 527.5
-    data modify storage asset:mob Field.FirstPos.Y set value 91.0
-    data modify storage asset:mob Field.FirstPos.Z set value 836.0
+    # 石像の初期位置
+        data modify storage asset:mob Field.FirstPos.X set value 527.5
+        data modify storage asset:mob Field.FirstPos.Y set value 91.0
+        data modify storage asset:mob Field.FirstPos.Z set value 836.0
     # 剣叩きつけ
-    data modify storage asset:mob Field.Damage.SwordAttack set value 50.0
+        data modify storage asset:mob Field.Damage.SwordAttack set value {Amount:80.0,Type:"Physical",Element:"None"}
     # 半面焼きビーム
-    data modify storage asset:mob Field.Damage.HalfBeam set value 50.0
+        data modify storage asset:mob Field.Damage.HalfBeam set value {Amount:80.0,Type:"Physical",Element:"None"}

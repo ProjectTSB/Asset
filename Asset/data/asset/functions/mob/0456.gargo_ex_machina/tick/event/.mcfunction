@@ -7,6 +7,8 @@
 # 起動
     execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
 
+# 移動
+
 # 剣叩きつけ
     execute if entity @s[tag=CO.Skill.SwordAttack] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_start
     execute if entity @s[tag=CO.Skill.SwordAttack.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_charging
@@ -16,3 +18,8 @@
     execute if entity @s[tag=CO.Skill.HalfBeam] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_start
     execute if entity @s[tag=CO.Skill.HalfBeam.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_charging
     execute if entity @s[tag=CO.Skill.HalfBeam.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_attack
+
+# # 半面焼きビーム + 回転斬り
+#     execute if entity @s[tag=CO.Skill.HalfBeamSword] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_start
+#     execute if entity @s[tag=CO.Skill.HalfBeamSword.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_charging
+#     execute if entity @s[tag=CO.Skill.HalfBeamSword.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_attack
