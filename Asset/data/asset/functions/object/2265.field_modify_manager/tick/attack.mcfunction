@@ -14,6 +14,7 @@
 
 # 演出
     execute positioned ~ ~100 ~ run playsound entity.generic.explode hostile @a[distance=..200] ~ ~ ~ 2 1 1
+    execute positioned ~ ~100 ~ run playsound entity.lightning_bolt.thunder hostile @a[distance=..200] ~ ~ ~ 2 1 1
     execute as @e[type=item_display,tag=CO.Object.FieldModify,distance=..80] unless score @s 2266.Color = $Temp.Color Global at @s run function asset:object/2265.field_modify_manager/tick/attack_vfx
 
 # ダメージ
