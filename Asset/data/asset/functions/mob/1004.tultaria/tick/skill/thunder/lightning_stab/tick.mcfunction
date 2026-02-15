@@ -30,7 +30,7 @@
     execute if score @s[scores={RW.Phase=3}] General.Mob.Tick matches 20 run scoreboard players set @s[scores={RW.LoopCount=..4}] General.Mob.Tick 9
 
 # 埋まりそうになったら移動をやめる
-    execute at @s[scores={General.Mob.Tick=21}] positioned ~ ~0.5 ~ unless block ^ ^ ^2 #lib:no_collision run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stop
+    execute at @s[scores={General.Mob.Tick=21}] positioned ~ ~0.5 ~ unless block ^ ^ ^2 #lib:no_collision/ run function asset:mob/1004.tultaria/tick/skill/thunder/lightning_stab/stop
 
 # 最後の一個を設置
     execute if score @s[scores={RW.Phase=1}] General.Mob.Tick matches 25 run summon marker ~ ~1 ~ {Tags:["RW.ChainLightning.Common","RW.ChainLightning4"]}

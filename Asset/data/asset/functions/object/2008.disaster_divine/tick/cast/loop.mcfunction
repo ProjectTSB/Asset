@@ -10,7 +10,7 @@
     execute if predicate api:area/is_breakable unless block ^ ^ ^0.5 #lib:air unless block ^ ^ ^0.5 #lib:unbreakable run setblock ^ ^ ^0.5 air destroy
 
 # 着弾検知
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 2008.Landing
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add 2008.Landing
 
 # ターゲットにタグ付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=0] add 2008.Landing

@@ -7,7 +7,7 @@
 #   asset:object/2009.magic_bullet/tick/cast/loop
 
 # 着弾検知
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add 2009.Landing
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add 2009.Landing
 
 # ターゲットにタグ付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @a[tag=!PlayerShouldInvulnerable,dx=0] add 2009.Landing
