@@ -44,3 +44,5 @@
         data modify storage asset:mob Field.Damage.HalfBeam set value {Amount:80.0,Type:"Magic",Element:"None"}
     # スーパージャンプ
         data modify storage asset:mob Field.Damage.SuperJump set value {Amount:70.0,Type:"Physical",Element:"None"}
+    # フィールド・モディファイ
+        data modify storage asset:mob Field.Damage.FieldModify set value {Amount:90.0,Type:"Magic",Element:"None"}

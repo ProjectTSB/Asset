@@ -36,8 +36,9 @@
     #declare tag 
     #declare tag 
     # - オブジェクト用
-    #declare tag CO.Object
     #declare tag CO.Shadow
+    #declare tag CO.Object
+    #declare tag CO.Object.FieldModify
     # - 汎用
     #declare tag CO.ScapeSheep
     #declare tag CO.MainTarget

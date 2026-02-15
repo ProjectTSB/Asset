@@ -12,4 +12,4 @@
     execute if score @s 2265.Period matches 20.. run data modify storage asset:context this.BossBar.Period set value ['{"text":"..."}']
 
 # ボスバー表示
-    bossbar set asset:co_field_modify name [{"text":"> FIELD MODIFY PROCEEDING","color": "white","bold": true},{"storage":"asset:context","nbt":"this.BossBar.Period[]","interpret":true,"separator":""},{"text":" ","color": "white","bold": true},{"storage":"asset:context","nbt":"this.BossBar.Color[]","interpret":true,"separator":" "},{"text":" <","color": "white","bold": true}]
+    bossbar set asset:co_field_modify name [{"text":"> FIELD MODIFY PROCEEDING","color": "white","bold": true},{"storage":"asset:context","nbt":"this.BossBar.Period[]","interpret":true,"separator":""},{"text":" ","color": "white","bold": true},{"storage":"asset:context","nbt":"this.BossBar.Color[]","interpret":true,"separator":" "}]

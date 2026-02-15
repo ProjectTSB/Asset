@@ -8,5 +8,8 @@
 # ボスバー消去
     bossbar remove asset:co_field_modify
 
+# 床消去
+    tag @e[type=item_display,tag=CO.Object.FieldModify,distance=..80] add 2266.Remove
+
 # 消去
     kill @s

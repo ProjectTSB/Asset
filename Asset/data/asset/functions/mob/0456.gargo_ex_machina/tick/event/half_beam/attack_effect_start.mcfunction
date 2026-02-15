@@ -1,6 +1,6 @@
 #> asset:mob/0456.gargo_ex_machina/tick/event/half_beam/attack_effect_start
 #
-# 剣叩きつけ
+# 半面焼きビーム
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_attack
 

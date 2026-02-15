@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:object/2266.field_modify/**
     scoreboard objectives add 2266.Color dummy
+    scoreboard objectives add 2266.RemoveTimer dummy

@@ -14,4 +14,4 @@
 
 # 消滅処理
     execute if score @s 2265.Progress.Current >= @s 2265.Progress.Max run function asset:object/2265.field_modify_manager/tick/attack
-    execute if entity @s[scores={General.Object.Tick=2000..}] run function asset:object/2265.field_modify_manager/tick/kill
+    execute if entity @s[scores={General.Object.Tick=1000..}] run function asset:object/2265.field_modify_manager/tick/kill
