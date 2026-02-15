@@ -10,7 +10,8 @@
 # 変形
     execute if score @s General.Object.Tick matches 1 run playsound entity.sheep.ambient hostile @a ~ ~ ~ 2 1
     execute if score @s General.Object.Tick matches 31 as @e[type=item_display,tag=2264.Model,distance=..10,limit=1] run function animated_java:sheep_avenger/animations/transform/play
-    execute if score @s General.Object.Tick matches 63 run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 1
+    execute if score @s General.Object.Tick matches 63 run playsound minecraft:block.end_portal.spawn hostile @a[distance=..80] ~ ~ ~ 0.2 1 0.2
+    execute if score @s General.Object.Tick matches 63 run playsound entity.puffer_fish.blow_up hostile @a[distance=..80] ~ ~ ~ 1 0.7
     execute if score @s General.Object.Tick matches 63 run playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
     execute if score @s General.Object.Tick matches 63..251 run particle trial_spawner_detection ~ ~1.5 ~ 1 1.5 1 0.0 3
 
@@ -31,4 +32,4 @@
     execute if score @s General.Object.Tick matches 234 as @e[type=item_display,tag=2264.Model,distance=..10,limit=1] on passengers if entity @s[type=item_display] run data modify entity @s brightness set value {sky:7,block:7}
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=350..}] run function asset:object/2264.sheep_avenger/tick/kill
+    execute if entity @s[scores={General.Object.Tick=300..}] run function asset:object/2264.sheep_avenger/tick/kill
