@@ -6,5 +6,5 @@
 
 # マネージャー召喚
     data modify storage api: Argument.ID set value 2265
-    data modify storage api: Argument.FieldOverride.AttackCount set value 3
+    data modify storage api: Argument.FieldOverride.AttackCount set value 2
     function api:object/summon

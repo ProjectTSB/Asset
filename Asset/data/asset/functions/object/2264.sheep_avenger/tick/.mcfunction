@@ -13,6 +13,7 @@
     execute if score @s General.Object.Tick matches 63 run playsound minecraft:block.end_portal.spawn hostile @a[distance=..80] ~ ~ ~ 0.2 1 0.2
     execute if score @s General.Object.Tick matches 63 run playsound entity.puffer_fish.blow_up hostile @a[distance=..80] ~ ~ ~ 1 0.7
     execute if score @s General.Object.Tick matches 63 run playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
+    execute if score @s General.Object.Tick matches 63 run particle flash ~ ~2 ~ 2 2 2 0 50
     execute if score @s General.Object.Tick matches 63..251 run particle trial_spawner_detection ~ ~1.5 ~ 1 1.5 1 0.0 3
 
 # 移動

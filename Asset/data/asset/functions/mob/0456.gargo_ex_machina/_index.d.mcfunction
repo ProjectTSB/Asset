@@ -26,7 +26,7 @@
     #declare tag CO.Skill.HalfBeamSword.IsRight 半面焼きビーム
     #declare tag CO.Skill.SuperJump スーパージャンプ
     #declare tag CO.Skill.SuperJump.Attack スーパージャンプ
-    #declare tag CO.Skill.FieldModify
+    #declare tag CO.Skill.FieldModify フィールド・モディファイ
     #declare tag 
     #declare tag 
     #declare tag 
@@ -43,9 +43,8 @@
     #declare tag CO.MainTarget
     #declare tag CO.Aec.Target
     #declare tag CO.Aec.Destination
-    #declare tag 
-    #declare tag 
-    #declare tag 
+    #declare tag CO.Aec.FieldModify
+    #declare tag CO.Aec.FieldModify.Init
     #declare tag 
     #declare tag 
     #declare tag 

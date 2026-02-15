@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2266.field_modify/load",
         "asset:object/2264.sheep_avenger/load",
         "asset:object/2265.field_modify_manager/load",
         "asset:object/2263.gem_laser_vfx/load",

@@ -22,5 +22,5 @@
     kill @e[type=area_effect_cloud,tag=2265.Aec.Target,distance=..10]
 
 # 繰り返す
-    execute if score $Temp.Count 2265.AttackCount matches 1.. run data modify storage asset:context this.BossBar.Color append value '{"text":"->","color":"white"}'
+    execute if score $Temp.Count 2265.AttackCount matches 1.. run data modify storage asset:context this.BossBar.Color append value '{"text":"→","color":"white"}'
     execute if score $Temp.Count 2265.AttackCount matches 1.. run function asset:object/2265.field_modify_manager/init/decide_color_loop
