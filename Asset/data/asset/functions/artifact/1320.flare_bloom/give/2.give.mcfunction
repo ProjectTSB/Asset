@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"フレアブルーム","color":"red"}'
+    data modify storage asset:artifact Name set value '[{"text":"フ","color":"#EA4C15"},{"text":"レ","color":"#ED5617"},{"text":"ア","color":"#F0601A"},{"text":"ブ","color":"#F46A1C"},{"text":"ル","color":"#F8751F"},{"text":"ー","color":"#FB8021"},{"text":"ム","color":"#FF8B24"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"周囲の敵を攻撃する炎の蝶を召喚する","color":"white"}','{"text":"自身の体力が50%未満の時、ダメージが1.5倍になる","color":"white"}','{"text":"自らを焦がし続ける残り火の花","color":"gray"}','{"text":"その命を燃やす香りに炎の蝶が引き寄せられる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
