@@ -9,7 +9,7 @@ function asset:datapack/set_activation_state
 
 
 # プレイヤーの方を向く
-    execute at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
+    execute at @s facing entity @p[gamemode=!spectator,distance=..64] eyes run tp @s ~ ~ ~ ~ ~
 
 # モデル召喚
     execute at @s rotated ~ 0 run function animated_java:blazing_inferno/summon {args: {animation: 'intro', start_animation: true}}

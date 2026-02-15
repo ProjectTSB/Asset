@@ -6,7 +6,7 @@
 
 # マーカーを召喚し、プレイヤーの方に向ける
     summon marker ~ ~ ~ {Tags:["26.RotationMarker"]}
-    tp @e[type=marker,tag=26.RotationMarker,distance=..0.01] ~ ~ ~ facing entity @p feet
+    tp @e[type=marker,tag=26.RotationMarker,distance=..0.01] ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..50] feet
 
 # FieldOverrideへRotation[0]を入れる
     data modify storage api: Argument.FieldOverride.RotationX set from entity @e[type=marker,tag=26.RotationMarker,distance=..0.01,sort=nearest,limit=1] Rotation[0]

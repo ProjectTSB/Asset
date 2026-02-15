@@ -18,7 +18,7 @@
 # ターゲットにタグ付与
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add LandingTarget
 # ヒット時処理
-    execute if score @s 1A.LifeTime matches 20.. if score @s 1A.Cooldown matches 0 if entity @a[tag=LandingTarget,distance=..1] run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/damage
+    execute if score @s 1A.LifeTime matches 20.. if score @s 1A.Cooldown matches 0 if entity @a[tag=LandingTarget,tag=!PlayerShouldInvulnerable,distance=..1] run function asset:mob/0046.clock_of_despair/tick/skill/common/beam/damage
 # リセット
     tag @a[tag=LandingTarget,distance=..1] remove LandingTarget
 

@@ -12,9 +12,9 @@
 # スコアが50の時にプレイヤーが近くにいなければスコアをリセット
 # 50..69の時に、近くのプレイヤーに軸合わせする
 # 70以上で突進する
-    execute if entity @s[scores={4W.MoveTime=..49}] unless score @s 4W.HurtTime matches 0.. facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
+    execute if entity @s[scores={4W.MoveTime=..49}] unless score @s 4W.HurtTime matches 0.. facing entity @p[gamemode=!spectator,distance=..20] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.3 ~ ~
     execute if entity @s[scores={4W.MoveTime=50}] unless entity @p[gamemode=!spectator,distance=..20] run scoreboard players reset @s 4W.MoveTime
-    execute if entity @s[scores={4W.MoveTime=50..69}] anchored eyes run tp @s ~ ~ ~ facing entity @p eyes
+    execute if entity @s[scores={4W.MoveTime=50..69}] anchored eyes run tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..20] eyes
     execute if entity @s[scores={4W.MoveTime=70..}] run tp @s ^ ^ ^1 ~ ~
 
 # スコアリセット
@@ -36,4 +36,4 @@
 # カベにぶつかった際の処理はない。壁は貫通するもの
 
 # デスポーン処理
-    execute unless entity @p[distance=..40] run function api:mob/remove
+    execute unless entity @p[gamemode=!spectator,distance=..40] run function api:mob/remove

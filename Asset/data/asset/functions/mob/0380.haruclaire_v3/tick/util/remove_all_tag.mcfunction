@@ -7,9 +7,9 @@
 # @within asset:mob/0380.haruclaire_v3/remove/
 
 # ターゲット用タグ
-    tag @a remove AK.MainTarget
-    # tag @a remove AK.AttackTarget
-    # tag @a remove AK.HateTarget
+    tag @a[tag=AK.MainTarget] remove AK.MainTarget
+    # tag @a[tag=AK.MainTarget] remove AK.AttackTarget
+    # tag @a[tag=AK.MainTarget] remove AK.HateTarget
 
 # オブジェクト処理用タグ
-    # tag @a remove AK.Temp.MoveEnd
+    # tag @a[tag=AK.Temp.MoveEnd] remove AK.Temp.MoveEnd

@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # タグ消去
-    tag @a remove 93.Skill.IaiMove.Hit
+    tag @s remove 93.Skill.IaiMove.Hit

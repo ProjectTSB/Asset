@@ -40,7 +40,6 @@
     execute positioned ~ ~ ~ run function api:object/summon
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 3
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 45
