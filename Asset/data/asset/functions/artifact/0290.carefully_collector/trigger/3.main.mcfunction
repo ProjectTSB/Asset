@@ -18,7 +18,6 @@
         summon item ~ ~ ~ {Tags:[CarefullyCollect],Item:{id:"minecraft:barrier",Count:1b}}
 
     # データ処理
-        data modify storage asset:temp block set from block ~ ~ ~
 
         data modify storage asset:temp chest.Count set value 1b
         data modify storage asset:temp chest.id set from storage asset:temp block.id
@@ -35,6 +34,5 @@
     # リセット
         setblock ~ ~ ~ air
         scoreboard players reset @s Temporary
-        data remove storage asset:temp block
         data remove storage asset:temp chest
         tag @e[type=item,tag=CarefullyCollect,distance=..0] remove CarefullyCollect
