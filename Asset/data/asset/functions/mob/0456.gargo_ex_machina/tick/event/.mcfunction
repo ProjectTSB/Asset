@@ -29,3 +29,6 @@
 # スーパージャンプ
     execute if entity @s[tag=CO.Skill.SuperJump] run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_start
     execute if entity @s[tag=CO.Skill.SuperJump.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_attack
+
+# フィールド・モディファイ
+    execute if entity @s[tag=CO.Skill.FieldModify] run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/event_start

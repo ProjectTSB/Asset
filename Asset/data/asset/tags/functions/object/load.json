@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2265.field_modify_manager/load",
         "asset:object/2263.gem_laser_vfx/load",
         "asset:object/2251.wall_laser_clock/load",
         "asset:object/2212.eclael_upper_shot/load",

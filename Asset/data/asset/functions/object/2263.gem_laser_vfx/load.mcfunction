@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2263.gem_laser_vfx/**
-    scoreboard objectives add 
+    # scoreboard objectives add 
