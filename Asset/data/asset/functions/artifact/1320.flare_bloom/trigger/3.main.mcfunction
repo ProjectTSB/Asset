@@ -21,6 +21,25 @@
     execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer.Min float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default.Min
     execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer.Max float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default.Max
 
+# ダメージ以外の諸々の設定
+    # 1tick毎の敵を追跡する速度
+        data modify storage api: Argument.FieldOverride.ChaseSpeed set value 0.6
+
+    # 召喚演出が何tickか？
+        data modify storage api: Argument.FieldOverride.SummonMoveTick set value 45
+
+    # 存在時間(召喚が永続化したら要らなくなりそうだが)
+        data modify storage api: Argument.FieldOverride.Tick set value 445
+
+    # 最大追跡時間
+        data modify storage api: Argument.FieldOverride.ChaseTick.Max set value 60
+
+    # 攻撃発生までのディレイ
+        data modify storage api: Argument.FieldOverride.AttackDelay.Max set value 8
+
+    # 攻撃のクールダウン
+        data modify storage api: Argument.FieldOverride.AttackCD.Max set value 30
+
 # Object召喚
     data modify storage api: Argument.ID set value 1153
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
