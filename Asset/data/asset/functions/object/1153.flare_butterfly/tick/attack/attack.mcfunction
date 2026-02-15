@@ -23,7 +23,7 @@
 
 # ダメージ
     function api:damage/single_damage_session/open
-    execute positioned ~-2 ~-2 ~-2 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=3,dy=3,dz=3] run function asset:object/1153.flare_butterfly/tick/attack/damage/
+    execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=4,dy=4,dz=4] run function asset:object/1153.flare_butterfly/tick/attack/damage/
     function api:damage/single_damage_session/close
 
 # リセット
