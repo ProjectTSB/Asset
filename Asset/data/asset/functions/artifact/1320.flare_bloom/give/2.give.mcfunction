@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"フレアブルーム","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲の敵を攻撃する炎の蝶を召喚する","color":"white"}','{"text":"自身の体力が50%以下の時、ダメージが1.5倍になる","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲の敵を攻撃する炎の蝶を召喚する","color":"white"}','{"text":"自身の体力が50%未満の時、ダメージが1.5倍になる","color":"white"}','{"text":"自らを焦がし続ける残り火の花","color":"gray"}','{"text":"その命を燃やす香りに炎の蝶が引き寄せられる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value "3.5"
+    data modify storage asset:artifact AttackInfo.AttackRange set value 2
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 100
 # MP必要量 (int) (オプション)
