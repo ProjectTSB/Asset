@@ -6,3 +6,4 @@
 
 # bossbar変更
     $bossbar set asset:angel$(MobUUID) name {"text":"$(Name)"}
+    $bossbar set asset:angel$(MobUUID) visible $(Visible)

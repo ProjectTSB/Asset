@@ -19,16 +19,6 @@
         execute if score @s CO.EventTimer matches 118 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 125 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 155 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
-    # ひつじ演出
-        # execute if score @s CO.EventTimer matches 40..80 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^0.3
-        # execute if score @s CO.EventTimer matches 90..100 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^ ~9 ~
-        # execute if score @s CO.EventTimer matches 90..100 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^ ^ ~9 ~
-        # execute if score @s CO.EventTimer matches 101..140 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle angry_villager ~ ~1 ~ 1 1 1 0.1 1
-        # execute if score @s CO.EventTimer matches 145..230 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle firework ~ ~1 ~ 1 1 1 0.1 1
-        # execute if score @s CO.EventTimer matches 145..180 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^0.06 ^
-        # execute if score @s CO.EventTimer matches 195..230 as @e[type=sheep,tag=CO.ScapeSheep] at @s run particle trial_spawner_detection ~ ~1 ~ 1 1 1 0.0 3
-        # execute if score @s CO.EventTimer matches 195 run playsound entity.goat.screaming.hurt hostile @a ~ ~ ~ 2 0.7
-        # execute if score @s CO.EventTimer matches 231 as @e[type=sheep,tag=CO.ScapeSheep] at @s run tp @s ^ ^-2.16 ^
 
 # 移動
     # アニメーション再生
@@ -62,8 +52,11 @@
         execute if score @s CO.EventTimer matches 321 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 345 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     # ボス名変更
-        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"逆襲のひつじしゃん"}
-        execute if score @s CO.EventTimer matches 251 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像"}
+        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"false"}
+        execute if score @s CO.EventTimer matches 350 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"true"}
+        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/event/activate/show_dummy_bossbar
+        execute if score @s CO.EventTimer matches 251 run function asset:mob/0456.gargo_ex_machina/tick/event/activate/clear_dummy_bossbar
+        execute if score @s CO.EventTimer matches 350 run bossbar remove asset:co_scape_sheep
 
 # 終了
     execute if score @s CO.EventTimer matches 351.. run function asset:mob/0456.gargo_ex_machina/tick/event/activate/end
