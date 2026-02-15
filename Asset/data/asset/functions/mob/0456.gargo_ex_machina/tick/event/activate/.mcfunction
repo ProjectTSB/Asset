@@ -62,8 +62,9 @@
         execute if score @s CO.EventTimer matches 301 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 325 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     # ボス名変更
+        execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"逆襲のひつじしゃん"}
         execute if score @s CO.EventTimer matches 231 run kill @e[type=sheep,tag=CO.ScapeSheep]
-        execute if score @s CO.EventTimer matches 231 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name
+        execute if score @s CO.EventTimer matches 231 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像"}
 
 # 終了
     execute if score @s CO.EventTimer matches 331.. run function asset:mob/0456.gargo_ex_machina/tick/event/activate/end

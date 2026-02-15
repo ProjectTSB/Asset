@@ -17,7 +17,7 @@
     data modify storage asset:mob Interferable set value false
     data modify storage asset:mob IsForwardTarget set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"逆襲のひつじしゃん"}'
+    data modify storage asset:mob Name set value '{"text":"絡繰仕掛の石像"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"ほげ"}']
 # 体力 (double) (オプション)
