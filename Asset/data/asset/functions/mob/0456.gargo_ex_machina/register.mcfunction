@@ -41,4 +41,6 @@
     # 剣叩きつけ
         data modify storage asset:mob Field.Damage.SwordAttack set value {Amount:80.0,Type:"Physical",Element:"None"}
     # 半面焼きビーム
-        data modify storage asset:mob Field.Damage.HalfBeam set value {Amount:80.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.HalfBeam set value {Amount:80.0,Type:"Magic",Element:"None"}
+    # スーパージャンプ
+        data modify storage asset:mob Field.Damage.SuperJump set value {Amount:70.0,Type:"Physical",Element:"None"}

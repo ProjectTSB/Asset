@@ -18,6 +18,4 @@
     # execute at @s run tp @e[type=item_display,tag=CO.ModelRoot] ~ ~ ~ ~ 0
 
 # イベント実行
-    # scoreboard players set @s BE.EventTimer 0
     tag @s add CO.Skill.Move
-    # scoreboard players set @s BE.Pb.Count 5

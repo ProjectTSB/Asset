@@ -28,8 +28,10 @@
         execute if score @s CO.EventTimer matches 39 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
         execute if score @s CO.EventTimer matches 54 positioned ^-2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
         execute if score @s CO.EventTimer matches 69 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
-        execute if score @s CO.EventTimer matches 10..65 positioned ^-13 ^ ^-11 run particle crit ~ ~0.5 ~ 0.5 0.1 0.5 0.5 3 force @a[distance=..80]
-        execute if score @s CO.EventTimer matches 10..65 positioned ^-13 ^ ^-11 run particle block quartz_block ~ ~ ~ 0.5 0.1 0.5 0 5 force @a[distance=..80]
+        execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle crit ~ ~0.5 ~ 0.5 0.1 0.5 0.5 3 force @a[distance=..80]
+        execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle block quartz_block ~ ~ ~ 0.5 0.1 0.5 0 5 force @a[distance=..80]
+        execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle explosion ~ ~0.5 ~ 0.5 0.1 0.5 0.5 1 force @a[distance=..80]
+        execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle lava ~ ~0.5 ~ 0.5 0.1 0.5 0.5 1 force @a[distance=..80]
         execute if score @s CO.EventTimer matches 10 positioned ^-12 ^ ^-10 run function asset:mob/0456.gargo_ex_machina/tick/event/move/sword_sound
         execute if score @s CO.EventTimer matches 15 positioned ^-12 ^ ^-10 run function asset:mob/0456.gargo_ex_machina/tick/event/move/sword_sound
         execute if score @s CO.EventTimer matches 25 positioned ^-12 ^ ^-10 run function asset:mob/0456.gargo_ex_machina/tick/event/move/sword_sound

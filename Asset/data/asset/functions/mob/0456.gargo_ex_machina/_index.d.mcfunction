@@ -24,6 +24,8 @@
     #declare tag CO.Skill.HalfBeamSword.Charge 半面焼きビーム
     #declare tag CO.Skill.HalfBeamSword.Attack 半面焼きビーム
     #declare tag CO.Skill.HalfBeamSword.IsRight 半面焼きビーム
+    #declare tag CO.Skill.SuperJump スーパージャンプ
+    #declare tag CO.Skill.SuperJump.Attack スーパージャンプ
     # - オブジェクト用
     #declare tag CO.Object
     #declare tag CO.Shadow
@@ -70,8 +72,8 @@
     #declare function animated_java:gargo_ex_machina/animations/walk_start/tween
     #declare function animated_java:gargo_ex_machina/animations/walk/tween
     #declare function animated_java:gargo_ex_machina/animations/walk_end/tween
-    #declare function 
-    #declare function 
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/tween
     #declare function 
     #declare function 
     #declare function 
