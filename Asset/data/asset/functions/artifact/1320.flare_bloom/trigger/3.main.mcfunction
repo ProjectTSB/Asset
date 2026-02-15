@@ -17,8 +17,9 @@
     playsound entity.witch.throw player @a ~ ~ ~ 1.5 0.5
 
 # ダメージ設定
-    data modify storage api: Argument.FieldOverride.Damage.Default set value 500
-    execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default
+    data modify storage api: Argument.FieldOverride.Damage.Default set value {Min:400,Max:500}
+    execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer.Min float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default.Min
+    execute store result storage api: Argument.FieldOverride.Damage.LowHealthPer.Max float 1.5 run data get storage api: Argument.FieldOverride.Damage.Default.Max
 
 # Object召喚
     data modify storage api: Argument.ID set value 1153
