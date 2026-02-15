@@ -47,7 +47,7 @@
 
 # 攻撃のクールダウン
     data modify storage asset:object Field.AttackCD._ set value 0
-    data modify storage asset:object Field.AttackCD.Max set value 25
+    data modify storage asset:object Field.AttackCD.Max set value 30
 
 # 攻撃モードか？
     data modify storage asset:object Field.IsAttackMode set value false
