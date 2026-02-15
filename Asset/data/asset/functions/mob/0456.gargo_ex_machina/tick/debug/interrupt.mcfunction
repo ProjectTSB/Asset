@@ -19,5 +19,5 @@
 
 # イベント実行
     # scoreboard players set @s BE.EventTimer 0
-    tag @s add CO.Skill.HalfBeam
+    tag @s add CO.Skill.Move
     # scoreboard players set @s BE.Pb.Count 5

@@ -10,6 +10,9 @@
     #declare tag CO.CenterPosition 中心点
     # - スキル
     #declare tag CO.Skill.Activate 起動
+    #declare tag CO.Skill.Move 移動
+    #declare tag CO.Skill.Move.End 移動
+    #declare tag CO.Skill.Move.Near 近距離移動
     #declare tag CO.Skill.SwordAttack 剣叩きつけ
     #declare tag CO.Skill.SwordAttack.Charge 剣叩きつけ
     #declare tag CO.Skill.SwordAttack.Attack 剣叩きつけ
@@ -28,7 +31,7 @@
     #declare tag CO.ScapeSheep
     #declare tag CO.MainTarget
     #declare tag CO.Aec.Target
-    #declare tag 
+    #declare tag CO.Aec.Destination
     #declare tag 
     #declare tag 
     #declare tag 
@@ -64,4 +67,14 @@
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_charge/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_right/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk_end/tween
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
     #declare function animated_java:gargo_ex_machina/remove/all

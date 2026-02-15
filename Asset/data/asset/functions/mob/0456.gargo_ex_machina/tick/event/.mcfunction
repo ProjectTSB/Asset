@@ -8,6 +8,8 @@
     execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
 
 # 移動
+    execute if entity @s[tag=CO.Skill.Move] run function asset:mob/0456.gargo_ex_machina/tick/event/move/
+    execute if entity @s[tag=CO.Skill.Move.End] run function asset:mob/0456.gargo_ex_machina/tick/event/move/event_end
 
 # 剣叩きつけ
     execute if entity @s[tag=CO.Skill.SwordAttack] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_start
