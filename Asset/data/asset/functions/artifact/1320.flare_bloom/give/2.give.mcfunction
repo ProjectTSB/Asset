@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"フ","color":"#EA4C15"},{"text":"レ","color":"#EC5317"},{"text":"ア","color":"#EF5A19"},{"text":"ブ","color":"#F1611B"},{"text":"ル","color":"#F4681D"},{"text":"ー","color":"#F66E1E"},{"text":"ム","color":"#F8751F"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲の敵を攻撃する炎の蝶を召喚する","color":"white"}','{"text":"自身の体力が50%未満の時、ダメージが1.5倍になる","color":"white"}','{"text":"自らを焦がし続ける残り火の花","color":"gray"}','{"text":"その命を燃やす香りに、炎の蝶が引き寄せられる","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲の敵を攻撃する炎の蝶を召喚する","color":"white"}','{"text":"自身の体力が50%未満の時、ダメージが1.5倍になる","color":"white"}','{"text":"自らを焦がし続ける残り火の花","color":"gray"}','{"text":"その命を燃やす香りが炎の蝶が呼び寄せる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
