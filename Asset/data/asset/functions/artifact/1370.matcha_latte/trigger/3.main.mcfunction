@@ -14,6 +14,8 @@
     #declare score_holder $Random
     #declare score_holder $MaxMP
 
+# そこそこ回復のブレでかくして安定しないMP回復的な感じでもいい
+
 # 演出
     particle dust 0.4 0.6 0.2 1 ~ ~1.2 ~ 0.4 0.4 0.4 0 20
     playsound disabled_sounds:entity.player.levelup player @a ~ ~ ~ 1 2
