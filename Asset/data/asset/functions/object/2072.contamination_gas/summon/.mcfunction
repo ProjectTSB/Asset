@@ -1,4 +1,4 @@
-#> asset:object/2072.contamination_gus/summon/
+#> asset:object/2072.contamination_gas/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

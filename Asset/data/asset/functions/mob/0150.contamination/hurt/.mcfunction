@@ -8,4 +8,4 @@
     execute if data storage asset:context Hurt{IsDoT:true} run return fail
 
 # 確率で召喚
-    execute if predicate lib:random_pass_per/20 unless entity @e[type=area_effect_cloud,scores={MobID=158},distance=..3] run function asset:mob/0150.contamination/gus_summon
+    execute if predicate lib:random_pass_per/20 unless entity @e[type=marker,scores={ObjectID=2072},distance=..3,limit=1] run function asset:mob/0150.contamination/summon_gas
