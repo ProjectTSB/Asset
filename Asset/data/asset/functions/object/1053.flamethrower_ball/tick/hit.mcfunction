@@ -23,7 +23,7 @@
     # ダメージ
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
         execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
-        execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=2.5,dy=2.5,dz=2.5,sort=random,limit=1] run function api:damage/
+        execute positioned ~-1.75 ~-1.75 ~-1.75 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=2.5,dy=2.5,dz=2.5] run function api:damage/
 # リセット
     function api:damage/reset
     scoreboard players reset $OwnerID Temporary

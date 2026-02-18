@@ -1,8 +1,8 @@
-#> asset:mob/0038.laser_eye/tick/particle.1
+#> asset:mob/0038.laser_eye/tick/vfx/1
 #
 #
 #
-# @within function asset:mob/0038.laser_eye/tick/2.1.attack
+# @within function asset:mob/0038.laser_eye/tick/charge
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgB2AhgLYLKBhigAQCMYBMxGZAzkuCgPYCuhESWgCYCKOPzgYOYAB5IADASgKAvgRYATND3aJ5AOgDsAVgKsIzAXoJxs2NDFYVa8xWAxcLECvJUqAukA
 # 円 1

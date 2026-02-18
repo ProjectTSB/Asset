@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"デ","color":"#197af0"},{"text":"ィ","color":"#176eea"},{"text":"ー","color":"#1562e4"},{"text":"プ","color":"#1356de"},{"text":"ア","color":"#114ad8"},{"text":"ズ","color":"#0f3ed2"},{"text":"ー","color":"#0d32cb"},{"text":"ル","color":"#0a25c6"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"長押しすることで最大3段階のチャージを行い"}','{"text":"右クリックを離すことでチャージ段階に応じた斬撃を放つ"}','{"text":"5段目の直前に移動速度+50%を0.5秒間得る"}','{"text":"沈め、静かに、果てなき闇へ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"長押しすることで最大3段階のチャージを行い"}','[{"keybind":"key.use"},{"text":"を離すことでチャージ段階に応じた斬撃を放つ"}]','{"text":"5段目の直前に移動速度+50%を0.5秒間得る"}','{"text":"沈め、静かに、果てなき闇へ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

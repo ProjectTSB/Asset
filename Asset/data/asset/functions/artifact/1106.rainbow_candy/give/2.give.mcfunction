@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"虹","color":"#FF6B6B"},{"text":"色","color":"#FFB66E"},{"text":"キ","color":"#FFF56B"},{"text":"ャ","color":"#A5FF70"},{"text":"ン","color":"#73F6FF"},{"text":"デ","color":"#6E8BFF"},{"text":"ィ","color":"#C06EFF"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"HPとMPを1~7回復する。","color":"white"}','{"text":"7つの味があるキャンディ。","color":"gray"}','{"text":"舐める度に味が変わる。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力とMPを1~7回復する。","color":"white"}','{"text":"7つの味があるキャンディ。","color":"gray"}','{"text":"舐める度に味が変わる。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

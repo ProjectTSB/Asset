@@ -11,7 +11,7 @@
 
 # 演出
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle dust 1 1 0 1 ~ ~2 ~ 0 2.5 0 0 100
-    playsound minecraft:entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
+    playsound minecraft:entity.lightning_bolt.thunder player @a ~ ~ ~ 0.4 2
 
 # ダメージ
     execute store result storage api: Argument.Damage float 1 run random value 6..12

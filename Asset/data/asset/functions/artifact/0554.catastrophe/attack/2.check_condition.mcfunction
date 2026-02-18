@@ -5,7 +5,7 @@
 # @within function asset:artifact/0554.catastrophe/attack/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {LocalCooldown:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {LocalCooldown:true,BelieveMessage:true}
     function asset:artifact/common/check_condition/head
 
 # 全部位を身に着けているかチェックし、そうでないならreturn
