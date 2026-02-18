@@ -22,4 +22,4 @@
     execute if entity @s[scores={2031.SpinCount=4..}] run scoreboard players reset @s 2031.SpinCount
 
 # 高速回転状態でなければ自身にヒット判定Tagを付与
-    execute if entity @s[tag=!2031.HighSpeedSpinning] if entity @p[distance=..5] run tag @s add 2031.BeginningSpin
+    execute if entity @s[tag=!2031.HighSpeedSpinning] if entity @p[gamemode=!spectator,distance=..5] run tag @s add 2031.BeginningSpin

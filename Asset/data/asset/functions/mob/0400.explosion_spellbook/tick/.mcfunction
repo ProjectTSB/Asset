@@ -16,13 +16,13 @@
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # 範囲内ならホーミングじみた移動
-    execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.2 ~ ~
+    execute facing entity @p[tag=!PlayerShouldInvulnerable,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.2 ~ ~
 
 # スコア増やす
     scoreboard players add @s General.Mob.Tick 1
 
 # プレイヤーが近くにいたら爆発
-    execute if entity @p[gamemode=!spectator,distance=..2] run function asset:mob/0400.explosion_spellbook/ai/explode/
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..2] run function asset:mob/0400.explosion_spellbook/ai/explode/
 
 # 時間が経過したら爆発
     execute if score @s General.Mob.Tick matches 500 run function asset:mob/0400.explosion_spellbook/ai/explode/

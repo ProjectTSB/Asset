@@ -20,7 +20,7 @@
     execute if entity @s[tag=!2156.Right,scores={General.Object.Tick=12..}] on passengers if entity @s[tag=2156.Append,tag=!2156.Prediction] at @s run tp @s ~ ~ ~ ~-3 ~
 
 # 演出
-    execute if entity @s[scores={General.Object.Tick=..145}] at @s facing entity @p eyes on passengers if entity @s[tag=2156.Crystal] run tp @s ~ ~ ~ ~ ~
+    execute if entity @s[scores={General.Object.Tick=..145}] at @s facing entity @p[gamemode=!spectator] eyes on passengers if entity @s[tag=2156.Crystal] run tp @s ~ ~ ~ ~ ~
     execute if entity @s[scores={General.Object.Tick=10..}] run function asset:object/2156.haruclaire_icepillar/tick/effect_append
 
 # 攻撃

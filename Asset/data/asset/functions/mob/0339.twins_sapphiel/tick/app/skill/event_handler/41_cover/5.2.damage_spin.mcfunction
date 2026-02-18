@@ -6,7 +6,7 @@
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/1.main
 
 # ヒット判定
-    tag @a[distance=..2.8] add 9F.Temp.Target.Attack
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2.8] add 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.CoverSpin

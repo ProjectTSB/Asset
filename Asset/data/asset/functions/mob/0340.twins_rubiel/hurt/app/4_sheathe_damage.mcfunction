@@ -5,7 +5,7 @@
 # @within function asset:mob/0340.twins_rubiel/hurt/
 
 # 攻撃者を向く
-    execute facing entity @a[tag=Attacker,limit=1] feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @a[tag=Attacker,tag=!PlayerShouldInvulnerable,limit=1] feet run tp @s ~ ~ ~ ~ 0
 
 # 演出
     playsound entity.item.break hostile @a ~ ~ ~ 2 0.5

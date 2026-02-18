@@ -10,7 +10,7 @@
 # プレイヤーの方を向く
 # 移動中は対象プレイヤーの方を向く（普段よりもゆっくりと）
     scoreboard players operation $AW.Temp AW.UUID = @s AW.UUID
-    execute as @a if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/beam/rotate
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..100] if score @s UserID = $AW.Temp AW.UUID run function asset:mob/0392.ecual_first/ai/animation/7_0_holy_ray/beam/rotate
     scoreboard players reset $AW.Temp AW.UUID
 
 # アニメーション再生

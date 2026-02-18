@@ -17,7 +17,7 @@
     function api:damage/modifier
     execute as @a[tag=AK.Temp.Hit] run function api:damage/
     function api:damage/reset
-    tag @a remove AK.Temp.Hit
+    tag @a[tag=AK.Temp.Hit] remove AK.Temp.Hit
 
 # 演出
     playsound item.trident.throw hostile @a ~ ~ ~ 2 1.2

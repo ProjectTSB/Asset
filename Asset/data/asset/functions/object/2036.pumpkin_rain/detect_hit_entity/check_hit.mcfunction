@@ -14,7 +14,7 @@
     data modify storage lib: args.dz set from storage lib: args.dx
 
 # 判定する
-    data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..4]"
+    data modify storage lib: args.selector set value "@a[gamemode=!spectator,distance=..4]"
     function lib:rotatable_dxyz/m with storage lib: args
     execute if entity @p[tag=DXYZ,distance=..4] run data modify storage asset:context IsHitEntity set value true
 

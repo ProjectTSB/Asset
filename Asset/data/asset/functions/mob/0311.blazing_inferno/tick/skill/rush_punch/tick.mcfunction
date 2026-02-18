@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/0311.blazing_inferno/tick/skill/rush_punch/warp
 
 # ゆっくりと向きを変える
-    execute if entity @s[scores={General.Mob.Tick=0..20}] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-500 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
+    execute if entity @s[scores={General.Mob.Tick=0..20}] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-500 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
 
 # ラッシュパンチのアニメ再生
     execute if score @s General.Mob.Tick matches 20 as @e[type=item_display,tag=8N.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:blazing_inferno/animations/attack_oraora_loop/play

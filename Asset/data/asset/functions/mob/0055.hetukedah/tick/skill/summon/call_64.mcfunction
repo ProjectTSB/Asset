@@ -9,7 +9,7 @@
     function api:mob/summon
 
 # こっちに向かせる
-    execute as @e[type=zombie,scores={MobID=64},sort=nearest,limit=1] at @s facing entity @r[distance=..30] eyes run tp @s ~ ~ ~ ~ ~
+    execute as @e[type=zombie,scores={MobID=64},sort=nearest,limit=1] at @s facing entity @r[gamemode=!spectator,distance=..30] eyes run tp @s ~ ~ ~ ~ ~
 
 # 演出
     particle explosion ~ ~1 ~ 0 0 0 0 1 force @a[distance=..30]

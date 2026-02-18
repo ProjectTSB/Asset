@@ -17,4 +17,4 @@
     execute at @s positioned ~ ~1 ~ run function asset:mob/1004.tultaria/tick/base_move/teleport/vfx
 
 # 付近のプレイヤーを見る
-    execute at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute at @s facing entity @p[gamemode=!spectator,distance=..128] feet run tp @s ~ ~ ~ ~ ~

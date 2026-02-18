@@ -7,7 +7,6 @@
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 5
     data modify storage lib: args.dy set value 5
     data modify storage lib: args.dz set value 30
@@ -20,7 +19,7 @@
     function api:damage/modifier
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset
-    tag @a remove DXYZ
+    tag @a[tag=DXYZ] remove DXYZ
 
 # 演出
     playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.7

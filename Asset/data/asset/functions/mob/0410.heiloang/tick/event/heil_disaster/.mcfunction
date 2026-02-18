@@ -40,8 +40,8 @@
             execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 130 if predicate api:global_vars/difficulty/min/2_hard at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
-            execute if score @s BE.EventTimer matches 180 if predicate api:global_vars/difficulty/min/2_hard at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
+            execute if score @s BE.EventTimer matches 130 if predicate api:global_vars/difficulty/min/2_hard at @a[tag=!PlayerShouldInvulnerable,distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
+            execute if score @s BE.EventTimer matches 180 if predicate api:global_vars/difficulty/min/2_hard at @a[tag=!PlayerShouldInvulnerable,distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind
 
 # なぎはらい火炎放射
     # アニメーション再生
@@ -74,7 +74,7 @@
 
 # テンペスト
 #     ターゲット決定
-        execute if score @s BE.EventTimer matches 175 as @a[distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 175 as @a[tag=!PlayerShouldInvulnerable,distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
     # 攻撃範囲予告
         execute if score @s BE.EventTimer matches 185 at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
         execute if score @s BE.EventTimer matches 185..315 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area

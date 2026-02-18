@@ -12,4 +12,4 @@
     function api:damage/modifier_manual
     execute as @a[tag=2176.Hit] run function api:damage/
     function api:damage/reset
-    tag @a remove 2176.Hit
+    tag @a[tag=2176.Hit] remove 2176.Hit

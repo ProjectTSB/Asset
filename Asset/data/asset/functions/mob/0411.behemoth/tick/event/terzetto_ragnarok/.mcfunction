@@ -26,9 +26,9 @@
         execute if score @s BF.EventTimer matches 71..210 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 線予兆
         execute if score @s BF.EventTimer matches 70 positioned ^ ^4 ^4 run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/summon_line
-        execute if score @s BF.EventTimer matches 71..210 positioned ^ ^4 ^4 as @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/prediction_line
+        execute if score @s BF.EventTimer matches 71..210 positioned ^ ^4 ^4 as @e[type=item_display,tag=2181.Line,tag=BF.Object,distance=..1,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/prediction_line
         # 線を消去
-            execute if score @s BF.EventTimer matches 210 positioned ^ ^4 ^4 run kill @e[type=item_display,tag=2181.Line,distance=..1,sort=nearest,limit=1]
+            execute if score @s BF.EventTimer matches 210 positioned ^ ^4 ^4 run kill @e[type=item_display,tag=2181.Line,tag=BF.Object,distance=..1,sort=nearest,limit=1]
     # 移動
         execute if score @s BF.EventTimer matches 267..274 at @s run tp @s ^ ^ ^2.8
         execute if score @s BF.EventTimer matches 275..288 at @s run tp @s ^ ^ ^2.1

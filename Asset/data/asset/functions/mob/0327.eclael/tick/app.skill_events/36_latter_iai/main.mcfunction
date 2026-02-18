@@ -52,14 +52,14 @@
 
 # 攻撃
     execute if score @s 93.AnimationTimer matches 35 run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/hit
-    execute if score @s 93.AnimationTimer matches 50 at @a[tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_0
-    execute if score @s 93.AnimationTimer matches 53 at @a[tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_1
-    execute if score @s 93.AnimationTimer matches 56 at @a[tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_2
-    execute if score @s 93.AnimationTimer matches 59 at @a[tag=93.Skill.IaiMove.Hit,distance=..80] rotated ~180 ~ run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_0
-    execute if score @s 93.AnimationTimer matches 59 run tag @a remove 93.Skill.IaiMove.Hit
+    execute if score @s 93.AnimationTimer matches 50 at @a[gamemode=!spectator,tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_0
+    execute if score @s 93.AnimationTimer matches 53 at @a[gamemode=!spectator,tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_1
+    execute if score @s 93.AnimationTimer matches 56 at @a[gamemode=!spectator,tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_2
+    execute if score @s 93.AnimationTimer matches 59 at @a[gamemode=!spectator,tag=93.Skill.IaiMove.Hit,distance=..80] rotated ~180 ~ run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/attack_0
+    execute if score @s 93.AnimationTimer matches 59 run tag @a[tag=93.Skill.IaiMove.Hit] remove 93.Skill.IaiMove.Hit
 
 # ハードでは折り返す
-    execute if score @s 93.AnimationTimer matches 45 if predicate api:global_vars/difficulty/min/3_blessless unless entity @a[tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/turn
+    execute if score @s 93.AnimationTimer matches 45 if predicate api:global_vars/difficulty/min/3_blessless unless entity @a[gamemode=!spectator,tag=93.Skill.IaiMove.Hit,distance=..80] run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/turn
 
 # 終了
     execute if score @s 93.AnimationTimer matches 106.. run function asset:mob/0327.eclael/tick/app.skill_events/36_latter_iai/end

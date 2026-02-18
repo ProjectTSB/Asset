@@ -24,4 +24,4 @@
     execute if entity @s[scores={General.Object.Tick=31}] rotated ~225 ~ positioned ^ ^ ^6 run function asset:object/2161.haruclaire_ic_pisces/tick/damage
     execute if entity @s[scores={General.Object.Tick=33}] rotated ~270 ~ positioned ^ ^ ^6 run function asset:object/2161.haruclaire_ic_pisces/tick/damage
     execute if entity @s[scores={General.Object.Tick=35}] rotated ~315 ~ positioned ^ ^ ^6 run function asset:object/2161.haruclaire_ic_pisces/tick/damage
-    execute if entity @s[scores={General.Object.Tick=36}] run tag @a remove 2161.Attack.Hit
+    execute if entity @s[scores={General.Object.Tick=36}] run tag @a[tag=2161.Attack.Hit] remove 2161.Attack.Hit

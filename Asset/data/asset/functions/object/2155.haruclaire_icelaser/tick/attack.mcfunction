@@ -93,5 +93,5 @@
     function api:damage/reset
 
 # 終了
-    tag @a remove 2155.Hit
+    tag @a[tag=2155.Hit] remove 2155.Hit
     scoreboard players reset $Interval Temporary

@@ -5,10 +5,10 @@
 # @within function asset:mob/0311.blazing_inferno/tick/
 
 # 予告動作
-    execute if score @s[tag=!8N.InAction] General.Mob.Tick matches 20 if entity @p[distance=..100] run function asset:mob/0311.blazing_inferno/tick/base_move/windup
+    execute if score @s[tag=!8N.InAction] General.Mob.Tick matches 20 if entity @p[gamemode=!spectator,distance=..100] run function asset:mob/0311.blazing_inferno/tick/base_move/windup
 
 # プレイヤーが周囲にいたらスキル選択
-    execute if score @s[tag=!8N.InAction] General.Mob.Tick matches 40.. if entity @p[distance=..64] run function asset:mob/0311.blazing_inferno/tick/base_move/skill_select/
+    execute if score @s[tag=!8N.InAction] General.Mob.Tick matches 40.. if entity @p[gamemode=!spectator,distance=..64] run function asset:mob/0311.blazing_inferno/tick/base_move/skill_select/
 
 # 選択したスキル発動
     execute if entity @s[tag=8N.InAction] run function asset:mob/0311.blazing_inferno/tick/base_move/skill_active

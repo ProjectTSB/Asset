@@ -9,7 +9,7 @@
 
 # 近くのプレイヤーの方を向く
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
-    execute if score @s AV.AnimationTick matches 1..45 as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 1..45 as @a[tag=!PlayerShouldInvulnerable,distance=..100] if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 57..66 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
 
 # アニメーション再生
@@ -26,11 +26,11 @@
 
 # 移動
     # TP
-        execute if score @s AV.AnimationTick matches 31..41 at @s unless entity @a[distance=..2] positioned ^ ^ ^2 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 42 at @s unless entity @a[distance=..2] positioned ^ ^ ^1 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 43 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 44 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.25 run function asset:mob/0391.axia_first/ai/general/1.teleport
-        execute if score @s AV.AnimationTick matches 45 at @s unless entity @a[distance=..2] positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 31..41 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^2 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 42 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^1 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 43 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.5 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 44 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.25 run function asset:mob/0391.axia_first/ai/general/1.teleport
+        execute if score @s AV.AnimationTick matches 45 at @s unless entity @a[tag=!PlayerShouldInvulnerable,distance=..2] positioned ^ ^ ^0.1 run function asset:mob/0391.axia_first/ai/general/1.teleport
 
 # ダメージ
     execute if score @s AV.AnimationTick matches 48 run function asset:mob/0391.axia_first/ai/animation/6_2_moving_iai/damage

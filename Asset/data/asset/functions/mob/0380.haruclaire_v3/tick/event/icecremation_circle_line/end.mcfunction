@@ -6,7 +6,7 @@
 
 # タグ消去
     tag @s remove AK.Skill.IceCremation.CircleLine
-    tag @a remove AK.MainTarget
+    tag @a[tag=AK.MainTarget,distance=..80,limit=1] remove AK.MainTarget
 
 # 移動
     scoreboard players set @s AK.EventTimer 0

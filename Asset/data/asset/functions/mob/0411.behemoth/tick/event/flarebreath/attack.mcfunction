@@ -13,7 +13,6 @@
     playsound entity.wither.hurt hostile @a ~ ~ ~ 3 0.5
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 4
     data modify storage lib: args.dy set value 5
     data modify storage lib: args.dz set value 25
@@ -26,7 +25,7 @@
     function api:damage/modifier
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset
-    tag @a remove DXYZ
+    tag @a[tag=DXYZ] remove DXYZ
 
 # 口元
     execute as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0411.behemoth/tick/event/flarebreath/effect_flame.m with entity @s data.locators.pos_head

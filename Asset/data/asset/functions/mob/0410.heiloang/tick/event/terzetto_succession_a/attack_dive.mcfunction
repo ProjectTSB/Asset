@@ -5,7 +5,6 @@
 # @within asset:mob/0410.heiloang/tick/event/terzetto_succession_a/
 
 # ヒット判定
-    tag @a[tag=DXYZ] remove DXYZ
     data modify storage lib: args.dx set value 11
     data modify storage lib: args.dy set value 10
     data modify storage lib: args.dz set value 7.5

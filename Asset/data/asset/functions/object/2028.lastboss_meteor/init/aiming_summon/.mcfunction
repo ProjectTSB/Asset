@@ -9,7 +9,7 @@
 #declare tag 2028.Marker.MeteorTarget
 
 # Marker召喚
-    execute at @r[distance=..100] run summon marker ~ ~ ~ {Tags:["2028.Marker.MeteorTarget"]}
+    execute at @r[gamemode=!spectator,distance=..100] run summon marker ~ ~ ~ {Tags:["2028.Marker.MeteorTarget"]}
 
 # マーカーが地面に落ちる
     execute as @e[type=marker,tag=2028.Marker.MeteorTarget,limit=1] at @s run function asset:object/2028.lastboss_meteor/init/recursive_down

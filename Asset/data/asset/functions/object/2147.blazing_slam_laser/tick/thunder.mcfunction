@@ -42,8 +42,8 @@
         data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
         function api:damage/modifier_manual
         execute positioned ~-1 ~-1 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=10,dz=1] add Hit
-        tag @a[distance=..2] add Hit
-        execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable] run function api:damage/
+        tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add Hit
+        execute as @a[tag=Hit] run function api:damage/
 
 # リセット
     tag @a[tag=Hit,distance=..32] remove Hit

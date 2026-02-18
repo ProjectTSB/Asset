@@ -8,9 +8,9 @@
 # 一部の時間のみ向く処理を入れる
     execute if score @s AV.AnimationTick matches 1..98 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/max/2_hard as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
+    execute if score @s AV.AnimationTick matches 99..114 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
     execute if score @s AV.AnimationTick matches 125..152 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
-    execute if score @s AV.AnimationTick matches 153..162 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
+    execute if score @s AV.AnimationTick matches 153..162 if predicate api:global_vars/difficulty/min/3_blessless if entity @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/animation/3_0_triple_slash/predict/
 
 # アニメーション再生
     execute if score @s AV.AnimationTick matches 1 as @e[type=item_display,tag=AV.Root.This,distance=..100] run function animated_java:axia/animations/11_0_dimension_slash/play

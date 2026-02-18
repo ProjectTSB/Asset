@@ -6,7 +6,7 @@
 
 # タグ消去
     tag @s remove BE.Skill.Damage
-    tag @a remove BE.MainTarget
+    tag @a[tag=BE.MainTarget,limit=1] remove BE.MainTarget
 
 # 大技開始
     scoreboard players set @s BE.EventTimer 0

@@ -30,7 +30,7 @@
     execute as @a[tag=93.Temp.AttackTarget] run function api:damage/
 # リセット
     function api:damage/reset
-    tag @a remove 93.Temp.AttackTarget
+    tag @a[tag=93.Temp.AttackTarget] remove 93.Temp.AttackTarget
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2190

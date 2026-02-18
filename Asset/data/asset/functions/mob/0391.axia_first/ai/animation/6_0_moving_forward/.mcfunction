@@ -10,7 +10,7 @@
 # プレイヤーの方を向く
 # 移動中は対象プレイヤーの方を向く
     scoreboard players operation $AV.Temp AV.UUID = @s AV.UUID
-    execute if score @s AV.AnimationTick matches 1..30 as @a if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
+    execute if score @s AV.AnimationTick matches 1..30 as @a[tag=!PlayerShouldInvulnerable,distance=..100] if score @s UserID = $AV.Temp AV.UUID run function asset:mob/0391.axia_first/ai/general/2.rotate
     execute if score @s AV.AnimationTick matches 31..36 as @p[tag=!PlayerShouldInvulnerable,distance=..100] run function asset:mob/0391.axia_first/ai/general/2.rotate
     scoreboard players reset $AV.Temp AV.UUID
 

@@ -42,7 +42,7 @@
 
 # ワープポイント演出
     execute if score @s 9F.AnimationTimer matches 13 as @e[type=area_effect_cloud,tag=9F.Temp.Target.Warp] at @s run particle flash ~ ~ ~ 0 0 0 0 1
-    execute as @e[type=area_effect_cloud,tag=9F.Temp.Target.Warp] at @s facing entity @p feet rotated ~ 0 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_1_hg_warpshot/4.particle_warppoint
+    execute as @e[type=area_effect_cloud,tag=9F.Temp.Target.Warp] at @s facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet rotated ~ 0 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_1_hg_warpshot/4.particle_warppoint
 
 # 終了
     execute if score @s 9F.AnimationTimer matches 86.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/07_1_hg_warpshot/2.end

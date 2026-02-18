@@ -30,5 +30,5 @@
     execute if score @s 9F.AnimationTimer matches 50 at @s positioned ^ ^1 ^1 run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/5.damage
 
 # 終了
-    execute if score @s 9F.AnimationTimer matches 65 if entity @a[distance=..7] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.change_to_lowkick
+    execute if score @s 9F.AnimationTimer matches 65 if entity @a[tag=!PlayerShouldInvulnerable,distance=..7] run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/4.change_to_lowkick
     execute if score @s 9F.AnimationTimer matches 70.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_hg_punch/2.end

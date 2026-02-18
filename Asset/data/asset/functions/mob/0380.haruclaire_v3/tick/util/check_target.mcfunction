@@ -5,8 +5,8 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/**
 
 # ターゲットが居れば処理しない
-    execute if entity @a[tag=AK.MainTarget,distance=..80] run return 0
+    execute if entity @a[gamemode=!spectator,tag=AK.MainTarget,distance=..80,limit=1] run return 0
 
 # ターゲットが居なければ最も近いプレイヤーをターゲットに更新
-    tag @a remove AK.MainTarget
-    tag @p[distance=..80] add AK.MainTarget
+    tag @a[tag=AK.MainTarget] remove AK.MainTarget
+    tag @p[gamemode=!spectator,distance=..80] add AK.MainTarget

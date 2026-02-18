@@ -14,7 +14,7 @@
     tag @e[type=item_display,tag=AI.AJ,distance=..0.01,sort=nearest,limit=1] add AI.AJLink
 
 # ある程度遠い場合、TPで移動する
-    execute if score @s AI.Tick matches 0 if entity @s[tag=!AI.Opening,tag=!AI.Skill90Used] unless entity @p[distance=..10] run tag @s add AI.Skill90
+    execute if score @s AI.Tick matches 0 if entity @s[tag=!AI.Opening,tag=!AI.Skill90Used] unless entity @p[gamemode=!spectator,distance=..10] run tag @s add AI.Skill90
 # ランダムでも無理やりやる
     execute if score @s AI.Tick matches 0 if entity @s[tag=!AI.Opening,tag=!AI.Skill90Used] if predicate lib:random_pass_per/30 run tag @s add AI.Skill90
 

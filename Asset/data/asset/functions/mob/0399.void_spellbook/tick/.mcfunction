@@ -16,7 +16,7 @@
     execute at @s unless block ^ ^ ^0.2 #lib:no_collision run tp @s ~ ~ ~ ~45 ~-45
 
 # 範囲内ならホーミングじみた移動
-    execute facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.025 ~ ~
+    execute facing entity @p[tag=!PlayerShouldInvulnerable,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.025 ~ ~
 
 # Timeを取る
     execute store result score $B3.Temp Temporary run time query gametime

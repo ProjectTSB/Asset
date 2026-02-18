@@ -6,7 +6,7 @@
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
 # プレイヤーが近くにいなければ，即座にそのまま射撃
-    execute if score @s 93.AnimationTimer matches 1 unless entity @a[distance=..8] run scoreboard players set @s 93.AnimationTimer 66
+    execute if score @s 93.AnimationTimer matches 1 unless entity @a[gamemode=!spectator,distance=..8] run scoreboard players set @s 93.AnimationTimer 66
 
 ## 移動・射撃
 # animated javaアニメーション再生 (長さ：65tick)

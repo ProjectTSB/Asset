@@ -6,7 +6,7 @@
 
 
 # 攻撃対象にTagを付与
-    tag @r[distance=..15] add Target
+    tag @r[gamemode=!spectator,distance=..15] add Target
 
 # 攻撃対象のベクトルを取得
     execute as @p[tag=Target] run function api:player_vector/get

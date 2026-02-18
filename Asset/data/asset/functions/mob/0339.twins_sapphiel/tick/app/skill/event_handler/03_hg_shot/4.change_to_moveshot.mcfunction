@@ -12,5 +12,5 @@
 
 # 側転射撃に移行
 # 左右確認
-    execute facing entity @a[sort=nearest,limit=1] feet positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add 9F.Skill.Hg.Shot.MoveLeft
+    execute facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet positioned ^ ^ ^3.0 rotated as @s positioned ^4.0 ^ ^ if entity @s[distance=..5.0] run tag @s add 9F.Skill.Hg.Shot.MoveLeft
     execute unless entity @s[tag=9F.Skill.Hg.Shot.MoveLeft] run tag @s add 9F.Skill.Hg.Shot.MoveRight

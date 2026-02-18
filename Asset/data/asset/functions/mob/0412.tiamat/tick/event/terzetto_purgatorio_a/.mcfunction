@@ -61,8 +61,8 @@
         execute if score @s BG.EventTimer matches 450 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
         execute if score @s BG.EventTimer matches 515 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 3 0.65
         execute if score @s BG.EventTimer matches 515 run particle block blackstone_wall ~ ~1 ~ 2 0 2 0 20 force
-        execute if score @s BG.EventTimer matches 467..485 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
-        execute if score @s BG.EventTimer matches 467..485 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 467..485 positioned ~ ~32 ~ run playsound entity.wither.hurt hostile @a[tag=!PlayerShouldInvulnerable,distance=..80] ~ ~ ~ 0.2 0.5 0.2
+        execute if score @s BG.EventTimer matches 467..485 positioned ~ ~32 ~ run playsound entity.phantom.death hostile @a[tag=!PlayerShouldInvulnerable,distance=..80] ~ ~ ~ 0.2 0.5 0.2
     # 攻撃
         execute if score @s BG.EventTimer matches 350..450 positioned ~ ~0.5 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/prediction_circle
         execute if score @s BG.EventTimer matches 430 positioned ~ ~0.2 ~ run function asset:mob/0412.tiamat/tick/event/terzetto_purgatorio_a/summon_attack_pos

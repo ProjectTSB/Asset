@@ -6,7 +6,7 @@
 
 # メテオ落下1
     # サウンド
-        execute if score @s General.Mob.Tick matches 20 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
+        execute if score @s General.Mob.Tick matches 20 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
     # 拡散設置: ハード以上だと数が増える
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 20 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
@@ -17,7 +17,7 @@
 
 # メテオ落下2
     # サウンド
-        execute if score @s General.Mob.Tick matches 40 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
+        execute if score @s General.Mob.Tick matches 40 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
     # 拡散設置: ハード以上で増える
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread
         execute if score @s General.Mob.Tick matches 40 run function asset:mob/1004.tultaria/tick/skill/fire/meteor_rain/meteor/spread

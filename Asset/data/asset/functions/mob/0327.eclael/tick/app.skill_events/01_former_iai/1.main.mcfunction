@@ -33,8 +33,8 @@
 # 移動
     execute if score @s 93.AnimationTimer matches 44 run playsound block.grass.step hostile @a ~ ~ ~ 1 1
     execute if score @s 93.AnimationTimer matches 44 run playsound block.grass.step hostile @a ~ ~ ~ 1 1
-    execute if score @s 93.AnimationTimer matches 44..51 at @s unless entity @a[distance=..3] positioned ^ ^ ^1.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
-    execute if score @s 93.AnimationTimer matches 52..58 at @s unless entity @a[distance=..3] positioned ^ ^ ^0.6 run function asset:mob/0327.eclael/tick/app.general/2.teleport
+    execute if score @s 93.AnimationTimer matches 44..51 at @s unless entity @a[gamemode=!spectator,distance=..3] positioned ^ ^ ^1.5 run function asset:mob/0327.eclael/tick/app.general/2.teleport
+    execute if score @s 93.AnimationTimer matches 52..58 at @s unless entity @a[gamemode=!spectator,distance=..3] positioned ^ ^ ^0.6 run function asset:mob/0327.eclael/tick/app.general/2.teleport
     execute if score @s 93.AnimationTimer matches 44..58 run function asset:mob/0327.eclael/tick/app.general/15.update_altitude
 
 ## 攻撃

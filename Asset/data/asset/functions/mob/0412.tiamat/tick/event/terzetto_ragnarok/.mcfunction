@@ -83,7 +83,7 @@
     # 氷柱設置
         # 周囲のプレイヤー数と同じだけ設置、最大6
             execute if score @s BG.EventTimer matches 514 at @e[type=marker,tag=BE.CenterPosition] run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_pillar_position
-            execute if score @s BG.EventTimer matches 515 as @a[distance=..80] as @e[type=area_effect_cloud,tag=BG.Temp.PillarPosition,sort=random,limit=1] at @s run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_pillar
+            execute if score @s BG.EventTimer matches 515 as @a[tag=!PlayerShouldInvulnerable,distance=..80] as @e[type=area_effect_cloud,tag=BG.Temp.PillarPosition,sort=random,limit=1] at @s run function asset:mob/0412.tiamat/tick/event/terzetto_ragnarok/summon_pillar
         # 破壊
             execute if score @s BG.EventTimer matches 800 run tag @e[type=item_display,tag=2180.Pillar] add 2180.Pillar.Death
 # 移動

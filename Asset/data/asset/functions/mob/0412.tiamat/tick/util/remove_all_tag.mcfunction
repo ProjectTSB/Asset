@@ -7,4 +7,4 @@
 # @within asset:mob/0412.tiamat/remove/
 
 # ターゲット用タグ
-    tag @a remove BG.MainTarget
+    tag @a[tag=BG.MainTarget] remove BG.MainTarget

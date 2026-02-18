@@ -45,7 +45,7 @@
     execute unless block ~ ~2.5 ~ #lib:no_collision if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
 
 # そこらのプレイヤーより下にいる場合、上昇する
-    execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~
+    execute positioned ~-50 ~ ~-50 unless entity @a[gamemode=!spectator,dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~
 
 # AJモデルとの紐づけ解除
     execute at @s run tag @e[type=item_display,tag=AC.AJLink,distance=..0.01,sort=nearest,limit=1] remove AC.AJLink

@@ -13,7 +13,7 @@
 
 # 移動
     execute if score @s 9F.AnimationTimer matches 17 run function asset:mob/0339.twins_sapphiel/app/general/6.teleport_to_land
-    execute if score @s 9F.AnimationTimer matches 18 facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute if score @s 9F.AnimationTimer matches 18 facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     # 中心点から遠い場合は、中心に向かって移動
         execute if score @s 9F.AnimationTimer matches 18 if entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..15] at @s positioned ^ ^0.5 ^-10 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
         execute if score @s 9F.AnimationTimer matches 18 unless entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..15] at @s facing entity @e[type=marker,tag=9E.Marker.SpawnPoint,distance=..17,limit=1] feet rotated ~ 0 positioned ^ ^0.5 ^8 run function asset:mob/0339.twins_sapphiel/app/general/3.teleport

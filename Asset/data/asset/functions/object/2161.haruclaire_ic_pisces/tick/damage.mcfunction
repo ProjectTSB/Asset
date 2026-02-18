@@ -6,7 +6,6 @@
 
 # ダメージ
     # ヒット判定
-        tag @a remove DXYZ
         data modify storage lib: args.dx set value 6
         data modify storage lib: args.dy set value 4
         data modify storage lib: args.dz set value 5
@@ -23,7 +22,7 @@
         execute as @a[tag=DXYZ] run function api:damage/
         function api:damage/reset
         tag @a[tag=DXYZ] add 2161.Attack.Hit
-        tag @a remove DXYZ
+        tag @a[tag=DXYZ] remove DXYZ
 
 # # 演出
 #     # 円 1

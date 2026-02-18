@@ -45,9 +45,9 @@
     # モデルを自身の位置に移動
         execute if score @s BE.EventTimer matches 254..332 at @s as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ 0
     # テンペスト配置
-        execute if score @s BE.EventTimer matches 145 if predicate api:global_vars/difficulty/min/2_hard as @a[distance=..80,sort=random,limit=3] run tag @s add BE.AttackTarget
-        execute if score @s BE.EventTimer matches 145 if entity @a[tag=BE.AttackTarget] at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
-        execute if score @s BE.EventTimer matches 242..279 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 145 if predicate api:global_vars/difficulty/min/2_hard as @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=random,limit=3] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 145 at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/plamet/attack_tempest
+        execute if score @s BE.EventTimer matches 242..279 as @a[tag=BE.AttackTarget,tag=!PlayerShouldInvulnerable,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 242..279 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # 終了

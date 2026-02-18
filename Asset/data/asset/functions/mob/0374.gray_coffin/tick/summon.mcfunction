@@ -17,7 +17,7 @@
 # 召喚
     data modify storage api: Argument.ID set value 2092
     data modify storage api: Argument.FieldOverride.StartDelay set value 50
-    execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @p[tag=Target] UserID
+    execute store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @a[tag=Target,limit=1] UserID
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=polar_bear,tag=this,distance=..5,sort=nearest,limit=1] MobUUID
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation

@@ -24,4 +24,4 @@
     function api:damage/reset
 
 # tagリセット
-    tag @a[tag=DXYZ,distance=..64] remove DXYZ
+    tag @a[tag=DXYZ] remove DXYZ

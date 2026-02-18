@@ -18,7 +18,6 @@
 
 # リセット
     tag @s[tag=2031.BeginningSpin] remove 2031.BeginningSpin
-    tag @a[tag=DXYZ,distance=..10] remove DXYZ
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]

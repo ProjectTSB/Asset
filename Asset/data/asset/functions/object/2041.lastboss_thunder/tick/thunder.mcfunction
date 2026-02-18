@@ -15,8 +15,8 @@
     particle minecraft:explosion ~ ~ ~ 1 0.5 1 0.5 5
 
 # 演出
-    playsound entity.lightning_bolt.thunder hostile @p ~ ~ ~ 0.3 2 0
-    playsound entity.lightning_bolt.impact hostile @p ~ ~ ~ 0.3 0 0
+    playsound entity.lightning_bolt.thunder hostile @a[distance=..32] ~ ~ ~ 0.3 2 0
+    playsound entity.lightning_bolt.impact hostile @a[distance=..32] ~ ~ ~ 0.3 0 0
 
 # 変形
     function asset:object/2041.lastboss_thunder/tick/transform/1

@@ -19,7 +19,7 @@
 # 大技の頻度を下げる
     execute if score @s AI.Skill matches 6 if predicate lib:random_pass_per/20 run scoreboard players set @s AI.Skill 1
 # 近距離だと突進に変更
-    execute if score @s AI.Skill matches 1 unless entity @p[distance=..3] run scoreboard players set @s AI.Skill 2
+    execute if score @s AI.Skill matches 1 unless entity @p[gamemode=!spectator,distance=..3] run scoreboard players set @s AI.Skill 2
 
 
 # スキル選択

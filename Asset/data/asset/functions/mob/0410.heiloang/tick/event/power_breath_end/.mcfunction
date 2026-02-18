@@ -19,7 +19,7 @@
     # 攻撃
         execute if score @s BE.EventTimer matches 20 at @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] positioned ^ ^1 ^7 run function asset:mob/0410.heiloang/tick/event/power_breath/attack
 # 対象を向く
-    execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s facing entity @p[tag=BE.MainTarget] feet run tp @s ~ ~ ~ ~ 0
+    execute if score @s BE.EventTimer matches 1 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s facing entity @p[tag=BE.MainTarget,tag=!PlayerShouldInvulnerable] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s BE.EventTimer matches 50.. as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] at @s run function asset:mob/0410.heiloang/tick/util/rotate_to_center
 
 # 終了

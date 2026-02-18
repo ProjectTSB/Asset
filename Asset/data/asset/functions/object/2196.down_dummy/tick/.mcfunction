@@ -8,7 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 近くのプレイヤーを自分の位置に移動
-    execute unless entity @a[distance=..0.6] if entity @a[distance=0.8..1] as @p run tp @s ~ ~ ~
+    execute unless entity @a[tag=!PlayerShouldInvulnerable,distance=..0.6,limit=1] if entity @a[tag=!PlayerShouldInvulnerable,distance=0.8..1,limit=1] as @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run tp @s ~ ~ ~
 
 # 3秒後に消去
     execute if entity @s[scores={General.Object.Tick=60..}] run fill ~ ~1 ~ ~ ~1 ~ air replace barrier
