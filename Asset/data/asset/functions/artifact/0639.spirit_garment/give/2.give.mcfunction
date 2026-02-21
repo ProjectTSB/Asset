@@ -60,7 +60,7 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"heal",Amount:0.06d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:1d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
