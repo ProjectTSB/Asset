@@ -36,7 +36,7 @@
     data modify storage lib: args.dx set value 2.5
     data modify storage lib: args.dy set value 2.5
     execute store result storage lib: args.dz float 0.5 run scoreboard players get $Range Temporary
-    data modify storage lib: args.selector set value "@e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..40]"
+    data modify storage lib: args.selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..40]"
 
 # マクロでRotatableDXYZの実行位置を調整する
     execute store result storage asset:temp Args.Pos float 0.5 run scoreboard players get $Range Temporary
@@ -48,11 +48,11 @@
     data modify storage api: Argument.ElementType set value "Fire"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=DXYZ,tag=!Uninterferable,distance=..40] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=DXYZ,tag=!Uninterferable,distance=..40] run function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=DXYZ,distance=..40] remove DXYZ
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=DXYZ,distance=..40] remove DXYZ
     scoreboard players reset $Range Temporary
     scoreboard players reset $UserID Temporary
     data remove storage asset:temp Args

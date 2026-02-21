@@ -18,7 +18,7 @@
         particle dust 0.1 0.7 1 0.3 ^ ^ ^-0.5 0.07 0.07 0.07 1 1 force @a[distance=..30]
 
 # ダメージ判定
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run function asset:artifact/1024.brave_rod/trigger/combo/laser_damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run function asset:artifact/1024.brave_rod/trigger/combo/laser_damage
 
 # 後でレーザーの長さを決めるためにスコア加算
     scoreboard players add @s Temporary 1

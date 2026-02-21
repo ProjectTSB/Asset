@@ -11,13 +11,13 @@
 
 # 演出
     playsound minecraft:entity.drowned.death_water player @a ~ ~ ~ 1 0.8
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle minecraft:squid_ink ~ ~1 ~ 0.4 0.4 0.4 0.03 30
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle minecraft:squid_ink ~ ~1 ~ 0.4 0.4 0.4 0.03 30
 
 # ダメージ
     data modify storage api: Argument.Damage set value 15.0f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
 
 # 回復

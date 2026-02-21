@@ -8,11 +8,11 @@
 # ここから先は神器側の効果の処理を書く
 
 # 着弾検知
-    execute if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] run tag @s add AD.Hit
+    execute if entity @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] run tag @s add AD.Hit
     execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add AD.Hit
 
 # ターゲットにタグ付与
-    execute if entity @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2] run tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2,limit=1] add AD.HitTarget
+    execute if entity @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2,limit=1] add AD.HitTarget
 
 # 演出
     particle minecraft:block blue_ice ~ ~ ~ 0 0 0 2 1 force
