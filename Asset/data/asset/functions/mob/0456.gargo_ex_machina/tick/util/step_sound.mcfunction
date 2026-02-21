@@ -1,8 +1,8 @@
-#> asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
+#> asset:mob/0456.gargo_ex_machina/tick/util/step_sound
 #
-# 移動
+# 足音
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/move/
+# @within asset:mob/0456.gargo_ex_machina/tick/**
 
 # 演出
     playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.7

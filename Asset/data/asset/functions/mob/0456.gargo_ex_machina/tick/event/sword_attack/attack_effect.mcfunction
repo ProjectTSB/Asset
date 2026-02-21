@@ -9,6 +9,11 @@
     playsound entity.iron_golem.death hostile @a ~ ~ ~ 2 0.5
     playsound entity.wither.break_block hostile @a ~ ~ ~ 2 0.7
 
+# 斬撃オブジェクト
+    data modify storage api: Argument.ID set value 2001
+    data modify storage api: Argument.FieldOverride set value {Color:9484241,Scale:[40f,40f,7f],Transformation:{left_rotation:[0f,-0.7068252f,0f,0.7073883f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^8 ^-18 run function api:object/summon
+
 # パーティクル
     particle explosion ~ ~1 ~ 5 2 5 0 30
     # 円型ベクトルパーティクル

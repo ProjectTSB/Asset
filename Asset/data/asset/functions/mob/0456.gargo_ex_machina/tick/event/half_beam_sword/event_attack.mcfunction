@@ -18,9 +18,14 @@
         execute if score @s CO.EventTimer matches 15 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 32 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 50 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
+        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 44 positioned ^-4 ^ ^-3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 60 positioned ^4 ^ ^4 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 44 positioned ^4 ^ ^4 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 60 positioned ^-4 ^ ^-3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
     # 攻撃
-        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^-25 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack
-        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^25 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack
+        execute if score @s CO.EventTimer matches 16 run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack_sword
+        execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^-30 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack
+        execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 23 positioned ^30 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/attack
     # 攻撃演出
         execute if score @s CO.EventTimer matches 11 positioned ~ ~12 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/summon_laser_start
         execute if score @s CO.EventTimer matches 11..18 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.5

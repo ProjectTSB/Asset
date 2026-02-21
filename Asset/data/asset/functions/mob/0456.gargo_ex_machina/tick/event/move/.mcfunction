@@ -24,10 +24,10 @@
         execute if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/walk_start/tween {duration:1, to_frame: 1}
         execute if score @s CO.EventTimer matches 10 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/walk/tween {duration:1, to_frame: 1}
     # 効果音・演出
-        execute if score @s CO.EventTimer matches 24 positioned ^-2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
-        execute if score @s CO.EventTimer matches 39 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
-        execute if score @s CO.EventTimer matches 54 positioned ^-2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
-        execute if score @s CO.EventTimer matches 69 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/event/move/step_sound
+        execute if score @s CO.EventTimer matches 24 positioned ^-2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute if score @s CO.EventTimer matches 39 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute if score @s CO.EventTimer matches 54 positioned ^-2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
+        execute if score @s CO.EventTimer matches 69 positioned ^2.5 ^ ^3 run function asset:mob/0456.gargo_ex_machina/tick/util/step_sound
         execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle crit ~ ~0.5 ~ 0.5 0.1 0.5 0.5 3 force @a[distance=..80]
         execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle block quartz_block ~ ~ ~ 0.5 0.1 0.5 0 5 force @a[distance=..80]
         execute if score @s CO.EventTimer matches 10..65 positioned ^-14 ^ ^-10 run particle explosion ~ ~0.5 ~ 0.5 0.1 0.5 0.5 1 force @a[distance=..80]
