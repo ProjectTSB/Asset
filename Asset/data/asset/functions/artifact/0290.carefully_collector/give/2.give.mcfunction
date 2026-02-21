@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"チェストそのまま回収君","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"真下にある","color":"white"},{"translate":"block.minecraft.chest"},{"text":"を回収する","color":"white"}]','[{"text":"中にアイテムの入った","color":"white"},{"translate":"block.minecraft.chest"}]','[{"text":"または、","color":"white"},{"translate":"block.minecraft.shulker_box"},{"text":"などがある場合は回収できない","color":"white"}]','{"text":"丁寧丁寧丁寧に","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"真下にある%1$s・%2$sを回収する","color":"white","with":[{"translate":"block.minecraft.chest"},{"translate":"block.minecraft.trapped_chest"}]}','{"translate":"中にアイテムの入った%1$s","color":"white","with":[{"translate":"block.minecraft.chest"}]}','{"translate":"または、%1$sなどがある場合は回収できない","color":"white","with":[{"translate":"block.minecraft.shulker_box"}]}','{"text":"丁寧丁寧丁寧に","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
