@@ -27,8 +27,8 @@
     #declare tag CO.Skill.SuperJump スーパージャンプ
     #declare tag CO.Skill.SuperJump.Attack スーパージャンプ
     #declare tag CO.Skill.FieldModify フィールド・モディファイ
-    #declare tag 
-    #declare tag 
+    #declare tag CO.Skill.Transform.Shoot 銃変形
+    #declare tag CO.Skill.Transform.Sword 剣変形
     #declare tag 
     #declare tag 
     #declare tag 
@@ -84,6 +84,14 @@
     #declare function animated_java:gargo_ex_machina/animations/super_jump_start/tween
     #declare function animated_java:gargo_ex_machina/animations/super_jump_end/tween
     #declare function animated_java:gargo_ex_machina/animations/call_drone/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_to_shot/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_to_sword/tween
+    #declare function animated_java:gargo_ex_machina/animations/idle_shot/tween
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
+    #declare function 
     #declare function 
     #declare function 
     #declare function 

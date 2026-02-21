@@ -7,6 +7,10 @@
 # 起動
     execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
 
+# 変形
+    execute if entity @s[tag=CO.Skill.Transform.Shoot] run function asset:mob/0456.gargo_ex_machina/tick/event/transform_shoot/
+    execute if entity @s[tag=CO.Skill.Transform.Sword] run function asset:mob/0456.gargo_ex_machina/tick/event/transform_sword/
+
 # 移動
     execute if entity @s[tag=CO.Skill.Move] run function asset:mob/0456.gargo_ex_machina/tick/event/move/
     execute if entity @s[tag=CO.Skill.Move.End] run function asset:mob/0456.gargo_ex_machina/tick/event/move/event_end
@@ -25,6 +29,9 @@
     execute if entity @s[tag=CO.Skill.HalfBeamSword] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_start
     execute if entity @s[tag=CO.Skill.HalfBeamSword.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_charging
     execute if entity @s[tag=CO.Skill.HalfBeamSword.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_attack
+
+# 半面焼きビーム + 上空射撃
+    # TODO
 
 # スーパージャンプ
     execute if entity @s[tag=CO.Skill.SuperJump] run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_start
