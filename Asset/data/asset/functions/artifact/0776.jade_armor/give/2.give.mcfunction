@@ -61,7 +61,7 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.04d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:1d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
