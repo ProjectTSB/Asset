@@ -4,5 +4,5 @@
 #
 # @within asset:object/alias/5/range_over
 
-# hitメソッド呼び出し
-    function asset:object/call.m {method:hit}
+# killメソッド呼び出し
+    function asset:object/call.m {method:"kill"}
