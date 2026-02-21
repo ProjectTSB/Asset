@@ -1,8 +1,8 @@
-#> asset:object/1106.sparkle_bomb/hit/
+#> asset:object/1106.sparkle_bomb/kill/
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/alias/1106/hit
+# @within asset:object/alias/1106/kill
 
 #> Private
 # @private
