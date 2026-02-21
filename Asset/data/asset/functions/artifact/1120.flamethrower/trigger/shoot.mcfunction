@@ -17,7 +17,7 @@
 # 召喚
     data modify storage api: Argument.ID set value 1053
     data modify storage api: Argument.FieldOverride.Damage set value 112f
-    data modify storage api: Argument.FieldOverride.Tick set value 40f
+    data modify storage api: Argument.FieldOverride.Tick set value 40
     data modify storage api: Argument.FieldOverride.Motion set value 1f
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute facing entity @e[type=marker,tag=SpreadMarker,sort=nearest,limit=1] eyes run function api:object/summon
