@@ -14,7 +14,7 @@
 
 # 移動
     # execute if entity @s[scores={General.Object.Tick=30..}] run tp @s ~ ~-1 ~
-    # execute unless block ~ ~-1 ~ #lib:no_collision run function asset:object/2125.heiloang_ice_burst/tick/damage
+    # execute unless block ~ ~-1 ~ #lib:no_collision/ run function asset:object/2125.heiloang_ice_burst/tick/damage
     execute if entity @s[scores={General.Object.Tick=45..}] run tp @s ~ ~-2 ~
     execute if entity @s[scores={General.Object.Tick=60..}] positioned ~ ~0.5 ~ run function asset:object/2125.heiloang_ice_burst/tick/damage
 

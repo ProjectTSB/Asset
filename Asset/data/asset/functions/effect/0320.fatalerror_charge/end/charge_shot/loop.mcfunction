@@ -13,11 +13,11 @@
 # ヒットしたら対象に着弾検知Tagを付与
     execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run tag @s add Target
 # 距離が来るor壁が来た場合、着弾タグをつける
-    execute unless block ^ ^ ^0.6 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^0.6 #lib:no_collision/ run tag @s add Landing
     execute unless entity @s[distance=..15] run tag @s add Landing
 
 # ダメージを与える
     execute if entity @s[tag=Landing] run function asset:effect/0320.fatalerror_charge/end/charge_shot/landing
 
 # 再帰
-    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if block ^ ^ ^ #lib:no_collision run function asset:effect/0320.fatalerror_charge/end/charge_shot/loop
+    execute if entity @s[tag=!Landing] positioned ^ ^ ^0.6 if block ^ ^ ^ #lib:no_collision/ run function asset:effect/0320.fatalerror_charge/end/charge_shot/loop

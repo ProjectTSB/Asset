@@ -5,14 +5,14 @@
 # @within function asset:mob/alias/274/tick
 
 # 足元が空気なら少し落下
-    execute if block ~ ~-0.5 ~ #lib:no_collision run tp @s ~ ~-0.5 ~
+    execute if block ~ ~-0.5 ~ #lib:no_collision/ run tp @s ~ ~-0.5 ~
 
 # 前方が階段状なら上にTPする
-    execute unless block ^ ^ ^1 #lib:no_collision if block ^ ^1 ^1 #lib:no_collision at @s run tp ~ ~1 ~
+    execute unless block ^ ^ ^1 #lib:no_collision/ if block ^ ^1 ^1 #lib:no_collision/ at @s run tp ~ ~1 ~
 # 前方が壁なら方向転換
-    execute unless block ^ ^ ^1 #lib:no_collision unless block ^ ^1 ^1 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~
+    execute unless block ^ ^ ^1 #lib:no_collision/ unless block ^ ^1 ^1 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~
 # 前方が2m穴なら適当に方向転換
-    execute unless block ~ ~-1 ~ #lib:no_collision if block ^ ^ ^1 #lib:no_collision if block ^ ^-1 ^1 #lib:no_collision if block ^ ^-2 ^1 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~
+    execute unless block ~ ~-1 ~ #lib:no_collision/ if block ^ ^ ^1 #lib:no_collision/ if block ^ ^-1 ^1 #lib:no_collision/ if block ^ ^-2 ^1 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~
 
 # プレイヤーが近くにいないなら前進する
     execute unless entity @a[distance=..10] at @s rotated ~ 0 run tp ^ ^ ^0.2
