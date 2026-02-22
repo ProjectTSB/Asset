@@ -6,8 +6,8 @@
 
 # 消去
     # ボスドロ
-        data modify storage api: Argument.ID set value 1078
-        data modify storage api: Argument.Important set value true
-        function api:artifact/spawn/from_id
+        # data modify storage api: Argument.ID set value 1078
+        # data modify storage api: Argument.Important set value true
+        # function api:artifact/spawn/from_id
     # 消去
         function animated_java:twins_rubiel/remove/this
