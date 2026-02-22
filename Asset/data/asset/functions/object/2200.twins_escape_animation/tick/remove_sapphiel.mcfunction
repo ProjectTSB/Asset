@@ -6,8 +6,6 @@
 
 # 消去
     # ボスドロ
-        # data modify storage api: Argument.ID set value 1079
-        # data modify storage api: Argument.Important set value true
-        # function api:artifact/spawn/from_id
+        function asset:object/2200.twins_escape_animation/tick/drop/sapphiel.m with storage asset:context this.Pos
     # 消去
         function animated_java:twins_sapphiel/remove/this
