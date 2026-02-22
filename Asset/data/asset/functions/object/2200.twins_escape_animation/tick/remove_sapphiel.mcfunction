@@ -9,5 +9,3 @@
         function asset:object/2200.twins_escape_animation/tick/drop/sapphiel.m with storage asset:context this.Pos
     # 消去
         function animated_java:twins_sapphiel/remove/this
-
-tellraw @a {"storage":"asset:context","nbt":"this"}
