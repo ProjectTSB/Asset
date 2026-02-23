@@ -9,14 +9,17 @@
     #declare score_holder $Interval
 
 # 一定間隔で実行
-    scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    scoreboard players operation $Interval Temporary %= $8 Const
-    execute if score $Interval Temporary matches 0 at @s rotated ~ 0 run tag @s add 2049.Interval
-    scoreboard players reset $Interval Temporary
+    execute store result storage asset:context this.AttackInterval int 0.9999999999 run data get storage asset:context this.AttackInterval
+    execute if data storage asset:context this{AttackInterval:0} run function asset:object/2049.lightning_magic/tick/thunder
+    execute if data storage asset:context this{AttackInterval:0} run data modify storage asset:context this.AttackInterval set value 8
 
-# IntervalTagがある時のみ実行
-    execute if entity @s[tag=2049.Interval] run function asset:object/2049.lightning_magic/tick/thunder
+# 一定間隔でtext_displayのフレームを反映
+    execute store result storage asset:context this.FrameInterval int 0.9999999999 run data get storage asset:context this.FrameInterval
+    execute if data storage asset:context this{FrameInterval:0} on passengers if entity @s[type=text_display] run function asset:object/2049.lightning_magic/tick/text_frame
+    execute if data storage asset:context this{FrameInterval:0} run data modify storage asset:context this.FrameInterval set value 2
 
 # プレイヤーの方向へ誘導する
-    execute if predicate api:global_vars/difficulty/max/2_hard facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if predicate api:global_vars/difficulty/min/3_blessless facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+
+# 現在座標がno_collison && 真下がブロック && 自身が下を向いている なら角度を0に固定する
+    execute if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-0.15 ~ #lib:no_collision/without_fluid at @s if entity @s[x_rotation=0..90] run tp @s ~ ~ ~ ~ 0
