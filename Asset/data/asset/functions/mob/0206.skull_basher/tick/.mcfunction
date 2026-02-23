@@ -14,4 +14,4 @@
 
 # バックステップ、フロントステップ
     execute if entity @a[distance=..20] run scoreboard players add @s 5Q.MoveTime 1
-    execute facing entity @p[distance=..20] eyes rotated ~ 0 unless block ^ ^-1 ^3 #lib:no_collision if score @s 5Q.MoveTime matches 40.. run function asset:mob/0206.skull_basher/tick/event/step
+    execute facing entity @p[distance=..20] eyes rotated ~ 0 unless block ^ ^-1 ^3 #lib:no_collision/ if score @s 5Q.MoveTime matches 40.. run function asset:mob/0206.skull_basher/tick/event/step

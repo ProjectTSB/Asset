@@ -11,8 +11,8 @@
     # アニメーション再生
         execute if score @s AK.EventTimer matches 1 as @e[type=item_display,tag=AK.ModelRoot,distance=..80,sort=nearest,limit=1] run function asset:mob/0380.haruclaire_v3/tick/animated_java/play/26_0_second_ice_cremation_first
     # 地面に移動
-        execute if score @s AK.EventTimer matches 1..80 unless block ~ ~-0.64 ~ #lib:no_collision positioned ^ ^0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 1..80 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 1..80 unless block ~ ~-0.64 ~ #lib:no_collision/ positioned ^ ^0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 1..80 if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
     # 攻撃
         # 召喚
             execute if score @s AK.EventTimer matches 139 at @s run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/attack

@@ -13,7 +13,7 @@
     execute if block ~ ~ ~ #lib:unbreakable run return fail
 
 # 実行位置に条件を満たすブロックがあれば $397_Stat を1に
-    execute unless block ~ ~ ~ #lib:no_collision if block ~ ~1 ~ #lib:no_collision if block ~ ~2 ~ #lib:no_collision run scoreboard players set $397_Stat Temporary 1
+    execute unless block ~ ~ ~ #lib:no_collision/ if block ~ ~1 ~ #lib:no_collision/ if block ~ ~2 ~ #lib:no_collision/ run scoreboard players set $397_Stat Temporary 1
 
 # 位置保存用AEC召喚
     execute if score $397_Stat Temporary matches 1 run summon area_effect_cloud ~ ~1 ~ {Tags:["B1.Marker"],Particle:"block air",Radius:0f,Age:-1,Duration:1}

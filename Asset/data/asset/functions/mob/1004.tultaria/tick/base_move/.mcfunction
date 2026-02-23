@@ -33,6 +33,6 @@
     execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
 
     # 下が空気なら通常実行
-    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] if block ~ ~-1 ~ #lib:no_collision run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
+    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] if block ~ ~-1 ~ #lib:no_collision/ run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
     # 下が空気じゃないなら縦軸を無視
-    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] unless block ~ ~-1 ~ #lib:no_collision rotated ~ 0 run function asset:mob/1004.tultaria/tick/base_move/fake_inertia
+    #    execute if entity @s[tag=!RW.DisableInertia,scores={RW.FakeInertia=0..}] unless block ~ ~-1 ~ #lib:no_collision/ rotated ~ 0 run function asset:mob/1004.tultaria/tick/base_move/fake_inertia

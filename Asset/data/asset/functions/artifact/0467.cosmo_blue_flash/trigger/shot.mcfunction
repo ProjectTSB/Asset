@@ -16,4 +16,4 @@
     execute if entity @e[type=#lib:living,tag=CZ.HitEntity,distance=..40] run tag @s add CZ.HitFlag
 
 # 再帰
-    execute positioned ^ ^ ^0.5 if block ~ ~ ~ #lib:no_collision if entity @s[tag=!CZ.HitFlag,distance=..30] run function asset:artifact/0467.cosmo_blue_flash/trigger/shot
+    execute positioned ^ ^ ^0.5 if block ~ ~ ~ #lib:no_collision/ if entity @s[tag=!CZ.HitFlag,distance=..30] run function asset:artifact/0467.cosmo_blue_flash/trigger/shot

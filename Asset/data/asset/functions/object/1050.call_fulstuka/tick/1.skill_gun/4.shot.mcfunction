@@ -8,7 +8,7 @@
 
 # 着弾検知
     execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run tag @s add Landing
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add Landing
 
 # ターゲットにタグ付与
     execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] add LandingTarget

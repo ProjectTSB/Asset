@@ -32,8 +32,8 @@
     execute if score @s General.Mob.Tick matches 75..85 at @s rotated ~ 90 positioned ^ ^ ^2 run function asset:mob/0175.queen_bee/tick/common/tp/
 
 # 一定距離落下したあと、地面にぶつかると爆発する
-    execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-1 ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
-    execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-2 ~ #lib:no_collision run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
+    execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-1 ~ #lib:no_collision/ run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
+    execute if score @s General.Mob.Tick matches 75..85 at @s unless block ~ ~-2 ~ #lib:no_collision/ run function asset:mob/0175.queen_bee/tick/skill/grandslam/block_hit
 
 # 演出
     execute if score @s General.Mob.Tick matches 75..85 at @s run function asset:mob/0175.queen_bee/tick/skill/grandslam/vfx

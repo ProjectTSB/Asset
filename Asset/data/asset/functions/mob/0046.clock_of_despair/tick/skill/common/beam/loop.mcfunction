@@ -13,7 +13,7 @@
 
 # ビーム終端検知
     execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..1] run tag @s add Landing
-    execute unless block ^ ^ ^1 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^1 #lib:no_collision/ run tag @s add Landing
 
 # ターゲットにタグ付与
     tag @a[tag=!PlayerShouldInvulnerable,distance=..1] add LandingTarget

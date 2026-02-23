@@ -12,7 +12,7 @@
 
 # ..5の時、前方にブロックがあればMovePerStepを0に
 # 飛翔体抽象の実装の都合上、hit_blockメソッドでMovePerStepを0にしても進んでいってしまうため？
-    execute if score @s General.Object.Tick matches ..5 unless block ^ ^ ^0.5 #lib:no_collision run data modify storage asset:context this.MovePerStep set value 0
+    execute if score @s General.Object.Tick matches ..5 unless block ^ ^ ^0.5 #lib:no_collision/ run data modify storage asset:context this.MovePerStep set value 0
 
 # 13の時、敵の方を向く
     execute if score @s General.Object.Tick matches 13 run tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] eyes

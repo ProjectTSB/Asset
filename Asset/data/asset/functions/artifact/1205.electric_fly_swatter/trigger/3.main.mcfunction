@@ -15,7 +15,7 @@
 # ダメージ
 # 敵が1ブロック以上浮いてるならダメージ1.5倍
     execute store result storage api: Argument.Damage float 1 run random value 400..500
-    execute at @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] if block ~ ~-1 ~ #lib:no_collision_without_fluid store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
+    execute at @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] if block ~ ~-1 ~ #lib:no_collision/without_fluid store result storage api: Argument.Damage float 1.5 run data get storage api: Argument.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
@@ -23,7 +23,7 @@
     function api:damage/reset
 
 # 敵が浮いてるなら叩き落とす
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,tag=!Uninterferable,distance=..6] at @s if block ~ ~-1 ~ #lib:no_collision_without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
+    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,tag=!Uninterferable,distance=..6] at @s if block ~ ~-1 ~ #lib:no_collision/without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
 
 # リセット
     scoreboard players reset $Recursive Temporary

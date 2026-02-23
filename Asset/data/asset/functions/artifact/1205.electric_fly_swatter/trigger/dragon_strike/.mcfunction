@@ -16,7 +16,7 @@
     scoreboard players add $Recursive Temporary 1
 
 # 下がブロックの時の演出
-    execute at @s unless block ~ ~-0.5 ~ #lib:no_collision_without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/vfx
+    execute at @s unless block ~ ~-0.5 ~ #lib:no_collision/without_fluid run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/vfx
 
 # 下がブロックでなければ再帰
-    execute if score $Recursive Temporary matches ..60 at @s if block ~ ~-0.5 ~ #lib:no_collision_without_fluid positioned ~ ~-0.5 ~ run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
+    execute if score $Recursive Temporary matches ..60 at @s if block ~ ~-0.5 ~ #lib:no_collision/without_fluid positioned ~ ~-0.5 ~ run function asset:artifact/1205.electric_fly_swatter/trigger/dragon_strike/
