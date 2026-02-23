@@ -48,3 +48,5 @@
         data modify storage asset:mob Field.Damage.SuperJump set value {Amount:70.0,Type:"Physical",Element:"None"}
     # フィールド・モディファイ
         data modify storage asset:mob Field.Damage.FieldModify set value {Amount:90.0,Type:"Magic",Element:"None"}
+    # 射撃
+        data modify storage asset:mob Field.Damage.Shot set value {Amount:60.0,Type:"Magic",Element:"None"}

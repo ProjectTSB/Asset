@@ -6,3 +6,6 @@
 
 # 左右
     execute if data storage asset:context this{IsRight:true} run tag @s add 2263.IsRight
+
+# 首振り有無
+    execute if data storage asset:context this{IsShot:true} run tag @s add 2263.IsShot

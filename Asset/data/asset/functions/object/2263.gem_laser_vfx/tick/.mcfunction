@@ -15,10 +15,10 @@
     execute if score @s General.Object.Tick matches 3..12 run particle flash ~ ~ ~ 0 0 0 0 1
 
 # 移動
-    execute if entity @s[tag=2263.IsRight] if score @s General.Object.Tick matches 3.. run tp @s ~ ~ ~ ~35 ~
-    execute unless entity @s[tag=2263.IsRight] if score @s General.Object.Tick matches 3.. run tp @s ~ ~ ~ ~-35 ~
-    execute if score @s General.Object.Tick matches 3..5 at @s run tp @s ~ ~ ~ ~ ~-4
-    execute if score @s General.Object.Tick matches 12..14 at @s run tp @s ~ ~ ~ ~ ~4
+    execute if entity @s[tag=2263.IsRight] unless entity @s[tag=2263.IsShot] if score @s General.Object.Tick matches 3.. run tp @s ~ ~ ~ ~35 ~
+    execute unless entity @s[tag=2263.IsRight] unless entity @s[tag=2263.IsShot] if score @s General.Object.Tick matches 3.. run tp @s ~ ~ ~ ~-35 ~
+    execute unless entity @s[tag=2263.IsShot] if score @s General.Object.Tick matches 3..5 at @s run tp @s ~ ~ ~ ~ ~-4
+    execute unless entity @s[tag=2263.IsShot] if score @s General.Object.Tick matches 12..14 at @s run tp @s ~ ~ ~ ~ ~4
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=14..}]

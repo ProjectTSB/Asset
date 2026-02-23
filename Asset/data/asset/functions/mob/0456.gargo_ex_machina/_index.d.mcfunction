@@ -29,6 +29,7 @@
     #declare tag CO.Skill.FieldModify フィールド・モディファイ
     #declare tag CO.Skill.Transform.Shoot 銃変形
     #declare tag CO.Skill.Transform.Sword 剣変形
+    #declare tag CO.Skill.Shot 射撃
     #declare tag 
     #declare tag 
     #declare tag 
@@ -43,9 +44,12 @@
     #declare tag CO.ScapeSheep
     #declare tag CO.MainTarget
     #declare tag CO.Aec.Target
+    #declare tag CO.Temp.Rotation
     #declare tag CO.Aec.Destination
+    #declare tag CO.Aec.AttackPosition
     #declare tag CO.Aec.FieldModify
     #declare tag CO.Aec.FieldModify.Init
+    #declare tag CO.Temp.Ground
     #declare tag 
     #declare tag 
     #declare tag 
@@ -57,6 +61,7 @@
     #declare tag 
     #declare tag 
     # - 自動生成
+    #declare tag aj.global.data
     #declare function animated_java:gargo_ex_machina/summon
     #declare function animated_java:gargo_ex_machina/animations/pause_all
     #declare function animated_java:gargo_ex_machina/animations/idle/tween
@@ -87,7 +92,7 @@
     #declare function animated_java:gargo_ex_machina/animations/change_to_shot/tween
     #declare function animated_java:gargo_ex_machina/animations/change_to_sword/tween
     #declare function animated_java:gargo_ex_machina/animations/idle_shot/tween
-    #declare function 
+    #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
     #declare function 
     #declare function 
     #declare function 

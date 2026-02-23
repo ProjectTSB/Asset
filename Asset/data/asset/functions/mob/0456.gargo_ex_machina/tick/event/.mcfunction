@@ -39,3 +39,6 @@
 
 # フィールド・モディファイ
     execute if entity @s[tag=CO.Skill.FieldModify] run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/event_start
+
+# 射撃
+    execute if entity @s[tag=CO.Skill.Shot] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/
