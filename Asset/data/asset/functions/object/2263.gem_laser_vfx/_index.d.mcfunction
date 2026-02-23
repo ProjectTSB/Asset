@@ -6,3 +6,4 @@
     #declare tag CO.Object
     #declare tag 2263.IsRight
     #declare tag 2263.IsShot
+    #declare tag 2263.IsUpperShot

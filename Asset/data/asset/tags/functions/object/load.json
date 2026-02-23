@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/2268.gem_upper_shot/load",
         "asset:object/2267.gem_shot_attack/load",
         "asset:object/2266.field_modify/load",
         "asset:object/2265.field_modify_manager/load",

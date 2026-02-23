@@ -7,5 +7,6 @@
 # 左右
     execute if data storage asset:context this{IsRight:true} run tag @s add 2263.IsRight
 
-# 首振り有無
+# 射撃系演出用
     execute if data storage asset:context this{IsShot:true} run tag @s add 2263.IsShot
+    execute if data storage asset:context this{IsUpperShot:true} run tag @s add 2263.IsUpperShot

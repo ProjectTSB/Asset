@@ -42,3 +42,6 @@
 
 # 射撃
     execute if entity @s[tag=CO.Skill.Shot] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/
+
+# 上空射撃
+    execute if entity @s[tag=CO.Skill.UpperShot] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/
