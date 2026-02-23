@@ -1,0 +1,27 @@
+#> asset:object/1061.azure_jelly/register
+#
+# Objectのデータを指定
+#
+# @within function asset:object/alias/1061/register
+
+# 継承(オプション)
+    # data modify storage asset:object Extends append value
+    # function asset:object/extends
+# 他のObjectに継承されることを許可するか (boolean) (オプション)
+    # data modify storage asset:object ExtendsSafe set value
+# 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)
+    data modify storage asset:object IsAbstract set value false
+# Tickするかどうか(boolean) (オプション)
+    # data modify storage asset:object IsTicking set value
+
+# ID (int)
+    data modify storage asset:object ID set value 1061
+# フィールド(オプション)
+    data modify storage asset:object Field.IsFirst set value true
+    data modify storage asset:object Field.IsUpper set value true
+    data modify storage asset:object Field.WaveLeftRotate set value true
+    data modify storage asset:object Field.AttackCD.Current set value 0
+    data modify storage asset:object Field.AttackCD._ set value 50
+    data modify storage asset:object Field.SpeedMultiplier set value 1
+    data modify storage asset:object Field.Damage set value {Min:1,Max:10}
+    data modify storage asset:object Field.UserID set value -1
