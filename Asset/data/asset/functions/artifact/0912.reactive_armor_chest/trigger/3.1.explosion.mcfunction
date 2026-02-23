@@ -9,7 +9,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,distance=..3] run function api:damage/
+    execute as @e[type=#lib:living_without_player,distance=..3] run function api:damage/
     function api:damage/reset
 
 # プレイヤーへのダメージ

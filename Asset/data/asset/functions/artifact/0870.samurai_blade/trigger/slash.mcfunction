@@ -14,5 +14,5 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set value 3.2f
     function api:damage/modifier
-    execute positioned ^ ^ ^1.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] run function api:damage/
+    execute positioned ^ ^ ^1.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] run function api:damage/
     function api:damage/reset

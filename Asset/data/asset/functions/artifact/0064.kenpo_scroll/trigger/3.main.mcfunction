@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:crit ~ ~ ~ 0.5 0.5 0.5 1 50 force @a[distance=..10]
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle minecraft:crit ~ ~ ~ 0.5 0.5 0.5 1 50 force @a[distance=..10]
     playsound minecraft:entity.firework_rocket.blast player @s ~ ~ ~ 1 2
 
 # 軽減貫通ダメージを与える
@@ -25,6 +25,6 @@
     # 補正functionを実行
         function api:damage/modifier
     # ダメージを与える
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     # リセット
         function api:damage/reset

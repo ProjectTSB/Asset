@@ -17,7 +17,7 @@
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 # ダメージ実行
-    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function asset:object/1077.brave_slash/hit_entity/damage
+    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5] run function asset:object/1077.brave_slash/hit_entity/damage
 
 # リセット
     function api:damage/reset

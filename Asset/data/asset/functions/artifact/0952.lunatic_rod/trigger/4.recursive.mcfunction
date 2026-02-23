@@ -16,8 +16,8 @@
     execute if score $Interval Temporary matches 5.. run scoreboard players reset $Interval Temporary
 
 # ヒット
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..2] add Hit
-    execute if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..2] run tag @s add Landing
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..2] add Hit
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!Object,distance=..2] run tag @s add Landing
 
 # 再帰
     execute if entity @s[distance=..15] positioned ^ ^ ^1 if block ~ ~ ~ #lib:no_collision run function asset:artifact/0952.lunatic_rod/trigger/4.recursive

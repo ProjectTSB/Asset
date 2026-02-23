@@ -19,8 +19,8 @@
     data modify storage api: Argument.ElementType set value "Fire"
 # 実行時に受け取っているUserIDの持ち主として補正を実行
     function asset:object/1080.meteor_rain/kill/modifier.m with storage asset:context this
-    execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
-    execute positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] positioned ~0.5 ~0.5 ~0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 at @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] positioned ~0.5 ~0.5 ~0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
     function api:damage/reset
 
 # 消滅

@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function asset:artifact/0317.sea_storm_sword/trigger/vfx
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function asset:artifact/0317.sea_storm_sword/trigger/vfx
     playsound item.trident.throw player @a ~ ~ ~ 0.8 0.7
 
 # ダメージ
@@ -18,5 +18,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset

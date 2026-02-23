@@ -25,7 +25,7 @@
     execute if score $Interval Temporary matches 0 run playsound entity.enderman.teleport neutral @a[distance=..32] ~ ~ ~ 1 0
 
 # 敵吸い込み
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Immovable,tag=!Uninterferable,distance=..15] run function asset:object/1043.mini_black_hole/tick/enemy_suction
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Immovable,tag=!Uninterferable,distance=..15] run function asset:object/1043.mini_black_hole/tick/enemy_suction
 
 # リセット
     scoreboard players reset $Interval Temporary

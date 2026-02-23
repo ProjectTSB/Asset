@@ -10,7 +10,7 @@
     particle dust 1 1 0 1 ~ ~ ~ 0.1 0 0.1 0 5
 
 # ダメージ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=NearestTarget,dx=0,sort=nearest,limit=1] positioned ~0.5 ~0.5 ~0.5 run function asset:artifact/0374.thunder_spell/trigger/attack
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living_without_player,tag=NearestTarget,dx=0,sort=nearest,limit=1] positioned ~0.5 ~0.5 ~0.5 run function asset:artifact/0374.thunder_spell/trigger/attack
 
 # 再帰
     scoreboard players add $RecursiveCount Temporary 1

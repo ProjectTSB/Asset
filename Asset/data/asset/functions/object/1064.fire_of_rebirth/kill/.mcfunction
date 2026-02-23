@@ -19,7 +19,7 @@
     data modify storage api: Argument.ElementType set value "Fire"
     execute store result score $TK.UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score $TK.UserID Temporary = @s UserID run function api:damage/modifier
-    execute positioned ~-2 ~-2 ~-2 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=3,dy=3,dz=3] run function api:damage/
+    execute positioned ~-2 ~-2 ~-2 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=3,dy=3,dz=3] run function api:damage/
     function api:damage/reset
 
 # リセット

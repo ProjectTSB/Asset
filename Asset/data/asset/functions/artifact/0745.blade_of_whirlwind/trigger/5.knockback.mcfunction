@@ -19,7 +19,7 @@ scoreboard players operation $VectorMagnitude Temporary < $5000 Const
     data modify storage lib: Argument.KnockbackResist set value 1b
 
 # 攻撃対象のMobをプレイヤーの向いてる方向にmotionで吹き飛ばす
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] at @s rotated as @p[tag=this,distance=..6] rotated ~ ~-15 run function lib:motion/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6] at @s rotated as @p[tag=this,distance=..6] rotated ~ ~-15 run function lib:motion/
 
 # リセット
     scoreboard players reset $VectorMagnitude Temporary

@@ -19,7 +19,7 @@
     playsound item.firecharge.use player @a[distance=..100] ~ ~ ~ 10 1
 
 # 燃やす
-    data modify entity @e[type=#lib:living,type=!player,tag=1009.Target,distance=..0.1,limit=1] Fire set value 200s
+    data modify entity @e[type=#lib:living_without_player,tag=1009.Target,distance=..0.1,limit=1] Fire set value 200s
 # ダメージ設定
     execute unless predicate lib:is_day unless predicate lib:weather/is_sunny run data modify storage asset:context this.Damage set from storage asset:context this.DamageForNightCloudy
     execute if predicate lib:is_day unless predicate lib:weather/is_sunny run data modify storage asset:context this.Damage set from storage asset:context this.DamageForNightSunny

@@ -21,11 +21,11 @@
         execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
         execute at @a if score $OwnerID Temporary = @p UserID as @p run function api:damage/modifier
         # data modify storage api: Argument.BypassModifier set value false
-        execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run function api:damage/
 # リセット
     scoreboard players reset $OwnerID Temporary
     function api:damage/reset
 
 # 演出
     playsound minecraft:item.trident.return neutral @a ~ ~ ~ 1 2
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run particle dust 1 0 0.749 2 ~ ~1 ~ 0.6 0.6 0.6 0 50 normal @a
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] at @s run particle dust 1 0 0.749 2 ~ ~1 ~ 0.6 0.6 0.6 0 50 normal @a

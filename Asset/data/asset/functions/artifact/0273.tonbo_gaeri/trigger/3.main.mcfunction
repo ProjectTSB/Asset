@@ -18,7 +18,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..150] run function api:damage/
 # リセット
     function api:damage/reset
 

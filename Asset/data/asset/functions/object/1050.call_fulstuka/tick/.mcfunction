@@ -14,7 +14,7 @@
     execute if score @s 1050.ActionTime matches 0 if score @s General.Object.Tick matches 600.. run function asset:object/1050.call_fulstuka/tick/return
 
 # 敵が周囲にいないのに時間が着てしまった場合。スコアを戻す
-    execute if score @s 1050.ActionTime matches 0 unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20] run scoreboard players set @s 1050.ActionTime -10
+    execute if score @s 1050.ActionTime matches 0 unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..20] run scoreboard players set @s 1050.ActionTime -10
 
 # 敵が周囲にいたらスキル選択
     execute if score @s 1050.ActionTime matches 0 run function asset:object/1050.call_fulstuka/tick/skill_select

@@ -9,7 +9,7 @@
     #declare tag SpreadMarker
 
 # 前方拡散
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Bounds set value [[2d,2d],[0d,0d],[2d,2d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..10] at @s run function lib:spread_entity/
 

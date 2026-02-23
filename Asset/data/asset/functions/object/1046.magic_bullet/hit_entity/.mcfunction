@@ -18,7 +18,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @p[tag=Owner] run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0] run function asset:object/1046.magic_bullet/hit_entity/damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0] run function asset:object/1046.magic_bullet/hit_entity/damage
     function api:damage/reset
 
 # プレイヤーに対するダメージ
