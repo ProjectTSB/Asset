@@ -4,8 +4,8 @@
 #
 # @within function asset:mob/alias/78/attack
 
-# スーパーメソッド呼び出し
-    function asset:mob/super.attack
+# バニラ攻撃でないならスーパーメソッド呼び出し
+    execute unless data storage asset:context Attack{IsVanilla:true} run function asset:mob/super.attack
 
 # バニラの攻撃じゃなかったら return
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
