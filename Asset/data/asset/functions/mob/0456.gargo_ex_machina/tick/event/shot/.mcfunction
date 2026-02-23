@@ -30,20 +30,20 @@
         # 演出
             execute if score @s CO.EventTimer matches 5..68 as @e[type=item_display,tag=CO.ModelRoot,distance=..80,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/charge_effect.m with entity @s data.locators.muzzle
             execute if score @s CO.EventTimer matches 69 as @e[type=item_display,tag=CO.ModelRoot,distance=..80,sort=nearest,limit=1] at @s on passengers if entity @s[tag=aj.global.data] run function asset:mob/0456.gargo_ex_machina/tick/event/shot/summon_laser.m with entity @s data.locators.muzzle
-            execute if score @s CO.EventTimer matches 1 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.4
-            execute if score @s CO.EventTimer matches 1 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.4
-            execute if score @s CO.EventTimer matches 10 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.5
-            execute if score @s CO.EventTimer matches 10 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.5
-            execute if score @s CO.EventTimer matches 20 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.6
-            execute if score @s CO.EventTimer matches 20 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.6
-            execute if score @s CO.EventTimer matches 30 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.7
-            execute if score @s CO.EventTimer matches 30 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.7
-            execute if score @s CO.EventTimer matches 40 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.8
-            execute if score @s CO.EventTimer matches 40 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.8
-            execute if score @s CO.EventTimer matches 50 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.9
-            execute if score @s CO.EventTimer matches 50 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.9
-            execute if score @s CO.EventTimer matches 60 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 2.0
-            execute if score @s CO.EventTimer matches 60 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 2.0
+            execute if score @s CO.EventTimer matches 1 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.4
+            execute if score @s CO.EventTimer matches 1 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.4
+            execute if score @s CO.EventTimer matches 10 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.5
+            execute if score @s CO.EventTimer matches 10 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.5
+            execute if score @s CO.EventTimer matches 20 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.6
+            execute if score @s CO.EventTimer matches 20 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.6
+            execute if score @s CO.EventTimer matches 30 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.7
+            execute if score @s CO.EventTimer matches 30 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.7
+            execute if score @s CO.EventTimer matches 40 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.8
+            execute if score @s CO.EventTimer matches 40 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.8
+            execute if score @s CO.EventTimer matches 50 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.9
+            execute if score @s CO.EventTimer matches 50 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 1.9
+            execute if score @s CO.EventTimer matches 60 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 2.0
+            execute if score @s CO.EventTimer matches 60 run playsound block.beacon.activate hostile @a ~ ~ ~ 3 2.0
         # 攻撃
             execute if score @s CO.EventTimer matches 72..74 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.5
             execute if score @s CO.EventTimer matches 72..74 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.6

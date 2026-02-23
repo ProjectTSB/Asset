@@ -21,6 +21,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.Amount
     data modify storage api: Argument.AttackType set from storage asset:context this.Damage.Type
     data modify storage api: Argument.ElementType set from storage asset:context this.Damage.Element
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier
     execute as @a[tag=2265.Hit] run function api:damage/
     function api:damage/reset
