@@ -25,15 +25,15 @@
 # ここから先は神器側の効果の処理を書く
 
 # アイアンゴーレム召喚
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number1","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number2","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number3","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number4","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number5","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number6","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number7","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number8","DA.InAir","Friend"],OnGround:0b}
-    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number9","DA.InAir","Friend"],OnGround:0b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number1","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number2","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number3","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number4","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number5","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number6","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number7","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number8","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
+    summon iron_golem 0 0 0 {Tags:["IronStormInit","DA.Number9","DA.InAir","Friend"],OnGround:0b,PlayerCreated:1b}
 
 # アイアンゴーレムに使用者のID保存
     scoreboard players operation @e[type=iron_golem,tag=IronStormInit,distance=..1,x=0,y=0,z=0] DA.OwnerID = @s UserID

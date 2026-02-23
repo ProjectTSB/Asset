@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"猛毒吹き矢","color":"#8628BD"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"前方に致死性の毒が塗られた矢を飛ばし","color":"white"}','{"text":"対象へ猛毒を5秒間付与する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"前方に致死性の毒が塗られた矢を飛ばし","color":"white"}','{"text":"対象に猛毒を5秒間付与する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1

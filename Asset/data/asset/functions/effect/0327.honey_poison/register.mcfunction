@@ -33,7 +33,7 @@
 # エフェクトをUIに表示するか (boolean) (default = true)
     # data modify storage asset:effect Visible set value
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect StackVisible set value
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     data modify storage asset:effect Field.DamageInterval set value 20

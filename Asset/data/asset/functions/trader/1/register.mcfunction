@@ -74,3 +74,13 @@ execute unless loaded 27 15 -29 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:6b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:name_tag",Count:1b}
+
+# 取引 イカスミ
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:ink_sac",Count:8b}
+
+# 取引 アメジストの欠片
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:amethyst_shard",Count:8b}

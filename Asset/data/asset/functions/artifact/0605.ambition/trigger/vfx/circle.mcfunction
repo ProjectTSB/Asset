@@ -4,7 +4,7 @@
 #
 # @within function
 #   asset:artifact/0605.ambition/trigger/vfx/
-#   asset:artifact/0605.ambition/trigger/vfx/recursive
+#   asset:artifact/0605.ambition/trigger/vfx/rotate.m
 
 # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgGYAMArAEyWX0C0AnPXABwsAsAzPX4sARjWos4ANgCMXXihFtabZmAIA7AIYBbBMkBhigAIZ6sDC0ZdAZyTgUAe0IaISXlwIo4LuBjtgANy1sQn1wAA8kagIoKIBfOIIrUjRCW0RqADpaAmsIS1cMgjhsbDQYa30ZamiwDAd8iH1atGsAUVLyyraAR0Jg7CgAZQsvckRKYMqEgF0gA_3
 # 円 1
