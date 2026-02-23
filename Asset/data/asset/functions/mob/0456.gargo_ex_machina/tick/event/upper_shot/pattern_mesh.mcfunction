@@ -104,3 +104,6 @@ summon area_effect_cloud ^11.66667 ^ ^10 {Tags:["CO.Aec.AttackPosition"],Duratio
 summon area_effect_cloud ^19.44444 ^ ^10 {Tags:["CO.Aec.AttackPosition"],Duration:80}
 summon area_effect_cloud ^27.22222 ^ ^10 {Tags:["CO.Aec.AttackPosition"],Duration:80}
 summon area_effect_cloud ^35 ^ ^10 {Tags:["CO.Aec.AttackPosition"],Duration:80}
+
+# 数を減らす
+    kill @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=15]
