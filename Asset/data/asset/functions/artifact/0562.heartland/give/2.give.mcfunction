@@ -62,10 +62,11 @@
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:4d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:3d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:69,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{UUID:[I;1,1,562,6],AttributeName:"generic.armor",Name:"armor",Amount:3,Operation:0,Slot:head}]}
+    data modify storage asset:artifact CustomNBT set value {display:{color:26112},HideFlags:69,Unbreakable:1b,Enchantments:[{id:unbreaking,lvl:3}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

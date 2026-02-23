@@ -61,11 +61,13 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:0.035d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/fire",Amount:0.035d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.02d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:10691106},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:7,Operation:0,UUID:[I;1,1,916,5],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2,Operation:0,UUID:[I;1,1,916,5],Slot:"chest"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:10691106},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give

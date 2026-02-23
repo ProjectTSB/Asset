@@ -57,11 +57,13 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:0.125d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"receive_heal",Amount:-0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:12910587},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,727,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,727,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:12910587},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give

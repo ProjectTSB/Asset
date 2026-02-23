@@ -57,9 +57,12 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
     data modify storage asset:artifact Equipment.Effects set value [{ID:236,Visible:true,IsSetEffect:true}]
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:3d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:253,AttributeModifiers:[{UUID:[I;1,1,558,6],AttributeName:"generic.armor",Name:"armor",Amount:3,Operation:0,Slot:head}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:558"}}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,Trim:{material:"minecraft:iron",pattern:"tsb_armor:558"}}
 # 神器の入手用function
     function asset:artifact/common/give
