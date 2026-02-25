@@ -14,6 +14,8 @@
 # タイマー初期化
   scoreboard players set @s CD.AnimationTimer 0
   scoreboard players set @s CD.Counter 0
+  scoreboard players set @s CD.TransitionCounter 0
+  scoreboard players set @s CD.ElectrifiedActionCounter 0
   scoreboard players set @s General.Mob.Tick 0
 
 # 行動開始タグ

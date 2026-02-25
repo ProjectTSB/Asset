@@ -8,4 +8,7 @@
 # @within function asset:mob/0445.sharkboss/**
     scoreboard objectives add CD.Timer dummy
     scoreboard objectives add CD.AnimationTimer dummy
-    scoreboard objectives add CD.Counter dummy
+    scoreboard objectives add CD.ElectrifiedActionCounter dummy
+    scoreboard objectives add CD.TransitionCounter dummy
+    scoreboard objectives add CD.DpsCheckThreshold dummy
+    #↑後でリセットも書いておこう

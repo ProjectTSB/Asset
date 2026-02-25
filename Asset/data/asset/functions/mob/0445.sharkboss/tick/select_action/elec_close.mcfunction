@@ -1,11 +1,11 @@
-#> asset:mob/0445.sharkboss/tick/select_action/sky_close
+#> asset:mob/0445.sharkboss/tick/select_action/elec_close
 #
-# 潜らず近距離
+# 
 #
-# @within asset:mob/0445.sharkboss/tick/select_action/
+# @within function asset:mob/0445.sharkboss/tick/select_action/
 
 # バイアス付き乱数でスキル選択
-    data modify storage lib: Args.key set value "CD.SharkbossSC"
+    data modify storage lib: Args.key set value "CD.SharkbossEC"
 
 # 攻撃ガチャ
     data modify storage lib: Args.max set value 5
@@ -16,11 +16,11 @@
 
 
 # 攻撃ガチャ
-    execute if score $Random Temporary matches 0 run tag @s add CD.Action.Bite
+    execute if score $Random Temporary matches 0 run tag @s add CD.Action.EMP
     execute if score $Random Temporary matches 1 run tag @s add CD.Action.Tail
     execute if score $Random Temporary matches 2 run tag @s add CD.Action.Spin
     execute if score $Random Temporary matches 3 run tag @s add CD.Action.BiteTail
-    execute if score $Random Temporary matches 4 run tag @s add CD.Action.SkyToGround
+    execute if score $Random Temporary matches 4 run tag @s add CD.Action.Rush1
 
 # 乱数リセット
     scoreboard players reset $Random Temporary

@@ -29,13 +29,14 @@
     #declare tag CD.Action.WaterGun2
     #declare tag CD.Action.Rush
     #declare tag CD.Action.Rush2
+    #declare tag CD.Action.Rush3
+    #declare tag CD.Action.EMP
     #declare function animated_java:sharkboss/summon
-    #declare function animated_java:sharkboss/animations/sky_bite/tween
-    #declare function animated_java:sharkboss/animations/sky_bite_tail/tween
+    #declare function animated_java:sharkboss/animations/bite/tween
+    #declare function animated_java:sharkboss/animations/bite_tail/tween
     #declare function animated_java:sharkboss/animations/move_loop/tween
-    #declare function animated_java:sharkboss/animations/ground_rush_start/tween
-    #declare function animated_java:sharkboss/animations/ground_rush_loop/tween
-    #declare function animated_java:sharkboss/animations/sky_to_ground/tween
-    #declare function animated_java:sharkboss/animations/sky_spin/tween
-    #declare function animated_java:sharkboss/animations/sky_tail/tween
-    #declare function animated_java:sharkboss/animations/ground_watergun/tween
+    #declare function animated_java:sharkboss/animations/rush_start/tween
+    #declare function animated_java:sharkboss/animations/rush_loop/tween
+    #declare function animated_java:sharkboss/animations/spin/tween
+    #declare function animated_java:sharkboss/animations/tail/tween
+    #declare function animated_java:sharkboss/animations/watergun/tween
