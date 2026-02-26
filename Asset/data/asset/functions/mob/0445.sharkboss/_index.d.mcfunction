@@ -16,27 +16,49 @@
     #declare tag CD.Target ターゲット
     #declare tag CD.Marker.SpawnPoint 最初の床のマーカー
 
+    #declare tag CD.Charging
+    #declare tag CD.Electrified
+    #declare tag CD.PufferFish
+    #declare tag CD.Down
 
     #攻撃用のtag
     #declare tag CD.Action.Bite
     #declare tag CD.Action.Tail
     #declare tag CD.Action.Spin
-    #declare tag CD.Action.Spin
     #declare tag CD.Action.BiteTail
-    #declare tag CD.Action.SkyToGround
     #declare tag CD.Action.Move
     #declare tag CD.Action.WaterGun1
     #declare tag CD.Action.WaterGun2
-    #declare tag CD.Action.Rush
+    #declare tag CD.Action.Rush1
     #declare tag CD.Action.Rush2
     #declare tag CD.Action.Rush3
     #declare tag CD.Action.EMP
+    #declare tag CD.Action.Sharknado1
+    #declare tag CD.Action.Sharknado2
+    #declare tag CD.Action.Sharknado3
+    #declare tag CD.Action.Down1
+    #declare tag CD.Action.Down2
+    #declare tag CD.Action.Down3
+    #declare tag CD.Action.Puffer1
+    #declare tag CD.Action.Puffer2
+
     #declare function animated_java:sharkboss/summon
     #declare function animated_java:sharkboss/animations/bite/tween
     #declare function animated_java:sharkboss/animations/bite_tail/tween
     #declare function animated_java:sharkboss/animations/move_loop/tween
     #declare function animated_java:sharkboss/animations/rush_start/tween
     #declare function animated_java:sharkboss/animations/rush_loop/tween
-    #declare function animated_java:sharkboss/animations/spin/tween
+    #declare function animated_java:sharkboss/animations/rush_end/tween
+    #declare function animated_java:sharkboss/animations/tornado/tween
     #declare function animated_java:sharkboss/animations/tail/tween
     #declare function animated_java:sharkboss/animations/watergun/tween
+    #declare function animated_java:sharkboss/animations/emp/tween
+    #declare function animated_java:sharkboss/animations/down_start/tween
+    #declare function animated_java:sharkboss/animations/down_loop/tween
+    #declare function animated_java:sharkboss/animations/down_end/tween
+    #declare function animated_java:sharkboss/animations/sharknado_start/tween
+    #declare function animated_java:sharkboss/animations/sharknado_loop/tween
+    #declare function animated_java:sharkboss/animations/sharknado_end/tween
+    #declare function animated_java:sharkboss/animations/puffer_start/tween
+    #declare function animated_java:sharkboss/animations/puffer_loop/tween
+    #declare function animated_java:sharkboss/animations/puffer_end/tween

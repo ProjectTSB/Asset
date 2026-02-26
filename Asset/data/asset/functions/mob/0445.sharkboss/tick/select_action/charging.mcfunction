@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function asset:mob/0445.sharkboss/tick/select_action/elec_long
+# @within function asset:mob/0445.sharkboss/tick/select_action/
 
 # バイアス付き乱数でスキル選択
     data modify storage lib: Args.key set value "CD.SharkbossC"

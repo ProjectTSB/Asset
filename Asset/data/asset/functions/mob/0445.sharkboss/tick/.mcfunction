@@ -41,7 +41,6 @@
 
   #地中のやつ
   execute if entity @s[tag=CD.Action.WaterGun1] at @s run function asset:mob/0445.sharkboss/tick/action/watergun1
-  execute if entity @s[tag=CD.Action.WaterGun2] at @s run function asset:mob/0445.sharkboss/tick/action/watergun2
   execute if entity @s[tag=CD.Action.Rush1] at @s run function asset:mob/0445.sharkboss/tick/action/rush1
   execute if entity @s[tag=CD.Action.Rush2] at @s run function asset:mob/0445.sharkboss/tick/action/rush2
   execute if entity @s[tag=CD.Action.Rush3] at @s run function asset:mob/0445.sharkboss/tick/action/rush3
