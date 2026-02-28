@@ -4,7 +4,6 @@
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/
 
-
 # 演出
     $summon area_effect_cloud ^$(posx) ^$(posy) ^$(posz) {Tags:["CO.Temp.Rotation"]}
     execute as @e[type=area_effect_cloud,tag=CO.Temp.Rotation,distance=..30,limit=1] at @s run tp @s ~ ~ ~ ~ -90

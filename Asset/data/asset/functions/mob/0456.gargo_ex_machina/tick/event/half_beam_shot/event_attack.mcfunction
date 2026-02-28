@@ -29,7 +29,6 @@
         execute if score @s CO.EventTimer matches 59 run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 3 0.7
         execute if score @s CO.EventTimer matches 59 run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 3 0.5
     # 攻撃
-        # execute if score @s CO.EventTimer matches 16 run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack_sword
         execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 19 positioned ^-30 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack
         execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 19 positioned ^30 ^ ^ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack
     # 攻撃演出
