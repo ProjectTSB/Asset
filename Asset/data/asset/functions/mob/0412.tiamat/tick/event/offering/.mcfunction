@@ -30,8 +30,5 @@
 # モデルを自身の位置に合わせる
     execute at @s run tp @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] ~ ~ ~ ~ ~
 
-# 無敵化
-    execute if score @s BG.EventTimer matches 40 run function asset:mob/0412.tiamat/tick/util/start_invulnerable
-
-# 終了
+# 保険としての終了処理
     execute if score @s BG.EventTimer matches 900.. run function asset:mob/0412.tiamat/tick/event/offering/end

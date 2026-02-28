@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"熱狂ツルハシ","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用後、20秒間採掘速度が上昇し","color":"white"}','{"text":"前へ自立して進む3つのツルハシを召喚し","color":"white"}','{"text":"接触した敵にダメージを与える","color":"white"}','{"text":"この攻撃及びMP回復は大きな敵に対して大きく減衰する"}','{"text":"強烈なマインソウルのエネルギーを浴び続け","color":"gray"}','{"text":"ついに意思を持ち、自分で動き始めたとされるが","color":"gray"}','{"text":"ブロックを掘る力はまだ得ていないようだ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s使用後、20秒間採掘速度が上昇する","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s前へ自立して進む3つのツルハシを召喚し","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s接触した敵にダメージを与える","color":"white","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"%1$sこの攻撃及びMP回復は大きな敵に対して大きく減衰する","with":[{"text":"\\u0008","font":"space"}]}','{"text":"強烈なマインソウルのエネルギーを浴び続け","color":"gray"}','{"text":"ついに意思を持ち、自分で動き始めたとされるが","color":"gray"}','{"text":"ブロックを掘る力はまだ得ていないようだ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

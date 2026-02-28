@@ -13,9 +13,6 @@
         execute if function asset:artifact/1079.allochromatic/predicate/has_resonance_other run function asset:artifact/1079.allochromatic/click/get_resonance_cooldown
     # スニーク (TZ.Sneak)
         execute if predicate lib:is_sneaking run data modify storage asset:temp TZ.Sneak set value 1b
-    # スロット (TZ.Slot) - メインハンド優先
-        # execute if data storage asset:context id{ offhand:1079} run data modify storage asset:temp TZ.Slot set value "offhand"
-        execute if data storage asset:context id{mainhand:1079} run data modify storage asset:temp TZ.Slot set value "mainhand"
 # 本処理
     # 使用
         function asset:artifact/common/use/mainhand
@@ -25,6 +22,6 @@
     # 共鳴・蒼を付与
         function asset:artifact/1079.allochromatic/click/give_effect
     # リロード確認
-        function asset:artifact/1079.allochromatic/click/reload.m with storage asset:temp TZ
+        function asset:artifact/1079.allochromatic/click/reload
     # リセット
         data remove storage asset:temp TZ

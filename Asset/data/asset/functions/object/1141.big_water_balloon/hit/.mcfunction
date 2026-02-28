@@ -6,6 +6,7 @@
 
 #> Private
 # @private
+    #declare tag Hit
     #declare score_holder $UserID
 
 # サウンド

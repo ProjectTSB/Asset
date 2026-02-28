@@ -22,14 +22,14 @@
         execute if score @s AK.EventTimer matches 106.. at @s if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.05 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 演出
-    execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
     execute if score @s AK.EventTimer matches 20 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
     execute if score @s AK.EventTimer matches 37 at @s run playsound item.trident.return hostile @a ~ ~ ~ 2 1.5
     execute if score @s AK.EventTimer matches 54 at @s run playsound item.trident.return hostile @a ~ ~ ~ 2 1.5
-    execute if score @s AK.EventTimer matches 66 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 3 1.3
+    execute if score @s AK.EventTimer matches 66 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 3 1.3
     execute if score @s AK.EventTimer matches 89 at @s run playsound item.trident.throw hostile @a ~ ~ ~ 2 0.7
     execute if score @s AK.EventTimer matches 91 at @s run playsound item.trident.throw hostile @a ~ ~ ~ 2 0.9
-    execute if score @s AK.EventTimer matches 130 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 130 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
 
 # 攻撃
     execute if score @s AK.EventTimer matches 77 at @s run function asset:mob/0380.haruclaire_v3/tick/event/giant_blade/prediction

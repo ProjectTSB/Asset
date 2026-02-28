@@ -17,8 +17,8 @@
         execute if score @s AK.EventTimer matches 1..15 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if score @s AK.EventTimer matches 33..37 at @s positioned ~ ~0.1 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 12 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 32 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 12 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 32 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 37 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 37 at @s run particle electric_spark ^-0.6 ^3 ^ 0 0 0 0.5 30
     # 攻撃

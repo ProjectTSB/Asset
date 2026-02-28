@@ -6,6 +6,6 @@
 #   asset:effect/0269.pain_and_sweet/end/
 #   asset:effect/0269.pain_and_sweet/remove/
 
-# MP回復+5%
-    data modify storage api: Argument.UUID set value [I;1,3,269,0]
+# MP回復
+    data modify storage api: Argument.UUID set from storage asset:context this.UUID
     function api:modifier/mp_regen/remove

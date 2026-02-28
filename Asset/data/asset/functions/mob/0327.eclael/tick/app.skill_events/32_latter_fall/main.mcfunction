@@ -60,7 +60,7 @@
         execute if score @s 93.AnimationTimer matches 222 as @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,distance=..21] at @s run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_check
         execute if score @s 93.AnimationTimer matches 247 as @e[type=area_effect_cloud,tag=93.Temp.AttackPosition,distance=..26] at @s run function asset:mob/0327.eclael/tick/app.skill_events/32_latter_fall/attack_check
     # 演出
-        execute if score @s 93.AnimationTimer matches 119 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 119 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 159 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 210 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.5
 

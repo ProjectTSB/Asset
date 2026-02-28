@@ -31,7 +31,7 @@
     execute if score @s 9F.AnimationTimer matches 34 run playsound ogg:entity.player.attack.sweep1 hostile @a ~ ~ ~ 1 0.7
     execute if score @s 9F.AnimationTimer matches 26..41 run playsound block.grass.step hostile @a ~ ~ ~ 1 0.7
     execute if score @s 9F.AnimationTimer matches 51 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.2
-    execute if score @s 9F.AnimationTimer matches 61 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 61 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
 
 # 攻撃
     execute if score @s 9F.AnimationTimer matches 35 at @s run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/06_1_hg_lowkick/5.damage

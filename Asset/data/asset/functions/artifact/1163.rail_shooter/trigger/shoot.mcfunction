@@ -26,4 +26,4 @@
 
 
 # 再起
-    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..15] run function asset:artifact/1163.rail_shooter/trigger/shoot
+    execute positioned ^ ^ ^0.5 if entity @s[tag=!Landing,distance=..20] run function asset:artifact/1163.rail_shooter/trigger/shoot
