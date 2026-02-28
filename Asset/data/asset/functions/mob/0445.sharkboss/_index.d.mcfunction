@@ -62,3 +62,4 @@
     #declare function animated_java:sharkboss/animations/puffer_start/tween
     #declare function animated_java:sharkboss/animations/puffer_loop/tween
     #declare function animated_java:sharkboss/animations/puffer_end/tween
+    #declare function animated_java:sharkboss/remove/all

@@ -7,4 +7,4 @@
 # 継承元の処理実行
     function asset:mob/super.remove
     #↓そんなのない
-    #function animated_java:sharkboss/remove/all
+    function animated_java:sharkboss/remove/all
