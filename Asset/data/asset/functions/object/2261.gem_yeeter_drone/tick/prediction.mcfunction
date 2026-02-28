@@ -5,10 +5,9 @@
 # @within asset:object/2261.gem_yeeter_drone/tick/event_idle
 
 # 予告
-    data modify storage api: Argument.ID set value 2113
-    data modify storage api: Argument.FieldOverride.RotationX set from entity @s Rotation[0]
+    data modify storage api: Argument.ID set value 2271
     data modify storage api: Argument.FieldOverride.Color set value 3381759
-    data modify storage api: Argument.FieldOverride.Scale set value [8f,50f]
-    data modify storage api: Argument.FieldOverride.Interpolation set value 10
-    data modify storage api: Argument.FieldOverride.Tick set value 50
-    execute positioned ^ ^0.1 ^ rotated ~ 0 run function api:object/summon
+    data modify storage api: Argument.FieldOverride.TextColor set value "#ffcf80"
+    data modify storage api: Argument.FieldOverride.Scale set value [12f, 12f, 0.05f]
+    data modify storage api: Argument.FieldOverride.Tick set value 100
+    execute rotated ~ 0 positioned ~ ~0.1 ~ run function api:object/summon
