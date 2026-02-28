@@ -31,7 +31,9 @@
     execute if entity @s[tag=CO.Skill.HalfBeamSword.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_sword/event_attack
 
 # 半面焼きビーム + 上空射撃
-    # TODO
+    execute if entity @s[tag=CO.Skill.HalfBeamShot] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/event_start
+    execute if entity @s[tag=CO.Skill.HalfBeamShot.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/event_charging
+    execute if entity @s[tag=CO.Skill.HalfBeamShot.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/event_attack
 
 # スーパージャンプ
     execute if entity @s[tag=CO.Skill.SuperJump] run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_start

@@ -24,6 +24,10 @@
     #declare tag CO.Skill.HalfBeamSword.Charge 半面焼きビーム
     #declare tag CO.Skill.HalfBeamSword.Attack 半面焼きビーム
     #declare tag CO.Skill.HalfBeamSword.IsRight 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.IsRight 半面焼きビーム
     #declare tag CO.Skill.SuperJump スーパージャンプ
     #declare tag CO.Skill.SuperJump.Attack スーパージャンプ
     #declare tag CO.Skill.FieldModify フィールド・モディファイ
@@ -83,6 +87,10 @@
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_charge/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_right/tween
     #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_attack_left/tween
     #declare function animated_java:gargo_ex_machina/animations/walk_start/tween
     #declare function animated_java:gargo_ex_machina/animations/walk/tween
     #declare function animated_java:gargo_ex_machina/animations/walk_end/tween
