@@ -12,3 +12,7 @@
 
 # 仮
     scoreboard players set @s 2260.IdleTime 60
+
+# タイマー計算
+    execute store result score @s 2260.PredictionTime run scoreboard players get @s 2260.IdleTime
+    scoreboard players remove @s 2260.PredictionTime 30

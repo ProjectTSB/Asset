@@ -20,5 +20,8 @@
     execute if entity @s[scores={General.Object.Tick=20..27}] run tp @s ^ ^ ^0.8
     execute if entity @s[scores={General.Object.Tick=28..}] run tp @s ^ ^ ^1.5
 
+# 攻撃
+    execute if entity @s[scores={General.Object.Tick=20..}] run function asset:object/2260.gem_attack_drone/tick/attack
+
 # 消去
     execute if entity @s[scores={General.Object.Tick=80..}] run tag @s add CO.Drone.Remove

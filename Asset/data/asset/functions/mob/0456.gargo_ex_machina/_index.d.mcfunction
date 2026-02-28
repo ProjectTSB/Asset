@@ -35,7 +35,7 @@
     #declare tag CO.Skill.Transform.Sword 剣変形
     #declare tag CO.Skill.Shot 射撃
     #declare tag CO.Skill.UpperShot 上空射撃
-    #declare tag 
+    #declare tag CO.Skill.BluteForce ブルートフォースアタック
     #declare tag 
     #declare tag 
     #declare tag 

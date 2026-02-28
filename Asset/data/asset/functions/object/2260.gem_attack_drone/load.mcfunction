@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:object/2260.gem_attack_drone/**
     scoreboard objectives add 2260.IdleTime dummy
+    scoreboard objectives add 2260.PredictionTime dummy
