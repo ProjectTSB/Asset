@@ -7,7 +7,7 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 # 最も近くにあるモデルを紐づけ
-    tag @e[type=item_display,tag=2261.Model,distance=..5,sort=nearest,limit=1] add 2261.Model.Target
+    execute positioned ~ ~5 ~ run tag @e[type=item_display,tag=2261.Model,distance=..6,sort=nearest,limit=1] add 2261.Model.Target
 
 # 登場
     execute if entity @s[tag=2261.Phase.Start] run function asset:object/2261.gem_yeeter_drone/tick/event_start
@@ -20,6 +20,6 @@
     execute if entity @s[tag=CO.Drone.Remove] run function asset:object/2261.gem_yeeter_drone/tick/remove
 
 # モデルを自身の位置に合わせる
-    tp @e[type=item_display,tag=2261.Model.Target,distance=..80,sort=nearest,limit=1] ~ ~4 ~ ~ ~
+    tp @e[type=item_display,tag=2261.Model.Target,distance=..80,sort=nearest,limit=1] ~ ~5 ~ ~ ~
 # 紐づけ解除
     tag @e[type=item_display,tag=2261.Model.Target,distance=..80,sort=nearest,limit=1] remove 2261.Model.Target

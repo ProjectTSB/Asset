@@ -14,5 +14,7 @@
     scoreboard players set @s 2261.IdleTime 60
 
 # タイマー計算
+    # IdleTimeは予備動作を考慮して短縮
+    scoreboard players remove @s 2261.IdleTime 25
     execute store result score @s 2261.PredictionTime run scoreboard players get @s 2261.IdleTime
     scoreboard players remove @s 2261.PredictionTime 30

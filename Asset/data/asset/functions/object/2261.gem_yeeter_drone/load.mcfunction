@@ -8,3 +8,4 @@
 # @within function asset:object/2261.gem_yeeter_drone/**
     scoreboard objectives add 2261.IdleTime dummy
     scoreboard objectives add 2261.PredictionTime dummy
+    scoreboard objectives add 2261.AttackInterval dummy
