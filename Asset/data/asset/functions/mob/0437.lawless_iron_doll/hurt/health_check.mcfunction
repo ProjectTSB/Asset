@@ -15,7 +15,7 @@
     execute store result score $HealthPercent Temporary run data get storage api: Return.HealthPer 100
 
 # HP50%以下だったら、その動作を発動。
-    execute if score $HealthPercent Temporary matches ..50 run function asset:mob/0437.lawless_iron_doll/hurt/active_50per
+    function asset:mob/0437.lawless_iron_doll/hurt/active_50per
 
 # リセット
     scoreboard players reset $HealthPercent Temporary

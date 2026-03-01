@@ -14,21 +14,27 @@
     execute if score @s General.Mob.Tick matches 5 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.5
     execute if score @s General.Mob.Tick matches 10 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.7
     execute if score @s General.Mob.Tick matches 15 run playsound ogg:mob.breeze.charge1 hostile @a ~ ~ ~ 2 0.9
+    execute if score @s General.Mob.Tick matches 20 run playsound ogg:block.smithing_table.smithing_table2 player @a ~ ~ ~ 2 1.2
+    execute if score @s General.Mob.Tick matches 20 run playsound ogg:block.smithing_table.smithing_table2 player @a ~ ~ ~ 2 1.5
+
+# チャージ完了時に演出
+    execute if score @s General.Mob.Tick matches 20 positioned ~ ~1 ~ run particle electric_spark ~ ~1.5 ~ 0.5 0.5 0.5 1.5 100 force @a[distance=..32]
+    execute if score @s General.Mob.Tick matches 20 positioned ~ ~1 ~ run particle end_rod ~ ~1.5 ~ 0.5 0.5 0.5 0.2 20 force @a[distance=..32]
 
 # 攻撃の発動よりちょっと前にアニメ再生
-    execute if score @s General.Mob.Tick matches 17 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/attack_melee_2_activate/tween {to_frame: 0, duration: 1}
+    execute if score @s General.Mob.Tick matches 27 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/attack_melee_2_activate/tween {to_frame: 0, duration: 1}
 
 # 薙ぎ払い、そして飛んでいくオブジェクト
-    execute if score @s General.Mob.Tick matches 20 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/1
+    execute if score @s General.Mob.Tick matches 30 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/1
 
 # 攻撃の発動よりちょっと前にアニメ再生
-    execute if score @s General.Mob.Tick matches 27 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/attack_melee_3_activate/tween {to_frame: 0, duration: 1}
+    execute if score @s General.Mob.Tick matches 37 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/attack_melee_3_activate/tween {to_frame: 0, duration: 1}
 
 # 薙ぎ払い、そして飛んでいくオブジェクト
-    execute if score @s General.Mob.Tick matches 30 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/2
+    execute if score @s General.Mob.Tick matches 40 run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/2
 
 # ニュートラルポーズに戻る
-    execute if score @s General.Mob.Tick matches 60 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
+    execute if score @s General.Mob.Tick matches 70 as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
 
 # リセット
-    execute if score @s General.Mob.Tick matches 65.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
+    execute if score @s General.Mob.Tick matches 75.. run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/reset
