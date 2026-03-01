@@ -5,7 +5,7 @@
 # @within function asset:object/alias/2245/register
 
 # 継承(オプション)
-    data modify storage asset:object Extends append value 2244
+    data modify storage asset:object Extends append value 2241
     function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:object ExtendsSafe set value
