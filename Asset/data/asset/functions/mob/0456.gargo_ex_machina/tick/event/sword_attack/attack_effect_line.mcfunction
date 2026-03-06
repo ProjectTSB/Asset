@@ -3,6 +3,7 @@
 # 剣叩きつけ
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack_effect_line.m
+# @within asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack_effect_line_double.m
 
 # パーティクル
     # [ImportKey]: NobwRALgngDgpmAXGANgSwHYIDRgK55oAmSYATAOxEAcAbACwBmFAtAMa1Uv0CsAzERYAjWgAZGLHkICMAQwCc1PrOrSOYXBlkBbBMkBbvgAJpGsDFkAnHQGck4NgHs8GCEmk9cjCw+12wAN1kUPD1wAA8kUVwoSIBfWNwIBz9A4NCwCMQosBjEd3jcB0ZGazhXLNwhOAAvNDgLSNw0awAhGrqLAFEARzwglCgAZXM2OBJERiDS+IBdIA_3

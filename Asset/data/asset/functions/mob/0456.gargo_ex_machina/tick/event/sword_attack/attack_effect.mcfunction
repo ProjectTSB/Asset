@@ -3,6 +3,7 @@
 # 剣叩きつけ
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack
+# @within asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack_double
 
 # 効果音
     playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.5

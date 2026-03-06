@@ -19,6 +19,7 @@
     execute if entity @s[tag=CO.Skill.SwordAttack] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_start
     execute if entity @s[tag=CO.Skill.SwordAttack.Charge] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_charging
     execute if entity @s[tag=CO.Skill.SwordAttack.Attack] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_attack
+    execute if entity @s[tag=CO.Skill.SwordAttack.Double] run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/event_attack_double
 
 # 半面焼きビーム
     execute if entity @s[tag=CO.Skill.HalfBeam] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/event_start
