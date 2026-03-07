@@ -4,7 +4,7 @@
 #
 # @within function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/vertical_slash_shot/slash/**
 
-# オブジェクト2244番をデータ指定した上で召喚する
+# オブジェクトをデータ指定した上で召喚する
     data modify storage api: Argument.ID set value 2244
     data modify storage api: Argument.FieldOverride.Range set value 70
     data modify storage api: Argument.FieldOverride.Speed set value 3
