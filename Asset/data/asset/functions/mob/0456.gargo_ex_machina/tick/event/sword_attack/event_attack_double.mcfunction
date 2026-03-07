@@ -15,7 +15,7 @@
         execute if score @s CO.EventTimer matches 76 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 113 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     # 予告
-        execute if score @s CO.EventTimer matches 20 positioned ^ ^ ^25 run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/prediction_double
+        execute if score @s CO.EventTimer matches 20 positioned ^ ^0.2 ^25 run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/prediction_double
     # 攻撃
         execute if score @s CO.EventTimer matches 40 positioned ^ ^ ^25 run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/attack_double
     # 攻撃演出

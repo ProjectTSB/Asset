@@ -9,3 +9,6 @@
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.RocketPunch
     function api:object/summon
+
+# 消去
+    kill @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..5,sort=nearest,limit=1]
