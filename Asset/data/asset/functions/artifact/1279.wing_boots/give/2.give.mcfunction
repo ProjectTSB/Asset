@@ -60,11 +60,13 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
-    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"fall_resistance",Amount:0.30d,Operation:"multiply_base"}]
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"fall_resistance",Amount:0.30d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:1d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:13762303},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:1,Operation:0,UUID:[I;1,1,1279,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:13762303}}
 
 # 神器の入手用function
     function asset:artifact/common/give
