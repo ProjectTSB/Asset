@@ -1,0 +1,11 @@
+#> asset:mob/0456.gargo_ex_machina/tick/event/rocket_punch/summon_punch
+#
+# ブルートフォースアタック
+#
+# @within asset:mob/0456.gargo_ex_machina/tick/event/rocket_punch/
+
+# ATTACKドローン召喚
+    data modify storage api: Argument.ID set value 2269
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.RocketPunch
+    function api:object/summon

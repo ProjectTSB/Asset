@@ -34,6 +34,7 @@
     #declare tag CO.Skill.FieldModify フィールド・モディファイ
     #declare tag CO.Skill.Transform.Shoot 銃変形
     #declare tag CO.Skill.Transform.Sword 剣変形
+    #declare tag CO.Skill.RocketPunch ロケットパンチ
     #declare tag CO.Skill.Shot 射撃
     #declare tag CO.Skill.UpperShot 上空射撃
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
@@ -104,7 +105,7 @@
     #declare function animated_java:gargo_ex_machina/animations/idle_shot/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_upper/tween
-    #declare function 
+    #declare function animated_java:gargo_ex_machina/animations/summon_punch/tween
     #declare function 
     #declare function 
     #declare function 
