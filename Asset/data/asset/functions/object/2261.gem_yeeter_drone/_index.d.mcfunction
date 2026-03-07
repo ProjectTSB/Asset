@@ -7,6 +7,7 @@
     #declare tag CO.Drone
     #declare tag CO.Drone.Remove
     #declare tag 2261.Model
+    #declare tag 2261.Model.Init
     #declare tag 2261.Model.Target
     #declare tag 2261.Phase.Idle
     #declare tag 2261.Phase.Attack

@@ -6,8 +6,8 @@
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
-# 最も近くにあるモデルを紐づけ
-    execute positioned ~ ~5 ~ run tag @e[type=item_display,tag=2261.Model,distance=..6,sort=nearest,limit=1] add 2261.Model.Target
+# モデル紐づけ
+    function asset:object/2261.gem_yeeter_drone/tick/link_model.m with storage asset:context this
 
 # 登場
     execute if entity @s[tag=2261.Phase.Start] run function asset:object/2261.gem_yeeter_drone/tick/event_start

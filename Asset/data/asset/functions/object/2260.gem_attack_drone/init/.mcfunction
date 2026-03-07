@@ -7,8 +7,11 @@
 # 実行角度に合わせる
     tp @s ~ ~ ~ ~ 0
 
+# ID割り当て
+    execute store result score @s CO.ObjectId run data get storage asset:context this.ObjectId
+
 # モデル召喚
-    function animated_java:gem_attack_drone/summon {args: {animation: 'summon'}}
+    function asset:object/2260.gem_attack_drone/init/animated_java
 
 # 仮
     scoreboard players set @s 2260.IdleTime 60

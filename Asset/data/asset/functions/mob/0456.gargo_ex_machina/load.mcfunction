@@ -9,3 +9,9 @@
     scoreboard objectives add CO.EventTimer dummy
     scoreboard objectives add CO.FieldModify.Color dummy
     scoreboard objectives add CO.Counter dummy
+#> Object管理用
+# @within function asset:mob/0456.gargo_ex_machina/**
+# @within function asset:object/2260.gem_attack_drone/**
+# @within function asset:object/2261.gem_yeeter_drone/**
+# @within function asset:object/2269.gem_rocket_punch/**
+    scoreboard objectives add CO.ObjectId dummy
