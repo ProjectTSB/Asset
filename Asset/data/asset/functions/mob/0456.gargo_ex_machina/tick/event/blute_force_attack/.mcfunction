@@ -40,6 +40,6 @@
             # execute if score @s CO.EventTimer matches 25 at @e[type=marker,tag=CO.CenterPosition,distance=..80] positioned ^-22 ^ ^22 run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_panjan_drone.m
             # execute if score @s CO.EventTimer matches 25 at @e[type=marker,tag=CO.CenterPosition,distance=..80] positioned ^22 ^ ^-22 run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_panjan_drone.m
             # execute if score @s CO.EventTimer matches 25 at @e[type=marker,tag=CO.CenterPosition,distance=..80] positioned ^-22 ^ ^-22 run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_panjan_drone.m
-        
+
 # 終了
     execute if score @s CO.EventTimer matches 65.. run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/end

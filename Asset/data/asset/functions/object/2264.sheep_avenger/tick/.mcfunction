@@ -18,7 +18,7 @@
 
 # 移動
     execute if score @s General.Object.Tick matches 91 as @e[type=item_display,tag=2264.Model,distance=..10,limit=1] run function animated_java:sheep_avenger/animations/walk/play
-    execute if score @s General.Object.Tick matches 91..210 run tp @s ^ ^ ^0.08 ~ 0
+    execute if score @s General.Object.Tick matches 91..210 run tp @s ^ ^ ^0.16 ~ 0
     execute if score @s General.Object.Tick matches 91..215 as @e[type=item_display,tag=2264.Model,distance=..10,limit=1] run tp @s ~ ~ ~ ~ ~
     execute if score @s General.Object.Tick matches 111 run function asset:object/2264.sheep_avenger/tick/step
     execute if score @s General.Object.Tick matches 131 run function asset:object/2264.sheep_avenger/tick/step
