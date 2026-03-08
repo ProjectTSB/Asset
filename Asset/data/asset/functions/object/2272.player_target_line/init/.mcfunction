@@ -7,6 +7,7 @@
 # 設定項目（FieldOverride）
     # TargetPlayerId : 対象のプレイヤーのUserID。
     # Tick : 表示時間。
+    # Color : 線の色。CustomPotionColorで指定する。
     # (Optional) ObjectId : 紐づけ用のObjectId。これを利用したオブジェクトとの紐づけ方法は、Object2262を参照。
     # (Optional) IsChangePlayer : trueの場合、対象プレイヤーが一定以上離れた場合にロックオン対象を変更する。
 
