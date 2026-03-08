@@ -13,6 +13,8 @@
     execute if entity @s[tag=2262.Phase.Start] run function asset:object/2262.gem_panjan_drone/tick/event_start
 # 待機
     execute if entity @s[tag=2262.Phase.Idle] run function asset:object/2262.gem_panjan_drone/tick/event_idle
+# 移動
+    execute if entity @s[tag=2262.Phase.Move] run function asset:object/2262.gem_panjan_drone/tick/event_move
 # 攻撃
     execute if entity @s[tag=2262.Phase.Attack] run function asset:object/2262.gem_panjan_drone/tick/event_attack
 # ダメージ床
