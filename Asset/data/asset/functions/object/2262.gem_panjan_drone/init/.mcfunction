@@ -15,7 +15,10 @@
 
 # 仮
     scoreboard players set @s 2262.IdleTime 60
-    tag @s add 2262.IsMove
+    # tag @s add 2262.IsMove
+
+# 移動有無
+    execute if data storage asset:context this{IsMove:true} run tag @s add 2262.IsMove
 
 # タイマー計算
     # IdleTimeは予備動作を考慮して短縮

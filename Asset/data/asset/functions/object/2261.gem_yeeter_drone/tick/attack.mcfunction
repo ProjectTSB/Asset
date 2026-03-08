@@ -4,6 +4,9 @@
 #
 # @within asset:object/2261.gem_yeeter_drone/tick/event_attack
 
+# 空中には設置しない
+    execute if block ~ ~-6 ~ #lib:no_collision run return 0
+
 # TNT設置
     data modify storage api: Argument.ID set value 2270
     data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID

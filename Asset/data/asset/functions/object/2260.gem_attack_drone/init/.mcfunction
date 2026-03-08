@@ -13,9 +13,14 @@
 # モデル召喚
     function asset:object/2260.gem_attack_drone/init/animated_java
 
-# 仮
+# 仮指定
     scoreboard players set @s 2260.IdleTime 80
-    tag @s add 2260.IsTarget
+    # tag @s add 2260.IsTarget
+
+# IdleTime
+
+# ターゲット有無
+    execute if data storage asset:context this{IsTarget:true} run tag @s add 2260.IsTarget
 
 # タイマー計算
     execute store result score @s 2260.PredictionTime run scoreboard players get @s 2260.IdleTime

@@ -10,10 +10,10 @@
     data modify storage api: Argument.ElementType set from storage asset:context this.Damage.Element
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..12] run function api:damage/
     function api:damage/reset
 
 # 演出
     particle explosion ~ ~1 ~ 3 1 3 0 20 force
     particle lava ~ ~1 ~ 3 1 3 0.2 10
-    playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.8
+    playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.8

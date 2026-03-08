@@ -15,6 +15,11 @@
 
 # 仮
     scoreboard players set @s 2261.IdleTime 60
+    # tag @s add 2261.IsRotate.Inverse
+
+# 回転有無
+    execute if data storage asset:context this{IsRotate:true} run tag @s add 2261.IsRotate
+    execute if data storage asset:context this{IsRotateInverse:true} run tag @s add 2261.IsRotate.Inverse
 
 # タイマー計算
     # IdleTimeは予備動作を考慮して短縮

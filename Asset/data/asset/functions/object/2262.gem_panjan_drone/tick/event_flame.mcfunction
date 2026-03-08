@@ -4,53 +4,39 @@
 #
 # @within asset:object/2262.gem_panjan_drone/tick/
 
+# 移動  
+    tp @s ~ ~-0.5 ~ ~15 ~
+
 # 演出
-    # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAEykDMlArAEYCM9AtPSowIZsAsNUnzYBOUgDMA7KO58+9WnDj16zMAQB23ALYJkgMMUABGoIxuGHQGck4FAHtCGiEkoAGAijhO4GG2ABu3NiEeuAAHkjuYFCRAL6xBBakaITWiAAcBJYQ5s6IUXDY2GgwlnrMrlEYdjkQelFolgCiRSVlTQCOhEHYUADKZp7kiOJBZfF44NDwFOhYuOpEJMNg3JKS4nyUfNLc4kz8TJSi6SK8AGwCzCikrsx86ZeLWroURpSLZhbaabYOTkh7h4vHVfIhwIFgqEwBF8gQYvkJmAkik0vQsjkMHkCq1SuVKokatw6pECI0WsU8Z1ukV+oM4MNRthxgkprA9KhMDh8EsyBQaHAUOd9ucaGxmMwaLw+NwRMw2OlmOd2K4ROdGK50owGHxzihnjoOUYaJ9zFY-PZHHlMqgQT4-JCQn5YVEEa4kSjUi4AHTosDZXKksCFSllQEE5FEklwsDk3HtLo9OncIZIJksgC6QA_3
+    # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqnCnAOwCsARjQLQBsrAjKcwCw80AzZgEM4HAJzMatAEwNSc8QLgCwBAHbCAtgmSAwxQAEHNWBjCM2gM5JwKAPaF1EJBxkFqTuBhtgAbsOxCXXAADyQABgIoCIBfGIILUjRCa0QADgJLCHNnREiwOGxsNBhLXQ5w-Iw7bIhdfLRLAFEikrKmgEdCAOwoAGUzanJEAQCyuLxwaHgKdCxcE2IyCg5hPnD2YWZSNLoUXh2eZnElDjYaHjgeAToAZlYGcJQTTR0KQxkTMwstVNsHJxIcTuOCebyIcD+QLBMBhPJRWLxMCJZKpOiZbIYXL5QrFUrlSoJGrCOoRAiNFp49pdHr9QZwYajbDjeJTWC6VCYHD4IgkYZgOjiBisARpUhnJgoLbXODhEQcFDcARSjg8RhPGisOgvbQcwy3L7mKw+eyOXI8EFgnxQoI+OH5aJ5CbI4RJFJIGQAOnRYCyOTJBVa+JchORxNJ8LAFKD1O6RTpwiGSCZLIAukA_3
     # 円 3
     particle flame ^0 ^ ^-2.5 0.2 0 0.2 0.05 1
-    particle flame ^1.76777 ^ ^-1.76777 0.2 0 0.2 0.05 1
     particle flame ^2.5 ^ ^0 0.2 0 0.2 0.05 1
-    particle flame ^1.76777 ^ ^1.76777 0.2 0 0.2 0.05 1
     particle flame ^0 ^ ^2.5 0.2 0 0.2 0.05 1
-    particle flame ^-1.76777 ^ ^1.76777 0.2 0 0.2 0.05 1
     particle flame ^-2.5 ^ ^0 0.2 0 0.2 0.05 1
-    particle flame ^-1.76777 ^ ^-1.76777 0.2 0 0.2 0.05 1
     # 円 1
     particle flame ^0 ^ ^-8 0.2 0 0.2 0.05 1
-    particle flame ^2.47214 ^ ^-7.60845 0.2 0 0.2 0.05 1
-    particle flame ^4.70228 ^ ^-6.47214 0.2 0 0.2 0.05 1
-    particle flame ^6.47214 ^ ^-4.70228 0.2 0 0.2 0.05 1
-    particle flame ^7.60845 ^ ^-2.47214 0.2 0 0.2 0.05 1
+    particle flame ^4 ^ ^-6.9282 0.2 0 0.2 0.05 1
+    particle flame ^6.9282 ^ ^-4 0.2 0 0.2 0.05 1
     particle flame ^8 ^ ^0 0.2 0 0.2 0.05 1
-    particle flame ^7.60845 ^ ^2.47214 0.2 0 0.2 0.05 1
-    particle flame ^6.47214 ^ ^4.70228 0.2 0 0.2 0.05 1
-    particle flame ^4.70228 ^ ^6.47214 0.2 0 0.2 0.05 1
-    particle flame ^2.47214 ^ ^7.60845 0.2 0 0.2 0.05 1
+    particle flame ^6.9282 ^ ^4 0.2 0 0.2 0.05 1
+    particle flame ^4 ^ ^6.9282 0.2 0 0.2 0.05 1
     particle flame ^0 ^ ^8 0.2 0 0.2 0.05 1
-    particle flame ^-2.47214 ^ ^7.60845 0.2 0 0.2 0.05 1
-    particle flame ^-4.70228 ^ ^6.47214 0.2 0 0.2 0.05 1
-    particle flame ^-6.47214 ^ ^4.70228 0.2 0 0.2 0.05 1
-    particle flame ^-7.60845 ^ ^2.47214 0.2 0 0.2 0.05 1
+    particle flame ^-4 ^ ^6.9282 0.2 0 0.2 0.05 1
+    particle flame ^-6.9282 ^ ^4 0.2 0 0.2 0.05 1
     particle flame ^-8 ^ ^0 0.2 0 0.2 0.05 1
-    particle flame ^-7.60845 ^ ^-2.47214 0.2 0 0.2 0.05 1
-    particle flame ^-6.47214 ^ ^-4.70228 0.2 0 0.2 0.05 1
-    particle flame ^-4.70228 ^ ^-6.47214 0.2 0 0.2 0.05 1
-    particle flame ^-2.47214 ^ ^-7.60845 0.2 0 0.2 0.05 1
+    particle flame ^-6.9282 ^ ^-4 0.2 0 0.2 0.05 1
+    particle flame ^-4 ^ ^-6.9282 0.2 0 0.2 0.05 1
     # 円 2
     particle flame ^0 ^ ^-5 0.2 0 0.2 0.05 1
-    particle flame ^2.16942 ^ ^-4.50484 0.2 0 0.2 0.05 1
-    particle flame ^3.90916 ^ ^-3.11745 0.2 0 0.2 0.05 1
-    particle flame ^4.87464 ^ ^-1.1126 0.2 0 0.2 0.05 1
-    particle flame ^4.87464 ^ ^1.1126 0.2 0 0.2 0.05 1
-    particle flame ^3.90916 ^ ^3.11745 0.2 0 0.2 0.05 1
-    particle flame ^2.16942 ^ ^4.50484 0.2 0 0.2 0.05 1
-    particle flame ^0 ^ ^5 0.2 0 0.2 0.05 1
-    particle flame ^-2.16942 ^ ^4.50484 0.2 0 0.2 0.05 1
-    particle flame ^-3.90916 ^ ^3.11745 0.2 0 0.2 0.05 1
-    particle flame ^-4.87464 ^ ^1.1126 0.2 0 0.2 0.05 1
-    particle flame ^-4.87464 ^ ^-1.1126 0.2 0 0.2 0.05 1
-    particle flame ^-3.90916 ^ ^-3.11745 0.2 0 0.2 0.05 1
-    particle flame ^-2.16942 ^ ^-4.50484 0.2 0 0.2 0.05 1
+    particle flame ^3.21394 ^ ^-3.83022 0.2 0 0.2 0.05 1
+    particle flame ^4.92404 ^ ^-0.86824 0.2 0 0.2 0.05 1
+    particle flame ^4.33013 ^ ^2.5 0.2 0 0.2 0.05 1
+    particle flame ^1.7101 ^ ^4.69846 0.2 0 0.2 0.05 1
+    particle flame ^-1.7101 ^ ^4.69846 0.2 0 0.2 0.05 1
+    particle flame ^-4.33013 ^ ^2.5 0.2 0 0.2 0.05 1
+    particle flame ^-4.92404 ^ ^-0.86824 0.2 0 0.2 0.05 1
+    particle flame ^-3.21394 ^ ^-3.83022 0.2 0 0.2 0.05 1
     # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAAwDsppAjACwDMAnALSsAc1K7jjAGZ8AhgCMRAVnYAmVpMn0ZgrsxmSZYAgDsRAWwTJAYYoACelrAwRGfQGck4FAHtC2iEmaUCKOG7gYHMAA3EWxCQ3AADyQvMCgYgF8EghtSNEJ7RHpY2whrd0RYuGxsNBhbQ2zYjCc8iENYtFsAURKyiuaAR0JQ7CgAZSsfckRBUIqkgF0gA_3
     # 円 1
     particle dust 0.502 0.102 0.102 1 ^0 ^ ^-10 0.2 0 0.2 0.05 1

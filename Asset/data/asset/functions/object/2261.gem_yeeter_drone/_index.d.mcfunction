@@ -12,6 +12,8 @@
     #declare tag 2261.Phase.Idle
     #declare tag 2261.Phase.Attack
     #declare tag 2261.Phase.Start
+    #declare tag 2261.IsRotate
+    #declare tag 2261.IsRotate.Inverse
     #declare function animated_java:gem_tnt_drone/summon
     #declare function animated_java:gem_tnt_drone/animations/summon/tween
     #declare function animated_java:gem_tnt_drone/animations/idle/tween

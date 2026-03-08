@@ -10,4 +10,5 @@
     function asset:mob/0456.gargo_ex_machina/tick/util/assing_object_id
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.PanjanDrone
     data modify storage api: Argument.FieldOverride.FlameDamage set from storage asset:context this.Damage.PanjanDrone.Flame
+    data modify storage api: Argument.FieldOverride.IsMove set value true
     function api:object/summon
