@@ -23,3 +23,6 @@
     #declare function animated_java:gem_panjan_drone/animations/move/tween
     #declare function animated_java:gem_panjan_drone/animations/attack/tween
     #declare function animated_java:gem_panjan_drone/remove/this
+    #declare tag 2272.Line
+    #declare tag 2272.Line.Target
+    #declare objective 2272.ObjectId

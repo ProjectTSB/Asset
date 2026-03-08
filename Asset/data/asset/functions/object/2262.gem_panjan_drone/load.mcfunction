@@ -8,3 +8,4 @@
 # @within function asset:object/2262.gem_panjan_drone/**
     scoreboard objectives add 2262.IdleTime dummy
     scoreboard objectives add 2262.PredictionTime dummy
+    scoreboard objectives add 2262.PredictionTime dummy

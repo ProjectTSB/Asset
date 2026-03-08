@@ -8,3 +8,4 @@
 # @within function asset:object/2272.player_target_line/**
     scoreboard objectives add 2272.PlayerId dummy
     scoreboard objectives add 2272.Tick dummy
+    scoreboard objectives add 2272.ObjectId dummy

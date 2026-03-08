@@ -10,9 +10,11 @@
 
 # 演出
     execute if entity @s[scores={General.Object.Tick=1}] run playsound block.piston.contract hostile @a ~ ~ ~ 2 0.8
+    function asset:object/2262.gem_panjan_drone/tick/link_target_line.m with storage asset:context this
 
 # 移動
     execute if entity @s[scores={General.Object.Tick=20..}] run function asset:object/2262.gem_panjan_drone/tick/move_to_player.m with storage asset:context this
 
 # 攻撃に移行
+    execute if score @s General.Object.Tick matches 200.. run function asset:object/2262.gem_panjan_drone/tick/remove_target_line.m with storage asset:context this
     execute if score @s General.Object.Tick matches 200.. run function asset:object/2262.gem_panjan_drone/tick/start_attack
