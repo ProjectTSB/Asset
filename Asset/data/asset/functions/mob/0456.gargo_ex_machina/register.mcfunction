@@ -56,3 +56,4 @@
         data modify storage asset:mob Field.Damage.AttackDrone set value {Amount:60.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.YeeterDrone set value {Amount:60.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone set value {Amount:60.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.PanjanDrone.Flame set value {Amount:20.0,Type:"Magic",Element:"Fire"}

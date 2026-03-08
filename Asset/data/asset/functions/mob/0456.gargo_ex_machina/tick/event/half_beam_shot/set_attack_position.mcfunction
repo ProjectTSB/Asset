@@ -84,4 +84,4 @@ summon area_effect_cloud ^-8.78227 ^ ^-8.78227 {Tags:["CO.Aec.AttackPosition"],D
 summon area_effect_cloud ^0 ^ ^-8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
 
 # 自身の周囲を消去
-    execute at @s run kill @e[tag=CO.Aec.AttackPosition,distance=..14]
+    execute at @s run kill @e[tag=CO.Aec.AttackPosition,distance=..22]
