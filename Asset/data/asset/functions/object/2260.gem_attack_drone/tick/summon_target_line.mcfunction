@@ -1,8 +1,8 @@
-#> asset:object/2260.gem_attack_drone/tick/summon_target_line
+#> asset:object/2262.gem_panjan_drone/tick/summon_target_line
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2260.gem_attack_drone/tick/event_idle
+# @within asset:object/2262.gem_panjan_drone/tick/event_idle
 
 # ターゲット線召喚
     data modify storage api: Argument.ID set value 2272
