@@ -27,4 +27,4 @@
     execute if entity @s[scores={2261.AttackInterval=1}] positioned ~ ~5 ~ run function asset:object/2261.gem_yeeter_drone/tick/attack
 
 # 消去
-    execute if entity @s[scores={General.Object.Tick=300..}] run tag @s add CO.Drone.Remove
+    execute if entity @s[scores={General.Object.Tick=300..}] run function asset:object/2261.gem_yeeter_drone/tick/start_remove
