@@ -11,4 +11,5 @@
     data modify storage api: Argument.ID set value 2270
     data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+    $data modify storage api: Argument.FieldOverride.IsNoPrediction set value $(NoPrediction)
     function api:object/summon

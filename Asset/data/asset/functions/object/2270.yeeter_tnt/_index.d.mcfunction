@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2270.yeeter_tnt/**
-    #declare
+    #declare tag 2270.NoPrediction

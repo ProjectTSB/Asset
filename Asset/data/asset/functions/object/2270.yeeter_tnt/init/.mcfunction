@@ -6,3 +6,6 @@
 
 # 実行角度に合わせる
     tp @s ~ ~ ~ ~ 0
+
+# 予兆無し
+    execute if data storage asset:context this{IsNoPrediction:true} run tag @s add 2270.NoPrediction

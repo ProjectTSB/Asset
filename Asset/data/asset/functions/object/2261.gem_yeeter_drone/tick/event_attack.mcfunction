@@ -15,16 +15,16 @@
 
 # 移動
     execute if entity @s[scores={General.Object.Tick=1..20}] run tp @s ^ ^ ^-0.05
-    execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] run tp @s ^ ^ ^0.2
+    execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=36..40}] run tp @s ^ ^ ^0.2
     execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] run tp @s ^ ^ ^0.4
-    
     execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~-0.375 ~
     execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~-0.75 ~
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=40..}] run scoreboard players add @s 2261.AttackInterval 1
     execute if entity @s[scores={2261.AttackInterval=40..}] run scoreboard players set @s 2261.AttackInterval 0
-    execute if entity @s[scores={2261.AttackInterval=1}] positioned ~ ~5 ~ run function asset:object/2261.gem_yeeter_drone/tick/attack
+    execute if entity @s[scores={2261.AttackInterval=1,General.Object.Tick=..44}] positioned ~ ~5 ~ run function asset:object/2261.gem_yeeter_drone/tick/attack.m {NoPrediction:"true"}
+    execute if entity @s[scores={2261.AttackInterval=1,General.Object.Tick=45..}] positioned ~ ~5 ~ run function asset:object/2261.gem_yeeter_drone/tick/attack.m {NoPrediction:"false"}
 
 # 消去
     execute if entity @s[scores={General.Object.Tick=300..}] run function asset:object/2261.gem_yeeter_drone/tick/start_remove

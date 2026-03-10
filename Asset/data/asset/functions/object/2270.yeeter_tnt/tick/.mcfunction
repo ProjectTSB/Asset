@@ -17,7 +17,7 @@
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=1..5}] run tp @s ~ ~-1 ~
-    execute if entity @s[scores={General.Object.Tick=1}] positioned ~ ~-5 ~ run function asset:object/2270.yeeter_tnt/tick/prediction.m {PredictionTime:60}
+    execute if entity @s[tag=!2270.NoPrediction,scores={General.Object.Tick=1}] positioned ~ ~-5 ~ run function asset:object/2270.yeeter_tnt/tick/prediction.m {PredictionTime:60}
     execute if entity @s[scores={General.Object.Tick=60..}] at @s run function asset:object/2270.yeeter_tnt/tick/damage
 
 # 消滅処理
