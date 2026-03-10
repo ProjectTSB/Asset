@@ -14,7 +14,7 @@
     function asset:object/2261.gem_yeeter_drone/init/animated_java
 
 # 仮
-    scoreboard players set @s 2261.IdleTime 60
+    scoreboard players set @s 2261.IdleTime 100
     # tag @s add 2261.IsRotate.Inverse
 
 # 回転有無
@@ -23,6 +23,7 @@
 
 # タイマー計算
     # IdleTimeは予備動作を考慮して短縮
-    scoreboard players remove @s 2261.IdleTime 25
+    scoreboard players remove @s 2261.IdleTime 40
+    execute if score @s 2261.IdleTime matches ..-1 run scoreboard players set @s 2261.IdleTime 0
     execute store result score @s 2261.PredictionTime run scoreboard players get @s 2261.IdleTime
     scoreboard players remove @s 2261.PredictionTime 30
