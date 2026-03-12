@@ -4,13 +4,13 @@
 #
 # @within asset:mob/alias/2003/reflect
 
+# 正面のブロックにぶつかった際の処理
+    execute store result storage asset:temp 2003.HalfSpeed float 0.005 run data get storage asset:temp 2003.Speed 100
+    execute anchored eyes positioned ^ ^ ^ run function asset:mob/2003.abstract_eye/reflect/forward_block.m with storage asset:temp 2003
+    execute if data storage asset:temp 2003{Check:true} run tp @s ~ ~ ~ ~45 ~-45
+
 # 下がブロックなら上を向く
-    execute at @s unless block ~ ~0.2 ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~-35
+    execute at @s unless block ~ ~1 ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~-35
 
 # 上がブロックなら下を向く
     execute at @s unless block ~ ~2.5 ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~80
-
-# カベにぶつかった際の処理
-    execute store result storage asset:temp Args.Speed double 0.01 run attribute @s generic.movement_speed get 100
-    function asset:mob/2003.abstract_eye/reflect/forward_block.m with storage asset:temp Args
-    data remove storage asset:temp Args
