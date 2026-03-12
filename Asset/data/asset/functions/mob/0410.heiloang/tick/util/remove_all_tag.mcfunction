@@ -7,9 +7,9 @@
 # @within asset:mob/0410.heiloang/remove/
 
 # ターゲット用タグ
-    tag @a remove BE.MainTarget
-    tag @a remove BE.AttackTarget
-    tag @a remove BE.HateTarget
+    tag @a[tag=BE.MainTarget] remove BE.MainTarget
+    tag @a[tag=BE.AttackTarget] remove BE.AttackTarget
+    tag @a[tag=BE.HateTarget] remove BE.HateTarget
 
 # オブジェクト処理用タグ
-    tag @a remove BE.Temp.MoveEnd
+    tag @e[type=item_display,tag=BE.Temp.MoveEnd,distance=..80] remove BE.Temp.MoveEnd

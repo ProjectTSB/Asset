@@ -6,16 +6,16 @@
 
 
 # サウンド
-    execute if score @s General.Mob.Tick matches 20 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-    execute if score @s General.Mob.Tick matches 30 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-    execute if score @s General.Mob.Tick matches 40 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 35 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 40 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 45 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 50 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 55 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 60 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
-#    execute if score @s General.Mob.Tick matches 65 at @a[distance=..100] run playsound minecraft:entity.ghast.shoot player @p ~ ~ ~ 3 1
+    execute if score @s General.Mob.Tick matches 20 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+    execute if score @s General.Mob.Tick matches 30 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+    execute if score @s General.Mob.Tick matches 40 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 35 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 40 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 45 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 50 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 55 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 60 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
+#    execute if score @s General.Mob.Tick matches 65 as @a[distance=..100] at @s run playsound minecraft:entity.ghast.shoot player @s ~ ~ ~ 3 1
 
 # メテオ落下
     execute if score @s General.Mob.Tick matches 20 at @r[distance=..100] run function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/meteor_rain/meteor/aim

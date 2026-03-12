@@ -5,4 +5,4 @@
 # @within asset:mob/0327.eclael/tick/**
 
 # 対象にタグを付与
-    $tag @a[scores={UserID=$(TargetUserId)}] add 93.Temp.Target
+    $tag @a[gamemode=!spectator,scores={UserID=$(TargetUserId)}] add 93.Temp.Target

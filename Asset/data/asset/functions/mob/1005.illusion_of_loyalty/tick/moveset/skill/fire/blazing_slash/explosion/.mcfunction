@@ -11,5 +11,5 @@
     function asset:mob/1005.illusion_of_loyalty/tick/moveset/skill/fire/blazing_slash/explosion/recursive
 
 # サウンド
-    playsound minecraft:entity.generic.explode hostile @p ~ ~ ~ 1 1
-    playsound minecraft:entity.blaze.shoot hostile @p ~ ~ ~ 1 0.5
+    playsound minecraft:entity.generic.explode hostile @a[distance=..32] ~ ~ ~ 1 1
+    playsound minecraft:entity.blaze.shoot hostile @a[distance=..32] ~ ~ ~ 1 0.5

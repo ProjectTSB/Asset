@@ -12,4 +12,4 @@
     execute positioned ~ ~0.1 ~ run function api:object/summon
 
 # 毎回同じ向きってのも味気ないので、向きを変えておく
-    execute facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..64] feet run tp @s ~ ~ ~ ~ 0

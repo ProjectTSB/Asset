@@ -1,6 +1,6 @@
 #> asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_prepare
 #
-# 
+#
 #
 # @within function asset:mob/0213.terrible_sonic_bomber/tick/motions/attack_motion_prepare
 
@@ -24,7 +24,7 @@
 
 # 対象候補指定(最大6人)
     tag @a remove 5X.BrimstoneTarget
-    tag @a[distance=..256,sort=nearest,limit=6] add 5X.BrimstoneTarget
+    tag @a[gamemode=!spectator,distance=..256,sort=nearest,limit=6] add 5X.BrimstoneTarget
 
 # 攻撃箇所表示
     execute as @a[tag=5X.BrimstoneTarget] at @s run function asset:mob/0213.terrible_sonic_bomber/tick/weapons/brimstone_target_display

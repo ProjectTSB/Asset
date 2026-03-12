@@ -13,7 +13,7 @@
     playsound minecraft:block.amethyst_cluster.break hostile @a ~ ~ ~ 4 1.7
 
 # 落下中のプレイヤーがいたら中心に置く
-    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] positioned ~-50 ~-14 ~-50 run tp @a[dx=100,dy=10,dz=100] ~ ~ ~
+    execute at @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..64,limit=1] positioned ~-50 ~-14 ~-50 run tp @a[gamemode=!spectator,dx=100,dy=10,dz=100] ~ ~ ~
 
 # 画面エフェクト
     title @a[distance=..64] times 0 5 10
@@ -28,7 +28,7 @@
     data modify storage api: Argument.FieldOverride.Pos.X set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[0]
     data modify storage api: Argument.FieldOverride.Pos.Y set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[1]
     data modify storage api: Argument.FieldOverride.Pos.Z set from entity @e[type=marker,tag=RW.Marker.SpawnPoint,distance=..100,sort=nearest,limit=1] Pos[2]
-    execute facing entity @p[distance=..64] eyes run function api:object/summon
+    execute facing entity @p[gamemode=!spectator,distance=..64] eyes run function api:object/summon
 
 # オブジェクト類のキル
     function asset:mob/1004.tultaria/tick/reset/remove_objects
