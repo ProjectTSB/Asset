@@ -4,10 +4,6 @@
 #
 # @within asset:mob/alias/2003/move
 
-#> Private
-# @private
-    #declare function lib:slide_move/
-
 # 壁貫通のないように移動
     data modify storage lib: Argument.SlideMove.Speed set from storage asset:context this.Speed
     data modify storage lib: Argument.SlideMove.Conditions set value "anchored eyes unless block ^ ^ ^ #lib:no_collision/"
