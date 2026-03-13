@@ -14,14 +14,13 @@
 # 幾何学の処理をしてかつ、後ろがブロックじゃないかつ、足元がブロックじゃなければ後退
     # execute if entity @s[scores={A9.StepBack=0..}] facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ~ ~1.8 ~ if block ^ ^ ^-0.1 #lib:no_collision positioned ~ ~-1.8 ~ if block ~ ~0 ~ #lib:no_collision if block ~ ~1.5 ~ #lib:no_collision run tp @s ^ ^ ^-0.1 ~ ~
 
-# プレイヤーが近くにいるとき、3秒間後退モードになる
-    execute if entity @p[distance=..5] unless entity @s[scores={A9.StepBack=0..}] run scoreboard players set @s A9.StepBack 60
-
-# 後退モード時、プレイヤーが近くにいなければ後退モードをやめる
-    execute unless entity @p[distance=..10] unless entity @s[scores={A9.StepBack=0..}] run scoreboard players set @s A9.StepBack -1
-
-# 後退モード動き用スコアを減らす
-    execute if entity @s[scores={A9.StepBack=0..}] run scoreboard players remove @s A9.StepBack 1
+# 後退諸々の処理
+    # Tickのデクリメント
+        execute store result storage asset:context this.MoveBackTick._ int 0.9999999999 run data get storage asset:context this.MoveBackTick._
+    # プレイヤーが近くにいれば3秒間後退モードになる
+        execute if entity @p[gamemode=!spectator,distance=..5] if data storage asset:context this.MoveBackTick{_:0} run data modify storage asset:context this.MoveBackTick._ set from storage asset:context this.MoveBackTick.Max
+    # 後退時、プレイヤーが近くにいなければ後退を終了する
+        execute unless entity @p[gamemode=!spectator,distance=..10] unless data storage asset:context this.MoveBackTick{_:0} run data modify storage asset:context this.MoveBackTick._ set value 0
 
 # スコア
     scoreboard players add @s General.Mob.Tick 1

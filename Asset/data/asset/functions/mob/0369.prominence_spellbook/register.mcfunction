@@ -71,5 +71,9 @@
 # ダメージ
     data modify storage asset:mob Field.Damage set value 24f
 
+# 後退時間
+    data modify storage asset:mob Field.MoveBackTick._ set value 0
+    data modify storage asset:mob Field.MoveBackTick.Max set value 60
+
 # 追尾性能
     data modify storage asset:mob Field.Rotate set value 800
