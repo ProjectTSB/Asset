@@ -5,4 +5,4 @@
 # @within asset:mob/alias/2003/get_speed
 
 # スピードを取得します
-    execute store result storage asset:temp 2003.Speed double 0.01 run attribute @s generic.movement_speed get 100
+    execute store result storage asset:context this.Speed double 0.01 run attribute @s generic.movement_speed get 100

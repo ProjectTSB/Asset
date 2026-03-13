@@ -14,6 +14,3 @@
 
 # 完全に重なるのを対策するために低確率で追加でmoveする
     execute if predicate lib:random_pass_per/1 at @s run function asset:mob/call.m {method:"move"}
-
-# リセット
-    data remove storage asset:temp 2003
