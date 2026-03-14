@@ -10,17 +10,15 @@
 # super.tick
     function asset:mob/super.tick
 
-# 後退モード時は速度が下がる
-# 幾何学の処理をしてかつ、後ろがブロックじゃないかつ、足元がブロックじゃなければ後退
-    # execute if entity @s[scores={A9.StepBack=0..}] facing entity @p[gamemode=!spectator] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s positioned ~ ~1.8 ~ if block ^ ^ ^-0.1 #lib:no_collision positioned ~ ~-1.8 ~ if block ~ ~0 ~ #lib:no_collision if block ~ ~1.5 ~ #lib:no_collision run tp @s ^ ^ ^-0.1 ~ ~
-
 # 後退諸々の処理
     # Tickのデクリメント
         execute store result storage asset:context this.MoveBackTick._ int 0.9999999999 run data get storage asset:context this.MoveBackTick._
     # プレイヤーが近くにいれば3秒間後退モードになる
-        execute if entity @p[gamemode=!spectator,distance=..5] if data storage asset:context this.MoveBackTick{_:0} run data modify storage asset:context this.MoveBackTick._ set from storage asset:context this.MoveBackTick.Max
+        execute if data storage asset:context this{IsMoveBack:false} if entity @p[gamemode=!spectator,distance=..5] run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/start
+    # 残りtickが0になったとき、後退モードを終了する
+        execute if data storage asset:context this{MoveBackTick:0,IsMoveBack:true} run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/end
     # 後退時、プレイヤーが近くにいなければ後退を終了する
-        execute unless entity @p[gamemode=!spectator,distance=..10] unless data storage asset:context this.MoveBackTick{_:0} run data modify storage asset:context this.MoveBackTick._ set value 0
+        execute if data storage asset:context this{IsMoveBack:true} unless entity @p[gamemode=!spectator,distance=..10] run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/end
 
 # スコア
     scoreboard players add @s General.Mob.Tick 1

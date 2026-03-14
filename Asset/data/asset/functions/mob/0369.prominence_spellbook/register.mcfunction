@@ -75,5 +75,11 @@
     data modify storage asset:mob Field.MoveBackTick._ set value 0
     data modify storage asset:mob Field.MoveBackTick.Max set value 60
 
+# 後退モードか否か
+    data modify storage asset:mob Field.IsMoveBack set value false
+
+# 移動速度
+    data modify storage asset:mob Field.MoveSpeed set value {Forward:0.3,Back:0.1}
+
 # 追尾性能
     data modify storage asset:mob Field.Rotate set value 800

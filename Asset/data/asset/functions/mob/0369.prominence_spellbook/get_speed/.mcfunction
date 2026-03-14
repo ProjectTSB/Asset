@@ -8,4 +8,5 @@
     function asset:mob/super.method
 
 # movement_speedはマイナスにできないため、後退モードの場合、速度を-1倍する
-    execute unless data storage asset:context this.MoveBackTick{_:0} store result storage asset:context this.Speed double -0.01 run data get storage asset:context this.Speed 100
+    execute if data storage asset:context this{IsMoveBack:true} store result storage asset:context this.Speed double -0.01 run data get storage asset:context this.Speed 100
+
