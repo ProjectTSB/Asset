@@ -1,4 +1,4 @@
-#> asset:mob/0456.gargo_ex_machina/init/animated_java
+#> asset:mob/0456.gargo_ex_machina/init/animated_java.m
 #
 # 初期化処理 Aj関連
 #
@@ -11,7 +11,7 @@
         execute as @e[type=item_display,tag=CO.ModelRoot] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
         execute as @e[type=item_display,tag=CO.ModelRoot] on passengers if entity @s[type=item_display] run data merge entity @s {view_range:16f,width:0f,height:0f,teleport_duration:2}
     # Locatorの初期化
-        # execute as @e[type=item_display,tag=CO.ModelRoot] run function animated_java:heiloang_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/init/locator'}
+        execute as @e[type=item_display,tag=CO.ModelRoot] run function animated_java:gargo_ex_machina/as_own_locator_entities {command:'function asset:mob/0456.gargo_ex_machina/init/locator'}
 
 # テスト
     # 待機モーション再生

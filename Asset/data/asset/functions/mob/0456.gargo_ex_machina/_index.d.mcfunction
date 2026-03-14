@@ -56,7 +56,7 @@
     #declare tag CO.Aec.FieldModify
     #declare tag CO.Aec.FieldModify.Init
     #declare tag CO.Temp.Ground
-    #declare tag 
+    #declare tag CO.Temp.Dummy
     #declare tag 
     #declare tag 
     #declare tag 
@@ -69,6 +69,7 @@
     # - 自動生成
     #declare tag aj.global.data
     #declare function animated_java:gargo_ex_machina/summon
+    #declare function animated_java:gargo_ex_machina/as_own_locator_entities
     #declare function animated_java:gargo_ex_machina/animations/pause_all
     #declare function animated_java:gargo_ex_machina/animations/idle/tween
     #declare function animated_java:gargo_ex_machina/animations/activation/tween

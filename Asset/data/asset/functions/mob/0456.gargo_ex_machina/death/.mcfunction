@@ -24,7 +24,7 @@
     kill @e[type=marker,tag=CO.CenterPosition]
 
 # 当たり判定消去
-    # execute as @e[type=item_display,tag=CO.ModelRoot] run function animated_java:heiloang_aj/as_own_locator_entities {command:'function asset:mob/0410.heiloang/death/kill_hitbox'}
+    execute as @e[type=item_display,tag=CO.ModelRoot] run function animated_java:gargo_ex_machina/as_own_locator_entities {command:'function asset:mob/0456.gargo_ex_machina/death/kill_hitbox'}
     function animated_java:gargo_ex_machina/remove/all
 
 # その他リセット
