@@ -12,4 +12,4 @@
 
 execute if data storage asset:context this.Target run particle minecraft:dust 0.58 0 0 0.75 ~ ~ ~ 0 0 0 0 1
 execute if entity @s[dx=0] run return run function asset:mob/0027.skull_sniper/tick/target/fetch
-execute positioned ^ ^ ^0.5 if block ^ ^ ^ #lib:no_collision run return run function asset:mob/0027.skull_sniper/tick/target/
+execute positioned ^ ^ ^0.5 if block ^ ^ ^ #lib:no_collision/ run return run function asset:mob/0027.skull_sniper/tick/target/

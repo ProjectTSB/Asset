@@ -19,9 +19,9 @@
     execute if entity @s[tag=2031.HighSpeedSpinning] run tag @e[type=#lib:living,tag=Targetable,distance=..30] remove Targetable
 
 # 下に落ちる
-    execute at @s if block ~ ~-1.7 ~ #lib:no_collision_without_fluid run tp @s ~ ~-0.2 ~
-    execute at @s if block ~ ~-1.7 ~ #lib:no_collision_without_fluid run tp @s ~ ~-0.2 ~
-    execute at @s if block ~ ~-1.7 ~ #lib:no_collision_without_fluid run tp @s ~ ~-0.2 ~
+    execute at @s if block ~ ~-1.7 ~ #lib:no_collision/without_fluid run tp @s ~ ~-0.2 ~
+    execute at @s if block ~ ~-1.7 ~ #lib:no_collision/without_fluid run tp @s ~ ~-0.2 ~
+    execute at @s if block ~ ~-1.7 ~ #lib:no_collision/without_fluid run tp @s ~ ~-0.2 ~
 
 # 継承
     execute at @s run function asset:object/super.tick

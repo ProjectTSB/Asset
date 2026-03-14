@@ -48,4 +48,4 @@ summon area_effect_cloud ^-0.6 ^ ^32.49556 {Duration:105,Tags:["BG.Temp.AttackPo
 summon area_effect_cloud ^11.4 ^ ^30.89556 {Duration:105,Tags:["BG.Temp.AttackPosition"]}
 
 # 地面が無ければ消す
-    execute as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition] at @s if block ~ ~-1 ~ #lib:no_collision run kill @s
+    execute as @e[type=area_effect_cloud,tag=BG.Temp.AttackPosition] at @s if block ~ ~-1 ~ #lib:no_collision/ run kill @s

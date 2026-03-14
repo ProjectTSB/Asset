@@ -23,7 +23,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,sort=nearest,limit=1] at @s run function lib:spread_entity/
 
 # マーカーの位置が安全ならワープする
-    execute at @e[type=marker,tag=SpreadMarker,distance=..10,sort=nearest,limit=1] if block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~-1 ~ #lib:no_collision_without_fluid run tp @s ~ ~ ~
+    execute at @e[type=marker,tag=SpreadMarker,distance=..10,sort=nearest,limit=1] if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-1 ~ #lib:no_collision/without_fluid run tp @s ~ ~ ~
 
 # マーカーをkill
     kill @e[type=marker,tag=SpreadMarker,distance=..10]

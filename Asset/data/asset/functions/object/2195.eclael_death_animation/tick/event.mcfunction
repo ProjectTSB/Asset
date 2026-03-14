@@ -11,9 +11,9 @@
     execute if score @s General.Object.Tick matches 1 run function animated_java:eclael/animations/30_0_phase_death/tween {duration:1, to_frame: 1}
 
 # 移動
-    execute if score @s General.Object.Tick matches 1..15 at @s positioned ^ ^ ^-0.1 if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~
-    execute if score @s General.Object.Tick matches 1..15 at @s positioned ^ ^-0.1 ^ if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~
-    execute if score @s General.Object.Tick matches 54..85 at @s positioned ^ ^0.04 ^ if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Object.Tick matches 1..15 at @s positioned ^ ^ ^-0.1 if block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Object.Tick matches 1..15 at @s positioned ^ ^-0.1 ^ if block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~
+    execute if score @s General.Object.Tick matches 54..85 at @s positioned ^ ^0.04 ^ if block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~
 
 # 効果音
     execute if score @s General.Object.Tick matches 1 run function animated_java:eclael/variants/blink/apply
