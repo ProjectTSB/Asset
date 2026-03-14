@@ -8,7 +8,7 @@
     data modify storage asset:object Extends append value 2241
     function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
-    # data modify storage asset:object ExtendsSafe set value
+    data modify storage asset:object ExtendsSafe set value true
 # 継承されることを前提とした、抽象的なObjectであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value false
 # Tickするかどうか(boolean) (オプション)
