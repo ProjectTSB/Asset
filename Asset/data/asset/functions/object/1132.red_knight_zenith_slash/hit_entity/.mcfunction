@@ -32,7 +32,7 @@
     execute as @p[tag=1132.Player,distance=..64] run function api:damage/modifier
 
 # ダメージ実行
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] run function api:damage/
 
 # リセット
     function api:damage/reset

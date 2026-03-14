@@ -17,7 +17,7 @@
     playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 1
 
 # 敵の位置で演出
-    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] run particle dust 255 255 255 0.5 ~ ~0.25 ~ 0.025 5 0.025 0 100 force @a
+    execute at @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..30] run particle dust 255 255 255 0.5 ~ ~0.25 ~ 0.025 5 0.025 0 100 force @a
 
 # 各属性でダメージ
     function asset:artifact/0361.rainbow_crystal/trigger/damage.m {AttackType:"Physical",ElementType:"None"}

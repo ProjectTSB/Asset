@@ -10,7 +10,7 @@
     particle lava ~ ~ ~ 2 2 2 0 100 normal
 
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=!Enemy,distance=..6] run function asset:mob/0234.walleye/tick/damage
+    execute as @e[type=#lib:living_without_player,tag=!Enemy,distance=..6] run function asset:mob/0234.walleye/tick/damage
     execute as @a[distance=..6] run function asset:mob/0234.walleye/tick/damage
 
 # 自死

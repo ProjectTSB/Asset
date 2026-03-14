@@ -17,7 +17,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     execute if data storage asset:context this.AdditionalMPHeal run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5,sort=nearest,limit=1] run function api:damage/
+    execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0.5,dy=0.5,dz=0.5,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
 # リセット

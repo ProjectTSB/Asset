@@ -22,8 +22,8 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..2.2] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2.2] run function api:damage/
     function api:damage/reset
 
 # 着弾タグを消す
-    tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget
+    tag @e[type=#lib:living_without_player,tag=LandingTarget,tag=!Uninterferable,distance=..50,limit=1] remove LandingTarget
