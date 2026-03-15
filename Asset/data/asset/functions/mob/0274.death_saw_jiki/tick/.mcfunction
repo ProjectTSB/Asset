@@ -26,4 +26,4 @@
 # クールダウン
     scoreboard players remove @s[scores={7M.CoolTime=1..}] 7M.CoolTime 1
 # ダメージ（スペクテイターでも発動するけどしゃーなし）
-    execute unless score @s 7M.CoolTime matches 1.. if entity @e[type=#lib:living,tag=Friend,distance=..0.75] run function asset:mob/0274.death_saw_jiki/tick/damage
+    execute unless score @s 7M.CoolTime matches 1.. positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0274.death_saw_jiki/tick/damage
