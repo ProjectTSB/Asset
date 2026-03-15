@@ -10,7 +10,7 @@
     playsound minecraft:entity.firework_rocket.twinkle hostile @a ~ ~ ~ 0.7 2.0 0
 
 # ダメージ
-        data modify storage api: Argument.Damage set value 36f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "Thunder"
         function api:damage/modifier
