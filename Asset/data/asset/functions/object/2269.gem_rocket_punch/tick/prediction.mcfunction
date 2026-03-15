@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2269.gem_rocket_punch/tick/
+# @within asset:object/2269.gem_rocket_punch/tick/event_attack
 
 # 予告
     data modify storage api: Argument.ID set value 2113

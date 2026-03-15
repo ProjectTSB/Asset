@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/2269.gem_rocket_punch/**
-    #declare
+    #declare tag 2269.Attack

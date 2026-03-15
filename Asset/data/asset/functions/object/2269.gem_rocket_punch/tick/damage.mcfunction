@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/2269.gem_rocket_punch/tick/
+# @within asset:object/2269.gem_rocket_punch/tick/event_attack
 
 # ヒット判定
     data modify storage lib: args.dx set value 5
