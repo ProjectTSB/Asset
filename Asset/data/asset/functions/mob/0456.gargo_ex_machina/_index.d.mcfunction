@@ -8,6 +8,7 @@
     #declare tag CO.ModelRoot AJモデルのRootEntity
     #declare tag CO.Hitbox 当たり判定
     #declare tag CO.CenterPosition 中心点
+    #declare tag CO.IsLatter 後半戦
     # - スキル
     #declare tag CO.Skill.Activate 起動
     #declare tag CO.Skill.Move 移動
@@ -100,6 +101,8 @@
     #declare function animated_java:gargo_ex_machina/animations/walk_end/tween
     #declare function animated_java:gargo_ex_machina/animations/super_jump_start/tween
     #declare function animated_java:gargo_ex_machina/animations/super_jump_end/tween
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/pause
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/resume
     #declare function animated_java:gargo_ex_machina/animations/call_drone/tween
     #declare function animated_java:gargo_ex_machina/animations/change_to_shot/tween
     #declare function animated_java:gargo_ex_machina/animations/change_to_sword/tween

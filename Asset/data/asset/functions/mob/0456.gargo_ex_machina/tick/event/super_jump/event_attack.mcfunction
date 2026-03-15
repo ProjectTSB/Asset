@@ -9,7 +9,7 @@
 
 # 攻撃
     # アニメーション再生
-        execute if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/super_jump_end/tween {duration:1, to_frame: 1}
+        execute if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/super_jump_end/resume {duration:1, to_frame: 1}
     # 効果音
         execute if score @s CO.EventTimer matches 38 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 63 run function asset:mob/0456.gargo_ex_machina/tick/util/sound

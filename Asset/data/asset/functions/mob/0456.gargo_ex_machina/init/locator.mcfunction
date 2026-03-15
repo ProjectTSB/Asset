@@ -17,5 +17,3 @@
     tag @s add ProcessCommonTag
     tag @s add CO.Hitbox
     # effect give @s instant_health infinite 0 true
-
-say initされました

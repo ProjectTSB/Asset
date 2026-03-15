@@ -8,10 +8,12 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 拡大
+    execute if entity @s[scores={General.Object.Tick=20}] run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 0.7
     execute if entity @s[scores={General.Object.Tick=20}] run data modify entity @s start_interpolation set value -1
     execute if entity @s[scores={General.Object.Tick=20}] run data modify entity @s transformation.translation set value [0.0f,0.75f,0.0f]
     execute if entity @s[scores={General.Object.Tick=20}] run data modify entity @s transformation.scale set value [3.0f,3.0f,3.0f]
     execute if entity @s[scores={General.Object.Tick=45}] run data modify entity @s start_interpolation set value -1
+    execute if entity @s[scores={General.Object.Tick=45}] run playsound entity.puffer_fish.blow_up hostile @a ~ ~ ~ 2 1
     execute if entity @s[scores={General.Object.Tick=45}] run data modify entity @s transformation.scale set value [0.0f,6.0f,0.0f]
     execute if entity @s[scores={General.Object.Tick=45}] run data modify entity @s transformation.scale set value [6.0f,6.0f,6.0f]
 

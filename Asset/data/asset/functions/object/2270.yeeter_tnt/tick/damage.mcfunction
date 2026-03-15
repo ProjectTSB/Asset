@@ -16,4 +16,4 @@
 # 演出
     particle explosion ~ ~1 ~ 3 1 3 0 20 force
     particle lava ~ ~1 ~ 3 1 3 0.2 10
-    playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.8
+    playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.8

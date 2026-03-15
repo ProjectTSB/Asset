@@ -6,5 +6,3 @@
 
 # 継承元の処理実行
     function asset:mob/super.hurt
-
-say だめーじ

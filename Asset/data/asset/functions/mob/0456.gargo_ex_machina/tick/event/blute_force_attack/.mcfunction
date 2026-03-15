@@ -29,8 +29,8 @@
             # execute if score @s CO.EventTimer matches 28 positioned ^-20 ^ ^6 run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_panjan_drone.m
             # execute if score @s CO.EventTimer matches 29 positioned ^20 ^ ^6 run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_panjan_drone.m
             execute if score @s CO.EventTimer matches 28 positioned ^ ^ ^-8 rotated ~ ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
-            execute if score @s CO.EventTimer matches 28 positioned ^-26 ^ ^-6 rotated ~-12 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
-            execute if score @s CO.EventTimer matches 28 positioned ^26 ^ ^-6 rotated ~12 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
+            execute if score @s CO.EventTimer matches 28 positioned ^-23 ^ ^-6 rotated ~ ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
+            execute if score @s CO.EventTimer matches 28 positioned ^23 ^ ^-6 rotated ~ ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
         # パンジャン+回転Yeeterパターン
             # execute if score @s CO.EventTimer matches 25 at @e[type=marker,tag=CO.CenterPosition,distance=..80] rotated ~ ~ positioned ^ ^ ^20 rotated ~-90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
             # execute if score @s CO.EventTimer matches 25 at @e[type=marker,tag=CO.CenterPosition,distance=..80] rotated ~120 ~ positioned ^ ^ ^20 rotated ~-90 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/summon_yeeter_drone.m
