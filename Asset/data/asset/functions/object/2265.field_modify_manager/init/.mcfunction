@@ -8,6 +8,7 @@
 
 # 攻撃回数決定
     execute store result score @s 2265.AttackCount store result score $Temp.Count 2265.AttackCount run data get storage asset:context this.AttackCount
+    scoreboard players set @s 2265.AttackCount.Inc 0
 
 # Progressバーの最大値を決定
     scoreboard players set @s 2265.Progress.Current 0

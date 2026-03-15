@@ -7,6 +7,7 @@
 #> 定義類はここに
 # @within function asset:object/2265.field_modify_manager/**
     scoreboard objectives add 2265.AttackCount dummy
+    scoreboard objectives add 2265.AttackCount.Inc dummy
     scoreboard objectives add 2265.Period dummy
     scoreboard objectives add 2265.Progress.Current dummy
     scoreboard objectives add 2265.Progress.Max dummy

@@ -31,6 +31,11 @@
     scoreboard players reset $Temp.Color Global
     scoreboard players set @s 2265.Progress.Current 0
 
+# Bossbar変更
+    execute store result storage asset:context this.Index int 1 run scoreboard players get @s 2265.AttackCount.Inc
+    function asset:object/2265.field_modify_manager/tick/set_bossbar_color.m with storage asset:context this
+    scoreboard players add @s 2265.AttackCount.Inc 2
+
 # カウントを減らし、攻撃が終了した場合自身を消去
     data remove storage asset:context this.Target[0]
     scoreboard players remove @s 2265.AttackCount 1
