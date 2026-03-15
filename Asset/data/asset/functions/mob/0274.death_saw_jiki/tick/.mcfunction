@@ -23,7 +23,7 @@
 # 演出
     playsound entity.sheep.shear hostile @a ~ ~ ~ 0.4 2
 
-# クールダウン
-    scoreboard players remove @s[scores={7M.CoolTime=1..}] 7M.CoolTime 1
-# ダメージ（スペクテイターでも発動するけどしゃーなし）
-    execute unless score @s 7M.CoolTime matches 1.. positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0274.death_saw_jiki/tick/damage
+# 攻撃のクールダウン
+    execute store result storage asset:context this.AttackCT._ int 0.9999999999 run data get storage asset:context this.AttackCT._
+# プレイヤーに接触したら攻撃
+    execute if data storage asset:context this.AttackCT{_:0} positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0274.death_saw_jiki/tick/damage

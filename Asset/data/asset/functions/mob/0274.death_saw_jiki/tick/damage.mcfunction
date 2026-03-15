@@ -18,4 +18,4 @@
         function api:damage/reset
 
 # クールタイムを与える
-    scoreboard players set @s 7M.CoolTime 20
+    data modify storage asset:context this.AttackCT._ set from storage asset:context this.AttackCT.Max

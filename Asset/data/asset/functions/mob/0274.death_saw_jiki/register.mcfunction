@@ -63,3 +63,7 @@
 
 # ダメージ
     data modify storage asset:mob Field.Damage set value 36f
+
+# 攻撃のクールダウン (出現してすぐはダメージを与えない)
+    data modify storage asset:mob Field.AttackCT._ set value 20
+    data modify storage asset:mob Field.AttackCT.Max set value 20
