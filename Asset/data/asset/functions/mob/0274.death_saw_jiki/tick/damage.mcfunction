@@ -1,4 +1,4 @@
-#> asset:mob/0274.death_saw_jiki/tick/3.damage
+#> asset:mob/0274.death_saw_jiki/tick/damage
 #
 #
 #
