@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/act/
 
 # 最初に戻る
-    execute if score @s CO.Counter matches 29.. run scoreboard players set @s CO.Counter 18
+    execute if score @s CO.Counter matches 31.. run scoreboard players set @s CO.Counter 18
 
 # 四隅に移動
     execute if score @s CO.Counter matches ..1 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_corner
@@ -76,3 +76,7 @@
     execute if score @s CO.Counter matches 28 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
 # 交差ロケットパンチ
     execute if score @s CO.Counter matches 29 run tag @s add CO.Skill.RocketPunch.Cross
+    execute if score @s CO.Counter matches 29 run scoreboard players set @s CO.PreTimer 140
+    execute if score @s CO.Counter matches 29 run tag @s add CO.Skill.RocketPunch
+# 待機
+    execute if score @s CO.Counter matches 30 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
