@@ -4,6 +4,9 @@
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/**
 
+# debug
+    return 0
+
 # 行動リセット
     function asset:mob/0456.gargo_ex_machina/tick/util/remove_animation_tag
     execute as @e[type=item_display,tag=CO.ModelRoot,distance=..30,sort=nearest,limit=1] unless entity @s[tag=aj.gargo_ex_machina.animation.idle.playing] run function animated_java:gargo_ex_machina/animations/idle/tween {duration:1, to_frame: 1}

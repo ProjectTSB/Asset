@@ -2,7 +2,7 @@
 #
 # スーパージャンプ
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_start
+# @within asset:mob/0456.gargo_ex_machina/tick/event/super_jump/event_attack
 
 # 予告：円範囲
     data modify storage api: Argument.ID set value 2063
