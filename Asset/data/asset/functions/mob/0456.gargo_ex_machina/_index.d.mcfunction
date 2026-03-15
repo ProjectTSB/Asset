@@ -69,6 +69,7 @@
     #declare tag 
     # - 自動生成
     #declare tag aj.global.data
+    #declare tag aj.gargo_ex_machina.animation.idle.playing
     #declare function animated_java:gargo_ex_machina/summon
     #declare function animated_java:gargo_ex_machina/as_own_locator_entities
     #declare function animated_java:gargo_ex_machina/animations/pause_all

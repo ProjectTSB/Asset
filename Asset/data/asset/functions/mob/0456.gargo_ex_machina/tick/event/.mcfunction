@@ -4,6 +4,9 @@
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/
 
+# 待機検出
+    execute as @e[type=item_display,tag=CO.ModelRoot,distance=..30] at @s if entity @s[tag=aj.gargo_ex_machina.animation.idle.playing] run function asset:mob/0456.gargo_ex_machina/tick/event/idle/
+
 # 起動
     execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
 

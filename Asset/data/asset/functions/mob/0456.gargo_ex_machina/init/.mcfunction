@@ -24,8 +24,7 @@
         execute at @e[type=marker,tag=CO.CenterPosition] run tp @s ~ ~10 ~
     # スコア初期化
         scoreboard players set @s CO.EventTimer 0
-    # 移動
-        # execute at @s run tp @s ^ ^ ^ ~ 0
+        scoreboard players set @s CO.Counter 0
 
 # ダミー用ひつじ召喚
     data modify storage api: Argument.ID set value 2264

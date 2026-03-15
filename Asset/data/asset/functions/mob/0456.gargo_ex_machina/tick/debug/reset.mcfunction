@@ -4,6 +4,7 @@
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/debug/interrupt
 # @within asset:mob/0456.gargo_ex_machina/tick/debug/interrupt.m
+# @within asset:mob/0456.gargo_ex_machina/tick/debug/act
 
 # メモ
     # execute as @e[type=slime,tag=BE.EntityRoot] at @s run function asset:mob/0456.gargo_ex_machina/tick/debug/reset
