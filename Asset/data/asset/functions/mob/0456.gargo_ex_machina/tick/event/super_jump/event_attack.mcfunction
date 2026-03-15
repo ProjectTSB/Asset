@@ -32,4 +32,4 @@
         execute as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
 
 # 終了
-    execute if score @s CO.EventTimer matches 159.. run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/end
+    execute if score @s CO.EventTimer matches 139.. run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/end
