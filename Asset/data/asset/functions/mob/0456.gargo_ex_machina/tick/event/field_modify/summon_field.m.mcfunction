@@ -8,7 +8,7 @@
     data modify storage api: Argument.ID set value 2266
     $data modify storage api: Argument.FieldOverride.Model set value "$(Model)"
     $data modify storage api: Argument.FieldOverride.Color set value $(Color)
-    function api:object/summon
+    execute positioned ~ ~ ~ run function api:object/summon
 
 # 終了
     kill @s

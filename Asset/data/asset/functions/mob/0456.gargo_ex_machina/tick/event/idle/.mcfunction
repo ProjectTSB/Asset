@@ -2,7 +2,7 @@
 #
 # 移動
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/
+# @within asset:mob/0456.gargo_ex_machina/tick/event/idle/check
 
 # タイマー増加
     scoreboard players add @s CO.EventTimer 1

@@ -33,7 +33,7 @@
         execute if score @s CO.EventTimer matches 23 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-1
 
 # 2連叩きつけに遷移
-    execute if score @s CO.EventTimer matches 30 run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/start_double
+    execute if entity @s[tag=CO.IsLatter] if score @s CO.EventTimer matches 30 run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/start_double
 
 # 終了
     execute if score @s CO.EventTimer matches 95.. run function asset:mob/0456.gargo_ex_machina/tick/event/sword_attack/end
