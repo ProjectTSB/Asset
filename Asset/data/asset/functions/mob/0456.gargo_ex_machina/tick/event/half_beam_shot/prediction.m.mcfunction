@@ -11,4 +11,5 @@
     data modify storage api: Argument.FieldOverride.Scale set value [60f,100f]
     $data modify storage api: Argument.FieldOverride.Interpolation set value $(Interpolation)
     $data modify storage api: Argument.FieldOverride.Tick set value $(Tick)
+    data modify storage api: Argument.FieldOverride.ViewRange set value 16f
     execute positioned ^ ^0.1 ^50 rotated ~180 0 run function api:object/summon
