@@ -7,6 +7,7 @@
 # タグ消去
     scoreboard players set @s CO.EventTimer 0
     tag @s remove CO.Skill.RocketPunch
+    tag @s remove CO.Skill.RocketPunch.Cross
     scoreboard players reset @s CO.PreTimer
 
 # 待機モーション再生

@@ -32,6 +32,7 @@
     scoreboard players set @s 2265.Progress.Current 0
 
 # Bossbar変更
+    data modify storage asset:context this.Text set from storage asset:context this.Target[0]
     execute store result storage asset:context this.Index int 1 run scoreboard players get @s 2265.AttackCount.Inc
     function asset:object/2265.field_modify_manager/tick/set_bossbar_color.m with storage asset:context this
     scoreboard players add @s 2265.AttackCount.Inc 2

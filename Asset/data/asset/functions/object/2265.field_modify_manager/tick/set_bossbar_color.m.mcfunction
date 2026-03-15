@@ -5,4 +5,4 @@
 # @within asset:object/2265.field_modify_manager/tick/attack
 
 # 
-    $data modify storage asset:context this.BossBar.Color[$(Index)] set value '{"text":"■","color":"#5E5E5E"}'
+    $data modify storage asset:context this.BossBar.Color[$(Index)] set value '{"text":"$(Text)","color":"#5E5E5E","font":"mob/456/modify","bold":false}'

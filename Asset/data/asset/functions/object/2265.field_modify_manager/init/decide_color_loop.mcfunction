@@ -15,12 +15,12 @@
     execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Blue,distance=..10,limit=1] run data modify storage asset:context this.Target append value 1
     execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Green,distance=..10,limit=1] run data modify storage asset:context this.Target append value 2
     execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Yellow,distance=..10,limit=1] run data modify storage asset:context this.Target append value 3
-    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Red,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"■","color":"#FF61DF"}'
-    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Blue,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"■","color":"#5C7CFF"}'
-    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Green,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"■","color":"#6FFF59"}'
-    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Yellow,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"■","color":"#FFAC59"}'
+    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Red,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"0","color":"#FF61DF","font":"mob/456/modify","bold":false}'
+    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Blue,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"1","color":"#5C7CFF","font":"mob/456/modify","bold":false}'
+    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Green,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"2","color":"#6FFF59","font":"mob/456/modify","bold":false}'
+    execute if entity @e[type=area_effect_cloud,tag=2265.Aec.Target,tag=2265.Aec.Yellow,distance=..10,limit=1] run data modify storage asset:context this.BossBar.Color append value '{"text":"3","color":"#FFAC59","font":"mob/456/modify","bold":false}'
     kill @e[type=area_effect_cloud,tag=2265.Aec.Target,distance=..10]
 
 # 繰り返す
-    execute if score $Temp.Count 2265.AttackCount matches 1.. run data modify storage asset:context this.BossBar.Color append value '{"text":"→","color":"white"}'
+    execute if score $Temp.Count 2265.AttackCount matches 1.. run data modify storage asset:context this.BossBar.Color append value '{"text":"→","color":"white","font":"default","bold":false}'
     execute if score $Temp.Count 2265.AttackCount matches 1.. run function asset:object/2265.field_modify_manager/init/decide_color_loop

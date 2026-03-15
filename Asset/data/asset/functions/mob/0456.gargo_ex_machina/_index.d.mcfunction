@@ -36,6 +36,7 @@
     #declare tag CO.Skill.Transform.Shoot 銃変形
     #declare tag CO.Skill.Transform.Sword 剣変形
     #declare tag CO.Skill.RocketPunch ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.Cross 交差ロケットパンチ
     #declare tag CO.Skill.Shot 射撃
     #declare tag CO.Skill.UpperShot 上空射撃
     #declare tag CO.UpperShot.Asyuc 上空射撃攻撃判定用
@@ -55,6 +56,7 @@
     #declare tag CO.Temp.Rotation
     #declare tag CO.Aec.Destination
     #declare tag CO.Aec.AttackPosition
+    #declare tag CO.Aec.AttackPosition.Init
     #declare tag CO.Aec.UpperShotPosition
     #declare tag CO.Aec.FieldModify
     #declare tag CO.Aec.FieldModify.Init

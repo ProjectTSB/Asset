@@ -74,3 +74,5 @@
         execute if score @s CO.Counter matches 27 run tag @s add CO.Skill.SuperJump
 # 待機
     execute if score @s CO.Counter matches 28 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+# 交差ロケットパンチ
+    execute if score @s CO.Counter matches 29 run tag @s add CO.Skill.RocketPunch.Cross
