@@ -13,6 +13,6 @@
 # パーティクル
     execute at @s anchored eyes positioned ^ ^ ^ run particle poof ~ ~-0.3 ~ 0 0 0 0.1 10
 
-# アイ抽象用 移動速度を-33%する
+# アイ抽象用 移動速度を2/3倍する
 # IsBabyにより移動速度が1.5倍になっているのを相殺する
-    attribute @s generic.movement_speed modifier add 00000001-0000-0001-0000-010900000001 "265.OffsetIsBaby" -0.33 multiply
+    execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base double 0.006667 run attribute @s generic.movement_speed base get 100
