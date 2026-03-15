@@ -54,6 +54,8 @@
 
 # 上空射撃
     execute if entity @s[tag=CO.Skill.UpperShot] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/
+    # 攻撃判定用
+        execute if entity @s[tag=CO.UpperShot.Asyuc] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_attack
 
 # ブルートフォースアタック
     execute if entity @s[tag=CO.Skill.BluteForce] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/

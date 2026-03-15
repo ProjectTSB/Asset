@@ -7,6 +7,7 @@
 #> 定義類はここに
 # @within function asset:mob/0456.gargo_ex_machina/**
     scoreboard objectives add CO.EventTimer dummy
+    scoreboard objectives add CO.EventTimer.UpperShot dummy
     scoreboard objectives add CO.FieldModify.Color dummy
     scoreboard objectives add CO.Counter dummy
     scoreboard objectives add CO.IdleTimer dummy

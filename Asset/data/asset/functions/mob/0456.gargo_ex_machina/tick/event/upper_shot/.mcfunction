@@ -25,7 +25,7 @@
             execute if score @s CO.EventTimer matches 30..32 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.5
             execute if score @s CO.EventTimer matches 30..32 run playsound entity.breeze.jump hostile @a ~ ~ ~ 2 0.6
         # 攻撃
-            execute if score @s CO.EventTimer matches 30..60 at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=2] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack
+            execute if score @s CO.EventTimer matches 28 run tag @s add CO.UpperShot.Asyuc
     
 # 終了
     execute if score @s CO.EventTimer matches 70.. run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/end

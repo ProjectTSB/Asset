@@ -7,8 +7,8 @@
 # ピリオド
     scoreboard players add @s 2265.Period 1
     execute if score @s 2265.Period matches 30.. run scoreboard players set @s 2265.Period 0
-    execute if score @s 2265.Period matches ..9 run data modify storage asset:context this.BossBar.Period set value ['{"text":"."}','{"text":"\\u0005","font":"space"}']
-    execute if score @s 2265.Period matches 10..19 run data modify storage asset:context this.BossBar.Period set value ['{"text":".."}','{"text":"\\u0002","font":"space"}']
+    execute if score @s 2265.Period matches ..9 run data modify storage asset:context this.BossBar.Period set value ['{"text":"."}','{"text":"\\uF005","font":"uniform"}','{"text":"\\uE005","font":"default"}']
+    execute if score @s 2265.Period matches 10..19 run data modify storage asset:context this.BossBar.Period set value ['{"text":".."}','{"text":"\\uF002","font":"uniform"}','{"text":"\\uE002","font":"default"}']
     execute if score @s 2265.Period matches 20.. run data modify storage asset:context this.BossBar.Period set value ['{"text":"..."}']
 
 # ボスバー表示
