@@ -8,4 +8,4 @@
 
 # 速度・追尾ともに弱く設定
     data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.MoveSpeed.Slow
-    data modify storage asset:context this.Rotate set from storage asset:context this.Weak
+    data modify storage asset:context this.Rotate set from storage asset:context this.RotatePower.Weak

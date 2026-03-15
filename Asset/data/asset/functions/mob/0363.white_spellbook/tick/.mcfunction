@@ -23,5 +23,7 @@
     execute if score @s A3.MoveTimer matches 60 run function asset:mob/0363.white_spellbook/set_speed/1
     execute if score @s A3.MoveTimer matches 120 run function asset:mob/0363.white_spellbook/set_speed/0
 
+tellraw @a {"storage":"asset:context","nbt":"this.Rotate"}
+
 # 移動スコアリセット
     execute if entity @s[scores={A3.MoveTimer=120..}] run scoreboard players reset @s A3.MoveTimer
