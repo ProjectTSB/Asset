@@ -14,11 +14,13 @@
 # 前方が2m穴なら適当に方向転換
     execute unless block ~ ~-1 ~ #lib:no_collision/ if block ^ ^ ^1 #lib:no_collision/ if block ^ ^-1 ^1 #lib:no_collision/ if block ^ ^-2 ^1 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~
 
-# プレイヤーが近くにいないなら前進する
-    execute unless entity @a[distance=..10] at @s rotated ~ 0 run tp ^ ^ ^0.2
 # プレイヤーが近くにいるなら追尾する
-    execute if entity @p[distance=5..10] at @s facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
-    execute if entity @p[distance=..5] at @s facing entity @p eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-100 facing entity @s eyes positioned as @s rotated ~ 0 run tp @s ^ ^ ^0.2 ~ ~
+    execute at @s unless entity @p[gamemode=!spectator,distance=..5] facing entity @p[gamemode=!spectator,distance=..10] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute at @s facing entity @p[gamemode=!spectator,distance=..5] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-100 facing entity @s eyes positioned as @s rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+
+# 前進
+    function asset:mob/call.m {method:"get_speed"}
+    execute at @s run function asset:mob/call.m {method:"move"}
 
 # 演出
     playsound entity.sheep.shear hostile @a ~ ~ ~ 0.4 2
