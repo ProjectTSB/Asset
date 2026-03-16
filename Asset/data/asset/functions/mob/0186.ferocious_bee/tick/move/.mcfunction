@@ -1,10 +1,10 @@
-#> asset:mob/0186.ferocious_bee/tick/move
+#> asset:mob/0186.ferocious_bee/tick/move/
 #
 #
 #
 # @within function
-#   asset:mob/0186.ferocious_bee/tick/
-#   asset:mob/0186.ferocious_bee/tick/turning
+#   asset:mob/0186.ferocious_bee/tick/move/charge
+#   asset:mob/0186.ferocious_bee/tick/move/turning
 
 # 移動
     function asset:mob/call.m {method:"get_speed"}

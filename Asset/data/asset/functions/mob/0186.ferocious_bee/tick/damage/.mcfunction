@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/0186.ferocious_bee/tick/
+# @within function asset:mob/0186.ferocious_bee/tick/move/charge
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
