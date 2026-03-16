@@ -9,3 +9,6 @@
 
 # 速度初期化
     data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.MoveSpeed.Turn
+
+# 多重ヒット防止のデータをリセット
+    function asset:mob/call.m {method:"reset_duplicate_protection"}

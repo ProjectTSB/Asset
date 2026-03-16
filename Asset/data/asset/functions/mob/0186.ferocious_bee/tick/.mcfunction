@@ -20,6 +20,8 @@
     execute if entity @s[scores={General.Mob.Tick=20}] run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.MoveSpeed.Charge
 # 20以上で突進
     execute if entity @s[scores={General.Mob.Tick=20..}] run function asset:mob/0186.ferocious_bee/tick/move
+# 突進時に攻撃
+    execute if entity @s[scores={General.Mob.Tick=20..}] positioned ~-0.5 ~0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0186.ferocious_bee/tick/damage/
 
 # スコアリセット
     execute if score @s General.Mob.Tick matches 30.. run function asset:mob/0186.ferocious_bee/tick/reset
@@ -30,9 +32,6 @@
 # 演出
     execute if entity @s[scores={General.Mob.Tick=20}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
     execute if entity @s[scores={General.Mob.Tick=20..}] run particle cloud ^ ^0.7 ^-0.8 0.25 0.25 0.25 0 0
-
-# 突進時に攻撃
-    execute if entity @s[scores={General.Mob.Tick=20..}] positioned ~-0.5 ~0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0186.ferocious_bee/tick/damage
 
 # カベにぶつかった際の処理はない。壁は貫通するもの
 

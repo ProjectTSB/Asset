@@ -2,6 +2,7 @@
 # @within asset:mob/alias/186/register
 
 # 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2002
     data modify storage asset:mob Extends append value 2004
     function asset:mob/extends
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
