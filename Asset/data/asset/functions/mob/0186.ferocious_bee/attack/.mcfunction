@@ -20,7 +20,7 @@
     data modify storage api: Argument.ID set from storage asset:context this.PoisonID
     execute store result storage api: Argument.Stack int 2 run data get storage api: Return.Difficulty
     execute store result storage api: Argument.Duration int 80 run scoreboard players add $Difficulty Temporary 1
-    execute as @a[tag=Victim] run function api:entity/mob/effect/give
+    execute as @a[tag=Victim,distance=..32] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット
