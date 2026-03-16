@@ -29,7 +29,7 @@
 
 # 演出
     execute if entity @s[scores={General.Mob.Tick=20}] run playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
-    execute if entity @s[scores={General.Mob.Tick=20..}] run particle cloud ~ ~1.25 ~ 0.25 0.25 0.25 0 0
+    execute if entity @s[scores={General.Mob.Tick=20..}] run particle cloud ^ ^0.7 ^-0.8 0.25 0.25 0.25 0 0
 
 # 突進時に攻撃
     execute if entity @s[scores={General.Mob.Tick=20..}] positioned ~-0.5 ~0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] run function asset:mob/0186.ferocious_bee/tick/damage
