@@ -10,6 +10,9 @@
 # 以下の処理はDoTの場合は適用されない
     execute if data storage asset:context Hurt{IsDoT:true} run return fail
 
+# 以下の処理はプレイヤーからの攻撃でないと適用されない
+    execute if data storage asset:context Hurt{}
+
 # HurtTimeをフィールドで疑似的に管理
     data modify storage asset:context this.HurtTime._ set from storage asset:context this.HurtTime.Max
 
