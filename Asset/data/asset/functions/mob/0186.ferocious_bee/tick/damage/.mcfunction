@@ -6,6 +6,7 @@
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.Metadata set value "186.Attack"
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier

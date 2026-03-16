@@ -38,3 +38,6 @@ data modify storage asset:mob Lore set value ['{"text":"殺人蜂。","color":"w
 
 # 旋回時間
     data modify storage asset:mob Field.TurnTick set value 50
+
+# 毒のID
+    data modify storage asset:mob Field.PoisonID set value 79

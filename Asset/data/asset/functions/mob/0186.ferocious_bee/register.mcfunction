@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"凶暴なハチ","color":"yellow"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"ブーーーーン！","color":"white"}','{"text":"毒は持ってない。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"ブーーーーン！","color":"white"}','{"text":"毒を持ってるので刺されない用に注意。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
@@ -64,8 +64,11 @@
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
 
-# フィールド
+# ダメージ
     data modify storage asset:mob Field.Damage set value 11f
+
+# 毒のID
+    data modify storage asset:mob Field.PoisonID set value 29
 
 # 旋回時間
     data modify storage asset:mob Field.TurnTick set value 180
