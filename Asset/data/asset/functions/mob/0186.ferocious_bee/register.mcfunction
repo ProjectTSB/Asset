@@ -1,6 +1,14 @@
 #> asset:mob/0186.ferocious_bee/register
 # @within asset:mob/alias/186/register
 
+# 継承 (int) (オプション)
+    data modify storage asset:mob Extends append value 2004
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
+# 他のモブに継承されることを許可するか (boolean) (オプション)
+    data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
     data modify storage asset:mob ID set value 186
 # Type (string) Wikiを参照
@@ -38,7 +46,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.2
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 50
 # ノックバック耐性 (double) (オプション)
@@ -54,3 +62,16 @@
         data modify storage asset:mob Resist.Water set value 0.9
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 1
+
+# フィールド
+    data modify storage asset:mob Field.Damage set value 11f
+
+# 旋回時間
+    data modify storage asset:mob Field.TurnTick set value 180
+
+# 速度
+    data modify storage asset:mob Field.MoveSpeed set value {Turn:0.2,Charge:1.0}
+
+# 疑似HurtTime
+    data modify storage asset:mob Field.HurtTime._ set value 0
+    data modify storage asset:mob Field.HurtTime.Max set value 20
