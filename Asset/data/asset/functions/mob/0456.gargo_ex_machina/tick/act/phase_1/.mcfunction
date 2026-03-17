@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/act/
 
 # 最初に戻る
-    execute if score @s CO.Counter matches 40.. run scoreboard players set @s CO.Counter 18
+    execute if score @s CO.Counter matches 38.. run scoreboard players set @s CO.Counter 18
 
 # 四隅に移動
     execute if score @s CO.Counter matches ..1 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_corner

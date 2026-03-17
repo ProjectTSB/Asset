@@ -14,7 +14,8 @@ summon area_effect_cloud ^15 ^ ^0 {Tags:["CO.Aec.AttackPosition","CO.Aec.AttackP
 summon area_effect_cloud ^25 ^ ^0 {Tags:["CO.Aec.AttackPosition","CO.Aec.AttackPosition.Init"],Duration:80}
 
 # 数を減らす
-    kill @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,tag=CO.Aec.AttackPosition.Init,distance=..80,sort=random,limit=1]
+    execute if predicate api:global_vars/difficulty/1_normal run kill @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,tag=CO.Aec.AttackPosition.Init,distance=..80,sort=random,limit=2]
+    execute if predicate api:global_vars/difficulty/min/2_hard run kill @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,tag=CO.Aec.AttackPosition.Init,distance=..80,sort=random,limit=1]
 
 # 回転  
     execute as @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,tag=CO.Aec.AttackPosition.Init,distance=..80] positioned as @s run tp @s ~ ~ ~ ~ ~
