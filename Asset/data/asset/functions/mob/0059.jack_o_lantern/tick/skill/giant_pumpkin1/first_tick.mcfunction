@@ -8,6 +8,9 @@
 # @private
     #declare tag RotationMarker
 
+# 演出
+    playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
+
 # 自身の後ろが壁か？
     execute if function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/check_no_wall_behind run data modify storage asset:temp NoBlockBihind set value true
 
