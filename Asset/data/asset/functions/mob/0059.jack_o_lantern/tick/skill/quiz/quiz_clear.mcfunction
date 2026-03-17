@@ -19,6 +19,7 @@
     function api:mob/get_max_health
     execute store result storage api: Argument.Delta double -0.0008 run data get storage api: Return.MaxHealth 100
     function api:mob/modify_health
+    function asset:mob/call.m {method:"update_bossbar"}
 
 # クイズエンド
     function asset:mob/0059.jack_o_lantern/tick/skill/quiz/end
