@@ -87,7 +87,7 @@
         execute if score @s CO.Counter matches 31 run scoreboard players set @s CO.PreTimer 240
         execute if score @s CO.Counter matches 31 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 32 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 32 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 120
 # 中心に移動
     execute if score @s CO.Counter matches 33 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_center
 # 薙ぎ払いレーザー
@@ -98,13 +98,8 @@
         execute if score @s CO.Counter matches 35 run scoreboard players set @s CO.PreTimer 2
         execute if score @s CO.Counter matches 35 run tag @s add CO.Skill.FieldModify
     # スーパージャンプ
+        execute if score @s CO.Counter matches 36 run scoreboard players set @s CO.JumpCount 4
         execute if score @s CO.Counter matches 36 run scoreboard players set @s CO.PreTimer 40
         execute if score @s CO.Counter matches 36 run tag @s add CO.Skill.SuperJump
-        execute if score @s CO.Counter matches 37 run scoreboard players set @s CO.PreTimer 40
-        execute if score @s CO.Counter matches 37 run tag @s add CO.Skill.SuperJump
-        execute if score @s CO.Counter matches 38 run scoreboard players set @s CO.PreTimer 40
-        execute if score @s CO.Counter matches 38 run tag @s add CO.Skill.SuperJump
-        execute if score @s CO.Counter matches 38 run scoreboard players set @s CO.PreTimer 40
-        execute if score @s CO.Counter matches 38 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 39 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 160
+    execute if score @s CO.Counter matches 37 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
