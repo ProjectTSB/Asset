@@ -44,7 +44,7 @@
 # 体力 (double) (オプション)
     data modify storage asset:mob Health set value 32000
 # 攻撃力 (double) (オプション)
-    # data modify storage asset:mob AttackDamage set value 1
+    data modify storage asset:mob AttackDamage set value 0
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち
     # data modify storage asset:mob Defense set value 0
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
@@ -69,7 +69,6 @@
 
 # フィールド
 # 各スキルのダメージ設定
-    data modify storage asset:mob Field.Damage.Vanilla set value 14.0f
     data modify storage asset:mob Field.Damage.Giant.Neutral set value {Beginning:8f,Clash:15f}
     data modify storage asset:mob Field.Damage.Giant.Penalty set value {Beginning:8f,Clash:22.5f}
     data modify storage asset:mob Field.Damage.Missile set value 8.0f

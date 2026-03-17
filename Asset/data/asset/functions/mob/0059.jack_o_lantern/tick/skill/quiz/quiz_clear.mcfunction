@@ -12,9 +12,8 @@
     playsound ogg:mob.strider.retreat5 hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 2
 
-# 自身に鈍足と弱化を付与
+# 自身に鈍足を付与
     effect give @s slowness 3 10 true
-    effect give @s weakness 3 10 true
 
 # 自身に割合ダメージ
     execute store result storage api: Argument.Damage float 0.08 run function api:mob/get_max_health

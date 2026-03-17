@@ -9,7 +9,6 @@
 
 # デバフを解除し移動速度上昇を得る
     effect clear @s slowness
-    effect clear @s weakness
     effect give @s speed 5 6 true
 
 # 発光状態用Tagを付与
