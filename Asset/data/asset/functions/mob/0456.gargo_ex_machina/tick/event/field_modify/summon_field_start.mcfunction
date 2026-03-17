@@ -28,10 +28,7 @@
     summon area_effect_cloud ^22.5 ^ ^-22.5 {Tags:["CO.Aec.FieldModify","CO.Aec.FieldModify.Init"]}
 
 # 初期化
-    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field.m {Model:20591,Color:0}
-    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field.m {Model:20592,Color:1}
-    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field.m {Model:20593,Color:2}
-    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field.m {Model:20594,Color:3}
-
-# 終了
-    kill @e[type=area_effect_cloud,tag=CO.Aec.FieldModify,distance=..80]
+    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field_init.m {Tag:"A"}
+    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field_init.m {Tag:"B"}
+    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field_init.m {Tag:"C"}
+    execute as @e[type=area_effect_cloud,tag=CO.Aec.FieldModify.Init,distance=..80,sort=random,limit=4] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/field_modify/summon_field_init.m {Tag:"D"}

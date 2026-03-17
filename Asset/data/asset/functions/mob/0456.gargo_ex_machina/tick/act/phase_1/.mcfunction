@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/act/
 
 # 最初に戻る
-    execute if score @s CO.Counter matches 31.. run scoreboard players set @s CO.Counter 18
+    execute if score @s CO.Counter matches 40.. run scoreboard players set @s CO.Counter 18
 
 # 四隅に移動
     execute if score @s CO.Counter matches ..1 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_corner
@@ -67,16 +67,44 @@
         execute if score @s CO.Counter matches 24 run tag @s add CO.Skill.UpperShot
     # プレイヤー狙い弾
         execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.Shot
-    # 剣変形
-        execute if score @s CO.Counter matches 26 run tag @s add CO.Skill.Transform.Sword
-    # スーパージャンプ
-        execute if score @s CO.Counter matches 27 run scoreboard players set @s CO.PreTimer 60
-        execute if score @s CO.Counter matches 27 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 28 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 26 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 120
 # 交差ロケットパンチ
-    execute if score @s CO.Counter matches 29 run tag @s add CO.Skill.RocketPunch.Cross
-    execute if score @s CO.Counter matches 29 run scoreboard players set @s CO.PreTimer 140
-    execute if score @s CO.Counter matches 29 run tag @s add CO.Skill.RocketPunch
+    # 剣変形
+        execute if score @s CO.Counter matches 27 run tag @s add CO.Skill.Transform.Sword
+    # 1回目
+        execute if score @s CO.Counter matches 28 run tag @s add CO.Skill.RocketPunch.Cross
+        execute if score @s CO.Counter matches 28 run scoreboard players set @s CO.PreTimer 180
+        execute if score @s CO.Counter matches 28 run tag @s add CO.Skill.RocketPunch
+    # 待機
+        execute if score @s CO.Counter matches 29 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 40
+    # 2回目
+        execute if score @s CO.Counter matches 30 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s run tp @s ~ ~ ~ ~180 0
+        execute if score @s CO.Counter matches 30 run tag @s add CO.Skill.RocketPunch.Cross
+        execute if score @s CO.Counter matches 30 run scoreboard players set @s CO.PreTimer 280
+        execute if score @s CO.Counter matches 30 run tag @s add CO.Skill.RocketPunch
+    # スーパージャンプ
+        execute if score @s CO.Counter matches 31 run scoreboard players set @s CO.PreTimer 240
+        execute if score @s CO.Counter matches 31 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 30 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 32 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+# 中心に移動
+    execute if score @s CO.Counter matches 33 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_center
+# 薙ぎ払いレーザー
+    execute if score @s CO.Counter matches 34 run tag @s add CO.Skill.HalfBeam
+# モディファイ + 連続ジャンプ
+    # フィールドモディファイ
+        execute if score @s CO.Counter matches 35 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s positioned ~ ~-0.499 ~ rotated 0 0 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/field_modify_square
+        execute if score @s CO.Counter matches 35 run scoreboard players set @s CO.PreTimer 2
+        execute if score @s CO.Counter matches 35 run tag @s add CO.Skill.FieldModify
+    # スーパージャンプ
+        execute if score @s CO.Counter matches 36 run scoreboard players set @s CO.PreTimer 40
+        execute if score @s CO.Counter matches 36 run tag @s add CO.Skill.SuperJump
+        execute if score @s CO.Counter matches 37 run scoreboard players set @s CO.PreTimer 40
+        execute if score @s CO.Counter matches 37 run tag @s add CO.Skill.SuperJump
+        execute if score @s CO.Counter matches 38 run scoreboard players set @s CO.PreTimer 40
+        execute if score @s CO.Counter matches 38 run tag @s add CO.Skill.SuperJump
+        execute if score @s CO.Counter matches 38 run scoreboard players set @s CO.PreTimer 40
+        execute if score @s CO.Counter matches 38 run tag @s add CO.Skill.SuperJump
+# 待機
+    execute if score @s CO.Counter matches 39 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 160

@@ -59,6 +59,10 @@
     #declare tag CO.Aec.AttackPosition.Init
     #declare tag CO.Aec.UpperShotPosition
     #declare tag CO.Aec.FieldModify
+    #declare tag CO.Aec.FieldModify.A
+    #declare tag CO.Aec.FieldModify.B
+    #declare tag CO.Aec.FieldModify.C
+    #declare tag CO.Aec.FieldModify.D
     #declare tag CO.Aec.FieldModify.Init
     #declare tag CO.Temp.Ground
     #declare tag CO.Temp.Dummy
