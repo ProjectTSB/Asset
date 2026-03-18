@@ -93,7 +93,7 @@
 # 薙ぎ払いレーザー
     execute if score @s CO.Counter matches 34 run tag @s add CO.Skill.HalfBeam
 # モディファイ + 連続ジャンプ
-    # フィールドモディファイ
+    # フィールドモディファイ・四分割パターン
         execute if score @s CO.Counter matches 35 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s positioned ~ ~-0.499 ~ rotated 0 0 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/field_modify_square
         execute if score @s CO.Counter matches 35 run scoreboard players set @s CO.PreTimer 2
         execute if score @s CO.Counter matches 35 run tag @s add CO.Skill.FieldModify

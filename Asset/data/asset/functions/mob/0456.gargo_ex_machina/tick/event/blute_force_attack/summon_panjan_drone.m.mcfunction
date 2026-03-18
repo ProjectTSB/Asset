@@ -2,7 +2,7 @@
 #
 # ブルートフォースアタック
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/
+# @within asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/**
 
 # ATTACKドローン召喚
     data modify storage api: Argument.ID set value 2262
@@ -10,5 +10,5 @@
     function asset:mob/0456.gargo_ex_machina/tick/util/assing_object_id
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.PanjanDrone
     data modify storage api: Argument.FieldOverride.FlameDamage set from storage asset:context this.Damage.PanjanDrone.Flame
-    data modify storage api: Argument.FieldOverride.IsMove set value true
+    $data modify storage api: Argument.FieldOverride.IsMove set value $(IsMove)
     function api:object/summon

@@ -41,7 +41,8 @@
     #declare tag CO.Skill.UpperShot 上空射撃
     #declare tag CO.UpperShot.Asyuc 上空射撃攻撃判定用
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
-    #declare tag 
+    #declare tag CO.Skill.BluteForce.Async ブルートフォースアタック攻撃判定用
+    #declare tag CO.Skill.BluteForce.Pt.Tutorial ブルートフォースアタック全員お披露目用
     #declare tag 
     #declare tag 
     #declare tag 
@@ -66,15 +67,6 @@
     #declare tag CO.Aec.FieldModify.Init
     #declare tag CO.Temp.Ground
     #declare tag CO.Temp.Dummy
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
-    #declare tag 
     # - 自動生成
     #declare tag aj.global.data
     #declare tag aj.gargo_ex_machina.animation.idle.playing
