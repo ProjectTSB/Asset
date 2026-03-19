@@ -23,8 +23,11 @@
     execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run scoreboard players set $Random Temporary 100
     execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run tag @s add 1N.AlreadySpecial
 
+# DPSチェックの猶予が0ならDPSチェック発動
+    execute if data storage asset:context this{DPSCheck:0} run scoreboard players set $Random Temporary 1000
+
 # デバッグ用
-    # scoreboard players set $Random Temporary 0
+    # scoreboard players set $Random Temporary 1000
 
 # スキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 1N.GiantPumpkin1
@@ -33,6 +36,7 @@
 
     execute if score $Random Temporary matches 10 run tag @s add 1N.Quiz
     execute if score $Random Temporary matches 100 run tag @s add 1N.PumpkinRain
+    execute if score $Random Temporary matches 1000 run tag @s add 1N.DPSCheck
 
 # リセット
     scoreboard players reset $Random Temporary

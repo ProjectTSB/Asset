@@ -73,7 +73,11 @@
     data modify storage asset:mob Field.Damage.Giant.Penalty set value {Beginning:8f,Clash:22.5f}
     data modify storage asset:mob Field.Damage.Missile set value 8.0f
     data modify storage asset:mob Field.Damage.Rain set value 12.0f
+    data modify storage asset:mob Field.Damage.DPSCheck set value 9999.9f
 
 # クイズの間隔
     data modify storage asset:mob Field.QuizInterval._ set value 3
     data modify storage asset:mob Field.QuizInterval.Max set value 4
+
+# DPSチェックまでの猶予
+    data modify storage asset:mob Field.DPSCheck set value 14400
