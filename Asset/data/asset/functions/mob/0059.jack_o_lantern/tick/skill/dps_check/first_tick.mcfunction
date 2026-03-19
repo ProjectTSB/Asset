@@ -11,10 +11,10 @@
     execute at @s run playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
 # カボチャ召喚
-    data modify storage api: Argument.ID set value 2039
-    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.DPSCheck
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute at @s rotated 0 0 positioned ^ ^ ^32 facing entity @e[type=marker,tag=1N.SpawnMarker,distance=..128,limit=1] eyes run function api:object/summon
+    execute at @s rotated 000 0 positioned ^ ^ ^33 facing entity @e[type=marker,tag=1N.SpawnMarker,distance=..128,limit=1] eyes run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/summon
+    execute at @s rotated 090 0 positioned ^ ^ ^33 facing entity @e[type=marker,tag=1N.SpawnMarker,distance=..128,limit=1] eyes run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/summon
+    execute at @s rotated 180 0 positioned ^ ^ ^33 facing entity @e[type=marker,tag=1N.SpawnMarker,distance=..128,limit=1] eyes run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/summon
+    execute at @s rotated 270 0 positioned ^ ^ ^33 facing entity @e[type=marker,tag=1N.SpawnMarker,distance=..128,limit=1] eyes run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/summon
 
 # NoAI化
     data modify entity @s NoAI set value 1b
