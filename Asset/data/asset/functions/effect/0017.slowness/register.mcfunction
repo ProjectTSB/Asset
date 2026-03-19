@@ -5,7 +5,7 @@
 # @within function asset:effect/0017.slowness/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    # data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 17
 # 名前 (TextComponentString)
@@ -40,4 +40,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.UUID set value "00000001-0000-0003-0000-001100000000"
