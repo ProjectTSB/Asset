@@ -11,7 +11,11 @@
 # ここから先は神器側の効果の処理を書く
 
 # 撃っている間うごけない
-    effect give @s slowness 1 2 true
+    data modify storage api: Argument.ID set value 117
+    data modify storage api: Argument.Stack set value 9
+    data modify storage api: Argument.Duration set value 20
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     playsound tsb_sounds:phalanx_shot player @a ~ ~ ~ 0.05 1
