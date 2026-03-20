@@ -11,8 +11,6 @@
 # 演出
     playsound entity.witch.celebrate hostile @a ~ ~ ~ 1 2 0
 
-say a
-
 # 自身の後ろが壁か？
     execute if function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/check_no_wall_behind run data modify storage asset:temp NoBlockBihind set value true
 
@@ -23,8 +21,6 @@ say a
 # 壁なら前へステップ
     execute unless data storage asset:temp {NoBlockBihind:true} run data modify storage lib: Argument.VectorMagnitude set value 3.0
     execute unless data storage asset:temp {NoBlockBihind:true} facing entity @p[gamemode=!spectator,distance=..50] feet rotated ~ -11.25 run function lib:motion/
-
-
 
 # この時のrotationを記録しておく
     summon marker ~ ~ ~ {Tags:["RotationMarker"]}
