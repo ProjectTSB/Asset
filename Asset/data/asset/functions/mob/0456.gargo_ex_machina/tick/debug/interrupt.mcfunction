@@ -18,5 +18,5 @@
     # execute at @s run tp @e[type=item_display,tag=CO.ModelRoot] ~ ~ ~ ~ 0
 
 # イベント実行
-    tag @s add CO.Skill.BluteForce
-    tag @s add CO.Skill.BluteForce.Pt.SpinInv
+    tag @s add CO.Skill.UpperShot
+    # tag @s add CO.Skill.BluteForce.Pt.SpinInv

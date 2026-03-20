@@ -5,4 +5,4 @@
 # @within asset:object/alias/2268/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit","CO.Object"],brightness:{sky:15,block:15},interpolation_duration:3,teleport_duration:1,item:{id:"minecraft:stick",Count:1b,tag:{CustomModelData:20595}},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[0.0f,0.0f,0.0f]}}

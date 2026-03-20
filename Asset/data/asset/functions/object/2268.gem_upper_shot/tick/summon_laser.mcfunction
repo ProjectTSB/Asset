@@ -7,6 +7,7 @@
 # 演出
     data modify storage api: Argument.ID set value 2263
     data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
+    data modify storage api: Argument.FieldOverride.Rotation set from storage asset:context this.Rotation
     data modify storage api: Argument.FieldOverride.IsShot set value true
     data modify storage api: Argument.FieldOverride.IsUpperShot set value true
     function api:object/summon

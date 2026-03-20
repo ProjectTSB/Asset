@@ -5,8 +5,9 @@
 # @within asset:object/alias/2268/init
 
 # 角度をランダムに設定
-    execute store result entity @s Rotation[0] float 0.1 run random value 0..3600
-    execute store result entity @s Rotation[1] float 0.1 run random value -900..-700
+    data modify storage asset:context this.Rotation set value [0.0f, -90.0f]
+    execute store result storage asset:context this.Rotation[0] float 0.1 run random value 0..3600
+    execute store result storage asset:context this.Rotation[1] float 0.1 run random value -900..-700
 
 # 予兆・攻撃時間
     scoreboard players set @s 2268.AttackTime 60
@@ -17,4 +18,4 @@
 # その他時間
     execute store result score @s 2268.VfxTime store result score @s 2268.KillTime run scoreboard players get @s 2268.AttackTime
     scoreboard players remove @s 2268.VfxTime 3
-    scoreboard players add @s 2268.KillTime 1
+    scoreboard players add @s 2268.KillTime 5
