@@ -15,7 +15,7 @@
     # execute at @s run tp @e[type=item_display,tag=CO.ModelRoot] ~ ~ ~ ~ 0
 
 # パターンを任意のタイミングに設定
-    scoreboard players set @s CO.Counter 13
+    $scoreboard players set @s CO.Counter $(Act)
 
 # イベント実行
     function asset:mob/0456.gargo_ex_machina/tick/act/
