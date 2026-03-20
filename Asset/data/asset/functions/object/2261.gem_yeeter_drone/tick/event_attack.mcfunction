@@ -17,6 +17,8 @@
     execute if entity @s[scores={General.Object.Tick=1..20}] run tp @s ^ ^ ^-0.05
     execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=36..40}] run tp @s ^ ^ ^0.2
     execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] run tp @s ^ ^ ^0.4
+    execute if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~0.375 ~
+    execute if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~0.75 ~
     execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~-0.375 ~
     execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~-0.75 ~
 

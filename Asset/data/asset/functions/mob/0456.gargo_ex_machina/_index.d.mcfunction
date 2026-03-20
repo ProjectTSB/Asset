@@ -42,7 +42,9 @@
     #declare tag CO.UpperShot.Asyuc 上空射撃攻撃判定用
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
     #declare tag CO.Skill.BluteForce.Async ブルートフォースアタック攻撃判定用
-    #declare tag CO.Skill.BluteForce.Pt.Tutorial ブルートフォースアタック全員お披露目用
+    #declare tag CO.Skill.BluteForce.Pt.Tutorial 全員お披露目パターン
+    #declare tag CO.Skill.BluteForce.Pt.Spin 回転パターン
+    #declare tag CO.Skill.BluteForce.Pt.SpinInv 回転パターン
     #declare tag 
     #declare tag 
     #declare tag 

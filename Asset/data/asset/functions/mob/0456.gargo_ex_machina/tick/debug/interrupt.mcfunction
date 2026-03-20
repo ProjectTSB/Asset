@@ -19,4 +19,4 @@
 
 # イベント実行
     tag @s add CO.Skill.BluteForce
-    tag @s add CO.Skill.BluteForce.Pt.Tutorial
+    tag @s add CO.Skill.BluteForce.Pt.SpinInv

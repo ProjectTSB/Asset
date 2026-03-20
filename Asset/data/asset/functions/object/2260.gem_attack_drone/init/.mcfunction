@@ -15,7 +15,6 @@
 
 # 仮指定
     scoreboard players set @s 2260.IdleTime 80
-    # tag @s add 2260.IsTarget
 
 # IdleTime
 
