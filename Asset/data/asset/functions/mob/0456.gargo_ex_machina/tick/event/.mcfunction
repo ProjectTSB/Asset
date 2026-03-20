@@ -65,3 +65,6 @@
     # 回転パターン
         execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.Spin] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_spin
         execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.SpinInv] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_spin_inv
+    # エクサパターン
+        execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.Exa] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_exa
+        execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.ExaInv] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_exa_inv

@@ -48,6 +48,8 @@
     #declare tag CO.Skill.BluteForce.Pt.Tutorial 全員お披露目パターン
     #declare tag CO.Skill.BluteForce.Pt.Spin 回転パターン
     #declare tag CO.Skill.BluteForce.Pt.SpinInv 回転パターン
+    #declare tag CO.Skill.BluteForce.Pt.Exa エクサパターン
+    #declare tag CO.Skill.BluteForce.Pt.ExaInv エクサパターン
     #declare tag 
     #declare tag 
     #declare tag 

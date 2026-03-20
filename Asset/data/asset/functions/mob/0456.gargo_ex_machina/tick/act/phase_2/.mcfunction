@@ -69,5 +69,6 @@
         execute if score @s CO.Counter matches 21 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
     # 薙ぎ払いレーザー
         execute if score @s CO.Counter matches 22 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
+## ブルートフォース：エクサパターン
 # 待機
     execute if score @s CO.Counter matches 23 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
