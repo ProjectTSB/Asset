@@ -32,11 +32,11 @@
         # 射撃
             execute if score @s CO.EventTimer matches 10 at @e[type=marker,tag=CO.CenterPosition] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/set_attack_position
             # ノーマル
-                execute if predicate api:global_vars/difficulty/1_normal if score @s CO.EventTimer matches 15.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack_shot.m {PredictionTime:105,AttackTime:105}
+                execute if predicate api:global_vars/difficulty/1_normal if score @s CO.EventTimer matches 15.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/summon_shot.m {PredictionTime:105,AttackTime:105}
             # ハード
-                execute if predicate api:global_vars/difficulty/2_hard if score @s CO.EventTimer matches 45.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack_shot.m {PredictionTime:75,AttackTime:75}
+                execute if predicate api:global_vars/difficulty/2_hard if score @s CO.EventTimer matches 45.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/summon_shot.m {PredictionTime:75,AttackTime:75}
             # ブレスレス
-                execute if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 85.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/attack_shot.m {PredictionTime:35,AttackTime:35}
+                execute if predicate api:global_vars/difficulty/min/3_blessless if score @s CO.EventTimer matches 85.. at @e[type=area_effect_cloud,tag=CO.Aec.AttackPosition,distance=..80,sort=random,limit=5] run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/summon_shot.m {PredictionTime:35,AttackTime:35}
     # 効果音
         execute if score @s CO.EventTimer matches 1..100 positioned ~ ~15 ~ run particle end_rod ~ ~ ~ 2 2 2 0.05 1
 

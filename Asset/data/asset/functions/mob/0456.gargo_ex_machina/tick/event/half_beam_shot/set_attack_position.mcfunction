@@ -4,84 +4,57 @@
 #
 # @within asset:mob/0456.gargo_ex_machina/tick/event/half_beam_shot/event_charging
 
-# [ImportKey]: NobwRALgngDgpmAXGGB7ANlA5qgdmAGjAFdiBLAEyTAEYB2ANgCMBWFigZgFoaK4AWLvyYMaXABwNxAQy7SWcaf3EBOfgDMAxh3WEwuaQFsEyQFiagJcjARvoACGnpjSATkYDOScJtTFcEJAyKacD5wju5gAG7S6MQm4AAeSAAMRFBJAL5pRM4UZMRuiPwATAB0RUQuEE6+BSxEcOjoZDAuJjSJyWCOqJUQJh2ejrghSPxEAFbEhjBINERMcABeZMOIHWQuAKINTS0bAI7EUZgAyg6BVIjqUS1E6wBCi8uO+4cNUKfS50hX6C0ZBOBoPBqGhMDh8ERSJRqHAaJoaIVChQ6HI6NJxEIVCoxOJWGJESx1HBFBQKJp5HoDMZqBYbGJPDBUkQHM5DPkPF4fEhamBAsFQohwJForEwAlVil0plOtIcnkkBwSmUwBUqiMefVGs1Wu0st1pL0kgFUIMVqMwBMpjM5o8VmtNtttS8ju8znALj8bmB7rbngcXR8vpdrnB-oDYCYUBhsHg9FCLmA4JpCuomDI4FxNCxEiiiuIM+iFFwVOJxIUaAwkTR+BQmJSjJHabZM6hGS3GfYnK4wp5vNVzXzegKhVEYmFxR1Uqt-jK5flEaVCuVKo5+xrHS0ZrrOvrDRLeSahgLzZbpohZmB5ks7bcHVrdv63oH3d8Q7eHte-a8Tm6PSGw5AEYgtG4JxuQCaJAIHB0Jo6gYhQiKCMoDAMMWdBolwhTSIqdClhwnAsHYRBUo2VjNgyUDtpRFGdqy7IHn2SBLryQRDmEwpjoKYpGmAU6JDO2S5PkCKLsuao1HUG46h0XQ9H0xqmse4yTGeF5Xk8PHrFs95wM6T6-q+vxwO+vp6T+nwvsGRkAUCkagjGEIkOB1DiPwnwIbCEhwIUqH8BwDAqFwTB0PwqEUJB+bqFoNDiBwLD1tSZhkfSrbUalVFUbR3Zcb2XLngErErCOIrjjxfECbKQkKqJKormukk6VuMm7vJB6KSMylWvll6+ppd47Lpj7mUGnrGd6Lgfk8ZmuhZf7WWkAC6QA_3
-# 多角形 1-copy-copy-copy-copy
-summon area_effect_cloud ^2.41831 ^ ^-2.41831 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^2.41831 ^ ^2.41831 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-2.41831 ^ ^2.41831 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-2.41831 ^ ^-2.41831 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-# 多角形 1
-summon area_effect_cloud ^29.99547 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^-19.99698 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^-9.99849 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^9.99849 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^19.99698 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^29.99547 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^19.99698 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^9.99849 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-9.99849 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-19.99698 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^19.99698 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^9.99849 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^-9.99849 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^-19.99698 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-29.99547 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-19.99698 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-9.99849 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^9.99849 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^19.99698 ^ ^-29.99547 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-# 多角形 1-copy
-summon area_effect_cloud ^22.9244 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^22.9244 ^ ^-13.75464 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^22.9244 ^ ^-4.58488 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^22.9244 ^ ^4.58488 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^22.9244 ^ ^13.75464 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^22.9244 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^13.75464 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^4.58488 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-4.58488 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-13.75464 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^13.75464 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^4.58488 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^-4.58488 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^-13.75464 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-22.9244 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-13.75464 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-4.58488 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^4.58488 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^13.75464 ^ ^-22.9244 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-# 多角形 1-copy-copy
-summon area_effect_cloud ^15.85333 ^ ^-15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^15.85333 ^ ^-7.92667 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^15.85333 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^15.85333 ^ ^7.92667 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^15.85333 ^ ^15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^7.92667 ^ ^15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-7.92667 ^ ^15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-15.85333 ^ ^15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-15.85333 ^ ^7.92667 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-15.85333 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-15.85333 ^ ^-7.92667 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-15.85333 ^ ^-15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-7.92667 ^ ^-15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^-15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^7.92667 ^ ^-15.85333 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-# 多角形 1-copy-copy-copy
-summon area_effect_cloud ^8.78227 ^ ^-8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^8.78227 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^8.78227 ^ ^8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-8.78227 ^ ^8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-8.78227 ^ ^0 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^-8.78227 ^ ^-8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-summon area_effect_cloud ^0 ^ ^-8.78227 {Tags:["CO.Aec.AttackPosition"],Duration:100}
-
-# 自身の周囲を消去
-    execute at @s run kill @e[tag=CO.Aec.AttackPosition,distance=..22]
+# [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkqgCwDMcAnAGYAMTAtHQOwCMARq5Qy5dWADjhcUrAGxS6XJgEMuI6kylcwBAHYKAtgmSAwxQAEGgjAUY9AZyTgUAe0JaISLhwIo4LuBjtgANwVsQgNwAA8kJgIoKIBfOIIrUjRCW0QAJhEAOikCawhLV0RosDhsbDQYawN5UowHQogDUrRrAFEKqpr2gEdCYOwoAGULL3JEBmCahLxwaHgKdCxcTSISCbAFEQEmDhE2EW42GgVqVh44JkkuDJ5qOhEAVgUnhieMtZ19ChNhRxgsXMlhs-kczmKXCenm8zT8iHAQRCYTAkRKMXiiTAyVS6QyXHyhQwxQ8ZS61VqLCSjQUzSiBDanUqFL6AwqIzGcAmU2wM0S81gBlQmBw+HWZAoeykpDgKCelFYGTuGX4ElIogebFIShEGWol1IpGoZjA3yFJk+wKsunS9icLjcIhhPnhiOCoX8aNKsRKs2xChSaSQ1Eo2UohKKbgyBHKzJqbip2JpdPRYEZ5J6-UGHIU4yQPL5AF0gA_3
+# 円 1-copy
+summon area_effect_cloud ^2.55926 ^ ^-20.84347 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^10.8158 ^ ^-18.00051 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^17.20219 ^ ^-12.04511 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^20.61417 ^ ^-4.00699 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^20.46177 ^ ^4.72397 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^16.77135 ^ ^12.63812 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^10.181 ^ ^18.36701 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^1.83027 ^ ^20.92009 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-6.83693 ^ ^19.85589 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-14.32197 ^ ^15.35843 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-19.3306 ^ ^8.20535 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-20.9968 ^ ^-0.3665 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-19.03246 ^ ^-8.87498 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-13.77724 ^ ^-15.8489 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-6.13981 ^ ^-20.0824 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+# 円 1
+summon area_effect_cloud ^0 ^ ^-28.6 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^10.33151 ^ ^-26.66871 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^19.2677 ^ ^-21.13566 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^25.60167 ^ ^-12.74812 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^28.478 ^ ^-2.63888 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^27.50821 ^ ^7.82676 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^22.82329 ^ ^17.23535 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^15.05596 ^ ^24.31621 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^5.25524 ^ ^28.11303 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-5.25524 ^ ^28.11303 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-15.05596 ^ ^24.31621 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-22.82329 ^ ^17.23535 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-27.50821 ^ ^7.82676 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-28.478 ^ ^-2.63888 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-25.60167 ^ ^-12.74812 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-19.2677 ^ ^-21.13566 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-10.33151 ^ ^-26.66871 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+# 円 2
+summon area_effect_cloud ^7.15216 ^ ^-33.64828 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^18.22922 ^ ^-29.17285 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^27.10757 ^ ^-21.17875 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^32.71634 ^ ^-10.63018 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^34.37904 ^ ^1.20054 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^31.89512 ^ ^12.88647 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^25.56418 ^ ^23.01809 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^16.14982 ^ ^30.3734 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^4.78755 ^ ^34.06522 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-7.15216 ^ ^33.64828 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-18.22922 ^ ^29.17285 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-27.10757 ^ ^21.17875 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-32.71634 ^ ^10.63018 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-34.37904 ^ ^-1.20054 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-31.89512 ^ ^-12.88647 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-25.56418 ^ ^-23.01809 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-16.14982 ^ ^-30.3734 {Tags:["CO.Aec.AttackPosition"],Duration:100}
+summon area_effect_cloud ^-4.78755 ^ ^-34.06522 {Tags:["CO.Aec.AttackPosition"],Duration:100}

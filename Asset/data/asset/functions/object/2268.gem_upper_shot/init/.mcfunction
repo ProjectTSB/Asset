@@ -19,3 +19,6 @@
     execute store result score @s 2268.VfxTime store result score @s 2268.KillTime run scoreboard players get @s 2268.AttackTime
     scoreboard players remove @s 2268.VfxTime 3
     scoreboard players add @s 2268.KillTime 5
+
+# 演出のみ
+    execute if data storage asset:context this{IsNoDamage:true} run tag @s add 2268.IsNoDamage

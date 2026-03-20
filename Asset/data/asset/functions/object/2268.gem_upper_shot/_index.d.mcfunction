@@ -4,3 +4,4 @@
 #> tag
 # @within function asset:object/2268.gem_upper_shot/**
     #declare tag CO.Object
+    #declare tag 2268.IsNoDamage
