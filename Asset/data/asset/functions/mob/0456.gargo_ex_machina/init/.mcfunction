@@ -36,4 +36,4 @@
     tag @s add CO.Skill.Activate
 
 # デバッグ
-    # scoreboard players set @s CO.Phase 1
+    tag @s add CO.IsLatter

@@ -1,11 +1,11 @@
-#> asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_corner
+#> asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_corner
 #
 # Mobのtick時の処理
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/act/phase_1/
+# @within asset:mob/0456.gargo_ex_machina/tick/act/phase_2/
 
 #> Private
-# @within function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_corner
+# @within function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_corner
     #declare score_holder $CO.Temp.Rotation
 
 # 中心点ランダム回転

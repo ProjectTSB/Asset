@@ -37,10 +37,13 @@
     #declare tag CO.Skill.Transform.Sword 剣変形
     #declare tag CO.Skill.RocketPunch ロケットパンチ
     #declare tag CO.Skill.RocketPunch.Cross 交差ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.Alter 交互ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.AlterInv 交互ロケットパンチ
     #declare tag CO.Skill.Shot 射撃
     #declare tag CO.Skill.UpperShot 上空射撃
     #declare tag CO.UpperShot.Asyuc 上空射撃攻撃判定用
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
+    #declare tag CO.Skill.BluteForce.First ブルートフォースアタック
     #declare tag CO.Skill.BluteForce.Async ブルートフォースアタック攻撃判定用
     #declare tag CO.Skill.BluteForce.Pt.Tutorial 全員お披露目パターン
     #declare tag CO.Skill.BluteForce.Pt.Spin 回転パターン
@@ -108,13 +111,13 @@
     #declare function animated_java:gargo_ex_machina/animations/super_jump_end/pause
     #declare function animated_java:gargo_ex_machina/animations/super_jump_end/resume
     #declare function animated_java:gargo_ex_machina/animations/call_drone/tween
+    #declare function animated_java:gargo_ex_machina/animations/call_drone_first/tween
     #declare function animated_java:gargo_ex_machina/animations/change_to_shot/tween
     #declare function animated_java:gargo_ex_machina/animations/change_to_sword/tween
     #declare function animated_java:gargo_ex_machina/animations/idle_shot/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_upper/tween
     #declare function animated_java:gargo_ex_machina/animations/summon_punch/tween
-    #declare function 
     #declare function 
     #declare function 
     #declare function 

@@ -14,5 +14,8 @@
     # execute at @e[type=marker,tag=CO.CenterPosition] run tp @s ^ ^ ^ 0 0
     # execute at @s run tp @e[type=item_display,tag=CO.ModelRoot] ~ ~ ~ ~ 0
 
+# パターンを任意のタイミングに設定
+    scoreboard players set @s CO.Counter 13
+
 # イベント実行
     function asset:mob/0456.gargo_ex_machina/tick/act/
