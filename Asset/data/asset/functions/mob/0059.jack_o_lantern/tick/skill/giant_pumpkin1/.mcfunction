@@ -7,12 +7,14 @@
 # 最初に鈍足を自身に付与し、プレイヤーの方を向く
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin1/first_tick
 
+# NoAIになるまでRotation[0]固定
+    execute if entity @s[scores={General.Mob.Tick=1..2}] run data modify entity @s Rotation[0] set from storage asset:context this.SavedRotation0
+
 # 着地するまで絶対にスコアを1で固定する
     execute if entity @s[scores={General.Mob.Tick=2}] if data entity @s {OnGround:0b} run scoreboard players set @s General.Mob.Tick 1
 
-# 着地後はNoAIになり、その後Rotationを固定する
+# 着地後はNoAIになる
     execute if entity @s[scores={General.Mob.Tick=2}] run data modify entity @s NoAI set value 1b
-    execute if entity @s[scores={General.Mob.Tick=2..}] run data modify entity @s Rotation[0] set from storage asset:context this.SavedRotation0
 
 # 前方に巨大カボチャを召喚
 

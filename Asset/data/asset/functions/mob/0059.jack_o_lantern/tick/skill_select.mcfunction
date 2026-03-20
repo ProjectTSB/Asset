@@ -27,7 +27,7 @@
     execute if data storage asset:context this{DPSCheck:0} run scoreboard players set $Random Temporary 1000
 
 # デバッグ用
-    # scoreboard players set $Random Temporary 1000
+    scoreboard players set $Random Temporary 00
 
 # スキルTagを付与
     execute if score $Random Temporary matches 0 run tag @s add 1N.GiantPumpkin1
