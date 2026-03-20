@@ -19,7 +19,7 @@
     execute positioned ~ ~3 ~ run function asset:object/2039.pumpkin_dps_check/tick/set_spin/vfx
 
 # 音
-    $playsound minecraft:entity.wither.shoot hostile @a[distance=..64] ~ ~ ~ 0.4 $(Pitch) 0.4
+    $playsound minecraft:entity.wither.shoot hostile @a[distance=..64] ~ ~ ~ 0.3 $(Pitch) 0.4
 
 # Spinが2の際に顔を変更
     execute if data storage asset:context this{Spin:2} run function asset:object/2039.pumpkin_dps_check/tick/set_spin/change_face
