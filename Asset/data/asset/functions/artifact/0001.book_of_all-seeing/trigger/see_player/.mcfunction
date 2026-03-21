@@ -21,7 +21,7 @@
 
     function api:modifier/heal/get
     function api:modifier/receive_heal/get
-    function api:modifier/mp_regen/get
+    function api:modifier/mp_heal/get
     function api:modifier/fall_resistance/get
 
 # 表示用に諸々データ処理
