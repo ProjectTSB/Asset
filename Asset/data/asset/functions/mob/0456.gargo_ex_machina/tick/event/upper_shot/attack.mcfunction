@@ -2,7 +2,7 @@
 #
 # 射撃
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_attack
+# @within asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/**
 
 # 攻撃判定召喚
     data modify storage api: Argument.ID set value 2268

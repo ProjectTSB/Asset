@@ -31,7 +31,8 @@
     execute if score @s CO.Counter matches 10 run tag @s add CO.Skill.Shot
 # 待機
     execute if score @s CO.Counter matches 11 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 40
-# 上空射撃
+# 上空射撃・ランダムパターン
+    execute if score @s CO.Counter matches 12 run tag @s add CO.UpperShot.Pt.Random
     execute if score @s CO.Counter matches 12 run tag @s add CO.Skill.UpperShot
 # 待機
     execute if score @s CO.Counter matches 13 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 60
@@ -63,7 +64,8 @@
         execute if score @s CO.Counter matches 22 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_center
     # 銃変形
         execute if score @s CO.Counter matches 23 run tag @s add CO.Skill.Transform.Shoot
-    # 上空射撃
+    # 上空射撃・ランダムパターン
+        execute if score @s CO.Counter matches 12 run tag @s add CO.UpperShot.Pt.Random
         execute if score @s CO.Counter matches 24 run tag @s add CO.Skill.UpperShot
     # プレイヤー狙い弾
         execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.Shot

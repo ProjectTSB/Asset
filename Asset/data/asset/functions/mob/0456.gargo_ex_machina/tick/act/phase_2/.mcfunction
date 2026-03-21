@@ -69,6 +69,19 @@
         execute if score @s CO.Counter matches 21 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
     # 薙ぎ払いレーザー
         execute if score @s CO.Counter matches 22 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
-## ブルートフォース：エクサパターン
 # 待機
-    execute if score @s CO.Counter matches 23 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+    execute if score @s CO.Counter matches 23 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
+## ブルートフォース：エクサパターン
+    # ブルートフォース：チュートリアル
+        execute if score @s CO.Counter matches 24 run tag @s add CO.Skill.BluteForce
+        execute if score @s CO.Counter matches 24 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/bluteforce_exa
+    # 銃変形
+        execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.Transform.Shoot
+    # 上空射撃・追尾パターン
+        execute if score @s CO.Counter matches 26 run tag @s add CO.UpperShot.Pt.Target
+        execute if score @s CO.Counter matches 26 run tag @s add CO.Skill.UpperShot
+    # スーパージャンプ
+        execute if score @s CO.Counter matches 27 run scoreboard players set @s CO.PreTimer 300
+        execute if score @s CO.Counter matches 27 run tag @s add CO.Skill.SuperJump
+# 待機
+    execute if score @s CO.Counter matches 28 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100

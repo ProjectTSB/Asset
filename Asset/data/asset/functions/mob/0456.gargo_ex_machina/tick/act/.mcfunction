@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/**
 
 # debug
-    return 0
+    # return 0
 
 # 行動リセット
     function asset:mob/0456.gargo_ex_machina/tick/util/remove_animation_tag
@@ -25,4 +25,4 @@
 # 後半
     execute if entity @s[tag=CO.IsLatter] run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/
 
-say act
+# say act
