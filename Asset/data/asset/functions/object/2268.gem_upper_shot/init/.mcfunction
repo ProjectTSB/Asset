@@ -6,6 +6,7 @@
 
 # 角度をランダムに設定
     data modify storage asset:context this.Rotation set value [0.0f, -90.0f]
+    execute store result entity @s Rotation[0] float 0.1 run random value 0..3600
     execute store result storage asset:context this.Rotation[0] float 0.1 run random value 0..3600
     execute store result storage asset:context this.Rotation[1] float 0.1 run random value -900..-700
 
