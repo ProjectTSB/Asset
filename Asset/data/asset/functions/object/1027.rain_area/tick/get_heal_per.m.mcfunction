@@ -6,4 +6,4 @@
 #   HealPer : float
 # @within function asset:object/1027.rain_area/tick/damage_and_heal
 
-$return run data get storage api: Return.MaxHealth $(HealPer)
+$execute as @p[tag=Owner] run return run attribute @s generic.max_health get $(HealPer)

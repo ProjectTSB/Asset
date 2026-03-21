@@ -48,7 +48,6 @@
 
     # 範囲内のプレイヤーを使用者の最大体力に比例して回復
     # 調整を容易にするために割合はフィールドから取得する
-        execute as @p[tag=Owner] run function api:modifier/max_health/get
         execute store result storage api: Argument.Heal double 0.01 run function asset:object/1027.rain_area/tick/get_heal_per.m with storage asset:context this
         execute as @p[tag=Owner] run function api:heal/modifier
         execute as @a[tag=1027.TargetEntity,distance=..20] run function api:heal/
