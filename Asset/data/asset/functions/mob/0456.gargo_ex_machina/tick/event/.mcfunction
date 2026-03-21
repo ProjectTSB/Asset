@@ -58,6 +58,8 @@
         execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.Random] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_random
     # 追尾パターン
         execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.Target] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_target
+    # 移動直線範囲パターン
+        execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.MoveLine] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_moveline
 
 # ブルートフォースアタック
     execute if entity @s[tag=CO.Skill.BluteForce] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/
