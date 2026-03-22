@@ -1,4 +1,4 @@
-#> asset:artifact/1324.mysterious_star/register
+#> asset:artifact/1324.balance_star/register
 #
 # 神器プールへの登録処理
 #

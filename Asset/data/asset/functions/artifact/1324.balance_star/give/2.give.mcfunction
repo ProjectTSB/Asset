@@ -1,9 +1,9 @@
-#> asset:artifact/1324.mysterious_star/give/2.give
+#> asset:artifact/1324.balance_star/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1324.mysterious_star/give/1.trigger
+# @within function asset:artifact/1324.balance_star/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
