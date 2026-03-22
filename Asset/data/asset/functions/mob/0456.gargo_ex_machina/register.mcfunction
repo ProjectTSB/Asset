@@ -39,11 +39,11 @@
         data modify storage asset:mob Field.FirstPos.Y set value 91.0
         data modify storage asset:mob Field.FirstPos.Z set value 836.0
     # 剣叩きつけ
-        data modify storage asset:mob Field.Damage.SwordAttack set value {Amount:80.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.SwordAttack set value {Amount:70.0,Type:"Physical",Element:"None"}
     # 半面焼きビーム
         data modify storage asset:mob Field.Damage.HalfBeam set value {Amount:80.0,Type:"Magic",Element:"None"}
     # 半面焼きビーム・回転斬り部分
-        data modify storage asset:mob Field.Damage.HalfBeamSword set value {Amount:80.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.HalfBeamSword set value {Amount:60.0,Type:"Physical",Element:"None"}
     # スーパージャンプ
         data modify storage asset:mob Field.Damage.SuperJump set value {Amount:70.0,Type:"Physical",Element:"None"}
     # フィールド・モディファイ

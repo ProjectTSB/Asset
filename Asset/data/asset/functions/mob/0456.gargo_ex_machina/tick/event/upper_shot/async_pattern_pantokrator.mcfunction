@@ -18,7 +18,7 @@
         execute if score @s CO.EventTimer.UpperShot matches 360 at @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] rotated ~360 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/pattern_pantokrator
 
 # 実行
-    execute at @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80,sort=random,limit=2] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack_pantokrator
+    execute at @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80,sort=random,limit=3] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack.m {AttackTime:100}
 
 # 終了
     execute if score @s CO.EventTimer.UpperShot matches 420.. run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_end

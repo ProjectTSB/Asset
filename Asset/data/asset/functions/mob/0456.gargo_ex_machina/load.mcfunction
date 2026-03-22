@@ -21,3 +21,7 @@
 # @within function asset:object/2262.gem_panjan_drone/**
 # @within function asset:object/2269.gem_rocket_punch/**
     scoreboard objectives add CO.ObjectId dummy
+#> Object管理用
+# @within function asset:mob/0456.gargo_ex_machina/**
+# @within function asset:mob/2268.gem_upper_shot/**
+    scoreboard objectives add CO.UpperShot.Hit dummy

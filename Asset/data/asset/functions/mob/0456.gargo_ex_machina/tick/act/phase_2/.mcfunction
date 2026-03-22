@@ -64,7 +64,7 @@
     # Yeeter召喚
         execute if score @s CO.Counter matches 21 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_yeeter_drone_corner
 # 待機
-    execute if score @s CO.Counter matches 22 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 300
+    execute if score @s CO.Counter matches 22 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 340
 ## モディファイ + ロケットパンチ
     # 剣変形
         execute if score @s CO.Counter matches 23 run tag @s add CO.Skill.Transform.Sword

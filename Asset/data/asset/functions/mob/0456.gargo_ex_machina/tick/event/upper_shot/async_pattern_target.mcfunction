@@ -12,7 +12,7 @@
     execute if score $Interval Temporary matches 0 run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/pattern_target
     
 # 攻撃
-    execute if score $Interval Temporary matches 0 at @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack
+    execute if score $Interval Temporary matches 0 at @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack.m {AttackTime:60}
     
 # 終了
     scoreboard players reset $Interval Temporary
