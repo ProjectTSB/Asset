@@ -28,5 +28,11 @@
     # function asset:mob/0456.gargo_ex_machina/tick/util/remove_all_tag
 
 # オブジェクト消去
+    function animated_java:gem_attack_drone/remove/all
+    function animated_java:gem_tnt_drone/remove/all
+    function animated_java:gem_panjan_drone/remove/all
     execute as @e[tag=CO.Object,distance=..160] on passengers run kill @s
     kill @e[tag=CO.Object,distance=..160]
+
+# 石像移動
+    function asset:mob/0456.gargo_ex_machina/remove/clone_statue

@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/act/
 
 # ループ
-    # execute if score @s CO.Counter matches 38.. run scoreboard players set @s CO.Counter 10
+    execute if score @s CO.Counter matches 54.. run scoreboard players set @s CO.Counter 10
 
 ## ブルートフォース：チュートリアル
     # 四辺に移動
@@ -138,7 +138,6 @@
         execute if score @s CO.Counter matches 48 run tag @s add CO.Skill.UpperShot
 # 待機
     execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
-
 ## ブルートフォース：半面焼きパターン
     # 剣変形
         execute if score @s CO.Counter matches 50 run tag @s add CO.Skill.Transform.Sword
@@ -149,3 +148,5 @@
         execute if score @s CO.Counter matches 52 run scoreboard players set @s CO.JumpCount 2
         execute if score @s CO.Counter matches 52 run scoreboard players set @s CO.PreTimer 120
         execute if score @s CO.Counter matches 52 run tag @s add CO.Skill.SuperJump
+# 待機
+    execute if score @s CO.Counter matches 53 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 300

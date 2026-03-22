@@ -125,9 +125,9 @@
     #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_upper/tween
     #declare function animated_java:gargo_ex_machina/animations/summon_punch/tween
-    #declare function 
-    #declare function 
-    #declare function 
+    #declare function animated_java:gem_attack_drone/remove/all
+    #declare function animated_java:gem_tnt_drone/remove/all
+    #declare function animated_java:gem_panjan_drone/remove/all
     #declare function 
     #declare function 
     #declare function animated_java:gargo_ex_machina/remove/all
