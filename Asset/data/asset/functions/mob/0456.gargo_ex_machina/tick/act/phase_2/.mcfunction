@@ -83,11 +83,12 @@
         execute if score @s CO.Counter matches 26 run tag @s add CO.Skill.RocketPunch
     # 待機
         execute if score @s CO.Counter matches 27 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 220
-    # ロケットパンチ3回目
+    # ロケットパンチ3回目 + 待機
         execute if score @s CO.Counter matches 28 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s run tp @s ~ ~ ~ ~180 0
         execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.RocketPunch.Alter
         execute if score @s CO.Counter matches 28 run scoreboard players set @s CO.PreTimer 180
         execute if score @s CO.Counter matches 28 run tag @s add CO.Skill.RocketPunch
+        execute if score @s CO.Counter matches 28 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
     # 四隅に移動
         execute if score @s CO.Counter matches 29 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_corner
     ## 剣叩きつけ

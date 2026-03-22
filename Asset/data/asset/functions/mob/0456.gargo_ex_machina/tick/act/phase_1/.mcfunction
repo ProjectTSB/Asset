@@ -64,8 +64,8 @@
         execute if score @s CO.Counter matches 22 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_1/move_to_center
     # 銃変形
         execute if score @s CO.Counter matches 23 run tag @s add CO.Skill.Transform.Shoot
-    # 上空射撃・ランダムパターン
-        execute if score @s CO.Counter matches 12 run tag @s add CO.UpperShot.Pt.Random
+    # 上空射撃・追尾パターン
+        execute if score @s CO.Counter matches 24 run tag @s add CO.UpperShot.Pt.Target
         execute if score @s CO.Counter matches 24 run tag @s add CO.Skill.UpperShot
     # プレイヤー狙い弾
         execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.Shot
