@@ -27,6 +27,7 @@
 # その他リセット
     # function asset:mob/0456.gargo_ex_machina/tick/util/remove_all_tag
     bossbar remove asset:co_field_modify
+    bossbar remove asset:co_gem_former
 
 # オブジェクト消去
     function animated_java:gem_attack_drone/remove/all

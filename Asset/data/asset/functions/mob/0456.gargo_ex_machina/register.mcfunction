@@ -39,6 +39,8 @@
         data modify storage asset:mob Field.FirstPos.X set value 527.5
         data modify storage asset:mob Field.FirstPos.Y set value 91.0
         data modify storage asset:mob Field.FirstPos.Z set value 836.0
+    # フェーズチェンジ
+        data modify storage asset:mob Field.Damage.ChangeHead set value {Amount:500.0,Type:"Physical",Element:"None"}
     # 剣叩きつけ
         data modify storage asset:mob Field.Damage.SwordAttack set value {Amount:80.0,Type:"Physical",Element:"None"}
     # 半面焼きビーム
