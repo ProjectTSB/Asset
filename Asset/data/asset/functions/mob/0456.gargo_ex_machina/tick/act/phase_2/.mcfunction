@@ -91,30 +91,37 @@
         execute if score @s CO.Counter matches 29 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_corner
     ## 剣叩きつけ
         execute if score @s CO.Counter matches 30 run tag @s add CO.Skill.SwordAttack
-# ## 薙ぎ払いレーザー
-#     # 中心に移動
-#         execute if score @s CO.Counter matches 21 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
-#     # 薙ぎ払いレーザー
-#         execute if score @s CO.Counter matches 22 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
-# # 待機
-#     execute if score @s CO.Counter matches 23 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
-# ## ブルートフォース：エクサパターン
-#     # ブルートフォース：チュートリアル
-#         execute if score @s CO.Counter matches 24 run tag @s add CO.Skill.BluteForce
-#         execute if score @s CO.Counter matches 24 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/bluteforce_exa
-#     # 銃変形
-#         execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.Transform.Shoot
-#     # 上空射撃・追尾パターン
-#         execute if score @s CO.Counter matches 26 run tag @s add CO.UpperShot.Pt.Target
-#         execute if score @s CO.Counter matches 26 run tag @s add CO.Skill.UpperShot
-#     # 剣変形
-#         execute if score @s CO.Counter matches 27 run tag @s add CO.Skill.Transform.Sword
-#     # スーパージャンプ
-#         execute if score @s CO.Counter matches 28 run scoreboard players set @s CO.PreTimer 300
-#         execute if score @s CO.Counter matches 28 run tag @s add CO.Skill.SuperJump
-# # 待機
-#     execute if score @s CO.Counter matches 29 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+# 待機
+    execute if score @s CO.Counter matches 31 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+## 薙ぎ払いレーザー
+    # 中心に移動
+        execute if score @s CO.Counter matches 32 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
+    # 薙ぎ払いレーザー
+        execute if score @s CO.Counter matches 33 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
+# 待機
+    execute if score @s CO.Counter matches 34 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+## 剣叩きつけ + ATTACKドローン
+    # 四隅に移動 + ドローン召喚
+        execute if score @s CO.Counter matches 35 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_attack_drone_corner
+    # 剣叩きつけ
+        execute if score @s CO.Counter matches 36 run tag @s add CO.Skill.SwordAttack
+## ブルートフォース：エクサパターン
+    # ブルートフォース：チュートリアル
+        execute if score @s CO.Counter matches 37 run tag @s add CO.Skill.BluteForce
+        execute if score @s CO.Counter matches 38 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/bluteforce_exa
+    # 銃変形
+        execute if score @s CO.Counter matches 39 run tag @s add CO.Skill.Transform.Shoot
+    # 上空射撃・追尾パターン
+        execute if score @s CO.Counter matches 40 run tag @s add CO.UpperShot.Pt.Target
+        execute if score @s CO.Counter matches 40 run tag @s add CO.Skill.UpperShot
+    # 剣変形
+        execute if score @s CO.Counter matches 41 run tag @s add CO.Skill.Transform.Sword
+    # スーパージャンプ
+        execute if score @s CO.Counter matches 42 run scoreboard players set @s CO.PreTimer 300
+        execute if score @s CO.Counter matches 42 run tag @s add CO.Skill.SuperJump
+# 待機
+    execute if score @s CO.Counter matches 43 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
 # # 四辺に移動
-#     execute if score @s CO.Counter matches 30 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_line
+#     execute if score @s CO.Counter matches 44 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_line
 # ## 剣叩きつけ + YEETERドローン
-#     execute if score @s CO.Counter matches 31 run tag @s add CO.Skill.SwordAttack
+#     execute if score @s CO.Counter matches 45 run tag @s add CO.Skill.SwordAttack
