@@ -1,0 +1,26 @@
+#> asset:mob/0038.laser_eye/tick/shoot/
+#
+# ビームを撃っちゃう
+#
+# @within function asset:mob/0038.laser_eye/tick/charge
+
+#> Temp
+# @private
+    #declare tag SpreadMarker
+
+# 前方拡散設定
+    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    data modify storage lib: Argument.Distance set value 4.0
+    data modify storage lib: Argument.Spread set value 0.8
+
+# 前方拡散を実行する
+    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function lib:forward_spreader/circle
+
+# 発砲
+    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet anchored eyes positioned ^ ^ ^1.4 run function asset:mob/0038.laser_eye/tick/shoot/shoot
+
+# リセット
+    kill @e[type=marker,tag=SpreadMarker,distance=..10,limit=1]
+    tag @s remove Landing
+    tag @s remove C.Charge
+    scoreboard players reset @s General.Mob.Tick

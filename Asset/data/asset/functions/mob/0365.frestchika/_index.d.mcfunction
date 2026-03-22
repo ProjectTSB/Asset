@@ -1,9 +1,8 @@
 #> asset:mob/0365.frestchika/_index.d
 # @private
 
-#> tag
+#> ボスのモデルに関するTag
 # @within function asset:mob/0365.frestchika/**
-    # ボスのモデルに関するタグ
     #declare tag A5.ModelLocator.LeftFoot
     #declare tag A5.ModelLocator.RightFoot
     #declare tag A5.ModelLocator.LeftWing
@@ -12,17 +11,23 @@
     #declare tag A5.ModelRoot.Target
     #declare tag A5.Model.LeftHandItem
     #declare tag A5.Model.RightHandItem
-    # ボスのマーカーに関するタグ
+
+#> ボスのマーカーに関するTag
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.Marker
     #declare tag A5.Marker.SpawnPoint
     #declare tag A5.Marker.Aim
     #declare tag A5.Marker.Teleport
     #declare tag A5.Marker.Thunder
-    # ボスのムーブセット
+
+#> ボスのムーブセット
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.Moveset.Intro
     #declare tag A5.Moveset.BaseMove
     #declare tag A5.Moveset.Transition
-    # ボスのスキル
+
+#> ボスのスキル
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.Dash.Left
     #declare tag A5.Dash.Right
     #declare tag A5.Skill.SideDashShot
@@ -33,19 +38,31 @@
     #declare tag A5.Skill.RandomTeleportSlash
     #declare tag A5.Skill.HoloBlock
     #declare tag A5.Skill.OverHeat
-    # ボスのダッシュ中の攻撃に関すること
+
+#> ボスのダッシュ中の攻撃に関すること
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.DashSkill.RapidLaser
     #declare tag A5.DashSkill.DelayLaser
-    # ホロブロックの設置パターン
+
+#> ホロブロックの設置パターン
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.HoloBlock.1
     #declare tag A5.HoloBlock.2
     #declare tag A5.HoloBlock.3
-    # ボスの状態
+
+#> ボスの状態
+# @within function asset:mob/0365.frestchika/**
     #declare tag A5.InAction
     #declare tag A5.CycleReset
-    # その他
+
+#> その他
+# @within function asset:mob/0365.frestchika/**
     #declare tag Hit
-    # Animated Java
+
+#> AJ
+# @within function asset:mob/0365.frestchika/**
+    #declare tag aj.frestchika.node.right_item_display
+    #declare tag aj.frestchika.node.left_item_display
     #declare function animated_java:frestchika/summon
     #declare function animated_java:frestchika/animations/intro/tween
     #declare function animated_java:frestchika/animations/neutral/tween
@@ -73,5 +90,3 @@
     #declare function animated_java:frestchika/animations/break_loop/tween
     #declare function animated_java:frestchika/animations/recovery/tween
     #declare function animated_java:frestchika/animations/teleport/tween
-    #declare tag aj.frestchika.node.right_item_display
-    #declare tag aj.frestchika.node.left_item_display

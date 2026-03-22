@@ -48,7 +48,6 @@
     # 引数初期化
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Thunder"
-        data modify storage api: Argument.DamageType set value "Projectile"
 
     # //ここ時点で$AttackStrengthは0..3をとる
     # AttackStrengthに従ってダメージを設定

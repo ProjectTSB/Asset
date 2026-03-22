@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"豪鬼","color":"#A6A6A6","bold":true},{"text":"の鎧","color":"white","bold":true}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['[{"text":"豪鬼","color":"#A6A6A6"},{"text":"の力が全て揃いし時、超回復力を手に入れる。","color":"white"}]']
+    data modify storage asset:effect Description set value ['[{"text":"豪鬼","color":"#A6A6A6"},{"text":"の力が全て揃いし時、","color":"white"}]','{"text":"最大体力の1.5%ずつ体力を回復する。"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
