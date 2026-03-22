@@ -14,8 +14,15 @@
 # 演出
     execute if score @s CO.EventTimer matches 1 run playsound entity.item.break hostile @a ~ ~ ~ 3 0.5
     execute if score @s CO.EventTimer matches 1 run playsound entity.item.break hostile @a ~ ~ ~ 3 0.7
-    execute if score @s CO.EventTimer matches 1 run playsound block.beacon.deactivate hostile @a ~ ~ ~ 4 1.9
-    execute if score @s CO.EventTimer matches 1 run playsound block.beacon.deactivate hostile @a ~ ~ ~ 4 1.7
+    execute if score @s CO.EventTimer matches 2 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 7 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 12 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 17 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 22 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 27 positioned ~ ~30 ~ run playsound entity.generic.explode hostile @a[distance=..80] ~ ~ ~ 0.5 1 0.5
+    execute if score @s CO.EventTimer matches 1..30 run particle explosion ~ ~20 ~ 4 7 4 0 3 
+    execute if score @s CO.EventTimer matches 20 run playsound block.beacon.deactivate hostile @a ~ ~ ~ 4 1.3
+    execute if score @s CO.EventTimer matches 20 run playsound block.beacon.deactivate hostile @a ~ ~ ~ 4 1.1
     execute if score @s CO.EventTimer matches 201 run function asset:mob/0456.gargo_ex_machina/tick/util/sound
     execute if score @s CO.EventTimer matches 215 run playsound block.beacon.power_select hostile @a ~ ~ ~ 4 1.5
     execute if score @s CO.EventTimer matches 215 run playsound block.beacon.power_select hostile @a ~ ~ ~ 4 1.7
@@ -35,7 +42,7 @@
 # ボス名変更
     execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"false"}
     execute if score @s CO.EventTimer matches 325 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"true"}
-    
+
 # 無敵化
     execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/start_invulnerable
     execute if score @s CO.EventTimer matches 379 run function asset:mob/0456.gargo_ex_machina/tick/util/end_invulnerable

@@ -29,5 +29,8 @@
 # モデルを合わせる
     execute as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
 
+# 無敵化
+    execute if score @s CO.EventTimer matches 20 run function asset:mob/0456.gargo_ex_machina/tick/util/start_invulnerable
+
 # 攻撃に移行
     execute if score @s CO.EventTimer >= @s CO.PreTimer run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/start_attack

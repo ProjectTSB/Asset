@@ -34,5 +34,8 @@
 # 継続
     execute if score @s CO.EventTimer matches 90 if score @s CO.JumpCount matches 1.. run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/continue
 
+# 無敵化
+    execute if score @s CO.EventTimer matches 80 run function asset:mob/0456.gargo_ex_machina/tick/util/end_invulnerable
+
 # 終了
     execute if score @s CO.EventTimer matches 139.. run function asset:mob/0456.gargo_ex_machina/tick/event/super_jump/end

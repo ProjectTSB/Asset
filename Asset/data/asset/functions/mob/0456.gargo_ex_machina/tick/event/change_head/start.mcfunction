@@ -10,7 +10,13 @@
 # イベント実行
     tag @s add CO.Skill.ChangeHead
 
-# フェーズ以降など
+# フェーズ移行など
     scoreboard players set @s CO.EventTimer 0
     scoreboard players set @s CO.Counter 0
     tag @s add CO.IsLatter
+
+# 最大HPの100%分回復
+    function api:mob/get_max_health
+    execute store result storage api: Argument.Delta double 1.0 run data get storage api: Return.MaxHealth 1
+    function api:mob/modify_health
+    function asset:mob/call.m {method: "update_bossbar"}

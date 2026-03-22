@@ -21,6 +21,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"ほげ"}']
 # 体力 (double) (オプション)
+# 前後半戦で回復するので実態の半分の値を入れる
     data modify storage asset:mob Health set value 100
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
