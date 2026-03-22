@@ -5,9 +5,9 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/event/super_jump/attack
 
 # 効果音
-    playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.5
-    playsound entity.iron_golem.death hostile @a ~ ~ ~ 2 0.5
-    playsound entity.wither.break_block hostile @a ~ ~ ~ 2 0.7
+    execute positioned ~ ~50 ~ run playsound entity.generic.explode hostile @a[distance=..150] ~ ~ ~ 2 0.5 0.7
+    execute positioned ~ ~50 ~ run playsound entity.iron_golem.death hostile @a[distance=..150] ~ ~ ~ 2 0.5 0.7
+    execute positioned ~ ~50 ~ run playsound entity.wither.break_block hostile @a[distance=..150] ~ ~ ~ 2 0.7 0.7
 
 # パーティクル
     particle explosion ~ ~1 ~ 5 2 5 0 30

@@ -11,6 +11,7 @@
     #declare tag CO.IsLatter 後半戦
     # - スキル
     #declare tag CO.Skill.Activate 起動
+    #declare tag CO.Skill.ChangeHead 後半戦移行
     #declare tag CO.Skill.Move 移動
     #declare tag CO.Skill.Move.End 移動
     #declare tag CO.Skill.Move.Near 近距離移動
@@ -83,11 +84,14 @@
     #declare tag aj.global.data
     #declare tag aj.gargo_ex_machina.animation.idle.playing
     #declare tag aj.gargo_ex_machina.animation.idle_shot.playing
+    #declare tag aj.gargo_ex_machina.bone.head
     #declare function animated_java:gargo_ex_machina/summon
     #declare function animated_java:gargo_ex_machina/as_own_locator_entities
     #declare function animated_java:gargo_ex_machina/animations/pause_all
     #declare function animated_java:gargo_ex_machina/animations/idle/tween
     #declare function animated_java:gargo_ex_machina/animations/activation/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_head_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_head/tween
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/resume
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/pause
@@ -125,9 +129,9 @@
     #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
     #declare function animated_java:gargo_ex_machina/animations/shot_upper/tween
     #declare function animated_java:gargo_ex_machina/animations/summon_punch/tween
+    #declare function animated_java:gargo_ex_machina/variants/blue/apply
+    #declare function animated_java:gargo_ex_machina/remove/all
     #declare function animated_java:gem_attack_drone/remove/all
     #declare function animated_java:gem_tnt_drone/remove/all
     #declare function animated_java:gem_panjan_drone/remove/all
     #declare function 
-    #declare function 
-    #declare function animated_java:gargo_ex_machina/remove/all

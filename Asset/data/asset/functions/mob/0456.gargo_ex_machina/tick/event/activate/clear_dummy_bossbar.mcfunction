@@ -7,6 +7,7 @@
     #declare score_holder $TempValue
 
 # ひつじBossbar表示
+    bossbar set asset:co_scape_sheep name {"text":"逆襲のひつじしゃん","strikethrough":true}
     scoreboard players set $TempValue Global 0
     execute store result bossbar asset:co_scape_sheep value run scoreboard players get $TempValue Global
     scoreboard players reset $TempValue

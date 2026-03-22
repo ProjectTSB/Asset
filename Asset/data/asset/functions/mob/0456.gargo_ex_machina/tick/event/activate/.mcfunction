@@ -37,10 +37,10 @@
     # 効果音
         execute if score @s CO.EventTimer matches 205 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
         execute if score @s CO.EventTimer matches 227 positioned as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function asset:mob/0456.gargo_ex_machina/tick/util/sound
-        execute if score @s CO.EventTimer matches 251 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.7
-        execute if score @s CO.EventTimer matches 251 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.6
-        execute if score @s CO.EventTimer matches 251 run playsound entity.ravager.step hostile @a ~ ~ ~ 2 0.5
-        execute if score @s CO.EventTimer matches 251 run playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.8
+        execute if score @s CO.EventTimer matches 251 positioned ~ ~20 ~ run playsound entity.ravager.step hostile @a[distance=..100] ~ ~ ~ 0 0.7 0.5
+        execute if score @s CO.EventTimer matches 251 positioned ~ ~20 ~ run playsound entity.ravager.step hostile @a[distance=..100] ~ ~ ~ 0 0.6 0.5
+        execute if score @s CO.EventTimer matches 251 positioned ~ ~20 ~ run playsound entity.ravager.step hostile @a[distance=..100] ~ ~ ~ 0 0.5 0.5
+        execute if score @s CO.EventTimer matches 251 positioned ~ ~20 ~ run playsound entity.generic.explode hostile @a[distance=..100] ~ ~ ~ 0 0.8 1
         execute if score @s CO.EventTimer matches 251 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~2
         execute if score @s CO.EventTimer matches 252 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-4
         execute if score @s CO.EventTimer matches 253 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~4

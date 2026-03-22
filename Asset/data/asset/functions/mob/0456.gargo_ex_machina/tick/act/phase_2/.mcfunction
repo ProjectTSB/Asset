@@ -85,6 +85,7 @@
         execute if score @s CO.Counter matches 27 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 220
     # ロケットパンチ3回目
         execute if score @s CO.Counter matches 28 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s run tp @s ~ ~ ~ ~180 0
+        execute if score @s CO.Counter matches 25 run tag @s add CO.Skill.RocketPunch.Alter
         execute if score @s CO.Counter matches 28 run scoreboard players set @s CO.PreTimer 180
         execute if score @s CO.Counter matches 28 run tag @s add CO.Skill.RocketPunch
     # 四隅に移動
@@ -137,7 +138,7 @@
         execute if score @s CO.Counter matches 48 run tag @s add CO.UpperShot.Pt.Cross
         execute if score @s CO.Counter matches 48 run tag @s add CO.Skill.UpperShot
 # 待機
-    execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
+    execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 180
 ## ブルートフォース：半面焼きパターン
     # 剣変形
         execute if score @s CO.Counter matches 50 run tag @s add CO.Skill.Transform.Sword

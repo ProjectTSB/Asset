@@ -36,4 +36,4 @@
     tag @s add CO.Skill.Activate
 
 # デバッグ
-    tag @s add CO.IsLatter
+    # tag @s add CO.IsLatter

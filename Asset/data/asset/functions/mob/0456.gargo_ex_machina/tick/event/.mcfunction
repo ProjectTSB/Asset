@@ -10,6 +10,9 @@
 # 起動
     execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
 
+# 後半戦移行
+    execute if entity @s[tag=CO.Skill.ChangeHead] run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/
+
 # 変形
     execute if entity @s[tag=CO.Skill.Transform.Shoot] run function asset:mob/0456.gargo_ex_machina/tick/event/transform_shoot/
     execute if entity @s[tag=CO.Skill.Transform.Sword] run function asset:mob/0456.gargo_ex_machina/tick/event/transform_sword/
