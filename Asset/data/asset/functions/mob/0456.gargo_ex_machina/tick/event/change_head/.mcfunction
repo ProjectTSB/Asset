@@ -36,5 +36,9 @@
     execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"false"}
     execute if score @s CO.EventTimer matches 325 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"true"}
     
+# 無敵化
+    execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/start_invulnerable
+    execute if score @s CO.EventTimer matches 379 run function asset:mob/0456.gargo_ex_machina/tick/util/end_invulnerable
+
 # 終了
     execute if score @s CO.EventTimer matches 380.. run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/end
