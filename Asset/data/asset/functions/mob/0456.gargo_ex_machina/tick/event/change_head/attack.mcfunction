@@ -6,7 +6,7 @@
 
 # ヒット判定
     # 円範囲
-        tag @a[distance=..10] add DXYZ
+        tag @a[tag=!PlayerShouldInvulnerable,distance=..10] add DXYZ
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.SwordAttack.Amount

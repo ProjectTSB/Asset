@@ -5,4 +5,4 @@
 # @within asset:object/alias/2274/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],item:{id:"minecraft:stone_bricks",Count:1b},teleport_duration:1}

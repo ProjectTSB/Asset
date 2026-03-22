@@ -37,19 +37,5 @@
     tag @s remove CO.Skill.RocketPunch.AlterInv
     tag @s remove CO.Skill.Shot
     tag @s remove CO.Skill.UpperShot
-    tag @s remove CO.UpperShot.Asyuc
-    tag @s remove CO.UpperShot.Pt.Random
-    tag @s remove CO.UpperShot.Pt.Target
-    tag @s remove CO.UpperShot.Pt.MoveLine
-    tag @s remove CO.UpperShot.Pt.Cross
-    tag @s remove CO.UpperShot.Pt.Panto
     tag @s remove CO.Skill.BluteForce
     tag @s remove CO.Skill.BluteForce.First
-    tag @s remove CO.Skill.BluteForce.Async
-    tag @s remove CO.Skill.BluteForce.Pt.Tutorial
-    tag @s remove CO.Skill.BluteForce.Pt.Spin
-    tag @s remove CO.Skill.BluteForce.Pt.SpinInv
-    tag @s remove CO.Skill.BluteForce.Pt.Exa
-    tag @s remove CO.Skill.BluteForce.Pt.ExaInv
-    tag @s remove CO.Skill.BluteForce.Pt.Half
-    tag @s remove CO.Skill.BluteForce.Pt.HalfInv
