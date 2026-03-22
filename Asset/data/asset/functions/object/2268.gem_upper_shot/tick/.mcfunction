@@ -9,7 +9,8 @@
 
 # 予兆
     execute if score @s General.Object.Tick matches 3 run data modify entity @s start_interpolation set value -1
-    execute if score @s General.Object.Tick matches 3 run data modify entity @s transformation.scale set value [12.0f,0.0f,12.0f]
+    execute if score @s General.Object.Tick matches 3 if predicate api:global_vars/difficulty/max/2_hard run data modify entity @s transformation.scale set value [12.0f,0.0f,12.0f]
+    execute if score @s General.Object.Tick matches 3 if predicate api:global_vars/difficulty/min/3_blessless run data modify entity @s transformation.scale set value [18.0f,0.0f,18.0f]
     # execute if entity @s[scores={General.Object.Tick=1}] run function asset:object/2268.gem_upper_shot/tick/prediction.m with storage asset:context this
 
 # 攻撃

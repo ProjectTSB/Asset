@@ -106,4 +106,4 @@ summon area_effect_cloud ^27.22222 ^ ^10 {Tags:["CO.Aec.UpperShotPosition"],Dura
 summon area_effect_cloud ^35 ^ ^10 {Tags:["CO.Aec.UpperShotPosition"],Duration:300}
 
 # 数を減らす
-    kill @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80,sort=random,limit=20]
+    kill @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80,sort=random,limit=30]

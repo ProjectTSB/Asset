@@ -9,17 +9,20 @@
         tag @a[distance=..10] add DXYZ
     # 直線範囲
         tag @a[tag=DXYZ] remove DXYZ
-        data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage lib: args.dx set value 6
         data modify storage lib: args.dy set value 5
         data modify storage lib: args.dz set value 50
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
         execute rotated ~30 0 run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage lib: args.dx set value 6
         data modify storage lib: args.dy set value 5
         data modify storage lib: args.dz set value 50
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"
         execute rotated ~90 0 run function lib:rotatable_dxyz/m with storage lib: args
-        data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/max/2_hard run data modify storage lib: args.dx set value 4
+        execute if predicate api:global_vars/difficulty/min/3_blessless run data modify storage lib: args.dx set value 6
         data modify storage lib: args.dy set value 5
         data modify storage lib: args.dz set value 50
         data modify storage lib: args.selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..50]"

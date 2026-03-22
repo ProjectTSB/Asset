@@ -17,25 +17,25 @@
         execute if score @s CO.Counter matches 3 run scoreboard players set @s CO.PreTimer 500
         execute if score @s CO.Counter matches 3 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 4 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+    execute if score @s CO.Counter matches 4 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
 ## 剣叩きつけ
     execute if score @s CO.Counter matches 5 run tag @s add CO.Skill.SwordAttack
 # 待機
-    execute if score @s CO.Counter matches 6 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 6 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 40
 ## 薙ぎ払いレーザー
     # 中心に移動
         execute if score @s CO.Counter matches 7 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
     # 薙ぎ払いレーザー
         execute if score @s CO.Counter matches 8 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
 # 待機
-    execute if score @s CO.Counter matches 9 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 9 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 30
 ## 剣叩きつけ + ATTACKドローン
     # 四隅に移動 + ドローン召喚
         execute if score @s CO.Counter matches 10 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_attack_drone_corner
     # 剣叩きつけ
         execute if score @s CO.Counter matches 11 run tag @s add CO.Skill.SwordAttack
 # 待機
-    execute if score @s CO.Counter matches 12 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 12 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 30
 ## ブルートフォース：回転パターン
     # 中央に移動
         execute if score @s CO.Counter matches 13 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
@@ -46,7 +46,7 @@
         execute if score @s CO.Counter matches 15 run scoreboard players set @s CO.PreTimer 400
         execute if score @s CO.Counter matches 15 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 16 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+    execute if score @s CO.Counter matches 16 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
 ## 射撃 + PANJANドローン
     # 四辺に移動
         execute if score @s CO.Counter matches 17 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_line
@@ -56,7 +56,7 @@
     # 射撃
         execute if score @s CO.Counter matches 19 run tag @s add CO.Skill.Shot
 # 待機
-    execute if score @s CO.Counter matches 20 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 120
+    execute if score @s CO.Counter matches 20 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 60
 ## 上空射撃 + YEETERドローン
     # 上空射撃・移動直線範囲パターン
         execute if score @s CO.Counter matches 21 run tag @s add CO.UpperShot.Pt.MoveLine
@@ -94,14 +94,14 @@
     ## 剣叩きつけ
         execute if score @s CO.Counter matches 30 run tag @s add CO.Skill.SwordAttack
 # 待機
-    execute if score @s CO.Counter matches 31 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+    execute if score @s CO.Counter matches 31 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
 ## 薙ぎ払いレーザー
     # 中心に移動
         execute if score @s CO.Counter matches 32 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_center
     # 薙ぎ払いレーザー
         execute if score @s CO.Counter matches 33 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/half_beam
 # 待機
-    execute if score @s CO.Counter matches 34 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
+    execute if score @s CO.Counter matches 34 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 20
 ## 剣叩きつけ + ATTACKドローン
     # 四隅に移動 + ドローン召喚
         execute if score @s CO.Counter matches 35 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_attack_drone_corner
@@ -122,7 +122,7 @@
         execute if score @s CO.Counter matches 42 run scoreboard players set @s CO.PreTimer 300
         execute if score @s CO.Counter matches 42 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 43 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
+    execute if score @s CO.Counter matches 43 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
 ## 剣叩きつけ + YEETERドローン
     # 四辺に移動 + YEETERドローン
         execute if score @s CO.Counter matches 44 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_yeeter_drone_line
@@ -139,7 +139,7 @@
         execute if score @s CO.Counter matches 48 run tag @s add CO.UpperShot.Pt.Cross
         execute if score @s CO.Counter matches 48 run tag @s add CO.Skill.UpperShot
 # 待機
-    execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 180
+    execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 80
 ## ブルートフォース：半面焼きパターン
     # 剣変形
         execute if score @s CO.Counter matches 50 run tag @s add CO.Skill.Transform.Sword
@@ -151,4 +151,4 @@
         execute if score @s CO.Counter matches 52 run scoreboard players set @s CO.PreTimer 120
         execute if score @s CO.Counter matches 52 run tag @s add CO.Skill.SuperJump
 # 待機
-    execute if score @s CO.Counter matches 53 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 300
+    execute if score @s CO.Counter matches 53 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 160

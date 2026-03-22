@@ -41,9 +41,19 @@
 # 攻撃
     execute if score @s CO.EventTimer matches 110 positioned ^ ^ ^12 run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/prediction
     execute if score @s CO.EventTimer matches 210 positioned ^ ^ ^12 run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/attack
+    # 攻撃演出
+        execute if score @s CO.EventTimer matches 210 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~2
+        execute if score @s CO.EventTimer matches 211 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-4
+        execute if score @s CO.EventTimer matches 212 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~4
+        execute if score @s CO.EventTimer matches 213 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-4
+        execute if score @s CO.EventTimer matches 214 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~3
+        execute if score @s CO.EventTimer matches 215 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-3
+        execute if score @s CO.EventTimer matches 216 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~3
+        execute if score @s CO.EventTimer matches 217 as @a[distance=..80] at @s run tp @s ~ ~ ~ ~ ~-1
 
 # ボス名変更
     execute if score @s CO.EventTimer matches 1 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"false"}
+    execute if score @s CO.EventTimer matches 271 run function asset:mob/0456.gargo_ex_machina/tick/util/change_health
     execute if score @s CO.EventTimer matches 272 run function asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m {Name:"絡繰仕掛の石像",Visible:"true"}
 
 # 無敵化

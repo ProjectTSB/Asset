@@ -15,6 +15,6 @@
         function api:mob/get_health_percent
         execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
     # フェーズ移行
-        execute unless entity @s[tag=CO.IsLatter] if score $HealthPer Temporary matches ..20 run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/start
+        execute unless entity @s[tag=CO.IsLatter] if score $HealthPer Temporary matches ..40 run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/start
     # 終了
         scoreboard players reset $HealthPer Temporary

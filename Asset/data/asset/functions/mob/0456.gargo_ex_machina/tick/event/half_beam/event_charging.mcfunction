@@ -14,10 +14,10 @@
         execute as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
     # 予告
         # ノーマル
-            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 15 positioned ^-30 ^ ^ rotated ~-20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:188}
-            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 35 positioned ^-30 ^0.05 ^ rotated ~20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:168}
-            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 15 positioned ^30 ^ ^ rotated ~20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:188}
-            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 35 positioned ^30 ^0.05 ^ rotated ~-20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:168}
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 15 positioned ^-30 ^ ^ rotated ~-20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:158}
+            execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 35 positioned ^-30 ^0.05 ^ rotated ~20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:138}
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 15 positioned ^30 ^ ^ rotated ~20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:158}
+            execute unless entity @s[tag=CO.Skill.HalfBeam.IsRight] if score @s CO.EventTimer matches 35 positioned ^30 ^0.05 ^ rotated ~-20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:138}
         # # ハード
         #     execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/2_hard if score @s CO.EventTimer matches 35 positioned ^-30 ^ ^ rotated ~-20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:88}
         #     execute if entity @s[tag=CO.Skill.HalfBeam.IsRight] if predicate api:global_vars/difficulty/2_hard if score @s CO.EventTimer matches 55 positioned ^-30 ^0.05 ^ rotated ~20 ~ run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/prediction.m {Interpolation:20,Tick:68}
@@ -48,8 +48,6 @@
     execute if score @s CO.EventTimer matches 120 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.7
     execute if score @s CO.EventTimer matches 140 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.8
     execute if score @s CO.EventTimer matches 140 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 1.8
-    execute if score @s CO.EventTimer matches 160 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 2
-    execute if score @s CO.EventTimer matches 160 run playsound block.beacon.activate hostile @a ~ ~ ~ 2 2
 
 # 終了
-    execute if score @s CO.EventTimer matches 180.. run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/start_attack
+    execute if score @s CO.EventTimer matches 150.. run function asset:mob/0456.gargo_ex_machina/tick/event/half_beam/start_attack
