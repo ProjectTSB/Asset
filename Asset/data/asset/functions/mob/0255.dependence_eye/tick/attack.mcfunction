@@ -1,4 +1,4 @@
-#> asset:mob/0255.dependence_eye/tick/3.attack
+#> asset:mob/0255.dependence_eye/tick/attack
 #
 #
 #
@@ -11,12 +11,9 @@
     data modify storage api: Argument.Damage set value 16f
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-
-# 補正実行
     function api:damage/modifier
-
-# リセット
+    execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
     function api:damage/reset
 
 # クールタイム設定
-    scoreboard players set @s 73.AttackCT 20
+    data modify storage asset:context this.AttackCT set value 20
