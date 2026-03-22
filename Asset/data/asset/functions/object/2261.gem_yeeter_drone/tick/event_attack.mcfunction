@@ -17,10 +17,17 @@
     execute if entity @s[scores={General.Object.Tick=1..20}] run tp @s ^ ^ ^-0.05
     execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=36..40}] run tp @s ^ ^ ^0.2
     execute if entity @s[tag=!2261.IsRotate,tag=!2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] run tp @s ^ ^ ^0.4
-    execute if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~0.375 ~
-    execute if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~0.75 ~
-    execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~-0.375 ~
-    execute if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~-0.75 ~
+    execute if predicate api:global_vars/difficulty/max/2_hard if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~0.375 ~
+    execute if predicate api:global_vars/difficulty/max/2_hard if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~0.75 ~
+    execute if predicate api:global_vars/difficulty/max/2_hard if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.1308 ~-0.375 ~
+    execute if predicate api:global_vars/difficulty/max/2_hard if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=41..}] at @s run tp @s ^ ^ ^0.2616 ~-0.75 ~
+    
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.157 ~0.45 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=41..80}] at @s run tp @s ^ ^ ^0.314 ~0.9 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate,scores={General.Object.Tick=81..}] at @s run tp @s ^ ^ ^0.471 ~1.35 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=35..40}] at @s run tp @s ^ ^ ^0.157 ~-0.45 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=41..80}] at @s run tp @s ^ ^ ^0.314 ~-0.9 ~
+    execute if predicate api:global_vars/difficulty/min/3_blessless if entity @s[tag=2261.IsRotate.Inverse,scores={General.Object.Tick=81..}] at @s run tp @s ^ ^ ^0.471 ~-1.35 ~
 
 # 攻撃
     execute if entity @s[scores={General.Object.Tick=40..}] run scoreboard players add @s 2261.AttackInterval 1

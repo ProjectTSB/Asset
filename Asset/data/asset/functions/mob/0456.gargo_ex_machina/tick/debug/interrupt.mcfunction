@@ -19,6 +19,6 @@
 
 # イベント実行
     scoreboard players set @s CO.EventTimer 0
-    tag @s add CO.Skill.HalfBeamShot
-    # tag @s add CO.Skill.BluteForce
-    # tag @s add CO.Skill.BluteForce.Pt.Tutorial
+    # tag @s add CO.Skill.ChangeHead
+    tag @s add CO.Skill.BluteForce
+    tag @s add CO.Skill.BluteForce.Pt.Spin

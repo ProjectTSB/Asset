@@ -52,11 +52,11 @@
     # 色床
         data modify storage asset:mob Field.Damage.FieldModify set value {Amount:120.0,Type:"Magic",Element:"None"}
     # 射撃
-        data modify storage asset:mob Field.Damage.Shot set value {Amount:80.0,Type:"Magic",Element:"None"}
+        data modify storage asset:mob Field.Damage.Shot set value {Amount:65.0,Type:"Magic",Element:"None"}
     # ロケットパンチ
         data modify storage asset:mob Field.Damage.RocketPunch set value {Amount:80.0,Type:"Physical",Element:"None"}
     # ドローン
-        data modify storage asset:mob Field.Damage.AttackDrone set value {Amount:80.0,Type:"Physical",Element:"None"}
-        data modify storage asset:mob Field.Damage.YeeterDrone set value {Amount:80.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.AttackDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
+        data modify storage asset:mob Field.Damage.YeeterDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone set value {Amount:90.0,Type:"Physical",Element:"None"}
         data modify storage asset:mob Field.Damage.PanjanDrone.Flame set value {Amount:40.0,Type:"Magic",Element:"Fire"}
