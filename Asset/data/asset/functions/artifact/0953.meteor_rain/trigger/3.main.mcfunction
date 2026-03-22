@@ -16,6 +16,6 @@
 
 # メテオレインのエミッターを召喚
     data modify storage api: Argument.ID set value 1079
-    data modify storage api: Argument.FieldOverride.Damage set value 580
+    data modify storage api: Argument.FieldOverride.Damage set value 500
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon

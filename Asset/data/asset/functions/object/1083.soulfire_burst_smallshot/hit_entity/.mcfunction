@@ -14,7 +14,7 @@
     function asset:object/1083.soulfire_burst_smallshot/hit_entity/modifier.m with storage asset:context this
 
 # 直撃したやつにダメージを与える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
 
 # リセット
     function api:damage/reset

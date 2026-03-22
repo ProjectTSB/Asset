@@ -2,6 +2,6 @@
 # @private
 
 #> target
-#> @within
+# @within
 #   function asset:artifact/0797.heartbleed/**
     #declare tag M5.Victim
