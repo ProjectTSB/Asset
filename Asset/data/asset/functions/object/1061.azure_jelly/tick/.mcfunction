@@ -47,4 +47,4 @@
     tag @p[tag=1061.Owner] remove 1061.Owner
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=500..}] run function asset:object/1061.azure_jelly/tick/kill
+    execute if entity @s[scores={General.Object.Tick=750..}] run function asset:object/1061.azure_jelly/tick/kill
