@@ -45,6 +45,7 @@
     #declare tag CO.UpperShot.Pt.Random ランダムパターン
     #declare tag CO.UpperShot.Pt.Target 追尾パターン
     #declare tag CO.UpperShot.Pt.MoveLine 移動直線範囲パターン
+    #declare tag CO.UpperShot.Pt.Panto パンクラパターン
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
     #declare tag CO.Skill.BluteForce.First ブルートフォースアタック
     #declare tag CO.Skill.BluteForce.Async ブルートフォースアタック攻撃判定用

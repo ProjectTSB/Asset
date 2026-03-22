@@ -19,4 +19,4 @@
 
 # イベント実行
     tag @s add CO.Skill.UpperShot
-    tag @s add CO.UpperShot.Pt.MoveLine
+    tag @s add CO.UpperShot.Pt.Panto

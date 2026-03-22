@@ -36,6 +36,9 @@
         execute if score @s CO.EventTimer matches 65 run playsound block.grindstone.use hostile @a ~ ~ ~ 3 0.5
         execute if score @s CO.EventTimer matches 65 run playsound ui.stonecutter.take_result hostile @a ~ ~ ~ 3 0.5
 
+# 回転
+    function asset:mob/0456.gargo_ex_machina/tick/util/rotate_to_center
+
 # モデルを合わせる
     execute as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
 

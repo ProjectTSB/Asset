@@ -10,3 +10,4 @@
     execute unless entity @s[tag=CO.UpperShot.Asyuc] run tag @s remove CO.UpperShot.Pt.Random
     execute unless entity @s[tag=CO.UpperShot.Asyuc] run tag @s remove CO.UpperShot.Pt.Target
     execute unless entity @s[tag=CO.UpperShot.Asyuc] run tag @s remove CO.UpperShot.Pt.MoveLine
+    execute unless entity @s[tag=CO.UpperShot.Asyuc] run tag @s remove CO.UpperShot.Pt.Panto
