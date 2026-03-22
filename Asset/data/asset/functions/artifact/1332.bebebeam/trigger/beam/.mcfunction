@@ -11,8 +11,8 @@
     #declare tag SpreadMarker
 
 # 演出
-    playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.2 1.8
-    playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 0.7 1.5
+    playsound tsb_sounds:blaster2 player @a ~ ~ ~ 0.4 1.8
+    playsound ogg:block.respawn_anchor.deplete2 player @a ~ ~ ~ 0.9 1.5
 
 # 発射数のデクリメント
     scoreboard players remove @s 110.Count 1
