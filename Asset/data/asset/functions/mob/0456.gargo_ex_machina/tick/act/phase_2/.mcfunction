@@ -106,7 +106,7 @@
     # 剣叩きつけ
         execute if score @s CO.Counter matches 36 run tag @s add CO.Skill.SwordAttack
 ## ブルートフォース：エクサパターン
-    # ブルートフォース：チュートリアル
+    # ブルートフォース：エクサ
         execute if score @s CO.Counter matches 37 run tag @s add CO.Skill.BluteForce
         execute if score @s CO.Counter matches 38 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/bluteforce_exa
     # 銃変形
@@ -121,7 +121,31 @@
         execute if score @s CO.Counter matches 42 run tag @s add CO.Skill.SuperJump
 # 待機
     execute if score @s CO.Counter matches 43 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 200
-# # 四辺に移動
-#     execute if score @s CO.Counter matches 44 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/move_to_line
-# ## 剣叩きつけ + YEETERドローン
-#     execute if score @s CO.Counter matches 45 run tag @s add CO.Skill.SwordAttack
+## 剣叩きつけ + YEETERドローン
+    # 四辺に移動 + YEETERドローン
+        execute if score @s CO.Counter matches 44 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/summon_yeeter_drone_line
+    # 剣叩きつけ
+        execute if score @s CO.Counter matches 45 run tag @s add CO.Skill.SwordAttack
+## モディファイ + 上空射撃
+    # フィールドモディファイ・ボーダーパターン
+        execute if score @s CO.Counter matches 46 as @e[type=marker,tag=CO.CenterPosition,distance=..80,limit=1] at @s positioned ~ ~-0.499 ~ run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/field_modify_square
+        execute if score @s CO.Counter matches 46 run scoreboard players set @s CO.PreTimer 2
+        execute if score @s CO.Counter matches 46 run tag @s add CO.Skill.FieldModify
+    # 銃変形
+        execute if score @s CO.Counter matches 47 run tag @s add CO.Skill.Transform.Shoot
+    # 上空射撃・交差パターン
+        execute if score @s CO.Counter matches 48 run tag @s add CO.UpperShot.Pt.Cross
+        execute if score @s CO.Counter matches 48 run tag @s add CO.Skill.UpperShot
+# 待機
+    execute if score @s CO.Counter matches 49 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run scoreboard players set @s CO.IdleTimer 100
+
+## ブルートフォース：半面焼きパターン
+    # 剣変形
+        execute if score @s CO.Counter matches 50 run tag @s add CO.Skill.Transform.Sword
+    # ブルートフォース：半面焼き
+        execute if score @s CO.Counter matches 51 run tag @s add CO.Skill.BluteForce
+        execute if score @s CO.Counter matches 51 run function asset:mob/0456.gargo_ex_machina/tick/act/phase_2/bluteforce_half
+    # 連続スーパージャンプ
+        execute if score @s CO.Counter matches 52 run scoreboard players set @s CO.JumpCount 2
+        execute if score @s CO.Counter matches 52 run scoreboard players set @s CO.PreTimer 120
+        execute if score @s CO.Counter matches 52 run tag @s add CO.Skill.SuperJump

@@ -1,8 +1,8 @@
-#> asset:mob/0456.gargo_ex_machina/tick/act/phase_1/field_modify_square
+#> asset:mob/0456.gargo_ex_machina/tick/act/phase_2/field_modify_square
 #
 # フィールド・モディファイ
 #
-# @within asset:mob/0456.gargo_ex_machina/tick/act/phase_1/
+# @within asset:mob/0456.gargo_ex_machina/tick/act/phase_2/
 
 # 位置決定用AEC召喚
     # A

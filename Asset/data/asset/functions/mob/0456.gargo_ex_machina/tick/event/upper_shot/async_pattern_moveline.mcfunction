@@ -5,7 +5,7 @@
 # @within asset:mob/0456.gargo_ex_machina/tick/event/
 
 # タイマー増加
-    execute store result score $Interval Temporary run scoreboard players add @s CO.EventTimer.UpperShot 1
+    scoreboard players add @s CO.EventTimer.UpperShot 1
 
 # 攻撃位置決定
     # 正面
@@ -29,5 +29,4 @@
     execute at @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..80,sort=random,limit=3] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack.m {AttackTime:60}
 
 # 終了
-    scoreboard players reset $Interval Temporary
     execute if score @s CO.EventTimer.UpperShot matches 350.. run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_end

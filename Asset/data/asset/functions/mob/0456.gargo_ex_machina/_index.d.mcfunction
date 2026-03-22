@@ -45,6 +45,7 @@
     #declare tag CO.UpperShot.Pt.Random ランダムパターン
     #declare tag CO.UpperShot.Pt.Target 追尾パターン
     #declare tag CO.UpperShot.Pt.MoveLine 移動直線範囲パターン
+    #declare tag CO.UpperShot.Pt.Cross 交差パターン
     #declare tag CO.UpperShot.Pt.Panto パンクラパターン
     #declare tag CO.Skill.BluteForce ブルートフォースアタック
     #declare tag CO.Skill.BluteForce.First ブルートフォースアタック
@@ -54,8 +55,8 @@
     #declare tag CO.Skill.BluteForce.Pt.SpinInv 回転パターン
     #declare tag CO.Skill.BluteForce.Pt.Exa エクサパターン
     #declare tag CO.Skill.BluteForce.Pt.ExaInv エクサパターン
-    #declare tag 
-    #declare tag 
+    #declare tag CO.Skill.BluteForce.Pt.Half 半面焼きパターン
+    #declare tag CO.Skill.BluteForce.Pt.HalfInv 半面焼きパターン
     #declare tag 
     # - オブジェクト用
     #declare tag CO.Shadow

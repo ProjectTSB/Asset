@@ -60,6 +60,8 @@
         execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.Target] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_target
     # 移動直線範囲パターン
         execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.MoveLine] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_moveline
+    # 交差パターン
+        execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.Cross] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_cross
     # パンクラパターン
         execute if entity @s[tag=CO.UpperShot.Asyuc,tag=CO.UpperShot.Pt.Panto] run function asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/async_pattern_pantokrator
 
@@ -74,3 +76,6 @@
     # エクサパターン
         execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.Exa] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_exa
         execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.ExaInv] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_exa_inv
+    # 半面焼きパターン
+        execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.Half] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_half
+        execute if entity @s[tag=CO.Skill.BluteForce.Async,tag=CO.Skill.BluteForce.Pt.HalfInv] at @e[type=marker,tag=CO.CenterPosition,distance=..80] run function asset:mob/0456.gargo_ex_machina/tick/event/blute_force_attack/async_pattern_half_inv
