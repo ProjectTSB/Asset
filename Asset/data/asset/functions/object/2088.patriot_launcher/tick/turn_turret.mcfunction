@@ -1,11 +1,11 @@
 #> asset:object/2088.patriot_launcher/tick/turn_turret
 #
-# 
+#
 #
 # @within function asset:object/2088.patriot_launcher/tick/tick_active
 
 #> prv
-#> @private
+# @private
     #declare score_holder $2088.TurretRotation
 
 # 敵のいる方向の数値を取得

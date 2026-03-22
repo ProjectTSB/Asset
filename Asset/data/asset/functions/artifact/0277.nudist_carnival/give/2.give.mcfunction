@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"すっぱだカーニバル","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"先祖を思い出せ","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力が全回復する","color":"white"}','{"text":"先祖を思い出せ","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onDamage"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"アイテムを何一つ所持していない"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

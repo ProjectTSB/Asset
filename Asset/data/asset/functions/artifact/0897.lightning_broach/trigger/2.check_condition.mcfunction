@@ -8,5 +8,9 @@
     data modify storage asset:artifact TargetID set value 897
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
+
+# IsDoT:trueならCanUsedを削除
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0897.lightning_broach/trigger/3.main

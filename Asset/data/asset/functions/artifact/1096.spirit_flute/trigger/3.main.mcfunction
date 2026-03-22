@@ -11,5 +11,6 @@
 
 # バフを付与
     data modify storage api: Argument.ID set value 258
+    data modify storage api: Argument.FieldOverride.HealPer set value 0.0125
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
