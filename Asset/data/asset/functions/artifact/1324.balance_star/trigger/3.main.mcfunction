@@ -13,7 +13,7 @@
     function asset:artifact/1324.balance_star/trigger/find_target
 
 # 演出
-    function asset:artifact/1324.balance_star/trigger/vfx/
+    execute if predicate lib:random_pass_per/30 run function asset:artifact/1324.balance_star/trigger/vfx
 
 # 最も現在MPの多いプレイヤーのMPを減少
     data modify storage api: Argument.Fluctuation set value -2
