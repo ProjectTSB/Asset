@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"絡繰仕掛の石像"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":" > Exception in thread main: java.lang.NullPointerException","color":"red"}','{"text":"       at item.artifact.getLore(atf/0001.book_of_all-seeing)","color":"red"}','{"text":"   Caused by: java.util.NoSuchElementException: Missing \'Lore\'","color":"red"}']
+    data modify storage asset:mob Lore set value ['{"text":" > Exception in thread \\"main\\"": java.lang.NullPointerException","color":"red"}','{"text":"       at item.artifact.getLore(atf/0001.book_of_all-seeing)","color":"red"}','{"text":"   Caused by: java.util.NoSuchElementException: Missing \'Lore\'","color":"red"}']
 # 体力 (double) (オプション)
 # 前後半戦で回復するので実態の半分の値を入れる
     data modify storage asset:mob Health set value 120000

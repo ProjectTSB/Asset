@@ -8,7 +8,8 @@
     execute as @e[type=item_display,tag=CO.ModelRoot,distance=..30] at @s run function asset:mob/0456.gargo_ex_machina/tick/event/idle/check
 
 # 起動
-    execute if entity @s[tag=CO.Skill.Activate] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
+    execute if entity @s[tag=CO.Skill.Activate,tag=!CO.Skill.Activate.Short] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/
+    execute if entity @s[tag=CO.Skill.Activate,tag=CO.Skill.Activate.Short] run function asset:mob/0456.gargo_ex_machina/tick/event/activate/event_short
 
 # 後半戦移行
     execute if entity @s[tag=CO.Skill.ChangeHead] run function asset:mob/0456.gargo_ex_machina/tick/event/change_head/

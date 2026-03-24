@@ -51,3 +51,6 @@
     tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
     scoreboard players reset $Min Temporary
     scoreboard players reset $Sec Temporary
+
+# 再戦フラグ用marker設置
+    summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}

@@ -9,8 +9,10 @@
     #declare tag CO.Hitbox 当たり判定
     #declare tag CO.CenterPosition 中心点
     #declare tag CO.IsLatter 後半戦
+    #declare tag CO.IsRematch 再戦
     # - スキル
     #declare tag CO.Skill.Activate 起動
+    #declare tag CO.Skill.Activate.Short 起動・演出短縮版
     #declare tag CO.Skill.ChangeHead 後半戦移行
     #declare tag CO.Skill.Move 移動
     #declare tag CO.Skill.Move.End 移動
@@ -58,7 +60,6 @@
     #declare tag CO.Skill.BluteForce.Pt.ExaInv エクサパターン
     #declare tag CO.Skill.BluteForce.Pt.Half 半面焼きパターン
     #declare tag CO.Skill.BluteForce.Pt.HalfInv 半面焼きパターン
-    #declare tag 
     # - オブジェクト用
     #declare tag CO.Shadow
     #declare tag CO.Object
@@ -95,6 +96,7 @@
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/resume
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween
     #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/pause
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_short/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_start/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_charge/tween
     #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/tween
@@ -134,4 +136,3 @@
     #declare function animated_java:gem_attack_drone/remove/all
     #declare function animated_java:gem_tnt_drone/remove/all
     #declare function animated_java:gem_panjan_drone/remove/all
-    #declare function 

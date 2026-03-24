@@ -11,6 +11,9 @@
 # 継承元の処理実行
     function asset:mob/super.init
 
+# 再戦フラグチェック
+    execute if entity @e[type=marker,tag=CO.IsRematch,distance=..80] run tag @s add CO.IsRematch
+
 # 独自init処理
     # 登場演出再生
         # tag @s add CO.Skill.Start
@@ -27,13 +30,15 @@
         scoreboard players set @s CO.Counter 0
 
 # ダミー用ひつじ召喚
-    data modify storage api: Argument.ID set value 2264
-    function api:object/summon
+    execute unless entity @s[tag=CO.IsRematch] run data modify storage api: Argument.ID set value 2264
+    execute unless entity @s[tag=CO.IsRematch] run function api:object/summon
     # summon sheep ~ ~ ~ {Tags:["CO.ScapeSheep","Uninterferable"],NoAI:1b,Invulnerable:1b}
     # playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
 
 # 登場モーション再生
     tag @s add CO.Skill.Activate
+    # 再戦フラグ有効の場合、短縮版登場モーションを再生する
+        execute if entity @s[tag=CO.IsRematch] run tag @s add CO.Skill.Activate.Short
 
 # デバッグ
     # tag @s add CO.IsLatter
