@@ -23,5 +23,7 @@
 
 # バリアを得る
     data modify storage api: Argument.ID set value 268
+    data modify storage api: Argument.Duration set value 600
+    data modify storage api: Argument.FieldOverride.Barrier set value 5
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
