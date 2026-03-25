@@ -1,4 +1,4 @@
-#> asset:object/1061.azure_jelly/tick/angle/
+#> asset:object/1061.azure_jelly/tick/pitch/
 #
 #
 #

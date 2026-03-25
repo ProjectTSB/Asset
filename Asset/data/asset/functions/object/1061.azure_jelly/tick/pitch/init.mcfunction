@@ -1,4 +1,4 @@
-#> asset:object/1061.azure_jelly/tick/angle/init
+#> asset:object/1061.azure_jelly/tick/pitch/init
 #
 #
 #
@@ -8,7 +8,7 @@
     execute store result score @s 1061.Pitch run data get entity @s Rotation[1] 100
 
 # 上下どちらの移動をするかトグルで切り替える
-    function asset:object/1061.azure_jelly/tick/angle/switch_up_down
+    function asset:object/1061.azure_jelly/tick/pitch/switch_up_down
 
 # trueなら少し減らして保存しておく
     execute if data storage asset:context this{IsUpper:true} run scoreboard players remove @s 1061.Pitch 6000

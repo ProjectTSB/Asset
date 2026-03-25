@@ -30,8 +30,8 @@
     execute if score $Interval Temporary matches 0 run function asset:object/1061.azure_jelly/tick/turn/
 
 # 角度
-    execute if score $Interval Temporary matches 0 at @s run function asset:object/1061.azure_jelly/tick/angle/init
-    execute at @s run function asset:object/1061.azure_jelly/tick/angle/
+    execute if score $Interval Temporary matches 0 at @s run function asset:object/1061.azure_jelly/tick/pitch/init
+    execute at @s run function asset:object/1061.azure_jelly/tick/pitch/
 
 # 移動
     execute at @s run function asset:object/1061.azure_jelly/tick/move/
