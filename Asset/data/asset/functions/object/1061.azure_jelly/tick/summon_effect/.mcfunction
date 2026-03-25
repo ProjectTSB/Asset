@@ -25,12 +25,12 @@
     execute if score @s General.Object.Tick matches 32..39 at @s run tp @s ~ ~ ~ ~ ~3
 
 # 移動
-    execute if score @s General.Object.Tick matches 00..05 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.1}
-    execute if score @s General.Object.Tick matches 06..12 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.15}
-    execute if score @s General.Object.Tick matches 13..22 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.2}
-    execute if score @s General.Object.Tick matches 23..30 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.15}
-    execute if score @s General.Object.Tick matches 31..35 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.12}
-    execute if score @s General.Object.Tick matches 36..39 at @s run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:0.1}
+    execute if score @s General.Object.Tick matches 00..05 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.1}
+    execute if score @s General.Object.Tick matches 06..12 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.15}
+    execute if score @s General.Object.Tick matches 13..22 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.2}
+    execute if score @s General.Object.Tick matches 23..30 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.15}
+    execute if score @s General.Object.Tick matches 31..35 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.12}
+    execute if score @s General.Object.Tick matches 36..39 at @s run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:0.1}
 
 # 召喚演出終了
     execute if score @s General.Object.Tick matches 40.. run function asset:object/1061.azure_jelly/tick/summon_effect/end

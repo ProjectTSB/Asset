@@ -12,7 +12,7 @@
 #tellraw @a {"storage":"asset:context","nbt":"this.SpeedMultiplier"}
 
 # SpeedMultiplier:1ならそのまま実行してreturn
-    $execute if data storage asset:context this{SpeedMultiplier:1} run return run function asset:object/1061.azure_jelly/tick/move/check_collision.m {Speed:$(Speed)}
+    $execute if data storage asset:context this{SpeedMultiplier:1} run return run function asset:object/1061.azure_jelly/tick/move/move.m {Speed:$(Speed)}
 
 # 設定された速度と倍率を取得
     $data modify storage asset:temp 1061.Speed set value $(Speed)
@@ -22,7 +22,7 @@
 
 # 速度をstorageに入れてマクロで実行
     execute store result storage asset:temp 1061.Speed float 0.0001 run scoreboard players operation $Speed Temporary *= $SpeedMultiplier Temporary
-    function asset:object/1061.azure_jelly/tick/move/check_collision.m with storage asset:temp 1061
+    function asset:object/1061.azure_jelly/tick/move/move.m with storage asset:temp 1061
 
 # リセット
     scoreboard players reset $Speed Temporary
