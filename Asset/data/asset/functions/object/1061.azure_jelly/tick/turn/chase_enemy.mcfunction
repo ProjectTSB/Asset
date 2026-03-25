@@ -11,7 +11,7 @@
     execute if data storage asset:temp 1061{Success:true} facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
 # 近くなければそのままfacingする
-    execute unless data storage asset:temp 1061{Success:true} facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
+    # execute unless data storage asset:temp 1061{Success:true} facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..30,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ ~
 
 # リセット
     data remove storage asset:temp 1061
