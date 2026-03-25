@@ -21,8 +21,8 @@
     data modify storage asset:object Field.IsFirst set value true
     data modify storage asset:object Field.IsUpper set value true
     data modify storage asset:object Field.WaveLeftRotate set value true
-    data modify storage asset:object Field.AttackCD.Current set value 0
-    data modify storage asset:object Field.AttackCD._ set value 45
+    data modify storage asset:object Field.AttackCD._ set value 0
+    data modify storage asset:object Field.AttackCD.Max set value 45
     data modify storage asset:object Field.SpeedMultiplier set value 1
     data modify storage asset:object Field.Damage set value {Min:1,Max:10}
     data modify storage asset:object Field.UserID set value -1

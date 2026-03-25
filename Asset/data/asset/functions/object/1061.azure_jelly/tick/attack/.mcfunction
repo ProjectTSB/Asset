@@ -5,7 +5,7 @@
 # @within function asset:object/1061.azure_jelly/tick/
 
 # クールダウンをデクリメント
-    execute store result storage asset:context this.AttackCD.Current int 0.9999999999 run data get storage asset:context this.AttackCD.Current
+    execute store result storage asset:context this.AttackCD._ int 0.9999999999 run data get storage asset:context this.AttackCD._
 
 # CDが0でなければreturn
     execute unless data storage asset:context this.AttackCD{Current:0} run return fail
