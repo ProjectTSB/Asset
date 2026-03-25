@@ -17,6 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 1061
 # フィールド(オプション)
+    data modify storage asset:object Field.Tick set value 750
     data modify storage asset:object Field.IsFirst set value true
     data modify storage asset:object Field.IsUpper set value true
     data modify storage asset:object Field.WaveLeftRotate set value true

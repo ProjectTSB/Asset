@@ -4,6 +4,9 @@
 #
 # @within function asset:object/1061.azure_jelly/tick/
 
+# Tick加算
+    scoreboard players add @s General.Object.Tick 1
+
 # メモ
 # -80スタートで、0まで行きたいから合計加算角度は80くらいである必要がある
 

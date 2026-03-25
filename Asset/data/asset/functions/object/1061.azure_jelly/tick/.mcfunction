@@ -8,8 +8,8 @@
 # @private
     #declare score_holder $UserID
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+# 存在時間フィールド減算
+    execute store result storage asset:context this.Tick int 0.9999999999 run data get storage asset:context this.Tick
 
 # 常時演出
     particle dust 0.267 0.729 0.945 0.9 ~ ~ ~ 0.4 0.6 0.4 0 1 normal @a
@@ -23,7 +23,7 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1061.Owner
 
 # インターバル
-    scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    execute store result score $Interval Temporary run data get storage asset:context this.Tick
     scoreboard players operation $Interval Temporary %= $50 Const
 
 # 移動方向設定
@@ -47,4 +47,4 @@
     tag @p[tag=1061.Owner] remove 1061.Owner
 
 # 消滅処理
-    execute if entity @s[scores={General.Object.Tick=750..}] run function asset:object/1061.azure_jelly/tick/kill
+    execute if data storage asset:context this{Tick:0} run function asset:object/1061.azure_jelly/tick/kill
