@@ -20,9 +20,9 @@
         execute if score @s AK.EventTimer matches 149..154 positioned ^ ^ ^-0.3 run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 155..165 positioned ^ ^ ^-0.2 run function asset:mob/0380.haruclaire_v3/tick/util/tp
     # 演出
-        execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
         execute if score @s AK.EventTimer matches 31 at @s run playsound entity.phantom.flap hostile @a ~ ~ ~ 2 1.3
-        execute if score @s AK.EventTimer matches 45 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 45 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
         execute if score @s AK.EventTimer matches 70 at @s run playsound entity.arrow.hit_player hostile @a ~ ~ ~ 2 1.7
         execute if score @s AK.EventTimer matches 154 at @s run playsound entity.phantom.flap hostile @a ~ ~ ~ 2 1.3
         execute if score @s AK.EventTimer matches 13 at @s positioned ~ ~3 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/particle
@@ -51,7 +51,7 @@
             execute if score @s AK.EventTimer matches 213 as @e[type=area_effect_cloud,tag=AK.IceCrepation.Pos.B,distance=..80,limit=1] at @s run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/attack_2
 
     # 演出
-        execute if score @s AK.EventTimer matches 185 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
+        execute if score @s AK.EventTimer matches 185 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 1.3
         execute if score @s AK.EventTimer matches 210 at @s positioned ~ ~4 ~ run function asset:mob/0380.haruclaire_v3/tick/event/icecremation_first/particle
         execute if score @s AK.EventTimer matches 210 at @s run playsound block.enchantment_table.use hostile @a ~ ~ ~ 3 1.6
 

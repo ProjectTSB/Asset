@@ -21,7 +21,7 @@
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
-    data modify storage asset:effect MaxDuration set value 360
+    data modify storage asset:effect MaxDuration set value 400
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
@@ -36,4 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.HealPer set value 0.01
