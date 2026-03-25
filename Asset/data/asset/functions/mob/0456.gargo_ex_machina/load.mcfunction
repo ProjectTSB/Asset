@@ -15,7 +15,9 @@
     scoreboard objectives add CO.PreTimer dummy
     scoreboard objectives add CO.JumpCount dummy
     scoreboard objectives add CO.BattleTimer dummy
+    scoreboard objectives add CO.DpsTimer dummy
     scoreboard objectives add CO.HealthOffset dummy
+    scoreboard objectives add CO.ActualHealth dummy
 #> Object管理用
 # @within function asset:mob/0456.gargo_ex_machina/**
 # @within function asset:object/2260.gem_attack_drone/**

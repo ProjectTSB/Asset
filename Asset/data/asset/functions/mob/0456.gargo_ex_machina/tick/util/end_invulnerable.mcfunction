@@ -13,3 +13,6 @@
 
 # 全Locator無敵化解除
     execute as @e[type=item_display,tag=CO.ModelRoot] run function animated_java:gargo_ex_machina/as_own_locator_entities {command:'function asset:mob/0456.gargo_ex_machina/tick/util/end_invulnerable_locator'}
+
+# 無敵化フラグ
+    tag @s remove CO.IsInvulnerable

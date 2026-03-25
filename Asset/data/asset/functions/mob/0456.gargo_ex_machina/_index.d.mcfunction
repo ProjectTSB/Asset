@@ -10,6 +10,7 @@
     #declare tag CO.CenterPosition 中心点
     #declare tag CO.IsLatter 後半戦
     #declare tag CO.IsRematch 再戦
+    #declare tag CO.IsInvulnerable 無敵
     # - スキル
     #declare tag CO.Skill.Activate 起動
     #declare tag CO.Skill.Activate.Short 起動・演出短縮版

@@ -13,3 +13,4 @@
 
 # 戦闘タイマー増加
     execute if entity @s[tag=!CO.Skill.Activate,tag=!CO.Skill.ChangeHead] run scoreboard players add @s CO.BattleTimer 1
+    execute if entity @s[tag=!CO.IsInvulnerable] run scoreboard players add @s CO.DpsTimer 1

@@ -41,16 +41,25 @@
 # 石像移動
     function asset:mob/0456.gargo_ex_machina/death/clone_statue
 
+# ---
+    tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
+
 # クリアタイム表示
     execute store result score $Sec Temporary store result score $Min Temporary run scoreboard players operation @s CO.BattleTimer /= $20 Const
     scoreboard players operation $Min Temporary /= $60 Const
     scoreboard players operation $Sec Temporary %= $60 Const
-    tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
     execute if score $Sec Temporary matches 10.. run tellraw @a[distance=..80] [{"text":"【 クリアタイム："},{"score":{"name":"$Min","objective":"Temporary"}},{"text": ":"},{"score":{"name":"$Sec","objective":"Temporary"}},{"text": " !! 】"}]
     execute if score $Sec Temporary matches ..9 run tellraw @a[distance=..80] [{"text":"【 クリアタイム："},{"score":{"name":"$Min","objective":"Temporary"}},{"text": ":0"},{"score":{"name":"$Sec","objective":"Temporary"}},{"text": " !! 】"}]
-    tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
     scoreboard players reset $Min Temporary
     scoreboard players reset $Sec Temporary
+
+# DPS表示
+    scoreboard players operation @s CO.ActualHealth /= @s CO.DpsTimer
+    scoreboard players operation @s CO.ActualHealth *= $20 Const
+    tellraw @a[distance=..80] [{"text":"【 DPS："},{"score":{"name":"@s","objective":"CO.ActualHealth"}},{"text": " !! 】"}]
+
+# ---
+    tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
 
 # 再戦フラグ用marker設置
     execute unless entity @e[type=marker,tag=CO.IsRematch,distance=..30] run summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}

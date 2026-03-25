@@ -32,13 +32,14 @@
 # ダミー用ひつじ召喚
     execute unless entity @s[tag=CO.IsRematch] run data modify storage api: Argument.ID set value 2264
     execute unless entity @s[tag=CO.IsRematch] run function api:object/summon
-    # summon sheep ~ ~ ~ {Tags:["CO.ScapeSheep","Uninterferable"],NoAI:1b,Invulnerable:1b}
-    # playsound entity.sheep.hurt hostile @a ~ ~ ~ 2 0.7
 
 # 登場モーション再生
     tag @s add CO.Skill.Activate
     # 再戦フラグ有効の場合、短縮版登場モーションを再生する
         execute if entity @s[tag=CO.IsRematch] run tag @s add CO.Skill.Activate.Short
+
+# DPSタイマー計算開始
+    function asset:mob/0456.gargo_ex_machina/init/set_dps_timer
 
 # デバッグ
     # tag @s add CO.IsLatter
