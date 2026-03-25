@@ -53,4 +53,4 @@
     scoreboard players reset $Sec Temporary
 
 # 再戦フラグ用marker設置
-    summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}
+    execute unless entity @e[type=marker,tag=CO.IsRematch,distance=..30] run summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}
