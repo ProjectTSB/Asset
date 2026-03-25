@@ -10,6 +10,6 @@
 # interpolation_duration
     data modify entity @s interpolation_duration set value 8
 
-# 小さくなる
+# デカくなる
     data modify entity @s transformation.scale set value [12f,0.1f,12f]
     data modify entity @s transformation.translation set value [0f,-0.5f,0f]
