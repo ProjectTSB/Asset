@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/1160/init
+# @within asset:object/alias/1156/init
 
 # Rotationをランダムにする
     execute store result storage asset:temp Args.Yaw float 0.01 run random value 0..35999
