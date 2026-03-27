@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"青","color":"#5E5EFF"},{"text":"色","color":"#6C6CFF"},{"text":"の","color":"#7A7AFF"},{"text":"屈","color":"#8888FF"},{"text":"折","color":"#9696FF"},{"text":"プ","color":"#A4A4FF"},{"text":"リ","color":"#B2B2FF"},{"text":"ズ","color":"#C0C0FF"},{"text":"ム","color":"#CECEFF"}]'
+    data modify storage asset:artifact Name set value '[{"text":"青","color":"#7A7AFF"},{"text":"色","color":"#8484FF"},{"text":"の","color":"#8E8EFF"},{"text":"屈","color":"#9898FF"},{"text":"折","color":"#A2A2FF"},{"text":"","color":"#ACACFF"},{"text":"プ","color":"#B6B6FF"},{"text":"リ","color":"#C0C0FF"},{"text":"ズ","color":"#CACAFF"},{"text":"ム","color":"#D4D4FF"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"攻撃対象N体に与ダメージ量の10%分の水属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
