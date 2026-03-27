@@ -1,4 +1,4 @@
-#> asset:object/1160.blue_prism/tick/
+#> asset:object/1156.refraction_prism/tick/
 #
 # Objectのtick時の処理
 #
@@ -15,9 +15,9 @@
     execute if score @s General.Object.Tick matches 28.. run tp @s ^ ^ ^0.01
 
 # transformation
-    execute if score @s General.Object.Tick matches 3 run function asset:object/1160.blue_prism/tick/transformation/0/
-    execute if score @s General.Object.Tick matches 15 run function asset:object/1160.blue_prism/tick/transformation/1/
-    execute if score @s General.Object.Tick matches 25 run function asset:object/1160.blue_prism/tick/transformation/2/
+    execute if score @s General.Object.Tick matches 3 run function asset:object/1156.refraction_prism/tick/transformation/0/
+    execute if score @s General.Object.Tick matches 15 run function asset:object/1156.refraction_prism/tick/transformation/1/
+    execute if score @s General.Object.Tick matches 25 run function asset:object/1156.refraction_prism/tick/transformation/2/
 
 # kill
-    execute if score @s General.Object.Tick matches 30.. run function asset:object/1160.blue_prism/tick/kill
+    execute if score @s General.Object.Tick matches 30.. run function asset:object/1156.refraction_prism/tick/kill

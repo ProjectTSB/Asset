@@ -1,8 +1,8 @@
-#> asset:object/alias/1160/register
+#> asset:object/alias/1156/register
 #
 # Objectのデータ指定処理のエイリアス
 #
 # @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:object/1160.blue_prism/register
+    function asset:object/1156.refraction_prism/register

@@ -1,8 +1,8 @@
-#> asset:object/1160.blue_prism/tick/transformation/2/apply
+#> asset:object/1156.refraction_prism/tick/transformation/2/apply
 #
 #
 #
-# @within function asset:object/1160.blue_prism/tick/transformation/2/
+# @within function asset:object/1156.refraction_prism/tick/transformation/2/
 
     data modify entity @s interpolation_duration set value 5
     data modify entity @s start_interpolation set value 0

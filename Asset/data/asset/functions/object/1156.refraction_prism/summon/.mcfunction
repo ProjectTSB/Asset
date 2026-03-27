@@ -1,4 +1,4 @@
-#> asset:object/1160.blue_prism/summon/
+#> asset:object/1156.refraction_prism/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
