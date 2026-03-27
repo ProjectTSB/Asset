@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"青","color":"#5E5EFF"},{"text":"色","color":"#6C6CFF"},{"text":"の","color":"#7A7AFF"},{"text":"屈","color":"#8888FF"},{"text":"折","color":"#9696FF"},{"text":"プ","color":"#A4A4FF"},{"text":"リ","color":"#B2B2FF"},{"text":"ズ","color":"#C0C0FF"},{"text":"ム","color":"#CECEFF"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象に与ダメージ量の10%分の水属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象N体に与ダメージ量の10%分の水属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
