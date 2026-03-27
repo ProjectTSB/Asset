@@ -20,7 +20,7 @@
     execute unless block ~ ~2.5 ~ #asset:mob/0365.frestchika/no_collision if block ~ ~-1 ~ #asset:mob/0365.frestchika/no_collision run tp @s ~ ~-0.1 ~
 
 # そこらのプレイヤーより下にいる場合、上昇する
-#    execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~
+#    execute positioned ~-50 ~ ~-50 unless entity @a[gamemode=!spectator,dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~
 
 # 動作
     # イントロ

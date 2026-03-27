@@ -14,7 +14,7 @@
     execute if score @s General.Mob.Tick matches 30..60 run function asset:mob/0055.hetukedah/tick/skill/explosion/dash
 
 # プレイヤーを捉えたら
-    execute if score @s General.Mob.Tick matches 30..60 if entity @a[distance=..2] run scoreboard players set @s General.Mob.Tick 60
+    execute if score @s General.Mob.Tick matches 30..60 if entity @a[gamemode=!spectator,distance=..2] run scoreboard players set @s General.Mob.Tick 60
 
 # 警告
     execute if score @s General.Mob.Tick matches 60 rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0055.hetukedah/tick/skill/explosion/alert

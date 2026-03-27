@@ -10,8 +10,8 @@
     title @a[distance=..64] subtitle {"text":"\uE010","font":"screen_effect","color":"#CCCCCC"}
 
 # 演出
-    execute at @a[distance=..64] run playsound minecraft:item.trident.return hostile @p ~ ~ ~ 3 0.6
-    execute at @a[distance=..64] run playsound minecraft:entity.evoker.cast_spell hostile @p ~ ~ ~ 3 1.5
+    execute as @a[distance=..64] at @s run playsound minecraft:item.trident.return hostile @s ~ ~ ~ 3 0.6
+    execute as @a[distance=..64] at @s run playsound minecraft:entity.evoker.cast_spell hostile @s ~ ~ ~ 3 1.5
     particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.1 50 normal
 
 # アニメ再生

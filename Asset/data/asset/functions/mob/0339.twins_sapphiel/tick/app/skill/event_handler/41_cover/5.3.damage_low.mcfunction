@@ -6,7 +6,7 @@
 #    function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/41_cover/1.main
 
 # ヒット判定
-    tag @a[distance=..2.8] add 9F.Temp.Target.Attack
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2.8] add 9F.Temp.Target.Attack
     execute as @a[tag=9F.Temp.Target.Attack] at @s if block ~ ~-1 ~ #lib:no_collision run tag @s remove 9F.Temp.Target.Attack
 
 # TODO:ダメージ

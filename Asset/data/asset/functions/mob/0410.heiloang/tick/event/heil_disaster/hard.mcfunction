@@ -40,15 +40,14 @@
             execute if score @s BE.EventTimer matches 205 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 210 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
             execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_thunder
-            execute if score @s BE.EventTimer matches 130 at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind_hard
-            execute if score @s BE.EventTimer matches 180 at @a[distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind_hard
+            execute if score @s BE.EventTimer matches 130 at @a[tag=!PlayerShouldInvulnerable,distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind_hard
+            execute if score @s BE.EventTimer matches 180 at @a[tag=!PlayerShouldInvulnerable,distance=..80] run function asset:mob/0410.heiloang/tick/event/heil_disaster/attack_wind_hard
 
 # なぎはらい火炎放射
     # アニメーション再生
         execute if score @s BE.EventTimer matches 215 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/6_sweep_breath
     # ジャンプ増加
         execute if score @s BE.EventTimer matches 215 run function asset:mob/0410.heiloang/tick/event/heil_disaster/effect_jumpboost
-        # execute if score @s BE.EventTimer matches 215 run effect give @a[distance=..80] jump_boost 9 5
     # 予告
         execute if score @s BE.EventTimer matches 259 at @e[type=marker,tag=BE.CenterPosition] rotated ~-90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
     # 攻撃
@@ -75,7 +74,7 @@
         # アニメーション再生
             execute if score @s BE.EventTimer matches 311 as @e[type=item_display,tag=BE.ModelRoot,sort=nearest,limit=1] run function asset:mob/0410.heiloang/tick/animated_java/play/6_1_sweep_breath_mirror
         # ジャンプ増加
-            execute if score @s BE.EventTimer matches 321 run effect give @a[distance=..80] jump_boost 9 5
+            execute if score @s BE.EventTimer matches 321 run function asset:mob/0410.heiloang/tick/event/heil_disaster/effect_jumpboost
         # 予告
             execute if score @s BE.EventTimer matches 319 at @e[type=marker,tag=BE.CenterPosition] rotated ~90 ~ positioned ^ ^ ^19.5 rotated ~180 ~ run function asset:mob/0410.heiloang/tick/event/sweep/prediction
         # 攻撃
@@ -103,10 +102,10 @@
 
 # テンペスト
     # ターゲット決定
-        execute if score @s BE.EventTimer matches 185 as @a[distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
+        execute if score @s BE.EventTimer matches 185 as @a[tag=!PlayerShouldInvulnerable,distance=..60,sort=random,limit=5] run tag @s add BE.AttackTarget
     # 攻撃範囲予告
         execute if score @s BE.EventTimer matches 185 at @a[tag=BE.AttackTarget,distance=..80] rotated ~ 0 run function asset:mob/0410.heiloang/tick/event/tempest/attack
-        execute if score @s BE.EventTimer matches 185..315 as @a[tag=BE.AttackTarget,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
+        execute if score @s BE.EventTimer matches 185..315 as @a[tag=BE.AttackTarget,tag=!PlayerShouldInvulnerable,distance=..80] at @s rotated ~ 0 positioned ~ ~0.1 ~ run function asset:mob/0410.heiloang/tick/event/tempest/particle_attack_area
         execute if score @s BE.EventTimer matches 185..315 run tag @e[type=item_display,tag=BE.Temp.MoveEnd] remove BE.Temp.MoveEnd
 
 # リヒトブリッツェン

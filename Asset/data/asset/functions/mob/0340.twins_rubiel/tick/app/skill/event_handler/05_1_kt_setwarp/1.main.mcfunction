@@ -20,7 +20,7 @@
     execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^-8 ^6 ^8 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.1"]}
     execute if score @s 9G.AnimationTimer matches 13 at @a[tag=!PlayerShouldInvulnerable,distance=..50,sort=nearest,limit=1] rotated ~ 0 run summon area_effect_cloud ^2 ^2 ^12 {CustomNameVisible:0b,Particle:"block air",Duration:82,Tags:["Object","9G.Temp.Target.Warp","9G.Temp.Target.Warp.2"]}
 # 移動
-    execute if score @s 9G.AnimationTimer matches 35 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.0] facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute if score @s 9G.AnimationTimer matches 35 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.0] facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9G.AnimationTimer matches 35 run kill @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.0]
 
 ## 2連斬り
@@ -45,7 +45,7 @@
     execute if score @s 9G.AnimationTimer matches 42..49 at @s positioned ^ ^ ^0.3 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 50..57 at @s positioned ^ ^ ^0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 61..65 at @s positioned ^ ^0.1 ^-0.2 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
-    execute if score @s 9G.AnimationTimer matches 65 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.1] facing entity @p feet run tp @s ~ ~-0.8 ~ ~ 0
+    execute if score @s 9G.AnimationTimer matches 65 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.1] facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~-0.8 ~ ~ 0
     execute if score @s 9G.AnimationTimer matches 65 run kill @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.1]
 # 攻撃
     execute if score @s 9G.AnimationTimer matches 47 positioned ^ ^1 ^1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/5.1.damage_slash
@@ -57,7 +57,7 @@
 # 移動
     execute if score @s 9G.AnimationTimer matches 68..76 at @s positioned ^ ^0.2 ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
     execute if score @s 9G.AnimationTimer matches 77..82 at @s positioned ^ ^-0.1 ^-0.1 run function asset:mob/0340.twins_rubiel/app/general/3.teleport
-    execute if score @s 9G.AnimationTimer matches 81 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.2] facing entity @p feet run tp @s ~ ~ ~ ~ 0
+    execute if score @s 9G.AnimationTimer matches 81 positioned as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.2] facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet run tp @s ~ ~ ~ ~ 0
     execute if score @s 9G.AnimationTimer matches 81 run kill @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp.2]
 # 演出
     execute if score @s 9G.AnimationTimer matches 68 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.5
@@ -97,7 +97,7 @@
 
 ## 共通
 # ワープポイント演出
-    execute as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp] at @s facing entity @p feet rotated ~ 0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.3.particle_warppoint
+    execute as @e[type=area_effect_cloud,tag=9G.Temp.Target.Warp] at @s facing entity @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] feet rotated ~ 0 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/6.3.particle_warppoint
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 140.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/05_1_kt_setwarp/2.end

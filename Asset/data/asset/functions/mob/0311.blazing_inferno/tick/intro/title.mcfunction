@@ -10,8 +10,8 @@
 #    title @a[distance=..64] times 5 30 5
 
 # サウンド
-    execute at @a[distance=..60] run playsound minecraft:item.trident.return hostile @p ~ ~ ~ 3 0.6
-    execute at @a[distance=..60] run playsound minecraft:entity.evoker.cast_spell hostile @p ~ ~ ~ 3 1.5
+    execute as @a[distance=..60] at @s run playsound minecraft:item.trident.return hostile @s ~ ~ ~ 3 0.6
+    execute as @a[distance=..60] at @s run playsound minecraft:entity.evoker.cast_spell hostile @s ~ ~ ~ 3 1.5
 
 # パーティクル
     particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.1 50 normal

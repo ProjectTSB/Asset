@@ -18,7 +18,7 @@
 
 # 拡散
     data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0d],[16d,16d]]
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] at @r[distance=..100] run function lib:spread_entity/
+    execute as @e[type=marker,tag=SpreadMarker,limit=1] at @r[gamemode=!spectator,distance=..100] run function lib:spread_entity/
 
 # 召喚IDを指定
     data modify storage api: Argument.ID set value 2028

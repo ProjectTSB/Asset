@@ -31,9 +31,9 @@
 
 # 戦闘中プレイヤーを引き寄せる
     tag @s add AU.Target
-    execute at @s as @a[distance=25..30] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^0.4
-    execute at @s as @a[distance=30..40] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^1.0
-    execute at @s as @a[distance=40..55] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^1.5
-    execute at @s as @a[distance=55..100] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes positioned as @e[type=slime,tag=AU.Target,distance=..100,limit=1] rotated ~ 0 run tp @s ^ ^ ^
-    execute at @s positioned ~-100 ~-100 ~-100 as @a[dx=199,dy=98,dz=199] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^2
+    execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=25..30] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^0.4
+    execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=30..40] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^1.0
+    execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=40..55] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^1.5
+    execute at @s as @a[tag=!PlayerShouldInvulnerable,distance=55..100] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes positioned as @e[type=slime,tag=AU.Target,distance=..100,limit=1] rotated ~ 0 run tp @s ^ ^ ^
+    execute at @s positioned ~-100 ~-100 ~-100 as @a[tag=!PlayerShouldInvulnerable,dx=199,dy=98,dz=199] at @s facing entity @e[type=slime,tag=AU.Target,distance=..100,limit=1] eyes run tp @s ^ ^ ^2
     tag @s remove AU.Target

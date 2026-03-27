@@ -18,9 +18,6 @@
         scoreboard players set @s BG.ActCount 0
     # 登場モーション再生
         tag @s add BG.Skill.Start
-    # 最も近くのプレイヤーにヘイトを向ける
-        tag @p[tag=!PlayerShouldInvulnerable,distance=..80] add BG.MainTarget
-        execute unless entity @p[tag=BG.MainTarget,distance=..80] run tag @p[distance=..80] add BG.MainTarget
 
 # 終盤まで耐性付与
     # data modify storage api: Argument set value {ID:150,Duration:2147483647,Stack:2}

@@ -18,13 +18,13 @@
     execute if entity @s[scores={General.Mob.Tick=20}] run item replace entity @s armor.head with stick{CustomModelData:20200}
 
 # 予備動作的な
-    execute if entity @s[scores={General.Mob.Tick=22}] at @a[distance=..20] run playsound minecraft:block.portal.travel hostile @a ~ ~ ~ 0.2 2 0
+    execute if entity @s[scores={General.Mob.Tick=22}] at @a[gamemode=!spectator,distance=..20] run playsound minecraft:block.portal.travel hostile @a ~ ~ ~ 0.2 2 0
     execute if entity @s[scores={General.Mob.Tick=..40}] run particle dust 1 1 1 1.5 ~ ~1 ~ 0.4 0.5 0.4 0.3 3 force @a[distance=..20]
 
 # 召喚された地点にランダムなプレイヤー一人と、水の檻範囲内にいたプレイヤーと共にワープ
-    execute if entity @s[scores={General.Mob.Tick=20}] positioned as @s rotated ~ 0 run tp @r[distance=..30] ^ ^-2 ^2
-    execute if entity @s[scores={General.Mob.Tick=20}] positioned as @s rotated ~ 0 run tp @a[distance=..9] ^ ^-2 ^2
-    execute if entity @s[scores={General.Mob.Tick=20}] as @a[distance=..9] at @s run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/player_pull
+    execute if entity @s[scores={General.Mob.Tick=20}] positioned as @s rotated ~ 0 run tp @r[gamemode=!spectator,distance=..30] ^ ^-2 ^2
+    execute if entity @s[scores={General.Mob.Tick=20}] positioned as @s rotated ~ 0 run tp @a[gamemode=!spectator,distance=..9] ^ ^-2 ^2
+    execute if entity @s[scores={General.Mob.Tick=20}] as @a[gamemode=!spectator,distance=..9] at @s run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/player_pull
 
 # アクティブ中に実行するコマンド
     execute if entity @s[scores={General.Mob.Tick=10..450}] run function asset:mob/0237.lunatic_mage/tick/skill/elemental_confine/in_activation

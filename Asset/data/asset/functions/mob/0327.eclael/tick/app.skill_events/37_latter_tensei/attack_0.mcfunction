@@ -26,7 +26,7 @@
     execute as @a[tag=93.Temp.AttackTarget] run function api:damage/
 # リセット
     function api:damage/reset
-    tag @a remove 93.Temp.AttackTarget
+    tag @a[tag=93.Temp.AttackTarget] remove 93.Temp.AttackTarget
 
 # 全プレイヤー位置に攻撃地点を設定
     execute at @a[tag=!PlayerShouldInvulnerable,distance=..40] run summon area_effect_cloud ^ ^ ^ {Duration:25,Tags:["93.Temp.AttackPosition"]}
