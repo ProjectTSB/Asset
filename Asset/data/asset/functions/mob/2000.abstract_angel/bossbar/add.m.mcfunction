@@ -4,14 +4,15 @@
 # @input args
 #   UUID: int
 #   Name: TextComponent
+#   Suffix: TextComponent
 # @within function asset:mob/2000.abstract_angel/init/
 
 #> Val
 # @private
-#declare score_holder $MaxHealth
+    #declare score_holder $MaxHealth
 
 # ボスバーを作成する
-    $bossbar add asset:angel$(UUID) $(Name)
+    $bossbar add asset:angel$(UUID) [$(Name),$(Suffix)]
 # 数値設定
     execute store result score $MaxHealth Temporary run function api:mob/get_max_health
     scoreboard players operation $MaxHealth Temporary *= $100 Const
