@@ -18,9 +18,8 @@
 # SingleDamageSession close
     function api:damage/single_damage_session/close
 
-# 自作パーティクル x5
+# 自作パーティクル x4
 # 各entityで実行すると負荷がやばいのでテキトーに分散させる
-    function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
