@@ -7,10 +7,6 @@
 # 自身にTagを付与しておく
     tag @s add Target
 
-# 演出
-    playsound block.amethyst_block.chime player @a ~ ~ ~ 1.5 1
-    playsound block.amethyst_block.chime player @a ~ ~ ~ 1.5 0.8
-
 # 事前処理
     data modify storage asset:temp Temp.To set from storage asset:context Attack.To
     data modify storage asset:temp Temp.Amounts set from storage asset:context Attack.Amounts

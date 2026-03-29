@@ -4,6 +4,15 @@
 #
 # @within function asset:artifact/1391.blue_refraction_prism/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare score_holder $CurrentTick
+
+# 前に発動してから何tick経っているか？
+    execute store result score $CurrentTick Temporary run time query gametime
+    scoreboard players operation $CurrentTick Temporary -= @s 12N.LatestUseTick
+    execute store result score @s 12N.LatestUseTick run time query gametime
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
 
@@ -19,9 +28,13 @@
     function api:damage/single_damage_session/close
 
 # 自作パーティクル
-# 各entityで実行すると負荷がやばいのでテキトーに分散させる
-    execute if predicate lib:random_pass_per/20 run function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
+# 前tickからどれくらい経っているかで個数を変える (単発系・戦闘開始時に見やすくする)
+    execute if score $CurrentTick Temporary matches 50.. run function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
+    execute if score $CurrentTick Temporary matches 50.. run function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
+    execute if score $CurrentTick Temporary matches 50.. run function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
+    execute unless score $CurrentTick Temporary matches 50.. if predicate lib:random_pass_per/20 run function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
 
 # リセット
     data remove storage asset:temp Temp
+    scoreboard players reset $CurrentTick Temporary
     tag @e[type=#lib:living_without_player,tag=Target,distance=..64] remove Target
