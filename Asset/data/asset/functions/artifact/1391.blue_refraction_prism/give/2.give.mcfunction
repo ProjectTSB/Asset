@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"青","color":"#7A7AFF"},{"text":"色","color":"#8484FF"},{"text":"の","color":"#8E8EFF"},{"text":"屈","color":"#9898FF"},{"text":"折","color":"#A2A2FF"},{"text":"","color":"#ACACFF"},{"text":"プ","color":"#B6B6FF"},{"text":"リ","color":"#C0C0FF"},{"text":"ズ","color":"#CACAFF"},{"text":"ム","color":"#D4D4FF"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象N体に与ダメージ量の10%分の水属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"常に最終ダメージ量が低下するが"}','{"text":"発動時、攻撃対象にダメージ量の25%分の水属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -49,7 +49,7 @@
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 100
+    data modify storage asset:artifact LocalCooldown set value 5
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
@@ -68,6 +68,7 @@
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/base",Amount:-0.20d,Operation:"multiply"}
 
 # 神器の入手用function
     function asset:artifact/common/give
