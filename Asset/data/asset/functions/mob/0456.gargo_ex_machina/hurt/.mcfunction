@@ -10,9 +10,6 @@
 # 効果音
     playsound entity.generic.hurt hostile @a ~ ~ ~ 1 1
 
-# 前半戦
-    execute unless entity @s[tag=CO.IsLatter] run function asset:mob/0456.gargo_ex_machina/tick/util/update_former_bossbar
-
 # フェーズ処理
     # 残HP割合取得
         function api:mob/get_health_percent
