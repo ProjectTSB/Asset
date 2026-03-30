@@ -20,5 +20,3 @@
     execute store result score $Health Temporary run data get storage api: Return.Health 1
     execute store result bossbar asset:co_gem_former value run scoreboard players operation $Health Temporary -= @s CO.HealthOffset
     scoreboard players reset $Health Temporary
-# リセット
-    data remove storage asset:temp Args
