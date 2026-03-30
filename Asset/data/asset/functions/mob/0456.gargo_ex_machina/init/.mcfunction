@@ -5,8 +5,8 @@
 # @within asset:mob/alias/456/init
 
 # AJロード
-    # data modify storage asset:datapack ActivationState set value [{Datapack:"gargo_ex_machina",Active:true}]
-    # function asset:datapack/set_activation_state
+    data modify storage asset:datapack ActivationState set value [{Datapack:"AJ_gargo_ex_machina",Active:true}]
+    function asset:datapack/set_activation_state
 
 # 継承元の処理実行
     function asset:mob/super.init
