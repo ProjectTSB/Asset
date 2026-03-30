@@ -19,7 +19,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"絡繰仕掛の石像"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":" > Exception in thread \\"main\\": java.lang.NullPointerException","color":"red"}','{"text":"       at item.artifact.getLore(atf/0001.book_of_all-seeing)","color":"red"}','{"text":"   Caused by: java.util.NoSuchElementException: Missing \'Lore\'","color":"red"}']
+    data modify storage asset:mob Lore set value ['{"text":"ここには何もないようです...","color":"white"}','{"text":"","color":"white"}','{"text":"(´・ω・`)","color":"white"}']
 # 体力 (double) (オプション)
 # 前後半戦で回復するので実態の半分の値を入れる
     data modify storage asset:mob Health set value 237000
@@ -36,9 +36,9 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
     # 石像の初期位置
-        data modify storage asset:mob Field.FirstPos.X set value 527.5
-        data modify storage asset:mob Field.FirstPos.Y set value 91.0
-        data modify storage asset:mob Field.FirstPos.Z set value 836.0
+        data modify storage asset:mob Field.FirstPos.X set value "-3961.5"
+        data modify storage asset:mob Field.FirstPos.Y set value "101.0"
+        data modify storage asset:mob Field.FirstPos.Z set value "200.0"
     # フェーズチェンジ
         data modify storage asset:mob Field.Damage.ChangeHead set value {Amount:500.0,Type:"Physical",Element:"None"}
     # 剣叩きつけ

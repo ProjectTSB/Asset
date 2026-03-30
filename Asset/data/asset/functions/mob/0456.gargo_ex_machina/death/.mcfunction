@@ -61,5 +61,8 @@
 # ---
     tellraw @a[distance=..80] [{"text":"-------------------------------------------------"}]
 
+# 石像移動
+    execute unless entity @s[tag=CO.IsRematch] run function debug:april/arena_copy_sheep
+
 # 再戦フラグ用marker設置
-    execute unless entity @e[type=marker,tag=CO.IsRematch,distance=..30] run summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}
+    execute unless entity @s[tag=CO.IsRematch] run summon marker ~ ~ ~ {Tags:["CO.IsRematch"]}

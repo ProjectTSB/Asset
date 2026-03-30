@@ -12,7 +12,7 @@
     function asset:mob/super.init
 
 # 再戦フラグチェック
-    execute if entity @e[type=marker,tag=CO.IsRematch,distance=..80] run tag @s add CO.IsRematch
+    execute if entity @e[type=marker,tag=CO.IsRematch,distance=..160] run tag @s add CO.IsRematch
 
 # 独自init処理
     # 登場演出再生
@@ -40,6 +40,9 @@
 
 # DPSタイマー計算開始
     function asset:mob/0456.gargo_ex_machina/init/set_dps_timer
+
+# 石像移動
+    execute unless entity @s[tag=CO.IsRematch] run function debug:april/arena_hide_statue
 
 # デバッグ
     # tag @s add CO.IsLatter

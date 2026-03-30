@@ -37,4 +37,4 @@
     kill @e[tag=CO.Object,distance=..160]
 
 # 石像移動
-    function asset:mob/0456.gargo_ex_machina/remove/clone_statue
+    execute unless entity @s[tag=CO.IsRematch] run function debug:april/arena_copy_statue
