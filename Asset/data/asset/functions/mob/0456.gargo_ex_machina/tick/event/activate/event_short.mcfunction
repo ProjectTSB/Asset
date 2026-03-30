@@ -11,7 +11,7 @@
     # アニメーション再生
         execute if score @s CO.EventTimer matches 1 as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run function animated_java:gargo_ex_machina/animations/move_to_field_short/tween {duration:1, to_frame: 1}
     # フィールドに移動
-        execute if score @s CO.EventTimer matches 1 at @e[type=marker,tag=CO.CenterPosition,distance=..80] positioned ^ ^ ^15 run tp @s ~ ~ ~ ~180 0 
+        execute if score @s CO.EventTimer matches 1 at @e[type=marker,tag=CO.CenterPosition,distance=..80] positioned ^ ^-0.49 ^15 run tp @s ~ ~ ~ ~180 0 
     # モデルを合わせる
         execute if score @s CO.EventTimer matches 1.. as @e[type=item_display,tag=CO.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
     # 演出
