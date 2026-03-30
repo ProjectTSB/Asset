@@ -14,7 +14,7 @@
     data modify storage api: Argument.AttackType set from storage asset:context this.Damage.Type
     data modify storage api: Argument.ElementType set from storage asset:context this.Damage.Element
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
-    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sに狙撃された","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sにヘッドショットされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier_manual
     execute if predicate api:global_vars/difficulty/max/2_hard run tag @a[tag=!PlayerShouldInvulnerable,distance=..6] add DXYZ
     execute if predicate api:global_vars/difficulty/min/3_blessless run tag @a[tag=!PlayerShouldInvulnerable,distance=..9] add DXYZ
