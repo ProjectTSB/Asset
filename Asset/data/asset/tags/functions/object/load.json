@@ -1,5 +1,17 @@
 {
     "values": [
+        "asset:object/2272.player_target_line/load",
+        "asset:object/2262.gem_panjan_drone/load",
+        "asset:object/2269.gem_rocket_punch/load",
+        "asset:object/2271.moving_circle_damage_area/load",
+        "asset:object/2270.yeeter_tnt/load",
+        "asset:object/2261.gem_yeeter_drone/load",
+        "asset:object/2260.gem_attack_drone/load",
+        "asset:object/2268.gem_upper_shot/load",
+        "asset:object/2267.gem_shot_attack/load",
+        "asset:object/2266.field_modify/load",
+        "asset:object/2265.field_modify_manager/load",
+        "asset:object/1061.azure_jelly/load",
         "asset:object/2251.wall_laser_clock/load",
         "asset:object/2212.eclael_upper_shot/load",
         "asset:object/2187.heiloang_ff_main/load",
