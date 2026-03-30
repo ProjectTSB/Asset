@@ -2,8 +2,12 @@
 #
 # ボス名変更
 #
+# @input args
+#   MobUUID: int
+#   Name: string
+#   Suffix: TextComponentString
 # @within asset:mob/0456.gargo_ex_machina/tick/util/change_bossbar_name.m
 
 # bossbar変更
-    $bossbar set asset:angel$(MobUUID) name {"text":"$(Name)"}
+    $bossbar set asset:angel$(MobUUID) name [{"text":"$(Name)"},$(Suffix)]
     $bossbar set asset:angel$(MobUUID) visible $(Visible)
