@@ -14,7 +14,7 @@
 # 前半戦ボスバー更新
     execute if entity @s[tag=CO.IsLatter] run return fail
 # 残機更新
-    bossbar set asset:co_gem_former name [{"text":"絡繰仕掛の石像"},{"translate":"【%s×%s】","with":[{"text":"♥"},{"score":{"name":"@s","objective":"1JK.RemainingPlayerLife"}}]}]
+    bossbar set asset:co_gem_former name [{"text":"絡繰仕掛の石像"},{"translate":"【%s×%s】","with":[{"text":"\uE300","font":"icon"},{"score":{"name":"@s","objective":"1JK.RemainingPlayerLife"}}]}]
 # HP最大値調整
     function api:mob/get_health
     execute store result score $Health Temporary run data get storage api: Return.Health 1
