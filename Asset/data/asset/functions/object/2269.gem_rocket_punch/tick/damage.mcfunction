@@ -16,6 +16,7 @@
     data modify storage api: Argument.AttackType set from storage asset:context this.Damage.Type
     data modify storage api: Argument.ElementType set from storage asset:context this.Damage.Element
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
     execute as @a[tag=DXYZ] run function asset:object/call.m {method:"check_duplicate"}
     execute as @a[tag=DXYZ] if predicate asset:object/0002.duplicate_hit_protection_mixin/is_first_hit run function api:damage/
     function api:damage/reset
