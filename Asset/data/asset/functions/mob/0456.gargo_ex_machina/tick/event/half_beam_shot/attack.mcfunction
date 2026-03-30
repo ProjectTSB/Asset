@@ -22,6 +22,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.HalfBeam.Amount
     data modify storage api: Argument.AttackType set from storage asset:context this.Damage.HalfBeam.Type
     data modify storage api: Argument.ElementType set from storage asset:context this.Damage.HalfBeam.Element
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sのビームの衝撃波に消し飛ばされた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier
     execute as @a[tag=DXYZ] run function api:damage/
     function api:damage/reset

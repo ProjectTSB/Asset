@@ -13,6 +13,7 @@
         data modify storage api: Argument.Damage set from storage asset:context this.Damage.Shot.Amount
         data modify storage api: Argument.AttackType set from storage asset:context this.Damage.Shot.Type
         data modify storage api: Argument.ElementType set from storage asset:context this.Damage.Shot.Element
+        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの射撃で消し炭になった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
         function api:damage/modifier
         execute as @a[tag=DXYZ] run function api:damage/
         function api:damage/reset

@@ -14,6 +14,7 @@
     data modify storage api: Argument.AttackType set from storage asset:context this.FlameDamage.Type
     data modify storage api: Argument.ElementType set from storage asset:context this.FlameDamage.Element
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは%2$sの兵士の炎で灰になった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
     function api:damage/reset
