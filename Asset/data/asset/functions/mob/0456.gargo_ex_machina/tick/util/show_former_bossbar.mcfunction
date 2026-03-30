@@ -7,9 +7,10 @@
 #> Val
 # @private
     #declare score_holder $CalcHealth
+    #declare objective 1JK.RemainingPlayerLife
 
 # 前半戦Bossbar表示
-    bossbar add asset:co_gem_former {"text":"絡繰仕掛の石像"}
+    bossbar add asset:co_gem_former [{"text":"絡繰仕掛の石像"},{"translate":"【%s×%s】","with":[{"text":"\uE300","font":"icon"},{"score":{"name":"@s","objective":"1JK.RemainingPlayerLife"}}]}]
     bossbar set asset:co_gem_former players @a[distance=..80]
     bossbar set asset:co_gem_former color pink
     bossbar set asset:co_gem_former style notched_10
