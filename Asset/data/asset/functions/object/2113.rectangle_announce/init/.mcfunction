@@ -9,3 +9,6 @@
 
 # ToForward:trueなら、this.Scale[1]の半分をthis.translationZへ
     execute if data storage asset:context this{ToForward:true} store result storage asset:context this.TranslationZ float 0.05 run data get storage asset:context this.Scale[1] 10
+
+# ViewRange設定
+    execute if data storage asset:context this.ViewRange run data modify entity @s view_range set from storage asset:context this.ViewRange
