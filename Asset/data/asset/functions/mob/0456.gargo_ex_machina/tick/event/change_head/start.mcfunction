@@ -24,3 +24,7 @@
     scoreboard players set @s CO.EventTimer 0
     scoreboard players set @s CO.Counter 0
     tag @s add CO.IsLatter
+
+# bossbar消去
+    bossbar remove asset:co_field_modify
+    bossbar remove asset:co_scape_sheep
