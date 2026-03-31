@@ -22,10 +22,10 @@
         execute if score @s AK.EventTimer matches 70 rotated ~ 0 run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet_duo/attack_1
 
 # 演出
-    execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
     execute if score @s AK.EventTimer matches 19 at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 2 1.1
     execute if score @s AK.EventTimer matches 19 at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 2 1.3
-    execute if score @s AK.EventTimer matches 37 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 37 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
 
 # 終了
     execute if score @s AK.EventTimer matches 127.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet_duo/end

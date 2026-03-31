@@ -16,16 +16,8 @@
     execute unless score @s General.Object.Tick matches ..30 if data storage asset:context this{Interval:0} run function asset:object/2221.aurora_scaffold/tick/check_owner
     execute unless score @s General.Object.Tick matches ..30 if data storage asset:context this{Interval:0} run data modify storage asset:context this.Interval set value 40
 
-# 3x3のそれぞれが水色のステンドグラスではないかをチェック
-    execute unless block ~ ~ ~ cyan_stained_glass run data modify storage asset:context this.CheckBreak.1 set value true
-    execute unless block ~1 ~ ~ cyan_stained_glass run data modify storage asset:context this.CheckBreak.2 set value true
-    execute unless block ~1 ~ ~1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.3 set value true
-    execute unless block ~1 ~ ~-1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.4 set value true
-    execute unless block ~-1 ~ ~ cyan_stained_glass run data modify storage asset:context this.CheckBreak.5 set value true
-    execute unless block ~-1 ~ ~1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.6 set value true
-    execute unless block ~-1 ~ ~-1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.7 set value true
-    execute unless block ~ ~ ~1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.8 set value true
-    execute unless block ~ ~ ~-1 cyan_stained_glass run data modify storage asset:context this.CheckBreak.9 set value true
+# 水色ステンドグラスが残っているかチェック
+    execute unless score @s General.Object.Tick matches ..30 run function asset:object/2221.aurora_scaffold/tick/check_block
 
 # 壊れる演出
     execute if score @s General.Object.Tick matches 30 run function asset:object/2221.aurora_scaffold/tick/break/set_display
