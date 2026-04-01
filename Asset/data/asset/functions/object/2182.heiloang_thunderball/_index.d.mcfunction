@@ -10,3 +10,4 @@
     #declare tag 2182.Hit
     #declare tag 2180.Pillar
     #declare tag 2180.Pillar.Thunder
+    #declare tag 2181.Line

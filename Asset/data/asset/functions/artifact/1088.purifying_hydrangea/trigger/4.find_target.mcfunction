@@ -7,6 +7,7 @@
 #> Private
 # @private
     #declare tag SearchTarget
+    #declare tag TempTarget
     #declare score_holder $HighestWaterAttack
 
 # 検索対象：BuffTargetではなく水攻撃補正が最も高いプレイヤー
@@ -15,16 +16,22 @@
     tag @a[tag=!BuffTarget,distance=..20] add SearchTarget
 
 # 各プレイヤーの水攻撃補正をスコアへ代入
-    execute as @a[tag=SearchTarget] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/5.get_water_attack_modifier
+    execute as @a[tag=SearchTarget,distance=..20] store result score @s Temporary run function asset:artifact/1088.purifying_hydrangea/trigger/5.get_water_attack_modifier
+
+# $HighestWaterAttackの初期化
+    scoreboard players set $HighestWaterAttack Temporary -2147483648
 
 # 全員の水攻撃補正と比較する
-    execute as @a[tag=SearchTarget] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
+    execute as @a[tag=SearchTarget,distance=..20] run scoreboard players operation $HighestWaterAttack Temporary > @s Temporary
 
-# 特定したプレイヤーにTagを付与
-# SearchTargetとBuffTargetを両立するプレイヤーがいるのは、検索対象のプレイヤーを特定済みの場合のみ
-    execute as @a[tag=SearchTarget] unless entity @p[tag=SearchTarget,tag=BuffTarget] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add BuffTarget
+# 最大値のプレイヤーに仮ターゲットtagを付与
+    execute as @a[tag=SearchTarget,distance=..20] if score @s Temporary = $HighestWaterAttack Temporary run tag @s add TempTarget
+
+# 仮ターゲットの中で近いプレイヤーにターゲットtagを付与
+    tag @p[tag=TempTarget,distance=..20] add BuffTarget
 
 # リセット
-    tag @a[tag=SearchTarget] remove SearchTarget
-    scoreboard players reset @a[tag=SearchTarget] Temporary
+    tag @a[tag=SearchTarget,distance=..20] remove SearchTarget
+    tag @a[tag=TempTarget,distance=..20] remove SearchTarget
+    scoreboard players reset @a[tag=SearchTarget,distance=..20] Temporary
     scoreboard players reset $HighestWaterAttack Temporary

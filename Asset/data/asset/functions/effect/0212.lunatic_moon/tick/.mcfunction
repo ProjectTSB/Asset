@@ -5,4 +5,4 @@
 # @within function asset:effect/0212.lunatic_moon/_/tick
 
 # 演出
-    particle end_rod ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @a
+    execute if predicate lib:random_pass_per/20 run particle end_rod ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @a

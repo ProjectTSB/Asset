@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"謎の赤い秘石","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を3回復する。","color":"dark_aqua"}','{"text":"赤い卵型の宝石だ。","color":"gray"}','{"text":"中に人型の何かが入っているようだ。","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を6回復する。1個増える毎に回復量が3増加する。","color":"white"}','{"text":"赤い卵型の宝石だ。","color":"gray"}','{"text":"中に人型の何かが入っているようだ。","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

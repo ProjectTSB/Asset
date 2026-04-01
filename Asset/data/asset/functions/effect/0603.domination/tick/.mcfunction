@@ -10,7 +10,7 @@
     #declare score_holder $Interval
 
 # 演出
-    particle minecraft:electric_spark ~ ~1 ~ 0.4 0.4 0.4 0 2
+    execute if predicate lib:random_pass_per/30 run particle minecraft:electric_spark ~ ~1 ~ 0.4 0.4 0.4 0 1
 
 # ターゲットにTagを付与
     execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..30] if score @s 603.TargetUUID = @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] MobUUID run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..0.01,sort=nearest,limit=1] add FacingTarget

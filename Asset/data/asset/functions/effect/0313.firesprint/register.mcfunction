@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 313
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"火走り","color":"#FFFFFF"}'
+    data modify storage asset:effect Name set value '{"text":"火走り","color":"#DB1212"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"火属性与ダメージと移動速度が上昇するが"}','{"text":"水属性と雷属性での与ダメージが無効になる"}']
+    data modify storage asset:effect Description set value ['{"text":"火属性与ダメージと移動速度が上昇し、火属性被ダメージが低下するが"}','{"text":"水・雷属性与ダメージが極端に低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 600
 # スタック (int) (default = API || 1)
