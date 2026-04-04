@@ -15,7 +15,7 @@
 
 # ダメージ
 # 自身の補正は適用されない
-    execute store result storage api: Argument.Damage float 0.0025 run data get storage asset:temp Temp.Damage 100
+    execute store result storage api: Argument.Damage float 0.001 run data get storage asset:temp Temp.Damage 100
     data modify storage api: Argument.AttackType set from storage asset:context Attack.AttackType
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.BypassModifier set value true
