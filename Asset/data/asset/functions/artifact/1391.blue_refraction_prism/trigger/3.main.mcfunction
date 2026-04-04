@@ -22,6 +22,7 @@
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
+    function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
 
 # リセット
     data remove storage asset:temp Temp
