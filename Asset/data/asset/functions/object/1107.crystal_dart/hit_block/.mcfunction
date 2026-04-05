@@ -15,9 +15,9 @@
     function lib:reflection_bullet/
 
 # 敵がいるならそっちを向く
-    execute at @s positioned ^ ^ ^20 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20] run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] add Target
-    execute at @s if entity @e[type=#lib:living,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40] run tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40,sort=nearest,limit=1] eyes
-    tag @e[type=#lib:living,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40] remove Target
+    execute at @s positioned ^ ^ ^20 if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..20] run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] add Target
+    execute at @s if entity @e[type=#lib:living_without_player,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40] run tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40,sort=nearest,limit=1] eyes
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=Target,tag=!Uninterferable,distance=..40] remove Target
 # ヒット判定復活
     tag @s remove 1107.CannotHit
 # 反射回数が6なら死

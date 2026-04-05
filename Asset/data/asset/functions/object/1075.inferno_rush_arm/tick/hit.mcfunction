@@ -13,7 +13,7 @@
     data modify storage lib: args.dx set value 1.6
     data modify storage lib: args.dy set value 1.6
     data modify storage lib: args.dz set value 2.4
-    data modify storage lib: args.selector set value "@e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5]"
+    data modify storage lib: args.selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..5]"
     function lib:rotatable_dxyz/m with storage lib: args
 
 # DXYZが付与された敵がいなければreturn

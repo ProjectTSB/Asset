@@ -23,9 +23,9 @@
     scoreboard players reset $IntervalTime Temporary
 
 # 追尾
-    execute positioned ^ ^ ^5 run tag @e[type=#lib:living,type=!player,tag=Enemy,distance=..5,sort=nearest,limit=1] add 1051.Target
-    execute facing entity @e[type=#lib:living,type=!player,tag=1051.Target,distance=..10,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1200 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
-    tag @e[type=#lib:living,type=!player,tag=1051.Target,distance=..10,limit=1] remove 1051.Target
+    execute positioned ^ ^ ^5 run tag @e[type=#lib:living_without_player,tag=Enemy,distance=..5,sort=nearest,limit=1] add 1051.Target
+    execute facing entity @e[type=#lib:living_without_player,tag=1051.Target,distance=..10,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1200 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    tag @e[type=#lib:living_without_player,tag=1051.Target,distance=..10,limit=1] remove 1051.Target
 
 # 演出
     playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 0.6 1.4
