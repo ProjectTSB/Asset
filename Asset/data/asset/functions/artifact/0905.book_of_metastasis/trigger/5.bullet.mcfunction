@@ -9,7 +9,7 @@
     #declare tag P5.Landing
 
 # 着弾検知
-    execute unless entity @s[tag=P5.Landing] unless block ^ ^ ^0.5 #lib:no_collision run tag @s add P5.Landing
+    execute unless entity @s[tag=P5.Landing] unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add P5.Landing
 
 # 演出
     particle minecraft:scrape ~ ~ ~ 0.1 0.1 0.1 0 1 force

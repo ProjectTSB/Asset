@@ -5,7 +5,7 @@
 # @within function asset:mob/0204.infernal_watcher/tick/move/
 
 # 遮蔽がない場合は最寄りのプレイヤーを追いかける
-    $execute facing entity @a[distance=..64,sort=nearest,limit=1] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-$(Range) facing entity @s eyes positioned as @s anchored eyes if block ^ ^ ^$(Speed) #lib:no_collision anchored feet run return run tp @s ^ ^ ^$(Speed) ~ ~
+    $execute facing entity @a[distance=..64,sort=nearest,limit=1] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-$(Range) facing entity @s eyes positioned as @s anchored eyes if block ^ ^ ^$(Speed) #lib:no_collision/ anchored feet run return run tp @s ^ ^ ^$(Speed) ~ ~
 
 # 遮蔽がある場合は跳ね返る
 

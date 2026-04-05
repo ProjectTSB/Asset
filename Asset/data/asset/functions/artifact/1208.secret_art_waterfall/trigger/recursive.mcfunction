@@ -7,7 +7,7 @@
 #   asset:artifact/1208.secret_art_waterfall/trigger/recursive
 
 # 0.25ブロック先がブロック
-    execute if entity @s[tag=!Check] unless block ^ ^ ^0.25 #lib:no_collision run function asset:artifact/1208.secret_art_waterfall/trigger/summon_object
+    execute if entity @s[tag=!Check] unless block ^ ^ ^0.25 #lib:no_collision/ run function asset:artifact/1208.secret_art_waterfall/trigger/summon_object
 
 # 一定以上再帰
     execute if entity @s[tag=!Check] if score $Recursive Temporary matches 16.. run function asset:artifact/1208.secret_art_waterfall/trigger/summon_object

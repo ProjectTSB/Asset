@@ -8,7 +8,7 @@
     execute if entity @s[scores={97.MotionCT=1..}] run return fail
 
 # 浮いてたら失敗
-    execute if block ~ ~-0.1 ~ #lib:no_collision_without_fluid run return fail
+    execute if block ~ ~-0.1 ~ #lib:no_collision/without_fluid run return fail
 
 # 周囲にプレイヤーがいない
     execute unless entity @p[gamemode=!spectator,distance=..5] run return fail
