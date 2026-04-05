@@ -15,8 +15,8 @@
 # 頭を変える
     #execute at @s run item replace entity @s armor.head with stick{CustomModelData:20394}
 
+# 無敵化終了
+    function asset:mob/0059.jack_o_lantern/tick/skill/common/invulnerable/end
+
 # NoAI解除
     data modify entity @s NoAI set value 0b
-
-# 耐性解除
-    effect clear @s resistance
