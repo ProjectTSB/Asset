@@ -12,3 +12,7 @@
 
 # パーティクル
     execute at @s anchored eyes positioned ^ ^ ^ run particle poof ~ ~-0.3 ~ 0 0 0 0.1 10
+
+# アイ抽象用 移動速度を2/3倍する
+# IsBabyにより移動速度が1.5倍になっているのを相殺する
+    execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base double 0.006667 run attribute @s generic.movement_speed base get 100

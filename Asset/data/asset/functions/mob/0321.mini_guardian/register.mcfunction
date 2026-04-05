@@ -1,6 +1,12 @@
 #> asset:mob/0321.mini_guardian/register
 # @within asset:mob/alias/321/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:mob ExtendsSafe set value true
 # ID (int)
@@ -40,7 +46,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.1
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -59,3 +65,4 @@
 
 # フィールド
     data modify storage asset:mob Field.Damage set value 5.5f
+    data modify storage asset:mob Field.Rotate set value 6000

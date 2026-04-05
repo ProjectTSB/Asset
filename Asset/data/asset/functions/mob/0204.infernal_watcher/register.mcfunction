@@ -1,6 +1,12 @@
 #> asset:mob/0204.infernal_watcher/register
 # @within asset:mob/alias/204/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 204
 # Type (string) Wikiを参照
@@ -38,7 +44,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     data modify storage asset:mob SpecialDefense set value 0
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.2
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -56,4 +62,4 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド (オプション)
     data modify storage asset:mob Field.Damage set value {_:28f,InFrenzy:42f}
-    data modify storage asset:mob Field.Move set value {_:{Speed:0.2d,Range:800},InFrenzy:{Speed:0.5d,Range:1200}}
+    data modify storage asset:mob Field.Move set value {_:{Speed:0.2d,Rotate:800},InFrenzy:{Speed:0.5d,Rotate:1200}}
