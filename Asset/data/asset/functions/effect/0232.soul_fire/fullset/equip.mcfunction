@@ -14,12 +14,6 @@
         data modify storage api: Argument.Operation set value "multiply_base"
         function api:modifier/mp_regen/add
 
-    # 最大体力
-        # data modify storage api: Argument.UUID set value [I;1,3,232,0]
-        # data modify storage api: Argument.Amount set value -0.1
-        # data modify storage api: Argument.Operation set value "multiply_base"
-        # function api:modifier/max_health/add
-
 # 演出
     # 1つ目の円
         execute rotated ~0 0 positioned ^ ^0.2 ^0.8 facing entity @s feet rotated ~ ~-5 run particle soul ~ ~ ~ ^ ^ ^300000000 0.0000000001 0 normal @a

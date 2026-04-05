@@ -57,7 +57,7 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.max_health",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.075d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"heal",Amount:0.08d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
