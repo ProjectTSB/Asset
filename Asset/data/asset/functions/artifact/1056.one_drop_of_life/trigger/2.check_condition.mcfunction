@@ -14,6 +14,10 @@
 # @private
     #declare score_holder $HealthPer
 
+# そもそも死んでるなら発動しない
+    execute if entity @s[tag=Death] run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # 最大体力と現在体力の100倍を取得
     function api:entity/player/get_health_per
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
