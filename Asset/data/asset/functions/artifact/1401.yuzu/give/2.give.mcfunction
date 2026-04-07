@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ゆず","color":"#ffd712"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"20秒間、最大MPが20増加する"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"%1$s秒間、最大MPが%2$s増加する","with":[{"text":"20"},{"text":"20"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
