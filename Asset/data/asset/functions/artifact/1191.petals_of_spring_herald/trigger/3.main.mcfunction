@@ -9,6 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 調整班へ 以下の2箇所に超過回復量のN% を設定する箇所があります
+# asset:artifact/1191.petals_of_spring_herald/trigger/give_barrier/effect
+# asset:artifact/1191.petals_of_spring_herald/trigger/2.check_condition/compare
+
 # 演出
     playsound entity.allay.item_taken player @a[distance=..12] ~ ~ ~ 1.2 1.5
     playsound ogg:ambient.nether.crimson_forest.shine2 player @a[distance=..12] ~ ~ ~ 0.6 1.8
