@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"春風","color":"#FFCCFC"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"一定量バリアを得る","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"最大体力を超えた回復量に比例したバリアを得る","color":"white"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
