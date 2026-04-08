@@ -13,7 +13,7 @@
     execute store result score $CurrentBarrier Temporary run data get storage api: Return.Absorption.Amount 100
 
 # 超過回復量のN%を取得 (e2)
-    execute store result score $OverHeal Temporary run data get storage asset:temp Target.Over[-1] 100
+    execute store result score $OverHeal Temporary run data get storage asset:temp Target.Amounts[-1] 100
 
 # バリア量と超過回復量のN%を比較し、バリア量の方が多いならreturn
     execute if score $CurrentBarrier Temporary >= $OverHeal Temporary run return fail

@@ -13,7 +13,7 @@
 
 # 最後尾の要素を削除
     data remove storage asset:temp Target.To[-1]
-    data remove storage asset:temp Target.Over[-1]
+    data remove storage asset:temp Target.Amounts[-1]
 
 # 再帰
     execute if data storage asset:temp Target.To[0] run function asset:artifact/1191.petals_of_spring_herald/trigger/give_barrier/

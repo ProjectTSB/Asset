@@ -18,7 +18,7 @@
 
 # 誰に超過回復量を与えたかチェックする
     execute if entity @s[tag=CanUsed] run data modify storage asset:temp Heal.To set from storage asset:context Heal.To
-    execute if entity @s[tag=CanUsed] run data modify storage asset:temp Heal.Over set from storage asset:context Heal.Amounts.Over
+    execute if entity @s[tag=CanUsed] run data modify storage asset:temp Heal.Amounts set from storage asset:context Heal.Amounts.Over
     execute if entity @s[tag=CanUsed] run function asset:artifact/1191.petals_of_spring_herald/trigger/2.check_condition/check_over_heal
 
 # Target.ToがないならCanUsed
