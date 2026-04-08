@@ -22,6 +22,8 @@
     #declare tag 8D.SkillSword2
     #declare tag 8D.SkillSword3
     #
+    #declare tag Landing
+    #declare tag LandingTarget
     #declare tag TeleportCheck
     #
     #declare function animated_java:karmic/summon

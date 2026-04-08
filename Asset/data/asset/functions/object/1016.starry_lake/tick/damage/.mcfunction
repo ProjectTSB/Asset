@@ -21,5 +21,5 @@
     function api:damage/reset
 
 # リセット
-    tag @e[type=#lib:living,tag=1016.Target,distance=..7.5] remove Target
+    tag @e[type=#lib:living,tag=1016.Target,distance=..7.5] remove 1016.Target
     scoreboard players reset $UserID Temporary

@@ -12,3 +12,4 @@
     #declare tag 2156.Prediction
     #declare tag 2156.Prediction.Turn
     #declare tag 2156.AttackRotation
+    #declare tag 2155.Object Object2155を召喚し、それを参照して諸々するため必要

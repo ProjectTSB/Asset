@@ -71,11 +71,11 @@
     execute if score @s 93.AnimationTimer matches 91 run function asset:mob/0327.eclael/tick/app.skill_events/02_former_slash/4.3.attack_slash_2
 # 演出
     execute if score @s 93.AnimationTimer matches 93 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 0.7
-    execute if score @s 93.AnimationTimer matches 139 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.4
-    execute if score @s 93.AnimationTimer matches 139 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.2
+    execute if score @s 93.AnimationTimer matches 139 run playsound disabled_sounds:item.armor.equip_gold hostile @a ~ ~ ~ 1 1.4
+    execute if score @s 93.AnimationTimer matches 139 run playsound disabled_sounds:item.armor.equip_gold hostile @a ~ ~ ~ 1 1.2
     execute if score @s 93.AnimationTimer matches 139 run particle firework ^-1.5 ^0.3 ^-0.3 0 0 0 0.1 3
-    execute if score @s 93.AnimationTimer matches 157 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
-    execute if score @s 93.AnimationTimer matches 162 run playsound item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
+    execute if score @s 93.AnimationTimer matches 157 run playsound disabled_sounds:item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
+    execute if score @s 93.AnimationTimer matches 162 run playsound disabled_sounds:item.armor.equip_gold hostile @a ~ ~ ~ 1 1.8
     execute if score @s 93.AnimationTimer matches 170 run playsound item.axe.scrape hostile @a ~ ~ ~ 1 2
 
 # 終了

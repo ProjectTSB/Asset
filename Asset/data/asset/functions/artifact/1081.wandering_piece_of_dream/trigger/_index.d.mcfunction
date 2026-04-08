@@ -5,4 +5,5 @@
 # @within function asset:artifact/1081.wandering_piece_of_dream/trigger/**
     #declare tag U1.EffectTarget
     #declare tag SearchTarget
+    #declare tag TempTarget
     #declare score_holder $LowestHealth
