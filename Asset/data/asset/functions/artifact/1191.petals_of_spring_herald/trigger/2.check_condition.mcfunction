@@ -11,10 +11,10 @@
 # 他にアイテム等確認する場合はここに書く
 
 # IsHoT:trueならCanUsedを削除
-    execute if entity @s[tag=CanUsed] if data storage asset:context ReceiveHeal{IsHoT:true} run tag @s remove CanUsed
+    execute if entity @s[tag=CanUsed] if data storage asset:context Heal{IsHoT:true} run tag @s remove CanUsed
 
 # 超過回復量が0ならCanUsedを削除
-    execute if entity @s[tag=CanUsed] if data storage asset:context ReceiveHeal.Amount{Over:0} run tag @s remove CanUsed
+    execute if entity @s[tag=CanUsed] if data storage asset:context Heal.Amount{Over:0} run tag @s remove CanUsed
 
 # 超過回復量を与えたかチェックする
     execute if entity @s[tag=CanUsed] run data modify storage asset:temp Heal.To set from storage asset:context Heal.To
