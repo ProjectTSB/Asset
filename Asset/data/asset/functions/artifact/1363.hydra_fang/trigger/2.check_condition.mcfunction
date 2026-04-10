@@ -10,8 +10,12 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
-# IsDoT:trueでないならCanUsedを削除
-    execute if entity @s[tag=CanUsed] unless data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+# CanUsedでないならreturn
+    execute if entity @s[tag=!CanUsed] run return fail
 
-# CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1363.hydra_fang/trigger/3.main
+# IsDoT:trueでないならreturn
+    execute unless data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# 3.main.mcfunctionを実行する
+    function asset:artifact/1363.hydra_fang/trigger/3.main
