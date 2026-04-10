@@ -17,5 +17,9 @@
     execute unless data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
+# Victimが64ブロック以内にいなければreturn
+    execute unless entity @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64] run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # 3.main.mcfunctionを実行する
     function asset:artifact/1363.hydra_fang/trigger/3.main

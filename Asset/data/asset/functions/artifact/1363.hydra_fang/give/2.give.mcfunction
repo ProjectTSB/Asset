@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヒドラの毒牙","color":"#0e8012"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を最大体力の2%分回復する","color":"white"}','{"text":"猛毒が滴る魔獣の牙","color":"gray"}','{"text":"毒の雫が命を奪い、主を潤す","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"与えたダメージ量の150%分のダメージを与える","color":"white"}','{"text":"このダメージは自身のステータス補正の影響を受けない","color":"white"}','{"text":"猛毒が滴る魔獣の牙","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"継続ダメージで攻撃時に20%の確率で発動","color":"white"}'
+    data modify storage asset:artifact Condition set value '{"text":"継続ダメージで攻撃","color":"white"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

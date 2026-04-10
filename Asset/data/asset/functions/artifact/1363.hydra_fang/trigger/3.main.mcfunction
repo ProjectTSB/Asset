@@ -9,13 +9,16 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 演出
-    particle dust 0 0.5 0 0.75 ~ ~1.2 ~ 0.4 0.4 0.4 0 20
-    execute if predicate lib:random_pass_per/40 run playsound entity.spider.step player @a ~ ~ ~ 0.4 2
+# SingleDamageSession Open
+    function api:damage/single_damage_session/open
 
-# 回復
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.02 run data get storage api: Return.MaxHealth 1
-    function api:heal/modifier
-    function api:heal/
-    function api:heal/reset
+# 再帰でそれぞれに与えたダメージのN%分のダメージを与える
+    data modify storage asset:temp Temp.To set from storage asset:context Attack.To
+    data modify storage asset:temp Temp.Amounts set from storage asset:context Attack.Amounts
+    function asset:artifact/1363.hydra_fang/trigger/recursive
+
+# SingleDamageSession Close
+    function api:damage/single_damage_session/close
+
+# リセット
+    data remove storage asset:temp Temp
