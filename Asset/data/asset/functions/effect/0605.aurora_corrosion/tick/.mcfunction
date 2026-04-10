@@ -11,11 +11,11 @@
 # vfx
     execute if predicate lib:random_pass_per/10 run particle dust_color_transition 0.000 1.000 0.886 1 0 0.235 1 ~ ~1.2 ~ 0.4 0.5 0.4 1 1 normal
 
+# 効果時間の処理
+    scoreboard players add @s GT.Tick 1
+
 # 定期的にMPを割合で減少させる
     scoreboard players operation $Temp Temporary = @s GT.Tick
     scoreboard players operation $Temp Temporary %= $40 Const
     execute if score $Temp Temporary matches 0 run function asset:effect/0605.aurora_corrosion/tick/mp_reduce
     scoreboard players reset $Temp Temporary
-
-# 効果時間の処理
-    scoreboard players add @s GT.Tick 1
