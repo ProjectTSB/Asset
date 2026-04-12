@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヒドラの毒牙","color":"#0e8012"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"与えたダメージ量の100%分のダメージを与える(最大1000)","color":"white"}','{"text":"このダメージは自身のステータス補正の影響を受けない","color":"white"}','{"text":"猛毒が滴る魔獣の牙","color":"gray"}','{"text":"一度傷がついたが最後、死に至るまで獲物を逃がさない","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象に与ダメージと同じ属性の","color":"white"}','{"text":"与ダメージ量の100%分の追撃を与える(最大1000)","color":"white"}','{"text":"このダメージは自身のステータス補正の影響を受けない","color":"white"}','{"text":"猛毒が滴る魔獣の牙","color":"gray"}','{"text":"一度傷をつければ最後、死に至るまで獲物を逃がさない","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,9 +39,9 @@
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value "never"
+    # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 5
 # MP必要量 (int) (オプション)
