@@ -5,6 +5,7 @@
 # @within function asset:artifact/0566.great_sage_helmet/heal/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
+    data modify storage asset:artifact DisabledCheckFlag set value {BelieveMessage:true}
     function asset:artifact/common/check_condition/head
 # 他にアイテム等確認する場合はここに書く
 

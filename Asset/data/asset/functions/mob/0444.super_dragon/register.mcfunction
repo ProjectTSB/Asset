@@ -19,7 +19,7 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 0.01
+    data modify storage asset:mob Health set value 1
 # 攻撃力 (double) (オプション)
     # data modify storage asset:mob AttackDamage set value
 # 防御力 (double) (オプション) // 被ダメージがある程度大きい場合1ptにつき0.8%カット、小さい場合1ptにつき約4%カット 20pt以上は頭打ち

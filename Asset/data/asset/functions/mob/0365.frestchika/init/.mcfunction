@@ -12,7 +12,7 @@
     summon marker ~ ~ ~ {Tags:["A5.Marker.SpawnPoint","A5.Marker"]}
 
 # 召喚地点のPos[1]を記録しておく
-    execute store result storage asset:context this.Pos.Y double 1 run data get entity @e[type=marker,tag=RW.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
+    execute store result storage asset:context this.Pos.Y double 1 run data get entity @e[type=marker,tag=A5.Marker.SpawnPoint,sort=nearest,limit=1] Pos[1]
 
 # ちょっと上に移動
     tp @s ~ ~0.5 ~
