@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"鬼火","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"前方の敵1体にダメージを与え、鬼火を5秒間付与する","color":"white"}','{"translate":"鬼火のダメージは自身の最大体力の%s分アップする","with":[{"text":"20%","color":"white"}]}']
+    data modify storage asset:artifact Lore set value ['{"text":"前方の敵1体にダメージを与え、鬼火を5秒間付与する","color":"white"}','{"translate":"使用時の体力またはMPが%1$s未満の時、MP回復量が%2$s倍になる","with":[{"text":"50%","color":"white"},{"text":"1.5","color":"white"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
