@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"狐ノ蝋燭","color":"#D9972F"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲のランダムな敵3体にダメージを与え、狐火を9秒間付与する","color":"white"}','{"text":"(狐火が付与されていない敵を優先)","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲のランダムな敵3体にダメージを与え、狐火を9秒間付与する","color":"white"}','{"text":"(狐火が付与されていない敵を優先)","color":"white"}','{"text":"妖しい炎の灯る3本の蝋燭","color":"gray"}','{"text":"憑かれた命を糧に静かに揺らめく","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
