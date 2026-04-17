@@ -22,5 +22,5 @@
     function asset:artifact/1252.fox_candle/trigger/damage_and_effect
 
 # リセット
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..16] remove YS.Target
+    tag @e[type=#lib:living_without_player,tag=YS.Target,tag=!Uninterferable,distance=..16] remove YS.Target
     scoreboard players reset @s YS.DamagePerSum
