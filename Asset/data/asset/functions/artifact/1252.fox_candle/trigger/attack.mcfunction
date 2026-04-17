@@ -1,4 +1,4 @@
-#> asset:artifact/1252.fox_candle/trigger/damage_and_effect
+#> asset:artifact/1252.fox_candle/trigger/attack
 #
 #
 #

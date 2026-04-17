@@ -19,7 +19,7 @@
     execute unless data storage asset:temp Temp{Count:0} run function asset:artifact/1252.fox_candle/trigger/target_select/m with storage asset:temp Temp
 
 # ターゲットに対して諸々実行する
-    function asset:artifact/1252.fox_candle/trigger/damage_and_effect
+    function asset:artifact/1252.fox_candle/trigger/attack
 
 # リセット
     tag @e[type=#lib:living_without_player,tag=YS.Target,tag=!Uninterferable,distance=..16] remove YS.Target
