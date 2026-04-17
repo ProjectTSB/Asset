@@ -9,10 +9,11 @@
     #declare score_holder $AppliedFrom
 
 # vfx
-    # particle dust 1.000 0.741 0.141 1.3 ~ ~1.2 ~ 0.5 0.5 0.5 0 10 normal
+    particle soul_fire_flame ~ ~1.2 ~ 0.4 0.4 0.4 0 9 normal @a
 
-# playsound(hostileなのは被ダメ音のため)
-    # playsound minecraft:block.honey_block.step hostile @a ~ ~ ~ 0.7 1.5
+# playsound
+    playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.5 1.4
+    playsound entity.fox.bite hostile @a ~ ~ ~ 1 1
 
 # ダメージを与える
     execute store result score $AppliedFrom Temporary run data get storage asset:context this.AppliedFrom
