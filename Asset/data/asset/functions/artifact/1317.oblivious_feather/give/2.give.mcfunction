@@ -68,7 +68,7 @@
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.1d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_heal",Amount:0.1d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"fall_resistance",Amount:0.3d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"receive_heal",Amount:-0.1d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
