@@ -14,7 +14,7 @@
     data modify storage api: Argument.UUID set value [I;1,3,203,0]
     data modify storage api: Argument.Amount set value 0.5
     data modify storage api: Argument.Operation set value "multiply"
-    function api:modifier/mp_regen/add
+    function api:modifier/mp_heal/add
 
 # 被回復量-100%
     data modify storage api: Argument.UUID set value [I;1,3,203,0]
