@@ -13,11 +13,5 @@
 # 常に最寄りのプレイヤーを見る
     execute at @s facing entity @p[gamemode=!spectator,distance=..64] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
 
-# 回転
-    # execute if score @s General.Mob.Tick matches 1..240 run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/spin
-
-# 無敵化
-   #  execute if score @s General.Mob.Tick matches 241 run function asset:mob/0059.jack_o_lantern/tick/skill/common/invulnerable/start
-
 # 終了
     execute if score @s General.Mob.Tick matches 400.. run function asset:mob/0059.jack_o_lantern/tick/skill/reset
