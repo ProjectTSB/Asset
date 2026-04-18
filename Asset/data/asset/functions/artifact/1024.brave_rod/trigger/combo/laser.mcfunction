@@ -24,5 +24,5 @@
     scoreboard players add @s Temporary 1
 
 # 再帰で前に飛ばす。ヒットしてたら移動停止
-    execute if entity @s[tag=!SG.Hit,distance=..18] if block ~ ~ ~ #lib:no_collision positioned ^ ^ ^1 run function asset:artifact/1024.brave_rod/trigger/combo/laser
+    execute if entity @s[tag=!SG.Hit,distance=..18] if block ~ ~ ~ #lib:no_collision/ positioned ^ ^ ^1 run function asset:artifact/1024.brave_rod/trigger/combo/laser
     tag @s[tag=SG.Hit] remove SG.Hit

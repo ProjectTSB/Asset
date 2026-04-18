@@ -18,4 +18,4 @@
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.WaitingTick set value 8
     data modify storage api: Argument.FieldOverride.Range set value 16
-    execute rotated ~ 0 positioned ^ ^6 ^1 if block ~ ~ ~ #lib:no_collision run function api:object/summon
+    execute rotated ~ 0 positioned ^ ^6 ^1 if block ~ ~ ~ #lib:no_collision/ run function api:object/summon
