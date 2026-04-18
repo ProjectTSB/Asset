@@ -1,0 +1,13 @@
+#> asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/attack_pantokrator
+#
+# 射撃
+#
+# @within asset:mob/0456.gargo_ex_machina/tick/event/upper_shot/**
+
+# 攻撃判定召喚
+    data modify storage api: Argument.ID set value 2268
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Shot
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    data modify storage api: Argument.FieldOverride.AttackTime set value 100
+    execute positioned ~ ~ ~ run function api:object/summon
+    kill @e[type=area_effect_cloud,tag=CO.Aec.UpperShotPosition,distance=..10,sort=nearest,limit=1]

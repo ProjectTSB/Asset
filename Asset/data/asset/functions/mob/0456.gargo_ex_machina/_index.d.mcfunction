@@ -1,0 +1,139 @@
+#> asset:mob/0456.gargo_ex_machina/_index.d
+# @private
+
+#> tag
+# @within function asset:mob/0456.gargo_ex_machina/**
+    # - 共通
+    #declare tag CO.EntityRoot 自分自身
+    #declare tag CO.ModelRoot AJモデルのRootEntity
+    #declare tag CO.Hitbox 当たり判定
+    #declare tag CO.CenterPosition 中心点
+    #declare tag CO.IsLatter 後半戦
+    #declare tag CO.IsRematch 再戦
+    #declare tag CO.IsInvulnerable 無敵
+    # - スキル
+    #declare tag CO.Skill.Activate 起動
+    #declare tag CO.Skill.Activate.Short 起動・演出短縮版
+    #declare tag CO.Skill.ChangeHead 後半戦移行
+    #declare tag CO.Skill.Move 移動
+    #declare tag CO.Skill.Move.End 移動
+    #declare tag CO.Skill.Move.Near 近距離移動
+    #declare tag CO.Skill.SwordAttack 剣叩きつけ
+    #declare tag CO.Skill.SwordAttack.Charge 剣叩きつけ
+    #declare tag CO.Skill.SwordAttack.Attack 剣叩きつけ
+    #declare tag CO.Skill.SwordAttack.Double 剣叩きつけ
+    #declare tag CO.Skill.HalfBeam 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeam.IsRight 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamSword.IsRight 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.Charge 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.Attack 半面焼きビーム
+    #declare tag CO.Skill.HalfBeamShot.IsRight 半面焼きビーム
+    #declare tag CO.Skill.SuperJump スーパージャンプ
+    #declare tag CO.Skill.SuperJump.Attack スーパージャンプ
+    #declare tag CO.Skill.FieldModify フィールド・モディファイ
+    #declare tag CO.Skill.Transform.Shoot 銃変形
+    #declare tag CO.Skill.Transform.Sword 剣変形
+    #declare tag CO.Skill.RocketPunch ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.Cross 交差ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.Alter 交互ロケットパンチ
+    #declare tag CO.Skill.RocketPunch.AlterInv 交互ロケットパンチ
+    #declare tag CO.Skill.Shot 射撃
+    #declare tag CO.Skill.UpperShot 上空射撃
+    #declare tag CO.UpperShot.Asyuc 上空射撃攻撃判定用
+    #declare tag CO.UpperShot.Pt.Random ランダムパターン
+    #declare tag CO.UpperShot.Pt.Target 追尾パターン
+    #declare tag CO.UpperShot.Pt.MoveLine 移動直線範囲パターン
+    #declare tag CO.UpperShot.Pt.Cross 交差パターン
+    #declare tag CO.UpperShot.Pt.Panto パンクラパターン
+    #declare tag CO.Skill.BluteForce ブルートフォースアタック
+    #declare tag CO.Skill.BluteForce.First ブルートフォースアタック
+    #declare tag CO.Skill.BluteForce.Async ブルートフォースアタック攻撃判定用
+    #declare tag CO.Skill.BluteForce.Pt.Tutorial 全員お披露目パターン
+    #declare tag CO.Skill.BluteForce.Pt.Spin 回転パターン
+    #declare tag CO.Skill.BluteForce.Pt.SpinInv 回転パターン
+    #declare tag CO.Skill.BluteForce.Pt.Exa エクサパターン
+    #declare tag CO.Skill.BluteForce.Pt.ExaInv エクサパターン
+    #declare tag CO.Skill.BluteForce.Pt.Half 半面焼きパターン
+    #declare tag CO.Skill.BluteForce.Pt.HalfInv 半面焼きパターン
+    # - オブジェクト用
+    #declare tag CO.Shadow
+    #declare tag CO.Object
+    #declare tag CO.Object.FieldModify
+    # - 汎用
+    #declare tag CO.ScapeSheep
+    #declare tag CO.MainTarget
+    #declare tag CO.Aec.Target
+    #declare tag CO.Temp.Rotation
+    #declare tag CO.Aec.Destination
+    #declare tag CO.Aec.AttackPosition
+    #declare tag CO.Aec.AttackPosition.Init
+    #declare tag CO.Aec.UpperShotPosition
+    #declare tag CO.Aec.FieldModify
+    #declare tag CO.Aec.FieldModify.A
+    #declare tag CO.Aec.FieldModify.B
+    #declare tag CO.Aec.FieldModify.C
+    #declare tag CO.Aec.FieldModify.D
+    #declare tag CO.Aec.FieldModify.Init
+    #declare tag CO.Temp.Ground
+    #declare tag CO.Temp.Dummy
+    # - 自動生成
+    #declare tag aj.global.data
+    #declare tag aj.gargo_ex_machina.animation.idle.playing
+    #declare tag aj.gargo_ex_machina.animation.idle_shot.playing
+    #declare tag aj.gargo_ex_machina.bone.head
+    #declare function animated_java:gargo_ex_machina/summon
+    #declare function animated_java:gargo_ex_machina/as_own_locator_entities
+    #declare function animated_java:gargo_ex_machina/animations/pause_all
+    #declare function animated_java:gargo_ex_machina/animations/idle/tween
+    #declare function animated_java:gargo_ex_machina/animations/activation/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_head_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_head/tween
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/resume
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/tween
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_fast/pause
+    #declare function animated_java:gargo_ex_machina/animations/move_to_field_short/tween
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/tween
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/pause
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack/resume
+    #declare function animated_java:gargo_ex_machina/animations/sword_smash_attack_double/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_end/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_sword_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_charge/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_attack_right/tween
+    #declare function animated_java:gargo_ex_machina/animations/beam_shot_attack_left/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk/tween
+    #declare function animated_java:gargo_ex_machina/animations/walk_end/tween
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_start/tween
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/tween
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/pause
+    #declare function animated_java:gargo_ex_machina/animations/super_jump_end/resume
+    #declare function animated_java:gargo_ex_machina/animations/call_drone/tween
+    #declare function animated_java:gargo_ex_machina/animations/call_drone_first/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_to_shot/tween
+    #declare function animated_java:gargo_ex_machina/animations/change_to_sword/tween
+    #declare function animated_java:gargo_ex_machina/animations/idle_shot/tween
+    #declare function animated_java:gargo_ex_machina/animations/shot_target_spin/tween
+    #declare function animated_java:gargo_ex_machina/animations/shot_upper/tween
+    #declare function animated_java:gargo_ex_machina/animations/summon_punch/tween
+    #declare function animated_java:gargo_ex_machina/variants/blue/apply
+    #declare function animated_java:gargo_ex_machina/remove/all
+    #declare function animated_java:gem_attack_drone/remove/all
+    #declare function animated_java:gem_tnt_drone/remove/all
+    #declare function animated_java:gem_panjan_drone/remove/all
