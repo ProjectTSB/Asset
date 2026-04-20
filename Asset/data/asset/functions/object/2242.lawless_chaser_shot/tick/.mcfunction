@@ -13,10 +13,16 @@
     particle minecraft:dust 0.5 0 1 1.5 ^ ^ ^-0.5 0.25 0.25 0.25 0 2
 
 # 一番近くのプレイヤーのほうをゆっくりと向く。しばらくすると停止。
-    execute if score @s General.Object.Tick matches ..200 facing entity @p[gamemode=!spectator,distance=..64] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-30 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+#    execute if score @s General.Object.Tick matches ..200 facing entity @p[gamemode=!spectator,distance=..64] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-30 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
 
-# 移動。
-    tp @s ^ ^ ^0.1
+# 移動
+    # 最初はちょっと早いが、誘導はかなり緩い
+        execute if score @s General.Object.Tick matches ..40 run tp @s ^ ^ ^0.2 ~ ~1.5
+    # しばらくすると遅くなるけど、誘導してくる
+        execute if score @s General.Object.Tick matches 40.. facing entity @p[gamemode=!spectator,distance=..64] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ ~
+        execute if score @s General.Object.Tick matches 40..200 run tp @s ^ ^ ^0.1
+    # しばらくすると落下しはじめる
+        execute if score @s General.Object.Tick matches 200.. run tp @s ^ ^ ^0.1 ~ ~0.5
 
 # ヒット判定
     execute positioned ~-1 ~-1 ~-1 if entity @a[tag=!PlayerShouldInvulnerable,dx=1,dy=1,dz=1] run function asset:object/2242.lawless_chaser_shot/tick/explode

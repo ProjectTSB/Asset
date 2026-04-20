@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-    function asset:object/2245.lawless_shockwave/tick/
+    function asset:object/2245.lawless_whirl_slashshot/tick/
