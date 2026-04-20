@@ -4,8 +4,5 @@
 #
 # @within asset:object/alias/5/hit
 
-# フェイルセーフ用の消える処理
-    execute on vehicle run kill @s
-
-# マーカーを消す処理
-    kill @s
+# killメソッド呼び出し
+    function asset:object/call.m {method:"kill"}
