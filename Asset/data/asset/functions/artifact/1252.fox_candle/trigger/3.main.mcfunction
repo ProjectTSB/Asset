@@ -22,5 +22,6 @@
     function asset:artifact/1252.fox_candle/trigger/attack
 
 # リセット
+    data remove storage asset:temp Temp
     tag @e[type=#lib:living_without_player,tag=YS.Target,tag=!Uninterferable,distance=..16] remove YS.Target
     scoreboard players reset @s YS.DamagePerSum
