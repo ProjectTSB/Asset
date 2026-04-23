@@ -1,6 +1,12 @@
 #> asset:mob/0274.death_saw_jiki/register
 # @within asset:mob/alias/274/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2004
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 274
 # Type (string) Wikiを参照
@@ -54,3 +60,10 @@
         data modify storage asset:mob Resist.Water set value 1.2
     # 雷倍率 (float) (オプション)
         data modify storage asset:mob Resist.Thunder set value 0.8
+
+# ダメージ
+    data modify storage asset:mob Field.Damage set value 36f
+
+# 攻撃のクールダウン (出現してすぐはダメージを与えない)
+    data modify storage asset:mob Field.AttackCT._ set value 20
+    data modify storage asset:mob Field.AttackCT.Max set value 20
