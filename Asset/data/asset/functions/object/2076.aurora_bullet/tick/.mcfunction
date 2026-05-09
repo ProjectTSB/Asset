@@ -14,11 +14,8 @@
 # 演出
     scoreboard players operation $Temp Temporary = @s General.Object.Tick
     scoreboard players operation $Temp Temporary %= $4 Const
-    #execute if score $Temp Temporary matches 0 run playsound block.beacon.power_select hostile @a ~ ~ ~ 0.2 2 0
+    execute if score $Temp Temporary matches 0 run playsound block.beacon.power_select hostile @a ~ ~ ~ 0.2 2 0
     scoreboard players reset $Temp Temporary
 
 # 継承
     function asset:object/super.tick
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
