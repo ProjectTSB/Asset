@@ -37,7 +37,7 @@
     execute at @p[tag=Victim,distance=..50] run summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     execute at @p[tag=Victim,distance=..50] run data modify storage lib: Argument.Bounds set value [[4d,4d],[0d,0d],[4d,4d]]
     execute as @e[type=marker,tag=SpreadMarker,distance=..60,limit=1] at @s run function lib:spread_entity/
-    execute at @e[type=marker,tag=SpreadMarker,distance=..60,limit=1] if block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~-1 ~ #lib:no_collision_without_fluid run tp @s ~ ~ ~
+    execute at @e[type=marker,tag=SpreadMarker,distance=..60,limit=1] if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-1 ~ #lib:no_collision/without_fluid run tp @s ~ ~ ~
 
 # リセット
     data remove storage lib: Argument

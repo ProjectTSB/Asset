@@ -16,7 +16,7 @@
     execute as @e[type=marker,tag=BK.Marker,distance=..30] at @s run function lib:spread_entity/
 
 # 配置
-    execute at @e[type=marker,tag=BK.Marker,distance=..30] if block ~ ~ ~ #lib:no_collision run function asset:mob/0416.ahssat/tick/summon/summon
+    execute at @e[type=marker,tag=BK.Marker,distance=..30] if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0416.ahssat/tick/summon/summon
 
 # マーカーを戻してあげる
     kill @e[type=marker,tag=BK.Marker,distance=..30]
