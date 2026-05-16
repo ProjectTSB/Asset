@@ -10,7 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 最大体力だけ固定回復
-    data modify storage api: Argument.Heal set from entity @s Attributes[{Name:"minecraft:generic.max_health"}]
+    function api:data_get/attributes
+    data modify storage api: Argument.Heal set from storage api: Attributes[{Name:"minecraft:generic.max_health"}].Base
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/
