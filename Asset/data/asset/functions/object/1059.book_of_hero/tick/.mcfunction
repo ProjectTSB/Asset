@@ -16,8 +16,8 @@
     particle enchant ~ ~ ~ 0.25 0.25 0.25 0 2 force @a[distance=..40]
 
 # 接地で上を向く
-    execute unless block ~ ~-0.1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~-35
-    execute unless block ~ ~1 ~ #lib:no_collision at @s run tp @s ~ ~ ~ ~ ~80
+    execute unless block ~ ~-0.1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~-35
+    execute unless block ~ ~1 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~80
 
 # 周囲にプレイヤーがいない場合、プレイヤーを追尾
     execute unless entity @p[tag=1059.OwnerPlayer,distance=..8] facing entity @p[tag=1059.OwnerPlayer] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.2 ~ ~
@@ -37,8 +37,8 @@
     execute if score @s 1059.ActionTime matches 40.. unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10] run scoreboard players set @s 1059.ActionTime 0
 
 # カベにぶつかった際の処理
-    execute unless block ^ ^ ^0.5 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
-    execute at @s unless block ^ ^ ^0.2 #lib:no_collision at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
+    execute at @s unless block ^ ^ ^0.2 #lib:no_collision/ at @s run tp @s ~ ~ ~ ~45 ~-45
 
 # 離れ過ぎたら消える
     execute unless entity @a[tag=1059.OwnerPlayer,distance=..70] run function asset:object/1059.book_of_hero/tick/kill
