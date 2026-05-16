@@ -7,7 +7,7 @@
 #   asset:artifact/1265.thunder_ray/trigger/recursive
 
 # 0.25ブロック先がブロック
-    execute if entity @s[tag=!Check] unless block ^ ^ ^0.25 #lib:no_collision run function asset:artifact/1265.thunder_ray/trigger/thunder
+    execute if entity @s[tag=!Check] unless block ^ ^ ^0.25 #lib:no_collision/ run function asset:artifact/1265.thunder_ray/trigger/thunder
 
 # 一定以上再帰
     execute if entity @s[tag=!Check] if score $Recursive Temporary matches 48.. run function asset:artifact/1265.thunder_ray/trigger/thunder
