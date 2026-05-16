@@ -6,8 +6,8 @@
 
 # 下に落ちていく
 # 水中の場合は減速する
-    execute unless predicate lib:is_in_water/include_flowing if block ~ ~-0.4 ~ #lib:no_collision run tp @s ~ ~-0.4 ~
-    execute if predicate lib:is_in_water/include_flowing if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+    execute unless predicate lib:is_in_water/include_flowing if block ~ ~-0.4 ~ #lib:no_collision/ run tp @s ~ ~-0.4 ~
+    execute if predicate lib:is_in_water/include_flowing if block ~ ~-0.1 ~ #lib:no_collision/ run tp @s ~ ~-0.1 ~
 
 # 膨らむ
     execute if entity @s[scores={General.Object.Tick=1003}] run playsound entity.puffer_fish.blow_up neutral @a ~ ~ ~ 0.8 1
