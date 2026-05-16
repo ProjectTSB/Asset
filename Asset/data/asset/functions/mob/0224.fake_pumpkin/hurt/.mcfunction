@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/224/hurt
 
 # 割合ダメージ
-    execute store result storage api: Argument.Damage double 0.020 run attribute @s generic.max_health get 10
+    execute store result storage api: Argument.Damage double 0.020 run attribute @p[tag=Attacker] generic.max_health get 10
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.FixedDamage set value 1b
