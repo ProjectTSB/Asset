@@ -38,7 +38,7 @@
     execute positioned ^ ^1.8 ^-3 run function api:object/summon
 
 # 飛ぶ斬撃を召喚
-    execute positioned ^ ^1 ^4 run function asset:mob/0327.eclael/tick/app.general/summon_object/slash_beam.m {Angle:-0.2f}
+    execute positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.general/summon_object/slash_beam.m {Angle:-0.2f}
 
 # ライン斬撃
     execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/attack_line_slash.m {Rotation:90,PosX:0,PosY:0,PosZ:3,IsGreen:true}
