@@ -8,7 +8,7 @@
 # ヒット判定
     execute positioned ^ ^ ^ run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 9G.Temp.Target.Attack
     execute positioned ^ ^ ^1.5 run tag @a[tag=!PlayerShouldInvulnerable,distance=..1.5] add 9G.Temp.Target.Attack
-    execute as @a[tag=9G.Temp.Target.Attack] at @s if block ~ ~-0.7 ~ #lib:no_collision run tag @s add 9G.Temp.Target.JumpAvoid
+    execute as @a[tag=9G.Temp.Target.Attack] at @s if block ~ ~-0.7 ~ #lib:no_collision/ run tag @s add 9G.Temp.Target.JumpAvoid
     tag @a[tag=9G.Temp.Target.JumpAvoid] remove 9G.Temp.Target.Attack
 
 # TODO:ダメージ
