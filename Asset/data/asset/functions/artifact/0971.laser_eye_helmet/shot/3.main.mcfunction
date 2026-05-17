@@ -22,8 +22,9 @@
     data modify storage lib: Argument.Spread set value 0.5
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] run function lib:forward_spreader/circle
+
 # 発砲
-    execute anchored eyes facing entity @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] feet run function asset:artifact/0971.laser_eye_helmet/shot/bullet
+    execute anchored eyes positioned ^ ^ ^15 facing entity @e[type=marker,tag=SpreadMarker,distance=..20,limit=1] eyes positioned as @e[type=marker,tag=SpreadMarker,distance=..20,limit=1] positioned ^ ^ ^2 facing ^ ^ ^-1 run function asset:artifact/0971.laser_eye_helmet/shot/shoot/
     tag @s remove Landing
 
 # リセット
