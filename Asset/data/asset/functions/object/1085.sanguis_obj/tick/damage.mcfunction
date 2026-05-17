@@ -21,7 +21,7 @@
 # modifier をかける
     execute as @a[tag=1085.Player] run function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function api:damage/
     function api:damage/reset
 
 # タグ削除

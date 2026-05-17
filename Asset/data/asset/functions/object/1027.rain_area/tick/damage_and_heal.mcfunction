@@ -31,7 +31,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     execute as @p[tag=Owner] run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=1027.TargetEntity,tag=!Uninterferable,distance=..20] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=1027.TargetEntity,tag=!Uninterferable,distance=..20] run function api:damage/
     function api:damage/reset
 
 # 回復
