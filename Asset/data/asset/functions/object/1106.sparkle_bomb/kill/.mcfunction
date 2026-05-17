@@ -26,7 +26,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-2.0 ~-2.0 ~-2.0 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=3.0,dy=3.0,dz=3.0] run function api:damage/
+    execute positioned ~-2.0 ~-2.0 ~-2.0 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=3.0,dy=3.0,dz=3.0] run function api:damage/
     function api:damage/reset
 
 # リセット
