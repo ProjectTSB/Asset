@@ -21,13 +21,13 @@
     data modify storage lib: Argument.Distance set value 3.0
     data modify storage lib: Argument.Spread set value 0.5
 # 前方拡散を実行する
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+    execute as @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] run function lib:forward_spreader/circle
 # 発砲
-    execute anchored eyes facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:artifact/0971.laser_eye_helmet/shot/bullet
+    execute anchored eyes facing entity @e[type=marker,tag=SpreadMarker,distance=..5,limit=1] feet run function asset:artifact/0971.laser_eye_helmet/shot/bullet
     tag @s remove Landing
 
 # リセット
-    kill @e[type=marker,tag=SpreadMarker]
+    kill @e[type=marker,tag=SpreadMarker,distance=..5]
     scoreboard players reset $Appropriate_Distance Temporary
     scoreboard players reset $Distance_Damping Temporary
     scoreboard players reset $MinDamage Temporary
