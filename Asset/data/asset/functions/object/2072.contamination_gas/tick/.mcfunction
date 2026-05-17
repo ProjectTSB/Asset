@@ -1,4 +1,4 @@
-#> asset:object/2072.contamination_gus/tick/
+#> asset:object/2072.contamination_gas/tick/
 #
 # Objectのtick時の処理
 #
@@ -13,7 +13,7 @@
 
 # 効果
 # デバフの種類が多く実行数が多いためif entityで条件をつけておく
-    execute if entity @a[gamemode=!spectator,distance=..3] run function asset:object/2072.contamination_gus/tick/debuff
+    execute if entity @a[gamemode=!spectator,distance=..3,limit=1] run function asset:object/2072.contamination_gas/tick/debuff
 
 # 消滅処理
     kill @s[scores={General.Object.Tick=20..}]

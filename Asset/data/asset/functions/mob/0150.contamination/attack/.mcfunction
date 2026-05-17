@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # ガス召喚
-    execute at @p[tag=Victim,distance=..32] run function asset:mob/0150.contamination/gus_summon
+    execute at @p[tag=Victim,distance=..32] run function asset:mob/0150.contamination/summon_gas
 
 # ダメージ
     data modify storage api: Argument.Damage set value 41f
