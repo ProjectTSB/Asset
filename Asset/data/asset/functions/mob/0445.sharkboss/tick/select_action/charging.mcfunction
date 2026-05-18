@@ -8,7 +8,7 @@
     data modify storage lib: Args.key set value "CD.SharkbossC"
 
 # 攻撃ガチャ
-    data modify storage lib: Args.max set value 2
+    data modify storage lib: Args.max set value 3
     data modify storage lib: Args.scarcity_history_size set value 2
 
 # 疑似乱数取得
@@ -17,7 +17,8 @@
 
 # 攻撃ガチャ
     execute if score $Random Temporary matches 0 run tag @s add CD.Action.Sharknado2
-    execute if score $Random Temporary matches 1 run tag @s add CD.Action.WaterGun1
+    execute if score $Random Temporary matches 1 run tag @s add CD.Action.SharknadoWaterGun
+    execute if score $Random Temporary matches 2 run tag @s add CD.Action.SharknadoSlash
 
 
 # 乱数リセット

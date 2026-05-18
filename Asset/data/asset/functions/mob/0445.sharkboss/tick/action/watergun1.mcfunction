@@ -7,5 +7,13 @@
 execute if score @s CD.AnimationTimer matches 0 as @e[tag=CD.ModelRoot] run function animated_java:sharkboss/animations/watergun/tween {duration:1, to_frame: 0}
 execute if score @s CD.AnimationTimer matches 73 run function asset:mob/0445.sharkboss/tick/action/utility/end
 
+#演出
+execute if score @s CD.AnimationTimer matches 21 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 2 0.8
+execute if score @s CD.AnimationTimer matches 21 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 2 1.8
+execute if score @s CD.AnimationTimer matches 31 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 2 0.8
+execute if score @s CD.AnimationTimer matches 31 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 2 1.8
+execute if score @s CD.AnimationTimer matches 44 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 2 0.8
+execute if score @s CD.AnimationTimer matches 44 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 2 1.8
+
 #モーション系
 execute if score @s CD.AnimationTimer matches 0..73 run function asset:mob/0445.sharkboss/tick/action/utility/alignment

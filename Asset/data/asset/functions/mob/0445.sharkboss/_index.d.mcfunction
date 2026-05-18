@@ -36,6 +36,8 @@
     #declare tag CD.Action.Sharknado1
     #declare tag CD.Action.Sharknado2
     #declare tag CD.Action.Sharknado3
+    #declare tag CD.Action.SharknadoWaterGun
+    #declare tag CD.Action.SharknadoSlash
     #declare tag CD.Action.Down1
     #declare tag CD.Action.Down2
     #declare tag CD.Action.Down3
@@ -59,6 +61,8 @@
     #declare function animated_java:sharkboss/animations/sharknado_start/tween
     #declare function animated_java:sharkboss/animations/sharknado_loop/tween
     #declare function animated_java:sharkboss/animations/sharknado_end/tween
+    #declare function animated_java:sharkboss/animations/sharknado_watergun/tween
+    #declare function animated_java:sharkboss/animations/sharknado_slash/tween
     #declare function animated_java:sharkboss/animations/puffer_start/tween
     #declare function animated_java:sharkboss/animations/puffer_loop/tween
     #declare function animated_java:sharkboss/animations/puffer_end/tween

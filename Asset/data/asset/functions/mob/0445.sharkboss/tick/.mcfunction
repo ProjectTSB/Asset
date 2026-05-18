@@ -49,6 +49,9 @@
   execute if entity @s[tag=CD.Action.Sharknado2] at @s run function asset:mob/0445.sharkboss/tick/action/sharknado2
   execute if entity @s[tag=CD.Action.Sharknado3] at @s run function asset:mob/0445.sharkboss/tick/action/sharknado3
 
+  execute if entity @s[tag=CD.Action.SharknadoWaterGun] at @s run function asset:mob/0445.sharkboss/tick/action/sharknadowatergun
+  execute if entity @s[tag=CD.Action.SharknadoSlash] at @s run function asset:mob/0445.sharkboss/tick/action/sharknadoslash
+
   execute if entity @s[tag=CD.Action.Down1] at @s run function asset:mob/0445.sharkboss/tick/action/down1
   execute if entity @s[tag=CD.Action.Down2] at @s run function asset:mob/0445.sharkboss/tick/action/down2
   execute if entity @s[tag=CD.Action.Down3] at @s run function asset:mob/0445.sharkboss/tick/action/down3 

@@ -4,6 +4,7 @@
 #
 # @within function asset:mob/0445.sharkboss/tick/select_action/
 
+
 #行動の予約
     tag @s add CD.Reserving
     tag @s add CD.Action.Sharknado1

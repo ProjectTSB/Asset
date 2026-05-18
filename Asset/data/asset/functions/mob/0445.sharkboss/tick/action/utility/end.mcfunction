@@ -26,6 +26,9 @@
   execute if entity @s[tag=CD.Action.Sharknado2] run tag @s remove CD.Action.Sharknado2
   execute if entity @s[tag=CD.Action.Sharknado3] run tag @s remove CD.Action.Sharknado3
 
+  execute if entity @s[tag=CD.Action.SharknadoWaterGun] run tag @s remove CD.Action.SharknadoWaterGun
+  execute if entity @s[tag=CD.Action.SharknadoSlash] run tag @s remove CD.Action.SharknadoSlash
+
   execute if entity @s[tag=CD.Action.Down1] run tag @s remove CD.Action.Down1
   execute if entity @s[tag=CD.Action.Down2] run tag @s remove CD.Action.Down2
   execute if entity @s[tag=CD.Action.Down3] run tag @s remove CD.Action.Down3

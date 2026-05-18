@@ -20,6 +20,12 @@ execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFis
 # execute if score @s CD.AnimationTimer matches 1 if score @s CD.Counter matches ..2 run tag @s add CD.Action.Reserve.Rush2
 # execute if score @s CD.AnimationTimer matches 1 if score @s CD.Counter matches 3.. run tag @s remove CD.Action.Reserve.Rush2
 
+#演出
+execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.5 0.5
+execute if score @s CD.AnimationTimer matches 3 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.5 0.5
+execute if score @s CD.AnimationTimer matches 6 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.5 0.5
+execute if score @s CD.AnimationTimer matches 9 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.5 0.5
+
 
 #モーション系
 execute if score @s CD.AnimationTimer matches 0..12 run tp @s ^ ^ ^0.7

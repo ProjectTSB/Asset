@@ -11,7 +11,7 @@
     function api:mob/get_health_percent
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
 
-#帯電状態での予約なし攻撃回数が10回以上でシャークネード（DPSチェック）に移行
+#帯電状態で発動した予約なし攻撃回数が10回以上でシャークネード（DPSチェック）に移行
     execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] run scoreboard players add @s CD.ElectrifiedActionCounter 1
     execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] if score @s CD.ElectrifiedActionCounter matches 10.. run function asset:mob/0445.sharkboss/tick/select_action/sharknado
 
@@ -35,7 +35,7 @@
     execute if entity @s[tag=!CD.Charging,tag=!CD.Electrified,tag=!CD.CloseRangeAction,tag=!CD.Reserving] run function asset:mob/0445.sharkboss/tick/select_action/normal_long
     execute if entity @s[tag=CD.Electrified,tag=CD.CloseRangeAction,tag=!CD.Charging,tag=!CD.Reserving] run function asset:mob/0445.sharkboss/tick/select_action/elec_close
     execute if entity @s[tag=CD.Electrified,tag=!CD.Charging,tag=!CD.CloseRangeAction,tag=!CD.Reserving] run function asset:mob/0445.sharkboss/tick/select_action/elec_long
-    execute if entity @s[tag=CD.Charging] run function asset:mob/0445.sharkboss/tick/select_action/charging
+    execute if entity @s[tag=CD.Charging,tag=!CD.Reserving] run function asset:mob/0445.sharkboss/tick/select_action/charging
 
 # 予約タグを外す
     execute if entity @s[tag=CD.Reserving] run tag @s remove CD.Reserving
