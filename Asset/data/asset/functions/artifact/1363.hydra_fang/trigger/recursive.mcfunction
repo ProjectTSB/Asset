@@ -9,7 +9,6 @@
 # Attack.Toの最後尾のIDから順にダメージを与える
     data modify storage asset:temp Temp.MobUUID set from storage asset:temp Temp.To[-1]
     function asset:artifact/1363.hydra_fang/trigger/damage.m with storage asset:temp Temp
-    data remove storage asset:temp Temp
 
 # 最後尾の要素を削除
     data remove storage asset:temp Temp.To[-1]
