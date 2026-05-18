@@ -1,6 +1,6 @@
 #> asset:object/1094.aa_missile/tick/damage
 #
-# 
+#
 #
 # @within function asset:object/1094.aa_missile/tick/hit
 
@@ -10,7 +10,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     $execute as @p[scores={UserID=$(UserID)}] run function api:damage/modifier
-    execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=4,dy=4,dz=4] run function api:damage/
+    execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=4,dy=4,dz=4] run function api:damage/
     function api:damage/reset
 
 # particle

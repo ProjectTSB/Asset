@@ -12,7 +12,7 @@
     execute if score @s General.Mob.Tick matches 23 at @e[type=marker,tag=AC.ModelLocator.Weapon] run particle crit ~ ~ ~ 0 0 0 0.5 25
 
 # 降りる
-    execute if score @s General.Mob.Tick matches 0..20 if block ~ ~-0.1 ~ #lib:no_collision if function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/check_ground run tp @s ~ ~-0.1 ~
+    execute if score @s General.Mob.Tick matches 0..20 if block ~ ~-0.1 ~ #lib:no_collision/ if function asset:mob/0372.tutankhamen/tick/skill/hyper_laser/check_ground run tp @s ~ ~-0.1 ~
 
 # プレイヤーの方を向く
     execute if score @s General.Mob.Tick matches 0..20 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ 0 run tp @s ^ ^ ^ ~ ~

@@ -28,7 +28,7 @@
     playsound ogg:mob.breeze.deflect3 neutral @a ~ ~ ~ 1.3 0.9
 
 # 鈍足
-    effect give @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] slowness 3 2 true
+    effect give @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] slowness 3 2 true
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -36,7 +36,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
     function api:damage/reset
 
 # リセット

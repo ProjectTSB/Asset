@@ -9,7 +9,7 @@
 
 # MP回復低下
     data modify storage api: Argument.UUID set value [I;1,3,336,0]
-    function api:modifier/mp_regen/remove
+    function api:modifier/mp_heal/remove
 
 # 攻撃力低下
     # data modify storage api: Argument.UUID set value [I;1,3,336,0]
