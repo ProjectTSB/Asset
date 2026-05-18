@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 311
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"スクラップメイカー"}'
+    data modify storage asset:effect Name set value '{"text":"スクラップメイカー","color":"#CF99FF"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"継続的に魔法無属性ダメージを受ける"}']
 # 効果時間 (int) (default = API || error)

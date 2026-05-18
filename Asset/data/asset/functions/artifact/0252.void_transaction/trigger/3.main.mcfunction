@@ -22,7 +22,7 @@
 
 # 一旦、クソ神器にする
 # 周囲のモブ(天使を除く）をremoveする
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..30] run function api:mob/remove
-    execute as @e[type=#lib:living,type=!player,tag=Friend,tag=!Uninterferable,distance=..30] run function api:mob/remove
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..30] run function api:mob/remove
+    execute as @e[type=#lib:living_without_player,tag=Friend,tag=!Uninterferable,distance=..30] run function api:mob/remove
 # プレイヤーを奈落に突き落とす
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..30] run tp ~ ~-9999 ~

@@ -20,9 +20,9 @@
         data modify storage api: Argument.AdditionalMPHeal set value 4.8f
     # ダメージ
         function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
 
 # 着弾タグを消す
-    tag @e[type=#lib:living,type=!player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] remove AD.HitTarget
+    tag @e[type=#lib:living_without_player,tag=AD.HitTarget,tag=!Uninterferable,distance=..50,limit=1] remove AD.HitTarget
