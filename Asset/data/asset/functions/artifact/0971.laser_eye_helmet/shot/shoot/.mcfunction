@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/0971.laser_eye_helmet/shot/3.main
+# @within function asset:artifact/0971.laser_eye_helmet/shot/spread
 
 # 発射
     function asset:artifact/0971.laser_eye_helmet/shot/shoot/recursive
