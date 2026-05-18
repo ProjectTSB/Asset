@@ -14,7 +14,7 @@
     execute if score @s AI.Tick matches 4.. at @s positioned ~ ~-0.25 ~ run function asset:mob/0378.red_knight_v3/tick/common/tp
 
 # 地面についたらリセット
-    execute if score @s AI.Tick matches 0.. at @s unless block ~ ~-0.25 ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/skill_reset
+    execute if score @s AI.Tick matches 0.. at @s unless block ~ ~-0.25 ~ #lib:no_collision/ run function asset:mob/0378.red_knight_v3/tick/skill_reset
 
 # 地面につかない異常事態？プレイヤーにTPしてリセット
     execute if score @s AI.Tick matches 100 at @p run function asset:mob/0378.red_knight_v3/tick/common/tp

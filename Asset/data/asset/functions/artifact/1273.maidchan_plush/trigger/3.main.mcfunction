@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..6,sort=nearest,limit=1] positioned ~ ~1 ~ run function asset:artifact/1273.maidchan_plush/trigger/vfx
+    execute at @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..6,sort=nearest,limit=1] positioned ~ ~1 ~ run function asset:artifact/1273.maidchan_plush/trigger/vfx
 
 # 敵にダメージ
     data modify storage api: Argument.Damage set value 300.0f
@@ -19,6 +19,6 @@
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..6,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..6,sort=nearest,limit=1] run function api:damage/
 # リセット
     function api:damage/reset

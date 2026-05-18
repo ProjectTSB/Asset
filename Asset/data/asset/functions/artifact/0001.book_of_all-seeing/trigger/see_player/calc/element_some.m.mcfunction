@@ -47,3 +47,4 @@
     scoreboard players reset $Modifier Temporary
     scoreboard players reset $Type1 Temporary
     scoreboard players reset $Type2 Temporary
+    scoreboard players reset $Decimal Temporary

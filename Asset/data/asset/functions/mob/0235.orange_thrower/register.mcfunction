@@ -56,4 +56,5 @@
         data modify storage asset:mob Resist.Thunder set value 1.2
 
 # フィールド
-    data modify storage asset:mob Field.Damage set value 18f
+    data modify storage asset:mob Field.Damage set value {Vanilla:21f,Orange:18f}
+    data modify storage asset:mob Field.OrangeCount set value 0
