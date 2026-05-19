@@ -29,7 +29,7 @@
 
 # 好感度・時間の修正
     scoreboard players remove @s FQ.Favorability 1
-    scoreboard players operation @s FQ.Favorability < $0 Const
+    scoreboard players operation @s FQ.Favorability > $0 Const
     scoreboard players reset @s FQ.TalkTime
 
 # リセット
