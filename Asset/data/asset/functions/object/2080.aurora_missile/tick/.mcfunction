@@ -16,5 +16,11 @@
 # スーパーメソッド呼び出し
     execute at @s run function asset:object/super.tick
 
+# 3tick目から回転
+    execute store result storage asset:context this.SpinInterval._ int 0.9999999999 run data get storage asset:context this.SpinInterval._
+    execute if data storage asset:context this.SpinInterval{_:0} if score @s General.Object.Tick matches 3.. run function asset:object/2080.aurora_missile/tick/spin
+    execute if data storage asset:context this.SpinInterval{_:0} if score @s General.Object.Tick matches 3.. run data modify storage asset:context this.SpinInterval._ set from storage asset:context this.SpinInterval.Max
+
+
 # 消滅処理
     kill @s[scores={General.Object.Tick=1000..}]

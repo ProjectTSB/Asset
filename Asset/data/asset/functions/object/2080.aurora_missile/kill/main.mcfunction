@@ -5,10 +5,14 @@
 # @within function asset:object/2080.aurora_missile/kill/
 
 # 演出
-    execute if entity @s[tag=!2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/normal
-    execute if entity @s[tag=2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/enhanced
-    particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~1.5 ~ 1.3 1.2 1.3 0 60
+    #execute if entity @s[tag=!2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/normal
+    #execute if entity @s[tag=2080.Enhanced] rotated ~ 0 positioned ~ ~0.3 ~ run function asset:object/2080.aurora_missile/kill/vfx/enhanced
+    #particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~1.5 ~ 1.3 1.2 1.3 0 60
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.8 1.5 0
+    particle dust_color_transition 0.4 1 0.8 1.5 0.5 0.65 1 ~ ~1.5 ~ 1.2 1.2 1.2 0 12
+
+    data modify storage api: Argument.ID set value 2276
+    function api:object/summon
 
 # ダメージ
 # Enhancedタグがによって範囲が変わる
