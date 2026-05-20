@@ -14,9 +14,9 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle sweep_attack ~ ~1 ~ 0 0 0 1 20
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle end_rod ~ ~1 ~ 0 0 0 0.1 20
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.4 10
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle sweep_attack ~ ~1 ~ 0 0 0 1 20
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle end_rod ~ ~1 ~ 0 0 0 0.1 20
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle minecraft:large_smoke ~ ~1 ~ 0 0 0 0.4 10
 
     playsound minecraft:item.trident.return player @a ~ ~ ~ 1 2
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 0.5
@@ -36,7 +36,7 @@
 # 補正functionを実行
     function api:damage/modifier
 # ダメージを与える
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
 
 # リセット
     function api:damage/reset

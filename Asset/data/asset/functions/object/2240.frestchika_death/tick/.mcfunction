@@ -12,15 +12,15 @@
     execute at @s run tp @e[type=item_display,tag=2240.ModelRoot.Target,distance=..64,sort=nearest,limit=1] ~ ~ ~ ~ 0
 
 # 足元に何もなければ
-    execute if block ~ ~-0.05 ~ #lib:no_collision run tp @s ~ ~-0.05 ~
-    execute if block ~ ~-0.25 ~ #lib:no_collision run tp @s ~ ~-0.25 ~
+    execute if block ~ ~-0.05 ~ #lib:no_collision/ run tp @s ~ ~-0.05 ~
+    execute if block ~ ~-0.25 ~ #lib:no_collision/ run tp @s ~ ~-0.25 ~
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
 # 吹っ飛んでいく
-    execute if score @s General.Object.Tick matches 0..5 rotated ~ 0 if block ^ ^ ^-1 #lib:no_collision run tp @s ^ ^ ^-0.5
-    execute if score @s General.Object.Tick matches 6..10 rotated ~ 0 if block ^ ^ ^-1 #lib:no_collision run tp @s ^ ^ ^-0.2
+    execute if score @s General.Object.Tick matches 0..5 rotated ~ 0 if block ^ ^ ^-1 #lib:no_collision/ run tp @s ^ ^ ^-0.5
+    execute if score @s General.Object.Tick matches 6..10 rotated ~ 0 if block ^ ^ ^-1 #lib:no_collision/ run tp @s ^ ^ ^-0.2
 
 # パーティクル
     particle smoke ~ ~ ~ 0.2 0.5 0.2 0.01 1
