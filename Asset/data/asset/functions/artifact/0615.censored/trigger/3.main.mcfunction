@@ -17,10 +17,10 @@
     # 疑似乱数取得
         execute store result score $Random Temporary run random value 0..4
     # 処刑
-        execute if score $Random Temporary matches 0 at @e[type=#lib:living,type=!player,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable] run function asset:artifact/0615.censored/trigger/execution/mob
+        execute if score $Random Temporary matches 0 at @e[type=#lib:living_without_player,tag=Victim,tag=!Enemy.Boss,tag=!Uninterferable] run function asset:artifact/0615.censored/trigger/execution/mob
     # ボス級の処刑
-        execute if score $Random Temporary matches 0 at @e[type=#lib:living,type=!player,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable] run function asset:artifact/0615.censored/trigger/execution/boss
+        execute if score $Random Temporary matches 0 at @e[type=#lib:living_without_player,tag=Victim,tag=Enemy.Boss,tag=!Uninterferable] run function asset:artifact/0615.censored/trigger/execution/boss
     # 通常攻撃
-        execute if score $Random Temporary matches 1..4 at @e[type=#lib:living,type=!player,tag=Victim] run function asset:artifact/0615.censored/trigger/attack
+        execute if score $Random Temporary matches 1..4 at @e[type=#lib:living_without_player,tag=Victim] run function asset:artifact/0615.censored/trigger/attack
     # リセット
         scoreboard players reset $Random Temporary

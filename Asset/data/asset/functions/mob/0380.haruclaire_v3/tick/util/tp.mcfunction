@@ -5,4 +5,4 @@
 # @within asset:mob/0380.haruclaire_v3/tick/event/**
 
 # 対象の方を向く
-    execute if block ~ ~ ~ #lib:no_collision run tp @s ^ ^ ^
+    execute if block ~ ~ ~ #lib:no_collision/ run tp @s ^ ^ ^

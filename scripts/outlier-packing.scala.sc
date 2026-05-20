@@ -247,22 +247,34 @@ def regionsFromFile[L](path: os.Path, f: (Int, Int3) => L, defaultSize: Option[I
     return Map.empty
   }
   val lines      = os.read(path).split("\n")
-  val dataPoints = lines
-    .flatMap { line =>
-      line.split(",").map(_.trim) match {
-        case Array(id, dim, x, y, z)       => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), defaultSize.get)))
-        case Array(id, dim, x, y, z, size) => Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), Math.max(size.toInt, 32))))
-        case _                             => None
-      }
+  val dataPoints = lines.zipWithIndex
+    .flatMap {
+      case (line, index) => line.split(",").map(_.trim) match {
+          case Array(id, dim, x, y, z)                         =>
+            val s = defaultSize.get
+            val bounds = (s, s, s, s, s, s)
+            Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), bounds)))
+          case Array(id, dim, x, y, z, size)                   =>
+            val s = Math.max(size.toInt, 32)
+            val bounds = (s, s, s, s, s, s)
+            Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), bounds)))
+          case Array(id, dim, x, y, z, minX, maxX, minZ, maxZ) =>
+            val s = defaultSize.get
+            val bounds = (s + minX.toInt, s + maxX.toInt, s, s, s + minZ.toInt, s + maxZ.toInt)
+            Some(dim -> (id.toInt -> (Int3(x.toInt, y.toInt, z.toInt), bounds)))
+          case _                                               =>
+            println(s"Invalid line at index $index: $line")
+            None
+        }
     }
     .toVector
     .groupMap(_._1)(_._2)
   dataPoints.view.mapValues { regions =>
     regions.map {
-      case (id, (p, size)) =>
+      case (id, (p, (minX, maxX, minY, maxY, minZ, maxZ))) =>
         val bb = BoundingBox(
-          Int3(p.x - size, p.y - size, p.z - size),
-          Int3(p.x + size, p.y + size, p.z + size)
+          Int3(p.x - minX, p.y - minY, p.z - minZ),
+          Int3(p.x + maxX, p.y + maxY, p.z + maxZ)
         )
         bb -> f(id, p)
     }

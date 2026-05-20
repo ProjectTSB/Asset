@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"聖典","color":"white"}'
+    data modify storage asset:artifact Name set value '{"text":"聖典","color":"#FFDD66"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"10%の確率で体力を15回復し、デバフ","color":"white"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を1つ解除する","color":"white"}]','{"text":"神の加護を受けた書物","color":"gray"}','{"text":"文章の内から微かに治癒の力を感じる","color":"gray"}','{"text":"どうやら有用な頁はかなり少ないらしい","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"30%の確率で以下の効果のうち1つを発動する"}','{"translate":"-%1$s体力を20回復する","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$sMPを40回復する","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$sデバフ%2$sを1つ解除する","with":[{"text":"\\u0002","font":"space"},{"text":"[弱/強]","color":"#FFDD66"}]}','{"text":"神の加護を受けた書物","color":"gray"}','{"text":"文章の内から微かに治癒の力を感じる","color":"gray"}','{"text":"どうやら有用な頁は少ないらしい","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -41,14 +41,14 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 10
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "heal"
-    data modify storage asset:artifact TypeCooldown.Duration set value 10
+    data modify storage asset:artifact TypeCooldown.Duration set value 12
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

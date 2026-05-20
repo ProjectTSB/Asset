@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"石化","color":"gray"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"移動速度が大きく下がり、ジャンプできなくなる","color":"blue"}']
+    data modify storage asset:effect Description set value ['{"text":"移動速度が大きく下がり、ジャンプできなくなる","color":"white"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
