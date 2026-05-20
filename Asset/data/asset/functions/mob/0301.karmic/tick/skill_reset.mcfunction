@@ -46,5 +46,5 @@
     tag @s remove 8D.SkipSkillSelect
 
 # 地面に着いていない時、落下スキルを発動
-    execute if block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set @s General.Mob.Tick 0
-    execute if block ~ ~-0.5 ~ #lib:no_collision run tag @s add 8D.Fall
+    execute if block ~ ~-0.5 ~ #lib:no_collision/ run scoreboard players set @s General.Mob.Tick 0
+    execute if block ~ ~-0.5 ~ #lib:no_collision/ run tag @s add 8D.Fall
