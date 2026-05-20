@@ -10,8 +10,7 @@
     stopsound @s player item.armor.equip_leather
 
 # 回復
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.015 run data get storage api: Return.MaxHealth
+    execute store result storage api: Argument.Heal double 0.015 run attribute @s generic.max_health get
     function api:heal/modifier
     data modify storage api: Argument.ApplyTrigger set value false
     function api:heal/
