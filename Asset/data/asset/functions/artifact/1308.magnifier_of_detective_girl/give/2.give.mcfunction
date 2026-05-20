@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"少女探偵の虫眼鏡","color":"#94b9f9"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"怪力を得るが、物理攻撃するたびにMPを%1$s消費する","color":"white","with":[{"text":"2"}]}','{"text":"密室殺人！ミステリーじゃないですか〜！","color":"gray"}','{"text":"高まりますね～！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate":"怪力を得るが、物理属性攻撃するたびにMPを%1$s消費する","color":"white","with":[{"text":"2"}]}','{"text":"密室殺人！ミステリーじゃないですか〜！","color":"gray"}','{"text":"高まりますね～！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
