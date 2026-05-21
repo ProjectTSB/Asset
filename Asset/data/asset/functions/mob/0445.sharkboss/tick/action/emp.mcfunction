@@ -8,12 +8,12 @@ execute if score @s CD.AnimationTimer matches 0 as @e[tag=CD.ModelRoot] run func
 execute if score @s CD.AnimationTimer matches 65 run function asset:mob/0445.sharkboss/tick/action/utility/end
 
 #演出
-execute if score @s CD.AnimationTimer matches 2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.2
-execute if score @s CD.AnimationTimer matches 2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.2
-execute if score @s CD.AnimationTimer matches 8 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.8
-execute if score @s CD.AnimationTimer matches 8 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.8
-execute if score @s CD.AnimationTimer matches 13 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 1.2
-execute if score @s CD.AnimationTimer matches 13 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 1.2
+#execute if score @s CD.AnimationTimer matches 2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.2
+#execute if score @s CD.AnimationTimer matches 2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.2
+#execute if score @s CD.AnimationTimer matches 8 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.8
+#execute if score @s CD.AnimationTimer matches 8 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 0.8
+#execute if score @s CD.AnimationTimer matches 13 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 1.2
+#execute if score @s CD.AnimationTimer matches 13 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1.5 1.2
 execute if score @s CD.AnimationTimer matches 26 run playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 1.5 0.7
 execute if score @s CD.AnimationTimer matches 26 run playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 1.5 0.8
 execute if score @s CD.AnimationTimer matches 26 run playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 1.5 0.8
