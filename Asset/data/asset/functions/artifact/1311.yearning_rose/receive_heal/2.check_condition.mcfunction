@@ -16,7 +16,7 @@
     execute run scoreboard players operation @s 10F.HealSum += $Heal Temporary
 
 # 回復量の合計が一定以上なら発動
-    execute if score @s 10F.HealSum matches 400.. run function asset:artifact/1311.yearning_rose/receive_heal/3.main
+    execute if score @s 10F.HealSum matches 500.. run function asset:artifact/1311.yearning_rose/receive_heal/3.main
 
 # リセット
     scoreboard players reset $Heal Temporary
