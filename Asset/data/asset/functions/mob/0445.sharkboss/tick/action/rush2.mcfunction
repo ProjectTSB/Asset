@@ -11,6 +11,7 @@ execute if score @s CD.AnimationTimer matches 12 run function asset:mob/0445.sha
 execute if score @s CD.AnimationTimer matches 12 run tag @s add CD.Reserving
 execute if score @s CD.AnimationTimer matches 12 run tag @s add CD.Action.Rush3
 
+#フグ食
 execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
 execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving
 execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Action.Puffer1

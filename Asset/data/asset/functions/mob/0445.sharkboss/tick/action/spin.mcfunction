@@ -12,6 +12,8 @@ execute if score @s CD.AnimationTimer matches 114 run function asset:mob/0445.sh
 execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 1 0
 execute if score @s CD.AnimationTimer matches 60 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 1 1.3
 
+#execute if score @s CD.AnimationTimer matches 60 run summon pig ~ ~10 ~ {Tags:["CD.PufferFish"]}
+
 #モーション系
 execute if score @s CD.AnimationTimer matches 60..100 run tp @s ^ ^ ^-0.1 ~ ~
 

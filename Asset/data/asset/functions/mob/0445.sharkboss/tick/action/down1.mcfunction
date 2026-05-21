@@ -7,6 +7,9 @@
 execute if score @s CD.AnimationTimer matches 0 as @e[tag=CD.ModelRoot] run function animated_java:sharkboss/animations/down_start/tween {duration:1, to_frame: 0}
 execute if score @s CD.AnimationTimer matches 40 run function asset:mob/0445.sharkboss/tick/action/utility/end
 
+#演出
+execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 1.2
+execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.horse.death hostile @a ~ ~ ~ 1 1.3
 #次のモーションを予約
 execute if score @s CD.AnimationTimer matches 40 run tag @s add CD.Reserving
 execute if score @s CD.AnimationTimer matches 40 run tag @s add CD.Action.Down2
