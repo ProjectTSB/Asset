@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/1430.shield_of_fate/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/hotbar
 
 #> Private
 # @private
@@ -18,3 +16,10 @@
     data modify storage api: Argument.FixedDamage set value true
     function api:damage/
     function api:damage/reset
+
+# sound
+    playsound minecraft:entity.evoker.prepare_attack master @a ~ ~ ~ 1.0 2 0.0
+    playsound minecraft:entity.item.break master @a ~ ~ ~ 0.5 0.7 0.0
+    playsound minecraft:entity.iron_golem.damage master @a ~ ~ ~ 0.5 0.7 0.0
+#  particle
+    particle block redstone_block ~ ~1 ~ 0 0 0 1 20
