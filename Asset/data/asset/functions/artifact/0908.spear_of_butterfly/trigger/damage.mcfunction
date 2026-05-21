@@ -20,12 +20,9 @@
     function api:entity/player/get_health_per
     execute store result score $P8.HealthPer Temporary run data get storage api: Return.HealthPer 100
 
-# 最大体力を取得
-    function api:modifier/max_health/get
-
 # 体力が50%未満か否かで最大体力によるダメージボーナスを調整する
-    execute if score $P8.HealthPer Temporary matches 50.. store result score $P8.DamageBonus Temporary run data get storage api: Return.MaxHealth 0.6
-    execute unless score $P8.HealthPer Temporary matches 50.. store result score $P8.DamageBonus Temporary run data get storage api: Return.MaxHealth 1.6
+    execute if score $P8.HealthPer Temporary matches 50.. store result score $P8.DamageBonus Temporary run attribute @s generic.max_health get 0.6
+    execute unless score $P8.HealthPer Temporary matches 50.. store result score $P8.DamageBonus Temporary run attribute @s generic.max_health get 1.6
 
 # ダメージボーナスのキャップ
     scoreboard players operation $P8.DamageBonus Temporary < $P8.DamageCap Temporary
@@ -41,7 +38,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..6] run function api:damage/
     function api:damage/reset
 
 # リセット

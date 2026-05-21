@@ -1,6 +1,12 @@
 {
     "values": [
         "asset:artifact/1311.yearning_rose/register",
+        "asset:artifact/1318.blue_bouquet/register",
+        "asset:artifact/1363.hydra_fang/register",
+        "asset:artifact/1401.yuzu/register",
+        "asset:artifact/1144.cradle_of_azure_moon/register",
+        "asset:artifact/1317.oblivious_feather/register",
+        "asset:artifact/1324.balance_star/register",
         "asset:artifact/1137.over_pulse_headgear/register",
         "asset:artifact/1228.fatalerror/register",
         "asset:artifact/1273.maidchan_plush/register",
@@ -211,10 +217,8 @@
         "asset:artifact/0252.void_transaction/register",
         "asset:artifact/0258.cat_dream_pillow/register",
         "asset:artifact/0260.heal_lv.1/register",
-        "asset:artifact/0261.holy_symbol_lv.1/register",
         "asset:artifact/0262.angel_ray_lv.1/register",
         "asset:artifact/0264.heal_lv.5/register",
-        "asset:artifact/0265.holy_symbol_lv.5/register",
         "asset:artifact/0266.angel_ray_lv.5/register",
         "asset:artifact/0268.heal_lv.10/register",
         "asset:artifact/0269.holy_symbol_lv.10/register",
