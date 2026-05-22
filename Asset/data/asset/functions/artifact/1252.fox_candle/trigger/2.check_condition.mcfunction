@@ -21,8 +21,7 @@
     execute if entity @s[tag=!CanUsed] run return fail
 
 # ダメージによる体力減少割合を取得
-    function api:modifier/max_health/get
-    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 1
+    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
     execute store result score $Damage Temporary run data get storage asset:context Damage.Amount 1000
     scoreboard players operation $Damage Temporary /= $MaxHealth Temporary
 
