@@ -21,8 +21,8 @@
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sによって空の塵になった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute positioned ~-2 ~ ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=3,dx=0.5,dx=3] run function api:damage/
+    execute positioned ~-2 ~ ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=3,dy=0.5,dz=3] run function api:damage/
     function api:damage/reset
 
 # 各プレイヤーのMPを減らす
-    execute positioned ~-2 ~ ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=3,dx=0.5,dx=3] run function asset:object/2080.aurora_missile/kill/mp_reduce
+    execute positioned ~-2 ~ ~-2 as @a[tag=!PlayerShouldInvulnerable,dx=3,dy=0.5,dz=3] run function asset:object/2080.aurora_missile/kill/mp_reduce
