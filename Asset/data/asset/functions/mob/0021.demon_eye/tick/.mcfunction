@@ -30,7 +30,7 @@
     execute unless score @s L.AttackCT matches 1.. positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[tag=!PlayerShouldInvulnerable,dx=0] at @s run function asset:mob/0021.demon_eye/tick/event/attack
 
 # カベにぶつかった際の処理
-    execute unless block ^ ^ ^0.5 #lib:no_collision as @e[type=area_effect_cloud,tag=21.Rotater,sort=nearest,limit=1] run tp @s ~ ~ ~ ~45 ~-45
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ as @e[type=area_effect_cloud,tag=21.Rotater,sort=nearest,limit=1] run tp @s ~ ~ ~ ~45 ~-45
 
 # 世界に存在しすぎた場合、消滅する
     scoreboard players remove @s L.LifeTime 1
