@@ -18,7 +18,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
-    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+    execute store result score $UserID Temporary run data get storage asset:context this.AppliedFrom
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
     data modify storage api: Argument.ApplyTrigger set value false
     function api:damage/

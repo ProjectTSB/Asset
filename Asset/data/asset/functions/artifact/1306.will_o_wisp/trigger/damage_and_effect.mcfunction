@@ -40,7 +40,7 @@
     data modify storage api: Argument.FieldOverride.Damage set value 50
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute if data storage asset:temp MPHeal run data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage asset:temp MPHeal
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @p[tag=this] UserID
+    execute store result storage api: Argument.FieldOverride.AppliedFrom int 1 run scoreboard players get @p[tag=this] UserID
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
