@@ -17,4 +17,4 @@
 # ID (int)
     data modify storage asset:object ID set value 2276
 # フィールド(オプション)
-    data modify storage asset:object Field.Scale set value 4.5f
+    data modify storage asset:object Field.Scale set value 4f
