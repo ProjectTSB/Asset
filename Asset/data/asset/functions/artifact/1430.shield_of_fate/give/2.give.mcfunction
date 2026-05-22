@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"運命","color":"#3E53FF"},{"text":"の","color":"#737FFF"},{"text":"盾","color":"#8DB2FC"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"受けるダメージが15%軽減されるが"}]','[{"text":"確率で追加ダメージを受ける"}]','[{"text":"肝心な時にあなたを護るのは心。忘れないでよね","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"装備すると耐性が15%上昇するが、"}]','[{"text":"HPが低くなると逆に耐性が下がってしまう"}]','[{"text":"肝心な時にあなたを護るのは心。忘れないでよね","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -65,7 +65,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:0.15d,Operation:"multiply_base"}
+    # data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:0.15d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
