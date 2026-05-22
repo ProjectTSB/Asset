@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"鬼火","color":"aqua"}'
+    data modify storage asset:artifact Name set value '{"text":"鬼火","color":"#2d7dc6"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"前方の敵1体にダメージを与え、鬼火を5秒間付与する","color":"white"}','{"translate":"使用時の体力またはMPが%1$s未満の時、MP回復量が%2$s倍になる","with":[{"text":"50%","color":"white"},{"text":"1.5","color":"white"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
