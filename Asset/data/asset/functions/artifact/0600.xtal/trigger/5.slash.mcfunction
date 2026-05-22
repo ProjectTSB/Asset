@@ -23,7 +23,7 @@
     scoreboard players reset $Random Temporary
 
 # ターゲット選定
-    execute positioned ^ ^ ^3 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] add Target
+    execute positioned ^ ^ ^3 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..3] add Target
 
 # ダメージ
     data modify storage api: Argument.Damage set value 300.0f
@@ -35,4 +35,4 @@
 
 # リセットする
     scoreboard players reset @s GO.Time
-    tag @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6] add Target
+    tag @e[type=#lib:living,tag=Target,tag=!Uninterferable,distance=..6] remove Target

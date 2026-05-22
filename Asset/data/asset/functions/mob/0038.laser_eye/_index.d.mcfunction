@@ -7,3 +7,4 @@
     #declare tag C.Charge
     #declare tag Landing
     #declare tag LandingTarget
+    #declare score_holder $Range
