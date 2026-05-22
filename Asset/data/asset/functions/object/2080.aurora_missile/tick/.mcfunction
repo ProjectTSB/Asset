@@ -7,11 +7,17 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 通常
-    execute if entity @s[tag=!2080.Enhanced] run function asset:object/2080.aurora_missile/tick/normal
+# 演出
+    particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~ ~ 0.2 0.2 0.2 0 3 normal @a
 
-# 強化版
-    execute if entity @s[tag=2080.Enhanced] run function asset:object/2080.aurora_missile/tick/enhanced
+# 一定間隔でplaysound
+    scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    scoreboard players operation $Interval Temporary %= $4 Const
+    execute if score $Interval Temporary matches 0 run playsound block.beacon.power_select hostile @a ~ ~ ~ 0.4 2 0
+    scoreboard players reset $Interval Temporary
+
+# 最初の20tickは誘導弾になる
+    execute if entity @s[scores={General.Object.Tick=..20}] facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-150 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # スーパーメソッド呼び出し
     execute at @s run function asset:object/super.tick
@@ -20,7 +26,3 @@
     execute store result storage asset:context this.SpinInterval._ int 0.9999999999 run data get storage asset:context this.SpinInterval._
     execute if data storage asset:context this.SpinInterval{_:0} if score @s General.Object.Tick matches 3.. run function asset:object/2080.aurora_missile/tick/spin
     execute if data storage asset:context this.SpinInterval{_:0} if score @s General.Object.Tick matches 3.. run data modify storage asset:context this.SpinInterval._ set from storage asset:context this.SpinInterval.Max
-
-
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
