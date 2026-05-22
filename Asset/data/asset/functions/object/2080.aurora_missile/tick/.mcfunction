@@ -8,7 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 演出
-    particle dust_color_transition 0.000 1.000 0.886 2 0 0.235 1 ~ ~ ~ 0.2 0.2 0.2 0 3 normal @a
+    particle dust_color_transition 0.4 1 0.8 1.5 0.5 0.65 1 ~ ~ ~ 0.1 0.1 01 0 1
 
 # 一定間隔でplaysound
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
