@@ -12,7 +12,4 @@
     data remove storage asset:temp Scale
 
 # translation
-    data modify storage asset:temp Translation set value [0f,0f,0f]
-    execute store result storage asset:temp Translation[1] float -0.0008 run data get storage asset:context this.Scale 100
-    data modify entity @s transformation.translation set from storage asset:temp Translation
-    data remove storage asset:temp Translation
+    execute store result entity @s transformation.translation[1] float -0.0008 run data get storage asset:context this.Scale 100
