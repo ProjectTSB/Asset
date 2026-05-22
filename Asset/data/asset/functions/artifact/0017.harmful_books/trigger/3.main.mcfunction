@@ -17,5 +17,5 @@
     data modify storage api: Argument.ID set value 328
     data modify storage api: Argument.FieldOverride.Damage set value 11
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute positioned ^ ^ ^2.5 as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..2.5] run function api:entity/mob/effect/give
+    execute positioned ^ ^ ^2.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2.5] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
