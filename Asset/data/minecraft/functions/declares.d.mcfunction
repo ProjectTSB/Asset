@@ -237,8 +237,10 @@
     #declare function lib:array/session/close                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/session/close.mcfunction#L1
     #declare function lib:array/session/open                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/session/open.mcfunction#L1
     #declare function lib:array/shuffle                                               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/shuffle.mcfunction#L1
-    #declare function lib:array/sort_ascend                                           from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort_ascend.mcfunction#L1
-    #declare function lib:array/sort_descend                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort_descend.mcfunction#L1
+    #declare function lib:array/sort/compound/ascend                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort/compound/ascend.mcfunction#L1
+    #declare function lib:array/sort/compound/descend                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort/compound/descend.mcfunction#L1
+    #declare function lib:array/sort/int/ascend                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort/int/ascend.mcfunction#L1
+    #declare function lib:array/sort/int/descend                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/array/sort/int/descend.mcfunction#L1
     #declare function lib:bit_array_to_integer/                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bit_array_to_integer/.mcfunction#L1
     #declare function lib:bounding_cone/                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bounding_cone/.mcfunction#L1
     #declare function lib:bounding_cylinder/                                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/functions/bounding_cylinder/.mcfunction#L1
@@ -270,8 +272,24 @@
     #declare function metric:angel/death/                                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/metric/functions/angel/death/.mcfunction#L1
     #declare function minecraft:test2                                                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/functions/test2.mcfunction#L1
     #declare function minecraft:tests/absorption_api/test                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/functions/tests/absorption_api/test.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:ascend                          from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/ascend.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:descend                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/descend.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/ascend                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/ascend.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/ascend/loop                 from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/ascend/loop.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/ascend/shift                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/ascend/shift.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/ascend/take1                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/ascend/take1.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/ascend/take2                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/ascend/take2.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/descend                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/descend.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/descend/loop                from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/descend/loop.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/descend/shift               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/descend/shift.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/descend/take1               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/descend/take1.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/descend/take2               from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/descend/take2.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/setup                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/setup.mcfunction#L1
+    #declare function natural_merge_sort_for_compound:sys/sort                        from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort_for_compound/functions/sys/sort.mcfunction#L1
     #declare function natural_merge_sort:ascend                                       from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/ascend.mcfunction#L1
+    #declare function natural_merge_sort:ascend/                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/ascend/.mcfunction#L1
     #declare function natural_merge_sort:descend                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/descend.mcfunction#L1
+    #declare function natural_merge_sort:descend/                                     from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/descend/.mcfunction#L1
     #declare function natural_merge_sort:sys/ascend                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/sys/ascend.mcfunction#L1
     #declare function natural_merge_sort:sys/ascend/loop                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/sys/ascend/loop.mcfunction#L1
     #declare function natural_merge_sort:sys/ascend/shift                             from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/sys/ascend/shift.mcfunction#L1
@@ -736,6 +754,8 @@
     # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/ScoreToHealth/data/minecraft/tags/functions/load.json#L1
     #declare tag/function minecraft:load
     #declare tag/function minecraft:tick                                              from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/minecraft/tags/functions/tick.json#L1
+    #declare tag/function natural_merge_sort:ascend                                   from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/tags/functions/ascend.json#L1
+    #declare tag/function natural_merge_sort:descend                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/tags/functions/descend.json#L1
     #declare tag/item lib:all                                                         from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/all.json#L1
     #declare tag/item lib:consumable                                                  from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/consumable.json#L1
     #declare tag/item lib:edible                                                      from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/lib/tags/items/edible.json#L1
@@ -961,6 +981,17 @@
 #   asset:spawner/*/*
 #   asset_manager:spawner/**
 #declare storage asset:spawner from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L8
+
+#> declare
+# @within
+#   function lib:array/sort/int/*
+#   natural_merge_sort:**
+#   minecraft:**
+#   **
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/_index.d.mcfunction#L8
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/descend/.mcfunction#L11
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/NaturalMergeSort/data/natural_merge_sort/functions/ascend/.mcfunction#L11
+#declare storage natural_merge_sort:
 
 #> declare
 # @within
