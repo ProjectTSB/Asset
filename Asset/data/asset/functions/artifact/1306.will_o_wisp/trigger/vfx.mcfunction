@@ -7,9 +7,10 @@
 #   asset:artifact/1306.will_o_wisp/trigger/damage_and_effect
 
 # playsound
+    particle minecraft:dust_color_transition 0.2 0.4 0.8 1 0.2 0.7 1.3 ~ ~1.2 ~ 0.4 0.4 0.4 0 30
     playsound entity.blaze.shoot player @a ~ ~ ~ 0.5 0.8
     playsound minecraft:block.fire.ambient player @a ~ ~ ~ 1 0.7
-    
+
 particle soul_fire_flame ^4 ^ ^0 ^-40000000 ^ ^0 0.000000005 0
 particle soul_fire_flame ^3.9507 ^ ^0.6257 ^-39507000 ^ ^-6257000 0.000000005 0
 particle soul_fire_flame ^3.8042 ^ ^1.236 ^-38042000 ^ ^-12360000 0.000000005 0
