@@ -14,8 +14,6 @@
     #declare score_holder $MaxHealth
     #declare score_holder $CurHealth
 
-# 失った体力の5%分回復
-
 # 現在/最大体力を取得する(100倍)
     function api:data_get/health
     execute store result score $CurHealth Temporary run data get storage api: Health 100
