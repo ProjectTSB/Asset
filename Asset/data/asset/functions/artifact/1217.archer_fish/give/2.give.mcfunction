@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アーチャー・フィッシュ","color":"#66ADFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"矢の代わりに敵に誘導する魚を発射する","color":"white"}','{"text":"フルチャージ時は追加で魚群を発射する","color":"white"}','{"text":"えーっと...これについて知ってる人いない？","color":"dark_gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"矢の代わりに敵に誘導する魚を発射する","color":"white"}','{"text":"フルチャージ時は追加で魚群も発射する","color":"white"}','{"text":"えーっと...これについて知ってる人いない？","color":"dark_gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

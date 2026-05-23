@@ -19,8 +19,8 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Color set value 4443203
     data modify storage asset:object Field.ShowCritParticle set value false
-    data modify storage asset:object Field.Range set value 24
-    data modify storage asset:object Field.Speed set value 2
+    data modify storage asset:object Field.Range set value 40
+    data modify storage asset:object Field.Speed set value 4
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.PoisonDamage set value 1
     data modify storage asset:object Field.AdditionalMPHeal set value 1

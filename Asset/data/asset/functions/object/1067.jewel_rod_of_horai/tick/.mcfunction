@@ -5,7 +5,7 @@
 # @within asset:object/alias/1067/tick
 
 #> within
-# @whithin function sset:object/alias/1067/tick/**
+# @within function asset:object/1067.jewel_rod_of_horai/tick/**
     #declare score_holder $MS.TargetUUID
     #declare score_holder $MS.AttackLevel
     #declare tag MS.AttackTarget

@@ -24,7 +24,7 @@
     execute if score @s 9G.AnimationTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 20 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
     execute if score @s 9G.AnimationTimer matches 60 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1.2
-    execute if score @s 9G.AnimationTimer matches 60 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1.4
+    execute if score @s 9G.AnimationTimer matches 60 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1.4
 
 # 終了
     execute if score @s 9G.AnimationTimer matches 76.. run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/31_1_sync_crossfire/2.end
