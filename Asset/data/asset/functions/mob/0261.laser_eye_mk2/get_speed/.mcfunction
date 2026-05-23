@@ -8,7 +8,7 @@
     execute if data storage asset:context this{Distance:"Near"} unless data storage asset:context this{PreDistance:"Near"} run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.SpeedType.Near
 
 # 遠い場合
-    execute if data storage asset:context this{Distance: "Far"} unless data storage asset:context this{PreDistance:" Far"} run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.SpeedType.Far
+    execute if data storage asset:context this{Distance: "Far"} unless data storage asset:context this{PreDistance: "Far"} run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from storage asset:context this.SpeedType.Far
 
 # super.get_speed
     function asset:mob/super.method
