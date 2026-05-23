@@ -13,9 +13,8 @@
 # 20回回復する
 
 # 回復量算出
-    function api:modifier/max_health/get
     execute store result score $HealPer Temporary run data get storage asset:context this.HealPer 10000
-    execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth
+    execute store result score $MaxHealth Temporary run attribute @s generic.max_health get
 
 # 回復
     execute store result storage api: Argument.Heal float 0.0001 run scoreboard players operation $HealPer Temporary *= $MaxHealth Temporary
