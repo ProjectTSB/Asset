@@ -16,7 +16,7 @@
     # プレイヤーが近くにいれば3秒間後退モードになる
         execute if data storage asset:context this{IsMoveBack:false} if entity @p[gamemode=!spectator,distance=..5] run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/start
     # 残りtickが0になったとき、後退モードを終了する
-        execute if data storage asset:context this{MoveBackTick:0,IsMoveBack:true} run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/end
+        execute if data storage asset:context this{MoveBackTick:{_:0},IsMoveBack:true} run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/end
     # 後退時、プレイヤーが近くにいなければ後退を終了する
         execute if data storage asset:context this{IsMoveBack:true} unless entity @p[gamemode=!spectator,distance=..10] run function asset:mob/0369.prominence_spellbook/tick/move_back_mode/end
 
