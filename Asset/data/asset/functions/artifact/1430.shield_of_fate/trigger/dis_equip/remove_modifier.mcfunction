@@ -11,6 +11,10 @@
     data modify storage api: Argument.DisableLog set value true
     function api:mp/fluctuation
 
+# 削除 (IDから)
+    data modify storage api: Argument.ID set value 354
+    execute as @s run function api:entity/mob/effect/remove/from_id
+
 # sound
     playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8
     playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 1.0 0.9 0.0

@@ -8,6 +8,11 @@
     function asset:artifact/common/use/hotbar
 # 装備タグの付与
     tag @s add 13Q.Equipped
+
+#>Effect付与
+    data modify storage api: Argument.ID set value 354
+    execute as @s run function api:entity/mob/effect/give
+    
 # sound
     playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 1.0 0.5 0.0
     
