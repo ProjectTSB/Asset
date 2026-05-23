@@ -14,11 +14,7 @@
 
 # 3(N+1)ダメージ
     execute store result score $Damage Temporary run data get storage asset:context Stack
-    scoreboard players add $Damage Temporary 1
-
-# 魔法火属性4Nダメージ
-# modifier_manualを用いて付与したMobが補正を行う
-    execute store result storage api: Argument.Damage int 3 run data get storage asset:context Stack
+    execute store result storage api: Argument.Damage int 3 run scoreboard players add $Damage Temporary 1
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID

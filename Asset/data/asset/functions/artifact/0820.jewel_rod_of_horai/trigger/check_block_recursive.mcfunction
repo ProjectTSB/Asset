@@ -1,13 +1,13 @@
 #> asset:artifact/0820.jewel_rod_of_horai/trigger/check_block_recursive
 #
-# 
+#
 #
 # @within
 #   function asset:artifact/0820.jewel_rod_of_horai/trigger/check_block
 #   function asset:artifact/0820.jewel_rod_of_horai/trigger/check_block_recursive
 
 # ブロックに当たってたらフラグ立てる
-    execute unless block ~ ~ ~ #lib:no_collision run scoreboard players set $MS.BlockDetect Temporary 1
+    execute unless block ~ ~ ~ #lib:no_collision/ run scoreboard players set $MS.BlockDetect Temporary 1
 
 # チェック位置が発動者まで達したらループ終了
     execute as @p[tag=this] facing entity @s eyes positioned as @s positioned ^ ^ ^3 rotated as 0-0-0-0-0 positioned ^ ^ ^-4 unless entity @s[distance=..5] run scoreboard players set $MS.LoopEnd Temporary 1

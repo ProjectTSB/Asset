@@ -9,8 +9,7 @@
     playsound block.enchantment_table.use player @s ~ ~ ~ 1 0 1
 
 # 回復する
-    function api:modifier/max_health/get
-    data modify storage api: Argument.Heal set from storage api: Return.MaxHealth
+    execute store result storage api: Argument.Heal double 0.01 run attribute @s generic.max_health get 100
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/
