@@ -8,9 +8,9 @@
     function asset:object/1151.dolphin_dive/tick/wave/damage/1
 
 # playsound
-    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.7 0.8
-    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.7 0.75
-    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.7 0.7
+    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.85 0.8
+    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.85 0.75
+    playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 0.85 0.7
 
 # object
     execute rotated ~000 ~ positioned ^ ^ ^1.5 run function asset:object/1151.dolphin_dive/tick/wave/summon/max_start
