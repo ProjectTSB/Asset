@@ -9,6 +9,9 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 調整班向けメモ
+# エンドでは朝と夜の両方のバフが付与されることを忘れないように
+
 # 朝と夜で異なるバフを付与
     execute if predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:357}
     execute if predicate lib:is_night run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:358}
