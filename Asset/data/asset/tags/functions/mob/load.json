@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:mob/0445.sharkboss/load",
+        "asset:mob/2002.duplicate_hit_protection_mixin/load",
         "asset:mob/0437.lawless_iron_doll/load",
         "asset:mob/0301.karmic/load",
         "asset:mob/0365.frestchika/load",
@@ -42,10 +43,8 @@
         "asset:mob/0204.infernal_watcher/load",
         "asset:mob/0206.skull_basher/0.load",
         "asset:mob/0292.trample_bot/0.load",
-        "asset:mob/0255.dependence_eye/0.load",
         "asset:mob/0287.burning_stomper/0.load",
         "asset:mob/0234.walleye/0.load",
-        "asset:mob/0274.death_saw_jiki/0.load",
         "asset:mob/0245.fire_creeper/load",
         "asset:mob/0021.demon_eye/load",
         "asset:mob/0175.queen_bee/load",
