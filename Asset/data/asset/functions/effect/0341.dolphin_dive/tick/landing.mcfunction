@@ -7,11 +7,12 @@
 # Durationを0にしてエフェクト解除
     data modify storage asset:context Duration set value 0
 
-    tp @s @s
+# 慣性リセット
+    # tp @s @s
 
 # PlayerMotion
-    data modify storage lib: Argument.VectorMagnitude set value 0.7d
-    execute rotated ~ -65 run function lib:motion/looking
+    # data modify storage lib: Argument.VectorMagnitude set value 0.7d
+    # execute rotated ~ -65 run function lib:motion/looking
 
 # Object召喚
     data modify storage api: Argument.ID set value 1151
