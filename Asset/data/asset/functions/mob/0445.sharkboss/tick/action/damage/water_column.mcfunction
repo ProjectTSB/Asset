@@ -12,3 +12,7 @@
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..1] run function api:damage/
     function api:damage/reset
+
+# Motion
+    data modify storage lib: Argument.VectorMagnitude set value 1.1d
+    execute as @a rotated ~ -65 run function lib:motion/looking

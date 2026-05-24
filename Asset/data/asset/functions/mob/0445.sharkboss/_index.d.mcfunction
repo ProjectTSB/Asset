@@ -44,6 +44,8 @@
     #declare tag CD.Action.Puffer1
     #declare tag CD.Action.Puffer2
 
+    #declare function lib:motion/looking
+
     #declare function animated_java:sharkboss/summon
     #declare function animated_java:sharkboss/animations/bite/tween
     #declare function animated_java:sharkboss/animations/bite_tail/tween
