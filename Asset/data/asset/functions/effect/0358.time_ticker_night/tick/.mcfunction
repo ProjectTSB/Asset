@@ -5,7 +5,8 @@
 # @within function asset:effect/0358.time_ticker_night/_/tick
 
 # 朝になったら効果切り替え(エンド除く)
-    execute if predicate lib:is_day unless predicate lib:dimension/is_end run function asset:effect/0358.time_ticker_night/tick/morning
+# 1tick前のディメンションがエンドの場合は付与せずに解除だけ行う
+    execute if predicate lib:is_day unless predicate lib:dimension/is_end if data storage asset:context this{InTheEnd:false} run function asset:effect/0358.time_ticker_night/tick/morning
     execute if predicate lib:is_day unless predicate lib:dimension/is_end run data modify storage asset:context Duration set value 0
 
 # 今がエンド && 前tickにエンドにいない なら朝バフを付与
