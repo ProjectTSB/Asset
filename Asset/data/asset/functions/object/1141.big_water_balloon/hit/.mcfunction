@@ -33,8 +33,8 @@
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 
 # 直撃したやつと、着弾地点の位置の範囲内にタグを付与
-    execute positioned ~-1 ~-1 ~-1 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] add Hit
-    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..4] add Hit
+    execute positioned ~-1 ~-1 ~-1 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=1,dy=1,dz=1] add Hit
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] add Hit
 
 # タグを与えた対象にダメージを与える
     execute as @e[type=#lib:living,tag=Hit,distance=..16] run function api:damage/

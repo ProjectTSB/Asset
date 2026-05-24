@@ -12,7 +12,7 @@
 
 # MP回復+50%
     data modify storage api: Argument.UUID set value [I;1,3,203,0]
-    function api:modifier/mp_regen/remove
+    function api:modifier/mp_heal/remove
 
 # 被回復量-100%
     data modify storage api: Argument.UUID set value [I;1,3,203,0]

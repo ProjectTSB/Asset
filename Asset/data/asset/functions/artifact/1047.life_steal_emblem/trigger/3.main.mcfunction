@@ -16,8 +16,7 @@
     playsound entity.blaze.death player @a[distance=..16] ~ ~ ~ 0.5 0 0
 
 # 自身に最大HPの25%のダメージを与える
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage double 0.25 run data get storage api: Return.MaxHealth
+    execute store result storage api: Argument.Damage double 0.25 run attribute @s generic.max_health get
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value 1b
@@ -29,6 +28,6 @@
 # Amount = 最大HPの8%
 # 100の時に8%
     data modify storage api: Argument.ID set value 260
-    execute store result storage api: Argument.FieldOverride.Amount double 0.0008 run data get storage api: Return.MaxHealth
+    execute store result storage api: Argument.FieldOverride.Amount double 0.0008 run attribute @s generic.max_health get
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
