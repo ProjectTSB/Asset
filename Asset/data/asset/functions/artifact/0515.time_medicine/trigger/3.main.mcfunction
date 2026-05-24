@@ -9,16 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 効果時間
-    data modify storage asset:temp Effect.Duration set value 1200
-
-# 補正量
-    data modify storage asset:temp Effect.FieldOverride.PhysicalDefense set value 0.1
-    data modify storage asset:temp Effect.FieldOverride.Heal set value 0.1
-
-    data modify storage asset:temp Effect.FieldOverride.MagicDefense set value 0.1
-    data modify storage asset:temp Effect.FieldOverride.MPHeal set value 0.1
-
 # 朝と夜で異なるバフを付与
     execute if predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:357}
     execute if predicate lib:is_night run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:358}
