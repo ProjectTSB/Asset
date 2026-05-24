@@ -1,8 +1,8 @@
-#> asset:effect/354.protecction_of_courage/register
+#> asset:effect/0354.protecction_of_courage/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/354.protecction_of_courage/_/register
+# @within function asset:effect/0354.protecction_of_courage/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
@@ -27,11 +27,11 @@
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
-    # data modify storage asset:effect ProcessOnDied set value 
+    data modify storage asset:effect ProcessOnDied set value "keep"
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect Visible set value 
+    data modify storage asset:effect Visible set value "false"
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     data modify storage asset:effect StackVisible set value false
 

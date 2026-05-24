@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"運命","color":"#3E53FF"},{"text":"の","color":"#737FFF"},{"text":"盾","color":"#8DB2FC"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"装備すると耐性が15%上昇するが、"}]','[{"text":"HPが低くなると逆に耐性が下がってしまう"}]','[{"text":"肝心な時にあなたを護るのは心。忘れないでよね","color":"gray","italic":true}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"装備すると耐性が15%上昇するが、"}]','[{"text":"体力が30%以下になると逆に耐性が15%低下する"}]','[{"text":"肝心な時にあなたを護るのは心。忘れないでよね","color":"gray","italic":true}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onDamageFromEntity"
+    data modify storage asset:artifact Trigger set value "passive"
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value 
 # 神器の発動条件 (TextComponentString) (オプション)
