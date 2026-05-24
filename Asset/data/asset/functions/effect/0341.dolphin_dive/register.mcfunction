@@ -36,4 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    # data modify storage asset:effect Field. set value 
+    data modify storage asset:effect Field.Damage set value 100f
