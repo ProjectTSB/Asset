@@ -5,6 +5,7 @@
 # @within function
 #   asset:effect/0358.time_ticker_night/end/
 #   asset:effect/0358.time_ticker_night/remove/
+#   asset:effect/0358.time_ticker_night/tick/
 
 # 魔法耐性
     data modify storage api: Argument.UUID set from storage asset:context this.UUID
