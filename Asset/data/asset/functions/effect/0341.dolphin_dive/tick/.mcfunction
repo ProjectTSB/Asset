@@ -8,10 +8,6 @@
     particle dolphin ~ ~1 ~ 0.4 0.3 0.4 0 5 normal @a
     particle dust 0.4 1 1 1 ~ ~1 ~ 0.3 0.4 0.3 0 2 normal @a
 
-# 最初の数tickは着地検知を無効とする
-    execute store result storage asset:context this.Delay int 0.9999999999 run data get storage asset:context this.Delay
-    execute unless data storage asset:context this{Delay:0} run return fail
-
 # 着地検知
     function api:data_get/on_ground
 
