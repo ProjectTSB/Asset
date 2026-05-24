@@ -36,4 +36,12 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
+
+# ダメージ
     data modify storage asset:effect Field.Damage set value 100f
+
+# 水面スタート関連
+# 水面スタートの場合、ディレイを設定しないと即座に発動してしまうため
+    data modify storage asset:effect Field.UseOnWaterSurface set value false
+    data modify storage asset:effect Field.Delay set value 6
+    data modify storage asset:effect Field.JumpedToAir set value false

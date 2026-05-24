@@ -21,6 +21,9 @@
     data modify storage lib: Argument.VectorMagnitude set value 1.1d
     execute rotated ~ -65 run function lib:motion/looking
 
+# 自身が水面にいるならそれ用のフィールドを設定しておく
+    execute if function asset:artifact/1315.dolphin_dive/trigger/predicate/water_surface run data modify storage api: Argument.FieldOverride.UseOnWaterSurface set value true
+
 # 攻撃用エフェクト付与
     data modify storage api: Argument.ID set value 341
     data modify storage api: Argument.FieldOverride.Damage set value 1000
