@@ -15,12 +15,13 @@ execute if score @s CD.AnimationTimer matches 32 run playsound minecraft:entity.
 
 
 #モーション系
-execute if score @s CD.AnimationTimer matches 0..20 run tp @s ^ ^ ^-0.1 ~ ~
-execute if score @s CD.AnimationTimer matches 21..42 run tp @s ^ ^ ^0.2 ~ ~
-execute if score @s CD.AnimationTimer matches 43..65 run tp @s ^ ^ ^0.1 ~ ~
+execute if score @s CD.AnimationTimer matches 0..20 run tp @s ^ ^ ^-0.2 ~ ~
+execute if score @s CD.AnimationTimer matches 21..42 run tp @s ^ ^ ^-0.1 ~ ~
+execute if score @s CD.AnimationTimer matches 43..59 run tp @s ^ ^ ^0.1 ~ ~
+execute if score @s CD.AnimationTimer matches 60..65 run tp @s ^ ^ ^0.2 ~ ~
 
 #軸合わせ
-execute if score @s CD.AnimationTimer matches 0..15 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
+execute if score @s CD.AnimationTimer matches 0..28 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
 
 #水柱
 execute if score @s CD.AnimationTimer matches 32 positioned ^ ^ ^4 run function asset:mob/0445.sharkboss/vfx/water_column
@@ -32,3 +33,5 @@ execute if score @s CD.AnimationTimer matches 37 positioned ^ ^ ^11.5 run functi
 execute if score @s CD.AnimationTimer matches 38 positioned ^ ^ ^13 run function asset:mob/0445.sharkboss/vfx/water_column
 execute if score @s CD.AnimationTimer matches 39 positioned ^ ^ ^14.5 run function asset:mob/0445.sharkboss/vfx/water_column
 execute if score @s CD.AnimationTimer matches 40 positioned ^ ^ ^16 run function asset:mob/0445.sharkboss/vfx/water_column
+
+execute if score @s CD.AnimationTimer matches 20 run function asset:mob/0445.sharkboss/tick/action/damage/tail

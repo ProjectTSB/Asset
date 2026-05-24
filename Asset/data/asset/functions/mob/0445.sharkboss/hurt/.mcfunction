@@ -12,6 +12,7 @@
     playsound minecraft:entity.player.swim hostile @a ~ ~ ~ 0.5 1.4
     particle minecraft:bubble_pop ~ ~ ~ 0.8 0.8 0.8 0 30 normal
     particle minecraft:splash ~ ~ ~ 1 1 1 0 10 normal
+    particle minecraft:block water ~ ~ ~ 0.6 0.6 0.6 1 10
 
 # ダウン中に殴られるとぶっ飛ぶ
     execute if entity @s[tag=CD.Down] run function asset:mob/0445.sharkboss/tick/action/utility/end

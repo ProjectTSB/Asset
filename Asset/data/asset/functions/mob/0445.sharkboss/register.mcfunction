@@ -36,3 +36,16 @@
         data modify storage asset:mob Resist.Thunder set value 1.0f
 # フィールド
     # data modify storage asset:mob Field.myValue set value 
+     #フィールド
+    # 技ごとの攻撃力設定
+        data modify storage asset:mob Field.Damage set value {Bite:5.0f,Tail:16.0f,WaterColumn:16.0f}
+
+#↓コピペしたよ
+    # 毒ポーションの設定
+        #data modify storage asset:mob Field.Poison set value {Duration:100,Stack:2}
+
+    # 鈍足の設定
+        #data modify storage asset:mob Field.Slowness set value {Duration:100,Stack:2}
+
+    # 基礎MP減少量設定
+        #data modify storage asset:mob Field.MPReduceVal set value -8
