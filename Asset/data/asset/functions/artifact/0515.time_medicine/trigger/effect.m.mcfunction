@@ -8,11 +8,11 @@
     data modify storage api: Argument.Duration set value 1200
 
 # 補正量
-    data modify storage api: Argument.FieldOverride.PhysicalDefense set value 0.1
-    data modify storage api: Argument.FieldOverride.Heal set value 0.1
+    data modify storage api: Argument.FieldOverride.Modifier.PhysicalDefense set value 0.1
+    data modify storage api: Argument.FieldOverride.Modifier.Heal set value 0.1
 
-    data modify storage api: Argument.FieldOverride.MagicDefense set value 0.1
-    data modify storage api: Argument.FieldOverride.MPHeal set value 0.1
+    data modify storage api: Argument.FieldOverride.Modifier.MagicDefense set value 0.1
+    data modify storage api: Argument.FieldOverride.Modifier.MPHeal set value 0.1
 
 # 今エンドにいるならエンド判定を設定
     execute if predicate lib:dimension/is_end run data modify storage api: Argument.FieldOverride.InTheEnd set value true

@@ -39,10 +39,10 @@
 
 # 補正関係
     data modify storage asset:effect Field.UUID set value [I;1,3,357,0]
-    data modify storage asset:effect Field.Amount.PhysicalDefense set value 0.1
-    data modify storage asset:effect Field.Amount.Heal set value 0.1
-    data modify storage asset:effect Field.Amount.MagicDefense set value 0.1
-    data modify storage asset:effect Field.Amount.MPHeal set value 0.1
+    data modify storage asset:effect Field.Modifier.PhysicalDefense set value 0.1
+    data modify storage asset:effect Field.Modifier.Heal set value 0.1
+    data modify storage asset:effect Field.Modifier.MagicDefense set value 0.1
+    data modify storage asset:effect Field.Modifier.MPHeal set value 0.1
 
 # エンド判定
     data modify storage asset:effect Field.InTheEnd set value false
