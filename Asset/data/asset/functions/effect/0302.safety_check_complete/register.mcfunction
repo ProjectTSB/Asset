@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 302
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"安全確認、よし！","color":"yellow"}'
+    data modify storage asset:effect Name set value '{"text":"安全確認よし！","color":"yellow"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"被ダメージが大きく低下する","color":"white"}']
 # 効果時間 (int) (default = API || error)
