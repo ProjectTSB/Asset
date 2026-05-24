@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0358.time_ticker_night/_/remove",
+        "asset:effect/0357.time_ticker_morning/_/remove",
         "asset:effect/0342.prayer_amidst_blight/_/remove",
         "asset:effect/0340.endless_thirst/_/remove",
         "asset:effect/0350.yuzu/_/remove",
