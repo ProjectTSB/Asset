@@ -18,7 +18,7 @@
     # 日食バフ(エンド)
         data modify storage api: Argument.FieldOverride.Modifier.Eclipse.Attack set value 0.1d
         data modify storage api: Argument.FieldOverride.Modifier.Eclipse.Defense set value 0.2d
-        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.MagicDefense set value -0.1d
+        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.Heal set value -0.1d
         data modify storage api: Argument.FieldOverride.Modifier.Eclipse.MPHeal set value -0.1d
 
 # エフェクト
