@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"時","color":"#ffea96"},{"text":"刻","color":"#d6c88b"},{"text":"み","color":"#9cadad"},{"text":"の","color":"#86a9ce"},{"text":"薬","color":"#467bb5"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"時間を封じ込めた薬"}','{"text":"60秒間、昼と夜で異なる効果を得る"}','{"translate":"%1$s-%1$s昼：%2$s、%3$s","color":"white","with":[{"text":"\\u0003","font":"space"},{"text":"物理耐性+10%","color":"green"},{"text":"与回復量+10%","color":"green"}]}','{"translate":"%1$s-%1$s夜：%2$s、%3$s","color":"white","with":[{"text":"\\u0003","font":"space"},{"text":"魔法耐性+10%","color":"green"},{"text":"MP回復量+10%","color":"green"}]}']
+    data modify storage asset:artifact Lore set value ['{"text":"時間を封じ込めた薬"}','{"text":"60秒間、昼と夜で異なる効果を得る"}','{"translate":"-%1$s昼：%2$s、%3$s","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"物理耐性+10%","color":"green"},{"text":"与回復量+10%","color":"green"}]}','{"translate":"-%1$s夜：%2$s、%3$s","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"魔法耐性+10%","color":"green"},{"text":"MP回復量+10%","color":"green"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
