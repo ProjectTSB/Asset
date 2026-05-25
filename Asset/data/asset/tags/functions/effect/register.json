@@ -1,7 +1,7 @@
 {
     "values": [
         "asset:effect/0358.time_ticker_night/_/register",
-        "asset:effect/0357.time_ticker_morning/_/register",
+        "asset:effect/0357.time_ticker_day/_/register",
         "asset:effect/0339.will_o_wisp/_/register",
         "asset:effect/0342.prayer_amidst_blight/_/register",
         "asset:effect/0340.endless_thirst/_/register",
