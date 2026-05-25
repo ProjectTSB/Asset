@@ -10,8 +10,10 @@
 # ここから先は神器側の効果の処理を書く
 
 # 調整班向けメモ
-# エンドでは朝と夜の両方のバフが付与されることを忘れないように
+# エンドでは日食バフ(隠し効果)が付与される
+# 攻撃・耐性+ 与回復量・MP回復量-
 
-# 朝と夜で異なるバフを付与
-    execute if predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:357}
-    execute if predicate lib:is_night run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:358}
+# 昼・夜・エンドで異なるバフを付与
+    execute if predicate lib:is_day unless predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:357}
+    execute if predicate lib:is_night unless predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:358}
+    execute if predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:359}

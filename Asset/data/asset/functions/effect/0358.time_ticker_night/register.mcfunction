@@ -39,10 +39,6 @@
 
 # 補正関係
     data modify storage asset:effect Field.UUID set value [I;1,3,358,0]
-    data modify storage asset:effect Field.Modifier.PhysicalDefense set value 0.1
-    data modify storage asset:effect Field.Modifier.Heal set value 0.1
-    data modify storage asset:effect Field.Modifier.MagicDefense set value 0.1
-    data modify storage asset:effect Field.Modifier.MPHeal set value 0.1
-
-# エンド判定
-    data modify storage asset:effect Field.InTheEnd set value false
+    data modify storage asset:effect Field.Modifier.Day set value {PhysicalDefense:0.1f,Heal:0.1f}
+    data modify storage asset:effect Field.Modifier.Night set value {MagicDefense:0.1f,MPHeal:0.1f}
+    data modify storage asset:effect Field.Modifier.Eclipse set value {Attack:0.1f,Defense:0.2f,Heal:-0.1f,MPHeal:-0.1f}

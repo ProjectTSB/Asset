@@ -1,4 +1,4 @@
-#> asset:effect/0357.time_ticker_day/tick/night
+#> asset:effect/0357.time_ticker_day/tick/transfer_effect.m
 #
 #
 #
@@ -8,6 +8,5 @@
     data modify storage api: Argument.ID set value 358
     execute store result storage api: Argument.Duration int 0.9999999999 run data get storage asset:context Duration
     data modify storage api: Argument.FieldOverride.Modifier set from storage asset:context this.Modifier
-    execute if predicate lib:dimension/is_end run data modify storage api: Argument.FieldOverride.InTheEnd set value true
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

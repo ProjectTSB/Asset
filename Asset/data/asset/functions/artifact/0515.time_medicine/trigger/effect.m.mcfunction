@@ -8,14 +8,18 @@
     data modify storage api: Argument.Duration set value 1200
 
 # 補正量
-    data modify storage api: Argument.FieldOverride.Modifier.PhysicalDefense set value 0.1
-    data modify storage api: Argument.FieldOverride.Modifier.Heal set value 0.1
-
-    data modify storage api: Argument.FieldOverride.Modifier.MagicDefense set value 0.1
-    data modify storage api: Argument.FieldOverride.Modifier.MPHeal set value 0.1
-
-# 今エンドにいるならエンド判定を設定
-    execute if predicate lib:dimension/is_end run data modify storage api: Argument.FieldOverride.InTheEnd set value true
+# 各バフが切り替わる場合があるので、全部の補正の情報を設定しておく
+    # 昼バフ
+        data modify storage api: Argument.FieldOverride.Modifier.Day.PhysicalDefense set value 0.1d
+        data modify storage api: Argument.FieldOverride.Modifier.Day.Heal set value 0.1d
+    # 夜バフ
+        data modify storage api: Argument.FieldOverride.Modifier.Night.MagicDefense set value 0.1d
+        data modify storage api: Argument.FieldOverride.Modifier.Night.MPHeal set value 0.1d
+    # 日食バフ(エンド)
+        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.Attack set value 0.1d
+        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.Defense set value 0.2d
+        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.MagicDefense set value -0.1d
+        data modify storage api: Argument.FieldOverride.Modifier.Eclipse.MPHeal set value -0.1d
 
 # エフェクト
     $data modify storage api: Argument.ID set value $(ID)
