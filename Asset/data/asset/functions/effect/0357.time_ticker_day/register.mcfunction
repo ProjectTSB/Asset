@@ -1,8 +1,8 @@
-#> asset:effect/0357.time_ticker_morning/register
+#> asset:effect/0357.time_ticker_day/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0357.time_ticker_morning/_/register
+# @within function asset:effect/0357.time_ticker_day/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

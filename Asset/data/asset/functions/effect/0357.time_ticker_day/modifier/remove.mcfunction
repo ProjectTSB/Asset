@@ -1,11 +1,11 @@
-#> asset:effect/0357.time_ticker_morning/modifier/remove
+#> asset:effect/0357.time_ticker_day/modifier/remove
 #
 #
 #
 # @within function
-#   asset:effect/0357.time_ticker_morning/end/
-#   asset:effect/0357.time_ticker_morning/remove/
-#   asset:effect/0357.time_ticker_morning/tick/
+#   asset:effect/0357.time_ticker_day/end/
+#   asset:effect/0357.time_ticker_day/remove/
+#   asset:effect/0357.time_ticker_day/tick/
 
 # 物理耐性
     data modify storage api: Argument.UUID set from storage asset:context this.UUID

@@ -1,8 +1,8 @@
-#> asset:effect/0357.time_ticker_morning/tick/night
+#> asset:effect/0357.time_ticker_day/tick/night
 #
 #
 #
-# @within function asset:effect/0357.time_ticker_morning/tick/
+# @within function asset:effect/0357.time_ticker_day/tick/
 
 # 効果時間とフィールドを引き継いで夜バフを付与
     data modify storage api: Argument.ID set value 358
