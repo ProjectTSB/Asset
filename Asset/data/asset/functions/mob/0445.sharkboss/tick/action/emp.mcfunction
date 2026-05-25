@@ -27,3 +27,6 @@ execute if score @s CD.AnimationTimer matches 26 run playsound minecraft:block.b
 execute if score @s CD.AnimationTimer matches 25 run playsound minecraft:entity.ender_dragon.ambient hostile @a ~ ~ ~ 1 1
 
 execute if score @s CD.AnimationTimer matches 25..50 run particle minecraft:flash ~ ~2 ~ 0 0 0 1 1 normal
+
+#ダメージ
+execute if score @s CD.AnimationTimer matches 25 positioned ~ ~ ~ run function asset:mob/0445.sharkboss/tick/action/damage/emp

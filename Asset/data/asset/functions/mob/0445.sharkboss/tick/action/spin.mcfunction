@@ -12,7 +12,7 @@ execute if score @s CD.AnimationTimer matches 114 run function asset:mob/0445.sh
 #モーション系
 execute if score @s CD.AnimationTimer matches 60..100 run tp @s ^ ^ ^-0.1 ~ ~
 
-execute if score @s CD.AnimationTimer matches 0 run function asset:mob/0445.sharkboss/vfx/tornado
+#execute if score @s CD.AnimationTimer matches 0 run function asset:mob/0445.sharkboss/vfx/tornado
 
 #軸合わせ
 #execute if score @s CD.AnimationTimer matches 65..83 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
@@ -22,3 +22,6 @@ execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.g
 execute if score @s CD.AnimationTimer matches 60 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 1 1.3
 
 #execute if score @s CD.AnimationTimer matches 60 run summon pig ~ ~10 ~ {Tags:["CD.PufferFish"]}
+
+#ダメージ
+execute if score @s CD.AnimationTimer matches 60 positioned ~ ~ ~ run function asset:mob/0445.sharkboss/tick/action/damage/spin

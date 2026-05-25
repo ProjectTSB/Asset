@@ -30,5 +30,8 @@ execute if score @s CD.AnimationTimer matches 27 run playsound minecraft:entity.
 execute if score @s CD.AnimationTimer matches 27 run particle minecraft:electric_spark ^ ^1 ^2 0.3 0.3 0.3 1 10
 
 #ダメージ
-execute if score @s CD.AnimationTimer matches 20 positioned ^ ^ ^1 run function asset:mob/0445.sharkboss/tick/action/damage/bite
-execute if score @s CD.AnimationTimer matches 28 positioned ^ ^ ^1 run function asset:mob/0445.sharkboss/tick/action/damage/bite
+#execute if score @s CD.AnimationTimer matches 24 positioned ^ ^ ^1 run function asset:mob/0445.sharkboss/tick/action/damage/bite
+execute if score @s CD.AnimationTimer matches 28 positioned ^ ^ ^3 run function asset:mob/0445.sharkboss/tick/action/damage/bite
+    # Motion
+    data modify storage lib: Argument.VectorMagnitude set value 1.5d
+    execute if score @s CD.AnimationTimer matches 30 positioned ^ ^ ^3 run execute as @a[tag=!PlayerShouldInvulnerable] rotated ~ -35 run function lib:motion/looking

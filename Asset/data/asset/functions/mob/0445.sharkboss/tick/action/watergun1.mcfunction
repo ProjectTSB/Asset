@@ -18,3 +18,7 @@ execute if score @s CD.AnimationTimer matches 31 run playsound minecraft:entity.
 execute if score @s CD.AnimationTimer matches 31 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 1 1.8
 execute if score @s CD.AnimationTimer matches 44 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 1 0.8
 execute if score @s CD.AnimationTimer matches 44 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 1 1.8
+
+execute if score @s CD.AnimationTimer matches 21 positioned ~ ~1.5 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet
+execute if score @s CD.AnimationTimer matches 31 positioned ~ ~1.5 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet
+execute if score @s CD.AnimationTimer matches 41 positioned ~ ~1.5 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet

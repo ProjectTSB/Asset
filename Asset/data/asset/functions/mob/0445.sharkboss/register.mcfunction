@@ -38,7 +38,7 @@
     # data modify storage asset:mob Field.myValue set value 
      #フィールド
     # 技ごとの攻撃力設定
-        data modify storage asset:mob Field.Damage set value {Bite:5.0f,Tail:16.0f,WaterColumn:16.0f}
+        data modify storage asset:mob Field.Damage set value {Bite:5.0f,Tail:16.0f,WaterColumn:2.0f,WaterGun:2.0f}
 
 #↓コピペしたよ
     # 毒ポーションの設定

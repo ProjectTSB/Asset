@@ -31,9 +31,13 @@ execute if score @s CD.AnimationTimer matches 26 run playsound minecraft:entity.
 #execute if score @s CD.AnimationTimer matches 27 run playsound minecraft:block.grass.break hostile @a ~ ~ ~ 1 0.9
 execute if score @s CD.AnimationTimer matches 27 run playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1 0.6
 
+
 execute if score @s CD.AnimationTimer matches 34 run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.6
 execute if score @s CD.AnimationTimer matches 36 run playsound minecraft:entity.player.splash.high_speed hostile @a ~ ~ ~ 1 1.3
 execute if score @s CD.AnimationTimer matches 38 run playsound minecraft:entity.breeze.death hostile @a ~ ~ ~ 1 0.2
+
+execute if score @s CD.AnimationTimer matches 27 run particle flash ^ ^ ^2 0 0 0 0 1 normal
+
 #水柱
 execute if score @s CD.AnimationTimer matches 38 positioned ^ ^ ^4 run function asset:mob/0445.sharkboss/vfx/water_column
 execute if score @s CD.AnimationTimer matches 39 positioned ^ ^ ^5.5 run function asset:mob/0445.sharkboss/vfx/water_column
@@ -44,3 +48,6 @@ execute if score @s CD.AnimationTimer matches 43 positioned ^ ^ ^11.5 run functi
 execute if score @s CD.AnimationTimer matches 44 positioned ^ ^ ^13 run function asset:mob/0445.sharkboss/vfx/water_column
 execute if score @s CD.AnimationTimer matches 45 positioned ^ ^ ^14.5 run function asset:mob/0445.sharkboss/vfx/water_column
 execute if score @s CD.AnimationTimer matches 46 positioned ^ ^ ^16 run function asset:mob/0445.sharkboss/vfx/water_column
+
+#ダメージ
+execute if score @s CD.AnimationTimer matches 28 positioned ^ ^ ^3 run function asset:mob/0445.sharkboss/tick/action/damage/bite
