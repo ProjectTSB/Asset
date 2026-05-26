@@ -6,7 +6,10 @@
 #   asset:artifact/1325.calamity_chain/trigger/3.main
 #   asset:artifact/1325.calamity_chain/trigger/dis_equip/not_in_hotbar
 
-# 演出
+# MP消費
+    data modify storage api: Argument.Fluctuation set value -666
+    data modify storage api: Argument.DisableLog set value true
+    function api:mp/fluctuation
 
 # デバフを得る
     data modify storage api: Argument.ID set value 360

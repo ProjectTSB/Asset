@@ -7,11 +7,6 @@
 # tag削除
     tag @s remove 10T.Equip
 
-# MP消費
-    data modify storage api: Argument.Fluctuation set value -999
-    data modify storage api: Argument.DisableLog set value true
-    function api:mp/fluctuation
-
 # 演出
     playsound minecraft:block.grindstone.use player @a ~ ~ ~ 1 1
 
