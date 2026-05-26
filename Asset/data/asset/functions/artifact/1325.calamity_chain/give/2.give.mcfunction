@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"災厄の鎖","color":"dark_red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"破滅の如き力を得るが、同時に代償を背負う","color":"white"}','{"text":"戦闘中に着脱した場合、災厄に見舞われる","color":"white"}','{"text":"災厄を編んだ呪いの鎖","color":"gray"}','{"text":"縛られた者を破滅の運命へと導く","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"破滅の如き力を得るが、常に破滅の淵に立たされる","color":"white"}','{"text":"戦闘中に着脱した場合、災厄がその身に降りかかる","color":"white"}','{"text":"災厄を編んだ呪いの鎖","color":"gray"}','{"text":"縛られた者を破滅の運命へと導く","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
