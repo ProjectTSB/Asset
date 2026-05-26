@@ -14,9 +14,14 @@
     playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1
 
 # HP回復
-    execute store result storage api: Argument.Heal double 0.0023 run attribute @s generic.max_health get 100
+    execute store result storage api: Argument.Heal double 0.0008 run attribute @s generic.max_health get 100
     function api:heal/modifier
     function api:heal/
-
-# リセット
     function api:heal/reset
+
+# リジェネ
+    data modify storage api: Argument.ID set value 351
+    data modify storage api: Argument.Duration set value 100
+    data modify storage api: Argument.FieldOverride.HealPer set value 0.015d
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
