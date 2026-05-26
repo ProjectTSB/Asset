@@ -12,4 +12,4 @@
 
 # MP回復
     data modify storage api: Argument.UUID set from storage asset:context this.UUID
-    function api:modifier/attack/base/remove
+    function api:modifier/mp_heal/remove
