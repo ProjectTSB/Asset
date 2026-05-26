@@ -6,3 +6,6 @@
 
 # 付与
     function asset:effect/0357.time_ticker_day/modifier/add
+
+# 演出
+    function asset:effect/0357.time_ticker_day/vfx/
