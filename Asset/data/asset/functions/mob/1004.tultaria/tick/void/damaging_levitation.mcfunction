@@ -10,8 +10,7 @@
     particle dust 0.718 0.188 0.188 2 ~ ~1 ~ 0.3 0.5 0.3 0 50
 
 # 割合ダメージ
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage float 0.30 run data get storage api: Return.MaxHealth 1
+    execute store result storage api: Argument.Damage float 0.30 run attribute @s generic.max_health get
 # 属性
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
