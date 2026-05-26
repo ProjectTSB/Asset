@@ -17,3 +17,6 @@
     particle ash ~ ~1.2 ~ 1 1 1 0 80
     playsound minecraft:block.chain.place player @a ~ ~ ~ 1 0.5
     playsound minecraft:block.grindstone.use player @a ~ ~ ~ 0.6 0.6
+
+# 戦闘中に装備した場合、デバフを得る
+    execute if predicate lib:in_battle run function asset:artifact/1325.calamity_chain/trigger/debuff

@@ -11,3 +11,9 @@
     data modify storage api: Argument.Fluctuation set value -999
     data modify storage api: Argument.DisableLog set value true
     function api:mp/fluctuation
+
+# 演出
+    playsound minecraft:block.grindstone.use player @a ~ ~ ~ 1 1
+
+# 戦闘中に装備した場合、デバフを得る
+    execute if predicate lib:in_battle run function asset:artifact/1325.calamity_chain/trigger/debuff
