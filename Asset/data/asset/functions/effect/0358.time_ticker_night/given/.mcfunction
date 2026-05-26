@@ -6,3 +6,6 @@
 
 # 付与
     function asset:effect/0358.time_ticker_night/modifier/add
+
+# 演出
+    function asset:effect/0358.time_ticker_night/vfx/
