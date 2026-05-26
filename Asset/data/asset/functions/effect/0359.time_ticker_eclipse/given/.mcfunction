@@ -6,3 +6,6 @@
 
 # 付与
     function asset:effect/0359.time_ticker_eclipse/modifier/add
+
+# 演出
+    function asset:effect/0359.time_ticker_eclipse/vfx/
