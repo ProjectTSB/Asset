@@ -1,8 +1,7 @@
 #> asset:object/2221.aurora_scaffold/tick/break/process/as_display.m
 #
-#
-#
-# @input args ID : int
+# @input args:
+#   ID : int
 # @within function asset:object/2221.aurora_scaffold/tick/break/process/
 
 # マクロで指定されたIDのdisplayとして実行

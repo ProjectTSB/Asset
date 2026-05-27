@@ -59,7 +59,7 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:0.035d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.035d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_heal",Amount:0.025d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.025d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照

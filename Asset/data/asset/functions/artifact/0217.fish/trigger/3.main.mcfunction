@@ -9,8 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 最大体力を取得
+    function api:modifier/max_health/get
+
 # 最大体力だけ固定回復
-    execute store result storage api: Argument.Heal double 0.01 run attribute @s generic.max_health get 100
+    data modify storage api: Argument.Heal set from storage api: Return.MaxHealth
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/

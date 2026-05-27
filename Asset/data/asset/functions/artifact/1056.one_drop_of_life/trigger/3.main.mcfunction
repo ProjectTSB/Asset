@@ -27,7 +27,8 @@
     playsound minecraft:block.amethyst_block.resonate player @a ~ ~ ~ 1 1.5
 
 # 体力を80%回復する
-    execute store result storage api: Argument.Heal float 0.8 run attribute @s generic.max_health get
+    function api:modifier/max_health/get
+    execute store result storage api: Argument.Heal float 0.8 run data get storage api: Return.MaxHealth 1
     function api:heal/modifier
     function api:heal/
     function api:heal/reset

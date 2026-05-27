@@ -7,5 +7,6 @@
 # VFX
     execute anchored eyes run particle reverse_portal ^ ^ ^ 0.25 0.25 0.25 0.5 20 normal @a
 
-# 消滅
-    function api:mob/remove
+# 消える
+    tp @s ~ -100 ~
+    kill @s

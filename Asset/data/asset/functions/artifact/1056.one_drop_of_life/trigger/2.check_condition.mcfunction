@@ -14,19 +14,15 @@
 # @private
     #declare score_holder $HealthPer
 
-# CanUsedでないならreturn
-    execute if entity @s[tag=!CanUsed] run return fail
-
-# そもそも死んでるなら発動しない
-    execute if entity @s[tag=Death] run tag @s remove CanUsed
-    execute if entity @s[tag=!CanUsed] run return fail
-
-# 体力割合が25%以下でなければreturn
+# 最大体力と現在体力の100倍を取得
     function api:entity/player/get_health_per
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
-    execute unless score $HealthPer Temporary matches ..25 run tag @s remove CanUsed
-    scoreboard players reset $HealthPer Temporary
-    execute if entity @s[tag=!CanUsed] run return fail
 
-# 3.main.mcfunctionを実行する
-    function asset:artifact/1056.one_drop_of_life/trigger/3.main
+# 数値が25以下ではないならCanUsedを削除
+    execute unless score $HealthPer Temporary matches ..25 run tag @s remove CanUsed
+
+# リセット
+    scoreboard players reset $HealthPer Temporary
+
+# CanUsedタグをチェックして3.main.mcfunctionを実行する
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1056.one_drop_of_life/trigger/3.main

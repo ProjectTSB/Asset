@@ -1,10 +1,5 @@
 {
     "values": [
-        "asset:effect/0360.calamity_bind/_/given",
-        "asset:effect/0345.topaz_protection/_/given",
-        "asset:effect/0342.prayer_amidst_blight/_/given",
-        "asset:effect/0340.endless_thirst/_/given",
-        "asset:effect/0350.yuzu/_/given",
         "asset:effect/0315.charge_of_aurora_scythe/_/given",
         "asset:effect/0621.loyalty_shield/_/given",
         "asset:effect/0653.absolute_drive/_/given",
@@ -34,6 +29,7 @@
         "asset:effect/0327.honey_poison/_/given",
         "asset:effect/0238.raimei/_/given",
         "asset:effect/0321.craving_recoil/_/given",
+        "asset:effect/0317.aurora_speed/_/given",
         "asset:effect/0318.arbit/_/given",
         "asset:effect/0301.soul_light/_/given",
         "asset:effect/0313.firesprint/_/given",

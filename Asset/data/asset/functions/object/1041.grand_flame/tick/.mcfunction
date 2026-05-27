@@ -4,8 +4,12 @@
 #
 # @within asset:object/alias/1041/tick
 
-# 演出
-    function asset:object/1041.grand_flame/tick/vfx
+# Tick加算
+    scoreboard players add @s General.Object.Tick 1
 
-# super.tick
-    execute at @s run function asset:object/super.tick
+# 演出
+    function asset:object/1041.grand_flame/tick/vfx/flying
+
+# 消滅処理
+    execute unless predicate lib:is_vehicle run function asset:object/1041.grand_flame/tick/landing
+    execute if score @s General.Object.Tick matches 100.. run function asset:object/1041.grand_flame/tick/landing

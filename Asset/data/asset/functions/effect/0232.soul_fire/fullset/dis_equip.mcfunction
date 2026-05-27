@@ -10,7 +10,11 @@
 
     # MP回復量+8%
         data modify storage api: Argument.UUID set value [I;1,3,232,0]
-        function api:modifier/mp_heal/remove
+        function api:modifier/mp_regen/remove
+
+    # 最大体力-10%
+        data modify storage api: Argument.UUID set value [I;1,3,232,0]
+        function api:modifier/max_health/remove
 
 # 演出
     # 1つ目の円

@@ -11,6 +11,4 @@
 
 # 弾を召喚
     data modify storage api: Argument.ID set value 1002
-    data modify storage api: Argument.FieldOverride.Tick set value 60
-    data modify storage api: Argument.FieldOverride.Motion set value 0.8
     execute anchored eyes positioned ^ ^ ^1 run function api:object/summon
