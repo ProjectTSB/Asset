@@ -4,10 +4,6 @@
 #
 # @within function asset:object/2049.lightning_magic/tick/
 
-#> Private
-# @private
-    #declare score_holder $Interval
-
 # 一定間隔で実行
     execute store result storage asset:context this.AttackInterval._ int 0.9999999999 run data get storage asset:context this.AttackInterval._
     execute if data storage asset:context this.AttackInterval{_:0} run function asset:object/2049.lightning_magic/tick/thunder
