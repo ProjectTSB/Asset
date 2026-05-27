@@ -20,9 +20,6 @@
     data modify storage asset:object Field.Speed set value 1
     data modify storage asset:object Field.Range set value 250
     data modify storage asset:object Field.MovePerStep set value 0.3
-# text_displayのフレーム用
-    data modify storage asset:object Field.Frame set value 5
-    data modify storage asset:object Field.FrameInterval set value 2
 # 何tickで消滅するか？
     data modify storage asset:object Field.InAirLimitTick set value 80
 # 何回攻撃したら消滅するか？

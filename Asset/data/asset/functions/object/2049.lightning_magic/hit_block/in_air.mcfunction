@@ -10,9 +10,9 @@
 # Tagを付与
     tag @s add 2049.OnGround
 
-# PassengersのScaleを変更
-    execute on passengers if entity @s[type=text_display] run data modify entity @s transformation.scale set value [1.8f,1.8f,1.8f]
-    execute on passengers if entity @s[type=item_display] run data modify entity @s transformation.scale set value [1.8f,1.8f,1.8f]
+# Passengersのtransformationを変更
+    execute on passengers run data modify entity @s transformation.scale set value [2.2f,2.2f,2.2f]
+    execute on passengers run data modify entity @s transformation.translation set value [0f,3.3f,0f]
 
 # MovePerStepを変更
     data modify storage asset:context this.MovePerStep set value 0.15
