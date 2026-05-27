@@ -11,7 +11,7 @@
     data remove storage asset:temp 2003
 
 # 下がブロックなら上を向く
-    execute at @s unless block ~ ~1 ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~-35
+    execute at @s anchored eyes positioned ^ ^ ^ unless block ~ ~-0.68 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~-35
 
 # 上がブロックなら下を向く
-    execute at @s unless block ~ ~2.5 ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~80
+    execute at @s anchored eyes positioned ^ ^ ^ unless block ~ ~0.82 ~ #lib:no_collision/ at @s run tp @s ~ ~ ~ ~ ~80
