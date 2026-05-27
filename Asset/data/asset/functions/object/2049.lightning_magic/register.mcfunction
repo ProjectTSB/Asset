@@ -25,7 +25,8 @@
 # 何回攻撃したら消滅するか？
     data modify storage asset:object Field.AttackCount set value 4
 # 攻撃のインターバル
-    data modify storage asset:object Field.AttackInterval set value 0
+    data modify storage asset:object Field.AttackInterval._ set value 0
+    data modify storage asset:object Field.AttackInterval.Max set value 8
 # ダメージ
     data modify storage asset:object Field.Damage set value 1f
     data modify storage asset:object Field.MobUUID set value -1

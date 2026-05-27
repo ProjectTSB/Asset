@@ -9,9 +9,9 @@
     #declare score_holder $Interval
 
 # 一定間隔で実行
-    execute store result storage asset:context this.AttackInterval int 0.9999999999 run data get storage asset:context this.AttackInterval
-    execute if data storage asset:context this{AttackInterval:0} run function asset:object/2049.lightning_magic/tick/thunder
-    execute if data storage asset:context this{AttackInterval:0} run data modify storage asset:context this.AttackInterval set value 8
+    execute store result storage asset:context this.AttackInterval._ int 0.9999999999 run data get storage asset:context this.AttackInterval._
+    execute if data storage asset:context this.AttackInterval{_:0} run function asset:object/2049.lightning_magic/tick/thunder
+    execute if data storage asset:context this.AttackInterval{_:0} run data modify storage asset:context this.AttackInterval._ set from storage asset:context this.AttackInterval.Max
 
 # プレイヤーの方向へ誘導する
     execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
