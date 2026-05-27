@@ -6,4 +6,4 @@
     particle snowflake ~ ~0.3 ~ 0.5 0.1 0.5 0.05 1 normal @a[distance=..16]
 
 # 周囲に鈍足を付与
-    effect give @e[type=#lib:living,tag=Enemy,tag=!Enemy.Boss,distance=..3.5] slowness 1 0 true
+    effect give @e[type=#lib:living_without_player,tag=Enemy,tag=!Enemy.Boss,distance=..3.5] slowness 1 0 true

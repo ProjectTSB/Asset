@@ -14,8 +14,7 @@
     playsound ogg:random.levelup player @a ~ ~ ~ 0.3 2
 
 # 最大体力の10%分回復する
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal float 0.1 run data get storage api: Return.MaxHealth 1
+    execute store result storage api: Argument.Heal float 0.1 run attribute @s generic.max_health get
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
