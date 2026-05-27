@@ -15,7 +15,7 @@
 
 # 移動
     execute if entity @s[tag=!2156.StartAttack,scores={General.Object.Tick=20..}] run function asset:object/2156.haruclaire_icepillar/tick/move
-    execute if entity @s[tag=!2156.StartAttack,scores={General.Object.Tick=20..}] at @s unless block ~ ~-3.2 ~ #lib:no_collision run function asset:object/2156.haruclaire_icepillar/tick/set_ground
+    execute if entity @s[tag=!2156.StartAttack,scores={General.Object.Tick=20..}] at @s unless block ~ ~-3.2 ~ #lib:no_collision/ run function asset:object/2156.haruclaire_icepillar/tick/set_ground
     execute if entity @s[tag=2156.Right,scores={General.Object.Tick=12..}] on passengers if entity @s[tag=2156.Append,tag=!2156.Prediction] at @s run tp @s ~ ~ ~ ~3 ~
     execute if entity @s[tag=!2156.Right,scores={General.Object.Tick=12..}] on passengers if entity @s[tag=2156.Append,tag=!2156.Prediction] at @s run tp @s ~ ~ ~ ~-3 ~
 

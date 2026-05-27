@@ -9,11 +9,11 @@
 #declare tag NoHoming
 
 # ターゲットにしない人にタグ付与
-    execute positioned ^35 ^ ^ run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] add NoHoming
-    execute positioned ^-35 ^ ^ run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..25] add NoHoming
+    execute positioned ^35 ^ ^ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..25] add NoHoming
+    execute positioned ^-35 ^ ^ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..25] add NoHoming
 
 # 追尾
-    $execute facing entity @e[type=#lib:living,tag=Enemy,tag=!NoHoming,tag=!Uninterferable,distance=..20,scores={MobUUID=$(TargetID)}] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-3 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    $execute facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!NoHoming,tag=!Uninterferable,distance=..20,scores={MobUUID=$(TargetID)}] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-3 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # タグリセット
-    tag @e[type=#lib:living,tag=Enemy,tag=NoHoming,tag=!Uninterferable,distance=..30] remove NoHoming
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=NoHoming,tag=!Uninterferable,distance=..30] remove NoHoming

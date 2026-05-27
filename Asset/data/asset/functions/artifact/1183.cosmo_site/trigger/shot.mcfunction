@@ -7,7 +7,7 @@
 #   asset:artifact/1183.cosmo_site/trigger/shot
 
 # 着弾検知
-    execute unless block ^ ^ ^0.5 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add Landing
     execute if entity @s[tag=!Landing,distance=29..] run tag @s add Landing
 # 演出
     particle minecraft:composter ~ ~ ~ 0.1 0.1 0.1 0 1
