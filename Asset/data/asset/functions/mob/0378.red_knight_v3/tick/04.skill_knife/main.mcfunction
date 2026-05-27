@@ -17,10 +17,10 @@
     execute if score @s AI.Tick matches 0 run playsound minecraft:entity.zombie.infect hostile @a ~ ~ ~ 2 1.5
 
 # 後ろに飛ぶ
-    execute if score @s AI.Tick matches 1 rotated ~ -10 positioned ~ ~2 ~ positioned ^ ^ ^-3 if block ~ ~ ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/common/tp
-    execute if score @s AI.Tick matches 2 rotated ~ 6 positioned ~ ~1 ~ positioned ^ ^ ^-2 if block ~ ~ ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/common/tp
-    execute if score @s AI.Tick matches 3 rotated ~ 3 positioned ~ ~0.1 ~ positioned ^ ^ ^-1 if block ~ ~ ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/common/tp
-    execute if score @s AI.Tick matches 4..16 rotated ~ -0 positioned ~ ~0 ~ positioned ^ ^ ^-0.25 if block ~ ~ ~ #lib:no_collision run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 1 rotated ~ -10 positioned ~ ~2 ~ positioned ^ ^ ^-3 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 2 rotated ~ 6 positioned ~ ~1 ~ positioned ^ ^ ^-2 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 3 rotated ~ 3 positioned ~ ~0.1 ~ positioned ^ ^ ^-1 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0378.red_knight_v3/tick/common/tp
+    execute if score @s AI.Tick matches 4..16 rotated ~ -0 positioned ~ ~0 ~ positioned ^ ^ ^-0.25 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0378.red_knight_v3/tick/common/tp
 
 # 演出
     execute if score @s AI.Tick matches 16 run playsound item.trident.throw hostile @a ~ ~ ~ 1 0.6

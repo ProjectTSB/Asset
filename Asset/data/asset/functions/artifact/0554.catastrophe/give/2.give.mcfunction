@@ -58,7 +58,8 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:6d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.knockback_resistance",Amount:0.2d,Operation:"add"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_health",Amount:-0.05d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.max_health",Amount:-0.05d,Operation:"multiply_base"}
+
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

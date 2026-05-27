@@ -20,7 +20,7 @@
 # data modify storage api: Argument.AttackType set value ...
 # data modify storage api: Argument.ElementType set value ...
 # execute ... run function api:damage/modifier
-# execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..50] run function {
+# execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..50] run function {
 #   function asset:object/call.m {method:"check_duplicate"}
 #   execute if predicate asset:object/0002.duplicate_hit_protection_mixin/is_first_hit run function api:damage/
 # }

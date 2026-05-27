@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1268.axe_of_wrath_fire/trigger/vfx/
+    execute positioned as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1268.axe_of_wrath_fire/trigger/vfx/
     playsound item.totem.use player @a ~ ~ ~ 0.9 0.8
     playsound entity.blaze.ambient player @a ~ ~ ~ 0.8 0.5
     playsound entity.blaze.shoot player @a ~ ~ ~ 0.8 0.50
@@ -22,5 +22,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
     function api:damage/reset
