@@ -1,27 +1,27 @@
-#> asset:artifact/0141.aure_soma/give/2.give
+#> asset:artifact/1342.fruit_milk_pack/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/0141.aure_soma/give/1.trigger
+# @within function asset:artifact/1342.fruit_milk_pack/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 141
+    data modify storage asset:artifact ID set value 1342
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:potion"
+    data modify storage asset:artifact Item set value "minecraft:honey_bottle"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アウレソーマ","color":"aqua"}'
+    data modify storage asset:artifact Name set value '[{"text":"フルーツ牛乳パック","color":"#FFF4B5"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を18%、MPを32%回復する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"何回かに分けて使えるおいしいフルーツ牛乳"}','[{"text":"デバフ"},{"text":"[弱/強]","color":"#FFDD66"},{"text":"を全て解除し、それなりにお腹も膨れる"}]','{"text":"さらに、体力を10回復する"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value
-    # data modify storage asset:artifact ConsumeItem.Count set value
+    # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
+    # data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 1
+    data modify storage asset:artifact RemainingCount set value 3
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
@@ -44,11 +44,13 @@
     data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
+# MP回復量 (int)
+    # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    # data modify storage asset:artifact TypeCooldown.Type set value
-    # data modify storage asset:artifact TypeCooldown.Duration set value
+    data modify storage asset:artifact TypeCooldown.Type set value "heal"
+    data modify storage asset:artifact TypeCooldown.Duration set value 300
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -60,7 +62,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {CustomPotionColor:697855,HideFlags:32}
+    # data modify storage asset:artifact CustomNBT set value {}
 
 # 神器の入手用function
     function asset:artifact/common/give
