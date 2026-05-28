@@ -21,6 +21,7 @@
 
 # リジェネ
     data modify storage api: Argument.ID set value 351
+    data modify storage api: Argument.Stack set value 2
     data modify storage api: Argument.Duration set value 100
     data modify storage api: Argument.FieldOverride.HealPer set value 0.07d
     function api:entity/mob/effect/give
