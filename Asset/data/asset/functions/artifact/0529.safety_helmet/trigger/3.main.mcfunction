@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    playsound entity.ender_eye.death player @p ~ ~ ~ 1.0 1.0
+    playsound entity.ender_eye.death player @s ~ ~ ~ 1.0 1.0
 
 # 耐性バフ付与
     data modify storage api: Argument.ID set value 302
