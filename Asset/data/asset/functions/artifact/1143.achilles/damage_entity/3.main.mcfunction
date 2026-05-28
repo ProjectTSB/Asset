@@ -7,6 +7,10 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/legs
 
+# 演出
+    particle block nether_wart_block ~ ~0.2 ~ 0.2 0.1 0.2 0 10 normal @a[distance=..15]
+    playsound entity.generic.hurt player @a[distance=..15] ~ ~0.2 ~ 0.7 0.2
+
 # デバフを付与
     data modify storage api: Argument.ID set value 299
     data modify storage api: Argument.Duration set value 400

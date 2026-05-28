@@ -37,3 +37,4 @@
 
 # フィールド
     # data modify storage asset:effect Field set value {Modifier:{Defense:0d,Speed:0d}}
+    data modify storage asset:effect Field.VfxInterval set value {_:20,Max:20}
