@@ -6,3 +6,4 @@
     #declare tag LandingTarget
     #declare tag Landing
     #declare tag 79.Ready
+    #declare score_holder $79.Range

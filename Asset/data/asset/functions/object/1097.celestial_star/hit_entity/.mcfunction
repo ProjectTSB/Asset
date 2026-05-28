@@ -21,7 +21,7 @@
 # modifier をかける
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 # ダメージを与える
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] positioned ~0.5 ~0.5 ~0.5 run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] positioned ~0.5 ~0.5 ~0.5 run function api:damage/
     function api:damage/reset
 
 # リセット

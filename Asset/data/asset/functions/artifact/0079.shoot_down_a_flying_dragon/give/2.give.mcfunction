@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"飛竜落としの術","color":"yellow","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"嘗て天を翔け世界を波乱に貶めた"}]','[{"text":"龍を討ち落としたとされる神器"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"最も近くの敵に雷撃を行う"}','{"text":"使用者が水に触れている時、水の近くにいる他の敵にも雷撃を行う"}','{"text":"雷撃は近くのプレイヤーを巻き込むことがある"}','{"text":"嘗て天を翔け世界を波乱に貶めた","color":"gray","italic":true}','{"text":"龍を討ち落としたとされる神器","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

@@ -21,7 +21,7 @@
     playsound block.chain.break hostile @a ~ ~ ~ 1 0.7
     playsound block.chain.break hostile @a ~ ~ ~ 1 1.2
     playsound block.chain.break hostile @a ~ ~ ~ 1 1.2
-    playsound item.armor.equip_netherite hostile @a ~ ~ ~ 1 0.7
+    playsound disabled_sounds:item.armor.equip_netherite hostile @a ~ ~ ~ 1 0.7
     playsound item.trident.return hostile @a ~ ~ ~ 1 1.2
     particle electric_spark ^ ^1.3 ^1 0 0 0 1 30
     particle flash ^ ^1.3 ^1 0 0 0 0 1

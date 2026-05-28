@@ -26,5 +26,5 @@
     execute if data storage api: {OnGround:1b} run return fail
 
 # 2ブロック以上浮いてたら2本追加
-    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:35,MP:50}
-    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ rotated ~-10 ~ run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:35,MP:50}
+    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ facing ^0.88 ^ ^5 run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:35,MP:50}
+    execute if function asset:artifact/1230.thunder_stiletto/trigger/check_foot anchored eyes positioned ^ ^-0.4 ^ facing ^-0.88 ^ ^5 run function asset:artifact/1230.thunder_stiletto/trigger/throw_knife.m {Damage:35,MP:50}

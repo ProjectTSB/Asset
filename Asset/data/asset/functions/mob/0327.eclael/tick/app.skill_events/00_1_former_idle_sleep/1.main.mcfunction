@@ -11,8 +11,8 @@
 ## あくび
 # animated javaアニメーション再生 (長さ：94tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/00_1_former_idle_sleep/3.1.play_start_animation
-    execute if score @s 93.AnimationTimer matches 45 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-    execute if score @s 93.AnimationTimer matches 65 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s 93.AnimationTimer matches 45 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+    execute if score @s 93.AnimationTimer matches 65 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
 
 ## 居眠り
 # animated javaアニメーション再生 (長さ：65tick)
@@ -23,8 +23,8 @@
 ## 起床
 # animated javaアニメーション再生 (長さ：74tick)
     execute if score @s 93.AnimationTimer matches 159 run function asset:mob/0327.eclael/tick/app.skill_events/00_1_former_idle_sleep/3.3.play_end_animation
-    execute if score @s 93.AnimationTimer matches 164 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-    execute if score @s 93.AnimationTimer matches 210 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+    execute if score @s 93.AnimationTimer matches 164 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+    execute if score @s 93.AnimationTimer matches 210 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
 
 # 終了
     execute if score @s 93.AnimationTimer matches 235.. run function asset:mob/0327.eclael/tick/app.skill_events/00_1_former_idle_sleep/2.end

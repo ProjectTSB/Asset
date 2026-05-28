@@ -26,7 +26,7 @@
 # ハメ対策でのtp処理
 # スキル中は使用不可
 # ハメ対策
-    execute if entity @s[scores={General.Mob.Tick=..-1,26.TPCool=..0}] unless block ~ ~ ~ #lib:no_collision_without_fluid unless block ~ ~ ~ #walls run tag @s add 26.Teleport
+    execute if entity @s[scores={General.Mob.Tick=..-1,26.TPCool=..0}] unless block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~ ~ #walls run tag @s add 26.Teleport
 
 # tpする
     execute if entity @s[tag=26.Teleport] run function asset:mob/0078.messenger_of_thunder/tick/teleport

@@ -20,7 +20,7 @@
     execute if entity @s[scores={General.Mob.Tick=20}] facing entity @p[gamemode=!spectator,distance=..32] eyes run tp @s ~ ~ ~ ~ ~
 
 # 空中なら降りる
-    execute if entity @s[scores={General.Mob.Tick=20..}] if block ~ ~-0.2 ~ #lib:no_collision_without_fluid run tp @s ~ ~-0.2 ~
+    execute if entity @s[scores={General.Mob.Tick=20..}] if block ~ ~-0.2 ~ #lib:no_collision/without_fluid run tp @s ~ ~-0.2 ~
 
 # 実行時間を移す
     execute if entity @s[scores={General.Mob.Tick=20..}] run scoreboard players operation $Interval Temporary = @s General.Mob.Tick

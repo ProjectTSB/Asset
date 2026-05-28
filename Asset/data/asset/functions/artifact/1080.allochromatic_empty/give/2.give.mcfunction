@@ -58,7 +58,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     data modify storage asset:artifact DisableBreakSound set value true
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Wi-ki"]
+    data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 

@@ -18,7 +18,7 @@
 # ダメージ設定
     execute store result storage api: Argument.FieldOverride.Damage int 1 run random value 1150..1650
 # 飛距離設定
-    data modify storage api: Argument.FieldOverride.Speed set value 1
+    data modify storage api: Argument.FieldOverride.Motion set value 1
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute anchored eyes positioned ^ ^ ^1 run function api:object/summon

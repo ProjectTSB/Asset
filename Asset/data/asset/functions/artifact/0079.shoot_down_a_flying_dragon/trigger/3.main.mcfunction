@@ -26,16 +26,16 @@
 
 # 対象を設定
     # 前提として近い1体はHit確定
-        tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] add Hit
+        tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] add Hit
 
     # 自身が水の近くにいた場合($AroundWater=1..)、「r=..10にいる、周囲に水がある敵」も対象となる
     # //要するに自分も相手も水の近くにいたら範囲攻撃！！
         # MobのTemporaryはMob周囲の水の数に設定(ちょっと広めに判定をとる)
-            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
+            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
         # as Mob：@s のTemporaryが1..ならHitする
-            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
-        # プレイヤーへの誤Hit処理 HitしたMobの0.05m以内にいると自分にもあたる やっぱPKしたいじゃぁん？
-            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.05] run tag @s add Hit
+            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
+        # プレイヤーへの誤Hit処理 HitしたMobの近くにいると自分にもあたる やっぱPKしたいじゃぁん？
+            execute at @e[type=#lib:living_without_player,tag=Hit,distance=..10] as @a[distance=..0.10] run tag @s add Hit
 
 
 # ダメージを設定
@@ -48,7 +48,6 @@
     # 引数初期化
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Thunder"
-        data modify storage api: Argument.DamageType set value "Projectile"
 
     # //ここ時点で$AttackStrengthは0..3をとる
     # AttackStrengthに従ってダメージを設定
@@ -61,7 +60,7 @@
 
 # 演出
     # Particle
-        execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] run particle enchanted_hit ~ ~2 ~ 0.02 5 0.02 0 75 force @a
+        execute at @e[type=#lib:living,tag=Hit,distance=..10] run particle enchanted_hit ~ ~2 ~ 0.02 5 0.02 0 75 force @a
         execute if score $AttackStrength Temporary matches 0 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 0.941 1 0.11 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
         execute if score $AttackStrength Temporary matches 1 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 1 0.69 0.11 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
         execute if score $AttackStrength Temporary matches 2 at @e[type=#lib:living,tag=Hit,distance=..10] run particle dust 1 0.176 0.176 0.5 ~ ~2 ~ 0.02 5 0.02 0 150 force @a
@@ -73,14 +72,16 @@
 
 # 効果
     # 通常Hit処理
-        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function api:damage/
+        function api:damage/single_damage_session/open
+        execute as @e[type=#lib:living,tag=Hit,distance=..10] run function asset:artifact/0079.shoot_down_a_flying_dragon/trigger/damage_foreach
+        function api:damage/single_damage_session/close
 
     # 敵1体の浮遊を解除
         data modify storage api: Argument.ID set value 125
         execute as @e[type=#lib:living,tag=Hit,distance=..10,limit=1] run function api:entity/mob/effect/remove/from_id
 
 # リセット
-    tag @e[type=#lib:living,type=!player,tag=Hit,distance=..10] remove Hit
+    tag @e[type=#lib:living,tag=Hit,distance=..10] remove Hit
     scoreboard players reset @e[type=#lib:living,tag=!Uninterferable,distance=..10] Temporary
     scoreboard players reset $Weather Temporary
     scoreboard players reset $AroundWater Temporary

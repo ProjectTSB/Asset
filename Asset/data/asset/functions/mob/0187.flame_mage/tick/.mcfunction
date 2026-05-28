@@ -20,5 +20,8 @@
 # 攻撃
     execute if entity @s[scores={General.Mob.Tick=10..}] run function asset:mob/0187.flame_mage/tick/shoot_magic
 
+# リセット
+    execute if entity @s[scores={General.Mob.Tick=10..}] run function asset:mob/0187.flame_mage/tick/reset
+
 # 射撃攻撃キャンセル
     execute unless entity @p[distance=..20] unless entity @s[scores={General.Mob.Tick=0..}] run scoreboard players set @s General.Mob.Tick -60

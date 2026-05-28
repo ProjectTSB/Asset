@@ -6,8 +6,8 @@
 
 #> インターバル
 # @private
-#declare score_holder $SoundInterval
-#declare score_holder $ParticleInterval
+    #declare score_holder $SoundInterval
+    #declare score_holder $ParticleInterval
 
 # 実行時間を移す
     scoreboard players operation $SoundInterval Temporary = @s AI.Tick

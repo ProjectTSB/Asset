@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/0327.eclael/hurt/
 
+# 未使用ファイル
+
 # 耐性消去
     effect clear @s resistance
 

@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.skill_events/**
 
+# 未使用ファイル
+
 # 耐性付与
     effect clear @s resistance
     effect give @s resistance infinite 5 true

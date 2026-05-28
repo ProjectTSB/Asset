@@ -4,6 +4,8 @@
 #
 # @within function asset:mob/0327.eclael/tick/**
 
+# 未使用ファイル
+
 # 弱い耐性付与
     effect clear @s resistance
     effect give @s resistance infinite 2 true

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"きのこの山","color":"gold","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"持ちやすい。しかもうまい！"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の20%分回復する","color":"white"}','{"text":"持ちやすい。しかもうまい！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

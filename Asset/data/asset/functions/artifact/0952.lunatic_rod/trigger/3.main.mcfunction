@@ -21,7 +21,7 @@
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/0952.lunatic_rod/trigger/4.recursive
 
 # ヒットした対象にダメージ distance=..40なのは広めに判定をとっているため
-    data modify storage api: Argument.Damage set value 300.0f
+    data modify storage api: Argument.Damage set value 200.0f
     data modify storage api: Argument.AttackType set value "Magic"
     function api:damage/modifier
     execute as @e[type=#lib:living,tag=Hit,distance=..15] run function api:damage/

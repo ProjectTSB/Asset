@@ -24,12 +24,12 @@
 # $Diffの差が2以上なら、チャージをリセット
     execute if score $Diff Temporary matches 2.. run scoreboard players reset @s 68.Charge
 
-# チャージが60以上でなければCanUsedを削除
-    execute unless score @s 68.Charge matches 60.. run tag @s remove CanUsed
+# チャージが40以上でなければCanUsedを削除
+    execute unless score @s 68.Charge matches 40.. run tag @s remove CanUsed
 
-# チャージが60以上溜まったならスコアをリセット
-    execute if score @s 68.Charge matches 60.. run scoreboard players reset @s 68.LatestChargeTick
-    execute if score @s 68.Charge matches 60.. run scoreboard players reset @s 68.Charge
+# チャージが40以上溜まったならスコアをリセット
+    execute if score @s 68.Charge matches 40.. run scoreboard players reset @s 68.LatestChargeTick
+    execute if score @s 68.Charge matches 40.. run scoreboard players reset @s 68.Charge
 
 # リセット
     scoreboard players reset $Diff Temporary
