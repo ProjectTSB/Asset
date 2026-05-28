@@ -10,5 +10,6 @@
 # デバフを付与
     data modify storage api: Argument.ID set value 299
     data modify storage api: Argument.Duration set value 400
+    data modify storage api: Argument.FieldOverride.Modifier set value {Defense:-0.50d,Speed:-0.50d}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
