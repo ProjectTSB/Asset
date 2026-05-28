@@ -39,4 +39,4 @@
     data modify storage asset:effect Field.Tick._ set value 0
     data modify storage asset:effect Field.Tick.Max set value 20
     data modify storage asset:effect Field.Damage set value 1
-    data modify storage asset:effect Field.UserID set value -1
+    data modify storage asset:effect Field.AppliedFrom set value -1
