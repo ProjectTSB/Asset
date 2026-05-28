@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0299.achilles_tendon_rupture/_/tick",
         "asset:effect/0351.nectar_regeneration/_/tick",
         "asset:effect/0360.calamity_bind/_/tick",
         "asset:effect/0339.will_o_wisp/_/tick",

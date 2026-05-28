@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0299.achilles_tendon_rupture/_/register",
         "asset:effect/0351.nectar_regeneration/_/register",
         "asset:effect/0117.slowness/_/register",
         "asset:effect/0360.calamity_bind/_/register",
