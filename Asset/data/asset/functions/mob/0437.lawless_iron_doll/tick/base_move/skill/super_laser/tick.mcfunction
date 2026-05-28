@@ -42,7 +42,7 @@
     execute if score @s General.Mob.Tick matches 47..77 positioned ~ ~3 ~ run function asset:mob/0437.lawless_iron_doll/tick/base_move/skill/super_laser/big_laser/tick
 
 # ニュートラルポーズに戻る
-    execute if score @s General.Mob.Tick matches 90.. unless block ~ ~-0.5 ~ #lib:no_collision as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
+    execute if score @s General.Mob.Tick matches 90.. unless block ~ ~-0.5 ~ #lib:no_collision/ as @e[type=item_display,tag=C5.ModelRoot.Target,sort=nearest,limit=1] run function animated_java:lawless_iron_doll/animations/neutral/tween {to_frame: 0, duration: 5}
 
 # おつかれタグを付与する。次の行動は絶対歩行になる。
     execute if score @s General.Mob.Tick matches 110.. run tag @s add C5.Exhausted

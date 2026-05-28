@@ -16,7 +16,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..128,limit=1] at @s run function lib:spread_entity/
 
 # 付近のランダムな敵一体を対象として狙う
-    execute positioned ~-40 ~-8 ~-40 run tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=79,dy=24,dz=79,sort=random,limit=1] add MeteorTarget
+    execute positioned ~-40 ~-8 ~-40 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=79,dy=24,dz=79,sort=random,limit=1] add MeteorTarget
     execute if entity @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] store result storage api: Argument.FieldOverride.TargetID int 1 run scoreboard players get @e[type=#lib:living,tag=MeteorTarget,distance=..50,limit=1] MobUUID
 
 # メテオのブレ用の拡散

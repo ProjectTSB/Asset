@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle minecraft:block blue_ice ~ ~1 ~ 0.5 0.5 0.5 2 50
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle minecraft:block blue_ice ~ ~1 ~ 0.5 0.5 0.5 2 50
     playsound minecraft:item.trident.throw player @a ~ ~ ~ 1 1
     playsound minecraft:entity.player.swim player @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.dolphin.splash player @a ~ ~ ~ 1 1
@@ -20,5 +20,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
