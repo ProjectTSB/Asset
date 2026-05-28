@@ -9,7 +9,7 @@
     execute if score @s 9G.AnimationTimer matches 1 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/11_sc_start/3.play_animation
 
 # 演出
-    execute if score @s 9G.AnimationTimer matches 1 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9G.AnimationTimer matches 1 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
     execute if score @s 9G.AnimationTimer matches 11 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
 
 # 状態更新

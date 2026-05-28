@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"グランド・フレイム","color":"#e23724","bold":true}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身の体力割合に比例してダメージが増加する(最大300)","color":"white"}','{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}']
+    data modify storage asset:artifact Lore set value ['{"text":"着弾すると爆炎を生み出す弾を発射する","color":"white"}','{"text":"自身の体力割合に比例してダメージが増加する(最大300)","color":"white"}','{"text":"その杖の先から放たれる灼熱の炎は","color":"#FFAB03"}','{"text":"歯向かう者すべてを焼き尽くすだろう","color":"#FFAB03"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

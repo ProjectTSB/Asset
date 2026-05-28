@@ -5,7 +5,7 @@
 # @within function asset:effect/0608.sinking/_/tick
 
 # 演出
-    particle dust 0.149 0.682 0.741 1 ~ ~1.2 ~ 0.6 0.3 0.6 0 3 normal @a
+    execute if predicate lib:random_pass_per/20 run particle dust 0.149 0.682 0.741 0.8 ~ ~1.2 ~ 0.6 0.3 0.6 0 1 normal @a
 
 # (Lv - 1)を計算し、ストレージに代入
     execute store result score $Lv Temporary run data get storage asset:context Stack

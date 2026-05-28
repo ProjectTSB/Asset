@@ -16,10 +16,7 @@
         scoreboard players remove @s ZX.RemainingCount 1
 
 # 回復処理
-    # 最大体力を取得
-        function api:modifier/max_health/get
-        execute store result storage api: Argument.Heal double 0.01 run data get storage api: Return.MaxHealth 1.0
-    # 回復
-        function api:heal/modifier
-        function api:heal/
-        function api:heal/reset
+    execute store result storage api: Argument.Heal double 0.0001 run attribute @s generic.max_health get 100
+    function api:heal/modifier
+    function api:heal/
+    function api:heal/reset

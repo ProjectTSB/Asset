@@ -9,5 +9,5 @@
 
 # 補正を削除する
     data modify storage api: Argument.UUID set value [I;1,3,-1,0]
-    data modify storage api: Argument.UUID[2] set from storage asset:context id
+    data modify storage api: Argument.UUID[2] set from storage asset:context originID
     function api:modifier/defense/base/remove

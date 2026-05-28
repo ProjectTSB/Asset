@@ -16,7 +16,7 @@
     # 判定
         data modify storage lib: Argument.BoundingFan set value {Angle:45,Radius:5,Height:5,Selector:"@a[tag=!PlayerShouldInvulnerable,distance=..16]"}
     # 扇型の判定を出す
-        function lib:bounding_fan/
+        execute positioned ~ ~-2.5 ~ run function lib:bounding_fan/
     # 与えるダメージ
         data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash2
     # 属性1

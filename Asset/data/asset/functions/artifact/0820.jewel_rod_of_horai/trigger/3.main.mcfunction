@@ -16,7 +16,7 @@
     function asset:artifact/0820.jewel_rod_of_horai/trigger/3.3.4.get_mp_heal
 
 # 攻撃音
-    playsound ogg:ambient.nether.warped_forest.here1 player @a ~ ~ ~ 1 2
+    playsound ogg:ambient.nether.warped_forest.here1 player @a[distance=..12] ~ ~ ~ 0.4 2
 
 # 攻撃発生位置記録用オブジェクト設置
     data modify storage api: Argument.ID set value 1067

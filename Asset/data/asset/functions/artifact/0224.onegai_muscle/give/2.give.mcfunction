@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"お願いマッスル","color":"green"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"筋肉に力を溜め、バリアを10得る"}]','{"text":"ハイ！ハイ！ハイ！ハイ！","color":"gray"}','{"text":"ワン！ツー！ワン！ツー！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"筋肉に力を溜め、バリアを12得る"}]','{"text":"ハイ！ハイ！ハイ！ハイ！","color":"gray"}','{"text":"ワン！ツー！ワン！ツー！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"3秒間長押し"}'
+    data modify storage asset:artifact Condition set value '{"text":"2秒間長押し"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

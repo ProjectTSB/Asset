@@ -16,6 +16,6 @@
 
 # バリアバフ
     data modify storage api: Argument.ID set value 333
-    data modify storage api: Argument.FieldOverride.Barrier set value 10
+    data modify storage api: Argument.FieldOverride.Barrier set value 12
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
