@@ -8,9 +8,6 @@
 # @private
     #declare score_holder $UserID
 
-# 演出
-    playsound minecraft:block.fire.extinguish neutral @a ~ ~ ~ 1 2
-
 # User特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
 
