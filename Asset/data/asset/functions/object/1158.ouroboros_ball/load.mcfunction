@@ -5,5 +5,7 @@
 # @within tag/function asset:object/load
 
 #> 定義類はここに
-# @within function asset:object/1158.ouroboros_ball/**
-    scoreboard objectives add 
+# @within function
+#   asset:object/1158.ouroboros_ball/**
+#   asset:effect/0361.ouroboros_echo/**
+    scoreboard objectives add 1158.DamageHolder dummy
