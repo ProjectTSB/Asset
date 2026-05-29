@@ -11,8 +11,8 @@
 # 常時の音
     playsound block.furnace.fire_crackle player @a ~ ~ ~ 1 0.8
 
-# ダメージのデータ引き継ぎ
-    data modify storage asset:context this.Damage set from storage asset:context PreviousField.Damage
+# データ引き継ぎ
+    data modify storage asset:context this set from storage asset:context PreviousField
 
 # チャージ段階取得
     execute store result score $Charge Temporary run data get storage asset:context PreviousField.Charge
