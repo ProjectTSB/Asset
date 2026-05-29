@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1413
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value carrot_on_a_stick
+    data modify storage asset:artifact Item set value "carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value "ライター"
+    data modify storage asset:artifact Name set value '{"text":"ライター","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ["火をつけるための神器。", "火をつける以外の用途はない。"]
+    data modify storage asset:artifact Lore set value ['{"text":"火を付けるための神器"}','{"text":"それ以外の用途はない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
