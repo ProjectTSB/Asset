@@ -1,8 +1,8 @@
-#> asset:artifact/0600.xtal/trigger/5.slash
+#> asset:artifact/0600.xtal/trigger/slash
 #
 #
 #
-# @within function asset:artifact/0600.xtal/trigger/4.wait_time
+# @within function asset:artifact/0600.xtal/trigger/schedule/wait
 
 #> Private
 # @private
