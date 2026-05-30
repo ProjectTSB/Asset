@@ -8,7 +8,6 @@
 
 #> Private
 # @private
-    #declare score_holder $Random
     #declare score_holder $AttackCount
 
 # 難易度値に比例して攻撃回数を設定
@@ -27,5 +26,4 @@
     function api:object/summon
 
 # リセット
-    scoreboard players reset $Random Temporary
     scoreboard players reset $AttackCount Temporary
