@@ -16,6 +16,6 @@
     execute if score @s CD.AnimationTimer matches 40 run tag @s add CD.Reserving
     execute if score @s CD.AnimationTimer matches 40 run tag @s add CD.Action.Down2
 
-    execute if score @s CD.AnimationTimer matches 0 facing entity @a[tag=CD.Target,sort=nearest,limit=1] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
+    execute if score @s CD.AnimationTimer matches 0 facing entity @a[tag=CD.Player.Target,sort=nearest,limit=1] feet rotated ~ 0 run tp @s ~ ~ ~ ~ ~
     execute if score @s CD.AnimationTimer matches 0 run tp @s ^ ^ ^-1.5
     execute if score @s CD.AnimationTimer matches 10..40 run tp @s ^ ^ ^-0.3

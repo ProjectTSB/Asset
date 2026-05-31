@@ -12,7 +12,7 @@
   execute at @s as @e[type=item_display,tag=CD.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
 
 #帯電状態ならパーティクルを出す
-  execute if entity @s[tag=CD.Electrified] run particle cloud ~ ~ ~ 1 1 1 0 2
+  execute if entity @s[tag=CD.Electrified] run particle dust 0.471 0.824 1.000 1 ~ ~ ~ 0.471 0.824 1.000 1 10 normal
 
 #帯電時はタイマーを進める
   scoreboard players add @s General.Mob.Tick 1
@@ -59,6 +59,20 @@
 
   execute if entity @s[tag=CD.Action.Puffer1] at @s run function asset:mob/0445.sharkboss/tick/action/puffer1
   execute if entity @s[tag=CD.Action.Puffer2] at @s run function asset:mob/0445.sharkboss/tick/action/puffer2
+
+  #吹っ飛ばし処理
+
+   #アクション処理後、タグがあれば吹っ飛ばす
+   execute at @s as @a if entity @a[tag=CD.Player.Launch.First] unless score @s CD.Player.LaunchCounter matches 1.. run function asset:mob/0445.sharkboss/tick/utility/launch/first
+
+   #ダメージ干渉対策として2tick後に再度吹っ飛ばす
+   execute at @s as @a if entity @a[tag=CD.Player.Launch.Second] if score @s CD.Player.LaunchCounter matches 2.. run function asset:mob/0445.sharkboss/tick/utility/launch/second
+   
+   #カウンター増加
+   execute at @s as @a if entity @s[tag=CD.Player.Launch.Second] run scoreboard players add @s CD.Player.LaunchCounter 1
+
+
+
   #execute if score @s CD.AnimationTimer matches 100.. run function asset:mob/0445.sharkboss/tick/action/utility/end
 
 #タイマーに応じた処理↓試作用

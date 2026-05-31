@@ -11,9 +11,9 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに噛み砕かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..8] run function api:damage/
     function api:damage/reset
 
-    # Motion
-    data modify storage lib: Argument.VectorMagnitude set value 5.1d
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] rotated ~ -75 run function lib:motion/looking
+# 吹っ飛ばしタグ
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..8] add CD.Player.Launch.First
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..8] add CD.Player.Launch.VerticalStrong

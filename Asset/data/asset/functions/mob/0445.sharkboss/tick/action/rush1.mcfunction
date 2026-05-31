@@ -17,8 +17,8 @@ execute if score @s CD.AnimationTimer matches 0..20 run tp @s ^ ^ ^-0.2
 execute if score @s CD.AnimationTimer matches 40..50 run tp @s ^ ^ ^0.7
 
 #軸合わせ
-execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
-execute if score @s CD.AnimationTimer matches 40..50 run function asset:mob/0445.sharkboss/tick/action/utility/alignment_yowai
+execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
+execute if score @s CD.AnimationTimer matches 40..50 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/light
 
 #演出
 execute if score @s CD.AnimationTimer matches 10 run playsound minecraft:entity.dolphin.splash hostile @a ~ ~ ~ 1 0.9

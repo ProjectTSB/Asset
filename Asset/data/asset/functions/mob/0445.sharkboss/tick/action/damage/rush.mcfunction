@@ -12,3 +12,7 @@
     function api:damage/modifier
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2] run function api:damage/
     function api:damage/reset
+
+# 吹っ飛ばしタグ
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add CD.Player.Launch.First
+    tag @a[tag=!PlayerShouldInvulnerable,distance=..2] add CD.Player.Launch.VerticalLight

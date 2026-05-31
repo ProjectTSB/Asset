@@ -25,7 +25,7 @@ execute if score @s CD.AnimationTimer matches 12 run function asset:mob/0445.sha
     execute if score @s CD.AnimationTimer matches 0..12 run tp @s ^ ^ ^0.7
 
 #軸合わせ
-    execute if score @s CD.AnimationTimer matches 0..12 run function asset:mob/0445.sharkboss/tick/action/utility/alignment_yowai
+    execute if score @s CD.AnimationTimer matches 0..12 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/light
 
 
 #演出

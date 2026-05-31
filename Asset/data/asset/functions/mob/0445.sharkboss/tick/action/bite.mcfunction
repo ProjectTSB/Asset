@@ -16,7 +16,7 @@ execute if score @s CD.AnimationTimer matches 36..55 run tp @s ^ ^ ^0.2 ~ ~
 execute if score @s CD.AnimationTimer matches 46..53 run tp @s ^ ^ ^0.1 ~ ~
 
 #軸合わせ
-execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
+execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
 
 
 #演出
@@ -31,7 +31,7 @@ execute if score @s CD.AnimationTimer matches 27 run particle minecraft:electric
 
 #ダメージ
 #execute if score @s CD.AnimationTimer matches 24 positioned ^ ^ ^1 run function asset:mob/0445.sharkboss/tick/action/damage/bite
-execute if score @s CD.AnimationTimer matches 28 positioned ^ ^ ^3 run function asset:mob/0445.sharkboss/tick/action/damage/bite
+execute if score @s CD.AnimationTimer matches 28 positioned ^ ^ ^2.6 run function asset:mob/0445.sharkboss/tick/action/damage/bite
     # Motion
     #data modify storage lib: Argument.VectorMagnitude set value 1.5d
     #execute if score @s CD.AnimationTimer matches 30 positioned ^ ^ ^3 run execute as @a[tag=!PlayerShouldInvulnerable] rotated ~ -35 run function lib:motion/looking

@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function asset:mob/0445.sharkboss/tick/action/watergun1
+# @within function asset:mob/0445.sharkboss/tick/action/**
 
 # 弾召喚
     data modify storage api: Argument.ID set value 2290

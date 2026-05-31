@@ -5,4 +5,4 @@
 # @within asset:object/alias/2290/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"],teleport_duration:1,item:{id:"minecraft:blue_stained_glass",Count:1b}}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit"],teleport_duration:1,width:0.5f,height:0.5f,item:{id:"minecraft:blue_stained_glass",Count:1b}}

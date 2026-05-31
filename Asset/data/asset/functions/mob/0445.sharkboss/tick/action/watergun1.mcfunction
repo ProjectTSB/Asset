@@ -9,7 +9,7 @@ execute if score @s CD.AnimationTimer matches 73 run function asset:mob/0445.sha
 
 
 #モーション系
-execute if score @s CD.AnimationTimer matches 0..73 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
+execute if score @s CD.AnimationTimer matches 0..73 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
 
 #演出
 execute if score @s CD.AnimationTimer matches 21 run playsound minecraft:entity.breeze.jump hostile @a ~ ~ ~ 1 0.8

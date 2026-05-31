@@ -21,7 +21,7 @@ execute if score @s CD.AnimationTimer matches 33..40 run tp @s ^ ^ ^0.2 ~ ~
 execute if score @s CD.AnimationTimer matches 41..55 run tp @s ^ ^ ^0.1 ~ ~
 
 #軸合わせ
-execute if score @s CD.AnimationTimer matches 0..26 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
+execute if score @s CD.AnimationTimer matches 0..26 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
 
 #水柱
 execute if score @s CD.AnimationTimer matches 32 positioned ^ ^ ^4 run function asset:mob/0445.sharkboss/vfx/water_column

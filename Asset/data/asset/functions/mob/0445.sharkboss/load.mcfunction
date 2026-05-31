@@ -11,4 +11,5 @@
     scoreboard objectives add CD.ElectrifiedActionCounter dummy
     scoreboard objectives add CD.TransitionCounter dummy
     scoreboard objectives add CD.DpsCheckThreshold dummy
+    scoreboard objectives add CD.Player.LaunchCounter dummy
     #↑後でリセットも書いておこう

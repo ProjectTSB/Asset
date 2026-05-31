@@ -22,7 +22,7 @@
 
 #プレイヤーが近距離かどうかをタグ付け、このdistanceで分岐が決まるので要調整
     execute if entity @s[tag=CD.CloseRangeAction] run tag @s remove CD.CloseRangeAction
-    execute at @s if entity @a[tag=CD.Target,distance=..9,sort=nearest,limit=1] run tag @s add CD.CloseRangeAction
+    execute at @s if entity @a[tag=CD.Player.Target,distance=..9,sort=nearest,limit=1] run tag @s add CD.CloseRangeAction
 
 # 予約なし、非帯電、体力が25,50,75％以下になったとき、帯電モードへ移行
     # 25,50,75％以下で実行

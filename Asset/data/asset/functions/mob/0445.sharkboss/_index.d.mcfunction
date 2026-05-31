@@ -13,7 +13,7 @@
     #declare tag CD.CloseRangeAction 近距離攻撃をしたい
     #declare tag CD.Reserving 攻撃の予約
     #declare tag CD.Action.Reserve.Rush2 突進2の予約
-    #declare tag CD.Target ターゲット
+    #declare tag CD.Player.Target ターゲット
     #declare tag CD.Marker.SpawnPoint 最初の床のマーカー
 
     #declare tag CD.Charging
@@ -43,6 +43,15 @@
     #declare tag CD.Action.Down3
     #declare tag CD.Action.Puffer1
     #declare tag CD.Action.Puffer2
+
+    #declare tag CD.Player.Launch.First
+    #declare tag CD.Player.Launch.Second
+    #declare tag CD.Player.Launch.HorizontalLight
+    #declare tag CD.Player.Launch.HorizontalNormal
+    #declare tag CD.Player.Launch.HorizontalStrong
+    #declare tag CD.Player.Launch.VerticalLight
+    #declare tag CD.Player.Launch.VerticalNormal
+    #declare tag CD.Player.Launch.VerticalStrong
 
     #declare function lib:motion/looking
 

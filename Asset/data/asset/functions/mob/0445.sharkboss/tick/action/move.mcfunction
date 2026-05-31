@@ -12,4 +12,4 @@ execute if score @s CD.AnimationTimer matches 0..16 run tp @s ^ ^ ^0.4
 
 #軸合わせ
 #execute if score @s CD.AnimationTimer matches 0..8 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
-execute if score @s CD.AnimationTimer matches 0..16 run function asset:mob/0445.sharkboss/tick/action/utility/alignment
+execute if score @s CD.AnimationTimer matches 0..16 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
