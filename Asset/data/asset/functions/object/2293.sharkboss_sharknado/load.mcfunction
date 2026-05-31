@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/2293.sharkboss_sharknado/**
-    scoreboard objectives add 
+    #scoreboard objectives add 
