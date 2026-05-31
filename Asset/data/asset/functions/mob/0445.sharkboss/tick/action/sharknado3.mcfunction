@@ -12,4 +12,4 @@ scoreboard players set @s CD.ElectrifiedActionCounter 0
 tag @s remove CD.Electrified
 tag @s remove CD.Charging
 
-execute if score @s CD.AnimationTimer matches 44 run say サメのロレンチーニ器官が鎮静化した1！
+execute if score @s CD.AnimationTimer matches 44 run say サメのロレンチーニ器官が鎮静化した

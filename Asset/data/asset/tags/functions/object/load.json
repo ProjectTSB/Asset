@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:object/2292.sharkboss_tornado/load",
+        "asset:object/2289.sharkboss_emp_blast/load",
+        "asset:object/2291.sharkboss_pufferfish/load",
         "asset:object/2290.sharkboss_water_bullet/load",
         "asset:object/1061.azure_jelly/load",
         "asset:object/2251.wall_laser_clock/load",

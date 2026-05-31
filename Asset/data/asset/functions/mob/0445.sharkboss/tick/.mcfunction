@@ -26,7 +26,7 @@
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run tag @s add CD.Action.Down1
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run tag @s remove CD.Electrified
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run tag @s remove CD.Charging
-  execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run say サメの帯電が解除された1！
+  execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run say サメのロレンチーニ器官が沈静化した
 
 #次の行動が可能になったら行動ガチャとタイマースタート（0から始まる）
   execute if entity @s[tag=CD.CanAction] run function asset:mob/0445.sharkboss/tick/select_action/

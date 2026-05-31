@@ -11,7 +11,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに噛み砕かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
     function api:damage/modifier
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.5] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.2] run function api:damage/
     function api:damage/reset
 
     # Motion
