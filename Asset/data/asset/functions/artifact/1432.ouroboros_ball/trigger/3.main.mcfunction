@@ -13,7 +13,7 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 玉を発射
+# 玉を発射(ダメージは8発連続で当てられれば４倍くらいになる)
     data modify storage api: Argument.ID set value 1158
     execute store result storage api: Argument.FieldOverride.Damage float 1 run random value 380..450
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"廻蛇の玉"}'
+    data modify storage asset:artifact Name set value '{"text":"廻蛇の玉","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"この神器による攻撃の80%を次のダメージに上乗せする"}','{"text":"ただし、攻撃をやめると4の自傷ダメージを受ける"}','{"text":"”この蛇、ずいぶんと小さく丸まってますね”"}','{"text":"”ああ、こんなにも投げやすいとは思わなかったぞ”"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"この神器による攻撃の80%を次のダメージに上乗せする"}','{"text":"ただし、攻撃をやめると4の自傷ダメージを受ける"}','{"text":"”この蛇、ずいぶんと小さく丸まってますね”","color":"gray"}','{"text":"”ああ、こんなにも投げやすいとは思わなかったぞ”","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

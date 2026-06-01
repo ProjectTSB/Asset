@@ -4,8 +4,6 @@
 #
 # @within function asset:effect/0361.ouroboros_echo/_/end
 
-# プレイヤーのダメージホルダーをリセット
-    scoreboard players reset @s 1158.DamageHolder
 # 自身に4の防御貫通ダメージを与える
     # ダメージ量
         data modify storage api: Argument.Damage set value 4.0f
