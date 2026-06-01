@@ -15,6 +15,6 @@
 
 # 玉を発射(ダメージは8発連続で当てられれば４倍くらいになる)
     data modify storage api: Argument.ID set value 1158
-    execute store result storage api: Argument.FieldOverride.Damage float 1 run random value 380..450
+    execute store result storage api: Argument.FieldOverride.Damage float 1 run random value 280..380
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes positioned ^-0.2 ^-0.2 ^ run function api:object/summon
