@@ -9,6 +9,7 @@
   #空中のやつ
   execute if entity @s[tag=CD.Action.Bite] run tag @s remove CD.Action.Bite
   execute if entity @s[tag=CD.Action.Tail] run tag @s remove CD.Action.Tail
+  execute if entity @s[tag=CD.Action.TailStrong] run tag @s remove CD.Action.TailStrong
   execute if entity @s[tag=CD.Action.Spin] run tag @s remove CD.Action.Spin
   execute if entity @s[tag=CD.Action.BiteTail] run tag @s remove CD.Action.BiteTail
   #execute if entity @s[tag=CD.Action.Move_Bite] run tag @s remove CD.Action.Move_Bite
@@ -21,6 +22,7 @@
   execute if entity @s[tag=CD.Action.Rush1] run tag @s remove CD.Action.Rush1
   execute if entity @s[tag=CD.Action.Rush2] run tag @s remove CD.Action.Rush2
   execute if entity @s[tag=CD.Action.Rush3] run tag @s remove CD.Action.Rush3
+  execute if entity @s[tag=CD.Action.RushStrong] run tag @s remove CD.Action.RushStrong
 
   execute if entity @s[tag=CD.Action.Sharknado1] run tag @s remove CD.Action.Sharknado1
   execute if entity @s[tag=CD.Action.Sharknado2] run tag @s remove CD.Action.Sharknado2

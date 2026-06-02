@@ -12,7 +12,12 @@
     #data modify storage api: Argument.Damage set value 10
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sはびしょびしょになってしまった","with":[{"selector":"@s"}]}'
     function api:damage/modifier
-    execute as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
+    execute as @a[tag=!PlayerShouldInvulnerable,dx=0.5,dy=0.5,dz=0.5] run function api:damage/
+
+# 演出
+    #playsound entity.dolphin.splash hostile @a ~ ~ ~ 1 2
+    particle block water ~ ~ ~ 0.1 0.1 0.1 1 4 normal
+    #say hit
 # リセット
     function api:damage/reset
     #say a

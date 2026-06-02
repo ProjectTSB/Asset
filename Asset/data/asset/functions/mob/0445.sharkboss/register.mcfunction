@@ -22,14 +22,14 @@
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value 
 # 体力 (double) (オプション)
-    data modify storage asset:mob Health set value 1000
+    data modify storage asset:mob Health set value 6000
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
         data modify storage asset:mob Resist.Physical set value 1.0f
     # 魔法倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Magic set value 1.0f
+        data modify storage asset:mob Resist.Magic set value 0.8f
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 1.0f
+        data modify storage asset:mob Resist.Fire set value 1.2f
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 1.0f
     # 雷倍率 (float) (オプション)
@@ -38,7 +38,7 @@
     # data modify storage asset:mob Field.myValue set value 
      #フィールド
     # 技ごとの攻撃力設定
-        data modify storage asset:mob Field.Damage set value {Bite:5.0f,Tail:16.0f,WaterColumn:2.0f,WaterGun:2.0f,Pufferfish:2.0f,SharknadoSlash:2.0f,Sharknado:20.0f}
+        data modify storage asset:mob Field.Damage set value {Bite:13.0f,Tail:6.0f,TailStrong:10.0f,ComboBite:15.0f,ComboTail:10.0f,Rush:10.0f,RushStrong:10.0f,WaterColumn:8.0f,WaterGun:8.0f,Pufferfish:13.0f,Spin:6,SharknadoSlash:8.0f,Sharknado:20.0f}
 
 #↓コピペしたよ
     # 毒ポーションの設定

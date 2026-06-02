@@ -17,7 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 2290
 # フィールド(オプション)
-    data modify storage asset:object Field set value {Speed:3,Range:30,MovePerStep:0.5}
+    data modify storage asset:object Field set value {Speed:3,Range:40,MovePerStep:0.5}
     #data modify storage api: Argument.FieldOverride set value {Speed:10,Range:30,MovePerStep:0.5}
     # データ指定
     #data modify storage api: Argument.FieldOverride set value {Speed:10,Range:30,MovePerStep:0.5}

@@ -24,6 +24,7 @@
     #攻撃用のtag
     #declare tag CD.Action.Bite
     #declare tag CD.Action.Tail
+    #declare tag CD.Action.TailStrong
     #declare tag CD.Action.Spin
     #declare tag CD.Action.BiteTail
     #declare tag CD.Action.Move
@@ -32,6 +33,7 @@
     #declare tag CD.Action.Rush1
     #declare tag CD.Action.Rush2
     #declare tag CD.Action.Rush3
+    #declare tag CD.Action.RushStrong
     #declare tag CD.Action.EMP
     #declare tag CD.Action.Sharknado1
     #declare tag CD.Action.Sharknado2
@@ -44,6 +46,7 @@
     #declare tag CD.Action.Puffer1
     #declare tag CD.Action.Puffer2
 
+    #declare tag CD.Player.TempDamageTarget
     #declare tag CD.Player.Launch.First
     #declare tag CD.Player.Launch.Second
     #declare tag CD.Player.Launch.HorizontalLight
@@ -62,8 +65,10 @@
     #declare function animated_java:sharkboss/animations/rush_start/tween
     #declare function animated_java:sharkboss/animations/rush_loop/tween
     #declare function animated_java:sharkboss/animations/rush_end/tween
+    #declare function animated_java:sharkboss/animations/rush_strong/tween
     #declare function animated_java:sharkboss/animations/tornado/tween
     #declare function animated_java:sharkboss/animations/tail/tween
+    #declare function animated_java:sharkboss/animations/tail_strong/tween
     #declare function animated_java:sharkboss/animations/watergun/tween
     #declare function animated_java:sharkboss/animations/emp/tween
     #declare function animated_java:sharkboss/animations/down_start/tween

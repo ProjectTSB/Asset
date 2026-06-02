@@ -29,9 +29,9 @@
     #execute if score @s General.Object.Tick matches 36 run data modify entity @s interpolation_duration set value 3
     #execute if score @s General.Object.Tick matches 36 run data modify entity @s transformation.scale set value [9f,7f,9f]
 
-    execute if score @s General.Object.Tick matches 42 run data modify entity @s start_interpolation set value 0
-    execute if score @s General.Object.Tick matches 42 run data modify entity @s interpolation_duration set value 3
-    execute if score @s General.Object.Tick matches 42 run data modify entity @s transformation.scale set value [0f,15f,0f]
+    execute if score @s General.Object.Tick matches 39 run data modify entity @s start_interpolation set value 0
+    execute if score @s General.Object.Tick matches 39 run data modify entity @s interpolation_duration set value 4
+    execute if score @s General.Object.Tick matches 39 run data modify entity @s transformation.scale set value [0f,15f,0f]
     #execute if score @s General.Object.Tick matches 13 run data modify entity @s start_interpolation set value 0
     #execute if score @s General.Object.Tick matches 13 run data modify entity @s interpolation_duration set value 10
     #execute if score @s General.Object.Tick matches 13 run data modify entity @s transformation.scale set value [12f,14f,12f]

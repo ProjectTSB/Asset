@@ -1,15 +1,15 @@
-#> asset:mob/0445.sharkboss/tick/action/damage/sharknado
+#> asset:mob/0445.sharkboss/tick/action/damage/combo_bite
 #
 # 
 #
-# @within function asset:mob/0445.sharkboss/tick/action/sharknado3
+# @within function asset:mob/0445.sharkboss/tick/action/bite_tail
 
 # 攻撃を受けるプレイヤーに一時的にタグ付与
-   execute as @a[tag=!PlayerShouldInvulnerable,distance=..10] unless score @s CD.Player.DamageTimer matches 1.. run tag @s add CD.Player.TempDamageTarget
-
+   execute as @a[tag=!PlayerShouldInvulnerable,distance=..3] unless score @s CD.Player.DamageTimer matches 1.. run tag @s add CD.Player.TempDamageTarget
 
 # ダメージ
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Sharknado
+    #data modify storage api: Argument.Damage set value 1.0
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage.ComboBite
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sは%2$sに噛み砕かれた","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}'
@@ -19,7 +19,7 @@
 
 # 吹っ飛ばしタグ
     tag @a[tag=CD.Player.TempDamageTarget] add CD.Player.Launch.First
-    tag @a[tag=CD.Player.TempDamageTarget] add CD.Player.Launch.VerticalStrong
+    tag @a[tag=CD.Player.TempDamageTarget] add CD.Player.Launch.VerticalLight
 
 # 攻撃を受けるプレイヤーのタグ外す
     tag @a[tag=CD.Player.TempDamageTarget] remove CD.Player.TempDamageTarget

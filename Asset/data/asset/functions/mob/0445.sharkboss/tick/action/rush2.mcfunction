@@ -11,11 +11,6 @@ execute if score @s CD.AnimationTimer matches 12 run function asset:mob/0445.sha
     execute if score @s CD.AnimationTimer matches 12 run tag @s add CD.Reserving
     execute if score @s CD.AnimationTimer matches 12 run tag @s add CD.Action.Rush3
 
-#フグ食
-    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
-    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving
-    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Action.Puffer1
-    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run kill @e[tag=CD.PufferFish,sort=nearest,limit=1]
 # execute if score @s CD.AnimationTimer matches 1 run scoreboard players add @s CD.Counter 1
 # execute if score @s CD.AnimationTimer matches 1 if score @s CD.Counter matches ..2 run tag @s add CD.Reserving
 # execute if score @s CD.AnimationTimer matches 1 if score @s CD.Counter matches ..2 run tag @s add CD.Action.Reserve.Rush2
@@ -27,7 +22,12 @@ execute if score @s CD.AnimationTimer matches 12 run function asset:mob/0445.sha
 #軸合わせ
     execute if score @s CD.AnimationTimer matches 0..12 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/light
 
-
+#フグ食
+    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
+    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving
+    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Action.Puffer1
+    execute if score @s CD.AnimationTimer matches ..11 if entity @e[tag=CD.PufferFish,distance=..3] run kill @e[tag=CD.PufferFish,sort=nearest,limit=1]
+    
 #演出
     #execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.3 0.5
     execute if score @s CD.AnimationTimer matches 1 run playsound minecraft:entity.generic.eat hostile @a ~ ~ ~ 3 0.8

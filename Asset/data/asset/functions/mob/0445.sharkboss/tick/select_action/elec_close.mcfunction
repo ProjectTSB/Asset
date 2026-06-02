@@ -8,7 +8,7 @@
     data modify storage lib: Args.key set value "CD.SharkbossEC"
 
 # 攻撃ガチャ
-    data modify storage lib: Args.max set value 5
+    data modify storage lib: Args.max set value 3
     data modify storage lib: Args.scarcity_history_size set value 2
 
 # 疑似乱数取得
@@ -16,11 +16,11 @@
 
 
 # 攻撃ガチャ
-    execute if score $Random Temporary matches 0 run tag @s add CD.Action.EMP
-    execute if score $Random Temporary matches 1 run tag @s add CD.Action.Tail
-    execute if score $Random Temporary matches 2 run tag @s add CD.Action.Spin
-    execute if score $Random Temporary matches 3 run tag @s add CD.Action.BiteTail
-    execute if score $Random Temporary matches 4 run tag @s add CD.Action.Rush1
+    #execute if score $Random Temporary matches 0 run tag @s add CD.Action.EMP
+    execute if score $Random Temporary matches 0 run tag @s add CD.Action.TailStrong
+    execute if score $Random Temporary matches 1 run tag @s add CD.Action.RushStrong
+    execute if score $Random Temporary matches 2 run tag @s add CD.Action.BiteTail
+    #execute if score $Random Temporary matches 4 run tag @s add CD.Action.Rush1
 
 # 乱数リセット
     scoreboard players reset $Random Temporary

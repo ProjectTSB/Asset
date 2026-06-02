@@ -35,6 +35,7 @@
   #空中のやつ
   execute if entity @s[tag=CD.Action.Bite] at @s run function asset:mob/0445.sharkboss/tick/action/bite
   execute if entity @s[tag=CD.Action.Tail] at @s run function asset:mob/0445.sharkboss/tick/action/tail
+  execute if entity @s[tag=CD.Action.TailStrong] at @s run function asset:mob/0445.sharkboss/tick/action/tail_strong
   execute if entity @s[tag=CD.Action.Spin] at @s run function asset:mob/0445.sharkboss/tick/action/spin
   execute if entity @s[tag=CD.Action.BiteTail] at @s run function asset:mob/0445.sharkboss/tick/action/bite_tail
   execute if entity @s[tag=CD.Action.Move] at @s run function asset:mob/0445.sharkboss/tick/action/move
@@ -45,6 +46,7 @@
   execute if entity @s[tag=CD.Action.Rush1] at @s run function asset:mob/0445.sharkboss/tick/action/rush1
   execute if entity @s[tag=CD.Action.Rush2] at @s run function asset:mob/0445.sharkboss/tick/action/rush2
   execute if entity @s[tag=CD.Action.Rush3] at @s run function asset:mob/0445.sharkboss/tick/action/rush3
+  execute if entity @s[tag=CD.Action.RushStrong] at @s run function asset:mob/0445.sharkboss/tick/action/rush_strong
 
   execute if entity @s[tag=CD.Action.Sharknado1] at @s run function asset:mob/0445.sharkboss/tick/action/sharknado1
   execute if entity @s[tag=CD.Action.Sharknado2] at @s run function asset:mob/0445.sharkboss/tick/action/sharknado2
@@ -60,16 +62,19 @@
   execute if entity @s[tag=CD.Action.Puffer1] at @s run function asset:mob/0445.sharkboss/tick/action/puffer1
   execute if entity @s[tag=CD.Action.Puffer2] at @s run function asset:mob/0445.sharkboss/tick/action/puffer2
 
+  #連続ヒット防止処理
+   execute as @a if score @s CD.Player.DamageTimer matches 1.. run scoreboard players remove @s CD.Player.DamageTimer 1
+
   #吹っ飛ばし処理
 
    #アクション処理後、タグがあれば吹っ飛ばす
-   execute at @s as @a if entity @a[tag=CD.Player.Launch.First] unless score @s CD.Player.LaunchCounter matches 1.. run function asset:mob/0445.sharkboss/tick/utility/launch/first
+   execute at @s as @a[tag=CD.Player.Launch.First] unless score @s CD.Player.LaunchCounter matches 1.. run function asset:mob/0445.sharkboss/tick/utility/launch/first
 
    #ダメージ干渉対策として2tick後に再度吹っ飛ばす
-   execute at @s as @a if entity @a[tag=CD.Player.Launch.Second] if score @s CD.Player.LaunchCounter matches 2.. run function asset:mob/0445.sharkboss/tick/utility/launch/second
+   execute at @s as @a[tag=CD.Player.Launch.Second] if score @s CD.Player.LaunchCounter matches 2.. run function asset:mob/0445.sharkboss/tick/utility/launch/second
    
    #カウンター増加
-   execute at @s as @a if entity @s[tag=CD.Player.Launch.Second] run scoreboard players add @s CD.Player.LaunchCounter 1
+   execute at @s as @a[tag=CD.Player.Launch.Second] run scoreboard players add @s CD.Player.LaunchCounter 1
 
 
 

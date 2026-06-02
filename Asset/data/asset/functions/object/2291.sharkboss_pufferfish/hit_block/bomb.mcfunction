@@ -15,7 +15,7 @@
     #data modify storage api: Argument.Damage set value 10
     data modify storage api: Argument.DeathMessage append value '{"translate": "%1$sはふぐに当たってしまった","with":[{"selector":"@s"}]}'
     function api:damage/modifier
-    execute as @p[tag=!PlayerShouldInvulnerable,distance=..3] run function api:damage/
+    execute as @p[tag=!PlayerShouldInvulnerable,distance=..3.5] run function api:damage/
 # リセット
     function api:damage/reset
     #say a

@@ -13,7 +13,7 @@
 
 #帯電状態で発動した予約なし攻撃回数が10回以上でシャークネード（DPSチェック）に移行
     execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] run scoreboard players add @s CD.ElectrifiedActionCounter 1
-    execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] if score @s CD.ElectrifiedActionCounter matches 10.. run function asset:mob/0445.sharkboss/tick/select_action/sharknado
+    execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] if score @s CD.ElectrifiedActionCounter matches 9.. run function asset:mob/0445.sharkboss/tick/select_action/sharknado
 
 #DPSチェック失敗
     execute if entity @s[tag=CD.Charging] if score @s CD.Timer matches 200.. run tag @s add CD.Reserving
