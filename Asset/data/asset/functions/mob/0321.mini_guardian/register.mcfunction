@@ -65,4 +65,4 @@
 
 # フィールド
     data modify storage asset:mob Field.Damage set value 5.5f
-    data modify storage asset:mob Field.Rotate set value 6000
+    data modify storage asset:mob Field.Rotate set value 3000
