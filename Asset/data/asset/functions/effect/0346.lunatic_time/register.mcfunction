@@ -37,3 +37,6 @@
 
 # フィールド
     data modify storage asset:effect Field.UUID set value [I;1,3,346,0]
+    data modify storage api: Argument.FieldOverride.Modifier.MagicAttack set value 0.1d
+    data modify storage api: Argument.FieldOverride.Modifier.MPHeal set value -0.25d
+    data modify storage api: Argument.FieldOverride.NeedMPPer set value 0.1d
