@@ -20,6 +20,7 @@
 # 一定間隔毎に魔方陣表示とダメージ
     execute if entity @s[scores={General.Object.Tick=30..}] run scoreboard players operation $Temp Temporary %= $5 Const
     execute if entity @s[scores={General.Object.Tick=30..}] if score $Temp Temporary matches 0 run function asset:object/2074.water_magic/tick/damage
+    execute if entity @s[scores={General.Object.Tick=30..}] if score $Temp Temporary matches 4 run function asset:object/2074.water_magic/tick/summon_announce
 
 # スコア加算
     scoreboard players add @s General.Object.Tick 1
