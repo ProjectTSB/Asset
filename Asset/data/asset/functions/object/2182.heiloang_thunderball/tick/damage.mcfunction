@@ -31,4 +31,5 @@
     execute if entity @s[tag=!2182.Hit] positioned as @p[tag=2182.TargetPlayer] run function api:object/summon
 
 # 終了
+    tag @a[tag=2182.TargetPlayer] remove 2182.TargetPlayer
     function asset:object/2182.heiloang_thunderball/tick/kill
