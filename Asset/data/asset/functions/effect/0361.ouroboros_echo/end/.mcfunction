@@ -6,7 +6,7 @@
 
 # 自身に4の防御貫通ダメージを与える
     # ダメージ量
-        data modify storage api: Argument.Damage set value 4.0f
+        data modify storage api: Argument.Damage set from storage asset:context this.Damage
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 補正をしない

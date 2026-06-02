@@ -8,11 +8,6 @@
 # @private
     #declare score_holder $OwnerID
     #declare score_holder $DamageHolder
-#> score_holder
-# @within
-#   function asset:object/1158.ouroboros_ball/hit_entity/damage
-#   function asset:object/1158.ouroboros_ball/hit_entity/effect_add
-        #declare score_holder $Temporary
 
 # effectの情報を取得
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID

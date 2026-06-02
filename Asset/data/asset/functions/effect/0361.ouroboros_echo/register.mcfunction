@@ -37,3 +37,4 @@
 
 # フィールド
     data modify storage asset:effect Field.DamageHolder set value 0
+    data modify storage asset:effect Field.Damage set value 1
