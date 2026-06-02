@@ -16,20 +16,25 @@
     execute store result score $DamageHolder Temporary run data get storage api: Return.Effect.Field.DamageHolder
 
 
-# ダメージ
+# ダメージ計算
+    # 今回追加するダメージの攻撃補正後のダメージを計算する。
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water" 
     execute as @a if score @s UserID = $OwnerID Temporary run function api:damage/modifier
-# 与えるダメージをスコア分増加させ、その八割をスコアに代入する
+    # 前に計算したダメージ量に保持している前のダメージ量を足して与えるダメージに入れる。
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage
     execute as @a if score @s UserID = $OwnerID Temporary run scoreboard players operation $Temporary Temporary += $DamageHolder Temporary
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $Temporary Temporary
+    # 今回与えるダメージの八割を保持する。（最大2000）
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage 80
     scoreboard players operation $Temporary Temporary /= $100 Const
+    execute if score $Temporary Temporary matches 2000.. run scoreboard players set $Temporary Temporary 2000
     execute as @a if score @s UserID = $OwnerID Temporary store result score $DamageHolder Temporary run scoreboard players get $Temporary Temporary
-    execute as @e[tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
+    # 相手の耐性を考慮してダメージをあたえる。
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
     function api:damage/reset
+
 # effectの付与
     execute as @a if score @s UserID = $OwnerID Temporary run function asset:object/1158.ouroboros_ball/hit_entity/effect_add
 

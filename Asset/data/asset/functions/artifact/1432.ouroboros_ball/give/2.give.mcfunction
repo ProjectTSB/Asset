@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"廻蛇の玉","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"この神器による攻撃の80%を次のダメージに上乗せする"}','{"text":"ただし、攻撃をやめると4の自傷ダメージを受ける"}','{"text":"”この蛇、ずいぶんと小さく丸まってますね”","color":"gray"}','{"text":"”ああ、こんなにも投げやすいとは思わなかったぞ”","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"攻撃が敵にあたった時、2.5秒の間"}','{"text":"与えたダメージの80%を次のダメージに加算する(最大2000)"}','{"text":"加算するダメージは自身のステータス補正の影響を受けない"}','{"text":"2,5秒間攻撃がヒットしなかったとき、4の固定ダメージを受ける"}','{"text":"”この蛇、ずいぶんと小さく丸まってますね”","color":"gray"}','{"text":"”ああ、こんなにも投げやすいとは思わなかったぞ”","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "OnClick"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
