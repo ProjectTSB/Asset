@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '[{"text":"HP[%]","color":"white"},{"text":"\\u0002","font":"space"},{"text":"≦","color":"white"},{"text":"\\u0002","font":"space"},{"text":"-0.012*MP[%]^2+130を満たす","color":"white"}]'
+    data modify storage asset:artifact Condition set value '[{"text":"体力[%]","color":"white"},{"text":"\\u0002","font":"space"},{"text":"≦","color":"white"},{"text":"\\u0002","font":"space"},{"text":"-0.012*MP[%]^2+130を満たす","color":"white"}]'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [220]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
