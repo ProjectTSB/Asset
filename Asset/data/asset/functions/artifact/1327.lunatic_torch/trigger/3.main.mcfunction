@@ -37,10 +37,10 @@
         # 効果時間
             data modify storage api: Argument.Duration set value 200
         # 補正
-            data modify storage api: Argument.FieldOverride.Modifier.MagicAttack set value 0.1
-            data modify storage api: Argument.FieldOverride.Modifier.MPHeal set value -0.25
+            data modify storage api: Argument.FieldOverride.Modifier.MagicAttack set value 0.1d
+            data modify storage api: Argument.FieldOverride.Modifier.MPHeal set value -0.25d
         # MPが何%以上必要か？
-            data modify storage api: Argument.FieldOverride.NeedMPPer set value 0.1
+            data modify storage api: Argument.FieldOverride.NeedMPPer set value 0.1d
 
     # 付与
         data modify storage api: Argument.ID set value 346
