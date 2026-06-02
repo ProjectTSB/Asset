@@ -12,7 +12,7 @@
     execute unless data storage asset:context ReceiveHeal{Metadata:"10F.Heal"} run return fail
 
 # 回復量を取得
-    execute store result score $Heal Temporary run data get storage asset:context ReceiveHeal.Amount 10
+    execute store result score $Heal Temporary run data get storage asset:context ReceiveHeal.Amount.Base 10
     execute run scoreboard players operation @s 10F.HealSum += $Heal Temporary
 
 # 回復量の合計が一定以上なら発動
