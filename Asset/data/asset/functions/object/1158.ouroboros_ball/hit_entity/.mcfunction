@@ -8,7 +8,7 @@
     particle block lapis_block ~ ~ ~ 0 0 0 1 20
 
 # ダメージ処理とエフェクト付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0,limit=1] run function asset:object/1158.ouroboros_ball/hit_entity/damage
+    function asset:object/1158.ouroboros_ball/hit_entity/damage
     
 # 玉けし
     kill @s
