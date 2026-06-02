@@ -15,7 +15,8 @@
     execute store result score $NeedMPPer Temporary run data get storage asset:context this.NeedMPPer 100
 
 # 比較して、$MPPer < $NeedMPPerならエフェクトを解除する
-    execute if score $MPPer Temporary < $NeedMPPer Temporary run data modify storage asset:context Duration set value 0
+    execute if score $MPPer Temporary < $NeedMPPer Temporary run data modify storage asset:context Duration set value -1
+    execute if score $MPPer Temporary < $NeedMPPer Temporary run function asset:effect/0346.lunatic_time/modifier/remove
 
 # リセット
     scoreboard players reset $MPPer Temporary
