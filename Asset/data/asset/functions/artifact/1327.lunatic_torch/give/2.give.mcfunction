@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"狂気の松明","color":"light_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"狂気の松明","color":"#ff59a9"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"自身と周囲20mの2名に","color":"white"}','{"translate":"%1$sと%2$sを10秒間付与する","with":[{"text":"魔法攻撃+10%","color":"green"},{"text":"MP回復量-25%","color":"red"}]}','{"text":"(魔法攻撃補正の高い、MPの多いプレイヤーを優先","color":"white"}','{"text":" 魔法攻撃補正が0%未満なら付与しない)","color":"white"}','{"text":"この効果はMPが10%未満になると解除される","color":"white"}','{"text":"イッツ、ルナティックターイム！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)

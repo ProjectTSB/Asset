@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 346
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"ルナティックタイム","color":"light_purple"}'
+    data modify storage asset:effect Name set value '{"text":"ルナティックタイム","color":"#ff59a9"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"魔法属性与ダメージが上昇し、MP回復量が大きく減少する","color":"white"}','{"text":"MP割合が一定以下になると解除される","color":"white"}']
 # 効果時間 (int) (default = API || error)
