@@ -7,7 +7,7 @@
 # 移動速度を取得
     function asset:mob/call.m {method:"get_speed"}
 
-# デフォルトではrelfect、rotateとmoveを実行する
+# デフォルトではreflect、rotateとmoveを実行する
     execute at @s run function asset:mob/call.m {method:"rotate"}
     execute at @s run function asset:mob/call.m {method:"reflect"}
     execute at @s run function asset:mob/call.m {method:"move"}
