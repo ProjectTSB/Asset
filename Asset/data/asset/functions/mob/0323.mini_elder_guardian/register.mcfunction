@@ -18,7 +18,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text":"ミニエルダーガーディアン","color":"white"}'
+    data modify storage asset:mob Name set value '{"text":"ミニエルダーガーディアン","color":"#5e69d9"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     data modify storage asset:mob Lore set value ['{"text":"ちっさいエルダーガーディアン。","color":"white"}','{"text":"小さくても火力は高いし、しっかり呪う能力も健在である。","color":"white"}']
 # 武器
