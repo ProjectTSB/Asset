@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 361
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"ウロボロス・エコー"}'
+    data modify storage asset:effect Name set value '{"text":"ウロボロス・エコー","color":"light_purple"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"廻蛇の玉のダメージが上昇する"}']
+    data modify storage asset:effect Description set value ['{"text":"廻蛇の玉のダメージが上昇するが"}','{"text":"エフェクトの終了時に固定ダメージを受ける"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value 
 # スタック (int) (default = API || 1)
