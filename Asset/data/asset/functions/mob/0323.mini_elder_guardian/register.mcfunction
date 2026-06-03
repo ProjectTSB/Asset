@@ -76,4 +76,4 @@
 # 疑似HurtTime
     data modify storage asset:mob Field.HurtTime set value -1
 # 攻撃モード
-    data modify storage asset:mob Field.AttackMode set value false
+    data modify storage asset:mob Field.IsAttackMode set value false
