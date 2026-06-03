@@ -74,6 +74,6 @@
 # 旋回力
     data modify storage asset:mob Field.Rotate set value 3000
 # 疑似HurtTime
-    data modify storage asset:mob Field.HurtTime set value 0
+    data modify storage asset:mob Field.HurtTime set value -1
 # 攻撃モード
     data modify storage asset:mob Field.AttackMode set value false

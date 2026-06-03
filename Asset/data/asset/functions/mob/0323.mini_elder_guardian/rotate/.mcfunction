@@ -5,4 +5,4 @@
 # @within asset:mob/alias/323/rotate
 
 # 攻撃中ではないかつHurtTime:0でなら移動
-    execute if data storage asset:context this{AttackMode:false,HurtTime:0} run function asset:mob/super.method
+    execute if data storage asset:context this{AttackMode:false,HurtTime:-1} run function asset:mob/super.method
