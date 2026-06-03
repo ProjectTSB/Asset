@@ -23,5 +23,5 @@
 # 遠くに離れたら攻撃モード終了
     execute if data storage asset:context this{AttackMode:true} unless entity @p[gamemode=!spectator,distance=..15] run function asset:mob/0323.mini_elder_guardian/tick/event/attack/reset
 
-# super.tick
-    function asset:mob/super.tick
+# 攻撃中でない && HurtTime中ではない、ならsuper.tick
+    execute if data storage asset:context this{AttackMode:false,HurtTime:-1} run function asset:mob/super.tick
