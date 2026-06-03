@@ -1,4 +1,4 @@
-#> asset:object/1158.ouroboros_ball/hit_entity/effect_add
+#> asset:object/1158.ouroboros_ball/hit_entity/effect_give
 #
 # effect付与用
 #
