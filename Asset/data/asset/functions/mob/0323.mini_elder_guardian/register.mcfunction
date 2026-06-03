@@ -69,6 +69,7 @@
 # ダメージ
     data modify storage asset:mob Field.Damage set value 5.5f
 # 呪い(採掘速度低下)クールダウン
+# 召喚されてからNtick後にデバフを付与したいため、初期値は0とはしない
     data modify storage asset:mob Field.CurseCooldown._ set value 160
     data modify storage asset:mob Field.CurseCooldown.Max set value 800
 # 旋回力
