@@ -21,7 +21,7 @@
     execute if entity @s[tag=79.Ready] run function asset:mob/0261.laser_eye_mk2/tick/ready
 
 # 毎tickのattribute変更を対策するために前tickの距離の情報を保存しておく
-    data modify storage asset:context this.PreDistance set from storage asset:context this.Distance
+    execute if data storage asset:context this.Distance run data modify storage asset:context this.PreDistance set from storage asset:context this.Distance
 
 # リセット
     data remove storage asset:context this.Distance
