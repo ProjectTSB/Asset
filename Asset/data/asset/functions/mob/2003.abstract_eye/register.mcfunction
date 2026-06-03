@@ -26,8 +26,7 @@
     data modify storage asset:mob Field.Rotate set value 2000
 
 # Field.Speed
-# 移動速度tpミックスインのget_speedメソッドで取得する
-    # data modify storage asset:mob Field.Speed set value 0.2
+# 移動速度tpミックスインのget_speedメソッドで取得した値が格納される
 
 # 仕様書
 #
