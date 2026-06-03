@@ -17,10 +17,10 @@
     function api:global_vars/get_difficulty
 
 # 採掘速度低下Lv2
-# Duration = 200 + 100* Difficulty
+# Duration = 200 + 200* Difficulty
     data modify storage api: Argument.ID set value 76
     data modify storage api: Argument.Stack set value 3
-    execute store result score $Duration Temporary run data get storage api: Return.Difficulty 100
+    execute store result score $Duration Temporary run data get storage api: Return.Difficulty 200
     execute store result storage api: Argument.Duration int 1 run scoreboard players add $Duration Temporary 200
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
@@ -36,7 +36,7 @@
 # Duration = 200 + 100* Difficulty
     data modify storage api: Argument.ID set value 61
     execute store result storage api: Argument.Stack int 0.9999999999 run data get storage api: Return.Difficulty 0.9999999999
-    execute store result score $Duration Temporary run data get storage api: Return.Difficulty 100
+    execute store result score $Duration Temporary run data get storage api: Return.Difficulty 200
     execute store result storage api: Argument.Duration int 1 run scoreboard players add $Duration Temporary 200
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
