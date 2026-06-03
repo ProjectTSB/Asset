@@ -17,6 +17,7 @@
     execute if score @s General.Mob.Tick matches 40..159 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/laser/
 
 # 攻撃終了後、ちょっと泳ぐ
+    execute if score @s General.Mob.Tick matches 160..240 run function asset:mob/call.m {method:"get_speed"}
     execute at @s if score @s General.Mob.Tick matches 160..240 run function asset:mob/call.m {method:"rotate"}
     execute at @s if score @s General.Mob.Tick matches 160..240 run function asset:mob/call.m {method:"move"}
 
