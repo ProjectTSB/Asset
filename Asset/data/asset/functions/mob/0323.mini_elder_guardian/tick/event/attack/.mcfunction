@@ -1,0 +1,24 @@
+#> asset:mob/0323.mini_elder_guardian/tick/event/attack/
+#
+#
+#
+# @within function asset:mob/0323.mini_elder_guardian/tick/
+
+# Tick加算
+    scoreboard players add @s General.Mob.Tick 1
+
+# こっちを狙う
+    execute at @s if score @s General.Mob.Tick matches 0..40 facing entity @p[gamemode=!spectator] feet positioned ^ ^ ^-200 rotated as @s positioned ^ ^ ^-1000 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
+
+# 照射開始動作
+    execute if score @s General.Mob.Tick matches 40 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/start
+
+# レーザー照射
+    execute if score @s General.Mob.Tick matches 40..159 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/laser/
+
+# 攻撃終了後、ちょっと泳ぐ
+    execute at @s if score @s General.Mob.Tick matches 160..240 run function asset:mob/call.m {method:"rotate"}
+    execute at @s if score @s General.Mob.Tick matches 160..240 run function asset:mob/call.m {method:"move"}
+
+# 攻撃動作終了
+    execute if score @s General.Mob.Tick matches 240.. run function asset:mob/0323.mini_elder_guardian/tick/event/attack/reset
