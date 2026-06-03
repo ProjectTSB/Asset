@@ -5,7 +5,6 @@
 # @within function asset:mob/0323.mini_elder_guardian/tick/event/attack/
 
 # 旋回 at @sを入れることで元の実行座標に戻す
-    execute at @s facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1500 facing entity @s eyes positioned as @s run tp @s ^ ^ ^ ~ ~
 
 # 予告の黄色レーザー
     execute if score @s General.Mob.Tick matches 40..100 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/laser/yellow
