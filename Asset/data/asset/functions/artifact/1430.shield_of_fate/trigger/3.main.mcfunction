@@ -4,10 +4,6 @@
 #
 # @within function asset:artifact/1430.shield_of_fate/trigger/2.check_condition
 
-#> Val
-# @private
-    #declare score_holder $13Q.HealthPer
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/hotbar
 

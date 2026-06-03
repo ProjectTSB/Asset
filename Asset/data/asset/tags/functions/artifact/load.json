@@ -1,6 +1,5 @@
 {
     "values": [
-        "asset:artifact/1430.shield_of_fate/trigger/0.load",
         "asset:artifact/1252.fox_candle/trigger/0.load",
         "asset:artifact/1311.yearning_rose/damage_from_entity/0.load",
         "asset:artifact/1220.sacred_hardener/trigger/0.load",
