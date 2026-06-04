@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ","color":"#7DFFF2","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用すると周囲に複数の氷の神器を生成し落下させて攻撃する","color":"white"}','{"text":"生成した神器は右クリックで回収可能","color":"white"}','[{"text":"使用後しばらく","color":"white"},{"text":"アイシクルライン","color":"aqua"},{"text":"が付与され、その間生成した神器をMPを消費せずに使用できる","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"使用すると周囲に複数の氷の神器を生成し落下させる","color":"white"}','{"text":"生成した神器は右クリックで回収可能","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -27,9 +27,9 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value 
+    data modify storage asset:artifact Condition set value '"戦闘時"'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [200]
+    data modify storage asset:artifact AttackInfo.Damage set value [0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)

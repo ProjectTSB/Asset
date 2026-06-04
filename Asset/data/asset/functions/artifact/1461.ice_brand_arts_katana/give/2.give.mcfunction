@@ -1,35 +1,35 @@
-#> asset:artifact/1457.ice_brand_arts_axe/give/2.give
+#> asset:artifact/1461.ice_brand_arts_katana/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1457.ice_brand_arts_axe/give/1.trigger
+# @within function asset:artifact/1461.ice_brand_arts_katana/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 1457
+    data modify storage asset:artifact ID set value 1461
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(斧)","color":"#7DFFF2"}'
+    data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(日本刀)","color":"#7DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の斧","color":"white"}','[{"text":"アイシクルライン","color":"aqua"},{"text":"状態中、MP消費無しで使用可能","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の日本刀","color":"white"}','[{"text":"アイシクルライン","color":"aqua"},{"text":"状態中、MP消費無しで使用可能","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value 
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 1
+    data modify storage asset:artifact RemainingCount set value 2
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "mainhand"
+    data modify storage asset:artifact Slot set value "auto"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+    data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"クリティカル攻撃"}'
+    # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [1000]
+    data modify storage asset:artifact AttackInfo.Damage set value [400]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -37,20 +37,20 @@
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value 
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value 
+    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value 'every'
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value 
+    data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int) 
-    data modify storage asset:artifact MPCost set value 150
+    data modify storage asset:artifact MPCost set value 60
 # MP必要量 (int) (オプション)
-    #data modify storage asset:artifact MPRequire set value 150
+    # data modify storage asset:artifact MPRequire set value 
 # MP回復量 (int) 
     # data modify storage asset:artifact MPHealWhenHit set value 
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 30
+    # data modify storage asset:artifact LocalCooldown set value 
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 30
+    data modify storage asset:artifact TypeCooldown.Duration set value 20
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value 
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

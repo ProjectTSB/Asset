@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1462.ice_brand_arts_spear/give/1.trigger",
+        "asset:artifact/1461.ice_brand_arts_katana/give/1.trigger",
+        "asset:artifact/1460.ice_brand_arts_tonfa/give/1.trigger",
+        "asset:artifact/1459.ice_brand_arts_sword/give/1.trigger",
         "asset:artifact/1457.ice_brand_arts_axe/give/1.trigger",
         "asset:artifact/1458.ice_brand_arts_hammer/give/1.trigger",
         "asset:artifact/1456.ice_brand_arts/give/1.trigger",

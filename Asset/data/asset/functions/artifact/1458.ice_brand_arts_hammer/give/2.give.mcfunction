@@ -11,9 +11,9 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1458
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value stick
+    data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ-ハンマー","color":"#7DFFF2"}'
+    data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(ハンマー)","color":"#7DFFF2"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷のハンマー","color":"white"}','[{"text":"アイシクルライン","color":"aqua"},{"text":"状態中、MP消費無しで使用可能","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -49,7 +49,7 @@
 # 神器のクールダウン (int) (オプション)
     # data modify storage asset:artifact LocalCooldown set value 
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
-    data modify storage asset:artifact TypeCooldown.Type set value "short_Range"
+    data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
     data modify storage asset:artifact TypeCooldown.Duration set value 30
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value 

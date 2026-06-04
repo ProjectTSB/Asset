@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/1462.ice_brand_arts_spear/trigger/1.trigger",
+        "asset:artifact/1461.ice_brand_arts_katana/trigger/1.trigger",
         "asset:artifact/1456.ice_brand_arts/trigger/1.trigger",
         "asset:artifact/1306.will_o_wisp/trigger/1.trigger",
         "asset:artifact/1144.cradle_of_azure_moon/trigger/1.trigger",
