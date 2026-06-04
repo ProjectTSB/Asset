@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(日本刀)","color":"#7DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の日本刀","color":"white"}','[{"text":"アイシクルライン","color":"aqua"},{"text":"状態中、MP消費無しで使用可能","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の日本刀","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
