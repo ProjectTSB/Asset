@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:effect/0352.kitsunebi/_/register",
+        "asset:effect/0351.nectar_regeneration/_/register",
+        "asset:effect/0117.slowness/_/register",
+        "asset:effect/0360.calamity_bind/_/register",
         "asset:effect/0345.topaz_protection/_/register",
         "asset:effect/0339.will_o_wisp/_/register",
         "asset:effect/0342.prayer_amidst_blight/_/register",
