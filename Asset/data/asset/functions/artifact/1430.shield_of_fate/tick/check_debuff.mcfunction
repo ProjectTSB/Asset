@@ -9,4 +9,5 @@
     function api:entity/mob/effect/get/from_id
 
 # 付与されていなかったら実行
-    execute unless data storage api: Return.Effect run function asset:artifact/1430.shield_of_fate/tick/debuff
+    execute unless data storage api: Return.Effect run function asset:artifact/1430.shield_of_fate/effect/debuff_give
+    execute unless data storage api: Return.Effect run function asset:artifact/1430.shield_of_fate/effect/buff_remove

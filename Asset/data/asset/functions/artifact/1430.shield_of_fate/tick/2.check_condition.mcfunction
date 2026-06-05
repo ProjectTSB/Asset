@@ -8,8 +8,8 @@
     data modify storage asset:artifact TargetID set value 1430
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
-
-execute if entity @s[tag=!CanUsed] run return fail
+# 使用できなければリターン
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # 現在体力割合を取得する
     function api:entity/player/get_health_per

@@ -15,8 +15,8 @@
     execute store result score $13Q.HealthPer Temporary run data get storage api: Return.HealthPer 1000
 
 # 現在体力が30％以下でデバフを、30％より上でバフを付与する
-    execute if score $13Q.HealthPer Temporary matches ..300 run function asset:artifact/1430.shield_of_fate/trigger/debuff_give
-    execute unless score $13Q.HealthPer Temporary matches ..300 run function asset:artifact/1430.shield_of_fate/trigger/buff_give
+    execute if score $13Q.HealthPer Temporary matches ..300 run function asset:artifact/1430.shield_of_fate/effect/debuff_give
+    execute unless score $13Q.HealthPer Temporary matches ..300 run function asset:artifact/1430.shield_of_fate/effect/buff_give
 
 # リセット
     scoreboard players reset $13Q.HealthPer Temporary
