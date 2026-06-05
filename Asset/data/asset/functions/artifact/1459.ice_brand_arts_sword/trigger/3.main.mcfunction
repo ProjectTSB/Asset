@@ -7,6 +7,11 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
+#アイシクルライン処理
+    execute if entity @s run data modify storage api: Argument.ID set value 365
+    execute if entity @s run function api:entity/mob/effect/get/from_id
+    execute if entity @s if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 20
+    execute if entity @s if data storage api: Return.Effect run function api:mp/fluctuation
 # 攻撃時演出
     execute as @e[type=#lib:living,tag=Victim,distance=..6] at @s run particle block ice ~ ~ ~ 0.7 0.7 0.7 0 70
     execute as @e[type=#lib:living,tag=Victim,distance=..6] at @s run particle sweep_attack ~ ~1 ~

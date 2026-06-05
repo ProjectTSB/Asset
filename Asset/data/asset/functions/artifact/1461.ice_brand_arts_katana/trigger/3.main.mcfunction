@@ -7,6 +7,11 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/auto
 
+#アイシクルライン処理
+    execute if entity @s run data modify storage api: Argument.ID set value 365
+    execute if entity @s run function api:entity/mob/effect/get/from_id
+    execute if entity @s if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 30
+    execute if entity @s if data storage api: Return.Effect run function api:mp/fluctuation
 # ターゲット指定
     tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..5.5] add ICE_Hit
     execute as @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..5.5] positioned ^ ^ ^-100 run tag @s[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..100] remove ICE_Hit

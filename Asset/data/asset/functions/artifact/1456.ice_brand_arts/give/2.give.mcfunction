@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ","color":"#7DFFF2","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"使用すると周囲に複数の氷の神器を生成し落下させる","color":"white"}','{"text":"生成した神器は右クリックで回収でき、だれでも使える","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"使用すると周囲に複数の氷の神器を生成し落下させる","color":"white"}','{"text":"生成した神器は右クリックで回収でき、だれでも使える","color":"white"}','[{"text":"使用時に自身と周囲の味方に","color":"white"},{"text":"アイシクルライン","color":"#7DFFF2"},{"text":"を付与する","color":"white"}]','{"text":"この状態中、生成した神器の使用時にその元々の消費MPの半分が戻ってくる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 10
 # MP消費量 (int) 
-    data modify storage asset:artifact MPCost set value 70
+    data modify storage asset:artifact MPCost set value 120
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 200
 # MP回復量 (int) 

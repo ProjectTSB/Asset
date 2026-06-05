@@ -8,7 +8,11 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-
+#アイシクルライン処理
+    execute if entity @s run data modify storage api: Argument.ID set value 365
+    execute if entity @s run function api:entity/mob/effect/get/from_id
+    execute if entity @s if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 40
+    execute if entity @s if data storage api: Return.Effect run function api:mp/fluctuation
 # 攻撃時演出
     execute as @e[type=#lib:living,tag=Victim,distance=..6] at @s run particle block ice ~ ~ ~ 1 1 1 0 100
     execute as @e[type=#lib:living,tag=Victim,distance=..6] at @s run playsound block.glass.break master @a ~ ~ ~ 1.2 0.7

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(剣)","color":"#7DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の剣","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の剣","color":"white"}','[{"text":"この神器の使用時、自身が","color":"white"},{"text":"アイシクルライン","color":"#7DFFF2"},{"text":"状態なら","color":"white"}]','{"text":"この神器の元々の消費MPの半分が戻ってくる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
