@@ -21,8 +21,8 @@
     playsound block.glass.break player @a ~ ~ ~ 0.7 1.2
     playsound item.trident.throw player @a ~ ~ ~ 1 1
     data modify storage api: Argument.ID set value 2001
-    data modify storage api: Argument.FieldOverride set value {Color:8257522,Frames:[20335,20336,20337],Scale:[4f,4f,0.1f],Transformation:{left_rotation:[0.561f,-0.43f,0.43f,0.561f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
-    execute positioned ^ ^ ^1.5 positioned ~ ~0.5 ~ run function api:object/summon
+    data modify storage api: Argument.FieldOverride set value {Color:8257522,Frames:[20335,20336,20337],Scale:[5f,5f,0.1f],Transformation:{left_rotation:[0.561f,-0.43f,0.43f,0.561f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
+    execute positioned ^ ^ ^1.5 positioned ~ ~0.7 ~ run function api:object/summon
     # function asset:artifact/1461.ice_brand_arts_katana/trigger/slash
 # 引数を set
     data modify storage api: Argument.Damage set value 400f
