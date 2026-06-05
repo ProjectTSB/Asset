@@ -10,7 +10,7 @@
 #アイシクルライン処理
     data modify storage api: Argument.ID set value 365
     function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 50
+    execute if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 30
     execute if data storage api: Return.Effect run function api:mp/fluctuation
 # ターゲット指定
     tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..5.5] add ICE_Hit
