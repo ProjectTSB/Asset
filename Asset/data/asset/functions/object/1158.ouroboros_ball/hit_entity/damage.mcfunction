@@ -27,14 +27,14 @@
     data modify storage api: Argument.ElementType set value "Water" 
     execute as @a[tag=13S.Owner] run function api:damage/modifier
     # 前に計算したダメージ量に保持している前のダメージ量を足して与えるダメージに入れる。
-    execute store result score $Temporary Temporary run data get storage api: Argument.Damage
+    execute store result score $Temporary Temporary run data get storage api: Argument.Damage 10
     execute as @a[tag=13S.Owner] run scoreboard players operation $Temporary Temporary += $DamageHolder Temporary
-    execute store result storage api: Argument.Damage float 1 run scoreboard players get $Temporary Temporary
-    # 今回与えるダメージの八割を保持する。（最大2000）
+    execute store result storage api: Argument.Damage double 0.1 run scoreboard players get $Temporary Temporary
+    # 今回与えるダメージの10倍の八割を保持する。（最大2000）
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage 80
-    scoreboard players operation $Temporary Temporary /= $100 Const
-    scoreboard players operation $Temporary Temporary < $2000 Const
-    execute store result score $DamageHolder Temporary run scoreboard players get $Temporary Temporary
+    scoreboard players operation $Temporary Temporary /= $10 Const
+    scoreboard players operation $Temporary Temporary < $20000 Const
+    scoreboard players operation $DamageHolder Temporary = $Temporary Temporary
     # 相手の耐性を考慮してダメージをあたえる。
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
     function api:damage/reset
