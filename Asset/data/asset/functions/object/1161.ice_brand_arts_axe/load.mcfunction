@@ -6,4 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:object/1161.ice_brand_arts_axe/**
-    scoreboard objectives add Land dummy
+    scoreboard objectives add 1161.Land dummy
+    scoreboard objectives add 1161.Kind dummy

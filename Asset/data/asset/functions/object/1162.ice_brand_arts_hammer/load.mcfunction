@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/1162.ice_brand_arts_hammer/**
-    scoreboard objectives add Land dummy
+    scoreboard objectives add 1162.Land dummy

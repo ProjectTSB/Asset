@@ -1,4 +1,4 @@
-#> asset:artifact/1461.ice_brand_arts_katana/trigger/zangeki
+#> asset:artifact/1461.ice_brand_arts_katana/trigger/slash
 #
 # 神器のメイン処理部
 #

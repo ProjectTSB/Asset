@@ -20,17 +20,17 @@
     
     
 #アイシクルライン処理
-    execute if entity @s run data modify storage api: Argument.ID set value 365
-    execute if entity @s run function api:entity/mob/effect/get/from_id
-    execute if entity @s if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 30
-    execute if entity @s if data storage api: Return.Effect run function api:mp/fluctuation
+    data modify storage api: Argument.ID set value 365
+    function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 50
+    execute if data storage api: Return.Effect run function api:mp/fluctuation
 
 # 攻撃時演出
-    execute as @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] at @s run particle block ice ~ ~ ~ 1 1 1 0 100
-    execute as @s at @s run playsound block.glass.break master @a ~ ~ ~ 0.7 1.2
-    execute as @s at @s run playsound item.trident.riptide_1 master @a ~ ~ ~ 0.4 1.4
-    execute as @s at @s run playsound item.trident.throw master @a ~ ~ ~ 1 1
-    function asset:artifact/1462.ice_brand_arts_spear/trigger/yari
+    execute at @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] run particle block ice ~ ~ ~ 1 1 1 0 100
+    playsound block.glass.break player @a ~ ~ ~ 0.7 1.2
+    playsound item.trident.riptide_1 player @a ~ ~ ~ 0.4 1.4
+    playsound item.trident.throw player @a ~ ~ ~ 1 1
+    execute at @s anchored eyes run function asset:artifact/1462.ice_brand_arts_spear/trigger/yari
 # 引数を set
     data modify storage api: Argument.Damage set value 400f
     data modify storage api: Argument.AttackType set value "Physical"

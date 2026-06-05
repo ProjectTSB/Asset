@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"アイスブランドアーツで生成した神器を使用したとき、本来の消費MP量の半分が戻ってくる","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 400
+    #data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value 
 # 効果時間の操作方法 (default = API || "replace")
@@ -29,9 +29,9 @@
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value 
 # 消すのに必要なレベル (int) (default = 1)
-    # data modify storage asset:effect RequireClearLv set value 
+    data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect Visible set value 
+    data modify storage asset:effect Visible set value false
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
     # data modify storage asset:effect StackVisible set value
 

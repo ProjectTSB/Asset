@@ -16,6 +16,6 @@
     execute at @s if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
     execute at @s if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
     execute at @s if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
-    execute at @s if score @s Land matches 0 unless block ~ ~-0.1 ~ air run particle block dirt ~ ~ ~ 1 1 1 0 20
-    execute at @s if score @s Land matches 0 unless block ~ ~-0.1 ~ air run playsound item.trident.hit_ground master @a ~ ~ ~ 1 2
-    execute at @s if score @s Land matches 0 unless block ~ ~-0.1 ~ air run scoreboard players set @s Land 1
+    execute at @s if score @s 1162.Land matches 0 unless block ~ ~-0.1 ~ air run particle block dirt ~ ~ ~ 1 1 1 0 20
+    execute at @s if score @s 1162.Land matches 0 unless block ~ ~-0.1 ~ air run playsound item.trident.hit_ground player @a ~ ~ ~ 1 2
+    execute at @s if score @s 1162.Land matches 0 unless block ~ ~-0.1 ~ air run scoreboard players set @s 1162.Land 1
