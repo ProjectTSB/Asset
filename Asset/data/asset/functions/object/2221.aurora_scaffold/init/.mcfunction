@@ -25,15 +25,15 @@
 
 # 3x3の範囲がそれぞれブロックでなければ水色のステンドグラスを設置
 # 設置できたかどうかを記録
-    execute at @s positioned ~00 ~00 ~00 store success storage asset:context this.CheckBreak.1 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~01 ~00 ~00 store success storage asset:context this.CheckBreak.2 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~01 ~00 ~01 store success storage asset:context this.CheckBreak.3 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~01 ~00 ~-1 store success storage asset:context this.CheckBreak.4 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~-1 ~00 ~00 store success storage asset:context this.CheckBreak.5 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~-1 ~00 ~01 store success storage asset:context this.CheckBreak.6 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~-1 ~00 ~-1 store success storage asset:context this.CheckBreak.7 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~00 ~00 ~01 store success storage asset:context this.CheckBreak.8 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
-    execute at @s positioned ~00 ~00 ~-1 store success storage asset:context this.CheckBreak.9 byte 1 if block ~ ~ ~ #lib:no_collision_without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~00 ~00 ~00 store success storage asset:context this.CheckBreak.1 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~01 ~00 ~00 store success storage asset:context this.CheckBreak.2 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~01 ~00 ~01 store success storage asset:context this.CheckBreak.3 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~01 ~00 ~-1 store success storage asset:context this.CheckBreak.4 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~-1 ~00 ~00 store success storage asset:context this.CheckBreak.5 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~-1 ~00 ~01 store success storage asset:context this.CheckBreak.6 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~-1 ~00 ~-1 store success storage asset:context this.CheckBreak.7 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~00 ~00 ~01 store success storage asset:context this.CheckBreak.8 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
+    execute at @s positioned ~00 ~00 ~-1 store success storage asset:context this.CheckBreak.9 byte 1 if block ~ ~ ~ #lib:no_collision/without_fluid run setblock ~ ~ ~ cyan_stained_glass
 
 # 同座標に同Objectがいればreturnして消滅
     execute at @s positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=item_display,tag=!2221.This,scores={ObjectID=2221},dx=0,limit=1] run return run kill @s

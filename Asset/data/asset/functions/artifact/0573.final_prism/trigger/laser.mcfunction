@@ -19,4 +19,4 @@
     execute if entity @s[distance=..45] positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[tag=Enemy,tag=!Uninterferable,dx=0] add PrismDamage
 
 # 前進
-    execute if entity @s[distance=..45] if block ~ ~ ~ #lib:no_collision positioned ^ ^ ^0.5 run function asset:artifact/0573.final_prism/trigger/laser
+    execute if entity @s[distance=..45] if block ~ ~ ~ #lib:no_collision/ positioned ^ ^ ^0.5 run function asset:artifact/0573.final_prism/trigger/laser

@@ -11,4 +11,4 @@
 
 # 再帰
     scoreboard players remove $T4.Temp Temporary 1
-    execute at @s positioned ^ ^ ^0.25 if block ^ ^ ^ #lib:no_collision if score $T4.Temp Temporary matches 1.. run function asset:artifact/1048.thunder_storm/trigger/recursive
+    execute at @s positioned ^ ^ ^0.25 if block ^ ^ ^ #lib:no_collision/ if score $T4.Temp Temporary matches 1.. run function asset:artifact/1048.thunder_storm/trigger/recursive
