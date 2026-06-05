@@ -15,7 +15,7 @@
     # data modify storage api: Argument.DurationOperation set value "replace"   # オプション
     # data modify storage api: Argument.StackOperation set value "replace"      # オプション
     # data modify storage api: Argument.FieldOverride set value {…}      # オプション
-    execute as @s run function api:entity/mob/effect/give
+    execute as @s at @s as @a[distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 # 0〜3の乱数を生成し、ストレージの[_]に保存
     execute store result storage asset:temp _ int 1 run random value 0..3
