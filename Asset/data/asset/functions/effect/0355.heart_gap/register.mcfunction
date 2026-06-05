@@ -36,4 +36,5 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.UUID set value [I;1,3,355,0]
+    data modify storage asset:effect Field.Amount set value 0

@@ -7,5 +7,5 @@
 #   asset:effect/0355.heart_gap/end/
 
 # 補正を削除する
-    data modify storage api: Argument.UUID set value [I;1,3,355,0]
+    data modify storage api: Argument.UUID set from storage asset:context this.UUID
     function api:modifier/defense/base/remove

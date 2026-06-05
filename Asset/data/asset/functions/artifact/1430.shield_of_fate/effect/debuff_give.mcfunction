@@ -8,5 +8,6 @@
 
 #>デバフ付与
     data modify storage api: Argument.ID set value 355
+    data modify storage api: Argument.FieldOverride.Amount set value -0.15
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

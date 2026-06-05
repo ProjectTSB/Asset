@@ -7,5 +7,5 @@
 #   asset:effect/0354.protecction_of_courage/end/
 
 # 補正を削除する
-    data modify storage api: Argument.UUID set value [I;1,3,354,0]
+    data modify storage api: Argument.UUID set from storage asset:context this.UUID
     function api:modifier/defense/base/remove
