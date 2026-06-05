@@ -22,6 +22,6 @@
     scoreboard players reset $13Q.HealthPer Temporary
 
 # sound
-    playsound minecraft:block.copper_trapdoor.open master @a ~ ~ ~ 1.0 0.5 0.0
+    playsound minecraft:block.copper_trapdoor.open player @a ~ ~ ~ 1.0 0.5 0.0
     
     playsound disabled_sounds:item.armor.equip_iron player @a ~ ~ ~ 1 1
