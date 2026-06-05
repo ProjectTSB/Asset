@@ -2,7 +2,9 @@
 #
 # デバフの削除
 #
-# @within function asset:artifact/1430.shield_of_fate/tick/check_buff
+# @within function
+#   asset:artifact/1430.shield_of_fate/tick/check_buff
+#   asset:artifact/1430.shield_of_fate/tick/2.check_condition
 
 #>デバフ削除
     data modify storage api: Argument.ID set value 355

@@ -8,6 +8,10 @@
     data modify storage asset:artifact TargetID set value 1430
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
+
+# 使用できない場合バフ、デバフを削除する
+    execute if entity @s[tag=!CanUsed] run function asset:artifact/1430.shield_of_fate/effect/buff_remove
+    execute if entity @s[tag=!CanUsed] run function asset:artifact/1430.shield_of_fate/effect/debuff_remove
 # 使用できなければリターン
     execute if entity @s[tag=!CanUsed] run return fail
 
