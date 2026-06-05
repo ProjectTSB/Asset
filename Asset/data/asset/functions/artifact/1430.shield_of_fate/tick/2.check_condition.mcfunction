@@ -4,6 +4,13 @@
 #
 # @within function asset:artifact/1430.shield_of_fate/tick/1.trigger
 
+# ID指定する
+    data modify storage asset:artifact TargetID set value 1430
+# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
+    function asset:artifact/common/check_condition/hotbar
+
+execute if entity @s[tag=!CanUsed] run return fail
+
 # 現在体力割合を取得する
     function api:entity/player/get_health_per
     execute store result score $13Q.HealthPer Temporary run data get storage api: Return.HealthPer 1000
