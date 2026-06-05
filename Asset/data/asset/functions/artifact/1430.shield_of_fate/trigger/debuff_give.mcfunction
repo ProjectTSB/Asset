@@ -6,4 +6,4 @@
 
 #>Effect付与
     data modify storage api: Argument.ID set value 355
-    execute as @s run function api:entity/mob/effect/give
+    function api:entity/mob/effect/give
