@@ -11,7 +11,6 @@
 
 #> Private
 # @private
-    #declare tag SpreadMarker
     #declare score_holder $Interval
 
 # 音
@@ -21,7 +20,7 @@
     scoreboard players reset $Interval Temporary
 
 # パーティクル
-    function asset:artifact/0108.vacuum_hopper/trigger/particle
+    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/0108.vacuum_hopper/trigger/particle
 
 # 円柱判定
     data modify storage lib: Argument.BoundingCone.Angle set value 40d
