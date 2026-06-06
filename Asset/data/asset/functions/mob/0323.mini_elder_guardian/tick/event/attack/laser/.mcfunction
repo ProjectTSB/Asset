@@ -4,8 +4,6 @@
 #
 # @within function asset:mob/0323.mini_elder_guardian/tick/event/attack/
 
-# 旋回 at @sを入れることで元の実行座標に戻す
-
 # 予告の黄色レーザー
     execute if score @s General.Mob.Tick matches 40..100 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/laser/yellow
 
