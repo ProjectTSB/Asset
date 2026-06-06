@@ -1,11 +1,6 @@
 {
     "values": [
-        "asset:object/1166.ice_brand_arts_tonfa/load",
-        "asset:object/1165.ice_brand_arts_spear/load",
-        "asset:object/1164.ice_brand_arts_katana/load",
-        "asset:object/1163.ice_brand_arts_sword/load",
-        "asset:object/1162.ice_brand_arts_hammer/load",
-        "asset:object/1161.ice_brand_arts_axe/load",
+        "asset:object/1161.ice_brand_arts/load",
         "asset:object/1061.azure_jelly/load",
         "asset:object/2251.wall_laser_clock/load",
         "asset:object/2212.eclael_upper_shot/load",

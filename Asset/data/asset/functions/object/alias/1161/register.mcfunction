@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:object/1161.ice_brand_arts_axe/register
+    function asset:object/1161.ice_brand_arts/register

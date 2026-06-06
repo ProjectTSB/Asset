@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/1161.ice_brand_arts_axe/init/
+    function asset:object/1161.ice_brand_arts/init/

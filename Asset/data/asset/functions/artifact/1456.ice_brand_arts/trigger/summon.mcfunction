@@ -28,5 +28,5 @@
 # 召喚位置・向きは実行者のものが使われる
     function api:object/summon
     
-    data remove storage asset:temp kind
+    # data remove storage asset:temp kind
     
