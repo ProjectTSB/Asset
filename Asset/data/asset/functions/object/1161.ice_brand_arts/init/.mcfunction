@@ -8,8 +8,8 @@
     scoreboard players set @s 1161.Land 0
 # 0〜5の乱数を生成し、スコアに保存(武器種決定)
     execute store result score @s 1161.Kind run random value 0..5
-    scoreboard players operation #temp Temporary = @s 1161.Kind
-    execute on passengers if entity @s[type=interaction,tag=AutoKillWhenDieVehicle,tag=ProcessCommonTag] run scoreboard players operation @s 1161.Kind = #temp Temporary
+    scoreboard players operation $temp Temporary = @s 1161.Kind
+    execute on passengers if entity @s[type=interaction,tag=AutoKillWhenDieVehicle,tag=ProcessCommonTag] run scoreboard players operation @s 1161.Kind = $temp Temporary
     scoreboard players reset * Temporary
 # 見た目変更
     # execute if score @s 1161.Kind matches 0 run data modify entity @s item.tag.CustomModelData set value 2
