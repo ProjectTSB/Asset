@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"バキューム・ホッパー","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"吸引力の変わらないただ一つの掃除機。"}]','[{"text":"めんどくさがり屋のあなたへ！"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"前方のアイテム及び敵を吸い込む","color":"white"}','{"text":"吸引力の変わらないただ一つの掃除機。","color":"gray"}','{"text":"めんどくさがり屋のあなたへ！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
