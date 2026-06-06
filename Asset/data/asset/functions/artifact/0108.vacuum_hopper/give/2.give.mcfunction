@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 108
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
+    data modify storage asset:artifact Item set value "minecraft:ender_eye"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"バキューム・ホッパー","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
