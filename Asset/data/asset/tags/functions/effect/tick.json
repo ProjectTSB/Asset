@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:effect/0352.kitsunebi/_/tick",
+        "asset:effect/0351.nectar_regeneration/_/tick",
+        "asset:effect/0360.calamity_bind/_/tick",
+        "asset:effect/0339.will_o_wisp/_/tick",
+        "asset:effect/0342.prayer_amidst_blight/_/tick",
+        "asset:effect/0340.endless_thirst/_/tick",
+        "asset:effect/0350.yuzu/_/tick",
         "asset:effect/0025.levitation/_/tick",
         "asset:effect/0244.aurora_armor/_/tick",
         "asset:effect/0243.oblivious_snow/_/tick",
@@ -36,7 +43,6 @@
         "asset:effect/0271.ghostly_texture/_/tick",
         "asset:effect/0311.scrap_maker/_/tick",
         "asset:effect/0191.night_vision/_/tick",
-        "asset:effect/0310.angel_wing/_/tick",
         "asset:effect/0291.mine_soul/_/tick",
         "asset:effect/0303.celestial_target/_/tick",
         "asset:effect/0620.ongaeshi/_/tick",

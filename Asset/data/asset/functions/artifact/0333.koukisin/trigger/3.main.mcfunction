@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run particle minecraft:crit ~ ~1 ~ 0.2 0.8 0.2 0 80 normal @a
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10] run particle minecraft:crit ~ ~1 ~ 0.2 0.8 0.2 0 80 normal @a
     playsound minecraft:block.anvil.place player @a ~ ~ ~ 0.8 2
 
 # 耐性貫通ダメージ
@@ -18,5 +18,5 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10,limit=1] run function api:damage/
     function api:damage/reset
