@@ -1,6 +1,15 @@
 {
     "values": [
         "asset:artifact/1360.vintage_wine/give/1.trigger",
+        "asset:artifact/1409.mana_charm/give/1.trigger",
+        "asset:artifact/1327.lunatic_torch/give/1.trigger",
+        "asset:artifact/1332.bebebeam/give/1.trigger",
+        "asset:artifact/1252.fox_candle/give/1.trigger",
+        "asset:artifact/1343.coffee_milk_pack/give/1.trigger",
+        "asset:artifact/1342.fruit_milk_pack/give/1.trigger",
+        "asset:artifact/1325.calamity_chain/give/1.trigger",
+        "asset:artifact/1314.topaz_broach/give/1.trigger",
+        "asset:artifact/1306.will_o_wisp/give/1.trigger",
         "asset:artifact/1308.magnifier_of_detective_girl/give/1.trigger",
         "asset:artifact/1109.black_lily_of_priestess/give/1.trigger",
         "asset:artifact/1311.yearning_rose/give/1.trigger",
