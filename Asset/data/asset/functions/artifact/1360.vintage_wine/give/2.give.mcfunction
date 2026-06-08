@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:honey_bottle"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"ヴィンテージ・ワイン","color":"#b33e5c"}'
+    data modify storage asset:artifact Name set value '{"text":"ヴィンテージ・ワイン","color":"#d93d64"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の30%分回復する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
