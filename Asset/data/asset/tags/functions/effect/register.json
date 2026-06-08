@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0302.safety_check_complete/_/register",
+        "asset:effect/0346.lunatic_time/_/register",
         "asset:effect/0352.kitsunebi/_/register",
         "asset:effect/0351.nectar_regeneration/_/register",
         "asset:effect/0117.slowness/_/register",
