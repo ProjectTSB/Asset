@@ -18,12 +18,9 @@
 # スコア初期化
     scoreboard players set @s 110.Tick 0
     scoreboard players set @s 110.Element -1
-    
+
 # まず1発発射する
     function asset:artifact/1332.bebebeam/trigger/beam/
 
 # ループ開始
     schedule function asset:artifact/1332.bebebeam/trigger/loop/ 1t replace
-
-# リセット
-    # scoreboard players reset @s 110.Count
