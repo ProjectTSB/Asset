@@ -27,3 +27,4 @@
     scoreboard players reset $Move Temporary
     scoreboard players reset $Temp Temporary
     scoreboard players reset $KBResist Temporary
+    data remove storage asset:temp Args
