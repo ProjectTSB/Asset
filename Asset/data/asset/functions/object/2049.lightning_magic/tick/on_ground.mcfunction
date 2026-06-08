@@ -4,19 +4,13 @@
 #
 # @within function asset:object/2049.lightning_magic/tick/
 
-#> Private
-# @private
-    #declare score_holder $Interval
-
 # 一定間隔で実行
-    scoreboard players operation $Interval Temporary = @s General.Object.Tick
-    scoreboard players operation $Interval Temporary %= $8 Const
-    execute if score $Interval Temporary matches 0 at @s rotated ~ 0 run tag @s add 2049.Interval
-    scoreboard players reset $Interval Temporary
-
-# IntervalTagがある時のみ実行
-    execute if entity @s[tag=2049.Interval] run function asset:object/2049.lightning_magic/tick/thunder
+    execute store result storage asset:context this.AttackInterval._ int 0.9999999999 run data get storage asset:context this.AttackInterval._
+    execute if data storage asset:context this.AttackInterval{_:0} run function asset:object/2049.lightning_magic/tick/thunder
+    execute if data storage asset:context this.AttackInterval{_:0} run data modify storage asset:context this.AttackInterval._ set from storage asset:context this.AttackInterval.Max
 
 # プレイヤーの方向へ誘導する
-    execute if predicate api:global_vars/difficulty/max/2_hard facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-400 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if predicate api:global_vars/difficulty/min/3_blessless facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-200 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute facing entity @p[gamemode=!spectator,distance=..100] feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-300 facing entity @s eyes positioned as @s run tp @s ~ ~ ~ ~ ~
+
+# 現在座標がno_collision && 真下がブロック && 自身が下を向いている なら角度を0に固定する
+    execute if block ~ ~ ~ #lib:no_collision/without_fluid unless block ~ ~-0.15 ~ #lib:no_collision/without_fluid at @s if entity @s[x_rotation=0..90] run tp @s ~ ~ ~ ~ 0

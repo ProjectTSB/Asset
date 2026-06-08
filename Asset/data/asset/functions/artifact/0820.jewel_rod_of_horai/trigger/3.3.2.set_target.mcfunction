@@ -15,7 +15,7 @@
     #declare tag MS.TargetCandidate
 
 # 候補を探索
-    tag @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..12] add MS.TargetCandidate
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..12] add MS.TargetCandidate
 
 # 四角錐の範囲外の敵を除外
     execute as @e[type=#lib:living,tag=MS.TargetCandidate,distance=..12] run function asset:artifact/0820.jewel_rod_of_horai/trigger/search_target
