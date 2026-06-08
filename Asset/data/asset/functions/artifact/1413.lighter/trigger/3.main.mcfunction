@@ -9,6 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
+#> Private
+# @private
+    #declare tag Target
+
 # 前方の敵にTagをつける
     execute positioned ^ ^ ^4 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] add Target
 
