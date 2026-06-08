@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0369.elevage/_/register",
         "asset:effect/0302.safety_check_complete/_/register",
         "asset:effect/0346.lunatic_time/_/register",
         "asset:effect/0352.kitsunebi/_/register",
