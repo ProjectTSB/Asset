@@ -1,5 +1,12 @@
 {
     "values": [
+        "asset:artifact/1409.mana_charm/register",
+        "asset:artifact/1327.lunatic_torch/register",
+        "asset:artifact/1332.bebebeam/register",
+        "asset:artifact/1252.fox_candle/register",
+        "asset:artifact/1343.coffee_milk_pack/register",
+        "asset:artifact/1342.fruit_milk_pack/register",
+        "asset:artifact/1325.calamity_chain/register",
         "asset:artifact/1314.topaz_broach/register",
         "asset:artifact/1306.will_o_wisp/register",
         "asset:artifact/1308.magnifier_of_detective_girl/register",
