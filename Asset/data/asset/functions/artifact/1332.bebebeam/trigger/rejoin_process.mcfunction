@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:rejoin
 
-# ループ
-    schedule function asset:artifact/1332.bebebeam/trigger/loop/ 1t replace
+# ループ再開
+    execute if entity @a[scores={110.Count=1..}] run schedule function asset:artifact/1332.bebebeam/trigger/loop/ 1t replace
