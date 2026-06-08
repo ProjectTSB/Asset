@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1413
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "carrot_on_a_stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ライター","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火を付けるための神器"}','{"text":"それ以外の用途はない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"火を付けるための神器"}','{"text":"敵から火柱を発生させる"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,19 +29,19 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [10,15]
+    data modify storage asset:artifact AttackInfo.Damage set value [50]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
+    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.ElementType set value [Fire]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.BypassResist set value 
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.IsRangeAttack set value 2
+    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    # data modify storage asset:artifact AttackInfo.AttackRange set value 
+    data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int) 
-    data modify storage asset:artifact MPCost set value 5
+    data modify storage asset:artifact MPCost set value 20
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 
 # MP回復量 (int) 
