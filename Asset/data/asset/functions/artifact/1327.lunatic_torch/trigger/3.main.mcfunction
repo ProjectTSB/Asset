@@ -16,10 +16,10 @@
 # 4. リセット
 
 # 演出
-    playsound entity.blaze.shoot player @a ~ ~ ~ 0.7 1
-    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 0.9
-    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 1.3
-    playsound block.enchantment_table.use player @a ~ ~ ~ 0.8 1.4
+    playsound entity.blaze.shoot player @a ~ ~ ~ 0.9 1
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.9 0.9
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.9 1.3
+    playsound block.enchantment_table.use player @a ~ ~ ~ 0.9 1.4
     execute rotated ~ 0 anchored eyes positioned ^0.5 ^0.5 ^ run function asset:artifact/1327.lunatic_torch/trigger/vfx
 
 # 自身にtagを付与
