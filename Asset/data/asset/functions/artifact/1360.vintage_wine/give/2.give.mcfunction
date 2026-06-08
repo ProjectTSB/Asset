@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヴィンテージ・ワイン","color":"#d93d64"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を10回復する","color":"white"}','{"text":"手に所持していた時間が2秒につき回復量が増加する","color":"white"}','{"text":"(最大回復量:90、所持時間18秒で効果最大)","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を10回復する","color":"white"}','{"text":"オフハンドに所持していた時間が2秒につき回復量が増加する","color":"white"}','{"text":"(最大回復量:90、所持時間18秒で効果最大)","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
