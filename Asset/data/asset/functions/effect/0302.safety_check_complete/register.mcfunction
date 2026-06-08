@@ -37,4 +37,4 @@
 
 # フィールド
     data modify storage asset:effect Field.UUID set value [I;1,3,302,0]
-    data modify storage asset:effect Field.Amount set value 0.2
+    data modify storage asset:effect Field.Amount set value 0.2d

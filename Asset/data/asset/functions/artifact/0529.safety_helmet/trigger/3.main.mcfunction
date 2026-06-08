@@ -15,6 +15,6 @@
 # 耐性バフ付与
     data modify storage api: Argument.ID set value 302
     data modify storage api: Argument.Duration set value 60
-    data modify storage api: Argument.FieldOverride.Amount set value 0.2
+    data modify storage api: Argument.FieldOverride.Amount set value 0.2d
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
