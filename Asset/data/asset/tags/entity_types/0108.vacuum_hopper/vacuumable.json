@@ -1,6 +1,7 @@
 {
     "values": [
         "#lib:living_without_player",
+        "experience_orb",
         "item"
     ]
 }
