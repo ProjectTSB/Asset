@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"かき氷(イチゴ)","color":"#ff457d"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"体力を5回復し、%1$sを10秒間得る","color":"white","with":[{"text":"水攻撃+6%","color":"aqua"}]}','{"translate":"-%1$s水攻撃バフは最大2スタックまで重複する","color":"white","with":[{"text":"\\u0003","font":"space"}]}','{"translate":"-%1$s3スタックになるとバフが解除され、10の固定ダメージを受ける","color":"white","with":[{"text":"\\u0003","font":"space"}]}']
+    data modify storage asset:artifact Lore set value ['{"translate":"体力を5回復し、%1$sを10秒間得る","color":"white","with":[{"text":"水攻撃+6%","color":"green"}]}','{"translate":"-%1$s水攻撃バフは最大3スタックまで重複する","color":"white","with":[{"text":"\\u0003","font":"space"}]}','{"translate":"-%1$s3スタックになると回復せず、10の固定ダメージを受ける","color":"white","with":[{"text":"\\u0003","font":"space"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

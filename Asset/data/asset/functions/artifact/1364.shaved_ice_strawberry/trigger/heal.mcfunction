@@ -9,8 +9,3 @@
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
-
-# バフ
-    data modify storage api: Argument.ID set value 348
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset

@@ -1,4 +1,4 @@
-#> asset:artifact/1366.shaved_ice_melon/trigger/heal_and_buff
+#> asset:artifact/1366.shaved_ice_melon/trigger/heal
 #
 #
 #
@@ -9,8 +9,3 @@
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
-
-# バフ
-    data modify storage api: Argument.ID set value 348
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset

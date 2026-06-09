@@ -16,7 +16,7 @@
     function api:entity/mob/effect/get/from_id
 
 # スタックがNでないなら回復とバフ
-    execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/heal_and_buff
+    execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/heal
 
 # スタックがNなら回復とバフ
-    execute if data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/damage_and_clear_buff
+    execute if data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/damage

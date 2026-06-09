@@ -15,8 +15,13 @@
     data modify storage api: Argument.ID set value 348
     function api:entity/mob/effect/get/from_id
 
-# スタックがNでないなら回復とバフ
-    execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1365.shaved_ice_blue_hawaii/trigger/heal_and_buff
+# バフ
+    data modify storage api: Argument.ID set value 348
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
-# スタックがNなら回復とバフ
-    execute if data storage api: Return.Effect{Stack:2} run function asset:artifact/1365.shaved_ice_blue_hawaii/trigger/damage_and_clear_buff
+# スタックがNでないなら回復
+    execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1365.shaved_ice_blue_hawaii/trigger/heal
+
+# スタックがNならダメージ
+    execute if data storage api: Return.Effect{Stack:2} run function asset:artifact/1365.shaved_ice_blue_hawaii/trigger/damage

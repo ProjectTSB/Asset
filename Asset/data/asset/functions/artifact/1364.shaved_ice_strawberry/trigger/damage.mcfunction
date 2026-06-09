@@ -6,11 +6,7 @@
 
 # 演出
     playsound minecraft:block.amethyst_cluster.break player @a ~ ~ ~ 1 0.8
-
-# バフ解除
-    data modify storage api: Argument.ID set value 348
-    function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset
+    playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 1 1
 
 # ダメージ
     data modify storage api: Argument.Damage set value 10
