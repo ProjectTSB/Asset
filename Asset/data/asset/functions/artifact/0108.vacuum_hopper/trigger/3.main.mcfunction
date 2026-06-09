@@ -28,8 +28,11 @@
     data modify storage lib: Argument.BoundingCone.Selector set value "@e[type=#asset:0108.vacuum_hopper/vacuumable,tag=!Uninterferable,tag=!Immovable,distance=..16]"
     function lib:bounding_cone/
 
-# 吸い込む
-    execute as @e[type=#asset:0108.vacuum_hopper/vacuumable,tag=BoundingCone,distance=..16] at @s run function asset:artifact/0108.vacuum_hopper/trigger/vacuum/
+# 生きているentity以外なら即座に自身の元へtpさせる
+    tp @e[type=#asset:0108.vacuum_hopper/vacuumable,type=!#lib:living_without_player,tag=BoundingCone,distance=..16] ~ ~ ~
+
+# アイテム以外なら吸い込む
+    execute as @e[type=#lib:living_without_player,tag=BoundingCone,distance=..16] at @s run function asset:artifact/0108.vacuum_hopper/trigger/vacuum/
 
 # リセット
     tag @e[type=#asset:0108.vacuum_hopper/vacuumable,tag=BoundingCone,distance=..16] remove BoundingCone
