@@ -8,9 +8,10 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
+# 音
+    playsound item.book.page_turn player @s ~ ~ ~
+# 属性抽選
     execute store result storage asset:temp type int 1 run random value 0..2
-
-
     execute if data storage asset:temp {type:0} at @s anchored eyes run function asset:artifact/0101.grimoire/trigger/balletfire
     execute if data storage asset:temp {type:1} at @s anchored eyes run function asset:artifact/0101.grimoire/trigger/balletwater
     execute if data storage asset:temp {type:2} at @s anchored eyes run function asset:artifact/0101.grimoire/trigger/balletthunder
