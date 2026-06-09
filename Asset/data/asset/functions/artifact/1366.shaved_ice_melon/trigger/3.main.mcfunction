@@ -15,8 +15,8 @@
     data modify storage api: Argument.ID set value 348
     function api:entity/mob/effect/get/from_id
 
-# スタックがNでないなら回復とバフ
+# スタックがNでないなら回復
     execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/heal
 
-# スタックがNなら回復とバフ
+# スタックがNならダメージ
     execute if data storage api: Return.Effect{Stack:2} run function asset:artifact/1366.shaved_ice_melon/trigger/damage
