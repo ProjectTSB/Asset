@@ -26,13 +26,12 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water" 
     execute as @a[tag=13S.Owner] run function api:damage/modifier
-    # 前に計算したダメージ量に保持している前のダメージ量を足して与えるダメージに入れる。
+    # 前に計算したダメージ量(10倍)に保持している前のダメージ量(8倍)を足して0.1倍して与えるダメージに入れる。
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage 10
     scoreboard players operation $Temporary Temporary += $DamageHolder Temporary
     execute store result storage api: Argument.Damage double 0.1 run scoreboard players get $Temporary Temporary
-    # 今回与えるダメージの10倍の八割を保持する。（最大2000）
-    execute store result score $Temporary Temporary run data get storage api: Argument.Damage 80
-    scoreboard players operation $Temporary Temporary /= $10 Const
+    # 今回与えるダメージの八割の10倍(8倍)を保持する。（最大2000）
+    execute store result score $Temporary Temporary run data get storage api: Argument.Damage 8
     scoreboard players operation $Temporary Temporary < $20000 Const
     scoreboard players operation $DamageHolder Temporary = $Temporary Temporary
     # 相手の耐性を考慮してダメージをあたえる。
