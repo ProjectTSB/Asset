@@ -18,6 +18,7 @@
     execute anchored eyes positioned ^ ^ ^ run particle dust 1 0.46 0.87 1.5 ~ ~12 ~ 0.3 10 0.3 0 60 normal @a
     playsound entity.warden.death hostile @a ~ ~ ~ 1 1.8
     playsound entity.warden.death hostile @a ~ ~ ~ 1 1.75
+    playsound minecraft:entity.squid.squirt hostile @a ~ ~ ~ 0.6 0.9
 
 # 回復量計算
     function api:global_vars/get_difficulty
