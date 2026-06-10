@@ -9,7 +9,8 @@
     data modify storage api: Argument.FieldOverride set value {Scale:[0.8f,20f,0.8f],Color:16732083,DisappearInterpolation:2,LifeTime:12}
     execute positioned ~ ~19 ~ rotated ~ 90 run function api:object/summon
 
-#
+# 演出
+    particle dust 1 0.46 0.87 1.5 ~ ~12 ~ 0.3 10 0.3 0 60 normal @a
     particle dust 1 0.46 0.87 1 ~ ~2.5 ~ 4 2 4 0 60 normal @a
     playsound entity.breeze.hurt hostile @a ~ ~ ~ 1 1
     playsound entity.warden.death hostile @a ~ ~ ~ 1 1.6
