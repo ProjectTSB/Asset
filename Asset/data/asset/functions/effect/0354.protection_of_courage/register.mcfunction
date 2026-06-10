@@ -1,17 +1,17 @@
-#> asset:effect/0355.heart_gap/register
+#> asset:effect/0354.protection_of_courage/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0355.heart_gap/_/register
+# @within function asset:effect/0354.protection_of_courage/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 355
+    data modify storage asset:effect ID set value 354
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"心隙弱化"}'
+    data modify storage asset:effect Name set value '{"text":"勇気の存護"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"これはあなたの心の隙。"}','{"text":"被ダメージが増加する}']
+    data modify storage asset:effect Description set value ['{"text":"あなたは守られていると感じる。"}','{"text":"被ダメージが低下する}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
@@ -25,7 +25,7 @@
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
-    data modify storage asset:effect IsBadEffect set value true
+    data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
     data modify storage asset:effect ProcessOnDied set value "keep"
 # 消すのに必要なレベル (int) (default = 1)
@@ -36,5 +36,5 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    data modify storage asset:effect Field.UUID set value [I;1,3,355,0]
+    data modify storage asset:effect Field.UUID set value [I;1,3,354,0]
     data modify storage asset:effect Field.Amount set value 10
