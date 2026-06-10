@@ -16,7 +16,7 @@
 
 # effectの情報を取得
     data modify storage api: Argument.ID set value 361
-    execute as @a if score @s UserID = $OwnerID Temporary run function api:entity/mob/effect/get/from_id
+    execute as @a[tag=13S.Owner] run function api:entity/mob/effect/get/from_id
     execute store result score $DamageHolder Temporary run data get storage api: Return.Effect.Field.DamageHolder
 
 
@@ -28,7 +28,7 @@
     execute as @a[tag=13S.Owner] run function api:damage/modifier
     # 前に計算したダメージ量に保持している前のダメージ量を足して与えるダメージに入れる。
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage 10
-    execute as @a[tag=13S.Owner] run scoreboard players operation $Temporary Temporary += $DamageHolder Temporary
+    scoreboard players operation $Temporary Temporary += $DamageHolder Temporary
     execute store result storage api: Argument.Damage double 0.1 run scoreboard players get $Temporary Temporary
     # 今回与えるダメージの10倍の八割を保持する。（最大2000）
     execute store result score $Temporary Temporary run data get storage api: Argument.Damage 80
