@@ -1,4 +1,4 @@
-#> asset:artifact/1364.shaved_ice_strawberry/trigger/damage_and_clear_buff
+#> asset:artifact/1364.shaved_ice_strawberry/trigger/damage
 #
 #
 #
