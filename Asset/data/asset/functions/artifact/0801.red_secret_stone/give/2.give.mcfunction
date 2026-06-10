@@ -11,7 +11,7 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 801
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:nether_star"
+    data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"謎の赤い秘石","color":"red","bold":true}'
 # 神器の説明文 (TextComponentString[])
@@ -60,7 +60,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:artifact CustomNBT set value {}
+    data modify storage asset:artifact CustomNBT set value {Enchantments:[{id:"minecraft:luck",lvl:1}]}
 
 # 神器の入手用function
     function asset:artifact/common/give
