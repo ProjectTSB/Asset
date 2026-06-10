@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ネクター・プラント","color":"#ff84ab"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"桃色の花弁をした花の魔物。"}','{"text":"全く動かないが、大量のミツを発射しこちらに的確に落としてくる。"}','{"text":"そのミツは仲間を癒し、敵の回復を阻害する。"}']
+    data modify storage asset:mob Lore set value ['{"text":"桃色の花弁をした花の魔物。"}','{"text":"全く動かないが、大量のミツを発射しこちらに的確に落としてくる。"}','{"text":"そのミツは魔物を癒し、こちらの回復を阻害する。"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
