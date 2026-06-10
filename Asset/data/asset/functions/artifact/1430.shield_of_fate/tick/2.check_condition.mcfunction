@@ -26,3 +26,4 @@
 
 # リセット
     scoreboard players reset $13Q.HealthPer Temporary
+    tag @s remove CanUsed
