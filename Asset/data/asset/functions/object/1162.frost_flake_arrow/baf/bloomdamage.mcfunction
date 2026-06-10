@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1162.frost_flake_arrow/kill/
+# @within function asset:object/1162.frost_flake_arrow/kill/object_summon
 
 # 飛翔時間1tickにつきダメージが4%上昇、最大40%まで
 # 1. 計算用の固定数値を準備する(4と100)

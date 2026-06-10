@@ -4,7 +4,8 @@
 #
 # @within function asset:object/1162.frost_flake_arrow/kill/
 
-
+# ダメージ増加
+    function asset:object/1162.frost_flake_arrow/baf/bloomdamage
 # Object召喚
     data modify storage api: Argument.ID set value 1163
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.BloomDamage
