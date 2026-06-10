@@ -15,6 +15,11 @@
     data modify storage api: Argument.ID set value 348
     function api:entity/mob/effect/get/from_id
 
+# バフ
+    data modify storage api: Argument.ID set value 348
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # スタックがNでないなら回復
     execute unless data storage api: Return.Effect{Stack:2} run function asset:artifact/1364.shaved_ice_strawberry/trigger/heal
 
