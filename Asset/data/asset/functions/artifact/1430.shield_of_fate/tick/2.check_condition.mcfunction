@@ -7,6 +7,7 @@
 # ID指定する
     data modify storage asset:artifact TargetID set value 1430
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
+    data modify storage asset:artifact DisabledCheckFlag set value {BelieveMessage:true}
     function asset:artifact/common/check_condition/hotbar
 
 # 使用できない場合バフ、デバフを削除する
