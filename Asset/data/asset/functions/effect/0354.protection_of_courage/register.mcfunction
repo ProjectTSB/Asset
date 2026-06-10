@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"勇気の存護"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"あなたは守られていると感じる。"}','{"text":"被ダメージが低下する}']
+    data modify storage asset:effect Description set value ['{"text":"あなたは守られていると感じる。"}','{"text":"被ダメージが低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
