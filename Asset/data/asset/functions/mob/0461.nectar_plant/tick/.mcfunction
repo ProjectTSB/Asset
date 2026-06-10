@@ -13,7 +13,7 @@
     execute if score @s General.Mob.Tick matches 150 run function asset:mob/0461.nectar_plant/tick/change_model/bloom/2
 
 # 開花したなら攻撃する
-    execute if score @s General.Mob.Tick matches 160 run function asset:mob/0461.nectar_plant/tick/attack
+    execute if score @s General.Mob.Tick matches 170 run function asset:mob/0461.nectar_plant/tick/attack
 
 # 攻撃を終えたら一回しぼむ
     execute if score @s General.Mob.Tick matches 220 run function asset:mob/0461.nectar_plant/tick/change_model/close/0
