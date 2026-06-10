@@ -24,6 +24,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.Metadata set from storage asset:context this.Metadata
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
     execute as @a[tag=BoundingCylinder,tag=!PlayerShouldInvulnerable,distance=..6] run function api:damage/

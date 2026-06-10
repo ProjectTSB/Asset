@@ -20,3 +20,4 @@
     data modify storage asset:object Field.Tick set value 60
     data modify storage asset:object Field.Damage set value 10f
     data modify storage asset:object Field.Heal set value 200f
+    data modify storage asset:object Field.Metadata set value ""

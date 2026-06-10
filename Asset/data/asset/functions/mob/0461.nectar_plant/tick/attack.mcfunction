@@ -30,6 +30,7 @@
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.FieldOverride.Heal set from storage asset:context this.Heal
     data modify storage api: Argument.FieldOverride.Tick set from storage asset:context this.Delay
+    data modify storage api: Argument.FieldOverride.Metadata set from storage asset:context this.Metadata
     execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     execute at @p[gamemode=!spectator,distance=..16] run function api:object/summon
 

@@ -70,4 +70,7 @@
     data modify storage asset:mob Field.Heal set value 100d
 
 # 攻撃予告発生から攻撃判定発生まで
-    data modify storage asset:mob Field.Delay set value 60
+    data modify storage asset:mob Field.Delay set value 48
+
+# Metadata
+    data modify storage asset:mob Field.Metadata set value "461.NectarPlant"
