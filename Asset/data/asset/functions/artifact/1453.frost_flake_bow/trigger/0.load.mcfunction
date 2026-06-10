@@ -5,6 +5,6 @@
 # @within tag/function asset:artifact/load
 
 #> 定義類はここに
-# @within function asset:artifact/1453.frost_flake_bow/trigger/**
-    scoreboard objectives add Ffb.Charge dummy
-    scoreboard objectives add Ffb.LatestChargeTick dummy
+# @within function asset:artifact/1453.frost_flake_bow/**
+    scoreboard objectives add 14D.Charge dummy
+    scoreboard objectives add 14D.LatestChargeTick dummy

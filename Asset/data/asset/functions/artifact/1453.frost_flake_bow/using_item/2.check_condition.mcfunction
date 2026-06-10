@@ -11,7 +11,7 @@
     function asset:artifact/1453.frost_flake_bow/using_item/bow_charge
 
 # CanUsedでないかつ、20以上なら強制的に19に留める
-    execute if entity @s[tag=!CanUsed] if score @s Ffb.Charge matches 20.. run scoreboard players set @s Ffb.Charge 19
+    execute if entity @s[tag=!CanUsed] if score @s 14D.Charge matches 20.. run scoreboard players set @s 14D.Charge 19
 
 # 2段チャージ
-    execute if entity @s[tag=CanUsed] if score @s Ffb.Charge matches 20.. run function asset:artifact/1453.frost_flake_bow/using_item/extra_charge
+    execute if entity @s[tag=CanUsed] if score @s 14D.Charge matches 20.. run function asset:artifact/1453.frost_flake_bow/using_item/extra_charge
