@@ -18,11 +18,11 @@
     data modify storage api: Argument.FieldOverride.Charge set from storage api: Return.Effect.Stack
 
 # 2段チャージ済みなら炸裂ダメージを追加
-        data modify storage api: Argument.FieldOverride.Damage set value 500
-        data modify storage api: Argument.FieldOverride.Speed set value 7
-        execute if score @s Ffb.Charge matches 30.. run data modify storage api: Argument.FieldOverride.ThunderDamage set value 720
+    data modify storage api: Argument.FieldOverride.Damage set value 500
+    data modify storage api: Argument.FieldOverride.Speed set value 7
+    execute if score @s Ffb.Charge matches 30.. run data modify storage api: Argument.FieldOverride.BloomDamage set value 800
 
 # Object召喚
-    data modify storage api: Argument.ID set value 1143
+    data modify storage api: Argument.ID set value 1162
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon

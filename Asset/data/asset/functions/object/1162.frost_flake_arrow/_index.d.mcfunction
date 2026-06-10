@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:object/1162.frost_flake_arrow/**
-    #declare
+    #declare tag 1162.Hit
