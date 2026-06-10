@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"グリモワール","color":"dark_purple"}'
+    data modify storage asset:artifact Name set value '{"text":"グリモワール","color":"dark_green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ランダムな属性の魔法を発動する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ランダムな属性の遠距離魔法を召喚する魔術書"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
