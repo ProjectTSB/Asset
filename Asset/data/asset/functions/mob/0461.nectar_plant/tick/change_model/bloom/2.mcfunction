@@ -1,4 +1,4 @@
-#> asset:mob/0461.nectar_plant/tick/bloom/3
+#> asset:mob/0461.nectar_plant/tick/change_model/bloom/2
 #
 #
 #
