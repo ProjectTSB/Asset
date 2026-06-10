@@ -66,8 +66,11 @@
 # ダメージ
     data modify storage asset:mob Field.Damage set value 10d
 
-# 回復量
+# 攻撃での回復量
     data modify storage asset:mob Field.Heal set value 100d
+
+# 死亡時のKillerに対する回復量
+    data modify storage asset:mob Field.HealToKiller set value 10
 
 # 攻撃予告発生から攻撃判定発生まで
     data modify storage asset:mob Field.Delay set value 48
