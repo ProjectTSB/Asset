@@ -12,18 +12,15 @@
     execute on passengers if entity @s[type=interaction,tag=AutoKillWhenDieVehicle,tag=ProcessCommonTag] run scoreboard players operation @s 1161.Kind = $temp Temporary
     scoreboard players reset * Temporary
 # 見た目変更
-    # execute if score @s 1161.Kind matches 0 run data modify entity @s item.tag.CustomModelData set value 2
-    # execute if score @s 1161.Kind matches 1 run data modify entity @s item.tag.CustomModelData set value 2
-    # execute if score @s 1161.Kind matches 2 run data modify entity @s item.tag.CustomModelData set value 2
-    # execute if score @s 1161.Kind matches 3 run data modify entity @s item.tag.CustomModelData set value 2
-    # execute if score @s 1161.Kind matches 4 run data modify entity @s item.tag.CustomModelData set value 2
-    # execute if score @s 1161.Kind matches 5 run data modify entity @s item.tag.CustomModelData set value 2
-# 見た目変更(動作確認用)
-    execute if score @s 1161.Kind matches 0 run data modify entity @s item.id set value "minecraft:diamond_axe"
-    execute if score @s 1161.Kind matches 1 run data modify entity @s item.id set value "minecraft:diamond_pickaxe"
-    execute if score @s 1161.Kind matches 2 run data modify entity @s item.id set value "minecraft:diamond_sword"
-    execute if score @s 1161.Kind matches 3 run data modify entity @s item.id set value "minecraft:iron_sword"
-    execute if score @s 1161.Kind matches 4 run data modify entity @s item.id set value "minecraft:diamond_shovel"
-    execute if score @s 1161.Kind matches 5 run data modify entity @s item.id set value "minecraft:diamond_hoe"
+    execute if score @s 1161.Kind matches 0 run data modify entity @s item.tag.CustomModelData set value 1457
+    execute if score @s 1161.Kind matches 1 run data modify entity @s item.tag.CustomModelData set value 1458
+    execute if score @s 1161.Kind matches 2 run data modify entity @s item.tag.CustomModelData set value 1459
+    execute if score @s 1161.Kind matches 3 run data modify entity @s item.tag.CustomModelData set value 1460
+    execute if score @s 1161.Kind matches 4 run data modify entity @s item.tag.CustomModelData set value 1461
+    execute if score @s 1161.Kind matches 5 run data modify entity @s item.tag.CustomModelData set value 1462
+# 見た目変更(個別操作)
+    execute if score @s 1161.Kind matches 3 run data modify entity @s transformation.left_rotation set value [0f,0f,1f,0f]
+    execute if score @s 1161.Kind matches 4 run data modify entity @s item.id set value "minecraft:carrot_on_a_stick"
+    execute if score @s 1161.Kind matches 5 run data modify entity @s item.id set value "minecraft:carrot_on_a_stick"
 
     

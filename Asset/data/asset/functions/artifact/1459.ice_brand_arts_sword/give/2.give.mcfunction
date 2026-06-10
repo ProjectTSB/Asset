@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value 16
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 14
+    data modify storage asset:artifact TypeCooldown.Duration set value 10
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value 
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

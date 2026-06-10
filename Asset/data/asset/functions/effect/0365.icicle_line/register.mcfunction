@@ -1,8 +1,8 @@
-#> asset:effect/365.icicle_line/register
+#> asset:effect/0365.icicle_line/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/365.icicle_line/_/register
+# @within function asset:effect/0365.icicle_line/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"アイシクルライン","color":"#7DFFF2"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"アイスブランドアーツで生成した神器を使用したとき、本来の消費MP量の半分が戻ってくる","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"アイスブランドアーツの使用時に付与される","color":"white"}','{"text":"アイスブランドアーツで生成した神器を使用したとき、本来の消費MP量の半分が戻ってくる","color":"white"}']
 # 効果時間 (int) (default = API || error)
     #data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
@@ -31,9 +31,9 @@
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
-    data modify storage asset:effect Visible set value false
+    data modify storage asset:effect Visible set value true
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
-    # data modify storage asset:effect StackVisible set value
+    data modify storage asset:effect StackVisible set value false
 
 # フィールド
     # data modify storage asset:effect Field set value {}
