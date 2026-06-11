@@ -18,9 +18,9 @@
 
 # 攻撃範囲
     data modify storage lib: Argument.BoundingCylinder.Radius set value 4d
-    data modify storage lib: Argument.BoundingCylinder.Height set value 4d
+    data modify storage lib: Argument.BoundingCylinder.Height set value 6d
     data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living,tag=!Uninterferable,distance=..6]"
-    execute positioned ~ ~-0.25 ~ run function lib:bounding_cylinder/
+    execute positioned ~ ~-2 ~ run function lib:bounding_cylinder/
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
