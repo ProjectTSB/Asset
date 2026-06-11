@@ -9,12 +9,14 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 演出
-    particle dolphin ~ ~ ~ 1 1 1 0 140 normal @a
+# 装備判定tag
+    tag @s add LG.Equipped
 
-# 確率で音
-    execute if predicate lib:random_pass_per/15 run playsound entity.dolphin.ambient_water neutral @s ~ ~ ~ 0.4 1 0
+# 演出
+    particle dolphin ~ ~1.2 ~ 0.5 0.5 0.5 0 80 normal @a
+    playsound entity.dolphin.ambient_water neutral @a ~ ~ ~ 0.8 1 0
 
 # エフェクト
-    effect give @s dolphins_grace 11 0 true
-    effect give @s water_breathing 11 0 true
+    data modify storage api: Argument.ID set value 356
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
