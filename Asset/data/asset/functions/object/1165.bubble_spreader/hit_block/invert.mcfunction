@@ -17,4 +17,4 @@
 # 4. 反転させた数値を0.001倍して元のサイズに戻し、エンティティのPitchに上書きする
     execute store result entity @s Rotation[1] float 0.001 run scoreboard players get $pitch Temporary
 # スコアリセット
-    scoreboard player reset * Temporary
+    scoreboard players reset * Temporary
