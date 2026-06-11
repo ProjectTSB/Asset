@@ -8,11 +8,11 @@
 # @private
     #declare score_holder $UserID
 
-# 弾ける無数の泡（空気中でも綺麗に弾けるbubble_popを使用）
+# 弾ける無数の泡
     particle minecraft:bubble_pop ~ ~ ~ 0.8 0.8 0.8 0.1 90 normal @a
-# 泡を包み込む水色のオーラ（バグっていた数値を綺麗なクリアブルーに修正）
+# 泡を包み込む水色のオーラ
     particle minecraft:dust_color_transition 0.18 0.45 0.78 1.5 1.0 1.0 1.0 ~ ~ ~ 0.5 0.5 0.5 0 3 normal @a
-# ポコポコと弾ける泡の音（ピッチを高めにして可愛らしい魔法の泡を演出）
+# ポコポコと弾ける泡の音
     playsound minecraft:block.bubble_column.bubble_pop neutral @a ~ ~ ~ 0.5 1.5 0
     playsound minecraft:block.bubble_column.bubble_pop neutral @a ~ ~ ~ 0.5 2.0 0
 # 弾けた時の水しぶきの音

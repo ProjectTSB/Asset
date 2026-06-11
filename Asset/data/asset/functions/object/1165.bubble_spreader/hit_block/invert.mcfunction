@@ -1,6 +1,6 @@
 #> asset:object/1165.bubble_spreader/hit_block/invert
 #
-# Objectが絶対に上を向くように
+# Objectが上を向くように
 #
 # @within asset:object/1165.bubble_spreader/hit_block/
 

@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"バウンシーバブルスプレッダー","color":"#1290FF"}'
+    data modify storage asset:artifact Name set value '{"text":"バブルスプレッダー","color":"#1290FF"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"正面に5つの水泡を生成する","color":"white"}]','[{"text":"水泡は低速だが高い追尾性能を持つ","color":"white"}]','[{"text":"また、水泡は生成後しばらくの間、壁を反射する","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)

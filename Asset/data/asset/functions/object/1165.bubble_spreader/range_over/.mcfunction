@@ -4,7 +4,6 @@
 #
 # @within asset:object/alias/1165/range_over
 
-# killメソッドを呼び出さずそのまま消滅
-    #kill @s
+# killメソッド
 
     function asset:object/call.m {method:kill}

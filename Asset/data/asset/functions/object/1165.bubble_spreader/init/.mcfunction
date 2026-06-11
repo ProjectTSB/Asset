@@ -6,7 +6,7 @@
 
 
 
-# -2..2の範囲でtickを変える
+# -5..2の範囲でtickを変える
     execute store result score @s General.Object.Tick run random value -5..2
 
 # MovePerStepの値を別フィールドへ保存

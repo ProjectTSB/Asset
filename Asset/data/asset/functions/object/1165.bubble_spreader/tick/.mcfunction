@@ -12,7 +12,6 @@
 
 # ..15の時、前方にブロックがあればMovePerStepを0に
 # 飛翔体抽象の実装の都合上、hit_blockメソッドでMovePerStepを0にしても進んでいってしまうため？
-    #execute if score @s General.Object.Tick matches ..15 unless block ^ ^ ^0.5 #lib:no_collision/ run scoreboard players set $Speed Lib 1
     execute if score @s General.Object.Tick matches ..15 unless block ^ ^ ^0.5 #lib:no_collision/ run data modify storage asset:context this.MovePerStep set value 0
 
 # 16..の時、常時追尾
