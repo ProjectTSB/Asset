@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"廻蛇の玉","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"ヒット時、2.5秒の間"}','{"text":"与えたダメージの80%分、次のダメージがアップする(最大2000)"}','{"text":"アップするダメージは自身のステータス補正の影響を受けない"}','{"text":"2.5秒間攻撃がヒットしなかったとき、4の固定ダメージを受ける"}','{"text":"”石ころを投げるより強い！”","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"ヒット時、2.5秒の間"}','{"text":"与えたダメージの80%分、次のダメージがアップする(最大2000)"}','{"text":"アップするダメージは自身のステータス補正の影響を受けない"}','{"text":"ただし、攻撃ヒット後、2.5秒以内に再びヒットさせられなかった場合"}','{"text":"4の固定ダメージを受ける"}','{"text":"”石ころを投げるより強い！”","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
