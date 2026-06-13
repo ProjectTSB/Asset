@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"月見団子","color":"#faf0b1"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身に付与されたバリア量の30%分のバリアを得る"}','{"text":"(最大20、この神器の効果で得たバリアは含まない)"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身に付与されたバリア量の33.3%分のバリアを得る"}','{"text":"(最大20、この神器の効果で得たバリアは含まない)"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
