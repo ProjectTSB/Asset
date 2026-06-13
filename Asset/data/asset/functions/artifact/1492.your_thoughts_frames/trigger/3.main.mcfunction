@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/1492.your_thoughts_frames/trigger/2.check_condition
 
-# 性能として、序盤の手数があるビルドか、上振れたときだとかなりMPの回復の足しになるくらいがうれしい
+# 性能として、水属性のビルドで手数があるビルドか、上振れたときだとかなりMPの回復の足しになるくらいがうれしい
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/offhand
