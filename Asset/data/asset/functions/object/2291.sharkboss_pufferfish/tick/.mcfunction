@@ -15,4 +15,4 @@
 #say a
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=450..}]
+    kill @s[scores={General.Object.Tick=800..}]

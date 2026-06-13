@@ -38,7 +38,7 @@
     # data modify storage asset:mob Field.myValue set value 
      #フィールド
     # 技ごとの攻撃力設定
-        data modify storage asset:mob Field.Damage set value {Bite:13.0f,Tail:6.0f,TailStrong:10.0f,ComboBite:15.0f,ComboTail:10.0f,Rush:10.0f,RushStrong:10.0f,WaterColumn:8.0f,WaterGun:8.0f,Pufferfish:13.0f,Spin:6,SharknadoSlash:8.0f,Sharknado:20.0f}
+        data modify storage asset:mob Field.Damage set value {Bite:13.0f,Tail:6.0f,TailStrong:10.0f,ComboBite:15.0f,ComboTail:10.0f,Rush:10.0f,RushStrong:10.0f,WaterColumn:8.0f,WaterGun:8.0f,Pufferfish:13.0f,Spin:6,SharknadoSlash:8.0f,SharknadoMulti:2.0,Sharknado:20.0f}
 
 #↓コピペしたよ
     # 毒ポーションの設定

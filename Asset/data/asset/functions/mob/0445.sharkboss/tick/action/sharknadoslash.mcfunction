@@ -29,6 +29,13 @@ execute if score @s CD.AnimationTimer matches 39 run playsound minecraft:entity.
 
 #execute if score @s CD.AnimationTimer matches 27 run particle minecraft:electric_spark ^ ^1 ^2 0.3 0.3 0.3 1 10
 
+# サメ召還
+    execute if score @s CD.AnimationTimer matches 0 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 10 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 20 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 30 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 40 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+
 #ダメージ
 #execute if score @s CD.AnimationTimer matches 24 positioned ^ ^ ^1 run function asset:mob/0445.sharkboss/tick/action/damage/bite
 execute if score @s CD.AnimationTimer matches 39 positioned ^ ^ ^4 run function asset:mob/0445.sharkboss/tick/action/damage/sharknadoslash

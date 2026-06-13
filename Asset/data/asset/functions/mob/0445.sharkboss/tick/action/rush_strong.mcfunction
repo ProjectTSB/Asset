@@ -37,6 +37,8 @@ execute if score @s CD.AnimationTimer matches 66 run function asset:mob/0445.sha
     execute if score @s CD.AnimationTimer matches 40 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 1 0.5
     execute if score @s CD.AnimationTimer matches 42 run playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1.5 0.6
 
+    execute if score @s CD.AnimationTimer matches 0..11 run particle firework ~ ~1 ~ 0 0 0 0 1
+
 #フグ食
     execute if score @s CD.AnimationTimer matches 29..46 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
     execute if score @s CD.AnimationTimer matches 29..46 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving

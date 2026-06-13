@@ -38,6 +38,9 @@
   execute if entity @s[tag=CD.Action.Puffer1] run tag @s remove CD.Action.Puffer1
   execute if entity @s[tag=CD.Action.Puffer2] run tag @s remove CD.Action.Puffer2
 
+  execute if entity @s[tag=CD.Action.Summon] run tag @s remove CD.Action.Summon
+  execute if entity @s[tag=CD.Action.Death] run tag @s remove CD.Action.Death
+
 
 #次の行動いけますタグ
 tag @s add CD.CanAction

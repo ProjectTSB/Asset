@@ -6,4 +6,10 @@
 
 # 継承元の処理実行
     function asset:mob/super.death
-    function animated_java:sharkboss/remove/all
+
+# アニメーション終了
+    #function asset:mob/0445.sharkboss/tick/action/utility/end
+
+# 死亡アニメーション制御用オブジェクト召還
+    data modify storage api: Argument.ID set value 2287
+    function api:object/summon

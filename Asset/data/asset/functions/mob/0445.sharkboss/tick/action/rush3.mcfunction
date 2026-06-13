@@ -16,6 +16,12 @@ execute if score @s CD.AnimationTimer matches 21..43 run tp @s ^ ^ ^0.1
 #軸合わせ
 execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/light
 
+#フグ食
+    execute if score @s CD.AnimationTimer matches ..9 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
+    execute if score @s CD.AnimationTimer matches ..9 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving
+    execute if score @s CD.AnimationTimer matches ..9 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Action.Puffer1
+    execute if score @s CD.AnimationTimer matches ..9 if entity @e[tag=CD.PufferFish,distance=..3] run kill @e[tag=CD.PufferFish,sort=nearest,limit=1]
+
 #演出
     execute if score @s CD.AnimationTimer matches 0 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 0.3 0.5
     execute if score @s CD.AnimationTimer matches 4 run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.1

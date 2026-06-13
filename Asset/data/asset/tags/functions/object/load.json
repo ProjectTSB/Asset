@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:object/2294.sharkboss_shark/load",
+        "asset:object/2287.sharkboss_death/load",
+        "asset:object/2288.sharkboss_spark/load",
         "asset:object/2293.sharkboss_sharknado/load",
         "asset:object/2292.sharkboss_tornado/load",
         "asset:object/2289.sharkboss_emp_blast/load",

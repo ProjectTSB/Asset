@@ -20,6 +20,7 @@
     #declare tag CD.Electrified
     #declare tag CD.PufferFish
     #declare tag CD.Down
+    #declare tag CD.Spark
 
     #攻撃用のtag
     #declare tag CD.Action.Bite
@@ -45,6 +46,9 @@
     #declare tag CD.Action.Down3
     #declare tag CD.Action.Puffer1
     #declare tag CD.Action.Puffer2
+
+    #declare tag CD.Action.Summon
+    #declare tag CD.Action.Death
 
     #declare tag CD.Player.TempDamageTarget
     #declare tag CD.Player.Launch.First
@@ -82,4 +86,6 @@
     #declare function animated_java:sharkboss/animations/puffer_start/tween
     #declare function animated_java:sharkboss/animations/puffer_loop/tween
     #declare function animated_java:sharkboss/animations/puffer_end/tween
+    #declare function animated_java:sharkboss/animations/summon/tween
+    #declare function animated_java:sharkboss/animations/death/tween
     #declare function animated_java:sharkboss/remove/all

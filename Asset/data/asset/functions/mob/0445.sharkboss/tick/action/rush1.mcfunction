@@ -20,6 +20,12 @@ execute if score @s CD.AnimationTimer matches 40..50 run tp @s ^ ^ ^0.7
 execute if score @s CD.AnimationTimer matches 0..20 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/normal
 execute if score @s CD.AnimationTimer matches 40..50 run function asset:mob/0445.sharkboss/tick/action/utility/alignment/light
 
+#フグ食
+    execute if score @s CD.AnimationTimer matches 40..50 if entity @e[tag=CD.PufferFish,distance=..3] run function asset:mob/0445.sharkboss/tick/action/utility/end
+    execute if score @s CD.AnimationTimer matches 40..50 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Reserving
+    execute if score @s CD.AnimationTimer matches 40..50 if entity @e[tag=CD.PufferFish,distance=..3] run tag @s add CD.Action.Puffer1
+    execute if score @s CD.AnimationTimer matches 40..50 if entity @e[tag=CD.PufferFish,distance=..3] run kill @e[tag=CD.PufferFish,sort=nearest,limit=1]
+
 #演出
 execute if score @s CD.AnimationTimer matches 10 run playsound minecraft:entity.dolphin.splash hostile @a ~ ~ ~ 1 0.9
 execute if score @s CD.AnimationTimer matches 20 run playsound minecraft:entity.ravager.death hostile @a ~ ~ ~ 1 1

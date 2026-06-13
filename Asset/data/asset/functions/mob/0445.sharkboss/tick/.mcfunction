@@ -11,9 +11,10 @@
 #AJモデルを追従させる
   execute at @s as @e[type=item_display,tag=CD.ModelRoot,sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
 
-#帯電状態ならパーティクルを出す
+#帯電状態ならパーティクルを出し、ビリビリ召還
   execute if entity @s[tag=CD.Electrified] run particle dust 0.471 0.824 1.000 1 ~ ~ ~ 0.471 0.824 1.000 1 10 normal
-
+  execute if entity @s[tag=CD.Electrified] unless entity @e[tag=CD.Spark] run data modify storage api: Argument.ID set value 2288
+  execute if entity @s[tag=CD.Electrified] unless entity @e[tag=CD.Spark] run function api:object/summon
 #帯電時はタイマーを進める
   scoreboard players add @s General.Mob.Tick 1
   scoreboard players add @s CD.AnimationTimer 1
@@ -27,6 +28,7 @@
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run tag @s remove CD.Electrified
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run tag @s remove CD.Charging
   execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run say サメのロレンチーニ器官が沈静化した
+  execute if entity @s[tag=CD.Charging] if score $HealthPer Temporary < @s CD.DpsCheckThreshold run weather clear
 
 #次の行動が可能になったら行動ガチャとタイマースタート（0から始まる）
   execute if entity @s[tag=CD.CanAction] run function asset:mob/0445.sharkboss/tick/select_action/
@@ -61,6 +63,9 @@
 
   execute if entity @s[tag=CD.Action.Puffer1] at @s run function asset:mob/0445.sharkboss/tick/action/puffer1
   execute if entity @s[tag=CD.Action.Puffer2] at @s run function asset:mob/0445.sharkboss/tick/action/puffer2
+
+  execute if entity @s[tag=CD.Action.Summon] at @s run function asset:mob/0445.sharkboss/tick/action/summon
+  execute if entity @s[tag=CD.Action.Death] at @s run function asset:mob/0445.sharkboss/tick/action/death
 
   #連続ヒット防止処理
    execute as @a if score @s CD.Player.DamageTimer matches 1.. run scoreboard players remove @s CD.Player.DamageTimer 1

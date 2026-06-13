@@ -7,3 +7,15 @@
 #
 execute if score @s CD.AnimationTimer matches 0 as @e[tag=CD.ModelRoot] run function animated_java:sharkboss/animations/sharknado_loop/tween {duration:1, to_frame: 0}
 execute if score @s CD.AnimationTimer matches 80 run function asset:mob/0445.sharkboss/tick/action/utility/end
+
+# サメ召還
+execute if score @s CD.AnimationTimer matches 0 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 10 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 20 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 30 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 40 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 50 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 60 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+execute if score @s CD.AnimationTimer matches 70 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+
+function asset:mob/0445.sharkboss/vfx/expand_circle

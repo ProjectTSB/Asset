@@ -20,3 +20,5 @@
 # 行動開始タグ
   tag @s add CD.IsFlying
   tag @s add CD.CanAction
+  tag @s add CD.Reserving
+  tag @s add CD.Action.Summon

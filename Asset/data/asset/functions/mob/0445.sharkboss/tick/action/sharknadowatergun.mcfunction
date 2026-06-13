@@ -21,3 +21,13 @@ execute if score @s CD.AnimationTimer matches 54 run playsound minecraft:entity.
 execute if score @s CD.AnimationTimer matches 30 positioned ~ ~2 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet
 execute if score @s CD.AnimationTimer matches 40 positioned ~ ~2 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet
 execute if score @s CD.AnimationTimer matches 50 positioned ~ ~2 ~ run function asset:mob/0445.sharkboss/vfx/water_bullet
+
+# サメ召還
+    execute if score @s CD.AnimationTimer matches 0 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 10 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 20 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 30 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 40 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 50 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 60 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 70 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
