@@ -13,3 +13,5 @@ execute if score @s CD.AnimationTimer matches 0 run weather rain
 #演出
 execute if score @s CD.AnimationTimer matches 6 run playsound minecraft:entity.breeze.death hostile @a ~ ~ ~ 2 0.6
 execute if score @s CD.AnimationTimer matches 10 run playsound minecraft:item.elytra.flying hostile @a ~ ~ ~ 2 0.7
+
+particle gust ~ ~ ~ 10 0 10 4 2 normal

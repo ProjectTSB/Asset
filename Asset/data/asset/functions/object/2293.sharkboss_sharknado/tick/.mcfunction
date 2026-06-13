@@ -37,10 +37,11 @@
     #execute if score @s General.Object.Tick matches 13 run data modify entity @s transformation.scale set value [12f,14f,12f]
 
 # 演出
-    execute if score @s General.Object.Tick matches 11..28 run particle explosion ~ ~ ~ 2 0 2 4 4 normal
+    execute if score @s General.Object.Tick matches 11..15 run particle explosion ~ ~ ~ 2 0 2 4 4 normal
     execute if score @s General.Object.Tick matches 12..28 run particle minecraft:splash ~ ~7.5 ~ 1 5 1 1 10 normal
     execute if score @s General.Object.Tick matches 12..28 run particle minecraft:block cyan_stained_glass ~ ~7.5 ~ 1 5 1 10 10
     execute if score @s General.Object.Tick matches 12..28 run particle minecraft:block water ~ ~7.5 ~ 1 5 1 10 10
+    execute if score @s General.Object.Tick matches 16..49 run particle explosion ~ ~ ~ 10 0 10 4 6 normal
     #execute if score @s General.Object.Tick matches 43..56 run particle gust ~ ~4.5 ~ 1.2 5 1.2 1 8
 
 # 消滅処理

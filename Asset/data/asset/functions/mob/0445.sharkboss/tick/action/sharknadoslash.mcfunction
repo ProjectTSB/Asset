@@ -29,6 +29,8 @@ execute if score @s CD.AnimationTimer matches 39 run playsound minecraft:entity.
 
 #execute if score @s CD.AnimationTimer matches 27 run particle minecraft:electric_spark ^ ^1 ^2 0.3 0.3 0.3 1 10
 
+particle gust ~ ~ ~ 10 0 10 4 5 normal
+
 # サメ召還
     execute if score @s CD.AnimationTimer matches 0 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
     execute if score @s CD.AnimationTimer matches 10 positioned ~ ~-3 ~ rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
