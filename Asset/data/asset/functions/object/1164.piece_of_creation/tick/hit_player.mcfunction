@@ -8,6 +8,8 @@
     playsound minecraft:entity.arrow.hit_player player @a ~0.5 ~0.5 ~0.5 0.6 2 0.0
     playsound minecraft:entity.allay.ambient_with_item player @a ~ ~ ~ 2.0 0.9 0.0
     playsound minecraft:block.glass.break player @a ~ ~ ~ 1.0 1.4 0.0
+    particle minecraft:dust_color_transition 1 0.4 1 0.8 0.2 0.8 1 ~ ~ ~ 2 2 2 1 40
+    particle minecraft:dust_color_transition 1 0.4 1 0.8 0.2 0.8 1 ~ ~ ~ 0.4 0.4 0.4 1 40
     particle end_rod ~0.5 ~0.5 ~0.5 0 0 0 0.2 20
 
 # hitしたプレイヤーのMPを回復する

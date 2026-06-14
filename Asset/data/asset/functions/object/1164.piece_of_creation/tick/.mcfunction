@@ -19,4 +19,4 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[gamemode=!spectator,tag=!Death,dx=0,limit=1] run function asset:object/1164.piece_of_creation/tick/hit_player
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=200..}]
+    execute if entity @s[scores={General.Object.Tick=200..}] run function asset:object/1164.piece_of_creation/tick/kill
