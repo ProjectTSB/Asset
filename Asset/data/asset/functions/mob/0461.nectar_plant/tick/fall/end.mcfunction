@@ -6,4 +6,4 @@
 
 # 落下を終了
     data modify entity @s NoAI set value 1b
-    tag @s remove 461.Fall
+    tag @s remove CT.Fall

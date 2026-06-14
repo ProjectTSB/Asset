@@ -6,4 +6,4 @@
 
 # 落下できるようにする
     data modify entity @s NoAI set value 0b
-    tag @s add 461.Fall
+    tag @s add CT.Fall
