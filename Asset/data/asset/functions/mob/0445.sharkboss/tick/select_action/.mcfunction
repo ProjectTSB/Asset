@@ -7,6 +7,10 @@
 #行動開始可能タグを外す
     tag @s remove CD.CanAction
 
+#ターゲット選択
+    tag @a remove CD.Player.Target
+    tag @a[sort=random,limit=1] add CD.Player.Target
+
 # HP%取得
     function api:mob/get_health_percent
     execute store result score $HealthPer Temporary run data get storage api: Return.HealthPer 100
