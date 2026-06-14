@@ -15,13 +15,13 @@
     function api:object/summon
 
 # スコアボード削除
-    scoreboard objectives remove CD.Timer
-    scoreboard objectives remove CD.AnimationTimer
-    scoreboard objectives remove CD.ElectrifiedActionCounter
-    scoreboard objectives remove CD.TransitionCounter
-    scoreboard objectives remove CD.DpsCheckThreshold
-    scoreboard objectives remove CD.Player.LaunchCounter
-    scoreboard objectives remove CD.Player.DamageTimer
+    #scoreboard objectives remove CD.Timer
+    #scoreboard objectives remove CD.AnimationTimer
+    #scoreboard objectives remove CD.ElectrifiedActionCounter
+    #scoreboard objectives remove CD.TransitionCounter
+    #scoreboard objectives remove CD.DpsCheckThreshold
+    #scoreboard objectives remove CD.Player.LaunchCounter
+    #scoreboard objectives remove CD.Player.DamageTimer
 
 # プレイヤーのタグ削除
     tag @a remove CD.Player.TempDamageTarget
