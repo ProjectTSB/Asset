@@ -51,7 +51,7 @@
     #execute if score @s CD.AnimationTimer matches 52 positioned ~-50 ~ ~-50 run summon lightning_bolt
 
 # サメ召還
-    #execute if score @s CD.AnimationTimer matches 70..86 positioned ~ ~20 ~ rotated ~ ~90 run function asset:mob/0445.sharkboss/vfx/shark
+    execute if score @s CD.AnimationTimer matches 50..70 positioned ~ ~20 ~ rotated ~ ~90 run function asset:mob/0445.sharkboss/vfx/shark
     #execute if score @s CD.AnimationTimer matches 20 rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
     #execute if score @s CD.AnimationTimer matches 40 rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark
     #execute if score @s CD.AnimationTimer matches 60 rotated ~ ~-90 run function asset:mob/0445.sharkboss/vfx/shark

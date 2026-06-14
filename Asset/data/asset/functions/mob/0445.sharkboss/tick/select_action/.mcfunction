@@ -16,8 +16,8 @@
     execute if entity @s[tag=CD.Electrified,tag=!CD.Reserving,tag=!CD.Charging] if score @s CD.ElectrifiedActionCounter matches 9.. run function asset:mob/0445.sharkboss/tick/select_action/sharknado
 
 #DPSチェック失敗
-    execute if entity @s[tag=CD.Charging] if score @s CD.Timer matches 200.. run tag @s add CD.Reserving
-    execute if entity @s[tag=CD.Charging] if score @s CD.Timer matches 200.. run tag @s add CD.Action.Sharknado3
+    execute if entity @s[tag=CD.Charging] if score @s CD.Timer matches 350.. run tag @s add CD.Reserving
+    execute if entity @s[tag=CD.Charging] if score @s CD.Timer matches 350.. run tag @s add CD.Action.Sharknado3
 
 
 #プレイヤーが近距離かどうかをタグ付け、このdistanceで分岐が決まるので要調整

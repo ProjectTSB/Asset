@@ -5,7 +5,7 @@
 # @within function asset:mob/0445.sharkboss/vfx/water_column
 
 # 攻撃を受けるプレイヤーに一時的にタグ付与
-   execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.2] unless score @s CD.Player.DamageTimer matches 1.. run tag @s add CD.Player.TempDamageTarget
+   execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[tag=!PlayerShouldInvulnerable,dx=0] unless score @s CD.Player.DamageTimer matches 1.. run tag @s add CD.Player.TempDamageTarget
 
 # 連続ヒットしない
     scoreboard players set @a[tag=CD.Player.TempDamageTarget] CD.Player.DamageTimer 6

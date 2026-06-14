@@ -15,4 +15,6 @@
 #say a
 
 # 消滅処理
+    execute if score @s General.Object.Tick matches 800.. run particle explosion ~ ~ ~ 0.8 0.8 0.8 1 10 normal
+    execute if score @s General.Object.Tick matches 800.. run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
     kill @s[scores={General.Object.Tick=800..}]
