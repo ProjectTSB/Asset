@@ -15,7 +15,7 @@
 # 干渉可能か否か (boolean)
     data modify storage asset:mob Interferable set value true
 # 名前 (TextComponentString) (オプション)
-    data modify storage asset:mob Name set value '{"text"::"ドレイン・プラント","color":"#c1594c"}'
+    data modify storage asset:mob Name set value '{"text":"ドレイン・プラント","color":"#df523f"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
     # data modify storage asset:mob Lore set value
 # 武器
@@ -52,11 +52,11 @@
     data modify storage asset:mob KnockBackResist set value 1
 # 属性倍率 // 1.0fで100% 最低でも25%は軽減されずに入る
     # 物理倍率 (float) (オプション)
-        # data modify storage asset:mob Resist.Physical set value
+        data modify storage asset:mob Resist.Physical set value 0.8
     # 魔法倍率 (float) (オプション)
         data modify storage asset:mob Resist.Magic set value 1.4d
     # 火倍率 (float) (オプション)
-        data modify storage asset:mob Resist.Fire set value 0.8d
+        # data modify storage asset:mob Resist.Fire set value
     # 水倍率 (float) (オプション)
         data modify storage asset:mob Resist.Water set value 0.8d
     # 雷倍率 (float) (オプション)
