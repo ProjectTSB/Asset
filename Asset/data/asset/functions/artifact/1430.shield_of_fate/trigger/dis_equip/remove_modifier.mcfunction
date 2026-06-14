@@ -13,9 +13,9 @@
 
 # 削除 (IDから)
     data modify storage api: Argument.ID set value 354
-    execute as @s run function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/remove/from_id
     data modify storage api: Argument.ID set value 355
-    execute as @s run function api:entity/mob/effect/remove/from_id
+    function api:entity/mob/effect/remove/from_id
 
 # sound
     playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1 0.8
