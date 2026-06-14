@@ -1,9 +1,10 @@
-#> asset:artifact/0101.grimoire/trigger/fire
+#> asset:artifact/0101.grimoire/ballet/fire_hit
 #
 # 着弾処理
 #
-# @within function asset:artifact/0101.grimoire/trigger/balletfire
-#1840
+# @within function asset:artifact/0101.grimoire/ballet/fire
+
+# 演出
     particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.05 40
     playsound item.firecharge.use player @a ~ ~ ~
 # 引数の設定
@@ -12,7 +13,7 @@
     data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
     function api:damage/modifier
-# 範囲5m以内の敵を対象に
-    execute as @e[tag=Enemy,distance=..2] run function api:damage/
+# ダメージ
+    execute as @e[type=#lib:living_without_player,distance=..2] run function api:damage/
 # リセット
     function api:damage/reset
