@@ -11,9 +11,6 @@
 # @private
     #declare score_holder $Count
 
-# sound
-    playsound minecraft:entity.tropical_fish.flop player @a ~ ~ ~ 5 1.6 0.0
-
 # 個数取得
     execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:1534}}}]
     scoreboard players operation $Count Temporary < $3 Const
@@ -21,6 +18,11 @@
 # 個数の値だけMPを回復する
     execute store result storage api: Argument.Fluctuation int 1 run scoreboard players get $Count Temporary
     function api:mp/fluctuation
+
+# vfx(装備個数の分だけパーティクルの表示量が増える)
+    execute store result storage asset:temp 16M.count int 1 run scoreboard players get $Count Temporary
+    function asset:artifact/1534.drop_in_the_bucket/trigger/vfx with storage asset:temp 16M
+    data remove storage asset:temp 16M
 
 # リセット
     scoreboard players reset $Count Temporary
