@@ -10,7 +10,7 @@
     function asset:artifact/common/use/offhand
 
 # 攻撃対象の近くにオーブを召喚
-    execute at @e[type=#lib:living,type=!player,tag=Victim,limit=1] run function asset:artifact/1492.your_thoughts_frames/trigger/summon
+    execute at @e[type=#lib:living,type=!player,tag=Victim,limit=1,distance=..30] run function asset:artifact/1492.your_thoughts_frames/trigger/summon
 
 # 演出
     playsound block.amethyst_block.chime player @a ~ ~ ~ 5 0.8
