@@ -23,5 +23,6 @@
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.Duration set value 1
-    data modify storage asset:object Field.Spin set value 8
+    data modify storage asset:object Field.Spin set value 4
+    data modify storage asset:object Field.SpinInterval set value 2
     data modify storage asset:object Field.SelfDamage set value 1
