@@ -13,7 +13,7 @@
     data modify storage api: Argument.ElementType set value "Fire"
 # 補正functionを実行
     function api:damage/modifier
-# ダメージ
+# 範囲ダメージ
     execute as @e[type=#lib:living_without_player,distance=..2] run function api:damage/
 # リセット
     function api:damage/reset

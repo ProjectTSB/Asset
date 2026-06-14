@@ -18,7 +18,7 @@
 # 補正functionを実行
     function api:damage/modifier
 
-# 範囲5m以内の敵を対象に
+# 範囲ダメージ
     execute as @e[type=#lib:living_without_player,distance=..2] run function api:damage/
 # リセット
 
