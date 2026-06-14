@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:effect/0368.thunder_affection/_/given",
+        "asset:effect/0367.water_affection/_/given",
+        "asset:effect/0366.fire_affection/_/given",
         "asset:effect/0352.kitsunebi/_/given",
         "asset:effect/0360.calamity_bind/_/given",
         "asset:effect/0345.topaz_protection/_/given",
