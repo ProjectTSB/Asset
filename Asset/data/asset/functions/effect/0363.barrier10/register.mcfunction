@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 363
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"バリア10"}'
+    data modify storage asset:effect Name set value '{"text":"クイックバリア"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"バリア10によるバリアが付与されている"}']
+    data modify storage asset:effect Description set value ['{"text":"クイックバリアによる簡易バリア！"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 3600
 # スタック (int) (default = API || 1)
@@ -25,7 +25,7 @@
 # 最大スタック (int) (default = 2147483647)
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果か否か (boolean)
-    data modify storage asset:effect IsBadEffect set value true
+    data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
     # data modify storage asset:effect ProcessOnDied set value 
 # 消すのに必要なレベル (int) (default = 1)
@@ -36,4 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.UUID set value [I;1,3,363,0]
+    # data modify storage asset:effect Field.UUID set value [I;1,3,363,0]

@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"バリア10", "color":"green"}'
+    data modify storage asset:artifact Name set value '{"text":"クイックバリア", "color":"green"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"周囲3m以内の自身を含む味方にバリアを付与する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -41,13 +41,13 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value 
 # MP消費量 (int) 
-    data modify storage asset:artifact MPCost set value 15
+    data modify storage asset:artifact MPCost set value 18
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 
 # MP回復量 (int) 
     # data modify storage asset:artifact MPHealWhenHit set value 
 # 神器のクールダウン (int) (オプション)
-    # data modify storage asset:artifact LocalCooldown set value 
+    data modify storage asset:artifact LocalCooldown set value 40
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value 
     # data modify storage asset:artifact TypeCooldown.Duration set value
