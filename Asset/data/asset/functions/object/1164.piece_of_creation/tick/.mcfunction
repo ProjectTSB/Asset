@@ -8,7 +8,9 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 下にゆっくり落ちる
-    execute if block ~ ~-0.4 ~ #lib:no_collision/ run tp @s ~ ~-0.03 ~
+    execute if block ~ ~-0.6 ~ #lib:no_collision/ run tp @s ~ ~-0.03 ~
+# ゆっくり回転
+    execute at @s run tp @s ~ ~ ~ ~3 ~
 
 # 近くのプレイヤーに自身の向きを変えずに追尾
     execute at @s facing entity @a[distance=..2,limit=1] eyes positioned ^ ^ ^0.25 run tp @s ~ ~ ~
