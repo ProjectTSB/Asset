@@ -35,7 +35,7 @@
 # 回復
     data modify storage api: Argument.Heal set from storage asset:context this.Heal
     function api:heal/modifier
-    execute as @e[type=#lib:living_without_player,tag=BoundingCylinder,distance=..6] run function api:heal/
+    execute as @e[type=#lib:living_without_player,tag=BoundingCylinder,tag=!HasHealAbility,distance=..6] run function api:heal/
     function api:heal/reset
 
 # リセット
