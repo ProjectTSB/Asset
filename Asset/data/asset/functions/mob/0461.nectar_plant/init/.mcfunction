@@ -5,4 +5,4 @@
 # @within asset:mob/alias/461/init
 
 # 初期化
-    scoreboard players set @s General.Mob.Tick -50
+    execute store result score @s General.Mob.Tick run random value -50..-20
