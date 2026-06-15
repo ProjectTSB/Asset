@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/0015.gasoline/use_item/1.trigger",
         "asset:artifact/1343.coffee_milk_pack/trigger/1.trigger",
         "asset:artifact/1342.fruit_milk_pack/trigger/1.trigger",
         "asset:artifact/1401.yuzu/trigger/1.trigger",
