@@ -9,10 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 # 音
-    playsound item.book.page_turn player @s ~ ~ ~
+    playsound item.book.page_turn player @a ~ ~ ~
 # 属性抽選
     execute store result storage asset:temp type int 1 run random value 0..2
-    execute if data storage asset:temp {type:0} at @s anchored eyes run function asset:artifact/0101.grimoire/ballet/fire
-    execute if data storage asset:temp {type:1} at @s anchored eyes run function asset:artifact/0101.grimoire/ballet/water
-    execute if data storage asset:temp {type:2} at @s anchored eyes run function asset:artifact/0101.grimoire/ballet/thunder
+    execute if data storage asset:temp {type:0} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/fire
+    execute if data storage asset:temp {type:1} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/water
+    execute if data storage asset:temp {type:2} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/thunder
     data remove storage asset:temp type

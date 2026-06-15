@@ -1,8 +1,8 @@
-#> asset:artifact/0101.grimoire/ballet/fire_hit
+#> asset:artifact/0101.grimoire/trigger/ballet/fire_hit
 #
 # 着弾処理
 #
-# @within function asset:artifact/0101.grimoire/ballet/fire
+# @within function asset:artifact/0101.grimoire/trigger/ballet/fire
 
 # 演出
     particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.05 40
