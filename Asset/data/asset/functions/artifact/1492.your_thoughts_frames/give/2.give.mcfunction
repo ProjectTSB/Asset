@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"古","color":"#E499FF"},{"text":"き","color":"#DAA1FF"},{"text":"想","color":"#DAA1FF"},{"text":"い","color":"#C5A5FF"},{"text":"の","color":"#B8A8FF"},{"text":"額縁","color":"#9EAEFF"}]'
+    data modify storage asset:artifact Name set value '[{"text":"「繋","color":"#E499FF"},{"text":"創","color":"#DAA1FF"},{"text":"を","color":"#DAA1FF"},{"text":"想","color":"#C5A5FF"},{"text":"う","color":"#B8A8FF"},{"text":"額","color":"#9EAEFF"},{"text":"縁」","color":"#93AAFE"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、敵が”気持ちの欠片”を近くに落とす"}','{"text":"気持ちの欠片に触れたプレイヤーはMPを31.4回復する。"}','{"text":"「まだ喉元に噛みつく牙はある？」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、敵が”気持ちの欠片”を近くに落とす"}','{"text":"気持ちの欠片に触れたプレイヤーはMPを31.4回復する。"}','{"text":"-まだ喉元に噛みつく牙はある？","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
