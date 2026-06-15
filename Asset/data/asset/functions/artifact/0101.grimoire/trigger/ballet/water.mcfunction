@@ -16,7 +16,7 @@
     execute unless entity @s[distance=..10] run return run function asset:artifact/0101.grimoire/trigger/ballet/water_hit
 
 # 敵に当たってももちろん起爆
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] positioned ~0.5 ~0.5 ~0,5 run return run function asset:artifact/0101.grimoire/trigger/ballet/water_hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] positioned ~0.5 ~0.5 ~0.5 run return run function asset:artifact/0101.grimoire/trigger/ballet/water_hit
 
 # 起爆しないなら再起
     execute positioned ^ ^ ^0.5 run function asset:artifact/0101.grimoire/trigger/ballet/water
