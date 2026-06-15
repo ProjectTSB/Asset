@@ -33,10 +33,10 @@
     execute at @e[type=marker,tag=177.change_marker,limit=1] rotated as @e[type=marker,tag=177.change_marker,limit=1] run tp @s ~ ~ ~ ~ ~
 
 # 1. 自分の場所でパーティクルと音を鳴らす
-    execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 1 0.5 0.05 40 player @a
+    execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 1 0.5 0.05 40 normal @a
     execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1.0 1.0 0
 # 2. 対象の場所でパーティクルと音を鳴らす
-    execute at @a[tag=177.changed,limit=1] run particle minecraft:reverse_portal ~ ~1 ~ 0.5 1 0.5 0.05 40 player @a
+    execute at @a[tag=177.changed,limit=1] run particle minecraft:reverse_portal ~ ~1 ~ 0.5 1 0.5 0.05 40 normal @a
     execute at @a[tag=177.changed,limit=1] run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1.0 1.0 0
 
 # マーカーを削除する
