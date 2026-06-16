@@ -84,6 +84,9 @@
         # 難易度比例部分
             data modify storage asset:mob Field.Duration.Difficulty set value 80
 
+# Killerに対してのMP回復
+    data modify storage asset:mob Field.MPHealToKiller set value 30
+
 # 攻撃モード
     data modify storage asset:mob Field.IsAttackMode set value false
 

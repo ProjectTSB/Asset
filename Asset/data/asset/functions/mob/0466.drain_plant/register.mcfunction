@@ -23,3 +23,6 @@
         data modify storage asset:mob Field.MPReduce.Base set value 50
     # 難易度比例部分
         data modify storage asset:mob Field.MPReduce.Difficulty set value 15
+
+# Killerに対してのMP回復
+    data modify storage asset:mob Field.MPHealToKiller set value 90
