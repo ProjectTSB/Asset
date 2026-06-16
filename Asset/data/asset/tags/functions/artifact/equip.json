@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:artifact/0772.dolphin_amulet/trigger/1.trigger",
+        "asset:artifact/1409.mana_charm/trigger/1.trigger",
         "asset:artifact/1325.calamity_chain/trigger/1.trigger",
         "asset:artifact/1318.blue_bouquet/trigger/1.trigger",
         "asset:artifact/1317.oblivious_feather/trigger/1.trigger",
@@ -9,7 +11,6 @@
         "asset:artifact/1137.over_pulse_headgear/equip/1.trigger",
         "asset:artifact/1279.wing_boots/trigger/1.trigger",
         "asset:artifact/1125.moon_accessory/trigger/1.trigger",
-        "asset:artifact/0860.angel_wing/trigger/1.trigger",
         "asset:artifact/0991.soul_mate/equip/1.trigger",
         "asset:artifact/1122.guardian_ironlump/trigger/1.trigger",
         "asset:artifact/0569.great_sage_boots/trigger/1.trigger",
