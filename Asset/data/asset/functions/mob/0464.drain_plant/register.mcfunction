@@ -84,8 +84,12 @@
         # 難易度比例部分
             data modify storage asset:mob Field.Duration.Difficulty set value 80
 
-# 状態
+# 攻撃モード
     data modify storage asset:mob Field.IsAttackMode set value false
+
+# 落下状態
+    data modify storage asset:mob Field.IsFalling set value false
+    data modify storage asset:mob Field.DisableFalling set value false
 
 # Metadata
     data modify storage asset:mob Field.Metadata set value "464.DrainPlant"

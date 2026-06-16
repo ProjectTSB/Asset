@@ -7,3 +7,7 @@
     #declare score_holder $CalcB
     #declare score_holder $Duration
     #declare score_holder $Difficulty
+
+#> tag
+# @within function asset:mob/0464.drain_plant/tick/move/**
+    #declare tag TargetPlayer
