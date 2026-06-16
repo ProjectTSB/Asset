@@ -75,5 +75,17 @@
 # 攻撃予告発生から攻撃判定発生まで
     data modify storage asset:mob Field.Delay set value 48
 
+# 被回復量低下
+    # スタック
+        # 基礎値
+            data modify storage asset:mob Field.Stack.Base set value 0
+        # 難易度比例部分
+            data modify storage asset:mob Field.Stack.Difficulty set value 3
+    # 効果時間
+        # 基礎値
+            data modify storage asset:mob Field.Duration.Base set value 100
+        # 難易度比例部分
+            data modify storage asset:mob Field.Duration.Difficulty set value 100
+
 # Metadata
     data modify storage asset:mob Field.Metadata set value "461.NectarPlant"
