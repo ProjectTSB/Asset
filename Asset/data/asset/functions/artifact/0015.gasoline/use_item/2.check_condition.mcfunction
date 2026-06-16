@@ -5,7 +5,6 @@
 # @within function asset:artifact/0015.gasoline/use_item/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/auto
-    tag @s add CanUsed
-# CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0015.gasoline/use_item/3.main
+    #function asset:artifact/common/check_condition/auto
+# 3.main.mcfunctionを実行する
+    function asset:artifact/0015.gasoline/use_item/3.main

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ガソリン","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃した敵の火耐性を大きく下げる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"大量のガソリンをぶっかけて攻撃する"}','{"text":"攻撃した敵の火耐性を大きく下げる"}','{"text":"⚠誤飲注意","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -50,7 +50,7 @@
     data modify storage asset:artifact LocalCooldown set value 100
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value "60"
+    data modify storage asset:artifact TypeCooldown.Duration set value 40
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
@@ -62,7 +62,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:artifact CustomNBT set value {}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:32,CustomPotionColor:15220575}
 
 # 神器の入手用function
     function asset:artifact/common/give

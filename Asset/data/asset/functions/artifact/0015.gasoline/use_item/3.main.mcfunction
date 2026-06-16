@@ -8,4 +8,14 @@
     #function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-    say test: 0015.gasoline_use
+# 毒
+    data modify storage api: Argument.ID set value 29
+    data modify storage api: Argument.Duration set value 200
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+# ダメージ
+    data modify storage api: Argument.Damage set value 10.0f
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sはガソリン中毒で死んだ","with":[{"selector":"@s"}]}]'
+    data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sは自分を車と勘違いした","with":[{"selector":"@s"}]}]'
