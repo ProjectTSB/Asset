@@ -6,16 +6,12 @@
 
 
 # ここから先は神器側の効果の処理を書く
-# ＝＝＝ ▼ 鈍い水音（サウンド） ▼ ＝＝＝
-# 1. ドロッと重い液体が地面に落ちる音（ハチミツの落下音を低音で）
-    #playsound minecraft:block.honey_block.fall player @a ~ ~ ~ 1.0 0.5 0
-# 2. 粘度の高い液体が撒き散らされる音（溶岩を撒く音）
+# 粘度の高い液体が撒き散らされる音（溶岩を撒く音）
     playsound minecraft:item.bucket.empty_lava player @a ~ ~ ~ 0.8 0.8 0
-# 3. 濁って重い「バシャッ」という水音（通常飛沫を低ピッチで）
+# 濁って重い「バシャッ」という水音（通常飛沫を低ピッチで）
     playsound minecraft:entity.generic.splash player @a ~ ~ ~ 0.1 0.6 0
 
-# ＝＝＝ ▼ 油・ガソリンの飛沫（パーティクル） ▼ ＝＝＝
-# 4. 油のような濁った色（暗い黄土色〜黒）の細かい飛沫
+# 油のような濁った色（暗い黄土色〜黒）の細かい飛沫
     particle minecraft:dust 0.2 0.15 0.05 1.5 ~ ~ ~ 0.8 0.4 0.8 0.05 100 normal @a
-# 5. ドロリとした質量のある液体の飛び散り（泥ブロックの破片を利用）
+# ドロリとした質量のある液体の飛び散り（泥ブロックの破片を利用）
     particle minecraft:block minecraft:mud ~ ~ ~ 0.6 0.4 0.6 0.15 50 normal @a

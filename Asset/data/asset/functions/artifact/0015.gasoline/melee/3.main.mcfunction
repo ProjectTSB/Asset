@@ -17,7 +17,7 @@
     function api:damage/modifier
     execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
-# デバフ付与
+# デバフ(ガソリン)付与
     data modify storage api: Argument.ID set value 372
     data modify storage api: Argument.Duration set value 200
     execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
