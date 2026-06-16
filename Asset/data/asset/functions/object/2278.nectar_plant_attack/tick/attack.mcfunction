@@ -14,7 +14,7 @@
     particle dust 1 0.46 0.87 1 ~ ~2.5 ~ 4 2 4 0 60 normal @a
     playsound entity.breeze.hurt hostile @a ~ ~ ~ 1 1
     #playsound entity.warden.death hostile @a ~ ~ ~ 1 1.6
-    playsound minecraft:entity.squid.squirt player @a ~ ~ ~ 1 0.75
+    playsound minecraft:entity.squid.squirt hostile @a ~ ~ ~ 1 0.75
 
 # 攻撃範囲
     data modify storage lib: Argument.BoundingCylinder.Radius set value 4d
