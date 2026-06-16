@@ -62,4 +62,30 @@
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
 # フィールド
-    # data modify storage asset:mob Field.myValue set value
+
+# ダメージ
+    data modify storage asset:mob Field.Damage set value 5d
+
+# MP吸収量
+    # 基礎値
+        data modify storage asset:mob Field.MPReduce.Base set value 10
+    # 難易度比例部分
+        data modify storage asset:mob Field.MPReduce.Difficulty set value 5
+
+# 毒
+    # スタック
+        # 基礎値
+            data modify storage asset:mob Field.Stack.Base set value 2
+        # 難易度比例部分
+            data modify storage asset:mob Field.Stack.Difficulty set value 1
+    # 効果時間
+        # 基礎値
+            data modify storage asset:mob Field.Duration.Base set value 40
+        # 難易度比例部分
+            data modify storage asset:mob Field.Duration.Difficulty set value 80
+
+# 状態
+    data modify storage asset:mob Field.IsAttackMode set value false
+
+# Metadata
+    data modify storage asset:mob Field.Metadata set value "464.DrainPlant"

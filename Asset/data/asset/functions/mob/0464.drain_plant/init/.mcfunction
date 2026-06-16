@@ -3,3 +3,6 @@
 # Mobのinit時の処理
 #
 # @within asset:mob/alias/464/init
+
+# 周囲にプレイヤーがいるかを判定ならIsAttackMode:trueに
+    execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..4] run data modify storage asset:context this.IsAttackMode set value true
