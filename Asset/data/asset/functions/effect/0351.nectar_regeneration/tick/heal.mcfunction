@@ -19,3 +19,7 @@
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
+
+# リセット
+    scoreboard players reset $HealPer Temporary
+    scoreboard players reset $MaxHealth Temporary
