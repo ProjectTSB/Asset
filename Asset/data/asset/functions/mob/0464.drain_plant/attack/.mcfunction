@@ -4,9 +4,6 @@
 #
 # @within function asset:mob/alias/464/attack
 
-#> Private
-# @private
-
 # 特定のMetadataがなければreturn
     execute unless data storage asset:context Attack{Metadata:"464.DrainPlant"} run return fail
 
