@@ -20,7 +20,7 @@
 
 # MP吸収量
     # 基礎値
-        data modify storage asset:mob Field.MPReduce.Base set value 50
+        data modify storage asset:mob Field.MPReduce.Base set value 30
     # 難易度比例部分
         data modify storage asset:mob Field.MPReduce.Difficulty set value 15
 
