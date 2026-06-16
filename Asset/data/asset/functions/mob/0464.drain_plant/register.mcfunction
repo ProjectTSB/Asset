@@ -17,7 +17,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"ドレイン・プラント","color":"#df523f"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"赤い分厚い花弁をした花の魔物。"}','{"text":"根も葉も持っておらず、他の生物からマナを吸わないと生きられないため、"}','{"text":"毒の花粉をばら撒き、その亡骸からマナを奪う。"}']
+    data modify storage asset:mob Lore set value ['{"text":"赤く分厚い花弁をした花の魔物。"}','{"text":"根も葉も持っておらず、他の生物からマナを吸わないと生きられないため、"}','{"text":"毒の花粉をばら撒き、その亡骸からマナを奪う。"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         # data modify storage asset:mob Weapon.Mainhand set value
