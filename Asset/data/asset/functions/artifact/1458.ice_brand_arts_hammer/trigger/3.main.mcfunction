@@ -16,17 +16,35 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-#アイシクルライン処理
-    data modify storage api: Argument.ID set value 365
-    function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 40
-    execute if data storage api: Return.Effect run function api:mp/fluctuation
+
 # 攻撃時演出
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function asset:artifact/1458.ice_brand_arts_hammer/trigger/direction
 
+# 威力計算
+    # 基礎ダメージ決定
+        scoreboard players set $BaseDamage Temporary 350
+    # ダメージ増加量決定
+        scoreboard players set $MaxDamageBaf Temporary 1050
+    # 諸々準備
+        scoreboard players set $value Temporary 600
+        data modify storage api: Argument.ID set value 365
+        function api:entity/mob/effect/get/from_id
+    # 使用時間取る
+        execute store result score $UseTime Temporary run data get storage api: Return.Effect.Field.Time
+    # 現在時間取る
+        execute store result score $NowTime Temporary run data get storage global Time
+    # 引き算して
+        scoreboard players operation $NowTime Temporary -= $UseTime Temporary
+        scoreboard players operation $value Temporary -= $NowTime Temporary
+        execute if score $value Temporary matches ..-1 run scoreboard players set $value Temporary 0
+    # 威力決定
+        scoreboard players operation $MaxDamageBaf Temporary *= $value Temporary
+        scoreboard players operation $MaxDamageBaf Temporary /= $600 Const
+        scoreboard players operation $BaseDamage Temporary += $MaxDamageBaf Temporary
+
 #対象に大ダメージ
 # 引数を set
-    data modify storage api: Argument.Damage set value 700f
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $BaseDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行
@@ -38,7 +56,8 @@
 
 # 近くの敵も巻き込む
 # 引数を set
-    data modify storage api: Argument.Damage set value 300f
+    scoreboard players operation $BaseDamage Temporary /= $2 Const
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $BaseDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
 # 補正functionを実行

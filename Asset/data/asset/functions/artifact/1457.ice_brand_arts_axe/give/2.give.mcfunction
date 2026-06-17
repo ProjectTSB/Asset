@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ(斧)","color":"#7DFFF2"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の斧","color":"white"}','{"text":"敵単体に強烈な一撃をお見舞いする","color":"white"}','{"text":"生成して時間が経つほど威力が減衰する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"アイスブランドアーツで生成した氷の斧","color":"white"}','{"text":"敵単体に強烈な一撃をお見舞いする","color":"white"}','{"text":"生成してから時間が経つほど威力が減衰する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"クリティカル攻撃"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value "500-2000"
+    data modify storage asset:artifact AttackInfo.Damage set value [500,2000]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 100
+    data modify storage asset:artifact MPCost set value 60
 # MP必要量 (int) (オプション)
     #data modify storage asset:artifact MPRequire set value 150
 # MP回復量 (int)

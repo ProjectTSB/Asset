@@ -11,23 +11,23 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"アイシクルライン","color":"#7DFFF2"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"アイスブランドアーツの使用時に付与される","color":"white"}','{"text":"アイスブランドアーツで生成した神器を使用したとき、本来の消費MP量の半分が戻ってくる","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"アイスブランドアーツの使用時に付与される","color":"white"}','{"text":"生成した神器に魔力を供給し、威力を一時的に強化する","color":"white"}']
 # 効果時間 (int) (default = API || error)
     #data modify storage asset:effect Duration set value 400
 # スタック (int) (default = API || 1)
-    # data modify storage asset:effect Stack set value 
+    # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
-    # data modify storage asset:effect DurationOperation set value 
+    # data modify storage asset:effect DurationOperation set value
 # スタックの操作方法 (default = API || "replace")
-    # data modify storage asset:effect StackOperation set value 
+    # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
-    # data modify storage asset:effect MaxDuration set value 
+    # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    # data modify storage asset:effect MaxStack set value 
+    # data modify storage asset:effect MaxStack set value
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
-    # data modify storage asset:effect ProcessOnDied set value 
+    # data modify storage asset:effect ProcessOnDied set value
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 3
 # エフェクトをUIに表示するか (boolean) (default = true)
