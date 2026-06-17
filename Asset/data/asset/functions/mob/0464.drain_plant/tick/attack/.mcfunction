@@ -5,7 +5,7 @@
 # @within function asset:mob/0464.drain_plant/tick/
 
 # Blesslessに限り、プレイヤーが遠かったら地面に潜る
-    execute if score @s General.Mob.Tick matches 5 unless entity @p[gamemode=!spectator,distance=..10] run function asset:mob/0464.drain_plant/tick/reset/
+    execute if score @s General.Mob.Tick matches 5 if predicate api:global_vars/difficulty/min/3_blessless unless entity @p[gamemode=!spectator,distance=..8] run function asset:mob/0464.drain_plant/tick/reset/
 
 # 時間経過で開花
     execute if score @s General.Mob.Tick matches 10 run function asset:mob/0464.drain_plant/tick/change_model/bloom/0
