@@ -1,6 +1,13 @@
 {
     "values": [
         "asset:artifact/1432.ouroboros_ball/give/1.trigger",
+        "asset:artifact/1534.drop_in_the_bucket/give/1.trigger",
+        "asset:artifact/1366.shaved_ice_melon/give/1.trigger",
+        "asset:artifact/1365.shaved_ice_blue_hawaii/give/1.trigger",
+        "asset:artifact/1364.shaved_ice_strawberry/give/1.trigger",
+        "asset:artifact/1409.mana_charm/give/1.trigger",
+        "asset:artifact/1327.lunatic_torch/give/1.trigger",
+        "asset:artifact/1332.bebebeam/give/1.trigger",
         "asset:artifact/1252.fox_candle/give/1.trigger",
         "asset:artifact/1343.coffee_milk_pack/give/1.trigger",
         "asset:artifact/1342.fruit_milk_pack/give/1.trigger",
