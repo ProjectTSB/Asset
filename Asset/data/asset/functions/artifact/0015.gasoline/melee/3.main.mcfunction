@@ -20,5 +20,6 @@
 # デバフ(ガソリン)付与
     data modify storage api: Argument.ID set value 372
     data modify storage api: Argument.Duration set value 200
+    data modify storage api: Argument.FieldOverride.Amount set value -0.3d
     execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

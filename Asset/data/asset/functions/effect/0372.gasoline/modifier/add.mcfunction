@@ -6,6 +6,7 @@
 
 # 火耐性低下
     data modify storage api: Argument.UUID set value [I;1,3,372,0]
-    data modify storage api: Argument.Amount set value -0.3
-    data modify storage api: Argument.Operation set value "multiply"
+    data modify storage api: Argument.UUID set from storage asset:context this.UUID
+    data modify storage api: Argument.Amount set from storage asset:context this.Amount
+    data modify storage api: Argument.Operation set value "add"
     function api:modifier/defense/fire/add
