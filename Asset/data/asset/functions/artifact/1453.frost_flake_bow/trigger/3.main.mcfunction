@@ -15,7 +15,7 @@
 
 # 2段チャージ済みなら炸裂ダメージを追加
     data modify storage api: Argument.FieldOverride.Damage set value 500
-    data modify storage api: Argument.FieldOverride.Speed set value 7
+    data modify storage api: Argument.FieldOverride.Speed set value 4
     execute if score @s 14D.Charge matches 30.. run data modify storage api: Argument.FieldOverride.BloomDamage set value 800
 
 # Object召喚
