@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0..29 run function asset:mob/0464.drain_plant/tick/move/burrow
 
 # 落下無効化
-    execute if score @s General.Mob.Tick matches 10 run function asset:mob/0464.drain_plant/tick/fall/disable/start
+    execute if score @s General.Mob.Tick matches 10 run function asset:mob/0464.drain_plant/tick/fall/disable/true
 
 # 地面に潜り切ったときに周囲にプレイヤーがいなければremoveする
     execute if score @s General.Mob.Tick matches 30 unless entity @p[gamemode=!spectator,distance=..20] run function api:mob/remove
@@ -23,7 +23,7 @@
     execute if score @s General.Mob.Tick matches 41 run function asset:mob/0464.drain_plant/tick/change_model/0
 
 # 落下有効化
-    execute if score @s General.Mob.Tick matches 66 run function asset:mob/0464.drain_plant/tick/fall/disable/end
+    execute if score @s General.Mob.Tick matches 66 run function asset:mob/0464.drain_plant/tick/fall/disable/false
 
 # 地面から出てくる
     execute if score @s General.Mob.Tick matches 42..76 run function asset:mob/0464.drain_plant/tick/move/emerge

@@ -1,4 +1,4 @@
-#> asset:mob/0464.drain_plant/tick/fall/disable/end
+#> asset:mob/0464.drain_plant/tick/fall/disable/false
 #
 #
 #
