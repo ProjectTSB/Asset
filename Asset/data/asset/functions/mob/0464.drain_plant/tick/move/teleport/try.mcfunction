@@ -22,8 +22,8 @@
 # marker削除
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
 
-# 安全判定なら、storageを削除してreturn
-    execute if data storage asset:temp {Success:true} run return run data remove storage asset:temp Success
+# 安全判定ならreturn
+    execute if data storage asset:temp {Success:true} run return fail
 
 # 再帰
     execute unless data storage asset:temp {RecursiveLimit:0} run function asset:mob/0464.drain_plant/tick/move/teleport/try
