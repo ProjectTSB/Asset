@@ -11,7 +11,7 @@
     execute if score @s General.Mob.Tick matches 10 run function asset:mob/0464.drain_plant/tick/fall/disable/true
 
 # 地面に潜り切ったときに周囲にプレイヤーがいなければremoveする
-    execute if score @s General.Mob.Tick matches 30 unless entity @p[gamemode=!spectator,distance=..20] run function api:mob/remove
+    execute if score @s General.Mob.Tick matches 30 unless entity @p[gamemode=!spectator,distance=..20] run return run function api:mob/remove
 
 # 透明化
     execute if score @s General.Mob.Tick matches 30 run function asset:mob/0464.drain_plant/tick/change_model/invisible
