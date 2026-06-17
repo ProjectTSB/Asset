@@ -10,8 +10,6 @@
 # @private
     #declare tag SpreadMarker
 
-say a
-
 # デクリメント
     execute store result storage asset:temp RecursiveLimit int 0.9999999999 run data get storage asset:temp RecursiveLimit
 
