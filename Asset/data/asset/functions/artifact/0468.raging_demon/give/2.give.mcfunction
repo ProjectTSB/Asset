@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"瞬獄殺","color":"dark_red","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"周囲10M以内の","color":"white"},{"text":"体力が30以下","color":"light_purple"},{"text":"の","color":"white"},{"text":"敵","color":"red"},{"text":"にダメージを与える","color":"white"}]','{"text":"「我こそ、拳を極めし者」","color":"dark_red"}']
+    data modify storage asset:artifact Lore set value ['[{"text":"周囲10M以内の","color":"white"},{"text":"体力が5%以下","color":"light_purple"},{"text":"の","color":"white"},{"text":"敵","color":"red"},{"text":"を倒す","color":"white"}]','{"text":"「我こそ、拳を極めし者」","color":"dark_red"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,17 +29,17 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [30]
+    # data modify storage asset:artifact AttackInfo.Damage set value
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
+    # data modify storage asset:artifact AttackInfo.AttackType set value
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.ElementType set value [None]
+    # data modify storage asset:artifact AttackInfo.ElementType set value
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.BypassResist set value 1b
+    # data modify storage asset:artifact AttackInfo.BypassResist set value
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
+    # data modify storage asset:artifact AttackInfo.IsRangeAttack set value
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 10
+    # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 10
 # MP必要量 (int) (オプション)

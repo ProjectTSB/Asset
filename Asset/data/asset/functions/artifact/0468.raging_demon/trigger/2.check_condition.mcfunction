@@ -8,8 +8,16 @@
     function asset:artifact/common/check_condition/offhand
 # 他にアイテム等確認する場合はここに書く
 
-# 周囲10M以内に体力が20以下の敵がいるか確認
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0468.raging_demon/trigger/check_target
+# CanUsedでなければreturn
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# 周囲10M以内に体力割合が一定以下の敵がいるか確認
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Enemy.Boss,tag=!Uninterferable,distance=..10] run function asset:artifact/0468.raging_demon/trigger/2.check_condition/check_health_per
+    execute unless entity @e[type=#lib:living_without_player,tag=D0.Target,distance=..10] run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0468.raging_demon/trigger/3.main
+    function asset:artifact/0468.raging_demon/trigger/3.main
+
+# リセット
+    tag @e[type=#lib:living_without_player,tag=D0.Target,distance=..10] remove D0.Target
