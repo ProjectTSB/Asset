@@ -4,8 +4,18 @@
 #
 # @within function asset:artifact/1462.ice_brand_arts_spear/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare tag ICE_Hit
+    #declare score_holder $UseTime
+    #declare score_holder $NowTime
+    #declare score_holder $value
+    #declare score_holder $MaxDamageBaf
+    #declare score_holder $BaseDamage
+
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 # ターゲット指定
     execute at @s positioned ^ ^ ^1 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
@@ -14,11 +24,12 @@
     execute at @s positioned ^ ^ ^4 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
     execute at @s positioned ^ ^ ^5 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
     execute at @s positioned ^ ^ ^6 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
+    execute at @s positioned ^ ^ ^7 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
     execute at @s positioned ^ ^ ^8 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
     execute at @s positioned ^ ^ ^9 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
     execute at @s positioned ^ ^ ^10 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
-    
-    
+
+
 #アイシクルライン処理
     data modify storage api: Argument.ID set value 365
     function api:entity/mob/effect/get/from_id
@@ -42,3 +53,10 @@
 # リセット
     function api:damage/reset
     tag @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] remove ICE_Hit
+
+# スコアリセット
+    scoreboard players reset $NowTime Temporary
+    scoreboard players reset $UseTime Temporary
+    scoreboard players reset $value Temporary
+    scoreboard players reset $MaxDamageBaf Temporary
+    scoreboard players reset $BaseDamage Temporary

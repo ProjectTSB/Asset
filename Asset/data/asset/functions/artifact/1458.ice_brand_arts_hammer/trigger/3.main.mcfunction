@@ -4,6 +4,14 @@
 #
 # @within function asset:artifact/1458.ice_brand_arts_hammer/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare score_holder $UseTime
+    #declare score_holder $NowTime
+    #declare score_holder $value
+    #declare score_holder $MaxDamageBaf
+    #declare score_holder $BaseDamage
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
@@ -39,3 +47,9 @@
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] as @e[type=#lib:living_without_player,tag=!Victim,distance=..3] run function api:damage/
 # リセット
     function api:damage/reset
+# スコアリセット
+    scoreboard players reset $NowTime Temporary
+    scoreboard players reset $UseTime Temporary
+    scoreboard players reset $value Temporary
+    scoreboard players reset $MaxDamageBaf Temporary
+    scoreboard players reset $BaseDamage Temporary

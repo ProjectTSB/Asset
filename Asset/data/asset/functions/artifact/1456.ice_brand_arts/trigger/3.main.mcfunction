@@ -10,7 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 #アイシクルライン付与
     data modify storage api: Argument.ID set value 365
-    data modify storage api: Argument.Duration set value 400
+    data modify storage api: Argument.Duration set value 600
+    execute store result storage api: Argument.FieldOverride.Time int 1 run data get storage global Time
     # data modify storage api: Argument.Stack set value <スタック数>      # オプション
     # data modify storage api: Argument.DurationOperation set value "replace"   # オプション
     # data modify storage api: Argument.StackOperation set value "replace"      # オプション

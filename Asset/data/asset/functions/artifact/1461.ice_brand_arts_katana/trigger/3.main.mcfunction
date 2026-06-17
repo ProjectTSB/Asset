@@ -4,8 +4,16 @@
 #
 # @within function asset:artifact/1461.ice_brand_arts_katana/trigger/2.check_condition
 
+#> Private
+# @private
+    #declare score_holder $UseTime
+    #declare score_holder $NowTime
+    #declare score_holder $value
+    #declare score_holder $MaxDamageBaf
+    #declare score_holder $BaseDamage
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/auto
+    function asset:artifact/common/use/mainhand
 
 #アイシクルライン処理
     data modify storage api: Argument.ID set value 365
@@ -35,3 +43,9 @@
 # リセット
     function api:damage/reset
     tag @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..5.5] remove ICE_Hit
+# スコアリセット
+    scoreboard players reset $NowTime Temporary
+    scoreboard players reset $UseTime Temporary
+    scoreboard players reset $value Temporary
+    scoreboard players reset $MaxDamageBaf Temporary
+    scoreboard players reset $BaseDamage Temporary
