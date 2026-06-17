@@ -16,13 +16,6 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-
-#アイシクルライン処理
-    data modify storage api: Argument.ID set value 365
-    function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run data modify storage api: Argument.Fluctuation set value 50
-    execute if data storage api: Return.Effect run function api:mp/fluctuation
-
 # 攻撃時演出
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run particle block ice ~ ~ ~ 1 1 1 0 100
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run playsound block.glass.break player @a ~ ~ ~ 1.2 0.7
