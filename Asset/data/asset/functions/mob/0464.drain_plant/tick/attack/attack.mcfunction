@@ -12,7 +12,7 @@
 # 攻撃範囲
     data modify storage lib: Argument.BoundingCylinder.Radius set value 3.5d
     data modify storage lib: Argument.BoundingCylinder.Height set value 6d
-    data modify storage lib: Argument.BoundingCylinder.Selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..5]"
+    data modify storage lib: Argument.BoundingCylinder.Selector set value "@a[tag=!PlayerShouldInvulnerable,distance=..6]"
     execute positioned ~ ~-2 ~ run function lib:bounding_cylinder/
 
 # ダメージ
@@ -21,8 +21,8 @@
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.Metadata set from storage asset:context this.Metadata
     function api:damage/modifier
-    execute as @a[tag=BoundingCylinder,distance=..5] run function api:damage/
+    execute as @a[tag=BoundingCylinder,distance=..6] run function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @a[tag=BoundingCylinder,distance=..5] remove BoundingCylinder
+    tag @a[tag=BoundingCylinder,distance=..6] remove BoundingCylinder
