@@ -10,7 +10,7 @@
     data remove storage asset:temp RecursiveLimit2
 
 # 再帰で安全だと判断できたなら調整しておく
-    execute if data storage asset:temp {Success2:true} at @s facing entity @p[tag=TargetPlayer,distance=..10] feet run tp @s ~ ~-1.4 ~ ~-90 0
+    execute if data storage asset:temp {Success:true} at @s facing entity @p[tag=TargetPlayer,distance=..10] feet run tp @s ~ ~-1.4 ~ ~-90 0
 
 # リセット
-    data remove storage asset:temp Success2
+    # data remove storage asset:temp Success

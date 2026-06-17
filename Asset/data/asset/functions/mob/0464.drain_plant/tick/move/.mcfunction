@@ -26,7 +26,7 @@
     execute if score @s General.Mob.Tick matches 66 run function asset:mob/0464.drain_plant/tick/fall/disable/false
 
 # 地面から出てくる
-    execute if score @s General.Mob.Tick matches 42..76 run function asset:mob/0464.drain_plant/tick/move/emerge
+    execute if score @s General.Mob.Tick matches 42..76 at @s run function asset:mob/0464.drain_plant/tick/move/emerge
 
 # リセット
     execute if score @s General.Mob.Tick matches 100.. run function asset:mob/0464.drain_plant/tick/reset/

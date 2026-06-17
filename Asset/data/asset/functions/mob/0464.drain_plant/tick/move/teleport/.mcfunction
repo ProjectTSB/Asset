@@ -16,4 +16,3 @@
 # リセット
     tag @p[tag=TargetPlayer,distance=..20] add TargetPlayer
     data remove storage asset:temp RecursiveLimit
-    data remove storage asset:temp Success
