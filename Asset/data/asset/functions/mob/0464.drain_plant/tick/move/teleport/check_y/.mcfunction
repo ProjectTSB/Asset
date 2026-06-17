@@ -1,4 +1,4 @@
-#> asset:mob/0464.drain_plant/tick/move/teleport/check/
+#> asset:mob/0464.drain_plant/tick/move/teleport/check_y/
 #
 #
 #
@@ -6,7 +6,7 @@
 
 # 1ブロック上から再帰で判定する
     data modify storage asset:temp RecursiveLimit2 set value 5
-    execute positioned ~ ~1 ~ run function asset:mob/0464.drain_plant/tick/move/teleport/check/recursive
+    execute positioned ~ ~1 ~ run function asset:mob/0464.drain_plant/tick/move/teleport/check_y/recursive
     data remove storage asset:temp RecursiveLimit2
 
 # 再帰で安全だと判断できたなら調整しておく
