@@ -69,7 +69,7 @@
     execute as @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] run function api:damage/
 # リセット
     function api:damage/reset
-    tag @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] remove ICE_Hit
+    tag @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..12.5] remove ICE_Hit
 
 # スコアリセット
     scoreboard players reset $NowTime Temporary
