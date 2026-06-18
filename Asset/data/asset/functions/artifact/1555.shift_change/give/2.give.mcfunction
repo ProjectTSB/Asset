@@ -13,8 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"シフトチェンジ","color":"#dd47ff"}'
-# 神器の説明文 (TextComponentString[])
+    data modify storage asset:artifact Name set value '[{"text":"シフト","color":"#0E82E8","bold":true},{"text":"チェンジ","color":"#C9A410"}]'
     data modify storage asset:artifact Lore set value ['{"text":"サーバー内のランダムな味方1名と位置を入れ替える","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
