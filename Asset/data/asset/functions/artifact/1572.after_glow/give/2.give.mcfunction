@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"アフ","color":"#ff9900"},{"text":"ター","color":"#ff6600"},{"text":"グロ","color":"#ff3300"},{"text":"ウ","color":"#ff0000"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"きわめて強力なレーザーを上空に向けて射出する","color":"white"}','{"text":"レーザーは30秒後に着弾し、敵に致命的なダメージを与える","color":"white"}','{"text":"希望をのせた一筋の光","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

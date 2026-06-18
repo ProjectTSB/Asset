@@ -27,17 +27,17 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~1 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~2 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~3 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~4 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~5 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~6 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~7 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~8 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~9 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
-    execute positioned ~ ~10 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] add WF.Hit
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~1 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~2 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~3 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~4 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~5 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~6 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~7 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~8 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~9 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
+    execute positioned ~ ~10 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
 
     execute as @e[type=#lib:living_without_player,tag=Enemy,tag=WF.Hit,tag=!Uninterferable] run function api:damage/
     function api:damage/reset
