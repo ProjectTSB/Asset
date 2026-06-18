@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アフターグロウ","color":"#ffd712"}'
+    data modify storage asset:artifact Name set value '[{"text":"アフ","color":"#ff9900"},{"text":"ター","color":"#ff6600"},{"text":"グロ","color":"#ff3300"},{"text":"ウ","color":"#ff0000"}]'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
@@ -35,11 +35,11 @@
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.ElementType set value [Thunder]
 # 攻撃に関する情報 -防御無視 (boolean) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.BypassResist set value true
+    #data modify storage asset:artifact AttackInfo.BypassResist set value true
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    #data modify storage asset:artifact AttackInfo.AttackRange set value
+    data modify storage asset:artifact AttackInfo.AttackRange set value 5
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 120
 # MP必要量 (int) (オプション)
