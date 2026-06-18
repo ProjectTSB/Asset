@@ -9,5 +9,5 @@
 
 # ここから先は神器側の効果の処理を書く
     data modify storage api: Argument.ID set value 2168
-
-    function api:object/summon
+    data modify storage api: Argument.FieldOverride set value {Color:16711680,Scale:[1f,10f,1f],Frames:[20335,20336,20337]}
+    execute at @s positioned ^ ^ ^3 rotated ~ -90 run function api:object/summon
