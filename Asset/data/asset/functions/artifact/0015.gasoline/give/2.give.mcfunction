@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ガソリン","color":"red"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"大量のガソリンをぶっかけて攻撃する"}','[{"text":"攻撃した敵の","color":"white"},{"text":"火耐性-30%","color":"red"}]','{"text":"⚠誤飲注意","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"大量のガソリンをぶっかけて攻撃する"}','[{"text":"攻撃した敵に","color":"white"},{"text":"火耐性-30%","color":"red"},{"text":"を10秒間付与する","color":"white"}]','{"text":"⚠誤飲注意","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

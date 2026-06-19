@@ -19,3 +19,6 @@
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sはガソリン中毒で死んだ","with":[{"selector":"@s"}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sは自分を車と勘違いした","with":[{"selector":"@s"}]}]'
+    function api:damage/modifier
+    function api:damage/
+    function api:damage/reset
