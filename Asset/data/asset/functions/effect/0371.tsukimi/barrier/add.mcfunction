@@ -12,5 +12,3 @@
     data modify storage api: Argument.Priority set value 1
     data modify storage api: Argument.WipedCallback set value "asset:effect/0371.tsukimi/barrier/break"
     function api:entity/player/absorption/add
-
-tellraw @a {"storage":"asset:context","nbt":"this"}
