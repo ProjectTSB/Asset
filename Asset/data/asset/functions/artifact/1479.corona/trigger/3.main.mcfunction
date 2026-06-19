@@ -11,9 +11,6 @@
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..64,sort=nearest,limit=1] run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 2.5 1.8 0
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..64,sort=nearest,limit=1] run playsound minecraft:entity.firework_rocket.large_blast player @a ~ ~ ~ 1.2 1.2 0
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..64,sort=nearest,limit=1] run particle flame ~ ~1.3 ~ 0.4 0.3 0.4 0 10 normal @a
-    # data modify storage api: Argument.ID set value 2257
-    # data modify storage api: Argument.FieldOverride.Scale set value 4f
-    # execute at @e[type=#lib:living_without_player,tag=Victim,distance=..64,sort=nearest,limit=1] run function api:object/summon
     # ダメージ
     data modify storage api: Argument.Damage set value 140.0f
     data modify storage api: Argument.AttackType set value "Magic"

@@ -8,5 +8,8 @@
     function asset:artifact/common/check_condition/chest
 # 他にアイテム等確認する場合はここに書く
     
+# IsDoT:trueならCanUsedを削除
+    execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1479.corona/trigger/3.main
