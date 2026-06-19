@@ -8,7 +8,12 @@
     function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
-# 朝
-    execute if predicate lib:is_day run function asset:artifact/0515.time_medicine/trigger/day
-# 夜
-    execute if predicate lib:is_night run function asset:artifact/0515.time_medicine/trigger/night
+
+# 調整班向けメモ
+# エンドでは日食バフ(隠し効果)が付与される
+# 攻撃・耐性+ 与回復量・MP回復量-
+
+# 昼・夜・エンドで異なるバフを付与
+    execute if predicate lib:is_day unless predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:357}
+    execute if predicate lib:is_night unless predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:358}
+    execute if predicate lib:dimension/is_end run function asset:artifact/0515.time_medicine/trigger/effect.m {ID:359}
