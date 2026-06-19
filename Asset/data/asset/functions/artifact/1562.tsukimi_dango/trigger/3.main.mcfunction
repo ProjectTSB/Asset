@@ -34,13 +34,13 @@
     scoreboard players set $Max Temporary 20000
 
 # (全体バリア量 - この神器のバリア)のN%をバリアとする
-    data modify storage api: Argument.FieldOveeride.Barrier set value 0d
+    data modify storage api: Argument.FieldOverride.Barrier set value 0d
     execute store result storage api: Argument.FieldOverride.Barrier double 0.000333 run scoreboard players operation $All Temporary < $Max Temporary
 
 # 付与
     data modify storage api: Argument.ID set value 371
     data modify storage api: Argument.Duration set value 600
-    execute unless data storage api: Argument.FieldOveeride{Barrier:0d} run function api:entity/mob/effect/give
+    execute unless data storage api: Argument.FieldOverride{Barrier:0d} run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット
