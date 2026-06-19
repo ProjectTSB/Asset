@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0372.gasoline/_/remove",
+        "asset:effect/0355.heart_gap/_/remove",
+        "asset:effect/0354.protection_of_courage/_/remove",
         "asset:effect/0348.cool_feeling/_/remove",
         "asset:effect/0356.dolphin_blessing/_/remove",
         "asset:effect/0302.safety_check_complete/_/remove",
