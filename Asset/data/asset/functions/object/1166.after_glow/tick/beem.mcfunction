@@ -6,7 +6,6 @@
 #> Private
 # @private
     #declare score_holder $UserID
-    #declare tag WF.Hit
 
 # ビーム召喚(真上向く)
     data modify storage api: Argument.ID set value 2168
@@ -21,25 +20,20 @@
     playsound minecraft:block.lava.extinguish player @a ~ ~ ~ 1.5 0.5
     playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 2 1.4
 
+# 半径1高さ100の円柱型範囲内
+    data modify storage lib: Argument.BoundingCylinder.Radius set value 1
+    data modify storage lib: Argument.BoundingCylinder.Height set value 101
+    data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable]"
+    execute positioned ~ ~-1 ~ run function lib:bounding_cylinder/
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~1 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~2 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~3 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~4 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~5 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~6 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~7 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~8 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~9 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-    execute positioned ~ ~10 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1] add WF.Hit
-
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=WF.Hit,tag=!Uninterferable] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable] run function api:damage/
     function api:damage/reset
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable] remove WF.Hit
+    # tagリセット
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable] remove BoundingCylinder
+    kill @s
