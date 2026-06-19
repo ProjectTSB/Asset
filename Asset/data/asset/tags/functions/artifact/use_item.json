@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:artifact/0015.gasoline/use_item/1.trigger",
+        "asset:artifact/1366.shaved_ice_melon/trigger/1.trigger",
+        "asset:artifact/1365.shaved_ice_blue_hawaii/trigger/1.trigger",
+        "asset:artifact/1364.shaved_ice_strawberry/trigger/1.trigger",
         "asset:artifact/1343.coffee_milk_pack/trigger/1.trigger",
         "asset:artifact/1342.fruit_milk_pack/trigger/1.trigger",
         "asset:artifact/1401.yuzu/trigger/1.trigger",
