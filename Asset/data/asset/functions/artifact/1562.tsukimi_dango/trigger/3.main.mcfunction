@@ -29,12 +29,13 @@
         execute store result score $Exclude Temporary run data get storage api: Return.Absorption.Amount 1000
     # 全体から除外分を減らす
         scoreboard players operation $All Temporary -= $Exclude Temporary
+    # $Allを最低0としておく
+        scoreboard players operation $All Temporary > $0 Const
 
 # 最大バリア量定義(1000倍)
     scoreboard players set $Max Temporary 20000
 
 # (全体バリア量 - この神器のバリア)のN%をバリアとする
-    data modify storage api: Argument.FieldOverride.Barrier set value 0d
     execute store result storage api: Argument.FieldOverride.Barrier double 0.000333 run scoreboard players operation $All Temporary < $Max Temporary
 
 # 付与
