@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1582
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:stick"
+    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"鬼神の返り血","color":"#8A0714"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"鬼神の怨嗟のこもった返り血","color":"white"}','{"text":"自らの生命力を燃やし、圧倒的な力を得る","color":"white"}','{"text":"使用すると","color":"white"}','{"text":"攻撃+250%","color":"green"}','{"text":"と","color":"white"}','{"text":"最大体力-999%","color":"red"}','{"text":"を30秒間得る","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"鬼神の怨嗟のこもった返り血","color":"white"}','{"text":"使用者に生命力と引き換えに圧倒的な力を与える","color":"white"}','[{"text":"攻撃+250%","color":"green"},{"text":"と","color":"white"},{"text":"最大体力-999%","color":"red"},{"text":"を30秒間得る","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -41,11 +41,11 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    #data modify storage asset:artifact MPCost set value
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
-    # data modify storage asset:artifact MPHealWhenHit set value
+    #data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 600
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
@@ -60,7 +60,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value "ALL"
+    data modify storage asset:artifact CanUsedGod set value ["Flora","Urban","Wi-ki","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
