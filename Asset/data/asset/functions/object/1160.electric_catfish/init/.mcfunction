@@ -12,6 +12,6 @@
     data modify entity @s transformation.translation set value [0.0f, 0.1f, 0.0f]
 
 # 演出
-    particle poof ~ ~0.5 ~ 0.1 0.1 0.1 0.05 5
+    execute align xz run particle poof ~0.5 ~0.5 ~0.5 0.1 0.1 0.1 0.05 5
 
     playsound entity.player.hurt neutral @a ~ ~ ~ 1 0.5
