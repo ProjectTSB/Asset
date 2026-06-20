@@ -8,4 +8,11 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1582.demons_splatter
+    data modify storage api: Argument.ID set value 376
+    data modify storage api: Argument.Duration set value 600
+    #data modify storage api: Argument.Stack set value <スタック数>      # オプション
+    #data modify storage api: Argument.DurationOperation set value "replace"   # オプション
+    #data modify storage api: Argument.StackOperation set value "replace"      # オプション
+    data modify storage api: Argument.FieldOverride.Attack set value 2.5d
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
