@@ -12,7 +12,7 @@
     execute if score @s 1160.Cooldown matches 0 run tag @s remove 1160.Inactive
 
 # 踏まれたどうかをチェック
-    execute unless entity @s[tag=1160.Inactive] positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,dx=0,sort=nearest,limit=1] positioned ~ ~-0.8 ~ if entity @s[dx=0] run tag @s add 1160.SteppedOn
+    execute unless entity @s[tag=1160.Inactive] positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,dx=0,sort=nearest,limit=1] positioned ~ ~-0.8 ~ if entity @s[dx=0] run function asset:object/1160.electric_catfish/tick/check
     execute if entity @e[tag=1160.SteppedOn,distance=..2] at @s run function asset:object/1160.electric_catfish/tick/attack
 
 # 消滅処理
