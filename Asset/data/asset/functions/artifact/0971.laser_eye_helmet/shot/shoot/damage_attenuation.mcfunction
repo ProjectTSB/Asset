@@ -1,8 +1,8 @@
-#> asset:artifact/0971.laser_eye_helmet/shot/damage_attenuation
+#> asset:artifact/0971.laser_eye_helmet/shot/shoot/damage_attenuation
 #
 #
 #
-# @within function asset:artifact/0971.laser_eye_helmet/shot/hit
+# @within function asset:artifact/0971.laser_eye_helmet/shot/shoot/hit
 
 # ダメージ減らす
     scoreboard players operation $Distance_Damping Temporary -= $Appropriate_Distance Temporary
