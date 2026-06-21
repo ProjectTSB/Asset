@@ -32,3 +32,5 @@
 # 5. 降り注ぐ死の灰（爆発の後に広範囲に降る灰と溶岩の飛沫）
     particle minecraft:ash ~ ~5 ~ 5.0 5.0 5.0 0.0 1000 normal
     particle minecraft:lava ~ ~5 ~ 5.0 5.0 5.0 0.0 50 normal
+    particle minecraft:flame ~ ~2.0 ~ 0.8 1.5 0.8 0.1 150 normal
+    particle minecraft:flame ~ ~0.5 ~ 1.2 0.0 1.2 0.05 200 normal
