@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1581.reactor_plate/register",
         "asset:artifact/1453.frost_flake_bow/register",
         "asset:artifact/1430.shield_of_fate/register",
         "asset:artifact/1534.drop_in_the_bucket/register",
