@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"リアクタープレート","color":"#B52400","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"この神器で攻撃する度に加熱され、威力が上昇する(最大10層)"}','{"text":"クリティカル攻撃で貯めた熱を放出し熱量に応じた範囲攻撃を行う"}','{"text":"最大まで貯めて放つと威力・範囲が跳ね上がり、更に防御を貫通する"}','{"text":"熱を帯びた状態でダメージを受けると暴発し、貯め込んだ熱の","color":"red"}','{"text":"層数×20の炎物理ダメージを自身に受ける","color":"red"}']
+    data modify storage asset:artifact Lore set value ['{"text":"この神器で攻撃する度に加熱され、威力が上昇する(最大10層)"}','{"text":"クリティカル攻撃で貯めた熱を放出し熱量に応じた範囲攻撃を行う"}','{"text":"最大まで貯めて放つと威力・範囲が跳ね上がり、更に防御と属性耐性を貫通する"}','{"text":"熱を帯びた状態でダメージを受けると暴発し、貯め込んだ熱の","color":"red"}','{"text":"層数×20の炎物理ダメージを自身に受ける","color":"red"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

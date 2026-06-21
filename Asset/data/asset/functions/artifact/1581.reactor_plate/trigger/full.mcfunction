@@ -14,12 +14,13 @@
 # 範囲
     execute at @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..7] add 17X.Hit
 
-# ダメージ(威力固定のため計算はなし)
+# ダメージ(威力固定のため計算はなし)防御、属性貫通
     data modify storage api: Argument.Damage set value 5600
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.BypassArmorDefense set value true
     function api:damage/modifier
+    data modify storage api: Argument.BypassModifier set value true
     execute as @e[type=#lib:living_without_player,tag=17X.Hit,tag=!Uninterferable,distance=..10] run function api:damage/
     function api:damage/reset
 
