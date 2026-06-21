@@ -15,7 +15,7 @@
     # data modify storage asset:object IsTicking set value
 
 # ID (int)
-    data modify storage asset:object ID set value 1160
+    data modify storage asset:object ID set value 1156
 # フィールド(オプション)
     data modify storage asset:object Field.Font.Front set value 4
     data modify storage asset:object Field.Font.Back set value 5
