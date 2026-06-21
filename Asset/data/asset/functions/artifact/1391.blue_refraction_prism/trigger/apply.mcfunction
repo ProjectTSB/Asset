@@ -20,6 +20,6 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.BypassModifier set value true
     execute as @p[tag=this] run function api:damage/modifier
-    data modify storage api: Argument.BypassModifier set value true
+    data modify storage api: Argument.BypassModifier set value false
     function api:damage/
     function api:damage/reset
