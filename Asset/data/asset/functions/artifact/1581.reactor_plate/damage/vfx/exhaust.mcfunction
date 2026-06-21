@@ -4,6 +4,7 @@
 #
 # @within function asset:artifact/1581.reactor_plate/damage/dis_equip/main
 
+
 # 演出
     playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1 0.8
     particle minecraft:cloud ~ ~1 ~ 0.15 0.15 0.15 0.08 15 normal
