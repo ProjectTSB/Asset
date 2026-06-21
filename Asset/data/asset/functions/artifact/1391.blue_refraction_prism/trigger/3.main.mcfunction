@@ -26,5 +26,4 @@
 
 # リセット
     data remove storage asset:temp Temp
-    scoreboard players reset $CurrentTick Temporary
     tag @e[type=#lib:living_without_player,tag=Target,distance=..64] remove Target
