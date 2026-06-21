@@ -5,19 +5,9 @@
 # @within function asset:artifact/1581.reactor_plate/trigger/crit
 
 
-# --- 【効果音（小規模・戦術核）】 ---
-# 1. 爆発音（少し低めにして重みを出し、空気を震わせる）
-    playsound minecraft:entity.generic.explode player @a ~ ~ ~ 2.0 0.8
-
-# 2. ドラゴンファイヤーボールの着弾音（炎が周囲に吹き荒れる「ゴォォッ！」という熱の音）
-    playsound minecraft:entity.dragon_fireball.explode player @a ~ ~ ~ 2.0 1.0
-
-# --- 【パーティクル（小規模・戦術核）】 ---
-# 1. 閃光（核特有の、爆発直前の一瞬の強烈な光）
-    particle minecraft:flash ~ ~1 ~ 0 0 0 0 1 normal
-
-# 2. 爆発のコア（中心に発生する強烈な爆風）
-    particle minecraft:explosion_emitter ~ ~1 ~ 0.5 0.5 0.5 0 1 normal
-
-# 3. 放射状に広がる爆炎（自身を中心に高速で散る炎）
-    particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.5 100 normal
+    playsound minecraft:entity.dragon_fireball.explode player @a ~ ~ ~ 1 1.5
+    playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 1 0.8
+    particle minecraft:large_smoke ~ ~1 ~ 1 1 1 0.05 50 normal
+    particle minecraft:flame ~ ~1 ~ 1 0.5 1 0.2 100
+    particle minecraft:large_smoke ~ ~1 ~ 1 1 1 0.05 30
+    particle minecraft:lava ~ ~1 ~ 0.5 0.5 0.5 1 10

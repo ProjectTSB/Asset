@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 377
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"臨界","color":"#ffd712"}'
+    data modify storage asset:effect Name set value '{"text":"臨界","color":"#B52400"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text":"リアクタープレートで攻撃する度に付与され累積する(最大10層)"}','{"text":"リアクタープレートの出力が上がる、とても不安定な状態"}','{"text":"ダメージを受けると暴発し、スタック数×20の炎物理ダメージを自身に受ける","color":"red"}','{"text":"ホットバーからリアクタープレートを外すことで排熱される","color":"gray"}']
 # 効果時間 (int) (default = API || error)
     #data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
