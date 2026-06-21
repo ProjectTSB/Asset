@@ -8,7 +8,9 @@
     function asset:artifact/common/use/mainhand
 
 # 演出
-    playsound block.conduit.activate player @a ~ ~ ~ 0.7 1.5 0
+    #playsound block.conduit.activate player @a ~ ~ ~ 0.7 1.5 0
+    playsound ogg:block.bubble_column.upwards_ambient1 player @a ~ ~ ~ 2 0.8
+
 
 # 弾を5回召喚する
     execute anchored eyes positioned ^ ^-0.35 ^0.3 rotated ~ ~-5 run function asset:artifact/1556.bubble_spreader/trigger/summon_object
