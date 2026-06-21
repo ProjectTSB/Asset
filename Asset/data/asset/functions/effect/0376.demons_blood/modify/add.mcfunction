@@ -11,4 +11,4 @@
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/base/add
 # 最大体力-999%
-    attribute @s minecraft:generic.max_health modifier add f47ac10b-58cc-4372-a567-0e02b2c3d479 "17Y.Health" -9.99 multiply_base
+    attribute @s minecraft:generic.max_health modifier add f47ac10b-58cc-4372-a567-0e02b2c3d479 "17Y.Health" -0.999 multiply

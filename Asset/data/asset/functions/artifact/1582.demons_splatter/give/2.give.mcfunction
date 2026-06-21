@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"鬼神の返り血","color":"#8A0714"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"鬼神の怨嗟のこもった返り血","color":"white"}','{"text":"使用者に生命力と引き換えに圧倒的な力を与える","color":"white"}','[{"text":"攻撃+250%","color":"green"},{"text":"と","color":"white"},{"text":"最大体力-999%","color":"red"},{"text":"を30秒間得る","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"鬼神の怨嗟のこもった返り血","color":"white"}','{"text":"使用者に生命力と引き換えに圧倒的な力を与える","color":"white"}','[{"text":"攻撃+250%","color":"green"},{"text":"と","color":"white"},{"text":"最大体力-99.9%","color":"red"},{"text":"を30秒間得る","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
