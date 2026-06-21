@@ -3,7 +3,15 @@
 # 神器のメイン処理部
 #
 # @within function asset:artifact/1581.reactor_plate/trigger/2.check_condition
+#> Private
+# @private
+    #declare score_holder $17X.Stack
+    #declare score_holder $17X.Damage
 
+        # 使用時間取る
+        execute store result score $UseTime Temporary run data get storage api: Return.Effect.Field.Time
+    # 現在時間取る
+        execute store result score $NowTime Temporary run data get storage global Time
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
@@ -13,20 +21,24 @@
     data modify storage api: Argument.ID set value 377
     function api:entity/mob/effect/get/from_id
     execute if data storage asset:context Attack{Crit:true} if data storage api: Return.Effect run return run function asset:artifact/1581.reactor_plate/trigger/crit
+    execute if data storage api: Return.Effect store result score $17X.Stack Temporary run data get storage api: Return.Effect.Stack
+    execute unless data storage api: Return.Effect run scoreboard players set $17X.Stack Temporary 0
+# ダメージ計算
+    scoreboard players set $17X.Damage Temporary 800
+    scoreboard players operation $17X.Stack Temporary *= $80 Const
+    scoreboard players operation $17X.Damage Temporary += $17X.Stack Temporary
+
 # 演出
     execute at @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1581.reactor_plate/trigger/vfx/normal
-#
-
-
-
-
 # ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 500..550
+    execute store result storage api: Argument.Damage float 1 run scoreboard players get $17X.Damage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
     execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
     function api:damage/reset
+    scoreboard players reset $17X.Stack Temporary
+    scoreboard players reset $17X.Damage Temporary
 # 効果付与
     data modify storage api: Argument.ID set value 377
     data modify storage api: Argument.Duration set value 300
