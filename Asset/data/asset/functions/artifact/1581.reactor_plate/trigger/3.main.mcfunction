@@ -15,6 +15,18 @@
     execute if data storage asset:context Attack{Crit:true} if data storage api: Return.Effect run return run function asset:artifact/1581.reactor_plate/trigger/crit
 # 演出
     execute at @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function asset:artifact/1581.reactor_plate/trigger/vfx/normal
+#
+
+
+
+
+# ダメージ
+    execute store result storage api: Argument.Damage float 1 run random value 500..550
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
+    function api:damage/reset
 # 効果付与
     data modify storage api: Argument.ID set value 377
     data modify storage api: Argument.Duration set value 300
@@ -24,10 +36,3 @@
     data modify storage api: Argument.FieldOverride.Amount set value 2.5d
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
-# ダメージ
-    execute store result storage api: Argument.Damage float 1 run random value 500..550
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "Fire"
-    function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
-    function api:damage/reset
