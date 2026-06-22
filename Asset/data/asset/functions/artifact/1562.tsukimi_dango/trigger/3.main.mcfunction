@@ -14,6 +14,7 @@
     #declare score_holder $Max
     #declare score_holder $All
     #declare score_holder $Exclude
+    #declare score_holder $New
 
 # 演出
     playsound ogg:random.levelup player @a ~ ~ ~ 1 2
@@ -38,6 +39,10 @@
 # (全体バリア量 - この神器のバリア)のN%をバリアとする
     execute store result storage api: Argument.FieldOverride.Barrier double 0.000333 run scoreboard players operation $All Temporary < $Max Temporary
 
+# 既存のこの神器のバリア量未満ならバリア量を0扱いにする
+    execute store result score $New Temporary run data get storage api: Argument.FieldOverride.Barrier 1000
+    execute if score $New Temporary < $Exclude Temporary run data modify storage api: Argument.FieldOverride.Barrier set value 0d
+
 # 付与
     data modify storage api: Argument.ID set value 371
     data modify storage api: Argument.Duration set value 600
@@ -48,3 +53,4 @@
     scoreboard players reset $Max Temporary
     scoreboard players reset $All Temporary
     scoreboard players reset $Exclude Temporary
+    scoreboard players reset $New Temporary
