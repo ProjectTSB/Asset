@@ -17,4 +17,4 @@
 # ID (int)
     data modify storage asset:object ID set value 1156
 # フィールド(オプション)
-    data modify storage asset:object Field.Font set value 2
+    data modify storage asset:object Field.Font set value 1
