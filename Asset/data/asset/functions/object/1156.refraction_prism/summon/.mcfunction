@@ -5,4 +5,4 @@
 # @within asset:object/alias/1156/summon
 
 # 元となるEntityを召喚する
-    function asset:object/1156.refraction_prism/summon/m with storage asset:context this.Font
+    function asset:object/1156.refraction_prism/summon/m with storage asset:context this
