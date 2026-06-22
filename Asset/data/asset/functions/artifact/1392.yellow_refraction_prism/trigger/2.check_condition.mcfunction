@@ -10,5 +10,24 @@
     function asset:artifact/common/check_condition/hotbar
 # 他にアイテム等確認する場合はここに書く
 
+# CanUsedじゃないならreturn
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# バニラ攻撃ならreturn
+    execute if data storage asset:context Attack{IsVanilla:true} run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# DoTならreturn
+    execute if data storage asset:context Attack{IsDoT:true} run return fail
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# 雷属性ならreturn
+    execute if data storage asset:context Attack{ElementType:"Thunder"} run return fail
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# Victimがいなければreturn
+    execute unless entity @e[type=#lib:living_without_player,tag=Victim,distance=..64] run return fail
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1392.yellow_refraction_prism/trigger/3.main
