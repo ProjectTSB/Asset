@@ -13,8 +13,12 @@
 # 泡を包み込む水色のオーラ
     particle minecraft:dust_color_transition 0.18 0.45 0.78 1.5 1.0 1.0 1.0 ~ ~ ~ 0.5 0.5 0.5 0 3 normal @a
 # ポコポコと弾ける泡の音
-    playsound minecraft:block.bubble_column.bubble_pop neutral @a ~ ~ ~ 0.5 1.5 0
-    playsound minecraft:block.bubble_column.bubble_pop neutral @a ~ ~ ~ 0.5 2.0 0
+    playsound minecraft:entity.item.pickup player @a ~ ~ ~ 1 1.6
+    playsound minecraft:entity.chicken.egg player @a ~ ~ ~ 1 1.3
+    playsound minecraft:entity.slime.jump player @a ~ ~ ~ 1 2.0
+    playsound minecraft:block.honey_block.break player @a ~ ~ ~ 1 2.0
+    playsound minecraft:entity.turtle.egg_crack player @a ~ ~ ~ 1 2.0
+    playsound minecraft:entity.experience_orb.pickup player @a ~ ~ ~ 0.2 1.5
 # 弾けた時の水しぶきの音
     playsound minecraft:entity.player.splash neutral @a ~ ~ ~ 0.4 2.0 0
 
