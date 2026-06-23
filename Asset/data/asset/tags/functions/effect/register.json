@@ -1,6 +1,9 @@
 {
     "values": [
         "asset:effect/0361.ouroboros_echo/_/register",
+        "asset:effect/0371.tsukimi/_/register",
+        "asset:effect/0355.heart_gap/_/register",
+        "asset:effect/0354.protection_of_courage/_/register",
         "asset:effect/0348.cool_feeling/_/register",
         "asset:effect/0356.dolphin_blessing/_/register",
         "asset:effect/0302.safety_check_complete/_/register",
