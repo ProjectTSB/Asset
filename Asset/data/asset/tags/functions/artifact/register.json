@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:artifact/1562.tsukimi_dango/register",
+        "asset:artifact/1453.frost_flake_bow/register",
+        "asset:artifact/1430.shield_of_fate/register",
         "asset:artifact/1534.drop_in_the_bucket/register",
         "asset:artifact/1365.shaved_ice_blue_hawaii/register",
         "asset:artifact/1366.shaved_ice_melon/register",
