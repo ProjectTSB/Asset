@@ -17,4 +17,7 @@
 # ID (int)
     data modify storage asset:object ID set value 1164
 # フィールド(オプション)
-    data modify storage asset:object Field.MPHeal set value 30
+    data modify storage asset:object Field.Stack set value 5
+    data modify storage asset:object Field.Amount set value 0.05
+    data modify storage asset:object Field.Duration set value 200
+    data modify storage asset:object Field.DecreaTime set value 40
