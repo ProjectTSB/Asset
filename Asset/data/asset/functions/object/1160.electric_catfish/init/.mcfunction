@@ -7,10 +7,6 @@
 # ブロックの中心にtp（召喚時にtpするとinitされない）
     execute align xz run tp @s ~0.5 ~ ~0.5
 
-# item_displayを設定（召喚時のtransformationは反映されない）
-    data modify entity @s transformation.scale set value [1.0f, 0.2f, 1.0f]
-    data modify entity @s transformation.translation set value [0.0f, 0.1f, 0.0f]
-
 # 演出
     execute align xz run particle poof ~0.5 ~0.5 ~0.5 0.1 0.1 0.1 0.05 5
 

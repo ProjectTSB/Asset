@@ -5,4 +5,4 @@
 # @within asset:object/alias/1160/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit", "Friend"], item:{id:"minecraft:dark_oak_planks", Count:1b}}
+    summon item_display ~ ~ ~ {Tags:["ObjectInit", "Friend"], item:{id:"minecraft:stick", Count:1b, tag:{CustomModelData:20628}}}
