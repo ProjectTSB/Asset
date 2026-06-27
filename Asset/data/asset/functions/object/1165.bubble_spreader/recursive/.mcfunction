@@ -9,6 +9,7 @@
 # 演出
     particle minecraft:dust_color_transition 0.18 0.25 0.58 1 1.0 1.0 1.0 ~ ~ ~ 0 0 0 0 1
     particle minecraft:crit ~ ~ ~ 0 0 0 0 1
+    #particle dolphin ~ ~ ~ 0.1 0.1 0.1 0 1 normal @a
     #particle minecraft:bubble_pop ~ ~ ~ 0.1 0.1 0.1 0 1
     #particle minecraft:dust_color_transition 0.18 0.45 0.78 1 1.0 1.0 1.0 ^ ^ ^0.25 0 0 0 0 1
     #particle minecraft:bubble_pop ^ ^ ^0.25 0.1 0.1 0.1 0 1
