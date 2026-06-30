@@ -11,11 +11,11 @@
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 108
 # 神器のベースアイテム
-    data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
+    data modify storage asset:artifact Item set value "minecraft:ender_eye"
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"バキューム・ホッパー","color":"yellow"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"吸引力の変わらないただ一つの掃除機。"}]','[{"text":"めんどくさがり屋のあなたへ！"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"前方のアイテム及び敵を吸い込む","color":"white"}','{"text":"吸引力の変わらないただ一つの掃除機。","color":"gray"}','{"text":"めんどくさがり屋のあなたへ！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -23,7 +23,7 @@
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
