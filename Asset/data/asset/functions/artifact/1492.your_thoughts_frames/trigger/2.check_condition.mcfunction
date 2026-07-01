@@ -9,6 +9,8 @@
 
 # IsDoT:trueならCanUsedを削除
     execute if entity @s[tag=CanUsed] if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+# バニラ攻撃の場合はCanUsedを削除
+    execute if data storage asset:context Attack{IsVanilla:1b} run tag @s remove CanUsed
 
 # 3.1416%の確率でCanUsedを残す(7%*51%*88%=3.1416%)
     execute unless predicate lib:random_pass_per/7 run tag @s remove CanUsed
