@@ -5,4 +5,4 @@
 # @within asset:object/alias/1168/summon
 
 # 元となるEntityを召喚する
-    summon text_display ~ ~ ~ {Tags:["ObjectInit"]}
+    summon marker ~ ~ ~ {Tags:["ObjectInit"]}
