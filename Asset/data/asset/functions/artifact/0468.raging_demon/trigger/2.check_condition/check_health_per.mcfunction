@@ -13,7 +13,7 @@
     execute store result score $Per Temporary run data get storage api: Return.HealthPer 100
 
 # 一定以下ならtagを付与
-    execute if score $Per Temporary matches ..5 run tag @s add D0.Target
+    execute unless score $Per Temporary matches 6.. run tag @s add D0.Target
 
 # リセット
     scoreboard players reset $Per Temporary
