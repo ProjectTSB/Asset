@@ -9,7 +9,7 @@
     #declare score_holder $UserID
 
 # 攻撃判定
-    data modify storage api: Argument.Damage set value 30.0f
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
