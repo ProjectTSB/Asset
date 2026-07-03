@@ -20,5 +20,5 @@
     data modify storage asset:object Field.Damage set value 150
     data modify storage asset:object Field.AdditionalMPHeal set value 10
     data modify storage asset:object Field.Speed set value 2
-    data modify storage asset:object Field.Range set value 20
+    data modify storage asset:object Field.Range set value 50
     data modify storage asset:object Field.UserID set value -1
