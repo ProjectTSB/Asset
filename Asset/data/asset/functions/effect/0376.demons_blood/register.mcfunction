@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"鬼神の血の呪い","color":"#8A0714"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"鬼神の血をその身に纏い、生命力を犠牲に圧倒的な力を得る","color":"white"}','{"text":"攻撃+250%","color":"green"}','{"text":"最大体力-99.9%","color":"red"}']
+    data modify storage asset:effect Description set value ['{"text":鬼神の返り血によって付与される","color":"white"}','{"text":"与ダメージが極端に上昇するが最大体力が極端に低下する","color":"red"}']
 # 効果時間 (int) (default = API || error)
     #data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
