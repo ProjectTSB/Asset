@@ -7,8 +7,6 @@
 # チャージ段階のEffect取得
     data modify storage api: Argument.ID set value 374
     function api:entity/mob/effect/get/from_id
-# チャージが完了しているならキャンセル
-    execute if data storage api: Return.Effect{Stack:3} run return 0
 # チャージ中ならば強制的にチャージ続行
     execute if data storage api: Return.Effect run return run function asset:artifact/1465.versatile_plasma/trigger/charge
 
