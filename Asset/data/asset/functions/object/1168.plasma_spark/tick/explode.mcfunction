@@ -20,7 +20,7 @@
 
 # 演出
     particle end_rod ~ ~ ~ 0 0 0 0 1
-    playsound entity.firework_rocket.twinkle player @a ~ ~ ~ 1 2
+    playsound entity.firework_rocket.twinkle player @a ~ ~ ~ 0.25 2
 
 # リセット
     scoreboard players reset $UserID
