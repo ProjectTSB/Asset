@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"勇気の鈴","color":"#FFFF7A"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"デバフ"},{"text":"[弱]","color":"#FFDD66"},{"text":"を全て解除し、バリアを10得る","color":"white"}]','{"text":"「おしえたでしょ、勇気がでる方法」","color":"gray","italic":true}','{"text":"「手の中の鈴をならすんだ」","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['[{"text":"デバフ"},{"text":"[弱]","color":"#FFDD66"},{"text":"を全て解除し、バリアを10得る","color":"white"}]','{"text":"「おしえたでしょ、勇気がでる方法","color":"gray","italic":true}','{"text":"　手の中の鈴をならすんだ」","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)
@@ -27,7 +27,7 @@
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"HPが60%以下"}'
+    data modify storage asset:artifact Condition set value '{"text":"体力が60%以下"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.Damage set value [0,0]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)

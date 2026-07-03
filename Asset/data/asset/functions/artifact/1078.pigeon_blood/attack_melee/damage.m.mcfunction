@@ -45,7 +45,7 @@
         data modify storage api: Argument.AttackType set value "Physical"
         data modify storage api: Argument.ElementType set value "None"
         function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6,limit=1] run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6,limit=1] run function api:damage/
         function api:damage/reset
 # 共鳴攻撃
     function asset:artifact/1078.pigeon_blood/attack_melee/summon_resonance_attack

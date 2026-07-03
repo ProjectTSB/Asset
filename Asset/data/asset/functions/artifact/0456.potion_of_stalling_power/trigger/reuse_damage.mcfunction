@@ -9,8 +9,7 @@
     playsound minecraft:entity.evoker.prepare_summon player @a
 
 # 最大体力に比例した固定ダメージを受ける
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage double 0.2 run data get storage api: Return.MaxHealth
+    execute store result storage api: Argument.Damage double 0.2 run attribute @s generic.max_health get
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.FixedDamage set value true
     data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sは速度の代償を払った","with":[{"selector":"@s"}]}]'

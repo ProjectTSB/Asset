@@ -21,7 +21,7 @@
 
     function api:modifier/heal/get
     function api:modifier/receive_heal/get
-    function api:modifier/mp_regen/get
+    function api:modifier/mp_heal/get
     function api:modifier/fall_resistance/get
 
 # 表示用に諸々データ処理
@@ -45,7 +45,7 @@
 
     function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/other_modifier.m {Type:"Heal",IsReverse:false}
     function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/other_modifier.m {Type:"ReceiveHeal",IsReverse:false}
-    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/other_modifier.m {Type:"MPRegen",IsReverse:false}
+    function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/other_modifier.m {Type:"MPHeal",IsReverse:false}
     function asset:artifact/0001.book_of_all-seeing/trigger/see_player/calc/other_modifier.m {Type:"FallResistance",IsReverse:true}
 
     function asset:artifact/0001.book_of_all-seeing/trigger/common/construct_effect_messages/
@@ -60,6 +60,6 @@
     tellraw @p[tag=this] [{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Magic","interpret":true},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.None","interpret":true},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.Defense.Magic.None","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Magic","interpret":true},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Fire","interpret":true},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.Defense.Magic.Fire","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Magic","interpret":true},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Water","interpret":true},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.Defense.Magic.Water","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Magic","interpret":true},{"storage":"global","nbt":"Icon.FrameWhite","interpret":true},{"storage":"global","nbt":"Icon.Attack.Thunder","interpret":true},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.Defense.Magic.Thunder","interpret":true,"font":"default"}]
     tellraw @p[tag=this] {"text":"","extra":[{"text":"\u0002","font":"space"},{"text":"◆"},{"text":"\u0002","font":"space"},{"text":"その他補正"}]}
     tellraw @p[tag=this] [{"text":"与回復量"},{"text":"\u0005","font":"space"},{"storage":"asset:temp","nbt":"01.Heal","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"text":"被回復量"},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.ReceiveHeal","interpret":true,"font":"default"}]
-    tellraw @p[tag=this] [{"text":"MP回復量\uE004"},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.MPRegen","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"text":"落下耐性"},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.FallResistance","interpret":true,"font":"default"}]
+    tellraw @p[tag=this] [{"text":"MP回復量\uE004"},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.MPHeal","interpret":true,"font":"default"},{"text":"\u0002","font":"space"},{"text":"|","font":"default"},{"text":"\u0002","font":"space"},{"text":"落下耐性"},{"text":"\u0002","font":"space"},{"storage":"asset:temp","nbt":"01.FallResistance","interpret":true,"font":"default"}]
     tellraw @p[tag=this] {"text":"","extra":[{"text":"\u0002","font":"space"},{"text":"◆"},{"text":"\u0002","font":"space"},{"text":"エフェクト"}]}
     tellraw @p[tag=this] {"storage":"asset:temp","nbt":"01.EffectMessages[]","interpret":true,"separator":"\n"}

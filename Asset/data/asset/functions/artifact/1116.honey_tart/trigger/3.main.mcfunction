@@ -15,5 +15,7 @@
 
 # エフェクトを付与
     data modify storage api: Argument.ID set value 270
+    data modify storage api: Argument.Duration set value 200
+    data modify storage api: Argument.FieldOverride.Heal set value 1.5
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

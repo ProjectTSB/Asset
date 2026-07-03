@@ -18,9 +18,9 @@
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
 # ダメージ
-    execute as @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..5,limit=1] at @s run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=LandingTarget,tag=!Uninterferable,distance=..5,limit=1] at @s run function api:damage/
 # リセット
     function api:damage/reset
 
 # 着弾タグを消す
-    tag @e[type=#lib:living,type=!player,tag=LandingTarget,tag=!Uninterferable,distance=..5,limit=1] remove LandingTarget
+    tag @e[type=#lib:living_without_player,tag=LandingTarget,tag=!Uninterferable,distance=..5,limit=1] remove LandingTarget

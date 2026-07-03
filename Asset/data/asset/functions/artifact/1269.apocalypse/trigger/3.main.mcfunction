@@ -18,7 +18,7 @@
     execute store result score $Z9.Stack Temporary run data get storage api: Return.Effect.Stack
 
 # 演出
-    execute positioned as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
+    execute positioned as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] rotated ~ 0 positioned ~ ~0.2 ~ run function asset:artifact/1269.apocalypse/trigger/vfx/
 
 # スタック毎のダメージ設定
     execute if score $Z9.Stack Temporary matches 1 run scoreboard players set $Damage Temporary 2200
@@ -35,7 +35,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..10] run function api:damage/
     function api:damage/reset
 
 # バフ解除

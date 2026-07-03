@@ -5,12 +5,17 @@
 # @within function asset:object/2248.clock_thunder/tick/
 
 # 演出
-    particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 100
+    particle dust 1 1 0 1 ~ ~5 ~ 0.1 5 0.1 0 20
     particle minecraft:explosion ~ ~ ~ 0.3 0 0.3 0 10
     particle minecraft:large_smoke ~ ~ ~ 0 0 0 0.4 10
 
     playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 0.2 2
     playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 0.2 0.5
+
+# 演出用Object
+    data modify storage api: Argument.ID set value 2257
+    data modify storage api: Argument.FieldOverride.Scale set value 5f
+    function api:object/summon
 
 # ダメージ範囲を円柱にする
     data modify storage lib: Argument.BoundingCylinder.Radius set value 2.0d

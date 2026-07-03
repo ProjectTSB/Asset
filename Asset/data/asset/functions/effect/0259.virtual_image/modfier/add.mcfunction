@@ -5,7 +5,4 @@
 # @within function asset:effect/0259.virtual_image/given/
 
 # 最大体力+16%
-    data modify storage api: Argument.UUID set value [I;1,3,259,0]
-    data modify storage api: Argument.Amount set value 0.16
-    data modify storage api: Argument.Operation set value "multiply"
-    function api:modifier/max_health/add
+    attribute @s generic.max_health modifier add 00000001-0000-0003-0000-010300000000 "259.MaxHealth" 0.16 multiply

@@ -60,7 +60,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
-    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"max_health",Amount:0.10d,Operation:"multiply_base"}]
+    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"generic.max_health",Amount:0.10d,Operation:"multiply_base"}]
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)

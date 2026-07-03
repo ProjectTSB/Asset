@@ -29,5 +29,5 @@
     tag @s remove AI.Opening
 
 # 地面に着いていない時、落下スキルを発動
-    execute if block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set @s AI.Tick 0
-    execute if block ~ ~-0.5 ~ #lib:no_collision run tag @s add AI.Skill91
+    execute if block ~ ~-0.5 ~ #lib:no_collision/ run scoreboard players set @s AI.Tick 0
+    execute if block ~ ~-0.5 ~ #lib:no_collision/ run tag @s add AI.Skill91

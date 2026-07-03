@@ -17,7 +17,7 @@
 # ターゲット選定
 # Attackerと周囲の敵5体
     tag @e[type=#lib:living,tag=Attacker,distance=..32] add Target
-    tag @e[type=#lib:living,tag=Enemy,tag=!Attacker,tag=!Uninterferable,distance=..16,sort=nearest,limit=5] add Target
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Attacker,tag=!Uninterferable,distance=..16,sort=nearest,limit=5] add Target
 
 # 演出
     execute positioned ~ ~0.2 ~ rotated ~ 0 run function asset:artifact/1055.compass_of_sea_abyss/trigger/vfx_compass

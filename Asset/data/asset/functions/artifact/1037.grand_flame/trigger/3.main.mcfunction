@@ -28,6 +28,7 @@
 
 # Object召喚
     data modify storage api: Argument.ID set value 1041
+    data modify storage api: Argument.FieldOverride.Tick set value 100
     data modify storage api: Argument.FieldOverride.Motion set value 1.5
     execute store result storage api: Argument.FieldOverride.Damage int 1 run scoreboard players get $Damage Temporary
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

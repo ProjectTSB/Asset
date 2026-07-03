@@ -1,6 +1,12 @@
 #> asset:mob/0038.laser_eye/register
 # @within asset:mob/alias/38/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+    
 # ID (int)
     data modify storage asset:mob ID set value 38
 # Type (string) Wikiを参照
@@ -38,7 +44,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    data modify storage asset:mob Speed set value 0
+    data modify storage asset:mob Speed set value 0.21
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 0
 # ノックバック耐性 (double) (オプション)
@@ -60,3 +66,7 @@
 
 # 存在時間
     data modify storage asset:mob Field.LifeTime set value 400
+
+# 追尾性能
+    # data modify storage asset:mob Field.Rotate set value 500
+    data modify storage asset:mob Field.RotatePower set value {Far:500,Near:250}

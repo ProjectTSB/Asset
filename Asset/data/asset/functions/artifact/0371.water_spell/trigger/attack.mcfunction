@@ -17,5 +17,5 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..1,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset

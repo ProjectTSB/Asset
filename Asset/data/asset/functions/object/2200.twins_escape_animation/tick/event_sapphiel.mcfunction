@@ -11,7 +11,7 @@
     execute if score @s General.Object.Tick matches 1 run function animated_java:twins_sapphiel/animations/42_escape/tween {duration:1, to_frame: 1}
 
 # 移動
-    execute if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+    execute if block ~ ~-0.1 ~ #lib:no_collision/ run tp @s ~ ~-0.1 ~
 
 # 演出
     execute if score @s General.Object.Tick matches 59 run playsound entity.phantom.flap hostile @a ~ ~ ~ 3 1.2

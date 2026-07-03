@@ -14,7 +14,7 @@
     particle dust 0.25 0.7 100000000 1.3 ~ ~ ~ 0.5 0.5 0.5 0 5 normal @a
 
 # ブロック接触判定
-    execute unless block ~ ~-1 ~ #lib:no_collision run tag @s add Landing
+    execute unless block ~ ~-1 ~ #lib:no_collision/ run tag @s add Landing
 
 # 下に落ちる
     execute if entity @s[tag=!Landing] run tp @s ~ ~-1 ~

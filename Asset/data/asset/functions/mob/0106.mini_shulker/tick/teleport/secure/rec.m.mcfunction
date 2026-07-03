@@ -5,7 +5,7 @@
 #   asset:mob/0106.mini_shulker/tick/teleport/secure/rec.m
 
 # 安全な壁ならTP候補に追加
-    $execute if block ~ ~ ~ #lib:no_collision unless block $(Direction) #lib:no_collision summon marker run function asset:mob/0106.mini_shulker/tick/teleport/secure/append
+    $execute if block ~ ~ ~ #lib:no_collision/ unless block $(Direction) #lib:no_collision/ summon marker run function asset:mob/0106.mini_shulker/tick/teleport/secure/append
 
 # RemainingRangeを減らす
     execute store result storage asset:temp 2Y.Secure.RemainingRange int 0.9999999999 run data get storage asset:temp 2Y.Secure.RemainingRange 1

@@ -28,7 +28,7 @@
         execute if score @s AK.EventTimer matches 72..121 if predicate api:global_vars/difficulty/min/2_hard at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/turn
         execute if score @s AK.EventTimer matches 72..121 if predicate api:global_vars/difficulty/min/3_blessless at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/turn
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 155.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.12 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 155.. if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.12 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 171.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_laser/end

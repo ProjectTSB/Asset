@@ -13,9 +13,9 @@
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=0] run function asset:object/1091.flame_boomerang/hit_entity/damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] run function asset:object/1091.flame_boomerang/hit_entity/damage
     function api:damage/reset
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=1091.TargetEntity,distance=..5] remove 1091.TargetEntity
+    tag @e[type=#lib:living_without_player,tag=1091.TargetEntity,distance=..5] remove 1091.TargetEntity

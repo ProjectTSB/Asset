@@ -9,7 +9,7 @@
     #declare score_holder $UserID
 
 # 範囲内のMobに再帰で壁貫通をしてないかチェック
-    execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..8] at @s facing entity @e[type=marker,tag=this,distance=..8.1] feet run function asset:object/1101.tnt/tick/damage/check_block
+    execute as @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..8] at @s facing entity @e[type=marker,tag=this,distance=..8.1] feet run function asset:object/1101.tnt/tick/damage/check_block
 
 # User特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
@@ -22,8 +22,8 @@
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=1101.Hit,distance=..8] remove 1101.Hit
-    tag @e[type=#lib:living,type=!player,tag=1101.AlreadyHit,distance=..8] remove 1101.AlreadyHit
+    tag @e[type=#lib:living_without_player,tag=1101.Hit,distance=..8] remove 1101.Hit
+    tag @e[type=#lib:living_without_player,tag=1101.AlreadyHit,distance=..8] remove 1101.AlreadyHit
 
 # 消滅
     kill @s

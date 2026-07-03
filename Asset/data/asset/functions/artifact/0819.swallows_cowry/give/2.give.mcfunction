@@ -50,10 +50,14 @@
     # data modify storage asset:artifact DisableCooldownMessage set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
     data modify storage asset:artifact Equipment.Effects set value [{ID:255,Visible:true,IsSetEffect:true}]
+# 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:fortune",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,817,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:69,Unbreakable:1b,Enchantments:[{id:"minecraft:fortune",lvl:1s}]}
 
 # 神器の入手用function
     function asset:artifact/common/give

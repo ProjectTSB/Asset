@@ -14,7 +14,7 @@
         execute if score $RecursiveLimit Temporary matches 20.. run return fail
 
     # 0.5ブロック先がブロックならreturn
-        execute unless block ^ ^ ^0.5 #lib:no_collision run return fail
+        execute unless block ^ ^ ^0.5 #lib:no_collision/ run return fail
 
     # 自身と接触したら自身にtag付与、そしてstorage設定してreturn
         execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] run tag @s add 1015.Target

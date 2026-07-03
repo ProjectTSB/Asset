@@ -12,3 +12,6 @@
 
 # パーティクル
     execute at @s anchored eyes positioned ^ ^ ^ run particle poof ~ ~-0.3 ~ 0 0 0 0.1 10
+
+# super.init
+    function asset:mob/super.init

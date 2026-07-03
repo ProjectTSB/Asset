@@ -26,7 +26,7 @@
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 
 # 地面で埋まっていた場合、再拡散する
-    execute at 0-0-0-0-0 unless block ~ ~ ~ #lib:no_collision run scoreboard players set $AX.Temp Temporary 1
+    execute at 0-0-0-0-0 unless block ~ ~ ~ #lib:no_collision/ run scoreboard players set $AX.Temp Temporary 1
 
 # 条件を満たしていればワープする
     execute unless score $AX.Temp Temporary matches 1 at 0-0-0-0-0 run tp @s ~ ~ ~ ~ ~

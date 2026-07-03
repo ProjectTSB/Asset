@@ -6,7 +6,7 @@
 
 # ループ処理
     scoreboard players set $2139.Temp Temporary 16
-    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set $2139.Temp Temporary -100
+    execute if block ~ ~ ~ #lib:no_collision/ unless block ~ ~-0.5 ~ #lib:no_collision/ run scoreboard players set $2139.Temp Temporary -100
     execute if score $2139.Temp Temporary matches 1.. run function asset:object/2139.louvert_fire_magic/init/loop
 
 # ループしてもダメだったらキル

@@ -34,4 +34,3 @@
 # リセット
     scoreboard players reset $Per Temporary
     scoreboard players reset $Count Temporary
-    kill @s

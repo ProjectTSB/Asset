@@ -58,7 +58,7 @@
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"heal",Amount:0.20d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.20d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_heal",Amount:0.20d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/base",Amount:-0.35d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Nyaptov", "Rumor"]

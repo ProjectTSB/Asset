@@ -30,7 +30,7 @@
     scoreboard players operation $Interval Temporary = @s General.Object.Tick
     scoreboard players operation $Interval Temporary %= $12 Const
     execute if score $Interval Temporary matches 0 run function api:damage/single_damage_session/open
-    execute if score $Interval Temporary matches 0 as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..4] at @s run function asset:object/1012.traffic_sign/tick/damage/
+    execute if score $Interval Temporary matches 0 as @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..4] at @s run function asset:object/1012.traffic_sign/tick/damage/
     execute if score $Interval Temporary matches 0 run function api:damage/single_damage_session/close
 
 # 3.25 秒経過したらキル

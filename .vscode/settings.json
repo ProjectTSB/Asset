@@ -1857,7 +1857,7 @@
                 },
                 {
                     "name": "id",
-                    "question": "ObjectのID",
+                    "question": "MobのID",
                     "pattern": "[1-9][0-9]*",
                     "patternErrorMessage": "数値のみが許されるよ"
                 }

@@ -16,10 +16,10 @@
 
 
 # 周囲に敵が居ない場合、銃にする
-    execute unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10] run scoreboard players set $Random Temporary 0
+    execute unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] run scoreboard players set $Random Temporary 0
 
 # 周囲に敵がいる場合剣にする
-    execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] run scoreboard players set $Random Temporary 1
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..5] run scoreboard players set $Random Temporary 1
 
 # スキル選択
     execute if score $Random Temporary matches 0 run tag @s add 1050.SkillGun

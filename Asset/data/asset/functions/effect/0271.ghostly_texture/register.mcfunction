@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"透明になり、ゆっくりと落ちるようになる","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 300
+    # data modify storage asset:effect Duration set value 300
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")

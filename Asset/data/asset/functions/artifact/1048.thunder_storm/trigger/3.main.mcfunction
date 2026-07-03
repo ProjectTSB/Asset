@@ -27,7 +27,7 @@
     summon marker ~ ~ ~ {Tags:["T4.Marker"]}
     execute anchored eyes run tp @e[type=marker,tag=T4.Marker,distance=..30,sort=nearest,limit=1] ^ ^ ^ ~ ~
     scoreboard players set $T4.Temp Temporary 64
-    execute as @e[type=marker,tag=T4.Marker,distance=..30,sort=nearest,limit=1] at @s positioned ^ ^ ^0.25 if block ^ ^ ^ #lib:no_collision run function asset:artifact/1048.thunder_storm/trigger/recursive
+    execute as @e[type=marker,tag=T4.Marker,distance=..30,sort=nearest,limit=1] at @s positioned ^ ^ ^0.25 if block ^ ^ ^ #lib:no_collision/ run function asset:artifact/1048.thunder_storm/trigger/recursive
 
 # Markerの位置で召喚
     data modify storage api: Argument.ID set value 1044

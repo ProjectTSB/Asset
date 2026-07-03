@@ -14,9 +14,9 @@
     execute unless data storage asset:context this{CannotMakeScaffoldTick:0} run return fail
 
 # 自身が空中にいるか
-    execute unless block ~ ~-1 ~ #lib:no_collision_without_fluid run return fail
-    execute unless block ~ ~-2 ~ #lib:no_collision_without_fluid run return fail
-    execute unless block ~ ~-3 ~ #lib:no_collision_without_fluid run return fail
+    execute unless block ~ ~-1 ~ #lib:no_collision/without_fluid run return fail
+    execute unless block ~ ~-2 ~ #lib:no_collision/without_fluid run return fail
+    execute unless block ~ ~-3 ~ #lib:no_collision/without_fluid run return fail
 
 # 成功
     return 1

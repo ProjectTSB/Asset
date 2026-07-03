@@ -5,4 +5,4 @@
 # @within function asset:mob/alias/263/detect_hit_block
 
 # 判定
-    execute unless block ~ ~ ~ #lib:no_collision run data modify storage asset:temp Projectile.IsHitBlock set value true
+    execute unless block ~ ~ ~ #lib:no_collision/ run data modify storage asset:temp Projectile.IsHitBlock set value true

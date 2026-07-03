@@ -5,4 +5,4 @@
 # @within asset:mob/0327.eclael/tick/**
 
 # プレイヤー方面に移動
-    execute at @s facing entity @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] feet positioned ^ ^ ^1 rotated ~ 0 positioned ^ ^ ^-1 rotated as @s if block ~ ~-0.1 ~ #lib:no_collision run function asset:mob/0327.eclael/tick/app.general/2.teleport
+    execute at @s facing entity @a[tag=!PlayerShouldInvulnerable,distance=..80,sort=nearest,limit=1] feet positioned ^ ^ ^1 rotated ~ 0 positioned ^ ^ ^-1 rotated as @s if block ~ ~-0.1 ~ #lib:no_collision/ run function asset:mob/0327.eclael/tick/app.general/2.teleport

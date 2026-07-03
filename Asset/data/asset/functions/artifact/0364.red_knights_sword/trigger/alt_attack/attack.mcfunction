@@ -27,7 +27,7 @@
     function api:entity/mob/effect/reset
 
 # ズーム兼ねて鈍足も付与
-    data modify storage api: Argument.ID set value 17
+    data modify storage api: Argument.ID set value 117
     data modify storage api: Argument.Stack set value 10
     data modify storage api: Argument.Duration set value 20
     function api:entity/mob/effect/give

@@ -8,8 +8,7 @@
     # ChargeCount取得
         scoreboard players operation $ChargeCount Temporary = @e[type=slime,tag=BE.EntityRoot,distance=..160,sort=nearest,limit=1] BE.Charge.Count
     # 最大HP取得
-        function api:modifier/max_health/get
-        execute store result score $MaxHealth Temporary run data get storage api: Return.MaxHealth 100
+        execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 100
     # ChargeCount（残った眷属の数）に応じてダメージを増加
     # 難易度によって倍率は変わる
     # 基本値50%、Normal：+20%、Hard：+40%、Blessless：+100%
