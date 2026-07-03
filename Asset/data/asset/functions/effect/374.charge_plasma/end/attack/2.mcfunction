@@ -15,4 +15,4 @@
     execute rotated ~30 ~ run function api:object/summon
 
 # 演出
-    playsound block.respawn_anchor.deplete player @a ~ ~ ~ 1.0 2.0
+    playsound block.respawn_anchor.deplete player @a ~ ~ ~ 2 2

@@ -11,3 +11,6 @@
     data modify storage api: Argument.ID set value 374
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    playsound block.iron_door.open player @a ~ ~ ~ 2 0.5
