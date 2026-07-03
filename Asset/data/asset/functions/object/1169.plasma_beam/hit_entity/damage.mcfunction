@@ -17,5 +17,9 @@
     function api:damage/
     function api:damage/reset
 
+# ノックバック
+    data modify storage lib: Argument.VectorMagnitude set value 0.75d
+    function lib:motion/looking
+
 # リセット
     scoreboard players reset $UserID
