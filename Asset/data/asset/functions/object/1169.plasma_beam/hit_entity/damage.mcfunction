@@ -18,8 +18,9 @@
     function api:damage/reset
 
 # ノックバック
-    data modify storage lib: Argument.VectorMagnitude set value 0.75d
-    function lib:motion/looking
+    data modify storage lib: Argument.KnockbackResist set value true
+    data modify storage lib: Argument.VectorMagnitude set value 3.5d
+    execute rotated ~ -30 run function lib:motion/looking
 
 # リセット
     scoreboard players reset $UserID
