@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:ender_eye"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text": "ヴァースティル・プラズマ"}'
+    data modify storage asset:artifact Name set value '{"text": "ヴァースティル・プラズマ", "color": "#D4FFBA"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text": "チャージ段階に応じて異なる方法で攻撃する。"}', '{"text": "チャージを2層重ねると25、3層重ねると追加で35のMPを消費する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -41,9 +41,9 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value "???"
 # MP消費量 (int)
-    # data modify storage asset:artifact MPCost set value 0
+    # data modify storage asset:artifact MPCost set value
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 0
+    # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     data modify storage asset:artifact MPHealWhenHit set value 10
 # 神器のクールダウン (int) (オプション)
