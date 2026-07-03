@@ -14,7 +14,7 @@
 
 # MPを取得
     function api:mp/get_current
-    execute store result score $MP Temporary run data get storage api: Return.CurrentMP 10
+    execute store result score $MP Temporary run data get storage api: Return.CurrentMP
 
 # Field.Chargeを+1
     execute store result storage asset:context this.Charge int 1 run scoreboard players add $Charge Temporary 1
