@@ -8,8 +8,8 @@
 # @within function asset:effect/374.charge_plasma/end/attack/**
     #declare score_holder $rec
 
-# 24回実行
-    scoreboard players set $rec Temporary 24
+# 36回実行
+    scoreboard players set $rec Temporary 36
 
 # 向いている方向に確定で一個だす
     data modify storage api: Argument.ID set value 1168
