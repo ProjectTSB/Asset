@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 374
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "チャージ・プラズマ"}'
+    data modify storage asset:effect Name set value '{"text": "チャージ・プラズマ", "color": "#D4FFBA"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "チャージ終了時、チャージ段階に応じて異なる攻撃を放つ"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 1
 # スタック (int) (default = API || 1)
