@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '[{"text":"『創","color":"#A6EFFF"},{"text":"想","color":"#A6EFFF"},{"text":"の","color":"#A6EFFF"},{"text":"額","color":"#A6EFFF"},{"text":"縁』","color":"#A6EFFF"}]'
+    data modify storage asset:artifact Name set value '[{"text":"『創","color":"#85DE77"},{"text":"想","color":"#7ED48B"},{"text":"の","color":"#77C8A5"},{"text":"額","color":"#72B8C5"},{"text":"縁』","color":"#72AAE6"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"付近の敵に攻撃を行う筆を召喚する。"}','{"text":"召喚者のMPが80%以上ある時、攻撃時に3.1416%でMPを120消費し大技を繰り出す"}','{"text":"大技では水属性範囲ダメージを与え、敵の水属性耐性を5秒の間-10%下げる"}','{"text":"「まだ喉元に噛みつく牙はある？」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"付近の敵に攻撃を行う筆を召喚する。"}','{"text":"召喚者のMPが80%以上ある時、攻撃時に3.1416%でMPを120消費し大技を繰り出す"}','{"text":"大技では水属性範囲ダメージを与え、敵の水属性耐性を5秒の間-10%下げる"}','{"text":"「込められた想いは永遠のもの。そう決まっているの」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
