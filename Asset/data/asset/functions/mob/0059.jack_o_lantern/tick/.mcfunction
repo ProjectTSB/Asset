@@ -17,6 +17,9 @@
 # クイズの時以外のみ表示する
     execute if entity @s[tag=!1N.DisableParticle] run particle falling_dust blue_terracotta ~ ~0.5 ~ 0.35 0 0.35 0 2 normal @a
 
+# Blessless以上の場合のみDPSチェックのカウントダウンを進める
+    execute if predicate api:global_vars/difficulty/min/3_blessless store result storage asset:context this.DPSCheck int 0.9999999999 run data get storage asset:context this.DPSCheck
+
 # スキル選択
     execute if entity @s[scores={General.Mob.Tick=0}] run function asset:mob/0059.jack_o_lantern/tick/skill_select
 

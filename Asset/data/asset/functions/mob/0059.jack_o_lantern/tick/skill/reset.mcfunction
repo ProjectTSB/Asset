@@ -17,6 +17,7 @@
     tag @s remove 1N.GiantPumpkin1.Right
     tag @s remove 1N.GiantPumpkin2
     tag @s remove 1N.GiantPumpkin2.LeftRotate
+    tag @s remove 1N.DPSCheck
     tag @s remove 1N.Missile
     tag @s remove 1N.PumpkinRain
 
