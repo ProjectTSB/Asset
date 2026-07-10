@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_chestplate"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"コロナ","color":"red"}'
+    data modify storage asset:artifact Name set value '{"text":"コロナ","color":"#DC143C"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃時に炎属性魔法攻撃の追撃を放つローブ。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"炎天下、空を見上げると、太陽が降ってきたんだ。","color":"#CD5C5C","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
