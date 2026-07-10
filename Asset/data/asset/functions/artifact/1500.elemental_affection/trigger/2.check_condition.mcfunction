@@ -10,4 +10,5 @@
     
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if data storage asset:context Damage{IsVanilla:1b} run tag @s remove CanUsed
+    execute if data storage asset:context Damage{ElementType:None} run tag @s remove CanUsed
     execute if entity @s[tag=CanUsed] run function asset:artifact/1500.elemental_affection/trigger/3.main

@@ -11,9 +11,9 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ファイアアフェクション","color":"red"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"火属性ダメージを受けるたびに、火耐性がアップする"}']
+    data modify storage asset:effect Description set value ['{"text":"火属性被ダメージが低下する"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 200
+    # data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
     data modify storage asset:effect Stack set value 1
 # 効果時間の操作方法 (default = API || "replace")

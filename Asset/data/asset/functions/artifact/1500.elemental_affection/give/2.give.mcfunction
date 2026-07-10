@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"エレメンタルアフェクション","color":"#7fff00"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火、水、雷属性の攻撃を受けた時、"}','{"text":"該当属性の耐性+2%、上限+60%"}']
+    data modify storage asset:artifact Lore set value ['{"text":"火、水、雷属性の攻撃を受けた時、"}','{"text":"10秒間該当属性の耐性+2%、最大60%"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value onDamage
+    data modify storage asset:artifact Trigger set value "onDamage"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

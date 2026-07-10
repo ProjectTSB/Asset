@@ -6,9 +6,9 @@
 #   asset:effect/0366.fire_affection/given/
 #   asset:effect/0366.fire_affection/re-given/
 
-# 火耐性+5%
+# 火耐性+2%
     data modify storage api: Argument.UUID set value [I;1,3,366,0]
     execute store result storage api: Argument.Amount double 0.02 run data get storage asset:context Stack
-    data modify storage api: Argument.Operation set value "multiply_base"
+    data modify storage api: Argument.Operation set value "multiply"
 # リセット
     function api:modifier/defense/fire/add
