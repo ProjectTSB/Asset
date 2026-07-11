@@ -15,12 +15,19 @@
 # 当然弾速が早い方が強いし、拡散は小さい方が良い
 
 # 調整用数値
-    data modify storage api: Argument.FieldOverride.Damage set value 30
-    data modify storage api: Argument.FieldOverride.Bullet set value 1
-    data modify storage api: Argument.FieldOverride.AddBullet set value 1
-    data modify storage api: Argument.FieldOverride.MaxBullet set value 60
-    data modify storage api: Argument.FieldOverride.Spread set value {Neutral:0.15,FullCharge:0.05}
-    data modify storage api: Argument.FieldOverride.Motion set value {Neutral:0.8,FullCharge:1.35}
+    # ダメージ
+        data modify storage api: Argument.FieldOverride.Damage set value 30
+    # 初期弾数
+        data modify storage api: Argument.FieldOverride.Bullet set value 1
+    # チャージ1tickにつき何発追加するか？
+        data modify storage api: Argument.FieldOverride.AddBullet set value 1
+    # 最大装填数
+        data modify storage api: Argument.FieldOverride.MaxBullet set value 60
+    # 雪玉の拡散
+        data modify storage api: Argument.FieldOverride.Spread set value {Neutral:1d,FullCharge:0.5d}
+        data modify storage api: Argument.FieldOverride.Distance set value {Neutral:2d,FullCharge:4d}
+    # 弾速
+        data modify storage api: Argument.FieldOverride.Motion set value {Neutral:1d,FullCharge:1.35d}
 
 # チャージ用Effect付与
     data modify storage api: Argument.ID set value 347

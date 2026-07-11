@@ -17,7 +17,7 @@
 
 # 演出
     particle item_snowball ^ ^-0.2 ^ 0 0 0 0.5 1 normal @a
-    playsound minecraft:entity.snowball.throw player @a ~ ~ ~ 0.6 0.65
+    playsound minecraft:entity.snowball.throw player @a ^ ^ ^0.2 0.8 0.65
 
 # 発射
     function asset:effect/0347.snowball_canon/tick/fire

@@ -12,10 +12,12 @@
 
 # 前方拡散
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
-    data modify storage lib: Argument.Distance set value 0.5
+    data modify storage lib: Argument.Distance set value 0.4
+    execute if data storage asset:context this{IsFullCharge:false} run data modify storage lib: Argument.Distance set from storage asset:context this.Distance.Neutral
+    execute if data storage asset:context this{IsFullCharge: true} run data modify storage lib: Argument.Distance set from storage asset:context this.Distance.FullCharge
     execute if data storage asset:context this{IsFullCharge:false} run data modify storage lib: Argument.Spread set from storage asset:context this.Spread.Neutral
     execute if data storage asset:context this{IsFullCharge: true} run data modify storage lib: Argument.Spread set from storage asset:context this.Spread.FullCharge
-    execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] run function lib:forward_spreader/circle
+    execute as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] positioned as @s run function lib:forward_spreader/circle
 
 # Object召喚
     data modify storage api: Argument.ID set value 1155
