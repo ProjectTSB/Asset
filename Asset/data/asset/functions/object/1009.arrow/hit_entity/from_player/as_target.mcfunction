@@ -9,6 +9,8 @@
     #declare score_holder $UserID
     #declare tag 1009.Player
 
+tellraw @a {"storage":"asset:context","nbt":"this"}
+
 # プレイヤー特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1009.Player
@@ -19,6 +21,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
+    execute if data storage asset:context this.Metadata run data modify storage api: Argument.Metadata set from storage asset:context this.Metadata
     execute if data storage asset:context this.AdditionalMPHeal run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 # modifier をかける
     execute as @a[tag=1009.Player] run function api:damage/modifier
