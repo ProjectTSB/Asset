@@ -14,5 +14,10 @@
     playsound item.trident.riptide_1 player @a ~ ~ ~ 1 1.8
     # particle flash ~ ~ ~ 0 0 0 0 1
 
+# 曲射用バフがあるかつ、上を向いているなら曲射
+    data modify storage api: Argument.ID set value 380
+    function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect if entity @s[x_rotation=-90..-35] run return run function asset:artifact/1307.yumeori/trigger/curved_shot
+
 # 何もなければ普通の矢を発射
     function asset:artifact/1307.yumeori/trigger/neutral_arrow
