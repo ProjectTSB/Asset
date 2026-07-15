@@ -9,8 +9,6 @@
     #declare score_holder $UserID
     #declare tag 1009.Player
 
-tellraw @a {"storage":"asset:context","nbt":"this"}
-
 # プレイヤー特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1009.Player
