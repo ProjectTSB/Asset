@@ -16,7 +16,7 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01] run function lib:spread_entity/
 
 # マーカーの位置で出来る限り地面に近づける
-    execute at @e[type=marker,tag=SpreadMarker,distance=..10] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/4.align_to_ground/
+    execute at @e[type=marker,tag=SpreadMarker,distance=..10] run function asset:object/1178.yumeori_falling_arrow_manager/tick/summon
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
