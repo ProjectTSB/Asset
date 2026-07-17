@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.spread_pos
+# @within function
+#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.spread_pos
+#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/3.no_target
 
 # 攻撃用Object召喚
     data modify storage api: Argument.ID set value 1179
