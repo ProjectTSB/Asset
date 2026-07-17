@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:leather_chestplate"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"エルヴス","color":"yellow"}'
+    data modify storage asset:artifact Name set value '{"text":"エルヴス","color":"#F0E68C"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃時に雷属性魔法攻撃の追撃を放つローブ。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"轟く雷鳴が闇を裂いた瞬間、微かな希望の灯がともった。","color":"#FAFAD2","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
