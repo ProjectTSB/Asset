@@ -1,10 +1,10 @@
-#> asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/3.spread_pos
+#> asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.spread_pos
 #
 #
 #
 # @within function
-#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.select_target
-#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/first/select_target
+#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/1.select_target.m
+#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/first/m
 
 #> Private
 # @private
