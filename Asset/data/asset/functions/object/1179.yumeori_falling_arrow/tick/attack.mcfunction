@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function asset:object/1179.yumeori_falling_arrow/tick/align_to_ground
+# @within function
+#   asset:object/1179.yumeori_falling_arrow/tick/align_to_ground
+#   asset:object/1179.yumeori_falling_arrow/tick/set_y/set
 
 #> Private
 # @private
