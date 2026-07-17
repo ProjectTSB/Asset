@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アビサルゾーン","color":"aqua"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃時に水属性魔法攻撃の追撃を放つローブ。"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ある日、荒れた海を見ると、巨大な目がこちらを見ていたんだ。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
