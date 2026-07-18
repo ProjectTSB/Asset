@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"極光弓 夢織","color":"#91f9ab"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"矢を3発命中させると曲射が可能になり"}','{"text":"その状態で上を向いて発射することで敵に矢の雨を降り注がせる"}','{"text":"オーロラの天使の持っていた弓","color":"gray"}','{"text":"その天衣の弦から放たれた矢は寒空を貫き降り注ぐ","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"矢を3発命中させると曲射が可能になり"}','{"text":"その状態で上を向いて発射すると敵に矢の雨を降り注がせる"}','{"text":"オーロラの天使の持っていた弓","color":"gray"}','{"text":"その天衣の弦から放たれた矢は寒空を貫き降り注ぐ","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
