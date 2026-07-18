@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"舞焔","color":"dark_red"},{"text":"-Phoenix-","color":"red"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"Phoenix -フェニックス-"}]','[{"text":"不死鳥と呼ばれ、火から自ら蘇る"}]','[{"text":"輪廻の外にある神鳥とされる"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"天候が晴れの時、ダメージが増加する"}','{"text":"時間が昼の時、ダメージが増加する"}','[{"text":"Phoenix -フェニックス-","color":"gray"}]','[{"text":"不死鳥と呼ばれ、火から自ら蘇る","color":"gray"}]','[{"text":"輪廻の外にある神鳥とされる","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"最大まで引き絞る"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [300,400]
+    data modify storage asset:artifact AttackInfo.Damage set value "300 / 350 / 400"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
