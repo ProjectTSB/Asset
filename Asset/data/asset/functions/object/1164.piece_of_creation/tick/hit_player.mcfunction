@@ -17,7 +17,7 @@
     data modify storage api: Argument.Duration set from storage asset:context this.Duration
     data modify storage api: Argument.Stack set from storage asset:context this.Stack
     data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Amount
-    data modify storage api: Argument.FieldOverride.DecreaInterval set from storage asset:context this.DecreaInterval
+    data modify storage api: Argument.FieldOverride.DecreaseInterval set from storage asset:context this.DecreaseInterval
     execute as @a[gamemode=!spectator,tag=!Death,dx=0,limit=1] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

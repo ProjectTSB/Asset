@@ -4,8 +4,8 @@
 #
 # @within function asset:effect/0373.longevity_your_thoughts/tick/
 
-# TickにDecreaIntervalをセット
-    data modify storage asset:context this.Tick set from storage asset:context this.DecreaInterval
+# TickにDecreaseIntervalをセット
+    data modify storage asset:context this.Tick set from storage asset:context this.DecreaseInterval
 
 # スタックを減らし効果量を更新
     # もしスタックが1より多いならスタックを減らし、効果を更新する

@@ -12,5 +12,5 @@
     data modify storage api: Argument.FieldOverride.Stack set value 5
     data modify storage api: Argument.FieldOverride.Amount set value 0.05d
     data modify storage api: Argument.FieldOverride.Duration set value 200
-    data modify storage api: Argument.FieldOverride.DecreaInterval set value 40
+    data modify storage api: Argument.FieldOverride.DecreaseInterval set value 40
     execute positioned ~ ~1 ~ run function api:object/summon

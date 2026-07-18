@@ -38,5 +38,5 @@
 # フィールド
     data modify storage asset:effect Field.UUID set value [I;1,3,373,0]
     data modify storage asset:effect Field.Amount set value 0.05d
-    data modify storage asset:effect Field.DecreaInterval set value 40
+    data modify storage asset:effect Field.DecreaseInterval set value 40
     data modify storage asset:effect Field.Tick set value 40
