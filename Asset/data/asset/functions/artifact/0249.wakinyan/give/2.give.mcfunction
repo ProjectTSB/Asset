@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"雷翔","color":"yellow"},{"text":"-Wakinyan-","color":"gold"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"Wakinyan -ワキンヤン-"}]','[{"text":"インディアンの間に古来より伝わる神鳥である"}]','[{"text":"雷の精霊の力で自在に雷を放つと云われる"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"天候が雨の時、ダメージが増加する"}','{"text":"天候が雷雨の時、ダメージが更に増加する"}','[{"text":"Wakinyan -ワキンヤン-","color":"gray"}]','[{"text":"インディアンの間に古来より伝わる神鳥である","color":"gray"}]','[{"text":"雷の精霊の力で自在に雷を放つと云われる","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     data modify storage asset:artifact Condition set value '{"text":"最大まで引き絞る"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [250,330]
+    data modify storage asset:artifact AttackInfo.Damage set value "250 / 290 / 330"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
