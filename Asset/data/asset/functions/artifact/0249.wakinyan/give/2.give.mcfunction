@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"雷翔","color":"yellow"},{"text":"-Wakinyan-","color":"gold"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"天候が雨の時、ダメージがアップする"}','{"text":"天候が雷雨の時、ダメージが更にアップする"}','[{"text":"Wakinyan -ワキンヤン-","color":"gray"}]','[{"text":"インディアンの間に古来より伝わる神鳥である","color":"gray"}]','[{"text":"雷の精霊の力で自在に雷を放つと云われる","color":"gray"}]']
+    data modify storage asset:artifact Lore set value ['{"text":"天候が雨の時、ダメージが増加する"}','{"text":"天候が雷雨の時、ダメージが更に増加する"}','[{"text":"Wakinyan -ワキンヤン-","color":"gray"}]','[{"text":"インディアンの間に古来より伝わる神鳥である","color":"gray"}]','[{"text":"雷の精霊の力で自在に雷を放つと云われる","color":"gray"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
