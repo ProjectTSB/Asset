@@ -22,6 +22,10 @@
     data modify storage api: Argument.FieldOverride.Color set value "Pink"
     execute rotated ~ 90 run function api:object/summon
 
+    #data modify storage api: Argument.ID set value 2257
+    #data modify storage api: Argument.FieldOverride.Scale set value 4f
+    #execute rotated ~ 90 run function api:object/summon
+
 # どうせなら縦に広い判定をとっておく
 
 # ダメージ
