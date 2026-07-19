@@ -16,6 +16,12 @@
     playsound entity.evoker.prepare_summon neutral @a ~ ~ ~ 0.8 2
     execute rotated ~ -90 run function asset:object/1179.yumeori_falling_arrow/tick/vfx
 
+# 演出用Object召喚
+    data modify storage api: Argument.ID set value 1180
+    data modify storage api: Argument.FieldOverride.Scale set value [15f,15f,15f]
+    data modify storage api: Argument.FieldOverride.Color set value "Pink"
+    execute rotated ~ 90 run function api:object/summon
+
 # どうせなら縦に広い判定をとっておく
 
 # ダメージ

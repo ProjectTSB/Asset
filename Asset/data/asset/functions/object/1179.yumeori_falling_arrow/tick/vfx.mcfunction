@@ -56,25 +56,3 @@
     particle dust 100000000 100000000 1 2 ^0 ^ ^14.38776 0.1 0.1 0.1 0 2
     particle dust 100000000 100000000 1 2 ^0 ^ ^14.69388 0.1 0.1 0.1 0 2
     particle dust 100000000 100000000 1 2 ^0 ^ ^15 0.1 0.1 0.1 0 2
-    # [ImportKey]: NobwRALgngDgpmAXGAxgSwE4oDYIDRgCuhaAJkmAJykCGArDQCwAcA7ALQCMARnDe4wBspAMztuzThwAM05pW7SUNGgCZSqsAQB2NALYJkgMMUABJy1gYNDPoDOScCgD2hbRCSrpBFHDdwMDmAAbjTYhIbgAB5IXmBQMQC+CQQ2pGiE9oiqBLYQ1u6IsXDY2GgwtoacsilOeRCGsWi2AKIlZRXNAI6EodhQAMpWPuSIAGahFUkAukA_3
-    # 円 1
-    particle dust 100000000 1 100000000 2 ~0 ~ ~-2 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~0.61803 ~ ~-1.90211 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.17557 ~ ~-1.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.61803 ~ ~-1.17557 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.90211 ~ ~-0.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~2 ~ ~0 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.90211 ~ ~0.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.61803 ~ ~1.17557 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~1.17557 ~ ~1.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~0.61803 ~ ~1.90211 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~0 ~ ~2 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-0.61803 ~ ~1.90211 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.17557 ~ ~1.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.61803 ~ ~1.17557 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.90211 ~ ~0.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-2 ~ ~0 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.90211 ~ ~-0.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.61803 ~ ~-1.17557 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-1.17557 ~ ~-1.61803 0 0 0 0 1
-    particle dust 100000000 1 100000000 2 ~-0.61803 ~ ~-1.90211 0 0 0 0 1
