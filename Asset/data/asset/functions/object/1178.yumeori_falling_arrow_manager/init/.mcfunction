@@ -6,6 +6,3 @@
 
 # 向き調整
     tp @s ~ ~ ~ ~ ~
-
-# Rangeの半分の値を取得
-    execute store result storage asset:context this.HalfRange double 0.005 run data get storage asset:context this.Range 100

@@ -14,6 +14,7 @@
 # つまり、途中でブロックに当たると不発する
 # ただし、上向きの矢はentityに対してはヒット判定がない
 # 1発目は前方の敵を優先して狙うが、2発目以降は周囲のランダムな敵を狙う。要するに広域乱射
+# 使用位置の前方に巨大な箱型の判定があり、その中の敵1体に矢を落とす
 
 # 曲射のデータ設定
     # 1発辺りのダメージ
@@ -27,6 +28,14 @@
         data modify storage api: Argument.FieldOverride.Range set value 50
     # 弾速
         data modify storage api: Argument.FieldOverride.Speed set value 8
+
+    # 攻撃範囲(各辺の長さ)
+        data modify storage api: Argument.FieldOverride.AttackRange.X set value 8
+        data modify storage api: Argument.FieldOverride.AttackRange.Y set value 10
+        data modify storage api: Argument.FieldOverride.AttackRange.Z set value 10
+
+    # 1発目のxはすぐ前方の敵を優先するのでXを狭めにする
+        data modify storage api: Argument.FieldOverride.AttackRange.FirstX set value 4
 
     # 座標も入力しておく
         function api:data_get/pos
