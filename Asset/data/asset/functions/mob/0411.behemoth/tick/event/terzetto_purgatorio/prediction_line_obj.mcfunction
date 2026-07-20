@@ -2,7 +2,7 @@
 #
 # テルツェット・プルガトリオ
 #
-# @within asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/
+# @within function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/**
 
 # 対象決定
     tag @e[type=item_display,tag=2181.Line,tag=!2181.Line.End,sort=random,limit=1] add BF.Temp.Dummy
