@@ -20,10 +20,10 @@
     $execute rotated ~ 0 positioned ^ ^ ^$(Z) run function lib:rotatable_dxyz/m with storage lib: Args
 
 # DXYZのtag持ちの中のランダムな奴をターゲットにする
-    execute at @e[type=#lib:living_without_player,tag=DXYZ,tag=!Uninterferable,distance=..32,sort=random,limit=1] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.spread_pos
+    execute at @e[type=#lib:living_without_player,tag=DXYZ,distance=..32,sort=random,limit=1] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/2.spread_pos
 
 # DXYZがいなければもうなんでもいいから適当に降らす
-    execute unless entity @e[type=#lib:living_without_player,tag=DXYZ,tag=!Uninterferable,distance=..32,sort=random,limit=1] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/3.no_target
+    execute unless entity @e[type=#lib:living_without_player,tag=DXYZ,distance=..32,limit=1] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/3.no_target
 
 # リセット
-    tag @e[type=#lib:living_without_player,tag=DXYZ,tag=!Uninterferable,distance=..32] remove DXYZ
+    tag @e[type=#lib:living_without_player,tag=DXYZ,distance=..32] remove DXYZ
