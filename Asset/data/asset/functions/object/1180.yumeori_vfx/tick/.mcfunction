@@ -4,10 +4,6 @@
 #
 # @within asset:object/alias/1180/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
-    execute if score @s General.Object.Tick matches ..1 run return fail
-
 # 消滅処理
     execute unless data storage asset:context this.List[0] run function asset:object/1180.yumeori_vfx/tick/kill
 
