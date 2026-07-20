@@ -17,5 +17,12 @@
 # ID (int)
     data modify storage asset:object ID set value 1179
 # フィールド(オプション)
-    data modify storage asset:object Field.Delay set value 20
     data modify storage asset:object Field.RecursiveLimit set value 10
+
+# ダメージ等
+    data modify storage asset:object Field.Damage set value 1d
+    data modify storage asset:object Field.AdditionalMPHeal set value 1d
+    data modify storage asset:object Field.UserID set value -1
+
+# ディレイ
+    data modify storage asset:object Field.Delay set value 20

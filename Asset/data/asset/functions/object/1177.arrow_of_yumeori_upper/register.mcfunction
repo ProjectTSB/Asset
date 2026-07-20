@@ -17,4 +17,31 @@
 # ID (int)
     data modify storage asset:object ID set value 1177
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+
+# ダメージ等
+    data modify storage asset:object Field.Damage set value 1d
+    data modify storage asset:object Field.AdditionalMPHeal set value 1d
+    data modify storage asset:object Field.UserID set value -1
+
+# 本数
+    data modify storage asset:object Field.Count set value 6
+# ディレイ
+    data modify storage asset:object Field.Delay set value 20
+
+# 射程
+    data modify storage asset:object Field.Range set value 50
+# 弾速
+    data modify storage asset:object Field.Speed set value 8
+
+# 攻撃範囲(各辺の長さ)
+    data modify storage asset:object Field.AttackRange.X set value 8
+    data modify storage asset:object Field.AttackRange.Y set value 10
+    data modify storage asset:object Field.AttackRange.Z set value 10
+
+# 1発目のxの範囲
+    data modify storage asset:object Field.AttackRange.FirstX set value 4
+
+# 座標
+    data modify storage asset:object Field.Pos.X set value 0.0f
+    data modify storage asset:object Field.Pos.Y set value 0.0f
+    data modify storage asset:object Field.Pos.Z set value 0.0f
