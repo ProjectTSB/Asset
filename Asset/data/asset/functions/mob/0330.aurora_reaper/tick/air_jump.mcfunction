@@ -5,7 +5,7 @@
 # @within function asset:mob/0330.aurora_reaper/tick/
 
 # 演出
-    playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.1 1.9 0
+    playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.7 1.9 0
 
 # 演出用Object召喚
     data modify storage api: Argument.ID set value 2275
@@ -17,8 +17,6 @@
 # 近くのプレイヤーにmotion
     data modify storage lib: Argument.VectorMagnitude set value 1.0
     execute facing entity @p[gamemode=!spectator,distance=..64] eyes rotated ~ ~-13 run function lib:motion/
-
-
 
 # CT設定
     data modify storage asset:context this.MotionCT set value 15
