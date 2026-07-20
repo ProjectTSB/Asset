@@ -4,10 +4,6 @@
 #
 # @within asset:object/alias/1176/recursive
 
-#> Private
-# @private
-    #declare score_holder $Step
-
 # インクリメント
     execute store result storage asset:context this.StepCount int -1 run data get storage asset:context this.StepCount -1.00000000001
 
