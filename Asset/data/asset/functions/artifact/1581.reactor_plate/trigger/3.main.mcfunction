@@ -15,9 +15,9 @@
 # クリティカルかつスタックがあるなら特殊攻撃に分岐
     execute if data storage asset:context Attack{Crit:true} if data storage api: Return.Effect run return run function asset:artifact/1581.reactor_plate/trigger/crit
 
-# 基礎ダメージとバフ量指定(Damage+Baf*スタック数=与ダメ)
+# 基礎ダメージとバフ量指定(Damage+Buff*スタック数=与ダメ)
     scoreboard players set $17X.Damage Temporary 500
-    scoreboard players set $17X.Baf Temporary 50
+    scoreboard players set $17X.Buff Temporary 50
 
 # 計算処理
     function asset:artifact/1581.reactor_plate/trigger/calculate

@@ -13,9 +13,9 @@
 # 10層なら最大攻撃に
     execute if data storage api: Return.Effect{Stack:10} run return run function asset:artifact/1581.reactor_plate/trigger/full
 
-# 基礎ダメージとバフ量指定(Damage+Baf*スタック数=与ダメ)
+# 基礎ダメージとバフ量指定(Damage+Buff*スタック数=与ダメ)
     scoreboard players set $17X.Damage Temporary 0
-    scoreboard players set $17X.Baf Temporary 400
+    scoreboard players set $17X.Buff Temporary 400
 
 # 計算処理
     function asset:artifact/1581.reactor_plate/trigger/calculate

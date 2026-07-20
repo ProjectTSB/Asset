@@ -7,9 +7,9 @@
 
 # 特定 ID の Effect 情報を取得はcheckで済み
 
-# 基礎ダメージとバフ量指定(Damage+Baf*スタック数=与ダメ)
+# 基礎ダメージとバフ量指定(Damage+Buff*スタック数=与ダメ)
     scoreboard players set $17X.Damage Temporary 0
-    scoreboard players set $17X.Baf Temporary 20
+    scoreboard players set $17X.Buff Temporary 20
 # 計算処理
     function asset:artifact/1581.reactor_plate/trigger/calculate
 
