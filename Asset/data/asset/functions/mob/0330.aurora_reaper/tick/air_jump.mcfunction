@@ -6,7 +6,10 @@
 
 # 演出
     playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 0.1 1.9 0
-    execute positioned ~ ~-0.2 ~ rotated ~ 0 run function asset:mob/0330.aurora_reaper/tick/vfx
+
+# 演出用Object召喚
+    data modify storage api: Argument.ID set value 2275
+    execute positioned ~ ~-0.2 ~ run function api:object/summon
 
 # tpして向き合わせ
     tp @s ~ ~ ~ facing entity @p[gamemode=!spectator,distance=..64] eyes
