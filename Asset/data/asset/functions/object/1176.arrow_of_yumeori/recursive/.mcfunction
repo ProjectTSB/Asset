@@ -18,7 +18,6 @@
     particle dust 1 0.8 0.9 1.3 ~ ~ ~ 0 0 0 0 1
     particle dust 1 0.8 0.9 1.3 ^ ^ ^0.25 0 0 0 0 1
 
-
 # 演出 (仮)
     execute if data storage asset:context this{StepCount: 0} run function asset:object/1176.arrow_of_yumeori/recursive/vfx/yellow
     execute if data storage asset:context this{StepCount:10} run function asset:object/1176.arrow_of_yumeori/recursive/vfx/yellow
