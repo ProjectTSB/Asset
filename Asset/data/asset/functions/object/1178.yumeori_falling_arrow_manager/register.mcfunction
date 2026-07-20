@@ -19,4 +19,4 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Interval._ set value 2
     data modify storage asset:object Field.Interval.Max set value 2
-    data modify storage asset:object Field.FirstShot set value true
+    data modify storage asset:object Field.IsFirstShot set value true

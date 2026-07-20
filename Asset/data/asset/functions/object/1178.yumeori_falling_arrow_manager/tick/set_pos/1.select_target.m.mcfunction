@@ -9,6 +9,11 @@
 # rotatable_Dxyzで判定
 # 横は太め
     data modify storage lib: Args.dx set from storage asset:context this.AttackRange.X
+
+# 1発目に限り、Xを変える
+    execute if data storage asset:context this{IsFirstShot:true} run data modify storage lib: Args.dx set from storage asset:context this.AttackRange.FirstX
+    data modify storage asset:context this.IsFirstShot set value false
+
     data modify storage lib: Args.dy set from storage asset:context this.AttackRange.Y
     data modify storage lib: Args.dz set from storage asset:context this.AttackRange.Z
     data modify storage lib: Args.selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..32]"
