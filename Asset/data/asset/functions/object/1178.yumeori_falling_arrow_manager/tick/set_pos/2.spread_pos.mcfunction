@@ -3,7 +3,7 @@
 #
 #
 # @within function
-#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/1.select_target.m
+#   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/1.select_target
 #   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/first/m
 
 #> Private

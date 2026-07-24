@@ -1,4 +1,4 @@
-#> asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/1.select_target.m
+#> asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/1.select_target
 #
 #
 #
@@ -7,15 +7,11 @@
 #   asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/first/m
 
 # rotatable_dxyzで判定
-    data modify storage lib: Args.dx set from storage asset:context this.AttackRange.X
+    execute if data storage asset:context this{IsFirstShot: true} run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/dxyz/first.m with storage asset:context this.AttackRange
+    execute if data storage asset:context this{IsFirstShot:false} run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/dxyz/m with storage asset:context this.AttackRange
 
-# 1発目に限り、Xを変える
-    execute if data storage asset:context this{IsFirstShot:true} run data modify storage lib: Args.dx set from storage asset:context this.AttackRange.FirstX
-
-    data modify storage lib: Args.dy set from storage asset:context this.AttackRange.Y
-    data modify storage lib: Args.dz set from storage asset:context this.AttackRange.Z
-    data modify storage lib: Args.selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..32]"
-    $execute rotated ~ 0 positioned ^ ^ ^$(Z) run function lib:rotatable_dxyz/m with storage lib: Args
+# 1発目でDXYZが誰もいない時、本来の範囲で再ターゲッティングする
+    execute if data storage asset:context this{IsFirstShot: true} unless entity @e[type=#lib:living_without_player,tag=DXYZ,distance=..32] run function asset:object/1178.yumeori_falling_arrow_manager/tick/set_pos/dxyz/m with storage asset:context this.AttackRange
 
 # DXYZのtag持ちの中のランダムな奴をターゲットにする
     # 1発目の場合、nearestで判定する
