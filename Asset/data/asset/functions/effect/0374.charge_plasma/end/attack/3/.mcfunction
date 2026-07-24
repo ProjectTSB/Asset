@@ -15,5 +15,5 @@
     tag @e[tag=HitTarget,distance=..20] remove HitTarget
 
 # 演出
-    playsound ogg:block.vault.open_shutter master @a ~ ~ ~ 2 2
-    playsound ogg:block.vault.break master @a ~ ~ ~ 1 1
+    playsound ogg:block.vault.open_shutter player @a ~ ~ ~ 2 2
+    playsound ogg:block.vault.break player @a ~ ~ ~ 1 1
