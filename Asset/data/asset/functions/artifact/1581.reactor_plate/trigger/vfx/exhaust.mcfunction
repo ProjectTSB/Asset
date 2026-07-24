@@ -1,8 +1,8 @@
-#> asset:artifact/1581.reactor_plate/damage/vfx/exhaust
+#> asset:artifact/1581.reactor_plate/trigger/vfx/exhaust
 #
 # 排熱演出
 #
-# @within function asset:artifact/1581.reactor_plate/damage/dis_equip/main
+# @within function asset:artifact/1581.reactor_plate/trigger/dis_equip/main
 
 
 # 演出
