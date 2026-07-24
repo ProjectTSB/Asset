@@ -24,7 +24,7 @@
     playsound block.copper_bulb.turn_on player @a ~ ~ ~ 2 2
 
 # リセット
-    scoreboard players reset $UserID
+    scoreboard players reset $UserID Temporary
 
 # 消す
     kill @s

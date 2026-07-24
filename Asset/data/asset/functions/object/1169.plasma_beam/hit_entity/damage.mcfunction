@@ -23,4 +23,4 @@
     execute rotated ~ -30 run function lib:motion/looking
 
 # リセット
-    scoreboard players reset $UserID
+    scoreboard players reset $UserID Temporary
