@@ -1,8 +1,8 @@
-#> asset:effect/374.charge_plasma/end/attack/1/m
+#> asset:effect/0374.charge_plasma/end/attack/1/m
 #
 # Object 1168を召喚
 #
-# @within function asset:effect/374.charge_plasma/end/attack/1/rec
+# @within function asset:effect/0374.charge_plasma/end/attack/1/rec
 
     data modify storage api: Argument.ID set value 1168
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal

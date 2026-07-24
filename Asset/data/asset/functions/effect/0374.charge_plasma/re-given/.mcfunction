@@ -1,8 +1,8 @@
-#> asset:effect/374.charge_plasma/re-given/
+#> asset:effect/0374.charge_plasma/re-given/
 #
 # Effectが上書きされた時の処理
 #
-# @within function asset:effect/374.charge_plasma/_/re-given
+# @within function asset:effect/0374.charge_plasma/_/re-given
 
 #> Private
 # @private
@@ -20,8 +20,8 @@
     execute store result storage asset:context this.Charge int 1 run scoreboard players add $Charge Temporary 1
 
 # 時間に応じてバフをスタック
-    execute if data storage asset:context {Stack:1} if score $Charge Temporary matches 25.. if score $MP Temporary matches 25.. run function asset:effect/374.charge_plasma/re-given/charge/2
-    execute if data storage asset:context {Stack:2} if score $Charge Temporary matches 50.. if score $MP Temporary matches 35.. run function asset:effect/374.charge_plasma/re-given/charge/3
+    execute if data storage asset:context {Stack:1} if score $Charge Temporary matches 25.. if score $MP Temporary matches 25.. run function asset:effect/0374.charge_plasma/re-given/charge/2
+    execute if data storage asset:context {Stack:2} if score $Charge Temporary matches 50.. if score $MP Temporary matches 35.. run function asset:effect/0374.charge_plasma/re-given/charge/3
 
 # リセット
     scoreboard players reset $Charge

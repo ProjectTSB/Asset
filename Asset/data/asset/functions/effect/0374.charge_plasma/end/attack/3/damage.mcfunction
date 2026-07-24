@@ -1,8 +1,8 @@
-#> asset:effect/374.charge_plasma/end/attack/3/damage
+#> asset:effect/0374.charge_plasma/end/attack/3/damage
 #
 #
 #
-# @within function asset:effect/374.charge_plasma/end/attack/3/rec
+# @within function asset:effect/0374.charge_plasma/end/attack/3/rec
 
 
 # ヒット済みタグ

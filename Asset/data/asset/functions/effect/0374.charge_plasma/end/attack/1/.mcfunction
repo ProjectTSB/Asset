@@ -1,11 +1,11 @@
-#> asset:effect/374.charge_plasma/end/attack/1
+#> asset:effect/0374.charge_plasma/end/attack/1
 #
 # 攻撃（ため1段階）:スパーク
 #
-# @within function asset:effect/374.charge_plasma/end/**
+# @within function asset:effect/0374.charge_plasma/end/**
 
 #> Private
-# @within function asset:effect/374.charge_plasma/end/attack/**
+# @within function asset:effect/0374.charge_plasma/end/attack/**
     #declare score_holder $rec
 
 # 36回実行
@@ -18,7 +18,7 @@
     execute anchored eyes positioned ^ ^ ^2.5 run function api:object/summon
 
 # 本体
-    execute anchored eyes run function asset:effect/374.charge_plasma/end/attack/1/rec
+    execute anchored eyes run function asset:effect/0374.charge_plasma/end/attack/1/rec
 
 # リセット
     scoreboard players reset $rec

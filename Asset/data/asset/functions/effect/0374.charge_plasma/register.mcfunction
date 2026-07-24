@@ -1,8 +1,8 @@
-#> asset:effect/374.charge_plasma/register
+#> asset:effect/0374.charge_plasma/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/374.charge_plasma/_/register
+# @within function asset:effect/0374.charge_plasma/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true

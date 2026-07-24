@@ -1,8 +1,8 @@
-#> asset:effect/374.charge_plasma/end/attack/2
+#> asset:effect/0374.charge_plasma/end/attack/2
 #
 # プラズマ攻撃2: 拡散レーザー
 #
-# @within function asset:effect/374.charge_plasma/end/**
+# @within function asset:effect/0374.charge_plasma/end/**
 
 # 3発撃つ
     data modify storage api: Argument.ID set value 1169
