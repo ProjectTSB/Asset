@@ -5,7 +5,7 @@
 # @within function asset:artifact/1543.higan/trigger/3.main
 
 # 演出
-    function asset:artifact/1543.higan/trigger/slash
+    function asset:artifact/1543.higan/trigger/slash/
 
 # playsound
     playsound entity.glow_squid.squirt player @a ~ ~ ~ 1 2 0

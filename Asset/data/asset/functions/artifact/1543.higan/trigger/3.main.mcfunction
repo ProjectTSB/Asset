@@ -10,4 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute anchored eyes positioned ^ ^ ^1.5 positioned ~ ~-0.5 ~ run function asset:artifact/1543.higan/trigger/vfx
+    execute anchored eyes positioned ^ ^ ^1.5 positioned ~ ~-0.6 ~ run function asset:artifact/1543.higan/trigger/vfx
