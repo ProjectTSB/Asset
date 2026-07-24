@@ -15,10 +15,10 @@
 # left_rotationをはランダムに変える
     execute store result score $Random Temporary run random value 0..5
     # debug
-        # scoreboard players set $Random Temporary 4
-    # 右から水平
+        #scoreboard players set $Random Temporary 2
+    # 右から0°
         execute if score $Random Temporary matches 0 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.561f,-0.4305f,0.4305f,0.561f]
-    # 右下から
+    # 右下から(53°
         execute if score $Random Temporary matches 1 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.6686f,-0.2302f,0.5862f,0.3954f]
     # 右上から
         execute if score $Random Temporary matches 2 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.3954f,-0.5862f,0.2302f,0.6686f]
