@@ -5,7 +5,7 @@
 # @within function asset:artifact/0015.gasoline/melee/3.main
 
 
-# ここから先は神器側の効果の処理を書く
+# ここから演出
 # 粘度の高い液体が撒き散らされる音（溶岩を撒く音）
     playsound minecraft:item.bucket.empty_lava player @a ~ ~ ~ 0.8 0.8 0
 # 濁って重い「バシャッ」という水音（通常飛沫を低ピッチで）
