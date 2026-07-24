@@ -18,7 +18,7 @@
     execute anchored eyes positioned ^ ^ ^2.5 run function api:object/summon
 
 # 本体
-    execute anchored eyes run function asset:effect/0374.charge_plasma/end/attack/1/rec
+    execute anchored eyes positioned ^ ^ ^ run function asset:effect/0374.charge_plasma/end/attack/1/rec
 
 # リセット
     scoreboard players reset $rec

@@ -10,7 +10,7 @@
     #declare tag HitTarget
 
 # 再帰処理
-    execute anchored eyes run function asset:effect/0374.charge_plasma/end/attack/3/rec
+    execute anchored eyes positioned ^ ^ ^ run function asset:effect/0374.charge_plasma/end/attack/3/rec
     tag @s remove Hit
     tag @e[tag=HitTarget,distance=..20] remove HitTarget
 
