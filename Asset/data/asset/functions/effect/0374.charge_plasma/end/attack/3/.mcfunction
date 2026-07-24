@@ -12,7 +12,7 @@
 # 再帰処理
     execute anchored eyes positioned ^ ^ ^ run function asset:effect/0374.charge_plasma/end/attack/3/rec
     tag @s remove Hit
-    tag @e[tag=HitTarget,distance=..20] remove HitTarget
+    tag @e[type=#lib:living_without_player,tag=HitTarget,distance=..20] remove HitTarget
 
 # 演出
     playsound ogg:block.vault.open_shutter player @a ~ ~ ~ 2 2
