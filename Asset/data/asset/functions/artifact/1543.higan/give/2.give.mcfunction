@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"冥華刀 彼岸","color":"#b10d15"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s10回攻撃するたび、%2$sを得る","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"冥華","color":"#b10d15"}]}','{"translate":"-%1$s%2$s状態の時、%3$sを1秒長押しして離すことで","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"冥華","color":"#b10d15"},{"keybind":"key.use"}]}','{"translate":"%1$s前方の敵に対して強力な斬撃を放つ","color":"white","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"-%1$sこの攻撃を発動するたび、この戦闘の間","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s%2$s、%3$sを得る","color":"white","with":[{"text":"\\u0008","font":"space"},{"text":"この神器のダメージ+5%","color":"green"},{"text":"最大体力-10%","color":"red"}]}','{"translate":"%1$s(それぞれ最大%2$s、%3$s)","color":"white","with":[{"text":"\\u0008","font":"space"},{"text":"25%"},{"text":"-50%"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
