@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "ヴァースティル・プラズマ", "color": "#D4FFBA"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "チャージ段階に応じて異なる方法で攻撃する。"}', '{"text": "チャージを2層重ねると25、3層重ねると追加で35のMPを消費する。"}']
+    data modify storage asset:artifact Lore set value ['{"text": "チャージ段階に応じて異なる方法で攻撃する。"}', '{"text": "1段：短射程の小さい弾を、幅広めにばらまく"}', '{"text": "2段：三方位に、ノックバックするビームを撃つ"}', '{"text": "3段：貫通ビームを撃つ"}', '{"text": "チャージを2層重ねると25、3層重ねると追加で35のMPを消費する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [30, 300]
+    data modify storage asset:artifact AttackInfo.Damage set value "30 / 150 / 300"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
