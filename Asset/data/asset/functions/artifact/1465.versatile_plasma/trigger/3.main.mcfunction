@@ -9,7 +9,6 @@
 
 # Fieldを設定
     data modify storage api: Argument.FieldOverride.DamagePool set value [30, 150, 300]
-    data modify storage api: Argument.FieldOverride.Damage set value 0
     data modify storage api: Argument.FieldOverride.AttackType set value "Physical"
     data modify storage api: Argument.FieldOverride.ElementType set value "Thunder"
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
