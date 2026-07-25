@@ -36,4 +36,8 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.DamagePool set value []
+    data modify storage asset:effect Field.Damage set value 0
+    data modify storage asset:effect Field.AttackType set value ""
+    data modify storage asset:effect Field.ElementType set value ""
+    data modify storage asset:effect Field.AdditionalMPHeal set value 0

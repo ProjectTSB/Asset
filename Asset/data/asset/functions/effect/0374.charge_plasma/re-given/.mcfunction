@@ -9,6 +9,13 @@
     #declare score_holder $Charge
     #declare score_holder $MP
 
+# Field引き継ぎ
+    execute if data storage asset:context PreviousField.Damage run data modify storage asset:context this.Damage set from storage asset:context PreviousField.Damage
+    execute if data storage asset:context PreviousField.DamagePool run data modify storage asset:context this.DamagePool set from storage asset:context PreviousField.DamagePool
+    execute if data storage asset:context PreviousField.AdditionalMPHeal run data modify storage asset:context this.AdditionalMPHeal set from storage asset:context PreviousField.AdditionalMPHeal
+    execute if data storage asset:context PreviousField.AttackType run data modify storage asset:context this.AttackType set from storage asset:context PreviousField.AttackType
+    execute if data storage asset:context PreviousField.ElementType run data modify storage asset:context this.ElementType set from storage asset:context PreviousField.ElementType
+
 # チャージ時間を取得
     execute store result score $Charge Temporary run data get storage asset:context PreviousField.Charge
 

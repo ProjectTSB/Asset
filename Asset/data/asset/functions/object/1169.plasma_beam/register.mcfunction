@@ -17,8 +17,8 @@
 # ID (int)
     data modify storage asset:object ID set value 1169
 # フィールド(オプション)
-    data modify storage asset:object Field.Damage set value 150
-    data modify storage asset:object Field.AdditionalMPHeal set value 5
+    data modify storage asset:object Field.Damage set value 0
+    data modify storage asset:object Field.AdditionalMPHeal set value 0
     data modify storage asset:object Field.Speed set value 2
     data modify storage asset:object Field.Range set value 50
     data modify storage asset:object Field.UserID set value -1
