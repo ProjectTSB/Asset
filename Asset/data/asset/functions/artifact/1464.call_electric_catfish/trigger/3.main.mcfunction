@@ -9,6 +9,8 @@
 
 # ダメージ設定
     data modify storage api: Argument.FieldOverride.Damage set value 100.0f
+    data modify storage api: Argument.FieldOverride.AttackType set value "Physical"
+    data modify storage api: Argument.FieldOverride.ElementType set value "Thunder"
 
 # 本体召喚
     data modify storage api: Argument.ID set value 1160

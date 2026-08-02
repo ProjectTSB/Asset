@@ -6,8 +6,8 @@
 
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
+    data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
 
 # SteppedOnタグがついたEntityが対象
     execute as @e[tag=1160.SteppedOn,distance=..2,limit=1] run function api:damage/
@@ -17,6 +17,7 @@
     execute positioned ~-3.5 ~ ~-3.5 as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=7,dz=7] positioned ~ ~-0.2 ~ if entity @s[dx=7,dz=7] run function api:damage/
 
 # リセット
+    function api:damage/reset
     tag @e[tag=1160.SteppedOn,distance=..2,limit=1] remove 1160.SteppedOn
 
 # 0.5秒のクールダウン
