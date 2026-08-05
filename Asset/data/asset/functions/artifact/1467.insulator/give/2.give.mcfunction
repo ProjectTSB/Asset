@@ -61,11 +61,11 @@
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:-0.25d,Operation:"multiply"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:-0.25d,Operation:"multiply"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:-0.25d,Operation:"multiply"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/physical",Amount:0.10d,Operation:"multiply"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.10d,Operation:"multiply"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:-0.25d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/physical",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.10d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
