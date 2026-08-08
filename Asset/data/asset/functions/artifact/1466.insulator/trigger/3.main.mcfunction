@@ -8,4 +8,6 @@
     function asset:artifact/common/use/head
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1466.insulator
+    playsound block.beacon.deactivate player @a ~ ~ ~ 1.0 1.0
+    playsound block.chain.break player @a ~ ~ ~ 1.0 0.5
+    # (パーティクルはあえてナシ)
