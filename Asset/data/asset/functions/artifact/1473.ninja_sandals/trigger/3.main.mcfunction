@@ -8,4 +8,4 @@
     function asset:artifact/common/use/feet
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1473.ninja_sandals
+    playsound ogg:item.armor.equip_leather1 player @a ~ ~ ~ 1.0 1.0
