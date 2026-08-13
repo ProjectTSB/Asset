@@ -1,9 +1,9 @@
 {
     "values": [
-        "asset:artifact/1469.insulator/give/1.trigger",
-        "asset:artifact/1468.insulator/give/1.trigger",
-        "asset:artifact/1467.insulator/give/1.trigger",
-        "asset:artifact/1466.insulator/give/1.trigger",
+        "asset:artifact/1469.insulator_boots/give/1.trigger",
+        "asset:artifact/1468.insulator_leggings/give/1.trigger",
+        "asset:artifact/1467.insulator_chestplate/give/1.trigger",
+        "asset:artifact/1466.insulator_helmet/give/1.trigger",
         "asset:artifact/1252.fox_candle/give/1.trigger",
         "asset:artifact/1343.coffee_milk_pack/give/1.trigger",
         "asset:artifact/1342.fruit_milk_pack/give/1.trigger",
