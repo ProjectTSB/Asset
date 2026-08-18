@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text": "忍ビノ心得"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "物理攻撃 +5%", "color": "green"}','{"text": "忍ビヲ極メシ者、暗所ニテ更ナル力ヲ得ル。"}','{"text": "物理攻撃 +10%", "color": "green"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
