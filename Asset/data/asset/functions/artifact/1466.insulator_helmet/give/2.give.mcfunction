@@ -71,7 +71,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:16383998},Unbreakable:1b}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,Unbrekable:1b,display:{color:16383998},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give
