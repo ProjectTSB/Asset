@@ -68,7 +68,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Nyaptov", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    # data modify storage asset:artifact CustomNBT set value {}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:253,Unbreakable:1b,Trim:{material:"minecraft:iron",pattern:"tsb_armor:1470"}}
 
 # 神器の入手用function
     function asset:artifact/common/give
