@@ -28,5 +28,8 @@
     execute as @e[type=#lib:living_without_player,tag=Victim,distance=..5,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 
+# リセット
+    scoreboard players reset $Damage Temporary
+
 # 演出
     playsound item.trident.hit player @a ~ ~ ~ 2 1
