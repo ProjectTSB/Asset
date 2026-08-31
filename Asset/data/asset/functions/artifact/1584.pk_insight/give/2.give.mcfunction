@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text": "予言者の見極め"}'
+    data modify storage asset:artifact Name set value '{"text": "予言者の見極め", "color": "#deceeb"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text": "使用後、耐性と移動速度が大幅に下がり、カウントダウンが始まる。"}', '{"text": "3カウント後、0.5間だけ耐性が大きく上昇し、攻撃者に最大体力の35%分の割合ダメージを与える。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

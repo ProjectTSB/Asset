@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 386
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "予言者の見極め"}'
+    data modify storage asset:effect Name set value '{"text": "予言者の見極め", "color": "#deceeb"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "移動速度と耐性が極端に低下する"}', '{"text": "終了直前に、耐性が極端に上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 39
 # スタック (int) (default = API || 1)
