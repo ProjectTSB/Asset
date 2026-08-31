@@ -11,5 +11,9 @@
     data modify storage api: Argument.Damage set value 1500
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
-    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s anchored eyes positioned ^ ^ ^ run function asset:artifact/1585.sword_of_isolation/trigger/vfx
     function api:damage/reset
+
+# 演出
+    playsound item.trident.throw player @a ~ ~ ~ 1.0 0.8
+    playsound block.glass.break player @a ~ ~ ~ 1.0 0.7
