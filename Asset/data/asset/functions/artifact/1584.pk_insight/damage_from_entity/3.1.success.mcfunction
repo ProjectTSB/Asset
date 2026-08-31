@@ -18,3 +18,7 @@
     function api:damage/modifier
     execute if data storage api: Argument.Damage as @e[type=#lib:living,tag=Attacker,distance=..20] run function api:damage/
     function api:damage/reset
+
+# 演出
+    playsound entity.evoker.cast_spell player @a ~ ~ ~ 2.0 2.0
+    playsound entity.enderman.teleport player @a ~ ~ ~ 1.0 1.0

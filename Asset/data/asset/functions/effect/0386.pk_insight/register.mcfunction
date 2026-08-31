@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value []
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 35
+    data modify storage asset:effect Duration set value 39
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -36,4 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.Interval set value 10
