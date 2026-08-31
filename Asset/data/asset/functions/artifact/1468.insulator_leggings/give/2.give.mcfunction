@@ -64,8 +64,9 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/fire",Amount:-0.25d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:-0.25d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/thunder",Amount:-0.25d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/physical",Amount:0.10d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/base",Amount:0.10d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:7d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
