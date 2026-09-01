@@ -8,7 +8,8 @@
     function asset:artifact/common/check_condition/mainhand
 
 # 追加チェック：地面に立っていないならCanUsed剝奪
-    execute unless data entity @s[tag=CanUsed] {OnGround:1b} run tag @s remove CanUsed
+    function api:data_get/on_ground
+    execute unless data storage api: {OnGround:1b} run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1464.call_electric_catfish/trigger/3.main
