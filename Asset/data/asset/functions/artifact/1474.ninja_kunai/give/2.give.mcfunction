@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "忍びのクナイ"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "戦闘中、最初にこの神器で攻撃すると威力が上昇する。"}', '{"text": "また、背後からの攻撃でも威力が上昇する。"}']
+    data modify storage asset:artifact Lore set value ['{"text": "戦闘中、攻撃を受けずに最初にこの神器で攻撃すると威力が増加する。"}', '{"text": "また、背後からの攻撃でも威力が増加する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
