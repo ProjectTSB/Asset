@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "予言者の見極め", "color": "#deceeb"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "使用後、耐性と移動速度が大幅に下がり、カウントダウンが始まる。"}', '{"text": "3カウント後、0.5秒の間耐性が大きく上昇する。"}','{"text": "耐性上昇中にダメージを受けたとき、攻撃者にダメージを与える。"}','{"text": "通常: 最大体力の35%分の割合ダメージ", "color": "gray"}', '{"text": "天使: 1000ダメージ", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "使用後、耐性と移動速度が大幅に下がり、カウントダウンが始まる。"}', '{"text": "3カウント後、0.5秒の間耐性が大きく上昇する。"}','{"text": "耐性上昇中にダメージを受けたとき、攻撃者にダメージを与える。"}','{"text": "通常: 最大体力の35%分の割合ダメージ", "color": "gray"}', '{"text": "天使: 1000ダメージ", "color": "gray"}', '{"text": "この効果はオフハンドからこの神器を外した場合、不発になる。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
