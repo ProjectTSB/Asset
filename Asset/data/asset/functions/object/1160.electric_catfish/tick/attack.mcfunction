@@ -18,7 +18,7 @@
 
 # リセット
     function api:damage/reset
-    tag @e[tag=1160.SteppedOn,distance=..2,limit=1] remove 1160.SteppedOn
+    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,limit=1] remove 1160.SteppedOn
 
 # 0.5秒のクールダウン
     scoreboard players set @s 1160.Cooldown 10
