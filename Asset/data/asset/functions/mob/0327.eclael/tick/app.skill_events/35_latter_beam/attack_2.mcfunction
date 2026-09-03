@@ -37,13 +37,8 @@
     data modify storage api: Argument.FieldOverride set value {Item:{id:"stick"},Color:16777088,Frames:[20502,20503,20504,20505],Scale:[18f,5f,20f],Transformation:{left_rotation:{axis:[0,0,1],angle:-0.3f},right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]}}
     execute positioned ^ ^1.8 ^-3 run function api:object/summon
 
-# 弾召喚
-    data modify storage api: Argument.ID set value 2190
-    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Beam
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    data modify storage api: Argument.FieldOverride.Angle set value -0.3f
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute positioned ^ ^1 ^1 run function api:object/summon
+# 飛ぶ斬撃を召喚
+    execute positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.general/summon_object/slash_beam.m {Angle:-0.3f}
 
 # ライン斬撃
     execute if predicate api:global_vars/difficulty/min/3_blessless run function asset:mob/0327.eclael/tick/app.skill_events/35_latter_beam/attack_line_slash.m {Rotation:25,PosX:-2,PosY:0,PosZ:0,IsGreen:true}

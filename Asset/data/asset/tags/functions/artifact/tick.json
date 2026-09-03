@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1430.shield_of_fate/tick/1.trigger",
         "asset:artifact/1324.balance_star/trigger/1.trigger",
         "asset:artifact/0237.schrodingers_cat/trigger/1.trigger",
         "asset:artifact/1057.great_demon_head/tick/1.trigger",
@@ -16,7 +17,6 @@
         "asset:artifact/1074.farothdal/trigger/1.trigger",
         "asset:artifact/0963.hunters_amulet/trigger/1.trigger",
         "asset:artifact/1054.quick_charging_battery/trigger/1.trigger",
-        "asset:artifact/0772.dolphin_amulet/trigger/1.trigger",
         "asset:artifact/0702.bright_lamp/trigger/1.trigger",
         "asset:artifact/0741.abyss_insurance_card/trigger/1.trigger",
         "asset:artifact/0844.closed_eyes_of_love/trigger/1.trigger",

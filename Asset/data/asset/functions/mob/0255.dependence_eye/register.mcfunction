@@ -1,6 +1,12 @@
 #> asset:mob/0255.dependence_eye/register
 # @within asset:mob/alias/255/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 255
 # Type (string) Wikiを参照
@@ -38,7 +44,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    data modify storage asset:mob Speed set value 0
+    data modify storage asset:mob Speed set value 0.25
 # 索敵範囲 (double) (オプション)
     data modify storage asset:mob FollowRange set value 0
 # ノックバック耐性 (double) (オプション)
@@ -54,3 +60,6 @@
         # data modify storage asset:mob Resist.Water set value
     # 雷倍率 (float) (オプション)
         # data modify storage asset:mob Resist.Thunder set value
+
+# フィールド
+    data modify storage asset:mob Field.Rotate set value 800
