@@ -8,26 +8,24 @@
     execute at @s run particle elder_guardian ~ ~ ~ 0 0 0 0 1 normal @s
     execute at @s run playsound entity.elder_guardian.curse hostile @s ~ ~ ~ 1 1
 
+#> Private
+# @private
+    #declare score_holder $Difficulty
+
 # 難易度値取得
     function api:global_vars/get_difficulty
+    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
 
-# 採掘速度低下Lv2
-# Stack = 3
-# Duration = 200 * Difficulty
+# 採掘速度低下を付与
     data modify storage api: Argument.ID set value 76
-    data modify storage api: Argument.Stack set value 3
-    execute store result storage api: Argument.Duration int 200 run data get storage api: Return.Difficulty
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+    data modify storage asset:temp Debuff set from storage asset:context this.Debuff.A
+    function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
 
-# Blessless限定
-    execute unless predicate api:global_vars/difficulty/min/3_blessless run return fail
-
-# 水耐性低下
-# Stack = (Difficulty - 2)
-# Duration = 200 * Difficulty
+# 水耐性低下を付与
     data modify storage api: Argument.ID set value 61
-    execute store result storage api: Argument.Stack int 0.9999999999 run data get storage api: Return.Difficulty 0.9999999999
-    execute store result storage api: Argument.Duration int 200 run data get storage api: Return.Difficulty
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+    data modify storage asset:temp Debuff set from storage asset:context this.Debuff.B
+    function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
+
+# リセット
+    scoreboard players reset $Difficulty Temporary
+    data remove storage asset:temp Debuff

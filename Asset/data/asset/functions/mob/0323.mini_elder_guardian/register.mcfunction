@@ -78,3 +78,27 @@
     data modify storage asset:mob Field.HurtTime set value -1
 # 攻撃モード
     data modify storage asset:mob Field.IsAttackMode set value false
+
+# 採掘速度低下
+    # スタック
+        # 基礎値
+            data modify storage asset:mob Field.Debuff.A.Stack.Base set value 3
+        # 難易度比例部分
+            data modify storage asset:mob Field.Debuff.A.Stack.Difficulty set value 0
+    # 効果時間
+        # 基礎値
+            data modify storage asset:mob Field.Debuff.A.Duration.Base set value 0
+        # 難易度比例部分
+            data modify storage asset:mob Field.Debuff.A.Duration.Difficulty set value 200
+
+# 水耐性低下
+    # スタック
+        # 基礎値
+            data modify storage asset:mob Field.Debuff.B.Stack.Base set value -2
+        # 難易度比例部分
+            data modify storage asset:mob Field.Debuff.B.Stack.Difficulty set value 1
+    # 効果時間
+        # 基礎値
+            data modify storage asset:mob Field.Debuff.B.Duration.Base set value 0
+        # 難易度比例部分
+            data modify storage asset:mob Field.Debuff.B.Duration.Difficulty set value 200
