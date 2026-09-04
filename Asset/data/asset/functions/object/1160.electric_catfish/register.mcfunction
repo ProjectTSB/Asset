@@ -20,3 +20,4 @@
     data modify storage asset:object Field.Damage set value 0
     data modify storage asset:object Field.AttackType set value ""
     data modify storage asset:object Field.ElementType set value ""
+    data modify storage asset:object Field.Motion set value []
