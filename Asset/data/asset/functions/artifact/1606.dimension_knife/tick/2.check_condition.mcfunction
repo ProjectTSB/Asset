@@ -14,6 +14,11 @@
 # fail
     execute if entity @s[tag=!CanUsed] run return fail
 
+# ベクトルが全て0の時、失敗
+    function api:player_vector/get
+    execute if data storage api: Return{Vector:[0d,0d,0d]} run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # バフがある間加算しない
     data modify storage api: Argument.ID set value 387
     function api:entity/mob/effect/get/from_id
@@ -25,7 +30,6 @@
     execute if data storage api: Return.Effect run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
-
-# CanUsedタグをチェックして3.main.mcfunctionを実行する
+# 3.main.mcfunctionを実行する
     function asset:artifact/1606.dimension_knife/tick/3.main
     tag @s remove CanUsed

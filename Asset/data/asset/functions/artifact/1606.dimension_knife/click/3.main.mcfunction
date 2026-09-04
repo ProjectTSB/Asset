@@ -14,6 +14,9 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
+# AttackCountをリセット
+    scoreboard players reset @s 18M.AttackCount
+
 # ターゲットの背後にワープ
     execute positioned as @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] rotated ~ 0 positioned ^ ^1.8 ^1.6 run tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] feet
 

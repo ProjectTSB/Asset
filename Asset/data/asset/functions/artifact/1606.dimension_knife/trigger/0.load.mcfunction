@@ -5,5 +5,7 @@
 # @within tag/function asset:artifact/load
 
 #> 定義類はここに
-# @within function asset:artifact/1606.dimension_knife/tick/**
+# @within function asset:artifact/1606.dimension_knife/**
     scoreboard objectives add 18M.MoveSum dummy
+    scoreboard objectives add 18M.AttackCount dummy
+    scoreboard objectives add 18M.LatestAttackTick dummy
