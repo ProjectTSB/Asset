@@ -15,9 +15,9 @@
     execute if entity @s[tag=!CanUsed] run return fail
 
 # ベクトルが全て0の時、失敗
-    function api:player_vector/get
-    execute if data storage api: Return{Vector:[0d,0d,0d]} run tag @s remove CanUsed
-    execute if entity @s[tag=!CanUsed] run return fail
+   # 
+   # execute if data storage api: Return{Vector:[0.0d,0.0d,0.0d]} run tag @s remove CanUsed
+   # execute if entity @s[tag=!CanUsed] run return fail
 
 # バフがある間加算しない
     data modify storage api: Argument.ID set value 387

@@ -10,6 +10,7 @@
     #declare score_holder $VectorZ
 
 # ベクトル取得
+    function api:player_vector/get
     execute store result score $VectorX Temporary run data get storage api: Return.Vector[0] 100
     execute store result score $VectorZ Temporary run data get storage api: Return.Vector[2] 100
 
