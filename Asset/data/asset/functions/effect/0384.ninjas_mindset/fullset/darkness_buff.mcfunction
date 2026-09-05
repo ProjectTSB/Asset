@@ -13,3 +13,6 @@
     data modify storage api: Argument.Amount set value 0.15d
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/physical/add
+
+# 判別用tag
+    tag @s add 0384.IsInDarkness
