@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text": "はじめちょろちょろ中ぱっぱ"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "チャージ段階に応じて米粒の発射数が上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 1
 # スタック (int) (default = API || 1)
