@@ -18,7 +18,7 @@
     execute if entity @e[type=#lib:living_without_player,tag=0393.Target,distance=..2,limit=1] run function asset:effect/0393.launching_rice/tick/damage
 
 # 演出
-    particle dust 1 1 1 0.25 ~ ~ ~ 0.0 0.0 0.0 0 1
+    particle dust 1 1 1 0.25 ~ ~ ~ 0.01 0.01 0.01 0 3
 
 # 再帰
     execute positioned ^ ^ ^0.5 if entity @s[tag=!0393.Hit,distance=..7] run function asset:effect/0393.launching_rice/tick/rec
