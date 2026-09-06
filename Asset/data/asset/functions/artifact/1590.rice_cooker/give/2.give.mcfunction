@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "炊飯器"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "最大4段階のチャージをし、段階に応じた弾数の米粒を発射する。"}', '{"text": "米粒の発射中に再発動はできない。"}', '{"text": "朝はやっぱり米ですよね！", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "最大4段階のチャージをし、段階に応じた数の米粒を発射する。"}', '{"text": "発射中は再発動ができない。"}', '{"text": "朝はやっぱりお米ですよね！", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
