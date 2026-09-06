@@ -16,3 +16,7 @@
 
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    particle poof ~ ~ ~ 0.1 0.5 0.1 0.5 25
+    playsound block.fire.extinguish player @a ~ ~ ~ 0.75 0.75
