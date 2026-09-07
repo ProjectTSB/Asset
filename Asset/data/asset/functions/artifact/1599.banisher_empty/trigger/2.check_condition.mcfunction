@@ -8,6 +8,7 @@
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 # 戦闘時ならCanUsed剝奪
+    execute if predicate lib:in_battle run tellraw @s {"text":"戦闘中はリロードができない！","color":"red"}
     execute if predicate lib:in_battle run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
