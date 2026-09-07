@@ -21,6 +21,11 @@
 # 発射
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..1,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:artifact/1598.banisher/trigger/rec
 
+# 演出
+    playsound entity.firework_rocket.blast player @a ~ ~ ~ 1.0 0.7
+    playsound entity.evoker.cast_spell player @a ~ ~ ~ 1.0 1.75
+    playsound entity.illusioner.prepare_mirror player @a ~ ~ ~ 1.0 2.0
+
 # 消費時の処理
     function asset:artifact/1598.banisher/trigger/reload
 

@@ -12,3 +12,7 @@
     data modify storage api: Argument.ID set value 1598
     data modify storage api: Argument.Slot set value "mainhand"
     function api:artifact/replace/from_id
+
+# 演出
+    playsound block.iron_door.open player @a ~ ~ ~ 2.0 1.7
+    playsound block.amethyst_block.break player @a ~ ~ ~ 1.0 0.5

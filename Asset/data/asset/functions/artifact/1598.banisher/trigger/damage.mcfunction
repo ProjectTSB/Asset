@@ -14,3 +14,9 @@
     execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
     function api:damage/reset
+
+# 演出
+    particle crit ~ ~ ~ 0.2 0.5 0.2 1.0 25
+    particle enchanted_hit ~ ~ ~ 0.2 0.5 0.2 1.0 20
+    playsound item.trident.return player @a ~ ~ ~ 1.0 2.0
+    playsound block.enchantment_table.use player @a ~ ~ ~ 1.0 1.2
