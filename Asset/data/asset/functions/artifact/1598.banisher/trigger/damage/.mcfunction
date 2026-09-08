@@ -1,4 +1,4 @@
-#> asset:artifact/1598.banisher/trigger/damage
+#> asset:artifact/1598.banisher/trigger/damage/
 #
 #
 #
@@ -8,7 +8,7 @@
     #通常
     execute if entity @s[tag=!Enemy.Boss] run data modify storage api: Argument.Damage set value 200
     #天使
-    execute if entity @s[tag=Enemy.Boss] run data modify storage api: Argument.Damage set value 2000
+    execute if entity @s[tag=Enemy.Boss] as @p[tag=this] run function asset:artifact/1598.banisher/trigger/damage/boss
 
     data modify storage api: Argument.AttackType set value "Magic"
     execute as @p[tag=this] run function api:damage/modifier
