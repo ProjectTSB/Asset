@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "堕天", "color": "#e1c6f5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text": "天使を攻撃すると、威力が", "extra": [{"text": "10倍", "color": "#9c81d3"}, {"text": "になり、体力を", "color": "white"}, {"text": "20", "color": "green"}, {"text": "回復する。", "color": "white"}]}', '{"text": "弾が尽きても、非戦闘時ならリロードが可能だ。"}', '{"text": "「力ある者、天より堕とされる運命にあり」", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
