@@ -23,3 +23,10 @@
 # 演出
     playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.3
     execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.3
+
+# Object召喚
+    data modify storage api: Argument.ID set value 1186
+    execute anchored eyes positioned ^ ^ ^3 facing ^ ^ ^-1 run function api:object/summon
+
+    data modify storage api: Argument.ID set value 1186
+    execute at @s anchored eyes positioned ^ ^ ^-1.5 run function api:object/summon
