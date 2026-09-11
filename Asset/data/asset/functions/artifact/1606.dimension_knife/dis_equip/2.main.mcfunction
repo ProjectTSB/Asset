@@ -4,12 +4,13 @@
 #
 # @within function asset:artifact/1606.dimension_knife/dis_equip/1.trigger
 
-# バフ削除
-    data modify storage api: Argument.ID set value 387
-    function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset
+#> prv
+# @private
+    #declare score_holder $ItemCount
 
-# バフ削除
-    data modify storage api: Argument.ID set value 388
-    function api:entity/mob/effect/remove/from_id
-    function api:entity/mob/effect/reset
+# まだ持ってるか確認する
+    execute store result score $ItemCount Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1606}}}]
+# なければ削除
+    execute if score $ItemCount Temporary matches ..0 run function asset:artifact/1606.dimension_knife/dis_equip/remove_buff
+# リセット
+    scoreboard players reset $ItemCount Temporary
