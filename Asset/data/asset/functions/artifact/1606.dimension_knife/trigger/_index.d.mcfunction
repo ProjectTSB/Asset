@@ -5,3 +5,4 @@
 # @within function asset:artifact/1606.dimension_knife/click/**
     #declare score_holder $RecursiveLimit
     #declare tag Target
+    #declare tag RecursiveMarker
