@@ -18,6 +18,6 @@
     data modify storage asset:object ID set value 1183
 # フィールド(オプション)
     data modify storage asset:object Field.List set value []
-    data modify storage asset:object Field.ColorList.0 set value ["0","2","1","0"]
-    data modify storage asset:object Field.ColorList.1 set value ["3","5","4","3"]
-    data modify storage asset:object Field.ColorList.2 set value ["6","8","7","6"]
+    data modify storage asset:object Field.ColorList.0 set value ["0","1","2"]
+    data modify storage asset:object Field.ColorList.1 set value ["3","4","5"]
+    data modify storage asset:object Field.ColorList.2 set value ["6","7","8"]

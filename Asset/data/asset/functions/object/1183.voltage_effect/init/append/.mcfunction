@@ -14,7 +14,7 @@
 # Index
     execute store result score $Index Temporary run data get storage asset:context this.Index
     scoreboard players add $Index Temporary 1
-    execute if score $Index Temporary matches 4.. run scoreboard players set $Index Temporary 0
+    execute if score $Index Temporary matches 3.. run scoreboard players set $Index Temporary 0
     execute store result storage asset:context this.Index int 1 run scoreboard players get $Index Temporary
     scoreboard players reset $Index Temporary
 
