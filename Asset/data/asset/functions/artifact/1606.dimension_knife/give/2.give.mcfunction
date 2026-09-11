@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"残された次元ナイフ","color":"#c762e7"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ホットバーに保持して40m移動するとワープが可能になり"}','{"translate":"敵を前方に捉えて%1$sを押すと","with":[{"keybind":"key.use"}]}','{"text":"対象の背後にワープする"}','{"text":"ワープ直後、最初の近接攻撃3回のMP回復量が50%上昇する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ホットバーに保持して40m移動するとワープが可能になり"}','{"translate":"敵を前方に捉えて%1$sを押すと","with":[{"keybind":"key.use"}]}','{"text":"対象の背後にワープする"}','{"text":"ワープ直後、最初の近接攻撃3回のMP回復量が1.5倍になる"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 6
+    data modify storage asset:artifact TypeCooldown.Duration set value 7
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)
