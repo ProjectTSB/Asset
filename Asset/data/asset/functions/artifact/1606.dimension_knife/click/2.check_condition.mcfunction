@@ -22,7 +22,7 @@
     execute if entity @s[tag=!CanUsed] run return fail
 
 # ターゲットの背後がブロックに埋まっている場合、CanUsedを削除
-    execute positioned as @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] rotated ~ 0 unless function asset:artifact/1606.dimension_knife/click/2.check_condition/check_safe run tag @s remove CanUsed
+    execute positioned as @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] rotated ~ 0 unless function asset:artifact/1606.dimension_knife/click/2.check_condition/check_block/check_safe run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run function asset:artifact/1606.dimension_knife/click/2.check_condition/reset
     execute if entity @s[tag=!CanUsed] run return fail
 
