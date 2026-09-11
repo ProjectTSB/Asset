@@ -5,10 +5,10 @@
 # @within function asset:artifact/1606.dimension_knife/trigger/3.main
 
 # バフがあるなら、MP回復量に補正をかける
-    execute if data storage api: Return.Effect store result storage api: Argument.AdditionalMPHeal double 0.01 run data get storage api: PersistentArgument.AdditionalMPHeal 120
+    execute if data storage api: Return.Effect store result storage api: Argument.AdditionalMPHeal double 0.01 run data get storage api: PersistentArgument.AdditionalMPHeal 150
 
 # 本体
-    execute store result storage api: Argument.Damage double 1 run random value 80..150
+    execute store result storage api: Argument.Damage double 1 run random value 130..200
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
