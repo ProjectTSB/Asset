@@ -12,6 +12,5 @@
     execute positioned ^ ^ ^1.0 unless function asset:artifact/1606.dimension_knife/click/2.check_condition/check_block/player_hit_box run return 0
     execute positioned ^ ^ ^0.5 unless function asset:artifact/1606.dimension_knife/click/2.check_condition/check_block/player_hit_box run return 0
 
-
 # 成功
     return 1
