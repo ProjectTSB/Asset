@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1187.dimension_slash/tick/
+# @within function asset:object/1187.dimension_slash/tick/transform/0/
 
 #
     data modify entity @s interpolation_duration set value 8
