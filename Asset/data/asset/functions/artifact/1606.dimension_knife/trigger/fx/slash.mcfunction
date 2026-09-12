@@ -11,7 +11,7 @@
 
 # 演出用Object
     # FieldOverride
-        data modify storage api: Argument.FieldOverride set value {Frames:[20647,20648,20649],Scale:[3.5f,3.5f,0.1f],Transformation:{left_rotation:[0.561f,-0.43f,0.43f,0.561f],    right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]},Item:{id:"minecraft:stick",Count:1b}}
+        data modify storage api: Argument.FieldOverride set value {Frames:[20647,20648,20649],Scale:[3.5f,3.5f,0.1f],Transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f]},Item:{id:"minecraft:stick",Count:1b}}
     # left_rotationだけAttackCountに応じて変える
         execute if score @s 18M.AttackCount matches 1 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.377f,-0.5982f,0.2086f,0.6756f]
         execute if score @s 18M.AttackCount matches 2 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [-0.2761f,-0.651f,-0.4358f,0.5569f]
