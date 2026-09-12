@@ -1,4 +1,4 @@
-#> asset:object/1186.dimension_door/register
+#> asset:object/1186.dimension_gate/register
 #
 # Objectのデータを指定
 #

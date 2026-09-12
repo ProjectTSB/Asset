@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元の召喚処理を呼び出す
-    function asset:object/1186.dimension_door/summon/
+    function asset:object/1186.dimension_gate/summon/
