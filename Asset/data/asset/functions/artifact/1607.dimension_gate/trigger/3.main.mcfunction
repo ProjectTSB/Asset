@@ -16,8 +16,8 @@
     execute positioned as @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] rotated ~ 0 positioned ^ ^1.8 ^1.6 run tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] feet
 
 # 演出
-    playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.3
-    execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.3
+    playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
+    execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
 
 # Object召喚
     # ワープ前の位置
