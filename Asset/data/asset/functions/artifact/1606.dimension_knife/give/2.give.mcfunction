@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"残された次元ナイフ","color":"#c762e7"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ホットバーに保持して40m移動するとワープが可能になり"}','{"translate":"敵を前方に捉えて%1$sを押すと","with":[{"keybind":"key.use"}]}','{"text":"対象の背後にワープする"}','{"text":"ワープ直後、最初の近接攻撃3回のMP回復量が1.5倍になる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ホットバーに保持して40m移動するとワープが可能になり"}','{"translate":"敵を前方に捉えて%1$sを押すと","with":[{"keybind":"key.use"}]}','{"text":"対象の背後にワープする"}','{"text":"ワープ直後、最初の近接攻撃3回のMP回復量が1.5倍になる"}','{"text":"次元の狭間に落ち、忘れられた者の短剣","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
