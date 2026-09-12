@@ -4,13 +4,14 @@
 #
 # @within function asset:artifact/1606.dimension_knife/click/2.check_condition
 
-# バフ削除
+# ワープができるようになるバフ削除
     data modify storage api: Argument.ID set value 387
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
 
-# 別のバフ付与
+# ワープ直後の性能を盛るバフを付与
     data modify storage api: Argument.ID set value 388
+    data modify storage api: Argument.Duration set value 60
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
