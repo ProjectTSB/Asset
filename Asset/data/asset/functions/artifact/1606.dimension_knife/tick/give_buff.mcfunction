@@ -4,8 +4,9 @@
 #
 # @within function asset:artifact/1606.dimension_knife/tick/3.main
 
-# 演出 (自分にしか聞こえない)
-    playsound tsb_sounds:electric1 player @s ~ ~ ~ 0.7 1.5
+# 演出
+    particle dust_color_transition 1 0.4 1 1 0.4 0.21 0.8 ~ ~0.4 ~ 0.4 0.2 0.4 0 20 normal @a
+    playsound tsb_sounds:electric1 player @a ~ ~ ~ 0.7 1.5
 
 # バフを付与
     data modify storage api: Argument.ID set value 387
