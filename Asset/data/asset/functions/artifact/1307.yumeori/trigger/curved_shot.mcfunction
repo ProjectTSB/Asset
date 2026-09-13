@@ -47,4 +47,5 @@
     data modify storage api: Argument.ID set value 1177
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    function asset:artifact/1307.yumeori/trigger/mp_bonus
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon
