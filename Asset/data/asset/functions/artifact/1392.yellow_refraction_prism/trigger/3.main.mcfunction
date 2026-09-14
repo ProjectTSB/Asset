@@ -30,7 +30,3 @@
     function asset:artifact/1392.yellow_refraction_prism/trigger/vfx/
     function asset:artifact/1392.yellow_refraction_prism/trigger/vfx/
     function asset:artifact/1392.yellow_refraction_prism/trigger/vfx/
-
-# リセット
-    data remove storage asset:temp Temp
-    tag @e[type=#lib:living_without_player,tag=Target,distance=..64] remove Target
