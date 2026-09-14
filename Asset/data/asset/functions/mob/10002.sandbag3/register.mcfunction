@@ -2,7 +2,7 @@
 # @within asset:mob/alias/10002/register
 
 # ID (int)
-    data modify storage asset:mob ID set value 10003
+    data modify storage asset:mob ID set value 10002
 # Type (string) Wikiを参照
     data modify storage asset:mob Type set value "Enemy"
 # 干渉可能か否か (boolean)
