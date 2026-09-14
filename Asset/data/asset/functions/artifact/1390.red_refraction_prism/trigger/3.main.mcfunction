@@ -18,7 +18,7 @@
     function api:damage/single_damage_session/open
 
 # 攻撃対象のうち近いN体にダメージ
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=nearest,limit=3] at @s run function asset:artifact/1390.red_refraction_prism/trigger/attack
+    function asset:artifact/1390.red_refraction_prism/trigger/attack
 
 # SingleDamageSession close
     function api:damage/single_damage_session/close
