@@ -13,7 +13,7 @@
     function api:damage/single_damage_session/open
 
 # 攻撃対象のうち近いN体にダメージ
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=nearest,limit=3] at @s run function asset:artifact/1391.blue_refraction_prism/trigger/apply
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=nearest,limit=3] at @s run function asset:artifact/1391.blue_refraction_prism/trigger/attack
 
 # SingleDamageSession close
     function api:damage/single_damage_session/close
@@ -22,7 +22,6 @@
     execute at @e[type=#lib:living_without_player,tag=Target,distance=..64] run function asset:artifact/1391.blue_refraction_prism/trigger/sound
 
 # 自作パーティクル
-    function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
     function asset:artifact/1391.blue_refraction_prism/trigger/vfx/
