@@ -9,11 +9,16 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# MP減らす
+    data modify storage api: Argument.Fluctuation set from storage asset:temp Temp.MPReduce
+    data modify storage api: Argument.DisableLog set value true
+    function api:mp/fluctuation
+
 # SingleDamageSession open
     function api:damage/single_damage_session/open
 
 # 攻撃対象のうち近いN体にダメージ
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=nearest,limit=3] at @s run function asset:artifact/1390.red_refraction_prism/trigger/apply
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Uninterferable,distance=..64,sort=nearest,limit=3] at @s run function asset:artifact/1390.red_refraction_prism/trigger/attack
 
 # SingleDamageSession close
     function api:damage/single_damage_session/close
@@ -25,8 +30,3 @@
     function asset:artifact/1390.red_refraction_prism/trigger/vfx/
     function asset:artifact/1390.red_refraction_prism/trigger/vfx/
     function asset:artifact/1390.red_refraction_prism/trigger/vfx/
-    function asset:artifact/1390.red_refraction_prism/trigger/vfx/
-
-# リセット
-    data remove storage asset:temp Temp
-    tag @e[type=#lib:living_without_player,tag=Target,distance=..64] remove Target
