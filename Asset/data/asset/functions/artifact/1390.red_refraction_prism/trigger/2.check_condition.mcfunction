@@ -21,8 +21,8 @@
     execute if data storage asset:context Attack{IsDoT:true} run return fail
     execute if entity @s[tag=!CanUsed] run return fail
 
-# 水属性ならreturn
-    execute if data storage asset:context Attack{ElementType:"Water"} run return fail
+# 火属性ならreturn
+    execute if data storage asset:context Attack{ElementType:"Fire"} run return fail
     execute if entity @s[tag=!CanUsed] run return fail
 
 # Victimがいなければreturn

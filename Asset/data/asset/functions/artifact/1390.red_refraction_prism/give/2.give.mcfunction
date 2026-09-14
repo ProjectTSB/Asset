@@ -43,13 +43,13 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 2
+    data modify storage asset:artifact MPCost set value 8
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 200
+    data modify storage asset:artifact LocalCooldown set value 40
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
