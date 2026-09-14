@@ -29,5 +29,8 @@
     execute unless entity @e[type=#lib:living_without_player,tag=Victim,distance=..64] run return fail
     execute if entity @s[tag=!CanUsed] run return fail
 
+# 攻撃対象3体を選定し、該当
+    function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition/check_damage
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1392.yellow_refraction_prism/trigger/3.main

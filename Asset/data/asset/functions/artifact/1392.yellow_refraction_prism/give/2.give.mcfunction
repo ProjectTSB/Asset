@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"黄","color":"#FFA020"},{"text":"色","color":"#FFA834"},{"text":"の","color":"#FFB049"},{"text":"屈","color":"#FFB85D"},{"text":"折","color":"#FFC072"},{"text":"プ","color":"#FFC886"},{"text":"リ","color":"#FFD09B"},{"text":"ズ","color":"#FFD8AF"},{"text":"ム","color":"#FFE1C3"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象3体にダメージ量の10%分の雷属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象3体への与ダメージ量の2.5%分MPを消費し"}','{"text":"各ダメージ量の10%分の雷属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -43,13 +43,13 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 2
+    data modify storage asset:artifact MPCost set value 0
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 50
+    data modify storage asset:artifact LocalCooldown set value 20
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value
