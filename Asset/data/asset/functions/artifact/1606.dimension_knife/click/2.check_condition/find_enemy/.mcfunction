@@ -12,7 +12,7 @@
     execute anchored eyes positioned ^ ^ ^ run tp @e[type=marker,tag=RecursiveMarker,distance=..5] ~ ~ ~ ~ ~
 
 # 視線先から再帰
-    execute as @e[type=marker,tag=RecursiveMarker,distance=..5] at @s run function asset:artifact/1606.dimension_knife/click/2.check_condition/find_enemy/recursive
+    execute as @e[type=marker,tag=RecursiveMarker,distance=..5] at @s positioned ^ ^ ^-0.5 run function asset:artifact/1606.dimension_knife/click/2.check_condition/find_enemy/recursive
 
 # リセット
     kill @e[type=marker,tag=RecursiveMarker,distance=..30]
