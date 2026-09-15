@@ -25,7 +25,7 @@
     # tellraw @a {"storage":"asset:temp","nbt":"Temp"}
 
 # ダメージ量比例でMP減らす量を決めておく
-    execute store result storage asset:temp Temp.MPReduce double -0.01 run data get storage asset:temp Temp.Main.Amount 2.5
+    execute store result storage asset:temp Temp.MPReduce double -0.01 run data get storage asset:temp Temp.Main.Amount 1
 
 # 総ダメージ量のN%分のMPがあるかをチェック
     function api:mp/get_current
