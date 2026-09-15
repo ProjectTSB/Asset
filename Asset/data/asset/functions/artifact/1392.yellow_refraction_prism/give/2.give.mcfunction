@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"黄","color":"#FFA020"},{"text":"色","color":"#FFA834"},{"text":"の","color":"#FFB049"},{"text":"屈","color":"#FFB85D"},{"text":"折","color":"#FFC072"},{"text":"プ","color":"#FFC886"},{"text":"リ","color":"#FFD09B"},{"text":"ズ","color":"#FFD8AF"},{"text":"ム","color":"#FFE1C3"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象3体への与ダメージ量の2.5%分MPを消費し"}','{"text":"各ダメージ量の10%分の雷属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
+    data modify storage asset:artifact Lore set value ['{"text":"攻撃対象3体への与ダメージ量の1%分MPを消費し"}','{"text":"各ダメージ量の10%分の雷属性ダメージを与える"}','{"text":"このダメージは自身のステータス補正の影響を受けない"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
