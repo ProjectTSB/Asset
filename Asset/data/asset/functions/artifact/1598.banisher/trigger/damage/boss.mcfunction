@@ -4,11 +4,12 @@
 #
 # @within function asset:artifact/1598.banisher/trigger/damage/
 
-# 先に回復
-    data modify storage api: Argument.Heal set value 20.0f
-    function api:heal/modifier
-    function api:heal/
-    function api:heal/reset
+# 残留攻撃(Object 1188)を召喚
+    data modify storage api: Argument.ID set value 1188
+    execute store result storage api: Argument.UserID int 1 run scoreboard players get @s UserID
+    #攻撃情報を持たせる
+    data modify storage api: Argument.FieldOverride.Damage set value 200
+    data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
+    data modify storage api: Argument.FieldOverride.AttackElement set value "None"
 
-# ダメージ値を設定
-    data modify storage api: Argument.Damage set value 2000
+    function api:object/summon
