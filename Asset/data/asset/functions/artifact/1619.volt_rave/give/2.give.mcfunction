@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ヴォルトレイヴ","color":"#2ff743"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"長押しすることでチャージを行い"}','{"translate":"%1$sを離すことでプラズマレーザーを放つ","with":[{"keybind":"key.use"}]}','{"text":"最大までチャージすると出力が飛躍的に増大する"}']
+    data modify storage asset:artifact Lore set value ['{"text":"長押しすることでチャージを行い"}','{"translate":"%1$sを離すことでプラズマレーザーを放つ","with":[{"keybind":"key.use"}]}','{"text":"最大までチャージすると出力が飛躍的に増大する"}','{"text":"プラズマを圧縮・収束させ放つ光線銃","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
