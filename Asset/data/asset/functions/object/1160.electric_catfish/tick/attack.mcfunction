@@ -4,10 +4,16 @@
 #
 # @within asset:object/1160.electric_catfish/tick/**
 
+#> Private
+# @private
+    #declare score_holder $UserID
+
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 
 # SteppedOnタグがついたEntityが対象
     execute as @e[tag=1160.SteppedOn,distance=..2,limit=1] run function api:damage/
@@ -19,6 +25,7 @@
 # リセット
     function api:damage/reset
     execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,limit=1] remove 1160.SteppedOn
+    scoreboard players reset $UserID Temporary
 
 # 0.5秒のクールダウン
     scoreboard players set @s 1160.Cooldown 10
