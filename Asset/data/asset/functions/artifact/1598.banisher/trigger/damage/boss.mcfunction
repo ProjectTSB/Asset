@@ -12,4 +12,4 @@
     data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
     data modify storage api: Argument.FieldOverride.AttackElement set value "None"
 
-    function api:object/summon
+    execute positioned ^ ^ ^0.5 run function api:object/summon
