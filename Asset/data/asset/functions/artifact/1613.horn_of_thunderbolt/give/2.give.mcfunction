@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"雷霆の一本角","color":"gold"}'
+    data modify storage asset:artifact Name set value '{"text":"雷霆の一本角","color":"#89d2ba"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
