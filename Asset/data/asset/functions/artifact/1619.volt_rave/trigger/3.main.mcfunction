@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute anchored eyes positioned ^ ^ ^1 run playsound tsb_sounds:electric1 player @a ~ ~ ~ 1 1.5
+    execute anchored eyes positioned ^ ^ ^1 run playsound tsb_sounds:electric1 player @a ~ ~ ~ 1 1.2
 
 # チャージ用Effectを付与
     # 最大射程(射程×2)
