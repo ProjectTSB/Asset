@@ -26,6 +26,6 @@
     data remove storage asset:context this.List[-1]
 
 # リセット
+    tag @a[tag=Owner] remove Owner
     data remove storage asset:temp Args
     scoreboard players reset $UserID Temporary
-    tag @a[tag=Owner] remove Owner
