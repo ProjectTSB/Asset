@@ -28,7 +28,7 @@
     data modify storage api: Argument.ID set value 1189
     data modify storage api: Argument.FieldOverride.IsFullCharge set from storage asset:context this.IsFullCharge
     execute store result storage api: Argument.FieldOverride.Scale float 0.5 run scoreboard players operation $MaxRange Temporary -= $Range Temporary
-    execute anchored eyes positioned ^-0.15 ^ ^ rotated ~-2 ~ run function api:object/summon
+    execute anchored eyes positioned ^-0.1 ^ ^ rotated ~-2 ~ run function api:object/summon
 
 # リセット
     scoreboard players reset $Range Temporary
