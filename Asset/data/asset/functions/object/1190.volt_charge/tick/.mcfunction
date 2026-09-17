@@ -28,3 +28,4 @@
 # リセット
     data remove storage asset:temp Args
     scoreboard players reset $UserID Temporary
+    tag @a[tag=Owner] remove Owner
