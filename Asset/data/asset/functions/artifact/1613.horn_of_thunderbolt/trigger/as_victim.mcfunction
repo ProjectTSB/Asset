@@ -9,7 +9,8 @@
     function api:object/summon
 
 # playsound
-    playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.3 2
+    particle smoke ~ ~0.1 ~ 0 0 0 0.25 20 normal @a
+    playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.35 1.9
     playsound entity.zombie.break_wooden_door player @a ~ ~ ~ 0.4 1
     playsound ogg:mob.breeze.deflect1 player @a ~ ~ ~ 1 0.7
     playsound block.mangrove_roots.break player @a ~ ~ ~ 1 1
