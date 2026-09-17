@@ -10,4 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # Victimとして実行
-    execute as @e[type=#lib:living_without_player,tag=Victim,tag=Enemy,distance=..64] at @s run function asset:artifact/1613.horn_of_thunderbolt/trigger/as_victim
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=Enemy,distance=10..64,sort=random,limit=1] at @s run function asset:artifact/1613.horn_of_thunderbolt/trigger/as_victim
