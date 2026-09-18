@@ -14,7 +14,7 @@
     playsound entity.arrow.hit neutral @a ~ ~ ~ 1 1
     playsound item.trident.hit_ground neutral @a ~ ~ ~ 1 1
     playsound entity.evoker.prepare_summon neutral @a ~ ~ ~ 0.8 2
-    execute rotated ~ -90 run function asset:object/1179.yumeori_falling_arrow/tick/vfx
+    #execute rotated ~ -90 run function asset:object/1179.yumeori_falling_arrow/tick/vfx
 
 # 演出用Object召喚
     data modify storage api: Argument.ID set value 1180
@@ -22,9 +22,9 @@
     data modify storage api: Argument.FieldOverride.Color set value "Pink"
     execute rotated ~ 90 run function api:object/summon
 
-    #data modify storage api: Argument.ID set value 2257
+    data modify storage api: Argument.ID set value 1181
     #data modify storage api: Argument.FieldOverride.Scale set value 4f
-    #execute rotated ~ 90 run function api:object/summon
+    execute rotated ~ 90 run function api:object/summon
 
 # どうせなら縦に広い判定をとっておく
 
