@@ -17,4 +17,4 @@
     execute if entity @s[scores={General.Object.Tick=9}] run function asset:object/1187.dimension_slash/tick/transform/1/
 
 # 消滅処理
-    execute if score @s General.Object.Tick matches 12.. run function asset:object/1187.dimension_slash/tick/kill
+    execute if score @s General.Object.Tick matches 13.. run function asset:object/1187.dimension_slash/tick/kill
