@@ -9,7 +9,7 @@
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.6 1.2 0
 
 # 円状のパーティクル
-    function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
+    execute positioned ~ ~0.3 ~ run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
 
 # 演出用スコアのリセット
     scoreboard players reset $RecursiveLimit Temporary
