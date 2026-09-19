@@ -16,4 +16,4 @@
 
 # 演出用Object
     data modify storage api: Argument.ID set value 1191
-    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function api:object/summon
+    function api:object/summon
