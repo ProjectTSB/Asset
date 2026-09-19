@@ -1,4 +1,4 @@
-#> asset:effect/0384.ninjas_mindset/fullset/darkness_buff/apply
+#> asset:effect/0384.ninjas_mindset/fullset/darkness_buff
 #
 # フルセット時の追加効果の付与
 #
