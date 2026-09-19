@@ -7,4 +7,4 @@
     playsound block.amethyst_cluster.step player @a[distance=..12] ~ ~ ~ 1 0.7
     playsound block.amethyst_cluster.step player @a[distance=..12] ~ ~ ~ 1 0.65
     playsound block.amethyst_cluster.step player @a[distance=..12] ~ ~ ~ 1 0.6
-    playsound tsb_sounds:ice1 player @a[distance=..12] ~ ~ ~ 0.25 0.85
+    playsound tsb_sounds:ice1 player @a[distance=..12] ~ ~ ~ 0.05 0.85
