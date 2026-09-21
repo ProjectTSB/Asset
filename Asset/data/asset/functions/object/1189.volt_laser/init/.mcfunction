@@ -13,5 +13,5 @@
     data remove storage asset:temp Scale
 
 # translation
-    execute store result entity @s transformation.translation[0] float -0.0008 run data get storage asset:context this.Scale 100
-    execute on passengers store result entity @s transformation.translation[0] float -0.0008 run data get storage asset:context this.Scale 100
+    execute store result entity @s transformation.translation[2] float -0.0008 run data get storage asset:context this.Scale 100
+    execute on passengers store result entity @s transformation.translation[2] float -0.0008 run data get storage asset:context this.Scale 100

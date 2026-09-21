@@ -18,7 +18,7 @@
 
 # 前方に再帰
     data modify storage asset:context this.Range set from storage asset:context this.MaxRange
-    execute anchored eyes positioned ^ ^ ^ rotated ~-2 ~ run function asset:effect/0394.charge_of_volt_rave/end/recursive
+    execute anchored eyes positioned ^-0.3 ^-0.2 ^ run function asset:effect/0394.charge_of_volt_rave/end/recursive
 
 # ((MaxRange - Range) / 2)*0.6を演出用Objectのscaleとする
     execute store result score $Range Temporary run data get storage asset:context this.Range
@@ -28,7 +28,7 @@
 # Object召喚
     data modify storage api: Argument.ID set value 1189
     data modify storage api: Argument.FieldOverride.IsFullCharge set from storage asset:context this.IsFullCharge
-    execute anchored eyes positioned ^-0.1 ^ ^ rotated ~-2 ~ run function api:object/summon
+    execute anchored eyes positioned ^-0.4 ^-0.2 ^1.3 run function api:object/summon
 
 # リセット
     scoreboard players reset $Range Temporary

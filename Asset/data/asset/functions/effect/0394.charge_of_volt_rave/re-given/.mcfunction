@@ -9,7 +9,7 @@
     #declare score_holder $Charge
 
 # 演出
-    execute anchored eyes positioned ^-0.4 ^ ^1 run particle dust 0 1 0 0.7 ~ ~ ~ 0 0 0 0 1 normal @a
+    execute anchored eyes positioned ^-0.2 ^-0.2 ^0.7 run particle dust 0 1 0 0.7 ~ ~ ~ 0 0 0 0 1 normal @a
 
 # データ引き継ぎ
     data modify storage asset:context this.Damage set from storage asset:context PreviousField.Damage
