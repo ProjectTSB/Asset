@@ -13,3 +13,6 @@
     data modify storage api: Argument.ID set value 388
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
+
+# ついでにスコアもリセット
+    scoreboard players reset @s 18M.MoveSum
