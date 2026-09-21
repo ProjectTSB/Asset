@@ -13,10 +13,10 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
 
-#バニラ起因の攻撃ならreturn
-    execute if data storage asset:context Attack{IsVanilla:true} run return fail
-#継続ダメージならreturn
-    execute if data storage asset:context Attack{IsDoT:true} run return fail
+#バニラ起因の攻撃か継続ダメージならreturn
+    execute if data storage asset:context Attack{IsVanilla:true} run tag @s remove CanUsed
+    execute if data storage asset:context Attack{IsDoT:true} run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
 
 # Toの要素数を取得し、加算
     execute store result score $AttackCount Temporary if data storage asset:context Attack.To[]
