@@ -8,7 +8,7 @@
 # @private
     #declare score_holder $isBanTPArea
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
+# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く mainhand/feet/legs/chest/head/mainhand/offhandを記載してね
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     execute if predicate lib:is_ban_tp_area run function lib:message/artifact/can_not_use_here
