@@ -4,6 +4,5 @@
 #
 # @within function asset:effect/0373.longevity_your_thoughts/_/tick
 
-# DecreaseIntervalTickごとにスタックを減らし効果を更新する
-    execute store result storage asset:context this.Tick int 0.9999999999 run data get storage asset:context this.Tick 1
-    execute if data storage asset:context this{Tick:0} run function asset:effect/0373.longevity_your_thoughts/tick/set_modifier
+# 演出
+    execute if predicate lib:random_pass_per/20 run particle minecraft:dust_color_transition 1 0.4 1 0.8 0.2 0.8 1 ~ ~1 ~ 0.4 0.4 0.4 1 10

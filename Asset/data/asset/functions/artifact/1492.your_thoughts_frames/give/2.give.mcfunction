@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"『故","color":"#DAA1FF"},{"text":"想","color":"#DAA1FF"},{"text":"の","color":"#C5A5FF"},{"text":"額","color":"#B8A8FF"},{"text":"縁』","color":"#9EAEFF"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"発動時、敵が”気持ちの欠片”を近くに落とす"}','{"text":"気持ちの欠片に触れたプレイヤーはMP回復量+25%を得る"}','{"text":"バフは2秒ごとに効果量が-5%され、10秒後に切れる"}','{"text":"「まだ喉元に噛みつく牙はある？」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"発動時、敵が”気持ちの欠片”を近くに落とす"}','{"text":"気持ちの欠片に触れたプレイヤーはHPを5回復し"}','{"text":"10秒間MP回復量が+5%上昇する"}','{"text":"「まだ喉元に噛みつく牙はある？」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -47,7 +47,7 @@
 # MP回復量 (int) 
     # data modify storage asset:artifact MPHealWhenHit set value 
 # 神器のクールダウン 
-    data modify storage asset:artifact LocalCooldown set value 60
+    data modify storage asset:artifact LocalCooldown set value 20
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value 
     # data modify storage asset:artifact TypeCooldown.Duration set value

@@ -9,8 +9,8 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 1164
-    data modify storage api: Argument.FieldOverride.Stack set value 5
     data modify storage api: Argument.FieldOverride.Amount set value 0.05d
     data modify storage api: Argument.FieldOverride.Duration set value 200
-    data modify storage api: Argument.FieldOverride.DecreaseInterval set value 40
+    data modify storage api: Argument.FieldOverride.Heal set value 5.0d
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute positioned ~ ~1 ~ run function api:object/summon

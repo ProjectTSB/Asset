@@ -4,6 +4,10 @@
 #
 # @within function asset:object/1164.piece_of_creation/tick/
 
+#> private
+# @private
+    #declare score_holder $UserID
+
 # 演出
     playsound minecraft:entity.arrow.hit_player player @a ~0.5 ~0.5 ~0.5 0.6 2 0.0
     playsound minecraft:entity.allay.ambient_with_item player @a ~ ~ ~ 2.0 0.9 0.0
@@ -15,11 +19,19 @@
 # hitしたプレイヤーにMP回復量バフを与える
     data modify storage api: Argument.ID set value 373
     data modify storage api: Argument.Duration set from storage asset:context this.Duration
-    data modify storage api: Argument.Stack set from storage asset:context this.Stack
     data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Amount
-    data modify storage api: Argument.FieldOverride.DecreaseInterval set from storage asset:context this.DecreaseInterval
     execute as @a[gamemode=!spectator,tag=!Death,dx=0,limit=1] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 回復
+    data modify storage api: Argument.Heal set from storage asset:context this.Heal
+    execute store result score $UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $UserID Temporary run function api:heal/modifier
+    execute as @a[gamemode=!spectator,tag=!Death,dx=0,limit=1] run function api:heal/
+    function api:heal/reset
+
+# リセット
+    scoreboard players reset $UserID Temporary
 
 # 消滅処理
     kill @s
