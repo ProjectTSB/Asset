@@ -27,8 +27,9 @@
 # 回数が530未満ならreturn
     execute unless entity @s[scores={17M.AttackCount=530..}] run return fail
 
-# 再度チェック
+# MPチェック
     tag @s remove CanUsed
+    data modify storage asset:artifact DisabledCheckFlag set value {Believe:true,LocalCooldown:true}
     function asset:artifact/common/check_condition/hotbar
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
