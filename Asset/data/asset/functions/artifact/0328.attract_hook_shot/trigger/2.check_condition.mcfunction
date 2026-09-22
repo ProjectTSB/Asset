@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/0328.attract_hook_shot/trigger/1.trigger
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く mainhand/feet/legs/chest/head/mainhand/offhandを記載してね
+# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
     execute if entity @e[type=#arrows,tag=ShotArrow,nbt={crit:0b},distance=..5] run tag @s remove CanUsed
