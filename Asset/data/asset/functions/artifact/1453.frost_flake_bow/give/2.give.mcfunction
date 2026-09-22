@@ -17,8 +17,8 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"弓を引き絞り続けることで2段階のチャージを行える","color":"white"}','{"text":"2段チャージした矢は着弾時に炸裂する","color":"white"}','{"text":"矢の飛翔時間が長いほど威力が上がる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
-    # data modify storage asset:artifact ConsumeItem.Count set value 1
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
