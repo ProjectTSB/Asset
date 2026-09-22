@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:effect/0394.charge_of_volt_rave/_/register",
+        "asset:effect/0385.latency/_/register",
+        "asset:effect/0384.ninjas_mindset/_/register",
         "asset:effect/0371.tsukimi/_/register",
         "asset:effect/0355.heart_gap/_/register",
         "asset:effect/0354.protection_of_courage/_/register",
