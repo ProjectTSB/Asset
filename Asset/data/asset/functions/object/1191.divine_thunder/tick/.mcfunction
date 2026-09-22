@@ -11,3 +11,6 @@
     data modify storage asset:temp Args.Char set from storage asset:context this.List[-1]
     function asset:object/1191.divine_thunder/tick/change_char.m with storage asset:temp Args
     data remove storage asset:context this.List[-1]
+
+# リセット
+    data remove storage asset:temp Args
