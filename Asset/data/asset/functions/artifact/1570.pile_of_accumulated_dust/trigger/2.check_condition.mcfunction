@@ -29,7 +29,6 @@
 
 # 再度チェック
     tag @s remove CanUsed
-    data modify storage asset:artifact DisabledCheckFlag set value {LocalCooldown:true,Believe:true}
     function asset:artifact/common/check_condition/hotbar
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
