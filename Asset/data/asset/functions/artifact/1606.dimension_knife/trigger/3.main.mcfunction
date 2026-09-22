@@ -25,7 +25,5 @@
 # バフがあるかつ、AttackCountが3ならバフを消す
     execute if data storage api: Return.Effect if score @s 18M.AttackCount matches 3.. run function asset:artifact/1606.dimension_knife/trigger/remove_buff
 
-# 3以上なら初期化
+# 3以上ならAttackCountを初期化
     execute if score @s 18M.AttackCount matches 3.. run scoreboard players reset @s 18M.AttackCount
-
-# リセット
