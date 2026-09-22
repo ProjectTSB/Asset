@@ -14,7 +14,6 @@
     #declare score_holder $201
 
 # 演出用
-    data modify storage api: Argument.ID set value 1191
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/
 
 # 設定
