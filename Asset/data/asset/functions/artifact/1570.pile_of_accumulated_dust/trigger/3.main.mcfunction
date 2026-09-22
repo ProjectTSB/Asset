@@ -8,6 +8,8 @@
     function asset:artifact/common/use/hotbar
 
 # ここから先は神器側の効果の処理を書く
+#攻撃回数カウントをリセット
+    scoreboard players reset @s 17M.AttackCount
 
 # vfx
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..160,sort=nearest,limit=1] run function asset:artifact/1570.pile_of_accumulated_dust/trigger/vfx
