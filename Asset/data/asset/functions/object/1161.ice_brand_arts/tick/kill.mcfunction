@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/1161/tick
+# @within function asset:object/1161.ice_brand_arts/tick/
 
 # 消滅処理
     particle block packed_ice ~ ~ ~ 0.8 0.8 0.8 0 30

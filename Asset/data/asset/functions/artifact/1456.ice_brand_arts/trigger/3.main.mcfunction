@@ -27,10 +27,3 @@
     data modify storage api: Argument.ID set value 1193
     function api:object/summon
 # 生成音
-
-# 乱数（0〜3）に応じて、基準の向きを東西南北に変えて展開functionを呼び出す
-    execute if data storage asset:temp {type:0} at @s rotated 0 0 run function api:object/summon
-    execute if data storage asset:temp {type:1} at @s rotated 90 0 run function api:object/summon
-    execute if data storage asset:temp {type:2} at @s rotated 180 0 run function api:object/summon
-    execute if data storage asset:temp {type:3} at @s rotated -90 0 run function api:object/summon
-    data remove storage asset:temp type

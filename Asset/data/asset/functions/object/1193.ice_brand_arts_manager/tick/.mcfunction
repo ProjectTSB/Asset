@@ -8,14 +8,14 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 武器召喚
-    execute if score @s General.Object.Tick matches 1 rotated ~15 0 positioned ^ ^ ^6 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 2 rotated ~-40 0 positioned ^ ^ ^10 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 3 rotated ~75 0 positioned ^ ^ ^8.5 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 4 rotated ~110 0 positioned ^ ^ ^4.5 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 5 rotated ~160 0 positioned ^ ^ ^10 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 6 rotated ~-150 0 positioned ^ ^ ^6.5 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 7 rotated ~-100 0 positioned ^ ^ ^11.5 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 8 rotated ~-10 0 positioned ^ ^ ^7.5 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
-    execute if score @s General.Object.Tick matches 9 rotated ~180 0 positioned ^ ^ ^3 positioned ~ ~4 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 1 rotated ~15 0 positioned ^ ^ ^6 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 2 rotated ~-40 0 positioned ^ ^ ^10 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 3 rotated ~75 0 positioned ^ ^ ^8.5 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 4 rotated ~110 0 positioned ^ ^ ^4.5 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 5 rotated ~160 0 positioned ^ ^ ^10 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 6 rotated ~-150 0 positioned ^ ^ ^6.5 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 7 rotated ~-100 0 positioned ^ ^ ^11.5 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 8 rotated ~-10 0 positioned ^ ^ ^7.5 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
+    execute if score @s General.Object.Tick matches 9 rotated ~180 0 positioned ^ ^ ^3 positioned ~ ~6 ~ run function asset:object/1193.ice_brand_arts_manager/tick/summon
 # 消滅処理
     kill @s[scores={General.Object.Tick=20..}]
