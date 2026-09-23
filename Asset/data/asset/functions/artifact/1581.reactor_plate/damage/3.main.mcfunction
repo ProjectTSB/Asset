@@ -7,11 +7,11 @@
 
 # 特定 ID の Effect 情報を取得はcheckで済み
 
-# 基礎ダメージとバフ量指定(Damage+Buff*スタック数=与ダメ)
-    scoreboard players set $17X.Damage Temporary 0
-    scoreboard players set $17X.Buff Temporary 20
+# 最大HPをスコアに代入
+    execute store result score $17X.HP Temporary run attribute @s generic.max_health get
+
 # 計算処理
-    function asset:artifact/1581.reactor_plate/trigger/calculate
+    function asset:artifact/1581.reactor_plate/damage/calculate
 
 # 演出
     function asset:artifact/1581.reactor_plate/damage/vfx/explode
@@ -21,7 +21,6 @@
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sは熱に浮かされすぎた","with":[{"selector":"@s"}]}]'
     data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sは魔力炉の暴発に巻き込まれた","with":[{"selector":"@s"}]}]'
-    data modify storage api: Argument.FixedDamage set value true
     function api:damage/
     function api:damage/reset
 
