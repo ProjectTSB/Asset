@@ -16,8 +16,8 @@
 # Object召喚
     data modify storage api: Argument.ID set value 1166
 # ダメージセット
-    data modify storage api: Argument.FieldOverride.Damage set value 9999.9
+    data modify storage api: Argument.FieldOverride.Damage set value 9999.9d
 # 着弾までの時間
-    data modify storage api: Argument.FieldOverride.Tick set value 600
+    data modify storage api: Argument.FieldOverride.Tick set value 100
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon

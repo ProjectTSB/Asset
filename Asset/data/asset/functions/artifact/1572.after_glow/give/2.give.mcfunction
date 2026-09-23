@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"ア","color":"#ff9900"},{"text":"フ","color":"#ff8000"},{"text":"タ","color":"#ff6600"},{"text":"ー","color":"#ff4d00"},{"text":"グ","color":"#ff3300"},{"text":"ロ","color":"#ff1a00"},{"text":"ウ","color":"#ff0000"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"きわめて強力なレーザーを上空に向けて射出する","color":"white"}','{"text":"レーザーは30秒後に着弾し、敵に致命的なダメージを与える","color":"white"}','{"text":"“希望がある限り、奇跡は起こる”","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"5秒後に着弾するレーザーを上空に放つ","color":"white"}','{"text":"レーザーの中心ではダメージが上がる","color":"white"}','{"text":"着弾地点に敵がいないとき、","color":"white"}','{"text":"(1/埋まっているホットバーの枠数)の確率で","color":"white"}','{"text":"近くの最もHPの多い敵に着弾する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

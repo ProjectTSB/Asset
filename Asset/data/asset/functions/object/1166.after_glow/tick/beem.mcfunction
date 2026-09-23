@@ -23,7 +23,7 @@
 # 半径1高さ100の円柱型範囲内
     data modify storage lib: Argument.BoundingCylinder.Radius set value 1
     data modify storage lib: Argument.BoundingCylinder.Height set value 101
-    data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable]"
+    data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..128]"
     execute positioned ~ ~-1 ~ run function lib:bounding_cylinder/
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
@@ -31,9 +31,9 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable,distance=..128] run function api:damage/
     function api:damage/reset
     scoreboard players reset $UserID Temporary
     # tagリセット
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable] remove BoundingCylinder
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=BoundingCylinder,tag=!Uninterferable,distance=..128] remove BoundingCylinder
     kill @s
