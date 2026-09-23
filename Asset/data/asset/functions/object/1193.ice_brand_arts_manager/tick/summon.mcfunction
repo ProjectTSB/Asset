@@ -16,24 +16,24 @@
 
 # Field の値を上書き
     #武器種の確定
-        execute store result storage api: Argument.FieldOverride.Weapon int 1 run random value 0..5
+        execute store result storage asset:temp Args.Weapon int 1 run random value 0..5
     #向きをずらす
         execute store result storage asset:temp Args.Yaw float 1 run random value 0..359
         execute store result storage asset:temp Args.Pitch float 1 run random value 70..90
     # 正しいアイテムが表示されるように
         data modify storage api: Argument.FieldOverride.Id set value "minecraft:stick"
-        execute if data storage api: Argument.FieldOverride{Weapon:4} run data modify storage api: Argument.FieldOverride.Id set value "minecraft:carrot_on_a_stick"
-        execute if data storage api: Argument.FieldOverride{Weapon:5} run data modify storage api: Argument.FieldOverride.Id set value "minecraft:carrot_on_a_stick"
+        execute if data storage asset:temp Args{Weapon:4} run data modify storage api: Argument.FieldOverride.Id set value "minecraft:carrot_on_a_stick"
+        execute if data storage asset:temp Args{Weapon:5} run data modify storage api: Argument.FieldOverride.Id set value "minecraft:carrot_on_a_stick"
     # custommodelの変更
-        execute if data storage api: Argument.FieldOverride{Weapon:0} run data modify storage api: Argument.FieldOverride.Model set value 1457
-        execute if data storage api: Argument.FieldOverride{Weapon:1} run data modify storage api: Argument.FieldOverride.Model set value 1458
-        execute if data storage api: Argument.FieldOverride{Weapon:2} run data modify storage api: Argument.FieldOverride.Model set value 1459
-        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.Model set value 1460
-        execute if data storage api: Argument.FieldOverride{Weapon:4} run data modify storage api: Argument.FieldOverride.Model set value 1461
-        execute if data storage api: Argument.FieldOverride{Weapon:5} run data modify storage api: Argument.FieldOverride.Model set value 1462
+        execute if data storage asset:temp Args{Weapon:0} run data modify storage api: Argument.FieldOverride.Model set value 1457
+        execute if data storage asset:temp Args{Weapon:1} run data modify storage api: Argument.FieldOverride.Model set value 1458
+        execute if data storage asset:temp Args{Weapon:2} run data modify storage api: Argument.FieldOverride.Model set value 1459
+        execute if data storage asset:temp Args{Weapon:3} run data modify storage api: Argument.FieldOverride.Model set value 1460
+        execute if data storage asset:temp Args{Weapon:4} run data modify storage api: Argument.FieldOverride.Model set value 1461
+        execute if data storage asset:temp Args{Weapon:5} run data modify storage api: Argument.FieldOverride.Model set value 1462
 # 見た目変更(トンファーだけ刺さる向きを逆に)
         data modify storage api: Argument.FieldOverride.LeftRotation set value [0.0f,-0.7071f,0.7071f,0.0f]
-        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.LeftRotation set value [-0.7071f,0.0f,0.0f,-0.7071f]
+        execute if data storage asset:temp Args{Weapon:3} run data modify storage api: Argument.FieldOverride.LeftRotation set value [-0.7071f,0.0f,0.0f,-0.7071f]
 
 # 召喚位置・向きは実行者のものが使われる
     function asset:object/1193.ice_brand_arts_manager/tick/macro.m with storage asset:temp Args
