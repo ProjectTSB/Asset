@@ -20,7 +20,7 @@
     scoreboard players reset $UserID Temporary
 
 # ターゲット特定
-    execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,tag=!PlayerShouldInvulnerable,tag=!Immovable,dx=0] positioned ~-0.8 ~-0.8 ~-0.8 run tag @s[dx=0] add 1074.TargetCandidate
+    execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,tag=!PlayerShouldInvulnerable,dx=0] positioned ~-0.8 ~-0.8 ~-0.8 run tag @s[dx=0] add 1074.TargetCandidate
     execute positioned ~-0.1 ~-0.1 ~-0.1 run tag @e[type=#lib:living,tag=1074.TargetCandidate,dx=0,sort=random,limit=1] add 1074.Target
     execute positioned ~-0.1 ~-0.1 ~-0.1 run tag @e[type=#lib:living,tag=1074.TargetCandidate,dx=0] remove 1074.TargetCandidate
     execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#lib:living,tag=1074.Target,dx=0] run function asset:object/1074.arrow_of_approaching/hit_entity/as_target
