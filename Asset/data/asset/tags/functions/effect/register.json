@@ -1,5 +1,8 @@
 {
     "values": [
+        "asset:effect/0397.satelite_drop_cooldown/_/register",
+        "asset:effect/0396.satelite_drop/_/register",
+        "asset:effect/0395.charge_satelite_drop/_/register",
         "asset:effect/0385.latency/_/register",
         "asset:effect/0384.ninjas_mindset/_/register",
         "asset:effect/0371.tsukimi/_/register",
