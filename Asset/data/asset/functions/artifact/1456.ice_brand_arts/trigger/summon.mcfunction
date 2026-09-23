@@ -1,4 +1,4 @@
-#> asset:artifact/1456.ice_brand_arts/trigger/position_set
+#> asset:artifact/1456.ice_brand_arts/trigger/summon
 #
 # 神器のメイン処理部
 #

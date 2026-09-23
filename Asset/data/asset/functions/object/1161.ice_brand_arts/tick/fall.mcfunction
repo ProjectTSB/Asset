@@ -1,4 +1,4 @@
-#> asset:object/1161.ice_brand_arts/tick/
+#> asset:object/1161.ice_brand_arts/tick/fall
 #
 # Objectのtick時の処理
 #
