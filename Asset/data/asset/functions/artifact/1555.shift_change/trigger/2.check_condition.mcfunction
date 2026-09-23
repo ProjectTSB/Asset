@@ -9,7 +9,7 @@
 
 # 他にアイテム等確認する場合はここに書く
 # 自身がワープ可能か
-    execute if entity @s[tag=CanUsed] if entity @s[predicate=lib:is_ban_tp_area] run tellraw @s {"text":"不思議な力が転送を妨害した。","color":"dark_aqua"}
+    execute if entity @s[tag=CanUsed] if entity @s[predicate=lib:is_ban_tp_area] run tellraw @s {"text":"不思議な力が転送を妨害した。","color":"red"}
     execute if entity @s[predicate=lib:is_ban_tp_area] run tag @s remove CanUsed
 # そもそも他人がいるか
     execute if entity @s[tag=CanUsed] unless entity @a[tag=!this] run return run tellraw @s [{"text": "おや?このサーバーにはあなたしかいないようですよ?","color": "gray"}]
