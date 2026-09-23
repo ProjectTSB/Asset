@@ -18,7 +18,7 @@
     #武器種の確定
         execute store result storage api: Argument.FieldOverride.Weapon int 1 run random value 0..5
     #向きをずらす
-        execute store result storage asset:temp Args.Yaw float 1 run random value -100..100
+        execute store result storage asset:temp Args.Yaw float 1 run random value 0..359
         execute store result storage asset:temp Args.Pitch float 1 run random value 70..90
     # 正しいアイテムが表示されるように
         data modify storage api: Argument.FieldOverride.Id set value "minecraft:stick"
