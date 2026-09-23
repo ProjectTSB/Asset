@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"アイスブランドアーツ","color":"#7DFFF2","bold":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"周囲に複数の氷製の神器を生成する","color":"white"}','{"text":"生成した神器は誰でも右クリックで回収可能","color":"white"}','{"text":"生成した神器は生成してから時間が経つほど威力が減衰する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"周囲に複数の氷製の神器を生成する","color":"white"}','{"text":"生成した神器は誰でも右クリックで回収できる","color":"white"}','{"text":"生成した神器は時間が経つほど威力が減衰する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
