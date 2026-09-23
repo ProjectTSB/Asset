@@ -7,7 +7,7 @@
 
 # 他にアイテム等確認する場合はここに書く
 # Dotでは反応しない
-    execute if data storage asset:context Attack{IsDoT:true} run return fail
+    #execute if data storage asset:context Attack{IsDoT:true} run return fail
 # 特定 ID の Effect 情報を取得
     data modify storage api: Argument.ID set value 377
     function api:entity/mob/effect/get/from_id
