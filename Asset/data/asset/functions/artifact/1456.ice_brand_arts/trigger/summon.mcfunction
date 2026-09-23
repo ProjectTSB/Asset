@@ -33,8 +33,8 @@
         execute if data storage api: Argument.FieldOverride{Weapon:4} run data modify storage api: Argument.FieldOverride.Model set value 1461
         execute if data storage api: Argument.FieldOverride{Weapon:5} run data modify storage api: Argument.FieldOverride.Model set value 1462
 # 見た目変更(トンファーだけ刺さる向きを逆に)
-        data modify storage api: Argument.FieldOverride.Rotation set value "[0f,0f,0f,1f]"
-        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.Rotation set value "[0f,0f,1f,0f]"
+        data modify storage api: Argument.FieldOverride.Rotation set value [0f,0f,0f,1f]
+        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.Rotation set value [0f,0f,1f,0f]
 
 
 # 召喚位置・向きは実行者のものが使われる

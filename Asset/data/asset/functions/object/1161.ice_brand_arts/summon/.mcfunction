@@ -13,5 +13,6 @@
     data modify storage asset:temp Args.Model set from storage asset:context this.Model
     data modify storage asset:temp Args.Id set from storage asset:context this.Id
     function asset:object/1161.ice_brand_arts/summon/m with storage asset:temp Args
-    tellraw @a {"storage":"asset:temp","nbt":"Args"}
+   # tellraw @a {"storage":"asset:temp","nbt":"Args"}
+    #tellraw @a {"storage":"asset:context","nbt":"this"}
     data remove storage asset:temp Args

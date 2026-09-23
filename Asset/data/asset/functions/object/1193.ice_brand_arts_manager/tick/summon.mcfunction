@@ -13,7 +13,6 @@
 
 #武器設置
     # 引数: ID
-    data modify storage api: Argument.ID set value 1161
 
 # Field の値を上書き
     #武器種の確定
