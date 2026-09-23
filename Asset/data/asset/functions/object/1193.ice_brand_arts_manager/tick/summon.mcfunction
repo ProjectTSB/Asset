@@ -1,8 +1,8 @@
-#> asset:artifact/1456.ice_brand_arts/trigger/position_set
+#> asset:object/1193.ice_brand_arts_manager/tick/summon
 #
-# 神器のメイン処理部
+# 氷の武器の召喚処理
 #
-# @within function asset:artifact/1456.ice_brand_arts/trigger/position_set
+# @within asset:object/1193.ice_brand_arts_manager/tick/
 
 # 演出
     particle minecraft:dust_color_transition 0.5 0.8 1.0 1.2 1.0 1.0 1.0 ~ ~0.5 ~ 0.4 0.4 0.4 0 30 normal
@@ -19,8 +19,8 @@
     #武器種の確定
         execute store result storage api: Argument.FieldOverride.Weapon int 1 run random value 0..5
     #向きをずらす
-        execute store result storage api: Argument.FieldOverride.Yaw float 0.001 run random value -1000..1000
-        execute store result storage api: Argument.FieldOverride.Pitch float 0.001 run random value -200..700
+        execute store result storage asset:temp Args.Yaw float 0.001 run random value -1000..1000
+        execute store result storage asset:temp Args.Pitch float 0.001 run random value -200..700
     # 正しいアイテムが表示されるように
         data modify storage api: Argument.FieldOverride.Id set value "minecraft:stick"
         execute if data storage api: Argument.FieldOverride{Weapon:4} run data modify storage api: Argument.FieldOverride.Id set value "minecraft:carrot_on_a_stick"
@@ -33,9 +33,10 @@
         execute if data storage api: Argument.FieldOverride{Weapon:4} run data modify storage api: Argument.FieldOverride.Model set value 1461
         execute if data storage api: Argument.FieldOverride{Weapon:5} run data modify storage api: Argument.FieldOverride.Model set value 1462
 # 見た目変更(トンファーだけ刺さる向きを逆に)
-        data modify storage api: Argument.FieldOverride.Rotation set value "[0f,0f,0f,1f]"
-        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.Rotation set value "[0f,0f,1f,0f]"
-
+        data modify storage api: Argument.FieldOverride.LeftRotation set value [0f,0f,0f,1f]
+        execute if data storage api: Argument.FieldOverride{Weapon:3} run data modify storage api: Argument.FieldOverride.LeftRotation set value [0f,0f,1f,0f]
 
 # 召喚位置・向きは実行者のものが使われる
-    function api:object/summon
+    function asset:object/1193.ice_brand_arts_manager/tick/macro.m with storage asset:temp Args
+# 数値のクリア
+    data remove storage asset:temp Args
