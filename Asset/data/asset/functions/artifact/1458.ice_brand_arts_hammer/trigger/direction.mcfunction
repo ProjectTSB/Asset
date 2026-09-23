@@ -1,4 +1,4 @@
-#> asset:artifact/1458.ice_brand_arts_hammer/trigger/3.main
+#> asset:artifact/1458.ice_brand_arts_hammer/trigger/direction
 #
 # ハンマーの演出
 #
