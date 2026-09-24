@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"しゃぼんリング","color":"#40CCFF"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"正面に5つのしゃぼん玉をつくる","color":"white"}]','[{"text":"しゃぼん玉は低速だが高い追尾性能を持ち、","color":"white"}]','[{"text":"生成後すこしの間、壁を反射する","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"正面に5つのしゃぼん玉を生み出す","color":"white"}]','[{"text":"しゃぼん玉はゆっくりと敵を追尾し、","color":"white"}]','[{"text":"生成後しばらくの間、壁に跳ね返る","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

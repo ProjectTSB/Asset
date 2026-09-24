@@ -6,4 +6,4 @@
 
 # 判定(片方は反射用)
     execute unless block ^ ^ ^0.5 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true
-    execute if score @s General.Object.Tick matches ..15 unless block ^ ^ ^1.0 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true
+    execute if score @s General.Object.Tick matches ..100 unless block ^ ^ ^1.0 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true

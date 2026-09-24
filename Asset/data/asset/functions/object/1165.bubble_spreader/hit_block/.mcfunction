@@ -6,6 +6,6 @@
 
 # General.Object.Tickによって挙動を変える
 # ..15 反射
-    execute if score @s General.Object.Tick matches ..15 run function asset:object/1165.bubble_spreader/hit_block/reflect
+    execute if score @s General.Object.Tick matches ..100 run function asset:object/1165.bubble_spreader/hit_block/reflect
 # 16.. 消滅
-    execute if score @s General.Object.Tick matches 16.. run function asset:object/call.m {method:kill}
+    execute if score @s General.Object.Tick matches 100.. run function asset:object/call.m {method:kill}
