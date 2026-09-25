@@ -17,4 +17,13 @@
 # ID (int)
     data modify storage asset:object ID set value 2080
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+
+# 飛翔体抽象に必要なデータ
+    data modify storage asset:object Field.Speed set value 1
+    data modify storage asset:object Field.Range set value 50
+    data modify storage asset:object Field.MovePerStep set value 0.5
+
+# 回転関係
+    data modify storage asset:object Field.Spin set value 4
+    data modify storage asset:object Field.SpinInterval._ set value 0
+    data modify storage asset:object Field.SpinInterval.Max set value 4
