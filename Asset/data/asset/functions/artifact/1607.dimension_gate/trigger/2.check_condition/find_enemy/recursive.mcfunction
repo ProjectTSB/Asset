@@ -19,7 +19,7 @@
         execute positioned 0.0 0.0 0.0 positioned ^ ^ ^-1 positioned 0.0 0.0 ~ positioned ^ ^ ^0.5 facing 0.0 0.0 0.0 positioned as @s positioned ^ ^ ^0.25 rotated as @s positioned ^ ^ ^0.25 unless block ~ ~ ~ #lib:no_collision/ run return fail
 
 # 敵がいればtagを付与して終了
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,dx=0,limit=1] run return run tag @s add Target
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,limit=1] run return run tag @s add Target
 
 # 前に進む
     tp @s ^ ^ ^0.5
