@@ -7,6 +7,15 @@
 # 演出
     playsound entity.bee.hurt hostile @a ~ ~ ~ 1 1
 
-# HurtTimeをスコア化
-    scoreboard players set @s 56.HurtTime 20
-    data modify entity @s[scores={56.MoveTime=..179}] NoAI set value 0b
+# 以下の処理はDoTの場合は適用されない
+    execute if data storage asset:context Hurt{IsDoT:true} run return fail
+
+# 以下の処理はプレイヤーからの攻撃でないと適用されない
+    execute if data storage asset:context Hurt{}
+
+# HurtTimeをフィールドで疑似的に管理
+    data modify storage asset:context this.HurtTime._ set from storage asset:context this.HurtTime.Max
+
+# のけぞり用にNoAIを無効化
+    data modify entity @s NoAI set value 0b
+    data modify storage asset:context this.NoAI set value true
