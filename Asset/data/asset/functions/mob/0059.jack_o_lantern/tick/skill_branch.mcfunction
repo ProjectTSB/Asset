@@ -19,3 +19,6 @@
 
 # 超巨大カボチャ
     execute if entity @s[tag=1N.PumpkinRain] run function asset:mob/0059.jack_o_lantern/tick/skill/pumpkin_rain/
+
+# DPSチェック
+    execute if entity @s[tag=1N.DPSCheck] run function asset:mob/0059.jack_o_lantern/tick/skill/dps_check/

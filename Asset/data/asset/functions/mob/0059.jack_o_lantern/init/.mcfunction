@@ -22,4 +22,4 @@
     tp @s ~ ~ ~ facing entity @p[gamemode=!spectator]
 
 # スコアをセットする
-    scoreboard players set @s General.Mob.Tick -30
+    scoreboard players set @s General.Mob.Tick -80
