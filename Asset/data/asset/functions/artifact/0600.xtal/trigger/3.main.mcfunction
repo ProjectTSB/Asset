@@ -12,4 +12,4 @@
 # スコア付与する
     scoreboard players add @s GO.Time 3
 # スケジュール開始
-    schedule function asset:artifact/0600.xtal/trigger/schedule 1t replace
+    schedule function asset:artifact/0600.xtal/trigger/schedule/ 1t replace
