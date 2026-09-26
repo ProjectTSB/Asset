@@ -17,6 +17,10 @@
 
 AJ optional登録は `e48a116501b931a6688d5bd77e8f60c82de27ffa` の [global/root/on_load.json](https://github.com/ProjectTSB/Asset-AnimatedJava/blob/e48a116501b931a6688d5bd77e8f60c82de27ffa/AnimatedJava/data/animated_java/tags/functions/global/root/on_load.json) と [global/on_load.json](https://github.com/ProjectTSB/Asset-AnimatedJava/blob/e48a116501b931a6688d5bd77e8f60c82de27ffa/AnimatedJava/data/animated_java/tags/functions/global/on_load.json)、Karmicの対応関数とAsset側initを照合した範囲。
 
+## 整数倍率の丸めの根拠
+
+[NBTカウンタの減算](runtime-and-tools.md#nbtの整数カウンタを1未満の倍率で減らす) が使うMinecraft 1.20.4の丸め規則と公式server jarの確認根拠は、DevSpaceの `docs/mcfunction-idioms.md`「整数化を挟む演算」に集約している。Asset側の各利用例について、整数の値域・負の番兵値・二段の丸めを現行コードで照合する。
+
 ## Wikiとの照合
 
 2026-09-15にWiki snapshot `3a5ede8625a713382dca0e96f46b2a8ed75218c5` の公開16ページと `_Sidebar.md` を全文確認し、上記のAsset・本体の版と照合した。ページ別の採否・直接URLは [wiki-crosscheck.md](wiki-crosscheck.md)。外部リンク先・添付画像自体は対象外。

@@ -4,12 +4,14 @@
 
 共通の開発規約・知識の更新方針はDevSpaceの `AGENTS.md` と `docs/knowledge-maintenance.md` にある。このディレクトリは、この作業コピーのコードに対応する構造・契約・実例を管理する。`sources.md` は結論の根拠・採用状況を確かめるための索引。
 
+NBT・数値・selector・移動の共通イディオムはDevSpaceの `docs/mcfunction-idioms.md` を用途から参照する。以下はこのrepo固有の契約と利用例。
+
 |目的|読む文書|
 |---|---|
 |Mob／Object／Effect の型・継承・インスタンス・メソッド（該当変更の前提）|[object-model.md](object-model.md)|
 |アイテム定義、登録と artifact|[artifact.md](artifact.md)|
-|Mob と AJ のライフサイクル|[mob.md](mob.md)|
-|Object、API storage、スクリプトの作用先・生成・検証|[runtime-and-tools.md](runtime-and-tools.md)|
+|Mob と AJ のライフサイクル、装備・演出のイディオム|[mob.md](mob.md)|
+|Object、移動・幾何・描画のイディオム、API storage、生成・検証|[runtime-and-tools.md](runtime-and-tools.md)|
 |ProjectTSB Wiki の作成意図と現行実装の差|[wiki-crosscheck.md](wiki-crosscheck.md)|
 |調査範囲と直接根拠|[sources.md](sources.md)|
 

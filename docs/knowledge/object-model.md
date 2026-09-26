@@ -57,6 +57,8 @@ Mob／Object のイベント処理では、本体が個体の OhMyDat Field を 
 
 スタックがあることを全面的な再入安全性の保証にしない。不正 ID の召喚で退避後に早期終了し、復元へ到達しない経路も確認されている。正常・失敗の両経路を確認し、独自の直接呼び出しで既存の境界を迂回しない。
 
+`General.Mob.Tick` / `General.Object.Tick` は本体が毎tick自動加算する時計ではなく、個別の型が利用できるscoreである。加算・resetは対象と親のtick処理で確認する。例えば親が加算する型へ子でも加算を追加すると二重に進み、スキル開始時のresetを消すと各フェーズの時間原点が変わる。objective名だけで生成後の絶対経過時間と判断しない。
+
 ## 実例: Lunatic Mage と abstract_angel
 
 1. [基底 `2000.abstract_angel` の register](../../Asset/data/asset/functions/mob/2000.abstract_angel/register.mcfunction) が継承・抽象フラグと `Field.BossbarName`、`Field.InflictDebuffCooldown` 等を定義する。
@@ -74,6 +76,10 @@ Mob／Object のイベント処理では、本体が個体の OhMyDat Field を 
 4. [子の tick](../../Asset/data/asset/functions/object/2070.potion/tick/.mcfunction) が状態に応じて固有処理と `super.tick` を使い分ける。[基底の tick](../../Asset/data/asset/functions/object/0001.abstract_projectile/tick/.mcfunction) は共通の飛翔処理を担う。
 
 ここでは「子の値を準備してから親を呼ぶ」順序に意味がある。Lunatic Mage のように親の初期化を先に行う例と機械的に統一しない。
+
+## 実例: abstract_gravity_projectileは物理弾と論理Objectを分ける
+
+[0005のsummon](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/summon/m.mcfunction) はsnowballに `ObjectInit` のmarkerを乗せる。物理的な移動・衝突は乗り物のsnowball、Fieldとメソッドは乗客のmarkerが担う。[tick](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/tick/.mcfunction) は乗り物がなくなったことをhitの契機として使い、寿命切れは乗り物が残っている場合のrange_overへ分ける。[kill](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/kill/.mcfunction) は乗り物を消してから論理Object自身を消す。見える弾と `@s` を同一entityとして読んだり、片方だけを消して終了したと扱ったりしない。
 
 ## Effect の別モデル
 
