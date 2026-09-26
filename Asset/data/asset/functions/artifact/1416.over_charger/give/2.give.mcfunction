@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーバーチャージャー","color":"#6669ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"使用時、%1$sを20秒間得る。","color":"white","with":[{"translate":"雷攻撃+%1$s","color":"green","with":[{"text":"15%"}]}]}','{"translate":"-%1$s効果時間中に再使用すると、このバフを解除する","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s解除せずに効果時間終了時、最大MPの%2$s分MPを失う","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"40%"}]}']
+    data modify storage asset:artifact Lore set value ['{"translate":"使用時、%1$sを20秒間得る。","color":"white","with":[{"translate":"雷攻撃+%1$s","color":"green","with":[{"text":"15%"}]}]}','{"translate":"-%1$s効果時間中に再使用すると、このバフを解除する","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"-%1$s解除せずに効果時間終了時、現在MPの%2$s分MPを失う","color":"white","with":[{"text":"\\u0002","font":"space"},{"text":"50%"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
