@@ -6,9 +6,9 @@ Object／Effect の変更前に [型・インスタンス・継承モデル](obj
 
 `object/1051.time_laser/tick/damage.mcfunction` はcontextのDamage等を `api: Argument` に転送し、owner検索用のTemporaryを末尾でresetする実例である。`object/1069.icicle_manager/tick/summon_icicle/summon.m.mcfunction` はmacro引数 `OffsetX`, `OffsetZ` を `$execute` へ展開し、`FieldOverride.*` は `asset:context this` から直接設定する。storage macroの別例では `object/1086.lightning_exploit/hit/vfx/random.mcfunction` が `with storage asset:temp Args` で `.m` 関数を呼ぶ。呼出形式を混同しない。
 
-処理後にローカル計算用Temporary scoreや一時tagを残すと別処理へ影響するため、同じ関数で確保した値の後始末を確認する。一方、`asset:context this`、イベント入力、APIのReturnは呼出元や後続処理が読む場合があるため、一律削除しない。範囲selectorは広域 `@e` ならdistance/dx等で探索を限定する。PR #2078はdimensionをまたぐ総当たりを避けるためdistance追加を求めた例で、全selectorへ同じ条件を強制する根拠ではない。
+一時領域の寿命を確認する実例は上記の `1051.time_laser`。個体の保存状態を持つ `asset:context this` の契約は [実行モデル](object-model.md#インスタンス状態と呼び出し境界) を参照する。selectorのレビュー根拠は [sources.md](sources.md) のPR #2078。
 
-APIの呼び出し契約は本体リポジトリ側で最終確定する。このrepoでは `function api:global_vars/get_difficulty` の後に `api: Return.Difficulty` を読む例や、effect取得後に `api: Return.Effect` の有無を判定する例がある。一方、入力を書き換えるAPIやcommand resultを直接返す関数もあり、全APIがReturnを提供するとは限らない。呼出前にIMP Docと同系統の現行呼出例を読み、実行者、Argumentの型、成功・失敗時のcleanup、結果pathを確認する。
+API契約の正本は依存先TheSkyBlessingのナレッジとコードにある。Asset側の利用例では `function api:global_vars/get_difficulty` の後に `api: Return.Difficulty` を読み、Effect取得後には `api: Return.Effect` の有無を判定する。APIごとの結果形式と一時領域の寿命を照合する。
 
 Wiki の API 一覧は探索用の索引として使えるが、例示された path・Return 名を契約として転記しない。例えば Absorption 取得の現行本体は UUID 必須で `Return.Absorption` を返し、Wiki の引数なし／`Return.Amount` という例とは異なる。Asset 単独で判断できない場合は [固定 commit の本体 `get`](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/api/functions/entity/player/absorption/get.mcfunction) と core を確認する。
 
@@ -25,4 +25,12 @@ Wiki の API 一覧は探索用の索引として使えるが、例示された 
 
 CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。
 
+共通のmcfunction規約はDevSpaceの `AGENTS.md` にある。このrepoでのdeclareの実例は [1163の複数タグ宣言](../../Asset/data/asset/functions/artifact/1163.rail_shooter/trigger/_index.d.mcfunction) と [1430のtag/score宣言](../../Asset/data/asset/functions/artifact/1430.shield_of_fate/trigger/_index.d.mcfunction)。公開範囲の確認では、各IMP Docと対応する宣言を一組で参照する。
+
 スクリプト実行後は対象repoでdiffを確認し、意図しないmobやregisterが変わっていないか検索する。再生成が安全とスクリプトから確認できる場合だけ二度実行して差分安定性を見る。手動trigger、registerコメント、`# @within`、tag JSONを保持し、`mob_upgrade_v3.scala.sc` 後はv1/v2判定とalias参照を再検索する。
+
+通常処理のコメント・インデントの実例は [神器1430の条件処理](../../Asset/data/asset/functions/artifact/1430.shield_of_fate/trigger/2.check_condition.mcfunction) と [Effect 233の再付与処理](../../Asset/data/asset/functions/effect/0233.flame_armor/re-given/.mcfunction)。入手用定義の各項目の説明は [神器57](../../Asset/data/asset/functions/artifact/0057.elemental_sword/give/2.give.mcfunction) を参照する。
+
+## 再実行できる実機検証
+
+共通runnerの使い方と記録方法はDevSpaceの `docs/runtime-verification.md` にある。このrepoのシナリオ保存先は `tests/scenarios/`。

@@ -1,6 +1,6 @@
 # ProjectTSB Wiki と Asset 現行実装の照合
 
-確認日: 2026-09-15。Wiki snapshot `3a5ede8625a713382dca0e96f46b2a8ed75218c5` の公開16ページと `_Sidebar.md` を全文確認し、Asset HEAD `8f661ea1003a0e519d9825c55e1dde0ce6edaf80`、本体 HEAD `f88cdd5bcb2216d24b26e48684f4a7951a686c94` と照合した。Wiki は作成規約・設計意図、両 repo のコードは現行の実行事実として扱う。本体リンクは Asset 単独 clone でも読める固定 commit URL にする。
+確認日: 2026-09-15。Wiki snapshot `3a5ede8625a713382dca0e96f46b2a8ed75218c5` の公開16ページと `_Sidebar.md` を全文確認し、Asset HEAD `8f661ea1003a0e519d9825c55e1dde0ce6edaf80`、本体 HEAD `f88cdd5bcb2216d24b26e48684f4a7951a686c94` と照合した。Wiki は作成規約・設計意図、両 repo のコードは現行の実行事実として扱う。本体リンクは照合時点の根拠を辿れる固定commit URLであり、変更時は対象作業コピーの現行コードも確認する。
 
 ## 作成時に採用する規約
 

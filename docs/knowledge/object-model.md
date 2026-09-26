@@ -14,6 +14,8 @@ Mob／Object の個別 mcfunction は、型定義・継承・メソッド・イ�
 
 同じ `register`、`alias`、`tick` という名前でも、カテゴリをまたいで意味を一律に解釈しない。
 
+個別Asset間の連携は公開API・共通契約を通す（ユーザー方針）。相手の内部関数、所有するタグ・score・storage・modifierを直接扱わない。Artifact→EffectもEffect→Artifactも同じで、`@within` を両者へ広げるだけでは責務の分離にならない。既存の共通APIや継承の呼出契約とは区別する。
+
 ## Mob／Object のクラス定義とフィールド
 
 `<ID.name>/register.mcfunction` は実行時に型情報と既定フィールドを組み立てる定義である。召喚時に ID から `alias/<数値ID>/register` を呼び、共有の `storage asset:mob`／`asset:object` に定義を構築する。全クラスを load 時に常駐登録する仕組みとは区別する。例えば Mob の load 時の pool 登録と、召喚時のクラス定義の評価は別の処理である。`register` という名前だけで生成物と判断せず、対象の生成・移行スクリプトと履歴から編集方法を確認する。
