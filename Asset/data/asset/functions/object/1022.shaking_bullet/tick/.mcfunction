@@ -19,4 +19,4 @@
 
 # 一定時間経過で消滅兼ヒット判定
 # 既にHitメソッドが実行されている可能性があるので対策はしておく
-    execute if score @s General.Object.Tick matches 80.. unless score @s ObjectID matches -2147483648..2147483647 run function asset:object/call.m {Method:"hit"}
+    execute if score @s General.Object.Tick matches 80.. if score @s ObjectID matches -2147483648..2147483647 run function asset:object/call.m {Method:"hit"}
