@@ -8,7 +8,9 @@
 # @private
     #declare score_holder $Charge
 
-# チャージ時間を取得&加算
+# Field引き継ぎ
+    data modify storage asset:context this set from storage asset:context PreviousField
+    #チャージ時間はさらに加算
     execute store result score $Charge Temporary run data get storage asset:context PreviousField.Charge
     execute store result storage asset:context this.Charge int 1 run scoreboard players add $Charge Temporary 1
 
