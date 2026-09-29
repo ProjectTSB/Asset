@@ -24,3 +24,7 @@
     data modify storage api: Argument.ID set value 397
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    playsound entity.drowned.death player @a ~ ~ ~ 1 1.7
+    playsound entity.zombie.converted_to_drowned player @a ~ ~ ~ 1 1.4

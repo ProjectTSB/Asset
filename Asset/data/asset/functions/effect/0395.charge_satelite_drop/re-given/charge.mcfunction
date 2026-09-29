@@ -17,5 +17,10 @@
     data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
+# 演出
+    playsound item.bucket.empty player @a ~ ~ ~ 1 1.3
+    playsound entity.experience_orb.pickup player @a ~ ~ ~ 1 2.0
+    particle wax_off ~ ~0.5 ~ 0.2 0.5 0.2 3 15
+
 # リセット
     scoreboard players reset $Stack Temporary

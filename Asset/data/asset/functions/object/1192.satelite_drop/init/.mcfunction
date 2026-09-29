@@ -9,3 +9,6 @@
 
 # Artifact側からアクセスする用のID紐づけ
     execute store result score @s 1192.UserID run data get storage asset:context this.UserID
+
+# 演出
+    playsound entity.drowned.swim player @a ~ ~ ~ 1 1.4

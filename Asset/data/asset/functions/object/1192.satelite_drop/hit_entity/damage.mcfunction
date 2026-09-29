@@ -16,5 +16,8 @@
     function api:damage/
     function api:damage/reset
 
+# 演出
+    playsound entity.shulker_bullet.hit player @a ~ ~ ~ 1 1.4
+
 # リセット
     scoreboard players reset $UserID Temporary

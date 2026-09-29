@@ -19,8 +19,9 @@
     #ないならsuper.tick
     execute unless entity @s[tag=1192.Idle] run function asset:object/super.tick
 
-# 演出(挙動確認用)
-    particle dust 0.2 0.4 0.8 0.5 ~ ~ ~ 0.1 0.1 0.1 1 15
+# 演出
+    particle dust 0.2 0.4 0.8 0.5 ~ ~ ~ 0.01 0.01 0.01 1 5
+    particle dust 0.722 1 0.984 0.25 ~ ~ ~ 0.05 0.05 0.05 1 15
 
 # リセット
     scoreboard players reset $UserID Temporary
