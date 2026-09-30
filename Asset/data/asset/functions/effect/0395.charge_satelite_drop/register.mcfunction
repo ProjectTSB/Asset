@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 395
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "チャージ・サテライトドロップ"}'
+    data modify storage asset:effect Name set value '{"text": "チャージ・サテライトドロップ", "color": "#a4f1eb"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "チャージ終了時、段階に応じた数の弾を召喚する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 1
 # スタック (int) (default = API || 1)

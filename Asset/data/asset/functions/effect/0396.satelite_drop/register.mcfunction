@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 396
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "玉露の星"}'
+    data modify storage asset:effect Name set value '{"text": "玉露の星", "color": "#a4f1eb"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "スタックの数だけ、弾が発射できる"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
