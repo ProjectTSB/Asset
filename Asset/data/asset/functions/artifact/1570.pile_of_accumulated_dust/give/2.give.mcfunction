@@ -29,7 +29,7 @@
 # 効果が重複可能か否か (boolean) (オプション)
     data modify storage asset:artifact EnableDuplication set value false
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"神器によって合計530回攻撃"}'
+    data modify storage asset:artifact Condition set value '{"text":"神器によって計530回攻撃"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value "3000"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
