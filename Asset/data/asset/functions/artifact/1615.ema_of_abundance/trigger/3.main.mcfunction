@@ -15,6 +15,6 @@
     particle happy_villager ~ ~1.2 ~ 0.5 0.4 0.5 0 10 normal @a
     particle dust 0.776 1 0.808 1 ~ ~1.2 ~ 0.5 0.4 0.5 0 50 normal @a
     playsound minecraft:block.wood.place player @a ~ ~ ~ 3 1.5 0.0
-    playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1.0 0.8 0.0
+    playsound minecraft:item.armor.equip_generic player @a ~ ~ ~ 1.0 1.2 0.0
     playsound minecraft:block.wood.step player @a ~ ~ ~ 1.0 2 0.0
-    playsound minecraft:block.chain.place player @a ~ ~ ~ 0.6 0.7 0.0
+    playsound minecraft:block.chain.place player @a ~ ~ ~ 0.6 1.1 0.0
