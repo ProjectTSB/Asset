@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"幾星霜の魔法大典","color":"#c812ff85"}'
+    data modify storage asset:artifact Name set value '{"text":"幾星霜の魔法大典","color":"#3920B5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"弓を引き絞り続けることで2段階のチャージを行える","color":"white"}','{"text":"2段チャージした矢は着弾時に炸裂する","color":"white"}','{"text":"矢の飛翔時間が長いほど威力が上がる","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の魔法攻撃数値でダメージ計算を行う","color":"white"}','{"text":"過去から現在に至るまであらゆる魔法知識が詰まった本","color":"gray"}','{"text":"積み重なった知識の重み(物理)を敵にたたきつける","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -27,9 +27,9 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
-    # data modify storage asset:artifact Condition set value
+    data modify storage asset:artifact Condition set value '{"text":"クリティカル攻撃"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value 2700
+    data modify storage asset:artifact AttackInfo.Damage set value 2800
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -47,7 +47,7 @@
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 90
+    data modify storage asset:artifact LocalCooldown set value 70
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "shortRange"
     data modify storage asset:artifact TypeCooldown.Duration set value 40

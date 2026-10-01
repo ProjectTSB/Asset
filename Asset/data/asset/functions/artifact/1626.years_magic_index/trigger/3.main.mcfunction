@@ -8,8 +8,9 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
+    function asset:artifact/1626.years_magic_index/trigger/vfx/sound
     # 引数の設定
-    data modify storage api: Argument.Damage set value 2700f
+    data modify storage api: Argument.Damage set value 2800f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
 # 補正functionを実行
