@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "サテライトドロップ", "color": "#6abcf6"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "チャージ時間1.5秒につき弾を一つ召喚する（最大3個）。"}', '{"translate": "弾は%s秒の間、任意のタイミングで発射ができる。", "with":[{"text": "召喚した数x30", "color": "aqua"}]}']
+    data modify storage asset:artifact Lore set value ['{"text": "チャージ時間1.5秒につき弾を一つ召喚する(最大3個)。"}', '{"translate": "弾は%sの間、任意のタイミングで発射ができる。", "with":[{"text": "召喚した数x30秒", "color": "aqua"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
