@@ -8,13 +8,23 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-# --- 【効果音（おどろおどろしい呪いの音）】 ---
+# 演出
     playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1.0 0.6
     playsound minecraft:entity.warden.heartbeat player @a ~ ~ ~ 2.0 0.8
     particle minecraft:dust 0.3 0.0 0.0 2.0 ~ ~1 ~ 0.5 1.0 0.5 0 40 normal
     particle minecraft:large_smoke ~ ~1 ~ 0.4 1.0 0.4 0.02 20 normal
     particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0.5 0.8 0.5 0.1 30 normal
     playsound minecraft:entity.ravager.roar player @a ~ ~ ~ 2.0 0.6
+# 持ってるバリアと同じ数の固定ダメージ
+    function api:entity/player/absorption/get
+    data modify storage api: Argument.Damage set from storage api: Return.Amount
+    data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
+    data modify storage api: Argument.ApplyTrigger set value false
+    data modify storage api: Argument.FixedDamage set value true
+    data modify storage api: Argument.DeathMessage append value '[{"translate":"%1$sは血の力に耐えきれなかった","with":[{"selector":"@s"}]}]'
+    function api:damage/
+    function api:damage/reset
 # 効果付与
     data modify storage api: Argument.ID set value 376
     data modify storage api: Argument.Duration set value 600
