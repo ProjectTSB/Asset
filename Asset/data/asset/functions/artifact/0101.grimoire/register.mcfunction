@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:artifact/register
 
-data modify storage asset:artifact RarityRegistry[2] append value [101]
-data modify storage asset:artifact RarityRegistryWithColor.Red[2] append value [101]
+data modify storage asset:artifact RarityRegistry[1] append value [101]
+data modify storage asset:artifact RarityRegistryWithColor.Red[1] append value [101]
