@@ -16,10 +16,10 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-# 攻撃時演出
+# 攻撃時演出(クリティカルで追加の演出)
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run particle block ice ~ ~ ~ 1 1 1 0 100
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run playsound block.glass.break player @a ~ ~ ~ 1.2 0.7
-    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run playsound entity.zombie.attack_iron_door player @a ~ ~ ~ 0.4 0.7
+    execute if data storage asset:context Attack{Crit:true} at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run playsound entity.zombie.attack_iron_door player @a ~ ~ ~ 0.4 0.7
 
 # 威力計算
     # 基礎ダメージ決定
@@ -42,6 +42,8 @@
         scoreboard players operation $MaxDamageBaf Temporary *= $value Temporary
         scoreboard players operation $MaxDamageBaf Temporary /= $600 Const
         scoreboard players operation $BaseDamage Temporary += $MaxDamageBaf Temporary
+    # クリティカルでないなら威力半分
+        execute unless data storage asset:context Attack{Crit:true} run scoreboard players operation $BaseDamage Temporary /= $2 Const
 
 # 引数を set(ダメージ)
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $BaseDamage Temporary

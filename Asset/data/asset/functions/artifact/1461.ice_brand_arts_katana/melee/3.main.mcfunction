@@ -1,8 +1,8 @@
-#> asset:artifact/1459.ice_brand_arts_sword/trigger/3.main
+#> asset:artifact/1461.ice_brand_arts_katana/melee/3.main
 #
 # 神器のメイン処理部
 #
-# @within function asset:artifact/1459.ice_brand_arts_sword/trigger/2.check_condition
+# @within function asset:artifact/1461.ice_brand_arts_katana/melee/2.check_condition
 
 #> Private
 # @private
@@ -24,9 +24,9 @@
 
 # 威力計算
     # 基礎ダメージ決定
-        scoreboard players set $BaseDamage Temporary 225
+        scoreboard players set $BaseDamage Temporary 200
     # ダメージ増加量決定
-        scoreboard players set $MaxDamageBaf Temporary 775
+        scoreboard players set $MaxDamageBaf Temporary 600
     # 諸々準備
         scoreboard players set $value Temporary 600
         data modify storage api: Argument.ID set value 365
