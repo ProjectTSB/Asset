@@ -31,6 +31,6 @@
     #data modify storage api: Argument.Stack set value <スタック数>      # オプション
     #data modify storage api: Argument.DurationOperation set value "replace"   # オプション
     #data modify storage api: Argument.StackOperation set value "replace"      # オプション
-    data modify storage api: Argument.FieldOverride.Amount set value 2.5d
+    data modify storage api: Argument.FieldOverride.Amount set value 0.7d
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
