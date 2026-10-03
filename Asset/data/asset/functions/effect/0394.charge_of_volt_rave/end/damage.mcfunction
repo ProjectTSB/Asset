@@ -11,6 +11,6 @@
 # ダメージを与える
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
-    execute as @a[tag=394.this] run function api:damage/modifier
+    execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
     function api:damage/reset

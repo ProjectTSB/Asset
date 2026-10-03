@@ -13,9 +13,6 @@
     execute if data storage asset:context this{IsFullCharge:false} anchored eyes positioned ^ ^ ^1 run function asset:effect/0394.charge_of_volt_rave/end/sound/normal
     execute if data storage asset:context this{IsFullCharge: true} anchored eyes positioned ^ ^ ^1 run function asset:effect/0394.charge_of_volt_rave/end/sound/full_charge
 
-# EffectAssetには何故かthisがないので代用
-    tag @s add 394.this
-
 # 前方に再帰
     data modify storage asset:context this.Range set from storage asset:context this.MaxRange
     execute anchored eyes positioned ^-0.3 ^-0.2 ^ run function asset:effect/0394.charge_of_volt_rave/end/recursive
@@ -33,4 +30,3 @@
 # リセット
     scoreboard players reset $Range Temporary
     scoreboard players reset $MaxRange Temporary
-    tag @s remove 394.this
