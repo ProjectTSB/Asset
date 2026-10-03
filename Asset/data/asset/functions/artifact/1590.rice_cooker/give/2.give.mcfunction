@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "炊飯器"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "最大4段階のチャージをし、段階に応じた数の米粒を発射する。"}', '{"text": "発射中は再発動ができない。"}', '{"text": "朝はやっぱりお米ですよね！", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "最大4段階のチャージをし、段階に応じた数の米粒を発射する。"}', '{"text": "朝はやっぱりお米ですよね！", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value "7.0"
+    data modify storage asset:artifact AttackInfo.AttackRange set value 7
 # MP消費量 (int)
     # data modify storage asset:artifact MPCost set value
 # MP必要量 (int) (オプション)
