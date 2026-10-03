@@ -18,3 +18,4 @@
     data modify storage asset:object ID set value 2257
 # フィールド(オプション)
     data modify storage asset:object Field.Scale set value 3f
+    data modify storage asset:object Field.List set value []

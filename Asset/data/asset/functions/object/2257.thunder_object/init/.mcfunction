@@ -13,3 +13,7 @@
 
 # translation
     execute store result entity @s transformation.translation[1] float -0.0008 run data get storage asset:context this.Scale 100
+
+# 配列を50:50で変える
+    data modify storage asset:context this.List set value ["5","4","3","2","1","0"]
+    execute if predicate lib:random_pass_per/50 run data modify storage asset:context this.List set value ["5","4","2","1","0"]
