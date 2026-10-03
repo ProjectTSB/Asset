@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:ender_eye"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"雷閃","color":"#ffd138"}'
+    data modify storage asset:artifact Name set value '{"text":"閃雷","color":"#ffd138"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
