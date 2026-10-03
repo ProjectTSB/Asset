@@ -23,6 +23,8 @@
     execute if score $VectorZ Temporary matches 10000.. run data modify storage asset:temp NotInclude set value true
 
 # 加算
+# TODO:本来は√(dx^2+dz^2)とするべきだが、現状は√が使えないため、疑似的に(dx+dz)の合計で求める
+# /computeの実装とともに修正予定
     execute unless data storage asset:temp {NotInclude:true} run scoreboard players operation $VectorX Temporary += $VectorZ Temporary
     execute unless data storage asset:temp {NotInclude:true} run scoreboard players operation @s 18M.MoveSum += $VectorX Temporary
 
