@@ -52,3 +52,11 @@ Issue [#2113](https://github.com/ProjectTSB/Asset/issues/2113)、[#2106](https:/
 [再付与の補正設定](effect.md#再付与で補正を確実に設定する) は、Asset `b69bdb22de2be9171a121f49f29562ad6ca27a41` のEffect 0001のgiven/re-givenとmodifier、0233のPreviousFieldによる差分処理を照合した。固定UUIDの補正置換は本体の `docs/knowledge/architecture.md` が正本。
 
 [装備と効果の寿命](artifact.md#装備と効果の寿命を分ける) と [付与先ごとの終了条件](effect.md#付与元と付与先の終了条件を別々に決める) は、装備条件と付与先のEffect処理を分けて設計する判断基準である。付与予約・死亡時の処理・終了順は本体 `6e2b1d0850a3f0adeb7e785e11260c0b15a963c2` の [データ生成](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/give/make_effect_data.mcfunction)、[tick](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/tick.mcfunction)、[foreach](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/foreach.mcfunction) を静的に照合した。この版は処理中にEffectsを保存先から取り出す。利用する本体の契約は、その作業コピーの `docs/knowledge/asset-runtime.md` とAPIを確認する。
+
+## 効果の寿命・再付与・自己終了の根拠
+
+[装備と効果の寿命](artifact.md#装備と効果の寿命を分ける) は1412の条件判定・装備解除、399の接触移譲・remove/end、400・401の定義を照合した実例。[再付与](effect.md#再付与で補正を確実に設定する) は400のgiven/re-givenと補正設定、[自己終了](effect.md#自己終了は本体の契約に合わせる) は399のtransferによる自己remove要求と本体の書き戻し・終了順に基づく。死亡・装備解除・付与元との連動は個別仕様、イベント配送とAPI契約は提供側の責務として区別する。
+
+本体の基準commit `5d6799ed1` は旧tick/foreach方式の根拠であり、snapshot/process/finish方式の根拠ではない。後者の契約と適用範囲は依存先TheSkyBlessingの `docs/knowledge/asset-runtime.md`「Effect の保存データとイベント処理」、コードと検証の所在は同repoの `sources.md`「Effect の処理中の削除・再付与」を参照する。異なる本体の検証成功を、旧方式向けの説明が成立する証拠にしない。
+
+試験条件・実測・対象コードのsnapshot・確認範囲は [検証記録](../verification/dual-rhythm.md) にある。個別の成功試行はそのsnapshotに対する結果であり、後から変更された定義や別の本体との組合せまで保証しない。
