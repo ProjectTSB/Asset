@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:artifact/1614.wooden_snake_branch/trigger/**
-    scoreboard objectives add 
+    scoreboard objectives add 18U.StareTime dummy

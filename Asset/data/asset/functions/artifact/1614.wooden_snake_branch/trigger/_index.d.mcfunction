@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/1614.wooden_snake_branch/trigger/**
-    #declare
+    #declare tag LineHit
