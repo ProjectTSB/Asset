@@ -13,5 +13,12 @@
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
+# CanUsedでなければreturn
+    execute if entity @s[tag=!CanUsed] run return fail
+
+# チャージチェック
+    function asset:artifact/1563.thunderflash/trigger/2.check_condition/charge
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1563.thunderflash/trigger/3.main
+    function asset:artifact/1563.thunderflash/trigger/3.main

@@ -36,6 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Charge set value 0
-    data modify storage asset:effect Field.RequireChargeTick set value 20
-    data modify storage asset:effect Field.IsMaxCharge set value false
+    # data modify storage asset:effect Field.myValue set value

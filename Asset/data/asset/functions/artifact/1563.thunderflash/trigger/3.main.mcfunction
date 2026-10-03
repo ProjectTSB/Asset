@@ -9,14 +9,11 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 1段目ダメージ (10倍)
-    data modify storage api: Argument.FieldOverride.Damage.First set value {Min:3000,Max:4000}
+# ダメージ
+    data modify storage api: Argument.FieldOverride.Damage set value {Min:600,Max:800}
 
-# 2段目ダメージ (10倍)
-    data modify storage api: Argument.FieldOverride.Damage.Second set value {Min:5000,Max:6000}
-
-# チャージ時間 (最大までチャージで2段目が発動)
-    data modify storage api: Argument.FieldOverride.RequireChargeTick set value 20
+# 射程(厳密には何m移動できるか×2)
+    data modify storage api: Argument.FieldOverride.Range set value 16
 
 # チャージ用エフェクト
     data modify storage api: Argument.ID set value 375
