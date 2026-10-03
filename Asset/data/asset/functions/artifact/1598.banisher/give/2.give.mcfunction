@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "堕天", "color": "#e1c6f5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "天使を攻撃すると、命中した場所に天使の輪を召喚する。"}', '{"text": "輪は8秒間残り、内側にいる天使に毎秒200のダメージを与え続ける。"}', '{"text": "弾が尽きても、非戦闘時ならリロードが可能だ。"}', '{"text": "「力ある者、天より堕とされる運命にあり」", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "天使を攻撃すると、命中した場所に天使の輪を召喚する。"}', '{"text": "輪は8秒間残り、内側にいる天使に毎秒ダメージを与え続ける。"}', '{"text": "弾が尽きても、非戦闘時ならリロードが可能だ。"}', '{"text": "「力ある者、天より堕とされる運命にあり」", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value "30.0"
+    data modify storage asset:artifact AttackInfo.AttackRange set value 30
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 15
 # MP必要量 (int) (オプション)
