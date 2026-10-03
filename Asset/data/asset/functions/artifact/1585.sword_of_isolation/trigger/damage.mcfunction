@@ -5,7 +5,7 @@
 # @within function asset:artifact/1585.sword_of_isolation/trigger/3.main
 
 # ダメージ
-    data modify storage api: Argument.Damage set value 1500
+    data modify storage api: Argument.Damage set value 1500.0d
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     #プレイヤーの攻撃補正だけを無視
