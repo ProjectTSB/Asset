@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/1606.dimension_knife/trigger/3.main
 
-# AttakCountが3かつ、バフがあるときは次元を斬る演出
+# AttackCountが3かつ、バフがあるときは次元を斬る演出
     execute if data storage api: Return.Effect if score @s 18M.AttackCount matches 3.. run return run function asset:artifact/1606.dimension_knife/trigger/fx/dimension_slash
 
 # 通常の斬撃演出
