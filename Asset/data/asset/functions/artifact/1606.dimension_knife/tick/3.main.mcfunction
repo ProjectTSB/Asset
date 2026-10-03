@@ -22,9 +22,6 @@
     execute if score $VectorX Temporary matches 10000.. run data modify storage asset:temp NotInclude set value true
     execute if score $VectorZ Temporary matches 10000.. run data modify storage asset:temp NotInclude set value true
 
-#
-    # execute unless data storage api: Return{Vector:[0d,0d,0d]} run tellraw @a {"storage":"api:","nbt":"Return.Vector"}
-
 # 加算
     execute unless data storage asset:temp {NotInclude:true} run scoreboard players operation $VectorX Temporary += $VectorZ Temporary
     execute unless data storage asset:temp {NotInclude:true} run scoreboard players operation @s 18M.MoveSum += $VectorX Temporary
