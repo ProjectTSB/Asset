@@ -10,7 +10,8 @@
     execute as @e[type=zombie,scores={MobID=224},distance=..128] run function api:mob/remove
 
 # カボチャが召喚するオブジェクトも抹消する
-    kill @e[type=item_display,scores={ObjectID=2031..2036},distance=..50]
+    kill @e[type=item_display,scores={ObjectID=2031..2036},distance=..128]
+    kill @e[type=item_display,scores={ObjectID=2039},distance=..128]
 
 # スポーンマーカーをkill
-    kill @e[type=marker,tag=1N.SpawnMarker]
+    kill @e[type=marker,tag=1N.SpawnMarker,distance=..128]
