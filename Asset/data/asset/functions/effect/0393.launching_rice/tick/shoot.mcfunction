@@ -23,5 +23,5 @@
     playsound ogg:block.vault.eject1 player @a ~ ~ ~ 0.5 2.0
 
 # リセット
-    tag @s remove 0393.Hit
+    data modify storage asset:context this.Interval set value 2
     kill @e[type=marker,tag=SpreadMarker]

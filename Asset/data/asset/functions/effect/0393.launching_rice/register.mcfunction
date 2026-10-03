@@ -36,7 +36,7 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Interval set value 1
+    data modify storage asset:effect Field.Interval set value 0
     data modify storage asset:effect Field.Damage set value 0
     data modify storage asset:effect Field.AttackType set value ""
     data modify storage asset:effect Field.ElementType set value ""
