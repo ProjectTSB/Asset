@@ -1,8 +1,8 @@
-#> asset:object/alias/1186/tick
+#> asset:object/alias/1187/tick
 #
 # Tick時処理のエイリアス
 #
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-    function asset:object/1186.dimension_gate/tick/
+    function asset:object/1187.dimension_slash/tick/
