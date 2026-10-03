@@ -4,6 +4,9 @@
 #
 # @within function asset:object/1194.wooden_snake_bite/tick/
 
+#vfx
+    particle minecraft:crit ~ ~1 ~ 0 0 0 0.3 20 normal @a
+
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
