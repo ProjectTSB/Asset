@@ -14,11 +14,6 @@
 # fail
     execute if entity @s[tag=!CanUsed] run return fail
 
-# ベクトルが全て0の時、失敗
-   # 
-   # execute if data storage api: Return{Vector:[0.0d,0.0d,0.0d]} run tag @s remove CanUsed
-   # execute if entity @s[tag=!CanUsed] run return fail
-
 # バフがある間加算しない
     data modify storage api: Argument.ID set value 387
     function api:entity/mob/effect/get/from_id
