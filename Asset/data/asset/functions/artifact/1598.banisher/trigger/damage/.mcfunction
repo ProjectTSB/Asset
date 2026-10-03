@@ -20,3 +20,6 @@
     particle enchanted_hit ~ ~ ~ 0.2 0.5 0.2 1.0 20
     playsound item.trident.return player @a ~ ~ ~ 1.0 2.0
     playsound block.enchantment_table.use player @a ~ ~ ~ 1.0 1.2
+
+# リセット
+    tag @s remove 1598.Target
