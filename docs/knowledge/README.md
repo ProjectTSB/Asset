@@ -8,8 +8,9 @@ NBT・数値・selector・移動の共通イディオムはDevSpaceの `docs/mcf
 
 |目的|読む文書|
 |---|---|
-|Mob／Object／Effect の型・継承・インスタンス・メソッド（該当変更の前提）|[object-model.md](object-model.md)|
-|アイテム定義、登録と artifact|[artifact.md](artifact.md)|
+|Mob／Objectの型・継承・インスタンス・メソッド、カテゴリ間の契約|[object-model.md](object-model.md)|
+|Effectの定義・継承・Field・再付与・寿命・自己終了|[effect.md](effect.md)|
+|アイテム定義・登録・発動、装備と効果の寿命・責務を設計する|[artifact.md](artifact.md)|
 |Mob と AJ のライフサイクル、装備・演出のイディオム|[mob.md](mob.md)|
 |Object、移動・幾何・描画のイディオム、API storage、生成・検証|[runtime-and-tools.md](runtime-and-tools.md)|
 |ProjectTSB Wiki の作成意図と現行実装の差|[wiki-crosscheck.md](wiki-crosscheck.md)|
