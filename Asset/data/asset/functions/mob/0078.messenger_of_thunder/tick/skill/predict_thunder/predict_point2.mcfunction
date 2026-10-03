@@ -2,7 +2,7 @@
 #
 # 偏差の処理2
 #
-# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/3.predict_point1.m
+# @within function asset:mob/0078.messenger_of_thunder/tick/skill/predict_thunder/predict_point1.m
 
 # AECを召喚して拡散するを5回繰り返す
 # それぞれ起爆までの時間をそれぞれ設定する
