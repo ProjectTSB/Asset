@@ -3,6 +3,9 @@
 # 攻撃
 #
 # @within function asset:object/1194.wooden_snake_bite/tick/
+#> Private
+# @private
+    #declare score_holder $UserID
 
 #vfx
     particle minecraft:crit ~ ~1 ~ 0 0 0 0.3 20 normal @a
