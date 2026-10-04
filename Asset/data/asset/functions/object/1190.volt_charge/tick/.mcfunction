@@ -18,7 +18,7 @@
     execute as @p[tag=Owner] at @s anchored eyes positioned ^-0.5 ^ ^1 as @e[type=text_display,tag=this,distance=..128,sort=nearest,limit=1] run function asset:object/1190.volt_charge/tick/tp
 
 # 召喚者がいなければkillしてしまう
-    execute unless entity @p[tag=Owner,distance=..128] run kill @s
+    execute unless entity @p[tag=Owner,distance=..128] run function asset:object/1190.volt_charge/tick/kill
 
 # 文字変更
     data modify storage asset:temp Args.Char set from storage asset:context this.List[-1]
