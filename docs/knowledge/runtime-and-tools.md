@@ -39,13 +39,15 @@ CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`�
 
 ## docs/tests の承認と自動マージ
 
-[CODEOWNERS](../../.github/CODEOWNERS) は通常の変更を `@ChenCMD`・`@haiiro2gou` の担当とし、repo直下の `docs/`・`tests/` は所有者を指定しない。承認不要の例外を成立させるには、masterのRulesetで全PR共通の必須承認数を0、Code ownerの承認を必須、`lint` を必須チェックに設定する。CODEOWNERSを先にmasterへ反映してからRulesetを変更する。RulesetはGit管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
+Asset の master 向け PR は、write 権限を持つ人による1件の承認と `lint` の成功を必要とする。承認者を特定のメンバーへ限定しない。Ruleset は必須承認数を1、Code owner の承認必須を無効にする。差分を変更するコミットの追加時には、人と Bot のどちらの承認も取り消す。Ruleset は Git 管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
 
-[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。必須チェックが完了済みならその場でマージし、未完了ならGitHubが条件成立を待つ。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
 
-PRの更新・Draft化・マージ先変更で対象外になった場合は、GitHub Actions botが有効にしたauto-mergeを解除する。人が有効にしたauto-mergeは保持する。差分確認中にhead・base等が変化した場合は処理を見送り、次のイベントで再判定する。既存PRや手動再試行にはworkflow_dispatchの `pull_request` 番号入力を使う。
+PRの更新・Draft化・マージ先変更で対象外になった場合は、GitHub Actions botが有効にしたauto-mergeを解除する。このworkflowが付けた承認も取り消す。人が有効にしたauto-mergeは保持する。差分確認中にhead・base等が変化した場合は処理を見送り、次のイベントで再判定する。既存PRや手動再試行にはworkflow_dispatchの `pull_request` 番号入力を使う。
 
 auto-mergeを手動解除しただけでは継続的な停止にならず、次のPR更新で条件を満たせば再び有効になる。作業中のPRを自動マージさせたくない場合はDraftにしておき、Ready for reviewへ戻すと再判定される。導入前から開いているPRは、更新イベントまたはworkflow_dispatchで判定を開始する。
+
+自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot 自身が作成した PR は自己承認できないため、人の承認を待つ。
 
 workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRのコードをcheckout・実行しない。Actionsのイベントポリシーでは `pull_request_target` を許可する必要がある。GITHUB_TOKENによるマージでは後続のpush workflowが通常起動しないため、自動対象を本体・生成スクリプトへ広げる場合は、マージ後の処理も再設計する。
 

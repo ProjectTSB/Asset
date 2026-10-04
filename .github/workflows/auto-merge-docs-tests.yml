@@ -57,7 +57,20 @@ jobs:
             }
 
             const repo = `${context.repo.owner}/${context.repo.repo}`;
+            const approvalBody = 'Automatically approved: changes are limited to docs/ and tests/.';
+            const reviews = await github.paginate(github.rest.pulls.listReviews, {
+              ...params, per_page: 100,
+            });
+            const approvals = reviews.filter(review =>
+              review.user?.login === 'github-actions[bot]'
+              && review.body === approvalBody && review.state === 'APPROVED');
             if (!eligible) {
+              for (const review of approvals) {
+                await github.rest.pulls.dismissReview({
+                  ...params, review_id: review.id,
+                  message: 'The PR no longer qualifies for docs/tests auto-approval.',
+                });
+              }
               // Preserve auto-merge requests explicitly enabled by a maintainer.
               if (current.auto_merge?.enabled_by?.login === 'github-actions[bot]') {
                 await exec.exec('gh', [
@@ -66,6 +79,24 @@ jobs:
               }
               core.info('Only non-draft PRs confined to docs/ and tests/ qualify.');
               return;
+            }
+
+            // Discarding stale reviews prevents approval from carrying over to code changes.
+            const { data: rules } = await github.request(
+              'GET /repos/{owner}/{repo}/rules/branches/{branch}',
+              { ...context.repo, branch: 'master' },
+            );
+            if (!rules.some(rule => rule.type === 'pull_request'
+                && rule.parameters.dismiss_stale_reviews_on_push)) {
+              throw new Error('Auto-approval requires dismissal of stale reviews.');
+            }
+            if (current.user?.login === 'github-actions[bot]') {
+              core.info('GitHub Actions cannot approve its own PR; a maintainer must review it.');
+            } else if (!approvals.some(review => review.commit_id === current.head.sha)) {
+              await github.rest.pulls.createReview({
+                ...params, commit_id: current.head.sha,
+                event: 'APPROVE', body: approvalBody,
+              });
             }
             if (current.auto_merge) return;
 
