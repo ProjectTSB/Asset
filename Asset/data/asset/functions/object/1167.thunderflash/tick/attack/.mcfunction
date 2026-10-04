@@ -19,10 +19,10 @@
 
 # 攻撃対象は演出と噛みあわせるために、現座標と0.5,1,-0.5ブロックずらした位置を纏めて行う (2ブロックに一度雷を落とすため)
 # 若干見た目よりも判定は広くなるけど許容する
-    execute positioned ^ ^ ^-0.5 positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,dy=3,dz=0] add Target
-    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,dy=3,dz=0] add Target
-    execute positioned ^ ^ ^0.5 positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,dy=3,dz=0] add Target
-    execute positioned ^ ^ ^1 positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,dy=3,dz=0] add Target
+    function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute positioned ^ ^ ^-0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute unless data storage asset:context this{Range:1} positioned ^ ^ ^0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute unless data storage asset:context this{Range:1} unless data storage asset:context this{Range:2} positioned ^ ^ ^1 run function asset:object/1167.thunderflash/tick/attack/add_tag
 
 # Owner特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
