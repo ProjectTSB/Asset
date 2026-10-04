@@ -18,11 +18,10 @@
     data modify storage api: Argument.FieldOverride.Scale set value 3.5f
     function api:object/summon
 
-# 攻撃対象を0.5ブロック刻みで選び、前方の判定を残距離に合わせる
+# 居合と同じ0.5ブロック刻みの位置で攻撃対象を選ぶ
 # 若干見た目よりも判定は広くなるけど許容する
     execute store result score $Range Temporary run data get storage asset:context this.Range
     function asset:object/1167.thunderflash/tick/attack/add_tag
-    execute positioned ^ ^ ^-0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
     execute if score $Range Temporary matches 2.. positioned ^ ^ ^0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
     execute if score $Range Temporary matches 3.. positioned ^ ^ ^1 run function asset:object/1167.thunderflash/tick/attack/add_tag
     execute if score $Range Temporary matches 4.. positioned ^ ^ ^1.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
