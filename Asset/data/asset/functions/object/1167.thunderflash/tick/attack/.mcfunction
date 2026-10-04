@@ -8,6 +8,7 @@
 # @private
     #declare tag Target
     #declare score_holder $UserID
+    #declare score_holder $Range
 
 # 演出
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 1 2
@@ -17,12 +18,15 @@
     data modify storage api: Argument.FieldOverride.Scale set value 3.5f
     function api:object/summon
 
-# 攻撃対象は演出と噛みあわせるために、現座標と0.5,1,-0.5ブロックずらした位置を纏めて行う (2ブロックに一度雷を落とすため)
+# 攻撃対象を0.5ブロック刻みで選び、前方の判定を残距離に合わせる
 # 若干見た目よりも判定は広くなるけど許容する
+    execute store result score $Range Temporary run data get storage asset:context this.Range
     function asset:object/1167.thunderflash/tick/attack/add_tag
     execute positioned ^ ^ ^-0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
-    execute unless data storage asset:context this{Range:1} positioned ^ ^ ^0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
-    execute unless data storage asset:context this{Range:1} unless data storage asset:context this{Range:2} positioned ^ ^ ^1 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute if score $Range Temporary matches 2.. positioned ^ ^ ^0.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute if score $Range Temporary matches 3.. positioned ^ ^ ^1 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    execute if score $Range Temporary matches 4.. positioned ^ ^ ^1.5 run function asset:object/1167.thunderflash/tick/attack/add_tag
+    scoreboard players reset $Range Temporary
 
 # Owner特定
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
