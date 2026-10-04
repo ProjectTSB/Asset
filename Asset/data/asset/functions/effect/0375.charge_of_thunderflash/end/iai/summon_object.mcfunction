@@ -9,4 +9,5 @@
     data modify storage api: Argument.FieldOverride.Delay set from storage asset:context this.Delay
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Second
     execute store result storage api: Argument.FieldOverride.Range int 1 run scoreboard players get $MaxRange Temporary
+    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     function api:object/summon
