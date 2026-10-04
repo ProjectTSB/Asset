@@ -8,7 +8,7 @@
     execute store result storage asset:context this.StartDelay int 0.9999999999 run data get storage asset:context this.StartDelay 1
 
 # vfx
-    execute as @a[distance=..32] facing entity @s eyes positioned ^ ^ ^-0.05 run function asset:object/1023.star/tick/vfx
+    execute if data storage asset:context this{StartDelay:0} as @a[distance=..32] facing entity @s eyes run function asset:object/1023.star/tick/vfx
 
 # 前方の敵に誘導する
     execute if data storage asset:context this{StartDelay:0} run function asset:object/1023.star/tick/chase
