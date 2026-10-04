@@ -21,4 +21,4 @@
     data modify storage asset:object Field.Damage set value {Min:1,Max:10}
     data modify storage asset:object Field.Delay set value 10
     data modify storage asset:object Field.Range set value 8
-    data modify storage asset:object Field.Interval set value {_:0,Max:2}
+    data modify storage asset:object Field.Interval set value {_:0,Max:4}
