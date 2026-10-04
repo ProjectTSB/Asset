@@ -14,7 +14,13 @@
     execute anchored eyes positioned ^ ^-0.5 ^0.25 run function asset:artifact/1563.thunderflash/trigger/sound
 
 # ダメージ
-    data modify storage api: Argument.FieldOverride.Damage set value {Min:600,Max:800}
+    # 居合
+        data modify storage api: Argument.FieldOverride.Damage.First set value {Min:300,Max:400}
+    # 居合の後の雷
+        data modify storage api: Argument.FieldOverride.Damage.Second set value {Min:400,Max:500}
+
+# 居合後に雷が何tick後に降ってくるか
+    data modify storage api: Argument.FieldOverride.Delay set value 6
 
 # 射程(厳密には何m移動できるか×2)
     data modify storage api: Argument.FieldOverride.Range set value 16

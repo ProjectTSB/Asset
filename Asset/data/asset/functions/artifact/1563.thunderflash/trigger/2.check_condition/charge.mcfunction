@@ -8,9 +8,6 @@
 # @private
     #declare score_holder $Diff
 
-# 演出
-    # particle minecraft:trial_spawner_detection ~ ~ ~ 1 0.4 1 0 1
-
 # gametimeと最後に使用したTickの差を求める
     execute store result score $Diff Temporary run time query gametime
     scoreboard players operation $Diff Temporary -= @s 17F.LatestChargeTick
