@@ -4,21 +4,16 @@
 #
 # @within function asset:object/1167.thunderflash/tick/
 
-#> Private
-# @private
-    #declare score_holder $Interval
-
-# 進む
-    tp @s ^ ^ ^0.5
-
 # (Range - 1)
     execute store result storage asset:context this.Range int 0.9999999999 run data get storage asset:context this.Range
 
-# 2tickに一度攻撃
-    execute store result score $Interval Temporary run data get storage asset:context this.Range
-    scoreboard players operation $Interval Temporary %= $2 Const
-    execute if score $Interval Temporary matches 0 at @s run function asset:object/1167.thunderflash/tick/attack/
-    scoreboard players reset $Interval Temporary
+# 2回に1回攻撃
+    execute store result storage asset:context this.Interval._ int 0.9999999999 run data get storage asset:context this.Interval._
+    execute if data storage asset:context this.Interval{_:0} run function asset:object/1167.thunderflash/tick/attack/
+    execute if data storage asset:context this.Interval{_:0} run data modify storage asset:context this.Interval._ set from storage asset:context this.Interval.Max
+
+# 進む
+    tp @s ^ ^ ^1
 
 # Rangeが0ならkill
     execute if data storage asset:context this{Range:0} run kill @s

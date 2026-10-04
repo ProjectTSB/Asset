@@ -9,6 +9,10 @@
 
 # ここから先は神器側の効果の処理を書く
 
+# 演出
+    execute anchored eyes positioned ^-0.3 ^-0.15 ^0.3 run particle electric_spark ~ ~ ~ 0 0 0 0.5 10 normal @a
+    execute anchored eyes positioned ^ ^-0.5 ^0.25 run function asset:artifact/1563.thunderflash/trigger/sound
+
 # ダメージ
     data modify storage api: Argument.FieldOverride.Damage set value {Min:600,Max:800}
 

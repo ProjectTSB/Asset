@@ -18,6 +18,7 @@
     data modify storage asset:object ID set value 1167
 # フィールド(オプション)
     data modify storage asset:object Field.UserID set value -1
+    data modify storage asset:object Field.Damage set value {Min:1,Max:10}
     data modify storage asset:object Field.Delay set value 10
     data modify storage asset:object Field.Range set value 8
-    data modify storage asset:object Field.Damage set value {Min:1,Max:10}
+    data modify storage asset:object Field.Interval set value {_:0,Max:2}
