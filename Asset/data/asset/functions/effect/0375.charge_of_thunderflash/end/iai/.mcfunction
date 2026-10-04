@@ -13,7 +13,7 @@
     data modify storage asset:context this.MaxRange set from storage asset:context this.Range
 
 # 再帰で行けるところまで行く
-    execute positioned ^ ^ ^-0.5 run function asset:effect/0375.charge_of_thunderflash/end/iai/recursive
+    function asset:effect/0375.charge_of_thunderflash/end/iai/recursive
 
 # (MaxRange - Range)/2 をObjectに渡す
     execute store result score $Range Temporary run data get storage asset:context this.Range

@@ -6,14 +6,14 @@
 #   asset:effect/0375.charge_of_thunderflash/end/iai/
 #   asset:effect/0375.charge_of_thunderflash/end/iai/recursive
 
-# Range - 1
-    execute store result storage asset:context this.Range int 0.9999999999 run data get storage asset:context this.Range
-
 # Rangeが0ならreturn
     execute if data storage asset:context this{Range:0} run return fail
 
 # ヒットボックスがブロックに接触したならreturn
     execute positioned ^ ^ ^0.5 unless function asset:effect/0375.charge_of_thunderflash/end/iai/check/hit_box run return fail
+
+# Range - 1
+    execute store result storage asset:context this.Range int 0.9999999999 run data get storage asset:context this.Range
 
 # 再帰
     tp @s ^ ^ ^0.5
