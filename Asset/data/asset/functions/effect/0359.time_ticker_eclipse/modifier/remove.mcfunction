@@ -5,7 +5,6 @@
 # @within function
 #   asset:effect/0359.time_ticker_eclipse/end/
 #   asset:effect/0359.time_ticker_eclipse/remove/
-#   asset:effect/0359.time_ticker_eclipse/tick/
 
 # 攻撃
     data modify storage api: Argument.UUID set from storage asset:context this.UUID
