@@ -17,6 +17,6 @@
 
 # 固有バフ付与しておく
     data modify storage api: Argument.ID set value 403
-    data modify storage api: Argument.Duration set value 60
+    data modify storage api: Argument.Duration set value 30
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
