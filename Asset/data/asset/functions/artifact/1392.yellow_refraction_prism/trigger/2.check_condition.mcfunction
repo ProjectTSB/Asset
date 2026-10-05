@@ -13,16 +13,8 @@
 # CanUsedじゃないならreturn
     execute if entity @s[tag=!CanUsed] run return fail
 
-# バニラ攻撃ならreturn
-    execute if data storage asset:context Attack{IsVanilla:true} run tag @s remove CanUsed
-    execute if entity @s[tag=!CanUsed] run return fail
-
-# DoTならreturn
-    execute if data storage asset:context Attack{IsDoT:true} run return fail
-    execute if entity @s[tag=!CanUsed] run return fail
-
-# 雷属性ならreturn
-    execute if data storage asset:context Attack{ElementType:"Thunder"} run return fail
+# 攻撃条件を満たさなければ発動不可にする
+    execute unless function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition/if run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
 # Victimがいなければreturn
