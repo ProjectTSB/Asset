@@ -43,7 +43,7 @@
 # MP消費量 (int)
     data modify storage asset:artifact MPCost set value 1
 # MP必要量 (int) (オプション)
-    data modify storage asset:artifact MPRequire set value 0
+    # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
