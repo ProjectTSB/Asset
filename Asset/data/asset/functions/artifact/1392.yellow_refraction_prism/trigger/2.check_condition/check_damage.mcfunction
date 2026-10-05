@@ -4,11 +4,6 @@
 #
 # @within function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition
 
-#> Private
-# @private
-    #declare score_holder $Current
-    #declare score_holder $Require
-
 # 配列初期化
 
 # 対象選定
@@ -28,15 +23,7 @@
 # ダメージ量比例でMP減らす量を決めておく
     execute store result storage asset:temp Temp.MPReduce double -0.01 run data get storage asset:temp Temp.Main.Amount 1
 
-# 総ダメージ量のN%分のMPがあるかをチェック
-    function api:mp/get_current
-    execute store result score $Current Temporary run data get storage api: Return.CurrentMP 10
-    execute store result score $Require Temporary run data get storage asset:temp Temp.MPReduce -10
-    execute unless score $Current Temporary >= $Require Temporary run tag @s remove CanUsed
-
-    #tellraw @a {"score":{"name": "$Current","objective": "Temporary"}}
-    #tellraw @a {"score":{"name": "$Require","objective": "Temporary"}}
-
-# リセット
-    scoreboard players reset $Current Temporary
-    scoreboard players reset $Require Temporary
+# 消費APIと同じ丸めで必要MPを取得して判定する
+    execute store result storage api: Argument.Threshold double -0.1 run data get storage asset:temp Temp.MPReduce 10
+    function api:mp/check
+    execute unless data storage api: Return{IsThresholdOrMore:true} run tag @s remove CanUsed
