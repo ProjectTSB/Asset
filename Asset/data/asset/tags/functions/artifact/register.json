@@ -1,6 +1,7 @@
 {
     "values": [
         "asset:artifact/1563.thunderflash/register",
+        "asset:artifact/1636.mana_controller/register",
         "asset:artifact/1606.dimension_knife/register",
         "asset:artifact/1474.ninja_kunai/register",
         "asset:artifact/1470.ninja_hood/register",
