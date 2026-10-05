@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0404.blaze_barrage/_/register",
+        "asset:effect/0403.blaze_charge/_/register",
         "asset:effect/0388.opened_dimension/_/register",
         "asset:effect/0387.dimensional_castaway/_/register",
         "asset:effect/0385.latency/_/register",
