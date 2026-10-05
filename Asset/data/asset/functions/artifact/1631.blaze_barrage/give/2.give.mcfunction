@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ブレイズ・バラージュ","color":"#fa4a14"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"地上に立って使用すると大きくジャンプし","color":"white"}','{"text":"その状態で再使用すると無数の炎の弾幕を放つ","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"地上に立って使用すると大きくジャンプし","color":"white"}','{"text":"その後に空中で使用すると無数の炎の弾幕を放つ","color":"white"}','{"text":"空中で使用してから2.5秒間は落下ダメージを無効化する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

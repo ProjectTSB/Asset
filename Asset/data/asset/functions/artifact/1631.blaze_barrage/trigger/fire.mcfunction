@@ -17,3 +17,10 @@
     data modify storage api: Argument.FieldOverride.Damage set value {Min:500,Max:800}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 落下ダメージ無効化
+    data modify storage api: Argument.ID set value 190
+    data modify storage api: Argument.Duration set value 50
+    data modify storage api: Argument.Stack set value 10
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset

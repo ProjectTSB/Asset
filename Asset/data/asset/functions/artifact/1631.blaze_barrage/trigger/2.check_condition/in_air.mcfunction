@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1631.blaze_barrage/trigger/2.check_condition
+# @within function asset:artifact/1631.blaze_barrage/trigger/2.check_condition/if
 
 # OnGround:1bなら失敗
     execute if data storage api: {OnGround:1b} run return 0
