@@ -17,7 +17,7 @@
 
     # 弾の設定 (Range/2 = 射程), (Speed×0.5 = 1tickに何ブロック進むか)
         data modify storage api: Argument.FieldOverride.Range set value 40
-        data modify storage api: Argument.FieldOverride.Speed set value 4
+        data modify storage api: Argument.FieldOverride.Speed set value 5
     # 付与
         data modify storage api: Argument.ID set value 404
         function api:entity/mob/effect/give
