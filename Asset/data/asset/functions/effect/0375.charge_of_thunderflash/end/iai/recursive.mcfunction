@@ -18,6 +18,11 @@
 # Range - 1
     execute store result storage asset:context this.Range int 0.9999999999 run data get storage asset:context this.Range
 
-# 再帰
+# 移動
     tp @s ^ ^ ^0.5
+
+# 演出
+    execute at @s run particle flash ~ ~1 ~ 0 0 0 0 1
+
+# 再帰
     execute positioned as @s run function asset:effect/0375.charge_of_thunderflash/end/iai/recursive
