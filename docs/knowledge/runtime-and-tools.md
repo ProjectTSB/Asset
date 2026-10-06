@@ -1,6 +1,6 @@
 # Object、API、生成と検証
 
-Object／Effect の変更前に [型・インスタンス・継承モデル](object-model.md) を読む。Object は `Asset/data/asset/functions/object/<4桁ID>.<name>/` の型定義から生成され、summon／init／tick や任意メソッドを自前実装・継承・明示 super で組み合わせる。基底の abstract_projectile を使う例と、子の値を先に設定する初期化契約も同文書に示す。
+Object の変更前に [型・インスタンス・継承モデル](object-model.md)、Effect の変更前に [Effect の定義・イベント・寿命](effect.md) を読む。Object は `Asset/data/asset/functions/object/<4桁ID>.<name>/` の型定義から生成され、summon／init／tick や任意メソッドを自前実装・継承・明示 super で組み合わせる。基底の abstract_projectile を使う例と、子の値を先に設定する初期化契約も同文書に示す。
 
 ディレクトリはゼロ埋め4桁だが、`storage asset:object ID` と API へ渡す ID は整数である。生成時の FieldOverride はクラスの既定 Field に merge される。個体の Field は OhMyDat の `ObjectField` に保持され、処理中だけ `storage asset:context this.*` に展開される。実装から `this` を変えた結果は本体の呼び出し境界で書き戻される。Effect は別の保存形式・イベント呼び出し方式を持つため、Object の経路をそのまま適用しない。
 
@@ -36,6 +36,24 @@ CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`�
 ### コメントに保存された生成ツールの情報
 
 [Sapphielの粒子コード](../../Asset/data/asset/functions/mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_2_hg_kickcombo/6.1.particle_kick.mcfunction) にある `# [ImportKey]: ...` はShapes Generator用の情報である（ユーザー確認済み）。Minecraftが実行しないコメントでも外部ツールとの接続を持つため、不要な文字列として削除しない。この印だけからファイル全体を生成物と決めつけたり、未確認の再生成手順を作ったりしない。
+
+## docs/tests の承認と自動マージ
+
+Asset の master 向け PR は、write 権限を持つ人による1件の承認と `lint` の成功を必要とする。承認者を特定のメンバーへ限定しない。Ruleset は必須承認数を1、Code owner の承認必須を無効にする。差分を変更するコミットの追加時には、人と Bot のどちらの承認も取り消す。Ruleset は Git 管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
+
+[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+
+追加コミットが入るたびに差分全体を再判定し、引き続き docs/tests だけなら Bot が改めて承認する。本体コードが加わった場合は、人による新しい承認が必要になる。
+
+PRの更新・Draft化・マージ先変更で対象外になった場合は、GitHub Actions botが有効にしたauto-mergeを解除する。このworkflowが付けた承認も取り消す。人が有効にしたauto-mergeは保持する。差分確認中にhead・base等が変化した場合は処理を見送り、次のイベントで再判定する。既存PRや手動再試行にはworkflow_dispatchの `pull_request` 番号入力を使う。
+
+auto-mergeを手動解除しただけでは継続的な停止にならず、次のPR更新で条件を満たせば再び有効になる。作業中のPRを自動マージさせたくない場合はDraftにしておき、Ready for reviewへ戻すと再判定される。導入前から開いているPRは、更新イベントまたはworkflow_dispatchで判定を開始する。
+
+自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot 自身が作成した PR は自己承認できないため、人の承認を待つ。
+
+workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRのコードをcheckout・実行しない。Actionsのイベントポリシーでは `pull_request_target` を許可する必要がある。GITHUB_TOKENによるマージでは後続のpush workflowが通常起動しないため、自動対象を本体・生成スクリプトへ広げる場合は、マージ後の処理も再設計する。
+
+差分判定とCLI呼出しの回帰確認は `node --test .github/tests/auto-merge-docs-tests.test.cjs`。APIとCLIを置き換えたローカル検証であり、Rulesetや実際のGitHubマージ動作の検証とは区別する。
 
 ## NBTの整数カウンタを、1未満の倍率で減らす
 
