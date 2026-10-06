@@ -8,8 +8,8 @@
     particle minecraft:witch ~ ~ ~ 0.5 0.5 0.5 2 50 force @a[distance=..150]
     execute at @a[tag=1073.Player] rotated ~ 0 positioned ^ ^ ^2 run particle minecraft:witch ~ ~ ~ 0.5 0.5 0.5 2 50 force @a[distance=..150]
 # SE
-    playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 1
-    execute at @a[tag=1073.Player] rotated ~ 0 positioned ^ ^ ^2 run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 1
+    playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 0.8 1
+    execute at @a[tag=1073.Player] rotated ~ 0 positioned ^ ^ ^2 run playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 0.8 1
 
 # TP
     execute at @a[tag=1073.Player] rotated ~ 0 run tp @s ^ ^ ^2

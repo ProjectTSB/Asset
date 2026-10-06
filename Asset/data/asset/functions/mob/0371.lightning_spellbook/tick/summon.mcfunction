@@ -8,19 +8,16 @@
 # @private
     #declare score_holder $Difficulty
 
-# 難易度値を取得する
+# 難易度値に比例した攻撃回数を設定
+# (難易度値 * 2 + 2)回攻撃する
     function api:global_vars/get_difficulty
-    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty
-
-# KillTickを設定 (116 + 難易度値 * 16)
-# ((KillTick - 100) / 8) 回だけ攻撃する
-    scoreboard players operation $Difficulty Temporary *= $16 Const
-    execute store result storage api: Argument.FieldOverride.KillTick int 1 run scoreboard players add $Difficulty Temporary 116
+    execute store result score $Difficulty Temporary run data get storage api: Return.Difficulty 2
+    execute store result storage api: Argument.FieldOverride.AttackCount int 1 run scoreboard players add $Difficulty Temporary 2
 
 # 魔法を召喚
     data modify storage api: Argument.ID set value 2049
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @e[type=zombie,tag=this,distance=..3,limit=1] MobUUID
+    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
     function api:object/summon
 
 # リセット
