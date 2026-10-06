@@ -20,5 +20,5 @@
 # 使用可能な信仰
     data modify storage asset:artifact CanUsedGod set value "ALL"
 
-# 神器を作成して渡す。
+# 神器を作成して渡す
     function asset:artifact/common/give

@@ -16,6 +16,23 @@ Mob／Object の数値 alias と親配列探索ではなく、function tag の I
 
 再付与時の `PreviousField` は旧 Field の snapshot であり、永続フィールドそのものではない。前回 stack と今回 stack の境界を検出する既存セット Effect は、given/re-given の末尾で現在値を `this.PrevStack` に保存する。解除レベルは Wiki が Lv4 を「運用上未使用」とする一方、現行 `0244.aurora_armor` と `0246.flame_devil_armor` は `RequireClearLv 4` を使うため、その記述は現状には採用しない。
 
+## 付与元で調整値を指定する
+
+神器ごとの補正量・効果時間は、付与元から公開give APIの `Argument.Duration` と `Argument.FieldOverride` で渡せる。Effectは受け取った値で補正や後続効果を処理する。これにより、調整する値を神器側にまとめつつ、接触・解除などの振る舞いをEffect自身に保てる。APIの引数と再付与時のFieldの契約は、依存先TheSkyBlessingの `docs/knowledge/asset-runtime.md` を参照する。
+
+[双律の印章の付与処理](../../Asset/data/asset/functions/artifact/1412.seal_of_dual_rhythm/trigger/3.main.mcfunction) は、軽減のDurationと次のFieldを399へ渡す。399〜401を直接付与する場合も、呼出側がDurationと必要なFieldを指定する。
+
+| Effect | FieldOverrideの必須項目 | 意味 |
+| --- | --- | --- |
+| 399 | `Amount`（double） | 被ダメージの軽減割合 |
+| 399 | `BoostAmount`（double） | 接触相手の与ダメージの増加割合 |
+| 399 | `BoostDuration`（int） | 接触相手の攻撃強化の時間（tick） |
+| 399 | `CooldownDuration`（int） | 軽減の再付与を待つ時間（tick） |
+| 400 | `Amount`（double） | 与ダメージの増加割合 |
+| 401 | なし | Durationで再付与までの待ち時間を指定 |
+
+399は接触時にBoostAmount・BoostDurationを400へ、CooldownDurationを401へ引き継ぐ。399〜401のregisterにはDurationや調整用のMaxDurationを重ねて定義しない。上限は本体の既定値を使い、付与元で時間を延ばしても旧設定値で切り詰められないようにする。
+
 ## 接触対象から付与先自身を除外する
 
 Effectイベント中の自己除外には、本体が付与先へ付ける `this` タグを使える。[399の接触判定](../../Asset/data/asset/functions/effect/0399.dual_rhythm_guard/tick/contact.mcfunction) は `tag=!this` で対象から外し、自己除外専用タグの追加・削除を持たない。`this` の管理は本体へ委ねる。この実装はEffectイベントへの `this` 付与・公開に対応した本体が前提で、未対応版では自己除外にならない。付与区間と実行主体の契約は、依存先TheSkyBlessingの `docs/knowledge/asset-runtime.md`「付与要求とイベント配送」を参照する。
@@ -34,7 +51,7 @@ Effectイベント中の自己除外には、本体が付与先へ付ける `thi
 
 [攻撃力低下のgiven](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/given/.mcfunction) と [re-given](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/re-given/.mcfunction) は、どちらからも現在Stackに応じた補正を設定する実例である。後者は同じUUIDの補正を解除してから設定する。非スタック型で固定値を設定する場合と、Stackに応じて値を作り直す場合を区別する。
 
-[0400 双律・攻の補正設定](../../Asset/data/asset/functions/effect/0400.dual_rhythm_boost/modifier/add.mcfunction) はgivenとre-givenから同じUUID・倍率を設定する。
+[0400 双律・攻の補正設定](../../Asset/data/asset/functions/effect/0400.dual_rhythm_boost/modifier/add.mcfunction) はgivenとre-givenから同じUUIDへ `this.Amount` を設定する。初回given前の再付与でも補正を作り、適用済みの効果に異なるAmountを渡した場合は、その値へ置き換える。再付与を演出だけにすると、前者では補正が欠け、後者では以前の補正量が残る。
 
 Fieldの蓄積やstack差分を扱う効果では、現在値の再設定だけでは履歴を保てない。`PreviousField` と初期値の扱いを含めてgiven/re-givenを設計する。「何度呼ばれても最終状態を揃える処理」と「今回分を追加する処理」を分け、すべてのEffectを同じ補正設定方式に統一しない。
 

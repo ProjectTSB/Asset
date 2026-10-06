@@ -8,13 +8,9 @@
     data modify storage asset:effect Name set value '{"text":"双律・攻","color":"gold"}'
 # Effectの説明文
     data modify storage asset:effect Description set value ['{"text":"与ダメージが増加する","color":"white"}']
-# 効果時間（tick）
-    data modify storage asset:effect Duration set value 300
-# 最大効果時間（tick）
-    data modify storage asset:effect MaxDuration set value 300
-# 再付与時は効果時間を更新する。
+# 再付与時は効果時間を更新する
     data modify storage asset:effect DurationOperation set value "forceReplace"
-# 効果を重複させない。
+# 効果を重複させない
     data modify storage asset:effect MaxStack set value 1
 # 悪い効果かどうか
     data modify storage asset:effect IsBadEffect set value false

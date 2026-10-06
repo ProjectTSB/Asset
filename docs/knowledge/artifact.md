@@ -68,7 +68,7 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 再使用までの待ち時間が装備解除後も続く仕様では、装備中の効果と再付与を禁止する状態を別々に持つ。装備解除で前者を消しても後者を残せるよう、生成・解除する主体と寿命を分ける。装備中のtickだけで時間を減らすと、外している間に進むという仕様を満たせない。
 
-Effectは、付与先に状態を持たせ、本体のEffect処理と表示・解除規則を利用したい場合の選択肢になる。[双律の印章の条件判定](../../Asset/data/asset/functions/artifact/1412.seal_of_dual_rhythm/trigger/2.check_condition.mcfunction) は効果と待機用Effectの存在を確認し、[装備解除](../../Asset/data/asset/functions/artifact/1412.seal_of_dual_rhythm/trigger/dis_equip/main.mcfunction) は効果だけを削除する。[待機用Effectの定義](../../Asset/data/asset/functions/effect/0401.dual_rhythm_cooldown/register.mcfunction) は装備と独立した時間・表示・死亡時の扱いを持つ。
+Effectは、付与先に状態を持たせ、本体のEffect処理と表示・解除規則を利用したい場合の選択肢になる。[双律の印章の条件判定](../../Asset/data/asset/functions/artifact/1412.seal_of_dual_rhythm/trigger/2.check_condition.mcfunction) は効果と待機用Effectの存在を確認し、[装備解除](../../Asset/data/asset/functions/artifact/1412.seal_of_dual_rhythm/trigger/dis_equip/main.mcfunction) は効果だけを削除する。[待機用Effectの定義](../../Asset/data/asset/functions/effect/0401.dual_rhythm_cooldown/register.mcfunction) は表示・死亡時の扱いを持ち、付与時に指定された時間を装備と独立して管理する。
 
 選ぶ前に、待機状態を誰が持つか、死亡・解除スキルで消えてよいか、何の時間を数えるかを決める。この方式は本体が対象を処理するtickを数えるもので、未接続・サーバー停止中も実時間で進むタイマーではない。装備している間だけ進めたい仕様にもそのまま転用しない。表示、悪い効果の分類、解除レベルは待機状態ごとの設計値である。
 
