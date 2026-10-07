@@ -21,7 +21,7 @@
 # ダメージ・UserID
     data modify storage asset:object Field.Damage.Default set value {Min:1,Max:5}
     data modify storage asset:object Field.Damage.LowHealthPer set value {Min:6,Max:10}
-    data modify storage asset:object Field.Damage.UserID set value -1
+    data modify storage asset:object Field.UserID set value -1
 
 # 移動速度
     data modify storage asset:object Field.ChaseSpeed set value 0.6
