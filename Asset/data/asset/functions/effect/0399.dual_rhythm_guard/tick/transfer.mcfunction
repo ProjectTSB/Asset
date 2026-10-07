@@ -17,7 +17,7 @@
 
 # 自身にクールダウンを付与する
     data modify storage api: Argument.ID set value 401
-    data modify storage api: Argument.Duration set from storage asset:context this.CooldownDuration
+    data modify storage api: Argument.Duration set from storage asset:context this.Cooldown
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

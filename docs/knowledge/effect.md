@@ -27,11 +27,11 @@ Mob／Object の数値 alias と親配列探索ではなく、function tag の I
 | 399 | `Amount`（double） | 被ダメージの軽減割合 |
 | 399 | `BoostAmount`（double） | 接触相手の与ダメージの増加割合 |
 | 399 | `BoostDuration`（int） | 接触相手の攻撃強化の時間（tick） |
-| 399 | `CooldownDuration`（int） | 軽減の再付与を待つ時間（tick） |
+| 399 | `Cooldown`（int） | 軽減の再付与を待つ時間（tick） |
 | 400 | `Amount`（double） | 与ダメージの増加割合 |
 | 401 | なし | Durationで再付与までの待ち時間を指定 |
 
-399は接触時にBoostAmount・BoostDurationを400へ、CooldownDurationを401へ引き継ぐ。399〜401のregisterにはDurationや調整用のMaxDurationを重ねて定義しない。上限は本体の既定値を使い、付与元で時間を延ばしても旧設定値で切り詰められないようにする。
+399は接触時にBoostAmount・BoostDurationを400へ、Cooldownを401へ引き継ぐ。399〜401のregisterにはDurationや調整用のMaxDurationを重ねて定義しない。上限は本体の既定値を使い、付与元で時間を延ばしても旧設定値で切り詰められないようにする。
 
 ## 接触対象から付与先自身を除外する
 
