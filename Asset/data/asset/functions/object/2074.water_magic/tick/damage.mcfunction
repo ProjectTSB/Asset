@@ -4,11 +4,15 @@
 #
 # @within function asset:object/2074.water_magic/tick/
 
-# 演出
+# playsound
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 2 0
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 1 0
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 0 0
-    execute positioned ~ ~0.3 ~ rotated 0 0 run function asset:object/2074.water_magic/tick/vfx/square
+
+# 演出用Object召喚
+    data modify storage api: Argument.ID set value 2277
+    data modify storage api: Argument.FieldOverride.Scale set value 6f
+    function api:object/summon
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
