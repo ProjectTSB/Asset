@@ -13,6 +13,10 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1195.Owner
     scoreboard players reset $UserID Temporary
 
+#攻撃状態でない場合の処理
+
+#攻撃状態の処理
+
 
 # リセット
     tag @p[tag=1195.Owner] remove 1195.Owner
