@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1469.insulator_boots/give/1.trigger",
+        "asset:artifact/1468.insulator_leggings/give/1.trigger",
+        "asset:artifact/1467.insulator_chestplate/give/1.trigger",
+        "asset:artifact/1466.insulator_helmet/give/1.trigger",
         "asset:artifact/1570.pile_of_accumulated_dust/give/1.trigger",
         "asset:artifact/1585.sword_of_isolation/give/1.trigger",
         "asset:artifact/1637.precise_mana_controller/give/1.trigger",
