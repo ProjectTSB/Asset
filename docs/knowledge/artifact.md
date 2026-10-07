@@ -28,6 +28,16 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 神器tickの対象状態と公開タグは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「神器tickと死亡・スペクテイター」を参照する。装備回収と発動経路の停止を混同せず、仕様で必要な条件を `2.check_condition` に置く。
 
+## 属性表示と実際の攻撃、クールダウンの指定を揃える
+
+神器の `AttackInfo.AttackType`／`ElementType` はLore用の配列で、表示する属性を列挙する。実際の攻撃はDamage APIへ単一の属性を渡す。値の一覧と計算規則は、依存先TheSkyBlessingの `docs/knowledge/api-and-storage.md`「攻撃の属性と能力値のAttributesを区別する」を参照する。
+
+[Elemental Swordのgive](../../Asset/data/asset/functions/artifact/0057.elemental_sword/give/2.give.mcfunction) は火・水・雷を列挙し、[発動処理](../../Asset/data/asset/functions/artifact/0057.elemental_sword/trigger/3.main.mcfunction) は使用回数から一つを選んで `Argument.ElementType` へ渡す。複数の属性がLoreにあることは、一回のdamageにすべての属性が適用される意味ではない。属性を変える実装では、Lore・API引数・演出の三箇所が同じ仕様を表すか確認する。
+
+クールダウンは攻撃属性とは分け、どの神器・プレイヤーと待ち時間を共有したいかで決める。アイテム個体のLCD、プレイヤーごとの種別TCD、全プレイヤーの該当神器で共有するGCDを使い分ける。GCDの定義名は `SpecialCooldown` である。TCDではType・Durationをgiveに定義し、発動時の共通checkと共通useへ接続する。[Call Elemental Familiar](../../Asset/data/asset/functions/artifact/0295.call_elemental_familiar/give/2.give.mcfunction) は主種別に `summon` の600tick、第二種別に `longRange` の80tickを指定する実例である。二系統を使う設計の例であり、数値は他の神器の既定値ではない。共有範囲・更新・減算の契約は、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「LCD・TCD・GCDは共有範囲と時間の進め方で選ぶ」にある。
+
+種別を追加する場合は本体の判定・表示に加え、Assetの [表出力スクリプト](../../scripts/update-artifact-spreadsheet.scala.sc) のCooldownType解釈も確認する。既存の四種を使う神器の追加と、新種別の導入を同じ作業として扱わない。
+
 ## 使用の継続・解除と、発動時の情報の保持
 
 スニークの一定時間到達で一度発動させる場合と、その時間以降ずっと発動させる場合は、`sneak/<N>s` と `sneak/keep/<N>s` の配送を使い分ける。slotごとの時間とcontextの絞り込みは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「遅延・再入・破棄をイベント境界から読む」を参照する。
@@ -61,3 +71,29 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 [簡易革防具](../../Asset/data/asset/functions/artifact/0090.leather_armor_set/trigger/3.main.mcfunction) 等の `RepairCost:9999` は、金床でエンチャント本を合成し、その防具へエンチャントを付けることを防ぐための指定である（ユーザー確認済み）。改名を含むすべての金床操作を禁止するという説明へ広げない。
 
 [Aurora Scythe](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/trigger/3.main.mcfunction) のダメージ1.5倍はMP30%以下が現行仕様で、40%以下とするコメントが古い（ユーザー確認済み）。閾値のレビューでコメント側へ実装を揃えない。
+
+## 装備と効果の寿命を分ける
+
+### 装備解除後も続く待機状態を持つ
+
+再使用までの待ち時間が装備解除後も続く仕様では、装備中の効果と再付与を禁止する状態を別々に持つ。装備解除で前者を消しても後者を残せるよう、生成・解除する主体と寿命を分ける。装備中のtickだけで時間を減らすと、外している間に進むという仕様を満たせない。
+
+Effectは、付与先に状態を持たせ、本体のEffect処理と表示・解除規則を利用したい場合の選択肢になる。装備解除で効果だけを消し、待機用Effectは残す構成なら、装備の有無と待機時間を独立させられる。
+
+選ぶ前に、待機状態を誰が持つか、死亡・解除スキルで消えてよいか、何の時間を数えるかを決める。この方式は本体が対象を処理するtickを数えるもので、未接続・サーバー停止中も実時間で進むタイマーではない。装備している間だけ進めたい仕様にもそのまま転用しない。表示、悪い効果の分類、解除レベルは待機状態ごとの設計値である。
+
+### 効果の付与と、その効果の振る舞いを分担する
+
+効果を神器以外から付与しても同じ振る舞いにしたい場合、神器は付与条件と装備解除時の削除要求を担当し、Effectは自身の接触判定・補正・終了を担当する。神器からEffectの内部タグ・Field・modifierを直接操作せず、公開APIと [カテゴリ間の契約](object-model.md#カテゴリごとの違い) を使う。
+
+一方、装備slotや神器固有の使用条件が必要な処理までEffectへ移すと、その入力を失う。共通化の境界はファイル数ではなく、どこから付与されても成立する効果か、装備・操作に依存する条件かで決める。
+
+### 付与元と付与先の終了条件を別々に決める
+
+他人へ効果を付与する神器では、付与元の装備解除・死亡と、付与先の死亡を別々に仕様化する。付与元への連動が必要か、どの終了を移譲の契機とするかの判断は [Effectの寿命設計](effect.md#付与元と付与先の終了条件を別々に決める) に従う。
+
+### 付与要求と実際の発効を区別する
+
+常時効果を補充する処理では、「存在しないときに付与する」のか、「発効済みの効果へ反応する」のかを分ける。前者は付与待ち・削除待ちも含む存在確認で重複要求を防ぎ、後者はEffectのイベントとその入力条件に従って実行する。神器がEffectの内部状態を読み解いて独自の発動条件を増やす方式へ一律に置き換えない。
+
+given/re-givenと通常tickの配送、削除予約、再付与の反映時点は本体の契約に依存する。実行順を確認せず「giveしたコマンドの直後から有効」「両者へ同じtickに反映する」と仮定しない。[再付与の設計](effect.md#再付与で補正を確実に設定する) も参照する。

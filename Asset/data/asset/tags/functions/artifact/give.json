@@ -1,6 +1,11 @@
 {
     "values": [
         "asset:artifact/1570.pile_of_accumulated_dust/give/1.trigger",
+        "asset:artifact/1585.sword_of_isolation/give/1.trigger",
+        "asset:artifact/1637.precise_mana_controller/give/1.trigger",
+        "asset:artifact/1615.ema_of_abundance/give/1.trigger",
+        "asset:artifact/1636.mana_controller/give/1.trigger",
+        "asset:artifact/1606.dimension_knife/give/1.trigger",
         "asset:artifact/1474.ninja_kunai/give/1.trigger",
         "asset:artifact/1473.ninja_sandals/give/1.trigger",
         "asset:artifact/1472.ninja_pants/give/1.trigger",

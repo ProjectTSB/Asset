@@ -8,7 +8,8 @@
 
 | 結論の所在 | 確認したコードと範囲 |
 | --- | --- |
-| [型・継承・Field](object-model.md) | Mob 0237→2000、Object 2070→1、Effect 79→29。本体のsummon・register・alias・親探索・context退避・Field保存を照合。診断と強制停止、同一個体のdispatchと別個体への切替を区別 |
+| [型・継承・Field](object-model.md) | Mob 0237→2000、Object 2070→1。本体のsummon・register・alias・親探索・context退避・Field保存を照合。診断と強制停止、同一個体のdispatchと別個体への切替を区別 |
+| [Effect](effect.md) | Effect 79→29の単一親継承とField更新。再付与・寿命の判断は下記「Effectと装備の寿命設計の根拠」 |
 | [神器](artifact.md) | 0057のgive/trigger/common check/use、装備Effectとmodifierの利用。`1.trigger`の定型維持はユーザー方針 |
 | [MobとAJ](mob.md) | Attack/Hurt handlerのVictim/Attacker、0327のRejoinRule、AJモデル初期化とoptional登録 |
 | [Object・生成](runtime-and-tools.md) | 1051の一時score、1069のFieldOverride、1086のmacro、`scripts/`の入力と作用先、CI workflow |
@@ -45,3 +46,9 @@ PRの状態・保存diff・確認時点のコードを分けて判定した。RE
 - PR #30 / [comment](https://github.com/ProjectTSB/Asset/pull/30#discussion_r1438557484): Mob の内部値・コメントの指摘。#2112 の内部 ID 修正と併せ、summon/register の ID 一致を検証項目に採用。
 
 Issue [#2113](https://github.com/ProjectTSB/Asset/issues/2113)、[#2106](https://github.com/ProjectTSB/Asset/issues/2106)、[#2063](https://github.com/ProjectTSB/Asset/issues/2063) は装備状態の残留・環境差・回復Mob tagの調査候補として確認したもの。各機能の一般的な契約を確定する根拠とは区別する。
+
+## Effectと装備の寿命設計の根拠
+
+[再付与の補正設定](effect.md#再付与で補正を確実に設定する) は、Asset `b69bdb22de2be9171a121f49f29562ad6ca27a41` のEffect 0001のgiven/re-givenとmodifier、0233のPreviousFieldによる差分処理を照合した。固定UUIDの補正置換は本体の `docs/knowledge/architecture.md` が正本。
+
+[装備と効果の寿命](artifact.md#装備と効果の寿命を分ける) と [付与先ごとの終了条件](effect.md#付与元と付与先の終了条件を別々に決める) は、装備条件と付与先のEffect処理を分けて設計する判断基準である。付与予約・死亡時の処理・終了順は本体 `6e2b1d0850a3f0adeb7e785e11260c0b15a963c2` の [データ生成](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/give/make_effect_data.mcfunction)、[tick](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/tick.mcfunction)、[foreach](https://github.com/ProjectTSB/TheSkyBlessing/blob/6e2b1d0850a3f0adeb7e785e11260c0b15a963c2/TheSkyBlessing/data/asset_manager/functions/effect/foreach.mcfunction) を静的に照合した。この版は処理中にEffectsを保存先から取り出す。利用する本体の契約は、その作業コピーの `docs/knowledge/asset-runtime.md` とAPIを確認する。
