@@ -11,7 +11,7 @@
 # ID指定する
     data modify storage asset:artifact TargetID set value 1570
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {MPRequire:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {MPRequire:true,CDMessage:true}
     function asset:artifact/common/check_condition/hotbar
 
 #バニラ起因の攻撃ならreturn
@@ -29,7 +29,7 @@
 
 # MPチェック
     tag @s remove CanUsed
-    data modify storage asset:artifact DisabledCheckFlag set value {Believe:true,LocalCooldown:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {Believe:true,LocalCooldown:true,MPMessage:true}
     function asset:artifact/common/check_condition/hotbar
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
