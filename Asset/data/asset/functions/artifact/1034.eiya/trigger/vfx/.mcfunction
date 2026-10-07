@@ -24,10 +24,10 @@
     execute if score @s SQ.Count matches 8 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.3508f,-0.6139f,0.1792f,0.684f]
 
 # 9発目のみ色々追加でやる
-    execute if score @s SQ.Count matches 9 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.5581f,-0.3377f,0.6518f,0.3868f]
+    execute if score @s SQ.Count matches 9 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.6103f,-0.3044f,0.6032f,0.4135f]
     execute if score @s SQ.Count matches 9 run data modify storage api: Argument.FieldOverride.Scale set value [10f,10f,0.01f]
     execute if score @s SQ.Count matches 9 anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/1034.eiya/trigger/vfx/9
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
-    execute anchored eyes positioned ^ ^ ^1.1 positioned ~ ~-0.2 ~ rotated ~ ~-3 run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^1.1 positioned ~ ~-0.4 ~ rotated ~ ~-3 run function api:object/summon
