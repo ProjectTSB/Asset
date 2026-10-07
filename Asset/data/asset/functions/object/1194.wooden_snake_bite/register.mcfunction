@@ -20,3 +20,5 @@
     data modify storage asset:object Field.List set value ["b","a","9","8","7","6","5","4","3","2","1","0"]
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.UserID set value -1
+    data modify storage asset:object Field.MPModifier set value 0.05d
+    data modify storage asset:object Field.Duration set value 1
