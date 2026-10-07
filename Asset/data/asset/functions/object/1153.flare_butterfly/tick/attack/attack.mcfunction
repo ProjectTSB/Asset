@@ -4,11 +4,6 @@
 #
 # @within function asset:object/1153.flare_butterfly/tick/attack/
 
-#> Private
-# @private
-    #declare score_holder $UserID
-    #declare score_holder $HealthPer
-
 # 演出
     playsound entity.blaze.shoot neutral @a ~ ~ ~ 0.6 1.5
     playsound entity.blaze.shoot neutral @a ~ ~ ~ 0.6 1.6
@@ -27,7 +22,8 @@
     function api:damage/single_damage_session/close
 
 # リセット
-    scoreboard players reset $UserID Temporary
     scoreboard players reset $HealthPer Temporary
-    function asset:object/1153.flare_butterfly/tick/attack/cooldown/reset
+
+# 攻撃を終了してクールダウンを開始する
+    data modify storage asset:context this.AttackCD._ set from storage asset:context this.AttackCD.Max
     data modify storage asset:context this.IsAttackMode set value false

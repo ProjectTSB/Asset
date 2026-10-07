@@ -5,7 +5,7 @@
 # @within function asset:object/1153.flare_butterfly/**
     #declare tag 1153.Owner
 
-#> tag
+#> 攻撃時の体力割合
 # @within function asset:object/1153.flare_butterfly/tick/attack/**
     #declare score_holder $HealthPer
 
