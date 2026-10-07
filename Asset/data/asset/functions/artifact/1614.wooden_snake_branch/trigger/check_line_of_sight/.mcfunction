@@ -8,8 +8,8 @@
     function asset:artifact/1614.wooden_snake_branch/trigger/check_line_of_sight/loop
 
 #tagを持っているならスコアを増加でなければ0にリセット
-    scoreboard players add @e[tag=LineHit,tag=Enemy,tag=!Uninterferable,distance=..8] 18U.StareTime 1
-    scoreboard players reset @e[tag=Enemy,tag=!Uninterferable,tag=!LineHit,distance=..64] 18U.StareTime
+    scoreboard players add @e[type=#lib:living_without_player,tag=LineHit,tag=Enemy,tag=!Uninterferable,distance=..8] 18U.StareTime 1
+    scoreboard players reset @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!LineHit,distance=..64] 18U.StareTime
 
 #リセット
-    tag @e[tag=LineHit,distance=..64] remove LineHit
+    tag @e[type=#lib:living_without_player,tag=LineHit,distance=..64] remove LineHit

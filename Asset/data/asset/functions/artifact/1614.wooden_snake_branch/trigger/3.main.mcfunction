@@ -16,4 +16,4 @@
 
 
 #スコアリセット
-    scoreboard players reset @e[distance=..64] 18U.StareTime
+    scoreboard players reset @e[tag=Enemy,tag=!Uninterferable,distance=..64] 18U.StareTime
