@@ -30,4 +30,4 @@
 
 # 召喚
     data modify storage api: Argument.ID set value 2001
-    execute anchored eyes positioned ^ ^ ^1.1 positioned ~ ~-0.5 ~ rotated ~ ~-3 run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^1.1 positioned ~ ~-0.2 ~ rotated ~ ~-3 run function api:object/summon
