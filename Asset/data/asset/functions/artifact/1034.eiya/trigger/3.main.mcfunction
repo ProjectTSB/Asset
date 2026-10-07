@@ -23,8 +23,7 @@
     scoreboard players add @s SQ.Count 1
 
 # 斬撃演出
-    function asset:artifact/1034.eiya/trigger/slash
-
+    function asset:artifact/1034.eiya/trigger/vfx
 
 # ダメージ
     execute if entity @s[scores={SQ.Count=..8}] run function asset:artifact/1034.eiya/trigger/4.damage
