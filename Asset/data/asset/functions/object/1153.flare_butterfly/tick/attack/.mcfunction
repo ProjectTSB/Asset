@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1153.flare_butterfly/tick/move/chase_enemy/m
+# @within function asset:object/1153.flare_butterfly/tick/move/chase_enemy/process
 
 # 発生までのディレイ
     execute store result storage asset:context this.AttackDelay._ int 0.9999999999 run data get storage asset:context this.AttackDelay._

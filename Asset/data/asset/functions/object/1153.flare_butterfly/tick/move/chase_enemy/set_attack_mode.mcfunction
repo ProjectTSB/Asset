@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1153.flare_butterfly/tick/move/chase_enemy/m
+# @within function asset:object/1153.flare_butterfly/tick/move/chase_enemy/process
 
 # 攻撃モード
     data modify storage asset:context this.IsAttackMode set value true

@@ -1,4 +1,4 @@
-#> asset:object/1153.flare_butterfly/predicate/near_owner
+#> asset:object/1153.flare_butterfly/predicate/owner_near
 #
 #
 #

@@ -1,4 +1,4 @@
-#> asset:object/1153.flare_butterfly/predicate/near_enemy
+#> asset:object/1153.flare_butterfly/predicate/enemy_around_owner
 #
 #
 #
