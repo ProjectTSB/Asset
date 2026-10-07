@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"木蛇の枝","color":"#7DA920"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"視線を合わせた敵1体に向かって噛みつき、攻撃する"}','{"text":"噛みついた後、3秒間自身のMP回復量が+15%上昇する"}','{"text":"睨まれ固まった蛙を吸収し成長する木","color":gray}','{"text":"やがて、より大きな得物を探すようになった","color":gray}']
+    data modify storage asset:artifact Lore set value ['{"text":"視線を合わせた敵1体に向かって噛みついて攻撃する"}','{"text":"噛みついた後、3秒間MP回復量が+15%上昇する"}','{"text":"睨まれ固まった蛙を吸収し成長する木","color":gray}','{"text":"やがて、より大きな得物を探すようになった","color":gray}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
