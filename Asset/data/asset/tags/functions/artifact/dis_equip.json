@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:artifact/1615.ema_of_abundance/trigger/dis_equip/",
+        "asset:artifact/1606.dimension_knife/dis_equip/1.trigger",
+        "asset:artifact/1474.ninja_kunai/dis_equip/",
+        "asset:artifact/1430.shield_of_fate/trigger/dis_equip/",
+        "asset:artifact/0772.dolphin_amulet/trigger/dis_equip/",
+        "asset:artifact/1409.mana_charm/trigger/dis_equip/",
         "asset:artifact/1325.calamity_chain/trigger/dis_equip/",
         "asset:artifact/1318.blue_bouquet/trigger/dis_equip/",
         "asset:artifact/1317.oblivious_feather/trigger/dis_equip/",
@@ -9,7 +15,6 @@
         "asset:artifact/1138.over_pulse_bodyarmor/dis_equip/",
         "asset:artifact/1137.over_pulse_headgear/dis_equip/",
         "asset:artifact/1125.moon_accessory/trigger/dis_equip/",
-        "asset:artifact/0860.angel_wing/trigger/dis_equip/",
         "asset:artifact/0991.soul_mate/dis_equip/",
         "asset:artifact/0557.catastrophe/dis_equip/",
         "asset:artifact/0556.catastrophe/dis_equip/",
