@@ -1,4 +1,4 @@
-#> asset:artifact/1034.eiya/trigger/5.damage2
+#> asset:artifact/1034.eiya/trigger/damage/9
 #
 # 9段目のダメージ
 #

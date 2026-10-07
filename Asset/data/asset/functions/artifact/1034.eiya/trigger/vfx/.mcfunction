@@ -1,4 +1,4 @@
-#> asset:artifact/1034.eiya/trigger/vfx
+#> asset:artifact/1034.eiya/trigger/vfx/
 #
 #
 #
@@ -11,9 +11,7 @@
     # scoreboard players set @s SQ.Count 8
 
 # playsound
-    execute if score @s SQ.Count matches ..8 run playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.6 1.5
-    execute if score @s SQ.Count matches ..8 run playsound minecraft:item.trident.throw player @a ~ ~ ~ 0.6 1.2
-    execute if score @s SQ.Count matches ..8 run playsound minecraft:item.trident.return player @a ~ ~ ~ 0.6 1.2
+    execute if score @s SQ.Count matches ..8 anchored eyes positioned ^ ^ ^1.1 positioned ~ ~-0.5 ~ run function asset:artifact/1034.eiya/trigger/vfx/1-8
 
 # left_rotation
     execute if score @s SQ.Count matches 1 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [-0.3197f,-0.6307f,-0.4726f,0.526f]
@@ -28,7 +26,7 @@
 # 9発目のみ色々追加でやる
     execute if score @s SQ.Count matches 9 run data modify storage api: Argument.FieldOverride.Transformation.left_rotation set value [0.5581f,-0.3377f,0.6518f,0.3868f]
     execute if score @s SQ.Count matches 9 run data modify storage api: Argument.FieldOverride.Scale set value [10f,10f,0.01f]
-    execute if score @s SQ.Count matches 9 anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/1034.eiya/trigger/vfx/slash9.2
+    execute if score @s SQ.Count matches 9 anchored eyes positioned ^ ^ ^1.5 run function asset:artifact/1034.eiya/trigger/vfx/9
 
 # 召喚
     data modify storage api: Argument.ID set value 2001

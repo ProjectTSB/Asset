@@ -23,11 +23,11 @@
     scoreboard players add @s SQ.Count 1
 
 # 斬撃演出
-    function asset:artifact/1034.eiya/trigger/vfx
+    function asset:artifact/1034.eiya/trigger/vfx/
 
 # ダメージ
-    execute if entity @s[scores={SQ.Count=..8}] run function asset:artifact/1034.eiya/trigger/4.damage
-    execute if entity @s[scores={SQ.Count=9}] run function asset:artifact/1034.eiya/trigger/5.damage2
+    execute if entity @s[scores={SQ.Count=..8}] run function asset:artifact/1034.eiya/trigger/damage/1-8
+    execute if entity @s[scores={SQ.Count=9}] run function asset:artifact/1034.eiya/trigger/damage/9
 
 # Countのリセット
     execute if entity @s[scores={SQ.Count=9..}] run scoreboard players reset @s SQ.Count

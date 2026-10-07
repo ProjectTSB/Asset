@@ -1,4 +1,4 @@
-#> asset:artifact/1034.eiya/trigger/4.damage
+#> asset:artifact/1034.eiya/trigger/damage/1-8
 #
 # ダメージ処理部
 #
