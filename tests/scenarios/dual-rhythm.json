@@ -1,7 +1,7 @@
 {
   "name": "dual-rhythm-1412",
   "scope": {
-    "verified": "Explicitly initialized Flora players; artifact grants guard; Effect owns contact and transfer; inventory/tick/Effect/modifier integration; no natural-login or HP-damage assertion. Caller-supplied amounts and durations; initial re-given and changed-amount refresh.",
+    "verified": "Explicitly initialized Flora players; artifact grants guard; Effect owns contact and transfer; inventory/tick/Effect/modifier integration; no natural-login or HP-damage assertion. Caller-supplied amounts and durations; given initialization and same-amount refresh; pending-given overwrite is investigated separately in core.",
     "fixture": "Fresh flat world; protocol clients; first_join and faith tags set explicitly; time advanced with tick step. The Death tag is set directly for condition checks, not a death/respawn lifecycle test. Area entry settles before spectator checks. Final lifecycle checks give/remove Effect 399 through public APIs; an independent modifier UUID belongs only to the test fixture.",
     "notVerified": [
       "rendering",
@@ -325,14 +325,13 @@
       ]
     },
     {
-      "name": "Separate players and give boost twice before event",
+      "name": "Separate players and give boost",
       "commands": [
         "tp SealTarget 5.5 80 0.5",
         "tp SealThird 10.5 80 0.5",
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 300",
         "data modify storage api: Argument.FieldOverride set value {Amount:0.2d}",
-        "execute as SealTarget run function api:entity/mob/effect/give",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -341,11 +340,11 @@
       ]
     },
     {
-      "name": "Process re-given without initial given",
+      "name": "Process initial given",
       "ticks": 1
     },
     {
-      "name": "Double give applies only one boost",
+      "name": "Initial given applies twenty percent boost",
       "commands": [
         "execute as SealTarget run function api:modifier/attack/base/get",
         "data get storage api: Return.Attack.Base"
@@ -826,13 +825,8 @@
       "ticks": 1
     },
     {
-      "name": "Give guard twice before initial given with caller-configured values",
+      "name": "Give guard with caller-configured values",
       "commands": [
-        "data modify storage api: Argument.ID set value 399",
-        "data modify storage api: Argument.Duration set value 40",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.25d,BoostAmount:0.4d,BoostDuration:500,Cooldown:1600}",
-        "execute as SealThird run function api:entity/mob/effect/give",
-        "function api:entity/mob/effect/reset",
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 40",
         "data modify storage api: Argument.FieldOverride set value {Amount:0.25d,BoostAmount:0.4d,BoostDuration:500,Cooldown:1600}",
@@ -844,7 +838,7 @@
       ]
     },
     {
-      "name": "Initialize guard through re-given",
+      "name": "Initialize configured guard through given",
       "ticks": 1
     },
     {
@@ -911,11 +905,11 @@
       ]
     },
     {
-      "name": "Refresh active boost with a different amount and longer duration",
+      "name": "Refresh active boost with the same amount and longer duration",
       "commands": [
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 600",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.5d}",
+        "data modify storage api: Argument.FieldOverride set value {Amount:0.4d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -924,15 +918,15 @@
       ]
     },
     {
-      "name": "Apply changed boost parameters",
+      "name": "Apply longer boost duration",
       "ticks": 1
     },
     {
-      "name": "Re-given replaces amount without stacking",
+      "name": "Re-given preserves configured amount without stacking",
       "commands": [
         "execute as SealTarget run function api:modifier/attack/base/get",
         "execute store result score #DualRhythmValue Temporary run data get storage api: Return.Attack.Base 1000000",
-        "execute if score #DualRhythmValue Temporary matches 1499999..1500001",
+        "execute if score #DualRhythmValue Temporary matches 1399999..1400001",
         "scoreboard players reset #DualRhythmValue Temporary"
       ],
       "expect": [
@@ -956,7 +950,7 @@
       "commands": [
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 40",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.6d}",
+        "data modify storage api: Argument.FieldOverride set value {Amount:0.4d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -969,11 +963,11 @@
       "ticks": 1
     },
     {
-      "name": "Shorter refresh applies new amount",
+      "name": "Shorter refresh preserves configured amount",
       "commands": [
         "execute as SealTarget run function api:modifier/attack/base/get",
         "execute store result score #DualRhythmValue Temporary run data get storage api: Return.Attack.Base 1000000",
-        "execute if score #DualRhythmValue Temporary matches 1599999..1600001",
+        "execute if score #DualRhythmValue Temporary matches 1399999..1400001",
         "scoreboard players reset #DualRhythmValue Temporary"
       ],
       "expect": [

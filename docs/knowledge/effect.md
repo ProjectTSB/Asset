@@ -43,17 +43,15 @@ Effectイベント中の自己除外には、本体が付与先へ付ける `thi
 
 実例は [0001のend入口](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/_/end.mcfunction) → [endの処理](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/end/.mcfunction)。共通の補正処理を呼ぶ場合も、必ずイベントの `/.mcfunction` を経由する。処理先の `@within` はこのイベント関数を指定し、定型入口から直接呼べる宣言を残さない。入口の確認では、コメント以外がID判定と所定の関数呼出しの1行だけであること、イベント名・ID・参照先が一致することを照合する。
 
-## 再付与で補正を確実に設定する
+## 再付与時の処理は効果の変化に合わせる
 
-複数の発動元から同じ非スタック型バフを付与できる場合、最初のgivenを必ず通る前提で初期化しない。付与要求とイベント配送の契約は、依存先TheSkyBlessingの `docs/knowledge/asset-runtime.md` にある。最初のgiven前に再付与される経路では、re-givenだけでも必要な補正が設定されるようにする。
+再付与で補正を更新するかは、通常の付与経路で補正量やStackが変化するかで判断する。FieldOverrideで値を受け取ることだけを、異なる値で再付与される根拠にしない。
 
-非スタック型バフでは、givenとre-givenの両方から同じUUID・補正値を設定し、必要な状態を作る方法が使える。重複させずに同じ最終状態へ戻せる根拠は、本体の `docs/knowledge/architecture.md`「能力補正は識別できる寄与から組み立てる」にある。終了時も自分のUUIDだけを解除する。同じEffectの共有補正を表すUUIDであることが条件で、付与元ごとの独立した重ね掛けが必要なら、同一UUIDによる置換をそのまま採用しない。
+[攻撃力低下のgiven](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/given/.mcfunction) と [re-given](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/re-given/.mcfunction) は、現在Stackに応じて補正を設定する。Stackの変化に応じた更新と、固定量の効果の時間更新を区別する。Fieldの蓄積や差分を扱う場合も、PreviousFieldと初期値の扱いを含めて設計する。
 
-[攻撃力低下のgiven](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/given/.mcfunction) と [re-given](../../Asset/data/asset/functions/effect/0001.attack_base_debuff/re-given/.mcfunction) は、どちらからも現在Stackに応じた補正を設定する実例である。後者は同じUUIDの補正を解除してから設定する。非スタック型で固定値を設定する場合と、Stackに応じて値を作り直す場合を区別する。
+双律の印章は全装備者が同じ補正量を渡すため、399・400の補正はgivenで設定し、re-givenでは演出だけを再生する。再付与時の時間更新は本体のDurationOperationに委ね、remove/endで自身のUUIDの補正だけを解除する。
 
-[0400 双律・攻の補正設定](../../Asset/data/asset/functions/effect/0400.dual_rhythm_boost/modifier/add.mcfunction) はgivenとre-givenから同じUUIDへ `this.Amount` を設定する。初回given前の再付与でも補正を作り、適用済みの効果に異なるAmountを渡した場合は、その値へ置き換える。再付与を演出だけにすると、前者では補正が欠け、後者では以前の補正量が残る。
-
-Fieldの蓄積やstack差分を扱う効果では、現在値の再設定だけでは履歴を保てない。`PreviousField` と初期値の扱いを含めてgiven/re-givenを設計する。「何度呼ばれても最終状態を揃える処理」と「今回分を追加する処理」を分け、すべてのEffectを同じ補正設定方式に統一しない。
+初回givenが実行されずre-givenに置き換わる問題は、本体のイベント配送として調査・修正する。個別Effectで初期化を重複させる方針へ一般化しない。既知の問題は[TheSkyBlessing #2308](https://github.com/ProjectTSB/TheSkyBlessing/issues/2308)、確認結果は[検証記録](../verification/dual-rhythm.md)を参照する。
 
 ## 付与元と付与先の終了条件を別々に決める
 
