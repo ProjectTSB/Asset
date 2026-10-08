@@ -60,7 +60,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {CustomPotionColor:14024944,HideFlags:63}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:63,CustomPotionColor:16777215}
 
 # 神器の入手用function
     function asset:artifact/common/give
