@@ -15,7 +15,7 @@
     #MP回復量バフの設定
     data modify storage api: Argument.FieldOverride.Duration set value 60
     data modify storage api: Argument.FieldOverride.MPModifier set value 0.15d
-    execute at @e[scores={18U.StareTime=40..},distance=..8,sort=nearest,limit=1] facing entity @s eyes positioned ^ ^ ^0.6 run function api:object/summon
+    execute at @e[type=#lib:living_without_player,scores={18U.StareTime=40..},distance=..8,sort=nearest,limit=1] facing entity @s eyes positioned ^ ^ ^0.6 run function api:object/summon
 
 
 #スコアリセット
