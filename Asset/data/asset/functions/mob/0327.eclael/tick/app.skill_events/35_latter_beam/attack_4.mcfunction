@@ -32,13 +32,8 @@
     function api:damage/reset
     tag @a remove 93.Temp.AttackTarget
 
-# 弾召喚
-    data modify storage api: Argument.ID set value 2190
-    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Beam
-    data modify storage api: Argument.FieldOverride.Rotation set from entity @s Rotation
-    data modify storage api: Argument.FieldOverride.Angle set value -1.74533f
-    execute store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
-    execute positioned ^ ^1 ^1 run function api:object/summon
+# 飛ぶ斬撃を召喚
+    execute positioned ^ ^1 ^1 run function asset:mob/0327.eclael/tick/app.general/summon_object/slash_beam.m {Angle:-1.74533f}
 
 # 演出
     data modify storage api: Argument.ID set value 2001
