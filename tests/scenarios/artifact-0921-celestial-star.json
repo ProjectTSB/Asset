@@ -1,0 +1,439 @@
+{
+  "name": "artifact-0921-celestial-star",
+  "scope": "Artifact 921 and Effect 402 on a frozen flat test world. Fixture uses explicit first_join, Believe.Flora, survival players with max_health base 100, direct /damage and HPRegenCooldown reset for heal measurement, and angel sandbag 10012 summoned after players are counted (HP above 9000) for damage deltas. Clicks are fed through ClickCarrotEvent so the real player tick, artifact trigger, cooldown and Effect tick run. Checks that daytime use is rejected, the longRange/heal type cooldown settings, placement position, starfield object 1197 creation on detonation (at max stage 5 objects with 24 nebula and 40 constellation line text displays including back copies; at stage 1 only 2 objects without constellation lines) and removal after its lifetime (not rendering), power-up timing, detonation window at 20.5s, damage/heal amounts and ranges, stage-1 multiplier, and expiry. Particles and sounds are not checked (client does not render).",
+  "players": [
+    "StarUser",
+    "StarAlly",
+    "StarFar"
+  ],
+  "steps": [
+    {
+      "name": "Fixture: players, wall and artifact",
+      "commands": [
+        "gamerule doMobSpawning false",
+        "gamerule doDaylightCycle false",
+        "time set 1000",
+        "forceload add -32 -32 32 32",
+        "fill -20 79 -6 20 79 24 stone",
+        "fill -20 80 -6 20 90 24 air",
+        "fill -3 80 8 3 84 8 stone",
+        "scoreboard objectives add devspace_verify dummy",
+        "gamemode survival @a",
+        "execute as @a at @s run function core:handler/first_join",
+        "tag @a remove Believe.None",
+        "tag @a add Believe.Flora",
+        "clear @a",
+        "attribute StarAlly minecraft:generic.max_health base set 100",
+        "attribute StarFar minecraft:generic.max_health base set 100",
+        "data modify storage api: Argument.Heal set value 100f",
+        "data modify storage api: Argument.FixedHeal set value true",
+        "execute as StarAlly run function api:heal/",
+        "execute as StarFar run function api:heal/",
+        "function api:heal/reset",
+        "tp StarUser 0.5 80 0.5 0 0",
+        "tp StarAlly -3.5 80 6.5 0 0",
+        "tp StarFar -12.5 80 7.5 0 0",
+        "data modify storage api: Argument.ID set value 921",
+        "execute as StarUser at @s run function api:artifact/give/from_id",
+        "execute if data entity StarUser SelectedItem.tag.TSB{ID:921}",
+        "execute if data entity StarUser SelectedItem.tag.TSB{TypeCooldown:{Type:\"longRange\",Duration:60},SecondaryTypeCooldown:{Type:\"heal\",Duration:600}}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Let the fixture settle",
+      "ticks": 5
+    },
+    {
+      "name": "Allies start at full health of 100",
+      "commands": [
+        "data get entity StarAlly Health",
+        "data get entity StarFar Health",
+        "attribute StarAlly minecraft:generic.max_health get"
+      ],
+      "expect": [
+        "StarAlly has the following entity data: 100\\.0f",
+        "StarFar has the following entity data: 100\\.0f"
+      ]
+    },
+    {
+      "name": "Summon sandbags after players are counted",
+      "commands": [
+        "data modify storage api: Argument.ID set value 10012",
+        "execute positioned 4.5 80 7.5 run function api:mob/summon",
+        "tag @e[type=#lib:living_without_player,distance=..0.5,x=4.5,y=80,z=7.5] add StarNear",
+        "data modify storage api: Argument.ID set value 10012",
+        "execute positioned 12.5 80 7.5 run function api:mob/summon",
+        "tag @e[type=#lib:living_without_player,distance=..0.5,x=12.5,y=80,z=7.5] add StarOutside",
+        "execute if entity @e[tag=StarNear,limit=1]",
+        "execute if entity @e[tag=StarOutside,limit=1]",
+        "execute store result storage devspace_verify:star NearCount int 1 if entity @e[tag=StarNear]",
+        "data get storage devspace_verify:star NearCount",
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_initial devspace_verify run data get storage api: Return.Health",
+        "execute if score #near_initial devspace_verify matches 9001.."
+      ],
+      "expect": [
+        "Test passed",
+        "following contents: 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Click in the daytime",
+      "commands": [
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "StarUser to 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Process the daytime click",
+      "ticks": 1
+    },
+    {
+      "name": "Daytime click neither places the star nor starts GCD",
+      "commands": [
+        "data remove storage api: Return.Effect",
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect",
+        "execute unless score $ArtifactSpecialCooldown Global matches 1..",
+        "time set 18000"
+      ],
+      "expect": [
+        "(Test passed[^\\n]*\\n(.*\\n)*){2}",
+        "Set the time to 18000"
+      ]
+    },
+    {
+      "name": "Place the star with a real click",
+      "commands": [
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "StarUser to 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Process the placement tick",
+      "ticks": 1
+    },
+    {
+      "name": "Placement creates Effect 402 at stack 1 in front of the wall and starts GCD",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Stack",
+        "data get storage api: Return.Effect.Duration",
+        "data get storage api: Return.Effect.Field.Pos.Z",
+        "data get storage api: Return.Effect.Field.Pos.X",
+        "scoreboard players get $ArtifactSpecialCooldown Global"
+      ],
+      "expect": [
+        "following contents: 1(?!\\d)",
+        "following contents: 410(?!\\d)",
+        "following contents: 7\\.75d",
+        "following contents: 0\\.5d",
+        "has 1(199|200) \\[Global\\]"
+      ]
+    },
+    {
+      "name": "Advance to 79 ticks after placement",
+      "ticks": 79
+    },
+    {
+      "name": "Still stack 1 just before 4 seconds; floating lights keep three states within range",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Stack",
+        "execute store result storage devspace_verify:star BugCount int 1 if data storage api: Return.Effect.Field.Bugs[]",
+        "data get storage devspace_verify:star BugCount",
+        "data get storage api: Return.Effect.Field.Bugs[0].Radius",
+        "data get storage api: Return.Effect.Field.Bugs[0].Pitch",
+        "execute unless data storage api: Return.Effect.Field.Bugs[].Distance"
+      ],
+      "expect": [
+        "following contents: 1(?!\\d)",
+        "star has the following contents: 3(?!\\d)",
+        "api: has the following contents: (7\\d|8\\d|9\\d|1[0-2]\\d|130)(?!\\d)",
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Advance to 80 ticks after placement",
+      "ticks": 1
+    },
+    {
+      "name": "Stack 2 at 4 seconds",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Stack",
+        "data get storage api: Return.Effect.Field.Spread"
+      ],
+      "expect": [
+        "following contents: 2(?!\\d)",
+        "0\\.195d"
+      ]
+    },
+    {
+      "name": "Advance to 409 ticks after placement",
+      "ticks": 329
+    },
+    {
+      "name": "Stack 6 with one tick left; record HP before detonation",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Stack",
+        "data get storage api: Return.Effect.Duration",
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_before devspace_verify run data get storage api: Return.Health",
+        "execute as @e[tag=StarOutside,limit=1] run function api:mob/get_health",
+        "execute store result score #outside_before devspace_verify run data get storage api: Return.Health",
+        "damage StarAlly 80 minecraft:generic",
+        "damage StarFar 80 minecraft:generic",
+        "scoreboard players set @a HPRegenCooldown 0",
+        "data get entity StarAlly Health",
+        "data get entity StarFar Health",
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "following contents: 6(?!\\d)",
+        "following contents: 1(?!\\d)",
+        "StarAlly has the following entity data: 20\\.0f",
+        "StarFar has the following entity data: 20\\.0f"
+      ]
+    },
+    {
+      "name": "Detonate at 410 ticks after placement (last tick of 20.5s)",
+      "ticks": 1
+    },
+    {
+      "name": "Detonation queues targets by 1m distance bands; a second click during the wave is ignored",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Field.Detonation.Multiplier",
+        "execute store result storage devspace_verify:star QueueSize int 1 if data storage api: Return.Effect.Field.Detonation.Queue[]",
+        "data get storage devspace_verify:star QueueSize",
+        "data get storage api: Return.Effect.Field.Detonation.Queue[0].Ring",
+        "execute if data storage api: Return.Effect.Field.Detonation.Queue[0].MobUUID",
+        "data get storage api: Return.Effect.Field.Detonation.Queue[1].Ring",
+        "execute if data storage api: Return.Effect.Field.Detonation.Queue[1].UserID",
+        "data get storage api: Return.Effect.Field.Detonation.Queue[2].Ring",
+        "execute if data storage api: Return.Effect.Field.Detonation.Queue[2].UserID",
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_mid devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #near_mid devspace_verify -= #near_before devspace_verify",
+        "scoreboard players get #near_mid devspace_verify",
+        "execute store result storage devspace_verify:star Starfields int 1 if entity @e[type=item_display,scores={ObjectID=1197}]",
+        "data get storage devspace_verify:star Starfields",
+        "execute store result storage devspace_verify:star Glyphs int 1 if entity @e[type=text_display,tag=1197.Glyph]",
+        "data get storage devspace_verify:star Glyphs",
+        "execute store result storage devspace_verify:star Lines int 1 if entity @e[type=text_display,tag=1197.Line]",
+        "data get storage devspace_verify:star Lines",
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "api: has the following contents: 10(?!\\d)",
+        "star has the following contents: 3(?!\\d)",
+        "contents: 5\\nTest passed, count: 1\\n[^\\n]*contents: 5\\nTest passed, count: 1\\n[^\\n]*contents: 8\\nTest passed, count: 1",
+        "#near_mid has 0 ",
+        "star has the following contents: 5(?!\\d)",
+        "star has the following contents: 24(?!\\d)",
+        "star has the following contents: 40(?!\\d)"
+      ]
+    },
+    {
+      "name": "Advance the wave to 4m",
+      "ticks": 2
+    },
+    {
+      "name": "Targets at 4-5m are not hit before the wave reaches them",
+      "commands": [
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_mid devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #near_mid devspace_verify -= #near_before devspace_verify",
+        "scoreboard players get #near_mid devspace_verify",
+        "data get entity StarAlly Health"
+      ],
+      "expect": [
+        "#near_mid has 0 ",
+        "StarAlly has the following entity data: 20\\.0f"
+      ]
+    },
+    {
+      "name": "Advance the wave to 6m",
+      "ticks": 1
+    },
+    {
+      "name": "The wave at 6m damages the enemy and heals the ally together",
+      "commands": [
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_after devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #near_delta devspace_verify = #near_before devspace_verify",
+        "scoreboard players operation #near_delta devspace_verify -= #near_after devspace_verify",
+        "scoreboard players get #near_delta devspace_verify",
+        "data get entity StarAlly Health",
+        "execute store result storage devspace_verify:star Starfields int 1 if entity @e[type=item_display,scores={ObjectID=1197}]",
+        "data get storage devspace_verify:star Starfields"
+      ],
+      "expect": [
+        "#near_delta has 6000 ",
+        "StarAlly has the following entity data: 60\\.0f",
+        "star has the following contents: 5(?!\\d)"
+      ]
+    },
+    {
+      "name": "Advance the wave to 8m",
+      "ticks": 1
+    },
+    {
+      "name": "Outside targets are untouched and the star is removed after the last band",
+      "commands": [
+        "execute as @e[tag=StarOutside,limit=1] run function api:mob/get_health",
+        "execute store result score #outside_after devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #outside_delta devspace_verify = #outside_before devspace_verify",
+        "scoreboard players operation #outside_delta devspace_verify -= #outside_after devspace_verify",
+        "scoreboard players get #outside_delta devspace_verify",
+        "data get entity StarFar Health",
+        "data remove storage api: Return.Effect",
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "#outside_delta has 0 ",
+        "StarFar has the following entity data: 20\\.0f",
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Wait for GCD (1200) and heal TCD (600) to end",
+      "ticks": 1200
+    },
+    {
+      "name": "Starfield objects and their text displays are gone after their lifetime",
+      "commands": [
+        "execute unless entity @e[type=item_display,scores={ObjectID=1197}]",
+        "execute unless entity @e[type=text_display,tag=1197.Line]",
+        "execute unless entity @e[type=text_display,tag=1197.Glyph]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Place again",
+      "commands": [
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "StarUser to 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Process second placement",
+      "ticks": 1
+    },
+    {
+      "name": "Second placement exists; record HP; click again on the next tick",
+      "commands": [
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Stack",
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_before devspace_verify run data get storage api: Return.Health",
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "following contents: 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Detonate one tick after placement and process the queue",
+      "ticks": 10
+    },
+    {
+      "name": "Stage 1 deals 3000, removes the star, and shows the starfield without constellations",
+      "commands": [
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_after devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #near_delta devspace_verify = #near_before devspace_verify",
+        "scoreboard players operation #near_delta devspace_verify -= #near_after devspace_verify",
+        "scoreboard players get #near_delta devspace_verify",
+        "data remove storage api: Return.Effect",
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect",
+        "execute store result storage devspace_verify:star Starfields int 1 if entity @e[type=item_display,scores={ObjectID=1197}]",
+        "data get storage devspace_verify:star Starfields",
+        "execute unless entity @e[type=text_display,tag=1197.Line]"
+      ],
+      "expect": [
+        "#near_delta has 3000 ",
+        "get/from_id\\nTest passed\\n",
+        "star has the following contents: 2\\nTest passed(?!,)"
+      ]
+    },
+    {
+      "name": "Wait for GCD (1200) and heal TCD (600) to end again",
+      "ticks": 1200
+    },
+    {
+      "name": "Place a star that will expire",
+      "commands": [
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "StarUser to 1(?!\\d)"
+      ]
+    },
+    {
+      "name": "Process third placement and wait 410 ticks",
+      "ticks": 411
+    },
+    {
+      "name": "Star is gone 410 ticks after placement; click at 411 does not detonate",
+      "commands": [
+        "data remove storage api: Return.Effect",
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect",
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_before devspace_verify run data get storage api: Return.Health",
+        "scoreboard players set StarUser ClickCarrotEvent 1"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Process the late click",
+      "ticks": 1
+    },
+    {
+      "name": "Late click neither detonates nor places during cooldown",
+      "commands": [
+        "execute as @e[tag=StarNear,limit=1] run function api:mob/get_health",
+        "execute store result score #near_after devspace_verify run data get storage api: Return.Health",
+        "scoreboard players operation #near_delta devspace_verify = #near_before devspace_verify",
+        "scoreboard players operation #near_delta devspace_verify -= #near_after devspace_verify",
+        "scoreboard players get #near_delta devspace_verify",
+        "data remove storage api: Return.Effect",
+        "data modify storage api: Argument.ID set value 402",
+        "execute as StarUser run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "#near_delta has 0 ",
+        "Test passed"
+      ]
+    }
+  ]
+}
