@@ -28,6 +28,16 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 神器tickの対象状態と公開タグは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「神器tickと死亡・スペクテイター」を参照する。装備回収と発動経路の停止を混同せず、仕様で必要な条件を `2.check_condition` に置く。
 
+## 属性表示と実際の攻撃、クールダウンの指定を揃える
+
+神器の `AttackInfo.AttackType`／`ElementType` はLore用の配列で、表示する属性を列挙する。実際の攻撃はDamage APIへ単一の属性を渡す。値の一覧と計算規則は、依存先TheSkyBlessingの `docs/knowledge/api-and-storage.md`「攻撃の属性と能力値のAttributesを区別する」を参照する。
+
+[Elemental Swordのgive](../../Asset/data/asset/functions/artifact/0057.elemental_sword/give/2.give.mcfunction) は火・水・雷を列挙し、[発動処理](../../Asset/data/asset/functions/artifact/0057.elemental_sword/trigger/3.main.mcfunction) は使用回数から一つを選んで `Argument.ElementType` へ渡す。複数の属性がLoreにあることは、一回のdamageにすべての属性が適用される意味ではない。属性を変える実装では、Lore・API引数・演出の三箇所が同じ仕様を表すか確認する。
+
+クールダウンは攻撃属性とは分け、どの神器・プレイヤーと待ち時間を共有したいかで決める。アイテム個体のLCD、プレイヤーごとの種別TCD、全プレイヤーの該当神器で共有するGCDを使い分ける。GCDの定義名は `SpecialCooldown` である。TCDではType・Durationをgiveに定義し、発動時の共通checkと共通useへ接続する。[Call Elemental Familiar](../../Asset/data/asset/functions/artifact/0295.call_elemental_familiar/give/2.give.mcfunction) は主種別に `summon` の600tick、第二種別に `longRange` の80tickを指定する実例である。二系統を使う設計の例であり、数値は他の神器の既定値ではない。共有範囲・更新・減算の契約は、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「LCD・TCD・GCDは共有範囲と時間の進め方で選ぶ」にある。
+
+種別を追加する場合は本体の判定・表示に加え、Assetの [表出力スクリプト](../../scripts/update-artifact-spreadsheet.scala.sc) のCooldownType解釈も確認する。既存の四種を使う神器の追加と、新種別の導入を同じ作業として扱わない。
+
 ## 使用の継続・解除と、発動時の情報の保持
 
 スニークの一定時間到達で一度発動させる場合と、その時間以降ずっと発動させる場合は、`sneak/<N>s` と `sneak/keep/<N>s` の配送を使い分ける。slotごとの時間とcontextの絞り込みは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「遅延・再入・破棄をイベント境界から読む」を参照する。
