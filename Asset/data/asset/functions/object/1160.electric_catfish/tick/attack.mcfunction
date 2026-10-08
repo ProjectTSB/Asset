@@ -20,7 +20,7 @@
 
 # 周囲のMobにもダメージ
     execute store result storage api: Argument.Damage float 0.5 run data get storage asset:context this.Damage
-    execute positioned ~-3.5 ~ ~-3.5 as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=7,dz=7] positioned ~ ~-0.2 ~ if entity @s[dx=7,dz=7] run function api:damage/
+    execute positioned ~-3.5 ~ ~-3.5 as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=6,dz=6] positioned ~ ~-0.2 ~ if entity @s[dx=6,dz=6] run function api:damage/
 
 # リセット
     function api:damage/reset
