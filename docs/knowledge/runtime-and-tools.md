@@ -103,6 +103,8 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 [Magic Bullet Squareのspin](../../Asset/data/asset/functions/object/1045.magic_bullet_square/tick/spin.mcfunction) は、90度刻みの四元数を順に設定して補間し、同じ方向へ回転を続ける。大きな角度を一度に指定した際の補間方向の反転や無回転を避ける意図である（ユーザー確認済み）。終点が同じ向きになることだけを根拠に、一周分を一回の代入へまとめない。
 
+[Celestial Starの上下動](../../Asset/data/asset/functions/effect/0402.celestial_star/tick/vfx/center.m.mcfunction) は、`rotated 0 p` で `^ ^ ^a` 進んだ後、`rotated 180 p` で再び `^ ^ ^a` 進む。2回の前進の水平成分は打ち消し合い、高さだけが `-2a sin p` ずれる。pを-90〜90度の間で一定の速さで往復させると、高さは周期的に滑らかに変わる。三角関数をscoreboardで計算せずに、ふわふわした上下動を作れる。
+
 ### 滑らかな旋回で真後ろから抜け出す
 
 向きを反転させる `facing ^ ^ ^-1` はpitchも反転するため、yawだけを180度変える `rotated ~180 ~` と同じではない。[Lexiel の射撃](../../Asset/data/asset/functions/mob/0123.lexiel_v3/tick/common/fireball.mcfunction) はmarkerから本体を向いてから反転し、本体の向きを変えずに本体からmarkerへの方向を取得する。
@@ -126,6 +128,28 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 ## displayの種類を選ぶ
 
 block_display・item_display・text_displayの選択基準は、DevSpaceの `docs/mcfunction-idioms.md`「display三種を表示内容から選ぶ」にある。Assetの演出では、ブロック状態、CustomModelDataを持つモデル、フォントの字形という表示元を確認して選ぶ。display自身が論理Objectの場合も、別entityのPassengerとして表示を担う場合もあるため、表示の種類とField・移動・破棄を担当するentityを分けて確認する。
+
+## 染色できるテクスチャで演出を表示する
+
+演出用のテクスチャは、TSB-ResourcePackの `leather_horse_armor` にCustomModelDataで登録されている。革の染色で `item.tag.display.color` を変えると、テクスチャの色を後から変えられる。重ね描きのモデルでは、染まるのは `layer0` だけである。
+
+| CustomModelData | 見た目 | 利用例 |
+| --- | --- | --- |
+| 20364 | 6つの紋章が付いた魔法陣 | [Magic Bullet](../../Asset/data/asset/functions/object/2009.magic_bullet/summon) |
+| 20365 | ルーン文字の環 | [Magic Bullet](../../Asset/data/asset/functions/object/2009.magic_bullet/summon) |
+| 20380 | 光る四芒星 | [Stellar Fury](../../Asset/data/asset/functions/object/2030.lastboss_stellar_fury) |
+| 20382 | 細いリング | [Damage Area](../../Asset/data/asset/functions/object/2063.damage_area/summon) |
+| 20383 | 塗りつぶした円 | [Circle Announce](../../Asset/data/asset/functions/object/2201.circle_announce/summon/.m.mcfunction) |
+| 20356 | 二重のリング | [Axia Shock Wave](../../Asset/data/asset/functions/object/2015.axia_shock_wave/tick) |
+| 20443 | 三角形の魔法陣 | [Magic Square](../../Asset/data/asset/functions/object/2090.magic_square/register.mcfunction) |
+
+[Circle Announce](../../Asset/data/asset/functions/object/2201.circle_announce/summon/.m.mcfunction) は、`left_rotation:[0.7071f,0f,0f,0.7071f]` で地面に寝かせ、scaleのZを0.01にして平らな円を表示する。寝かせた表示を回すときは `right_rotation` を90度ずつ補間する。[Magic Bullet Squareのspin](#execute幾何学で表示の回転を作る) と同じく、大きな角度を一度に補間しないためである。回し続ける場合は90度ずつ4つの回転を順に指定する。2つの回転を往復させると逆回りになる。表示を寿命のあるObjectとして置けば、チャンクの読込状態に関わらず最後に消せる。[Celestial Starfield](../../Asset/data/asset/functions/object/1197.celestial_starfield/summon/m.mcfunction) は、召喚側が渡したtext_displayの一覧を見えないitem_displayに乗せ、寿命の最後に `text_opacity` と背景色を段階的に下げて消す。
+
+text_displayの文字と背景は表からしか見えない（ゲーム内で確認）。billboardを使わない表示を裏からも見せるには、表示の中心を通る縦軸まわりに180度回した変換のコピーを同じ位置に重ねる。変換の行列で言えば、x列とz列の符号を反転し、移動量に `2 × 中心のx × x列` を足す。位置と大きさは変わらず、面の向きだけが反対になる。負の拡大による鏡映ではないので、行列の分解で回転と拡大に分けても値が崩れない。[Celestial Starの星座](../../Asset/data/asset/functions/artifact/0921.celestial_star/trigger/detonate/vfx/starfield/wing.mcfunction) は、線の表示ごとに裏向きのコピーを重ねている。
+
+文字の長い表示を多数重ねる場合は、表向きの表示だけを `Parts` に並べる。続けて、storage上で各表示を末尾へ複製し、`transformation` だけを裏向きの行列に置き換える。こうすると同じ文字を二度書かずに済む。[Celestial Starの星雲](../../Asset/data/asset/functions/artifact/0921.celestial_star/trigger/detonate/vfx/starfield/nebula.mcfunction) はこの方法で12枚分の裏向きの表示を作る。
+
+点をまばらに打った文字は、大半が空白になる。TSB-ResourcePackの `minecraft:default` フォントでは、`\uF000`〜`\uF256` のうち下3桁が数字だけの文字が幅指定の空白になる。幅は下3桁を10進で読んだpxで、通常の空白1個は4pxにあたる。mcfunctionのSNBT文字列に書くJSONテキストでは、8個以上続く空白を `\\uF032` のようなエスケープ（7文字）1つにまとめると、行の幅を変えずに文字列を短くできる。7個以下では短くならない。幅が256pxを超える場合は、複数の文字に分ける。星雲はこの置き換えで文字列を半分以下にしている。この置き換えはリソースパックのフォントに依存する。
 
 ## displayの初回位置合わせを非表示で行う
 

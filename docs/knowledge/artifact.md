@@ -36,6 +36,8 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 クールダウンは攻撃属性とは分け、どの神器・プレイヤーと待ち時間を共有したいかで決める。アイテム個体のLCD、プレイヤーごとの種別TCD、全プレイヤーの該当神器で共有するGCDを使い分ける。GCDの定義名は `SpecialCooldown` である。TCDではType・Durationをgiveに定義し、発動時の共通checkと共通useへ接続する。[Call Elemental Familiar](../../Asset/data/asset/functions/artifact/0295.call_elemental_familiar/give/2.give.mcfunction) は主種別に `summon` の600tick、第二種別に `longRange` の80tickを指定する実例である。二系統を使う設計の例であり、数値は他の神器の既定値ではない。共有範囲・更新・減算の契約は、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「LCD・TCD・GCDは共有範囲と時間の進め方で選ぶ」にある。
 
+グローバルクールダウン（`SpecialCooldown`）を設定する神器は、MP消費を0にする（ユーザー方針）。現行コードには0078・0278のようにGCDとMP消費を併用する神器も残るが、新規実装でMP消費を設定する根拠にしない。
+
 種別を追加する場合は本体の判定・表示に加え、Assetの [表出力スクリプト](../../scripts/update-artifact-spreadsheet.scala.sc) のCooldownType解釈も確認する。既存の四種を使う神器の追加と、新種別の導入を同じ作業として扱わない。
 
 ## 使用の継続・解除と、発動時の情報の保持
@@ -49,6 +51,14 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 押し続ける間はチャージし、入力が途切れたら発動する実装では、短命Effectの再付与を継続通知、失効を終了通知として使える。開始時の消費・cooldownと継続入力の処理は分ける。
 
 [Deep Azure の条件判定](../../Asset/data/asset/functions/artifact/1256.deep_azure/trigger/2.check_condition.mcfunction) は、チャージEffect 329があれば共通checkより先に [charge](../../Asset/data/asset/functions/artifact/1256.deep_azure/trigger/charge.mcfunction) へ進む。初回のcommon useが始めるcooldownを、チャージ継続のたびに判定し直さないためである。Duration/MaxDurationが1のEffectをusing_itemで再付与し、再付与が途切れた後の [end](../../Asset/data/asset/functions/effect/0329.charge_of_deep_azure/end/.mcfunction) を攻撃Effectへの移行に使う。[re-given](../../Asset/data/asset/functions/effect/0329.charge_of_deep_azure/re-given/.mcfunction) は `PreviousField` からダメージと蓄積値を引き継ぐ。開始・継続・終了を別の処理として読み、継続側に初回と同じMP消費やcooldown判定を一律追加しない。入力から終了イベントまでの実際の時刻は本体のEffect処理順にも依存する。
+
+### 設置物の状態を使用者のEffectに持たせる
+
+再使用で起爆する設置型の神器では、設置物の座標と強化段階を、使用者へ付与したEffectのFieldとStackに持たせる構成がある。[Celestial Star の条件判定](../../Asset/data/asset/functions/artifact/0921.celestial_star/trigger/2.check_condition.mcfunction) はEffect 402の有無を共通checkより先に調べ、設置時に始まったクールダウン中でも [起爆](../../Asset/data/asset/functions/artifact/0921.celestial_star/trigger/detonate/.mcfunction) へ進む。起爆では、get APIで読んだStackから倍率を求め、FieldOverrideに起爆の指示を付けてEffectを付け直す。[Effectのre-given](../../Asset/data/asset/functions/effect/0402.celestial_star/re-given/.mcfunction) が範囲内の敵と味方を、1mごとの距離の帯の番号と共にFieldへ積む。[tick](../../Asset/data/asset/functions/effect/0402.celestial_star/tick/detonation/.mcfunction) は起爆の波を1tickに2mずつ広げ、届いた帯の対象にダメージと回復を与え、処理し終えたら自身をremove APIで消す。Effectのtickは付与先である星を置いたプレイヤーを実行者にするので、攻撃と回復の補正を本人から掛けられる。再付与ではFieldが既定値とFieldOverrideから作り直されるため、星の座標は `PreviousField` から引き継ぐ。
+
+設置中の見た目は、[Effect のtick](../../Asset/data/asset/functions/effect/0402.celestial_star/tick/vfx/.mcfunction) が保存した座標へ粒子で描く。中央の球はStackに応じてdustの散らばりを広げ、周りを漂う光の向きと距離はFieldに持たせてランダムに少しずつ変える。粒子だけなので、設置者が離れて設置地点のチャンクが読み込まれていない間に終了しても、消し損ねた実体は残らない。起爆時の星座と星雲は、寿命を持つ [Object 1197](../../Asset/data/asset/functions/object/1197.celestial_starfield/tick/.mcfunction) にtext_displayを乗せて表示し、Object自身が薄くして消す。星座は最大段階で起爆したときだけ描き、雷鳴も同じ条件で鳴らす。1〜5段階でも、光・星雲・星座に属さない星は最大段階と同じ規模で出す。下位の段階の演出を削りすぎず、最大段階に達したかを星座の有無で見分けられるようにするためである。星座・星雲の召喚関数と、起爆時のend_rodの方向・範囲の目印の座標表は、[生成スクリプト](../../scripts/artifact/0921.celestial_star/) で作る。成果物を直接編集せず、スクリプトの定数を直して再生成する。Effectの残り時間は付与先の処理で減るので、設置者がログアウトしている間は進まない。
+
+神器のtriggerはEffect tickより先に処理される。神器から付与したEffectのDurationをNにすると、設置後1〜N tick目の使用ではEffectが残っており、N tick目のEffect tickでendが呼ばれる。921はDurationを410にして、20秒（400 tick）で最大強化した後も410 tick目まで再使用を受け付ける。410 tick目の起爆と411 tick目の不発は [検証シナリオ](../../tests/scenarios/artifact-0921-celestial-star.json) で確認している。
 
 ### 共有効果は最後の所持がなくなったときに解除する
 
