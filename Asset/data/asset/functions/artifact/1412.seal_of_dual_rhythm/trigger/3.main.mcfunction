@@ -8,6 +8,6 @@
 # 軽減バフを付与する
     data modify storage api: Argument.ID set value 399
     data modify storage api: Argument.Duration set value 2147483647
-    data modify storage api: Argument.FieldOverride set value {Amount:0.1d,BoostAmount:0.2d,BoostDuration:300,Cooldown:1200}
+    data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

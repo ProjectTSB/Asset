@@ -331,7 +331,7 @@
         "tp SealThird 10.5 80 0.5",
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 300",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.2d}",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.2d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -362,7 +362,7 @@
       "commands": [
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 300",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.2d}",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.2d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -497,7 +497,7 @@
         "tp SealTarget 1.1 80 0.5",
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 2147483647",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.1d,BoostAmount:0.2d,BoostDuration:300,Cooldown:1200}",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
         "execute as SealOwner run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset",
         "data modify storage api: Argument.ID set value 399",
@@ -666,7 +666,7 @@
         "tp SealThird 10.5 80 0.5",
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 2147483647",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.1d,BoostAmount:0.2d,BoostDuration:300,Cooldown:1200}",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
         "execute as SealThird run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset",
         "execute unless data entity SealThird Inventory[{tag:{TSB:{ID:1412}}}]"
@@ -741,7 +741,7 @@
         "tp SealTarget 11.1 80 0.5",
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 2147483647",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.1d,BoostAmount:0.2d,BoostDuration:300,Cooldown:1200}",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
         "execute as SealThird run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -829,7 +829,7 @@
       "commands": [
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 40",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.25d,BoostAmount:0.4d,BoostDuration:500,Cooldown:1600}",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.25d,AttackAmount:0.4d,AttackDuration:500,Cooldown:1600}",
         "execute as SealThird run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -909,7 +909,7 @@
       "commands": [
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 600",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.4d}",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.4d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -950,7 +950,7 @@
       "commands": [
         "data modify storage api: Argument.ID set value 400",
         "data modify storage api: Argument.Duration set value 40",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.4d}",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.4d}",
         "execute as SealTarget run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],
@@ -999,7 +999,7 @@
         "tp SealTarget 5.5 80 0.5",
         "data modify storage api: Argument.ID set value 399",
         "data modify storage api: Argument.Duration set value 2",
-        "data modify storage api: Argument.FieldOverride set value {Amount:0.25d,BoostAmount:0.4d,BoostDuration:500,Cooldown:1600}",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.25d,AttackAmount:0.4d,AttackDuration:500,Cooldown:1600}",
         "execute as SealThird run function api:entity/mob/effect/give",
         "function api:entity/mob/effect/reset"
       ],

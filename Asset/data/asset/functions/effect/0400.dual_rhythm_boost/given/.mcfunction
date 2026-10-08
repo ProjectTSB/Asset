@@ -6,7 +6,7 @@
 
 # 補正を追加する
     data modify storage api: Argument.UUID set value [I;1,3,400,0]
-    data modify storage api: Argument.Amount set from storage asset:context this.Amount
+    data modify storage api: Argument.Amount set from storage asset:context this.AttackAmount
     data modify storage api: Argument.Operation set value "multiply"
     function api:modifier/attack/base/add
 

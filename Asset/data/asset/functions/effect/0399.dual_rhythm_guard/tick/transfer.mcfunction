@@ -10,8 +10,8 @@
 
 # 同時に複数人へ触れた場合は最も近い1人だけ
     data modify storage api: Argument.ID set value 400
-    data modify storage api: Argument.Duration set from storage asset:context this.BoostDuration
-    data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.BoostAmount
+    data modify storage api: Argument.Duration set from storage asset:context this.AttackDuration
+    data modify storage api: Argument.FieldOverride.AttackAmount set from storage asset:context this.AttackAmount
     execute as @p[tag=399.Contact,distance=..3] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
