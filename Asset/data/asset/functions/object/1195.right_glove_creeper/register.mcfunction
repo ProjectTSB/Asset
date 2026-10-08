@@ -20,5 +20,5 @@
     data modify storage asset:object Field.Damage set value {Min:1,Max:5}
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.Tick set value 340
-# 攻撃中かどうか(boolean)
-    data modify storage asset:object Field.IsAttackMode set value false
+# 攻撃中のカウンタ
+    data modify storage asset:object Field.AttackTick set value 0

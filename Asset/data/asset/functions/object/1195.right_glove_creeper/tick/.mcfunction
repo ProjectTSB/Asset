@@ -13,7 +13,7 @@
     execute as @a if score @s UserID = $UserID Temporary run tag @s add 1195.Owner
     scoreboard players reset $UserID Temporary
 
-#攻撃状態でない場合の処理
+#攻撃状態のカウンタが0場合（攻撃待機状態）の処理
 
 #攻撃状態の処理
 
