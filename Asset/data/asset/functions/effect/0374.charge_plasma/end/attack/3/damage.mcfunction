@@ -2,11 +2,7 @@
 #
 #
 #
-# @within function asset:effect/0374.charge_plasma/end/attack/3/rec
-
-
-# ヒット済みタグ
-    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,limit=1] add HitTarget
+# @within function asset:effect/0374.charge_plasma/end/attack/3/
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.DamagePool[2]
@@ -14,5 +10,8 @@
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=HitTarget,distance=..20] run function api:damage/
     function api:damage/reset
+
+# HitTargetタグ削除
+    tag @s remove HitTarget

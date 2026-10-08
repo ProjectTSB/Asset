@@ -8,7 +8,7 @@
     execute unless block ^ ^ ^0.5 #lib:no_collision/ run tag @s add Hit
 
 # 命中
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living_without_player,tag=!HitTarget,tag=!Uninterferable,dx=0,limit=1] run function asset:effect/0374.charge_plasma/end/attack/3/damage
+    execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @e[type=#lib:living_without_player,tag=!HitTarget,tag=!Uninterferable,dx=0,limit=1] add HitTarget
 
 # 演出
     particle dust 0.8 1.0 0.5 1.0 ~ ~ ~ 0.0 0.0 0.0 1 1
