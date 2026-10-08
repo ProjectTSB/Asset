@@ -18,8 +18,9 @@
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 
-# SteppedOnタグがついたEntityが対象
-    execute as @e[type=#lib:living_without_player,tag=1160.SteppedOn,distance=..2,limit=1] run function api:damage/
+# CandidateタグがついたランダムなEntityが対象
+    tag @e[type=#lib:living_without_player,tag=1160.Candidate,sort=random,limit=1] add 1160.SteppedOn
+    execute as @e[type=#lib:living_without_player,tag=1160.SteppedOn,distance=..2,sort=random,limit=1] run function api:damage/
 
 # 周囲のMobにもダメージ
     execute store result storage api: Argument.Damage double 0.5 run data get storage asset:context this.Damage
@@ -28,6 +29,7 @@
 # リセット
     function api:damage/reset
     execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,limit=1] remove 1160.SteppedOn
+    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.Candidate,dx=0] remove 1160.Candidate
     scoreboard players reset $UserID Temporary
 
 # 0.5秒のクールダウン

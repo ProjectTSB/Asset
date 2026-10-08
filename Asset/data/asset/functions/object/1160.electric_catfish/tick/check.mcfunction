@@ -21,7 +21,7 @@
 
     scoreboard players operation $MotionX Temporary += $MotionZ Temporary
 
-    execute if score $MotionX Temporary matches 1.. run tag @s add 1160.SteppedOn
+    execute if score $MotionX Temporary matches 1.. run tag @s add 1160.Candidate
 
 # リセット
     data remove storage asset:context this.Motion
