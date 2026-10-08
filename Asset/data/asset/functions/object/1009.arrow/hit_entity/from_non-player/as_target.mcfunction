@@ -14,6 +14,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
+    execute if data storage asset:context this.Metadata run data modify storage api: Argument.Metadata set from storage asset:context this.Metadata
     # execute if data storage asset:context this.AdditionalMPHeal run data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
 # modifier をかける
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
