@@ -4,8 +4,7 @@
 #
 # @within function
 #   asset:effect/0373.longevity_your_thoughts/end/
-#   asset:effect/0373.longevity_your_thoughts/re-given/
-#   asset:effect/0373.longevity_your_thoughts/tick/update_effect
+#   asset:effect/0373.longevity_your_thoughts/remove/
 
 # 補正をリセット
     data modify storage api: Argument.UUID set from storage asset:context this.UUID
