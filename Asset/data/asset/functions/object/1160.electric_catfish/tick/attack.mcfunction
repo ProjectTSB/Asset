@@ -16,7 +16,7 @@
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
 
 # SteppedOnタグがついたEntityが対象
-    execute as @e[tag=1160.SteppedOn,distance=..2,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=1160.SteppedOn,distance=..2,limit=1] run function api:damage/
 
 # 周囲のMobにもダメージ
     execute store result storage api: Argument.Damage float 0.5 run data get storage asset:context this.Damage
