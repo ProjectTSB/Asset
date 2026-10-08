@@ -2,7 +2,7 @@
 #
 # vfx
 #
-# @within function asset:object/1042.mini_black_hole_flying/tick/flying/vfx/
+# @within function asset:object/1042.mini_black_hole_flying/tick/vfx/**
 
 # 円
     particle dust -1 0 -1 1.25 ^-0.0 ^0.0 ^0.5 0.0 0.0 0.0 0.0 1 force @a[distance=..64]
