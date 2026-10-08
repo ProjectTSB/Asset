@@ -13,6 +13,7 @@
 
 # 向いている方向に確定で一個だす
     data modify storage api: Argument.ID set value 1168
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.DamagePool[0]
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute anchored eyes positioned ^ ^ ^2.5 run function api:object/summon
