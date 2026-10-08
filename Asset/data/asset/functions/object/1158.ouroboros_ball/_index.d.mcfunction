@@ -4,5 +4,5 @@
 #> score_holder
 # @within
 #   function asset:object/1158.ouroboros_ball/hit_entity/damage
-#   function asset:object/1158.ouroboros_ball/hit_entity/effect_add
+#   function asset:object/1158.ouroboros_ball/hit_entity/effect_give
         #declare score_holder $Temporary
