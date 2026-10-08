@@ -7,7 +7,7 @@
 # Effectの名前
     data modify storage asset:effect Name set value '{"text":"双律・攻","color":"gold"}'
 # Effectの説明文
-    data modify storage asset:effect Description set value ['{"text":"与ダメージが増加する","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"与ダメージが上昇する","color":"white"}']
 # 再付与時は効果時間を更新する
     data modify storage asset:effect DurationOperation set value "forceReplace"
 # 効果を重複させない

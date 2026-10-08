@@ -12,7 +12,7 @@
     data modify storage api: Argument.ID set value 400
     data modify storage api: Argument.Duration set from storage asset:context this.AttackDuration
     data modify storage api: Argument.FieldOverride.AttackAmount set from storage asset:context this.AttackAmount
-    execute as @p[tag=399.Contact,distance=..3] run function api:entity/mob/effect/give
+    execute as @p[tag=399.Contact] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 自身にクールダウンを付与する
