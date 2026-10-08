@@ -1,0 +1,19 @@
+#> asset:effect/0374.charge_plasma/end/attack/3/
+#
+# 攻撃3: 貫通レーザー
+#
+# @within function asset:effect/0374.charge_plasma/end/**
+
+#> Private
+# @within function asset:effect/0374.charge_plasma/end/attack/3/**
+    #declare tag Hit
+    #declare tag HitTarget
+
+# 再帰処理
+    execute anchored eyes positioned ^ ^ ^ run function asset:effect/0374.charge_plasma/end/attack/3/rec
+    tag @s remove Hit
+    function asset:effect/0374.charge_plasma/end/attack/3/damage
+
+# 演出
+    playsound ogg:block.vault.open_shutter player @a ~ ~ ~ 2 2
+    playsound ogg:block.vault.break player @a ~ ~ ~ 1 1
