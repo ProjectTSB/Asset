@@ -8,6 +8,9 @@
 # @private
     #declare score_holder $UserID
 
+# シングルダメージセッション開始
+    function api:damage/single_damage_session/open
+
 # ダメージ設定
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
@@ -37,3 +40,6 @@
     playsound entity.player.hurt neutral @a ~ ~ ~ 2 0.5
     playsound entity.allay.hurt neutral @a ~ ~ ~ 2 2.0
     playsound enchant.thorns.hit neutral @a ~ ~ ~ 2 1.0
+
+# シングルダメージセッション終了
+    function api:damage/single_damage_session/close
