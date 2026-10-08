@@ -7,10 +7,8 @@
 # 頭を取り換える
     item replace entity @s armor.head with stick{CustomModelData:20395}
 
-# デバフを解除し移動速度上昇を得る
+# デバフを解除
     effect clear @s slowness
-    effect clear @s weakness
-    effect give @s speed 5 6 true
 
 # 発光状態用Tagを付与
     tag @s add 1N.Quiz.Glowing
