@@ -7,6 +7,7 @@
 # Effect395を(再)付与
     #攻撃情報も設定
     data modify storage api: Argument.FieldOverride.Damage set value 150
+    data modify storage api: Argument.FieldOverride.MPThreshold set value 40
     data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
     data modify storage api: Argument.FieldOverride.ElementType set value "Water"
 
