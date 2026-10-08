@@ -2,13 +2,13 @@
 #
 #
 #
-# @within function asset:effect/0374.charge_plasma/re-given/
+# @within function asset:effect/0374.charge_plasma/re-given/**
 
 # スタック数を増やす
     data modify storage asset:context Stack set value 3
 
 # MP消費
-    data modify storage api: Argument.Fluctuation set value -35
+    execute store result storage api: Argument.Fluctuation int -1 run data get storage asset:context this.MPThreshold[1]
     data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
