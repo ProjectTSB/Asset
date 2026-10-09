@@ -40,11 +40,9 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 ## 範囲攻撃のダメージ計算と一撃の区切り
 
-一撃の範囲内に同じMobの複数のExtendedCollisionが含まれ得る場合は、その対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所でダメージが変わる攻撃では、先に処理する判定も選ぶ。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル対象を通常対象より先に処理し、両方を一つのセッションに含める。同じMobの拡張当たり判定を両方の経路で拾っても、最初のクリティカル側のダメージだけが適用される。
+同じMobの複数のExtendedCollisionを拾う攻撃で、一撃につき一回だけダメージを適用したい場合は、対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所によって威力が変わる場合は、優先する判定を先に処理する。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル判定と通常判定を一つのセッションに含め、クリティカル側を先に適用する。多重命中を想定して威力を調整する攻撃へ導入すると命中回数が変わるため、[追加当たり判定へのダメージ調整](runtime-and-tools.md) と区別する。
 
-複数対象への攻撃では、ダメージを一撃全体で共有するか、対象ごとに計算するかを仕様に合わせて選ぶ。対象ごとに乱数を抽選する場合は、各対象の処理で引数を設定し、攻撃元を実行者にしてmodifierを呼び、対象へdamageを与えてresetする。補正済みの値を次の対象のmodifierへ渡さないよう、毎回補正前の値を設定する。
-
-対象ごとにresetする構成でも、セッションで一撃全体を囲めば拡張当たり判定の処理済み記録を維持できる。対象ごとの引数の後始末と、一撃分の重複防止を別々に区切るためである。対象ごとに独立して乱数を抽選する用例は [blade_of_dawnのdamage](../../Asset/data/asset/functions/artifact/1258.blade_of_dawn/trigger/damage.mcfunction) を参照する。セッションの適用範囲とresetとの関係は、本体の `TheSkyBlessing/data/api/functions/damage/single_damage_session/` と `damage/core/reset.mcfunction` を確認する。
+範囲攻撃で対象ごとに乱数を抽選したい場合は、各対象の処理で補正前のダメージと引数を設定し、攻撃元としてmodifier、対象としてdamageを呼び、resetする。[blade_of_dawnのdamage](../../Asset/data/asset/functions/artifact/1258.blade_of_dawn/trigger/damage.mcfunction) が実例である。一撃全体をセッションで囲めば、対象ごとのresetを挟んでも拡張当たり判定の重複防止を維持できる。通常entityへの反復呼び出しを制限する用途には使わない。適用範囲と後始末は、本体の `TheSkyBlessing/data/api/functions/damage/single_damage_session/` と `damage/core/reset.mcfunction` を確認する。
 
 ## 使用の継続・解除と、発動時の情報の保持
 
