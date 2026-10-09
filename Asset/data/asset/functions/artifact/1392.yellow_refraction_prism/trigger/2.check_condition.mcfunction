@@ -13,7 +13,7 @@
 # CanUsedじゃないならreturn
     execute if entity @s[tag=!CanUsed] run return fail
 
-# 攻撃条件を満たさなければ発動不可にする
+# 攻撃条件を満たさなければreturn
     execute unless function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition/if run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
@@ -21,7 +21,7 @@
     execute unless entity @e[type=#lib:living_without_player,tag=Victim,distance=..64] run return fail
     execute if entity @s[tag=!CanUsed] run return fail
 
-# 攻撃対象3体を選定し、ダメージ量に比例したMPチェックなど
+# 攻撃対象を選定し、ダメージ量に比例したMPチェックなど
     function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition/check_damage
     execute if entity @s[tag=!CanUsed] run function asset:artifact/1392.yellow_refraction_prism/trigger/2.check_condition/reset
     execute if entity @s[tag=!CanUsed] run return fail
