@@ -9,13 +9,5 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 防御無視・補正なし・物理・無属性の30のダメージを与える
-    data modify storage api: Argument.Damage set value 30f
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.FixedDamage set value true
-    function api:damage/modifier
-    execute as @e[tag=D0.Target] run function api:damage/
-
-# リセット
-    function api:damage/reset
-    tag @e[tag=D0.Target] remove D0.Target
+# 倒す
+    execute as @e[type=#lib:living_without_player,tag=D0.Target,distance=..10] run function api:mob/kill
