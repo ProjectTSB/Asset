@@ -14,14 +14,8 @@
     data modify storage api: Argument.DisableLog set value true
     function api:mp/fluctuation
 
-# SingleDamageSession open
-    function api:damage/single_damage_session/open
-
 # 攻撃
     function asset:artifact/1391.blue_refraction_prism/trigger/attack
-
-# SingleDamageSession close
-    function api:damage/single_damage_session/close
 
 # 音
     execute at @e[type=#lib:living_without_player,tag=Target,distance=..64] run function asset:artifact/1391.blue_refraction_prism/trigger/sound
