@@ -13,7 +13,7 @@
 # CanUsedじゃないならreturn
     execute if entity @s[tag=!CanUsed] run return fail
 
-# 攻撃条件を満たさなければ発動不可にする
+# 攻撃条件を満たさなければreturn
     execute unless function asset:artifact/1391.blue_refraction_prism/trigger/2.check_condition/if run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
