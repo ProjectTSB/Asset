@@ -14,10 +14,12 @@
     playsound entity.zombie.attack_wooden_door player @a ~ ~ ~ 1.5 1.0
     playsound block.anvil.break player @a ~ ~ ~ 1.3 0.5
     particle minecraft:enchant ~ ~1 ~ 1.5 1.5 1.5 1.5 500
-    particle minecraft:witch ~ ~1 ~ 1 1 1 0.5 20
+    particle minecraft:witch ~ ~ ~ 1 10 1 0.5 1000
     particle minecraft:sweep_attack ~ ~1 ~ 0.5 0.5 0.5 0 3
     particle minecraft:flash ~ ~1 ~ 0 0 0 0 1
     particle electric_spark ~ ~ ~ 1.0 1.0 1.0 1 50
+    particle crit ~ ~1 ~ 0.5 0.5 0.5 0 200
+    particle flash ~ ~1 ~ 0.0 0.0 0.0 0 1
     playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 3.0 0.5
     playsound minecraft:entity.zombie.break_wooden_door player @a ~ ~ ~ 2.0 0.5
     playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 3.0 0.8
