@@ -37,3 +37,6 @@
 
 # フィールド
     data modify storage asset:effect Field.Charge set value 0
+    data modify storage asset:effect Field.Damage set value {Charge1:1,Charge2:10,Charge3:100}
+    data modify storage asset:effect Field.Speed set value {Charge1:1,Charge2:2,Charge3:3}
+    data modify storage asset:effect Field.Range set value 40
