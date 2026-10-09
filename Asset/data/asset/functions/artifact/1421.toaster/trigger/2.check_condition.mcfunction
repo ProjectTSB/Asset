@@ -9,8 +9,10 @@
     #declare score_holder $Count
 
 # チャージ用Effectがあれば強制的にチャージ続行
+# 発射中の場合、チャージは続行しない
     data modify storage api: Argument.ID set value 362
     function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect.Field.Shooting run return fail
     execute if data storage api: Return.Effect run return run function asset:artifact/1421.toaster/trigger/charge
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
