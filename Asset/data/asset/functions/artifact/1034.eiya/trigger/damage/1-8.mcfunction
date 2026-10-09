@@ -1,4 +1,4 @@
-#> asset:artifact/1034.eiya/trigger/4.damage
+#> asset:artifact/1034.eiya/trigger/damage/1-8
 #
 # ダメージ処理部
 #
@@ -16,7 +16,7 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Victim,distance=..6] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=Victim,distance=..6] run function api:damage/
     function api:damage/reset
 
 # リセット
