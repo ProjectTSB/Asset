@@ -38,6 +38,14 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 種別を追加する場合は本体の判定・表示に加え、Assetの [表出力スクリプト](../../scripts/update-artifact-spreadsheet.scala.sc) のCooldownType解釈も確認する。既存の四種を使う神器の追加と、新種別の導入を同じ作業として扱わない。
 
+## 範囲攻撃のダメージ計算と一撃の区切り
+
+一撃の範囲内に同じMobの複数のExtendedCollisionが含まれ得る場合は、その対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所でダメージが変わる攻撃では、先に処理する判定も選ぶ。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル対象を通常対象より先に処理し、両方を一つのセッションに含める。同じMobの拡張当たり判定を両方の経路で拾っても、最初のクリティカル側のダメージだけが適用される。
+
+複数対象への攻撃では、ダメージを一撃全体で共有するか、対象ごとに計算するかを仕様に合わせて選ぶ。対象ごとに乱数を抽選する場合は、各対象の処理で引数を設定し、攻撃元を実行者にしてmodifierを呼び、対象へdamageを与えてresetする。補正済みの値を次の対象のmodifierへ渡さないよう、毎回補正前の値を設定する。
+
+対象ごとにresetする構成でも、セッションで一撃全体を囲めば拡張当たり判定の処理済み記録を維持できる。対象ごとの引数の後始末と、一撃分の重複防止を別々に区切るためである。対象ごとに独立して乱数を抽選する用例は [blade_of_dawnのdamage](../../Asset/data/asset/functions/artifact/1258.blade_of_dawn/trigger/damage.mcfunction) を参照する。セッションの適用範囲とresetとの関係は、本体の `TheSkyBlessing/data/api/functions/damage/single_damage_session/` と `damage/core/reset.mcfunction` を確認する。
+
 ## 使用の継続・解除と、発動時の情報の保持
 
 スニークの一定時間到達で一度発動させる場合と、その時間以降ずっと発動させる場合は、`sneak/<N>s` と `sneak/keep/<N>s` の配送を使い分ける。slotごとの時間とcontextの絞り込みは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「遅延・再入・破棄をイベント境界から読む」を参照する。
