@@ -1,3 +1,8 @@
+---
+title: Mob と AJ
+description: MobとAJのライフサイクル、装備・演出のイディオムを扱うときに読む
+---
+
 # Mob と AJ
 
 まず [型・インスタンス・継承モデル](object-model.md) を読む。Mob は `Asset/data/asset/functions/mob/<4桁ID>.<name>/` にある型定義とメソッドの集合で、親の Field やメソッドを継承できる。個別ディレクトリに関数がないことを、振る舞いがないことと解釈しない。

@@ -1,3 +1,8 @@
+---
+title: Asset の型・インスタンス・継承モデル
+description: Mob／Objectの型・継承・インスタンス・メソッドと、カテゴリ間の契約を扱うときに読む
+---
+
 # Asset の型・インスタンス・継承モデル
 
 確認日: 2026-09-15。Asset HEAD `8f661ea1003a0e519d9825c55e1dde0ce6edaf80` と、本体 HEAD `f88cdd5bcb2216d24b26e48684f4a7951a686c94` のコードを根拠とする。

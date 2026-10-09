@@ -1,3 +1,8 @@
+---
+title: Effectの設計と実装
+description: Effectの定義・継承・Field・再付与・寿命・自己終了を扱うときに読む
+---
+
 # Effectの設計と実装
 
 Effectの定義・継承・Field・イベントを変更するときの入口。個別Asset間の連携は [カテゴリ間の契約](object-model.md#カテゴリごとの違い)、神器からの付与・装備解除との分担は [装備と効果の寿命](artifact.md#装備と効果の寿命を分ける) を参照する。本体APIとイベント配送の正本は、利用するTheSkyBlessingの `docs/knowledge/asset-runtime.md` にある。

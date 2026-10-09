@@ -1,3 +1,8 @@
+---
+title: Artifact
+description: アイテム定義・登録・発動、属性やクールダウン、装備と効果の寿命を設計するときに読む
+---
+
 # Artifact
 
 artifact は `Asset/data/asset/functions/artifact/<4桁ID>.<name>/` に置く。入手用 item/名前/lore/slot 等は `give/2.give.mcfunction` に書く。`register.mcfunction` がある場合は rarity pool 等の登録用途であり、0057 でも RarityRegistry のみを扱い、0001 には存在しない。
