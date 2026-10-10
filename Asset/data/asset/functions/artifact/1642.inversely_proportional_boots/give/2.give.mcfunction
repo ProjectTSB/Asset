@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:chainmail_boots"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text": "アンチプロポーション"}'
+    data modify storage asset:artifact Name set value '{"text": "アンチプロポーション", "color": "#5366ff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value []
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)

@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 407
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "アンチプロポーション"}'
+    data modify storage asset:effect Name set value '{"text": "アンチプロポーション", "color": "#5366ff"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "MP割合が低いほど被ダメージが低下し、回復量が上昇する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
