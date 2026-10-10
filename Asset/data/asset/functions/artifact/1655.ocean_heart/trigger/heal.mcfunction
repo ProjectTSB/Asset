@@ -7,9 +7,13 @@
     #declare score_holder $Health
     #declare score_holder $MaxHealth
     #declare score_holder $MaxHeal
+    #declare score_holder $HealRate
 
 # 最大回復量(10倍)
     scoreboard players set $MaxHeal Temporary 100
+
+# 失った体力に対する回復割合(%)
+    scoreboard players set $HealRate Temporary 10
 
 # 失った体力を取得する
     function api:data_get/health
@@ -17,11 +21,11 @@
     execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 10
     scoreboard players operation $MaxHealth Temporary -= $Health Temporary
 
-# 失った体力の10%を回復量に設定する(体力は10倍なので指定倍率は回復割合の1/10)
-    execute store result storage api: Argument.Heal double 0.01 run scoreboard players get $MaxHealth Temporary
+# 失った体力に回復割合を掛ける
+    scoreboard players operation $MaxHealth Temporary *= $HealRate Temporary
+    scoreboard players operation $MaxHealth Temporary /= $100 Const
 
 # 回復量を上限まで制限する
-    execute store result score $MaxHealth Temporary run data get storage api: Argument.Heal 10
     scoreboard players operation $MaxHealth Temporary < $MaxHeal Temporary
     execute store result storage api: Argument.Heal float 0.1 run scoreboard players get $MaxHealth Temporary
 
@@ -34,3 +38,4 @@
     scoreboard players reset $Health Temporary
     scoreboard players reset $MaxHealth Temporary
     scoreboard players reset $MaxHeal Temporary
+    scoreboard players reset $HealRate Temporary
