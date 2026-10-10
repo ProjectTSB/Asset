@@ -79,7 +79,7 @@ Mob／Object のイベント処理では、本体が個体の OhMyDat Field を 
 
 ## 実例: abstract_gravity_projectileは物理弾と論理Objectを分ける
 
-[0005のsummon](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/summon/m.mcfunction) はsnowballに `ObjectInit` のmarkerを乗せる。物理的な移動・衝突は乗り物のsnowball、Fieldとメソッドは乗客のmarkerが担う。[tick](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/tick/.mcfunction) は乗り物がなくなったことをhitの契機として使い、寿命切れは乗り物が残っている場合のrange_overへ分ける。[kill](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/kill/.mcfunction) は乗り物を消してから論理Object自身を消す。見える弾と `@s` を同一entityとして読んだり、片方だけを消して終了したと扱ったりしない。
+[0005のsummon](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/summon/m.mcfunction) はsnowballに `ObjectInit` のmarkerを乗せる。物理的な移動・衝突は乗り物のsnowball、FieldとメソッドはPassengerのmarkerが担う。[tick](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/tick/.mcfunction) は乗り物がなくなったことをhitの契機として使い、寿命切れは乗り物が残っている場合のrange_overへ分ける。[kill](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/kill/.mcfunction) は乗り物を消してから論理Object自身を消す。見える弾と `@s` を同一entityとして読んだり、片方だけを消して終了したと扱ったりしない。
 
 ## Effect の別モデル
 
