@@ -1,4 +1,4 @@
-#> asset:artifact/1661.starlight_tome/register
+#> asset:artifact/1661.starlight_circle/register
 #
 # 神器プールへの登録処理
 #
