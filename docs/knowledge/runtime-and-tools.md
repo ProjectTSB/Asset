@@ -7,6 +7,8 @@ description: Object、API storage、生成・更新スクリプト、CIと自動
 
 Object の変更前に [型・インスタンス・継承モデル](object-model.md)、Effect の変更前に [Effect の定義・イベント・寿命](effect.md) を読む。Object は `Asset/data/asset/functions/object/<4桁ID>.<name>/` の型定義から生成され、summon／init／tick や任意メソッドを自前実装・継承・明示 super で組み合わせる。基底の abstract_projectile を使う例と、子の値を先に設定する初期化契約も同文書に示す。
 
+この領域の個別判断の一部は `docs/knowledge/notes/` にある。移動・幾何の判断は `notes/motion/`・`notes/geometry/` で、DevSpaceの `scripts/knowledge/index.py --area motion` のように領域で絞って読む。
+
 ディレクトリはゼロ埋め4桁だが、`storage asset:object ID` と API へ渡す ID は整数である。生成時の FieldOverride はクラスの既定 Field に merge される。個体の Field は OhMyDat の `ObjectField` に保持され、処理中だけ `storage asset:context this.*` に展開される。実装から `this` を変えた結果は本体の呼び出し境界で書き戻される。Effect は別の保存形式・イベント呼び出し方式を持つため、Object の経路をそのまま適用しない。
 
 `object/1051.time_laser/tick/damage.mcfunction` はcontextのDamage等を `api: Argument` に転送し、owner検索用のTemporaryを末尾でresetする実例である。`object/1069.icicle_manager/tick/summon_icicle/summon.m.mcfunction` はmacro引数 `OffsetX`, `OffsetZ` を `$execute` へ展開し、`FieldOverride.*` は `asset:context this` から直接設定する。storage macroの別例では `object/1086.lightning_exploit/hit/vfx/random.mcfunction` が `with storage asset:temp Args` で `.m` 関数を呼ぶ。呼出形式を混同しない。
