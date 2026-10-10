@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーシャン・ハート","color":"#1cecff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の25%分回復する(最大20)","color":"white"}','{"text":"体力が既に最大の場合、","color":"white"}','{"translate":"代わりに15秒の間、%1$sを得る(%2$s)","color":"white","with":[{"text":"最大体力+5%","color":"green"},{"text":"最大20%"}]}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の10%分回復する(最大10)","color":"white"}','{"text":"体力が既に最大の場合、","color":"white"}','{"translate":"代わりに12秒の間、%1$sを得る(%2$s)","color":"white","with":[{"text":"最大体力+2.5%","color":"green"},{"text":"最大20%"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -41,13 +41,13 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     # data modify storage asset:artifact AttackInfo.AttackRange set value 10
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 80
+    data modify storage asset:artifact MPCost set value 40
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
     # data modify storage asset:artifact MPHealWhenHit set value
 # 神器のクールダウン (int) (オプション)
-    data modify storage asset:artifact LocalCooldown set value 200
+    data modify storage asset:artifact LocalCooldown set value 160
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     # data modify storage asset:artifact TypeCooldown.Type set value
     # data modify storage asset:artifact TypeCooldown.Duration set value

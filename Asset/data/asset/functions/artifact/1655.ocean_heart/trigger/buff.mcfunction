@@ -8,9 +8,9 @@
     #declare score_holder $MaxStack
 
 # 最大スタック数
-    scoreboard players set $MaxStack Temporary 4
+    scoreboard players set $MaxStack Temporary 8
 
-# 既存のスタック数を取得して上限まで増やす
+# スタックの上限設定
     data modify storage api: Argument.ID set value 406
     function api:entity/mob/effect/get/from_id
     scoreboard players set $Stack Temporary 0
@@ -20,7 +20,7 @@
 
 # 15秒間のバフを付与する
     data modify storage api: Argument.ID set value 406
-    data modify storage api: Argument.Duration set value 300
+    data modify storage api: Argument.Duration set value 240
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $Stack Temporary
     data modify storage api: Argument.StackOperation set value "forceReplace"
     data modify storage api: Argument.FieldOverride.Modifier set value 0.05d
