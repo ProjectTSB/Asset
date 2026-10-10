@@ -11,12 +11,12 @@
 # 最大回復量(10倍)
     scoreboard players set $MaxHeal Temporary 200
 
-# 失った体力の10%を回復上限まで計算する
+# 失った体力の25%を回復上限まで計算する
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health 10
     execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 10
     scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    scoreboard players operation $MaxHealth Temporary /= $10 Const
+    scoreboard players operation $MaxHealth Temporary /= $4 Const
     scoreboard players operation $MaxHealth Temporary < $MaxHeal Temporary
     execute store result storage api: Argument.Heal float 0.1 run scoreboard players get $MaxHealth Temporary
 
