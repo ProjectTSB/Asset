@@ -6,18 +6,23 @@
 # @private
     #declare score_holder $Health
     #declare score_holder $MaxHealth
+    #declare score_holder $MaxHeal
 
-# 失った体力の10%を上限20で回復する
+# 最大回復量(10000倍)
+    scoreboard players set $MaxHeal Temporary 200000
+
+# 失った体力の10%を回復上限まで計算する
     function api:data_get/health
     execute store result score $Health Temporary run data get storage api: Health 1000
     execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 1000
     scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    scoreboard players operation $MaxHealth Temporary < $200000 Const
+    scoreboard players operation $MaxHealth Temporary < $MaxHeal Temporary
     execute store result storage api: Argument.Heal float 0.0001 run scoreboard players get $MaxHealth Temporary
 
 # 一時計算を片付ける
     scoreboard players reset $Health Temporary
     scoreboard players reset $MaxHealth Temporary
+    scoreboard players reset $MaxHeal Temporary
 
 # 回復を適用する
     function api:heal/modifier
