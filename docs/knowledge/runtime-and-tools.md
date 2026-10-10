@@ -39,13 +39,17 @@ CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`�
 
 ## docs/tests の承認と自動マージ
 
-[CODEOWNERS](../../.github/CODEOWNERS) は通常の変更を `@ChenCMD`・`@haiiro2gou` の担当とし、repo直下の `docs/`・`tests/` は所有者を指定しない。承認不要の例外を成立させるには、masterのRulesetで全PR共通の必須承認数を0、Code ownerの承認を必須、`lint` を必須チェックに設定する。CODEOWNERSを先にmasterへ反映してからRulesetを変更する。RulesetはGit管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
+Asset の master 向け PR は、write 権限を持つ人による1件の承認と `lint` の成功を必要とする。承認者を特定のメンバーへ限定しない。Ruleset は必須承認数を1、Code owner の承認必須を無効にする。差分を変更するコミットの追加時には、人と Bot のどちらの承認も取り消す。Ruleset は Git 管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
 
-[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。必須チェックが完了済みならその場でマージし、未完了ならGitHubが条件成立を待つ。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
 
-PRの更新・Draft化・マージ先変更で対象外になった場合は、GitHub Actions botが有効にしたauto-mergeを解除する。人が有効にしたauto-mergeは保持する。差分確認中にhead・base等が変化した場合は処理を見送り、次のイベントで再判定する。既存PRや手動再試行にはworkflow_dispatchの `pull_request` 番号入力を使う。
+追加コミットが入るたびに差分全体を再判定し、引き続き docs/tests だけなら Bot が改めて承認する。本体コードが加わった場合は、人による新しい承認が必要になる。
+
+PRの更新・Draft化・マージ先変更で対象外になった場合は、GitHub Actions botが有効にしたauto-mergeを解除する。このworkflowが付けた承認も取り消す。人が有効にしたauto-mergeは保持する。差分確認中にhead・base等が変化した場合は処理を見送り、次のイベントで再判定する。既存PRや手動再試行にはworkflow_dispatchの `pull_request` 番号入力を使う。
 
 auto-mergeを手動解除しただけでは継続的な停止にならず、次のPR更新で条件を満たせば再び有効になる。作業中のPRを自動マージさせたくない場合はDraftにしておき、Ready for reviewへ戻すと再判定される。導入前から開いているPRは、更新イベントまたはworkflow_dispatchで判定を開始する。
+
+自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot 自身が作成した PR は自己承認できないため、人の承認を待つ。
 
 workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRのコードをcheckout・実行しない。Actionsのイベントポリシーでは `pull_request_target` を許可する必要がある。GITHUB_TOKENによるマージでは後続のpush workflowが通常起動しないため、自動対象を本体・生成スクリプトへ広げる場合は、マージ後の処理も再設計する。
 
@@ -89,7 +93,7 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 同じ起動処理の `Duration:6,Age:4,effects:[{id:"slowness",...,duration:13}]` は、召喚直後に近いタイミングで付与し、効果とAECを数tickで消すための別の指定である（ユーザー確認済みの意図）。秒未満の効果付与とAEC本体の寿命の区別は、依存先TheSkyBlessingの `docs/knowledge/runtime-components.md` のAECの説明を参照する。長寿命の位置保持用AECと一括して設定を整理しない。
 
-補助entityを空間の位置で選び分ける方法もある。[Golden Gear](../../Asset/data/asset/functions/object/2062.golden_gear/tick/.mcfunction) は高さ4・5のAECへitem_displayを乗せ、4.5・5.5の位置で同じtagの表示を選ぶ。transformationのtranslationで見える位置を戻しても、selectorが調べるentityの位置とは別である。位置が固定できる区間向けの簡便な識別であり、安定したIDの代用として一般化しない。自由な移動・乗客構成の変更・近接した複数組を許すなら、[個体キーによる関連付け](mob.md#個体の関連付けとイベント入力)も検討する。
+補助entityを空間の位置で選び分ける方法もある。[Golden Gear](../../Asset/data/asset/functions/object/2062.golden_gear/tick/.mcfunction) は高さ4・5のAECへitem_displayを乗せ、4.5・5.5の位置で同じtagの表示を選ぶ。transformationのtranslationで見える位置を戻しても、selectorが調べるentityの位置とは別である。位置が固定できる区間向けの簡便な識別であり、安定したIDの代用として一般化しない。自由な移動・Passenger構成の変更・近接した複数組を許すなら、[個体キーによる関連付け](mob.md#個体の関連付けとイベント入力)も検討する。
 
 ## execute幾何学で表示の回転を作る
 
@@ -119,8 +123,16 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 [Sapphiel の演出](../../Asset/data/asset/functions/mob/0339.twins_sapphiel/tick/app/skill/event_handler/05_2_hg_kickcombo/6.1.particle_kick.mcfunction) の `dust 1000000000 1000000000 100000000 1` や、[Ecual の転移演出](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/general/3.teleport_effect/loop.mcfunction) の `dust -0.8 -100000000 -100000000 1` は、発色の強い原色に近い色を出すための指定である（ユーザー確認済み）。通常の0〜1へ正規化する変更を見た目が同じと扱わない。内部の発色理由は未確認。ユーザー方針として、後続バージョンでは使えなくなる手法のため新規実装には採用しない。既存演出の読解・保守のために残す知識であり、廃止された具体的なバージョンはここでは特定していない。
 
+## displayの種類を選ぶ
+
+block_display・item_display・text_displayの選択基準は、DevSpaceの `docs/mcfunction-idioms.md`「display三種を表示内容から選ぶ」にある。Assetの演出では、ブロック状態、CustomModelDataを持つモデル、フォントの字形という表示元を確認して選ぶ。display自身が論理Objectの場合も、別entityのPassengerとして表示を担う場合もあるため、表示の種類とField・移動・破棄を担当するentityを分けて確認する。
+
 ## displayの初回位置合わせを非表示で行う
 
 [Ecual の予告線](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/projectile/announce_line/2.tick.mcfunction) は、横断面のscaleを0にして生成し、負の残り時間を最初の処理で正に反転する。可視化判定は反転より前にあるため、初回の位置合わせ中は非表示を保ち、次の処理でscaleと `teleport_duration:1` を設定する。負数は単なる異常な時間値ではなく、初回処理と表示開始を分ける状態も表している。
 
 表示を準備する段階と可視化する段階を分けたいときの実例として使える。負の値は「初回処理前」、正の値は「表示待ち以降」という状態を兼ねるため、数値の符号だけを正規化しない。初回の可視状態・位置確定・補間開始の順序を一組で扱う。意図が生成直後の補間を隠すことかは未確定なので、見た目の改善効果を保証する手法としてではなく、段階的な初期化の例として参照する。
+
+## 再実行できる実機検証
+
+共通runnerの使い方と記録方法はDevSpaceの `docs/runtime-verification.md` にある。このrepoのシナリオ保存先は `tests/scenarios/`。例は [双律の印章](../../tests/scenarios/dual-rhythm.json) で、神器固有の初期化・効果の発火・観測・解除を記述する。
