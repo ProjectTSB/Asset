@@ -1,4 +1,4 @@
-#> asset:object/1200.starlight_circle/tick/reduct
+#> asset:object/1200.starlight_circle/tick/transform/1
 #
 #
 #
