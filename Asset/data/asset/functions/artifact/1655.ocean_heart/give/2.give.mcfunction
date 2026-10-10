@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"オーシャン・ハート","color":"#1cecff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の10%分回復する(最大20)","color":"white"}','{"text":"体力が既に最大の場合、","color":"white"}','{"translate":"代わりに20秒の間、%1$sを得る(%2$s)","color":"white","with":[{"text":"最大体力+5%","color":"green"},{"text":"最大20%"}]}']
+    data modify storage asset:artifact Lore set value ['{"text":"体力を失った体力の25%分回復する(最大20)","color":"white"}','{"text":"体力が既に最大の場合、","color":"white"}','{"translate":"代わりに15秒の間、%1$sを得る(%2$s)","color":"white","with":[{"text":"最大体力+5%","color":"green"},{"text":"最大20%"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

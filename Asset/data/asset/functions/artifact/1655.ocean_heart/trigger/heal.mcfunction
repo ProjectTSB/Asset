@@ -16,7 +16,7 @@
     execute store result score $Health Temporary run data get storage api: Health 10
     execute store result score $MaxHealth Temporary run attribute @s generic.max_health get 10
     scoreboard players operation $MaxHealth Temporary -= $Health Temporary
-    scoreboard players operation $MaxHealth Temporary /= $10 Const
+    scoreboard players operation $MaxHealth Temporary /= $25 Const
     scoreboard players operation $MaxHealth Temporary < $MaxHeal Temporary
     execute store result storage api: Argument.Heal float 0.1 run scoreboard players get $MaxHealth Temporary
 
