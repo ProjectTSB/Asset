@@ -19,12 +19,12 @@
     scoreboard players operation $MaxHealth Temporary < $MaxHeal Temporary
     execute store result storage api: Argument.Heal float 0.0001 run scoreboard players get $MaxHealth Temporary
 
-# 一時計算を片付ける
-    scoreboard players reset $Health Temporary
-    scoreboard players reset $MaxHealth Temporary
-    scoreboard players reset $MaxHeal Temporary
-
 # 回復を適用する
     function api:heal/modifier
     function api:heal/
     function api:heal/reset
+
+# 一時計算を片付ける
+    scoreboard players reset $Health Temporary
+    scoreboard players reset $MaxHealth Temporary
+    scoreboard players reset $MaxHeal Temporary
