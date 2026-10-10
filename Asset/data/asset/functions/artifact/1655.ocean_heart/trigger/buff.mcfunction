@@ -5,6 +5,6 @@
 # 20秒間のバフを付与する
     data modify storage api: Argument.ID set value 406
     data modify storage api: Argument.Duration set value 400
-    data modify storage api: Argument.FieldOverride set value {Modifier:0.05d}
+    data modify storage api: Argument.FieldOverride.Modifier set value 0.05d
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
