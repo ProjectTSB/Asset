@@ -18,12 +18,12 @@
     scoreboard players add $Stack Temporary 1
     scoreboard players operation $Stack Temporary < $MaxStack Temporary
 
-# 15秒間のバフを付与する
+# 12秒間のバフを付与する
     data modify storage api: Argument.ID set value 406
     data modify storage api: Argument.Duration set value 240
     execute store result storage api: Argument.Stack int 1 run scoreboard players get $Stack Temporary
     data modify storage api: Argument.StackOperation set value "forceReplace"
-    data modify storage api: Argument.FieldOverride.Modifier set value 0.05d
+    data modify storage api: Argument.FieldOverride.Modifier set value 0.025d
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

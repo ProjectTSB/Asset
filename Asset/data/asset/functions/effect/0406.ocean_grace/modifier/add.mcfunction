@@ -12,12 +12,12 @@
     #declare score_holder $Stack
 
 # 補正量をスタックから算出する
-    execute store result score $Modifier Temporary run data get storage asset:context this.Modifier 100
+    execute store result score $Modifier Temporary run data get storage asset:context this.Modifier 1000
     execute store result score $Stack Temporary run data get storage asset:context Stack
     scoreboard players operation $Modifier Temporary *= $Stack Temporary
 
 # 最大体力バフを付与する
-    execute store result storage asset:temp Args.Val double 0.01 run scoreboard players get $Modifier Temporary
+    execute store result storage asset:temp Args.Val double 0.001 run scoreboard players get $Modifier Temporary
     function asset:effect/0406.ocean_grace/modifier/add.m with storage asset:temp Args
 
 # リセット
