@@ -5,4 +5,4 @@
 # @within asset:object/alias/1199/summon
 
 # 元となるEntityを召喚する
-    summon text_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[0f,-90f],brightness:{sky:15,block:15},interpolation_duration:5,text:'{"text":"0","font":"object/1199"}'}
+    summon text_display ~ ~ ~ {Tags:["ObjectInit"],Rotation:[0f,0f],brightness:{sky:15,block:15},interpolation_duration:5,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,-0.24f,0f],scale:[3f,3f,0f]},background:16711680}
