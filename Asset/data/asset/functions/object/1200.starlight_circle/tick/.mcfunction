@@ -15,10 +15,6 @@
     tp @s ~ ~ ~ ~4.5 ~
     execute on passengers run tp @s ~ ~ ~ ~4.5 ~
 
-# 回転
-    execute if score @s General.Object.Tick matches ..11 run function asset:object/1200.starlight_circle/tick/tp/0
-    execute if score @s General.Object.Tick matches 12.. run function asset:object/1200.starlight_circle/tick/tp/1
-
 # 消える
     execute if score @s General.Object.Tick matches 25 run function asset:object/1200.starlight_circle/tick/transform/1
     execute if score @s General.Object.Tick matches 25 on passengers run function asset:object/1200.starlight_circle/tick/transform/1
