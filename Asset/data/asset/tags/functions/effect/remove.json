@@ -123,6 +123,7 @@
         "asset:effect/0051.attack_base_debuff/_/remove",
         "asset:effect/0125.levitation/_/remove",
         "asset:effect/0007.defense_base_debuff/_/remove",
-        "asset:effect/0258.spirit_melody/_/remove"
+        "asset:effect/0258.spirit_melody/_/remove",
+        "asset:effect/0406.ocean_grace/_/remove"
     ]
 }
