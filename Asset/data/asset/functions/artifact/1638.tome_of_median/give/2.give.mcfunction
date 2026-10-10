@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "メディアントーム", "color": "#3dcd58"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "前方の敵一体を攻撃する。"}', '{"text": "使用時のMP割合が50%に近いほど、与えるダメージが上昇する。"}']
+    data modify storage asset:artifact Lore set value ['{"text": "前方の敵一体を攻撃する。"}', '{"text": "使用時のMP割合が50%に近いほど、与えるダメージが増加する。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
