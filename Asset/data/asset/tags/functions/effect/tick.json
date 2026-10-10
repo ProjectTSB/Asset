@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:effect/0359.time_ticker_eclipse/_/tick",
+        "asset:effect/0358.time_ticker_night/_/tick",
+        "asset:effect/0357.time_ticker_day/_/tick",
+        "asset:effect/0362.baking/_/tick",
+        "asset:effect/0384.ninjas_mindset/_/tick",
+        "asset:effect/0399.dual_rhythm_guard/_/tick",
         "asset:effect/0355.heart_gap/_/tick",
         "asset:effect/0348.cool_feeling/_/tick",
         "asset:effect/0356.dolphin_blessing/_/tick",
