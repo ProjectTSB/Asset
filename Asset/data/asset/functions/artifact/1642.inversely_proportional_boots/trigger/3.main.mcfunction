@@ -8,4 +8,7 @@
     function asset:artifact/common/use/feet
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1642.inversely_proportional_boots
+# 演出のみ
+    playsound block.amethyst_block.break player @a ~ ~ ~ 1.0 0.7
+    playsound item.armor.equip_diamond player @a ~ ~ ~ 1.0 1.0
+    particle glow ~ ~1.5 ~ 0.2 0.5 0.2 1 20

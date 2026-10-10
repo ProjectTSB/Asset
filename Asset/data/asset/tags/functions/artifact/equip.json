@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:artifact/1639.inversely_proportional_helmet/trigger/1.trigger",
+        "asset:artifact/1640.inversely_proportional_chestplate/trigger/1.trigger",
+        "asset:artifact/1641.inversely_proportional_leggings/trigger/1.trigger",
+        "asset:artifact/1642.inversely_proportional_boots/trigger/1.trigger",
         "asset:artifact/1473.ninja_sandals/trigger/1.trigger",
         "asset:artifact/1472.ninja_pants/trigger/1.trigger",
         "asset:artifact/1471.ninja_robe/trigger/1.trigger",
