@@ -24,7 +24,7 @@
 # 表示開始までの待ち時間(tick、1以上)
     data modify storage asset:object Field.SpinInterval set value 3
 # 最初・通常・最後の90度回転にかける時間(tick、1以上)
-    data modify storage asset:object Field.ExpandDuration set value 7
+    data modify storage asset:object Field.ExpandDuration set value 12
     data modify storage asset:object Field.SpinDuration set value 16
     data modify storage asset:object Field.ShrinkDuration set value 12
 # 拡大後のScale
