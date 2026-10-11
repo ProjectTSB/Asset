@@ -5,7 +5,7 @@
 # @within function asset:artifact/0015.gasoline/use_item/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    data modify storage asset:artifact DisabledCheckFlag set value {TypeCooldown:true,Believe:true}
+    data modify storage asset:artifact DisabledCheckFlag set value {TypeCooldown:true,Believe:true,MPRequire:true}
     function asset:artifact/common/check_condition/auto
 
 # 3.main.mcfunctionを実行する
