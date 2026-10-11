@@ -6,13 +6,25 @@
 
 ## 読む文書を選ぶ
 
-領域文書とノートの一覧・用途は、DevSpaceで次を実行して得るINDEXから選ぶ。INDEXのファイルや手書きの一覧は保存せず、この作業コピーのブランチのヘッダーから毎回生成する。
+領域文書は次の表から、作業の目的に合うものを選ぶ。個別の判断を扱うノートは、下記のINDEXから選ぶ。
+
+|目的|読む文書|
+|---|---|
+|Mob／Objectの型・継承・インスタンス・メソッド、カテゴリ間の契約|[object-model.md](object-model.md)|
+|Effectの定義・継承・Field・再付与・寿命・自己終了|[effect.md](effect.md)|
+|アイテム定義・登録・発動、属性・クールダウン、範囲攻撃のダメージ、使用の継続・解除と発動時の情報の保持、装備と効果の寿命・責務を設計する|[artifact.md](artifact.md)|
+|Mob と AJ のライフサイクル、装備・演出のイディオム、個体の関連付けとイベント入力、独自移動とVanillaの移動の切替|[mob.md](mob.md)|
+|Object、API storage、display・粒子・item entity・AECなどの描画と幾何、NBTの整数カウンタ、生成・更新スクリプト、CI・自動マージ、実機検証|[runtime-and-tools.md](runtime-and-tools.md)|
+|ProjectTSB Wiki の作成意図と現行実装の差|[wiki-crosscheck.md](wiki-crosscheck.md)|
+|調査範囲と直接根拠|[sources.md](sources.md)|
+
+ノートを含むINDEXは、DevSpaceで次を実行して得る。INDEXのファイルや手書きのノート一覧は保存せず、この作業コピーのブランチのヘッダーから毎回生成する。
 
 ```sh
 python3 scripts/knowledge/index.py <この作業コピー>
 ```
 
-領域を絞るときは `--area <領域>`、ノートだけを見るときは `--notes-only` を付ける。スクリプトを使えない場合は、`docs/knowledge/*.md` と `docs/knowledge/notes/**/*.md` の先頭にある `title`・`description` を直接読む。ノートの形式、参照経路、機械的な検査、人がマージする範囲はDevSpaceの `docs/knowledge-notes.md` に従う。
+スクリプトを使えない場合は、`docs/knowledge/notes/**/*.md` の先頭にある `title`・`description` を直接読む。INDEXのオプション、ノートの形式、参照経路、機械的な検査、人がマージする範囲はDevSpaceの `docs/knowledge-notes.md` に従う。
 
 領域文書は領域の全体像と入口、`notes/` 配下のノートは個別の判断（根拠・適用条件・適用外）を扱う。該当が見つからないときは領域を広げてINDEXを読み直し、コードと依存先の契約を確認してから知識の有無を判断する。
 
