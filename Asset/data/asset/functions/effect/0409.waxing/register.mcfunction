@@ -38,3 +38,4 @@
 # フィールド
     data modify storage asset:effect Field.PrevMP set value -1
     data modify storage asset:effect Field.MPHealed set value 0
+    data modify storage asset:effect Field.Interval set value 20

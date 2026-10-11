@@ -11,3 +11,6 @@
     data modify storage api: Argument.ID set value 409
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    playsound block.grindstone.use player @a ~ ~ ~ 1.0 0.5

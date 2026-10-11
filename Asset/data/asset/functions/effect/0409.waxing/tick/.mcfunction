@@ -10,6 +10,10 @@
     #declare score_holder $PrevMP
     #declare score_holder $MPHealed
 
+# Interval減算
+    execute store result storage asset:context this.Interval int 0.9999999999 run data get storage asset:context this.Interval
+    execute if data storage asset:context this{Interval:0} run function asset:effect/0409.waxing/tick/countdown
+
 # MP現在値を取得して差をもとめる
     function api:mp/get_current
     execute store result score $MP Temporary run data get storage api: Return.CurrentMP
