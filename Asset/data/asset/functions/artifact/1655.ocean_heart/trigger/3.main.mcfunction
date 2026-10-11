@@ -7,6 +7,10 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/offhand
 
+# 演出用Object
+    data modify storage api: Argument.ID set value 1199
+    function api:object/summon
+
 # 現在の体力割合を取得する
     function api:entity/player/get_health_per
 
