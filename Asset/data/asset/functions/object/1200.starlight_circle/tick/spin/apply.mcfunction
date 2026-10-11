@@ -6,7 +6,7 @@
 
 # 回転を補間する
     data modify entity @s start_interpolation set value 0
-    data modify entity @s interpolation_duration set value 16
+    data modify entity @s interpolation_duration set from storage asset:context this.SpinInterval
 
 # 水平な姿勢を保ち、画像の面内で回転させる
     execute if data storage asset:context this{Spin:3} run data modify entity @s transformation.right_rotation set value [0.0f,0.0f,0.7071f,0.7071f]

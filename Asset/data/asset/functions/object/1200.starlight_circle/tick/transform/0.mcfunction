@@ -1,10 +1,8 @@
 #> asset:object/1200.starlight_circle/tick/transform/0
 #
-#
+# 最初の回転に合わせて拡大する
 #
 # @within function asset:object/1200.starlight_circle/tick/spin
 
-#
-    data modify entity @s start_interpolation set value 0
-    data modify entity @s interpolation_duration set value 7
-    data modify entity @s transformation.scale set value [5f,5f,0f]
+# 指定のScaleに拡大する
+    data modify entity @s transformation.scale set from storage asset:context this.Scale

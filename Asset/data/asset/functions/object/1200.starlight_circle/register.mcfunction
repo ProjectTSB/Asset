@@ -19,4 +19,12 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.SpinCount set value 4
-    data modify storage asset:object Field.SpinInterval set value 1
+    data modify storage asset:object Field.FirstSpin set value true
+# 表示開始までの待ち時間(tick、1以上)
+    data modify storage asset:object Field.SpinInterval set value 3
+# 最初・通常・最後の90度回転にかける時間(tick、1以上)
+    data modify storage asset:object Field.ExpandDuration set value 7
+    data modify storage asset:object Field.SpinDuration set value 16
+    data modify storage asset:object Field.ShrinkDuration set value 12
+# 拡大後のScale
+    data modify storage asset:object Field.Scale set value [5f,5f,0f]
