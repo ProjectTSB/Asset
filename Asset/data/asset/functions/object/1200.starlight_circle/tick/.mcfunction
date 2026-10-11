@@ -11,9 +11,10 @@
     execute if score @s General.Object.Tick matches 3 run function asset:object/1200.starlight_circle/tick/transform/0
     execute if score @s General.Object.Tick matches 3 on passengers run function asset:object/1200.starlight_circle/tick/transform/0
 
-# spin
-    tp @s ~ ~ ~ ~4.5 ~
-    execute on passengers run tp @s ~ ~ ~ ~4.5 ~
+# 回転させる
+    execute if score @s General.Object.Tick matches 10..24 store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
+    execute if data storage asset:context this{SpinInterval:0} run function asset:object/1200.starlight_circle/tick/spin
+    execute if data storage asset:context this{SpinInterval:0} run data modify storage asset:context this.SpinInterval set value 16
 
 # 消える
     execute if score @s General.Object.Tick matches 25 run function asset:object/1200.starlight_circle/tick/transform/1
