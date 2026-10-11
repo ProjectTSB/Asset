@@ -13,9 +13,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text": "ジェットブースター"}'
+    data modify storage asset:artifact Name set value '{"text": "ジェットブースター", "color": "blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text": "使用してから5秒後、爆発をして向いている方向に吹っ飛ぶ。"}', '{"text": "その間に計測されたMP消費量に応じて攻撃範囲、威力、飛距離が上昇する。"}', '{"text": "マナの燃料にして動くブースター。", "color": "gray"}', '{"text": "燃料の貯蓄こそできないが、爆発的な出力を誇る。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
