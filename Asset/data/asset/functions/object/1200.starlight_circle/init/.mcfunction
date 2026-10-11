@@ -5,4 +5,4 @@
 # @within asset:object/alias/1200/init
 
 # 回転方向を50%の確率で反転する
-    execute store result storage asset:context this.LeftRotate byte 1 run random value 0..1
+    execute if predicate lib:random_pass_per/50 run data modify storage asset:context this.LeftRotate set value true
