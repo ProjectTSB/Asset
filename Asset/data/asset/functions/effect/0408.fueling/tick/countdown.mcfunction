@@ -8,4 +8,4 @@
     data modify storage asset:context this.Interval set value 20
 
 # 演出
-    ## とりあえず空
+    playsound block.note_block.bit player @s ~ ~ ~ 1.0 1.0

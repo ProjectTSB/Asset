@@ -25,12 +25,16 @@
 
     function api:damage/single_damage_session/open
 # 攻撃範囲も可変
-    execute if score $Magnitude Temporary matches 100..199 positioned ^ ^ ^-2 as @e[type=#lib:living_without_player,tag=Enemy,distance=..3] run function api:damage/
-    execute if score $Magnitude Temporary matches 200..299 positioned ^ ^ ^-4 as @e[type=#lib:living_without_player,tag=Enemy,distance=..6] run function api:damage/
-    execute if score $Magnitude Temporary matches 300.. positioned ^ ^ ^-6 as @e[type=#lib:living_without_player,tag=Enemy,distance=..8] run function api:damage/
+    execute if score $Magnitude Temporary matches 100..199 positioned ^ ^ ^-2 run function asset:effect/0408.fueling/end/attack/1
+    execute if score $Magnitude Temporary matches 200..299 positioned ^ ^ ^-4 run function asset:effect/0408.fueling/end/attack/2
+    execute if score $Magnitude Temporary matches 300.. positioned ^ ^ ^-6 run function asset:effect/0408.fueling/end/attack/3
 
     function api:damage/reset
     function api:damage/single_damage_session/close
+
+# 共通演出
+    playsound entity.firework_rocket.launch player @a ~ ~ ~ 2.0 0.5
+    playsound block.note_block.bit player @s ~ ~ ~ 1.0 2.0
 
 # リセット
     scoreboard players reset $Magnitude Temporary

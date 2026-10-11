@@ -12,3 +12,8 @@
     data modify storage api: Argument.ID set value 408
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    playsound entity.tnt.primed player @a ~ ~ ~ 1.0 0.5
+    playsound ogg:block.vault.eject3 player @a ~ ~ ~ 1.0 1.0
+    particle campfire_signal_smoke ~ ~1 ~ 0.1 0.5 0.1 0.05 10
