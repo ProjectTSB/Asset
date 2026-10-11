@@ -2,7 +2,7 @@
 #
 # 回転段階に対応する角度へ補間する
 #
-# @within function asset:object/1200.starlight_circle/tick/spin
+# @within function asset:object/1200.starlight_circle/tick/spin/
 
 # 回転を補間する
     data modify entity @s start_interpolation set value 0

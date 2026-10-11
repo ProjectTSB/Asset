@@ -1,4 +1,4 @@
-#> asset:object/1200.starlight_circle/summon/m
+#> asset:object/1200.starlight_circle/summon/.m
 #
 #
 #
