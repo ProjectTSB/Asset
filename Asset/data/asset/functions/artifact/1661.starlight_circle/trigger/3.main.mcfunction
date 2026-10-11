@@ -11,6 +11,7 @@
 
 # 適当に演出
     particle end_rod ~ ~0.2 ~ 0 0 0 0.3 30 normal @a
+    particle enchant ~ ~1.2 ~ 2 1 2 0 100 normal @a
     particle dust 0.541 0.78 1 1 ~ ~1.2 ~ 3 1.2 3 0 40 normal @a
     playsound block.beacon.power_select player @a ~ ~ ~ 1 1.8
     playsound block.beacon.power_select player @a ~ ~ ~ 1 1.9
