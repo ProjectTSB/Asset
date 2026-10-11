@@ -20,6 +20,7 @@
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.SpinCount set value 4
     data modify storage asset:object Field.FirstSpin set value true
+    data modify storage asset:object Field.LeftRotate set value false
 # 表示開始までの待ち時間(tick、1以上)
     data modify storage asset:object Field.SpinInterval set value 3
 # 最初・通常・最後の90度回転にかける時間(tick、1以上)
