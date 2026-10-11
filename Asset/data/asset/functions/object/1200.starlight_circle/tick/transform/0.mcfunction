@@ -6,5 +6,5 @@
 
 #
     data modify entity @s start_interpolation set value 0
-    data modify entity @s interpolation_duration set value 10
+    data modify entity @s interpolation_duration set value 7
     data modify entity @s transformation.scale set value [5f,5f,0f]
