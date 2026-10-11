@@ -18,4 +18,5 @@
     data modify storage asset:object ID set value 1200
 # フィールド(オプション)
     data modify storage asset:object Field.Spin set value 4
+    data modify storage asset:object Field.SpinCount set value 4
     data modify storage asset:object Field.SpinInterval set value 1

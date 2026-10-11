@@ -8,18 +8,8 @@
     scoreboard players add @s General.Object.Tick 1
 
 # 回転させる
-    execute if score @s General.Object.Tick matches 3..24 store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
+    execute unless data storage asset:context this{SpinCount:0} if score @s General.Object.Tick matches 3.. store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
     execute if data storage asset:context this{SpinInterval:0} run function asset:object/1200.starlight_circle/tick/spin
-    execute if data storage asset:context this{SpinInterval:0} run data modify storage asset:context this.SpinInterval set value 16
 
-# 拡大と最初の回転を同じ7tickで補間する
-    execute if score @s General.Object.Tick matches 3 run function asset:object/1200.starlight_circle/tick/transform/0
-    execute if score @s General.Object.Tick matches 3 on passengers run function asset:object/1200.starlight_circle/tick/transform/0
-    execute if score @s General.Object.Tick matches 3 run data modify storage asset:context this.SpinInterval set value 7
-
-# 消える
-    execute if score @s General.Object.Tick matches 25 run function asset:object/1200.starlight_circle/tick/transform/1
-    execute if score @s General.Object.Tick matches 25 on passengers run function asset:object/1200.starlight_circle/tick/transform/1
-
-# 消滅処理
-    execute if score @s General.Object.Tick matches 37.. run function asset:object/1200.starlight_circle/tick/kill
+# 縮小が完了したら消滅させる
+    execute if data storage asset:context this{SpinCount:0} if score @s General.Object.Tick matches 12.. run function asset:object/1200.starlight_circle/tick/kill

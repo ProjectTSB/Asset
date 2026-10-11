@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/1200.starlight_circle/tick/
+# @within function asset:object/1200.starlight_circle/tick/spin
 
 # 消える
     data modify entity @s start_interpolation set value 0
