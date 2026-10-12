@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"刃こぼれした岩切りナタ","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"ナタを元通りの状態に戻す","color":"white"}','{"text":"MPが不足している場合、不足分だけ体力を消費して発動する","color":"white"}','{"text":"「願いには代償が必要。」","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"ナタを元通りの状態に戻す","color":"white"}','{"text":"MPが足りない場合、不足分だけ体力を消費して発動する","color":"white"}','{"text":"「願いには代償が必要。」","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "usingItem2s"
+    data modify storage asset:artifact Trigger set value "usingItem1s"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
