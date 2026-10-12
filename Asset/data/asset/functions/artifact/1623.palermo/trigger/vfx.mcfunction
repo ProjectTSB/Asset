@@ -5,6 +5,7 @@
 #> Private
 # @private
     #declare score_holder $Random
+    #declare score_holder $Stack
 
 #
 # Field設定
@@ -34,7 +35,9 @@
     playsound item.trident.throw player @a ~ ~ ~ 0.55 0.5 0
     playsound entity.glow_squid.squirt player @a ~ ~ ~ 0.55 2 0
 
-    execute if data storage asset:temp {Success:1b} run playsound entity.zombie.break_wooden_door player @a ~ ~ ~ 0.25 0.9 0
-    execute if data storage asset:temp {Success:1b} run playsound entity.blaze.hurt player @a ~ ~ ~ 0.6 1.35 0
+# バフが1以上あればさらに追加で鳴らす
+    execute store result score $Stack Temporary run data get storage api: Return.Effect.Stack
+    execute if score $Stack Temporary matches 1.. run playsound entity.zombie.break_wooden_door player @a ~ ~ ~ 0.25 0.9 0
+    execute if score $Stack Temporary matches 1.. run playsound entity.blaze.hurt player @a ~ ~ ~ 0.6 1.35 0
 #
 # @within function asset:artifact/1623.palermo/trigger/3.main
