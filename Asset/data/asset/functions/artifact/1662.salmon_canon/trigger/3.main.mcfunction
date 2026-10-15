@@ -19,6 +19,8 @@
     # 弾速・射程
         data modify storage api: Argument.FieldOverride.Range set value 40
         data modify storage api: Argument.FieldOverride.Speed set value 4
+    # 存在Tick
+        data modify storage api: Argument.FieldOverride.Tick set value 400
     # 召喚
         data modify storage api: Argument.ID set value 1201
         execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID

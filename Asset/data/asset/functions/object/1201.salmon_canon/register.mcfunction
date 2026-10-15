@@ -19,5 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.Damage set value {Min:1,Max:10}
-    data modify storage asset:object Field.Tick set value 300
+    data modify storage asset:object Field.Tick set value 400
     data modify storage asset:object Field.Interval set value {_:6,Max:6}
