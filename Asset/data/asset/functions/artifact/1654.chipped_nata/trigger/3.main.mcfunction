@@ -8,4 +8,7 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-    say test: 1654.chipped_nata
+
+    data modify storage api: Argument.ID set value 1653
+    data modify storage api: Argument.Slot set value "mainhand"
+    function api:artifact/replace/from_id

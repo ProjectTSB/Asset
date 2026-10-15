@@ -15,13 +15,13 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"岩切りナタ","color":"yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"対象に物理耐性があるなら、軽減を50%貫通する","color":"white"}','{"text":"あああ","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"対象に物理耐性があるなら、物理耐性を50%貫通する","color":"white"}','{"text":"使用回数が残り1回になるとジャンプ力が大きく上昇し","color":"white"}','{"text":"10m以上落下して攻撃するとダメージが3倍になる","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
-    data modify storage asset:artifact RemainingCount set value 30
+    data modify storage asset:artifact RemainingCount set value 20
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照

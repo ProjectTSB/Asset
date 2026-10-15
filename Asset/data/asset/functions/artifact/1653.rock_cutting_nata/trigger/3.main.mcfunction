@@ -10,3 +10,5 @@
 # ここから先は神器側の効果の処理を書く
     say test: 1653.rock_cutting_nata
 
+# まだ壊れていないならキャンセル
+    execute unless data storage asset:context Items.mainhand.id run function asset:artifact/1653.rock_cutting_nata/trigger/reload
