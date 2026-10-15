@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1201/tick
 
-# 水中呼吸
-    effect give @s water_breathing infinite 0 true
-
 # 近くの敵を見る
     execute facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..20,sort=nearest,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
