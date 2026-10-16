@@ -11,3 +11,5 @@
     execute unless entity @e[type=#lib:living_without_player,tag=1165.TargetCandidate,distance=..10] positioned ^ ^ ^15 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] add 1165.TargetCandidate
     execute facing entity @e[type=#lib:living_without_player,tag=1165.TargetCandidate,distance=..25,sort=nearest,limit=1] eyes positioned ^ ^ ^-140 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
     execute run tag @e[type=#lib:living_without_player,tag=1165.TargetCandidate,distance=..30] remove 1165.TargetCandidate
+# 特定の条件下でシャボンが敵の周りを旋回し続けてしまうのでそれの対策
+    tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2.5,sort=nearest,limit=1] eyes
