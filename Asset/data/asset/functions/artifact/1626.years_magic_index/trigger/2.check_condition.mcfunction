@@ -9,6 +9,6 @@
 # 他にアイテム等確認する場合はここに書く
 
 # クリティカルチェック
-    execute unless data storage asset:context Attack{Crit:true} run tag @s remove CanUsed
+    execute unless data storage asset:context Attack{Crit:true} run tag @s[tag=CanUsed] remove CanUsed
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1626.years_magic_index/trigger/3.main

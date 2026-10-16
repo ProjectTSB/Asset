@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"幾星霜の魔法大典","color":"#3920B5"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"自身の魔法攻撃数値でダメージ計算を行う","color":"white"}','{"text":"過去から現在に至るまであらゆる魔法知識が詰まった本","color":"gray"}','{"text":"積み重なった知識の重み(物理)を敵にたたきつける","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"自身の魔法攻撃補正でダメージ計算を行う","color":"white"}','{"text":"過去から現在に至るまであらゆる魔法知識が詰まった本","color":"gray"}','{"text":"積み重なった知識の重み(物理)を敵にたたきつける","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
