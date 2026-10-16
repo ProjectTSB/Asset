@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/1269.apocalypse/using_item/3.main
 
-
 # スタック更新とそれの演出
     execute if data storage asset:context UsingItemTime{mainhand:1} run function asset:artifact/1269.apocalypse/using_item/give_charge.m {Stack:1}
     execute if data storage asset:context UsingItemTime{mainhand:1} run playsound block.beacon.activate player @a ~ ~ ~ 1 1.2
