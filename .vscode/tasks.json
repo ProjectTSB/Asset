@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open SkyBlock Server",
+      "type": "process",
+      "command": "sh",
+      "args": ["${workspaceFolder}/.vscode/server-start.sh"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "windows": {"command": "${env:ProgramFiles}/Git/bin/bash.exe"},
+      "problemMatcher": []
+    }
+  ]
+}
