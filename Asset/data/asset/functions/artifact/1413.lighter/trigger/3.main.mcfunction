@@ -12,7 +12,6 @@
 #> Private
 # @private
     #declare tag Target
-    #declare tag 139.MainTarget 火柱の中心となる敵
 
 # 前方の敵にTagをつける
     execute positioned ^ ^ ^4 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] add Target
