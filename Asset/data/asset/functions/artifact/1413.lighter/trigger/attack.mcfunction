@@ -1,10 +1,9 @@
 #> asset:artifact/1413.lighter/trigger/attack
 #
-# 魔法攻撃を行う
+# 火柱を発生させ、中心と周囲の敵に魔法攻撃を行う
 #
 # @within function asset:artifact/1413.lighter/trigger/3.main
 
-    
 # 演出
     particle flame ~ ~0.1 ~ 0.4 2.0 0.4 0.03 70 normal @a
     particle flame ~ ~1.0 ~ 0.5 0.3 0.5 0.02 25 normal @a
