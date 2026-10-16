@@ -8,8 +8,8 @@
     data modify storage asset:context this.Interval._ set from storage asset:context this.Interval.Max
 
 # 演出
-    playsound entity.player.splash.high_speed neutral @a ~ ~ ~ 0.3 1.6
-    playsound entity.player.splash.high_speed neutral @a ~ ~ ~ 0.3 0.8
+    playsound entity.player.splash.high_speed neutral @a ~ ~ ~ 0.2 1.6
+    playsound entity.player.splash.high_speed neutral @a ~ ~ ~ 0.2 0.8
     particle minecraft:fishing ~ ~ ~ 0 0 0 0.1 20
 
 # 攻撃用Object召喚
