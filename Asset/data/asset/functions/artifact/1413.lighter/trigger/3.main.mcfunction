@@ -12,6 +12,7 @@
 #> Private
 # @private
     #declare tag Target
+    #declare tag 139.MainTarget 火柱の中心となる敵
 
 # 前方の敵にTagをつける
     execute positioned ^ ^ ^4 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] add Target
@@ -19,8 +20,10 @@
 # 敵が居ない場合
     execute positioned ^ ^ ^4 unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] run function asset:artifact/1413.lighter/trigger/attack
 
-# 前方に敵が居た場合
-    execute positioned ^ ^ ^4 if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] at @s at @e[type=#lib:living_without_player,tag=Target,distance=..10,sort=nearest,limit=1] run function asset:artifact/1413.lighter/trigger/attack
+# 前方に敵が居た場合、最も近い敵を中心に火柱を発生させる
+    execute at @s run tag @e[type=#lib:living_without_player,tag=Target,distance=..10,sort=nearest,limit=1] add 139.MainTarget
+    execute at @e[type=#lib:living_without_player,tag=139.MainTarget,distance=..10,limit=1] run function asset:artifact/1413.lighter/trigger/attack
 
 # Tagを削除
     execute positioned ^ ^ ^4 run tag @e[type=#lib:living,tag=Target,distance=..4] remove Target
+    tag @e[type=#lib:living,tag=139.MainTarget] remove 139.MainTarget

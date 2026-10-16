@@ -6,21 +6,22 @@
 
     
 # 演出
-    particle flame ~ ~0.1 ~ 0.55 2.6 0.55 0.05 200 normal @a
-    particle flame ~ ~1.0 ~ 0.65 0.35 0.65 0.04 90 normal @a
-    particle flame ~ ~2.0 ~ 0.75 0.5 0.75 0.05 45 normal @a
+    particle flame ~ ~0.1 ~ 0.4 2.0 0.4 0.03 70 normal @a
+    particle flame ~ ~1.0 ~ 0.5 0.3 0.5 0.02 25 normal @a
 
-    particle smoke ~ ~0.1 ~ 0.55 2.4 0.55 0.04 120 normal @a
-    particle lava ~ ~0.1 ~ 0.35 0.25 0.35 0.01 12 normal @a
+    particle smoke ~ ~0.1 ~ 0.4 1.8 0.4 0.02 35 normal @a
+    particle lava ~ ~0.1 ~ 0.3 0.2 0.3 0.01 4 normal @a
 
-    playsound item.firecharge.use player @a ~ ~ ~ 1.0 0.8 0
-    playsound block.fire.ambient player @a ~ ~ ~ 1.2 1.0 0
-    playsound block.fire.ambient player @a ~ ~ ~ 0.9 1.3 0
+    playsound item.firecharge.use player @a ~ ~ ~ 0.8 0.8 0
+    playsound block.fire.ambient player @a ~ ~ ~ 0.8 1.0 0
 
-# ダメージ
+# 狙った敵へのダメージ
     data modify storage api: Argument.Damage set value 50f
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..4] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=139.MainTarget,distance=..4,limit=1] run function api:damage/
     function api:damage/reset
+
+# 周囲の敵へのダメージ
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!139.MainTarget,tag=!Uninterferable,distance=..4] run function asset:artifact/1413.lighter/trigger/splash_damage

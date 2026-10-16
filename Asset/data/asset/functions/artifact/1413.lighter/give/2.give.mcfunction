@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"ライター","color":"green"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"火を付けるための神器"}','{"text":"敵から火柱を発生させる"}']
+    data modify storage asset:artifact Lore set value ['{"text":"前方の最も近い敵を中心に火柱を発生させる"}','{"text":"火柱は周囲の敵にも燃え移り、25-50のダメージを与える"}','{"text":"火を付けるための小さな道具","color":"gray"}','{"text":"ひとたび灯れば、炎は辺りへと燃え広がる","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [50]
+    data modify storage asset:artifact AttackInfo.Damage set value [25,50]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
