@@ -6,7 +6,6 @@
 
 # チャージ用エフェクトを付与
     data modify storage api: Argument.ID set value 334
-    data modify storage api: Argument.Duration set value 40
     $data modify storage api: Argument.Stack set value $(Stack)
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
