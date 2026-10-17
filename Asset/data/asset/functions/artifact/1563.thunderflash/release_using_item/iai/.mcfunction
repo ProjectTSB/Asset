@@ -23,4 +23,3 @@
 
 # リセット
     scoreboard players reset $Range Temporary
-    scoreboard players reset $MaxRange Temporary

@@ -21,3 +21,6 @@
     execute anchored eyes positioned ^ ^-0.2 ^1 run playsound entity.glow_squid.squirt player @a ~ ~ ~ 1 1.58
     execute at @s anchored eyes positioned ^ ^-0.2 ^1 run playsound entity.glow_squid.squirt player @a ~ ~ ~ 1 1.58
     execute at @s anchored eyes positioned ^ ^-0.2 ^1 run playsound minecraft:item.axe.scrape player @a ~ ~ ~ 1 2
+
+# リセット
+    scoreboard players reset $MaxRange Temporary
