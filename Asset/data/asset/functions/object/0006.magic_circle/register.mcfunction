@@ -24,7 +24,7 @@
 # 裏面に表示する文字 (未設定の場合、表裏で共通の文字を使用)
     # data modify storage asset:object Field.BackChar set value "0"
 # フォント
-    data modify storage asset:object Field.Font set value "object/0006"
+    data modify storage asset:object Field.Font set value "object/6"
 # 左回転か否か
     data modify storage asset:object Field.LeftRotate set value false
 # 出現するのに何tickかけるか
