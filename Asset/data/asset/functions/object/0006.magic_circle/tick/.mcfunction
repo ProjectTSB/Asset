@@ -19,7 +19,7 @@
     scoreboard players operation $0006.DisappearRemaining Temporary -= $0006.DisappearDuration Temporary
     scoreboard players reset $0006.DisappearDuration Temporary
 
-# 消失中は回転先を更新せず、指定時刻での消滅を優先する
+# 消失時の回転とScaleの変化を開始し、完了まで通常回転を待つ
     execute if score $0006.DisappearRemaining Temporary matches 0 run function asset:object/0006.magic_circle/tick/disappear/
     execute if score $0006.DisappearRemaining Temporary matches ..0 run return run scoreboard players reset $0006.DisappearRemaining Temporary
     scoreboard players reset $0006.DisappearRemaining Temporary
