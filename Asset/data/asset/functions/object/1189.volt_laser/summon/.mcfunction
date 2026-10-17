@@ -7,5 +7,5 @@
 # 元となるEntityを召喚する
     execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
     data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
-    function asset:object/1189.volt_laser/summon/m with storage asset:temp Args
+    function asset:object/1189.volt_laser/summon/.m with storage asset:temp Args
     data remove storage asset:temp Args

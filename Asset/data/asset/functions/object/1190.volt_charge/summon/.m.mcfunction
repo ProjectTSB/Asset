@@ -1,4 +1,4 @@
-#> asset:object/1190.volt_charge/summon/m
+#> asset:object/1190.volt_charge/summon/.m
 #
 #
 #

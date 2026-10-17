@@ -1,4 +1,4 @@
-#> asset:object/1189.volt_laser/summon/m
+#> asset:object/1189.volt_laser/summon/.m
 #
 #
 #
