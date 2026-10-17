@@ -127,6 +127,15 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 block_display・item_display・text_displayの選択基準は、DevSpaceの `docs/mcfunction-idioms.md`「display三種を表示内容から選ぶ」にある。Assetの演出では、ブロック状態、CustomModelDataを持つモデル、フォントの字形という表示元を確認して選ぶ。display自身が論理Objectの場合も、別entityのPassengerとして表示を担う場合もあるため、表示の種類とField・移動・破棄を担当するentityを分けて確認する。
 
+### 両面の魔法陣を設定付きで召喚する
+
+[0006.magic_circle](../../Asset/data/asset/functions/object/0006.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは `Field.Char`（既定 `"0"`）と `Field.Font`（既定 `"object/0006"`）を両面へ適用する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
+
+文字・フォント・大きさ・回転方向・各時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`SpinCount` は90度回転の回数で2以上、`SpinInterval` と `ExpandDuration`・`SpinDuration`・`ShrinkDuration` は1以上のtick数とする。最初の回転で拡大し、最後の回転で縮小し、補間終了後に両面を破棄する。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
+
+CharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。画像は指定したフォントを提供するリソースパックで管理する。
+
+
 ## displayの初回位置合わせを非表示で行う
 
 [Ecual の予告線](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/projectile/announce_line/2.tick.mcfunction) は、横断面のscaleを0にして生成し、負の残り時間を最初の処理で正に反転する。可視化判定は反転より前にあるため、初回の位置合わせ中は非表示を保ち、次の処理でscaleと `teleport_duration:1` を設定する。負数は単なる異常な時間値ではなく、初回処理と表示開始を分ける状態も表している。
