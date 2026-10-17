@@ -10,11 +10,8 @@
     scoreboard players set $Damage Temporary 500
 
     #MPRatio
-    function api:mp/get_current
-    execute store result score $MPRatio Temporary run data get storage api: Return.CurrentMP 1000
-    function api:mp/get_max
-    execute store result score $MPMax Temporary run data get storage api: Return.MaxMP 10
-    scoreboard players operation $MPRatio Temporary /= $MPMax Temporary
+    function api:entity/player/get_mp_per
+    execute store result score $MPRatio Temporary run data get storage api: Return.MPPer 100
 
     #MPRatioがちょうど50±2%でないならabs(50 - MPRatio) / 2を計算して500を除算
     execute unless score $MPRatio Temporary matches 48..52 run function asset:artifact/1638.tome_of_median/trigger/calc
@@ -34,4 +31,3 @@
     tag @e[type=#lib:living_without_player,tag=Candidate,distance=..10] remove Candidate
     scoreboard players reset $Damage Temporary
     scoreboard players reset $MPRatio Temporary
-    scoreboard players reset $MPMax Temporary
