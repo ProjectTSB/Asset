@@ -1,6 +1,10 @@
 {
     "values": [
         "asset:artifact/0921.celestial_star/register",
+        "asset:artifact/1655.ocean_heart/register",
+        "asset:artifact/1614.wooden_snake_branch/register",
+        "asset:artifact/1421.toaster/register",
+        "asset:artifact/1555.shift_change/register",
         "asset:artifact/1466.insulator_helmet/register",
         "asset:artifact/1570.pile_of_accumulated_dust/register",
         "asset:artifact/1585.sword_of_isolation/register",
@@ -10,6 +14,7 @@
         "asset:artifact/1606.dimension_knife/register",
         "asset:artifact/1474.ninja_kunai/register",
         "asset:artifact/1470.ninja_hood/register",
+        "asset:artifact/1412.seal_of_dual_rhythm/register",
         "asset:artifact/1562.tsukimi_dango/register",
         "asset:artifact/1453.frost_flake_bow/register",
         "asset:artifact/1430.shield_of_fate/register",
