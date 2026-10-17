@@ -41,7 +41,8 @@
     data modify storage asset:object Field.DisappearScale set value [0f,0f,0f]
 # 消滅までのtick
 # 数値によっては変化途中でも問答無用で消えるので注意
-    data modify storage asset:object Field.Tick set value 60
+# Tick = (3 + AppearDuration + SpinDuration × N + DisappearDuration) だと綺麗に消える
+    data modify storage asset:object Field.Tick set value 59
 
 # 内部状態
 # 次の回転先を決める内部状態(int、4から開始し、90度ごとに循環)
