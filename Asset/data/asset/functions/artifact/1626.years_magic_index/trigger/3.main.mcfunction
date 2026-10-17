@@ -17,6 +17,6 @@
     function api:damage/modifier
 # ダメージ判定を物理に
     data modify storage api: Argument.AttackType set value "Physical"
-    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..5,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10,sort=nearest,limit=1] run function api:damage/
 # リセット
     function api:damage/reset
