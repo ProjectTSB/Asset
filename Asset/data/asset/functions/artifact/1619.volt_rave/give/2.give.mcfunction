@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"P.C.D.L.R. Volt-Rave","color":"#2ff743"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"長押しすることでチャージを行い"}','{"translate":"%1$sを離すことでプラズマレーザーを放つ","with":[{"keybind":"key.use"}]}','{"text":"最大までチャージすると出力が飛躍的に増大する"}','{"text":"Plasma Compression-Discharge Laser Rifle","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"長押しでチャージが可能なプラズマレーザーを放つ"}','{"text":"1秒以上チャージすると出力が飛躍的に増大する"}','{"text":"Plasma Compression-Discharge Laser Rifle","color":"gray","italic":true}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onClick"
+    data modify storage asset:artifact Trigger set value "releaseUsingItem"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

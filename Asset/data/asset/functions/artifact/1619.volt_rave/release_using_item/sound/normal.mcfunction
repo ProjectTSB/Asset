@@ -1,8 +1,8 @@
-#> asset:effect/0394.charge_of_volt_rave/end/sound/normal
+#> asset:artifact/1619.volt_rave/release_using_item/sound/normal
 #
 #
 #
-# @within function asset:effect/0394.charge_of_volt_rave/end/
+# @within function asset:artifact/1619.volt_rave/release_using_item/3.main
 
 # playsound
     playsound tsb_sounds:electric1 player @a ~ ~ ~ 1 1.1

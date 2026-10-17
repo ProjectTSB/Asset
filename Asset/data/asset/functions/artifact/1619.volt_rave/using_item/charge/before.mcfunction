@@ -1,8 +1,8 @@
-#> asset:effect/0394.charge_of_volt_rave/re-given/before_charge
+#> asset:artifact/1619.volt_rave/using_item/charge/before
 #
-# チャージ直前用演出
 #
-# @within function asset:effect/0394.charge_of_volt_rave/re-given/
+#
+# @within function asset:artifact/1619.volt_rave/using_item/charge/
 
 # 演出用Object召喚してみる
     data modify storage api: Argument.ID set value 1190
