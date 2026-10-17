@@ -1,3 +1,8 @@
+---
+title: Artifact
+description: アイテム定義・登録・発動、属性やクールダウン、装備と効果の寿命を設計するときに読む
+---
+
 # Artifact
 
 artifact は `Asset/data/asset/functions/artifact/<4桁ID>.<name>/` に置く。入手用 item/名前/lore/slot 等は `give/2.give.mcfunction` に書く。`register.mcfunction` がある場合は rarity pool 等の登録用途であり、0057 でも RarityRegistry のみを扱い、0001 には存在しない。
@@ -14,7 +19,7 @@ Wiki の作成意図では `Trigger` は Lore 表示用であり、実際の発�
 
 攻撃対象のEnemy条件は神器固有の仕様も確認する。ユーザーの現時点の方針では、新規の通常攻撃対象は `tag=Enemy` を基本候補にしてよい。既存神器には異なる選択があるため、Enemyがないことだけで一律に誤りと指摘せず、友好Mobも対象とする仕様かを照合する。
 
-移動停止・位置や角度の計算・粒子や表示entityを扱う場合は、[移動・幾何・描画のイディオム](runtime-and-tools.md) も確認する。神器のtrigger内に直接書かれるものと、生成したObjectへ委譲されるものの両方がある。
+移動停止を扱う場合はDevSpaceの `docs/mcfunction-idioms.md`「実行位置を移動前の値として保持する」を、位置や角度の計算・粒子や表示entityを扱う場合は [Object、API、生成と検証](runtime-and-tools.md) と [幾何のノート](notes/geometry/) も確認する。神器のtrigger内に直接書かれるものと、生成したObjectへ委譲されるものの両方がある。
 
 DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/functions/object/2057.thunder/tick/thunder.mcfunction)。`translate` と `with` で被害者・攻撃者を差し込むJSON文字列を候補として渡し、名前の解決は死亡時に本体へ委ねる。`@s` や `Return.AttackerName` を攻撃時点で展開しない理由と引数の契約は、依存先TheSkyBlessingの `docs/knowledge/api-and-storage.md` を参照する。
 
@@ -42,7 +47,7 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 `single_damage_session`（以下SDS）は、拡張当たり判定を介した同じMobへの重複ダメージを防ぐために使う。
 
-同じMobの複数のExtendedCollisionを拾う攻撃で、一撃につき一回だけダメージを適用したい場合は、対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所によって威力が変わる場合は、優先する判定を先に処理する。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル判定と通常判定を一つのセッションに含め、クリティカル側を先に適用する。多重命中を想定して威力を調整する攻撃へ導入すると命中回数が変わるため、[追加当たり判定へのダメージ調整](runtime-and-tools.md) と区別する。
+同じMobの複数のExtendedCollisionを拾う攻撃で、一撃につき一回だけダメージを適用したい場合は、対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所によって威力が変わる場合は、優先する判定を先に処理する。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル判定と通常判定を一つのセッションに含め、クリティカル側を先に適用する。SDSで適用回数が変わるのは、この例のように対象ごとにresetを呼ぶなど、SDSの区間でresetを2回以上呼ぶ攻撃である。命中処理の最後にresetを1回だけ呼ぶ攻撃では、その区間で追加当たり判定を経由した適用がすでに本体ごとに1回へ抑えられているため、SDSで囲んでも回数は変わらない。SDSが抑えるのは追加当たり判定を経由した適用だけで、本体への直接の命中は抑えない。抑制の契約は、依存先TheSkyBlessingの `docs/knowledge/runtime-components.md`「Mob：共通の個体表現と追加当たり判定」にある。[大きな敵への減衰](notes/damage/extended-collision-damage.md) は、SDSとは別の仕組みとして扱う。
 
 対象ごとにダメージを抽選・補正する既存例は [blade_of_dawnのdamage](../../Asset/data/asset/functions/artifact/1258.blade_of_dawn/trigger/damage.mcfunction) で、毎回補正前の値を設定し、modifier・damage・resetを呼ぶ。SDSは対象ごとのresetを挟んでも拡張当たり判定の処理済み記録を維持するが、Attackイベントを集約する機能ではない。通常entityへの反復呼び出しも制限しない。適用範囲と後始末は、本体の `TheSkyBlessing/data/api/functions/damage/single_damage_session/` と `damage/core/reset.mcfunction` を確認する。
 
