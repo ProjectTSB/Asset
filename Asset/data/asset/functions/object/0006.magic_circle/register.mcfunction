@@ -25,6 +25,8 @@
     # data modify storage asset:object Field.BackChar set value "0"
 # フォント
     data modify storage asset:object Field.Font set value "object/6"
+# 両面共通の文字色(string、色名または#RRGGBB、未設定なら色を指定しない)
+    # data modify storage asset:object Field.Color set value "#ffffff"
 # 左回転か否か
     data modify storage asset:object Field.LeftRotate set value false
 # 出現するのに何tickかけるか

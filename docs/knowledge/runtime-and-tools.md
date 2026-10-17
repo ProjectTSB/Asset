@@ -135,7 +135,7 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化を開始するときにも次の90度への回転先を設定し、消失時間をかけて回転とscaleを同時に補間する。回転とscaleは補間時間を共有するため、通常回転の途中で消失へ移る場合は回転速度が変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
 
-CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。画像は指定したフォントを提供するリソースパックで管理する。
+CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。`Field.Color` は任意の両面共通色で、TextComponentの色名または `"#RRGGBB"` を指定する。未設定時はcolorプロパティを追加しない。画像は指定したフォントを提供するリソースパックで管理する。
 
 
 ## displayの初回位置合わせを非表示で行う

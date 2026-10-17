@@ -8,7 +8,8 @@
     execute unless data storage asset:context this.BackChar run data modify storage asset:context this.BackChar set from storage asset:context this.Char
 
 # 本体と裏面に表示を設定する
-    function asset:object/0006.magic_circle/init/apply.m with storage asset:context this
+    execute unless data storage asset:context this.Color run function asset:object/0006.magic_circle/init/apply.m with storage asset:context this
+    execute if data storage asset:context this.Color run function asset:object/0006.magic_circle/init/apply_color.m with storage asset:context this
 
 # 初回の補間準備として3tick待機する
     data modify storage asset:context this.SpinInterval set value 3
