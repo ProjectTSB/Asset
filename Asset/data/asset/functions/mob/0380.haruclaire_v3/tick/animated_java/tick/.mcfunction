@@ -5,7 +5,7 @@
 # @within asset:mob/0380.haruclaire_v3/tick/
 
 # モデルを自身の位置に移動
-    execute run tp @s ~ ~ ~ ~ ~
+    tp @s ~ ~ ~ ~ ~
 
 # 登場
     execute if entity @s[tag=aj.haruclaire_aj.animation.0_0_start.playing] run function asset:mob/0380.haruclaire_v3/tick/animated_java/tick/0_0_start
