@@ -2,7 +2,7 @@
 #
 # Mobの死亡時の処理
 #
-# @within function asset:mob/0411.behemoth/death/kill_hitbox
+# @within function asset:mob/0411.behemoth/remove/**
 
 # 当たり判定消去
     execute if entity @s[type=slime] run data merge entity @s {Size:0,Tags:["BF.Temp.Dummy"]}
