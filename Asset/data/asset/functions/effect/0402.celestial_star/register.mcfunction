@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '[{"text":"セ","color":"#7cc4ff"},{"text":"レ","color":"#94cfff"},{"text":"ス","color":"#acd9ff"},{"text":"テ","color":"#c4e4ff"},{"text":"ィ","color":"#dcefff"},{"text":"ア","color":"#ebf0ed"},{"text":"ル","color":"#f0e8c8"},{"text":"ス","color":"#f5dfa3"},{"text":"タ","color":"#fad77f"},{"text":"ー","color":"#ffcf5a"}]'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"「セレスティアルスター」を設置している"}','{"text":"4秒毎に威力及び回復力が20%ずつ増加する"}']
+    data modify storage asset:effect Description set value ['{"text":"「セレスティアルスター」を設置している"}','{"text":"時間の経過で威力及び回復力が増加する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 410
 # スタック (int) (default = API || 1)
