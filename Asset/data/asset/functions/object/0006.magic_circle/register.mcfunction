@@ -18,6 +18,8 @@
     data modify storage asset:object ID set value 6
 # フィールド(オプション)
     data modify storage asset:object Field.Char set value "0"
+# 裏面の文字(string、未指定ならCharを使う)
+    # data modify storage asset:object Field.BackChar set value "0"
     data modify storage asset:object Field.Font set value "object/0006"
     data modify storage asset:object Field.Spin set value 4
     data modify storage asset:object Field.FirstSpin set value true

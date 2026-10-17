@@ -4,7 +4,10 @@
 #
 # @within function asset:object/alias/6/init
 
-# 本体と裏面に同じ表示を設定する
+# 裏面の文字が未指定なら表面の文字を使う
+    execute unless data storage asset:context this.BackChar run data modify storage asset:context this.BackChar set from storage asset:context this.Char
+
+# 本体と裏面に表示を設定する
     function asset:object/0006.magic_circle/init/apply.m with storage asset:context this
 
 # 初回の補間準備として3tick待機する
