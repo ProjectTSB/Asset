@@ -7,7 +7,8 @@
 
 # 表示する文字とフォントを指定する
     data modify storage api: Argument.FieldOverride.Char set value "0"
-    data modify storage api: Argument.FieldOverride.Font set value "object/1200"
+    data modify storage api: Argument.FieldOverride.Font set value "object/6"
+    data modify storage api: Argument.FieldOverride.Color set value "#00FFBB"
 
 # 出現と消失の変化先を指定する
     data modify storage api: Argument.FieldOverride.AppearScale set value [5f,5f,0f]
