@@ -7,16 +7,12 @@
 #> Private
 # @within function asset:effect/0407.inverse_proportionality/**
     #declare score_holder $MPRatio
-    #declare score_holder $MPMax
     #declare score_holder $Modifier
     #declare score_holder $PrevModifier
 
 # MP割合を取得、Fieldの値域に割り当てる
-    function api:mp/get_current
-    execute store result score $MPRatio Temporary run data get storage api: Return.CurrentMP 1000
-    function api:mp/get_max
-    execute store result score $MPMax Temporary run data get storage api: Return.MaxMP 10
-    scoreboard players operation $MPRatio Temporary /= $MPMax Temporary
+    function api:entity/player/get_mp_per
+    execute store result score $MPRatio Temporary run data get storage api: Return.MPPer 100
     # 100%-81%: 耐性&回復量 +1%
     execute if score $MPRatio Temporary matches 81..100 run scoreboard players set $Modifier Temporary 10
     # 80%-61%: 耐性&回復量 +2%
@@ -35,6 +31,5 @@
 
 # リセット
     scoreboard players reset $MPRatio Temporary
-    scoreboard players reset $MPMax Temporary
     scoreboard players reset $Modifier Temporary
     scoreboard players reset $PrevModifier Temporary
