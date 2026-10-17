@@ -79,17 +79,11 @@ Mob／Object のイベント処理では、本体が個体の OhMyDat Field を 
 
 ## 実例: abstract_gravity_projectileは物理弾と論理Objectを分ける
 
-[0005のsummon](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/summon/m.mcfunction) はsnowballに `ObjectInit` のmarkerを乗せる。物理的な移動・衝突は乗り物のsnowball、Fieldとメソッドは乗客のmarkerが担う。[tick](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/tick/.mcfunction) は乗り物がなくなったことをhitの契機として使い、寿命切れは乗り物が残っている場合のrange_overへ分ける。[kill](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/kill/.mcfunction) は乗り物を消してから論理Object自身を消す。見える弾と `@s` を同一entityとして読んだり、片方だけを消して終了したと扱ったりしない。
+[0005のsummon](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/summon/m.mcfunction) はsnowballに `ObjectInit` のmarkerを乗せる。物理的な移動・衝突は乗り物のsnowball、FieldとメソッドはPassengerのmarkerが担う。[tick](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/tick/.mcfunction) は乗り物がなくなったことをhitの契機として使い、寿命切れは乗り物が残っている場合のrange_overへ分ける。[kill](../../Asset/data/asset/functions/object/0005.abstract_gravity_projectile/kill/.mcfunction) は乗り物を消してから論理Object自身を消す。見える弾と `@s` を同一entityとして読んだり、片方だけを消して終了したと扱ったりしない。
 
 ## Effect の別モデル
 
-Effect のインスタンスは、エンティティ本体ではなく個体の OhMyDat `Effects[]` の各要素である。各要素が ID、Duration、Stack、Field 等を持つ。イベント時にその要素の Field が `this` に展開され、処理後に要素へ戻される。
-
-Mob／Object の数値 alias と親配列探索ではなく、function tag の ID 条件付き wrapper と、ROM に記録した単一親チェーンで register／固定イベントを解決する。イベントは given、re-given、tick、remove、end。Mob／Object の任意メソッドや同じスタック構成を前提にしない。
-
-例として [0079.poison の register](../../Asset/data/asset/functions/effect/0079.poison/register.mcfunction) は [0029.poison の register](../../Asset/data/asset/functions/effect/0029.poison/register.mcfunction) を継承し、ID と解除条件を上書きする。子に tick 実装がなく、[親の tick](../../Asset/data/asset/functions/effect/0029.poison/tick/.mcfunction) が継承した個体 Field の `this.Tick` を更新する。
-
-再付与時の `PreviousField` は旧 Field の snapshot であり、永続フィールドそのものではない。前回 stack と今回 stack の境界を検出する既存セット Effect は、given/re-given の末尾で現在値を `this.PrevStack` に保存する。解除レベルは Wiki が Lv4 を「運用上未使用」とする一方、現行 `0244.aurora_armor` と `0246.flame_devil_armor` は `RequireClearLv 4` を使うため、その記述は現状には採用しない。
+Effectは付与先の `Effects[]` の各要素をインスタンスとする。Mob／Objectとは継承・イベント配送が異なるため、定義・再付与・寿命・自己終了は [Effectの設計と実装](effect.md) を参照する。
 
 ## 変更前に確認すること
 
@@ -99,4 +93,4 @@ Mob／Object の数値 alias と親配列探索ではなく、function tag の I
 4. 親の契約を変える場合は派生型を検索する。子へ実装を追加する場合は、失われる自動 fallback がないか確認する。
 5. ネストした生成・メソッド呼び出しや失敗経路で、外側の個体・ID・Field を壊さないか確認する。
 
-本体の根拠を辿る入口: [Object 生成と FieldOverride](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/api/functions/object/core/summon.mcfunction)、[Object の Field 読込・保存](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/asset_manager/functions/object/triggers/tick.mcfunction)、[任意メソッドの親探索](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/asset_manager/functions/object/call_method/call_super_methods/.mcfunction)、[Effect のインスタンス更新](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/asset_manager/functions/effect/foreach.mcfunction)。リンク先は確認時点の実装であり、変更時には対象ブランチの現行コードを確認する。
+本体の根拠を辿る入口: [Object 生成と FieldOverride](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/api/functions/object/core/summon.mcfunction)、[Object の Field 読込・保存](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/asset_manager/functions/object/triggers/tick.mcfunction)、[任意メソッドの親探索](https://github.com/ProjectTSB/TheSkyBlessing/blob/f88cdd5bcb2216d24b26e48684f4a7951a686c94/TheSkyBlessing/data/asset_manager/functions/object/call_method/call_super_methods/.mcfunction)。リンク先は確認時点の実装であり、変更時には対象ブランチの現行コードを確認する。
