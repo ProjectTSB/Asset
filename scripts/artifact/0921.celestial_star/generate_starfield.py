@@ -30,6 +30,9 @@ SOURCE_NOTE = '# scripts/artifact/0921.celestial_star/generate_starfield.py で�
 
 # text_display の文字の1px (ブロック)
 PX = 0.025
+# text_display の先頭の指定
+# alignment を省くと召喚のたびにサーバーログへ「Display entityNot a string」が出るため、既定値の center を明示する
+TEXT_DISPLAY = '{id:"text_display",alignment:"center",'
 # text " " の背景の箱 (表示座標): x は -2px〜3px、y は 0〜11px
 BOX_W, BOX_H, BOX_CX, BOX_CY = 5 * PX, 11 * PX, 0.5 * PX, 5.5 * PX
 
@@ -189,7 +192,7 @@ def constellation(key):
     parts = []
     for i, j in lines:
         cols, t = line_transform(pts[i], pts[j], LINE_THICKNESS)
-        head = '{id:"text_display",Tags:["1197.Line"],billboard:"fixed",%s,brightness:{sky:15,block:15},text:\'" "\',background:%d,' % (rot, argb(LINE_ALPHA, LINE_RGB))
+        head = TEXT_DISPLAY + 'Tags:["1197.Line"],billboard:"fixed",%s,brightness:{sky:15,block:15},text:\'" "\',background:%d,' % (rot, argb(LINE_ALPHA, LINE_RGB))
         parts += front_and_back(head, cols, t, BOX_CX)
     stars_nbt = ['{X:%sd,Y:%sd,Z:%sd}' % tuple(short(v, 3) for v in to_world(p, yaw, pitch)) for p in pts]
     assert len(parts) == 2 * len(lines) and len(stars_nbt) == len(stars)
@@ -229,7 +232,7 @@ def nebula():
         c, s = math.cos(math.radians(deg)), math.sin(math.radians(deg))
         cols = ([c * k, s * k, 0], [-s * k, c * k, 0], [0, 0, k])
         t = [off[i] - (cols[0][i] * 0.5 * PX + cols[1][i] * block_cy) for i in range(3)]
-        head = '{id:"text_display",Tags:["1197.Glyph","1197.FadeIn","1197.Twinkle"],billboard:"fixed",%s,brightness:{sky:15,block:15},line_width:1000,text_opacity:30,text:\'{"text":"%s","color":"%s"}\',background:0,' % (rot, text(), color)
+        head = TEXT_DISPLAY + 'Tags:["1197.Glyph","1197.FadeIn","1197.Twinkle"],billboard:"fixed",%s,brightness:{sky:15,block:15},line_width:1000,text_opacity:30,text:\'{"text":"%s","color":"%s"}\',background:0,' % (rot, text(), color)
         bc, bt = back(cols, t, 0.5 * PX)
         fronts.append(head + 'transformation:%s}' % mat3(cols, t))
         backs.append(mat3(bc, bt))
