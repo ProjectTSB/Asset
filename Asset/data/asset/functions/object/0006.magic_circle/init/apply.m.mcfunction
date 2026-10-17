@@ -1,6 +1,6 @@
 #> asset:object/0006.magic_circle/init/apply.m
 #
-# 表示する文字とフォントを設定する
+# 本体とPassengerに表示する文字とフォントを設定する
 #
 # @input storage asset:context this
 #   Char : string
@@ -8,3 +8,4 @@
 # @within function asset:object/0006.magic_circle/init/
 
 $data modify entity @s text set value '[{"text":"$(Char)","font":"$(Font)"},{"text":"\\u0001","font":"space"}]'
+$execute on passengers run data modify entity @s text set value '[{"text":"$(Char)","font":"$(Font)"},{"text":"\\u0001","font":"space"}]'
