@@ -1,5 +1,11 @@
 {
     "values": [
+        "asset:effect/0405.predation_of_tree/_/remove",
+        "asset:effect/0359.time_ticker_eclipse/_/remove",
+        "asset:effect/0358.time_ticker_night/_/remove",
+        "asset:effect/0357.time_ticker_day/_/remove",
+        "asset:effect/0400.dual_rhythm_boost/_/remove",
+        "asset:effect/0399.dual_rhythm_guard/_/remove",
         "asset:effect/0371.tsukimi/_/remove",
         "asset:effect/0355.heart_gap/_/remove",
         "asset:effect/0354.protection_of_courage/_/remove",
@@ -118,6 +124,7 @@
         "asset:effect/0051.attack_base_debuff/_/remove",
         "asset:effect/0125.levitation/_/remove",
         "asset:effect/0007.defense_base_debuff/_/remove",
-        "asset:effect/0258.spirit_melody/_/remove"
+        "asset:effect/0258.spirit_melody/_/remove",
+        "asset:effect/0406.ocean_grace/_/remove"
     ]
 }
