@@ -17,9 +17,6 @@
     data modify storage asset:temp Temp.Main.Amount set from storage lib: SumResult
     function lib:array/session/close
 
-#
-    # tellraw @a {"storage":"asset:temp","nbt":"Temp"}
-
 # ダメージ量比例でMP減らす量を決めておく
     execute store result storage asset:temp Temp.MPReduce double -0.01 run data get storage asset:temp Temp.Main.Amount 1
 

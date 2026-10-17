@@ -11,8 +11,6 @@
     data modify storage asset:temp Temp.To set from storage asset:context Attack.To
     data modify storage asset:temp Temp.Amounts set from storage asset:context Attack.Amounts
 
-    # tellraw @a {"storage":"asset:temp","nbt":"Temp.To"}
-
 # 自身へのダメージ量を取得
     function asset:artifact/1390.red_refraction_prism/trigger/2.check_condition/get_damage/recursive
 
