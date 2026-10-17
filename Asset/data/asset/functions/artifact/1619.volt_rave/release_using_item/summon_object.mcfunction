@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/1619.volt_rave/release_using_item/3.main
 
-# ((MaxRange - Range))*0.3を演出用Objectのscaleとする
+# (MaxRange - Range)*0.3を演出用Objectのscaleとする
     execute store result storage api: Argument.FieldOverride.Scale float 0.3 run scoreboard players operation $MaxRange Temporary -= $Range Temporary
 
 # Object召喚
