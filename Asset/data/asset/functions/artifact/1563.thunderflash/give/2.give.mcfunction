@@ -25,9 +25,9 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onClick"
+    data modify storage asset:artifact Trigger set value "releaseUsingItem1s"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"1秒以上長押しして離す","color":"white"}'
+    # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value "300-400 / 400-500"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
