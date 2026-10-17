@@ -131,7 +131,9 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 [0006.magic_circle](../../Asset/data/asset/functions/object/0006.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは `Field.Char`（既定 `"0"`）と `Field.Font`（既定 `"object/0006"`）を両面へ適用する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
 
-文字・フォント・大きさ・回転方向・各時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`SpinCount` は90度回転の回数で2以上、`SpinInterval` と `ExpandDuration`・`SpinDuration`・`ShrinkDuration` は1以上のtick数とする。最初の回転で拡大し、最後の回転で縮小し、補間終了後に両面を破棄する。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
+文字・フォント・大きさ・回転方向・各変化の時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`Tick` は初回待機と消失時の変化を含む消滅までのObject tick数（既定60）で、`3 + AppearDuration + DisappearDuration` 以上とする。`AppearDuration`・`SpinDuration`・`DisappearDuration` は1以上のtick数とする。
+
+初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化中は回転先を更新しない。回転とscaleは補間時間を共有するため、最後の変化を開始すると進行中の回転の速度も変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
 
 CharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。画像は指定したフォントを提供するリソースパックで管理する。
 

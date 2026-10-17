@@ -20,14 +20,14 @@
     data modify storage asset:object Field.Char set value "0"
     data modify storage asset:object Field.Font set value "object/0006"
     data modify storage asset:object Field.Spin set value 4
-    data modify storage asset:object Field.SpinCount set value 4
     data modify storage asset:object Field.FirstSpin set value true
     data modify storage asset:object Field.LeftRotate set value false
-# 表示開始までの待ち時間(tick、1以上)
-    data modify storage asset:object Field.SpinInterval set value 3
-# 最初・通常・最後の90度回転にかける時間(tick、1以上)
-    data modify storage asset:object Field.ExpandDuration set value 12
+# 出現・通常回転・消失の変化にかける時間(tick、1以上)
+    data modify storage asset:object Field.AppearDuration set value 12
     data modify storage asset:object Field.SpinDuration set value 16
-    data modify storage asset:object Field.ShrinkDuration set value 12
-# 拡大後のScale
-    data modify storage asset:object Field.Scale set value [5f,5f,0f]
+    data modify storage asset:object Field.DisappearDuration set value 12
+# 出現時と消失時の変化先のScale
+    data modify storage asset:object Field.AppearScale set value [5f,5f,0f]
+    data modify storage asset:object Field.DisappearScale set value [0f,0f,0f]
+# 召喚後から消滅までの時間(tick、3 + AppearDuration + DisappearDuration以上)
+    data modify storage asset:object Field.Tick set value 60
