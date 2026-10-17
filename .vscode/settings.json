@@ -1151,6 +1151,25 @@
             ]
         },
         {
+            "label": "神器/トリガー: スニーク - 0.5秒",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/sneak/0.5s.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
             "label": "神器/トリガー: スニーク - 1秒",
             "generates": [
                 {
@@ -1270,6 +1289,25 @@
                 {
                     "type": "file",
                     "rel": "data/asset/tags/functions/artifact/sneak/keep/.json",
+                    "content": {
+                        "values": [
+                            "asset:artifact/%namespace%/trigger/1.trigger"
+                        ]
+                    },
+                    "append": {
+                        "addFirst": true,
+                        "key": "values",
+                        "elem": "asset:artifact/%namespace%/trigger/1.trigger"
+                    }
+                }
+            ]
+        },
+        {
+            "label": "神器/トリガー: スニーク - 0.5秒以上",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/tags/functions/artifact/sneak/keep/0.5s.json",
                     "content": {
                         "values": [
                             "asset:artifact/%namespace%/trigger/1.trigger"
