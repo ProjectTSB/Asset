@@ -30,6 +30,7 @@ Wiki の API 一覧は探索用の索引として使えるが、例示された 
 |`extract_trader.sh`|`Asset/.../trader/**/register.mcfunction`|`scripts/input/traders.csv`。|
 |`update-artifact-register.scala.sc`|`scripts/input/artifact-colors.tsv` と各artifact registerのRarityRegistry行|該当registerへ色別registry行を追記する。既存行を除去しないので、無条件再実行は重複し得る。入力の`isSet`と事前差分を確認する。|
 |`update-artifact-spreadsheet.scala.sc`|artifactの`give/2.give.mcfunction`|`scripts/output/artifact-spreadsheet.csv`を上書きする。|
+|`datapack/repository.py`|`Asset/data/asset/functions/` の各カテゴリと `Asset/data/asset/tags/functions/artifact/`|読取のみ。IDの重複と、神器の `give.json`・関数タグへの登録を作業コピー全体で検査する。DevSpaceの `scripts/datapack/check.py` がこのファイル名で探して `--json` で呼ぶので、名前と出力の形を保つ。タグや配置を変えたらこのスクリプトと `tests/datapack/repository.py` も直す。|
 |`mob_upgrade_v3.scala.sc`|repo rootから見た`Asset/data/.../mob`のv1/v2実装|mob本体のregister/init/triggerと`mob/alias/<ID>`を直接作成・更新する。既定は全mob対象なので、対象設定と差分を先に確認する。|
 
 CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。

@@ -37,4 +37,4 @@ python3 scripts/knowledge/index.py <この作業コピー>
 
 ## このrepoの前提
 
-データパックはrepo内の `Asset/data/`、生成・更新処理は `scripts/` にある。artifact / effect / mob / object は4桁IDと名前を使い、追加時は既存IDとの重複、function tag・aliasと実装の対応を確認する。登録値のstorageと登録時点はカテゴリごとに異なるため、各領域の説明を参照する。
+データパックはrepo内の `Asset/data/`、生成・更新処理は `scripts/` にある。artifact / effect / mob / object は主に4桁のID（mobには5桁もある）と名前を使い、追加時は既存IDとの重複、function tag・aliasと実装の対応を確認する。IDの重複と神器の関数タグの登録は `python3 scripts/datapack/repository.py` で検査できる（規則はスクリプトの冒頭）。DevSpaceのデータパック検査（`scripts/datapack/check.py`）からも実行される。登録値のstorageと登録時点はカテゴリごとに異なるため、各領域の説明を参照する。
