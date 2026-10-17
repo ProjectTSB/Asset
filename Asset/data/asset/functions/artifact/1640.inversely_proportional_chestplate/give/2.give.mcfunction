@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "アンチプロポーション", "color": "#5366ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text":"MP割合が低いほど耐性と与回復量が上昇する(最大+40%)。"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -60,7 +60,7 @@
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
-    data modify storage asset:artifact Equipment.Effects set value [{ID:407,Visible:true,IsSetEffect:false}]
+    data modify storage asset:artifact Equipment.Effects set value [{ID:407,Visible:false,IsSetEffect:false}]
 # 装備時ステータス補正 ({Type: string, Amount: double, Operation: string, StackReduction?: double}[]) (オプション)
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:6d,Operation:"add"}
