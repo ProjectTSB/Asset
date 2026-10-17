@@ -1,6 +1,13 @@
 {
     "values": [
+        "asset:effect/0357.time_ticker_day/_/re-given",
+        "asset:effect/0358.time_ticker_night/_/re-given",
+        "asset:effect/0359.time_ticker_eclipse/_/re-given",
+        "asset:effect/0362.baking/_/re-given",
+        "asset:effect/0190.fall_resistance/_/re-given",
         "asset:effect/0384.ninjas_mindset/_/re-given",
+        "asset:effect/0400.dual_rhythm_boost/_/re-given",
+        "asset:effect/0399.dual_rhythm_guard/_/re-given",
         "asset:effect/0371.tsukimi/_/re-given",
         "asset:effect/0348.cool_feeling/_/re-given",
         "asset:effect/0352.kitsunebi/_/re-given",
