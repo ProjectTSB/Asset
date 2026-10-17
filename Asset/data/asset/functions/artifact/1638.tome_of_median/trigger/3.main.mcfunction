@@ -4,14 +4,6 @@
 #
 # @within function asset:artifact/1638.tome_of_median/trigger/2.check_condition
 
-#> Private
-# @within function asset:artifact/1638.tome_of_median/trigger/**
-    #declare score_holder $Damage
-    #declare score_holder $MPRatio
-    #declare score_holder $MPMax
-# @private
-    #declare tag Candidate
-
 # ダメージを消費前の時点で計算しておく
 ## 500 / (abs(50 - MPRatio) / 3)
     #500
