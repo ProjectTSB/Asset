@@ -8,7 +8,7 @@
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..5,sort=nearest,limit=1] run function asset:artifact/1626.years_magic_index/trigger/vfx/attack
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..10,sort=nearest,limit=1] run function asset:artifact/1626.years_magic_index/trigger/vfx/attack
 # 引数の設定(魔法換算で計算)
     data modify storage api: Argument.Damage set value 2800f
     data modify storage api: Argument.AttackType set value "Magic"
