@@ -47,5 +47,3 @@
 # 内部状態
 # 次の回転先を決める内部状態(int、4から開始し、90度ごとに循環)
     data modify storage asset:object Field.Spin set value 4
-# 最初の回転に出現時の変化を適用する内部状態(boolean)
-    data modify storage asset:object Field.FirstSpin set value true

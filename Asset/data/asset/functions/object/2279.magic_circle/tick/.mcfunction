@@ -23,6 +23,7 @@
 
 # 消失開始前は次の回転までの待ち時間を進める
     execute if score $DisappearRemaining Temporary matches 1.. store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
+    execute if score $DisappearRemaining Temporary matches 1.. if data storage asset:context this{Phase:"Appearing",SpinInterval:0} run data modify storage asset:context this.Phase set value "Rotating"
     execute if score $DisappearRemaining Temporary matches 1.. if data storage asset:context this{SpinInterval:0} run function asset:object/2279.magic_circle/tick/spin/
 
 # 一時scoreをリセットする
