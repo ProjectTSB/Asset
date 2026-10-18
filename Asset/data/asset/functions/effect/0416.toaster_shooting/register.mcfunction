@@ -9,7 +9,7 @@
 # ID (int)
     data modify storage asset:effect ID set value 416
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"パン射出中"}'
+    data modify storage asset:effect Name set value '{"text":"パン発射！！！"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"パンを連続して射出する"}']
 # 効果時間 (int) (default = API || error)
