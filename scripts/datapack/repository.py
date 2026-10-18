@@ -7,7 +7,9 @@ Rules, which the working copy satisfies as of this check's introduction:
     4 digits, but some mobs use 5, such as `10000.sandbag1`
   - `Asset/data/asset/tags/functions/artifact/give.json` lists each artifact's
     `give/1.trigger` once
-  - each artifact's `trigger/1.trigger` is registered in an artifact function tag
+  - each entry point of an artifact, `<名前>/1.trigger` such as `trigger/`, `using_item/` or
+    `dis_equip/`, is registered in an artifact function tag; `give/1.trigger` is covered by
+    the rule above
 A misspelled entry in these tags shows up as a missing registration. Whether a tag refers
 to an existing function is not checked here.
 
@@ -118,10 +120,13 @@ def findings(root):
 
     registered = {value for values in tags.values() for value in values}
     for name in artifacts:
-        trigger = functions / 'artifact' / name / 'trigger' / '1.trigger.mcfunction'
-        if trigger.is_file() and f'asset:artifact/{name}/trigger/1.trigger' not in registered:
-            found.setdefault(trigger.relative_to(root).as_posix(), []).append(
-                '神器の関数タグ（tags/functions/artifact/）に登録されていない')
+        # Entry points are named by what starts them, as when a long press moved from
+        # trigger/ to using_item/; every one of them is reached only through a tag.
+        for trigger in sorted((functions / 'artifact' / name).glob('*/1.trigger.mcfunction')):
+            entry = trigger.parent.name
+            if entry != 'give' and f'asset:artifact/{name}/{entry}/1.trigger' not in registered:
+                found.setdefault(trigger.relative_to(root).as_posix(), []).append(
+                    '神器の関数タグ（tags/functions/artifact/）に登録されていない')
     return found
 
 

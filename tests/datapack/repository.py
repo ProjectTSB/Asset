@@ -86,9 +86,21 @@ class RepositoryTest(unittest.TestCase):
         self.assertIn('`asset:artifact/0003.gone/give/1.trigger` に対応する神器のディレクトリがない', output)
         self.assertIn('`asset:artifact/0001.second/give/1.triger` はその神器の `give/1.trigger` ではない', output)
         self.assertIn('0002.unlisted/trigger/1.trigger.mcfunction`\n  - 神器の関数タグ', output)
+        self.assertNotIn('give/1.trigger.mcfunction`\n  - 神器の関数タグ', output)
         self.assertIn('broken.json`\n  - `values` の配列がない', output)
         # Whether a tag names an existing function is not checked here.
         self.assertNotIn('0009.typo', output)
+
+    def test_every_entry_point_must_be_registered(self):
+        self.copy.write(f'{FUNCTIONS}/artifact/0001.first/using_item/1.trigger.mcfunction', 'say use\n')
+        self.copy.write(f'{FUNCTIONS}/artifact/0001.first/dis_equip/1.trigger.mcfunction', 'say off\n')
+        self.copy.tag('dis_equip', ['asset:artifact/0001.first/dis_equip/1.trigger'])
+        code, output = self.run_check()
+        self.assertEqual(code, 1)
+        self.assertIn('0001.first/using_item/1.trigger.mcfunction`\n  - 神器の関数タグ', output)
+        self.assertNotIn('dis_equip/1.trigger.mcfunction`\n  - 神器の関数タグ', output)
+        self.copy.tag('using_item/2s', ['asset:artifact/0001.first/using_item/1.trigger'])
+        self.assertEqual(self.run_check()[0], 0)
 
     def test_json_output_keeps_the_shape_devspace_reads(self):
         self.copy.artifact('0002.unlisted')
