@@ -12,14 +12,13 @@
 #エフェクトのスタック
     execute store result score $CurrentStack Temporary run data get storage api: Return.Effect.Stack
 
-# 空きスタックに合わせて火薬を最大2個消費する
-    execute if score $CurrentStack Temporary matches 9 store result score $Consumed Temporary run clear @s minecraft:gunpowder 1
-    execute if score $CurrentStack Temporary matches ..8 store result score $Consumed Temporary run clear @s minecraft:gunpowder 2
+# スタック9以下の時火薬を1個消費する
+    execute if score $CurrentStack Temporary matches ..9 store result score $Consumed Temporary run clear @s minecraft:gunpowder 1
 
-# 実際に消費した数だけスタックを増やす
+# 実際に消費した数+1だけスタックを増やす
     scoreboard players operation $CurrentStack Temporary += $Consumed Temporary
     data modify storage api: Argument.ID set value 410
-    execute store result storage api: Argument.Stack int 1 run scoreboard players get $CurrentStack Temporary
+    execute store result storage api: Argument.Stack int 1 run scoreboard players add $CurrentStack Temporary 1
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
