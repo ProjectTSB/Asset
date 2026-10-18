@@ -1,19 +1,19 @@
-#> asset:effect/0362.baking/register
+#> asset:effect/0415.baking/register
 #
 # Effectのデータを指定
 #
-# @within function asset:effect/0362.baking/_/register
+# @within function asset:effect/0415.baking/_/register
 
 # ExtendsSafe (boolean) (default = false)
     # data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
-    data modify storage asset:effect ID set value 362
+    data modify storage asset:effect ID set value 415
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"加熱中...","color":"#d7a657"}'
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"チャージ段階に応じてパンの射出速度とダメージが上昇する"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 2
+    data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -36,7 +36,6 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Charge set value 0
     data modify storage asset:effect Field.Damage set value {Charge1:1,Charge2:10,Charge3:100}
     data modify storage asset:effect Field.Speed set value {Charge1:1,Charge2:2,Charge3:3}
     data modify storage asset:effect Field.Range set value 40

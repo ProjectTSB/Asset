@@ -1,8 +1,8 @@
-#> asset:effect/0362.baking/tick/shoot
+#> asset:effect/0416.toaster_shooting/tick/shoot
 #
 #
 #
-# @within function asset:effect/0362.baking/tick/
+# @within function asset:effect/0416.toaster_shooting/tick/
 
 # スタックに応じて弾速を調整
     execute if data storage asset:context {Stack:1} run data modify storage api: Argument.FieldOverride.Speed set from storage asset:context this.Speed.Charge1
