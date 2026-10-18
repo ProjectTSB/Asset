@@ -23,6 +23,7 @@ ids:
   - artifact:1270
 related:
   - docs/knowledge/artifact.md#範囲攻撃のダメージ計算と一撃の区切り
+  - docs/knowledge/runtime-and-tools.md
   - TheSkyBlessing:docs/knowledge/runtime-components.md#mob共通の個体表現と追加当たり判定
 ---
 

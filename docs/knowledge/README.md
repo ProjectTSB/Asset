@@ -21,7 +21,7 @@
 ノートを含むINDEXは、DevSpaceで次を実行して得る。INDEXのファイルや手書きのノート一覧は保存せず、この作業コピーのブランチのヘッダーから毎回生成する。
 
 ```sh
-python3 scripts/knowledge/index.py <この作業コピー>
+sh scripts/knowledge/index.sh <この作業コピー>
 ```
 
 スクリプトを使えない場合は、`docs/knowledge/notes/**/*.md` の先頭にある `title`・`description` を直接読む。INDEXのオプション、ノートの形式、参照経路、機械的な検査、人がマージする範囲はDevSpaceの `docs/knowledge-notes.md` に従う。
@@ -37,4 +37,4 @@ python3 scripts/knowledge/index.py <この作業コピー>
 
 ## このrepoの前提
 
-データパックはrepo内の `Asset/data/`、生成・更新処理は `scripts/` にある。artifact / effect / mob / object は主に4桁のID（mobには5桁もある）と名前を使い、追加時は既存IDとの重複、function tag・aliasと実装の対応を確認する。IDの重複と神器の関数タグの登録は `python3 scripts/datapack/repository.py` で検査できる（規則はスクリプトの冒頭）。DevSpaceのデータパック検査（`scripts/datapack/check.py`）からも実行される。登録値のstorageと登録時点はカテゴリごとに異なるため、各領域の説明を参照する。
+データパックはrepo内の `Asset/data/`、生成・更新処理は `scripts/` にある。artifact / effect / mob / object は主に4桁のID（mobには5桁もある）と名前を使い、追加時は既存IDとの重複、function tag・aliasと実装の対応を確認する。IDの重複と神器の関数タグの登録は `scripts/datapack/repository.py` で検査する（規則はスクリプトの冒頭）。DevSpaceの `sh scripts/datapack/check.sh <この作業コピー>` から実行され、単独ではPython 3.9以上で実行する。登録値のstorageと登録時点はカテゴリごとに異なるため、各領域の説明を参照する。

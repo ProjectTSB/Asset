@@ -1,6 +1,6 @@
 """Check Asset's own datapack rules, IDs and artifact registrations, across the working copy.
 
-    python3 scripts/datapack/repository.py [<作業コピー>] [--json]
+    <Python 3.9以上> scripts/datapack/repository.py [<作業コピー>] [--json]
 
 Rules, which the working copy satisfies as of this check's introduction:
   - an ID is used once per category (artifact, effect, mob, object); most IDs have
@@ -11,12 +11,14 @@ Rules, which the working copy satisfies as of this check's introduction:
 A misspelled entry in these tags shows up as a missing registration. Whether a tag refers
 to an existing function is not checked here.
 
-The working copy defaults to the repository holding this script. Reading only. Python 3
-with the standard library. Exit status is 0 without findings, 1 with findings, and 2 when
+The working copy defaults to the repository holding this script. Reading only. Python 3.9
+or newer, with the standard library. Exit status is 0 without findings, 1 with findings, and 2 when
 a category directory is missing or a file cannot be read.
 
-DevSpace's `scripts/datapack/check.py` finds this file by its name and runs it as
-`python3 scripts/datapack/repository.py <作業コピー> --json`. It reads
+DevSpace's `scripts/datapack/check.py` finds this file by its name and, by default, runs
+the version in the merge base with the default branch, copied out of the working copy, as
+`python -I -X utf8 <file> <作業コピー> --json`; so it has to stay self-contained, with the standard
+library only. It reads
 `{"findings": {"<path>": ["<message>", ...]}}`, which lists only paths with at least one
 message, and expects exit status 1 exactly when there are findings. Keep that contract
 when changing the rules, and change the layout here when the tags or directories move.
@@ -40,6 +42,10 @@ def main(argv=None):
                         help='Assetの作業コピー（既定はこのスクリプトがあるrepo）')
     parser.add_argument('--json', action='store_true', help='結果をJSONで出す')
     arguments = parser.parse_args(argv)
+    # DevSpace reads the JSON as UTF-8, also where the console encoding is cp932.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, 'reconfigure'):
+            stream.reconfigure(encoding='utf-8')
     root = Path(arguments.workcopy).resolve()
     # A missing category would otherwise read as one without duplicates.
     missing = [category for category in CATEGORIES if not (root / FUNCTIONS / category).is_dir()]

@@ -7,6 +7,7 @@ paths:
 ids:
   - mob:0392
 related:
+  - docs/knowledge/mob.md#独自移動とvanillaの移動を切り替える
   - DevSpace:docs/mcfunction-idioms.md#実行位置を移動前の値として保持する
 ---
 

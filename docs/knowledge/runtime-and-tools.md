@@ -7,7 +7,7 @@ description: Object、API storage、display・粒子・item entityなどの描�
 
 Object の変更前に [型・インスタンス・継承モデル](object-model.md)、Effect の変更前に [Effect の定義・イベント・寿命](effect.md) を読む。Object は `Asset/data/asset/functions/object/<4桁ID>.<name>/` の型定義から生成され、summon／init／tick や任意メソッドを自前実装・継承・明示 super で組み合わせる。基底の abstract_projectile を使う例と、子の値を先に設定する初期化契約も同文書に示す。
 
-この領域の個別判断の一部はノートにある。幾何は [notes/geometry/](notes/geometry/)、大きな敵への減衰は [notes/damage/](notes/damage/) にあり、DevSpaceの `scripts/knowledge/index.py --area geometry` のように領域で絞って読める。件数を上限で打ち切る数え方は、DevSpaceの `docs/mcfunction-idioms.md`「件数を上限で打ち切る」にある。
+この領域の個別判断の一部はノートにある。幾何は [notes/geometry/](notes/geometry/)、大きな敵への減衰は [notes/damage/](notes/damage/) にあり、DevSpaceの `sh scripts/knowledge/index.sh <この作業コピー> --for runtime-and-tools.md` で、この文書を `related` に挙げるノートを出せる。件数を上限で打ち切る数え方は、DevSpaceの `docs/mcfunction-idioms.md`「件数を上限で打ち切る」にある。
 
 ディレクトリはゼロ埋め4桁だが、`storage asset:object ID` と API へ渡す ID は整数である。生成時の FieldOverride はクラスの既定 Field に merge される。個体の Field は OhMyDat の `ObjectField` に保持され、処理中だけ `storage asset:context this.*` に展開される。実装から `this` を変えた結果は本体の呼び出し境界で書き戻される。Effect は別の保存形式・イベント呼び出し方式を持つため、Object の経路をそのまま適用しない。
 
@@ -30,7 +30,7 @@ Wiki の API 一覧は探索用の索引として使えるが、例示された 
 |`extract_trader.sh`|`Asset/.../trader/**/register.mcfunction`|`scripts/input/traders.csv`。|
 |`update-artifact-register.scala.sc`|`scripts/input/artifact-colors.tsv` と各artifact registerのRarityRegistry行|該当registerへ色別registry行を追記する。既存行を除去しないので、無条件再実行は重複し得る。入力の`isSet`と事前差分を確認する。|
 |`update-artifact-spreadsheet.scala.sc`|artifactの`give/2.give.mcfunction`|`scripts/output/artifact-spreadsheet.csv`を上書きする。|
-|`datapack/repository.py`|`Asset/data/asset/functions/` の各カテゴリと `Asset/data/asset/tags/functions/artifact/`|読取のみ。IDの重複と、神器の `give.json`・関数タグへの登録を作業コピー全体で検査する。DevSpaceの `scripts/datapack/check.py` がこのファイル名で探して `--json` で呼ぶので、名前と出力の形を保つ。タグや配置を変えたらこのスクリプトと `tests/datapack/repository.py` も直す。|
+|`datapack/repository.py`|`Asset/data/asset/functions/` の各カテゴリと `Asset/data/asset/tags/functions/artifact/`|読取のみ。IDの重複と、神器の `give.json`・関数タグへの登録を作業コピー全体で検査する。DevSpaceの `scripts/datapack/check.py` から呼ばれるので、名前と呼出しの取り決め（スクリプトの冒頭）を保つ。タグや配置を変えたらこのスクリプトと `tests/datapack/repository.py` も直す。|
 |`mob_upgrade_v3.scala.sc`|repo rootから見た`Asset/data/.../mob`のv1/v2実装|mob本体のregister/init/triggerと`mob/alias/<ID>`を直接作成・更新する。既定は全mob対象なので、対象設定と差分を先に確認する。|
 
 CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。
@@ -49,9 +49,9 @@ CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`�
 
 Asset の master 向け PR は、write 権限を持つ人による1件の承認と `lint` の成功を必要とする。承認者を特定のメンバーへ限定しない。Ruleset は必須承認数を1、Code owner の承認必須を無効にする。差分を変更するコミットの追加時には、人と Bot のどちらの承認も取り消す。Ruleset は Git 管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
 
-[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRのうち、そのrepoへの書き込み権限（`write` 以上）を持つ人が作成したものをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
 
-`docs/`・`tests/` 配下でも、以後のAI全体の行動を変える保護対象を含むPRは対象外になる。現在の保護対象は `AGENTS.md`、`docs/knowledge/README.md`、`.github/workflows/auto-merge-docs-tests.yml`、`.github/tests/auto-merge-docs-tests.test.cjs` で、rename前のパスも同じ判定を受ける。`docs/knowledge/notes/` 配下の個別ノートは自動マージの対象のままで、追加・訂正・削除に人の承認を待たない。保護対象の一覧と理由はDevSpaceの `docs/knowledge-notes.md`「人がマージする範囲」にあり、workflow内の一覧と一緒に更新する。
+`docs/`・`tests/` 配下でも、以後のAI全体の行動を変える保護対象を含むPRは対象外になる。保護対象の一覧と理由はDevSpaceの `docs/knowledge-notes.md`「人がマージする範囲」にあり、workflowはその一覧と、どの深さの指示ファイルも保護する規則を持つ。rename前のパスも同じ判定を受ける。`docs/knowledge/notes/` 配下の個別ノートは自動マージの対象のままで、追加・訂正・削除に人の承認を待たない。
 
 保護対象を含むPRには自動承認も付かないため、人のレビューとマージが必要になる。
 
@@ -61,7 +61,7 @@ PRの更新・Draft化・マージ先変更で対象外になった場合は、G
 
 auto-mergeを手動解除しただけでは継続的な停止にならず、次のPR更新で条件を満たせば再び有効になる。作業中のPRを自動マージさせたくない場合はDraftにしておき、Ready for reviewへ戻すと再判定される。導入前から開いているPRは、更新イベントまたはworkflow_dispatchで判定を開始する。
 
-自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot 自身が作成した PR は自己承認できないため、人の承認を待つ。
+自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot が作成した PR は、bot に書き込み権限がないため自動化の対象外になり、人のレビューとマージが必要になる。
 
 workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRのコードをcheckout・実行しない。Actionsのイベントポリシーでは `pull_request_target` を許可する必要がある。GITHUB_TOKENによるマージでは後続のpush workflowが通常起動しないため、自動対象を本体・生成スクリプトへ広げる場合は、マージ後の処理も再設計する。
 
