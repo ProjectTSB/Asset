@@ -1,8 +1,8 @@
-#> asset:effect/0320.fatalerror_charge/end/charge_shot/vfx
+#> asset:artifact/1228.fatalerror/release_using_item/charge_shot/vfx
 #
 #
 #
-# @within function asset:effect/0320.fatalerror_charge/end/charge_shot/shot
+# @within function asset:artifact/1228.fatalerror/release_using_item/charge_shot/shot
 
 
 particle soul_fire_flame ^0 ^ ^0 ^0 ^0 ^-200000 0.000010 0
@@ -30,4 +30,3 @@ particle soul_fire_flame ^0 ^ ^0 ^-168866 ^0 ^-107165 0.000010 0
 particle soul_fire_flame ^0 ^ ^0 ^-136909 ^0 ^-145794 0.000010 0
 particle soul_fire_flame ^0 ^ ^0 ^-96351 ^0 ^-175261 0.000010 0
 particle soul_fire_flame ^0 ^ ^0 ^-49738 ^0 ^-193717 0.000010 0
-

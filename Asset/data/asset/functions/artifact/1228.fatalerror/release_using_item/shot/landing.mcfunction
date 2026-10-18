@@ -1,14 +1,14 @@
-#> asset:effect/0320.fatalerror_charge/end/shot/landing
+#> asset:artifact/1228.fatalerror/release_using_item/shot/landing
 #
 #
 #
-# @within function asset:effect/0320.fatalerror_charge/end/shot/loop
+# @within function asset:artifact/1228.fatalerror/release_using_item/shot/loop
 
 # 演出
     particle dust 0.824 0.918 0.98 0.7 ~ ~0.5 ~ 0.1 0.3 0.1 0 20
 
 # ダメージ設定
-    data modify storage api: Argument.Damage set from storage asset:context this.Damage.Shot
+    data modify storage api: Argument.Damage set from storage asset:artifact Charge1228.Damage.Shot
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier

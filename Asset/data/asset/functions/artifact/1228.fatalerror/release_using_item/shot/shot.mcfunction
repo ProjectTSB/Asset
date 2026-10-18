@@ -1,8 +1,8 @@
-#> asset:effect/0320.fatalerror_charge/end/shot/shot
+#> asset:artifact/1228.fatalerror/release_using_item/shot/shot
 #
 #
 #
-# @within function asset:effect/0320.fatalerror_charge/end/
+# @within function asset:artifact/1228.fatalerror/release_using_item/shoot
 
 # 演出
     execute at @s anchored eyes positioned ~ ~ ~ run playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.2
@@ -18,4 +18,4 @@
 # 前方拡散を実行する
     execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
 # 発砲
-    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:effect/0320.fatalerror_charge/end/shot/loop
+    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet run function asset:artifact/1228.fatalerror/release_using_item/shot/loop

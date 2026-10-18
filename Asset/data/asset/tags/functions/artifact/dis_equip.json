@@ -70,6 +70,7 @@
         "asset:artifact/0915.flame_hunter_hat/dis_equip/",
         "asset:artifact/0961.light_charm/trigger/dis_equip/",
         "asset:artifact/0960.heavy_charm/trigger/dis_equip/",
-        "asset:artifact/1227.aurora_scythe/dis_equip/1.trigger"
+        "asset:artifact/1227.aurora_scythe/dis_equip/1.trigger",
+        "asset:artifact/1228.fatalerror/dis_equip/1.trigger"
     ]
 }
