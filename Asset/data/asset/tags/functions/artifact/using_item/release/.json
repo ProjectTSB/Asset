@@ -1,5 +1,8 @@
 {
     "values": [
-
+        "asset:artifact/1227.aurora_scythe/release_using_item/1.trigger",
+        "asset:artifact/1228.fatalerror/release_using_item/1.trigger",
+        "asset:artifact/1256.deep_azure/release_using_item/1.trigger",
+        "asset:artifact/1421.toaster/release_using_item/1.trigger"
     ]
 }

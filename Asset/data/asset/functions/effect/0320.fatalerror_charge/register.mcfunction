@@ -9,11 +9,11 @@
 # ID (int)
     data modify storage asset:effect ID set value 320
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"致命的チャージ","color":"white"}'
+    data modify storage asset:effect Name set value '{"text":"致命的チャージ","color":"aqua","bold":true,"underlined":true}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"チャージ中！","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"チャージ段階に応じて特殊波長レーザーが強化される","color":"white"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 1
+    data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -31,9 +31,9 @@
 # 消すのに必要なレベル (int) (default = 1)
     data modify storage asset:effect RequireClearLv set value 4
 # エフェクトをUIに表示するか (boolean) (default = true)
-    data modify storage asset:effect Visible set value false
+    data modify storage asset:effect Visible set value true
 # エフェクトのスタックををUIに表示するか (boolean) (default = true)
-    data modify storage asset:effect StackVisible set value false
+    data modify storage asset:effect StackVisible set value true
 
 # フィールド
     # data modify storage asset:effect Field set value {}
