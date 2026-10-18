@@ -1,13 +1,13 @@
 #> asset:object/2279.magic_circle/summon/debug
 #
-# スターライトサークルの魔法陣を召喚する動作チェック用の処理
+# 魔法陣を召喚する動作チェック用の処理
 #
 # @user
 # @private
 
 # 表示する文字とフォントを指定する
     data modify storage api: Argument.FieldOverride.Char set value "0"
-    data modify storage api: Argument.FieldOverride.Font set value "object/6"
+    data modify storage api: Argument.FieldOverride.Font set value "object/2279"
     data modify storage api: Argument.FieldOverride.Color set value "#00FFBB"
 
 # 出現と消失の変化先を指定する
