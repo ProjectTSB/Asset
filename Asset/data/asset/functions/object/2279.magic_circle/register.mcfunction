@@ -1,8 +1,8 @@
-#> asset:object/0006.magic_circle/register
+#> asset:object/2279.magic_circle/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/6/register
+# @within function asset:object/alias/2279/register
 
 # 継承(オプション)
     # data modify storage asset:object Extends append value
@@ -15,7 +15,7 @@
     # data modify storage asset:object IsTicking set value
 
 # ID (int)
-    data modify storage asset:object ID set value 6
+    data modify storage asset:object ID set value 2279
 # フィールド(オプション)
 
 # 使用者が指定する設定
@@ -24,7 +24,7 @@
 # 裏面に表示する文字 (未設定の場合、表裏で共通の文字を使用)
     # data modify storage asset:object Field.BackChar set value "0"
 # フォント
-    data modify storage asset:object Field.Font set value "object/6"
+    data modify storage asset:object Field.Font set value "object/2279"
 # 両面共通の文字色(string、色名または#RRGGBB、未設定なら色を指定しない)
     # data modify storage asset:object Field.Color set value "#ffffff"
 # 左回転か否か

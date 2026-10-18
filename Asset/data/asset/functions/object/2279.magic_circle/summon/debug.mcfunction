@@ -1,4 +1,4 @@
-#> asset:object/0006.magic_circle/summon/debug
+#> asset:object/2279.magic_circle/summon/debug
 #
 # スターライトサークルの魔法陣を召喚する動作チェック用の処理
 #
@@ -25,5 +25,5 @@
     execute if predicate lib:random_pass_per/50 run data modify storage api: Argument.FieldOverride.LeftRotate set value true
 
 # 召喚
-    data modify storage api: Argument.ID set value 6
+    data modify storage api: Argument.ID set value 2279
     function api:object/summon

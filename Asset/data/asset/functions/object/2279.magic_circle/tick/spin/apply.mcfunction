@@ -1,8 +1,8 @@
-#> asset:object/0006.magic_circle/tick/spin/apply
+#> asset:object/2279.magic_circle/tick/spin/apply
 #
 # 本体とPassengerを回転段階に対応する角度へ補間する
 #
-# @within function asset:object/0006.magic_circle/tick/spin/rotate
+# @within function asset:object/2279.magic_circle/tick/spin/rotate
 
 # 回転を補間する
     data modify entity @s start_interpolation set value 0

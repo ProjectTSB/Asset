@@ -129,7 +129,7 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 ### 両面の魔法陣を設定付きで召喚する
 
-[0006.magic_circle](../../Asset/data/asset/functions/object/0006.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは表面に `Field.Char`（既定 `"0"`）、裏面に `Field.BackChar` を適用する。BackCharは任意指定で、未設定時はinitでCharをコピーする。空文字列を指定した場合はコピーせず、そのまま使う。`Field.Font` は両面共通とし、既定値はregisterを参照する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
+[2279.magic_circle](../../Asset/data/asset/functions/object/2279.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは表面に `Field.Char`（既定 `"0"`）、裏面に `Field.BackChar` を適用する。BackCharは任意指定で、未設定時はinitでCharをコピーする。空文字列を指定した場合はコピーせず、そのまま使う。`Field.Font` は両面共通とし、既定値はregisterを参照する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
 
 文字・フォント・大きさ・回転方向・各変化の時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`Tick` は初回待機と消失時の変化を含む消滅までのObject tick数（既定59）で、`3 + AppearDuration + DisappearDuration` 以上とする。`AppearDuration`・`SpinDuration`・`DisappearDuration` は1以上のtick数とする。
 
