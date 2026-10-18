@@ -5,5 +5,8 @@
 # @within tag/function asset:artifact/load
 
 #> 定義類はここに
-# @within function asset:artifact/1651.rune_blaster/keep_using_item/**
-    scoreboard objectives add
+# @within function
+#   asset:artifact/1651.rune_blaster/**
+#   asset:object/1200.rune_blaster_circle/init/
+#   asset:object/1200.rune_blaster_circle/tick/
+    scoreboard objectives add 19V.UserID dummy

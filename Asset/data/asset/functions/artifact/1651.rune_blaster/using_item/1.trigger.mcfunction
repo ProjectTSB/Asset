@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1651.rune_blaster/keep_using_item/3.main
+# @within tag/function asset:artifact/**
 
 # storage asset:idのmainhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
     execute if data storage asset:context id{mainhand:1651} run function asset:artifact/1651.rune_blaster/using_item/2.check_condition

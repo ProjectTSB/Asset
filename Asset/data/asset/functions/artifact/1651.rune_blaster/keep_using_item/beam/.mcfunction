@@ -18,7 +18,7 @@
 # ビーム
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 1
-    data modify storage lib: Argument.Spread set value 1
+    data modify storage lib: Argument.Spread set value 2
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] run function lib:forward_spreader/circle
 
 # Markerの位置から再帰

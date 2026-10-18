@@ -10,4 +10,4 @@
 # ここから先は神器側の効果の処理を書く
 
 # ビーム
-    execute anchored eyes positioned ^ ^-0.35 ^0.5 run function asset:artifact/1651.rune_blaster/keep_using_item/beam/
+    execute anchored eyes positioned ^ ^-0.35 ^0.25 run function asset:artifact/1651.rune_blaster/keep_using_item/beam/
