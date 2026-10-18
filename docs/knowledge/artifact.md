@@ -54,6 +54,12 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 [Sacred Hardener](../../Asset/data/asset/functions/artifact/1220.sacred_hardener/trigger/3.main.mcfunction) は、防具セットを扱う条件のとき共通useを合計4回呼び、4回分の消費を処理する。同じ関数を連続して呼んでいても重複とは限らない。なお、この神器の `click.carrot_on_a_stick` 登録は旧実装の残りである（ユーザー確認済み）。`using_item` と併記されていることを、新規実装で両方へ登録する理由にしない。共通useの一回分の副作用と、その神器が必要とする使用回数を合わせて判断する。
 
+### 使用時間と解除イベントでチャージを管理する
+
+長押しの段階を表示し、離した瞬間に発動させる場合は、`UsingItemTime.mainhand` で段階の到達を判定し、開始時と段階更新時だけEffectを付与する。チャージEffectは `Duration:2147483647` とし、継続通知のための再付与や失効による発動を使わない。[オーロラサイスの継続処理](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/using_item/charge.mcfunction) と [使用解除](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/release_using_item/3.main.mcfunction) が実例で、PR #2122と同じイベント分担である。
+
+初回だけ共通checkとuseを呼び、継続時はチャージEffectの存在から処理へ進む。段階更新時は取得した `Return.Effect.Field` を `FieldOverride` へ渡し、開始時の威力や追加MP回復量を保持する。使用解除ではその値を攻撃へ渡してチャージを削除する。mainhandの装備解除では発動させず、チャージだけを削除する。同IDの別個体への持ち替えでも解除し、装備解除contextは本体の `architecture.md`「装備は前回との差から有効状態を組み直す」を参照する。
+
 ### 再付与を継続入力として使う
 
 押し続ける間はチャージし、入力が途切れたら発動する実装では、短命Effectの再付与を継続通知、失効を終了通知として使える。開始時の消費・cooldownと継続入力の処理は分ける。
@@ -68,7 +74,7 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 ### 遅延する攻撃へ発動時の値を渡す
 
-遅れて実行する処理には、発動時の値を固定するのか、命中時に取り直すのかを決めて渡す。共有ArgumentやPersistentArgumentの名称から寿命を仮定しない。遅れて命中する攻撃では、発動時の追加MP回復量も保存する。[Aurora Scythe の発動](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/trigger/3.main.mcfunction) は `PersistentArgument.AdditionalMPHeal` を `FieldOverride.AdditionalMPHeal` へ渡し、[チャージEffectの終了](../../Asset/data/asset/functions/effect/0315.charge_of_aurora_scythe/end/.mcfunction) から次の攻撃へ引き継ぐ。[Thunder Stiletto の命中](../../Asset/data/asset/functions/object/1130.thunder_stiletto/hit_entity/.mcfunction) はFieldの値を `Argument.AdditionalMPHeal` へ戻す実例である。Persistent値の有効期間とDamage APIの既定値は、依存先TheSkyBlessingの `api-and-storage.md` の契約に従う。
+遅れて実行する処理には、発動時の値を固定するのか、命中時に取り直すのかを決めて渡す。共有ArgumentやPersistentArgumentの名称から寿命を仮定しない。遅れて命中する攻撃では、発動時の追加MP回復量も保存する。[Aurora Scythe の発動](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/using_item/3.main.mcfunction) は `PersistentArgument.AdditionalMPHeal` を `FieldOverride.AdditionalMPHeal` へ渡し、[使用解除時の発動](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/release_using_item/3.main.mcfunction) から次の攻撃へ引き継ぐ。[Thunder Stiletto の命中](../../Asset/data/asset/functions/object/1130.thunder_stiletto/hit_entity/.mcfunction) はFieldの値を `Argument.AdditionalMPHeal` へ戻す実例である。Persistent値の有効期間とDamage APIの既定値は、依存先TheSkyBlessingの `api-and-storage.md` の契約に従う。
 
 ### 固定ダメージと独立した防壁を区別する
 
@@ -80,7 +86,7 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 [簡易革防具](../../Asset/data/asset/functions/artifact/0090.leather_armor_set/trigger/3.main.mcfunction) 等の `RepairCost:9999` は、金床でエンチャント本を合成し、その防具へエンチャントを付けることを防ぐための指定である（ユーザー確認済み）。改名を含むすべての金床操作を禁止するという説明へ広げない。
 
-[Aurora Scythe](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/trigger/3.main.mcfunction) のダメージ1.5倍はMP30%以下が現行仕様で、40%以下とするコメントが古い（ユーザー確認済み）。閾値のレビューでコメント側へ実装を揃えない。
+[Aurora Scythe](../../Asset/data/asset/functions/artifact/1227.aurora_scythe/using_item/3.main.mcfunction) のダメージ1.5倍はMP30%以下が現行仕様である（ユーザー確認済み）。
 
 ## 装備と効果の寿命を分ける
 
