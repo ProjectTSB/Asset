@@ -4,9 +4,8 @@
 #
 # @within asset:object/alias/1200/tick
 
-# Ownerの位置を維持
-    execute as @a if score @s UserID = @e[type=text_display,tag=this,distance=..0.01,limit=1] 19V.UserID at @s anchored eyes positioned ^ ^-0.15 ^0.675 run tp @e[type=text_display,tag=this,distance=..128] ~ ~ ~ ~ ~
-    execute on passengers run tp @s ~ ~ ~ ~ ~
+# 消滅中でなければ、Ownerの位置を維持
+    execute unless data storage asset:context this{Phase:"Disappearing"} as @a if score @s UserID = @e[type=text_display,tag=this,distance=..0.01,limit=1] 19V.UserID at @s anchored eyes positioned ^ ^-0.15 ^0.675 run tp @e[type=text_display,tag=this,distance=..128] ~ ~ ~ ~ ~
 
 # super.tick
     execute at @s run function asset:object/super.tick
