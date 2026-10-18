@@ -45,5 +45,14 @@
     data modify storage asset:object Field.Tick set value 59
 
 # 内部状態
+# Phaseはinitとtickが管理する参照用の状態(string)
+# Waiting: 初回の3tick待機中
+# Appearing: 出現時の変化中
+# Rotating: 通常回転中
+# Disappearing: 消失時の変化中
+# 継承先はsuper.tick後にthis.Phaseを参照すると、そのtickの状態遷移を判定できる
+# 例: execute unless data storage asset:context this{Phase:"Disappearing"} run ...
+# 寿命切れで破棄された後は参照しない
+
 # 次の回転先を決める内部状態(int、4から開始し、90度ごとに循環)
     data modify storage asset:object Field.Spin set value 4
