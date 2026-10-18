@@ -25,3 +25,4 @@
 
 # 計算用スコアを片付ける
     scoreboard players reset $Consumed Temporary
+    scoreboard players reset $CurrentStack Temporary
