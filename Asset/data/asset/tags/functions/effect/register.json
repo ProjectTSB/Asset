@@ -2,6 +2,7 @@
     "values": [
         "asset:effect/0404.blaze_barrage/_/register",
         "asset:effect/0403.blaze_charge/_/register",
+        "asset:effect/0405.predation_of_tree/_/register",
         "asset:effect/0359.time_ticker_eclipse/_/register",
         "asset:effect/0358.time_ticker_night/_/register",
         "asset:effect/0357.time_ticker_day/_/register",
@@ -194,6 +195,7 @@
         "asset:effect/0278.time_shackles/_/register",
         "asset:effect/0279.poison_of_vinderre/_/register",
         "asset:effect/0007.defense_base_debuff/_/register",
-        "asset:effect/0258.spirit_melody/_/register"
+        "asset:effect/0258.spirit_melody/_/register",
+        "asset:effect/0406.ocean_grace/_/register"
     ]
 }
