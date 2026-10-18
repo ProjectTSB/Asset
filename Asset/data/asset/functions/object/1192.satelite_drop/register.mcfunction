@@ -20,6 +20,7 @@
     data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.Angle set value 0
     data modify storage asset:object Field.Count set value 0
+    data modify storage asset:object Field.LaunchInstantly set value false
     #発射体のField
     data modify storage asset:object Field.Speed set value 3
     data modify storage asset:object Field.Range set value 30

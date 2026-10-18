@@ -10,5 +10,8 @@
 # Artifact側からアクセスする用のID紐づけ
     execute store result score @s 1192.UserID run data get storage asset:context this.UserID
 
+# 即発射の場合はIdleタグを外す
+    execute if data storage asset:context this{LaunchInstantly:true} run tag @s remove 1192.Idle
+
 # 演出
     playsound entity.drowned.swim player @a ~ ~ ~ 1 1.4
