@@ -6,14 +6,11 @@
 
 #> private
 # @private
-    #declare score_holder $OwnerID
     #declare score_holder $DamageHolder
     #declare score_holder $AdditionalDamageLimit
-    #declare tag 13S.Owner
 
-# オーナーの特定
-    execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
-    execute as @a if score @s UserID = $OwnerID Temporary run tag @s add 13S.Owner
+#ヒットした敵のIDを取得
+    execute store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
 
 # effectの情報を取得
     data modify storage api: Argument.ID set value 361
@@ -37,15 +34,13 @@
     scoreboard players operation $Temporary Temporary < $AdditionalDamageLimit Temporary
     scoreboard players operation $DamageHolder Temporary = $Temporary Temporary
     # 相手の耐性を考慮してダメージをあたえる。
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
+    function api:damage/
     function api:damage/reset
 
 # effectの付与
     execute if entity @a[tag=13S.Owner] as @a[tag=13S.Owner] run function asset:object/1158.ouroboros_ball/hit_entity/effect_give
 
 # リセット
-    scoreboard players reset $OwnerID Temporary
     scoreboard players reset $Temporary Temporary
     scoreboard players reset $DamageHolder Temporary
     scoreboard players reset $AdditionalDamageLimit Temporary
-    tag @a remove 13S.Owner

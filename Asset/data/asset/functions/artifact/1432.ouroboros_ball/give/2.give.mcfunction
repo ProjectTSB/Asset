@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"廻蛇の玉","color":"light_purple"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"ヒット時、2.5秒の間"}','{"text":"与えたダメージの80%分、次のダメージがアップする(最大2000)"}','{"text":"アップするダメージは自身のステータス補正の影響を受けない"}','{"text":"ただし、攻撃ヒット後、2.5秒以内に再びヒットさせられなかった場合"}','{"text":"4の固定ダメージを受ける"}','{"text":"”石ころを投げるより強い！”","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"敵に玉を投げつけて攻撃する"}','{"text":"ヒット時、5回まで近くの敵に向かって跳ね返り"}','{"text":"2.5秒の間、与えたダメージの80%分"}','{"text":"次のダメージがアップする(最大2000)"}','{"text":"増加するダメージは自身のステータス補正の影響を受けない"}','{"text":"”石ころを投げるより強い！”","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value 
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value [280,380]
+    data modify storage asset:artifact AttackInfo.Damage set value [40,80]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -39,9 +39,9 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 15
+    data modify storage asset:artifact AttackInfo.AttackRange set value 30
 # MP消費量 (int) 
-    data modify storage asset:artifact MPCost set value 20
+    data modify storage asset:artifact MPCost set value 60
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value 
 # MP回復量 (int) 

@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"ウロボロス・エコー","color":"light_purple"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"廻蛇の玉のダメージが上昇するが"}','{"text":"エフェクトの終了時に固定ダメージを受ける"}']
+    data modify storage asset:effect Description set value ['{"text":"廻蛇の玉のダメージが上昇する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value 
 # スタック (int) (default = API || 1)
@@ -37,4 +37,3 @@
 
 # フィールド
     data modify storage asset:effect Field.DamageHolder set value 0
-    data modify storage asset:effect Field.Damage set value 1

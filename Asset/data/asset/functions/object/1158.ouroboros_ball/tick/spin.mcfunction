@@ -3,6 +3,8 @@
 # 
 #
 # @within function asset:object/1158.ouroboros_ball/tick/
+#vfx
+    execute unless data storage asset:context this{Spin:0} unless data storage asset:context this{Spin:2} run playsound minecraft:entity.witch.throw neutral @a ~ ~ ~ 0.6 0.8
 
 # start_interpolation
     data modify entity @s start_interpolation set value 0
