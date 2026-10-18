@@ -10,3 +10,4 @@
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1563.thunderflash/using_item/3.main
+    tag @s remove CanUsed
