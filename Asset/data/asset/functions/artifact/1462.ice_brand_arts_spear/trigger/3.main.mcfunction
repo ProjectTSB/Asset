@@ -30,7 +30,7 @@
     execute at @s positioned ^ ^ ^10 run tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2] add ICE_Hit
 
 # 攻撃時演出
-    execute at @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] run particle block ice ~ ~ ~ 1 1 1 0 100
+    execute at @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..12.5] run particle block ice ~ ~ ~ 1 1 1 0 100
     playsound block.glass.break player @a ~ ~ ~ 0.7 1.2
     playsound item.trident.riptide_1 player @a ~ ~ ~ 0.4 1.4
     playsound item.trident.throw player @a ~ ~ ~ 1 1
@@ -66,7 +66,7 @@
 # 補正functionを実行
     function api:damage/modifier
 # 実行(攻撃対象にダメージ)
-    execute as @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..10.5] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..12.5] run function api:damage/
 # リセット
     function api:damage/reset
     tag @e[type=#lib:living_without_player,tag=ICE_Hit,tag=!Uninterferable,distance=..12.5] remove ICE_Hit
