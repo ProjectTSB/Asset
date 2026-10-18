@@ -127,6 +127,21 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 block_display・item_display・text_displayの選択基準は、DevSpaceの `docs/mcfunction-idioms.md`「display三種を表示内容から選ぶ」にある。Assetの演出では、ブロック状態、CustomModelDataを持つモデル、フォントの字形という表示元を確認して選ぶ。display自身が論理Objectの場合も、別entityのPassengerとして表示を担う場合もあるため、表示の種類とField・移動・破棄を担当するentityを分けて確認する。
 
+### 両面の魔法陣を設定付きで召喚する
+
+[2279.magic_circle](../../Asset/data/asset/functions/object/2279.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは表面に `Field.Char`（既定 `"0"`）、裏面に `Field.BackChar` を適用する。BackCharは任意指定で、未設定時はinitでCharをコピーする。空文字列を指定した場合はコピーせず、そのまま使う。`Field.Font` は両面共通とし、既定値はregisterを参照する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
+
+文字・フォント・大きさ・回転方向・各変化の時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`Tick` は初回待機と消失時の変化を含む消滅までのObject tick数（既定59）で、`3 + AppearDuration + DisappearDuration` 以上とする。`AppearDuration`・`SpinDuration`・`DisappearDuration` は1以上のtick数とする。
+
+初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化を開始するときにも次の90度への回転先を設定し、消失時間をかけて回転とscaleを同時に補間する。回転とscaleは補間時間を共有するため、通常回転の途中で消失へ移る場合は回転速度が変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
+
+`this.Phase` は2279が管理する参照用の実行段階で、init後は `"Waiting"`、初回待機終了後は `"Appearing"`、出現時の変化終了後は `"Rotating"`、消失開始後は `"Disappearing"` となる。継承先がそのtickの遷移を参照するときはsuper.tick後に判定する。寿命切れで破棄された後の参照は行わない。
+
+親tickは本体の現在位置・向きでPassengerをtpし、裏面の向きを同期する。継承先が同じtick内で本体を移動・回転させる場合は、tp後にsuper.tickを呼ぶ。transformationの裏面用の回転は保持する。
+
+CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。`Field.Color` は任意の両面共通色で、TextComponentの色名または `"#RRGGBB"` を指定する。未設定時はcolorプロパティを追加しない。画像は指定したフォントを提供するリソースパックで管理する。
+
+
 ## displayの初回位置合わせを非表示で行う
 
 [Ecual の予告線](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/projectile/announce_line/2.tick.mcfunction) は、横断面のscaleを0にして生成し、負の残り時間を最初の処理で正に反転する。可視化判定は反転より前にあるため、初回の位置合わせ中は非表示を保ち、次の処理でscaleと `teleport_duration:1` を設定する。負数は単なる異常な時間値ではなく、初回処理と表示開始を分ける状態も表している。
