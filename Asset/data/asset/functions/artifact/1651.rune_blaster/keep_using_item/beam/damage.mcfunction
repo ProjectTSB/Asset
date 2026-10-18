@@ -1,8 +1,8 @@
-#> asset:artifact/1651.rune_blaster/trigger/beam/damage
+#> asset:artifact/1651.rune_blaster/keep_using_item/beam/damage
 #
 #
 #
-# @within function asset:artifact/1651.rune_blaster/trigger/beam/recursive
+# @within function asset:artifact/1651.rune_blaster/keep_using_item/beam/recursive
 
 # ダメージを
     execute store result storage api: Argument.Damage double 0.1 run random value 500..600
