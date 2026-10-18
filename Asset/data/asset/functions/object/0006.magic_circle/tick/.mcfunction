@@ -17,13 +17,14 @@
     execute store result score $DisappearRemaining Temporary run data get storage asset:context this.RemainingTick
     execute store result score $DisappearDuration Temporary run data get storage asset:context this.DisappearDuration
     scoreboard players operation $DisappearRemaining Temporary -= $DisappearDuration Temporary
-    scoreboard players reset $DisappearDuration Temporary
 
-# 消失時の回転とScaleの変化を開始し、完了まで通常回転を待つ
+# 消失時の回転とScaleの変化を開始する
     execute if score $DisappearRemaining Temporary matches 0 run function asset:object/0006.magic_circle/tick/disappear/
-    execute if score $DisappearRemaining Temporary matches ..0 run return run scoreboard players reset $DisappearRemaining Temporary
-    scoreboard players reset $DisappearRemaining Temporary
 
-# 次の回転までの待ち時間を進める
-    execute store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
-    execute if data storage asset:context this{SpinInterval:0} run function asset:object/0006.magic_circle/tick/spin/
+# 消失開始前は次の回転までの待ち時間を進める
+    execute if score $DisappearRemaining Temporary matches 1.. store result storage asset:context this.SpinInterval int 0.9999999999 run data get storage asset:context this.SpinInterval
+    execute if score $DisappearRemaining Temporary matches 1.. if data storage asset:context this{SpinInterval:0} run function asset:object/0006.magic_circle/tick/spin/
+
+# 一時scoreをリセットする
+    scoreboard players reset $DisappearRemaining Temporary
+    scoreboard players reset $DisappearDuration Temporary
