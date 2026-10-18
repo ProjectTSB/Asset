@@ -7,17 +7,15 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
+# 固有バフ取得
+    data modify storage api: Argument.ID set value 410
+    function api:entity/mob/effect/get/from_id
 
 # 演出
     execute anchored eyes positioned ^ ^ ^1.5 positioned ~ ~-0.6 ~ run function asset:artifact/1623.palermo/trigger/vfx
 
-# メイン対象へダメージ
-    #ダメ―ジ
-        execute store result storage api: Argument.Damage float 1.0 run random value 350..400
-
-#バフが1以上の場合殴った時に1減らす
-    data modify storage api: Argument.ID set value 410
-    function api:entity/mob/effect/get/from_id
+# ダメージ
+    execute store result storage api: Argument.Damage float 1.0 run random value 350..400
 
 # スタックを上書きして再付与する
     data modify storage api: Argument.ID set value 410
@@ -25,12 +23,12 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
-    #その他設定
-        data modify storage api: Argument.AttackType set value "Physical"
-        data modify storage api: Argument.ElementType set value "Fire"
-        function api:damage/modifier
-        execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function api:damage/
-        function api:damage/reset
+# その他設定
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    function api:damage/modifier
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function api:damage/
+    function api:damage/reset
 
 #リセット
-        data remove storage asset:temp Success
+    data remove storage asset:temp Success
