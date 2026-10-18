@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 320
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text":"致命的チャージ","color":"white"}'
+    data modify storage asset:effect Name set value '{"text":"致命的チャージ","color":"aqua","bold":true,"underlined":true}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"チャージ中！","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"チャージ段階に応じて特殊波長レーザーが強化される","color":"white"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
