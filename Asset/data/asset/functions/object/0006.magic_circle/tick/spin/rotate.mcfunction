@@ -9,7 +9,7 @@
 # 回転段階を進める
     execute store result storage asset:context this.Spin int 0.9999999999 run data get storage asset:context this.Spin
 
-# 本体とPassengerに回転を適用する
+# 回転を適用する
     function asset:object/0006.magic_circle/tick/spin/apply
 
 # 回転段階をリセットする
