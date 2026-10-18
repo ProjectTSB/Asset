@@ -17,8 +17,8 @@
 
 # effectの情報を取得
     data modify storage api: Argument.ID set value 361
-    execute if entity @a[tag=13S.Owner] as @a[tag=13S.Owner] run function api:entity/mob/effect/get/from_id
-    execute store result score $DamageHolder Temporary run data get storage api: Return.Effect.Field.DamageHolder
+    execute as @a[tag=13S.Owner] run function api:entity/mob/effect/get/from_id
+    execute if entity @a[tag=13S.Owner] store result score $DamageHolder Temporary run data get storage api: Return.Effect.Field.DamageHolder
 
 
 # ダメージ計算
