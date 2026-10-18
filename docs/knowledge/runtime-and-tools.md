@@ -137,6 +137,8 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 `this.Phase` は2279が管理する参照用の実行段階で、init後は `"Waiting"`、初回待機終了後は `"Appearing"`、出現時の変化終了後は `"Rotating"`、消失開始後は `"Disappearing"` となる。継承先がそのtickの遷移を参照するときはsuper.tick後に判定する。寿命切れで破棄された後の参照は行わない。
 
+親tickは本体の現在位置・向きでPassengerをtpし、裏面の向きを同期する。継承先が同じtick内で本体を移動・回転させる場合は、tp後にsuper.tickを呼ぶ。transformationの裏面用の回転は保持する。
+
 CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。`Field.Color` は任意の両面共通色で、TextComponentの色名または `"#RRGGBB"` を指定する。未設定時はcolorプロパティを追加しない。画像は指定したフォントを提供するリソースパックで管理する。
 
 

@@ -13,6 +13,9 @@
     execute store result storage asset:context this.RemainingTick int 0.9999999999 run data get storage asset:context this.RemainingTick
     execute if data storage asset:context this{RemainingTick:0} run return run function asset:object/2279.magic_circle/tick/kill
 
+# 本体の現在位置と向きに裏面のPassengerを揃える
+    execute at @s on passengers run tp @s ~ ~ ~ ~ ~
+
 # 消失開始までの残り時間を求める
     execute store result score $DisappearRemaining Temporary run data get storage asset:context this.RemainingTick
     execute store result score $DisappearDuration Temporary run data get storage asset:context this.DisappearDuration
