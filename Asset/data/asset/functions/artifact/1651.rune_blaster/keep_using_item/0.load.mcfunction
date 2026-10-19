@@ -4,9 +4,13 @@
 #
 # @within tag/function asset:artifact/load
 
-#> 定義類はここに
+#> objectAsset側でも使うobjective
 # @within function
 #   asset:artifact/1651.rune_blaster/**
 #   asset:object/1200.rune_blaster_circle/init/
 #   asset:object/1200.rune_blaster_circle/tick/
     scoreboard objectives add 19V.UserID dummy
+
+#> この神器内のみのobjective
+# @within function asset:artifact/1651.rune_blaster/**
+    scoreboard objectives add 19V.LatestUseTick dummy

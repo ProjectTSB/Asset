@@ -4,6 +4,9 @@
 #
 # @within function asset:artifact/1651.rune_blaster/keep_using_item/2.check_condition
 
+# 現tickを取得しておく
+    execute store result score @s 19V.LatestUseTick run data get storage global Time
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
