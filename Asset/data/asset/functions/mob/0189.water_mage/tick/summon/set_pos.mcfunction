@@ -10,8 +10,9 @@
     execute if entity @p[gamemode=!spectator,distance=..0.01] if data storage api: {OnGround:1b} run return run function asset:mob/0189.water_mage/tick/summon/summon
 
 # 下がブロックでないなら可能な限り降りる
+# 指定しただけ下がってもブロックがない場合、召喚をキャンセルする
     # 無限再帰防止用storageを事前に設定
-        data modify storage asset:temp RecursiveLimit set value 4
+        data modify storage asset:temp RecursiveLimit set value 5
     # 再帰開始
         function asset:mob/0189.water_mage/tick/summon/align_to_ground
     # リセット
