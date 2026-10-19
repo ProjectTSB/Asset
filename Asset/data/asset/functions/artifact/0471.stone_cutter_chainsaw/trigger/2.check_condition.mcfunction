@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/0471.stone_cutter_chainsaw/trigger/1.trigger
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
+# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
