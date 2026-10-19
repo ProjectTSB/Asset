@@ -1,8 +1,8 @@
-#> asset:artifact/1620.satelite_drop/trigger/launch_new
+#> asset:artifact/1620.satelite_drop/attack/launch_new
 #
 #
 #
-# @within function asset:artifact/1620.satelite_drop/trigger/attack
+# @within function asset:artifact/1620.satelite_drop/attack/
 
     data modify storage api: Argument.FieldOverride.LaunchInstantly set value true
     data modify storage api: Argument.FieldOverride.Count set value 1
