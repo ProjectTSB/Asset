@@ -1,13 +1,13 @@
-#> asset:artifact/1590.rice_cooker/trigger/2.check_condition
+#> asset:artifact/1590.rice_cooker/using_item/2.check_condition
 #
 # 神器の発動条件をチェックします
 #
-# @within function asset:artifact/1590.rice_cooker/trigger/1.trigger
+# @within function asset:artifact/1590.rice_cooker/using_item/1.trigger
 
 # Effect 392を確認
     data modify storage api: Argument.ID set value 392
     function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run return run function asset:artifact/1590.rice_cooker/trigger/charge
+    execute if data storage api: Return.Effect run return run function asset:artifact/1590.rice_cooker/using_item/charge
 # 発射中なら発動不可
     data modify storage api: Argument.ID set value 393
     function api:entity/mob/effect/get/from_id
@@ -17,4 +17,4 @@
     function asset:artifact/common/check_condition/mainhand
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1590.rice_cooker/trigger/3.main
+    execute if entity @s[tag=CanUsed] run function asset:artifact/1590.rice_cooker/using_item/3.main

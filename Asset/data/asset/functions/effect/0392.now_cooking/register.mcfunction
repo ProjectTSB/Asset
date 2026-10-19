@@ -36,7 +36,3 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Charge set value 0
-    data modify storage asset:effect Field.Damage set value 0
-    data modify storage asset:effect Field.AttackType set value ""
-    data modify storage asset:effect Field.ElementType set value ""
