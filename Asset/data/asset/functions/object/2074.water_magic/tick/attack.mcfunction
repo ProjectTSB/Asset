@@ -11,7 +11,7 @@
 
 # 演出用Object召喚
     data modify storage api: Argument.ID set value 2277
-    data modify storage api: Argument.FieldOverride.Scale set value 6f
+    data modify storage api: Argument.FieldOverride.Scale set value 4.5f
     function api:object/summon
 
 # ダメージ
