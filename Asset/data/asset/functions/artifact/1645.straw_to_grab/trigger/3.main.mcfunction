@@ -12,3 +12,6 @@
     data modify storage api: Argument.ID set value 418
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# 演出
+    playsound block.bubble_column.whirlpool_inside player @a ~ ~ ~ 1.0 0.7
