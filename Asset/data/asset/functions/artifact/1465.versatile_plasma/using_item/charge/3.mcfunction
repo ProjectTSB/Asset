@@ -1,14 +1,17 @@
-#> asset:effect/0374.charge_plasma/re-given/charge/3
+#> asset:artifact/1465.versatile_plasma/using_item/charge/3
 #
 #
 #
-# @within function asset:effect/0374.charge_plasma/re-given/**
+# @within function asset:artifact/1465.versatile_plasma/using_item/charge/**
 
 # スタック数を増やす
-    data modify storage asset:context Stack set value 3
+    data modify storage api: Argument.ID set value 374
+    data modify storage api: Argument.Stack set value 3
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # MP消費
-    execute store result storage api: Argument.Fluctuation int -1 run data get storage asset:context this.MPThreshold[1]
+    data modify storage api: Argument.Fluctuation set value -35
     data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
