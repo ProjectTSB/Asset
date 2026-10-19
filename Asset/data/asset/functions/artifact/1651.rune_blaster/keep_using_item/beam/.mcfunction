@@ -26,7 +26,6 @@
     execute positioned as @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] run function asset:artifact/1651.rune_blaster/keep_using_item/beam/recursive
 
 # ビームobject
-#  データ設定
     data modify storage api: Argument.ID set value 2168
     data modify storage api: Argument.FieldOverride set value {Scale:[0.25f,0f,0.25f],Color:8291583,DisappearInterpolation:2,LifeTime:7}
     execute store result storage api: Argument.FieldOverride.Scale[1] float 0.5 run scoreboard players operation $MaxRange Temporary -= $Range Temporary
