@@ -26,7 +26,7 @@
 
 # ToとAmountsをコピー
     data modify storage asset:temp Temp.To set from storage asset:context Heal.To
-    data modify storage asset:temp Temp.Amounts set from storage asset:context Heal.Amounts
+    data modify storage asset:temp Temp.Amounts set from storage asset:context Heal.Amounts.Base
 
 # 回復対象へそれぞれの回復量の30%分のバリアを付与
     function asset:artifact/0258.cat_dream_pillow/trigger/give_barrier

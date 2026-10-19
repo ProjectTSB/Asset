@@ -4,3 +4,4 @@
 #> tag
 # @within function asset:mob/0371.lightning_spellbook/**
     #declare tag 2D.LeftRotate
+    #declare tag 2D.OnTop

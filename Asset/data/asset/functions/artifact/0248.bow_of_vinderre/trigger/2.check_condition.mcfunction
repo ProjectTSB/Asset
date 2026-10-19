@@ -5,7 +5,7 @@
 # @within function asset:artifact/0248.bow_of_vinderre/trigger/1.trigger
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/check_condition/auto
+    function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
     execute unless entity @s[tag=CanUsed] run kill @e[type=#arrows,tag=ShotArrow,distance=..5]

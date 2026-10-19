@@ -6,3 +6,6 @@
 
 # スコアの初期化
     scoreboard players set @s General.Mob.Tick -80
+
+# 速度・追尾力初期化
+    function asset:mob/0363.white_spellbook/set_speed/0

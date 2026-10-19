@@ -8,7 +8,9 @@
     scoreboard players add @s General.Mob.Tick 1
     function asset:mob/0204.infernal_watcher/tick/update_state/
 # 移動
-    function asset:mob/0204.infernal_watcher/tick/move/
+    function asset:mob/super.tick
+# その他
+    function asset:mob/0204.infernal_watcher/tick/other/
 # 攻撃
     function asset:mob/0204.infernal_watcher/tick/attack/
 # 自壊

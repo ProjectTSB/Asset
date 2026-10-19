@@ -15,3 +15,6 @@
 
 # 更なるチャージ
     execute if entity @s[tag=CanUsed] if score @s TH.Charge matches 20.. run function asset:artifact/1061.hekireki/using_item/extra_charge
+
+# リセット
+    tag @s remove CanUsed
