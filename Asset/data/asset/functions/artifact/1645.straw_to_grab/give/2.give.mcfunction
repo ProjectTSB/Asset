@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "溺れる者が縋る藁"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "使用すると、MPが5秒にわたり消費され続ける。"}', '{"translate": "この効果の終了時、発動時点よりMPが高ければ%sを得る。", "with": [{"text": "水耐性+15%", "color": "green"}]}']
+    data modify storage asset:artifact Lore set value ['{"text": "使用すると、MPが5秒にわたり消費され続ける。"}', '{"translate": "この効果の終了時、発動時点よりMPが高ければ%sを得る。", "with": [{"text": "水耐性+15%", "color": "green"}]}', '{"text": "溺れているときの水面は、近づくほどに遠く感じるものだ。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
