@@ -1,6 +1,11 @@
 {
     "values": [
         "asset:effect/0374.charge_plasma/_/register",
+        "asset:effect/0405.predation_of_tree/_/register",
+        "asset:effect/0359.time_ticker_eclipse/_/register",
+        "asset:effect/0358.time_ticker_night/_/register",
+        "asset:effect/0357.time_ticker_day/_/register",
+        "asset:effect/0362.baking/_/register",
         "asset:effect/0128.hunger/_/register",
         "asset:effect/0388.opened_dimension/_/register",
         "asset:effect/0387.dimensional_castaway/_/register",
@@ -189,6 +194,7 @@
         "asset:effect/0278.time_shackles/_/register",
         "asset:effect/0279.poison_of_vinderre/_/register",
         "asset:effect/0007.defense_base_debuff/_/register",
-        "asset:effect/0258.spirit_melody/_/register"
+        "asset:effect/0258.spirit_melody/_/register",
+        "asset:effect/0406.ocean_grace/_/register"
     ]
 }
