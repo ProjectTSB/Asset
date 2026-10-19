@@ -1,4 +1,4 @@
-#> asset:object/2074.water_magic/tick/damage
+#> asset:object/2074.water_magic/tick/attack
 #
 # ダメージを与える
 #
@@ -24,6 +24,10 @@
     function api:damage/modifier_manual
     execute as @a[tag=!PlayerShouldInvulnerable,distance=..2.25] positioned ~-2.25 ~-1.5 ~-2.25 if entity @s[dx=3.5,dy=2,dz=3.5] run function api:damage/
     function api:damage/reset
+
+# (AttackCount - 1)し、0なら消す
+    execute store result storage asset:context this.AttackCount int 0.9999999999 run data get storage asset:context this.AttackCount
+    execute if data storage asset:context this{AttackCount:0} run kill @s
 
 # Slowness:trueでなければreturn
     execute unless data storage asset:context this{Slowness:true} run return 0
