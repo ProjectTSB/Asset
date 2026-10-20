@@ -16,7 +16,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function asset:object/1205.fire_extinguisher/hit_entity/check_duplicate
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,sort=random,limit=1] run function asset:object/1205.fire_extinguisher/hit_entity/check_duplicate
     function api:damage/reset
 
 # リセット
