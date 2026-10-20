@@ -7,6 +7,9 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
+# MetaData設定
+    data modify storage api: Argument.Metadata set value "1623.palermo"
+
 # 固有バフ取得
     data modify storage api: Argument.ID set value 410
     function api:entity/mob/effect/get/from_id
@@ -16,6 +19,9 @@
 
 # ダメージ
     execute store result storage api: Argument.Damage float 1.0 run random value 350..400
+
+#バフがあるならダメ―ジX倍
+    execute if data storage api: Return.Effect store result storage api: Argument.Damage double 1.5 run data get storage api: Argument.Damage
 
 # スタックを上書きして再付与する
     data modify storage api: Argument.ID set value 410
