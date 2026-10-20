@@ -12,8 +12,5 @@
 # 適当に音
     execute anchored eyes positioned ^ ^-0.3 ^1 run playsound block.fire.extinguish player @a ~ ~ ~ 0.6 1.9
 
-#
-    #execute anchored eyes positioned ^-0.3 ^-0.3 ^1 run particle cloud ~ ~ ~ ^ ^ ^100000000 0.000000004 0 normal @a
-
 # 発射
     execute anchored eyes positioned ^-0.5 ^-0.3 ^0.5 run function asset:artifact/1675.fire_extinguisher/trigger/shoot
