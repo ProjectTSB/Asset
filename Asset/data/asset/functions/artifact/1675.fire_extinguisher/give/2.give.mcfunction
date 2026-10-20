@@ -59,7 +59,7 @@
     # data modify storage asset:artifact DisableMPMessage set value
 # 破壊時の音を鳴らさないかどうか (boolean) (オプション)
     # data modify storage asset:artifact DisableBreakSound set value
-# アイテム更新を行うか
+# アイテム更新を無効化するか
     data modify storage asset:artifact DisabledFlag.Use.ItemUpdate set value true
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value "ALL"
