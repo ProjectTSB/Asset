@@ -1,8 +1,8 @@
-#> asset:object/1205.fire_extinguisher/kill/
+#> asset:object/1205.fire_extinguisher/hit_entity/
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/alias/1205/kill
+# @within asset:object/alias/1205/hit_entity
 
 #> Private
 # @private
@@ -16,11 +16,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=random,limit=1] run function asset:object/1205.fire_extinguisher/hit_entity/check_duplicate
     function api:damage/reset
 
 # リセット
     scoreboard players reset $UserID Temporary
-
-# kill
-    kill @s

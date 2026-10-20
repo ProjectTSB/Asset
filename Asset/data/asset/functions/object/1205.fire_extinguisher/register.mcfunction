@@ -6,6 +6,7 @@
 
 # 継承(オプション)
     data modify storage asset:object Extends append value 1
+    data modify storage asset:object Extends append value 2
     function asset:object/extends
 # 他のObjectに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:object ExtendsSafe set value
@@ -18,6 +19,6 @@
     data modify storage asset:object ID set value 1205
 # フィールド(オプション)
     data modify storage asset:object Field.Range set value 14
-    data modify storage asset:object Field.Speed set value 6
+    data modify storage asset:object Field.Speed set value 5
     data modify storage asset:object Field.Damage set value 1d
     data modify storage asset:object Field.UserID set value -1
