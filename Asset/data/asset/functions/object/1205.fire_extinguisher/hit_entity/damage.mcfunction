@@ -8,4 +8,5 @@
     function api:damage/
 
 # 燃えてれば、ついでに火を消す
-    execute if predicate lib:is_burning run data modify entity @s Fire set value -1s
+# ExtendecCollisionは色々めんどそうなので除外
+    execute if entity @s[tag=!ExtendedCollision] if predicate lib:is_burning run data modify entity @s Fire set value -1s
