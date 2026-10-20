@@ -17,8 +17,8 @@
 # 弾を召喚
     # ダメージ
         data modify storage api: Argument.FieldOverride.Damage set value 10d
-    # 射程
-        data modify storage api: Argument.FieldOverride.Range set value 14
+    # 射程 (数値×2)
+        data modify storage api: Argument.FieldOverride.Range set value 16
     # 弾速 (といっても少しずつ遅くなる 1tickに2.5,次tickは2、次は1.5..)
         data modify storage api: Argument.FieldOverride.Speed set value 5
 
