@@ -21,7 +21,7 @@
 # 文字
     data modify storage asset:object Field.Char set value "0"
     data modify storage asset:object Field.Font set value "object/2279"
-    data modify storage asset:object Field.Color set value "#a8adff"
+    data modify storage asset:object Field.Color set value "#737aff"
     data modify storage asset:object Field.LeftRotate set value false
     data modify storage asset:object Field.AppearDuration set value 8
     data modify storage asset:object Field.SpinDuration set value 8
