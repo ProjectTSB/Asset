@@ -13,7 +13,7 @@
 # 数値取得
     execute store result score $Damage Temporary run data get storage asset:context this.Damage 100
     execute store result score $Attenuation Temporary run data get storage asset:context this.Attenuation.Amount 100
-    execute store result score $Min Temporary run data get storage asset:context this.Attenuation.Min 100
+    execute store result score $Min Temporary run data get storage asset:context this.Attenuation.MinDamage 100
 
 # ($Damage - $Attenuation) >= $Min
     scoreboard players operation $Damage Temporary -= $Attenuation Temporary
