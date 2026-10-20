@@ -4,9 +4,6 @@
 #
 # @within asset:object/alias/1205/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
-
 # supe.tick
     execute at @s run function asset:object/super.tick
 
