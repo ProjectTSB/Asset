@@ -15,10 +15,15 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..0.01,limit=1] run function lib:forward_spreader/circle
 
 # 弾を召喚
-    data modify storage api: Argument.ID set value 1205
-    execute store result storage api: Argument.FieldOverride.Damage double 1 run random value 7..10
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet run function api:object/summon
+    # ダメージ
+        execute store result storage api: Argument.FieldOverride.Damage double 1 run random value 7..10
+    # 射程
+        data modify storage api: Argument.FieldOverride.Range set value 14
+        data modify storage api: Argument.FieldOverride.Speed set value 5
+    # 召喚
+        data modify storage api: Argument.ID set value 1205
+        execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+        execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet run function api:object/summon
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,distance=..10]
