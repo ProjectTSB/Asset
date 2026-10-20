@@ -22,3 +22,9 @@
     data modify storage asset:object Field.Speed set value 5
     data modify storage asset:object Field.Damage set value 1d
     data modify storage asset:object Field.UserID set value -1
+
+# 減衰用
+    data modify storage asset:object Field.Attenuation.Start set value 10
+    data modify storage asset:object Field.Attenuation.Amount set value 1d
+    data modify storage asset:object Field.Attenuation.MinDamage set value 5d
+    data modify storage asset:object Field.Attenuation.IsMin set value false

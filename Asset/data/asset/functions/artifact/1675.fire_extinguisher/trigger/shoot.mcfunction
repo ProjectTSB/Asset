@@ -16,10 +16,20 @@
 
 # 弾を召喚
     # ダメージ
-        execute store result storage api: Argument.FieldOverride.Damage double 1 run random value 7..10
+        data modify storage api: Argument.FieldOverride.Damage set value 10d
     # 射程
         data modify storage api: Argument.FieldOverride.Range set value 14
+    # 弾速 (といっても少しずつ遅くなる 1tickに2.5,次tickは2、次は1.5..)
         data modify storage api: Argument.FieldOverride.Speed set value 5
+
+    # 減衰
+        # ダメージ減衰がどれくらい進んだ時から始まるか(数値÷2)
+            data modify storage api: Argument.FieldOverride.Attenuation.Start set value 9
+        # 0.5ブロック進むごとのダメージ減少量
+            data modify storage api: Argument.FieldOverride.Attenuation.Amount set value 1d
+        # 最小ダメージ
+            data modify storage api: Argument.FieldOverride.Attenuation.MinDamage set value 4d
+
     # 召喚
         data modify storage api: Argument.ID set value 1205
         execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
