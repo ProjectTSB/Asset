@@ -5,7 +5,7 @@
 # @within asset:object/alias/1205/tick
 
 # supe.tick
-    execute at @s run function asset:object/super.tick
+    function asset:object/super.tick
 
 # 少しずつ弾速を落としていく
     execute unless data storage asset:context this{Speed:1} store result storage asset:context this.Speed int 0.9999999999 run data get storage asset:context this.Speed
