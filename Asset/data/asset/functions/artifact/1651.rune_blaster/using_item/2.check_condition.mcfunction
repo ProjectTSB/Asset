@@ -6,15 +6,15 @@
 
 #> Private
 # @private
-    #declare score_holder $LatestUseTick
+    #declare score_holder $Gametime
     #declare score_holder $TCD
 
 # 最後に使用してから(TCD)tick以内なら、TCDを無視する
 # (魔法陣を確実に維持するため)
     execute store result score $TCD Temporary run data get storage asset:context Items.mainhand.tag.TSB.TypeCooldown.Duration
-    execute store result score $LatestUseTick Temporary run data get storage global Time
-    scoreboard players operation $LatestUseTick Temporary -= @s 19V.LatestUseTick
-    execute if score @s 19V.LatestUseTick matches -2147483648..2147483647 if score $LatestUseTick Temporary < $TCD Temporary run data modify storage asset:artifact DisabledCheckFlag.TypeCooldown set value true
+    execute store result score $Gametime Temporary run data get storage global Time
+    scoreboard players operation $Gametime Temporary -= @s 19V.LatestUseTick
+    execute if score @s 19V.LatestUseTick matches -2147483648..2147483647 if score $Gametime Temporary < $TCD Temporary run data modify storage asset:artifact DisabledCheckFlag.TypeCooldown set value true
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/mainhand
@@ -25,5 +25,5 @@
 
 # リセット
     tag @s remove CanUsed
-    scoreboard players reset $LatestUseTick Temporary
+    scoreboard players reset $Gametime Temporary
     scoreboard players reset $TCD Temporary
