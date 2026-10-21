@@ -36,7 +36,7 @@
     execute if entity @e[type=#lib:living_without_player,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/reflect
     execute unless entity @e[type=#lib:living_without_player,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/random_direction
 #反射回数が0になったら玉を消す
-    execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/call.m {method:kill}
+    execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/call.m {method:"kill"}
 
 #ヒットタグもリセット
-    tag @e[type=#lib:living_without_player,distance=..5] remove 1AI.HitEnemy
+    tag @e[type=#lib:living_without_player,tag=1AI.HitEnemy,distance=..5] remove 1AI.HitEnemy
