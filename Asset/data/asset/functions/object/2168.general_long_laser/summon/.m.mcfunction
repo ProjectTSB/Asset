@@ -1,4 +1,4 @@
-#> asset:object/2168.general_long_laser/summon/summon.m
+#> asset:object/2168.general_long_laser/summon/.m
 #
 #
 #
