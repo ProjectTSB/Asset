@@ -12,7 +12,7 @@
 
 # 演出
     particle dust 1 0.75 0.2 1.2 ~ ~0.8 ~ 0.6 0.5 0.6 0 25 normal @a
-    particle minecraft:wax_on ~ ~0.8 ~ 0.6 0.5 0.6 0 30 normal @a
+    particle minecraft:wax_on ~ ~0.8 ~ 0 0 0 15 40 normal @a
     particle composter ~ ~0.8 ~ 0.6 0.5 0.6 0 20 normal @a
     playsound block.amethyst_block.break player @a ~ ~ ~ 0.8 1.6
 

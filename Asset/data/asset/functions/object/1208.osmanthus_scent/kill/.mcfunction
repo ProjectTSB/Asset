@@ -11,9 +11,11 @@
 
 # 演出
     particle dust 1 0.75 0.2 1.5 ~ ~ ~ 0.8 0.8 0.8 0 40 normal @a
-    particle minecraft:wax_on ~ ~ ~ 0.8 0.8 0.8 0 50 normal @a
+    particle minecraft:wax_on ~ ~ ~ 0.8 0.8 0.8 5 50 normal @a
     particle end_rod ~ ~ ~ 0 0 0 0.2 15 normal @a
+    particle minecraft:dripping_lava ~ ~ ~ 0.9 0.8 0.9 0 40 normal @a
     playsound block.amethyst_block.break player @a ~ ~ ~ 1 1.4
+    playsound block.amethyst_block.break player @a ~ ~ ~ 1 1.2
 
 # 攻撃者のプレイヤーを実行者にして攻撃する
     execute store result score $UserID Temporary run data get storage asset:context this.UserID

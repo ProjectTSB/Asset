@@ -13,7 +13,7 @@
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.MPHeal
     function api:damage/modifier
     function api:damage/single_damage_session/open
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..2] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..3] run function api:damage/
     function api:damage/single_damage_session/close
     function api:damage/reset
 
@@ -25,5 +25,5 @@
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     data modify storage api: Argument.FieldOverride.SecondRate set from storage asset:context this.SecondRate
     data modify storage api: Argument.FieldOverride.SecondRadius set from storage asset:context this.SecondRadius
-    $execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!Death,distance=..2,sort=nearest,limit=$(MaxDebuffTargets)] run function api:entity/mob/effect/give
+    $execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!Death,distance=..3,sort=nearest,limit=$(MaxDebuffTargets)] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
