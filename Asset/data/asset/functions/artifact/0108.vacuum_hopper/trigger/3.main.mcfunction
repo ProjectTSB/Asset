@@ -4,28 +4,35 @@
 #
 # @within function asset:artifact/0108.vacuum_hopper/trigger/2.check_condition
 
-#> Private
-# @private
-    #declare tag Vacuum
-    #declare score_holder $Items
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+    data modify storage asset:artifact IgnoreItemUpdate set value true
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-    playsound entity.enderman.teleport player @s ~ ~ ~ 1 2
-    particle portal ~ ~ ~ 0.5 1 0.5 0 300 force @a
-    execute positioned ^ ^ ^10 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^15 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^20 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^25 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^30 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^35 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute positioned ^ ^ ^40 run tag @e[type=item,tag=!Uninterferable,distance=..10] add Vacuum
-    execute at @e[tag=Vacuum] run particle portal ~ ~ ~ 0.2 0.2 0.2 0 30 force @a
-    tp @e[tag=Vacuum] @s
-    execute store result score $Items Temporary if entity @e[type=item,tag=Vacuum]
-    tellraw @s [{"text": "ﾀﾞｲｿｿ >> "},{"text": "[ "},{"score": {"name": "$Items","objective": "Temporary"},"color": "gold"},{"text": " ]のアイテムを回収しました"}]
-    execute as @e[type=item,distance=..1] run data modify entity @s PickupDelay set value 0s
-    scoreboard players reset $Items Temporary
-    tag @e[type=item,tag=Vacuum] remove Vacuum
+
+#> Private
+# @private
+    #declare score_holder $Interval
+
+# 音
+    execute store result score $Interval Temporary run data get storage global Time
+    scoreboard players operation $Interval Temporary %= $3 Const
+    execute if score $Interval Temporary matches 0 anchored eyes positioned ^ ^1 ^1 run playsound minecraft:entity.breeze.idle_air player @a ~ ~ ~ 0.7 0.5
+    scoreboard players reset $Interval Temporary
+
+# パーティクル
+    execute anchored eyes positioned ^ ^-0.4 ^ run function asset:artifact/0108.vacuum_hopper/trigger/particle
+
+# 円柱判定
+    data modify storage lib: Argument.BoundingCone.Angle set value 40d
+    data modify storage lib: Argument.BoundingCone.Selector set value "@e[type=#asset:0108.vacuum_hopper/vacuumable,tag=!Uninterferable,tag=!Immovable,distance=..16]"
+    function lib:bounding_cone/
+
+# 生きているentity以外なら即座に自身の元へtpさせる
+    tp @e[type=#asset:0108.vacuum_hopper/vacuumable,type=!#lib:living_without_player,tag=BoundingCone,distance=..16] ~ ~ ~
+
+# アイテム以外なら吸い込む
+    execute as @e[type=#lib:living_without_player,tag=BoundingCone,distance=..16] at @s run function asset:artifact/0108.vacuum_hopper/trigger/vacuum/
+
+# リセット
+    tag @e[type=#asset:0108.vacuum_hopper/vacuumable,tag=BoundingCone,distance=..16] remove BoundingCone
