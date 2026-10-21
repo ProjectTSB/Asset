@@ -36,7 +36,7 @@
     execute if entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1158.ouroboros_ball/hit_entity/reflect
     execute unless entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1158.ouroboros_ball/hit_entity/kill
 #反射回数が0になったら玉を消す
-    execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/1158.ouroboros_ball/hit_entity/kill
+    execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/call.m {method:"kill"}
 
 #ヒットタグもリセット
     tag @e[type=#lib:living_without_player,distance=..5] remove 13S.HitEnemy
