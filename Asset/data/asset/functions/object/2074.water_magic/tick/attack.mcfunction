@@ -4,6 +4,9 @@
 #
 # @within function asset:object/2074.water_magic/tick/
 
+# particle
+    particle splash ~ ~0.5 ~ 1 0.2 1 0 40 normal @a
+
 # playsound
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 2 0
     playsound entity.dolphin.splash hostile @a ~ ~ ~ 0.8 1 0
