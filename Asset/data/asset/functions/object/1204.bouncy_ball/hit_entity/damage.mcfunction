@@ -6,7 +6,7 @@
 
 #> private
 # @private
-    #declare score_holder $Temporary
+    #declare score_holder $Range
 
 #ヒットした敵のIDを取得
     execute store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
@@ -21,9 +21,9 @@
     function api:damage/reset
 
 # 射程を5だけ延長
-    execute store result score $Temporary Temporary run data get storage asset:context this.RemainingRange 1
-    scoreboard players operation $Temporary Temporary += $5 Const
-    execute store result storage asset:context this.RemainingRange int 1 run scoreboard players get $Temporary Temporary
+    execute store result score $Range Temporary run data get storage asset:context this.RemainingRange 1
+    scoreboard players operation $Range Temporary += $5 Const
+    execute store result storage asset:context this.RemainingRange int 1 run scoreboard players get $Range Temporary
 
 # リセット
-    scoreboard players reset $Temporary Temporary
+    scoreboard players reset $Range Temporary
