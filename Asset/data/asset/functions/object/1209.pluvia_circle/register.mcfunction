@@ -32,8 +32,8 @@
     data modify storage asset:object Field.Font set value "object/2279"
     data modify storage asset:object Field.Color set value "#448afb"
     data modify storage asset:object Field.LeftRotate set value false
-    data modify storage asset:object Field.AppearDuration set value 8
-    data modify storage asset:object Field.SpinDuration set value 8
-    data modify storage asset:object Field.DisappearDuration set value 8
+    data modify storage asset:object Field.AppearDuration set value 6
+    data modify storage asset:object Field.SpinDuration set value 6
+    data modify storage asset:object Field.DisappearDuration set value 6
     data modify storage asset:object Field.AppearScale set value [2f,2f,0f]
-    data modify storage asset:object Field.Tick set value 23
+    data modify storage asset:object Field.Tick set value 21
