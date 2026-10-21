@@ -19,8 +19,8 @@
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value
     data modify storage asset:object Field.Speed set value 2
-    data modify storage asset:object Field.Range set value 120
-    data modify storage asset:object Field.MovePerStep set value 0.2
+    data modify storage asset:object Field.Range set value 60
+    data modify storage asset:object Field.MovePerStep set value 0.4
     data modify storage asset:object Field.Damage set value 1
     data modify storage asset:object Field.AdditionalMPHeal set value 1
     data modify storage asset:object Field.UserID set value -1

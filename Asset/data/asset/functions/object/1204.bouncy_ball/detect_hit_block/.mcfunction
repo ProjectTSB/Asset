@@ -5,5 +5,5 @@
 # @within asset:object/alias/1204/detect_hit_block
 
 # 判定
-    execute unless block ^ ^ ^0.2 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true
     execute unless block ^ ^ ^0.4 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true
+    execute unless block ^ ^ ^0.8 #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true

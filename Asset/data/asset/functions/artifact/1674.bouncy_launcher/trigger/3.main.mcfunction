@@ -12,12 +12,12 @@
 # 召喚
     data modify storage api: Argument.ID set value 1204
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
-    data modify storage api: Argument.FieldOverride.Damage set value 5
+    data modify storage api: Argument.FieldOverride.Damage set value 5d
     data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
     #反射回数上限
     data modify storage api: Argument.FieldOverride.ReflectionLimit set value 35
-    #射程（Range*0.2m）
-    data modify storage api: Argument.FieldOverride.Range set value 150
+    #射程（Range*0.4m）
+    data modify storage api: Argument.FieldOverride.Range set value 75
     execute anchored eyes positioned ^ ^ ^ run function api:object/summon
 
 #vfx
