@@ -19,7 +19,7 @@
 # Scaleに代入
     execute store result score $Range Temporary run data get storage asset:context this.Range
     execute store result score $MaxRange Temporary run data get storage asset:context this.MaxRange
-    execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players operation $MaxRange Temporary -= $Range Temporary
+    execute store result storage api: Argument.FieldOverride.Scale[1] float 0.5 run scoreboard players operation $MaxRange Temporary -= $Range Temporary
 
 # 召喚
     data modify storage api: Argument.ID set value 2168
