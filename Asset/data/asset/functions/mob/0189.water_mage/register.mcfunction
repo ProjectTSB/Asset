@@ -56,5 +56,20 @@
         data modify storage asset:mob Resist.Thunder set value 1.2
 
 # フィールド
+
 # ダメージ設定
     data modify storage asset:mob Field.Damage set value 20f
+# Metadata
+    data modify storage asset:mob Field.Metadata set value "189.WaterMage"
+# デバフ量設定(鈍足)
+# Blessless以上でしか付与しないので注意！！
+    # スタック
+        # 基礎値
+            data modify storage asset:mob Field.Stack.Base set value 0
+        # 難易度比例部分
+            data modify storage asset:mob Field.Stack.Difficulty set value 3
+    # 効果時間
+        # 基礎値
+            data modify storage asset:mob Field.Duration.Base set value 15
+        # 難易度比例部分
+            data modify storage asset:mob Field.Duration.Difficulty set value 0
