@@ -5,7 +5,7 @@
 # @within function asset:artifact/1680.pluvia/trigger/summon_object/random_rotate
 
 # 実行者がMobなら、自身のMobUUIDを入れておく
-    execute if entity @s[tag=Enemy] store result storage api: Argument.FieldOverride.MobUUID int 1 run scoreboard players get @s MobUUID
+    execute if entity @s[tag=Enemy] store result storage api: Argument.FieldOverride.TargetMobUUID int 1 run scoreboard players get @s MobUUID
 
 # 召喚
     data modify storage api: Argument.ID set value 1209

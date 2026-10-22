@@ -23,6 +23,9 @@
     data modify storage asset:object Field.AdditionalMPHeal set value 1d
     data modify storage asset:object Field.UserID set value -1
 
+# TargetMobUUID (いない場合があるので初期値は未設定)
+    # data modify storage asset:object Field.TargetMobUUID set value -1
+
 # 射程
     data modify storage asset:object Field.MaxRange set value 20
     data modify storage asset:object Field.Range set value -1

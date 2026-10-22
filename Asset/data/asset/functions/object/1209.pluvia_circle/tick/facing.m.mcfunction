@@ -4,5 +4,5 @@
 #
 # @within function asset:object/1209.pluvia_circle/tick/
 
-# this.MobUUIDに対してfacing
-    $execute facing entity @e[type=#lib:living_without_player,tag=Enemy,scores={MobUUID=$(MobUUID)},distance=..15] eyes run tp @s ~ ~ ~ ~ ~
+# this.TargetMobUUIDに対してfacing
+    $execute facing entity @e[type=#lib:living_without_player,tag=Enemy,scores={MobUUID=$(TargetMobUUID)},distance=..15] eyes run tp @s ~ ~ ~ ~ ~
