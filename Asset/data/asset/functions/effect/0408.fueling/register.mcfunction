@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text": "発射用意", "color": "#fa9514"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text": "効果中に消費したMP量を推進力に変える"}']
+    data modify storage asset:effect Description set value ['{"text": "効果開始時と終了時のMP差を推進力に変える"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 100
 # スタック (int) (default = API || 1)
@@ -36,6 +36,5 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    data modify storage asset:effect Field.PrevMP set value -1
-    data modify storage asset:effect Field.MPUsage set value 0
+    data modify storage asset:effect Field.InitialMP set value -1
     data modify storage asset:effect Field.Interval set value 20
