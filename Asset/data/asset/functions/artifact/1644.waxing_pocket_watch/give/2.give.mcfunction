@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "朔日の懐中時計", "color": "blue"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "使用してから10秒後、MP変動を計測し、"}', '{"text": "回復値に応じた量のバリアを付与する(最大20)。"}', '{"text": "その空っぽのこころも、やがて満ちていくから。", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "使用してから10秒後、バリアを付与する。"}', '{"text": "MPが使用時と比べて高いほど付与量が増える(最大20)。"}', '{"text": "その空っぽのこころも、やがて満ちていくから。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1

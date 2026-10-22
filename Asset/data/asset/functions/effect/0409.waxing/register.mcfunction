@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text": "満ちゆく時"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text": "効果中に回復したMP量に応じたバリアを付与する"}']
+    data modify storage asset:effect Description set value ['{"text": "効果開始時と終了時のMP差に応じた量のバリアを付与する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 200
 # スタック (int) (default = API || 1)
@@ -36,6 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    data modify storage asset:effect Field.PrevMP set value -1
-    data modify storage asset:effect Field.MPHealed set value 0
     data modify storage asset:effect Field.Interval set value 20
