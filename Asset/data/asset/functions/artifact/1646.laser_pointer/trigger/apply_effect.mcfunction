@@ -10,7 +10,7 @@
     #初回はDurationとMP回復量を設定
     execute if entity @s[tag=!0420.Target] run data modify storage api: Argument.Duration set value 30
     execute if entity @s[tag=!0420.Target] run data modify storage api: Argument.FieldOverride.MPHeal set from storage api: PersistentArgument.AdditionalMPHeal
-    data modify storage api: Argument.FieldOverride.Damage set value 30
+    data modify storage api: Argument.FieldOverride.Damage set value 15
     execute store result storage api: Argument.FieldOverride.OriginID int 1 run scoreboard players get @p[tag=this] UserID
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
