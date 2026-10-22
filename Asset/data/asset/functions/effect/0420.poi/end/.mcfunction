@@ -31,6 +31,9 @@
 # 攻撃したプレイヤーの処理
     execute as @p[tag=0420.Origin] run function asset:effect/0420.poi/end/heal_mp
 
+# 演出
+    playsound entity.allay.hurt hostile @a ~ ~ ~ 1.0 2.0
+
 # リセット
     scoreboard players reset $UserID Temporary
     scoreboard players reset $Stack Temporary
