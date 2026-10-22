@@ -9,8 +9,17 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# ランダムな敵の位置に魔法陣召喚
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..6,sort=random,limit=1] at @s run function asset:artifact/1680.pluvia/trigger/summon_object/random_rotate
+# 円柱Libで敵を探す
+    data modify storage lib: Argument.BoundingCylinder.Radius set value 6.0d
+    data modify storage lib: Argument.BoundingCylinder.Height set value 7d
+    data modify storage lib: Argument.BoundingCylinder.Selector set value "@e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10]"
+    execute positioned ~ ~-3 ~ run function lib:bounding_cylinder/
 
-# 敵がいなかった場合、周囲の適当な位置に出す
-    execute unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..6,limit=1] run function asset:artifact/1680.pluvia/trigger/summon_object/spread
+# 敵がいたら攻撃
+    execute as @e[type=#lib:living_without_player,tag=BoundingCylinder,distance=..10,sort=random,limit=1] at @s run function asset:artifact/1680.pluvia/trigger/summon_object/random_rotate
+
+# 敵がいなかったらランダムに落とす
+    execute unless entity @e[type=#lib:living_without_player,tag=BoundingCylinder,distance=..10,limit=1] run function asset:artifact/1680.pluvia/trigger/summon_object/spread
+
+# リセット
+    tag @e[type=#lib:living_without_player,tag=BoundingCylinder,distance=..10] remove BoundingCylinder
