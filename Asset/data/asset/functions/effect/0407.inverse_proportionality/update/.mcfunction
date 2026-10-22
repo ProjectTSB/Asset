@@ -16,9 +16,7 @@
 
 # マクロからスタック分のmodifierを適用
     execute store result score $Stack Temporary run data get storage asset:context Stack
-    #なぜか値がリセットされているModifierは取得し直す
-    execute store result score $Modifier Temporary run data get storage asset:context this.Modifier 1000
-    execute store result storage asset:temp Args.Modifier double 0.001 run scoreboard players operation $Stack Temporary *= $Modifier Temporary
+    execute store result storage asset:temp Args.Modifier double 0.001 run scoreboard players operation $Stack Temporary *= $DefenseModifier Temporary
     function asset:effect/0407.inverse_proportionality/update/m with storage asset:temp Args
 
 # リセット
