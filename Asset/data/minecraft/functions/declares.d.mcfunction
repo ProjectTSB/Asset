@@ -1114,7 +1114,6 @@
 #   asset_manager:mob/triggers/death/
 #   asset:mob/**
 #   function mob_manager:processing_tag/common_tag/anti_void_action/**
-#   function asset_manager:island/dispel/boss/*
 #   core:tick/player/
 #   player_manager:vanilla_attack
 #   asset_manager:artifact/triggers/**
@@ -1127,14 +1126,15 @@
 #   player_manager:grave/build/*
 #   function asset_manager:effect/tick
 #   function asset:effect/**
+#   function asset_manager:island/purify/boss/*
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/object/_index.d.mcfunction#L35
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/mob/_index.d.mcfunction#L38
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/mob_manager/functions/processing_tag/common_tag/anti_void_action/.mcfunction#L13
-# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/dispel/boss/_index.d.mcfunction#L6
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/.mcfunction#L16
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/spawner/_index.d.mcfunction#L27
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/core/functions/tick/player/post.mcfunction#L11
 # from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/effect/_index.d.mcfunction#L37
+# from https://github.com/ProjectTSB/TheSkyBlessing/blob/master/TheSkyBlessing/data/asset_manager/functions/island/purify/boss/_index.d.mcfunction#L6
 #declare tag this
 
 #> declare
