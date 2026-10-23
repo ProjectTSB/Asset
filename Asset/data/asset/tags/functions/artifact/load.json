@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:artifact/1651.rune_blaster/keep_using_item/0.load",
         "asset:artifact/1607.dimension_gate/trigger/0.load",
         "asset:artifact/1614.wooden_snake_branch/trigger/0.load",
         "asset:artifact/1570.pile_of_accumulated_dust/trigger/0.load",
