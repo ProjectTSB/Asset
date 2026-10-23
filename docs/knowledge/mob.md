@@ -1,3 +1,8 @@
+---
+title: Mob と AJ
+description: MobとAJのライフサイクル、装備・演出のイディオムを扱うときに読む
+---
+
 # Mob と AJ
 
 まず [型・インスタンス・継承モデル](object-model.md) を読む。Mob は `Asset/data/asset/functions/mob/<4桁ID>.<name>/` にある型定義とメソッドの集合で、親の Field やメソッドを継承できる。個別ディレクトリに関数がないことを、振る舞いがないことと解釈しない。
@@ -36,7 +41,7 @@ Mobの無敵演出で使うresistanceの強さは、依存先TheSkyBlessingの `
 
 ## 独自移動とVanillaの移動を切り替える
 
-独自のtp移動とVanillaの移動を切り替える場合は、同じ時間帯に両方が個体を動かさないよう、移動の担当と復帰条件を揃える。被弾時だけNoAIを解除する実装は、通常の移動処理との組み合わせで読む。[Killer Bee の hurt](../../Asset/data/asset/functions/mob/0176.killer_bee/hurt/.mcfunction) は独自score `4W.HurtTime` を20にし、`4W.MoveTime <= 49` のとき `NoAI:0b` にする。[tick](../../Asset/data/asset/functions/mob/0176.killer_bee/tick/.mcfunction) はHurtTimeが非負の間、通常移動のtpを抑え、HurtTimeが0以下になると `NoAI:1b` へ戻す。この例から使えるのは、AIの切替・独自移動の抑制・カウンタによる復帰を組にする構造である。ノックバックを許すためという意図は未確定なので、全MobでNoAIを解除すればノックバックするという規則にはしない。突進等の別分岐も同時に動かないか、対象のhurt/tickを照合する。
+独自のtp移動とVanillaの移動を切り替える場合は、同じ時間帯に両方が個体を動かさないよう、移動の担当と復帰条件を揃える。被弾時だけNoAIを解除する実装は、通常の移動処理との組み合わせで読む。[Killer Bee の hurt](../../Asset/data/asset/functions/mob/0176.killer_bee/hurt/.mcfunction) は独自score `4W.HurtTime` を20にし、`4W.MoveTime <= 49` のとき `NoAI:0b` にする。[tick](../../Asset/data/asset/functions/mob/0176.killer_bee/tick/.mcfunction) はHurtTimeが非負の間、通常移動のtpを抑え、HurtTimeが0以下になると `NoAI:1b` へ戻す。この例から使えるのは、AIの切替・独自移動の抑制・カウンタによる復帰を組にする構造である。ノックバックを許すためという意図は未確定なので、全MobでNoAIを解除すればノックバックするという規則にはしない。突進等の別分岐も同時に動かないか、対象のhurt/tickを照合する。tpで動かす移動の減速は [tp距離を減らして作る減速](notes/motion/tp-deceleration.md)、tp直後の演出の実行位置は [tp後の演出で移動前の実行位置を使う](notes/motion/post-tp-effect-origin.md) を参照する。
 
 ## 変更前の照合
 
