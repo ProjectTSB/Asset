@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "レーザーポインター"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value []
+    data modify storage asset:artifact Lore set value ['{"text": "視点の先の敵を一体ロックオンする。"}', '{"text": "再使用でロックオンを重ね、その回数分ダメージが上昇する(最大10回)。"}', '{"text": "攻撃を重ねがけた分だけ、MP回復量も増える(最大20)。"}', '{"text": "ハイ、ここ注目ポイントです！", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -45,7 +45,7 @@
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
-    data modify storage asset:artifact MPHealWhenHit set value 0.5
+    data modify storage asset:artifact MPHealWhenHit set value 2
 # 神器のクールダウン (int) (オプション)
     data modify storage asset:artifact LocalCooldown set value 100
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
