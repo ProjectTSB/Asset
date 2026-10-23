@@ -14,7 +14,13 @@ Mob／Object の個別 mcfunction は、型定義・継承・メソッド・イ�
 
 同じ `register`、`alias`、`tick` という名前でも、カテゴリをまたいで意味を一律に解釈しない。
 
-個別Asset間の連携は公開API・共通契約を通す（ユーザー方針）。相手の内部関数、所有するタグ・score・storage・modifierを直接扱わない。Artifact→EffectもEffect→Artifactも同じで、`@within` を両者へ広げるだけでは責務の分離にならない。既存の共通APIや継承の呼出契約とは区別する。
+個別Asset間の連携は公開API・共通契約を通し、相手の内部関数、所有するタグ・score・storage・modifierを直接扱う構成は基本的に避ける（ユーザー方針）。Artifact→EffectもEffect→Artifactも同じである。
+
+実装・レビューでは、そのAssetで実現したい振る舞いを先に確認し、本当にその実装でなければ実現できないかを検討する。既存APIの入力・操作・実行時点で要件を満たせるか、各Assetが自身の状態と寿命を管理する構成で実現できるかを現行の契約と照合する。既存コードに同じ直接連携があることや、`@within` で利用可能なことだけを採用理由にしない。
+
+既存APIでは必要な操作を実現できず、Asset間でtag・scoreを共有する場合は、提供側の `_index.d.mcfunction` 等で連携用の識別子を宣言し、`@within` に必要な他Assetの利用箇所をできる限り狭く指定する。直接連携の必要性と、識別子の公開範囲が適切かは別々に確認する。内部状態を広く公開することや、呼ぶためだけに内部関数の可視性を広げることは避ける。既存の共通APIや継承の呼出契約とは区別する。
+
+[『世界』のナイフのObject側宣言](../../Asset/data/asset/functions/object/1066.knife/_index.d.mcfunction) は、`1066.API.UserID` と `1066.API.TimeStop` を必要なArtifact・Effectへ公開する例である。[Artifactの本数判定](../../Asset/data/asset/functions/artifact/0837.the_world_knife/trigger/2.check_condition.mcfunction) は所有者scoreを参照し、[Effectの終了処理](../../Asset/data/asset/functions/effect/0277.the_world/end/remove_tag.mcfunction) は停止タグを外す。Objectの停止・再開を既存API経由では実現できないことが、直接連携を採用する理由である（ユーザー確認済み）。APIで要件を満たせる別の機能にも同じ方式を適用する根拠にはせず、APIの機能が変わった場合も採用条件を見直す。
 
 ## Mob／Object のクラス定義とフィールド
 
