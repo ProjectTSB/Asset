@@ -12,7 +12,7 @@
     execute positioned ~ ~-15 ~ run tag @e[type=#lib:living_without_player,tag=Enemy,distance=..8,sort=random,limit=1] add Target
 
 # Targetの真上にテレポート
-    execute at @e[type=#lib:living_without_player,tag=Target,distance=..30] rotated ~ -90 run function asset:object/1215.miniature_volcano/tick/teleport/at_target
+    execute as @e[type=#lib:living_without_player,tag=Target,distance=..30] at @s rotated ~ -90 run function asset:object/1215.miniature_volcano/tick/teleport/at_target
 
 # Targetがいなかったら適当にワープする
     execute unless entity @e[type=#lib:living_without_player,tag=Target,distance=..30] run function asset:object/1215.miniature_volcano/tick/teleport/no_target
