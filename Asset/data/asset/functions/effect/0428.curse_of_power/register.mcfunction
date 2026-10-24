@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text": "力の呪い", "color": "#a93aae"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text": "被ダメージとMP回復量が大きく低下する"}']
+    data modify storage asset:effect Description set value ['{"text": "被ダメージが大きく上昇し、MP回復量が大きく低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 300
 # スタック (int) (default = API || 1)
