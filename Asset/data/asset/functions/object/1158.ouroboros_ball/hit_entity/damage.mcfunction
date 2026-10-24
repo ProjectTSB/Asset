@@ -9,8 +9,9 @@
     #declare score_holder $DamageHolder
     #declare score_holder $AdditionalDamageLimit
 
-#ヒットした敵のIDを取得
-    execute store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
+#ヒットした敵のIDを取得(対象がExtendedCollisionを持っている場合はForwardTargetMobUUIDを取得)
+    execute if entity @s[tag=!ExtendedCollision] store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
+    execute if entity @s[tag=ExtendedCollision] store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s ForwardTargetMobUUID
 
 # effectの情報を取得
     data modify storage api: Argument.ID set value 361
