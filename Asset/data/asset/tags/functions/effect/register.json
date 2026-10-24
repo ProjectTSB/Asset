@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0428.curse_of_power/_/register",
+        "asset:effect/0427.power_of_curse/_/register",
         "asset:effect/0405.predation_of_tree/_/register",
         "asset:effect/0359.time_ticker_eclipse/_/register",
         "asset:effect/0358.time_ticker_night/_/register",
