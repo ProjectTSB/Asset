@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "呪われし力の結晶", "color": "#a93aae"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate": "装備中、攻撃力が%s、MP回復量が%s上昇するが、", "with": [{"text": "10%", "color": "green"}, {"text": "20%", "color": "green"}]}', '{"translate": "MPが0になるか、装備を解除すると5秒の間耐性とMP回復量が%s低下する。", "with": [{"text": "20%", "color": "red"}]}', '{"text": "隙を見せるな。呪われてしまうぞ。", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate": "装備中、攻撃力が%s、MP回復量が%s上昇するが、", "with": [{"text": "10%", "color": "green"}, {"text": "20%", "color": "green"}]}', '{"translate": "MPが0になるか、装備を解除すると15秒の間耐性とMP回復量が%s低下する。", "with": [{"text": "20%", "color": "red"}]}', '{"text": "隙を見せるな。呪われてしまうぞ。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
