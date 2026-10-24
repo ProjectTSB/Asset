@@ -4,11 +4,6 @@
 #
 # @within function asset:artifact/1648.cursed_power_stone/dis_equip/2.check_condition
 
-# MPを消費
-    data modify storage api: Argument.Fluctuation set value -150
-    data modify storage api: Argument.DisableLog set value true
-    function api:mp/fluctuation
-
 # Effect427削除
     data modify storage api: Argument.ID set value 427
     function api:entity/mob/effect/remove/from_id
