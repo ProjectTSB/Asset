@@ -9,9 +9,9 @@
 # ID (int)
     data modify storage asset:effect ID set value 422
 # 名前 (TextComponentString)
-    data modify storage asset:effect Name set value '{"text": "陽の廻り"}'
+    data modify storage asset:effect Name set value '{"text": "陽の廻り", "color": "#ff9b1b"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value []
+    data modify storage asset:effect Description set value ['{"text": "火属性与ダメージが大きく上昇するが、水属性与ダメージと雷属性与ダメージが低下する"}']
 # 効果時間 (int) (default = API || error)
     data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
