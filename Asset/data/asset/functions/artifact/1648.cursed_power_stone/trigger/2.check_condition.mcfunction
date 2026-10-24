@@ -16,11 +16,6 @@
 # 既に装備しているならキャンセル
     tag @s[tag=1648.Equipping] remove CanUsed
 
-# Effect428が付与されていてもキャンセル
-    data modify storage api: Argument.ID set value 428
-    function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run tag @s remove CanUsed
-
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1648.cursed_power_stone/trigger/3.main
 
