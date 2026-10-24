@@ -18,7 +18,7 @@
     execute if score @s General.Object.Tick matches 16 run data modify entity @s item set from storage asset:context this.Item
 
 # (N+1)tick以降は追尾をする
-    execute if score @s General.Object.Tick matches 16.. run function asset:object/1215.miniature_volcano/tick/chase
+    execute if score @s General.Object.Tick matches 16..25 run function asset:object/1215.miniature_volcano/tick/chase
 
 # super.tick
     execute at @s unless score @s General.Object.Tick matches 10..15 run function asset:object/super.tick
