@@ -60,6 +60,10 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 [Deep Azure の条件判定](../../Asset/data/asset/functions/artifact/1256.deep_azure/trigger/2.check_condition.mcfunction) は、チャージEffect 329があれば共通checkより先に [charge](../../Asset/data/asset/functions/artifact/1256.deep_azure/trigger/charge.mcfunction) へ進む。初回のcommon useが始めるcooldownを、チャージ継続のたびに判定し直さないためである。Duration/MaxDurationが1のEffectをusing_itemで再付与し、再付与が途切れた後の [end](../../Asset/data/asset/functions/effect/0329.charge_of_deep_azure/end/.mcfunction) を攻撃Effectへの移行に使う。[re-given](../../Asset/data/asset/functions/effect/0329.charge_of_deep_azure/re-given/.mcfunction) は `PreviousField` からダメージと蓄積値を引き継ぐ。開始・継続・終了を別の処理として読み、継続側に初回と同じMP消費やcooldown判定を一律追加しない。入力から終了イベントまでの実際の時刻は本体のEffect処理順にも依存する。
 
+### 持ち替えでチャージを引き継がせない
+
+チャージを使用中の神器に限定する場合、発射時だけでなく装備解除時にもチャージ用Effectを削除する。[Volt-Raveの装備解除](../../Asset/data/asset/functions/artifact/1619.volt_rave/dis_equip/2.main.mcfunction) はmainhandから外したときにEffect 394の削除を要求し、発射処理は呼ばない。同IDの別個体へ持ち替える場合もチャージを解除する。持ち替え検出とdis_equipのcontextは、依存先TheSkyBlessingの `architecture.md`「装備は前回との差から有効状態を組み直す」を参照する。
+
 ### 共有効果は最後の所持がなくなったときに解除する
 
 複数の装備が一つの効果を共有する場合、解除イベント1回を「効果の所有者がいなくなった」と扱わない。変更後の装備集合で寄与が残っているかを判定する。
