@@ -16,5 +16,8 @@
     execute if entity @s[tag=1648.Equipping] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
+# 演出(装備している場合のみ)
+    execute if entity @s[tag=1648.Equipping] run playsound block.respawn_anchor.set_spawn player @a ~ ~ ~ 1.0 2.0
+
 # リセット
     scoreboard players reset $Count Temporary

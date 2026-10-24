@@ -16,3 +16,7 @@
     data modify storage api: Argument.Amount set value -0.2d
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/mp_heal/add
+
+# 演出
+    playsound entity.warden.attack_impact player @a ~ ~ ~ 1.5 2.0
+    playsound ogg:ambient.cave.cave4 player @a ~ ~ ~ 2.0 2.0
