@@ -9,7 +9,8 @@
     #declare score_holder $Range
 
 #ヒットした敵のIDを取得
-    execute store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
+    execute if entity @s[tag=!ExtendedCollision] store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s MobUUID
+    execute if entity @s[tag=ExtendedCollision] store result storage asset:context this.HitEnemyID int 1 run scoreboard players get @s ForwardTargetMobUUID
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
