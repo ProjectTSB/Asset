@@ -31,8 +31,13 @@
     data modify storage api: Argument.DisableLog set value true
     function api:mp/fluctuation
     scoreboard players operation @s R.MPCharge += $Fluc Temporary
-# チャージ完了時以外で最大値を吸収できなかったらロックする
-    execute unless score @s R.MPCharge = $Cap Temporary if score $Fluc Temporary < $Consumption Temporary run tag @s add R.LockCharge
+# 1段階目以外で現在MPがなくなったらロックする
+    execute unless data storage asset:temp R{ChargeState:0} unless score @s R.MPCharge = $Cap Temporary if score $Fluc Temporary < $Consumption Temporary run tag @s add R.LockCharge
+
+# 演出
+    execute if entity @s[tag=R.LockCharge] run playsound block.iron_door.open master @a ~ ~ ~ 1 1.8
+
+
 # リセット
     scoreboard players reset $Fluc Temporary
     scoreboard players reset $CurrentMP Temporary
