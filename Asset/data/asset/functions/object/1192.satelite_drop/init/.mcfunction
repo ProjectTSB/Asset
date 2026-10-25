@@ -13,5 +13,8 @@
 # 即発射の場合はIdleタグを外す
     execute if data storage asset:context this{LaunchInstantly:true} run tag @s remove 1192.Idle
 
+# super.init
+    function asset:object/super.init
+
 # 演出
     playsound entity.drowned.swim player @a ~ ~ ~ 1 1.4

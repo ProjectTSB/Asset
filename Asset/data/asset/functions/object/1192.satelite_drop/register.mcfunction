@@ -24,6 +24,4 @@
     #発射体のField
     data modify storage asset:object Field.Speed set value 3
     data modify storage asset:object Field.Range set value 30
-    data modify storage asset:object Field.MovePerStep set value 0.5
-    data modify storage asset:object Field.RemainingRange set value 30
     data modify storage asset:object Field.Damage set value 0
