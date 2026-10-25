@@ -20,5 +20,8 @@
     execute as @p[tag=this] run function api:mp/get_current
     execute if data storage api: Return{CurrentMP:0} run tag @s add 1217.SummonsAdditional
 
+# 演出
+    playsound block.bubble_column.upwards_inside neutral @a ~ ~ ~ 2.0 2.0
+
 # リセット
     scoreboard players reset $UserID Temporary

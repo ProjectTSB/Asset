@@ -20,3 +20,7 @@
     #追撃の威力
     data modify storage api: Argument.FieldOverride.AdditionalDamage set value 150
     execute anchored eyes positioned ^ ^-0.4 ^ run function api:object/summon
+
+# 演出
+    playsound entity.squid.squirt player @a ~ ~ ~ 1.5 1.5
+    playsound entity.slime.attack player @a ~ ~ ~ 1.0 1.0

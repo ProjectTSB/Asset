@@ -14,5 +14,8 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,limit=1] run function api:damage/
     function api:damage/reset
 
+# 演出
+    playsound item.trident.riptide_1 player @a ~ ~ ~ 1.5 2.0
+
 # kill
     function asset:object/call.m {method:kill}
