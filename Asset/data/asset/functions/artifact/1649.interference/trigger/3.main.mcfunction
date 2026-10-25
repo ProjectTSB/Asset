@@ -14,7 +14,7 @@
     #ベースのダメージ
     data modify storage api: Argument.FieldOverride.Damage set value 200
     #強化状態の持続時間
-    data modify storage api: Argument.FieldOverride.ReinforcementTimer set value 5
+    data modify storage api: Argument.FieldOverride.ReinforcementTimer set value 10
     #強化状態での威力バフ
     data modify storage api: Argument.FieldOverride.DamageMultiplier set value 1.5
     #追撃の威力
