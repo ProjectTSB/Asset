@@ -16,7 +16,7 @@
     execute as @e[type=marker,tag=SpreadMarker,limit=1] at @r[gamemode=!spectator,distance=..256] run function lib:spread_entity/
 
 # その座標にブロックがなければマーカーを置く
-    execute at @e[type=marker,tag=SpreadMarker,limit=1] if block ~ ~ ~ #lib:no_collision run summon marker ~ ~ ~ {Tags:["C5.Marker","C5.Marker.SummonPoint"]}
+    execute at @e[type=marker,tag=SpreadMarker,limit=1] if block ~ ~ ~ #lib:no_collision/ run summon marker ~ ~ ~ {Tags:["C5.Marker","C5.Marker.SummonPoint"]}
 
 # リセット
     kill @e[type=marker,tag=SpreadMarker,limit=1]

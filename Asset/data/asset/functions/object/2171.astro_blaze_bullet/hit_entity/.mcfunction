@@ -4,21 +4,14 @@
 #
 # @within asset:object/alias/2171/hit_entity
 
-# 引数の設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 18.0f
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "Fire"
-    # デスログ
-        data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sの身体は%2$sの弾幕に貫かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
-    # 補正functionを実行
-        data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
-        function api:damage/modifier_manual
-    # ダメージを与える
-        execute positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
-# リセット
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Fire"
+    data modify storage api: Argument.DeathMessage append value '[{"translate": "%1$sの身体は%2$sの弾幕に貫かれてしまった","with":[{"selector":"@s"},{"nbt":"Return.AttackerName","storage":"lib:","interpret":true}]}]'
+    data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
+    function api:damage/modifier_manual
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @p[tag=!PlayerShouldInvulnerable,dx=0] run function api:damage/
     function api:damage/reset
 
 # 消失

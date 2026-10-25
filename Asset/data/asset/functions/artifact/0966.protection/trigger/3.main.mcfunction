@@ -28,7 +28,7 @@ execute if predicate lib:random_pass_per/30 run function asset:artifact/0966.pro
     data modify storage api: Argument.UUID set value [I;1,1,966,2]
     data modify storage api: Argument.Amount set value -1
     data modify storage api: Argument.Operation set value "multiply"
-    execute unless entity @s[scores={QU.Protected=0..}] run function api:modifier/mp_regen/add
+    execute unless entity @s[scores={QU.Protected=0..}] run function api:modifier/mp_heal/add
 
 # 移動速度-50%
     attribute @s generic.movement_speed modifier add 1-0-1-0-3c600000002 "protection" -0.5 multiply

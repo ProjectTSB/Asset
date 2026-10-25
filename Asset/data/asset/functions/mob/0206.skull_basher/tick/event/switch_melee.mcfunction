@@ -5,7 +5,7 @@
 # @within function asset:mob/0206.skull_basher/tick/
 
 # VFX
-    playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
+    playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
 
 # 持ち替え
     item replace entity @s weapon.mainhand with minecraft:iron_axe{AttributeModifiers:[]}

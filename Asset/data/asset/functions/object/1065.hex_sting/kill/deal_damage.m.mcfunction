@@ -14,5 +14,5 @@ $execute store result storage api: Argument.Damage double 0.01 run data get stor
 data modify storage api: Argument.AttackType set value "Physical"
 data modify storage api: Argument.ElementType set value "Fire"
 execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-$execute positioned ~-$(RangeMax) ~-$(RangeMax) ~-$(RangeMax) as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=$(RangeMaxD),dy=$(RangeMaxD),dz=$(RangeMaxD)] positioned ~$(RangeMax) ~$(RangeMax) ~$(RangeMax) $(RangeMinSubCommand)run function api:damage/
+$execute positioned ~-$(RangeMax) ~-$(RangeMax) ~-$(RangeMax) as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=$(RangeMaxD),dy=$(RangeMaxD),dz=$(RangeMaxD)] positioned ~$(RangeMax) ~$(RangeMax) ~$(RangeMax) $(RangeMinSubCommand)run function api:damage/
 function api:damage/reset

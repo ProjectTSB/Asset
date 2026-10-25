@@ -57,12 +57,14 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/physical",Amount:0.08d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/physical",Amount:0.065d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:2.5d,Operation:"add"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/magic",Amount:-0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/magic",Amount:-0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:196,display:{color:10921638},Trim:{material:"minecraft:quartz",pattern:"minecraft:wayfinder"},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;1,1,1060,3],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:2.5,Operation:0,UUID:[I;1,1,1060,3],Slot:"feet"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:196,display:{color:10921638},Trim:{material:"minecraft:quartz",pattern:"minecraft:wayfinder"},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give

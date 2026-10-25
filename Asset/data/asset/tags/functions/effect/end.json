@@ -1,6 +1,24 @@
 {
     "values": [
         "asset:effect/0300.aigis_vitae/_/end",
+        "asset:effect/0405.predation_of_tree/_/end",
+        "asset:effect/0359.time_ticker_eclipse/_/end",
+        "asset:effect/0358.time_ticker_night/_/end",
+        "asset:effect/0357.time_ticker_day/_/end",
+        "asset:effect/0400.dual_rhythm_boost/_/end",
+        "asset:effect/0399.dual_rhythm_guard/_/end",
+        "asset:effect/0371.tsukimi/_/end",
+        "asset:effect/0355.heart_gap/_/end",
+        "asset:effect/0354.protection_of_courage/_/end",
+        "asset:effect/0348.cool_feeling/_/end",
+        "asset:effect/0356.dolphin_blessing/_/end",
+        "asset:effect/0302.safety_check_complete/_/end",
+        "asset:effect/0346.lunatic_time/_/end",
+        "asset:effect/0360.calamity_bind/_/end",
+        "asset:effect/0345.topaz_protection/_/end",
+        "asset:effect/0342.prayer_amidst_blight/_/end",
+        "asset:effect/0340.endless_thirst/_/end",
+        "asset:effect/0350.yuzu/_/end",
         "asset:effect/0025.levitation/_/end",
         "asset:effect/0621.loyalty_shield/_/end",
         "asset:effect/0653.absolute_drive/_/end",
@@ -20,7 +38,6 @@
         "asset:effect/0238.raimei/_/end",
         "asset:effect/0321.craving_recoil/_/end",
         "asset:effect/0192.jump_boost/_/end",
-        "asset:effect/0317.aurora_speed/_/end",
         "asset:effect/0316.aurora_slash/_/end",
         "asset:effect/0315.charge_of_aurora_scythe/_/end",
         "asset:effect/0318.arbit/_/end",
@@ -33,7 +50,6 @@
         "asset:effect/0271.ghostly_texture/_/end",
         "asset:effect/0304.residue_of_pumpkin/_/end",
         "asset:effect/0191.night_vision/_/end",
-        "asset:effect/0310.angel_wing/_/end",
         "asset:effect/0291.mine_soul/_/end",
         "asset:effect/0286.dont_hit_me/_/end",
         "asset:effect/0308.healer_trance/_/end",
@@ -48,7 +64,6 @@
         "asset:effect/0030.wither/_/end",
         "asset:effect/0029.poison/_/end",
         "asset:effect/0618.soaked/_/end",
-        "asset:effect/0067.slowness/_/end",
         "asset:effect/0017.slowness/_/end",
         "asset:effect/0202.sheep_blessing/_/end",
         "asset:effect/0204.void_transaction/_/end",
@@ -102,6 +117,7 @@
         "asset:effect/0125.levitation/_/end",
         "asset:effect/0277.the_world/_/end",
         "asset:effect/0007.defense_base_debuff/_/end",
-        "asset:effect/0258.spirit_melody/_/end"
+        "asset:effect/0258.spirit_melody/_/end",
+        "asset:effect/0406.ocean_grace/_/end"
     ]
 }

@@ -7,7 +7,7 @@
 
 # ヒット判定
     tag @a[tag=!PlayerShouldInvulnerable,distance=..2.8] add 9F.Temp.Target.Attack
-    execute as @a[tag=9F.Temp.Target.Attack] at @s if block ~ ~-1 ~ #lib:no_collision run tag @s remove 9F.Temp.Target.Attack
+    execute as @a[tag=9F.Temp.Target.Attack] at @s if block ~ ~-1 ~ #lib:no_collision/ run tag @s remove 9F.Temp.Target.Attack
 
 # TODO:ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.LowKick

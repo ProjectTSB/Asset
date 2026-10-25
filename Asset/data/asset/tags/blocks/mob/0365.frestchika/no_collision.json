@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "#lib:no_collision",
+        "#lib:no_collision/",
         "minecraft:glass"
     ]
 }

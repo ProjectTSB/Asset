@@ -5,4 +5,3 @@
 # @within function asset:object/2049.lightning_magic/**
     #declare tag 2049.OnGround
     #declare tag 2049.Interval
-    #declare tag 2049.RunOnce

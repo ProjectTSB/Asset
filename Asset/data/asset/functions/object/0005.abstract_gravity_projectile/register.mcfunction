@@ -17,4 +17,5 @@
 # ID (int)
     data modify storage asset:object ID set value 5
 # フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value
+    data modify storage asset:object Field.Motion set value 1f
+    data modify storage asset:object Field.Tick set value 2147483647

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '[{"text":"人","color":"yellow"},{"text":"が","color":"white"},{"text":"人","color":"dark_red"},{"text":"であるために","color":"white"}]'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"全てのプレイヤーについて","color":"white"},{"text":"失ったHPの40%を回復","color":"light_purple"},{"text":"し、","color":"white"}]','[{"text":"全てのプレイヤーの","color":"white"},{"text":"MPを100回復","color":"dark_purple"},{"text":"する。","color":"white"}]','{"text":"さらに、全てのプレイヤーの","color":"white"}','[{"text":"周囲の敵全てに","color":"white"},{"text":"ダメージ","color":"red"},{"text":"を与える。","color":"white"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"全てのプレイヤーについて","color":"white"},{"text":"失った体力の40%を回復","color":"light_purple"},{"text":"し、","color":"white"}]','[{"text":"全てのプレイヤーの","color":"white"},{"text":"MPを100回復","color":"dark_purple"},{"text":"する。","color":"white"}]','{"text":"さらに、全てのプレイヤーの","color":"white"}','[{"text":"周囲の敵全てに","color":"white"},{"text":"ダメージ","color":"red"},{"text":"を与える。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value

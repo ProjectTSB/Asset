@@ -22,4 +22,4 @@
     execute if score @s General.Object.Tick matches 110 run function asset:object/2093.tutankhamen_death/tick/end
 
 # 足元に何もなければ
-    execute if block ~ ~-0.2 ~ #lib:no_collision run particle minecraft:enchant ~ ~ ~ 0.4 0 0.4 0 10
+    execute if block ~ ~-0.2 ~ #lib:no_collision/ run particle minecraft:enchant ~ ~ ~ 0.4 0 0.4 0 10

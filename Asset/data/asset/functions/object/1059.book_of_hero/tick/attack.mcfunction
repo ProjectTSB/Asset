@@ -11,7 +11,7 @@
     #declare score_holder $Level
 
 # 演出
-    execute at @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run function asset:object/1059.book_of_hero/tick/vfx
+    execute at @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run function asset:object/1059.book_of_hero/tick/vfx
 
 # 変数
     function api:global_vars/game_progress
@@ -38,7 +38,7 @@
 # ダメージ
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
     execute as @p[tag=1059.OwnerPlayer] run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] run function api:damage/
 
 # リセット
     function api:damage/reset

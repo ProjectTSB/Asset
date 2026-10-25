@@ -1,0 +1,10 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "2002.DuplicateHitProtectionMixin": {
+            "min": 1,
+            "max": 1
+        }
+    }
+}

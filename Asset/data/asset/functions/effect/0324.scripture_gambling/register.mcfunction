@@ -36,4 +36,4 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
-    # data modify storage asset:effect Field set value {}
+    data modify storage asset:effect Field.Success set value false

@@ -6,8 +6,8 @@
 
 #> SpreadLibとトゥルタリアの出現位置
 # @private
-#declare tag MeteorSpreadMarker
-#declare tag RW.Marker.SpawnPoint
+    #declare tag MeteorSpreadMarker
+    #declare tag RW.Marker.SpawnPoint
 
 # 自分のエイムパターンで分岐する
     execute if data storage asset:context this{Type:Aim} run function asset:object/2028.lastboss_meteor/init/aiming_summon/

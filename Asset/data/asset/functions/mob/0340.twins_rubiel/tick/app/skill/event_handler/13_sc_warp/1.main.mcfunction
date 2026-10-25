@@ -109,9 +109,9 @@
 # アニメーション再生 (長さ：36tick)
     execute if score @s 9G.AnimationTimer matches 140 run function asset:mob/0340.twins_rubiel/tick/app/skill/event_handler/13_sc_warp/3.5.play_end_animation
 # 演出
-    execute if score @s 9G.AnimationTimer matches 140 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
-    execute if score @s 9G.AnimationTimer matches 144 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
-    execute if score @s 9G.AnimationTimer matches 148 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9G.AnimationTimer matches 140 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9G.AnimationTimer matches 144 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9G.AnimationTimer matches 148 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
     execute if score @s 9G.AnimationTimer matches 176 run playsound ogg:item.trident.return1 hostile @a ~ ~ ~ 2 1.5
     execute if score @s 9G.AnimationTimer matches 176 run particle flash ~ ~1 ~ 0 0 0 0 1
 # 斬撃演出

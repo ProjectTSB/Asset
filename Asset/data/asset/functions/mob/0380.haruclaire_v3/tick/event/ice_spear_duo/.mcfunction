@@ -18,15 +18,15 @@
         execute if score @s AK.EventTimer matches 34 at @s rotated ~ 0 run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear_duo/summon_attack_pos
         execute if score @s AK.EventTimer matches 35 as @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=random] at @s run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear_duo/attack
     # 演出
-        execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 9 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 17 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 30 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 9 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 17 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 30 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 35 at @s run playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1
-        execute if score @s AK.EventTimer matches 30 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 69 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 74 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 81 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 30 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 69 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 74 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 81 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
 
 # 終了
     execute if score @s AK.EventTimer matches 90.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_spear_duo/end

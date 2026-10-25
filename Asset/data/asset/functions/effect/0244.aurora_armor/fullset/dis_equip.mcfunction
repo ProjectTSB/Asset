@@ -8,4 +8,4 @@
     function api:modifier/attack/thunder/remove
 # MP回復
     data modify storage api: Argument.UUID set value [I;1,3,244,0]
-    function api:modifier/mp_regen/remove
+    function api:modifier/mp_heal/remove

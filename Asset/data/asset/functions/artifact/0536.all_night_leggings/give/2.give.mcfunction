@@ -58,11 +58,13 @@
 # 装備時効果 ({ID: int, Visible: boolean}[]) (オプション)
     data modify storage asset:artifact Equipment.Effects set value [{ID:241,Visible:true,IsSetEffect:true}]
 # 装備時ステータス補正 (Component[]) (オプション)
-    data modify storage asset:artifact Equipment.Modifiers set value [{Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}]
+    data modify storage asset:artifact Equipment.Modifiers set value []
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:3d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.movement_speed",Amount:0.20d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Nyaptov", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;1,1,536,4],Slot:"legs"}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
+    data modify storage asset:artifact CustomNBT set value {Unbreakable:1b,HideFlags:253,Enchantments:[{id:"minecraft:protection",lvl:1s}],Trim:{material:"minecraft:iron",pattern:"tsb_armor:534"}}
 
 # 神器の入手用function
     function asset:artifact/common/give

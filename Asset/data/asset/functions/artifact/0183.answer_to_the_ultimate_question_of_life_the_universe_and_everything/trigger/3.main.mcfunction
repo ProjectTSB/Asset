@@ -13,10 +13,10 @@
     particle portal ~ ~1.2 ~ 0 0 0 2 250 force @a
     particle reverse_portal ~ ~1.2 ~ 0 0 0 2 250 force @a
     playsound entity.elder_guardian.death player @s ~ ~ ~ 1 0 1
-    tellraw @s ["* ",{"selector": "@s"},{"text": "は "},{"text": "\"750万年かけて計算された生命、宇宙、\nそして万物についての究極の疑問の答え\"","color": "light_purple"},{"text": "を知り、不思議な力を得た…！"}]
+    execute as @a run tellraw @s ["* ",{"selector": "@s"},{"text": "は "},{"text": "\"750万年かけて計算された生命、宇宙、\nそして万物についての究極の疑問の答え\"","color": "light_purple"},{"text": "を知り、不思議な力を得た…！"}]
 
 # Effectを付与
     data modify storage api: Argument.ID set value 217
     data modify storage api: Argument.Stack set value 42
-    function api:entity/mob/effect/give
+    execute as @a run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

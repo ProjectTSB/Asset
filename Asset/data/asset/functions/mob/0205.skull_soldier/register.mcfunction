@@ -10,7 +10,7 @@
 # 名前 (TextComponentString) (オプション)
     data modify storage asset:mob Name set value '{"text":"スカルソルジャー"}'
 # Mobの説明文 (TextComponentString[]) (オプション)
-    data modify storage asset:mob Lore set value ['{"text":"弓と斧を扱うスケルトン。","color":"white"}','{"text":"遠距離の的には弓を使い、近接戦闘では斧を取り出す。","color":"white"}','{"text":"だがあまり賢くはなく、自ら交戦距離を変えようとはしない。","color":"white"}']
+    data modify storage asset:mob Lore set value ['{"text":"弓と斧を扱うスケルトン。","color":"white"}','{"text":"遠距離の敵には弓を使い、近接戦闘では斧を取り出す。","color":"white"}','{"text":"だがあまり賢くはなく、自ら交戦距離を変えようとはしない。","color":"white"}']
 # 武器
     # メインハンド (Compound(Item)) (オプション)
         data modify storage asset:mob Weapon.Mainhand set value {id:"minecraft:stone_axe",Count:1b}

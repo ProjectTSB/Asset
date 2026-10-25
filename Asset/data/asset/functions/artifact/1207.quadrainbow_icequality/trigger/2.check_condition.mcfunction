@@ -17,7 +17,7 @@
 # 他にアイテム等確認する場合はここに書く
     function asset:artifact/1207.quadrainbow_icequality/trigger/solve_inequality
     # [{"text":"HP[%]","color":"white"},{"text":"\\u0002","font":"space"},{"text":"≦","color":"white"},{"text":"\\u0002","font":"space"},{"text":"-0.012*MP[%]^2+130を満たす","color":"white"}]
-    execute if entity @s[tag=CanUsed] if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tellraw @s {"text":"","color":"red","extra":[{"text":"発動条件を満たしていません:"},{"score":{"name":"$XJ.HealthPer","objective":"Temporary"}},{"text":"\\u0002","font":"space"},{"text":"≰"},{"text":"\\u0002","font":"space"},{"text":"-0.012 * "},{"score":{"name":"$XJ.MPPer","objective":"Temporary"}},{"text":"^2 + 130"}]}
+    execute if entity @s[tag=CanUsed] if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tellraw @s {"text":"","color":"red","extra":[{"text":"発動条件を満たしていません: "},{"score":{"name":"$XJ.HealthPer","objective":"Temporary"}},{"text":"\u0002","font":"space"},{"text":"≰"},{"text":"\u0002","font":"space"},{"text":"-0.012 * "},{"score":{"name":"$XJ.MPPer","objective":"Temporary"}},{"text":"^2 + 130"}]}
     execute if score $XJ.Eval Temporary <= $XJ.HealthPer Temporary run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する

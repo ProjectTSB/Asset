@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"翡翠の鎧","color":"#38b48b"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['[{"text":"美しい渓流で取れた翡翠で作られた鎧。","color":"#38B48B"}]','[{"text":"装着者は水の加護を得る。","color":"#38B48B"}]']
+    data modify storage asset:artifact Lore set value ['[{"text":"美しい渓流で取れた翡翠で作られた鎧。","color":"#8bd6bc"}]','[{"text":"装着者は水の加護を得る。","color":"#8bd6bc"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value
     # data modify storage asset:artifact ConsumeItem.Count set value
@@ -57,11 +57,13 @@
     data modify storage asset:artifact Equipment.Modifiers set value []
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"attack/water",Amount:0.04d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"defense/water",Amount:0.05d,Operation:"multiply_base"}
-    data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_regen",Amount:0.04d,Operation:"multiply_base"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_mp",Amount:10,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor",Amount:3.5d,Operation:"add"}
+    data modify storage asset:artifact Equipment.Modifiers append value {Type:"generic.armor_toughness",Amount:1d,Operation:"add"}
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:3716235},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.5,Operation:0,UUID:[I;1,1,775,6],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1,Operation:0,UUID:[I;1,1,775,6],Slot:"head"}]}
+    data modify storage asset:artifact CustomNBT set value {HideFlags:68,display:{color:3716235},Unbreakable:1b}
 
 # 神器の入手用function
     function asset:artifact/common/give

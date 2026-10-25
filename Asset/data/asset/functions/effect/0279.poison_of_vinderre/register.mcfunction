@@ -36,4 +36,5 @@
     data modify storage asset:effect StackVisible set value false
 
 # フィールド
+    data modify storage asset:effect Field.Tick set value 20
     # data modify storage asset:effect Field.UserID set value

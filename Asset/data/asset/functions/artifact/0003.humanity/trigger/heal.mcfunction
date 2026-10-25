@@ -5,12 +5,11 @@
 # @within function asset:artifact/0003.humanity/trigger/3.main
 
 # 演出
-    title @a title {"text":"HUMANITY RESTORED","color":"dark_aqua"}
+    title @s title {"text":"HUMANITY RESTORED","color":"dark_aqua"}
     playsound block.enchantment_table.use player @s ~ ~ ~ 1 0 1
 
 # 回復する
-    function api:modifier/max_health/get
-    data modify storage api: Argument.Heal set from storage api: Return.MaxHealth
+    execute store result storage api: Argument.Heal double 0.01 run attribute @s generic.max_health get 100
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/

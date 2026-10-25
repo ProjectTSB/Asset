@@ -52,4 +52,4 @@
     tag @s remove 9G.Skill.Sync.Throw
 
 # 終了
-    tag @e[type=item_display,tag=9G.ModelRoot.Target] remove 9F.ModelRoot.Target
+    tag @e[type=item_display,tag=9G.ModelRoot.Target] remove 9G.ModelRoot.Target

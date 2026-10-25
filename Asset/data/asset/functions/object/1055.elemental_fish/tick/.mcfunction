@@ -36,13 +36,13 @@
     execute if data storage asset:context this{Element:Water} positioned ^ ^ ^-0.3 run particle dust 0 0.667 1 0.7 ~ ~ ~ 0.1 0.1 0.1 0 1 force @a[distance=..40]
 
 # 付近に敵がいるならスコア増やす
-    execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15] run scoreboard players add @s 1055.Attack 1
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..15] run scoreboard players add @s 1055.Attack 1
 
 # 魔法攻撃
     execute if entity @s[scores={1055.Attack=20..}] rotated ~ 0 positioned ^0.1 ^0.4 ^0.5 run function asset:object/1055.elemental_fish/tick/shoot
 
 # 付近に敵がいないならスコアリセット
-    execute unless entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15] run scoreboard players reset @s 1055.Attack
+    execute unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..15] run scoreboard players reset @s 1055.Attack
 
 # 存在時間
     scoreboard players add @s General.Object.Tick 1

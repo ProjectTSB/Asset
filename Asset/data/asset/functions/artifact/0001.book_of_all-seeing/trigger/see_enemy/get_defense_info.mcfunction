@@ -6,7 +6,7 @@
 
 #> Val
 # @private
-#declare score_holder $Defense
+    #declare score_holder $Defense
 
 # 取得
     execute store result score $Defense Temporary run data get storage asset:temp 01.Def 100

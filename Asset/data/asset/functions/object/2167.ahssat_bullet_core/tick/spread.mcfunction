@@ -2,7 +2,7 @@
 #
 # 弾丸召喚位置調整
 #
-# @within function asset:object/2167.ahssat_bullet_core/tick/
+# @within function asset:object/2167.ahssat_bullet_core/tick/shot_interval
 
 # Markerを召喚
     execute positioned ~ ~ ~ run summon marker ~ ~ ~ {Tags:["2167.Marker"]}

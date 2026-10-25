@@ -30,6 +30,11 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:gravel",Count:16b}
 
+# 取引 下位通貨を泥に
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:mud",Count:16b}
+
 # 取引 下位通貨を粘土ブロックに
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
@@ -59,6 +64,11 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:blackstone",Count:8b}
+
+# 取引 下位通貨を方解石に
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:calcite",Count:8b}
 
 # 取引 下位通貨をクォーツブロックに
     data modify storage asset:trader Trades append value {}
@@ -90,6 +100,11 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:prismarine_shard",Count:16b}
 
+# 取引 下位通貨をエンドロッドに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:end_rod",Count:2b}
+
 # 取引 下位通貨をグロウストーンに
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
@@ -104,6 +119,31 @@ execute unless loaded 38 21 -70 run return 1
     data modify storage asset:trader Trades append value {}
     data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
     data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:shroomlight",Count:2b}
+
+# 取引 下位通貨を黄土色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:ochre_froglight",Count:2b}
+
+# 取引 下位通貨を新緑色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:verdant_froglight",Count:2b}
+
+# 取引 下位通貨を真珠色のフロッグライトに
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:pearlescent_froglight",Count:2b}
+
+# 取引 マグマブロック
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:magma_block",Count:8b}
+
+# 取引 ソウルサンド
+    data modify storage asset:trader Trades append value {}
+    data modify storage asset:trader Trades[-1].BuyA set value {PresetItem:"currency/",Count:1b}
+    data modify storage asset:trader Trades[-1].Sell set value {id:"minecraft:soul_sand",Count:8b}
 
 # 取引 オークの苗木をトウヒの苗木に
     data modify storage asset:trader Trades append value {}

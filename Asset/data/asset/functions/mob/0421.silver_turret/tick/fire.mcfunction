@@ -18,9 +18,6 @@
     execute positioned ^ ^0.75 ^1 as @e[type=silverfish,scores={MobID=422},distance=..0.01] rotated ~ ~-10 run tp @s ^ ^ ^ ~ ~
     execute positioned ^ ^0.75 ^1 as @e[type=silverfish,scores={MobID=422},distance=..0.01] rotated ~ ~-10 run function lib:motion/
 
-# 召喚数記録
-    scoreboard players add @s BP.SummonCount 1
-
 # リセット
     data remove storage lib: Argument
-    scoreboard players set @s General.Mob.Tick 0
+

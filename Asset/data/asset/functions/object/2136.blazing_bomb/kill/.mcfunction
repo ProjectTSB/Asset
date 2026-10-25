@@ -33,7 +33,7 @@
     function api:damage/reset
 
 # 下が地面であれば、座標にアラインして実行
-    execute at @s align xyz positioned ~-0.5 ~1 ~-0.5 if block ~ ~ ~ #lib:no_collision run function asset:object/2136.blazing_bomb/kill/place_aoe
+    execute at @s align xyz positioned ~-0.5 ~1 ~-0.5 if block ~ ~ ~ #lib:no_collision/ run function asset:object/2136.blazing_bomb/kill/place_aoe
 
 # 消失
     kill @s

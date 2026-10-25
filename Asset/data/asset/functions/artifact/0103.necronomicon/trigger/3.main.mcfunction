@@ -24,6 +24,6 @@
         data modify storage api: Argument.AttackType set value "Magic"
     # ダメージを与える
         function api:damage/modifier
-        execute as @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..10] run function api:damage/
+        execute as @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..10] run function api:damage/
 # リセット
     function api:damage/reset

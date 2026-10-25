@@ -14,11 +14,12 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
     function api:damage/reset
 
 # 自身にマインソウル(ID:291)を付与
     data modify storage api: Argument.ID set value 291
+    data modify storage api: Argument.Duration set value 1200
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

@@ -46,7 +46,7 @@
         execute if score @s 93.AnimationTimer matches 38 at @s run playsound entity.wither.shoot hostile @a[distance=..30] ~ ~ ~ 0.5 1.8 0.5
         execute if score @s 93.AnimationTimer matches 38 at @s run playsound entity.guardian.attack hostile @a ~ ~ ~ 2 1.8
         execute if score @s 93.AnimationTimer matches 38 at @s run particle flash ^ ^1 ^ 0 0 0 0 1
-        execute if score @s 93.AnimationTimer matches 61 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 61 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 82 run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.2
         execute if score @s 93.AnimationTimer matches 82 run playsound minecraft:item.trident.return hostile @a ~ ~ ~ 2 1.7
 

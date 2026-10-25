@@ -24,11 +24,11 @@
         execute if score @s 93.AnimationTimer matches 93..97 run tp @s ~ ~0.09 ~ ~ 0
     # 演出
         execute if score @s 93.AnimationTimer matches 34 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
-        execute if score @s 93.AnimationTimer matches 62 run playsound item.armor.equip_leather hostile @a ~ ~ ~ 2 0.7
+        execute if score @s 93.AnimationTimer matches 62 run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 2 0.7
         execute if score @s 93.AnimationTimer matches 68 run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 2 1.4
         execute if score @s 93.AnimationTimer matches 66 positioned ^ ^0.6 ^ rotated ~ ~-90 run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/particle_jump
         execute if score @s 93.AnimationTimer matches 69 positioned ^ ^0.6 ^ rotated ~ ~-90 run function asset:mob/0327.eclael/tick/app.skill_events/37_latter_tensei/particle_jump
-        execute if score @s 93.AnimationTimer matches 84 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+        execute if score @s 93.AnimationTimer matches 84 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
         execute if score @s 93.AnimationTimer matches 120 run playsound item.axe.scrape hostile @a ~ ~ ~ 2 1.7
 
 # 攻撃

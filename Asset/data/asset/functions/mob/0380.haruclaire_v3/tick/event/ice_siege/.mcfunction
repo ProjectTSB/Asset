@@ -17,8 +17,8 @@
         execute if score @s AK.EventTimer matches 1..15 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
         execute if score @s AK.EventTimer matches 53..57 at @s positioned ~ ~0.1 ~ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 12 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 32 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 12 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 32 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 57 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 57 at @s run particle electric_spark ^-0.6 ^3 ^ 0 0 0 0.5 30
     # 攻撃
@@ -37,7 +37,7 @@
         execute if score @s AK.EventTimer matches 58 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=arbitrary,limit=1] run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/attack
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 76.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 76.. if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 91.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_siege/end

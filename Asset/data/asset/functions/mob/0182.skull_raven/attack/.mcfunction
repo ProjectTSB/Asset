@@ -8,7 +8,7 @@
     execute unless data storage asset:context Attack{IsVanilla:true} run return fail
 
 # 演出
-    execute at @p[tag=Victim,distance=..60] run particle minecraft:lava ~ ~0.5 ~ 0.8 0.8 0.8 0.1 20 normal @p
+    execute at @p[tag=Victim,distance=..60] run particle minecraft:lava ~ ~0.5 ~ 0.8 0.8 0.8 0.1 20 normal @a
     execute at @p[tag=Victim,distance=..60] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 0.8 0.8 0
 
 # ハードなら打ち上げ

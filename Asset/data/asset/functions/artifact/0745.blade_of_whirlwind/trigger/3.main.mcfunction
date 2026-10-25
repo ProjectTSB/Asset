@@ -15,7 +15,7 @@
     #declare score_holder $Damage
 
 # 演出
-    execute at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function asset:artifact/0745.blade_of_whirlwind/trigger/4.vfx
+    execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function asset:artifact/0745.blade_of_whirlwind/trigger/4.vfx
 
 # 移動速度を取得する
     execute store result score $Speed Temporary run attribute @s generic.movement_speed get 100000
@@ -32,7 +32,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..6] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..6] run function api:damage/
 # 自身の移動速度が 100% 以上の時に実行
     execute if score $Speed Temporary matches 1.. run function asset:artifact/0745.blade_of_whirlwind/trigger/5.knockback
 

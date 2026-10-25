@@ -57,7 +57,7 @@
     execute if entity @s[tag=RW.Break] run function asset:mob/1004.tultaria/tick/base_move/break/tick
 
 # 足元が埋まっている間は上にちょっとずつ登る
-    execute unless block ~ ~ ~ #lib:no_collision run tp @s ~ ~0.2 ~
+    execute unless block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~0.2 ~
 
 # リセット
     tag @e[type=item_display,tag=RW.ModelRoot.Target,distance=..64,limit=1] remove RW.ModelRoot.Target

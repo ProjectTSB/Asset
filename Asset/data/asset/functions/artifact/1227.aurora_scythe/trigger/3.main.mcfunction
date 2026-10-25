@@ -17,10 +17,6 @@
     function api:entity/player/get_mp_per
     execute store result score $MPPer Temporary run data get storage api: Return.MPPer 100
 
-# 演出
-    particle dust_color_transition 0.000 1.000 0.886 1 0 0.235 1 ~ ~0.4 ~ 0.25 0.25 0.25 0 15 normal
-    playsound entity.evoker.prepare_summon player @a ~ ~ ~ 0.3 1.4
-
 # チャージ用Effectを付与
 # MPが40%以下でダメージ1.5倍
     data modify storage api: Argument.ID set value 315

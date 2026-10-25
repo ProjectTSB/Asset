@@ -27,3 +27,7 @@
     execute if score $Modifier Temporary matches 1.. run function asset:artifact/0001.book_of_all-seeing/trigger/see_player/value_to_per/plus.m with storage asset:temp 01
     execute if score $Modifier Temporary matches 0 run function asset:artifact/0001.book_of_all-seeing/trigger/see_player/value_to_per/neutral.m with storage asset:temp 01
     execute if score $Modifier Temporary matches ..-1 run function asset:artifact/0001.book_of_all-seeing/trigger/see_player/value_to_per/minus.m with storage asset:temp 01
+
+# リセット
+    scoreboard players reset $Modifier Temporary
+    scoreboard players reset $Decimal Temporary

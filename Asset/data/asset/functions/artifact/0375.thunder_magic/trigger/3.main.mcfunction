@@ -14,7 +14,7 @@
     #declare tag Target
 
 # 前方の敵にTagをつける
-    execute positioned ^ ^ ^7 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7] add Target
+    execute positioned ^ ^ ^7 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..7] add Target
 
 # 敵が居ない場合
     execute positioned ^ ^ ^7 unless entity @e[type=#lib:living,tag=Target,distance=..7] run function asset:artifact/0375.thunder_magic/trigger/damage

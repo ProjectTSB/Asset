@@ -4,12 +4,11 @@
 #
 # @within function asset:mob/alias/46/hurt
 
-# 効果を発動する
-    data modify storage api: Argument.Heal set value 9999f
+# 回復
+    data modify storage api: Argument.Heal set value 9999.9d
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/
-# リセット
     function api:heal/reset
 
 # super 呼び出し

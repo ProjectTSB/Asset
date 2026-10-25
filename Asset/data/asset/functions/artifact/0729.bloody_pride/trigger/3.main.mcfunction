@@ -28,8 +28,7 @@
     execute store result score $Count Temporary if data storage asset:context Items.hotbar[{tag:{TSB:{ID:729}}}]
 
 # 1.5%分を取得(intの都合上100倍している)
-    function api:modifier/max_health/get
-    execute store result score $MaxHP1.5Per Temporary run data get storage api: Return.MaxHealth 1.5
+    execute store result score $MaxHP1.5Per Temporary run attribute @s generic.max_health get 1.5
 
 # 個数分掛け算する
     execute store result score $HealValue Temporary run scoreboard players operation $MaxHP1.5Per Temporary *= $Count Temporary

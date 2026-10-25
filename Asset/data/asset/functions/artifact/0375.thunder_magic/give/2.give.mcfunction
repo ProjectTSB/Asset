@@ -39,7 +39,7 @@
 # 攻撃に関する情報 -範囲攻撃 (string) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "every"
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.AttackRange set value 7
+    data modify storage asset:artifact AttackInfo.AttackRange set value 14
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量

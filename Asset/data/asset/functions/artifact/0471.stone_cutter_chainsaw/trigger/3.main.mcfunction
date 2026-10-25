@@ -4,8 +4,8 @@
 #
 # @within function asset:artifact/0471.stone_cutter_chainsaw/trigger/2.check_condition
 
-# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う auto/feet/legs/chest/head/mainhand/offhandを記載してね
-    function asset:artifact/common/use/auto
+# 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
+    function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
 
@@ -23,8 +23,8 @@
 
     # ヒット
         function api:damage/single_damage_session/open
-        execute positioned ^ ^ ^2 as @e[type=#lib:living,type=!player,tag= D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
-        execute positioned ^ ^ ^2 as @e[type=#lib:living,type=!player,tag=!D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
+        execute positioned ^ ^ ^2 as @e[type=#lib:living_without_player,tag= D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
+        execute positioned ^ ^ ^2 as @e[type=#lib:living_without_player,tag=!D3.Critical,tag=!Uninterferable,distance=..2] at @s if entity @p[tag=this, distance=..4] run function asset:artifact/0471.stone_cutter_chainsaw/trigger/3.2.entity
         function api:damage/single_damage_session/close
 
     # 開放

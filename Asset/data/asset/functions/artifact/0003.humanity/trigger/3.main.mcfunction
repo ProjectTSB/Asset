@@ -14,8 +14,8 @@
     execute if predicate lib:random_pass_per/10 run scoreboard players set @s Temporary 1
 
 # 演出 共通
-    title @a times 20 20 20
-    particle portal ~ ~ ~ 0 0 0 2 250 force @a
+    title @s times 20 20 20
+    particle portal ~ ~ ~ 0 0 0 2 250 force @s
 
 # 処理
     execute if score @s Temporary matches 0 run function asset:artifact/0003.humanity/trigger/heal

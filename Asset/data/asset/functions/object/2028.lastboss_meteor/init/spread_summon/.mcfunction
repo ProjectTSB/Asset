@@ -6,8 +6,8 @@
 
 #> SpreadLibとトゥルタリアの出現位置
 # @private
-#declare tag MeteorSpreadMarker
-#declare tag RW.Marker.SpawnPoint
+    #declare tag MeteorSpreadMarker
+    #declare tag RW.Marker.SpawnPoint
 
 # 拡散用marker召喚
     summon marker ~ ~ ~ {Tags:["MeteorSpreadMarker"]}

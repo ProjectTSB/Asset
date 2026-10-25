@@ -11,6 +11,7 @@
 
 # 自身にマインソウル(ID:291)を付与
     data modify storage api: Argument.ID set value 291
+    data modify storage api: Argument.Duration set value 400
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

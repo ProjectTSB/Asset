@@ -23,9 +23,9 @@
     execute if score @s 7C.Attack matches 100.. run particle minecraft:dust 0.545 0.5 0.655 2 ~ ~0.5 ~ 0.2 0.5 0.2 0 1
 
 # 実行
-    execute if score @s 7C.Attack matches 80 rotated ~ 0 positioned ^2 ^ ^ if block ~ ~ ~ #lib:no_collision run function asset:mob/0264.dark_summoner/tick/summon_minions
-    execute if score @s 7C.Attack matches 90 rotated ~ 0 positioned ^-2 ^ ^ if block ~ ~ ~ #lib:no_collision run function asset:mob/0264.dark_summoner/tick/summon_minions
-    execute if score @s 7C.Attack matches 85 rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ #lib:no_collision run function asset:mob/0264.dark_summoner/tick/summon_minions
+    execute if score @s 7C.Attack matches 80 rotated ~ 0 positioned ^2 ^ ^ if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0264.dark_summoner/tick/summon_minions
+    execute if score @s 7C.Attack matches 90 rotated ~ 0 positioned ^-2 ^ ^ if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0264.dark_summoner/tick/summon_minions
+    execute if score @s 7C.Attack matches 85 rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ #lib:no_collision/ run function asset:mob/0264.dark_summoner/tick/summon_minions
 
 # ポーズ変更
     item replace entity @s[scores={7C.Attack=120}] armor.head with stick{CustomModelData:20214}

@@ -19,7 +19,7 @@
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"block.minecraft.white_wool"}'
     data modify storage asset:artifact ConsumeItem.Count set value 8
-    data modify storage asset:artifact ConsumeItem.Extra set value '"矢 × 1"'
+    data modify storage asset:artifact ConsumeItem.Extra set value '"矢 x 1"'
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照

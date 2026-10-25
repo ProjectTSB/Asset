@@ -14,17 +14,10 @@
     execute positioned ~ ~1 ~ run particle sweep_attack ^ ^ ^2 0 0 0 1 2 normal
     playsound minecraft:item.trident.return hostile @a ~ ~ ~ 1 2
 
-# ダメージを与える
-# 引数の設定
-    # 与えるダメージ
-        data modify storage api: Argument.Damage set value 8
-    # 第一属性
-        data modify storage api: Argument.AttackType set value "Physical"
-    # 第二属性
-        data modify storage api: Argument.ElementType set value "None"
-# 補正functionを実行
+# ダメージ
+    data modify storage api: Argument.Damage set from storage asset:context this.Vanilla.Damage
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "None"
     function api:damage/modifier
-# 対象
     execute as @p[tag=Victim] run function api:damage/
-# リセット
     function api:damage/reset

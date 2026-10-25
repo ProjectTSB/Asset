@@ -5,4 +5,4 @@
 # @within asset:mob/alias/187/summon
 
 # 元となるMobを召喚する
-    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","AlwaysSlowFall"],DeathLootTable:"empty"}
+    summon zombie ~ ~ ~ {Silent:1b,Tags:["MobInit","ProcessCommonTag","AlwaysInvisible","AlwaysSlowFall","AntiBurn"],DeathLootTable:"empty"}

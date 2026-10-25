@@ -12,8 +12,8 @@
     # Transformation : エフェクトの向きと位置。クォータニオンや座標で指定する、あれ。
 
 
-# 実行向きに合わせる
-    tp @s ~ ~ ~ ~ ~
+# 角度が固定されていなければ、実行向きに合わせる
+    execute unless data storage asset:context this{LockRotation:true} run tp @s ~ ~ ~ ~ ~
 
 # mergeを行う
     data modify storage asset:temp 2001.item set from storage asset:context this.Item

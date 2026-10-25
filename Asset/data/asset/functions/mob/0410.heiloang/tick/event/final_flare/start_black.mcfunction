@@ -5,8 +5,7 @@
 # @within asset:mob/0410.heiloang/tick/event/final_flare/
 
 # 割合ダメージ
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Damage double 0.099 run data get storage api: Return.MaxHealth 10
+    execute store result storage api: Argument.Damage double 0.099 run attribute @s generic.max_health get 10
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "Fire"
     data modify storage api: Argument.FixedDamage set value 1b

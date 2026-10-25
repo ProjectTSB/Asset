@@ -14,7 +14,7 @@
 
 # MP回復
     data modify storage api: Argument.UUID set value [I;1,1,967,2]
-    function api:modifier/mp_regen/remove
+    function api:modifier/mp_heal/remove
 
 # 移動速度
     attribute @s generic.movement_speed modifier remove 1-0-1-0-3c700000002

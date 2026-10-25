@@ -9,8 +9,7 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 花火の処理を実行するエンティティを召喚
-    summon marker ~ ~ ~ {Tags:["KH.FireworkCore","Object"]}
-
-# ループ開始
-    schedule function asset:artifact/0737.summer_festival_of_remembrance/trigger/firework_process/core/loop 1t replace
+# Object召喚
+    data modify storage api: Argument.ID set value 1018
+    data modify storage api: Argument.FieldOverride.Tick set value 1200
+    function api:object/summon

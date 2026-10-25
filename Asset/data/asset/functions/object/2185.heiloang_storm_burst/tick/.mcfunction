@@ -13,7 +13,7 @@
 
 # 移動
     execute if entity @s[scores={General.Object.Tick=30..199}] run tp @s ~ ~-1 ~
-    execute if entity @s[scores={General.Object.Tick=..199}] unless block ~ ~-2 ~ #lib:no_collision run function asset:object/2185.heiloang_storm_burst/tick/damage
+    execute if entity @s[scores={General.Object.Tick=..199}] unless block ~ ~-2 ~ #lib:no_collision/ run function asset:object/2185.heiloang_storm_burst/tick/damage
 
 # 竜巻演出
     execute if entity @s[scores={General.Object.Tick=201..358}] run tp @s ~ ~ ~ ~-30 ~

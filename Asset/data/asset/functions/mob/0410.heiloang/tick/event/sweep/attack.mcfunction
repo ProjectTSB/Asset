@@ -2,7 +2,7 @@
 #
 # なぎはらい火炎放射
 #
-# @within function asset:mob/0410.heiloang/tick/event/sweep/attack
+# @within function asset:mob/0410.heiloang/tick/event/sweep/get_attack_position.m
 
 # 演出
     particle explosion ~ ~ ~ 1 1 1 0 1 force

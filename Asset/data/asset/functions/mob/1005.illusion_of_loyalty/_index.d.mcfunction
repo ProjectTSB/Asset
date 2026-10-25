@@ -1,13 +1,16 @@
 #> asset:mob/1005.illusion_of_loyalty/_index.d
 # @private
 
-#> 外部からも呼び出されるタグ
+#> 外部からも呼び出されるタグ - 移動関連
 # @within function
 #   asset:mob/1005.illusion_of_loyalty/**
 #   asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/**
-    # 移動関連
     #declare tag RX.Move.Teleport
-    # スキルリスト
+
+#> 外部からも呼び出されるタグ - スキルリスト
+# @within function
+#   asset:mob/1005.illusion_of_loyalty/**
+#   asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/**
     #declare tag RX.Skill.AimingLaser
     #declare tag RX.Skill.SwordSpin
     #declare tag RX.Skill.HomingShot
@@ -18,16 +21,24 @@
     #declare tag RX.Skill.Thunder
     #declare tag RX.Skill.Thunder.1
     #declare tag RX.Skill.Thunder.2
-    # 行動タグ
+
+#> 外部からも呼び出されるタグ - 行動タグ
+# @within function
+#   asset:mob/1005.illusion_of_loyalty/**
+#   asset:mob/1004.tultaria/tick/skill/illusion_of_loyalty/**
     #declare tag RX.InAction
 
-#> tag
+#> モデルのルート
 # @within function asset:mob/1005.illusion_of_loyalty/**
     #declare tag RX.ModelRoot
     #declare tag RX.ModelRoot.Target
-    # マーカー
+
+#> マーカー
+# @within function asset:mob/1005.illusion_of_loyalty/**
     #declare tag RX.Marker.Aim
-    # Animated Java
+
+#> AJ
+# @within function asset:mob/1005.illusion_of_loyalty/**
     #declare function animated_java:illusion_of_loyalty/animations/neutral_air/tween
     #declare function animated_java:illusion_of_loyalty/animations/attack_magic_1_right/tween
     #declare function animated_java:illusion_of_loyalty/animations/attack_magic_1_left/tween

@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"月のお守り","color":"#FFFFAA"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"装備中、時間をかけてバリアを生成する"}','{"text":"バリアは失われても自動回復し、最大12まで累積する"}','{"text":"異界のウサギ達が身につけていたお守り","color":"gray","italic":true}','{"text":"そのお守りは、月明かりのように淡く光っている","color":"gray","italic":true}']
+    data modify storage asset:artifact Lore set value ['{"text":"装備中、時間をかけてバリアを生成する"}','{"text":"バリアは失われても自動回復し、最大20まで累積する"}','{"text":"異界のウサギ達が身につけていたお守り","color":"gray","italic":true}','{"text":"そのお守りは、月明かりのように淡く光っている","color":"gray","italic":true}']
 # MP以外の消費物 (TextComponentString) (オプション)
     # data modify storage asset:artifact CostText set value
 # 使用回数 (int) (オプション)

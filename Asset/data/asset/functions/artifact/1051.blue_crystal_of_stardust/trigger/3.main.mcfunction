@@ -15,8 +15,7 @@
     function asset:artifact/1051.blue_crystal_of_stardust/trigger/vfx
 
 # 使用者の最大体力の12%分、HealTargetが付与されたプレイヤーを回復
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.12 run data get storage api: Return.MaxHealth 1
+    execute store result storage api: Argument.Heal double 0.12 run attribute @s generic.max_health get
     function api:heal/modifier
     function api:heal/
     function api:heal/reset

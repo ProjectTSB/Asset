@@ -9,7 +9,7 @@
     #declare score_holder $Temp
 
 # 演出
-    particle block redstone_block ~ ~0.8 ~ 0.4 0.6 0.4 0 3 normal @a
+    execute if predicate lib:random_pass_per/10 run particle block redstone_block ~ ~0.8 ~ 0.4 0.6 0.4 0 1 normal @a
 
 # スコア加算
     scoreboard players add @s 601.Tick 1

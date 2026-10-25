@@ -17,7 +17,7 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,type=!player,tag=!Uninterferable,dx=0,limit=1] run function api:damage/
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,limit=1] run function api:damage/
     function api:damage/reset
 
 # JumpBoost:trueなら跳躍力上昇を付与

@@ -4,14 +4,24 @@
 #
 # @within function asset:mob/alias/261/tick
 
-# タグを持たないならホーミングじみた移動
-    execute if entity @s[tag=!79.Ready] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s feet positioned as @s run tp @s ^ ^ ^0.1 ~ ~
+# プレイヤーが適正距離にいたらReadyタグを付与
+    execute unless entity @s[tag=79.Ready] if entity @p[gamemode=!spectator,distance=7..10] run tag @s add 79.Ready
 
-# タグを持っているならその場でプレイヤー追尾
-    execute if entity @s[tag=79.Ready] facing entity @p feet positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-600 facing entity @s feet positioned as @s run tp @s ^ ^ ^ ~ ~
+# 適正距離にいない場合、フィールドで遠近の情報を管理する
+    execute unless entity @s[tag=79.Ready] if entity @p[gamemode=!spectator,distance=..7] run data modify storage asset:context this.Distance set value "Near"
+    execute unless entity @s[tag=79.Ready] unless entity @p[gamemode=!spectator,distance=..10] run data modify storage asset:context this.Distance set value "Far"
 
-# プレイヤーが一定の距離にいたらスコアを付与
-    execute if entity @p[gamemode=!spectator,distance=..8] unless score @s 79.Time matches -2147483648..2147483647 run scoreboard players set @s 79.Time 0
+# Readyタグがなければsuper.tick
+    execute unless entity @s[tag=79.Ready] run function asset:mob/super.tick
 
-# スコアを持っているなら実行
-    execute if score @s 79.Time matches 0.. run function asset:mob/0261.laser_eye_mk2/tick/3.ready
+# Readyタグがない && プレイヤーが近い && 後ろにブロックがあって後退できない なら発射準備に移る
+    execute if entity @s[tag=!79.Ready] at @s if data storage asset:context this{Distance:"Near"} anchored eyes positioned ^ ^ ^ unless block ^ ^ ^-1 #lib:no_collision/ anchored feet at @s run tag @s add 79.Ready
+
+# Readyタグがあるときは発射準備
+    execute if entity @s[tag=79.Ready] run function asset:mob/0261.laser_eye_mk2/tick/ready
+
+# 毎tickのattribute変更を対策するために前tickの距離の情報を保存しておく
+    execute if data storage asset:context this.Distance run data modify storage asset:context this.PreDistance set from storage asset:context this.Distance
+
+# リセット
+    data remove storage asset:context this.Distance

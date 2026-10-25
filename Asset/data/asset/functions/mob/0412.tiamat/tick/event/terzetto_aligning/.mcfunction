@@ -58,8 +58,8 @@
     # アダマントスパイク
         # 詠唱
             # アニメーション再生
-                execute if score @s BG.EventTimer matches 471 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_0_cast_start
-                execute if score @s BG.EventTimer matches 490 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_1_casting
+                execute if score @s BG.EventTimer matches 471 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_7_cast_start_breath
+                execute if score @s BG.EventTimer matches 490 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/3_8_casting_breath
                 execute if score @s BG.EventTimer matches 735 as @e[type=item_display,tag=BG.ModelRoot,sort=nearest,limit=1] run function asset:mob/0412.tiamat/tick/animated_java/play/4_breath
             # 攻撃
                 execute if score @s BG.EventTimer matches 490 at @e[type=marker,tag=BE.CenterPosition] facing entity @s feet rotated ~ 0 run function asset:mob/0412.tiamat/tick/event/terzetto_aligning/summon_attack_position

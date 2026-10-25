@@ -50,9 +50,9 @@
     execute if score @s 1A.LifeTime matches 2230 run tag @s remove 1A.LaserDirection4
 
 # メイジをさよならする (大爆発させてこんな時間まで倒せてないやつを消し炭にしようかと思ったけど、流石に自重。)
-    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 run tp @e[type=zombie,scores={MobID=187},dx=19,dy=4,dz=19,sort=nearest,limit=1] ~ -100 ~
-    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 run tp @e[type=zombie,scores={MobID=189},dx=19,dy=4,dz=19,sort=nearest,limit=1] ~ -100 ~
-    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 run tp @e[type=zombie,scores={MobID=190},dx=19,dy=4,dz=19,sort=nearest,limit=1] ~ -100 ~
+    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 as @e[type=zombie,scores={MobID=187},dx=19,dy=4,dz=19,sort=nearest,limit=1] run function api:mob/remove
+    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 as @e[type=zombie,scores={MobID=189},dx=19,dy=4,dz=19,sort=nearest,limit=1] run function api:mob/remove
+    execute if score @s 1A.LifeTime matches 2380 positioned ~-10 ~ ~-10 as @e[type=zombie,scores={MobID=190},dx=19,dy=4,dz=19,sort=nearest,limit=1] run function api:mob/remove
 
 # 爆発演出
     scoreboard players operation $IntervalTime Temporary = @s 1A.LifeTime

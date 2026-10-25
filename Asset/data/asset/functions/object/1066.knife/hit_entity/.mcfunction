@@ -10,7 +10,7 @@
     #declare tag 1066.TargetCandidate
 
 # ヒット対象候補にタグを付ける
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,dx=0] run tag @s add 1066.TargetCandidate
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0] run tag @s add 1066.TargetCandidate
 
 # ダメージ与える
     data modify storage api: Argument.Damage set from storage asset:context this.Damage

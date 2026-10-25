@@ -27,7 +27,7 @@
         execute if score @s AK.EventTimer matches 78..84 at @s positioned ^ ^-0.3 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 116..134 at @s positioned ^ ^0.04 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
         execute if score @s AK.EventTimer matches 1 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
-        execute if score @s AK.EventTimer matches 22 at @s run playsound item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
+        execute if score @s AK.EventTimer matches 22 at @s run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 1 1.3
         execute if score @s AK.EventTimer matches 52 at @s run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 1 1.3
     # 攻撃
         execute if score @s AK.EventTimer matches 14 positioned ^ ^1 ^1 run function asset:mob/0380.haruclaire_v3/tick/event/punch/attack_punch
@@ -36,7 +36,7 @@
         execute if score @s AK.EventTimer matches 66 positioned ^ ^2 ^1 run function asset:mob/0380.haruclaire_v3/tick/event/punch/attack_throw
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 144.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 144.. if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 156.. run function asset:mob/0380.haruclaire_v3/tick/event/punch/end

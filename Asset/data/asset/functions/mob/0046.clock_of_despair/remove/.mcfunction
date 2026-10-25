@@ -11,5 +11,9 @@
     kill @e[type=item_display,scores={ObjectID=2061..2062}]
     kill @e[type=marker,scores={ObjectID=2248..2252}]
 
+# メイジたちとさようなら
+    execute as @e[type=zombie,scores={MobID=187},distance=..30] run function api:mob/remove
+    execute as @e[type=zombie,scores={MobID=189..190},distance=..30] run function api:mob/remove
+
 # super 呼び出し
     function asset:mob/super.remove

@@ -37,8 +37,8 @@
 # フラッテン
     # 詠唱
         # アニメーション再生
-            execute if score @s BF.EventTimer matches 121 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_0_cast_start
-            execute if score @s BF.EventTimer matches 140 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_1_casting
+            execute if score @s BF.EventTimer matches 121 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_4_cast_start_flatten
+            execute if score @s BF.EventTimer matches 140 as @e[type=item_display,tag=BF.ModelRoot,sort=nearest,limit=1] run function asset:mob/0411.behemoth/tick/animated_java/play/3_5_casting_flatten
         # ターゲットを向く
             execute if score @s BF.EventTimer matches 121..215 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
     # 攻撃
@@ -47,7 +47,7 @@
         # ターゲットを向く
             execute if score @s BF.EventTimer matches 220..235 run function asset:mob/0411.behemoth/tick/util/rotate_to_target
         # 移動
-            execute if score @s BF.EventTimer matches 220..235 if block ~ ~-0.1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+            execute if score @s BF.EventTimer matches 220..235 if block ~ ~-0.1 ~ #lib:no_collision/ run tp @s ~ ~-0.1 ~
             execute if score @s BF.EventTimer matches 220..225 at @s run tp @s ^ ^ ^0.2
             execute if score @s BF.EventTimer matches 226..230 at @s run tp @s ^ ^ ^0.4
             execute if score @s BF.EventTimer matches 251..260 run tp @s ~ ~0.05 ~

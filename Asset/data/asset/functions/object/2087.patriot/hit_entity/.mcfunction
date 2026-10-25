@@ -5,13 +5,13 @@
 # @within asset:object/alias/2087/hit_entity
 
 # 割合ダメージ
-    execute as @e[type=#lib:living,tag=Enemy.Boss,distance=..8,sort=nearest,limit=1] run function api:mob/get_max_health
+    execute as @e[type=#lib:living_without_player,tag=Enemy.Boss,distance=..8,sort=nearest,limit=1] run function api:mob/get_max_health
     execute store result storage api: Argument.Damage float 0.03 run data get storage api: Return.MaxHealth 1
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "None"
     data modify storage api: Argument.FixedDamage set value true
     function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..7] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..7] run function api:damage/
     function api:damage/reset
 
 # sound

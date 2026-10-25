@@ -109,6 +109,7 @@
     execute if score @s BF.EventTimer matches 300 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
     execute if score @s BF.EventTimer matches 315 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
     execute if score @s BF.EventTimer matches 606 run function asset:mob/0411.behemoth/tick/util/start_invulnerable
+    execute if score @s BF.EventTimer matches 880 run function asset:mob/0411.behemoth/tick/util/end_invulnerable
 
 # 終了
     execute if score @s BF.EventTimer matches 880.. run function asset:mob/0411.behemoth/tick/event/terzetto_ragnarok/end

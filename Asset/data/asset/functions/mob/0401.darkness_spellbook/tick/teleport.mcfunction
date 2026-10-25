@@ -15,7 +15,7 @@
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 
 # マーカーの位置にブロックがなかったらテレポートする
-    execute at 0-0-0-0-0 if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~
+    execute at 0-0-0-0-0 if block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~ ~
 
 # マーカーを戻してあげる
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0

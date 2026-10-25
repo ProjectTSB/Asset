@@ -30,7 +30,7 @@
         execute if score $Random Temporary matches 8 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"おぉ！上等だよ！てめーら上等だってんだよ！！"}]
         execute if score $Random Temporary matches 9 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"今夜で“オワリ”にしてやるよ！"}]
         execute if score $Random Temporary matches 10 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"冥府に送っちまえってよォ！！"}]
-        execute if score $Random Temporary matches 11 as @e[type=#lib:living,type=!player,tag=Victim,distance=..150] run tellraw @a [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"“事故”る奴は････“不運”と“踊”っちまったんだよ････"}]
+        execute if score $Random Temporary matches 11 as @e[type=#lib:living_without_player,tag=Victim,distance=..150] run tellraw @a [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"“事故”る奴は････“不運”と“踊”っちまったんだよ････"}]
         execute if score $Random Temporary matches 12 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"てめェの臓物ブチまけてやる････！！"}]
         execute if score $Random Temporary matches 13 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"俺が手に入れてやる･･･！その領域･･！“スピードの向こう側”を･･！！"}]
         execute if score $Random Temporary matches 14 run tellraw @a[distance=..30] [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> "},{"text":"疼くんだよゥ････"}]
@@ -43,7 +43,7 @@
         execute if score $Random Temporary matches 11 run function asset:artifact/0441.awaited_opportunity/trigger/message/hardluck
 
     # "不運"と"踊"ってないときは敵の位置にマガジンマーク召喚
-        execute unless score $Random Temporary matches 11 at @e[type=#lib:living,type=!player,tag=Victim,distance=..6] anchored eyes positioned ^1.0 ^ ^ run function asset:artifact/0441.awaited_opportunity/trigger/message/magazine_mark
+        execute unless score $Random Temporary matches 11 at @e[type=#lib:living_without_player,tag=Victim,distance=..6] anchored eyes positioned ^1.0 ^ ^ run function asset:artifact/0441.awaited_opportunity/trigger/message/magazine_mark
 
     # スピードの向こう側
         execute if score $Random Temporary matches 13 run function asset:artifact/0441.awaited_opportunity/trigger/message/beyond_the_speed

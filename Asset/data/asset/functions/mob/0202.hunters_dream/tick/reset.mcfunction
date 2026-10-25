@@ -7,5 +7,7 @@
 # タグを消す
     tag @s remove 5M.SkillSword
     tag @s remove 5M.SkillArrow
+    tag @s remove 5M.SkillSideStep
+
 # スコアを戻す
-    scoreboard players set @s 5M.Tick -60
+    scoreboard players set @s General.Mob.Tick -60

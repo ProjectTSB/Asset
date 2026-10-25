@@ -14,7 +14,7 @@
 
 # 演出
     execute if score @s 9F.AnimationTimer matches 1 run playsound entity.ender_dragon.flap hostile @a ~ ~ ~ 2 1
-    execute if score @s 9F.AnimationTimer matches 7 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 7 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
 
 # 終了
     execute if score @s 9F.AnimationTimer matches 14.. run function asset:mob/0339.twins_sapphiel/tick/app/skill/event_handler/22_1_lc_shot_jump/2.end

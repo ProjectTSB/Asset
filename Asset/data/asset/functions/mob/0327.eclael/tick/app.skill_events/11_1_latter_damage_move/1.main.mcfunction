@@ -5,6 +5,8 @@
 #
 # @within function asset:mob/0327.eclael/tick/app.2.skill_event
 
+# 未使用ファイル
+
 # animated javaアニメーション再生 (長さ：45tick)
     execute if score @s 93.AnimationTimer matches 1 run function asset:mob/0327.eclael/tick/app.skill_events/11_1_latter_damage_move/3.play_animation
 

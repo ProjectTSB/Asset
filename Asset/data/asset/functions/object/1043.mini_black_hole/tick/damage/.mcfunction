@@ -19,9 +19,9 @@
     data modify storage api: Argument.BypassModifier set value 1b
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=1043.Target,tag=!Uninterferable,distance=..8] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=1043.Target,tag=!Uninterferable,distance=..8] run function api:damage/
     function api:damage/reset
 
 # リセット
     scoreboard players reset $UserID Temporary
-    tag @e[type=#lib:living,type=!player,tag=1043.Target,tag=!Uninterferable,distance=..8] remove 1043.Target
+    tag @e[type=#lib:living_without_player,tag=1043.Target,tag=!Uninterferable,distance=..8] remove 1043.Target

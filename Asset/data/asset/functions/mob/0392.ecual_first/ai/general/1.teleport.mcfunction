@@ -5,4 +5,4 @@
 # @within function asset:mob/0392.ecual_first/**
 
 # 壁の中にはテレポートしない
-    execute if block ~ ~ ~ #lib:no_collision run tp @s ~ ~ ~ ~ ~
+    execute if block ~ ~ ~ #lib:no_collision/ run tp @s ~ ~ ~ ~ ~

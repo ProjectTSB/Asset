@@ -2,7 +2,7 @@
 #
 # 装備数に応じたダメージを与える
 # @input
-#   tag MS.AttackTarget #攻撃対象エンティティにつく
+#   MS.AttackTarget 攻撃対象エンティティにつくtag
 #
 # @within function asset:object/1067.jewel_rod_of_horai/tick/
 

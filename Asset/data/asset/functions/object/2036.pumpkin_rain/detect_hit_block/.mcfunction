@@ -5,4 +5,4 @@
 # @within asset:object/alias/2036/detect_hit_block
 
 # 判定
-    execute if entity @s[tag=!2036.OnGround] unless block ~ ~-1 ~ #lib:no_collision run data modify storage asset:context IsHitBlock set value true
+    execute if entity @s[tag=!2036.OnGround] unless block ~ ~-1 ~ #lib:no_collision/ run data modify storage asset:context IsHitBlock set value true

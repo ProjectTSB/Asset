@@ -18,7 +18,7 @@
         execute if score @s AK.EventTimer matches 95..100 run function asset:mob/0380.haruclaire_v3/tick/util/rotate_to_target
 
 # 演出
-    execute if score @s AK.EventTimer matches 2 at @s run playsound item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
+    execute if score @s AK.EventTimer matches 2 at @s run playsound disabled_sounds:item.armor.equip_leather hostile @a ~ ~ ~ 1 1.3
     execute if score @s AK.EventTimer matches 20 at @s run playsound entity.experience_orb.pickup hostile @a ~ ~ ~ 1 1
     execute if score @s AK.EventTimer matches 32 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2
     execute if score @s AK.EventTimer matches 80 at @s run playsound item.axe.scrape hostile @a ~ ~ ~ 2 2

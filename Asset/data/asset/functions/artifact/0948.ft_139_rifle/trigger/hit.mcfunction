@@ -13,7 +13,7 @@
     execute at @e[tag=LandingTarget,limit=1] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.4 0.4 0.4 0 4
 # ダメージ設定
     # ダメージ
-        scoreboard players add $Damage Temporary 145
+        scoreboard players add $Damage Temporary 155
     # 属性
         data modify storage api: Argument.AttackType set value "Magic"
         data modify storage api: Argument.ElementType set value "Thunder"

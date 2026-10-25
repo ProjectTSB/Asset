@@ -19,7 +19,7 @@
     scoreboard players reset $MPPer Temporary
 
 # 敵がいるかみる
-    execute unless entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..6] run tag @s remove CanUsed
+    execute unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..6] run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1273.maidchan_plush/trigger/3.main

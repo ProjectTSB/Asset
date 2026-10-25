@@ -13,10 +13,10 @@
     execute if score @s 9F.AnimationTimer matches 1..5 positioned ~ ~0.1 ~ run function asset:mob/0339.twins_sapphiel/app/general/3.teleport
 
 # 演出
-    execute if score @s 9F.AnimationTimer matches 5 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
-    execute if score @s 9F.AnimationTimer matches 15 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
-    execute if score @s 9F.AnimationTimer matches 25 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
-    execute if score @s 9F.AnimationTimer matches 35 run playsound item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 5 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 15 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 25 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
+    execute if score @s 9F.AnimationTimer matches 35 run playsound disabled_sounds:item.armor.equip_iron hostile @a ~ ~ ~ 2 1
 
 # 攻撃準備
     execute if score @s 9F.AnimationTimer matches 39 at @a[tag=!PlayerShouldInvulnerable,sort=nearest,limit=1] run summon area_effect_cloud ~ ~1 ~ {CustomNameVisible:0b,Particle:"block air",Duration:7,Tags:["Object","9F.Temp.Target.Aec.0"]}

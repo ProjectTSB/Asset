@@ -10,7 +10,8 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    playsound block.conduit.activate player @a ~ ~ ~ 0.7 1.4
+    playsound block.conduit.activate player @a ~ ~ ~ 1.6 1.4
+    playsound block.conduit.activate player @a ~ ~ ~ 1.6 1.4
     particle dust 0.2 0.2 1 1 ~ ~0.4 ~ 0.25 0.25 0.25 0 15 normal
 
 # チャージ用Effectを付与

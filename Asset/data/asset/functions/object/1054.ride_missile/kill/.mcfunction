@@ -24,7 +24,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @p[tag=1054.Owner] run function api:damage/modifier
-    execute positioned ~-3 ~-3 ~-3 as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,dx=5,dy=5,dz=5] run function api:damage/
+    execute positioned ~-3 ~-3 ~-3 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=5,dy=5,dz=5] run function api:damage/
     function api:damage/reset
 
 function asset:object/super.method

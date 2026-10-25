@@ -22,8 +22,8 @@
         execute if score @s AK.EventTimer matches 15 positioned ^ ^4 ^2 run function asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/attack
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 111..120 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 121..133 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.18 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 111..120 if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.08 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 121..133 if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.18 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 131.. run function asset:mob/0380.haruclaire_v3/tick/event/super_ice_bullet/end

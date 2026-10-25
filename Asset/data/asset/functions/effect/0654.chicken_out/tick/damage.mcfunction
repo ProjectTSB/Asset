@@ -6,8 +6,7 @@
 
 # 引数の設定
     # 与えるダメージは自身のHPの20%
-        function api:modifier/max_health/get
-        execute store result storage api: Argument.Damage double 0.2 run data get storage api: Return.MaxHealth
+        execute store result storage api: Argument.Damage double 0.2 run attribute @s generic.max_health get
     # 第一属性
         data modify storage api: Argument.AttackType set value "Physical"
     # 第二属性

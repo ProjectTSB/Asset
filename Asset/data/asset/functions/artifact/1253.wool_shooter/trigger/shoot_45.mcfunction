@@ -7,7 +7,7 @@
 #   asset:artifact/1253.wool_shooter/trigger/shoot_45
 
 # 着弾検知
-    execute unless block ^ ^ ^ #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^ #lib:no_collision/ run tag @s add Landing
 # 羊毛は例外
     execute if block ^ ^ ^ #wool run tag @s remove Landing
 # プレイヤーより周囲1mは除外（ただし、岩盤とかはのぞく

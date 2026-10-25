@@ -35,7 +35,7 @@
 # 補正functionを実行
     function api:damage/modifier
 # ダメージ実行
-    execute at @e[type=#lib:living,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function api:damage/
+    execute at @e[type=#lib:living_without_player,tag=Enemy,tag=Victim,tag=!Uninterferable,distance=..5,sort=nearest,limit=1] as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..1.2] run function api:damage/
     function api:damage/reset
 
 # リセット
