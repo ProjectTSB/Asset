@@ -18,7 +18,7 @@
     execute anchored eyes positioned ^ ^ ^1.5 positioned ~ ~-0.6 ~ run function asset:artifact/1623.palermo/trigger/vfx
 
 # ダメージ
-    execute store result storage api: Argument.Damage float 1.0 run random value 350..400
+    execute store result storage api: Argument.Damage float 1.0 run random value 300..500
 
 #バフがあるならダメ―ジX倍
     execute if data storage api: Return.Effect store result storage api: Argument.Damage double 1.5 run data get storage api: Argument.Damage
