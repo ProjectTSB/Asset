@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:effect/0426.star_cycles/tick/
+# @within function asset:effect/0426.star_cycles/tick/switch
 
 # Effectをクリアしてから賦与
     data modify storage api: Argument.ID set value 422

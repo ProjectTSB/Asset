@@ -13,6 +13,11 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
+# 最初のバフはランダム
+    execute store result storage api: Argument.ID int 1 run random value 422..424
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # 演出
     particle sonic_boom ~ ~0.5 ~ 0 0 0 1 1
     particle witch ~ ~0.5 ~ 0.2 0.25 0.2 0 25
