@@ -1,5 +1,9 @@
 {
     "values": [
+        "asset:effect/0426.star_cycles/_/register",
+        "asset:effect/0424.thunder_period/_/register",
+        "asset:effect/0423.water_period/_/register",
+        "asset:effect/0422.fire_period/_/register",
         "asset:effect/0405.predation_of_tree/_/register",
         "asset:effect/0359.time_ticker_eclipse/_/register",
         "asset:effect/0358.time_ticker_night/_/register",
