@@ -18,6 +18,7 @@
     #declare tag 1N.GiantPumpkin2
     #declare tag 1N.GiantPumpkin2.LeftRotate
     #declare tag 1N.Missile
+    #declare tag 1N.DPSCheck
     #declare tag 1N.Random
     #declare tag 1N.Random2
     #declare tag 1N.Hurt
