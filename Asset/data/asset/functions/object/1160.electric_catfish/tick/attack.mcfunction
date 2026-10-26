@@ -20,7 +20,7 @@
 
 # CandidateタグがついたランダムなEntityが対象
     tag @e[type=#lib:living_without_player,tag=1160.Candidate,sort=random,limit=1] add 1160.SteppedOn
-    execute as @e[type=#lib:living_without_player,tag=1160.SteppedOn,distance=..2,sort=random,limit=1] run function api:damage/
+    execute positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,sort=random,limit=1] run function api:damage/
 
 # 周囲のMobにもダメージ
     execute store result storage api: Argument.Damage double 0.5 run data get storage asset:context this.Damage
