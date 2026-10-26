@@ -48,7 +48,7 @@
     #declare function animated_java:ecual/animations/13_0_former_ending/play
     #declare function animated_java:ecual/variants/default/apply
     #declare function animated_java:ecual/variants/jitome/apply
-    #declare function animated_java:ecual/variants/mabataki/apply
+    #declare function animated_java:ecual/variants/mabaraki/apply
     #declare function animated_java:ecual/variants/majime/apply
     #declare function animated_java:ecual/variants/normal/apply
     #declare function animated_java:ecual/variants/wink/apply
