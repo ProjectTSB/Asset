@@ -5,7 +5,7 @@
 # @within function asset:artifact/1631.blaze_barrage/trigger/2.check_condition
 
 # 発動条件は
-# (自身が地上にいる || (自身に固有バフ(ID:403)がある && 一定以上浮いている))
+# (自身が地上にいる || (自身に固有バフ(ID:403)がある && 空中にいる))
 
 # OnGroundをチェック
     function api:data_get/on_ground
