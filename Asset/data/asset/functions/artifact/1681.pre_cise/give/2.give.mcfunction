@@ -10,9 +10,9 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"Pre-cise","color":"white"}'
+    data modify storage asset:artifact Name set value '{"text":"Pre-cise","italic":true}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"test"}']
+    data modify storage asset:artifact Lore set value ['{"text":"スニーク時、目の前に的が現れる"}','{"text":"近くに敵がいればその敵をロックオンする(目線の先の敵を優先)"}','{"text":"的を打ち抜くごとに頭上のタレットがビームを発射し"}','{"text":"敵と自身に1秒間鈍足を与える"}']
 # 使用回数 (int)
     data modify storage asset:artifact RemainingCount set value 12
 # 神器を発動できるスロット (string)
@@ -20,11 +20,11 @@
 # 神器のトリガー (string)
     data modify storage asset:artifact Trigger set value "onClick"
 # 攻撃に関する情報 -Damage量 (literal[]/literal)
-    data modify storage asset:artifact AttackInfo.Damage set value [600]
+    data modify storage asset:artifact AttackInfo.Damage set value [150]
 # 攻撃に関する情報 -攻撃タイプ (string[])
     data modify storage asset:artifact AttackInfo.AttackType set value [Physical]
 # 攻撃に関する情報 -攻撃属性 (string[])
-    data modify storage asset:artifact AttackInfo.ElementType set value [None]
+    data modify storage asset:artifact AttackInfo.ElementType set value [Thunder]
 # 攻撃に関する情報 -範囲攻撃 (string)
     data modify storage asset:artifact AttackInfo.IsRangeAttack set value "never"
 # 攻撃に関する情報 -攻撃範囲 (literal)

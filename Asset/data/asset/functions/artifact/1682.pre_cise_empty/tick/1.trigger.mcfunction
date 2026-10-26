@@ -4,5 +4,5 @@
 #
 # @within tag/function asset:artifact/**
 
-# メインハンドが本神器でスニーク中なら、的と頭上のObjectを維持する
-    execute if data storage asset:context id{mainhand:1682} if predicate lib:is_sneaking run function asset:artifact/1681.pre_cise/shared/keep_objects
+# storage asset:contextのidに装備している神器のIDが入っているので比較し、2.check_conditionを実行する
+    execute if data storage asset:context id{mainhand:1682} run function asset:artifact/1682.pre_cise_empty/tick/2.check_condition
