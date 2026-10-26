@@ -33,7 +33,7 @@
     function api:heal/
     function api:heal/reset
 
-# 念のため固有バフ解除
+# 固有バフ解除
     data modify storage api: Argument.ID set value 369
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
