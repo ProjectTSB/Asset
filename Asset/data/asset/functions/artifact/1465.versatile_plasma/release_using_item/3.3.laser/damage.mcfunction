@@ -14,4 +14,4 @@
     function api:damage/reset
 
 # HitTargetタグ削除
-    tag @s remove HitTarget
+    tag @e[type=#lib:living_without_player,tag=HitTarget,distance=..20] remove HitTarget
