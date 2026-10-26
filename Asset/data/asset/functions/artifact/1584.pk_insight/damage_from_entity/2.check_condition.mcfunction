@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/1584.pk_insight/damage_from_entity/1.trigger
 
-# 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
-    function asset:artifact/common/check_condition/offhand
 # 他にアイテム等確認する場合はここに書く
 # Effect 386が付与されている状態が条件
     data modify storage api: Argument.ID set value 386
