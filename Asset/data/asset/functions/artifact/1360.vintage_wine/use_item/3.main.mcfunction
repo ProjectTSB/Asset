@@ -37,3 +37,6 @@
     data modify storage api: Argument.ID set value 369
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
+
+# 経過時間をリセット
+    scoreboard players reset @s 11S.Tick

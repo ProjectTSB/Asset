@@ -8,24 +8,15 @@
 # @private
     #declare score_holder $Stack
 
-# 固有バフチェック
-    data modify storage api: Argument.ID set value 369
-    function api:entity/mob/effect/get/from_id
-
-# チャージ+1
-    execute store result storage api: Argument.FieldOverride.Charge int -1 run data get storage api: Return.Effect.Field.Charge -1.000000001
-
-# チャージが0なら1に初期化
-    execute if data storage api: Argument.FieldOverride{Charge:0} run data modify storage api: Argument.FieldOverride.Charge set value 1
-
-# (チャージ / N) + 1をスタックとする
-    execute store result score $Stack Temporary run data get storage api: Argument.FieldOverride.Charge
+# 2秒につきスタックを1増加
+    scoreboard players operation $Stack Temporary = @s 11S.Tick
     scoreboard players operation $Stack Temporary /= $40 Const
     scoreboard players add $Stack Temporary 1
 # 最大スタック
     scoreboard players operation $Stack Temporary < $10 Const
 
-# tellraw @a {"storage":"api:","nbt":"Argument.FieldOverride.Charge"}
+# 最大スタック到達後も1秒周期を保ち、経過時間のオーバーフローを防ぐ
+    execute if score @s 11S.Tick matches 380.. run scoreboard players set @s 11S.Tick 360
 
 # 固有バフを付与
     data modify storage api: Argument.ID set value 369
@@ -33,5 +24,5 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
-# リセマラ
+# リセット
     scoreboard players reset $Stack Temporary
