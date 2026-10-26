@@ -11,7 +11,7 @@
     execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/animations/neutral_ground/stop
     execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/animations/neutral_air/stop
 
-    execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/pause_all
+    execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/animations/pause_all
     execute as @e[type=item_display,tag=AI.AJ,sort=nearest,limit=1] run function animated_java:red_knight/animations/death2/play
 
 # 召喚

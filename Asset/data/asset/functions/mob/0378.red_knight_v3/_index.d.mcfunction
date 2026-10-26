@@ -25,7 +25,7 @@
     #
     #declare function animated_java:red_knight/summon
     #declare function animated_java:red_knight/remove/this
-    #declare function animated_java:red_knight/pause_all
+    #declare function animated_java:red_knight/animations/pause_all
     #declare function animated_java:red_knight/animations/summon_1/play
     #declare function animated_java:red_knight/animations/summon_2/play
     #declare function animated_java:red_knight/animations/death2/play
