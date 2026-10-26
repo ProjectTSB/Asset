@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0432.miniature_volcano/_/register",
         "asset:effect/0369.elevage/_/register",
         "asset:effect/0405.predation_of_tree/_/register",
         "asset:effect/0359.time_ticker_eclipse/_/register",
