@@ -16,7 +16,7 @@
     execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=#lib:living_without_player,tag=1160.Candidate,dx=0] at @s run function asset:object/1160.electric_catfish/tick/attack
 
 # 足元にブロックがないなら消す
-    execute if block ~ ~-0.1 ~ #lib:no_collision/ run scoreboard players set @s General.Object.Tick 1200
+    execute align y if block ~ ~-1 ~ #lib:no_collision/ run scoreboard players set @s General.Object.Tick 1200
 
 # 消滅処理
     execute if score @s General.Object.Tick matches 1200.. run function asset:object/1160.electric_catfish/tick/kill
