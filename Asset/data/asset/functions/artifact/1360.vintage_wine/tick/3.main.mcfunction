@@ -15,8 +15,8 @@
 # 最大スタック
     scoreboard players operation $Stack Temporary < $10 Const
 
-# 最大スタック到達後も1秒周期を保ち、経過時間のオーバーフローを防ぐ
-    execute if score @s 11S.Tick matches 380.. run scoreboard players set @s 11S.Tick 360
+# 最大スタック到達後も2秒周期を保ち、経過時間のオーバーフローを防ぐ
+    execute if score @s 11S.Tick matches 400.. run scoreboard players set @s 11S.Tick 360
 
 # 固有バフを付与
     data modify storage api: Argument.ID set value 369
