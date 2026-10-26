@@ -1,4 +1,4 @@
-#> asset:object/1215.miniature_volcano/tick/chase
+#> asset:object/1215.miniature_volcano/tick/chase.m
 #
 #
 #
