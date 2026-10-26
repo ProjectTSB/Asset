@@ -131,6 +131,8 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 ### 両面の魔法陣を設定付きで召喚する
 
+両面のフォント画像を中央に揃える場合は、画像本体の文字送りに加え、表裏の文字揃えとPassengerの位置を確認する。[2275の文字設定](../../Asset/data/asset/functions/object/2275.aurora_jump/tick/apply.m.mcfunction) は2279と同じく `space` フォントの `\u0001` を末尾へ追加し、[tick](../../Asset/data/asset/functions/object/2275.aurora_jump/tick/.mcfunction) でPassengerを本体の位置と向きへ揃える。2275はリソースパックの `assets/minecraft/font/object/2275.json` のheight・ascentを2279と揃えた版が前提で、[summon](../../Asset/data/asset/functions/object/2275.aurora_jump/summon/.mcfunction) はtranslationを使わず、フォントの拡大分をscaleで換算して従来の表示サイズを保つ。フォント定義とAssetは併せて適用する。
+
 [2279.magic_circle](../../Asset/data/asset/functions/object/2279.magic_circle/register.mcfunction) は直接召喚と継承に対応する魔法陣Objectである。summonは実行向きのyaw・pitchで本体と裏面のPassengerを生成し、initは表面に `Field.Char`（既定 `"0"`）、裏面に `Field.BackChar` を適用する。BackCharは任意指定で、未設定時はinitでCharをコピーする。空文字列を指定した場合はコピーせず、そのまま使う。`Field.Font` は両面共通とし、既定値はregisterを参照する。召喚者の視線へ向ける場合は、その向きを実行文脈へ引き継いで `api:object/summon` を呼ぶ。
 
 文字・フォント・大きさ・回転方向・各変化の時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`Tick` は初回待機と消失時の変化を含む消滅までのObject tick数（既定59）で、`3 + AppearDuration + DisappearDuration` 以上とする。`AppearDuration`・`SpinDuration`・`DisappearDuration` は1以上のtick数とする。
