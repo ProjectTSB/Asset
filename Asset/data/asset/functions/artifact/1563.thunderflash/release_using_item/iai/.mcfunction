@@ -4,7 +4,7 @@
 #
 # @within function asset:artifact/1563.thunderflash/release_using_item/3.main
 
-# MaxRangeへRangeをコピー
+# RangeへMaxRangeをコピー
     scoreboard players operation $Range Temporary = $MaxRange Temporary
 
 # 再帰で行けるところまで行く
