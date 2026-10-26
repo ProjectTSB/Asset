@@ -2,7 +2,7 @@
 #
 # 装備を外した時のメイン処理
 #
-# @within function asset:artifact/1584.pk_insight/trigger/dis_equip/
+# @within function asset:artifact/1584.pk_insight/trigger/dis_equip/2.check_condition
 
 # Effect 386剝奪
     data modify storage api: Argument.ID set value 386
