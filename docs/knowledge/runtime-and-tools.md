@@ -135,8 +135,6 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化を開始するときにも次の90度への回転先を設定し、消失時間をかけて回転とscaleを同時に補間する。回転とscaleは補間時間を共有するため、通常回転の途中で消失へ移る場合は回転速度が変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
 
-[2074.water_magicのinit](../../Asset/data/asset/functions/object/2074.water_magic/init/.mcfunction) は、5tick間隔の攻撃回数に魔法陣の表示時間を連動させる例である。通常回転と消失を10tickに揃え、`Tick = 3 + 30 + 10 × ceil(AttackCount / 2) + 10` とする。奇数回の攻撃も次の回転境界まで表示することで、通常回転の途中で消失へ切り替わることを避ける。AttackCountは1以上の整数を指定する。
-
 `this.Phase` は2279が管理する参照用の実行段階で、init後は `"Waiting"`、初回待機終了後は `"Appearing"`、出現時の変化終了後は `"Rotating"`、消失開始後は `"Disappearing"` となる。継承先がそのtickの遷移を参照するときはsuper.tick後に判定する。寿命切れで破棄された後の参照は行わない。
 
 親tickは本体の現在位置・向きでPassengerをtpし、裏面の向きを同期する。継承先が同じtick内で本体を移動・回転させる場合は、tp後にsuper.tickを呼ぶ。transformationの裏面用の回転は保持する。
