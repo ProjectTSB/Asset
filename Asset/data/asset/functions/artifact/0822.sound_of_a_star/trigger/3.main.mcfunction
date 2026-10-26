@@ -19,9 +19,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.7 0 0
-    playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.4 0.5 0
-    playsound minecraft:block.bell.resonate player @a ~ ~ ~ 0.8 0.5
+    execute anchored eyes positioned ^ ^-0.5 ^0.6 run function asset:artifact/0822.sound_of_a_star/trigger/sound
 
 # 1個目
     execute anchored eyes positioned ^ ^0.2 ^0.6 run function asset:artifact/0822.sound_of_a_star/trigger/summon_star.m {Damage:450,StartDelay:10}

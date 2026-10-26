@@ -8,8 +8,5 @@
     function asset:artifact/common/check_condition/mainhand
 # 他にアイテム等確認する場合はここに書く
 
-# CanUsedがあるとき、チャージする
-    execute if entity @s[tag=CanUsed] run function asset:artifact/0224.onegai_muscle/trigger/2.check_condition/charge
-
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0224.onegai_muscle/trigger/3.main
