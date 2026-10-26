@@ -7,6 +7,15 @@
 #> Private
 # @private
     #declare score_holder $Stack
+    #declare score_holder $11S.Interval
+
+# 付与までの経過時間を進め、1秒周期の途中なら終了
+    scoreboard players add @s 11S.Tick 0
+    scoreboard players operation $11S.Interval Temporary = @s 11S.Tick
+    scoreboard players operation $11S.Interval Temporary %= $20 Const
+    execute unless score $11S.Interval Temporary matches 0 run scoreboard players add @s 11S.Tick 1
+    execute unless score $11S.Interval Temporary matches 0 run return run scoreboard players reset $11S.Interval Temporary
+    scoreboard players reset $11S.Interval Temporary
 
 # 2秒につきスタックを1増加
     scoreboard players operation $Stack Temporary = @s 11S.Tick
@@ -26,3 +35,6 @@
 
 # リセット
     scoreboard players reset $Stack Temporary
+
+# 経過時間を進める
+    scoreboard players add @s 11S.Tick 1
