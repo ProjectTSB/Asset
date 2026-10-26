@@ -17,13 +17,13 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['[{"text":"ヒットした","color":"white"},{"text":"相手","color":"red"},{"text":"を使用者の手前まで","color":"white"},{"text":"テレポート","color":"yellow"},{"text":"させる。","color":"white"}]']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value
-    # data modify storage asset:artifact ConsumeItem.Count set value
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "shot"
 # 神器の発動条件 (TextComponentString) (オプション)

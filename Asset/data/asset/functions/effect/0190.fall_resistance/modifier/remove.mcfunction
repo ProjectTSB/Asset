@@ -5,6 +5,7 @@
 # @within function
 #   asset:effect/0190.fall_resistance/end/
 #   asset:effect/0190.fall_resistance/remove/
+#   asset:effect/0190.fall_resistance/re-given/
 
 # 落下ダメージ無効化
     data modify storage api: Argument.UUID set value [I;1,3,190,0]

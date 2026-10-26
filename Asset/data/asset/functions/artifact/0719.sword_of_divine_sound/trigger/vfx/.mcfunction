@@ -9,14 +9,11 @@
     playsound entity.lightning_bolt.thunder player @a ~ ~ ~ 0.6 1.2 0
 
 # 円状のパーティクル
-    function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
+    execute positioned ~ ~0.3 ~ run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/circle
 
 # 演出用スコアのリセット
     scoreboard players reset $RecursiveLimit Temporary
 
-# 雷っぽいパーティクル
-    execute rotated ~ -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning
-    execute rotated ~72 -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning
-    execute rotated ~144 -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning
-    execute rotated ~216 -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning
-    execute rotated ~288 -80 run function asset:artifact/0719.sword_of_divine_sound/trigger/vfx/start_lightning
+# 演出用Object
+    data modify storage api: Argument.ID set value 1191
+    function api:object/summon
