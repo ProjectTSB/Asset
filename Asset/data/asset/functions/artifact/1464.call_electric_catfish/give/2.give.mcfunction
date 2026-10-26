@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "コール:デンキナマズ", "color": "yellow"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "踏まれると周囲にダメージを与えるナマズを召喚する。"}' , '{"text": "「べちっ」「...」", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "敵に踏まれると周囲にダメージを与えるナマズを召喚する。"}' , '{"text": "「べちっ」「...」", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
