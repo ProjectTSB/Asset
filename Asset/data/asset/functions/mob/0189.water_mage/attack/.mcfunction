@@ -12,7 +12,7 @@
     #declare score_holder $CalcD
     #declare score_holder $Difficulty
 
-# バニラの攻撃じゃなかったら return
+# 特定のMetadataがなければreturn
     execute unless data storage asset:context Attack{Metadata:"189.WaterMage"} run return fail
 
 # Hard以下ならreturn
