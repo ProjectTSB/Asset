@@ -8,6 +8,7 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
+    data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute as @p[tag=0393.This] run function api:damage/modifier
     function api:damage/
     function api:damage/reset

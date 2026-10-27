@@ -9,11 +9,6 @@
 
 # ここから先は神器側の効果の処理を書く
     data modify storage api: Argument.ID set value 392
-    #攻撃情報
-    data modify storage api: Argument.FieldOverride.Damage set value 5.0f
-    data modify storage api: Argument.FieldOverride.AttackType set value "Physical"
-    data modify storage api: Argument.FieldOverride.ElementType set value "Water"
-
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

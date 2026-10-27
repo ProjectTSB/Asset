@@ -11,9 +11,10 @@
     execute unless data storage api: Return.Effect run return fail
 
     data modify storage api: Argument.ID set value 393
-    data modify storage api: Argument.FieldOverride.Damage set value 5
+    data modify storage api: Argument.FieldOverride.Damage set value 5.0d
     data modify storage api: Argument.FieldOverride.AttackType set value "Physical"
     data modify storage api: Argument.FieldOverride.ElementType set value "Water"
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set value 1
     execute store result storage api: Argument.Duration int 20 run data get storage api: Return.Effect.Stack
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
