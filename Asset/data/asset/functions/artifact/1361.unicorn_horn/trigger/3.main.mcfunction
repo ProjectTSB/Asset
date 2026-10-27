@@ -12,4 +12,4 @@
 # check_conditionで判定したTempTargetの中でランダムな1体を攻撃対象とする
 
 # Victimのうちランダムな対象1体を指定して実行
-    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..64,sort=random,limit=1] at @s run function asset:artifact/1361.unicorn_horn/trigger/as_target
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Death,distance=..64,sort=random,limit=1] at @s run function asset:artifact/1361.unicorn_horn/trigger/as_target
