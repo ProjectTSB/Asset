@@ -23,7 +23,7 @@
     execute if entity @s[tag=!CanUsed] run return fail
 
 # Victimがいなければreturn
-    execute unless entity @e[type=#lib:living_without_player,tag=Victim,distance=..64,limit=1] run tag @s remove CanUsed
+    execute unless entity @e[type=#lib:living_without_player,tag=Victim,tag=!Death,distance=..64,limit=1] run tag @s remove CanUsed
     execute if entity @s[tag=!CanUsed] run return fail
 
 # 最大ダメージが要求ダメージ以上か？
