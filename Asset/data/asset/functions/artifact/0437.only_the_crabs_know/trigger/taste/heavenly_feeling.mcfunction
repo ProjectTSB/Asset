@@ -17,7 +17,7 @@
     execute in minecraft:overworld run tp @s 23 3 24
 
 # HP、MP全快
-    execute store result storage api: Argument.Heal double 0.01 run data get storage api: Return.MaxHealth 100
+    execute store result storage api: Argument.Heal double 0.01 run attribute @s generic.max_health get 100
     data modify storage api: Argument.FixedHeal set value true
     function api:heal/modifier
     function api:heal/
