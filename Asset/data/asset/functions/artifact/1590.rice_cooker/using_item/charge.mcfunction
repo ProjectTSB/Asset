@@ -19,6 +19,7 @@
 
     data modify storage api: Argument.ID set value 392
     scoreboard players operation $Charge Temporary /= $12 Const
+    scoreboard players add $Charge Temporary 1
     execute store result storage api: Argument.Stack int 1 run scoreboard players operation $Charge Temporary < $4 Const
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
