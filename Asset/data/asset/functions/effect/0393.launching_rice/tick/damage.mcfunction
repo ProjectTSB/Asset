@@ -8,9 +8,9 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
-    function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=0393.Target,dx=0,limit=1] run function api:damage/
+    execute as @p[tag=0393.This] run function api:damage/modifier
+    function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @e[type=#lib:living_without_player,tag=0393.Target,dx=0,limit=1] remove 0393.Target
+    tag @p[tag=0393.This] remove 0393.This
