@@ -17,6 +17,7 @@
 
     scoreboard players operation $MP Temporary -= $InitialMP Temporary
     scoreboard players operation $MP Temporary < $200 Const
+    execute if score $MP Temporary matches 1.. run scoreboard players add $MP Temporary 30
     execute if score $MP Temporary matches ..0 run scoreboard players set $MP Temporary 30
 
     execute store result storage api: Argument.Amount double 0.1 run scoreboard players get $MP Temporary
