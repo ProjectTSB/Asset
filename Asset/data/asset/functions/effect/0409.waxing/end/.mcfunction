@@ -16,9 +16,9 @@
     execute store result score $MP Temporary run data get storage api: Return.CurrentMP
 
     scoreboard players operation $MP Temporary -= $InitialMP Temporary
-    scoreboard players operation $MP Temporary < $200 Const
     execute if score $MP Temporary matches 1.. run scoreboard players add $MP Temporary 30
     execute if score $MP Temporary matches ..0 run scoreboard players set $MP Temporary 30
+    scoreboard players operation $MP Temporary < $200 Const
 
     execute store result storage api: Argument.Amount double 0.1 run scoreboard players get $MP Temporary
     data modify storage api: Argument.UUID set value [I;1,3,409,0]
