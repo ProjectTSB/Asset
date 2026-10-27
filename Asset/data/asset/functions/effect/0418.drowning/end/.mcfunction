@@ -15,7 +15,7 @@
     execute store result score $Current Temporary run data get storage api: Return.CurrentMP
 
     data modify storage api: Argument.ID set value 419
-    execute if score $Current Temporary >= $Initial Temporary run function api:entity/mob/effect/give
+    execute if score $Current Temporary > $Initial Temporary run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット
