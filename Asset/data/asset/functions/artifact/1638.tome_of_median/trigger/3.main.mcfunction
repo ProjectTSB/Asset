@@ -13,7 +13,7 @@
     function api:entity/player/get_mp_per
     execute store result score $MPRatio Temporary run data get storage api: Return.MPPer 100
 
-    #MPRatioがちょうど50±2%でないならabs(50 - MPRatio) / 2を計算して500を除算
+    #MPRatioがちょうど50±2%でないならabs(50 - MPRatio) / 3を計算して500を除算
     execute unless score $MPRatio Temporary matches 48..52 run function asset:artifact/1638.tome_of_median/trigger/calc
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
