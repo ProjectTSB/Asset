@@ -10,6 +10,6 @@
     #攻撃情報を持たせる
     data modify storage api: Argument.FieldOverride.Damage set value 200
     data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
-    data modify storage api: Argument.FieldOverride.AttackElement set value "None"
+    data modify storage api: Argument.FieldOverride.ElementType set value "None"
 
     execute positioned ^ ^ ^0.5 run function api:object/summon
