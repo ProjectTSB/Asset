@@ -13,4 +13,4 @@
     data modify storage api: Argument.ID set value 1192
     function api:object/summon
 
-    execute anchored eyes positioned ^ ^-0.1 ^0.5 run tp @e[type=marker,distance=..3,limit=1] ^ ^ ^ ~ ~
+    execute anchored eyes positioned ^ ^-0.1 ^0.5 as @e[type=marker,scores={ObjectID=1192},distance=..3,limit=1] if score @s 1192.UserID = @p[tag=this] UserID rotated as @p[tag=this] run tp @s ^ ^ ^ ~ ~

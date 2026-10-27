@@ -15,7 +15,7 @@
     scoreboard players operation $UserID Temporary = @s UserID
     execute as @e[type=marker,tag=1192.Idle,distance=..3] if score @s 1192.UserID = $UserID Temporary run scoreboard players add $BulletCount Temporary 1
     #数が合わないならObjectを削除する
-    execute if score $Stack Temporary < $BulletCount Temporary run kill @e[type=marker,tag=1192.Idle,distance=..3,sort=arbitrary,limit=1]
+    execute if score $Stack Temporary < $BulletCount Temporary as @e[type=marker,tag=1192.Idle,distance=..3,sort=arbitrary,limit=1] if score @s 1192.UserID = $UserID Temporary run kill @s
 
 # リセット
     scoreboard players reset $Stack Temporary
