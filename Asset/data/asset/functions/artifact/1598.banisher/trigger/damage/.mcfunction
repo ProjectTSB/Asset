@@ -11,6 +11,7 @@
     execute if entity @s[tag=Enemy.Boss] as @p[tag=this] run function asset:artifact/1598.banisher/trigger/damage/boss
 
     data modify storage api: Argument.AttackType set value "Magic"
+    data modify storage api: Argument.ElementType set value "None"
     execute as @p[tag=this] run function api:damage/modifier
     function api:damage/
     function api:damage/reset
