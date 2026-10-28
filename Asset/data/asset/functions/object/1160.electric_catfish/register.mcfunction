@@ -17,7 +17,15 @@
 # ID (int)
     data modify storage asset:object ID set value 1160
 # フィールド(オプション)
-    data modify storage asset:object Field.Damage set value 0
+    data modify storage asset:object Field.Damage set value -1
     data modify storage asset:object Field.AttackType set value ""
     data modify storage asset:object Field.ElementType set value ""
+
+    data modify storage asset:object Field.AttackRange set value -1
+    data modify storage asset:object Field.AttackRadius set value -1
+    data modify storage asset:object Field.AttackHitbox set value -1
+    data modify storage asset:object Field.DamageMultiplier set value -1
+    data modify storage asset:object Field.AttackCooldown set value -1
+    data modify storage asset:object Field.Tick set value -1
+    data modify storage asset:object Field.UserID set value -1
     data modify storage asset:object Field.Motion set value []

@@ -24,11 +24,11 @@
     function api:damage/reset
 
 # 周囲のMobにもダメージ
-    execute store result storage api: Argument.Damage double 0.5 run data get storage asset:context this.Damage
+    $execute store result storage api: Argument.Damage double $(DamageMultiplier) run data get storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    execute positioned ~-3.5 ~ ~-3.5 as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=6,dz=6] positioned ~ ~-0.2 ~ if entity @s[dx=6,dz=6] run function api:damage/
+    $execute positioned ~$(AttackRadius) ~ ~$(AttackRadius) as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=$(AttackHitbox),dz=$(AttackHitbox)] positioned ~ ~-0.2 ~ if entity @s[dx=$(AttackHitbox),dz=$(AttackHitbox)] run function api:damage/
     function api:damage/reset
 
 # リセット
@@ -38,7 +38,7 @@
     scoreboard players reset $UserID Temporary
 
 # 0.5秒のクールダウン
-    scoreboard players set @s 1160.Cooldown 10
+    execute store result score @s 1160.Cooldown run data get storage asset:context this.AttackCooldown
     tag @s add 1160.Inactive
 
 # 演出
