@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:effect/0061.defense_water_debuff/_/register",
+        "asset:effect/0011.defense_water_debuff/_/register",
         "asset:effect/0369.elevage/_/register",
         "asset:effect/0405.predation_of_tree/_/register",
         "asset:effect/0359.time_ticker_eclipse/_/register",
