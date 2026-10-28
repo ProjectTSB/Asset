@@ -7,7 +7,7 @@
 #   asset:effect/0011.defense_water_debuff/re-given/
 #   asset:effect/0011.defense_water_debuff/remove/
 
-# 補正を付与する
+# 補正を削除する
     data modify storage api: Argument.UUID set value [I;1,3,-1,0]
     data modify storage api: Argument.UUID[2] set from storage asset:context originID
     function api:modifier/defense/water/remove
