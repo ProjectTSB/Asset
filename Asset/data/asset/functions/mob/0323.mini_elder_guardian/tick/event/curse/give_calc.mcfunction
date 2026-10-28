@@ -23,8 +23,8 @@
     scoreboard players operation $CalcD Temporary *= $Difficulty Temporary
     execute store result storage api: Argument.Duration int 1 run scoreboard players operation $CalcC Temporary += $CalcD Temporary
 
-# 効果時間が1.. && スタックが1..なら付与
-    execute if score $CalcA Temporary matches 1.. if score $CalcC Temporary matches 1.. run function api:entity/mob/effect/give
+# 効果時間が1.. && スタックが1..なら対象全員に付与
+    execute if score $CalcA Temporary matches 1.. if score $CalcC Temporary matches 1.. as @a[tag=DebuffTarget,distance=..32] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット

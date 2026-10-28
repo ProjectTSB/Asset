@@ -19,12 +19,12 @@
 # 採掘速度低下を付与
     data modify storage api: Argument.ID set value 76
     data modify storage asset:temp Debuff set from storage asset:context this.Debuff.A
-    execute as @a[tag=DebuffTarget,distance=..32] run function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
+    function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
 
 # 水耐性低下を付与
     data modify storage api: Argument.ID set value 61
     data modify storage asset:temp Debuff set from storage asset:context this.Debuff.B
-    execute as @a[tag=DebuffTarget,distance=..32] run function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
+    function asset:mob/0323.mini_elder_guardian/tick/event/curse/give_calc
 
 # リセット
     scoreboard players reset $Difficulty Temporary
