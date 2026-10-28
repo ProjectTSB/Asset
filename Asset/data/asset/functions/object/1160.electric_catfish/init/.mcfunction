@@ -8,7 +8,7 @@
     execute align xz run tp @s ~0.5 ~ ~0.5
 
 # 存在する時間を設定
-    execute store result score @s General.Object.Tick run data get storage asset:context this.Ticks
+    execute store result score @s General.Object.Tick run data get storage asset:context this.Tick
 
 # 攻撃範囲のFieldを設定
     execute store result storage asset:context this.AttackRadius double -0.5 run data get storage asset:context this.AttackRange
