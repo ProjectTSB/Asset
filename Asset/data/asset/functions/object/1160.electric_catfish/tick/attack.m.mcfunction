@@ -1,4 +1,4 @@
-#> asset:object/1160.electric_catfish/tick/attack
+#> asset:object/1160.electric_catfish/tick/attack.m
 #
 # Objectのtick時の処理
 #
