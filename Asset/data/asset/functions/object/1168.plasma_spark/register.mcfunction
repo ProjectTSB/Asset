@@ -19,4 +19,5 @@
 # フィールド(オプション)
     data modify storage asset:object Field.Damage set value 0
     data modify storage asset:object Field.AdditionalMPHeal set value 0
+    data modify storage asset:object Field.Tick set value 0
     data modify storage asset:object Field.UserID set value -1
