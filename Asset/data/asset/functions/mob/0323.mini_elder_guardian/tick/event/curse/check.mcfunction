@@ -12,7 +12,7 @@
     data modify storage api: Argument.ID set value 76
     function api:entity/mob/effect/get/from_id
     execute store result score $8Z.Duration Temporary run data get storage api: Return.Effect.Duration
-    execute if score $8Z.Duration Temporary matches ..200 run function asset:mob/0323.mini_elder_guardian/tick/event/curse/give
+    execute if score $8Z.Duration Temporary matches ..200 run tag @s add DebuffTarget
 
 # リセット
     scoreboard players reset $8Z.Duration Temporary

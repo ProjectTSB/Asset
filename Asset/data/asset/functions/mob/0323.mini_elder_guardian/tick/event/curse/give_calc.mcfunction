@@ -27,7 +27,7 @@
     execute if score $CalcA Temporary matches 1.. if score $CalcC Temporary matches 1.. run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
-#
+# リセット
     scoreboard players reset $CalcA Temporary
     scoreboard players reset $CalcB Temporary
     scoreboard players reset $CalcC Temporary
