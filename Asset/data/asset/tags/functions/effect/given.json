@@ -1,6 +1,16 @@
 {
     "values": [
         "asset:effect/0011.defense_water_debuff/_/given",
+        "asset:effect/0405.predation_of_tree/_/given",
+        "asset:effect/0359.time_ticker_eclipse/_/given",
+        "asset:effect/0358.time_ticker_night/_/given",
+        "asset:effect/0357.time_ticker_day/_/given",
+        "asset:effect/0384.ninjas_mindset/_/given",
+        "asset:effect/0400.dual_rhythm_boost/_/given",
+        "asset:effect/0399.dual_rhythm_guard/_/given",
+        "asset:effect/0371.tsukimi/_/given",
+        "asset:effect/0355.heart_gap/_/given",
+        "asset:effect/0354.protection_of_courage/_/given",
         "asset:effect/0348.cool_feeling/_/given",
         "asset:effect/0302.safety_check_complete/_/given",
         "asset:effect/0346.lunatic_time/_/given",
@@ -102,6 +112,7 @@
         "asset:effect/0001.attack_base_debuff/_/given",
         "asset:effect/0051.attack_base_debuff/_/given",
         "asset:effect/0007.defense_base_debuff/_/given",
-        "asset:effect/0258.spirit_melody/_/given"
+        "asset:effect/0258.spirit_melody/_/given",
+        "asset:effect/0406.ocean_grace/_/given"
     ]
 }

@@ -13,7 +13,7 @@
     data modify storage api: Argument.ElementType set value "Water"
     data modify storage api: Argument.MobUUID set from storage asset:context this.MobUUID
     function api:damage/modifier_manual
-    execute as @a[tag=!PlayerShouldInvulnerable,distance=..1.5] run function api:damage/
+    execute positioned ~-0.75 ~ ~-0.75 as @a[tag=!PlayerShouldInvulnerable,dx=0.5,dy=1.5,dz=0.5] run function api:damage/
     function api:damage/reset
 
 # 消滅

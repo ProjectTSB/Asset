@@ -10,3 +10,4 @@
 # Y以外が小さくなっていく
     data modify entity @s transformation.scale[0] set value 0.0f
     data modify entity @s transformation.scale[2] set value 0.0f
+    data modify entity @s start_interpolation set value 0

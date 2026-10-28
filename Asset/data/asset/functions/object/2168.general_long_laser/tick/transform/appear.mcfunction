@@ -9,3 +9,4 @@
 
 # Scaleの値を放り込む
     data modify entity @s transformation.scale set from storage asset:context this.Scale
+    data modify entity @s start_interpolation set value 0
