@@ -12,7 +12,7 @@
     execute if score @s General.Mob.Tick matches 40.. anchored eyes facing entity @p[gamemode=!spectator,distance=..64] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-1500 facing entity @s eyes positioned as @s anchored feet positioned ^ ^ ^ run tp @s ^ ^ ^ ~ ~
 
 # 照射開始動作
-    execute if score @s General.Mob.Tick matches 40 run function asset:mob/0323.mini_elder_guardian/tick/event/attack/start
+    execute if score @s General.Mob.Tick matches 40 anchored eyes positioned ^ ^ ^1 positioned ~ ~-0.1 ~ run function asset:mob/0323.mini_elder_guardian/tick/event/attack/start
 
 # レーザー照射
     execute if score @s General.Mob.Tick matches 40..159 anchored eyes positioned ^ ^ ^ run function asset:mob/0323.mini_elder_guardian/tick/event/attack/laser/
