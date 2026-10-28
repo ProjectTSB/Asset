@@ -5,7 +5,7 @@
 # @within asset:mob/alias/323/tick
 
 # 疑似HurtTimeによるのけぞり管理
-    execute store result storage asset:context this.HurtTime int 0.9999999999 run data get storage asset:context this.HurtTime
+    execute unless data storage asset:context this{HurtTime:-1} store result storage asset:context this.HurtTime int 0.9999999999 run data get storage asset:context this.HurtTime
     execute if data storage asset:context this{HurtTime:0} run data modify entity @s NoAI set value 1b
     execute if data storage asset:context this{HurtTime:0} run data modify storage asset:context this.HurtTime set value -1
 
