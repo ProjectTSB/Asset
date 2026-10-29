@@ -5,4 +5,4 @@
 # @within function asset:effect/0386.pk_insight/_/given
 
 # modifier付与
-    function asset:effect/0386.pk_insight/modifier/add
+    function asset:effect/0386.pk_insight/modifier/add/
