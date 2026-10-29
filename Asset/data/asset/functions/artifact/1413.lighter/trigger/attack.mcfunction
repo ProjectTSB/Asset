@@ -14,6 +14,9 @@
     playsound item.firecharge.use player @a ~ ~ ~ 0.8 0.8 0
     playsound block.fire.ambient player @a ~ ~ ~ 0.8 1.0 0
 
+# 追加当たり判定から同じ本体へ重ねてダメージを与えないよう、セッションを開く
+    function api:damage/single_damage_session/open
+
 # 狙った敵へのダメージ
     data modify storage api: Argument.Damage set value 50f
     data modify storage api: Argument.AttackType set value "Magic"
@@ -24,3 +27,4 @@
 
 # 周囲の敵へのダメージ
     execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!139.MainTarget,tag=!Uninterferable,distance=..4] run function asset:artifact/1413.lighter/trigger/splash_damage
+    function api:damage/single_damage_session/close
