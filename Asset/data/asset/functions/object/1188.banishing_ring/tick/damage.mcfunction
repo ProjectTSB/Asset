@@ -30,5 +30,5 @@
     playsound entity.evoker.prepare_summon player @a ~ ~ ~ 1 1.75
 
 # リセット
-    data modify storage asset:context this.Interval set value 20
+    data modify storage asset:context this.Interval set from storage asset:context this.AttackInterval
     scoreboard players reset $UserID Temporary
