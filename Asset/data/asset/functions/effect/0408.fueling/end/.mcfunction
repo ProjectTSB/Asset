@@ -34,7 +34,7 @@
     scoreboard players operation $E0408.Magnitude Temporary < $E0408.MaxMagnitude Temporary
 
     execute store result score $E0408.Multiplier Temporary run data get storage asset:context this.Multiplier
-    execute store result storage api: Argument.Damage double 0.01 run scoreboard players operation $E0408.Magnitude Temporary *= $E0408.Multiplier Temporary
+    execute store result storage api: Argument.Damage double 0.01 run scoreboard players operation $E0408.Multiplier Temporary *= $E0408.Magnitude Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     function api:damage/modifier
