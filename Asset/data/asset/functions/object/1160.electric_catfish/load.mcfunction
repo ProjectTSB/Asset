@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/1160.electric_catfish/**
-    scoreboard objectives add 1160.Cooldown dummy
+    scoreboard objectives add O1160.Cooldown dummy

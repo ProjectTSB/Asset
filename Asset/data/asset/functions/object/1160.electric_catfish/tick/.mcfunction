@@ -8,12 +8,12 @@
     scoreboard players remove @s General.Object.Tick 1
 
 # クールダウン
-    execute if score @s 1160.Cooldown matches 1.. run scoreboard players remove @s 1160.Cooldown 1
-    execute if score @s 1160.Cooldown matches 0 run tag @s remove 1160.Inactive
+    execute if score @s O1160.Cooldown matches 1.. run scoreboard players remove @s O1160.Cooldown 1
+    execute if score @s O1160.Cooldown matches 0 run tag @s remove O1160.Inactive
 
 # 踏まれたどうかをチェック
-    execute unless entity @s[tag=1160.Inactive] positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,dx=0] positioned ~ ~-0.8 ~ if entity @s[dx=0] run function asset:object/1160.electric_catfish/tick/check
-    execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=#lib:living_without_player,tag=1160.Candidate,dx=0] at @s run function asset:object/1160.electric_catfish/tick/attack.m with storage asset:context this
+    execute unless entity @s[tag=O1160.Inactive] positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,dx=0] positioned ~ ~-0.8 ~ if entity @s[dx=0] run function asset:object/1160.electric_catfish/tick/check
+    execute positioned ~-0.5 ~ ~-0.5 if entity @e[type=#lib:living_without_player,tag=O1160.Candidate,dx=0] at @s run function asset:object/1160.electric_catfish/tick/attack.m with storage asset:context this
 
 # 足元にブロックがないなら消す
     execute align y if block ~ ~-1 ~ #lib:no_collision/ run scoreboard players set @s General.Object.Tick 0

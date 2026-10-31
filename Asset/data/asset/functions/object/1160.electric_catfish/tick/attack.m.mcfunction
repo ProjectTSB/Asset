@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder $UserID
+    #declare score_holder $O1160.UserID
 
 # シングルダメージセッション開始
     function api:damage/single_damage_session/open
@@ -15,31 +15,31 @@
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
-    execute store result score $UserID Temporary run data get storage asset:context this.UserID
-    execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
+    execute store result score $O1160.UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $O1160.UserID Temporary run function api:damage/modifier
 
 # CandidateタグがついたランダムなEntityが対象
-    tag @e[type=#lib:living_without_player,tag=1160.Candidate,sort=random,limit=1] add 1160.SteppedOn
-    execute positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,sort=random,limit=1] run function api:damage/
+    tag @e[type=#lib:living_without_player,tag=O1160.Candidate,sort=random,limit=1] add O1160.SteppedOn
+    execute positioned ~-0.5 ~ ~-0.5 as @e[type=#lib:living_without_player,tag=O1160.SteppedOn,dx=0,sort=random,limit=1] run function api:damage/
     function api:damage/reset
 
 # 周囲のMobにもダメージ
     $execute store result storage api: Argument.Damage double $(DamageMultiplier) run data get storage asset:context this.Damage
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
-    execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
+    execute as @a if score @s UserID = $O1160.UserID Temporary run function api:damage/modifier
     $execute positioned ~$(AttackRadius) ~ ~$(AttackRadius) as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=$(AttackHitbox),dz=$(AttackHitbox)] positioned ~ ~-0.2 ~ if entity @s[dx=$(AttackHitbox),dz=$(AttackHitbox)] run function api:damage/
     function api:damage/reset
 
 # リセット
     function api:damage/reset
-    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.SteppedOn,dx=0,limit=1] remove 1160.SteppedOn
-    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=1160.Candidate,dx=0] remove 1160.Candidate
-    scoreboard players reset $UserID Temporary
+    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=O1160.SteppedOn,dx=0,limit=1] remove O1160.SteppedOn
+    execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=O1160.Candidate,dx=0] remove O1160.Candidate
+    scoreboard players reset $O1160.UserID Temporary
 
 # 0.5秒のクールダウン
-    execute store result score @s 1160.Cooldown run data get storage asset:context this.AttackCooldown
-    tag @s add 1160.Inactive
+    execute store result score @s O1160.Cooldown run data get storage asset:context this.AttackCooldown
+    tag @s add O1160.Inactive
 
 # 演出
     particle dust 1 1 0 2 ~ ~ ~ 1.5 0.1 1.5 0 100
