@@ -11,7 +11,7 @@ const run = new (Object.getPrototypeOf(async function () {}).constructor)(
   'github', 'context', 'core', 'exec', script);
 
 const file = (filename, previous_filename) => ({ filename, previous_filename });
-async function inspect(files, overrides = {}, changes = {}) {
+async function inspect(files, overrides = {}, changes = {}, options = {}) {
   const pr = {
     number: 42, state: 'open', draft: false, changed_files: files.length,
     head: { sha: 'head' }, base: { ref: 'master', sha: 'base' },
@@ -19,16 +19,26 @@ async function inspect(files, overrides = {}, changes = {}) {
   };
   let reads = 0;
   const calls = [];
+  const reviews = options.reviews ?? [];
+  const created = options.created ?? [];
+  const dismissed = options.dismissed ?? [];
   const github = {
     rest: { pulls: {
       get: async () => ({ data: reads++ ? { ...pr, ...changes } : pr }),
       listFiles: Symbol('listFiles'),
+      listReviews: Symbol('listReviews'),
+      createReview: async params => created.push(params),
+      dismissReview: async params => dismissed.push(params),
     } },
     paginate: async (method, params) => {
+      if (method === github.rest.pulls.listReviews) return reviews;
       assert.equal(method, github.rest.pulls.listFiles);
       assert.equal(params.per_page, 100);
       return files;
     },
+    request: async () => ({ data: [{ type: 'pull_request', parameters: {
+      dismiss_stale_reviews_on_push: options.dismissStale ?? true,
+    } }] }),
   };
   await run(github, {
     repo: { owner: 'ProjectTSB', repo: 'Example' },
@@ -111,4 +121,63 @@ test('PR title is one literal process argument', async () => {
   const title = 'Literal `command` $(command) ${{ secrets.TOKEN }}';
   const calls = await inspect([file('docs/guide.md')], { title });
   assert.equal(calls[0][11], `📝 ${title} (#42)`);
+});
+
+const botReview = (overrides = {}) => ({
+  id: 1, user: { login: 'github-actions[bot]' }, state: 'APPROVED', commit_id: 'head',
+  body: 'Automatically approved: changes are limited to docs/ and tests/.',
+  ...overrides,
+});
+
+test('docs/tests receives approval for the inspected commit', async () => {
+  const created = [];
+  await inspect([file('docs/guide.md')], {}, {}, { created });
+  assert.equal(created.length, 1);
+  assert.equal(created[0].event, 'APPROVE');
+  assert.equal(created[0].commit_id, 'head');
+});
+
+test('code and mixed changes never receive bot approval', async () => {
+  const created = [];
+  await inspect([file('docs/guide.md'), file('pack/main.mcfunction')], {}, {}, { created });
+  assert.deepEqual(created, []);
+});
+
+test('auto-approval is refused without stale-review dismissal', async () => {
+  const created = [];
+  await assert.rejects(inspect([file('docs/guide.md')], {}, {}, {
+    created, dismissStale: false,
+  }), /dismissal of stale reviews/);
+  assert.deepEqual(created, []);
+});
+
+test('current approval is not duplicated; dismissed or older approvals are renewed', async () => {
+  for (const [review, count] of [
+    [botReview(), 0], [botReview({ state: 'DISMISSED' }), 1],
+    [botReview({ commit_id: 'old' }), 1],
+  ]) {
+    const created = [];
+    await inspect([file('docs/guide.md')], { auto_merge: {} }, {}, {
+      created, reviews: [review],
+    });
+    assert.equal(created.length, count);
+  }
+});
+
+test('ineligible PR dismisses only approvals from this automation', async () => {
+  const dismissed = [];
+  await inspect([file('pack/main.mcfunction')], {}, {}, {
+    dismissed, reviews: [botReview(),
+      botReview({ id: 2, user: { login: 'maintainer' } }),
+      botReview({ id: 3, body: 'Other automation' })],
+  });
+  assert.deepEqual(dismissed.map(review => review.review_id), [1]);
+});
+
+test('the Actions bot does not attempt to approve its own PR', async () => {
+  const created = [];
+  await inspect([file('docs/guide.md')], {
+    user: { login: 'github-actions[bot]' },
+  }, {}, { created });
+  assert.deepEqual(created, []);
 });
