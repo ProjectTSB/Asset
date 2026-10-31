@@ -11,6 +11,9 @@
 # Effect 408を付与、MP計測開始
     data modify storage api: Argument.ID set value 408
 
+    # 効果時間
+        data modify storage api: Argument.Duration set value 100
+
     ## 攻撃情報
     # 最低ベクトル / 最低ダメージ(倍率2)
         data modify storage api: Argument.FieldOverride.MinMagnitude set value 100
