@@ -6,7 +6,7 @@
 
 #> private
 # @private
-    #declare $score_holder $Stack
+    #declare score_holder $A1620.Stack
 
 # Effect395から情報を取得してEffect396を付与
     data modify storage api: Argument.ID set value 395
@@ -16,9 +16,9 @@
     data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
     data modify storage api: Argument.FieldOverride.ElementType set value "Water"
 
-    execute store result score $Stack Temporary run data get storage api: Return.Effect.Stack
-    execute store result storage api: Argument.Stack int 1 run scoreboard players get $Stack Temporary
-    execute store result storage api: Argument.Duration int 600 run scoreboard players get $Stack Temporary
+    execute store result score $A1620.Stack Temporary run data get storage api: Return.Effect.Stack
+    execute store result storage api: Argument.Stack int 1 run scoreboard players get $A1620.Stack Temporary
+    execute store result storage api: Argument.Duration int 600 run scoreboard players get $A1620.Stack Temporary
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
@@ -26,3 +26,6 @@
     data modify storage api: Argument.ID set value 395
     function api:entity/mob/effect/remove/from_id
     function api:entity/mob/effect/reset
+
+# リセット
+    scoreboard players reset $A1620.Stack

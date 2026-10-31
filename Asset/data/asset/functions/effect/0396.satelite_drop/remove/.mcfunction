@@ -6,11 +6,11 @@
 
 #> Private
 # @private
-    #declare score_holder $UserID
+    #declare score_holder $E0396.UserID
 
 # 自身に紐づいていて、Idleタグを持つObject 1192を削除
-    scoreboard players operation $UserID Temporary = @s UserID
-    execute as @e[type=marker,tag=1192.Idle,distance=..3] if score @s 1192.UserID = $UserID Temporary run kill @s
+    scoreboard players operation $E0396.UserID Temporary = @s UserID
+    execute as @e[type=marker,tag=O1192.Idle,distance=..3] if score @s O1192.UserID = $E0396.UserID Temporary run kill @s
 
 # リセット
-    scoreboard players reset $UserID Temporary
+    scoreboard players reset $E0396.UserID

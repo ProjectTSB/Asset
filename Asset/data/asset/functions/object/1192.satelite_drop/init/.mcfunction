@@ -8,10 +8,10 @@
     execute store result score @s General.Object.Tick run data get storage asset:context this.Count 600
 
 # Artifact側からアクセスする用のID紐づけ
-    execute store result score @s 1192.UserID run data get storage asset:context this.UserID
+    execute store result score @s O1192.UserID run data get storage asset:context this.UserID
 
 # 即発射の場合はIdleタグを外す
-    execute if data storage asset:context this{LaunchInstantly:true} run tag @s remove 1192.Idle
+    execute if data storage asset:context this{LaunchInstantly:true} run tag @s remove O1192.Idle
 
 # super.init
     function asset:object/super.init

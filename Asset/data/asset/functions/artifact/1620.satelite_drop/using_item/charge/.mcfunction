@@ -6,20 +6,20 @@
 
 #> private
 # @private
-    #declare score_holder $1620.Stack
+    #declare score_holder $A1620.Stack
 
 # Effect395のスタックを1増やして付与
     data modify storage api: Argument.ID set value 395
     function api:entity/mob/effect/get/from_id
 
     data modify storage api: Argument.ID set value 395
-    execute store result score $1620.Stack Temporary run data get storage api: Return.Effect.Stack
-    execute store result storage api: Argument.Stack int 1 run scoreboard players add $1620.Stack Temporary 1
+    execute store result score $A1620.Stack Temporary run data get storage api: Return.Effect.Stack
+    execute store result storage api: Argument.Stack int 1 run scoreboard players add $A1620.Stack Temporary 1
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # スタックが最大ならこの先の処理はスキップ
-    execute if score $1620.Stack Temporary matches 4.. run return run scoreboard players reset $1620.Stack Temporary
+    execute if score $A1620.Stack Temporary matches 4.. run return run scoreboard players reset $A1620.Stack Temporary
 
 # MP消費
     data modify storage api: Argument.Fluctuation set value -40
@@ -32,4 +32,4 @@
     particle wax_off ~ ~0.5 ~ 0.2 0.5 0.2 3 15
 
 # リセット
-    scoreboard players reset $1620.Stack Temporary
+    scoreboard players reset $A1620.Stack

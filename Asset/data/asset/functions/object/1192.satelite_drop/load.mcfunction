@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/1192.satelite_drop/**
-    scoreboard objectives add 1192.UserID dummy
+    scoreboard objectives add O1192.UserID dummy

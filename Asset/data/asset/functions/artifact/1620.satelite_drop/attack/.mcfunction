@@ -4,13 +4,13 @@
 #
 # @within function asset:artifact/1620.satelite_drop/**
 
-# ランダムなObject 1192から1192.Idleを外す
-    execute as @e[type=marker,tag=1192.Idle,distance=..3] if score @s 1192.UserID = @p[tag=this] UserID run tag @s add 1192.Launchable
+# ランダムなObject 1192からO1192.Idleを外す
+    execute as @e[type=marker,tag=O1192.Idle,distance=..3] if score @s O1192.UserID = @p[tag=this] UserID run tag @s add O1192.Launchable
     #なんらかの理由でObjectが近くに存在しない場合、LaunchInstantlyをtrueにした状態のObjectを新しく召喚
-    execute unless entity @e[type=marker,tag=1192.Launchable,distance=..3] run function asset:artifact/1620.satelite_drop/attack/launch_new
+    execute unless entity @e[type=marker,tag=O1192.Launchable,distance=..3] run function asset:artifact/1620.satelite_drop/attack/launch_new
 
-    execute anchored eyes positioned ^ ^-0.1 ^0.5 as @e[type=marker,tag=1192.Launchable,distance=..3,sort=arbitrary,limit=1] if score @s 1192.UserID = @p[tag=this] UserID run function asset:artifact/1620.satelite_drop/attack/launch
-    tag @e[type=marker,tag=1192.Launchable,distance=..3] remove 1192.Launchable
+    execute anchored eyes positioned ^ ^-0.1 ^0.5 as @e[type=marker,tag=O1192.Launchable,distance=..3,sort=arbitrary,limit=1] if score @s O1192.UserID = @p[tag=this] UserID run function asset:artifact/1620.satelite_drop/attack/launch
+    tag @e[type=marker,tag=O1192.Launchable,distance=..3] remove O1192.Launchable
 
 # Effect396のスタックを1減らす
     data modify storage api: Argument.ID set value 396

@@ -5,4 +5,4 @@
 # @within asset:object/alias/1192/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Tags:["ObjectInit","1192.Idle"]}
+    summon marker ~ ~ ~ {Tags:["ObjectInit","O1192.Idle"]}
