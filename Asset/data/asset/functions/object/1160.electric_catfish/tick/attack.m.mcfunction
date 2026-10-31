@@ -35,7 +35,7 @@
     function api:damage/reset
     execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=O1160.SteppedOn,dx=0,limit=1] remove O1160.SteppedOn
     execute positioned ~-0.5 ~ ~-0.5 run tag @e[type=#lib:living_without_player,tag=O1160.Candidate,dx=0] remove O1160.Candidate
-    scoreboard players reset $O1160.UserID Temporary
+    scoreboard players reset $O1160.UserID
 
 # 0.5秒のクールダウン
     execute store result score @s O1160.Cooldown run data get storage asset:context this.AttackCooldown
