@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"エアバッグ","color":"#f5e495"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"作動時、攻撃者にダメージを与えて吹っ飛ばし","color":"white"}','{"text":"さらに鈍足も5秒間付与する","color":"white"}']
+    data modify storage asset:artifact Lore set value ['{"text":"作動時、攻撃者にダメージを与えて吹っ飛ばし","color":"white"}','{"text":"さらに鈍足を5秒間付与する","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.gunpowder"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
