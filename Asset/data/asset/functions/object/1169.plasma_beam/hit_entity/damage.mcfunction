@@ -6,14 +6,14 @@
 
 #> Private
 # @private
-    #declare score_holder $UserID
+    #declare score_holder $O1169.UserID
 
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
-    execute store result score $UserID Temporary run data get storage asset:context this.UserID
-    execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
+    execute store result score $O1169.UserID Temporary run data get storage asset:context this.UserID
+    execute as @a if score @s UserID = $O1169.UserID Temporary run function api:damage/modifier
     function api:damage/
     function api:damage/reset
 
@@ -23,4 +23,4 @@
     execute rotated ~ -30 run function lib:motion/looking
 
 # リセット
-    scoreboard players reset $UserID Temporary
+    scoreboard players reset $O1169.UserID Temporary

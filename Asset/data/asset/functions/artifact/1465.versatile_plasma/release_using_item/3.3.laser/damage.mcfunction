@@ -10,8 +10,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Thunder"
     function api:damage/modifier
-    execute as @e[type=#lib:living_without_player,tag=HitTarget,distance=..20] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=A1465.HitTarget,distance=..20] run function api:damage/
     function api:damage/reset
 
-# HitTargetタグ削除
-    tag @e[type=#lib:living_without_player,tag=HitTarget,distance=..20] remove HitTarget
+# A1465.HitTargetタグ削除
+    tag @e[type=#lib:living_without_player,tag=A1465.HitTarget,distance=..20] remove A1465.HitTarget
