@@ -20,7 +20,6 @@
     data modify storage api: Argument.ID set value 613
     data modify storage api: Argument.Stack set from storage api: Return.Difficulty
     execute store result storage api: Argument.Duration int 50 run scoreboard players add $Difficulty Temporary 1
-    data modify storage api: Argument.FieldOverride.MobUUID set from storage asset:context this.MobUUID
     execute as @a[tag=Victim,distance=..32] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
