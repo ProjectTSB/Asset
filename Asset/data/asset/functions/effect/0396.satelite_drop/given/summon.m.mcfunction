@@ -12,10 +12,15 @@
     scoreboard players remove $E0396.Stack Temporary 1
 
 # Object1192召喚
-    #攻撃情報
-    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
-    data modify storage api: Argument.FieldOverride.AttackType set from storage asset:context this.AttackType
-    data modify storage api: Argument.FieldOverride.ElementType set from storage asset:context this.ElementType
+    # 攻撃情報
+        data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+        data modify storage api: Argument.FieldOverride.AttackType set from storage asset:context this.AttackType
+        data modify storage api: Argument.FieldOverride.ElementType set from storage asset:context this.ElementType
+
+    # 発射体のField
+        data modify storage api: Argument.FieldOverride.Speed set from storage asset:context this.Speed
+        data modify storage api: Argument.FieldOverride.Range set from storage asset:context this.Range
+
     data modify storage api: Argument.ID set value 1192
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     #$(Angle)°ずつ角度をを変えて召喚

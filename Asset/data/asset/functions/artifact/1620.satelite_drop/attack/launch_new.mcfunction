@@ -6,9 +6,15 @@
 
     data modify storage api: Argument.FieldOverride.LaunchInstantly set value true
     data modify storage api: Argument.FieldOverride.Count set value 1
-    data modify storage api: Argument.FieldOverride.Damage set value 150
-    data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
-    data modify storage api: Argument.FieldOverride.ElementType set value "Water"
+    # 攻撃情報
+        data modify storage api: Argument.FieldOverride.Damage set value 150
+        data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
+        data modify storage api: Argument.FieldOverride.ElementType set value "Water"
+
+    # 発射体のField
+        data modify storage api: Argument.FieldOverride.Speed set value 3
+        data modify storage api: Argument.FieldOverride.Range set value 30
+
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     data modify storage api: Argument.ID set value 1192
     function api:object/summon
