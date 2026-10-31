@@ -13,7 +13,7 @@
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
-    data modify storage asset:artifact Name set value '{"text":"アクアバレット","color":"#24ccff"}'
+    data modify storage asset:artifact Name set value '{"text":"アクアバレット","color":"#26beff"}'
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"魔法の水弾を発射し、魔法水属性ダメージを与える","color":"white"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
