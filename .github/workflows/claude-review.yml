@@ -1,0 +1,203 @@
+name: claude-review
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pull_request:
+        description: Pull request number
+        required: true
+        type: number
+
+permissions: {}
+
+concurrency:
+  group: claude-review-${{ github.event.pull_request.number || inputs.pull_request }}
+  cancel-in-progress: false
+
+env:
+  # 投稿に使うアカウント
+  # このアカウントが作ったPRはレビューしない
+  CLAUDE_REVIEW_POSTER: tatuharu
+
+jobs:
+  # PRの情報と既存のスレッドを集め、レビューするかを決める
+  # PRのコードはcheckoutしない
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      run: ${{ steps.collect.outputs.run }}
+      head: ${{ steps.collect.outputs.head }}
+      base: ${{ steps.collect.outputs.base }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/claude-review
+      - id: collect
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        with:
+          script: |
+            const { collect } = require(`${process.env.GITHUB_WORKSPACE}/.github/claude-review/collect.cjs`);
+            await collect({ github, context, core, outDir: 'context' });
+      - if: steps.collect.outputs.run == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: claude-review-context
+          path: context
+          retention-days: 14
+
+  # Claudeがレビューと実機検証をして、投稿内容をreview.jsonに書く
+  # GitHubへの書き込み権限は持たない
+  review:
+    needs: collect
+    if: needs.collect.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    environment: claude-review
+    permissions:
+      contents: read
+    steps:
+      # DevSpaceは承認済みのコミットに固定し、検証ランナーとAGENTS.mdをここから使う
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ProjectTSB/DevSpace
+          ref: 0a4877c30d9be852946a8ed1bdfa6ac3c5efa0c8
+          path: devspace
+          persist-credentials: false
+      # このワークフローと同じmasterのコミットから、プロンプト・補助スクリプト・ナレッジだけを取り出す
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: devspace/.ci/asset-master
+          persist-credentials: false
+          sparse-checkout: |
+            .github/claude-review
+            docs
+      # PRのheadはデータとして取り出す
+      # ランナーでは実行せず、サーバーがデータパックとして読むだけにする
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.collect.outputs.head }}
+          path: devspace/Asset
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ProjectTSB/TheSkyBlessing
+          ref: master
+          path: devspace/TheSkyBlessing
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ProjectTSB/Asset-AnimatedJava
+          ref: dist
+          path: devspace/Asset-AnimatedJava
+          persist-credentials: false
+      # 文章の推敲に使うyomiyasu（MIT）を、固定したコミットで取り出す
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: nanaism/yomiyasu
+          ref: 68075bea91ae27958766effd6aaa56d42d6be125
+          path: devspace/.ci/yomiyasu
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: claude-review-context
+          path: devspace/work/context
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      # サーバーのjarと検証用クライアントの依存を使い回す
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            devspace/.cache/server-1.20.4.jar
+            devspace/.cache/verification-client
+          key: claude-review-runtime-${{ hashFiles('devspace/scripts/verification/package-lock.json') }}
+      - name: Prepare diffs and runner settings
+        run: |
+          node devspace/.ci/asset-master/.github/claude-review/diffs.cjs devspace/Asset devspace/work/context
+          printf 'ACCEPT_EULA=true\n' > devspace/devspace.local.conf
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@2.1.296
+      # ファイルの道具は作業フォルダの中に限り、書き込みはwork/の下、コマンドは検証とyomiyasuだけを許す
+      # 許可していない操作は確認を求めずに拒否し、Bashの子プロセスからは認証情報の環境変数を消す
+      - name: Review
+        working-directory: devspace
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_CODE_SUBPROCESS_ENV_SCRUB: '1'
+        run: |
+          claude -p \
+            --model claude-opus-5-5 --effort xhigh \
+            --restricted --tools Read,Glob,Grep,Write,Edit,Bash,TodoWrite \
+            --permission-prompts none \
+            --allowedTools Read Glob Grep TodoWrite 'Edit(./work/**)' \
+              'Bash(sh scripts/verify.sh work/scenarios/*)' \
+              'Bash(python3 .ci/asset-master/.github/claude-review/yomiyasu.py *)' \
+            --disallowedTools WebFetch WebSearch \
+            --no-session-persistence --output-format stream-json --verbose \
+            < .ci/asset-master/.github/claude-review/prompt.md > work/claude.jsonl
+          test -f work/review.json
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: claude-review-output
+          path: devspace/work/review.json
+          retention-days: 14
+      # 判断の根拠を残す
+      # 検証用のワールド・ライブラリは含めない
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: claude-review-evidence
+          retention-days: 14
+          if-no-files-found: ignore
+          path: |
+            devspace/work
+            devspace/.yomiyasu/runs
+            devspace/.runtime/verification-runs/*/result.json
+            devspace/.runtime/verification-runs/*/scenario.json
+            devspace/.runtime/verification-runs/*/*.log
+
+  # review.jsonを検査してから投稿する
+  # Claudeは動かさない
+  post:
+    needs: [collect, review]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: claude-review
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/claude-review
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: claude-review-context
+          path: context
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: claude-review-output
+          path: output
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
+        env:
+          # trueのときだけ投稿する
+          # それ以外は、投稿する内容を実行結果の概要に出す
+          POST_ENABLED: ${{ vars.CLAUDE_REVIEW_POST }}
+        with:
+          github-token: ${{ secrets.CLAUDE_REVIEW_POST_TOKEN || github.token }}
+          script: |
+            const { post } = require(`${process.env.GITHUB_WORKSPACE}/.github/claude-review/post.cjs`);
+            await post({ github, context, core, contextDir: 'context', outputDir: 'output' });
