@@ -14,7 +14,7 @@
     execute if score $2140.Temp Temporary matches 0 run return run scoreboard players reset $2140.Temp Temporary
 
 # ディスプレイを召喚する
-    execute at @s run summon item_display ~ ~16 ~ {Tags:["2140.Meteor.Display","2140.Temp"],start_interpolation:0,teleport_duration:60,billboard:"center",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:fire_charge",Count:1b}}
+    execute at @s run summon item_display ~ ~16 ~ {Tags:["2140.Meteor.Display","2140.Temp"],start_interpolation:0,teleport_duration:59,billboard:"center",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},item:{id:"minecraft:fire_charge",Count:1b}}
     execute at @s positioned ~ ~16 ~ as @e[type=item_display,tag=2140.Temp,distance=..0.001] run tp @s ~ ~-16 ~
 
 # 位置調整
