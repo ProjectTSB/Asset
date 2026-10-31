@@ -1,8 +1,8 @@
-#> asset:artifact/1695.aqua_bullet/trigger/shoot
+#> asset:artifact/1694.aqua_bullet/trigger/shoot
 #
 #
 #
-# @within function asset:artifact/1695.aqua_bullet/trigger/3.main
+# @within function asset:artifact/1694.aqua_bullet/trigger/3.main
 
 #> Private
 # @private

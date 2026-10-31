@@ -1,15 +1,15 @@
-#> asset:artifact/1695.aqua_bullet/give/2.give
+#> asset:artifact/1694.aqua_bullet/give/2.give
 #
 # 神器の作成部 ここでID等を定義する
 #
 # @user
-# @within function asset:artifact/1695.aqua_bullet/give/1.trigger
+# @within function asset:artifact/1694.aqua_bullet/give/1.trigger
 
 # 神器の説明や消費MPなどをここで設定する。
 # 最後にasset:artifact/common/giveを実行することで入手可能。
 
 # 神器のID (int) スプレッドシートの値を入れる
-    data modify storage asset:artifact ID set value 1695
+    data modify storage asset:artifact ID set value 1694
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
