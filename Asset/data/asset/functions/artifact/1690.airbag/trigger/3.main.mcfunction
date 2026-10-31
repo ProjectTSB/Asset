@@ -26,9 +26,4 @@
     function api:damage/reset
 
 # Motionで吹っ飛ばす
-# 対象が非AssetMobの場合、ノクバ耐性がないためオーバーフローしうるので、それぞれでMotion値を調整する
-    data modify storage lib: Argument.VectorMagnitude set value 5d
-    execute if entity @e[type=#lib:living_without_player,tag=Attacker,tag=!Uninterferable,scores={MobID=-2147483648..2147483647},distance=..32] run data modify storage lib: Argument.VectorMagnitude set value 20d
-    data modify storage lib: Argument.KnockbackResist set value true
-    execute as @e[type=#lib:living_without_player,tag=Attacker,tag=!Immovable,tag=!Uninterferable,distance=..32] positioned as @s facing entity @p[tag=this] feet facing ^ ^ ^-1 rotated ~ ~-20 run function lib:motion/
-    data remove storage lib: Argument
+    execute as @e[type=#lib:living_without_player,tag=Attacker,tag=!Immovable,tag=!Uninterferable,distance=..32] positioned as @s facing entity @p[tag=this] feet facing ^ ^ ^-1 rotated ~ ~-20 run function asset:artifact/1690.airbag/trigger/knockback

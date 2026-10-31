@@ -28,6 +28,12 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 神器tickの対象状態と公開タグは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「神器tickと死亡・スペクテイター」を参照する。装備回収と発動経路の停止を混同せず、仕様で必要な条件を `2.check_condition` に置く。
 
+## 耐性を反映した吹き飛ばしの強度を制限する
+
+[エアバッグのknockback](../../Asset/data/asset/functions/artifact/1690.airbag/trigger/knockback.mcfunction) は、耐性の高い相手にも強い吹き飛ばしを与えつつ、低耐性の相手への速度を制限するため、耐性rに対して `min(9, 20 × (1 − r))` を使う。低耐性側では強度が9で揃う仕様であり、耐性の全域で強さの差が必要な用途では式を選び直す。MobIDの有無ではなく、対象ごとの実際の耐性を使う。
+
+耐性はこの関数で計算するため、`lib:motion/looking` には `KnockbackResist:false` を渡して二重適用を避ける。APIの速度の反映方式は、依存先TheSkyBlessingの `docs/knowledge/runtime-components.md`「幾何・移動・ROM」と `lib:motion/looking` のIMP Docを参照する。
+
 ## 属性表示と実際の攻撃、クールダウンの指定を揃える
 
 神器の `AttackInfo.AttackType`／`ElementType` はLore用の配列で、表示する属性を列挙する。実際の攻撃はDamage APIへ単一の属性を渡す。値の一覧と計算規則は、依存先TheSkyBlessingの `docs/knowledge/api-and-storage.md`「攻撃の属性と能力値のAttributesを区別する」を参照する。
