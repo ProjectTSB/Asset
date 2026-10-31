@@ -25,5 +25,8 @@
     execute as @e[type=#lib:living_without_player,tag=Attacker,tag=!Uninterferable,distance=..32] run function api:damage/
     function api:damage/reset
 
+# Attackerにそこそこの鈍足
+    effect give @e[type=#lib:living_without_player,tag=Attacker,tag=!Uninterferable,distance=..32] slowness 3 5 true
+
 # Motionで吹っ飛ばす
     execute as @e[type=#lib:living_without_player,tag=Attacker,tag=!Immovable,tag=!Uninterferable,distance=..32] positioned as @s facing entity @p[tag=this] feet facing ^ ^ ^-1 rotated ~ ~-20 run function asset:artifact/1690.airbag/trigger/knockback
