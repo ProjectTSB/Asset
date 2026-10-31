@@ -14,12 +14,18 @@
 # @private
     #declare score_holder $A1690.Count
 
+# CanUsedでないならreturn
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # アイテムチェック
-    execute if entity @s[tag=CanUsed] store result score $A1690.Count Temporary run clear @s gunpowder 0
-    execute if entity @s[tag=CanUsed] unless score $A1690.Count Temporary matches 1.. run tag @s remove CanUsed
+    execute store result score $A1690.Count Temporary run clear @s gunpowder 0
+    execute unless score $A1690.Count Temporary matches 1.. run tag @s remove CanUsed
+    scoreboard players reset $A1690.Count
+    execute if entity @s[tag=!CanUsed] run return fail
 
-# CanUsedタグをチェックして3.main.mcfunctionを実行する
-    execute if entity @s[tag=CanUsed] run function asset:artifact/1690.airbag/trigger/3.main
+# 範囲内に敵がいなけりゃ失敗
+    execute unless entity @e[type=#lib:living_without_player,tag=Attacker,tag=!Uninterferable,distance=..32] run tag @s remove CanUsed
+    execute if entity @s[tag=!CanUsed] run return fail
 
-# リセット
-    scoreboard players reset $A1690.Count Temporary
+# 3.main.mcfunctionを実行する
+    function asset:artifact/1690.airbag/trigger/3.main
