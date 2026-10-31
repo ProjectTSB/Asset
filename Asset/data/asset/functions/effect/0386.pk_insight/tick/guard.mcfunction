@@ -4,7 +4,6 @@
 #
 # @within function asset:effect/0386.pk_insight/tick/
 
-
 # デバフを消す
     function asset:effect/0386.pk_insight/modifier/remove
 
