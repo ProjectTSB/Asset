@@ -15,7 +15,7 @@ async function inspect(files, overrides = {}, changes = {}, options = {}) {
   const pr = {
     number: 42, state: 'open', draft: false, changed_files: files.length,
     head: { sha: 'head' }, base: { ref: 'master', sha: 'base' },
-    title: 'Update documentation', auto_merge: null, ...overrides,
+    title: 'Update documentation', auto_merge: null, user: { login: 'author' }, ...overrides,
   };
   let reads = 0;
   const calls = [];
@@ -29,6 +29,12 @@ async function inspect(files, overrides = {}, changes = {}, options = {}) {
       listReviews: Symbol('listReviews'),
       createReview: async params => created.push(params),
       dismissReview: async params => dismissed.push(params),
+    }, repos: {
+      getCollaboratorPermissionLevel: async ({ username }) => {
+        assert.equal(username, pr.user.login);
+        if (options.permission === 'unknown') throw new Error('Not Found');
+        return { data: { permission: options.permission ?? 'write' } };
+      },
     } },
     paginate: async (method, params) => {
       if (method === github.rest.pulls.listReviews) return reviews;
@@ -43,7 +49,7 @@ async function inspect(files, overrides = {}, changes = {}, options = {}) {
   await run(github, {
     repo: { owner: 'ProjectTSB', repo: 'Example' },
     payload: { pull_request: { number: 42 } },
-  }, { info() {} }, {
+  }, { info() {}, warning() {} }, {
     exec: async (command, args) => calls.push([command, ...args]),
   });
   return calls;
@@ -117,6 +123,47 @@ test('an existing auto-merge request is left intact', async () => {
   }), []);
 });
 
+test('paths a person has to merge are excluded, individual notes are not', async () => {
+  for (const files of [
+    [file('docs/knowledge/README.md')],
+    [file('docs/guide.md'), file('docs/knowledge/README.md')],
+    [file('docs/knowledge/entry.md', 'docs/knowledge/README.md')],
+    [file('docs/knowledge/README.md', 'docs/knowledge/entry.md')],
+    [file('.github/workflows/auto-merge-docs-tests.yml')],
+    [file('docs/knowledge/readme.md')],
+    [file('docs/knowledge/notes/CLAUDE.md')],
+    [file('docs/CLAUDE.local.md')],
+    [file('tests/AGENTS.md')],
+    [file('docs/.claude/rules/reading.md')],
+    [file('docs/.claude')],
+    [file('docs/knowledge/AGENTS.override.md')],
+    [file('docs/knowledge/notes/motion/new.md', 'docs/.Claude/rules/old.md')],
+  ]) assert.deepEqual(await inspect(files), []);
+  for (const files of [
+    [file('docs/knowledge/notes/motion/no-inertia-tp-roundtrip.md')],
+    [file('docs/knowledge/notes/motion/new.md', 'docs/knowledge/notes/motion/old.md')],
+    [file('docs/knowledge/README-of-notes.md')],
+    [file('docs/claude-notes.md')],
+  ]) assert.equal((await inspect(files)).length, 1);
+});
+
+test('only PRs by people with write access qualify', async () => {
+  for (const permission of ['read', 'none', 'unknown']) {
+    const created = [];
+    assert.deepEqual(await inspect([file('docs/guide.md')], {}, {}, { permission, created }), []);
+    assert.deepEqual(created, []);
+  }
+  for (const permission of ['admin', 'write']) {
+    assert.equal((await inspect([file('docs/guide.md')], {}, {}, { permission })).length, 1);
+  }
+});
+
+test('paths a person has to merge never receive bot approval', async () => {
+  const created = [];
+  await inspect([file('docs/knowledge/README.md')], {}, {}, { created });
+  assert.deepEqual(created, []);
+});
+
 test('PR title is one literal process argument', async () => {
   const title = 'Literal `command` $(command) ${{ secrets.TOKEN }}';
   const calls = await inspect([file('docs/guide.md')], { title });
@@ -174,10 +221,11 @@ test('ineligible PR dismisses only approvals from this automation', async () => 
   assert.deepEqual(dismissed.map(review => review.review_id), [1]);
 });
 
-test('the Actions bot does not attempt to approve its own PR', async () => {
+test('a PR by the Actions bot, which has no write access, is left to a person', async () => {
   const created = [];
-  await inspect([file('docs/guide.md')], {
+  const calls = await inspect([file('docs/guide.md')], {
     user: { login: 'github-actions[bot]' },
-  }, {}, { created });
+  }, {}, { created, permission: 'none' });
+  assert.deepEqual(calls, []);
   assert.deepEqual(created, []);
 });
