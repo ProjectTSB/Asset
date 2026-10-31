@@ -28,7 +28,7 @@
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
     execute as @a if score @s UserID = $O1160.UserID Temporary run function api:damage/modifier
-    $execute positioned ~$(AttackRadius) ~ ~$(AttackRadius) as @e[type=#lib:living_without_player,tag=!1160.SteppedOn,dx=$(AttackHitbox),dz=$(AttackHitbox)] positioned ~ ~-0.2 ~ if entity @s[dx=$(AttackHitbox),dz=$(AttackHitbox)] run function api:damage/
+    $execute positioned ~$(AttackRadius) ~ ~$(AttackRadius) as @e[type=#lib:living_without_player,tag=!O1160.SteppedOn,dx=$(AttackHitbox),dz=$(AttackHitbox)] positioned ~ ~-0.2 ~ if entity @s[dx=$(AttackHitbox),dz=$(AttackHitbox)] run function api:damage/
     function api:damage/reset
 
 # リセット
