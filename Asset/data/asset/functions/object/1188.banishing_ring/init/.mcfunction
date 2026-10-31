@@ -7,5 +7,9 @@
 # 存在時間
     execute store result score @s General.Object.Tick run data get storage asset:context this.Tick
 
+# アニメーション開始(存在時間 - 3)
+    scoreboard players operation @s O1188.InterpolationTick = @s General.Object.Tick
+    scoreboard players remove @s O1188.InterpolationTick 3
+
 # Intervalに規定値を代入
     data modify storage asset:context this.Interval set from storage asset:context this.AttackInterval

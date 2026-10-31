@@ -7,8 +7,8 @@
 # Tick減算
     scoreboard players remove @s General.Object.Tick 1
 
-# 最初のtickだけ展開アニメーション
-    execute if score @s General.Object.Tick matches 3 run data modify entity @s transformation.scale set value [4.5f,4.5f,0.0f]
+# 召喚から3tick後だけ展開アニメーション
+    execute if score @s General.Object.Tick = @s O1188.InterpolationTick run data modify entity @s transformation.scale set value [4.5f,4.5f,0.0f]
 
 # Interval減算
     execute store result storage asset:context this.Interval int 0.9999999999 run data get storage asset:context this.Interval
