@@ -55,35 +55,6 @@ workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRの�
 
 差分判定とCLI呼出しの回帰確認は `node --test .github/tests/auto-merge-docs-tests.test.cjs`。APIとCLIを置き換えたローカル検証であり、Rulesetや実際のGitHubマージ動作の検証とは区別する。
 
-## PR の AI レビュー
-
-[claude-review](../../.github/workflows/claude-review.yml) は master 向けの PR を Claude Code でレビューし、`CLAUDE_REVIEW_POSTER`（tatuharu）のアカウントでレビューと返信を投稿する。起動は `pull_request_target` の opened・reopened・synchronize・ready_for_review と、PR 番号を指定する `workflow_dispatch`。Draft、フォークからの PR、`CLAUDE_REVIEW_POSTER` のアカウントが作った PR は対象外。
-
-| ジョブ | 権限・secret | 役割 |
-| --- | --- | --- |
-| collect | contents・pull-requests の読み取り | PR の情報と既存のスレッドを API から集め、レビューするかを決める。PR のコードは checkout しない |
-| review | contents の読み取り、`CLAUDE_CODE_OAUTH_TOKEN` | [プロンプト](../../.github/claude-review/prompt.md) に従って Claude がレビュー・実機検証・推敲をし、`work/review.json` を書く |
-| post | `CLAUDE_REVIEW_POST_TOKEN` | [post.cjs](../../.github/claude-review/post.cjs) が review.json の形式を検査してから投稿する |
-
-Claude が読む PR の本文・コメント・コードには、Claude への指示が仕込まれていることがある。review ジョブに GitHub への書き込み権限も投稿用のトークンも置かないのはそのためで、投稿の形式は決まった処理の post ジョブが検査する。検査するのは、冒頭文と「指摘はありません。」または指摘の一覧だけの本文、コードの外の `@` メンション、トークンらしい文字列、返信先が AI のスレッドか、レビューした head が今の head と同じか。
-
-review ジョブの作業フォルダは DevSpace で、`Asset/` に PR の head をデータとして取り出す。DevSpace・yomiyasu・Claude Code はワークフローに書いた版に固定し、更新もこのワークフローの PR で行う。Claude の道具は次のように絞る。
-
-- ファイルの道具は作業フォルダの中だけ（`--restricted`）で、書き込みは `work/` の下だけ
-- コマンドは `scripts/verify.sh` と [yomiyasu の呼び出し口](../../.github/claude-review/yomiyasu.py) だけ。yomiyasu 自体は作業フォルダの外も読めるので、呼び出し口で渡すファイルを `work/` の下に限る
-- `CLAUDE_CODE_SUBPROCESS_ENV_SCRUB` で、Bash の子プロセスから認証情報の環境変数を消す
-
-実機検証は、PR の変更がすべて `Asset/data/` の中にあるときだけ行う。シナリオ・`result.json`・ログ・yomiyasu の記録は、成果物 `claude-review-evidence` として14日間残る。
-
-投稿の末尾にはレビューした head と変更ファイルの一覧のハッシュを `<!-- claude-review head=… diff=… -->` として埋め込む。collect は、前回の投稿から差分が変わっていなければ review を動かさない。記録のない古い投稿（Mac から投稿した分）は、レビューの commit_id を前回の head とみなす。
-
-ファイルの外の設定は次のとおり。
-
-- environment `claude-review` の配備ブランチを master に限り、secret `CLAUDE_CODE_OAUTH_TOKEN`（`claude setup-token` で作る、発行した人のサブスクリプションの利用枠を使う1年有効のトークン）と `CLAUDE_REVIEW_POST_TOKEN`（`CLAUDE_REVIEW_POSTER` の fine-grained PAT。Asset の Pull requests の読み書きだけ）を置く。
-- リポジトリの変数 `CLAUDE_REVIEW_POST` が `true` のときだけ投稿する。それ以外では、投稿する内容を実行結果の概要に出すだけにする。
-
-collect の判定と post の検査の回帰確認は `node --test .github/tests/claude-review.test.cjs`。API を置き換えたローカルの試験であり、environment の保護や Claude の実際の振る舞いは確かめない。
-
 ## NBTの整数カウンタを、1未満の倍率で減らす
 
 NBT内の残距離・残時間をscoreへ往復させずに減らす場合は、DevSpaceの `docs/mcfunction-idioms.md`「整数化を挟む演算」の値域・丸めを確認する。[abstract_projectile](../../Asset/data/asset/functions/object/0001.abstract_projectile/tick/rec.m.mcfunction) の `RemainingRange` は正の整数を減らし0を維持する実例で、係数は `0.9999999999`。係数を1へ丸めない。
