@@ -9,9 +9,9 @@
     data modify storage api: Argument.AttackType set from storage asset:context this.AttackType
     data modify storage api: Argument.ElementType set from storage asset:context this.ElementType
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
-    execute as @p[tag=0393.This] run function api:damage/modifier
+    execute as @p[tag=E0393.This] run function api:damage/modifier
     function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @p[tag=0393.This] remove 0393.This
+    tag @p[tag=E0393.This] remove E0393.This

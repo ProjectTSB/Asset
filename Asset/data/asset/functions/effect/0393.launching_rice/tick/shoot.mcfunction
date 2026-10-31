@@ -6,17 +6,17 @@
 
 #> SpreadLib
 # @private
-    #declare tag SpreadMarker
+    #declare tag E0393.SpreadMarker
 
 # 前方拡散事前準備
-    summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
+    summon marker ~ ~ ~ {Tags:["E0393.SpreadMarker"]}
     data modify storage lib: Argument.Distance set value 10.0
     data modify storage lib: Argument.Spread set value 4.63
 # 前方拡散を実行する
-    execute as @e[type=marker,tag=SpreadMarker,limit=1] run function lib:forward_spreader/circle
+    execute as @e[type=marker,tag=E0393.SpreadMarker,limit=1] run function lib:forward_spreader/circle
 
 # 発射
-    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:effect/0393.launching_rice/tick/rec
+    execute facing entity @e[type=marker,tag=E0393.SpreadMarker,limit=1] feet anchored eyes positioned ^ ^ ^ run function asset:effect/0393.launching_rice/tick/rec
 
 # 演出
     playsound entity.chicken.egg player @a ~ ~ ~ 0.5 1.75
@@ -24,4 +24,4 @@
 
 # リセット
     data modify storage asset:context this.Interval set value 2
-    kill @e[type=marker,tag=SpreadMarker]
+    kill @e[type=marker,tag=E0393.SpreadMarker]
