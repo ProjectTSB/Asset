@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0405.predation_of_tree/_/remove",
         "asset:effect/0359.time_ticker_eclipse/_/remove",
         "asset:effect/0358.time_ticker_night/_/remove",
         "asset:effect/0357.time_ticker_day/_/remove",
@@ -123,6 +124,7 @@
         "asset:effect/0051.attack_base_debuff/_/remove",
         "asset:effect/0125.levitation/_/remove",
         "asset:effect/0007.defense_base_debuff/_/remove",
-        "asset:effect/0258.spirit_melody/_/remove"
+        "asset:effect/0258.spirit_melody/_/remove",
+        "asset:effect/0406.ocean_grace/_/remove"
     ]
 }
