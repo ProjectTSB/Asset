@@ -8,9 +8,9 @@
 # @private
     #declare score_holder $A1648.Count
 
-# まだホットバーに同神器があるならキャンセル
+# まだホットバーに同神器があるかつ装備中タグがついているならキャンセル
     execute store result score $A1648.Count Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1648}}}]
-    execute if score $A1648.Count Temporary matches 0 run function asset:artifact/1648.cursed_power_stone/dis_equip/3.main
+    execute if score $A1648.Count Temporary matches 0 if entity @s[tag=A1648.Equipping] run function asset:artifact/1648.cursed_power_stone/dis_equip/3.main
 
 # リセット
     scoreboard players reset $A1648.Count Temporary
