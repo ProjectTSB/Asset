@@ -8,7 +8,7 @@
 # @private
     #declare score_holder $MPRatio
 
-# Interval減産
+# Interval減算
     execute store result storage asset:context this.Interval int 0.9999999999 run data get storage asset:context this.Interval
 
 # Intervalが0ならMP消費
