@@ -6,20 +6,20 @@
 
 #> private
 # @private
-    #declare score_holder $Initial
-    #declare score_holder $Current
+    #declare score_holder $E0418.Initial
+    #declare score_holder $E0418.Current
 
 # MPを発動時と比較、大きいならEffect419を付与
-    execute store result score $Initial Temporary run data get storage asset:context this.InitialMP
+    execute store result score $E0418.Initial Temporary run data get storage asset:context this.InitialMP
     function api:mp/get_current
-    execute store result score $Current Temporary run data get storage api: Return.CurrentMP
+    execute store result score $E0418.Current Temporary run data get storage api: Return.CurrentMP
 
     data modify storage api: Argument.ID set value 419
     data modify storage api: Argument.Duration set from storage asset:context this.Buff.Duration
     data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Buff.Amount
-    execute if score $Current Temporary > $Initial Temporary run function api:entity/mob/effect/give
+    execute if score $E0418.Current Temporary > $E0418.Initial Temporary run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # リセット
-    scoreboard players reset $Initial Temporary
-    scoreboard players reset $Current Temporary
+    scoreboard players reset $E0418.Initial
+    scoreboard players reset $E0418.Current
