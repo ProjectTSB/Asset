@@ -7,3 +7,6 @@
 # 現在のMP値を保存
     function api:mp/get_current
     data modify storage asset:context this.InitialMP set from storage api: Return.CurrentMP
+
+# Intervalを設定
+    data modify storage asset:context this.Interval set from storage asset:context this.FluctuationInterval

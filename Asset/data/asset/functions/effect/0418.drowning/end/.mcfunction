@@ -15,6 +15,8 @@
     execute store result score $Current Temporary run data get storage api: Return.CurrentMP
 
     data modify storage api: Argument.ID set value 419
+    data modify storage api: Argument.Duration set from storage asset:context this.Buff.Duration
+    data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Buff.Amount
     execute if score $Current Temporary > $Initial Temporary run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
