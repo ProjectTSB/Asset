@@ -9,6 +9,22 @@
 
 # ここから先は神器側の効果の処理を書く
     data modify storage api: Argument.ID set value 409
+
+    # MP計測時間
+        data modify storage api: Argument.Duration set value 200
+
+    # MP差ごとのバリア付与量(倍率0.01)
+        data modify storage api: Argument.FieldOverride.Multiplier set value 10
+
+    # バリア最低値(倍率0.1)
+        data modify storage api: Argument.FieldOverride.MinAbsorption set value 30
+
+    # バリア最大値(倍率0.1)
+        data modify storage api: Argument.FieldOverride.MaxAbsorption set value 200
+
+    # バリア付与時間
+        data modify storage api: Argument.FieldOverride.AbsorptionDuration set value 600
+
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

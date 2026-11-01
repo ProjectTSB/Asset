@@ -6,23 +6,35 @@
 
 #> Private
 # @private
-    #declare score_holder $InitialMP
-    #declare score_holder $MP
-    #declare score_holder $200
+    #declare score_holder $E0409.InitialMP
+    #declare score_holder $E0409.MP
+    #declare score_holder $E0409.MaxAbsorption
+    #declare score_holder $E0409.MinAbsorption
+    #declare score_holder $E0409.Multiplier
 
-# バリア付与(最低3、最大20)
-    execute store result score $InitialMP Temporary run data get storage asset:context this.InitialMP
+# バリア付与
+    execute store result score $E0409.InitialMP Temporary run data get storage asset:context this.InitialMP
     function api:mp/get_current
-    execute store result score $MP Temporary run data get storage api: Return.CurrentMP
+    execute store result score $E0409.MP Temporary run data get storage api: Return.CurrentMP
 
-    scoreboard players operation $MP Temporary -= $InitialMP Temporary
-    execute if score $MP Temporary matches 1.. run scoreboard players add $MP Temporary 30
-    execute if score $MP Temporary matches ..0 run scoreboard players set $MP Temporary 30
-    scoreboard players operation $MP Temporary < $200 Const
+    #最大/最低値を取得
+    execute store result score $E0409.MinAbsorption Temporary run data get storage asset:context this.MinAbsorption
+    execute store result score $E0409.MaxAbsorption Temporary run data get storage asset:context this.MaxAbsorption
 
-    execute store result storage api: Argument.Amount double 0.1 run scoreboard players get $MP Temporary
-    data modify storage api: Argument.UUID set value [I;1,3,409,0]
-    function api:entity/player/absorption/add
+    #差を計算、想定値域におさめる
+    scoreboard players operation $E0409.MP Temporary -= $E0409.InitialMP Temporary
+    execute if score $E0409.MP Temporary matches 1.. run scoreboard players operation $E0409.MP Temporary += $E0409.MinAbsorption Temporary
+    execute if score $E0409.MP Temporary matches ..0 run scoreboard players operation $E0409.MP Temporary = $E0409.MinAbsorption Temporary
+    scoreboard players operation $E0409.MP Temporary < $E0409.MaxAbsorption Temporary
+
+    #Effect435付与
+    data modify storage api: Argument.ID set value 435
+    data modify storage api: Argument.Duration set from storage asset:context this.AbsorptionDuration
+
+    execute store result score $E0409.Multiplier Temporary run data get storage asset:context this.Multiplier
+    execute store result storage api: Argument.FieldOverride.Amount double 0.01 run scoreboard players operation $E0409.MP Temporary *= $E0409.Multiplier Temporary
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # 演出
     playsound entity.allay.ambient_without_item player @a ~ ~ ~ 1.0 2.0
@@ -30,5 +42,8 @@
     particle composter ~ ~1 ~ 0.2 0.5 0.2 0.01 15
 
 # リセット
-    scoreboard players reset $InitialMP Temporary
-    scoreboard players reset $MP Temporary
+    scoreboard players reset $E0409.InitialMP
+    scoreboard players reset $E0409.MP
+    scoreboard players reset $E0409.MinAbsorption
+    scoreboard players reset $E0409.MaxAbsorption
+    scoreboard players reset $E0409.Multiplier
