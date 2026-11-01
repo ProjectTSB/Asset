@@ -135,7 +135,7 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 
 文字・フォント・大きさ・回転方向・各変化の時間はregisterのFieldまたは召喚時のFieldOverrideで指定する。`LeftRotate` は固定方向の指定であり、ランダム化は呼出側か派生型が行う。`Tick` は初回待機と消失時の変化を含む消滅までのObject tick数（既定59）で、`3 + AppearDuration + DisappearDuration` 以上とする。`AppearDuration`・`SpinDuration`・`DisappearDuration` は1以上のtick数とする。
 
-初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化を開始するときにも次の90度への回転先を設定し、消失時間をかけて回転とscaleを同時に補間する。回転・scale・補間設定は表裏それぞれの反映用storageへ組み立て、各面への1回の `data merge entity`でまとめて反映する。通常回転ではscaleを含めず、現在の大きさを保つ。回転とscaleは補間時間を共有するため、通常回転の途中で消失へ移る場合は回転速度が変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
+初回の補間準備の待機はinitで3tickに設定し、内部の残り待機時間 `SpinInterval` で管理する。この3tickは暫定の実装値であり、クライアントへの初期データ受信を保証する値ではない。最初の回転で `AppearScale`（既定 `[5f,5f,0f]`）へ変化し、その後は `SpinDuration` ごとに90度回転する。消滅の `DisappearDuration` tick前に `DisappearScale`（既定 `[0f,0f,0f]`）への変化を開始し、指定したTickで両面を破棄する。最後の変化を開始するときにも次の90度への回転先を設定し、消失時間をかけて回転とscaleを同時に補間する。回転・scale・補間設定は表裏それぞれの反映用storageへ組み立て、各面への1回の `data modify entity @s {} merge from storage` でまとめて反映する。通常回転ではscaleを含めず、現在の大きさを保つ。回転とscaleは補間時間を共有するため、通常回転の途中で消失へ移る場合は回転速度が変わり得る。initやtickをoverrideして共通処理も必要な場合は対応するsuperを呼ぶ。
 
 `this.Phase` は2279が管理する参照用の実行段階で、init後は `"Waiting"`、初回待機終了後は `"Appearing"`、出現時の変化終了後は `"Rotating"`、消失開始後は `"Disappearing"` となる。継承先がそのtickの遷移を参照するときはsuper.tick後に判定する。寿命切れで破棄された後の参照は行わない。
 

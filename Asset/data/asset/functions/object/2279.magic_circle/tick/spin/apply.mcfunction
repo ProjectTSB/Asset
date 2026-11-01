@@ -28,5 +28,6 @@
     execute if data storage asset:context this{Phase:"Disappearing"} run function asset:object/2279.magic_circle/tick/disappear/apply
 
 # 組み立てたNBTを各面へ一度で反映する
-    function asset:object/2279.magic_circle/tick/spin/merge.m with storage asset:temp Args
+    data modify entity @s {} merge from storage asset:temp Args.Front
+    execute on passengers run data modify entity @s {} merge from storage asset:temp Args.Back
     data remove storage asset:temp Args
