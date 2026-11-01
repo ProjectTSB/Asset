@@ -15,4 +15,4 @@
     function api:entity/mob/effect/reset
 
 # 装備中タグを削除
-    tag @s remove 1648.Equipping
+    tag @s remove A1648.Equipping

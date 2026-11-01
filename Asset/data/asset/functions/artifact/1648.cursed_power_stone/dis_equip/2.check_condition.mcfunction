@@ -6,11 +6,11 @@
 
 #> private
 # @private
-    #declare score_holder $Count
+    #declare score_holder $A1648.Count
 
 # まだホットバーに同神器があるならキャンセル
-    execute store result score $Count Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1648}}}]
-    execute if score $Count Temporary matches 0 run function asset:artifact/1648.cursed_power_stone/dis_equip/3.main
+    execute store result score $A1648.Count Temporary if data storage asset:context New.Items.hotbar[{tag:{TSB:{ID:1648}}}]
+    execute if score $A1648.Count Temporary matches 0 run function asset:artifact/1648.cursed_power_stone/dis_equip/3.main
 
 # リセット
-    scoreboard players reset $Count Temporary
+    scoreboard players reset $A1648.Count Temporary
