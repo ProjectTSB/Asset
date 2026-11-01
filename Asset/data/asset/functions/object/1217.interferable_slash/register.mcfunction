@@ -18,7 +18,7 @@
     data modify storage asset:object ID set value 1217
 # フィールド(オプション)
     data modify storage asset:object Field.UserID set value -1
-    data modify storage asset:object Field.ReinforcmentTimer set value -1
+    data modify storage asset:object Field.ReinforcementTimer set value -1
     data modify storage asset:object Field.DamageMultiplier set value -1
     data modify storage asset:object Field.IsAdditional set value false
     data modify storage asset:object Field.AdditionalDamage set value -1
