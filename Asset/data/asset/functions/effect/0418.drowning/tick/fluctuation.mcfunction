@@ -6,7 +6,6 @@
 
 # 消費
     data modify storage api: Argument.Fluctuation set from storage asset:context this.MPFluctuation
-    data modify storage api: Argument.DisableLog set value 1b
     function api:mp/fluctuation
 
 # リセット
