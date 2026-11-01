@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:object/2221.aurora_scaffold/tick/break/process/
+# @within function asset:object/2221.aurora_scaffold/tick/break/process/**
 
 #> Private
 # @private

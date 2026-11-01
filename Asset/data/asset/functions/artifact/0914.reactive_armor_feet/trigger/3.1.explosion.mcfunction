@@ -26,4 +26,4 @@
     particle explosion ~ ~ ~ 1 1 1 0 10
 
 # 音
-    playsound entity.generic.explode player @a ~ ~ ~ 1 0.75 1
+    playsound entity.generic.explode player @a ~ ~ ~ 1 0.75 0

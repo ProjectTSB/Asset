@@ -2,7 +2,7 @@
 #
 # テルツェット・ディザスター
 #
-# @within asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack
+# @within function asset:mob/0411.behemoth/tick/event/terzetto_purgatorio/attack.m
 
 # 氷柱確認
     scoreboard players set @s BF.Counter 80
