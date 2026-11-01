@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:object/1217.interferable_slash/**
-    scoreboard objectives add 1217.UserID dummy
+    scoreboard objectives add O1217.UserID dummy

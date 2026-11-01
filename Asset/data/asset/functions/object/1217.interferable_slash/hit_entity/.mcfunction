@@ -5,7 +5,7 @@
 # @within asset:object/alias/1217/hit_entity
 
 # 強化中の処理
-    execute if entity @s[tag=1217.Reinforced] run function asset:object/1217.interferable_slash/hit_entity/reinforced.m with storage asset:context this
+    execute if entity @s[tag=O1217.Reinforced] run function asset:object/1217.interferable_slash/hit_entity/reinforced.m with storage asset:context this
 
 # ダメージ処理
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
