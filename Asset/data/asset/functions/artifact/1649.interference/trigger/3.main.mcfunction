@@ -12,13 +12,13 @@
     data modify storage api: Argument.ID set value 1217
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     #ベースのダメージ
-    data modify storage api: Argument.FieldOverride.Damage set value 200
+    data modify storage api: Argument.FieldOverride.Damage set value 200.0d
     #強化状態の持続時間
     data modify storage api: Argument.FieldOverride.ReinforcementTimer set value 10
     #強化状態での威力バフ
     data modify storage api: Argument.FieldOverride.DamageMultiplier set value 1.5
     #追撃の威力
-    data modify storage api: Argument.FieldOverride.AdditionalDamage set value 150
+    data modify storage api: Argument.FieldOverride.AdditionalDamage set value 150.0d
     execute anchored eyes positioned ^ ^-0.4 ^ run function api:object/summon
 
 # 演出
