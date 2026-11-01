@@ -10,9 +10,9 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 728
-# 神器の Namespace (string) asset:artifact/ の下の、この神器のディレクトリの名前
+# 神器の Namespace (string)
     data modify storage asset:artifact Namespace set value "0728.magatama_of_soul_eating"
-# 神器の入口 ({Event: string, Entry: string}[]) Event が起きたときに呼ぶ function を、Namespace からのパスで Entry に書く
+# 神器の入口 ({Event: string, Entry: string}[])
     data modify storage asset:artifact Triggers set value [{Event:"killed",Entry:"trigger/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
@@ -28,7 +28,7 @@
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
-# 説明欄に出す使い方 (string) Wikiを参照 (オプション) 省くと Triggers の先頭の Event から決まる
+# 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact LoreTrigger set value "onKilled"
 # 効果が重複可能か否か (boolean) (オプション)
     data modify storage asset:artifact EnableDuplication set value true
