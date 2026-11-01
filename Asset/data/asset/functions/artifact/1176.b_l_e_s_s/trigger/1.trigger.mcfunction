@@ -2,7 +2,7 @@
 #
 # 指定したイベントタイミングで実行されるfunction
 #
-# @within tag/function asset:artifact/**
+# @within function asset_manager:artifact/triggers/dispatch/call.m
 
 # storage asset:idのmainhandに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
     execute if data storage asset:context id{mainhand:1176} run function asset:artifact/1176.b_l_e_s_s/trigger/2.check_condition

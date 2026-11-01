@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 246
+# 神器の Namespace (string) asset:artifact/ の下の、この神器のディレクトリの名前
+    data modify storage asset:artifact Namespace set value "0246.magical_cane"
+# 神器の入口 ({Event: string, Entry: string}[]) Event が起きたときに呼ぶ function を、Namespace からのパスで Entry に書く
+    data modify storage asset:artifact Triggers set value [{Event:"attack/melee",Entry:"trigger/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:carrot_on_a_stick"
 # 神器の名前 (TextComponentString)
@@ -24,8 +28,8 @@
     data modify storage asset:artifact RemainingCount set value 5
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
-# 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttackByMelee"
+# 説明欄に出す使い方 (string) Wikiを参照 (オプション) 省くと Triggers の先頭の Event から決まる
+    data modify storage asset:artifact LoreTrigger set value "onAttackByMelee"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

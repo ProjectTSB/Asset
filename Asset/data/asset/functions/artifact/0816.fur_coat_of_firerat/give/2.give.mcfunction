@@ -22,8 +22,8 @@
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "chest"
-# 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equipping"
+# 説明欄に出す使い方 (string) Wikiを参照 (オプション) 省くと Triggers の先頭の Event から決まる
+    data modify storage asset:artifact LoreTrigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value '{"text":"竹取の宝具全てを装備している"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

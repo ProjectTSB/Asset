@@ -2,7 +2,7 @@
 #
 # 指定したイベントタイミングで実行されるfunction
 #
-# @within tag/function asset:artifact/**
+# @within function asset_manager:artifact/triggers/dispatch/call.m
 
 # storage asset:idのheadに装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
     execute if data storage asset:context id{head:1470} run function asset:artifact/1470.ninja_hood/trigger/2.check_condition

@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 960
+# 神器の Namespace (string) asset:artifact/ の下の、この神器のディレクトリの名前
+    data modify storage asset:artifact Namespace set value "0960.heavy_charm"
+# 神器の入口 ({Event: string, Entry: string}[]) Event が起きたときに呼ぶ function を、Namespace からのパスで Entry に書く
+    data modify storage asset:artifact Triggers set value [{Event:"equip",Entry:"trigger/1.trigger"},{Event:"dis_equip",Entry:"trigger/dis_equip/"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:stick"
 # 神器の名前 (TextComponentString)
@@ -24,8 +28,8 @@
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
-# 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equipping"
+# 説明欄に出す使い方 (string) Wikiを参照 (オプション) 省くと Triggers の先頭の Event から決まる
+    data modify storage asset:artifact LoreTrigger set value "equipping"
 # 効果の最大発動回数 (int) (オプション)",
     data modify storage asset:artifact PartsMax set value 9
 # 神器の発動条件 (TextComponentString) (オプション)
