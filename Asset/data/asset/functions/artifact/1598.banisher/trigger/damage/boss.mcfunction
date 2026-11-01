@@ -9,7 +9,7 @@
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
 
     # 攻撃情報
-        data modify storage api: Argument.FieldOverride.Damage set value 200
+        data modify storage api: Argument.FieldOverride.Damage set value 200.0d
         data modify storage api: Argument.FieldOverride.AttackType set value "Magic"
         data modify storage api: Argument.FieldOverride.ElementType set value "None"
 

@@ -6,7 +6,7 @@
 
 # 攻撃情報設定
     #通常
-    data modify storage api: Argument.Damage set value 200
+    data modify storage api: Argument.Damage set value 200.0d
     #天使が対象の場合は残留攻撃を召喚
     execute if entity @s[tag=Enemy.Boss] as @p[tag=this] run function asset:artifact/1598.banisher/trigger/damage/boss
 
