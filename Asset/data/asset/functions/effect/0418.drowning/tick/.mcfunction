@@ -4,10 +4,6 @@
 #
 # @within function asset:effect/0418.drowning/_/tick
 
-#> private
-# @private
-    #declare score_holder $MPRatio
-
 # Interval減算
     execute store result storage asset:context this.Interval int 0.9999999999 run data get storage asset:context this.Interval
 
