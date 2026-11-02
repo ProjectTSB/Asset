@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:effect/0396.satelite_drop/_/tick",
         "asset:effect/0405.predation_of_tree/_/tick",
         "asset:effect/0359.time_ticker_eclipse/_/tick",
         "asset:effect/0358.time_ticker_night/_/tick",
