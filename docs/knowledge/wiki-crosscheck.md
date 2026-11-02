@@ -6,7 +6,7 @@
 
 - artifact / mob / effect / object は4桁ゼロ埋め ID と snake_case の名前を使い、ID・名前・alias・tag 登録を揃える。テンプレート生成方法そのものは現行環境を確認する。
 - IMP Doc、最小の `@within`、declare、score の最初の上書きと必要な寿命後の reset を守る。ただし個体 Field、event 入力、API Return まで「一時値」として消さない。
-- Artifact の `Trigger` と `ConsumeItem` は表示情報で、実際の発火と消費を代替しない。function tag → ID check → common check →固有条件→ common use／効果、という境界を保つ。
+- Artifact の `LoreTrigger`（Wiki の `Trigger`）と `ConsumeItem` は表示情報で、実際の発火と消費を代替しない。`give/2.give` の `Triggers` に書いた入口 → ID check → common check →固有条件→ common use／効果、という境界を保つ。
 - Wiki の Object 作成方針では、継承用の親を `IsAbstract:true` と `ExtendsSafe:true` にする。現行 Mob/Object の診断は全親の `ExtendsSafe` と二番目以降の親の `IsAbstract` を検査し、最初の親の `IsAbstract` は検査しない。作成方針と診断範囲の違いを区別する。
 - Effect の given/re-given/tick/end/remove を分ける。永続 modifier を追加する型は、実際に到達し得る re-given/end/remove で必要な解除を対にする。0233 のセット Effect は re-given/remove の具体例であり、全 Effect の終了経路を保証する例ではない。Artifact の Equipment Effect と直接 Modifier は異なる副作用を持つ。
 
