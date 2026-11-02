@@ -25,7 +25,14 @@
     data modify storage api: Argument.ID set value 427
     execute if score $A1648.MP Temporary matches 0 run data modify storage api: Argument.ID set value 428
 
-    execute unless entity @s[tag=A1648.HasDebuff] run function api:entity/mob/effect/give
+    # modifierを設定
+        data modify storage api: Argument.FieldOverride.Buff.Attack set value 0.1d
+        data modify storage api: Argument.FieldOverride.Buff.MPHeal set value 0.2d
+
+        data modify storage api: Argument.FieldOverride.Debuff.Defense set value -0.2d
+        data modify storage api: Argument.FieldOverride.Debuff.MPHeal set value -0.2d
+
+    execute if entity @s[tag=!A1648.HasDebuff] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 装備中タグ

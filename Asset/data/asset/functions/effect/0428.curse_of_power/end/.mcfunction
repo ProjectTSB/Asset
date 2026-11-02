@@ -13,6 +13,10 @@
 
 # まだ装備しているなら、バフを再付与
     data modify storage api: Argument.ID set value 427
+
+    # Fieldを引き継ぐ
+        data modify storage api: Argument.FieldOverride set from storage asset:context this
+
     execute if entity @s[tag=A1648.Equipping] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 

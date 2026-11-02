@@ -11,5 +11,9 @@
 
 # Effect428を付与
     data modify storage api: Argument.ID set value 428
+
+    # Fieldを引き継ぐ
+        data modify storage api: Argument.FieldOverride set from storage asset:context this
+
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
