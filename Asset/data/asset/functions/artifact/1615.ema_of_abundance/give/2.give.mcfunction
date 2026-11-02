@@ -69,7 +69,7 @@
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"max_mp",Amount:0.05d,Operation:"multiply_base"}
     data modify storage asset:artifact Equipment.Modifiers append value {Type:"mp_heal",Amount:0.05d,Operation:"multiply_base"}
 # 扱える神 (string[]) Wikiを参照
-    data modify storage asset:artifact CanUsedGod set value ["Flora","wi-ki","Nyaptov","Rumor"]
+    data modify storage asset:artifact CanUsedGod set value ["Flora","Wi-ki","Nyaptov","Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
     # data modify storage asset:artifact CustomNBT set value {}
 
