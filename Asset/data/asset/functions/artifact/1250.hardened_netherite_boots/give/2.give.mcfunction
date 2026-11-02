@@ -24,7 +24,7 @@
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "feet"
-# 説明欄に出す使い方 (string) Wikiを参照 (オプション) 省くと Triggers の先頭の Event から決まる
+# 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact LoreTrigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value

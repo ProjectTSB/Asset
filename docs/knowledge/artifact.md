@@ -2,7 +2,7 @@
 
 artifact は `Asset/data/asset/functions/artifact/<4桁ID>.<name>/` に置く。入手用 item/名前/lore/slot 等は `give/2.give.mcfunction` に書く。`register.mcfunction` がある場合は rarity pool 等の登録用途であり、0057 でも RarityRegistry のみを扱い、0001 には存在しない。
 
-Wiki の作成意図では `Trigger` は Lore 表示用であり、実際の発火経路は function tag に登録した `1.trigger` が決める。`ConsumeItem` も Lore 表示用で、在庫確認・消費は API を使う個別処理が必要である。表示定義だけを追加して実処理ができたと判断しない。
+神器の入口は `give/2.give` の `Namespace` と `Triggers` で宣言する。本体は `Triggers` の要素ごとに、`Event` の event が起きたとき `asset:artifact/<Namespace>/<Entry>` を呼ぶ（0057 は `[{Event:"attack/melee",Entry:"trigger/1.trigger"}]`）。event ごとの function tag への登録は無く、`Event` に使える名前は give のときに本体の `asset:artifact/common/validate/triggers` が検査する。宣言は give のたびに本体が ROM に書くので、`Triggers` を変えたら give し直せば反映される。`LoreTrigger`（以前の `Trigger`）は Lore 表示用で、発火経路を決めない。省くと `Triggers` の先頭の `Event` から決まる。`ConsumeItem` も Lore 表示用で、在庫確認・消費は API を使う個別処理が必要である。表示定義だけを追加して実処理ができたと判断しない。
 
 自動使用の trigger は `storage asset:context id{auto:<ID>}` を検査し、共通の `artifact/common/check_condition/auto` と `artifact/common/use/auto` に接続する実装が多い。レビューではこの接続、offhand の検知、selector の `limit=1`、表示説明と実計算値の一致が繰り返し確認されている（PR #7, #9, #22, #49）。ただしレビュー suggestion は採用結果をコードで確認してから規約化する。
 
@@ -22,9 +22,9 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 `scripts/update-artifact-register.scala.sc` は各 artifact の register を解析して rarity registry 等を更新し、`check-artifact-level.sc` は spreadsheet 入力と register の rarity を照合する。register の有無や生成先を確認してから変更する。
 
-新規追加時は同種の `give/` と `trigger/`、`tags/functions/artifact/give.json` を入口から追い、ID・タグ・説明・register を置換する。`1→2→3` の順序、成功時の CanUsed/cooldown、失敗時のタグ・context の後始末を既存例と照合する。説明の数値は score の境界と tick の実計算に合わせる。
+新規追加時は同種の `give/` と `trigger/`、`tags/functions/artifact/give.json` を入口から追い、ID・`Namespace`・`Triggers`・説明・register を置換する。`1→2→3` の順序、成功時の CanUsed/cooldown、失敗時のタグ・context の後始末を既存例と照合する。説明の数値は score の境界と tick の実計算に合わせる。
 
-手順の実例は [0057 elemental sword](../../Asset/data/asset/functions/artifact/0057.elemental_sword) を辿る。入口の `tags/functions/artifact/give.json` が `give/1.trigger` を列挙し、そこから `give/2.give` が呼ばれる。入手用定義は `give/2.give`、rarity poolは存在する場合だけ `register.mcfunction` を更新する。自動発動は `storage asset:context id{auto:ID}` を照合して `2.check_condition`、`3.main` へ進む。手動実行ではこのcontextが無いため、対応するイベント入力を用意して検証する。条件失敗時の `CanUsed`、cooldown、ローカルなTemporaryの残留が典型的な不具合である。4桁表記はこのrepoのディレクトリ慣行であり、storageへ書くID値はゼロ埋めしない整数である。
+手順の実例は [0057 elemental sword](../../Asset/data/asset/functions/artifact/0057.elemental_sword) を辿る。入口の `tags/functions/artifact/give.json` が `give/1.trigger` を列挙し、そこから `give/2.give` が呼ばれる。入手用定義と発動の入口の宣言（`Triggers`）は `give/2.give`、rarity poolは存在する場合だけ `register.mcfunction` を更新する。自動発動は `storage asset:context id{auto:ID}` を照合して `2.check_condition`、`3.main` へ進む。手動実行ではこのcontextが無いため、対応するイベント入力を用意して検証する。条件失敗時の `CanUsed`、cooldown、ローカルなTemporaryの残留が典型的な不具合である。4桁表記はこのrepoのディレクトリ慣行であり、storageへ書くID値はゼロ埋めしない整数である。
 
 神器tickの対象状態と公開タグは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「神器tickと死亡・スペクテイター」を参照する。装備回収と発動経路の停止を混同せず、仕様で必要な条件を `2.check_condition` に置く。
 

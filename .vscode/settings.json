@@ -877,7 +877,7 @@
             ]
         },
         {
-            "label": "神器/トリガー: 装備着脱 (give/2.give の Triggers に {Event:\"dis_equip\",Entry:\"trigger/dis_equip/\"} を足す)",
+            "label": "神器/トリガー: 装備着脱",
             "generates": [
                 {
                     "type": "file",
