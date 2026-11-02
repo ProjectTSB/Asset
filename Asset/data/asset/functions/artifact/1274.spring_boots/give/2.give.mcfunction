@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1274
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "1274.spring_boots"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"sneak/1s",Entry:"trigger/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "leather_boots"
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "feet"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "sneak1s"
+    data modify storage asset:artifact LoreTrigger set value "sneak1s"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

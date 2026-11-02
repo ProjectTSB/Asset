@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1098
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "1098.mirror_piece_of_bygone_days"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"attack",Entry:"trigger/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value 'minecraft:stick'
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onAttack"
+    data modify storage asset:artifact LoreTrigger set value "onAttack"
 # 効果が重複可能か否か (boolean) (オプション)
     # data modify storage asset:artifact EnableDuplication set value
 # 神器の発動条件 (TextComponentString) (オプション)

@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 914
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "0914.reactive_armor_feet"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"damage/from_entity/",Entry:"trigger/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:netherite_boots"
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "feet"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onDamageFromEntity"
+    data modify storage asset:artifact LoreTrigger set value "onDamageFromEntity"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value '{"text":"敵から攻撃を受けた時強制発動"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

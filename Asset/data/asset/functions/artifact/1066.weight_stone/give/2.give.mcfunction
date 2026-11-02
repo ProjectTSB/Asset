@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 1066
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "1066.weight_stone"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"equip",Entry:"equip/1.trigger"},{Event:"dis_equip",Entry:"dis_equip/"},{Event:"tick",Entry:"tick/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "stick"
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "hotbar"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "equipping"
+    data modify storage asset:artifact LoreTrigger set value "equipping"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 最大発動回数 (int) (オプション)

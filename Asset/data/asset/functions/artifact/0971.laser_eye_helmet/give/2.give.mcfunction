@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 971
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "0971.laser_eye_helmet"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"sneak/keep/",Entry:"charge/1.trigger"},{Event:"sneak/keep/2s",Entry:"shot/1.trigger"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:chainmail_helmet"
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "head"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "keepSneak2s"
+    data modify storage asset:artifact LoreTrigger set value "keepSneak2s"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)

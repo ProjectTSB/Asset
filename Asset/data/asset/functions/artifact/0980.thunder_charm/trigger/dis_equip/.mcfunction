@@ -2,6 +2,6 @@
 #
 # 装備を外した時に外した部位にのみのidが入った状態でトリガーされる
 #
-# @within tag/function asset:artifact/dis_equip
+# @within function asset_manager:artifact/triggers/dispatch/call.m
 
 execute if data storage asset:context id{hotbar:[980]} run function asset:artifact/0980.thunder_charm/trigger/dis_equip/main

@@ -2,7 +2,7 @@
 #
 # 指定したイベントタイミングで実行されるfunction
 #
-# @within tag/function asset:artifact/**
+# @within function asset_manager:artifact/triggers/dispatch/call.m
 
 # storage asset:idの%slot%に装備している神器のIDが入っているので比較し、~/2.check_condition.mcfunctionを実行する
     execute if data storage asset:context id{offhand:1252} run function asset:artifact/1252.fox_candle/trigger/2.check_condition

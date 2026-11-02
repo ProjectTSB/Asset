@@ -10,6 +10,10 @@
 
 # 神器のID (int) スプレッドシートの値を入れる
     data modify storage asset:artifact ID set value 556
+# 神器の Namespace (string)
+    data modify storage asset:artifact Namespace set value "0556.catastrophe"
+# 神器の入口 ({Event: string, Entry: string}[])
+    data modify storage asset:artifact Triggers set value [{Event:"equip",Entry:"equip/1.trigger"},{Event:"dis_equip",Entry:"dis_equip/"}]
 # 神器のベースアイテム
     data modify storage asset:artifact Item set value "minecraft:chainmail_leggings"
 # 神器の名前 (TextComponentString)
@@ -25,7 +29,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "legs"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "passive"
+    data modify storage asset:artifact LoreTrigger set value "passive"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value '{"text":"繋がる総てを身に纏う"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
