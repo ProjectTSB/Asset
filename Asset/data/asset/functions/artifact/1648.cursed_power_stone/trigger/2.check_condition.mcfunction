@@ -8,6 +8,10 @@
     data modify storage asset:artifact TargetID set value 1648
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/hotbar
+
+# 信仰変更時に使えなくなっていたらリセット
+    execute if entity @s[tag=A1648.Equipping,tag=!CanUsed] run function asset:artifact/1648.cursed_power_stone/trigger/reset
+
 # 他にアイテム等確認する場合はここに書く
 # 既に装備しているならキャンセル
     tag @s[tag=A1648.Equipping] remove CanUsed
