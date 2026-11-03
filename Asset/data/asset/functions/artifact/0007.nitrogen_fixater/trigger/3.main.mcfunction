@@ -18,12 +18,12 @@
     give @s glass_bottle 1
 
 # 信仰神検知
-    execute if entity @s[tag=Believe.Urban] run scoreboard players set $7.IsPeace Temporary 0
-    execute if entity @s[tag=Believe.Wi-ki] run scoreboard players set $7.IsPeace Temporary 0
-    execute if entity @s[tag=Believe.None] run scoreboard players set $7.IsPeace Temporary 1
-    execute if entity @s[tag=Believe.Flora] run scoreboard players set $7.IsPeace Temporary 1
-    execute if entity @s[tag=Believe.Nyaptov] run scoreboard players set $7.IsPeace Temporary 1
-    execute if entity @s[tag=Believe.Rumor] run scoreboard players set $7.IsPeace Temporary 1
+    execute if function api:entity/player/is_believe/urban run scoreboard players set $7.IsPeace Temporary 0
+    execute if function api:entity/player/is_believe/wi-ki run scoreboard players set $7.IsPeace Temporary 0
+    execute if function api:entity/player/is_believe/none run scoreboard players set $7.IsPeace Temporary 1
+    execute if function api:entity/player/is_believe/flora run scoreboard players set $7.IsPeace Temporary 1
+    execute if function api:entity/player/is_believe/nyaptov run scoreboard players set $7.IsPeace Temporary 1
+    execute if function api:entity/player/is_believe/rumor run scoreboard players set $7.IsPeace Temporary 1
 
 # アイテム付与
     execute if score $7.IsPeace Temporary matches 0 run give @s gunpowder 1

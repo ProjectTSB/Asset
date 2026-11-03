@@ -10,7 +10,7 @@
 
 # 猫の場合死ぬ
 # 現状だとCTがないので特に条件を考えずに実装している
-    execute if entity @s[tag=Believe.Nyaptov] run function asset:artifact/0003.humanity/trigger/nyaptov
+    execute if function api:entity/player/is_believe/nyaptov run function asset:artifact/0003.humanity/trigger/nyaptov
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/0003.humanity/trigger/3.main
