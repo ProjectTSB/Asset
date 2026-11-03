@@ -97,7 +97,9 @@ Asset固有の確認点は、終了を示す負数と初期化時の二段の丸
 
 ## execute幾何学で表示の回転を作る
 
-[General Long Laser の tick](../../Asset/data/asset/functions/object/2168.general_long_laser/tick/.mcfunction) は、実行位置・向きを連続して変え、縦角度[-90,90]を横角度[0,180]へ変換してから `LeftRotation.angle` に取り出す。原点から局所座標 `^1 ^ ^` へ移したmarkerのPosは回転軸になる。ユーザーが確認した採用理由は、既知の幾何イディオムでscoreboardへの値の出し入れ・演算・後始末を避け、記述量と処理コストを抑えること。`positioned`・`rotated`・`facing` の列を無駄な移動と見なさず、最後に得られる位置・角度から読む。[作者によるレーザーの実装解説](https://qiita.com/komaramune/items/68823dd4dcfdcdda0a0e) にも同じ目的の角度変換があるが、現行コードとはコマンド列が異なるため、記事の列へ機械的に置換しない。
+[General Long Laser の召喚時の回転計算](../../Asset/data/asset/functions/object/2168.general_long_laser/summon/rotation.mcfunction) は、実行位置・向きを連続して変え、縦角度[-90,90]を横角度[0,180]へ変換してから `LeftRotation.angle` に取り出す。原点から局所座標 `^1 ^ ^` へ移したmarkerのPosは回転軸になる。ユーザーが確認した採用理由は、既知の幾何イディオムでscoreboardへの値の出し入れ・演算・後始末を避け、記述量と処理コストを抑えること。`positioned`・`rotated`・`facing` の列を無駄な移動と見なさず、最後に得られる位置・角度から読む。[作者によるレーザーの実装解説](https://qiita.com/komaramune/items/68823dd4dcfdcdda0a0e) にも同じ目的の角度変換があるが、現行コードとはコマンド列が異なるため、記事の列へ機械的に置換しない。
+
+[2168のsummon](../../Asset/data/asset/functions/object/2168.general_long_laser/summon/.mcfunction) は召喚時の向きから回転を一度だけ計算し、表示の初期NBTへ設定する。現在の利用側は生成後に向きを変更しないため、向き保持用のPassengerや毎tickの再計算は不要である。tickは従来の時点で出現・縮小・寿命による削除を行い、appear／disappearでscaleを変更するときだけ補間を開始する。初期の回転と出現時の拡大を分ける構成であり、生成後も旋回する用途では別途回転の更新が必要になる。
 
 表示の向きを新しく実装する場合は、本体の公開API `lib:rotate_display/` も確認する。必要なscaleの条件と、entityのRotationを固定してtransformationへ向きを持たせる契約は、依存先TheSkyBlessingの `docs/knowledge/runtime-components.md` にある。
 
