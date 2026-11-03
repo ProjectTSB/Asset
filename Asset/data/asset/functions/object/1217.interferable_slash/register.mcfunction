@@ -23,6 +23,6 @@
     data modify storage asset:object Field.IsAdditional set value false
     data modify storage asset:object Field.AdditionalDamage set value -1
     #発射体のField
-    data modify storage asset:object Field.Speed set value 1
-    data modify storage asset:object Field.Range set value 30
+    data modify storage asset:object Field.Speed set value -1
+    data modify storage asset:object Field.Range set value -1
     data modify storage asset:object Field.Damage set value -1

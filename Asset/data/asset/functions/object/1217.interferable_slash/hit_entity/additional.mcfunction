@@ -10,6 +10,8 @@
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     data modify storage api: Argument.FieldOverride.IsAdditional set value true
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.AdditionalDamage
+    data modify storage api: Argument.FieldOverride.Speed set from storage asset:context this.Speed
+    data modify storage api: Argument.FieldOverride.Range set from storage asset:context this.Range
     function api:object/summon
 
 # 演出

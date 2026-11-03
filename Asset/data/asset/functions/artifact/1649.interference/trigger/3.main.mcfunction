@@ -24,6 +24,10 @@
     # 追撃の威力
         data modify storage api: Argument.FieldOverride.AdditionalDamage set value 150.0d
 
+    # 弾速・射程
+        data modify storage api: Argument.FieldOverride.Speed set value 1
+        data modify storage api: Argument.FieldOverride.Range set value 30
+
     execute anchored eyes positioned ^ ^-0.4 ^ run function api:object/summon
 
 # 演出
