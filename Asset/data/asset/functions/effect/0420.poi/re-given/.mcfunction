@@ -8,12 +8,14 @@
 # @private
     #declare score_holder $MobUUID
 
-# MP回復量引き継ぎ
+# Field引き継ぎ
     data modify storage asset:context this.MPHeal set from storage asset:context PreviousField.MPHeal
+    data modify storage asset:context this.Damage set from storage asset:context PreviousField.Damage
+    data modify storage asset:context this.OriginID set from storage asset:context PreviousField.OriginID
 
 # スタックが10ならマーカーを赤くする
     scoreboard players operation $MobUUID Temporary = @s MobUUID
-    execute if data storage asset:context {Stack:10} anchored eyes positioned ^ ^ ^ as @e[type=item_display,tag=1211.Marker,distance=..1] if score @s 1211.MobUUID = $MobUUID Temporary run function asset:effect/0420.poi/re-given/update_color
+    execute if data storage asset:context {Stack:10} anchored eyes positioned ^ ^ ^ as @e[type=item_display,tag=1211.Marker,distance=..1] if score @s 1211.MobUUID = $MobUUID Temporary run data merge entity @s {glow_color_override:16711680, item:{tag:{display:{color:16711680}}}}
 
 # 演出
     execute unless data storage asset:context {Stack:10} run function asset:effect/0420.poi/re-given/sfx.m with storage asset:context

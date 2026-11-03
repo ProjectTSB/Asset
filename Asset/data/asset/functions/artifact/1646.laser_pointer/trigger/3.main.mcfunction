@@ -11,7 +11,17 @@
 # 前方の敵をロックオンし、Effect420を付与
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/1646.laser_pointer/trigger/rec
 
+    # 初回にのみ設定するField
+        data modify storage api: Argument.Duration set value 30
+        #1スタックごとのダメージ
+        data modify storage api: Argument.FieldOverride.Damage set value 15
+        #1スタックごとのMP回復量
+        data modify storage api: Argument.FieldOverride.MPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+        execute store result storage api: Argument.FieldOverride.OriginID int 1 run scoreboard players get @s UserID
+
     execute as @e[type=#lib:living_without_player,tag=1646.Hit,sort=nearest,limit=1] run function asset:artifact/1646.laser_pointer/trigger/apply_effect
+
+    function api:entity/mob/effect/reset
 
 # 演出
     playsound block.note_block.bit player @a ~ ~ ~ 1.0 1.0
