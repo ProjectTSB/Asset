@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:artifact/1646.laser_pointer/trigger/**
-    #declare tag 1646.Hit
+    #declare tag O1646.Hit

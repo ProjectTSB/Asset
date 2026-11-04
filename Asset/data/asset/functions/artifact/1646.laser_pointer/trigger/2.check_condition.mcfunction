@@ -12,11 +12,11 @@
 
 # 対象がすでにEffect420を持っているならスタックを重ねる
     data modify storage api: Argument.ID set value 420
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=1646.Hit,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect as @e[type=#lib:living_without_player,tag=Enemy,tag=1646.Hit,tag=!Uninterferable,distance=..5] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=O1646.Hit,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect as @e[type=#lib:living_without_player,tag=Enemy,tag=O1646.Hit,tag=!Uninterferable,distance=..5] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1646.laser_pointer/trigger/3.main
 
 # 判定用のタグを消す
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=1646.Hit,distance=..5] remove 1646.Hit
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=O1646.Hit,distance=..5] remove O1646.Hit

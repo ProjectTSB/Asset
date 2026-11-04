@@ -5,4 +5,4 @@
 # @within asset:object/alias/1211/init
 
 # Fieldをスコアに
-    execute store result score @s 1211.MobUUID run data get storage asset:context this.UUID
+    execute store result score @s O1211.MobUUID run data get storage asset:context this.UUID
