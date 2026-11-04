@@ -35,6 +35,9 @@
 # 攻撃したプレイヤーの処理
     execute as @p[tag=E0420.Origin] run tag @s remove E0420.Origin
 
+# Object1211を削除
+    function asset:effect/0420.poi/marker/remove
+
 # 演出
     playsound entity.allay.hurt hostile @a ~ ~ ~ 1.0 2.0
 

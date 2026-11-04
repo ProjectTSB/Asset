@@ -8,8 +8,8 @@
 # @private
     #declare score_holder $O1211.MobUUID
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+# Tick減算
+    scoreboard players remove @s General.Object.Tick 1
 
 # 紐づいている対象に追従
     scoreboard players operation $O1211.MobUUID Temporary = @s O1211.MobUUID
@@ -19,4 +19,4 @@
     scoreboard players reset $O1211.MobUUID
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=30..}]
+    kill @s[scores={General.Object.Tick=..0}]
