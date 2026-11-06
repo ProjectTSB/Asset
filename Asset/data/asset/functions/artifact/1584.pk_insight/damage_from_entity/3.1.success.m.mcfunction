@@ -10,7 +10,7 @@
     #通常の敵には35%
     $execute as @e[type=#lib:living_without_player,tag=Attacker,tag=!Enemy.Boss,tag=!Uninterferable,distance=..20] store result storage api: Argument.Damage double $(Regular) run function api:mob/get_max_health
     #天使には割合ではなく固定で1000ダメージ
-    execute as @e[type=#lib:living_without_player,tag=Attacker,tag=Enemy.Boss,tag=!Uninterferable,distance=..20] run data modify storage api: Argument.Damage set from storage asset:context this.Damage.Boss
+    execute as @e[type=#lib:living_without_player,tag=Attacker,tag=Enemy.Boss,tag=!Uninterferable,distance=..20] run data modify storage api: Argument.Damage set from storage api: Return.Effect.Field.Damage.Boss
 
     data modify storage api: Argument.AttackType set from storage api: Return.Effect.Field.AttackType
     data modify storage api: Argument.ElementType set from storage api: Return.Effect.Field.ElementType
