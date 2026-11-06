@@ -4,10 +4,6 @@
 #
 # @within asset:mob/0327.eclael/tick/**
 
-#> Private
-# @private
-    #declare objective UserId
-
 # ターゲットが近くにいるならスキップ
     execute if entity @p[tag=93.Temp.Target,distance=..80] run return 0
 
@@ -18,4 +14,4 @@
 # サバイバルの対象が居ない場合、しょうがないのでそれ以外を狙う
     tag @p[tag=!PlayerShouldInvulnerable,distance=..80] add 93.Temp.Target
     execute unless entity @p[tag=93.Temp.Target,distance=..80] run tag @p add 93.Temp.Target
-    scoreboard players operation @s 93.TargetUserId = @p[tag=93.Temp.Target,distance=..80] UserId
+    scoreboard players operation @s 93.TargetUserId = @p[tag=93.Temp.Target,distance=..80] UserID
