@@ -1,6 +1,6 @@
 {
     "values": [
-        "asset:artifact/1685.miniature_volcano/give/1.trigger",
+        "asset:artifact/1361.unicorn_horn/give/1.trigger",
         "asset:artifact/1675.fire_extinguisher/give/1.trigger",
         "asset:artifact/1360.vintage_wine/give/1.trigger",
         "asset:artifact/1661.starlight_circle/give/1.trigger",
@@ -19,6 +19,7 @@
         "asset:artifact/1468.insulator_leggings/give/1.trigger",
         "asset:artifact/1467.insulator_chestplate/give/1.trigger",
         "asset:artifact/1466.insulator_helmet/give/1.trigger",
+        "asset:artifact/1685.miniature_volcano/give/1.trigger",
         "asset:artifact/1570.pile_of_accumulated_dust/give/1.trigger",
         "asset:artifact/1585.sword_of_isolation/give/1.trigger",
         "asset:artifact/1637.precise_mana_controller/give/1.trigger",
