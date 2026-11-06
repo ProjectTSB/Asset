@@ -1,6 +1,6 @@
 {
     "values": [
-        "asset:artifact/1694.aqua_bullet/give/1.trigger",
+        "asset:artifact/1361.unicorn_horn/give/1.trigger",
         "asset:artifact/1675.fire_extinguisher/give/1.trigger",
         "asset:artifact/1360.vintage_wine/give/1.trigger",
         "asset:artifact/1661.starlight_circle/give/1.trigger",
@@ -25,6 +25,7 @@
         "asset:artifact/1615.ema_of_abundance/give/1.trigger",
         "asset:artifact/1636.mana_controller/give/1.trigger",
         "asset:artifact/1606.dimension_knife/give/1.trigger",
+        "asset:artifact/1694.aqua_bullet/give/1.trigger",
         "asset:artifact/1474.ninja_kunai/give/1.trigger",
         "asset:artifact/1473.ninja_sandals/give/1.trigger",
         "asset:artifact/1472.ninja_pants/give/1.trigger",
