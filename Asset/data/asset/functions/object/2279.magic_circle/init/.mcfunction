@@ -16,3 +16,6 @@
 
 # 消滅までの残り時間を初期化する
     data modify storage asset:context this.RemainingTick set from storage asset:context this.Tick
+
+# 初回待機の段階を設定する
+    data modify storage asset:context this.Phase set value "Waiting"
