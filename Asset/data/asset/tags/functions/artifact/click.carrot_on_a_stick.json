@@ -1,6 +1,5 @@
 {
     "values": [
-        "asset:artifact/1316.blight_flowgun/trigger/1.trigger",
         "asset:artifact/1661.starlight_circle/trigger/1.trigger",
         "asset:artifact/1662.salmon_canon/trigger/1.trigger",
         "asset:artifact/1632.photon_burst/trigger/1.trigger",
@@ -17,6 +16,7 @@
         "asset:artifact/0079.shoot_down_a_flying_dragon/trigger/1.trigger",
         "asset:artifact/0103.necronomicon/trigger/1.trigger",
         "asset:artifact/0107.dispenser_canon/trigger/1.trigger",
+        "asset:artifact/1316.blight_flowgun/trigger/1.trigger",
         "asset:artifact/0122.lunatic_lay/trigger/1.trigger",
         "asset:artifact/0125.storm_bow/trigger/1.trigger",
         "asset:artifact/0172.icicle/trigger/1.trigger",

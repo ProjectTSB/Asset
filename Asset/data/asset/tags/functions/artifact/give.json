@@ -1,6 +1,6 @@
 {
     "values": [
-        "asset:artifact/1316.blight_flowgun/give/1.trigger",
+        "asset:artifact/1361.unicorn_horn/give/1.trigger",
         "asset:artifact/1675.fire_extinguisher/give/1.trigger",
         "asset:artifact/1360.vintage_wine/give/1.trigger",
         "asset:artifact/1661.starlight_circle/give/1.trigger",
@@ -34,6 +34,7 @@
         "asset:artifact/1562.tsukimi_dango/give/1.trigger",
         "asset:artifact/1430.shield_of_fate/give/1.trigger",
         "asset:artifact/1453.frost_flake_bow/give/1.trigger",
+        "asset:artifact/1316.blight_flowgun/give/1.trigger",
         "asset:artifact/1534.drop_in_the_bucket/give/1.trigger",
         "asset:artifact/1366.shaved_ice_melon/give/1.trigger",
         "asset:artifact/1365.shaved_ice_blue_hawaii/give/1.trigger",
