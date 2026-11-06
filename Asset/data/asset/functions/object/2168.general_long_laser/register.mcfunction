@@ -17,9 +17,6 @@
 # ID (int)
     data modify storage asset:object ID set value 2168
 # フィールド(オプション)
-    # 変えるべからず
-        data modify storage asset:object Field.LeftRotation set value {axis:[1f,0f,0f],angle:0}
-        data modify storage asset:object Field.RightRotation set value {axis:[0f,-1f,0f],angle:0}
     # 見た目に使うCustomModelData(革の馬鎧。また、使うモデルはなんでもいいわけではない)
         data modify storage asset:object Field.CustomModelData set value 20381
     # 色(10進数)
