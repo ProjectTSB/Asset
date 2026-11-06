@@ -1,6 +1,6 @@
 {
     "values": [
-        "asset:artifact/1690.airbag/give/1.trigger",
+        "asset:artifact/1361.unicorn_horn/give/1.trigger",
         "asset:artifact/1675.fire_extinguisher/give/1.trigger",
         "asset:artifact/1360.vintage_wine/give/1.trigger",
         "asset:artifact/1661.starlight_circle/give/1.trigger",
@@ -28,6 +28,7 @@
         "asset:artifact/1474.ninja_kunai/give/1.trigger",
         "asset:artifact/1473.ninja_sandals/give/1.trigger",
         "asset:artifact/1472.ninja_pants/give/1.trigger",
+        "asset:artifact/1690.airbag/give/1.trigger",
         "asset:artifact/1471.ninja_robe/give/1.trigger",
         "asset:artifact/1470.ninja_hood/give/1.trigger",
         "asset:artifact/1412.seal_of_dual_rhythm/give/1.trigger",
