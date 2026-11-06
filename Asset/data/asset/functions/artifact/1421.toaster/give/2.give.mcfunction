@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"トースター","color":"#d7a657"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"長押しすることで最大3段階のチャージを行う"}','[{"translate":"%1$sを離すことで","with":[{"keybind":"key.use"}]}]','{"text":"チャージ段階に応じたダメージと速度のパンを2枚射出する"}','{"text":"朝はやっぱりパンですよね！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"長押しで最大3段階のチャージを行い"}','{"text":"チャージ段階に応じたダメージと速度のパンを2枚射出する"}','{"text":"朝はやっぱりパンですよね！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.bread"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -25,7 +25,7 @@
 # 神器を発動できるスロット (string) Wikiを参照
     data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
-    data modify storage asset:artifact Trigger set value "onClick"
+    data modify storage asset:artifact Trigger set value "releaseUsingItem"
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
