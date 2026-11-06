@@ -1,9 +1,6 @@
 {
     "values": [
-        "asset:artifact/1642.inversely_proportional_boots/give/1.trigger",
-        "asset:artifact/1641.inversely_proportional_leggings/give/1.trigger",
-        "asset:artifact/1640.inversely_proportional_chestplate/give/1.trigger",
-        "asset:artifact/1639.inversely_proportional_helmet/give/1.trigger",
+        "asset:artifact/1361.unicorn_horn/give/1.trigger",
         "asset:artifact/1675.fire_extinguisher/give/1.trigger",
         "asset:artifact/1360.vintage_wine/give/1.trigger",
         "asset:artifact/1661.starlight_circle/give/1.trigger",
@@ -13,6 +10,10 @@
         "asset:artifact/1632.photon_burst/give/1.trigger",
         "asset:artifact/1607.dimension_gate/give/1.trigger",
         "asset:artifact/1655.ocean_heart/give/1.trigger",
+        "asset:artifact/1642.inversely_proportional_boots/give/1.trigger",
+        "asset:artifact/1641.inversely_proportional_leggings/give/1.trigger",
+        "asset:artifact/1640.inversely_proportional_chestplate/give/1.trigger",
+        "asset:artifact/1639.inversely_proportional_helmet/give/1.trigger",
         "asset:artifact/1391.blue_refraction_prism/give/1.trigger",
         "asset:artifact/1614.wooden_snake_branch/give/1.trigger",
         "asset:artifact/1392.yellow_refraction_prism/give/1.trigger",
