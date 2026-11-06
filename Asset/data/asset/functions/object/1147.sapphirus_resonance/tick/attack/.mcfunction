@@ -18,10 +18,10 @@
 # プレイヤー前方の地点から一定範囲内の敵を探す
 # 敵がいない場合、後ろを向く (??????)
 # いる場合、その敵の方向を向く
-    execute as @a[tag=VV.Owner,limit=1] at @s anchored eyes positioned ^ ^ ^5 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..7.5,sort=nearest,limit=1] add Target
-    execute unless entity @e[type=#lib:living,type=!player,tag=Target,tag=!Uninterferable,limit=1] as @e[type=marker,tag=this,distance=..10,limit=1] facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
-    execute if entity @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,limit=1] as @e[type=marker,tag=this,distance=..10,limit=1] at @s facing entity @e[type=#lib:living,type=!player,tag=Target,tag=!Uninterferable,limit=1] eyes run tp @s ~ ~ ~ ~ ~
-    tag @e[type=#lib:living,type=!player,tag=Target,tag=!Uninterferable,limit=1] remove Target
+    execute as @a[tag=VV.Owner,limit=1] at @s anchored eyes positioned ^ ^ ^5 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..7.5,sort=nearest,limit=1] add Target
+    execute unless entity @e[type=#lib:living_without_player,tag=Target,tag=!Uninterferable,limit=1] as @e[type=marker,tag=this,distance=..10,limit=1] facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,limit=1] as @e[type=marker,tag=this,distance=..10,limit=1] at @s facing entity @e[type=#lib:living_without_player,tag=Target,tag=!Uninterferable,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+    tag @e[type=#lib:living_without_player,tag=Target,tag=!Uninterferable,limit=1] remove Target
 # 演出
     execute at @s run function asset:object/1147.sapphirus_resonance/tick/attack/effect
 # 射撃する

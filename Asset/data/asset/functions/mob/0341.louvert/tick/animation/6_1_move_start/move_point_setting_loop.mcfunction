@@ -15,6 +15,6 @@
 # 拡散する
     execute as 0-0-0-0-0 at @s run function lib:spread_entity/
 # 空気ならOK
-    execute as 0-0-0-0-0 at @s unless block ~ ~ ~ #lib:no_collision run scoreboard players set $9H.Temp Temporary 0
+    execute as 0-0-0-0-0 at @s unless block ~ ~ ~ #lib:no_collision/ run scoreboard players set $9H.Temp Temporary 0
 # ループ処理
     execute if score $9H.Temp Temporary matches 1.. run function asset:mob/0341.louvert/tick/animation/6_1_move_start/move_point_setting_loop

@@ -8,7 +8,7 @@
     function asset:artifact/common/check_condition/mainhand
 
 # ターゲットがいるかチェック
-    execute as @e[type=#lib:living,tag=Enemy,distance=..5] facing entity @s feet positioned ^ ^ ^4 rotated as @p[tag=this] positioned ^ ^ ^-3 if entity @p[tag=this,distance=..5] run tag @s add M5.Victim
+    execute as @e[type=#lib:living_without_player,tag=Enemy,distance=..5] facing entity @s feet positioned ^ ^ ^4 rotated as @p[tag=this] positioned ^ ^ ^-3 if entity @p[tag=this,distance=..5] run tag @s add M5.Victim
     execute unless entity @e[type=#lib:living,tag=M5.Victim,distance=..5] run tellraw @s [{"text": "攻撃対象がいません。","color":"red"}]
     execute unless entity @e[type=#lib:living,tag=M5.Victim,distance=..5] run tag @s remove CanUsed
 

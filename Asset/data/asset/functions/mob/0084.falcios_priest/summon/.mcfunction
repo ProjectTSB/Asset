@@ -5,4 +5,4 @@
 # @within asset:mob/alias/84/summon
 
 # 元となるMobを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"]}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit","HasHealAbility"]}

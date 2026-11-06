@@ -21,10 +21,10 @@
     playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.4 2
 
 # 敵が周囲にいるなら方向転換
-    execute if entity @e[type=#lib:living,type=!player,tag=Enemy,distance=..8] run function asset:artifact/0374.thunder_spell/trigger/turn_to_enemy
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,distance=..8] run function asset:artifact/0374.thunder_spell/trigger/turn_to_enemy
 
 # リセット
     tag @s remove AE.Check
-    tag @e[type=#lib:living,type=!player,tag=Target,distance=..8] remove Target
-    tag @e[type=#lib:living,type=!player,tag=NearestTarget,distance=..8] remove NearestTarget
+    tag @e[type=#lib:living_without_player,tag=Target,distance=..8] remove Target
+    tag @e[type=#lib:living_without_player,tag=NearestTarget,distance=..8] remove NearestTarget
     scoreboard players reset $RecursiveCount Temporary

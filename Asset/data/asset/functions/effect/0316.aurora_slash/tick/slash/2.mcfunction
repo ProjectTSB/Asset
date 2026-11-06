@@ -15,7 +15,7 @@
 
 # ダメージ判定
 # 前方に強めの判定
-    execute positioned ^ ^ ^8 run tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..8] add 316.Target
+    execute positioned ^ ^ ^8 run tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..8] add 316.Target
 
 # ダメージ
     data modify storage api: Argument.Damage set from storage asset:context this.Damage.Slash2
@@ -23,8 +23,8 @@
     data modify storage api: Argument.ElementType set value "Thunder"
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=Enemy,tag=316.Target,distance=..4.2] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=316.Target,distance=..4.2] run function api:damage/
     function api:damage/reset
 
 # リセット
-    tag @e[type=#lib:living,type=!player,tag=Enemy,tag=316.Target,distance=..16] remove 316.Target
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=316.Target,distance=..16] remove 316.Target

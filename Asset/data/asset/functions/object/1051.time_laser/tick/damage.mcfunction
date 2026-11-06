@@ -15,11 +15,11 @@
     data modify storage api: Argument.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute store result score $OwnerID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $OwnerID Temporary run function api:damage/modifier
-    execute as @e[type=#lib:living,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,sort=nearest] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,sort=nearest] run function api:damage/
     function api:damage/reset
 
 # 着弾タグを消す
-    tag @e[type=#lib:living,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,sort=nearest] remove LandingTarget
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=LandingTarget,tag=!Uninterferable,sort=nearest] remove LandingTarget
 
 # リセット
     scoreboard players reset $OwnerID Temporary

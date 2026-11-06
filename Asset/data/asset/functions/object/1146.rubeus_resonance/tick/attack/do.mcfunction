@@ -23,15 +23,15 @@
     # リセット
         scoreboard players reset $VU.Random Temporary
 # ターゲット
-    tag @e[type=#lib:living,type=!player,tag=!Uninterferable,distance=..2.8] add VU.Candidate
-    execute positioned ^ ^ ^-1.4 run tag @e[type=#lib:living,type=!player,tag=VU.Candidate,distance=..1.2] remove VU.Candidate
+    tag @e[type=#lib:living_without_player,tag=!Uninterferable,distance=..2.8] add VU.Candidate
+    execute positioned ^ ^ ^-1.4 run tag @e[type=#lib:living_without_player,tag=VU.Candidate,distance=..1.2] remove VU.Candidate
 # ダメージ
 # 候補のうち最寄りの１体に攻撃する
     data modify storage api: Argument.Damage set from storage asset:context this.Damage
     data modify storage api: Argument.AttackType set value "Physical"
     # data modify storage api: Argument.ElementType set value "None"
     execute as @a[tag=VU.Owner,limit=1] run function api:damage/modifier
-    execute as @e[type=#lib:living,type=!player,tag=VU.Candidate,distance=..2.8,sort=nearest,limit=1] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=VU.Candidate,distance=..2.8,sort=nearest,limit=1] run function api:damage/
     function api:damage/reset
 # リセット
-    tag @e[type=#lib:living,type=!player,tag=VU.Candidate,distance=..2.8] remove VU.Candidate
+    tag @e[type=#lib:living_without_player,tag=VU.Candidate,distance=..2.8] remove VU.Candidate

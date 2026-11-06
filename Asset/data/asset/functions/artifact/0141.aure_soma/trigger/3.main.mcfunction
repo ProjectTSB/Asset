@@ -20,8 +20,7 @@
     function api:mp/fluctuation
 
 # HP回復
-    function api:modifier/max_health/get
-    execute store result storage api: Argument.Heal double 0.0018 run data get storage api: Return.MaxHealth 100
+    execute store result storage api: Argument.Heal double 0.0018 run attribute @s generic.max_health get 100
     function api:heal/modifier
     function api:heal/
 

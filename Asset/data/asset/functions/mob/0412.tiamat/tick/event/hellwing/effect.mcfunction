@@ -7,7 +7,7 @@
 #    function asset:mob/0412.tiamat/tick/event/terzetto_succession_dive/
 
 # 地面が無ければ消す
-    execute if block ~ ~ ~ #lib:no_collision run return run kill @s
+    execute if block ~ ~ ~ #lib:no_collision/ run return run kill @s
 
 # 演出
     particle cloud ~ ~1 ~ 2 2 2 0.1 6

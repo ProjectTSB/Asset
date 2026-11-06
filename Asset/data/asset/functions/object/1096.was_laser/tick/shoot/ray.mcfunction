@@ -15,4 +15,4 @@
     scoreboard players add $Range Temporary 1
 
 # 30ブロック進む、または衝突するまで再帰
-    execute if score $Range Temporary matches ..19 positioned ^ ^ ^1 if block ^ ^ ^ #lib:no_collision run function asset:object/1096.was_laser/tick/shoot/ray
+    execute if score $Range Temporary matches ..19 positioned ^ ^ ^1 if block ^ ^ ^ #lib:no_collision/ run function asset:object/1096.was_laser/tick/shoot/ray

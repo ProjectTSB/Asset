@@ -33,16 +33,16 @@
     execute if entity @s[tag=AC.Health.50Per,tag=!AC.Moveset.Transition] if predicate lib:random_pass_per/50 run particle dust 0 1 1 1 ~ ~1 ~ 0.3 0.5 0.3 0.02 1 force @a[distance=..64]
 
 # 足元に何もなければ
-    execute if block ~ ~-0.2 ~ #lib:no_collision run particle minecraft:enchant ~ ~ ~ 0.4 0 0.4 0 10
+    execute if block ~ ~-0.2 ~ #lib:no_collision/ run particle minecraft:enchant ~ ~ ~ 0.4 0 0.4 0 10
 
 # スタックに対するカウンター、ブロック破壊が可能なエリアでのみ行う
     execute if predicate api:area/is_breakable run function asset:mob/0372.tutankhamen/tick/stuck_revenge/
 
 # 足元が埋まっていて、上にブロックがないなら上に移動
-    execute unless block ~ ~ ~ #lib:no_collision if block ~ ~2.5 ~ #lib:no_collision run tp @s ~ ~0.1 ~
+    execute unless block ~ ~ ~ #lib:no_collision/ if block ~ ~2.5 ~ #lib:no_collision/ run tp @s ~ ~0.1 ~
 
 # 頭上にブロックがあって、下にブロックがないなら下に移動
-    execute unless block ~ ~2.5 ~ #lib:no_collision if block ~ ~-1 ~ #lib:no_collision run tp @s ~ ~-0.1 ~
+    execute unless block ~ ~2.5 ~ #lib:no_collision/ if block ~ ~-1 ~ #lib:no_collision/ run tp @s ~ ~-0.1 ~
 
 # そこらのプレイヤーより下にいる場合、上昇する
     execute positioned ~-50 ~ ~-50 unless entity @a[dx=99,dy=-50,dz=99] at @s[tag=!AC.Opening,tag=!AC.InAction] run tp @s ~ ~0.1 ~

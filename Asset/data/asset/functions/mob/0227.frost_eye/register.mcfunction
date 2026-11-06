@@ -4,9 +4,11 @@
 #
 # @within function asset:mob/alias/227/register
 
-# 継承 (int) (オプション)
-    # data modify storage asset:mob Extends append value
-    # function asset:mob/extends
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:mob ExtendsSafe set value true
@@ -47,7 +49,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.15
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -67,3 +69,4 @@
 # フィールド
 # 与えるダメージ
     data modify storage asset:mob Field.Damage set value 8.0f
+    data modify storage asset:mob Field.Rotate set value 800

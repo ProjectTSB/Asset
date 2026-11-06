@@ -1,0 +1,11 @@
+#> asset:artifact/1606.dimension_knife/trigger/0.load
+#
+# 神器に利用するスコアボード等の初期化処理
+#
+# @within tag/function asset:artifact/load
+
+#> 定義類はここに
+# @within function asset:artifact/1606.dimension_knife/**
+    scoreboard objectives add 18M.MoveSum dummy
+    scoreboard objectives add 18M.AttackCount dummy
+    scoreboard objectives add 18M.LatestAttackTick dummy

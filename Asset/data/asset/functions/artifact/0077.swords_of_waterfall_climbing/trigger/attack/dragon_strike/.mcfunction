@@ -16,7 +16,7 @@
     function api:damage/reset
 
 # 敵が空中にいなかったらreturn
-    execute at @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] unless block ~ ~-1 ~ #lib:no_collision run return 0
+    execute at @e[type=#lib:living,tag=Victim,tag=!Immovable,distance=..0.01] unless block ~ ~-1 ~ #lib:no_collision/ run return 0
 
 # 落下ダメージ無効化
     data modify storage api: Argument set value {ID:190,Duration:60,Stack:10}
@@ -34,7 +34,7 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
     function api:damage/modifier
-    execute at @e[type=#lib:living,tag=Victim,distance=..50] as @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..3] run function api:damage/
+    execute at @e[type=#lib:living,tag=Victim,distance=..50] as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..3] run function api:damage/
     function api:damage/reset
 
 # リセット

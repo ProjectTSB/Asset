@@ -8,8 +8,7 @@
     #declare score_holder $Stack
 
 # 最大体力の (Stack)%
-    function api:modifier/max_health/get
-    execute store result score $Damage Temporary run data get storage api: Return.MaxHealth
+    execute store result score $Damage Temporary run attribute @s generic.max_health get
     execute store result score $Per Temporary run data get storage asset:context this.DamagePer 10000
     execute store result score $Stack Temporary run data get storage asset:context Stack
     scoreboard players operation $Damage Temporary *= $Per Temporary

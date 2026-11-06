@@ -21,10 +21,10 @@
     execute facing entity @e[type=marker,tag=MoveMarker,distance=0.5..1,limit=1] eyes run tp @s ^ ^ ^0.1
 
 # 付近に敵がいたら攻撃モードへと移行
-    execute if entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15] run tag @s add 1029.AttackMode
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..15] run tag @s add 1029.AttackMode
 
 # 付近に敵がいたらそっちへの攻撃を優先
-    execute facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..15,sort=nearest,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.05 ~ ~
+    execute facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..15,sort=nearest,limit=1] eyes positioned ^ ^ ^-100 rotated as @s positioned ^ ^ ^-800 facing entity @s eyes positioned as @s run tp @s ^ ^ ^0.05 ~ ~
 
 # ポーズ
     # (待機)

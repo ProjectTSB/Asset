@@ -5,10 +5,10 @@
 # @within function asset:mob/0372.tutankhamen/tick/
 
 # 頭がめり込んでいる場合、カウント付与。
-    execute unless block ~ ~2.5 ~ #lib:no_collision run scoreboard players add @s AC.Count.Stuck 1
+    execute unless block ~ ~2.5 ~ #lib:no_collision/ run scoreboard players add @s AC.Count.Stuck 1
 
 # 頭がめり込んでなければカウントが減少
-    execute if block ~ ~2.5 ~ #lib:no_collision unless score @s AC.Count.Stuck matches ..-1 run scoreboard players remove @s AC.Count.Stuck 1
+    execute if block ~ ~2.5 ~ #lib:no_collision/ unless score @s AC.Count.Stuck matches ..-1 run scoreboard players remove @s AC.Count.Stuck 1
 
 # カウント一定以上でガタガタ音がなる
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

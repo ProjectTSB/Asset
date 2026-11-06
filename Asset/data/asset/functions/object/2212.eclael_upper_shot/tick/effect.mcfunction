@@ -5,7 +5,7 @@
 # @within asset:object/2212.eclael_upper_shot/tick/
 
 # 床が無い場合スキップ
-    # execute if block ~ ~-1 ~ #lib:no_collision run return run kill @s
+    # execute if block ~ ~-1 ~ #lib:no_collision/ run return run kill @s
 
 # 演出
     playsound entity.arrow.hit hostile @a ~ ~ ~ 1 1

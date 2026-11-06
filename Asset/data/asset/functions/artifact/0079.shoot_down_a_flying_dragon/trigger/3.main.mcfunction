@@ -26,16 +26,16 @@
 
 # 対象を設定
     # 前提として近い1体はHit確定
-        tag @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] add Hit
+        tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10,sort=nearest,limit=1] add Hit
 
     # 自身が水の近くにいた場合($AroundWater=1..)、「r=..10にいる、周囲に水がある敵」も対象となる
     # //要するに自分も相手も水の近くにいたら範囲攻撃！！
         # MobのTemporaryはMob周囲の水の数に設定(ちょっと広めに判定をとる)
-            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
+            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] at @s store result score @s Temporary run clone ~-1 ~-0.5 ~-1 ~1 ~0.5 ~1 ~-1 ~-0.5 ~-1 filtered water force
         # as Mob：@s のTemporaryが1..ならHitする
-            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living,type=!player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
+            execute if score $AroundWater Temporary matches 1.. as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..10] if score @s Temporary matches 1.. run tag @s add Hit
         # プレイヤーへの誤Hit処理 HitしたMobの近くにいると自分にもあたる やっぱPKしたいじゃぁん？
-            execute at @e[type=#lib:living,type=!player,tag=Hit,distance=..10] as @a[distance=..0.10] run tag @s add Hit
+            execute at @e[type=#lib:living_without_player,tag=Hit,distance=..10] as @a[distance=..0.10] run tag @s add Hit
 
 
 # ダメージを設定

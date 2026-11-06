@@ -5,4 +5,4 @@
 # @within asset:object/alias/2049/summon
 
 # 元となるEntityを召喚する
-    summon marker ~ ~ ~ {Rotation:[0.0f,90.0f],Tags:["ObjectInit"]}
+    summon armor_stand ~ ~ ~ {Tags:["ObjectInit","Uninterferable"],Marker:1b,Invisible:1b,Rotation:[0f,90f],Passengers:[{id:"item_display",Rotation:[90f,0f],Tags:["AutoKillWhenDieVehicle","ProcessCommonTag"],teleport_duration:1,billboard:"vertical",item:{id:"stick",Count:1b,tag:{CustomModelData:20586}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0f,0f,0f],translation:[0f,0f,0f]}}]}

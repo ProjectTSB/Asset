@@ -1,6 +1,12 @@
 #> asset:mob/0261.laser_eye_mk2/register
 # @within asset:mob/alias/261/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 261
 # Type (string) Wikiを参照
@@ -38,7 +44,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.1
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -57,3 +63,13 @@
 
 # フィールド
     data modify storage asset:mob Field.Damage set value 24f
+
+# 距離の状態管理用フィールド
+    # data modify storage asset:context this.Distance
+    # data modify storage asset:context this.PreDistance
+
+# プレイヤーとの距離による移動速度の種類
+    data modify storage asset:mob Field.SpeedType set value {Near:0.08,Far:0.1}
+
+# 追尾性能
+    data modify storage asset:mob Field.Rotate set value 800

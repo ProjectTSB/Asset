@@ -17,13 +17,13 @@
 # 神器の説明文 (TextComponentString[])
     data modify storage asset:artifact Lore set value ['{"text":"敵に毒を付与する弓。"}','{"text":"25%の確率で敵を引き寄せる。 "}','{"text":" "}','{"text":"誰かがニヤリと笑ったのを感じる。","color":"dark_green"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
-    # data modify storage asset:artifact ConsumeItem.Item set value
-    # data modify storage asset:artifact ConsumeItem.Count set value
+    data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.arrow"}'
+    data modify storage asset:artifact ConsumeItem.Count set value 1
     # data modify storage asset:artifact ConsumeItem.Extra set value
 # 使用回数 (int) (オプション)
     # data modify storage asset:artifact RemainingCount set value
 # 神器を発動できるスロット (string) Wikiを参照
-    data modify storage asset:artifact Slot set value "auto"
+    data modify storage asset:artifact Slot set value "mainhand"
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "shot"
 # 神器の発動条件 (TextComponentString) (オプション)
@@ -60,7 +60,7 @@
 # 扱える神 (string[]) Wikiを参照
     data modify storage asset:artifact CanUsedGod set value ["Flora", "Urban", "Wi-ki", "Rumor"]
 # カスタムNBT (NBTCompound) 追加で指定したいNBT (オプション)
-    data modify storage asset:artifact CustomNBT set value {HideFlags:5,Enchantments:[{id:"minecraft:power",lvl:6s}]}
+    # data modify storage asset:artifact CustomNBT set value
 
 # 神器の入手用function
     function asset:artifact/common/give

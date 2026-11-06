@@ -33,7 +33,7 @@
         execute if score @s AK.EventTimer matches 36 at @e[type=area_effect_cloud,tag=AK.Temp.AttackPosition,distance=..80,sort=random,limit=2] run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/attack
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 55.. if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 55.. if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.08 ^ run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 75.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_wall_duo/end

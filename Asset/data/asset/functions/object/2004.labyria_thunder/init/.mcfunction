@@ -10,7 +10,7 @@
 
 # ブロックの直上に来るようにループ処理を行う
     scoreboard players set $2004.Temp Temporary 16
-    execute if block ~ ~ ~ #lib:no_collision unless block ~ ~-0.5 ~ #lib:no_collision run scoreboard players set $2004.Temp Temporary -100
+    execute if block ~ ~ ~ #lib:no_collision/ unless block ~ ~-0.5 ~ #lib:no_collision/ run scoreboard players set $2004.Temp Temporary -100
     execute if score $2004.Temp Temporary matches 1.. run function asset:object/2004.labyria_thunder/init/loop
 
 # ループしてもダメだったらキル

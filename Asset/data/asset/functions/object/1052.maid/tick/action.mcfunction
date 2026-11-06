@@ -5,7 +5,7 @@
 # @within function asset:object/1052.maid/tick/
 
 # 敵の方向を見る
-    tp @s ~ ~ ~ facing entity @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..14,sort=nearest,limit=1]
+    tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..14,sort=nearest,limit=1]
 
 # 動き止める
     effect give @s slowness 1 127 true

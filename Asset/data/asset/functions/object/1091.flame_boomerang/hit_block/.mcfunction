@@ -9,8 +9,8 @@
     #declare tag HitGround
 
 # すぐ上、下がブロックなら反射する
-    execute on passengers at @s unless block ~ ~-0.4 ~ #lib:no_collision on vehicle run tag @s add HitGround
-    execute on passengers at @s unless block ~ ~0.4 ~ #lib:no_collision on vehicle run tag @s add HitGround
+    execute on passengers at @s unless block ~ ~-0.4 ~ #lib:no_collision/ on vehicle run tag @s add HitGround
+    execute on passengers at @s unless block ~ ~0.4 ~ #lib:no_collision/ on vehicle run tag @s add HitGround
     execute if entity @s[tag=HitGround] run scoreboard players set $Speed Lib 10
     execute if entity @s[tag=HitGround] run function lib:reflection_bullet/
 

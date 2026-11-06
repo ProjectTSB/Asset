@@ -15,7 +15,7 @@
     #declare score_holder $U1.HealVal
 
 # CanUsedなら回復量を取得し、累計回復量に加算しておく
-    execute if entity @s[tag=CanUsed] store result score $U1.HealVal Temporary run data get storage asset:context ReceiveHeal.Amount 10
+    execute if entity @s[tag=CanUsed] store result score $U1.HealVal Temporary run data get storage asset:context ReceiveHeal.Amount.Base 10
     execute if entity @s[tag=CanUsed] run scoreboard players operation @s U1.HealSum += $U1.HealVal Temporary
 
 # 累計回復量が20以下ならCanUsedを削除

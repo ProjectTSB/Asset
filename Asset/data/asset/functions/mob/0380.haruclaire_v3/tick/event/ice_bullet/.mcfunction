@@ -28,8 +28,8 @@
         execute if score @s AK.EventTimer matches 69 positioned ^ ^6 ^-4 run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/attack_circle
 
     # 地面に戻る
-        execute if score @s AK.EventTimer matches 85..105 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.08 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
-        execute if score @s AK.EventTimer matches 106..133 if block ~ ~-0.7 ~ #lib:no_collision positioned ^ ^-0.15 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 85..105 if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.08 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
+        execute if score @s AK.EventTimer matches 106..133 if block ~ ~-0.7 ~ #lib:no_collision/ positioned ^ ^-0.15 ^-0.02 run function asset:mob/0380.haruclaire_v3/tick/util/tp
 
 # 終了
     execute if score @s AK.EventTimer matches 114.. run function asset:mob/0380.haruclaire_v3/tick/event/ice_bullet/end

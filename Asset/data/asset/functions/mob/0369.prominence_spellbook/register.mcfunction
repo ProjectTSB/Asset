@@ -4,9 +4,11 @@
 #
 # @within function asset:mob/alias/369/register
 
-# 継承 (int) (オプション)
-    # data modify storage asset:mob Extends append value
-    # function asset:mob/extends
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value true
@@ -47,7 +49,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.3
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -65,5 +67,19 @@
         # data modify storage asset:mob Resist.Thunder set value
 
 # フィールド
+
 # ダメージ
     data modify storage asset:mob Field.Damage set value 24f
+
+# 後退時間
+    data modify storage asset:mob Field.MoveBackTick._ set value 0
+    data modify storage asset:mob Field.MoveBackTick.Max set value 60
+
+# 後退モードか否か
+    data modify storage asset:mob Field.IsMoveBack set value false
+
+# 移動速度
+    data modify storage asset:mob Field.MoveSpeed set value {Forward:0.3,Back:0.1}
+
+# 追尾性能
+    data modify storage asset:mob Field.Rotate set value 800

@@ -32,4 +32,4 @@
     function api:heal/reset
 
 # ノーマル以上なら周囲に移動速度上昇を付与
-    execute if predicate api:global_vars/difficulty/min/2_hard run effect give @e[type=#lib:living,tag=Enemy,tag=!Uninterferable,distance=..5] speed 3 0 true
+    execute if predicate api:global_vars/difficulty/min/2_hard run effect give @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..5] speed 3 0 true

@@ -22,8 +22,7 @@
 # 非戦闘時バリア付与
 # Absorption = $VM.MaxHealth * ($VL.Stack + 1) * 0.02
     # 最大体力を取得
-        function api:modifier/max_health/get
-        execute store result score $VM.MaxHealth Temporary run data get storage api: Return.MaxHealth 100
+        execute store result score $VM.MaxHealth Temporary run attribute @s generic.max_health get 100
     # スタックを取得
         data modify storage api: Argument.ID set value 274
         function api:entity/mob/effect/get/from_id

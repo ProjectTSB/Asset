@@ -5,8 +5,7 @@
 # @within function asset:artifact/0364.red_knights_sword/trigger/alt_attack/
 
 # 必要な値を取得
-    function api:modifier/max_health/get
-    execute store result score $A4.MaxPer Temporary run data get storage api: Return.MaxHealth 0.4
+    execute store result score $A4.MaxPer Temporary run attribute @s generic.max_health get 0.4
     function api:data_get/health
     execute store result score $A4.Current Temporary run data get storage api: Health
 

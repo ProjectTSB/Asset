@@ -15,8 +15,8 @@
     execute if score @s RF.Age matches ..50 run tp @s ^ ^ ^0.25 ~ ~
 
 # 壁に埋まってるかどうかで色を変える
-    execute at @s if block ~ ~ ~ #lib:no_collision run data modify entity @s glow_color_override set value 5308671
-    execute at @s unless block ~ ~ ~ #lib:no_collision run data modify entity @s glow_color_override set value 16724787
+    execute at @s if block ~ ~ ~ #lib:no_collision/ run data modify entity @s glow_color_override set value 5308671
+    execute at @s unless block ~ ~ ~ #lib:no_collision/ run data modify entity @s glow_color_override set value 16724787
 
 # 5s 経ったら kill
     execute if score @s RF.Age matches 100.. run kill @s

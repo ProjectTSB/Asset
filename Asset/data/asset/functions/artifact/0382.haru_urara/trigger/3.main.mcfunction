@@ -10,7 +10,7 @@
 # ここから先は神器側の効果の処理を書く
 
 # 演出
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] at @s run particle dust 0.965 0.745 0.973 1 ~ ~0.3 ~ 0.4 8 0.4 0 400 force @a[distance=..30]
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] at @s run particle dust 0.965 0.745 0.973 1 ~ ~0.3 ~ 0.4 8 0.4 0 400 force @a[distance=..30]
     playsound minecraft:entity.ender_dragon.flap player @a[distance=..15] ~ ~ ~ 1 1
 
 # ダメージ
@@ -25,7 +25,7 @@
 # 補正functionを実行
     function api:damage/modifier
 # 攻撃した対象に実行
-    execute as @e[type=#lib:living,type=!player,tag=Victim,distance=..10] run function api:damage/
+    execute as @e[type=#lib:living_without_player,tag=Victim,distance=..10] run function api:damage/
 # リセット
     function api:damage/reset
 
@@ -34,5 +34,5 @@
     data modify storage api: Argument.ID set value 125
     data modify storage api: Argument.Stack set value 31
     data modify storage api: Argument.Duration set value 20
-    execute as @e[type=#lib:living,type=!player,tag=Victim,tag=!Immovable,distance=..10] run function api:entity/mob/effect/give
+    execute as @e[type=#lib:living_without_player,tag=Victim,tag=!Immovable,distance=..10] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset

@@ -10,8 +10,8 @@
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Fire"
     execute as @a if score @s UserID = $UserID Temporary run function api:damage/modifier
-    $execute as @e[type=#lib:living,type=!player,tag=1101.Hit,tag=!AlreadyHit,distance=$(Distance)] run function api:damage/
+    $execute as @e[type=#lib:living_without_player,tag=1101.Hit,tag=!AlreadyHit,distance=$(Distance)] run function api:damage/
     function api:damage/reset
 
 # 重複ヒット防止Tag
-    $tag @e[type=#lib:living,type=!player,tag=1101.Hit,distance=$(Distance)] add 1101.AldreadyHit
+    $tag @e[type=#lib:living_without_player,tag=1101.Hit,distance=$(Distance)] add 1101.AldreadyHit

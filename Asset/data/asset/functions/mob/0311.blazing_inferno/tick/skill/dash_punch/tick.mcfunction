@@ -14,8 +14,8 @@
     execute if score @s General.Mob.Tick matches 20..40 run function asset:mob/0311.blazing_inferno/tick/skill/dash_punch/move_stacked
 
 # ブロックに触れたら強制停止
-    execute if score @s General.Mob.Tick matches 20..40 at @s unless block ^ ^ ^1 #lib:no_collision run scoreboard players set @s General.Mob.Tick 40
-    execute if score @s General.Mob.Tick matches 20..40 at @s unless block ^ ^ ^2 #lib:no_collision run scoreboard players set @s General.Mob.Tick 40
+    execute if score @s General.Mob.Tick matches 20..40 at @s unless block ^ ^ ^1 #lib:no_collision/ run scoreboard players set @s General.Mob.Tick 40
+    execute if score @s General.Mob.Tick matches 20..40 at @s unless block ^ ^ ^2 #lib:no_collision/ run scoreboard players set @s General.Mob.Tick 40
 
 # 眼の前にプレイヤーがいてもやめる
     execute if score @s General.Mob.Tick matches 20..40 at @s positioned ~ ~1.5 ~ positioned ^ ^ ^-3 if entity @a[distance=..2] run scoreboard players set @s General.Mob.Tick 40

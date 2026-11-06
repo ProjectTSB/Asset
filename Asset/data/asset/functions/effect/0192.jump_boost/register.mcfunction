@@ -5,7 +5,7 @@
 # @within function asset:effect/0192.jump_boost/_/register
 
 # ExtendsSafe (boolean) (default = false)
-    # data modify storage asset:effect ExtendsSafe set value true
+    data modify storage asset:effect ExtendsSafe set value true
 # ID (int)
     data modify storage asset:effect ID set value 192
 # 名前 (TextComponentString)

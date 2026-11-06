@@ -7,7 +7,7 @@
 #   asset:mob/0155.immorality/tick/shot/recursive
 
 # 着弾検知
-    execute unless block ^ ^ ^0.25 #lib:no_collision run tag @s add Landing
+    execute unless block ^ ^ ^0.25 #lib:no_collision/ run tag @s add Landing
 
 # ターゲットにタグ付与
     execute positioned ~-0.5 ~-0.5 ~-0.5 run tag @p[gamemode=!spectator,dx=0] add LandingTarget

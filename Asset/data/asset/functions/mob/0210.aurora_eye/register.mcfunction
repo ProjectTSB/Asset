@@ -1,6 +1,12 @@
 #> asset:mob/0210.aurora_eye/register
 # @within asset:mob/alias/210/register
 
+# 継承(オプション)
+    data modify storage asset:mob Extends append value 2003
+    function asset:mob/extends
+# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
+    data modify storage asset:mob IsAbstract set value false
+
 # ID (int)
     data modify storage asset:mob ID set value 210
 # Type (string) Wikiを参照
@@ -38,7 +44,7 @@
 # 特殊防御力 (double) (オプション) // 4pointにつきダメージを大きく減らす
     # data modify storage asset:mob SpecialDefense set value
 # 移動速度 (double) (オプション)
-    # data modify storage asset:mob Speed set value
+    data modify storage asset:mob Speed set value 0.2
 # 索敵範囲 (double) (オプション)
     # data modify storage asset:mob FollowRange set value
 # ノックバック耐性 (double) (オプション)
@@ -61,3 +67,5 @@
     data modify storage asset:mob Field.BulletCT set value {_:80,Max:80}
     data modify storage asset:mob Field.Metadata.Melee set value {AuroraEye:"Melee"}
     data modify storage asset:mob Field.Metadata.Bullet set value {AuroraEye:"Bullet"}
+
+    data modify storage asset:mob Field.Rotate set value 800
