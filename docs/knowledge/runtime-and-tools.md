@@ -25,7 +25,7 @@ Wiki の API 一覧は探索用の索引として使えるが、例示された 
 |`update-artifact-spreadsheet.scala.sc`|artifactの`give/2.give.mcfunction`|`scripts/output/artifact-spreadsheet.csv`を上書きする。|
 |`mob_upgrade_v3.scala.sc`|repo rootから見た`Asset/data/.../mob`のv1/v2実装|mob本体のregister/init/triggerと`mob/alias/<ID>`を直接作成・更新する。既定は全mob対象なので、対象設定と差分を先に確認する。|
 
-CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。
+CI は `.github/workflows/datapack-linter.yml` の [mcf-linter-spark](https://github.com/EllaCoat/mcf-linter-spark)。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。変更したファイルだけでなく pack 全体を毎回検査し、error か warning が1件でもあれば失敗するので、master に残った warning は以後のすべての PR を落とす。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。
 
 共通のmcfunction規約はDevSpaceの `AGENTS.md` にある。このrepoでのdeclareの実例は [1163の複数タグ宣言](../../Asset/data/asset/functions/artifact/1163.rail_shooter/trigger/_index.d.mcfunction) と [1430のtag/score宣言](../../Asset/data/asset/functions/artifact/1430.shield_of_fate/trigger/_index.d.mcfunction)。公開範囲の確認では、各IMP Docと対応する宣言を一組で参照する。
 
