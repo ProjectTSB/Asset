@@ -5,4 +5,4 @@
 # @within tag/function asset:rejoin
 
 # リジョイン処理
-    execute if entity @a[scores={GO.Time=1..}] run schedule function asset:artifact/0600.xtal/trigger/schedule 1t replace
+    execute if entity @a[scores={GO.Time=1..}] run schedule function asset:artifact/0600.xtal/trigger/schedule/ 1t replace
