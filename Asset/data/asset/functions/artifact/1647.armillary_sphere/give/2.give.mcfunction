@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "星廻る渾天儀", "color": "#b4b4ff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate": "ランダムな属性の攻撃力が%s上昇するが、他二属性の攻撃力が%s低下し、", "with": [{"text": "20%", "color": "green"}, {"text": "10%", "color": "red"}]}', '{"translate": "MPが最大になるたびに、バフを受ける属性が火、水、雷、火...と周期的に変化する。"}', '{"text": "巡りとは、自然の摂理。思い通りにはならないものだ。", "color": "gray"}', '{"text": "だが、星々とひとつになれるのであれば、「廻り」はあなたと共にあるだろう。", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"translate": "ランダムな属性の攻撃力が%s上昇するが、", "with": [{"text": "20%", "color": "green"}]}', '{"translate": "他二属性の攻撃力が%s低下する。", "with": [{"text": "10%", "color": "red"}]}', '{"translate": "MPが最大になるたびに、バフを受ける属性が"}', '{"text": "火、水、雷、火...と周期的に変化する。"}', '{"text": "巡りとは、自然の摂理。思い通りにはならないものだ。", "color": "gray"}', '{"text": "だが、星々とひとつになれるのであれば、", "color": "gray"}', '{"text": "廻りはあなたと共にあるだろう。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
