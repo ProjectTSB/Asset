@@ -2,7 +2,7 @@
 #
 # 1つ隙間を空けて1直線に転がす.3
 #
-# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/*
+# @within function asset:mob/0059.jack_o_lantern/tick/skill/giant_pumpkin2/**
 
 # Rotationを設定して召喚
     execute positioned ^7.5 ^0 ^9 rotated 180 0 run function asset:mob/0059.jack_o_lantern/tick/skill/common/giant_pumpkin/neutral

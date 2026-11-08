@@ -12,17 +12,14 @@
     playsound ogg:mob.strider.retreat5 hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 2
 
-# 自身に鈍足と弱化を付与
+# 自身に鈍足を付与
     effect give @s slowness 3 10 true
-    effect give @s weakness 3 10 true
 
 # 自身に割合ダメージ
-    execute store result storage api: Argument.Damage float 0.08 run function api:mob/get_max_health
-    data modify storage api: Argument.AttackType set value "Physical"
-    data modify storage api: Argument.FixedDamage set value 1b
-    function api:damage/modifier
-    function api:damage/
-    function api:damage/reset
+    function api:mob/get_max_health
+    execute store result storage api: Argument.Delta double -0.0008 run data get storage api: Return.MaxHealth 100
+    function api:mob/modify_health
+    function asset:mob/call.m {method:"update_bossbar"}
 
 # クイズエンド
     function asset:mob/0059.jack_o_lantern/tick/skill/quiz/end

@@ -10,24 +10,33 @@
 
 # 乱数によるスキル選択
     data modify storage lib: Args.key set value "59.Skill"
-    data modify storage lib: Args.max set value 4
+    data modify storage lib: Args.max set value 3
     data modify storage lib: Args.scarcity_history_size set value 3
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
+# クイズのインターバルを-1し、0ならクイズにする
+    execute store result storage asset:context this.QuizInterval._ int 0.9999999999 run data get storage asset:context this.QuizInterval._
+    execute if data storage asset:context this.QuizInterval{_:0} run scoreboard players set $Random Temporary 10
+    execute if data storage asset:context this.QuizInterval{_:0} run data modify storage asset:context this.QuizInterval._ set from storage asset:context this.QuizInterval.Max
+
 # 体力が40%以下かつ一度も大技を撃ってないなら大技を使用し、再使用防止Tagを付与
-    execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run scoreboard players set $Random Temporary 10
+    execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run scoreboard players set $Random Temporary 100
     execute if entity @s[tag=1N.HealthLess40Per,tag=!1N.AlreadySpecial] run tag @s add 1N.AlreadySpecial
 
+# DPSチェックの猶予が0ならDPSチェック発動
+    execute if data storage asset:context this{DPSCheck:0} run scoreboard players set $Random Temporary 1000
+
 # デバッグ用
-    # scoreboard players set $Random Temporary 2
+    # scoreboard players set $Random Temporary 00
 
 # スキルTagを付与
-    execute if score $Random Temporary matches 0 run tag @s add 1N.Quiz
-    execute if score $Random Temporary matches 1 run tag @s add 1N.GiantPumpkin1
-    execute if score $Random Temporary matches 2 run tag @s add 1N.GiantPumpkin2
-    execute if score $Random Temporary matches 3 run tag @s add 1N.Missile
+    execute if score $Random Temporary matches 0 run tag @s add 1N.GiantPumpkin1
+    execute if score $Random Temporary matches 1 run tag @s add 1N.GiantPumpkin2
+    execute if score $Random Temporary matches 2 run tag @s add 1N.Missile
 
-    execute if score $Random Temporary matches 10 run tag @s add 1N.PumpkinRain
+    execute if score $Random Temporary matches 10 run tag @s add 1N.Quiz
+    execute if score $Random Temporary matches 100 run tag @s add 1N.PumpkinRain
+    execute if score $Random Temporary matches 1000 run tag @s add 1N.DPSCheck
 
 # リセット
     scoreboard players reset $Random Temporary
