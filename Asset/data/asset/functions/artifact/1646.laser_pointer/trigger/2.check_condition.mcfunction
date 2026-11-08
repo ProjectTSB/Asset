@@ -26,5 +26,5 @@
     execute if entity @s[tag=CanUsed] run function asset:artifact/1646.laser_pointer/trigger/3.main
 
 # リセット
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,distance=..5] remove A1646.Hit
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,distance=..10] remove A1646.Hit
     scoreboard players reset $A1646.UserID
