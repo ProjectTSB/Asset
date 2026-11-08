@@ -8,6 +8,8 @@
     function asset:artifact/common/check_condition/mainhand
 
 # 追加チェック：足元にブロックがないならCanUsed剝奪
+    function api:data_get/on_ground
+    execute if data storage api: {OnGround:0b} run tag @s remove CanUsed
     execute align y if block ~ ~-1 ~ #lib:no_collision/ run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
