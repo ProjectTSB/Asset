@@ -1,6 +1,13 @@
+---
+title: Object、API、生成と検証
+description: Object、API storage、display・粒子・item entityなどの描画、生成・更新スクリプト、CIと自動マージ、実機検証を扱うときに読む
+---
+
 # Object、API、生成と検証
 
 Object の変更前に [型・インスタンス・継承モデル](object-model.md)、Effect の変更前に [Effect の定義・イベント・寿命](effect.md) を読む。Object は `Asset/data/asset/functions/object/<4桁ID>.<name>/` の型定義から生成され、summon／init／tick や任意メソッドを自前実装・継承・明示 super で組み合わせる。基底の abstract_projectile を使う例と、子の値を先に設定する初期化契約も同文書に示す。
+
+この領域の個別判断の一部はノートにある。幾何は [notes/geometry/](notes/geometry/)、大きな敵への減衰は [notes/damage/](notes/damage/) にあり、DevSpaceの `sh scripts/knowledge/index.sh <この作業コピー> --for runtime-and-tools.md` で、この文書を `related` に挙げるノートを出せる。件数を上限で打ち切る数え方は、DevSpaceの `docs/mcfunction-idioms.md`「件数を上限で打ち切る」にある。
 
 ディレクトリはゼロ埋め4桁だが、`storage asset:object ID` と API へ渡す ID は整数である。生成時の FieldOverride はクラスの既定 Field に merge される。個体の Field は OhMyDat の `ObjectField` に保持され、処理中だけ `storage asset:context this.*` に展開される。実装から `this` を変えた結果は本体の呼び出し境界で書き戻される。Effect は別の保存形式・イベント呼び出し方式を持つため、Object の経路をそのまま適用しない。
 
@@ -23,6 +30,7 @@ Wiki の API 一覧は探索用の索引として使えるが、例示された 
 |`extract_trader.sh`|`Asset/.../trader/**/register.mcfunction`|`scripts/input/traders.csv`。|
 |`update-artifact-register.scala.sc`|`scripts/input/artifact-colors.tsv` と各artifact registerのRarityRegistry行|該当registerへ色別registry行を追記する。既存行を除去しないので、無条件再実行は重複し得る。入力の`isSet`と事前差分を確認する。|
 |`update-artifact-spreadsheet.scala.sc`|artifactの`give/2.give.mcfunction`|`scripts/output/artifact-spreadsheet.csv`を上書きする。|
+|`datapack/repository.py`|`Asset/data/asset/functions/` の各カテゴリと `Asset/data/asset/tags/functions/artifact/`|読取のみ。IDの重複と、神器の `give.json`・関数タグへの登録を作業コピー全体で検査する。DevSpaceの `scripts/datapack/check.py` から呼ばれるので、名前と呼出しの取り決め（スクリプトの冒頭）を保つ。タグや配置を変えたらこのスクリプトと `tests/datapack/repository.py` も直す。|
 |`mob_upgrade_v3.scala.sc`|repo rootから見た`Asset/data/.../mob`のv1/v2実装|mob本体のregister/init/triggerと`mob/alias/<ID>`を直接作成・更新する。既定は全mob対象なので、対象設定と差分を先に確認する。|
 
 CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`。push、pull_request、workflow_dispatch で走り、`animated_java:**` は lint 対象外。linter 成功は構文・参照の一部確認であり、実機の tick、damage、演出、説明文の正しさまでは保証しない。
@@ -41,7 +49,11 @@ CI は `.github/workflows/datapack-linter.yml` の `ChenCMD/datapack-linter@v2`�
 
 Asset の master 向け PR は、write 権限を持つ人による1件の承認と `lint` の成功を必要とする。承認者を特定のメンバーへ限定しない。Ruleset は必須承認数を1、Code owner の承認必須を無効にする。差分を変更するコミットの追加時には、人と Bot のどちらの承認も取り消す。Ruleset は Git 管理外の設定なので、ファイルのマージだけでは承認要件は変わらない。
 
-[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+[自動マージworkflow](../../.github/workflows/auto-merge-docs-tests.yml) はmaster向けの非Draft PRのうち、そのrepoへの書き込み権限（`write` 以上）を持つ人が作成したものをAPIで調べ、変更ファイルがすべて `docs/`・`tests/` 配下ならsquash方式のauto-mergeを有効にする。承認と必須チェックがそろえばマージし、未完了ならGitHubが条件成立を待つ。docs/tests だけの PR は GitHub Actions bot が確認したコミットを承認するため、人の承認は不要になる。全ページのファイル一覧と変更件数を照合し、rename前のパスも判定するため、本体ファイルをdocsへ移動したPRは自動化の対象外になる。rootのREADMEや `.github/` も対象外。
+
+`docs/`・`tests/` 配下でも、以後のAI全体の行動を変える保護対象を含むPRは対象外になる。保護対象の一覧と理由はDevSpaceの `docs/knowledge-notes.md`「人がマージする範囲」にあり、workflowはその一覧と、どの深さの指示ファイルも保護する規則を持つ。rename前のパスも同じ判定を受ける。`docs/knowledge/notes/` 配下の個別ノートは自動マージの対象のままで、追加・訂正・削除に人の承認を待たない。
+
+保護対象を含むPRには自動承認も付かないため、人のレビューとマージが必要になる。
 
 追加コミットが入るたびに差分全体を再判定し、引き続き docs/tests だけなら Bot が改めて承認する。本体コードが加わった場合は、人による新しい承認が必要になる。
 
@@ -49,7 +61,7 @@ PRの更新・Draft化・マージ先変更で対象外になった場合は、G
 
 auto-mergeを手動解除しただけでは継続的な停止にならず、次のPR更新で条件を満たせば再び有効になる。作業中のPRを自動マージさせたくない場合はDraftにしておき、Ready for reviewへ戻すと再判定される。導入前から開いているPRは、更新イベントまたはworkflow_dispatchで判定を開始する。
 
-自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot 自身が作成した PR は自己承認できないため、人の承認を待つ。
+自動承認の前に、Ruleset で古い承認の取り消しが有効かを確認する。無効なら自動承認を止める。GitHub Actions bot が作成した PR は、bot に書き込み権限がないため自動化の対象外になり、人のレビューとマージが必要になる。
 
 workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRのコードをcheckout・実行しない。Actionsのイベントポリシーでは `pull_request_target` を許可する必要がある。GITHUB_TOKENによるマージでは後続のpush workflowが通常起動しないため、自動対象を本体・生成スクリプトへ広げる場合は、マージ後の処理も再設計する。
 
@@ -60,26 +72,6 @@ workflowは `pull_request_target` と標準の `GITHUB_TOKEN` を使い、PRの�
 NBT内の残距離・残時間をscoreへ往復させずに減らす場合は、DevSpaceの `docs/mcfunction-idioms.md`「整数化を挟む演算」の値域・丸めを確認する。[abstract_projectile](../../Asset/data/asset/functions/object/0001.abstract_projectile/tick/rec.m.mcfunction) の `RemainingRange` は正の整数を減らし0を維持する実例で、係数は `0.9999999999`。係数を1へ丸めない。
 
 Asset固有の確認点は、終了を示す負数と初期化時の二段の丸めである。[Killer Bee Formation](../../Asset/data/asset/functions/mob/0429.killer_bee_formation/tick/.mcfunction) は完了値-1を減算対象から外す。[Thunderの予告時間](../../Asset/data/asset/functions/object/2057.thunder/init/.mcfunction) はgetとstoreの両方へ係数を掛けるため、例えば20は18になる。無条件の-1へ置換せず、呼出先が受け取る時間まで確認する。
-
-## 移動の慣性だけを消すtpの往復
-
-移動停止の選択肢と実行文脈の条件は、DevSpaceの `docs/mcfunction-idioms.md`「実行位置を移動前の値として保持する」にある。[Blade of Whirlwindのヒットストップ](../../Asset/data/asset/functions/artifact/0745.blade_of_whirlwind/trigger/3.main.mcfunction) は、視点移動の慣性を残すため、同じ条件で絶対座標tpと相対座標tpを続ける利用例である。
-
-移動前の文脈は演出にも使われる。[Ecual の転移演出](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/general/3.teleport_effect/.mcfunction) は、tp直後に呼ばれ、通常のplaysoundで移動元、`execute at @s` 付きで移動先に音を出し、保持した位置から移動後の本人を向いて軌跡を描く。tp後だからと呼出し全体へ `at @s` を追加すると移動元を失う。古い文脈が意図的な入力か、取り直し漏れかを呼出側まで見て判断する。
-
-[Frestchika の横移動](../../Asset/data/asset/functions/mob/0365.frestchika/tick/base_move/skill/side_dash_shot/.mcfunction) の「ウソ慣性」は、tick区間ごとにtp距離を減らして減速を作る。物理的なMotionの減衰ではなく、壁との判定も同じ `rotated` 文脈のcheck_collideで別に行う。判定と移動の向きを分離したり、Motionの設定へ単純に置換したりすると、移動と衝突の規則が変わる。
-
-## 小さな判定箱と、標的を実行者にするレイ
-
-`distance` や足元から測る幾何判定と、entityの当たり判定との重なりを調べるdxyzは、同じ対象集合にはならない。[Simple Grenade](../../Asset/data/asset/functions/object/1139.simple_grenade/hit/.mcfunction) は至近距離の取りこぼしを避けるため、distanceの範囲へdxyzの対象も加える。似た範囲指定だからという理由で一方を消さず、足元の点と当たり判定のどちらを含めたいか確認する。
-
-[Arrow の命中判定](../../Asset/data/asset/functions/object/1009.arrow/detect_hit_entity/from_player.mcfunction) は、実行位置を各軸 -0.3 ずらして `@e[dx=0]` を選び、さらに -0.4 ずらして `@s[dx=0]` を調べる。`dx=0` は点ではなく各軸に1の幅を持つ箱なので、各軸の区間は元の位置を基準に `[-0.3,0.7]` と `[-0.7,0.3]` になる。両方と重なるentityの当たり判定を選ぶことで、共通部分 `[-0.3,0.3]` の小さな箱を作る。点からの距離判定へ変えたり、二段目を重複として消したりしない。オフセット変更時は二つの箱の共通部分を計算し直す。
-
-[Shulker Bullet の標的検査](../../Asset/data/asset/functions/mob/0263.shulker_bullet/tick/target/.mcfunction) は、レイの実行者を標的プレイヤー、実行位置を発射側としている。位置だけを前へ進めるため、`@s[dx=0]` が標的への到達判定になる。[呼出側](../../Asset/data/asset/functions/mob/0263.shulker_bullet/tick/turn/.mcfunction) は `as <標的> facing entity @s eyes` として向きを設定し、戻り値で遮蔽を判定する。到達時の `execute summon marker` は、標的から新しいmarkerへ実行者を切り替え、[fetch](../../Asset/data/asset/functions/mob/0263.shulker_bullet/tick/target/fetch.mcfunction) で終点・向きを保存してmarkerをkillする。レイの位置と `@s` を同じものとして読み替えない。
-
-召喚数に上限を設ける場合は、総数ではなく上限に達したかだけを数えられる。[Silver Turret](../../Asset/data/asset/functions/mob/0421.silver_turret/tick/check_count.mcfunction) は近傍のMob422を最大10体まで取得し、10体未満のときだけ成功を返す。limitと比較値、明示的なreturnの意味はDevSpaceの `docs/mcfunction-idioms.md`「件数を上限で打ち切る」を参照する。
-
-[Icicleの命中](../../Asset/data/asset/functions/object/1068.icicle/hit_entity/.mcfunction) や [Barrel](../../Asset/data/asset/functions/object/1081.barrel/hit_entity/.mcfunction) は、ExtendedCollisionへの命中時にダメージを減らす。大型Mobへの多重命中を見込んだ調整であり、追加当たり判定への補正を不要として外さない（ユーザー確認済み）。倍率は攻撃ごとの調整値で、共通係数ではない。Icicleは命中集合にExtendedCollisionが一体でもあると全対象を減衰させる。他の対象まで減ること自体は狙いではないが、同時命中がほぼ起きない想定で許容している。対象範囲を広げる変更では、その前提を再確認する。
 
 ## item entityの拾得・合流・描画を制御する
 
