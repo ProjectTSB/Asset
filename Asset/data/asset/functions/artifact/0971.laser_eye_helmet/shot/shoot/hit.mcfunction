@@ -1,9 +1,9 @@
-#> asset:artifact/0971.laser_eye_helmet/shot/hit
+#> asset:artifact/0971.laser_eye_helmet/shot/shoot/hit
 #
 #
 # @within function
-#    asset:artifact/0971.laser_eye_helmet/shot/3.main
-#    asset:artifact/0971.laser_eye_helmet/shot/bullet
+#    asset:artifact/0971.laser_eye_helmet/shot/shoot/
+#    asset:artifact/0971.laser_eye_helmet/shot/shoot/recursive
 
 # 一定の距離から距離減衰するための距離(適正距離をメートル*2で指定)
     scoreboard players set $Appropriate_Distance Temporary 5
@@ -12,7 +12,7 @@
 # 最大ダメージ
     scoreboard players add $Damage Temporary 50
 # もし、適正距離じゃなかった場合、距離-適正距離=減少ダメージにする
-    execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/0971.laser_eye_helmet/shot/damage_attenuation
+    execute if score $Distance_Damping Temporary >= $Appropriate_Distance Temporary run function asset:artifact/0971.laser_eye_helmet/shot/shoot/damage_attenuation
 
 # ダメージ設定
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $Damage Temporary
