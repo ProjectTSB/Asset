@@ -31,3 +31,10 @@
     data modify storage api: Argument.Amount set value -0.1d
     data modify storage api: Argument.Operation set value "multiply_base"
     function api:modifier/attack/thunder/add
+
+# 演出
+    particle bubble_pop ~ ~1.5 ~ 0.1 0.5 0.1 0 15
+    particle dust 0.3 0.7 1 0.75 ~ ~1.5 ~ 0.2 0.5 0.2 0 25
+    playsound block.copper_trapdoor.open player @a ~ ~ ~ 1.0 0.5
+    playsound block.trial_spawner.detect_player player @a ~ ~ ~ 0.8 0.7
+    playsound ambient.underwater.exit player @a ~ ~ ~ 1.5 1.4
