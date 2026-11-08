@@ -18,6 +18,9 @@
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
+# 装備中タグ
+    tag @s add A1647.Equipping
+
 # 演出
     particle sonic_boom ~ ~0.5 ~ 0 0 0 1 1
     particle witch ~ ~0.5 ~ 0.2 0.25 0.2 0 25
