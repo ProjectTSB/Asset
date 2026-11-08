@@ -19,7 +19,7 @@
         data modify storage api: Argument.FieldOverride.MPHeal set from storage api: PersistentArgument.AdditionalMPHeal
         execute store result storage api: Argument.FieldOverride.OriginID int 1 run scoreboard players get @s UserID
 
-    execute as @e[type=#lib:living_without_player,tag=O1646.Hit,sort=nearest,limit=1] run function asset:artifact/1646.laser_pointer/trigger/apply_effect
+    execute as @e[type=#lib:living_without_player,tag=A1646.Hit,sort=nearest,limit=1] run function asset:artifact/1646.laser_pointer/trigger/apply_effect
 
     function api:entity/mob/effect/reset
 

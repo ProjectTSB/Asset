@@ -7,7 +7,7 @@
 #> private
 # @within function asset:effect/0420.poi/end/*
     #declare score_holder $E0420.UserID
-    #declare score_holder $E04200.Stack
+    #declare score_holder $E0420.Stack
     #declare score_holder $E0420.Damage
     #declare score_holder $E0420.MPHeal
     #declare tag E0420.Origin
@@ -20,13 +20,13 @@
     data modify storage api: Argument.AttackType set value "Magic"
     data modify storage api: Argument.ElementType set value "None"
 # (スタック×this.Damage)ダメージ
-    execute store result score $E04200.Stack Temporary run data get storage asset:context Stack
+    execute store result score $E0420.Stack Temporary run data get storage asset:context Stack
     execute store result score $E0420.Damage Temporary run data get storage asset:context this.Damage
-    execute store result storage api: Argument.Damage double 1 run scoreboard players operation $E0420.Damage Temporary *= $E04200.Stack Temporary
+    execute store result storage api: Argument.Damage double 1 run scoreboard players operation $E0420.Damage Temporary *= $E0420.Stack Temporary
 
 # (スタック×this.MPHeal)だけMPを回復
     execute store result score $E0420.MPHeal Temporary run data get storage asset:context this.MPHeal 100
-    execute store result storage api: Argument.AdditionalMPHeal double 0.01 run scoreboard players operation $E0420.MPHeal Temporary *= $E04200.Stack Temporary
+    execute store result storage api: Argument.AdditionalMPHeal double 0.01 run scoreboard players operation $E0420.MPHeal Temporary *= $E0420.Stack Temporary
 
     execute as @p[tag=E0420.Origin] run function api:damage/modifier
     function api:damage/
@@ -43,6 +43,6 @@
 
 # リセット
     scoreboard players reset $E0420.UserID
-    scoreboard players reset $E04200.Stack
+    scoreboard players reset $E0420.Stack
     scoreboard players reset $E0420.Damage
     scoreboard players reset $E0420.MPHeal

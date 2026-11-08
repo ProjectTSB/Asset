@@ -14,7 +14,7 @@
     execute if score $A1646.Stack Temporary matches 9.. run particle dust 1 0.4 0.2 0.4 ~0.5 ~0.5 ~0.5 0 0 0 1 15
 
 # 判定タグ
-    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,limit=1] add O1646.Hit
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,limit=1] add A1646.Hit
 
 # リセット
     scoreboard players reset $A1646.Stack
