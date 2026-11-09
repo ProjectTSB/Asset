@@ -9,15 +9,23 @@
 
 # ここから先は神器側の効果の処理を書く
 
-# 連続使用チェック
-    function asset:artifact/1607.dimension_gate/trigger/rapid_use/check
-
 # ターゲットの背後にワープ
     execute positioned as @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] rotated ~ 0 positioned ^ ^1.8 ^1.6 run tp @s ~ ~ ~ facing entity @e[type=#lib:living_without_player,tag=Target,distance=..20,limit=1] feet
 
 # 演出
     playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
     execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
+
+# 固有デバフがあれば自傷ダメージ
+    data modify storage api: Argument.ID set value 436
+    function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect run function asset:artifact/1607.dimension_gate/trigger/self_damage
+
+# 固有デバフを付与
+    data modify storage api: Argument.ID set value 436
+    data modify storage api: Argument.Duration set value 100
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
 
 # Object召喚
     # ワープ前の位置

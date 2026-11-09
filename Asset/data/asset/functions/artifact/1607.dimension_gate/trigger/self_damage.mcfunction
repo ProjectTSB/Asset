@@ -1,8 +1,8 @@
-#> asset:artifact/1607.dimension_gate/trigger/rapid_use/self_damage
+#> asset:artifact/1607.dimension_gate/trigger/self_damage
 #
 #
 #
-# @within function asset:artifact/1607.dimension_gate/trigger/rapid_use/check
+# @within function asset:artifact/1607.dimension_gate/trigger/3.main
 
 # 演出
     playsound tsb_sounds: player @a ~ ~ ~ 1 0.8
