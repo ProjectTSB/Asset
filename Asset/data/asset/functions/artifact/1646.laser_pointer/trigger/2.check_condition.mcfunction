@@ -16,9 +16,9 @@
 
 # 対象がすでに使用者に付与されたEffect420を持っているならスタックを重ねる
     data modify storage api: Argument.ID set value 420
-    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..5] run function api:entity/mob/effect/get/from_id
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..10] run function api:entity/mob/effect/get/from_id
     execute store result score $A1646.UserID Temporary run data get storage api: Return.Effect.Field.OriginID
-    execute if data storage api: Return.Effect if score @s UserID = $A1646.UserID Temporary as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..5] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
+    execute if data storage api: Return.Effect if score @s UserID = $A1646.UserID Temporary as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..10] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
     # 使用者でないならキャンセル
     execute if data storage api: Return.Effect unless score @s UserID = $A1646.UserID Temporary run tag @s remove CanUsed
 
