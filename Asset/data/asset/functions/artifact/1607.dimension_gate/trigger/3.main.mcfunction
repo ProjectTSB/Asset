@@ -19,6 +19,17 @@
     playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
     execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 1 1.5
 
+# 固有デバフがあれば自傷ダメージ
+    data modify storage api: Argument.ID set value 436
+    function api:entity/mob/effect/get/from_id
+    execute if data storage api: Return.Effect run function asset:artifact/1607.dimension_gate/trigger/self_damage
+
+# 固有デバフを付与
+    data modify storage api: Argument.ID set value 436
+    data modify storage api: Argument.Duration set value 100
+    function api:entity/mob/effect/give
+    function api:entity/mob/effect/reset
+
 # Object召喚
     # ワープ前の位置
         data modify storage api: Argument.ID set value 1186
