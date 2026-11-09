@@ -20,7 +20,7 @@
     execute store result score $A1646.UserID Temporary run data get storage api: Return.Effect.Field.OriginID
     execute if data storage api: Return.Effect if score @s UserID = $A1646.UserID Temporary as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..5] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
     # 使用者でないならキャンセル
-    execute unless score @s UserID = $A1646.UserID Temporary run tag @s remove CanUsed
+    execute if data storage api: Return.Effect unless score @s UserID = $A1646.UserID Temporary run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1646.laser_pointer/trigger/3.main
