@@ -12,7 +12,7 @@
     playsound item.book.page_turn player @a ~ ~ ~
 # 属性抽選
     execute store result storage asset:temp type int 1 run random value 0..2
-    execute if data storage asset:temp {type:0} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/fire
-    execute if data storage asset:temp {type:1} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/water
-    execute if data storage asset:temp {type:2} anchored eyes run function asset:artifact/0101.grimoire/trigger/ballet/thunder
+    execute if data storage asset:temp {type:0} anchored eyes positioned ^ ^ ^ run function asset:artifact/0101.grimoire/trigger/ballet/fire
+    execute if data storage asset:temp {type:1} anchored eyes positioned ^ ^ ^ run function asset:artifact/0101.grimoire/trigger/ballet/water
+    execute if data storage asset:temp {type:2} anchored eyes positioned ^ ^ ^ run function asset:artifact/0101.grimoire/trigger/ballet/thunder
     data remove storage asset:temp type

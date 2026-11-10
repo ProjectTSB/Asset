@@ -19,7 +19,7 @@
     function api:damage/modifier
 
 # 範囲ダメージ
-    execute as @e[type=#lib:living_without_player,distance=..2] run function api:damage/
+    execute positioned ~-1 ~-1 ~-1 as @e[type=#lib:living_without_player,dx=1,dy=1,dz=1] run function api:damage/
 # リセット
 
     function api:damage/reset
