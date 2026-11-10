@@ -22,6 +22,6 @@
     execute if score $A1176.BlockDetect Temporary matches 0 run tag @s add A1176.Target
 
 # reset
-    scoreboard players reset $A1176.BlockDetect Temporary
-    scoreboard players reset $A1176.LoopEnd Temporary
-    scoreboard players reset $A1176.LoopNum Temporary
+    scoreboard players reset $A1176.BlockDetect
+    scoreboard players reset $A1176.LoopEnd
+    scoreboard players reset $A1176.LoopNum

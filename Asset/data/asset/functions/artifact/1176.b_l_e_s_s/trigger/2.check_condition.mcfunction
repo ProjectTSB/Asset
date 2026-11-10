@@ -27,4 +27,4 @@
     execute if entity @s[tag=CanUsed] run function asset:artifact/1176.b_l_e_s_s/trigger/3.main
 
 # reset
-    scoreboard players reset $A1176.TargetID Temporary
+    scoreboard players reset $A1176.TargetID
