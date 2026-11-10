@@ -4,7 +4,6 @@
 #
 # @within asset:object/alias/1165/tick
 
-
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 

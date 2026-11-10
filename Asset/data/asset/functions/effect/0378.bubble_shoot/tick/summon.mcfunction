@@ -19,8 +19,8 @@
 
 # 弾を召喚
     data modify storage api: Argument.ID set value 1165
-    data modify storage api: Argument.FieldOverride.Damage set value 150f
-    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage api: PersistentArgument.AdditionalMPHeal
+    data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.FieldOverride.AdditionalMPHeal set from storage asset:context this.AdditionalMPHeal
     execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
     execute facing entity @e[type=marker,tag=SpreadMarker,distance=..10,limit=1] feet run function api:object/summon
 
