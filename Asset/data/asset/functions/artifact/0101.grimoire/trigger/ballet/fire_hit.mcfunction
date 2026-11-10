@@ -5,7 +5,7 @@
 # @within function asset:artifact/0101.grimoire/trigger/ballet/fire
 
 # 演出
-    particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.05 40
+    particle minecraft:flame ~ ~ ~ 0.5 0.5 0.5 0.05 40
     playsound item.firecharge.use player @a ~ ~ ~
 # 引数の設定
     data modify storage api: Argument.Damage set value 80f

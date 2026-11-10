@@ -7,7 +7,7 @@
 # 演出
     data modify storage api: Argument.ID set value 2257
     data modify storage api: Argument.FieldOverride.Scale set value 4f
-    function api:object/summon
+    execute positioned ~ ~-1 ~ run function api:object/summon
     playsound entity.generic.explode player @a ~ ~ ~
 
 # 引数の設定
