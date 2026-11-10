@@ -8,6 +8,9 @@
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
+# 火薬消費
+    clear @s gunpowder 2
+
 # 発射
     execute if predicate lib:is_sneaking run data modify storage api: Argument.ID set value 1094
     execute if predicate lib:is_sneaking run data modify storage api: Argument.FieldOverride.InitMotionDamage set value 520f

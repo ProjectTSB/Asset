@@ -1,8 +1,12 @@
 #> asset:artifact/1176.b_l_e_s_s/_index.d
 #
-# 
+#
 #
 # @within function asset:artifact/1176.b_l_e_s_s/trigger/select_target
+
+#> item_count
+# @within function asset:artifact/1176.b_l_e_s_s/trigger/2.check_condition
+    #declare score_holder $A1176.ItemCount
 
 #> target_check
 # @within

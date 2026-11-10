@@ -10,6 +10,13 @@
 # CanUsedでないならreturn
     execute if entity @s[tag=!CanUsed] run return fail
 
+# 火薬が一定数ないならreturn
+    execute store result score $A1176.ItemCount Temporary run clear @s gunpowder 0
+    execute unless score $A1176.ItemCount Temporary matches 2.. run tag @s remove CanUsed
+    scoreboard players reset $A1176.ItemCount
+    execute if entity @s[tag=!CanUsed] run function lib:message/artifact/dont_have_require_items
+    execute if entity @s[tag=!CanUsed] run return fail
+
 # ターゲット選定
     scoreboard players set $WO.TargetID Temporary 0
     function asset:artifact/1176.b_l_e_s_s/trigger/select_target
