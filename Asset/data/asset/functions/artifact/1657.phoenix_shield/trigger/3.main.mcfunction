@@ -8,6 +8,8 @@
     function asset:artifact/common/use/offhand
 
 # ここから先は神器側の効果の処理を書く
+    say a
+    scoreboard players reset @s 1A1.DamageSum
     data modify storage api: Argument.ID set value 433
     data modify storage api: Argument.Duration set value 3600
     data modify storage api: Argument.Stack set value 1
