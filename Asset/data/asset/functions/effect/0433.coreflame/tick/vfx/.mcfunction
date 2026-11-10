@@ -2,7 +2,7 @@
 #
 # フェニックスシールドの演出
 #
-# @within function asset:effect/0433.coreflame/tick/
+# @within function asset:effect/0433.coreflame/tick/give_barrier
 
 # バリアを張った音
     playsound minecraft:item.shield.block player @a ~ ~ ~ 1 1.3

@@ -1,8 +1,6 @@
 #> asset:effect/0433.coreflame/tick/vfx/spiral
 #
 # 自身の周囲に二重らせんの炎を描く
-# 1本目はオレンジ→赤、2本目は黄色→オレンジ
-# ^ 座標で向きに合わせて回し、目の高さでは正面を空けて視界をふさがないようにしている
 #
 # @within function asset:effect/0433.coreflame/tick/vfx/
 

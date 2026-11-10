@@ -1,6 +1,6 @@
 #> asset:artifact/1657.phoenix_shield/trigger/2.check_condition/damage_sum
 #
-#
+# 記録値加算
 #
 # @within function asset:artifact/1657.phoenix_shield/trigger/2.check_condition
 

@@ -4,7 +4,7 @@
 #
 # @within function asset:effect/0433.coreflame/tick/vfx/
 
-# 外枠(炎)
+# 外枠
     particle minecraft:flame ^-0.78 ^0.65 ^ 0 0 0 0 1
     particle minecraft:flame ^-0.71 ^0.65 ^ 0 0 0 0 1
     particle minecraft:flame ^-0.64 ^0.65 ^ 0 0 0 0 1
@@ -89,7 +89,7 @@
     particle minecraft:flame ^-0.06 ^-1.16 ^ 0 0 0 0 1
     particle minecraft:flame ^0.06 ^-1.16 ^ 0 0 0 0 1
     particle minecraft:flame ^ ^-1.19 ^ 0 0 0 0 1
-# 内枠(赤橙)
+# 内枠
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^-0.69 ^0.56 ^ 0 0 0 0 1
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^-0.6 ^0.56 ^ 0 0 0 0 1
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^-0.51 ^0.56 ^ 0 0 0 0 1
@@ -147,6 +147,6 @@
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^-0.08 ^-1.05 ^ 0 0 0 0 1
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^0.08 ^-1.05 ^ 0 0 0 0 1
     particle minecraft:dust 1.0 0.3 0.0 1.2 ^ ^-1.09 ^ 0 0 0 0 1
-# 盾から立ちのぼる火の粉と煙
+# 盾から出る炎
     particle minecraft:lava ^ ^ ^ 0.4 0.5 0.05 0 3
     particle minecraft:smoke ^ ^0.3 ^ 0.4 0.4 0.05 0.03 5

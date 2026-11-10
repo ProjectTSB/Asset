@@ -11,19 +11,19 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"火種","color":"#ff4500"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"所持バリアが5以下のときにバリアを付与する"}']
+    data modify storage asset:effect Description set value ['{"text":"所持バリアが少ないときにバリアを付与する"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
-    data modify storage asset:effect DurationOperation set value "forceReplace"
+    #data modify storage asset:effect DurationOperation set value "forceReplace"
 # スタックの操作方法 (default = API || "replace")
     # data modify storage asset:effect StackOperation set value
 # 最大効果時間 (int) (default = 2147483647)
     # data modify storage asset:effect MaxDuration set value
 # 最大スタック (int) (default = 2147483647)
-    data modify storage asset:effect MaxStack set value 3
+    #data modify storage asset:effect MaxStack set value 3
 # 悪い効果か否か (boolean)
     data modify storage asset:effect IsBadEffect set value false
 # 死亡時のエフェクトの処理 (default = "remove")
@@ -36,3 +36,4 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
+    data modify storage asset:effect Field.Wait set value 0
