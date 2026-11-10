@@ -2,7 +2,7 @@
 #
 # 火種を1つ消費してバリアを付与する
 #
-# @within function asset:effect/0433.coreflame/tick/check
+# @within function asset:effect/0433.coreflame/tick/try_give
 
 # 演出
     function asset:effect/0433.coreflame/tick/vfx/
