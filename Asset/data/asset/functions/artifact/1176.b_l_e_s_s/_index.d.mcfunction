@@ -9,16 +9,15 @@
     #declare score_holder $A1176.ItemCount
 
 #> target_check
-# @within
-#   function asset:artifact/1176.b_l_e_s_s/trigger/select_target
-#   function asset:artifact/1176.b_l_e_s_s/trigger/block_check
+# @within function asset:artifact/1176.b_l_e_s_s/trigger/select_target
+#   asset:artifact/1176.b_l_e_s_s/trigger/block_check
     #declare tag WO.Candidate
     #declare tag WO.Target
 
 #> block_check
-# @within
-#   function asset:artifact/1176.b_l_e_s_s/trigger/block_check
-#   function asset:artifact/1176.b_l_e_s_s/trigger/block_check_recursive
+# @within function
+#   asset:artifact/1176.b_l_e_s_s/trigger/block_check
+#   asset:artifact/1176.b_l_e_s_s/trigger/block_check_recursive
     #declare score_holder $WO.BlockDetect
     #declare score_holder $WO.LoopEnd
     #declare score_holder $WO.LoopNum
