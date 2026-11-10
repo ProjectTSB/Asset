@@ -25,4 +25,3 @@
 # 管理用オブジェクト召喚
     data modify storage api: Argument.ID set value 1193
     function api:object/summon
-# 生成音

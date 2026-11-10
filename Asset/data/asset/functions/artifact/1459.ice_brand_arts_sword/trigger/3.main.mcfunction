@@ -26,7 +26,7 @@
     # 基礎ダメージ決定
         scoreboard players set $BaseDamage Temporary 225
     # ダメージ増加量決定
-        scoreboard players set $MaxDamageBaf Temporary 775
+        scoreboard players set $MaxDamageBaf Temporary 675
     # 諸々準備
         scoreboard players set $value Temporary 600
         data modify storage api: Argument.ID set value 365

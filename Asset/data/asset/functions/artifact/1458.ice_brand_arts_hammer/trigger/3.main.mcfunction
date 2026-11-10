@@ -44,6 +44,7 @@
 
 #対象に大ダメージ
 # 引数を set
+    function api:damage/single_damage_session/open
     execute store result storage api: Argument.Damage float 1 run scoreboard players get $BaseDamage Temporary
     data modify storage api: Argument.AttackType set value "Physical"
     data modify storage api: Argument.ElementType set value "Water"
@@ -66,6 +67,7 @@
     execute at @e[type=#lib:living_without_player,tag=Victim,distance=..6] as @e[type=#lib:living_without_player,tag=!Victim,distance=..3] run function api:damage/
 # リセット
     function api:damage/reset
+    function api:damage/single_damage_session/close
 # スコアリセット
     scoreboard players reset $NowTime Temporary
     scoreboard players reset $UseTime Temporary
