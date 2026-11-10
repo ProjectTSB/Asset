@@ -4,14 +4,6 @@
 #
 # @within function asset:effect/0433.coreflame/tick/check
 
-#> Private
-# @private
-    #declare score_holder $C1.Barrier
-    #declare score_holder $C1.Threshold
-
-#  failする前にスコアリセット
-    scoreboard players reset $C1.Barrier Temporary
-    scoreboard players reset $C1.Threshold Temporary
 # バリアを削り切られて437が削除予約中なら、437が消えるまで待つ
     data modify storage api: Argument.ID set value 437
     function api:entity/mob/effect/get/from_id

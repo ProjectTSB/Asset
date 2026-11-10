@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"フェニックスシールド","color":"#FF2200"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s累計で5000ダメージを与える度に","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s「火種」を1つ獲得する(最大3つまで)","color":"white","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"%1$sクールダウン中およびmpが足りないときはダメージの記録が停止する","color":"gray","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"-%1$s自身の所持バリアが5以下のとき","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s「火種」を1つ消費しバリアを25得る","color":"white","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"%1$sクールダウン中でもバリアは付与され、クールダウンは発生しない","color":"gray","with":[{"text":"\\u0008","font":"space"}]}']
+    data modify storage asset:artifact Lore set value ['{"translate":"-%1$s「火種」を1つ獲得する(最大3つまで)","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$sクールダウン中およびmpが足りないときはダメージの記録が停止する","color":"gray","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"-%1$s自身の所持バリアが5以下のとき","color":"white","with":[{"text":"\\u0002","font":"space"}]}','{"translate":"%1$s即座に「火種」を1つ消費しバリアを25得る","color":"white","with":[{"text":"\\u0008","font":"space"}]}','{"translate":"%1$sクールダウン中でもバリアは付与され、クールダウンは発生しない","color":"gray","with":[{"text":"\\u0008","font":"space"}]}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
