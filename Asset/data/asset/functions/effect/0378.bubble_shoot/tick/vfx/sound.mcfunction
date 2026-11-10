@@ -1,4 +1,4 @@
-#> asset:effect/0378.bubble_shoot/tick/vfx/1
+#> asset:effect/0378.bubble_shoot/tick/vfx/sound
 #
 # 使用時演出
 #
