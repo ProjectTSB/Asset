@@ -4,8 +4,6 @@
 #
 # @within function asset:artifact/1176.b_l_e_s_s/trigger/2.check_condition
 
-
-
 # クロスヘア中心15度以内のエンティティにタグ付け
     execute anchored eyes positioned ^ ^ ^25 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,distance=..25] positioned as @s facing entity @p[tag=this] feet positioned ^ ^ ^1000 rotated as @p[tag=this] positioned ^ ^ ^1000 if entity @s[distance=..261.1] run tag @s add A1176.Candidate
         #execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=A1176.Candidate,tag=!Uninterferable] run say detect

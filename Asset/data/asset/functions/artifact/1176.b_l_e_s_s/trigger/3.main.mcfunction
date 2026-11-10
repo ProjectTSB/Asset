@@ -4,7 +4,6 @@
 #
 # @within function asset:artifact/1176.b_l_e_s_s/trigger/2.check_condition
 
-
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 

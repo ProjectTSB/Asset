@@ -14,9 +14,9 @@
     execute in overworld run tp 0-0-0-0-0 0.0 0.0 0.0 ~ ~
 
 # まだ対象が見つかってないならチェック
-        # say start check
+    # say start check
     function asset:artifact/1176.b_l_e_s_s/trigger/block_check_recursive
-        # execute as @s run tellraw @p [{"score": {"name": "$A1176.BlockDetect","objective": "Temporary"}}]
+    # execute as @s run tellraw @p [{"score": {"name": "$A1176.BlockDetect","objective": "Temporary"}}]
 
 # 対象適格の敵に印をつける
     execute if score $A1176.BlockDetect Temporary matches 0 run tag @s add A1176.Target
