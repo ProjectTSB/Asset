@@ -28,6 +28,15 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 神器tickの対象状態と公開タグは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「神器tickと死亡・スペクテイター」を参照する。装備回収と発動経路の停止を混同せず、仕様で必要な条件を `2.check_condition` に置く。
 
+## 「通常エリア内」の表示とエリア判定を区別する
+
+使用条件の「通常エリア内」は、ブロック操作を制限する神器と、転移を制限する神器で共通の表示として使う。ただし、表示が同じでも許可範囲や判定対象まで同じとは限らない。
+
+- `api:area/is_breakable` はブロック破壊可能エリアの判定に使う。[オートトーチ](../../Asset/data/asset/functions/artifact/0933.auto_torch/trigger/can_set_check.mcfunction)は、このpredicateが成立しない場合に発動を止める。
+- `lib:is_ban_tp_area` は転移禁止エリアの判定に使い、成立する場合に転移を禁止する。[転移の書](../../Asset/data/asset/functions/artifact/0905.book_of_metastasis/trigger/2.check_condition.mcfunction)は発動位置を判定し、[弾の処理](../../Asset/data/asset/functions/artifact/0905.book_of_metastasis/trigger/5.bullet.mcfunction)でも弾の位置を判定する。[ソウルメイトチャーム](../../Asset/data/asset/functions/artifact/0991.soul_mate/sneak/3.main.mcfunction)は転送元と転送先の両方を判定する。
+
+`is_breakable`の成立と`is_ban_tp_area`の不成立を同値として扱わず、表示の統一を理由にpredicateを置き換えない。エリア制限を追加・修正するときは、ブロック操作と転移のどちらを制限するか、発動位置・移動先・弾の位置のどこを判定するかを確認する。具体的な領域の定義は提供側TheSkyBlessingの `TheSkyBlessing/data/api/predicates/area/is_breakable.json` と `TheSkyBlessing/data/lib/predicates/is_ban_tp_area.json` を正本として確認する。
+
 ## 属性表示と実際の攻撃、クールダウンの指定を揃える
 
 神器の `AttackInfo.AttackType`／`ElementType` はLore用の配列で、表示する属性を列挙する。実際の攻撃はDamage APIへ単一の属性を渡す。値の一覧と計算規則は、依存先TheSkyBlessingの `docs/knowledge/api-and-storage.md`「攻撃の属性と能力値のAttributesを区別する」を参照する。

@@ -15,8 +15,8 @@
     # execute if score $Count Temporary matches ..0 run function lib:message/artifact/dont_have_require_items
     scoreboard players reset $Count Temporary
 
-# プレイヤーがサバイバルかどうかを確認
-    execute unless entity @s[gamemode=!spectator,gamemode=!adventure] run tag @s add ExtraCheckFailed
+# 通常エリア内かを確認
+    execute unless predicate api:area/is_breakable run tag @s add ExtraCheckFailed
 
 # 暗い場所かどうかを確認
     execute if predicate lib:light_level/min/7 run tag @s add ExtraCheckFailed
