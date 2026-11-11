@@ -11,7 +11,5 @@
 # 本体とPassengerを次の回転段階へ進める
     function asset:object/2279.magic_circle/tick/spin/rotate
 
-# 最初の回転に合わせて出現時のScaleへ変化する
-    execute if data storage asset:context this{Phase:"Waiting"} run function asset:object/2279.magic_circle/tick/spin/appear
-    execute if data storage asset:context this{Phase:"Waiting"} on passengers run function asset:object/2279.magic_circle/tick/spin/appear
+# 最初の回転後に出現の段階へ進める
     execute if data storage asset:context this{Phase:"Waiting"} run data modify storage asset:context this.Phase set value "Appearing"

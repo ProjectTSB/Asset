@@ -1,8 +1,9 @@
 #> asset:object/2279.magic_circle/tick/disappear/apply
 #
-# 消失時のScaleへ変化する
+# 両面の消失時のScaleを反映用NBTへ追加する
 #
-# @within function asset:object/2279.magic_circle/tick/disappear/
+# @within function asset:object/2279.magic_circle/tick/spin/apply
 
-# 消失時のScaleを適用する
-    data modify entity @s transformation.scale set from storage asset:context this.DisappearScale
+# 両面のScaleを設定する
+    data modify storage asset:temp Args.Front.transformation.scale set from storage asset:context this.DisappearScale
+    data modify storage asset:temp Args.Back.transformation.scale set from storage asset:context this.DisappearScale
