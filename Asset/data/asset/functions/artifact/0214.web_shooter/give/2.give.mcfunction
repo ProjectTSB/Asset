@@ -27,7 +27,7 @@
 # 神器のトリガー (string) Wikiを参照
     data modify storage asset:artifact Trigger set value "onClick"
 # 神器の発動条件 (TextComponentString) (オプション)
-    data modify storage asset:artifact Condition set value '{"text":"サバイバルのみで使用可能"}'
+    data modify storage asset:artifact Condition set value '{"text":"通常エリア内"}'
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.Damage set value [10]
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
