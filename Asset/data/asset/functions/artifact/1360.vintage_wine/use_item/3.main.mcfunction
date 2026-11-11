@@ -5,7 +5,7 @@
 # @within function asset:artifact/1360.vintage_wine/use_item/2.check_condition
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
-    function asset:artifact/common/use/offhand
+    function asset:artifact/common/use/auto
 
 # ここから先は神器側の効果の処理を書く
 
@@ -17,7 +17,7 @@
     function api:entity/mob/effect/get/from_id
 
 # スタックにつき回復量を変更
-    execute if data storage api: Return.Effect{Stack: 1} run data modify storage api: Argument.Heal set value 10d
+    data modify storage api: Argument.Heal set value 10d
     execute if data storage api: Return.Effect{Stack: 2} run data modify storage api: Argument.Heal set value 12d
     execute if data storage api: Return.Effect{Stack: 3} run data modify storage api: Argument.Heal set value 15d
     execute if data storage api: Return.Effect{Stack: 4} run data modify storage api: Argument.Heal set value 19d
