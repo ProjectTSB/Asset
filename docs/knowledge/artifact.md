@@ -8,6 +8,8 @@ Wiki の作成意図では `Trigger` は Lore 表示用であり、実際の発�
 
 `1.trigger` は ID 判定と次段への呼び出しだけにする（ユーザー方針）。固有条件は `2.check_condition`、効果は `3.main` 以降へ置く。既存例は下記の0057を参照する。
 
+飲食した手を対象にする `itemUse` は、giveの `Slot` と共通check/useを `auto` に揃える。[ヴィンテージ・ワイン](../../Asset/data/asset/functions/artifact/1360.vintage_wine/use_item/1.trigger.mcfunction)は `id.auto` で飲んだ神器を選び、飲食側のcheck/useをautoにする一方、熟成のtickはoffhandを対象にする。熟成バフはプレイヤーに付くため、オフハンドで蓄積したスタックをメインハンドの別個体を飲んで使える。固定スロットのcheck/useは使用した手との一致を保証しないため、固定する仕様なら共通checkより前に使用した手を確認する。共通checkは失敗時にも飲食アイテムの使用回数を減らす場合があり、check後の除外では処理対象のずれを防げない。使用した手の推定と `id.auto` の設定は、提供側TheSkyBlessingの `TheSkyBlessing/data/asset_manager/functions/artifact/triggers/use_item/` と `data/old/set_to_current.mcfunction`、失敗時の消費は `check/.mcfunction` を参照する。
+
 共通 check は信仰、各 cooldown、MP 等を判定し、成功を `CanUsed` tag で表す。追加条件は既存の成功を無条件に作り直さず、失敗時にその tag を外す。共通 use は MP・使用回数の消費、cooldown 開始、LatestUseTick と item NBT の更新に加え、後続 Damage API 用の `api:PersistentArgument.AdditionalMPHeal` を設定する。この値は通常の `Argument` cleanup と寿命が異なる。副 trigger で common use を省略する場合も「すでに別経路で消費済み」等の設計理由と、必要な persistent side effect の有無を確認する。
 
 攻撃処理では `asset:context Attack` の `IsVanilla` 等を入力条件にし、`api: Argument.Damage`, `AttackType`, `ElementType`, `DeathMessage` を設定して API を呼ぶ。Difficulty 等を `api: Return` から読み、必要なら Temporary score を介して丸め・倍率計算する。使用回数や cooldown は対象 artifact と共通処理の既存例に合わせる。
